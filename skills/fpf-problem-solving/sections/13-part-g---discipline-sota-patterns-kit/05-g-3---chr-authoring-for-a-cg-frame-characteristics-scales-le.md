@@ -5,8 +5,8 @@
 **Tag.** Architectural pattern (CHR kit; publishes lawful measurement primitives; constrains CAL authoring and selector/dispatch use)
 **Stage.** *design‑time* (authoring & publication; enables admissible run-time consumption by `G.4` / `G.5`)
 **Primary output.** `CHR Pack@CG‑Frame` — a notation‑independent, UTS‑published CHR bundle that provides: typed Characteristics/Scales/Levels/Coordinates, legality + guard surfaces, aggregation/comparison specs, RSCR hooks/tests, and provenance pins.
-**Primary hooks.** `G.1` (declared CG-frame, which is the framing episteme), `G.2` (SoTA synthesis inputs), `A.19.CHR` (CHRMechanismSuite boundary + pins), `A.15.2` (WorkPlan baseline), `A.15.3` (planned filling of an independently declared position), `A.18/C.16` (MM-CHR legality), `F.0.1`, `F.1`, `F.9`, `F.17`, and `F.18` (source-local meaning, selected source editions, actual relations between local-sense cells, and naming settlement), `C.2.1` (bounded-use claims), `B.3` / `B.3.4` (trust, freshness/decay), `A.10` (evidence-provenance paths and cited carriers), `G.6` (EvidenceGraph/Path citation), optional `C.18 and C.19` (QD/OEE wiring), `G.11` (refresh orchestration).
-**Non‑duplication note.** Universal Part‑G invariants (bridge‑only crossings, tri‑state semantics, penalties→`R_eff`‑only, set‑return semantics, P2W split, typed RSCR triggers + alias docking, defaults with one governing definition, linkage discipline) are governed by `G.Core`. This pattern cites them via `G.3:4.1` and delegates where needed.
+
+
 
 ### G.3:1 - Problem frame
 
@@ -14,19 +14,19 @@ A team is defining or evolving a `CG‑Frame` (via `G.1`) and has plural, compet
 
 * **CAL authoring (`G.4`)** needs typed, admissible operands and guard/legality surfaces to build admissibility and acceptance rules (thresholds and policy cut‑offs remain governed by CAL).
 * **Selector/dispatch (`G.5`)** needs CHR‑typed quantities and explicit provenance pins so selection can remain set-returning and auditable under admissible orders.
-* **Reuse beyond the defining source or use** must name the exact characteristic and scale editions, bearer, scope and validity window, reference plane, evidence, and intended downstream use. Cite an `F.9` relation only when it actually obtains between the named `F.17` cells; any claim that relies on the relation for this use remains a separate bounded-use claim under `C.2.1` and `F.9`; its evidence-bearing reliance follows `A.10` and any applicable `B.3` assurance requirement.
+* **Reuse beyond the defining source or use** must name the exact characteristic and scale editions, bearer, scope and any temporal qualification required by the definition or receiving use, reference plane, evidence, and intended downstream use. Cite an `F.9` relation only when it actually obtains between the named `F.17` cells; any claim that relies on the relation for this use remains a separate bounded-use claim under `C.2.1` and `F.9`; its evidence-bearing reliance follows `A.10` and any applicable `B.3` assurance requirement.
 
 The resulting publication is a **CHR Pack** that is **CG‑Frame‑scoped**, **notation‑independent**, and **UTS‑published**, with explicit edition/policy pins sufficient for reproducibility and RSCR.
 
 ### G.3:2 - Problem
 
-Without a disciplined CHR authoring layer, teams repeatedly produce “measurable slots” that are *numerically manipulable but semantically unlawful*:
+Numbers alone do not tell a downstream user which measurements and operations are admissible. Common failures include:
 
-* **Meaning leaks** when the same token is reused after its referent or sense, bearer, scope, validity window, evidence basis, or intended use has changed.
+* **Meaning leaks** when the same token is reused after its referent or sense, bearer, scope, applicable validity window, evidence basis, or intended use has changed.
 * **Illicit arithmetic** (e.g., averaging ordinals, mixing units, laundering polarity).
 * **Hidden normalizations** that silently change scale type, polarity, or admissible transforms.
 * **Unreproducible comparisons** (missing edition pins for methods/distances/policies; unclear reference plane).
-* **Unscoped reuse** (the characteristic or scale lacks an exact edition, bearer, scope and validity window, reference plane, evidence basis, or intended downstream use; any relation needed for reuse is left unstated).
+* **Unscoped reuse** (the characteristic or scale lacks an exact edition, bearer, scope and any required temporal qualification, reference plane, evidence basis, or intended downstream use; any relation needed for reuse is left unstated).
 * **Un-auditable aggregation** (no explicit legality surface and guard surface; no proof hooks; unclear governing definition for the Γ‑fold).
 * **Refresh chaos** (changes in names/editions/policies do not map to typed RSCR causes).
 
@@ -46,7 +46,7 @@ Without a disciplined CHR authoring layer, teams repeatedly produce “measurabl
 
 **Builds on:** `G.Core` (Part‑G core invariants; citation/delegation hub)
 
-**GCoreLinkageManifest (normative; size‑controlled).**
+**GCoreLinkageManifest (normative).**
 
 ```text
 GCoreLinkageManifest := ⟨
@@ -66,7 +66,7 @@ CorePinsRequired := {
 // declared CG-frame, which is the framing episteme here; it supplies no universal setting, scope, or reuse authority.
 // `entityOfConcern`, `CNSpecRef.edition`, and `CGSpecRef.edition` remain inherited; each card adds the exact use pins named below.
 UTSRowId[],                      // required: CHR terms are public ids (Name Cards plus public-id continuity records)
-PathId[]/PathSliceId[],          // required: worked examples/tests and refresh anchoring cite paths
+PathId[]?/PathSliceId[]?,        // when G.6 paths are used or required by the receiving contract
 ReferencePlane,                  // required: definitional claims are plane-scoped
 Φ/Ψ/Φ_plane policy-ids?,         // when the applied loss/assurance model uses them or an applicable rule for the receiving use requires them (G.Core:4.2.3)
 ΓFoldRef.edition?                // iff an explicit Γ-fold artefact is pinned (otherwise use DefaultId)
@@ -107,34 +107,34 @@ RSCRTriggerKindId.BaselineBindingEdit
 * `CHR.Guards` *(guard macro surface; semantics governed by cited definitions; see `G.Core` and `A.18`)*
 * `CHR.LegalityMatrix` *(admissible operations per scale type / unit / polarity regimes)*
 * `CHR.AggregationSpecs` *(typed aggregators/comparators + proof hooks + edition pins where applicable)*
-* `UTS` publication bundle: Name Cards (twin labels), public-id continuity notes, and (when applicable) bridge and loss notes
-* RSCR artefacts: `RSCRTestId[]` + worked examples + provenance pins (ReferencePlane, Path/PathSlice, policy ids)
+* `UTS` publication bundle: Name Cards with designations under F.17/F.18, public-id continuity notes, and (when applicable) bridge and loss notes
+* RSCR artefacts: `RSCRTestId[]`, worked examples and their source/proof/measurement provenance, with applicable plane, path and policy pins
 
 **Mandatory provenance pins (conceptual, notation‑independent):**
 
 * `ReferencePlane`
-* `PathId/PathSliceId` citations for worked examples/tests
-* R‑anchors (conceptual; KD‑CAL lanes when used) realised via `PathId/PathSliceId` and, where applicable, `A.10` anchor/carrier refs
+* source/carrier references for worked examples and tests, including `PathId/PathSliceId` when G.6 is used or a receiving contract requires them
+* R-anchors to the actual evidence basis under A.10; use G.6 paths when shared path citation or the selected contract requires that representation
 * policy pins used by crossings or plane moves (when exercised)
 * edition pins for any referenced method or metric definitions that affect interpretation
 
 #### G.3:4.3 - CHR authoring chassis (S1–S8)
 
 **S1 — Charter the measurement scope (scope anchor).**
-Identify the exact declared CG-frame (the framing episteme). For this CHR work, state the bearer or bearers and identify each as an `entityOfConcern`. Also state the scope, any applicable qualification and evaluation windows, `ReferencePlane`, evidence basis, intended downstream use, freshness or decay expectations, and any contested expression whose reuse may require an actual `F.9` relation. Output a design-time `MeasurementCharter` and `KindMap`.
-If freshness/decay expectations are anything beyond an explicit “non‑decaying” declaration, wire them via
-`G.3:Ext.DecayWiring` (governing pattern: `B.3.4`) rather than encoding decay semantics in CHR prose.
-If assurance‑subtype lane tags are used (e.g., TA/VA/LA), declare the lane regime here so downstream evidence discipline can remain lane‑pure (taxonomy/semantics governed by `B.3`; evidence‑path representation & audit governed by `G.6`; this pattern only records wiring).
+If the needed characteristics are not established, use `A.19.ECS:4.2` to derive them from the receiving use and consequential success/failure cases. `G.0:4.5.1` connects that construction to the frame’s comparison and evidence requirements.
+Identify the exact declared CG-frame (the framing episteme). For this CHR work, state the bearer or bearers and identify each as an `entityOfConcern`. Also state the scope, any applicable qualification and evaluation windows, `ReferencePlane`, evidence basis, intended downstream use, currentness conditions relevant to that use, and any contested expression whose reuse may require an actual `F.9` relation. Output a design-time `MeasurementCharter` and `KindMap`.
+When the receiving use depends on currentness, apply B.3.4 to the exact claim and use. Retain any binding calibration, regulatory or qualification window; use `G.3:Ext.DecayWiring` when pinning a currentness or decay model or policy.
+If evidence-lane tags are used, declare the lane regime and its meanings here so downstream evidence discipline can remain lane-pure. `B.3` and `B.3.3` govern the assurance claim, receiving use and selected contributions; `C.2.2:4.6` defines the KD-CAL `TA`/`VA`/`LA` lanes when that regime is selected. Evidence-path representation and audit remain governed by `G.6`; this pattern records wiring.
 **Lane docking (wiring‑only; normative).**
 If `EvidenceLanes` are used, the charter MUST:
-* enumerate the lane tags used (e.g., TA/VA/LA) and cite their governing pattern taxonomy (governed by `B.3`), plus the upstream provenance for their use when available (e.g., `SoTAPaletteDescriptionId` via `G.3:Ext.SoTAPackInputs`);
+* enumerate the lane tags used and cite the definitions of the selected regime, plus the upstream provenance for their use when available (e.g., `SoTAPaletteDescriptionId` via `G.3:Ext.SoTAPackInputs`);
 * expose any lane‑dependent tolerances / proof requirements via explicit pins (policy‑id and/or edition‑pinned refs), not prose;
 * treat lane tags as provenance metadata (not Contexts): they MUST NOT be “bridged away” or silently mixed;
-* if any cross‑lane comparison/aggregation is claimed, it MUST be explicit and pinned to the governing acceptance/evidence policy (typically `G.4`) and auditable via evidence paths (`G.6`); otherwise downstream consumers treat it as illegal.
+* if cross-lane comparison/aggregation is claimed, cite the governing acceptance/evidence policy (typically `G.4`) and its supporting basis; retain G.6 paths when used or required. Without a policy that makes the operation lawful, downstream consumers treat it as illegal.
 *Crossing semantics and penalty routing are cited via `G.Core` (do not restate).*
 
 **S2 — Mint or reuse terms (UTS‑first).**
-For each candidate characteristic, scale, level, or coordinate term: attempt reuse; otherwise mint via UTS Name Cards with twin labels and public-id continuity notes. When a term is imported across contexts, the import must be explicit and auditable (bridge and loss notes live with the crossing artefacts; CHR only cites them).
+For each candidate characteristic, scale, level, or coordinate term: attempt reuse; otherwise mint via UTS Name Cards under F.17/F.18, with public-id continuity notes. When importing a term across contexts, identify its source-local meaning and the correspondence the receiving use relies on. Cite any required bridge and loss account.
 
 **S3 — Define `CharacteristicCard` (the per-characteristic publication unit).**
 A CharacteristicCard is the minimum unit CHR publishes for downstream legality. It SHOULD include (field names are indicative; semantics governed by cited definitions):
@@ -156,21 +156,23 @@ CharacteristicCard := ⟨
   ObjectKind,
   Intent,
   Definition (typed),
-  ObservableOf := ⟨instrument/protocol (provenance cited through A.10 paths), uncertainty model, validity window⟩,
-  EvidenceLanes? (KD‑CAL lanes; wiring only; semantics governed by `G.4` / `G.6`),
+  ObservableOf := ⟨instrument or determination protocol (provenance cited through A.10 paths), uncertainty treatment when it affects interpretation or use, temporal basis when consumed by the definition or receiving use⟩,
+  EvidenceLanes? (tags under the declared regime; supporting evidence refs; G.6 paths when used; cross-lane use under its cited acceptance/evidence policy),
   ScaleRef.edition,
   Polarity ∈ {↑, ↓, ⊥},
   Domain/Range,
   UnitSet,
   Bounds / zero semantics (as applicable),
-  Freshness / half‑life (or explicit `NonDecayingDecl`; freshness/decay semantics governed by `B.3.4`),
+  CurrentnessBasis? (for a use that depends on currentness; applicable window or decay model/policy under B.3.4),
   Missingness semantics (typed; include a classification/mapping when non‑trivial; downstream tri‑state handling is per G.Core),
   Stability/Reliability notes,
   RoleDecls? := RoleDecl[] (wiring‑only; each role declaration names its governing pattern + required pins; see `G.3:4.5`),
   QD.Role? ∈ {Q, D, QD-score} (interop alias for `RoleDecl` with `GoverningPatternId = C.18`; see `G.3:Ext.QD_OEE_Wiring`),
-  Micro‑examples (R‑anchors: Path/PathSlice cited; lane tags where applicable)
+  Micro-examples (source/proof/measurement anchors; G.6 paths and lane tags when applicable)
 ⟩
 ```
+
+Actual C.16 measurement results retain the time stance, measurement Work and interpretation basis required by C.16:5.2–5.5.
 
 `Polarity` gives the preferred direction for `IntendedDownstreamUse`: ↑ means higher-is-better, ↓ lower-is-better, and ⊥ no preferred direction assigned. Use ⊥ for a descriptive measurement. A target, range or other preference that has no single direction uses the applicable evaluation predicate and its Method; the Scale retains its measurement meaning under A.17/A.18.
 
@@ -180,7 +182,7 @@ Rules (CHR‑governed intent, semantics governed by cited definitions where indi
 
 * Scale/unit/polarity legality obligations cite MM‑CHR governing definitions (`A.18` and `C.16`) and must be *checkable* by downstream patterns.
 * Missingness must be typed so downstream can apply tri‑state outcomes without silent coercion (tri‑state semantics are governed by `G.Core`).
-* If `EvidenceLanes` are recorded, they are only lane tags for downstream evidence discipline (taxonomy governed by `B.3`; audit surface: `G.6`; any cross‑lane policy is governed by `G.4`); this pattern does not introduce lane semantics or invent bridge‑like constructs.
+* If `EvidenceLanes` are recorded, they are only lane tags for downstream evidence discipline (meanings governed by the declared lane regime; audit surface: `G.6`; any cross‑lane policy is governed by `G.4`); this pattern does not introduce lane semantics or invent bridge‑like constructs.
 * If `RoleDecls` are used, each declaration MUST cite the FPF pattern that governs the declaration, for example `C.18` or `C.19`, and surface the edition and policy pins required by that governing pattern; CHR does not define role semantics locally.
 * **Role docking (normative, wiring-only):** if any `RoleDecl` is present with `GoverningPatternId = X`,
   then `G.3` MUST include (or explicitly cite) a corresponding `GPatternExtension` block whose governing definition is `X`
@@ -194,7 +196,7 @@ Rules (CHR‑governed intent, semantics governed by cited definitions where indi
 **S4 — Define `ScaleCard` and `LevelCard` (lawful measurement).**
 Publish the scale type and admissible transforms, plus levels/orders when applicable. CHR does not invent new legality semantics; it cites MM‑CHR governing definitions and makes the legality surface concrete for the frame’s characteristics.
 
-Typical distinctions that must be representable:
+Represent the distinctions needed by the measurement. A scale type may be combined with counting, exposure or cyclic constraints:
 
 * **Nominal / categorical:** equality + counting; transforms are permutations.
 * **Ordinal:** order‑preserving transforms; no arithmetic that presupposes intervals.
@@ -224,7 +226,7 @@ Guard macro names are allowed as authoring ergonomics, but their semantics MUST 
 * `METRIC_EDITION_REF(...)` (edition‑pin discipline governed by `G.Core`; metric semantics governed by `C.18`/`C.21` as applicable)
 
 **S7 — Publish `AggregationSpecs` (typed, admissible, reproducible).**
-CHR may publish typed aggregation/comparison specs that are *safe by construction* and usable as building blocks by `G.4` and `G.5`. For any published spec:
+CHR may publish typed aggregation/comparison specs whose admissibility follows from their declared scales, constraints and proof basis, for use by `G.4` and `G.5`. For any published spec:
 
 * The legality regime is explicit (scale/unit/polarity constraints + required proof hooks).
 * If a contributor folding policy (Γ‑fold) is used and not explicitly overridden, cite `DefaultId.GammaFoldForR_eff` through `G.Core.DefaultGoverningDefinitionIndex`; do not restate the default here.
@@ -234,8 +236,8 @@ CHR may publish typed aggregation/comparison specs that are *safe by constructio
 Publish the CHR pack and associated Name Cards to UTS. Attach:
 
 * RSCR tests that check legality and guard coverage and reject illegal ops,
-* worked examples with Path/PathSlice provenance,
-* refresh/decay notes and deprecations with lexical continuity.
+* worked examples with recoverable source, proof or measurement grounds; G.6 paths when used or required,
+* applicable currentness and refresh conditions, plus deprecations with lexical continuity.
 
 This step prepares the RSCR loop but does not govern orchestration (governing definition: `G.11`).
 
@@ -329,11 +331,11 @@ All blocks below are `GPatternExtension` modules (PatternScopeId-scoped; **not**
 * **⊑/⊑⁺:** `∅`
 * **RequiredPins/EditionPins/PolicyPins (minimum):**
 
-  * `FreshnessWindowDeclRef` *(or equivalent window pin, as defined by the governing definition)*
+  * the currentness claim and receiving use, with any applicable `FreshnessWindowDeclRef` or equivalent window pin
   * `DecayPolicyIdRef?` *(policy-bound; if decay model is referenced by id)*
-  * `PathSliceId[]` *(affected evidence carriers / examples that witness drift)*
+  * affected source/carrier references; `PathSliceId[]` when G.6 paths are used or required
 * **RSCRTriggerKindIds:** `{RSCRTriggerKindId.FreshnessOrDecayEvent, RSCRTriggerKindId.EvidenceSurfaceEdit, RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.BaselineBindingEdit}`
-* **Notes (wiring‑only):** CHR does not define decay semantics; it only pins the window/policy defined by the governing pattern and ensures refresh can be triggered on decay events.
+* **Notes (wiring-only):** Cite the B.3.4 currentness basis and any window/model actually used. A change in relied-on conditions or support can trigger refresh without assigning an expiry time or half-life.
 
 **GPatternExtension: QD_OEE_Wiring**
 
@@ -355,7 +357,7 @@ All blocks below are `GPatternExtension` modules (PatternScopeId-scoped; **not**
 
 ### G.3:5 - Archetypal Grounding
 
-**AG‑1 — ML fairness auditing (post‑2015 selective and set‑valued practice).**
+**AG‑1 — ML fairness auditing.**
 *System:* a CG‑Frame for evaluating deployed classifiers across cohorts with explicit abstention/defer behavior.
 *CHR authoring:* publish `DemographicParityGap` and `EqualizedOddsGap` as Characteristics with:
 
@@ -367,18 +369,18 @@ All blocks below are `GPatternExtension` modules (PatternScopeId-scoped; **not**
 
 *Downstream:* CAL acceptance binds thresholds and failure behavior; selector remains set‑returning under partial orders and may treat “defer/abstain” as a first‑class outcome (tri‑state semantics pinned through `G.Core`).
 
-**AG‑2 — Clinical diagnostics (post‑2015 evidence‑aware evaluation).**
+**AG‑2 — Clinical diagnostics.**
 *System:* a CG‑Frame for comparing diagnostic pipelines under evolving datasets and protocols.
 *CHR authoring:* publish `Sensitivity` and `Specificity` as ratio‑scale, dimensionless Characteristics on `[0,1]`, with:
 
 * explicit `ObservableOf` (trial protocol, inclusion criteria, uncertainty model),
-* freshness/decay expectations (protocol drift is modelled as decay),
+* freshness/decay expectations for the stated use,
 * legality surfaces that forbid averaging incompatible ordinal labels (e.g., severity grades) and require explicit unit/exposure constraints for any derived rate.
 
-*Downstream:* CAL acceptance governs thresholds and guard‑bands; evidence wiring is cited via Path/PathSlice to make refresh triggers actionable.
+*Downstream:* CAL acceptance governs thresholds and guard-bands; source/proof/measurement references, including G.6 paths when used, identify the basis to reconsider after a relevant change.
 
-**AG‑3 — Quality‑Diversity / Illumination (post‑2015 MAP‑Elites/CMA‑ME lineage).**
-*System:* a CG‑Frame where selection returns archives/fronts rather than a single winner.
+**AG‑3 — Quality‑Diversity / Illumination (MAP-Elites/CMA-ME lineage).**
+*System:* a CG-Frame that uses a QD archive or front as the source for a declared set-result outcome under G.5.
 *CHR authoring:* declare which Characteristics play Q/D/QD‑score roles and pin the metric definitions (descriptor map, distance definition, method editions) so archives are reproducible across runs and refresh can be triggered on edition changes. CHR does not scalarize partial orders; set‑return semantics are pinned through `G.Core`.
 
 ### G.3:6 - Bias‑Annotation
@@ -386,9 +388,9 @@ All blocks below are `GPatternExtension` modules (PatternScopeId-scoped; **not**
 CHR authoring is where many biases become “baked in” as measurement choices. Typical risks:
 
 * **Proxy bias:** a convenient observable substitutes for the intended construct. Mitigation: require `ObservableOf` + ReferencePlane + micro‑examples; force explicit “what is being measured” rather than relying on labels.
-* **Population and protocol shift:** a change in the sampling regime or protocol can change the interpretation or validity of a reported characteristic value, or change the characteristic’s meaning when that regime or protocol is part of its definition. Mitigation: explicit validity windows and freshness/decay expectations; edition pins for protocol definitions; RSCR triggers on freshness/decay events and evidence surface edits.
+* **Population and protocol shift:** a change in sampling or protocol can alter the interpretation or applicability of a reported value, or the characteristic’s meaning when that procedure is part of its definition. Retain the population, protocol edition and use conditions; reconsider dependent claims when those change, including any applicable validity or freshness window.
 * **Ordinal misuse bias:** ordinal ratings treated as interval/ratio by convenience. Mitigation: publish scale type + admissible transforms; legality matrix + guard macros; reject coordinate upgrades without proof hooks.
-* **Cross-tradition meaning bias:** an imported expression erases its source-local meaning or makes a changed bearer, scope, window, reference plane, evidence basis, or intended use disappear. Mitigation: name those values, cite exact `F.17` cells and an `F.9` relation only when it obtains, and keep any downstream bounded-use claim explicit under `C.2.1` and `F.9`, with evidence-bearing reliance governed by `A.10` and any applicable `B.3` assurance requirement. Loss remains visible through the applicable `G.Core` penalty rule rather than silently altering Part F or Part G semantics.
+* **Cross-tradition meaning bias:** an imported expression erases its source-local meaning or makes a changed bearer, scope, window, reference plane, evidence basis, or intended use disappear. Mitigation: name those values, cite exact `F.17` cells and an `F.9` relation only when it obtains, and keep any downstream bounded-use claim explicit under `C.2.1` and `F.9`, with evidence-bearing reliance governed by `A.10` and any applicable `B.3` assurance requirement. Retain any mapping limitation and any justified penalty under the applicable `G.Core` rule.
 * **Metric gaming bias (QD and evaluation):** changing descriptors/distances changes what “diverse” means. Mitigation: edition‑pin metric definitions and make role declarations explicit (wiring via `C.18 and C.19`).
 
 ### G.3:7 - Conformance Checklist (normative)
@@ -397,7 +399,7 @@ CHR authoring is where many biases become “baked in” as measurement choices.
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **CC‑G3‑CoreRef** | `G.3` is conformant only if the applicable `G.Core` obligations declared in `G.3:4.1` are satisfied (effective expansion of profiles/sets + deltas; explicit pins; typed RSCR triggers; defaults with one governing definition).                       |
 | CC‑G3‑01          | `CHR Pack@CG‑Frame` is published as a notation‑independent kit payload with the minimum exported objects listed in `G.3:4.2`.                                                                                                         |
-| CC-G3-02 | Every `CHR.Characteristic` names its exact characteristic and scale editions, its bearer as the `entityOfConcern`, claim scope and applicable slices, any applicable qualification and evaluation windows, `ReferencePlane`, method or model edition when it affects interpretation, evidence refs, intended downstream use, and a filled `ObservableOf` field (instrument or protocol, uncertainty model, and validity window). |
+| CC-G3-02 | Every `CHR.Characteristic` names its exact characteristic and scale editions, its bearer as the `entityOfConcern`, claim scope and applicable slices, any applicable qualification and evaluation windows, `ReferencePlane`, method or model edition when it affects interpretation, evidence refs, intended downstream use, and a filled `ObservableOf` field (instrument or determination protocol, uncertainty treatment when it affects interpretation or use, and any temporal basis consumed by the definition or receiving use). |
 | CC‑G3‑03          | Every `CHR.Characteristic` declares its `ScaleRef`, `Polarity`, and `UnitSet` (or an explicit “unitless” declaration), plus bounds/zero semantics where applicable.                                                                   |
 | CC‑G3‑04          | Missingness is typed in the CHR artefacts such that downstream tri‑state handling is possible without silent coercion. *(Tri‑state semantics are governed by `G.Core`; the typing obligation is CHR‑local.)*                              |
 | CC‑G3‑05          | `CHR.Scale` / `CHR.Level` artefacts encode the scale type and admissible transforms, and make illicit arithmetic checkable by downstream consumers.                                                                                   |
@@ -405,15 +407,15 @@ CHR authoring is where many biases become “baked in” as measurement choices.
 | CC‑G3‑07          | `CHR.LegalityMatrix` and `CHR.Guards` exist and are referenced by downstream operator authoring; semantics are governed by cited definitions (MM‑CHR and `G.Core`), not duplicated locally.                                                        |
 | CC‑G3‑08          | `CHR.AggregationSpecs` are typed and legality‑constrained; where Γ‑fold is required and no explicit override is pinned, cite `DefaultId.GammaFoldForR_eff` through `G.Core.DefaultGoverningDefinitionIndex`. |
 | CC‑G3‑09          | If any characteristic is intended for promotion into `CG‑Spec`, the linkage is explicit and edition‑pinned (no shadow ids). *(Governing definition: `G.0`; wiring via `G.3:Ext.CGSpecPromotionWiring`.)*                                             |
-| CC‑G3‑10          | UTS Name Cards exist for public ids minted or evolved by the CHR pack (twin labels plus public-id continuity notes). *(Delegation target: `CC‑GCORE‑UTS‑1` via `CC‑G3‑CoreRef`.)*                                                                      |
-| CC‑G3‑11          | Worked examples and RSCR tests exist and cite `PathId/PathSliceId`; they cover illegal‑op refusal, unit and scale constraints, polarity invariants, and coordinate non‑entitlements.                                                      |
+| CC‑G3‑10          | UTS Name Cards exist for public ids minted or evolved by the CHR pack (designations under F.17/F.18 plus public-id continuity notes). *(Delegation target: `CC‑GCORE‑UTS‑1` via `CC‑G3‑CoreRef`.)*                                                                      |
+| CC‑G3‑11 | Worked examples and RSCR tests retain their source, proof or measurement basis, with G.6 path citations when used or required. They cover illegal-operation refusal, unit and scale constraints, polarity invariants and coordinate non-entitlements. |
 | CC‑G3‑12          | Thresholds/guard‑bands are not embedded in CHR artefacts; they remain governed by CAL acceptance clauses (`G.4`).                                                                                                                        |
 | CC‑G3‑13          | When method‑role declarations are present (via `RoleDecls` and/or `QD.Role` alias), each declaration is **docked** to its governing pattern via a corresponding `G.3:Ext.*` module, and the edition and policy pins required by the governing pattern are surfaced to make downstream interpretation reproducible. *(QD/OEE governing patterns: `C.18` and `C.19`; wiring via `G.3:Ext.QD_OEE_Wiring`.)* |
-| CC‑G3‑14          | **Evidence wired.** Each `CHR.Characteristic` links to R‑anchors via `PathId/PathSliceId` (and, where applicable, `A.10` anchor/carrier refs), so downstream evidence discipline (`G.6`) can audit legality and guard claims.            |
+| CC‑G3‑14 | **Evidence wired.** Each `CHR.Characteristic` cites the grounds of its legality and guard claims through A.10 source/carrier references, or G.6 paths when shared path citation or a receiving contract requires them. The chosen representation preserves the actual claim and support relations. |
 | CC‑G3‑15          | An `Archetypal Grounding` section exists with at least two domain‑distinct examples that demonstrate lawful CHR typing/legality and the CHR↔CAL separation (notably: no thresholds in CHR).                                          |
-| CC‑G3‑16          | If `EvidenceLanes` are used, lane tags are declared with a citation to their governing pattern taxonomy (`B.3`), and any lane‑dependent tolerances/proof requirements are explicitly pinned (policy‑id / edition refs). Cross‑lane comparison/aggregation is **illegal by default** unless an explicit governing-pattern policy makes it lawful (typically `G.4`), and it must be auditable via evidence paths (`G.6`). |
+| CC‑G3‑16 | If `EvidenceLanes` are used, declare their tags with the selected regime’s definitions and pin any lane-dependent tolerances/proof requirements. Cross-lane comparison/aggregation is illegal unless an explicit governing policy makes it lawful (typically `G.4`); cite its supporting basis and G.6 paths when used or required. |
 | CC‑G3‑17          | When CHR outputs are bound into a planned baseline, identify the `A.15.2` WorkPlan and its local baseline locator. If the plan fills an independently declared operation argument or relation position under `A.15.3`, also use `CHRMechanismSuiteSlotFillingsPlanItem` with its governing declaration reference, member designator and plan-local filling-row locator, as governed by `A.19.CHR:4.1.2` (wiring via `G.3:Ext.SuiteBoundaryLinkage`). |
-| CC‑G3‑18          | **Freshness is explicit.** Each `CHR.Characteristic` declares a validity window and either (i) an explicit `NonDecayingDecl` or (ii) a freshness/half‑life statement that is pinned to the governing pattern (`B.3.4`) when policy‑bound (`G.3:Ext.DecayWiring`). Changes in decay windows/policies participate in RSCR via canonical trigger kinds declared in `G.3:4.1`. |
+| CC‑G3‑18 | **Use-qualified currentness.** A claim whose receiving use depends on currentness retains its B.3.4 basis and any applicable validity window or decay policy. Named models/policies are pinned through `G.3:Ext.DecayWiring`. Changes to relied-on windows, policies or other support conditions participate in RSCR under `G.3:4.1`. |
 
 ### G.3:8 - Common Anti‑Patterns and How to Avoid Them
 
@@ -433,22 +435,22 @@ CHR authoring is where many biases become “baked in” as measurement choices.
 
 ### G.3:10 - Rationale
 
-CHR is the point where “numbers start moving” *only if* measurement semantics are stable enough to support lawful downstream reasoning. By making scale/unit/polarity explicit, publishing legality and guard surfaces, and requiring provenance pins, CHR authoring prevents downstream mechanisms from silently inventing their own legality assumptions.
+CHR authoring states which measurements and operations downstream reasoning may use. By making scale/unit/polarity explicit, publishing legality and guard surfaces, and requiring provenance pins, CHR authoring prevents downstream mechanisms from silently inventing their own legality assumptions.
 
 Separating core invariants into `G.Core` prevents drift and ensures Part‑G‑wide properties (tri‑state, penalty routing, set‑return semantics, RSCR typing, Default Governing Definition Index) cite `G.Core` as their governing definition, while CHR remains responsible for CHR‑specific kit surfaces.
 
 ### G.3:11 - SoTA‑Echoing
 
-This pattern aligns with post‑2015 best practice by:
+The pattern connects these evaluation practices to measurement authoring:
 
-* treating abstention/defer and set‑valued outcomes as first‑class design objects (consistent with modern selective prediction and set‑valued reporting practice),
-* keeping multiobjective and archive‑based reasoning set‑returning rather than silently scalarizing (consistent with QD/illumination and open‑ended evaluation practice after 2015),
-* making evaluation semantics reproducible through explicit edition/policy pinning (aligned with the modern emphasis on reproducibility and “specifying the evaluation surface” rather than only reporting metrics),
+* treating abstention/defer and set‑valued outcomes as first‑class design objects (as in selective prediction and set-valued reporting),
+* keeping multiobjective and archive‑based reasoning set‑returning rather than silently scalarizing (as in QD/illumination and open-ended evaluation),
+* making evaluation semantics reproducible through explicit edition/policy pinning so users can recover how a reported metric was evaluated,
 * modularizing method‑family specifics (QD/OEE, explore‑exploit) via explicit wiring and governing-definition assignment rather than embedding method semantics into universal measurement admissibility.
 
 ### G.3:12 - Relations
 
-**Builds on:** `G.Core`, `G.1`, `G.2`, `G.6` (EvidenceGraph / Path citation), `A.19.CHR`, `A.15.2` (WorkPlan baselines), `A.15.3` (planned fillings of independently declared positions), `A.17–A.18/C.16` (MM-CHR), `F.0.1` (source-local meaning), `F.1` (source selection), `F.9` (actual relations between local-sense cells), `F.17` (scheme-sense cells), `F.18` (naming settlement), `C.2.1` (bounded-use claims), `B.3` / `B.3.4`, `A.10`, `E.10`, `E.5.1–E.5.3`.
+**Builds on:** `G.Core`, `G.1`, `G.2`, `G.6` when EvidenceGraph/Path citation is used or required, `A.19.CHR`, `A.15.2` (WorkPlan baselines), `A.15.3` (planned fillings of independently declared positions), `A.17–A.18/C.16` (MM-CHR), `F.0.1` (source-local meaning), `F.1` (source selection), `F.9` (actual relations between local-sense cells), `F.17` (scheme-sense cells), `F.18` (naming settlement), `C.2.1` (bounded-use claims), `B.3` / `B.3.4`, `A.10`, `E.10`, `E.5.1–E.5.3`.
 **Uses (via Extensions):** `G.0` (promotion/linkage to `CG‑Spec`), optional `C.18 and C.19` (QD/OEE wiring).
 **Publishes to:** `G.4` (admissible operators plus legality and guard macros and freshness pins), `G.5` (role declarations plus pins for reproducibility), `UTS` (Name Cards and public-id continuity notes), RSCR tests and hooks.
 **Constrains:** any CAL/LOG/selector usage that consumes CHR (must treat CHR artefacts as typed/legal surfaces, not as prose hints).

@@ -1,0 +1,15 @@
+## PSDA.Advising:3 - Bound the advising engagement
+
+Write the question in ordinary terms: “For this recipient, what development direction should this holder consider within this horizon, and for what later use?” Identify the recommending performer separately from the recipient at the grain of this application. The recipient may also be the choice owner when that authority is established. Calling one self-advisory actor by two role names does not establish the distinct-performer relation.
+
+Use [PSDA.11](27-psda-11---bound-the-decision-support-engagement-and-authorit.md) for the engagement question and authority boundary. Distinguish client, sponsor, developing holder, recommendation recipient and chooser only where the difference changes the advice, disclosure, protection or decision. An employer paying for a person's career service does not thereby become the recipient of every personal assessment; a sponsor preferring a provider does not settle the committee's choice.
+
+Before positive advice, establish the applicable service scope, competence, conflicts, confidentiality, permitted reliance and referral or closure conditions. These are professional relationship questions in addition to generic permission. The [ICMCI competence framework v4.0, C.1.1–2, C.2.1 and E.3.5](https://www.cmc-global.org/sites/default/files/public/icmci_cmc002_competence_framework_version_4.0_1.pdf) supports agreed engagement content, client involvement and disclosure of material interests in management consulting. It does not authorize every adviser or prove that advice works.
+
+For human career services, apply the actual professional conditions for informed participation, assessment competence, intelligible interpretation and appropriate referral. [NCDA's 2024 Code of Ethics, A.2, A.10 and E.2](https://www.ncda.org/aws/NCDA/asset_manager/get_file/3395) is a bounded professional source, not a universal rule for organizations or AI holders. Determine its applicability and any additional local requirements; do not infer consent or a client's capacity from a signed form alone.
+
+AI assisting an adviser and AI being the developing holder are different cases. Where the [ICMCI AI Code v1.0, §§1.2, 2.2, 3.1–3.4, 5.1–5.4 and 7](https://www.cmc-global.org/sites/default/files/public/code_of_responsible_use_of_artificial_intelligence.pdf) applies, the consultant retains responsibility, checks material AI-assisted content, respects client-data restrictions and explains material AI use and its limits. The actual client relationship governs these duties even when the holder is an organization or a person.
+
+Return the missing mandate, competence, conflict treatment, consent or admissibility condition when it prevents the requested service. A blocker can complete this recommendation application while obtaining professional duties remain in force. Existing safety, legal or emergency duties keep their own direct authority.
+
+Open PSDA.12, PSDA.1, PSDA.2, PSDA.3, PSDA.4, PSDA.13 only when a participant, boundary, formulation, model, Method choice or disagreement can change this result.

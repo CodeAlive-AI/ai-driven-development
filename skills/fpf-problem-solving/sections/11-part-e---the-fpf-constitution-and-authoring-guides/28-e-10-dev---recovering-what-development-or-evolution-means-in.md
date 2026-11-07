@@ -4,8 +4,6 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative.
 
-**At a glance.** `E.10.DEV` repairs claim-bearing *development* and *evolution* wording by naming the changed or represented subject, the continuity or membership rule, posture, any direction or value claim, and the direct pattern that defines or tests the result.
-
 **Use this when.** After the normal `F.19` reading and compact `E.10` routing, use this pattern only while claim-bearing development, develop, progress, growth, maturation, adaptation, evolution, evolve, or lineage wording still hides what changed, what stayed identifiable, whether success or direction is asserted, whether the claim is actual or modelled, or which direct owner must be used—and resolving that ambiguity changes the claim or next action.
 
 **Primary EntityOfConcern.** One bounded wording-use restoration whose development or evolution expression has an FPF-governed use.
@@ -39,10 +37,10 @@ Without a shared recovery move:
 | --- | --- |
 | Familiar umbrella language | Practitioners need ordinary words such as development and evolution. |
 | Unlike subjects | Holder continuity, population membership, model identity, archive retention, and programme order support different claims. |
-| Positive first use | A warning without a route leaves the reader to rediscover the same neighborhood. |
+| Positive first use | A warning without a route leaves the subject question unresolved. |
 | Domain ownership | Mechanisms, interventions, evidence, and safety remain with the owning FPF or DPF pattern. |
 | Light burden | A clear sentence should close locally without a mandatory card or record. |
-| Honest gaps | A missing non-cultural population owner is better than a false cultural or one-holder route. |
+| Honest gaps | A missing rule for a non-cultural population leaves that claim open. |
 
 ### E.10.DEV:4 - Solution
 
@@ -81,12 +79,12 @@ DevelopmentEvolutionWordingRecoveryLine:
 | Recovered current claim | Direct route and boundary |
 | --- | --- |
 | One identified entity actually changed under conditions | Use `A.3.4`, `A.3.4.P`, `B.4`, and `C.27.TA` as applicable. A sequence, record, intervention, or expected result does not establish the actual transformation or identity-through-change claim. |
-| One holder has or changed capability for a named Work family | Use current `A.2.2` for the capability and A.10 for relied-on evidence. When a prior result now fails, transfers poorly, or varies with conditions and a distinction among envelope and support, applicability, access or activation, adaptation, enactment, and capability-claim revision can change the next question, use current `E.23.CAE` only for that differential. Its disposition is not a `ChoiceResult`, authorization, trajectory selection, or selected development Work. Candidate `E.23.CDI` may govern a separate capability-development Method only after its own admission and a separate applicable steering or choice result selects capability development. Keep provider Work, representative later Work, transfer, effect, and causal contribution separate. |
-| An organization, campaign, producing arrangement, or product-development arrangement changed | Identify the actual kind and its direct owner. Use the applicable DPF or domain Method to establish which working relations changed and under what conditions. Recover the Work, Methods, authority, interfaces, capabilities, evidence, and effects needed by the claim. Use System or programme classification when that owner's rules establish it. Use `A.3.4` for actual change, `C.30` for an architecture question, and the A.15 family for Work or planning. When several structures need a proposed practice-architecture synthesis, candidate `C.32.MWA` supplies a first move: distinguish obtaining from future practice and state the architecture question. Keep current-law claims with admitted owners. Establish any success claim under its declared basis. |
+| One holder has or changed capability for a named Work family | Use `A.2.2` for the capability and its required evidence. Use A.10 when the source-to-use basis needs recovery or replay. When a prior result now fails, transfers poorly, or varies with conditions and a distinction among envelope and support, applicability, access or activation, adaptation, enactment, and capability-claim revision can change the next question, use current `E.23.CAE` only for that differential. Its disposition is not a `ChoiceResult`, authorization, trajectory selection, or selected development Work. Use `E.23.CDI` when capability development is the selected task; an observed differential alone does not select the intervention. Keep provider Work, representative later Work, transfer, effect, and causal contribution separate. |
+| An organization, campaign, producing arrangement, or product-development arrangement changed | Identify the actual kind and its direct owner. Use the applicable DPF or domain Method to establish which working relations changed and under what conditions. Recover the Work, Methods, authority, interfaces, capabilities, evidence, and effects needed by the claim. Use System or programme classification when that owner's rules establish it. Use `A.3.4` for actual change, `C.30` for an architecture question, and the A.15 family for Work or planning. When an account of Methods and their use depends on several structures that do not line up one-for-one, use `C.32.MWA`: state the architecture question and preserve the obtaining or proposed status of each relied-on claim. Establish any success claim under its declared basis. |
 | An episteme, problem formulation, body of knowledge, or MethodDescription changed | Use `C.2.1` to identify each compared episteme by its claim content, EntityOfConcern, and effective ReferenceScheme; name the editions and changed content needed by the comparison. Stop when this answers the receiving use. Use `C.22.2` when a reviewable problem-side formulation is needed, `A.3.2` for a separate MethodDescription membership question, and `A.6.3.RT` for a needed same-EntityOfConcern representation transition. Add a source return, A.10 descriptive source-to-use account and bounded `RelianceDisposition`, or `G.11` currentness check only when the receiving claim or use needs that contribution. |
-| A cultural population or discipline generated, transmitted, reconstructed, recognized, selected, retained, or lost variants | Use `C.36` for the cultural claim. Use `C.36.P` only when cultural wording remains unclear. Preserve the population or practice boundary, period, variants, relations, intervention, and evidence. |
-| A non-cultural population or lineage evolved | Recover only the dimensions on which this claim or its use relies. Possible dimensions include population or lineage identity, membership, generation, reproduction or inheritance, variation, selection, retention or loss, environment, distribution, posture, and evidence. Use an admitted domain owner for their meaning and requirements; otherwise return the named non-cultural population or lineage architecture gap. Do not substitute `C.36` or one-holder `B.4`. |
-| An engineering search changed its archive, front, pool, generator policy, or possibility space | Use `C.17`–`C.19`, `G.5`, and `G.11`. Archive or front history is not population evolution unless the population relations independently obtain. |
+| A cultural population or discipline generated, transmitted, reconstructed, recognized, selected, retained, or lost variants | Use `C.36` for the cultural claim. Use `C.36.P` only when cultural wording remains unclear. Preserve the population or practice boundary, period, variants, relations and evidence needed by that claim, and any separately claimed intervention. |
+| A non-cultural population or lineage evolved | Recover the dimensions on which the claim or use relies, such as population or lineage identity, membership, generation, reproduction or inheritance, variation, selection, retention or loss, environment, distribution, posture and evidence. Apply the relevant domain account and its requirements; a sufficient supported domain claim can finish here. Name an architecture gap only if the receiving FPF use requires a definition or relation that the available account does not supply. Cultural evolution and one-holder change remain separate branches. |
+| An engineering search changed its archive, front, pool, generator policy, or possibility space | Return the particular claim to `C.17`, `C.18`, `C.19` or the applicable search Method. Use `G.5` for a needed generator or selection mechanism and `G.11` for a currentness or refresh question. Establish any separately claimed population relations under their own conditions. |
 | A model predicts or simulates development or evolution | Use `A.3.3` for the dynamics account; name the model edition, state or position space, transition law, validity boundary and posture, plus an observation relation when the use requires it. Use `A.19` for a needed CharacteristicSpace declaration, `C.29` for an unresolved mathematical representation or transfer question, and `C.27` for a separate temporal-claim adequacy question. Model output is not actual change. |
 | A practitioner proposes development opportunities or a programme | Choose the return for the unresolved question. If an opportunity cue still needs a reviewable problem-side formulation, use `C.22.2`. If a decision needs the contribution of a realizable finite change from the current configuration, use `C.11.CRC` under a declared comparison basis; reuse a sufficient current comparison. For a local choice with a current chooser and `OptionSet`, use `C.11`. When intended future Work must be planned, use `A.15.2` to describe it in a WorkPlan about an existing subject. Use the applicable domain Method for the development content. Stop when the needed result is sufficient. |
 | The current expression means learning, teaching, training, model fitting, inference, or information acquisition | Use the direct subject pattern; use `E.10.LRN` only when a learning-related wording question remains. |
@@ -114,10 +112,10 @@ Return a **missing-information result** to the programme author. First ask wheth
 - **Mira:** Which engineering Work family and conditions does the capability claim concern? For an observed increase, obtain the comparable qualification results through :5.2 before retaining that claim.
 - **Research:** Which claim or problem formulation is meant? What revision is proposed or observed, and under what criterion does it count as an advance?
 
-#### E.10.DEV:5.2 - Human capability without candidate borrowing
+#### E.10.DEV:5.2 - Change in human capability
 Source wording: `Mira developed as an engineer.`
 
-For the capability reading, recover the named Work family, supported envelope, qualification window, measures, and evidence under `A.2.2`. To preserve *developed*, also recover the change over time from comparable qualification conditions and evidence under the applicable change owner. If that comparison is unavailable, return the missing comparison; state any supported current capability separately. If the later question concerns an apparent loss, failed transfer, or condition-dependent expression, use current `E.23.CAE` only to return the qualified differential observation and disposition; do not turn that result into a trajectory choice or development Work. If a dated intervention occurred, identify its Work and Method separately. Do not rely on candidate `E.23.CDI` as current FPF law; after its own admission it may apply only when a separate steering or choice result selects capability development.
+For the capability reading, recover the named Work family, supported envelope, attained bounds and evidence under `A.2.2`, with the qualification and time conditions needed by the use. To preserve *developed*, also recover the change over time from comparable qualification conditions and evidence under the applicable change owner. If that comparison is unavailable, return the missing comparison; state any supported current capability separately. If the later question concerns an apparent loss, failed transfer, or condition-dependent expression, use current `E.23.CAE` only to return the qualified differential observation and disposition; do not turn that result into a trajectory choice or development Work. If a dated intervention occurred, identify its Work and Method separately. Use `E.23.CDI` when the receiving task calls for capability development.
 
 #### E.10.DEV:5.3 - Organization change
 
@@ -125,11 +123,11 @@ Source wording: `The organization evolved after the platform rollout.`
 
 If the claim asserts actual rollout Work, recover its performer and occurrence independently under A.13 and A.15.1. For the separate organization-change claim, identify the organization and the changed working relations. Use the applicable organizational DPF or domain Method to establish which working relations changed and under what conditions, with `A.3.4` for the actual change and the direct patterns for the other claimed relations. Recover the roles, assignments, interfaces, routines, capabilities, observed organization Work and effects, period, evidence, or cultural relations on which that claim depends. State any benefit under its declared basis and supporting evidence.
 
-#### E.10.DEV:5.4 - Population and archive countercase
+#### E.10.DEV:5.4 - Population and archive
 
 Source wording: `The population evolved as the archive improved.`
 
-Split the claims. Recover the population relations actually relied on—for example, membership, generation or lineage, variation, selection or retention, environment, or distribution—and their evidence under an admitted domain owner; return the exact gap when that owner is missing. Archive or front improvement uses `C.17`–`C.19`. Establish any additionally claimed reproduction or population relation under its own domain rules.
+Split the claims. Recover the population relations actually relied on—for example, membership, generation or lineage, variation, selection or retention, environment, or distribution—and their evidence under the applicable domain account. Keep a sufficient supported population claim; return only a definition, relation or evidential premise still missing for the receiving use. Archive or front improvement uses the relevant `C.17`–`C.19` contribution. Establish any additionally claimed reproduction or population relation under its own domain rules.
 
 #### E.10.DEV:5.5 - Model and plan postures
 
@@ -169,7 +167,7 @@ Start by asking what developed and what *improved* means. If the intended result
 | --- | --- |
 | One development lifecycle for unlike holders | Recover the subject and direct owner; keep holder-specific Methods and Work order local. |
 | Training occurred, therefore capability developed | Separate provider Work or intervention Work from capability evidence, transfer, and effect. |
-| Population evolution as one entity's transformation | Recover membership and lineage or return the population-ownership gap. |
+| Population evolution as one entity's transformation | Recover the needed population membership and lineage relations through the applicable domain account; name only the premise or framework relation still missing for the receiving use. |
 | OEE archive as a biological population | Use the archive, front, or pool owner unless population relations independently obtain. |
 | Planned trajectory as actual history | State posture and keep planned, modelled, and actual results separate. |
 | Mandatory DEV plus MOVE paperwork | Open the second child only for a distinct remaining claim. |
@@ -181,11 +179,11 @@ Start by asking what developed and what *improved* means. If the intended result
 
 **Costs.** Some sentences need to split, and a load-bearing direction or continuity claim needs its own basis. Domain mechanisms and evidence still require their direct sources.
 
-Reopen this pattern when a recurring branch cannot reach a direct owner or exact gap at task-sized effort; when cold readers still transfer evidence between holders, populations, models, plans, or archives; when the non-cultural population follow-on changes the boundary; or when a direct pattern absorbs the same entry, action, first result, and stop without losing discoverability.
+Reopen this pattern when a recurring branch cannot reach a direct owner or exact gap at task-sized effort; when cold readers still transfer evidence between holders, populations, models, plans, or archives; when an applicable population account changes the boundary; or when a direct pattern absorbs the same entry, action, first result, and stop without losing discoverability.
 
 ### E.10.DEV:10 - Rationale
 
-The reusable transdisciplinary problem is recovering the claim carried by the wording. Across the unlike cases, a thin action survives: recover the subject and continuity basis, separate Work and result, expose direction and posture, choose the direct owner, and stop. Keeping that action in `E.10.DEV`, selected through compact `E.10` routing, prevents repeated local reconstruction. Developmental science, evolutionary theory, organization change, guidance, and learning retain their direct owners.
+The reusable transdisciplinary problem is recovering the claim carried by the wording. The same recovery applies across these cases: recover the subject and continuity basis, separate Work and result, expose direction and posture, choose the direct owner, and stop. `E.10.DEV` makes that recovery available through compact `E.10` routing. Developmental science, evolutionary theory, organization change, guidance, and learning retain their direct owners.
 
 ### E.10.DEV:11 - SoTA Echoing
 
@@ -213,7 +211,7 @@ Reopen only the affected route when its supplying pattern changes the entry, res
 
 - **Selected by:** `E.10` when development or evolution wording remains action-changing because the subject, continuity or membership, posture, direction or value basis, or direct owner is not yet recoverable.
 - **Builds on:** `F.19`, `E.10`, `E.10.ARCH`, `A.3.4.P`, `A.2.2`, current `E.23.CAE`, `A.3.3`, `B.4`, `C.17`–`C.19`, `C.27.TA`, `C.29`, and `C.36`.
-- **Coordinates with:** current `E.23.CAE` only when the recovered capability branch needs its observation or disposition differential; `E.10.MOVE` for a remaining trajectory or path posture; `E.10.LRN` for learning-word recovery; `C.36.P` for remaining cultural-evolution wording; A.15 for Work or WorkPlan; candidate `E.23.CDI` only after its own admission and a separate applicable steering or choice result; and each direct holder or domain owner selected by the repaired claim.
+- **Coordinates with:** current `E.23.CAE` only when the recovered capability branch needs its observation or disposition differential; `E.10.MOVE` for a remaining trajectory or path posture; `E.10.LRN` for learning-word recovery; `C.36.P` for remaining cultural-evolution wording; A.15 for Work or WorkPlan; `E.23.CDI` when capability development is the selected task; and each direct holder or domain owner selected by the repaired claim.
 - **Keeps outside:** domain ontology, governed by the selected subject owners, and framework admission under `E.4.PFAD`.
 
 ### E.10.DEV:End

@@ -18,15 +18,15 @@ Typical triggers include:
 - a governed value may need a durable name, public row, or policy identifier; and
 - pressure for a new U-kind appears. That last case stops before naming until E.24.UK has returned a stable admission disposition.
 
-**Primary working object.** One F.8 disposition for the expression and proposed use. Ordinary use creates no decision occurrence or result episteme. If a later claim must cite, replay, or assign accountability to the decision itself, use the separately triggered branch in §4.5.
+**Primary working object.** One F.8 disposition for the expression and proposed use. Ordinary naming needs no separate decision-occurrence or result-episteme identity. If a later claim must cite, replay or assign accountability to the decision itself, use the separately triggered branch in §4.5.
 
-**Primary working reader.** An engineer-manager, analyst, method author, pattern author, or terminology steward choosing whether an expression should stay local, reuse a name, or open a stronger naming path.
+**Primary working reader.** A practitioner choosing whether an expression should stay local, reuse a name, or open a stronger naming path.
 
-**First useful move.** Write the four starting facts. Then try, in order, a local phrase, an existing designation, an alias, the subject pattern's name, and an admitted F.17 row. Stop at the first sufficient result. Open a cell, NameCard, public row, or policy identifier only when the receiving use needs it.
+**First useful move.** Recover the four starting facts, then select the least burdensome treatment that supports the use: a local phrase, an existing designation, an alias, the subject pattern's name or an admitted F.17 row. Reuse known grounds for that choice; compare other treatments when their adequacy could change it. Open a cell, NameCard, public row or policy identifier only when the receiving use needs it.
 
 **What goes wrong if missed.** A convenient expression is treated as the subject it merely names. Local or source wording becomes durable ontology; a row or alias gains uses it never admitted; a role-like word hides a kind, description, assignment, Work occurrence, or another governed relation; or a record is mistaken for the decision it describes.
 
-**What this buys.** Teams get short usable names without creating duplicate kinds or naming records. Stronger names are harder to introduce but easier to trust because the governed subject and use remain visible.
+**What this buys.** Teams get short usable names without creating duplicate kinds or naming records. When a stronger name is needed, readers can recover its governed subject and permitted use.
 
 **Not this pattern when.**
 
@@ -75,7 +75,7 @@ Treat mint-or-reuse as a decision about an already recovered subject, not a vote
 3. the subject pattern that defines or tests that value or relation; and
 4. the proposed naming use.
 
-If any fact is missing, stop at the subject-recovery route; naming cannot supply it. Otherwise try the dispositions in this order and stop at the first one that supports the proposed use:
+If a needed fact is missing, recover it through the subject pattern. Otherwise use the following dispositions to select a sufficient treatment. Reuse an already justified choice; examine another disposition when it could meet the use with less burden or preserve a distinction the proposed choice loses:
 
 1. keep a local phrase;
 2. reuse an existing designation;
@@ -88,7 +88,7 @@ If any fact is missing, stop at the subject-recovery route; naming cannot supply
 9. introduce a policy identifier for an already recovered policy specification; or
 10. block or lower the naming use.
 
-The smallest result is one readable sentence, not a mandatory record: state the governed subject, proposed naming use, selected disposition, resulting name when any, and the change that would reopen the decision. Add a non-use boundary only when `F.19`'s grounded-contribution test admits it. For example, when no lighter disposition supports a needed durable local designation: “Under `PatternReviewReferenceScheme-2026`, use `ReviewerRole` as the Plain designation of `ReviewerSystemRole` for local review-method prose; select `openDurableNamingSettlement` and revisit the decision if the naming use becomes public or cross-local.”
+The ordinary result states the governed subject, proposed naming use, selected disposition and resulting name when any. Add a reopen condition when continued reuse needs it, and an explicit non-use boundary when F.19's grounded-contribution test warrants it. For example, when a durable local designation is needed: “Under `PatternReviewReferenceScheme-2026`, use `ReviewerRole` as the Plain designation of `ReviewerSystemRole` for local review-method prose; select `openDurableNamingSettlement` and revisit the decision if the naming use becomes public or cross-local.”
 
 The corresponding F.8 result labels are `localPhraseOnly`, `reuseExistingDesignation`, `aliasOnly`, `reuseDirectPatternName`, `reuseAdmittedTermRow`, `nameSystemRoleKindDescription`, `openDurableNamingSettlement`, `proposePublicTermRow`, `introducePolicyIdentifier`, and `blockOrLowerUse`. They are not new `U.*` kinds. A stronger result opens its subject pattern; it does not itself create a card, row, identifier, policy specification, or relation occurrence.
 
@@ -103,20 +103,20 @@ The corresponding F.8 result labels are `localPhraseOnly`, `reuseExistingDesigna
 | A cross-local or public reading admitted by one F.17 row | `reuseAdmittedTermRow` only for its declared use | `F.17`; `F.9` only when an obtaining Bridge between the named cells is used |
 | A new designation for a recovered local system-role kind | `localPhraseOnly` when local wording is enough; otherwise `openDurableNamingSettlement` when durable reuse is needed | `A.2` and `C.3` for the kind, then `F.5`; `F.18` only for a durable settlement |
 | A label for a separately justified `SystemRoleKindDescription` episteme about that kind | `nameSystemRoleKindDescription` | `F.4` for the description, then `F.5`; `F.18` only when the description's own name must be durable |
-| Any other governed subject—for example, a status, evidence use, source use, requirement, assurance use, gate, decision, access value, policy, Method, Work, publication use, characteristic, architecture value, or relation position | `reuseDirectPatternName`, or `openDurableNamingSettlement` only after that subject is recovered | Its subject pattern, then `F.5` or `F.18` when needed |
-| A recurring durable naming settlement not served by lighter dispositions | `openDurableNamingSettlement` | `F.14`, then `F.18`; a NameCard is optional until its own enduring-use gate passes |
+| Any other governed subject | `reuseDirectPatternName`, or `openDurableNamingSettlement` only after that subject is recovered | Its subject pattern, then `F.5` or `F.18` when needed |
+| A durable naming settlement not served by lighter dispositions | `openDurableNamingSettlement` | `F.14`, then `F.18`; a NameCard is optional until its own enduring-use gate passes |
 | A public, Core-facing, durable, or cross-local term not covered by an admitted row | `proposePublicTermRow` | `F.17` after the F.18 inputs and row threshold are met |
 | A policy identifier | reuse the existing identifier, or select `introducePolicyIdentifier` for a recovered policy specification; add a mint-occurrence basis only for the stronger history uses in §8.1 | `F.8:8.1` and the subject pattern for the policy use |
 | An expression offered as a new cross-family primitive before its admission disposition is stable | `blockOrLowerUse`; no naming disposition is available yet | `E.24.CD` when the governed object is still unclear; if a U-kind proposal remains, `E.24.UK` decides admission. Return only after the governed object is recovered or one stable `root`, `same-individual-dependent`, `identity-dependent`, `reuse`, `local-kind`, or `reject` result is available. |
 
 #### F.8:4.2 - Decision Sequence
 
-Use this order and stop at the first disposition that supports the proposed use without hiding a governed distinction.
+Use the following questions to recover an adequate disposition without hiding a governed distinction. Skip questions already settled by the available basis.
 
 1. **Recover the four starting facts.** Name the expression, governed value or relation, its subject pattern, and the proposed use. If the value or relation is not available, stop and use its subject-recovery route; F.8 cannot establish it.
 2. **Split mixed candidates.** If one expression covers more than one governed subject or use—for example, a kind, assignment, evidence use, policy, Method, or Work—make separate naming decisions.
-3. **State the naming locality.** Carry the naming `U.ReferenceScheme` by value and state the local-sense claim. Cite a `SchemeSenseCell`, an obtaining `LocalSenseBasisRelation`, or a selected bounded-model-use Structure only when the naming use needs that object.
-4. **Apply F.14 and try a local phrase.** If ordinary local wording supports the use, choose `localPhraseOnly` and stop.
+3. **State the naming locality.** Supply the naming reference scheme's designation and interpretation rules by value, and state the local-sense claim. Cite a `SchemeSenseCell`, an obtaining `LocalSenseBasisRelation`, or a selected bounded-model-use Structure only when the naming use needs that object.
+4. **Apply F.14 when the needed naming treatment is unsettled.** If ordinary local wording supports the use, choose `localPhraseOnly` and stop; use an already justified stronger treatment when the receiving use needs it.
 5. **Try an existing designation.** Reuse it only when the value, kind, scope, occurrence identity, local sense, and proposed use match.
 6. **Try an alias.** Use `aliasOnly` when the governed meaning is unchanged and lineage can expose the wording variation. An alias may not change kind, scope, occurrence identity, use, or authority.
 7. **Try the subject's existing name.** Use the name supplied for the governed subject. A.2 and C.3 govern a local system-role kind and F.5 governs its designation; use F.18 only for a durable settlement and F.4 only for a separately needed `SystemRoleKindDescription`. A.2.1 continues to govern any assignment. For precise performed Work, A.13 first recovers each exact actual performer and A.15.1 independently admits the occurrence; F.6 follows only when the naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment.
@@ -145,7 +145,7 @@ After A.2 and C.3 have recovered `K`, apply the naming ladder. Keep a one-off ex
 | --- | --- | --- |
 | `ReviewerRole` in a review method | A recovered review-system-role kind needs a durable designation; that naming need requires no description episteme | `openDurableNamingSettlement`; A.2 and C.3 govern the kind, F.5 its designation, and F.18 the durable settlement; use F.4 only for a separately needed description |
 | `Alice as reviewer` | A system is assigned to a local system-role kind for an interval | Not a name decision until `A.2.1` recovers the `U.SystemRoleAssignment` occurrence |
-| `review happened` | Dated performed Work | Use `A.15.1`; open naming only if a Work-kind designation is needed |
+| `review happened` | Dated performed Work | Use `A.15.1`; open naming only if the admitted Work occurrence needs a designation |
 | `EvidenceRole` | An episteme used as evidence | Use the evidence-use pattern; only then consider a name for the governed relation |
 | `AccessRole` | Permission or policy grouping | Use access, policy, status, or deontic pattern; do not mint a local system-role kind by suffix |
 | `ProviderRole` in a signature | Relation position | Use `A.6.5` SlotSpec discipline; name a slot only if needed |
@@ -163,7 +163,7 @@ F.8 consumes one named F.17 row and its declared use; it neither constitutes the
 | Measurement naming | Shared measurement label where units and procedure constraints remain visible | The measurement pattern for any claim of procedure interchange. |
 | Type-structure naming | Name for an admitted structural relation under the row's invariants | `E.24.UK` for U-kind admission. |
 
-If the row does not admit the proposed use, lower the name's use or repair the F.17 row and any needed F.9 relation. Attractive wording supplies neither a stronger use nor cross-local sameness.
+If the row does not admit the proposed use, lower the name's use or repair the F.17 row and any needed F.9 relation. Wording alone establishes neither a stronger use nor cross-local sameness.
 
 #### F.8:4.5 - Accountable Decision Branch
 
@@ -173,7 +173,7 @@ Keep these objects distinct in the accountable branch:
 
 - the governed value or relation and its subject pattern;
 - the candidate expression, selected designation, and any alias;
-- the effective naming `U.ReferenceScheme`, local-sense claim, optional `SchemeSenseCell`, and any obtaining two-participant `LocalSenseBasisRelation`;
+- the effective naming reference scheme, local-sense claim, optional `SchemeSenseCell`, and any obtaining two-participant `LocalSenseBasisRelation`;
 - the decision or choice occurrence and the pattern that admits it;
 - any C.2.1 decision-result episteme and the record or carrier that designates it;
 - any F.18 NameCard, F.17 row, policy specification, policy identifier, publication occurrence, form, or carrier; and
@@ -197,10 +197,10 @@ MintReuseDecisionResultEpisteme:
   GovernedKindOrRelationKindRef:
   GovernedValueSubjectPatternLocator:
   ProposedNamingUse:
-  EffectiveNamingReferenceScheme: [U.ReferenceScheme carried by value]
+  EffectiveNamingReferenceScheme: [EpistemeInterpretationScheme (C.2.1:4.1.2), carried by value; rules for this naming use]
   LocalSenseClaim:
   LocalSenseCellRef?: [only when a current SchemeSenseCell is needed]
-  LocalSenseBasisRelationRef?: [only when the cell-to-basis-episteme relation obtains]
+  LocalSenseBasisRelationRef?: [only when the basis-episteme-to-cell support relation obtains]
   SelectedModelUseStructureRef?: [only when a selected Structure changes this use]
   ReuseCandidateRefs?:
   SelectedDisposition:
@@ -213,7 +213,7 @@ The block describes the result episteme. `EntityOfConcernRef` resolves to the de
 
 #### F.8:8.1 - Policy-Identifier Mint-or-Reuse Discipline
 
-FPF treats policy identifiers such as `Phi(CL)`, `Phi_plane`, `Psi(CL^k)`, `Aut-Guard`, `EmitterPolicyRef`, insertion-policy identifiers, and acceptance-clause identifiers as versioned references whose meaning must be recoverable. They are not "just strings", system-role-kind names, gate decisions, permissions, or policy specifications.
+FPF treats policy identifiers such as `Phi(CL)`, `Phi_plane`, `Psi(CL^k)`, `Aut-Guard`, `EmitterPolicyRef`, insertion-policy identifiers, and acceptance-clause identifiers as versioned references whose meaning must be recoverable. The identifier resolves to a separate policy specification; it does not itself assert a gate outcome or permission.
 
 ```text
 PolicyIdentifierReference:
@@ -245,7 +245,7 @@ Rules:
 ### F.8:5 - Invariants
 
 1. **Four facts, one use.** Every disposition names the expression, governed value or relation, its subject pattern, and one proposed use. Split an expression that covers more than one governed subject or use.
-2. **Lightest sufficient result.** Try the ordinary reuse ladder before creating a cell, NameCard, row, or policy identifier. An unsettled U-kind proposal stops before naming.
+2. **Lightest sufficient result.** Use adequate ordinary wording or an existing designation directly. Create a cell, NameCard, row or policy identifier only for the receiving need it serves. An unsettled U-kind proposal stops before naming.
 3. **Reuse preserves meaning.** Reuse or aliasing changes no kind, scope, occurrence identity, local-sense claim, admitted use, authority, or lineage. Shared spelling under another scheme establishes neither sameness nor an F.9 Bridge.
 4. **Kind, description, assignment, and Work stay distinct.** A designation may name a recovered local system-role kind `K` without creating the optional F.4 description `D`. Neither name classifies a candidate, creates an A.2.1 assignment `A`, or demonstrates Work. Other governed uses remain with their subject patterns.
 5. **Rows stay within admitted use.** Reusing an F.17 row supplies only its `AdmissibleUse` and no equivalence.
@@ -280,7 +280,7 @@ The source label `PatternReview_2026` is not a context object. Classify the actu
 
 - `ReviewWork-82` can be one dated `U.Work` occurrence under `A.15.1`;
 - `ReviewPlan-2026-v3` can be a separately constituted plan episteme or edition under its subject pattern;
-- `PatternReviewReferenceScheme-2026` can be an effective by-value `U.ReferenceScheme` for interpreting review terminology; and
+- `PatternReviewReferenceScheme-2026` can designate the effective rules carried by value for a review use, provided those rules and their semantic dependencies are recoverable and interpret the review terminology; and
 - "used while deciding the label for the 2026 review method" can be claim content describing the decision-use setting without minting any context entity.
 
 If the recovered `ReviewerSystemRole` kind needs a durable local designation, F.8 returns `openDurableNamingSettlement`: A.2 and C.3 keep governing the kind, F.5 governs its designation, and F.18 supplies the settlement. The recovered kind is the governed subject; F.4 enters only for a separately needed description, A.2.1 for an assignment, and A.15.1 for performed review Work.
@@ -307,7 +307,7 @@ The identifier is not the specification, local system-role kind, Method, gate re
 
 #### F.8:7.5 - New U-kind Candidate
 
-A team proposes `U.InfluenceEdge` because many documents use "influence". At F.8 entry there is no recovered governed value with a stable admission disposition, so F.8 returns `blockOrLowerUse` and stops naming. If the expression still hides whether the subject is an existing relation or claim—for example, a causal, evidence, Method, or Bridge relation—or a characteristic, structural name, publication form, local frame, or another object, E.24.CD recovers that object or the unresolved proposal. A recovered governed object returns to its subject pattern; a surviving U-kind proposal goes to E.24.UK for `root`, `same-individual-dependent`, `identity-dependent`, `reuse`, `local-kind`, or `reject`. Only after that result is stable may F.8 reopen for a name of the admitted or reused kind, bounded local kind, or recovered non-kind object. F.8 creates neither the proposal object nor a public spelling and admits no kind.
+A team proposes `U.InfluenceEdge` because many documents use "influence". At F.8 entry there is no recovered governed value with a stable admission disposition, so F.8 returns `blockOrLowerUse` and stops naming. If the expression still hides the governed object—for example, whether it is a causal relation or a characteristic—E.24.CD recovers that object or the unresolved proposal. A recovered governed object returns to its subject pattern; a surviving U-kind proposal goes to E.24.UK for `root`, `same-individual-dependent`, `identity-dependent`, `reuse`, `local-kind`, or `reject`. Only after that result is stable may F.8 reopen for a name of the admitted or reused kind, bounded local kind, or recovered non-kind object. F.8 creates neither the proposal object nor a public spelling and admits no kind.
 
 #### F.8:7.6 - Readable Disposition and Explicit Stops
 
@@ -317,9 +317,9 @@ The `ReviewerRole` case closes with one readable result. The recovered kind is a
 
 That sentence is the F.8 result. It needs no decision occurrence or result episteme. If a later claim must cite, replay, or assign accountability to the decision, use §4.5. No naming-decision governor is available in this case, so that branch returns `missing-governor` rather than inventing `ReviewerSystemRoleNamingDecision-2026-07-31`. C.11 applies only to a genuine local choice among available options. For any precise decision-making Work, A.13 first recovers the exact actual performer and A.15.1 independently admits the dated Work; F.6 follows only when the later claim expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment.
 
-`EvidenceRole` stops earlier and does not enter F.8. The known subject is `ReviewReport-82 : U.Episteme`, proposed for evidence use concerning an adequacy claim. Still missing are the target claim and polarity, the evidence-use relation and relation kind, the provenance and any assurance or reliance use and validity window, and one subject pattern that defines the relation. Apply that pattern and keep the wording local until those facts are recovered. `PatternReviewReferenceScheme-2026` may interpret the source wording, but the review label creates no evidence relation, system-role kind, description, assignment, authority, or publication. No `SchemeSenseCell`, `LocalSenseBasisRelation`, or selected Structure is needed merely to record this stop.
+`EvidenceRole` stops earlier and does not enter F.8. The known subject is `ReviewReport-82 : U.Episteme`, proposed for evidence use concerning an adequacy claim. Still missing are the target claim and polarity, the evidence-use relation and relation kind, the provenance and any assurance or reliance use, including a validity window when that use depends on it, and one subject pattern that defines the relation. Apply that pattern and keep the wording local until those facts are recovered. `PatternReviewReferenceScheme-2026` may interpret the source wording, but the review label creates no evidence relation, system-role kind, description, assignment, authority, or publication. No `SchemeSenseCell`, `LocalSenseBasisRelation`, or selected Structure is needed merely to record this stop.
 
-Re-enter F.8 only after one governed relation, its kind, its subject pattern, and the proposed naming use are available. If the target claim, polarity, provenance, assurance or reliance use, or validity window changes, reopen the subject claim rather than the name.
+Re-enter F.8 only after one governed relation, its kind, its subject pattern, and the proposed naming use are available. If the target claim, polarity, provenance, assurance or reliance use, or a required validity window changes, reopen the subject claim rather than the name.
 
 ### F.8:8.0 - Bias-Annotation
 
@@ -332,17 +332,17 @@ F.8 counters two shortcuts: a familiar word is treated as proof that a stronger 
 | `CC-F8-01` | The expression, governed value or relation, subject pattern, and proposed use are named before the disposition. |
 | `CC-F8-02` | An expression that covers several governed subjects or uses is split; for example, a kind, assignment, evidence use, policy, Method, or Work is not handled as one naming case. |
 | `CC-F8-03` | The naming ReferenceScheme and local-sense claim are stated. A cell, basis relation, or selected Structure appears only when the naming use needs that object. |
-| `CC-F8-04` | Local phrase, existing designation, alias, subject-pattern name, and admitted F.17 row were tried before a stronger naming object. |
+| `CC-F8-04` | The selected naming treatment is sufficient for the proposed use; a stronger object has a receiving need that adequate ordinary wording or an existing designation does not meet. |
 | `CC-F8-05` | Reuse preserves kind, scope, occurrence identity, local-sense claim, admitted use, authority, and lineage. |
 | `CC-F8-06` | A system-role-kind designation follows A.2 and C.3 recovery of the kind and does not require an F.4 description. If the description is separately needed, its label remains distinct from the kind designation. |
 | `CC-F8-07` | Classification and assignment remain under C.3 and A.2.1. Any precise performed Work begins with the exact actual performer recovered through A.13 and independent A.15.1 admission; F.6 appears only for an expressly consumed precise assignment-bound attribution through the same obtaining A.13 assignment. None is inferred from a name. |
 | `CC-F8-08` | Any other governed subject—for example, a status, evidence use, access value, policy, publication use, or relation position—returns to its subject pattern before naming. |
 | `CC-F8-09` | F.17 row reuse stays within `AdmissibleUse`; spelling or local-sense reuse implies neither an F.9 Bridge nor equivalence. |
-| `CC-F8-10` | Ordinary use creates no decision object. The accountable branch resolves the decision or choice occurrence through the pattern that admits it or returns `missing-governor`, while any C.11 result, Work, result episteme, record, and naming object stays separate. |
+| `CC-F8-10` | Ordinary naming needs no separate decision-object identity. The accountable branch resolves the decision or choice occurrence through the pattern that admits it or returns `missing-governor`, while any C.11 result, Work, result episteme, record, and naming object stays separate. |
 | `CC-F8-11` | A locality label such as `PatternReview_2026` is interpreted as the Work, plan, claim content, ReferenceScheme, or other object actually present; the label creates none of them. |
 | `CC-F8-12` | An unsettled U-kind proposal receives only `blockOrLowerUse` and the needed E.24.CD or E.24.UK route. Naming reopens only for the object identified by a stable admission result. |
 | `CC-F8-13` | A policy identifier resolves its specification and scope. When its mint history is cited, replayed, normative, cross-local, or accountable, the occurrence basis required by §8.1 is also recoverable; otherwise that stronger claim returns `missing-governor`. |
-| `CC-F8-14` | The result states the governed subject, selected disposition, admitted naming use, and smallest change that reopens the decision. Any non-use boundary passes `F.19`'s grounded-contribution test. |
+| `CC-F8-14` | The result states the governed subject, selected disposition and admitted naming use, with a reopen condition when continued reuse needs it. Any non-use boundary passes F.19's grounded-contribution test. |
 
 ### F.8:9 - Common Anti-Patterns and How to Avoid Them
 
@@ -368,7 +368,7 @@ Good consequences:
 - role-like, source, and record-like expressions return to their governed subjects before naming;
 - aliases and F.17 rows retain their admitted meaning and scope;
 - F.5 and F.18 receive a recovered subject and a selected naming path; and
-- accountable decisions and policy identifiers remain inspectable without making their records act.
+- accountable decisions and policy identifiers remain inspectable and distinct from their records.
 
 Costs:
 
@@ -400,14 +400,14 @@ The accountable branch follows the same rule. A decision occurrence, C.2.1 resul
 
 ### F.8:12 - SoTA-Echoing - Source-Use
 
-**Qualification and selection rule.** These decisions are qualified on 2026-08-15 for the cited editions and the F.8 questions below. The set is deliberately small. ISO 704 and SKOS are current standards or durable lineage, not claimed as research frontiers. The gUFO–OBO row combines a current formal comparator with an operational ontology-maintenance practice. The Cedar row is a current research-and-practice comparator. A source belongs here because it changes an F.8 disposition or boundary, not because it is official, popular, or easy to find.
+**Source selection.** The sources below address the named F.8 questions. ISO 704 and SKOS are current standards or durable lineage, not claimed as research frontiers. The gUFO–OBO row combines a current formal comparator with an operational ontology-maintenance practice. The Cedar row is a current research-and-practice comparator. A source belongs here because it changes an F.8 disposition or boundary, not because it is official, popular, or easy to find.
 
 | Source, status, and question | Decision for F.8 | What F.8 uses and rejects | Affected loci and smallest source-driven revisit |
 | --- | --- | --- | --- |
-| [ISO 704:2022](https://www.iso.org/standard/79077.html), edition 4 — current international terminology standard. Question: how should an expression, its designation use, the concept or other subject, and any definition stay distinguishable? Its Pareto position here is the latest general standard that directly treats links among objects, concepts, definitions, and designations across fields; it is not presented as a research frontier. | **Adopt the subject-before-designation order; adapt its terminology distinctions to FPF values, relations, and subject patterns.** | Keep expression, designation, governed subject, and any description separate. Reject using terminology work to admit an ontic kind, and reject a full terminology entry when a local phrase is sufficient. | §§0, 4.1–4.3, and checks 01–08. Revisit only if a later ISO 704 edition or a better general terminology account changes the designation–subject–definition distinction or preserves it with lower practitioner cost. |
-| W3C [SKOS Reference](https://www.w3.org/TR/skos-reference/), 2009 Recommendation — current standard and representation lineage for lightweight labels and concept schemes. Question: what can preferred and alternative labels, scheme placement, and mapping links support without importing class identity? Its Pareto position is the small, explicit label model and its stated non-entailments, not its age. | **Adapt preferred/alternative-label and scheme discipline as a reuse stress test.** | Preserve the selected-designation/alias split and local-sense scope. Reject RDF or SKOS as required FPF representation; reject same spelling, `skos:exactMatch`, or scheme membership as FPF identity, F.9 Bridge, kind admission, or wider F.17 use; do not require a cell merely to keep wording local. | §§4.1–4.4, 7.2, and checks 03–09. Revisit if a normative SKOS successor or a better lightweight label model changes these label or mapping boundaries. |
-| Almeida, Guizzardi, Sales, and Fonseca, [gUFO](https://arxiv.org/abs/2603.20948), 2026 preprint, read with the current [OBO Foundry principles](https://obofoundry.org/principles/fp-000-summary.html) and its [term-stability rule](https://obofoundry.org/principles/fp-019-term-stability.html) — accepted synthesis for the new-kind question. gUFO supplies a current typology-of-types and relational-aspect comparator; OBO supplies operational scope, reuse, identifier, relation-reuse, and stable-referent pressure. Together they cover formal category discipline and maintained-vocabulary cost better than either alone. | **Adapt the category/label separation and reuse pressure.** | A spelling or source class does not establish an FPF kind. Test existing values, relations, scopes, and stable meanings before proposing another kind. Reject gUFO's hierarchy, OWL commitments, OBO's biomedical scope and IRI rules, and any external source as FPF admission authority. | The pre-admission stop in §§0 and 4.1–4.2, case 7.5, invariants 3 and 8, and checks 05 and 12. Revisit if gUFO's type distinctions or the cited OBO scope, reuse, or stability principles change materially, or a better account reduces admission burden without losing these distinctions. |
-| Cutler et al., [Cedar](https://arxiv.org/abs/2403.04651), 2024, read with current Cedar 4 and [Verified Permissions policy-name and policy-id practice](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/terminology.html), checked 2026-08-15 — current research-and-operation comparator for policy references. Question: how should policy content, a name or identifier, request evaluation, and enforcement stay separate? Its Pareto position is a modern readable and formally analysed policy language with active operational use, not vendor popularity. | **Adapt only the separation of policy reference, policy content, evaluation, and effect.** | Keep a policy identifier resolvable to its specification and keep any decision occurrence, result, Work, or enforcement separate. Reject Cedar and AWS types, stores, API identifiers, and authorization semantics as FPF ontology; reject any inference that an identifier grants permission or makes a policy claim true. | The policy target and step 10, case 7.4, §8.1, and checks 10 and 13. Revisit if the cited line changes the separation among policy name or identifier, policy content, and decision, or a more general current source preserves it with less domain-specific machinery. |
+| [ISO 704:2022](https://www.iso.org/standard/79077.html), edition 4 — current international terminology standard. Question: how should an expression, its designation use, the concept or other subject, and any definition stay distinguishable? It directly treats links among objects, concepts, definitions, and designations across fields. | **Adopt the subject-before-designation order; adapt its terminology distinctions to FPF values, relations, and subject patterns.** | Keep expression, designation, governed subject, and any description separate. Reject using terminology work to admit an ontic kind, and reject a full terminology entry when a local phrase is sufficient. | §§0, 4.1–4.3, and checks 01–08. Revisit only if a later ISO 704 edition or a better general terminology account changes the designation–subject–definition distinction or preserves it with lower practitioner cost. |
+| W3C [SKOS Reference](https://www.w3.org/TR/skos-reference/), 2009 Recommendation — current standard and representation lineage for lightweight labels and concept schemes. Question: what can preferred and alternative labels, scheme placement, and mapping links support without importing class identity? Its explicit label model and stated non-entailments expose those limits. | **Adapt preferred/alternative-label and scheme discipline as a reuse stress test.** | Preserve the selected-designation/alias split and local-sense scope. Reject RDF or SKOS as required FPF representation; reject same spelling, `skos:exactMatch`, or scheme membership as FPF identity, F.9 Bridge, kind admission, or wider F.17 use; do not require a cell merely to keep wording local. | §§4.1–4.4, 7.2, and checks 03–09. Revisit if a normative SKOS successor or a better lightweight label model changes these label or mapping boundaries. |
+| Almeida, Guizzardi, Sales, and Fonseca, [gUFO](https://arxiv.org/abs/2603.20948), 2026 preprint, read with the current [OBO Foundry principles](https://obofoundry.org/principles/fp-000-summary.html) and its [term-stability rule](https://obofoundry.org/principles/fp-019-term-stability.html) — combined comparison for the new-kind question. gUFO supplies a current typology-of-types and relational-aspect comparator; OBO supplies operational scope, reuse, identifier, relation-reuse, and stable-referent pressure. Together they cover formal category discipline and maintained-vocabulary cost better than either alone. | **Adapt the category/label separation and reuse pressure.** | A spelling or source class does not establish an FPF kind. Test existing values, relations, scopes, and stable meanings before proposing another kind. Reject gUFO's hierarchy, OWL commitments, OBO's biomedical scope and IRI rules, and any external source as FPF admission authority. | The pre-admission stop in §§0 and 4.1–4.2, case 7.5, invariants 3 and 8, and checks 05 and 12. Revisit if gUFO's type distinctions or the cited OBO scope, reuse, or stability principles change materially, or a better account reduces admission burden without losing these distinctions. |
+| Cutler et al., [Cedar](https://arxiv.org/abs/2403.04651), 2024, with Cedar 4 and [Verified Permissions policy-name and policy-id practice](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/terminology.html) — current research-and-operation comparator for policy references. Question: how should policy content, a name or identifier, request evaluation, and enforcement stay separate? Its formally analysed policy language and operational use supply a comparison of those distinctions. | **Adapt only the separation of policy reference, policy content, evaluation, and effect.** | Keep a policy identifier resolvable to its specification and keep any decision occurrence, result, Work, or enforcement separate. Reject Cedar and AWS types, stores, API identifiers, and authorization semantics as FPF ontology; reject any inference that an identifier grants permission or makes a policy claim true. | The policy target and step 10, case 7.4, §8.1, and checks 10 and 13. Revisit if the cited line changes the separation among policy name or identifier, policy content, and decision, or a more general current source preserves it with less domain-specific machinery. |
 
 **Internal FPF basis, not external SoTA.**
 
@@ -430,7 +430,7 @@ The accountable branch follows the same rule. A decision occurrence, C.2.1 resul
 - `F.5` names only after F.8 has selected the naming case.
 - Use `F.4` only for a separately needed `SystemRoleKindDescription`; naming the local kind itself does not require that episteme.
 - `F.9` governs an obtaining Bridge between F.17 cells; `F.17` governs admitted public-row use before F.8 reuses it.
-- `F.18` expands durable naming only after lighter dispositions have failed.
+- `F.18` supplies a durable naming settlement when the receiving use needs one.
 - `F.14` supplies the anti-explosion stop before every stronger F.8 disposition.
 - `F.15` may check the resulting distinctions; it neither chooses the disposition nor creates a naming object.
 

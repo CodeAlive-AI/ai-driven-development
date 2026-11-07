@@ -1,0 +1,7 @@
+## KCAE.Reference:12 - Conditions that change the framework and its uses
+
+The framework's usefulness is conditional on the receiving use, adopted primary sources and available alternatives. An observed limitation, a changed use or source, or a materially better alternative can defeat a relied-on contribution. The affected method's promised result and source basis identify what has changed. Its operative explanation and application depend on the same useful connection; unaffected constructions remain available, and a material new scope or assumption changes what readers may rely on.
+
+A new retrieval model primarily reopens representation compatibility and its workload comparison. A new corpus format reopens extraction and reading. A new language population reopens recognition and assessment. Changed provider deletion or transaction semantics reopen the update profile. A failed encounter can call for a different occasion rather than another retrieval algorithm. A reader who must invent an essential connection exposes a publication defect, even if its headings and source links are present.
+
+A profile's stable domain method remains applicable unless the new evidence defeats that method. A failure in transdisciplinary source selection, representation or inquiry belongs with its existing Core owner; a failed installed command or local service belongs with that local practice. These are different change boundaries. A new technology name alone is no reason to redraw the subject boundary.

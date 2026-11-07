@@ -64,7 +64,7 @@ For a mathematical application, compare the retained distinctions and operations
 
 Begin with an understood case so a transcription or implementation error can be found. Then use a changed case that exercises the claimed difference: a shared resource, a constraint, an intervention or another relevant variation. Derive a general relation when the intended conclusion ranges beyond the cases. A finite example establishes its own result; a counterexample can refute a general assertion whose premises it satisfies.
 
-Agreement of reported numbers is informative only after their meanings and conditions are aligned. Conversely, different intermediate objects can lead to the same answer through an explained correspondence. Record only the derivation or explanation the receiving use needs; the comparison does not require a standard table or separate report.
+Agreement of reported numbers is informative only after their meanings and conditions are aligned. Conversely, different intermediate objects can lead to the same answer through an explained correspondence. Record only the derivation or explanation the receiving use needs.
 
 #### B.5.TC:4.4 - Locate what causes the difference
 
@@ -93,7 +93,7 @@ Common outcomes are:
 - **Complementary uses.** Give each account its question and contribution. When combining their results, establish the compatibility needed at the connection.
 - **A consequential unresolved difference.** Keep the conditional answers and the premise or observation that would discriminate them. Continue with an unaffected result, a sufficient bound or the worthwhile inquiry selected for that difference.
 
-Accuracy, reach, computational effort, learning effort and the ability to change the construction can matter differently across uses. Compare the values that can change this choice. If their trade-off is unresolved, C.11 supplies the decision method; a single “best theory” score would hide it.
+Accuracy, reach, computational effort, learning effort and the ability to change the construction can matter differently across uses. Compare the values that can change this choice. If their trade-off is unresolved, C.11 supplies the decision method.
 
 Reopen when the question, premises, interpretation, available operation or relevant evidence changes. B.5.RR helps revise the affected reasoning. Reuse the comparison where its dependencies remain intact.
 
@@ -101,7 +101,7 @@ Reopen when the question, premises, interpretation, available operation or relev
 
 Recognize the need from an unresolved disagreement or a choice between accounts. One worked comparison can already reveal an omitted premise or a useful complementary answer.
 
-Qualify the result for its intended use. A mathematical equivalence needs a derivation over its claimed domain. A physical prediction needs the corresponding model and observation basis. An implemented approximation needs an error account adequate for the question. Use the relevant subject Methods and B.3 for these claims. Broader reliance is a reason to establish the broader claim, while an ordinary local use can stop with its sufficient local result.
+Qualify the result for its intended use. A mathematical equivalence needs a derivation over its claimed domain. A physical prediction needs the corresponding model and observation basis. An implemented approximation needs an error account adequate for the question. Use the relevant subject Methods for these claims. Use B.3 when a named assurance claim about this result and use needs its own assurance argument and qualification. Broader reliance is a reason to establish the broader claim, while an ordinary local use can stop with its sufficient local result.
 
 ### B.5.TC:5 - Archetypal Grounding
 
@@ -139,7 +139,7 @@ The next contribution could be the circuit description, an already available int
 
 A shared question can favor the account that originally framed it. Retain a rival's newly expressible question when it opens useful inquiry; compare that contribution on its own terms. Conversely, unfamiliar notation can make an ordinary operation appear novel. Recover the operation before crediting or rejecting the account.
 
-The cases use small formal constructions so their decisive steps can be inspected. They demonstrate the comparison method, with domain premises stated in each case. A difficult real application can need specialist knowledge, uncertain premises and more than one iteration. Human, AI and collective contributions can participate in the comparison; claims about their learning or reliability require their own basis.
+The cases use small formal constructions so their decisive steps can be inspected. They demonstrate the comparison method, with domain premises stated in each case. A difficult real application can need specialist knowledge, uncertain premises and more than one iteration.
 
 ### B.5.TC:7 - Conformance Checklist
 
@@ -182,11 +182,11 @@ For comparing what different mathematical accounts let a practitioner compute, *
 
 For physical formulations that may agree, **adopt** the constructive comparison in Sussman and Wisdom's *Structure and Interpretation of Classical Mechanics*, second edition (2015), §1.6: derive the equations under the stated force and potential assumptions. This answers more than a numerical fit and often costs less than a new simulation. Against selecting a formulation solely by familiarity, preserve the advantage of coordinates adapted to constraints. Sections :4.3–:4.4 and :5.2 separate that choice from numerical approximation. Reopen when interactions, constraints or the requested result change. [Publisher's text](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/9579/sicm_edition_2.zip/chapter001.html).
 
-For comparing causal uses, **adopt** intervention construction from Pearl's *Causal inference in statistics: An overview* (2009), §3.2.1, and **adapt** it here to expose the particular consequence on which two accounts disagree. Agreement in the observed distribution, a serious comparator for prediction, can leave that intervention consequence undecided. This changes :4.4 and :5.3. C.28 supplies the broader causal method. Reopen when the causal premises or intended intervention change. [Author's paper](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf).
+For comparing causal uses, **adopt** intervention construction from Pearl's *Causal inference in statistics: An overview* (2009), §3.2.1, and **adapt** it here to expose the particular consequence on which two accounts disagree. Agreement in the observed distribution, a serious comparator for prediction, can leave that intervention consequence undecided. Sections :4.4 and :5.3 use this construction; C.28 supplies the broader causal method. Reopen when the causal premises or intended intervention change. [Author's paper](https://ftp.cs.ucla.edu/pub/stat_ser/r350.pdf).
 
 For prediction, a serious alternative to choosing a single account is combining predictive distributions. Yao, Vehtari, Simpson and Gelman's stacking method (2018) chooses weights through predictive performance when the candidate set need not contain the data-generating model. **Adapt** that question-relative choice into :4.5's permission to retain combinations. **Reject** using such predictive weights as a verdict about causal mechanism or mathematical equivalence; those are different comparison questions. The statistical method remains with its domain, including its scoring and validation conditions. Reopen when prediction under another distribution or a different use is required. [Authors' paper](https://sites.stat.columbia.edu/gelman/research/published/stacking.pdf).
 
-This pattern combines these constructive contributions into a common comparison method. Its first result is the comparison obtained under the stated conditions.
+This pattern combines these constructive contributions into a common comparison method.
 
 ### B.5.TC:12 - Relations
 

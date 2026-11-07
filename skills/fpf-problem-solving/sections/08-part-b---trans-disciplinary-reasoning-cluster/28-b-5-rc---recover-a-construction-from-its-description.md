@@ -166,7 +166,7 @@ The method follows the construction's dependency structure. One intermediate obj
 
 Construction and reasoning about properties remain connected. In the triangle case, the construction creates a common point and the circle properties establish equal sides. In the stand case, fitting conditions permit assembly, while load and carrying requirements can lead to design revision. This relation warrants cooperating methods for construction recovery and argument recovery.
 
-B.5 coordinates these contributions within inquiry. C.39 develops a missing method, C.29.2 develops a computational formulation, and A.6.3.RT prepares an operative expression. Their results can supply a missing step here; the source-recovery question does not by itself select every neighbouring method.
+B.5 coordinates these contributions within inquiry. C.39 develops a missing method, C.29.2 develops a computational formulation, and A.6.3.RT prepares an operative expression. Their results can supply a missing step here.
 
 ### B.5.RC:11 - SoTA-Echoing
 
@@ -174,7 +174,7 @@ B.5 coordinates these contributions within inquiry. C.39 develops a missing meth
 
 **Problem reduction.** Rodin's [Kolmogorov's Calculus of Problems and Its Legacy](https://philomatica.org/wp-content/uploads/2023/07/kolmoeng.pdf), in the 2023 author manuscript's discussion of reductions among problems, supplies an earlier account of solving one problem through solutions to others. The present method uses that idea for prerequisite recovery, including joint and alternative contributions. It does not require the reader to adopt intuitionistic logic for every subject.
 
-**Bounded method choice.** For a compressed construction whose result is needed now, compare a linear paraphrase of the source with backward prerequisite recovery followed by a small forward construction. The triangle case requires two circles together; the stand case exposes the unmatched fitting before a complete display exists. The second method is selected because it makes those dependencies actionable. If the source already provides an executable construction understood by the reader, direct use is cheaper. The recovered procedure and the stand example are the present synthesis; the source accounts do not establish an empirical learning gain for this generic method. Reconsider the backward-then-forward approach when, for the same unfamiliar construction and reader preparation, another recovery method supplies the missing operation more reliably at comparable effort.
+**Bounded method choice.** For a compressed construction whose result is needed now, compare a linear paraphrase of the source with backward prerequisite recovery followed by a small forward construction. The triangle case requires two circles together; the stand case exposes the unmatched fitting before a complete display exists. The second method is selected because it makes those dependencies actionable. If the source already provides an executable construction understood by the reader, direct use is cheaper. The recovered procedure and the stand example are the present synthesis. Reconsider the backward-then-forward approach when, for the same unfamiliar construction and reader preparation, another recovery method supplies the missing operation more reliably at comparable effort.
 
 ### B.5.RC:12 - Relations
 

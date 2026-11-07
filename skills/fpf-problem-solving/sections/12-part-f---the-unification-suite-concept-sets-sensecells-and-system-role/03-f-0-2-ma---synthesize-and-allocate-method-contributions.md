@@ -6,13 +6,13 @@
 
 ### F.0.2.MA:1 - Problem frame
 
-**Use this when.** You have recovered useful Method-related material from several sources, but still have to decide which contributions belong together and where they should be used. A handbook, research paper and account recovered from practice may use the same words for different actions, or different words for the same useful move.
+**Use this when.** You have recovered useful Method-related material from several sources, but still have to decide which contributions belong together and where they should be used. Documentary sources and accounts recovered from practice may use the same words for different actions, or different words for the same useful move.
 
 The working reader is a Method engineer building or revising descriptions, a repertoire or a pattern language. Begin with one disputed allocation: **which recovered contribution should this description or pattern carry, and what would be lost by placing it there?**
 
 The first useful result is one justified allocation. For example: “Use the existing coherence-checking Method; keep this source's narrower qualification window with the affected description claim; leave the observed shortcut as a candidate account.” Stop there if it settles the receiving decision.
 
-Use an already sufficient F.0.2 synthesis or existing pattern result directly when no Method-content allocation remains. A.3.1.DR recovers documentary contributions; A.3.1.MR, and conditionally RMP.10, recover accounts from Work evidence. F.0.2.MA starts from their results, not from an unread corpus or raw observations.
+Use an already sufficient F.0.2 synthesis or existing pattern result directly when no Method-content allocation remains. A.3.1.DR recovers documentary contributions; A.3.1.MR, and conditionally RMP.10, recover accounts from Work evidence. F.0.2.MA starts from their results.
 
 ### F.0.2.MA:2 - Problem
 
@@ -40,7 +40,7 @@ Reconcile meanings before assigning destinations. Preserve every difference that
 
 1. **Name the receiving use and contribution.** Identify the description, Method question or pattern-language use being changed. Take the recovered source claim together with its difficulty or opportunity, proposed action, result, conditions and source location.
 2. **Keep the input roles distinct.** A documentary claim remains what that source asserts. A returned MR account keeps its candidate, rival and evidence limits. A current FPF/DPF result keeps its declared scope. A source's report that work occurred is not independent occurrence evidence.
-3. **Resolve only the meaning difference that matters.** Use F.0.1 when a source expression is ambiguous, F.1 when the source cut is insufficient, and F.0.2 when cross-source synthesis is needed. Consume its provisional synthesis, contrast or unresolved-inquiry result, including its locator, source edition and receiving disposition; do not replace that result with a similarity score.
+3. **Resolve only the meaning difference that matters.** Use F.0.1 when a source expression is ambiguous, F.1 when the source cut is insufficient, and F.0.2 when cross-source synthesis is needed. Use its provisional synthesis, contrast or unresolved-inquiry result, with its source edition, grounds and any disposition already made. Preserve a locator when later citation needs it; a similarity score does not replace the comparison.
 4. **Subtract the current answer by value.** Open the current FPF or DPF supplier that appears to cover the contribution. Compare the practitioner question, action, first result, applicability and stop. Use the supplier directly if it answers those positions. When a source adds a warranted Method-specific condition or move, retain that remainder and explain its receiving use.
 5. **Decide whether the contributions can share an account.** Compare reusable action, participant meanings, preconditions, result, variation and stop. Merge supported common content while retaining different conditions. Split incompatible actions or statuses. Keep an unresolved alternative when the evidence cannot distinguish them. A.3.1.QM and B.1.5.CM settle any Method or whole claim needed by the allocation.
 6. **Assign the contribution and its remainder.** State what is reused from current supply; what is added to or changes a Method description or pattern; what remains direct source material; and what is unresolved. Allocate the shared construction by its actual premises. A Method, corpus or publication can be the subject of a transdisciplinary operation. Retain a domain contribution where its action depends on that discipline's substantive knowledge; do not infer either Core placement or exclusion from the subject's name.
@@ -92,7 +92,7 @@ The engineer's allocation is:
 | Shortening the warning | Retain W's rival accounts and the missing comparison. Do not create an admitted “shortcut Method” from one reported occurrence. |
 | Layout instructions for the handbook's publishing tool | Keep them in H. They do not belong in the reusable Method claim. |
 
-The first useful result is the conditional reuse answer, not a new pattern count. A description author can now state the condition and the exact return to A.3.1.CC.
+The first useful result is the conditional reuse answer. A description author can now state the condition and the return to A.3.1.CC.
 
 #### F.0.2.MA:5.2 - A changed source does not erase a former result
 
@@ -140,11 +140,11 @@ Keeping this result separate from A.3.1.DR lets documentary recovery remain fait
 
 ### F.0.2.MA:11 - SoTA-Echoing
 
-The current best-known approach for this question combines source-local conceptual comparison with Method-content and use analysis. F.0.2 supplies the former; A.3.1.DR, A.3.1.QM, A.3.2.DE and the other direct Method-development results supply their respective subjects. In the H/L/W case, the added allocation preserves a usable conditional review answer, rejects an unsupported shortcut-Method identification and leaves tool instructions at their source. A generic synthesis note can be sufficient when it already contains those destinations and returns.
+For the allocation question, combine source-local conceptual comparison with Method-content and use analysis. F.0.2 supplies the former; A.3.1.DR, A.3.1.QM, A.3.2.DE and the other direct Method-development results supply their respective subjects. In the H/L/W case, this allocation preserves a usable conditional review answer, rejects an unsupported shortcut-Method identification and leaves tool instructions at their source. A generic synthesis note is sufficient when it already supplies those destinations and returns; allocation is useful when one of them remains missing.
 
 [Daalhuizen and Cash's Method Content Theory (2021)](https://doi.org/10.1016/j.destud.2021.101018) supplies questions about goal, procedure, rationale, framing and mindset. [Stacey et al. (2025)](https://doi.org/10.1017/dsj.2025.9) reinforces the need to retain the knowledge and use conditions around procedural guidance. Adopt these as source questions; do not turn their different models into a universal field schema or FPF parthood test.
 
-This Method-content allocation is a local synthesis, not a claim of priority over SME or conceptual synthesis. Reopen it when current supply makes a separate result unnecessary, a source difference defeats a merge, or maintaining the allocation costs more than the source reconstruction it saves.
+Reopen this allocation method when current supply makes a separate result unnecessary, a source difference defeats a merge, or maintaining the allocation costs more than the source reconstruction it saves.
 
 ### F.0.2.MA:12 - Relations
 

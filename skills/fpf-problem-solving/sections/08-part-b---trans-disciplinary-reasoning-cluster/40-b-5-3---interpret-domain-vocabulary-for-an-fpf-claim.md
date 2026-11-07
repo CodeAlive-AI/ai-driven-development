@@ -4,13 +4,13 @@
 
 ### B.5.3:1 - **Problem Frame**
 
-FPF keeps a small set of admitted U-kinds, ontics, slot relations, mechanisms, characteristics, methods, work values, epistemes, and publication-use relations. Working domains use their own words. A thermodynamicist says "system", "macrostate", "control volume", and "free energy"; a safety engineer says "hazard", "mitigation", and "assurance case"; a software team says "service", "endpoint", and "release".
+Working domains use their own vocabulary, while an FPF claim must preserve the kind and relations its meaning requires. A thermodynamicist uses terms such as "system", "macrostate", "control volume" and "free energy".
 
-Those words are useful. The problem starts when one local word is silently treated as a new root kind, a role assignment, a characteristic, a method, a work occurrence, an evidence relation, or a publication claim without saying which FPF value the claim uses.
+The problem starts when the familiar word substitutes for identifying what the local claim denotes or asserts. The same expression can require different FPF interpretations in different claims.
 
 ### B.5.3:2 - **Problem**
 
-How can FPF let project teams keep domain vocabulary while preserving the current FPF ontology? A dictionary-style alias is too weak because it only says that two labels are being associated. It does not say whether the claim concerns an entity, a kind, a slot filler, a characteristic coordinate, a role assignment, a method, a mechanism, a work plan, a performed work occurrence, an episteme, a publication-use relation, or an evidence-use relation.
+How can FPF let project teams keep domain vocabulary while preserving the current FPF ontology? A dictionary-style alias is too weak because it only says that two labels are being associated. It does not determine what the local claim asserts or which FPF kind or relation that claim needs.
 
 ### B.5.3:3 - **Forces**
 
@@ -26,10 +26,10 @@ How can FPF let project teams keep domain vocabulary while preserving the curren
 Use this bounded interpretation move when domain vocabulary leaves the FPF claim unclear.
 
 1. Start from the exact expression, source, edition, and relevant passage. Use F.0.1 to recover the source-local claim. Recover an F.17 cell and test its basis relation when the current claim needs them, including when an F.9 Bridge is claimed. Add a durable term row only when the receiving use needs that packaging under F.17.
-2. Ask which exact FPF value or relation the current claim needs, then use the pattern that defines or constrains it. For example, the answer may concern a System, characteristic, Method, Work occurrence, episteme, system-role assignment, or evidence-use relation; the list is illustrative, not a set of new bridge kinds.
-3. If the use really needs a new kind, apply E.24.UK and C.3. A familiar expression, table row, or diagram label supplies no kindhood.
-4. If the recovered source-local claim already answers the question, return it and stop. If a receiving use must relate two distinct local-sense claims, use F.9 to test whether an exact Bridge between their F.17 cells actually obtains. Shared spelling, a mapping table, or a completed card proves no such relation.
-5. State the receiving use separately. Name the direction, scope or applicability boundary, tolerated loss, evidence or reliance basis, and reopen condition only when each changes that use. The semantic relation alone neither authorizes nor performs the use.
+2. Ask which exact FPF value or relation the current claim needs, then use the pattern that defines or constrains it. For example, the answer may concern a System, characteristic, Method, Work occurrence, episteme, system-role assignment, or evidence-use relation.
+3. Use C.3 when the claim needs a kind: recover its candidate domain and membership distinction. Use E.24.UK when another durable public FPF U-kind is proposed.
+4. If the recovered source-local claim already answers the question, return it and stop. If a receiving use must relate two distinct local-sense claims, use F.9 to test whether an exact Bridge between their F.17 cells actually obtains. Shared spelling alone proves no such relation.
+5. For an F.9 bounded-use claim, state the proposed use, direction, correspondence rule, loss tolerance, and whether the claim is affirmative or negative. Evidence reliance requires the A.10 path, obtaining relations, and local RelianceDisposition for that same use under F.9:4.2; apply B.3 when an actual named assurance claim is current. State other applicability or reopen conditions when they qualify the use. The semantic relation alone neither authorizes nor performs the use.
 6. When *role* wording is material, use E.10.ROLE and A.2 to distinguish a local system-role kind, classification, assignment, participation, responsibility, or ordinary language before making the direct claim.
 
 The practical result can be one readable sentence. Use a note, row, or card only when a later reader or tool needs durable packaging. The package describes the result; it does not create the FPF value, local meaning, relation, or permitted use.
@@ -40,38 +40,38 @@ An alias says only that `L` is another name for `V`. A completed B.5.3 move inst
 
 A thermodynamics team models a heat engine.
 
-* In the cited thermodynamics source, "thermodynamic system" names the engine under concern together with the boundary and state variables relevant to that local claim. Recover the same System already used elsewhere; the expression does not automatically name a kind or assignment.
+* For "thermodynamic system", recover the entity selected by the team's model and its boundary and state-variable claims. If the claim concerns the already identified heat engine, retain that System identity.
 * "Macrostate" makes a source-local claim about a state description or characteristic bundle over, for example, pressure, volume, temperature, and particle amount. State the effective scheme and units directly; recover an F.17 cell and its basis relation when the receiving claim needs them, and add a durable term row only when reuse needs one.
-* "Control volume" may name a boundary or region relation. The claim must say which entity is bounded and which exchanges cross the boundary.
+* In [Reynolds and Colonna's control-volume formulation](https://www.cambridge.org/core/books/abs/thermodynamics/control-volume-energy-analysis/420AFDFE9F5A1CA8ACE69378F42A4F2A), "control volume" denotes a selected region of space. Identify its boundary and the matter and energy transfers across it considered by the model.
 * "Free-energy objective" may name an objective claim, characteristic, or selection criterion. The claim must say which FPF value the decision uses.
 * If the engine control System is assigned a locally defined heat-source-controller system-role kind, establish a separate obtaining occurrence of the declared `U.SystemRoleAssignment` species. The source-local meaning, classification, assignment, Work, claim scope, and time window remain separate.
 
 Current physical-system claims in this example use `A.1` for system identity. `A.14` distinguishes the part and whole relations actually claimed; `A.22` defines how to identify a selected organization of already established constituents and direct relations. `A.3.4` identifies an actual bounded change when one is claimed. Use `B.1.6` for any work-resource aggregation needed here and `C.16` for measured characteristics.
 
-The control-volume boundary and exchange claims require the applicable thermodynamic rule. If that rule is unavailable, retain the local description and name the missing rule rather than asserting the relation. Planned `C.1` (Sys-CAL) may later consolidate that guidance; it is not a current governor.
+The control-volume boundary and exchange claims require the applicable thermodynamic rule. If that rule is unavailable, retain the local description and name the missing rule rather than asserting the relation.
 
 
 What this achieves:
 
 * Domain constraints become reviewable without turning every domain word into a root kind.
 * Verification can use the direct pattern for the recovered value: boundary discipline for a control volume, characteristic-space discipline for state variables, system-role-assignment discipline when an assignment is claimed, and publication-use or evidence-use discipline for reports and dashboards.
-* The heat engine remains the same System when a power-plant architecture, finance model, safety case, and thermodynamics model all discuss it. Any actual F.9 relation states how two distinct local meanings correspond; the named receiving-use claim states which losses block that use.
+* The heat engine remains the same System across the accounts that discuss it. Any actual F.9 relation states how two distinct local meanings correspond; the named receiving-use claim states which losses block that use.
 
 The same expression can be reused in an architecture view, a requirements document, and a simulation model only after each local claim identifies its actual value. If the claims use distinct local meanings, test any required F.9 relation and its receiving use separately.
 
 **Conformance Checklist**
 
 * **CC-B5.3.1 (Recover the FPF value used by the claim):** The result names the exact FPF value or relation used by the current claim before treating a preferred expression as reusable.
-* **CC-B5.3.2 (No kindhood by spelling):** A local expression, dotted name, table row, or diagram label does not become a U-kind. A needed durable kind requires its own E.24/E.24.UK and C.3 settlement from independent ontic and membership evidence.
+* **CC-B5.3.2 (No kindhood by spelling):** A local expression, dotted name, table row, or diagram label does not become a U-kind. Recover a needed kind's candidate domain and membership distinction under C.3; use E.24.UK for another durable public FPF U-kind.
 * **CC-B5.3.3 (Role boundary):** When *role* wording changes the claim, E.10.ROLE first recovers whether it means a local system-role kind, classification, assignment, participation, responsibility, or ordinary language. Each resulting claim then uses its own FPF pattern.
-* **CC-B5.3.4 (Relation and use boundary):** Claim an F.9 Bridge only when its exact endpoint cells and predicate make it obtain. State the receiving use, direction, applicable scope, tolerated loss, evidence or reliance basis, and return condition separately; shared spelling proves none of them.
-* **CC-B5.3.5 (Description boundary):** If the local expression appears in a requirement, diagram, dashboard, report, or publication, use the direct description and publication patterns to keep the described entity, description episteme, publication form, and carrier distinct.
+* **CC-B5.3.4 (Relation and use boundary):** Claim an F.9 Bridge only when its exact endpoint cells and predicate make it obtain. Judge the named use separately under F.9:4.2, retaining its direction, correspondence rule, loss tolerance, polarity, and any required same-use reliance or assurance result. State other applicability and return conditions when they qualify the use; shared spelling proves none of them.
+* **CC-B5.3.5 (Description boundary):** When the current claim depends on distinguishing the described entity, description episteme, publication form, or carrier, use the applicable description or publication pattern to recover that distinction.
 
 **Common Anti-Patterns and How to Avoid Them**
 
 | Anti-Pattern | What it looks like | Better FPF move |
 | :--- | :--- | :--- |
-| **Subtype explosion** | Every domain expression becomes a new root kind. | Keep the source-local claim as wording unless E.24.UK and C.3 establish a needed kind from independent ontic evidence. |
+| **Subtype explosion** | Every domain expression becomes a new root kind. | Keep the source-local wording when it suffices. Use C.3 for a needed kind and E.24.UK for a proposed durable public FPF U-kind. |
 | **Magic synonym** | A table says "sensor = component" and is treated as identity or permission. | Recover each exact local claim and the FPF value used. If two distinct cells must be related, test the actual F.9 relation and judge the named use separately. |
 | **Role-for-everything** | Evidence, status, local meaning, responsibility, and document use are all called roles. | Apply E.10.ROLE, then name the actual value or relation and use its direct pattern. A local system-role kind or assignment is only one possible result. |
 | **Description collapse** | A diagram label is treated as the entity, interface, or method itself. | Keep entity, description episteme, representation scheme, and publication form distinct. |
@@ -81,8 +81,8 @@ The same expression can be reused in an architecture view, a requirements docume
 | Benefits | Trade-offs / Mitigations |
 | :--- | :--- |
 | **Domain language stays usable:** Experts keep familiar words without forcing every word into the kernel. | **Recovery overhead:** A load-bearing expression needs its exact source-local claim and governed value. Keep the returned explanation short; recover F.17 cells and their basis relations for claims that need them, including F.9 Bridges, and add durable rows only when reuse needs them. |
-| **Kernel stays lean:** New kinds require explicit admission and ontic support. | **More precise modeling choices:** The bridge may reveal that one local word hides several FPF values. That is the point: split them before they drive work. |
-| **Cross-document clarity:** Requirements, diagrams, dashboards, simulations, and reports can be compared without pretending they are the same artifact. | **Need for an exact use boundary:** Do not reuse a source-local claim or semantic relation in another project, scheme, scope, or action without checking the actual changed values, tolerated loss, and reliance basis. |
+| **Kind claims have grounds:** A kind's candidate domain and membership distinction are recovered under C.3; another durable public FPF U-kind requires E.24.UK admission. | **More precise modeling choices:** The bridge may reveal that one local word hides several FPF values. That is the point: split them before they drive work. |
+| **Cross-document clarity:** Accounts can be compared while keeping their represented values and uses distinct. | **Need for an exact use boundary:** Do not reuse a source-local claim or semantic relation in another project, scheme, scope, or action without checking the actual changed values, tolerated loss, and reliance basis. |
 
 ### B.5.3:7 - **Rationale**
 

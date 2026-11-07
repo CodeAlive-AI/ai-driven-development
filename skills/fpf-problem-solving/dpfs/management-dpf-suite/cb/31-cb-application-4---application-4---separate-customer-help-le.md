@@ -1,0 +1,15 @@
+## CB.Application:4 - Application 4 - Separate customer help, learning and provider commitments
+
+A software provider invites customers to exchange examples. Its commercial team hopes to retain subscriptions; participants want to complete particular tasks. Using CB.1, the organiser makes both interests visible and compares peer help, documentation and paid support. An outage requiring a dependable response goes to the provider's service. One customer's non-urgent question fits an exchange: how to send each project team a weekly digest containing only its own records.
+
+Through CB.5, the organiser prepares a short case clinic with a capable contributor and synthetic project data. The contributor proposes a filter and a recipient rule from the product's documented method. The customer tests two projects and discovers that the copied filter still names the first project. They correct it, repeat the test and obtain separate digests for the intended recipients. They return that specific result; actual production use still requires their applicable checks and permission.
+
+Under CB.9, the provider assigns a qualified employee to the thirty-minute clinic every other week and supplies the moderator's preparation time. Volunteers choose whether to contribute examples. The provider obtains a separate agreement before treating an occasional contribution as scheduled production work.
+
+The customer then wants to construct these configurations independently. With the HCD methods, the learning provider supplies a changed task, practice and feedback. The task changes project and recipient conditions; the learner must select and justify the filter and identify missing input. One attempt succeeds with a hint, so the provider arranges another attempt before judging independent performance. The earlier clinic answer remains useful help, while this work addresses the person's capability.
+
+Using CB.10, the organiser follows the separate returns. The customer's report leads to a template that makes the project-specific field explicit. The learning provider uses the observed attempts for its bounded capability judgement. A later commercial inquiry would need suitable grounds to explain subscription retention; clinic activity and favourable stories alone do not settle that explanation.
+
+A sales colleague quotes the customer's contribution as an endorsement without agreement. Through CB.8, the moderator receives the objection, checks the publication with those involved, obtains removal from the responsible publisher and tells the customer what was corrected. The provider clarifies the permitted use of later contributions. The incident concerns the accepted terms of participation, even though the configuration help was useful.
+
+Continue the group under terms participants can understand and accept. Obtain a dependable support service through its responsible provider. A proposed course whose complete programme or qualified provision is still missing remains a proposal; this clinic can contribute worked material without supplying that whole product.

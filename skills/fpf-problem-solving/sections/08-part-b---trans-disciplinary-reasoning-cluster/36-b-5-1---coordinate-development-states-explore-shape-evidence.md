@@ -18,12 +18,12 @@ Use the four development states to name the current focus for the episteme or sy
 
 **The Four Development States:**
 
-| State | Core Activity | Manager's View: What It Means | Reasoning Contribution | What the state leaves to the receiving claim and use |
+| State | Core Activity | Manager's View: What It Means | Possible reasoning contributions | What the state leaves to the receiving claim and use |
 | :--- | :--- | :--- | :--- | :--- |
-| **1. Exploration** | **Generating possibilities.** Frame the problem and compare candidate explanations or designs. | "We are looking for a plausible direction and keeping the serious alternatives visible." | **Abduction** (B.5.2) | A qualified conjecture may be sufficient for the present question; its origin does not assign `L0`. |
-| **2. Shaping** | **Defining a coherent form.** Develop the selected direction and derive its relevant consequences. | "We are making the design and its implications clear enough for the next intended use." | **Deduction** | Logical support concerns the consequence under its premises. A coherent design alone does not establish actual performance. |
-| **3. Evidence** | **Evaluating the relevant claims.** Use applicable empirical or formal results and obtain missing evidence when it is required and feasible. | "We are deciding whether the needed claims are supported in the intended conditions." | **Empirical evaluation and applicable formal reasoning** | Relevant existing support can be sufficient. A passed test does not automatically confer a higher assurance level. |
-| **4. Operation** | **Using in a live environment.** Begin or continue the intended operation and monitor what its actual conditions require. | "The system or episteme is in use, with the required operational conditions in place." | **Reasoning about operating observations and needed changes** | Readiness and continuing use depend on the actual qualification, protective and authority conditions, not maintained `L2`. |
+| **1. Exploration** | **Generating possibilities.** Frame the problem and compare candidate explanations or designs. | "We are looking for a plausible direction and keeping the serious alternatives visible." | **Candidate construction; abduction for explanatory conjectures** (B.5.2) | A qualified conjecture may be sufficient for the present question. |
+| **2. Shaping** | **Defining a coherent form.** Develop the selected direction and derive its relevant consequences. | "We are making the design and its implications clear enough for the next intended use." | **Construction and deduction** | Logical support concerns the consequence under its premises. A coherent design alone does not establish actual performance. |
+| **3. Evidence** | **Evaluating the relevant claims.** Use applicable empirical or formal results and obtain missing evidence when it is required and feasible. | "We are deciding whether the needed claims are supported in the intended conditions." | **Empirical evaluation and applicable formal reasoning** | Relevant existing support can be sufficient. |
+| **4. Operation** | **Using in a live environment.** Begin or continue the intended operation and monitor what its actual conditions require. | "The system or episteme is in use, with the required operational conditions in place." | **Reasoning about operating observations and needed changes** | Readiness and continuing use depend on the actual qualification, protective and authority conditions. |
 
 B.3.3 governs any assurance conclusion about the particular claim and receiving use. Retain an applicable domain profile, proof obligation or validation requirement where that use requires it. Existing results count only when they cover the present conditions; a missing required result can block the intended transition. A proposal to improve an excessive requirement does not waive a currently binding condition.
 
@@ -49,7 +49,7 @@ B.3.3 governs any assurance conclusion about the particular claim and receiving 
 
 ### B.5.1:6 - **Rationale**
 
-This pattern operationalizes the **Principle of State Explicitness (P-9)** for development coordination. The four states make the project's focus and transition obligations inspectable. B.5 supplies reasoning contributions and B.3.3 qualifies assurance for a claim and use. Keeping those questions distinct supports iterative development without requiring every useful idea or result to become an operational holon.
+This pattern operationalizes the **Principle of State Explicitness (P-9)** for development coordination. The four states make the project's focus and transition obligations inspectable. B.5 supplies reasoning contributions and B.3.3 qualifies assurance for a claim and use. Keeping those questions distinct lets a project use a sufficient result while continuing development of its subject.
 
 ### B.5.1:7 - **Relations**
 

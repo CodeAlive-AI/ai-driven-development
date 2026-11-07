@@ -34,7 +34,7 @@ F.3 repairs this by testing usage under the exact source basis rather than by co
 | **Parsimony vs fidelity** | Few claims are easier to teach; too few erase distinctions the source relies on. |
 | **Usage vs definition** | Recover how the source uses an expression, not an imported dictionary meaning. |
 | **Labels vs idiom** | Tech stays source-faithful while Plain helps a newcomer without widening the claim. |
-| **Stability vs revision** | Local meanings should remain citable yet change when the source evidence really changes. |
+| **Stability vs revision** | Local meanings should remain citable yet change when the source evidence changes. |
 
 ### F.3:4 - Core idea (didactic)
 
@@ -43,13 +43,13 @@ F.3 repairs this by testing usage under the exact source basis rather than by co
 * **Same local meaning:** expressions are interchangeable in the relevant source passages and no source-grounded test makes them support different conclusions.
 * **Different local meanings:** their argument patterns, entailments, temporal stance, or practical consequences differ.
 
-The cluster’s outcome is a **LocalSenseClaim**, with a Tech and Plain label pair, supporting expressions, and an optional counterexample. If durable reuse needs an address, use F.17’s `SchemeSenseCell = <ReferenceScheme, LocalExpression, LocalSenseClaim>`. The cell has three parts; it is not a two-part pair and does not make the claim global.
+The cluster’s outcome is a **LocalSenseClaim**, with supporting expressions, any labels needed by the receiving use, and an optional counterexample. If durable reuse needs an address, use F.17’s `SchemeSenseCell = <ReferenceScheme, LocalExpression, LocalSenseClaim>`. The address preserves the claim's local interpretation basis.
 
 ### F.3:5 - Minimal vocabulary (this pattern only)
 
-* **Interpretation basis** — the exact source and edition and the effective `U.ReferenceScheme` used to understand the selected passages.
+* **Interpretation basis** — the exact source and edition and the effective reference scheme used to understand the selected passages.
 * **Unit** — a source-local lexical note from F.2.
-* **LocalSenseClaim** — the one-sentence claim that a cluster of source uses supports under that basis.
+* **LocalSenseClaim** — the claim that a cluster of source uses supports under that basis, explained at the detail needed by the receiving question.
 * **Supporting expressions** — the F.2 expressions consolidated by the claim.
 * **Counterexample** — a short source-grounded use that must not be covered by this claim.
 * **SchemeSenseCell** — F.17’s optional stable address; it carries the scheme, an expression, and the local-sense claim.
@@ -77,22 +77,22 @@ If one use entails occurrence in time and another entails a design structure or 
 
 #### F.3:6.4 - Prefer the coarsest adequate partition
 
-Merge candidates when no source-grounded test relevant to the receiving question distinguishes them. Split when a concrete counterexample would otherwise be admitted. Do not split merely to fill a taxonomy.
+Merge candidates when the recovered source uses establish that they are interchangeable for the receiving question and preserve every relevant conclusion. A failed attempt to find a distinction is insufficient when the source basis is too weak to decide. Keep that uncertainty explicit. Split when a concrete counterexample would otherwise be admitted; do not split merely to fill a taxonomy.
 
 #### F.3:6.5 - Keep labels honest
 
-Keep the Tech label in the source’s idiom. Make the Plain label explain the same claim to a careful newcomer. Neither label is the value being described, and neither may widen the claim.
+When the receiving use needs an additional label, keep the Tech designation in the source’s idiom. Add a Plain designation for a stated didactic use, explaining the same claim. Neither label is the value being described, and neither may widen the claim.
 
-#### F.3:6.6 - Address only recurring uses
+#### F.3:6.6 - Address only when needed
 
-Ordinary prose may cite the source, expression, and claim directly. Mint an F.17 cell only when the local meaning must be reused, compared, or traced repeatedly.
+Ordinary prose may cite the source, expression, and claim directly. Create an F.17 cell when reuse, comparison or traceability needs a stable address for the local meaning.
 
 ### F.3:7 - Outputs
 
 For each interpretation basis used by the receiving question, F.3 yields a small set of local-sense claims. Each has:
 
-* a Tech and Plain label pair;
-* a one-sentence LocalSenseClaim;
+* any additional labels needed by a naming or didactic use;
+* the LocalSenseClaim and sufficient explanation of its meaning;
 * the supporting expressions and passages;
 * an optional counterexample that sharpens the boundary;
 * an optional F.17 SchemeSenseCell when durable addressability is worth its cost.
@@ -103,8 +103,8 @@ These are reference points for reasoning. They are not mandatory records, and th
 
 1. **Basis explicit.** Every LocalSenseClaim names the source and edition and the effective reference scheme needed to interpret it.
 2. **Parsimony.** Prefer the coarsest partition that preserves source-grounded differences relevant to use.
-3. **Idiomatic Tech.** The Tech label remains source-faithful.
-4. **Didactic Plain.** The Plain label aids comprehension without adding scope.
+3. **Idiomatic Tech.** A Tech designation, when used, remains source-faithful.
+4. **Didactic Plain.** A Plain designation, when used, aids comprehension without adding scope.
 5. **Usage first.** Claims follow source passages, not imported taxonomies.
 6. **Counterexample rule.** A source-grounded counterexample that matters to the receiving question forces a split or tighter claim.
 7. **Category boundary.** A local-sense claim does not establish behaviour, obligation, measurement, kindhood, assignment, or Work.
@@ -112,12 +112,12 @@ These are reference points for reasoning. They are not mandatory records, and th
 
 ### F.3:9 - Self-checks
 
-* **Same-conclusion test.** Would the candidate uses ever change a source-grounded conclusion relevant here? If not, merge.
-* **Argument probe.** Substitute the participants from one use into the other. If the source proposition fails, split.
+* **Same-conclusion test.** Do the source uses establish the same relevant meaning and preserve the conclusions needed here? If so, merge. If the available passages cannot settle the comparison, retain the unresolved difference and identify the missing basis.
+* **Argument probe.** Substitute the participants from one use into the other. Split when this exposes incompatible source-required participant kinds or semantic roles. A false instance alone does not establish another sense: “Alice is licensed” and “Bob is licensed” can differ in truth while using `licensed` with the same meaning.
 * **Entailment probe.** Does one use imply an occurrence while the other implies a description, kind, or status? Split.
-* **Label inversion.** Read the Plain label alone. If it invites a broader claim, tighten it.
-* **Counterexample ping.** State a short use that must be excluded. If it falls inside the claim, refine the boundary.
-* **Memory rule.** If a careful reader cannot recall the few relevant claims, the partition is probably too fine.
+* **Label inversion.** When a Plain label is used, read it alone. If it invites a broader claim, tighten it.
+* **Counterexample ping.** Use a source-grounded excluded use when it matters to the receiving question. If that use falls inside the claim, refine the boundary.
+* **Memory rule.** Poor recall is a cue to inspect the partition for needless splits. Retain every source-grounded distinction that changes the receiving use.
 
 ### F.3:10 - Anti-patterns & remedies
 
@@ -129,7 +129,7 @@ These are reference points for reasoning. They are not mandatory records, and th
 | **A4** | Under-granulation | Diagram node and real occurrence share one claim. | Later inferences contradict each other. | Split on argument or entailment conflict and add a counterexample. |
 | **A5** | Imported definition | A dictionary replaces the selected source passages. | The result is no longer source-local. | Ground the claim in the actual passages. |
 | **A6** | Label drift | Plain adds scope not present in Tech or the claim. | The cold reader learns the wrong concept. | Keep both labels within the same claim. |
-| **A7** | Substantive leakage | A sense line contains policies, equations, or kind criteria. | The lexical note is asked to establish a substantive fact about another value. | Route the claim to its direct pattern. |
+| **A7** | Meaning used as factual warrant | A sense claim is used to establish that a policy, equation or kind criterion holds for an instance. | Interpreting a substantive condition and establishing its application are different questions. | Keep defining content needed to explain the source meaning; test the separate substantive claim under its direct pattern. |
 | **A8** | Edition blend | Two editions with changed usage share one unqualified claim. | Replay and comparison become unreliable. | State each basis; merge only if evidence supports the same claim. |
 | **A9** | Cue worship | Similar collocations are treated as proof. | Correlation replaces source meaning. | Use cues to locate passages, then test propositions. |
 | **A10** | Time blur | A design-time use and a run-time occurrence are clustered together. | MethodDescription and Work collapse. | Split and use F.11, A.3, and A.15 for the substantive distinction. |
@@ -168,13 +168,13 @@ Section 12.2 supplies one source-grounded clustering case. The other entries are
 
 **Agent.** Keep a separate local meaning. Tech **agent (PROV-O)**; Plain **responsible participant**. LocalSenseClaim: something responsible for an activity, an entity's existence or another agent's activity. An RBAC permission role is not thereby a PROV agent.
 
-The namespace expansion supports the alias consolidation; the temporal-occurrence and responsibility meanings remain separate. These two local claims answer the receiving question; an F.17 address is added only for a later recurring use.
+The namespace expansion supports the alias consolidation; the temporal-occurrence and responsibility meanings remain separate. These two local claims answer the receiving question; add an F.17 address only when a later use needs that stable address.
 
 #### F.3:12.3 - ITIL 4
 
 **Service-level objective and SLO.** One claim may consolidate the full form and abbreviation when the cited edition uses them interchangeably: a target value or range for a service characteristic. Counterexample: an observed availability value is evidence, not the target.
 
-**Incident.** Claim: an unplanned interruption or reduction in service quality. Counterexample: a plant sensor fault is not an ITIL incident unless another relation is separately established.
+**Incident.** Claim: an unplanned interruption or reduction in service quality. Counterexample: a plant sensor fault that causes no service interruption or reduction in service quality.
 
 #### F.3:12.4 - SOSA/SSN
 
@@ -195,10 +195,10 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 1. **Alias consolidation.** Merge expressions only when the source uses them interchangeably for the current question.
 2. **Argument split.** Split uses whose required participants differ materially.
 3. **Entailment split.** Split when the uses support different conclusions.
-4. **Parsimony merge.** Merge when no relevant source-grounded test distinguishes the candidates.
+4. **Parsimony merge.** Merge source-supported interchangeable uses when no relevant conclusion is lost; leave the comparison unresolved when the source basis cannot establish that result.
 5. **Counterexample trigger.** Tighten or split a claim that admits a concrete excluded use.
-6. **Label check.** Tech stays idiomatic; Plain explains without widening.
-7. **Address check.** Create an F.17 cell only when recurring use needs a stable address.
+6. **Label check, when labels are used.** Tech stays idiomatic; Plain explains without widening.
+7. **Address check.** Create an F.17 cell only when the receiving use needs a stable address.
 8. **Edition check.** Re-evaluate the interpretation basis before carrying a claim across an edition change.
 9. **Coverage ping.** If a frequent source expression that matters to the receiving question has no local-sense claim, check whether one useful cluster is missing.
 10. **Stop rule.** Do not infer a relation to another local meaning from clustering alone.
@@ -223,9 +223,9 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 
 ### F.3:15 - Migration notes
 
-1. **Usage clarifies.** Merge only when the source-grounded distinction test fails.
+1. **Usage clarifies.** Merge only when the recovered source uses support interchangeability for the receiving question; lack of a decisive comparison leaves it unresolved.
 2. **Usage diverges.** Split and add a counterexample when argument patterns or entailments pull apart.
-3. **Edition changes.** Recover the changed basis and claim; do not automatically invent a new universal container.
+3. **Edition changes.** Recover the changed basis and claim.
 4. **Labels drift.** Repair Tech or Plain without silently changing the claim.
 5. **Dormant claim.** Omit it from the active comparison when it no longer changes the receiving answer; do not fold it into another claim without evidence.
 6. **Bridge temptation.** Record the question for F.9; do not answer it in F.3.
@@ -235,7 +235,7 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 #### F.3:16.1 - Static conformance
 
 * **SCR-F3-S01 (basis).** Every LocalSenseClaim names its source and edition and the effective reference scheme.
-* **SCR-F3-S02 (labels).** Tech and Plain denote the same bounded claim.
+* **SCR-F3-S02 (labels when used).** Tech and any Plain designation denote the same bounded claim.
 * **SCR-F3-S03 (fidelity and time stance).** Each claim is grounded in cited source use, preserves any source-grounded design-time, run-time, or other temporal distinction, and contains no imported substantive calculus.
 * **SCR-F3-S04 (parsimony).** The claim set is small enough for the receiving question.
 * **SCR-F3-S05 (counterexample).** Ambiguous heads have a concrete boundary test.
@@ -243,7 +243,7 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 
 #### F.3:16.2 - Regression
 
-* **RSCR-F3-E01 (merge soundness).** Every merge has a failed relevant distinction test.
+* **RSCR-F3-E01 (merge soundness).** Every merge has source-grounded support for the same relevant meaning and preserves the receiving conclusions.
 * **RSCR-F3-E02 (split necessity).** Every split cites an argument, entailment, temporal, or counterexample difference.
 * **RSCR-F3-E03 (edition honesty).** Changed editions are not silently absorbed into an old claim.
 * **RSCR-F3-E04 (label stability).** Label changes do not change the claim unnoticed.
@@ -251,6 +251,6 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 
 ### F.3:17 - Didactic close
 
-> “Start with one explicit source and interpretation basis. Merge aliases only when the source uses them interchangeably and no relevant conclusion changes. Split uses when their participants, entailments, or time stance differ. Give each result one faithful Tech label, one helpful Plain label, and a short counterexample when a boundary test is needed. Use an F.17 cell only when recurring work needs the address. Nothing in this clustering makes two sources the same; test that separately in F.9.”
+> “Start with one explicit source and interpretation basis. Merge aliases only when the source uses them interchangeably and no relevant conclusion changes. Split uses when their participants, entailments, or time stance differ. Add labels when a naming or didactic use needs them, preserving the same claim, and a short counterexample when a boundary test is needed. Use an F.17 cell only when the receiving work needs the address. Nothing in this clustering makes two sources the same; test that separately in F.9.”
 
 ### F.3:End

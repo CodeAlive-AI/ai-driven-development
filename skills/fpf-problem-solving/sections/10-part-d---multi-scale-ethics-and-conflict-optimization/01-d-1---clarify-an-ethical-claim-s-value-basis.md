@@ -2,11 +2,10 @@
 
 > **Type:** D-family ethical boundary pattern
 > **Status:** Stable
-> **Pattern role:** This pattern gives the entry boundary and conformance checks for value-plurality use, including conditional reasoning from an explicitly declared value basis. Fuller ethical theory remains outside FPF unless a direct pattern names it.
 
-**Use this when.** Use this pattern when an FPF claim, method, work plan, architecture move, policy, recommendation, model, or system change has ethical force, but the value theory or ethical concern behind the claim is not yet explicit.
+**Use this when.** Use this pattern when the value basis of an ethical claim or proposed action is unclear.
 
-If that ethical claim is current but a possibly consequence-bearing System has not yet been identified, or the current affected-System set is not adequate, use `A.1.CSD` first. Return to D.1 with the bounded discovery account or its exact blocker; discovery alone does not make a claim ethical or complete the value frame.
+If that ethical claim is current but a possibly consequence-bearing System has not yet been identified, or the current affected-System set is not adequate, use `A.1.CSD` first. Return to D.1 with the bounded discovery account or the reason identification remains unresolved. Use that account to clarify the value concern.
 
 
 **Not this pattern when.** If the current question is already a conflict across declared levels or scopes, use `D.3`. If the current question is how to mediate that conflict or use it in a decision, use `D.4`. If the current question is bias, fairness, human or group impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
@@ -19,7 +18,7 @@ If that ethical claim is current but a possibly consequence-bearing System has n
 
 FPF cannot prescribe one final ethics doctrine and still remain usable across engineering, research, organizational, public, and AI-enabled work. But FPF also cannot treat ethical neutrality as permission to omit ethics. Many working claims already carry values: who may be harmed, who benefits, which consequences count, which responsibilities are accepted, what evidence is enough, and which sacrifice is treated as admissible.
 
-`D.1` supplies the boundary rule. When the ethical claim matters, make the value concern explicit enough that neighboring FPF patterns can inspect it. Do not hide it inside words such as "responsible", "safe", "fair", "humane", "acceptable", or "aligned" without saying what is being valued, for whom, in which context, and with what evidence.
+When a value concern matters, state what is valued, for whom and under which conditions. Explain the value premise and identify any factual evidence on which the judgement relies.
 
 ### D.1:1.0 - Problem
 
@@ -137,7 +136,7 @@ The practical result is an explained boundary on a proposed action: which contri
 | How should a mapped ethical conflict be mediated, refused, escalated, or used in a decision? | `D.4` |
 | Is a model, metric, policy, publication, or release-bearing claim biased, unfair, or ethically unsafe? | `D.5` |
 | Does the causal fairness claim have the required C.28 evidence value and verdict? | `C.28`, with `D.5` for ethical-audit use |
-| Is the ethical claim supported, and can that support be relied on for this use? | The applicable subject and evidence patterns for support; `A.10` for bounded reliance on the result |
+| Is the ethical claim supported, and can that support be relied on for this use? | Use the applicable subject and evidence patterns and an adequate existing basis; apply `A.10` when the source-to-use relation is implicit or must be made replayable for the receiving use. |
 | Is an assurance claim being made? | `B.3` |
 | Is an architecture residual current? | `C.30.ILC` |
 
@@ -181,12 +180,12 @@ Now change the question to an ordinary task within a member's already accepted s
 | --- | --- | --- |
 | Neutrality theater | The work claims to avoid ethics by naming only technical evidence or method quality. | Recover the value concern or explicitly state that no ethical claim is being made. |
 | Slogan ethics | Responsible, safe, humane, aligned, fair, or beneficial is used without affected parties and warranted use. | Name the affected parties, value concern, and intended claim; qualify the basis relied on. |
-| Doctrine smuggling | A utilitarian, rights, duty, care, virtue, professional, or project-specific value frame is treated as obvious. | Name the value frame and the pattern for the stronger claim for any conflict. |
+| Doctrine smuggling | A utilitarian, rights, duty, care, virtue, professional, or project-specific value frame is treated as obvious. | State the normative premise and how it supports the judgement; use D.3 when the disagreement forms an ethical conflict. |
 | Universal D.1 | D.1 is used to decide mediation, bias, causal fairness, or assurance. | Use D.3, D.4, D.5, C.28, A.10, B.3, or the subject pattern. |
 
 ### D.1:6 - Consequences
 
-This pattern makes ethical claims portable across FPF without pretending that FPF has one final ethical theory. It also prevents a common failure: a technical pattern silently inherits one ethical theory because a word such as "safe", "fair", "beneficial", or "responsible" sounded ordinary.
+Explicit value premises let readers compare ethical claims and identify where their grounds differ.
 
 Explicitness follows the claim being used: recognition needs a clear concern and next question, while a judgement needs its supporting basis and use limits. A durable frame earns its effort through the comparison or later reliance it supports.
 
@@ -194,19 +193,13 @@ For decisions about people, the conditional argument in :2.2 makes a practical d
 
 ### D.1:8 - Rationale
 
-`D.1` is an entry boundary for ethical value plurality. It is intentionally modest: it does not settle ethical theory and does not decide an interlevel conflict. It makes the live value frame visible enough for neighboring FPF patterns to carry the next claim without hiding ethics inside technical adequacy, evidence, architecture, method, work, or publication wording.
+D.1 connects a value concern with the premises and facts needed to assess its use. Revealing that connection lets a reader identify whether a disagreement concerns values, facts or authority and direct the unresolved question to the appropriate method.
 
 This keeps FPF usable in engineering, research, organizational, public, and AI-enabled contexts where ethical traditions differ but value-bearing claims still need explicit affected entities, value concerns, and warranted use, with the evidence and return conditions that this use needs.
 
 ### D.1:9 - SoTA-Echoing
 
-| Source line | Practical implication for this pattern |
-| --- | --- |
-| Value pluralism and applied ethics practice | FPF should not pretend that one ethical doctrine resolves every project claim; it should expose the current value concern, affected EntityOfConcern, and excluded concerns, and qualify the basis of the judgement being used. |
-| Engineering ethics and assurance practice | A method, work plan, architecture move, recommendation, system, or holon can be technically adequate while shifting harm, benefit, responsibility, or coercion elsewhere; technical verification does not settle the ethical claim. |
-| Human-impact, AI governance, and dual-use practice | Fairness, responsibility, alignment, safety, and misuse claims need affected parties, context, and warranted use; relied-on evidence and the consequence horizon qualify that use. |
-| Developed consent reasoning in the [Belmont Report, “Respect for Persons” and “Informed Consent”](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html) (1979), [UNESCO bioethics declaration, Articles 5–7](https://www.unesco.org/en/legal-affairs/universal-declaration-bioethics-and-human-rights) (2005), and [Declaration of Helsinki, paragraphs 25–30](https://www.wma.net/policies-post/wma-declaration-of-helsinki/) (2024) | Adapt their distinction between a stated personal concern and valid consent, including capacity, dependence and representation. These developed domain treatments keep consent connected to reasons and limits; they do not establish a universal political doctrine. Section :2.2 uses that explanatory discipline while leaving domain requirements with their sources. |
-| FPF subject-pattern discipline | Ethical entry does not absorb evidence, causality, assurance, architecture, or bias-audit owners. |
+For judging a person's participation in :2.2, **adapt** the developed consent reasoning in the [Belmont Report, “Respect for Persons” and “Informed Consent”](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html) (1979), [UNESCO's bioethics declaration, Articles 5–7](https://www.unesco.org/en/legal-affairs/universal-declaration-bioethics-and-human-rights) (2005), and the [Declaration of Helsinki, paragraphs 25–30](https://www.wma.net/policies-post/wma-declaration-of-helsinki/) (2024). Against treating expressed willingness or a sponsor's approval as sufficient, :2.2 examines the agreement's scope, information, understanding, voluntariness and applicable capacity or representation conditions. The participation case changes its conclusion when the claimed authority or an existing commitment changes. These sources supply developed treatments in medicine and research; their requirements retain those domains, while D.1's broader argument remains conditional on its stated normative premises. Reopen that argument when a changed obligation, affected party, consent condition or domain rule changes the grounds of the judgement.
 
 ### D.1:10 - Relations
 
@@ -214,10 +207,10 @@ This keeps FPF usable in engineering, research, organizational, public, and AI-e
 - Coordinates with `A.1.CSD` when a current ethical claim still lacks an adequate set of Systems that may bear consequences; D.1 consumes the returned account and does not add value fields to its neutral core.
 
 - Coordinates with `B.5.RA` when the ethical argument must be recovered from a source and with `B.5.RR` when a changed premise requires revising its conclusions.
-- Coordinates with `A.10` for descriptive provenance and bounded reliance on the source or evidence used.
+- Coordinates with `A.10` when the source-to-use relation behind a relied-on claim is implicit or needs a replayable account.
 - Coordinates with `C.11.DUA` when a proposed ethical record or evidence demand needs appraisal of its contribution, feasibility, burden, or requirement merits.
 - Coordinates with `B.3` when an assurance claim is current.
-- Coordinates with `D.2`, `D.3`, `D.4`, and `D.5` for multilevel entry, conflict structure, mediation, bias audit, causal-fairness audit consumption, and ethical assurance.
+- Use `D.2` to recognize concerns across levels and scopes, `D.3` to describe conflicts, `D.4` to develop and compare continuations, and `D.5` to select and interpret an ethical audit.
 - Coordinates with `C.28` for causal fairness use and with `C.30.ILC` when an architecture residual is current.
 
 ### D.1:End

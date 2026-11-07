@@ -17,9 +17,9 @@ Typical moments:
 
 **Primary EntityOfConcern.** The EntityOfConcern is the parsimony claim for one candidate ontology addition.
 
-**First useful move.** Recover the candidate with `E.24.UK` or the subject pattern, then find the best current FPF expression for the exact receiving claim or use.
+**First useful move.** Recover the candidate with `E.24.UK` or the subject pattern, then find the best current FPF expression for the receiving claim or use.
 
-In this pattern, an **existing governed expression** is an admitted kind or dependent value, slot, current relation, record, publication form, lens, local frame, or direct-pattern claim whose direct owner defines its use.
+In this pattern, an **existing governed expression** is an expression whose use is defined by an applicable pattern. It can identify an admitted kind or dependent value, slot, relation, record, publication form, lens or local frame, or state a claim governed by the applicable pattern.
 
 **What goes wrong if missed.** FPF grows duplicate kinds for claims already carried by governed expressions. Later patterns then argue over words instead of recovering the EntityOfConcern, exact relation or slot, and admissible claim.
 
@@ -51,7 +51,7 @@ A useful project word, slot-position label, publication form, diagram element, m
 
 ### A.11:2 - Solution
 
-Use four gates to establish the parsimony finding for the proposed ontology addition. Apply every gate to the same exact candidate, receiving claim or use, and current facts. Find the best existing expression first; then state the exact loss, overlap discriminator, newly admissible claim or action, and nearest excluded case for that same use. A positive finding continues the complete admission test under E.24/E.24.UK or the candidate's direct subject-kind governor; it is not that admission result or project-side permission.
+Use four gates to establish the parsimony finding for the proposed ontology addition. Apply every gate to the same candidate, receiving claim or use, and facts. Find the best existing expression first; then state the material loss, overlap discriminator, newly admissible claim or action, and nearest excluded case for that same use. A positive finding continues the complete admission test under E.24/E.24.UK or the candidate's direct subject-kind governor; it is not that admission result or project-side permission.
 
 | Gate | Test question | Pass condition |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ Use four gates to establish the parsimony finding for the proposed ontology addi
 | Action-facing contribution | Which exact claim or action becomes admissible because this addition exists? | Pass only when that contribution reaches the named use rather than supplying naming comfort or source prestige. |
 | Sharp boundary | What is the one-sentence inclusion test, and which nearest case is excluded? | Pass only when both cases can be distinguished from stated facts without private author intent. |
 
-The questions can be answered as an ordinary comparison. Use this compact record or view when the result must be retained or consumed. If an E.24-family decision is current, put or reference the parsimony evidence there and resolve this view back to that decision, preserving every required E.24:4.0a value. The view is not a second independently editable admission decision; a local wording or existing-expression answer need not create one.
+The questions can be answered as an ordinary comparison. The following view may help retain or communicate the result. If an E.24-family decision is current, put or reference the parsimony evidence there and resolve this view back to that decision, preserving every required E.24:4.0a value. The view is not a second independently editable admission decision; a local wording or existing-expression answer need not create one.
 
 ```text
 ParsimonyAdmissionRecord:
@@ -99,7 +99,11 @@ These are continuation alternatives, not a single admission-result vocabulary. A
 | Provenance-chain wording | Use A.10 for one source-to-use account and bounded reliance. Open G.6 when the use needs path identity, slicing, citation, or local refresh through already established objects and relations. Continue a new durable-value proposal only if the direct evidence or provenance patterns cannot express the needed claim without material loss; complete admission remains separately required. | Parsimony tries subject patterns before minting a kernel addition; a chain label does not itself require an addressable path. |
 | `SmallPart` or similar vague size class | Reject or keep local. | The boundary depends on private scale expectations unless a direct measurement or classification pattern supplies a crisp rule. |
 
-A retained addition also needs a reopen condition. Reopen the parsimony finding and reconsider or lower admission under its governing rule when usage collapses, overlap with an existing value is discovered, an existing governed expression becomes adequate, the boundary becomes fuzzy, or the name starts hiding that expression. This is maintenance discipline, not a fixed calendar ritual.
+**Worked case: retain a local classification.** A maintenance inventory needs to select the installed pumps whose specified function is coolant circulation in Loop-L. The stated project facts admit P-17 as a `U.System` and establish that it is an installed pump with that function. P-18 is also an installed pump, but its specified function is fuel supply. The project already has a C.3.2 declaration of the local kind `CoolingPumpInLoopL` whose membership rule is exactly the inventory selection condition; its classification admits P-17 and excludes P-18.
+
+The proposal is to add a root `U.CoolingPumpInLoopL` with the same membership rule. The four gates give one result. Composition already expresses the selection without loss; the proposed extension coincides with the local kind; the new root admits no additional claim or maintenance action; and the P-18 boundary is already supplied by the local rule. Retain that local classification. If the proposal is carried into an E.24.UK decision, record `local-kind` through the existing C.3.2 declaration. If later work needs a claim the local classification cannot express, reopen that particular loss and the applicable admission test; the useful project label remains available in the meantime.
+
+A retained addition also needs a reopen condition. Reconsider the parsimony finding and admission under its governing rule when usage collapses, overlap is discovered, an existing expression becomes adequate, the boundary becomes fuzzy, or the name hides the underlying claim. A scheduled review is useful only when it helps detect such a change.
 
 ### A.11:4 - Bias-Annotation
 
@@ -122,7 +126,7 @@ It also corrects false-parsimony bias. A compact ontology is not achieved by ref
 
 * **Slot label becomes kind.** A system-role designation, transformation-participant label, source-maintenance position, carrier position, or boundary slot is renamed as if the label created a new universal kind; recover the admitted System, exact local system-role kind or direct relation, any separately obtaining assignment, and Work only when each is current.
 * **Publication form becomes ontology.** The appearance of a card, record, view, dashboard, figure, or report title does not establish a new durable kind or make a depicted relation obtain. Recover what the claim selects: claim-bearing content, a publication form, a carrier, or another subject. Use C.2.1/E.24.PUB when that distinction changes the claim; a form can itself be a legitimate subject, and a view-episteme remains distinct from its carrier.
-* **Mathematical lens becomes object.** A graph, tuple, algebra, metric, coordinate, or threshold does not establish a new durable kind by mathematical appearance. Recover its actual object and predicate. Use C.29 only for an actual lens-use claim, identifying the represented subject, correspondence, and preservation/loss boundary. An ordinary threshold, measurement, formal declaration, or other governed claim stays with its direct subject rule.
+* **Mathematical lens becomes object.** A graph, tuple, algebra, metric, coordinate, or threshold does not establish a new durable kind by mathematical appearance. Recover its actual object and predicate. Use C.29 when a question about choosing, transferring, or relying on a mathematical representation remains unresolved; identify the represented subject, correspondence, and preservation/loss boundary needed for that question. An ordinary threshold, measurement, formal declaration, or other governed claim stays with its direct subject rule.
 * **Local project name becomes kernel vocabulary.** A useful project label is promoted to durable FPF vocabulary before composition and direct-pattern expression are tried.
 * **Overlap is ignored.** A candidate is admitted even though an existing pattern already carries the same claim with clearer boundaries.
 * **Parsimony as refusal.** A new value is rejected because "fewer kinds is better" even though existing composition loses a distinction users need to claim, compare, repair, stop, or rely on.
@@ -131,7 +135,7 @@ It also corrects false-parsimony bias. A compact ontology is not achieved by ref
 
 | Consequence | Benefit | Cost or boundary |
 | --- | --- | --- |
-| Smaller durable vocabulary | FPF stays learnable and bridgeable across domains because already governed expressions do not become accidental U-kinds. | The comparison must show the best existing expression by value; retain a record or view when that answer is reused. Hand-waving about simplicity is not enough. |
+| Smaller durable vocabulary | Reusing adequate expressions reduces the number of U-kinds that readers must learn and relate across domains. | The comparison must show the best existing expression by value. Keep it recoverable when later use depends on it. |
 | Better U-kind admissions | Complete admission requires the parsimony evidence: material loss, non-redundancy, action-facing contribution, boundary test, and reopen condition; these do not replace the other admission conditions. | Some attractive names remain local or dependent even when they are common in source traditions. |
 | Clearer neighboring-pattern use | Readers know when to use E.24.UK, A.8, C.3, Part F naming, or a direct subject pattern. | The pattern supplies the parsimony finding; the governing admission test decides admission and Part F chooses the public name. |
 
@@ -143,9 +147,11 @@ The practical criterion is not abstract minimalism. A candidate earns a positive
 
 ### A.11:8 - SoTA-Echoing
 
-Current ontology-engineering practice favors modularity, reuse, explicit competency questions, and controlled admission of new terms over unchecked class growth. A.11 adapts that practice to FPF: the admission question is not merely "can a class be defined?" but whether the candidate changes admissible claims, boundaries, or work-facing use inside the FPF pattern system.
+**Receiving use and reuse.** Two historical ontology-engineering contributions supply concrete comparison methods. Noy and McGuinness, [*Ontology Development 101* (2001), §3](https://protege.stanford.edu/publications/ontology_development/ontology101.pdf), use competency questions to specify the intended application and test whether an ontology supplies enough information, and recommend considering existing ontologies for reuse. Shimizu, Hirt and Hitzler, [*MODL: A Modular Ontology Design Library* (2019), §§3.2–3.3](https://arxiv.org/pdf/1904.05405), develop reusable, adaptable modules whose competency questions identify the intended answers. A.11 applies this comparison to the receiving claim or use and the best existing FPF expression.
 
-Constructional-ontology and BORO-like source lines add a second discipline: identity, construction, dependency, and part-whole distinctions must be recovered before a convenient term becomes a kind. FPF keeps that source discipline without importing a classical top-level taxonomy as-is; U-kinds remain tied to accepted ontics, slot discipline, and action-facing pattern use.
+**Construction and identity.** Florio and Linnebo, [*Introduction to Constructional Ontology* (2024), §§1 and 3](https://www.utwente.nl/en/eemcs/fois2024/resources/papers/florio-linnebo-introduction-to-constructional-ontology.pdf), distinguish constructors, inputs and constructional processes, and show how construction choices bear on identity: a set has its particular elements, while the same sum can have different decompositions. Borgo and Righetti, [*Towards Applied Constructional Ontology* (2025), §§3–5](https://journals.sagepub.com/doi/full/10.3233/FAIA250480), explore reconstructions of BFO, DOLCE and UFO with explicit choices about dependence, parthood, inherence and participation. Their exploratory comparison helps expose which construction and relation account a candidate uses.
+
+**FPF synthesis.** Recovering a candidate's construction and identity establishes what the proposed addition concerns. A.11 then asks whether a new durable kind changes admissible claims, boundaries or work-facing use. Its four gates combine material loss, non-redundancy, action-facing contribution and a sharp boundary for the same candidate, use and facts. The complete E.24.UK admission decides the proposed U-kind's disposition and root or dependent form.
 
 ### A.11:9 - Relations
 

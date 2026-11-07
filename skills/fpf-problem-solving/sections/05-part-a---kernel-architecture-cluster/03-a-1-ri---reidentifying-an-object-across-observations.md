@@ -78,8 +78,6 @@ Compare the surviving alternatives at the distinction required by the receiving 
 
 A best score answers the ranking question defined by that score. If the work uses the top-ranked association provisionally, carry its selection rule and relevant uncertainty into that use. Claiming that the observations uniquely determine it requires the corresponding exclusion of alternatives.
 
-The strength of the identifying judgment changes with its basis.
-
 #### A.1.RI:4.5 - Resolve only the distinction the next use needs
 
 Try the receiving calculation or decision on the surviving alternatives. If each gives the needed result, continue with that result and leave the unused identity question open. Section :5.1 obtains the same mean position under both surviving associations.
@@ -137,7 +135,7 @@ This case resolves run continuity. A question about a service continuing through
 
 ### A.1.RI:6 - Bias-Annotation
 
-Under E.3's five Principle-Taxonomy lenses (Gov, Arch, Epist, Prag and Did), this Method concerns what observation and subject constraints support about an object's continuation. Its finite examples favor explicit alternatives and simple constraints. Many real tracking problems require distributions, approximate inference or decisions under unresolved identity.
+The finite examples favor explicit alternatives and simple constraints. Many real tracking problems require distributions, approximate inference or decisions under unresolved identity.
 
 The Method can be performed by people, computational agents or coordinated teams. Their observation access and ability to construct alternatives differ.
 

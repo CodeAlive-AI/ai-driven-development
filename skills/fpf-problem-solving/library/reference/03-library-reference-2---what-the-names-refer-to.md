@@ -1,0 +1,19 @@
+## Library.Reference:2 - What the names refer to
+
+The same word can name a field, a framework about it or a file. Keep the subject of the claim recoverable before relying on its name.
+
+**FPF Library** names this publication collection; **FPF Core** names its transdisciplinary framework. The Core document retains `FPF` as its DocID, so an address such as `FPF C.39` identifies a Core pattern. Cite **FPF Library** for the collection; name the particular framework and pattern when the claim relies on them.
+
+| Object | What it contributes to this architecture | What a change affects |
+| --- | --- | --- |
+| Domain | A subject area used to frame a question or organize material. | A revised boundary changes what the designation covers; it does not by itself constitute a discipline. |
+| Discipline | A whole of knowledge and reusable practice, with actual constituent relations and a way those contributions constrain and revise one another. | Changes to knowledge, Methods or institutions can preserve the field when its essential connections and continuity conditions remain. |
+| Principle framework | An account of recurring situations, problems, forces, Methods, cases, consequences and their relations, expressed as a pattern language. | A revised account can improve the description or change its field promise. |
+| Framework edition | An identified body of framework claims about its subject under its reference scheme. In FPF terms, an episteme. | A change in the claims or effective reference scheme identifies another episteme; its continuity and compatibility with earlier editions require their own grounds. |
+| DPF Suite | A larger domain framework describing a composite discipline through constituent DPFs and any justified whole-level patterns. | A constituent or connection changes the described whole only under the relevant discipline conditions; editorial inclusion alone supplies no parthood. |
+| Product series | A continuing collection of editions under declared admission and reidentification rules. | Admission, retirement and continuity concern the publishing series, separately from the described discipline. |
+| Publication carrier and access route | A file, site, rendering or service through which a reader obtains the content. | Availability, layout or retrieval can change while the described Method remains the same. |
+
+These distinctions are developed in [FPF C.20:4.6](../../sections/09-part-c---kernel-extension-specifications/39-c-20---composition-of-u-discipline.md#c2046---keep-neighboring-objects-with-their-subject-patterns), [FPF E.4:4.1](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/05-e-4---fpf-ecosystem-architecture-framework-families-products.md#e441---place-support-units-and-adjacent-products-deliberately) and [FPF E.4:4.2](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/05-e-4---fpf-ecosystem-architecture-framework-families-products.md#e442---describe-a-composite-discipline-with-a-dpf-suite). They prevent a practical error: moving a file, giving a publication a name or admitting an edition cannot supply a missing methodological contribution.
+
+A pattern is also distinct from the Method it explains. The text may help a reader perform, criticize or adapt a way of working. The occurrence of that work and its actual result need their own basis. [FPF A.3.1](../../sections/05-part-a---kernel-architecture-cluster/20-a-3-1---u-method-reusable-way-of-doing-with-explicit-applica.md) and [FPF A.3.2](../../sections/05-part-a---kernel-architecture-cluster/29-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) retain that distinction; [FPF A.15.1](../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/15-a-15-1---u-work-dated-performed-work-occurrence.md) supplies the account of performed Work.

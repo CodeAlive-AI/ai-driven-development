@@ -1,0 +1,9 @@
+## HRM.Source:3 - Scope and reconsideration
+
+This first edition is one HRM DPF in the Management Suite. Its field account and five Methods are maintained together in this complete Markdown publication. The Architectural Reference is its explanatory unit, not another DPF or a new HR Suite. The public name uses the established field designation; `HRM` identifies this document within FPF Library. It does not identify every practice called HR elsewhere.
+
+**Practical-entry declaration.** The selectable example keys `Connected conditions`, `Selection`, `Reward`, `Voice` and `Participation` all use the **ordinary practical entry** form; no Practical-Use Cards are selected.
+
+The full relevant supplying Methods remain in their own publications: [Management](../_index.md), [Human Capability Engineering](../../human-capability-engineering-dpf-suite/_index.md), [Engineering](../../engineering-dpf-suite/_index.md) and [FPF Core](../../../sections/03-first-principles-framework-readme/_index.md). Changes in their relied-on contribution reopen the HR use that depends on it. A new version number alone is not evidence that a personnel conclusion changed. Refer to [Using FPF Library](../../../library/USING-FPF.md) for discovery and complete addresses.
+
+Reconsider the affected contribution when actual work or AI support changes, a professional conclusion or institutional rule changes, a purported supplier result proves unavailable, a materially different participant population defeats an inference, or practice reveals an unaddressed interaction. Obtain direct source return when a disputed claim changes the operation. The framework does not qualify a complete office survey, the complete original-post literature, client-specific helping know-how or a causal effect of using these Methods. Such questions require their own substantive basis and receiving use.

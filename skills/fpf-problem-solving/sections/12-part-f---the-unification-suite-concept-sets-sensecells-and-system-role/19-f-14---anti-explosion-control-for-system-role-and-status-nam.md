@@ -13,15 +13,15 @@
 
 ### F.14:1 - Intent and applicability
 
-**Use this when.** Use F.14 when proposed names, aliases, cards, local-sense cells, or rows begin to multiply faster than the independently governed distinctions. Apply its cheap stop question before minting any NameCard, `SchemeSenseCell`, Unified Term Sheet row, or durable name family: **does an existing designation, alias, local expression, or direct-pattern name already let the practitioner perform the proposed use?**
+**Use this when.** Use F.14 when proposed names, aliases, cards, local-sense cells, or rows begin to multiply faster than the independently governed distinctions. Apply its stop question before minting any NameCard, `SchemeSenseCell`, Unified Term Sheet row, or durable name family: **does an existing designation, alias, local expression, or direct-pattern name already let the practitioner perform the proposed use?**
 
-**First useful move.** For every candidate expression, name the one independently recovered governed value or relation, its exact kind, its direct pattern, the proposed use, and the effective naming `U.ReferenceScheme`. If no such value or relation is independently recoverable, keep the expression local or keep it with the exact assertion that recovers its subject or value; do not pass a value-less expression to F.8 or manufacture an object so that the name has something to denote. F.8 receives only an unresolved naming disposition for an already recovered value-or-relation and proposed-use pair, with its exact kind and direct pattern.
+**First useful move.** For every candidate expression, name the one independently recovered governed value or relation, its exact kind, its direct pattern, the proposed use, and the effective naming rules (`ReferenceScheme`). If no such value or relation is independently recoverable, keep the expression local or keep it with the exact assertion that recovers its subject or value; do not pass a value-less expression to F.8 or manufacture an object so that the name has something to denote. F.8 receives only an unresolved naming disposition for an already recovered value-or-relation and proposed-use pair, with its exact kind and direct pattern.
 
 **Intent.** Keep system-role-facing, role-like, and status-like vocabularies small without losing real distinctions. F.14 is a control pass over candidate expressions and name families. It defines no system-role kind, status, assignment, sense, card, row, Bridge, or publication. It decides only whether naming pressure can stop at a smaller disposition.
 
 **Primary working object.** One candidate family and one proposed use, with its recovered values and direct patterns. A durable control record is optional; no generic context object, selected structure, card, or table row identifies the pass.
 
-**Primary working reader.** A method author or designer, an author of a `U.MethodDescription`, a terminology steward, architect, manager, or checker who sees names such as `NightOperatorSystemRole`, `EvidenceRole`, `SeniorReviewer`, `AtRiskStatus`, `PreValidated`, `AccessRole`, or `RequestApproverSystemRole` and must stop vocabulary growth from becoming a second ontology.
+**Primary working reader.** A practitioner deciding whether proposed system-role or status names preserve independently governed distinctions or merely multiply labels.
 
 **What goes wrong if missed.** System-role-kind labels become capability models, status labels become system-role families, access-control labels become work-facing kinds, and every local wording difference acquires a card, sense cell, row, or identifier. The corpus then contains many near-duplicate naming objects whose apparent precision hides different kinds and uses.
 
@@ -35,14 +35,14 @@
 
 Name explosion usually begins with a helpful shortcut:
 
-1. **Hybrid-system-role shortcut.** `RequestApproverSystemRole`, `DevOpsEngineerSystemRole`, or `IncidentLeadOnCall` is minted because several local system-role kinds often appear together.
-2. **Modifier-as-system-role shortcut.** `NightOperatorSystemRole`, `RemoteOperatorSystemRole`, or `APIApproverSystemRole` is minted because a qualifier is visible.
-3. **Status-as-type shortcut.** `AtRisk`, `Grace`, `PreValidated`, or `TemporarilyBreached` is minted as if time stance or status value were a new essence.
-4. **Source-suffix shortcut.** `EvidenceRole`, `RequirementRole`, `AccessRole`, or `ProviderRole` is minted because a source tradition uses role-like language.
-5. **Prestige shortcut.** `SeniorReviewer` or `LeadApprover` is minted to bypass a separation, capability, or assurance question.
+1. **Hybrid-system-role shortcut.** `RequestApproverSystemRole` is minted because several local system-role kinds often appear together.
+2. **Modifier-as-system-role shortcut.** `NightOperatorSystemRole` is minted because a qualifier is visible.
+3. **Status-as-type shortcut.** `PreValidated` is minted as if time stance or status value established a new kind.
+4. **Source-suffix shortcut.** `EvidenceRole` is minted because a source tradition uses role-like language.
+5. **Prestige shortcut.** `SeniorReviewer` is minted to bypass a separation, capability, or assurance question.
 6. **Locality shortcut.** The same spelling under two local-sense bases is treated as one value, or every difference is answered with a Bridge, card, cell, and row before a receiving use exists.
 
-F.14 prevents those shortcuts from becoming durable ontology or automatic naming infrastructure.
+Use F.14 to test whether these shortcuts justify a durable naming object.
 
 ### F.14:3 - Forces
 
@@ -59,25 +59,25 @@ F.14 prevents those shortcuts from becoming durable ontology or automatic naming
 
 Use this sequence before minting a durable name or any supporting naming object:
 
-1. **Recover the governed value first.** Split candidate expressions into exact local system-role kinds, `SystemRoleKindDescription` epistemes, direct relation kinds or occurrences, assignments, Work, capability, Method, status, evidence, source, publication, requirement, policy, local-sense, and local-phrase cases. Each retained value keeps its exact kind and direct pattern.
-2. **Name one proposed use and its interpretation basis.** State what the reader will do with the expression and the effective naming `U.ReferenceScheme`. An independently selected `BoundedModelUseStructure` appears only when that organization changes this exact naming use; it is never a generic locality field.
-3. **Try the light dispositions in order.** Prefer no durable name, an existing designation, a recorded alias, a local expression, an existing direct-pattern name, or an existing public row. Stop as soon as the proposed use works without hiding a governed distinction.
+1. **Recover the governed value first.** Separate candidate expressions whenever they designate different governed values or relations. Recover each retained value's exact kind and direct pattern; keep an ordinary phrase local when no governed naming case is needed.
+2. **Name one proposed use and its interpretation basis.** State what the reader will do with the expression and the effective naming rules (`ReferenceScheme`). An independently selected `BoundedModelUseStructure` appears only when that organization changes this exact naming use; it is never a generic locality field.
+3. **Select the lightest sufficient treatment.** Use adequate ordinary wording, an existing designation, an alias, a local expression, a direct-pattern name or a current public row. Reuse an already justified choice; compare alternatives when they could reduce burden without losing a governed distinction.
 4. **Create only the next object that pays for itself.** A local `SchemeSenseCell` is useful only when the exact local sense needs a stable address; a NameCard only when the naming settlement itself must endure; an F.17 row only for public, Core-facing, durable, or cross-local reuse; E.24.PUB only when the selected row edition must actually be made available. None implies the next.
 5. **Use exact relations instead of fused names.** Bundles and incompatibilities among system-role kinds remain A.2.7 relations; assignment claims remain A.2.1. For precise performed Work, A.13 first recovers each exact actual performer and A.15.1 independently admits the dated occurrence; F.6 follows only when the naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. Status families and windows remain F.10; qualifiers remain with their direct patterns.
 6. **Treat cross-local wording as a relation question only when one is current.** Resolve the exact local senses first. Same spelling proves nothing; different local-sense projections only open F.9. Cite a Bridge only when its predicate obtains, then state the proposed use and reliance separately. A Bridge does not merge governed values or require a public row.
 
-The result is the smallest naming disposition that preserves the exact governed value and supports the named use. It is not a claim that any value, relation, assignment, Work, evidence, status, authority, or publication exists.
+The result is the smallest naming disposition that preserves the exact governed value and supports the named use. It does not establish the independently recovered subject or any neighboring relation.
 
 ### F.14:5 - Minimal vocabulary
 
 * **Anti-explosion control pass** — one bounded review of related candidate expressions before durable naming objects are added.
-* **Candidate name family** — proposed expressions that appear to cover related system-role, status, Work, evidence, source, capability, Method, policy, or local-sense concerns.
+* **Candidate name family** — proposed expressions that appear to designate related values or relations.
 * **Recovered governed value** — the exact typed value or relation the expression is trying to designate, under its direct pattern.
 * **Naming use** — the exact reader or practitioner action for which the expression is being considered.
 * **Light disposition** — no durable name, existing designation, alias, local expression, or existing row reuse.
 * **System-role-kind relation expression** — an expression designating an exact A.2.7 substitution, incompatibility, qualification, or bundle relation rather than another local system-role kind.
 * **Status-family expression** — an expression for a status family, value, window, confidence claim, or status-use relation defined under F.10 or a direct status pattern.
-* **Blocked minting** — the explained result that the candidate remains a light disposition or direct-pattern expression rather than a new durable name or naming object.
+* **Blocked minting** — the explained decision to keep the candidate as local wording or reuse an existing designation rather than create a new durable name or naming object.
 
 ### F.14:6 - Optional anti-explosion record
 
@@ -121,14 +121,14 @@ The record describes the control result. It creates no governed value, naming de
 | `ReviewerSystemRole`, `OperatorSystemRole` | exact local system-role kind or its separate `SystemRoleKindDescription` episteme | A.2, F.4, F.5, F.18 |
 | `AliceAsReviewer` | ordinary wording for a candidate classification, system-role assignment, or precise performed-Work attribution | A.2 with C.3 for classification; A.2.1 for assignment; A.13 then independent A.15.1 for performer and Work; F.6 only for an expressly consumed precise assignment-bound attribution |
 | `SeniorReviewer` | a proposed system-role-kind name that may hide a qualifier, assignment-state condition, capability, or assurance claim | A.2, A.2.2, A.2.5, B.3, F.18 |
-| `RequestApproverSystemRole` | system-role-kind bundle expression or forbidden fused kind | A.2.7, F.8 |
+| `RequestApproverSystemRole` | a system-role-kind bundle expression; a distinct kind only after independent admission | A.2.7 for the bundle; A.2 with C.3 for kind admission; F.8 for naming |
 | `AtRisk`, `Grace`, `PreValidated` | status value, window, confidence, or presentation label | F.10 or direct status pattern |
 | `EvidenceRole`, `RequirementRole`, `AccessRole` | first recover the exact claim: evidence reliance, an actual assurance claim, ambiguous description use, publication occurrence or form, or a requirement, standard, source, access, or policy use | A.10 for evidence reliance; B.3 only for an actual assurance claim; E.10.D2 only to recover description-use ambiguity; E.24.PUB for publication occurrence, form, or carrier; otherwise the pattern that directly defines, constrains, or tests the recovered claim, or `missing-governor` |
 | same spelling under two local-sense bases | two designations or an exact F.9 relation question | F.18, F.9; F.17 only at its public-row threshold |
 
 #### F.14:7.2 - Reuse before minting
 
-Reuse only when the exact recovered value, kind, direct pattern, proposed use, and admitted naming scope match. Try an existing designation, alias, local expression, or current row before creating a card, cell, row, policy id, or new U-kind candidate. Local-sense reuse does not imply sameness with another local sense; row reuse does not widen the row's admitted use.
+Reuse only when the exact recovered value, kind, direct pattern, proposed use and admitted naming scope match. Before creating a card, cell, row, policy id or new U-kind candidate, establish the receiving need that adequate ordinary wording or an existing designation would not meet. Reuse available grounds for that decision. Local-sense reuse does not imply sameness with another local sense; row reuse does not widen the row's admitted use.
 
 #### F.14:7.3 - Use relations among system-role kinds before hybrid kinds
 
@@ -140,7 +140,7 @@ If the proposed name marks evaluation, active use, grace, archival state, confid
 
 #### F.14:7.5 - Keep qualifiers with the claims they qualify
 
-Time, location, object type, seniority, permission, Method, capability, evidence, source, and publication are not system-role-kind or status identity by suffix. Keep a qualifier with the claim it qualifies and use the pattern that defines, constrains, or tests that claim. Retain the qualifier in a durable name only when the already governed value and named use genuinely require that designation.
+Time, location, object type, seniority, permission, Method, capability, evidence, source, and publication are not system-role-kind or status identity by suffix. Keep a qualifier with the claim it qualifies and use the pattern that defines, constrains, or tests that claim. Retain the qualifier in a durable name only when the already governed value and named use require that designation.
 
 #### F.14:7.6 - Stop before a naming-object cascade
 
@@ -271,7 +271,7 @@ Result:
 | Check | Question |
 | --- | --- |
 | CC-F14-01 | Is each candidate tied to one independently recovered governed value or relation and proposed use, or explicitly left local? |
-| CC-F14-02 | Were the light dispositions—no durable name, existing designation, alias, and local expression—tested before minting anything stronger? |
+| CC-F14-02 | Does a proposed stronger naming object meet a receiving need left unmet by adequate ordinary wording or an existing designation? |
 | CC-F14-03 | Are the system-role-kind designation, local kind, `SystemRoleKindDescription`, exact relation among kinds, assignment, capability, Method, and performed Work distinct? |
 | CC-F14-04 | Are status family, value, window, use relation, evidence, and presentation distinct? |
 | CC-F14-05 | Are effective naming ReferenceScheme and exact local-sense basis used instead of a generic context slot? |
@@ -291,7 +291,7 @@ Reopen only the affected naming use when candidate expressions grow faster than 
 * Use **F.8** to make one candidate's smallest mint-or-reuse disposition after the F.14 stop test.
 * **F.9** defines only an actual relation between exact local senses. Shared spelling and cell presence establish none.
 * **F.17** defines the public term-row form and its entry threshold; **F.18** defines the durable naming-settlement NameCard form; neither defines the governed value.
-* Use **C.2.1** to identify every persisted NameCard, row, or control-record episteme and its `EpistemeEditionRelation`; use **E.24.PUB** to state row publication occurrence, expression form, and carrier bearing.
+* Use **C.2.1** to identify every persisted NameCard, row, or control-record episteme and its `EpistemeEditionRelation`; use **E.24.PUB** to state row publication occurrence, particular expression, any selected reusable form and its conformance, and actual carrier bearing.
 * Use **F.10, A.10, B.3, E.10.D2, and the direct policy, access, and source patterns** for the corresponding status, evidence, assurance, description, policy, access, and source claims that often arrive with role-like suffixes.
 
 ### F.14:15 - SoTA-Echoing
@@ -305,10 +305,9 @@ F.14 does not import access-control, terminology, credential, or modeling-langua
 | Why must a governed value be recovered before a durable designation or family is minted? | [ISO 704:2022](https://www.iso.org/standard/79077.html) is a **current terminology standard** connecting objects, concepts, definitions, and designations. | **Adopt.** Recover the value and use first; then choose no durable name, an existing designation, a local expression, a NameCard, or a public row only at its own trigger. Reject shared spelling as value identity or semantic equivalence. | Reopen when ISO 704 or F.17 and F.18 change the distinction between a value and its designation or the publication threshold used here. |
 | Why are credential presentation, status, and relying use different from the governed value? | W3C [Verifiable Credentials Data Model v2.0](https://www.w3.org/TR/vc-data-model-2.0/) (2025) is a **current W3C Recommendation** separating issuer, subject, holder, verifier, credential, presentation, and credential status, and leaving authorization decisions outside the data model. | **Adapt.** Keep status, evidence, credential, view, verifier action, and relying decision distinct. Reject a suffix, badge, credential view, or dashboard row as a system-role kind, assignment, permission, assurance, or decision. | Reopen when the VC Recommendation or its status family changes the boundaries among presentation, status, and relying use applied in the worked cases. |
 
-SysML is intentionally excluded from the positive SoTA basis and from lineage for this pattern. The official [OMG SysML 2.0 specification](https://www.omg.org/spec/SysML/2.0) (September 2025) is recorded only as a **rejected-popular comparison**: a modeling-language role spelling does not independently establish FPF's local system-role kind, classification, assignment, capability, permission, Method, or Work. Official status and popularity are not evidence for this anti-explosion question. Reopen that rejection only if demonstrated practice supplies a directly relevant, lower-cost kind-admission and assignment boundary that improves the F.14 cases.
 
 ### F.14:16 - Didactic distillation
 
-When names multiply, do not ask for a better name first. Recover the exact values and the proposed use. Try no durable name, an existing designation, an alias, or a local expression. Keep relations among system-role kinds, status windows, capability, Method, Work, evidence, source, policy, and publication under their direct patterns. Create a cell, NameCard, row, identifier, or publication only when that exact object buys a named use; none requires the next and none makes the governed value real.
+When names multiply, recover the exact values and the proposed use. Keep adequate ordinary wording or an existing designation; compare other treatments when the choice remains unresolved. Keep relations among system-role kinds, status windows, capability, Method, Work, evidence, source, policy and publication under their direct patterns. Create a cell, NameCard, row, identifier or publication only for the named use that needs it.
 
 ### F.14:End

@@ -1,0 +1,175 @@
+## CMP.7 - Construct a Learner from Examples and Feedback
+
+> **Type:** Method
+> **Status:** Stable
+> **Normativity:** Normative
+
+### CMP.7:1 - Problem frame
+
+**Use this when** examples or feedback are available and the required rule for further cases is missing, or an existing learning procedure must be changed for a different target, kind of feedback or resource limit. You need to construct the procedure that obtains the rule, rather than leave “learn the model” as an unexplained operation.
+
+The situation occurs when learning a classifier, estimating a response, constructing a surrogate, discovering a program or updating a policy. The output may be a symbolic rule, a function represented by weights, a distribution or a retained set of candidate rules. Its required form follows from the intended use.
+
+The gain is a learning procedure with explicit inputs, selection or update operations and a learned result that can be applied at its warranted scope. The reader needs functions, finite examples and a loss or another stated comparison. Probabilistic guarantees require the corresponding additional probability model.
+
+Use an existing rule directly when it already serves the purpose. Use an established learner when its inputs, target, restrictions and costs fit. This pattern is needed when those choices or their connection to further use must be constructed or revised. Explaining a learned rule and teaching a person to apply it are distinct tasks, supplied by the explanation and development methods when required.
+
+### CMP.7:2 - Problem
+
+How can a computation turn examples and feedback into a useful rule for further cases, with a clear distinction between fitting the observed examples, obtaining the rule affordably and justifying its further use?
+
+Many rules can agree on the available examples and disagree elsewhere. Faster optimization can obtain one of them more accurately while leaving that disagreement unresolved.
+
+### CMP.7:3 - Forces
+
+| Force | What must be reconciled |
+| --- | --- |
+| Expressive rules and learnability | A large rule family can represent more targets while requiring more information or search. |
+| Available feedback and target use | Recorded labels or rewards may differ from the response the recipient actually needs. |
+| Fit and generalization | Low loss on used examples leaves questions about unseen cases and changed conditions. |
+| Statistical and computational efficiency | A class can be learnable in principle while obtaining its selected rule remains unaffordable. |
+| Stability and adaptation | Retaining past information helps under stable conditions but can obstruct a changed target. |
+| Point prediction and retained ambiguity | One chosen answer is convenient; unresolved alternatives can matter to the next action. |
+
+### CMP.7:4 - Solution
+
+**State the further use → identify available feedback → restrict the rule family → construct selection or update → establish its result → apply and revise.**
+
+#### CMP.7:4.1 - State what a further application must obtain
+
+Describe the input on which the learned rule will be used, the required response and the loss or gain that matters. Include the region, population, time or interaction conditions when they change that meaning. A rule predicting an observed label, a latent property and the consequence of an intervention answers different questions.
+
+Separate the learning algorithm from the learned rule. In a batch setting, write `A(S)=h_S`: algorithm A consumes the examples S and returns rule `h_S`. A later application computes `h_S(x)` on a new input x. In an online setting, the learner also carries state and updates it as feedback arrives. The cost of obtaining a rule and the cost of applying it may favor different constructions.
+
+State whether the recipient needs one rule, a set of alternatives, an uncertainty statement or an action selected from predictions. The output type changes what the learner must retain. A rule can be useful under a qualified assumption without an unconditional guarantee over all possible inputs.
+
+#### CMP.7:4.2 - Recover the examples and feedback actually available
+
+Identify the supplied inputs, labels, rewards, demonstrations or other observations and how they were obtained. For missing labels, delayed feedback, selection effects or dependence between examples, state what the learning procedure can actually observe. MMP.7 supplies the probability model of recorded data when such a model is needed.
+
+Choose the feedback regime before deriving the update. In supervised learning, the supplied target response can evaluate a candidate prediction directly. In bandit feedback, only the consequence of a chosen action is observed; an update requiring all unchosen consequences is unavailable. A self-produced label remains the output of another rule and can propagate its errors.
+
+State which conditions are fixed during the learning claim. Independent examples from one distribution, an arbitrary sequence generated by one stable target rule, and a changing target support different arguments. Data rows alone do not supply any of these assumptions.
+
+#### CMP.7:4.3 - Construct the rule family and inductive restriction
+
+Choose a family H of candidate rules and a representation in which they can be compared or updated. It may contain thresholds, programs, trees, parameterized functions or another suitable construction. Give the operations needed to apply a rule and obtain its response.
+
+The restriction expresses which unobserved continuations the learner will consider plausible. It can come from subject structure, invariances, a simplicity preference, regularization or a previously learned representation. State the basis and the limit of the restriction. Choosing a rule family is an inference commitment, not merely a software parameter.
+
+MMP.11 can supply a subject-grounded function family. For a surrogate, state the source responses and input region that the learned rule must serve. This pattern supplies the algorithmic way of obtaining a member or a supported collection of members from examples. If no candidate can serve the target, improve the family or representation rather than trying to optimize within it indefinitely.
+
+#### CMP.7:4.4 - Give an effective selection or update procedure
+
+Choose how data and feedback change the candidate:
+
+| Construction | Effective operation | Principal condition |
+| --- | --- | --- |
+| Select from a finite family | Evaluate each rule on the relevant examples and select by the stated criterion, with an explicit treatment of ties. | The family and evaluations must be affordable. |
+| Retain consistent candidates | Remove rules contradicted by newly observed feedback; use or combine the survivors. | Every observed label used for elimination must agree with one fixed target rule in the initial family. |
+| Optimize a parameterized criterion | Construct updates or search using CMP.6 or CMP.4, including initialization, constraint handling and stopping. | Optimization progress and the meaning of the learning criterion both need their stated conditions. |
+
+For empirical risk minimization, a typical criterion is the average loss `L_S(h)=(1/n)*sum loss(h(x_i),y_i)`. Regularization or another restriction can change the criterion. An argmin expression specifies the desired rule; the actual learner needs an obtaining procedure, including what it does when the minimum is not obtained or several rules tie.
+
+Look for shared work and useful ordering. For thresholds, sorting examples once can let successive threshold scores be updated from counts rather than reevaluated on the whole dataset. CMP.3 supplies sharing when its identity conditions hold. For a parameterized learner, compare the work of one update, the updates needed and the later cost of applying the result.
+
+#### CMP.7:4.5 - Establish the learning result at the strength available
+
+Distinguish three results:
+
+1. **Obtaining:** the algorithm returns the stated rule or collection under its inputs and computational limits.
+2. **Fit or update performance:** the returned rule achieves the stated empirical criterion, or the online procedure has the stated behavior on feedback.
+3. **Further-use performance:** a bound, comparison, assumption or observation supports the response on the receiving cases.
+
+Prove or check only the result needed for the use, with additional work selected through C.11.DUA. For example, a finite fixed H with a realizable target and independent examples from the receiving distribution permits a sample-based generalization argument. A finite online candidate family can instead support a mistake bound for an arbitrary sequence under a stable realizable target; independent sampling is then unnecessary for that bound.
+
+In a statistical argument, retain the class, loss range, dependence and selection conditions used by the theorem. Repeatedly choosing rules against the same assessment examples changes what that assessment supports. In a changed environment, all historical observations need not have the same relevance to the future query.
+
+When available examples leave candidates disagreeing at a consequential input, return that ambiguity or choose a rule under an explicit selection basis. Obtaining an additional response is one possible move, not a default obligation. Compare its likely effect with the cost of asking, delaying or acting under the remaining uncertainty.
+
+#### CMP.7:4.6 - Apply the result and revise the part that fails
+
+Use the learned output on the intended further case. A discrepancy can come from the rule family, data law, target definition, optimization, representation or application. Follow the dependency that failed rather than reflexively requesting more training examples or more optimization steps.
+
+If the target changes over time, choose a forgetting, reweighting, windowing or adaptation procedure together with the relation to the new target. C.11.DUA helps decide whether a discrepancy warrants more examples or a changed procedure; the common portfolio methods can retain several useful rules. This pattern constructs the learning operation used in that arrangement.
+
+Return the learned rule, its application method, the conditions material to its use and the narrow reason for reopening it.
+
+### CMP.7:5 - Archetypal Grounding
+
+#### CMP.7:5.1 - Construct a batch selector and expose an unresolved continuation
+
+On nonnegative integer inputs, consider the two rules `f(x)=x` and `g(x)=x mod 2`. The supplied examples are `(0,0)` and `(1,1)`. Both rules have zero squared loss on those examples.
+
+A learner can evaluate both rules and return the minimizing set `{f,g}`. This is an effective obtained result with retained ambiguity. It can also return one rule under a declared preference, but the zero training loss alone gives no reason to prefer f over g at input 2. Their predictions there are 2 and 0.
+
+Suppose the receiving task needs a prediction at 2 and an additional observed response is available for a cost that could be justified. If that response is 2, the same selection procedure prefers f; if it is 0, it prefers g. If the observation is not worth obtaining, use a selected rule under the remaining assumption or retain both possible responses for the downstream decision. Better minimization of the original two-example loss cannot distinguish them.
+
+**Changed response:** suppose the response at 2 is 1. Neither rule fits all three observations. Revisit the two-rule family or the assumption of deterministic noiseless responses. Repeatedly fitting the original family more accurately cannot create the absent continuation.
+
+#### CMP.7:5.2 - Construct an online learner and derive its mistake bound
+
+Let H be a finite family of binary prediction rules and suppose one fixed rule in H gives every true label that will arrive. Retain the set V of rules consistent with all labels seen so far. On a new input, predict the majority label among rules in V, using a fixed tie rule. After receiving the true label, remove the rules that predicted otherwise.
+
+On each mistaken prediction, at least half of V is removed. The true rule remains, so after M mistakes `1≤|H|/2^M`, giving `M≤log2|H|`. This establishes a bound on mistakes for an arbitrary input sequence under the stable-realizable-target assumption. It does not require independent random examples. Evaluating all survivors on each input costs up to `|H|` rule evaluations; the mistake guarantee alone does not make an enormous family affordable.
+
+For a concrete instance, let inputs be integers 0 through 4 and let H contain six threshold rules `h_t(x)=1 if x≥t else 0`, for `t=0,...,5`. Break ties by predicting 1. At input 2, three rules predict each label, so predict 1. If the true label is 0, retain thresholds 3, 4 and 5. At input 3, the majority now predicts 0; if the true label is 1, retain only threshold 3. The two mistakes are within `floor(log2 6)=2`; subsequent predictions follow `h_3` correctly as long as the assumed target remains `h_3`.
+
+**Changed feedback:** a later example gives label 1 at input 2. It contradicts the previously received label at 2. Eliminating the last rule would leave an empty set. The stable noiseless-target premise has failed: retain the discrepancy and choose a treatment for noise or change, such as weighting errors or using a recent-data learner. The earlier mistake proof cannot be carried through that change unchanged.
+
+### CMP.7:6 - Bias-Annotation
+
+Training loss and benchmark performance are visible and easy to optimize. The recipient may instead need a response in a different region or after an intervention. Keep that target explicit so that improving the visible criterion does not silently replace it.
+
+A broad function class or large pretrained model can hide a strong inductive restriction in its representation, training history and obtaining procedure. The relevant question is which continuations it favors and how that choice fits the receiving use.
+
+### CMP.7:7 - Conformance Checklist
+
+- The future application, output type and relevant loss or gain are recoverable.
+- Available examples and feedback match the operations the learner performs.
+- The candidate family or other inductive restriction has a stated basis and boundary.
+- Selection or update is effective, with tie, failure and stopping behavior specified.
+- Obtaining, fit and further-use claims retain their distinct conditions.
+- Statistical or online guarantees use the sampling, target and class assumptions they actually require.
+- A contradictory or changed case leads to the relevant data, family, target or update revision rather than automatic extra training.
+
+### CMP.7:8 - Common Anti-Patterns and How to Avoid Them
+
+| Misstep exposed by the method | Consequence and repair |
+| --- | --- |
+| Use zero training error as a prediction argument | Identity and parity agree on the examples but disagree at 2. Retain the ambiguity or supply the selection basis relevant to further use. |
+| Treat an optimization formula as the learning algorithm | The chosen rule can remain unobtainable. Supply effective selection or update with its computational cost. |
+| Use feedback that the agent never receives | A bandit update can silently assume labels for unchosen actions. Match the operation to the actual observation regime. |
+| Keep eliminating candidates after the fixed-target premise fails | The threshold example leaves no survivor. Revise the treatment of noise or change and its result conditions. |
+| Assume more data or computation always resolves the failure | An inadequate family or wrong target can survive both. Locate the changed dependency before choosing more work. |
+
+### CMP.7:9 - Consequences
+
+Learning becomes an explicit algorithmic contribution: a reader can say what is supplied as feedback, how it changes a candidate, what rule is obtained and how that rule is used. The construction can be delegated or changed without leaving an unexplained “learn” step between modeling and computation.
+
+The method can also expose a limit that further optimization cannot remove. New information, a better family, another target or a different receiving decision may be needed. The result remains useful when it identifies that choice without demanding unnecessary evidence.
+
+### CMP.7:10 - Architectural Rationale
+
+The learning algorithm and learned rule must remain distinct because their costs, inputs and failure modes differ. Inductive restriction belongs with the algorithm's construction: without it, agreement on examples leaves the future rule unspecified. The performance argument then follows the actual feedback and use rather than imposing one sampling theory everywhere.
+
+MMP supplies data and subject-model accounts. CMP.4 and CMP.6 supply effective search or update; CMP.7 assembles those contributions into a learner. Further model assessment, explanation, development and portfolio choice use their existing methods.
+
+### CMP.7:11 - SoTA-Echoing
+
+[Shalev-Shwartz and Ben-David, *Understanding Machine Learning*](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf), chapters 2-5 and 21, supplies empirical selection, inductive restriction and online learning under different information assumptions. For a manageable finite family with a stable realizable target, adopt majority-and-elimination over choosing an arbitrary consistent rule when mistake reduction matters: one mistaken arbitrary choice may remove only one rule, while a mistaken majority removes at least half. The extra voting work is a real cost. When enumeration is unaffordable or feedback is noisy, this finite-family construction requires replacement or qualification.
+
+For a large parameterized family, [Bottou, Curtis and Nocedal](https://leon.bottou.org/publications/pdf/tr-optml-2016.pdf) supplies optimization procedures and separates their error from statistical error. Adopt an affordable update through CMP.6 when direct rule enumeration fails; retain the unclosed generalization question after numerical progress.
+
+For changing environments, [Han, Huang and Wang, *Model Assessment and Selection under Temporal Distribution Shift*](https://proceedings.mlr.press/v235/han24b.html) develops adaptive recent-history comparison instead of treating all historical assessment data as equally representative. Adopt reconsideration of data relevance and the selected assessment window when time changes the target. The benefit trades reduced historical mismatch against fewer effective observations and depends on the paper's assessment conditions; it is not a guarantee under arbitrary unobserved change.
+
+Revisit the learning construction when the assumed feedback ceases to be available, the target or admissible family changes, or another obtaining procedure improves the required result at comparable resources. Revisit only the affected selection, update or performance argument.
+
+### CMP.7:12 - Relations
+
+- **C.29.2:** supplies computational formulation and application conditions; **C.11.DUA** selects worthwhile additional information or computation.
+- **MMP.7:** supplies the law of recorded data when probabilistic inference is used; **MMP.11** can supply the subject response family.
+- **CMP.4, CMP.6 and CMP.3:** supply search, updates and reusable intermediate work for obtaining the rule.
+- **C.2.8, EXD and the development DPFs:** address what a reader or learner must understand or acquire when using and explaining the resulting method.
+
+### CMP.7:End

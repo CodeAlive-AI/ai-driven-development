@@ -1,0 +1,11 @@
+## MATH.Reference:1 - Problem frame - Construct mathematics for the question
+
+You may know a formula, a programming technique or a useful physical law and still be unable to formulate the next problem. The objects may have been chosen too coarsely. Two operations may work separately but fail when combined. A plausible statement may need a proof, or a proof may leave you without a way to obtain its promised object.
+
+Mathematical Thinking helps construct and develop the mathematics needed in such situations. Its starting repertoire forms objects and operations, tests identifications, builds arguments and witnesses, changes representations, and obtains consequences from transformations and constraints. Work can begin in mathematics itself, a physical investigation or the design of another working method.
+
+This edition contains twenty patterns. Mathematical Thinking belongs to the Foundational Thinking DPF Suite alongside Mathematical Modeling, Physical Thinking, Computational Thinking and Notational Engineering. Together they connect these inquiries with the development of methods of work. Use the present Table of Contents to find an available method; a planned contribution still requires another source or collaborator. Pattern IDs remain stable across editions, including gaps left by withdrawn bodies; Parts group the available methods by the work they support.
+
+Begin with the question that is blocked. If its mathematical form is still unclear, the Readme MP-FRAME entry uses FPF B.5.FM, B.5.TU and B.5.MPC to obtain the first account and locate the missing contribution. Once a mathematical operation is needed, a body here develops that operation. The worked use in :4 begins before a representation has been selected. Use the Table of Contents for other questions; each pattern states its prerequisites and conditions.
+
+The common starting preparation is elementary sets, relations, functions and the ability to follow a short proof. Several examples need only integer arithmetic. Variation of a curve additionally uses differentiation and integration; the relevant pattern states those requirements. A collaborator can provide a mathematical contribution that you cannot yet construct yourself. Retain the inputs, conditions and result of that contribution so that the next part of the work can use it.

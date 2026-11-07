@@ -16,19 +16,19 @@ Use F.5 when a project needs a durable name for either:
 Typical moments:
 
 - a Concept-Set comparison has enough witnesses for a naming question and the reusable value is already admitted, but candidate names import one source tradition too strongly;
-- an F.4 description names `ReviewerSystemRole`, `OperatorSystemRole`, `InspectorSystemRole`, or `TransformerSystemRole`, and the label must remain faithful to the exact local kind without smuggling assignment, capability, permission, Method, Work, evidence, status, or responsibility;
+- an F.4 description names `ReviewerSystemRole`, and the label must remain faithful to the exact local kind without smuggling assignment, capability, permission, Method, Work, evidence, status, or responsibility;
 - source wording with *role* must be named locally, but the project has not yet recovered its use—for example, a system-role kind, assignment, status or access relation, relation position, another object, or ordinary wording; or
 - similar names threaten to collapse independently governed objects—for example, a kind, assignment, status, Method, Work occurrence, and description episteme.
 
-**Primary EntityOfConcern.** The EntityOfConcern is the naming discipline for these name families. It relates a recovered meaning to selected Tech and Plain designations. It defines neither the named U-kind nor the local system-role kind, constitutes no description, classifies no candidate, creates no assignment, asserts no status or responsibility, supplies no evidence, and publishes no form.
+**Primary EntityOfConcern.** The EntityOfConcern is the naming discipline for these name families. It relates a recovered meaning to a selected Tech designation and any Plain designation needed for a stated didactic use. It defines neither the named U-kind nor the local system-role kind, constitutes no description, classifies no candidate, creates no assignment, asserts no status or responsibility, supplies no evidence, and publishes no form.
 
-**Primary working reader.** The first reader is a practitioner who already has a candidate meaning and must choose a name that readers can use without creating another ontology—for example, an engineer-manager, analyst, pattern author, or terminology steward.
+**Primary working reader.** The first reader is a practitioner who has a candidate meaning and must choose a name that keeps the named value's kind and intended use recoverable.
 
-**First useful move.** Recover the exact named value and its direct meaning source before choosing the label. For a U-kind, use its accepted E.24.UK admission result or its direct admission rule. For a local system-role kind, use its A.2 and C.3 identity and criterion; use F.4 for the separate description episteme. Then choose one Tech label and one short Plain explanation whose scope does not exceed the recovered meaning.
+**First useful move.** Recover the exact named value and its direct meaning source before choosing the label. For a U-kind, use its accepted E.24.UK admission result or its direct admission rule. For a local system-role kind, use its A.2 and C.3 identity and criterion; use F.4 for the separate description episteme. Then choose one Tech label that preserves the recovered meaning. Add a short Plain explanation when the intended reader needs it; its scope must not exceed that meaning.
 
-**Smallest useful result and stop.** Stop with one already identified value, one Tech label, and one Plain explanation as soon as they resolve unambiguously for the named local use. Do not create a NameCard, public row, Bridge, description episteme, or new kind merely to complete a form. If the value or kind is unresolved, apply its direct recovery rule. Use F.18 or F.17 only for the durable or public use they address. Use C.3.3 only for an actual relation between exact local kinds and F.9 only for an actual relation between distinct F.17 cells. If the label starts carrying assignment, Work, result, provenance, assurance, responsibility, or publication claims, stop naming and recover those objects first.
+**Smallest useful result and stop.** Stop with one already identified value and one Tech label as soon as the value and its meaning resolve unambiguously for the named local use. Add a Plain explanation when that use needs one. Do not create a NameCard, public row, Bridge, description episteme, or new kind merely to complete a form. If the value or kind is unresolved, apply its direct recovery rule. Use F.18 or F.17 only for the durable or public use they address. Use C.3.3 only for an actual relation between exact local kinds and F.9 only for an actual relation between distinct F.17 cells. If the label starts carrying assignment, Work, result, provenance, assurance, responsibility, or publication claims, stop naming and recover those objects first.
 
-**What goes wrong if missed.** Names become arguments. A system-role-kind label smuggles in neighboring claims—for example, assignment, permission, responsibility, or capability. A status phrase becomes a system-role kind. A U-kind name imports one practice's or source's private ontology. A polished global word hides disagreement among witnesses. Downstream patterns then repair semantics that naming already broke.
+**What goes wrong if missed.** Names become arguments. A system-role-kind label smuggles in neighboring claims—for example, assignment, permission, responsibility, or capability. A status phrase becomes a system-role kind. A U-kind name imports one practice's or source's private ontology. A shared word can hide disagreement among witnesses. Downstream patterns then repair semantics that naming already broke.
 
 **What this buys.** Readers can use short names without guessing the ontology. U-kind names stay neutral across witnesses. Concrete `...SystemRole` designations point to exact local kinds, and `...SystemRoleKindDescription` designations point to their separate description epistemes. Names for neighboring claims—for example, status, evidence, access, requirement, source, publication, assurance, gate, and decision claims—remain with their direct relations.
 
@@ -91,7 +91,7 @@ Make these facts recoverable in the prose, direct admission, F.4 description, Co
 - the direct source of its meaning;
 - for a local system-role-kind designation, the candidate domain, operative membership condition, intended member/non-member boundary, continuity rule, current `KindSignature`, and effective scheme, with source or practice provenance kept as a locator or comparison cue;
 - for a description name, the separate F.4 `SystemRoleKindDescription` and its exact EntityOfConcern;
-- the selected Tech and Plain designations;
+- the selected Tech designation and any Plain designation needed for a stated didactic use;
 - aliases or predecessor labels with lineage;
 - morphology, neutrality, and minimal-generality checks; and
 - the boundary that prevents the name from absorbing classification, assignment, capability, Method, Work, status, evidence, permission, responsibility, publication, or relation-position claims.
@@ -113,7 +113,7 @@ Keep four things separate: the chosen name, the local system-role kind it names,
 
 #### F.5:4.2 - Tech and Plain Designations
 
-Use two human-facing designations when a name is durable enough to be reused:
+Choose a Tech designation for durable reuse. Add a Plain designation when a stated didactic use needs it:
 
 | Designation | Job | Constraint |
 | --- | --- | --- |
@@ -127,7 +127,7 @@ For the description episteme, name the description rather than the described kin
 
 For a coupled system-role–Method phrase, recover the local kind and Method separately before naming either one. Recover and name a MethodDescription, WorkPlan, or dated Work only when that exact object is already admitted and the naming use consumes it; a shared phrase does not require any of them to exist. `RoboticsEngineerSystemRole` may designate one admitted local kind; `RobotEngineeringMethod` names a Method or Method family. Ordinary *engineer-roboticist* may remain the Plain expression when nearby project wording makes the intended kind clear and the C.3 candidate domain, membership distinction, boundary probes, and continuity remain recoverable. The wording helps the reader; it does not identify the kind. It replaces neither a qualifying MethodDescription nor any description of planned or performed Work.
 
-When a later naming use actually consumes one dated Work identity, that Work must already be constituted before F.5 naming begins. Recover every exact actual performer through A.13, and let A.15.1 independently admit the Work from its semantic Method, time, containing System, and other required direct facts. Add the assignment occurrence, holder equality, and F.6 relation only when the naming record or receiving use expressly represents precise assignment-bound attribution; missing or failed F.6 leaves the Work identity intact. Otherwise keep the activity in ordinary wording and do not mint a Work identifier merely to support a name.
+When a later naming use actually consumes one dated Work identity, that Work must already be constituted before F.5 naming begins. Recover every exact actual performer through A.13, and let A.15.1 independently admit the Work from its semantic Method, time, containing System, and other required direct facts. Add the assignment occurrence, holder equality, and F.6 relation only when the naming record or receiving use expressly represents precise assignment-bound attribution; missing or failed F.6 alone leaves independently admitted Work intact. If the same finding invalidates a premise consumed by its A.13/A.15.1 admission, recheck that premise and its dependent conclusions under F.6:4.2. When the naming use does not consume a dated Work identity, keep the activity in ordinary wording.
 
 For a U-kind, the Tech designation should be neutral enough that no witness wins by vocabulary alone. If witnesses disagree between `Observation`, `Reading`, and `MeasurementResult`, a Concept-Set row preserves the comparison; the exact shared value and invariants must still pass E.24.UK admission or their direct defining rule before an author uses F.5 to choose a name.
 
@@ -149,8 +149,8 @@ When a candidate contains a tempting word, recover the current claim instead of 
 
 | Source wording | First ontological question | Direct next locus |
 | --- | --- | --- |
-| `EvidenceRole`, `ModelFitEvidenceRole`, or “evidence role” | Is an episteme used as evidence for a target claim with exact scope, polarity, relevance window, and provenance? | A.10, B.3, C.2.1, or the exact evidence-use relation |
-| `RequirementRole` or “standard role” | Is an episteme, standard, or clause used as a requirement, source, or specification? | E.10.D2, C.28, E.17, or the exact source or requirement relation |
+| `EvidenceRole`, `ModelFitEvidenceRole`, or “evidence role” | Is an episteme used as evidence for a target claim with the needed scope, polarity and provenance, including a relevance window when the use depends on it? | A.2.4, A.10, B.3 for a named assurance claim, or the exact evidence-use relation |
+| `RequirementRole` or “standard role” | Is an episteme, standard or clause used as a requirement, source or specification? | E.10.D2 and the exact source, specification-use or requirement relation; E.17 for a separate publication-form question |
 | `Access Role` in RBAC | Is this a policy or permission grouping rather than a work-facing kind? | Exact access, policy, permission, or status relation; F.18 only if durable naming is needed |
 | “role of subject, provider, or input” | Is this participant meaning, a declaration slot, or a representation position? | E.10.ROLE, A.6.RSIR, and A.6.5 |
 | `ReviewerSystemRole` | Is one exact local C.3 kind with a direct criterion current? | A.2 with C.3; F.4 for its description; A.2.1 only when assigned |
@@ -176,7 +176,7 @@ Only E.24.UK or the direct result pattern can admit a shared value and its invar
 
 Under `Plant-A-Maintenance-Scheme`, `PumpInspectorSystemRole` designates one exact local kind; it is not that kind. `PumpInspectorSystemRoleKindDescription-v3` is a separate C.2.1 episteme whose EntityOfConcern is the kind. Its ClaimGraph states which systems are candidates, the reading-and-judgment condition that distinguishes members, useful member and non-member probes, the continuity rule, current `KindSignature`, and effective scheme. Plant-A maintenance provenance locates that definition; it does not identify the kind. The Tech designation is `PumpInspectorSystemRole`; the Plain designation is “pump inspector”.
 
-This worked slice needs an assignment identity, so `Robot7-PumpInspector-Assignment-2026Q3` is one occurrence of the directly declared `PlantAPumpInspectionAssignment` species under `U.SystemRoleAssignment`. The species' holder slot admits a `U.System`; its declaration-local assigned-kind slot uses the exact `PlantAMaintenanceSystemRoleKindDomain`; and its predicate applies within the Plant A maintenance scheme and obtains while the fixed holder is assigned under `PumpInspectorSystemRole` to supply the pump-inspection contribution. The occurrence identifies Robot-7 as holder and `PumpInspectorSystemRole` as assigned kind, and spans the maximal uninterrupted interval over which that predicate obtains for those values. This simple species declares no additional identity-bearing participant; a commission, position, or installation locus would become one only in a species whose predicate and identity actually require it.
+This worked slice needs an assignment identity, so `Robot7-PumpInspector-Assignment-2026Q3` is one occurrence of the directly declared `PlantAPumpInspectionAssignment` species under `U.SystemRoleAssignment`. The species' holder slot admits a `U.System`; its declaration-local assigned-kind slot uses the exact `PlantAMaintenanceSystemRoleKindDomain`; and its predicate applies within the Plant A maintenance scheme and obtains while the fixed holder is assigned under `PumpInspectorSystemRole` to supply the pump-inspection contribution. The occurrence identifies Robot-7 as holder and `PumpInspectorSystemRole` as assigned kind, and spans the maximal uninterrupted interval over which that predicate obtains for those values. This species declares no additional identity-bearing participant; a commission, position, or installation locus would become one only in a species whose predicate and identity actually require it.
 
 This naming example does not identify Robot-7's inspection of Pump 14 as a dated Work occurrence. `Pump14InspectionFinding_2026-07-14T11-18Z` is a separate claim-bearing result episteme, and `Pump14InspectionTrace_2026-07-14` is the exact provenance record; G.6 and A.10 represent its independently established source and provenance relations in a descriptive path.
 
@@ -184,7 +184,7 @@ The kind label helps readers recover the kind; the description episteme describe
 
 #### F.5:5.3 - Evidence Use Is Not a System-Role Name
 
-Source text may say `ModelFitEvidenceRole`. The repair is not a prettier role label. This naming example does not identify the model-fit evaluation as a dated Work occurrence. Recover the exact objects it does consume: `ModelFitResult_2026-07-15T09-22Z` is a separately constituted domain-local result episteme; `ModelFitTargetClaim-v5` is the target claim; and `ModelFitRunTrace_2026-07-15` is the provenance record; G.6 and A.10 represent its independently established source and provenance relations in a descriptive path. Keep any operation-result binding, result-episteme inception claim, evidence use, provenance, and current assurance claim separate, and apply the rule that defines or tests each relation.
+Source text may say `ModelFitEvidenceRole`. This naming example does not identify the model-fit evaluation as a dated Work occurrence. Recover the exact objects it does consume: `ModelFitResult_2026-07-15T09-22Z` is a separately constituted domain-local result episteme; `ModelFitTargetClaim-v5` is the target claim; and `ModelFitRunTrace_2026-07-15` is the provenance record; G.6 and A.10 represent its independently established source and provenance relations in a descriptive path. Keep any operation-result binding, result-episteme inception claim, evidence use, provenance, and current assurance claim separate, and apply the rule that defines or tests each relation.
 
 A durable name, if needed, names one recovered evidence-use relation, status value, Work occurrence, result episteme, or provenance value. `ModelFitEvidenceRole`, a NameCard, row, or citation creates none of them and supplies no generic evidence-result relation. It is neither a local system-role kind nor a `SystemRoleKindDescription` label.
 
@@ -208,9 +208,9 @@ The repair is object recovery first, designation second.
 | `CC-F5-1` | The exact named value and kind are explicit. |
 | `CC-F5-2` | The direct meaning source is explicit: E.24.UK or direct admission for a U-kind, A.2 with C.3 for a local system-role kind, F.4 for its description, or another exact relation. A Concept-Set row, card, or citation is not admission or identity. |
 | `CC-F5-3` | The Tech designation is no broader than the recovered meaning. |
-| `CC-F5-4` | The Plain designation points to the same value without widening it. |
+| `CC-F5-4` | Any Plain designation serves a stated didactic use and points to the same value without widening it. |
 | `CC-F5-5` | Edition, source, witness provenance, local boundary, scheme, threshold, and window stay outside the main label. A locator may carry such metadata when navigation requires it, but the metadata does not identify the named kind or value unless its own direct recovery rule makes that distinction part of the object. |
-| `CC-F5-6` | A U-kind name is neutral across the named witness sources or practices. Shared source spelling establishes neither the governed value nor a local kind's identity; the direct admission and identity rules must already have done that work. Treat the term as genuinely shared only when evidence establishes the same referent. |
+| `CC-F5-6` | A U-kind name is neutral across the named witness sources or practices. Shared source spelling establishes neither the governed value nor a local kind's identity; the direct admission and identity rules must already have done that work. Treat the term as shared only when evidence establishes the same referent. |
 | `CC-F5-7` | The system-role-kind designation, local kind, F.4 description, classification judgment, assignment species, and assignment occurrence remain distinct. For any assignment identity used, recover the occurrence and its declared A.2.1 species. The species defines the participant meanings, assigned-kind domain, predicate, applicability, and occurrence identity; the occurrence supplies the holder, assigned-kind value, case applicability, extent, and any other participant values. Otherwise the text does not invent an occurrence. |
 | `CC-F5-8` | Status, evidence, requirement, source, publication, assurance, gate, decision, responsibility, and relation-position names remain at their direct objects before durable naming. |
 | `CC-F5-9` | A source term, symbol, predecessor term, or translation is marked as lineage or alias, not another selected Tech designation. |
@@ -238,8 +238,9 @@ Good consequences:
 - durable names become shorter because the ontology stays at the right object;
 - local system-role-kind names stay usable without becoming assignment, capability, Method, or evidence claims;
 - description names no longer collapse into the kinds they describe;
-- U-kind names are easier to bridge because their comparison evidence remains explicit; and
-- For an E.10 repair that uncovers a durable naming issue, use F.5 or F.18 instead of ad hoc word substitution.
+- U-kind names are easier to bridge because their comparison evidence remains explicit.
+
+For an E.10 repair that uncovers a durable naming issue, use F.5 or F.18 instead of ad hoc word substitution.
 
 Costs:
 
@@ -252,7 +253,7 @@ Reopen F.5 when U-kind neutrality, `SystemRole` or `SystemRoleKindDescription` m
 
 ### F.5:10 - Rationale
 
-Naming is late ontology, not early decoration. Durable names become references used in reasoning, search, publications, and pattern relations. A wrong name makes later readers inherit a false kind claim.
+Recover the object before naming it. Durable names become references used in reasoning, search, publications, and pattern relations. A wrong name makes later readers inherit a false kind claim.
 
 The design choice is to split naming by meaning source rather than source spelling. Bare *role* can point to many different objects or uses—for example, a local system-role kind, assignment, policy term, status, evidence use, relation position, representation position, or ordinary English. Do not decide by suffix. Use E.10.ROLE and the direct patterns to recover the object, then F.5 to name it.
 
@@ -260,18 +261,17 @@ F.5 remains narrower than F.18. Use F.18 for the full local-first protocol, Name
 
 ### F.5:11 - SoTA Decision for Precise, Readable Technical Names
 
-Source use was checked on 2026-08-20. The bounded question is: **after the object is recovered, what is the smallest naming result that stays technically precise, readable to a project reader, and honest about morphology and reuse?**
+The bounded question is: **after the object is recovered, what is the smallest naming result that stays technically precise, readable to a project reader, and explicit about morphology and reuse?**
 
 | Current line | Strong contribution | Limit at comparable one-name effort | FPF decision and receiving locus |
 | --- | --- | --- | --- |
 | [ISO 704:2022](https://www.iso.org/standard/79077.html) and [ISO 1087:2019](https://www.iso.org/standard/62330.html) | Separate objects, concepts, definitions, and designations; make concept relations and term formation inspectable. | Terminology work does not itself admit the FPF object, decide a system-role kind, make an assignment obtain, or state the direct use and publication boundaries. | **Adopt** naming after meaning, minimal generality, and inspectable term formation in sections 4.1-4.3 and checks `CC-F5-1` to `CC-F5-4`. **Reject** a preferred term or definition as object admission. |
 | W3C Ontology-Lexica Community Group, [OntoLex-Lemon](https://www.w3.org/2016/04/ontolex/), 2016 Community Report | Separates lexical entry, written and morphological form, lexical sense, ontology reference, usage conditions, and sense relations. | A full lexical graph and syntax-semantics model is excessive for one local Tech/Plain pair, and its reference relation does not establish FPF object identity or reuse authority. | **Adapt** object-sensitive morphology and the separation of name, sense, and referent in sections 4.1-4.4. **Reject** mandatory full lexicon modeling; use F.18 only when durable naming actually needs a card. |
-| [ISO 24495-1:2023](https://www.iso.org/standard/78907.html), current published plain-language standard | Requires written information that intended readers can find, understand, and use; it explicitly applies to technical writing and controlled languages. | Plain-language quality does not settle ontology, reference, or term identity, and a shorter familiar word can still widen the meaning. | **Adopt** one short Plain designation and reader-use check in section 4.2 and `CC-F5-4`. **Reject** simplification that changes the recovered value or removes a live distinction. |
+| [ISO 24495-1:2023](https://www.iso.org/standard/78907.html), current published plain-language standard | Requires written information that intended readers can find, understand, and use; it explicitly applies to technical writing and controlled languages. | Plain-language quality does not settle ontology, reference, or term identity, and a shorter familiar word can still widen the meaning. | **Adopt** the reader-use check and, when that use needs it, one short Plain designation in section 4.2 and `CC-F5-4`. **Reject** simplification that changes the recovered value or removes a live distinction. |
 | W3C [SKOS Reference](https://www.w3.org/TR/skos-reference/), Recommendation 2009 | Keeps preferred and alternative labels, notes, concepts, collections, and mapping relations distinct. | It is useful lineage for labels and aliases but does not model enough morphology or decide FPF kind, assignment, Work, evidence, or publication claims. | **Retain as lineage** for aliases and cross-local caution in rules 8-9 and `CC-F5-6`/`CC-F5-9`; do not treat a shared label or generic mapping as a Bridge or common referent. |
 
-**Selected non-dominated contribution.** A bare preferred label is cheaper but can hide the wrong object and leaves a cold reader without a safe explanation. A full ontology lexicon is richer but normally costs more than one project naming decision needs. F.5 stops at one already recovered value, one Tech designation, and one short Plain explanation. The word form follows the kind of object, while explicit limits prevent the two labels from creating a second ontology. At that effort, the result is more usable than a formal-only name and more precise than an unexplained familiar word.
+**Selected contribution.** Keep the recovered meaning accessible through the designation and its direct explanation. A bare label is insufficient when the intended reader cannot recover that meaning; a full ontology lexicon may supply detail that one naming decision does not need. F.5 uses one already recovered value and a Tech designation, adding a short Plain explanation for a stated didactic need. Word form follows the kind of object, and the name's use remains bounded by the recovered meaning.
 
-SysML is intentionally not used as a naming, ontology, or lineage authority here. Its notation does not settle the referent, local kind, description, assignment, participation, Method, Work, or readable term choice at issue.
 
 Source-use boundary: external labels, Concept-Set rows, and citations are evidence for local meaning or common practice, not automatic Tech designations, admission decisions, or Work, result, and provenance identities. A source term becomes selected only after the exact value is admitted and the naming comparison passes; naming changes none of those objects.
 

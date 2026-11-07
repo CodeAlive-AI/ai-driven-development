@@ -236,7 +236,7 @@ The physical and mathematical accounts need each other without becoming the same
 
 **Which sampling repair changes the physical inference?** Use NI's [sampling and aliasing account, “Sample Rate” and “Aliasing”](https://www.ni.com/en/shop/data-acquisition/measurement-fundamentals/analog-fundamentals/acquiring-an-analog-signal--bandwidth--nyquist-sampling-theorem-.html) for the acquisition constraint and input conditioning. Section 5.2 derives its alias equality explicitly and states f_s and the admitted signal band. Compared with increasing numerical precision, changing acquisition can distinguish the physical cases. The instrument's bandwidth, filtering and timing remain part of that repair.
 
-Reopen the source choices when a physical theory, representation, computational method or executing technology supplies a better way to resolve the same disagreement. Compare the actual operation, consequence and conditions that let the receiving work use it.
+Reconsider the chosen repair when a physical theory, representation, computational method or executing technology supplies a better way to resolve the same disagreement. Compare the actual operation, consequence and conditions that let the receiving work use it.
 
 ### B.5.MPC.R:12 - Relations
 

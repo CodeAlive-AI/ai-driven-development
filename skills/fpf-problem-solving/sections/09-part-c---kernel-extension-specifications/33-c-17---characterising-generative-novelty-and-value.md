@@ -4,10 +4,6 @@
 
 > **Status:** Stable
 
-**Depends on.** `A.17`, `A.18`, and `A.19` for Characteristics, Scales, and CharacteristicSpaces; `A.19.ECS` for the evaluation-space specification; `C.16` for measurement; `C.2.1` for claim-bearing results and model epistemes; `A.1.1` for model applicability, use, and expression coherence when those relations matter; `A.10` and `B.3` for evidence, reliance, and assurance; and the patterns that define the current objective, acceptance criterion, and must-constraints.
-
-**Coordinates with.** `E.10.LRN` when *learning progress* or related wording still hides the bearer or result; `C.18` for generation, Archive, Front, and possibility-space change; `C.19` for pool policy and tie-break use; `G.5` for selector-facing declarations; `C.11.CRC` for a missing finite configuration-relative comparison; `C.11` for choice; `F.9` for an actual cross-reference-scheme Bridge; `F.18` for naming-candidate diversity; `B.4` and `G.11` for evolution and refresh; `A.13` and `A.15.1` for exact evaluator recovery and independently admitted dated overall-assessment Work; `A.2.1` and `F.6` only when exact assignment-bound attribution is expressly consumed; `A.3.1` for the enacted Method; `A.3.2` when a relied-on MethodDescription matters; and `A.6.1` only when the assessment also uses one exact operation declared by a separately admitted `U.Mechanism` and a claim needs that operation's application or bindings.
-
 ### C.17:0 - Use this when
 
 Use C.17 when someone must say whether a design, code change, theory, policy proposal, dated Work occurrence, or finite candidate set—the bearer being discussed—is new relative to a named comparison basis and useful for a stated objective or must-criterion.
@@ -36,7 +32,7 @@ Do not infer a person's or System's creative capacity from a C.17 result. Strong
 
 Name the bearer, comparison set, practical objective or must-criterion, observed or argued difference, supported consequence, evidence, and limitation. A useful statement can be as simple as:
 
-> Compared with the admitted five-year pump-design set, P-22's inspected split-clamp arrangement is a supported difference. The cited assembly evidence supports shorter assembly, and the design must not require new tooling. The inspection does not support claims about other pump families.
+> Compared with the admitted five-year pump-design set, P-22's inspected split-clamp arrangement is a supported difference. The cited assembly evidence supports shorter assembly than the current shop design P-11, and the design must not require new tooling. The inspection does not support claims about other pump families.
 
 This is already a valid C.17 result for an ordinary design discussion. It does not imply a numerical Novelty value or an overall assessment occurrence.
 
@@ -56,7 +52,7 @@ Return only the missing premise that blocks the current coordinate or conclusion
 
 #### C.17:1.3 - Dated overall-assessment branch
 
-Open this branch only when the claim says that an overall assessment actually occurred and later reliance needs that fact. Recover the evaluator System through A.13 and the admitted Method through A.3.1, then use A.15.1 to independently admit the dated Work that enacts that Method. Add the exact A.2.1 assignment occurrence and F.6 relation only when later reliance expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the assessment Work intact. Only the evaluator System performs the Work. A separate MethodDescription may explain the reusable Method; it is not enacted. Coordinate-measurement Work remains its own `C.16` Work, and the aggregate result states claims.
+Use this branch when a statement deliberately asserts dated overall-assessment Work or the receiving use needs that occurrence established. Recover the evaluator System's A.13 core, including its obtaining A.2.1 assignment, and the admitted Method through A.3.1; then use A.15.1 to independently admit the dated Work that enacts that Method. Add F.6 only when the receiving use consumes precise assignment-bound attribution through that same assignment. A missing or failed F.6 attribution alone leaves independently admitted assessment Work intact; recheck any admission premise questioned by the same finding and the conclusions that depend on it. Only the evaluator System performs the Work. A separate MethodDescription may explain the reusable Method; it is not enacted. Coordinate-measurement Work remains its own `C.16` Work, and the aggregate result states claims.
 
 Do not infer an A.6.1 operation application from the Method, Work, configuration, or result. If a receiving claim separately asserts an exact operation application or binding, satisfy the current A.6.1 application account and cite that application. Otherwise retain only the C.17-local evaluator System, assignment, Method enactment, dated assessment Work, coordinate results, and aggregate result that the claim actually needs.
 
@@ -75,25 +71,13 @@ Do not infer an A.6.1 operation application from the Method, Work, configuration
 | Optional profile | `CreativityProfile` is a local, non-arithmetic payload containing selected coordinate-claim references, their declared arrangement, and any current frontier or incomparability annotation. |
 | Representation and publication | A table, chart, dashboard, or publication form represents or publishes the payload or result. It is not the payload or result. |
 | Optional record | A separate `CreativityEvaluationRecord` episteme may package references to the configuration, results, profile, evidence, rendering, and actual Work for a named receiver. |
-| Assessment occurrence | Dated Work exists only when an overall assessment actually occurred and its System, assignment, Method enactment, Work extent, and evidence are recoverable. Any claimed application of a Mechanism operation is a separate conditional fact under A.6.1. |
+| Assessment occurrence | A claim of dated overall-assessment Work requires the actual occurrence and recoverable System, assignment, Method enactment, Work extent and evidence. Any claimed application of a Mechanism operation is a separate conditional fact under A.6.1. |
 
 Changing a space slot, corpus membership or inclusion rule, model claims or training basis, objective, criterion, constraint, Scale meaning, scope, or window reopens only the coordinate claims that depend on that change and any aggregate conclusion that uses them.
 
-#### C.17:2.1 - Retired predecessor heads
+#### C.17:2.1 - Preserve earlier results
 
-The following names no longer introduce root kinds:
-
-| Retired head | Use instead |
-| --- | --- |
-| `U.CreativitySpace` | the selected A.19 CharacteristicSpace, locally called `CreativityCharacteristicSpace` when a short name helps |
-| `U.CreativityProfile` | the optional local `CreativityProfile` payload, with any representation, publication form, or record identified separately |
-| `U.ReferenceBase` | the finite corpus or reference set and, when needed, its source-selection episteme |
-| `U.SimilarityKernel` | the Method used plus its model, encoder, distance definition, calibration, and limits |
-| `U.GenerativePrior` | the model episteme and its separate training basis |
-| `U.CreativeOutcome` | the bearer under its existing kind |
-| `U.CreativeEvaluation` | the separately recoverable configuration, coordinate claims, aggregate result, optional payload and record, and any actual assessment Work |
-
-Earlier results remain historical epistemes under their original editions. Relate an earlier and later result as editions only when both results and the continuity claim are recoverable; do not retype an old result merely because the current ontology is clearer.
+Preserve an earlier result under its original edition and evaluation basis. Relate an earlier and a later result as editions only when both results and the continuity claim are recoverable.
 
 ### C.17:3 - Evaluation configuration
 
@@ -147,7 +131,7 @@ Novelty and Surprise answer different questions. A bearer may be unlike the sele
 
 #### C.17:4.4 - ConstraintFit: which must-criteria hold?
 
-ConstraintFit reports satisfaction of the declared must-constraints under their predicates and source epistemes. Use `E.5`, `D.1`-`D.5`, or a service-acceptance pattern only when it supplies the actual predicate or source for the current must-criterion. A ratio such as `passed declared must-constraints / all declared must-constraints` is allowed when the set and any criticality weights are explicit.
+ConstraintFit reports satisfaction of the declared must-constraints under their predicates and source epistemes. Use `E.5`, `D.1`-`D.5`, or a service-acceptance pattern only when it supplies the actual predicate or source for the current must-criterion. A ratio such as `passed declared must-constraints / all declared must-constraints` is allowed when the applicable set is nonempty and any criticality weights are explicit. If no must-constraint applies, omit the ratio and state that fact when the receiving use needs it; other eligibility conditions remain to be satisfied.
 
 A failing must-constraint makes the bearer ineligible for the affected use unless the receiving constraint or decision pattern recognizes an independently obtaining exception or waiver effect. A waiver speech act alone does not change eligibility. If no pattern defines the needed effect, return the missing relation rather than treating communication as authorization.
 
@@ -172,7 +156,7 @@ EffortCost reports actual resource outlay through `A.15.1` dated Work, `B.1.6` r
 - take the average pairwise distance among the admitted members under one declared descriptor map, distance Method, and Scale; or
 - report how much of a declared feature partition is covered, using a stated covering radius or k-cover rule.
 
-Neither construction is universal. The result identifies the retained set and membership rule, measurement-policy and Scale editions, descriptor or feature source editions, distance or covering definition, comparison window, and evidence. A distance matrix or coverage map can show the calculation. When the reading affects a decision, vary a plausible kernel, distance definition, covering threshold, or admitted-member set and report whether the conclusion changes.
+Neither construction is universal. The result identifies the retained set and membership rule, measurement-policy and Scale editions, descriptor or feature source editions, distance or covering definition, comparison window, and evidence. A distance matrix or coverage map can show the calculation. When sensitivity to the kernel, distance definition, covering threshold or admitted-member set can change the receiving decision, use an adequate existing analysis or make the needed comparison and report its consequence. Keep a result on a fixed basis qualified by that basis; claim robustness only with grounds for it.
 
 For a candidate `h` and retained set `S`, the same local policy may use the marginal reading `DeltaDiversity_P`, also written `ΔDiversity_P`:
 
@@ -245,7 +229,7 @@ Do not alternate among *result*, *profile*, *record*, and *dashboard* as if they
 
 ### C.17:8 - Evidence, uncertainty, and resistance to gaming
 
-Every quantitative result names its evidence, calibration, uncertainty, and validity window. Keep aleatory and epistemic uncertainty separate and state any rule that combines them. A claim imported from another source or scale states the preserved meaning, lost meaning, direction, receiving use, and evidence limit; use `F.9` only when an actual Bridge between reference-scheme senses is needed.
+Every quantitative result names its derivation or evidence and the calibration, uncertainty and validity window required by its construction and receiving use. Keep aleatory and epistemic uncertainty separate and state any rule that combines them. A claim imported from another source or scale states the preserved meaning, lost meaning, direction, receiving use, and evidence limit; use `F.9` only when an actual Bridge between reference-scheme senses is needed.
 
 Apply these anti-Goodhart guards:
 
@@ -256,7 +240,7 @@ Apply these anti-Goodhart guards:
 - connect `DiversityOfSearch` to the declared experimentation allowance and report overspend;
 - retain primitive coordinates and sensitivity when a composite index is used.
 
-When a corpus, inclusion rule, model, encoder, Scale, criterion, window, or cross-source premise changes, leave a compact change account: the previous and new editions, what changed in the basis, which coordinates and aggregate conclusions reopen, whether eligibility or frontier membership changed, and which next observation can settle the difference. *Latest* is not a reproducible selector. Use `B.4` and `G.11` for the refresh; the change account explains the comparison and does not replace the new result.
+When a corpus, inclusion rule, model, encoder, Scale, criterion, window, or cross-source premise changes, leave a compact change account: the previous and new editions, what changed in the basis, which coordinates and aggregate conclusions reopen, whether eligibility or frontier membership changed, and any further calculation or observation needed to settle an unresolved difference. *Latest* is not a reproducible selector. Use `B.4` and `G.11` for the refresh; the change account explains the comparison and does not replace the new result.
 
 Goodhart's law is a useful historical warning, not evidence for any result. The safeguards above do the operational work.
 
@@ -276,9 +260,9 @@ When claims come from different source schemes or corpora, do not compare by mat
 
 #### C.17:9.1 - Pump design: stop early or open the measurement branch
 
-Identify `P-22` as the exact design episteme. Compared with the admitted five-year pump-design set, its inspected split-clamp arrangement is a supported difference. Assembly evidence supports shorter assembly, and the candidate must not require new tooling. State what was inspected and the limit of that support. Stop here when the discussion needs neither a quantified coordinate nor a reusable result.
+Identify `P-22` as the exact design episteme. Compared with the admitted five-year pump-design set, its inspected split-clamp arrangement is a supported difference. Assembly evidence supports shorter assembly than the current shop design P-11, and the candidate must not require new tooling. The cited comparison uses the same assembly task and conditions. State what was inspected and the limit of that support. Stop here when the discussion needs neither a quantified coordinate nor a reusable result.
 
-To use Novelty value `0.42`, cite `P22-NoveltyResult-4`, an already constituted C.16 measurement-result episteme. Its chain identifies P-22 as measurand, the Novelty Characteristic and Scale, exact similarity Method, the calibrated `[0,1]` CAD-graph similarity result used by the declared Novelty construction, encoder and model edition, uncertainty, dated measurement Work, actual bindings, time, and evidence. The Method compares `P22-CADGraph-7`, produced from and representing P-22 under `CADGraphProjection-2`, with graphs produced by the same projection for every corpus design; the result states that this projection omits surface finish and manufacturing tolerances. If the current action measures novelty, constitute that chain first. State the no-tooling-change coordinate as a C.2.1 ascription under its declared criterion unless it was independently measured.
+To use Novelty value `0.42`, cite `P22-NoveltyResult-4`, an already constituted C.16 measurement-result episteme. Its chain identifies P-22 as the measurement subject, the Novelty Characteristic and Scale, exact similarity Method, the calibrated `[0,1]` CAD-graph similarity result used by the declared Novelty construction, encoder and model edition, uncertainty, dated measurement Work, actual bindings, time, and evidence. The Method compares `P22-CADGraph-7`, produced from and representing P-22 under `CADGraphProjection-2`, with graphs produced by the same projection for every corpus design; the result states that this projection omits surface finish and manufacturing tolerances. If the current action measures novelty, constitute that chain first. State the no-tooling-change coordinate as a C.2.1 ascription under its declared criterion unless it was independently measured.
 
 One `CreativityEvaluationResult` may cite those coordinates and state only that P-22 is eligible for the current comparison and lies on the declared non-dominated set. Building that result does not assert separate overall-assessment Work.
 
@@ -286,9 +270,9 @@ If an audit later asserts that an overall assessment occurred, identify the eval
 
 #### C.17:9.2 - Software and algorithmic design
 
-**Software design.** In this worked example, `ETL-Parallel-12` is compared with 40 admitted internal pipeline designs through `ASTGraphSimilarity-3`, whose declared Novelty construction uses calibrated `[0,1]` similarities. The Method compares AST-graph representations produced by the same declared parser and projection for the evaluated design and every corpus design; the result states that runtime configuration and deployment topology are not preserved by that projection. Its Novelty result is `0.36`. A fixed-workload benchmark reports an 18% lower p95 latency than the serial baseline, but the segregation-of-duties test fails. The benchmark run, corpus edition, nearest-neighbour report, and policy test are the evidence. The result therefore supports a latency gain but leaves the design ineligible for the stated use; redesign the isolation boundary and repeat the affected tests before any pool or choice decision.
+**Software design.** In this worked example, `ETL-Parallel-12` is compared with 40 admitted internal pipeline designs through `ASTGraphSimilarity-3`, whose declared Novelty construction uses calibrated `[0,1]` similarities. The Method compares AST-graph representations produced by the same declared parser and projection for the evaluated design and every corpus design; the result states that runtime configuration and deployment topology are not preserved by that projection. Its Novelty result is `0.36`. A fixed-workload benchmark reports an 18% lower p95 latency than the serial baseline, but the segregation-of-duties test fails. The benchmark run, corpus edition, nearest-neighbour report, and policy test are the evidence. The result therefore supports a latency gain but leaves the design ineligible for the stated use; if the candidate is revised for that use, repair the isolation boundary and repeat the affected tests before claiming that the revised design meets this constraint.
 
-**Algorithmic search Work.** `SpikeSet-7` contains nine dated attempts in three declared approach classes over six hours. Tagged Work records support `DiversityOfSearch = 3 classes`; the first runnable output appeared after 2 h 10 m. The held-out viability test was never run, so `Time-to-First-Viable` is not established. The practical action is to run that test, not to relabel time-to-first-runnable as viability.
+**Algorithmic search Work.** `SpikeSet-7` contains nine dated attempts in three declared approach classes over six hours. Tagged Work records support `DiversityOfSearch = 3 classes`; the first runnable output appeared after 2 h 10 m. The held-out viability test was never run, so `Time-to-First-Viable` is not established. Run the test when the receiving work needs the viability result. The supported search-diversity reading remains available; time-to-first-runnable cannot substitute for time-to-first-viable.
 
 #### C.17:9.3 - Health analytics
 
@@ -300,7 +284,7 @@ For `Cardio-Readmit-H4`, the held-out AUROC is `0.79` against a `0.75` baseline 
 
 #### C.17:9.5 - Scientific and policy proposals
 
-**Scientific proposal.** `ScalingRelation-S4` has Novelty `0.61` from the declared calibrated `[0,1]` similarity construction relative to the admitted literature corpus. The Novelty Method compares one text embedding that describes the proposal with embeddings produced by the same encoder for every corpus paper; the result names that projection and states that notation and experimental detail may be lost. Its Surprise is `4.1 bits per token` under `PriorModel-2`, using the same versioned tokenizer and abstract-text sample unit for the proposal and model basis; the per-token normalization handles text length but does not support a claim about equations or full papers. The corpus, neighbour report, model calibration, and derivation evidence support those coordinates, but independent replication is missing. Report the proposal as a preliminary bounded result and seek replication before a reliance claim.
+**Scientific proposal.** `ScalingRelation-S4` has Novelty `0.61` from the declared calibrated `[0,1]` similarity construction relative to the admitted literature corpus. The Novelty Method compares one text embedding that describes the proposal with embeddings produced by the same encoder for every corpus paper; the result names that projection and states that notation and experimental detail may be lost. Its Surprise is `4.1 bits per token` under `PriorModel-2`, using the same versioned tokenizer and abstract-text sample unit for the proposal and model basis; the per-token normalization handles text length but does not support a claim about equations or full papers. The corpus, neighbour report, model calibration and derivation evidence support those bounded coordinates. Independent replication is missing; any later empirical-use claim that requires it remains unsupported. Report the available coordinates now and obtain the required replication before making that dependent reliance claim.
 
 **Policy proposal.** In a municipal permit-triage pilot, `Policy-P8` reduces median processing time by 12% against the prior-procedure baseline and passes the declared legal-form test. Subgroup error evidence required by the equity must-criterion is missing, so ConstraintFit and eligibility are not established. Keep the proposal out of an approval-facing comparison until the subgroup test is complete; the time result remains usable for its narrower operational question.
 
@@ -344,7 +328,7 @@ This brief is a representation of the selected configuration and results. It doe
 | `CC-C17-11` | Uncertainty, evidence, time window, model or corpus drift, and any cross-source or cross-scale loss are visible at the claim that depends on them. |
 | `CC-C17-12` | Dated overall-assessment Work is asserted only with its actual System, assignment, Method enactment, Work extent, and evidence. Do not infer an A.6.1 operation application from those facts. When an exact application or binding is separately claimed, satisfy the current A.6.1 application account and cite that application. Coordinate-measurement Work remains separate. |
 | `CC-C17-13` | Use C.17 to report characteristics and comparison results, C.18 for generation plus Archive and Front maintenance, C.19 for pool policy, G.5 for selector-facing declarations, and C.11 for choices. |
-| `CC-C17-14` | The seven retired predecessor heads are not used to create new kinds or actors. |
+| `CC-C17-14` | Earlier results retain their original editions and evaluation bases; an edition relation requires recoverable results and a recoverable continuity claim. |
 | `CC-C17-15` | A cold reader can tell what to inspect first, when to stop, and what additional evidence is required for the stronger branch. |
 
 ### C.17:12 - Common failures and repairs
@@ -374,16 +358,14 @@ This brief is a representation of the selected configuration and results. It doe
 
 ### C.17:14 - SoTA-Echoing and source use
 
-**Source-use boundary.** The sources below change what a C.17 user inspects or reports. They do not install one creativity theory, automated judge, metric, or search algorithm as the FPF default. Reopen this source-use judgement when a cited source is corrected, retracted, or materially superseded; when new cross-domain evidence overturns one of the stated consequences; or when a proposal would make one automated metric, corpus, encoder, QD descriptor, or proxy score normative. Use `G.11` for that refresh.
+**Source-use boundary.** The sources below change what a C.17 user inspects or reports. They do not install one creativity theory, automated judge, metric, or search algorithm as the FPF default.
 
 | Current practice and source | Source-use decision | Concrete C.17 consequence |
 | --- | --- | --- |
 | Judge novelty and usefulness as distinct, context-dependent questions. Harvey and Berry, `Toward a Meta-Theory of Creativity Forms: How Novelty and Usefulness Shape Creativity`, *Academy of Management Review* 48(3):504-529 (2023), DOI `10.5465/amr.2020.0110`; Sen et al., `Automated Creativity Evaluation of Language Models Across Open-Ended Tasks`, ACL 2026, DOI `10.18653/v1/2026.acl-long.1061`. | **Adopt** the separation of creative breadth from task fulfilment and the dependence of usefulness on the practical situation. **Adapt** it by using the named comparison basis, Use-Value, and ConstraintFit already defined here. **Reject** a context-free creativity score and the cited paper's particular semantic-entropy or automated-judge machinery as universal FPF measures. | The first move names both what the bearer differs from and which objective or must-criterion matters. Approval-facing use cannot substitute Novelty for Use-Value or ConstraintFit; `CC-C17-1`, `CC-C17-5`, and `CC-C17-8` test that boundary. |
 | Preserve a collection of different locally strong alternatives when the question needs coverage rather than one winner. Qin et al., `A survey on Quality-Diversity optimization: Approaches, applications, and challenges`, *Swarm and Evolutionary Computation* 100:102240 (2026), DOI `10.1016/j.swevo.2025.102240`. | **Adopt** the quality-diversity and illumination insight that coverage and local quality can matter together. **Adapt** it as `Diversity_P`, Illumination, or another declared retained-set reading. **Reject** MAP-Elites, a QD score, feature descriptor, container, or quota as a default C.17 method or selection rule. | A set reading stays telemetry with its bearer, rule, Scale, and evidence. Use `C.18` for Archive and Front maintenance, `C.19` for pool treatment, and `G.5` for selector-facing declarations; `CC-C17-9` and `CC-C17-10` keep these moves separate. |
-| Test whether a result survives reasonable corpus, metric, and representation choices. Lu et al., `Rethinking Creativity Evaluation: A Critical Analysis of Existing Creativity Evaluations`, EACL 2026, DOI `10.18653/v1/2026.eacl-long.297`; Stein et al., `Exposing Flaws of Generative Model Evaluation Metrics and Their Unfair Treatment of Diffusion Models`, NeurIPS 2023, DOI `10.52202/075280-0165`. | **Adopt** sensitivity checking and comparison with evidence suited to the receiving domain. **Adapt** it by making the corpus, inclusion rule, Method, model or encoder, distance, calibration, and uncertainty part of the claim. **Reject** transfer of one metric across domains, minor prompt or implementation stability as validity, and leaderboard standing as evidence of the bearer characteristic. | For a load-bearing value, inspect neighbours and run the applicable corpus/Method sensitivity or invariance probe. If the conclusion changes, report that dependence or incomparability instead of hiding it in one score; `CC-C17-4` and `CC-C17-11` make this visible. |
+| Test whether a result survives reasonable corpus, metric, and representation choices. Lu et al., `Rethinking Creativity Evaluation: A Critical Analysis of Existing Creativity Evaluations`, EACL 2026, DOI `10.18653/v1/2026.eacl-long.297`; Stein et al., `Exposing Flaws of Generative Model Evaluation Metrics and Their Unfair Treatment of Diffusion Models`, NeurIPS 2023, DOI `10.52202/075280-0165`. | **Adopt** sensitivity checking and comparison with evidence suited to the receiving domain. **Adapt** it by making the corpus, inclusion rule, Method, model or encoder, distance, calibration, and uncertainty part of the claim. **Reject** transfer of one metric across domains, minor prompt or implementation stability as validity, and leaderboard standing as evidence of the bearer characteristic. | For a load-bearing value, use a robustness diagnostic suited to the claim, such as neighbour inspection or corpus/Method sensitivity. Reuse an adequate result; run a further probe only when its contribution is needed. If the conclusion changes, report that dependence or incomparability instead of hiding it in one score; `CC-C17-4` and `CC-C17-11` make this visible. |
 | Check whether optimizing a proxy stops improving the result that matters. Gao, Schulman, and Hilton, `Scaling Laws for Reward Model Overoptimization`, ICML 2023, PMLR 202:10835-10866, `https://proceedings.mlr.press/v202/gao23h.html`. | **Adopt** the warning that further proxy optimization can reduce performance under a separate target judgement. **Adapt** it by retaining primitive coordinates, gates, evidence, and held-out or delayed observations and by giving the local result a stop or reopen condition. **Reject** the reward-model setting or its fitted scaling law as a universal degradation model, and reject a rising proxy score as evidence that the bearer improved. | The design and policy cases keep tooling and legal or equity gates visible even when another value improves. Scalarization never erases the primitive coordinates; later target evidence can reopen only the claims that relied on the proxy. |
-
-These decisions reinforce the existing route rather than add another assurance layer. In the pump case, inspect the admitted design set and tooling constraint; in the hospital case, keep the held-out result separate from unsupported transfer; in the policy case, keep the missing subgroup evidence as an eligibility gap. The source-use decisions therefore change the comparison and robustness work already required by the cases and checklist, not the practitioner-first entry.
 
 ### C.17:15 - Open questions
 
@@ -397,7 +379,7 @@ The following are research questions, not current requirements:
 ### C.17:16 - Relations
 
 - **Builds on:** `A.17`, `A.18`, `A.19`, `A.19.ECS`, `C.16`, `C.2.1`, `A.1.1`, `A.10`, and `B.3`.
-- **Coordinates with:** `E.10.LRN` for ambiguous learning-family wording, `A.13` for exact evaluator recovery and any separate agency or autonomy claim, `F.9` for an actual Bridge, `F.18` for lexical candidate-family diversity, `A.0:QF.2a` for an optional structured cross-scale qualifier, `B.4` and `G.11` for evolution and refresh, `A.15.1`, `A.15.2`, `B.1.6`, `A.3.1`, and `A.3.2` for Work, plans, resources, and Method descriptions, `A.2.1` and `F.6` only for an expressly consumed precise assignment-bound attribution, and `A.6.1` only for a separately claimed application of one exact declared Mechanism operation.
+- **Coordinates with:** `E.10.LRN` for ambiguous learning-family wording, `A.13` for exact evaluator recovery and any separate agency or autonomy claim, `F.9` for an actual Bridge, `F.18` for lexical candidate-family diversity, `A.0:QF.2a` for an optional structured cross-scale qualifier, `B.4` and `G.11` for evolution and refresh, `A.15.1`, `A.15.2`, `B.1.6`, `A.3.1`, and `A.3.2` for Work, plans, resources, and Method descriptions, `A.2.1` for the assignment needed by the A.13 core and `F.6` only for an expressly consumed precise assignment-bound attribution, and `A.6.1` only for a separately claimed application of one exact declared Mechanism operation.
 - **Supplies results to:** `C.18`, `C.19`, and `G.5` for their exact set-side questions, `C.11.CRC` only when one finite configuration-relative comparison is missing, and `C.11` for choice, without taking over generation, set stewardship, pool policy, comparison, declaration, or choice.
 
 ### C.17:End

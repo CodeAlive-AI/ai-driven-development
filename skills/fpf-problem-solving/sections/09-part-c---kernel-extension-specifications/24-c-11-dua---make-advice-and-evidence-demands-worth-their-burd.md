@@ -63,6 +63,8 @@ These are questions to resolve where live, not three mandatory output fields. A 
 
 #### C.11.DUA:4.2 - Compare attainable inquiry with its receiving value
 
+If the relevant distinction or possible result is not yet expressible, use B.5:4.1.2 to develop grounds from an accessible episode, source or attempt. The immediate comparison can concern a bounded exploration likely to improve the description or reveal a dependency. It need not promise a particular discovery. Return with the basis actually obtained before demanding a specific action-changing answer. Appraising an already formulated inquiry and constructing its missing basis are different contributions.
+
 When an inquiry is proposed or a consequential uncertainty, anomaly or applicable requirement makes one live, identify a plausible result that would change the conclusion, choice or warranted use. Compare obtaining that result with the feasible alternatives. These may include using present knowledge, a smaller reversible step, a different source, a narrower claim, deferral or stopping.
 
 Include the attainable inquiry's cost, delay, displaced work and downside. Compare what it adds to the present configuration and horizon; `C.11.CRC` supplies that missing comparison when needed. A large uncertainty is not sufficient reason for a large study. Ask how resolving it could improve this use. A cheap probe that can change an irreversible commitment deserves a different answer from an expensive check whose plausible results leave the useful answer unchanged.
@@ -127,7 +129,7 @@ These illustrative situations state their conditions for the comparison. Reporte
 
 **Completed answer.** “On your account, the threshold was below the incoming background. That alone does not establish a mistake. A criterion for the operation's added contribution and a criterion for total exposure govern different quantities; the latter can require reducing background too. Compare the protection gained with the feasible treatment burden before judging the threshold.”
 
-That answer supplies the requested distinction and keeps its attribution. It makes no independently verified historical claim and issues no operating permission. The answer itself completes this use; a second account of why archives were not searched adds nothing.
+That answer supplies the requested distinction and keeps its attribution. It makes no independently verified historical claim. The answer itself completes this use; a second account of why archives were not searched adds nothing.
 
 **Changed use.** The recipient now plans to attribute responsibility in a report. Suppose an accessible contemporary record can identify who set the criterion and what it governed. A one-hour record check is feasible and could settle the attribution.
 
@@ -231,7 +233,7 @@ The recurring problem is the connection between a qualified claim and the work a
 
 This gives advice authoring and advice review the same method. Both start with what the recipient would do and end with usable advice. A wording repair under `F.19` may make a demand clear while leaving its cost or merits unresolved. A decision calculation may be correct while answering a different question from the one the recipient needs.
 
-The smaller route is direct use of the existing patterns or a short composing entry. Prefer it whenever it reaches the same warranted completion at comparable effort. This companion is useful where recovery of implicit work, requirement appraisal and the connected completion would otherwise have to be reconstructed. It introduces no choice calculus, new U-kind, universal record or exemption.
+The smaller route is direct use of the existing patterns or a short composing entry. Prefer it whenever it reaches the same warranted completion at comparable effort. This companion is useful where recovery of implicit work, requirement appraisal and the connected completion would otherwise have to be reconstructed.
 
 ### C.11.DUA:11 - SoTA-Echoing
 

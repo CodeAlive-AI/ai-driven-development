@@ -1,0 +1,11 @@
+## FIN.Reference:11 - SoTA-Echoing
+
+The current professional line used here combines corporate investment and valuation, treasury practice, explicit financial positions and decision-specific accounts. The [CFA 2026 readings][CFA-CAPITAL] contribute finance methods and their comparison limits; [AFP's treasury specification][AFP] contributes the breadth of cash, provider, funding and control responsibilities. A syllabus or task list establishes a professional concern, not proof that one implementation is effective.
+
+[OpenStax's 2026 second edition][OS-STRUCTURE] provides accessible capital-structure and cost-of-capital explanations. The [IVSC overview][IVSC] identifies valuation concerns without supplying the full requirements of a particular engagement. The [World Bank's 2022 workout toolkit][WB-WORKOUT] is a substantive recovery-method source; current local law and actual agreements still determine available routes.
+
+The language adopts these financial contributions and connects them through actual dates, claims, feasible choices and receiving use. Changed professional knowledge, institutional conditions or a case exposing a consequential omission reopens the affected method.
+
+Financing design also requires a provider's and other participants' perspective. Damodaran's historical [financing-details chapter][DAM-FINANCING] connects cash matching with information and incentives. [World Bank PPP guidance][WB-BANKABILITY] provides a developed financing case in which risk allocation changes debt capacity and equity needs; its public-project setting does not establish a universal corporate-financing prescription. FIN.10 combines these questions with ECO's construction of exchange and its own financial examples.
+
+For groups, the [ACT discussion of group financing][ACT-GROUP] distinguishes debt location and support, while [OECD's 2022 Chapter X][OECD-FIN] distinguishes the transactions and participant consequences of internal finance. FIN.23 uses those distinctions without treating a funding structure as universally cheapest or that chapter as current law in every jurisdiction. ACT's [2025 cash-management discussion][ACT-CASH-2025] reports an instance in which pooling weakened local attention to forecasts; it motivates examining the operating consequences, not a general claim that pooling has that effect.

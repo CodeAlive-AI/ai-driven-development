@@ -1,0 +1,15 @@
+## PHY.Reference:7 - Shared sources, alternatives and relations
+
+Physical construction and executable mathematical reasoning meet explicitly in [Sussman and Wisdom's Structure and Interpretation of Classical Mechanics](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/9579/sicm_edition_2.zip/preface001.html). PHY.7 adopts the connected recovery of configuration, interaction and permitted variation. Its comparison with the direct balance route in PHY.6 retains the cheaper sufficient construction and the limits of an ordinary action principle. The shared lesson is to expose the physical premises that a compact formalism can hide.
+
+The [VIM measurement-principle account](https://jcgm.bipm.org/vim/en/2.4.html), GUM measurement-modeling work and the sensing sources discussed in PHY.9 connect the intended quantity, interaction, preparation and indication. PHY.9 uses that connection to construct a missing distinction; PHY.10 uses it to discriminate physical accounts. Merely improving the precision of an insensitive arrangement can leave that work undone.
+
+The statistical-mechanics synthesis by [Baldovin and colleagues](https://arxiv.org/abs/2411.08709) informs PHY.8's separation of physical preparation, collective statistics and time behavior. A useful stationary distribution need not describe an arbitrary transient. Its source discussion compares ensemble calculation, physical simulation and inference, retaining the conditions under which each supplies the needed result.
+
+The experimental-design and noise-spectroscopy sources in PHY.10 develop selection among possible observations and physical changes that expose hidden dynamics. They also bound their claims by the model set, noise account and controllable operations. The framework uses these contributions where they change the method; each body's SoTA discussion gives the adopted comparison and limits. A new source matters when it changes an available construction, a premise, a useful result or the work needed to obtain it.
+
+Within the Foundational Thinking DPF Suite, Mathematical Thinking supplies constructions and arguments; Mathematical Modeling connects a subject question with an interpreted model; Computational Thinking develops obtaining procedures; Notational Engineering develops interpretable expressions and operations on them. The Suite Reference explains their shared arrangement and current availability.
+
+C.29.1 supplies transfer between mathematical accounts, C.29.2 computational formulation, and C.29.3 the connection to physical execution. C.16.MR and C.16.IR supply measurement relations and inference from indications. B.5's inquiry methods and C.11.DUA help choose a useful next question and the effort worth spending on it. These results can enter directly; using a physical pattern does not require traversing every supplier.
+
+The ten bodies are one repertoire that can be used in different combinations. The two Parts group their presentation; they do not define two sequential stages or a single Method performed by every user.

@@ -31,7 +31,7 @@ The first useful result is a justified combining law with its applicable conditi
 ### A.9:4 - Solution — Select the Law Before Relying on Its Result
 
 1. **Name the intended result and operands.** State what the combination must mean, which inputs contribute and what operation is proposed. For reliability, distinguish joint success from alternative success. For a composed Method or function, retain the intended order and participant meanings.
-2. **Recover the subject model and conditions.** Identify dependence, overlap, interaction, grouping and numerical interpretation where they change the result. For quantities, also recover the Characteristic, Scale, units and measurement conditions. Use C.29 when the representation or its correspondence to the subject is unresolved; mathematical notation alone is not that correspondence.
+2. **Recover the subject model and conditions.** Identify dependence, overlap, interaction, grouping and numerical interpretation where they change the result. For quantities, also recover the Characteristic, Scale and any applicable units. Recover measurement conditions when measured values are used. Use C.29 when the representation or its correspondence to the subject is unresolved; mathematical notation alone is not that correspondence.
 3. **Select a justified law.** Use the direct domain source or Method that supports this operation for this result. Reuse its current applicability judgment when adequate. If no available law is justified, name the missing model or condition; do not pick a convenient average or a generic weakest-part rule.
 4. **Check the property needed by the current action.** A requested reorder needs an order-invariance claim; a repartition needs valid decomposition and recombination; a bound needs the model that warrants it. For a numerical reproducibility claim, state whether the use requires the same exact value, the same bits, or an error bound before accepting a regrouping. Use the applicable argument or warranted test under those conditions. The table below supplies possible questions, not a compulsory set of five checks.
 5. **Return the warranted answer and limit.** Apply the justified law, or return a supported bound, separate inputs or the exact missing/defeated premise. If a condition changes, withdraw only the conclusion that depended on it and recover the needed model. Pass an actual CHR measure fold to ULSAM when that mechanism use is current. Use B.3 only for a receiving claim that requires assurance.
@@ -73,7 +73,7 @@ For the additive construction, the singleton base case returns 2 from the one-el
 
 | ID | Requirement | Purpose |
 |---|---|---|
-| **CC-A9-1** | Name the intended result, inputs, operation, subject model, applicability conditions and justified law. Add Characteristic, Scale, units and measurement conditions for the quantitative branch. | Recover what the result means without excluding non-quantitative composition. |
+| **CC-A9-1** | Name the intended result, inputs, operation, subject model, applicability conditions and justified law. Add Characteristic, Scale and any applicable units for the quantitative branch; recover measurement conditions when it uses measured values. | Recover what the result means without excluding non-quantitative composition. |
 | **CC-A9-2** | Select only the property needed by the current action and supply its applicable argument or warranted test. Distinguish singleton identity from idempotence and repeated-source handling. | Avoid a compulsory universal algebra. |
 | **CC-A9-3** | Claim order or partition independence only under the actual model and recombination/numerical conditions. | Preserve lawful sequential or parallel composition. |
 | **CC-A9-4** | Use a weakest-part bound only for a result and dependency model that justify it; distinguish a bound from a calculated value. | Prevent both unsupported optimism and a false universal cap. |
@@ -82,9 +82,9 @@ For the additive construction, the singleton base case returns 2 from the one-el
 
 ### A.9:7 - Consequences
 
-The practitioner can explain why the chosen operation answers the actual question and what would defeat it. A combined result remains usable only while the stated model and conditions apply. Lawful reordering or repartitioning can support distributed calculation; it does not guarantee that independently developed Systems will integrate without other work.
+The practitioner can explain why the chosen operation answers the actual question and what would defeat it. A combined result remains usable only while the stated model and conditions apply. Lawful reordering or repartitioning can support distributed calculation.
 
-The cost is recovering the domain meaning, dependencies and any property required by the action. A sufficient existing law can make this cheap. When its basis is absent, a qualified bound or retained inputs preserves useful information and exposes the missing premise. New-whole recognition remains a separate B.2 decision.
+The cost is recovering the domain meaning, dependencies and any property required by the action. A sufficient existing law can make this cheap. When its basis is absent, a qualified bound or retained inputs preserves useful information and exposes the missing premise. Whole recognition uses A.1; use B.2 for a remaining whole-reidentification question.
 
 ### A.9:8 - Rationale
 
@@ -107,7 +107,7 @@ Checking only the needed property also keeps the burden proportionate. A request
 
 ### A.9:10 - Application situations
 
-Apply the method to an unresolved choice in resource combination, joint or alternative reliability, control composition, numerical regrouping or ordered Methods. Use the actual subject source for the intended result and its applicability; the examples establish no universal cross-scale guarantee or empirical performance benefit.
+Apply the method to an unresolved choice in resource combination, joint or alternative reliability, control composition, numerical regrouping or ordered Methods. Use the subject source for the intended result and its applicability.
 
 ### A.9:11 - SoTA-Echoing
 

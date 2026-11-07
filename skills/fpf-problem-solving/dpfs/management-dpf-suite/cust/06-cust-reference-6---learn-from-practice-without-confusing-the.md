@@ -1,0 +1,15 @@
+## CUST.Reference:6 - Learn from Practice without Confusing the Result Levels
+
+The field combines knowledge about customization and productization with practices that can correct that knowledge. Its recurring claims include the dependence of local results on their conditions; the relation between family invariants and variation; the work and support needed for repetition; the effect of volume, variety and time on burden; and the consequences of common changes for current obligations.
+
+Those claims guide the eight Methods. Their application, in turn, can expose a false or too-broad claim. Compare explanations of the contrary case, qualify what the evidence supports and revise the general claim or the method's conditions when warranted. This is different from quietly adding a customer-specific exception while leaving the general claim untouched.
+
+The characteristic of **CUST.1's result** is the coherence of repeatable customer commitments: the selected customer path, common contribution, delivery, resources and obligations fit together and can be reconstructed. The characteristic of **the discipline as a whole** is practice-constrained revisability of customization and productization knowledge: general claims and working Methods remain open to correction by qualified practice results. The first can hold for one case while the second fails.
+
+For example, a provider funds author assistance, protects old obligations and successfully completes each customer case. Yet it keeps asserting that package P alone is sufficient for independent delivery in every environment S. Every instance of necessary author help is classified as a local exception and cannot change the general claim or the standard method. The customer paths may be coherent; the knowledge–practice relation is only one-way.
+
+A different arrangement compares insufficient performer preparation, a package defect and an irreducible specialist contribution as explanations. It may qualify P as assisted provision in S, and independently usable only in a narrower S′ after adequate preparation. It changes the general statement and the corresponding delivery method while preserving supported customer work. That reciprocal correction is the field-level property.
+
+A single successful case does not establish the property for a whole practice community. A missing observation leaves its state unknown. An unresolved question can remain part of the discipline while it has a meaningful route to investigation and revision. Replacing a claim or Method need not create a different field when the governed customer/common relation and reciprocal correction remain. Removing that relation, or treating field evidence as incapable of revising general knowledge, alters that field boundary rather than merely one method.
+
+This field belongs within Management because its recurring decisions concern commitments, provision, resources and their reconsideration. Engineering, accounting and other external results contribute to those decisions without making their entire disciplines constituents of this one.

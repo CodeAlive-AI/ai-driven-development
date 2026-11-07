@@ -6,7 +6,7 @@
 
 ### F.0.2.RC:1 - Problem frame
 
-**Use this when.** A Method-description language claims to preserve useful source contributions, but you need to find out whether a user can actually recover the promised action, conditions and source basis. Use it again when a source or use changes and you must identify the affected repair without discarding supported work.
+**Use this when.** A Method-description language claims to preserve useful source contributions, but you need to find out whether a user can recover the promised action, conditions and source basis. Use it again when a source or use changes and you must identify the affected repair without discarding supported work.
 
 The working reader is a Method engineer maintaining a source-grounded description or pattern language. Begin with one promise: **which source contribution should a user be able to reconstruct for this action, and what would count as a consequential loss?**
 
@@ -16,7 +16,7 @@ The first useful result is one reconstruction answer: the contribution recovered
 
 A source-to-pattern map can appear complete because every chapter has a destination. Yet the language may omit a stop, merge rival Method accounts, lose an evidence limit or hide the material relation that makes a continuation usable.
 
-Refresh adds another risk. A changed source prompts either a complete rewrite or an unjustified claim that only one sentence is affected. Neither response follows the actual dependency. Earlier valid results can be erased merely because current source access changed, while a defeated premise can remain in use because its paragraph still exists.
+When a source changes, follow its dependencies to determine which claims need revision. A blanket rewrite can erase earlier valid results when only source access changed; a paragraph left in place can still carry a defeated premise.
 
 ### F.0.2.RC:3 - Forces
 
@@ -93,7 +93,7 @@ This constructed case starts with handbook H, edition 3, §4: “Reuse an earlie
 
 A candidate language has a “Reuse review” entry and cites H and L, but its body says only “reuse the prior review for display changes”. The destination map marks H §4 and L §2 as covered.
 
-Reconstruction finds the reusable action but not the qualification window or source-return stop. The topic is present; the promised decision is not fully recoverable. Return a description-content correction to the body carrying that answer. The correct narrower conclusion is that the action is recoverable while its conditions are missing, not that the entire language has failed.
+Reconstruction finds the reusable action but not the qualification window or source-return stop. The topic is present; the promised decision is not fully recoverable. Return a description-content correction to the body carrying that answer. The bounded result is that the action is recoverable while its conditions are missing.
 
 After repair, the body states the matching-claim/question/window condition and the local source stop. Repeat the same use: the reader can now distinguish permitted reuse from a recheck lacking its basis. This is a constructed content check, not a measurement of review effectiveness.
 
@@ -127,7 +127,7 @@ A coverage percentage can reward destinations while hiding a decisive lost stop.
 - The reconstruction tests actionable meaning, conditions, stops and source qualifications, not topic presence alone.
 - Unsupported additions and deliberate omissions are distinguished from missing promised content.
 - The result states its tested scope and evidence limits.
-- Every changed premise has an affected claim or an honest unresolved impact boundary.
+- Every changed premise has an affected claim or an unresolved impact boundary.
 - Preserved results retain their own supporting basis.
 - The repaired or narrowed use receives an affected reconstruction before closure.
 
@@ -145,7 +145,7 @@ A coverage percentage can reward destinations while hiding a decisive lost stop.
 
 Coverage becomes a challengeable claim about useful reconstruction. Source changes can lead to small, justified repairs while leaving supported work available.
 
-The cost is preserving the basis and dependence needed to make that judgment. Where those facts are absent, a wider recovery is the honest result. The Method saves work only when its localized return costs less than the repeated reconstruction it avoids.
+The cost is preserving the basis and dependence needed to make that judgment. Where those facts are absent, wider recovery is needed to establish the affected scope. The Method saves work only when its localized return costs less than the repeated reconstruction it avoids.
 
 ### F.0.2.RC:10 - Architectural Rationale
 

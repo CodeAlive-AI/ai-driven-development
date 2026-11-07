@@ -41,7 +41,7 @@ Formality is assessed on a named expression of an episteme's content. Establish 
 
 **F** names the formality assessment in an account that also uses G and R. It is not a globally ordered atomic `U.Characteristic`, and this pattern supplies no universal `U.Formality` value or `F0...F9` scale. The assessed subject is an exact claim, declaration, model or argument expressed by an episteme. State which parts and connecting inferences belong to that assessment.
 
-An ordinary assessment can be a sentence: “The budget condition has declared units, a typed variable and an explicit predicate; no derivation of its adequacy for the project is supplied.” That is enough when it answers the receiving question. For comparison, automation or repeated use, describe the selected expression properties and their values as a profile. The description remains an episteme; a reference such as `formalityRef` points to that assessment and its basis. This introduces no new root U-kind.
+An ordinary assessment can be a sentence: “The budget condition has declared units, a typed variable and an explicit predicate; no derivation of its adequacy for the project is supplied.” That is enough when it answers the receiving question. For comparison, automation or repeated use, describe the selected expression properties and their values as a profile. The description remains an episteme; a reference such as `formalityRef` points to that assessment and its basis.
 
 If a `CharacteristicSpace` is used, each assessed Characteristic has its own declared Scale and slot under A.18 and A.19. A profile is not one Coordinate containing several unnamed characteristics. Record missing or unknown assessments separately from values; unknown precision is not evidence of low precision. Keep the relevant calculus, assumptions and interpretation recoverable alongside the property assessments.
 
@@ -71,7 +71,7 @@ Express a formality requirement through what the recipient needs to do. “The i
 
 Normative content must make the expression conditions needed for its intended use recoverable. A suitable ordinary explanation can do this without a separate score, profile document or formal proof. A richer assessment is required when a comparison, assurance argument or automated consumer actually relies on it. Neither a satisfactory formality assessment nor a threshold result grants permission to act.
 
-Improving the expression changes the assessed content. Correcting an erroneous assessment can instead leave that content unchanged. When the receiving requirement changes, return to the property, formal apparatus, derivation or external support it actually needs; do not automatically raise every part of the expression.
+Improving an expression can change its assessed properties while preserving the episteme's claim content. Correcting an erroneous assessment can leave the expression unchanged. When the receiving requirement changes, return to the property, formal apparatus, derivation or external support it actually needs; do not automatically raise every part of the expression.
 
 #### C.2.3:4.5 - Assess and improve an expression
 
@@ -178,7 +178,7 @@ Constrained prose can stabilize interpretation and state acceptance or refusal c
 
 #### C.2.3:13.5 - Explicit predicates and constraints
 
-Typed entities, bound variables, units, domains and an interpretation make a predicate recoverable. The claim's consistency or consequence can then be examined under the declared semantics. A written formula with undefined symbols does not supply this contribution; an explicit predicate need not be executable or proved.
+Typed entities, bound variables, units where applicable, domains and an interpretation make a predicate recoverable. The claim's consistency or consequence can then be examined under the declared semantics. A written formula with undefined symbols does not supply this contribution; an explicit predicate need not be executable or proved.
 
 #### C.2.3:13.6 - Executable semantics
 
@@ -223,7 +223,7 @@ For repeated comparisons, use the same property meanings and conditions for ever
 #### C.2.3:14.3 - Typical improvements
 
 - Replace unstable terms with explicit definitions and consistent references when interpretation is blocked.
-- State a necessary acceptance condition as a predicate with its types, units and meaning when it must be evaluated or reasoned about.
+- State a necessary acceptance condition as a predicate with its types, applicable units and meaning when it must be evaluated or reasoned about.
 - Supply operational semantics when the result must be computed.
 - State the relations and obligations joining formal subsystems when the whole must be analysed.
 - Express the missing derivation when the result depends on a conclusion from premises, then obtain the checking evidence required for that use.
@@ -315,6 +315,6 @@ When the same expression properties and conditions still answer the receiving qu
 
 #### C.2.3:19.3 - Boundary to language-state facets
 
-This pattern does not redefine `U.ArticulationExplicitness`, `U.LanguageStateClosureDegree`, `U.LanguageStateAnchoringMode` or `U.LanguageStateRepresentationFactorBundle`. C.2.LS and its subordinate patterns govern those facets. A formality assessment can refer to their results when relevant, but must not relabel them as steps of one rigor scale.
+C.2.4 governs articulation explicitness, C.2.5 governs closure degree, C.2.6 recovers source and use claims, and C.2.7 governs the representation-factor readings. C.2.LS brings selected results together in an optional profile. A formality assessment can refer to these results when relevant, but must not relabel them as steps of one rigor scale.
 
 ### C.2.3:End

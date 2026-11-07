@@ -1,0 +1,11 @@
+## LDR.Use:1 - A worthwhile proposal with incompatible contributions
+
+The following is a constructed use of LDR.1, LDR.2, LDR.4 and the supplied answer construction. Its joint purpose and initial participation are already established; LDR.5 addresses the different starting condition in which they still need construction. It does not describe an observed organization or claim that these numbers apply elsewhere.
+
+Suppose three independent engineering communities want a monthly service in which practitioners bring a difficult evidence package, obtain a qualified diagnosis and leave with an actionable correction. The wider purpose is to help members develop their practice. The present leadership question is narrower: can the communities begin and continue a supported first service?
+
+A competent domain team has already designed the proposed diagnostic method and its acceptance conditions. Each case needs two hours of substantive integration and half an hour of a separate qualified acceptance decision. The case owner also needs to supply permitted material, attend the receiving conversation and perform any corrective engineering work. Those activities are part of the service arrangement; the two-and-a-half-hour figure does not include them.
+
+Four cases are proposed for the first month. The available joint specialist capacity is eight hours, of which two must remain for previously accepted work. Six hours remain for the new service. In this case, the pool's members are qualified for both integration and acceptance, and compatible windows permit a different specialist to accept each case from the one who integrated it. The available hours can therefore be allocated between those activities without losing the required independence. Four cases would require ten hours of the constrained specialist work, so the proposal is infeasible before considering the clients' correction work.
+
+The organizer uses LDR.1 to identify the missing contributions: a domain integration provider, qualified acceptance, client preparation, participant communication and a decision about scarce time. These are functions in the work, not five new jobs. Existing community coordinators can communicate the agreed terms; no common office is needed for that contribution.

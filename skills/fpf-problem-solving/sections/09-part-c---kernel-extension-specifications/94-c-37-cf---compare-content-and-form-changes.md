@@ -69,7 +69,7 @@ Ask the reader to obtain the first useful result, not to rate which document loo
 - the source returns needed to support or correct it; and
 - the observed burden when time, source openings, attempts or other relevant effort were actually recorded.
 
-When the question is how much selected structure the reader can extract, use [`C.2.8 U.ExtractableStructuralInformation`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c28---uextractablestructuralinformation--structure-this-reader-can-recover). Identify the expressed account, its publication form and the reader, with selected relations, correctness criterion, prior knowledge, operations, help, access and budget qualified for this comparison. A qualitative account of recovered and missing relations often suffices. A number needs a declared structural scale and fixed units or denominator, not counts of words or arrows.
+When the question is how much selected structure the reader can extract, use [`C.2.8 ExtractableStructuralInformation`](12-c-2-8---extractablestructuralinformation-structure-this-read.md). Identify the expressed account, its particular expression and the reader, with selected relations, correctness criterion, prior knowledge, operations, help, access and budget qualified for this comparison. A qualitative account of recovered and missing relations often suffices. A number needs a declared structural scale and fixed units or denominator, not counts of words or arrows.
 
 Keep a design estimate separate from an actual recovery observation or a mapped formal estimate. A response establishes recovery in that trial, not a maximum or population reliability. State what changed in content, what changed in expression, and what preparation, actual help or a source return supplied. Familiar relations can count; a reader's independent correction of false or absent instruction is not credited to the expression. Missing basis is not zero. A successful changed-condition return supports its own condition rather than increasing the original amount.
 
@@ -130,8 +130,8 @@ the surrounding language separates source allocation, coherence checking and rec
 three entries become one review procedure? This is a constructed comparison. The engineer knows ordinary
 procedures and can consult the complete framework, but has no private authoring notes.
 
-Use [A.3.2.DE](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a32de---describe-a-method-for-its-intended-use) for the claims describing the checking Method.
-[E.8.ML](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#e8ml---construct-a-pattern-language-for-connected-methods) supplies the different answer
+Use [A.3.2.DE](../05-part-a---kernel-architecture-cluster/30-a-3-2-de---describe-a-method-for-its-intended-use.md) for the claims describing the checking Method.
+[E.8.ML](../11-part-e---the-fpf-constitution-and-authoring-guides/21-e-8-ml---construct-a-pattern-language-for-connected-methods.md) supplies the different answer
 about the language arrangement: its entries serve independent questions, with different useful results and
 source returns. The existing arrangement is candidate A. The author proposes a shorter paragraph, B, and a
 table, C, for the same receiving question.
@@ -154,7 +154,7 @@ entries does not establish parts of one Method; a MethodDescription still concer
 Choose the entry for the missing result and return to the affected question and its basis. Grouping these
 entries does not establish parts of one Method; a MethodDescription still concerns its own admitted Method.
 
-**Make the comparison.** [C.37.CF](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c37cf---compare-content-and-form-changes) separates
+**Make the comparison.** [C.37.CF](94-c-37-cf---compare-content-and-form-changes.md) separates
 the available contrasts. B selects and rewrites content from A; A against B does not isolate a layout effect.
 C rearranges B's selected claims while retaining its common conditions. B against C can therefore address that
 presentation difference. The full E.8.ML account remains available for conditions or questions beyond this

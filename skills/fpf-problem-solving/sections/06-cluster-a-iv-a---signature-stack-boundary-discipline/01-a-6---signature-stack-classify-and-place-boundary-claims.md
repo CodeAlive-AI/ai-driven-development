@@ -3,112 +3,97 @@
 > **Type:** Architectural (A)
 > **Status:** Stable
 > **Normativity:** Mixed (normative only where explicitly marked; claim-classification semantics live normatively in A.6.B)
-> **Placement:** Part A → A.6.\* (cluster overview; coordinates A.6.0 / A.6.1 / A.6.3 / A.6.B / A.6.5 / A.6.6 / A.6.7)
 > **Builds on:** A.6.B for claim classification, A.6.0 and A.6.1 for declaration boundaries, A.7 for subject/description/carrier distinctions, and E.17.0/E.17 for view membership and publication.
-> **Purpose (one line):** Keep boundary claims evolvable by classifying each statement under the right layer of the Signature Stack and the right quadrant of the Boundary Norm Square (A.6.B).
 >
 > **Local terminology:** “Signature Stack”, “Boundary Discipline Matrix”, and “Claim Register” name authoring aids. **L/A/D/E** classify statements; they are not MVPK face designators or pattern IDs.
 >
-**Canonical companion.** The square itself (quadrant definitions, form constraints, and cross‑quadrant dependency discipline) is specified normatively in **A.6.B — Boundary Norm Square**. This overview only (i) maps quadrants onto the Signature Stack, and (ii) explains how MVPK faces project the canonical L/A/D/E-classified claim set. If anything in this overview conflicts with A.6.B, **A.6.B is authoritative**.
+**Governing classification.** A.6.B defines the Boundary Norm Square, its quadrant conditions and cross-quadrant dependencies. This overview maps those claims to declaration, consequence/evidence and publication positions.
 
 **Use this pattern when.** Use A.6 when a boundary package, API, protocol, contract, compliance statement, SLO/SLA, connector, interface, or publication boundary mixes definitions, admissibility predicates, duties, evidence, and work effects into one account.
 
-**What goes wrong if missed.** Boundary prose starts doing too many jobs at once: invariants are read as permissions, permissions as duties, evidence as gate passage, and publication faces as the governed boundary object.
-
 **What this buys.** The project gets an L/A/D/E-classified claim set with source references and stack placement. Material dependencies name the source claim by ID or canonical location, so work, reliance, evidence, commitment, and gate uses can return to their subject patterns; publication faces cite the same claims.
 
-
-**First output.** One or more atomic L/A/D/E-classified claims, with stack placement and references for material dependencies.
-
-**Boundary-claim activation discipline.** Use only as much claim-classification structure as the live work claim or reliance claim requires. Split a statement only where one sentence carries more than one claim kind, `relationFunctionClaimRef` or `authoritySourceRef`, or work or reliance consequence, or where evidence, gate, duty, assurance, work occurrence, P2W class, admissible work, or admissible reliance would otherwise remain ambiguous. For a local first-pass repair, ordinary atomic prose suffices; a two-to-four-row scratch table may help. Use a persistent Claim Register when stable claim references are needed for reuse, publication, audit, release, cross-context use, or reliance by `A.15`, `A.10`, `B.3`, `A.21`, `A.20`, `A.2.8`, `A.2.8.PER`, `A.2.9`, or `A.15.1`. Do not atomize ordinary modifiers when one `relationFunctionClaimRef` or `authoritySourceRef` and one work or reliance consequence are already clear.
+Use as much classification structure as the work or reliance claim needs. Split a statement when different claim kinds, governing bases, participants or consequences would otherwise remain ambiguous. Ordinary atomic prose can suffice. Keep existing stable claim references; use a Claim Register when it helps maintain the references needed for reuse, publication or reliance. Modifiers that leave one coherent claim need no separate entries.
 
 **Typical neighboring subject patterns and authority-reference repairs.** `A.6.B` for the quadrant semantics, `A.6.C` for contract unpacking, `A.6.P`, `C.16.Q`, or `A.6.A` for lexical repair, and `E.17` faces for audience-specific publication of the same decomposed claim set.
 
 **Common neighboring-pattern mistakes.** If the real object is still cue preservation or an early unresolved cue, use `A.16` or `A.16.1`; if a qualified relation, quality term, or action invitation is itself being repaired, apply `A.6.P`, `C.16.Q`, or `A.6.A`; if duties, commitments, promise content, work effects, and evidence are being mixed into one contract sentence, split them through `A.6.B` and `A.6.C` rather than minting one more undifferentiated contract paragraph.
 
-**Causal/deontic split.** In “deploy because it would reduce harm”, `C.28` decides what the causal evidence supports; A.6.B separately classifies the boundary claims. If any atomic claim is permission-looking, choose one `A6-AW-*` row below. A causal-use record supplies none of those boundary claims.
+**Causal and authority claims.** In “deploy because it would reduce harm”, C.28 determines what the causal evidence supports; A.6.B separately classifies the boundary claims. Select an `A6-AW-*` row for each permission-looking claim. Causal support alone leaves permission, duty and gate claims to their own bases.
 
 **Authority-word branch (subordinate boundary-claim stress case).** When “approved”, “allowed”, “authorized”, “permitted”, or similar wording matters to action or reliance, choose one row by the claim being made—not by the visible word. These `A6-AW-*` labels are local claim-routing IDs, not new kinds.
 
 | Branch ID | Ask this plain question | Placement and subject pattern | Stop / near-miss |
 | --- | --- | --- | --- |
 | `A6-AW-NORM-GRANT` | Does an exact policy prescribe an action, does one actual bearer have that duty, or may a named beneficiary perform one under stated conditions? | **D**: `A.2.8` for a generic prescription or, when separately instituted, one `U.Commitment`; `A.2.8.PER` for one `GrantedPermissionRelation@Context`, including beneficiary, action, scope/window, and policy-valid A.2.9 instituting act. | A policy sentence may state a generic prescription but by itself establishes neither an individual commitment nor a grant. |
-| `A6-AW-GATE` | Does the sentence state a mechanism entry predicate, or claim one actual A.21 decision for a bounded action? | **A** for the A.6.1 entry predicate; **E** for an exact A.21 `GateDecisionResult` with its bounded action, profile application, complete required `GateCheckApplicationResult` set, decision value, consequence, scope/window, and recheck condition. | Split predicate and result into separate atomic claims. A checked grant or finding is an input; neither it nor a displayed carrier proves passage. |
+| `A6-AW-GATE` | Does the sentence state the admission predicate for a named action or application, or claim one actual A.21 decision for a bounded action? | **A** for the entry predicate under its governing admission rule; **E** for an exact A.21 `GateDecisionResult` with its bounded action, profile application, complete required `GateCheckApplicationResult` set, decision value, consequence, scope/window, and recheck condition. | Split predicate and result into separate atomic claims. A checked grant or finding is an input; neither it nor a displayed carrier proves passage. |
 | `A6-AW-EXERCISE` | Did this dated Work match the beneficiary and action of a current grant? | **E**: A.15.1 for the Work and `A.2.8.PER PermissionExerciseRelation@Context` for exercise. | A grant, plan, or green gate does not show that Work occurred or exercised it. |
 | `A6-AW-WEAK` | Did a current, sufficiently complete frame find no prohibition before action or no violation in actual Work? | **E**: the exact A.2.8.PER `NonProhibitionFinding@Context` or `NonViolationFinding@Context`. | A stale or incomplete frame returns `unresolved`, not permission. |
 | `A6-AW-CONFLICT` | Do a current grant and norm cover the same case, and has a rule or authorized decision selected the outcome? | **E**: `A.2.8.PER PermissionNormConflictFinding@Context` and its applicable rule or current resolution result. | A system-role kind, assignment, office, permit, or gate label alone leaves the conflict `unresolved`. |
-| `A6-AW-SOURCE` | Does the sentence only say that a permit, badge, registry entry, message, or carrier exists, displays, or supports a claim? | **E** for the A.10 evidence claim; **L** only for a definition; keep the exact publication or carrier pattern. | A visible source is not a grant, gate, exercise, weak finding, or conflict resolution. |
+| `A6-AW-SOURCE` | Does the sentence only say that a permit, badge, registry entry, message, or carrier exists, displays, or supports a claim? | **E** for an observed publication or carrier fact, or an evidence-support claim; **L** for a definition. For evidence support, follow A.6.B:5.4. Recover publication or carrier identity when it matters to the claim. | A visible source alone leaves the separate grant, gate, exercise, finding or resolution claim unestablished. |
 
-**Concrete API/credential case.** A dashboard badge saying “API-7 approved for production” starts at `A6-AW-SOURCE`. It reaches `A6-AW-NORM-GRANT` only if a named policy-valid act instituted a current grant for a beneficiary and deployment action; the admission endpoint is separately `A6-AW-GATE`. Do not claim `A6-AW-EXERCISE` until a dated deployment Work occurrence matches that grant.
+**Concrete API/credential case.** The observation that a dashboard badge displays “API-7 approved for production” is an `A6-AW-SOURCE` claim. A separate claim that a current grant permits a beneficiary to deploy the API belongs under `A6-AW-NORM-GRANT`; establishing it requires a current grant instituted by a named policy-valid act for that beneficiary and deployment action. Classify the entry predicate or actual admission decision separately under `A6-AW-GATE`. Claim `A6-AW-EXERCISE` only when a dated deployment Work occurrence matches that grant.
 
 When agreement-like wording leaves an ambiguity that changes interpretation or use, use `A.6.C` to separate promise content, the instituting speech act, governance, Work, consequence, and evidence. For “recommended”, use A.16/A.6.A for a cue, `A6-AW-GATE` for an entry criterion, or A.2.8 only for recommendation-as-duty. Before action or reliance, return to the exact governing claim. Use A.15.4 while appearance hides the required prerequisite; use A.15 when the question is enactment alignment.
 
-
-**Credential-currentness boundary.** Use A.10 to determine which claims a displayed credential's source and evidence support for the bounded use. Recover issuer, holder, verifier, status and currentness where they matter. Treat the display as `A6-AW-SOURCE`; move to another row only when that row's direct object and ground are independently present.
-
-**Register-backed status boundary.** A pass, dashboard cell, API response, or certificate view may be only a publication of a register entry. Start at `A6-AW-SOURCE`; if the governing entry has institutional force, select the one row whose object it actually creates or changes and cite that row's subject pattern. Otherwise keep only source-finding or currentness support under A.10.
+**Credential and register use.** Recover issuer, holder, verifier, status and currentness where they change the claim. A displayed register entry may have institutional force under its governing rule; in that case identify the object created or changed under the corresponding `A6-AW-*` row. Use A.2.4 for a first evidence-use or status-use classification and A.10 when a replayable source-to-use account is needed, rather than treating every display as an evidence relation.
 
 **Conflicting-source boundary.** When a classified boundary claim disagrees with its governing source or a display, resolve the source order, decision source, freshness policy and supersession rule. Until then, keep cue use or source-finding available; allow a bounded reversible probe only on its own adequate basis, without relying on the unsupported claim.
 
-
-
 **Boundary and source repair assignment.** If the split exposes a missing claim or source, give the claim ID or canonical location, or the selected `A6-AW-*` branch to the identified boundary or source maintainer. Keep cue use or source-finding available. A bounded reversible probe needs its own adequate basis; the missing source still blocks the unsupported Work or reliance use.
 
-
-**Recurring boundary ambiguity repair.** If the same wording repeatedly needs the same split, repair the boundary package: replace the misleading label, identify the L/A/D/E claims by ID or canonical location, and cite the source for the selected `A6-AW-*` branch. Repetition is a source defect, not a normal per-use burden.
-
-Display guidance for boundary wording: a publication face, API page, or credential display should identify the relevant L/A/D/E claims by ID or canonical location and the source for the selected `A6-AW-*` branch. If it cannot, keep the wording at `A6-AW-SOURCE` or repair the boundary package.
+**Recurring ambiguity.** When a misleading boundary statement repeatedly causes the same ambiguity, repair its source and affected displays. Recover the L/A/D/E claims and their references so each reader need not reconstruct the same missing distinction.
 
 For an incident-learning use, record the displayed phrase, intended Work or reliance use, unsupported claim or effect, missing or ambiguous L/A/D/E claim ID or canonical location, required source, plausible overread, safe disposition and upstream repair. Retain source, currentness and supersession references only where they change that case.
 
-**Conventions:** The key words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, **MAY**, and **SHALL** are to be interpreted as in RFC 2119/8174. Lower-case `must`, `may`, and `should` in explanatory prose is descriptive, not normative.
+**Conventions:** The key words **MUST**, **MUST NOT**, **SHOULD**, **SHOULD NOT**, **MAY**, and **SHALL** are interpreted as in RFC 2119/8174 only when written in capitals.
 
 **Statement identifiers (recommended):** Adopt the quadrant‑prefixed ID scheme from **A.6.B:0** for classifiable statements:
 `L-*` (law or definition), `A-*` (admissibility gate), `D-*` (deontic or commitment), `E-*` (effect or evidence).
 Other sections and faces **SHOULD** cite the canonical claim ID or location. Face prose may explain or faithfully paraphrase the claim without creating another specification.
-IDs are intended to be “lintable” identifiers (and are especially useful when D‑duties enforce A‑gates or E‑claims). Consider pairing IDs with a lightweight Claim Register (A.6.B:7) to reduce paraphrase drift across faces.
+Stable IDs are useful when a duty or evidence claim refers to an entry predicate. Use the Claim Register in A.6.B:7 when it helps maintain those references across faces.
 **Non-collision note (informative):** The `A-*` prefix here is “Admissibility”, not Part‑A numbering and not MVPK’s `AssuranceLane` face designator. If this is a readability hazard in your program, prefer an explicit `G-*` (“Gate”) local convention while keeping the quadrant name “Admissibility”.
 
-**Admissibility-predicate distinction (informative):** An `A-*` claim is a mechanism admissibility predicate or entry condition inside the L/A/D/E-classified boundary claim set. It is not an A.21 `GateDecisionResult`, `GateCheckApplicationResult`, optional `GateCheckRef`, optional `DecisionLog`, or proof that a gate passed. An `A-*` claim may name conditions consumed by a later A.21 profile application; actual passage is a separate `E-*` claim about the exact `GateDecisionResult`. An A.20 `ConstraintValidity` witness remains separate from the predicate, each check application, and the gate result.
+**Admissibility-predicate distinction (informative):** An `A-*` claim is an admission predicate for a named action or application under its governing rule inside the L/A/D/E-classified boundary claim set. It is not an A.21 `GateDecisionResult`, `GateCheckApplicationResult`, optional `GateCheckRef`, optional `DecisionLog`, or proof that a gate passed. An `A-*` claim may name conditions consumed by a later A.21 profile application; actual passage is a separate `E-*` claim about the exact `GateDecisionResult`. An A.20 `ConstraintValidity` witness remains separate from the predicate, each check application, and the gate result.
 
-**Claim Register (informative, recommended).** When a Claim Register is useful, use the mini-record in **A.6.B:7**. It can record stack placement (Signature, Mechanism, Norms, and Evidence) and the face designators that cite each claim. Add `viewRef`/`viewpointRef` only when the corresponding episteme identities matter. Mechanical checks can test ID resolution and exact text copying; inspect meaning for paraphrase drift.
+**Claim Register (informative, recommended).** When a Claim Register is useful, use the mini-record in **A.6.B:7**. It can record stack placement (Signature, Admission, Norms, and Evidence) and the face designators that cite each claim. Add `viewRef`/`viewpointRef` only when the corresponding episteme identities matter. Mechanical checks can test ID resolution and exact text copying; inspect meaning for paraphrase drift.
 
 ### A.6:1 - Problem frame
 
-Boundaries are where architecture lives: at the edge of a theory, an API, a protocol, a hardware connector, an organisational interface, or a published model. FPF already has the core building blocks to describe such edges:
+At an API, protocol, hardware connector, organizational interface or published model, a reader needs to distinguish the declaration from the conditions of use and what actually occurred. FPF supplies these contributions:
 
 * `U.Signature` as a *public, law‑governed declaration* (with Vocabulary, Laws, Applicability).
 * `U.Mechanism` as a reusable operation declaration with OperationAlgebra, LawSet, AdmissibilityConditions and Applicability.
 * Multi-view describing through E.17.0 `MultiViewDescribing`, plus separate E.17 publication discipline for selected epistemes, face uses, forms, and carriers.
 * Recover each claim's **EntityOfConcern** separately from its claim-bearing **Description episteme** and any **publication carrier**. The concern may itself be an episteme or carrier; its position does not establish agency, Work, evidence, or a decision.
 
-Yet boundary descriptions in practice fail in a predictable way: authors blend several fundamentally different kinds of claims into one undifferentiated contract paragraph. The result is brittle architecture: signatures become entangled with runtime gates, deontic language is mixed into mathematical invariants, and “effects” are asserted without any disciplined carrier and evidence story.
+A boundary account can blend these claims into one contract paragraph. Then a signature can acquire an unstated entry gate, a mathematical invariant can be read as a duty, or an effect can be asserted without its actual basis.
 
-This cluster overview makes one disciplined move:
+Connect the contributions in two steps:
 
-1. Treat a boundary as a **stack of boundary layers** (Signature → Mechanism → actual occurrences and their separately governed consequences/evidence) plus publication views and faces, and
-2. Provide a **boundary discipline matrix** (2×2) that classifies statements by boundary layer, so evolution remains controlled and substitutions are possible.
+1. Distinguish declaration layers from claims about occurrences and their consequences or evidence, and from publication uses.
+2. Classify each boundary claim through A.6.B and place it where its governing content can be maintained and reused.
 
 *Terminology note (informative):* In this pattern:
-* **Layer** names a stratum in the boundary stack (Signature → Mechanism → actual occurrences, separately governed consequences/evidence → Publication).
+* **Layer** names a position in the account: Signature, Admission, governance, consequence/evidence or Publication. Actual occurrences remain the subjects of claims rather than parts of their description.
 * **View** (`U.View`) is the same C.2.1 episteme individual when E.17.0 conformance to at least one exact viewpoint episteme obtains; it is not a projection operation, publication file, or document.
 * **Viewpoint** (`U.Viewpoint`) is the same C.2.1 episteme individual when the fixed E.17.0 viewpoint-convention conditions obtain; its accountability use does not replace those membership conditions.
 * **Face** (MVPK sense) is a publication form for a bounded reader/use. `PlainView`, `TechCard`, `InteropCard`, and `AssuranceLane` are face designators, not additional `publication-face kind` values. A face may expose an episteme that independently has `U.View` membership; the form, rendering and carrier remain separate from that episteme.
 
 ### A.6:2 - Problem
 
-When boundaries are described without an L/A/D/E claim-classification discipline, four confusions dominate:
+The following confusions change the interpretation or use of a boundary claim:
 
-1. **Laws vs admissibility.** Authors encode runtime gate predicates as “laws”, or write invariants using RFC‑style deontic verbs, blurring “what is true or defined” with “what is allowed to be applied”. FPF explicitly separates these: operational guard predicates belong to mechanisms (A.6.1), not signatures (A.6.0).
-   *Common mistake #0 — Applicability ≠ Admissibility (informative):* Signature `Applicability` scopes declared admissible use and bounded context; it is not a runtime entry gate. Runtime entry checks belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. Such a predicate may consume the direct object selected by one `A6-AW-*` row as input, but it neither creates that object nor proves gate passage. A generic prescription states what one exact policy or other normative episteme requires; it does not create an individual duty bearer or commitment occurrence. A claim that one actual System or separately governed party has that duty instead cites one separately obtaining A.2.8 `U.Commitment`. Either branch can reference the `A-*` gate by ID or canonical location without becoming the gate.
+1. **Laws vs admissibility.** Authors encode runtime gate predicates as “laws”, or write invariants using RFC‑style deontic verbs, blurring “what is true or defined” with “what is allowed to be applied”. FPF explicitly separates these: admission predicates use the canonical source of their governing rule, including A.6.1 for mechanism applications; they do not belong in `U.Signature.Laws`.
+   *Common mistake #0 — Applicability ≠ Admissibility (informative):* Signature `Applicability` scopes declared admissible use and bounded context; it is not a runtime entry gate. A mechanism's runtime entry predicates belong in `U.Mechanism.AdmissibilityConditions` as `A-*`. Such a predicate may consume the direct object selected by one `A6-AW-*` row as input, but it neither creates that object nor proves gate passage. A generic prescription states what one exact policy or other normative episteme requires; it does not create an individual duty bearer or commitment occurrence. A claim that one actual System or separately governed party has that duty instead cites one separately obtaining A.2.8 `U.Commitment`. Either branch can reference the `A-*` gate by ID or canonical location without becoming the gate.
 
 2. **Admissibility vs deontics.** `MUST`, `SHOULD`, `MAY`, and authority-looking words do not reveal whether a statement is a duty, one `A6-AW-*` permission branch, or an entry predicate. Classify the claim by its job; neither the word, selected subject pattern, nor kind of direct object decides the quadrant.
 
 3. **Contract talk category errors.** If “the interface promises…” leaves a consequential ambiguity about the claim or its participant, use A.6.C to recover it before treating the wording as an agency error. Use A.2.3 for promise content, A.2.9 for the instituting speech-act Work, A.2.8 and A.2.8.PER for the commitment or grant, and A.15.1 only to identify the dated Work occurrence. An application result, production, delivery/transfer, acceptance, and evidence use each follows its own row in `A.15.1:4.6` and is omitted when that claim is absent. F.18 only names recovered terms when durable naming is current.
 
-4. **Effect claims without an actual occurrence.** A description, diagram, log, or metric can state or support an effect claim, but none creates the effect. Ground the actual occurrence first. Use `U.Work` only when each exact actual performer has its A.13 core and A.15.1 independently identifies the Work, Method, time, and containing System. Add F.6 only when the receiving boundary claim expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact. Use A.3 and A.3.4, or the pattern that defines the interaction or causal claim, for natural, spontaneous, formal, or other non-Work change. Then name the observation and A.10 evidence path needed for reliance.
+4. **Effect claims without an actual occurrence.** A description, diagram, log or metric can state or support an effect claim. Establish the actual occurrence under its subject pattern. Use the Work conditions in 4.1 when a dated Work is claimed; natural, spontaneous or formal change can use A.3.4 without a Work claim. Name any observation used as evidence and obtain the support needed by the receiving use through A.6.B:5.4.
 
-These confusions destroy evolvability: you cannot swap implementations behind a stable signature if the signature already smuggles mechanism gates, audit logistics, individual commitments, or assignment-based applicability conditions into “laws”.
+These confusions can defeat substitution behind a stable signature: an implementation change may unexpectedly alter a hidden gate, duty or evidence requirement. Make each applicable constraint recoverable under its own claim.
 
 ### A.6:3 - Forces
 
@@ -116,39 +101,38 @@ These confusions destroy evolvability: you cannot swap implementations behind a 
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Modularity vs expressiveness**             | A stable boundary must be abstract, but users want operational detail “in the same doc”.                                                                           |
 | **Truth condition vs governance content** | Whether the sentence states what is true or observed, or states a prescription, individual duty, prohibition, commitment, or grant; visible RFC words and the selected subject pattern do not decide this axis. |
-| **Design‑time clarity vs run‑time evidence** | What can be checked statically vs what requires executing work and observing traces.                                                                               |
+| **Declared conditions and actual facts** | Some claims are settled from definitions; others require actual observations or evaluations under their subject predicates. |
 | **View, viewpoint, and construction discipline** | A view is an episteme satisfying exact viewpoint conformance; a viewpoint is an exact convention-bearing episteme; optional A.6.3 construction and publication remain different relations. Losing any distinction makes omissions and provenance uninterpretable. |
 | **Local meaning vs cross‑context reuse** | Boundaries keep meaning local ↔ cross-context reuse needs its actual correspondence and bounded-use basis. Use an F.9 Bridge only for two exact local senses when its predicate obtains; `CL` is optional evidence shorthand. |
-| **Evolvability vs auditability**             | Evolving interfaces requires change; auditors require stable evidence trails.                                                                                      |
+| **Evolvability vs auditability**             | Auditors require stable evidence trails across interface revisions.                                                                                      |
 | **Human readability vs formal precision**    | Plain explanations vs tech‑register constraints; both must remain aligned.                                                                                         |
 
 ### A.6:4 - Solution — A stack + a classification matrix
 
 #### A.6:4.1 - Why “stack”: what is stacked, and what “higher and lower” means
 
-This pattern uses **stack** in the same pragmatic sense as other FPF stacks (e.g., the holonic import stack and other layered disciplines): an ordered set of layers where **higher layers are more stable commitments**, and **lower layers are more volatile realizations and evidence**. “Higher” and “lower” provide **engineering guidance for evolvability**:
+The **Signature Stack** orders reusable boundary declarations and the more use-specific claims that depend on them. Its purpose is to allow a realization or evidence arrangement to change while preserving the declarations and constraints that its use still requires. “Higher” and “lower” name this relation:
 
 * **Higher in the stack** = closer to *public, reusable boundary intent*.
 * **Lower in the stack** = closer to *execution, implementation, and evidence* (what is actually done and observed).
 
-
-The **Signature Stack** (as used in this cluster) is the ordered family of **canonical claim layers** for a boundary package. Each of the four claim layers below is a stable canonical placement for one quadrant of statements (L/A/D/E), with a canonical boundary publication form or section that carries those statements:
+The first four positions below classify boundary claims; the final two distinguish their actual subjects and publication uses:
 
 1. **Signature layer (L: laws or definitions).** `U.Signature` provides the stable declarative boundary: Vocabulary + Laws + Applicability, without runtime gate predicates.
 
-2. **Mechanism layer (A: admissibility gates).** `U.Mechanism` specializes `U.Signature` through the operation declarations, LawSet, AdmissibilityConditions and Applicability governed by A.6.1. Its admission predicates remain declaration content. Evidence-interface declarations and transport details keep their own claim classification; use A.10 for evidence sources and carriers, and name carrier-producing Work only when that occurrence is claimed.
+2. **Admission layer (A: entry and application conditions).** State when a named action or application is admitted under its governing rule. Mechanism applications use `U.Mechanism.AdmissibilityConditions`; A.21 gates use the applicable profile rule. `U.Mechanism` specializes `U.Signature` through the operation declarations, LawSet, AdmissibilityConditions and Applicability governed by A.6.1. Its admission predicates remain declaration content. Evidence-interface declarations and transport details keep their own claim classification; use A.10 when a replayable source-to-use account is needed, and name carrier-producing Work only when that occurrence is claimed.
 
-   *Audit vs AssuranceLane (avoid duplication):* a boundary's local **Audit and observability** section states its evidence-interface declarations: carrier classes and required fields, correlation keys, and exposure interface. `Mechanism.AuditObservability` below is a local publication-section locator, not an A.6.1 content component. **Retention, access, and enforcement are D-claims**. A general prescription remains a claim-bearing episteme; one obtaining individual duty cites the exact A.2.8 `U.Commitment`, its actual bearer, and its direct predicate. A system-role kind or assignment may be an applicability ground but is neither bearer nor commitment. An MVPK **AssuranceLane** is a publication face for auditors that explains how to adjudicate the evidence interface. Under CC-A.6.6, the `AssuranceLane` face references those evidence-interface declarations and relevant claim IDs or canonical locations; its explanation preserves their semantics.
+   *Audit vs AssuranceLane (avoid duplication):* a boundary's local **Audit and observability** section states its evidence-interface declarations: carrier classes and required fields, correlation keys, and exposure interface. `Mechanism.AuditObservability` below is a local publication-section locator, not an A.6.1 content component. **Prescriptions or claims about individual duties concerning retention, access or enforcement are D-claims**. A general prescription remains a claim-bearing episteme; a claim about one obtaining individual duty cites the exact A.2.8 `U.Commitment`, its actual bearer, and its direct predicate. A system-role kind or assignment may be an applicability ground but is neither bearer nor commitment. An MVPK **AssuranceLane** is a publication face for auditors that explains how to adjudicate the evidence interface. Under CC-A.6.6, the `AssuranceLane` face references those evidence-interface declarations and relevant claim IDs or canonical locations; its explanation preserves their semantics.
 
 3. **Deontic layer (D: duties, commitments, and grants).** Put here a general prescription or a claim about an exact individual duty, recommendation-as-duty, prohibition, commitment, or `A6-AW-NORM-GRANT`. For an individual duty, cite the exact A.2.8 `U.Commitment`, actual bearer, constitutive rule, required instituting basis, and direct predicate. Test any responsibility claim separately through its domain predicate or return the exact missing governor. Other `A6-AW-*` claims keep their own placement. Reference related `L-*`, `A-*`, or `E-*` claims by ID or canonical location rather than duplicating their constraints.
 
-4. **Observable-effects and evidence layer (E: Work-Effects & Evidence).** `E-*` is the boundary's observable-effect and evidence claim family. Each claim names the actual occurrence or evaluated finding under its subject pattern and, when reliance is current, the observation conditions and A.10 evidence path. Name `U.Work` only after A.13 recovers each exact actual performer and A.15.1 independently identifies the Work, Method, time, and containing System. Add F.6 only when the receiving boundary use expressly consumes precise assignment-bound attribution; its absence or failure leaves the Work intact. A natural, spontaneous, or formal transformation may instead use A.3 and A.3.4. Canonical placement is an Evidence-and-carriers section, typically rendered in `AssuranceLane`.
+4. **Observable-effects and evidence layer (E: Work-Effects & Evidence).** Each E claim names the actual occurrence or evaluated finding under its subject pattern and the observation/evidence basis needed by its receiving use. The subject may be Work under the conditions below, or a natural, spontaneous or formal change. When the publication uses separate sections, place the claim in Evidence-and-carriers; it may also be presented in an `AssuranceLane`.
 
-5. **Actual occurrences and realizations (outside the description stack).** Substitutable realizations are exercised through dated Work only when each actual performer has its A.13 core and A.15.1 independently admits the occurrence. Add F.6 only when the receiving description also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact. Work may participate in change, production, speech-act effect, evaluation, or evidence production, but each relation or claim must be established under the pattern that defines or constrains it. A.3 and A.3.4 also admit natural, spontaneous, and formal transformations without a performer, assignment, Method, or Work occurrence.
+5. **Actual occurrences and realizations (outside the description stack).** Substitutable realizations are exercised through dated Work only when each actual performer has its A.13 core and A.15.1 independently admits the occurrence. Add F.6 only when the receiving description also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 alone does not overturn independently admitted Work. If the attribution finding questions a premise consumed by Work admission, recheck that premise and the dependent claims. Work may participate in change, production, speech-act effect, evaluation, or evidence production, but each relation or claim must be established under the pattern that defines or constrains it. A.3 and A.3.4 also admit natural, spontaneous, and formal transformations without a performer, assignment, Method, or Work occurrence.
 
 6. **Publication faces.** MVPK selects exact epistemes and publication forms for audience-specific face uses. A selected episteme has `U.View` membership only when E.17.0 conformance to the exact viewpoint episteme obtains; any A.6.3 source-to-receiving construction remains separate. The face designator, publication occurrence, form, rendering, and carrier are not the `U.View`.
 
-*Observability compatibility note (informative):* When specifying evidence carriers and correlation rules, it is often convenient to describe evidence-carrier classes using examples from observability practice: traces and spans, logs and log records, and metrics time-series, with explicit correlation identifiers. Treat these as example *carrier schemas and join keys*, not as mandatory technology choices.
+When specifying evidence carriers and correlation rules, traces/spans, logs/log records and metric time series provide examples of carrier schemas and join keys. Choose the forms needed by the evidence claim.
 
 ##### A.6:4.1.1 - AssuranceLane skeleton (informative)
 
@@ -161,7 +145,7 @@ Minimal content (suggested):
 - **Operational policies:** references to relevant `D-*` duties (retention, access control, exposure), without redefining them.
 - **Limitations:** sampling, redaction, missing signals, expected false negatives and false positives.
 
-**No new semantics reminder.** An `AssuranceLane` may explain adjudication informatively, but any new boundary claim first enters its canonical source. A changed permission-looking claim cites its selected `A6-AW-*` row and subject pattern rather than being introduced inside the face.
+An `AssuranceLane` explains adjudication. Add a new boundary claim to its governing source before using it in that face; a permission-looking claim still needs its selected `A6-AW-*` object and basis.
 
 Example (conceptual; uses view/viewpoint identity and the additional hypothetical header case in §4.2):
 
@@ -189,32 +173,31 @@ The absence condition also covers a request that was not rejected. A claim of co
 Default placements (quadrant → stack layer / section):
 
 * **L →** Signature.Laws (and, where appropriate, mechanism‑local semantic laws; never runtime gates)
-* **A →** Mechanism.AdmissibilityConditions
+* **A →** the canonical source of the governing admission rule; use `Mechanism.AdmissibilityConditions` for mechanism applications and the applicable profile rule for A.21 gates
 * **D →** generic prescriptions, individual duties or commitments, recommendations-as-duty, prohibitions, and `A6-AW-NORM-GRANT` claims at their exact A.2.8 or A.2.8.PER subject pattern
 * **E →** actual occurrences, evaluated findings, and evidence claims, including `A6-AW-EXERCISE`, `A6-AW-WEAK`, `A6-AW-CONFLICT`, and `A6-AW-SOURCE` when those claims are current
 
 **Related subject rules (informative):**
-* **A.6.1 ↔ A‑quadrant:** `U.Mechanism.AdmissibilityConditions` is the canonical claim layer for `A-*` gate and admissibility claims.
-* **A.10 / B.3 ↔ E‑quadrant:** for an `E-*` claim used for reliance, recover the A.10 evidence-provenance path and bounded use. A missing path narrows or blocks only the unsupported use. Open B.3 only for an actual named assurance claim about an exact target and assurance use.
-* **A.2.3 and F.12 ↔ D/E separation:** a `U.PromiseContent` promise is not evidence; promise acceptance is linked to Work evidence via F.12. A general duty remains normative content, while an obtaining individual duty is one A.2.8 `U.Commitment` borne by an actual System or other admitted party. Any system-role kind or assignment used to establish applicability stays separate. `D-*` claims reference `A-*` and `E-*` claims by ID or canonical location when needed.
+* **A.6.1 ↔ A‑quadrant:** `U.Mechanism.AdmissibilityConditions` is the canonical source for `A-*` admission predicates of mechanism applications.
+* **A.10 / B.3 ↔ E‑quadrant:** when an `E-*` claim needs a replayable source-to-use account, recover its A.10 evidence-provenance path and bounded use. A missing required path narrows or blocks only the unsupported use. Open B.3 only for an actual named assurance claim about an exact target and assurance use.
+* **A.2.3 and F.12 ↔ D/E separation:** a `U.PromiseContent` states the promised outcome and acceptance criteria; F.12 evaluates fulfilment using Work evidence. A general duty remains normative content, while an obtaining individual duty is one A.2.8 `U.Commitment` borne by an actual System or other admitted party. Any system-role kind or assignment used to establish applicability stays separate. `D-*` claims reference `A-*` and `E-*` claims by ID or canonical location when needed.
 
- A stack is useful because the intended direction of change is clear:
+This placement supports change through the actual dependencies:
 
-* Lower layers (realizations, audit formats, transport mechanisms) are expected to change more frequently and can often evolve without forcing higher‑layer changes, provided higher‑layer commitments remain satisfied.
-* Changes to higher layers are boundary-claim evolution and typically require explicit compatibility reasoning (and therefore explicit versioning and communication).
+* A realization, audit format or transport mechanism can change while the boundary declarations remain valid, provided their applicable constraints are still satisfied.
+* A changed declaration requires reconsidering the uses that depend on it and communicating any consequential compatibility or version change.
 
 #### A.6:4.2 - Boundary Discipline Matrix: classify by A.6.B (the Boundary Norm Square)
 
-**Normative source.** The canonical 2×2 square (the two A.6.B distinctions, quadrant semantics, form constraints, and cross‑quadrant reference rules) is defined in **A.6.B**. This section provides a short operational summary and worked rewrites only.
+A.6.B defines the matrix and cross-quadrant reference rules. Use the following summary to classify a claim and the examples to distinguish a source clause from added case assumptions.
 
-The **2×2 matrix** crosses **two independent distinctions**:
+The matrix distinguishes four jobs in a boundary account: defining meaning, declaring admission conditions, stating normative content or a deontic position, and reporting occurrences or evidence. Classify the exact claim by that job, then recover the conditions that settle it under A.6.B.
 
-* **Modality family:** truth-conditional versus governance content. For permission-looking wording, the selected `A6-AW-*` row states which side applies; A.2.8.PER membership alone does not.
-* **Adjudication substrate:** in‑description vs in‑work (whether satisfaction is decided from the description alone or requires observing executed work and carriers).
+A declared admission predicate and its evaluation have separate jobs: the predicate is A; a particular evaluation result is E. D includes both generic normative content and a claim about an individually obtaining duty or grant, with different grounds for each. These distinctions let the same subject appear in several connected claims. The selected `A6-AW-*` row supplies the corresponding permission-word distinction. Actual evaluation or observation does not require inventing Work for a non-Work change.
 
 Operational summary (quadrant → canonical claim layer in the stack):
 * **L** (Laws & Definitions) → `Signature.Laws` (truth‑conditional semantics, in‑description)
-* **A** (Admissibility & Gates) → `Mechanism.AdmissibilityConditions` (runtime entry predicates; a predicate may consume an exact grant or finding selected by `A.6.B:8.4.1`, but it neither creates nor resolves that object)
+* **A** (Admissibility & Gates) → the canonical source of the governing admission rule: `Mechanism.AdmissibilityConditions` for mechanism applications; the applicable profile rule for A.21 gates. A predicate may consume an exact grant or finding selected by `A.6.B:8.4.1`, but it neither creates nor resolves that object.
 * **D** (Deontics) → generic-prescription or individual-duty A.2.8 claims and `A6-AW-NORM-GRANT`
 * **E** (Work-Effects & Evidence) → actual-occurrence, evaluated-finding, and evidence claims, including the applicable E-side `A6-AW-*` row
 
@@ -224,21 +207,12 @@ If a sentence mixes logical jobs, for example “MUST” plus a gate predicate p
 
 Micro‑template: **Atomize → Classify → Place → Identify EntityOfConcern → Register when useful**
 
-1. **Split** the sentence into atomic claims, one logical job each.
+1. **Split when needed:** separate claims that perform different logical jobs.
 2. **Assign** each claim to exactly one quadrant (L/A/D/E) using the matrix.
-3. **Place** each claim into its correct section or publication form (stack layer + section).
+3. **Place** each claim in its canonical claim layer; use a separate section or publication form when the receiving use needs it.
 4. **Anchor A.7:** name what each claim is about, separately from the episteme carrying it. Add publication and carrier relations when they change interpretation. For permission-looking wording, bind the direct object and participants required by the selected `A6-AW-*` row; the selected subject pattern or kind of direct object never supplies the quadrant.
 5. **Register when useful:** add the atomic claim to the Claim Register if used. Downstream faces cite the claim by ID or canonical location and preserve its meaning in any explanation.
 
-Action outputs after classification:
-
-- implement or repair an admissibility predicate when the claim being made is `A-*`;
-- repair the exact normative source for a generic D claim, the actual duty bearer and A.2.8 result for an individual D claim, or the direct object named by the selected permission row;
-- recover the exact actual occurrence, evaluated finding, or evidence path named by an E claim; use the selected E-side `A6-AW-*` row when permission wording is current;
-- publish or update an MVPK face that cites L/A/D/E claims by ID or canonical location and explains them faithfully where its readers need prose;
-- reopen the exact subject pattern when the classified statement is used beyond boundary wording; the selected `A6-AW-*` row names the permission-side subject pattern;
-- downgrade the visible wording to cue use or source-finding only when the exact source is missing;
-- narrow the unsupported Work or reliance claim; allow a local or reversible use only on its own adequate basis and stated stop condition, or block the unsupported use while its source is repaired.
 
 > **Informative example.** Example rewrite (mixed → atomic):
 
@@ -303,7 +277,7 @@ Recover the approval's direct object and ground under the applicable `A6-AW-*` r
 * `D-API-1` (Quadrant D): the exact provider policy prescribes maintaining or enforcing `A-API-1` under the named window and exclusions. If the claim is instead that one actual provider or operator bears this duty, cite its separately instituted A.2.8 commitment.
 * `E-API-1` (Quadrant E): the named evaluation reported rollback success under its stated success criterion. Possible evidence inputs include the named work traces, audit records, or metrics. A gate decision carrier may support the exact gate-passage claim; rollback execution needs its own occurrence and evidence basis.
 
-In this additional case, `A-API-1` applies `A6-AW-GATE`, while an approval badge remains `A6-AW-SOURCE` unless another row's closing facts are present. The original production approval and safe-rollback guarantee remain unresolved. A success result alone does not establish the unspecified safety claim.
+In this additional case, `A-API-1` applies `A6-AW-GATE`. The observation of the approval badge is an `A6-AW-SOURCE` claim; any further approval claim needs separate classification and grounds. The original production approval and safe-rollback guarantee remain unresolved. A success result alone does not establish the unspecified safety claim.
 
 For a filled grant/exercise/evidence case and its near-misses, use `A.6.B:8.4.5.4`. It applies `A6-AW-NORM-GRANT`, `A6-AW-EXERCISE`, and the separate A.10 evidence claim by value.
 
@@ -317,7 +291,7 @@ Then:
 - if release, deployment, rollback, or execution Work is asserted, cite the exact A.15.1 dated occurrence; then use only the applicable `A.15.1:4.6` row for an application result, A.15.PROD production branch, delivery/transfer relation, evaluation/acceptance relation, or A.10 evidence path. None is an intrinsic Work field;
 - if the phrase is only an action invitation or cue, keep it in `A.6.A`, `A.16`, or `A.16.1` according to the current kind.
 
-Policy engines, credentials, registers, provenance, and attestations can supply policy decisions, source claims, currentness, or evidence. Start a visible permit, badge, or registry value at `A6-AW-SOURCE`; move to another branch only when its named direct object and participants are independently established.
+Policy engines, credentials, registers, provenance, and attestations can supply policy decisions, source claims, currentness, or evidence. Classify the observation of a visible permit, badge or registry value under `A6-AW-SOURCE`. Classify any further claim by what it asserts and check the required grounds for its named direct object and participants.
 
 #### A.6:4.3 - View membership needs exact viewpoint conformance
 
@@ -330,25 +304,25 @@ A disciplined stack therefore requires:
 * Per **E.17** (“no new semantics”), a face **MUST NOT** introduce a new semantic commitment or any new object or claim selected through `A6-AW-*`. A face **MAY** add informative explanation, examples, and cross-references that preserve the source claims. Normative face prose cites the canonical L/A/D/E claim ID or location and direct object; it may faithfully paraphrase the claim. Add any new boundary claim to its canonical source before publishing it on a face. Use verbatim text when exactness is critical or disputed.
 * Per **E.17** and **publication-face and publication-form discipline** (face‑kind closure), a publication package that claims MVPK alignment **MUST NOT** mint additional MVPK face kinds (e.g., “EvidenceCard”, “NormsCard”) as if they were first‑class kinds; if you need local headings, keep them as sections within the selected faces.
 
-#### A.6:4.4 - “Contract” unpacking: avoid assigning agency to epistemes
+#### A.6:4.4 - Recover the separate claims in contract wording
 
 When “the API contract” leaves a consequential ambiguity, use **A.6.C** to ask only the live questions: what was promised, what was said or instituted, what governance position obtains, and what actually happened. Use `A.15.1:4.6` to separate any dated Work from the result, production, delivery/transfer, evidence, or acceptance claims actually made. Clear wording, including a semantic guarantee or recoverable ordinary metonymy, needs no unpacking record.
 
 * **Promise content (promise content; `U.PromiseContent`, A.2.3):** what is promised to be made available to eligible consumers — **a promise, not execution** (`U.Work`).
-* **Utterance package (published descriptions + instituting act):** what is said and published and versioned (signature or mechanism descriptions plus MVPK faces), plus the `U.SpeechAct <: U.Work` that published or approved it when provenance matters (A.2.9).
+* **Utterance and publication:** identify what is stated and published in the boundary descriptions or faces. Identify any actual speech-act Work under A.2.9 when that occurrence or its instituting effect is claimed; publication alone does not establish such an act.
 * **Commitment (individual deontic relation; `U.Commitment`, A.2.8):** whether one actual admitted System or other party is obligated, recommended-as-duty, or prohibited from doing something under an exact constitutive rule and required instituting basis. A system-role kind or assignment may help satisfy that rule's applicability conditions; neither is the duty bearer or the commitment relation. A commitment does not establish responsibility, which needs its own direct domain predicate or an exact missing-governor result.
 * **Permission-looking claim:** do not make `Permission` a bundle part or quadrant. Select one `A6-AW-*` row for each atomic claim and cite its direct object.
-* **Performed Work (`A.15.1`):** whether one dated Work occurrence happened, who performed it, which Method it enacted, when it happened, and within which System. Recover each exact performer through A.13 and admit the Work independently through A.15.1. Only when the receiving account expressly consumes precise assignment-bound attribution, recover the exact A.2.1 assignment independently and let F.6 check its link to the Work through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and a failed or absent result does not revoke Work. This claim supplies no result, delivery, or acceptance by itself.
+* **Performed Work (`A.15.1`):** identify the dated occurrence, performer, Method, time and containing System using the conditions in 4.1. Precise assignment-bound attribution is the separate F.6 claim when needed; its absence or failure does not revoke the Work.
 * **Result or consequence (`A.15.1:4.6` dispatch):** only when current, name the exact A.6.1 application/result binding or subject-specific `WorkResultRelation`, A.15.PROD production branch, A.3.4 change, evaluation result, delivery/transfer relation, or acceptance relation.
 * **Evidence (`A.10`):** only when a receiving use relies on one of those claims, name the claim-bound evidence path and carrier.
 
 In A.6 terms:
 
-* The **signature** is the *utterance substrate* for the boundary; it is not itself a promiser or obligor (A.7).
+* The **signature** supplies the boundary's declared vocabulary, laws and applicability; it is not itself a promiser or obligor (A.7).
 * Deontic claims use A.2.8 for generic prescriptions or separately obtaining individual duties and commitments, and `A6-AW-NORM-GRANT` for the current norm/grant branch. Other permission-looking claims keep the placement and object named by their selected row.
 * Classify each atomic operational “guarantee” claim as **L** (truth-conditional law), **A** (entry predicate), **D** (generic prescription, individual commitment, or current grant), or **E** (actual exercise, evaluated result, work effect, or measured property with evidence).
 
-**Compact optional-object replay.** `SVC-DEPLOY-1` states promise content. Admitted system `ReleaseManager-4` performs `SA-4711 : U.SpeechAct` under `ReleaseManager-4@ReleaseShift`; the exact policy may institute `COM-4711 : U.Commitment` or `PER-4711 : GrantedPermissionRelation@Context`. Later admitted system `Operator-7` performs `DeployRun-4711 : U.Work` under its covering assignment. If the application returns `ReleaseArtifact-4711`, cite the exact A.6.1 result binding or an already governed `WorkResultRelation`; if that artifact is delivered, cite a separately obtaining transfer relation defined by its subject pattern; if acceptance is claimed, cite the criterion, evaluation Work/result, and acceptance relation. An A.10 path may support whichever one of those claims is relied on. Omit every absent object: the Work can occur without a result, delivery, acceptance, or evidence-use claim.
+**Compact optional-object replay.** `SVC-DEPLOY-1` states promise content. Admitted system `ReleaseManager-4` performs `SA-4711 : U.SpeechAct` under `ReleaseManager-4@ReleaseShift`; the exact policy may institute `COM-4711 : U.Commitment` or `PER-4711 : GrantedPermissionRelation@Context`. Later admitted system `Operator-7` performs `DeployRun-4711 : U.Work` under its covering assignment. If the application returns `ReleaseArtifact-4711`, cite the exact A.6.1 result binding or an already governed `WorkResultRelation`; if that artifact is delivered, cite a separately obtaining transfer relation defined by its subject pattern; if acceptance is claimed, cite the criterion, evaluation result, and acceptance relation; identify dated evaluation Work only when the claim depends on that occurrence. An A.10 path may support whichever one of those claims is relied on. Omit every absent object: the Work can occur without a result, delivery, acceptance, or evidence-use claim.
 
 Use **A.6.C — Contract Unpacking for Boundaries** for the expanded account and the same `A.15.1:4.6` dispatch.
 
@@ -365,7 +339,7 @@ The `A.7 primary layer` field below identifies the claim's EntityOfConcern, with
 | `L-1` | “`op f` is **defined iff** `P(x)` holds.” | L | Signature → **Laws** (`Definition:`) | Operation `f`; the relation of `x` to `f` is unresolved |
 | `L-2` | “For all requests, `idempotencyKey` is **unique** per subject.” | L | Signature → **Laws** (`Invariant:`) | Requests' `idempotencyKey` values; the request population and `subject` are unresolved |
 | `A-1` | “The mechanism may be applied only if `tokenValid`.” *(rewrite as predicate: `admissible(req) implies tokenValid(req)`)* | A | Mechanism → **AdmissibilityConditions** (entry gate) | Entry predicate `admissible(req) implies tokenValid(req)` |
-| `A-2` | “A request is admissible only if header `X` is present.” | A | Mechanism → **AdmissibilityConditions** | Request-entry predicate requiring header `X` |
+| `A-2` | “A request is admissible only if header `X` is present.” | A | Mechanism → **AdmissibilityConditions** (mechanism entry case) | Request-entry predicate requiring header `X` |
 | `D-1` | “Client implementers **MUST** satisfy `A-2`.” | D | Norms-and-commitments: a general prescription unless one exact A.2.8 individual commitment and actual bearer are also identified; reference the gate by ID or canonical location | Normative rule requiring client implementers to satisfy `A-2` |
 | `D-2` | “Authors **MUST** publish a versioned MVPK face for this boundary.” | D | Conformance Checklist and publication norms (authoring plane) | Normative rule requiring authors to publish this boundary's versioned MVPK face |
 | `D-3` | “Operators **SHOULD** rotate keys every 90 days.” | D | Norms: state the prescription; if an individual duty is claimed, identify its actual bearer, direct A.2.8 predicate, and any separately obtaining system-role assignment used only for applicability | Normative rule recommending that operators rotate keys every 90 days |
@@ -386,29 +360,35 @@ Notes:
 
 These are *writing diagnostics*, not tool requirements.
 
-- **RFC keyword inside Definition, invariant, or admissibility predicate** → classification error (rephrase as predicate; move obligation to `D-*`).
+- **An RFC keyword is used as an obligation operator inside a Definition, invariant or admissibility predicate** → separate the D obligation from the L/A claim; write the definition or entry condition as a predicate.
 - **`E-*` with no exact actual occurrence or evaluated predicate, or with a carrier but no evidence relation for the claimed use** → incomplete effect/evidence claim. Ground Work through A.15.1 only when it actually obtains; otherwise use A.3/A.3.4 or the exact interaction or causal-use pattern. A carrier supports the claim but does not create the effect.
 - **`D-*` that re-states an `A-*`/`L-*` predicate instead of citing its ID or canonical location** → drift risk (prefer “MUST satisfy `A-…`”).
 - **A face introduces new L/A/D/E content not present in the canonical claim set** → view-fork. Recover the direct object and classify the new claim—duty/commitment/grant in D; exercise/evaluated finding/evidence in E; gate in A—then add it to its canonical source before face publication. Informative commentary may explain existing claims without adding boundary semantics.
 - **“The system or service SHALL …” where the phrase does not name a direct behavior claim, general prescription, or exact individual commitment with its actual bearer and constitutive basis** → unresolved subject and modality. Recover the System or other party, state an actual `E-*` behavior claim separately only when its actual basis is supplied, and state either the normative content or the direct A.2.8 commitment. A service label, system-role kind, or assignment proves none of these claims.
 
-### A.6:5 - Archetypal Grounding (Tell–Show–Show; System / Episteme)
+#### A.6:4.7 - Use the claim dependencies to judge a boundary change
+
+Start with the receiving use: which clients, operations and observations must continue to work, under which conditions? Read the existing boundary claims and the proposed change against that use. The stack makes the different constraints findable; compatibility depends on their content and connections.
+
+1. **Recover what the receiver relies on.** Include the meaning of inputs and results, admitted inputs, relevant interaction order and state changes. Add a duty, grant or evidence requirement when this use depends on it. Preserve the conditions and exceptions attached to each claim.
+2. **Identify what changes.** Distinguish changing a definition, an admission condition, normative content, an implementation or an observation method. A change can affect several of these. Use the claim references to follow the consequences to the receiving use, including an A predicate that consumes a current D grant or E finding under A.6.B:6.4.
+3. **Compare the old and proposed behavior in that use.** For a replacement offered to existing clients, determine whether previously admitted inputs remain admitted and whether the results, interactions and state changes still satisfy the old claims. When representations differ, state the correspondence used for this comparison. A stronger entry condition can exclude an old valid call; a weaker result condition can remove a property its client needs. Preserving a protocol or mutable state also requires its own sequence or history conditions.
+4. **Establish the affected claims on their own grounds.** A declaration comparison can establish a conditional compatibility argument. Claims about an actual implementation, obtained grant, observed result or retained evidence need their corresponding grounds. A changed telemetry format can leave the operation semantics intact while breaking the auditor's ability to check a result.
+5. **Choose and communicate the continuation.** Preserve the old boundary, adapt the receiver or supply an adapter with a justified correspondence, or expose a changed contract and its affected uses. Reuse unaffected claims and evidence while their conditions hold. Keep an unresolved compatibility premise explicit.
+
+Use the smallest description that carries these dependencies. For one operation whose meaning and use are already clear, its existing preconditions, postconditions and invariants can supply the comparison. A protocol specification can carry the interaction constraints; a policy and its evaluation interface can carry an authorization decision. Add the L/A/D/E organization where connected semantic, admission, governance and evidence claims otherwise obscure what a change affects. The labels organize those claims; the relevant contract, protocol, policy or subject Method supplies the actual preservation test.
+
+### A.6:5 - Archetypal Grounding
 
 > **Informative.** Worked examples for learning the L/A/D/E claim-classification discipline; they do not add requirements beyond A.6:7.
 
+#### A.6:5.1 - Apply the same classification to different boundary subjects
 
+The two cases below distinguish declaration, admissibility, governance and actual effect or evidence claims. Classification determines where a claim belongs; its subject pattern determines whether the claimed object or relation obtains. Keep that object distinct from the episteme stating the claim and its publication carrier.
 
-#### A.6:5.1 - Tell (universal rule)
+#### A.6:5.2 - Payment-processing System and its API boundary
 
-
-To support boundary evolvability, separate claims across the signature stack and classify each statement as Law, Admissibility, Deontic duty/commitment/grant, or the boundary's observable-effect/evidence family. An E claim names the exact actual occurrence under its subject predicate and retains the pattern only as a locator: dated Work only when the A.15.1 predicate is satisfied, or A.3/A.3.4 plus the exact interaction or causal predicate for non-Work change. EntityOfConcern, description, and publication carrier remain separate.
-
-
-
-#### A.6:5.2 - Show #1 (`U.System`): effectful API boundary (algebraic effects intuition)
-
-
-**System:** A “Payment Authorize” service.
+**System:** the payment-processing System supplying the “Payment Authorize” service.
 
 * **Signature layer (A.6.0).**
 
@@ -420,7 +400,7 @@ To support boundary evolvability, separate claims across the signature stack and
 
   * Admissibility gate: request is admissible iff `tokenValid ∧ merchantActive ∧ amountWithinLimit`.
   * Boundary transport details: HTTP headers and idempotency-key carriage. Declare canonical currency-conversion operations under A.6.1.
-  * The local Audit and observability section specifies required evidence carriers (e.g., `AuthorizationRecord` event, log entry) and their fields, correlation IDs and retention class. Retention duties remain D-claims.
+  * The local Audit and observability section specifies required evidence carriers (e.g., `AuthorizationRecord` event, log entry) and their fields, correlation IDs and retention class. Retention prescriptions and claims about individual retention duties remain in D.
 
 * **Actual occurrence and work layer.**
 
@@ -434,24 +414,25 @@ To support boundary evolvability, separate claims across the signature stack and
   * InteropCard: machine‑exchange oriented boundary details (canonical field names, schema refs, transport bindings).
   * AssuranceLane: evidence bindings (which carriers exist, how to adjudicate `E-*` claims, retention and access duties by reference).
 
-**Effects-and-handlers analogy.** In this software example, the signature exposes the operation interface. A.6.1 governs declared operation semantics and the separate realization relation; the realizing entity supplies the concrete handler implementation. Implementations can change while preserving the declared operation meanings and applicable constraints.
+**Effects-and-handlers analogy.** In this software example, the signature exposes the operation interface. A.6.1 governs declared operation semantics and the separate realization relation; the realizing entity supplies the concrete handler implementation. An effect interface can have handlers with different behavior. For a substitutable realization here, compare that behavior with the declared operation meanings and applicable constraints.
 
 **Classification example:**
 
 * “A request is admissible iff `tokenValid ∧ merchantActive ∧ amountWithinLimit`” belongs in Quadrant A (the declared admissibility gate).
-* “Clients MUST include Idempotency-Key” belongs in Quadrant D as a normative prescription and should reference the same gate semantics to avoid divergence. It becomes a claim about one obtaining individual `U.Commitment` only after A.2.8 identifies the actual bearer, constitutive rule, required instituting basis, and direct predicate.
-* “System emits AuthorizationRecord” belongs in Quadrant E (an actual event-emission claim).
+* “Clients MUST include Idempotency-Key” is a D prescription. If an admission rule also requires that header, reference that rule’s predicate; the three-condition predicate above does not include it. An obtaining individual `U.Commitment` additionally needs the actual bearer, constitutive rule, instituting basis and direct predicate under A.2.8.
+* “System emits AuthorizationRecord” is ambiguous between a generic emission rule and an actual event report. Only the actual-event reading belongs in E, with its occurrence basis supplied; the wording alone does not choose that reading.
 
+**Changing this API.** Suppose the proposed replacement keeps the fields and the three-condition admission predicate above, but changes `APPROVED` to mean only that a request was queued. Apply §4.7 to an existing client that relies on the stated reservation law. That law is no longer met at the response, so preserving the message type is insufficient for this replacement. Keeping `APPROVED` for an actual reservation preserves this particular claim; introducing `PENDING` requires an explicit protocol and changed client handling. Other compatibility conditions remain to be checked.
 
+Alternatively, suppose the replacement adds `hasHeader(Idempotency-Key)` to the admission predicate. The existing D prescription already requires that header, but the old A predicate admits requests without it. For clients promised the old admitted-input set, the added condition is a restriction. For a use explicitly limited to requests that already carry the header, this particular restriction excludes no additional input. The compatibility conclusion therefore names the receiving population. Changing only the `AuthorizationRecord` schema instead returns to its consumers and evidence links; it need not change either the reservation law or admission rule.
 
-#### A.6:5.3 - Show #2 (`U.Episteme`): published evaluation protocol boundary (multi‑view + evidence)
-
+#### A.6:5.3 - Published evaluation protocol
 
 **Episteme:** A published “Model Evaluation Protocol” for a safety‑critical classifier.
 
 * **Signature layer:** names operations such as `Evaluate(model, dataset) → Report` and states metric definitions (AUROC, calibration error) as Laws. A.6.1 governs the corresponding operation declaration and its argument/result meanings.
 
-* **Mechanism layer:** admissibility gate encodes when evaluation is permitted: dataset version must match declared license; measurement environment must meet constraints; seeds pinned.
+* **Mechanism layer:** the entry predicate requires the declared dataset/license condition, measurement-environment constraints and pinned seeds. Classify a separate institutional permission claim under its own `A6-AW-*` branch when one is made.
 
 * **Deontics and commitments:** the protocol may prescribe that reviewers use dataset vX.Y and that authors publish MVPK faces and cite the measurement environment. If an organisation has an individual review-SLA duty, identify that actual admitted System or other A.2.8 party as bearer and establish the direct `U.Commitment` predicate. Any system-role classification or assignment remains a separate possible applicability ground.
 
@@ -466,21 +447,20 @@ To support boundary evolvability, separate claims across the signature stack and
   * InteropCard for exchange-oriented consumers: conceptual field names, anchors, and schema references.
   * AssuranceLane for auditors: evidence map (which carriers support which occurrence claims) and adjudication steps keyed by `E-*` IDs.
 
-This episteme is a boundary because it mediates between theory (“metric definitions”) and work (“a run produced a report”). The signature stack provides the stable interface for that mediation.
+This protocol description connects metric definitions with conditions for an evaluation and interpretation of its report. The signature stack keeps those claims available to their different uses.
 
 ### A.6:6 - Bias-Annotation
 
-
-* **Arch bias:** Biases toward separation of concerns and explicit layering; mitigated by allowing multiple faces so audiences are not forced into the same amount of detail.
-* **Ontological and Epistemic bias:** Treats signatures and mechanisms as epistemes that must not be conflated with work.
-* **Gov bias:** Prefers auditable responsibility (viewpoint accountability and commitment unpacking).
+* Explicit classification can make a small repair needlessly elaborate. Use a register or additional publication face only when the receiving work needs it.
+* Software examples can suggest that all effects are Work. The seedling case keeps non-Work change available, while each actual Work claim retains its own admission conditions.
+* An audit-oriented description can emphasize carriers over what happened. Establish the occurrence or finding and then the evidence relation needed for reliance.
 
 ### A.6:7 - Conformance Checklist
 
 | ID                                       | Requirement                                                                                                                                                                                                                                                                                    | Purpose                                                             |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| **CC‑A.6.1 (Stack declaration).** | A conforming boundary description **SHALL** identify Signature, Mechanism, actual-occurrence, consequence/evidence, and Publication placements. A dated Work claim **SHALL** remain separate from any application result, production, change, delivery/transfer, evidence, or acceptance claim selected through `A.15.1:4.6`. | Prevents one “work and evidence” layer from recreating intrinsic outputs. |
-| **CC‑A.6.2 (Square discipline).** | A conforming boundary description **SHALL** classify each atomic claim by its own modality and adjudication position. Every permission-looking claim **SHALL** cite one selected `A6-AW-*` row and that row's direct object; the selected subject pattern or kind of direct object alone never sets the quadrant. | Makes one actionable choice replace repeated permission catalogues. |
+| **CC‑A.6.1 (Stack declaration).** | A conforming boundary description **SHALL** identify placements for the claims it makes, distinguishing declaration, mechanism, governance, actual-occurrence/consequence/evidence and publication uses when present. A dated Work claim **SHALL** remain separate from any application result, production, change, delivery/transfer, evidence, or acceptance claim selected through `A.15.1:4.6`. | Preserves the distinct claims without requiring absent objects or intrinsic Work outputs. |
+| **CC‑A.6.2 (Square discipline).** | A conforming boundary description **SHALL** classify each atomic claim by its job and recover its own adjudication conditions under A.6.B. Every permission-looking claim **SHALL** cite one selected `A6-AW-*` row and that row's direct object; the selected subject pattern or kind of direct object alone never sets the quadrant. | Makes one actionable choice replace repeated permission catalogues. |
 | **CC‑A.6.5 (Actual-occurrence, description, and carrier separation).** | An `E-*` claim **SHALL** identify the exact actual occurrence or evaluated finding under its subject pattern and **SHALL NOT** infer Work merely because change or a carrier exists. Any carrier used for reliance **SHALL** enter the exact evidence relation. | Preserves non-Work change and blocks carrier-as-effect errors. |
 | **CC‑A.6.6 (Viewpoint accountability).** | Every published MVPK face use **SHALL** identify the selected episteme and bounded reader/use. When `U.View` membership or viewpoint identity is used, the face **SHALL** identify the exact `viewpointRef`. `U.View` membership still requires E.17.0 conformance. Normative face content **MUST** cite canonical L/A/D/E claims by ID or canonical location and name their direct objects; meaning-preserving prose may explain them. Face content **MUST NOT** introduce a new commitment or any new object or claim selected through `A6-AW-*`. | Preserves viewpoint discipline without letting a publication face create governance or permission claims. |
 | **CC‑A.6.6a (MVPK face‑kind discipline).**  | A publication that claims MVPK alignment **MUST** use E.17’s declared `publication-face kind` values: **publication face/form** and **interop publication form**. `PlainView`, `TechCard`, `InteropCard`, and `AssuranceLane` are face designators, with profiles selected under E.17. A publication **MUST NOT** mint additional MVPK face kinds. Local “cards” may exist only as headings or sections inside the selected faces. | Aligns with MVPK and publication-face or publication-form discipline; prevents new‑face drift.            |
@@ -492,15 +472,15 @@ This episteme is a boundary because it mediates between theory (“metric defini
 
 | Anti‑pattern                   | Symptom                                                         | Why it fails                                                                     | How to avoid / repair                                                                        |
 | ------------------------------ | --------------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| **Gate‑as‑law**                | Preconditions written as “laws” in the signature                | Breaks substitution; violates A.6.0’s separation of signature vs mechanism gates | Move predicates to Mechanism.AdmissibilityConditions; keep signature laws truth‑conditional. |
-| **RFC‑keywords in invariants** | “MUST” appears inside `Definition:` blocks                      | Confuses deontics with mathematical admissibility; undermines auditability       | Rewrite as declarative predicate; reference predicates by ID or canonical location from CC when needed.               |
+| **Gate‑as‑law** | Preconditions written as “laws” in the signature | Confuses signature laws with admission conditions | Move predicates to the canonical source of their governing admission rule; for mechanism applications, use `Mechanism.AdmissibilityConditions`. Keep signature laws truth‑conditional. Assess behavioral compatibility by the conditions and outcomes in §4.7. |
+| **RFC‑keywords in invariants** | “MUST” is used as an obligation operator inside a `Definition:` block                      | Confuses deontics with mathematical admissibility; undermines auditability       | Rewrite as declarative predicate; reference predicates by ID or canonical location from CC when needed.               |
 | **Paraphrase drift** | Same constraint restated across faces with changed meaning | Creates hidden divergence; breaks L/A/D/E claim-classification discipline and evidence accountability | Cite claim IDs or canonical locations and preserve their meaning in readable face prose. Use a Claim Register when stable reuse needs it. |
 | **Interface-as-promiser and Work-result bundle** | “The interface promises delivery” assigns an individual commitment to the interface description, or “A.15.1 delivered the result” identifies Work with its result | A description is made an agent, while Work, result, transfer, evidence, and acceptance lose their own identity conditions | Name the actual bearer of the individual commitment; use A.6.C when ambiguity about promise, utterance, or governance changes interpretation or use. Use A.15.1 for dated Work; then exactly one applicable `A.15.1:4.6` row for each separate result, delivery, evidence, or acceptance claim. |
-| **Carrier-as-effect guarantee** | “Guaranteed latency” or “the log proves the change” with no exact actual occurrence and evidence relation | A description or carrier is treated as creating Work, change, or another effect; natural or formal change may also be forced into Work | Name the actual occurrence first: A.15.1 for grounded Work, A.3/A.3.4 or the exact interaction or causal-use pattern for non-Work change; then add the minimum A.10 path needed for reliance. |
+| **Carrier-as-effect guarantee** | “Guaranteed latency” or “the log proves the change” with no exact actual occurrence and evidence relation | A description or carrier is treated as creating Work, change, or another effect; natural or formal change may also be forced into Work | Name the actual occurrence first: A.15.1 for grounded Work, A.3/A.3.4 or the exact interaction or causal-use pattern for non-Work change; then obtain needed evidence support through A.6.B:5.4. |
 | **Face called a view by form** | A face, diagram, query result, or publication form is called `U.View` without exact E.17.0 conformance | Appearance or construction history replaces the dependent-kind condition | Recover the exact candidate and viewpoint epistemes, test E.17.0 conformance, and keep optional A.6.3 construction and publication relations separate. |
 | **Unresolved deontic subject** | “The system or service SHALL …” is used without deciding whether the sentence states behavior, a general prescription, or an obtaining individual commitment. | The phrase hides the actual subject, constitutive basis, and direct predicate; a system-role kind or assignment may be mistaken for the duty bearer or for responsibility. | Recover the exact admitted System or other party; state an actual `E-*` behavior claim separately only when its actual basis is supplied; then state either normative content or one direct A.2.8 commitment. Test responsibility independently. |
-| **One‑doc monoculture**        | Same document mixes unclassified laws, gates, duties, and evidence           | Change impact is hard to isolate; updates can affect unrelated claim kinds                            | Use the stack: separate Signature, Mechanism, Norms, and Evidence sections; classify by matrix.           |
-| **Authority-word overread** | “Allowed”, “approved”, or a visible permit is treated as a complete authorization result | The word hides which claim exists and which source grounds it | Select one `A6-AW-*` row; if no row's closure condition is met, keep only `A6-AW-SOURCE` or stop the unsupported use. |
+| **Unclassified mixed claims** | Boundary prose mixes claim jobs without making their distinctions and dependencies recoverable | Change impact is hard to isolate; updates can affect unrelated claim kinds | Classify the claims present and make their dependencies clear; use separate sections only when the receiving use needs them. |
+| **Authority-word overread** | “Allowed”, “approved”, or a visible permit is treated as a complete authorization result | The word hides which claim exists and which source grounds it | Select the `A6-AW-*` row by the asserted claim and identify any missing grounds. Keep any established source/display claim separate and stop the unsupported use. |
 
 ### A.6:9 - Consequences
 
@@ -509,47 +489,49 @@ This episteme is a boundary because it mediates between theory (“metric defini
 | **Evolvable boundaries.** Implementations can change while signatures remain stable.                               | More upfront structure; mitigated by MVPK faces that present only relevant slices per audience. |
 | **Reduced category mistakes.** Object, description, and carrier confusion becomes detectable.                            | Requires discipline in writing; mitigated by the “Where statements go” classification examples.        |
 | **Inputs for audit and replication.** Effect claims name their exact Work, transformation, interaction, evaluation, or other actual occurrence and use evidence carriers only through the needed evidence relation. | Requires identifying the applicable occurrence and evidence relations; a compact `AssuranceLane` evidence map can expose them. |
-| **Clearer cross‑disciplinary communication.** Legal and compliance deontics no longer compete with math invariants.    | Teams must align on viewpoint responsibilities; mitigated by explicit viewpointRef in MVPK.     |
+| **Clearer comparison across disciplines.** Normative duties can be considered alongside mathematical constraints without conflating their conditions. | Viewpoint and reader/use declarations supply the needed interpretation when those publication claims are made. |
 
 ### A.6:10 - Rationale
 
-The claims in a boundary description concern:
+A boundary account can contain different claims, including:
 
-* a **mathematical object** (signature: operations over vocabulary, governed by laws),
-* an **engineering boundary signature** (stable intent, evolvable implementations),
-* a **governance object** (commitments, responsibilities, deontics), and
+* definitions and laws about operations or other mathematical objects;
+* admissibility conditions for the selected operation;
+* prescriptions, commitments or grants under their governing rules; and
 * **actual occurrences and evidence** (effects may arise through Work, natural or spontaneous transformation, formal change, or another directly governed interaction, and evidence supports but does not create them).
 
 Mixing these claims makes it harder to distinguish a semantic boundary change from an implementation change, and to test each claim against its own rule and evidence.
 
-The stack creates a default **direction of dependence**: higher layers constrain lower layers, not vice versa. The matrix creates a default **classification** that is not reliant on word choice alone and therefore survives natural‑language variation (“must”, “guarantee”, “valid”, “allowed”).
+Reusable declarations constrain their realizations, while observations and evaluated results can expose a reason to revise those declarations. Keep the dependence and the reason for revision distinct. The classification follows what each claim says rather than its visible word, such as “must”, “guarantee”, “valid” or “allowed”.
 
 ### A.6:11 - SoTA-Echoing
 
-> **Informative.**
+> **Informative.** The sources below supply distinct techniques for declaration, substitution, interaction and observation. The L/A/D/E organization is FPF's authoring choice for keeping their boundary claims and dependencies recoverable. Historical foundations retain their stated scope; current documentation is identified where used.
 
-* **Adopt — algebraic effects and handlers / effect systems.** Effect systems distinguish operation signatures from handler semantics (e.g., Koka’s effect typing; effect handlers in OCaml 5). In this analogy, `U.Signature` carries the boundary declaration, A.6.1 governs operation declarations and their realization relation, and the realizing entity supplies the implementation. Substitution requires the declared meanings and applicability to be preserved.
+* **Algebraic effects and handlers / effect systems.** [Leijen (2017)](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/algeff.pdf) and [Hillerström and Lindley (2018)](https://www.pure.ed.ac.uk/ws/files/76099718/shallow_effect_handlers.pdf) distinguish declared operations, effect typing and handler semantics. A common interface permits different handlers, so behavior preservation needs the operation's semantic contract. [OCaml 5.4, §12.24](https://ocaml.org/manual/5.4/effects.html) also distinguishes runtime protocol enforcement from static effect safety. A.6 uses the declaration/realization distinction; provider duties and SLA claims require their separate FPF grounds.
 
-* **Adopt — session and behavioural types for protocol boundaries.** Behavioural typing treats boundaries as typed interaction protocols with progress and safety properties. A.6’s classification matrix makes protocol laws (Quadrant L) explicit and separates entry gates (Quadrant A) from general prescriptions or exact individual commitments (Quadrant D) and runtime evidence (Quadrant E), reducing ambiguity.
+* **Contracts and behavioral substitution.** [Meyer, *Applying “Design by Contract”* (1992)](https://www.kth.se/social/files/59526bfb56be5b4f17000807/meyer-92-contracts.pdf), pp. 40–42 and 46–49, develops preconditions, postconditions, invariants and optional runtime monitoring. [Liskov and Wing, *A Behavioral Notion of Subtyping* (1994)](https://www.cs.columbia.edu/~wing/publications/LiskovWing94.pdf), §§1–2 and 5.2, adds preservation of invariant and history properties under a stated abstraction. These historical foundations supply concrete preservation questions for §4.7. Their formal conclusions apply under their computational assumptions; an API replacement also needs its actual interaction and receiving-use conditions.
 
-* **Adapt — categorical optics, lenses, and bidirectional transformations.** Lenses supply useful construction expressions with coherence laws. FPF uses that lesson only for explicit A.6.3 construction or C.29 representation: a projection expression, publication face, and `U.View` remain different objects, while any cross-context reuse stays explicit.
+* **Session types for protocol boundaries.** [Scalas and Yoshida (2019)](https://www.doc.ic.ac.uk/~ascalas/papers/scalas-yoshida-popl19.pdf) connects global protocols, participant types and process properties under explicit conditions. [Hou, Yoshida and Kuhn (2026)](https://mrg.cs.ox.ac.uk/publications/less_is_more_revisited_association_with_global_protocols_and_multiparty_sessions/main.pdf) revisits the association and liveness reasoning. This helps compare changed message order, choice and retry behavior. Safety, deadlock-freedom and liveness have different conditions; a protocol theorem supplies only its stated property. A.6 separately locates admission, duties and actual-result claims.
 
-* **Adapt — model-based views-as-queries practice.** Query and projection operations can construct candidate epistemes and make omissions inspectable. E.17.0 still tests each candidate independently against one exact viewpoint episteme; generation, selection, or a `viewpointRef` alone supplies no `U.View` membership.
+* **Categorical optics, lenses, and bidirectional transformations.** Lenses supply useful construction expressions with coherence laws. FPF uses that lesson only for explicit A.6.3 construction or C.29 representation: a projection expression, publication face, and `U.View` remain different objects, while any cross-context reuse stays explicit.
 
-* **Adapt — DDD bounded contexts and microservice contract-language practice.** Architecture practice keeps meaning local and makes crossings explicit. A.6’s stack and L/A/D/E claim-classification discipline provide a precise placement scheme for what belongs to the context boundary claim set, what belongs at the entry gate, what belongs to governance duties, and what belongs to observability evidence.
+* **Views and viewpoints.** [ISO/IEC/IEEE 42010:2022](https://www.iso.org/standard/74393.html), particularly its concepts in §5, distinguishes an architecture, its description, viewpoints, views and correspondences. That supports organizing an API description around concerns and relating its parts. FPF's particular stack and face rules are additional choices. Query and projection operations can construct candidate epistemes and make omissions inspectable; E.17.0 supplies the separate FPF test against the exact viewpoint episteme.
 
-* **Adapt — observability as evidence discipline.** Traces, logs and metrics can supply evidence inputs for an exact claim. Use A.10 for the evidence-provenance relation and bounded reliance.
+* **DDD bounded contexts and microservice contract-language practice.** Architecture practice keeps meaning local and makes crossings explicit. A.6’s stack and L/A/D/E claim-classification discipline provide a precise placement scheme for what belongs to the context boundary claim set, what belongs at the entry gate, what belongs to governance duties, and what belongs to observability evidence.
 
-* **Adapt — Zero Trust, dynamic authorization, and policy-as-code practice.** Authorization practice separates policy, API, or schema text from a decision over subject, requested policy operation or work class, affected resource or work target, context, policy or gate version, decision source, and evidence. Cedar-style policy language and Zanzibar-style relation authorization are useful practice references for this split: the wording is not the decision. A.6 keeps policy, API, or schema wording in classified `L-*`, `A-*`, `D-*`, and `E-*` claims and uses `A.15.4` while appearance hides a prerequisite for work or reliance; `A.15` retains the enactment-alignment question.
-* **Adopt, adapt, and reject stance for authority-looking boundary wording.** A.6 adopts policy-as-code separation of text from evaluated decisions, uses credentials and registers as source/currentness evidence, and rejects any visible wording or display as a substitute for the selected `A6-AW-*` branch.
+* **Observability as evidence discipline.** [OpenTelemetry Trace API](https://opentelemetry.io/docs/specs/otel/trace/api/) and [Trace SDK](https://opentelemetry.io/docs/specs/otel/trace/sdk/) distinguish span identity, recording and export; sampling or dropped records can limit available observations. The [Metrics Data Model](https://opentelemetry.io/docs/specs/otel/metrics/data-model/) makes aggregation explicit. These are current specification contributions, not proof of a particular payment result. [Google SRE, *Monitoring Distributed Systems* (2016)](https://sre.google/sre-book/monitoring-distributed-systems/) supplies a historical practical distinction between a successful transport response and correct service content. A.10 connects the chosen observations to the exact claim and use; retention and exposure prescriptions belong to their own D claims.
 
-* **Adapt — Markov blankets and active inference as probabilistic boundary views only after restoration.** Markov-blanket thinking can help pick observables and diagnose boundary-condition failures, but the source phrase must be restored before it carries an A.6 boundary claim. It may name accepted local Markov dynamics, a mathematical or probabilistic lens, a holon delimitation or crossing relation, an interface, an interface module, a physical component, a boundary description, or an agency-threshold claim. A.6 uses the phrase only after the boundary claim set is recovered; it does not replace deontics, invariants, admissibility gates, or the subject pattern of the physical or mathematical claim.
+* **Zero Trust, dynamic authorization, and policy as code.** Authorization practice separates policy, API, or schema text from a decision over subject, requested policy operation or work class, affected resource or work target, context, policy or gate version, decision source, and evidence. [Cedar's authorization semantics](https://docs.cedarpolicy.com/auth/authorization.html) separates a request's principal, action, resource and context from policies and entity data, policy evaluation, and the combined `Allow` or `Deny` response with diagnostics. The historical architecture in [NIST SP 800-207 (2020), §2.1 and §3](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf) also distinguishes the policy decision from administration and enforcement, using policy and observable state as inputs. An institutional grant used by an FPF gate retains its own obtaining conditions. A.6 keeps the corresponding L/A/D/E claims connected; use A.15.4 when appearance leaves an action prerequisite unrecovered, and A.15 for enactment alignment.
+
+* **Relation-based authorization and consistent evaluation.** The historical Zanzibar design, described by [Pang et al. (2019), §§2.1–2.3 and 2.4.4](https://www.usenix.org/system/files/atc19-pang.pdf), combines relation tuples with configured rules to determine effective permissions. Its access checks use a consistent snapshot constrained by the relevant content version. This supplies a concrete reason to recover the decision's inputs and currentness conditions when reusing an authorization result after an access relation or protected content changes. The relation definitions, stored tuples, evaluation and returned decision make different contributions to that judgement.
+
+* **Markov blankets and active inference as probabilistic boundary views only after restoration.** Markov-blanket thinking can help pick observables and diagnose boundary-condition failures, but the source phrase must be restored before it carries an A.6 boundary claim. It may name accepted local Markov dynamics, a mathematical or probabilistic lens, a holon delimitation or crossing relation, an interface, an interface module, a physical component, a boundary description, or an agency-threshold claim. A.6 uses the phrase only after the boundary claim set is recovered; it does not replace deontics, invariants, admissibility gates, or the subject pattern of the physical or mathematical claim.
 
 ### A.6:12 - Relations
 
-
 * **Uses A.6.B as the classification authority:** `A.6.B:8.4.1` selects the job of permission wording. A.6 maps the resulting atomic claim to the stack; it does not put every `A.2.8.PER` object in D. The filled case in `A.6.B:8.4.5.4` is the concrete handshake.
-* **Coordinates actual effects without merging them:** Use A.15.1 only to identify a grounded dated Work occurrence; use A.3.4 for an independently identified actual transformation, including spontaneous or formal change with no Work; state each interaction, causal, production, speech-act, evaluation, evidence, or result claim through its applicable predicate and pattern. A description or carrier creates none of them.
+* **Coordinates actual effects without merging them:** Use A.15.1 only to identify a grounded dated Work occurrence; use A.3.4 for an independently identified actual transformation, including spontaneous or formal change with no Work; state each interaction, causal, production, speech-act, evaluation, evidence, or result claim through its applicable predicate and pattern. A description or carrier alone creates none of them.
 * **Constrains signature writing:** Reinforces A.6.0 separation of Laws vs operational gates (AdmissibilityConditions live in mechanisms).
 * **Constrains mechanism writing:** Uses A.6.1 for OperationAlgebra, LawSet, AdmissibilityConditions and Applicability; local transport and evidence-interface sections retain their own claim classification.
 * **Requires EntityOfConcern and Description-episteme / publication-carrier discipline:** Uses A.7 to prevent category mistakes; ties evidence to evidence carriers and publication faces to descriptions.

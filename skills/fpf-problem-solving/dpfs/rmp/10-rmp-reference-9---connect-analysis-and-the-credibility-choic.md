@@ -1,0 +1,7 @@
+## RMP.Reference:9 - Connect analysis and the credibility choice
+
+Use [RMP.5](35-rmp-5---analyze-and-criticize-the-research-claim-under-its-m.md) to follow a consequential connection from the actual material through its Method to the proposed claim. An adequate existing analysis can supply the result. Preserve the distinction between planned and later choices, contrary material, uncertainty and the stronger claim the result cannot support. A bounded interpretation or unresolved answer may finish the present use.
+
+Use [RMP.6](36-rmp-6---choose-a-credibility-test-that-bears-on-the-research.md) when a remaining credibility question can change the useful next move. Start directly with the supplied claim, basis, use and threat. Reproduction, replication, robustness, use-specific validation, corroboration and transfer examine different relations. Compare what the attainable result could change with access, preparation, performance, interpretation, protection, shared resources and displaced work.
+
+The selected test, its operational specification and an actual returned result remain separate. Inability to attempt an examination is not a discrepant result; an inconclusive result is not evidence of absence. A current no-new-test answer retains its uncertainty, and a newly obtainable discriminating comparison can reopen the choice. The protected-function merits of a disputed requirement and the authority to amend its current force also remain distinct.

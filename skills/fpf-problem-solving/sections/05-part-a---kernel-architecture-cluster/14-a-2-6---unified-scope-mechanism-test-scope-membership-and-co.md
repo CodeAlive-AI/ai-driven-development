@@ -3,19 +3,18 @@
 > **Type:** Ontic pattern
 
 
-### A.2.6:0.1 - Kind Settlement
-
-`U.ContextSlice` and `U.Scope` are the durable USM values for scope work. `U.ClaimScope`, `U.WorkScope`, and `U.PublicationScope` are C.3-governed scope specializations under `U.Scope`, not independent root ontics. `ContextSliceSet := Set[U.ContextSlice]` is the mathematical ValueKind whose values are exact sets of independently identified context slices; it is neither a durable scope nor another U-kind. Each exact `U.Scope` has one `ContextSliceSet` value as its extension under the effective reference scheme.
-
 > **One-line summary.** A.2.6 lets a practitioner test one exact `U.ContextSlice` against one exact set-valued scope. For a claim, `member(slice, claimScope)` is `true` or `false`: `true` admits the claim-scope condition and `false` stops that use. An evaluation returns `unknown` when its available basis cannot determine membership. The predicate is not a `U.Relation` occurrence.
 
 **Use this pattern when** a receiving action needs to decide whether a claim, capability, or publication use covers one exact combination of standards, environment, local sense, platform, cohort, or time selectors.
 
-**First useful move.** Name the exact claim, its exact `U.ClaimScope`, and the target `U.ContextSlice`; evaluate membership. Stop on `false`. On `unknown`, obtain the missing evaluation input, narrow the attempted use, or abstain. Add a result episteme or table only when the receiving use needs one. If exact local senses must be translated, first name the obtaining F.9 Bridge, then state the separate affirmative C.2.1 claim for this translation's direction, rule, and tolerance. Before using the translated scope, establish evidence-based reliance through A.10 or assurance-based reliance through B.3.
+**First useful move.** Name the exact claim, its exact `U.ClaimScope`, and the target `U.ContextSlice`; evaluate membership. Stop on `false`. On `unknown`, obtain the missing evaluation input, narrow the attempted use, or abstain. Add a result episteme or table only when the receiving use needs one. If exact local senses must be translated, follow §7.5: name the obtaining F.9 Bridge and separate affirmative C.2.1 claim for this translation, then establish the A.10 evidence basis and applicable reliance condition before using the translated scope.
 
 **What goes wrong if missed.** Teams infer coverage from a document, table, “current context” label, or selected structure; treat an unevaluated slice as excluded; or mint `ScopeDelimitationRelation` occurrences for included and excluded slices. Those moves collapse predicate truth, evaluation, representation, and structure.
 
 **What this buys.** One set-valued scope algebra supports exact membership, intersection, supported union, translation, widening, narrowing, and refit while keeping claim content, evaluation work, result epistemes, model-applicability relations, and selected structures separate.
+
+**When a direct domain calculation is enough.** A standalone mathematical applicability question may be settled by its stated conditions and calculation. When a receiving FPF rule requires scope membership, identify the required scope and slice and apply that guard; capability gating requires `U.WorkScope` (§10.3). A result record remains optional unless the receiving use needs one. Section 20 explains the additional value of reusable scopes.
+
 **Vocabulary boundary.** Use these scope names in live FPF wording:
 
 
@@ -24,7 +23,7 @@
 * For publication views or forms, the only **scope type** is **`U.PublicationScope`**.
 * The abstract architectural notion is **`U.Scope`** — a durable scope value identified extensionally through one exact `ContextSliceSet` value under the effective reference scheme. Intersection, SpanUnion, translation, widening, and narrowing operate on those extensions; refit changes an expression without changing the extension. `U.Scope` is **not** a `U.Characteristic` and MUST NOT appear in any `CharacteristicSpace`.
 
-Source words such as *applicability*, *envelope*, *generality*, and *capability envelope* may appear only as explanatory aliases in non-normative notes.
+Use source terms such as *applicability*, *envelope*, *generality*, and *capability envelope* with their domain meanings. When they designate an FPF scope value, identify its kind through the names above.
 
 **Cross‑references.**
 - **C.2.3** (Formality assessment **F**) and **C.2.2** (F–G–R): this pattern **defines G** as `U.ClaimScope`.
@@ -51,7 +50,7 @@ A.2.6 defines the scope values, membership predicate, mathematical scope algebra
 
 #### A.2.6:2.1 - Cross‑disciplinary pressures
 
-Modern projects couple **formal specs**, **data‑driven models**, **safety cases**, and **operational playbooks**. Each specification, model, safety case, or operational-playbook publication must say **where it is valid**—yet terminology drifts:
+A project may combine formal specifications, data-driven models, safety cases and operational playbooks. To rely on a claim from one of them, the practitioner needs its conditions of applicability. Their vocabularies can describe different aspects of those conditions:
 
 * Standards and specs often say *applicability* or *scope*.
 * Modeling communities say *envelope*.
@@ -70,17 +69,17 @@ In **F–G–R**:
 
 * **F** (formality) is “how strictly a claim is expressed” (C.2.3).
 * **G** must be “**where it holds**,” not “how abstract it sounds.”
-* **R** carries evidence and reliance currentness. Observed semantic mismatch or loss may be evidence about a proposed translation, while the permitted-loss tolerance belongs to the separate C.2.1 claim about that use.
+* **R** describes how strongly the claim is warranted by its evidence under the declared scope and use conditions (C.2.2). Observed semantic mismatch or loss may be evidence about a proposed translation, while the permitted-loss tolerance belongs to the separate C.2.1 claim about that use.
 
 When **G** is a **set‑valued scope**, composition becomes precise: serial dependencies **intersect** scopes; parallel, independently supported lines can publish a **SpanUnion**—but only where each line is supported.
 
 ### A.2.6:3 - Problem
 
-1. **Synonym soup.** *Applicability, envelope, generality, capability envelope*—different labels for the **same mechanism** led to mismatches in gating, review, and reuse.
+1. **Unresolved scope wording.** Labels such as *applicability*, *envelope*, *generality* and *capability envelope* can hide different predicates or receiving uses. Recover the intended conditions before applying the common scope algebra.
 2. **Abstraction confusion.** Calling G “generality” invited teams to treat “more abstract wording” as “broader scope,” silently masking unstated assumptions.
-3. **Split mechanics.** Episteme vs system text used different algebra and guard language, though **the same set operations** were meant.
+3. **Split mechanics.** Claims and capabilities need different use conditions, but their scopes share the set algebra. Separate those conditions without duplicating the algebra.
 4. **Translation opacity.** Exact local-sense translation was confused with ordinary designation resolution, causing automatic Bridge use and hidden changes to the supported slice set.
-5. **Overloaded words.** *Validity* clashed with **Validation Assurance (LA)**; *operation* and *operational* clashed with **Work** and **Run** in A.15, producing governance ambiguity.
+5. **Overloaded words.** A phrase such as *validity* can mean a scope condition or an assurance judgment; *operation* can name an operation application or performed Work. Recover the intended object before applying the scope rule.
 
 ### A.2.6:4 - Forces
 
@@ -106,7 +105,7 @@ The primitive claim-scope question is `member(x, S)` for exact slice `x` and exa
 
 One exact `U.ClaimScope` may participate in a `ModelApplicabilityRelation`. That relation, its actual obtaining extent, a selected A.22 structure, a membership evaluation, and a table displaying members remain separate.
 
-**Lexical commitments.** In normative text and guards, use **Claim scope (G)**, **Work scope**, and **Publication scope**. Source words such as *applicability*, *envelope*, *generality*, *capability envelope*, or *validity* may remain only when quoted or explained; they do not name additional scope kinds.
+**Scope names.** Use **Claim scope (G)**, **Work scope**, and **Publication scope** when identifying the corresponding FPF scope kinds. Domain wording retains its source meaning; a synonym alone establishes neither a scope kind nor an equivalent scope.
 
 ### A.2.6:6 - Normative Definitions
 
@@ -137,7 +136,7 @@ Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finit
 **A.6.1 declaration A — `ScopeMembershipEvaluationMechanism`.**
 
 - `EntityOfConcernRef`: exact operation family `ScopeMembershipEvaluationOperationFamily = {evaluateMembership}`.
-- effective `U.ReferenceScheme`: the scheme under which this mechanism's argument, result, and application meanings are interpreted.
+- effective reference scheme: the scheme under which this mechanism's argument, result, and application meanings are interpreted.
 - `SubjectKind`: `U.Scope`.
 - `RangedValueKind`: `U.ContextSlice`.
 - `ResultKind`: declaration-local finite `U.Kind` `MembershipEvaluationValue = {true, false, unknown}` under C.3. Its membership rule admits exactly those three values. It is not a world-side third truth value, public U-kind, gate decision, or result episteme.
@@ -173,7 +172,7 @@ Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finit
 **A.6.1 declaration B — `ScopeDerivationMechanism`.**
 
 - `EntityOfConcernRef`: exact operation family `ScopeDerivationOperationFamily = {deriveIntersectionScope, deriveSpanUnionScope, deriveTranslatedScope}`.
-- effective `U.ReferenceScheme`: the scheme under which this mechanism's operation meanings and returned scopes are interpreted.
+- effective reference scheme: the scheme under which this mechanism's operation meanings and returned scopes are interpreted.
 - `SubjectKind`: `U.Scope`.
 - `RangedValueKind`: `U.Scope`; each derivation operation still returns a `U.Scope`, so no distinct mechanism-level `ResultKind` is current.
 - `SliceSet` and `ExtentRule`: absent for the same A.6.0 reason stated above.
@@ -188,8 +187,10 @@ Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finit
 | `deriveTranslatedScope` | argument `sourceScope` | exact source scope whose extension is mapped | `U.Scope` | `ByValue` | this application maps the bound scope value | exactly 1 |
 |  | argument `bridgeOccurrence` | exact obtaining F.9 Bridge whose direct semantic relation is used | `U.Relation` | `ByGovernedReference` | the reference resolves to the exact obtaining occurrence actually used by this application; it carries no use-specific rule, tolerance, or reliance | exactly 1 |
 |  | argument `scopeTranslationClaim` | exact current C.2.1 claim that says the bound Bridge is suitable for this named scope translation | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact affirmative claim whose EntityOfConcern is the bound Bridge and whose content names this use, direction, rule, and tolerance | exactly 1 |
-|  | argument `targetReferenceScheme` | exact scheme under which target slices and their local senses are interpreted | `U.ReferenceScheme` | `ByValue` | this application interprets the returned target-slice extension under the bound scheme | exactly 1 |
+|  | argument `targetReferenceScheme` | exact scheme under which target slices and their local senses are interpreted | `EpistemeInterpretationScheme` (C.2.1:4.1.2) | `ByValue` | this application interprets the returned target-slice extension under the bound scheme | exactly 1 |
 |  | result `derivedScope` | exact extensional scope returned for the target image selected by the claim's rule and tolerance | `U.Scope` | `ByValue` | this application returns this independently identifiable scope value | exactly 1 |
+
+The target scheme is the exact rule collection classified by C.2.1:4.1.2, including the rules needed to read the target slices and local senses. A scheme can pass that range test while the proposed translation lacks its required mapping or bounded-use basis. Apply the translated-scope law to the actual bound value; range membership supplies neither that mapping nor any additional scope support.
 
 **ApplicationPredicate rules.** `deriveIntersectionScope` returns the scope represented under C.29 by `intersection of extension(S) for S in scopeFamily`. `deriveSpanUnionScope` implements the already established `SpanUnion`: it is admitted only when `independenceBasis` establishes the section 7.3 independence condition and returns the scope represented by `SpanUnion(scopeFamily)`. `deriveTranslatedScope` is admitted only when the bound Bridge obtains and the bound C.2.1 claim has that Bridge as EntityOfConcern, affirmative polarity, and content naming this scope-translation use, its direction, rule, and tolerance. The application applies that rule within that tolerance and returns the scope represented by `translate(bridgeOccurrence, scopeTranslationClaim, sourceScope, targetReferenceScheme)`. The formulae and claim alone declare no application or result binding.
 
@@ -255,7 +256,7 @@ A set or predicate expression, table, diagram, or query result can represent or 
 
 USM admits `subset`, `intersect`, `spanUnion`, `translate`, `widen`, and `narrow` over exact scope extensions. `refit` is a same-extension normalization: it changes a predicate expression, units, or factoring while preserving `member(x,S)` for every exact slice under the effective reference scheme. A changed expression may require another declaration or claim-bearing episteme edition under its direct governor; it identifies another `U.Scope` only when the extension changes.
 
-If a receiving use requires stable identity for membership occurrences, A.2.6 must first declare a direct relation kind with exact participant meanings, obtaining condition, recurrence rule, and non-optional occurrence-identity rule under A.6.REL. Until then, do not use `ScopeDelimitationRelation`, `ScopeDelimitationMode`, or `ScopeDelimitationInterval`.
+Membership alone supplies no independently individuated relation occurrence. A receiving use that needs one requires a direct relation kind admitted under A.6.REL, with participant meanings, obtaining condition, recurrence rule and occurrence identity. A.2.6 admits no `ScopeDelimitationRelation`, `ScopeDelimitationMode`, or `ScopeDelimitationInterval`.
 
 #### A.2.6:6.3 - `U.ClaimScope` (G) and membership evaluation
 
@@ -264,7 +265,7 @@ If a receiving use requires stable identity for membership occurrences, A.2.6 mu
 An evaluation of `member(x, S)` is also separate:
 
 * the predicate semantics determine membership;
-* an exact system performs dated evaluation work by an exact method, using a direct evaluation relation or A.6.1 operation binding;
+* when a particular dated evaluation Work is asserted, A.13 identifies its actual performer and A.15.1 admits the occurrence independently; add F.6 only if the account must also identify its assignment, and keep the Method and direct evaluation relation or A.6.1 bindings separate;
 * a separately current C.2.1 result episteme may state `true`, `false`, or `unknown`;
 * evidence and freshness claims remain under A.10 and their direct governors.
 
@@ -300,22 +301,22 @@ Here `holderAbilityClaim` supplies the identified holder, claimed work condition
 **Required guard facets (capabilities).**
 * **Work-measure target set (mandatory).** A set of measurable targets with units and tolerated ranges, evaluated on the JobSlice.
 * **Qualification-window policy (mandatory for operational use).** A time policy stating when the capability is considered qualified; evaluated at the exact evaluation time selected by the receiving guard, not copied into `U.WorkScope`.
-These facets are **separate** from `U.WorkScope` and live in the **R‑lane** (assurance). They MUST be referenced in Method–Work guards (see §10.3 WG‑2/WG‑3).
+These facets are **separate** from `U.WorkScope` and belong to the evidence and reliance conditions. They MUST be referenced in Method–Work guards (see §10.3 WG‑2/WG‑3); B.3 applies when an actual named assurance claim is current.
 
 #### A.2.6:6.5 - `U.PublicationScope` — scope of a publication view or publication form
 **Carrier.** A publication view or form is rendered on a carrier; the carrier is a separate object.
 **Meaning.** The set of `U.ContextSlice` where a **publication** (a view, card, or lane about some object or morphism) is **admissible for use** within its underlying Claim scope or Work scope.
 
 **Relation to other scopes (normative).**
-* If the publication is **about an episteme `E`**:
-  `PublicationScope(view_E) ⊆ ClaimScope(E)`.
+* If the publication's admissible use **relies on claim `c` in episteme `E`**:
+  `PublicationScope(view_E) ⊆ ClaimScope(c)`.
 * If the publication presents **a qualified holder-ability claim `C`** for work admission:
   `PublicationScope(view_C) ⊆ WorkScope(C)`, where `WorkScope(C)` is the work-condition basis designated by that claim. Any relied-on episteme ClaimScope remains a separate constraint; stating the ability in an episteme does not turn its WorkScope into ClaimScope.
-* If the publication is **about a composition**, its scope is a subset of the intersection of the exact contributing scopes. When exact local senses require translation, use section 7.5 for each affected source scope: obtaining F.9 Bridge, separate affirmative C.2.1 use claim, and current A.10 or B.3 reliance before the returned scopes are intersected.
+* When publication use requires **all contributing claims or capabilities to apply together**, its scope is a subset of their intersection. For **independent support lines for the same claim or capability**, establish the supported SpanUnion under §7.3 and bound publication use by that resulting scope. When exact local senses require translation, use section 7.5 for each affected source scope: obtaining F.9 Bridge, separate affirmative C.2.1 use claim, and current A.10 or B.3 reliance before the returned scopes are combined under the applicable rule.
 
 **Expression.** Declare `U.PublicationScope` as an exact predicate over only the `U.ContextSlice` selectors that restrict publication use: for example versioned standards, environment, audience, interface availability, exact local senses, or `gammaTime` when time changes membership. It may be narrower than the underlying scope but must not be wider.
 
-**Algebra and Delta-moves.** Publication scope uses the USM algebra. A widened publication scope is admissible only when the resulting set remains a subset of every relevant underlying Claim scope or Work scope and the publication conditions support each added slice; the underlying scope need not change when it was already broader.
+**Algebra and Delta-moves.** Publication scope uses the USM algebra. A widened publication scope is admissible only when the resulting set remains a subset of the applicable underlying Claim scope or Work scope, using §7's composition rule when several scopes contribute, and the publication conditions support each added slice; the underlying scope need not change when it was already broader.
 
 **Orthogonality to measurement.** `U.PublicationScope` is a **USM scope object** (set‑valued), not a CHR Characteristic and MUST NOT appear as a slot in a `U.CharacteristicSpace`.
 
@@ -362,7 +363,7 @@ Scope_published = SpanUnion({S_i})  =  ⋃_{i=1..n} S_i
 * Publishers SHOULD annotate coverage density/heterogeneity (informative) to aid R assessment, but numeric “coverage” is not part of G.
 * **Independence criterion.** Support lines in a **SpanUnion** MUST be partitioned so that each line has a set of **essential components** disjoint from the others’ essential components (no shared weakest link). The partition (or a certificate thereof) SHALL be referenced in the publication.
 
-#### A.2.6:7.4 - Why a **G-ladder/levels/scales** is not needed (and **must not** be introduced)
+#### A.2.6:7.4 - Set-valued scope and scalar reporting
 
 **1) G is not an ordinal scale; it is set-valued.**
 Under **USM**, `U.ClaimScope` is a **set‑valued** **USM scope object** over `U.ContextSlice`. The only well‑typed primitives are **membership** and **set operations** (`⊆`, `∩`, `⋃`). Imposing ordinal “levels” such as **G0…Gk** violates the type discipline and produces non‑invariant behavior (the **same set** could be “rated” with different numbers under different heuristics). (See also LEX‑CHR‑STRICT.)
@@ -371,13 +372,13 @@ Under **USM**, `U.ClaimScope` is a **set‑valued** **USM scope object** over `U
 USM already fixes composition: along a **dependent path** use **intersection**; across **independent support lines** publish **SpanUnion**. None of these operations relies on (or preserves) any linear order. An ordinal “G ladder” invites people to take **minimums/averages**, which is **incorrect** for sets and breaks the established algebra.
 
 **3) A G ladder drags in “abstraction level,” which is orthogonal.**
-Early “G ladders” effectively encoded **abstraction/typing** (instances -> patterns -> formal classes/types -> up-to-iso). That is valuable **didactics**, but **not applicability**. **Abstraction** is captured, if needed, by **`AbstractionTier (AT)`** as an optional facet; **applicability** is **`U.ClaimScope (G)`**.
+A ladder from instances through patterns and formal types to equivalence up to isomorphism describes an abstraction or typing distinction. That distinction does not determine where a claim holds. **Abstraction** can be described by the optional **`AbstractionTier (AT)`** facet; **applicability** is **`U.ClaimScope (G)`**.
 
 **4) A G ladder breaks locality and Bridge semantics.**
 When exact local senses require translation, an obtaining F.9 Bridge establishes their direct semantic relation while a separate C.2.1 claim states the proposed mapping rule and tolerated loss. There is no canonical way to translate an ordinal G level: the mapped area may be narrower or differently factored. USM translates exact sets only through that bounded claim and keeps A.10 or B.3 reliance separate rather than rewriting G.
 
 **5) A G ladder duplicates ESG guards without adding decision power.**
-What teams often want to “compress into a G number” is actually (a) the quality of expression and (b) the completeness of the declared scope. The first is a requirement on expression properties under C.2.3; the second is handled by explicit guards: `Scope covers TargetSlice`, `gammaTime is explicit` only when membership varies with time, and a separate freshness-window check when current. A ladder for G adds confusion but no decision power.
+Expression quality and scope coverage answer different questions. C.2.3 governs expression properties. Explicit guards determine scope coverage, include `gammaTime` only when membership varies with time, and check freshness separately when current. A reported G number cannot replace those predicates.
 
 **Normative directive.**
 `U.ClaimScope (G)` **SHALL** remain a **set‑valued USM scope object**; **no ordinal or numeric ladder SHALL be defined** for G. If a profile needs scalar reporting, it MAY publish an explicit **report‑only** proxy **`CoverageMetric(G)`**, but **`CoverageMetric(G)` MUST NOT substitute for `G`** in norms, gates, Bridge semantics, bounded-use claims, or reliance decisions. Authoring and gating **SHOULD** use **required expression properties or justified local formality thresholds** (C.2.3) and **explicit guard predicates** (A.2.6) rather than pseudo‑levels of G.
@@ -443,15 +444,15 @@ For a fixed exact scope, exact slice, and available evaluation inputs, the evalu
 
 #### A.2.6:8.5 - Interaction with R (freshness & decay)
 
-For empirical claims and operational capabilities, **R** typically binds evidence freshness windows. Scope does not decay with time; **trust in the support** does. Guards MAY combine “Scope covers” with “Evidence freshness holds” as separate predicates.
+For empirical claims and operational capabilities, an evidence-freshness policy can change warranted reliance over time without changing the scope extension. Guards MAY combine “Scope covers” with “Evidence freshness holds” as separate predicates.
 
-### A.2.6:9 - Lexical Discipline (Part E compliance)
+### A.2.6:9 - Scope Terminology
 
-**L‑USM‑1 (names).** Use **Claim scope (G)** for epistemes, **Work scope** for capabilities, and **Publication scope** for publication views or forms. Use **Scope** for the common extensional scope value. Avoid naming any **characteristic** as “applicability,” “envelope,” “generality,” “capability envelope,” or “validity”.
+**L‑USM‑1 (names).** Use **Claim scope (G)** for epistemes, **Work scope** for capabilities, and **Publication scope** for publication views or forms. Use **Scope** for the common extensional scope value. A scope value is not a characteristic; the source words *applicability*, *envelope*, *generality*, *capability envelope*, or *validity* must be interpreted before selecting either kind.
 
-**L‑USM‑2 (Work and Run).** Prefer **Work** and **Run** vocabulary from A.15 for system execution contexts. Do not introduce “operation” or “operating” as characteristic names; use **Work scope**.
+**L‑USM‑2 (Work and operation).** Use A.15 for performed Work and A.6.1 for operation applications. Use **Work scope** for the set of conditions under which a capability claim is evaluated.
 
-**L‑USM‑3 (Validation).** “Validation/Validate” remain reserved for **LA** in assurance lanes (Part B). Do not name a scope object “validity”.
+**L‑USM‑3 (Validation).** When a claim concerns Validation Assurance (LA), use its Part B meaning. For a scope object, use the applicable scope name rather than the ambiguous label *validity*.
 
 **L-USM-4 (Domain).** “Domain” is a recognition cue, not a guard input. Name the exact `U.ContextSlice` selectors needed by the membership predicate.
 
@@ -562,7 +563,7 @@ Use that translation only while exact A.10 relation `EP-adhesive-scope-translati
 
 The path supports neither reverse translation, a mapping outside the named rule or tolerance, nor a claim that the A.6.1 application or membership evaluation occurred. If the record, carrier, or provenance edge is missing or stale, or the window closes, stop before translation and set `RelianceDisposition=reopen`; otherwise `RelianceDisposition=pass` applies only to this bounded use. No assurance claim is made.
 
-For this case, stipulate that the actual A.6.1 application `deriveTranslatedScope(G_adhesive, B-lab-assembly-temp, C-adhesive-scope-translation, AssemblyReferenceScheme)` applies the named rule and tolerance and returns the receiving scope `[122,148]°C`. The receiving membership evaluation uses that scope.
+For this worked case, let the named calibration rule associate each assembly reading `t` with possible laboratory temperatures in `[t−2,t+2]°C`, throughout the range being considered. Let the acceptance rule require this whole interval to lie within the supported laboratory range `[120,150]°C`. Then `t−2 ≥ 120` and `t+2 ≤ 150`, so the accepted assembly readings are `[122,148]°C`. These are assumptions of this example; a boundary-uncertainty limit alone does not supply the calibration rule or the acceptance rule. With the other selectors preserved, the actual A.6.1 application `deriveTranslatedScope(G_adhesive, B-lab-assembly-temp, C-adhesive-scope-translation, AssemblyReferenceScheme)` returns the scope with this temperature range. The receiving membership evaluation uses that scope.
 
 If the receiving use merely uses another designation for the same sense under an ordinary resolvable reference scheme, introduce no Bridge, use claim, or translation.
 
@@ -624,7 +625,7 @@ USM counters three recurring biases. First, scope wording can hide a claim that 
 | **CC-USM-2 Sole delimitation predicate.** | `member(slice, scope)` is the primitive delimitation semantics. `ScopeDelimitationRelation`, `ScopeDelimitationMode`, and `ScopeDelimitationInterval` are absent. |
 | **CC-USM-3 Included, excluded, unknown.** | True admits the scope condition, false stops it, and unknown reports an undecided evaluation rather than exclusion. |
 | **CC-USM-4 Evaluation separation.** | The acting system, method, dated evaluation work, direct relation or A.6.1 binding, optional C.2.1 result episteme, and evidence use remain separate from predicate truth. An `unknown` result binding does not require that episteme; A.15.PROD applies only to a separately current identity-inception claim. |
-| **CC-USM-5 No membership occurrence by default.** | A membership relation kind is admitted only after A.2.6 declares exact participant meanings, obtaining, recurrence, and a non-optional occurrence-identity rule under A.6.REL for a named receiving use. |
+| **CC-USM-5 No membership occurrence by default.** | A.2.6 admits no membership-relation kind. A receiving use requiring occurrence identity needs an independently admitted direct relation with exact participant meanings, obtaining condition, recurrence rule and occurrence identity under A.6.REL. |
 | **CC-USM-6 Structure separation.** | A bare scope, slice, membership outcome, or displayed boundary never enters A.22 identity. An exact `U.ClaimScope` remains a participant of its independently governed `ModelApplicabilityRelation`; selecting that exact occurrence contributes through the relation-occurrence discriminator. Separately, an exact applied constraint claim may refer to that scope and contribute through the applied-constraint discriminator. Neither path makes the scope a constituent, a membership occurrence, or a second delimiter. |
 | **CC-USM-7 Applicability interval.** | One exact `U.ClaimScope` participates in `ModelApplicabilityRelation`; a declared interval stays in assertion or occurrence-description content, while the actual occurrence extent is derived from maximal continuous obtaining. |
 | **CC-USM-8 Set algebra.** | Intersection, independently supported `spanUnion`, widen, narrow, and refit operate on exact scope values; refit preserves membership. |
@@ -656,7 +657,7 @@ A correct USM use makes scope checks reproducible: every judgment names an exact
 
 ### A.2.6:16 - Playbooks (Informative)
 
-#### A.2.6:16.1 - Manager’s six-step use
+#### A.2.6:16.1 - Using a scope
 
 1. **Name the claim and exact scope.** Do not start from a context label or table.
 2. **Name the target slice.** Bind the full independently identified slice as `targetSlice`; put the selector resolutions and translation inputs needed by this evaluation in `interpretationBasis`.
@@ -665,13 +666,13 @@ A correct USM use makes scope checks reproducible: every judgment names an exact
 5. **Keep other checks separate.** Evaluate any required freshness, formality, time-currentness and assurance conditions separately, along with capability measures and qualification when required. The gate decision remains under A.21.
 6. **Persist only what the use needs.** A C.2.1 result episteme may record the judgment when a named receiving use needs it to persist; a C.29 table may display it. Use A.15.PROD only when the current claim is that the work first constituted that episteme.
 
-#### A.2.6:16.2 - Architect’s design rubric for scopes
+#### A.2.6:16.2 - Declaring and combining scopes
 
-* **Prefer predicates over prose.** Name the parameters, ranges, and standard editions that affect membership; name `gammaTime` only when time affects membership.
+* **Make membership conditions explicit.** Name the parameters, ranges and standard editions that affect membership. Ordinary prose can express the predicate when its meaning is recoverable; name `gammaTime` only when time affects membership.
 * **Factor common conditions.** Use Refit to normalize units and factor shared predicates; do not widen by stealth.
 * **Partition support lines.** If you plan a **SpanUnion**, document independence up front.
-* **Publish supported scope.** Add slices as support appears (ΔG+).
-* **Design translations early.** Test the direct F.9 Bridge first, then state each proposed translation use separately with its direction, mapping rule, tolerated loss, and evidence plan; do not turn an expected loss score into permission to use the mapping.
+* **Publish supported scope.** When widening is needed, add only supported slices (ΔG+).
+* **Prepare needed translations.** When the receiving use needs a translation, establish the F.9 Bridge, then state the proposed use with its direction, mapping rule, tolerated loss and evidence plan. Establish the §7.5 reliance condition before using the mapping.
 
 #### A.2.6:16.3 - Minimal DSL snippet for scope blocks (illustrative)
 
@@ -697,7 +698,7 @@ receivingGuards:
 
 **Rules.**
 * **P1 (Expansion).** Profiles are macros: guards **MUST** expand them to explicit predicates before evaluating `Scope covers TargetSlice`.
-* **P2 (Edition).** Profiles are editioned. A changed predicate expression is a content change for a carrier that references the profile even when the exact scope extension is preserved; a changed extension additionally identifies another scope value.
+* **P2 (Edition).** Profiles are editioned. A changed predicate expression changes the profile declaration even when the exact scope extension is preserved; a changed extension additionally identifies another scope value.
 * **P3 (No stealth widen).** A profile update MUST NOT implicitly widen a carrier’s published scope; ΔG+ must be explicit in that carrier.
 * **P4 (Translation awareness).** If a profile expands to predicates whose exact local senses require translation, name the obtaining F.9 Bridge and the separate affirmative C.2.1 claim for that translation's direction, rule, and tolerance. The receiving guard must recover the current A.10 or B.3 reliance branch; a different label, scheme, profile, or Bridge Card alone is insufficient.
 * **P5 (No hidden context container).** A profile expands to predicates; it is not a context object, scope pattern, or additional scope kind.
@@ -713,14 +714,16 @@ receivingGuards:
 
 When a scope-aware decision needs durable audit evidence, its C.2.1 result episteme may name:
 
-* **Using object and exact scope.** The claim-bearing episteme, capability, or publication object designates or uses the exact scope.
+* **Using object and exact scope.** The claim-bearing episteme, qualified holder-ability claim, or publication object designates or uses the exact scope.
 * **Exact target slice.** Designate the independently identified slice with its complete declared selector schema and values. Bind the full slice as `targetSlice`; put the selector resolutions and translation inputs needed by this evaluation in `interpretationBasis`. Include `gammaTime` in the schema only when that temporal selector is part of the exact slice being evaluated.
 * **Evaluation outcome.** Record `true`, `false`, or `unknown`, plus the evaluation method or work occurrence when replay needs it.
 * **Separate guard outcomes.** Record work measures, qualification windows, formality, or freshness only when the receiving use checks them; none is membership.
 * **Translation evidence, only when triggered.** Name the exact obtaining F.9 Bridge, the separate C.2.1 claim with its polarity, use, direction, rule, and tolerance, and the exact A.10 or B.3 reliance branch. Record any observed loss as evidence rather than a Bridge identity field.
 * **Scope change.** Say whether the declared set widened, narrowed, or remained identical under refit.
 
-#### A.2.6:17.2 - USM compliance levels (informative)
+#### A.2.6:17.2 - Illustrative USM use configurations
+
+The following descriptions identify different uses; select the one needed by the receiving task.
 
 * **USM-Ready.** Exact scope and slice values are declared; editors can distinguish membership from evaluation, evidence, representation, and structure.
 * **USM-Guarded.** Guards evaluate exact Claim scope or Work scope membership, including `gammaTime` in the scope predicate only when time changes membership. Measures, qualification, and freshness remain separate checks.
@@ -750,10 +753,10 @@ When a scope-aware decision needs durable audit evidence, its C.2.1 result epist
 Declare each supported serial scope (`S₁, S₂, …`) and publish **SpanUnion({Sᵢ})** with independence justification. Do **not** include unsupported slices.
 
 **Q3. Can raising F (formalizing) widen G?**
-Only if the formalization **explicitly changes** the scope predicates (ΔG+). Formalization alone does not widen scope.
+Formalization alone does not widen scope. Widening requires a changed extension and direct support for every added slice under §7.6; changing only the expression can preserve the same scope.
 
 **Q4. What is the difference between Work scope and SLOs?**
-**Work scope** is **where** the capability can deliver; **measures** within the guard are **what** it promises there (SLO targets). Both are required at use time (WG‑1..3).
+**Work scope** names the work conditions covered by the holder's ability claim; **SLO targets** name required performance levels. At use time, check scope coverage and compare the claimed performance bounds with those targets, together with the required qualification check (WG‑1..3).
 
 **Q5. Can we assign numeric coverage to G?**
 Not normatively. G is set‑valued. You MAY attach an **informative**, explicitly declared **`CoverageMetric(G)`** (e.g., a proportion under a pinned policy) to aid **R** assessment, but guards use set membership and **`CoverageMetric(G)` MUST NOT replace `G`**.
@@ -767,7 +770,7 @@ First resolve whether the designations refer to the same values under the effect
 Keep **AT (AbstractionTier)** and **D (Detail and Resolution)** as orthogonal, optional annotations. They never substitute for **Claim scope** or **Work scope**.
 
 **Q9. Can a capability’s Work scope be broader than a predecessor claim’s Claim scope on a dependency path?**
-They are on different carriers. In a serial dependency, the **effective** scope is the **intersection**; the broader one does not dominate.
+Claim scope bounds where a claim holds; Work scope bounds the work conditions of a qualified ability claim. If the receiving use depends on both, its effective scope is their intersection. Neither replaces the other because it is broader.
 
 **Q10. When does an empty scope make sense?**
 No slice satisfies the declared predicate, so the receiving guard stops. This may occur during early drafting or after a refutation.
@@ -782,11 +785,11 @@ No slice satisfies the declared predicate, so the receiving guard stops. This ma
 | envelope (of a requirement/spec)    | **Claim scope**                                          |
 | generality G                        | **Claim scope (G)**                                      |
 | capability envelope                 | **Work scope**                                           |
-| validity (as a characteristic name) | **Claim scope** or **Work scope** (depending on carrier) |
+| validity (when it denotes a scope condition) | **Claim scope** or **Work scope**, according to the receiving use |
 | operational applicability           | **Work scope**                                           |
 | publication or view applicability      | **Publication scope**                                    |
 
-*(Use these source terms only in explanatory notes; not in guards or conformance text.)*
+Interpret these source terms in their own use. In a guard or conformance claim, identify the exact FPF scope kind and membership predicate.
 
 #### A.2.6:19.2 - Minimal data model hints
 
@@ -800,7 +803,7 @@ No slice satisfies the declared predicate, so the receiving guard stops. This ma
 `environmentSelectors`, `platformOrStandardEditions`, `resourceRegimeSelectors`, `exactLocalSenseRefs?`, and `gammaTime?` when time changes membership.
 
 **Publication-scope predicate block:**
-the exact audience, interface, availability, and other selectors that restrict publication use, always as a subset of the underlying claim or work scopes.
+the exact audience, interface, availability, and other selectors that restrict publication use, always within the underlying claim or work scope established under the applicable composition rule in §7.
 
 **Separate use-time guard:**
 work-measure targets, qualification windows, evidence freshness, and any decision threshold. These are not fields of the scope value.
@@ -821,51 +824,55 @@ def evaluate_membership(scope, target_slice, interpretation_basis):
 
 ### A.2.6:20 - Rationale
 
-A.2.6 needs a scope mechanism to express the set-valued condition under which a claim, work capability, or publication surface may be used. USM makes those membership conditions addressable, composable, and reopenable while preserving the F/G/R separation. When exact local senses require translation, F.9 supplies the Bridge, C.2.1 supplies the separate claim about this use, and A.10 or B.3 supplies reliance; A.2.6 alone governs the scope calculation and membership question.
+USM expresses the set-valued conditions under which a claim, qualified ability claim or publication may be used. Membership makes those conditions composable while preserving the F/G/R distinction. When local senses require translation, F.9 supplies the Bridge, C.2.1 the separate claim about this use, and A.10 or B.3 the applicable reliance basis; A.2.6 governs the scope calculation and membership question.
 
-#### A.2.6:20.1 - SoTA-Echoing - F-Cluster Unification for A.2.6 (F.17 and F.18)
+A stated domain condition and its calibration calculation can answer a standalone mathematical applicability question. For the adhesive, apply the calibration rule and compare the resulting interval with the supported range. When that result is used by an FPF rule requiring scope membership, identify the condition as the required scope value, identify the target slice and perform the guard. Capability gating uses `U.WorkScope` and the other conditions of §10.3; claim use follows its Claim-scope guard. Neither case requires an additional result record unless the receiving use needs one.
+
+USM's additional result is an independently identified scope that further uses can compare, intersect across dependencies, combine across independently supported alternatives, or translate under declared rules. The API-and-dataset use in §11.4, for example, needs one common slice to satisfy both component scopes; a changed dataset edition changes that joint result. The domain argument supplies each applicability condition, the calibration or performance claim, and the justification for relying on it.
+
+#### A.2.6:20.1 - SoTA-Echoing - Source distinctions and scope terminology
 
 > **Intent.** This annex compares **USM** terms with usage in the sources below and explains the **Unified Tech** and **Plain** names used in A.2.6.
 
-##### A.2.6:20.1.1 - F.17 Unified Term Survey (UTS) — Method & Scope
+##### A.2.6:20.1.1 - Comparison basis
 
-**Compared sources:**
+**Compared sources and the passages used here:**
 
-1. **ISO/IEC/IEEE 42010** (architecture description)
-2. **OMG Essence** (Kernel: Alphas, Work Products, States)
-3. **NIST AI RMF 1.0/1.1** (trustworthy AI)
-4. **ASME V\&V 40–2018 / FDA 2021–2023** (model credibility)
-5. **W3C SHACL (2017+) / SHACL‑AF** (data constraints)
-6. **OWL 2 / ontology engineering (2012+, current practice)**
-7. **IETF BCP 14 (RFC 2119/8174)** (normative keywords & guard style)
-8. **DO‑178C + DO‑333** (avionics, formal methods supplement)
-9. **ISO 26262:2018/2025** (automotive functional safety)
-10. **IEC 61508 (2010+, current revisions)** (basic safety)
-11. **ACM Artifact Review & Badging v1.1** (reproducibility signals)
-12. **MLOps/Cloud SLO practice (SRE / platform)** (operational guardrails)
+1. [ISO's published scope for ISO/IEC/IEEE 42010:2022](https://www.iso.org/standard/74393.html), *Software, systems and enterprise — Architecture description*.
+2. [OMG Essence 1.2](https://www.omg.org/spec/Essence/1.2/PDF), October 2018, §9.3.3.5–9.3.3.7 and §9.3.4.9–9.3.4.11.
+3. [NIST AI 100-1, *AI RMF 1.0*](https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf), January 2023, §3.1 and §5.2/MAP.
+4. [FDA, *Assessing the Credibility of Computational Modeling and Simulation in Medical Device Submissions*](https://www.fda.gov/media/154985/download), final guidance, 17 November 2023, §IV and §VI.A, including definitions attributed there to ASME V&V 40–2018.
+5. [W3C SHACL](https://www.w3.org/TR/2017/REC-shacl-20170720/), Recommendation, 20 July 2017, §2.1.2–2.1.3; [SHACL Advanced Features](https://www.w3.org/TR/2017/NOTE-shacl-af-20170608/), Working Group Note, 8 June 2017, §3.
+6. W3C OWL 2 Second Editions, Recommendations, 11 December 2012: [*Direct Semantics*](https://www.w3.org/TR/2012/REC-owl2-direct-semantics-20121211/), §2.2–2.2.3 and §2.3.2–2.3.3; [*Structural Specification and Functional-Style Syntax*](https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/), §3.1–3.4.
+7. IETF BCP 14: [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119.html), March 1997, as clarified by [RFC 8174](https://www.rfc-editor.org/rfc/rfc8174.html), May 2017, §2.
+8. [FAA AC 20-115D](https://www.faa.gov/documentLibrary/media/Advisory_Circular/AC_20-115D.pdf), 21 July 2017, §1, §4, §6, §8 and §10, describing use of RTCA DO-178C, DO-333 and DO-330 (13 December 2011).
+9. ISO's published scope summaries for ISO 26262 [Part 1: Vocabulary](https://www.iso.org/standard/68383.html), [Part 3: Concept phase](https://www.iso.org/standard/68385.html) and [Part 9: ASIL-oriented and safety-oriented analyses](https://www.iso.org/standard/68391.html), second editions, December 2018.
+10. IEC's [*Overview of IEC 61508 & Functional Safety*](https://assets.iec.ch/public/acos/IEC%2061508%20%26%20Functional%20Safety-2022.pdf), 2022, slides 9–18, alongside its [IEC 61508-1:2010 edition 2 description](https://webstore.iec.ch/en/publication/5515); HSE's older [*Control systems*](https://www.hse.gov.uk/comah/sragtech/techmeascontsyst.htm), “Proof testing”, for the effect of test intervals on a failure claim.
+11. ACM Artifact Review and Badging v1.1 as applied in [SIGSIM PADS 2022](https://sigsim.acm.org/conf/pads/2022/blog/artifact-evaluation/) and [CCS 2025](https://sigsac.hosting.acm.org/ccs/CCS2025/call-for-artifacts/), “Evaluation Criteria and Badges” and “Packaging Artifacts”.
+12. Google, [*Site Reliability Engineering*, Chapter 4: “Service Level Objectives”](https://sre.google/sre-book/service-level-objectives/), especially “Standardize Indicators” and “Defining Objectives”.
 
 **Terms compared:** `U.ContextSlice`, generic **Scope** and set algebra, **Claim scope (G)**, **Work scope**, **Bridge plus a separate bounded-use claim and reliance basis**, **Γ\_time**, **widen**, **narrow**, **refit**, **translate**, **SpanUnion**, **serial intersection**, separation from **F** and **R**, and avoidance of overloaded **validity** and **operation** terms.
 
-##### A.2.6:20.1.2 - UTS Table (F.17) — Cross‑context term mapping
+##### A.2.6:20.1.2 - Source term comparisons
 
 |  # | Context / Source      | Local label(s) (native)                                                     | Closest USM concept                                                                      | Notes on fit & deltas                                                                                                                                                                         |
 | -: | ------------------ | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|  1 | ISO/IEC/IEEE 42010 | *Architecture context; environment; stakeholder concerns; viewpoints and views* | **ContextSlice** (addressable slice); **Scope** as view‑specific applicability           | 42010 is about **views in context**; it has no first‑class set‑valued scope char but aligns with “evaluate **in a concrete context**” → USM uses explicit **slice tuples**.                   |
-|  2 | OMG Essence        | *Alpha State; Work Product State; Level of Detail (LoD)*                    | **Work scope** (guards), **Detail (D)** (LoD), **ESG/RSG**                               | Essence separates **status** (states) and **work evidence**; LoD is **detail**, not scope. USM treats **scope** as guardable membership over slices; states/LoD map to ESG & **D**, not to G. |
-|  3 | NIST AI RMF        | *Context of use; validity, reliability, robustness; monitoring*             | **Claim scope (G)**; **R** freshness/monitoring                                          | “Context of use” = **where a claim/model holds** → maps to **G**. “Validity” is part of **R** vocabulary; we **avoid** naming the characteristic “validity” to prevent LA confusion.          |
-|  4 | ASME V\&V 40 / FDA | *Context of use; credibility factors; verification/validation*              | **Claim scope (G)**; **R** (credibility)                                                 | Direct fit for G via “context of use”. Credibility/evidence freshness contribute to **R**, not to G; USM keeps them separate in guards.                                                       |
-|  5 | W3C SHACL          | *Shapes; targets (sh\:targetClass, sh\:target); constraints*                | **Claim scope** (targets define **where** constraints apply); **F** (explicit predicates with declared interpretation)   | SHACL “target” ≈ **membership predicate** on a dataset context; analogue of **Claim scope** on data slices; constraint language supplies predicates whose actual expression properties are assessed under C.2.3.                     |
-|  6 | OWL 2 practice     | *Class extension; domain/range; imports/version IRI*                        | **Claim scope** as class extension over an ontology context                              | Class extension is set‑semantics by design; **G** maps to extension over a versioned ontology (part of **ContextSlice**).                                                           |
-|  7 | IETF BCP 14        | *MUST/SHALL/SHOULD; requirements language*                                  | **Guard style** (observable predicates)                                                  | BCP 14 doesn’t define scope but dictates how guards are worded; USM aligns by requiring **observable, deterministic** membership checks.                                                      |
-|  8 | DO‑178C / DO‑333   | *Operational conditions; DAL; formal method objectives; TQL*                | **Work scope** (operating conditions); **F** (expressed formal properties and derivations), **R** (assurance objectives) | Operational applicability = **Work scope**; formal method objectives select needed expression properties; Tool qualification impacts **TA/R**, not G.                                                                  |
-|  9 | ISO 26262          | *Operational situation & operating modes; ASIL; OSED*                       | **Work scope** (operating modes/situations)                                              | OSED/operating modes define **where capability can be exercised** → **Work scope**. Assurance level (ASIL) relates to **R**, not G.                                                           |
-| 10 | IEC 61508          | *SIL; demand mode; proof test interval*                                     | **Work scope** (demand vs continuous mode) + **R freshness**                             | Mode concepts influence **where/how** a function can be claimed → **Work scope**; proof test interval sits in **R** (freshness/decay).                                                        |
-| 11 | ACM Artifacts      | *Available/Evaluated/Reusable; Reproduced/Replicated*                       | **R** signals; **ContextSlice** (reproduction environment)                               | Badges encode **evidence availability and warrant level**; the declared environment maps to a **slice**; scope of claim is often implicit → USM makes it explicit.                                     |
-| 12 | SRE / Cloud SLO    | *SLOs; error budgets; regions/tiers; rollout windows*                       | **Work scope** (regions/tiers) + **measures**; `gammaTime` only for a membership-changing rollout interval | SLO measures and error-budget windows stay in their measure or reliance guards. A rollout interval enters Work scope only when crossing its exact start or end changes whether that job slice belongs. |
+| 1 | ISO/IEC/IEEE 42010:2022, published scope | *Architecture description; entity of interest; architecture viewpoints; model kinds* | **Context slice** and **Scope** for a selected applicability question | 42010 specifies the structure and expression of architecture descriptions. A claim recorded in such a description may have a USM scope; construct its slices and predicate from that claim's conditions. A viewpoint does not by itself identify those values. |
+| 2 | OMG Essence 1.2 | *Alpha State; Work Product; LevelOfDetail; EntryCriterion; CompletionCriterion* | **D** for information detail; **ESG** for claim-use conditions in state transitions; **A.2.5** for assignment-state conditions used in **RSG**; **Scope** for applicability | Entry and completion criteria test an alpha state or work-product level of detail. Keep the information-detail aspect of LoD with D. Reuse a checklist condition in ESG or RSG only after identifying its claim-use or assignment-state meaning. Scope requires a separate condition delimiting applicable slices. |
+| 3 | NIST AI RMF 1.0, §3.1 and §5.2/MAP | *Context of use; targeted application scope; validity, reliability, robustness; monitoring* | **Claim scope (G)** for specified applicability conditions; performance measures and reliance grounds remain distinct | MAP places application scope within purposes, settings, affected people and risks. Extract conditions for the claim's scope predicate; preserve performance/risk assessment and monitoring. Interpret validity-related claims by content, and keep the source's performance reliability distinct from FPF **R**. |
+| 4 | FDA final guidance (2023), §IV and §VI.A; ASME V&V 40–2018 definitions reproduced there | *Context of use; model risk; credibility; verification and validation* | **Claim scope (G)** for extracted applicability conditions; **R** for justified reliance | The COU also states the model's role in answering a question and its use with other evidence. Preserve that decision relation when expressing applicability as a scope. Credibility is assessed for that use and its model risk; scope membership alone does not establish it. |
+| 5 | W3C SHACL §2.1.2–2.1.3; SHACL-AF §3 | *Shapes; focus nodes; targets (`sh:targetClass`; AF `sh:target`); constraints* | Target selection provides an analogy for delimiting applicability; **F** concerns expression properties | SHACL targets produce RDF terms to validate; constraints determine their conformance. A USM scope contains declared `U.ContextSlice` values. Identify those slices and their membership predicate before using the analogy; target selection alone does not establish that a claim holds. C.2.3 assesses the actual expression properties. |
+| 6 | OWL 2 Direct Semantics and Structural Specification, Second Editions | *Class extension; intersection/union; property domain/range; imports; version IRI* | Set extension as an analogy for scope algebra; ontology editions as selectors or interpretation inputs when applicable | Class extensions supply sets; property domain/range axioms imply membership of property-pair ends in specified classes or data ranges. Construct the corresponding USM slice domain independently. Imports supply ontology dependencies; version IRIs identify editions. An edition enters the slice when claim applicability depends on it; otherwise retain a required edition in the interpretation basis. |
+|  7 | [IETF BCP 14: RFC 8174](https://www.rfc-editor.org/rfc/rfc8174.html) | *MUST/SHALL/SHOULD; requirements language* | Requirement strength in normative guard statements | BCP 14 defines the special meanings of its uppercase requirement keywords. The observable, deterministic membership conditions are USM requirements; they do not follow from those keywords alone. |
+| 8 | FAA AC 20-115D on DO-178C, DO-333 and DO-330 | *Software level; formal-methods supplement; tool qualification level (TQL); life-cycle objectives and evidence* | **F** for actual expression and proof properties; **R** for justified reliance; scope kind follows the bounded claim or capability | The software level selects applicable objectives; the formal-methods supplement and tool qualification address distinct assurance work. A condition on a software or tool claim can delimit Claim scope, while a capability's operating conditions can delimit Work scope. Neither a level label nor a method name supplies the resulting FPF scope or assurance judgement. |
+| 9 | ISO 26262:2018, published scope summaries | *Item definition; hazard analysis and risk assessment; functional safety concept; ASIL-oriented analyses* | **Claim scope** or **Work scope** for stated applicability conditions | An operating situation or mode can supply a selector when it changes applicability of the receiving claim or capability. Item definition and safety analysis also determine domain requirements. Preserve those requirements and their evidence; an ASIL label alone supplies neither a scope nor a measured value of FPF **R**. |
+| 10 | IEC functional-safety overview; HSE control-systems explanation | *Safety function; SIL; demand/continuous mode; proof-test interval* | **Claim scope** or **Work scope** for stated operating conditions; performance requirements and reliance grounds remain distinct | SIL specifies safety-integrity requirements. A proof-test interval affects the basis of a failure-probability claim, so it cannot be reduced to evidence age. State which operating or maintenance condition bounds applicability and which support condition must hold before reliance. |
+| 11 | ACM artifact badging, PADS 2022 and CCS 2025 | *Available; Evaluated—Functional/Reusable; Results Reproduced/Replicated* | Evidence relevant to **R**; **Context slice** when the evaluated environment is explicitly identified | The badges distinguish availability, artifact assessment and independent result checks. Use the actual badge criteria, checked claim and environment when assessing support; the badges do not form a single FPF warrant scale. An environment description supplies slice selectors only when their schema and values are made explicit. |
+| 12 | Google SRE, “Service Level Objectives” | *SLIs; SLOs; measurement windows; workload classes; error budgets* | Performance **measures**; **Claim scope** or **Work scope** for stated service conditions | Keep metric definitions and aggregation windows with their measures. A workload class or region enters a scope when it changes applicability. In a USM rollout example, `gammaTime` enters scope only when crossing the declared start or end changes membership; an error-budget window alone does not establish that boundary. |
 
-**Summary.** Across all Contexts, two stable notions recur: (1) **evaluate in a concrete context** (→ `U.ContextSlice`), and (2) **declare where something holds or is deliverable** (→ set‑valued **Scope**). “Context of use,” “operating modes,” “targets,” “class extension,” and “OSED” are all Context‑flavored presentations of **Claim scope** or **Work scope**. Terms like *validity* and *operation* are semantically close but collide with **LA** and FPF’s **Work** and **Run** lexicon; we therefore **do not** adopt them as characteristic names.
+These comparisons suggest two useful questions: which conditions matter to the receiving use, and under which of them the claim or ability applies. A.2.6 answers them with independently identified slices and set-valued scopes. Choose Claim scope or Work scope from what is being bounded; the source term alone does not choose the scope kind. Preserve the source's decision relation, performance measures, safety requirements and evidence where the receiving use depends on them. Any relied-on translation follows §7.5.
 
-##### A.2.6:20.1.3 - F.18 Term Selection — Unified Tech & Plain names
+##### A.2.6:20.1.3 - Scope names and their use
 
 ###### A.2.6:20.1.3.1 - Selected names (normative)
 
@@ -873,7 +880,7 @@ A.2.6 needs a scope mechanism to express the set-valued condition under which a 
 | ------------------------------- | ----------------------------------------------- | ------------------------------------ | -------------------- | --------------------------------------------------------------------- |
 | Addressable evaluation context  | **`U.ContextSlice`**                            | **Context slice**                    | *Slice* (when local) | “domain” (as guard input), “latest” time                              |
 | Extensional scope value | **`U.Scope`**                                   | **Scope**                            | —                    | “applicability”, “envelope”, “validity” (as characteristic names)     |
-| Episteme applicability          | **`U.ClaimScope`** (*nick **G**)               | **Claim scope**                      | **G**                | “generality”, “applicability/envelope (of claim)”                     |
+| Claim applicability             | **`U.ClaimScope`** (*nick **G**)               | **Claim scope**                      | **G**                | “generality”, “applicability/envelope (of claim)”                     |
 | Capability applicability        | **`U.WorkScope`**                               | **Work scope**                       | —                    | “capability envelope”, “operational applicability”, “operation scope” |
 | Time selector                   | **`Γ_time`**                                    | **Time selector**                    | —                    | implicit “latest”                                                     |
 | Exact local-sense translation | **Obtaining F.9 Bridge + separate affirmative C.2.1 use claim + current A.10 or B.3 reliance** | **Bridge, translation rule and tolerance, checked reliance** | — | automatic Bridge use or treating a loss score as permission |
@@ -884,30 +891,32 @@ A.2.6 needs a scope mechanism to express the set-valued condition under which a 
 
 **Naming rationale:**
 
-* **“Scope” rather than “envelope/applicability/validity”.** “Scope” is idiomatic in SRE/SW; “validity” clashes with **Validation Assurance (LA)**, and “envelope” suggests geometry rather than **membership**.
+* **“Scope”.** This name designates the extension over independently identified slices; domain words such as “envelope” or “validity” require interpretation before that designation is warranted.
 * **“Claim scope” vs “Work scope”.** These names distinguish claim uses and capability uses of the common set-valued scope notion.
-* **Keep **G**.** The F–G–R triple is canonical; we retain **G** as nickname for **Claim scope**.
+* **G** names **Claim scope** in the F–G–R triple.
 * **“Context slice”** keeps the evaluation target addressable through its exact declared selector schema and values; one membership predicate may inspect only a projection without reidentifying the slice.
-* **“Operation”, “operating”, and “validity” avoided.** They are **overloaded** in existing FPF lanes (Work, Run, and LA) and create policy ambiguities in guards.
 
-###### A.2.6:20.1.3.2 - Phrasebook (for editors, normative)
+###### A.2.6:20.1.3.2 - Wording membership and scope changes
 
 * Use **“Claim scope (G) covers TargetSlice”** and **“Work scope covers JobSlice”** in guards.
 * When time changes membership, name exact **`gammaTime`** and its membership boundary; never say “latest.” A time-independent predicate need not inspect `gammaTime`, but keep every selector already declared in the slice.
 * To compose, say: **“intersection along dependency paths; SpanUnion across independent support lines.”**
 * When exact local-sense translation is current, say: **“through an obtaining F.9 Bridge and a separate affirmative C.2.1 claim for this direction, rule, and tolerance; rely on it only through the current A.10 or B.3 branch, then evaluate membership on the returned scope.”**
-* When widening/narrowing, write **“ΔG+ / ΔG−”** and log the support change; use **“Refit”** for unit/param normalization.
+* When widening/narrowing, write **“ΔG+ / ΔG−”**; use **“Refit”** for unit/parameter normalization only when the exact scope extension is preserved.
 
-###### A.2.6:20.1.3.3 - Rosetta summary (informative, for rationale box)
+###### A.2.6:20.1.3.3 - Source-phrase comparison summary
 
-| local context phrase                          | Use in USM wording                                          |
-| ------------------------------------------ | ----------------------------------------------------------- |
-| “Context of use” (NIST, ASME/FDA)          | **Claim scope (G)** on explicit **Context slice**           |
-| “Operating modes/situations” (ISO 26262)   | **Work scope** with measures & qualification windows             |
-| “Target (class/shape)” (SHACL/OWL)         | **Claim scope predicates** (membership)                     |
-| “Architecture view context” (42010)        | **Context slice** + **Scope** checks inside the view        |
-| “Capability envelope” (safety documents) | **Work scope**                                              |
-| “Domain” (informal)                        | **Context slice** elements; not acceptable as a guard input |
+Use these conditional paraphrases with the source distinctions in §20.1.2.
+
+| Local source phrase | Use in USM wording |
+| --- | --- |
+| “Context of use” (NIST, FDA/ASME) | Extract a particular claim's applicability conditions into **G** on stated slices; preserve the wider decision context. |
+| “Operating modes/situations” | May supply selectors for **Claim scope** or **Work scope**, according to what is bounded; retain performance and qualification conditions. |
+| “Target” (SHACL) | Selects RDF terms for validation. Construct any corresponding slice domain and scope predicate separately. |
+| “Class extension; property domain/range; imports/version” (OWL) | Class sets supply an analogy; property axioms, ontology dependencies and edition identity keep their own meanings. Construct the corresponding **Context slices** separately. |
+| “Architecture view context” (42010) | Locate the claim and its conditions, then construct the relevant slice and scope; the view's organization does not determine them. |
+| “Capability envelope” (safety documents) | **Work scope** when it delimits a capability's job slices, with performance and assurance requirements retained separately. |
+| “Domain” (informal) | Unpack the intended conditions into declared selectors and a predicate before using them in a scope guard. |
 
 
 ### A.2.6:21 - Relations - Cross-Pattern Coordination
@@ -915,12 +924,12 @@ A.2.6 needs a scope mechanism to express the set-valued condition under which a 
 #### A.2.6:21.1 - With F–G–R (C.2.2)
 
 * **G is Claim scope.** Use set algebra (∩ / SpanUnion).
-* **F** remains the expression rigor (C.2.3); **R** captures evidence currentness and bounded reliance. Observed loss may bear on the translation-use claim; its permitted-loss tolerance remains in that claim rather than in G or the Bridge profile.
+* **F** remains the expression rigor (C.2.3); **R** describes warrant strength under the declared scope, evidence and use conditions (C.2.2). Observed loss may bear on the translation-use claim; its permitted-loss tolerance remains in that claim rather than in G or the Bridge profile.
 * **Composition.** F follows C.2.3:15.1: the essential content and connecting inferences must provide the expression properties claimed for the whole. R follows the justified support-composition model or non-aggregate synthesis under C.2.2. G follows §7.2–§7.3 (set rules).
 
 #### A.2.6:21.2 - With Formality (C.2.3)
 
-* **No conflation.** Strengthening an expression property does not change **G** unless scope predicates change.
+* **No conflation.** Strengthening an expression property changes **G** only when the scope extension changes; a different expression alone can be a refit.
 * **Guarding rigor.** ESG may require named expression properties alongside scope coverage. A local ordinal threshold abbreviates them only under its declared C.2.3 scale and mapping.
 
 #### A.2.6:21.3 - With Work & Run (A.15)
@@ -935,7 +944,7 @@ A.2.6 needs a scope mechanism to express the set-valued condition under which a 
 
 #### A.2.6:21.5 - With Capability governance (A.2.2)
 
-* Capabilities MUST declare **Work scope**, **measures**, **qualification windows**; gates MUST verify all three.
+* For operational capability use, the capability declaration MUST identify **Work scope**, **measure bounds** and the applicable **qualification-window policy**; gates MUST check coverage, target satisfaction and qualification under §10.3.
 * Capability refits that preserve the set (unit changes) are **Refit**, not Δ(WorkScope).
 
 ### A.2.6:End

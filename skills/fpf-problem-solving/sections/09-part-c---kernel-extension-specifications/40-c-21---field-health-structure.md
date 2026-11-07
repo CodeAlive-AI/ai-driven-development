@@ -11,19 +11,18 @@ Use this pattern when a team must say something practical about the health, matu
 
 **What goes wrong if missed.** Field-health claims become attractive labels: incompatible readings are compared, ordinals are averaged, formal approval is treated as adoption, entropy and concentration are read in the same direction, stale evidence looks current, and a dashboard or standards list starts acting as the discipline or as proof of health.
 
-**What this buys.** A cold reader can recover one health claim, its Characteristic and Scale, the discipline and claim scope, the comparison and time or population basis, the measurement definition when one is used, and the exact extra relation required only for an actual cross-local comparison.
+**What this buys.** The practitioner can state and interpret a bounded health claim, compare compatible readings and identify what additional measurement or correspondence a proposed use still needs.
 
 **First useful move.** Name the discipline and practical question, choose one relevant Characteristic, state its scope and comparison basis, and say in ordinary language what the current material supports and what it does not. Stop there when the receiving use needs no measured comparison, aggregate, reusable series, or publication.
 
-**Not this pattern when.** Use C.20 to decide whether the candidate is a discipline, C.16 to construct a measurement, A.19 for comparison or aggregation work, F.9 only when the use actually relates distinct local senses, E.24.PUB for audience availability, G.12 for a reusable dashboard view, and G.4 for an acceptance threshold. C.21 supplies none of those results merely by naming a health Characteristic.
+**Not this pattern when.** Use C.20 to decide whether the candidate is a discipline, C.16 to construct a measurement, A.19 for comparison or aggregation work, F.9 only when the use actually relates distinct local senses, E.24.PUB for audience availability, G.12 for a reusable dashboard view, and G.4 for a selected formal acceptance interface. C.21 supplies none of those results merely by naming a health Characteristic.
 
-**Placement.** Part C, Cluster C.I. **Builds on:** C.20, A.17, A.18, C.16, A.2.6, C.2.1. **Coordinates with:** F.9, G.0, G.4, G.9, G.11, G.12, E.24.PUB.
 
 ### C.21:1 - Problem Frame
 
-A discipline can persist as its constituents and associated epistemes, practices, standards, institutions, and Work change. Teams routinely say “replication is improving,” “the field is fragmented,” or “standards are converging.” Such a sentence can be useful before it becomes a dashboard row, but any relied-on comparison needs exact Characteristic, Scale, measurement, scope, and basis semantics.
+A discipline can persist as its constituents and associated epistemes, practices, standards, institutions, and Work change. Teams routinely say “replication is improving,” “the field is fragmented,” or “standards are converging.” Such a sentence can be useful before it becomes a dashboard row, but any relied-on comparison needs exact Characteristic, Scale, scope and comparison-basis semantics, with measurement conditions when measured readings are used.
 
-C.21 therefore treats health as a vector of separately typed coordinate claims. It does not imply one scalar health value. A threshold or target band is an acceptance declaration under G.4, not part of the Characteristic. A dashboard is a representation over already constituted claims, not their ontology or authority.
+C.21 treats health as separately typed coordinate claims, not one scalar health value. A threshold or preferred band belongs to the receiving decision rule rather than the Characteristic; use G.4 when its formal acceptance interface is selected. A dashboard represents already constituted claims.
 
 ### C.21:2 - Problem
 
@@ -51,7 +50,7 @@ Five recurrent failures make discipline-health claims unreliable:
 
 #### C.21:4.0 - The objects used by DHC
 
-“DHC” names this vocabulary and method of use. It does not admit `U.DHCPack`, `U.DHCMethodSpec`, or `U.DHCSeries` as public kinds.
+“DHC” names this vocabulary and method of use.
 
 | Object | What it is | What it is not |
 | --- | --- | --- |
@@ -67,7 +66,7 @@ Rendering, measuring, assembling a series, uploading, and maintaining availabili
 
 #### C.21:4.0a - One replay basis for every persisted coordinate
 
-Every persisted, compared, aggregated, or published coordinate makes the following values recoverable. This is a field group, not another public kind:
+Every persisted, compared, aggregated or published C.16 measurement coordinate makes the following values recoverable. This is a field group, not another public kind. An ordinary non-measurement health claim retains its own support; writing or publishing it does not create a measurement chain:
 
 `DHCReplayBasis := <DisciplineRef, IntendedUse, ClaimScopeRef, ComparisonBasis, CharacteristicRef.edition, ScaleRef.edition, UnitRef.edition?, DHCMethodRef.edition, MethodRef, MethodDescriptionRef.edition?, MeasurementModelRef.edition?, CalibrationBasisRef?, TimeOrPopulationBasis, DHCDefinitionSetRef.edition?, TargetSliceRef?, DistanceDefRef.edition?>`
 
@@ -87,9 +86,9 @@ Each bullet below names one exact Characteristic and Scale family. A DHC use sel
 
 3. **PracticeAdoptionRate** — ratio in `[0,1]`; Unit `adopting_units/eligible_units`. Declare the population, adoption criterion, observation window, and treatment of partial adoption. Higher means wider observed adoption, not automatically better health or SoTA.
 
-4. **AlignmentDensity** — ratio; Unit `obtaining_relations/100_compared_cells`. Count only exact obtaining directed F.9 relations in the declared F.17 cell set. For each counted relation, state its orientation and admitted-use qualifier; keep observed loss in its evidence account, separate from any bounded-use claim under section 4.2. A higher value means denser declared alignment for that set; any health band belongs to G.4.
+4. **AlignmentDensity** — ratio; Unit `obtaining_relations/100_compared_cells`. Count only exact obtaining directed F.9 relations in the declared F.17 cell set. For each counted relation, state its orientation and admitted-use qualifier; keep observed loss in its evidence account, separate from any bounded-use claim under section 4.2. A higher value means denser declared alignment for that set; any preferred health band needs a receiving criterion, using G.4 when formal acceptance is selected.
 
-5. **DisruptionBalance** — interval reading over one exact disruption/consolidation method and corpus. Polarity is target-is-best, using an explicit target-band distance rule; the band belongs to G.4 Acceptance.
+5. **DisruptionBalance** — interval reading over one exact disruption/consolidation method and corpus. A receiving use may select target-is-best polarity with an explicit target band and distance rule. The raw reading supplies no preferred band; use G.4 when formal acceptance is required.
 
 6. **EvidenceUnitResolution** — ordinal, compare-only, under one exact segmentation scheme whose levels are nested, for example `artifact < section < claim < subclaim`. Higher means a finer addressable unit under that scheme. It does not say how many claims an artifact contains or how densely claims are supported.
 
@@ -109,16 +108,17 @@ A discipline-health use may add these coordinates when its question needs them. 
 
 12. **SemioSubstitutionPressure** — ordinal or ratio as separately declared, polarity lower-is-less-substitution-pressure. It asks how often a representation, fluent wording, record, dashboard, view, or source chain is mistaken for its engineering subject, relation, or claim.
 
-When either extension is active, add a short explanation naming the current claim kind or use boundary, the direct pattern and rule, admissible use, prohibited overread, and stop or reopen condition. The explanation is claim content, not a new evidence or assurance object.
+When either extension is active, explain the claim kind or use boundary and the direct pattern or rule that supports the reading. Include a limit, prohibited use or reopen condition when it changes how the result may be used.
 
 #### C.21:4.2 - Comparison and legality rules
 
-1. **Direct same-semantics comparison.** Compare readings directly when C.16's conservative conditions hold: the same measurement definition, Characteristic, Scale and Unit semantics, compatible model and calibration regime, and compatible time or population basis. Record the admitted comparison basis. Different source labels or editions alone require no Bridge.
+1. **Direct same-semantics comparison.** Compare readings under the same Characteristic and compatible Scale semantics and scope. Measured readings also retain C.16's applicable measurement-definition, model, calibration, Unit and time or population conditions. State the basis actually used; different source labels or editions alone require no Bridge.
 2. **Cross-local comparison.** When a comparison relies on a semantic relation between distinct F.17 local senses, cite the exact obtaining F.9 Bridge only after its predicate and dependencies hold. Keep its separate C.2.1 bounded-use claim, with the use, direction, correspondence rule, permitted-loss tolerance, and polarity, distinct from observed loss and current reliance. Follow F.9's A.10 reliance branch or, for an actual named assurance claim, its B.3 branch for the same bounded use. If the assurance use requires an R adjustment, cite the applicable domain model and keep the adjustment in that use's AssuranceResult. The relation supplies none of ClaimScope, measurement, comparison, or acceptance semantics.
 3. **Reference-plane crossing.** When a reading is used across distinct world, concept, or episteme planes, cite the exact crossing basis. Any R adjustment follows the named assurance-use and domain-model condition in rule 2. A dashboard row or source label does not establish the crossing.
 4. **Cross-scale transformation.** A conversion, normalization, distance, or aggregate names its exact Method, Scale, legal operation, and loss or uncertainty. No common scale is inferred from similar labels.
 5. **Freshness.** A persisted or reused coordinate carries its observation window and applicable currentness rule. Staleness leads to the receiving pattern's degrade, abstain, or reopen result; it does not rewrite the historical measurement.
-6. **Target bands.** “Target-is-best” is not “higher-is-better.” A comparison to a band uses an explicit distance-to-band rule and leaves the G.4 threshold separate.
+6. **Target bands.** “Target-is-best” is not “higher-is-better.” A comparison to a band uses an explicit distance-to-band rule and keeps the receiving acceptance criterion separate from the raw reading.
+
 | Scale family | Lawful ordinary operations | Prohibited shortcut |
 | --- | --- | --- |
 | nominal status | equality, membership, mode when justified | lifecycle ranking or arithmetic without an ordered scheme |
@@ -165,15 +165,15 @@ The compared cells are `OpenTelemetry:SLO/latency-objective@E4` and `VendorB:SLO
 
 `DisruptionBalance` is computed over one declared corpus and method edition. The result is interpreted against an explicit target band and distance rule; a higher raw value is not automatically healthier. Architecture decision records and fitness tests remain inputs or neighboring objects, not evidence that the field itself is healthy.
 
-### C.21:7 - Authoring Rhythm
+### C.21:7 - Making a health claim
 
 1. State the ordinary health question and smallest useful conclusion.
 2. Identify the discipline under C.20 and one exact Characteristic and Scale.
 3. State ClaimScope, comparison or observation basis, and time or population basis.
 4. Stop if an ordinary typed claim is enough.
-5. If measuring, comparing, or aggregating, recover the C.16 chain and DHC replay basis; add only the exact legal-operation and crossing branches used.
+5. If measuring, recover the C.16 chain and DHC replay basis. If comparing or aggregating, retain the compatible inputs and legal operation, adding the measurement, crossing or formal-interface conditions actually used.
 6. If repeated windows matter, construct a series episteme from exact result refs.
-7. If a dashboard matters, represent those results under G.12.
+7. Use G.12 when the needed dashboard represents measured DHC coordinate results.
 8. If audience availability matters, establish E.24.PUB publication separately.
 
 ### C.21:8 - Bias-Annotation
@@ -188,9 +188,9 @@ C.21 counters dashboard, standard-status, popularity, and pseudo-precision bias.
 | `CC-C.21-2` | `ClaimScope` is authoritative. A `TargetSliceRef` appears only when consumed and its exact relation to the scope is stated. |
 | `CC-C.21-3` | A minimal readable claim may stop without a definition set, EvidenceGraph, registry, dashboard, or publication apparatus. |
 | `CC-C.21-4` | Every persisted, compared, aggregated, or published coordinate carries the active DHC replay basis; no generic “metric edition” substitutes for an exact object. |
-| `CC-C.21-5` | Characteristic, Scale, Unit, polarity or target rule, and legal operations are coherent. Ordinals are not averaged and Units are not mixed. |
-| `CC-C.21-6` | Direct comparison uses C.16's compatible-semantics branch. A comparison that relies on a cross-local semantic relation keeps the obtaining F.9 relation, its separate bounded-use claim, observed loss, and current reliance distinct as specified in section 4.2. |
-| `CC-C.21-7` | Formal recognition and actual adoption or convergence are separate Characteristics; neither rank proves health or SoTA. |
+| `CC-C.21-5` | Characteristic, Scale, applicable Unit, polarity or target rule, and legal operations are coherent. Ordinals are not averaged and Units are not mixed. |
+| `CC-C.21-6` | Direct comparison uses the compatible-semantics branch in section 4.2, with C.16 conditions for measured readings. A comparison relying on cross-local semantic correspondence keeps the obtaining F.9 relation, separate bounded-use claim, observed loss and current reliance distinct. |
+| `CC-C.21-7` | Formal recognition and actual adoption or convergence are separate Characteristics; neither reading proves health or SoTA. |
 | `CC-C.21-8` | EvidenceUnitResolution, ClaimsPerArtifact, and SupportAnchorsPerClaim are separate; their constructions and Units are not interchanged. |
 | `CC-C.21-9` | Entropy and concentration are separate, with opposite directions explicit; any transformation and receiving Scale are declared. |
 | `CC-C.21-10` | Measurement definition, exact Method, MethodDescription, model, calibration, Work, result, result episteme, series episteme, dashboard representation, publication occurrence, form, and carrier remain distinct where present. |
@@ -203,7 +203,7 @@ C.21 counters dashboard, standard-status, popularity, and pseudo-precision bias.
 * Treating discipline health as one scalar before separately typed coordinates exist.
 * Treating `ClaimScope` and `TargetSlice` as two spellings for one object.
 * Requiring a Bridge merely because sources, schemes, or editions differ.
-* Comparing distinct local senses without the exact obtaining F.9 relation and loss.
+* Making a comparison that relies on semantic correspondence between distinct local senses without the obtaining F.9 relation and its use/loss basis.
 * Ordering formal status and adoption on one universal maturity ladder.
 * Calling `claims/artifact` and `anchors/claim` alternative Units of one Characteristic.
 * Writing `<entropy/HHI>` as if either formula produced the same reading.
@@ -214,7 +214,7 @@ C.21 counters dashboard, standard-status, popularity, and pseudo-precision bias.
 
 **Benefits.** Field-health claims remain readable, scale-admissible, comparable when justified, and reusable without turning a dashboard or standard into authority.
 
-**Costs.** A numerical or reused claim must expose its definition and comparison basis. A cross-local comparison must additionally expose the exact relation and loss.
+**Costs.** A numerical or reused claim must expose its definition and comparison basis. A comparison that depends on semantic correspondence between distinct local senses additionally needs the obtaining relation, bounded-use claim, loss account and applicable reliance basis.
 
 **Risks avoided.** False maturity ladders, hidden polarity reversal, scope substitution, Bridge inflation, stale trends, publication-as-result, and assurance-by-record are blocked.
 
@@ -227,15 +227,15 @@ Discipline health is not one thing. Reproducibility, formal recognition, adoptio
 | SoTA or practice anchor | Contribution used here | Non-overread |
 | --- | --- | --- |
 | Open Science Collaboration (2015), Munafò et al. (2017), and current reproducibility and metascience practice | Reproducibility, claim resolution, support visibility, freshness, and population definition remain separate coordinates and bases. | A field-level rate does not certify one claim as true. |
-| Fortunato et al. (2018) and Wu, Wang, and Evans (2019) disruption-index work | Disruption and consolidation are read through a declared corpus, method edition, and target band rather than a monotone novelty target. | Disruption is not quality, truth, safety, or usefulness by itself. |
+| Fortunato et al. (2018) and Wu, Wang, and Evans (2019) disruption-index work | Citation-based disruption and consolidation distinguish kinds of contribution within a declared corpus and method. Any preferred target band is a separate choice for the receiving use. | Disruption is not quality, truth, safety, or usefulness by itself. |
 | Standards lifecycle and ecosystem-adoption practice | Formal recognition and observed adoption are separate. | Official status, popularity, and convergence do not prove one another or SoTA. |
 | Plural-tradition and relation-mapping practice | AlignmentDensity counts exact obtaining directed relations with visible loss. | A relation count is not universal language, consensus, or authority. |
 | Diversity measurement practice | Entropy and concentration retain their separate constructions and directions. | Similar labels do not make their Scales interchangeable. |
 
 ### C.21:13 - Relations
 
-* **Builds on:** C.20 for the discipline, A.17-A.18 for Characteristic and Scale, C.16 for measurement and direct comparability, A.2.6 for ClaimScope and optional selected slices, and C.2.1 for result and series epistemes.
-* **Coordinates with:** F.9 for actual cross-local sense relations; G.0 and A.19 for numerical operation, comparison, or aggregation; G.4 for target bands and acceptance; G.9 for parity; G.11 for currentness and refresh; G.12 for dashboard representations; A.10/G.6 and B.3 only for named evidence-reliance or assurance uses; E.24.PUB for publication availability.
+* **Builds on:** C.20 for the discipline, A.17-A.18 for Characteristic and Scale, C.16 for measurement and comparability of measured readings, A.2.6 for ClaimScope and optional selected slices, and C.2.1 for result and series epistemes.
+* **Coordinates with:** F.9 for actual cross-local sense relations; G.0 and A.19 for numerical operation, comparison, or aggregation; G.4 for a selected formal target-band or acceptance interface; G.9 for parity; G.11 for currentness and refresh; G.12 for dashboard representations; A.10/G.6 and B.3 only for named evidence-reliance or assurance uses; E.24.PUB for publication availability.
 * **Constrains:** G.5 and G.10 when they consume a DHC coordinate: they carry the same active DHC replay basis rather than a generic method-spec or metric-edition pin.
 
 ### C.21:14 - Practitioner Quick Template
@@ -250,13 +250,13 @@ Minimal DHC claim
   Ordinary result: <what is supported; what is not>
 
 Only if measurement, comparison, or aggregation is current
-  DHC replay basis: <active exact refs and editions from C.21:4.0a>
+  DHC replay basis: <for measured inputs, active exact refs and editions from C.21:4.0a>
   TargetSlice: <optional; only if consumed, with relation to ClaimScope>
   Comparison branch: <direct compatible semantics | exact F.9 relation + separate use/direction/rule/tolerance claim + loss evidence + current reliance>
   Legal operation or target-distance rule: <exact ref>
 
 Only if a reusable series, dashboard, or publication is current
-  Series episteme: <exact coordinate-result refs and windows>
+  Series episteme: <only if repeated windows are needed; exact coordinate-result refs and windows>
   Dashboard representation: <optional G.12 row/slice refs>
   Publication: <optional E.24.PUB relation, audience, bounded use, form, carrier, interval>
 ```

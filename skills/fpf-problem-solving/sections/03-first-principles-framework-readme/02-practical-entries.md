@@ -1,8 +1,12 @@
 ## Practical entries
 
-The entries below illustrate questions that FPF can help answer; they do not exhaust its uses. Bring the actual difficulty from your project and use the search guidance in USING-FPF.md to find an individual method or a connected application. Search the Table of Contents for relevant entries, or ask an assisting agent to compare plausible candidates. If unfamiliar wording or limited access hides the needed material, `F.1:4.4` explains how to find inspectable passages and state the remaining search or access gap. A sufficient known source can end that lookup.
+The entries below illustrate questions that FPF can help answer. Bring the working question or use an ordinary occasion to discover what is worth asking, then use the search guidance in USING-FPF.md to find an individual method or a connected application. Search the Table of Contents for relevant entries, or ask an assisting agent to compare plausible candidates. If unfamiliar wording or limited access hides the needed material, `F.1:4.4` explains how to find inspectable passages and state the remaining search or access gap. A sufficient known source can end that lookup.
 
-The ordinary examples start with one direct pattern and retain any conditions for a later use. They can stop at the first useful result without a mantra. The Practical-Use Cards show another use: a difficult question whose answer normally draws on several pattern contributions. Their mantras show in compact form how that answer unfolds through those contributions, without turning the unfolding into a fixed workflow.
+The ordinary examples start with one direct pattern and retain any conditions for a later use. They can stop at the first useful result without a mantra. The Practical-Use Cards recall connected reasoning whose full explanation remains in its Methods. A suitable mantra can also help discover a consequential gap before difficulty is felt: [B.5.PI](../08-part-b---trans-disciplinary-reasoning-cluster/42-b-5-pi---initiate-inquiry-from-ongoing-work.md) explains how to select it, apply its connections to a case and obtain a question or justified continuation. This general inquiry does not require a project. A.1.STM applies it to systemic project reasoning and connects it with following an already noticed difficulty to its use basis.
+
+To find which costly or unavailable work deserves improvement, use [C.39.WI](../09-part-c---kernel-extension-specifications/101-c-39-wi---discover-worthwhile-method-improvements.md). Follow one consequential result, compare real alternatives and their complete burden, and distinguish a missing way from an explanation, access, provision or execution problem. The first result can be a warranted improvement undertaking, a retained possibility or a reasoned decision to continue current practice. An already understood, worthwhile and authorized remedy can be performed directly.
+
+When a correct local result leaves the original request unresolved, use [C.39.QR](../09-part-c---kernel-extension-specifications/97-c-39-qr---return-results-to-the-original-question.md). Recover what the recipient needs, identify how the partial work relates to it, and justify the returned conclusion. Then obtain the missing contribution or settle the qualified result. When the requested contribution is an explanation of a whole subject, [C.39.WA](../09-part-c---kernel-extension-specifications/98-c-39-wa---develop-an-account-of-the-whole-subject.md) develops its organizing grounds and connections and shows how they guide choices about parts. Examples make these operations concrete; varied cases reveal differences within the stated range.
 
 ### LIVE-WORK-STEERING — Choose the next action while Work is changing
 
@@ -16,9 +20,9 @@ The ordinary examples start with one direct pattern and retain any conditions fo
 
 - **Situation:** Several observations or records suggest a reusable way, but no Method has been established.
 - **Question:** What candidate explanation is supported, which real rivals remain, and which uncertainty can change the intended use?
-- **First useful result or blocker:** One source-traceable provisional account per candidate with real rivals and relevant gaps—or an honest record-only result. Include a useful distinguishing question when it changes recovery or receiving use; designing or undertaking a study is a separate choice.
+- **First useful result or blocker:** One source-traceable provisional account per candidate with real rivals and relevant gaps—or a qualified record-only result. Include a useful distinguishing question when it changes recovery or receiving use; designing or undertaking a study is a separate choice.
 - **Start with:** `A.3.1.MR`.
-- **Stop or return:** Stop at the strongest honest account or lowering result. Continue to `A.3.1`, or to `RMP.10` for a needed empirical programme or `RMP.11` for a needed historical inquiry, only when that further use is current.
+- **Stop or return:** Stop at the strongest supported account or lowering result. Continue to `A.3.1`, or to `RMP.10` for a needed empirical programme or `RMP.11` for a needed historical inquiry, only when that further use is current.
 
 ### PROFESSIONAL-RESULT — Use one result from another practice without transferring the decision
 
@@ -26,7 +30,7 @@ The ordinary examples start with one direct pattern and retain any conditions fo
 - **Question:** What does the available result support for this decision, and would an obtainable additional contribution warrant its whole acquisition burden?
 - **First useful result or blocker:** The supported answer with its necessary use limit, a worthwhile bounded result request, or the exact source, Method, capability, authority, access, evidence, or applicability blocker.
 - **Start with:** `A.15.9`.
-- **Stop or return:** Finish at the useful answer and its material limit; a remaining gap does not itself require a request or an explanation for omitting one. Select acquisition through A.15.9 when its contribution is worth obtaining. The supplier keeps its Method and professional authority; the receiver keeps the receiving decision. A title, document, delivery, provider label, or tool output transfers neither.
+- **Stop or return:** Finish at the useful answer and its material limit; a remaining gap does not itself require a request or an explanation for omitting one. Select acquisition through A.15.9 when its contribution is worth obtaining. The supplier keeps its Method and professional authority; the receiver keeps the receiving decision.
 
 ### NAMING — Give one identified thing a usable name
 
@@ -42,7 +46,7 @@ The ordinary examples start with one direct pattern and retain any conditions fo
 - **Question:** What decision depends on treating that entity as a System?
 - **First useful result or blocker:** Return to the direct non-system claim; recognize or reject the System reading; or name the missing construction fact or test.
 - **Start with:** `A.1.SCR`.
-- **Stop or return:** Stop at that direct result or exact blocker. A noun, assignment, capability, plan, or project label does not establish systemhood.
+- **Stop or return:** Stop at that direct result or exact blocker.
 
 ### TIME — Decide what a timing claim lets you do
 
@@ -58,15 +62,15 @@ The ordinary examples start with one direct pattern and retain any conditions fo
 - **Question:** What causal statement may the evidence support, and what stronger statement must not guide intervention or investigation?
 - **First useful result or blocker:** A supported statement and its limit, or the missing alternative, intervention, comparator, evidence path, identification result, or transport basis.
 - **Start with:** `C.28`.
-- **Stop or return:** Stop, narrow the claim, or abstain when support is insufficient. The causal-use result does not choose, deploy, publish, or certify by itself.
+- **Stop or return:** Stop, narrow the claim, or abstain when support is insufficient.
 
 ### MEASUREMENT — Make a number interpretable before relying on it
 
-- **Situation:** A reading, score, rating, sensor value, or dashboard number is being compared or used in a decision.
-- **Question:** What exact subject and characteristic were measured, on what scale and unit, by what method, and under what calibration and time stance?
-- **First useful result or blocker:** An interpretable attributed value with uncertainty and a use boundary, or the missing subject, scale, method, calibration, evidence, or validity window.
-- **Start with:** `C.16`.
-- **Stop or return:** Stop when the value supports the present comparison. Return when the subject, method, calibration, time stance, uncertainty, or use changes.
+- **Situation:** A proposed measurement needs a model, or a reading, score, rating or dashboard value needs interpretation before comparison or decision.
+- **Question:** What claim or model is needed, and which subject, Characteristic, Scale and rule give it meaning? For a measurement, how does the procedure produce an indication, and what can be inferred under its applicable unit, calibration, time and uncertainty conditions?
+- **First useful result or blocker:** A usable measurement relation or an interpretable attributed value with the uncertainty and use conditions its claim requires, or the exact missing contribution. A claim of performed measurement retains its observation and Work grounds.
+- **Start with:** `C.16` for a measurement claim; `C.16.P` while the value's meaning is ambiguous; `A.17`/`A.18` for a Characteristic or Scale question; `A.19.CPM` for comparison.
+- **Stop or return:** Stop when the model or value supports the present use. Return when its subject, governing rule, measurement conditions or use changes.
 
 ### MATHEMATICAL-MODELING — Obtain a useful consequence from a representation
 
@@ -76,31 +80,31 @@ The ordinary examples start with one direct pattern and retain any conditions fo
 - **Start with:** `C.29:4.1`. Use an adequate local equation or algorithm directly when no representation question remains.
 - **Stop or return:** Stop when the consequence answers the present use. Return when a changed assumption, lost distinction or execution condition changes that consequence. Validate correspondence to a phenomenon when the intended reliance requires it under `C.29:4.5a`.
 
-When the direct pattern is already known, open it rather than forcing the question into an example: `E.11.PFP` for framework publication, `E.11.DSG` for the DPF Suite Reference when a question spans several DPFs, `A.15.6` when *project*, *process*, or *case* hides the subject, `A.1.1` for model-use organization, `C.22.PFR` for an actual-problem claim, and `A.6.REL` for an obtaining relation. These are locators, not more selectable examples.
+When the direct pattern is already known, open it: `E.11.PFP` for framework publication, `E.11.DSG` for the DPF Suite Reference when a question spans several DPFs, `A.15.6` when *project*, *process*, or *case* hides the subject, `A.1.1` for model-use organization, `C.22.PFR` for an actual-problem claim, and `A.6.REL` for an obtaining relation.
 
 ### METHOD-CONSTRUCTION — Construct, connect and change methods for practical use
 
 - **Situation:** Relevant methods or operations exist, but their joining, explanation or adaptation is still missing for the work you need to do.
 - **Question:** How can I obtain the result, make the way usable by another practitioner, and change it without losing independently useful parts?
 - **First useful result or blocker:** One explained candidate way or connected account, its supported conditions and selective return after change; alternatively, the precise missing operation or basis.
-- **Start with:** [C.39:4](#c394---solution) supplies the general construction. Use a sufficient existing Method directly and stop. No framework authorship or pattern format is required.
-- **Stop or return:** Stop when the intended use has its adequate explanation. Reopen the connection whose condition fails; retain independent uses whose conditions still hold.
+- **Start with:** [C.39:4](../09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md#c394---solution) supplies the general construction. Use a sufficient existing Method directly and stop. No framework authorship or pattern format is required.
+- **Stop or return:** Stop when the intended use has its adequate explanation. Reopen connections affected by changed conditions; retain independent uses whose conditions still hold.
 
-For example, recording preparation can meet analysis at 3 ms and viewing at 8 ms under a qualified 2.5 ms timing bound. Tightening analysis to 2 ms reopens that branch without invalidating viewing. [C.39:5.3](#c3953---build-and-change-connected-studio-methods-without-a-framework) develops the preparation, its independent professional premises and that return. If the result must become a framework explanation, [E.4.CM:5.4](#e4cm54---apply-the-general-studio-construction-to-a-framework-publication) shows the additional public-content and pattern-form decisions.
+For example, a corrected recording with a qualified movement–sound mismatch bound of 2.5 ms over the receiving interval meets the 3 ms tolerance for movement analysis and the 8 ms tolerance for viewing. Tightening the analysis tolerance to 2 ms reopens that branch without invalidating viewing. [C.39:5.3](../09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md#c3953---build-and-change-connected-studio-methods-without-a-framework) develops the preparation, its independent professional premises and that return. If the result must become a framework explanation, [E.4.CM:5.4](../11-part-e---the-fpf-constitution-and-authoring-guides/06-e-4-cm---develop-connected-methods-as-framework-contribution.md#e4cm54---apply-the-general-studio-construction-to-a-framework-publication) shows the additional public-content and pattern-form decisions.
 
 ### WORK-OPPORTUNITY — Find a useful continuation before proposing change
 
 - **Situation:** Work meets its present requirements, or you have useful material but no settled question about what to change.
 - **Question:** What result could matter here, and is finding or proposing another way worth the work it creates?
 - **First useful result or blocker:** A supported local possibility, a question worth resolving, an exact missing contribution, or continuation of the present work.
-- **Start with:** Use [C.40](#c40---develop-branching-search-from-reusable-material) for material whose useful result is still open; [C.39](#c39---find-and-develop-a-way-to-obtain-a-result) when the result is known but its obtaining way is missing; [C.11.DUA](#c11dua---make-advice-and-evidence-demands-worth-their-burden) when a proposed change needs a value-and-burden judgement. Use adequate domain reasoning directly.
-- **Stop or return:** Stop at that first result, including no worthwhile advice. Reopen only the conclusion whose conditions change; existing obligations remain in force.
+- **Start with:** Use [C.40](../09-part-c---kernel-extension-specifications/105-c-40---develop-branching-search-from-reusable-material.md) for material whose useful result is still open; [C.39](../09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md) when the result is known but its obtaining way is missing; [C.11.DUA](../09-part-c---kernel-extension-specifications/24-c-11-dua---make-advice-and-evidence-demands-worth-their-burd.md) when a proposed change needs a value-and-burden judgement. Use adequate domain reasoning directly.
+- **Stop or return:** Stop at that first result, including no worthwhile advice. Reopen affected conclusions when their conditions change; existing obligations remain in force.
 
 Start with a bounded piece of available work: for example, replay an order queue using its durations and delivery conditions, or compare how two recipients use the same result. Try a supported variation of an operation, order, contribution or use; say which consequence it could change. A different word or an unusual observation is a lead, not a diagnosis. If the needed way is absent, construct and explain a local operation or identify its exact missing basis.
 
-Before proposing that variation, distinguish the larger work performed through the action from later work that uses its result. Use [B.1.5.EW](#b15ew---recover-how-constituent-actions-enact-encompassing-work) to recover unclear connections between the action, its constituents and the larger work, and [B.1.5.RS](#b15rs---evaluate-a-constituent-method-replacement-in-its-encompassing-uses) when replacing the action can affect another use. Follow a later result handover separately when it can change the proposal. Stop following the connections when further detail cannot change this continuation on the available basis.
+Before proposing that variation, distinguish the larger work performed through the action from later work that uses its result. Use [B.1.5.EW](../08-part-b---trans-disciplinary-reasoning-cluster/07-b-1-5-ew---recover-how-constituent-actions-enact-encompassin.md) to recover unclear connections between the action, its constituents and the larger work, and [B.1.5.RS](../08-part-b---trans-disciplinary-reasoning-cluster/08-b-1-5-rs---evaluate-a-constituent-method-replacement-in-its.md) when replacing the action can affect another use. Follow a later result handover separately when it can change the proposal. Stop following the connections when further detail cannot change this continuation on the available basis.
 
-Compare with continuing as at present. Thinking, obtaining evidence, explaining the advice, deciding and making the change can burden different people and resources. Include already committed work and other proposed changes in the same interval: two worthwhile changes can exceed shared capacity together. DUA supplies this comparison and returns to [C.11.CRC](#c11crc---configuration-relative-contribution-comparison) when a finite comparison is missing. Offer only the result whose contribution warrants that burden; explain its decisive conditions in the recipient's working language. A useful local answer can end the inquiry without a pattern recommendation or a record of refusal.
+Compare with continuing as at present. Thinking, obtaining evidence, explaining the advice, deciding and making the change can burden different people and resources. Include already committed work and other proposed changes in the same interval: two worthwhile changes can exceed shared capacity together. DUA supplies this comparison and returns to [C.11.CRC](../09-part-c---kernel-extension-specifications/22-c-11-crc---configuration-relative-contribution-comparison.md) when a finite comparison is missing. Offer only the result whose contribution warrants that burden; explain its decisive conditions in the recipient's working language. A useful local answer can end the inquiry without a pattern recommendation or a record of refusal.
 
 ### COMMUNICATION-FOR-USE — Make communication useful, then learn from what happens
 
@@ -116,14 +120,14 @@ Compare with continuing as at present. Thinking, obtaining evidence, explaining 
 - **Question:** What result actually exists, and which downstream question, if any, is current?
 - **First useful result or blocker:** The direct result plus the first needed reliance disposition, characterization, possibility-space claim, configuration-relative comparison, `ChoiceResult`, or missing basis.
 - **Start with:** Name the obtained result and use its direct pattern. Use `E.10.LRN` when *learning* hides the result; separate ambiguous claims and return each to its direct pattern. Continue to `A.10` only for actual reliance, `C.17`/`C.18` only for characterization or space change, `C.11.CRC` only for a missing finite realizable-configuration comparison, and `C.11` only for a live choice.
-- **Stop or return:** Stop when the present question is answered and before every non-current question. Observations, objectives, and characterizations retain their identities. Route the result articulated from a cue through its direct pattern; if its `A.16.1` cue pack remains current as a source or provenance, retain it separately.
+- **Stop or return:** Stop when the present question is answered. Observations, objectives, and characterizations retain their identities. Route the result articulated from a cue through its direct pattern; if its `A.16.1` cue pack remains current as a source or provenance, retain it separately.
 
 ### ACTUAL-TEMPORAL-STRUCTURE — Recover what actually obtains before testing coordination
 
 - **Situation:** A cycle, onset list, trace, notation, or geometry is called rhythm, but may be a prescription, representation, Method unfolding, or account rather than what obtains.
 - **Question:** Which subjects and relations support the selected structure, what grounds it, and is a coordination trial useful now?
-- **First useful result or blocker:** A.22-selected structure and grounded C.2.1 account—or missing bearer, relation, observation, or grounding. Keep future specifications and representations separate. For a selected coordination trial, add direct relations, conditions, observations, and next decision or stop.
-- **Start with:** Begin with actual changing subjects and their use. Recover changes, Work parts or a continuous carrier, plus obtaining relations; use A.3.4/A.15.1 for change or Work and C.27.TA for the temporal claim. Use A.22 to select one structure and C.2.1 to ground its account. Distinguish structure, account, future specification, representation, Method unfolding and Work; periodicity, onsets, notation or geometry alone establish no structure. For coordination, name bearers and direct relations. Only when a trial can change the decision and warrants its burden, compare feasible interventions, try one within bounds, observe, then decide or stop. Open specification, representation, decision, causal, trial or domain patterns as their questions arise.
+- **First useful result or blocker:** A supported temporal claim, or the missing bearer, relation, observation or ground. Establish an A.22-selected structure or a separately identified C.2.1 account when the receiving use needs it. Keep future specifications and representations separate. For a selected coordination trial, add direct relations, conditions, observations, and next decision or stop.
+- **Start with:** Begin with the changing subjects and the temporal claim needed for their use; C.27.TA supplies its conditions. Use A.3.4 or A.15.1 for a needed change or Work claim, A.22 when the organization requires a selected structure, and C.2.1 when its account needs separate identity. Preserve the distinctions among structure, account, future specification, representation, Method unfolding and Work. For coordination, name bearers and direct relations. Only when a trial can change the decision and warrants its burden, compare feasible interventions, try one within bounds, observe, then decide or stop. Open specification, representation, decision, causal, trial or domain patterns as their questions arise.
 - **Stop or return:** Stop when answered. Return when bearer, relation, constraint, grounding, intervention, or use changes; domain Methods stay in DPF.
 
 ### CONSEQUENCE-BEARERS — Find omitted Systems before closing a decision
@@ -132,11 +136,11 @@ Compare with continuing as at present. Thinking, obtaining evidence, explaining 
 - **Question:** Which other Systems may undergo a relevant change, through what supported relation or still-modal path, and what next step follows for the decision or investigation?
 - **First useful result or blocker:** A bounded consequence account with its focus, bearers or intended referents, obtaining or modal paths, changed characteristics, support, uncertainty, and material limit. A useful constraint, alternative, or explicit unknown can complete the answer; further discovery needs a worthwhile obtainable contribution.
 - **Start with:** Use `A.1.CSD` for the focus and receiving decision or investigation. Trace obtaining relations separately from modal paths, challenge the boundary and recover the relevant wholes; use `A.1.SCR` only when a candidate's systemhood is load-bearing. Qualify each change and keep each bearer's changes and conditions distinct. Leave through the direct evidence, causality, comparison, domain or value pattern only when that stronger question is current. Select further inquiry by individual and combined contribution and burden.
-- **Stop or return:** Return the smallest useful account with its material limit; it may change or hold open the named decision or investigation. Reopen when the focus, configuration, horizon, whole, relation support, bearer, observation, or receiving use changes.
+- **Stop or return:** Return a useful account with its material limit; it may change or hold open the named decision or investigation. Reopen when the focus, configuration, horizon, whole, relation support, bearer, observation, or receiving use changes.
 
 ### Practical-Use Cards
 
-These cards offer a non-exhaustive set of optional routes for extended work with a pattern language, each selectable by its situation and intended result and composable only from contributions current in the actual case.
+These cards offer optional routes for extended work with a pattern language, each selectable by its situation and intended result and composable only from contributions current in the actual case.
 
 The keys only help navigation. Compare cards by the situation and intended result, then open the direct patterns needed in the actual case. Skip a contribution whose question is not current, and stop at the first useful result or blocker.
 
@@ -156,13 +160,13 @@ The keys only help navigation. Compare cards by the situation and intended resul
 - **First useful result or blocker:** An interpreted calculation, proposed realization or located failure in the physical account, computation or execution.
 - **Mantra:** State the physical change sought. Construct the state and continuation needed to reason about it. Formulate the mathematical question and interpret its variables and operations. Obtain a result or computational procedure. Connect input preparation, system actions and output reading. Return to the physical question and repair the failed contribution.
 - **Start with:** `B.5.MPC` to connect available contributions and select the missing one. `C.29` constructs mathematical correspondence; `C.29.1` tests result transfer; `C.29.2` constructs computation; `C.29.3` connects it to an executing system. Subject engineering supplies physical laws and mechanisms.
-- **Stop or return:** Reuse ready contributions. Stop when the result suffices for the present decision. Reopen the contribution whose changed condition invalidates its use.
+- **Stop or return:** Reuse ready contributions. Stop when the result suffices for the present decision. Reopen contributions whose changed conditions invalidate their use.
 
 ##### Expansion for PHYSICAL-RESULT
 
 **Divide the work.** Give the next participant the result, what it denotes and the assumptions needed to use it. For the robot in `B.5.MPC:5.1`, the physical contribution supplies the motion model; the mathematical contribution relates distance to motor increments; the computational contribution produces an integer command and its rounding bound; the realization contribution checks what that command makes the controller do. People and AI agents can take these contributions according to their capabilities.
 
-Use `A.3.3` to construct a missing state account and `C.16` for a needed measurement relation. These are dependencies between results. A ready model or computation can be reused at its point of need. Slip can reopen the motion model, overflow the command representation, and changed timing the execution arrangement. A calculated displacement remains conditional on the model until actual motion is established.
+Use `A.3.3` to construct a missing state account and `C.16` for a needed measurement relation. These are dependencies between results. A ready model or computation can be reused at its point of need. Slip may call for revising the motion model; numeric overflow may require another command representation; a timing change may require a different execution arrangement. A calculated displacement remains conditional on the model until actual motion is established.
 
 
 #### ARCHITECTURE — Carry an outside need through structure and feedback
@@ -172,7 +176,7 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **First useful result or blocker:** One clear architecture question, candidate comparison, decision, or exact missing fact or constraint.
 - **Mantra:** Start with the outside change and who relies on it. Name the subject and pressure; separate facts from intended constraints; compare plausible structures; choose what the current decision needs; check what the realized structure produces; reopen when use, evidence, or structure changes.
 - **Start with:** `C.32.P2S`, then the pattern for the current question in `C.30`, `C.32`, `C.32.PAD`, or `C.30.AD`.
-- **Stop or return:** Stop when the first result makes the architecture work reviewable. The card is not a compulsory lifecycle.
+- **Stop or return:** Stop when the first result makes the architecture work reviewable.
 
 #### PRACTICE-ARCHITECTURE — Connect methods with their use, support and development
 
@@ -181,7 +185,7 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **First useful result or blocker:** One readable synthesis, one bounded development action, or the exact missing Work case, relation, or transfer evidence.
 - **Mantra:** Start from representative Work and its needed result, or a proposed use with a later-test condition. Keep Methods, Work, capabilities, providers, descriptions, tools and cultural processes distinct; compare the structures that conflict; develop a limiting capability when needed; test transfer in real Work; return when the method, provider, evidence or style changes.
 - **Start with:** `C.32.MWA`; use `E.23.CDI`, `E.23`, or `C.36` only for the question actually opened.
-- **Stop or return:** Stop when the synthesis or transfer result answers the decision. A method description is distinct from the method and from performed Work.
+- **Stop or return:** Stop when the synthesis or transfer result answers the decision.
 
 #### WORKING-DOCUMENTS — Make a document answer one use
 
@@ -189,26 +193,26 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **Question:** Do you need to check one view, reuse related views, show the same subject differently, see enough structure, compare named sources, or use an architecture description in a decision?
 - **First useful result or blocker:** A checked view, a reusable viewing approach, another presentation of the subject, an account of sufficient or missing structure, a source comparison, the architecture-description result needed now, or the exact blocker.
 - **Mantra:** Name who will use the document and what it must support. Check one view; prepare recurring views; show the subject another way; expose enough structure; compare sources; or use a description in architecture work. Keep document, subject, decision, and performed Work distinct. Stop when the needed result exists; return when its use or content changes.
-- **Start with:** `E.17.0` for one viewpoint; `E.17.1`/`E.17.2` for recurring use; `A.6.3.RT` for representation change; `C.33` for structural information; `E.17.ID.CR` for source comparison; `C.30.AD` for architecture-description use; otherwise use the direct pattern for the document result.
+- **Start with:** `E.17.0` for checking one view against its viewpoint; `E.17.1`/`E.17.2` for recurring use; `A.6.3.RT` for representation change; `C.33` for structural information; `E.17.ID.CR` for source comparison; `C.30.AD` for architecture-description use; otherwise use the direct pattern for the document result.
 - **Stop or return:** Stop when that result answers the use. One file may carry several results without merging them.
 
 
 #### OPTION-COMPARISON — Keep unlike option results distinct
 
 - **Situation:** Labels such as *build*, *buy*, *reuse*, *provider*, *internal*, *outsource* or *AI* need comparison; uncertainty blocks costly commitment; or advice demands costly or infeasible work.
-- **Question:** Form complete ways, compare or retain candidates, govern a pool, prepare options for another chooser, choose now, or repair an evidence demand?
-- **First useful result or blocker:** A complete-enough same-result way set, comparison or retained set, pool rule, prepared `OptionSet`, `ChoiceResult`, usable advice, answer to the blocking question or exact gap.
+- **Question:** Do you need to form complete ways, compare or retain candidates, govern a pool, prepare options for another chooser, choose now, or repair an evidence demand?
+- **First useful result or blocker:** A sufficiently developed set of ways to obtain the same result, comparison or retained set, pool rule, prepared `OptionSet`, `ChoiceResult`, usable advice, answer to the blocking question or exact gap.
 - **Mantra:** Name one result, use, situation, horizon, and acceptance basis. Turn labels into complete ways on one parity basis, keeping supported, proposed, and unknown premises visible. Compare or choose only when current; preserve worthwhile variants and gaps. For costly action, resolve only the uncertainty blocking commitment. Return when the result, basis, evidence, or use changes.
 - **Start with:** `C.11.DUA` for a demand's contribution or feasibility; `C.38` for incomplete ways; otherwise `A.19.ECS`, `C.18`, `C.19`, `G.5` or `C.11` for the current question. For costly commitment, select the current check in `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `C.11` or `A.15.5`.
-- **Stop or return:** Stop at the present question's result. Option descriptions establish neither choice nor capability, authority, Work, provision, delivery, acceptance or use.
+- **Stop or return:** Stop at the present question's result.
 
 
 
 
-#### PROBLEM-SHAPING — Stop at the earliest honest problem-side result
+#### PROBLEM-SHAPING — Stop at the earliest useful problem-side result
 
 - **Situation:** Something matters, but the team may have only signals worth preserving, a direction for inquiry, a question about competing explanations, or enough clarity to accept a problem statement.
-- **Question:** What can you honestly produce now: preserved signals, a routed direction for inquiry, an explicit question that contrasts possible explanations, or a problem statement ready for acceptance?
+- **Question:** What can the available material support now: preserved signals, a routed direction for inquiry, an explicit question that contrasts possible explanations, or a problem statement ready for acceptance?
 - **First useful result or blocker:** A preserved set of signals, a clear inquiry route, a question about plausible explanations, an accepted problem statement, or the exact missing anchor, route, subject, constraint, or acceptance basis.
 - **Mantra:** Keep what was noticed before declaring a problem. Route the inquiry only when the signal has a stable anchor. Ask about explanations only when the open question and contrast are clear. Accept a problem statement only when the subject, constraints, unresolved relations, important distinctions, and basis can be stated. Stop at the earliest useful truth; return when its basis changes.
 - **Start with:** `A.16.1` for a cue pack, `B.4.1` for routed cues, `B.5.2.0` for an abductive prompt, and `C.22.2` for an accepted `ProblemCard`.
@@ -225,21 +229,21 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 
 #### WORDING — Repair language without replacing the project question
 
-- **Situation:** A load-bearing sentence hides the subject, relation, kind, use, or nearby false inference.
+- **Situation:** A load-bearing sentence hides the subject, relation, kind or use, or invites a false inference.
 - **Question:** What should the reader understand and do, and which distinctions matter for that use?
 - **First useful result or blocker:** One plain repaired sentence, direct clarification, local naming result, or exact missing subject, sense, test, or reader use.
 - **Mantra:** Recover the ordinary project sentence first. Name what it is about, what it claims, and who must use it; add ontological distinctions only where they change truth, understanding, or action; choose a durable name only when later use needs one; rewrite in plain technical language; check that a reader without private context can recover the intended claim and action; retain a guard only under F.19's full grounded-contribution test; return to the domain task.
 - **Start with:** `F.19`; use `E.10` for unresolved FPF wording, and `F.18`, `F.0.1`, `F.9`, or the subject's direct pattern only when needed.
 - **Stop or return:** Stop when the reader can understand the claim and carry out its intended use. Do not continue ontology work after the language problem is solved.
 
-#### SOTA-PORTFOLIO — Move from a plural field to the cheapest useful result
+#### SOTA-PORTFOLIO — Use a plural field of approaches to answer your question
 
 - **Situation:** A project needs the modern field of approaches rather than one popular answer and may later need maintained domain guidance.
 - **Question:** What plural view is adequate now, and does the remaining problem call for reuse, a contribution, another product, a DPF or LPF, or no maintained result?
 - **First useful result or blocker:** One source-linked SoTA view, live option set, reuse route, framework decision, or exact missing scope or maintenance basis.
-- **Mantra:** Name the practical question, scope, freshness need, and rival traditions. Build a source-linked plural view; preserve disagreement, source-use limits and constructions; compare useful approaches; try cheaper reuse or contribution first; open a framework decision only for a recurring unmet problem; author and test the needed patterns; refresh when the field or use changes.
+- **Mantra:** Name the question, scope, freshness need and rival traditions. Build a source-linked plural view; preserve disagreement, source-use limits and constructions; compare useful approaches; compare reuse or contribution with framework authoring and maintenance; open a framework decision only for a recurring unmet problem; author and test the needed patterns; refresh when the field or use changes.
 - **Start with:** `G.2`; add `C.18`, `C.19`, or `G.5` for the set and the E.4/E.9 authoring route only if a framework is selected.
-- **Stop or return:** Stop at the first adequate maintained or one-off result. If allocation to familiar patterns loses a source’s construction, use `FPF.Reference:16.5` to identify the missing result, obtain it through the appropriate subject method and return to the original use. A source pack or proposal is not a framework by appearance.
+- **Stop or return:** Stop at the first adequate maintained or one-off result. If allocation to familiar patterns loses a source’s construction, use `FPF.Reference:16.5` to identify the missing result, obtain it through the appropriate subject method and return to the original use.
 
 #### SYSTEM-DELIMITATION — Separate parts, selected boundary, and crossings
 
@@ -248,4 +252,4 @@ Use `A.3.3` to construct a missing state account and `C.16` for a needed measure
 - **First useful result or blocker:** One exact part or assembly fact, boundary choice, crossing relation, selected structure, or missing participant, predicate, constraint, or use.
 - **Mantra:** Start with the recognized System and decision. Recover parts and assembly as facts; keep external participants outside the part list; choose a boundary only when alternatives matter; name every crossing by its own relation; select a joint structure only when organization changes the decision; reopen when identity, facts, use, crossings, or constraints change.
 - **Start with:** `B.1.2`, `A.14`, and `C.13`; use `C.11`, `C.32.PAD`, the direct relation pattern, or `A.22` only when needed.
-- **Stop or return:** Stop at the smallest result answering the decision. If system recognition is unresolved, return to `A.1.SCR`.
+- **Stop or return:** Stop when the result answers the decision. If system recognition is unresolved, return to `A.1.SCR`.

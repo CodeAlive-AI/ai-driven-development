@@ -1,0 +1,5 @@
+## KCAE.Reference:8 - Using and changing this account
+
+The Readme and index select entry; this Architectural Reference explains the whole; the patterns supply repeatable operations; the applications expose connected use; the profiles and references preserve source returns and replaceable engineering choices. The overview deliberately omits implementation detail and per-use evidence. Return to the named pattern when constructing an operation, to the application when a connection is unfamiliar, and to the source when a claimed mechanism or limit changes the design.
+
+Change the smallest explanation whose promise has changed. A new source format reopens extraction and addressing. A model change reopens its question/threshold qualification. A new privacy constraint can eliminate a remote route. An altered work event can invalidate an observer. A demonstrated new kind of useful question can justify another representation or a revised recognition cue. Preserve unchanged results, and test the receiving use after the change. KCAE.Reference:12 explains when to revise the framework and its uses.

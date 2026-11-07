@@ -5,18 +5,17 @@
 **Tag.** architectural pattern; *generator chassis* (design‑time kit / authoring scaffold)
 **Normativity.** normative, except sections explicitly marked *informative*
 **Stage.** *design‑time* authoring of a generator‑kit with a *run‑time* execution façade (policy‑governed; edition‑aware)
-**Primary output.** the **six‑card chassis** `M1…M6` published as a **complete, reusable CG‑Frame kit**, plus a versioned **kit manifest** `CGKitId` that binds the six cards as a single reusable unit (view‑friendly inventory + wiring surface)
+**Primary output.** the **six‑card chassis** `M1…M6` published as a **complete, reusable CG‑Frame kit**, plus a versioned **kit manifest** `CGKitId` that binds the six cards as a single reusable unit
 **Primary hooks.** see **§12 Relations** (notably `G.Core`, `G.0`, `G.2`, `G.5`, `G.10`, `G.11`)
 **Working‑model first (informative).** prefer working models and didactic micro‑examples; escalate to formal harnesses only when risk warrants (per E.8).
-**Non‑duplication note.** Universal Part‑G invariants (tri‑state guard, set-return, penalties→`R_eff`‑only, crossing visibility, typed RSCR triggers, Default Governing Definition Index, P2W split, linkage discipline, shipping boundary) are located through `G.Core` and their governing definitions are **only cited** here.
+
 
 **Start here when.** You are authoring a reusable generator, selector, or set-result scaffold rather than a one-off plan, one-off comparison, or tool-specific method recipe.
 
-**First output.** The six-card chassis `M1…M6` published as a reusable `CGKitId`-bound kit with a scope anchor, local SoTA set, variant pool, shortlist surface, and refresh-ready wiring.
 
 **Neighboring FPF patterns.** Use `G.2` for the local SoTA set, `G.5` for governed set-return selection, `G.10` for shipping surfaces, `G.11` for refresh wiring, and `F.17` when the result must also land on a human-facing UTS surface.
 
-**Common wrong neighboring-pattern changes.** If the real entry load is only a one-off governed comparison or shortlist, use `A.19.CPM` for comparing an admitted profile pair under an explicit comparator, `G.0` for comparison legality, or `G.5` for the shortlist; if the real entry load is project alignment rather than kit authoring, use `A.15`; if tooling choice is being treated as the first kit candidate, keep the case here only after the chassis and its bindings are explicit.
+**Use another pattern when.** For a one-off governed comparison, use `A.19.CPM` to compare an admitted profile pair under an explicit comparator, with `G.0` for comparison legality; use `G.5` for a shortlist. For project alignment, use `A.15`. When authoring a kit, make the chassis and its bindings explicit before choosing implementation tooling.
 
 ### G.1:1 - Problem frame
 
@@ -39,7 +38,7 @@ This pattern is intentionally **a chassis**, not a method specification:
 
 ### G.1:2 - Problem
 
-Without a chassis, CG‑Frame authoring tends to fail in repeatable ways:
+Without the connections supplied by the chassis, a CG-Frame kit can have the following gaps:
 
 * **SoTA is not locally scoped**: inputs are “in the air”, not a reconstructible set.
 * **Generation is ad‑hoc**: variant candidates are emitted without a stable trace of why/when/how.
@@ -133,7 +132,7 @@ The chassis is *view‑friendly*: it is an inventory of “what exists and how i
   * `ReferenceMap` *(cite `G.0:CG‑Spec.ReferenceMap`; do not duplicate semantics)*
   * any declared crossing/policy pins *(pin set: `PartG.CrossingVisibilityPins`)*
 
-**Purpose:** provide the *single scope anchor* used by all downstream cards.
+**Purpose:** provide the single scope anchor used by the downstream cards. If the receiving criteria or comparison basis are not yet established, obtain them through `G.0:4.5.1` before binding M1; reuse an adequate existing frame.
 
 **Notes:** any spec-legality content is **cited** via `A.19.CN (CN‑Spec)` and `G.0 (CG‑Spec)` (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`); this card does not introduce a local “mini‑spec”.
 
@@ -387,10 +386,10 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 **Tell.** Use the six‑card chassis to make a CG‑Frame authoring effort reproducible: a scoped SoTA set, a traceable candidate pool, a set‑return shortlist, a publishable library index, and refresh readiness—without redefining spec-legality/selection/refresh governing definitions.
 
-**Show A (R&D multi‑criteria decisions; post‑2015 SoTA practice).**
+**Show A (R&D multi‑criteria decisions).**
 
 * **M1:** define `CG‑FrameContext` for “R&D decision options”, pin `CNSpecRef/CGSpecRef` editions, and publish `entityOfConcern` + `ReferencePlane`.
-* **M2:** build `SoTA_SetId` via `G.2` using a living‑review style funnel (e.g., PRISMA‑like trace + update cadence) and publish UTS stubs for reusable constructs.
+* **M2:** build `SoTA_SetId` via `G.2` using a living-review funnel with a declared update cadence and source-selection reporting (for example, PRISMA-style reporting) and publish UTS stubs for reusable constructs.
 * **M3:** emit a `VariantPoolId` where each candidate cites its emitter policy and provenance; if QD is used, wire `DescriptorMapRef.edition` and `DistanceDefRef.edition` via `G.1:Ext.NQD`.
 * **M4:** produce `ShortlistId` as a selected-set / shortlist surface via `G.5`, with acceptance predicates sourced from `G.4`.
 * **M5:** publish a `CGFrameLibraryId` indexing the chosen CHR/CAL/LOG bundles and UTS rows; register RSCR tests.
@@ -410,7 +409,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 * **Novelty bias:** over‑rewarding novelty at the expense of legality/assurance (mitigate by making acceptance and assurance pins explicit and governed).
 * **Algorithmic favoritism:** baking a preferred generator into “the chassis” (mitigate by keeping M3 method‑agnostic and putting method‑specific wiring into Extensions).
 * **Scalarisation bias:** collapsing selected sets or partial orders into a single score (mitigate by set‑return discipline pinned through `G.Core`).
-* **Hidden‑crossing bias:** implicit reuse across contexts (mitigate by explicit crossing pins and Bridge‑only routing via `G.Core`).
+* **Hidden‑crossing bias:** unqualified reuse across contexts (mitigate by retaining the correspondence and receiving-use pins required by `G.Core:4.2.3`).
 
 ### G.1:7 - Conformance Checklist (normative)
 
@@ -424,7 +423,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 | CC‑G1‑05          | `M4` MUST be wired to `G.5` (or explicitly cite `G.5` artefacts governed by cited patterns) and MUST preserve set-result outcomes. `SCRId` MUST be present (or recoverable from an explicitly cited SCR record) so the G.5 audit references are addressable; assurance content is required only for an actual named assurance claim; `DRRId` SHOULD be present when a decision‑rationale artefact is minted.   |
 | CC‑G1‑06          | `M5` MUST publish a library/index surface that points to referenced CHR/CAL/LOG artefacts and to any minted public ids (`UTSRowId[]`, Name Cards) via the canonical governing definitions (Part F), without introducing shadow specs (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`).    |
 | CC‑G1‑07          | `M6` MUST publish `CGKitId` and expose refresh-readiness wiring: canonical `RSCRTriggerKindId[]` applicability, minimal payload pins and RSCR test ids. Planned baseline references MUST follow `G.1:4.2.6`, including the additional references required when `A.15.3` applies; orchestration semantics MUST be cited to `G.11`. |
-| CC‑G1‑08          | Any method/discipline/generator specificity in `G.1` MUST be located in `G.1:4.4` as `GPatternExtension` blocks with `PatternScopeId`, `GPatternExtensionKind`, and `GoverningPatternId` (or `governing pattern not yet selected` only for Phase-3 seeds). If QD/illumination or Open‑Ended generator families are declared, the corresponding extension blocks MUST be present and MUST carry the edition and policy pins required by the governing pattern. |
+| CC‑G1‑08          | Any method/discipline/generator specificity in `G.1` MUST be located in `G.1:4.4` as `GPatternExtension` blocks with `PatternScopeId`, `GPatternExtensionKind`, and `GoverningPatternId`. If QD/illumination or Open‑Ended generator families are declared, the corresponding extension blocks MUST be present and MUST carry the edition and policy pins required by the governing pattern. |
 
 ### G.1:8 - Common Anti‑Patterns and How to Avoid Them (informative)
 
@@ -452,20 +451,20 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 
 ### G.1:10 - Rationale (informative)
 
-* **Why six cards?** It matches the minimal decomposition needed to keep scope, harvesting, generation, selection, publication, and refresh **explicitly separable** (and thus auditable and evolvable).
+* **Six cards** keep scope, harvesting, generation, selection, publication and refresh separately inspectable and changeable.
 * **Why “kit/index” rather than “pack”?** A CG‑Frame authoring effort must stay modular; shipping is a separate governing boundary (`G.10`).
 * **Why put method-specific wiring into Extensions?** It prevents conflating (i) universal invariants, (ii) frame‑specific kit surfaces, and (iii) method/generator families.
-* **Why working‑model first?** Many CG‑Frames fail due to premature formalism; a chassis with didactic micro‑examples improves correctness of pins, names, and boundaries before deep formalisation.
+* **Working models and micro-examples** let authors check pins, names and boundaries before deeper formalisation.
 
 ### G.1:11 - SoTA‑Echoing (informative)
 
-This chassis is designed to stay compatible with modern (post‑2015) practice without confusing “SoTA” with “currently popular”:
+The following practices connect to the chassis through its governed modules:
 
-* **Evidence synthesis:** living systematic review protocols (e.g., PRISMA‑style traceability and update cadence) map naturally to M2 wiring governed by `G.2`.
-* **Quality‑Diversity and archives:** modern QD families (MAP‑Elites‑class, CMA‑ME‑class, and related archive‑based exploration) fit as M3/M4 extensions (`C.18`/`C.19`) because they require explicit descriptor/distance/insertion pins and preserve set‑valued outcomes.
-* **Open‑ended exploration:** post‑2015 open‑endedness systems (POET‑class, paired/adversarial environment generation lines, and modern curriculum‑generation approaches) fit when treated as generator‑family wiring (governed elsewhere) rather than as chassis semantics.
-* **Set‑valued decision outputs:** modern multi‑objective and set‑valued evaluation practices align with the `G.Core` set‑return discipline, preventing hidden scalarisation.
-* **Governed traceability:** contemporary reproducibility and accountability norms (mechanism disclosure, provenance anchors, and audit trails) are supported via pinned policies/editions and explicit module boundaries, without introducing data‑governance machinery.
+* **Evidence synthesis:** systematic and living reviews use explicit selection criteria and source-selection reporting; living review also needs an update policy. M2 obtains these through `G.2`. PRISMA-style reporting can make the source selection inspectable.
+* **Quality‑Diversity and archives:** QD families (MAP‑Elites‑class, CMA‑ME‑class, and related archive‑based exploration) fit as M3/M4 extensions (`C.18`/`C.19`) because they require explicit descriptor/distance/insertion pins and preserve set‑valued outcomes.
+* **Open‑ended exploration:** open-endedness systems (POET‑class, paired/adversarial environment generation lines, and curriculum-generation approaches) fit when treated as generator‑family wiring (governed elsewhere) rather than as chassis semantics.
+* **Set‑valued decision outputs:** multi-objective and set‑valued evaluation practices align with the `G.Core` set‑return discipline, preventing hidden scalarisation.
+* **Governed traceability:** pinned policies and editions make the selected mechanisms and provenance inspectable across module boundaries.
 
 ### G.1:12 - Relations
 

@@ -1,0 +1,11 @@
+## HCE.Reference:5 - Why a specialized Suite rather than one larger DPF?
+
+Human capability engineering is a specialization of engineering by its target and its human mechanisms. [Engineering (Engineering DPF Suite)](../../engineering-dpf-suite/_index.md) connects knowledge to constructing, changing and sustaining functioning systems. This Suite explains the human learning and somatic contributions at the level where their special conditions can be understood together. Separate publication coverage does not remove that engineering relation.
+
+Keeping HCD and SOM as independent publications linked only at individual uses would preserve their Methods, but leave their shared boundary and reciprocal constraints to be reconstructed repeatedly. Folding SOM into HCD would put the specialized bodily constructions inside the more general programme language and make direct somatic use harder to distinguish. The Suite retains both complete languages and makes their part–whole connection explicit. Their different generality is useful: SOM specializes one human contribution, while HCD also serves work without a bodily-learning difficulty.
+
+FPF Core supplies shared meanings for capability holders, Methods, work, support and evidence. The human mechanisms described here require the domain languages. Explanation Design, Music and Dance Practice Engineering and Embodied Rhythmics have their own subjects beyond changing a human capability. Their relevant contributions remain accessible without importing their whole fields.
+
+The cost of the two-language arrangement is that a question crossing programme and bodily-learning assumptions requires both accounts. Their direct entries and the connected example reduce that burden; a known local question still permits direct use. HCD and SOM each have one complete description in this Suite, rather than separately edited copies in different Suites.
+
+This first edition covers only part of the larger capability-engineering subject. Its value is the explained and usable connection it supplies now, including the point where a missing human mechanism or specialist result prevents continuation. The field can include other substantiated contributions without requiring them all in each use. A new professional label or a longer list of topics alone would not extend the available Methods.

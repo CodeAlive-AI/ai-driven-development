@@ -12,13 +12,13 @@ Use `F.0.1` when a word in an already selected source may be read in more than o
 
 The first useful result is one source-backed meaning statement. For example: “In OMG BPMN 2.0.2 (January 2014), *Process* here means the designed sequence or flow of Activities in an organization; this reading comes from §10.1.” If that answers the question, use it and stop.
 
-**What changes in practice.** A reader can inspect the source of the meaning without first creating a semantic container, record, relation, or assurance package. A stronger formal result is added only for a named later use.
+**What changes in practice.** The meaning and its source are inspectable from one statement. Add a formal result only when a named receiving use needs it.
 
 **Not this pattern when.** Use an already clear source claim directly when no lexical distinction changes the work. Use `F.1` when the open question is which sources can change the answer, `F.0.2` when several source ontologies must be compared for one receiving claim, and `F.18` when the problem is selecting an FPF term after the subject is settled. When the problem is not lexical, use the rule that defines or tests the exact entity, relation, claim, measurement, permission, or Work question. Use `F.9` only when an actual relation between already recovered source-local meanings is current.
 
 ### F.0.1:2 - Problem
 
-A string does not identify one meaning across sources. The same spelling can denote a designed structure, a performed occurrence, a status, a permission, a measurement, or another subject. If the source, edition, and passage disappear, a later claim can silently change its entity, relation, time stance, or intended use.
+A string does not identify one meaning across sources. The same spelling can denote different kinds of subject; for example, *process* can name a designed structure or a performed occurrence. If the source, edition, and passage disappear, a later claim can silently change its entity, relation, time stance, or intended use.
 
 The opposite response is also harmful. A full source survey, durable cell, provenance record, reliance disposition, or assurance claim for every word makes ordinary reading needlessly expensive. The problem is to recover one local meaning cheaply while keeping the point of escalation visible.
 
@@ -94,7 +94,7 @@ When a current claim or action actually relies on it, recover only the values th
 - **No transitive shortcut.** Two established relations through an intermediate meaning do not establish a direct third relation.
 - **Affected-only reopening.** A changed source premise reopens the claims that used it, not every claim that cites the edition.
 
-These are allowable conceptual moves, not storage fields, APIs, or mandatory workflow records.
+These examples illustrate the reasoning; they prescribe no storage format or workflow record.
 
 ### F.0.1:5 - Archetypal Grounding
 
@@ -148,7 +148,7 @@ Keep the verified formal reading and the unresolved cue separate. Relate them on
 - **Worked result — W3C ODRL Information Model 2.2 Recommendation (15 February 2018), §2.6.1, Permission Class.** A Permission allows an action on an Asset when its refinements and constraints are satisfied and its duties are fulfilled.
 - **Recognition cue — NIST RBAC.** If *role* is being used for an access-control grouping through which permissions are assigned, identify the exact NIST publication, edition, and passage before using that reading.
 
-The verified permission reading is not the unresolved role reading. A later access-control use may relate two source-backed meanings, but familiar wording alone establishes neither the relation nor interchangeability.
+Recover the RBAC *role* meaning from its source before relating it to the ODRL *Permission* meaning for a receiving access-control use.
 
 #### F.0.1:5.3 - Quick checks for later use
 
@@ -217,7 +217,7 @@ The verified permission reading is not the unresolved role reading. A later acce
 
 Local meanings become inspectable and revisable without forcing a global vocabulary. A reader sees when source selection, synthesis, naming, subject reasoning, or a cross-local relation is the real next question. Most uses become cheaper because one sentence and one citation can close them.
 
-The cost is explicit judgment about source, edition, passage, and meaning. A reusable cell or relation requires more work only when a later receiver needs it. This cost is preferable to hiding several different objects behind one generic container.
+The cost is explicit judgment about source, edition, passage, and meaning. A reusable cell or relation requires more work only when a later receiver needs it.
 
 ### F.0.1:10 - Rationale
 
@@ -234,7 +234,7 @@ The proportional split also protects practical use: one identified source can yi
 | Abd Nikooie Pour et al., *Results of the Ontology Alignment Evaluation Initiative 2025* (2025); Giglou et al., *LLMs4OM* (2024); Hu and Ichise, *From Matching to Retrieval: A New Role for LLMs in Ontology Alignment* (2025); and Qiang et al., *OAEI-LLM* (2024). | **Adapt.** Use lexical, structural, retrieved, or model-produced correspondences to find candidates worth inspecting; establish an F.9 relation only from the exact recovered senses and its relation profile. | A benchmark result, similarity score, or model answer establishes neither semantic identity nor the separate C.2.1 claim that a Bridge suits a receiving use. |
 | W3C SHACL (2017) and DCAT 3 (2024) separate constraints, validation, catalog metadata, versions, and provenance from described subject claims. | **Adapt.** Keep source and edition metadata recoverable and use a compact source note when useful. | Metadata form, validation, or provenance establishes neither meaning, truth, reliance, nor assurance. |
 
-The non-dominated combination is a plain local answer first, an exact durable address only for reuse, an inspectable relation only when current, and receiving-use judgment separately.
+Together, these choices support a plain local answer, with a durable address or explicit relation added only when the receiving use needs it. A Bridge's suitability for that use remains a separate judgment.
 
 ### F.0.1:12 - Relations
 

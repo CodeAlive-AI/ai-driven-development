@@ -1,6 +1,6 @@
 ## What FPF Is
 
-FPF is a pattern language for disciplined thinking in projects where ordinary prose, local expert judgment, or one-off AI output is not enough.
+FPF is a pattern language for making project reasoning explicit and checking the meanings, claims and connections on which action depends.
 
 It helps teams:
 
@@ -13,4 +13,4 @@ It helps teams:
 - carry architecture work from problem pressure to real structures and feedback instead of stopping at diagrams or decision prose;
 - grow domain or local frameworks from FPF Core without silently changing Core meaning;
 - repair confusing wording by first asking what the wording is doing in the project, not by swapping synonyms;
-- leave each pass with one useful next result: a clearer question, a better name, a comparison note, an evidence gap, a safer document, or a reason to inspect a specific pattern.
+- leave each pass with a useful result: a clearer question, a better name, a comparison note, an evidence gap, a document fit for its intended use, or a reason to inspect a specific pattern.

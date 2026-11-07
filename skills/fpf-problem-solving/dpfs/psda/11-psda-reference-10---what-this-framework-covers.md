@@ -1,0 +1,9 @@
+## PSDA.Reference:10 - What this framework covers
+
+Decision Design serves practitioners and assisting agents constructing and using problem formulations and decision models, including professional help for another's inquiry or decision. Its complete Methods cover formulations, boundaries, complementary models, inquiry through goals and dependencies, Method selection and combination, alternatives, values, uncertainty, consequences and robustness, together with engagement, participation and representation, protected facilitation, qualified recommendation, follow-up, repertoire, simultaneous inquiry, cultural continuation and development-direction advice. A recommendation, request, narrowed answer or reasoned abstention can complete that work without taking the recipient's later choice.
+
+Core C.11 supplies the decision-theory construction, C.40.OCN supplies general opportunity construction, and B.5.SD supplies joint substantive answer construction. The practitioner obtains their results when those questions are live and qualifies the joined use. Their availability does not require repeating them as additional PSDA Methods.
+
+PSDA.12 and PSDA.13 remain full professional Methods: participation channels, representation, attributed concerns, facilitator interests, consent, confidentiality, coercion protection and faithful return require their actual relationship and conditions. A correct model does not supply them.
+
+The development-direction profile explains a connected use; PSDA.19 supplies its separately reusable advice Method. The applications preserve the distinction between a useful opportunity, an analytical result, a recommendation, programme choice, learning design and actual performance. They are constructed teaching cases, not implementation or effectiveness evidence. An opportunity inquiry without an adviser can finish at its own result and does not invoke a service merely because it appears in a professional application.

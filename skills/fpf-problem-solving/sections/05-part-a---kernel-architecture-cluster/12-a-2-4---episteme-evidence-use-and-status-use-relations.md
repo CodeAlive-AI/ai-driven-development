@@ -11,9 +11,8 @@ Use this pattern when an episteme, such as a report's content, is being used as 
 Use it when the working question is:
 
 * which episteme is being used;
-* which claim, theory statement, status assertion, use, or causal-use question the episteme is being used for;
-* which effective source scheme (when interpretation depends on it), ClaimScope, grounding holon, polarity, relevance window, assurance use, weight model, and provenance constraints are current;
-* whether source wording such as "evidence role", "status role", "standard role", or "the report plays a role" hides an evidence-use, status-use, source-use, publication-use, assurance-use, gate-use, or causal-use relation;
+* for which claim or governed status it is being used;
+* which interpretation, scope and other §4.1 or §4.2 conditions change that use; and
 * whether the evidence-use or status-use relation is sufficiently specified for the intended reliance, or only enough for orientation, source-finding, a reversible probe, or a narrowed use.
 
 **Primary EntityOfConcern.** The `EntityOfConcern` is the evidence-use relation or status-use relation around an episteme.
@@ -22,9 +21,9 @@ Use it when the working question is:
 
 **What goes wrong if missed.** Producing or evaluating work is attributed to the document itself, a dataset is treated as if it were classified under a work-facing system-role kind, a dashboard status is used as permission, a proof is used outside its theory-version fence, or a simulation-only counterfactual output is relabelled as realized causal evidence.
 
-**What this buys.** A cheap first-use classification that identifies the episteme and its evidence-use or status-use relation. The further questions in §4.6 are answered through their direct patterns.
+**What this buys.** A first-use classification that identifies the episteme and its evidence-use or status-use relation. The further questions in §4.6 are answered through their direct patterns.
 
-**Not this pattern when.** Use A.13 to identify the actual performer and A.15.1 to admit performed Work independently. If the current result must also identify the assignment under which that Work was performed, check it separately through F.6. Use A.6.1 for actual bindings, and use the exact formal, measurement, causal, diagnostic, conformance, comparison, selection, acceptance, gate, permission, commitment, system-role-kind, assignment, or decision pattern for its local result. Use C.2.1 for the result episteme, A.10/G.6 for provenance and bounded reliance, G.11 for currentness, B.3 for assurance, F.10 or another direct status pattern for status, and E.17 for publication. A.2.4 classifies only the episteme's first evidence-use or status-use.
+**Not this pattern when.** For a local result beyond evidence-use or status-use classification, use its defining pattern as §4.6 explains. In particular, A.13 identifies an actual performer and A.15.1 admits dated Work independently; add F.6 only when the result must also identify the assignment under which that Work was performed.
 
 ### A.2.4:2 - Problem
 
@@ -59,8 +58,8 @@ Use direct relation patterns instead:
 
 | Current claim | Use |
 | --- | --- |
-| one episteme is used as evidence for one claim, effect, or bounded reliance use | `A.10`, with the A.2.4 evidence-use SlotKinds below |
-| evidence is used by an actual named assurance claim | `B.3`, after A.10 source/provenance recovery and bounded-reliance classification; A.2.4 supplies only the first-use classification |
+| one episteme is used as evidence for one claim, effect, or bounded reliance use | The evidence-use relation under A.2.4:4.1; use `A.10` when its source-to-use account remains implicit or must be replayable. |
+| evidence is used by an actual named assurance claim | `B.3`, with the source/provenance and use grounds required by that claim; reuse an adequate account, or use A.10 when it needs recovery or replay. A.2.4 supplies the first-use classification. |
 | the episteme itself is being identified, versioned, or distinguished from publication faces and publication carriers | `C.2.1` |
 | the use is causal, counterfactual, intervention-facing, or simulation-only | `C.28`, with the A.10 descriptive source/provenance path and the A.2.4 first-use classification as inputs |
 | the source says "status", "approved", "current", "valid", "stale", "ready", or another status-like value | `F.10` or the direct status, gate, permission, safety, or release pattern; A.10 for bounded reliance and B.3 for an actual named assurance claim |
@@ -123,7 +122,6 @@ Episteme evidence-use statement:
   CurrentnessRef:                      # G.11 when current
   ReceivingWorkAndUseRelationRef:      # when actual use is claimed
   RelianceDispositionRef:              # A.10 when reliance is judged
-  UnsupportedOverread:                # only when grounded and consequential under F.19:4
 ```
 
 #### A.2.4:4.4 - Minimal Status-Use Statement
@@ -140,7 +138,6 @@ Episteme status-use statement:
   CurrentnessRef:                      # G.11 when current
   ReceivingWorkAndUseRelationRef:      # when actual use is claimed
   RelianceDispositionRef:              # A.10 when reliance is judged
-  UnsupportedOverread:                # only when grounded and consequential under F.19:4
 ```
 
 A.2.4 does not fill a missing direct governor with a generic status, evidence, work-result, or evaluation-result relation.
@@ -176,9 +173,9 @@ Use A.2.4 only to classify evidence use or status use around the episteme.
 
 When episteme inception through work matters, A.15.PROD supplies the local entity-identity inception claim.
 
-#### A.2.4:4.7 - Shortcut cost and reopen condition
+#### A.2.4:4.7 - First-use boundary and reopen condition
 
-A.2.4 is the inexpensive first-use classifier. It may identify the episteme, target claim or status, effective source scheme when material, ClaimScope, polarity or value, window, intended use, applicable definition or constraint, and any unsupported overread grounded under F.19:4. It does not decide the source work, local result, provenance, currentness, assurance, causal support, gate passage, permission, commitment, publication interpretation, or receiving action.
+A.2.4 classifies the episteme's first evidence or status use. It may identify the episteme, target claim or status, effective source scheme when material, ClaimScope, polarity or value, window, intended use, and applicable definition or constraint. Questions about source Work, a local result, provenance, currentness, assurance or another receiving claim remain governed by their direct patterns.
 
 Open only the exact subject question whose predicate decides the use: A.13 for the actual performer; A.15.1 for independent Work admission; F.6 when the result must also identify the assignment under which that Work was performed; A.6.1 for actual bindings; the domain result predicate plus C.2.1 for result content; A.10/G.6 for provenance and bounded reliance; G.11 for currentness; B.3 for assurance; C.28 for causal use; F.10 for a status family; or E.17 for publication. Reopen the A.2.4 classification when the episteme, target claim/status, scope, polarity/value, window, or intended use changes.
 
@@ -194,7 +191,7 @@ Open only the exact subject question whose predicate decides the use: A.13 for t
 
 #### A.2.4:5.3 - Dashboard status cell
 
-A release dashboard displays `Ready`. A.2.4 may classify the cell as a status-use carrier for one named status assertion. The source register, scope, window, status value, G.11 currentness, and provenance must be recoverable. A.21 remains the pattern for any gate decision, C.11 any release decision, A.2.8.PER any permission, A.15.1 any performed work, and B.3 any assurance claim. A copied or stale cell establishes none of them.
+A release dashboard displays `Ready`. Recover the claim-bearing content of the cell and classify its episteme's status use separately from the display carrier. The source register, scope, window, status value, G.11 currentness, and provenance must be recoverable. A.21 governs any gate decision, C.11 any release decision, A.2.8.PER any permission, A.15.1 any performed Work, and B.3 any assurance claim. The cell's presence alone establishes none of them; its content may contribute to the argument under the applicable rule.
 
 #### A.2.4:5.4 - Simulation-only output
 
@@ -202,16 +199,7 @@ A simulation-output episteme is classified for one bounded C.28 claim. C.28 reta
 
 ### A.2.4:6 - Bias-Annotation
 
-This pattern mainly blocks six biases:
-
-* **episteme-as-system-role-holder bias**: an episteme is placed in `U.SystemRoleAssignment` because it is useful as evidence or status;
-* **evidence-name-as-kind bias**: an evidence-use label ending in *Role* is treated as a local system-role kind without a C.3 identity basis and membership criterion;
-* **status-display-as-authority bias**: a visible badge or status cell becomes gate passage, permission, or assurance;
-* **work-as-evidence-use collapse**: producing work, produced episteme, and later evidence use are treated as one relation;
-* **scope-free evidence bias**: target claim, grounding holon, claim scope, polarity, time, assurance use, or provenance constraints are omitted;
-* **causal laundering bias**: causal evidence classes are changed by source vocabulary rather than by `C.28` causal-use reasoning.
-
-The repair is to recover the episteme first, then recover the evidence-use, status-use, source-use, publication-use, assurance-use, or causal-use relation that is current.
+An evidence or status label can prompt readers to assume that the needed relation already obtains. Recover the episteme and its evidence-use or status-use relation before relying on that label. Apply the direct source, causal, or assurance rule when the receiving claim requires it.
 
 ### A.2.4:7 - Conformance Checklist
 
@@ -221,21 +209,20 @@ The repair is to recover the episteme first, then recover the evidence-use, stat
 | `CC-A2.4-2` Admitted job | The statement is only an evidence-use or status-use classification; no `U.EvidenceRole`, episteme-as-system-role-kind classification, assignment holder, or generic result kind is created. |
 | `CC-A2.4-3` Scope and interpretation | Effective source scheme when material, grounding holon, claim or status scope, polarity or value, and relevance or status window are explicit when they change the use. |
 | `CC-A2.4-4` Work | For any source-producing, measurement, proof-checking, evaluation, transformation, or receiving Work, A.13 identifies the actual performer and A.15.1 independently admits the dated occurrence. Add F.6 only when the result must also identify the assignment under which that Work was performed. The Method and direct-relation or A.6.1 bindings remain separate. |
-| `CC-A2.4-5` Local result | The domain-local result points to its exact formal, measurement, causal, diagnostic, conformance, comparison, selection, acceptance, gate, permission, commitment, system-role-kind, assignment, or decision governor. |
+| `CC-A2.4-5` Local result | When a domain-local result is claimed, identify the pattern passage that defines or constrains it. |
 | `CC-A2.4-6` Result episteme | The C.2.1 episteme that states the local result remains distinct from that result, carrier, and work. |
 | `CC-A2.4-7` Provenance/currentness | Use A.10 and G.6 for source recovery and provenance; use G.11 for currentness when it affects use. |
 | `CC-A2.4-8` Receiving use | When a particular receiving Work or receiving-use relation is asserted, name that Work and relation. Citation or availability alone does not establish actual use. |
 | `CC-A2.4-9` Reliance/assurance | A.10 defines the bounded `RelianceDisposition`. Use B.3 only when an actual named assurance claim is being made. If a direct domain rule requires one for the intended use, state that claim and its required basis first. |
 | `CC-A2.4-10` Publication/display | Publication face, generated explanation, credential view, evidence profile, ledger edge, or dashboard cell does not establish status, result, work, gate, permission, or decision by presence. |
 | `CC-A2.4-11` Causal boundary | C.28 is the pattern for causal-support components and results; source wording cannot promote simulation or observational evidence. |
-| `CC-A2.4-12` Unsupported overread | State the stronger claim not carried by this first-use classification and its reopen condition only when that warning passes F.19:4's full independent-ground, plausible-reader, contribution, and smallest-clear-correction test. |
 
 ### A.2.4:8 - Common Anti-Patterns and How to Avoid Them
 
 | Source wording | Failure | Repair |
 | --- | --- | --- |
 | "The report has EvidenceRole for Claim A." | Treats a source label as a system-role kind or assignment without recovering the actual relation. | Use an evidence-use relation with `EvidenceEpistemeSlot`, `EvidenceTargetClaimSlot`, scope, polarity, window, and provenance constraints when current. |
-| "Dataset X proves safety." | Treats dataset presence as proof, assurance, and safety claim. | Use `A.10` for evidence, `B.3` for assurance or safety assurance, and name unsupported attempted use. |
+| "Dataset X proves safety." | Treats dataset presence as proof, assurance, and safety claim. | Recover its claim-bearing content and use `A.10` for the evidence relation. Use `B.3` for an actual safety-assurance claim and state the supported use and any consequential limit. |
 | "The standard has normative role." | Role word hides standard-use, requirement-use, source-use, or publication-use. | Recover the relation governed by the current claim and apply `E.10.D2`, `E.17`, `F.10`, or the direct requirement pattern. |
 | "The badge is current, so release is allowed." | Status display becomes gate passage or permission. | Use status-use relation plus gate or release subject pattern; dashboard display alone is not a decision. |
 | "Simulation output is counterfactual evidence." | Simulator output is promoted to realized or interventional causal evidence. | Use `C.28`; keep `simulationResultRef`, model assumptions, validation, and bounded supported/unsupported use distinct from empirical, identification, estimate, and direct-sampling results. |
@@ -243,7 +230,7 @@ The repair is to recover the episteme first, then recover the evidence-use, stat
 
 ### A.2.4:9 - Consequences
 
-The positive consequence is a smaller ontology and clearer use. Admitted systems may be classified under exact local system-role kinds and may hold obtaining system-role assignments; epistemes are instead used through direct evidence-use, status-use, source-use, publication-use, requirement-use, definition-use, explanation-use, assurance-use, or causal-use relations.
+Admitted systems may be classified under exact local system-role kinds and may hold obtaining system-role assignments; epistemes are instead used through direct evidence-use, status-use, source-use, publication-use, requirement-use, definition-use, explanation-use, assurance-use, or causal-use relations.
 
 The cost is explicit relation recovery. A phrase such as "evidence role", "status role", "standard role", "proof role", or "benchmark role" no longer closes the claim. The user needs to recover which episteme, claim, scope, status, time window, provenance constraint, and direct pattern are current.
 
@@ -257,8 +244,8 @@ An episteme may be used for several claims or governed statuses. State each evid
 
 | Source | Practical distinction | Limit |
 | --- | --- | --- |
-| [C2PA Content Credentials 2.4, April 2026](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html), [W3C Verifiable Credentials Data Model 2.0, Recommendation 15 May 2025](https://www.w3.org/TR/vc-data-model-2.0/), [SLSA 1.2](https://slsa.dev/spec/v1.2/), and [in-toto Attestation Framework 1.2 with `Statement/v1`](https://github.com/in-toto/attestation/blob/main/spec/README.md) | Distinguish subject, issuer or producer, verifier, proof or status, time, inputs, and relying context. Use A.10/G.6 for source and provenance and G.11 for currentness; first-use classification remains separate from those questions. | A valid credential, manifest, signature, attestation, SLSA level, or displayed status does not become truth, permission, gate passage, work, result, or assurance. |
-| [ISO/IEC/IEEE 15026-2:2022, *Systems and software assurance — Part 2: Assurance case*](https://www.iso.org/standard/80625.html) | Cited evidence is distinct from the structure and maintenance of an assurance case. For an actual named assurance claim, use B.3 after A.10 source/provenance and bounded-reliance recovery. | Evidence presence, a confidence label, or an A.2.4 classification is not an assurance claim, safety result, readiness result, compliance result, or release confidence. |
+| [C2PA Content Credentials 2.4, April 2026](https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html), [W3C Verifiable Credentials Data Model 2.0, Recommendation 15 May 2025](https://www.w3.org/TR/vc-data-model-2.0/), [SLSA 1.2](https://slsa.dev/spec/v1.2/), and [in-toto Attestation Framework 1.2 with `Statement/v1`](https://github.com/in-toto/attestation/blob/main/spec/README.md) | Distinguish subject, issuer or producer, verifier, proof or status, time, inputs, and relying context. Use A.10/G.6 for source and provenance and G.11 for currentness; first-use classification remains separate from those questions. | When the receiving claim goes beyond what the credential or provenance check establishes, obtain its required grounds under the direct pattern. |
+| [ISO/IEC/IEEE 15026-2:2022, *Systems and software assurance — Part 2: Assurance case*](https://www.iso.org/standard/80625.html) | Cited evidence is distinct from the structure and maintenance of an assurance case. For an actual named assurance claim, use B.3 after A.10 source/provenance and bounded-reliance recovery. | Citation alone does not establish support for the assurance claim. |
 | Hernán and Robins, [*Causal Inference: What If*, 2020 book, online 26 April 2024 edition](https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/04/hernanrobins_WhatIf_26apr24.pdf) | Distinguish observational data, interventions, target-trial questions, counterfactual outcomes and estimands, identification assumptions, and realized results. C.28 governs the evidence class and causal-use result. | A causal label, model, target-trial analogy, or simulated counterfactual does not establish intervention, identification, realized outcome, or a causal-use verdict. |
 | Guizzardi et al., [*UFO: Unified Foundational Ontology*, Applied Ontology 17(1), 2022](https://doi.org/10.3233/AO-210256); related implementation accounts: [gUFO usage specification](https://nemo-ufes.github.io/gufo/overview.html) and Almeida et al., [*gUFO: A Gentle Foundational Ontology for Semantic Web Knowledge Graphs*, 2026 preprint](https://arxiv.org/abs/2603.20948) | Distinguish kinds and types, roles, relators and relations, events, and situations. In FPF, evidence-use and status-use SlotKinds name relation positions; they do not classify an episteme under a work-facing system-role kind or make it an assignment holder. | External `Role`, `Relator`, `Situation`, or OWL class vocabulary does not import a new FPF kind, replace an obtaining direct relation, or authorize an episteme system-role assignment. |
 
@@ -267,15 +254,15 @@ An episteme may be used for several claims or governed statuses. State each evid
 
 * **Builds on:** `A.2` for exact local system-role kinds, `A.2.1` for `U.SystemRoleAssignment`, `A.6.5` for SlotSpec discipline, and `C.2.1` for episteme identity and its distinct constitution, empirical-grounding, and edition relations.
 * **Coordinates with:** `A.10` and `G.6` for descriptive source/provenance paths; `G.11` for currentness; `B.3` for assurance; `C.28` for causal-use results; `F.10` for status families; `C.2.1` for result epistemes; exact domain patterns for local results; and `E.17`/`E.10.D2` for publication, view, explanation, and description-use cases.
-* **Separates from:** A.13 for actual performers; A.15.1 for independently admitted performed Work; F.6 when a receiving result must also identify the assignment under which that Work was performed; A.6.1 for actual bindings; A.15.PROD for episteme inception when current; gate, permission, commitment, system-role-kind, assignment, measurement, formal, diagnostic, conformance, comparison, selection, acceptance, causal, and decision patterns for their local results; and receiving-work patterns for actual later use.
+* **Separates from:** A.13 for actual performers; A.15.1 for independently admitted performed Work; F.6 when a receiving result must also identify the assignment under which that Work was performed; A.6.1 for actual bindings; A.15.PROD for episteme inception when current; the patterns that define or constrain the domain-local results; and receiving-work patterns for actual later use.
 * **Precision-restoration route:** When source wording says "evidence role", "status role", "standard role", or another role-shaped phrase around an episteme, use `E.10.ROLE` to recover the governed object or relation. Use `A.6.RSIR` only when the result is a relation participant meaning, declaration place, interface place, or representation position; use `E.10.ARCH` for the wider ontology-first repair architecture.
 
 ### A.2.4:12 - Lowering, Repair, and Refresh
 
 Lower an attempted A.2.4 use when the episteme is known but the target claim, scope, polarity, status value, time window, or provenance constraints are not recoverable. The lowered result may be source-finding, orientation, an evidence-needed note, a status-source request, or a narrowed reliance use.
 
-Repair the use when a neighboring object is current: dated work and actual bindings, a domain-local result, its C.2.1 episteme, source/provenance, G.11 currentness, receiving work and direct use, A.10 reliance, B.3 assurance, gate passage, permission, commitment, publication, requirement, definition, or explanation.
+When the intended answer goes beyond evidence-use or status-use classification, obtain that answer through the direct pattern in §4.6–§4.7.
 
-Refresh the use when the episteme edition, target claim, grounding holon, claim scope, theory version, relevance window, source-currentness relation, status source, proof check, measurement trace, method description, or assurance-use relation changes.
+Reconsider the classification when the episteme, target claim, grounding holon, scope, polarity or status value, window, or intended use changes. Reopen the affected reliance question when a change in source currentness, proof checking, measurement, MethodDescription, or assurance basis could alter that use.
 
 ### A.2.4:End

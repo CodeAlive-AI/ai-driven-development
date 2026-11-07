@@ -109,7 +109,7 @@ The wanted quantity is the optical power I from a beam at a detector. A supplied
 
 `r = g*(I + A) + b.`
 
-Here A is ambient optical power, g = 2 mV/mW is a known response coefficient and b is an electronic offset. The detector is unsaturated. During the following three observations, g, A and b remain unchanged:
+Here A is the ambient optical power reaching the exposed detector, g = 2 mV/mW is a known response coefficient and b is an electronic offset. The detector is unsaturated, and g and b remain unchanged across all three observations. A remains unchanged between the two exposed readings; the opaque cap blocks both optical contributions:
 
 | Condition | Reading |
 | --- | --- |
@@ -173,7 +173,7 @@ The useful result is a repaired average rate from existing observations. Repeati
 
 ### C.16.RM:6 - Bias-Annotation
 
-Under the five Principle-Taxonomy lenses of E.3 (Gov, Arch, Epist, Prag and Did), this pattern is scoped to repairing model-based measurements for a receiving use. The examples separate influences with simple relations and supplied conditions. Coupled effects, nonlinear response, drift, hysteresis or uncertain model structure can require richer diagnosis and uncertainty Methods. The pattern identifies where those contributions become necessary; it does not supply their complete domain repertoires.
+The examples separate influences with simple relations and supplied conditions. Coupled effects, nonlinear response, drift, hysteresis or uncertain model structure can require richer diagnosis and uncertainty Methods. The pattern identifies where those contributions become necessary; it does not supply their complete domain repertoires.
 
 The method favors a repair sufficient for the receiving use. A fault investigation concerned with reliability, causal explanation or a wider operating range can require work beyond restoring one useful reading. Keep that broader question explicit when it governs the effort.
 

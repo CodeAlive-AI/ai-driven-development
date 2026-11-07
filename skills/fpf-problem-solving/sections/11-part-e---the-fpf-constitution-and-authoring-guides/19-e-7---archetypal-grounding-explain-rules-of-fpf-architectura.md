@@ -3,19 +3,14 @@
 > **Status:** Stable
 
 ### E.7:1 - Problem frame
-Universal rules are powerful only when readers can grasp them. In FPF the
-Conceptual Core speaks in substrate‑agnostic language: `U.Holon`,
-Γ‑aggregation, MHT emergence. Practitioners need to “see” those rules in
-familiar matter—physical hardware or bodies of knowledge—before they can
-reuse them.
+Use this pattern when authoring an architectural pattern to show how its rule applies. Determine whether the rule applies to Systems, Epistemes or both, then construct the applicable cases alongside its general explanation.
 
 ### E.7:2 - Problem
 A purely abstract statement risks two failures:
 
-1. **Didactic failure** – readers dismiss the pattern as “too meta,”
-   violating Pillar **P‑2 Didactic Primacy**.
-2. **Hidden scope** – without unlike cases, a purportedly general rule
-   can conceal the conditions needed in another use.
+1. **Unclear application** — the reader cannot recover a useful action from the rule, undermining **P-2 Didactic Primacy**.
+2. **Hidden scope** — without unlike cases, a purportedly general rule can conceal the conditions needed in another use.
+
 
 ### E.7:3 - Forces
 
@@ -53,20 +48,14 @@ When the rule applies across both, use the **Tell-Show-Show** sequence below. Wh
 | **CC‑AG.1** | Every architectural pattern **SHALL** contain a section headed *“Archetypal Grounding”* under E.8's heading rules. | Keeps grounding findable across all Parts. |
 | **CC‑AG.2** | The Archetypal Grounding section **MUST** illustrate the rule with both `U.System` and `U.Episteme` when it applies to both. A single-substrate rule follows CC‑AG.3. | Makes the claimed application and scope inspectable. |
 | **CC‑AG.3** | If a rule intentionally applies to only one substrate, the subsection **SHALL** state the scope limitation and justify it against the five Principle‑Taxonomy lenses (`Gov`, `Arch`, `Epist` (epistemological and ontological), `Prag`, `Did`). | Prevents silent bias; links to Bias‑Audit guard‑rail. |
-| **CC‑AG.4** | Patterns lacking a compliant Archetypal Grounding subsection **MAY NOT** progress to “Accepted” status. | Enforces discipline without referring to workflow mechanics. |
+| **CC‑AG.4** | Patterns lacking a compliant Archetypal Grounding subsection **MAY NOT** progress to “Accepted” status. | Keeps grounding a condition of acceptance. |
 
 ### E.7:7 - Consequences
+Applicable, contrasting cases let readers inspect how the rule works and where another basis is needed. Authors must construct cases that preserve its actual conditions and keep the added explanation proportionate to its scope.
 
-| Benefits | Trade‑offs / Mitigations |
-|----------|-------------------------|
-| **Immediate clarity** – readers see abstract laws in action. | Patterns grow by one short table; mitigated by consistent template snippet. |
-| **Visible application and scope** – unlike cases expose how the rule applies and where another basis is needed. | Authors must construct cases that preserve the rule's actual conditions. |
-| **Narrative cohesion** – recurring System/Episteme protagonists create a memorable storyline. | — |
 
 ### E.7:8 - Rationale
-Tell-Show-Show places the rule next to applicable cases and makes their shared conditions and differences inspectable. Making that connection explicit implements **P‑2 Didactic Primacy** while **P‑1 Cognitive Elegance** keeps the grounding proportionate to the rule's actual scope. Linking scope‑justification to the five Principle lenses ties the
-pattern to the **Taxonomy‑Guided Bias Audit** and keeps governance
-language out of the Core.
+Tell-Show-Show places the rule next to applicable cases and makes their shared conditions and differences inspectable. Making that connection explicit implements **P‑2 Didactic Primacy** while **P‑1 Cognitive Elegance** keeps the grounding proportionate to the rule's actual scope. The five Principle lenses connect scope justification to the **Taxonomy-Guided Bias Audit** in E.5.4.
 
 ### E.7:9 - Relations
 

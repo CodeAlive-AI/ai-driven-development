@@ -2,13 +2,6 @@
 
 > **Status:** Stable
 
-**Tag:** Architectural kit pattern; notation-independent.
-
-**Stage:** optional series authoring → measurement and series-update Work when needed → representation → optional publication and refresh.
-
-**Primary hooks:** C.21 for discipline-health Characteristics and the common replay basis; C.16 for measurement; C.2.1 for result and series epistemes; C.29 when the view uses a mathematical correspondence; E.24.PUB for publication availability; G.6 for evidence paths when relied on; G.11 for refresh; G.Core, A.19, and G.0 for the exact legality and comparison surfaces actually used.
-
-**Optional hooks:** G.2 for SoTA palettes, G.5 for selector results, C.18 and C.19 for QD or open-ended telemetry, G.8 for maturity views, G.10 for shipping, F.18 when public names are needed, and F.9 only for actual distinct-local-sense comparison.
 
 ### G.12:0 — Use This When
 
@@ -79,7 +72,7 @@ The minimal durable series basis is `DHCSeriesRef.edition`, `DisciplineRef`, `In
 | `DHCCoordinateResultRef` | Ref to one persisted C.21/C.16 coordinate-result episteme and its active C.21 replay basis. | It is not a row, series, evidence path, or acceptance decision. |
 | `DHCSeries` | One C.2.1 episteme whose EntityOfConcern is the discipline and whose ClaimGraph orders coordinate-result refs by explicit windows under one intended use, ClaimScope, and comparison basis. | It is not a public U-kind, publication occurrence, dashboard, carrier, or Work. |
 | `DHCRow` | One representation element showing an exact coordinate-result ref and selected readable fields. | It does not compute, establish, or replace the result. |
-| `DashboardSlice` | A dashboard representation or grouping over exact row, result, or series refs; use C.29 when a mathematical correspondence is claimed. | It adds no comparison, normalization, acceptance, or selection semantics. |
+| `DashboardSlice` | A dashboard representation or grouping over exact row, result, or series refs; use C.29 when an unresolved mathematical representation or transfer question matters to the dashboard use. | It adds no comparison, normalization, acceptance, or selection semantics. |
 | `DHCTelemetryPin` | A G.11-facing refresh payload with a canonical trigger, exact affected scope, and changed definition, window, evidence, or policy pins. | It is not evidence, currentness, an edition relation, or refresh Work. |
 | dashboard publication | An E.24.PUB occurrence for one exact selected episteme edition expressed by the dashboard form, with its audience, bounded use, carrier, and availability interval. The selected edition may be a series, a coordinate result, or a view independently constituted as a C.2.1 episteme. | A view element, UTS row, rendering, upload, or release label does not supply episteme identity or make publication obtain. |
 
@@ -125,10 +118,10 @@ DashboardSlice := <
 
 **Stage A — Select what the view is about**
 
-1. **Start from exact results.** Select persisted C.21 coordinate-result refs for one already identified discipline. Do not compute from labels or restate Characteristic semantics in G.12.
+1. **Start from exact results.** Select persisted C.21 coordinate-result refs for one already identified discipline.
 2. **Fix use, scope, and windows.** Name IntendedUse and ClaimScope. Add a `TargetSliceRef` only when the computation or publication really consumes it, and state its relation to the scope.
 3. **Check replay identity.** For every coordinate, resolve the C.21 `DHCReplayBasis`: Characteristic, Scale, Unit when current, `DHCMethodRef.edition`, exact Method, MethodDescription edition when used, model or calibration pins when used, time or population basis, and any active distance or definition-set edition.
-4. **Choose the comparison branch.** Directly comparable C.16 readings need no Bridge. Actual distinct-local-sense use cites the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim naming direction, use rule, and loss tolerance, with the current supporting reliance required by F.9. Add reference-plane routing only when a real plane crossing is used; cite its exact basis, and keep any assurance consequence in R only.
+4. **Choose the comparison branch.** Directly comparable C.16 readings need no Bridge. Actual distinct-local-sense use cites the obtaining F.9 relation, observed loss, and a separate affirmative bounded-use claim naming direction, use rule, and loss tolerance, with the current supporting reliance required by F.9. Add reference-plane routing only when a real plane crossing is used; cite its exact basis, and assess any numerical assurance consequence under the applicable B.3 model for the named use.
 5. **Open optional panels only when used.** Portfolio, QD, open-ended, maturity, SoTA, shipping, and advanced-view fields appear only through their extension blocks.
 
 **Stage B — Construct or update content**
@@ -178,7 +171,7 @@ DashboardSlice := <
 * `PatternScopeId`: `G.12:Ext.QDTelemetry`
 * `GPatternExtensionKind`: `MethodSpecific`
 * `GoverningPatternId`: `C.18`
-* Conditional pins: `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `CharacteristicSpaceSpecRef.edition?`, `InsertionPolicyRef`, `EmitterPolicyRef?`, `ArchiveSnapshotRef?`, and `PathSliceId[]` when refresh uses them.
+* Conditional pins: `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `CharacteristicSpaceRef` for the selected space and separate `characteristicSpaceDescriptionRef: U.EpistemeRef` when an exact description is consumed (resolve the pair under A.19:5.1.1.1), `InsertionPolicyRef`, `EmitterPolicyRef?`, `ArchiveSnapshotRef?`, and `PathSliceId[]` when refresh uses them.
 * Illumination and coverage stay telemetry unless a separate accepted policy promotes them into the comparator, dominance set, or selected-set criteria under C.18's trade-off and authority conditions.
 
 
@@ -216,10 +209,10 @@ DashboardSlice := <
 
 
 
-##### G.12:4.9.7 - `G.12:Ext.ViewFamilySeed` — advanced view seed
+##### G.12:4.9.7 - `G.12:Ext.ViewFamilySeed` — specialized views
 
 
-This non-normative seed reserves no semantics. An embedding, prediction, change-point, or drift panel needs its own selected governor, inputs, limitations, and policy before it can affect a claim or decision.
+An embedding, prediction, change-point, or drift panel needs its selected method, inputs, limitations, and policy before it can affect a claim or decision.
 
 ### G.12:5 — Interfaces
 
@@ -258,7 +251,7 @@ G.12 counters screen-first, “latest”-by-default, scalar-winner, and publicat
 
 **Costs.** A relied-on trend needs exact result, scope, window, and replay identities. Publication and refresh add their own conditional work.
 
-**Risks avoided.** Screenshot-as-result, scope/slice collapse, hidden method drift, illicit ordinal arithmetic, scalarization by view, and carrier-as-publication are blocked.
+
 
 ### G.12:9 — Relations
 

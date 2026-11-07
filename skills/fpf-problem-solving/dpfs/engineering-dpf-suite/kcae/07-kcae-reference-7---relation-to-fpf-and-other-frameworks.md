@@ -1,0 +1,7 @@
+## KCAE.Reference:7 - Relation to FPF and other frameworks
+
+The domain methods use FPF distinctions about selecting sources, preserving meaning through representations, reader-relative recoverability, practical burden, inquiry and noticing useful methods. C.39 supplies the general construction and repair of connected contributions. These general contributions retain their Core owners. This framework adds the engineering construction that makes them work across sources, indexes, assessors, readers and changing software conditions. Core use does not depend on this DPF.
+
+Core's Method-development patterns supply additional operations when the material being recovered is a method repertoire; Notational Engineering supplies translation and loss analysis where a notation changes; Computational Thinking supplies representation and operation reasoning. KCAE.Reference:10 identifies the exact public contributions and their receiving use. A source citation or informative example is distinguished there from a required supplier result.
+
+For FPF Library, retrieval returns material to the existing pattern-use and application methods. It also reaches Prefaces, References, examples and explanations that do not have a PatternID. The Library is one application, developed in KCAE.Application:3. Its installed commands, refresh jobs, release routes, service incidents and operating backlog belong to the local practice that runs that installation. They are not general KCAE methods.

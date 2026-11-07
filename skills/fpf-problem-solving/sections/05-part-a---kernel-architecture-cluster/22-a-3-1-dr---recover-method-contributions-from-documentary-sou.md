@@ -3,8 +3,6 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Primary working result:** a **Method-recovery dossier** whose entries retain their existing kinds or ordinary statuses, provenance, source meaning, viewpoint, bounded use, and decision-bearing relations. For qualification, A.3.1.QM receives only identified Methods and individually scoped candidate Method accounts; B.1.5.CM receives a proposed-whole account when whole identity and relations are the question.
-
 ### A.3.1.DR:1 - Problem Frame
 
 **Use this when.** A methodology, standard, body of knowledge, maintained synthesis, reference model, or tool suite mixes reusable ways of doing with descriptions, Systems, capabilities, evidence, authority, and support. The receiving decision needs contributions from one package or several documentary sources, but their chapters and component lists do not establish Method structure.
@@ -35,7 +33,7 @@ Method Content Theory and design-Method element research contribute questions ab
 
 ### A.3.1.DR:2 - Problem
 
-The common decomposition error copies package headings into a Method library. A role becomes a Method, a checklist becomes a component, a tool becomes a participant Method, and adjacency becomes `methodPartOf`. The opposite error extracts a procedure alone and loses the rationale, input/result correspondence, authority, evidence, or support condition that makes it usable.
+Copying package headings into a Method library can misidentify the contributions. A role becomes a Method, a checklist becomes a component, a tool becomes a participant Method, and adjacency becomes `methodPartOf`. The opposite error extracts a procedure alone and loses the rationale, input/result correspondence, authority, evidence, or support condition that makes it usable.
 
 A later qualification then appears precise but cannot be replayed from the source and cannot distinguish a Method defect from missing access, capability, evidence, or authority.
 
@@ -59,12 +57,12 @@ Build a source-traceable dossier around the receiving decision. Recover each doc
 
 1. **Bound the receiving use and sources.** Name the decision, relevant viewpoint, scope, and exclusions. For each documentary source give its exact edition or snapshot, source-return locator, role in this use, selected recovery profile, and currentness or reopening condition. One package normally needs one compact source/use statement, not a separate register.
 2. **Choose how much to recover.** Use the profiles below. A maintained source's source-local recovery and comparison with current alternatives answer different questions; do not let the comparison erase a source contribution before it has been understood.
-3. **Read source meaning before placement.** For each selected contribution retain the source term and locator, difficulty or opportunity, asserted reusable action or change, first useful result or blocker, and receiving use. Keep its original status, limits, purpose, and explicit or implied relations. A source ambiguity remains an ambiguity.
+3. **Read source meaning before placement.** For each selected contribution retain the source term and locator, difficulty or opportunity, any asserted reusable action or change, any first useful result or blocker, and receiving use. Keep its original status, limits, purpose, and explicit or implied relations. A source ambiguity remains an ambiguity.
 4. **Preserve the subject and evidence role.** Distinguish identified Methods, individually scoped candidate accounts, MethodDescriptions or other epistemes, Systems and support/access, capabilities and assignments, inputs/results/premises, and direct relations. A source's report of evidence is recovered as that report, not as independently established Work or effectiveness. Send a new question about a reusable way in occurrence evidence to A.3.1.MR; specialist RMP.10 follows only under its entry condition.
 5. **Record intended use and possible loss.** Say what the receiving use proposes to keep, change, reject, or leave unresolved and what source meaning or context would be lost. These are source-local recovery dispositions. Do not yet assert cross-source sameness, perform semantic merging, allocate a remainder to a supplier, or design the resulting pattern language.
 6. **Recover direct relations and small dependency slices.** Retain supported production/use, schema correspondence, provider access, allocation, responsibility, authority, or other relevant relations. A line, container, chapter, lane, or local section supplies no relation. Attach only the source claims, conditions, and returns needed for the next judgement.
 7. **Prepare the actual downstream subjects.** A.3.1.QM receives only identified Methods and individually scoped candidate Method accounts, each with the smallest slice needed to judge contribution, inputs/results, applicability, burden, capability, support, authority/access, and evidence. B.1.5.CM receives a proposed-whole account when whole identity and relations are the question; retain its proposed semantics, participant statuses, relation boundary, and source slices. Other kinds remain in the dossier or accompany those subjects without becoming Methods.
-8. **Return the dossier or the first blocking gap.** Use open navigation sections when they help retrieval. Stop when the receiving decision can recover its subjects and source basis. If edition, role, receiving use, a needed current comparator, source return, kind, relation, or evidence is missing, name the affected contribution and the missing basis. Do not manufacture corpus completeness.
+8. **Return the dossier and any blocking gaps.** Use open navigation sections when they help retrieval. Stop when the subjects and source basis needed for the receiving decision are recoverable. If edition, role, receiving use, a needed current comparator, source return, kind, relation, or evidence is missing, name the affected contribution and the missing basis. Continue unaffected recovery when it can still serve the receiving decision; do not claim completeness beyond the recovered boundary.
 
 ##### A.3.1.DR:4.1.1 - Select the Recovery Profile Per Source
 
@@ -85,12 +83,12 @@ For an ordinary package, the default is **decision-bounded recovery**: inspect o
 | --- | --- |
 | recovery boundary | Receiving decision, source set and exact editions/snapshots, viewpoint, scope, and exclusions. |
 | source/use statement | Per source: locator, role, recovery profile, receiving use, and currentness or reopening condition; combine this with the boundary for one ordinary package. |
-| entries | Local reference, source locator and meaning, difficulty/opportunity, asserted action/change, first result/blocker, existing kind or unresolved status, bounded use, and loss. |
+| entries | Local reference, source locator and meaning, difficulty/opportunity, any asserted action/change, any first result/blocker, existing kind or unresolved status, bounded use, and loss. |
 | direct relations | Related subjects, relation, source or evidence basis, truth status, and unresolved condition. |
 | occurrence-evidence return, when current | The A.3.1.MR or RMP.10 result with its own candidate statuses, real rivals, gaps and evidence limits. Include a distinguishing question only when it changes the receiving use, or a held-out result only when actually obtained. An ordinary account needs no prospective study to fill this row; raw observations are not documentary Method entries. |
 | navigation | Open local sections used only for finding contributions. |
 | downstream subjects | Identified Methods and individually scoped accounts with dependency slices for A.3.1.QM; a proposed-whole account with its identity/relation boundary for B.1.5.CM when needed. |
-| stop and return | Missing source, role, use, comparator, kind, relation, evidence, or the next receiving question. |
+| stop and return | Supported result for the receiving decision; any missing source, role, use, comparator, kind, relation, or evidence; any further question the decision requires. |
 
 Keep these distinctions in the dossier already being used; they are not a requirement for one file or row per field. A short one-source result can carry the source/use statement in its opening sentence.
 
@@ -100,7 +98,7 @@ Practitioners can reuse a Method, retain a candidate account, cite a description
 
 ### A.3.1.DR:5 - Archetypal Grounding — EC-417 Release Assurance Package
 
-Source/use boundary for this constructed case: the EC-417 package snapshot specified below, used as documentary Method guidance for the changed release decision; recover the decision-bearing slice, and return when that package, receiving use, or a relied-on condition changes. This one sentence supplies the ordinary one-source contract.
+For this constructed case, take the listed EC-417 package contents as one fixed documentary snapshot. Use it as Method guidance for the changed release decision, recover the decision-bearing slice, and return when the package, receiving use, or a relied-on condition changes. This supplies the source/use boundary for the one-source case.
 
 The EC-417 team receives a “release assurance methodology” containing a stage table, release checklist, supplier procedure, AI prompt, PLM and CI instructions, test-rig guidance, role descriptions, and stored evidence bundles. The receiving decision is whether its Method contributions and candidate reconciliation accounts can support a changed release arrangement.
 
@@ -134,13 +132,13 @@ This constructed case concerns a change to the release-assurance arrangement. Ha
 | C/2 §2; current comparator; SoTA-first for this decision; return if a rival or the comparison basis changes. | A separately reviewed evidence bundle is proposed to reduce reliance on one supplier account. Its first result is a reviewed bundle or a named evidence gap. The claim's tested reach is limited to the comparison's cases. | Retain this alternative and its limits separately from H. Do not decide that two differently supported activities are one Method or that either replaces the other. |
 | I/D1; occurrence evidence, not a third documentary recovery profile. | The interview reports one release episode but does not yet distinguish a reusable way from a one-off response. | For the one-occurrence question use A.15.1. If several occurrences create a candidate-recovery question, use A.3.1.MR; keep a record-only lower result when that is all the evidence supports. RMP.10 is not an automatic next step. |
 
-The first result is the two-source documentary dossier plus the honest occurrence-evidence return, not a merged release Method. A later semantic comparison must decide whether the two documentary contributions overlap, conflict, or complement one another.
+The first result is the two-source documentary dossier plus the honest occurrence-evidence return, not a merged release Method. When the receiving decision needs a semantic comparison, examine whether the two documentary contributions overlap, conflict or complement one another; leave unresolved relations explicit.
 
 If C's full argument becomes unavailable but a page-located excerpt remains, retain the excerpt and reopen only entries whose receiving use depends on the missing context. H's independent source-local result remains usable. Do not turn unavailable support into proof that C was false, or continue a gap-only recovery without its baseline.
 
 ### A.3.1.DR:6 - Bias-Annotation
 
-| Recurring bias | Likely drift | Repair |
+| Bias | Likely drift | Repair |
 | --- | --- | --- |
 | source-taxonomy bias | Goal, procedure, rationale, framing, mindset, representation, role, or tool becomes a universal Method component kind. | Use those terms as source questions and place each returned claim with its actual subject. |
 | diagram-containment bias | A box or lane is read as composition or parthood. | Require the direct relation and its evidence independently. |
@@ -169,13 +167,13 @@ If C's full argument becomes unavailable but a page-located excerpt remains, ret
 | Everything actionable becomes a Method candidate. | Require a reusable way-of-doing account; keep support, capability, evidence, and authority under their direct kinds. |
 | The package is reduced to a procedure. | Recover rationale, framing, intended use, inputs/results, support, evidence, and authority only where they change the receiving decision. |
 | The whole package is copied for provenance. | Attach a bounded dependency slice to each Method/account and retain a source return to the package edition. |
-| Unknown relation is inferred from adjacency. | Record the relation as unresolved and state what observation or source would settle it. |
+| Unknown relation is inferred from adjacency. | Record the relation as unresolved and name any known source or observation that could settle it. |
 
 ### A.3.1.DR:9 - Consequences
 
 The package becomes selectively reusable while its provenance and the kinds of its contributions remain explicit. Later qualification can inspect one Method or account together with the dependencies that make its use meaningful.
 
-The cost is explicit kind and relation recovery. Some familiar package headings will disappear from the action path, while important support, authority, or evidence conditions may become more visible than the source's headline procedure.
+The cost is explicit kind and relation recovery. Important support, authority, or evidence conditions may become more visible than the source's headline procedure.
 
 ### A.3.1.DR:10 - Architectural Rationale
 
@@ -189,10 +187,9 @@ The dossier is deliberately open. Its value lies in tracing source contributions
 | --- | --- | --- |
 | Daalhuizen and Cash, [Method Content Theory](https://doi.org/10.1016/j.destud.2021.101018) | Goal, procedure, rationale, framing, and mindset as questions that prevent procedure-only recovery. | Static content variables and initial study population do not define FPF kinds, Method parts, or cross-domain effectiveness. |
 | Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Core idea, representation, procedure, intended use, tool, ecosystem, and adaptation prompts. | Source elements remain questions and source claims, not a universal dossier ontology. |
-| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9) | Current comparison of engineering-Method knowledge and the placement of representations, framing, and rationale. | Conceptual comparison supplies no project Method identity or package parthood. |
-| Current FPF `A.3.1`, `A.3.2`, `B.1.5`, and `F.18` | Method identity, MethodDescription membership, composition law, and name recovery. | The DPF adds the decision-bounded dossier and dependency-slice Method. |
+| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9) | Comparison of engineering-Method knowledge and the placement of representations, framing, and rationale. | Conceptual comparison supplies no project Method identity or package parthood. |
 
-Reopen when a current source or package case exposes a decision-bearing contribution that cannot retain its kind, provenance, role, and relation in the open dossier; when a source profile hides material receiving conditions; or when the ordinary one-package result acquires burden that its use does not need.
+Revisit the recovered dossier when a source or package case exposes a decision-bearing contribution whose kind, provenance, role or relation remains unclear; when a selected recovery profile omitted a material receiving condition; or when the dossier imposes work that its receiving use does not need.
 
 ### A.3.1.DR:12 - Relations
 

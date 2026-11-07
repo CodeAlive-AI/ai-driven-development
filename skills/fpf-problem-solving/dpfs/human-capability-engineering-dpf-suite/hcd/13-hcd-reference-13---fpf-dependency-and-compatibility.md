@@ -1,0 +1,11 @@
+## HCD.Reference:13 - FPF dependency and compatibility
+
+This edition depends on **First Principles Framework (FPF) — Core Conceptual Specification, Version August 2026**, status **Normative kernel, eternal alpha**, with the bounded C.2.8 dependency below.
+
+FPF supplies System and holder recognition, capability, Method and MethodDescription, Work occurrence and result distinctions, evidence and uncertainty, architecture, agency, decision objects, authority, cultural relations, and precise wording. HCD uses these distinctions in the domain Methods whose contributions and receiving uses are set out above.
+
+`E.23.CDI` governs the independent-System holder condition and later capability-development evidence under its own entry conditions. `E.23.CAE` supplies an observation-first differential where applicability, access, adaptation, enactment, and actual capability change must be separated. `C.32.MWA` prevents source layouts from becoming profile architecture. `C.11.CRC` governs finite comparison inside HCD.2, while `C.11` governs a bounded current-option choice. Compatible FPF changes leave unaffected HCD results reusable; changed relied-on distinctions reopen only their consumers.
+
+For HCD.18, HCD.19 and the instructional-material profile, this edition selects [extractable structural information (FPF C.2.8)](https://github.com/ailev/FPF/blob/f4bad21274b54b57071afb2210a8bdb9f61a1c95/FPF-Spec.md#c28---uextractablestructuralinformation) from the FPF publication of 9 September 2026. It supplies the structural-recovery characteristic of the expressed episteme, its publication form and the reader or observer under specified comparison conditions. Use its own qualitative comparison or structural scale; the profile's material-use values, learning and burden claims keep their own meanings and evidence. Other FPF dependencies retain the basis above. Reopen this bounded dependency when the supplying definition or the receiving structural question changes.
+
+A.19.ECS supplies general evaluation-specification construction to HCD.18. E.22 supplies comparison and E.23 improvement for a material result when those questions are live. General characterization and scale meanings remain with A.17, A.18 and C.16. Material evaluation does not alter the human-evidence or authority boundaries of the other HCD bodies.

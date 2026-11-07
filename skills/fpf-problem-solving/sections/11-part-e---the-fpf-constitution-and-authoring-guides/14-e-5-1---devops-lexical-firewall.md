@@ -3,27 +3,22 @@
 > **Status:** Stable
 
 ### E.5.1:1 - Problem frame
-The FPF Core is meant to remain valid across decades and technology
-generations.  Implementation details—file formats, build pipelines,
-runtime flags—evolve rapidly and differ between domains.  When such
-terms invade normative prose, the Core ages as quickly as the tools it
-mentions.
+Use this pattern when Core prose mentions an implementation detail, such as a file format, build command or runtime flag. Determine whether that detail is incidental to the concept or necessary to the conformance rule for a named publication form, protocol or grammar.
 
 ### E.5.1:2 - Problem
-*Conceptual erosion*: a rule that cites a transient technology becomes
-obsolete when that technology fades, forcing unnecessary Core revisions
-and fragmenting historical audits.
+An incidental tool dependency can force a Core concept to be revised when the tool changes, even though the concept does not. It can also make earlier editions harder to interpret. A blanket ban on concrete syntax causes a different loss when the syntax defines the subject's operative condition.
+
 
 ### E.5.1:3 - Forces
 
 | Force | Tension |
 |-------|---------|
-| **Timelessness** | Concepts must survive tool turnover. |
+| **Continuity** | Concepts must survive tool turnover. |
 | **Pedagogic clarity** | Examples need concreteness ↔ too much concreteness hard‑codes technology. |
 | **Cross‑domain reach** | Physical‑system engineers and knowledge‑theorists use different stacks. |
 
 ### E.5.1:4 - Solution
-Establish a **Lexical Firewall** around the **Conceptual Core** *(conceptual constraint; not a build‑time linter)*:
+Apply the **Lexical Firewall** to the subject the text governs:
 
 1. **Keep abstract definitions independent of incidental machinery.**
    A Core definition **SHALL NOT** make an unrelated tool, file format, command or deployment arrangement necessary to identify or use its conceptual subject. Describe that subject directly; place the implementation in Tooling.
@@ -67,14 +62,12 @@ Establish a **Lexical Firewall** around the **Conceptual Core** *(conceptual con
 
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
-| Core stays evergreen and cross‑domain. | Move incidental implementation details and runnable teaching code to Tooling or Pedagogy. Retain necessary governed-subject syntax under §4 item 2 and operative mathematics under E.5.2. |
+| Core definitions avoid incidental dependence on a tool generation. | Move incidental implementation details and runnable teaching code to Tooling or Pedagogy. Retain necessary governed-subject syntax under §4 item 2 and operative mathematics under E.5.2. |
 | A token scan can locate places to inspect. | The subject and operative condition decide conformance; an allow-list alone cannot decide incidental dependence. |
 
 ### E.5.1:8 - Rationale
-Language shapes thought.  By firewalling transient jargon, we uphold
-**P‑1 Cognitive Elegance** (clarity), **P‑2 Didactic Primacy** (domain‑neutral
-exposition) and **P‑5 FPF Layering** (clean separation between Core
-and Tooling). The subject-sensitive boundary keeps abstract concepts portable while allowing a form-specific rule to state the syntax that its reader must use.
+Keeping incidental implementation details outside abstract definitions supports **P-1 Cognitive Elegance**, **P-2 Didactic Primacy** and **P-5 FPF Layering**. The subject-sensitive boundary keeps abstract concepts portable while allowing a form-specific rule to state the syntax that its reader must use.
+
 
 ### E.5.1:9 - Relations
 * **Parent umbrella:** `pat:constitution/guard‑rails` (E.5)

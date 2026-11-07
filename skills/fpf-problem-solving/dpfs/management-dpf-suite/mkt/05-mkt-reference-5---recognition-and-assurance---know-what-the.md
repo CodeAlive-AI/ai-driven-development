@@ -1,0 +1,7 @@
+## MKT.Reference:5 - Recognition and assurance - Know what the evidence establishes
+
+Recognising a situation selects a potentially useful method. Establishing its result requires the appropriate work and evidence. A stated difficulty may justify a clarifying conversation without establishing its prevalence. A feasible prototype can justify a bounded trial without establishing willingness to buy. A paid trial can demonstrate an acquisition without establishing sustained benefit or ordinary repeatability.
+
+Give each consequential conclusion its object, source, conditions and limit. A customer's account, an observed action, a provider commitment, a calculation and a causal estimate answer different questions. MKT.12 determines sufficient inquiry for a decision. MKT.10 uses causal modelling and identification when an effect claim is required, then carries uncertainty into the economic comparison. MKT.13 asks whether the ordinary arrangement can repeat and sustain the work at a named scale. None of these results supplies a missing permission or allocation.
+
+For a learning offer, human performance under stated help conditions belongs to HCD; satisfaction and purchase are different observations. For community work, attendance can describe reach while leaving useful exchange and the burden of organising unresolved. The constructed applications show how to reason about these distinctions. They are neither observed success cases nor evidence of the effectiveness of the framework as a whole.

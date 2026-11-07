@@ -1,140 +1,149 @@
-# FPF Skill Index Update Guide
+# FPF Skill Update Guide
 
-Methodology for maintaining SKILL.md when the FPF specification changes.
+Methodology for keeping this skill in step with upstream [ailev/FPF](https://github.com/ailev/FPF)
+— the FPF Library: Core (`FPF-Spec.md`), the domain frameworks (`DPFs/`), and the Library documents.
 Discovered by applying FPF to its own skill file — dog-fooding the framework.
+
+The skill exists for agent experience: an agent should learn from `SKILL.md` **when** to use FPF,
+**where** to go for its case, and **how** to read and apply one pattern. Every update preserves that.
 
 ## When to update
 
-- New sections or sub-sections added to FPF
-- Sections renamed, merged, or reorganized
-- New FPF patterns introduced that serve a distinct thinking need
-- Existing router entries found to misroute (validated against real usage)
+- Upstream changed (the regular sync): new, renamed or removed patterns, frameworks or sections
+- A map row is found to misroute (validated against real usage)
 - Description trigger phrases no longer match how users actually invoke FPF
 
-Per B.3.4 (Evidence Decay), the SKILL.md carries epistemic debt whenever the spec
-evolves and the skill file doesn't. The Section INDEX provides a structural fallback,
-but a stale thinking-verb router silently degrades navigation quality.
+Per B.3.4 (Evidence Decay), the skill carries epistemic debt whenever upstream evolves and the skill
+does not. The generated trees are always regenerated whole; only the navigation layer is edited by hand.
 
-## What to update (checklist)
-
-### 0. Upstream section generation
-
-Regenerate `sections/` only from the default branch of official upstream `ailev/FPF`. Create the temporary
-skill layout outside this repository, place the official clone at `FPF/` inside that
-layout, copy the tracked splitter into `scripts/`, then run it there:
+## 0. Regenerate the library (generated — never edit by hand)
 
 ```bash
-python3 /path/to/temporary-skill-layout/scripts/split_spec.py
+git clone --depth 1 https://github.com/ailev/FPF.git /tmp/fpf-upstream
+python3 skills/fpf-problem-solving/scripts/split_spec.py --source /tmp/fpf-upstream
+python3 skills/fpf-problem-solving/scripts/check_skill.py
+rm -rf /tmp/fpf-upstream
 ```
 
-Replace the tracked `sections/` tree with that generated output, then remove the entire
-temporary layout. The repository tracks generated sections, not an embedded upstream checkout.
+Use the default branch of official upstream `ailev/FPF`; never a fork. The splitter writes
+`sections/` (Core), `dpfs/` (DPFs and Suite references), `library/` (Library readme, `USING-FPF.md`,
+`LICENSING.md`, Library Architectural Reference) and `PATTERN-INDEX.md`, rewriting links to the local
+files. It validates everything first and replaces nothing if a check fails; read its message, which
+names the place to change in `scripts/split_spec.py`. Typical refusals:
 
-The splitter follows the upstream H1 structure as published. Do not invent missing Part
-headings in the skill layer; if upstream omits a Part-level H1, reflect that in the
-Section INDEX and README tables.
+- an unknown root publication upstream → add it to `ROOT_FILES` (or `ROOT_IGNORED`) deliberately;
+- a DPF without a DocID row in `Library.Reference:11.1`, or a DocID mismatch → inspect upstream;
+- a framework that does not follow Title → Table of Contents → Readme → … → adapt `plan_framework()`.
 
-After generation, record the upstream commit hash and verify both the generated Markdown
-file total and every per-section H2 count against SKILL.md, README.md, and README-RU.md.
-Counts follow all emitted H2 headings, including content-free publication boundaries such as
-`FPF.Reference:End`; explain those markers in the navigation docs rather than counting them as
-new thinking patterns or omitting them from generated output.
-Review upstream licensing notices when they change; keep README attribution, license links,
-and the distinction between specification content and skill packaging accurate.
+The splitter prints `NOTE` lines when a framework's pattern count differs from the upstream catalogue
+and lists any local links it could not resolve; look at them, they usually mean an upstream layout change.
+Headings inside fenced code blocks are never split points. Links pinned to an older upstream commit are
+left as they are: they cite that edition.
 
-Track publication-label changes as well as new patterns: the non-normative Architectural Reference uses `FPF.Reference:*` identifiers. When method-development or checklist suites grow, route their distinct thinking needs through existing rows where possible and verify each cited PatternID against the generated headings.
+Do not invent missing Part headings in the skill layer; if upstream omits a Part-level H1, reflect that
+in the Library INDEX and README tables. Review upstream licensing notices when they change; keep the
+attribution in SKILL.md and both READMEs accurate.
 
-### 1. Description field (YAML frontmatter)
+## 1. Run the checker and fix what it lists
 
-The description decides WHETHER the skill triggers at all. It must include:
-- What FPF does (capability)
-- When to use it (trigger phrases the user might say)
-- When NOT to use it (negative triggers to prevent false activation)
+`scripts/check_skill.py` changes nothing; each problem names the file, line and fix. It checks:
 
-When adding new FPF capabilities, add corresponding trigger phrases.
-Keep under 1024 characters. No XML angle brackets.
+- frontmatter: only `name` and `description`; description at most 1024 characters, no angle brackets;
+- one upstream commit in SKILL.md, README.md, README-RU.md and PATTERN-INDEX.md;
+- every Core or DPF ID mentioned in SKILL.md and `references/core-router.md` resolves (a renamed pattern
+  shows up here — use `python3 scripts/find_pattern.py <old ID>` for nearby IDs);
+- every domain framework appears in Map B;
+- every Map A group and row need in `references/core-router.md` is named in the SKILL.md Map A overview;
+- the SKILL.md body stays within 4,800 tokens (characters / 4, the skills-management estimate) and "When
+  to use" within ten bullets — when either is exceeded, condense instead of appending (see section 2);
+- Core counts in both README tables match `sections/`;
+- "N domain frameworks" (and "N доменных" in README-RU) match `dpfs/`;
+- local links and paths in SKILL.md exist; every file listed in PATTERN-INDEX.md exists.
 
-### 2. Use cases section
+The checker passing is necessary, not sufficient: it proves the navigation points at real files, not
+that it points at the right ones. Then review the navigation layer below.
 
-These are broad cognitive situations — "thinking accelerator" framing, not section lookups.
-Each use case should be a problem a human recognizes, not an FPF-internal concept.
+## 2. Update the navigation layer
 
-Ask: "Would a user who has never heard of FPF describe their problem this way?"
-If yes, it's a good use case. If it requires FPF vocabulary to understand, it's too internal.
+### Description (frontmatter)
 
-### 3. Thinking-verb router (Step 1 table)
+Decides WHETHER the skill triggers. It names what the Library does, trigger phrases (FPF, DPF, pattern
+IDs), and negative triggers. Add a phrase only for a new kind of use, not for each new pattern.
 
-This is the core navigation improvement. Each row maps a **thinking verb** to a starting point.
+### When to use
 
-To add a new row:
-1. Identify the thinking need the new FPF content serves (what does it help the user DO?)
-2. Name it with a bold verb: **Decompose**, **Evaluate**, **Unify**, etc.
-3. Point to the specific section AND sub-section (e.g., "08 Part C -> C.18 NQD")
-4. Check for overlap with existing rows — merge if the thinking need is the same
+At most ten bullets of broad situations a person recognizes without FPF vocabulary. Ask: "Would a user
+who has never heard of FPF describe their problem this way?" A new pattern goes into its map row, never
+into this list; extend an existing bullet only for a new kind of use. (A bullet per pattern grew this list
+to sixty entries before; the checker now caps it.)
 
-To validate a row:
-- Simulate a user query that should trigger this row
-- Follow the path: does the `_index.md` of the target section lead to a useful sub-section?
-- If the path dead-ends or leads somewhere unexpected, the row is wrong
+### Step 0 and the maps
 
-Principles (from the FPF audit):
-- **Strict Distinction (A.7)**: Each row should serve a distinct thinking need. If two rows feel interchangeable, they're probably a category error — find the real distinction or merge them.
-- **Cognitive Elegance (P-1)**: Resist growing the router beyond ~20 entries. If it gets longer, some entries probably overlap. An agent pattern-matches against the table — more rows means slower matching and more ambiguity.
-- **WLNK (B.3)**: One wrong row degrades trust in the whole router. Validate carefully.
+| Map | What it routes | How to maintain |
+|---|---|---|
+| **Step 0** | how FPF came up → which map | Stable; change only when a new way of entering FPF appears. |
+| **Map A — Core router** (`references/core-router.md`; SKILL.md keeps an overview) | thinking need → Core section and patterns, in five groups (model the subject; reason, evaluate, decide; obtain results and improve work; architecture and structure; express, publish, sources) | Route a new Core pattern through the existing row of its thinking need; add a row only for a distinct need, in the group it belongs to, and name that need in the group's line of the SKILL.md overview (the checker enforces it). Put the usual starting pattern first in the cell. When a family grows, name the family (`find_pattern.py <ID>` lists its members with titles) instead of every member. |
+| **Map B — Domain frameworks** | field question → DPF DocID | Every DPF must be listed (the checker enforces it). Add a new DPF to its Suite row or to the standalone row that fits, with a few words on what it works on, taken from `dpfs/_index.md` or the Suite `_index.md`. |
+| **Map C — Common troubles** | a trouble as people notice it → the pattern to start with | Curated, not generated: it paraphrases Anatoly Levenchuk's cheatsheet of frequently used patterns. The first ID is the start; after `·` a cell may name a neighbouring case and its pattern. Name a pattern, not a bare DocID, when the framework's entries do not cover the trouble. Fix an ID when upstream renames it; add or remove rows only on the owner's request or a new edition of the cheatsheet. |
 
-### 4. Section INDEX table
+Each map row must serve a distinct need (A.7 Strict Distinction). If two rows feel interchangeable,
+merge them. Within a group, keep rows scannable: an agent pattern-matches the left column.
 
-Structural reference. Must stay in sync with actual `sections/` folders.
+To add a row:
+1. Identify the need the new content serves (what does it help the user DO?).
+2. Name it with a bold verb (Map A) or the field (Map B) or the trouble in plain words (Map C).
+3. Point to IDs, not to numbered file paths: file names carry ordinal prefixes that shift upstream.
+4. Check for overlap with existing rows — merge if the need is the same.
 
-Each "When to use" cell should lead with a **bold thinking verb** so even the structural
-table doubles as intent-based navigation. Pattern: `**Verb**: what's inside`.
+To validate a row: simulate a user query that should trigger it, pass the row's IDs to `find_pattern.py`
+(one card per ID with *use when* and *not when*), and check that the card matches the query. When two
+rows compete for one query, say in the cell which case each takes.
 
-When sections are added/removed:
-1. Add/remove the row
-2. Write a thinking-verb description
-3. Check if the new section should also appear in the thinking-verb router (Step 1)
+### Library layout
 
-### 5. Composition guidance (Step 4)
+A short paragraph of entry points (PATTERN-INDEX, Core folders, DPF catalogue, Suite and framework
+indexes, USING-FPF). Change it only when the generated layout changes. The Core sections table with counts
+lives in the READMEs; SKILL.md routes through Map A instead. The full license notice and list of changes
+live in the READMEs; SKILL.md keeps a short notice with the upstream commit.
 
-Update if:
-- New patterns create novel cross-section composition needs
-- Users consistently struggle to synthesize findings from certain section combinations
-- New category-error patterns are discovered (add to the A.7 check)
+### Composition guidance (Steps 1–4)
 
-The natural synthesis order (decompose -> evaluate -> resolve) should remain stable
-unless FPF's reasoning architecture fundamentally changes.
+Update when new patterns create novel cross-section or Core–DPF composition needs, or new category-error
+patterns are discovered. The natural synthesis order (decompose → evaluate → resolve) stays stable unless
+FPF's reasoning architecture fundamentally changes.
+
+## 3. Update the READMEs
+
+README.md and README-RU.md are for humans on GitHub and must say the same thing:
+
+- the Core sections table (counts are checked) and the domain frameworks table;
+- the upstream commit in the License section (checked);
+- "How it works" and "Structure" only when the navigation approach or layout changes.
+
+Do not append a paragraph per new pattern ("Navigation also covers …"): the maps and PATTERN-INDEX.md
+carry that, and the READMEs stay readable.
 
 ## How to validate (FPF self-audit)
 
-After updating, run these checks against the FPF patterns that matter most for a navigation artifact:
+After the checker passes, run these checks against the FPF patterns that matter most for a navigation artifact:
 
 | FPF Pattern | Check |
 |---|---|
-| **Bounded Context (A.1.1)** | Does the SKILL.md have clear entry/exit semantics? Does the router bridge user-intent context to FPF-spec context without collapsing them? |
-| **Strict Distinction (A.7)** | Are use cases (admission) and router (navigation) still clearly separated? Does any row conflate two different thinking needs? |
-| **Trust & Assurance (B.3)** | Can each router row be grounded in actual spec content? Would following the path produce a useful result? |
-| **Multi-View (E.17)** | Does the router serve different user roles (engineer, manager, researcher) without being locked to one view? |
-| **Epistemic Debt (B.3.4)** | Are there sections in the INDEX that aren't reachable from the router? If so, is that intentional (not every section needs a router entry) or an omission? |
-| **Composition (B.1)** | If new sections are added, does Step 4 still give adequate synthesis guidance? Are there new cross-section patterns to document? |
-| **Cognitive Elegance (P-1)** | Is the file still compact? Growth should be justified by navigation value, not completeness for its own sake. |
-
-### 6. README files
-
-After updating SKILL.md, sync both README.md and README-RU.md:
-- Update the Sections table if sections were added, removed, or renamed
-- Update the "How it works" / "Как это работает" description if the navigation approach changed
-- Keep both language versions consistent with each other
-
-README files are for humans on GitHub — they must reflect the current state of the skill.
+| **Bounded Context (A.1.1)** | Does SKILL.md have clear entry/exit semantics? Do the maps bridge user-intent context to FPF context without collapsing them? |
+| **Strict Distinction (A.7)** | Are use cases (admission) and maps (navigation) still separate? Does any row conflate two different needs? Is Core kept distinct from a DPF? |
+| **Trust & Assurance (B.3)** | Can each row be grounded in actual pattern content? Would following the path produce a useful result? |
+| **Multi-View (E.17)** | Do the maps serve different roles (engineer, manager, researcher) without being locked to one view? |
+| **Epistemic Debt (B.3.4)** | Are there sections or frameworks reachable from no map? Intentional, or an omission? |
+| **Composition (B.1)** | Does Step 4 still give adequate synthesis guidance across sections and across Core and DPFs? |
+| **Cognitive Elegance (P-1)** | Is SKILL.md still compact (the checker enforces the budget)? Growth should be justified by navigation value, not completeness for its own sake. |
 
 ## Process summary
 
 ```
-1. Regenerate `sections/` from upstream `ailev/FPF`
-2. Identify what changed in the FPF spec
-3. For each change, ask: "What thinking need does this serve?"
-4. Update the relevant SKILL.md component (description / use cases / router / INDEX)
-5. Run the FPF self-audit (table above)
-6. Test with simulated user queries
-7. Update README.md and README-RU.md to match
+1. Regenerate the library from upstream ailev/FPF (split_spec.py --source …)
+2. Run check_skill.py; fix every listed problem
+3. For each upstream change, ask: "What need does this serve?" and update the matching map row
+4. Update the description / "When to use" only for a new kind of use
+5. Run the FPF self-audit and a few simulated queries through find_pattern.py (cards, DocIDs, --search)
+6. Sync README.md and README-RU.md (tables, commit); rerun check_skill.py
 ```

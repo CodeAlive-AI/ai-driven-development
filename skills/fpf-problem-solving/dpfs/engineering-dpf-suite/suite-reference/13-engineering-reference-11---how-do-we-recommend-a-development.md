@@ -1,0 +1,77 @@
+## Engineering.Reference:11 - How do we recommend a development direction?
+
+An engineer asks what to develop next; a company asks which capability to build; a programme author asks what participants should learn within a limited time. Each needs advice about development, but the facts and methods that make an option feasible differ.
+
+For advice to a developing person or organization, use [PSDA.19](../../psda/35-psda-19---bound-the-development-direction-advising-engagemen.md) when the advising relationship needs qualification. Establish who receives the advice, what decision it supports, the adviser's competence, information-use conditions and who will make the choice. Reuse adequate terms and enter the missing advice contribution directly. For advice to a programme author, begin with [PSDA.11](../../psda/27-psda-11---bound-the-decision-support-engagement-and-authorit.md) and the programme-design case below. Use Decision Design's problem-structuring methods when disagreement or an inadequate formulation prevents useful advice.
+
+If useful opportunities have not yet been formed, enter [Core's opportunity-construction Methods (FPF C.40.OCN)](../../../sections/09-part-c---kernel-extension-specifications/108-c-40-ocn---construct-a-bounded-opportunity.md). [FPF C.40.OI](../../../sections/09-part-c---kernel-extension-specifications/109-c-40-oi---bound-an-opportunity-inquiry.md) bounds the inquiry; the later construction patterns help characterize the subject, search neighboring possibilities, identify a worthwhile contribution, construct directions with their supports and test joint reachability. Start at the first missing result and stop when it is useful. This branch can be used independently of an advising engagement.
+
+Bring back the specialist facts that could change the recommendation:
+
+| Developing subject | Examples of needed contributions |
+| --- | --- |
+| A person | Evidence about representative later work, present limits, feasible development Methods, support, assessment and transfer. This Reference uses HCD's demand, diagnosis, profile and programme-design contributions; other human-development results come from the separate HCD publication under their own Methods. |
+| An organization | The intended contribution, strategy and operating conditions, and a comparison of organizational arrangements. OCE.8 is useful once the result to obtain is sufficiently established. |
+| An AI or mixed performing arrangement | Evaluation of the relevant configuration and task, access and integration conditions, oversight, safety and evidence about actual performance. Obtain these from the appropriate technical practice. |
+
+With the needed inputs, apply the Decision Design comparison patterns that fit the remaining questions. [PSDA.6](../../psda/23-psda-6---represent-values-and-trade-offs.md) makes values and protected conditions explicit; [PSDA.7](../../psda/24-psda-7---represent-decision-relevant-uncertainty-and-evidenc.md) distinguishes consequential uncertainty; [PSDA.8](../../psda/25-psda-8---compare-consequences-of-decision-alternatives.md) compares consequences; [PSDA.9](../../psda/26-psda-9---test-robustness-and-sensitivity-of-decision-alterna.md) tests what could reverse the result. [PSDA.14](../../psda/30-psda-14---prepare-and-return-a-decision-support-recommendati.md) prepares the strongest recommendation the evidence supports, and [PSDA.15](../../psda/31-psda-15---arrange-decision-follow-up-or-reassess-advice-afte.md) sets up useful follow-up.
+
+When a premise of a constructed opportunity changes, use [FPF C.40.RQ](../../../sections/09-part-c---kernel-extension-specifications/116-c-40-rq---requalify-changed-opportunities.md) to identify and requalify the affected uses. PSDA.15 remains the return for affected advice. Keep the still-supported inputs and independent conclusions.
+
+For a four-month development programme, for example, establish the later work participants should perform, their starting abilities, available practice and support, and the opportunity cost. Compare plausible programmes and other interventions on that basis. A named budget or a list of interesting topics is not enough to justify the learning design; the programme needs its own practice, assessment and transfer methods.
+
+The recommendation goes to the person or organization making the choice. Missing evidence about one option can limit that option while a supported alternative remains usable. If a further observation is more valuable than choosing now, explain what it should distinguish and return the probe.
+
+
+### Engineering.Reference:11.1 - Pursue a personal development aim while shared work continues
+
+A person may want to develop while a team needs reliable work now. Connect the desired contribution to its receiving use, the work and support that can obtain it, and an observation that can still change the next action. If the contribution is unsettled, [STR.5](../../management-dpf-suite/str/23-str-5---generate-strategic-directions.md) helps relate personal interests, attainable capability and sustaining resources to a real receiving situation. A course or role title is a lead to examine.
+
+Keep the person's continuing aim, the team's promised result and the observation of each distinct. The aim can remain useful while a practice task, milestone or way of observing it changes. [STR.11](../../management-dpf-suite/str/29-str-11---select-strategy-portfolio-commitments-and-assumptio.md) bounds the actual choice and commitment; [STR.14](../../management-dpf-suite/str/32-str-14---reconcile-simultaneous-strategic-work-across-horizo.md) compares arrangements when practice, support and ongoing work compete for the same people or time. When correcting one allocation is sufficient, the person authorized to change it can resolve that question without revising the overall strategy.
+
+[GOALS.6](../../management-dpf-suite/goals/14-goals-6---make-a-professional-goal-workable-for-the-person-p.md) develops the person’s relation to the goal, feasible pursuit and reconsideration. [GOALS.3](../../management-dpf-suite/goals/11-goals-3---make-a-goal-set-feasible-across-commitments-and-sh.md) reconciles this pursuit with other commitments and shared support. The relevant human capability method supplies the learning operations and evidence when acquiring a capability is part of the goal.
+
+In this constructed case, Lena wants to learn to diagnose difficult software incidents. Her team needs the next responder to receive enough current evidence to continue an investigation without repeating completed work, while maintaining its customer-response commitments. Counting closed tickets establishes neither result.
+
+The proposed first increment uses a selected family of routine incidents. Lena is to choose the next discriminating check and explain its grounds; a qualified colleague is to give feedback; the receiving responder is to continue from the returned account. This prepares one operation relevant to Lena's larger aim. Unfamiliar difficult incidents need their own learning and evidence.
+
+The participants compare continued ordinary handling, supported practice and obtaining the diagnosis directly from the qualified colleague. Direct help can preserve service without supplying the personal learning result. The proposed allocation substitutes practice and colleague time for scheduled internal documentation work. Compare the value of that learning and support with the work it displaces. It uses working hours; Lena retains the choice about her discretionary time.
+
+Under the case's assumptions, Lena, the colleague and the receiving responder accept the arrangement, and the manager makes the allocation effective. The allowed feedback is part of the intended performance conditions. Their agreement and allocated time make the attempt possible; actual attempts must establish what Lena can do with that support.
+
+At the first selected handover, the next responder examines whether the returned evidence supports the next action. Lena receives feedback on her reasoning. The regular discussion occurs before the next work allocation so that it can change practice or support. [OPS.13](../../management-dpf-suite/ops/46-ops-13---align-commitments-resources-and-service-outcomes.md), section 4.5, chooses observation timing from the time needed to detect, convey, decide and remedy before the last useful response. A threatened customer response or lost provider availability is signalled before the dependent work, without waiting for the regular discussion. Existing incident handling remains in force.
+
+Now suppose Lena's closed-ticket count rises while the next responder must repeat the investigation. Inspect the returned accounts with that responder. In the stipulated episode, closing at transfer counted a ticket as finished although the promised service required an actionable investigation return. Restore that completion meaning and correct the affected work and comparison. [OCE.13](../../management-dpf-suite/oce/35-oce-13---observe-and-compare-organization-change-consequence.md) asks whose result or transferred burden the local score omitted. This episode supports that bounded correction; it does not establish the overall causal effect of the learning arrangement.
+
+A corrected description can leave the conflict intact. If Lena's assigned closure target leaves no time for the promised diagnostic return, the manager and receiving service owner must change the allocation or reconcile the commitments. If evaluation still rewards closure at transfer, its responsible holder must reconcile that criterion with the receiving result. [OCE.14](../../management-dpf-suite/oce/36-oce-14---decide-whether-and-how-to-revise-the-organization-f.md) helps compare the needed relation changes and make an authorized revision effective. Include the cost of reducing another contribution in that comparison. Coaching Lena to work faster or adding a dashboard would leave these incompatible demands in place.
+
+Different observations require different work:
+
+- **The qualified colleague becomes unavailable.** Obtain an available qualified substitute, change the practice scope and allocation, or defer supported practice while maintaining service. A revised allocation still needs an available provider. More frequent reporting does not supply the missing feedback.
+- **Feedback is available, but Lena cannot yet distinguish the relevant causes.** Use [HCD.9](../../human-capability-engineering-dpf-suite/hcd/26-hcd-9---perform-deliberate-practice-with-feedback.md): retain her first explanation and the help she used, give feedback about the missing distinction, obtain her correction, and try a changed comparable incident. Judge the observed action under its actual assistance conditions. A colleague's replacement answer can preserve service while leaving Lena's correction unobserved.
+- **Later observations establish that these routine incidents no longer need the proposed diagnostic contribution.** Return the changed receiving use to STR.5 and [STR.12](../../management-dpf-suite/str/30-str-12---observe-signals-to-continue-or-reconsider-strategic.md). Reconsider the development aim and funded practice on that basis, including Lena's other intended uses. The manager decides the work allocation; Lena chooses which personal interests to retain.
+
+An objective describes what is wanted; a forecast says what is expected under stated conditions; a commitment binds its actual participants. OPS.13 keeps the existing customer obligation in force until its holders actually revise it. STR.12 distinguishes a warning, a reason to reconsider and an already authorized response. A goal's horizon, a conversation's rhythm, an observation window and the moment at which action must change can therefore differ.
+
+Continue the arrangement while its purpose and conditions remain supported. Reopen the contribution that the observation actually challenges: the account of the work, a performed action, learning or support, evaluation, an obligation, or the direction itself. Check that the revision fits the joint work and its continuing commitments. A local correction can finish this question without reconstructing every goal.
+
+
+
+### Engineering.Reference:11.2 - Recommend a programme before the learners are known
+
+Start with [PSDA.11](../../psda/27-psda-11---bound-the-decision-support-engagement-and-authorit.md): the present recipient is the programme author, and the decision concerns a learning product for a future audience. Use [HCD.28](../../human-capability-engineering-dpf-suite/hcd/45-hcd-28---construct-and-revise-a-whole-learning-product-for-a.md) when whole-product variants need construction or revision. It connects subject content, practice, material and support under the audience and resource conditions.
+
+In this planning example, two modules aim to help future engineers and managers first analyse an unfamiliar work problem, then also deliver and verify a bounded engineering or organizational change. The design allows 34 weeks and 340 participant hours, including assessment, feedback and retries. Teaching capacity is a separate 240 hours for twelve participants; producing the materials requires its own resources.
+
+Three compositions remain under consideration. A emphasizes general methods, B emphasizes domain practice, and C combines both. C has detailed topics and cases; A and B are still outlines. Use the developed C and ask a qualified learning-product designer, with the necessary domain specialists, for the smallest comparable fragments of A and B. The request should identify:
+
+- the shared outcomes and assumptions about entry performance;
+- which methods participants must be able to select and use independently, which details they may retrieve, what controlled AI help is allowed, and which results need a specialist;
+- representative practice, feedback, assessment, retention and transfer conditions; and
+- participant time, teaching support and other resources, including what any added work would replace.
+
+Use [PSDA.6](../../psda/23-psda-6---represent-values-and-trade-offs.md) through [PSDA.14](../../psda/30-psda-14---prepare-and-return-a-decision-support-recommendati.md) for the comparison and advice questions that remain. C's detail makes it a useful starting design; its advantage over A or B still needs a comparison on those common grounds.
+
+If participant time falls to six hours a week, the limit becomes 204 hours. All three original 340-hour designs need revision before launch under that limit. Retain useful parts and request a revised programme that explains which 136 hours are removed or replaced and how the two outcomes remain attainable. Continue searching for a design that fits; the three over-budget designs do not settle whether any suitable 204-hour programme is possible.
+
+The author can receive advice about further design now. Because future learners are not yet identified, HCD.2 returns a learning-product design request. HCD.28 guides that design work for the audience. Once a particular participant's later Work, starting performance or profile, support conditions, feasible programme candidates, and finite resources are known, HCD.2 can compare those candidates for that person; an authorized chooser still makes the programme choice. Decision Design remains available for the author's present A/B/C comparison and advice. Launch, actual learning, retention and transfer need their respective decisions and evidence.

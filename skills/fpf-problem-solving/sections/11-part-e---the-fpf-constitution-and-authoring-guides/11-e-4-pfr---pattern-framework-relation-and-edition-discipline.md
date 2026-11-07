@@ -50,7 +50,7 @@ If no actual formal-premise use or criterion selection is claimed, omit Lane 3; 
 
 #### E.4.PFR:3.2 - Lane 2: optional relation-specific maintenance row
 
-Choose the smallest stable form the named receiver consumes. Use `PatternFrameworkRelationRecord` when a cross-relation comparison or maintenance index needs common endpoint, relation-function, use, and blocked-reading fields. Use `FrameworkEditionDependencyRecord` when an edition-impact or refresh receiver needs the relied-on content, dependency reason, direction, and refresh fields. Choose one by default; either form faithfully represents an already identified assertion and creates no relation.
+Choose the smallest stable form the named receiver consumes. Use `PatternFrameworkRelationRecord` when a cross-relation comparison or maintenance index needs common endpoint, relation-function and use fields. Use `FrameworkEditionDependencyRecord` when an edition-impact or refresh receiver needs the relied-on content, dependency reason, direction, and refresh fields. Choose one by default; either form faithfully represents an already identified assertion and creates no relation.
 
 If one named receiver genuinely needs both views, both cite the same `subjectAssertionRef`, the dependency record cites the generic row through `genericRelationRecordRef`, and every overlapping value is derived from that assertion. Rebuild both views when the assertion changes; never maintain duplicate facts independently.
 
@@ -65,7 +65,7 @@ PatternFrameworkRelationRecord@Context:
   relationFunctionClaimRef?
   dependencyOrEditionEffect?
   preservationOrAdmissionRef?
-  blockedStrongerReading
+  blockedStrongerReading?
   sourceReturnCondition?
   refreshOrSupersessionCondition?
 ```
@@ -102,8 +102,10 @@ FrameworkPackageManifest@Context:
   qualityEvidenceRefs
   refreshPlanOrCurrentnessRefs
   firstEntryCarrierRefs
-  blockedRuntimeOrBuildReading
+  blockedRuntimeOrBuildReading?
 ```
+
+`blockedStrongerReading` and `blockedRuntimeOrBuildReading` are optional. Include a rejected reading only when it passes F.19:4.4's independent-ground, plausible-reader and contribution test, and state the smallest clear correction. Leave the field absent when no such correction is needed; a tabular consumer may keep an empty column.
 
 The dependency record mirrors exactly one already stated direct dependency and cites that assertion through `subjectAssertionRef`. It names one dependent edition, one relied-on edition, the exact content from that relied-on edition, the named use, direction, reason, and refresh conditions as one unit. If one edition has several direct dependencies, write one record per relied-on edition or use a keyed collection of those records; never pair parallel edition and content lists or read them as a cross-product. A useful aggregate is only a projection over those direct records, not a second maintained truth. The record contains no compatibility boundary. `compatibilityClaimRefs`, when present, points only to a separately stated pairwise compatibility claim because a named maintenance receiver needs that connection. The reference does not create or complete the compatibility claim. `genericRelationRecordRef` is present only when the same receiver also consumes the generic row; both views derive overlapping values from `subjectAssertionRef` and refresh together. Deprecation and supersession likewise remain separate assertions; a package manifest may index them when its named maintenance use needs those refs.
 
@@ -121,7 +123,7 @@ The manifest is a package-like index for a domain principle framework or local p
 | Framework edition dependency | States that one dependent edition's content or result for a named use requires exact content from one relied-on edition: removing that content or changing it in a way relevant to the use would invalidate the dependent content/result or require that use to be reopened. It makes no compatibility claim. | E.4.PFR:3.4 for the defining predicate; `E.5.3` only for allowed direction and Core acyclicity; `G.11` only for currentness and refresh |
 | Framework edition compatibility | States whether one exact pair supports a named overlapping use across a stated difference or interface, with its impact and reopen condition. If the basis is insufficient, make no positive compatibility claim. | C.2.1 assertion identity and E.4.PFR:3.4 |
 | Preservation relation | States that one carrier, edition, profile, or projection preserves selected structure for a licensed use. | `C.34`, with `C.33` for local carrier loss |
-| Generated-result architecture-use admission | States whether an exact generated or discovered result may enter the intended architecture use, with its truthful kind, obtaining or proposed organization, next-use condition, and limit and return. | `C.35` |
+| Generated-result architecture-use admission | States whether an exact generated or discovered result may enter the intended architecture use, with its truthful kind, the organization concerned and the status of the actual or proposed claim, including any unresolved basis, next-use condition, and limit and return. | `C.35` |
 | Quality framing, evaluation, or improvement | Frames a question, evaluates FPF/DPF/pattern adequacy, or records repeated improvement. | `E.22`, `E.2.DA`, `E.4.DPF.DA`, `E.21`, `E.23` as selected by the exact object |
 | Selected-set result declaration | States the selector-facing result kind, exact scope, selection or inclusion conditions, members, ordering, named use when required, and basis pins. It establishes no availability occurrence. | Use `G.5` for this declaration. If publication is separately current, use `E.17` for a source-backed face and return to source and `E.24.PUB` for the publication occurrence and audience availability. |
 | Source or decision reuse | Uses an exact source line, SoTA pack, DRR, selected answer, accepted decision, or evidence/source claim by value for a bounded use. | the exact source contribution and its bounded use; `G.2` when that contribution comes from a SoTA pack; `E.9` for the DRR and selected answer; the exact separate acceptance decision plus its authority relation or local rule for accepted-decision reuse; `A.10` only for an evidence-use claim |
@@ -181,7 +183,7 @@ Apply conflict precedence, then exactly one disposition in each cell:
 
 An unknown axis on a defeated candidate does not make establishment unresolved. Unknown optional minimality does not open the family disposition. With no required pair, all required pairs are compatible vacuously. The closed-empty branches differ in the supported need claim, not in how many candidates were found.
 
-The basis answer is non-permissive. A downstream A.10 bounded-reliance claim or B.3 assurance result cites the exact analysis edition or cell-answer subgraph and supplies its own evidence, freshness, rival explanation, attempted use, and disposition. Neither grants permission, gate passage, decision, Work, actual use, publication, or authority. A reverse consumer lookup is derived rather than inserted into the upstream ClaimGraph.
+The basis answer is non-permissive. A downstream A.10 bounded-reliance claim or B.3 assurance result cites the exact analysis edition or cell-answer subgraph and supplies the evidence, attempted use and disposition required by its own rule. Include currentness and any live rival when they change that use or conclusion. Neither grants permission, gate passage, decision, Work, actual use, publication, or authority. A reverse consumer lookup is derived rather than inserted into the upstream ClaimGraph.
 
 #### E.4.PFR:3.7 - Bootstrap and stopping rule
 
@@ -225,6 +227,8 @@ If this same pair also has a supported compatibility result for an overlapping u
 
 #### E.4.PFR:4.3 - Source and decision reuse
 
+Suppose a maintainer needs to find the nutrient-monitoring guidance to reconsider after a source-pack selection changes. The following row indexes its bounded source use for that maintenance task:
+
 ```text
 PatternFrameworkRelationRecord@HydroponicCucumberDomain:
   relationId: PFR-HC-SRC-001
@@ -235,7 +239,6 @@ PatternFrameworkRelationRecord@HydroponicCucumberDomain:
   subjectAssertionRef: HC-NutrientSourceUseAssertion
   relationFunctionClaimRef: exact G.2 bounded source-use ClaimGraph
   preservationOrAdmissionRef: C.33-source-pack-summary-loss-note
-  blockedStrongerReading: not framework dependency, specialization, publication, derivation, evidence, or assurance
   sourceReturnCondition: reconsider when including an omitted rival horticulture tradition could change the selected source answer or bounded nutrient-monitoring use
 ```
 
@@ -273,7 +276,7 @@ In evaluate mode, criterion “value ≥ 80” and an applicable exact value 70 
 | **Prag** | Stop after the direct assertion unless a named next action needs more structure; keep high-cost analysis exceptional. |
 | **Did** | Lead with the readable assertion and introduce optional machinery only through a concrete receiving use. |
 
-The first drift is relation-word overread: words such as *depends*, *uses*, *supports*, *governs*, or *profiles* are treated as if they settled relation function. Recover the exact subject assertion and blocked stronger readings.
+The first drift is relation-word overread: words such as *depends*, *uses*, *supports*, *governs*, or *profiles* are treated as if they settled relation function. Recover the exact subject assertion; use F.19:4.4 to decide whether a stronger reading needs an explicit correction.
 
 The second drift is record prestige: a standardized row is required before the assertion can count. Keep the direct assertion as default and demand a named receiver for every row.
 
@@ -286,7 +289,7 @@ The fourth drift is basis inflation: definition, citation, evidence, or later su
 | Check | Passing condition |
 | --- | --- |
 | CC-PFR.1 Assertion first | Every load-bearing claim has an exact subject, relation function, defining or constraining ClaimGraph, polarity, and current basis; a PFR row is optional. |
-| CC-PFR.2 Named row receiver | Every row names a framework-maintenance, impact, comparison, repair, or refresh use that changes action; otherwise delete the row and retain the assertion. |
+| CC-PFR.2 Named row receiver | Every row names a framework-maintenance, impact, comparison, repair, or refresh use that changes action; otherwise delete the row and retain the assertion. The optional blocked-reading fields follow §3.2. |
 | CC-PFR.2a Smallest receiver form | A cross-relation consumer uses the generic PFR row; a dependency-impact or refresh consumer uses the dependency-specific record. Both forms appear only when one named receiver needs both, cite the same subject assertion, link explicitly, derive overlapping values from that assertion, and share one refresh rule. |
 | CC-PFR.3 No owner field | No generic subject-pattern relation, owner field, pattern agency, authority, receiver, or destination is asserted. |
 | CC-PFR.4 Function before label | Relation function is selected by what the claim does, not by word similarity, adjacency, table position, or graph direction. |
@@ -306,7 +309,7 @@ The fourth drift is basis inflation: definition, citation, evidence, or later su
 
 | Anti-pattern | What fails | Repair |
 | --- | --- | --- |
-| Related-pattern flattening | A relation list hides subject, function, predicate, and blocked reading. | Recover the exact subject assertion first; add a relation-specific row only for a named PFR receiver. |
+| Related-pattern flattening | A relation list hides subject, function or predicate. | Recover the exact subject assertion first; add a relation-specific row only for a named PFR receiver. |
 | Mandatory row for every relation | Representation burden becomes an ontology and ordinary authoring becomes record-first. | Keep lane 1; open lane 2 only above its receiver threshold. |
 | Pattern owner or governor | A pattern locator becomes a semantic owner, authority, or relation participant. | Cite the exact defining or constraining ClaimGraph and state the subject assertion. |
 | Dependency as specialization | Edition reliance is read as child-pattern inheritance. | Use the exact dependency assertion; add a dependency-specific record only when a named dependency-impact or refresh receiver needs it, and state specialization separately if it also obtains. |
@@ -328,19 +331,17 @@ The fourth drift is basis inflation: definition, citation, evidence, or later su
 
 ### E.4.PFR:9 - Rationale
 
-FPF pattern ecosystems are declarative relation systems. Their descriptions state predicates, constraints, dependencies, publication and access arrangements, quality relations, and source uses; the patterns themselves do not act on one another. A sequence of pattern descriptions may describe a method or constrain a separately admitted transformation-flow structure, but displayed order alone performs no Work and admits no Transformation or flow.
+Descriptions of FPF pattern ecosystems state predicates, constraints, dependencies, publication and access arrangements, quality relations, and source uses; the patterns themselves do not act on one another. A sequence of pattern descriptions may describe a method or constrain a separately admitted transformation-flow structure, but displayed order alone performs no Work and admits no Transformation or flow.
 
-The assertion-first rule follows C.2.1 identity and A.22.CGUS declarativity. It avoids building a second ontology of pattern ownership while retaining exact relations already supplied by the Core. PFR is a projection for named maintenance use, not the semantic source.
+The assertion-first rule follows C.2.1 identity and A.22.CGUS declarativity. It avoids building a second ontology of pattern ownership while retaining exact relations already supplied by the Core. The PFR row is a projection for its named maintenance use; the subject assertion and defining or constraining ClaimGraph supply its semantics.
 
-The three-lane split also controls cost. Lane 1 dominates whenever it closes the task. Lane 2 adds standardized form only for a consumer. Lane 3 separates actual-use truth from optional basis analysis and keeps its output non-permissive.
+The three-lane split also controls cost. Use Lane 1 whenever it closes the task. Lane 2 adds standardized form only for a consumer. Lane 3 separates actual-use truth from optional basis analysis and keeps its output non-permissive.
 
 ### E.4.PFR:10 - SoTA-Echoing
 
 | Source and status | Useful pressure | FPF mutation and boundary |
 | --- | --- | --- |
-| Official Dyad changelog, Components, and Analyses documentation, moving `/stable/` pages observed with release 3.2.0 dated 2026-07-08 | Current implementation comparator: reusable component declarations and connections remain distinct from analyses, solution objects, and generated artifacts. | Use the separation to stress declaration, actual use, analysis, and carrier boundaries. The moving pages are neither edition-pinned source nor FPF ontology; no Dyad object or dependency enters FPF. |
-| Modelica Language Specification 3.6 | Historical acausal-modeling lineage illustrates declarative equations and connections distinct from solver execution. | Retain as lineage only, not the current comparator or SoTA claim. Import neither class-model, equation, solver, simulation, nor package ontology. |
-| SysML v2, deliberately excluded | For this comparison it is neither a current practice comparator nor useful lineage; treat it as an intentionally excluded historical dead end, not as SoTA by search prominence or by the word “systems”. | Import no UML/SysML metamodel, diagram, package, or workflow semantics. Reopen only if concrete working-project evidence shows a non-dominated gain for this exact relation-maintenance question. |
+| Dyad changelog, Components, and Analyses documentation, moving `/stable/` pages observed with release 3.2.0 dated 2026-07-08 | Current implementation comparator: reusable component declarations and connections remain distinct from analyses, solution objects, and generated artifacts. | Use the separation to stress declaration, actual use, analysis, and carrier boundaries. The moving pages are neither edition-pinned source nor FPF ontology; no Dyad object or dependency enters FPF. |
 | Semantic Versioning 2.0.0 and Chen et al., *Breaking Changes in Software Ecosystems: A Systematic Literature Review* (2026) | Compatibility requires explicit boundaries and impact inspection rather than labels alone. | Adapt compatibility, deprecation, supersession, and impact discipline to framework editions; reject binary/build dependency semantics. |
 | Nazar, *Software Product Line Engineering: Adoption, Tooling and AI Era Challenges* (2026) | Related product families need core assets, variability, and evolution discipline. | Adapt stable-Core and variation reasoning to FPF/domain/local framework editions without making them software product lines. |
 | Riehle, Harutyunyan, and Barcomb, *Pattern Discovery and Validation Using Scientific Research Methods* (2021) | Mined or proposed patterns require validation before reuse. | Generated or discovered results proposed for architecture use remain candidates under C.35; exact subject assertions and source-use decisions remain separate. |

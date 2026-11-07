@@ -3,35 +3,34 @@
 > **Status:** Stable
 
 
-**Tag.** Architectural pattern (Part‑G core invariants hub; refactoring/deduplication)
-**Stage.** *design‑time* (authoring discipline + ID‑stable citation discipline; no run‑time mechanism)
+**Tag.** Architectural pattern for shared Part G rules
+**Stage.** *design‑time*: authoring and stable citation
 **Primary hooks.** E.8 (pattern template), E.10 (lexical/ontological rules), E.19 (conformance discipline), A.6.7 (SuiteObligations + suite protocol pins), A.15.2 (edition/reference baseline), A.15.3 (typed planned filling when applicable), A.19.CN (CN‑Spec), G.0 (CG‑Spec), A.19.CHR (CHR suite boundary), C.23 (SoS‑LOG), F.17 (UTS), F.15 (unification SCR/RSCR).
 
 **Normativity.** Normative unless explicitly marked informative
 
-**Purpose.** Provide *one place to find the governing definitions* for Part‑G‑wide invariants (**delegation-first citation and change-control discipline**), plus a typed **RSCR trigger kind catalogue** and a **Default Governing Definition Index**, so Part G can be refactored without semantic drift or public‑ID breakage.
+**Purpose.** Keep Part G invariants tied to their governing definitions, with stable references for defaults and refresh triggers. Use the **RSCR trigger kind catalogue** and **Default Governing Definition Index** below when authoring or changing Part G patterns.
 
-**Pattern placement.** New Part‑G `PatternId`s are permitted when (i) they introduce a genuinely new **kit/pack class** (typically in `G.2–G.5`), or (ii) they are required to preserve **one governing pattern per wiring extension** and wiring-only separation. Method/discipline/generator specifics SHOULD still default to `GPatternExtension` modules under `G.x:Extensions` (scoped by `PatternScopeId = G.x:Ext.*` and `GoverningPatternId`), rather than adding new Part‑G patterns.
+**Pattern placement.** New Part‑G `PatternId`s are permitted when (i) they introduce a new **kit/pack class** (typically in `G.2–G.5`), or (ii) they are required to preserve **one governing pattern per wiring extension** and wiring-only separation. Method/discipline/generator specifics SHOULD still default to `GPatternExtension` modules under `G.x:Extensions` (scoped by `PatternScopeId = G.x:Ext.*` and `GoverningPatternId`), rather than adding new Part‑G patterns.
 
 ### G.Core:1 - Problem frame
 
-Part G contains patterns for CG‑frame characterization and its downstream artefacts (cards, evidence graphs, bridge surfaces, refresh/shipping orchestration, parity harnesses, dashboards, interop surfaces). In the current spec, several invariants are already present as **suite obligations/protocol norms** and are **reused across Part G**.
+Part G contains patterns for CG‑frame characterization and its downstream artefacts (cards, evidence graphs, bridge surfaces, refresh/shipping orchestration, parity harnesses, dashboards, interop surfaces). These patterns reuse invariants defined by their governing patterns as **suite obligations and protocol norms**.
 
 *Part‑G‑wide* invariants are governed by `G.Core` so every `G.x` can:
 
 * cite the core invariants rather than restating them, and
 * isolate pattern-scoped specifics as `Extensions` without turning each `G.x` into a mixed bag of universal rules, kit surfaces, and method/generator descriptions.
 
-This pattern (`G.Core`) therefore acts as the **deduplication hub** for FPF Part G.
 
 ### G.Core:2 - Problem
 
-Without one governing definition for Part‑G‑wide invariants, Part G drifts in at least six recurring ways:
+Restating shared invariants in several Part G patterns can produce the following inconsistencies:
 
 1. **Shadow governing specs** emerge: downstream patterns restate CN‑Spec / CG‑Spec constraints, accidentally creating “local specs” that can diverge from the canonical governing definitions.
 2. **Crossing discipline becomes inconsistent**: “crossing events” and “crossing visibility” are described differently across `G.x`, causing ambiguity about what must be pinned (UTS/Path/policy‑ids/editions) and what triggers refresh/regression.
 3. **Guard semantics drift**: tri‑state eligibility and “unknown handling” can be reinterpreted in local prose, producing hidden fourth statuses or implicit coercions.
-4. **Hidden scalarization appears**: partial orders are silently collapsed into scalars, or totalization is introduced implicitly through “helpful” numeric summaries.
+4. **Hidden scalarization appears**: partial orders are silently collapsed into scalars, or totalization is introduced implicitly through numeric summaries.
 5. **Suite/kit/pack mixing blurs governing-definition assignment**: downstream patterns drift into “governing” what should remain governed by the suite boundary (`A.6.7` and `A.19.CHR`), kit surfaces (each `G.x`), or shipping (`G.10`).
 6. **Refactoring breaks public IDs**: CC items and trigger labels become hard to evolve because removing duplicates risks breaking external references.
 
@@ -53,23 +52,23 @@ Part G requires a single place where these invariants and refactoring discipline
 
 #### G.Core:4.1 - Delegation-first citation for Part‑G‑wide invariants
 
-`G.Core` is a *citation hub*, not a “second spec”. For any Part‑G‑wide invariant that already has a governing definition, `G.Core`:
+For each Part G invariant already defined elsewhere, `G.Core`:
 
 1) standardises naming via `SuiteObligations.*` (A.6.7:4.2), and
 2) records where the invariant is governed, so downstream patterns cite rather than restate.
 
-**Delegation table (normative index; no semantic duplication).**
+**Governing definitions (normative index).**
 
 | Obligation handle | Canonical governing definition(s) | Part‑G note |
 | --- | --- | --- |
 | `transport_declarative_only` + `cg_spec_cite_required_for_numeric_ops` | A.6.7 + A.19.CN (CN‑Spec) + G.0 (CG‑Spec) + A.19.CHR | Cite CN‑Spec and CG‑Spec through *pins* rather than copying their definitions. No embedded/shadow governing specs. |
-| `bridge_only_crossings` | A.6.7 + F.9 + C.3.3 + E.18 | A claimed semantic correspondence uses F.9; a kind correspondence uses C.3.3; a plane relation keeps its own predicate. The receiving use, reliance and any authorization remain separate. G.7 calibrates these claims; no CL minimum grants the use. |
-| `crossing_visibility_required` | E.18 (CrossingBundle) + A.6.7 | Crossing visibility is a published **CrossingBundle**. `edition_key` changes on **crossing‑relevant artefacts** (Bridge/CL surfaces, BridgeCards, CrossingBundle registries, and UTS rows for crossing artefacts) are treated as crossing-bundle edits. If the required CrossingBundle is missing/non‑conformant, downstream consumers MUST **abstain** from cross-Context or cross-plane reuse (no silent crossings). |
-| `two_bridge_rule_for_described_entity_change` | A.6.7 + C.3.3 | When a use actually relies on correspondence between distinct kinds, cite the obtaining KindBridge and separately check receiving admissibility and classification. A changed entity alone establishes no kind or semantic Bridge. |
+| `semantic_correspondence_requirements` | A.6.7 + F.9 + C.3.3 + E.18 | A claimed semantic correspondence between different local interpretation bases uses F.9; a kind correspondence uses C.3.3; a plane relation keeps its own predicate. The receiving use, reliance and any authorization remain separate. G.7 calibrates these claims; no CL minimum grants the use. |
+| `crossing_visibility_required` | E.18 (CrossingBundle) + A.6.7 | When a named downstream use requires durable E.18 crossing evidence, publish the required **CrossingBundle**. `edition_key` changes on **crossing‑relevant artefacts** (Bridge/CL surfaces, BridgeCards, CrossingBundle registries, and UTS rows for crossing artefacts) are treated as crossing-bundle edits. If the bundle required by that use is missing/non‑conformant, downstream consumers MUST **abstain** from that cross-Context or cross-plane use (no silent crossings). |
+| `independent_correspondence_requirements` | A.6.7 + C.3.3 | When a use actually relies on correspondence between distinct kinds, cite the obtaining KindBridge and separately check receiving admissibility and classification. A changed entity alone establishes no kind or semantic Bridge. |
 | `guard_decision_tristate(pass|degrade|abstain)` + `unknown_never_coerces_to_pass` | A.6.7 + C.23 | `GuardDecision := {pass|degrade|abstain}` only; `unknown` maps to `degrade`/`abstain` via explicit SoS‑LOG branch/policy pins. |
-| `penalties_route_to_r_eff_only` | A.6.7 | Penalties affect the **R lane (R_eff)** only; **F/G invariants** must not be altered by penalties. |
+| `penalties_route_to_r_eff_only` | A.6.7:4.2(2) | Model-bound penalty condition: apply the named model's result meaning and applicability; loss assessment and numerical assurance penalties follow that governing clause. |
 | `no_silent_scalarisation_of_partial_orders` + `no_silent_totalisation` | A.6.7 | Partial-order results stay set‑valued; no silent scalar ranks or “helpful” totalisation. |
-| `planned_slot_filling_in_work_planning_only` + `finalize_launch_values_in_work_enactment_only` + `gate_decision_separation` | A.15.2 + A.15.3 + A.19.CHR + A.6.7 | Edition/reference baselines use A.15.2; A.15.3 applies only to independently declared positions. Planning remains WorkPlanning‑only; launch/finalization values are WorkEnactment‑only; planning does not govern GateDecision/DecisionLog semantics. |
+| `planned_filling_in_workplan` + `actual_launch_facts_and_witness` + `gate_decision_separation` | A.15.2 + A.15.3 + A.19.CHR + A.6.7 + E.18:5.6 | A baseline adopted as planned work is A.15.2 WorkPlan content; A.15.3 applies only to independently declared members. Preserve the planned values. An actual launch claim requires independently admitted Work and obtaining direct relations or exact application bindings; any FinalizeLaunchValues witness is a separate episteme. GateDecision/DecisionLog semantics remain with their gate governor. |
 | `DefaultGoverningDefinitionIndex.single_governing_definition_per_DefaultId` | this pattern | Any default names exactly one governing definition; `G.Core.DefaultGoverningDefinitionIndex` is an index, not a second spec. |
 
 This pattern also governs four pieces of Part‑G‑wide infrastructure that are **not** already governed elsewhere:
@@ -79,18 +78,18 @@ This pattern also governs four pieces of Part‑G‑wide infrastructure that are
 * the **Δ‑discipline** for ID‑stable deduplication (delegation without public‑ID breakage), and
 * the **linkage compression catalogues** (`GCoreConformanceProfileId`, `GCoreTriggerSetId`, `GCorePinSetId`) used to keep `G.x` linkage sections small.
 
-#### G.Core:4.2 - Mandatory `G.Core linkage` manifest requirement for every `G.x`
+#### G.Core:4.2 - State the applicable G.Core linkage
 
-Every pattern `G.x` in Part G SHALL include a short, explicit **Core linkage** section that is notation‑independent and id‑based.
+Each Part-G pattern makes its applicable core obligations, pins, defaults and refresh triggers recoverable. A direct reference with its use conditions is sufficient; `GCoreLinkageManifest` provides a compact representation when several shared sets are used.
 
-* Relations: `Builds on: G.Core`.
-* Solution: include a section named `G.x:<n> - G.Core linkage (normative)` that contains a `GCoreLinkageManifest` listing, at minimum:
+* Cite `G.Core` and the governing definitions of the obligations used.
+* When using a `GCoreLinkageManifest`, identify the applicable sets or individual ids:
 
-  * `CoreConformanceProfileIds := { GCoreConformanceProfileId… }` *(preferred)* and/or `CoreConformanceIds := { CC‑GCORE‑… }`
-  * `RSCRTriggerSetIds := { GCoreTriggerSetId… }` *(preferred)* and/or `RSCRTriggerKindIds := { RSCRTriggerKindId… }`
-  * `CorePinSetIds := { GCorePinSetId… }` *(preferred)* and/or `CorePinsRequired := { … }` *(pins/refs surfaced by the kit; include policy‑id pins and edition pins when applicable; list only additions/overrides if pin sets are used)*
-  * `DefaultsConsumed := { DefaultId… }` *(ids only; governing definition is resolved via `G.Core.DefaultGoverningDefinitionIndex`; cite governing definition, don’t restate)*
-  * `TriggerAliasMapRef?` *(present or cited) if the pattern uses local trigger tokens*
+  * `CoreConformanceProfileIds := { GCoreConformanceProfileId… }` and/or `CoreConformanceIds := { CC‑GCORE‑… }`
+  * `RSCRTriggerSetIds := { GCoreTriggerSetId… }` and/or `RSCRTriggerKindIds := { RSCRTriggerKindId… }`
+  * `CorePinSetIds := { GCorePinSetId… }` and/or `CorePinsRequired := { … }` (list additions or overrides when pin sets are used)
+  * `DefaultsConsumed := { DefaultId… }` (the governing definition is resolved through `G.Core.DefaultGoverningDefinitionIndex`)
+  * `TriggerAliasMapRef?` when local trigger tokens need canonical aliases
 
 **Nil‑elision (normative size rule).** Any field whose value is `∅` MAY be omitted; omission means `∅` and does not relax any obligation.
 
@@ -98,9 +97,9 @@ Every pattern `G.x` in Part G SHALL include a short, explicit **Core linkage** s
 
 ##### G.Core:4.2.1 - `GCoreLinkageManifest` (canonical shape)
 
-`GCoreLinkageManifest` is the minimal, pattern‑local wiring manifest for citing `G.Core` without duplicating universal prose.
+`GCoreLinkageManifest` groups the pattern-local references to `G.Core` without duplicating the governing rules.
 
-A `G.x` MAY render the manifest as prose, a table, or structured notation, but the ids SHALL be recoverable by authoring review:
+A `G.x` MAY render this linkage as prose, a table, or structured notation. Its applicable ids and conditions SHALL remain recoverable:
 
 `GCoreLinkageManifest := ⟨
   CoreConformanceProfileIds?: {GCoreConformanceProfileId…},
@@ -128,11 +127,11 @@ A `GCoreConformanceProfileId` is a stable identifier for a named set of `CC‑GC
 
 A `GCorePinSetId` is a stable identifier for a named set of commonly recurring **pin obligations** used in Part‑G kits. It exists solely to reduce repetition in `G.x` linkage sections (no new semantics).
 
-**Conditional pins (normative).** In pin‑set expansions below, a pin marked with `?` is **conditional**: it **MUST** be present iff the pattern actually uses the corresponding surface/artefact class; otherwise it MAY be omitted (nil‑elision permitted) and is treated as `∅`. A `G.x` MAY strengthen a conditional pin to unconditional by listing it explicitly in `CorePinsRequired`.
+**Conditional pins (normative).** A pin marked with `?` is required when the pattern’s actual object or receiving use calls for that surface; otherwise it may be omitted. An independently selected kit or receiving contract can require a pin explicitly. Selection of a shared pin set preserves those conditions; it does not create a CG-Frame, comparison specification, WorkPlan or crossing.
 
 | GCorePinSetId | Expands to `CorePinsRequired` (set) | Notes |
 | --- | --- | --- |
-| `GCorePinSetId.PartG.AuthoringMinimal` | `{CG-FrameContext, entityOfConcern := ⟨GroundingHolon, ReferencePlane⟩, CNSpecRef.edition, CGSpecRef.edition}` | Baseline scope+spec pins for most Part‑G authoring kits (design‑time, citable, refreshable). |
+| `GCorePinSetId.PartG.AuthoringMinimal` | `{CG-FrameContext?, entityOfConcern := ⟨GroundingHolon, ReferencePlane⟩?, CNSpecRef.edition?, CGSpecRef.edition?}` | Pin the frame, subject/plane and specification editions required by the actual kit or use. A CG-governed comparison retains its CN/CG pins; a local view, source registration or refresh judgement without that comparison uses its own required scope and source basis. |
 | `GCorePinSetId.PartG.CrossingVisibilityPins` | `{BridgeId?/BridgeCardId?, KindBridgeAssertionRef[]?, PlaneRelationRef[]?, BridgeMatrixId?, CL?/CL^k?/CL^plane?, Φ/Ψ/Φ_plane policy-ids?, CrossingBundleId?, UTSRowId[]?, PathId[]?/PathSliceId[]?}` | Activate the channel and receiving-use conditions below. Selecting this pin set alone creates no correspondence, calibration, loss model, publication row or flow/gate crossing. |
 
 **CrossingVisibilityPins activation.** Recover the relation and receiving use before expanding its applicable pins:
@@ -142,14 +141,14 @@ A `GCorePinSetId` is a stable identifier for a named set of commonly recurring *
 | F.9 semantic correspondence | the obtaining Bridge and its BridgeCard/source basis required by F.9; CL when the use reports or consumes that calibration |
 | C.3.3 kind correspondence | exact kind endpoints and KindBridge assertion/basis; CL^k when its governing calibration or receiving rule uses it |
 | Separately governed plane relation | its exact relation reference, source/target planes and direct rule; CL^plane only for a defined calibration used here |
-| Numerical loss or assurance calculation | the exact Φ, Ψ or Φ_plane policy and model actually applied; penalties remain in R/R_eff |
+| Numerical loss or assurance calculation | the applicable domain model and policy actually used; include Φ, Ψ or Φ_plane references when the model uses them. Any numerical assurance penalty satisfies A.6.7:4.2(2). |
 | E.18 flow crossing, A.21 gate, public naming or path-citable reliance | the bundle, gate, UTS and path anchors required by that independently applicable rule; an edition change alone supplies none of these objects |
 
 When more than one channel is used, retain every channel's independently required basis. A no-crossing use has no crossing pins; a same-kind new entity or changed source edition alone creates no Bridge. The conditional marks permit omission only for an inactive condition, not omission of a reference required by a real calibration, assurance or gate claim.
 
 #### G.Core:4.3 - RSCR Trigger Catalogue and docking discipline
 
-`G.Core` is the **single writer** for Part‑G‑wide trigger kinds.
+`G.Core` defines the canonical Part G trigger kinds.
 
 ##### G.Core:4.3.1 - Definitions
 
@@ -197,21 +196,8 @@ When more than one channel is used, retain every channel's independently require
 
 ##### G.Core:4.3.4 - Canonical trigger catalogue
 
-Use these canonical kinds to classify refresh causes and to interpret the deprecated `G.6:H3` and `G.11:T0…T7` aliases used across `G.0…G.13`:
+Use the canonical kinds defined below to classify refresh causes and interpret the deprecated `G.6:H3` and `G.11:T0…T7` aliases used across `G.0…G.13`.
 
-* `RSCRTriggerKindId.LegalitySurfaceEdit`
-* `RSCRTriggerKindId.PenaltyPolicyEdit`
-* `RSCRTriggerKindId.CrossingBundleEdit`
-* `RSCRTriggerKindId.ReferencePlaneEdit`
-* `RSCRTriggerKindId.EditionPinChange`
-* `RSCRTriggerKindId.TokenizationOrNameChange`
-* `RSCRTriggerKindId.PolicyPinChange`
-* `RSCRTriggerKindId.TelemetryDelta`
-* `RSCRTriggerKindId.FreshnessOrDecayEvent`
-* `RSCRTriggerKindId.EvidenceSurfaceEdit`
-* `RSCRTriggerKindId.MaturityRungChange`
-* `RSCRTriggerKindId.BaselineBindingEdit`
-* `RSCRTriggerKindId.DefaultGoverningDefinitionChange`
 
 ###### G.Core:4.3.4.1 - Canonical kind definitions (normative, minimal)
 
@@ -276,7 +262,7 @@ EvidenceGraph `H3` example causes → canonical kinds:
 
 #### G.Core:4.4 - Default Governing Definition Index
 
-`G.Core` provides an index of Part‑G defaults with **one governing definition** per `DefaultId`. The index is not a “second spec”; it is a cross-reference table that points to the *governing definition reference* (a CC item, policy‑id, or TaskSignature rule) and states applicability conditions.
+The index below identifies **one governing definition** per `DefaultId`: a CC item, policy-id or TaskSignature rule. It also states the default's applicability conditions.
 
 ##### G.Core:4.4.1 - Definitions
 
@@ -291,7 +277,7 @@ EvidenceGraph `H3` example causes → canonical kinds:
 * Exactly one governing definition per `DefaultId`.
 * Any other mention in `G.x` MUST be a citation/delegation to the governing definition, not a competing statement.
 * A default may be conditional (default-rule) with explicit applicability conditions.
-* The Default Governing Definition Index SHALL NOT be used to “smuggle” mandatory invariants as defaults. Invariants remain invariants (typically cited through `CC‑GCORE‑…` and their canonical governing definitions).
+* The Default Governing Definition Index SHALL contain only defaults. Cite mandatory invariants through `CC‑GCORE‑…` and their governing definitions.
 
 ##### G.Core:4.4.3 - Default governing definitions
 
@@ -301,7 +287,7 @@ EvidenceGraph `H3` example causes → canonical kinds:
 | `DefaultId.DominanceRegime`     | `CC‑G5.28`                                                | Existing governing definition; other mentions delegate to it. |
 | `DefaultId.GammaFoldForR_eff` | `CC‑G5.4` | Model-qualified support composition under B.3/C.2.2; no universal numeric fold. Keep separate support when no common model is justified. |
 
-This table may grow over time; the rule is that the **governing definition must already be named** (or be intentionally set to `G.Core` when the default is truly Part‑G‑wide and not governed elsewhere). Any change in a row (add/remove/change governing definition) SHALL be treated as a refresh‑sensitive edit and recorded as `RSCRTriggerKindId.DefaultGoverningDefinitionChange` (payload: affected `DefaultId.*`, old governing definition ref, new governing definition ref).
+To add a default, name its governing definition. Use `G.Core` as that definition only for a Part G default not governed elsewhere. Any change in a row (add/remove/change governing definition) SHALL be treated as a refresh‑sensitive edit and recorded as `RSCRTriggerKindId.DefaultGoverningDefinitionChange` (payload: affected `DefaultId.*`, old governing definition ref, new governing definition ref).
 
 #### G.Core:4.5 - ID continuity protocol (Δ‑discipline)
 
@@ -331,10 +317,10 @@ Non-CC public identifiers (e.g., `UTSRowId`, `RSCRTriggerAliasId`, deprecation n
 In Part G authoring, `G.Core` is the hub that allows each `G.x` to become structurally predictable: (a) a short, normative “Core linkage” slice, and (b) pattern‑scoped `Extensions`. Universal obligations cite canonical governing definitions such as `A.6.7`, `A.15.3`, `A.19`, `G.0`, and `A.19.CHR`, while RSCR trigger kinds and `DefaultGoverningDefinitionRef` references become typed and cite named definitions.
 
 **Show 1: Refresh triggers without semantic drift.**
-`G.11` already uses trigger tokens `T0…T7`. `G.Core` keeps them as aliases and maps them to canonical trigger kinds (e.g., `TelemetryDelta`, `EditionPinChange`, `CrossingBundleEdit`). This makes RSCR reason codes consistent across patterns and avoids re-explaining trigger semantics in every pattern.
+`G.11` uses trigger tokens `T0…T7`. `G.Core` keeps them as aliases and maps them to canonical trigger kinds (e.g., `TelemetryDelta`, `EditionPinChange`, `CrossingBundleEdit`). This makes RSCR reason codes consistent across patterns and avoids re-explaining trigger semantics in every pattern.
 
 **Show 2: Resolving competing defaults.**
-If multiple patterns imply a default for `PortfolioMode`, the Default Governing Definition Index points to one governing definition (currently `CC‑G5.23`). Other patterns (e.g., bundles/log patterns) must cite that governing definition or delegate to it, rather than restating the default with slightly different wording. This preserves intent while preventing drift and ambiguity.
+If multiple patterns imply a default for `PortfolioMode`, the Default Governing Definition Index points to one governing definition (`CC‑G5.23`). Other patterns (e.g., bundles/log patterns) must cite that governing definition or delegate to it, rather than restating the default with slightly different wording. This preserves intent while preventing drift and ambiguity.
 
 ### G.Core:6 - Bias-annotation (informative)
 
@@ -342,12 +328,7 @@ If multiple patterns imply a default for `PortfolioMode`, the Default Governing 
 * **Over-typing bias:** A trigger catalogue can become overly granular. Mitigation: granularity discipline + scope notes; only add new kinds when planning/selection needs it.
 * **Refactor rigidity bias:** Preserving IDs can feel cumbersome. Mitigation: delegation items preserve IDs while enabling deduplication.
 * **Default absolutism bias:** Defaults may require conditional rules. Mitigation: Default Governing Definition Index allows conditional default rules with explicit applicability conditions.
-* **Single-writer bias:** prefers single‑writer *authoring* for catalogs and explicit governing-definition tables.
-  *Mitigation:* delegation-first citation; keep catalogs minimal; avoid “second specs”.
-* **Architectural bias:** centralizes invariants to prevent accidental coupling across `G.x`.
-  *Mitigation:* keep core thin; force `Extensions` to remain pattern‑scoped.
-* **Ontological/epistemic bias:** enforces strict distinction between governing spec refs, kits, mechanisms, and orchestration.
-  *Mitigation:* allow didactic scope notes while keeping normative surface id‑based.
+
 * **Pragmatic bias:** adds authoring overhead (linkage sections, alias maps).
   *Mitigation:* one small mandatory bridge CC item per pattern (`CC‑Gx‑CoreRef`) and short linkage slices only.
 * **Didactic bias:** risks “glossy hub prose” that hides missing CC coverage.
@@ -355,22 +336,22 @@ If multiple patterns imply a default for `PortfolioMode`, the Default Governing 
 
 ### G.Core:7 - Conformance checklist (normative) — **CC‑GCORE**
 
-Conformance items are authoring obligations and are enforced transitively by `CC‑Gx‑CoreRef` in every `G.x`.
+The following conformance items retain their stated applicability conditions. Each Part-G pattern cites the items it uses, directly or through its linkage manifest.
 
 | ConformanceId        | Statement |
 | -------------------- | --------- |
 | **CC‑GCORE‑DEL‑1**   | A conforming `G.Core` SHALL be delegation-first: if a norm is already governed by `A.6.7`, `A.15.3`, `A.19`, `G.0`, `A.19.CHR`, or a relevant Part E pattern, `G.Core` cites that governing definition rather than duplicating semantics. |
-| **CC‑GCORE‑CN‑CG‑1** | Any pattern in Part G that builds on `G.Core` SHALL cite `CN‑Spec` and `CG‑Spec` as the only spec-legality surfaces and SHALL NOT introduce shadow specs (incl. complying with `SuiteObligations.transport_declarative_only` and `SuiteObligations.cg_spec_cite_required_for_numeric_ops`). |
+| **CC‑GCORE‑CN‑CG‑1** | A Part-G use governed by CN‑Spec or CG‑Spec SHALL cite the applicable specification and edition. No Part-G pattern introduces a shadow specification; apply `SuiteObligations.transport_declarative_only` and `SuiteObligations.cg_spec_cite_required_for_numeric_ops` under their governing conditions. |
 | **CC‑GCORE‑OBL‑1**   | A conforming `G.Core` SHALL treat the obligation vocabulary in `A.6.7:4.2` as the canonical naming surface for Part‑G‑wide obligations and SHALL NOT introduce competing obligation names for the same norms. |
 | **CC‑GCORE‑CROSS‑1** | A Part-G pattern SHALL apply A.6.7's correspondence and visibility obligations only to the actual relations and receiving uses defined there. An F.9 correspondence, C.3.3 kind correspondence and separately governed plane relation keep their own bases; an actual E.18 flow crossing or A.21 gate keeps its required bundle/gate anchors. Changes to crossing-relevant artefacts trigger RSCRTriggerKindId.CrossingBundleEdit and, for a changed edition pin, EditionPinChange under multi-cause discipline. A changed entity, context/plane label or edition alone creates neither Bridge nor crossing. |
 | **CC‑GCORE‑GUARD‑1** | A Part‑G pattern SHALL treat `GuardDecision := {pass|degrade|abstain}` as the only admissibility/eligibility decision domain (`SuiteObligations.guard_decision_tristate(pass|degrade|abstain)`); `unknown` SHALL NOT silently coerce to `pass` (`SuiteObligations.unknown_never_coerces_to_pass`); “sandbox/probe‑only” SHALL be expressed via SoS‑LOG branch pins (policy/FailureBehavior) (see `C.23`), not as an extra decision value. |
-| **CC‑GCORE‑PEN‑1**   | A Part‑G pattern SHALL route penalties/assurance loss to the **R lane (`R_eff`) only** (`SuiteObligations.penalties_route_to_r_eff_only`) and SHALL preserve **F/G invariants** under penalties (penalties do not alter legality/invariant lanes). |
+| **CC‑GCORE‑PEN‑1**   | A Part-G pattern SHALL apply A.6.7:4.2(2) to its loss and assurance-penalty claims (`SuiteObligations.penalties_route_to_r_eff_only`), including that clause's model-bound applicability and separation from legality, invariant and claim-scope judgments. |
 | **CC‑GCORE‑SET‑1**   | A Part‑G pattern SHALL preserve set-return semantics for partial orders and SHALL prohibit silent scalarization/totalization (`SuiteObligations.no_silent_scalarisation_of_partial_orders`, `SuiteObligations.no_silent_totalisation`); any scalar summary SHALL be report-only unless declared as an admissible comparator surface. |
 | **CC‑GCORE‑SKP‑1**   | A Part‑G pattern SHALL preserve the suite/kit/pack distinction (A.19.CHR) and SHALL keep shipping concerns governed by their canonical governing patterns (e.g., G.10) rather than embedding shipping semantics into unrelated kits or core invariants. |
-| **CC‑GCORE‑P2W‑1**   | A Part-G pattern identifies an ordinary edition/reference baseline through its exact A.15.2 WorkPlan and local content locator. A.15.3 typed planned filling applies only to an independently declared argument or relation position, with its own meaning and binding rule. Final launch values and actual bindings remain enactment claims; gate decisions keep their own governor. |
-| **CC‑GCORE‑LINK‑1**  | Every conforming `G.x` SHALL satisfy `G.Core:4.2` by providing a `G.x:<n> - G.Core linkage (normative)` section containing a `GCoreLinkageManifest` (incl. either `CoreConformanceProfileIds` or `CoreConformanceIds`, either `RSCRTriggerSetIds` or `RSCRTriggerKindIds`, and either `CorePinSetIds` or `CorePinsRequired` (or both)). Nil‑elision is permitted for `∅` fields. |
-| **CC‑GCORE‑LINK‑2**  | Every conforming `G.x` SHALL include `CC‑Gx‑CoreRef` as the first checklist item; it SHALL make mandatory the effective `CoreConformanceIds` (including expansions of any `CoreConformanceProfileIds`) declared in the linkage manifest. |
-| **CC‑GCORE‑UTS‑1**   | If a Part‑G pattern mints, deprecates, or evolves any public identifier, it SHALL publish/update the corresponding UTS entries and cite them via `UTSRowId` pins, delegating UTS semantics (twin labels, alias/deprecation discipline, edition pins) to its canonical governing definition `F.17 (UTS)`. |
+| **CC‑GCORE‑P2W‑1** | When a Part-G use adopts an edition/reference baseline as planned work, identify its A.15.2 WorkPlan and local content locator. A.15.3 typed planned filling applies only to an independently declared argument or relation position, with its own meaning and binding rule. Final launch values and actual bindings remain enactment claims; gate decisions keep their own governor. Ordinary source or edition citation alone does not assert planned work. |
+| **CC‑GCORE‑LINK‑1** | Each `G.x` makes its applicable core obligations, pins, defaults and trigger kinds recoverable under `G.Core:4.2`, through direct references or a `GCoreLinkageManifest`. Nil-elision for `∅` does not waive an applicable obligation. |
+| **CC‑GCORE‑LINK‑2** | A `CC‑Gx‑CoreRef`, when used, delegates to the effective core obligations and their conditions, including referenced profile expansions. Equivalent direct delegation is sufficient. |
+| **CC‑GCORE‑UTS‑1**   | If a Part‑G pattern mints, deprecates, or evolves any public identifier, it SHALL publish/update the corresponding UTS entries and cite them via `UTSRowId` pins, delegating UTS semantics (Tech and applicable Plain designations, alias/deprecation discipline, edition pins) to its canonical governing definition `F.17 (UTS)`. |
 | **CC‑GCORE‑ID‑1**    | When deduplicating, existing public CC ids in `G.x` SHALL NOT be deleted/renamed; they SHALL become delegation items to relevant `CC‑GCORE‑…` items. |
 | **CC‑GCORE‑ID‑2**    | Public id continuity applies beyond CC item ids: `UTSRowId` rows, `RSCRTriggerAliasId` tokens (e.g., `T0…T7`), deprecation notices, and edition bumps SHALL preserve prior ids and express drift via alias/deprecation/edition evolution (never by reusing/redefining an old id). When downstream behaviour can change, the change SHALL emit a canonical `RSCRTriggerKindId` (e.g., `TokenizationOrNameChange`, `EditionPinChange`). |
 | **CC‑GCORE‑TRIG‑1**  | A conforming `G.Core` SHALL define the canonical `RSCRTriggerKindId` catalogue and SHALL be its single writer. |
@@ -412,14 +393,14 @@ Conformance items are authoring obligations and are enforced transitively by `CC
 
 ### G.Core:10 - Rationale
 
-Universalization of Part G requires a stable "gravity center" for invariants, otherwise each pattern becomes a competing governing source. Delegation-first citation prevents duplication and makes governing-definition assignment explicit, while typed trigger kinds and the Default Governing Definition Index turn historically prose-driven drift into checkable, id-based structure.
+Citing one governing definition lets authors change an invariant without maintaining competing statements across Part G. Stable trigger kinds make refresh causes comparable across patterns. The Default Governing Definition Index lets an author resolve a default to its rule and applicability conditions.
 
 ### G.Core:11 - SoTA alignment (informative)
 
-Although FPF is conceptual (not a data governance framework), `G.Core` aligns Part‑G authoring with modern best practice patterns seen across post‑2015 work:
+The following approaches inform Part G authoring:
 
 * **Selective prediction / abstention** informs tri‑state guard discipline: abstaining or degrading is a first-class outcome, not an error coerced into a scalar.
-* **Set-valued / conformal methods** motivate set-return semantics: when comparability is partial or uncertainty is structural, returning sets/regions is often the SoTA-friendly representation.
+* **Set-valued / conformal methods** motivate set-return semantics: when comparability is partial or uncertainty is structural, sets or regions can preserve alternatives that a single answer would conceal.
 * **Multiobjective optimization and quality-diversity** reinforce declared set-result and `Archive` semantics instead of forced “best single scalar”.
 * **Monotone constrained modelling** (where used) supports “legality-first” scoring/aggregation: constraints and admissibility precede optimization, mirroring CG‑Spec gate discipline.
 * **Schema evolution and contract testing** motivate id-stable conformance points and typed trigger catalogues: stable identifiers + regression hooks are the practical mechanism for safe refactoring.

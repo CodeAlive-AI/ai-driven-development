@@ -34,7 +34,7 @@ When these distinctions are missing, familiar PatternIDs become proxies for valu
 | Addressable reliance | Transfer, audit, automation, delayed feedback, or costly reversal can rely on separate fit findings. |
 | Applicability versus recommendation | A fit finding does not select a candidate for current use. |
 | Plural coordination | Several candidates may be alternatives, complements, or partially ordered. |
-| Exact precedence | A prospective dependency names the exact required content and selected prerequisite use; current readiness separately needs actual result closure. |
+| Exact precedence | A prospective dependency names the exact required content and selected prerequisite use; current readiness separately needs the actual result and its basis. |
 | No work overread | Pattern-use coordination does not plan, authorize, or perform project work. |
 | Proxy resistance | Pattern familiarity, score, and publication order are not evidence of expected practical gain. |
 
@@ -43,6 +43,8 @@ When these distinctions are missing, familiar PatternIDs become proxies for valu
 Evaluate candidate uses against five distinct fit aspects. An ordinary reversible judgement may remain conversational: keep the aspects in one compact rationale, state the aggregate applicability when the current question needs it, then compare the expected receiving value and full burden of the serious continuations, including continuing without a new pattern use. Before repeating a recommended use, apply the result-reuse branch in `4.2.1`. Materialize separate findings or a recommendation episteme only when a named later use needs addressable support. Coordinate several candidates with an explicit local ordering mode and add pairwise precedence only where a real basis exists.
 
 #### E.11.PUR:4.1 - Fit and applicability
+
+In the optional forms below, `claimGraph` carries the episteme's complete asserted content, including the reasons and qualifications that change what it says. The scheme designation resolves under C.2.1:4.2.6 to the rules actually governing that account. It can select another episteme's effective scheme or exact content defining those rules; a reference to a document alone does not choose between them. Preserve an unresolved interpretation rather than filling the field with a nearby name. These forms organize addressable writing when needed; ordinary conversation and partial notes remain sufficient under the entry conditions above.
 
 ```text
 PatternUseFitCriterionValue =
@@ -53,8 +55,8 @@ PatternUseApplicabilityResultValue = applicable | inapplicable | insufficientBas
 
 PatternUseFitFinding@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing one CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   fitCriterion: PatternUseFitCriterionValue
   fitResult: PatternUseFitResultValue
@@ -62,8 +64,8 @@ PatternUseFitFinding@Context <: U.Episteme:
 
 PatternUseApplicabilityFinding@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing one CandidatePatternUse@Context
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   fitFindingRefs[5]: U.EpistemeRef, each referencing one PatternUseFitFinding@Context
   applicabilityResult: PatternUseApplicabilityResultValue
@@ -90,8 +92,8 @@ PatternUseRecommendationSupportProfileValue = ordinaryCompact | relianceBearing
 PatternUseRecommendation@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the selected CandidatePatternUse@Context
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   recommendationSupportProfile: PatternUseRecommendationSupportProfileValue
   applicabilityResult: PatternUseApplicabilityResultValue
@@ -125,15 +127,15 @@ The candidate pattern use, the earlier result episteme, a later reliance relatio
 
 #### E.11.PUR:4.3 - Coordination without forced order
 
-For ordinary local coordination, state the candidates, whether they are unordered, partially ordered, or totally ordered, any real precedence basis, and the stop boundary in readable prose. Materialize the rationale, coordination episteme, and any pairwise ordering relations only when a named later use needs that coordination to remain addressable.
+For ordinary local coordination, state the candidates, whether they are unordered, partially ordered, or totally ordered, any real precedence basis, and the stop boundary in readable prose. Materialize the rationale and coordination epistemes, including references to any established pairwise ordering relations, only when a named later use needs that coordination to remain addressable.
 
 ```text
 PatternUseOrderingModeValue = unordered | partialOrder | totalOrder
 
 PatternUseCoordinationRationale@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the coordination-question episteme
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   subjectCandidatePatternUseRefs[2..*]: U.EpistemeRef, each referencing one CandidatePatternUse@Context
   coordinationRationaleDescriptionRef: U.EpistemeRef
@@ -143,8 +145,8 @@ PatternUseCoordinationRationale@Context <: U.Episteme:
 PatternUseCoordination@Context <: U.Episteme:
   entityOfConcernRef: U.EntityRef, referencing the coordination-question episteme
   entityOfConcernKindRef: U.KindRef
-  claimGraph: U.ClaimGraph by value
-  referenceSchemeRef: U.ReferenceSchemeRef
+  claimGraph: exact whole C.2.1 claim content, by value
+  schemeDesignation: C.2.1 SchemeDesignation
   editionId
   memberCandidatePatternUseRefs[2..*]: U.EpistemeRef, each referencing one CandidatePatternUse@Context
   orderingMode: PatternUseOrderingModeValue
@@ -184,7 +186,7 @@ The candidates are distinct members of the coordination. The relation obtains wh
 
 **Identity and extent.** Keep the same dependency for the same exact candidates, governed coordination use, branch and meaning of its precedence condition, including any genuinely constitutive schedule/priority rule. A different rendering, witness or descriptive coordination episteme alone changes none of those values. A changed candidate or meaning-changing condition/rule requires a new relation claim and identity assessment; the record reference is not itself the identity law. Within a temporally qualified use, the occurrence lasts while that branch predicate holds; a gap where it ceases to hold ends the occurrence, and a later re-established occurrence has a new extent. Omit temporal machinery for an atemporal constraint.
 
-**Readiness is a separate claim.** For prerequisite-result continuation, identify a current E.11.PUA result-closure finding and the actual result and category-correct basis that satisfy the required content and receiving conditions. The closure may concern the prerequisite use or an adequate earlier result reused under §4.2.1. State readiness/applicability for this continuation as its own ordinary C.2.1 claim. A known unmet condition means not ready; missing information leaves readiness unresolved. An expectation, ordering edge or closure record's presence alone supplies no achieved result.
+**Readiness is a separate claim.** For prerequisite-result continuation, identify the actual result and category-correct basis that satisfy the required content and receiving conditions. When a named later reliance needs addressable closure, cite a current E.11.PUA result-closure finding for the prerequisite use or an adequate earlier result reused under §4.2.1. State readiness/applicability for this continuation as its own ordinary C.2.1 claim. A known unmet condition means not ready; missing information leaves readiness unresolved. An expectation, ordering edge or closure record's presence alone supplies no achieved result.
 
 The dependency is not an instruction to repeat a use whose adequate earlier result is already available. Apply the result-reuse exit before proposing execution. A changed closure can change readiness without changing the prospective dependency. No ordering or readiness claim authorizes Work. Page, seminar, identifier and display order do not establish a dependency.
 
@@ -196,12 +198,12 @@ The dependency is not an instruction to repeat a use whose adequate earlier resu
 4. Establish the aggregate applicability under `4.1`. A known `misfit` ends the applicability inquiry for that candidate under the inspected conditions. If the aggregate is `insufficientBasis`, obtain missing information only when an attainable answer can change a worthwhile continuation; otherwise return the missing-basis boundary. State the aggregate separately when the current question needs it. If step 5 supports a recommendation, include it there; when a reliance-bearing applicability finding exists, the two result values agree.
 5. Compare an applicable candidate with the other serious continuations, including continuing the present work without a new pattern use. Recommend it only when its expected receiving value warrants its full burden; use C.11.DUA when that judgement is unclear. Finish without a positive recommendation when no candidate warrants one. The expectation is not an achieved result.
 6. Before repeating a recommended use, compare any earlier result through `4.2.1`. Reuse a matching result or reopen only the affected result question.
-7. Coordinate several candidates as unordered, partially ordered, or totally ordered. Establish each needed pair under §4.4's branch predicate. For prerequisiteResult, name exact required content, the selected supplier-use basis and its expectation. Then assess current readiness separately from actual closure, reusing an adequate earlier result before requiring another use.
+7. Coordinate several candidates as unordered, partially ordered, or totally ordered. Establish each needed pair under §4.4's branch predicate. For prerequisiteResult, name exact required content, the selected supplier-use basis and its expectation. Then assess readiness separately from precedence, using the actual result and its basis and reusing an adequate earlier result before requiring another use.
 8. Stop at the applicability answer or missing-basis boundary, recommendation, matching earlier result, coordination result, or conclusion that no new use is worth recommending now. The last outcome selects no candidate and requires no refusal document; it leaves existing obligations in force. A Plain *next move*, when one is useful, names only the recommended pattern use or conditional continuation. Continue to PUA, P2W, planning, gate, decision, or work only when that next claim becomes current.
 
 #### E.11.PUR:4.6 - Replay and currentness
 
-Replay an ordinary conversational or addressable compact recommendation from the current concern, inspected candidate pattern and `Solution`, aggregate applicability, compact rationale over all five aspects, serious continuations considered, expected result and full burden, any current receiving use, and recommendation boundary. Replay a reliance-bearing recommendation from those same positions plus the current applicability finding and its five fit findings. Replay coordination from its inspected candidate uses, question, ordering mode, any pairwise precedence and bases, stop boundary, and, for each `prerequisiteResult` relation, the exact expectation, required content and selected supplier-use basis. Replay a readiness claim separately from the actual result closure, receiving conditions and any earlier-result reuse.
+Replay an ordinary conversational or addressable compact recommendation from the current concern, inspected candidate pattern and `Solution`, aggregate applicability, compact rationale over all five aspects, serious continuations considered, expected result and full burden, any current receiving use, and recommendation boundary. Replay a reliance-bearing recommendation from those same positions plus the current applicability finding and its five fit findings. Replay coordination from its inspected candidate uses, question, ordering mode, any pairwise precedence and bases, stop boundary, and, for each `prerequisiteResult` relation, the exact expectation, required content and selected supplier-use basis. Replay readiness separately from precedence, using the actual result, its category-correct basis, receiving conditions and any earlier-result reuse; recover an addressable closure finding only when that reliance needs it.
 
 When a later use needs to replay a conclusion without a recommendation, recover the concern, the serious continuations, the value and burden that mattered, and the condition for reconsideration. No selected-candidate reference or five-finding dossier is required for that conclusion.
 
@@ -223,7 +225,7 @@ Because this local recommendation is reversible and no named later use relies on
 
 The same team already has a C.28 causal-use result for the same pump model, intervention question, declared use, sources, assumptions, and qualification window. The team uses C.28 to compare that result episteme and edition with the present concern. Every comparison value still matches, so the team cites the result and stops instead of performing the C.28 use again.
 
-If the team uses the result as a premise in a project discussion and the source-to-use account is still implicit, it uses A.10 to make the source → result → claim connection explicit for that bounded use. If the later gate Work relies on that result, its A.10 evidence-provenance path names the result and bounded use. If new operating conditions change the causal-use assumptions or qualification window, the team reopens that affected C.28 question rather than treating the old result as current or restarting every coordinated pattern use.
+If the team uses the result as a premise in a project discussion and the source-to-use account is still implicit, it uses A.10 to make the source → result → claim connection explicit for that bounded use. If later gate Work relies on that result, retain its required evidence and authority grounds; use A.10 when the source-to-use account remains implicit or the gate's replay needs require that account, naming the result and bounded use. If new operating conditions change the causal-use assumptions or qualification window, the team reopens that affected C.28 question rather than treating the old result as current or restarting every coordinated pattern use.
 
 ##### E.11.PUR:5.1.2 - No new use is worth recommending
 
@@ -241,7 +243,7 @@ State an unordered coordination: the team may use either pattern first or use th
 
 A design team's comparison rule requires the exact evaluation coordinates for candidates X and Y and their intended review question. The coordination selects its A.19.ECS candidate to supply that EvaluationCharacteristicSpaceSpec under a stated criterion for this task. The known rule, required content and supplier selection establish prerequisite-result precedence even while the spec is absent. Readiness is false when absence is known, or unresolved when its existence/applicability is unknown.
 
-When a current PUA closure identifies the actual spec and its basis meeting those receiving conditions, readiness can be supported. If an earlier ECS result already meets them under §4.2.1, reuse that result without repeating ECS. A same-kind spec for another question is insufficient. If the comparison rule no longer requires this content, the dependency fails; if the rule itself is missing, the dependency is unresolved. Neither result changes candidate inspection or supplies Work authorization.
+When the actual spec and its basis meet those receiving conditions, readiness can be supported. A named later reliance that needs addressable closure also requires the current PUA finding. If an earlier ECS result already meets them under §4.2.1, reuse that result without repeating ECS. A same-kind spec for another question is insufficient. If the comparison rule no longer requires this content, the dependency fails; if the rule itself is missing, the dependency is unresolved. Neither result changes candidate inspection or supplies Work authorization.
 
 #### E.11.PUR:5.4 - Method precondition and a real ordered pair
 
@@ -267,7 +269,7 @@ The score improved while first-result fit and receiving-use value worsened. Keep
 - **Favorite-pattern proxy bias.** Familiar PatternID substitutes for current value. State the concern, expected result, and any current receiving use in the rationale.
 - **Five-form bias.** Every ordinary use creates five findings. Keep them in one compact rationale unless their separate identity is relied on.
 - **Sequence bias.** Presentation order becomes precedence. Repair by naming the pairwise basis.
-- **Result-copy or expectation-as-result bias.** A prerequisite result kind is duplicated in ordering fields, or its expectation is treated as achieved. Reuse the prerequisite candidate's exact expectation and current E.11.PUA closure finding; the closure reports but does not create the exact result and direct basis.
+- **Result-copy or expectation-as-result bias.** A prerequisite result kind is duplicated in ordering fields, or its expectation is treated as achieved. Reuse the prerequisite candidate's exact expectation. Assess readiness from the actual result and basis; cite a current E.11.PUA closure finding when named later reliance needs it. The finding reports those facts rather than creating them.
 - **Stage-name repetition bias.** The same result question is answered again because a later review or phase uses another label. Compare the earlier result through its direct pattern, reuse it when the relevant values still match, and reopen only the changed result question.
 
 ### E.11.PUR:7 - Conformance Checklist
@@ -280,7 +282,7 @@ The score improved while first-result fit and receiving-use value worsened. Keep
 | `PUR-4` | Recommendation | The recommended candidate is applicable and its expected receiving value warrants its full burden compared with the serious continuations, including continuing without a new use. If none warrants recommendation, no candidate is selected and existing obligations remain in force. An addressable `ordinaryCompact` recommendation has no applicability-finding ref; `relianceBearing` has one current applicability finding with five fit findings. |
 | `PUR-5` | Coordination | All members concern the same bounded coordination question and remain distinct candidate uses. |
 | `PUR-6` | Ordering mode | Unordered has no pairwise relations. Partial and total order contain only justified pairwise precedence, whose transitive closure is irreflexive; total order also compares every pair of distinct members. A cycle or unresolved required pair blocks that ordering claim. |
-| `PUR-7` | Precedence and readiness | Each directed relation satisfies its §4.4 branch predicate. prerequisiteResult cites the exact required content, selected supplier-use basis and expectation; actual closure belongs to a separate readiness claim and may reuse an adequate earlier result. Description or witness changes alone do not change dependency identity. |
+| `PUR-7` | Precedence and readiness | Each directed relation satisfies its §4.4 branch predicate. prerequisiteResult cites the exact required content, selected supplier-use basis and expectation; readiness separately requires the actual result and its basis, including an adequate earlier result, with an addressable PUA closure finding only when named later reliance needs it. Description or witness changes alone do not change dependency identity. |
 | `PUR-8` | Boundary | Recommendation or coordination asserts no plan, work, gate, decision, authorization, actual Problem, Transformation, or subject result. |
 | `PUR-9` | Problem actuality | A Problem-frame fit or ProblemCard is not an actual Problem; a relied-on actual Problem resolves to one C.22.PFR occurrence, while any supporting episteme and the adverse episode keep separate identities. |
 | `PUR-10` | Plain move | *Next move* names only a recommendation or conditional continuation, without asserting a Move identity, performed Work, or actual Transformation. |
@@ -293,14 +295,14 @@ The score improved while first-result fit and receiving-use value worsened. Keep
 | Recommend before aggregating fit | A partial match is overread as selection. | Apply the aggregate rule in `4.1`: a known `misfit` settles inapplicability even when another aspect is unresolved. Obtain missing information only when its answer can change a worthwhile continuation. |
 | Rank every candidate | A scalar order hides complements and incomparable results. | Use unordered or partial coordination when that matches the current relation. |
 | Use sequence as WorkPlan | Pattern-use relations acquire dates, resources, and work authority that no such relation establishes. | Create an A.15.2 WorkPlan only when intended work is current. |
-| Confuse dependency with readiness | A known unmet prerequisite is denied as a dependency, or an expectation is treated as achieved. | Establish the prospective directed constraint under §4.4 and assess current readiness from actual closure separately. Reuse an adequate earlier result before repeating work. |
+| Confuse dependency with readiness | A known unmet prerequisite is denied as a dependency, or an expectation is treated as achieved. | Establish the prospective directed constraint under §4.4. For the separate readiness claim, identify the actual result and its basis. Reuse an adequate earlier result before repeating work. |
 | Treat a context label as identity | A project, domain, or context label is made a participant or identity field for recommendation or coordination. | Identify the C.2.1 episteme from its claim content, EntityOfConcern, and effective reference scheme; keep every neighboring scope, model-use, work, and qualification relation separate. |
 | Treat recommendation as authorization | Guidance bypasses evidence, gate, commitment, or work governance. | Continue to the direct evidence, gate, decision, authorization, or work pattern for that stronger claim. |
 | Repeat a result under another stage name | The same question is answered again and the two result descriptions can drift. | Compare the earlier result under the pattern that defines or tests it; cite a matching result or reopen the smallest changed result question. |
 
 ### E.11.PUR:9 - Consequences
 
-**Benefits.** A team can explain why a pattern fits, why another is recommended, how several uses relate, and when an earlier answer remains usable without creating a false workflow. Ordinary reversible judgement remains light; reliance-bearing recommendations remain replayable. Prospective precedence retains its exact required content and supplier basis; readiness stays synchronized with actual PUA closure and earlier-result reuse.
+**Benefits.** A team can explain why a pattern fits, why another is recommended, how several uses relate, and when an earlier answer remains usable without creating a false workflow. Ordinary reversible judgement remains light; reliance-bearing recommendations remain replayable. Prospective precedence retains its exact required content and supplier basis; readiness is judged from the actual result and its basis, with earlier-result reuse and addressable PUA closure when needed.
 
 **Costs.** A consequential or delayed-use recommendation needs an explicit rationale and may need five addressable fit findings. Partial orders need justified pairwise relations. Ordinary local judgement pays no record cost merely for symmetry, and candidates that answer different questions are not forced into a scalar ranking.
 
@@ -308,7 +310,7 @@ The score improved while first-result fit and receiving-use value worsened. Keep
 
 Applicability, recommendation, and coordination answer different questions. Applicability asks whether a candidate's conditions hold. Recommendation asks which applicable use best serves the current concern. Coordination asks how several candidate uses belong together. Keeping the questions separate prevents a familiar label or score from becoming an unexamined decision.
 
-Pairwise precedence is intentionally narrow. A set of candidate pattern uses can be unordered, partially ordered, or totally ordered. Only an applicable directed constraint justifies an edge. A prerequisite-result edge can be established from the required content and selected supplier basis before the result exists. Actual closure is required for current readiness, including through a reusable earlier result. The alternative enabled-only edge would leave the known planning dependency unstated. This preserves graph structure without turning every explanation into a chain or minting a generic result relation.
+Pairwise precedence is intentionally narrow. A set of candidate pattern uses can be unordered, partially ordered, or totally ordered. Only an applicable directed constraint justifies an edge. A prerequisite-result edge can be established from the required content and selected supplier basis before the result exists. The actual result and its category-correct basis are required for current readiness, including through a reusable earlier result. A PUA closure finding makes that basis addressable when a named later reliance needs it. The alternative enabled-only edge would leave the known planning dependency unstated. This preserves graph structure without turning every explanation into a chain or minting a generic result relation.
 
 Result reuse answers another question: whether an already obtained answer still serves the present concern. The direct result pattern supplies that comparison; A.10 supplies any later reliance account; and G.11 supplies currentness when it matters. Keeping those contributions separate avoids both duplicate work and a generic reuse relation that would hide why the result remains applicable.
 
@@ -322,9 +324,7 @@ Result reuse answers another question: whether an already obtained answer still 
 | Current FPF NQD and OEE lines together with A.19 comparison practice | Preserve plural candidates, non-dominated alternatives, explicit comparison spaces, and dynamic reconsideration. | Adopt the plurality discipline. PUR coordinates pattern uses but does not replace subject-domain candidate evaluation. |
 | Current FPF `C.2.1`, `A.10`, and `G.11` result-identity, reliance, and currentness line | Compare the earlier result under its direct subject pattern, then state later reliance and currentness separately. | Adopt the separation. Reuse ends repeated work only when the result's relevant values still match; the branch creates no generic result-reuse relation. |
 
-The practical implication is to recommend a use for its expected result, not for its familiarity or score, to stop on an earlier result that still answers the concern, and to add order only where a real dependency exists.
-
-Que et al. is the current decision-bearing recommender source in this narrow use; Nunes and Jannach supplies lineage. The 2026 navigation preprint supplies bounded reconsideration, while current FPF NQD, OEE, A.19, C.2.1, A.10, and G.11 supply the transdisciplinary candidate, comparison, result-identity, reliance, and currentness basis. These sources change `4.1-4.5`, `5.1.1`, and `5.6`; none decides FPF kinds or recommendation authority.
+Que et al. is the current decision-bearing recommender source in this narrow use; Nunes and Jannach supplies lineage. The 2026 navigation preprint supplies bounded reconsideration, while current FPF NQD, OEE, A.19, C.2.1, A.10, and G.11 supply the transdisciplinary candidate, comparison, result-identity, reliance, and currentness basis.
 
 Reopen the score-proxy adaptation when stronger evaluation evidence shows that the relied-on score tracks current expected-result and receiving-use fit without the identified exposure or rationale loss. Reopen the wrong-turn adaptation when peer review, replication, or use evidence changes the value of reconsideration. Use `G.11` to manage source and telemetry currentness, then revise the affected PUR fit, rationale, recommendation, or return relation.
 

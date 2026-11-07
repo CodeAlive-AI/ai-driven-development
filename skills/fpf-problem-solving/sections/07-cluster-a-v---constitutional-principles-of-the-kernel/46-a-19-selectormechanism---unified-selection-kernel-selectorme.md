@@ -3,29 +3,21 @@
 > **Type:** Architectural (A)
 > **Status:** Stable
 > **Normativity:** Normative (unless explicitly marked informative)
-> **Placement:** Part A, CN-Spec cluster (A.19), CHR mechanism-governing patterns
-> **Source:** FPF, CHR mechanism-governing patterns
-> **Modified:** 2026‑01‑20
->
-> **Governing-pattern note:** this pattern governs the canonical `U.Mechanism` declaration for `SelectorMechanism.IntensionRef` (CHR suite stage `select`). Mechanism-intension semantics are governed by explicitly designated governing patterns (`E.20:4.2`).
-> `A.6.1` governs the semantic content of a `U.Mechanism` declaration. This pattern specialises that content for selection through the exact `EntityOfConcernRef`, effective `U.ReferenceScheme`, operation-local argument/result declarations, `OperationAlgebra`, `LawSet`, `AdmissibilityConditions`, and Applicability. An F.9 bridge relation, dated selection `U.Work`, actual `Select` operation application with its `SelectionSlot` binding, any result episteme, A.10 evidence-provenance graph relation, G.11 currentness relation, and any publication relation remain neighboring objects and relations.
-> Other descriptions of SelectorMechanism cite `A.19.SelectorMechanism:4.1` rather than restating its declaration content or absorbing those neighboring objects and relations into mechanism fields.
+> This pattern declares Select and SelectEligibility under A.6.1. Actual applications and any separately asserted Work use the conditions in §4.1.
 
 ### A.19.SelectorMechanism:0 - At a glance — didactic, informative
 
 * **What it is:** a universal **set-returning** selection kernel: it takes candidates, admissible comparison outcomes, and explicit criteria, and returns a **selected set**, not a forced single winner.
-* **What it is not:** it is not a hidden scoring model, not a comparator, not a gate, and not a telemetry or publishing step.
 * **Why it exists:** to prevent three recurring failure modes: **hidden thresholds**, **silent scalarization**, and **winner‑take‑all defaults** under partial orders and uncertain evidence.
-* **Use this when:** the current project question is selection from admitted candidates under explicit criteria after comparison has already been made or cited.
-* **What this buys:** the practitioner gets one selected-set value whose criteria, finite basis of exact upstream binary CPM applications, required comparison coverage, token provenance, scope, predicate basis, plane, window, and policy bindings are explicit. `degrade` and `abstain` remain eligibility values, not selected-set members or alternative result kinds.
+* **Use this when:** admitted candidates must be selected under explicit criteria after comparison. Identify the candidate universe and choice rule, recover the required comparisons and their conditions, then return the justified subset. Stop with comparison when the receiving question needs no selection; a selection result alone supplies no authorization to act.
+* **What this buys:** the practitioner gets one selected-set value whose criteria, finite basis of exact upstream binary CPM applications, required comparison coverage, token provenance, scope, any governing A.19 predicate, plane, window, and policy bindings are explicit. `degrade` and `abstain` remain eligibility values, not selected-set members or alternative result kinds.
 * **First output:** read the by-value candidate set bound to `SelectionSlot`. Read the candidate universe, finite upstream CPM application basis, required pair coverage, derived comparison-token union, selection conditions, claim scope and context slices, reference plane, evaluation window, eligibility value, and evidence use from the actual `Select` application and direct neighboring relations; they are not fields inside the selected set.
 * **How it evolves:** method semantics and SoTA algorithm families connect via `G.2` packs and wiring modules; the kernel signature stays stable and teachable.
 * **Suite stage:** `select` (ordering lives only in `A.19.CHR:4.5` and `suite_protocols`; suite membership is a set in `A.19.CHR:4.2`).
 * **Inputs (conceptual):** admitted candidates; a finite by-value basis of exact upstream binary CPM applications, each with its exact pair, realized `GuardDecision`, and own `ComparisonResultSlot` binding when produced; the exact union of justified relation or poset tokens from those bindings; explicit `CriteriaSlot`, `CNSpecSlot`, `CGSpecSlot`; one `U.ClaimScope` with selected A.2.6 `U.ContextSlice` members; the same A.19 predicate basis when one governs the comparisons or selection criteria; effective reference plane; explicit evaluation window; and optional TaskSignature and MinimalEvidence policy refs.
-* **Output (conceptual):** the by-value `SelectionSlot` candidate set. A singleton is allowed only under explicit selection conditions or an admissible upstream total order. The output is not a decision log, guard value, result episteme, generic result relation, publication, or replay record.
-* **Non-goals:** does **not** normalize (UNM), indicatorize (UINDM), score (USCM), fold (ULSAM), compare (CPM), define acceptance thresholds, publish, or emit telemetry; it is a selection step over already-admissible inputs.
-* **Planned use:** an A.15.2 baseline selects editions and policies. A.15.3 and SlotFillingsPlanItem apply only to independently declared receiving positions under A.19.CHR:4.7.2. The actual Select application carries its effective arguments and SelectionSlot binding under §4.1. Dated selection Work and an A.10 provenance account retain their independent grounds.
-* **Transformation-flow use:** an E.18 node cites this declaration. Planned refs use A.15.3 typed filling only for independently declared receiving positions; actual Select bindings remain governed by §4.1.
+* **Output (conceptual):** the by-value `SelectionSlot` candidate set. A singleton is allowed when the explicit criteria determine one candidate; a total order supplies comparison information but needs a choice rule. The output is not a decision log, guard value, result episteme, generic result relation, publication, or replay record.
+* **Planned use:** on a P2W path, an A.15.2 baseline selects editions and policies. A.15.3 and SlotFillingsPlanItem apply only to independently declared receiving positions under A.19.CHR:4.7.2. The actual Select application carries its effective arguments and SelectionSlot binding under §4.1. Dated selection Work and an A.10 provenance account retain their independent grounds.
+* **Transformation-flow use:** when selection is represented by an E.18 node, that node cites this declaration. Planned refs use A.15.3 typed filling only for independently declared receiving positions; actual Select bindings remain governed by §4.1.
 * **Failure mode:** tri‑state guard (`pass|degrade|abstain`); missing or unknown evidence never coerces to `pass`.
 * **Mental model:** `SelectEligibility` gates the step; `Select` applies explicit criteria to set‑valued comparison outcomes; the result is a selected set whose “single winner” behavior must be explicit.
 
@@ -40,7 +32,7 @@ Within the suite‑closed protocol, `SelectorMechanism` appears as the `select` 
 
 * consume **admissible** comparison outcomes without collapsing them into a hidden scalar,
 * apply **explicit** criteria and policy references, and
-* return a **selected-set** result whose defaults are policy-bound and whose dated work, actual `Select` application, `SelectionSlot` binding, and evidence-provenance basis can be replayed.
+* return a **selected-set** result under policy-bound defaults, with the actual `Select` application and its argument and result bindings recoverable; dated Work and evidence-provenance grounds enter when the account asserts them or the receiving use consumes them.
 
 The kernel uses the CHR suite SlotKind lexicon (`A.19.CHR:4.2.1`) to prevent SlotKind drift across specializations and across SoTA wiring layers.
 
@@ -76,11 +68,11 @@ If selection is not a first‑class mechanism boundary with stable semantics, th
 
 4. **Evidence discipline vs delivery pressure.** Under uncertainty, teams default to coercion (unknown → pass). The kernel must enforce tri‑state eligibility and fail‑closed discipline.
 
-5. **Replayability vs conceptual minimalism.** The mechanism declaration stays small, while dated selection work, the actual `Select` application and its argument and `SelectionSlot` bindings, and the evidence-provenance path retain the effective editions, policies, candidates, and selected set needed for replay.
+5. **Replayability vs conceptual minimalism.** The mechanism declaration stays small. Replay recovers the actual `Select` application, its argument and `SelectionSlot` bindings, effective editions, policies, candidates, and selected set. Dated selection Work and evidence-provenance retain their independent grounds when asserted by the account or consumed by the receiving use.
 
 6. **Evolvability vs didactic usability.** The kernel must be stable enough to support SoTA wiring and specialisation chains, but also teachable: one place states the mechanism boundary, laws, eligibility behavior, and the neighboring replay basis for realized use.
 
-7. **Planned use and gate/guard separation.** A.15.2 carries the intended baseline; A.15.3 typed filling is conditional on independently declared positions. Selection must not mutate into a gate pattern: no GateDecision or decision logs inside the mechanism boundary.
+7. **Planned use and gate/guard separation.** On a P2W path, A.15.2 carries the intended baseline; A.15.3 typed filling is conditional on independently declared positions. Selection must not mutate into a gate pattern: no GateDecision or decision logs inside the mechanism boundary.
 
 8. **No competing defaults.** If defaults exist for `PortfolioMode`, dominance regime, or archive policy, cite their declared sources rather than re-declaring them in the kernel.
 
@@ -111,20 +103,18 @@ Method semantics and SoTA algorithm families do not live inside the kernel: they
 
 * **IntensionRef:** `SelectorMechanism.IntensionRef` designates this `U.Mechanism` episteme as the canonical suite member named in `A.19.CHR:4.2`; it is not the `EntityOfConcernRef` of the declared operation family.
 
-* **Tell.** Universal set‑returning selection kernel over candidates and criteria; defaults remain policy‑bound; **no hidden thresholds**.
-
 * **Purpose:** universal set‑returning selection kernel over candidates and criteria; defaults remain policy‑bound; **no hidden thresholds**.
 
-* **Imports:** `A.6.1:4.8 (exact declaration comparisons)`, `A.6.1 (operation-local declarations and bindings)`, `A.19.CN (CN‑Spec governance card)`, `C.22 (TaskSignature as a policy-reference artifact when used)`, `G.5 (selector conformance and default selection policy)`, `G.0 (CG‑Spec admissibility and evidence gates)`, `A.19.CHR:4.2.1 (CHR SlotKind Lexicon)`.
+* **Imports:** `A.6.1:4.8 (exact declaration comparisons)`, `A.6.1 (operation-local declarations and bindings)`, `A.19.CN (CN-Spec comparison basis and use conditions)`, `C.22 (TaskSignature as a policy-reference artifact when used)`, `G.5 (selector conformance and default selection policy)`, `G.0 (CG‑Spec admissibility and evidence gates)`, `A.19.CHR:4.2.1 (CHR SlotKind Lexicon)`.
 
 * **EntityOfConcernRef:** the selection operation family declared by `Select` and `SelectEligibility` in this section.
 
-* **Effective `U.ReferenceScheme`:** the CHR suite reference scheme in which the A.19.CHR SlotKind lexicon, CN-Spec, CG-Spec, and any current TaskSignature tokens are interpreted.
+* **Effective reference scheme:** the CHR suite reference scheme in which the A.19.CHR SlotKind lexicon, CN-Spec, CG-Spec, and any current TaskSignature tokens are interpreted.
 
 * **Direct signature components:**
 
-  * **SubjectKind:** `Selection`.
-  * **RangedValueKind:** pair of values `<admitted candidate set, relation or poset token set over the same candidate universe>`.
+  * **SubjectKind:** candidate set, supplied through `CandidateSetSlot` in both `Select` and `SelectEligibility`. An incomplete eligibility proposal can leave this argument unbound under the rule below.
+  * **RangedValueKind:** pair of values `<admitted candidate set, relation or poset token set over the same candidate universe>`, carried respectively by `CandidateSetSlot` and `ComparisonResultSlot` in both operations.
   * Results are operation-local: the selected candidate set and the separate guard judgment.
   * Input qualification: selection ranges over one admitted candidate set and the exact union of justified relation or poset tokens from a finite basis of binary CPM applications whose pair endpoints lie in that candidate set and whose coverage satisfies the explicit selection conditions, all in one exact `U.ClaimScope`; selected `U.ContextSlice` values are members of that scope under A.2.6 and do not create duplicate membership.
 
@@ -148,13 +138,15 @@ Each argument below is declared separately for Select and SelectEligibility, exc
 | Argument | claimScope | U.ClaimScope delimiting candidate universe and selection use | ByRef; 1 |
 | Argument | selectedSlices | Set of selected U.ContextSlice members of claimScope under A.2.6 | ByValue set of exact references; 1 set |
 | Argument | characteristicPredicate | A.19 CharacteristicSpacePredicate basis shared as required with the relevant CPM members | ByValue; 0..1, explicitly absent when none governs the use |
-| Argument | referenceScheme | Effective U.ReferenceScheme used to interpret the selection | ByRef; 1 |
+| Argument | referenceScheme | `EpistemeInterpretationScheme` (C.2.1:4.1.2), governing this selection | ByRef through C.2.1 SchemeDesignation; 1 |
 | Argument | referencePlane | CHR:ReferencePlane value qualifying selection | ByValue; 1 |
 | Argument | evaluationTime | Selection-evaluation point or interval in the declared time basis | ByValue; 1 |
 | Argument | selectorPolicy | Effective selection policy and resolved defaults, including exact candidate-level failure behavior when degrade is used | ByRef to the declared policy; 1, resolved through TaskSignature when it supplies that policy |
 | Select argument | eligibility | GuardDecision actually determined by SelectEligibility for these same proposal arguments, used to admit this selection | ByValue; 1, with its exact producing guard-result binding recoverable |
 | Select result | SelectionSlot | Set of candidate values selected under those criteria and policy | ByValue; 1 set on completed admitted selection, 0 on abstain |
 | SelectEligibility result | GuardDecision | Judgment determined by the eligibility predicates: pass, degrade or abstain | ByValue; 1 on completed evaluation |
+
+Resolve the scheme designation under C.2.1:4.2.6 to one exact rule collection, then check its C.2.1:4.1.2 range and the rules needed by these actual selection inputs. The reference token is not the bound scheme. An unresolved required interpretation cannot support a completed admitted selection; apply the guard and abstention rules below. Membership alone supplies neither successful selection nor a cross-scheme correspondence. The application and result bindings below remain independently required.
 
 For each argument row, its **bindingPredicate** holds when that application actually uses the resolved value for its stated purpose: candidates supply the selection universe, criteria/policy supply the choice rule, specifications/evidence requirements govern admission, and the basis, coverage and provenance supply the comparisons on which the choice relies. Scope, slices, predicate, scheme, plane and time bind only when they qualify that application. A nearby policy or copied comparison record does not supply those bindings.
 
@@ -174,7 +166,7 @@ For example, use the admitted incomparable supplier pair from A.19.CPM §4.1 and
 
 * **LawSet** (minimum): the selection kernel is set-returning and policy-bound
 
-  1. **Set‑returning by default:** a conformant `Select` MUST return a declared selected set by default. It MUST NOT silently collapse partial orders or incomparabilities to a single winner; if a singleton outcome is required, it MUST be an explicit criterion (or a declared upstream total order).
+  1. **Set‑returning by default:** a conformant `Select` MUST return a declared selected set by default. It MUST NOT silently collapse partial orders or incomparabilities to a single winner; a singleton outcome MUST follow from the explicit criteria applied to the admitted comparison outcomes.
   2. **No hidden thresholds or constants:** a conformant publication MUST NOT smuggle thresholds, weights, dominance rules, or tie‑breakers. Selection‑level commitments MUST be explicit in `CriteriaSlot` and, where needed, in explicit policy defaults exposed through `TaskSignatureSlot`. Admissibility and acceptance thresholds are applied only via `SelectEligibility` using `CNSpecSlot.acceptance` and the effective evidence policy (`MinimalEvidenceSlot?` or `CGSpecSlot.MinimalEvidence`).
   3. **No hidden scalarization or token aggregation by assertion:** a conformant publication MUST consume `ComparisonResultSlot` as the exact union of the finite basis members' justified set-valued or partial outputs. Every consumed token MUST be traceable to at least one exact producing CPM application. Scalar summaries or relation tokens inferred from a missing pair, empty output, `degrade`, or `abstain` are forbidden; scalar summaries, if produced at all, are report-only unless explicitly promoted by policy outside suite closure.
   4. **Evidence gating is explicit:** when selection depends on evidence, it MUST cite either `MinimalEvidenceSlot` or the effective `CGSpecSlot.MinimalEvidence` policy and evaluate selection with the tri-state predicate. Candidate-level ineligibility handling MUST be explicit in current criteria or upstream results and bound by the actual selection application; the kernel MUST NOT invent evidence thresholds.
@@ -185,7 +177,7 @@ For example, use the admitted incomparable supplier pair from A.19.CPM §4.1 and
 * **AdmissibilityConditions** (tri-state guard; fail-closed on missing admissibility, comparison coverage, token provenance, or evidence)
 
   * `SelectEligibility(CandidateSetSlot, ComparisonResultSlot, CriteriaSlot, CNSpecSlot, CGSpecSlot, TaskSignatureSlot?, MinimalEvidenceSlot?; selection-use bindings) → GuardDecision ∈ {pass|degrade|abstain}`.
-  * `pass` requires: (i) every basis member's exact pair lies inside `CandidateSetSlot`; (ii) the basis covers every binary comparison required by the candidate universe and explicit selection conditions; (iii) every consumed relation token traces to a member's own output binding; (iv) explicit selection conditions and tie-breakers; (v) compatible A.19 predicate basis, claim scope, selected A.2.6 context slices, reference plane, and evaluation window across the basis and selection; (vi) coherent CN-Spec and CG-Spec editions; and (vii) satisfied admission, acceptance, and effective MinimalEvidence predicates under their direct owners.
+  * `pass` requires: (i) every basis member's exact pair lies inside `CandidateSetSlot`; (ii) the basis covers every binary comparison required by the candidate universe and explicit selection conditions; (iii) every consumed relation token traces to a member's own output binding; (iv) explicit selection conditions and tie-breakers; (v) compatible claim scope, selected A.2.6 context slices, reference plane, and evaluation window across the basis and selection, together with any A.19 predicate governing the comparisons or selection criteria; (vi) coherent CN-Spec and CG-Spec editions; and (vii) satisfied admission, acceptance, and effective MinimalEvidence predicates under their direct owners.
   * If `MinimalEvidenceSlot` is absent, `SelectEligibility` MUST evaluate evidence against `CGSpecSlot.MinimalEvidence` by explicit rule, and missing or unknown evidence MUST NOT yield `pass`.
   * A basis member with `GuardDecision = degrade` may support a reduced set only when a current selector policy names the exact candidate-level failure behavior and the remaining basis still covers the comparisons required for that reduced use. The actual selection application binds that policy and its own realized eligibility value.
   * A missing required comparison, untraceable token, or required basis member with `GuardDecision = abstain` makes `SelectEligibility = abstain`; selection does not proceed and no selected-set output is created.
@@ -195,7 +187,7 @@ For example, use the admitted incomparable supplier pair from A.19.CPM §4.1 and
   * Intended for the CHR `select` stage after the required finite set of admissible binary comparisons and produces a selected-set value. Selection remains distinct from comparison, acceptance, gate decision, publication, and telemetry.
   * Applicable only when `CNSpecSlot`, `CGSpecSlot`, explicit criteria, the effective evidence policy, and a finite comparison-application basis with complete required coverage and token provenance are current for the candidate universe. Missing declarations or coverage fail closed.
   * Inside the CHR suite, `A.19.CHR:4.5` alone determines stage ordering and optionality.
-  * Every actual selection binds one exact `U.ClaimScope`, selected A.2.6 `U.ContextSlice` members, the finite basis of exact binary CPM applications and their pair, eligibility, and output bindings, the derived token union, A.19 predicate basis, effective reference plane, selection conditions, and explicit evaluation point or interval. There is no implicit latest value and no default window inherited from the predicate or comparison label.
+  * Every actual selection binds one exact `U.ClaimScope`, selected A.2.6 `U.ContextSlice` members, the finite basis of exact binary CPM applications and their pair, eligibility, and output bindings, the derived token union, any A.19 predicate governing the comparisons or selection criteria, effective reference plane, selection conditions, and explicit evaluation point or interval. There is no implicit latest value and no default window inherited from the predicate or comparison label.
   * A selection across reference schemes or planes follows the relations the case actually needs. When it relates two exact F.17 `SchemeSenseCell` values from different semantic contexts, test the F.9 `BridgePredicateProfile` and cite the Bridge only when its direct predicate obtains; state suitability for the named selection use in a separate C.2.1 claim. If that predicate is false or unresolved and the semantic crossing is required by the selection conditions, `SelectEligibility` cannot be `pass`; follow the already declared explicit `degrade` policy when applicable, otherwise `abstain`. When the selection crosses exact ReferencePlanes, cite the applicable plane relation and policy. If both facts are current, state both under their own predicates. A cell or plane difference alone establishes neither relation, and one branch never fabricates the other. Neither relation supplies candidate universe, comparison-application basis or coverage, relation tokens, selection conditions, scope, predicate, or time.
 
 * **Neighboring semantic-Bridge, bounded-use, and reference-plane relations:**
@@ -204,10 +196,10 @@ For example, use the admitted incomparable supplier pair from A.19.CPM §4.1 and
 
 * **Neighboring dated work, operation application, result binding, and evidence relations:**
 
-  The identified Select application binds the candidate set, finite comparison basis, required coverage, token union, selection-use arguments, policies and returned SelectionSlot. If the account also asserts dated selection U.Work, A.15.1 independently admits that performance; neither its identity nor extent is automatically that of one Select application. When the account asserts them or the receiving use consumes them, A.2.4 governs evidence use with its own claim scope and relevance window, A.10 governs reliance and provenance, and G.11 governs source or assertion-edition currentness. A durable selected-set episteme, when needed, is governed by C.2.1, and any current entity-identity inception claim by A.15.PROD. No universal work-result, comparison-result, or selection-result relation is presumed. To replay the selection, recover:
+  The identified Select application binds the candidate set, finite comparison basis, required coverage, token union, selection-use arguments, policies and returned SelectionSlot. If the account also asserts dated selection U.Work, first establish its A.13 core: the performing System, exact local agential-role kind and membership criterion, and an obtaining assignment of its declared direct species for the relevant scope and time. A.15.1 independently admits that performance; F.6 applies afterward only for precise assignment-bound attribution. The Work identity and extent are not automatically those of one Select application. When the account asserts them or the receiving use consumes them, A.2.4 governs evidence use with its own claim scope and relevance window, A.10 governs reliance and provenance, and G.11 governs source or assertion-edition currentness. A durable selected-set episteme, when needed, is governed by C.2.1, and any current entity-identity inception claim by A.15.PROD. No universal work-result, comparison-result, or selection-result relation is presumed. To replay the selection, recover:
 
   * the candidate set and required binary comparisons; for every basis member, the exact CPM application, pair, realized `GuardDecision`, and its own output binding or explicit absence; and the trace from every consumed token to its producing member;
-  * one `U.ClaimScope`, selected A.2.6 context slices, A.19 predicate basis, effective reference scheme and plane, and evaluation point or interval shared as required by the selection conditions;
+  * one `U.ClaimScope`, selected A.2.6 context slices, the optional A.19 predicate basis (explicitly absent when none governs), effective reference scheme and plane, and evaluation point or interval shared as required by the selection conditions;
   * `CNSpecRef.edition`, `CGSpecRef.edition`, and `TaskSignatureRef.edition` when TaskSignature is used;
   * the effective MinimalEvidence policy, either the explicit override or `CGSpecSlot.MinimalEvidence`;
   * the Selector's realized `GuardDecision` and, for `degrade` or `abstain`, the current failure-behavior policy;
@@ -221,12 +213,12 @@ For example, use the admitted incomparable supplier pair from A.19.CPM §4.1 and
 
 0. **Selection conditions are explicit values, not a new object kind.** The actual application binds `CriteriaSlot` plus effective selector-policy refs, defaults, and `degrade` failure behavior. Acceptance and admission predicates remain separate. `SelectionSlot` contains only the resulting candidate set; eligibility, conditions, scope, evidence, and replay metadata stay outside it.
 
-1. **Selection consumes a traceable finite basis of upstream CHR products; it does not invent them.** Any indicator-derived scoring or comparison input retains its exact A.19 basis and the UINDM positions selected under that declaration. A changed basis requires the affected upstream position resolution and result again; the selector cannot carry old naked indices into the new declaration. The actual use binds exact binary CPM applications separately and supplies `ComparisonResultSlot` only as the union of their justified outputs. The kernel MUST NOT perform normalization (UNM), indicatorization (UINDM), scoring (USCM), folding (ULSAM), comparison (CPM), batch-result fabrication, or missing-pair completion inside `Select`. If a scalar “overall score” is desired, it must be declared upstream as an admissible scoring or comparator choice, not invented inside selection.
+1. **Selection consumes a traceable finite basis of upstream CHR products; it does not invent them.** Any indicator-derived scoring or comparison input retains its exact A.19 basis and the UINDM positions selected under that declaration. A changed basis requires rechecking affected upstream position resolutions and dependent results, preserving reuse where their grounds still hold; the selector cannot carry old naked indices into the new declaration. The actual use binds exact binary CPM applications separately and supplies `ComparisonResultSlot` only as the union of their justified outputs. The kernel MUST NOT perform normalization (UNM), indicatorization (UINDM), scoring (USCM), folding (ULSAM), comparison (CPM), batch-result fabrication, or missing-pair completion inside `Select`. If a scalar “overall score” is desired, it must be declared upstream as an admissible scoring or comparator choice, not invented inside selection.
 
 2. **Threshold discipline (acceptance is not selection).** Acceptance and admission thresholds are not selection criteria: they remain in their governing declarations and are applied only through `SelectEligibility`. Selection-level tie-breakers, `PortfolioMode`, and selected-set constraints may exist, but they MUST be explicit in current criteria or policy refs and bound by the actual selection application, never hidden as unnamed constants.
 
 3. **Report‑only summaries inside suite closure.** Any scalar summaries, illumination metrics, or auxiliary “why not chosen” telemetry are report‑only unless explicitly promoted by policy, and MUST NOT be used as hidden dominance rules (`A.19.CHR:4.3.3`).
-   Publishing and telemetry remain outside suite closure and are handled by established publication forms such as `G.10` or `PTM`, not as hidden tails inside selection.
+   Publication and telemetry are separately governed continuations outside suite closure. `G.10` governs shipping Part-G outputs as a `SoTA-Pack`; `E.24.PUB` governs a claim about episteme availability, form or carrier.
 
 4. **Specializations are explicit and disciplined.** A proposed specialization of `SelectorMechanism` must retain these local restrictions:
 
@@ -236,17 +228,17 @@ For example, use the admitted incomparable supplier pair from A.19.CPM §4.1 and
 
    For the exact refinement, conservative-extension or equivalence claim, apply its own `A.6.1 §4.8` test, preserving the applicable operation, application and binding meanings. CC‑A19SelectorMechanism‑10 retains the exact predicate, endpoint facts and A.6.RCD gap branch.
 
-5. **Planned use and actual binding.** An A.15.2 baseline selects TaskSignature, CG-Spec and evidence-policy editions. A.15.3 supplies planned filling only for an independently declared receiving position. Actual Select arguments and returns are established under this declaration; the planned values remain available for a separately governed comparison with what occurred.
+5. **Planned use and actual binding.** On a P2W path, an A.15.2 baseline selects TaskSignature, CG-Spec and evidence-policy editions. A.15.3 supplies planned filling only for an independently declared receiving position. Actual Select arguments and returns are established under this declaration; the planned values remain available for a separately governed comparison with what occurred.
 
 ---
 
 ### A.19.SelectorMechanism:5 - Archetypal Grounding — informative
 
-#### A.19.SelectorMechanism:5.1 - Tell
+#### A.19.SelectorMechanism:5.1 - Selection under partial comparisons
 
-When comparisons are partial or set-valued, selection must not pretend there is a single best candidate by default. `SelectorMechanism` makes selection explicit, policy-bound, and replayable: it returns a set unless criteria explicitly demand otherwise.
+When comparisons are partial or set-valued, selection must not pretend there is a single best candidate by default. `SelectorMechanism` makes selection explicit, policy-bound, and replayable: it returns a set, including a singleton when the criteria determine one candidate.
 
-#### A.19.SelectorMechanism:5.2 - Show, U.System example
+#### A.19.SelectorMechanism:5.2 - Deployment options
 
 **Scenario.** A platform team must pick a set of deployment options for a subsystem under multiple criteria: latency, cost, and regulatory risk. Comparisons are multi-criteria and do not induce a total order.
 
@@ -255,7 +247,7 @@ When comparisons are partial or set-valued, selection must not pretend there is 
 * The finite upstream comparison-application basis covers all three required pairs:
 
   * exact `Compare(OptionA, OptionB, ...)` has `GuardDecision = pass`: OptionB is strictly better than OptionA on latency, while OptionA is strictly better than OptionB on cost under the declared comparator. Its `ComparisonResultSlot` records those strict opposite wins, so neither dominates the other;
-  * exact `Compare(OptionA, OptionC, ...)` has `GuardDecision = degrade` because OptionC lacks the required risk attestation, and its output binding contributes no relation token about OptionC; and
+  * exact `Compare(OptionA, OptionC, ...)` has `GuardDecision = degrade` because OptionC lacks the required risk attestation. In this constructed case, the admitted comparator and partial-evidence policy explicitly define the empty token set as the lawful output for this restricted use; its output binding contributes no relation token about OptionC; and
   * exact `Compare(OptionB, OptionC, ...)` has the same explicit `degrade` basis and likewise contributes no relation token about OptionC.
 
   The Selector's `ComparisonResultSlot` argument is exactly the union of those justified member outputs, so its two tokens both trace to the `{A,B}` CPM application. No equality, worse-than, or `abstain` token is fabricated for OptionC.
@@ -266,11 +258,11 @@ When comparisons are partial or set-valued, selection must not pretend there is 
 
 * Under that explicitly bound `degrade` policy, `SelectEligibility` returns `degrade`, excludes OptionC without coercing unknown evidence, and `SelectionSlot` returns `{OptionA, OptionB}`.
 * If either required comparison involving OptionC instead had `GuardDecision = abstain`, that basis member would have no output binding, `SelectEligibility` would return `abstain`, and no selected-set value would be created. Neither guard value is a member of `ComparisonResultSlot` or `SelectionSlot`.
-* The dated selection `U.Work`, actual `Select` application, finite CPM application basis, evidence-policy and `SelectionSlot` bindings, and A.10 evidence-provenance path preserve why the reduced-set branch proceeded and why the abstain branch did not.
+* The actual selection or eligibility application, finite CPM application basis, policies and returned value or explicit absence preserve the branch taken. An A.10 provenance account is added for the bounded reliance at issue; any dated Work claim requires the independent grounds in §4.1.
 
-#### A.19.SelectorMechanism:5.3 - Show, U.Episteme example
+#### A.19.SelectorMechanism:5.3 - Analysis-method families
 
-**Scenario.** A methods group selects a declared set of analysis methods for a task. Candidates are method family refs. The group wants diversity in the selected set, but does not want diversity metrics to silently become dominance criteria.
+**Scenario.** A methods group selects a declared set of analysis-method families for a task. Candidates are refs to those families. The group wants diversity in the selected set, but does not want diversity metrics to silently become dominance criteria.
 
 * `CandidateSetSlot` = `{Family1, Family2, Family3, Family4}`
 * The selection conditions declare which binary method-family comparisons are required. A finite basis identifies every relied-on CPM application, its exact pair, eligibility value, and own output binding; the Selector's `ComparisonResultSlot` argument is their exact justified-token union.
@@ -282,8 +274,8 @@ When comparisons are partial or set-valued, selection must not pretend there is 
 
 **Outcome.**
 
-* `SelectionSlot` returns a selected set; any archive‑style behavior is a specialization and policy choice, not a hidden kernel default.
-* The dated selection `U.Work`, actual `Select` application with its `TaskSignatureRef.edition` and `SelectionSlot` bindings, and A.10 evidence-provenance path support later explanation without embedding tool tokens into the kernel.
+* `SelectionSlot` returns a selected set of those families; any archive‑style behavior is a specialization and policy choice, not a hidden kernel default.
+* The actual `Select` application retains its `TaskSignatureRef.edition`, effective criteria and `SelectionSlot` bindings for later explanation. Add provenance and dated Work only under their independent grounds in §4.1.
 
 ---
 
@@ -291,11 +283,10 @@ When comparisons are partial or set-valued, selection must not pretend there is 
 
 This pattern intentionally biases selection authoring toward explicitness and admissibility.
 
-* **Governance bias.** Bias toward explicit criteria and policy-reference records rather than implicit constants. Risk: perceived overhead. Mitigation: keep criteria records minimal, and centralize defaults via `TaskSignatureSlot` when used.
-* **Architecture bias.** Bias toward set‑return semantics and against forced total orders. Risk: consumers may expect a single winner. Mitigation: make single‑winner selection an explicit criterion or a declared comparator outcome, not an implicit kernel behavior.
+* **Governance bias.** Bias toward explicit criteria and policy-reference records rather than implicit constants. Risk: perceived overhead. Mitigation: use existing prose or code when it makes the criteria recoverable, and centralize defaults via `TaskSignatureSlot` when used.
+* **Architecture bias.** Bias toward set‑return semantics and against forced total orders. Risk: consumers may expect a single winner. Mitigation: make the choice rule explicit; a declared total order alone does not choose a candidate.
 * **Epistemic bias.** Bias toward fail‑closed evidence handling and against unknown coercion. Risk: more `degrade` or `abstain` early. Mitigation: improve evidence pins and policy clarity; do not relax the kernel.
-* **Practice bias.** Bias against embedding telemetry and publication into selection. Risk: teams want one step to select and report. Mitigation: keep those relations under their governing patterns; retain replay through dated selection work, the actual `Select` application and result binding, A.10 evidence provenance, and G.11 currentness.
-* **Didactic bias.** Bias toward one governing pattern and “Tell + Cite” elsewhere. Risk: refactoring work. Mitigation: the result is a spec that can be read and taught without scavenger hunts.
+* **Practice bias.** Bias against embedding telemetry and publication into selection. Risk: teams want one step to select and report. Mitigation: keep those relations under their governing patterns; retain replay through actual selection bindings and the separately applicable Work, evidence and currentness relations in §4.1.
 
 ---
 
@@ -303,7 +294,7 @@ This pattern intentionally biases selection authoring toward explicitness and ad
 
 | ID | Requirement |
 | --- | --- |
-| **CC-A19SelectorMechanism-0** | **Mechanism declaration completeness:** one `U.Mechanism` episteme, its exact selection-operation-family `EntityOfConcernRef`, its effective `U.ReferenceScheme`, the operation-local argument/result declarations, `OperationAlgebra`, `LawSet`, `AdmissibilityConditions`, and Applicability are recoverable under A.6.1. |
+| **CC-A19SelectorMechanism-0** | **Mechanism declaration completeness:** one `U.Mechanism` episteme, its exact selection-operation-family `EntityOfConcernRef`, its effective reference scheme, the operation-local argument/result declarations, `OperationAlgebra`, `LawSet`, `AdmissibilityConditions`, and Applicability are recoverable under A.6.1. |
 | **CC‑A19SelectorMechanism‑1** | **Single governing pattern:** the canonical SelectorMechanism `U.Mechanism` declaration is governed by `A.19.SelectorMechanism:4.1`; other descriptions cite this section rather than restating the kernel law. |
 | **CC‑A19SelectorMechanism‑2** | **Set‑return default:** a conformant `Select` MUST be set‑returning by default; it MUST NOT silently collapse partial orders or incomparabilities to a single winner. |
 | **CC‑A19SelectorMechanism‑3** | **No hidden thresholds or constants:** a conformant SelectorMechanism publication MUST NOT smuggle thresholds, weights, dominance rules, tie‑breakers, or default `PortfolioMode` fields. Selection‑level commitments MUST be explicit in `CriteriaSlot` and explicit policy defaults when used (e.g., via `TaskSignatureSlot`). Acceptance thresholds remain governed by `AcceptanceClauses`, `TaskSignature`, or `GateProfile` records and MUST be applied only via `SelectEligibility`. |
@@ -311,12 +302,12 @@ This pattern intentionally biases selection authoring toward explicitness and ad
 | **CC-A19SelectorMechanism-5** | **Evidence gating:** `SelectEligibility` returns `pass`, `degrade`, or `abstain`; missing or unknown evidence never yields `pass`. Candidate exclusion or restricted use is explicit in the current criteria or policy bound by the actual selection application. |
 | **CC‑A19SelectorMechanism‑6** | **SlotKind discipline:** SlotKind tokens used in the SelectorMechanism intension MUST come from the CHR SlotKind lexicon (`A.19.CHR:4.2.1`). New SlotKinds require lexicon extension first. |
 | **CC-A19SelectorMechanism-7** | **Bridge and reference-plane discipline:** a semantic crossing cites an F.9 Bridge only between two exact F.17 `SchemeSenseCell` values when its profile applies and direct predicate obtains; its C.2.1 bounded-use claim is separate and `CL` is optional. A ReferencePlane crossing cites its applicable relation and policy separately. A scheme, cell, or plane difference alone establishes neither relation. A false or unresolved required Bridge predicate permits no `pass`; use only the explicit `degrade` or `abstain` route already declared. A.10 enters only for current reliance, and B.3—including any locally defined `R_eff` calculation—only for an actual named assurance claim under its declared domain model and calculation. All remain outside selector-declaration content. |
-| **CC-A19SelectorMechanism-8** | **Replay basis completeness:** recover the actual `Select` application, its candidate set, required binary comparisons, every exact upstream CPM application with pair, eligibility and own output binding or absence, token-to-producer trace, criteria and policy, `U.ClaimScope`, selected A.2.6 context slices, predicate basis, reference scheme and plane, evaluation window, derived token union, and returned `SelectionSlot` binding or explicit absence. Independently recover dated Work under A.15.1, evidence use under A.2.4, reliance and provenance under A.10, currentness under G.11 and a result episteme under C.2.1 only when asserted by the account or consumed by the receiving use. A Select application does not itself require separately admitted upstream comparison Work. The output values carry none of this metadata. |
-| **CC-A19SelectorMechanism-9** | **Planned-filling separation:** A.15.2 carries intended editions/policies; A.15.3 typed filling applies only to independently declared positions. Actual Select applications carry effective argument/result bindings; dated selection Work and any relied-on A.10 provenance remain separately established. |
+| **CC-A19SelectorMechanism-8** | **Replay basis completeness:** recover the actual `Select` or `SelectEligibility` application. Identify actually bound or returned values and required inputs that were missing: the candidate set, required binary comparisons, every exact upstream CPM application with pair, eligibility and own output binding or absence, token-to-producer trace, criteria and policy, `U.ClaimScope`, selected A.2.6 context slices, any governing A.19 predicate (or its explicit absence), reference scheme and plane, evaluation window, derived token union, guard judgment, and any returned `SelectionSlot` binding. An `abstain` judgment has no selection result. Independently recover dated Work through the A.13 core and A.15.1 admission in §4.1, evidence use under A.2.4, reliance and provenance under A.10, currentness under G.11 and a result episteme under C.2.1 only when asserted by the account or consumed by the receiving use. A Select application does not itself require separately admitted upstream comparison Work. The output values carry none of this metadata. |
+| **CC-A19SelectorMechanism-9** | **Planned-filling separation:** on a P2W path, A.15.2 carries intended editions/policies; A.15.3 typed filling applies only to independently declared positions. Actual Select applications carry effective argument/result bindings; dated selection Work and any relied-on A.10 provenance remain separately established. |
 | **CC‑A19SelectorMechanism‑10** | **Extension discipline:** a proposed SelectorMechanism specialization MUST preserve inherited SlotKind designators and their meanings and add no mandatory input to inherited Select. For a claimed refinement, conservative extension or equivalence, apply the corresponding A.6.1 §4.8 preservation test, including application/binding predicates, identity and extent. The exact comparison predicate and endpoint facts must be established; use A.6.RCD’s missing-governor/substrate result when they are absent. The symbols ⊑ and ⊑⁺ alone establish none of these comparisons. |
 | **CC-A19SelectorMechanism-11** | **Guard and gate separation:** `SelectorMechanism` publishes neither `GateDecision` nor `DecisionLog`; `SelectEligibility` returns `pass`, `degrade`, or `abstain` separately from the selected set. |
 | **CC-A19SelectorMechanism-12** | **Selection-condition completeness:** `CriteriaSlot`, effective selector policies and defaults, and any `degrade` failure behavior are explicit and bound by the actual application; acceptance and admission predicates remain separate. |
-| **CC-A19SelectorMechanism-13** | **Selection-scope completeness:** every actual application binds candidate universe, finite exact binary CPM application basis, required comparison coverage, token-to-producer trace, `U.ClaimScope`, selected A.2.6 context slices, A.19 predicate basis, effective reference scheme and plane, and explicit evaluation point or interval. No generic context input, optional structure, batch result, or label supplies them. |
+| **CC-A19SelectorMechanism-13** | **Selection-scope completeness:** every admitted `Select` application binds candidate universe, finite exact binary CPM application basis, required comparison coverage, token-to-producer trace, `U.ClaimScope`, selected A.2.6 context slices, any A.19 predicate governing the comparisons or selection criteria, effective reference scheme and plane, and explicit evaluation point or interval. No generic context input, optional structure, batch result, or label supplies them. |
 | **CC-A19SelectorMechanism-14** | **Output separation:** `SelectionSlot` contains only the by-value selected candidate set. On `abstain` no output is fabricated; a reduced set under `degrade` requires explicit current policy. |
 | **CC-A19SelectorMechanism-15** | **Comparison continuity:** selection cites the finite exact basis of binary CPM applications and may not silently change its membership, required coverage, member pairs, eligibility or output bindings, predicate basis, scope, selected slices, plane, or window. A justified change is a new application and may require recomparison. |
 | **CC-A19SelectorMechanism-16** | **No generic result relation:** the A.6.1 operation application binds `SelectionSlot`; C.2.1 governs a durable selected-set episteme when needed; direct subject patterns govern other result relations. |
@@ -328,8 +319,8 @@ This pattern intentionally biases selection authoring toward explicitness and ad
 
 | Anti-pattern                 | What it looks like                                                              | Remedy                                                                                                                                              |
 | ---------------------------- | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| GateDecision leakage | `Select` emits `GateDecision` or writes a decision log | Keep gate decisions in their governing patterns. `SelectEligibility` remains the mechanism predicate; dated selection work records the realized eligibility value and direct replay basis. |
-| Forced single winner         | `Select` always returns exactly one candidate even under incomparability        | Return a declared selected set by default; if single winner is required, make it explicit in `CriteriaSlot` and ensure the induced order is admissible and declared |
+| GateDecision leakage | `Select` emits `GateDecision` or writes a decision log | Keep gate decisions in their governing patterns. `SelectEligibility` remains the mechanism predicate; the actual application retains its realized eligibility value and direct replay basis. |
+| Forced single winner | `Select` always returns exactly one candidate even under incomparability | Return a declared selected set. If a singleton is required, state the choice rule in `CriteriaSlot` and derive that result from the admitted comparison basis; any ordering actually used must be declared and admissible. |
 | Hidden tie-breakers          | “If incomparable, pick lower cost” without declaring that as policy             | Move tie-breakers into explicit criteria or into declared comparator policies; never embed inside the kernel                                        |
 | Scalarization by convenience | Replace set-valued comparison with a scalar “summary score” treated as decisive | Keep summaries report-only unless explicitly declared as admissible comparator outputs                                                                  |
 | Unknown coerced to pass      | Missing evidence treated as acceptable                                          | Use tri-state `SelectEligibility`; unknown maps to `degrade` or `abstain`                                                                           |
@@ -337,7 +328,7 @@ This pattern intentionally biases selection authoring toward explicitness and ad
 | One binary comparison treated as a batch | One `Compare(left,right)` application is said to cover three or more candidates, or a token union loses its producing applications | Bind a finite basis of exact binary CPM applications, derive required pair coverage from the selection conditions, and trace every consumed token to a member output |
 | Selected set as replay record | Candidate universe, comparison ref, criteria, scope, evidence, or currentness are placed inside `SelectionSlot` | Keep `SelectionSlot` to selected candidates; bind use arguments on the actual application and use direct evidence, provenance, and currentness relations |
 | Boundary drift | Selection reuses a token union after comparison-basis membership, coverage, member pair or eligibility, predicate, scope, selected slices, plane, or window changed | Treat it as another selection application and perform the required binary comparisons again when their governed basis changed |
-| Publish inside selection | Selection emits a publication or telemetry relation as part of mechanism semantics | Keep publication and telemetry under their governing patterns; dated work and direct relations retain replay |
+| Publish inside selection | Selection emits a publication or telemetry relation as part of mechanism semantics | Keep publication and telemetry under their governing patterns; actual application bindings and applicable direct relations retain replay |
 
 ---
 
@@ -345,16 +336,16 @@ This pattern intentionally biases selection authoring toward explicitness and ad
 
 **Benefits**
 
-* Preserves correctness under partial orders by making set‑valued outcomes first‑class.
-* Eliminates a major source of decision drift: hidden thresholds, hidden weights, and silent scalarization.
-* Improves replayability and teachability: one governing pattern states selection semantics and guards, while dated work and direct relations preserve each realized use.
+* Preserves incomparable candidates when the criteria require them.
+* Makes thresholds, weights and scalarization choices inspectable; correct selection still depends on applying the admitted criteria to the justified inputs.
+* Supports replay through actual application bindings and the direct relations that the receiving use consumes.
 * Supports evolvability: new method families and selection styles can be wired without changing the kernel signature.
 
 **Costs and trade-offs**
 
 * Selected-set results can require explicit downstream handling when a single decision is needed.
 * Strict evidence discipline increases early `degrade` or `abstain` until criteria and evidence policies are explicit.
-* Teams must invest in explicit criteria records instead of relying on implicit conventions.
+* Teams must make the selection criteria recoverable; existing descriptions may already suffice.
 
 ---
 
@@ -362,16 +353,16 @@ This pattern intentionally biases selection authoring toward explicitness and ad
 
 Selection is where many systems accidentally convert admissible but nuanced information into an unjustified scalar decision. Making selection a separate, explicit mechanism boundary achieves two things that matter for engineering management:
 
-1. **Technical integrity:** it enforces admissibility and evidence discipline at the decision boundary without smuggling heuristics.
+1. **Technical integrity:** the declared guard tests the admissibility and evidence conditions needed by this selection.
 2. **Organizational clarity:** it makes defaults and thresholds discussable, reviewable, and maintainable as explicit policy references.
 
-The set‑returning default is not a preference for large retained sets; it is a correctness safeguard when the order is not total. Single‑winner outcomes remain possible, but only by explicit criteria or declared admissible comparators.
+The set‑returning default is not a preference for large retained sets; it is a correctness safeguard when the order is not total. Single-winner outcomes remain possible when the criteria select one candidate from the admitted comparison outcomes.
 
 ---
 
 ### A.19.SelectorMechanism:11 - SoTA-Echoing
 
-**SoTA vs popular note.** This section records alignment to post‑2015 evidence‑backed practice. It is not a mandate to use fashionable methods; method semantics stay in SoTA packs (`G.2`) and wiring modules, while this pattern fixes the stable selection boundary.
+The research lines below supply application families and design comparisons. Their distinct output meanings and conditions remain with the cited methods; they do not establish the selector laws by themselves.
 
 Concrete selector-family SoTA packages are cited through their current Part G pack or claim sheet when one governs the use. They connect through `CriteriaSlot` and `TaskSignatureSlot` references while kernel semantics remain unchanged.
 
@@ -379,28 +370,11 @@ Concrete selector-family SoTA packages are cited through their current Part G pa
 
 | SoTA practice pointer, post‑2015+                                                                               | Primary source examples, post‑2015+                                                                           | Where it connects to SelectorMechanism                                                                             | Adoption status |
 | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------- |
-| Treat the Pareto set or declared selected set as a first-class output under multi-criteria partial orders       | Quality Diversity as a decision framing, e.g., Pugh et al. 2016; Vassiliades et al. 2018                      | Expressed as set‑return default and explicit set-return criteria; method details live in specializations and wiring | Adapt           |
-| Use archive-based retained sets where diversity is part of the result, but do not silently promote it to dominance | Modern QD and archive practices post‑2015, including map-elites descendants and archive insertion policies | Expressed as policy‑bound criteria and report‑only telemetry unless explicitly promoted                            | Adapt           |
-| Pair environments and methods in open-ended or co-evolutionary settings without breaking kernel semantics       | Open-ended environment-method pairing, e.g., Wang et al. 2019 and successors                                  | Expressed as candidate and criteria structuring plus admissible specializations; kernel unchanged                      | Adapt           |
-| Include an explicit abstain or reject option under uncertainty rather than forcing a decision                   | Selective prediction and rejection-option practice, e.g., Geifman and El‑Yaniv 2017; follow-on selective nets | Expressed as tri-state `SelectEligibility` with fail-closed discipline                                             | Adopt           |
-| Keep architecture commitments traceable to one governing pattern                                                        | ISO/IEC/IEEE 42010:2022 architecture description discipline                                                   | Expressed as explicit governing-pattern assignment and Tell+Cite stubs elsewhere                                             | Adopt           |
-
-**Notes per row** (1–2 sentences; why to adopt, adapt, or reject):
-* **Selected-set-as-output (QD framing):** adopt the *decision framing* (declared selected set as a first-class result) while keeping concrete QD or retained-set algorithms out of the kernel; they belong in `G.2` packs and wiring modules, preserving evolvability.
-* **Archive retained sets (diversity as result):** adapt archive thinking by keeping diversity and illumination signals report‑only unless an explicit CAL policy promotes them to dominance; this prevents silent scalarization and preserves governing-pattern defaults (typically `G.5` and CAL).
-* **Open‑ended environment–method pairing:** keep the kernel unchanged; open‑ended pairing is expressed by shaping candidates and criteria (and, when needed, admissible specializations `⊑` and `⊑⁺`) with explicit edition pins and transfer and validity rules in planned baseline, not by mutating `Select`.
-* **Reject or abstain under uncertainty:** adopt the rejection‑option stance as a tri‑state guard with fail‑closed semantics; explicit abstain is preferable to forced choice under missing admissibility and evidence.
-* **Governing-pattern architecture discipline:** adopt governing-pattern + Tell‑and‑Cite to keep the spec teachable and reviewable; this directly reduces drift and “second centers of gravity”.
-
----
-
-#### A.19.SelectorMechanism:11.2 - Currentness and smallest reopen rule
-
-**Qualification basis and window.** The stable kernel claim is qualified by the current editions of A.6.1 operation declarations and actual binding rules, A.19.CPM binary application and output semantics, A.19.CN and G.0 admission and evidence rules, G.5 selector-policy discipline, A.2.6 scope semantics, and the exact current G.2 selector pack or claim sheet cited by an actual use. For that use, the effective qualification window is the intersection of those bound editions' currentness and any validity interval declared by the selector pack, TaskSignature, or policy; `post-2015+` is an orientation label, not an indefinite freshness claim.
-
-**Reopen the SelectorMechanism kernel only when.** Reopen the smallest affected selector rule when a direct governor changes set-return semantics, inherited SlotKinds or specialization constraints, criteria or policy binding, tri-state eligibility, the finite CPM application-basis and token-provenance boundary, selection scope, or the separation of selected set, evidence, provenance, result episteme, and publication, or when qualified evidence contradicts one of those commitments. A new selection algorithm, archive or diversity method, candidate-generation method, tie-breaker, `PortfolioMode`, rejection calibration, or domain policy that still satisfies those commitments changes its G.2 pack, G.5 policy, `CriteriaSlot`, `TaskSignature`, or other direct policy binding rather than this kernel.
-
-**Smallest affected locus.** A signature, basis, coverage, or output change reopens only the corresponding direct-signature, selection-use-binding, `OperationAlgebra`, or `LawSet` passage in `A.19.SelectorMechanism:4.1`; an admissibility or failure-semantics change reopens the matching `AdmissibilityConditions` clause. Update only the nearest exercising case in `A.19.SelectorMechanism:5.2` or `:5.3` and the corresponding `CC-A19SelectorMechanism` row. Source-family or policy churn that changes no kernel commitment updates the direct pack, policy, or claim sheet and, when its summary is stale, only the affected row or note in this SoTA map.
+| Retain several candidates under explicit criteria | Pugh, Soros and Stanley (2016), [Quality Diversity: A New Frontier for Evolutionary Computation](https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2016.00040/full), §4.2 | QD supplies retained-set application families with different niche and retention rules. Declare the actual choice rule in each use; an archive rule is not the general Pareto-selection rule. | Adapt |
+| Use declared archive-insertion criteria | Vassiliades, Chatzilygeroudis and Mouret, [Using Centroidal Voronoi Tessellations to Scale Up the Multi-dimensional Archive of Phenotypic Elites Algorithm](https://arxiv.org/abs/1610.05729v2), author manuscript revised 2017 | CVT-MAP-Elites assigns a candidate to its nearest region and replaces a less-fit occupant. An FPF adaptation states the region and quality criteria explicitly; auxiliary telemetry supplies no undeclared dominance rule. | Adapt |
+| Organize candidates as environment–solution pairs | Wang et al. (2019), [Paired Open-Ended Trailblazer (POET)](https://arxiv.org/abs/1901.01753v3) | POET pairs generated environments with optimized agents and transfers solutions between environments. Candidate and criteria structuring is an FPF adaptation; the source does not establish this kernel's laws or FPF Method membership. | Adapt |
+| Admit a declared rejection option | Geifman and El-Yaniv (2017), [Selective Classification for Deep Neural Networks](https://arxiv.org/abs/1705.08500v2) | The possibility of rejection informs FPF eligibility design. A selective-prediction rejection rule is not identical to this three-valued guard; apply each rule under its own conditions. | Adapt |
+| Make architecture commitments traceable | ISO/IEC/IEEE 42010:2022 architecture description discipline | FPF assigns this declaration to one governing pattern; that assignment is an FPF design choice. | Adapt |
 
 ### A.19.SelectorMechanism:12 - Relations
 
@@ -412,10 +386,10 @@ Concrete selector-family SoTA packages are cited through their current Part G pa
   * `A.19` for the exact `CharacteristicSpacePredicate` basis when one governs selection.
   * `A.19.CPM` for every exact binary `Compare` application in the finite basis, its pair, realized eligibility value, and own set-valued output binding.
   * `A.2.6` for `U.ClaimScope` identity and exact `U.ContextSlice` membership.
-  * `A.19.CN` for `CN-Spec` governance card used as an explicit input.
+  * `A.19.CN` for `CN-Spec`, whose declared comparison and candidate-use conditions supply an explicit input.
   * `C.22` for `TaskSignature` as a policy-reference artifact when used.
   * `A.6.1 §4.2` for operation-local argument/result meanings and their SlotIndex projection; the local extension rule preserves inherited meanings.
-  * `A.15.2` for the edition/policy baseline; `A.15.3` plus `A.19.CHR:4.7.2` for typed filling of independently declared positions.
+  * `A.15.2` for the edition/policy baseline on P2W paths; `A.15.3` plus `A.19.CHR:4.7.2` for typed filling of independently declared positions.
   * `C.27.TA` for the explicit selection-evaluation point or interval.
   * `A.2.4`, `A.10`, and `G.11` for evidence-use scope, provenance, and currentness, separately from selection scope and output.
 * **Used by**
@@ -427,6 +401,6 @@ Concrete selector-family SoTA packages are cited through their current Part G pa
 
   * `CPM` and other admissible comparison stages as producers of the exact result bindings whose justified-token union fills the Selector's `ComparisonResultSlot` argument.
   * `ULSAM` and other admissible aggregation stages that must remain explicit rather than hidden inside selection.
-  * `E.20` governing-pattern discipline and `F.18` naming or alias handling when a source term needs a bridge.
+  * `E.20` for governing-pattern discipline; `F.18` when a reusable name or alias needs to be chosen. An F.9 semantic Bridge requires its own predicate, not merely a source term.
 
 ### A.19.SelectorMechanism:End

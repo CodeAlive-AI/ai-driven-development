@@ -72,9 +72,9 @@ When a relation appears absent, distinguish the following outcomes:
 
 An empty position in a diagram establishes none of these outcomes by itself. If adapting a scheme changes a relation's meaning, state that change and reconsider the conclusions that depend on it.
 
-Try two plausible answers when that cheaply reveals what is at stake. If both permit the same sufficient continuation, stop the additional inquiry. Otherwise formulate the question in the participant's working language and say what answer would help: a condition, construction, distinction or bound. The benefit can concern a later inquiry or a new method. C.11.DUA governs whether obtaining the answer is worth its burden; no record of declining an unnecessary inquiry is required.
+Try two plausible answers when that cheaply reveals what is at stake. If both permit the same sufficient continuation, stop the additional inquiry. Otherwise formulate the question in the participant's working language and say what answer would help: a condition, construction, distinction or bound. The benefit can concern a later inquiry or a new method. C.11.DUA governs whether obtaining the answer is worth its burden.
 
-Use the resulting answer directly or continue constructing the model it needs. A subject specialist or AI can supply a relation, correspondence or calculation; the required knowledge and access depend on that contribution. Selecting a scheme creates no requirement to traverse a whole ontology or to learn every relation before making the useful move.
+Use the resulting answer directly or continue constructing the model it needs. A subject specialist or AI can supply a relation, correspondence or calculation; the required knowledge and access depend on that contribution.
 
 #### B.5.FM:4.3 - Build relations that can produce a consequence
 
@@ -114,7 +114,7 @@ Keep an explanatory trace when later use or collaboration requires it. A new mod
 
 ### B.5.FM:5 - Archetypal Grounding
 
-These constructed cases expose different model choices. Their calculations establish conditional consequences; no apparatus test is reported.
+These constructed cases expose different model choices. Their calculations establish conditional consequences.
 
 #### B.5.FM:5.1 - Choose the heat path before commissioning a calculation
 
@@ -226,15 +226,15 @@ B.5 coordinates the overall inquiry. This method develops its model-building con
 
 **Finding a question through a scheme.** Compare two practical starting points: follow a provisional question into a small model (:4.1–:4.5), or use an understood scheme to expose a question (:4.2.1). Give both routes the same workshop facts, knowledge of the attempt/feedback relation and a hand calculation. The first can begin with “Can this plan provide the intended practice?”, select the instructor's time, derive 72 minutes and revise the arrangement. With independent stations it changes the model and withdraws the serial restriction. Both routes can obtain these results.
 
-Use the scheme-based entry when an apparently adequate account, such as a seating plan, leaves the relevant question unclear. Its applicability table distinguishes an unknown relation from one that is inapplicable, inexpressible or in conflict with the case. In :5.4 the demonstration-only variant drops the individual-practice question instead of treating it as a missing provision. Recovering and trying a scheme has a cost: use the direct construction when the distinction and question are already clear. This comparison supports a choice between instructions under the stated conditions; it establishes neither faster learning nor better field performance.
+Use the scheme-based entry when an apparently adequate account, such as a seating plan, leaves the relevant question unclear. Its applicability table distinguishes an unknown relation from one that is inapplicable, inexpressible or in conflict with the case. In :5.4 the demonstration-only variant drops the individual-practice question instead of treating it as a missing provision. Recovering and trying a scheme has a cost: use the direct construction when the distinction and question are already clear.
 
-Gentner and Hoyos, [Analogy and Abstraction](https://doi.org/10.1111/tops.12278), 2017, §§1.2–2, provide a historical structural-alignment account. Adapt relational rather than name matching in :4.2.1; the reviewed transfer effects depend on their task and comparison conditions. Keet and Khan, [Discerning and Characterising Types of Competency Questions for Ontologies](https://arxiv.org/html/2412.13688v1), 2024, §§3–4, contribute purpose-sensitive questions and limits of a scheme's expressiveness. Adapt those distinctions in the applicability table without imposing their ontology-specific taxonomy. Vagnino and Walker, [Schema drift](https://doi.org/10.1016/j.cognition.2025.106418), 2026, supplies a limitation: repeated comparison can change relational judgments, with rival explanations unresolved. This motivates the explicit return to a changed relation; it does not establish this repair's efficacy.
+Gentner and Hoyos, [Analogy and Abstraction](https://doi.org/10.1111/tops.12278), 2017, §§1.2–2, provide a historical structural-alignment account. Adapt relational rather than name matching in :4.2.1; the reviewed transfer effects depend on their task and comparison conditions. Keet and Khan, [Discerning and Characterising Types of Competency Questions for Ontologies](https://arxiv.org/html/2412.13688v1), 2024, §§3–4, contribute purpose-sensitive questions and limits of a scheme's expressiveness. Adapt those distinctions in the applicability table without imposing their ontology-specific taxonomy. Vagnino and Walker, [Schema drift](https://doi.org/10.1016/j.cognition.2025.106418), 2026, supplies a limitation: repeated comparison can change relational judgments, with rival explanations unresolved. This motivates the explicit return to a changed relation.
 
 Reconsider the scheme-based entry when it repeatedly produces irrelevant questions or when the direct construction already supplies the needed distinction. Repair the correspondence or continue from the adequate question before broadening the inquiry.
 
 **Subject premises of the physical cases.** [OpenStax, University Physics 2, §1.6](https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer) supplies the conducting-layer and convection relations. [Volume 2, §2.1](https://openstax.org/books/university-physics-volume-2/pages/2-1-molecular-model-of-an-ideal-gas) supplies the isothermal fixed-amount gas relation; [Volume 1, §14.1](https://openstax.org/books/university-physics-volume-1/pages/14-1-fluids-density-and-pressure) supplies the hydrostatic pressure relation. The chosen arrangements, simplifications and receiving questions are the present constructions.
 
-Reopen the method when another construction approach supplies a more useful model at comparable effort, or when a recurring difficulty calls for a model-building move absent from this account.
+Reconsider the construction approach when another supplies a more useful model at comparable effort, or when a recurring difficulty calls for an additional model-building move.
 
 ### B.5.FM:12 - Relations
 

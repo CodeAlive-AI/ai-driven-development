@@ -1,0 +1,19 @@
+## OPS.Reference:12 - Architectural Rationale
+
+
+The repertoire is organized around questions that can close separately. Admission can be decided while a later Work occurrence is still unperformed. A capacity bound can be established while service agreement remains open. An account can be correct while a quality response is undecided. A local Method change can be supported while wider retention remains unknown. Giving each result a direct entry makes those useful stopping points available and lets changed facts reopen only their real consumers.
+
+Other arrangements are serious alternatives at a suitable scope.
+
+| Alternative | When it is useful | Why this framework retains another choice |
+| --- | --- | --- |
+| Use a current local rule or FPF plus one direct professional source. | One well-bounded question already has an adequate answer and no new operating synthesis is needed. | Across recurring operating questions, repeatedly reconstructing the domain units, service consequences and professional returns costs effort. OPS makes that shared reasoning available; it still preserves the cheap direct use. |
+| Adopt a connected Kanban, TOC, TameFlow, BPM or SRE arrangement. | Its Methods, evidence and objectives fit the operation and the practitioners can sustain them. | A school can supply useful combinations, but the operation also has commitments, case facts and protected consequences outside a selected school mechanism. OPS.17 compares the actual reusable moves and retains a whole arrangement only to its supported scope. |
+| Coordinate through one project plan or process model. | Work and dependencies are sufficiently predictable and the chosen description answers the receiving questions. | Changing cases, recurring subprocedures, shared-resource queues and time-bounded changes can need different views of the same Work. OPS.2 preserves their correspondence without requiring every operation to use every view. |
+| Optimize one formal resource or financial model. | The modeled feasible set, objective, resource relations and assumptions fit the actual decision. | The optimizer cannot supply omitted acceptance, permission or protection conditions. OPS.10 and OPS.14 use its qualified result; OPS.11 and OPS.19 preserve consequential relations outside that model. |
+| Manage from one common dashboard. | Its observations, access and refresh are adequate for the participants' decisions. | Displaying one account is a representation choice. OPS.3–OPS.4 preserve subject and claim meaning; OPS.15 can construct another decision-specific account, and OPS.18 separately decides the response. |
+| Use one continuous-improvement cycle for all change. | It provides a useful local learning rhythm without merging the claims it handles. | Operating reconfiguration, a Method trial, repertoire maintenance and population continuation have different subjects and evidence. OPS.19, OPS.16, OPS.17 and OPS.20 retain those differences while sharing results conditionally. |
+
+The control branch follows the same choice. FPF supplies control relations, views and temporal-claim discipline; OPS supplies the operating reason to use them and the resulting intervention question. A production controller, a service supervisor and a human decision maker can participate in different relations. Prefer the simpler coordination account when no control relation changes the decision.
+
+OPS.11.1 and OPS.15.1 develop two constructions used by these decisions: an operating model connecting resource use, activities and order completion, and quantities calculated from the corresponding events. They retain shared resource use, branch joins, repeated work and unfinished cases where those change the answer. The model can then be compared with observations without mistaking a changed boundary or denominator for better service. Use the construction that supplies the missing model or quantity; reuse one that is already adequate.

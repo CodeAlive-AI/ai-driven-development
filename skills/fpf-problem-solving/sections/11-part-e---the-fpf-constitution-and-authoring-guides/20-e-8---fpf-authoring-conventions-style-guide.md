@@ -39,7 +39,7 @@ When a pattern claims practical payoff through a visible score or other proxy, n
 
 **Quality or projection evidence placement.** Development, quality-review, projection, assembly, and landing evidence belongs in its own evaluation, review, projection, or release carrier rather than in the pattern body. Keep it in a pattern only when that work is the pattern's declared `EntityOfConcern` and intended-reader use. A Part E pattern may govern FPF authoring, review, evaluation, entry, or publication, but it does not narrate the development of its own current version. Judge placement by the sentence's use, not by a blacklist of words.
 
-**Pattern positions across coupled flows.** During drafting, `E.21` questions may guide a focused author-side check. A product-level conclusion still requires an independent `E.21` evaluation and the applicable `E.19` admission review. Keep their objects and evidence distinct even when an applicable flow relation connects drafting, review, publication, use, and later refresh. A publication may guide or constrain later Work; assert the actual Work and its evidence only through the patterns that admit those claims.
+**Pattern positions across coupled flows.** During drafting, `E.21` questions may guide a focused author-side check. An overall pattern-quality conclusion requires an independent `E.21` evaluation for the declared use; an admission or refresh question uses the applicable `E.19` review. Keep their objects and evidence distinct even when an applicable flow relation connects drafting, review, publication, use, and later refresh. A publication may guide or constrain later Work; assert the actual Work and its evidence only through the patterns that admit those claims.
 
 **Maturity rule.** Section completeness is not pattern maturity. A pattern matures when its `Problem frame`, `Solution`, worked cases, boundaries, source/SoTA use, relations, consequences, and conformance checks all point to the same usable action guidance for the declared reader and use. If the reader still needs the DRR, source notes, campaign handoff, or author memory to know what to do, the pattern is not mature for that use.
 
@@ -117,7 +117,7 @@ Authors **MAY** add additional sections. Prefer expressing them as subsections u
 * Canonical sections **1–13** are mandatory in every pattern.
 * Canonical sections carry content. Authors must not use omission placeholders as section substitutes; when a section is intrinsically small, write the smallest content-bearing grounding, misuse, boundary, or reduced-case statement that preserves the section's function.
 * **First substantive authoring seed.** The first non-empty authored body of a pattern **SHALL** already instantiate the canonical section frame by value: title line, header block, canonical sections **1–13**, and the footer marker.
-* **Seed is not maturity.** The canonical frame is a minimum authoring seed, not a mature pattern claim. Before a pattern is used for public, teaching, enterprise, reliance-bearing, landing-input, release-input, or ordinary practitioner guidance, each canonical section must carry enough recognition, action guidance, worked material, source/SoTA use, boundary, consequence, and relation content for the declared use. A material maturity, readiness, admission, or landing claim also needs the independent complete `E.21` result selected for that conclusion; an author-side provisional pass or focused repair check does not supply it. A file with correct headings, thin bullets, scenario labels, or compressed DRR recap remains a pattern seed until that content is present or the package explicitly marks it as `seedOnly`.
+* **Seed is not maturity.** The canonical frame is a minimum authoring seed, not a mature pattern claim. Before a pattern is used for public, teaching, enterprise, reliance-bearing, landing-input, release-input, or ordinary practitioner guidance, each canonical section must carry enough recognition, action guidance, worked material, source/SoTA use, boundary, consequence, and relation content for the declared use. A maturity or overall pattern-quality claim needs an independent complete `E.21` result for its declared use; an author-side provisional pass or focused repair check does not supply that result. A bounded repair or publication-preservation conclusion uses the checks required for its own question. A file with correct headings, thin bullets, scenario labels, or compressed DRR recap remains a pattern seed until that content is present or the package explicitly marks it as `seedOnly`.
 * Recognition openings and first-minute working guidance belong **inside** that canonical frame. Any retained pre-template entry material must also stay inside that same canonical frame rather than appearing as one pre-template opening memo. Authors **MUST NOT** seed one pre-template opening memo and postpone canonical sectioning, `Conformance Checklist`, or footer-marker installation to one separate `E.19`, assembly, or review-repair pass.
 
 **Template:**
@@ -224,8 +224,7 @@ Resolution and checking are declaration-first and context-sensitive. Authors and
 
 **H-11 (Assembled Part boundaries and title agreement).** In the assembled publication, every compact ToC Part label **MUST** be a bold separator with a blank line on both sides, not a duplicate structural Part heading. Its title and ASCII ` - ` separator **MUST** agree exactly with the corresponding `# Part <letter> - <title>` body heading. A reserved body Part that has no compact ToC table, including current Part H, does not require an empty compact label or table.
 
-*Unification note:* historic A‑ and D‑templates differed only by the presence/absence of **Bias‑Annotation** and **Relations**; the unified template keeps the headings everywhere and requires every heading to carry content-bearing grounding, boundary, consequence, rationale, source-use, relation, or reduced-case material rather than an omission placeholder.
-The Alexandrian pattern canon historically calls *Problem frame* “Context”. FPF uses *Problem frame* because generic `Context` and universal `U.BoundedContext` do not identify the actual value a claim needs.
+`Problem frame` names the working situation. Generic `Context` and universal `U.BoundedContext` do not identify the actual value a claim needs.
 
 Route each use directly. Recover source-local meaning through `F.0.1`, use `F.1` to select answer-changing sources, state `ClaimScope` through `A.2.6`, and use `A.1.1` for an admitted bounded-model use. Add `F.17` only when a durable address or basis relation is needed, `F.9` only for an obtaining Bridge between two exact local senses, and the applicable plane relation for a `ReferencePlane` claim. Otherwise leave the relation unasserted rather than inferring it from a shared word, source, or context.
 
@@ -298,7 +297,7 @@ Begin with the practical explanation developed for its intended use, using C.39:
 
 Use the twelve substantive functions in the canonical template as authoring questions for a whole FPF, DPF, or LPF and each selected substantive profile. `E.11.PFP:4.7` governs their public answers, inheritance, and placement in the framework's publication units. The same functions can describe a broad Method, a composition of Methods, or a narrower use; the declared subject and applicability determine the scale.
 
-The `Solution` explains the actual organization and use of the described Methods: their contributions, relations, and the results that make a next move possible. `Architectural Rationale` explains why that organization and those choices serve the declared use, which serious alternatives were considered, their trade-offs, and the conditions under which another choice becomes preferable. Preserve shared source explanations there when users need them to understand or adapt several patterns together.
+The `Solution` explains the actual organization and use of the described Methods: their contributions, relations, and the results that make a next move possible. `Architectural Rationale` explains why that organization and those choices serve the declared use, which alternatives were considered, their trade-offs, and the conditions under which another choice becomes preferable. Preserve shared source explanations there when users need them to understand or adapt several patterns together.
 
 The same explanation must make recoverable how constituent actions perform encompassing work where that connection matters to learning, performance or change. Show what larger work is already being done through the selected action, what constituents make that action possible, and which conditions of the whole constrain it. Preserve genuine result-before-use dependencies alongside the constituent–whole relations of the relevant Method and Work structures. A representative case should let the reader change the action when a relevant condition of the whole changes. Use B.1.5.EW for recovery and B.1.5.RS for a constituent replacement; do not require a separate level diagram or exhaustive decomposition when the connection is already understood.
 
@@ -323,7 +322,7 @@ Finish with the chosen title and its truthful discovery cue. Keep the PatternID 
 | # | Principle | Guideline |
 |---|-----------|-----------|
 | S-0 | Governing-claim flow | Begin with the recognisable working situation and governing claim or action. Add context, grounding, examples, and a closing line only when they help the reader understand or use that claim. |
-| S-1 | Density without Jargon | Short declarative sentences; tool names belong in Pedagogy/Tooling. |
+| S-1 | Density without Jargon | Short declarative sentences; incidental tool details belong in Pedagogy/Tooling. Retain necessary subject syntax under E.5.1. |
 | S-2 | Internal Cohesion | Inline references to Pillars and related patterns. |
 | S-3 | Embedded Mini-Definitions | Gloss a new term in parentheses on first appearance. |
 | S-4 | Contextualisation | Brief historical or disciplinary lineage references. |
@@ -331,7 +330,7 @@ Finish with the chosen title and its truthful discovery cue. Keep the PatternID 
 | S-6 | Earned closing line | End when the result or boundary is clear. Add a memorable closing line only when it reinforces that result without introducing a new claim or displacing the practical close. |
 | S-7 | Generative over Prescriptive | Present rules as enabling constraints, not bureaucracy. |
 | S-8 | Grounded transfer examples | Use examples from other fields when the pattern claims transfer breadth and each example changes recognition, application, or a boundary. No fixed example count establishes breadth. |
-| S-9 | Physical Grounding Reference | Tie an abstraction to the actual system doing the work and to the holon or physical process it changes. Mention a local transformer system-role classification or an obtaining assignment only when it changes the claim; ordinary *transformer* may remain readable metonymy for that system. |
+| S-9 | Physical Grounding Reference | Ground an abstraction about action in the system that acts or is to act and the subject it affects. For other change, identify the changing subject and the conditions or dynamics the claim uses. Mention a local transformer system-role classification or an obtaining assignment only when it changes the claim; ordinary *transformer* may remain readable metonymy for the acting system. |
 | S-10 | Readable blocks | Keep the governing claim with the explanation needed to use it. Split prose or use a list only when that structure makes the reader's work easier; no sentence or item count is a verdict. |
 | S-11 | Narrative Flow | Foreground the governing practitioner claim or action and let the section read as a continuous explanation. Apply `F.19` when coordination, catalogues, or modifiers create bullet soup or delay that message. |
 | S-12 | Full claims over tags | Use a clause when a list item carries a claim or action. Labels, values, and locally complete steps need no artificial subject-and-verb expansion; item count and sentence count are not verdicts. Use the `F.19` contribution and list tests. |
@@ -343,8 +342,7 @@ Finish with the chosen title and its truthful discovery cue. Keep the PatternID 
 | S-18 | Intended-reader discipline | Address the intended framework user. Explain the Methods, their organization, alternatives, costs, and use-changing reasons in the public body. Keep current development, review, evaluation, projection, and landing correspondence in its own carrier under `E.8:4.2.3`. |
 | S-19 | Precision before relaxation | Apply the connected `F.19` reading and kind/loss comparison before accepting a plain or didactic rewrite. Route only an unresolved FPF head, qualifier, relation, or admissible-use question to `E.10`, `E.10.ARCH`, or its subject pattern. |
 
-Authors use the principles as a *scaffold*, not a straitjacket: the goal
-is coherent, engaging insight. Engagement remains subordinate to semantic discipline: hooks, quotable lines, Plain restatements, and didactic images may improve recognition, but any ontological, evidence, causal, assurance, bridge, gate, work, decision, or admissibility claim kind or admissible-use boundary they carry must be recoverable through the governed Tech reading or named neighboring pattern. Ordinary Plain prose without that claim kind or admissible-use boundary stays ordinary prose.
+Use the principles to make the explanation coherent and readable. Engagement remains subordinate to semantic discipline: hooks, quotable lines, Plain restatements, and didactic images may improve recognition, but any ontological, evidence, causal, assurance, bridge, gate, work, decision, or admissibility claim kind or admissible-use boundary they carry must be recoverable through the governed Tech reading or named neighboring pattern. Ordinary Plain prose without that claim kind or admissible-use boundary stays ordinary prose.
 
 **S-0 (Governing-claim flow) — explanation**
 
@@ -355,9 +353,7 @@ Every canonical pattern SHALL stabilise one primary `EntityOfConcern`, relation 
 
 If a pattern uses a broad umbrella or head together with a narrower operative branch, the text must also make the stack explicit early enough for first reading: what the broad head names, what the current narrowed branch is, what primary `EntityOfConcern`, relation record, or claim record is actually in play, what exact action assertion and predicate are current, and what wider work or process remains outside the pattern. A qualifier alone does not restore that stack.
 
-Under `F.18` local-first naming, the canonical pair here is **recognition text** and **assurance text**.
-The earlier provisional `recognition shell` and `assurance shell` wording is retired.
-These names refer to two reading-order functions carried by existing sections or projections inside one pattern; they do **not** mint new `authoritySourceRef` targets, generic neighboring-pattern relations, publication-form or face kinds, `publication-face kind`s, or a second face family.
+**Recognition text** and **assurance text** name two reading-order functions carried by existing sections or projections inside one pattern.
 Additional didactic scaffolding remains optional and is justified when the family is especially easy to misuse, easy to over-read, or hard to teach. The instruction needed for the pattern's declared use is part of its substantive contribution under §4.2.1.1, not optional scaffolding.
 
 The **recognition text** is the first-reading text.
@@ -397,7 +393,7 @@ If `SoTA-Echoing` carries an FPF-governed claim, the practical implication of th
 - reviewer guidance that tells what to inspect first and which neighboring FPF pattern defines or constrains the failure mode and which project-side FPF kind and reference named by value carries the claim or effect;
 - local mini-definitions or glossary material for recurring terms that would otherwise be recovered only from project context.
 
-Pattern density is therefore not “more metadata” and not “longer tag lists”. It is the presence of enough recognition, assurance, and, when needed, extra didactic material that a reader can understand the pattern, apply it lightly in ordinary cases, and recognise when a heavier review profile is required.
+Provide enough recognition, assurance and, when needed, additional didactic material for the reader to understand the pattern, apply it in ordinary cases and recognise when a heavier review profile is required.
 
 ###### E.8:4.2.1.1 - Provide enough explanation for the reader's use without requiring a complete reading
 
@@ -436,7 +432,7 @@ A companion may explain prerequisites, add analogies and more examples, arrange 
 
 To choose the division, follow one intended use and one consequential variation. Identify the missing competence or explanation, then decide whether the repair supplies an unexpressed subject-method connection, a learning activity, or a better presentation of an existing explanation. Put the first with its method owner or genuine public supplier; put audience-specific acquisition with the companion and its pedagogical grounds; repair presentation where the content already exists. Keep an action-changing condition visible at the point where a user needs it. The route to a fuller explanation must be usable within the declared support arrangement. A companion that has not been written or cannot be obtained leaves that audience's promised learning unsupported.
 
-When the division is uncertain, ask a suitably prepared reader who lacks the author's private context to construct a small piece of instruction for a named audience from only the published method account and its declared suppliers. The result should identify what the learner must be able to do, connect a worked case and practice task to those operations, and state how a consequential mistake or changed condition would be handled. Trace a consequential instruction back to its method grounds, an explicit pedagogical choice, or an acknowledged gap. There is no need to copy every source sentence into a trace table.
+When the division is uncertain, ask a suitably prepared reader who lacks the author's private context to construct a small piece of instruction for a named audience from only the published method account and its declared suppliers. The result should identify what the learner must be able to do, connect a worked case and practice task to those operations, and state how a consequential mistake or changed condition would be handled. Trace a consequential instruction back to its method grounds, an explicit pedagogical choice, or an acknowledged gap.
 
 Inspect any necessary invention. Choosing a motivating example or a teaching sequence is normal pedagogical design. Inventing the method's missing selection criterion, inference, transformation or coordination shows that the method account or its supplying explanation is insufficient for that use. Repair that omission at its owner; do not conceal it in a privately generated course. Conversely, failure to teach an unprepared learner from a compact competent-reader pattern alone does not establish such an omission when an adequate companion is explicitly part of the selected arrangement.
 
@@ -452,7 +448,7 @@ Use existing sections, examples and direct references to organize these paths. `
 
 Use this move when the needed explanation is available but the author still has to decide what the reader should read, compare, remember, manipulate or carry forward. It also applies when arranging incomplete material is how the reader will discover the question. A representation can help produce a distinction that was not available before it was used. Its usefulness is not limited to storing a finished answer.
 
-Begin with the reader's operation and actual material. Try it with a sufficient existing expression before designing another one. Retain the reader's preparation and available help from §4.2.1.1. If the operation itself is missing, develop or obtain it; rearranging its name cannot supply it. A.6.3.RT.OE explains how to make an expression operative. Developing formation, interpretation or transformation rules is a separate notation-engineering task. The external [Notational Engineering DPF (NOT)](https://github.com/ailev/FPF/blob/main/DPFs/Foundational%20Thinking%20DPF%20Suite/NOTATIONAL-ENGINEERING-DPF.md) offers optional methods for that work.
+Begin with the reader's operation and actual material. Try it with a sufficient existing expression before designing another one. Retain the reader's preparation and available help from §4.2.1.1. If the operation itself is missing, develop or obtain it; rearranging its name cannot supply it. A.6.3.RT.OE explains how to make an expression operative. Developing formation, interpretation or transformation rules is a separate notation-engineering task. The external [Notational Engineering DPF (NOT)](../../dpfs/foundational-thinking-dpf-suite/not/_index.md) offers optional methods for that work.
 
 **Construct the contrast before choosing the format.** Place together the pieces that the operation needs to distinguish or combine. They can still contain uncertain interpretations or an unanswered question. Attempt the comparison, grouping, substitution or inference. Where it fails, determine whether a missing fact, a missing operation or the arrangement of the expression prevents the result. Change the arrangement when it hides or confounds an available distinction. Obtain a missing fact when the receiving operation requires it. Preserve an unresolved question when it is the useful result of this attempt.
 
@@ -460,9 +456,9 @@ The unit follows the operation. Two cases may need to remain adjacent to expose 
 
 **Choose among expressions by what the reader does with them.** Continuous explanation can keep a causal argument or an unfamiliar inference together. A mantra can help retain an already developed connection during work; it cannot teach a missing operation merely by naming it. A table makes the same questions about several cases jointly inspectable. Its rows and columns need meaningful common interpretations, including the conditions under which values may be compared. A card makes a coherent contribution separately addressable and rearrangeable; explain what a connection between cards means. A diagram can expose a relation whose incidence, order or spatial organization matters; the appearance of an arrow does not establish a dependency or cause. An executable expression can perform a specified operation, provided its inputs, interpretation, execution context and failure behavior are supplied.
 
-These expressions may be combined. For example, a short explanation can establish a table's interpretation, the table can support comparison, and a reminder can later cue that same operation. Select only the contributions needed by the intended use. A list of all available formats creates no obligation to include them.
+These expressions may be combined. For example, a short explanation can establish a table's interpretation, the table can support comparison, and a reminder can later cue that same operation. Select only the contributions needed by the intended use.
 
-**Expose the interpretation where it is used.** A column headed `Date` can leave its event, role and unit unresolved. A row can represent an observation, an attempted operation, a relation or a claim rather than one physical object. State the distinctions that affect the operation, including what an empty position means. A missing observation is not zero; a not-applicable question differs from an unanswered one. Use the domain's kinds, quantities and roles and the relevant FPF distinctions where they settle such a difference. Do not turn the whole upper ontology into columns.
+**Expose the interpretation where it is used.** A column headed `Date` can leave its event, role and unit unresolved. A row can represent an observation, an attempted operation, a relation or a claim rather than one physical object. State the distinctions that affect the operation, including what an empty position means. A missing observation is not zero; a not-applicable question differs from an unanswered one. Use the domain's kinds, quantities and roles and the relevant FPF distinctions where they settle such a difference.
 
 Distinguish content that must be available from content the practitioner must enter again. A visible value may be derived from a qualified source or retrieved from another record. Show that return when it matters, and require manual entry only for the contribution the person actually supplies. An illustrative table in a pattern is not automatically a record schema for every performance.
 
@@ -485,7 +481,7 @@ The cell exposes an unresolved interpretation; selecting one output by appearanc
 | North | `03/04/2026` | month/day/year | `2026-03-04` |
 | South | `03/04/2026` | day/month/year | `2026-04-03` |
 
-The unchanged raw characters and different results remain adjacent. The table expresses the source-to-interpretation relation which the two-column prototype lost. The surrounding explanation says how the applicable guarantee is obtained and why guessing from the characters is invalid. `Source` designates the supplier for this row; the interpretation is an input to conversion derived from that supplier's guarantee, not a newly observed property of the date. Neither the interpretation nor the output must be manually recopied by every user.
+The unchanged raw characters and different results remain adjacent. The table expresses the source-to-interpretation relation which the two-column prototype lost. The surrounding explanation shows how the applicable guarantee determines the date order and why guessing from the characters is invalid. `Source` designates the supplier for this row; the interpretation is an input to conversion derived from that supplier's guarantee, not a newly observed property of the date. Neither the interpretation nor the output must be manually recopied by every user.
 
 A separate card for each row would make this small comparison harder to inspect together without supplying a needed rearrangement. A dependency diagram can explain the same selection when its connections become the difficult part, but adds no needed distinction to these two rows. The table and its short explanation therefore serve this example. For experienced users, “use the applicable source order; do not infer it from an ambiguous date” is a recall cue with a return to the explanation. It does not replace that explanation for someone learning the selection.
 
@@ -501,13 +497,21 @@ The raw/result prototype, the source-qualified comparison and the reduced single
 
 Determine the content owed to the reader from the subject, declared scope and receiving work. Include the relations, grounds, alternatives and conditions needed for that work; do not let the circumstances of a convenient example decide which of them to explain. This is a priority in deciding adequacy, not a compulsory order of discovery or presentation. A case, sketch or attempted calculation can reveal a missing relation before the general account is finished. Carry that discovery back into the account and distinguish a reusable condition from an incidental feature of the case.
 
+**Keep the explained subject and its example distinguishable.** When teaching a Method, identify the reusable way, the actual or stipulated performance that illustrates it, and the material on which that performance works. Show which choice or action in the example enacts which operation and why its result is usable next. In an explanation-design pattern, a calculation of a mean can be material supplied to the explainer; selecting unequal groups to expose a misleading shortcut illustrates the explainer's Method. Correct arithmetic supplies the mathematical result. The account of selecting and using the contrast explains the teaching move. These contributions can appear together without changing the pattern's subject to arithmetic.
+
+Make the common claim, its scope and its grounds available in the explanation. It may be expressed alongside cases, through a derivation or through a named accessible supplier. State what may vary and which conditions make the relation or operation applicable. When cases suggest a new general claim, develop and qualify that claim through the relevant subject Method. A constructed instance can demonstrate an operation, a counterexample can defeat a universal claim, and observed cases can contribute empirical evidence; the wider inference retains the grounds appropriate to that use.
+
 Select an example for a particular contribution: making an unfamiliar relation inspectable, exposing an intermediate operation, distinguishing plausible rules, showing a boundary, or connecting several Methods in use. Work the correspondence between the account and the instance. A correct answer can fit more than one rule; choose values or a comparison that lets the reader distinguish the intended relation. Preserve adequate direct explanation when an additional example would contribute nothing to the declared use. Archetypal Grounding remains a content function of a canonical pattern; it is not a requirement to insert an example into every paragraph, slide or section derived from that pattern.
 
-**Decide whether to continue the same case.** Continuity can make an earlier result, a changing state or the consequences of a choice available to the next operation. It can also avoid reintroducing circumstances the reader already understands. Retain that benefit when the case still shows the relations now needed. If a new question needs different objects, a competing method or a condition the case cannot represent faithfully, change the case, juxtapose a contrasting one or use a direct explanation. Shorten or end the illustration when continuing it would displace necessary content. Several cases are not inherently better: retain the comparisons that expose a consequential relation, rather than changing settings for variety alone.
+**Choose meaningful variety from the promised subject.** Recover the differences in objects, relations, conditions, available grounds and receiving work that the account must handle. Select cases that make those differences intelligible, including ordinary applications as well as contrasts and limits. A numerical derivation, a causal explanation with uncertain evidence and a recommendation under competing purposes can require different explanatory moves. Changing numbers within a derivation does not supply the other two. Several materially different examples may be necessary to ground a general account even when each example is locally simple. Explain what remains common across them and what changes for a subject-specific reason.
 
-**Check the account at its promised scope.** Compare what the explanation lets the intended reader recover with what the subject and receiving work require. The reader should be able to explain the governing relation, its grounds and conditions, and use it in a relevant changed situation without merely retelling the story. Choose that variation from the promised scope, not only from what is easy to change inside the chosen setting. A change of numbers within one kind of object may settle a numerical question while leaving a claimed change of object kind or Method combination unexamined. Supply the missing explanation or accessible supplier; another example does not repair an absent operation by itself. Use F.19's evidence and coverage conditions for a reader-recovery conclusion. A correct illustration, its presence in the expected section and a successful local reading establish only their respective contributions.
+For human learning, HCD.5:4.2.1 and HCD.6.1:4.2.2 connect explanations with a distribution of qualified encounters and focused contrasts. Use that contribution when a learner must recognize or use a family that one pair cannot expose. A demonstrated distinction can be available before a complete verbal rule; preserve its qualified examples and conditions instead of inventing a formula. The framework author's obligation is to make the claimed commonality and its basis usable, including the limits of what has been explained.
 
-For example, a continuing transaction can show why a later update must use the state produced by an earlier one: retaining the same transaction makes that dependency visible. In an account of resource use across Methods, however, a single consumable specimen cannot also stand for reusable information without further explanation. Explain consumption and reuse, then use cases that distinguish those relations. Reusing the specimen story for every step would hide a condition of the general Method. A reader who already understands a short algebraic derivation may instead need no narrative case for that inference. These are choices about the contribution required, not a fixed allocation of examples.
+**Decide whether to continue the same case.** Continuity can make an earlier result, a changing state or the consequences of a choice available to the next operation. It can also avoid reintroducing circumstances the reader already understands. Retain that benefit when the case still shows the relations now needed. At each consequential transition, return to the subject being explained: which operation or principle is this instance making usable? If a new question needs different objects, a competing method or a condition the case cannot represent faithfully, change the case, juxtapose a contrasting one or use a direct explanation. Keep the general reasoning connected while examples change. Retain the varied cases needed for that account; shorten incidental story development when it displaces the next required connection.
+
+**Check the account at its promised scope.** Compare what the explanation lets the intended reader recover with what the subject and receiving work require. The reader should be able to explain the governing relation, its grounds and conditions, and use it across the material variations included in the promise. Choose those variations from the subject, not only from what is easy to change inside the chosen setting. Inspect the correspondence back to the Method or principle being taught as well as the correctness of the example's domain result. Supply a missing general operation, explanation or accessible supplier; add or revise cases when the required correspondence or variation remains hard to recover. Use F.19's evidence and coverage conditions for a reader-recovery conclusion.
+
+For example, a continuing transaction can show why a later update must use the state produced by an earlier one: retaining the same transaction makes that dependency visible. In an account of resource use across Methods, show the different relations of a consumable specimen and reusable information. Explain consumption and reuse, then show how each changes the receiving operation. The author's reusable move is to select and connect cases by the relations owed to the reader; the transaction, specimen and information are the material used to perform that move. A reader who already understands a short algebraic derivation may need no narrative case for that inference. These are choices about the contribution required, not a fixed allocation of examples.
 
 ##### E.8:4.2.2 - Package-form and neighboring-pattern reference discipline
 
@@ -575,7 +579,7 @@ Read a proposed destination far enough to establish that it supplies the contrib
 
 A pattern is written for its intended framework user: the person who uses it to organise thought, investigate a question, change a system, publish a description, or review a result under that pattern.
 
-Its sections explain the described subject, the user's action and result, costs, and grounded boundaries that change use. Public architectural explanation belongs here when it helps the reader understand, select, combine, or adapt the Methods. For example, explain why a profile specializes one step but reuses another, how a combination makes its next result possible, or when a serious alternative would be better. State the actual relations in `Solution` and their reasons in `Architectural Rationale`. A whole language and its profiles use the same content functions through `E.11.PFP:4.7`.
+Its sections explain the described subject, the user's action and result, costs, and grounded boundaries that change use. Public architectural explanation belongs here when it helps the reader understand, select, combine, or adapt the Methods. For example, explain why a profile specializes one step but reuses another, how a combination makes its next result possible, or when an alternative would be better. State the actual relations in `Solution` and their reasons in `Architectural Rationale`. A whole language and its profiles use the same content functions through `E.11.PFP:4.7`.
 
 `E.8` reader and reviewer wording is framework-authoring wording. Project-side publication readers, explanation readers, comparative review units, and participants in named project-side review relations are governed by the patterns that name those units and relations, such as `E.17`, `E.17.ID.CR`, `E.17.EFP`, `A.10`, `A.15.4`, `A.20`, or `A.21`.
 
@@ -585,68 +589,24 @@ Keep the development history of the current pattern version in its DRR, companio
 ##### E.8:4.2.4 - Human-facing fit beyond intended-reader correctness
 Human-facing fit is also subject-domain fit. A recognition text that starts from internal taxonomy, pattern-placement convenience, or package-architecture wording before the problem-domain moment is still under-authored even if its later guidance or check text is correct. When a broader umbrella name and a narrower operative branch are both used, the recognition text should also tell the reader which stack is actually active rather than leaving that reconstruction to a later declaration block or companion note.
 
-A pattern can already address the intended reader and keep its boundaries clean, yet still fail the first minute of use for a cold working reader.
-That failure usually appears when the text is admissible but does not yet make the working situation, practical payoff, primary `EntityOfConcern`, non-use boundary, or first action-guiding move visible enough.
-
 **P-2 epistemic precision check.** When the E.10 criteria call for epistemic precision restoration in pattern prose, the first admissible action-guiding move must survive as remaining admissible reader use or be replaced by a neighboring FPF rule whose content now defines or constrains that claim application. This is a direct `E.2` `P-2` and `E.12` requirement, not an optional style preference. Intentional didactic metaphors and vivid Plain recognition lines are admissible when they are ordinary recognition aids or when their claim kind or admissible-use boundary maps back to Tech under `E.10:6.2`. A precision-corrected rewrite that leaves the recognition text inert is still under-authored.
 
-For canonical patterns, the first-reading text should behave as a **recognition text** and the heavier review/check scope should remain in an **assurance text**.
+
 
 For method guidance, explain in `Solution` what the performer should attend to or compare when it can change the next move: conditions needed for the operation, consequences expected from it, and whether the obtained result serves the receiving work. Give a reachable continuation when a condition is unmet, unknown or the result leaves the original concern unanswered. `B.5.PI` develops an opening into inquiry; `B.5.EA` helps when the concern cannot yet be expressed, and an early cue can remain unresolved. Put these connections where they change use, including in first authoring. Do not add a compulsory monitor, extra form or copied “watch for anomalies” paragraph to every pattern. A known adequate result can still end the work directly.
 
 
-When a pattern claims practice guidance or is meant to be used by engineers, managers, researchers, or other working readers, authors should make the following visible before the heavier harness takes over:
-- a recognisable `Use this when` or equivalent first-minute recognition cue;
-- a concrete working situation in `Problem frame`, not only taxonomic or pattern-placement language;
-- a short statement of what goes wrong if the pattern is missed or misread;
-- a short statement of what this pattern buys the reader in practice;
-- the first admissible action-guiding move the user should take in that situation;
-- a short `Not this pattern when` boundary for ordinary nearby non-use cases;
-- a minimally viable worked case or use slice that makes a needed relation and its practical consequence inspectable; select and bound it through §4.2.1.3 rather than treating its presence as sufficient explanation;
-- when a typed declaration block, formal lens, or other compact modeling material is FPF-governed, a short user-facing statement of what kind of object the pattern is governing and what minimal lens keeps that object reviewable;
-- pairwise plain glosses for any FPF-governed technical terms that must appear before the heavier declaration content arrives;
-- when `SoTA-Echoing` carries explanatory work, a short working-reader implication for each row or cluster of rows and a visible link back to the case bank or worked slices that those rows discipline;
-- a visible split between the recognition text and the heavier assurance text or companion material;
-- and, if the draft implicitly serves several working-reader situations, an explicit primary working reader, primary concern, or primary viewpoint.
-
-**Problem-frame recognition signature (informative).** A canonical pattern should
-expose the working situation through its `Problem frame`, not through one
-separate navigation block. When an `E.11` pattern-entry discoverability problem
-is present, the same `Problem frame` may also carry candidate-pattern and
-tempting-wrong-pattern cues; otherwise it should stay with action guidance
-rather than becoming a local catalogue row.
-
-The local recognition signature should make recoverable:
-
-- the concrete working situation;
-- the primary `EntityOfConcern`, relation named by value, claim record, or stabilized concern;
-- what goes wrong if the pattern is missed or misread;
-- the first admissible action-guiding move and what that move buys;
-- the ordinary not-this-pattern boundary;
-- the first admissible action-guiding result; when an `E.11` discoverability
-  problem is present, the first admissible entry stop or entry-stabilizing result.
-
-`Use this pattern when`, `This pattern applies when`, or equivalent `Problem
-frame` prose may be used as the first sentence or compact cue of this
-signature.
-It is not one separate required section.
+Use the recognition and assurance functions in §4.2.1. Put the working situation and first useful result in `Problem frame` and `Solution`; add candidate-pattern comparison cues when an actual E.11 discoverability question remains.
 
 **Entry-cue authoring rule.** Begin with one ordinary question about the user's object and claim, before any PatternID, card, template label, or internal taxonomy. In the same compact cue, state what cited content contributes, cite the pattern id, and name the smallest result usable now plus its stop or return condition. Add a tempting overread only when the `F.19` plausible-reader test finds independent local ground and an action-changing effect. Name an exact episteme, `ClaimGraph`, or edition only when a later use depends on that identity. The cue guides reading; it does not by itself constitute a result or relation.
 
-Resolve the current head and relation under the exact subject pattern before coarsening. In an ordinary cue, state that pattern's concrete contribution and cite its id; identify exact claim-bearing content only when its identity changes the receiving use. Preserve every live status distinction defined by the subject pattern. A cue or representation supports only the object, status, or relation admitted by its governing pattern.
+
 
 Compact candidate-pattern comparison belongs in `E.11`-distributed entry material. Longer first-entry comparisons belong with E.11's bounded-comparison explanation; `E.11:5.7–5.14` supplies worked examples.
 
-If the prose points to neighbouring patterns or companion content, state whether that content defines a kind, constrains a relation, supplies a test or method, provides a project-side FPF kind and reference named by value, or supplies an `E.11` entry-recognition reclassification; do not present a citation as a hidden co-authority of the current pattern.
 
-If the pattern claims broad, universal, or transdisciplinary usefulness, that breadth should already be visible in the recognition text.
-The recognition text should show heterogeneous reader or domain situations adequate to the claimed breadth, rather than one narrow case family with a later broad claim attached.
-When a compact matrix helps, `F.16` is the preferred template for making that breadth legible.
 
-This is not a request to flatten the pattern into plain language only.
-It is a rule about ordering, assurance depth, and text consistency: the recognition text must help a working reader recognise the pattern early, while the assurance text continues to carry the full claim kind or admissible-use boundary.
-If the pattern uses technical lexicon, ontological distinctions, or a mathematical lens, those structures must remain recoverable, but the first-reading text should not require the reader to decode that full stack before recognising the working situation.
-The assurance text may tighten or discipline the recognition text; it must not silently shift what the recognition text claimed.
+Keep a claimed breadth visible at first reading and preserve the same claim as the assurance text develops it, under §4.2.1.
 
 **Illustrative migration example (informative).**
 
@@ -663,9 +623,9 @@ Repaired Problem-frame recognition signature:
 ```text
 Use this pattern when boundary-facing language - API, protocol, SLO/SLA, compliance clause, or other published boundary description - mixes guidance or check clauses, admissibility gates, duties, and evidence into one sentence or published boundary description.
 
-If missed, the text becomes boundary-claim soup: runtime behavior, governance, and evidence are treated as one undifferentiated promise.
+If missed, runtime behavior, governance, and evidence are treated as one undifferentiated promise.
 
-Do not use this pattern merely because the text mentions an API or boundary description. If the question is still one unstable cue, preserve it through the admissible cue-preservation line first.
+Do not use this pattern merely because the text mentions an API or boundary description. For an unstable cue, keep the passage or observation that prompted the concern. Use B.5.EA when the participant cannot yet express the distinction needed to continue; use A.16.1 when preserving the cue itself is the first useful publication.
 
 First admissible action-guiding result: one `A.6.B`-governed atomic claim set or one Claim Register whose claim/use questions are explicit enough for a reader to inspect using the pattern content that defines or constrains the claim, or a named project-side FPF kind and reference.
 ```
@@ -678,15 +638,31 @@ Apply §4.2.3 to place this edition's drafting, review and landing history in it
 
 If a pattern or example claims **autonomy**, name the admitted `U.System` whose freedom of action is being evaluated and use the current `E.16` pattern that defines or tests the claim. Add another relation only when it is current under its own governing pattern. Admit dated Work under the A.13-first and independent A.15.1 rule in `E.8:0.3`, adding `F.6` only for current assignment-bound attribution. Add autonomy apparatus or a vignette only when it helps the reader use that claim. Apply `F.19` after recovery; if the corpus supplies no direct governor, return `A.6.RCD missing-governor`.
 
-### E.8:5 - Archetypal Grounding (System and Episteme)
+### E.8:5 - Archetypal Grounding
 
-| Template element | `U.System` illustration | `U.Episteme` illustration |
-|------------------|------------------------|---------------------------|
-| Section order | Pump‑assembly pattern follows sections **1–13** and ends with its required `:End` sentinel. | Meta‑analysis pattern follows the same sections and sentinel rule. |
-| S-1 Density w/o Jargon | “The pump casing seals at this face.” | “The claim states its predicates explicitly.” |
-| Governing-claim flow | Opens with the pump's working situation and required claim, then adds only context needed to act. | Opens with the research question and evidence claim, then adds only context needed to interpret it. |
+#### E.8:5.1 - Turn a framework outline into a usable common account
 
-*Note:* Use C.2.3 for a claim about **F (Formality)** and state the expression-rigor criterion it satisfies.
+An author has three short chapters about selecting a source, reusing a rule and refreshing a decision. The commissioned introduction must explain how readers can keep source-based decisions justified as their sources change. The draft says: "Find a source. Record its title and date. Apply the rule. Review the decision whenever a new edition appears." Its sequence names the activities but leaves their connection unexplained.
+
+The author follows the required decision back through the material. A source is useful here because a particular claim, under stated conditions, contributes to the decision. Its title and date enable recovery of that claim. A later edition matters through a change to that contribution. This dependence gives the common account its organizing ground. The author writes:
+
+> Begin with the question the decision must answer and recover the source claim that can contribute to it. Establish whether the claim's conditions hold for this use, then make its effect on the decision explicit. Keep enough source identity to recover that basis. When the source changes, compare the used claim, its conditions and limitations; reconsider the decisions whose grounds are affected. An already adequate source or unchanged contribution can continue to serve its existing use.
+
+That paragraph changes the organization of the three chapters. Selection now returns a qualified contribution to a question. Reuse explains how that contribution enters the decision. Refresh follows the resulting dependence, returning to selection when a usable source is lost or to application when its conditions change. Each chapter can still serve an independently arising question. Their common account explains how their results connect.
+
+The author distributes the remaining content by function. The Problem explains why a title and date can coexist with an unsupported decision. The Solution supplies the operations and their returns. The Rationale compares dependence-based refresh with redoing every source-based decision after any edition change, including the cost and the risk of overlooking an affected use. Grounding shows an actual dependence; the Conformance Checklist asks whether the used claim, applicability and affected decision can be recovered. These functions guide what is written, rather than providing places for repeated assurances that the account is complete.
+
+In the constructed case, a handbook's rule sets a maximum reporting interval of seven days, and a team has chosen weekly reporting on that basis. One new edition changes the chapter title while preserving the rule and its conditions; the common account leads the author to retain the decision and update its recovery route. Another edition shortens the applicable maximum to five days; the author shows the reviewer returning the weekly decision for revision. The difference supplies the reason for selective refresh and explains which earlier contributions remain useful.
+
+Suppose the commission expands to recommendations whose suitability also depends on the recipient's preferences. The current source account leaves that additional ground implicit. The author adds the recipient's objective and preference to the common decision basis and connects their change to the relevant reconsideration. Merely adding a fourth chapter called "preferences" would leave the return unexplained. The existing source-recovery operations remain usable, while the expanded account makes another condition of reliance explicit.
+
+#### E.8:5.2 - Keep expression, organization and evidence in their roles
+
+The date-conversion repair in section 4.2.1.2 shows a different authoring choice: how to preserve an operation, its conditions and a return to fuller explanation when changing the reading arrangement. Use that case for the form-and-access question and section 5.1 for construction of a common account and its constituent explanations. Their different contributions follow the authoring work the reader needs.
+
+Small subject sentences can illustrate density without jargon: "The pump casing seals at this face" names the relevant action and location; "The claim states its predicates explicitly" names an epistemic subject and its property. Their role is to illustrate expression. The organizing explanation and performed authoring choices in section 5.1 carry the larger construction.
+
+An individual pattern uses the canonical sections and required `:End` sentinel. A whole-framework account uses the publication arrangement in E.11.PFP:4.7 while answering the relevant content questions. For a claim about **F (Formality)**, use C.2.3 and state the expression-rigor criterion it satisfies.
 
 ### E.8:6 - Bias-Annotation
 Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: **Universal** for the authoring conventions in this pattern.
@@ -706,8 +682,8 @@ Passing a Conformance Checklist supports the selected conformance claims, not a 
 | **CC-SG.0 (Heading discipline).** | Pattern and subsection headings **SHALL** follow **H-1 … H-9** (FullId prefix, reserved punctuation, heading levels, ellipsis discipline). The Footer marker **SHALL** follow **H-9**. | Makes chunks self-contained; reduces ambiguity between author elision and retrieval truncation. |
 | **CC-SG.1** | Every new pattern **SHALL** follow the section order defined in the Canonical Template (Title block -> … -> Footer marker). | Guarantees structural comparability. |
 | **CC-SG.1a (Initial pattern draft shape).** | The first non-empty authored version of a pattern **SHALL** already use the canonical section frame (Title block -> Footer marker). Authors **MUST NOT** start from one pre-template opening memo and promise to backfill canonical sections later. | Prevents large late-stage structural rewrites and keeps drafting aligned with `E.8` from the first substantive pass. |
-| **CC-SG.2 (Grounding required).** | Every pattern **MUST** include an *Archetypal Grounding* section with at least one content-bearing Tell, Show, reduced grounding case, or ordinary/non-use boundary. A placeholder saying that grounding is absent is nonconforming. | Keeps patterns teachable and reduces "definition-only" ambiguity. |
-| **CC-SG.3** | The *Bias-Annotation* section **SHALL** cite the five Principle-Taxonomy lenses and declare either “Universal” or an explicit scope limitation. | Keeps cross-disciplinary neutrality explicit (ties to Guard-Rail 4). |
+| **CC-SG.2 (Grounding required).** | Every pattern **MUST** include content-bearing *Archetypal Grounding*. Apply §4.2.1.3 to connect its cases or demonstrations to the explained relations and to supply the material variation required by the declared use. A reduced case or ordinary/non-use boundary can serve a bounded grounding question; the complete explanation still supplies its common grounds and the correspondences needed for its promised scope. An omission placeholder is nonconforming. | Makes the subject and its applications inspectable without treating a section or fixed example count as sufficient grounding. |
+| **CC-SG.3** | The *Bias-Annotation* section **SHALL** state the material result of the five-lens examination under `E.5.4`, including any justified weighting or scope limitation. | Keeps the actual cross-disciplinary conclusion explicit. |
 | **CC-SG.4** | Deontic normative sentences **MUST** use only RFC-style keywords (see **H-8**); RFC keywords **MUST NOT** appear inside `Definition:`/`Invariant:`/`Well-formedness constraint:` blocks. When enforceable, admissibility/validity predicates **SHOULD** be referenced by id from the Conformance Checklist (rather than duplicated as “X MUST …”). Informal deontic verbs are prohibited in normative clauses. | Prevents ambiguity between obligation language and model validity; improves auditability. |
 | **CC-SG.5** | Pattern prose **SHOULD** demonstrate adherence to Style Principles **S-0 … S-19**; reviewers are empowered to request revision when clarity or didactic quality suffers. | Embeds common narrative voice without rigid policing. |
 | **CC-SG.6 (SoTA-Echo required).** | Every pattern **SHALL** include a **SoTA-Echoing** section. It names the practice question and either gives the smallest adequate best-known comparison or states an honest source gap. Architectural patterns **SHALL** use the full comparison contract below. A definitional pattern may use a reduced comparison, but it still names the ambiguity or terminology question, the best-known current line, the serious default it improves or rejects, and the pattern locus changed. Internal coherence, official status, or a current edition is not a substitute. | Keeps source use tied to the pattern's working problem and prevents an empty mandatory section from becoming a prestige shelf. |
@@ -740,8 +716,6 @@ Passing a Conformance Checklist supports the selected conformance claims, not a 
 
 ### E.8:8 - Common Anti-Patterns and How to Avoid Them
 
-These failure modes recur in drafts and in downstream application. They are predictable ways the Forces in this pattern get violated.
-
 | Anti-pattern | Symptom | Why it fails | How to avoid / repair |
 |-------------|---------|------------------------------|-----------------------|
 | **Template cargo-culting** | Headings exist, but the section is fragments, decorative bullets, or a table with no governing claim. | Satisfies Uniformity but loses Readability and Didactic Primacy. | State the governing claim and its practical consequence in ordinary prose; introduce a list or table only when that structure improves the reader's work, and apply `F.19` to its contribution and load. |
@@ -767,14 +741,12 @@ These failure modes recur in drafts and in downstream application. They are pred
 
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
-| **Predictable skeleton** – readers instantly know where to find the problem frame, forces, and criteria. | Limits author freedom in macro layout; mitigated by flexibility inside the Solution subsection. |
-| **Cohesive voice** – S‑principles give FPF a recognisable style, aiding memorability. | Reviewers must read for style, not only semantics; checklists reduce review effort. |
-| **Embedded pedagogy** – Tell-Show-Show and governing-claim flow make the spec self-teaching. | Patterns may become slightly longer; retain only material that improves comprehension or use. |
+| **Predictable structure** – the same named sections locate the problem frame, forces, and criteria. | Limits author freedom in macro layout; mitigated by flexibility inside the Solution subsection. |
+| **Cohesive voice** – S‑principles give authors common guidance for explaining their contributions. | Reviewers must judge readability as well as semantics; the checklist identifies recurring conformance questions. |
+| **Grounded explanation** – Tell-Show-Show and governing-claim flow connect the rule to its application. | Patterns may become slightly longer; retain only material that improves comprehension or use. |
 
 ### E.8:10 - Architectural Rationale
-Structure and style function as FPF’s *grammar*. By unifying what were
-once separate “template” and “style guide” patterns, authors face a
-single reference point that satisfies:
+The common structure and style principles serve:
 
 * **P‑1 Cognitive Elegance** – uniform, minimal surprises.
 * **P‑2 Didactic Primacy** – narrative flow, dual archetype examples.
@@ -784,7 +756,7 @@ A unified template also improves retrieval: a chunk containing `A.2:<n> - Bias�
 
 The ASCII ` - ` separator in H-2 keeps heading entry inexpensive: authors can type it directly on ordinary keyboards, and readers can reuse the same characters in search and plain-text tools. Typographic dash variants require an extra input or conversion step while adding no information to the boundary between an identifier and its title. Where a prose dash is useful, `--` is a keyboard-accessible option; the identifier/title separator remains ` - `.
 
-International and industry standards often speak in terms of *conformance criteria*. FPF uses the label **Conformance Checklist** to make adoption easier for engineers and managers.
+The **Conformance Checklist** groups the criteria for judging a pattern that claims conformance.
 
 ### E.8:11 - SoTA-Echoing *(normative; typed comparison to contemporary best-known practice)*
 

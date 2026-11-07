@@ -1,0 +1,17 @@
+## EXD.Reference:3 - Obtain and Carry the Subject Explanation
+
+Recover the account that supports the connection the recipient needs. It may be a mathematical definition and derivation, a causal finding, a Method account or a recommendation's rationale. Select its relevant claims while preserving answer-changing conditions, alternatives and limits. The minimum useful account can be very short.
+
+For the mean of a finite list, the subject basis is its sum divided by its count. If A has two values, 2 and 4, its sum is 6 and mean is 3. If B has six values of 8, its sum is 48 and mean is 8. Across individuals, the sum is 54 and the count is eight, giving 6.75. Giving the two group means equal weight instead gives 5.5. Both results have explicit rules; the recipient's task selects which question to answer.
+
+When a required connection lacks a warrant, state what is missing and which subject work could supply it. Relying on a causal claim requires an adequate subject basis. An unexplained recommendation needs its decisive premises, alternatives and conditions. A missing mathematical step needs its definition or derivation. An explanation can preserve a useful conditional answer while that input remains unresolved.
+
+Follow the proposed explanation from its answer back to the premises and operations needed to obtain it, then forward again. Locate the first consequential link that the material does not supply. Is the input absent, the operation unexplained, the inference unsupported, or the connection to the recipient's question missing? Use that difference to select the subject work. A clear description can reveal the gap; changing its layout cannot supply the missing operation or reason.
+
+For a Method account, A.3.2.DE:4.1 recovers what acts on which input, what result it obtains and why the action is warranted. C.39:4.2–4.5 develops a missing operation or join by working backward from the receiving result and forward through the proposed way. For a language of Methods, E.8.ML:4.1–4.4 explains how their independently useful results connect and why the architecture has those boundaries. Bring that constructed contribution back into the explanation, including the conditions that change its use; do not replace it with a pattern name.
+
+Other subjects need their own construction. RMP.2:4.4 turns a scientific question into an investigation that can distinguish proposed answers. PSDA.14:4.2–4.4 builds a recommendation from its premises, alternatives and comparison; PSDA.19 supplies the advising engagement's conditions. HCD.6, HCD.9 and HCD.10 supply representative instructional tasks, feedback and task-specific assistance. A.6.3.NAR connects supplied source relations when narrative rendering helps. Select the contribution actually missing rather than performing every listed Method.
+
+The research return can itself produce useful progress. For example, a research exercise can move from a puzzling observation to a question, two or three rival hypotheses, criticism before experiment and an initial report. Select further empirical work when its attainable contribution to the answer warrants its burden. The RMP methods qualify a research question, choose a design or sufficient-evidence stop, and revise the affected claims. Communicating an available account does not replace these subject contributions.
+
+This entry carries supplied subject results into explanation work. The six constructive Methods address the remaining explanatory difficulties.

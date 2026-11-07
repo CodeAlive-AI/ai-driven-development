@@ -1,0 +1,9 @@
+## RMP.Application:4 - APP-RMP-04 — Retain the Method and correct its research consequence
+
+A team has completed an analysis under a suitable Method, then finds an implementation error in its variance calculation. This constructed case begins with actual analysis and its recorded computation; it does not reopen question qualification or design merely to follow pattern order.
+
+Use the [completed RMP.9 calculation case](39-rmp-9-decide-whether-and-how-to-improve-research-methods-and.md#rmp951---correct-the-calculation-and-retain-the-method). For 2, 4, 6 and 8, the specified sample variance is 20/3, while the software's denominator gives 5. The Method and receiving conditions remain appropriate by the case premise.
+
+RMP.4 locates the affected computation and dependent material. RMP.9 retains the Method, identifies the implementation correction and calls for its bounded verification. RMP.5 recalculates the affected analysis. If the uncertainty changes an existing claim or its use, RMP.8 returns that precise consequence with the limitation the recipient needs. The correction can finish in the existing analysis record; unaffected studies and their results remain at their supported reach.
+
+A later change to dependent observations or the intended site-level quantity can raise a new Method-fit question. RMP.9 then compares the actual alternatives and whether useful evidence is attainable and worth obtaining. The [changed-situation case](39-rmp-9-decide-whether-and-how-to-improve-research-methods-and.md#rmp952---select-a-worthwhile-comparison-without-inventing-its-result) selects such a comparison under its stated premises; it does not supply a winning Method before the evidence exists. The receiving uncertainty claim remains restricted until its missing qualification is resolved.

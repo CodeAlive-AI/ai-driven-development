@@ -1,0 +1,11 @@
+## EXD.Reference:4 - A worked exchange and its consequential returns
+
+An analyst asks why the average of two branch means, 5.5, was rejected. The branches contain the eight observations just described. The report initially requires the mean across individual observations. Establishing that question with EXD.1 makes the required rule explicit.
+
+The analyst can add and divide but asks why the branch counts matter. EXD.2 constructs the instance: count multiplied by mean recovers each branch sum; add those sums and divide by the total count. EXD.3 can place count, mean and sum together in a table or retain a sufficient prose calculation. The warranted answer is 54/8 = 6.75, with the connection between aggregation and individual weighting exposed.
+
+Now the analyst says, “I want each branch to have equal influence regardless of its size.” EXD.4 treats this as a changed question. EXD.1 revises the selected weighting, and the explanation returns “Mean of branch means, each branch weighted equally: 5.5.” It retains 6.75 for the original question. Whether equal branch influence is the appropriate management policy remains a decision question. The exchange can close with both answers and their respective weighting rules.
+
+A different contribution needs a different move. If the analyst still intends equal weight per individual but divides the sum of the two branch means by two, the question has stayed fixed and the aggregation relation needs repair. If instructional use warrants a learner contribution, EXD.5 asks what the denominator counts, preserves the initial answer, supplies targeted feedback and uses a changed calculation as a retry. If dialogue is unavailable, the written explanation can state both weighting rules and the condition selecting each. An explicit choice need not be delayed by another clarification.
+
+EXD.6 can compare a proposed repair with the current explanation. Adding the missing sum relation changes the account; rearranging those same claims changes form; supplying a hint changes assistance. If the current account already lets the analyst use the distinction, retaining it is a useful result. The case is a worked construction with explicit arithmetic criteria. It supplies no observation about human attention, learning or a population effect.
