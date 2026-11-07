@@ -9,7 +9,8 @@ Checks:
   - one upstream commit in SKILL.md, README.md, README-RU.md and PATTERN-INDEX.md
   - every Core or DPF ID mentioned in SKILL.md resolves in PATTERN-INDEX.md
   - every domain framework (DPF) appears in SKILL.md Map B
-  - Core section counts in SKILL.md, README.md and README-RU.md match sections/
+  - SKILL.md stays within its reading budget (BUDGET_CHARS) and "When to use" within USE_BULLETS bullets
+  - Core section counts in README.md and README-RU.md match sections/
   - "N domain frameworks" in SKILL.md and README.md, "N доменных" in README-RU.md match dpfs/
   - every local link and path in SKILL.md exists; every file in PATTERN-INDEX.md exists
 Standard library only.
@@ -26,6 +27,11 @@ INDEX = SKILL_DIR / "PATTERN-INDEX.md"
 ROW_RE = re.compile(r"^\| ([^|]+?) \| ([^|]*?) \| ([^|]+?) \| ([^|]+?) \|$")
 TOKEN_RE = re.compile(r"(?<![\w./-])([A-Z][A-Za-z]*(?:\.[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)+(?::[A-Za-z0-9.]+)?)")
 SHA_RE = re.compile(r"\b[0-9a-f]{40}\b")
+# SKILL.md is loaded whole on every use; past ~30-36k characters a single read is cut off
+# (Claude Code's Bash output stops at 30,000). Growth came from one use-case bullet or one row per new
+# pattern, so the budget makes the sync condense instead of append.
+BUDGET_CHARS = 36_000
+USE_BULLETS = 10
 
 problems: list[str] = []
 
@@ -145,13 +151,13 @@ def section_counts() -> dict[str, int]:
     return counts
 
 
-def check_core_table(name: str, lines: list[str], counts: dict[str, int], link_required: bool) -> None:
+def check_core_table(name: str, lines: list[str], counts: dict[str, int]) -> None:
     found = set()
     for n, line in enumerate(lines, 1):
         m = re.match(r"^\| (\d\d) \| (.+?) \| (\d+) \|", line)
         if not m:
             continue
-        num, cell, count = m.group(1), m.group(2), int(m.group(3))
+        num, count = m.group(1), int(m.group(3))
         found.add(num)
         if num not in counts:
             problem(f"{name}:{n}", f"section {num} is not in sections/", "remove the row or regenerate sections/")
@@ -159,12 +165,24 @@ def check_core_table(name: str, lines: list[str], counts: dict[str, int], link_r
         if count != counts[num]:
             problem(f"{name}:{n}", f"section {num} says {count} files, sections/ has {counts[num]}",
                     f"set the count to {counts[num]}")
-        link = re.search(r"\]\((sections/[^)]+)\)", cell)
-        if link_required and (not link or not (SKILL_DIR / link.group(1)).is_file()):
-            problem(f"{name}:{n}", f"section {num} link is missing or broken", "link sections/<folder>/_index.md")
     for num in counts:
         if num not in found:
             problem(name, f"Core section {num} has no row", f"add a row for sections/{num}-…")
+
+
+def check_budget(text: str) -> None:
+    if len(text) > BUDGET_CHARS:
+        problem("SKILL.md", f"{len(text)} characters, budget {BUDGET_CHARS}",
+                "condense instead of appending: name a pattern family (find_pattern.py lists its members) rather than "
+                "each member, merge rows that serve one need, keep per-pattern detail in the pattern files")
+    m = re.search(r"^## When to use\n(.*?)(?=^## )", text, re.S | re.M)
+    if not m:
+        problem("SKILL.md", "no '## When to use' section", "keep a short '## When to use' list of broad situations")
+    else:
+        bullets = len(re.findall(r"^- ", m.group(1), re.M))
+        if bullets > USE_BULLETS:
+            problem("SKILL.md When to use", f"{bullets} bullets, at most {USE_BULLETS}",
+                    "extend an existing bullet with the new kind of use; a new pattern goes into its map row, not here")
 
 
 def check_framework_count(name: str, text: str, actual: int, pattern: str) -> None:
@@ -209,10 +227,10 @@ def main() -> int:
     ids = check_ids(skill_lines, pats, pubs)
     mapped = check_map_b(skill_text, pubs)
     counts = section_counts()
-    check_core_table("SKILL.md", skill_lines, counts, link_required=True)
+    check_budget(skill_text)
     for name in ("README.md", "README-RU.md"):
         if (SKILL_DIR / name).is_file():
-            check_core_table(name, (SKILL_DIR / name).read_text(encoding="utf-8").splitlines(), counts, link_required=False)
+            check_core_table(name, (SKILL_DIR / name).read_text(encoding="utf-8").splitlines(), counts)
     check_framework_count("SKILL.md", skill_text, mapped, r"(\d+) domain frameworks")
     if (SKILL_DIR / "README.md").is_file():
         check_framework_count("README.md", (SKILL_DIR / "README.md").read_text(encoding="utf-8"), mapped, r"(\d+) domain frameworks")
@@ -230,7 +248,8 @@ def main() -> int:
         print("\n".join(problems))
         return 1
     print(f"check_skill: OK — {ids} ID mentions resolve, {mapped} domain frameworks mapped, "
-          f"{len(counts)} Core sections counted, {len(pats)} patterns indexed, upstream {sha[:12]}")
+          f"{len(counts)} Core sections counted, {len(pats)} patterns indexed, SKILL.md {len(skill_text)}/{BUDGET_CHARS} "
+          f"characters, upstream {sha[:12]}")
     return 0
 
 

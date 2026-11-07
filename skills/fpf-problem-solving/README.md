@@ -23,9 +23,10 @@ reasoner.
    question to its domain framework. Map C maps frequent troubles in work with an agent — hedging
    instead of judgment, a lost original question, resuming after a handoff, look-alike options — to the
    pattern that addresses them, following Anatoly Levenchuk's cheatsheet of frequently used patterns.
-3. **Resolution.** `scripts/find_pattern.py <ID>` resolves a PatternID, a section reference
-   (`HCD.12:4.1`) or a DocID to its local file and section map; `--search <words>` finds patterns by
-   title, keywords and queries.
+3. **Resolution.** `scripts/find_pattern.py <ID>` resolves a PatternID or a section reference
+   (`HCD.12:4.1`) to a card — when to use the pattern and when not to, its family, its file and section
+   map; several IDs give one card each, to choose between them. A DocID lists the framework's entries
+   (situation → start with) and patterns; `--search <words>` ranks entries, titles and keywords.
 4. **Reading.** The agent opens the narrowest file: Problem frame and Solution first, then the
    Conformance Checklist to check its own result, and stops at the first useful result.
 
@@ -38,6 +39,14 @@ references can be followed offline.
 ```bash
 npx skills add CodeAlive-AI/fpf-problem-solving-skill -g
 ```
+
+## Example prompt
+
+> Use the FPF skill. Help me structure my project / problem / programme.
+> Use plain language for an engineer-manager.
+> Propose: (1) bounded contexts / specialisations, (2) decision criteria, (3) key alternatives,
+> (4) hand-offs, and (5) missing evidence or tests before commitment.
+> Introduce internal FPF names only when they add precision.
 
 ## Structure
 
