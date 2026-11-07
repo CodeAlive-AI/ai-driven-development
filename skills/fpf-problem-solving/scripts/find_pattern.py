@@ -291,7 +291,7 @@ class Library:
                 for e in entries:
                     print(f"    L{e.line:<5} {short(e.name, 92)} → {', '.join(e.starts[:5])}")
         if docid == "FPF":
-            print("  Core parts (read a folder's _index.md, or route by SKILL.md Map A):")
+            print("  Core parts (read a folder's _index.md, or route by Map A in references/core-router.md):")
             for d in sorted(p for p in (SKILL_DIR / "sections").iterdir() if p.is_dir()):
                 count = len([f for f in d.iterdir() if f.suffix == ".md" and f.name != "_index.md"])
                 print(f"    sections/{d.name}/  ({count} files)")

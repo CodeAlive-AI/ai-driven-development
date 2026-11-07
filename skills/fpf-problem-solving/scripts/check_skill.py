@@ -7,12 +7,14 @@ Run after scripts/split_spec.py. It changes nothing; it lists each problem with 
 Checks:
   - SKILL.md frontmatter: only name and description; description at most 1024 characters, no < or >
   - one upstream commit in SKILL.md, README.md, README-RU.md and PATTERN-INDEX.md
-  - every Core or DPF ID mentioned in SKILL.md resolves in PATTERN-INDEX.md
+  - every Core or DPF ID mentioned in SKILL.md and references/core-router.md (Map A) resolves
   - every domain framework (DPF) appears in SKILL.md Map B
-  - SKILL.md stays within its reading budget (BUDGET_CHARS) and "When to use" within USE_BULLETS bullets
+  - every Map A group and row need in references/core-router.md is named in the SKILL.md Map A overview
+  - SKILL.md body stays within BUDGET_TOKENS (characters / 4, the skills-management estimate) and
+    "When to use" within USE_BULLETS bullets
   - Core section counts in README.md and README-RU.md match sections/
   - "N domain frameworks" in SKILL.md and README.md, "N доменных" in README-RU.md match dpfs/
-  - every local link and path in SKILL.md exists; every file in PATTERN-INDEX.md exists
+  - every local link and path in SKILL.md and the router exists; every file in PATTERN-INDEX.md exists
 Standard library only.
 """
 
@@ -27,10 +29,12 @@ INDEX = SKILL_DIR / "PATTERN-INDEX.md"
 ROW_RE = re.compile(r"^\| ([^|]+?) \| ([^|]*?) \| ([^|]+?) \| ([^|]+?) \|$")
 TOKEN_RE = re.compile(r"(?<![\w./-])([A-Z][A-Za-z]*(?:\.[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*)+(?::[A-Za-z0-9.]+)?)")
 SHA_RE = re.compile(r"\b[0-9a-f]{40}\b")
-# SKILL.md is loaded whole on every use; past ~30-36k characters a single read is cut off
-# (Claude Code's Bash output stops at 30,000). Growth came from one use-case bullet or one row per new
-# pattern, so the budget makes the sync condense instead of append.
-BUDGET_CHARS = 36_000
+ROUTER = SKILL_DIR / "references" / "core-router.md"
+# SKILL.md is loaded whole on every use, so its body is held near 4,000 tokens (skills-management
+# estimates characters / 4 and penalises above 4,000); Map A lives in references/core-router.md and is
+# read only for a general thinking need. Growth came from one use-case bullet or one row per new pattern,
+# so the budget makes the sync condense instead of append.
+BUDGET_TOKENS = 4_800
 USE_BULLETS = 10
 
 problems: list[str] = []
@@ -106,7 +110,7 @@ def check_frontmatter(text: str) -> None:
             problem("SKILL.md:3", "description contains < or >", "remove angle brackets")
 
 
-def check_ids(lines: list[str], pats: dict, pubs: dict) -> int:
+def check_ids(name: str, lines: list[str], pats: dict, pubs: dict) -> int:
     known = {"FPF", "Library"} | {d for d in pubs} | set("ABCDEFGHIJK")
     seen = 0
     for n, line in enumerate(lines, 1):
@@ -121,7 +125,7 @@ def check_ids(lines: list[str], pats: dict, pubs: dict) -> int:
             pieces = [p for p in token.split("-") if TOKEN_RE.fullmatch(p)]
             if len(pieces) > 1 and all(resolves(p, pats, pubs) for p in pieces):
                 continue  # a range such as A.17-A.19
-            problem(f"SKILL.md:{n}", f"ID {token} does not resolve in PATTERN-INDEX.md",
+            problem(f"{name}:{n}", f"ID {token} does not resolve in PATTERN-INDEX.md",
                     f"run `python3 scripts/find_pattern.py {token}` for nearby IDs (upstream may have renamed it), then fix or remove it")
     return seen
 
@@ -170,11 +174,17 @@ def check_core_table(name: str, lines: list[str], counts: dict[str, int]) -> Non
             problem(name, f"Core section {num} has no row", f"add a row for sections/{num}-…")
 
 
+def body_tokens(text: str) -> int:
+    m = re.match(r"^---\n.*?\n---\n", text, re.S)
+    return len(text[m.end():] if m else text) // 4
+
+
 def check_budget(text: str) -> None:
-    if len(text) > BUDGET_CHARS:
-        problem("SKILL.md", f"{len(text)} characters, budget {BUDGET_CHARS}",
-                "condense instead of appending: name a pattern family (find_pattern.py lists its members) rather than "
-                "each member, merge rows that serve one need, keep per-pattern detail in the pattern files")
+    tokens = body_tokens(text)
+    if tokens > BUDGET_TOKENS:
+        problem("SKILL.md", f"body is about {tokens} tokens, budget {BUDGET_TOKENS}",
+                "condense instead of appending: put Core routing in references/core-router.md, name a pattern family "
+                "(find_pattern.py lists its members) rather than each member, merge rows that serve one need")
     m = re.search(r"^## When to use\n(.*?)(?=^## )", text, re.S | re.M)
     if not m:
         problem("SKILL.md", "no '## When to use' section", "keep a short '## When to use' list of broad situations")
@@ -185,6 +195,34 @@ def check_budget(text: str) -> None:
                     "extend an existing bullet with the new kind of use; a new pattern goes into its map row, not here")
 
 
+def check_router(skill_text: str) -> int:
+    """Map A rows live in the router; the SKILL.md overview must name each group and each row's need."""
+    if not ROUTER.is_file():
+        problem("references/core-router.md", "file is missing", "restore Map A from git; SKILL.md Step 0 sends general needs there")
+        return 0
+    start, end = skill_text.find("### Map A"), skill_text.find("### Map B")
+    overview = skill_text[start:end].lower() if 0 <= start < end else ""
+    if not overview:
+        problem("SKILL.md", "Map A overview is missing", "keep a '### Map A' section before '### Map B' listing the router's groups and needs")
+        return 0
+    if "references/core-router.md" not in overview:
+        problem("SKILL.md Map A", "overview does not link the router", "link [references/core-router.md](references/core-router.md)")
+    rows = 0
+    for n, line in enumerate(ROUTER.read_text(encoding="utf-8").splitlines(), 1):
+        g = re.match(r"^## (A\d+)\. (.+?) —", line)
+        if g and f"{g.group(1).lower()}. {g.group(2).lower()}" not in overview:
+            problem(f"core-router.md:{n}", f"group {g.group(1)} is not in the SKILL.md overview",
+                    f"add '**{g.group(1)}. {g.group(2)}** — <its needs>' to the SKILL.md Map A overview")
+        r = re.match(r"^\| \*\*(.+?)\*\*", line)
+        if r:
+            rows += 1
+            need = re.sub(r"\s+", " ", r.group(1)).strip(" /").lower()
+            if need not in overview:
+                problem(f"core-router.md:{n}", f"row need '{r.group(1)}' is not named in the SKILL.md Map A overview",
+                        "add it, in a few words, to its group's line in the overview")
+    return rows
+
+
 def check_framework_count(name: str, text: str, actual: int, pattern: str) -> None:
     for m in re.finditer(pattern, text):
         if int(m.group(1)) != actual:
@@ -193,18 +231,18 @@ def check_framework_count(name: str, text: str, actual: int, pattern: str) -> No
                     f"change the number to {actual}")
 
 
-def check_links(lines: list[str]) -> None:
+def check_links(name: str, lines: list[str], base: Path) -> None:
     for n, line in enumerate(lines, 1):
         for target in re.findall(r"\]\(([^)\s]+)\)", line):
             if re.match(r"^[a-z]+:", target) or target.startswith("#"):
                 continue
-            if not (SKILL_DIR / target.split("#")[0]).exists():
-                problem(f"SKILL.md:{n}", f"link {target} does not exist", "fix the path (paths are relative to the skill directory)")
-        for path in re.findall(r"`((?:sections|dpfs|library|scripts)/[^`\s]+|PATTERN-INDEX\.md)`", line):
+            if not (base / target.split("#")[0]).exists():
+                problem(f"{name}:{n}", f"link {target} does not exist", "fix the path (links are relative to the file)")
+        for path in re.findall(r"`((?:sections|dpfs|library|scripts|references)/[^`\s]+|PATTERN-INDEX\.md)`", line):
             if "<" in path or "…" in path:
                 continue
             if not (SKILL_DIR / path).exists():
-                problem(f"SKILL.md:{n}", f"path {path} does not exist", "fix the path or regenerate the library")
+                problem(f"{name}:{n}", f"path {path} does not exist", "fix the path (relative to the skill directory) or regenerate the library")
 
 
 def main() -> int:
@@ -224,7 +262,10 @@ def main() -> int:
             problem(name, f"upstream commit {sorted(shas) or 'none'} differs from PATTERN-INDEX.md {sha}",
                     f"write the upstream commit as `{sha}`")
 
-    ids = check_ids(skill_lines, pats, pubs)
+    ids = check_ids("SKILL.md", skill_lines, pats, pubs)
+    router_lines = ROUTER.read_text(encoding="utf-8").splitlines() if ROUTER.is_file() else []
+    ids += check_ids("core-router.md", router_lines, pats, pubs)
+    rows = check_router(skill_text)
     mapped = check_map_b(skill_text, pubs)
     counts = section_counts()
     check_budget(skill_text)
@@ -236,7 +277,8 @@ def main() -> int:
         check_framework_count("README.md", (SKILL_DIR / "README.md").read_text(encoding="utf-8"), mapped, r"(\d+) domain frameworks")
     if (SKILL_DIR / "README-RU.md").is_file():
         check_framework_count("README-RU.md", (SKILL_DIR / "README-RU.md").read_text(encoding="utf-8"), mapped, r"(\d+) доменн")
-    check_links(skill_lines)
+    check_links("SKILL.md", skill_lines, SKILL_DIR)
+    check_links("core-router.md", router_lines, ROUTER.parent)
     missing = [p for _, p, _ in pats.values() if not (SKILL_DIR / p).is_file()]
     missing += [p for _, p, _ in pubs.values() if not (SKILL_DIR / p).is_file()]
     if missing:
@@ -247,9 +289,9 @@ def main() -> int:
         print(f"check_skill: {len(problems)} problem(s); nothing was changed.")
         print("\n".join(problems))
         return 1
-    print(f"check_skill: OK — {ids} ID mentions resolve, {mapped} domain frameworks mapped, "
-          f"{len(counts)} Core sections counted, {len(pats)} patterns indexed, SKILL.md {len(skill_text)}/{BUDGET_CHARS} "
-          f"characters, upstream {sha[:12]}")
+    print(f"check_skill: OK — {ids} ID mentions resolve, {mapped} domain frameworks mapped, {rows} Map A rows "
+          f"in the overview, {len(counts)} Core sections counted, {len(pats)} patterns indexed, SKILL.md body "
+          f"~{body_tokens(skill_text)}/{BUDGET_TOKENS} tokens, upstream {sha[:12]}")
     return 0
 
 

@@ -50,11 +50,12 @@ attribution in SKILL.md and both READMEs accurate.
 
 - frontmatter: only `name` and `description`; description at most 1024 characters, no angle brackets;
 - one upstream commit in SKILL.md, README.md, README-RU.md and PATTERN-INDEX.md;
-- every Core or DPF ID mentioned in SKILL.md resolves (a renamed pattern shows up here — use
-  `python3 scripts/find_pattern.py <old ID>` for nearby IDs);
+- every Core or DPF ID mentioned in SKILL.md and `references/core-router.md` resolves (a renamed pattern
+  shows up here — use `python3 scripts/find_pattern.py <old ID>` for nearby IDs);
 - every domain framework appears in Map B;
-- SKILL.md stays within its reading budget (36,000 characters) and "When to use" within ten bullets —
-  when either is exceeded, condense instead of appending (see section 2);
+- every Map A group and row need in `references/core-router.md` is named in the SKILL.md Map A overview;
+- the SKILL.md body stays within 4,800 tokens (characters / 4, the skills-management estimate) and "When
+  to use" within ten bullets — when either is exceeded, condense instead of appending (see section 2);
 - Core counts in both README tables match `sections/`;
 - "N domain frameworks" (and "N доменных" in README-RU) match `dpfs/`;
 - local links and paths in SKILL.md exist; every file listed in PATTERN-INDEX.md exists.
@@ -81,7 +82,7 @@ to sixty entries before; the checker now caps it.)
 | Map | What it routes | How to maintain |
 |---|---|---|
 | **Step 0** | how FPF came up → which map | Stable; change only when a new way of entering FPF appears. |
-| **Map A — Core router** | thinking need → Core section and patterns, in five groups (model the subject; reason, evaluate, decide; obtain results and improve work; architecture and structure; express, publish, sources) | Route a new Core pattern through the existing row of its thinking need; add a row only for a distinct need, in the group it belongs to. Put the usual starting pattern first in the cell. When a family grows, name the family (`find_pattern.py <ID>` lists its members with titles) instead of every member. |
+| **Map A — Core router** (`references/core-router.md`; SKILL.md keeps an overview) | thinking need → Core section and patterns, in five groups (model the subject; reason, evaluate, decide; obtain results and improve work; architecture and structure; express, publish, sources) | Route a new Core pattern through the existing row of its thinking need; add a row only for a distinct need, in the group it belongs to, and name that need in the group's line of the SKILL.md overview (the checker enforces it). Put the usual starting pattern first in the cell. When a family grows, name the family (`find_pattern.py <ID>` lists its members with titles) instead of every member. |
 | **Map B — Domain frameworks** | field question → DPF DocID | Every DPF must be listed (the checker enforces it). Add a new DPF to its Suite row or to the standalone row that fits, with a few words on what it works on, taken from `dpfs/_index.md` or the Suite `_index.md`. |
 | **Map C — Common troubles** | a trouble as people notice it → the pattern to start with | Curated, not generated: it paraphrases Anatoly Levenchuk's cheatsheet of frequently used patterns. The first ID is the start; after `·` a cell may name a neighbouring case and its pattern. Name a pattern, not a bare DocID, when the framework's entries do not cover the trouble. Fix an ID when upstream renames it; add or remove rows only on the owner's request or a new edition of the cheatsheet. |
 
@@ -100,9 +101,10 @@ rows compete for one query, say in the cell which case each takes.
 
 ### Library layout
 
-A short table of entry points (PATTERN-INDEX, Core folders, DPF catalogue, Suite and framework indexes,
-Library documents). Change it only when the generated layout changes. The Core sections table with
-counts lives in the READMEs; SKILL.md routes through Map A instead.
+A short paragraph of entry points (PATTERN-INDEX, Core folders, DPF catalogue, Suite and framework
+indexes, USING-FPF). Change it only when the generated layout changes. The Core sections table with counts
+lives in the READMEs; SKILL.md routes through Map A instead. The full license notice and list of changes
+live in the READMEs; SKILL.md keeps a short notice with the upstream commit.
 
 ### Composition guidance (Steps 1–4)
 

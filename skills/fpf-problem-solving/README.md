@@ -19,7 +19,8 @@ reasoner.
 
 1. **Entry.** `SKILL.md` Step 0 asks how FPF came up: a named pattern (`F.19`, `C.11.DUA`, `GOALS.7`),
    a familiar trouble, a question inside a field, or a general thinking need.
-2. **Three maps.** Map A routes a thinking need to Core patterns, in five groups. Map B routes a field
+2. **Three maps.** Map A (`references/core-router.md`, with an overview in `SKILL.md`) routes a thinking
+   need to Core patterns, in five groups. Map B routes a field
    question to its domain framework. Map C maps frequent troubles in work with an agent — hedging
    instead of judgment, a lost original question, resuming after a handoff, look-alike options — to the
    pattern that addresses them, following Anatoly Levenchuk's cheatsheet of frequently used patterns.
@@ -51,7 +52,8 @@ npx skills add CodeAlive-AI/fpf-problem-solving-skill -g
 ## Structure
 
 ```text
-SKILL.md            entry, maps A–C, reading rules
+SKILL.md            entry, Step 0, Maps B and C, Map A overview, reading rules
+references/         core-router.md — Map A: thinking need → Core patterns
 PATTERN-INDEX.md    every DocID and PatternID → local file (generated)
 sections/           FPF Core: one folder per part, one file per pattern; _index.md lists the files
 dpfs/               domain frameworks: dpfs/<suite>/<docid>/ or dpfs/<docid>/
