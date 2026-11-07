@@ -9,11 +9,11 @@
 
 **Use this when** someone requests implementation help, offers a service or sponsors a change, but the participants do not yet share a workable account of what that help must make possible. Also use it when a previously sensible agreement no longer fits the target, recipient, provider or available means.
 
-The first move is to ask for one receiving use: what should someone be able to do, on what occasion, and what contribution is missing now? Compare that use with the help being offered. A request for a course may concern learning, unavailable time, inaccessible material or a target that does not fit the work. A workshop is one possible contribution, not the purpose of every request.
+The first move is to ask for one receiving use: what should someone be able to do, on what occasion, and what contribution is missing now? Compare that use with the help being offered. A request for a course may concern learning, unavailable time, inaccessible material or a target that does not fit the work.
 
-The governed subject is the support undertaking: the bounded work and commitments through which help is provided. A note, conversation or service specification can describe it. The description is not itself the agreed commitment, permission or performed work.
+The governed subject is the support undertaking: the bounded work and commitments through which help is provided. A note, conversation or service specification can describe it.
 
-Use an adequate existing agreement directly. A routine request covered by a current service can end with its usable response. A legal contract, employment decision or professional authorization still needs its own qualified process; this Method does not create those powers.
+Use an adequate existing agreement directly. A routine request covered by a current service can end with its usable response. A legal contract, employment decision or professional authorization still needs its own qualified process.
 
 ### IS.1:2 - Problem
 
@@ -42,11 +42,11 @@ Recover a real receiving use, distinguish the help from the result, and make eac
 
 Ask the person requesting help to show a recent case or describe the next intended use. Recover the input, action, receiver and consequence. “Improve evidence practice” becomes more useful when it means “the reviewer can find which source edition supports this claim before recommending release”.
 
-Ask the intended performer what they currently do and where the proposed contribution would enter. Ask the receiver what makes the returned result useful or unusable. In a small self-directed use these can be the same person; do not invent separate roles merely to fill positions.
+Ask the intended performer what they currently do and where the proposed contribution would enter. Ask the receiver what makes the returned result useful or unusable. In a small self-directed use these can be the same person.
 
-Compare the accounts. A sponsor's requested training can be retained when the missing contribution is learning. If the performer already knows what to do but cannot access the source, the immediate undertaking can instead repair access. If the supposed benefit is disputed, obtain the legitimate target decision or open a bounded inquiry through IS.2. Do not conceal that disagreement in a broad service label.
+Compare the accounts. A sponsor's requested training can be retained when the missing contribution is learning. If the performer already knows what to do but cannot access the source, the immediate undertaking can instead repair access. If the supposed benefit is disputed, obtain the legitimate target decision or open a bounded inquiry through IS.2.
 
-Keep only the detail that can change the first work or its promised result. A complete map of every stakeholder is unnecessary when the receiving use and applicable rights are already clear.
+Keep only the detail that can change the first work or its promised result.
 
 #### IS.1:4.2 - Distinguish the promised result from the help
 
@@ -62,7 +62,7 @@ Then name the contribution the helper will supply. For example:
 | “Help us introduce the practice.” | Which local conditions, explanation, participation, trial, observation or revision work the helper supplies. |
 | “Make us independent.” | Which contributions the recipient must perform or arrange without this particular helper, and which continuing services remain legitimate dependencies. |
 
-These are examples, not a fixed service taxonomy. One undertaking can combine several contributions. Explain their connection rather than promise the combined result merely by listing them.
+One undertaking can combine several of these or other contributions. Explain how they work together to obtain the promised result.
 
 Check the helper's actual capability and access for the decisive operation. Subject competence can be obtained from another provider. The undertaking remains conditional when that provider has not agreed or the needed evidence cannot be obtained.
 
@@ -84,13 +84,13 @@ Name the minimum inputs and contributions needed for that result. Check that the
 
 Agree the limit of the first attempt and the conditions that change it. A short engagement can end with a repaired condition. A discovery engagement can end with a qualified question and an available next decision. A larger implementation promise needs IS.3's actual strategy and provision. Keep the conditions on the larger benefit explicit.
 
-Put the result where the parties can use it: an existing work note, service request or ordinary agreement can be sufficient. The required content is the receiving result, helper contribution, recipient contribution, effective decisions, protection and next change condition. A new form is not required.
+Put the result where the parties can use it: an existing work note, service request or ordinary agreement can be sufficient. The required content is the receiving result, helper contribution, recipient contribution, effective decisions, protection and next change condition.
 
 #### IS.1:4.5 - Reopen the agreement when its working basis changes
 
 When the target, provider, workload or recipient changes, ask which promise is affected. Preserve unaffected work. A new provider can change access and confidentiality without changing the target Method; a revised target can leave the same support relationship useful but require different expertise.
 
-Return a workable undertaking, adequate direct help, a revised request or a precise missing decision. If the required contribution cannot be supplied on acceptable terms, say which result remains unavailable and what would permit reconsideration. Do not leave the recipient with an unchanged promise and an implicit obligation to invent the missing means.
+Return a workable undertaking, adequate direct help, a revised request or a precise missing decision. If the required contribution cannot be supplied on acceptable terms, say which result remains unavailable and what would permit reconsideration.
 
 ### IS.1:5 - Archetypal Grounding
 
@@ -104,7 +104,7 @@ The parties rewrite the request:
 
 > For the next two eligible packages, make the current source available, make the challenge recipient and response clear, and observe whether the analysts can complete the check under those conditions. The support practitioner arranges and examines this attempt. The source owner repairs access. The manager authorizes the protected review interval. The technical lead retains the source-validity judgement and release authority.
 
-That is different from cancelling all learning. If the attempt exposes a missing recognition or comparison operation, the support practitioner returns that actual later-work demand to a qualified learning provider. The agreement no longer treats attendance as its first success condition.
+If the attempt exposes a missing recognition or comparison operation, the support practitioner returns that actual later-work demand to a qualified learning provider. The agreement no longer treats attendance as its first success condition.
 
 During the conversation, the manager asks for individual performance rankings from the same observations. The helper explains that the bounded attempt was designed to diagnose support conditions, not compare people. The manager either obtains a separately suitable assessment or retains the original purpose. The helper does not silently repurpose the records.
 
@@ -112,9 +112,9 @@ During the conversation, the manager asks for individual performance rankings fr
 
 A self-employed translator is introducing a workflow that checks consequential technical terms before delivery. They can compare the source and translation but cannot decide several specialized meanings. The missing contribution is an obtainable qualified judgement at the review point, not a general lack of willingness to learn.
 
-The translator and a specialist agree which questions need review, the source material, confidentiality conditions, response time and how an unresolved term returns before delivery. The specialist supplies the subject judgements; the translator uses them in the workflow and retains the responsibility for the translation. This makes the intended review practice possible without pretending that the translator has acquired the specialty.
+The translator and a specialist agree which questions need review, the source material, confidentiality conditions, response time and how an unresolved term returns before delivery. The specialist supplies the subject judgements; the translator uses them in the workflow and retains the responsibility for the translation. This makes the intended review practice possible.
 
-The bounded support undertaking can end once those contributions can be obtained and used on the required project. If an adequate existing review service already supplies all of them, the translator can simply commission that result; no separate implementation undertaking or learning programme is needed. Repeated later work can justify reconsidering continued provision or personal acquisition, but does not decide that choice in advance.
+The bounded support undertaking can end once those contributions can be obtained and used on the required project. If an adequate existing review service already supplies all of them, the translator can simply commission that result. Repeated later work can justify reconsidering continued provision or personal acquisition, but does not decide that choice in advance.
 
 #### IS.1:5.3 - A capable AI lacks authority for one required contribution
 
@@ -126,7 +126,7 @@ The useful return separates available preparation from the missing agreement. Th
 
 A provider can interpret every request as demand for its standard service. A sponsor can speak as though their own benefit represents every participant's interest. Counter both by recovering the receiving episode with those who perform and use the work, and by comparing the proposed help with the contribution the episode actually needs.
 
-The examples emphasize professional services. In a personal use, the same questions can be settled by one person without a contract, meeting or role map.
+The examples emphasize professional services. In a personal use, the same questions can be settled by one person.
 
 ### IS.1:7 - Conformance Checklist
 
@@ -157,11 +157,11 @@ The cost is some early inquiry and explicit negotiation. Keep it proportionate: 
 
 A support undertaking is the working connection between a recipient's need and the help actually obtainable. Starting from it prevents a service label from selecting the intervention in advance.
 
-The Method preserves different relations rather than forcing them into one helper–client hierarchy. The same performer can hold several responsibilities; several providers can jointly supply the result. What matters is whether the contribution and decision are effective under the actual conditions.
+The Method preserves different relations. The same performer can hold several responsibilities; several providers can jointly supply the result. What matters is whether the contribution and decision are effective under the actual conditions.
 
 ### IS.1:11 - SoTA-Echoing
 
-The practice question is how to start useful help when expectations and responsibilities differ. The implementation-support guide's co-design and role-tension material informs involving recipients and making support conditions explicit. Its human-service setting does not establish a universal contract model.
+The practice question is how to start useful help when expectations and responsibilities differ. The implementation-support guide's co-design and role-tension material informs involving recipients and making support conditions explicit.
 
 [LDR.4](../management-dpf-suite/ldr/10-ldr-4---prepare-a-proposal-for-decision-and-first-use.md) supplies the developed route from discussion and objection through an effective decision and first useful work. Use that contribution when preparation for joint work is the actual problem. IS.1 connects help to the recipient's undertaking across settings, including a recipient who wants expert execution rather than personal acquisition.
 
@@ -171,6 +171,6 @@ A stable standard service with already agreed rights and inputs is a serious sim
 
 IS.2 supplies a response when the receiving difficulty is not yet understood. IS.3 supplies the selected strategy and its provision. A.3.1.MI returns what happened and what its observations change. IS.5 handles continuing dependence, transfer and closure.
 
-MKT.11 is a supplier when a commercial service promise must become feasible; [OCE.6 (OCE.6:4)](../management-dpf-suite/oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md#oce64---solution) supplies effective organizational assignments and enabling relations; [LDR.4 (LDR.4:4)](../management-dpf-suite/ldr/10-ldr-4---prepare-a-proposal-for-decision-and-first-use.md#ldr44---solution) supplies preparation for decision and first use. HCD supplies a human-development result when acquisition is promised. C.39 supplies construction of the target or support Method when its operations or qualification remain open. These are direct professional returns, not automatic extra engagements.
+MKT.11 is a supplier when a commercial service promise must become feasible; [OCE.6 (OCE.6:4)](../management-dpf-suite/oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md#oce64---solution) supplies effective organizational assignments and enabling relations; [LDR.4 (LDR.4:4)](../management-dpf-suite/ldr/10-ldr-4---prepare-a-proposal-for-decision-and-first-use.md#ldr44---solution) supplies preparation for decision and first use. HCD supplies a human-development result when acquisition is promised. C.39 supplies construction of the target or support Method when its operations or qualification remain open.
 
 ### IS.1:End

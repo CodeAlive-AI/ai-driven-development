@@ -184,8 +184,6 @@ For the intended flow use, examine whether:
 5. Missing terms and uncertain inputs are exposed where they affect the result.
 6. A valuation or decision claim uses the further method and evidence it requires.
 
-A generated schedule demonstrates the calculation under its inputs. It does not establish valid formation, future performance or financial suitability.
-
 ### FDM.3:8 - Common Anti-Patterns and How to Avoid Them
 
 **Using principal as the maturity payment.** Recover the amount's contractual meaning and derive the payment from the terms.

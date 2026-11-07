@@ -108,8 +108,6 @@ For the boundary's stated use, examine whether:
 4. An aggregate retains the necessary time, currency, restrictions and applicable composition rule.
 5. A claim of available funding has adequate support for timely usability, and unresolved premises remain visible.
 
-A correct membership list establishes the group under its criterion. It does not establish every financial conclusion someone might draw from that group.
-
 ### FDM.2:8 - Common Anti-Patterns and How to Avoid Them
 
 **Funding X by summing X and Y.** Recover the relation and event that make Y's resources usable for X's payment.

@@ -2,7 +2,7 @@
 
 IS.1 makes the support undertaking intelligible and workable. IS.2 locates the consequential difficulty and obtains the next useful contribution. IS.3 constructs the actual support strategy and its provision. A.3.1.MI performs and examines a bounded introduction, keeping target and support changes separate. IS.5 obtains continuing use, a qualified transfer, expansion or a responsible end. IS.6 makes knowledge from differently influential parties change the implementation; IS.7 acts on the practice–participants–context interaction; IS.8 develops recipients' subsequent facilitation work. A Method can use another's result where the work requires it.
 
-Their relations do not prescribe a lifecycle. A sufficient current arrangement can enter at A.3.1.MI. An inherited service can require only an IS.5 handover. A failed attempt can return directly to IS.2 or to the subject method's owner. Existing evidence can settle a question without another trial. Follow an ordinary path only while its next contribution is needed.
+A sufficient current arrangement can enter at A.3.1.MI. An inherited service can require only an IS.5 handover. A failed attempt can return directly to IS.2 or to the subject method's owner. Existing evidence can settle a question without another trial. Follow an ordinary path only while its next contribution is needed.
 
 **Long working mantra**
 

@@ -33,9 +33,9 @@ For each party, compare participation with its feasible alternative. Include the
 
 Follow the proposal through the complements needed to realize it. Name unresolved supplier, customer, performer or funding commitments for ECO.4. Identify materially affected nonparticipants and resource consequences. Consent between the prospective parties alone does not settle imposed costs or rights of others.
 
-#### ECO.3:4.3 - Test the contribution, then keep or change the proposal
+#### ECO.3:4.3 - Choose the next move from the available grounds
 
-Use the smallest attainable interaction that can change the next move: a discussion of terms, a matching offer, an illustrative sample, a conditional order or a limited use. A test has a purpose such as “can this party use the service in that window?” rather than “collect more evidence”. STR.7 helps decide whether such a test is worth its burden and how to bound it.
+Use current information and agreements for what they already establish. When an unresolved question can change the next move, obtain the smallest useful interaction: a discussion of terms, a matching offer, an illustrative sample, a conditional order or a limited use. State what its answer will settle, such as whether this party can use the service in that window. STR.7 helps decide whether such a test is worth its burden and how to bound it.
 
 If the proposal is understood but not attractive, change the combination or counterparties, or stop. If it is attractive but a contribution is unavailable, return that condition rather than announcing an exchange. If an adequate attainable agreement already exists, proceed using the ordinary operating and contractual methods.
 
@@ -71,7 +71,7 @@ Can each prospective party recognize its contribution, expected result and alter
 
 ### ECO.3:9 - Consequences
 
-A previously absent option can become available for later calculation, commitment and operating work. Failed proposals can yield useful knowledge. The method offers a way of constructing and checking an exchange; it cannot guarantee that one exists.
+A previously absent option can become available for later calculation, commitment and operating work. Failed proposals can yield useful knowledge. The method offers a way of constructing and checking an exchange.
 
 ### ECO.3:10 - Architectural Rationale
 

@@ -11,7 +11,7 @@
 
 Begin with one episode: what result was needed, what was understood and attempted, what was available, and where the receiver could no longer continue. Ask the performer to show the difficult point. A missing operation, inaccessible input, unavailable time and an unsuitable target call for different contributions.
 
-The governed subject is the implementation difficulty and the proposed response. An interview, observation or small comparison helps understand it; none is compulsory when a current qualified result already settles the action. The Method returns useful help or a request that can actually be fulfilled, not a taxonomy entry.
+The governed subject is the implementation difficulty and the proposed response. An interview, observation or small comparison helps understand it; none is compulsory when a current qualified result already settles the action. The Method returns useful help or a request that can actually be fulfilled.
 
 Use an adequate known response directly. When an unexpected result after an intervention needs explanation before adaptation, A.3.1.MI:4.5 supplies that developed comparison. When the question is already a human capability diagnosis or an organizational participation difficulty, use HCD.3 or OCE.10 rather than recreate their work.
 
@@ -63,7 +63,7 @@ State explanations as working claims about the episode. “The lookup route cann
 | Correct participation brings adverse consequences. | What actually follows the action, compared with the stated rule? | Obtain an effective change to those consequences; instruction alone is insufficient. |
 | A completed action returns no wanted value. | What did the receiver need, and what remained unresolved after completion? | Repair the contribution or reconsider the desired action. |
 
-The table is illustrative. Form another explanation when the case requires it. Several can survive: an unclear instruction and unavailable time can both matter. A determinant inventory can prompt a question, but its label supplies neither an operation nor a causal conclusion.
+The table is illustrative. Form another explanation when the case requires it. Several can survive: an unclear instruction and unavailable time can both matter. An available determinant inventory can prompt questions about the relevant operation and its grounds.
 
 Do not diagnose a person from silence or non-use. Ask for their account where it can be obtained appropriately. Refusal can reveal an unacceptable burden, a valid objection or a legitimate choice. When a clinical or specialist judgement is actually needed, return it to a qualified professional instead of extending implementation advice into that domain.
 
@@ -91,7 +91,7 @@ Choose the professional route from the question:
 - CB.12 supplies a wanted repeated participation action; CB.14 supplies a shared repertoire contribution when those are the actual problems.
 - RMP receives a research question when existing knowledge does not supply an adequate answer and its research conditions hold.
 
-These routes can supply the whole bounded response. Use the returned result, not another version of the same inquiry. A source or provider name alone is insufficient: recover what it returns, the conditions of use and the next recipient.
+These routes can supply the whole bounded response. Use the returned contribution with its conditions of use and next recipient.
 
 #### IS.2:4.5 - Make the returned contribution usable in the next episode
 
@@ -121,17 +121,17 @@ Continue the constructed Harbor Design case. The helper reconstructs three episo
 | A check through the usual shared portal | The needed revision was unavailable, and the analyst used an older one. | The portal condition is a concrete repair target. |
 | An early challenge with the correct revision | The manager deferred the challenge to preserve the release date; the analyst received an adverse response for delay. | Correct detection is insufficient while the receiving consequence defeats its use. |
 
-The helper does not average these into “low readiness”. The source owner repairs the portal; the responsible manager and technical lead settle how a legitimate concern reaches the release decision and how its time is provided. OCE.10 supplies that organizational response.
+The source owner repairs the portal; the responsible manager and technical lead settle how a legitimate concern reaches the release decision and how its time is provided. OCE.10 supplies that organizational response.
 
 Suppose the next supported episode succeeds with one analyst, while a second still cannot compare the two revisions. That different finding opens a bounded HCD question about the second analyst's operation. It does not retrospectively turn the portal failure into a learning defect.
 
-If the manager refuses the needed change, the helper reports that the promised early-challenge practice remains unsupported. The source repair can still be useful. Another workshop cannot be represented as closure of the unresolved organizational condition.
+If the manager refuses the needed change, the helper reports that the promised early-challenge practice remains unsupported. The source repair can still be useful.
 
 #### IS.2:5.2 - An independent carrier needs a different input, not a community
 
-A freelance repairer obtains a diagnostic procedure from a publisher. The new instrument exports a different identifier format, and the procedure's lookup fails. The repairer is not part of a practice community.
+A freelance repairer obtains a diagnostic procedure from a publisher. The new instrument exports a different identifier format, and the procedure's lookup fails.
 
-The support practitioner asks for an allowed sample and follows it through the lookup. A subject expert can map the new identifier unambiguously; the existing instruction assumed the older format. The immediate response is a qualified input adapter and an explanation of its boundary. No peer group, habit programme or personal learning diagnosis is necessary.
+The support practitioner asks for an allowed sample and follows it through the lookup. A subject expert can map the new identifier unambiguously; the existing instruction assumed the older format. The immediate response is a qualified input adapter and an explanation of its boundary.
 
 If two new identifiers map to the same older code, the mapping is no longer sufficient. That changed condition returns to the target Method and subject expert. The helper must not choose arbitrarily merely to keep the implementation moving.
 
@@ -139,7 +139,7 @@ If two new identifiers map to the same older code, the mapping is no longer suff
 
 A service's help link has moved, and users cannot reach the support page. Records do not distinguish whether each user forgot the old route or followed a broken bookmark. Restoring the correct route and communicating it is supported under both explanations.
 
-The local response can proceed without interviewing every user. If a later decision concerns reducing reminders, the memory and cue question becomes material then. The earlier limited diagnosis was not defective merely because it left that unrelated question unresolved.
+The local response can proceed on this basis. If a later decision concerns reducing reminders, the memory and cue question becomes material then.
 
 ### IS.2:6 - Bias-Annotation
 
@@ -183,7 +183,7 @@ The Method separates explanation from response selection. More than one explanat
 
 OCE.10 supplies a developed comparator: reconstruct a consequential gap, distinguish explanations, obtain the actual intervention and examine receiving use and burden. Its sanctions and workload distinctions are retained. HCD.3 supplies the human diagnosis when that is the question. A.3.1.MI:4.5 supplies the more demanding explanatory comparison after an implementation result.
 
-The pattern uses those whole Methods where their subject fits. Its distinct connection is from an implementation-help request across different receiving settings to an obtainable next contribution. A generic determinant catalogue remains a prompt for inquiry, not the diagnosis or prescription.
+The pattern uses those whole Methods where their subject fits. Its distinct connection is from an implementation-help request across different receiving settings to an obtainable next contribution.
 
 The simpler alternative is a known adequate response. Retaining it avoids spending participant time on uncertainty that cannot change the current action. Reopen when another episode defeats its premise or a stronger claim makes the unresolved distinction material.
 
@@ -191,6 +191,6 @@ The simpler alternative is a known adequate response. Retaining it avoids spendi
 
 IS.1 supplies the intended benefit and help boundary. IS.3 consumes the response when a support strategy remains to be constructed. A.3.1.MI returns failed entry, adaptations and later-work observations. IS.5 reopens diagnosis when transfer or continuation loses a necessary contribution.
 
-B.1.5.EW explains the constituent contribution in its encompassing work. C.11.DUA governs the worth of further inquiry. C.28 and RMP supply stronger causal or research work. The supplying HCD, OCE, CB and the Core Method-development family results remain professional contributions; this diagnosis does not certify them by naming them.
+B.1.5.EW explains the constituent contribution in its encompassing work. C.11.DUA governs the worth of further inquiry. C.28 and RMP supply stronger causal or research work.
 
 ### IS.2:End

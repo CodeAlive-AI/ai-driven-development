@@ -1,6 +1,6 @@
 ## ECO.Reference:8 - Source use and currentness
 
-The language is a conceptual synthesis. Historical sources identify mechanisms and disagreements; later research sharpens particular questions. Source prestige and school membership do not settle whether an operation fits the current situation.
+The language is a conceptual synthesis. Historical sources identify mechanisms and disagreements; later research sharpens particular questions.
 
 | Source line | Adopted contribution and limit |
 | --- | --- |

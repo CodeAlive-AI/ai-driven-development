@@ -28,7 +28,7 @@ Inviting everyone to a meeting can leave the original distribution of influence 
 
 Follow one consequential episode from the proposed practice to the result its recipient needs. Locate where an input, interpretation, decision or response fails to arrive. Ask who knows that difference, who can act on it and who bears its consequences. Begin with an observed or explicitly constructed episode rather than a complete stakeholder inventory.
 
-Use [PSDA.12](../psda/28-psda-12---recover-participants-concerns-and-affected-systems.md) when the affected parties, concerns or representation are incomplete. Its result identifies whose contribution is missing and why that changes the inquiry. Use [CB.15](../management-dpf-suite/cb/25-cb-15---connect-practices-through-a-useful-joint-contributio.md) to construct the joint work through which otherwise separate practices can exchange and use a contribution. Bring back the actual receiving operation and permission, not merely the name of a stakeholder or another meeting invitation.
+Use [PSDA.12](../psda/28-psda-12---recover-participants-concerns-and-affected-systems.md) when the affected parties, concerns or representation are incomplete. Its result identifies whose contribution is missing and why that changes the inquiry. Use [CB.15](../management-dpf-suite/cb/25-cb-15---connect-practices-through-a-useful-joint-contributio.md) to construct the joint work through which otherwise separate practices can exchange and use a contribution. Bring back the actual receiving operation and permission.
 
 #### IS.6:4.2 - Make influence and exposure actionable
 
@@ -48,7 +48,7 @@ For each such difference, construct at least the incumbent continuation and the 
 
 Take the interpretable alternative to the party that can decide or supply it, together with the affected parties' account, remaining disagreement, conditions and likely consequences. State what each participant is agreeing to. Use [OCE.6](../management-dpf-suite/oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md) when an organizational assignment or enabling relation must become effective. An external partner's promise needs that partner's acceptance; a local sponsor cannot confer it.
 
-Let the parties rehearse or perform the changed connection at the smallest useful scale. The referrer supplies the changed request; the receiver shows how it will be acted on; the service recipient can expose an unusable step. Where such a trial is inappropriate, use already sufficient evidence or return the missing authorization. Brokerage ends in an obtainable response, a supported refusal, or the exact unresolved dependency. Consensus is neither required nor sufficient.
+Use sufficient existing evidence that the revised request can be received and acted on under the agreed conditions. If an unresolved part can change that conclusion, have the parties rehearse or perform it at the smallest useful scale: the referrer supplies the changed request, the receiver shows how it will be acted on, and the service recipient can expose an unusable step. Where such a trial is inappropriate, obtain another adequate basis or return the unresolved condition, including any missing authorization. Return an obtainable response, a supported refusal or the exact unresolved dependency.
 
 #### IS.6:4.5 - Return consequences to the people and the practice
 
@@ -64,7 +64,7 @@ In a constructed community-service example, staff report that 30 referrals were 
 
 The broker and the two agencies use CB.15 to follow a de-identified referral together. The receiving agency distinguishes a necessary input from information that can be obtained at the first contact. The responsible owners compare a revised request, a later appointment window and the reminder-only incumbent. The latter cannot address either observed failure. One agency accepts a bounded change in its intake; the other supplies the revised request and an escalation contact. Neither agreement authorizes another agency's change.
 
-The first returned result is that the revised requests can be received under the agreed conditions. Subsequent observation can examine whether recipients obtain the intended service. Thirty issued requests remain thirty issued requests; the broker does not transform them into thirty successful outcomes. If the later window cannot be staffed, its unavailable provision returns to IS.3 rather than being hidden by better communication.
+The first returned result is that the revised requests can be received under the agreed conditions. Subsequent observation can examine whether recipients obtain the intended service. If the later window cannot be staffed, its unavailable provision returns to IS.3 rather than being hidden by better communication.
 
 #### IS.6:5.2 - A community without managerial authority
 
@@ -92,7 +92,7 @@ Sponsor visibility can make its account appear complete. Familiar representative
 
 ### IS.6:9 - Consequences
 
-The practice can use knowledge that its original decision arrangement excluded. This can require a changed promise, extra receiving work or an unpopular correction. The Method makes those consequences visible; it does not guarantee agreement, equal power or a particular service outcome.
+The practice can use knowledge that its original decision arrangement excluded. This can require a changed promise, extra receiving work or an unpopular correction. The Method makes those consequences visible.
 
 ### IS.6:10 - Architectural Rationale
 
@@ -102,10 +102,10 @@ CB.15 supplies joint work, PSDA.12 and PSDA.13 supply the inquiry and OCE suppli
 
 The [2020 ISP Practice Guide](https://implementation.fpg.unc.edu/wp-content/uploads/ISP-Practice-Guide.pdf), in its brokering and power-differential sections, connects otherwise separated participants and gives beneficiary experience a consequential place. This Method adopts that question and develops its receiving connection through the FPF suppliers above. Its alternative is an adequate direct exchange: that cheaper path remains preferable when influence does not defeat the needed contribution.
 
-[Buchanan, Filiatreau and Moore (2024)](https://link.springer.com/article/10.1186/s43058-024-00572-1) argue for a community-oriented relation among implementation actors. This is a field-position argument, not an effect estimate for the present Method. The constructed cases do not establish effectiveness. Reopen the construction when the proposed protection or representation excludes a consequential experience, or when practice evidence supports a better way to carry it into change.
+[Buchanan, Filiatreau and Moore (2024)](https://link.springer.com/article/10.1186/s43058-024-00572-1) argue for a community-oriented relation among implementation actors. This is a field-position argument, not an effect estimate for the present Method. Reopen the construction when the proposed protection or representation excludes a consequential experience, or when practice evidence supports a better way to carry it into change.
 
 ### IS.6:12 - Relations
 
-IS.1 supplies the undertaking; IS.2 can locate the gap; IS.3 compares the resulting help; A.3.1.MI interprets the changed practice; IS.5 handles continuation. CB.15, PSDA.12 and PSDA.13, CB.16 and OCE.6/10 supply the specific contributions named in Solution. IS.7 receives a coupled adaptation question; IS.8 receives the need to develop the next broker's performance. These are conditional connections, not a mandatory circuit.
+IS.1 supplies the undertaking; IS.2 can locate the gap; IS.3 compares the resulting help; A.3.1.MI interprets the changed practice; IS.5 handles continuation. CB.15, PSDA.12 and PSDA.13, CB.16 and OCE.6/10 supply the specific contributions named in Solution. IS.7 receives a coupled adaptation question; IS.8 receives the need to develop the next broker's performance.
 
 ### IS.6:End

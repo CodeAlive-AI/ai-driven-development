@@ -71,7 +71,7 @@ Can a receiver identify the first attainable action, its inputs and the commitme
 
 ### ECO.4:9 - Consequences
 
-A venture can advance through commitments smaller than its complete plan. It can also stop earlier when the missing means cannot be obtained. The result remains conditional on actual counterparties and resources, rather than on a generic sequence of startup milestones.
+A venture can advance through commitments smaller than its complete plan. It can also stop earlier when the missing means cannot be obtained. The result remains conditional on actual counterparties and resources.
 
 ### ECO.4:10 - Architectural Rationale
 
@@ -81,7 +81,7 @@ Resource mobilization is a construction across interdependent plans. Financial t
 
 [Foss, Klein and Murtinu (2025)](https://link.springer.com/article/10.1007/s11138-025-00690-6) makes mobilizing resources under entrepreneurial uncertainty explicit. Their [2026 stakeholder-enrollment analysis](https://link.springer.com/article/10.1007/s11187-026-01192-w) distinguishes difficulties in sharing an understanding of a novel venture. This pattern adopts those questions while retaining understood disagreement and genuine resource unavailability.
 
-A standard financing transaction is the cheaper method when counterparties already understand the venture and only its financing terms remain open. The sources support conceptual distinctions, not a guarantee that this commitment sequence will recruit stakeholders. Reopen when a counterpart's decision or the proposed demonstration no longer settles the claimed uncertainty.
+A standard financing transaction is the cheaper method when counterparties already understand the venture and only its financing terms remain open. The sources supply conceptual distinctions for this comparison. Reopen when a counterpart's decision or the proposed demonstration no longer settles the claimed uncertainty.
 
 ### ECO.4:12 - Relations
 

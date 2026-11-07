@@ -9,4 +9,4 @@
 | A rule is copied while the capability that made it work is absent. | ECO.9 restores the practice and its transmission through the existing development methods. |
 | Lower unit resource use is reported as a guaranteed total saving. | ECO.10 compares the demand response against the relevant counterfactual. |
 
-Use these returns when the failure occurs. They are not a required audit before every ordinary action.
+Use these returns when the failure occurs.

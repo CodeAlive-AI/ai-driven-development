@@ -110,8 +110,6 @@ For the effect being asserted, examine whether:
 5. Records, effective relations and resource availability remain distinct where their differences matter.
 6. The result distinguishes supported change, supported non-change and unresolved effect.
 
-A calculation can verify the consequence of supplied premises. It cannot establish the missing event or institutional rule.
-
 ### FDM.4:8 - Common Anti-Patterns and How to Avoid Them
 
 **Closing the obligation from a sent instruction.** Establish the event the applicable arrangement recognizes as performance.

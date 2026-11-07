@@ -43,7 +43,7 @@ When several participants matter, retain their differing objectives and conseque
 
 Identify the service output and who uses it. Separate the method, its implementation, one performed use and the produced result where their differences affect the account. A score is one output of a scoring arrangement; it is not the arrangement itself.
 
-Ask the receiving participant how the output enters their work. A human or an authorized automated arrangement can use it. There is no mandatory intermediate change in a human's private expectation. Conversely, delivering data to an application does not establish that it influenced the relevant action.
+Ask the receiving participant how the output enters their work. A human or an authorized automated arrangement can use it. Delivering data to an application does not establish that it influenced the relevant action.
 
 A supplier can properly deliver information to another actor. Give that supplier's contribution its actual scope instead of redefining every upstream tool as if it directly provided the final financial outcome.
 
@@ -87,8 +87,6 @@ The same construction applies to a client-admission service. An information supp
 
 A developer may overvalue improvements visible in the tool's own metrics. A business sponsor may prefer the final benefit and omit the intervening assumptions. Recover both the actual output and the receiving use.
 
-A reported source case can also tempt the modeler to require one organization or human role arrangement everywhere. Preserve the relevant functions and actual authority while allowing different competent human and automated arrangements.
-
 ### FDM.5:7 - Conformance Checklist
 
 For the contribution being claimed, examine whether:
@@ -99,8 +97,6 @@ For the contribution being claimed, examine whether:
 4. Output quality, actual use, financial effect and later participant outcome retain their different evidence and uncertainty.
 5. Material alternatives and failure points have been examined where they can change the conclusion.
 6. The result states the supported contribution and any specific next evidence or decision needed.
-
-A coherent contribution model supports understanding and inquiry. An observed improvement or causal benefit needs the evidence its stronger claim requires.
 
 ### FDM.5:8 - Common Anti-Patterns and How to Avoid Them
 

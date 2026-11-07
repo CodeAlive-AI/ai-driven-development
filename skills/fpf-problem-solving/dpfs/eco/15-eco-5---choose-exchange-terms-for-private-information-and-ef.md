@@ -116,7 +116,7 @@ Terms change a participant's feasible and attractive choices. Information gather
 
 [Holmström (1979), §2 and concluding remarks](https://gwern.net/doc/economics/1979-holmstrom.pdf) constrains contract choice by both participation and the action the participant will select, while examining information and risk sharing. These are historical analytical foundations. The finite risk-neutral examples here demonstrate feasible terms. They do not solve that paper's risk-averse optimization problem.
 
-The rival is an ordinary contract plus direct observation. Keep it when sufficiently inexpensive and informative. This pattern adds a comparison of feasible terms when observation is incomplete or costly. It does not turn a mechanism's mathematical possibility into actual enforceability or proven field effectiveness. Reopen when participation, available actions, signal quality or enforcement changes.
+The rival is an ordinary contract plus direct observation. Keep it when sufficiently inexpensive and informative. This pattern adds a comparison of feasible terms when observation is incomplete or costly. Reopen when participation, available actions, signal quality or enforcement changes.
 
 ### ECO.5:12 - Relations
 

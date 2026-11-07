@@ -1,6 +1,6 @@
 ## ECO.Reference:3 - Solution - Connect calculation, exchange and economic arrangements
 
-The ten methods form four connected groups. These groups organize explanation; they do not prescribe stages or fixed levels.
+The ten methods form four connected groups for explanation. Enter the group that addresses the current question.
 
 | Group | Contribution | Connection to further work |
 | --- | --- | --- |
@@ -9,7 +9,7 @@ The ten methods form four connected groups. These groups organize explanation; t
 | Shared and extended coordination: ECO.7–.9 | Connect use and renewal, relate direct cooperation to wider orders, and change rules through their practices. | Physical bounds, affected interests and obtainable capabilities constrain what arrangement can work. |
 | Efficiency and demand: ECO.10 | Follow a unit saving through changes in feasible use and demand. | Return conditional total effects to the purpose and existing comparison or portfolio methods. |
 
-The operation and its description remain different. Applying guidance can produce a proposal, a calculation, an agreement or a performed contribution, depending on what the practitioner actually does and what conditions hold. Describing a possible arrangement does not establish that it exists. The cases below and in the patterns are constructed demonstrations of reasoning; they do not assert observed field effectiveness.
+Applying guidance can produce a proposal, a calculation, an agreement or a performed contribution, depending on what the practitioner actually does and what conditions hold. The cases below and in the patterns are constructed demonstrations of reasoning.
 
 ### ECO.Reference:3.1 - Calculation rests on economic relationships
 

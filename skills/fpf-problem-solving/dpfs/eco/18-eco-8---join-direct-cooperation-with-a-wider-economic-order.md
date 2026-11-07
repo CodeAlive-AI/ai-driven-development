@@ -7,7 +7,7 @@
 
 Use this pattern when a plan or rule works among closely cooperating participants but fails when carried into wider exchange, or when commercial terms undermine the direct cooperation on which work depends. Start with one consequential interaction and the conditions that make it possible. Identify what must be coordinated directly and what can be connected through more general rules, prices or agreements.
 
-The result is a specific adjustment at that boundary. It need not be a new institution or a complete model of an economy.
+The result is a specific adjustment at that boundary.
 
 ### ECO.8:2 - Problem
 
@@ -69,7 +69,6 @@ Can the reader identify the relation that changed and the actual reason the old 
 
 - **The economy is managed as one organization.** Recover where shared authority and information actually obtain.
 - **Every relationship becomes a spot transaction.** Preserve a continuing cooperative contribution when the result depends on it.
-- **Two orders become two fixed Method levels.** Describe the actual overlapping relations and any separately established Method composition.
 
 ### ECO.8:9 - Consequences
 

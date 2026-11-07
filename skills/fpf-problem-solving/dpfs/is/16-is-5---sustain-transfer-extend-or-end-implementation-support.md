@@ -9,7 +9,7 @@
 
 Use this pattern when an introduction has produced enough experience to decide what help should remain; when a helper, sponsor, tool or source is changing; when another setting wants to use the approach; or when the supported practice is no longer wanted or sufficiently useful.
 
-Begin with one ordinary use that must remain possible and one actual dependency that may change. Find what currently enables that use, including help that is easy to overlook because an expert quietly supplies it. Then decide whether to retain, reduce, replace, transfer, extend or end that contribution. The useful result can be a continuing purchased service. Independence is not an obligatory maturity stage.
+Begin with one ordinary use that must remain possible and one actual dependency that may change. Find what currently enables that use, including help that is easy to overlook because an expert quietly supplies it. Then decide whether to retain, reduce, replace, transfer, extend or end that contribution. The useful result can be a continuing purchased service.
 
 Do not run a sustainability project merely because a bounded attempt has finished. If continuing use and its support are already adequately provided, use that arrangement and its ordinary correction route. If no continued use is promised, settle the attempt's actual remaining obligations and stop.
 
@@ -49,7 +49,7 @@ A decision to keep the practice does not answer who should provide it. A decisio
 
 Follow an ordinary case and one consequential variation. Ask what happens when the usual expert is absent, an input is ambiguous, a source changes or demand overlaps with another obligation. Select variations because they can expose a particular dependency, not to demonstrate every conceivable failure.
 
-Recover actual support from the work: who supplies the difficult judgement, restores access, selects the current method variant, detects an obsolete instruction, answers a late question and authorizes an exception? A support contribution can be distributed among a performer, an AI service, a source maintainer and a manager. There need not be a support office or one person who owns them all.
+Recover actual support from the work: who supplies the difficult judgement, restores access, selects the current method variant, detects an obsolete instruction, answers a late question and authorizes an exception? A support contribution can be distributed among a performer, an AI service, a source maintainer and a manager.
 
 #### IS.5:4.2 - Choose the continuation that obtains the wanted result
 
@@ -65,7 +65,7 @@ For each dependency that matters to continued use, compare the actual alternativ
 | Extend use to another setting | The target and its support fit that setting, or an appropriate adaptation can be qualified. | Local results are treated as a universal adoption instruction. |
 | End support or practice | Remaining work and affected dependencies have a legitimate disposition. | A date or funding decision is being used as evidence that dependent work is complete. |
 
-The table distinguishes choices; it does not prescribe a progression. Continuing specialist provision can remain preferable to local acquisition. A highly capable AI service can replace substantial human help where its actual performance and conditions justify the replacement. Conversely, a service that supplies correct answers can leave the recipients unable to notice when it is outside its qualified use.
+Continuing specialist provision can remain preferable to local acquisition. A highly capable AI service can replace substantial human help where its actual performance and conditions justify the replacement. Conversely, a service that supplies correct answers can leave the recipients unable to notice when it is outside its qualified use.
 
 Compare alternatives against the actual promise. Do not reject a service because it fails to teach when teaching was never needed. Do not call it equivalent to capability development when the recipients must later act without it. IS.3 supplies the connected strategy construction and full work comparison when the continuation requires a new arrangement.
 
@@ -99,7 +99,7 @@ Reuse what remains sufficient. A shared explanation, common expert service or re
 
 A new location does not automatically need a full development programme. An equivalent use with adequate existing support may proceed directly. When a difference breaks a relied-on condition, obtain the needed adaptation or return to target selection. IS.2 and IS.3 supply those contributions; A.3.1.MI supplies a bounded introduction when that uncertainty warrants one.
 
-Cultural continuation can require transmission beyond a service contract. Use C.36 to distinguish the needed carriers and transmission relations. Use C.36.RP when access, acquisition or provision must change to make a shared Method obtainable in the receiving setting. CB.14 supplies a joint repertoire undertaking when such work is wanted; its maintained result can also serve independent users. If a communicating community is itself needed, community practice supplies its relationships and maintenance. Do not invent a community requirement for people who can obtain and use the practice independently.
+Cultural continuation can require transmission beyond a service contract. Use C.36 to distinguish the needed carriers and transmission relations. Use C.36.RP when access, acquisition or provision must change to make a shared Method obtainable in the receiving setting. CB.14 supplies a joint repertoire undertaking when such work is wanted; its maintained result can also serve independent users. If a communicating community is itself needed, community practice supplies its relationships and maintenance.
 
 #### IS.5:4.6 - End the contribution without abandoning dependent work
 
@@ -109,7 +109,7 @@ For a completed low-risk trial with no continuing promise, this may be a short e
 
 Do not keep collecting reports after they can no longer change a legitimate decision. Preserve materials that a continuing receiver needs; do not retain unnecessary personal information merely to document a past programme. Resolve access and custody under the applicable agreement.
 
-End when the promised contribution and actual remaining obligations are complete, transferred or legitimately withdrawn. The old provider's availability can then stop without being silently assumed by the new arrangement. If a necessary receiver or authority is absent, return that unresolved condition plainly; a closing meeting cannot supply it.
+End when the promised contribution and actual remaining obligations are complete, transferred or legitimately withdrawn. The old provider's availability can then stop without being silently assumed by the new arrangement. If a necessary receiver or authority is absent, return that unresolved condition plainly.
 
 #### IS.5:4.7 - Return the next development question to its proper practice
 
@@ -117,7 +117,7 @@ Continued use can reveal a worthwhile harder problem: the old Method reaches its
 
 Do not automatically label every next challenge an implementation barrier. If a sufficiently useful target Method is unavailable, the next work is to obtain or develop it. If the wanted future result changes, reopen the opportunity and undertaking. Implementation support can help a resulting candidate enter practice without becoming the whole practice of development.
 
-Likewise, successful use need not create an obligation to keep changing. A stable adequate service can remain ordinary work. The question is whether further development is worthwhile and feasible, not whether the implementation programme needs a new cohort to justify its existence.
+A stable adequate service can remain ordinary work. Continue development when its attainable contribution warrants the work and can be provided.
 
 ### IS.5:5 - Archetypal Grounding
 
@@ -141,7 +141,7 @@ An independent translator has established the terminology-qualified review workf
 
 Now suppose the translator begins accepting work under conditions where the service cannot be reached. Personal acquisition or another available supplier becomes relevant. The previous service results may help construct learning cases, but they do not prove that the translator can make the required judgement unaided. HCD supplies acquisition and its evidence; IS.3 compares the feasible obtaining ways.
 
-If a qualified AI service becomes available, the same questions apply to its actual cases, inputs, protection and receiving use. Its availability changes the alternatives; the phrase “AI support” does not decide the continuation.
+If a qualified AI service becomes available, the same questions apply to its actual cases, inputs, protection and receiving use. Its availability changes the alternatives.
 
 #### IS.5:5.3 - Continue among independent carriers
 
@@ -149,7 +149,7 @@ Several independent repair practitioners use a published diagnostic method. They
 
 The support question is whether those contributions continue to make the practice available. A maintained correction, discoverable source and actual local access can be sufficient. If a new equipment family breaks an assumption, the publisher needs a qualified method revision or an explicit limit; forming a discussion group does not by itself supply the missing diagnostic operation.
 
-A later proposal for peer learning can be useful if its intended contribution warrants the work. It is an additional obtaining way, not evidence that the earlier independent practice was impossible.
+A later proposal for peer learning can add an obtaining way when its intended contribution warrants the work.
 
 ### IS.5:6 - Bias-Annotation
 
@@ -185,7 +185,7 @@ Recipients can reasonably prefer dependable provision to mastery of a rare opera
 
 Practice can continue through an arrangement whose real dependencies are understood. Support can become smaller, change provider, remain as a service or end without making independence the universal success criterion.
 
-This Method can also justify stopping an arrangement that had looked successful. That is useful when its ordinary conditions cannot be supplied or the target no longer serves the receiving work. It does not guarantee that another arrangement exists.
+This Method can also justify stopping an arrangement that had looked successful. That is useful when its ordinary conditions cannot be supplied or the target no longer serves the receiving work.
 
 ### IS.5:10 - Architectural Rationale
 
@@ -203,6 +203,6 @@ OCE.11 supplies temporary coexistence and exit; HCD.15 supplies reconsideration 
 
 A.3.1.MI supplies the bounded use result and the claims it can support. IS.1 reopens the undertaking when purpose, authority or promised help changes. IS.2 locates a new difficulty; IS.3 constructs a changed support strategy.
 
-C.39, A.3.1.MV and C.32.MWA.PP supply target-method development, variant qualification and provision comparison. OCE supplies organizational changes and the coexistence of ordinary work with temporary change work. HCD supplies desired human acquisition. CB.14 supplies joint repertoire development, C.36 distinguishes cultural continuation, and C.36.RP helps make a needed shared Method obtainable; development and research practices receive changed aims and unavailable subject knowledge. None is replaced by a sustainability label.
+C.39, A.3.1.MV and C.32.MWA.PP supply target-method development, variant qualification and provision comparison. OCE supplies organizational changes and the coexistence of ordinary work with temporary change work. HCD supplies desired human acquisition. CB.14 supplies joint repertoire development, C.36 distinguishes cultural continuation, and C.36.RP helps make a needed shared Method obtainable; development and research practices receive changed aims and unavailable subject knowledge.
 
 ### IS.5:End

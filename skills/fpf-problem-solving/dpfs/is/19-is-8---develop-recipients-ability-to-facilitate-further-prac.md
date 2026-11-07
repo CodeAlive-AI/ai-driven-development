@@ -38,19 +38,19 @@ During a suitable joint episode, make the consequential decision inspectable. As
 
 #### IS.8:4.3 - Arrange practice, feedback and real receiving conditions
 
-For a person's acquisition, use [HCD.9](../human-capability-engineering-dpf-suite/hcd/26-hcd-9---perform-deliberate-practice-with-feedback.md) for deliberate practice with feedback and the appropriate programme/provider Methods when a programme is actually needed. Make the learning attempt and its receiving-work criteria available to the person giving feedback. Use feedback to change a particular operation. For example, include a missing participant, explain an adaptation, revise an infeasible demand or limit a conclusion to what the observation supports. Merely telling the learner to become more collaborative does not supply that correction.
+For a person's acquisition, use [HCD.9](../human-capability-engineering-dpf-suite/hcd/26-hcd-9---perform-deliberate-practice-with-feedback.md) for deliberate practice with feedback and the appropriate programme/provider Methods when a programme is actually needed. Make the learning attempt and its receiving-work criteria available to the person giving feedback. Use feedback to change a particular operation. For example, include a missing participant, explain an adaptation, revise an infeasible demand or limit a conclusion to what the observation supports.
 
 Use [OCE.18](../management-dpf-suite/oce/34-oce-18---arrange-capability-development-and-receiving-work-i.md) where an organizational transition must provide protected practice time and real receiving work; use [OCE.11](../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) for coexistence with current service. Agree who supplies fallback or takes over when an attempt exceeds its allowed risk. Keep what the recipient performed distinct from rescue supplied by the mentor. Do not withdraw needed assistance merely to create an examination.
 
-Several people can develop complementary operations. A local practitioner may lead episode inquiry while another obtains authorization and an external specialist qualifies a technical adaptation. Test their actual receiving connections as well as each person's contribution. A coordination title cannot fill a missing operation.
+Several people can develop complementary operations. A local practitioner may lead episode inquiry while another obtains authorization and an external specialist qualifies a technical adaptation. Test their actual receiving connections as well as each person's contribution.
 
-#### IS.8:4.4 - Examine a different case before changing the promise
+#### IS.8:4.4 - Qualify the promised scope before changing assistance
 
 Use [HCD.12](../human-capability-engineering-dpf-suite/hcd/29-hcd-12-test-transfer-to-unfamiliar-work-or-learning-from-a-n.md) when the claim concerns the same person's transfer to unfamiliar work. Choose a difference that can defeat the claimed facilitation: another affected group, a newly external condition, a different target mechanism or a conflict between delivered activity and outcome. Do not require novelty for its own sake; use existing adequate performance evidence when it already answers the promised scope.
 
 For an organization-capability claim, obtain or reuse OCE.9:4.4–4.7's result for integrated and later receiving work. Keep the intended configuration, participants or qualified substitutions, retained support, failure and exception paths, observed limits and accepted service consequences in that result. Reuse adequate observations; exercise a changed connection only when its consequence remains unresolved. Individual HCD results supply the personal contributions within that arrangement. The organizational claim depends on how those contributions and their provision work together.
 
-Let the recipient recognize the issue, choose what to do, obtain the needed contribution and interpret the result under the intended support conditions. If a mentor silently supplies the decisive diagnosis, report the joint performance and the remaining learning need. If the recipient correctly recognizes that a specialist is needed and obtains a usable answer, that can satisfy an explicitly bounded coordinating capability. It does not establish the specialist capability itself.
+In an assessment attempt, let the recipient recognize the issue, choose what to do, obtain the needed contribution and interpret the result under the intended support conditions. If a mentor silently supplies the decisive diagnosis, report the joint performance and the remaining learning need. If the recipient correctly recognizes that a specialist is needed and obtains a usable answer, that can satisfy an explicitly bounded coordinating capability. It does not establish the specialist capability itself.
 
 Change the assistance on those grounds. It may become conditional, move to a different contribution or continue unchanged. Keep a known exception route and an actual receiving provider. Ending a contract and acquiring a capability are independent facts.
 
@@ -58,7 +58,7 @@ Change the assistance on those grounds. It may become conditional, move to a dif
 
 After a sufficient result, examine with the intended holder what it now makes possible and which difficulty remains or has become newly attainable. Let that holder participate in recognizing and formulating the next worthwhile problem. [FPF C.40.NP](../../sections/09-part-c---kernel-extension-specifications/119-c-40-np---continue-from-a-result-to-new-attainable-problems.md) supplies the continuation to a more demanding attainable problem; [HCD.15](../human-capability-engineering-dpf-suite/hcd/32-hcd-15-sustain-continuing-human-capability-development.md) supplies continuing human development. If the problem concerns the facilitating Method itself, [FPF C.39](../../sections/09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md) and the subject practice develop that Method rather than prescribe more of the old exercise.
 
-Maintain the conditions that make such work possible: access to needed evidence, available specialist returns and legitimate occasions to improve practice. [CB.7](../management-dpf-suite/cb/17-cb-7---prepare-and-sustain-distributed-organising.md) can develop the next community organizer when that is the actual holder and practice; [CB.14](../management-dpf-suite/cb/24-cb-14---develop-and-maintain-a-shared-repertoire-of-practice.md) can maintain a jointly developed repertoire. Neither community membership nor a knowledge base is a substitute for the receiver's performance.
+Maintain the conditions that make such work possible: access to needed evidence, available specialist returns and legitimate occasions to improve practice. [CB.7](../management-dpf-suite/cb/17-cb-7---prepare-and-sustain-distributed-organising.md) can develop the next community organizer when that is the actual holder and practice; [CB.14](../management-dpf-suite/cb/24-cb-14---develop-and-maintain-a-shared-repertoire-of-practice.md) can maintain a jointly developed repertoire.
 
 The result may be bounded local capability with continuing specialist provision, a wider facilitation capability, or an explicitly unfinished development question. Preserve useful current service while revising any unsupported capability promise.
 
@@ -103,7 +103,7 @@ The recipients can acquire a specified part of the work needed for later change,
 
 ### IS.8:10 - Architectural Rationale
 
-HCD supplies human development and OCE supplies organizational capability. Their Methods need a definite subject to teach or realize. This Method supplies that subject-level line of work and its receiving transitions: an experienced facilitation decision becomes inspectable, a recipient performs it, an unfamiliar case tests the intended scope, and changed help preserves continuing work.
+HCD supplies human development and OCE supplies organizational capability. Their Methods need a definite subject to teach or realize. This Method supplies that subject-level line of work and its receiving transitions: an experienced facilitation decision becomes inspectable, a recipient performs it, performance evidence qualifies the intended scope, and changed help preserves continuing work.
 
 ### IS.8:11 - SoTA-Echoing
 

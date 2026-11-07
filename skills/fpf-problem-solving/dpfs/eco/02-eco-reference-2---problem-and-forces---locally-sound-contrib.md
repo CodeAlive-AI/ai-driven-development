@@ -6,4 +6,4 @@ These failures require connections among methods. Treating economics only as mon
 
 The language uses both formal models and qualitative reasoning where their conditions fit. A mathematical result follows from its admitted construction; using it to describe actual people, organizations or markets requires the corresponding grounds. Numerical probabilities are useful when defensible, while conditional alternatives can be sufficient for a decision.
 
-Further inquiry has its own whole cost, including delay and work displaced. C.11.DUA helps compare it with using adequate current information, changing the action, accepting a bounded uncertainty or stopping. There is no requirement to prove every source anecdote or gather every possible observation before acting.
+Further inquiry has its own whole cost, including delay and work displaced. C.11.DUA helps compare it with using adequate current information, changing the action, accepting a bounded uncertainty or stopping.

@@ -93,8 +93,6 @@ For the proposed interpretation, examine whether:
 4. Actual resources and expected future performance are not inferred from a position alone.
 5. The result supplies an adequate answer or names the particular identity, term, rule or evidence still missing.
 
-An adequate description supports its stated interpretation. Its existence alone does not prove formation, funding or performance.
-
 ### FDM.1:8 - Common Anti-Patterns and How to Avoid Them
 
 **Treating “claim” as one unambiguous object.** State whether the sentence concerns an assertion or a creditor's right. Then relate them where the report is evidence about the right.

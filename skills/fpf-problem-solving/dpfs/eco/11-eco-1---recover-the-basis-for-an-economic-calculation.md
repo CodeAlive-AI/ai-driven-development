@@ -7,7 +7,7 @@
 
 Use this pattern when a calculation ranks production or service plans but you cannot tell whether its prices and other weights represent exchanges and resource uses available to the people who must act. Start with the quantity that could reverse the choice and ask what transaction, displaced use or stated valuation gives it meaning. The result is a comparison with usable economic grounds, or a conditional choice with the missing ground exposed.
 
-An adequate current quotation and resource account can be used as supplied. There is no need to reconstruct the whole economy before choosing a machine, a supplier or a service.
+An adequate current quotation and resource account can be used as supplied.
 
 ### ECO.1:2 - Problem
 

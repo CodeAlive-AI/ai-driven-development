@@ -1,6 +1,6 @@
 ## Library.Reference:5 - Why some DPFs stand outside the Suites
 
-A standalone DPF is an independently usable domain language whose own subject and useful results warrant its boundary, without a demonstrated constituent relation to one of the described assemblies in this Library edition. It is not a lesser framework or an item waiting for a folder to complete a classification.
+A standalone DPF is an independently usable domain language whose own subject and useful results warrant its boundary, without a demonstrated constituent relation to one of the described assemblies in this Library edition.
 
 The ten standalone languages have the following distinct contributions:
 

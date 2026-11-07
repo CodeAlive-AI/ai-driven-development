@@ -59,7 +59,7 @@ Now suppose the declared account also includes 150 kWh for the new equipment and
 
 A firm reduces the cost per accepted analysis and considers using the saving for more analyses. Token count is not the useful-result unit if acceptance, human revision or result quality also changes. The firm compares cost and resource use per accepted result, possible volume and the receiving work's value.
 
-A fixed budget can increase the number of useful analyses without lowering expenditure. Electricity or hardware use may move differently from expenditure. Calling every such change “Jevons” would hide the actual consequence the decision needs.
+A fixed budget can increase the number of useful analyses without lowering expenditure. Electricity or hardware use may move differently from expenditure.
 
 ### ECO.10:6 - Bias-Annotation
 
@@ -92,6 +92,6 @@ This pattern adopts mechanism and boundary analysis, then uses only the detail n
 
 ### ECO.10:12 - Relations
 
-ECO.2 supplies price responses; ECO.3 identifies new feasible exchanges; ECO.7/.9 address shared-resource or rule changes when those are selected. PHY and MMP supply physical and computational models, OPS supplies flow and capacity, MA and FIN supply cost and financial comparisons. General FPF choice and portfolio methods compare the retained alternatives; this pattern adds the demand-response contribution, not another portfolio mechanism.
+ECO.2 supplies price responses; ECO.3 identifies new feasible exchanges; ECO.7/.9 address shared-resource or rule changes when those are selected. PHY and MMP supply physical and computational models, OPS supplies flow and capacity, MA and FIN supply cost and financial comparisons. General FPF choice and portfolio methods compare the retained alternatives; this pattern adds the demand-response contribution.
 
 ### ECO.10:End

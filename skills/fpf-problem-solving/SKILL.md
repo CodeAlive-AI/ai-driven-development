@@ -264,7 +264,7 @@ you conclude (F.19, C.11.DUA) and bring it back to the original question (C.39.Q
 
 This skill adapts the *FPF Library* by Anatoly Levenchuk — *First Principles Framework (FPF)* Core, its
 domain frameworks (DPFs) and Library documents — [ailev/FPF](https://github.com/ailev/FPF), upstream
-commit `760424e38bff3b24c856ce798871402248ccb6bc`. The Library text in `sections/`, `dpfs/` and
+commit `e317958532699b762dd9e7baf460f97bad7a4c9c`. The Library text in `sections/`, `dpfs/` and
 `library/` is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes: the
 publications were split into section files with generated navigation indexes, and their links were
 rewritten to point at the local files; this `SKILL.md` adds an agent-oriented router and usage

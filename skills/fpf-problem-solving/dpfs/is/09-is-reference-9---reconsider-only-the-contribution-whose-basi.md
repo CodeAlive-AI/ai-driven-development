@@ -12,4 +12,4 @@ Use the following differences to locate a needed return:
 | Better implementation-support knowledge changes the explanation or useful operation. | The affected helping Method and its examples, source bounds and related returns. |
 | A relied-on FPF or DPF meaning changes. | The affected dependency and the IS instructions that consume it, before relying on unchanged wording. |
 
-Do not infer a framework-wide failure from one local exception, or preserve every existing sentence merely because a case succeeded. Recover which claim has lost its basis and what current contribution would repair the receiving use. Reuse unaffected knowledge and qualified results. Where the change exposes a larger development question, return it at that scope.
+Recover which claim has lost its basis and what current contribution would repair the receiving use. Reuse unaffected knowledge and qualified results. Where the change exposes a larger development question, return it at that scope.
