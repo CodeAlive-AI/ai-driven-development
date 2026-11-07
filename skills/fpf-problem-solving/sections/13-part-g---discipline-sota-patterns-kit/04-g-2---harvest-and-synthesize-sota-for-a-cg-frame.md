@@ -122,7 +122,7 @@ Each named component is addressable via a stable **pack‑local identifier** (e.
 
    * exact source and edition, claim region, effective ReferenceScheme where meaning matters, EntityOfConcern, and comparison basis for the stated use,
    * explicit evidence anchors/citations (A.10 and/or EvidenceGraph refs when available),
-   * explicit freshness window notes and risk/trust cues *(cite `B.3` governing definitions when using trust/decay language)*.
+   * the currentness basis relevant to the claim’s use, including any applicable freshness window and risk/trust cues (cite `B.3` when using trust/decay claims).
 
 3. **`G.2c OperatorAndObjectInventory`**
    Inventory of candidate CHR terms (characteristics/scales/coordinates) and candidate CAL operators/flows *as stubs* for downstream authoring.
@@ -174,7 +174,7 @@ When authoring `ClaimSheets[Tradition]`, teams often benefit from a single‑pag
 
 #### G.2:4.3 - Harvester loop (conceptual choreography; pattern-governed)
 
-A conforming `G.2` pack publication is built by iterating the following conceptual loop until the declared gates are satisfied:
+Apply the following operations to the declared source population. A conforming pack satisfies its declared gates. When the available basis does not satisfy them, return the supported bounded result and the unmet condition; repeat a search or repair only when an attainable contribution justifies it.
 
 1. **Declare scope and plurality.**
    Identify the exact CG-frame (the declared framing episteme), the initial `Tradition` set, each intended claim region and EntityOfConcern, the comparison basis, and the receiving use. Record the cited CG-frame and source editions and evidence anchors in the pack pins rather than hiding them in a generic context field. Before counting, fix the HarvestPolicy's receiving question, counted population, grouping and same-family equivalence, including overlap handling for a combined population.
@@ -201,13 +201,17 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
    If a `G.2` pack publication asserts fusion or substitution across sources or across `Tradition` records (beyond mere “parallel divergent claims”), it **MUST** emit `GammaEpistSynthId` records per `G.2:Ext.GammaEpistSynthesis` (provenance union + explicit object alignment refs + assurance tuple refs), and it **MUST** apply `CC‑GCORE‑PEN‑1` to its loss assessment and any numerical assurance penalty.
 
 7. **Publish teachable micro‑groundings.**
-   Attach worked micro-examples to load-bearing claims, each tied to the exact source and edition, claim region, EntityOfConcern, comparison basis, intended use, and evidence carrier or A.10 evidence-provenance path.
+   Attach worked micro-examples that explain the load-bearing claim and a consequential variation in its conditions. Keep them within the claim’s supported scope. Each retains the source and edition, claim region, EntityOfConcern, comparison basis, intended use and evidence carrier or A.10 evidence-provenance path.
 
 8. **Apply gates and record repairs.**
-   Apply that fixed HarvestPolicy basis and count its distinct units before comparing coverage with `FamilyCoverageFloorK` (and apply any optional diversity-by-distance gate under its own basis). Missing count semantics returns an unassessable result and the exact missing basis, not an instruction to search more. If a defined gate fails, the pack **MUST**:
-   * record the failure and the repair iteration in `FlowRecord` and `CorpusLedger`,
-   * pin the updated `HarvestPolicyRef` / criteria ids (if changed),
-   * iterate the loop rather than silently weakening the gate.
+   Apply the fixed HarvestPolicy basis and count its distinct units before comparing coverage with `FamilyCoverageFloorK` (and apply any optional diversity-by-distance gate under its own basis). Missing count semantics returns an unassessable result and the exact missing basis. If a defined gate fails:
+
+   * record the failed criterion, count and basis in `FlowRecord`, with the relevant corpus entries recoverable;
+   * identify a missing relevant lineage, venue or source region that could change the result, and judge whether the available search or repair is worth undertaking for the receiving use;
+   * if it is, perform that search or repair and recount under the declared policy. Pin any justified policy change and preserve the earlier judgement under its earlier basis;
+   * otherwise return the scoped claims and failed or incomplete pack judgement, its receiving-use limit and any precise remaining inquiry. Preserve the failed gate rather than treating the partial result as a conforming pack.
+
+   For example, an exhausted bounded population containing two method families fails a declared `k=3` method-only gate. A further report about either family does not change that count. A known unexamined source region may justify another search; without one, the count and coverage failure can be the completed bounded answer. Missing population or equivalence rules instead leave the count judgement unassessable.
 
 9. **Emit hand‑off manifests and export views.**
    Produce explicit manifests to:
@@ -259,7 +263,7 @@ A conforming `G.2` pack publication is built by iterating the following conceptu
 
 **PatternScopeId:** `G.2:Ext.HarvestProtocols`
 **GPatternExtensionId:** `HarvestProtocols`
-**GPatternExtensionKind:** `Phase3Seed`
+**GPatternExtensionKind:** `MethodSpecific`
 **GoverningPatternId:** `G.2`
 **Uses:** `{B.3, A.10}` *(for freshness/decay and provenance anchors, when protocol requires them explicitly)*
 **⊑/⊑⁺:** `∅`
@@ -393,10 +397,10 @@ G.1 M2 and the G.3–G.5 consumers cite the chosen pack judgement with its purpo
   *Mitigation:* keep Claim Sheets disjoint by default; require explicit alignment proof for fusion; preserve loss notes.
 
 * **Recency bias.** Overweighting newest papers can hide durable backbone results; underweighting them misses SoTA drift.
-  *Mitigation:* publish freshness windows and make them RSCR‑relevant.
+  *Mitigation:* state the search date and use-relevant currentness basis; make changes to relied-on sources or applicable windows RSCR-relevant.
 
 * **Didactic bias.** Micro‑examples can steer interpretation toward familiar domains.
-  *Mitigation:* require heterogeneous substrates and explicit A.10 anchors.
+  *Mitigation:* show the operation and a consequential variation within the claim’s supported scope, with explicit source anchors; add a different substrate only when the claim and its grounds cover that transfer.
 
 ### G.2:7 - Conformance Checklist (normative) — **CC‑G2**
 
@@ -416,11 +420,11 @@ G.1 M2 and the G.3–G.5 consumers cite the chosen pack judgement with its purpo
 | **CC‑G2‑Inventory‑1**     | A conforming pack **MUST** include `G.2c OperatorAndObjectInventory`, sufficient for downstream CHR/CAL authoring to begin without re‑harvesting terms.                                                                                                                                                                                            | Ensures the pack is actionable.                                                     |
 | **CC‑G2‑Inventory‑2**     | `G.2c OperatorAndObjectInventory` entries **MUST** be treated as **stubs** for downstream authoring: they **MUST NOT** embed acceptance thresholds or claim legality decisions locally. If an entry is not a citation of an already governed CHR/CAL artefact, it **MUST** be explicitly marked as `stub` (typing/lawfulness `TBD`) and **MUST NOT** be used as if lawful. Legality/threshold semantics are governed by `G.3` for CHR and `G.4` for CAL via explicit ids/pins. | Prevents “shadow CHR/CAL” and preserves lawfulness discipline without redefining it locally. |
 | **CC‑G2‑MeasurementLawful‑1** | If any inventory entry is presented as **non‑stub** (i.e., already lawful/typed), the pack **MUST** cite the governing lawfulness discipline (e.g., `A.17–A.19/C.16` as applicable) and provide the minimal evidence anchors needed to justify that typing claim.                                                                                      | Prevents “quietly lawful” measurement claims inside the harvester pack.             |
-| **CC-G2-MicroExamples-1** | For every load-bearing claim family, a conforming pack MUST include at least two worked micro-examples on heterogeneous substrates. Each names the source and edition, claim region, EntityOfConcern, comparison basis, and intended use; cites its evidence carrier or A.10 evidence-provenance path; and gives an applicable assurance tag. | Makes the synthesis teachable and inspectable; the example form supplies no meaning or authority. |
+| **CC-G2-MicroExamples-1** | For every load-bearing claim family, a conforming pack includes worked grounding that lets the reader obtain its result and handle a consequential change of conditions within the supported scope. Each example names the source and edition, claim region, EntityOfConcern, comparison basis and intended use; cites its evidence carrier or A.10 provenance path; and states the assurance contributions actually selected under B.3/B.3.3. | Preserve the grounding needed to understand and adapt the claimed contribution. |
 | **CC‑G2‑UTS‑1**           | If the pack proposes or evolves any public ids, it **MUST** publish UTS proposals *(Name Cards + MDS where applicable)* and cite them via `UTSRowId[]`, satisfying `CC‑GCORE‑UTS‑1` (delegation).                                                                                                                                               | Keeps naming and evolution disciplined.                                             |
 | **CC‑G2‑Families‑1**      | SoS indicators and candidate evaluation constructs **SHALL** be represented as **families/variants** (windows/constraints/assumptions) **with explicit Acceptance branch structure per variant** (branch ids/labels only), not as single unqualified scalars; any scalar summary **MAY** be included only as report‑only unless explicitly promoted by governing patterns. *(Set-return discipline is delegated to `CC‑GCORE‑SET‑1`.)* | Prevents covert scalarization and keeps acceptance governed by downstream patterns.                |
 | **CC‑G2‑HandOff‑1**       | A conforming pack **MUST** emit hand‑off manifests to `G.3`, `G.4`, and `G.5` that cite pack components by id and identify which families/operators are intended for downstream formalisation or registry entry.                                                                                                                                   | Prevents downstream re‑authoring and drift.                                         |
-| **CC‑G2‑CoverageGate‑1**  | The pack **MUST** declare `FamilyCoverageFloorK` and enforce it as a harvesting gate. It **MUST** either (i) specify `k` explicitly in an explicit `HarvestPolicyRef`, or (ii) use the pattern‑local default rule governed by `CC‑G2‑CoverageGate‑1`. *Default threshold (pattern-local):* `k=3`. In both threshold branches, an explicit `HarvestPolicyRef` **MUST** fix the receiving question, population/scope, grouping, same-family equivalence and overlap rule before counting. The pack judgement cites that basis, its distinct units and result; all consumers reuse it. Missing basis returns unassessable. Duplicate references add zero, and a threshold override changes neither units nor independent pluralism duties. The independent CC-G2-Pluralism-1 duties remain. If the defined gate fails, the pack **MUST** (a) record the repair iteration in `FlowRecord`, and (b) broaden the search radius (new venues/corpora/contexts/traditions) rather than silently weakening the gate; if an exploration policy is used for this broadening, it **MUST** be pinned as a policy id/ref. | Makes “coverage floor” explicit and prevents “silent narrowing” under failure.      |
+| **CC‑G2‑CoverageGate‑1**  | The pack **MUST** declare `FamilyCoverageFloorK` and enforce it as a harvesting gate. It **MUST** either (i) specify `k` explicitly in an explicit `HarvestPolicyRef`, or (ii) use the pattern‑local default rule governed by `CC‑G2‑CoverageGate‑1`. *Default threshold (pattern-local):* `k=3`. In both threshold branches, an explicit `HarvestPolicyRef` **MUST** fix the receiving question, population/scope, grouping, same-family equivalence and overlap rule before counting. The pack judgement cites that basis, its distinct units and result; all consumers reuse it. Missing basis returns unassessable. Duplicate references add zero, and a threshold override changes neither units nor independent pluralism duties. The independent CC-G2-Pluralism-1 duties remain. If the defined gate fails, record the criterion, count and basis in `FlowRecord`. Repeat search or repair when an identified relevant source region or operation can make a worthwhile contribution; otherwise return the bounded supported claims, failed/incomplete pack judgement and exact remaining inquiry under :4.3. A selected exploration policy is pinned. | Makes the coverage judgement and its receiving-use limit explicit. |
 | **CC‑G2‑DistanceGate‑1**  | If a diversity‑by‑distance gate is used, the pack **MUST** pin `DistanceDefRef.edition` and the declared threshold (δ), and treat edits as RSCR‑relevant per `CC‑GCORE‑TRIG‑*` (delegation). If no such gate is used, the pack **SHALL** explicitly state that it is not used.                                                                     | Avoids implicit distance defaults and improves refreshability.                      |
 | **CC‑G2‑RSCR‑1**          | A conforming pack **MUST** emit canonical `RSCRTriggerKindId` causes (not free text) for edits to evidence surfaces, name/tokenization surfaces (e.g., UTS proposals/aliases), crossings, planes, edition pins, and harvesting policy pins (`HarvestPolicyRef`), per `CC‑GCORE‑TRIG‑1…TRIG‑4` (delegation).                                                                                      | Keeps refresh reason codes stable and typed.                                        |
 | **CC‑G2‑Ext‑GammaEpist‑1** | If `G.2:Ext.GammaEpistSynthesis` is used (i.e., any fusion/substitution is asserted), the pack **SHALL** expose the required pins listed in that extension and **SHALL NOT** redefine `Γ‑fold/Φ/penalty` semantics locally (cite governing definitions by delegation).                                                                                       | Keeps synthesis auditable without creating shadow specs.                            |
@@ -467,7 +471,7 @@ Source-qualified claims let CHR/CAL authors and G.5 selectors reuse a comparison
 
 **Practice question.** How should several downstream authors reuse a synthesis when new sources can change a consequential, unsettled comparison? The selected line keeps a question-bound source ledger, separable claims and explicit update causes; a living protocol is chosen when continuing evidence surveillance is worth its cost. A serious alternative is a well-reported static review with an explicit search date and a separately commissioned update. That alternative is sufficient for a stable question or a one-time decision and avoids maintaining a continuing review service.
 
-The [Cochrane Handbook, Chapter 22, §§22.2.3–4](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-22) supplies the conditional living-review line and its resource trade-off: priority, uncertainty and likely new evidence can justify frequent updates, while additional searching needs resources. **Adapt** this conditional choice in `HarvestProtocols`; declare the search/update policy rather than treating every G.2 pack as perpetually living. The clinical-review guidance does not establish coverage or evidence adequacy for an arbitrary engineering CG-frame.
+The [Cochrane Handbook v6.3 (2022), Chapter 22, §§22.2.3–4](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/archive/v6.3) supplies this earlier conditional living-review line and its resource trade-off: priority, uncertainty and likely new evidence can justify frequent updates, while additional searching needs resources. **Adapt** this conditional choice in `HarvestProtocols`; declare the search/update policy rather than treating every G.2 pack as perpetually living. The clinical-review guidance does not establish coverage or evidence adequacy for an arbitrary engineering CG-frame.
 
 The [PRISMA 2020 reporting guidance](https://www.prisma-statement.org/prisma-2020) supplies a shared reporting basis for the static-review comparator. Its [explanation of study selection](https://www.bmj.com/content/372/bmj.n160) distinguishes records, reports and included studies. **Adapt** the distinction to `CorpusLedger`, `FlowRecord` and the declared family units in §4.3: multiple source entries can concern one counted family. **Reject** treating a publication count or a completed flow diagram as proof of adequate family coverage. G.2's k threshold, lineage duties and FPF alignment rules remain local decisions, not PRISMA requirements.
 

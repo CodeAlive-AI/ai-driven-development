@@ -14,7 +14,7 @@ Begin with the changed premise and the particular opportunity claim that used it
 
 This is application-specific requalification shared by Construction and Advising. A changed recommendation returns to its actual advice owner for the affected follow-up question; changed source-currentness or publication work retains its direct owner.
 
-**Ordinary non-use boundary.** Reuse a current result when no material premise or receiving use changed. A new filename, link, date label, or layout alone does not require reconstructing opportunities. If the current question is only one source's currentness, use G.11; if it is one already-known evidence reliance, use A.10 and the direct subject guidance. Do not create an indefinite monitoring service to answer a bounded change.
+**Ordinary non-use boundary.** Reuse a current result when no material premise or receiving use changed. A new filename, link, date label, or layout alone does not require reconstructing opportunities. If the current question is only one source's currentness, use G.11; if it is one already-known evidence reliance, use the direct subject guidance and retain the support needed for that use. Apply A.10 when the source-to-use account remains implicit or must be replayable. Do not create an indefinite monitoring service to answer a bounded change.
 
 ### C.40.RQ:2 - Problem
 
@@ -61,7 +61,7 @@ If a credible change indicates a possible protection breach, follow the existing
 
 For one known opportunity, inspect how the changed premise supports its contribution, direction, comparison, reachability, retention, or advising boundary. Ask which action or conclusion would change if that premise no longer held. A source listed in the same bibliography may do no work in this claim; an uncited assumption may do substantial work.
 
-Use [A.10.1 — Revalidate Affected Uses When a Relied-on Source Changes](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when a changed source claim requires discovering and revalidating several receiving uses, especially when the receivers are not yet fully known. It supplies the bounded search frame, complementary source- and receiver-oriented discovery, coverage limits, direct-reliance test, and action-changing reach. Do not substitute a link scan for that result.
+Use [A.10.1 — Revalidate Affected Uses When a Relied-on Source Changes](../03-first-principles-framework-readme/_index.md) when a changed source claim requires discovering and revalidating several receiving uses, especially when the receivers are not yet fully known. It supplies the bounded search frame, complementary source- and receiver-oriented discovery, coverage limits, direct-reliance test, and action-changing reach. Do not substitute a link scan for that result.
 
 Keep the returned discovery conclusions distinct from the opportunity judgement. A confirmed dependent use needs a supported subject judgment or scoped blocker; an adequate existing result may supply it. The direct return can finish the question. Add a common account only when a receiver needs that overview, and group equivalent irrelevant mentions without separate exclusion records. An unresolved use or inaccessible source remains a gap. Do not call an uninspected branch unaffected or extend a local negative search result beyond its covered frame.
 
@@ -69,7 +69,7 @@ Follow an established dependency only while a receiving action or claim can chan
 
 #### C.40.RQ:4.3 - Obtain the result that changes the opportunity claim
 
-Use [A.15.9](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) for the missing external result: inspect an adequate existing result first and qualify its supported use for the present subject, configuration, use, and window. Retain a useful narrowed or conditional answer. Select a request through A.15.9 and C.11.DUA only when its obtainable contribution warrants the full acquisition burden. The supplier retains its Method and conclusion.
+Use [A.15.9](../03-first-principles-framework-readme/_index.md) for the missing external result: inspect an adequate existing result first and qualify its supported use for the present subject, configuration, use, and window. Retain a useful narrowed or conditional answer. Select a request through A.15.9 and C.11.DUA only when its obtainable contribution warrants the full acquisition burden. The supplier retains its Method and conclusion.
 
 Return to the opportunity contribution that the change actually affects. A changed receiving need may reopen C.40.PC's problem/contribution account. A changed support or finite configuration may require C.40.DC and C.40.JF. A defeated enabling relation may retire a C.40.OP stepping-stone claim while leaving the candidate's independent contribution useful. A changed recipient, conflict, consent, or disclosure condition reopens the actual advising engagement and its service boundary. Preserve an independently qualified domain result within its established scope, and reconsider a domain claim whose qualification itself depended on the changed condition.
 
@@ -113,7 +113,7 @@ Close this update when the inspected use has a supported disposition or an expli
 
 For an actual continuing use, state the observation or condition that would reopen its result and identify any responsibility on which that use relies. A completed reference repair needs no new observation arrangement. If later advice depends on future evidence, the observation, interpretation, access, timing, burden, and receiving response must be feasible under the actual advice and observation arrangement. A missed or late observation is a present reliance limit when that evidence was necessary.
 
-Use [G.11](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) for actual source currentness, decay, scoped refresh planning, or reporting. It does not decide the new domain result or replace the opportunity judgement. If the guidance itself fails across applications, return the bounded failure to its maintainer; a changed fact about one subject normally changes only that application.
+Use [G.11](../03-first-principles-framework-readme/_index.md) for actual source currentness, decay, scoped refresh planning, or reporting. It does not decide the new domain result or replace the opportunity judgement. If the guidance itself fails across applications, return the bounded failure to its maintainer; a changed fact about one subject normally changes only that application.
 
 **Recognition and assurance.** A usable update shows the changed premise, the inspected dependence, the current scope, and the next use or gap. Assurance requires support for the observation and subject result relied on, and for the authority needed by the receiving use. A recent date or a complete-looking trace does not establish any of them.
 
@@ -225,7 +225,7 @@ Keeping the earlier return, current qualification, and later authorized action s
 ### C.40.RQ:12 - Relations
 
 - **Receives from C.40.OI, C.40.NU, C.40.PC, C.40.DC, C.40.JF, C.40.OP and the applicable professional engagement Method:** the inquiry, characterization, contribution, direction, reachability, retained path, or advising boundary whose premise changed.
-- **Uses A.10 and A.15.9:** one-use reliance and bounded external-result qualification.
+- **Uses A.10 and A.15.9:** A.10 for a source-to-use account that remains implicit or must be replayable; A.15.9 for bounded external-result qualification.
 - **Uses A.10.1:** changed-source discovery and revalidation across actual receiving uses, with coverage and independently governed subject results.
 - **Returns to C.40.PC, C.40.DC, C.40.JF, C.40.OP, the applicable professional engagement Method and holder practices:** the smallest opportunity or relationship question affected by the new conditions.
 - **Uses C.11.CRC:** changed finite comparisons with complete coordinates and actual or conditional stage-specific baselines.

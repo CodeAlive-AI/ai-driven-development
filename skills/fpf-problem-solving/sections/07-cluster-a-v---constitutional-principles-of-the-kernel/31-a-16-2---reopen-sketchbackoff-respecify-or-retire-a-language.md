@@ -50,16 +50,16 @@ Make the following content recoverable for each retreat or retirement move; add 
 - and successor information when the receiving use needs it. Identify a successor only under its applicable relation; distinguish a no-successor result supported by a negative criterion or complete closure basis from an unresolved successor question.
 
 #### A.16.2:4.3 - Status and relation discipline
-Reconsider each route selection, endpoint or gate conclusion, publication availability, current-use or retirement claim that depends on the changed basis. Revise those no longer supported and preserve unaffected claims. A past test result remains a historical fact; distinguish it from whether its conclusion still applies to the current use. The move does not by itself establish a change in authority, responsibility, permission, or commitment. If one of those relations does change, name its exact predicate, participants, object or action, scope, interval, and ending or instituting act under its direct pattern.
+Reconsider each route selection, endpoint or gate conclusion, publication availability, current-use or retirement claim that depends on the changed basis. Revise those no longer supported and preserve unaffected claims. A past test result remains a historical fact; distinguish it from whether its conclusion still applies to the current use. The move does not by itself establish a change in authority, responsibility, permission, or commitment. If one of those relations changes, establish the change under its direct predicate, with its actual participants and the scope, interval, or instituting or ending act the rule requires.
 
 If only one route claim, scope assumption or operational use fails, retain the surviving content. Follow its actual dependencies under §20 instead of resetting the entire publication.
 
 ### A.16.2:5 - Archetypal Grounding
-**Tell.** Backoff is admissible when the current publication form over-commits. Retirement is not erasure; it says that the exact cue, episteme, publication, or branch is no longer current for the named use while preserving its history.
+Backoff is admissible when the current publication form over-commits. Retirement is not erasure; it says that the exact cue, episteme, publication, or branch is no longer current for the named use while preserving its history.
 
-**Show (System).** On a rollback cue, a practitioner may reopen a prior decision path instead of pretending the original operationalization still holds, or retire one branch once a better-supported successor line has taken over.
+**System case.** On a rollback cue, a practitioner may reopen a prior decision path instead of pretending the original operationalization still holds, or retire one branch once a better-supported successor line has taken over.
 
-**Show (Episteme).** A formalized hypothesis may sketch-backoff to a cue pack when its framing collapses under new exemplars, or it may respecify its route specification while leaving slot-explicit epistemic precision repair to governing patterns.
+**Episteme case.** A formalized hypothesis may sketch-backoff to a cue pack when its framing collapses under new exemplars, or it may respecify its route specification while leaving slot-explicit epistemic precision repair to governing patterns.
 
 ### A.16.2:6 - Bias-Annotation
 The pattern pushes against false linear progress narratives. The cost is that teams must expose when closure, route selection, endpoint-use disposition, publication availability, or current use is being relaxed, replaced, or retired.
@@ -124,7 +124,7 @@ When retreat affects governing patterns such as `A.6.P`, `A.6.A`, `C.16.Q`, or `
 `reopen` usually preserves the family and much of the surrounding structure while withdrawing closure. It reintroduces rival possibilities without claiming that the entire earlier publication was inadmissible.
 
 #### A.16.2:17.2 - Sketch-backoff
-`sketchBackoff` withdraws the closure, route selection or stronger-use disposition that the available grounds no longer support; it preserves the historical fact of any earlier test. It typically preserves witnesses, exemplars, or cue anchors while withdrawing the over-committing publication form. An actual authority relation changes only through its own predicate and act, not merely because the form changed.
+`sketchBackoff` withdraws the closure, route selection or stronger-use disposition that the available grounds no longer support; it preserves the historical fact of any earlier test. It typically preserves witnesses, exemplars, or cue anchors while withdrawing the over-committing publication form. Establish any change in authority under its own predicate and facts, including an act when required; a changed publication form alone does not establish that change.
 
 #### A.16.2:17.3 - Respecify
 `respecify` keeps the broad family but changes framing scaffold, route specification, or facet-profile reading. It is neither pure retreat nor silent edit: it retains the supported content while identifying any changed episteme under C.2.1. Assert continuity only when its relation obtains; apply governing patterns for semantic slot repair.

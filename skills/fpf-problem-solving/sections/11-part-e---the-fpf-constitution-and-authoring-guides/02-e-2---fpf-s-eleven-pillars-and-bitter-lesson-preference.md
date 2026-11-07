@@ -38,7 +38,7 @@ FPF rests on **eleven binding pillars**. Every artefact, pattern, and design-rat
 | **P‑10** | **Open‑Ended Evolution**       | Keep justified improvement, revision, replacement and branching possible. Choose continuation under the use’s cost and safety constraints; permit retention, local stopping and retirement with explicit reasons and reopen conditions.               |
 | **P‑11** | **State‑of‑the‑Art Alignment** | The kernel and extension domain-specific patterns track reliable contemporary knowledge and update when the SoTA advances.                     |
 
-When a pillar-impact argument relies on mathematical structure, scale behavior, optimization, uncertainty, invariance, obstruction, or other first-principles modeling support, the applicable mathematical-lens use support path is `C.29`. The pillar claim remains governed by `E.2`; `C.29` only states the mathematical lens, preserved and lost structure, admissible use, neighboring-pattern exits, and stop condition that make the pillar support inspectable.
+A pillar-impact argument can use ordinary accepted mathematical theory directly. Use `C.29` when a separate question remains about choosing a mathematical representation, transferring a result, or relying on the represented structure. State the correspondence, preserved and lost structure, and limits needed for that use; `E.2` continues to govern the pillar claim.
 
 > Any DRR that contradicts a pillar must first amend this constitutional pattern.
 
@@ -46,7 +46,7 @@ When a pillar-impact argument relies on mathematical structure, scale behavior, 
 
 | ID         | Requirement                                                                                                                       | Purpose                               |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| **CC‑P‑1** | Every architectural pattern **must** list which pillar(s) it instantiates or refines.                                             | Guarantees constitutional grounding.  |
+| **CC‑P‑1** | An architectural pattern names the Pillars whose realization or conflict changes its design or use, with the substantive grounds required by CC‑P‑4. | Makes material constitutional relations recoverable. |
 | **CC‑P‑2** | Every DRR proposing a normative change **must** include a “Pillar Impact Analysis.”                                               | Makes constitutional review explicit. |
 | **CC‑P‑3** | Tooling and pedagogical artefacts **should** document which pillar(s) shape their design.                                         | Upholds P‑2 (Didactic Primacy).       |
 | **CC‑P‑4** | Assess the substance of every applicable Pillar constraint and any material conflict. Name the Pillars whose realization changes the pattern’s design or use; no minimum link count substitutes for that argument. | Grounds conformance in the obligations that matter to the pattern. |
@@ -100,7 +100,7 @@ These constructed cases distinguish the rule; they are not empirical findings ab
 
 ### E.2:8 - Relations
 * **Instantiates pillars:** P‑10, P‑11, P‑7, P‑1.
-* **Depends on:** **G.5/G.9** (admission/comparator/selector and parity harness), **G.11** (refresh telemetry), **A.15.1** (dated Work), **A.15.2** (planned work and budgets), **B.1.6** (resource aggregation), **C.16** (resource and cost measurement), and **A.10** (provenance), **C.18** (NQD-CAL), **C.19** (E/E-LOG), and **F.7/F.9** (Bridges, CL/Φ/Ψ). Planned **C.5** (Resrc-CAL) may later consolidate resource-use and work-cost guidance but supplies no current governing semantics.
+* **Depends on:** **G.5/G.9** (admission/comparator/selector and parity harness), **G.11** (refresh telemetry), **A.15.1** (dated Work), **A.15.2** (planned work and budgets), **B.1.6** (resource aggregation), **C.16** (resource and cost measurement), and **A.10** (provenance), **C.18** (NQD-CAL), **C.19** (E/E-LOG), and **F.7/F.9** (Bridges, CL/Φ/Ψ).
 * **Constrained by:** **E.5** Guard‑Rails (DevOps Lexical Firewall; Notational Independence; Unidirectional Dependency; Cross‑Disciplinary Bias Audit) and **E.3** precedence.
 
 ### E.2:9 - Definitions
@@ -112,7 +112,6 @@ These constructed cases distinguish the rule; they are not empirical findings ab
 
 * Gives contributors explicit constitutional obligations.
 * Delivers a falsifiable checklist for evaluating proposals.
-* Builds trust in high‑assurance domains through transparency.
 
 *Trade‑offs*
 
@@ -121,9 +120,9 @@ These constructed cases distinguish the rule; they are not empirical findings ab
 
 ### E.2:11 - Rationale
 
-The pillars are distilled from systems engineering, philosophy of science, software architecture, and ontology design. They interlock: *Cognitive Elegance* (P‑1) enables *Didactic Primacy* (P‑2); *Open‑Ended Kernel* (P‑4) and *FPF Layering* (P‑5) make *Open‑Ended Evolution* (P‑10) and *SoTA alignment* (P‑11) feasible; *Cross‑Scale Consistency* (P‑8) provides the algebraic backbone for *Scalable Formality* (P‑3). Together the pillars balance stability with change, rigor with accessibility, and abstraction with measurable impact.
+The pillars interlock: *Cognitive Elegance* (P‑1) enables *Didactic Primacy* (P‑2); *Open‑Ended Kernel* (P‑4) and *FPF Layering* (P‑5) make *Open‑Ended Evolution* (P‑10) and *SoTA alignment* (P‑11) feasible; *Cross‑Scale Consistency* (P‑8) provides the algebraic backbone for *Scalable Formality* (P‑3). Together the pillars balance stability with change, rigor with accessibility, and abstraction with measurable impact.
 
-`C.29` is a downstream support pattern for this constitution when mathematical first-principles structure is part of an argument about pillar support. It makes the structure, loss, and stop condition explicit while `E.2` remains authority over what counts as a pillar.
+`C.29` supports a pillar-impact argument when its mathematical representation choice, transfer, or reliance remains unresolved. It makes the relevant correspondence, loss and use condition explicit; `E.2` remains authority over the pillars.
 
 ### E.2:12 - Relations
 

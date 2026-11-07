@@ -2,7 +2,7 @@
 
 A team can organize its reasoning so that a changed model, new finding, or departing colleague leaves other useful results recoverable. Its participants, reusable Methods, shared descriptions, and actual Work each have a structure and a different way of changing. FPF helps the team keep those differences visible while improving the arrangement.
 
-FPF is an evolutionary architecture for thought. It is not a static inventory of concepts. It is an architecture of patterns, relations, checks, publication units, and improvement loops that can evolve as new problems, domains, AI tools, and state-of-the-art lines appear.
+FPF is an evolutionary architecture for thought. It is an architecture of patterns, relations, checks, publication units, and improvement loops that can evolve as new problems, domains, AI tools, and state-of-the-art lines appear.
 
 The analogy with evolutionary architecture in engineering is deliberate. Structures can make guided change possible while preserving chosen constraints. Their descriptions identify the characteristics that matter and the comparison basis for alternatives; decision records explain why a change was accepted.
 

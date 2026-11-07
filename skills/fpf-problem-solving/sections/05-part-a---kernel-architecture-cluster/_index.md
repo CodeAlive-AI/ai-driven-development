@@ -1,6 +1,5 @@
 # Part A - Kernel Architecture Cluster
 
-
 ## Contents
 
 - [A.0 - Generative Search Onboarding Glossary (NQD & E/E‑LOG)](01-a-0---generative-search-onboarding-glossary.md) (257 lines) — Use this when choosing or describing a generative search or selection. This glossary identifies the values, policies and set-result kinds needed by that operation, and connects them to their...

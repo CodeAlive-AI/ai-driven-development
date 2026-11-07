@@ -191,9 +191,11 @@ CausalityLadderRung =
   counterfactualComparisonRung
 ```
 
-- observational: passive observation, natural behaviour, or association;
-- interventional: action setting, experiment, policy change, or action effect;
-- counterfactual: counter-to-fact, potential-outcome, or unit-history-conditioned comparison.
+- observational: a distribution or association under observation of the naturally occurring process;
+- interventional: an outcome distribution or effect under a specified intervention, experiment or policy;
+- counterfactual: a joint comparison across alternative interventions, or an intervention outcome conditioned on the factual history of the same case.
+
+Potential-outcome notation alone does not select the third rung. The population average effect `E[Y(1)] - E[Y(0)]` uses two interventional marginals and can be a second-rung question. A joint claim such as `P(Y(1) > Y(0))`, or what would have happened to this case given its observed history, needs the corresponding third-rung information. See [Yang and Bareinboim, §2](https://causalai.net/r130.pdf) for the hierarchy's distinction among those distributions.
 
 Lower-rung data may contribute to a higher-rung result only through a replayable identification, bound, or other specialist result. The rung label itself supplies no support.
 
@@ -761,6 +763,6 @@ These are bounded selections for the illustrated questions. They preserve cheap 
 
 `C.29` may describe a mapping as abstraction-like, quotient-like, coarse-graining-like, simulation-like, or macro-model-like. It does not decide causal support. When intervention, policy, counterfactual, causal explanation, or causal decision use is current, apply C.28; otherwise record no causal-use claim or the exact blocker.
 
-[fpf-f0-2-5-5-ref]: https://github.com/ailev/FPF/blob/main/FPF-Spec.md#f0255---compare-causal-accounts-on-one-sensor-case
+[fpf-f0-2-5-5-ref]: ../12-part-f---the-unification-suite-concept-sets-sensecells-and-system-role/02-f-0-2---semantic-synthesis-across-source-ontologies.md#f0255---compare-causal-accounts-on-one-sensor-case
 
 ### C.28:End

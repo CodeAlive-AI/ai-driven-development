@@ -1,0 +1,81 @@
+# Management DPF Suite
+
+**Connect direction, commitments, resources and collective work.** Use this Suite when a promising direction, an accepted promise and the available means do not yet fit together, or a changed condition calls for a different commitment.
+
+The undertaking can be a company, public service, temporary collaboration or voluntary community. A shared employer is unnecessary, but contributions, resources and authority need an actual basis. A smaller promise, sufficient existing arrangement or justified refusal can be the useful result.
+
+This Suite contributes methods for organizing a **shared culture of thinking and acting among people and AI agents**: connecting their direction, contributions, commitments and conditions of work. Its methods can help sustain both current performance and open-ended development. The [Library account of this culture](../../library/reference/02-library-reference-1---one-connected-language-several-kinds-o.md#libraryreference13---a-canon-for-shared-humanai-culture) explains the common canon; actual roles and authority follow the working arrangement.
+
+Framework and method links open readable text on fpf.tools or Markdown sources in the repository. GitHub previews can truncate large files. For fpf.tools, check the [displayed source edition](https://fpf.tools/status) when the version matters.
+
+## How this Suite is organized and why
+
+**[Read the Management Architectural Reference](suite-reference/_index.md).** It explains why strategy, goals, commitments, operations, resources, communities and organizational change belong in one connected management account, what each contributes, and which related disciplines remain outside this Suite. Read it for the overall design and its alternatives; use a familiar sufficient method directly when that is all your task needs.
+
+## Choose an entry
+
+
+| Your question | Open |
+| --- | --- |
+| Which direction and investment are worth pursuing? | [Strategy](str/_index.md). |
+| How do we construct, pursue and revise goals or use a complete OKR/CFR practice? | [Goals and OKR (GOALS)](goals/_index.md); [GOALS.6](goals/14-goals-6---make-a-professional-goal-workable-for-the-person-p.md) for a human professional goal and [GOALS.7](goals/15-goals-7---assign-and-continue-goal-directed-ai-work.md) for AI work. |
+| How can production or service be arranged, and current work meet its promises? | [Operations Management](ops/_index.md); use [Organization Administration](adm/_index.md) for permissions, provision and obligations. |
+| How do we answer different clients without losing repeatability or scale? | [Manage client variation and develop repeatable offerings (CUST.1)](cust/14-cust-1---manage-client-variation-and-develop-repeatable-offe.md). Its constituent methods also work for a bounded offering, delivery or transition question. |
+| How do we connect hiring, pay, employee voice, protection and work transitions? | [Human Resource Management (HRM)](hrm/_index.md). |
+| How do we direct personal action, establish joint direction and sustain participation? | [Leadership](ldr/_index.md) and [Community Management](cb/_index.md), according to the missing result. |
+| Do roles, authority or capability allocations need to change? | [Organization Change Engineering](oce/_index.md). |
+
+For a connected case, the [Management Architectural Reference](suite-reference/_index.md) follows both a [voluntary practice network (Management.Reference:5.1)](suite-reference/06-management-reference-5---connected-uses.md#managementreference51---a-voluntary-practice-development-network) and [a new order in an operating business (Management.Reference:5.2)](suite-reference/06-management-reference-5---connected-uses.md#managementreference52---a-new-order-in-an-operating-business).
+
+## Keep strategic decisions connected
+
+The **[strategizing mantra (STR.18)](str/18-str-18---connect-strategic-reasoning-the-strategizing-mantra.md)** connects **strategic question → worthwhile contribution → explained way → feasible contributions and means → justified choice and commitment → realization, use and renewed questions**. An attractive direction may lack an explained way to obtain its intended result; individually affordable initiatives can compete for the same people; a useful preparation can finish without authorizing implementation. The developed account explains how to assemble and revise these answers, including when a technological possibility comes first or an existing answer is enough.
+
+## Keep operating decisions connected
+
+The **[operational mantra (OPS.23)](ops/28-ops-23---connect-operational-reasoning-the-operational-mantr.md)** connects local work to the result the operation must deliver: **accepted result → route and readiness → limiting conditions → release and feasible order → service, money and human conditions → observed result and changed conditions**. Its developed account explains the grounds, branches and returns. Increasing a team's activity can leave delivery unchanged; a changed resource window can require revising both starts and promises. Read this account when those decisions need to be made together, rather than treating the phrase order as a work schedule.
+
+## Frameworks in this Suite
+
+| Framework | What you can work on | Patterns | Text, M characters |
+| --- | --- | ---: | ---: |
+| [Strategy (STR)](str/_index.md) · [Markdown](str/_index.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.549 |
+| [Goal Construction and Regulation (GOALS)](goals/_index.md) | Construct worthwhile goals and achievement evidence, coordinate their pursuit and revise the practice; complete OKR/CFR and human and AI applications. | 9 | 0.149 |
+| [Operations Management (OPS)](ops/_index.md) · [Markdown](ops/_index.md) | Understand, construct and revise operating arrangements; manage work, provision, service and improvement under actual conditions. | 29 | 0.973 |
+| [Organization Administration (ADM)](adm/_index.md) · [Markdown](adm/_index.md) | Make requests, permissions, obligations, provision, records and provider coordination effective without unnecessary burden. | 15 | 0.302 |
+| [Corporate Governance (CGOV)](cgov/_index.md) · [Markdown](cgov/_index.md) | Constitute and exercise corporate powers, decisions, controls and accountability under applicable governing rules. | 17 | 0.272 |
+| [Management Accounting (MA)](ma/_index.md) · [Markdown](ma/_index.md) | Explain costs, capacity and economic consequences; forecast outcomes; develop activity designs from economic requirements and arrange how accounting information is used. | 10 | 0.211 |
+| [Corporate Finance (FIN)](fin/_index.md) · [Markdown](fin/_index.md) | Understand financial relations, construct financing terms and group arrangements, and compare value, liquidity, capital uses and exposure. | 23 | 0.642 |
+| [Marketing (MKT)](mkt/_index.md) · [Markdown](mkt/_index.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.415 |
+| [Customization and Productization Management (CUST)](cust/_index.md) · [Markdown](cust/_index.md) | Handle client differences while developing repeatable offerings, delivery and compatible transitions for existing clients. | 8 | 0.177 |
+| [Engineering Asset Management (EAM)](eam/_index.md) · [Markdown](eam/_index.md) | Compare use, renewal, replacement and other asset changes over time, including shared risk, cost and capacity. | 16 | 0.261 |
+| [Leadership (LDR)](ldr/_index.md) · [Markdown](ldr/_index.md) | Direct personal action; develop joint direction, participation and responsibility; obtain feasible contributions and first useful work. | 4 | 0.194 |
+| [Community Management (CB)](cb/_index.md) · [Markdown](cb/_index.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.527 |
+| [Organization Change Engineering (OCE)](oce/_index.md) · [Markdown](oce/_index.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.753 |
+| [Human Resource Management (HRM)](hrm/_index.md) | Construct and revise workforce conditions, assessment and selection, reward, voice, protection and continuing participation. | 5 | 0.140 |
+
+**Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.
+
+## Connect the contributions
+
+An attractive new order can require a revised offering, delivery capacity, a financial commitment and a change in who may authorize work. Each can look feasible alone while the combination exceeds shared capacity. The Suite helps connect those judgements and revise the offer, provision or commitments together. Use only the contributions needed by the undertaking; Corporate Governance and Corporate Finance retain their corporate conditions.
+
+[GOALS](goals/_index.md) keeps the desired results, achievement evidence, shared means and revisions connected within this arrangement. Its full language is part of the Suite, while a person or an AI can use a sufficient Method directly without an organization or an OKR cycle. The [goal account (Management.Reference:3.4)](suite-reference/04-management-reference-3---what-makes-these-fields-a-whole.md#managementreference34---goals-are-part-of-the-management-arrangement) explains the membership and its limits.
+
+Management can change an organization's functioning while retaining its organization chart. OCE develops deliberate organizational construction, but does not exhaust management. The [Architectural Reference](suite-reference/_index.md) explains this organizational specialization of engineering and its [coverage limits (Management.Reference:7)](suite-reference/08-management-reference-7---continuity-and-coverage.md).
+
+For maintained equipment, [Maintenance Engineering and Management](../engineering-dpf-suite/mnt/_index.md) supplies its full methods from Engineering. For personnel decisions and work participation, [Human Resource Management](hrm/_index.md) connects assessment, reward, voice and participation with the conditions of the work. When a work adjustment requires clinical judgement, HRM obtains qualified help and arranges the resulting work restrictions with those responsible for the work. People's own interests remain part of these decisions. For a person's capability, use [Human Capability Engineering](../human-capability-engineering-dpf-suite/_index.md). A manager may perform a method when capable or obtain its result from another contributor. The [organizational construction and maintenance account (Management.Reference:3.1)](suite-reference/04-management-reference-3---what-makes-these-fields-a-whole.md#managementreference31---organizational-construction-and-maintenance-use) explains how organizational choices and maintenance conditions constrain one another.
+
+## Organize conditions for continuing development
+
+A development undertaking may need strategy, participation, time, funding and authority as well as learning or research. This Suite helps arrange those conditions. It does not equate everyday operations, implementing a known practice or one organizational change with open-ended development.
+
+Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/117-c-40-od---construct-and-continue-open-ended-development.md) when acquired capability should open further attainable problems and the means to continue. An office, distributed responsibility at workplaces, an external provider and AI-assisted arrangements are alternatives to examine from the required methods and conditions.
+
+## Reading, use and reuse
+
+Read [Using FPF Library](../../library/USING-FPF.md) before applying the methods, with or without an AI assistant. Start from the contribution your work needs; the order of files is not a project sequence. Read a selected pattern's conditions, explanation and worked cases.
+
+Anatoly Levenchuk, with AI-assisted development and review. These publications continue to evolve; check the edition when relying on a particular result. Original content is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), subject to the [licensing terms](../../library/LICENSING.md). For a method, cite its framework, edition and complete PatternID.
+
+[All domain frameworks](../_index.md) · [FPF Library](../../library/_index.md)

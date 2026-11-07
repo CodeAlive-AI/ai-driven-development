@@ -49,9 +49,9 @@ Select dependencies by consequence. Ask what absence or failure would block the 
 
 #### C.40.JF:4.2 - Use the supplying practice's qualified result
 
-For each material dependency, state the required result and why it matters to this transition. Use [A.15.9 — Request and Use a Bounded Result from Another Practice](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) to inspect an existing result and use it at its supported strength for this receiving question. Retain a conditional direction where the needed premise is absent. Select a further request through A.15.9 and C.11.DUA only when its obtainable contribution warrants formulation, qualification, performance, delivery, interpretation, delay, and displaced work.
+For each material dependency, state the required result and why it matters to this transition. Use [A.15.9 — Request and Use a Bounded Result from Another Practice](../03-first-principles-framework-readme/_index.md) to inspect an existing result and use it at its supported strength for this receiving question. Retain a conditional direction where the needed premise is absent. Select a further request through A.15.9 and C.11.DUA only when its obtainable contribution warrants formulation, qualification, performance, delivery, interpretation, delay, and displaced work.
 
-A provider's offer, a published MethodDescription, and a qualified result about this subject answer different questions. Recover the result's subject and configuration, characteristic or condition, receiving use, evidence window, limitations, and uncertainty. If new Work is needed, the supplying practice retains its Method, competent performer, authority, and conclusion. Assess evidence-bearing reliance through the applicable A.10 result; a citation alone does not qualify the premise.
+A provider's offer, a published MethodDescription, and a qualified result about this subject answer different questions. Recover the result's subject and configuration, characteristic or condition, receiving use, any applicable evidence window, limitations, and uncertainty. If new Work is needed, the supplying practice retains its Method, competent performer, authority, and conclusion. Establish the source and support required for this premise use, reusing an adequate existing account. Use A.10 when the source-to-use account remains implicit or must be replayable.
 
 Use ordinary wording that preserves the difference between supported, conditional, unknown, and ruled out. Keep these distinctions at the claim they affect. If authorized access is absent, an access-dependent route cannot be described as available. That fact need not defeat a contribution obtainable without that access.
 
@@ -71,7 +71,7 @@ Use the direct domain analysis when the joint question needs scheduling, enginee
 
 Check what must happen to move from the starting configuration to the candidate, not just what could hold after arrival. Include material setup, learning, migration, evaluation, coordination, temporary loss of service, and continuing support. Distinguish the resources needed to find out whether a transition is possible from those needed to realize it.
 
-When comparing the finite change's contribution, use [C.11.CRC](https://github.com/ailev/FPF/blob/main/FPF-Spec.md): actual or relied-on starting configuration, finite change, candidate configuration, common horizon and scenarios, and the complete relevant result, resource, affected-System/distributional, and protected coordinates. Each coordinate keeps its declared scale and polarity. A gain in the intended result does not cancel a protected loss or establish Pareto improvement.
+When comparing the finite change's contribution, use [C.11.CRC](../03-first-principles-framework-readme/_index.md): actual or relied-on starting configuration, finite change, candidate configuration, common horizon and scenarios, and the complete relevant result, resource, affected-System/distributional, and protected coordinates. Each coordinate keeps its declared scale and polarity. A gain in the intended result does not cancel a protected loss or establish Pareto improvement.
 
 Name what reversal would require and what it would not restore. Removing a tool may restore the earlier operating arrangement while leaving setup time spent, information disclosed, or a supplier relationship changed. State whether the transition opens, preserves, closes, or delays a later option, and which part of that claim is evidenced or conditional.
 
@@ -201,7 +201,7 @@ Separating the qualification of each premise from the joint test also makes work
 ### C.40.JF:12 - Relations
 
 - **Receives from C.40.OI, C.40.OC, and C.40.DC:** the inquiry, relevant characterization, and direction/support candidates; adequate direct inputs suffice.
-- **Uses A.15.9:** the single method for obtaining and qualifying a bounded external result; source reliance retains its applicable A.10 qualification.
+- **Uses A.15.9:** the single method for obtaining and qualifying a bounded external result. Use A.10 when the source-to-use account remains implicit or must be replayable.
 - **Uses C.11.CRC:** finite configuration-relative contribution, complete coordinates, constraints, interactions, transition burden, reversibility, and option effects.
 - **Returns to holder and domain practices:** capability, access, support, transfer, feasibility, safety, authority, allocation, and realization results.
 - **Supplies C.40.OP:** bounded reachability, conditional or rejected combinations, and the exact gaps that change retained paths.

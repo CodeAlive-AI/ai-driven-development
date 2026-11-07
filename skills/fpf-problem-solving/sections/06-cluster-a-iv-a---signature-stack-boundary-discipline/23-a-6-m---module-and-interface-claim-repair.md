@@ -280,11 +280,11 @@ If the reopened material is no longer a module-interface relation, A.6.M keeps o
 
 ### A.6.M:5 - Archetypal Grounding
 
-**Tell.** A module claim concerns a holon as a structural unit of a larger whole under a boundary, interface specification and applicable conditions. Replacement needs a substitution policy; separate change needs a change policy.
+A module claim concerns a holon as a structural unit of a larger whole under a boundary, interface specification and applicable conditions. Replacement needs a substitution policy; separate change needs a change policy.
 
-**Show.** A software package, neural-network block, chiplet, power converter, document template or organizational unit may be a module candidate. Identify the whole, boundary and interface specification, and the policies required by the actual replacement or separate-change claim. The claim remains distinct from an independently obtaining direct relation.
+A software package, neural-network block, chiplet, power converter, document template or organizational unit may be a module candidate. Identify the whole, boundary and interface specification, and the policies required by the actual replacement or separate-change claim. The claim remains distinct from an independently obtaining direct relation.
 
-**Show.** A port or endpoint label, flow edge or function name may help locate relevant content. Evaluate that content under the applicable interface, correspondence or evidence rule; presence of the label alone establishes no compatibility.
+A port or endpoint label, flow edge or function name may help locate relevant content. Evaluate that content under the applicable interface, correspondence or evidence rule; presence of the label alone establishes no compatibility.
 
 Holon, relation, and episteme: the candidate module and whole retain their admitted holon kinds. A `ModuleInterfaceClaim` is content in a C.2.1 claim episteme and may concern the module holon, one selected dependency structure, or an independently admitted direct module relation occurrence; it is not that relation. The `InterfaceSpecification` is another independently identified episteme, and `interfaceSpecificationRef` only resolves it. Framework and module-description epistemes, authoring Work, publication occurrence, publication form, carrier, effective reference scheme, ClaimScope, and optional model-use structure retain separate identities and direct relations. Method descriptions enter as epistemes; method values enter through their Method pattern. Stratification and architecture-operation labels named by `C.30.STRAT` remain source labels unless `C.30.STRAT` recovers module-interface claim content that A.6.M can repair.
 
@@ -382,7 +382,7 @@ The pattern deliberately keeps measurement out of the first move. A module relat
 | `E.18` and `C.30.TFS-REL` | E.18 transformation-flow relations, path slices, crossings, and flow valuations are not interface specifications. |
 | `C.31` | Modularity and reusable-structure characteristics are governed by C.31 after relation repair when characteristic or measurement use is being made. |
 | `C.31.RSA` | Reusable-structure accounting is governed by C.31.RSA when reusable loci, bespoke residue, or report-only share claims are being made. |
-| `C.16` | Measurement, score, scale, unit, comparability, and evidence-stub admissibility remain C.16-governed. |
+| `A.17`, `A.18`, `C.16`, `C.16.P`, and `A.19.CPM` | Use A.17 for the Characteristic, A.18 for scale-operation legality, C.16 for measurement, C.16.P while measurement wording is ambiguous, and A.19.CPM for comparison. An evidence stub remains an optional locator into A.10/G.6 provenance. |
 | `A.10`, `B.3`, `A.20`, `A.21`, `C.28`, `E.20`, `G.5`, `C.11` | Evidence, assurance, gates, causal use, mechanism suites, set-return selection, and local decisions use their subject patterns; they are not A.6.M claims. |
 
 ### A.6.M:End

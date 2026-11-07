@@ -44,7 +44,7 @@ FPF expresses these shared grounds and reusable contributions through:
 5. three **core invariants** that every artefact must honour
 
    * **Evolvability** — change is expected and governed;
-   * **Cross‑Scale Coherence** — the same algebra binds parts to wholes at any level;
+   * **Cross‑Scale Coherence** — preserve shared distinctions across scales and qualify each part–whole algebra for its subject and the structure it preserves;
    * **Didactic Transparency** — each element exposes its own reasoning path.
 
 For a proposed rule or artifact, take one affected use through these steps:

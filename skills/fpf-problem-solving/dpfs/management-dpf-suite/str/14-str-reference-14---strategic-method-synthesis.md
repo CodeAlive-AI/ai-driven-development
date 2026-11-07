@@ -1,0 +1,11 @@
+## STR.Reference:14 - Strategic-method synthesis
+
+STR.5 and STR.6 distinguish reuse of a sufficient Method from search when the desired result or obtaining way is unclear. Their synthesis connects explanatory way construction and decision-relevant refinement with method plurality, useful intermediate possibilities and several work horizons. It imposes neither novelty nor a fixed decomposition depth on a sufficient existing use.
+
+Strategy can denote a Method, an explanatory model, a choice or a filter; these uses answer different questions. Here, continuous organization development relates strategic direction to changes in the organization's work and capabilities. The subject's way of obtaining a contribution is distinguished from the strategic practitioner's repertoire. Personal and public-service strategies retain their own purposes; corporate return is not imposed on them.
+
+The synthesis keeps five connected questions distinct: retaining and selecting useful search material; identifying what must develop and which means it needs; comparing the contribution of a whole finite arrangement; revising a problem account or comparison grounds; and preserving method reasoning while a practice continues through people and tools. Problem discovery and way generation can fail at different points; neither comparison nor execution substitutes for them. Complementary contributions may be needed at different times. Choosing a practice to transmit remains distinct from teaching it and observing adoption.
+
+This is a conceptual synthesis for strategic practice. The worked cases illustrate the proposed moves under their stated conditions; they are not reports of field validation. Claims about actual performance, historical events or changing technologies need evidence at the strength and scope on which a decision will rely. The strategic actions needed for this edition are explained here and in the pattern bodies.
+
+The [source-use notes](40-str-sources-1---source-use-and-currentness.md) retain the source qualifications. The [framework-guidance and professional-results account](15-str-reference-15---framework-guidance-and-professional-resul.md) explains when guidance or a qualified result supplies the needed contribution.

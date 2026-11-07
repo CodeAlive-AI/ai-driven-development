@@ -15,7 +15,7 @@ Use `F.18` when a name must become stable, public, Core-facing, reusable under m
 
 1. Recover the exact value and the pattern containing its defining or testing rule.
 2. Decide whether ordinary local wording is enough or later use needs a durable name.
-3. If a durable name is needed, compare the plausible names and record one Tech label, one Plain explanation, the selection reason, and the reopen condition in a `NameCard`.
+3. If a durable name is needed, compare the plausible names and record the Tech label, any Plain designation needed for a stated didactic use, the selection reason and reopen condition in a `NameCard`.
 
 If bare claim-bearing *role* still hides the object, use `E.10.ROLE`; if relation, slot, interface, port, or signature wording hides it, use section 5.6. Open section 4.4 only for a public, Core-facing, durable-across-context, or cross-context use. A public row is a later result, never part of the first naming move.
 
@@ -37,7 +37,7 @@ A name lets people refer to an independently governed value. The naming decision
 - `F.17` only as a later public-row consumer whose current entry and result must accept the exact F.18 objects named below;
 - `E.10.ROLE` when bare claim-bearing *role* hides its object; `A.6.5` and `A.6.RSIR` when relation, signature, interface, or slot wording hides the governed object; `A.6.P.WMR` when Work and Method boundary wording still hides the exact relation; and `A.15.1` when a candidate performed-work name still lacks occurrence grounding.
 
-The central subject is one `F.18` naming settlement for one exact already-governed value. `F.18` supplies the candidate comparison, selected Tech and Plain designations, declared naming use, and reopen conditions. The value's direct pattern retains its kind, identity, obtaining, and other subject semantics.
+The central subject is one `F.18` naming settlement for one exact already-governed value. `F.18` supplies the candidate comparison, selected Tech designation, any Plain designation needed for a stated didactic use, declared naming use and reopen conditions. The value's direct pattern retains its kind, identity, obtaining and other subject semantics.
 
 Its complete claim graph records the selected designation expressions, exact local sense, covered and rejected alternatives, rationale, lineage, and reopen condition.
 
@@ -71,7 +71,7 @@ Use a local-first naming protocol:
 1. Recover the governed value, its kind, and its subject pattern.
 2. Decide whether the expression should remain local or the current use needs a durable reusable name; apply `F.14` before adding a card, cell, or row.
 3. For a durable name, constitute one `NameCard` episteme under `C.2.1`; keep the value, its kind, the card, selected designations, exact local sense, and any basis or Bridge relation distinct.
-4. Choose the Tech and Plain labels from the smallest candidate set that covers the live head-term families and plausible neighbouring objects.
+4. Choose the Tech label and any Plain designation needed for a stated didactic use from the smallest candidate set that covers the live head-term families and plausible neighbouring objects.
 5. Record the covered alternatives, rejected candidates, selection reason, lineage, and the condition that reopens the settlement.
 6. Only for public, Core-facing, durable-across-context, or cross-context reuse, test the then-current `F.17` entry. It must accept the exact governed value and kind, NameCard episteme, by-value scheme, local sense, and any actual Bridge. Public or durable reuse alone creates no Bridge. When the named use relates different `<ReferenceScheme, LocalSenseClaim>` projections, F.17 must also accept the separate affirmative C.2.1 claim and current A.10 or B.3 reliance through the row rationale or notes rather than treating either as NameCard content. Its result must supply the required public row. If any required input or result is absent, retain the durable name and NameCard locally, mark the public row pending, and stop.
 7. Keep each cited subject, relation and later operation under its own rules. In particular, distinguish the Bridge, the separate claim about its named use, A.10 or B.3 reliance, and authorization. F.18 governs the naming settlement.
@@ -86,14 +86,14 @@ Every durable name must satisfy these invariants.
 | Direct pattern visible | Cite the pattern description containing the exact defining or constraining ClaimGraph for the value: for example A.2 with C.3 for a local system-role kind, A.2.1 for one system-role assignment species, A.6.5 for relation slot discipline, F.10 or A.19.SPR for status-value use, and A.10 for evidence use. |
 | Reference scheme visible | The NameCard carries its effective `EpistemeInterpretationScheme` value, with the rules needed to interpret the naming claims and local sense; a model-use structure, claim scope, project work, or other locality relation remains separate and appears only when the naming use needs it. |
 | Local sense visible | Every card states one exact local-sense claim under the effective scheme. A progressive-minimum card may state it directly as `LocalSenseRef`; an expanded card uses `LocalSenseCellRef` only when it resolves to the current F.17 scheme-based coordinate. Any basis episteme and local-sense basis relation remain separate. |
-| Two labels when reusable | The Tech label is precise; the Plain label helps ordinary readers. Both point to the same governed value. |
-| Candidate comparison visible | At least two plausible head families are considered unless a cited external standard fixes the label. |
+| Registers serve the use | The Tech label is precise. Add a Plain designation when the stated didactic use needs it; it names the same governed value under the same local meaning. |
+| Candidate comparison visible | Compare the live head families and plausible neighbouring-object readings that could change the choice. A cited external standard may fix the label; its fit to the governed value and intended use still needs examination. |
 | Bridge only between different semantic-context projections | Compare the exact `<ReferenceScheme, LocalSenseClaim>` pairs. Same scheme plus same claim plus another expression is a designation question and creates no Bridge. Same scheme plus another claim opens the F.9 question and, for a named use, the separate claim-and-reliance branch. Different scheme also opens only the Bridge question. No current correspondence use creates no Bridge or use claim regardless of scheme count. An obtaining Bridge establishes only the exact sense relation; it establishes neither governed-value identity nor authorization. |
 | Lineage visible | Rename, split, merge, retirement, and alias decisions are recorded. |
 
 #### F.18:4.2 - `NameCard` Fields
 
-A NameCard is complete when its full interpreted naming-settlement content (`ClaimGraph`) is recoverable under C.2.1. That value satisfies `NonemptyClaimContent`; membership alone does not supply the narrower naming-settlement claims required here. A compact card states the governed value and subject pattern, effective scheme and local-sense claim, one selected Tech/Plain pair, candidate set, rejections, rationale, lineage, and reopen condition. The subject pattern can make the governed kind unambiguous. These claims together constitute the complete semantic content; an omitted expanded field contributes no hidden claim. The compact cards `NC-U-RELATION`, `NC-CROSS-CONTEXT-RELATION-STRUCTURE`, `NC-PROBLEM-CRITERION-APPLICABILITY-RELATION`, and `NC-PROBLEMATIC-FOR-RELATION` use this form. Section 4.2a carries four expanded bounded-model-use cards.
+A NameCard is complete when its full interpreted naming-settlement content (`ClaimGraph`) is recoverable under C.2.1. That value satisfies `NonemptyClaimContent`; membership alone does not supply the narrower naming-settlement claims required here. A compact card states the governed value and subject pattern, effective scheme and local-sense claim, the selected Tech designation and any Plain designation needed for a stated didactic use, candidate set, rejections, rationale, lineage, and reopen condition. The subject pattern can make the governed kind unambiguous. These claims together constitute the complete semantic content; an omitted expanded field contributes no hidden claim. The compact cards `NC-U-RELATION`, `NC-PROBLEM-CRITERION-APPLICABILITY-RELATION`, and `NC-PROBLEMATIC-FOR-RELATION` use this form. Section 4.2a carries four expanded bounded-model-use cards.
 
 Use the expanded form only when the current naming use needs the additional position:
 
@@ -108,7 +108,7 @@ NameCard:
   LocalSenseCellRef: [add when a separately recoverable F.17 scheme-based SenseCell is current; otherwise LocalSenseRef carries the direct local-sense claim]
   LocalSenseBasisRelationRef: [add only for an actual separately governed basis relation]
   TechLabel:
-  PlainLabel:
+  PlainLabel: [add when the naming use needs a Plain designation]
   CandidateSet:
   CandidateCoverage: [add when family coverage, an open alternative, or a forced exception must be explicit]
   RejectedCandidates:
@@ -469,7 +469,7 @@ This naming use requires no correspondence between different local senses, so th
 
 #### F.18:4.3 - Candidate Selection
 
-Do not pick a durable label in one stroke or work toward a fixed candidate count. Unless a cited external standard fixes the label under §4.1, build the smallest set that covers at least two live head-term families. In either branch, examine every plausible neighbouring-object reading that could change the decision. Stop when each live family has a representative and no untested plausible alternative could overturn the selection. If a deadline forces closure while a plausible family or alternative remains untested, record that exception in `CandidateCoverage` and make it part of `RefreshCondition`.
+Build the smallest candidate set that covers the live head-term families and plausible neighbouring-object readings that could change the decision. A cited external standard may fix the label under §4.1. One supported candidate is enough when examination leaves no live alternative that could change the choice. Stop when the relevant comparison is sufficient. If a deadline forces closure while a plausible alternative remains untested, record that exception in `CandidateCoverage` and make it part of `RefreshCondition`.
 
 Judge candidates on:
 
@@ -490,7 +490,7 @@ The F.17 entry must be able to recover:
 
 - the governed value and its kind;
 - the locator for the pattern containing its defining or testing rule;
-- the NameCard episteme and selected Tech and Plain designations;
+- the NameCard episteme, selected Tech designation and any Plain designation needed for the naming use;
 - the effective by-value reference scheme, exact F.17 scheme-based SenseCell, and any separate local-sense basis relation;
 - any F.9 Bridge that actually obtains.
 
@@ -515,14 +515,7 @@ This settlement keeps naming aligned with the object already recovered. Bare *ro
 
 A durable system-role-kind name designates one exact local kind admitted through C.3 and A.2. Recover that kind through its candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. A practice or source reference can locate the definition or signal that two definitions should be compared; it does not identify the kind. Candidates are entities already admitted under A.1 as `U.System`. The Tech designation normally ends in `...SystemRole`, for example `ReviewerSystemRole`. `SystemRole` is compound morphology, not a universal governed value. The name creates no system admission, kind membership, assignment, agency, capability, or Work.
 
-A system-role-kind name must not include:
-
-- the holder of an assignment or the assignment occurrence;
-- capability evidence or skill level;
-- method or method-family selection;
-- performed Work;
-- status value or gate result;
-- source, evidence, publication, or assurance use.
+A system-role-kind name preserves the distinctions in its operative membership condition. Keep a current holder, particular assignment or Work occurrence, temporary status, and current evidence or assurance claim separate from the kind name. A skill, Method-family or other qualifier belongs in the label when the admitted kind's definition makes that distinction necessary, under §6.
 
 If a phrase such as `SeniorReviewer`, `NightOperator`, or source wording such as *evidence role* appears, recover the current claim first. The result may be an exact local system-role kind, one direct assignment occurrence, a status assertion, an evidence-use relation, a Work admission condition, another governed value, or a local source phrase. Do not force all of them into one system-role-kind name.
 
@@ -547,7 +540,7 @@ Treat an action nominal such as `testing` as a morphology cue, not a governed ki
 
 A durable name for performed Work points to one dated occurrence already grounded under `A.15.1`. An action word, plan row, local work-family label, or `U.WorkPlan` does not create that occurrence or an assignment.
 
-Every System claimed as an actual performer must already have its A.13 core, including the obtaining assignment for the exact action, scope, situation and window. A.15.1 independently admits the dated Work from its Method, temporal extent, containing System and other required direct facts. Add F.6 only when the naming account or receiving use needs precise attribution through that same assignment; the assignment must cover the Work interval, have the recovered performer as holder and retain every participant required by its declared species. Missing or failed F.6 leaves the independently admitted Work and its durable name intact. A compact naming account cites only the identities its receiving use needs. Add a continuity policy only when interruption, retry, a changed Method or binding, or competing designators make occurrence identity material.
+Every System claimed as an actual performer must already have its A.13 core, including the obtaining assignment for the exact action and any scope, situation and window required by the receiving use. A.15.1 independently admits the dated Work from its Method, temporal extent, containing System and other required direct facts. Add F.6 only when the naming account or receiving use needs precise attribution through that same assignment; the assignment must cover the Work interval, have the recovered performer as holder and retain every participant required by its declared species. Missing or failed F.6 attribution alone leaves independently admitted Work and its durable name intact; if the same finding invalidates a consumed A.13 or A.15.1 premise, recheck that premise and its dependent conclusions. A compact naming account cites only the identities its receiving use needs. Add a continuity policy only when interruption, retry, a changed Method or binding, or competing designators make occurrence identity material.
 
 Name any other result separately under its subject pattern, such as `A.15.PROD` for a production claim or `C.11` for a decision.
 When the underlying boundary wording still hides the relation, apply `A.6.P.WMR`. Use `F.18` only after an exact governed value and its use are recovered through a direct subject relation, an exact `A.6.1` application binding, or an exact local `A.15.PROD`/`A.6.RCD` claim. An exact non-assertability result retains its reason under `A.6.P.WMR:4.3`; it does not authorize durable naming of the attempted relation. A missing subject rule may identify a future pattern or declaration need; unavailable constructor semantics retain their separate derivation question. This section selects and tests a name. It does not define a second work-occurrence or work-result recovery algorithm.
@@ -597,7 +590,7 @@ Do not name these as system-role kinds or assignments unless that separate work-
 
 #### F.18:5.6 - Relation, Slot, Interface, Port, and Signature Names
 
-If a name touches relation, slot, interface, port, boundary, protocol, API, or signature wording, use `A.6.RSIR` and subject patterns.
+Use the direct subject pattern when the named relation, slot, interface, port, boundary, protocol, API or signature is already clear. Open A.6.RSIR when that wording still hides which object or relation is being named.
 
 - Use A.6.5 for relation slot discipline and `SlotSpec` declarations.
 - Use A.6.0 for signatures and law-defined declarations.
@@ -606,7 +599,7 @@ If a name touches relation, slot, interface, port, boundary, protocol, API, or s
 - `A.6.C`, protocol, service-access, and commitment patterns define or constrain API, protocol, and service-access cases.
 - Use C.2.1 for the identity and content of a claim-bearing interface-description episteme.
 - Use E.17 for a multi-view publication face or form.
-- Use E.24.PUB for availability of the selected edition, exact expression and carrier-bearing relations, and separate reusable-form conformance. A combined form-mediated availability claim retains one shared expression witness.
+- Use E.24.PUB for availability of the selected edition, exact expression and carrier-bearing relations, and reusable-form conformance when needed. A selected form-mediated availability claim retains one shared expression witness.
 
 Before naming a relation-facing object, keep these settlements distinct:
 
@@ -615,7 +608,7 @@ Before naming a relation-facing object, keep these settlements distinct:
 | reusable predicate-definition episteme | An `A.6.RCD` result records a reusable definition and `C.2.1` gives it one truthful exact `EntityOfConcern`; the name denotes the definition, not a relation kind |
 | derived or primitive relation kind | `A.6.RCD`, `E.24`, and `E.24.UK` have admitted the kind and its direct subject pattern states obtaining, applicability, and occurrence identity |
 | one obtaining relation occurrence | the subject pattern establishes obtaining and `A.6.REL` applies the admitted kind's identity rule |
-| formula, query, path, graph, diagram, or other representation element | `C.29` states what it represents and the relevant correspondence; its name does not name the represented relation by default |
+| formula, query, path, graph, diagram, or other representation element | The domain identifies the representation element and the correspondence needed by the receiving use; use C.29 when mathematical representation choice, transfer or reliance remains unresolved. Name the represented relation separately when that is the intended subject. |
 | designator or reference | the exact designation or reference relation resolves to the already settled object under its reference scheme |
 
 One token may be reused only where the reference scheme and local sense preserve these distinctions; it cannot collapse definition, kind, occurrence, representation, and designator into one object.
@@ -648,7 +641,7 @@ Recovered values:
 - `ShipbuildingMethod` or a method family under A.3.1; if a separately identified `ShipbuildingMethodDescription : U.MethodDescription` episteme is current, name it separately under A.3.2 only when its exact `EntityOfConcern` is that Method;
 - `HullAssemblyWork` under the Work patterns.
 
-Here `HullAssemblyWork` is a work-family label or a label in a plan or assignment episteme. A designator such as `HullAssemblyWork-42@2026-07-15T09:10–11:35` names performed Work only when each exact actual performer has its A.13 core and A.15.1 independently admits the occurrence from the Method actually used, temporal extent, containing System, affected hull referent, material bindings, resource-use facts, and any current continuity policy. If the naming record also expressly represents which assignment covered that Work, it cites that same obtaining A.13 assignment and adds the F.6 attribution relation; missing or failed F.6 leaves the Work name intact. A changed hull state, measurement result, evaluation verdict, delivery occurrence, or acceptance verdict remains a separately defined and separately named value.
+Here `HullAssemblyWork` is a work-family label or a label in a plan or assignment episteme. A designator such as `HullAssemblyWork-42@2026-07-15T09:10–11:35` names performed Work only when each exact actual performer has its A.13 core and A.15.1 independently admits the occurrence from the Method actually used, temporal extent, containing System, affected hull referent, material bindings, resource-use facts, and any current continuity policy. If the naming record also expressly represents which assignment covered that Work, it cites that same obtaining A.13 assignment and adds the F.6 attribution relation; missing or failed attribution alone leaves independently admitted Work and its name intact, subject to the premise recheck in section 5.3. A changed hull state, measurement result, evaluation verdict, delivery occurrence, or acceptance verdict remains a separately defined and separately named value.
 
 The local card is:
 
@@ -813,7 +806,7 @@ F.18 settlement: first keep the three recovered values and their local labels se
 | "Method algebra" treated as the method or plan. | Confuses a mathematical or representation lens with exact method-side relations, their optional A.22-selected `MethodRelationStructure`, a MethodDescription, WorkPlan, or performed Work. | Before naming, recover the exact relation, optional selected structure, method description, `C.29` lens use, work plan, or work occurrence through the rule that identifies or tests that value. |
 | Action nominal, WBS element, or Work Package treated as performed work. | Function/method morphology or intended-work content is mistaken for one dated occurrence; a nearby result is folded into the work name. | Recover the exact `A.15.1` occurrence basis, apply `A.6.P.WMR` if the relation is still hidden, and name neighboring production claims, measurement results, evaluation results, delivery occurrences, and acceptance verdicts separately. |
 | Role-looking interface wording for API, port, or boundary. | Uses role morphology to avoid recovering port, signature, boundary, or interface-specific relation. | Use `A.6.RSIR` and the subject-pattern locator; name the recovered relation, signature, port, or bounded interface value only when its exact admission predicate is satisfied. |
-| "Unscoped glossary." | A glossary episteme carries or lists words without an exact governed value and kind, by-value reference scheme, local sense, and any actually needed Bridge. | Use a `NameCard` for a durable local settlement. Open a public row only through the section 4.4 gate. When availability is current, use an `E.24.PUB` publication occurrence to make the selected row or glossary edition available through a distinct form and carrier. |
+| "Unscoped glossary." | A glossary episteme carries or lists words without an exact governed value and kind, by-value reference scheme, local sense, and any actually needed Bridge. | Use a `NameCard` for a durable local settlement. Open a public row only through the section 4.4 gate. When availability is current, establish the E.24.PUB claim for the selected row or glossary edition, its audience and bounded use through an expression and carrier. Include reusable-form conformance when needed. |
 
 ### F.18:9 - Conformance Checks
 
@@ -824,7 +817,7 @@ Use these checks before a durable name is reused in a pattern. If an F.17 row is
 | Governed value | The named value is recoverable and belongs to a subject pattern. |
 | Interpretation | The effective `EpistemeInterpretationScheme` value interprets the complete naming content and named local sense; model-use structure, claim scope, project work, and other locality relations remain separate. |
 | Kind | The kind is not inferred from spelling, source, or practice. A system-role kind is already recoverable through its candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. |
-| Candidate set | Unless a cited external standard fixes the label under §4.1, the smallest set covers at least two live head families. Every plausible neighbouring-object reading is examined; any forced untested exception is explicit in `CandidateCoverage` and `RefreshCondition`. |
+| Candidate set | The smallest set covers the live head families and plausible neighbouring-object readings that could change the choice. The retained label, including a standard-fixed label, fits the governed value and intended use. Any forced untested exception is explicit in `CandidateCoverage` and `RefreshCondition`. |
 | System-role boundary | System-role kind, classification, assignment, holder, capability, Method, Work, evidence, status, participant meaning, declaration place, and representation position are not collapsed. |
 | Relation-object boundary | Predicate-definition episteme, admitted relation kind, obtaining occurrence, representation element, and designator are named only after their separate settlements; relation slot, interface, port, and signature names cite the applicable direct patterns. |
 | Public row | A durable local card is enough unless public, Core-facing, durable-across-context, or cross-context reuse is current. The section 4.4 gate passes before any F.17 row is cited; the row is neither the value nor the publication occurrence. |
@@ -832,7 +825,7 @@ Use these checks before a durable name is reused in a pattern. If an F.17 row is
 | Local-plain non-use | A one-off claim about whether an exact Bridge suits a named use stays in ordinary wording. No `NameCard`, public claim kind, or durable CamelCase name is created unless an independent later reuse need reopens F.18. |
 | Lineage and reopen | Rename, alias, split, merge, and retirement history is recorded under `F.13`, and the card names the change or repeated reader error that reopens this settlement. |
 | Reader use | A practitioner can tell what to say, the relevant use limits, and where to go if the name is not enough. |
-| Work-name boundary | An action nominal remains a morphology cue: a hidden claim-bearing function-like use goes through A.6.F, while an already recovered value is named under its direct pattern. A WBS or Work Package label remains plan- or assignment-episteme content. A performed-Work name is accepted only for one occurrence whose exact actual performers have A.13 cores and which A.15.1 independently grounds. Add assignment and F.6 refs only when the naming record or receiving use expressly represents precise assignment-bound attribution; missing or failed F.6 leaves the Work name intact. Neighbouring production claims, measurement results, evaluation results, decisions, delivery occurrences, and acceptance verdicts stay under their direct patterns. |
+| Work-name boundary | An action nominal remains a morphology cue: a hidden claim-bearing function-like use goes through A.6.F, while an already recovered value is named under its direct pattern. A WBS or Work Package label remains plan- or assignment-episteme content. A performed-Work name is accepted only for one occurrence whose exact actual performers have A.13 cores and which A.15.1 independently grounds. Add assignment and F.6 refs only when the naming record or receiving use expressly represents precise assignment-bound attribution; missing or failed attribution alone leaves independently admitted Work and its name intact, subject to the premise recheck in section 5.3. Neighbouring production claims, measurement results, evaluation results, decisions, delivery occurrences, and acceptance verdicts stay under their direct patterns. |
 
 Regression checks:
 
@@ -843,7 +836,7 @@ Regression checks:
 
 ### F.18:10 - SoTA-Echoing
 
-**Question and selected answer.** How should one already identified value receive a durable name without turning a convenient word into a different object or making every local phrase into a maintained record? Under `E.8:11`, the best-known answer for this bounded use is a local-first settlement: stop at sufficient ordinary wording; otherwise compare plausible head-term families against the same value and reader situation, keep one Tech/Plain pair, and record why it was chosen and what would reopen it.
+**Question and selected answer.** How should one already identified value receive a durable name without turning a convenient word into a different object or making every local phrase into a maintained record? Under `E.8:11`, the best-known answer for this bounded use is a local-first settlement: stop at sufficient ordinary wording; otherwise compare plausible head-term families against the same value and reader situation, keep the Tech designation and any Plain designation needed for a stated didactic use, and record why it was chosen and what would reopen it.
 
 **Serious alternative.** A compact preferred-label entry with alternatives and a scope note is a low-cost alternative. [SKOS Reference, lexical labels, documentation, and mapping properties](https://www.w3.org/TR/skos-reference/) supplies that comparator and the useful separation of labels, concepts, notes, and mappings. It can carry a careful explanation and does not claim that a shared label proves identity. F.18 does not reject it for lacking FPF field names or require a different storage format.
 

@@ -248,16 +248,9 @@ A network diagram, member graph, mathematical description, publication, or `Tran
 
 ```text
 functionalStructureViewRef: exact view episteme about required effects and dependencies
-functionalElementClaimRefs?: not used; no filled functional-element claim is current
 functionalBehaviorClaimRefs?: required-effect claim `authorize payment`
 requiredOrDesiredEffectClaimRefs?: required-effect claim `authorize payment`
-actualTransformations?: not used; no A.3.4 actual change is claimed
 selectedTransformationFlowStructureRefs: exact selected payment-authorization TFS
-transformerSideSystems?: not used
-candidateBearerRefs?: not used
-inputConditionRefs?: not used
-outputConditionRefs?: not used
-functionalPortRefs?: not used
 transformationFlowStructureViewRef: exact description/view episteme about the selected E.18 structure, path, crossing, or flow valuation
 transformationFlowStructureRef: TransformationFlowStructure@PaymentAuthorization
 selectedPathOrSliceRefs: path slices used for the architecture claim
@@ -265,6 +258,8 @@ correspondenceClaimOrRelationRefs: bounded claim that the required effect corres
 stopOrReturnCondition: stop at the bounded correspondence claim; open actual transformation, Work, evidence, gate, or decision use only through its direct predicate
 nonAdmissibleUse?: flow diagram as functional architecture itself
 ```
+
+This required-effect account asserts no actual transformation.
 
 Filled use record:
 
@@ -274,29 +269,17 @@ architectureRelationOccurrenceRefs: exact obtaining CheckoutService architecture
 architectureClaimRefs: bounded CheckoutService architecture claim when current
 selectedArchitectureStructureRefs: exact selected request-handling and payment-authorization structure
 architectureStructuralViewRefs: exact CheckoutRuntimeFlow view episteme
-architectureDescriptionRefs: not used; durable description adequacy is not being evaluated here
 functionalStructureViewRefs: exact CheckoutRequiredEffects view episteme
-functionalElementClaimRefs: not used
 functionalBehaviorClaimRefs: required-effect claim `authorize payment`
 requiredOrDesiredEffectClaimRefs: required-effect claim `authorize payment`
-actualTransformations: not used
 selectedTransformationFlowStructureRefs: TransformationFlowStructure@Checkout-v3
-transformerSideSystems: not used
-candidateBearerRefs: not used
-inputConditionRefs: not used
-outputConditionRefs: not used
-functionalPortRefs: not used
 transformationFlowStructureViewRefs: exact PaymentAuthorizationPath description/view episteme
 transformationFlowStructureRef: TransformationFlowStructure@Checkout-v3
 selectedPathOrSliceRefs: PathSlice@request-to-payment-authorization
-crossingBundleRefs: not used
-flowValuationRefs: not used
-mathematicalDescriptionRefs: not used
 correspondenceClaimOrRelationRefs: claim that required effect `authorize payment` corresponds to the E.18 path slice; this is correspondence, not identity or actual change
 sourcePublicationOrEditionRef: model or generated-graph edition when the flow relation was extracted from one
 extractionOrProbeLocusRef: path-slice extraction or code-agent probe locus when current
 relationObservationClassRef: observed, inferred, or unknown relation class when current
-unexploredRegionRefs: not used
 hiddenRelationStructureReturnCondition: reopen if mathematical-description edition, path slice, relation observation class, or required-effect declaration changes
 admissibleUse: inspect whether the functional structure view depends on the E.18 path slice and whether an architecture split or correspondence claim is needed
 stopOrReturnCondition: stop at the bounded architecture-to-flow correspondence and reopen when its source, path, observation class, or required-effect declaration changes

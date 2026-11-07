@@ -131,7 +131,7 @@ The useful A.3.1.WT result is therefore not “SSFD works”. It is a set of rep
 
 #### A.3.1.WT:5.3 - EC-417 Early Stop
 
-The [full EC-417 application](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
+The [full EC-417 application](../04-first-principles-framework-architectural-reference/16-fpf-reference-16---big-fpf-storylines.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
 
 In `EC-417`, the three-release statement remains a WorkPlan. The three named-user retrieval, tailoring, and selection-support occurrences from A.15.8.MS establish only those support tasks; they do not perform a release or enact the candidate whole `C-EC-Release-v2`.
 

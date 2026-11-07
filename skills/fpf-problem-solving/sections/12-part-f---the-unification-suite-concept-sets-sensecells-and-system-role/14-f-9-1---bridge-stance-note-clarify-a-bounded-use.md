@@ -108,27 +108,27 @@ Publication does not cure a missing source. If a reader must return to a source 
 
 #### F.9.1:5.1 - Local rename inside one bounded use
 
-An obtaining Bridge and a separate affirmative bounded-use claim say that one operational label is suitable as a near-renaming of another in one proposed glossary use. A `localRename` stance can make that reading quick to recognize. It establishes neither cross-local identity nor unrestricted replacement outside the stated use. The claim says nothing by itself about authorization or whether anyone actually changed or used the glossary.
+An obtaining Bridge and a separate affirmative bounded-use claim say that one operational label is suitable as a near-renaming of another in one proposed glossary use. A `localRename` stance can make that reading quick to recognize. It establishes neither cross-local identity nor unrestricted replacement outside the stated use.
 
 #### F.9.1:5.2 - Operational reading of a control cue
 
 An F.9 `Partial-overlap` Bridge obtains between one exact operator-alarm sense and one broader control-cue sense. A separate affirmative bounded-use claim says that this Bridge is suitable for using the alarm term in one training explanation, in the alarm-to-control direction, under a rule that preserves the response trigger but not the complete control model, with zero tolerance for treating the term as implementation authority. A current A.10 reliance judgment says the available evidence supports relying on that narrow claim.
 
-A stance note may now say: “For this training explanation, read the alarm term as operationalizing the response-trigger part of the control cue; do not read it as the complete control model or as permission to change the controller.” The stance is `operationalizes`. Whether an instructor is authorized to use that wording and whether any training Work actually uses it remain separate. No Card is required; a Card may package the already separate objects if durable reuse pays.
+A stance note may now say: “For this training explanation, read the alarm term as operationalizing the response-trigger part of the control cue; do not read it as the complete control model or as permission to change the controller.” The stance is `operationalizes`.
 
 #### F.9.1:5.3 - Projection into a report
 
-An obtaining Bridge and a bounded-use claim say that the Bridge is suitable for showing one aspect of a rich operations concept in one proposed weekly-report use. The claim names the report use, direction, correspondence rule, and tolerated omission. A `projection` stance note may foreground that the report keeps only queue age and drops causal and capacity distinctions. Any authority to publish the report and evidence that a report actually showed that aspect remain separate.
+An obtaining Bridge and a bounded-use claim say that the Bridge is suitable for showing one aspect of a rich operations concept in one proposed weekly-report use. The claim names the report use, direction, correspondence rule, and tolerated omission. A `projection` stance note may foreground that the report keeps only queue age and drops causal and capacity distinctions.
 
 If readers must return to the source account before making a staffing or release decision, follow A.6.3.CSC: return to the source and do not use the report for those decisions. The stance note alone cannot set that boundary.
 
 #### F.9.1:5.4 - Partial analogy without substitution
 
-Two schools use different senses that share one explanatory pattern. For example, a TAE felt-sense phrase and a later formal term may share one stated explanatory feature while differing elsewhere. Their F.9 Bridge obtains, and an affirmative bounded-use claim says that the Bridge is suitable for one teaching comparison while rejecting method transfer. A `partialAnalogy` stance helps the reader notice the shared pattern. It neither makes the methods equivalent nor authorizes or proves a teaching act.
+Two schools use different senses that share one explanatory pattern. For example, a TAE felt-sense phrase and a later formal term may share one stated explanatory feature while differing elsewhere. Their F.9 Bridge obtains, and an affirmative bounded-use claim says that the Bridge is suitable for one teaching comparison while rejecting method transfer. A `partialAnalogy` stance helps the reader notice the shared pattern. It does not make the methods equivalent.
 
 #### F.9.1:5.5 - `nonEquivalent` is a warning, not a verdict generator
 
-An affirmative bounded-use claim says that the Bridge is suitable for placing two senses in the same comparison table. A separate negative claim rejects the proposed substitution use. A `nonEquivalent` stance may make that limit easy to see. The label does not authorize a table or show that one was produced; nor does it make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
+An affirmative bounded-use claim says that the Bridge is suitable for placing two senses in the same comparison table. A separate negative claim rejects the proposed substitution use. A `nonEquivalent` stance may make that limit easy to see. The label does not make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
 
 #### F.9.1:5.6 - Anti-case: the gloss comes first
 

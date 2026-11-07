@@ -39,7 +39,7 @@ Develop the note through its use in reasoning. Recover its meaning, formulate th
 
 **Recover a thought → make one useful connection → follow what it changes → leave a usable return.**
 
-A collection becomes useful through these continuations. Its size and number of links do not establish them.
+A collection becomes useful through these continuations.
 
 #### B.5.WN:4.1 - Enter through available material
 
@@ -91,9 +91,9 @@ Use the access arrangement actually available. A link that only the author can o
 
 Follow a connection while it can yield a useful next result under the available means. The result may be a refined question rather than an answer. Ask what evidence or construction could now distinguish the live possibilities. Continue with that contribution, or leave the question in a form that a later occasion can use.
 
-Two kinds of return are useful. A known deferred intention can be recalled at its next occasion. A semantic entry can expose a relevant thought while following a different question, including when its author has forgotten that it exists. Saving the note supplies neither return automatically.
+Two kinds of return are useful. A known deferred intention can be recalled at its next occasion. A semantic entry can expose a relevant thought while following a different question, including when its author has forgotten that it exists.
 
-For a deliberate deferral, retain the open question, the basis already obtained and what would make continuation worthwhile or necessary. Use a concrete reminder when there is a known occasion. Use a meaningful entry when the future occasion is not known. No invented deadline is needed merely to make an unfinished thought look managed.
+For a deliberate deferral, retain the open question, the basis already obtained and what would make continuation worthwhile or necessary. Use a concrete reminder when there is a known occasion. Use a meaningful entry when the future occasion is not known.
 
 Compare deferral with the present reliance. If today's choice consumes the missing premise, obtain it, choose a supported alternative or withhold the dependent conclusion. If no current use consumes it, the question may remain open. This is the useful resemblance to lazy evaluation: work can wait until its result matters, provided the later use can recover the dependency and initiate the needed work.
 
@@ -101,7 +101,7 @@ Compare deferral with the present reliance. If today's choice consumes the missi
 
 When a project or assigned question needs an answer, select the notes that can contribute to it. State the proposed conclusion and arrange the reasons in the order the recipient needs. A visible outline can keep the whole argument available while one passage is being written.
 
-Turn the selected material into that argument. Supply missing transitions, examine contrary material, remove repetitions and distinguish a useful example from evidence for a general claim. A chain of links is not yet the written inference. Composition often exposes a premise that seemed present only because the author knew the collection.
+Turn the selected material into that argument. Supply missing transitions, examine contrary material, remove repetitions and distinguish a useful example from evidence for a general claim. Composition often exposes a premise that seemed present only because the author knew the collection.
 
 A project may develop copies or selected passages differently from the retained notes. Keep a source return where it matters; the new use need not rewrite every original formulation. Conversely, if new evidence defeats a retained claim still used elsewhere, return that change to the affected reasoning. Follow the actual dependency rather than synchronizing every sentence merely because it was copied.
 
@@ -111,7 +111,7 @@ A useful collection can remain incomplete. An argument offered for reliance must
 
 At a useful stopping point, leave the result that was obtained and the next live question or operation when one remains. The later user should be able to recover why that continuation follows. A completed argument, a narrowed question and a deliberately abandoned conjecture have different further uses.
 
-Retain long-lived notes when their future use warrants it. Processed fleeting cues and completed project material can have other dispositions. Apply the relevant retention, confidentiality and access rules before sharing or discarding material. The method supplies no authority to preserve or expose restricted information.
+Retain long-lived notes when their future use warrants it. Processed fleeting cues and completed project material can have other dispositions. Apply the relevant retention, confidentiality and access rules before sharing or discarding material.
 
 For a handoff, select what the recipient needs to continue the particular reasoning: its present question, obtained result, consequential uncertainty, usable source returns and next contribution. Make abbreviated personal relations explicit where that reader cannot recover them. The whole private collection need not travel.
 
@@ -151,7 +151,7 @@ A rough second note asks whether adding two positive irrational numbers must als
 
 The new note retains the two values and that short justification. Its link to the first says: “The first proof requires a rational addend; replacing that condition by an irrational addend permits a rational sum.” Separating the counterexample from its positivity and irrationality grounds would make later use require reconstruction. A small connected note is sufficient.
 
-The assigned explanation also needs a case where two positive irrational addends have an irrational sum. Using `sqrt(2) + sqrt(2) = 2sqrt(2)` supplies it: if that sum were rational, division by the nonzero rational 2 would make `sqrt(2)` rational. The two cases now support the bounded answer that the sum can be rational or irrational. They do not classify products, limits or other operations.
+The assigned explanation also needs a case where two positive irrational addends have an irrational sum. Using `sqrt(2) + sqrt(2) = 2sqrt(2)` supplies it: if that sum were rational, division by the nonzero rational 2 would make `sqrt(2)` rational. The two cases now support the bounded answer that the sum can be rational or irrational.
 
 The writer's outline becomes: distinguish the rational-addend theorem; present the rational-sum counterexample; present the irrational-sum case; state the resulting limit of inference. Rewriting the notes into that order produces an explanation for the assigned question. The earlier theorem remains in the collection, with its actual condition.
 
@@ -159,7 +159,7 @@ A later question about squares can enter through the same concern with what an o
 
 #### B.5.WN:5.3 - Carry a developing question into operational case work
 
-An engineer has the notes in :5.1, including their corrected question about availability and actual use. They do not establish that every delay has the bench's cause. The engineer keeps an entry for “completed activity, receiving result still unavailable”.
+An engineer has the notes in :5.1, including their corrected question about availability and actual use. The engineer keeps an entry for “completed activity, receiving result still unavailable”.
 
 At an already authorized support handover, a case note says: “Nightly exports finish on time; the senior analyst removes duplicates every morning. The customer proposes buying faster workers.” Private row contents remain in the customer's system. The engineer's permitted work is to examine the support question, not to change that system.
 
@@ -173,11 +173,11 @@ Now use the subject information available in this constructed case. The current 
 
 A later signed configuration report says v2. The retained case question makes its contribution recognizable: it supplies the missing protocol fact. At the next permitted handover, the engineer reads the governing manual and the current case basis. Under the stipulated v2 rule, absence of the relevant receipt must still be confirmed before the proposed resend. The configuration result has answered one question; it has not performed that check or the action. The recipient receives the case-specific explanation and needed next contribution, not the engineer's entire note collection.
 
-Compare the full construction with the smaller incumbent. The ordinary case record already retains the duplicate episode, the protocol question and the eventual report. It is sufficient to resume this same support case; copying those facts into a second case ledger adds no needed capability. The longer-lived note contributes a separately developed question, its grounds and its limits across the bench, review and export occasions. Making that thought available costs the formulation and maintenance of the note and entry. When a practitioner can obtain the same question directly from the present record, no advantage of the additional network is established for that use. Keep the network contribution only for continuations that actually use it.
+The ordinary case record already retains the duplicate episode, the protocol question and the eventual report. It is sufficient to resume this same support case; copying those facts into a second case ledger adds no needed capability. The longer-lived note contributes a separately developed question, its grounds and its limits across the bench, review and export occasions. Making that thought available costs the formulation and maintenance of the note and entry. Use the present record directly when it already supplies the needed question. Keep the network contribution only for continuations that actually use it.
 
 Finally change the governing source. A new manual still describes v2 but additionally requires destination certification. The available report identifies v2 and says nothing about certification. Preserve that observation, the original duplicate episode and the question that connected them. Revise the conditional advice: the former basis is insufficient for this proposed resend. Obtain the certification contribution through an authorized route or withhold the action; the current protocol fact need not be collected again merely because another premise is missing.
 
-The note has helped construct and carry a question into work. The allowed encounter, configuration read, interpretation of the manual and controlled operational action remain actual contributions with their own conditions. A saved connection performs none of them by itself.
+The note has helped construct and carry a question into work. The allowed encounter, configuration read, interpretation of the manual and controlled operational action remain actual contributions with their own conditions.
 
 #### B.5.WN:5.4 - Keep the simpler project record when it suffices
 
@@ -189,7 +189,7 @@ Use the case directly. If several cases later expose a recurring unexplained rel
 
 The method favors work in which thoughts can be expressed, compared and revisited. Tacit performance can supply observations, but written description does not by itself teach the performance. Source familiarity affects how much context a useful note needs.
 
-The examples are constructed reasoning cases. They establish their explicit calculations and inferences, not a measured advantage of one note system. Assistance may produce a useful formulation while leaving the user's own ability to formulate and connect unchanged.
+The examples are constructed reasoning cases. They establish their explicit calculations and inferences. Assistance may produce a useful formulation while leaving the user's own ability to formulate and connect unchanged.
 
 ### B.5.WN:7 - Conformance Checklist
 
@@ -223,7 +223,7 @@ The practitioner spends time on recoverable formulation, meaningful entries and 
 
 A retained expression and a line of reasoning have different continuity conditions. An observation can remain unchanged while an interpretation is corrected; a question can retain its address while its proposed answer changes; a project argument can select and rewrite only part of the collection.
 
-Stable addresses and compatible units make those changes manageable. The reasoning comes from the operations on their content and relations. The collection therefore supports inquiry without determining the subject truth or requiring a uniform lifecycle for every note.
+Stable addresses and compatible units make those changes manageable. The reasoning comes from the operations on their content and relations.
 
 B.5.QD develops a question from a result, B.5.RR revises dependent reasoning, and A.6.3.RT.OE prepares an expression for an operation. The present method connects such work across retained formulations and later occasions, including the passage from a developing network to a recipient's argument.
 
@@ -237,7 +237,7 @@ B.5.QD develops a question from a result, B.5.RR revises dependent reasoning, an
 
 Luhmann's 1981 account, [*Kommunikation mit Zettelkästen*](https://ckrybus.com/static/papers/luhmann1981.pdf), is a historical example of sustained practice. Andy Matuschak's [daily working log](https://notes.andymatuschak.org/Daily_working_log) and [writing strategy](https://notes.andymatuschak.org/Executable_strategy_for_writing) provide inspectable digital-practice alternatives. Their descriptions are method accounts, not controlled efficacy comparisons.
 
-**Decision and cost.** Adopt stable addressability and recoverable source returns when later reasoning uses them. Adapt note unity to independent use and connected inference, and retain temporary project views when their argument develops differently. Reject a universal promotion ladder or note-count target: neither selects the useful result in these cases. The accepted burden is selective formulation and connection in exchange for an available later continuation. The comparisons establish these constructed uses; learning and general productivity remain empirical questions.
+**Decision and cost.** Adopt stable addressability and recoverable source returns when later reasoning uses them. Adapt note unity to independent use and connected inference, and retain temporary project views when their argument develops differently. Reject a universal promotion ladder or note-count target: neither selects the useful result in these cases. The accepted burden is selective formulation and connection in exchange for an available later continuation.
 
 Reopen the arrangement when useful thoughts repeatedly remain unfindable, mandatory structure suppresses a needed distinction, maintenance exceeds the contribution to actual work, or a simpler available practice supports the same continuation with less effort.
 

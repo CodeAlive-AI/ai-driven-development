@@ -1,0 +1,7 @@
+## PSDA.Reference:6 - Continue and change the practice
+
+A changed source or receiving condition reopens the claims that depend on it; preserve useful earlier results within their actual scope. A corrected concern, altered access condition or new model configuration can require the responsible practitioner to reconsider the answer. Obtain and interpret the relevant observation before choosing a response: a notice that a configuration changed does not establish that it is safe or effective.
+
+Use [PSDA.16](32-psda-16---decide-whether-and-how-to-change-problem-structuri.md) when a professional repertoire needs a justified change, [PSDA.17](33-psda-17---reconcile-simultaneous-problem-structuring-and-dec.md) when simultaneous inquiry activities interfere, and [PSDA.18](34-psda-18---deliberately-continue-and-change-problem-structuri.md) when a practice must be continued or changed across practitioners. An independent intellectual inquiry can use the general Method-development and cultural-reproduction guidance directly. These uses are conditional; a sufficient calculation or recommendation can finish without them.
+
+The useful gain is the ability to reconstruct a consequential distinction, obtain the model or comparison the question needs, and state the conclusion it supports. Successful communication, accepted advice and realized outcomes remain separate results. Continue from the changed knowledge and the actual question. Compare contemporary sources with the claims they support, and retain earlier traditions where their limits are understood.

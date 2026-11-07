@@ -29,11 +29,11 @@ The practical problem is to connect a worthwhile aid to a moment when participan
 
 ### C.41.OF:4 - Solution
 
-A.15.8.MS supplies methodological material and support across tasks; A.3.1.MI supplies a complete bounded introduction when that is the question. This Method constructs the particular checking occasion: when the question can change action, who can answer it, which observations and means are available, and how ordinary use will expose the remaining obstruction. It does not turn every checklist use into an organizational change project.
+A.15.8.MS supplies methodological material and support across tasks; A.3.1.MI supplies a complete bounded introduction when that is the question. This Method constructs the particular checking occasion: when the question can change action, who can answer it, which observations and means are available, and how ordinary use will expose the remaining obstruction.
 
 #### C.41.OF:4.1 - Locate an occasion that can change the work
 
-Trace the work around a consequential question. Before which action is the answer useful? When is the subject observable? Is there a natural pause, handover or decision point? Who can supply the answer, and who can use it? [FPF A.15.11](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a1511---make-applicable-methods-noticeable-in-work) helps make an applicable Method noticeable at a real work occasion; the current question is which cue can lead to a useful attainable action.
+Trace the work around a consequential question. Before which action is the answer useful? When is the subject observable? Is there a natural pause, handover or decision point? Who can supply the answer, and who can use it? [FPF A.15.11](../07-cluster-a-v---constitutional-principles-of-the-kernel/26-a-15-11---make-applicable-methods-noticeable-in-work.md) helps make an applicable Method noticeable at a real work occasion; the current question is which cue can lead to a useful attainable action.
 
 Choose an interaction mode for the actual question. In **read-do**, the aid prompts an action and its check during performance. In **do-confirm**, a capable performer first does familiar work and then confirms selected conditions. A mixed arrangement can fit different questions.
 
@@ -47,15 +47,17 @@ Put the current question, help and response mechanism in the working environment
 
 Recover the specific capability needed to answer. Counting supplied items may be easy; interpreting a specialist defect can call for another person. The applicable capability-diagnosis Method helps identify the capability demanded by the work. Nearby explanation can help a capable user apply a distinction; it does not create all missing competence.
 
-For human participants, inspect whether time pressure, hierarchy, mistrust or incentives discourage a truthful response. Explain the practical purpose, involve people who bear the burden, and change the arrangement that prevents use. An instruction to “be more diligent” does not diagnose the obstacle. Where introduction changes established organizational practice, the applicable organizational Methods supply assignment, enabling-relation and participation-condition work beyond this fitting Method.
+For human participants, inspect whether time pressure, hierarchy, mistrust or incentives discourage a truthful response. Explain the practical purpose, involve people who bear the burden, and change the arrangement that prevents use. Where introduction changes established organizational practice, the applicable organizational Methods supply assignment, enabling-relation and participation-condition work beyond this fitting Method.
 
-When the proposed change still needs examination and agreement, recover the proposal with those who supply and receive the contributions, let them obtain relevant advice, and establish the actual decision or voluntary agreement needed for this occasion. Return the accepted contributions and their conditions to the work: who supplies the observation, who has time to check, what help is available and who receives an unresolved answer. Confirming those arrangements can support first use; the trial below must still show whether the aid contributes to a useful handover. A new consequential objection or an unavailable resource returns to the affected decision before dependent use.
+When the proposed change still needs examination and agreement, recover the proposal with those who supply and receive the contributions, let them obtain relevant advice, and establish the actual decision or voluntary agreement needed for this occasion. Return the accepted contributions and their conditions to the work: who supplies the observation, who has time to check, what help is available and who receives an unresolved answer. Confirming those arrangements can support first use. When their contribution to a useful handover remains uncertain, use matching observations or the trial below to settle that question. A new consequential objection or an unavailable resource returns to the affected decision before dependent use.
 
 For an AI agent, provide the applicable description and criteria, usable tools, relevant retained observations and a way to express uncertainty. Mixed human/AI work needs a clear handover of unresolved judgement.
 
 #### C.41.OF:4.3 - Try the arrangement and repair the obstruction
 
-Use [A.15.8.MS](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a158ms---configure-methodological-support-for-work) to arrange enactment and [A.3.1.WT](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a31wt---design-and-interpret-a-method-work-trial) to try representative work. Observe whether the user encounters the aid, interprets the question, obtains the grounds and chooses a useful continuation. In shared use, observe who contributes, whether another participant understands and responds, and whether a raised concern changes the work where it matters. Examine the intended interaction and the aid's contribution separately: opening the form, reading its items and obtaining a useful conversation are different observations. Include a negative or unresolved case so the trial does not reward only effortless completion.
+Start from the fitting question and reuse observations that already answer it under the relevant user and work conditions. Use [A.15.8.MS](../07-cluster-a-v---constitutional-principles-of-the-kernel/23-a-15-8-ms---configure-methodological-support-for-work.md) for an unresolved support arrangement.
+
+When a new observation of representative work is needed, use [A.3.1.WT](../05-part-a---kernel-architecture-cluster/24-a-3-1-wt---design-and-interpret-a-method-work-trial.md). Observe whether the user encounters the aid, interprets the question, obtains the grounds and chooses a useful continuation. In shared use, observe who contributes, whether another participant understands and responds, and whether a raised concern changes the work where it matters. Examine the intended interaction and the aid's contribution separately: opening the form, reading its items and obtaining a useful conversation are different observations. Include a negative or unresolved case when the response to it can change the intended reliance.
 
 Choose observations from the unresolved question. An existing reliable record may settle whether the aid appeared at the intended occasion. That appearance alone does not settle whether a participant understood or acted on a concern; use evidence of that interaction when it matters. Use a bounded observation of representative work before choosing continuing oversight. Include the observer's effort and any change their presence makes to the work.
 
@@ -63,7 +65,7 @@ A first assisted use can reveal unfamiliar wording or a missing observation rout
 
 After the assisted occasion, examine an ordinary later use where continued reliance matters. Compare when the aid influenced the work with the observations and entries actually made. A late record can faithfully report an earlier observation; it is different from inventing answers for omitted checks. Repair the reason for bypassing or fictional completion, including poor fit, missing access or incentives that suppress truthful answers. Choose any continuing oversight through the actual work arrangement; a penalty is not a universal checklist-design remedy.
 
-Return a meaning defect to C.41.TF, a coverage defect to C.41, an inadequate check to C.41.QC, and a missing capability or resource to its supplying practice. Use [C.11.MV](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11mv---compare-the-worth-of-a-method-option) to compare worth and [A.3.1.MI](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a31mi---introduce-a-method-into-practice-and-decide-what-to-keep-or-change) to choose a change or retirement. Stop when the arrangement works at worthwhile cost; do not keep adding ceremony merely because some use remains irregular.
+Return a meaning defect to C.41.TF, a coverage defect to C.41, an inadequate check to C.41.QC, and a missing capability or resource to its supplying practice. When the fitting decision still needs a worth comparison, use [C.11.MV](25-c-11-mv---compare-the-worth-of-a-method-option.md). Use [A.3.1.MI](../05-part-a---kernel-architecture-cluster/28-a-3-1-mi---introduce-a-method-into-practice-and-decide-what.md) when a decision to change or retire the aid depends on its introduction and later use. Stop when the arrangement works at worthwhile cost; do not keep adding ceremony merely because some use remains irregular.
 
 ### C.41.OF:5 - Archetypal Grounding
 
@@ -77,13 +79,13 @@ On first use, “readable” turns out to be interpreted differently by two peop
 
 In the importer case, an agent is given criteria but no access to the stored catalogue after an error. Adding “verify preservation” to its prompt cannot produce that observation. The team supplies a bounded test environment and a tool that returns the before/after catalogue. If that tool fails, the agent records the unresolved question and returns it. A session restart restores the criteria and relevant evidence references in the agent's working context.
 
-These are constructed arrangements. A representative trial still has to establish whether their benefit warrants their interruptions and maintenance.
+These are constructed arrangements. In practice, judge their expected benefit and full burden on available grounds; use a representative trial when its observations can change that decision.
 
 ### C.41.OF:6 - Bias-Annotation
 
 The person introducing the list can mistake resistance for indifference. Non-use may be a rational response to poor timing, inaccessible information or repeated low-value work. Conversely, convenient local use can conceal burdens moved to a coordinator.
 
-Trial with the people and tools that will actually bear those costs. A successful assisted demonstration does not establish routine independent use or broad cultural adoption.
+When a trial is needed, include the people and tools that will bear those costs. A successful assisted demonstration does not establish routine independent use or broad cultural adoption.
 
 ### C.41.OF:7 - Conformance Checklist
 
@@ -92,7 +94,7 @@ Inspect the arrangement at an actual or representative occasion:
 - Can the user encounter the current questions when their answers still matter?
 - Are the needed observation, interpretation, participants and response means available?
 - Can a negative or unresolved answer be expressed and used without substitution by a reassuring entry?
-- Has representative use exposed interpretation, interruption and moved burdens, including any assistance?
+- Does the fitting judgement use adequate grounds for interpretation, interruption and moved burdens, with any assistance explicit?
 - Is the chosen repair directed at the observed obstruction, with a simpler sufficient arrangement retained where possible?
 
 ### C.41.OF:8 - Common Anti-Patterns and How to Avoid Them
@@ -122,12 +124,12 @@ Sections 4.2–4.3 and the packer case make that choice concrete. Another email 
 
 The study by [Facey and colleagues](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298224) supplies counterevidence about documentation versus observed use. [CheckPOINT](https://pubmed.ncbi.nlm.nih.gov/37734956/) supplies an alternative for observing team behavior; [Ridgeway and colleagues](https://doi.org/10.1016/j.pecinn.2026.100495) distinguish conversation-aid implementation from the practice it supports. Their instruments help select an observation that answers the question; they do not warrant observing every use or transferring a generic engagement score. [Urbach and colleagues](https://www.nejm.org/doi/abs/10.1056/NEJMsa1308261) found no significant mortality or complication reduction in their population-level before/after study, so introduction and completed forms cannot carry the outcome claim alone. Anthropic's accounts are bounded engineering demonstrations, not comparative human/AI effectiveness evidence.
 
-This choice accepts the cost of integration or assistance only for an obstruction a cheaper cue leaves in place. The sources do not rank all arrangements at equal effort. Section 4.3 therefore compares representative and later ordinary use, including observation cost and burdens moved elsewhere. Retain the existing arrangement when it already supports the needed action. Reopen the choice when access, capability, tools or incentives change, or when ordinary use fails despite successful assisted use.
+This choice accepts the cost of integration or assistance only for an obstruction a cheaper cue leaves in place. The sources do not rank all arrangements at equal effort. Section 4.3 therefore uses matching observations or needed comparisons of representative and later ordinary use, including observation cost and burdens moved elsewhere. Retain the existing arrangement when it already supports the needed action. Reopen the choice when access, capability, tools or incentives change, or when ordinary use fails despite successful assisted use.
 
 ### C.41.OF:12 - Relations
 
-C.41.TF supplies a usable template; C.41.UA enacts it at the arranged occasion. C.41.SR identifies shared contributions whose coordination affects fitting. [A.15.8.MS](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a158ms---configure-methodological-support-for-work), [A.3.1.WT](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a31wt---design-and-interpret-a-method-work-trial), [C.11.MV](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c11mv---compare-the-worth-of-a-method-option) and [A.3.1.MI](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a31mi---introduce-a-method-into-practice-and-decide-what-to-keep-or-change) supply enactment preparation, representative trial, worth appraisal and improvement.
+C.41.TF supplies a usable template; C.41.UA enacts it at the arranged occasion. C.41.SR identifies shared contributions whose coordination affects fitting. [A.15.8.MS](../07-cluster-a-v---constitutional-principles-of-the-kernel/23-a-15-8-ms---configure-methodological-support-for-work.md), [A.3.1.WT](../05-part-a---kernel-architecture-cluster/24-a-3-1-wt---design-and-interpret-a-method-work-trial.md), [C.11.MV](25-c-11-mv---compare-the-worth-of-a-method-option.md) and [A.3.1.MI](../05-part-a---kernel-architecture-cluster/28-a-3-1-mi---introduce-a-method-into-practice-and-decide-what.md) supply enactment preparation, representative trial, worth appraisal and improvement.
 
-A human-capability diagnosis Method is available when that separate result is needed. Separately selected organizational introduction can use the applicable Methods for assignments, enabling relations and participation conditions. [FPF A.15.11](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a1511---make-applicable-methods-noticeable-in-work) supplies noticing an applicable Method in the working situation.
+A human-capability diagnosis Method is available when that separate result is needed. Separately selected organizational introduction can use the applicable Methods for assignments, enabling relations and participation conditions. [FPF A.15.11](../07-cluster-a-v---constitutional-principles-of-the-kernel/26-a-15-11---make-applicable-methods-noticeable-in-work.md) supplies noticing an applicable Method in the working situation.
 
 ### C.41.OF:End

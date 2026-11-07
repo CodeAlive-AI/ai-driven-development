@@ -1,0 +1,7 @@
+# Decision Design Principles Framework Architectural Reference
+
+A useful answer can be smaller than the question that first brought people together. “Which pump should we buy?” may first need a distinction between a pump's rated capacity and whether assistance can actually reach the affected people. “What should we develop next?” may first need a worthwhile future contribution rather than a training plan or a model upgrade. Decision Design helps a recipient obtain and use those distinctions without claiming that one discussion, model or recommendation settles the whole situation.
+
+The framework serves practitioners and assisting agents who construct formulations and decision models or arrange a professional engagement, obtain suitable inquiry and analysis, preserve participation conditions and return qualified advice. They may be internal analysts, facilitators working with affected groups, or professionals advising another person or organization. A team can investigate a question for its own later decision while keeping the analysis and choice distinct. The development-direction advising profile adds a distinct recommending performer where that service relationship is the question.
+
+This language also supports the maintenance of the Methods and working arrangements that make this work dependable. Its pattern language offers a repertoire for recurring difficulties. The complete Methods address those difficulties; pattern numbers are addresses, and an actual inquiry selects contributions by the results it needs.

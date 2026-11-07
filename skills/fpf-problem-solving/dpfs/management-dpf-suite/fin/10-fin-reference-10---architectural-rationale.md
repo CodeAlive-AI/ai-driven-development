@@ -1,0 +1,5 @@
+## FIN.Reference:10 - Architectural Rationale
+
+The language retains domain procedures because a general choice method cannot calculate cash conversion, discount a project or reconcile an instrument's proceeds by itself. It reuses Management Accounting, Financial Domain Modeling and Operations Management for their independently useful results.
+
+Separate patterns distinguish value, allocation, funding and execution because the same case can obtain one result and fail another. FIN.10 owns construction of financing terms; FIN.23 owns the arrangement of financing relations across entities. FIN.19 remains the method for organizing interacting financial work. A different borrower or guarantee can change claims without changing the treasury team, while a new approval procedure can change work without changing any debt. In acquisition and divestment comparisons, FIN.9 combines supplied valuations with the price, transaction effects and financing conditions. Distributions and distress retain their own questions about claims and feasible capital routes.

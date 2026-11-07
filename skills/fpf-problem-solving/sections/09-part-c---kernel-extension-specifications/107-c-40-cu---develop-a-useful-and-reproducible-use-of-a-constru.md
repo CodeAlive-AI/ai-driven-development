@@ -72,7 +72,7 @@ For a question about what an indication reveals, C.16.MR constructs the response
 
 Keep two environmental questions separate. Changing the demand on a fixed arrangement can help infer what its environment supplies. Keeping the task fixed while changing the environment can compare two whole arrangements. The latter does not isolate one environmental property if other contributions also change.
 
-The domain must supply any valid reset, intervention, calibration or observation used by the comparison. For an unavailable operation, obtain or develop it, use a sufficient existing bound, or retain the explicit limitation. Naming a “control condition” does not create it.
+The domain must supply any valid reset, intervention, calibration or observation used by the comparison. For an unavailable operation, obtain or develop it, use a sufficient existing bound, or retain the explicit limitation.
 
 Return the outcome as a supported response, contradicted account, conditional relation or unresolved distinction, together with the material conditions. A negative result can reject the tested arrangement without establishing an intrinsic incapacity. Stop when the supported conclusion is sufficient for the receiving action.
 
@@ -161,7 +161,7 @@ For a stipulated local comparison, both ways meet the same load and protected se
 
 Suppose the authorized application retains B for a stable hundred-delivery run. The candidate's receiving requirement is delivery within ninety seconds, timed from the start of preflight checks to completed unloading. Under the supplied model, preflight needs six seconds, the guided path is thirty metres, travel speed is 0.5 m/s and loading plus unloading needs twenty seconds. Completion takes 6 + 30/0.5 + 20 = 86 seconds. The conditional deadline result is supported; real operating reliability still requires the relevant engineering evidence.
 
-The whole's operating Method includes preparing and inspecting the guide, confirming route availability and the permitted load, loading, initiating motion, recognizing arrival and unloading. A receiver who can press the start control but cannot recognize a displaced guide lacks a contribution the whole requires. The repair can be teaching that recognition, obtaining a qualified inspection or changing the guide so misplacement is prevented. Calling the operator “trained” does not select the repair.
+The whole's operating Method includes preparing and inspecting the guide, confirming route availability and the permitted load, loading, initiating motion, recognizing arrival and unloading. A receiver who can press the start control but cannot recognize a displaced guide lacks a contribution the whole requires. The repair can be teaching that recognition, obtaining a qualified inspection or changing the guide so misplacement is prevented.
 
 For a changed seventy-second requirement, the same construction fails. Merely repeating the no-update probe cannot repair it. A handling change to ten seconds would give 6 + 60 + 10 = 76 seconds and still fail. With the same path and preflight, handling would have to take at most four seconds; that is an engineering possibility to qualify, not a result supplied by the arithmetic. Alternatively, a permissible twenty-seven-metre path at the same speed with ten-second handling would give 6 + 54 + 10 = 70 seconds. Compare feasible changes or leave the new deadline unsatisfied. The earlier ninety-second use remains supported within its conditions.
 
@@ -192,7 +192,7 @@ Environmental redesign can hide burden transfers to installers, maintainers or o
 ### C.40.CU:7 - Conformance Checklist
 
 - The response, preparation, intervention, observation and relevant window are recoverable.
-- The receiving use states what result matters and which stronger claims it does not need.
+- The receiving use states what result matters.
 - Any selected contrast can distinguish a consequential uncertainty under supplied domain conditions.
 - The conclusion separates what was revealed from what was changed or supplied.
 - Candidate ways include the enabling and displaced contributions that can change their comparison.
@@ -224,7 +224,7 @@ The method exposes the cost of making a demonstration repeatable. Some promising
 
 The same intervention can reveal a response and help produce it. Its interpretation therefore has to remain connected to the use that consumes it. The use, in turn, determines which conditions to realize, which alternatives are worth comparing and what to preserve for another enactment.
 
-A list of inquiry, architecture and learning patterns leaves these decisions to the reader. The contribution here is their conditional organization: qualify only what the application needs, construct the whole arrangement, test its result, and return from transfer failure to the affected contribution. Constituent Methods retain their own authority and detailed operations.
+The contribution here is their conditional organization: qualify only what the application needs, construct the whole arrangement, test its result, and return from transfer failure to the affected contribution. Constituent Methods retain their own authority and detailed operations.
 
 ### C.40.CU:11 - SoTA-Echoing
 

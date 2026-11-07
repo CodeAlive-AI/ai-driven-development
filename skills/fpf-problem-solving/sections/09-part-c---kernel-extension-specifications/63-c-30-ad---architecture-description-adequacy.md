@@ -30,7 +30,7 @@ Use it to answer:
 
 **What this buys.** A reader can tell what each description is about, how its views correspond, where reused material came from, how fresh it is, what it may be used for, and which other claims need their own patterns.
 
-**First useful description-use output.** In one or two ordinary sentences, say which description is being used, what it describes, which reference scheme gives its terms meaning, why it is being used, which structure matters, what use is allowed, and whether this answers the question or leaves an architecture move to make. If you call it a `U.View`, also name the viewpoint and the conformance relation that actually holds. Stop if this answers the question. Ordinary wording can also be retained, compared, or handed on. Use `ArchitectureDescriptionUseCard@Project` when its organized fields help the receiving work:
+**First useful description-use output.** Say which description is being used, what it describes, which reference scheme gives its terms meaning, why it is being used, which structure matters, what use is allowed, and whether this answers the question or leaves an architecture move to make. If you call it a `U.View`, also name the viewpoint and the conformance relation that actually holds. Stop if this answers the question. Ordinary wording can also be retained, compared, or handed on. Use `ArchitectureDescriptionUseCard@Project` when its organized fields help the receiving work:
 
 ```text
 ArchitectureDescriptionUseCard@Project:
@@ -53,7 +53,7 @@ ArchitectureDescriptionUseCard@Project:
   architectureStructuralViewRefs?: FinSet(U.EpistemeRef constrained to ArchitectureStructuralView)
   viewpointConformanceRelationRefs?: FinSet(EpistemeViewpointConformanceRelationRef)
   correspondenceClaimOrRelationRefs?: FinSet(U.EpistemeRef | U.RelationRef)
-  sourceToUsePathRefs?: FinSet(U.RelationRef)
+  sourceToUsePathRefs?: FinSet(PathCitationRecordRef)
   sourceReturnCondition?:
   representationRefs?: FinSet(U.EntityRef)
   publicationOccurrenceRefs?: FinSet(EpistemePublicationRelationRef)
@@ -61,13 +61,13 @@ ArchitectureDescriptionUseCard@Project:
   carrierRefs?: FinSet(U.EntityRef)
   specificationUseBoundary?:
   admissibleUse:
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
   nextClaimPatternRef?: PatternRef
 ```
 
 `@Project` is only a retrieval cue. It creates no project, authority, context, viewpoint, parthood, or Work. When an actual project matters, `projectWorkOccurrenceRef` names the composite `U.Work` recovered under `A.15.6`. Include `architectureDescriptionProjectUseRelationRef` only when a named pattern defines how this description use concerns that Work and the relation actually holds. A Work reference alone is not project locality. If locality matters but the relation is not defined, return `missing-governor`; otherwise omit both project-local fields.
 
-The card is optional and does not identify the description. For its declared use, it retains the described thing, reference scheme, purpose, selected structures and their kinds, allowed and disallowed use, and the next architecture move or pattern needed for a separate claim. If it calls the description a `U.View`, it also retains the viewpoint and the conformance relation that actually holds. Use the fuller `ArchitectureDescriptionUseAccount` when its fields help keep the applicable correspondence, source use or return, freshness, specification use, publication, representation, or project locality inspectable. An adequate existing account need not be reformatted. Keep any authority claim in its own pattern and relation.
+The card is optional and does not identify the description. For its declared use, it retains the described thing, reference scheme, purpose, selected structures and their kinds, allowed use and any material limitation, and the next architecture move or pattern needed for a separate claim. If it calls the description a `U.View`, it also retains the viewpoint and the conformance relation that actually holds. Use the fuller `ArchitectureDescriptionUseAccount` when its fields help keep the applicable correspondence, source use or return, freshness, specification use, publication, representation, or project locality inspectable. An adequate existing account need not be reformatted. Keep any authority claim in its own pattern and relation.
 
 For publication use, each carrier reference resolves to an independently identified physical or digital entity whose actual state or realization yields the relevant expression. The carrier's domain supplies its identity rule. When the bearing claim needs inspection, recover its `PublicationExpressionBearingRelation` and exact expression under E.24.PUB. A reusable form has its separate conformance relation. A file object, immutable snapshot value and individual copy retain their different identity rules.
 
@@ -150,7 +150,7 @@ ArchitectureDescriptionUseAccount:
 
   sourceEpistemeRefs?: FinSet(U.EpistemeRef)
   sourceViewRefs?: FinSet(U.ViewRef)
-  sourceToUsePathRefs?: FinSet(U.RelationRef)
+  sourceToUsePathRefs?: FinSet(PathCitationRecordRef)
   sourceReturnCondition?
   freshnessClaimRefs?: FinSet(U.EpistemeRef)
 
@@ -161,7 +161,7 @@ ArchitectureDescriptionUseAccount:
   specificationUseBoundary?
   publicationUseBoundary?
   admissibleUse
-  nonAdmissibleUse
+  nonAdmissibleUse?
 ```
 
 The account points to an already constituted episteme; it is not the episteme and does not add slots to it. Its `claimGraphRef` resolves under C.2.1:4.2.6 to that episteme's complete semantic claim content; the designation and any graph representation remain distinct from the value. Together with `entityOfConcernRef` and `effectiveReferenceScheme`, it exposes the constituents and EntityOfConcern that identify the episteme. When the described thing is a relation occurrence or selected structure, the participant trace can still recover its holon. `architectureClaimRefs` carries relevant claim content or trace; `selectedStructureRefs` names the structures described, and `structureKindRefs` classifies them.
@@ -176,7 +176,7 @@ Minimum conformance for a retained `ArchitectureDescriptionUseAccount`:
 - any cited `ArchitectureStructuralView` is the same description episteme admitted as `U.View` only by a separately obtaining E.17.0 conformance relation to one exact viewpoint episteme;
 - cross-view composition uses explicit description-set use claims, correspondence claims, or independently obtaining relations; source use names source-to-use paths; a source-return condition appears only when stronger use requires return to a named source or exact defining or constraining ClaimGraph;
 - representation and publication fields identify their own objects and occurrences; they do not establish the description, architecture, selected structure, view membership, empirical grounding, or truth;
-- `admissibleUse` and `nonAdmissibleUse` say what the description can and cannot carry.
+- `admissibleUse` states what the description supports. Include `nonAdmissibleUse?` when a supported limit changes the receiving use.
 
 #### C.30.AD:4.1a - Traceable architecture multi-view description chain
 
@@ -204,7 +204,7 @@ If a needed link is absent, do not substitute a label, query result, bundle, dia
 
 An architecture description episteme is not a `U.View` because it is put in a multi-view set, authored under a viewpoint label, constructed by A.6.3, returned by a query, selected, bundled, diagrammed, rendered, or published. First identify the candidate episteme by its C.2.1 identity. Then identify one exact viewpoint episteme and test the fixed five-part E.17.0 predicate. Only a separately obtaining `EpistemeViewpointConformanceRelation(candidateEpisteme, exactViewpoint)` admits that same episteme as `U.View`.
 
-When a receiving use needs one multi-view description set, recover an exact collection of independently identified description epistemes under `C.13`; set membership is ordinary collection membership. A shared file, bundle, heading, graph, publication, or query result neither identifies that collection nor grants `U.View` membership. The collection keeps no second episteme identity for its members.
+When a receiving use needs one multi-view description set, identify the collection by its independently identified description members and membership rule. Use C.13 when a construction trace is needed; set membership remains ordinary collection membership. A shared file, bundle, heading, graph, publication, or query result neither identifies that collection nor grants `U.View` membership. The collection keeps no second episteme identity for its members.
 
 `C.30.AD` can record use of already recoverable architecture structural views inside one description set without minting a local relation kind:
 
@@ -216,10 +216,10 @@ ArchitectureDescriptionViewUseClaim content:
     orientation | comparison | implementationGuidance |
     assuranceInput | sourceUse | strongerUseReturn | declaredOther
   correspondenceClaimOrRelationRefs?: FinSet(U.EpistemeRef | U.RelationRef)
-  sourceToUsePathRefs?: FinSet(U.RelationRef)
+  sourceToUsePathRefs?: FinSet(PathCitationRecordRef)
   sourceReturnCondition?
   admissibleUse:
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
 C.2.1 constitution:
   entityOfConcernRef: exactly one architectureDescriptionSetRef
   effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
@@ -234,16 +234,16 @@ Common architecture-description views:
 | Transformation-flow view | `E.18` for the selected transformation-flow structure, path, crossing, or valuation; `E.18.2` for its graph-shaped mathematical description; `C.30.TFS-REL` when either is used by architecture. |
 | Control or LCA view | `C.30.LCA` when a control structure view is being used. |
 | Module or interface view | `A.6.M`, signature or interface patterns, and `C.30.ASV` when module-interface structure is being used. |
-| Mathematical-lens view | `C.29` for lens-use result and preserved and lost structure; `C.30.AD` only for the architecture-description use of the lens result. |
+| Mathematical-lens view | `C.29` when formulation, transfer or reliance remains unresolved; retain an adequate domain result directly. `C.30.AD` handles the architecture-description use and its needed correspondence conditions. |
 | Boundary, interface, or Markov-blanket view | `A.1`, `A.6.RSIR`, `A.6.P`, `A.6.0`, `A.6.5`, `A.6.M`, `A.6.F`, `C.26`, `C.26.3`, and `C.29` according to the recovered claim; `A.6.B` only when the recovered object is L, A, D, or E statement classification inside a boundary package. `C.30.AD` records only exact description identity, description-set use, cross-view correspondence, source-to-use path when a source is used, an applicable stronger-use return condition, freshness, representation, or publication use. |
 | Evidence or assurance reuse view | Use `A.10`, `B.3`, or the relevant evidence or assurance pattern for the non-architecture claim. |
 | Architecture residual view | Use `C.30.ILC` for a cross-scope or interlevel architecture residual. C.30.AD records only the view episteme, its conformance, description-set use, correspondence to other views, and allowed use; add a source-use relation only when a source is actually used. |
-| Multilevel-learning or frustration mathematical-lens view | `C.29` when the view contains a recoverable level mapping or scale mapping and preserved structure and lost structure; `C.30.AD` records only the architecture-description use of that lens result. |
+| Multilevel-learning or frustration mathematical-lens view | Recover the level or scale mapping and the distinctions its use preserves or loses. Use `C.29` for a remaining formulation, transfer or reliance question; `C.30.AD` records the architecture-description use. |
 | Residual-reducing candidate or optimization view | Use `C.32.MLAO` for the residual-reducing multilevel candidate frame, `C.32` for the candidate architecture palette, `A.19.CPM` or `A.19.SelectorMechanism` for comparison or selector-policy use, `C.18` and `C.19` for archive, front, or current-pool treatment, `G.5` for selected-set result declaration, and `C.11` for final local choice. Record with C.30.AD only the exact description identity, description-set use, cross-view correspondence, source-to-use path when used, applicable source-return condition, freshness, representation, publication use, or specification use. |
 
 #### C.30.AD:4.3 - Cross-view correspondence, source use, and return conditions
 
-Before combining two views, establish whether they describe the same holon, the same architecture-relation occurrence, the same selected structure, related structures, or different subjects. State that correspondence as a claim or cite a direct relation that actually holds; merely placing views in one file, list, model, or publication creates no correspondence. When source material enters the current use, record its source-to-use path. Add a return condition only when stronger use must go back to a named source or defining or constraining ClaimGraph.
+Before combining two views, establish whether they describe the same holon, the same architecture-relation occurrence, the same selected structure, related structures, or different subjects. State that correspondence as a supported claim or cite a direct relation that actually holds. When source material enters the use, identify the source and its contribution. Use `sourceToUsePathRefs` when that provenance needs a citable G.6 path: `PathCitationRecordRef` here means a reference to one G.6 `PathCitationRecord`, resolving its EvidenceGraph, path and applicable slice. That descriptive path cites independently established direct relations; it is not itself one of them. Add a return condition when a stronger use needs the named source or its defining claims.
 
 **Coarse-graining check.** A coarser description groups, omits, or summarizes distinctions found in another description or source. Before relying on it, name the described subject, the finer and coarser description structures, the mapping or correspondence between them, the distinctions kept and lost, and the intended use. These are facts about the descriptions and their use. They do not show that the subject itself has matching levels, parts, or relations. If the decision needs that subject-side claim, establish it separately through the pattern that defines or tests the subject relation; otherwise say only that the description was coarsened.
 
@@ -259,10 +259,10 @@ ArchitectureDescriptionCorrespondenceClaim content:
   preservedStructureRefs?
   lostStructureRefs?
   directCorrespondenceRelationRefs?: FinSet(U.RelationRef)
-  sourceToUsePathRefs?: FinSet(U.RelationRef)
+  sourceToUsePathRefs?: FinSet(PathCitationRecordRef)
   sourceReturnCondition?
   admissibleUse:
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
 C.2.1 constitution:
   entityOfConcernRef: exactly one architectureDescriptionSetRef
   effectiveReferenceScheme: EpistemeInterpretationScheme, byValue
@@ -304,7 +304,7 @@ ArchitectureDescriptionSpecificationUseAccount@Project:
   architectureDescriptionRef: U.EpistemeRef constrained to ArchitectureDescription
   sourceEpistemeRef?: U.EpistemeRef
   sourceViewRef?: U.ViewRef
-  sourceToUsePathRefs?: FinSet(U.RelationRef)
+  sourceToUsePathRefs?: FinSet(PathCitationRecordRef)
   representationRef?: U.EntityRef
   publicationOccurrenceRef?: EpistemePublicationRelationRef
   publicationFormRef?: U.EntityRef
@@ -315,11 +315,11 @@ ArchitectureDescriptionSpecificationUseAccount@Project:
     declaredOther
   claimPatternRefs?: FinSet(PatternRef)
   admissibleUse:
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
 
 ```
 
-This account records how an existing description or publication is used as a specification. It is not an episteme, relation, MethodDescription, Method, pattern application, or Work occurrence. `claimPatternRefs` cites PatternIDs for separate claims. When project locality matters, name the composite `U.Work` and include the project-use relation only if a pattern defines it and it actually holds. If locality matters but the relation is undefined, return `missing-governor`; otherwise omit both project fields. A project label or this account creates neither Work nor relation.
+This account describes how an existing description or publication is used as a specification. Its claim-bearing content can constitute an episteme under C.2.1; the record form alone establishes neither that identity nor the described use. `claimPatternRefs` cites patterns that define or constrain separate claims. When project locality matters, name the composite `U.Work` and the obtaining project-use relation under its defining pattern. If that relation is needed but undefined, return `missing-governor`; otherwise omit the project fields. Claimed Methods, MethodDescriptions and performed Work retain their own admission grounds.
 
 If specification use is also claimed to be a pattern-use recommendation, work-entry readiness, evidence, assurance, gate passage, performed work, work authorization, decision, causal use, or release authorization, use the pattern that defines or tests that other claim. The description remains only the description boundary.
 
@@ -404,7 +404,7 @@ After an actual placement change at t2, the t1 deployment description can remain
 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
-| Description-as-architecture | A document, diagram, model, graph, view set, or card is said to be the architecture or to create an obtaining architecture relation. | Recover the exact holon, `ArchitectureRelation` occurrence, or selected structure; keep the episteme, representation, publication, and source-to-use relation distinct. |
+| Description-as-architecture | A document, diagram, model, graph, view set, or card is said to be the architecture or to create an obtaining architecture relation. | Recover the exact holon, `ArchitectureRelation` occurrence, or selected structure; keep the episteme, its representation, the publication, the source-use account, and the direct relations it cites distinct. |
 | Viewpoint-as-structure-kind or view constructor | A stakeholder, role, concern, viewpoint label, authoring template, query, or bundle is used as if it named the selected structure or granted `U.View` membership. | Use `E.17.0` for exact viewpoint conformance and `C.30.ASV` for selected structure and kind. |
 | Multi-view fog | Many views are listed, but their separate C.2.1 identities, conformance relations, selected structures, or correspondence cannot be recovered. | Add the description and viewpoint references, conformance relations, selected structures, and correspondence claims or relations that actually hold. |
 | Coarse model as subject hierarchy | A grouped or lower-resolution description is treated as proof that the subject has the same levels, parts, or relations. | State the description-side grouping, mapping, preserved and lost distinctions, and allowed use; establish any subject-side relation separately. |
@@ -442,7 +442,7 @@ The pattern therefore specializes generic Description and publication machinery 
 | Views-and-Beyond and related architecture documentation practice treats views as stakeholder-relevant projections over architecture. | Mature reference and lineage source for view-based architecture documentation; not used as a mandatory current catalog. | Adopt view usefulness while requiring exact E.17.0 viewpoint conformance and structure-kind recovery through `C.30.ASV`; description-set use remains claim content or a separate relation that actually holds. | Disciplines `C.30.AD:4.1a`, `C.30.AD:4.2`, and the multi-view worked case: a view remains useful for a working concern without becoming the selected structure or a `U.View` by label. | No mandatory view catalog or local membership relation is imported, and view adequacy remains in `E.17.0` and `C.30.ASV`. |
 | `E.17.0` and MVPK publication machinery in FPF. | Internal FPF definitions and publication practices for views, viewpoints, publication occurrences, forms, carriers, and publication separation. | Reuse generic view and publication machinery instead of minting architecture-local copies. | Disciplines `C.30.AD:4.1a`, `C.30.AD:4.5`, `CC-C30AD-5`, and `CC-C30AD-6`: architecture-description identity and composition remain separate from representation, publication occurrence, form, carrier, and publication-currentness. | C.30.AD specializes architecture-description use; it does not replace E.17.0, E.17.1, E.17.2, E.17, E.24.PUB, or C.2.P. |
 | C4, arc42, ADR, model-card, and system-card practice makes architecture communication practical. | Practitioner-source family for familiar architecture publication and documentation forms. | Admit these as possible source publications, view publications, decision-description publications, transparency publications, or specification-use records. | Disciplines `C.30.AD:4.5`, worked cases, and anti-patterns: practitioners can use familiar forms while keeping source, representation, publication, description, architecture, evidence, gate, decision, work authorization, release authorization, and other non-description claims separate. | Template, card, graph, or diagram quality is not architecture adequacy by itself. |
-| Tool-generated architecture relation graphs and code-agent architecture probing expose useful but partial structure. | Emerging practitioner practice for recovering architecture-relevant relations from code, models, and generated analyses; currentness depends on the analyzed edition and tool run. | Treat generated graphs as representations or source-derived descriptions with observed, inferred, and unknown relation boundaries. | Disciplines `C.30.AD:4.3`, `C.30.AD:5`, and `CC-C30AD-4`: a generated output can guide structure recovery and next architecture moves only through a named source-to-use path; stronger use activates the declared source-return condition. | Generated relation coverage does not become an obtaining subject relation, `U.View`, proof, gate passage, safety assurance, or complete architecture. |
+| Tool-generated architecture relation graphs and code-agent architecture probing expose useful but partial structure. | Emerging practitioner practice for recovering architecture-relevant relations from code, models, and generated analyses; currentness depends on the analyzed edition and tool run. | Treat generated graphs as representations or source-derived descriptions with observed, inferred, and unknown relation boundaries. | Disciplines `C.30.AD:4.3`, `C.30.AD:5`, and `CC-C30AD-4`: a generated output can guide structure recovery and next architecture moves through recoverable source material, its actual contribution and the limits relevant to the use. Cite a G.6 path when replay requires it; stronger use activates the applicable source-return condition. | Generated relation coverage does not become an obtaining subject relation, `U.View`, proof, gate passage, safety assurance, or complete architecture. |
 
 ### C.30.AD:11 - Relations
 

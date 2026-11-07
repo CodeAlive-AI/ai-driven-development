@@ -24,7 +24,7 @@
 
 **Conformance Checklist (E.10.P).**
 * **CC‑LEX‑P.1** New Core text **SHALL NOT** introduce an unregistered conceptual prefix.
-* **CC‑LEX‑P.2** Each occurrence of a registered prefix **SHALL** cite the applicable defining anchor on first use in a section.
+* **CC‑LEX‑P.2** Keep the prefix's meaning and applicable defining anchor recoverable. Cite the anchor where the prefix or member's meaning would otherwise be unclear; an adequate earlier definition or reference can be reused.
 * **CC‑LEX‑P.3** Incidental examples that expand a prefix into a concrete URI or machine syntax **MUST** mark the expansion *informative* and locate it in Tooling/Pedagogy. A pattern governing that concrete syntax may include necessary examples under E.5.1; the conceptual prefix alone establishes no machine binding.
 
 **Relations.** Uses E.10:8.3 for namespace reservation, E.24.UK:4.1 for U-kind admission, B.1.3:4.2 and B.1.4:3 for the listed Γ operators, B.1.2:4 for system aggregation and delimitation decisions, and A.14, A.10, B.3, B.3.5 and C.13 for the remaining registered vocabularies. Applies E.5.1 (Lexical Firewall) and E.5.2 (Notational Independence); depends on E.9 (DRR).

@@ -1,0 +1,9 @@
+## ADM.Reference:4 - Correct use and its cost
+
+The first pass can fit in an ordinary request or note: name the action or condition, the participants it concerns, the governing rule when one matters, the relevant time, the available grounds and the next action. Add a timeline, comparison table or explicit event identity only when the receiving decision requires it. A service-level inquiry also names its population and the consequence that could change the decision.
+
+For a consequential use, examine whether the result distinguishes the requested condition from its evidence, identifies who may resolve a missing condition, and preserves any limitation that changes the next action. A claim of completed provision needs the promised usable effect. A supported relation claim needs the applicable rule and facts. A common event account needs enough correspondence to distinguish it from another event. These are different questions. An adequate answer can be reused for the question it resolves.
+
+Elapsed delay, labor and money also answer different questions. The laboratory's T+N shorthand needs an explicit starting event and administrative result; reducing that delay can still worsen correctness or shift effort to the applicant. Include relevant unfinished and pre-entry cases before treating a portal indicator as the service outcome. A bounded observed defect may support a correction while a general effectiveness or causal claim remains unresolved.
+
+This approach can reduce repeated checking, opaque refusals and unnecessary reconciliation. It also requires access to people and evidence that a portal may hide. A participant's account can remain unresolved when a needed source or qualified decision is unavailable. State the missing result and who can supply it; useful administrative framing can finish with that actionable gap.

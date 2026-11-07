@@ -1,6 +1,6 @@
 ## FPF.Reference:13 - Architecture As Structure Of Holons
 
-FPF treats architecture as structure of a holon in a context, not as a diagram, document, approval, promise, or implementation plan.
+FPF treats architecture as structure of a holon in a context.
 
 This makes architecture broad. There can be architecture of a physical system, software system, organization, work system, body of knowledge, publication system, research program, AI-agent arrangement, or FPF itself. Wherever holons have structure, architecture can be discussed.
 
@@ -8,7 +8,7 @@ An architecture description or structural view makes claims about the architectu
 
 Use the pattern that governs the current architecture question: `C.30` for architecture as an EntityOfConcern, `A.22` for selected structure, `C.30.ASV` for architecture structural-view assertions, `C.30.AD` for architecture-description assertions, and `A.6.M` for module-interface relation repair. `C.31` and related architecture pattern descriptions locate exact rule content for modularity, reusable structure, scale, interlevel tension, and architecture-changing assertions. Architecture, selected structure, each description episteme, each view, each publication, and each change remain separate subjects.
 
-This matters because architecture work is not only "draw the diagram". It is also "which structure matters", "what characteristic changes", "what tradeoff is visible", "what description is needed", "what interface claim is being made", "what evidence would make this architecture decision responsible", and "which move changes the architecture rather than merely changing a document about it".
+Architecture work asks which structure matters, what characteristic changes, what trade-off is visible, what description is needed, what interface claim is being made, what evidence supports the decision, and which move changes the architecture.
 
 Assess how hard a holon is to understand, change, control, reuse or improve under the declared architectural characteristics and concerns. Keep the structural dependencies that contribute to this difficulty visible in descriptions, including simplified diagrams.
 

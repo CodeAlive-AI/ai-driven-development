@@ -146,11 +146,11 @@ The Halogen case can supply evidence about project demands, practitioner skill s
 
 #### C.11.MV:5.1 - EC-417 Early Stop
 
-The [full EC-417 application](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
+The [full EC-417 application](../04-first-principles-framework-architectural-reference/16-fpf-reference-16---big-fpf-storylines.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
 
 In the constructed EC-417 case, the team must release a controller firmware and harness change on `D0`. Its software-integration slot is `D-21`, but signed supplier pinout evidence is expected at `D-8`. The present question is which proposed way to coordinate that release is worth pursuing under the current constraints.
 
-[C.32.MWA.PP §5.3](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c32mwapp53---possible-future-alternatives-a-b-and-b2) supplies the timing and capacity comparison:
+[C.32.MWA.PP §5.3](83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md#c32mwapp53---possible-future-alternatives-a-b-and-b2) supplies the timing and capacity comparison:
 
 | Alternative | Proposed way of working | Consequence for this decision |
 | --- | --- | --- |

@@ -222,10 +222,10 @@ For a durable ecosystem-architecture answer, use the following operations as the
 8. When a framework-architecture question is open, record the selected answer in one `E.9` DRR and use `E.4.PFAD` to profile its framework-specific content. Use `C.32.PAD` only for an exact project architecture decision and `C.32.ADR` only to project such a decision into an ADR-like publication.
 9. State relation, dependency, compatibility, deprecation, and edition claims using `E.4.PFR` only when its named maintenance use requires that representation; otherwise use the direct subject assertion.
 10. Settle names using `F.18`.
-11. State SoTA and source-use claims using `G.2`.
+11. Ground source-use claims in the relevant source content. Apply `E.8:11` to a SoTA comparison. Reuse a sufficient direct source answer; use `G.2` when a broad `CG-Frame` source pack and its downstream handoffs are needed.
 12. State currentness, refresh, and edition-change claims using `G.11`, the exact edition values, and their source/currentness assertions.
 13. Before using a carrier or transformed or generated view as evidence, state the exact source-return or preservation assertion under the predicate defined in `C.33`, `C.34`, or `C.35`.
-14. Evaluate whole-FPF adequacy through `E.2.DA`, DPF or local-framework package adequacy through `E.4.DPF.DA`, individual pattern quality through `E.21`, improve through `E.23`, and use `E.19` only when the local process asks for admission review.
+14. Evaluate whole-FPF adequacy through `E.2.DA`, DPF or local-framework package adequacy through `E.4.DPF.DA`, individual pattern quality through `E.21`, improve through `E.23`, and use `E.19` for a selected admission, refresh, or return-for-repair question.
 
 Use this routing table when a proposed change is ambiguous. Its rows are common routes, not a closed taxonomy:
 

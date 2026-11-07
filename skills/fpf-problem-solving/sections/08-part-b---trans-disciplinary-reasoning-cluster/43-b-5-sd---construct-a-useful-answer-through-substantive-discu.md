@@ -22,7 +22,7 @@ The reverse mistake is to dismiss facilitation or participation because subject 
 
 Several participants can contribute knowledge that no one initially holds together. Their contributions need interpretation and integration, not merely collection.
 
-A clear question limits effort, yet the question may change when a hidden assumption is exposed. The group needs enough structure to return a usable answer without pretending that thought follows a fixed meeting script.
+A clear question limits effort, yet the question may change when a hidden assumption is exposed. The group needs enough structure to return a usable answer.
 
 Participation and neutrality matter to the fairness of discussion. A warranted technical conclusion also requires discriminating between supported and unsupported claims. Fair hearing does not assign equal evidential weight to every statement.
 
@@ -61,7 +61,7 @@ Then connect the claims. Use B.5.RA:4.4a to recover an argument implicit in pros
 
 In a multi-component system, distinguish the claim that each component works from the claim that they work together. Recover interfaces, interactions, loads and shared conditions that can defeat composition. In an organizational proposal, distinguish one participant's spare time from joint availability at the moment of handover. In a learning design, distinguish exposure to instruction from the operation the learner will later perform.
 
-Use the ordinary form best suited to the subject: a calculation, diagram, connected prose, prototype, table with explained relations or another working product. The form needs to expose the reasoning, not merely list topics. A canvas or checklist can help notice an omitted concern; its completed boxes do not construct the missing connection.
+Use the ordinary form best suited to the subject: a calculation, diagram, connected prose, prototype, table with explained relations or another working product. Choose a form that exposes the reasoning. A canvas or checklist can also help notice an omitted concern.
 
 At intervals, have the receiver or another capable participant trace a consequential question through the developing answer. Which conclusion follows? From which grounds? What action does it permit? A break in that trace locates more useful work than another general round of opinions.
 
@@ -91,9 +91,9 @@ Give the receiver the connected result in a usable form, with the decisive groun
 
 Examine a plausible consequential variation. If a test window disappears, which claims and proposed decisions lose their basis? If the population, interface or load changes, which earlier findings still apply? If another receiver reveals a needed input, does the proposed simplification still work? Follow only the affected connections; a small change need not restart the whole discussion.
 
-This variation is a way of checking whether the explanation actually relates its parts. It is not empirical proof that every relevant condition has been discovered. Preserve a consequential unlisted concern when it appears.
+This variation is a way of checking whether the explanation actually relates its parts. Preserve a consequential unlisted concern when it appears.
 
-Finish when the current receiving question has a warranted answer and feasible continuation, including a justified stop. If participants repeat views while the connection remains missing, change the construction, obtain the absent competence or return the blocker. More speaking rounds do not supply an absent subject method.
+Finish when the current receiving question has a warranted answer and feasible continuation, including a justified stop. If participants repeat views while the connection remains missing, change the construction, obtain the absent competence or return the blocker.
 
 #### B.5.SD:4.7 - Use AI for substantive construction at its actual competence
 
@@ -146,8 +146,6 @@ A conforming use makes clear:
 - why further inquiry is worthwhile and feasible when selected;
 - what the receiver can use now and what reopens after a changed premise.
 
-The method requires the connected result, not a particular visual notation or a longer meeting.
-
 ### B.5.SD:8 - Common Anti-Patterns and How to Avoid Them
 
 | Invited mistake | Better action |
@@ -166,13 +164,13 @@ This requires subject competence and integration work. It may reveal that the gr
 
 ### B.5.SD:10 - Rationale
 
-The method makes the connection between contributions itself a working object. Evidence and opinions do not become an answer by proximity. Examining the receiving inference and a changed condition exposes the operation still missing. This lets a group obtain the right expert, narrower claim or inquiry instead of repeating an ineffective meeting form.
+The method makes the connection between contributions itself a working object. Examining the receiving inference and a changed condition exposes the operation still missing. This lets a group obtain the right expert, narrower claim or inquiry instead of repeating an ineffective meeting form.
 
 ### B.5.SD:11 - SoTA-Echoing
 
-The practice question is how a discussion produces a usable substantive result. The selected line combines competent facilitation with explicit subject construction and a receiving-use test. The serious alternative is professional facilitation that already supplies both. Retain that adequate arrangement; this pattern adds a missing integration operation, not a universal requirement for another specialist.
+The practice question is how a discussion produces a usable substantive result. The selected line combines competent facilitation with explicit subject construction and a receiving-use test. The serious alternative is professional facilitation that already supplies both. Retain that adequate arrangement. Use this pattern when the integration operation is missing.
 
-**Adopt** the relevant distinction from the IAF [Core Competencies, revised 2021](https://iaf-world.org/wp-content/uploads/2025/09/Revised-IAF-Core-Competencies-December-6-2021.pdf): facilitation includes helping a group obtain useful outcomes, inquire into underlying issues and select suitable methods, while respecting professional boundaries. **Adapt** the contribution in sections 4.2–4.6 by making the subject inference, receiver and consequential variation explicit. The competency framework does not itself supply every domain's constructive method.
+**Adopt** the relevant distinction from the IAF [Core Competencies, revised 2021](https://iaf-world.org/wp-content/uploads/2025/09/Revised-IAF-Core-Competencies-December-6-2021.pdf): facilitation includes helping a group obtain useful outcomes, inquire into underlying issues and select suitable methods, while respecting professional boundaries. **Adapt** the contribution in sections 4.2–4.6 by making the subject inference, receiver and consequential variation explicit.
 
 The practitioner essay [“Об фасилитаторов,” 2020](https://ailev.livejournal.com/1520610.html) provides a critical case of orderly communication substituting for connected thought. **Adopt** its distinction between constructing a connected model and checking whether important concerns have been considered and related. **Adapt** that distinction in 4.3. Assess subject competence independently of the professional title, and examine the construction's reasoning rather than relying on checklist completion. A competent facilitator can also perform subject integration. The essay is conceptual criticism, not comparative effectiveness evidence.
 
@@ -184,11 +182,11 @@ B.5.RA supplies argument recovery and examination, including reasoning expressed
 
 LDR.1 obtains capable participants and the conditions for their contributions. LDR.2 settles incompatible commitments exposed by the answer. LDR.4 uses the answer to prepare a proposal and first use.
 
-[B.5.RA](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b5ra---recover-an-argument-for-its-next-use) recovers and examines the relevant argument; [B.5.RR](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#b5rr---revise-reasoning-after-a-premise-or-question-changes) revises the affected reasoning after a changed premise or question. Their results supply the argument contributions used in sections 4.3 and 4.5.
+[B.5.RA](29-b-5-ra---recover-an-argument-for-its-next-use.md) recovers and examines the relevant argument; [B.5.RR](30-b-5-rr---revise-reasoning-after-a-premise-or-question-change.md) revises the affected reasoning after a changed premise or question. Their results supply the argument contributions used in sections 4.3 and 4.5.
 
-FPF [C.39](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#c39---find-and-develop-a-way-to-obtain-a-result) supplies the general development of a way to obtain a result when an operation or connection is missing. C.11.DUA appraises the further inquiry and its receiving value. C.28 supplies causal reasoning when the intended conclusion is causal; it is not triggered by every explanatory discussion.
+FPF [C.39](../09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md) supplies the general development of a way to obtain a result when an operation or connection is missing. C.11.DUA appraises the further inquiry and its receiving value. C.28 supplies causal reasoning when the intended conclusion is causal.
 
-The actual subject practice supplies the needed Method and its applicability conditions. Engineering configuration, strategy, human learning and corporate decisions retain their different methods and acceptance conditions. C.41.OF may supply a useful execution aid, but a checklist is neither the reasoning nor the resulting explanation.
+The actual subject practice supplies the needed Method and its applicability conditions. Engineering configuration, strategy, human learning and corporate decisions retain their different methods and acceptance conditions. C.41.OF may supply a useful execution aid.
 
 When this work is a decision-support inquiry, PSDA.12 recovers participants and attributed concerns and PSDA.13 establishes professional inquiry and dissent conditions. Other practices retain their own participation and authority requirements. PSDA.1–9 supply formulation, model and decision-analysis constructions when their question is live. A sound analytical answer and consent to use or act on it remain separate results.
 

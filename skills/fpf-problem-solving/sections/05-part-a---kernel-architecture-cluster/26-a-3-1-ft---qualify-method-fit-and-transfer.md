@@ -119,7 +119,7 @@ The sustainable-design workshops supply bounded applications of The Natural Step
 
 #### A.3.1.FT:5.2 - EC-417 Early Stop
 
-The [full EC-417 application](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
+The [full EC-417 application](../04-first-principles-framework-architectural-reference/16-fpf-reference-16---big-fpf-storylines.md#fpfreference169---choose-the-method-development-result-needed-for-release-ec-417) supplies the receiving problem, alternatives, calculations and the distinct limits used below.
 
 `C-EC-Release-v2` remains a candidate account. The three support-use Work occurrences from A.15.8.MS do not perform a release and cannot support release fit or transfer. To assess local release fit, recover actual release Work, its performers, separately admitted enacted Methods, capability inputs, Systems and direct relations, support conditions, domain result, burdens, deviations and authority facts needed for that decision. A transfer or applicability-boundary claim additionally requires the receiving or held-out release evidence capable of testing that claim.
 

@@ -81,7 +81,7 @@ These four dispositions form the complete current `C.11` result set. “Configur
 2. If one apparatus is already selected, test its credible adaptation path without inventing choice. If candidates are missing, use `C.39` for an unexplained way to obtain the result or `C.40` for feasible variation and examination of usable material. Add `C.18` only when a generation account or archive/front claim is needed.
 3. When alternatives are current, identify them by their direct kinds and apply the shared eligibility predicate.
 4. For each current path, state the smallest adaptation/configuration work and the useful-result threshold: what must be learned, evidenced, integrated, or reviewed before the path can improve the use.
-5. Compare available time and budget, prior exposure, post-threshold efficiency, transfer, retention, interoperability, downside, reversibility, and expected reuse using values supplied by their subject patterns. Do not compress them into an undeclared scalar.
+5. Compare only the dimensions that can change the current path for the declared use and horizon. These may include time and budget, prior exposure, post-threshold efficiency, transfer, retention, interoperability, downside and reversibility; use their subject-pattern values when needed. Do not compress them into an undeclared scalar.
 6. If choice is current, consume one lawful `C.11 ChoiceResult`; otherwise continue on the one-apparatus path.
 7. Carry out the selected application. Use A.15.2 when a plan is needed and C.24 when tool-call planning is the question. A precise dated-Work claim uses the performer and admission conditions in §4.1.
 8. Inspect the separately governed problem-facing result. Keep an application/configuration note only when reuse, dispute, automation, or consequence makes it useful.
@@ -91,10 +91,6 @@ These four dispositions form the complete current `C.11` result set. “Configur
 Stop when the direct result is usable at the claimed guarantee and no further distinction or setup is expected to improve the declared use enough to justify its burden over the stated horizon. This is a positive result, not a claim that the unused apparatus is inferior.
 
 Reopen when a consequential counterexample, failed result, changed use or guarantee, changed recurrence horizon, new candidate path, automation need, or changed adaptation cost alters the lawful path. Reopen only the affected application, candidate, choice, plan, or work question under its subject pattern.
-
-#### C.19.2:4.6 - Optional demonstration, not an admitted structure
-
-A short branch presentation may show one-apparatus, candidate-generation, choose, probe/reject, application, result, and reopen continuations as a `ProvisionalUnfoldingDemonstrationDescription@Context`. It is an episteme for teaching. The presentation alone establishes no admitted `U.Structure`, CGUS, work plan, work occurrence, or problem-facing result; CGUS admission requires every `A.22.CGUS` coordinate independently.
 
 ### C.19.2:5 - Archetypal Grounding
 
@@ -132,7 +128,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 | `CC-C19.2-5` | Any `C.11` result is exactly `choose now`, `reject current set`, `probe again`, or `reroute`. |
 | `CC-C19.2-6` | The intended-reader position, guidance, any independently identified `U.Method` and qualifying `U.MethodDescription`, performing `U.System`, dated `U.Work` and problem-facing result remain distinct. Every precise performer has an A.13 core, and the Work is independently admitted under A.15.1. F.6 is required only when the receiving use also needs precise assignment-bound attribution. A short projection exposes assignment identity, species, participants, or attribution detail only when that use relies on them, attribution is ambiguous, or source wording must be repaired. |
 | `CC-C19.2-7` | The first useful result and stop are practical, and every reopen condition changes a named next action. |
-| `CC-C19.2-8` | No generic apparatus U-kind, hidden scalar, or unadmitted CGUS is introduced. |
+| `CC-C19.2-8` | Candidates retain their direct kinds and comparisons use declared, admissible operations. |
 
 ### C.19.2:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -164,7 +160,7 @@ The aphorism is: **make the apparatus earn its setup work.**
 | Do different questions warrant different apparatus and outputs? | Current competency-question work distinguishes purposes and expected products rather than imposing one ontology checklist (Keet & Khan 2024). | Eligibility is tied to one declared use/result/guarantee; the pattern does not universalize one method or checklist. | **Adapt.** Question differentiation changes candidate eligibility and return. |
 | How should concern and purpose constrain a model or architecture description? | ISO/IEC/IEEE 42010:2022 keeps concerns, stakeholders, viewpoints, and architecture descriptions explicit without prescribing one tool. | Declared use, guarantee, and direct result keep apparatus application purpose-bound while subject patterns retain their kinds. | **Adapt.** Use the purpose/concern discipline without importing architecture-description ontology into every apparatus. |
 
-These sources change the positive method: the user starts from a result, may obtain value before total configuration, opens choice only for a live set, and reopens when use economics or guarantee changes. They do not license prestige ranking, tool mandates, or a universal apparatus kind.
+These sources change the positive method: the user starts from a result, may obtain value before total configuration, opens choice only for a live set, and reopens when use economics or guarantee changes.
 
 ### C.19.2:12 - Relations
 
@@ -172,6 +168,5 @@ These sources change the positive method: the user starts from a result, may obt
 - **Uses conditionally:** `C.11` only when an actual local-choice question over a live eligible set exists. It consumes, but does not extend, the four `ChoiceResult` dispositions.
 - **Hands off enactment to:** `A.15.2` for work plans, `A.15.1` for dated work, and `C.24` only for tool-call enactment planning. The direct domain pattern contains the defining content for the practical result.
 - **Description-level specialization:** `A.7.1` narrows the method claims stated here for consequence-guided ontology analysis. It retains the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, separation among plan, Work, and result, stop, and reopen. It retains the candidate and choice branch only when that branch is actually triggered. This wording adds no relation occurrence between the described Methods and asserts neither `U.SubkindOf` nor a world relation.
-- **Does not replace:** durable U-kind admission in `E.24`/`E.24.UK`, parsimony in `A.11`, evidence-use and assurance patterns, or any candidate's direct kind.
 
 ### C.19.2:End

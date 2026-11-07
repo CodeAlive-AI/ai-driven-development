@@ -1,6 +1,5 @@
 # Cluster A.V - Constitutional Principles of the Kernel
 
-
 ## Contents
 
 - [A.7 - Strict Distinction: Repair Conflations of FPF Objects (Clarity Lattice)](01-a-7---strict-distinction-repair-conflations-of-fpf-objects.md) (364 lines) — Use this pattern when one sentence, diagram, card, identifier, file, plan, or run is being read as several nearby FPF objects and the team needs to recover the exact relation position before checking...
@@ -32,7 +31,7 @@
 - [A.15.PROD - Production Work, Entity-Identity Inception, and Production Completion Recovery](27-a-15-prod---production-work-entity-identity-inception-and-pr.md) (490 lines) — Type: Architectural (A)
 - [A.16 - Language-State Moves: Choose the Next Publication and Use of a Cue or Claim](28-a-16---language-state-moves-choose-the-next-publication-and.md) (237 lines) — Type: Architectural (A)
 - [A.16.0 - Keep an Episteme's Language-State and Publication History Recoverable](29-a-16-0---keep-an-episteme-s-language-state-and-publication-h.md) (300 lines) — Type: Architectural (A)
-- [A.16.1 - PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use](30-a-16-1---prearticulationcuepack-preserve-an-early-cue-before.md) (221 lines) — Type: Definitional (D)
+- [A.16.1 - PreArticulationCuePack: Preserve an Early Cue Before Choosing Its Use](30-a-16-1---prearticulationcuepack-preserve-an-early-cue-before.md) (220 lines) — Type: Definitional (D)
 - [A.16.2 - Reopen, SketchBackoff, Respecify, or Retire a Language-State Publication](31-a-16-2---reopen-sketchbackoff-respecify-or-retire-a-language.md) (182 lines) — Type: Architectural (A)
 - [A.17 - Canonical “Characteristic” (A.CHR-NORM): Name What Is Measured](32-a-17---canonical-characteristic-name-what-is-measured.md) (140 lines) — Use this when. A measurement description leaves unclear what aspect is measured, which entities it concerns, or how its value differs from a Score. First name the Characteristic and its bearer or...
 - [A.18 - Minimal CSLC in Kernel (Characteristic ⟷ Scale ⟷ Level ⟷ Coordinate) (A.CSLC‑KERNEL)](33-a-18---minimal-cslc-in-kernel.md) (169 lines) — Use this when. A reported value or proposed calculation leaves its measured aspect, Scale or permissible interpretation unclear. Recover those meanings from an existing adequate measurement template,...

@@ -61,7 +61,7 @@ Use this sequence before minting a durable name or any supporting naming object:
 
 1. **Recover the governed value first.** Separate candidate expressions whenever they designate different governed values or relations. Recover each retained value's exact kind and direct pattern; keep an ordinary phrase local when no governed naming case is needed.
 2. **Name one proposed use and its interpretation basis.** State what the reader will do with the expression and the effective naming rules (`ReferenceScheme`). An independently selected `BoundedModelUseStructure` appears only when that organization changes this exact naming use; it is never a generic locality field.
-3. **Try the light dispositions in order.** Prefer no durable name, an existing designation, a recorded alias, a local expression, an existing direct-pattern name, or an existing public row. Stop as soon as the proposed use works without hiding a governed distinction.
+3. **Select the lightest sufficient treatment.** Use adequate ordinary wording, an existing designation, an alias, a local expression, a direct-pattern name or a current public row. Reuse an already justified choice; compare alternatives when they could reduce burden without losing a governed distinction.
 4. **Create only the next object that pays for itself.** A local `SchemeSenseCell` is useful only when the exact local sense needs a stable address; a NameCard only when the naming settlement itself must endure; an F.17 row only for public, Core-facing, durable, or cross-local reuse; E.24.PUB only when the selected row edition must actually be made available. None implies the next.
 5. **Use exact relations instead of fused names.** Bundles and incompatibilities among system-role kinds remain A.2.7 relations; assignment claims remain A.2.1. For precise performed Work, A.13 first recovers each exact actual performer and A.15.1 independently admits the dated occurrence; F.6 follows only when the naming case or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. Status families and windows remain F.10; qualifiers remain with their direct patterns.
 6. **Treat cross-local wording as a relation question only when one is current.** Resolve the exact local senses first. Same spelling proves nothing; different local-sense projections only open F.9. Cite a Bridge only when its predicate obtains, then state the proposed use and reliance separately. A Bridge does not merge governed values or require a public row.
@@ -128,7 +128,7 @@ The record describes the control result. It creates no governed value, naming de
 
 #### F.14:7.2 - Reuse before minting
 
-Reuse only when the exact recovered value, kind, direct pattern, proposed use, and admitted naming scope match. Try an existing designation, alias, local expression, or current row before creating a card, cell, row, policy id, or new U-kind candidate. Local-sense reuse does not imply sameness with another local sense; row reuse does not widen the row's admitted use.
+Reuse only when the exact recovered value, kind, direct pattern, proposed use and admitted naming scope match. Before creating a card, cell, row, policy id or new U-kind candidate, establish the receiving need that adequate ordinary wording or an existing designation would not meet. Reuse available grounds for that decision. Local-sense reuse does not imply sameness with another local sense; row reuse does not widen the row's admitted use.
 
 #### F.14:7.3 - Use relations among system-role kinds before hybrid kinds
 
@@ -271,7 +271,7 @@ Result:
 | Check | Question |
 | --- | --- |
 | CC-F14-01 | Is each candidate tied to one independently recovered governed value or relation and proposed use, or explicitly left local? |
-| CC-F14-02 | Were the light dispositions—no durable name, existing designation, alias, and local expression—tested before minting anything stronger? |
+| CC-F14-02 | Does a proposed stronger naming object meet a receiving need left unmet by adequate ordinary wording or an existing designation? |
 | CC-F14-03 | Are the system-role-kind designation, local kind, `SystemRoleKindDescription`, exact relation among kinds, assignment, capability, Method, and performed Work distinct? |
 | CC-F14-04 | Are status family, value, window, use relation, evidence, and presentation distinct? |
 | CC-F14-05 | Are effective naming ReferenceScheme and exact local-sense basis used instead of a generic context slot? |
@@ -308,6 +308,6 @@ F.14 does not import access-control, terminology, credential, or modeling-langua
 
 ### F.14:16 - Didactic distillation
 
-When names multiply, do not ask for a better name first. Recover the exact values and the proposed use. Try no durable name, an existing designation, an alias, or a local expression. Keep relations among system-role kinds, status windows, capability, Method, Work, evidence, source, policy, and publication under their direct patterns. Create a cell, NameCard, row, identifier, or publication only when that exact object buys a named use; none requires the next and none makes the governed value real.
+When names multiply, recover the exact values and the proposed use. Keep adequate ordinary wording or an existing designation; compare other treatments when the choice remains unresolved. Keep relations among system-role kinds, status windows, capability, Method, Work, evidence, source, policy and publication under their direct patterns. Create a cell, NameCard, row, identifier or publication only for the named use that needs it.
 
 ### F.14:End

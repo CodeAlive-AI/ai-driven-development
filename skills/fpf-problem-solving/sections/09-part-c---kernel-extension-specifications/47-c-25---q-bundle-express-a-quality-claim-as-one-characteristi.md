@@ -92,7 +92,7 @@ An absent optional slot contributes no condition. Each measure keeps its own Sca
 
 ### C.25:5 - Archetypal Grounding
 
-**Tell.** A quality family is not automatically one metric. Use one Characteristic when one measure and Scale carry the claim; use a Q-Bundle only when several differently typed contributors are jointly load-bearing.
+A quality family is not automatically one metric. Use one Characteristic when one measure and Scale carry the claim; use a Q-Bundle only when several differently typed contributors are jointly load-bearing.
 
 **Minimal completed availability case.** Under `ServiceQualityScheme-v4`, the claim says: *CheckoutAPI maintained at least 99.9% availability for customer-facing request handling over the rolling 30-day window.* Its exact bearer is the independently identified `CheckoutAPI` System. In this example the receiving use separately checks coverage of customer-facing requests and the rolling-window qualification as well as the ratio. Its Q-Bundle content has `Name: Availability`, `ClaimScope: customer-facing request handling`, `Measures: AvailabilityRatio[%] >= 99.9`, and `QualificationWindow: rolling 30 days`. `WorkScope`, `Mechanisms`, `Status`, and `Evidence` are omitted because this drafting use does not rely on them. If evidence reliance, a failover prerequisite, or a gate later becomes current, add only the direct relation or slot that question needs. If the receiving question instead asks only for AvailabilityRatio under an already fixed scope and measurement window, the single-Characteristic branch is sufficient.
 
@@ -225,7 +225,7 @@ A quality claim that depends on rolling windows, observation periods, maintenanc
 
 #### C.25:14.4 - Report-only summary proxies
 
-A publisher may compute a report-only summary proxy for convenience, for example a compact quality summary value or an oversight-facing composite score. State in claim content which exact Q-Bundle slots the proxy summarizes and what it leaves out. The proxy may be another Characteristic or claim under its direct pattern, but it does not replace the source quality-claim episteme or its addressed claims in a norm, gate, comparison, or cross-context use.
+A publisher may compute a report-only summary proxy, such as a compact quality summary value. Identify the source quality-claim episteme or exact `ClaimAddress`, and state which Q-Bundle slots the proxy summarizes and omits. The proxy is a separate Characteristic or claim under its direct pattern; it does not replace that source in a norm, gate, comparison, endpoint classification or cross-context use.
 
 ### C.25:15 - Worked Quality Families
 
@@ -266,14 +266,7 @@ Security claims routinely combine:
 
 #### C.25:15.4 - Maintainability and evolvability
 
-Maintainability or evolvability claims often drift into pure rhetoric. In `C.25`, they become usable only when the publisher separates:
-
-- the declared scope of systems or change classes,
-- the measurable slots (for example change lead time, defect reintroduction rate, restoration interval, review load),
-- the enabling mechanisms (modularity rules, test harnesses, interface discipline),
-- and the window or evidence conditions under which those measures were observed.
-
-This is exactly the kind of quality family that looks scalar in speech but turns composite once the claim is made explicit.
+For maintainability or evolvability, recover the particular claim and the contributors on which it depends. These may include the system or change-class scope; measures such as change lead time, defect reintroduction rate, restoration interval or review load; enabling mechanisms such as modularity rules or a test harness; and the observation window or other support actually used. Keep measures distinct from mechanism and scope claims. A narrow claim carried by one Characteristic can stop there; a broader claim retains every load-bearing contributor, not every example in this list.
 
 ### C.25:16 - Authoring and Review Guidance
 
@@ -300,7 +293,6 @@ A checking reader should ask:
 - whether the window is truly optional or actually load-bearing,
 - and whether any summary proxy is trying to replace the underlying bundle.
 
-In practice, most defects are visible as soon as the checking reader asks what exactly one reported number stands for.
 
 #### C.25:16.3 - For gate designers and assurance leads
 
@@ -319,7 +311,7 @@ Keep a familiar label such as *security requirement* when its content already ma
 
 #### C.25:17.2 - Boundary to cross-context use and reliance
 
-Cross-context comparison does not change whether the endpoint is one characteristic or one bundle and does not modify any bundle slot. Align the exact bundle heads or slots and resolve their exact `F.17` local senses. Test the direct `F.9` predicate when their `<ReferenceScheme, LocalSenseClaim>` projections differ and the comparison needs semantic correspondence. If a Bridge obtains, state the proposed direction, correspondence rule, tolerated loss, and polarity in a separate bounded-use claim. Observed loss remains evidence; permitted loss remains that claim's tolerance. Use `A.10` for ordinary bounded reliance and open `B.3` only when an actual named assurance claim is current.
+For cross-context comparison, use the bundle alignment and conditional correspondence operation in section 18.3. That comparison changes neither the endpoint's Characteristic-or-bundle kind nor the bundle's claim content.
 
 #### C.25:17.3 - Boundary to publication convenience
 
@@ -359,7 +351,7 @@ Cross-context comparison of quality families starts with explicit bundle alignme
 ### C.25:19 - Gate, Proxy, and Reporting Discipline
 
 #### C.25:19.1 - Report-only summary proxy
-A summary proxy remains a separate downstream claim. It identifies the source quality-claim episteme or exact `ClaimAddress`, states what it summarizes and omits, and never replaces that source in a norm, gate, or endpoint classification.
+Apply the report-only proxy rule in section 14.4 to the exact source episteme or addressed claims.
 
 #### C.25:19.2 - Gate binding rule
 When a gate uses a quality family, its decision claim cites the exact quality-claim episteme or addressed claims and names only the bundle slots on which the decision relies: for example declared scope, specific measures, a qualification window, or required mechanisms or statuses. The gate does not bind to a family label or raw record, and `C.25` does not define the gate decision.
@@ -388,30 +380,18 @@ Practical reading:
 1. Decide whether one Characteristic answers the quality question; if it does, stop there.
 2. If several differently typed contributors are load-bearing, identify the bearer and include only those measures, scopes, windows, mechanisms, statuses, or evidence anchors.
 3. If one proxy or this proportional bundle answers the receiving question, stay in `C.25`.
-4. Open `C.26.3` only when several characteristics must remain inside a viable region under disturbance and a candidate intervention, boundary condition, adaptation cost, or failure mode matters.
+4. Open `C.26.3` when several conditions must hold together under a disturbance and the question is whether the viable region is retained, violated or unresolved, or how a proposed change could restore it.
 5. Open `C.27` only when a temporal claim is being used to change action—for example, when rate-change, effort, window, resistance, recovery, or cadence changes that action.
 
-Minimum viability-envelope note:
+For an envelope question, use `C.26.3:4.5` to recover the exact bearer and protected work or result, derive the relevant conditions from ways that work can fail, and obtain bounds from the receiving requirements and actual provision. Keep each bound's subject explicit. Compare the available observations with those bounds under the disturbance. A supported diagnosis can finish the use: a known violation establishes failure of the conjunction even while another condition is unknown; a positive viability claim needs all required conditions supported.
 
-| Field | Required content |
-| --- | --- |
-| Bearer | One exact `U.System` under A.1 when that System is the subject; or one exact `A.22` `U.Structure` when selected organization is the subject, with independently identified constituents, selected obtaining relations, applied constraints, and one selection-use frame. A service label, team label, or list of system-role kinds and assignment occurrences does not identify the bearer by itself. |
-| Protected promise / function | The promise, function, use, operating regime, or stakeholder value the envelope protects |
-| Variables | Which qualities, constraints, resources, risks, or state descriptors define the envelope |
-| Viable region / bounds | What counts as inside, near edge, degraded, or outside the envelope for this use |
-| Disturbance class | What perturbation, demand shift, environment change, probe, or boundary condition stresses the envelope |
-| Actuators | Which proposed work, design move, policy, boundary change, sensor change, or resource change could alter the bearer or its operating conditions; use C.26.3 to recover each candidate intervention's proposal-side object and distinguish any performed work or resulting change claimed to exist |
-| Trade-off / loss | What gets worse, hidden, coarsened, delayed, or made more expensive |
-| Admissible use | Which action, decision, relation, or triage use the envelope reading can carry |
-| Non-admissible use | Which release, audit, assurance, or universal quality claim requiring additional support it does not support |
-| Failure mode | What it means to leave the envelope or to mistake one proxy for the envelope |
+For proposed regulation, identify the intervention and which constraint each predicted effect concerns. Retain the grounds, unknown effects, displaced work, trade-offs and adaptation costs needed to judge that proposal. Recover needed authority or execution conditions for the proposed action. Unknown acceptability limits remain a requirement question or an explicit scenario assumption; observed averages do not supply normative bounds. These conditions are part of the claim and its use, not a compulsory envelope form.
 
 Useful outputs:
 
 - one `C.2.1` quality-claim episteme with Q-Bundle-shaped content when the issue is quality decomposition;
-- a `C.26.3` envelope-regulation note when probes, candidate interventions, or boundary conditions change the admissible viability reading;
+- a `C.26.3` supported envelope diagnosis or conditional regulation proposal, with the grounds required by that result;
 - a `C.27` temporal-claim adequacy card when a claim used to change action says that an intervention changes a rate, recovery, or cadence; state its effort, window, and resistance where load-bearing;
-- no QL wording when ordinary quality-bundle, proxy, feedback, or control tuning carries the work.
 
 #### C.25:20b - Architecture-decision Q-Bundle boundary
 

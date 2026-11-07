@@ -1,0 +1,11 @@
+## GOALS.Reference:1 - The field and the work it serves
+
+This framework develops the practice of constructing and regulating goals in professional, organizational and work-related personal development. The governed object is a goal or a connected arrangement of goals: desired conditions, their grounds, achievement criteria, relations to other aims, and the reliance and means through which they influence work. A goal description carries those meanings. The people, agents and organizations acting on it perform the work that can change the world.
+
+The practical difficulty begins before choosing a target number. A person can want a useful outcome but lack an executable way to obtain it. Several reasonable goals can require incompatible uses of the same capacity. An indicator can improve while the recipient's result worsens. A valuable research attempt can end without the hoped-for discovery. A successful automated service can leave an intended human learning result unproduced. Those differences call for different decisions about purpose, means, evidence and continuation.
+
+The useful whole is an arrangement in which participants can explain what they are trying to obtain, distinguish what is expected from what is promised, act within available conditions, detect changes in time, and revise the affected goal or means without disguising what happened. Its adequacy is visible in consequential work: for example, an accepted priority change leads to a feasible reallocation and truthful customer response, while unchanged commitments retain their force.
+
+The intended reader knows the subject work or can obtain competent subject help. The framework supplies goal methods and their connections. Technical correctness, lawful authority, clinical judgements, professional learning design and other subject-specific conclusions remain with the relevant competent practice. An ordinary clear task with available means and an adequate completion test can proceed directly. Full OKR machinery becomes useful when a recurring organizational problem needs the connected practice described in GOALS.5.
+
+Work-related personal aims and mixed human–AI work are included. Clinical treatment, a comprehensive theory of personality and all private-life goals need their own professional grounds.

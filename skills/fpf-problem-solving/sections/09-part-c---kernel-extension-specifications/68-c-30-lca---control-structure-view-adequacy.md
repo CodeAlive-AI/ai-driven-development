@@ -38,7 +38,7 @@ Use either `selectedControlStructureRef` or an honest `structureGap`. A positive
 
 Add a described holon, an architecture-relation occurrence or claim, rate bands, control-layer relations, boundaries, view and viewpoint-conformance facts, source return, representation, or publication only when they change the intended use. Add participating Systems, local classifications, assignments, Methods, Work, and F.6 attribution only when those neighboring facts are independently current.
 
-When either form includes actual control Work, each Work ref names an occurrence independently admitted under A.15.1 after every exact actual performer is recovered through A.13. `assignmentRows` and `actualControlWorkAttributionRefs` remain optional: include them only when the note, view, or receiving use expressly represents precise assignment-bound attribution. Any present attribution ref resolves through F.6 to the same obtaining A.13 assignment; absence or failure of that relation leaves the Work ref intact. The note or view creates none of these facts.
+When either form includes actual control Work, each Work ref names an occurrence independently admitted under A.15.1 after every exact actual performer is recovered through A.13. `assignmentRows` and `actualControlWorkAttributionRefs` remain optional: include them only when the note, view, or receiving use expressly represents precise assignment-bound attribution. Any present attribution ref resolves through F.6 to the same obtaining A.13 assignment; absence or failure of attribution alone leaves independently admitted Work intact. If the same finding invalidates an admission premise, recheck that premise and the conclusions that used it. The note or view creates none of these facts.
 
 Use full `ControlStructureView` only when an independently identified architecture-description episteme about the selected control structure satisfies the fixed E.17.0 predicate for one viewpoint. Full use is justified when control-participant meanings, direct relations, rates, recovered control-layer labels, boundary refs, source return, representation or publication, or the patterns used for particular claims matter beyond the note.
 
@@ -87,7 +87,7 @@ ControlStructureViewNote:
   stratificationRepairRef?:
   nextPatternUseRef?:
   admissibleUse:
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
   stopCondition:
 ```
 
@@ -105,12 +105,12 @@ InterLayerControlRelationNote:
   rateEnvelopeRefs?:
   violationFallbackRefs:
   admissibleUse:
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
 ```
 
 Use this note only when a recovered control-layer relation is used for decomposition, substitution, a safety or stability claim, or an architecture decision. It is not proof and does not make the relation obtain. Otherwise keep C.30.LCA at the small note or ordinary description form, or use `C.30.STRAT` to recover the source label.
 
-A full `ControlStructureView` carries the common `ArchitectureStructuralView` content from `C.30.ASV:4.1` plus the control-specific fields below. Here `selectedControlStructureRef` names the same structure as the common `selectedStructureRef`; the full view retains `viewConstruction` and `hiddenOrLostStructure` even though this form does not repeat them.
+A full `ControlStructureView` carries the common `ArchitectureStructuralView` content from `C.30.ASV:4.1` plus the control-specific fields below. Here `selectedControlStructureRef` names the same structure as the common `selectedStructureRef`; the full view retains `hiddenOrLostStructure` and includes `viewConstruction?` when the receiving use needs that provenance even though this form does not repeat them.
 
 ```text
 ControlStructureView ::= ArchitectureStructuralView & {
@@ -162,14 +162,14 @@ ControlStructureView ::= ArchitectureStructuralView & {
   transformationFlowPathSliceRefs?: FinSet(PathSliceId),
 
   stratificationRepairRefs?: FinSet(C30STRATRepairRef),
-  sourceToUsePathRefs?: FinSet(U.RelationRef),
+  sourceToUsePathRefs?: FinSet(PathCitationRecordRef),
   downstreamPatternUseRefs?,
   representationRefs?: FinSet(U.EntityRef),
   publicationOccurrenceRefs?: FinSet(EpistemePublicationRelationRef),
   publicationFormRefs?: FinSet(U.EntityRef),
   carrierRefs?: FinSet(U.EntityRef),
   admissibleUse,
-  nonAdmissibleUse,
+  nonAdmissibleUse?,
   sourceReturnCondition?
 }
 ```
@@ -207,7 +207,7 @@ SafetyLossControlStructureNote:
     A.3.3 dynamics, C.27.TA temporal aspect or rate, and C.27 authored temporal-claim adequacy,
     C.28 causal-use, A.10 bounded source-to-use reliance, G.6 citable provenance paths,
     B.3 named assurance, A.20 internal-constraint validity, A.21 gate decisions
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
     not safety proof, not safety-case verdict, not regulatory acceptance
 ```
 
@@ -269,7 +269,7 @@ This checklist verifies the preceding guidance after the practitioner has chosen
 | CC-LCA-6 | Use `B.2.5` to state or test its compound feedback claim; keep that assertion separate from the base relation references. | Keeps the assertion, base relations and stronger stability, safety, evidence, gate and assurance claims distinct. |
 | CC-LCA-7 | Use E.18 to identify and test any transformation-flow path slice used by the control view. The slice is not the control structure or actual transformation itself. | Keeps transformation-flow and LCA relations distinct. |
 | CC-LCA-8 | Use C.29 for the mathematical-lens portion of cross-domain transfer, prediction, reusable explanation, or assurance input when that lens changes the use. | Preserves mathematical-lens use and representation boundaries. |
-| CC-LCA-9 | The record states admissible use, non-admissible use, and a source-return condition when the intended use relies on hidden source-side distinctions; representation, E.24.PUB publication occurrence, publication form, and carrier remain separate. | Prevents narrowed recognition or publication from becoming unchecked reliance. |
+| CC-LCA-9 | The account states the supported use and any material limitation. A source-return condition is included when the use depends on hidden source-side distinctions; representation, E.24.PUB publication occurrence, form and carrier remain separate. | Prevents narrowed recognition or publication from becoming unchecked reliance. |
 
 ### C.30.LCA:8 - Common Anti-Patterns and How to Avoid Them
 

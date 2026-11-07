@@ -28,7 +28,7 @@ Success is often treated either as final closure or as a reason to repeat the vi
 
 #### C.40.NP:4.1 - Recover the changed starting position
 
-After a successful transition, use the subject's changed position as new input to problem formation. Recover what it can now notice, attempt, combine or question. Compare that with a consequential situation it could not previously handle. This can yield a further problem even when the completed project satisfies every acceptance condition. The new question is not an automatically scheduled repeat of the first task.
+After a qualified result changes the subject's position, use that position as new input to problem formation. Recover what the subject can now notice, attempt, combine or question. Compare that with a consequential situation it could not previously handle. This can yield a further problem even when the completed project satisfies every acceptance condition. The new question is not an automatically scheduled repeat of the first task.
 
 For example, a lead who can now revise a planning assumption may become able to notice that the organization has no way for another lead to dispute an inherited assumption. The next problem concerns the conditions under which a judgement can be reconstructed, challenged and renewed across people. Repeating the planning course does not supply that result. The new direction can require a different way of discussing evidence, a different information-use rule and learning support for another carrier. It uses the first result without making the first project endless.
 
@@ -38,7 +38,7 @@ When several occasions reveal the same costly limitation in noticing, framing, c
 
 #### C.40.NP:4.2 - Construct the next worthwhile attainable problem
 
-After a worthwhile transition, recover the new starting position: attainable work, actual support dependence, new constraints, retained possibilities and newly exposed limits. C.40.OP, C.40.RQ preserve opportunities and requalify changed premises. B.5.PI and C.40.CD support the next inquiry even if the completed project meets all its declared criteria.
+Recover the starting position established by the qualified result: attainable work, actual support dependence, new constraints, retained possibilities and newly exposed limits. C.40.OP, C.40.RQ preserve opportunities and requalify changed premises. B.5.PI and C.40.CD support the next inquiry even if the completed project meets all its declared criteria.
 
 Ask what became worth attempting that was previously inaccessible or invisible. Select a more demanding but still attainable problem when its contribution justifies the burden. “More demanding” is relative to the subject and the useful contribution; it is not an obligation to increase workload, status, budget or a single numerical score. A strategic contraction can free the means for a more important development.
 

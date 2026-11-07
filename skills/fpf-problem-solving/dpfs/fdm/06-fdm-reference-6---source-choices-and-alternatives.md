@@ -1,0 +1,7 @@
+## FDM.Reference:6 - Source choices and alternatives
+
+The score-and-loan and group-funding cases join two questions: which financial relation a description concerns, and what using the description can change for a participant. A tool supplier can properly deliver information while another participant makes the decision. An authorized automated arrangement can act without a mandatory intermediate change in a human's expectation. A duty or permission is an actual institutional relation under its applicable conditions, distinguishable from descriptions of it. More client admissions are not by themselves a better outcome: suitability, legitimate refusal, participant objectives and the governing conditions can change that conclusion.
+
+[FPF A.2.8][DUTY], [FPF A.2.8.PER][PER] and [FPF A.2.9][ACT] supply the respective duty, permission and communicative-work distinctions. ADM supplies the applied administrative questions. These sources retain results that a vocabulary-only financial model could erase.
+
+A data dictionary is a good first result when the missing answer is a term's meaning. An event model is needed when terms must determine behavior; a service explanation is needed when the use and contribution remain unclear. Combining them is justified by the receiving question. Reconsider a model when actual terms, institutional conditions, observed behavior or a changed use defeats a relied-on distinction.

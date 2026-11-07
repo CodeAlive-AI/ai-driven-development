@@ -1,0 +1,5 @@
+## HCD.Reference:9 - Intended use and ordinary non-use
+
+Use this edition to identify the human contribution needed in later Work, construct or choose a feasible way to develop it, and interpret observations that can change the next development decision. It also supports learning-product and instructional-material work, individual and shared learning arrangements, and the continuation or revision of HCD Methods and cultural practices. The [Practical entries](_index.md#practical-entries) and [Available patterns](11-hcd-reference-11---available-patterns.md) distinguish these working questions and their results.
+
+Do not use it as a ready-made curriculum, whole provider service, complete assessment instrument, universal HCD Method repertoire, organization-change programme, or proof of cultural continuation. It supplies neither clinical treatment, specialist correctness, release or employment authority, nor evidence that a provider operated, development was performed, capability changed, or an intervention caused an effect.

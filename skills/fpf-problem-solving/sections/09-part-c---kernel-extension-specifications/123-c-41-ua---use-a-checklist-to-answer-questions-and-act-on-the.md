@@ -137,6 +137,6 @@ The selected line spends recovery effort only on information needed for a sound 
 
 C.41 supplies selected questions, C.41.TF their usable expression and C.41.OF an occasion with access to answers. C.41.QC supplies a qualification when criterion or checker uncertainty is material. C.41.SR connects answers across shared work.
 
-Administrative practice supplies claim checking and fit-for-use records. Operating practice supplies case continuation, exception handling, and quality and reliability control. [FPF E.10.D2](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#e10d2---entityofconcern-description-episteme-and-specification-use-discipline) preserves subject and description, and [A.15.10](https://github.com/ailev/FPF/blob/main/FPF-Spec.md#a1510---resume-interrupted-work) governs changed-premise use across work.
+Administrative practice supplies claim checking and fit-for-use records. Operating practice supplies case continuation, exception handling, and quality and reliability control. [FPF E.10.D2](../11-part-e---the-fpf-constitution-and-authoring-guides/34-e-10-d2---entityofconcern-description-episteme-and-specifica.md) preserves subject and description, and [A.15.10](../07-cluster-a-v---constitutional-principles-of-the-kernel/25-a-15-10---resume-interrupted-work.md) governs changed-premise use across work.
 
 ### C.41.UA:End

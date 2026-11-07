@@ -4,7 +4,7 @@
 > **Status:** Stable
 
 
-**Use this when.** Use this pattern when ethical claims at different declared levels or scopes cannot all be met as stated and their tension needs explaining. State each ethical concern as a claim about the case.
+**Use this when.** Use this pattern when ethical claims at different declared levels or scopes raise an incompatibility, trade-off or unresolved value tension that needs explaining. State each ethical concern as a claim about the case.
 
 **Not this pattern when.** If only the ethical value frame is missing, use `D.1`. If only entry recognition is needed, use `D.2`. If D.3 has already described the conflict and the current question is mediation or decision use, use `D.4`. If the question is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
 
@@ -16,9 +16,9 @@
 
 Ethical conflicts can cross part–whole relations or overlapping scopes. A decision may improve an organization's performance while harming affected people; an episteme may shape decisions that benefit some users and disadvantage others. Declare the relations and scopes present in the case; structural levels do not establish a moral hierarchy.
 
-The practical problem is connecting each claim to what it affects. An inventory of affected entities and values does not explain which claim concerns which entity or why the claims cannot all be satisfied. Describe each side as one connected statement and explain their tension.
+The practical problem is connecting each claim to what it affects. An inventory of affected entities and values does not explain which claim concerns which entity or why those concerns are in tension for the present question. Describe each side as one connected statement and explain their tension.
 
-The reusable result is a description episteme, not the conflict in the situation and not the form used to show it. The phrase *conflict structure* remains useful ordinary shorthand for the connected claim content inside that description. It does not name a new public `U.*` kind or a generic direct relation.
+The reusable result is a description episteme, not the conflict in the situation and not the form used to show it. The phrase *conflict structure* remains useful ordinary shorthand for the connected claim content inside that description.
 
 ### D.3:1.0 - Problem
 
@@ -44,7 +44,7 @@ Identify the sides needed to explain the conflict. At least two claims are invol
 1. the ethical claim that states the concern in ordinary language;
 2. the affected entity;
 3. the declared level relation, claim scope, or Work extent that locates the concern;
-4. the value-frame edition under which the consequence matters;
+4. the value premise under which the consequence matters, with a frame-edition reference when the reasoning uses one;
 5. the expected benefit, harm, or constraint and its consequence horizon; and
 6. the evidence use or uncertainty only when the side currently relies on it.
 
@@ -54,7 +54,7 @@ A short working note can be sufficient. Develop a more elaborate description onl
 
 #### D.3:2.2 - Reusable conflict description
 
-When another reader or later use must cite, compare, revise, or publish the result, identify one `InterlevelEthicalConflictDescription`. This is an ordinary local name for one C.2.1 `U.Episteme`, not a newly admitted `U.*` kind.
+When another reader or later use must cite, compare, revise, or publish the result, identify one `InterlevelEthicalConflictDescription`. This is an ordinary local name for one C.2.1 `U.Episteme`.
 
 Apply the C.2.1 identity test:
 
@@ -78,8 +78,9 @@ InterlevelEthicalConflictDescription — C.2.1 identity:
         declaredLevelRelationRef?
         sideClaimScopeRef?
         affectedWorkExtentRef?
-        valueFrameEditionRef
-        expectedConsequence: what changes and why it counts, for example, as a benefit, harm, or constraint under that value frame
+        valuePremise
+        valueFrameEditionRef?
+        expectedConsequence: what changes and why it counts, for example, as a benefit, harm, or constraint under that value premise
         consequenceHorizon
         evidenceUseRef?
         uncertaintyStatement?
@@ -103,15 +104,15 @@ The `plainStatement` must name the exact incompatibility, trade-off, parity, or 
 | --- | --- | --- |
 | A Method is part of a side's claim. | the exact `U.Method` under A.3.1 and, when cited, its MethodDescription under A.3.2 | Method identity from any dated performance |
 | Performance actually occurred. | use A.13 to identify the actual performer System; use A.15.1 to admit the exact dated `U.Work` independently from its history, Method, extent, and containing System; if the conflict account must also identify the assignment under which the Work was performed, check that relation separately through F.6 | keep a plan, intention, assignment, capability, permission, authority, and responsibility separate from performed Work |
-| Assignment matters. | the exact assignment species and its obtaining occurrence under A.2.1, with actual participants and applicability | assignment from performance, responsibility, permission, or authority |
-| Role-shaped wording or classification matters. | one E.10.ROLE recovery, then the local kind and a separate C.2.1 classification assertion episteme under C.3.2 after the candidate passes its admissibility test | the word *role*, kind, assertion, assignment, and acting System from one another |
-| Evidence changes a side or its uncertainty. | the evidence episteme and the exact A.10 evidence-use or reliance result | stored evidence from reliance on it |
-| A transformation changes who benefits or is harmed. | the exact transformation occurrence under A.3.4 and its affected participants | a transformation description from the occurrence |
-| Membership or part-whole structure matters. | the exact collection-membership or part-whole predicate and obtaining occurrence | a plural name from an acting or responsible System |
-| Agency is disputed. | the exact Characteristic, Scale, threshold, and supporting evidence use | an agency reading from responsibility |
-| Responsibility, permission, authority, commitment, or participation is claimed. | the exact relation definition and obtaining occurrence, or the exact A.6.RCD missing-governor result | the relation family from an occurrence; the occurrence from evidence for it |
-| A calculation or formal comparison changes the tension. | the exact C.29 representation, its correspondence to the independently recovered objects, and the operation used | a formula or score from the ethical conflict or decision |
-| Publication or audience use changes the ethical claim. | the selected episteme edition, publication occurrence, form, carrier, audience, and bounded use under E.17 and E.24.PUB | the published episteme from its form, carrier, publishing Work, and availability relation |
+| Assignment matters. | the exact assignment species and the current claim with its case basis under A.2.1; cite an obtaining occurrence when the account relies on one | assignment from performance, responsibility, permission, or authority |
+| Role wording or classification needs clarification. | use E.10.ROLE to recover the current meaning; when System classification is claimed, identify the local kind and the separate C.2.1 classification assertion under C.3.2 with its candidate-admissibility basis | ordinary wording, classification, assignment, and the acting System from one another |
+| Evidence changes a side or its uncertainty. | identify the supporting content and the grounds for this use; apply A.10 when the source-to-use relation is implicit or must be replayable | available or stored evidence from what it warrants for this side |
+| A change affects who may benefit or be harmed. | identify the proposed change and its supported possible consequences; when an actual transformation is claimed, identify its occurrence and affected participants under A.3.4 | a possible or described change from an obtaining transformation |
+| Membership or part-whole structure matters. | the applicable collection-membership or part-whole predicate and its supported claim or precise unresolved condition; an affirmative occurrence claim needs its obtaining basis | a plural name from an acting or responsible System |
+| Agency is disputed. | identify the agency claim and its supporting basis; use A.13 for a precise FPF agency claim, adding a Characteristic, Scale or threshold only when the claim or criterion requires it | an agency claim from responsibility |
+| Responsibility, permission, authority, commitment, or participation is claimed. | the applicable direct predicate, participants and supported affirmative, negative or modal claim, or the precise unresolved condition; an affirmative occurrence claim needs its obtaining basis, and a separate occurrence reference is added when its identity is used | the relation family from an occurrence; the occurrence from evidence for it |
+| A calculation or formal comparison changes the tension. | retain the calculation's subject correspondence, applicable assumptions and operation; use C.29 when the representation's choice, transfer or supported use remains unresolved | a formula or score from the ethical conflict or decision |
+| Publication or audience use changes the ethical claim. | recover the claims made available, audience and bounded use under E.24.PUB, including the expression, carrier, form or occurrence identity that changes this judgement; use E.17 when a readable face of an accepted account must be produced | the published episteme from its expression, form, carrier, publishing Work, and availability relation |
 | A harm or benefit depends on causality, assurance, or architecture. | only the affected C.28, B.3, D.5, or C.30.ILC return | the conflict description from causal proof, assurance, or architecture selection |
 
 Open no branch merely because the field exists. The detail must change a side, the tension, or the next receiving use.
@@ -120,13 +121,13 @@ Open no branch merely because the field exists. The detail must change a side, t
 
 A collection is ethically current only when whole-level characteristics, membership relations, environment-mediated effects, or aggregate consequences matter. Use `A.14` for part-whole and membership relations and `C.13` for constructive grounding. A plural or institutional name does not make the collection an acting or responsible System.
 
-An episteme is ethically current when its claim content, source use, publication, described EntityOfConcern, or model use changes the affected systems or decisions. Use C.2.1 for episteme identity and exact edition claims, and E.17 with E.24.PUB for publication. The D.3 conflict description is a separate episteme about the selected case; it does not become identical to the policy, model, standard, or architecture description involved in one of its sides.
+An episteme is ethically current when its claim content, source use, publication, described EntityOfConcern, or model use changes the affected systems or decisions. Use C.2.1 for episteme identity and exact edition claims, and E.24.PUB for the publication relation; use E.17 when producing a readable face of an accepted account. The D.3 conflict description is a separate episteme about the selected case; it does not become identical to the policy, model, standard, or architecture description involved in one of its sides.
 
 ### D.3:4 - Boundaries
 
 | Do this in D.3 | Do not do this in D.3 |
 | --- | --- |
-| Derive the declared levels and scopes from the case. | Invent `U.Level`, `U.Frustration`, `U.Emergence`, or a fixed moral ladder. |
+| Derive the declared levels and scopes from the case. | Impose a fixed moral ladder. |
 | Connect every side's claim, affected entity, scope, value frame, consequence, and horizon. | Present flat bags of entities, values, evidence, and relations as if their connections were obvious. |
 | Keep the conflict description, the situation it describes, and its narrative, table, graph, form, carrier, and publication separate. | Treat a file or diagram as the conflict, or treat description content as proof that a direct relation obtains. |
 | Add Method, Work, assignment, classification, evidence use, agency, responsibility, publication, assurance, causal, or architecture detail only when current. | Require assurance-like apparatus before the first useful map exists. |
@@ -150,13 +151,15 @@ Tension: performing the plan would advance Side A by enabling the harm named in 
 Next use: D.4 refusal or conditions; C.28 first if the harm claim needs causal support.
 ```
 
-This is enough to begin D.4 and does not decide who is responsible. If another reader must cite or revise the note, identify it as an `InterlevelEthicalConflictDescription` whose EntityOfConcern is the consulting-plan episteme. If consulting Work later occurs, use A.13 to identify its actual performer and A.15.1 to admit the dated occurrence independently. Add F.6 only if the note must also identify the assignment under which that Work was performed. Add agency, responsibility, permission, authority, or another assignment claim only through its independently obtaining relation or exact missing governor.
+This is enough to begin D.4 and does not decide who is responsible. If another reader must cite or revise the note, identify it as an `InterlevelEthicalConflictDescription` whose EntityOfConcern is the consulting-plan episteme. If consulting Work later occurs, use A.13 to identify its actual performer and A.15.1 to admit the dated occurrence independently. Add F.6 only if the note must also identify the assignment under which that Work was performed. Add agency or relation detail only when that claim changes the account, using its direct pattern and preserving its affirmative, negative, conditional or unresolved result.
+
+If the consulting agreement explicitly excludes deployment decisions, it grants no authority for those decisions. If the agreement's scope is unavailable, leave that authority claim unresolved and identify the missing agreement. D.4 can use either result: a justified denial concerns this agreement, while an unavailable premise leaves a question to settle.
 
 **Joint incompatibility.** Three neighborhoods each claim at least one hour of a mobile clinic's service under a declared equal-access requirement. Only two service hours are available in the relevant window. Any pair of claims could be met; all three together cannot. Describe all three sides and the shared capacity condition before asking D.4 to examine continuations. No pairwise description captures this whole conflict.
 
-**Conditional collection record.** A fleet-wide maintenance change lowers cost but may raise failure risk for a small subfleet operating in harsh conditions. The description has a fleet-cost side and a harsh-service safety side, each with its affected entity, scope, value-frame edition, consequence, and horizon. Add the exact fleet-membership relation because it locates the subfleet. Add the reliability evidence episteme and A.10 evidence use because the safety side relies on them. Return the causal question to C.28 if the risk claim depends on the proposed change. None of those additions makes the fleet an acting or responsible whole; use A.1 for systemhood and the exact responsibility predicate for responsibility.
+**Conditional collection record.** A fleet-wide maintenance change lowers cost but may raise failure risk for a small subfleet operating in harsh conditions. The description has a fleet-cost side and a harsh-service safety side, each with its affected entity, scope, value premise and any frame edition used, consequence, and horizon. Add the exact fleet-membership relation because it locates the subfleet. Identify the reliability evidence and its grounds for this safety claim; use A.10 if the source-to-use relation is implicit or needs a replayable account. Return the causal question to C.28 if the risk claim depends on the proposed change. None of those additions makes the fleet an acting or responsible whole; use A.1 for systemhood and the exact responsibility predicate for responsibility.
 
-**Episteme record.** A published architecture description normalizes an interface assumption that excludes an alternative implementation. The EntityOfConcern of the D.3 description is the exact supplier-selection situation, not the architecture-description file. One side claims lower integration cost; the other claims unjust exclusion of affected suppliers under a named value-frame edition and horizon. Cite the architecture-description episteme and its publication or use only because that use carries the assumption into the decision. Use C.30.AD for description adequacy and use E.17 with E.24.PUB for publication; D.3 records the ethical tension that remains.
+**Episteme record.** A published architecture description normalizes an interface assumption that excludes an alternative implementation. The EntityOfConcern of the D.3 description is the exact supplier-selection situation, not the architecture-description file. One side claims lower integration cost; the other claims unjust exclusion of affected suppliers under a named value-frame edition and horizon. Cite the architecture-description episteme and its publication or use only because that use carries the assumption into the decision. Use C.30.AD for description adequacy and E.24.PUB for the publication relation; D.3 records the ethical tension that remains.
 
 ### D.3:5.1 - Bias-Annotation
 
@@ -164,7 +167,7 @@ This is enough to begin D.4 and does not decide who is responsible. If another r
 | --- | --- | --- |
 | Debate replaces a connected account | The team argues about values before connecting each claim to an affected entity, scope, frame, consequence, and horizon. | Write the side rows and tension statement before mediation. |
 | Description becomes conflict | A diagram, matrix, or narrative is treated as the ethical conflict itself. | Identify the description as a C.2.1 episteme and keep its EntityOfConcern and presentation form separate. |
-| Collection name becomes responsibility | Organization, society, public, market, or AI is treated as responsible by label. | Recover systemhood, membership, participation, assignment, and agency evidence separately; cite the exact responsibility relation or missing governor. |
+| Collection name becomes responsibility | Organization, society, public, market, or AI is treated as responsible by label. | Recover the subject and the responsibility predicate used, then establish its case basis or the precise unresolved question. Add membership, participation, assignment and agency claims only when that inference needs them. |
 | Formal completeness displaces use | A large record is filled even though two sides and one tension already answer the current question. | Stop at the first adequate description and add only detail consumed by the next use. |
 | Architecture absorbs ethics | Cross-scope residual wording hides value, harm, responsibility, or admissible sacrifice. | Use the applicable architecture pattern for the residual and use D.3 with D.4 for the ethical conflict and its use. |
 
@@ -173,9 +176,9 @@ This is enough to begin D.4 and does not decide who is responsible. If another r
 | ID | Requirement | Purpose |
 | --- | --- | --- |
 | CC-D3-1 | A reusable result is one C.2.1 episteme with one exact EntityOfConcern, ClaimGraph, and effective ReferenceScheme. Edition, form, carrier, and publication remain separate. | Makes the reference used by D.4 reidentifiable. |
-| CC-D3-2 | At least two sides each connect one ethical claim, affected entity, declared level relation or applicable scope, value-frame edition, consequence, and horizon. Evidence use and uncertainty are added when current. | Shows what each claim affects rather than presenting a flat inventory. |
+| CC-D3-2 | At least two sides each connect one ethical claim, affected entity, declared level relation or applicable scope, value premise, consequence, and horizon. Identify a value-frame edition when used; add evidence use and uncertainty when current. | Shows what each claim affects rather than presenting a flat inventory. |
 | CC-D3-3 | Any ClaimScope on the whole description remains separate from side-specific ClaimScopes and Work extents. | Prevents the description's coverage from replacing the scope of a side. |
-| CC-D3-4 | The tension names the sides and states why they cannot all be met as stated. Any direct relation claim cites its definition and obtaining occurrence, or the exact A.6.RCD missing-governor result. | Prevents a reference field from manufacturing a fact in the situation. |
+| CC-D3-4 | The tension names the sides and explains the incompatibility, trade-off, parity or unresolved tension relevant to the next use. A direct relation claim retains its predicate, participants, polarity or modality, and case basis or precise unresolved condition. An affirmative occurrence claim needs its obtaining basis; cite occurrence identity only when the receiving use needs it. | Prevents a reference field from manufacturing a fact in the situation. |
 | CC-D3-5 | Classification assertion, Method, Work, relation definition, relation occurrence, evidence episteme, evidence use, publication, form, and carrier remain separately typed when used. | Prevents the conflict description from absorbing neighboring objects. |
 | CC-D3-6 | The first useful result is readable without the optional enriched branches, and every added branch changes the conflict or its next use. | Keeps D.3 affordable in ordinary project work. |
 | CC-D3-7 | The next-use statement names D.4, D.5, C.28, C.30.ILC, evidence, assurance, or another receiving pattern by value. | Keeps mapping separate from mediation, decision, proof, and assurance. |
@@ -186,7 +189,7 @@ This is enough to begin D.4 and does not decide who is responsible. If another r
 | --- | --- | --- |
 | Political label as structure | The conflict is named by a slogan such as society versus innovation. | Write the concrete sides, affected entities, scopes, value frames, consequences, and horizon. |
 | Flat inventory | The map lists values, entities, evidence, and relations without showing which belong together. | Use side rows and one tension statement. |
-| Actor by plural noun | A collection is made responsible because its name is plural or institutional. | Recover systemhood and each relation separately; cite an exact responsibility occurrence or missing governor. |
+| Actor by plural noun | A collection is made responsible because its name is plural or institutional. | Recover the subject and the responsibility predicate with the basis for the actual claim; retain a negative result or precise unresolved condition when warranted. |
 | Description-only conflict | The case becomes only a wording problem about a report, model, or standard. | Keep episteme identity and publication with their patterns while D.3 describes the affected systems, decisions, and ethical tension. |
 | Mediation inside map | The description chooses the compromise. | Stop at the tension and next-use question; use D.4 for mediation or decision use. |
 | Ontology as prose tax | Every simple concern is expanded into specialist relation language. | State the ordinary side first; add a formal identity only when another use relies on the distinction. |
@@ -203,7 +206,7 @@ Side rows make the conflict inspectable because they preserve which claim affect
 
 ### D.3:10 - SoTA-Echoing
 
-`SoTA` here means the best current contribution to the practical question of making value conflict inspectable before deciding it. The comparison is current to 2026-08-20; publication date, popularity, and official status are not sufficient by themselves.
+The comparison below selects contributions from the named sources and editions for making value conflict inspectable before deciding it. Their use and limits are stated for that question.
 
 | Practice question | Exact source and status | Selected contribution and limit | Decision, receiving locus, and reopen |
 | --- | --- | --- | --- |

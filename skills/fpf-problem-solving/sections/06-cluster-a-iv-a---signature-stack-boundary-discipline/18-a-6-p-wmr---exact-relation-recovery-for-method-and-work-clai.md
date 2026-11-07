@@ -134,7 +134,7 @@ A positive direct-relation claim needs both a rule and case facts. The direct su
 
 A governed negative sentence needs the analogous negative or non-obtaining criterion and separate facts satisfying it. Failure to support a positive claim, an absent record, or an unobserved event is not a negative premise.
 
-A method-description field, planned filling, compatible type, stored reference, matching token or nearby record alone establishes no actual participant relation. Its content may make a claim or supply grounds; assess those under the direct predicate and, where reliance matters, A.10.
+A method-description field, planned filling, compatible type, stored reference, matching token or nearby record alone establishes no actual participant relation. Its content may make a claim or supply grounds; assess those under the direct predicate and establish the grounds for any reliance. Use A.10 when the source-to-use account is implicit or must remain replayable.
 
 #### A.6.P.WMR:4.4 - Ordinary sentence shapes
 
@@ -255,7 +255,7 @@ An action nominal such as `testing`, `assembly`, `maintenance`, `evaluation` or 
 
 A use that needs only the recovered method, method description, plan, structure, or other already governed value closes under that direct pattern. Only reliance on the label as one performed occurrence handles the candidate designation and required granularity under `A.15.1`.
 
-For a deliberately asserted particular Work occurrence, recover its A.13 basis and apply A.15.1 independently. Use the established Work at the needed granularity, a supported neighboring object, or the stated blocker. A material `workContinuityPolicyRef` belongs to the A.15.1 identity judgement. If the sentence additionally attributes Work to an assignment, use F.6 with that same A.13 assignment; missing or contrary attribution facts do not erase the Work. Apply F.18 only after the occurrence is established and needs a durable name.
+For a deliberately asserted particular Work occurrence, recover its A.13 basis and apply A.15.1 independently. Use the established Work at the needed granularity, a supported neighboring object, or the stated blocker. A material `workContinuityPolicyRef` belongs to the A.15.1 identity judgement. If the sentence additionally attributes Work to an assignment, use F.6 with that same A.13 assignment; missing or contrary attribution facts alone do not erase independently admitted Work. Recheck any admission premise invalidated by the same finding and its dependent conclusions under A.15.1. Apply F.18 only after the occurrence is established and needs a durable name.
 
 Any output, result, outcome, production, delivery, or acceptance wording is a separate WMR claim only while its direct relation or claim dimensions remain hidden. Once readable, apply the rule for that relation or claim; it does not become part of work identity.
 

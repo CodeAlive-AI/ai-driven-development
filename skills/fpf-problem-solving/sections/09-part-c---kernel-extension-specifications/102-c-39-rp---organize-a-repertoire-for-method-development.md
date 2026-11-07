@@ -55,7 +55,7 @@ The resulting list appears complete but cannot answer which alternatives are ide
 
 ### C.39.RP:4 - Solution
 
-A repertoire here serves a named Method-development use. G.5 retains authority over a maintained family or selector; G.11 governs a refresh that its own entry makes necessary. The construction below recovers the source contributions, alternatives and practical conditions that those results do not supply merely by listing Methods.
+A repertoire here serves a named Method-development use. G.5 supplies a Method-family registry or selector-facing result when that question is current; G.11 governs a refresh that its own entry makes necessary. The construction below recovers the source contributions, alternatives and practical conditions that those results do not supply merely by listing Methods.
 
 Build the repertoire around one receiving use. Recover exact subjects and source contributions, qualify every relation by its own evidence, and record unsupported positions as gaps instead of filling them with guesses.
 

@@ -50,7 +50,7 @@ For this application, identify the objects, relations, given information, permit
 
 Follow the needed result backward to its prerequisites. Keep shared prerequisites and jointly required inputs visible. When a description names a construction without showing how to perform it, B.5.RC recovers its producing operations. When an inference remains unclear, B.5.RA recovers the reason and transitions needed by the receiving use.
 
-Make an unfamiliar expression operative at the point of difficulty. Determine the arguments of a function, the objects related by a diagram, or the conditions under which a rule applies. A.6.3.RT helps construct a usable expression under the available notation. Understanding a symbol's name is useful only as far as it helps perform or interpret the operation.
+Make an unfamiliar expression operative at the point of difficulty. Determine the arguments of a function, the objects related by a diagram, or the conditions under which a rule applies. A.6.3.RT helps construct a usable expression under the available notation.
 
 #### B.5.TU:4.3 - Construct the application
 
@@ -174,7 +174,7 @@ A small successful application provides something to use and a basis for further
 
 ### B.5.TU:11 - SoTA-Echoing
 
-**How much theory must be reconstructed for a first use?** Adapt [van Oostrum, Langer and Ay (2025), Introduction and §§1–2, 4](https://arxiv.org/html/2406.07726v4): connect the operational question to stated model variables and inference, work an example, and recover deeper derivations when they are needed. The alternative is to use an interpreted supplied implementation. Retain that cheaper route when it suffices; reconstruct dependencies when adaptation or explanation requires them. Sections :4.1–:4.4 make that choice explicit. The source provides a discrete active-inference account and a minimal implementation, not evidence that one learning sequence suits every practice or agent.
+**How much theory must be reconstructed for a first use?** Adapt [van Oostrum, Langer and Ay (2025), Introduction and §§1–2, 4](https://arxiv.org/html/2406.07726v4): connect the operational question to stated model variables and inference, work an example, and recover deeper derivations when they are needed. The alternative is to use an interpreted supplied implementation. Retain that cheaper route when it suffices; reconstruct dependencies when adaptation or explanation requires them. Sections :4.1–:4.4 make that choice explicit. The source provides a discrete active-inference account and a minimal implementation.
 
 **How can notation reveal what an application still lacks?** Adapt [SICM's Preface](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/9579/sicm_edition_2.zip/preface001.html): recover function arguments, substitutions and composition where implicit conventions obscure the operation. A familiar conventional expression is cheaper when the reader can already use it reliably. Sections :4.2–:4.4 therefore call for operative reconstruction at the unresolved step; :5.2 supplies a case. The selected contribution is explicit operation recovery. Its source's strong requirement of automatic interpretability is appropriate for computational exposition; ordinary use may be settled by a clear hand-worked construction.
 

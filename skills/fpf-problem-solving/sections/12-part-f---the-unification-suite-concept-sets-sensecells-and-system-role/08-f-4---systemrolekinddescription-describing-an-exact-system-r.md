@@ -84,9 +84,9 @@ The following is a content checklist, not a relation signature or mandatory reco
 - the candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule;
 - the current `KindSignature` edition and effective reference scheme;
 - a short recognition explanation;
-- the full A.1 range of possible candidate systems, using examples only when helpful;
+- the candidate-system range, clarifying the broad A.1 meaning of System when the intended reader could otherwise misread it;
 - the smallest direct-feature criteria or invariants needed by the current use; and
-- the explicit boundary: the description asserts no classification, assignment, capability, Method, Work, evidence, status, permission, responsibility, publication, or relation-position occurrence.
+- the boundaries needed to distinguish this description from neighboring claims in the current use.
 
 **Add only when the current use depends on them:**
 
@@ -110,7 +110,7 @@ These are claims or references in an episteme. They are not `SlotSpec` declarati
 | Recognition explanation | A first-minute explanation that distinguishes this kind from neighboring kinds and objects. |
 | Candidate-system range | Candidates must first be admitted as `U.System`; people, teams, organizations, and non-human technical objects are possible examples, not four subkinds declared here. |
 | Conditional neighboring references | Add neighboring references for assignment state, capability, Method, naming, and Bridges only when the receiving use depends on them. |
-| Non-inference boundary | Explicit separation from classification, assignment, Work, evidence, status, permission, responsibility, publication, and relation-position claims. |
+| Non-inference boundary | Keep description, classification, assignment and other neighboring claims separate; state an explicit contrast when it prevents a plausible mistake in the current use. |
 
 A quick local description may stop after the always-recoverable content. A consequence-bearing Work-admission use requires only the neighboring relations it actually needs.
 
@@ -142,7 +142,7 @@ Write a description in this order:
 2. Name the current `KindSignature` edition and effective reference scheme.
 3. Give one short recognition paragraph, including the broad A.1 system range when a cold reader could narrow it incorrectly.
 4. State the smallest direct criteria or invariants that distinguish the kind.
-5. State what the description does not assert about classification, assignment, capability, Method, Work, evidence, status, permission, responsibility, publication, or relation positions.
+5. State an explicit boundary when the current use could otherwise confuse the description with classification, assignment, capability, Method, Work or another neighboring claim.
 6. Add neighboring references only when the receiving use depends on them.
 7. Use F.18 for a durable public name. Use C.3.3 only when an actual relation between exact local kinds is current; use F.9 only when the receiving claim relates distinct F.17 local-sense cells.
 
@@ -224,7 +224,7 @@ The sentence “Standard S has the architecture-standard role in this Work” is
 
 #### F.4:7.4 - Access Role Is Not Automatically a System Role
 
-RBAC *role* often names a permission grouping. If the current claim concerns permission or access standing, use the direct policy, deontic, access, or status relation. Treat a local access term as a system-role kind only when its own C.3 identity and criterion are current and a receiving Work claim actually needs that classification. Even then, permission and assignment remain separate.
+RBAC *role* often names a permission grouping. If the current claim concerns permission or access standing, use the direct policy, deontic, access or status relation. Treat a local access term as a system-role kind only when A.2 and C.3 establish its candidate domain, work-facing membership distinction and identity. Classify a particular candidate when the receiving use needs that judgment. Permission and assignment remain separate.
 
 ### F.4:8 - Anti-Patterns and Repairs
 
@@ -292,7 +292,7 @@ Currentness and reopen condition: reopen F.4 when A.2, C.3, A.2.1, A.2.5, A.2.7,
 | `CC-F4-02` | Are the candidate domain, operative membership condition, intended member/non-member boundary, continuity rule, current `KindSignature`, and effective scheme recoverable, with source or practice provenance used only to locate or compare definitions? |
 | `CC-F4-02a` | Are the description episteme, local kind, `KindSignature`, effective scheme, optional F.17 cell and basis relation, and candidate-classification judgment kept separate, with optional values added only when the receiving use needs them? |
 | `CC-F4-03` | Is the description separate from the kind, classification judgment, NameCard, public row, publication form, and carrier? |
-| `CC-F4-04` | Does first entry preserve the full A.1 range of possible systems rather than imply only non-human technical systems? |
+| `CC-F4-04` | Does first entry preserve the kind's operative candidate domain and clarify the A.1 meaning of System where the intended reader could otherwise narrow it incorrectly? |
 | `CC-F4-05` | Are classification and assignment handled separately under C.3.2 and A.2.1? |
 | `CC-F4-06` | Are capability claims handled under A.2.2? |
 | `CC-F4-07` | Are Method, plan, and Work claims handled under A.3, A.15, and their direct neighbors? |

@@ -12,7 +12,7 @@ The first useful move is to state the affected engineering result and the smalle
 
 **Not this pattern when.** If the blocker is missing observation or evidence, reopen the domain or evidence question and its predicate. If wording alone hides the distinction, use `F.19`, with `C.2.P` or `E.10` for a remaining semantic question. If the problem is a material premise conflict between FPF methods, use `A.7.2`. A proposed new framework pattern or U-kind follows the applicable `E.24` or `E.24.UK` admission, with `A.8` and `A.11`; a local clarification or saved result alone requires neither proposal.
 
-The primary reader is a domain engineer or ontology analyst responsible for the affected use. The procedural content describes the consequence-guided ontology-analysis Method developed in §4. To assert `U.MethodDescription` membership for a pattern episteme, identify that admitted Method as its exact EntityOfConcern and satisfy A.3.2. When actual ontology-analysis Work is claimed, recover the performing `U.System` through A.13 and let A.15.1 independently admit the dated `U.Work` and enacted Method. Add F.6 only when the analysis result also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed F.6 leaves the Work intact. The reader, performer System, description episteme, Method, any assignment and attribution, Work, and returned engineering result remain separate.
+The primary reader is a domain engineer or ontology analyst responsible for the affected use. The procedural content describes the consequence-guided ontology-analysis Method developed in §4. To assert `U.MethodDescription` membership for a pattern episteme, identify that admitted Method as its exact EntityOfConcern and satisfy A.3.2. When actual ontology-analysis Work is claimed, recover the performing `U.System` through A.13 and let A.15.1 independently admit the dated `U.Work` and enacted Method. Add F.6 only when the analysis result also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed attribution alone leaves independently admitted Work intact. Recheck any admission premise invalidated by the same finding and its dependent conclusions under A.15.1. The reader, performer System, description episteme, Method, any assignment and attribution, Work, and returned engineering result remain separate.
 
 ### A.7.1:1 - Problem frame
 
@@ -69,7 +69,7 @@ The four loci are a named diagnostic set; they are not a mandatory sequence.
 
 1. Select the first locus capable of resolving the delta.
 2. Perform the required domain inquiry, wording repair, typing, evidence assessment or construction analysis.
-3. Use exact `A.7.CP` claim IDs through `ClaimUsedAsReasoningBasisRelation@Context` only when those claims are load-bearing in the work. Do not traverse the compact by default.
+3. Cite exact `A.7.CP` claim IDs when their contents are load-bearing. Use `ClaimUsedAsReasoningBasisRelation@Context` when the receiving use needs to recover the actual Work, receiving result, posture, scope, or interval of that reliance. Do not traverse the compact by default.
 4. Preserve direct evidence, currentness, source-use, kind-admission, and subject-construction patterns.
 5. Return the repaired result immediately when the next action is truthful at the declared guarantee.
 
@@ -109,7 +109,7 @@ Ontology-display bias favors elaborate category systems even when existing predi
 | `CC-A7.1-3` | The work enters the first capable domain, wording, typed-account, or constructive-ground locus rather than a mandatory ladder. |
 | `CC-A7.1-4` | The normal case uses the already selected A.7.1 analysis method as its one current apparatus; the engineering subject and its subject pattern remain inputs and constraints. Candidate generation and choice open only for alternative direct-kind apparatuses eligible for the same use and guarantee. |
 | `CC-A7.1-5` | Keep the reader, description episteme, Method and problem-facing result distinct. A MethodDescription claim satisfies A.3.2; an asserted dated Work uses the independent A.13/A.15.1 basis in §0, with F.6 only for the precise attribution consumed. Local system-role-kind classification and the obtaining assignment remain separate claims. |
-| `CC-A7.1-6` | Only load-bearing `A.7.CP` claims receive reasoning-basis relation occurrences. |
+| `CC-A7.1-6` | Cite only load-bearing `A.7.CP` claims; identify their reasoning-basis occurrences when the receiving use needs the actual reliance account under §4.4. |
 | `CC-A7.1-7` | Direct relation, local system-role-kind, assignment, state, capability, responsibility, evidence, source-use, Work, and kind-admission patterns remain authoritative. |
 | `CC-A7.1-8` | The result uses one declared local disposition and includes stop/reopen or exact blocker. |
 | `CC-A7.1-9` | A saved ontology result serves reuse, dispute, consequence, automation or cross-pattern change. Any new framework-pattern or U-kind proposal satisfies its applicable admission; saving a local distinction does not itself open that proposal. |
@@ -149,7 +149,7 @@ Ontology effort should scale with the consequence that changes. A subject-patter
 ### A.7.1:12 - Relations
 
 - **Description-level specialization:** A.7.1 narrows the method claims stated by `C.19.2` to ontology analysis. It retains the use, problem-facing result, guarantee, horizon, useful threshold and stop/reopen conditions. On the ordinary one-apparatus path, the selected analysis Method is the apparatus and the engineering subject and its rule are inputs. Alternative generation and choice use C.18/C.11 only under §4.1. Description membership and actual Work use the separate conditions in §0; this description-level relation alone establishes no relation between the described Methods.
-- **Consumes:** exact `A.7.CP` claim epistemes through `ClaimUsedAsReasoningBasisRelation@Context` only when the ontology-analysis work relies on them.
+- **Consumes:** exact `A.7.CP` claim content when load-bearing; uses `ClaimUsedAsReasoningBasisRelation@Context` when the receiving use needs the actual reasoning-basis account under §4.4.
 - **Coordinates with:** `A.7.2` when a material cross-pattern premise conflict is current; neither method is the other's parent or source of premise truth.
 - **Returns to:** direct relation, local system-role-kind, assignment, System, state, capability, Method, Work, responsibility, evidence, temporal, structural, and domain patterns for the claim being repaired.
 - **Uses for new framework-pattern or U-kind proposals:** `E.24` or `E.24.UK`, with `A.8` and `A.11`. A.7.1 itself admits neither; local kinds and relations retain their subject rules.

@@ -12,16 +12,15 @@ The practical question is simple:
 
 > Are we only reading a state, only reading a rate, or claiming that an intervention changes a rate, rhythm, recovery, or regime?
 
-If the claim is only a state or rate reading, stop. If it is intervention-sensitive, state the effort or input, window, resistance or cost, reason for the reading, supported use, unsupported use, and reopen condition.
+If the claim is only a state or rate reading and that answers the receiving question, stop. For an intervention-sensitive claim, recover the proposed input, relevant time, resistance or cost, and grounds for the predicted change. Return the supported use and any material limitation; add a reopening condition when later reliance needs it.
 
 **What this buys.** A trend no longer passes silently as an intervention model. Braking, pausing, stabilizing, redirecting, coasting, widening, narrowing, or slowing rollout remain available when acceleration would be the wrong move.
 
-**Primary EntityOfConcern.** Recover the source temporal claim as one exact C.2.1 episteme or as the exact claim denoted by a `C.2.1 ClaimAddress`: exact edition plus intrinsic claim identity declared by that edition's ClaimGraph. Every later `ClaimAddress` in C.27 means that same reusable value. The source claim's own EntityOfConcern remains the System, Work, Method, practice, service, benchmark, or other exact subject it discusses.
+**Primary working object.** The temporal claim whose adequacy matters to the receiving action. Recover its content and subject from the available plan, report, model, observation or other account. An exact C.2.1 episteme or `ClaimAddress` is needed when the receiving use relies on that independently referable identity. Here `ClaimAddress` means exact edition plus intrinsic claim identity declared by that edition's ClaimGraph.
 
-When a C.27 result is materialized, it is a separate C.2.1 episteme. Its EntityOfConcern is that exact source episteme or addressed claim, not the ClaimAddress used to refer to it. Its ClaimGraph states the Dyn reading, supported use, unsupported use, and reopen condition. The world-side subject remains a neighboring object; it is not a second EntityOfConcern of the C.27 result.
-A local note can remain record-shaped claim content. Use E.24.PUB only when a publication occurrence, form, carrier, audience availability, or source-backed publication face changes the use. A changed page or file does not by itself identify a changed claim.
+When an adequacy assertion is independently identified under C.2.1, its EntityOfConcern is the source episteme or addressed claim, not the reference used to designate it. An ordinary assessment can state its conclusion directly. Publication under E.24.PUB is separate from that claim and identity.
 
-**First useful move.** Recover the exact source claim and the exact C.27.TA temporal-aspect claim or ClaimAddress it uses. Then classify the source claim:
+**First useful move.** Recover what is claimed to change over time, for which subject and conditions. Use `C.27.TA` when its temporal meaning needs clarification, then classify the claim:
 
 | Reading | What the claim treats as sufficient | Normal result |
 | --- | --- | --- |
@@ -61,15 +60,15 @@ Typical consequences include:
 
 C.27 repairs one authored-claim failure. It is not a dynamics model, a measurement calculus, or a physics analogy promoted into FPF ontology.
 
-C.27 introduces no U.Force, U.Mass, U.Acceleration, U.Rhythm, U.Practice, or U.SecondOrderProcess kind. It also introduces no universal calculus, control theory, or QL model for ordinary temporal claims.
+
 Faster is not automatically better. A temporally adequate claim is not automatically valuable, safe, legal, ethical, feasible, promised, or assured. Direct value, quality, harm, promise, legal, safety, and assurance patterns carry those claims.
 
 ### C.27:2 - Forces
 
-1. **Cheap recognition versus costly overformalization.** The state, rate, and intervention-sensitive distinction must be visible in a minute. Most temporal prose must remain outside C.27.
+1. **Cheap recognition versus costly overformalization.** Keep the state, rate and intervention-sensitive distinction easy to recover. Use C.27 when a temporal-adequacy question can change the receiving action.
 2. **Effort profiles versus derivative words.** Real interventions can be impulses, scheduled pushes, feedback policies, adaptive regimes, brakes, pauses, coasting periods, or redirections. The useful question is what input occurs over which window, not whether the prose says acceleration.
 3. **Resistance without fake physics.** Lag, queue pressure, habit, coordination cost, technical debt, service demand, physical inertia, or another domain-local resistance can matter. None becomes a new mass or force kind.
-4. **Rhythm without a rhythm ontology.** C.27 consumes an exact C.27.TA claim. Cross-bearer phase, synchronization, coupling, or entrainment appears only when the receiving use relies on that independently established relation.
+4. **Temporal meaning and coupling.** Preserve the temporal claim's bearer, predicate and timing under C.27.TA; add an exact separate reference when needed. Cross-bearer phase, synchronization, coupling or entrainment appears only when the receiving use relies on that relation.
 5. **Readable practice versus hidden claim inflation.** Ordinary actor and practice wording should stay readable. Exact System, assignment, authority, Work, causal, benchmark, promise, and assurance details appear only when the current claim relies on them.
 6. **Preservation versus copied neighboring schemas.** Rare uses need exact trigger questions, but C.27 should cite the result of C.16, C.28, G.9, C.26.3, or another direct pattern instead of reproducing its schema.
 7. **Value neutrality versus acceleration bias.** C.27 must allow acceleration, deceleration, braking, redirecting, coasting, pausing, stabilizing, recovering, sustaining, widening, and narrowing without deciding which is valuable.
@@ -78,21 +77,21 @@ Faster is not automatically better. A temporally adequate claim is not automatic
 
 Use the least-committing result that changes the receiving action.
 
-1. Recover the source temporal claim as one exact C.2.1 episteme or as the exact claim denoted by a ClaimAddress.
-2. Cite the exact C.27.TA episteme or ClaimAddress that states the positive temporal aspect. C.27 does not redefine its bearer, predicate, temporal reference, window, coupling, or currentness.
-3. Classify the source claim as Dyn0, Dyn1, or Dyn2.
-4. If it is Dyn0 or Dyn1 and no intervention-sensitive use remains, stop or use C.16.
-5. If it is Dyn2, supply the one-screen account below; its required content can remain one readable sentence.
-6. Add a direct neighboring result only when the supported use relies on its distinction.
-7. If the claim cannot meet the small card, narrow it. Do not open a larger profile merely because the card exposed uncertainty.
+1. Recover the temporal claim from the available account, keeping its subject, quantity or condition and relevant time explicit. Cite an exact episteme or ClaimAddress when that identity is consumed by the use.
+2. Resolve what the timing means: a dated observation, elapsed duration, order, recurring cadence, validity condition or another temporal property. Use `C.27.TA` if this is unclear; a separate temporal-aspect artifact is unnecessary when the claim already states it adequately.
+3. Classify the claim as Dyn0, Dyn1 or Dyn2.
+4. If it is Dyn0 or Dyn1 and no intervention-sensitive question remains, stop or use C.16 for the unresolved measurement question.
+5. For Dyn2, connect the proposed input to the claimed temporal effect. Recover the baseline, relevant window and resistance or cost; identify whether the basis is observation, a planning assumption, a model consequence or a causal result. Reuse adequate grounds. When the effect is the unresolved causal question, use C.28 and its construction or mechanism-replacement method as needed.
+6. Return the supported conclusion and only the neighboring result on which it depends. Unknown resistance or another missing premise can justify a narrower or unresolved result.
+7. Add more detail only when it can resolve a remaining receiving question; an incomplete form is not itself a reason to open a larger profile.
 
-#### C.27:3.1 - One-Screen Dyn2 Card
+#### C.27:3.1 - A Sufficient Dyn2 Account
 
-The first C.27 result can be one readable sentence:
+A compact account states the input, proposed temporal change, relevant window, resistance or cost and grounds. Its length follows the explanation needed by the receiving use.
 
-> [Input] is claimed to [move] [the cited temporal aspect] over [window] despite [resistance or cost]; [reason for the reading] supports [use], not [unsupported use]; reopen when [condition].
+For example: "Adding two reviewers is expected to increase completed reviews during the next two weeks. That forecast assumes sufficient independent review capacity; the shared approval bottleneck remains unmeasured, so doubling throughput is not yet supported."
 
-Use the short note below when the references need to travel or be reviewed separately:
+The optional record below is useful when separately identified claims must be referenced or reviewed:
 
 ~~~text
 Dyn2TemporalClaimAdequacyCardClaimContent
@@ -104,20 +103,20 @@ interventionWindow?:
 resistanceOrCost:
 reasonForReading:
 supportedUse:
-unsupportedUse:
-reopenTrigger:
+unsupportedUse?:
+reopenTrigger?:
 ~~~
 
-When materialized, this is ClaimGraph content in one C.2.1 episteme whose EntityOfConcern is the exact source episteme or addressed claim denoted by sourceTemporalClaimRef.
+When an independently identified C.27 adequacy episteme uses this record, its EntityOfConcern is the source episteme or addressed claim denoted by `sourceTemporalClaimRef`.
 
-- positiveTemporalAspectClaimRef cites an exact C.27.TA episteme or ClaimAddress.
+- `positiveTemporalAspectClaimRef` identifies the temporal claim used by that reference-bearing account. Ordinary prose may instead state the temporal aspect directly, keeping its meaning under C.27.TA.
 - move names the claimed temporal change, for example accelerate, brake, coast, recover, stabilize, widen, narrow, or a domain-local move.
 - claimedInterventionOrInput says what is claimed to affect the temporal behavior. It does not assert performed Work, authority, capability, or causal effect.
 - interventionWindow is omitted when the C.27.TA window is enough. Add it only when the input occurs over a different interval.
 - resistanceOrCost names the relevant lag, constraint, stored work, queue pressure, coordination cost, residue, or another domain-local obstacle. Unknown is an acceptable local answer.
 - reasonForReading names one exact evidence relation, measurement result, model assumption, planning assumption, diagnostic judgement, or direct neighboring result. These alternatives do not become one generic evidence kind.
-- supportedUse and unsupportedUse bound the practical reach of this C.27 result.
-- reopenTrigger says what change requires a narrower claim, new evidence, another direct pattern, or a new C.27 result.
+- supportedUse states the result's practical reach; unsupportedUse names a live overreach only when it needs to be excluded explicitly.
+- reopenTrigger is included when continued reliance needs a condition for revision, new evidence or another direct result.
 
 One local window may stand for claim, sampling, intervention, rhythm, and validity when the difference changes neither the claim nor the receiving action. Split them when, for example, evidence is sampled over a different interval, input precedes the observed outcome, comparison needs a baseline, follow-up occurs later, or validity expires sooner than the trace.
 
@@ -141,7 +140,7 @@ Keep coasting and debt distinct. Coasting describes continued movement or stabil
 
 #### C.27:3.4 - Boundary-Crossing Header
 
-Most uses stop at the one-screen account. When a receiving use depends on another pattern result, add its exact reference and contribution to that same account. The following header can organize those references when they need to travel together:
+An adequate compact account can finish the work. When the receiving use depends on another pattern's result, include its contribution and an exact reference where that identity is required. This optional header can organize separately referable results:
 
 ~~~text
 Dyn2TemporalClaimProfileClaimContent
@@ -151,14 +150,14 @@ positiveTemporalAspectClaimRef:
 dynOrder: Dyn2
 boundaryCrossingUse:
 supportedUse:
-unsupportedUse:
-validityOrReopenCondition:
+unsupportedUse?:
+validityOrReopenCondition?:
 activeNeighborResults:
   - exact result kind and reference supplied by its direct pattern
     contributionToThisUse:
 ~~~
 
-This profile remains ClaimGraph content in a C.2.1 adequacy episteme whose EntityOfConcern is the exact source episteme or addressed claim denoted by sourceTemporalClaimRef. It is not the ClaimAddress itself, described System, temporal bearer, Work trace, dynamics model, publication occurrence, form, or carrier.
+When the profile is used to identify an adequacy episteme, its EntityOfConcern is the source episteme or addressed claim denoted by `sourceTemporalClaimRef`. The profile's references preserve the direct results it consumes; they are not substituted for those results.
 
 Each activeNeighborResults entry names the actual result kind supplied by its direct pattern. Do not replace a C.16 measurement result, C.28 causal-use result, G.9 parity result, C.26.3 envelope-regulation claim, Work occurrence, evidence relation, or assurance claim with a generic C.27 field.
 
@@ -199,7 +198,7 @@ For a numerical version of this constructed case, let the backlog start at 120 c
 
 Source claim: “Slowing rollout for two weeks will keep CheckoutSystem-1 inside its usable envelope.”
 
-The exact C.27.TA claim states the reduced rollout cadence and two-week window. The exact C.26.3 episteme or ClaimAddress states the envelope-regulation claim and identifies CheckoutSystem-1 through its A.1 System identity. C.27 neither creates a viability relation nor copies the envelope schema.
+The temporal claim states the reduced rollout cadence and two-week window. The C.26.3 account states the envelope and identifies CheckoutSystem-1 through its A.1 System identity. This example uses separate exact references because the temporal assessment consumes both claims.
 
 ~~~text
 sourceTemporalClaimRef:
@@ -231,7 +230,7 @@ Slower rollout is not a failure to accelerate. It is adequate only for the bound
 
 Source claim: “Daily twenty-minute drills stabilize the learner's task rhythm.”
 
-For this case, LearnerSystem-1 is already independently identified under A.1. The exact C.27.TA claim says that LearnerSystem-1 has a daily task-practice cadence during the four-week training window.
+For this case, LearnerSystem-1 is already independently identified under A.1. Its positive temporal-aspect claim is a daily task-practice cadence during the four-week training window; the example below keeps that claim separately referenceable.
 
 ~~~text
 sourceTemporalClaimRef:
@@ -309,7 +308,7 @@ Skip this section for ordinary local diagnosis and planning. It is a trigger-and
 | method composition or capability emergence | temporal adequacy does not define method composition, Work enactment, adaptive cycle, or capability emergence | B.1.5 and B.2.4 |
 | design/operation comparison, evolution or language-state movement | temporal adequacy qualifies the time claims; it does not perform the comparison, coordinate adaptation, or define cue stabilization, reopening, operationalization or retirement | A.4 for System design/operation comparison; B.4, A.16 and B.4.1 for their separate adaptation and language-state questions |
 | autonomy budget or freedom of action | tokens, guards, ledger, depletion, override, pause and resume remain their own claims | E.16 |
-| viability regulation | cite the exact C.26.3 claim episteme or ClaimAddress; its bearer is one exact System, one A.22 Structure with all four discriminators, or another subject with its direct identity rule | C.26.3 |
+| viability regulation | the envelope claim and its exact bearer; cite a separate episteme or ClaimAddress when the receiving use consumes that identity | C.26.3 |
 | selected organization as viability bearer | exact constituents, selected obtaining relations, applied constraints, and one selection-use frame; a list of role kinds and assignments is insufficient | A.22 and C.26.3 |
 | promise, gate, or high-stakes action | temporal action and window do not establish promise, acceptance, harm, safety, legal, ethical, financial, quality, service, or assurance claims | A.2.3, A.2.8, A.2.9, A.6.C, F.12, and direct assurance or domain patterns |
 | evidence path or freshness | path, slice, provenance, assurance, decay, and epistemic debt remain separate from the temporal claim | A.10, G.6, B.3, and B.3.4 |
@@ -332,15 +331,14 @@ Skip this section for ordinary local diagnosis and planning. It is a trigger-and
 - Metric improvement does not establish System improvement.
 - A temporal metric does not become value merely by publication or target use.
 - Measurement as action does not make QL relevant by itself.
-- Adding fields does not turn a diagnostic or planning claim into a causal, benchmark, promise-like, gate, or assurance claim. That use changes only when the required direct result and supported-use boundary are present.
-- The C.27 result cites the direct result only when its supported use relies on it.
+- A causal, benchmark, promise, gate or assurance conclusion retains the direct grounds required for that use. Cite the neighboring result only when the temporal assessment relies on it.
 
 ### C.27:6 - Bias-Annotation
 
 Lenses: **Onto**, **Prag**, **Epist**, **Arch**, **Gov**.
 
 - **Onto:** source claim, described subject, temporal-aspect claim, adequacy claim, direct relation, publication occurrence, form, and carrier remain distinct.
-- **Prag:** ordinary prose, Dyn0, and Dyn1 remain cheap; the first Dyn2 result fits on one screen.
+- **Prag:** state and rate readings remain sufficient when they answer the question; Dyn2 adds only the explanation needed for its receiving use.
 - **Epist:** evidence, measurement, model assumption, planning assumption, diagnostic judgement, and causal result are not interchangeable.
 - **Arch:** C.27 keeps temporal-claim adequacy and cites the direct pattern for every other question.
 - **Gov:** a local card does not widen into a budget, gate, benchmark, promise, assurance, or public claim without the direct result required for that use.
@@ -352,15 +350,15 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 | Check | Requirement |
 | --- | --- |
 | C27-1 | A C.27 result exists only when the temporal distinction changes a practical use. |
-| C27-2 | The source temporal claim is one exact C.2.1 episteme or the exact claim denoted by a ClaimAddress; a materialized C.27 adequacy episteme has that source episteme or addressed claim—not the reference value—as its EntityOfConcern. |
-| C27-3 | The source claim's world-side EntityOfConcern remains with the source claim and is not duplicated as the adequacy episteme's subject. |
-| C27-4 | C.27 cites an exact C.27.TA episteme or ClaimAddress and does not redefine its bearer, predicate, temporal reference, window, coupling, or currentness. |
+| C27-2 | The source claim and its subject are recoverable. When its independent identity is consumed, cite the exact episteme or ClaimAddress. |
+| C27-3 | A separately identified adequacy episteme concerns that source episteme or addressed claim; it does not silently substitute the described subject or reference value. |
+| C27-4 | The positive temporal aspect retains its bearer, predicate, temporal reference and required extent or condition under C.27.TA. A separate exact reference is used only when needed. |
 | C27-5 | Dyn0, Dyn1, and Dyn2 classify claims, not Systems or other world objects. |
-| C27-6 | The local result supplies the one-screen content in ordinary prose or a card; a boundary-crossing profile adds only the needed direct-result references and their contributions. |
-| C27-7 | The card names claimed input, resistance or cost, reason for the reading, supported use, unsupported use, and reopen condition without implying causal effect, Work, authority, value, promise, or assurance. |
+| C27-6 | Ordinary prose or a record supplies the required explanation. A fuller profile adds only the direct-result references and contributions needed by its use. |
+| C27-7 | The assessment recovers the claimed input, temporal effect, relevant time, resistance or cost, grounds and supported use. An unsupported use or reopening condition is stated when it changes the receiving action. |
 | C27-8 | Performed Work names the actual System actor, whose A.13 core precedes independent A.15.1 Work admission. F.6 follows only when precise assignment-bound attribution is current. An assignment remains a separate obtaining relation and never acts. |
 | C27-9 | A non-system input uses its actual direct relation or remains an unresolved or source-side intervention claim; no generic applier branch is created. |
-| C27-10 | A viability use cites an exact C.26.3 claim episteme or ClaimAddress and an exact System, A.22 Structure, or another subject with its direct identity rule as bearer; no generic viability or configuration relation is invented. |
+| C27-10 | A viability use retains the C.26.3 envelope claim and the bearer's direct identity; an exact separate claim reference is added when the receiving use requires it. |
 | C27-11 | Measurement, dynamics, Work, causality, benchmark, promise, value, quality, viability, scaling, adaptation, search, publication, assurance, and residual QL stay with their direct patterns. |
 | C27-12 | A sufficient local use can finish without the optional trigger reference. A dependent use cites the needed neighboring result without copying its schema. |
 | C27-13 | A sufficient ordinary, Dyn0 or Dyn1 reading can finish without Dyn2. Braking or coasting is not treated as failed acceleration. |
@@ -370,11 +368,11 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 
 | Failure | Repair |
 | --- | --- |
-| Rate becomes intervention knowledge | Separate Dyn1 reading from Dyn2 claim; write the small card or stop. |
+| Rate becomes intervention knowledge | Separate the Dyn1 reading from the Dyn2 claim; supply the intervention-sensitive grounds or retain the narrower result. |
 | Effort-free acceleration | Name the claimed input, window when different, resistance or cost, and reason for the reading. |
 | Past slope becomes control law | Keep it diagnostic or cite the direct dynamics, control, or evaluation result. |
 | Rate change after effort becomes causal proof | Keep causal use unsupported or cite the exact C.28 result. |
-| Rhythm becomes decoration | Cite the exact C.27.TA claim; add coupling only when cross-bearer use relies on it. |
+| Rhythm becomes decoration | State the bearer, recurrence and timing reference; add coupling and exact claim references when the receiving use depends on them. |
 | Metric improvement becomes System improvement | Split measure, target, Work change, gaming or selection, causal claim, and proxy distortion. |
 | Local speed becomes aggregate agility | Name both bearers, aggregation, continuity, mix shift, and transfer boundary. |
 | Faster becomes better | Reopen value, harm, quality, promise, safety, legal, ethical, or assurance claims through their direct patterns. |
@@ -387,12 +385,12 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 
 ### C.27:9 - Consequences and Reopen Conditions
 
-C.27 makes intervention-sensitive temporal claims inspectable while keeping ordinary state and rate prose cheap. Its cost is one small card and exact references only when the receiving use needs them.
+C.27 makes intervention-sensitive temporal claims inspectable. An adequate state or rate reading can remain sufficient; a stronger forecast needs its actual temporal and effect grounds.
 
-Refresh remains proportional:
+Refresh follows the receiving use:
 
-- a local card needs one reopen trigger;
-- a boundary-crossing claim may also need a validity window and evidence currentness;
+- include a reopening condition when later reliance depends on it;
+- a transferred claim may need a validity interval, current evidence or another stated condition;
 - G.11 carries refresh orchestration, and B.3.4 carries evidence decay and epistemic debt.
 
 Reopen when, for example:
@@ -419,7 +417,7 @@ C.27 adopts:
 - braking, redirection, coasting, recovery, stabilization, and rhythm as legitimate working questions;
 - interval-sensitive practice transfer, including the error introduced by copying static poses or rate words without the timing and effort pattern.
 
-C.27 adapts physical vocabulary into authored-claim adequacy and direct FPF relations. It rejects literal force, mass, acceleration, rhythm, or second-order-process kinds, mandatory calculus, universal control theory, and automatic QL relevance.
+C.27 uses physical vocabulary only for the temporal property or dependency actually claimed. Choose calculus, control modeling or another subject method when its operation is needed to answer that question.
 
 ### C.27:11 - SoTA-Echoing
 
@@ -453,20 +451,20 @@ Source references:
 
 | Direct pattern | C.27 consumes or states | That pattern keeps |
 | --- | --- | --- |
-| C.27.TA | exact positive temporal-aspect episteme or ClaimAddress | bearer, predicate, temporal reference, window, coupling, currentness |
-| C.2.1 and A.7 | source claim identity and the separate adequacy episteme | episteme identity, EntityOfConcern, ClaimGraph, description and described-object separation |
+| C.27.TA | the positive temporal aspect, with an exact episteme or ClaimAddress when required | bearer, predicate, temporal reference, applicable extent or condition, coupling, currentness |
+| C.2.1 and A.7 | source and adequacy-claim identities when consumed | episteme identity, EntityOfConcern, ClaimGraph, description and described-object separation |
 | C.16 | exact measurement result when relied on | characteristic, scale, unit, construction, sampling, comparability, evidence |
 | A.3.3 and A.3.4 | boundary that a temporal claim needs dynamics or concerns a transformation | transition law, model, simulation, prediction, control, transformed object and relation |
 | A.15.2, A.15.1, F.6, and A.2.1 | planned input, actual System actor, assignment when relied on, and performed Work reference | plan, Work identity, actor, assignment, authority and attribution |
 | C.28 | exact causal-use result when temporal wording is used causally | intervention, comparator, timing, outcome, estimand, assumptions, rival causes, identification and evidence design |
 | G.9 | dynamic comparison question | parity plan and report, baseline, freshness, comparator, budget and evidence pins |
 | C.18.1, C.22.1, C.17, C.18, and C.19 | temporal question in scaling, adaptation, creativity, open search, or pool policy | scale, task-family, novelty, archive, frontier and search-health claims |
-| C.26.3 | exact envelope-regulation episteme or ClaimAddress used by a braking, recovery, cadence or stabilization claim | exact bearer, protected claim, envelope, disturbance, probes, interventions, cost and failure mode |
+| C.26.3 | the envelope-regulation claim used by braking, recovery, cadence or stabilization; exact separate reference when required | bearer, protected claim, envelope, disturbance, probes, interventions, cost and failure mode |
 | E.13, promise, service, value, quality, harm, and assurance patterns | temporal action and bounded supported or unsupported use | value, proxy, promise, acceptance, quality, harm, safety, legal, ethical and assurance claims |
 | A.10, G.6, B.3, B.3.4, G.10, G.11, and G.12 | the temporal reading that relies on evidence or currentness | evidence paths, provenance, assurance, decay, shipping, refresh, series and publication pins |
 | E.17 and E.24.PUB | only the publication distinction that changes use | source-backed face, publication occurrence, form, carrier, audience and availability |
 | C.26 | only that a residual QL cue remains after ordinary patterns | probe, frame, order, export and coarsening discipline |
 
-At use time, name the exact source temporal claim, cite the exact C.27.TA claim, write the smallest Dyn2 card only when needed, cite the direct result for any other current question, state what use remains unsupported, and stop.
+Recover the temporal claim and its grounds, return the smallest adequate assessment, and use a direct neighboring result only for a remaining question. Stop when that answers the receiving use.
 
 ### C.27:End

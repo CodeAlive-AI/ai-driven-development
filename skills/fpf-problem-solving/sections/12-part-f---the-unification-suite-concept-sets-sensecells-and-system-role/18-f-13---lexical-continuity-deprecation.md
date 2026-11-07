@@ -33,7 +33,7 @@ Readers lose the connection between earlier and later claims when names or sense
 | ------------------------------ | -------------------------------------------------------------------------------------------- |
 | **Continuity vs truthfulness** | Preserve readers’ continuity while making sense changes visible.                 |
 | **Locality vs convenience**    | Keep aliases **inside Contexts** even when a catchy global name tempts reuse.                   |
-| **Simplicity vs coverage**     | Retain the legacy names readers will encounter within the declared alias budget. |
+| **Simplicity vs coverage** | Keep the preferred current designation clear while retaining the historical names readers need. |
 | **Didactics vs formality**     | Make the mapping teachable without inventing new low‑level artefacts or processes.           |
 
 ### F.13:4 - Core idea (didactic)
@@ -69,7 +69,7 @@ Use the least-committing continuity relation that tells the truth after recoveri
 
 2. **`aliases(label_legacy ↔ label_pref)`** — a legacy synonym is kept for reading.
    *Use when:* The two exact label uses have the same scheme, local-sense claim, intended use and, where applicable, governed value.
-   *Effect:* Keep a two-way read-path; writing uses `label_pref`. Keep at most one legacy alias per register. Distinct expressions need not be the same SchemeSenseCell.
+   *Effect:* Keep the needed two-way read-paths; writing uses `label_pref`. Preserve historical aliases that readers still need, distinguished from the preferred current designation. Distinct expressions need not be the same SchemeSenseCell.
 
 3. **`splits(label_old ⇒ {label_A, label_B})`** — one earlier label covered several senses or rows that are now distinguished.
    *Use when:* F.3 recovers the distinct local senses, or F.7 establishes the required row refactor.
@@ -77,7 +77,7 @@ Use the least-committing continuity relation that tells the truth after recoveri
 
 4. **`merges({label_A, label_B} ⇒ label_new)`** — several labels are consolidated for one recovered naming use.
    *Use when:* The local label uses have the same scheme, local-sense claim and use, with the same governed value where applicable; or two F.7 rows are duplicate displays of the same named comparison or use, exact entries, independently established relations, losses, basis and receiving-use conclusion.
-   *Effect:* Keep the old labels' epoch-qualified read-paths subject to the alias budget. This label or display consolidation does not merge source-local cells, named values or Bridge occurrences.
+   *Effect:* Keep the old labels' epoch-qualified read-paths needed by historical or current readers. This label or display consolidation does not merge source-local cells, named values or Bridge occurrences.
 
 5. **`retires(label_old)`** — a name is withdrawn without one successor.
    *Use when:* The label misleads and no single successor preserves its earlier use.
@@ -90,7 +90,7 @@ Use the least-committing continuity relation that tells the truth after recoveri
 1. **Locality of alias.** `aliases(-)` and `renames(-)` preserve the exact naming use's effective scheme, local-sense claim and any governed value. Distinct expressions may have distinct F.17 cells; an external row or description label keeps its independently recovered target.
 2. **Truth over comfort.** If meaning changes, recover the corresponding revision, replacement, split, merge or retirement under the subject rule before settling the later name. A rename cannot hide that change.
 3. **Non‑retroactivity.** Past texts remain phrased as written; continuity only **adds read‑paths**, never rewrites.
-4. **Alias parsimony.** per Context and per row, keep **≤ 1** legacy alias per register (Tech/Plain); prefer the one readers will most likely encounter.
+4. **Alias parsimony.** For the governed value and naming use, keep one preferred current designation in each register used and the historical aliases needed to recover actual uses. Omit unused synonyms from the main presentation without erasing the naming history.
 5. **Prefer present for writing.** In normative writing, use the **current preferred label** (F.5). Aliases are for **reading comprehension**.
 6. **Bridge discipline.** A different `<ReferenceScheme, LocalSenseClaim>` projection is not an alias or pure rename. Use F.9 only for a needed semantic correspondence; recover any obtaining Bridge, bounded-use claim and reliance separately.
 7. **Epoch qualification.** When declaring continuity, attach a **succinct epoch note** (“pre‑2023 usage”) if it aids readers.
@@ -99,7 +99,7 @@ Use the least-committing continuity relation that tells the truth after recoveri
 
 * **Same-sense test.** Do the effective scheme, local-sense claim, intended use and any governed value stay the same? Then a rename or alias may be justified, with distinct cells when expressions differ. If meaning or the target changes, first recover that change under its subject rule.
 * **Context test.** Are the semantic projections different, and is a current correspondence needed? If both hold, open F.9. Different context names alone establish no relation.
-* **Reader test.** Which legacy string will a reader actually meet in each register? Keep at most one useful alias per Tech or Plain register, as required by §7.
+* **Reader test.** Which legacy strings will readers actually encounter, and under which meanings and editions? Preserve the read-paths they need while keeping the preferred current designation clear.
 * **History test.** Does your “continuity” require editing old claims? If yes, you’re attempting a **retroactive rewrite**—stop.
 * **Didactic test.** Can the intended reader recover what changed and how to interpret the old label? If not, clarify that account or name the unresolved subject decision; sentence length alone diagnoses neither sameness nor change.
 
@@ -144,7 +144,7 @@ Temptation: “Let’s rename *process* to *activity*.”
 | ------- | -------------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | **A1**  | **Cross‑context rename**      | “Let’s rename *process (BPMN)* to *activity (PROV)*.”                 | Erases Context boundaries; hides loss; violates locality.         | **Do not rename across semantic contexts.** Keep both labels; test any needed F.9 relation and its bounded-use claim with current reliance. CL remains optional.              |
 | **A2**  | **Retroactive rewrite**    | Old passages silently updated to new names.                           | Breaks provenance; misleads readers about what was meant then. | **Non‑retroactivity.** Past texts stand; add **read‑paths** via `renames/aliases`; attach **epoch notes** when helpful.          |
-| **A3**  | **Alias flood**            | Long lists of synonyms for comfort.                                   | Raises ambiguity; dilutes teaching signals.                    | **Alias parsimony.** Keep ≤ 1 legacy alias per register (Tech/Plain) **inside the same Context or row**.                            |
+| **A3** | **Alias flood** | Long lists of unused synonyms. | Obscures the preferred current designation. | Keep the main presentation economical and preserve the historical aliases needed to recover actual uses. |
 | **A4**  | **Paint‑over rename**      | Rename used where sense actually changed.                             | Confuses continuity with revision; hides splits.               | Recover the changed meaning under its subject rule, preserve the earlier claim, then settle the later name. Split or merge only when those relations actually hold.                |
 | **A5**  | **Global alias**           | One catchy word reused as alias in several Contexts.                     | Creates a pseudo‑global dictionary; invites category errors.   | **Local aliases only.** Recover each local meaning and keep aliases within one exact naming use. Use F.9 only for a needed semantic correspondence.                  |
 | **A6**  | **Euphemism treadmill**    | Frequent cosmetic renames (“modernising” labels) with no gain.        | Cognitive noise; readers lose confidence in names.             | Apply the **Same‑sense test**. If gain is marginal, **do nothing**; if clarity improves materially, one **`renames`** is enough. |
@@ -238,7 +238,7 @@ Resolve a legacy label to its earlier meaning and use first, then to any justifi
 
 #### F.13:12.9 - Alias budget
 
-Keep at most one useful legacy alias per register for one naming use.
+Keep the historical aliases needed by the naming use, with their meanings and editions recoverable and the preferred current designation clear.
 
 #### F.13:12.10 - Row‑level continuity
 
@@ -263,7 +263,7 @@ All Part C patterns when editions shift; all examples and tutorials when teachin
 1. **Recover the same meaning and use first.** Distinguish the expression from its exact cell and governed value. Use `renames` only for unchanged meaning and use; recover any subject change before settling the later name.
 2. **Keep aliases local.** Different semantic projections open F.9 only for a needed correspondence; the difference itself establishes no Bridge.
 3. **Prefer clarity over fashion.** Rename only when the new label **removes a real ambiguity** (F.5 criteria), not to chase style.
-4. **Limit nostalgia.** Admit **one** legacy alias in each register that readers will most likely meet; leave the rest to footnotes in examples.
+4. **Keep useful read-paths.** Preserve the legacy expressions readers need to interpret historical or continuing uses; keep unused synonyms out of the main presentation.
 5. **Keep historical reading clear.** For a rename, point from the legacy label to its preferred successor. For retirement without a single successor, point to the relevant meanings or rows.
 6. **Rows before names.** If a rename request coincides with a shift in what the row covers, **refactor rows** (F.7) first, then choose labels.
 7. **Edition changes.** Compare the affected definitions. If meaning changes, recover the subject-governed revision, replacement, split, merge or retirement and preserve the earlier claim. If meaning and use stay unchanged, rename only for a concrete recognition gain.
@@ -275,7 +275,7 @@ All Part C patterns when editions shift; all examples and tutorials when teachin
 
 * **SCR-F13-S01 (local continuity).** Every `renames/aliases` preserves the exact semantic projection, intended use and any independently governed value. An external row or description label resolves its target under the applicable rule.
 * **SCR-F13-S02 (Truthfulness).** Each rename retains its exact old and new expressions. A changed LocalExpression has a distinct F.17 cell even when meaning is unchanged. Any claim of governed-value or episteme continuity satisfies that subject's rule.
-* **SCR‑F13‑S03 (Alias budget).** For any one thing and register, the number of deprecated aliases is **≤ 1**.
+* **SCR‑F13‑S03 (Alias purpose).** Every retained legacy alias serves an actual reading or retrieval need and resolves to its historical meaning; it is distinguished from the preferred current designation.
 * **SCR‑F13‑S04 (Non‑retroactivity).** No requirement or suggestion to rewrite past texts is present; continuity is expressed as **read‑paths**.
 * **SCR-F13-S05 (Row integrity).** A display-label rename preserves the exact comparison content and receiving use. Changed row content receives its warranted revision, split or merge under F.7; changed F.17 identity-bearing claims receive the corresponding later row episteme.
 * **SCR‑F13‑S06 (Bridge discipline).** No alias/rename is used to imply Cross‑context sameness; any such relation belongs under **F.9**.
@@ -283,12 +283,12 @@ All Part C patterns when editions shift; all examples and tutorials when teachin
 #### F.13:15.2 - Regression (RSCR)
 
 * **RSCR-F13-E01 (Edition drift audit).** Compare affected earlier/later definitions and naming uses. Stable meaning can support a rename with distinct expression-bearing cells; changed meaning requires the subject-governed revision, replacement, split, merge or retirement before fresh naming settlement.
-* **RSCR‑F13‑E02 (Alias creep check).** Periodically ensure alias budgets remain within **≤ 1 per register**; surplus aliases are pruned.
+* **RSCR‑F13‑E02 (Alias change).** After changing aliases, verify that needed historical read-paths remain usable and the preferred current designation remains clear.
 * **RSCR-F13-E03 (Bridge leak check).** A claimed correspondence between different semantic projections is tested under F.9 only when a current use needs it. Retain exact meanings and an unresolved result when obtaining is unestablished; do not create a Bridge by rewriting a note.
 * **RSCR‑F13‑E04 (Didactic continuity).** Sampling of examples shows that readers can **resolve** legacy labels to current ones without confusion (via the continuity notes).
 
 ### F.13:16 - Didactic distillation (60‑second script)
 
-> **Preserve what the old words meant.** For unchanged meaning and use, record a local rename or alias. A changed expression has a distinct F.17 cell; keep its naming lineage. If meaning or the named value changes, recover that change under its subject rule before settling the later name. Split or merge only when those relations hold. Keep at most one useful legacy alias per register, preserve the earlier text, and give readers the exact historical meaning and any justified path to the present name.
+> **Preserve what the old words meant.** For unchanged meaning and use, record a local rename or alias. A changed expression has a distinct F.17 cell; keep its naming lineage. If meaning or the named value changes, recover that change under its subject rule before settling the later name. Split or merge only when those relations hold. Keep the historical aliases readers need, preserve the earlier text, and give readers the exact historical meaning and any justified path to the present name.
 
 ### F.13:End

@@ -1,0 +1,16 @@
+## OPS.Reference:8 - Pattern relations do not prescribe an operating lifecycle
+
+
+`OPS.1 → OPS.2`, `OPS.1 → OPS.3`, `OPS.2 + OPS.3 → OPS.4`, `OPS.2 + OPS.3 + OPS.4 → OPS.5`, `OPS.5 → OPS.6`, and `OPS.6 → OPS.7` are useful result dependencies only where a matching current input changes the receiving decision. They are not a mandatory calendar sequence. A subject account can be repaired while a view is selected; a stale claim can be refreshed without reopening the operating System; admission can start from current OPS.1–OPS.4 inputs; an already admitted case can enter OPS.6 directly; and a temporal or consequence question can enter OPS.7 when its evidence and authority exist.
+
+`OPS.5` permission applies only to the same admitted matter and effective conditions and does not establish performed Work. `OPS.6` progression or unmet condition is evidence input to `OPS.7`, not authority to revise priority or a commitment. Practitioners may repeat or revisit these methods, select a different branch or stop as their conditions require.
+
+OPS.8–OPS.11 likewise have conditional result relations: queue policy can require a constraint or capacity result; diagnosis can require a capacity bound or a coupled-structure explanation; a capacity change can require another owner's decision. Their useful results can return to OPS.5–OPS.7.
+
+The service and Method decisions also have conditional relations. OPS.12 helps preserve the required human conditions when choosing a feasible operating arrangement; OPS.13 can expose the resource decision that a promise needs; OPS.14 compares the consequential payments and receipts; OPS.15 makes the receiving claim inspectable. OPS.16 improves one exact admitted Method or status-preserved candidate way from bounded evidence, OPS.17 selects or refreshes a Method repertoire, and OPS.18 governs the response to quality and reliability evidence. Each can be entered directly when its question is live and the needed inputs exist.
+
+Use OPS.18:4.4 to reconstruct an incident, develop explanations of its contributing conditions and choose supported prevention. Keep containment, restart, completion of a correction and later recurrence evidence distinct. OPS.16 receives a resulting operating Method-change question; OPS.17 receives a repertoire comparison. B.5.2 and C.28 help with explanation and causal support, while C.11/C.11.CRC govern the preventive choice and its whole burden. Use C.11.DUA if the value or feasibility of further inquiry remains in question.
+
+OPS.19 opens only when several otherwise valid operating results conflict across subjects, scopes, or horizons; its result can constrain an OPS.16 trial without deciding the later Method change. OPS.16, OPS.17 and OPS.19 may supply a practice variation or operating consequence to OPS.20. That pattern independently supports its population, predicate and continuation decision; sufficient current grounds can finish it, while a selected intervention or claimed later result has its own authority and evidence.
+
+Use the smallest pattern whose result can change the current decision. Stop when the result is sufficient or when the next needed result belongs to another specialist practice or remains unsupported by the current evidence and authority.

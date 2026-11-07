@@ -2,7 +2,7 @@
 
 **Use this when.** A SoTA author or downstream consumer needs repeatable mappings from an external scholarly source into FPF inputs, with the source snapshot, transformation and receiving use recoverable. Start by naming that source and the input needed by the receiving operation. A sufficient direct source citation needs no interop kit.
 
-Select and justify the mapping procedure separately; this kit records its inputs, outputs and revisions. The provider, embedding and entity-resolution blocks below remain seeds until their governing procedures are selected.
+Use :4.3 to establish the mapping from source meanings and actual records, then publish its inputs, outputs, conditions and revisions. Provider-specific ingestion, embedding and entity-resolution methods retain their own grounds; the extensions below identify their required wiring.
 
 
 **Status.** Stable
@@ -25,7 +25,7 @@ External sources publish **claim‑adjacent signals** (citations, concept graphs
 * **CN/CG spec-ref leakage.** External numeric signals get treated as if they were lawful “scores” without explicit binding to CHR/CAL/CG surfaces.
 * **Implicit crossings.** An opaque transformation hides the actual correspondence, its receiving-use grounds or the bundle anchors required by a real flow crossing or gate.
 * **Edition drift + refresh brittleness.** Snapshots change, schemas drift, indicator definitions get revised; without edition‑pinned interop surfaces and typed trigger causes, parity and dashboard stability degrade.
-* **Evidence disconnect.** “Derived features” are produced without explicit EvidenceGraph anchoring, making later refutation/repair expensive.
+* **Evidence disconnect.** A derived feature without recoverable source and transformation grounds cannot be checked or repaired in the receiving use.
 * **Format‑as‑norm.** A convenient serialisation (KG export, JSON schema, RO‑Crate, etc.) becomes treated as the specification, undermining notation independence.
 
 ### G.13:3 - Forces
@@ -116,7 +116,7 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
   `⟨ ScaleEmbeddingSpecId, IntendedUse, AllowedTransformFamily, RequiredPins{NormalizationMethodRef.edition?}, ProhibitedCoercions ⟩`
 
   **Design intent.** Make any representation alignment *explicitly constrained* and edition‑pinned, instead of silently “creating a new scale”.
-  **LEX/UTS note (informative).** `ScaleEmbeddingSpec` is a LEX head; when a public id is minted for a `ScaleEmbeddingSpec`, the corresponding UTS row must be published with twin labels (see `G.Core` / UTS profile).
+  **LEX/UTS note (informative).** `ScaleEmbeddingSpec` is a LEX head; when a public id is minted for a `ScaleEmbeddingSpec`, the corresponding UTS row must be published under F.17 with the Tech designation and any Plain designation needed for a stated didactic use.
 
 * **`IndexTelemetryPin`** — an emitted refresh input that makes interop changes RSCR‑visible.
 
@@ -134,9 +134,25 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 
 #### G.13:4.3 - Use external sources to construct the needed input
 
+Start with the input required by the receiving method and actual records from the external source. Reuse an adequate mapping recipe. To construct or revise one, establish the transformation and its limits before publishing its card and routing its outputs.
+
+##### G.13:4.3.1 - Construct and check the mapping
+
+1. **Recover the required output meaning.** Read the receiving operation’s input definition and conditions. For a G.2 ClaimSheet, this includes the claim, its subject, scope and source support; for a CHR feature, the subject, characteristic, scale, units and observation basis come from G.3/C.16. For a Bridge hint, preserve the two local meanings and the proposed relation for F.9 to examine. Select only the outputs needed by the receiving question.
+2. **Recover what the available source fields denote.** Inspect actual records together with the provider’s definitions for that edition: the counted or described object, population, inclusion rules, units, dates/windows, missing-value conventions and identifiers. Follow a record’s citation to the underlying source when its metadata does not contain the claim or conditions needed. A field name is a locator; its definition and examples establish what a value represents. If the definition is unavailable, ask the provider or obtain the specified source passage before using the ambiguous field for that output.
+3. **Connect each required output to its basis.** Select the exact source passage or field that supplies it, or define the operation that derives it. Direct copying requires compatible meanings. A count requires the population, inclusion predicate and identity/equivalence rule; a unit conversion requires a lawful scale conversion; a claim extraction retains the source’s subject, conditions and contrary evidence under G.2. For a semantic correspondence use F.9’s relation construction and its separate receiving-use test. For a measurement use C.16’s measurement model and G.3’s lawful operations. Where the needed transformation is not supplied by those methods or by an available domain method, identify the unsupplied transformation and the source or competent supplier needed to construct it.
+4. **Apply the recipe to real records.** Work through at least one representative record to the required result and inspect a consequential variation, such as a duplicate identifier, an absent value, a changed time window or a different population definition. Choose the variation from the recipe’s actual assumptions. Retain the source value and derivation sufficiently for the receiving use to check them. Missing or ambiguous values remain missing or ambiguous; they become zero, false or a negative claim only when the source meaning and derivation establish that result.
+5. **Return the obtained input or its exact gap.** A mapped result carries its source edition, applicable scope and transformation basis. A failed compatibility condition supports rejection of that mapping. An unresolved field definition, relation, measurement procedure or source claim prevents only the outputs that depend on it. Identify what source, observation or method construction could settle the gap and what can already be used. When the receiving contract requires a complete bundle, retain that unmet condition rather than treating a partial mapping as the bundle.
+
+**Worked mapping.** Suppose a review needs the number of distinct research articles in a named collection published during 2025, and source-grounded ClaimSheets about their methods. The available index supplies records with `work_id`, `year`, `record_type`, a citation and an abstract. In this illustrative provider contract, `year` means first publication year, `work_id` identifies a work across duplicate records, and `record_type = research_article` is the relevant inclusion class. The recipe filters the stated collection by year and class, groups qualifying records by `work_id`, and counts those groups. Three qualifying records with ids `w1, w1, w2` yield two works. The result retains that population and counting basis; use as a DHC measurement additionally establishes the C.16 result and C.21 replay basis.
+
+For the ClaimSheets, the citation leads to the article text. The reviewer extracts the method claim with its tested population and conditions under G.2; an abstract that omits those conditions leaves an extraction gap to settle from the article. The count and metadata alone supply no performance claim. If the provider instead defines `work_id` as a record identifier, the same three values no longer establish two distinct works: obtain an identity rule or source-level matching method before returning the work count. If `year` means index ingestion year, the recipe must obtain publication dates to answer the original question. Changing the receiving question to the number of index records ingested in 2025 can make those fields sufficient for that different result.
+
+##### G.13:4.3.2 - Publish and use the established recipe
+
 1. **Register source editions.** Author `ExternalIndexCard@Context` for each external source snapshot mapped through this kit, including `ExternalEdition` and the `entityOfConcern` plane anchor.
-2. **Author mapping recipes.** Create `ClaimMapperCard@Context` describing which FPF artefacts are produced (ClaimSheets, BridgeHints, feature sets, UTS proposals), and which policies/specs constrain the mapping (policy refs + optional `PlaneMapRef` / `ScaleEmbeddingSpecRef`).
-3. **Produce FPF-native inputs.** Route the mapping outputs to the receiving operation that needs them, for example:
+2. **Author mapping recipes.** Create `ClaimMapperCard@Context` for the established transformation and its limits, identifying the produced artefacts and applicable policy/spec references. Include `PlaneMapRef` or `ScaleEmbeddingSpecRef` when the transformation uses them.
+3. **Produce FPF-native inputs.** Apply the recipe and route its obtained outputs to the receiving operation, for example:
 
    * `G.2` harvesting (ClaimSheets / operator & object inventories / candidate bridge hints),
    * `G.3` CHR typing (when numeric signals are formalized as CHR characteristics/scales/coordinates),
@@ -169,12 +185,12 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 
 `G.13` keeps provider/method specifics out of the kit core. Any such specificity appears as `GPatternExtension` blocks with stable **PatternScopeId**s. These modules are **wiring‑only**: they bind pins/editions/policies and cite the governing pattern rather than redefining semantics.
 
-#### G.13:5.1 - `G.13:Ext.ExternalIndexProviderWiring` *(Phase‑3 seed)*
+#### G.13:5.1 - `G.13:Ext.ExternalIndexProviderWiring`
 
 **PatternScopeId:** `G.13:Ext.ExternalIndexProviderWiring`
 **GPatternExtensionId:** `ExternalIndexProviderWiring`
-**GPatternExtensionKind:** `Phase3Seed`
-**GoverningPatternId:** `governing pattern not yet selected` *(Annex/Interop or a future dedicated interop-governing pattern)*
+**GPatternExtensionKind:** `InteropSpecific`
+**GoverningPatternId:** `G.13` (source registration and refresh wiring)
 **Uses:** `{G.13}`
 **⊑/⊑⁺:** `∅`
 **RequiredPins/EditionPins/PolicyPins (minimum):**
@@ -186,16 +202,16 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 * `ProviderChangePolicyId?` *(if provider‑specific “schema drift” handling exists)*
 
 **RSCRTriggerSetIds / RSCRTriggerKindIds:** `∅` *(covered by `G.13:4.1`)*
-**Notes (seed; wiring‑only):**
+**Notes (wiring-only):**
 
 * Provider‑specific ingestion choices (e.g., OpenAlex‑class, Crossref‑class, ORKG‑class, discipline repositories) **must not** become Part-G-wide norms. This module only records which provider cards exist and which editions/policies are pinned.
 
-#### G.13:5.2 - `G.13:Ext.EmbeddingBasedAlignment` *(Phase‑3 seed; method‑specific wiring stub)*
+#### G.13:5.2 - `G.13:Ext.EmbeddingBasedAlignment`
 
 **PatternScopeId:** `G.13:Ext.EmbeddingBasedAlignment`
 **GPatternExtensionId:** `EmbeddingBasedAlignment`
-**GPatternExtensionKind:** `Phase3Seed`
-**GoverningPatternId:** `governing pattern not yet selected` *(Annex/Interop or a future dedicated interop-governing pattern; Phase-3 governing-pattern decision required)*
+**GPatternExtensionKind:** `MethodSpecific`
+**GoverningPatternId:** `G.13` (mapping interface); the selected alignment method governs its transformation and qualification.
 **Uses:** `{G.13, A.19, E.5.2}`
 **⊑/⊑⁺:** `∅`
 **RequiredPins/EditionPins/PolicyPins (minimum):**
@@ -208,15 +224,14 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 **RSCRTriggerSetIds / RSCRTriggerKindIds:** `∅` *(covered by `G.13:4.1`)*
 **Notes (wiring-only):**
 
-* “Embedding‑based” techniques are treated as **declared transforms** constrained by `ScaleEmbeddingSpec` and/or `NormalizationMethod` references, rather than as implicit semantics.
-* The module binds editions and policies; it does not define what is “similar enough”.
+* A selected embedding-based method supplies the transformation and its qualification for the receiving relation. Cite that method and its edition with the applicable `ScaleEmbeddingSpec` and `NormalizationMethod` references.
 
-#### G.13:5.3 - `G.13:Ext.EntityResolutionAndAliasDocking` *(interop‑specific; Phase‑3 seed)*
+#### G.13:5.3 - `G.13:Ext.EntityResolutionAndAliasDocking`
 
 **PatternScopeId:** `G.13:Ext.EntityResolutionAndAliasDocking`
 **GPatternExtensionId:** `EntityResolutionAndAliasDocking`
-**GPatternExtensionKind:** `Phase3Seed`
-**GoverningPatternId:** `governing pattern not yet selected` *(likely UTS-adjacent; requires Phase-3 governing-pattern decision)*
+**GPatternExtensionKind:** `InteropSpecific`
+**GoverningPatternId:** `G.13` (mapping interface), `F.17` (public naming); the selected entity-resolution method governs the identity judgement.
 **Uses:** `{F.17, E.10}`
 **⊑/⊑⁺:** `∅`
 **RequiredPins/EditionPins/PolicyPins (minimum):**
@@ -226,9 +241,9 @@ All objects below are **conceptual**. Any concrete serialisation belongs to Anne
 * `TokenizationPolicyId?`
 
 **RSCRTriggerSetIds / RSCRTriggerKindIds:** `∅` *(covered by `G.13:4.1`)*
-**Notes (seed; wiring‑only):**
+**Notes (wiring-only):**
 
-* This module exists to prevent “ID drift by renaming” for externally sourced entities. It is intentionally a Phase‑3 seed until its governing pattern is selected.
+* Establish source-entity identity through the selected resolution method before docking its external identifiers as aliases. Preserve the basis for identifying two records as one entity, or leave that identity unresolved; publishing an alias does not establish it.
 
 ### G.13:6 - Archetypal grounding
 
@@ -252,7 +267,7 @@ Register external environment/task taxonomies as index cards. Align them into ge
 
 1. **CC‑G13‑CoreRef.** *(normative)* `G.13` implementations **MUST** satisfy the *effective* `G.Core` obligations declared by `G.13:4.1` (`GCoreLinkageManifest`), including trigger typing, Default Governing Definition Index citation, and crossing‑visibility pin discipline.
 
-2. **CC‑G13‑InteropIsNotASpecRefSurface.** *(delegated)* Interop surfaces **MUST NOT** introduce shadow legality/comparability gates; they cite `CN‑Spec`/`CG‑Spec`/CHR/CAL governing definitions and publish pins instead.
+2. **CC‑G13‑InteropIsNotASpecRefSurface.** *(delegated)* Interop surfaces cite the CN‑Spec/CG‑Spec/CHR/CAL definitions and pins applicable to their actual transformation and receiving use; they do not introduce shadow legality/comparability gates.
    → delegate to `CC‑GCORE‑CN‑CG‑1`.
 
 3. **CC‑G13‑CrossingsAreExplicitWhenInteropTouchesPlanesOrContexts.** *(delegated)* Any cross‑plane/context reuse implied by alignment **MUST** be made explicit through the crossing visibility discipline.
@@ -309,7 +324,7 @@ Register external environment/task taxonomies as index cards. Align them into ge
 
 An explicit interop kit lets authors use external scholarly sources while keeping comparisons, editions and transformations visible.
 
-`G.13` provides **conceptual registration, alignment, and telemetry hooks**: cards and surfaces pin editions, cite governing patterns, and expose provenance hooks; telemetry hooks produce typed refresh causes. Domain/tool specifics remain in `Extensions` (or Phase‑3 governing definitions).
+`G.13` connects source meanings and records to receiving inputs through :4.3, then makes the transformation and source editions citable. Its cards and surfaces retain the applicable provenance and refresh inputs. Extensions bind provider or method details used by that transformation.
 
 ### G.13:12 - SoTA-Echoing (informative)
 
@@ -332,11 +347,11 @@ An explicit interop kit lets authors use external scholarly sources while keepin
 
 ### G.13:14 - Author’s quick checklist (informative)
 
-1. Register each external source snapshot as an `ExternalIndexCard@Context` with explicit `ExternalEdition`.
+1. Establish the needed input and mapping from source definitions and actual records under :4.3; register each source snapshot with its `ExternalEdition`.
 2. Author a `ClaimMapperCard@Context` with explicit `MappingPolicyRef` and required edition pins.
 3. If you derive SoS features, declare a `SoSFeatureTransform@Context` and cite CHR typing refs and provenance hooks.
 4. Publish an `InteropSurface@Context` that cites all active `…Ref.edition` values and UTS rows.
 5. On any external edition or policy change, emit canonical RSCR trigger causes with explicit scope + payload pins.
-6. Keep provider/tool specifics in `Extensions` (or Phase‑3 seed) and do not let formats redefine semantics.
+6. Keep provider and method conditions with the applicable extension and its cited procedure.
 
 ### G.13:End

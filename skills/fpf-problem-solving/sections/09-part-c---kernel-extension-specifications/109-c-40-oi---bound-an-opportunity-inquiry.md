@@ -60,7 +60,7 @@ Bound the inquiry so it can direct the selected useful action and identify a suf
 
 Name what may develop or be changed at the grain that matters now: a particular person, organization, community arrangement, AI model-and-scaffold configuration, facility, platform, research programme, episteme, or another exact subject. If identification is provisional, state the candidate boundary and what would settle it.
 
-Mark the claim posture. A proposed future contribution is not actual change. A plan is not performed Work. A model prediction is not an observed result. If *development* or *evolution* still hides the subject, continuity rule, or value claim, use [`E.10.DEV`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) and return with the direct subject owner.
+Mark the claim posture. A proposed future contribution is not actual change. A plan is not performed Work. A model prediction is not an observed result. If *development* or *evolution* still hides the subject, continuity rule, or value claim, use [`E.10.DEV`](../03-first-principles-framework-readme/_index.md) and return with the direct subject owner.
 
 #### C.40.OI:4.2 - Identify a receiving use or an exploratory question
 
@@ -68,7 +68,7 @@ For a proposed contribution, state who or what could use it, in which situation,
 
 Keep the receiver's useful difference separate from the subject's desired learning, prestige, procurement, technology adoption, or internal activity. If no receiver or receiving situation can yet be named, keep that question open rather than inventing demand.
 
-An inquiry can still start from material that someone can use or change: permitted records, a working procedure, a model or another construction. Name an available operation and a difference worth examining within the inquiry's resources and permissions. [C.40](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies that development Method. Its result can suggest a receiving use for C.40.NU or C.40.PC to investigate. A useful local result can also finish the inquiry; it need not become an opportunity.
+An inquiry can still start from material that someone can use or change: permitted records, a working procedure, a model or another construction. Name an available operation and a difference worth examining within the inquiry's resources and permissions. [C.40](../03-first-principles-framework-readme/_index.md) supplies that development Method. Its result can suggest a receiving use for C.40.NU or C.40.PC to investigate. A useful local result can also finish the inquiry; it need not become an opportunity.
 
 #### C.40.OI:4.3 - Separate the return time from the development horizon
 
@@ -84,7 +84,7 @@ Write why exploration is warranted now. Distinguish:
 - an observed dissatisfaction or changed constraint;
 - a proposed contribution or explicit problem hypothesis;
 - a supplier promise, technology signal, or PatternID used only as a search lead; and
-- curiosity that is valuable only if a bounded inquiry can be afforded.
+- curiosity about a question worth examining.
 
 Preserve competing formulations when they would send the inquiry toward different contributions. Use the direct problem-structuring pattern when deciding among those formulations is itself the current Work.
 
@@ -108,11 +108,11 @@ Identify a result that could improve the answer or next inquiry. Depending on wh
 
 Say what plausible answers would change: the next question, a possible contribution, a supported claim, an admissible action or a justified stop. When the future receiver is unknown, use the local exploratory question from §4.2. Discriminating explanations or discovering a useful operation can justify inquiry before an intervention is selected.
 
-Compare the attainable inquiry with what the present basis already supports. A narrower answer, smaller probe, different source, deferral or stop may serve the use better. Compare their whole burdens under §4.5 and the protections, not uncertainty alone. Use [C.11.DUA:4.1–4.4](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when the connection between the receiving question, evidence demand and worthwhile continuation needs development. Qualitative judgement is enough when it settles that choice.
+Compare the attainable inquiry with what the present basis already supports. A narrower answer, smaller probe, different source, deferral or stop may serve the use better. Compare their whole burdens under §4.5 and the protections, not uncertainty alone. Use [C.11.DUA:4.1–4.4](../03-first-principles-framework-readme/_index.md) when the connection between the receiving question, evidence demand and worthwhile continuation needs development. Qualitative judgement is enough when it settles that choice.
 
 Select the affordable inquiry whose attainable contribution is worth that burden, or finish with the supported answer now. State what would be enough for this use before spending the selected budget: for example, one evidenced difficulty and a question that distinguishes two plausible contributions. This condition need not settle every unknown. If the inquiry cannot reach it within the permitted means, return the narrower supported result or exact gap; exhausting a budget supplies no missing evidence.
 
-For an outside-practice contribution, [A.15.9:4.1](https://github.com/ailev/FPF/blob/main/FPF-Spec.md), steps 2–3, connects reuse of an available answer with the decision to obtain more. When acquisition is worthwhile, its later steps bound the request and qualify the returned result for use. Asking for it does not supply it.
+For an outside-practice contribution, [A.15.9:4.1](../03-first-principles-framework-readme/_index.md), steps 2–3, connects reuse of an available answer with the decision to obtain more. When acquisition is worthwhile, its later steps bound the request and qualify the returned result for use. Asking for it does not supply it.
 
 Start at that selected contribution. Publication order does not require the earlier PatternIDs to be used.
 
@@ -240,7 +240,7 @@ The selected boundary is therefore intentionally small: enough identity, use, ho
 
 **Selected best-known line.** Phillips, [*Decision Analysis for Practitioners* (2025)](https://pubsonline.informs.org/doi/full/10.1287/deca.2025.0356), develops requisite modelling: revise the problem and model with participants, explore assumptions through sensitivity analysis, and seek enough understanding to move forward without settling every input. Its sections on decision conferences, transitional objects and decision-analysis technology already support exploration before commitment and the emergence of new options. This pattern **adopts** revisable inquiry and sufficiency from that line.
 
-**Useful adaptation here.** C.40.OI joins those contributions to development-subject identification from [E.10.DEV](https://github.com/ailev/FPF/blob/main/FPF-Spec.md), inquiry appraisal from C.11.DUA and bounded outside-practice use from A.15.9. Sections 4.1–4.6 connect the subject, local question or receiving use, protections, available means and sufficient return. This supports a self-inquiry, an unsettled future receiver, or a question that an existing qualified result can already answer. None of those entries requires convening a decision conference or constructing a decision model.
+**Useful adaptation here.** C.40.OI joins those contributions to development-subject identification from [E.10.DEV](../03-first-principles-framework-readme/_index.md), inquiry appraisal from C.11.DUA and bounded outside-practice use from A.15.9. Sections 4.1–4.6 connect the subject, local question or receiving use, protections, available means and sufficient return. This supports a self-inquiry, an unsettled future receiver, or a question that an existing qualified result can already answer. None of those entries requires convening a decision conference or constructing a decision model.
 
 **Serious alternative and price.** Requisite modelling is a strong direct choice when participants need to develop shared understanding, examine consequential trade-offs or test sensitivity to disputed judgements. Use the corresponding decision-support practice directly when it supplies the whole needed result. C.40.OI's smaller return can be useful before that need is established, but it supplies neither the model nor the facilitated shared understanding. Its explicit boundary costs attention too: repeating it around an adequate modelling brief adds work without a useful contribution.
 

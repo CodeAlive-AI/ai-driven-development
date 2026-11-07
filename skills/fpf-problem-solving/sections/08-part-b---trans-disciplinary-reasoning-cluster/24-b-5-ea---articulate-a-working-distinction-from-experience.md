@@ -143,7 +143,7 @@ The listener's expertise can make a premature explanation attractive. Preserve t
 
 Previously unusable experience can contribute to joint reasoning. The participant may discover what they mean while the listener obtains something more useful than agreement with a vague label.
 
-The method requires attention and, in its human experiential branch, the participant's willingness and ability to return to the experience. It offers no guarantee that the account will become clear. Use accessible observations or another contribution when that return is unavailable.
+The method requires attention and, in its human experiential branch, the participant's willingness and ability to return to the experience. Use accessible observations or another contribution when that return is unavailable.
 
 ### B.5.EA:10 - Rationale
 

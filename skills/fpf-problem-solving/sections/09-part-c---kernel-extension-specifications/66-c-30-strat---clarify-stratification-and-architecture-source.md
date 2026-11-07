@@ -51,7 +51,7 @@ A compact label can carry a useful source-local meaning while leaving the intend
 
 ### C.30.STRAT:4 - Solution
 
-Write the direct local repair first. For example: `Here “gate” names the neural-network path selector; use E.18 to describe the selected path.` That sentence can be the complete result.
+Write the direct local repair first. For example: `Here “gate” names the neural-network path selector; it selects which expert receives this token.` That sentence can be the complete result. Use E.18 when the receiving question needs the selected transformation-flow organization, path or crossing.
 
 A sufficient sentence can be compared, handed on, or revisited as it stands. Retain a compact note when organizing the repair helps that use:
 
@@ -139,7 +139,7 @@ C.30 placement does not decide the recovered meaning. After recovery, use the ru
 | --- | --- |
 | `The module layer is stable.` | Keep `layer` as a source label until the sentence reveals a module or interface relation, scale or comparison, publication or view, state, dynamics, or temporal claim. Use only the matching pattern: for example `A.6.M`, `C.16.P`, `C.29`, `C.2.P`, `A.19.SPR`, `A.3.3`, `C.27.TA`, or `C.27`. |
 | `The expert routes the token.` | In mixture-of-experts prose, first test submodel or subholon, specialized transformation, path selection, architecture-to-flow relation, candidate selection, ordinary wording, or non-use. Only an unresolved claim-bearing use of *role* opens `E.10.ROLE`; any system-role kind, classification, assignment, performer, Work, responsibility, or authority claim must be established independently under its direct pattern. |
-| `The cache proves the architecture scales.` | Split three questions: what `cache` names, whether an evidence or assurance relation exists, and what measurable scale or lens-use claim is being made. Use `A.6.M`, `A.6.F`, E.18, state or temporal patterns, `C.16.P`, C.29, A.10, B.3, or G.6 only for the branch that is actually present. |
+| `The cache proves the architecture scales.` | Recover the cache's subject, the exact scaling claim and grounds appropriate to that claim. A formal bound may follow by derivation under stated assumptions; empirical performance and named assurance claims need their own grounds. Use only the corresponding domain, measurement, evidence or assurance branch. |
 | `The LCA upper layer guarantees safety.` | First decide whether `layer` names a control relation. If so, C.30.LCA records the relation, participant meanings, rate band, and relevant locality or model-use boundary. Safety, evidence, assurance, dynamics, temporal, and gate claims remain separate. |
 | `The architecture description places service logic in the application layer.` | Recover the description's declared viewpoint or model-kind convention and what `application layer` means there. It may be a useful grouping in the description. State separately any claim that the described system itself has an obtaining layer, dependency, module, control, or flow relation; neither the diagram position nor architecture-description conformance establishes that world-side claim. |
 | `Our operating model has strategic, coordination, and execution levels.` | If these are only headings or work areas, keep them as local labels. Before claiming levels in an organization or practice, say what the three areas are, how they are ordered or mapped, when that ordering applies, and whether it is asserted, proposed, assumed, or only illustrated. Slide order, a curriculum, or a first-then flow establishes none of this. |
@@ -150,7 +150,7 @@ C.30 placement does not decide the recovered meaning. After recovery, use the ru
 For `The cache proves the architecture scales`, do not hide the split inside one formal record. Read it as three candidate claims:
 
 1. `cache` may name a state-bearing module, interface arrangement, flow buffer, or ordinary source label; the sentence does not yet decide which;
-2. `proves` requires an actual evidence relation or assurance argument; otherwise lower that wording;
+2. `proves` needs grounds appropriate to the exact claim: a valid formal derivation under stated assumptions, support for an empirical claim, or the argument required by a named assurance use. Retain proof wording only within the established scope;
 3. `scales` requires a characteristic and bearer, comparison or scale construction, architecture scale-preference claim, or mathematical-lens use.
 
 A retained note can remain compact:
@@ -162,16 +162,18 @@ StratificationSourceLabelRepairNote:
   recoveredObjectRelationOrClaim: cache meaning unresolved; proof and scale are separate claims
   sourceUseDisposition: keep cache as a source label until its relation or bearer is known
   patternRef?: A.6.M, A.6.F, E.18, A.19.SPR, or A.3.3 for the cache;
-    C.16.P, C.29, or C.31.ASAP for scale; A.10, B.3, or G.6 for proof or assurance
-  repairedWordingOrDemotion: “Identify what ‘cache’ names here, which scaling claim is being made, and what evidence supports it.”
+    the domain rule for a formal claim; C.16.P or C.31.ASAP for a scale/comparison question; C.29 only for unresolved mathematical formulation, transfer or reliance; A.10/G.6 for replayable source use or B.3 for named assurance
+  repairedWordingOrDemotion: “Identify what ‘cache’ names, the exact scaling claim and the grounds that support it.”
   admissibleUse: start the three-way investigation
-  stopOrReturnCondition: return to the source for the missing cache meaning, scaling basis, or evidence; use the direct pattern once that branch is recovered
-  blockedOverread?: the source's proof-and-scale claim remains unsupported while its cache subject, scaling basis, and evidence are unresolved
+  stopOrReturnCondition: return for the missing cache meaning, scaling basis or claim-specific grounds; finish with the supported direct result
+  blockedOverread?: the source's proof-and-scale claim remains unsupported while its subject, scaling basis or required grounds are unresolved
   remainingReaderUse: state the smallest result for each recovered claim, or keep ordinary source wording
   disposition: reduced-use-cue; direct-pattern-use only for branches that become current
 ```
 
-The three questions can be resolved separately. Recovering the cache referent does not supply the scaling comparison or its evidence; a sufficient answer to one question can be used within its boundary.
+The questions can be resolved separately. Recovering the cache referent does not establish the scaling claim; a sufficient answer to one question remains usable within its boundary.
+
+For a direct formal result, suppose a memoizer processes requests one at a time, starts with an empty cache, uses exact input keys for a pure deterministic function `f`, stores each computed result, and retains all entries. On a hit it returns the cached value without calling `f`; on a miss it calls `f` once and stores the result. These steps preserve the invariant that, after each request, the cache contains `f(x)` for every input seen so far. Therefore `N` requests with `k` distinct inputs cause exactly `k` calls to `f`. This derivation can finish that mathematical question without measurement or an assurance record. Eviction or state-dependent outputs change the premises and require a different argument. The result alone predicts neither wall-clock speed nor the behavior of an implementation that has not been shown to satisfy the premises.
 
 #### C.30.STRAT:4.6 - Lowering and reopen conditions
 
@@ -248,7 +250,7 @@ Reopen only the affected cue, worked case, check, or pointer when a source chang
 - E.10 supplies wording cues; E.10.ARCH helps recover a still-unresolved FPF meaning or relation.
 - C.30.P is the broader architecture and structure wording repair; C.30.STRAT is the narrow recurring source-label case.
 - Use A.22, C.30, C.30.ASV, C.30.LCA, C.30.TFS-REL, or C.30.ILC only for the selected structure, architecture relation, view, control, flow, or conflict question each pattern defines or tests.
-- Use A.6.M for recovered module and interface relations; A.6.F for recovered function claims; E.18 for graph, path, crossing, and transformation-flow claims; C.16.P, C.16, C.29, C.31, or C.31.RSA for recovered characteristic, scale, mathematical-lens, reusable-locus, bespoke-residue, or report-only-share claims.
+- Use A.6.M for recovered module and interface relations; A.6.F for recovered function claims; E.18 when the selected transformation-flow organization, path or crossing is needed; C.16.P, C.16, C.29, C.31, or C.31.RSA for recovered characteristic, scale, mathematical-lens, reusable-locus, bespoke-residue, or report-only-share claims.
 - Use the episteme, publication, and source-use routes in C.30.STRAT:4.2; A.19.SPR for unresolved state wording; the applicable state rule, A.3.3, C.27.TA, or C.27 for recovered state, dynamics, temporal, or rate claims; C.28 for causal use; A.10 and G.6 for evidence; B.3 for assurance; A.20 for internal-constraint results and A.21 for gate decisions; A.15.1 for Work; A.2 for system-role kinds; G.5 for selector-facing set-result declarations and C.11 for local choice among already available options.
 - C.33, C.34, and C.35 handle captured, lost, preserved, generated-carrier, or discovered-carrier structure when those claims are current.
 - A recovered level claim returns to the pattern that defines or tests its subject relation or mapping. C.30.STRAT establishes no level by itself.

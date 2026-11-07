@@ -93,7 +93,7 @@ Common outcomes are:
 - **Complementary uses.** Give each account its question and contribution. When combining their results, establish the compatibility needed at the connection.
 - **A consequential unresolved difference.** Keep the conditional answers and the premise or observation that would discriminate them. Continue with an unaffected result, a sufficient bound or the worthwhile inquiry selected for that difference.
 
-Accuracy, reach, computational effort, learning effort and the ability to change the construction can matter differently across uses. Compare the values that can change this choice. If their trade-off is unresolved, C.11 supplies the decision method; a single “best theory” score would hide it.
+Accuracy, reach, computational effort, learning effort and the ability to change the construction can matter differently across uses. Compare the values that can change this choice. If their trade-off is unresolved, C.11 supplies the decision method.
 
 Reopen when the question, premises, interpretation, available operation or relevant evidence changes. B.5.RR helps revise the affected reasoning. Reuse the comparison where its dependencies remain intact.
 
@@ -101,7 +101,7 @@ Reopen when the question, premises, interpretation, available operation or relev
 
 Recognize the need from an unresolved disagreement or a choice between accounts. One worked comparison can already reveal an omitted premise or a useful complementary answer.
 
-Qualify the result for its intended use. A mathematical equivalence needs a derivation over its claimed domain. A physical prediction needs the corresponding model and observation basis. An implemented approximation needs an error account adequate for the question. Use the relevant subject Methods and B.3 for these claims. Broader reliance is a reason to establish the broader claim, while an ordinary local use can stop with its sufficient local result.
+Qualify the result for its intended use. A mathematical equivalence needs a derivation over its claimed domain. A physical prediction needs the corresponding model and observation basis. An implemented approximation needs an error account adequate for the question. Use the relevant subject Methods for these claims. Use B.3 when a named assurance claim about this result and use needs its own assurance argument and qualification. Broader reliance is a reason to establish the broader claim, while an ordinary local use can stop with its sufficient local result.
 
 ### B.5.TC:5 - Archetypal Grounding
 
@@ -139,7 +139,7 @@ The next contribution could be the circuit description, an already available int
 
 A shared question can favor the account that originally framed it. Retain a rival's newly expressible question when it opens useful inquiry; compare that contribution on its own terms. Conversely, unfamiliar notation can make an ordinary operation appear novel. Recover the operation before crediting or rejecting the account.
 
-The cases use small formal constructions so their decisive steps can be inspected. They demonstrate the comparison method, with domain premises stated in each case. A difficult real application can need specialist knowledge, uncertain premises and more than one iteration. Human, AI and collective contributions can participate in the comparison; claims about their learning or reliability require their own basis.
+The cases use small formal constructions so their decisive steps can be inspected. They demonstrate the comparison method, with domain premises stated in each case. A difficult real application can need specialist knowledge, uncertain premises and more than one iteration.
 
 ### B.5.TC:7 - Conformance Checklist
 

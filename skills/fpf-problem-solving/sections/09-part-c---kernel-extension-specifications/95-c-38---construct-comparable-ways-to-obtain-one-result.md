@@ -152,7 +152,7 @@ A use conforms only when the checks needed by its claimed comparison pass:
 
 **Recognition check.** The practitioner can recover one common result from a *build/buy/provider/AI* list and identify a decision-relevant hidden difference or duplicate. An arrangement taxonomy is unnecessary.
 
-**Assurance check.** For a consequential use, inspect each actual premise under its direct evidence and authority patterns, challenge one omitted burden that could reverse the choice, and verify that the selected domain assurance and acceptance Methods remain outside `C.38`.
+**Assurance check.** For a consequential use, inspect each actual premise under its direct evidence and authority patterns, examine any plausible omitted burden that could reverse the choice, and verify that the selected domain assurance and acceptance Methods remain outside `C.38`.
 
 ### C.38:8 - Anti-patterns
 
@@ -182,7 +182,7 @@ A use conforms only when the checks needed by its claimed comparison pass:
 
 The practice question is how to construct several decision-ready ways to obtain one named result without smuggling in a choice, false actuality, or a domain-specific arrangement schema. Begin with the receiving result and use, expand each serious candidate into a complete-enough possible-future way, and expose the same decision-relevant burdens and limits. The resulting finite `OptionSet` is an input to C.11 when local choice is current.
 
-An initial table may contain labels such as internal, provider, buy, build, partner, procurement vehicle or lifecycle stage. Scoring those labels before recovering their contents can mix unlike alternatives and hide integration, evidence, support, capability, custody, consequence, recovery and exit burdens. Familiarity, official standing, adoption breadth, recency, or institutional praise can make such rows look credible; none shows that they are complete or comparable ways. `C.38` repairs that defect by fixing one result and receiver, resolving every label into a whole possible-future way, applying a bounded parity basis, marking unknowns without inventing current relations, and stopping before local choice or actual Work.
+An initial table may contain labels such as internal, provider, buy, build, partner, procurement vehicle or lifecycle stage. Scoring those labels before recovering their contents can mix unlike alternatives and hide integration, evidence, support, capability, custody, consequence, recovery and exit burdens. `C.38` repairs that defect by fixing one result and receiver, resolving every label into a whole possible-future way, applying a bounded parity basis, marking unknowns without inventing current relations, and stopping before local choice or actual Work.
 
 The common comparison depends on its domain inputs. Systems Engineering supplies the engineered-System conditions, specialist criteria, realization and assurance; the recording Method supplies artistic, participatory and production requirements. Those differences determine what a complete way must include. When a domain Method already returns the sufficient comparison, use that result directly.
 

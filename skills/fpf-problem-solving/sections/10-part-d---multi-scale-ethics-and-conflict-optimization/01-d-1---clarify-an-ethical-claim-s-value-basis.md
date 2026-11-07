@@ -136,7 +136,7 @@ The practical result is an explained boundary on a proposed action: which contri
 | How should a mapped ethical conflict be mediated, refused, escalated, or used in a decision? | `D.4` |
 | Is a model, metric, policy, publication, or release-bearing claim biased, unfair, or ethically unsafe? | `D.5` |
 | Does the causal fairness claim have the required C.28 evidence value and verdict? | `C.28`, with `D.5` for ethical-audit use |
-| Is the ethical claim supported, and can that support be relied on for this use? | The applicable subject and evidence patterns for support; `A.10` for bounded reliance on the result |
+| Is the ethical claim supported, and can that support be relied on for this use? | Use the applicable subject and evidence patterns and an adequate existing basis; apply `A.10` when the source-to-use relation is implicit or must be made replayable for the receiving use. |
 | Is an assurance claim being made? | `B.3` |
 | Is an architecture residual current? | `C.30.ILC` |
 
@@ -199,13 +199,7 @@ This keeps FPF usable in engineering, research, organizational, public, and AI-e
 
 ### D.1:9 - SoTA-Echoing
 
-| Source line | Practical implication for this pattern |
-| --- | --- |
-| Value pluralism and applied ethics practice | FPF should not pretend that one ethical doctrine resolves every project claim; it should expose the current value concern, affected EntityOfConcern, and excluded concerns, and qualify the basis of the judgement being used. |
-| Engineering ethics and assurance practice | A method, work plan, architecture move, recommendation, system, or holon can be technically adequate while shifting harm, benefit, responsibility, or coercion elsewhere; technical verification does not settle the ethical claim. |
-| Human-impact, AI governance, and dual-use practice | Fairness, responsibility, alignment, safety, and misuse claims need affected parties, context, and warranted use; relied-on evidence and the consequence horizon qualify that use. |
-| Developed consent reasoning in the [Belmont Report, “Respect for Persons” and “Informed Consent”](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html) (1979), [UNESCO bioethics declaration, Articles 5–7](https://www.unesco.org/en/legal-affairs/universal-declaration-bioethics-and-human-rights) (2005), and [Declaration of Helsinki, paragraphs 25–30](https://www.wma.net/policies-post/wma-declaration-of-helsinki/) (2024) | Adapt their distinction between a stated personal concern and valid consent, including capacity, dependence and representation. These developed domain treatments keep consent connected to reasons and limits; they do not establish a universal political doctrine. Section :2.2 uses that explanatory discipline while leaving domain requirements with their sources. |
-| FPF subject-pattern discipline | Ethical entry does not absorb evidence, causality, assurance, architecture, or bias-audit owners. |
+For judging a person's participation in :2.2, **adapt** the developed consent reasoning in the [Belmont Report, “Respect for Persons” and “Informed Consent”](https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html) (1979), [UNESCO's bioethics declaration, Articles 5–7](https://www.unesco.org/en/legal-affairs/universal-declaration-bioethics-and-human-rights) (2005), and the [Declaration of Helsinki, paragraphs 25–30](https://www.wma.net/policies-post/wma-declaration-of-helsinki/) (2024). Against treating expressed willingness or a sponsor's approval as sufficient, :2.2 examines the agreement's scope, information, understanding, voluntariness and applicable capacity or representation conditions. The participation case changes its conclusion when the claimed authority or an existing commitment changes. These sources supply developed treatments in medicine and research; their requirements retain those domains, while D.1's broader argument remains conditional on its stated normative premises. Reopen that argument when a changed obligation, affected party, consent condition or domain rule changes the grounds of the judgement.
 
 ### D.1:10 - Relations
 
@@ -213,7 +207,7 @@ This keeps FPF usable in engineering, research, organizational, public, and AI-e
 - Coordinates with `A.1.CSD` when a current ethical claim still lacks an adequate set of Systems that may bear consequences; D.1 consumes the returned account and does not add value fields to its neutral core.
 
 - Coordinates with `B.5.RA` when the ethical argument must be recovered from a source and with `B.5.RR` when a changed premise requires revising its conclusions.
-- Coordinates with `A.10` for descriptive provenance and bounded reliance on the source or evidence used.
+- Coordinates with `A.10` when the source-to-use relation behind a relied-on claim is implicit or needs a replayable account.
 - Coordinates with `C.11.DUA` when a proposed ethical record or evidence demand needs appraisal of its contribution, feasibility, burden, or requirement merits.
 - Coordinates with `B.3` when an assurance claim is current.
 - Use `D.2` to recognize concerns across levels and scopes, `D.3` to describe conflicts, `D.4` to develop and compare continuations, and `D.5` to select and interpret an ethical audit.

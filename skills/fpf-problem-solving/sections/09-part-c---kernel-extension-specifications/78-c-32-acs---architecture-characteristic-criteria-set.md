@@ -18,7 +18,7 @@ Typical entry phrases:
 "Architecture around a Method, local system-role kind, separate System-classification judgment, assignment, AI workflow, or built asset has trustworthiness or teachability pressure; what is the exact characteristic bearer and which Q-Bundle slot or ACS row is current?"
 ```
 
-**First-minute use slice.** A product-family architect has HCS starter heads and source catalogue names for maintainability, substitutability, evidence reuse, safety, availability, latency, and scale amenability. Using C.32.ACS, the practitioner builds project rows and gives each admitted row its bearer, exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and plane, qualification or evaluation window, scale form, relevant proxy risk and protected losses, and a source-return condition when that use needs one. Maintainability, substitutability, and evidence reuse become optimization indicators; safety and availability remain monitored guardrails. The source phrase "scale amenability" remains only a starter cue until ACS admits a concrete characteristic row, such as exception growth or interface-grammar variation, with its bearer and scale form; a claim that one alternative is preferable under a declared scale window remains a separate `C.31.ASAP` object. C.32 can now synthesize candidates against declared criteria instead of a loose list of quality words.
+**First-minute use slice.** A product-family architect has HCS starter heads and source catalogue names for maintainability, substitutability, evidence reuse, safety, availability, latency, and scale amenability. Using C.32.ACS, the practitioner builds project rows and gives each admitted row its bearer, exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme, applicable plane and any qualification or evaluation window required by the use, scale form, relevant proxy risk and protected losses, and a source-return condition when that use needs one. Maintainability, substitutability, and evidence reuse become optimization indicators; safety and availability remain monitored guardrails. The source phrase "scale amenability" remains only a starter cue until ACS admits a concrete characteristic row, such as exception growth or interface-grammar variation, with its bearer and scale form; a claim that one alternative is preferable under a declared scale window remains a separate `C.31.ASAP` object. C.32 can now synthesize candidates against declared criteria instead of a loose list of quality words.
 
 This pattern constructs a project architecture-characteristic criteria set for the receiving improvement or evaluation question. The optional records below can keep its bindings recoverable. Its rows can supply C.32 synthesis, C.32.MLAO residual work, C.32.ACE eval programs, and later patterns for the next questions. The named set and row records are C.32.ACS-local forms, not new `U.*` kinds; starter packs, `U.Characteristic` values, Q-Bundles, measurement methods and results, eval programs and results, candidate palettes, comparison rules, selection results, G.5 result declarations, actual publications, local choices, and architecture decisions remain separate objects.
 
@@ -26,7 +26,7 @@ Ordinary working move: make one row per project architecture characteristic, bin
 
 The first useful result is a set of criteria with their meanings, use classes and necessary bindings. Use `ArchitectureCharacteristicCriteriaSet@Project` when a record helps:
 
-For a first pass, identify the described holon, architecture use, a small set of draft criteria and their possible bearers. Keep missing bindings as explicit questions. Before admitting a criterion for its receiving use, establish its bearer or selected structure, claim scope and relevant context slices, reference scheme and applicable plane, qualification or evaluation window, scale form, use class, protected losses and reopen condition. An incomplete draft does not yet support that use. Add readings, target bands, and eval-program references only when the current receiving use needs them; add a selected `BoundedModelUseStructure` only when it independently changes interpretation of the row use.
+For a first pass, identify the described holon, architecture use, a small set of draft criteria and their possible bearers. Keep missing bindings as explicit questions. Before admitting a criterion for its receiving use, establish its bearer or selected structure, claim scope and relevant context slices, reference scheme, applicable plane, scale form and use class, with the temporal qualification, protected losses and reopen condition needed by that use. An incomplete draft does not yet support that use. Add readings, target bands, and eval-program references only when the current receiving use needs them; add a selected `BoundedModelUseStructure` only when it independently changes interpretation of the row use.
 
 ```text
 ArchitectureCharacteristicCriteriaSet@Project:
@@ -45,7 +45,7 @@ ArchitectureCharacteristicCriteriaSet@Project:
       modelUseStructureRef?:
       effectiveReferenceScheme:
       referencePlane?:
-      qualificationOrEvaluationWindow:
+      qualificationOrEvaluationWindow?: when the criterion or its use depends on time
       endpointShape: singleCharacteristic | qBundle | qBundleSlot | sourceVocabularyOnly
       qBundleRef?:
       architectureQuestion:
@@ -96,7 +96,7 @@ Common exits by claim kind:
 
 ### C.32.ACS:2 - Problem
 
-Architecture synthesis needs criteria. A multi-criteria or multilevel optimization phrase is empty until the criteria are named. In C.32-family work, those criteria are admitted architecture-characteristic rows or declared C.25 Q-Bundle slots of the described holon, each bound to its exact bearer, `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and plane, qualification or evaluation window, and receiving use. A broad domain or bounded-context label supplies none of those bindings.
+Architecture synthesis needs criteria. A multi-criteria or multilevel optimization phrase is empty until the criteria are named. In C.32-family work, those criteria are admitted architecture-characteristic rows or declared C.25 Q-Bundle slots of the described holon, each bound to its exact bearer, `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme, applicable plane and any qualification or evaluation window required by the use, and receiving use. A broad domain or bounded-context label supplies none of those bindings.
 
 Architecture characteristics are not the same as user functions. Functional demand says what the holon must do. An architecture characteristic says whether the selected structures make that demand maintainable, controllable, replaceable, observable, evolvable, scalable, affordable, safe enough, or otherwise acceptable.
 
@@ -131,7 +131,7 @@ A C.25 Q-Bundle is the structured form for a composite quality family. A scale r
 
 Work in this order:
 
-1. Name the described holon, architecture use, and improvement cycle or one-pass eval use. Connect the receiving role and situation to a needed result, the quality that matters, the structural alternatives that could change it, and an attainable observation. Keep a Method, its description, a performed Work occurrence and the performing System distinct when choosing that bearer. For every admitted row, bind the claim scope and relevant context slices, effective reference scheme and applicable plane, and qualification or evaluation window. A proposed row can retain a missing binding as an explicit question until admission. Designate a selected A.1.1 `BoundedModelUseStructure` only when it independently changes that row's interpretation.
+1. Name the described holon, architecture use, and improvement cycle or one-pass eval use. Connect the receiving role and situation to a needed result, the quality that matters, the structural alternatives that could change it, and an attainable observation. Keep a Method, its description, a performed Work occurrence and the performing System distinct when choosing that bearer. For every admitted row, bind the claim scope and relevant context slices, effective reference scheme and applicable plane, with any qualification or evaluation window required by the criterion or receiving use. Preserve every declared slice selector. A proposed row can retain a missing binding as an explicit question until admission. Designate a selected A.1.1 `BoundedModelUseStructure` only when it independently changes that row's interpretation.
 2. Use C.32.HCS when a family starting point is needed. Directly recoverable project pressure or adequate existing criteria can supply the starting point. Source catalogues supply possible heads whose project bindings still need examination.
 3. Build draft project criteria rows. There may be dozens of draft rows when broad scanning is needed, but each row must have a possible bearer, use reason, and pattern for the next question.
 4. For each source or starter head, decide whether it is one architecture characteristic, one C.25 Q-Bundle, one Q-Bundle slot, or only source vocabulary.
@@ -167,7 +167,7 @@ ArchitectureCharacteristicImprovementRow@Project:
   modelUseStructureRef?:
   effectiveReferenceScheme:
   referencePlane?:
-  qualificationOrEvaluationWindow:
+  qualificationOrEvaluationWindow?: when the criterion or its use depends on time
   useClass:
   currentArchitectureReadingRefOrQualitativeState:
   evalResultRefs?:
@@ -210,7 +210,7 @@ C.32.ACS governs project criteria-set construction for architecture improvement.
 
 | Requirement | Required result |
 |---|---|
-| `CC-ACS-1` | The criteria set names the described holon, architecture use, and receiving use; every admitted row names its exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and plane, and qualification or evaluation window. |
+| `CC-ACS-1` | The criteria set names the described holon, architecture use, and receiving use; every admitted row names its exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme, applicable plane and any qualification or evaluation window required by the use. |
 | `CC-ACS-2` | Source catalogue, HCS starter pack, draft project criteria rows, optimization indicators, monitored guardrails, and context-only rows remain distinct. |
 | `CC-ACS-3` | The optimization core is small enough to guide the current work. Three to five rows is a heuristic, not a minimum; a larger core needs a use reason, and all binding constraints remain. |
 | `CC-ACS-4` | Each admitted row names a bearer or selected structure. A draft with an unresolved bearer remains a question and cannot guide the dependent architecture choice. |
@@ -236,7 +236,7 @@ C.32.ACS governs project criteria-set construction for architecture improvement.
 | `BearerCarryoverWithoutRebinding` | An engineered-system row is copied to architecture around a Method, local system-role kind, separate System-classification judgment, assignment, or cultural-evolution case without changing the exact bearer, predicate, scale, or admissible use. | Return to HCS only if the described holon family changed. Otherwise stay in ACS and rebind the row to the actual bearer and selected structure; an admitted Method remains its own holon, while a local kind or assignment retains its separate kind. |
 | `LocalGainHidesCounterLoss` | A candidate improves one row while worsening evidence burden, control burden, source-return cost, or functional adequacy. | Add monitored guardrail rows and open `E.13` when proxy-to-value drift appears before comparison or next synthesis. |
 | `ReadingAsDecision` | A better reading is treated as the selected architecture. | Keep the reading as feedback. Use `A.19.CPM` for explicit comparison, `A.19.SelectorMechanism` for set-returning selection, `C.11` for local choice, `G.5` for selected-set result declaration, and `C.32.PAD` for a project architecture decision. For publication, use `E.24.PUB` for the publication occurrence and audience availability, and E.17 when a source-backed face and source return are needed. |
-| `ContextLabelAsRowScope` | A domain, team, project, or bounded-context label is used as if it delimited every criterion row. | Bind each row's exact `U.ClaimScope`, selected A.2.6 context slices, scheme and plane, and window; add a selected model-use structure only when it changes interpretation. |
+| `ContextLabelAsRowScope` | A domain, team, project, or bounded-context label is used as if it delimited every criterion row. | Bind each row's exact `U.ClaimScope`, selected A.2.6 context slices, scheme, applicable plane and any required window, preserving every declared selector; add a selected model-use structure only when it changes interpretation. |
 
 ### C.32.ACS:9 - Consequences
 
@@ -250,7 +250,7 @@ C.32.ACS governs project criteria-set construction for architecture improvement.
 
 ### C.32.ACS:10 - Rationale
 
-Architecture optimization is meaningful only after the criteria are named. ACS supplies that middle object: not a generic quality catalogue, not a starter pack, not a Q-Bundle, not an eval program, and not a decision, but a project criteria set that can guide synthesis, residual reduction, and repeated improvement.
+Architecture optimization is meaningful only after the criteria are named. ACS supplies a project criteria set that can guide synthesis, residual reduction and repeated improvement.
 
 The pattern stays holonic by allowing starter heads to recur across holon families while requiring bearer and scale rebinding. It stays action-facing by limiting optimization indicators and keeping non-optimized criteria rows as guardrails.
 

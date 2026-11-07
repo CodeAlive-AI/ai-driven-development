@@ -1,0 +1,18 @@
+## CAD.Reference:7 - Sources, external suppliers and consequential change
+
+The full source comparisons belong with the affected Methods. CAD.5:11 distinguishes the historical diversity-enabled sweet-spot model, internal prediction and applied-action feedback, bounded-set estimation and stochastic sensor scheduling. DeSS compares complementary components under a task and resource model; IFP concerns a controller's reuse of internal information. Neither establishes the other. The selected bounded-set construction is used because the stated task asks for hard sampled constraints, not because it is universally superior.
+
+CAD.1–CAD.4:11 compare decomposition, reduced-model interfaces, invariant margins, governors, safety filters, inexact computation and switching under their different conditions. A reference governor can preserve a qualified loop; a safety filter changes the applied control law and therefore the error calculation; separate stable switching modes do not establish a common invariant domain. A more recent result matters when it changes the usable construction or comparison, not merely because it has a later date.
+
+| External supplying publication | Contribution used here | Receiving use and return |
+| --- | --- | --- |
+| [FPF Core](../../../sections/03-first-principles-framework-readme/_index.md), C.32.LCA | General construction of complete control-architecture alternatives and their joint conditions | CAD supplies the specialized numerical constructions. A changed general architecture requirement reopens the affected framing, not an unchanged algebraic identity. |
+| FPF Core, C.30.LCA | Adequacy of a control-structure view | A view must expose the information, authority, timing and lower guarantees needed for its use. Its adequacy does not prove a control bound. |
+| FPF Core, A.3.3.PI | Retaining information needed by future prediction and update | CAD.5 constructs a particular sufficient internal state and explains what a reduction must preserve. |
+| FPF Core, C.39 and C.32 | Construction of useful connected ways and whole architecture alternatives | CAD.1 and CAD.4 use those general operations with control-specific models, alternatives and constraints. |
+| [Systems Engineering DPF](../syse/_index.md), SYSE.5 and SYSE.6 | Functional organization, bearer alternatives and the system architecture decision | CAD results can supply that wider work. Control feasibility neither chooses every system bearer nor settles the whole project. |
+| [Mathematical Modeling DPF](../../foundational-thinking-dpf-suite/mmp/_index.md), MMP.9, MMP.18 and MMP.22 | Model reduction, compatible coupled models, and transformation of mathematical operations into workable performance | CAD.1–CAD.4 provide the control-specific receiving operations. A changed model exchange or computational realization reopens the error or deadline premise that uses it. |
+
+These remain external contributions. Core does not require this DPF for its own applications. Select an obtainable edition of a supplying publication and the exact relied-on content before applying it. If a relied-on premise changes, revisit its receiving use. If only the carrier or publication date changes, inspect compatibility rather than assuming either breakage or preservation.
+
+For the domain construction, a changed plant, measurement model, uncertainty, command objective, admitted switching, timing or resource arrangement reopens the dependent calculation. A source correction reopens the particular claim imported from it. Unchanged information, interface or model results remain usable under their original conditions.

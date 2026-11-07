@@ -11,7 +11,7 @@ Use this pattern when a project says that its “methodology”, “process”, 
 
 Begin with the result that is missing, late, unsafe, or too costly and the representative Work in which that result matters. Recover the Methods and candidate accounts already visible there before choosing the level of focus.
 
-The first useful move is to compare four possible focus classes: one Method; an established family or project-local grouping; named Method relations; and a non-Method return. This gives later repertoire, qualification, or architecture Work a supported subject and the relations it needs to address, without inventing a Method or a composite.
+The first useful move is to compare the plausible focus options: one Method, an established family or project-local grouping, named Method relations, or a non-Method return. This gives later repertoire, qualification, or architecture Work a supported subject and the relations it needs to address, without inventing a Method or a composite.
 
 Do not use C.39.MF merely because one tool failed, one practitioner lacks capability, one document is incomplete, or one project, process, or case view is inconvenient. Return that question to its direct subject unless changing a Method would change the receiving result.
 
@@ -64,7 +64,7 @@ Select a focus whose subject and status are supported. Compare what addressing e
 3. **Recover the subjects of the accounts already in use.** For each project, process, case, lifecycle, stage, or workflow description, state what its claims concern, their actual or intended status, the question exposed, and the material omissions. Use `A.15.6` when the label hides the subject. Keep unlike subjects separate; a claimed view additionally needs its exact viewpoint and `E.17.0` conformance result.
 4. **Recover Method-status candidates.** List Methods already identified under `A.3.1`, candidate Method accounts, established family facts, local groupings, related Methods, and support or capability alternatives. Preserve their statuses.
 5. **Form materially different focus options.** Include each plausible one-Method, plurality, relation, and non-Method branch. A renamed package or differently drawn view is not another focus option.
-6. **Test family and relation claims.** Use `G.5` for any maintained family or selector claim and the applicable relation pattern for each direct relation. When no identified whole and obtaining relations exist, retain a relation focus or local grouping rather than a composite.
+6. **Test family and relation claims.** Apply the rule that defines the claimed family and the applicable relation pattern for each direct relation. Use `G.5` when the question needs its Method-family registry or selector-facing result. When no identified whole and obtaining relations exist, retain a relation focus or local grouping rather than a composite.
 7. **Choose and record.** Use `C.11` or a domain decision Method to select one focus for the receiving decision. State rejected options, evidence limits, next useful result, and the observation that reopens the focus.
 
 #### C.39.MF:4.2 - Record the Result
@@ -75,7 +75,7 @@ Select a focus whose subject and status are supported. Compare what addressing e
 | representative Work | Actual or intended Work relevant to the decision, with its result and participant meanings. |
 | accounts used | Each account's direct subject, claim, question, important loss, and effect on the focus; exact viewpoint and conformance result when a view is claimed. |
 | Method-status inventory | Identified Methods, candidate accounts, established family facts, local groupings, related Methods, and non-Method alternatives. |
-| options and choice | Four focus classes considered, selected class and subject, rejected options, basis, and unresolved claims. |
+| options and choice | Plausible focus options, selected class and subject, any rejected options, basis, and unresolved claims. |
 | continuation | Next result needed and one observable reopen condition. |
 
 #### C.39.MF:4.3 - What Changes in Practice
@@ -161,7 +161,7 @@ Reopen the affected rule when a current source or representative use exposes ano
 ### C.39.MF:12 - Relations
 
 - `A.15.6` distinguishes project subjects and routes a Method-of-interest question here.
-- `A.3.1` governs Method identity; `G.5` governs maintained family and selector results; `C.11` governs the bounded focus choice.
+- `A.3.1` governs Method identity; `G.5` supplies Method-family registry and selector-facing results when its entry conditions hold; `C.11` governs the bounded focus choice.
 - C.39.RP may organize a repertoire for a one-Method, plurality, or relation focus. C.39.RQ may state criteria at that same level of focus.
 - A.3.1.QM receives identified Methods and candidate accounts without changing their status. C.32.MWA.PP receives a several-structure question; B.1.5.CM receives one proposed whole only when that question is live.
 - An applicable research Method may explain an identified Method, established family inclusion, or named relations. A local grouping label is not its explanandum.

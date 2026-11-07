@@ -54,7 +54,7 @@ For every serious proposal, explain what the subject or supported arrangement co
 
 When a pattern is the proposed address, cite its complete current body and recover the action-bearing contribution from it. Do not substitute its title, PatternID, a summary card, or a list of topics for that contribution. Keep the body's relevant applicability, assurance, and stopping conditions; the direction need not copy the entire source.
 
-If the receiving claim depends on a Method or MethodDescription, preserve its established relation under [A.3.1](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) and [A.3.2](https://github.com/ailev/FPF/blob/main/FPF-Spec.md). A pattern is a MethodDescription only after A.3.2 establishes an already admitted Method as its exact EntityOfConcern and at least one substantive claim about that Method as a way of doing. Otherwise use its content as pattern guidance and leave that stronger relation unasserted. In neither case does reading or publishing the description establish the subject's capability.
+If the receiving claim depends on a Method or MethodDescription, preserve its established relation under [A.3.1](../03-first-principles-framework-readme/_index.md) and [A.3.2](../03-first-principles-framework-readme/_index.md). A pattern is a MethodDescription only after A.3.2 establishes an already admitted Method as its exact EntityOfConcern and at least one substantive claim about that Method as a way of doing. Otherwise use its content as pattern guidance and leave that stronger relation unasserted. In neither case does reading or publishing the description establish the subject's capability.
 
 For a person, connect the contribution to representative later Work. “Use A.15.9 to formulate and rely on a bounded outside-practice result in evidence review” can specify a contribution; “finish A.15.9” cannot specify capability or transfer. A capability or transfer claim needs qualified evidence about this person, the later Work and permitted support; obtain that result from the relevant capability and subject practice before relying on it.
 
@@ -88,7 +88,7 @@ Use direct holder, engineering, operations, organization, provider, safety, and 
 
 #### C.40.DC:4.5 - Preserve the complete finite-comparison basis
 
-When making a finite contribution comparison, use [C.11.CRC](https://github.com/ailev/FPF/blob/main/FPF-Spec.md). Compare actual or relied-on `S0`, finite `Delta`, and realizable candidate `S1` under one system boundary, receiving decision, horizon, scenarios, constraints, interactions, transition basis, uncertainty, and evidence window.
+When making a finite contribution comparison, use [C.11.CRC](../03-first-principles-framework-readme/_index.md). Compare actual or relied-on `S0`, finite `Delta`, and realizable candidate `S1` under one system boundary, receiving decision, horizon, scenarios, constraints, interactions, transition basis, uncertainty, and evidence window.
 
 Keep four coordinate families visible: useful results; consumed resources; consequences for affected Systems and the distribution of gains and burdens; and explicitly protected conditions. Retain each characteristic's scale and polarity. Do not hide one family in another or average incompatible scales.
 
@@ -118,7 +118,7 @@ Reopen only the affected contribution, support, transition, comparison, or downs
 
 This constructed case concerns Mira's four-month exploration of useful engineering-review Work. The case assumes permitted example packages and a maximum of two inquiry hours per week. The stipulated review record identifies recurring delays from missing outside-practice premises. Her current ability to recognize those missing premises in representative Work is unknown. Independent acceptance, confidentiality, and sustainable workload remain protected.
 
-One lead is “learn A.15.9.” The direction instead cites the complete [A.15.9 body](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) and recovers its contribution:
+One lead is “learn A.15.9.” The direction instead cites the complete [A.15.9 body](../03-first-principles-framework-readme/_index.md) and recovers its contribution:
 
 | Contribution position | What Mira would need to recognize or do in later Work |
 | --- | --- |

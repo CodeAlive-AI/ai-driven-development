@@ -1,0 +1,11 @@
+## PSDA.Advising:6 - Keep a qualified live candidate set
+
+If the useful future contribution itself is unsettled, use the full [opportunity-construction Method (FPF C.40.OCN)](../../sections/09-part-c---kernel-extension-specifications/108-c-40-ocn---construct-a-bounded-opportunity.md). It searches neighboring uses, distinguishes a niche, a proposed provision promise and a worthwhile problem, constructs directions and supports, and exposes dependencies and reachability.
+
+Once candidate opportunities or an adequate formed question exist, use [PSDA.5](22-psda-5---generate-decision-alternatives.md) to make the advice-relevant alternatives explicit. Keep each direction's status explicit: a feasible direction under stated conditions, a conditional opportunity, a candidate probe or a fragment retained for combination. Keep ruled-out configurations and named gaps visible as such, not as eligible alternatives. Do not let an attractive but conditional opportunity enter a decision-ready set as if its dependencies had obtained.
+
+Keep materially different development, access/support, provider, Method/platform, allocation, staged and no-change directions when they matter. These are generation possibilities, not compulsory options. A different way of supplying the same result is not automatically a different worthwhile problem.
+
+[OCE.8](../management-dpf-suite/oce/30-oce-8---compare-human-ai-robotic-and-provider-arrangements-f.md) can supply the organizational same-result arrangement comparison after the required result, receiving use, horizon and acceptance premise are stable enough. It returns a changed or unjustified result premise to its owner; it does not supply this profile's whole opportunity search.
+
+Use C.18 only for an actual generation/archive/front question, with its declared generator, operators, descriptors and retention or comparison basis. Use C.19 only for an actual live pool with a current governing policy. Thin evidence creates neither a default exploration posture nor permission to exploit. A probe needs a useful discriminating question and its own feasible, protected and authorized execution basis; otherwise retain the useful direction or limitation without making another request merely to finish.

@@ -49,7 +49,7 @@ A useful worked example is a compact case with nine visible parts:
 * **Obtaining relation** — a relation supported for these exact participants; its appearance on the page does not create it.
 * **Source basis** — exact source and edition, passage, and effective reference scheme needed by the claim.
 * **Evidence basis** — the observations, source claims and independently established direct relations supporting the conclusion, represented in A.10's descriptive evidence-provenance account with its bounded-reliance disposition. A separately current B.3 assurance claim retains its own result and limits.
-* **Evaluation result** — when the case evaluates a promise or criterion, the result bound by an exact A.6.1 application during evaluation Work, on the result scale declared by the applicable rule.
+* **Evaluation result** — when the case evaluates a promise or criterion, the result of applying its rule to the selected inputs, on the result scale that rule declares. Recover an exact A.6.1 application or dated evaluation Work when the case claims it or the governing evaluation rule requires it.
 * **Receiving use** — the concrete decision, explanation, comparison, or action for which the result is used.
 * **SchemeSenseCell** — the exact F.17 coordinate `<ReferenceScheme by value, LocalExpression, LocalSenseClaim>`. A separate address resolves that coordinate when the receiving use needs it.
 * **Comparison table** — an optional F.7 display of exact entries and already obtaining relations.
@@ -71,7 +71,7 @@ A useful worked example is a compact case with nine visible parts:
 
 6. **Obtaining relations.** For each relation, name its exact participants, direction, basis, and loss. Use F.9 only for a real semantic relation between distinct local meanings. Use the defining or testing pattern for MethodDescription membership, enactment, performed Work, measurement, evidence, fulfilment, kind, assignment, publication, transformation, and any load-bearing indicator relation. If proxy wording names no supported relation, use C.16.P and stop at A.6.RCD `missing-governor`.
 
-7. **Evidence, result, and limits.** Show the independently established direct relations by which observations or sources support the claim. A.10 describes that path and classifies reliance on it for the bounded use; the cited basis must meet the evidence requirement of the claim and its direct rule. When evaluation is part of the case, show the evaluation Work, enacted Method, exact application and result binding, declared result scale, and any separate F.10 status or optional C.2.1 verdict episteme. Use B.3 only for an actual named assurance claim. State the consequential limits of the conclusion.
+7. **Evidence, result, and limits.** Show the independently established direct relations by which observations or sources support the claim. A.10 describes that path and classifies reliance on it for the bounded use; the cited basis must meet the evidence requirement of the claim and its direct rule. When evaluation is part of the case, show the selected inputs, evaluation rule, result and any declared result scale. Recover the evaluation Work, enacted Method and exact application and result binding when the case claims them or its governing rule requires them, including the performance-history branch of A.2.3/F.12 promise evaluation. Add F.10 status and a durable C.2.1 verdict assertion only for their selected uses. Use B.3 only for an actual named assurance claim. State the consequential limits of the conclusion.
 
 8. **Optional comparison surface.** If two or more local meanings or source claims are hard to compare in prose, add one compact F.7 table. State the receiving-use conclusion separately. Omit the table when it adds ceremony but no clarity.
 
@@ -88,7 +88,7 @@ A useful worked example is a compact case with nine visible parts:
 5. **Source precision.** Source and edition and the effective scheme are explicit where wording or interpretation changes the claim.
 6. **Time and object distinctions.** MethodDescription, Work, observation, and output remain distinct; windows are stated when they change the result.
 7. **Agency precision.** Every asserted dated Work uses the performer's recovered A.13 core and independent A.15.1 admission. The core includes its obtaining assignment; add F.6 only when the worked claim needs precise assignment-bound attribution. Recover a separately needed local-kind or description claim under its own rule.
-8. **Evidence, evaluation, and boundary.** The page shows why the claim is supported; when evaluation occurs, it keeps evaluation Work, operation result, declared scale, EvidenceStatus, RequirementStatus, and optional verdict episteme distinct; and it states the consequential limits of the result.
+8. **Evidence, evaluation, and boundary.** The page shows why the claim is supported. An evaluation retains its inputs, rule, result and applicable scale; any claimed or required evaluation Work, exact application, status and durable verdict assertion remain distinct. State the consequential limits of the result.
 9. **Didactic parsimony.** Every item changes the worked answer; optional machinery is omitted when it does not.
 
 ### F.16:7 - Optional comparison panel
@@ -186,7 +186,7 @@ Recover the local system-role kind under A.2 with C.3 and the exact assignment u
 
 **Situation and claim.** A build MethodDescription contains a target duration; dated build Work occurs; observations report actual duration; a service promise is evaluated for a calendar week.
 
-Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and evaluation Work and any Method enactment, C.16 for observations and measured values, A.2.3 and F.12 for promise evaluation, A.6.1 for the exact evaluation application and result binding, A.10 for a descriptive account of independently established evidence relations and bounded reliance, and B.3 only for an actual named assurance claim. Cite the MethodDescription edition only if it changes the result or replay, and state separately whether the Work used it. A comparison table may show promised and observed values, but it establishes neither Work, result, status, nor a verdict episteme.
+Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery Work and any claimed evaluation Work or Method enactment, C.16 for observations and measured values, and A.2.3 with F.12 for promise evaluation. Use A.6.1 when the exact evaluation application and result binding are current; use A.10 for a descriptive account of independently established evidence relations and bounded reliance, and B.3 only for an actual named assurance claim. Cite the MethodDescription edition only if it changes the result or replay, and state separately whether the Work used it. A comparison table may show promised and observed values, but it establishes neither Work, result, status, nor a verdict episteme.
 
 ### F.16:13 - Safe reasoning moves
 
@@ -195,7 +195,7 @@ Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and eval
 3. **Name actual subjects.** Replace vague words with the Systems, epistemes, Methods, Work, claims, observations, values, kinds, or assignments actually involved.
 4. **Route relations.** Name the defining or testing pattern for each relation. For an alleged proxy, first test direct measurement; if a distinct indicator relation is needed and no rule supplies it, return A.6.RCD `missing-governor`.
 5. **Recover local wording.** Cite the source, edition, and scheme; add an F.17 cell only when the receiving use needs a stable local-meaning address.
-6. **Show evidence and evaluation.** Recover the direct evidence-use relations, their descriptive A.10 account and its bounded-reliance disposition. When evaluation occurs, show the evaluation Work, Method, application, result binding, declared scale, separate F.10 status, and optional verdict episteme as applicable; use B.3 only for an actual named assurance claim.
+6. **Show evidence and evaluation.** Recover the direct evidence-use relations, their descriptive A.10 account and its bounded-reliance disposition. When evaluation occurs, show its inputs, rule and supported result with any declared scale. Recover Work, Method and exact application/result bindings when claimed or required by the governing rule; add F.10 status or a durable verdict episteme only for their selected uses. Use B.3 only for an actual named assurance claim.
 7. **Use aids sparingly.** Add an F.7 table only when it lowers reading cost; never infer from layout.
 8. **State limits.** Include direction, loss, window, population, uncertainty, or non-use boundary that changes the conclusion.
 9. **Replay.** Run focused checks for the case's actual failure risks, including result and status separation when evaluation is present.
@@ -212,7 +212,7 @@ Use A.3.2 for MethodDescription membership, A.15 and B.1.5 for delivery and eval
 * **SCR-F16-S06 (optional aids).** Cells and tables are omitted when they do not reduce reader effort; their presence or layout is not treated as evidence.
 * **SCR-F16-S07 (time and agency).** Windows, Work, System, assignment, and attribution are explicit when material.
 * **SCR-F16-S08 (one-page parsimony).** Every included item changes the answer; a larger case is split without losing its basis.
-* **SCR-F16-S09 (evaluation architecture).** When evaluation is present, the performing System, evaluation Work, enacted Method, exact application and result binding, declared result scale, separate EvidenceStatus and RequirementStatus, and optional verdict episteme remain recoverable.
+* **SCR-F16-S09 (evaluation architecture).** When evaluation is present, its inputs, rule, supported result and applicable result scale are recoverable. Any claimed or rule-required performing System, evaluation Work, enacted Method and exact application/result binding satisfy their direct patterns; any selected EvidenceStatus, RequirementStatus or durable verdict assertion remains separate.
 
 #### F.16:14.2 - Regression
 

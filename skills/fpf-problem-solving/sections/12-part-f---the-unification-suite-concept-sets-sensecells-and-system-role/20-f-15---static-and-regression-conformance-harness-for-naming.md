@@ -265,7 +265,7 @@ When a changed value, sense, or use alters row support, preserve the exact earli
 Compare exact F.4 description epistemes and the described kinds' candidate domains, operative membership conditions, intended member/non-member boundaries, continuity rules, current `KindSignature` editions, effective schemes, and claim content. Source or practice provenance is a cue to compare those definitions, not an identity key. A label-only change cannot prove that the described kind or description episteme stayed the same.
 
 **RSCR-F15-E8 (Alias for expression change; direct recovery for meaning change).**
-If only a selected expression changes while the exact value, scheme, sense, and use are preserved, F.13 and F.18 may record an alias or rename. A changed described kind, candidate domain, operative membership distinction, member/non-member boundary, continuity rule, scheme, local sense, or description claim requires the corresponding new object or episteme and a fresh naming settlement. A practice or source change by itself triggers comparison; it proves neither continuity nor a split.
+If only a selected expression changes while the exact value, scheme, sense and use are preserved, F.13 and F.18 may record an alias or rename. When a described kind, candidate domain, membership distinction, boundary, continuity rule, scheme, local sense or description claim changes, recover the affected object or episteme under its subject rule. Reopen the naming settlement when that change affects the named value, interpretation or receiving use; reuse an unaffected settlement. A practice or source change by itself triggers comparison and proves neither continuity nor a split.
 
 #### F.15:11.5 - Bridges and bounded uses
 
@@ -357,7 +357,7 @@ F.15 result:
 * RSCR-F15-E7 compares the two exact description epistemes and the described local system-role kind.
 * RSCR-F15-E8 permits F.13/F.18 alias or rename treatment only for expression change with value, scheme, sense, and use preserved.
 * F.18 updates the NameCard; F.17 updates a public row only if that row use is current and its gate passes.
-* If the described system-role kind or description claim changed, F.4 and the naming patterns create the corresponding new objects; F.15 does not declare continuity.
+* If the described system-role kind or description claim changed, F.4 and C.2.1 identify the affected value or episteme; F.18 rechecks naming when the change affects its value, interpretation or use. F.15 does not infer continuity from the label.
 
 #### F.15:13.4 - Partial Bridge later claimed as equivalence
 
@@ -382,7 +382,7 @@ F.15 result:
 
 ### F.15:13.6 - Bias-Annotation
 
-F.15 blocks unification bias: shared spelling, table membership, a stable id, an earlier pass, a Bridge description, or a NameCard is not common meaning or continuity proof. It also blocks harness-authority bias: the record does not perform the check, create a result, turn witnesses into evidence use, publish itself, or absorb a failed system-role-kind, assignment, status, relation, work, evidence, assurance, or naming claim.
+F.15 counters unification bias by comparing actual definitions, local senses and continuity grounds. Shared spelling, table membership, a stable id, an earlier pass, a Bridge description or a NameCard does not establish common meaning or continuity.
 
 ### F.15:14.5 - Conformance Checklist
 
@@ -442,7 +442,7 @@ Closure is local. A later change reopens only the affected rule results and thei
 
 ### F.15:15.2 - Rationale
 
-Cross-local reuse is useful only after exact locality and relation truth are preserved; regression is useful only when it compares real earlier/later objects for a named use. F.15 therefore checks a finite joint slice without defining another ontology or naming protocol, performing assessment Work, establishing evidence relations, publishing content, or creating a global status system.
+Cross-local reuse depends on the exact local meanings and supported relation; regression compares the relevant earlier and later values for a named use. F.15 brings those checks together in a finite slice and returns unresolved subject questions to the patterns that can settle them.
 
 ### F.15:17 - SoTA-Echoing
 
@@ -464,7 +464,7 @@ Currentness rule: when the defining or testing rule for a value—or F.17/F.18, 
 * **F.9, C.2.1, A.10, and B.3.** Govern actual Bridge occurrences, separate bounded-use claims, evidence reliance, and assurance. Descriptions, Cards, `CL`, and witnesses are not relation truth or use authority.
 * **F.10 or the applicable status pattern.** Use it for status family, value, target, scope, window, source, and use claims.
 * **A.1.1 and A.22.** Supply an optional independently selected bounded-model-use Structure only when its organization changes the checked use; description and membership remain separate.
-* **A.13, A.15.1, F.6, and A.6.1.** A.13 recovers each exact actual performer and A.15.1 independently admits dated Work; F.6 adds only an expressly consumed precise assignment-bound attribution through the same obtaining A.13 assignment, and A.6.1 governs exact rule application. Ordinary checking need not be admitted as `U.Work`, and missing or failed F.6 leaves any independently admitted Work intact.
+* **A.13, A.15.1, F.6, and A.6.1.** A.13 recovers each exact actual performer and A.15.1 independently admits dated Work; F.6 adds only an expressly consumed precise assignment-bound attribution through the same obtaining A.13 assignment, and A.6.1 governs exact rule application. Ordinary checking need not be admitted as `U.Work`, and missing or failed F.6 alone leaves independently admitted Work intact. Recheck any admission premise invalidated by the same finding, with its dependent conclusions, under F.6:4.2.
 * **E.24.PUB and G.11.** Govern publication occurrence/form/carrier and currentness separately from the checked record.
 * **C.34.** Supplies architecture-specific preservation or equivalence adequacy when exact selected architecture structures and losses are the live subject; F.15 carries only the finite regression check and result refs.
 

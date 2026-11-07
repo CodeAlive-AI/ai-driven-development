@@ -55,7 +55,7 @@ An ordinary two-sentence account is enough:
 
 Name the later option or reachable region, the proposed enabling transition, and the evidence connecting the step to that later use. Ask what becomes possible, less costly, or better qualified because of this step, and what could show that the connection fails.
 
-When a later opportunity is still unknown, a smaller retention claim may suffice: keep an examined construction for an affordable next question. [C.40](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies the development and continuation Method. Preserve the material, operation and conditions that let someone try that continuation. Judge its burden against what the next answer could change; do not invent a distant payoff or call this a qualified path to an unnamed opportunity.
+When a later opportunity is still unknown, a smaller retention claim may suffice: keep an examined construction for an affordable next question. [C.40](../03-first-principles-framework-readme/_index.md) supplies the development and continuation Method. Preserve the material, operation and conditions that let someone try that continuation. Judge its burden against what the next answer could change; do not invent a distant payoff or call this a qualified path to an unnamed opportunity.
 
 Keep a *candidate stepping stone* distinct from one whose retention is justified under the stated policy. A plausible connection may justify a bounded inquiry, but does not by itself justify performing the step. State the value, burden, delay, uncertainty, and protected conditions that make retention worthwhile for this use.
 
@@ -69,7 +69,7 @@ For every material step in a path or branch, name its own starting configuration
 
 Recover what the starting configuration inherits: established or still-conditional capability, support, access, ongoing Work, resource demand, remaining uncertainty, and effects of earlier choices. If the earlier step has not occurred, the later starting configuration is conditional too. If the path can branch, name the condition that distinguishes the continuations and the stop when neither is supported.
 
-State each step's transition burden, reversibility, and effects on later options. Do not repeatedly credit the full difference from the original configuration as each later step's contribution. Use [C.11.CRC](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) for finite comparisons with the complete relevant result, resource, affected-System/distributional, and protected coordinates. Each coordinate keeps its own scale and polarity under the common comparison basis. When step horizons or scenarios differ, obtain an adequate mapping or keep those comparison claims separate.
+State each step's transition burden, reversibility, and effects on later options. Do not repeatedly credit the full difference from the original configuration as each later step's contribution. Use [C.11.CRC](../03-first-principles-framework-readme/_index.md) for finite comparisons with the complete relevant result, resource, affected-System/distributional, and protected coordinates. Each coordinate keeps its own scale and polarity under the common comparison basis. When step horizons or scenarios differ, obtain an adequate mapping or keep those comparison claims separate.
 
 Use C.40.JF to qualify the jointly necessary transitions, shared resources, timing, and inherited obligations. A sequence of individually plausible steps remains a conditional path until the necessary joint basis exists. Return a missing holder, access, support, or implementation result through A.15.9. Do not substitute a path diagram for the supplying practice's conclusion.
 
@@ -87,11 +87,11 @@ Stop expanding the account when the next missing result belongs to a holder prac
 
 #### C.40.OP:4.5 - Use archive, front, and pool treatment only for their actual questions
 
-Use [C.18 — Open-Ended Search Archive and Front Stewardship](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when generation or retention actually needs a search archive, front, descriptor space, lineage, or exploration policy. Its archive preserves exploration or stepping-stone value; its front reports current non-domination under a declared comparator and admissibility. Neither return is a recommendation, selected-set declaration, or work permission.
+Use [C.18 — Open-Ended Search Archive and Front Stewardship](../03-first-principles-framework-readme/_index.md) when generation or retention actually needs a search archive, front, descriptor space, lineage, or exploration policy. Its archive preserves exploration or stepping-stone value; its front reports current non-domination under a declared comparator and admissibility. Neither return is a recommendation, selected-set declaration, or work permission.
 
 For generation, recover the generator, operators, descriptors, source/lineage, and retention basis that matter. Claim a changed possibility space only when that stronger claim changes the inquiry. A newly visited region under the same effective generation conditions is exploration, not evidence of expansion. Use C.18 for the earlier and candidate space declarations, changed component, supported mode, evidence, and blocked overread; causal claims require the direct causal result.
 
-Use [C.19 — Explore–Exploit Governor](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when the current question is how to treat a still-live pool under its declared policy: widen it, keep its frontier, narrow it to a subset, or sunset a line. The policy may remain unchanged while that treatment question becomes current. Selecting the next local candidate or probe is a different question, as are generating a variant, declaring a selected set, and enacting Work.
+Use [C.19 — Explore–Exploit Governor](../03-first-principles-framework-readme/_index.md) when the current question is how to treat a still-live pool under its declared policy: widen it, keep its frontier, narrow it to a subset, or sunset a line. The policy may remain unchanged while that treatment question becomes current. Selecting the next local candidate or probe is a different question, as are generating a variant, declaring a selected set, and enacting Work.
 
 Ordinary opportunity retention does not require all those practices. A few descriptions with recoverable reasons and conditions can be enough.
 

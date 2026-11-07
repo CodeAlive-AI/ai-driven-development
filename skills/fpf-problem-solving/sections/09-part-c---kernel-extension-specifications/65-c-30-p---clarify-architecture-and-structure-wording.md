@@ -99,7 +99,7 @@ ArchitectureOrStructureRepairNote:
   relationFunctionClaimRef:
   repairedWordingOrDemotion:
   admissibleUse:
-  nonAdmissibleUse:
+  nonAdmissibleUse?:
   remainingReaderUse:
   disposition:
 ```

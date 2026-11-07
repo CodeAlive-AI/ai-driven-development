@@ -4,7 +4,7 @@
 
 **Use this when.** Use F.17 when an independently governed value has a settled durable name and public, Core-facing, durable, or cross-local reuse needs a reader-facing term row.
 
-**First useful move.** Point to the exact governed value, its kind, the pattern that defines or constrains it, one proposed row use, and the selected Tech and Plain designations. Then apply F.14 at the row gate. If no durable row is needed, reuse the designation, alias, local expression, or name already supplied for that value and stop.
+**First useful move.** Point to the exact governed value, its kind, the pattern that defines or constrains it, one proposed row use, the selected Tech designation and any Plain designation needed for that use. Then apply F.14 at the row gate. If no durable row is needed, reuse the designation, alias, local expression or name already supplied for that value and stop.
 
 **Primary working object.** One C.2.1 `UnifiedTermRow` episteme whose exact EntityOfConcern is the independently governed value. Its claim graph cites the separate F.18 naming-settlement episteme and selected designation expressions. Section 5.1 explains the identities and relations needed to recover this decision and distinguish the row from its publication.
 
@@ -62,8 +62,8 @@ The practical problem is to make one durable naming decision recoverable without
 Recover the naming objects needed for the declared reuse, then constitute a row only when its separate gate is met:
 
 1. **Recover the value.** Identify one exact already-governed value or relation, its kind, the pattern that defines or constrains it, its identity or obtaining semantics, and one proposed use. Split a mixed candidate before naming.
-2. **Run the anti-explosion gate.** Apply F.14 before minting a card, cell, row, or family. Try no durable name, an existing designation, an alias, a local expression, a name already used for the value, and an admitted existing-row name. Stop at the first sufficient disposition.
-3. **Settle only the durable name that is needed.** If one expression remains unresolved, use F.8. If a durable naming settlement is justified, F.18 constitutes one C.2.1 NameCard and selects Tech and Plain designations. The card creates neither the value nor its kind and does not require a cell or row.
+2. **Apply the anti-explosion gate.** Use F.14 to establish what the receiving use needs before minting a card, cell, row or family. Reuse an adequate local expression, existing designation, alias or admitted row directly. A stronger object needs a contribution that those adequate treatments do not supply.
+3. **Settle only the durable name that is needed.** If one expression remains unresolved, use F.8. If a durable naming settlement is justified, F.18 constitutes one C.2.1 NameCard and selects the Tech designation and any Plain designation needed for a stated didactic use. The card creates neither the value nor its kind and does not require a cell or row.
 4. **Address a local sense only when useful.** Create one `SchemeSenseCell` only when the exact local expression and sense claim need a stable address under an effective by-value `ReferenceScheme`. Cite a selected bounded-model-use Structure only when its organization changes this exact naming use. The cell does not require a NameCard or row.
 5. **Open the public-row gate independently.** Apply F.14 again when public, Core-facing, durable, or cross-local reuse needs a row. The current F.18 public-row interface supplies the exact NameCard, selected designations, governed value and kind, the locator for its defining or constraining pattern, effective scheme, and exact cell. None of those inputs alone requires the row.
 6. **Add a Bridge only for an actual cross-local relation.** Compare the exact `<ReferenceScheme, LocalSenseClaim>` projections. When the proposed row use relates different projections, cite an obtaining F.9 Bridge between the exact cells and separately cite the affirmative C.2.1 use claim plus its current A.10 or B.3 reliance. Same spelling, scheme difference, or cell presence proves no Bridge.
@@ -123,7 +123,7 @@ UnifiedTermRow <: U.Episteme:
   GovernedValueKindRef: U.KindRef
   SubjectPatternLocator: U.EntityRef resolving the pattern that defines or constrains the governed value
   UnifiedTechName: selected Tech designation expression
-  UnifiedPlainName: selected Plain designation expression
+  UnifiedPlainName?: selected Plain designation expression for a stated didactic use
   NameCardRef: U.EpistemeRef resolving the separate exact F.18 naming-settlement episteme
   SenseCellRefs[]: exact SenseCellAddressRefs
   BridgeRefs[]?: actual F.9 Bridge occurrences only
@@ -154,7 +154,7 @@ When a selected row edition must be made available, E.24.PUB supplies `Publicati
 
 `GovernedValueRef` and `GovernedValueKindRef` are separate. A kind token has kind `U.Kind`. An exact local system-role kind, obtaining system-role-assignment or other relation occurrence, status value, slot kind, representation position, or local concept retains its own kind; the row points to the pattern that defines or constrains that value. A row or card cannot admit a U-kind or make a direct relation obtain.
 
-`NameCardRef` resolves the F.18 C.2.1 naming-decision episteme consumed by the current public-row gate. `UnifiedTechName` and `UnifiedPlainName` are designation expressions selected by that decision, not values or references. Aliases and rejected candidates stay in the NameCard or local lexicon rather than becoming rival selected names in the row.
+`NameCardRef` resolves the F.18 C.2.1 naming-decision episteme consumed by the current public-row gate. `UnifiedTechName` and any `UnifiedPlainName` are designation expressions selected by that decision, not values or references. Aliases and rejected candidates stay in the NameCard or local lexicon rather than becoming rival selected names in the row.
 
 `BridgeRefs` cites only actual F.9 occurrences between exact cells. Direction, use-specific rule, loss tolerance, polarity, evidence, reliance, permission, and receiving action remain in their own claims and relations. Local senses do not globalize; same spelling or a different scheme provides neither governed-value identity nor Bridge obtaining.
 
@@ -189,7 +189,7 @@ Use these positions when they are current. Presence means that the exact referen
 | `Defining or constraining pattern` | yes | Pattern whose rules define or constrain the value, its kind, its identity, or any obtaining semantics used by the row. |
 | `Reference scheme` | yes | Effective by-value naming `ReferenceScheme` used in this row's C.2.1 constitution. |
 | `Unified Tech name` | yes | Selected Tech designation expression. |
-| `Unified Plain name` | yes | Selected Plain designation expression. |
+| `Unified Plain name` | when needed for a stated didactic use | Selected Plain designation expression for the same governed value and local meaning. |
 | `SenseCellRefs` | one or more | Exact scheme-based local-sense coordinates needed by this row. |
 | `BridgeRefs` | only for an actual cross-local relation used by the row | Exact obtaining F.9 occurrences; the separate use claim and reliance stay in rationale or notes. |
 | `Row rationale` | yes | Why these projections form one row decision. |
@@ -247,8 +247,8 @@ Use these checks before citing a row outside its immediate sheet.
 | UTS-SCR-01 | The row resolves to one C.2.1 row episteme whose EntityOfConcern is one exact governed value; it points separately to that value's kind, the pattern that defines or constrains it, and the exact F.18 naming-settlement episteme. |
 | UTS-SCR-02 | One row carries one naming decision and one governed value/use branch; mixed values or independently different uses are split. |
 | UTS-SCR-03 | Every local sense resolves to one exact by-value ReferenceScheme, local expression, and local-sense claim; id, description, source publication, card, or basis relation replaces none of them. |
-| UTS-SCR-04 | F.14 was applied before the current card, cell, and row; the light dispositions—no durable name, existing designation, alias, local expression, a name already used for the value, and admitted row reuse—were tested first. |
-| UTS-SCR-05 | The Tech and Plain designation expressions agree with the exact current F.18 NameCard without becoming the governed value; aliases and rejected candidates remain separate. |
+| UTS-SCR-04 | Each current card, cell and row meets a receiving need under F.14. Adequate ordinary wording or existing naming is reused where it supplies that result. |
+| UTS-SCR-05 | The Tech designation and any Plain designation agree with the exact current F.18 NameCard without becoming the governed value; aliases and rejected candidates remain separate. |
 | UTS-SCR-06 | Any cited `LocalSenseBasisRelation` has only its exact cell and basis episteme as participants; source-unit and publication facts remain qualifiers or neighboring objects. |
 | UTS-SCR-07 | Apply all four Bridge probes: same scheme plus same `LocalSenseClaim` plus another expression is a designation question and adds no Bridge; for the same scheme plus a different claim, use F.9 and, only for a named row use, the separate use-claim/reliance branch; a different scheme opens only the Bridge question and establishes none; no current correspondence use creates no Bridge or use claim regardless of scheme count. |
 | UTS-SCR-08 | Any cited F.9 Bridge has exact endpoint cells and editions, an applicable relation-semantic profile, a true kind-defined predicate, and every required dependency. The separate affirmative C.2.1 use claim states direction, correspondence rule, and loss tolerance, with current A.10 or B.3 reliance. A negative use claim rejects that exact row use; non-passing reliance stops or narrows it; neither negates or reidentifies an otherwise obtaining Bridge. |
@@ -270,7 +270,7 @@ Recheck only the rows affected by the changed object, name, scheme, sense, Bridg
 | UTS-RSCR-02 | The defining or constraining rule changes the underlying value kind or admissible use | Recheck the governed value, its kind, the applicable pattern, admitted use, and blocked use. |
 | UTS-RSCR-03 | F.18 changes the selected name or NameCard decision | Recheck Tech name, Plain name, NameCardRef, aliases, coordinate expression, and rationale. |
 | UTS-RSCR-04 | F.9 changes a Bridge endpoint or relation-semantic profile, or C.2.1/A.10/B.3 changes the bounded-use claim or reliance basis | Apply F.9:16 to changed endpoints or a changed profile, then reconsider every row use that depends on that Bridge. A changed direction, rule, tolerance or polarity changes the use claim; changed evidence or reliance reopens its support. Update affected references, rationale and notes; retain the Bridge and row uses whose grounds remain valid. |
-| UTS-RSCR-05 | Row relocation between blocks | Keep the row id stable and state that relocation between blocks has no ontological force. |
+| UTS-RSCR-05 | Row relocation between blocks | Keep the row id and meaning stable; clarify the new grouping if it could change the reader's interpretation. |
 | UTS-RSCR-06 | A system-role, status, evidence, source, publication, or description row is reused under another semantic-context projection or by another reader group | Recheck the pattern that defines or constrains the governed value, the exact sense coordinate, and any required Bridge before reuse. |
 
 ### F.17:12 - Archetypal Grounding - worked cases
@@ -363,7 +363,7 @@ LocalSenseBasisRelationDescription.BoundedModelUseStructure.FPFCore.2026-07-25:
   editionId: 2026-07-25
 ```
 
-This row records `BoundedModelUseStructure` for public reuse; availability of its selected edition requires the separate E.24.PUB publication relations. A.22 keeps its cross-structure NameCard local until an independently governed crossing obtains and the exact positive membership basis is available. That conditional label needs its own public-row decision when those conditions are met.
+This row records `BoundedModelUseStructure` for public reuse; availability of its selected edition requires the separate E.24.PUB publication relations. A.22 retains `CrossContextRelationStructure` as a provisional local designator and governs when a positive structure member may be claimed. Any later naming settlement or public row must be established for its exact governed value under F.18 and the row gate.
 
 #### F.17:12.4e - Three bounded-model-use direct relation-kind rows
 
@@ -711,7 +711,7 @@ Each row retains its C.2.1 episteme identity and refers separately to the govern
 
 #### F.17:12.4g - Make a settled row available only through a separate publication operation
 
-Do not perform an E.24.PUB publication operation on a placeholder. First require the governed value, its lexical classification, the reference scheme's selected name and permitted scope, and the intended reader use to pass F.18 and the ordinary F.17 row gate. If any input is unresolved, keep it as naming work rather than representing it as a current row. Only when an exact audience and bounded availability use are current should E.24.PUB make the selected row edition available through a distinct form and carrier.
+Do not perform an E.24.PUB publication operation on a placeholder. First require the governed value, its lexical classification, the reference scheme's selected name and permitted scope, and the intended reader use to pass F.18 and the ordinary F.17 row gate. If any input is unresolved, keep it as naming work rather than representing it as a current row. When availability is current, state how the selected row edition is available to its audience for the bounded use through an expression and carrier. E.24.PUB governs that claim at its required granularity; name reusable-form conformance only when it matters.
 
 A NameCard, scheme-sense cell, basis relation, row reference, or E.24.PUB occurrence substitutes for none of those decisions. Keep predicate definition, actual use, basis analysis, naming settlement, row admission, and downstream availability separate.
 
@@ -969,7 +969,7 @@ F.17 blocks table-bias: a row does not make the named object real, global, reusa
 | Check | Passing condition |
 | --- | --- |
 | `CC-F17-1` | One exact governed value, its kind, the pattern that defines or constrains it, and the proposed row use were recovered before the row. |
-| `CC-F17-2` | F.14 was applied at every current card, cell, and row gate, and the lightest sufficient naming disposition was tried first. |
+| `CC-F17-2` | Each current card, cell and row has a receiving need under F.14; an already adequate lighter treatment is reused. |
 | `CC-F17-3` | Row episteme, NameCard, designation expressions, governed value, reference, exact SenseCell, basis relation, and any F.9 Bridge remain distinct. |
 | `CC-F17-4` | Every cell resolves to an effective by-value ReferenceScheme, exact expression, and local-sense claim; no generic context field or selected structure substitutes for them. |
 | `CC-F17-5` | Every actual `LocalSenseBasisRelation` has exactly the cell and basis episteme as participants; descriptions, source units, publication occurrences, forms, and carriers stay separate. |
@@ -990,7 +990,7 @@ F.17 blocks table-bias: a row does not make the named object real, global, reusa
 | Spelling or suffix identity | Lets a familiar label, stable id, or `...@Context` form create or merge values. | Resolve the value under the pattern that defines or constrains it and treat only tokens fixed there as lineage. |
 | Borrowed locality label as Tech name | Imports one tradition's commitments into the row and hides the effective interpretation basis. | Recover the governed value and scheme-based cell; select the designation under F.18 and cite an actual F.9 Bridge only when its separate predicate and use conditions hold. |
 | Basis by source title | Replaces the exact cell and actual basis relation with a file or citation. | Recover the cell and two-participant basis relation; keep source-unit and publication facts separate. |
-| Row as publication | Treats table presence, rendering, upload, form, or carrier as availability. | Use E.24.PUB for the selected row edition, audience, bounded use, form, and carrier. |
+| Row as publication | Treats table presence, rendering, upload, form or carrier alone as availability. | Establish E.24.PUB availability for the selected row edition, audience and bounded use through its expression and carrier; include reusable-form conformance when needed. |
 | Block as ontology or completeness proof | Treats navigation as subtype structure or row count as value evidence. | Keep blocks optional and judge the exact row use through reader recovery and blocked-use avoidance. |
 | Row without its defining or constraining pattern | Lets F.17 govern the named object. | Point to the pattern that defines or constrains the value or stop the public-row path. |
 
@@ -999,14 +999,14 @@ F.17 blocks table-bias: a row does not make the named object real, global, reusa
 One row is ready for its declared citation use only when:
 
 - the governed value, exact kind, the pattern that defines or constrains it, and the proposed use are explicit;
-- F.14 has found the lighter dispositions insufficient for the declared use before the current card, cell, and row are constituted;
-- the exact F.18 NameCard and selected Tech/Plain designations are current for this public-row gate;
+- each current card, cell and row supplies a receiving need established under F.14;
+- the exact F.18 NameCard, selected Tech designation and any Plain designation are current for this public-row gate;
 - every `SchemeSenseCell` resolves to one by-value ReferenceScheme, local expression, and local-sense claim;
 - every relied-on local-sense basis is an actual two-participant `LocalSenseBasisRelation` and every description/source/publication object remains separate;
 - any cross-local use cites an obtaining F.9 Bridge for the exact endpoints, then a separate affirmative use claim and current A.10 or B.3 reliance;
 - the row has one decision, an admitted citation use, any grounded blocked-use claim, an edition designator, and a reopen condition;
 - any historical continuation is an exact C.2.1 `EpistemeEditionRelation` rather than shared id or title;
-- any availability is an exact E.24.PUB publication package rather than row, form, carrier, rendering, or upload alone; and
+- any claimed availability has E.24.PUB grounds at the granularity asserted; an ordinary availability statement is sufficient when no finer identity or change question is current; and
 - every ontology, obtaining, equivalence, authority, system-role-kind, assignment, relation-position, status, evidence, Work, and other subject-use claim uses the pattern that defines, constrains, or tests it.
 
 No other row needs to be filled before this one can close. A sheet's row count or optional block plan says nothing about whether another naming decision is substantively needed.

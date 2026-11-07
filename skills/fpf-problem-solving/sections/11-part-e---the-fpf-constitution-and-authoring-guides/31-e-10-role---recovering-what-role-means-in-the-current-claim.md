@@ -25,7 +25,7 @@ For example:
 
 **Not this pattern when.** Keep ordinary or quoted wording unchanged when no FPF claim relies on the word. When the object and its direct pattern are already clear, use that pattern directly. Use `A.6.RSIR` when the unresolved question is specifically about participation in a direct relation, a relation declaration, an interface, or a representation position.
 
-`ROLE` remains in this PatternID because it is the ambiguous source word that opens this recovery. It is not a Tech designation for one governed object and is not a naming precedent.
+
 
 ### E.10.ROLE:1 - Problem Frame
 
@@ -69,8 +69,8 @@ If recovery shows that the same bounded phrase carries several distinct claims a
 | One exact local work-facing system-role kind, or a technical claim that one admitted system counts under it | For kind recovery, use C.3 and A.2 to identify one exact local system-role kind through its candidate domain, membership distinction and continuity rule; a durable local designation normally ends in `...SystemRole`, for example `ReviewerSystemRole`. For a current classification judgment, use A.2 and C.3.2 and keep the admitted candidate system, exact kind, current `KindSignature` edition, context slice, and `true | false | unknown` result recoverable. Kind admission is not the classification judgment. |
 | One obtaining assignment of an admitted system to that kind | Recover one occurrence of an exact direct species under `U.SystemRoleAssignment` through A.2.1. Assignment creates neither system admission, another classification, capability, participation, responsibility, nor Work. |
 | “The system as reviewer” or similar readable designation | Keep the readable actor designation when it carries the needed ordinary claim. Recover exact system identity, a separately obtaining classification, or an assignment only when the receiving claim uses that distinction. Create no `SystemInRole` individual. |
-| Participant meaning or actual participant of a direct relation | Use `A.6.RSIR` and the pattern for that direct relation. State the participant meaning and actual participant without calling either a system role. |
-| One place in a declaration, for example a source-named field, argument, result, endpoint, slot, or port | Use `A.6.RSIR`, followed by A.6.5, A.6.1, or the exact interface pattern. Recover `SlotKind`, `SlotSpec`, an argument or result declaration, or the interface term rather than `SystemRole`. |
+| Participant meaning or actual participant of a direct relation | Use the pattern for that direct relation. Use `A.6.RSIR` only while the participation or its rule remains unclear. State the participant meaning and actual participant. |
+| One place in a declaration, for example a source-named field, argument, result, endpoint, slot, or port | Use A.6.5, A.6.1, or the applicable interface rule for the recovered declaration. Use `A.6.RSIR` only for a remaining ambiguity. Recover the `SlotKind`, `SlotSpec`, argument or result declaration, or interface term that the claim needs. |
 | One position in a representation, for example a tuple component, formula argument, graph endpoint, diagram place, schema field, or call position | Use the pattern for the selected representation; use C.29 for a mathematical-lens correspondence when that use is current. The position is neither participant meaning nor system-role kind. |
 | Another object or relation, for example participation, functioning, capability, Method, Work, obligation, permission, access, authority, responsibility, position, result, or status | Use the direct pattern and relation for that claim. If exact participants are known but no current direct relation closes the use, return the exact `missing-governor` result through A.6.RCD. |
 | A use of an episteme, for example when a report, standard, dataset, description, model, or publication “plays a role” | Recover the exact evidence-use, source-use, description-use, publication-use, reliance, status-use, or other direct relation. The episteme does not become a system-role holder. |
@@ -89,7 +89,7 @@ Ordinary repaired wording is enough. This example assumes that the source establ
 ```text
 source sentence: the report played a role in approval
 recovered sentence: reviewers used Report-R as evidence for ApprovalClaim-C
-applicable rule: A.10 evidence-provenance account
+applicable rule: the established evidence-use relation; A.10 only if its source-to-use account remains implicit or must be replayed
 blocked overread: Report-R has no system-role assignment by this claim
 stop: ApprovalClaim-C remains the current question
 ```
@@ -104,7 +104,7 @@ No separate repair record is required unless another named use must inspect or r
 
 #### E.10.ROLE:5.2 - A Report Plays a Role in Approval
 
-The report is an episteme. For the evidence-use reading established by the source, write “reviewers used Report-R as evidence for ApprovalClaim-C”, then use A.10 for the evidence-provenance account and B.3 only when an actual named assurance claim is current, including when an applicable material-reliance threshold requires that claim.
+The report is an episteme. For the evidence-use reading established by the source, write “reviewers used Report-R as evidence for ApprovalClaim-C” and keep the support and limits needed for that claim recoverable. Use A.10 when the source-to-use account remains implicit or the receiving use needs it replayed. Use B.3 only when an actual named assurance claim is current, including when an applicable material-reliance threshold requires it.
 
 #### E.10.ROLE:5.3 - API Provider Role
 

@@ -64,7 +64,7 @@ Use variations that have a reason in the work. The following are common ways to 
 
 A variation can change the original task. Preserve that change explicitly: restricting a claim to trees may give a valid result while leaving the original request about all graphs unanswered. If the broader request still matters, keep it as an unresolved question.
 
-These variations can be combined or repeated. Their purpose is to expose a useful answer, not to fill a catalogue of question types.
+These variations can be combined or repeated. Their purpose is to expose a useful answer.
 
 When requirements appear incompatible, B.5.QD.CF recovers the premises producing the conflict and asks what other construction could satisfy the retained need. It distinguishes changing an assumed means or representation from changing a requirement, and can return a useful impossibility when the conditions must remain.
 

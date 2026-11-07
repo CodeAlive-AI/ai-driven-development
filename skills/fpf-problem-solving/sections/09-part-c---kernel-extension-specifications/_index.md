@@ -5,7 +5,6 @@
 | **Cluster C.I – Core CALs / LOGs / CHRs**    |                                    |     |                                                                      |
 | C.1                                          | **Sys‑CAL (planned)**              | CAL | Planned consolidation of physical-system composition, conservation, and resource-flow guidance currently governed by A.1, A.14, A.22, A.3.4, B.1.6, and C.16. |
 
-
 ## Contents
 
 - [C.2 - Epistemic holon composition (KD-CAL)](01-c-2---epistemic-holon-composition.md) (113 lines) — Use this when you need to combine epistemes for a claim and intended use, or determine what an epistemic change or proposed substitution preserves.
@@ -41,27 +40,27 @@
 - [C.16.P - Restore Precision to Characteristic and Scale Wording](31-c-16-p---restore-precision-to-characteristic-and-scale-wordi.md) (204 lines) — Type: Characterization precision-restoration pattern
 - [C.16.Q - Quality-Term Precision Restoration](32-c-16-q---quality-term-precision-restoration.md) (781 lines) — Type: Characterization precision-restoration pattern
 - [C.17 - Characterising Generative Novelty and Value](33-c-17---characterising-generative-novelty-and-value.md) (388 lines) — Type: Evaluation and measurement-use pattern; normative where stated.
-- [C.18 - Open-Ended Search Archive and Front Stewardship](34-c-18---open-ended-search-archive-and-front-stewardship.md) (315 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
-- [C.18.1 - Scaling‑Law Lens Binding (SLL)](35-c-18-1---scaling-law-lens-binding.md) (137 lines) — Use this pattern when. Use C.18.1 when a generator, selector, method family, benchmark, or comparison claims that behavior changes with scale—for example, with resource budget, data, model capacity,...
-- [C.19 - Explore-Exploit Live-Pool Governor](36-c-19---explore-exploit-live-pool-governor.md) (408 lines) — Normativity: Normative
+- [C.18 - Open-Ended Search Archive and Front Stewardship](34-c-18---open-ended-search-archive-and-front-stewardship.md) (317 lines) — Tech-name: OpenEndedSearchArchiveAndFrontStewardship
+- [C.18.1 - Scaling‑Law Lens Binding (SLL)](35-c-18-1---scaling-law-lens-binding.md) (139 lines) — Use this pattern when. Use C.18.1 when a generator, selector, method family, benchmark, or comparison makes an empirical claim that behavior changes with scale—for example, with resource budget,...
+- [C.19 - Explore-Exploit Live-Pool Governor](36-c-19---explore-exploit-live-pool-governor.md) (419 lines) — Normativity: Normative
 - [C.19.1 - Bitter‑Lesson Preference (BLP)](37-c-19-1---bitter-lesson-preference.md) (170 lines) — State the empirical Bitter Lesson narrowly: in search, learning, planning, and related computational work, general methods able to use increasing compute or data have often displaced hand-engineered...
-- [C.19.2 - Use-Bounded Apparatus Application](38-c-19-2---use-bounded-apparatus-application.md) (178 lines) — Type: Architectural (A)
-- [C.20 - Composition of U.Discipline (Discipline-CAL)](39-c-20---composition-of-u-discipline.md) (358 lines) — Use this pattern when a team needs to decide whether an apparent field is one durable practice-and-knowledge whole rather than a convenient label or collection. Typical moments include:
+- [C.19.2 - Use-Bounded Apparatus Application](38-c-19-2---use-bounded-apparatus-application.md) (173 lines) — Type: Architectural (A)
+- [C.20 - Composition of U.Discipline (Discipline-CAL)](39-c-20---composition-of-u-discipline.md) (357 lines) — Use this pattern when a team needs to decide whether an apparent field is one durable practice-and-knowledge whole rather than a convenient label or collection. Typical moments include:
 - [C.21 - Field Health & Structure (Discipline-CHR)](40-c-21---field-health-structure.md) (265 lines) — Purpose. Give FPF a typed, reviewable way to characterize the health, maturity, and structure of a scientific or engineering discipline without collapsing the result into taste, anecdotes, a...
 - [C.22 - Task Typing and TaskSignature Assignment (Problem-CHR)](41-c-22---task-typing-and-tasksignature-assignment.md) (386 lines) — Purpose. Declare an admissible, minimal, and portable TaskSignature declaration for selector-facing use after the problem-side episteme is stable enough for Principles-to-Work, eligibility,...
 - [C.22.1 - Task-family adaptation signature](42-c-22-1---task-family-adaptation-signature.md) (152 lines) — Compare how a holder, dyad or bounded specialist portfolio acquires usable specialization on a declared task family. An adaptation signature connects the threshold, acquisition time and cost, and...
 - [C.22.PFR - Problematic-For Relation](43-c-22-pfr---problematic-for-relation.md) (331 lines) — Normativity: Normative unless marked informative
-- [C.22.2 - ProblemCard](44-c-22-2---problemcard.md) (646 lines) — Normativity: Normative
-- [C.23 - MethodFamily Evidence & Maturity (Method‑SoS‑LOG)](45-c-23---methodfamily-evidence-maturity.md) (225 lines) — LOG (logic) for deductive shells for admissibility
-- [C.24 - Plan Tool or Service Calls for a Fixed Action (C.Agent-Tools-CAL)](46-c-24---plan-tool-or-service-calls-for-a-fixed-action.md) (387 lines) — Normativity: Normative
-- [C.25 - Q-Bundle: Express a Quality Claim as One Characteristic or a Structured Bundle](47-c-25---q-bundle-express-a-quality-claim-as-one-characteristi.md) (421 lines) — Type: Definitional (D)
-- [C.26 - Quantum-Like Modeling Lens](48-c-26---quantum-like-modeling-lens.md) (650 lines) — Type: Architectural pattern
-- [C.26.1 - Probe-Coupled Boundary Interaction](49-c-26-1---probe-coupled-boundary-interaction.md) (298 lines) — Type: Architectural pattern
-- [C.26.2 - Enacted Distributed State Evidence](50-c-26-2---enacted-distributed-state-evidence.md) (347 lines) — Type: Architectural pattern
-- [C.26.3 - Viability-Envelope Boundary Regulation](51-c-26-3---viability-envelope-boundary-regulation.md) (347 lines) — Type: Architectural pattern
-- [C.27 - Temporal Claim Adequacy: State Readings, Temporal Trends, and Intervention-Sensitive Change](52-c-27---temporal-claim-adequacy-state-readings-temporal-trend.md) (473 lines) — Type: Claim-adequacy pattern
+- [C.22.2 - ProblemCard](44-c-22-2---problemcard.md) (650 lines) — Normativity: Normative
+- [C.23 - MethodFamily Evidence & Maturity (Method‑SoS‑LOG)](45-c-23---methodfamily-evidence-maturity.md) (220 lines) — LOG (logic) for deductive shells for admissibility
+- [C.24 - Plan Tool or Service Calls for a Fixed Action (C.Agent-Tools-CAL)](46-c-24---plan-tool-or-service-calls-for-a-fixed-action.md) (398 lines) — Normativity: Normative
+- [C.25 - Q-Bundle: Express a Quality Claim as One Characteristic or a Structured Bundle](47-c-25---q-bundle-express-a-quality-claim-as-one-characteristi.md) (401 lines) — Type: Definitional (D)
+- [C.26 - Quantum-Like Modeling Lens](48-c-26---quantum-like-modeling-lens.md) (620 lines) — Type: Architectural pattern
+- [C.26.1 - Probe-Coupled Boundary Interaction](49-c-26-1---probe-coupled-boundary-interaction.md) (282 lines) — Type: Architectural pattern
+- [C.26.2 - Enacted Distributed State Evidence](50-c-26-2---enacted-distributed-state-evidence.md) (338 lines) — Type: Architectural pattern
+- [C.26.3 - Viability-Envelope Boundary Regulation](51-c-26-3---viability-envelope-boundary-regulation.md) (350 lines) — Type: Architectural pattern
+- [C.27 - Temporal Claim Adequacy: State Readings, Temporal Trends, and Intervention-Sensitive Change](52-c-27---temporal-claim-adequacy-state-readings-temporal-trend.md) (471 lines) — Type: Claim-adequacy pattern
 - [C.27.TA - Temporal Aspect: Time Windows, Rhythm, Cadence, and Currentness](53-c-27-ta---temporal-aspect-time-windows-rhythm-cadence-and-cu.md) (283 lines) — Type: Definitional pattern
-- [C.28 - CausalUse-CAL: Causal-Use Questions, Identification, and Realizability](54-c-28---causaluse-cal-causal-use-questions-identification-and.md) (767 lines) — Normativity: Normative unless explicitly marked informative
+- [C.28 - CausalUse-CAL: Causal-Use Questions, Identification, and Realizability](54-c-28---causaluse-cal-causal-use-questions-identification-and.md) (769 lines) — Normativity: Normative unless explicitly marked informative
 - [C.28.CM - Construct and Challenge a Causal Model](55-c-28-cm---construct-and-challenge-a-causal-model.md) (230 lines) — Normativity: Normative unless marked informative
 - [C.28.MR - Derive an Intervention Consequence by Mechanism Replacement](56-c-28-mr---derive-an-intervention-consequence-by-mechanism-re.md) (203 lines) — Normativity: Normative
 - [C.29 - Mathematical Lens Use](57-c-29---mathematical-lens-use.md) (1014 lines) — Type: Architectural pattern
@@ -73,32 +72,32 @@
 - [C.30.AD - Architecture Description Adequacy](63-c-30-ad---architecture-description-adequacy.md) (466 lines) — Type: Architectural pattern
 - [C.30.AD.BA - Built-Asset Architecture Description and Reference Designation](64-c-30-ad-ba---built-asset-architecture-description-and-refere.md) (264 lines) — Type: Architecture-description subpattern under C.30.AD
 - [C.30.P - Clarify Architecture and Structure Wording (Precision Restoration)](65-c-30-p---clarify-architecture-and-structure-wording.md) (230 lines) — Type: Architectural pattern
-- [C.30.STRAT - Clarify Stratification and Architecture Source Labels](66-c-30-strat---clarify-stratification-and-architecture-source.md) (259 lines) — Type: Architectural precision-restoration subpattern under C.30
-- [C.30.ASV - Architecture Structural View Adequacy (ASV)](67-c-30-asv---architecture-structural-view-adequacy.md) (852 lines) — Type: Architectural pattern
+- [C.30.STRAT - Clarify Stratification and Architecture Source Labels](66-c-30-strat---clarify-stratification-and-architecture-source.md) (261 lines) — Type: Architectural precision-restoration subpattern under C.30
+- [C.30.ASV - Architecture Structural View Adequacy (ASV)](67-c-30-asv---architecture-structural-view-adequacy.md) (850 lines) — Type: Architectural pattern
 - [C.30.LCA - Control Structure View Adequacy (LCA)](68-c-30-lca---control-structure-view-adequacy.md) (319 lines) — Type: Architectural subpattern under C.30
-- [C.30.ILC - Cross-Scope Architecture Residual Triage](69-c-30-ilc---cross-scope-architecture-residual-triage.md) (253 lines) — Type: Architectural subpattern under C.30
-- [C.30.TFS-REL - Use Transformation-Flow Structures and Networks in Architecture](70-c-30-tfs-rel---use-transformation-flow-structures-and-networ.md) (420 lines) — Type: Architectural pattern
+- [C.30.ILC - Cross-Scope Architecture Residual Triage](69-c-30-ilc---cross-scope-architecture-residual-triage.md) (251 lines) — Type: Architectural subpattern under C.30
+- [C.30.TFS-REL - Use Transformation-Flow Structures and Networks in Architecture](70-c-30-tfs-rel---use-transformation-flow-structures-and-networ.md) (403 lines) — Type: Architectural pattern
 - [C.31 - Modularity and Reusable Structure Characteristics](71-c-31---modularity-and-reusable-structure-characteristics.md) (386 lines) — Type: Characterization pattern
-- [C.31.RSA - Reusable Structure Accounting](72-c-31-rsa---reusable-structure-accounting.md) (383 lines) — Type: Characterization pattern
+- [C.31.RSA - Reusable Structure Accounting](72-c-31-rsa---reusable-structure-accounting.md) (397 lines) — Type: Characterization pattern
 - [C.31.ASAP - Which Architecture Is Preferable Under Scale? (Scale Amenability)](73-c-31-asap---which-architecture-is-preferable-under-scale.md) (325 lines) — Type: Characterization pattern
-- [C.32 - Architecture Candidate Synthesis](74-c-32---architecture-candidate-synthesis.md) (346 lines) — Type: Architectural pattern
+- [C.32 - Architecture Candidate Synthesis](74-c-32---architecture-candidate-synthesis.md) (348 lines) — Type: Architectural pattern
 - [C.32.LCA - Construct and Compare a Control Architecture](75-c-32-lca---construct-and-compare-a-control-architecture.md) (399 lines) — Type: Method pattern in the C.32 architecture-synthesis family
 - [C.32.P2S - Problem-to-Structure Architecturing Unfolding](76-c-32-p2s---problem-to-structure-architecturing-unfolding.md) (360 lines) — Type: Architectural process pattern under C.32
 - [C.32.HCS - Architecture-Bearing Family Characteristic Starter Packs](77-c-32-hcs---architecture-bearing-family-characteristic-starte.md) (208 lines) — Type: Architectural characterization subpattern under C.32
 - [C.32.ACS - Architecture Characteristic Criteria Set](78-c-32-acs---architecture-characteristic-criteria-set.md) (290 lines) — Type: Architecture characterization pattern under C.32
 - [C.32.ACE - Architecture Characteristic Eval Programs](79-c-32-ace---architecture-characteristic-eval-programs.md) (215 lines) — Type: Architecture eval-support subpattern under C.32
-- [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](80-c-32-conway---architecture-influence-and-transformed-archite.md) (419 lines) — Type: Architectural subpattern under C.32
+- [C.32.CONWAY - Architecture-Influence and Transformed-Architecture Correspondence](80-c-32-conway---architecture-influence-and-transformed-archite.md) (436 lines) — Type: Architectural subpattern under C.32
 - [C.32.MLAO - Architecture Candidates to Reduce Cross-Scope Residuals](81-c-32-mlao---architecture-candidates-to-reduce-cross-scope-re.md) (257 lines) — Type: Architectural subpattern under C.32
 - [C.32.MWA - Synthesize an Architecture Account of Methods and Their Use](82-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) (205 lines) — Tech-name: MethodArchitectureSynthesisFromSeveralStructures
 - [C.32.MWA.PP - Construct and Compare Method Performance and Provision Arrangements](83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) (658 lines) — Primary working result: a Method-architecture decision episteme explaining how related Methods would be performed and supported together: the decision-changing structures and direct relations, their...
 - [C.32.FAIL - Architecture Failure Recognition and Repair](84-c-32-fail---architecture-failure-recognition-and-repair.md) (225 lines) — Type: Architectural subpattern under C.32
 - [C.32.PAD - Project Architecture Decision After Candidate Synthesis](85-c-32-pad---project-architecture-decision-after-candidate-syn.md) (364 lines) — Type: Architecture decision pattern under C.32
 - [C.32.ADR - Architecture Decision Record Projection](86-c-32-adr---architecture-decision-record-projection.md) (224 lines) — Type: Architecture publication pattern under C.32
-- [C.32.ADA - Architecture Decision Adequacy Scales](87-c-32-ada---architecture-decision-adequacy-scales.md) (298 lines) — Type: Architecture evaluation pattern under C.32
+- [C.32.ADA - Architecture Decision Adequacy Scales](87-c-32-ada---architecture-decision-adequacy-scales.md) (301 lines) — Type: Architecture evaluation pattern under C.32
 - [C.33 - Assess Structural Information for Architecture Use](88-c-33---assess-structural-information-for-architecture-use.md) (205 lines) — Type: Architectural pattern
 - [C.34 - Assess Structural Correspondence for Architecture Use (Equivalence and Morphisms)](89-c-34---assess-structural-correspondence-for-architecture-use.md) (185 lines) — Type: Architectural pattern
 - [C.35 - Assess Generated or Discovered Results for Architecture Use](90-c-35---assess-generated-or-discovered-results-for-architectu.md) (246 lines) — Type: Architectural pattern
-- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (404 lines) — Tech-name: CulturalEvolutionEngineering
+- [C.36 - Cultural Evolution and Cultural-Evolution Engineering](91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) (400 lines) — Tech-name: CulturalEvolutionEngineering
 - [C.37 - Select and Use Representations for One Action](92-c-37---select-and-use-representations-for-one-action.md) (283 lines) — Normativity: Normative unless explicitly marked informative
 - [C.37.MP - Maintain a Method Representation Profile](93-c-37-mp---maintain-a-method-representation-profile.md) (236 lines) — Primary working result: a Method representation profile for one MethodDescription or candidate Method account. It relates logically complete use-bounded selections across Method actions, preserving...
 - [C.37.CF - Compare Content and Form Changes](94-c-37-cf---compare-content-and-form-changes.md) (236 lines) — Use this when. A Method description appears more useful after revision, but its content and its form both changed. You need to decide which revision to retain without crediting new instructions to a...
@@ -110,7 +109,7 @@
 - [C.39.MF - Choose and Reopen a Method Development Focus](100-c-39-mf---choose-and-reopen-a-method-development-focus.md) (170 lines) — Primary working result: a Method-focus result that selects one Method, an established family or explicitly local grouping, a set of Method relations, or a non-Method return for one project decision....
 - [C.39.WI - Discover Worthwhile Method Improvements](101-c-39-wi---discover-worthwhile-method-improvements.md) (319 lines) — Use this Method when work consumes substantial resources, causes avoidable errors or rework, or leaves valuable results unattainable, and you need to choose where to improve the way of working next....
 - [C.39.RP - Organize a Repertoire for Method Development](102-c-39-rp---organize-a-repertoire-for-method-development.md) (180 lines) — Primary working result: one inspectable Method repertoire for a named use that keeps identified Methods, candidate Method accounts, MethodDescriptions, source contributions, family or local-grouping...
-- [C.39.RQ - Construct Situated Method Requirements](103-c-39-rq---construct-situated-method-requirements.md) (222 lines) — Primary working result: one situational Method-criteria result that states the receiving Work and result, required Method contributions, performer capabilities, technical and organizational...
+- [C.39.RQ - Construct Situated Method Requirements](103-c-39-rq---construct-situated-method-requirements.md) (224 lines) — Primary working result: one situational Method-criteria result that states the receiving Work and result, required Method contributions, performer capabilities, technical and organizational...
 - [C.39.MC - Continue Method Development from Changed Conditions](104-c-39-mc---continue-method-development-from-changed-condition.md) (201 lines) — Primary working result: a bounded Method-architecture continuation: the result needed now, the relevant pattern knowledge, the available, blocked, or unknown continuation, and the smallest return...
 - [C.40 - Develop Branching Search from Reusable Material](105-c-40---develop-branching-search-from-reusable-material.md) (913 lines) — Normativity: Normative unless explicitly marked informative.
 - [C.40.CD - Develop Problems and Ways of Solving Them Together](106-c-40-cd---develop-problems-and-ways-of-solving-them-together.md) (219 lines) — Normativity: Normative
@@ -129,7 +128,7 @@
 - [C.40.NP - Continue from a Result to New Attainable Problems](119-c-40-np---continue-from-a-result-to-new-attainable-problems.md) (146 lines) — Normativity: Normative
 - [C.41 - Select Checklist Questions for a Work Result](120-c-41---select-checklist-questions-for-a-work-result.md) (241 lines) — Skilled work can fail through a small omission, a forgotten conversation or an answer that outlives its grounds. More documentation can make that worse when it hides the question, interrupts useful...
 - [C.41.TF - Construct a Checklist Template That Preserves Its Questions](121-c-41-tf---construct-a-checklist-template-that-preserves-its.md) (154 lines) — Use this when selected questions are becoming a reusable form, or an existing checklist is being transposed, split, translated or moved into another tool. A row of green cells is easy to scan, but...
-- [C.41.OF - Fit a Checklist to Its Occasion of Use](122-c-41-of---fit-a-checklist-to-its-occasion-of-use.md) (134 lines) — Use this when a meaningful checklist is skipped, completed too early, used without the right participants, or stranded in software that the work does not otherwise use. People and AI agents can know...
+- [C.41.OF - Fit a Checklist to Its Occasion of Use](122-c-41-of---fit-a-checklist-to-its-occasion-of-use.md) (136 lines) — Use this when a meaningful checklist is skipped, completed too early, used without the right participants, or stranded in software that the work does not otherwise use. People and AI agents can know...
 - [C.41.UA - Use a Checklist to Answer Questions and Act on the Results](123-c-41-ua---use-a-checklist-to-answer-questions-and-act-on-the.md) (143 lines) — Use this when a checklist is being used on an actual occasion, or an earlier answer is being considered for reuse. The list may be familiar, but the cards, description, room or software state can...
 - [C.41.SR - Reconcile Checklist Results Across Shared Work](124-c-41-sr---reconcile-checklist-results-across-shared-work.md) (180 lines) — Use this when several people or agents rely on local checklist answers to conduct shared work, one person combines several such contributions, or a change may have invalidated those answers. A...
 - [C.41.QC - Qualify Checklist Criteria and Checking Means](125-c-41-qc---qualify-checklist-criteria-and-checking-means.md) (154 lines) — Use this when a proposed criterion or checking means may fail to distinguish the difference that matters. This is common with inherited lists, generated criteria, model judgements, new tools and...

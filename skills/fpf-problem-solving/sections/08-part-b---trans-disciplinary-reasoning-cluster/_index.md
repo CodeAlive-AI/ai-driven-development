@@ -1,6 +1,5 @@
 # Part B - Trans-disciplinary Reasoning Cluster
 
-
 ## Contents
 
 - [B.1 - Holon Aggregation and Part-Whole Construction](01-b-1---holon-aggregation-and-part-whole-construction.md) (231 lines) — Type: Part B holonic construction pattern
@@ -44,5 +43,5 @@
 - [B.5.2.1 - Instrument Abductive Hypothesis Generation with Novelty–Quality–Diversity (NQD)](39-b-5-2-1---instrument-abductive-hypothesis-generation-with-no.md) (183 lines) — Normativity: Normative binding to B.5.2 Abductive Loop. The local NQD-Generate Method in §4, or an equivalent declared generator, constructs the candidates. C.18 supplies generation, archive and...
 - [B.5.3 - Interpret Domain Vocabulary for an FPF Claim (Domain-Concept Bridge)](40-b-5-3---interpret-domain-vocabulary-for-an-fpf-claim.md) (98 lines) — Working domains use their own vocabulary, while an FPF claim must preserve the kind and relations its meaning requires. A thermodynamicist uses terms such as "system", "macrostate", "control volume"...
 - [B.5.4 - Recognize a Reusable Concept in a Concrete Situation](41-b-5-4---recognize-a-reusable-concept-in-a-concrete-situation.md) (121 lines) — Type: Method-description pattern
-- [B.5.PI - Initiate Inquiry from Ongoing Work](42-b-5-pi---initiate-inquiry-from-ongoing-work.md) (222 lines) — Normativity: Normative unless marked informative
-- [B.5.SD - Construct a Useful Answer through Substantive Discussion](43-b-5-sd---construct-a-useful-answer-through-substantive-discu.md) (197 lines) — Normativity: Normative
+- [B.5.PI - Initiate Inquiry from Ongoing Work](42-b-5-pi---initiate-inquiry-from-ongoing-work.md) (220 lines) — Normativity: Normative unless marked informative
+- [B.5.SD - Construct a Useful Answer through Substantive Discussion](43-b-5-sd---construct-a-useful-answer-through-substantive-discu.md) (195 lines) — Normativity: Normative

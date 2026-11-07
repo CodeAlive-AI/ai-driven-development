@@ -1,0 +1,17 @@
+## MATH.Reference:8 - Architectural Rationale - Organize by reusable constructions
+
+A single mathematical construction can serve many subjects. A quotient can retain the information used by a later operation; symmetry can organize solutions of a theoretical problem or constrain a learning system. This reuse makes the mathematics valuable across disciplines while leaving its specialized construction methods with mathematical practice.
+
+The organization therefore separates three relations. Mathematical methods form objects, perform operations and establish consequences under stated assumptions. A modeling correspondence interprets an object or result in another subject. An executing arrangement performs the selected computation. These relations can be developed together, but each supplies conditions that the others need. FPF's C.29 family makes their connections usable; the mathematical bodies develop the constructions in detail.
+
+This also clarifies the connection to methodology. Functions or paths can model how contributions compose, and mathematical laws can expose a failed identification or changed order. The model must retain the state, interactions and outputs relevant to the working method. Method Engineering, including its composition method, concerns the method being designed. Choosing morphisms to describe it provides a mathematical account whose adequacy depends on that interpretation.
+
+Choosing a construction from its required maps is another reusable move. Its specification can lead to a product, a compatibility construction or a function object. The corresponding realization and proof still have to be supplied. This lets MATH.16 help choose among constructions while MATH.2, MATH.5 and MATH.7 retain their detailed quotient, extension and transport methods.
+
+The pattern boundaries follow different reusable moves. Constructing a path differs from interpreting its generators; forming a quotient differs from transporting structure through a bijection. Induction obtains witnesses by input construction, while proof extraction can also use non-inductive steps. Symmetry consequences, orbit construction and compatible choice have different results and stopping conditions. Keeping these moves addressable lets a user take the required contribution and preserve its explanation, countercases and source alternatives.
+
+A textbook can teach these constructions through a sustained sequence. A reference arranged by recurring difficulties supports another use: enter with a blocked question, obtain the relevant construction and continue elsewhere. The pattern language complements detailed source treatments, which remain useful for deeper theory and specialized methods.
+
+There can be further useful scales. A geometric-computation profile may reuse symmetry, transport and variation while adding its own conditions; a narrower profile may develop continuous choices for a particular representation. One pattern can contribute to several such profiles. Specialization, reuse and composition describe those relations; a chapter order only helps a reader navigate them. Profiles should add a useful difference for their narrower situation rather than replace a developed method with a broad summary.
+
+Revise this organization when a recurring use needs a construction that no body supplies, when two bodies duplicate the same useful move, or when a changed method makes their joins misleading. Preserve still-useful operations, explanations and source qualifications during that change.

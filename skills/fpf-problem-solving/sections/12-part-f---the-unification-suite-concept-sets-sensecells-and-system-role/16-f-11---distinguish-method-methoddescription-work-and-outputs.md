@@ -77,7 +77,7 @@ Name the already identified episteme and the one admitted Method that is its exa
 
 #### F.11:6.3 - Which Work actually occurred?
 
-For every claimed actual performer, recover the A.13 core: the admitted System, local agential system-role kind and classification, obtaining assignment, and the scope, situation, window and evidence needed by the claim. A.15.1 then independently admits the dated Work. Use F.6 only when this account needs precise assignment-bound attribution through that same assignment; a missing attribution leaves the admitted Work intact. Do not replace these objects with a behavioural “mask” or a `System-in-Role` pseudo-object.
+For every claimed actual performer, recover the A.13 core: the admitted System, local agential system-role kind and classification, obtaining assignment, and the scope, situation, window and evidence needed by the claim. A.15.1 then independently admits the dated Work. Use F.6 only when this account needs precise assignment-bound attribution through that same assignment; a missing attribution alone leaves independently admitted Work intact. Recheck a consumed admission premise and its dependent conclusions if the same finding invalidates it, as F.6:4.2 requires. Do not replace these objects with a behavioural “mask” or a `System-in-Role` pseudo-object.
 
 #### F.11:6.4 - Which output matters, if any?
 
@@ -104,7 +104,7 @@ Use F.17 only when these local meanings need stable addresses. Use F.9 only if a
 1. **Method and description distinction.** A MethodDescription is the same episteme recognized by A.3.2, with one admitted Method as its exact `EntityOfConcern`; it is not the Method, and *describes* adds no binary relation.
 2. **Occurrence distinction.** Work is an actual dated occurrence, not its plan, report, record, or output.
 3. **No universal actuation kind.** A control or transformation output is typed and related under its direct pattern.
-4. **Explicit enactment.** Work enacts a Method only when the exact relation and basis are stated.
+4. **Supported enactment.** Assert that Work enacts a Method only when the exact relation and its basis are established.
 5. **Explicit description use.** MethodDescription use, following, conformance, deviation, interpretation, and reliance are separate claims under their defining or testing patterns; absent such a rule, return A.6.RCD `missing-governor`.
 6. **Exact agency.** Each claimed actual performer has the A.13 core, including the obtaining assignment, before independent A.15.1 Work admission. F.6 is required only for precise assignment-bound attribution; no vague `System-in-Role` substitute.
 7. **Evidence separation.** Approval of a description does not establish Work occurrence or outcome.
@@ -190,7 +190,7 @@ The Method is triage-first incident handling; the MethodDescription is the playb
 **Constrains:**
 
 - **F.4 and F.6:** a local system-role kind, its description, an assignment, and performed-Work attribution remain distinct from Method, MethodDescription, Work, and output.
-- **F.5:** use distinct Plain and Tech designations when one source expression hides different subjects.
+- **F.5:** use distinct designations when one source expression hides different subjects. Add a Plain counterpart only when it helps the intended reader and retains the same subject.
 - **F.7 and F.9:** compare exact local claims or F.17 cells and cite F.9 only when a semantic relation actually obtains. A shared heading creates no identity, relation, or use licence.
 
 **Used by.** Part C examples and the A.3, A.15, and B.1.5 method-and-work stack. Every MethodDescription membership judgement, enactment, performed-Work attribution, description use, observation, output, evidence use, or publication claim still uses the pattern that defines or tests it.

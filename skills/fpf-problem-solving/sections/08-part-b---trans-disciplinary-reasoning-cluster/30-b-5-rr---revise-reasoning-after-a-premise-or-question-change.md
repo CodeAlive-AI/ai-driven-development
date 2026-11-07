@@ -51,7 +51,7 @@ Begin at the changed premise and at the desired conclusion. Find which intermedi
 
 Keep a sufficient alternative separately. For example, recovering a file may require either a readable local copy or an available remote copy. If both are encrypted with one unavailable key, the two storage locations leave the same prerequisite unresolved.
 
-Use an established lemma at the level its receiving use needs. Open its proof when the change reaches a condition of the lemma or the way its result is obtained. Do the same for an established measurement or computation: inspect the part whose application the change calls into question.
+Use an established lemma at the level its receiving use needs. Inspect its statement and application conditions first; open its proof when the revision requires changing or checking the reasoning that establishes it. Do the same for an established measurement or computation: inspect the part whose application the change calls into question.
 
 A sketch or a few statements can hold these dependencies. Use B.1.1 when a dependency representation needs its relation clarified. A reasoning dependency says which premise or operation supports a conclusion; physical causation and temporal order require their own relations.
 
@@ -99,7 +99,7 @@ T(n)=S(n+1)−1=(n+1)²−1=n²+2n.
 
 For n=4, the new sum is 3+5+7+9=24. The old formula applied unchanged would return 16. The proof of S survives; the application of that proof changes.
 
-This repair also exposes a reusable construction. For n terms starting at a and increasing by 2, term j, counted from j=0, is (2j+1)+(a−1). Summing the established odd-number terms and the n equal additions gives n²+n(a−1). Changing the increment would require another derivation. The worked extension makes the next question precise without assuming that the same correction covers every progression.
+This repair also exposes a reusable construction. For n terms starting at a and increasing by 2, term j, counted from j=0, is (2j+1)+(a−1). Summing the established odd-number terms and the n equal additions gives n²+n(a−1). Changing the increment would require another derivation. The worked extension makes the next question precise.
 
 For the next use, retain four terms and the increment 2, but require their sum to be 28. The former starting value a=3 becomes the unknown: 16+4(a−1)=28 gives a=4. Checking 4+6+8+10=28 confirms the required sum. If there are zero terms and the required sum is positive, no starting value can supply it: the empty sum is zero for every a. The changed question then requires a different term count or total.
 
@@ -123,7 +123,7 @@ Contrast this with an induction argument whose base case remains established and
 
 ### B.5.RR:6 - Bias-Annotation
 
-The examples favor explicit premises and recoverable derivations. In statistical or interpretive work, revising one observation can require reconsidering dependence, selection or meaning before the changed conclusion can be obtained. Use the practice's inference method; a list of supporting statements does not supply it.
+The examples favor explicit premises and recoverable derivations. In statistical or interpretive work, revising one observation can require reconsidering dependence, selection or meaning before the changed conclusion can be obtained. Use the practice's inference method.
 
 The method can also overvalue salvage. When the earlier reasoning is poorly recoverable and an adequate new answer is cheap, obtain the new answer.
 

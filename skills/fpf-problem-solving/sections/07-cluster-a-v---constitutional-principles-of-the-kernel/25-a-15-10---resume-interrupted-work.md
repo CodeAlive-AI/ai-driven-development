@@ -107,7 +107,7 @@ An AI assistant resumes a wording review at paragraph six. Its summary says “f
 
 It opens the method's operative section and the last substantive result. The fifth paragraph was completed; the sixth was only located. It reads the sixth paragraph as a connected argument and tries removing “approved” from a procedure name. The word identifies which procedure may be used, so deletion would change the instruction. It retains the word and explains that contribution through the review's existing result.
 
-The return recovered both the position and the method. It did not require reviewing the first five paragraphs again. The assistant's reconstruction does not imply a human memory mechanism.
+The return recovered both the position and the method. It did not require reviewing the first five paragraphs again.
 
 #### A.15.10:5.2 - The recipient receives a conclusion with an obsolete condition
 
@@ -157,7 +157,7 @@ External support is sometimes helpful and sometimes costly. Confidence that one 
 
 A return becomes an act of reconstructing and using the work, rather than locating an item or rereading its history. Useful preparation can reduce reconstruction and wrong continuation. Its cost includes writing, retrieving, interpreting and maintaining the support.
 
-The method can expose that a different result is now needed, that help is required or that the work should stop. It does not guarantee uninterrupted attention or successful recovery under every configuration.
+The method can expose that a different result is now needed, that help is required or that the work should stop.
 
 ### A.15.10:10 - Rationale
 

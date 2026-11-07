@@ -75,12 +75,12 @@ Name the blocked receiving claim and participants. Reuse a current direct predic
 1. **Name the blocked use.** State the exact claim, check, decision, or continuation that cannot proceed, and what answer would close it.
 2. **Recover participants and direct relations.** Use `A.6.P` to name the actual participant referents under their relation-participant meanings and retrieve the smallest plausible base from the exact pattern content or declaration that defines each base predicate and its obtaining law. Similar tokens, shared field names, or adjacent graph edges are not a base.
 3. **Choose the least constructor admitted by the current substrate.** State the constructor semantics and the base claim content it consumes. Do not infer an operator from punctuation or notation.
-4. **Replay three things.** Test one positive case, one discriminating failure case, and the named receiving use. Keep hidden intermediates, polarity, scope, time, and base-definition editions visible when they change the result.
+4. **Check the derivation and its use.** Establish that the base claims and selected constructor support the required result and that it answers the named receiving use. Reuse an adequate existing proof or check; add positive or discriminating cases when needed to establish or explain applicability or failure. Keep hidden intermediates, polarity, scope, time, and base-definition editions visible when they change the result.
 5. **Select the lightest disposition.** Choose exactly one of the four dispositions in section 4.3 and stop at its stopping rule.
 6. **Open reusable semantics when the receiving use needs one stable definition.** This can support planned reuse or a reference to the rule; previously observed repetition is unnecessary. Decide whether the rule concerns one exact subject or is parameterized across subject instances. For one subject, identify a subject-bounded compound-law episteme whose EntityOfConcern is that subject and state the reuse limit. Across subjects, identify the reusable predicate definition itself as EntityOfConcern; that episteme may satisfy A.6.0 U.Signature membership before relation-kind admission, but it is not a RelationSignature.
 7. **Open kind admission only when occurrence semantics are consumed.** A derived kind needs a direct subject settlement with obtaining, applicability, base dependencies, and a non-optional occurrence-identity rule. A primitive candidate additionally carries the failed derivation, the exact action-facing distinction lost, its own obtaining and recurrence laws, independent receiving uses, and a standalone subject-pattern obligation.
 
-Use this compact working note only while the decision is live:
+When a separate note helps the live decision, use the applicable prompts below:
 
 ```text
 A.6.RCD working note:
@@ -89,8 +89,8 @@ A.6.RCD working note:
   candidateBaseRelationClaims:
   selectedSubstrateAndEdition:
   constructorSemantics:
-  positiveCase:
-  discriminatingFailureCase:
+  positiveCaseIfNeeded:
+  discriminatingFailureCaseIfNeeded:
   receivingUseReplay:
   disposition:
   predicateDefinitionModeIfCurrent: subjectBounded | reusableAcrossSubjects
@@ -167,9 +167,9 @@ In either branch, the definition content states:
 - parameter and participant meanings;
 - the exact base-relation claims and the pattern content or declarations that define their predicates and obtaining laws;
 - the derivation rule under the selected substrate;
-- polarity, scope, time, and applicability;
+- claim polarity and applicability, with any scope or time arguments the rule consumes;
 - base-definition and substrate dependencies plus their editions when current;
-- positive and discriminating cases;
+- justification of the derived rule and its applicability, with cases where needed to expose a deciding condition;
 - the admissible claim use, plus a restriction on occurrence or ontology inference only when F.19's independent-ground, plausible-reader and consequence test warrants it.
 
 If neither the exact subject nor the exact reusable predicate definition is the truthful `EntityOfConcern`, keep the needed results as local compound claims. Do not manufacture a union concern or alternate opportunistically between the rule and a nearby domain subject.
@@ -216,11 +216,11 @@ The ordinary branch can stop at a readable direct claim or one readable compound
 
 **Negative direct-claim case.** A staffing check asks whether Robot_7 is assigned as InspectorSystemRole for Cell_3 during Interval_T under the declared CellInspectorAssignment species of U.SystemRoleAssignment. The species is the relation kind, not an assignment occurrence. A.2.1 and the species definition supply participant meanings and the positive predicate for the actual holder, cell and interval; taxonomy and reference scheme are not participants. When an applicable non-assignment criterion or complete closure basis is satisfied, a C.2.1 episteme can state the negative and disposition 1 closes the check without individuating an obtaining assignment. An absent direct predicate, applicability condition or required occurrence rule yields `missing-governor`; sufficient case facts that fail the positive test yield `factually unsupported`; an unavailable deciding fact yields `missing-information`. Neither a failed positive test nor a blocker supplies negative polarity by itself.
 
-**Assurance branch for DPF and FPF authors.** DPF and FPF authors use this branch whenever they author a compound claim, reusable predicate definition, or relation-kind admission candidate, including a durable local compound claim that stops at disposition 2. In addition, verify:
+**Check a compound claim or proposed definition.** DPF and FPF authors verify the applicable grounds below when authoring a compound claim, reusable predicate definition, or relation-kind admission candidate, including a durable local compound claim that stops at disposition 2:
 
 - exact base patterns, definitions, editions, and applicability;
 - selected substrate and constructor semantics;
-- positive case, discriminating failure case, and receiving-use replay;
+- the derivation's validity and receiving-use result, with positive or discriminating cases when needed to settle a consequential condition;
 - one truthful definition `EntityOfConcern` when reusable semantics are published;
 - dependency and currentness conditions;
 - direct occurrence-identity and recurrence rules for every admitted relation kind;
@@ -269,7 +269,7 @@ No production or entity-inception claim is current because `Housing_42` already 
 
 **Situation.** A work record needs the readable claim that one actual system performed one exact Work occurrence under one exact assignment to a system role.
 
-**Base and direct result.** Recover `S : U.System` as the exact actual performer through A.13 and let A.15.1 independently admit exact `W : U.Work`. When the work record expressly needs the under-assignment claim, reuse the same obtaining A.13 assignment `RA`, apply F.6 to the direct predicate `performedUnderAssignment(W, RA)`, and compare `RA.HolderSystemSlot` with the already recovered `S`. F.6 identifies neither assignment nor performer. A C.2.1 episteme may assert that result for the receiving use. The system performs the Work; the assignment supplies its holder and assigned-kind projection but neither acts nor creates another participation relation. If an F.6 deciding fact is unavailable, attribution remains unresolved; contrary facts refute it. In either case, retain the independently admitted Work and withhold the under-assignment assertion.
+**Base and direct result.** Recover `S : U.System` as the exact actual performer through A.13 and let A.15.1 independently admit exact `W : U.Work`. When the work record expressly needs the under-assignment claim, reuse the same obtaining A.13 assignment `RA`, apply F.6 to the direct predicate `performedUnderAssignment(W, RA)`, and compare `RA.HolderSystemSlot` with the already recovered `S`. F.6 identifies neither assignment nor performer. A C.2.1 episteme may assert that result for the receiving use. The system performs the Work; the assignment supplies its holder and assigned-kind projection but neither acts nor creates another participation relation. If an F.6 deciding fact is unavailable, attribution remains unresolved; contrary facts refute it. In either case, withhold the under-assignment assertion. Retain the Work while its independent admission grounds hold; recheck any admission premise invalidated by the same finding and its dependent conclusions under A.15.1.
 
 **Positive case.** A.13 has already recovered `S` through the same obtaining `RA`, A.15.1 has independently admitted `W`, `RA` covers `W`, `RA.HolderSystemSlot = S`, and F.6's direct Work-attribution predicate holds for the exact pair. The readable result is “S performed W under RA.” No generic enactment object is needed.
 
@@ -320,7 +320,7 @@ The formal examples can bias authors toward syntax-first reasoning. The method t
 3. **Direct-predicate stop.** `A.6.P` recovers the current subject predicate before compound derivation begins. If that predicate can state the needed affirmative, negative, or exact rule-qualified modal claim, use it and stop. If no needed predicate, applicability condition, or occurrence rule exists, return `missing-governor`; if the governor exists and the available case basis is sufficient to apply its positive test but that test fails, return `factually unsupported`; if a fact needed to decide the test is unavailable, return `missing-information`. A negative additionally needs an applicable non-obtaining criterion or complete closure basis and facts that satisfy it.
 4. **Exact base.** Every base predicate names the exact pattern content or declaration that defines it and its obtaining law. The current case separately supplies the relevant facts or constituting history; an assertion or representation does not turn that rule into an obtaining occurrence.
 5. **Substrate authority.** Every used constructor has semantics in the selected substrate; nontrivial, interoperable, proof-bearing, or reusable derivation pins the substrate and edition.
-6. **Replay.** One positive case, one discriminating failure case, and the receiving-use replay agree.
+6. **Derivation and use.** The selected constructor and base claims support the result required by the receiving use. Existing proof or verification may suffice; positive or discriminating cases are added where needed to establish or explain a consequential condition.
 7. **Lightest disposition.** Exactly one of the four dispositions closes the current use; later branches are not opened by habit.
 8. **Claim polarity and occurrence boundary.** Direct and compound assertions may be affirmative, negative, or rule-qualified modal claims. The subject predicate defines the test, current case facts or constituting history determine its satisfaction, and the assertion states the result without creating an occurrence. The three blocker phrases in section 0.1 remain distinct and are not predicate values. Use A.6.REL only when a satisfied affirmative case has an occurrence whose identity a named use consumes.
 9. **Definition identity and reuse boundary.** A subject-bounded compound-law episteme names the exact subject as its `EntityOfConcern` and states that reuse does not travel to another subject. A genuinely reusable predicate-definition episteme names the exact reusable predicate definition as its `EntityOfConcern`. Both state exact applicability and visible base dependencies.
@@ -329,7 +329,7 @@ The formal examples can bias authors toward syntax-first reasoning. The method t
 12. **Primitive-kind settlement.** A primitive candidate records the failed derivation, exact action-facing loss, independent uses, own obtaining and identity laws, and standalone direct pattern before A.11/E.24/E.24.UK admission can pass.
 13. **Identity never absent.** Explicit individuation can be omitted from ordinary use; an admitted relation kind's identity rule cannot.
 14. **Representation boundary.** Formula, query, graph, tree, path, diagram, row, and name remain representations or designators connected to independently recovered content.
-15. **Neighboring claims.** Apply A.10 for evidence, B.3 for assurance, A.21 for gates, A.15 for work, C.11 or the exact decision pattern for decisions, E.17 for publication, F.18 for naming, and G.11 for currentness.
+15. **Neighboring claims.** Apply A.10 when the evidence source-to-use account is implicit or must remain replayable, B.3 for assurance, A.21 for gates, A.15 for work, C.11 or the exact decision pattern for decisions, E.24.PUB for publication availability and identity, E.17 when a reader-facing form is needed, F.18 for naming, and G.11 for currentness.
 16. **Stop or return.** The result states the current stop and the exact dependency or use change that would reopen it.
 
 ### A.6.RCD:8 - Common Anti-Patterns and How to Avoid Them

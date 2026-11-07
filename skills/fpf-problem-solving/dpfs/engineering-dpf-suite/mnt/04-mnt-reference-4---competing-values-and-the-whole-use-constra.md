@@ -1,0 +1,7 @@
+## MNT.Reference:4 - Competing values and the whole-use constraints
+
+Maintenance balances failure consequences with intervention burden and disturbance. Earlier detection is useful only if its interpretation and response can improve the result. More stock, inspection or data can help, but also consume resources or displace more valuable work. A programme decision includes whose downtime, effort and exposure are counted.
+
+Two whole-use constraints are especially visible in the applications. [MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md)'s PS17 calculation accounts for the complete outage, including controlled testing, restoration and contingency. [MNT.15](26-mnt-15---reconcile-simultaneous-maintenance-operation-and-su.md)'s shared-specialist example compares the combined demand, not just each job's separate fit. Those sections carry the respective calculations; affected decisions return there instead of treating local approvals as proof of the whole combination.
+
+Where a protective or administrative requirement is disputed, assess its merits as well as preserving its present force. Identify the protected party, relevant harm and evidence, the baseline and incremental protection, the full burden and displaced harms, and who can amend it. Harmful retention or tightening deserves the same scrutiny as harmful relaxation. The existence of a rule does not prove its proportionality; disagreement with it does not cancel its authority.

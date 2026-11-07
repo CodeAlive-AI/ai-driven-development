@@ -250,6 +250,6 @@ Reopen this source use when current publication-preservation or structured-trans
 - **Coordinates with:** `E.8` for material-revision authoring and direct-consumer repair. A maintainer uses `E.4.PFIP` to compare an assembled principle-framework publication, not to replace pattern authoring.
 - **Entry from FPF and DPF authoring:** `E.4.FPF` refers maintainers here for integration or continuity of an FPF publication edition; `E.4.DPF` does the same for a DPF or LPF publication edition. Those two patterns continue to supply their respective authoring and publication-form guidance.
 - **Evaluation use:** A bounded preservation conclusion may be used as evidence under `E.4.DPF.DA` only when package adequacy for the declared use depends on publication integration or continuity. Use `E.2.DA` to evaluate whole-FPF adequacy and `E.21` to evaluate individual pattern quality.
-- **Later reliance:** Use `C.2.1` to identify the preservation conclusion as an episteme, `A.10` when another claim relies on it, and `G.11` when currentness needs qualification. Those later claims are not part of the comparison itself.
+- **Later reliance:** Use `C.2.1` to identify the preservation conclusion as an episteme. Use `A.10` when the source-to-use account remains implicit or bounded reliance must remain replayable, and `G.11` when currentness needs qualification. Those later claims are not part of the comparison itself.
 
 ### E.4.PFIP:End

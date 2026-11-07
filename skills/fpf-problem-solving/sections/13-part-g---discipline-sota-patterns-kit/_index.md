@@ -1,20 +1,19 @@
 # Part G - Discipline SoTA Patterns Kit
 
-
 ## Contents
 
 - [G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)](01-g-core---discipline-sota-kit-invariants-defaults-and-refresh.md) (434 lines) — Tag. Architectural pattern for shared Part G rules
-- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec)](02-g-0---define-admissible-comparison-and-aggregation-for-a-fra.md) (346 lines) — Tag. Architectural pattern (foundational Standard; constrains G.1–G.5)
+- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec)](02-g-0---define-admissible-comparison-and-aggregation-for-a-fra.md) (360 lines) — Tag. Architectural pattern (foundational Standard; constrains G.1–G.5)
 - [G.1 - Author a Reusable CG-Frame Generator and Selector Kit](03-g-1---author-a-reusable-cg-frame-generator-and-selector-kit.md) (476 lines) — Tag. architectural pattern; generator chassis (design‑time kit / authoring scaffold)
-- [G.2 - Harvest and Synthesize SoTA for a CG-Frame](04-g-2---harvest-and-synthesize-sota-for-a-cg-frame.md) (514 lines) — Type: Architectural (A)
-- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates](05-g-3---chr-authoring-for-a-cg-frame-characteristics-scales-le.md) (457 lines) — Tag. Architectural pattern (CHR kit; publishes lawful measurement primitives; constrains CAL authoring and selector/dispatch use)
+- [G.2 - Harvest and Synthesize SoTA for a CG-Frame](04-g-2---harvest-and-synthesize-sota-for-a-cg-frame.md) (518 lines) — Type: Architectural (A)
+- [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates](05-g-3---chr-authoring-for-a-cg-frame-characteristics-scales-le.md) (459 lines) — Tag. Architectural pattern (CHR kit; publishes lawful measurement primitives; constrains CAL authoring and selector/dispatch use)
 - [G.4 - CAL Authoring for a CG-Frame: Operators, Acceptance Clauses, Evidence Wiring](06-g-4---cal-authoring-for-a-cg-frame-operators-acceptance-clau.md) (459 lines) — Use this when. A team has typed characteristics and now needs to publish reusable operators, acceptance clauses, and legal compositions before any candidate is actually evaluated. The working object...
-- [G.5 - Method-Family Registry, Dispatch and Selected-Set Result Declaration](07-g-5---method-family-registry-dispatch-and-selected-set-resul.md) (796 lines) — Normativity: Normative
+- [G.5 - Method-Family Registry, Dispatch and Selected-Set Result Declaration](07-g-5---method-family-registry-dispatch-and-selected-set-resul.md) (798 lines) — Normativity: Normative
 - [G.6 - Evidence Graph and Provenance Ledger: Citable Evidence-Provenance Paths](08-g-6---evidence-graph-and-provenance-ledger-citable-evidence.md) (328 lines) — Type: Evidence and provenance pattern
-- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels)](09-g-7---cross-tradition-bridge-calibration-kit.md) (403 lines) — Tag. Architectural pattern
+- [G.7 - Cross‑Tradition Bridge Calibration Kit (BridgeMatrix → BridgeCards + BCT/Sentinels)](09-g-7---cross-tradition-bridge-calibration-kit.md) (401 lines) — Tag. Architectural pattern
 - [G.8 - Package Method-Family Admissibility Rules and Maturity Ladders (SoS-LOG)](10-g-8---package-method-family-admissibility-rules-and-maturity.md) (472 lines) — Use this when. A selector needs a stable, citable package of C.23 admissibility rules and a maturity ladder for an already grounded G.5 method-family row. Resolve that row, the applicable rule...
 - [G.9 — Parity and Benchmark Harness](11-g-9-parity-and-benchmark-harness.md) (554 lines) — - rival method families, method sets, or adaptation paths must be compared under one declared baseline set and freshness window
 - [G.10 - SoTA Pack Shipping](12-g-10---sota-pack-shipping.md) (411 lines) — Use this when. Part-G output must reach a selector, auditor or maintainer as one citable, editioned shipment. Start from that receiving use, collect the required upstream references and preserve the...
 - [G.11 - Decide Whether and How to Refresh SoTA Packs and Related Results (Telemetry and Decay)](13-g-11---decide-whether-and-how-to-refresh-sota-packs-and-rela.md) (459 lines) — Tag. Architectural pattern (notation-independent)
 - [G.12 — DHC Dashboards (Discipline-Health Time Series and Views)](14-g-12-dhc-dashboards.md) (278 lines) — Use G.12 when a team needs several recorded C.21 coordinate results arranged across windows, a dashboard view over them, or refresh wiring for that view.
-- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual)](15-g-13---external-interop-hooks-for-sota-discipline-packs.md) (343 lines) — Use this when. A SoTA author or downstream consumer needs repeatable mappings from an external scholarly source into FPF inputs, with the source snapshot, transformation and receiving use...
+- [G.13 - External Interop Hooks for SoTA Discipline Packs (conceptual)](15-g-13---external-interop-hooks-for-sota-discipline-packs.md) (358 lines) — Use this when. A SoTA author or downstream consumer needs repeatable mappings from an external scholarly source into FPF inputs, with the source snapshot, transformation and receiving use...

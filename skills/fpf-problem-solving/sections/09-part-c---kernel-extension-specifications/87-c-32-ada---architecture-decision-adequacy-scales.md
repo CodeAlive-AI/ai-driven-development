@@ -20,7 +20,7 @@ Typical entry phrases:
 "Do not average the decision; tell us what must be repaired."
 ```
 
-**First-minute use slice.** `ArchitectureReviewService-4` first has the A.13 core for decision-adequacy evaluation, and A.15.1 independently admits `DecisionAdequacyEvaluationWork-12` from 10:00 to 10:20 on 2026-08-12. The Work enacts `DecisionAdequacyEvaluationMethod-2` and occurs within the `U.System` named `ProjectArchitectureReviewService-4`. This slice expressly represents precise assignment-bound attribution: `ArchitectureReviewerAssignment-6` is an obtaining occurrence of directly declared species `ArchitectureReviewerAssignment`, held by the already recovered performer and covering the Work, and the separate F.6 relation is recorded. A Work-only ADA record can omit those explicit assignment and attribution refs while retaining the required A.13 basis; failed F.6 attribution alone would leave independently admitted evaluation Work intact while its independent A.13/A.15.1 grounds still hold. One separate result episteme states the declared use and coordinate outcomes. It does not approve the decision; it directs the exact bounded repairs needed before the decision can guide developer Work.
+**First-minute use slice.** An OrderFlow decision is to guide developer work, but its ADR says only “use events”. Read the decision and the available implementation instruction against the intended result: can developers recover the Method, inputs, readiness conditions and expected structural effect? If the instruction supplies part of that way but omits a needed readiness condition, assign the supported docking value and name the missing condition and its source. If the cited instruction is unavailable, leave that value unestablished and request the needed material; unavailable evidence is not established absence. Continue through the complete coordinate set, preserving supported results and the declared readiness floor. The evaluation yields bounded repairs or a use conclusion; approval and implementation commitment retain their own grounds.
 
 The primary governed object is `ArchitectureDecisionAdequacyEvaluation@Project`: a C.32.ADA-local evaluation record over one `ArchitectureDecisionRelation@Project`, optional `ArchitectureDecisionRecordProjection@Project`, and declared use. It is not the evaluated decision, evaluation Work, or result episteme.
 
@@ -30,9 +30,9 @@ What goes wrong if C.32.ADA is missed: a decision can appear complete because it
 
 What C.32.ADA buys in practice: the project can evaluate architecture decisions by complete coordinate set, keep kinds distinct, and repair the weakest live coordinates without turning adequacy into a single score.
 
-Ordinary working move: declare the evaluation use, evaluate every coordinate with an ordinal value and rationale, then state the repair condition for each weak coordinate and cite the smallest subject-pattern locus containing the required definition or constraint.
+Ordinary working move: declare the evaluation use, assess every coordinate under :4.2, and give each supported value its rationale. Retain a grounded `notTriggered` disposition or an unestablished dependent value when appropriate. State the needed repair or missing basis at its smallest useful source locus.
 
-Adoption test: after using C.32.ADA, another practitioner can see the declared use, complete coordinate values, rationales, repair targets, and stop condition for the architecture decision.
+Adoption test: after using C.32.ADA, another practitioner can recover the declared use, complete coordinate results with their rationales or missing bases, repair targets, and the supported use conclusion or reason it remains open.
 
 Not this pattern when the current object is FPF pattern quality, measurement validity, evidence support, assurance, gate passage, candidate synthesis, comparison, selection, local choice, or ADR publication projection itself. Use the pattern for the next question named in `Relations`.
 
@@ -46,9 +46,9 @@ ArchitectureDecisionAdequacyEvaluation@Project:
   claimScopeRef: U.EntityRef referencing one U.ClaimScope
   selectedContextSliceRefs:
   effectiveReferenceScheme:
-  referencePlane?:
-  evaluationWindow:
-  decisionQuestionInputProjectionRef:
+  referencePlane?: when interpretation depends on it
+  evaluationWindow?: when the judgement or its use depends on time
+  decisionQuestionInputProjectionRef?: when a selected projection is used
   evaluatorSystemRef?: U.EntityRef constrained to U.System
   evaluatorSystemRoleKindRef?: U.KindRef
   evaluatorSystemRoleClassificationJudgmentRef?: U.RelationRef
@@ -63,8 +63,9 @@ ArchitectureDecisionAdequacyEvaluation@Project:
   architectureDecisionRecordProjectionRef?:
   coordinateValues:
     - coordinateRef:
-      triggerStatus: evaluated | notTriggered
+      triggerStatus: evaluated | notTriggered | unestablished
       notTriggeredReason?: required only for notTriggered
+      missingBasis?: required only for unestablished; identify the needed source or judgement
       value?: 0|1|2|3|4|5; required only for evaluated
       valueLabel?: absent|namedOnly|partiallyExpressedForDeclaredUse|sufficientlyExpressedForDeclaredUse|wellExpressedForDeclaredUse|exceptionallyExpressedForDeclaredUse; required only for evaluated
       adjacentValueRationale?: required only for evaluated
@@ -77,7 +78,7 @@ ArchitectureDecisionAdequacyEvaluation@Project:
   reevaluationTrigger:
 ```
 
-Here `@Project` is a compatibility and retrieval cue only. A project-local ADA record names both the composite `U.Work` in `projectWorkOccurrenceRef` and the obtaining record-use relation in `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's own project relation, the suffix, or either field alone is insufficient. `evaluatorSystemRoleKindRef` and `evaluatorSystemRoleClassificationJudgmentRef` remain optional and separate. When actual evaluation is claimed, the evaluator first has its A.13 core and `evaluationWorkRef` names Work independently admitted under A.15.1. Assignment species, occurrence, and `evaluationPerformedUnderAssignmentRef` are optional and appear only when the record or receiving use expressly represents precise assignment-bound attribution; any present F.6 ref uses the same obtaining A.13 assignment, and its absence or failure leaves the Work intact. Any operation application and result episteme remain separate. Kind, classification, assignment, Work, attribution, application, responsibility, and result do not substitute for one another.
+Here `@Project` is a compatibility and retrieval cue only. A project-local ADA record names both the composite `U.Work` in `projectWorkOccurrenceRef` and the obtaining record-use relation in `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's own project relation, the suffix, or either field alone is insufficient. `evaluatorSystemRoleKindRef` and `evaluatorSystemRoleClassificationJudgmentRef` remain optional and separate. When a particular dated evaluation Work occurrence is claimed, the evaluator first has its A.13 core and `evaluationWorkRef` names Work independently admitted under A.15.1. An ordinary evaluation retains the operation, material conditions and support needed for its result. Assignment species, occurrence, and `evaluationPerformedUnderAssignmentRef` are optional and appear only when the record or receiving use expressly represents precise assignment-bound attribution; any present F.6 ref uses the same obtaining A.13 assignment, and its absence or failure alone leaves independently admitted Work intact. If the finding questions a premise consumed by that admission, recheck it and dependent conclusions. Any operation application and result episteme remain separate. Kind, classification, assignment, Work, attribution, application, responsibility, and result do not substitute for one another.
 
 ### C.32.ADA:2 - Problem
 
@@ -131,7 +132,7 @@ Evaluate every coordinate. If a coordinate is not live, mark it `notTriggered` o
 
 | Coordinate | What is evaluated | Repair when weak |
 |---|---|---|
-| `BoundedDecisionQuestionRecoverability` | Decision subject, described holon, exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and applicable plane, evaluation window, status, and decision question can be recovered; a selected `BoundedModelUseStructure` is named only when it independently changes interpretation. | Repair the exact missing decision-subject, scope, slice, or model-use-structure assertion using `C.32.PAD`, A.2.6, or A.1.1. |
+| `BoundedDecisionQuestionRecoverability` | Decision subject, described holon, exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme, applicable plane, any time qualification required by the decision or use, status, and decision question can be recovered; a selected `BoundedModelUseStructure` is named only when it independently changes interpretation. | Repair the exact missing decision-subject, scope, slice, or model-use-structure assertion using `C.32.PAD`, A.2.6, or A.1.1. |
 | `CandidateBasisAndSelectionTraceability` | Candidate palette, residual frame, comparison, selection, selected set, or reason no candidate-set question is live is recoverable. | Repair the missing candidate, comparison, or selection assertion using the exact applicable content in `C.32`, `C.32.MLAO`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, or `C.11`. |
 | `AffectedStructureAndDescriptionAdequacy` | Affected selected structures, views, architecture descriptions, correspondence, structural-information lens uses, and source-return are recoverable. | Repair the exact missing structure, description, correspondence, or lens-use assertion using `C.30`, `C.30.ASV`, `C.30.AD`, `A.6.F`, `A.6.M`, or `C.29`. |
 | `ArchitectureCharacteristicTradeoffAdequacy` | Architecture characteristics, criteria rows, Q-Bundles, eval readings, accepted losses, and guardrails are explicit. | Repair the exact missing characteristic, criterion, reading, loss, or guardrail assertion using `C.32.ACS`, `C.32.HCS`, `C.25`, `C.32.ACE`, `C.16`, `C.31`, or `C.31.ASAP`. |
@@ -159,6 +160,8 @@ Declare the use before scoring. Common uses:
 Use these as ordinary defaults. A project can declare stricter stop conditions. It must not weaken a triggered coordinate by hiding it under an average, and it must not call a diagnostic result ready for developer work or governance enforcement.
 
 #### C.32.ADA:4.4 - Small complete evaluation slice
+
+This slice additionally records a dated evaluation and precise assignment-bound attribution. `ArchitectureReviewService-4` has the A.13 performer basis for decision-adequacy evaluation. A.15.1 independently admits `DecisionAdequacyEvaluationWork-12`, performed from 10:00 to 10:20 on 2026-08-12, enacting `DecisionAdequacyEvaluationMethod-2` within `ProjectArchitectureReviewService-4 : U.System`. The obtaining `ArchitectureReviewerAssignment-6` is of the directly declared species `ArchitectureReviewerAssignment`, has that recovered performer as holder and covers the Work. The separate F.6 relation uses that same obtaining A.13 assignment. These are the grounds for the Work and attribution fields below; the coordinate result is a separate episteme.
 
 ```text
 ArchitectureDecisionAdequacyEvaluation@OrderFlow:
@@ -231,14 +234,14 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 |---|---|
 | `CC-ADA-1` | Declared use and stop condition are written before evaluation. |
 | `CC-ADA-2` | The evaluated decision relation and optional ADR projection are cited. |
-| `CC-ADA-3` | Every coordinate is scored `0 absent` through `5 exceptionallyExpressedForDeclaredUse` or marked `notTriggered` with a grounded reason. |
+| `CC-ADA-3` | Every coordinate has a supported `0`–`5` value, a grounded `notTriggered` disposition, or an explicitly unestablished dependent value with its missing basis. Keep the complete evaluation draft while a required judgement is unestablished, retaining supported results. |
 | `CC-ADA-4` | Every value has adjacent-value rationale, not only a number. |
 | `CC-ADA-5` | No coordinate values are averaged or converted into one global score. |
 | `CC-ADA-6` | Weak coordinates name repair pattern refs and repair instructions. |
 | `CC-ADA-7` | Evidence, assurance, gate, measurement, eval, publication, Method, Work and pattern-quality claims retain their distinct meanings and applicable definitions or tests; exact ClaimGraph identity is cited when the claim or reliance needs it. |
 | `CC-ADA-8` | A project-local ADA record names both `projectWorkOccurrenceRef` and `architectureDecisionEvaluationProjectUseRelationRef`; the evaluated decision's relation, the suffix, or either field alone asserts no locality. |
-| `CC-ADA-9` | A local evaluator kind and a System-classification judgment use separate optional refs and neither requires an assignment. Actual evaluation first recovers the evaluator through A.13 and names independently admitted A.15.1 Work. Assignment species, occurrence, and F.6 refs are optional and appear only when the ADA record or receiving use expressly represents precise assignment-bound attribution; a missing or failed F.6 relation leaves independently admitted Work intact. An operation application and result episteme remain separate. Keep those objects and relations distinct, preserving the admission dependencies stated above; a label or record does not establish the other facts. |
-| `CC-ADA-10` | Every evaluation binds one exact `U.ClaimScope`, relevant A.2.6 `U.ContextSlice` membership, effective reference scheme and applicable plane, evaluation window, and input projection; the declared-use label and coordinate table do not replace them. |
+| `CC-ADA-9` | A local evaluator kind and a System-classification judgment use separate optional refs and neither requires an assignment. A claim about a particular dated evaluation Work occurrence first recovers the evaluator through A.13 and names independently admitted A.15.1 Work. Ordinary evaluation still retains the operation, material conditions and support needed for its result. Assignment species, occurrence, and F.6 refs are optional and appear only when the ADA record or receiving use expressly represents precise assignment-bound attribution; a missing or failed F.6 relation alone leaves independently admitted Work intact, with any questioned admission premise rechecked as above. An operation application and result episteme remain separate. Keep those objects and relations distinct, preserving the admission dependencies stated above; a label or record does not establish the other facts. |
+| `CC-ADA-10` | Each evaluation binds its exact claim scope, relevant context slices and reference scheme, preserving every declared selector and any plane, time qualification or input projection required by the judgement or receiving use. The declared-use label and coordinate table do not replace those conditions. |
 
 ### C.32.ADA:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -248,16 +251,16 @@ ArchitectureDecisionAdequacyEvaluation@OrderFlow:
 | `ADRCompletenessAsDecisionAdequacy` | The record has all headings, so the decision is treated as adequate. | Evaluate PAD relation, method docking, trade-off, source-return, and reopen conditions separately. |
 | `ReviewCommentWithoutRepairPattern` | The reviewer says "unclear" or "not enough detail" without a target repair pattern. | Assign the weak coordinate to `C.32.PAD`, `C.32.ADR`, `A.15`, `C.30.AD`, `C.32.ACS`, or another exact subject pattern. |
 | `GateByScale` | A value of `4` or `5` is treated as approval or certification. | Keep ADA as evaluation; use `A.21`, `A.10`, `B.3`, or governance patterns for gate, evidence, assurance, and enforcement claims. |
-| `NotTriggeredAsConvenience` | A difficult coordinate is marked not triggered to close the review. | Require a declared-use reason and receiving-pattern boundary; otherwise score it and repair. |
+| `NotTriggeredAsConvenience` | A difficult coordinate is marked not triggered to close the review. | Require a reason grounded in the declared use. If the coordinate is live, score it only when its basis is available; otherwise identify the missing source or judgement and leave the dependent value unestablished. |
 | `MethodDockingSkipped` | The decision is adequate for architecture discussion but then used to direct developer work. | Re-declare use as developer-work readiness and evaluate method docking, work split, and publication handoff. |
 | `SystemRoleLabelAsEvaluator` | A reviewer system-role kind, assignment, or ADA record is treated as the performer of evaluation. | Recover the exact admitted evaluator System through A.13 and let A.15.1 independently admit the dated evaluation Work. Retain the required A.13 assignment basis; add explicit assignment species/occurrence refs and F.6 when precise assignment-bound attribution is expressly represented. Keep any responsibility relation, result episteme, and operation application separate. |
-| `ContextLabelAsEvaluationScope` | A project, domain, or bounded-context label stands in for the evaluation boundary. | Bind the exact `U.ClaimScope`, selected context slices, scheme and plane, evaluation window, and decision-question input projection. |
+| `ContextLabelAsEvaluationScope` | A project, domain, or bounded-context label stands in for the evaluation boundary. | Bind the exact `U.ClaimScope`, selected context slices, reference scheme and every declared selector, with any plane, time qualification or decision-question projection required by the judgement. |
 
 ### C.32.ADA:9 - Consequences
 
 | Consequence | Benefit | Cost |
 |---|---|---|
-| Adequacy is coordinate-based. | Review can point to exact repairs instead of vague approval or rejection. | Evaluation requires inspecting every coordinate and explaining its value. |
+| Adequacy is coordinate-based. | Review can point to exact repairs instead of vague approval or rejection. | Evaluation requires inspecting every coordinate and explaining its supported result or missing basis. |
 | Declared use controls stop condition. | A decision can be adequate for one use and inadequate for another without contradiction. | Teams must state intended use before scoring. |
 | No average is allowed. | Weak but critical coordinates stay visible. | Some dashboards and summaries need redesign. |
 | Explicit repair conditions and subject-pattern locators are mandatory. | Review results become actionable. | Reviewers must recover the exact missing assertion and the pattern description containing its definition or constraint. |

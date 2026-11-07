@@ -72,7 +72,7 @@ The minimal durable series basis is `DHCSeriesRef.edition`, `DisciplineRef`, `In
 | `DHCCoordinateResultRef` | Ref to one persisted C.21/C.16 coordinate-result episteme and its active C.21 replay basis. | It is not a row, series, evidence path, or acceptance decision. |
 | `DHCSeries` | One C.2.1 episteme whose EntityOfConcern is the discipline and whose ClaimGraph orders coordinate-result refs by explicit windows under one intended use, ClaimScope, and comparison basis. | It is not a public U-kind, publication occurrence, dashboard, carrier, or Work. |
 | `DHCRow` | One representation element showing an exact coordinate-result ref and selected readable fields. | It does not compute, establish, or replace the result. |
-| `DashboardSlice` | A dashboard representation or grouping over exact row, result, or series refs; use C.29 when a mathematical correspondence is claimed. | It adds no comparison, normalization, acceptance, or selection semantics. |
+| `DashboardSlice` | A dashboard representation or grouping over exact row, result, or series refs; use C.29 when an unresolved mathematical representation or transfer question matters to the dashboard use. | It adds no comparison, normalization, acceptance, or selection semantics. |
 | `DHCTelemetryPin` | A G.11-facing refresh payload with a canonical trigger, exact affected scope, and changed definition, window, evidence, or policy pins. | It is not evidence, currentness, an edition relation, or refresh Work. |
 | dashboard publication | An E.24.PUB occurrence for one exact selected episteme edition expressed by the dashboard form, with its audience, bounded use, carrier, and availability interval. The selected edition may be a series, a coordinate result, or a view independently constituted as a C.2.1 episteme. | A view element, UTS row, rendering, upload, or release label does not supply episteme identity or make publication obtain. |
 
@@ -171,7 +171,7 @@ DashboardSlice := <
 * `PatternScopeId`: `G.12:Ext.QDTelemetry`
 * `GPatternExtensionKind`: `MethodSpecific`
 * `GoverningPatternId`: `C.18`
-* Conditional pins: `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `CharacteristicSpaceSpecRef.edition?`, `InsertionPolicyRef`, `EmitterPolicyRef?`, `ArchiveSnapshotRef?`, and `PathSliceId[]` when refresh uses them.
+* Conditional pins: `DescriptorMapRef.edition`, `DistanceDefRef.edition`, `CharacteristicSpaceRef` for the selected space and separate `characteristicSpaceDescriptionRef: U.EpistemeRef` when an exact description is consumed (resolve the pair under A.19:5.1.1.1), `InsertionPolicyRef`, `EmitterPolicyRef?`, `ArchiveSnapshotRef?`, and `PathSliceId[]` when refresh uses them.
 * Illumination and coverage stay telemetry unless a separate accepted policy promotes them into the comparator, dominance set, or selected-set criteria under C.18's trade-off and authority conditions.
 
 
@@ -209,10 +209,10 @@ DashboardSlice := <
 
 
 
-##### G.12:4.9.7 - `G.12:Ext.ViewFamilySeed` — advanced view seed
+##### G.12:4.9.7 - `G.12:Ext.ViewFamilySeed` — specialized views
 
 
-This non-normative seed reserves no semantics. An embedding, prediction, change-point, or drift panel needs its own selected governor, inputs, limitations, and policy before it can affect a claim or decision.
+An embedding, prediction, change-point, or drift panel needs its selected method, inputs, limitations, and policy before it can affect a claim or decision.
 
 ### G.12:5 — Interfaces
 

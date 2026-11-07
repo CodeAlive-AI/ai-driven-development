@@ -38,7 +38,7 @@ The specific failures are:
 | Whole-FPF quality vs local quality | One strong pattern can still belong to a framework whose entry and inter-pattern relations are weak. |
 | Discoverability vs precision | Real readers search ordinary words, while claim-bearing wording must preserve its FPF kinds and point to the content that defines, constrains, or tests the claim. |
 | Didactic force vs semantic admissibility | The text must teach the move without smuggling new ontology into examples or projections. |
-| Breadth vs affordability | Eleven Pillars are complete enough for FPF; affordability comes from compact evidence, not omitted coordinates. |
+| Breadth vs affordability | A complete result retains all eleven Pillars; reuse adequate evidence and limit further inquiry to what the judgement needs. |
 | Open-ended evolution vs release stop | FPF can improve forever, but one scoped object needs a local stop condition. |
 
 ### E.2.DA:4 - Solution
@@ -106,7 +106,7 @@ The values are ordinal content evaluations. They are not an aggregate scalar sco
 | `P4OpenEndedKernelAdequacy` | Do kernel concepts stay meta-level while domain knowledge stays in patterns? | New content extends FPF without smuggling domain doctrine into the kernel. |
 | `P5FPFLayeringAdequacy` | Do modular pattern layering and neighbour authority stay intact? | Patterns can be added, replaced, or removed without shadow authority. |
 | `P6LexicalStratificationAdequacy` | Are Plain, Tech, Formal, and mathematical registers recoverable for the declared use? | Decision-governing wording maps to fields named by value, kinds, lenses, or neighbours. |
-| `P7PragmaticUtilityAdequacy` | Do proofs, measures, models, and reviews change real admissible action? | The object changes prediction, decision, diagnosis, design, repair, stop, or assignment. |
+| `P7PragmaticUtilityAdequacy` | Do proofs, measures, models, and reviews supply a useful result for the declared work? | The object supports an explanation, prediction, judgement, decision, diagnosis, design, repair, stop, or assignment on relevant grounds. |
 | `P8CrossScaleConsistencyAdequacy` | Do composition, aggregation, boundary, emergence, and method-side relation structures stay consistent across scales? | Cross-scale claims name preserved structure, lost structure, lens or algebraic representation, and boundary. |
 | `P9StateExplicitnessAdequacy` | Are the states, transitions, currentness, editions and qualification windows that affect the declared use explicit? | Readers can identify the usable version and state, the conditions that change them, and relevant transition cost and risk. |
 | `P10OpenEndedEvolutionAdequacy` | Can justified improvement, revision, replacement or branching continue at acceptable cost and risk, while retention, stopping and retirement remain available? | The selected continuation or stop has a practical reason and a reopen condition; a completed Work occurrence is distinguished from a later Method, object version or Work. |
@@ -189,7 +189,7 @@ When `E.22`, `E.23`, absorption, or exceptional-improvement framing asks for imp
 
 **Projection repair.** README scenarios, ToC rows, `E.11` entry-distribution loci and worked comparisons improve search but can become separately maintained sources of pattern rules. `P5` and `P9` fall when projections become shadow sources. The repair places each authored definition, constraint, or test in the pattern body that supplies it and preserves the public aid's E.11 function. A locator remains a locator; an ordinary entry or Practical-Use Card retains its source-linked first-use guidance, including the first useful result or honest blocker and stop or wrong-turn return.
 
-**Source absorption.** A new source family adds current methods, but pattern bodies only cite it. `P11` stays low until source rows change selected actions, examples, checks, or stop conditions. `P7` changes only when the source changes action.
+**Source absorption.** A new source family adds current methods, but pattern bodies only cite it. `P11` stays low until source rows change selected actions, examples, checks, or stop conditions. `P7` changes when the source improves the receiving explanation, judgement, or action.
 
 ### E.2.DA:6 - Bias annotation
 
@@ -251,7 +251,7 @@ The bias is bounded by the object-under-improvement declaration. `E.2.DA` does n
 
 FPF needs a corpus-level quality instrument because the language can degrade while individual pattern edits look successful. The complete eleven-coordinate evaluation examines accumulated effects on Pillar realization even when each constituent change is a bounded local repair.
 
-The instrument is still affordable because it asks for short rationales and evidence loci named by value. It does not require a new review process, full audit bundle, or exhaustive evidence or source-material dossier.
+The result uses short rationales and evidence loci named by value. Obtaining their grounds can still require substantial work; reuse adequate evidence and select further inquiry for the question it can resolve. The result requires neither a new review process nor an exhaustive audit or source dossier.
 
 ### E.2.DA:11 - SoTA-Echoing
 

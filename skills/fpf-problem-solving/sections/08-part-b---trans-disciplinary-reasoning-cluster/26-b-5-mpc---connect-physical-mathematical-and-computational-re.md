@@ -296,7 +296,7 @@ Connect the abstract transition rule to the physical means. Exclusive possession
 
 A second entrance needs access to the same total stock. A copied stock of three additional accepted cards permits six simultaneous admissions, even if both attendants follow their local rule correctly. A shared pool of the original three cards preserves the common bound. Partitioning those same cards, for example two at one entrance and one at the other, also preserves it. The partition can make a visitor wait at one entrance while a card is free at the other; redistribution then needs a transfer of an existing free card.
 
-The useful result is a conditional admission design and an interpretation of its observable stock. Its computational contribution is a finite-state procedure that answers whether an admission can proceed and maintains the relevant count. People and material transfers can execute it without a digital program. The invariant does not establish fair waiting, fast entry or detection of every procedural violation; those are different questions with their own needed contributions.
+The useful result is a conditional admission design and an interpretation of its observable stock. Its computational contribution is a finite-state procedure that answers whether an admission can proceed and maintains the relevant count. People and material transfers can execute it without a digital program.
 
 The coordinating Method makes the physical card and room-boundary rules, mathematical invariant and executing procedure agree. This is also why changing the stock or the return rule changes the joint result even when the counting arithmetic remains correct.
 
@@ -350,7 +350,7 @@ The practitioner can assemble a useful answer from contributions obtained at dif
 
 The method also changes what work is commissioned. Instead of asking for another undifferentiated simulation or report, a team can ask for the missing physical relation, retained state, constructive algorithm, measurement or realization. An already adequate contribution remains available when an unrelated part changes.
 
-This connection work has a cost. Recovering an unfamiliar source, learning notation or obtaining a physical premise can take more effort than calculating the displayed answer. Spend that effort where it changes the receiving use. The method provides no automatic completeness claim for physics, mathematics or computing; it makes the needed subject contribution and its remaining boundary visible.
+This connection work has a cost. Recovering an unfamiliar source, learning notation or obtaining a physical premise can take more effort than calculating the displayed answer. Spend that effort where it changes the receiving use.
 
 ### B.5.MPC:10 - Architectural Rationale
 
@@ -360,9 +360,9 @@ The receiving physical question joins several operations whose local success has
 
 The epistemological and methodological contributions meet in the use of a result. Axiomatization can make the objects, premises and permitted constructions explicit. A physical postulate contributes to empirical knowledge through an interpreted model whose consequences can be compared with observations. Computational formulation and realization let agents work through consequences using specified operations on represented inputs. The practitioner connects these contributions to obtain and apply knowledge, then uses an encountered limitation or a newly available operation to change the method or pose another question. Their detailed constructions give substance to the pragmatic question: which further work becomes possible?
 
-The robot makes the need concrete. Circumference, transmission ratio, integer rounding and signed-command semantics are separately intelligible. The useful command exists only when they refer to compatible motion and counts. A.3.3 can help recover state, C.29 can construct and transfer the mathematical consequence, and C.16 can interpret an observation. Their contributions enter the joint question through the dependencies explained in :4; none by itself chooses all the other subject content.
+The robot makes the need concrete. Circumference, transmission ratio, integer rounding and signed-command semantics are separately intelligible. The useful command exists only when they refer to compatible motion and counts. A.3.3 can help recover state, C.29 can construct and transfer the mathematical consequence, and C.16 can interpret an observation. Their contributions enter the joint question through the dependencies explained in :4.
 
-B.5 provides the general inquiry method: recover the question, perform the missing contribution, make its result understandable, and settle or revise the inquiry. This specialization adds the recurring connections among physical account, mathematical interpretation, computational formulation and executing arrangement. The relation is specialization of inquiry coordination and composition with the constituent Methods. A mathematical Method does not become the parent of a physical modeling Method merely because its result is used there.
+B.5 provides the general inquiry method: recover the question, perform the missing contribution, make its result understandable, and settle or revise the inquiry. This specialization adds the recurring connections among physical account, mathematical interpretation, computational formulation and executing arrangement. The relation is specialization of inquiry coordination and composition with the constituent Methods.
 
 An alternative is to use a fixed forward sequence. That is convenient when every input is new and later stages expose no earlier gap. It becomes wasteful when a ready theorem supplies the answer, and inadequate when command semantics require an earlier state distinction. The dependency method retains a forward traversal but also supports backward recovery, direct entry and returns after changed conditions.
 
@@ -402,7 +402,7 @@ A sufficient answer remains a legitimate stopping point when the current use is 
 
 ### B.5.MPC:11 - SoTA-Echoing
 
-For the declared coordination question, the selected answer is the explicit combination of physical interpretation, operation-preserving mathematical use, computational formulation and realization comparison. The sources below supply particular advances and alternatives. The combined Method is a methodological synthesis. The three cases are constructed under their stated conditions. The synthesis and its cases establish no measured advantage for every discipline, reader or team.
+For the declared coordination question, the selected answer is the explicit combination of physical interpretation, operation-preserving mathematical use, computational formulation and realization comparison. The sources below supply particular advances and alternatives. The combined Method is a methodological synthesis. The three cases are constructed under their stated conditions.
 
 | Practice question | Source contribution, comparison and application | Limits and condition for reconsidering the choice |
 | --- | --- | --- |

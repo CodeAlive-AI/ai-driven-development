@@ -13,6 +13,8 @@ Use this pattern when generating or retaining variants raises a practical questi
 
 **First useful move.** Name the candidate set, the comparison or retention rule actually needed, and the supported return. If the question asks only which candidates are non-dominated, return that front under the declared comparator. If it asks what to keep for later exploration, state the archive membership and its retention reason. Keep the two answers distinct when both are needed.
 
+When a retention reason is not yet supportable, use B.5:4.1.2 on the candidate, source or failed attempt to develop what later inquiry or action it could enable and under which conditions. Compare that attainable contribution and the retention commitment through C.11.DUA:4.2–4.2.1; use an already adequate basis directly. C.19:4.0 develops this connection when the question concerns treatment of a live pool. Return the supported archive-membership decision, or the particular retention claim still open and the attainable contribution needed to settle it.
+
 An ordinary set description and explanation can finish the work. Use a reusable record when another use needs its references, editions or history. Generation alone can return a variant set without creating an archive or front; use C.40 when constructing or changing the material itself is the missing work.
 
 #### C.18:0.1 - What Goes Wrong If Missed
@@ -31,7 +33,7 @@ The primary `EntityOfConcern` in C.18 is the archive or front relation being ste
 
 ### C.18:2 - Problem
 
-Without C.18, a team often compresses several different objects into one word such as archive, front, Q-front, portfolio, style pool, or candidate set. That loses the distinctions between front, archive, and telemetry use:
+An undifferentiated label such as archive, front, Q-front, portfolio, style pool, or candidate set can hide which of these answers the reader needs:
 
 - a front answers current non-domination under a declared comparator or dominance set;
 - an archive answers retained exploration value, coverage, stepping-stone value, or future reachability under a declared retention policy;

@@ -1,0 +1,9 @@
+## RMP.Reference:11 - Connect Method improvement and research consequences
+
+Use [RMP.9](39-rmp-9-decide-whether-and-how-to-improve-research-methods-and.md) when a research Method or its practice becomes the actual question. First distinguish the Method from its description, implementation, local execution, capability and affected claim. An adequate current Method can be retained, and a determinate correction can finish after its relevant verification.
+
+When a material choice remains open, compare attainable alternatives for the same research purpose and the criticism it must withstand. Obtain further evidence only when its possible results can change that choice and its complete burden is warranted. Otherwise retain the supported position and restrict any unsupported use. A decision to decline a comparison does not qualify the Method.
+
+A corrected analysis can return through RMP.5/RMP.8 while a wider Method question remains open. A Method change can instead reopen an operational choice, credibility claim or synthesis contribution. Keep the actual dependency and unaffected results visible. New research still needs the RMP.1 membership conditions; Method improvement does not prescribe a ninth stage after every study.
+
+Core supplies Method identity, trial, fit, worth and variant distinctions; A.3.1.MI supplies introduction. [RMP.9's source account](39-rmp-9-decide-whether-and-how-to-improve-research-methods-and.md#rmp911---sota-echoing) connects these to research practice. C.11.MV permits an adequate present choice or a retained set with its limitation; further inquiry depends on its useful obtainable contribution and whole burden. RMP.9 applies those distinctions to the research question and its affected result. A sufficient research account can carry the decision without a separate C.11.MV record.

@@ -95,7 +95,7 @@ For a teaching contrast, the relation column may say **none asserted** and the c
 6. **No automatic closure.** Relations are not completed pairwise or transitively merely to fill a row.
 7. **No universal row type.** A `senseFamily` label is not required and cannot substitute for an intensional account of what is being compared.
 8. **Parsimony.** Keep only entries and columns that change the current answer.
-9. **Didactic bound.** Split a row that a careful reader cannot understand in about thirty seconds.
+9. **Didactic bound.** Split a row when its combined distinctions prevent the intended reader from recovering the comparison. Keep related claims together when their joint reading is needed.
 
 ### F.7:9 - Micro-illustrations
 
@@ -108,7 +108,7 @@ For a teaching contrast, the relation column may say **none asserted** and the c
 
 | Comparison or use | Exact source-local entries | Obtaining relations | Loss and boundary | Basis | Conclusion |
 | --- | --- | --- | --- | --- | --- |
-| Explain two class-order notations | OWL 2 `SubClassOf`; FPF `U.SubtypeRelation` claim | An explicit representation or semantic relation, if established for the selected expressions | OWL profile semantics and FPF kind criteria may differ | C.3, C.29, A.6.3.RT, and cited sources | Use one didactic gloss only within the stated notation comparison; do not include FCA order by resemblance. |
+| Explain two class-order notations | OWL 2 `SubClassOf`; FPF `U.SubkindOf` claim | An explicit representation or semantic relation, if established for the selected expressions | OWL profile semantics and FPF kind criteria may differ | C.3.1, C.29, A.6.3.RT, and cited sources | Use one didactic gloss only within the stated notation comparison; do not include FCA order by resemblance. |
 
 
 
@@ -169,7 +169,7 @@ Performed-Work attribution remains an A.15.1 and F.6 claim about actual Work and
 
 #### F.7:11.4 - Class inclusion and FCA order
 
-A contrast row may show OWL class inclusion, FPF subtype, and FCA concept order together while stating that FCA order is not class inclusion. A positive relation between the first two is still a separate claim with its own semantics and evidence.
+A contrast row may show OWL class inclusion, FPF `U.SubkindOf`, and FCA concept order together. FCA orders formal concepts by inclusion of their extents, equivalently reverse inclusion of their intents, within a selected formal context ([Rudolph, Săcărea and Troancă, 2015, §2.1](https://iccl.inf.tu-dresden.de/w/images/a/aa/RST-IJCAI2015.pdf)). That order does not by itself establish an OWL class axiom or an FPF subkind fact. A positive correspondence requires an explicit interpretation and grounds for the chosen domain and membership criteria.
 
 #### F.7:11.5 - *Role* trigger word
 

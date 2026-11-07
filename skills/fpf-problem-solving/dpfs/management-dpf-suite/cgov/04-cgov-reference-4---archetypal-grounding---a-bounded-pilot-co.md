@@ -1,0 +1,17 @@
+## CGOV.Reference:4 - Archetypal grounding - A bounded pilot commitment
+
+The following case is constructed to show joint use. Its rules are inputs, not a statement of general law.
+
+SensorCo proposes a service pilot with a supplier in which one director has a material interest. The supplied corporate rules reserve the pilot commitment to the board, exclude that director from deliberation and voting, require both remaining directors to approve, and require a shareholder summary before the decision. The summary must include scope and the material interest, with personal identifiers and supplier trade secrets redacted. No separate shareholder consent is required for the preparatory scope.
+
+An operational rule additionally requires a technical release before live plant control. Preparation and an offline simulation are permitted before that release. Finance has supplied a funding and consequence account for preparation, and an adviser recommends proceeding.
+
+1. [CGOV.1](11-cgov-1---frame-the-corporate-matter-and-its-governing-rules.md) separates the preparatory commitment from live deployment. Existing rights and delegation information answers the relevant [CGOV.2](12-cgov-2---distinguish-shareholding-voting-power-and-control.md)–[CGOV.3](13-cgov-3---establish-authority-for-corporate-appointments-remo.md) questions.
+2. [CGOV.6](16-cgov-6---expose-conflicts-and-related-party-interests.md) determines the director's disclosure and participation conditions. [CGOV.7](17-cgov-7---arrange-independent-review-and-a-disinterested-corp.md) connects any warranted independent contribution with eligible decision participants; the case supplies no requirement for another supplier report merely because a relationship exists.
+3. Use [CGOV.8](18-cgov-8---provide-corporate-information-under-applicable-righ.md) to provide the required summary to its recipients, preserving its material content and confidentiality conditions. The financial account retains its preparation-only scope. An audit question, if one arises, returns to [CGOV.10](20-cgov-10---obtain-and-use-a-scoped-audit-or-assurance-conclus.md).
+4. With these conditions met, the two eligible directors deliberate and approve the preparatory commitment through [CGOV.11](21-cgov-11---make-and-record-a-corporate-decision.md). They preserve the outcome in the form required by the supplied procedure. Live deployment remains conditional on the technical release.
+5. Use [CGOV.13](23-cgov-13---monitor-corporate-performance-and-require-an-accou.md) to follow the authorized undertaking and the condition that can change its continuation. The responsible participant can require an account and perform a permitted response when performance diverges.
+
+The worked result is the authorization of bounded preparation, conditional on the stated steps having been performed. It is not authorization of deployment. If a required director cannot participate, the corporate decision waits for a permitted arrangement; the usable financial analysis and permitted preparation of materials remain. If the assignment was only to identify the conflict conditions, its result can stop after step 2.
+
+A shareholder's protected challenge can proceed through [CGOV.12](22-cgov-12---protect-corporate-minority-holders-rights-and-enab.md) without treating every challenge as a veto. A genuine arrangement defect can require [CGOV.14](24-cgov-14---decide-whether-and-how-to-change-corporate-governi.md). These branches show why the language is a repertoire with connected results rather than one compulsory lifecycle.

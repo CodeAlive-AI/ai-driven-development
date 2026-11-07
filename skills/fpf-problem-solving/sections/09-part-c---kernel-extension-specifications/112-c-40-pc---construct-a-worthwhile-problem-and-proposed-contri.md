@@ -80,7 +80,7 @@ A receiver's desire alone does not defeat a binding protection. Conversely, miss
 
 Say what could be supplied, for which receiving use, under what conditions, with what exclusions, and what the receiver could inspect to determine whether that contribution was supplied as proposed. Keep the proposed result, the acceptance criterion, and any actual acceptance separate.
 
-Use [A.2.3](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when a promise's content must be identified or relied on. Read an existing provider promise from its actual source; mark a newly constructed promise as proposed. Neither description establishes a provider commitment, capability, access, provision, fulfilment, or achieved benefit.
+Use [A.2.3](../03-first-principles-framework-readme/_index.md) when a promise's content must be identified or relied on. Read an existing provider promise from its actual source; mark a newly constructed promise as proposed. Neither description establishes a provider commitment, capability, access, provision, fulfilment, or achieved benefit.
 
 A research contribution can be a criticism, discriminating experiment, reproducible comparison, or clarification of an unresolved claim. It need not be sold, but its intended epistemic result and evidence standard must still be inspectable. Do not impose a commercial service model on that use.
 
@@ -90,7 +90,7 @@ Explain why the proposed result could address the missing receiving result. Mark
 
 When a consequential uncertainty remains, ask a discriminating question whose attainable answer warrants the inquiry. “Does the reviewer need a source-traceable account of unsupported claims, or is the delay actually caused by unavailable acceptance authority?” can redirect the contribution. “Would you like better AI?” cannot distinguish the problem from the preferred solution.
 
-Use existing adequate results before requesting new Work. When another practice must supply an answer, use [A.15.9](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) for the bounded result request and reliance boundary. The supplying practice answers its own substantive question. A proposed interview, measurement, or experiment still needs the permissions and conditions applicable to that activity.
+Use existing adequate results before requesting new Work. When another practice must supply an answer, use [A.15.9](../03-first-principles-framework-readme/_index.md) for the bounded result request and reliance boundary. The supplying practice answers its own substantive question. A proposed interview, measurement, or experiment still needs the permissions and conditions applicable to that activity.
 
 #### C.40.PC:4.6 - Return the account at the strength it supports
 

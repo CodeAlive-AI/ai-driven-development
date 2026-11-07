@@ -1,0 +1,9 @@
+## CAD.Reference:5 - What is covered and what must be supplied
+
+The first quantitative use needs a usable plant model, initial conditions, uncertainty sets, candidate channels and delivery conditions, a specified feedback law or finite family, required state/input limits, and a control objective. CAD.5 develops information and action constructions for that class. CAD.1–CAD.4 add planning models, command reconstruction, error sets, joint constraints and execution choices when their assumptions fit.
+
+The methods do not promise arbitrary nonlinear or learned-controller synthesis, identification of an unknown plant, security of a communication channel, or certification of a physical installation. Those are real neighboring tasks: an unsupported disturbance envelope or an unbounded communication delay can defeat a mathematically correct conclusion here. Obtain the missing model or guarantee, restrict the intended use, or retain the negative result. The separate continuous-time branch in CAD.3:4.5 needs its stated derivative, Lipschitz and forward-containment premises; sampled constraints do not establish intersample safety.
+
+A proposed architecture, a mathematically qualified model and a physically qualified implementation support different claims. The practitioner should be able to answer which observation times and executed inputs were used, which error bound holds over the allowed run, which one action works for all compatible states, what preserves continuation, and how computation realizes those conditions. The full patterns supply these tests.
+
+The examples favor transparent linear calculations and explicitly bounded uncertainties. Exact sets can be expensive and outer sets conservative. A stochastic expected-cost task may justify a different estimator and schedule; CAD.5:11 compares that alternative. An unqualified biological analogy or a component score cannot replace the chosen model and control criterion.

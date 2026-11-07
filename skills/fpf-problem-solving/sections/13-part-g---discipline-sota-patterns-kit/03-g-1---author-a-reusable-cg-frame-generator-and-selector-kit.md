@@ -132,7 +132,7 @@ The chassis is *view‑friendly*: it is an inventory of “what exists and how i
   * `ReferenceMap` *(cite `G.0:CG‑Spec.ReferenceMap`; do not duplicate semantics)*
   * any declared crossing/policy pins *(pin set: `PartG.CrossingVisibilityPins`)*
 
-**Purpose:** provide the *single scope anchor* used by all downstream cards.
+**Purpose:** provide the single scope anchor used by the downstream cards. If the receiving criteria or comparison basis are not yet established, obtain them through `G.0:4.5.1` before binding M1; reuse an adequate existing frame.
 
 **Notes:** any spec-legality content is **cited** via `A.19.CN (CN‑Spec)` and `G.0 (CG‑Spec)` (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`); this card does not introduce a local “mini‑spec”.
 
@@ -423,7 +423,7 @@ All method/discipline/generator specifics MUST be expressed as `GPatternExtensio
 | CC‑G1‑05          | `M4` MUST be wired to `G.5` (or explicitly cite `G.5` artefacts governed by cited patterns) and MUST preserve set-result outcomes. `SCRId` MUST be present (or recoverable from an explicitly cited SCR record) so the G.5 audit references are addressable; assurance content is required only for an actual named assurance claim; `DRRId` SHOULD be present when a decision‑rationale artefact is minted.   |
 | CC‑G1‑06          | `M5` MUST publish a library/index surface that points to referenced CHR/CAL/LOG artefacts and to any minted public ids (`UTSRowId[]`, Name Cards) via the canonical governing definitions (Part F), without introducing shadow specs (delegation target: `CC‑GCORE‑CN‑CG‑1` via `CC‑G1‑CoreRef`).    |
 | CC‑G1‑07          | `M6` MUST publish `CGKitId` and expose refresh-readiness wiring: canonical `RSCRTriggerKindId[]` applicability, minimal payload pins and RSCR test ids. Planned baseline references MUST follow `G.1:4.2.6`, including the additional references required when `A.15.3` applies; orchestration semantics MUST be cited to `G.11`. |
-| CC‑G1‑08          | Any method/discipline/generator specificity in `G.1` MUST be located in `G.1:4.4` as `GPatternExtension` blocks with `PatternScopeId`, `GPatternExtensionKind`, and `GoverningPatternId` (or `governing pattern not yet selected` only for Phase-3 seeds). If QD/illumination or Open‑Ended generator families are declared, the corresponding extension blocks MUST be present and MUST carry the edition and policy pins required by the governing pattern. |
+| CC‑G1‑08          | Any method/discipline/generator specificity in `G.1` MUST be located in `G.1:4.4` as `GPatternExtension` blocks with `PatternScopeId`, `GPatternExtensionKind`, and `GoverningPatternId`. If QD/illumination or Open‑Ended generator families are declared, the corresponding extension blocks MUST be present and MUST carry the edition and policy pins required by the governing pattern. |
 
 ### G.1:8 - Common Anti‑Patterns and How to Avoid Them (informative)
 

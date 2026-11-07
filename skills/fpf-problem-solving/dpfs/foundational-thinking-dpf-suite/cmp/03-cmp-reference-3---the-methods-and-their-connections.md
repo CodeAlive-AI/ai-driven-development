@@ -1,0 +1,37 @@
+## CMP.Reference:3 - The methods and their connections
+
+The grounds in §1 explain why these methods belong together. Their connections depend on the result being constructed, not on every method being used. In particular, a change to what counts as an operation can alter a cost bound, an interpretation and a composition argument together. CMP.16 develops that constructive change; the other methods supply the specific obtaining, analysis and interaction contributions it can require.
+
+### CMP.Reference:3.1 - Construct an algorithm
+
+[CMP.1](09-cmp-1---solve-one-problem-through-another-or-transfer-a-limi.md) connects a new computational problem to a solver for another one. Its conversion and answer recovery also determine the direction in which an impossibility or resource result can travel. [CMP.2](10-cmp-2---derive-a-recursive-procedure-from-a-problem-decompos.md) constructs a recursive procedure by choosing smaller problems, sufficient returned information and a reason for progress. [CMP.3](11-cmp-3---share-and-schedule-repeated-subcomputations.md) turns repeated subcomputations into a shared dependency structure, choosing evaluation order and what to store or recompute.
+
+[CMP.5](13-cmp-5---bound-an-optimum-or-recover-a-feasible-candidate-thr.md) obtains a tractable relaxation and connects its bound or solution back to the original problem. [CMP.4](12-cmp-4---construct-computational-search-with-justified-exclus.md) uses such bounds, or other justified conditions, to exclude search branches without losing the requested result. A feasible candidate can be useful before search finishes; its quality claim depends on the remaining alternatives and available bound.
+
+[CMP.6](14-cmp-6---derive-an-iterative-computational-update-from-local.md) constructs an admissible iterative change from local information. The neighborhood and progress argument decide what stopping establishes. [CMP.7](15-cmp-7---construct-a-learner-from-examples-and-feedback.md) constructs the procedure that selects or updates a rule from examples and feedback. It separates that procedure from the resulting rule and separates successful optimization from what the rule supports on further cases. Search or iterative updating can supply its obtaining operation.
+
+### CMP.Reference:3.2 - Control error and computational cost
+
+[CMP.8](16-cmp-8---construct-an-approximate-computation-with-controlled.md) turns a permitted approximation into an effective computation with an error and stopping account. Mathematical convergence supplies part of the reasoning; the algorithm still needs usable operations and a finite return condition. [CMP.9](17-cmp-9---construct-a-randomized-estimator-or-sampling-procedu.md) constructs sampling and estimation, retaining the target law, dependence and stopping conditions. A random output, a sample distribution and an estimate have different uses.
+
+[CMP.10](18-cmp-10---choose-a-computational-representation-for-its-acces.md) derives a data representation from the required access and update operations. It exposes costs moved into conversion, maintenance or output. [CMP.11](19-cmp-11---derive-a-computational-lower-bound-from-indistingui.md) proves a lower bound by finding inputs that remain indistinguishable under the allowed observations but require different answers. It constrains all procedures within that model; a changed access operation or tolerated error can reopen the conclusion.
+
+These methods can change the construction in Part A. A prohibitive shared table can motivate scaling, another representation or a weaker answer. A lower bound can redirect the question rather than motivate another attempt at the same impossible guarantee. A randomized construction remains subject to the output conditions the receiving work needs.
+
+### CMP.Reference:3.3 - Interpret, transform and compose computations
+
+[CMP.12](20-cmp-12---construct-an-interpreter-or-a-meaning-preserving-tr.md) constructs an evaluator or a translation by specifying expression meaning, binding, primitive operations and control. The preservation relation follows what the receiving computation can observe. [CMP.13](21-cmp-13---construct-a-computational-abstraction-for-the-prope.md) constructs a cheaper abstract computation for a selected property, with operations that justify its conclusions and a way to reconstruct or refine an apparent counterexample. [CMP.14](22-cmp-14---compose-interacting-computations-through-their-requ.md) constructs the shared-state or communication behavior needed when computations interact, including the assumptions under which progress follows.
+
+[CMP.15](23-cmp-15---compose-independent-extensions-of-data-variants-and.md) applies when independently added data variants and operations must work together. It supplies the required combinations, explicit joining implementations, recursive binding and preservation conditions. Use CMP.12 to derive an interpretation that a joining body still needs; use CMP.14 when shared state or changing visible methods introduces interaction. An adequate closed interpreter can remain unchanged when independent extension is unnecessary.
+
+[CMP.16](24-cmp-16---construct-computational-units-and-operations-for-a.md) constructs units and admissible operations from the required whole behavior. It tests a proposed assembly, changes the information or protocol at a failed join, and connects the resulting abstraction to its implementation. Its result can supply the operations assumed by a recurrence, a representation choice or an interpreter. CMP.13 instead constructs an approximate analysis of a given computation; CMP.14 establishes the joint behavior when the new operations interact. The methods can cooperate without supplying the same result.
+
+The returned operations can themselves become objects of further work: an algorithm can interpret another algorithm's description, a translator can transform it, and an abstract procedure can inspect its possible behavior. Mathematical Thinking supplies constructions of operations and interpretations. CMP adds effective execution and its consequences under the chosen computational model.
+
+These methods do not form a compulsory sequence. A reader with an adequate formulation can enter at a missing bound or representation. A representation failure can return to the recurrence; a semantic failure can return to interpretation; a communication failure can return to composition. Keep the required result and the assumptions of these connections visible when different agents supply the contributions.
+
+### CMP.Reference:3.4 - Constituent actions in ongoing work
+
+Updating a visited set can be part of executing a graph-search algorithm while a route-finding task is under way. Changing the required answer from any route to a route with the fewest edges changes which frontier-selection discipline suffices; a successful visited-set update alone does not establish the stronger result. The practitioner needs to connect the local update, the algorithm's invariant and the route requirement, while retaining its representation and memory conditions. Knowing set operations and the desired route can leave that intermediate algorithmic reasoning missing.
+
+FPF B.1.5.EW helps recover these constituent–whole connections; B.1.5.RS examines a proposed replacement. Examine the connections needed to settle the present question. Performing a method described here can require capability, support and compatible resources for its constituent operations and for the larger work.

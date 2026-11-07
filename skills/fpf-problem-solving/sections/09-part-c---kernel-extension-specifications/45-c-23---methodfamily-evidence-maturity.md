@@ -50,7 +50,7 @@ with the following **branch obligations**:
 *Rationale:* selector legality requires the CG‑Spec gate to be explicit, not implicit in prose. Publish associated **ReferencePlane** notes alongside the consulted ids.
 
 **R0.QD — QD pre-gates (when QD is used).** Apply these gates when the TaskSignature enables a QD search or QD illumination use, including an open-ended generator that actually uses QD. Resolve that use and its fields under C.22:5.1. Retaining evidence under `PortfolioMode=Archive` or emitting a set of alternatives does not activate this branch. For the active QD use, verify:
-(i) **CharacteristicSpaceRef** characteristics are CHR‑typed, d≥2, **ReferencePlane** per characteristic declared;
+(i) **CharacteristicSpaceRef** resolves to the CHR-typed coordinates and dimension required by the declared descriptor and comparison rules, with ReferencePlane wherever interpretation or the receiving contract requires it;
 (ii) **ArchiveConfig** is lawful (topology, resolution, **K**>0, `InsertionPolicyRef`, `DistanceDef` with **edition id** and declared metric/pseudometric status);
 (iii) **EmitterPolicyRef** present (with **edition id**);
  (iv) resolve **DominanceRegime**; if absent, use **default= ParetoOnly**.
@@ -65,7 +65,7 @@ with the following **branch obligations**:
 
 **R2 — Degrade.** Apply R0 and, when applicable, R0.QD before any degrade branch, including U2, U3, and R7. Failure returns `Abstain` for the attempted use. After those gates pass, return `Degrade(mode)` only through a declared family branch when an admitted unknown or an unmet acceptance condition permits a narrower scope or execution mode under the applicable CAL failure behavior; `mode ∈ {scope-narrow | sandbox | probe-only}`. An eligibility violation still requires R3 abstention. Record the exact S2 unknowns or unmet conditions, narrowed claim scope or execution mode, qualification window, governing policy edition, and result. If the branch changes the intended use, re-evaluate R0 and eligibility for that bounded use before relying on it. LOG-Degrade never changes CHR scales or planes or turns a failed CAL verdict into a pass.
 **Note (CAL vs LOG).** CAL‑level **`degrade.order`** (fall‑back to order‑only comparisons) is governed by **G.4**/**CG‑Spec** and is **not** a LOG mode. **SoS‑LOG never overrides CAL outcomes**; a LOG branch **only narrows** `Scope(G)` or **execution mode** (e.g., `sandbox`, `probe‑only`), it **does not** alter CHR scales or admissible orders.
-`probe‑only` MUST cite an **E/E‑LOG policy id** (exploration budget) and Acceptance‑bound guards.
+`probe-only` MUST cite the applicable probe-budget and Acceptance-bound guards. Cite an E/E-LOG policy when that policy governs exploration over a still-live pool.
 
 **R3 — Abstain.** If S2 violates **Eligibility** or R0 fails, return `Abstain` with the failed rule, reasons, and available policy, evidence-profile, scope, and qualification-window basis. Report missing references and unperformed judgements under §4.2.1. Abstain is mandatory for illegal CHR operations and when a conclusion depends on an F.9 Bridge, kind relation, or plane relation that has not been established.
 
@@ -135,14 +135,14 @@ When a maturity judgement is established for an admission use, publish or cite i
 
 **W1.** Register the SoS-LOG rule ids. Publish or cite a `MaturityCardDescription` for an established maturity judgement under §4.3; use §4.2.1 when an early stop leaves that judgement unavailable. RSCR tests cover `Admit`, `Degrade`, `Abstain`, and unknown paths, including early reports with missing bases or unperformed judgements. Relation and loss-policy ids appear only where a branch actually relies on them.
 **W2. Admissibility Ledger.** Publish an editioned `AdmissibilityLedger`. Each selector-facing row identifies the exact `MethodFamilyId`, G.5 registry edition, TaskSignature, RuleId and rule edition, intended admission use, claim scope, qualification window, decisive branch, and decision result. Record its MaturityRung, EvidenceProfile, AcceptanceClause and policy references, verdicts, evidence paths, DominanceRegime, and PortfolioMode according to §4.2.1: retain established or applicable reused values and explain any required but unresolved reference or unperformed judgement. An explanation of a missing or unperformed result accompanies its unfilled value position; it is not a substitute verdict or rung. Include obtaining relation and loss-policy ids only when actually used, and G.6 path ids under R5's condition. UTS registers the row vocabulary; the ledger records the admission result and its basis.
-**W3. Strategy composition.** For a selection composition called a strategy, cite its governing G.5 rule and **E/E-LOG** policy.
+**W3. Strategy composition.** For a selection composition called a strategy, cite its governing G.5 rule. Cite an E/E-LOG policy when the composition uses that policy over a still-live pool.
 **W4.** Selector (G.5) **consumes** these rules; results appear in the **Dispatcher Report** with reasons in/out and cited anchors/bridges.
 
-### C.23:5 - Archetypal Grounding (Tell–Show–Show)
+### C.23:5 - Archetypal Grounding
 
 The following are constructed branch examples. For each later branch, stipulate that the named family and policy editions resolve and R0 passes; the QD case also passes R0.QD. Every Admit below additionally requires the complete R1 Eligibility, evidence and Acceptance basis. If a stipulated prerequisite is missing, use the early-Abstain result in §4.2.1 instead.
 
-**Show‑1 - Continuous dynamics (ODE task).**
+**Continuous dynamics (ODE task).**
 *S2 excerpt.* `DataShape=ODE; stiff?=unknown; Hamiltonian=unknown; Size≈10^3; Objective={↓error@ratio, ↑throughput@ratio}; Jacobian_sparsity=high; Missingness=MAR`. A declared safety predicate tests the required ordinal safety level.
 *Families.* `Implicit‑BDF` vs `Explicit‑RK` vs `Symplectic`.
 *Rules.*
@@ -151,9 +151,9 @@ The following are constructed branch examples. For each later branch, stipulate 
 - `Symplectic`: requires `Hamiltonian=true`; its declared branch for the live `unknown` returns `Abstain`, without reporting a false Hamiltonian judgement.
 *Didactic anchor.* This mirrors C.22’s typed‑signature discipline and CHR legality (no ordinal means; unit alignment for **ratio**).
 
-> The cited ecosystem examples of these families (post‑2015) are organised in **DifferentialEquations.jl**, which exposes multiple solver **families** under one call surface—precisely the pattern G.5 expects. ([Journal of Open Research Software][17])
+> Rackauckas and Nie (2017) describe **DifferentialEquations.jl** as a common problem-and-solve interface for different differential-equation methods. That interface illustrates how task description can remain stable while solver choice varies. The C.23 admission conditions above are FPF's conditions. ([Journal of Open Research Software][17])
 
-**Show‑2 - Planning/scheduling (MIP task).**
+**Planning/scheduling (MIP task).**
 *S2 excerpt.* `DataShape=MIP; NoiseModel=deterministic; Objective={↓cost@ratio, ↑service_level@ordinal}; Size≈10^5 vars; convex_relaxation=available`.
 *Families.* `MILP (branch‑and‑bound)`, `Constraint‑Programming`, `Heuristic meta‑search`.
 *Rules.*
@@ -162,23 +162,18 @@ The following are constructed branch examples. For each later branch, stipulate 
 - `Heuristic meta‑search`: **MaturityCard**=`L1`. The applicable AcceptanceClause and family failure policy decide between a permitted `Degrade(sandbox)` branch and `Abstain`; L1 alone supplies neither outcome.
 *Didactic anchor.* G.5 declares a `Shortlist` of the non-dominated retained candidates, with its comparison basis and unresolved ties; no cross-ordinal weighting is introduced.
 
-> The cited “single call / many solvers” packaging that motivates MethodFamily rows is exemplified by **JuMP** (2017–2022), which cleanly separates **model description** from solver choice. ([Miles Lubin][18])
+> Dunning, Huchette and Lubin (2017) describe **JuMP** as a modeling language that separates model expression from optimization-solver choice. This supplies a concrete software example of preserving a problem description while considering different solvers. ([SIAM Review][18])
 
-- *DifferentialEquations.jl* illustrates **family‑based** solver packaging (multi‑method under one interface), 2017–2024 ecosystem. ([Journal of Open Research Software][17])
-- *JuMP* illustrates **model/solver separation** and registry‑like selection (2021–2022 papers, site). ([Miles Lubin][18])
-- *Science of Science* review (2018) supports the emphasis on replication/benchmarks in maturity assessment. ([Science][19])
-
-**Show‑3 - QD archive (policy search).**
+**QD archive (policy search).**
 *S2 excerpt.* `PortfolioMode=Archive; CharacteristicSpaceRef(d=2); ArchiveConfig(CVT, res=1k cells, K=1, DistanceDefRef.edition=v2, InsertionPolicyRef=dyn‑elite); EmitterPolicyRef=v3; DominanceRegime=ParetoOnly`.
 *Rules.* After `Admit`, G.5 declares a `Shortlist` drawn from the QD archive, with exact members, ordering and basis under G.5:4.4b–4.4e. The archive remains its source. Illumination is reported separately; changes to `DistanceDef` or the emitter are editioned in SCR; dominance remains **ParetoOnly**.
 
-**Show‑4 - Open‑ended GeneratorFamily (POET‑class).**
+**Open‑ended GeneratorFamily (POET‑class).**
 *S2 excerpt.* `GeneratorIntent{GeneratorFamilyRef=GF‑01, EnvironmentValidityRegion=EVR‑A, TransferRulesRef=TR‑A, CoverageMetric=…}; PortfolioMode=Archive`.
 *Rules.* After `Admit`, G.5 declares a `Shortlist` over eligible `{environment, method}` pairs with its source and selection basis; `Degrade(scope-narrow)` if `TransferRules`=`unknown`, as permitted by the family policy under R7. Telemetry publishes the declared **coverage and regret** with their edition and policy basis. This use requires no QD search or illumination report. If a later receiving use needs **IlluminationSummary**, obtain its C.17:5.1 measurement basis and retain the governing policy id on improvements.
 
 [17]: https://openresearchsoftware.metajnl.com/articles/10.5334/jors.151 "DifferentialEquations.jl – A Performant and Feature-Rich … "
 [18]: https://mlubin.github.io/pdf/jump-sirev.pdf "JuMP: A Modeling Language for Mathematical Optimization"
-[19]: https://www.science.org/doi/10.1126/science.aao0185 "Science of science"
 
 ### C.23:6 - Bias‑Annotation
 
@@ -198,7 +193,7 @@ Maturity is evidence-relative: a rung established for one family, scope and use 
 | **CC‑C23.8** | Publish to **UTS** with twin labels. Run **GateCrossing visibility checks** only for a cited crossing of a selected **E.18** transformation-flow structure. Require **CrossingBundle** attestation only when the named receiving use needs it; apply **E.18/F.9/F.17/E.17** under their respective current uses. Apply **LanePurity** and **Lexical SD** (**E.10**); use GateChecks/GateProfile (**A.21**) only when a named gate decision is current. | Publication & crossing visibility hygiene. |
 | **CC‑C23.9** | All enumerations (e.g., `Degrade(mode)`, Maturity rungs) **SHALL** declare a **closed value set** and **Scale kind**, and be registered at UTS (LEX enum clarity).                          | Avoids lexical drift; lawful typing.          |
 | **CC‑C23.10** | **RSCR tests** cover negative/refusal paths (illegal CHR ops; CG‑Spec gate fail; Bridge missing when relied on; **Φ table/policy‑id missing** when that penalty policy is used; **Lexical SD violations (E.10)**); ensure **branch coverage** (Admit/Degrade/Abstain, unknown). | |
-| **CC‑C23.11** | For an active QD use, **R0.QD MUST** pass: lawful **CharacteristicSpaceRef** (d≥2, characteristics typed, planes declared), **ArchiveConfig** (topology, resolution, K, `InsertionPolicyRef`, editioned `DistanceDef`) and **EmitterPolicyRef**. Evidence retention or set-valued selection alone does not activate this gate. | QD requirements apply to the actual QD use. |
+| **CC‑C23.11** | For an active QD use, **R0.QD MUST** pass: lawful **CharacteristicSpaceRef** (coordinates typed, dimension sufficient for the declared descriptor and comparison rules, planes declared where interpretation or the receiving contract requires them), **ArchiveConfig** (topology, resolution, K, `InsertionPolicyRef`, editioned `DistanceDef`) and **EmitterPolicyRef**. Evidence retention or set-valued selection alone does not activate this gate. | QD requirements apply to the actual QD use. |
 | **CC‑C23.12** | **DominanceRegime** **SHALL** default to `ParetoOnly`; switching to `ParetoPlusIllumination` **MUST** be authorised by **CAL** and cited by id in SCR.                                    | Prevents implicit scalarisation.              |
 | **CC‑C23.13** | Resolve `PortfolioMode` through G.5 `CC-G5.23`. An archive remains a source; G.5 outcomes follow G.5:4.4b–4.4e after the applicable admission result. When illumination telemetry is used, it remains report-only unless CAL authorises its dominance contribution. | Separates retention, QD construction and selector outcome. |
 | **CC‑C23.14** | If `GeneratorIntent` is present, **R7 MUST** verify **EnvironmentValidityRegion** and **TransferRulesRef**. G.5 declares its outcome over **{environment, method}** pairs under G.5:4.4b–4.4e; coverage and regret remain telemetry. | OEE legality and telemetry. |
@@ -212,7 +207,7 @@ Maturity is evidence-relative: a rung established for one family, scope and use 
 
 ### C.23:9 - Rationale
 
-For a named admission-assurance claim, B.3 requires each of **F**, **G**, and **R** that the use consumes to have a declared bearer, meaning, and scale. Claim scope and selected USM slices remain explicit; **WLNK** and **Φ(CL)** are used only under an applicable, calibrated aggregation or loss rule. Treating maturity as **evidence‑typed rungs**—rather than a “score”—avoids illegal arithmetic and keeps locally declared **DesignRunTag** values under their actual temporal predicates and C.27 adequacy conditions, with explicit GateCrossings only when a selected E.18 transformation-flow structure contains them. This mirrors the cited 2018 **science‑of‑science** insights: replication, benchmarking, and field health indicators are the **currency** of maturity, not anecdote.  ([Science][19])
+For a named admission-assurance claim, B.3 requires each of **F**, **G**, and **R** that the use consumes to have a declared bearer, meaning, and scale. Claim scope and selected USM slices remain explicit; **WLNK** and **Φ(CL)** are used only under an applicable, calibrated aggregation or loss rule. Evidence-typed maturity rungs preserve the declared ordinal distinctions and admissible comparisons. Separately, locally declared **DesignRunTag** values retain their temporal predicates and C.27 adequacy conditions; cite a **GateCrossing** only when the selected E.18 transformation-flow structure contains it.
 
 ### C.23:10 - Relations
 

@@ -1,0 +1,7 @@
+## SIE.Application:3 - APP-SIE-03 - End-to-end quality and provenance
+
+A data pipeline is syntactically healthy, yet an analytic may be unsafe because a source version is stale, a unit conversion is wrong, a default hides absence, a mapping omits one category, or derivation is missing. The contract selects only quality dimensions and thresholds that can change this use. The source manifest and mapping specification expose versions, units, defaults, error branches, and provenance. The claim composition keeps governed inputs and contradictions visible. Validation can return a usable subset, an explicit failure, or an unresolved measurement need.
+
+A mapping that returns 1 millimetre for an input of 1 metre fails the required conversion to 1000 millimetres. That probe can finish a bounded failure; unrelated layers remain unexamined. Conversely, an unchanged JSON field can carry a new future-horizon meaning while the receiver still reads “available now”. Its structural pass cannot preserve the earlier use claim.
+
+For a positive whole-use or permitted subset result, SIE.10 covers every load-bearing premise, including receiving interpretation, with new or matching earlier evidence. Pipeline defects return to Data Engineering, mapping defects to SIE.7, and source defects to their owners. A quality vocabulary or process certificate cannot supply missing evidence for the receiving claim.

@@ -13,7 +13,7 @@ These contributions do not define a compulsory project sequence. In practice:
 - generate enough candidate explanations or designs before converging;
 - keep novelty, use value, constraint fit, and comparison characteristics visible;
 - explain promising candidates so their claims and conditions can be evaluated for the intended reliance;
-- publish selected options, Pareto-like fronts, or portfolios without hiding remaining uncertainty;
+- when the receiving use needs the result made available, publish selected options, Pareto-like fronts, or portfolios while preserving remaining uncertainty;
 - reopen affected work when changes in evidence, source-publication or source-use currentness, context or state of the art can change its result or justified use.
 
 In a laboratory, an anomaly may prompt candidate explanations, evidence gathering and model comparison. A product concept sketch can be developed into a reviewable claim-bearing account—an episteme—with scope, proposed value and evidence needs. In operations, proposing an emergency workaround may involve abduction; later reliance on that workaround depends on the evidence, assurance and work records required for that use.

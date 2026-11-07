@@ -230,7 +230,7 @@ Candidate basis claim:  // ordinary C.2.1 episteme; local description, no new U-
   supportingEvidenceUseRefs[]?: exact evidence-use references under their own rules
 ```
 
-The claim states how each cited object supports the candidate's question and expectation. It keeps each object's kind and the asserted use recoverable; a generic “additional basis” wrapper supplies neither. A README template can supply a reusable starting point, while case facts come from the actual subject, practical question, effective scheme and action-changing working conditions.
+The claim states how each cited object supports the candidate's question and expectation. It keeps each object's kind and the asserted use recoverable. A README template can supply a reusable starting point, while case facts come from the actual subject, practical question, effective scheme and action-changing working conditions.
 
 Reference respelling that still designates the same source changes no source referent. Added evidence can change support without changing that source. A richer display may preserve the episteme. Changing its claim content, EntityOfConcern or effective ReferenceScheme identifies another candidate or basis episteme under C.2.1. A direct basis relation remains a separate option only when a receiver needs its occurrence and its participants, predicate and identity are independently settled under A.6.REL.
 
@@ -254,7 +254,7 @@ CandidatePatternUse@Context <: U.Episteme:
   returnBoundaryRef: U.EpistemeRef, referencing one PatternUseBoundaryCondition@Context
 ```
 
-The public template is absent when the candidate was formed by direct pattern inspection without a README template. `directSolutionSectionRef` is the Solution section of `directPatternRef`; no redundant solution-MethodDescription ref is retained. A project-tailored MethodDescription is a separate `U.MethodDescription` under A.3.2. If dated Work first constitutes that episteme and the inception claim matters, state the exact A.15.PROD assertion; any derivation or reuse relation to the direct pattern episteme remains separate. Applicability, recommendation, and coordination remain exact E.11.PUR assertions.
+The public template is absent when the candidate was formed by direct pattern inspection without a README template. `directSolutionSectionRef` is the Solution section of `directPatternRef`. A project-tailored MethodDescription is a separate `U.MethodDescription` under A.3.2. If dated Work first constitutes that episteme and the inception claim matters, state the exact A.15.PROD assertion; any derivation or reuse relation to the direct pattern episteme remains separate. Applicability, recommendation, and coordination remain exact E.11.PUR assertions.
 
 ##### E.11.PUA:4.4.1 - Rationale subjects stay distinct
 
@@ -453,7 +453,7 @@ The application-flow label is only a readable PUA position. If the team claims t
 
 E.11.PUR governs the identity and content of one `PatternUseRecommendation@Context`; A.15.2 separately governs one `U.WorkPlan`. `patternSelectionFlowResult` and `selectedPatternApplicationFlowResult` are descriptive positions that keep these two entities apart. If either episteme is claimed to have been first constituted by dated Work, cite its own local A.15.PROD inception claim rather than saying that selection or application generically produced it.
 
-If the recommendation participates in later planning, name its exact source and receiving positions and either the direct relation occurrence with its applicable predicate or the applicable A.6.1 binding. If that basis cannot be established, keep the recommendation and plan separate and state the exact `missing-governor`, unresolved-grounding, false-predicate, or missing-endpoint-binding boundary. Neither the recommendation nor the plan becomes the machined component expected from downstream subject work.
+If the recommendation participates in later planning, state how its content is used and retain the applicable predicate, A.6.1 binding, or supported local claim that establishes this participation. Identify exact source and receiving flow positions only when the receiving question needs the selected E.18 organization; an asserted crossing between independently identified TFS values retains the direct relation and endpoint bindings required by E.18.NET. If a required basis is missing, keep the recommendation and plan distinct and state the corresponding unresolved claim or binding. Neither the recommendation nor the plan becomes the machined component expected from downstream subject work.
 
 **Build-the-builder recognition case.** An executable compiler edition occupies one exact result-bearing position (`FlowPositionRef`) in a compiler-build TFS and participates at one exact compiler-use position (`FlowPositionRef`) in a separately identified program-compilation TFS through a direct compiler-use relation occurrence. Its applicable predicate identifies that occurrence; the compiler edition keeps its kind. Use E.18 when either TFS-local position is unresolved; use E.18.NET when the question is how the separately identified build and compilation TFS values form a network, including a recursive one. With no compiler-use kind or predicate, return `missing-governor`; with undecided case facts, keep the relation open; with a false predicate, assert no compiler-use occurrence; with an obtaining occurrence but a missing endpoint binding, return `missing-endpoint-binding` and name that binding. None of these branches permits calling the compiler edition the second flow's input by label alone.
 
@@ -477,7 +477,7 @@ A clinician uses a direct decision pattern to state one treatment-plan episteme.
 
 After treatment Work occurs, identify the clinical change through A.3.4 and the applicable treatment-work-to-change predicate or admitted local claim. The clinical state and the case-note episteme can both be current, but they keep different identities and relations. The note may support grounding and later reliance; it does not become the patient's state.
 
-If the clinically relevant state existed before the current pattern use, return a `PreExistingResultGroundingFinding@Context` whose claim graph cites the exact examination, measurement, diagnostic, or evidence-use relation that grounds it for the present question. The examination does not produce that state or supply an unknown earlier treatment history. Missing direct grounding returns its exact blocker.
+If the clinically relevant state existed before the current pattern use, state what the examination, measurement, diagnostic, or evidence-use relation establishes about it for the present question. Materialize a `PreExistingResultGroundingFinding@Context` only when a named reliance needs that addressable account. The examination does not produce that state or supply an unknown earlier treatment history. Missing direct grounding returns its exact blocker.
 
 #### E.11.PUA:5.3a - Learned capability and assessment remain separate
 
@@ -487,7 +487,7 @@ For a precise teaching-performer claim, first recover every performer's A.13 cor
 
 A maintenance engineer inspects an installed pump that predates the current pattern use. Current measurements may ground the pump for a compatibility question only through the exact measurement, observation, diagnostic, or evidence-use relations defined by the applicable patterns; the historical production claim lies outside the basis.
 
-Use `PreExistingResultGroundingFinding@Context` for the present grounding and cite its exact `GroundingBasisPair` values. An inspection note or record may describe the pump and support evidence use, but it cannot replace the physical pump or occupy the expected subject-result position. Keep producing-work provenance absent. The current inspection neither manufactures the pump nor proves how it was manufactured. If the direct grounding relation cannot be recovered, return that blocker instead of treating inspection proximity as grounding.
+State the present grounding and its direct basis; use `PreExistingResultGroundingFinding@Context` and its exact `GroundingBasisPair` values when a named reliance needs that addressable account. An inspection note or record may describe the pump and support evidence use, but it cannot replace the physical pump or occupy the expected subject-result position. Keep producing-work provenance absent. The current inspection neither manufactures the pump nor proves how it was manufactured. If the direct grounding relation cannot be recovered, return that blocker instead of treating inspection proximity as grounding.
 
 #### E.11.PUA:5.5 - Repair a plan-as-component closure locally
 
@@ -561,7 +561,7 @@ The 2026 navigation study is a current preprint anchor rather than settled conse
 
 ### E.11.PUA:12 - Relations
 
-- **Builds on:** `E.11` for public entry, `E.8` for action-guiding pattern form, `E.18` for each TFS-local position and local `DesignRunTag`, `E.18.NET` for a current network, `A.6.P.WMR` and `A.6.RCD` when a relation rule or direct claim cannot be recovered, A.13 for every precise performer core, A.15.1 for independent dated-Work admission, F.6 only for current assignment-bound attribution, A.15.PROD for the separately current production-work, Work-attributed entity-inception or production-completion claim, A.15 for wider planning and work coordination, C.2.1 for support epistemes, and A.6.5 for slot discipline.
+- **Builds on:** `E.11` for public entry, `E.8` for action-guiding pattern form, `E.18` for each TFS-local position and local `DesignRunTag`, `E.18.NET` for a current network, `A.6.P.WMR` and `A.6.RCD` when a relation rule or direct claim cannot be recovered, A.13 for every precise performer core, A.15.1 for independent dated-Work admission, F.6 only for current assignment-bound attribution, A.15.PROD for the separately current production-work, Work-attributed entity-inception or production-completion claim, A.15 for wider planning and work coordination, C.2.1 for support epistemes.
 - **Coordinates with:** `E.11.PUR` for applicability, recommendation, and coordination; `E.18.1` for accepted problem-to-work carry-through; `E.22` and `E.23` for evaluation and repeated improvement; `G.11` for currentness; and each direct pattern that defines, constrains, or tests the selected result.
 - **Use next when current:** `E.11` when no direct pattern is selected, `E.11.PUR` when recommendation or ordering among several uses is current, and the direct pattern for any result or work claim beyond PUA's boundary.
 

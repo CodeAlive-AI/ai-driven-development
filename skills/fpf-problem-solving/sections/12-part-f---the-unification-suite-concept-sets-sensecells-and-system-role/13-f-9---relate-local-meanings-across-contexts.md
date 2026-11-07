@@ -294,7 +294,7 @@ When a later claim uses the RBAC source word *role*, apply `E.10.ROLE` and first
 
 A work-facing classification separately requires an admitted System, one exact local system-role kind with its `KindSignature`, and the C.3.2 classification judgment under A.2 and C.3. Use F.4 only when the receiving use separately needs a `SystemRoleKindDescription` episteme, and F.5 only when it needs a durable designation. An assignment claim then separately identifies an occurrence of a directly declared species under `U.SystemRoleAssignment` through A.2.1.
 
-If performed Work is also claimed, recover every exact actual performer through A.13 and use A.15.1 to identify the dated Work, exact Method, time, and containing System independently. Use F.6 only when the Bridge account or receiving use expressly represents precise assignment-bound attribution through the same obtaining assignment already established by A.13, and the direct case fact links that exact Work-assignment pair. Missing or failed F.6 leaves the Work intact. The Bridge, bounded-use claim, and reliance result establish none of these facts.
+If performed Work is also claimed, recover every exact actual performer through A.13 and use A.15.1 to identify the dated Work, exact Method, time, and containing System independently. Use F.6 only when the Bridge account or receiving use expressly represents precise assignment-bound attribution through the same obtaining assignment already established by A.13, and the direct case fact links that exact Work-assignment pair. Missing or failed F.6 alone leaves independently admitted Work intact. If the same finding invalidates a premise consumed by A.13/A.15.1 admission, recheck that premise and its dependent conclusions under F.6:4.2. The Bridge, bounded-use claim, and reliance result establish none of these facts.
 
 #### F.9:12.3 - Subtype notions in one structural row
 
@@ -393,7 +393,7 @@ and current reliance supports C for u
 => no Work, assertion, publication, relation, or operation application follows.
 ```
 
-An actual receiving object exists only when its subject pattern supplies its participants or arguments, obtaining or performance facts, and identity.
+A claim about an actual receiving object needs the participants or arguments, obtaining or performance facts, and identity supplied by its subject pattern.
 
 #### F.9:14.6 - Direction guard
 

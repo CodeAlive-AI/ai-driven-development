@@ -136,7 +136,7 @@ For a stated F.9 correspondence, optional CL shorthand means: `0` contradicted, 
 
 **Evidence honesty.** Preserve actual counterexamples and losses. Level 2 needs its cited bounded-support counterexample; level 0 identifies the contradiction. Weak or incomplete evidence must be disclosed rather than dressed as a discovered counterexample. At level 3, when none is cited, supply a citable search/absence account stating what was examined and that none was found or is currently known. This reports the search basis, not universal absence. A loss-noted row cannot be presented as free substitution.
 
-**Receiving use.** For an F.9 use, state the separate claim with its use, direction, correspondence rule, loss tolerance and polarity; obtain matching A.10 reliance, or the B.3 result when an actual named assurance claim is current. A C.3.3 use separately checks receiving admissibility and target classification. Missing classification evidence remains unknown. Authorization, when required, follows its own rule. No CL level supplies these results.
+**Receiving use.** For an F.9 use, state the separate claim with its use, direction, correspondence rule, loss tolerance and polarity. Recover the A.10 evidence-provenance path and direct-relation basis for that same bounded use. Apply the ordinary `RelianceDisposition` or, for an actual named assurance claim, the matching B.3 `AssuranceResult` under F.9:4.2, retaining the supported use, narrowing or stop that the applicable result warrants. A C.3.3 use separately checks receiving admissibility and target classification. Missing classification evidence remains unknown. Authorization, when required, follows its own rule. No CL level supplies these results.
 
 A receiving policy may impose an additional threshold for one named use. Cite that use, the policy's justification and authority, and its other necessary premises. The threshold is an additional policy condition, not F.9's general law. A `WaiverRef` identifies an authorized exception to that policy only: it supplies no missing correspondence, target fact, suitable-use claim or evidence. Preserve any narrower allowed use and its independently supported conditions.
 
@@ -308,17 +308,15 @@ In C.3.3 §9.3's AdultPatient/AdultPerson_Y case, the age-boundary loss and `CL^
 * **RSCRTriggerKindIds:** `{RSCRTriggerKindId.PolicyPinChange, RSCRTriggerKindId.BaselineBindingEdit, RSCRTriggerKindId.LegalitySurfaceEdit}`
 * **Notes (wiring‑only):** When bridges are used as selector gates, thresholds and unknown-handling remain governed by Acceptance; this module only pins the linkage and refresh relevance.
 
-**GPatternExtension: AdvancedCalibrationProcedures (Phase‑3 seed)**
+**GPatternExtension: AdvancedCalibrationProcedures**
 
 * **PatternScopeId:** `G.7:Ext.AdvancedCalibrationProcedures`
 * **GPatternExtensionId:** `AdvancedCalibrationProcedures`
-* **GPatternExtensionKind:** `Phase3Seed`
-* **GoverningPatternId:** `governing pattern not yet selected`
-* **Uses:** `{ }`
-* **⊑/⊑⁺:** `∅`
-* **RequiredPins/EditionPins/PolicyPins:** `pending governing-pattern selection`
+* **GPatternExtensionKind:** `MethodSpecific`
+* **GoverningPatternId:** `G.7` (calibration-result interface)
+* **RequiredPins/EditionPins/PolicyPins:** the selected domain calibration method and edition, its required inputs, and any policy used in the returned calibration.
 * **RSCRTriggerKindIds:** `{RSCRTriggerKindId.CrossingBundleEdit, RSCRTriggerKindId.PenaltyPolicyEdit, RSCRTriggerKindId.ReferencePlaneEdit}`
-* **Notes (seed; non‑normative):** Placeholder for domain‑specific / statistical calibration families beyond the minimal auditable procedure (e.g., uncertainty‑aware calibration, probabilistic mapping). No Part‑G‑wide norms are introduced.
+* **Use.** When the minimal procedure cannot establish the calibration needed by the receiving question, select a domain procedure that supplies that inference, such as an uncertainty estimate under its stated model. Apply its prerequisites and retain the returned limitations. If no such procedure or required input is available, the needed calibration remains unestablished.
 
 ### G.7:5 - Archetypal Grounding (System / Episteme)
 

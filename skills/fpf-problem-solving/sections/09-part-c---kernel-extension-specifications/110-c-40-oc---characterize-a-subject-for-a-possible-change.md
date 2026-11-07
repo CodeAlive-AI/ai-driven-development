@@ -15,7 +15,7 @@ Use this pattern when a person, organization, community arrangement, AI configur
 
 Use it after `C.40.OI` when the subject, receiving use, and horizon were still loose, or enter directly when those are already clear. It can serve either opportunity construction or bounded advising. It does not diagnose every property of the subject, choose a direction, prove capability, authorize intervention, or establish that development occurred.
 
-**Cheap exit.** Reuse an existing characterization when it covers the same subject and configuration, receiving use, horizon, characteristic meanings and scales, evidence window, protected conditions, and current question. If one domain practice already supplies the complete adequate characterization, use that result directly and retain its qualification.
+**Cheap exit.** Reuse an existing characterization when it covers the same subject and configuration, receiving use, horizon, characteristic meanings and scales, applicable time and evidence conditions, protected conditions, and current question. If one domain practice already supplies the complete adequate characterization, use that result directly and retain its qualification.
 
 **Ordinary non-use boundary.** Do not build a characterization merely because a dashboard exists. If no characteristic could change the next action, stop. Characterizations of populations, lineages, cultures, organizations, people, AI models, and engineered systems rely on different domain owners and evidence; similar metric labels do not justify transfer.
 
@@ -61,7 +61,7 @@ Build a characteristic account sufficient for this inquiry, exposing every mater
 
 Name the exact subject and configuration. For an AI case, distinguish model, data, scaffold, tools, oversight, access, and surrounding operating arrangement when their differences matter. For an organization, name the organization or bounded arrangement rather than treating its chart or provider as the subject. For a person, name the person and relevant later-Work context.
 
-State the receiving use, horizon, scenarios, and evidence window. A characterization for today's incident-review Work is not automatically valid for a future management role. A model benchmark in one configuration does not characterize another configuration with the same product label.
+State the receiving use, horizon and scenarios. Include the time stance and evidence window needed to interpret or rely on the selected readings; a reported measurement retains its measurement-specific temporal basis. A characterization for today's incident-review Work is not automatically valid for a future management role. A model benchmark in one configuration does not characterize another configuration with the same product label.
 
 If those boundaries are missing, use `C.40.OI` and return only after they are adequate for the current question.
 
@@ -91,18 +91,18 @@ For every selected characteristic, state in ordinary language:
 2. what the characteristic means for this receiving use;
 3. its scale or admissible levels and any unit;
 4. polarity—higher-is-better, lower-is-better, target-is-best, or no simple order;
-5. time stance and evidence window;
+5. time stance and evidence window when needed for interpretation or reliance, including the temporal basis of any reported measurement;
 6. current reading and uncertainty, or `unknown`;
 7. intended, threshold, exploratory, or comparison reading;
 8. explicitly protected reading or boundary when current;
 9. source, method, and qualification needed for reliance; and
 10. the next claim that this reading can change.
 
-Use [`C.16`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) when a value, score, sensor indication, rating, or comparison must be made interpretable as a measurement. A display or source link can report or locate a result; reliance still needs its measurement basis and supported relation to the subject. A MethodDescription explains a way of obtaining a result without establishing that the result was obtained.
+Use [`C.16`](../03-first-principles-framework-readme/_index.md) when a value, score, sensor indication, rating, or comparison must be made interpretable as a measurement. A display or source link can report or locate a result; reliance still needs its measurement basis and supported relation to the subject. A MethodDescription explains a way of obtaining a result without establishing that the result was obtained.
 
 #### C.40.OC:4.4 - Orient the complete comparison coordinate set
 
-When a finite candidate change is current, use [`C.11.CRC`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) to compare an actual or relied-on configuration `S0`, finite change `Δ`, and realizable candidate configuration `S1` under the same boundary, horizon, scenarios, constraints, interactions, transition basis, evidence window, and receiving decision.
+When a finite candidate change is current, use [`C.11.CRC`](../03-first-principles-framework-readme/_index.md) to compare an actual or relied-on configuration `S0`, finite change `Δ`, and realizable candidate configuration `S1` under the same boundary, horizon, scenarios, constraints, interactions, transition basis, evidence window, and receiving decision.
 
 Keep four coordinate families visible:
 
@@ -224,9 +224,9 @@ A facility team already has current, source-qualified service, safety, operabili
 
 A conforming characterization or companion account:
 
-1. **MUST** identify the subject and configuration, receiving use, horizon, scenarios, and evidence window.
+1. **MUST** identify the subject and configuration, receiving use, horizon and scenarios, together with any time stance or evidence window required to interpret or rely on the selected readings.
 2. **MUST** select each characteristic by an explicit way it can change the current inquiry or a protected condition.
-3. **MUST** state the bearer, meaning, Scale or levels, Unit when applicable, polarity, and time stance for every relied-on characteristic.
+3. **MUST** state the bearer, meaning, Scale or levels, Unit when applicable, and polarity for every relied-on characteristic. Include any time stance or evidence window required by its value, support or measurement claim.
 4. **MUST** distinguish current, intended or exploratory, protected, and unknown readings.
 5. **MUST** keep result, resource, affected-System or distributional, and explicitly protected coordinate families visible when finite comparison is current.
 6. **MUST NOT** force incomparable coordinates into one scalar or assert Pareto improvement without a complete oriented set under one basis.
@@ -269,9 +269,9 @@ In opportunity construction, use the characterization to vary opportunity-genera
 
 **Practice question.** How should practitioners replace a development maturity label or isolated score with a characterization that can guide a finite opportunity decision without inventing one universal scale?
 
-**Contributing Methods.** FPF [`C.16`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies the measurement chain: exact measurand or subject, Characteristic, Scale, method, model, calibration, dated Work, attributed result, uncertainty, and bounded later use. [`C.11.CRC`](https://github.com/ailev/FPF/blob/main/FPF-Spec.md) supplies the finite-change orientation: actual `S0`, finite `Δ`, realizable `S1`, complete result/resource/affected-System/distributional/protected coordinates, interactions, transition basis, uncertainty, and option effects. This pattern **adapts** those lines at `C.40.OC:4.2`–`4.7` by selecting only characteristics that can change one opportunity inquiry and by returning holder-specific meaning and evidence outward.
+**Contributing Methods.** FPF [`C.16`](../03-first-principles-framework-readme/_index.md) supplies the measurement chain: exact measurand or subject, Characteristic, Scale, method, model, calibration, dated Work, attributed result, uncertainty, and bounded later use. [`C.11.CRC`](../03-first-principles-framework-readme/_index.md) supplies the finite-change orientation: actual `S0`, finite `Δ`, realizable `S1`, complete result/resource/affected-System/distributional/protected coordinates, interactions, transition basis, uncertainty, and option effects. This pattern **adapts** those lines at `C.40.OC:4.2`–`4.7` by selecting only characteristics that can change one opportunity inquiry and by returning holder-specific meaning and evidence outward.
 
-**Serious alternative or default.** A maturity model or composite readiness score is faster to communicate and may be adequate when its construct, scale, weighting, evidence, and decision use are already qualified. As a default across unlike holders, it hides scale legality, trade-offs, protected coordinates, and transfer. At comparable entry effort, the selected multi-coordinate characterization preserves more decision-relevant information, at the cost of a less compact headline and possible indeterminate result.
+**Serious alternative or default.** A maturity model or composite readiness score can provide a compact summary when its construct, scale, weighting, evidence, and decision use are already qualified. When such a summary hides a distinction that can change the present inquiry—scale legality, trade-offs, protected coordinates or transfer—retain the separate coordinates. They keep those distinctions inspectable, at the cost of a less compact headline and a possible indeterminate result.
 
 For organization and campaign cases, [ISO 56008:2024](https://www.iso.org/standard/78485.html) is a current opportunity/innovation measurement source and supports explicit measurement and portfolio review. It is an organization-scope comparator, not a universal person, AI, or engineered-system characterization Method and not effectiveness evidence.
 
