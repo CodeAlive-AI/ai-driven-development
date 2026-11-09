@@ -64,7 +64,7 @@
 - [E.20 - Mechanism Introduction Protocol: Introduce or Revise FPF Mechanisms](60-e-20---mechanism-introduction-protocol-introduce-or-revise-f.md) (389 lines) — Type: Architectural pattern
 - [E.21 - FPF Pattern-Quality Evaluation CharacteristicSpace](61-e-21---fpf-pattern-quality-evaluation-characteristicspace.md) (607 lines) — Use this when an authored FPF pattern edition or bounded version must be evaluated for quality under a named use: ordinary practitioner use, authoring input, landing input, release input,...
 - [E.22 - Improvement-Oriented Quality Evaluation Question Framing](62-e-22---improvement-oriented-quality-evaluation-question-fram.md) (418 lines) — Use E.22 when a request such as “review this” leaves it unclear what the recipient needs to learn about an object version. A floor check, a search for further improvement and a check of applied...
-- [E.23 - Quality Improvement Loop Method](63-e-23---quality-improvement-loop-method.md) (603 lines) — Type: Method-description pattern
+- [E.23 - Quality Improvement Loop Method](63-e-23---quality-improvement-loop-method.md) (609 lines) — Type: Method-description pattern
 - [E.23.CDI - Developing Capability for a Named Work Family](64-e-23-cdi---developing-capability-for-a-named-work-family.md) (211 lines) — Tech-name: WorkFamilyCapabilityDevelopmentMethod
 - [E.23.CAE - Capability Access and Expression Differential Probe](65-e-23-cae---capability-access-and-expression-differential-pro.md) (276 lines) — Tech-name: CapabilityAccessAndExpressionDifferentialProbeMethod
 - [E.24 - U.Ontic and Ontic Introduction Discipline](66-e-24---u-ontic-and-ontic-introduction-discipline.md) (706 lines) — Type: Part E FPF authoring discipline pattern
