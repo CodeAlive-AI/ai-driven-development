@@ -12,6 +12,7 @@ Requires: UFO installed (pip install from repo), fastmcp, pydantic
 from __future__ import annotations
 
 import asyncio
+import base64
 import json
 import logging
 import os
@@ -148,6 +149,31 @@ async def qa_wait_for_text_contains(
         "matched": expected_substring,
         "timeout_s": timeout_s,
     }
+
+
+@mcp.tool()
+async def qa_capture_to_file(
+    path: Annotated[str, Field(description="Absolute .png path to write the screenshot to.")],
+) -> Annotated[Dict[str, Any], Field(description="Written path and size; no image data.")]:
+    """Screenshot the selected window into a PNG file and return only its path.
+
+    capture_window_screenshot returns the whole image as base64 (tens to hundreds of KB of
+    text in the client's context); this writes it to disk instead.
+    """
+    raw = await _call_mounted_tool("capture_window_screenshot", {})
+    data = _parse_tool_result(raw)
+    if isinstance(data, dict):
+        data = data.get("result", "")
+    if not isinstance(data, str) or not data:
+        return {"ok": False, "error": "screenshot returned no image data"}
+    if data.startswith("data:"):
+        data = data.split(",", 1)[1]
+    png = base64.b64decode(data, validate=True)
+    target = os.path.abspath(path)
+    os.makedirs(os.path.dirname(target), exist_ok=True)
+    with open(target, "wb") as f:
+        f.write(png)
+    return {"ok": True, "path": target, "bytes": len(png)}
 
 
 def main() -> None:

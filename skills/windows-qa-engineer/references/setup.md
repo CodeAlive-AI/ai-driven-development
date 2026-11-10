@@ -65,7 +65,7 @@ Run the doctor script from any directory; it selects UFO's venv and working dire
 Or check in Claude Code that these tools appear:
 `get_desktop_app_info`, `select_application_window`, `get_app_window_controls_info`,
 `click_input`, `set_edit_text`, `texts`, `capture_window_screenshot`,
-`qa_refresh_and_list_windows`, `qa_refresh_controls`, `qa_wait_for_text_contains`.
+`qa_refresh_and_list_windows`, `qa_refresh_controls`, `qa_wait_for_text_contains`, `qa_capture_to_file`.
 
 The doctor verifies imports and MCP registration but cannot create an interactive desktop. For an end-to-end check, run the MCP client and the application under test in the same logged-in Windows session, call `qa_refresh_and_list_windows()`, select a visible app such as Notepad, and capture its screenshot. An empty window list from SSH or a service session is expected and does not verify desktop automation.
 
