@@ -65,12 +65,13 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
-### Engineering practices (8)
+### Engineering practices (9)
 
 Disciplined approaches that improve how agents and humans collaborate on code.
 
 | Skill | What It Does |
 |-------|--------------|
+| [ux-best-practices](skills/ux-best-practices/) | Design and review user experiences, including AI features, accessibility, interaction states, and evidence-grounded usability findings |
 | [code-that-fits-in-your-head](skills/code-that-fits-in-your-head/) | Keep agent-authored systems understandable and maintainable by resisting accidental complexity, Big Balls of Mud, and technical-debt accumulation. Supports large changes when architecture, acceptance criteria, verification, and recovery are explicit; uses structural heuristics without universal formatting or task-size limits |
 | [prompt-engineering](skills/prompt-engineering/) | Universal prompt-engineering toolkit. 14 reference docs covering Claude / GPT / Gemini family-specific guidance, prompting techniques, evaluation & red-teaming, common failure modes (hallucinations, security, structure, debt) |
 | [fpf-problem-solving](skills/fpf-problem-solving/) | First Principles Framework — a transdisciplinary "operating system for thought", with all 36 domain frameworks (strategy, goals/OKR, research, decision design, systems engineering and more) stored locally. Decompose cross-domain problems, audit conclusions, apply a named pattern such as F.19 or GOALS.7, and reason rigorously about complex systems. Based on Anatoly Levenchuk's [FPF Library](https://github.com/ailev/FPF) |

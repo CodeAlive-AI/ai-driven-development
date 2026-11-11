@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Best Practices"
+  short_description: "UX audits, interface design and accessibility"
+  default_prompt: "Use $ux-best-practices to audit this interface: find obstacles in the key flows, propose fixes and a validation plan."
