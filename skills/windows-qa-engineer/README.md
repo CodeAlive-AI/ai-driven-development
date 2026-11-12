@@ -31,13 +31,14 @@ The skill's MCP server (`scripts/ufo_windows_qa_mcp_server.py`) imports UFO's se
 - **`qa_refresh_and_list_windows`** — refresh + list in one call
 - **`qa_refresh_controls`** — re-collect control tree for selected window
 - **`qa_wait_for_text_contains`** — polling assertion (avoids arbitrary sleeps)
+- **`qa_capture_to_file`** — window screenshot written to a PNG file, returns only the path (keeps base64 out of the agent's context)
 
 ## QA Workflow
 
 ```
 1. Discover windows    →  qa_refresh_and_list_windows()
 2. Select SUT          →  select_application_window(id, name)
-3. Screenshot baseline →  capture_window_screenshot()
+3. Screenshot baseline →  qa_capture_to_file(path)
 4. Collect controls    →  get_app_window_controls_info(field_list=[...])
 5. Interact by id/name →  click_input / set_edit_text / keyboard_input
 6. Assert              →  qa_wait_for_text_contains(id, name, expected)

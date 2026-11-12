@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import argparse
 import asyncio
-import base64
 import json
 import subprocess
 import tempfile
@@ -95,13 +94,12 @@ async def run(project_dir: Path, output_dir: Path) -> dict[str, Any]:
             await client.call_tool(
                 "select_application_window", {"id": window_id, "name": window_name}
             )
-            capture = await client.call_tool("capture_window_screenshot", {})
-            encoded = to_plain(result_data(capture))
-            if not isinstance(encoded, str):
-                raise RuntimeError("UFO returned no screenshot string")
-            if encoded.startswith("data:image/"):
-                encoded = encoded.split(",", 1)[1]
-            screenshot_path.write_bytes(base64.b64decode(encoded, validate=True))
+            capture = await client.call_tool("qa_capture_to_file", {"path": str(screenshot_path)})
+            capture_result = to_plain(result_data(capture))
+            if not isinstance(capture_result, dict) or not capture_result.get("ok"):
+                raise RuntimeError(f"Screenshot capture failed: {capture_result!r}")
+            if not screenshot_path.read_bytes().startswith(b"\x89PNG\r\n\x1a\n"):
+                raise RuntimeError("Screenshot file is not a PNG")
 
             report.update(
                 {

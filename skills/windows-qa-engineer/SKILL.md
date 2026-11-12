@@ -30,7 +30,7 @@ Follow this sequence for every test run. Do not skip steps.
 
 ### 2. Select window
 - Call `select_application_window(id, name)` (HostUIExecutor)
-- Call `capture_window_screenshot()` (UICollector) -- baseline screenshot
+- Call `qa_capture_to_file(path)` -- baseline screenshot written to a PNG file; open the file only when you need to look at it
 
 ### 3. Collect controls
 - Call `qa_refresh_controls(field_list=["label","control_text","control_type","automation_id","control_rect"])`
@@ -45,13 +45,14 @@ Follow this sequence for every test run. Do not skip steps.
 ### 5. Assert
 - Read with `texts(id, name)` and compare against expected
 - Prefer `qa_wait_for_text_contains(id, name, expected, timeout_s=10)` over sleeps
-- Screenshot after each major checkpoint
+- Message boxes and tree nodes: assert on `control_text` from `qa_refresh_controls` instead of a screenshot
+- Evidence: `qa_capture_to_file(path)` after each major checkpoint
 
 ### 6. Report
 - Fill [assets/test-case.md](assets/test-case.md) template
 - Numbered execution log (step -> tool call -> result)
 - Final PASS/FAIL with exact failing assertion if applicable
-- Attach screenshot base64 strings from `capture_window_screenshot()`
+- List the screenshot file paths written by `qa_capture_to_file` (paths are on the Windows MCP server; transfer them separately when the client is remote)
 
 ## Tool Reference
 
@@ -60,7 +61,8 @@ Follow this sequence for every test run. Do not skip steps.
 | `qa_refresh_and_list_windows` | QA helper | Refresh + list all windows |
 | `select_application_window` | HostUIExecutor | Select SUT by id+name |
 | `get_app_window_controls_info` | UICollector | Raw control tree; use only when helper output is insufficient |
-| `capture_window_screenshot` | UICollector | Screenshot selected window |
+| `qa_capture_to_file` | QA helper | Screenshot selected window into a PNG file; returns only the path |
+| `capture_window_screenshot` | UICollector | Screenshot as inline base64 (100+ KB of text in context); prefer `qa_capture_to_file` |
 | `click_input` | AppUIExecutor | Click control by id+name |
 | `set_edit_text` | AppUIExecutor | Type into control |
 | `keyboard_input` | AppUIExecutor | Send keystrokes |
@@ -75,7 +77,7 @@ User says: "Test the login flow on MyApp"
 ```
 1. qa_refresh_and_list_windows() → find "MyApp - Login"
 2. select_application_window(id="3", name="MyApp - Login")
-3. capture_window_screenshot() → baseline
+3. qa_capture_to_file(path="<tmp>/01-login.png") → baseline
 4. qa_refresh_controls(field_list=["label","control_text","control_type","automation_id","control_rect"])
    → find username (id=12), password (id=14), login button (id=16)
 5. set_edit_text(id="12", name="Username", text="testuser")
@@ -83,7 +85,7 @@ User says: "Test the login flow on MyApp"
 7. click_input(id="16", name="Login")
 8. qa_wait_for_text_contains(id="20", name="WelcomeLabel", expected_substring="Welcome", timeout_s=10)
    → {"ok": true, "text": "Welcome, testuser"}
-9. capture_window_screenshot() → post-login
+9. qa_capture_to_file(path="<tmp>/02-welcome.png") → post-login
 10. Report: PASS
 ```
 
