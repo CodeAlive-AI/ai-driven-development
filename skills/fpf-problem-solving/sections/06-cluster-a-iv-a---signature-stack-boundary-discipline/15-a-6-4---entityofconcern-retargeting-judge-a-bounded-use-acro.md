@@ -4,27 +4,27 @@
 
 **One-line summary.** Use EntityOfConcern retargeting to classify an arrow between epistemes about different entities. A claimed receiving use needs a separate bounded-use assertion; a current-case judgement compares that assertion with the relevant facts.
 
-**Retargeting in plain terms.** The two epistemes concern different things. One named receiving use is admitted only when exact facts establish the stated invariant and show that the visible loss remains acceptable under named conditions.
+**Retargeting in plain terms.** The two epistemes concern different things. One named receiving use is admitted only when facts establish the stated invariant and show that the visible loss remains acceptable under named conditions.
 
-**Use this when.** Use this pattern only after C.2.1 identifies the two epistemes and shows that their exact EntitiesOfConcern differ. A changed model kind, ontology frame, predicate set, coordinate system, or notation is a cue to repeat that identity test, not proof of retargeting.
+**Use this when.** Use this pattern only after C.2.1 identifies the two epistemes and shows that their EntitiesOfConcern differ. A changed model kind, ontology frame, predicate set, coordinate system, or notation is a cue to repeat that identity test, not proof of retargeting.
 
 **What goes wrong if missed.** A changed EntityOfConcern is treated as “the same thing in another form”, so claims, evidence, gate results, work authority, or currentness are carried forward without their own direct predicates or current results. The opposite error is to demand a semantic Bridge or reversible mapping when the case needs neither.
 
-**First useful move.** Identify r by its exact endpoint epistemes, arrow rule or designator, and the selected formal substrate's equivalence criterion. Name both EntitiesOfConcern. For a claimed receiving use, state the invariant, visible loss, named use and conditions in a separate bounded-use assertion q. When judging a current case, compare its exact facts with q.
+**First useful move.** Identify r by its endpoint epistemes, arrow rule or designator, and the selected formal substrate's equivalence criterion. Name both EntitiesOfConcern. For a claimed receiving use, state the invariant, visible loss, named use and conditions in a separate bounded-use assertion q. When judging a current case, compare its facts with q.
 
 **What this buys.** The reader can decide one receiving use from the bounded-use assertion q and current facts; source-claim survival, performed Work, and EntityOfConcern identity retain their separate bases.
 
-**Not this pattern when.** If the EntityOfConcern is preserved, use the pattern for the change that actually occurred: A.6.3.CR for wording, A.6.3.RT for representation scheme or reasoning medium, A.6.3.CSC for controlled coarsening, or E.17.EFP for explanation mode. A normal time-to-frequency description of the same signal is an A.6.3.RT case. Use C.29 when a separate mathematical representation or transfer question remains; bring its correspondence and limits back to that representation change. Use F.9 only for a separately claimed Bridge between two exact local senses. Keep every other independently current claim under its direct pattern; the Relations section names the main neighboring owners once.
+**Not this pattern when.** If the EntityOfConcern is preserved, use the pattern for the change that occurred: A.6.3.CR for wording, A.6.3.RT for representation scheme or reasoning medium, A.6.3.CSC for controlled coarsening, or E.17.EFP for explanation mode. A normal time-to-frequency description of the same signal is an A.6.3.RT case. Use C.29 when a separate mathematical representation or transfer question remains; bring its correspondence and limits back to that representation change. Use F.9 only for a separately claimed Bridge between two local senses. Keep every other independently current claim under its direct pattern; the Relations section names the main neighboring owners once.
 
 ### A.6.4:1 - Problem frame
 
-Several familiar moves can hide a real change of EntityOfConcern, but none proves that change merely by its name or notation:
+Several familiar moves can hide a change of EntityOfConcern, but none proves that change merely by its name or notation:
 
 * **Physical cabinet and selected functional structure.** An episteme about cabinet `Cab-7` and one about selected functional `U.Structure` `Route-A` concern different entities when C.2.1 identifies them independently. A behavior-test result can supply facts for a bounded retargeting judgement. The expression `Realises(Cab-7, Route-A)` contributes only if its own relation and obtaining conditions are established; §5 shows a case whose judgement needs no such relation.
 * **Signal and spectrum.** The ordinary Fourier case often concerns one signal in two representations. Use A.6.3.RT when the EntityOfConcern is preserved. Add C.29 only when the needed mathematical correspondence or its limits remain unsettled. A.6.4 opens only if the receiving episteme concerns a separately identified spectrum object and the use explains why that object, rather than the original signal under another representation, is current.
-* **Observations and fitted model.** A dataset and a learned model can be different exact entities. An affirmative q may state a predictive invariant and name a prediction use; exact fit and held-out test outcomes then supply current-case facts for the separate judgement. Individual observations and unmodelled distinctions remain visible losses. Model fitting is a separate activity.
+* **Observations and fitted model.** A dataset and a learned model can be different entities. An affirmative q may state a predictive invariant and name a prediction use; the fit and held-out test outcomes then supply current-case facts for the separate judgement. Individual observations and unmodelled distinctions remain visible losses. Model fitting is a separate activity.
 
-For a case used positively, the local arrow r relates two epistemes with different EntitiesOfConcern, q affirmatively states the bounded-use proposition, and the case facts satisfy it. Any claimed operation application or actual Work is identified separately under its own conditions.
+For a case used positively, the local arrow r relates two epistemes with different EntitiesOfConcern, q affirmatively states the bounded-use proposition, and the case facts satisfy it. Any claimed operation application or Work is identified separately under its own conditions.
 
 A domain relation, mathematical transform, or F.9 Bridge contributes only the claim established by its own governor. C.2.1 independently identifies the two EntitiesOfConcern.
 
@@ -33,9 +33,9 @@ A domain relation, mathematical transform, or F.9 Bridge contributes only the cl
 Without this discipline:
 
 1. **Notation decides ontology.** A changed coordinate system, mathematical domain, model kind, or predicate vocabulary is treated as proof that the EntityOfConcern changed.
-2. **Retargeting is confused with viewing.** A real move from one independently identified entity to another is called another view, so its loss and receiving-use boundary disappear.
+2. **Retargeting is confused with viewing.** A move from one independently identified entity to another is called another view, so its loss and receiving-use boundary disappear.
 3. **The invariant and loss remain rhetoric.** Phrases such as “energy is preserved” or “the model summarizes the data” do not say which claim survives, which distinctions disappear, or which use remains sound.
-4. **A mapping apparatus replaces the actual case.** A generic kind bridge, score, diagram, or reversible optic is demanded even when the exact endpoints, q, and current facts already let the reader judge the named use.
+4. **A mapping apparatus replaces the case.** A generic kind bridge, score, diagram, or reversible optic is demanded even when the endpoints, q, and current facts already let the reader judge the named use.
 5. **Arrow, claim, and execution collapse.** A mathematical arrow is treated as if it granted a use, performed an operation, or produced an episteme.
 6. **A transformation-flow position is mistaken for a use judgement.** Placing r and q in E.18 does not establish the invariant or acceptable loss for the receiving use.
 7. **Neighboring changes disappear into one label.** Grounding, representation, scope, operating conditions, viewpoint selection, publication, operation application, and performed Work are folded into retargeting instead of being identified only when they occur.
@@ -44,7 +44,7 @@ Without this discipline:
 
 * **Different subject versus unsupported claim.** The endpoint EntityOfConcern may change while every receiving assertion remains subject to A.6.2 P2. A separate q states which invariant and loss support one receiving use.
 * **Useful loss versus hidden loss.** Retargeting may discard information, but the loss boundary and the use that tolerates it must be visible.
-* **Direct case versus universal apparatus.** Use a domain relation, mathematical map, semantic Bridge, or diagram as current-case basis only when its own governor establishes the needed claim. Identify r from its endpoints, arrow rule or designator, and formal equivalence; judge q separately from exact current facts.
+* **Direct case versus universal apparatus.** Use a domain relation, mathematical map, semantic Bridge, or diagram as current-case basis only when its own governor establishes the needed claim. Identify r from its endpoints, arrow rule or designator, and formal equivalence; judge q separately from current facts.
 * **Composition versus accidental equivalence.** Compatible retargetings may compose. Equality of two evaluation routes, reversibility, idempotency, or semantic correspondence requires its own stated conditions; it does not follow from the word *retargeting*.
 * **Modularity.** The retargeting arrow relates two epistemes, q states one bounded-use proposition, and a separate current-case judgement says whether the facts satisfy it, fail it, or leave it undecidable. Grounding, publication, Work, evidence, assurance, gate, flow structure, and cross-local-sense correspondence remain separate.
 
@@ -52,31 +52,31 @@ Without this discipline:
 
 #### A.6.4:4.1 - Informal definition
 
-> **Definition.** An **EntityOfConcern-retargeting morphism** is a local `EpMorphism r : X -> Y` whose exact endpoint epistemes concern different exact entities. A separate bounded-use assertion q affirms or denies that one declared invariant makes the stated loss acceptable for one named receiving use under named conditions.
+> **Definition.** An **EntityOfConcern-retargeting morphism** is a local `EpMorphism r : X -> Y` whose endpoint epistemes concern different entities. A separate bounded-use assertion q affirms or denies that one declared invariant makes the stated loss acceptable for one named receiving use under named conditions.
 
 `EntityOfConcernRetargetingMorphism` is a local mathematical subtype in the selected formal substrate, not a durable kind. This pattern defines that subtype and the practical discipline for claims about its use.
 
 Keep four things distinct:
 
-1. **The arrow `r`.** Within the selected formal substrate, its exact domain X, codomain Y, arrow rule or designator, and declared formal equivalence identify it. The two endpoint epistemes and their different EntitiesOfConcern are recoverable. A changed use claim does not create another arrow.
-2. **The bounded-use assertion `q`.** This is a C.2.1 episteme about exact arrow r. Its ClaimGraph states the invariant, visible loss, named receiving use, conditions, and affirmative or negative polarity. Its complete claim content, exact EntityOfConcern, and effective ReferenceScheme identify q. A citation inside q can point to case facts; it does not decide whether those facts satisfy the proposition.
-3. **The current-case judgement.** Compare the exact current facts with q's conditions and proposition, and report `satisfies`, `fails`, or `cannot decide`. That result is not q's polarity and does not reidentify q or r. Use A.20 only when the case raises an internal-constraint check, A.10 only for a current evidence-use claim, and B.3 only for a current assurance claim or its material-reliance threshold. Otherwise the named rule and direct case facts are enough.
-4. **Any application occurrence.** If a system actually computes, authors, or otherwise produces or changes an episteme by using the declared operation, identify that A.6.1 application, its argument and result bindings, the performing system, and any Work separately. The mathematical statement `r : X -> Y` alone names no occurrence.
+1. **The arrow `r`.** Within the selected formal substrate, its domain X, codomain Y, arrow rule or designator, and declared formal equivalence identify it. The two endpoint epistemes and their different EntitiesOfConcern are recoverable. A changed use claim does not create another arrow.
+2. **The bounded-use assertion `q`.** This is a C.2.1 episteme about arrow r. Its ClaimGraph states the invariant, visible loss, named receiving use, conditions, and affirmative or negative polarity. Its complete claim content, EntityOfConcern, and effective ReferenceScheme identify q. A citation inside q can point to case facts; it does not decide whether those facts satisfy the proposition.
+3. **The current-case judgement.** Compare the current facts with q's conditions and proposition, and report `satisfies`, `fails`, or `cannot decide`. That result is not q's polarity and does not reidentify q or r. Use A.20 only when the case raises an internal-constraint check, A.10 only for a current evidence-use claim, and B.3 only for a current assurance claim or its material-reliance threshold. Otherwise the named rule and direct case facts are enough.
+4. **Any application occurrence.** If a system computes, authors, or otherwise produces or changes an episteme by using the declared operation, identify that A.6.1 application, its argument and result bindings, the performing system, and any Work separately. The mathematical statement `r : X -> Y` alone names no occurrence.
 
 For a current-case judgement of a receiving-use assertion, ask:
 
 | Question | What it recovers |
 | --- | --- |
-| Which exact arrow relates the source and receiving epistemes? | r's exact endpoints X and Y, arrow rule or designator, and selected formal substrate's equivalence criterion |
+| Which arrow relates the source and receiving epistemes? | r's endpoints X and Y, arrow rule or designator, and selected formal substrate's equivalence criterion |
 | Which different entities do they concern? | the independently identified EntityOfConcern pair |
-| What exactly does q affirm or deny? | invariant, visible loss, named receiving use, conditions, and polarity |
+| What does q affirm or deny? | invariant, visible loss, named receiving use, conditions, and polarity |
 | Which current facts bear on that proposition? | the direct case basis |
 | What do those facts show? | `satisfies`, `fails`, or `cannot decide` |
-| If the case cannot be decided, what is missing? | the exact missing fact and reopen condition |
+| If the case cannot be decided, what is missing? | the missing fact and reopen condition |
 
-These answers may be one short paragraph; they require no new record form or assurance package. Add a separately governed commitment change, neighboring claim, or durable result only when it changes q, the judgement, or the receiving action; ER-1 and CC-A.6.4-5 name the values to inspect. Add an F.9 Bridge only when the same case separately claims a semantic relation between two exact F.17 local senses.
+These answers may be one short paragraph; they require no new record form or assurance package. Add a separately governed commitment change, neighboring claim, or durable result only when it changes q, the judgement, or the receiving action; ER-1 and CC-A.6.4-5 name the values to inspect. Add an F.9 Bridge only when the same case separately claims a semantic relation between two F.17 local senses.
 
-When the judgement of an affirmative q is `fails`, retain q as the stated proposition but do not admit that case. When a current-case judgement is `cannot decide`, keep the source material, name the exact missing fact and what would reopen the question, and stop. Failure of an affirmative q does not by itself establish a negative q; a negative assertion needs its own claim content and case basis.
+When the judgement of an affirmative q is `fails`, retain q as the stated proposition but do not admit that case. When a current-case judgement is `cannot decide`, keep the source material, name the missing fact and what would reopen the question, and stop. Failure of an affirmative q does not by itself establish a negative q; a negative assertion needs its own claim content and case basis.
 
 #### A.6.4:4.2 - Formal declaration and object boundaries
 
@@ -84,16 +84,16 @@ When a receiving use needs a reusable formal declaration, an A.6.0 `U.Signature(
 
 ```text
 SubjectKind     = local formal subtype EntityOfConcernRetargetingMorphism of EpMorphism
-RangedValueKind = admitted ordered-pair range over exact U.Episteme values satisfying the declared endpoint-kind constraints
+RangedValueKind = admitted ordered-pair range over U.Episteme values satisfying the declared endpoint-kind constraints
 ResultKind      = omitted; r is the declared subject, not an operation result
 Applicability   = selected formal substrate and endpoint and arrow-family conditions
 ```
 
-`X` and `Y` are exact C.2.1 epistemes. `r : X -> Y` is one local mathematical arrow in the selected formal substrate. Its identity uses the exact endpoints, arrow rule or designator, and the selected substrate's equivalence criterion; the endpoints alone do not identify it. The declaration states which parts of X and Y's claim content, exact EntityOfConcern, and effective ReferenceScheme remain the same or differ. If r's rule reads a representation or another separately obtaining relation, it names the exact occurrence and compares endpoint facts without changing that occurrence.
+`X` and `Y` are C.2.1 epistemes. `r : X -> Y` is one local mathematical arrow in the selected formal substrate. Its identity uses the endpoints, arrow rule or designator, and the selected substrate's equivalence criterion; the endpoints alone do not identify it. The declaration states which parts of X and Y's claim content, EntityOfConcern, and effective ReferenceScheme remain the same or differ. If r's rule reads a representation or another separately obtaining relation, it names the occurrence and compares endpoint facts without changing that occurrence.
 
-A.6.4 reuses the one A.6.2 formal model: category `Ep`, endpoint-only thin category `EoCBase`, `dom`, `cod`, identities, `compose`, and the declared mapping `α`. For retargeting arrow r, `α(r)=u_{α(X),α(Y)}` is the unique formal endpoint arrow between the independently different EntitiesOfConcern. It records only that endpoint difference and deliberately forgets r's arrow rule; it is not an independently declared domain or world-side relation. The local classification function `entityOfConcernChangeMode` returns `retarget` for r and records the same endpoint difference. It classifies only the endpoint-change mode; it adds no domain-function evaluation or second retargeting calculus.
+A.6.4 reuses the one A.6.2 formal model: category `Ep`, endpoint-only thin category `EoCBase`, `dom`, `cod`, identities, `compose`, and the declared mapping `α`. For retargeting arrow r, `α(r)=u_{α(X),α(Y)}` is the unique formal endpoint arrow between the independently different EntitiesOfConcern. It records only that endpoint difference and forgets r's arrow rule; it is not an independently declared domain or world-side relation. The local classification function `entityOfConcernChangeMode` returns `retarget` for r and records the same endpoint difference. It classifies only the endpoint-change mode; it adds no domain-function evaluation or second retargeting calculus.
 
-The bounded-use assertion q, current-case judgement, and any application occurrence remain separate. Add A.6.5 SlotSpecs only inside an exact reusable direct-relation declaration; they are not fields of r, X, Y, or q.
+The bounded-use assertion q, current-case judgement, and any application occurrence remain separate. Add A.6.5 SlotSpecs only inside a reusable direct-relation declaration; they are not fields of r, X, Y, or q.
 
 #### A.6.4:4.3 - Laws (ER-0...ER-6)
 
@@ -101,20 +101,20 @@ These laws refine A.6.2 for the local retargeting subtype. Every assertion in Y 
 
 **ER-0 - Arrow class and endpoint basis.**
 
-An arrow `r : X -> Y` is in the local retargeting subtype only when X and Y are exact C.2.1 epistemes, `entityOfConcernChangeMode(r)=retarget`, and their exact EntitiesOfConcern differ. A shared label, kind name, diagram, implementation, use claim, or F.9 card identifies neither r nor its endpoints by itself.
+An arrow `r : X -> Y` is in the local retargeting subtype only when X and Y are C.2.1 epistemes, `entityOfConcernChangeMode(r)=retarget`, and their EntitiesOfConcern differ. A shared label, kind name, diagram, implementation, use claim, or F.9 card identifies neither r nor its endpoints by itself.
 
 **ER-1 - Arrow identity and neighboring facts.**
 
 1. The selected formal substrate supplies r's arrow rule or designator and equivalence criterion; same endpoints alone do not identify an arrow.
-2. The declaration states which parts of X and Y's claim content, exact EntityOfConcern, and effective ReferenceScheme remain the same or differ. It names any separately obtaining representation or other relation that r's rule reads and the endpoint facts compared; r does not change that occurrence.
+2. The declaration states which parts of X and Y's claim content, EntityOfConcern, and effective ReferenceScheme remain the same or differ. It names any separately obtaining representation or other relation that r's rule reads and the endpoint facts compared; r does not change that occurrence.
 3. Grounding, scope, operating condition, representation, and any viewpoint selected for a describing use remain separate values or relations.
-4. A different scheme, scope, context, or plane does not by itself create an F.9 Bridge. Cite F.9 only for an actually claimed direct relation between two exact F.17 local senses.
+4. A different scheme, scope, context, or plane does not by itself create an F.9 Bridge. Cite F.9 only for a claimed direct relation between two F.17 local senses.
 
 **ER-2 - Separate use proposition and current-case judgement.**
 
 For each named receiving use, one separate C.2.1 assertion q states an affirmative or negative proposition about whether the source claims preserve the declared invariant in the receiving episteme and whether the visible loss is acceptable under the named conditions. The same r may have different q assertions for different uses without changing arrow identity.
 
-A separate current-case judgement applies q to the exact current facts and returns `satisfies`, `fails`, or `cannot decide`. A direct fact, proof, test, or obtaining relation can enter the ordinary case basis through its own governor. Open A.20 only for an internal-constraint claim, A.10 only for evidence use, and B.3 only for assurance or its material-reliance threshold. Each retains its own identity; q's polarity stays as written, and `cannot decide` is reopened when its named missing fact becomes available.
+A separate current-case judgement applies q to the current facts and returns `satisfies`, `fails`, or `cannot decide`. A direct fact, proof, test, or obtaining relation can enter the ordinary case basis through its own governor. Open A.20 only for an internal-constraint claim, A.10 only for evidence use, and B.3 only for assurance or its material-reliance threshold. Each retains its own identity; q's polarity stays as written, and `cannot decide` is reopened when its named missing fact becomes available.
 
 **ER-3 - Composition and separately claimed final use.**
 
@@ -130,22 +130,22 @@ Functionality, reversibility or equivalence of routes requires the selected form
 
 **ER-5 - Applicability and optional semantic-Bridge branch.**
 
-The formal declaration states admissible endpoint families and material mathematical conditions. Each q separately states the invariant, loss boundary, receiving use, case conditions, and affirmative or negative polarity; the current-case judgement states whether the facts satisfy it. F.9 is triggered only for a separately claimed relation between two exact local senses. Optional `CL` summarizes evidence about that Bridge; it is neither a retargeting threshold nor a participant in r or q.
+The formal declaration states admissible endpoint families and material mathematical conditions. Each q separately states the invariant, loss boundary, receiving use, case conditions, and affirmative or negative polarity; the current-case judgement states whether the facts satisfy it. F.9 is triggered only for a separately claimed relation between two local senses. Optional `CL` summarizes evidence about that Bridge; it is neither a retargeting threshold nor a participant in r or q.
 
 A named mapping or relation without a governing definition supplies no additional claim. If the receiving use needs that claim, identify its direct governor or leave the missing-governor question unresolved.
 
 **ER-6 - Separate application, Work, and resulting episteme.**
 
-An arrow that preserves the EntityOfConcern remains in A.6.2 preserve mode. A.6.3 additionally requires its viewing construction and laws. Describe measuring, fitting, translating or authoring in ordinary practitioner terms. Identify an A.6.1 application and its bindings when a declared operation is current. A particular dated Work claim follows A.13 and independent A.15.1 admission, with F.6 only for precise assignment-bound attribution. Identify any resulting episteme under C.2.1; the mathematical arrow relates endpoints without performing that activity.
+An arrow that preserves the EntityOfConcern remains in A.6.2 preserve mode. A.6.3 additionally requires its viewing construction and laws. Describe measuring, fitting, translating or authoring in ordinary practitioner terms. Identify an A.6.1 application and its bindings when a declared operation is current. A dated Work claim follows A.13 and independent A.15.1 admission, with F.6 only for precise assignment-bound attribution. Identify any resulting episteme under C.2.1; the mathematical arrow relates endpoints without performing that activity.
 
 #### A.6.4:4.4 - Boundary with representation, explanation, transformation-flow structure, and neighboring claims
 
-A.6.4 is triggered only by an independently established change of exact EntityOfConcern. A changed kind, ontology frame, predicate set, mathematical domain, or notation is a recognition cue that reopens the C.2.1 identity test; none decides the branch by itself.
+A.6.4 is triggered only by an independently established change of EntityOfConcern. A changed kind, ontology frame, predicate set, mathematical domain, or notation is a recognition cue that reopens the C.2.1 identity test; none decides the branch by itself.
 
 Boundary rules:
 - if the EntityOfConcern is preserved and the main change is representation scheme or reasoning medium, use `A.6.3.RT`;
 - if the EntityOfConcern is preserved and the main change is explanation mode, explanatory stance, or explanation-facing publication, use `E.17.EFP`;
-- if the same case also asserts a semantic relation between two exact local senses from different semantic contexts, test `F.9` separately and cite a Bridge only when its predicate obtains; use `F.9.1` only for an optional stance note about that already constituted use claim. A domain correspondence, mathematical rule, or direct case fact enters the current-case basis only through the exact claim established by its governor; that claim alone does not open F.9;
+- if the same case also asserts a semantic relation between two local senses from different semantic contexts, test `F.9` separately and cite a Bridge only when its predicate obtains; use `F.9.1` only for an optional stance note about that already constituted use claim. A domain correspondence, mathematical rule, or direct case fact enters the current-case basis only through the claim established by its governor; that claim alone does not open F.9;
 - if the receiving use requires a mapping, correspondence or route-equivalence claim whose direct governor is missing, resolve that missing basis before relying on the claim;
 - if the EntityOfConcern is preserved and the receiving item is useful only under narrower declared use with visible loss and source-bearing reopen, use `A.6.3.CSC`;
 - if a `StructuralReinterpretation`, `PathSliceId`, `CrossingRef`, or `DecisionLogRef` is present, use `E.18`, `A.20`, or `A.21` for graph, path, constraint, and gate relations. Those references do not prove semantic continuity or retargeting admissibility by themselves;
@@ -157,7 +157,7 @@ A.6.4 defines arrow r, bounded-use assertion q, and the separate current-case ju
 
 ### A.6.4:5 - Archetypal Grounding (Tell-Show-Show)
 
-**Tell.** Retargeting relates epistemes about different EntitiesOfConcern. For a claimed receiving use, state the invariant, visible loss and conditions; judge a current case from its exact facts when that judgement is needed.
+**Tell.** Retargeting relates epistemes about different EntitiesOfConcern. For a claimed receiving use, state the invariant, visible loss and conditions; judge a current case from its facts when that judgement is needed.
 
 **Show 1 — Physical cabinet to selected functional structure.** Take `Cab-7` and functional `U.Structure` `Route-A` as independently identified entities. Under an explicit finite-routing scheme, source episteme X states two observations of `Cab-7` in configuration K: input L routed to output 1, and input R routed to output 2. X also identifies cabinet layout `Layout-7` and manufacturer `Maker-7`. A separate definition episteme Z specifies `Route-A` with those pairs and a third pair M→3. Receiving episteme Y concerns `Route-A` and selects only its declared L→1 and R→2 pairs. C.2.1 distinguishes X, Y and Z by their complete claims, concerns and effective schemes.
 
@@ -169,49 +169,49 @@ The unused expression `Realises(Cab-7, Route-A)` has no supplied direct predicat
 
 **Show 2 — Fourier near-miss and positive branch.** In the ordinary case, X and Y both concern sampled signal run `Signal-17`; X uses a time-domain representation and Y a frequency-domain representation. Use A.6.3.RT for this representation change. Under its declared conditions, Parseval's relation gives the energy-preservation equality; the spectrum notation still represents the same EntityOfConcern. If that mathematical correspondence or its conditions are unsettled for the receiving use, use C.29 to establish their adequacy before relying on the equality.
 
-A positive A.6.4 branch opens only if C.2.1 separately identifies, for example, exact signal run `Signal-17` and exact spectral-distribution object `Spectrum-17` as the two EntitiesOfConcern. The receiving use must actually concern `Spectrum-17`—for example, comparing its peak distribution with another spectrum—rather than merely read another representation of `Signal-17`. Then r relates the two epistemes; affirmative q states the spectral-comparison proposition and may cite the Fourier relation and Parseval test. The current-case judgement is `satisfies` only when the named facts meet q's conditions and criterion while lost time localization remains visible.
+A positive A.6.4 branch opens only if C.2.1 separately identifies, for example, signal run `Signal-17` and spectral-distribution object `Spectrum-17` as the two EntitiesOfConcern. The receiving use must concern `Spectrum-17`—for example, comparing its peak distribution with another spectrum—rather than merely read another representation of `Signal-17`. Then r relates the two epistemes; affirmative q states the spectral-comparison proposition and may cite the Fourier relation and Parseval test. The current-case judgement is `satisfies` only when the named facts meet q's conditions and criterion while lost time localization remains visible.
 
-**Show 3 — Dataset to model.** X concerns dataset D; Y concerns fitted model M, independently identified under the applicable model pattern. Affirmative q states the predictive invariant, visible losses, named prediction use, and conditions. The exact fit result and held-out test outcome are current-case facts; the judgement is `satisfies` when those facts meet q's conditions and invariant criterion. Individual observations and unmodelled distinctions remain visible losses, and any other dataset claim needs its own transfer basis. Identify any fitting application and performed Work separately under ER-6.
+**Show 3 — Dataset to model.** X concerns dataset D; Y concerns fitted model M, independently identified under the applicable model pattern. Affirmative q states the predictive invariant, visible losses, named prediction use, and conditions. The fit result and held-out test outcome are current-case facts; the judgement is `satisfies` when those facts meet q's conditions and invariant criterion. Individual observations and unmodelled distinctions remain visible losses, and any other dataset claim needs its own transfer basis. Identify any fitting application and performed Work separately under ER-6.
 
 ### A.6.4:6 - Bias-Annotation
 
-A.6.4 deliberately foregrounds the exact source and receiving entities when the EntityOfConcern changes. Recover that pair. For a claimed receiving use, state q's invariant, visible loss, use and conditions. When judging a current case, recover the facts needed for that judgement. Open a neighboring branch only when a separately current claim needs its direct pattern.
+A.6.4 foregrounds the source and receiving entities when the EntityOfConcern changes. Recover that pair. For a claimed receiving use, state q's invariant, visible loss, use and conditions. When judging a current case, recover the facts needed for that judgement. Open a neighboring branch only when a separately current claim needs its direct pattern.
 
 ### A.6.4:7 - Conformance Checklist (normative)
 
-**CC-A.6.4-1 - Exact endpoints and changed EntityOfConcern.** C.2.1 identifies X and Y and their exact EntitiesOfConcern; the two entities differ. A changed kind, frame, predicate set, domain, or notation alone does not pass this check.
+**CC-A.6.4-1 - Endpoints and changed EntityOfConcern.** C.2.1 identifies X and Y and their EntitiesOfConcern; the two entities differ. A changed kind, frame, predicate set, domain, or notation alone does not pass this check.
 
-**CC-A.6.4-2 - Arrow identity.** The selected formal substrate supplies r's exact endpoints, arrow rule or designator, and equivalence criterion. Same endpoints, a diagram, or a use claim alone does not identify r.
+**CC-A.6.4-2 - Arrow identity.** The selected formal substrate supplies r's endpoints, arrow rule or designator, and equivalence criterion. Same endpoints, a diagram, or a use claim alone does not identify r.
 
-**CC-A.6.4-3 - Separate use proposition and case judgement.** For a claimed receiving use, one C.2.1 assertion q names r, the receiving use, invariant, visible loss, conditions, and affirmative or negative polarity. When evaluating a current case, a separate judgement reports `satisfies`, `fails`, or `cannot decide` from exact current facts. The same r may have another q and judgement for another use.
+**CC-A.6.4-3 - Separate use proposition and case judgement.** For a claimed receiving use, one C.2.1 assertion q names r, the receiving use, invariant, visible loss, conditions, and affirmative or negative polarity. When evaluating a current case, a separate judgement reports `satisfies`, `fails`, or `cannot decide` from current facts. The same r may have another q and judgement for another use.
 
 **CC-A.6.4-4 - Conservative receiving claim.** Every assertion in Y satisfies A.6.2 P2. For an affirmative q, `satisfies` additionally requires enough case basis for q's invariant, loss condition and stated use. For either polarity, facts contrary to q yield `fails`; a missing deciding fact yields `cannot decide` and names that fact and the reopen condition. Neither result changes q's polarity.
 
 **CC-A.6.4-5 - Triggered additions only.** For a Description or specification-use episteme, name every material change to claim content, effective scheme, grounding, scope, operating condition, or selected viewpoint under A.7 and E.10.D2. Add those values, evidence, currentness, a route-equivalence test, or a reopen condition only when they change q or the reader's action.
 
-**CC-A.6.4-6 - Separate semantic correspondence.** Test an F.9 Bridge only when the case also claims a relation between two exact local senses. The Bridge, its bounded-use claim, optional `CL`, evidence, and reliance remain separate from r and q.
+**CC-A.6.4-6 - Separate semantic correspondence.** Test an F.9 Bridge only when the case also claims a relation between two local senses. The Bridge, its bounded-use claim, optional `CL`, evidence, and reliance remain separate from r and q.
 
-**CC-A.6.4-7 - Separate application and Work.** For measurement, computation, actuation, model fitting, authoring, and other effects, identify the exact operation application and its argument and result bindings when an A.6.1 operation declaration is current; identify any performed Work separately. The arrow statement `r : X -> Y` neither identifies an application or Work occurrence nor proves a production relation.
+**CC-A.6.4-7 - Separate application and Work.** For measurement, computation, actuation, model fitting, authoring, and other effects, identify the operation application and its argument and result bindings when an A.6.1 operation declaration is current; identify any performed Work separately. The arrow statement `r : X -> Y` neither identifies an application or Work occurrence nor proves a production relation.
 
 **CC-A.6.4-8 - Fourier boundary.** A same-signal time/frequency change uses A.6.3.RT; C.29 is added when a separate mathematical representation or transfer question remains. A.6.4 is used only after the receiving spectrum or other mathematical object is independently identified as a different EntityOfConcern.
 
-**CC-A.6.4-9 - StructuralReinterpretation boundary.** E.18 governs structure position, path, crossing, and gate relations. A.20 tests q's exact proposition only when an internal constraint is current, and A.21 governs any gate decision. None identifies r or supplies a `satisfies` judgement merely by reference or placement.
+**CC-A.6.4-9 - StructuralReinterpretation boundary.** E.18 governs structure position, path, crossing, and gate relations. A.20 tests q's proposition only when an internal constraint is current, and A.21 governs any gate decision. None identifies r or supplies a `satisfies` judgement merely by reference or placement.
 
-**CC-A.6.4-10 - Honest stop and light ordinary use.** A missing deciding fact yields `cannot decide` and names the fact and reopen condition; contrary facts yield `fails`. Otherwise one short paragraph answering the six practical questions is enough. No separate evidence, assurance, publication, currentness, or reusable declaration is required unless its own use condition is current.
+**CC-A.6.4-10 - Stop and ordinary use.** A missing deciding fact yields `cannot decide` and names the fact and reopen condition; contrary facts yield `fails`. Otherwise one short paragraph answering the six practical questions is enough. No separate evidence, assurance, publication, currentness, or reusable declaration is required unless its own use condition is current.
 
 ### A.6.4:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Why it fails | Correct action |
 |---|---|---|
-| Retargeting as viewing | A changed EntityOfConcern is treated as the same object under another viewpoint. | Resolve `EntityOfConcernRef` to the exact entity: same-entity arrows remain in A.6.2 preserve mode and qualify for A.6.3 only under its viewing laws; use A.6.4 when the independently identified entities differ and its retargeting laws hold. |
+| Retargeting as viewing | A changed EntityOfConcern is treated as the same object under another viewpoint. | Resolve `EntityOfConcernRef` to the entity: same-entity arrows remain in A.6.2 preserve mode and qualify for A.6.3 only under its viewing laws; use A.6.4 when the independently identified entities differ and its retargeting laws hold. |
 | Retargeting as publication rendering | A diagram, export, or face is treated as the arrow or as support for its use. | Keep publication forms in E.17 and E.24.PUB; state r and the separate use claim q only when each is current. |
 | Universal Bridge as admission | A `KindBridge`, F.9 Bridge, `CL`, mapping, or optic is required or used to inherit every downstream claim. | Use the A.6.4 minimum basis; add F.9 only for a separate local-sense relation and state every neighboring claim under its own rule. |
 | Mathematical notation decides retargeting | A Fourier, graph, path, or category representation is treated as proof that the EntityOfConcern changed. | Use C.29 for the mathematical lens and repeat the C.2.1 identity test. Use A.6.3.RT when the entity is preserved; use A.6.4 only for independently different entities. |
 
 ### A.6.4:9 - Consequences
 
-* **Viewing and retargeting separate cleanly.** A viewing arrow preserves the EntityOfConcern. A retargeting arrow relates epistemes with independently different EntitiesOfConcern; q states one bounded-use proposition, and the separate current-case judgement says whether the facts satisfy it.
-* **StructuralReinterpretation receives one core rule.** E.18 can place r and q without duplicating their identities; the A.6.4 current-case basis remains the exact facts and separate judgement.
+* **Viewing and retargeting separate.** A viewing arrow preserves the EntityOfConcern. A retargeting arrow relates epistemes with independently different EntitiesOfConcern; q states one bounded-use proposition, and the separate current-case judgement says whether the facts satisfy it.
+* **StructuralReinterpretation receives one core rule.** E.18 can place r and q without duplicating their identities; the A.6.4 current-case basis remains the facts and separate judgement.
 * **Loss becomes usable information.** A lossy mapping can serve one bounded purpose; reversibility and semantic identity remain separately established claims.
 * **Optional apparatus stays optional.** F.9 enters only for cross-local-sense correspondence; route-equivalence, evidence, assurance, gate, publication, and Work branches enter only when their own claims are current.
 * **Description boundaries remain visible.** Claim content, scheme, grounding, scope, operating condition, and viewpoint changes do not disappear into one retargeting bundle.
@@ -238,17 +238,17 @@ The A.6.4 split among r, q, and any application occurrence is a bounded FPF synt
 Start with questions 1–2 to classify the arrow. Questions 3–4 concern a claimed receiving use; question 5 concerns its evaluation in a current case. Questions 6–7 apply when those additional claims are current.
 
 1. **Does the EntityOfConcern change?** If no, use A.6.3 or another preserving pattern.
-2. **Which exact arrow, endpoint epistemes and EntitiesOfConcern are involved?** Name them before naming a mapping technology.
-3. **Which invariant does q state?** Name its exact proposition and case assumptions.
+2. **Which arrow, endpoint epistemes and EntitiesOfConcern are involved?** Name them before naming a mapping technology.
+3. **Which invariant does q state?** Name its proposition and case assumptions.
 4. **What is lost, and which receiving use tolerates that loss?** A broad "same meaning" answer is insufficient.
 5. **What witnesses the invariant and loss judgement?** If the witness is missing or contradicted, stop or reopen.
 6. **Is a relation between two local senses also claimed?** Only then test F.9 separately; no Bridge follows merely from retargeting.
-7. **Was computation or another activity performed?** When an A.6.1 operation declaration is current, identify the exact application and its argument and result bindings. Identify any performed Work separately from r and q.
+7. **Was computation or another activity performed?** When an A.6.1 operation declaration is current, identify the application and its argument and result bindings. Identify any performed Work separately from r and q.
 
 ### A.6.4:13 - Relations
 
-* **Builds on.** A.6.0 for a reusable FormalSubstrate declaration; A.6.2 for the local arrow discipline; A.6.3 for the preserved-EntityOfConcern neighboring branch; C.2.1 for episteme, EntityOfConcern, and use-assertion identity; C.29 for mathematical-lens use; A.6.3.RT for preserved-EntityOfConcern representation transitions; A.6.5 for SlotSpecs inside a reusable direct-relation declaration; A.7 and E.10.D2 for Description and specification-use boundaries; C.2 and C.3 or the relevant domain pattern for the invariant; and F.9 only for a separately claimed relation between exact local senses.
-* **Consumed by.** E.18 may place r and q at a `StructuralReinterpretation` locus; A.20 may test the exact proposition carried by q; E.17 may publish an episteme that describes the case; KD-CAL and LOG-CAL may reason over a stated invariant. None redefines r or q.
-* **Neighbor boundaries.** `A.6.1` and `A.15` govern an actual application and Work; `A.10` governs evidence; `B.3` governs assurance and reliance; `A.21` governs gate decisions; `C.27` governs temporal adequacy; `A.3.3` governs dynamics; the applicable direct control pattern governs control; and `E.24.PUB` governs publication. C.2.6 recovers source and use claims, and C.2.7 governs representation factors; B.5.2 governs its abductive-loop state.
+* **Builds on.** A.6.0 for a reusable FormalSubstrate declaration; A.6.2 for the local arrow discipline; A.6.3 for the preserved-EntityOfConcern neighboring branch; C.2.1 for episteme, EntityOfConcern, and use-assertion identity; C.29 for mathematical-lens use; A.6.3.RT for preserved-EntityOfConcern representation transitions; A.6.5 for SlotSpecs inside a reusable direct-relation declaration; A.7 and E.10.D2 for Description and specification-use boundaries; C.2 and C.3 or the relevant domain pattern for the invariant; and F.9 only for a separately claimed relation between local senses.
+* **Consumed by.** E.18 may place r and q at a `StructuralReinterpretation` locus; A.20 may test the proposition carried by q; E.17 may publish an episteme that describes the case; KD-CAL and LOG-CAL may reason over a stated invariant. None redefines r or q.
+* **Neighbor boundaries.** `A.6.1` and `A.15` govern an application and Work; `A.10` governs evidence; `B.3` governs assurance and reliance; `A.21` governs gate decisions; `C.27` governs temporal adequacy; `A.3.3` governs dynamics; the applicable direct control pattern governs control; and `E.24.PUB` governs publication. C.2.6 recovers source and use claims, and C.2.7 governs representation factors; B.5.2 governs its abductive-loop state.
 
 ### A.6.4:End

@@ -8,7 +8,7 @@
 
 ### C.36.RP:1 - Problem frame
 
-**Use this when** changing participants, tools or questions puts a shared way of working out of reach, or when a useful discovery needs to become available to other participants. A team may still receive correct answers while losing the ability to apply the method under changed conditions. A researcher may discover a construction that colleagues cannot yet use. An ensemble may preserve a recording while newcomers cannot vary the phrase.
+**Use this when** changing participants, tools or questions puts a shared way of working out of reach, or when a useful discovery needs to become available to other participants. A team may receive correct answers while losing the ability to apply the method under changed conditions. A researcher may discover a construction that colleagues cannot yet use. An ensemble may preserve a recording while newcomers cannot vary the phrase.
 
 Begin with the work participants need to perform or develop. Follow one available result back to the contributions that make it usable, and locate the contribution they cannot obtain. Restore access, arrange a capable contributor, support acquisition or develop a better way, according to the difficulty found.
 
@@ -24,7 +24,7 @@ A result and a way of obtaining and applying it have different uses. A stored eq
 
 Changes in the practice expose these differences. A departing colleague may take away an interpretive skill. A replacement tool may produce the same output through different assumptions. An AI may introduce a useful method whose operations are unfamiliar to the receiving participants.
 
-Preservation also involves choices. Requiring every participant to learn every operation can consume the resources needed for the actual work. Keeping an obsolete procedure can prevent improvement. A practice needs to retain or replace the means of obtaining useful contributions, while leaving room for methods whose later uses are still being discovered.
+Preservation also involves choices. Requiring every participant to learn every operation can consume the resources needed for the work. Keeping an obsolete procedure can prevent improvement. A practice needs to retain or replace the means of obtaining useful contributions, while leaving room for methods whose later uses are being discovered.
 
 ### C.36.RP:3 - Forces
 
@@ -48,7 +48,7 @@ These are dependencies of the work. An available demonstration, tool or newly di
 
 Name a situation in which participants need to obtain or apply knowledge, make something, intervene, decide or investigate. Identify what has changed or what discovery could open useful work. Take an existing example, a recent failure or an intended variation that makes the need concrete.
 
-For a continuing activity, recover which result must still be obtainable and what the receiver must be able to do with it. For development, identify the promising construction or operation and an attainable way to explore it. A present clue can justify retaining a method before its eventual application is known.
+For a continuing activity, recover which result must be obtainable and what the receiver must be able to do with it. For development, identify the promising construction or operation and an attainable way to explore it. A present clue can justify retaining a method before its eventual application is known.
 
 Bound the effort by this use. If the existing arrangement already supplies the needed contribution, use it and stop. A suspected limitation matters here when it can change the receiving work or a selected development opportunity.
 
@@ -95,13 +95,13 @@ If an action requires another participant's agreement or access to a controlled 
 
 Perform the receiving work when implementation is part of the assignment. Have the receiver interpret and use the contribution under the conditions that matter there. A changed device, requested result or available resource can reveal whether the method supports the intended adaptation.
 
-Compare the result with the question that led to this work. If the result is usable, continue the activity it enables. If it fails, locate the missing operation, interpretation, access or capability and repair that part. Reuse contributions whose conditions still hold.
+Compare the result with the question that led to this work. If the result is usable, continue the activity it enables. If it fails, locate the missing operation, interpretation, access or capability and repair that part. Reuse contributions whose conditions hold.
 
 A proposal can finish by explaining the selected arrangement and what remains to be carried out. Report an achieved transfer from the receiving use that occurred. For a claim that the method persisted across participants or over time, C.36 supplies the corresponding cultural-relation question and the observations that support it.
 
 #### C.36.RP:4.6 - Keep the means of renewal available
 
-Retain a way for later participants to obtain the method and its useful explanation. This can be through colleagues, teaching, a maintained tool, accessible source material or a combination. The choice follows the actual continuity problem.
+Retain a way for later participants to obtain the method and its useful explanation. This can be through colleagues, teaching, a maintained tool, accessible source material or a combination. The choice follows the continuity problem.
 
 When development is wanted, use a consequential variation to open the next question. Change a premise, recipient, constraint or operation; examine the result through C.40. Preserve useful material and the means of further variation. C.18 supports an exploration archive; C.19 helps choose which directions in an active search pool to continue, retain or stop.
 
@@ -139,7 +139,7 @@ Brinkmann and colleagues studied a machine-discovered strategy in a constrained 
 
 The arrangement can unintentionally select participants by who already understands its representations or can access its tools. Inspect that effect when it changes who can contribute or benefit, and provide a different representation, help or access where the work calls for it.
 
-A familiar human learning method can be a poor choice for an AI learner, and an AI's efficient procedure can be difficult for a person to acquire. Recover the required contribution and the receiver's means before choosing transfer. Preserve an actual human understanding requirement when the work depends on it.
+A familiar human learning method can be a poor choice for an AI learner, and an AI's efficient procedure can be difficult for a person to acquire. Recover the required contribution and the receiver's means before choosing transfer. Preserve a human understanding requirement when the work depends on it.
 
 ### C.36.RP:7 - Conformance Checklist
 

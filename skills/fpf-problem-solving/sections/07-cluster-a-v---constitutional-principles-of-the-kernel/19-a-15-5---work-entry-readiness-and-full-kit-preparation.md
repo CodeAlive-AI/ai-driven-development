@@ -16,7 +16,7 @@
 
 When degraded support, handoff, or continuation-state evidence can change work entry, use the present-WorkPlan branch of `A.15.8` to test the proposed performer, support, and state configuration, then return here with its bounded result. Ordinary full-kit checking does not require `A.15.8`.
 
-**What this buys.** A team can decide the next bounded move—start no work yet, prepare an exact missing input, recheck, or submit declared checks to a gate—under the criterion and the entry conditions actually required.
+**What this buys.** A team can decide the next bounded move—start no work yet, prepare a missing input, recheck, or submit declared checks to a gate—under the criterion and the entry conditions required.
 
 **Not this pattern when.** Use `A.15.2` for the work plan itself, `A.15.3` for planned slot fillers, `A.15.1` for dated performed work, `A.21` for gate decisions, `A.15.4` only when a reliance appearance is already being used as a reason for work or reliance before the subject pattern slot, relation, or project-side reference is named, `B.1.6` for resource aggregation after work, `E.18` for transformation-flow structure, and `E.18.1` for P2W carry-through from accepted problem-side material.
 
@@ -28,11 +28,11 @@ Teams often say that work is "ready", "full-kitted", "committed", "green", "rele
 
 ### A.15.5:2 - Problem
 
-Without one explicit local work-entry readiness claim and result semantics:
+Without one local work-entry readiness claim and result semantics:
 
-1. Full-kit preparation becomes an attractive umbrella for planning, source relations, gate passage, and performed work.
+1. Full-kit preparation becomes an umbrella for planning, source relations, gate passage, and performed work.
 2. A green tile or ready label is treated as a `GateDecisionResult`.
-3. Declaration-local planned-filling content inside the WorkPlan is overread as evidence that the planned values were actually prepared or used.
+3. Declaration-local planned-filling content inside the WorkPlan is overread as evidence that the planned values were prepared or used.
 4. Resource readiness is confused with resource consumption.
 5. A committed item becomes "done" by position in a board, not by a separately established completion claim about dated `U.Work`.
 
@@ -50,7 +50,7 @@ Without one explicit local work-entry readiness claim and result semantics:
 
 State readiness as a domain-local result about the identified plan content. When the result needs its own reference, identify its C.2.1 episteme; retain a durable representation when later access requires it.
 
-**Full-kit use.** Use the actual plan, input facts and readiness result needed by the work-entry question. The source contribution and limits of the TameFlow adaptation are stated in §11.
+**Full-kit use.** Use the plan, input facts and readiness result needed by the work-entry question. The source contribution and limits of the TameFlow adaptation are stated in §11.
 
 #### A.15.5:4.1 - One work-entry readiness claim
 
@@ -63,7 +63,7 @@ Start with one ordinary sentence:
 The local value family is:
 
 - `ready` — every input required by C is determined and satisfies C for V;
-- `readyWithKnownGaps` — C explicitly admits the named gaps for this exact bounded use, every non-waived input is determined and satisfied, and V plus the stop condition expose the remaining risk;
+- `readyWithKnownGaps` — C explicitly admits the named gaps for this bounded use, every non-waived input is determined and satisfied, and V plus the stop condition expose the remaining risk;
 - `notReady` — an applicable failure or closure condition in C is determined for this case; and
 - `unknown` — one required fact, currentness result, predicate, or applicability basis cannot be determined, and no already determined applicable failure or closure condition settles the result as `notReady`. Absence of an assertion or persisted episteme is not by itself `notReady`.
 
@@ -75,23 +75,23 @@ The result episteme states the readiness judgement. If a current claim says that
 
 #### A.15.5:4.2 - Readiness criterion and full-kit inputs
 
-Use one exact readiness criterion when the entry question depends on what must be known, prepared, reserved, gathered, communicated, assigned, or pinned before work starts. The criterion states:
+Use one readiness criterion when the entry question depends on what must be known, prepared, reserved, gathered, communicated, assigned, or pinned before work starts. The criterion states:
 
 - the exact WorkPlan and its present EntityOfConcern, PlanItem, intended-performance designator, any exact intended-work target and intended outcome or value claim current in the plan, any current intended-work kind or work-family classification, target `U.Method`, evaluation time, and applicability window it judges;
 - each required positive or negative predicate, the allowed named gaps if any, and the rule for `ready`, `readyWithKnownGaps`, `notReady`, and `unknown`;
 - which changed fact, expired interval, new conflict, source revision, or resource or assignment change ends reliance; and
 - the stop, degraded-use, preparation, or recheck action for each non-ready result.
 
-Full-kit thinking helps recognize possible inputs. Check only the input claims that C actually consumes:
+Full-kit thinking helps recognize possible inputs. Check only the input claims that C consumes:
 
 1. exact A.15.2 plan content and any A.15.3 planned fillings, with the declaration member and conditions that give each filling meaning;
 2. current information, source-currentness, publication, measurement, evidence, or assurance claims under their subject patterns;
-3. exact resource-availability or reservation claims, intended performer Systems and local system-role-kind conditions, any already obtaining occurrence of an exact directly declared `U.SystemRoleAssignment` species when C requires an assignment, capability threshold or fit result, and exact commitment claims when C uses them; plus any exact current work-in-progress or load and flow-policy claims under the pattern that defines their counted work, boundary, threshold, and qualification window;
-4. preparation or checking results required by C, and separately admitted preparation/checking Work only when its actual occurrence is consumed by the criterion;
-5. exact prospective A.2.8.PER grant, non-prohibition, or conflict facts and their qualification windows when permission is current; and
+3. resource-availability or reservation claims, intended performer Systems and local system-role-kind conditions, any already obtaining occurrence of an exact directly declared `U.SystemRoleAssignment` species when C requires an assignment, capability threshold or fit result, and commitment claims when C uses them; plus any current work-in-progress or load and flow-policy claims under the pattern that defines their counted work, boundary, threshold, and qualification window;
+4. preparation or checking results required by C, and separately admitted preparation/checking Work only when its occurrence is consumed by the criterion;
+5. prospective A.2.8.PER grant, non-prohibition, or conflict facts and their qualification windows when permission is current; and
 6. an exact A.21 `GateDecisionResult` only when a current A.21 profile application governs the declared check applications and their mappings to that decision. The gate decision remains a separate result.
 
-An exact post-launch variance or recheck result may enter only after the target Work is actual and only through the measurement, comparison, evaluation, resource, temporal, acceptance, or other pattern that defines that exact result. Name the target Work, comparison or evaluation rule, local result, qualification window, and subject pattern. It may trigger or inform an explicitly marked recheck; it neither proves that readiness held before entry nor rewrites the earlier readiness result.
+A post-launch variance or recheck result may enter only after the target Work is actual and only through the measurement, comparison, evaluation, resource, temporal, acceptance, or other pattern that defines that result. Name the target Work, comparison or evaluation rule, local result, qualification window, and subject pattern. It may trigger or inform an explicitly marked recheck; it neither proves that readiness held before entry nor rewrites the earlier readiness result.
 For each input, name the subject pattern, exact proposition or relation occurrence, and the interval or currentness result on which this readiness check relies. A generic input, evidence, context, resource, assignment, or policy reference supplies none of those facts. Omission says only that the current criterion did not consume that input; it does not prove absence.
 
 Full-kit preparation can include gathering information, coordinating intended performer Systems and local system-role-kind conditions, producing a missing source `U.Episteme` or source publication, reserving a resource, pinning a planned filling, or creating shared understanding. When a dated occurrence is claimed as `U.Work`, actual performance and the admission basis below must be established. Plan the preparation beforehand; cite its actual result or admitted Work only after the corresponding facts are established.
@@ -102,16 +102,20 @@ For every cited preparation or readiness-checking Work occurrence, apply the com
 
 #### A.15.5:4.3 - Commitment and Launch Boundary
 
-Keep commitment facts separate from the readiness value. The criterion may consume exact current commitment claims and their qualification intervals, but `ready`, `readyWithKnownGaps`, `notReady`, or `unknown` does not mean `committed`, institute a commitment, discharge one, or authorize entry. State the practical next move—stop, prepare, probe, seek a separately governed commitment, submit to a gate, launch only under its separately satisfied entry conditions, or recheck—as the result's bounded use and return condition, not as another ontic status family. The older labels `readyForProbe`, `readyForCommitment`, `committed`, `blocked`, and `requiresGateDecision` therefore resolve to a local readiness value plus an explicit next move, commitment claim, stop, or gate question; they are not additional `ReadinessResultValue` members.
+Keep commitment facts separate from the readiness value. The criterion may consume current commitment claims and their qualification intervals, but `ready`, `readyWithKnownGaps`, `notReady`, or `unknown` does not mean `committed`, institute a commitment, discharge one, or authorize entry. State the practical next move—stop, prepare, probe, seek a separately governed commitment, submit to a gate, launch only under its separately satisfied entry conditions, or recheck—as the result's bounded use and return condition, not as another ontic status family.
 
-Use `A.2.8.PER` when a pre-entry readiness criterion consumes permission material. Name each value and its own qualification: a current `GrantedPermissionRelation@Context` occurrence with its beneficiary, permitted-action specification, `U.ClaimScope`, and `validityWindow`; a distinct `NonProhibitionFinding@Context` with its frame and `evaluationWindow`; and any `PermissionNormConflictFinding@Context` with its `overlapWindow` and disposition. For a settled conflict, retain the applicable precedence rule and its qualification, or the current resolution result and `effectiveWindow`, according to A.2.8.PER:4.6. Non-prohibition is not a grant, and a grant does not itself settle a conflict. An unresolved conflict limits the readiness use under C; the affected action remains blocked under the permission rule. Cite `PermissionExerciseRelation@Context` or `NonViolationFinding@Context` only for already dated Work: either as evidence about a different Work occurrence or in an explicitly marked post-launch recheck after the target Work is actual, retaining its own `exerciseInterval` or `evaluationWindow`. Those retrospective findings support their named past claims; prospective grant, capability, readiness and entry claims need their own current grounds. Use A.21 when a current profile application governs the declared check applications and their mappings to a distinct `GateDecisionResult`. Keep that result, scope, currentness and qualification window recoverable. Use `DecisionLogRef` when a log supplies the access, audit or replay path or the applicable policy requires it.
+The older labels `readyForProbe`, `readyForCommitment`, `committed`, `blocked`, and `requiresGateDecision` therefore resolve to a local readiness value plus an explicit next move, commitment claim, stop, or gate question; they are not additional `ReadinessResultValue` members.
+
+Use `A.2.8.PER` when a pre-entry readiness criterion consumes permission material. Name each value and its own qualification: a current `GrantedPermissionRelation@Context` occurrence with its beneficiary, permitted-action specification, `U.ClaimScope`, and `validityWindow`; a distinct `NonProhibitionFinding@Context` with its frame and `evaluationWindow`; and any `PermissionNormConflictFinding@Context` with its `overlapWindow` and disposition. For a settled conflict, retain the applicable precedence rule and its qualification, or the current resolution result and `effectiveWindow`, according to A.2.8.PER:4.6. Non-prohibition is not a grant, and a grant does not itself settle a conflict. An unresolved conflict limits the readiness use under C; the affected action remains blocked under the permission rule. Cite `PermissionExerciseRelation@Context` or `NonViolationFinding@Context` only for already dated Work: either as evidence about a different Work occurrence or in an explicitly marked post-launch recheck after the target Work is actual, retaining its own `exerciseInterval` or `evaluationWindow`. Those retrospective findings support their named past claims; prospective grant, capability, readiness and entry claims need their own current grounds.
+
+Use A.21 when a current profile application governs the declared check applications and their mappings to a distinct `GateDecisionResult`. Keep that result, scope, currentness and qualification window recoverable. Use `DecisionLogRef` when a log supplies the access, audit or replay path or the applicable policy requires it.
 
 #### A.15.5:4.4 - Relation to A.15 Family
 
 | Current claim | Subject pattern |
 | --- | --- |
 | Intended target work and horizon | `A.15.2 U.WorkPlan`. |
-| Planned fillings before work | A.15.3 declaration-local planned-filling content inside the exact `U.WorkPlan`. |
+| Planned fillings before work | A.15.3 declaration-local planned-filling content inside the `U.WorkPlan`. |
 | Preparation activity that actually happened | `A.15.1 U.Work`. |
 | Target work that actually happened | `A.15.1 U.Work`. |
 | Readiness before work entry | `A.15.5` local result claim; C.2.1 identifies a result episteme when that content needs its own reference. |
@@ -130,7 +134,7 @@ The following constructed cases stipulate their project facts and illustrate the
 
 **Situation.** An accepted cooling-fixture ProblemCard has been carried through E.18.1 into `WorkPlan-LAB-043 : U.WorkPlan`; that P2W carry-through creates neither readiness nor target Work. Its `PlanItem-TEST-043` designates possible future performance `planned-fixture-deformation-test-043`, classifies the intended work as fixture-deformation testing under the plan's current scheme, selects `FixtureDeformationTestMethod-E2 : U.Method`, and relies on `FixtureDeformationTestProcedure-E5 : U.MethodDescription` with that admitted Method as its exact EntityOfConcern and substantive setup-limit claims under A.3.2. The plan records specimen and instrument choices labeled `SFI-043`. To use them as A.15.3 planned-filling rows, recover the selected declaration, its members and their actual-use conditions; until those are recovered, retain the ordinary plan choices and leave their declaration-local filling interpretation unresolved. The plan also records planned resource reservation `FixtureBayReservation-043` and intended performer-system and `FixtureTestTechnicianSystemRole` conditions. These choices remain content of this WorkPlan.
 
-`FixtureTestEntryCriterion-E2` requires, for the proposed 09:00–09:30 UTC start window on 2026-07-27, a resolved specimen identity, heat-flow invariant claim, boundary-condition plan, sensor-calibration result, selected fixture-drawing edition, resource-availability claim, and fixture-test-technician assignment, all current for this use. The assignment basis is explicit once: `FixtureTestTechnicianAssignment` is a directly declared `U.SystemRoleAssignment` species. It defines the holder and assigned-kind positions, uses `FixtureTestSystemRoleKindDomain`, requires `FixtureTestTechnicianSystemRole`, and applies to this laboratory test. Its obtaining occurrence `FixtureTestTechnicianAssignment-043` has `FixtureTechnicianSystem-043` as holder and covers the proposed start window. `SFI-043` preserves the planned specimen and instrument choices; their actual preparation or use needs its own facts. The calibration result, its A.10 evidence path and currentness result, and the E.17 drawing-edition publication use remain separate inputs. The criterion explicitly treats known expiry or a recorded unresolved required-input status as failure and returns `notReady`. If the input or its status cannot be determined and no such failure is established, return `unknown`. A change to a consumed input, assignment coverage, resource availability or start window reopens the affected readiness conclusion; unchanged applicable input results remain reusable.
+`FixtureTestEntryCriterion-E2` requires, for the proposed 09:00–09:30 UTC start window on 2026-07-27, a resolved specimen identity, heat-flow invariant claim, boundary-condition plan, sensor-calibration result, selected fixture-drawing edition, resource-availability claim, and fixture-test-technician assignment, all current for this use. `FixtureTestTechnicianAssignment` is a directly declared `U.SystemRoleAssignment` species. It defines the holder and assigned-kind positions, uses `FixtureTestSystemRoleKindDomain`, requires `FixtureTestTechnicianSystemRole`, and applies to this laboratory test. Its obtaining occurrence `FixtureTestTechnicianAssignment-043` has `FixtureTechnicianSystem-043` as holder and covers the proposed start window. `SFI-043` preserves the planned specimen and instrument choices; their actual preparation or use needs its own facts. The calibration result, its A.10 evidence path and currentness result, and the E.17 drawing-edition publication use remain separate inputs. The criterion explicitly treats known expiry or a recorded unresolved required-input status as failure and returns `notReady`. If the input or its status cannot be determined and no such failure is established, return `unknown`. A change to a consumed input, assignment coverage, resource availability or start window reopens the affected readiness conclusion; unchanged applicable input results remain reusable.
 
 `LabMetrologySystem-2` and `LabOperationsCoordinatorSystem-1` are independently admitted Systems. For this constructed case, `CalibrationCheckingSystemRole` requires condition-sensitive calibration checking, and `ReadinessCheckingSystemRole` requires selection of readiness/preparation actions against the entry criterion; the stipulated observations support both classifications for this checking scope and window. The directly declared `LabMetrologyAssignment` and `LabOperationsCoordinationAssignment` species establish their holder/kind meanings, and case facts make `RA-LabMetrology-2-E7` and `RA-LabOperationsCoordinator-1-E4` obtain for those Systems and local kinds throughout 08:40–08:50 UTC on 2026-07-27.
 
@@ -156,7 +160,7 @@ At 10:00 UTC on 2026-07-27, the evaluator applies `ReleaseEntryCriterion-E3` to 
 
 At `10:05`, the current A.21 application of profile `Release-Core-E4` consumes that readiness result through one identified `GateCheckApplicationResult`, cited by its `GateCheckRef`, among the complete effective check set. The gate returns a `GateDecisionResult` with `decisionValue=pass` for `[10:05, 10:20)`; `DecisionLogRef=ReleaseGateLog-12` cites the separate log recording that result. That gate result is not the readiness result and does not institute permission.
 
-Separately, exact A.2.8.PER `GrantedPermissionRelation@Context` occurrence `DeployGrant-12` covers the named beneficiary and deployment action for `[09:00, 11:00)`. `DeployNonProhibitionFinding-E2` reports `nonProhibited` from its named current frame, explicitly complete for this use, in evaluation window `[10:00, 10:15)`; it is not the grant. A `PermissionNormConflictFinding@Context`, if an incompatible current norm is established over the same content and window, would be a third permission-side input and an unresolved disposition would stop the use. A policy that requires readiness, gate passage, a current grant, and the frame-relative non-prohibition result may rely on those distinct inputs at `10:10`; it must re-evaluate the relevant branch when any window ends or a conflict appears. None of them proves that deployment Work occurred. A.15.1 identifies that Work only after its dated occurrence basis obtains.
+Separately, A.2.8.PER `GrantedPermissionRelation@Context` occurrence `DeployGrant-12` covers the named beneficiary and deployment action for `[09:00, 11:00)`. `DeployNonProhibitionFinding-E2` reports `nonProhibited` from its named current frame, explicitly complete for this use, in evaluation window `[10:00, 10:15)`; it is not the grant. A `PermissionNormConflictFinding@Context`, if an incompatible current norm is established over the same content and window, would be a third permission-side input and an unresolved disposition would stop the use. A policy that requires readiness, gate passage, a current grant, and the frame-relative non-prohibition result may rely on those distinct inputs at `10:10`; it must re-evaluate the relevant branch when any window ends or a conflict appears. None of them proves that deployment Work occurred. A.15.1 identifies that Work only after its dated occurrence basis obtains.
 
 If a dashboard shows green but the required readiness result or its reliance window, the current A.21 profile application and gate result, or the required permission value and qualification window cannot be recovered, resolve the missing basis under its subject pattern before relying on the affected claim. Recover the gate result directly or through `ReleaseGateLog-12`; loss of the log alone need not block reliance on a fully recoverable result. Open the A.10 evidence-provenance and currentness question when that basis for a consumed claim is unresolved.
 
@@ -170,10 +174,10 @@ If a dashboard shows green but the required readiness result or its reliance win
 
 | ID | A conforming readiness use... | Check |
 | --- | --- | --- |
-| `CC-A15.5-1` | names the exact WorkPlan, PlanItem, intended performance, criterion, and evaluation time. | The readiness result cannot float free of the plan content and bounded entry question it judges. |
+| `CC-A15.5-1` | names the WorkPlan, PlanItem, intended performance, criterion, and evaluation time. | The readiness result cannot float free of the plan content and bounded entry question it judges. |
 | `CC-A15.5-2` | separates readiness from performed work. | No target `U.Work` occurrence is asserted unless dated work evidence is current. |
 | `CC-A15.5-3` | separates full-kit inputs, checking results and preparation/checking Work. | A readiness claim need not identify a separate checking Work. Every dated Work it does assert needs A.13 and independent A.15.1 admission; F.6 applies only to a consumed precise assignment-bound claim. |
-| `CC-A15.5-4` | cites planned baselines without rewriting them. | A.15.3 planned-filling rows remain declaration-local content inside the exact WorkPlan. |
+| `CC-A15.5-4` | cites planned baselines without rewriting them. | A.15.3 planned-filling rows remain declaration-local content inside the WorkPlan. |
 | `CC-A15.5-5` | keeps gate decisions in A.21. | When the use requires a gate result, establish it through the applicable A.21 profile application over its complete effective check set and mapping rules; readiness may supply one declared check input. |
 | `CC-A15.5-6` | keeps resource readiness and resource aggregation distinct. | Planned reservations and actual consumption are not merged. |
 | `CC-A15.5-7` | states stop, degraded-use, or recheck condition. | The reader can identify the next supported action; committing or launching still requires its separately satisfied conditions. |
@@ -184,7 +188,7 @@ If a dashboard shows green but the required readiness result or its reliance win
 
 | Anti-pattern | Why it fails | Better use |
 | --- | --- | --- |
-| Ready label as authorization | A label is treated as permission, conflict resolution, work authorization, or gate passage. | Use `A.2.8.PER` for the exact permission/conflict result, A.21 for gate decision, or A.15.4 when a reliance appearance is being used as a reason for work or reliance before the subject pattern slot, relation, or project-side reference is named. |
+| Ready label as authorization | A label is treated as permission, conflict resolution, work authorization, or gate passage. | Use `A.2.8.PER` for the permission/conflict result, A.21 for gate decision, or A.15.4 when a reliance appearance is being used as a reason for work or reliance before the subject pattern slot, relation, or project-side reference is named. |
 | Full kit as work done | Prepared inputs are treated as target work completion. | Keep prepared-input facts separate from target completion. Establish any claimed preparation or target Work under A.15.1, and any completion claim under its applicable criterion and case facts. |
 | Baseline as actuals | Planned slot fillers are treated as launch or performed values. | Keep planned fillers in A.15.3. When the receiving question needs a comparison, establish the actual values independently and state the result under the applicable comparison rule. |
 | MOVE imported as kind | TameFlow source wording becomes an FPF object. | Recover intended work, commitment, readiness, gate, preparation work, or performed work under FPF patterns. |
@@ -195,7 +199,7 @@ Benefits:
 
 - Teams can inspect work-entry readiness without flattening plan, preparation, gate, resource, and performed-work claims.
 - The adapted pre-entry Full-Kitting distinctions supply a recognition palette for a local readiness criterion; neither TameFlow nor its source vocabulary governs FPF readiness.
-- The result exposes the exact input claims and qualification intervals on which a later gate or work-entry decision may rely.
+- The result exposes the input claims and qualification intervals on which a later gate or work-entry decision may rely.
 
 Costs:
 
@@ -206,7 +210,7 @@ Costs:
 
 The readiness question is practical and recurrent: does this intended performance satisfy its work-entry criterion at the stated time? FPF already has the kinds needed to answer it. One local criterion and result claim keep the answer inspectable without collapsing the plan, its inputs, the checking Work, gate, permission, or target Work into one object.
 
-The result depends on the inputs actually consumed by its criterion. It may use an immediate A.15.4 disposition without making that note a new formal object. Later reliance needs the claim and its grounds recoverable under the relevant access and currentness conditions; a durable representation is one way to provide that access. A missing input may need preparation, clarification or a direct subject-pattern check, rather than automatically becoming a source-repair problem.
+The result depends on the inputs consumed by its criterion. It may use an immediate A.15.4 disposition without making that note a new formal object. Later reliance needs the claim and its grounds recoverable under the relevant access and currentness conditions; a durable representation is one way to provide that access. A missing input may need preparation, clarification or a direct subject-pattern check, rather than automatically becoming a source-repair problem.
 
 ### A.15.5:11 - SoTA-Echoing
 

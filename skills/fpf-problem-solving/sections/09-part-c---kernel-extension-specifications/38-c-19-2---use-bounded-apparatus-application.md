@@ -16,9 +16,9 @@ The primary reader is an engineer, method or model selector, or technical lead. 
 
 ### C.19.2:1 - Problem frame
 
-A team can have a rich apparatus and still lack an economical way to use it. A maintenance group may need only one typed relation distinction for a one-off repair, an architecture team may need a carefully configured model across hundreds of handoffs, and an assurance team may need a formal technique only after the required guarantee becomes stronger. In each case, displaying more apparatus is easier than proving that its setup work changes the result.
+A team can have a rich apparatus and still lack an economical way to use it. A maintenance group may need only one typed relation distinction for a one-off repair, an architecture team may need a configured model across hundreds of handoffs, and an assurance team may need a formal technique only after the required guarantee becomes stronger. In each case, displaying more apparatus is easier than proving that its setup work changes the result.
 
-The governed concern is one bounded apparatus application for one declared use and horizon. The apparatus retains its direct kind; this pattern does not introduce a generic `U.Apparatus` kind. The application question is distinct from candidate generation, local choice, planning, performed work, and the domain result.
+The concern is one bounded apparatus application for one declared use and horizon. The apparatus retains its direct kind; this pattern does not introduce a generic `U.Apparatus` kind. The application question is distinct from candidate generation, local choice, planning, performed work, and the domain result.
 
 ### C.19.2:2 - Problem
 
@@ -40,7 +40,7 @@ The failure is not merely excess documentation. It obscures who performs the wor
 
 #### C.19.2:4.1 - Keep the five positions separate
 
-Use this minimal lens before taking a branch:
+Use this lens before taking a branch:
 
 1. **Declared use:** the practical question, direct result kind, claimed guarantee, non-negotiable constraints, and horizon.
 2. **Selected or candidate direct-kind object:** the method description, model, ontology module, formal technique, or other governed object being considered.
@@ -50,9 +50,9 @@ Use this minimal lens before taking a branch:
 
 The intended reader may also be the person-system that performs the Work, but reader position and performer relation remain different.
 
-#### C.19.2:4.2 - Select the truthful application branch
+#### C.19.2:4.2 - Select the application branch
 
-**One current apparatus.** When one direct-kind apparatus is already selected and still has a credible path to the declared result and guarantee, create no `OptionSet` and no `ChoiceResult`. Compare the smallest next adaptation/configuration work with the useful-result threshold, plan when needed, perform the work, and inspect the result.
+**One current apparatus.** When one direct-kind apparatus is already selected and has a credible path to the declared result and guarantee, create no `OptionSet` and no `ChoiceResult`. Compare the smallest next adaptation/configuration work with the useful-result threshold, plan when needed, perform the work, and inspect the result.
 
 **Candidate generation or reframing.** If no adequate current object is available, use `C.39` to develop a missing explanation of how to obtain the result, or `C.40` to vary usable material and examine the difference. Use `C.18` when generation-account or archive/front claims are needed. The declared use and eligibility basis can guide that work.
 
@@ -64,14 +64,14 @@ The intended reader may also be the person-system that performs the Work, but re
 
 `UseBoundedApparatusCandidateEligibilityPredicate@Context` is a local eligibility predicate, not a U-kind, relation kind, or candidate-generation method. A candidate is eligible only when it has a credible adaptation path to the same declared use, direct result kind, claimed guarantee, scope and horizon, and non-negotiable constraints. A candidate that cannot meet one of those values stays outside the current option set rather than becoming a “weaker” member of it.
 
-When the claimed guarantee or requirement itself is disputed, use `C.11.DUA` to appraise its purpose, contribution, burden and current force. Keep apparatus eligibility under the current declaration separate from that appraisal. Resume application under a revised declaration only when the change is available through the authority or agreement that governs it.
+When the claimed guarantee or requirement is disputed, use `C.11.DUA` to appraise its purpose, contribution, burden and current force. Keep apparatus eligibility under the current declaration separate from that appraisal. Resume application under a revised declaration only when the change is available through the authority or agreement that governs it.
 
 When choice is current, preserve the exact `C.11` contract:
 
-- `choose now` names one selected option or an honestly retained tie-set;
+- `choose now` names one selected option or a retained tie-set;
 - `reject current set` returns to a named candidate-generation pattern or closes with no current application;
 - `probe again` retains one probe and its epistemic budget because it can still change the choice;
-- `reroute` names the actual neighboring question and its subject pattern.
+- `reroute` names the neighboring question and its subject pattern.
 
 These four dispositions form the complete current `C.11` result set. “Configure the rich basis”, “adapt again”, and “use a lighter method” are option or plan contents, not extra choice-result values. A tie is not a hidden winner.
 
@@ -105,17 +105,18 @@ In this constructed planning account, both eligible Methods satisfy the same gua
 
 The setup difference is 38 hours and the per-handoff saving is 8 minutes: the methods tie at 285 handoffs. At the declared 400-handoff horizon, C.11 returns `choose now` for the ontology-backed Method on the supplied equal-guarantee basis, saving an expected 15 hours 20 minutes. If the feasible horizon falls to 100, the same basis favors the lighter Method. These are conditional estimates, not observed maintenance results; changed costs or guarantees reopen their respective questions.
 
-An admitted maintenance-information System performs the dated configuration and application Work using the selected ontology-backed Method. The account recovers the System's A.13 core and independently admits the Work under A.15.1. Because the current question is whether setup cost is repaid across the handoffs and consumes no exact assignment-bound attribution, this short example does not open F.6 or expose assignment identity, species, participants, or attribution detail. A later attribution-bearing claim adds F.6 through the same obtaining A.13 assignment.
+An admitted maintenance-information System performs the dated configuration and application Work using the selected ontology-backed Method. The account recovers the System's A.13 core and independently admits the Work under A.15.1. Because the current question is whether setup cost is repaid across the handoffs and consumes no assignment-bound attribution, this example does not open F.6 or expose assignment identity, species, participants, or attribution detail. A later attribution-bearing claim adds F.6 through the same obtaining A.13 assignment.
 
-A separately admitted maintenance-decision System then performs decision Work using the selected Method. Its A.13 core and independent A.15.1 Work admission are recoverable; this setup-cost example consumes no exact assignment-bound attribution, so F.6 remains unopened. Under `A.6.1`, application `MaintenanceDecisionApplication-1` of operation `DecideMaintenance`, declared by `MaintenanceDecisionMechanism-E1`, returns `AuditedMaintenanceDecision-1` under result declaration `DecisionResult`; no Work-to-result or production claim is made. If repair or audit cost does not fall after the declared sample, reopen the apparatus application.
-**One-off naming repair.** A team already has the direct typed-relation method for one local, reversible naming decision. No rival is live and the current method has a credible small path, so no option set or choice result is created. The team performs the minimal wording and typing work and returns a scoped terminology decision. Recurrence, integration, a failed result, or a stronger guarantee may later open candidate generation and choice.
+A separately admitted maintenance-decision System then performs decision Work using the selected Method. Its A.13 core and independent A.15.1 Work admission are recoverable; this setup-cost example consumes no assignment-bound attribution, so F.6 remains unopened. Under `A.6.1`, application `MaintenanceDecisionApplication-1` of operation `DecideMaintenance`, declared by `MaintenanceDecisionMechanism-E1`, returns `AuditedMaintenanceDecision-1` under result declaration `DecisionResult`; no Work-to-result or production claim is made. If repair or audit cost does not fall after the declared sample, reopen the apparatus application.
+
+**One-off naming repair.** A team already has the typed-relation method for one local, reversible naming decision. No rival is live and the current method has a credible small path, so no option set or choice result is created. The team performs the minimal wording and typing work and returns a scoped terminology decision. Recurrence, integration, a failed result, or a stronger guarantee may later open candidate generation and choice.
 
 **Non-use.** If the blocked result comes from missing telemetry while the method, state kinds, and action distinctions are already clear, return to measurement and evidence work. Apparatus selection cannot manufacture the missing observation.
 
 ### C.19.2:6 - Bias-Annotation
 
 
-The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar terminology is treated as practical superiority. The mitigation is one declared result and guarantee, direct-kind candidates, actual adaptation/work cost, and a positive one-apparatus path. A second bias is automation optimism; cheaper computation does not erase evidence, human attention, integration, or consequence review.
+The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar terminology is treated as practical superiority. The mitigation is one declared result and guarantee, direct-kind candidates, adaptation/work cost, and a positive one-apparatus path. A second bias is automation optimism; cheaper computation does not erase evidence, human attention, integration, or consequence review.
 
 ### C.19.2:7 - Conformance Checklist
 
@@ -135,7 +136,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 | Anti-pattern | Repair |
 |---|---|
 | Configure everything because the basis is rich. | Name the useful-result threshold and retain only setup work with expected return. |
-| Invent a rival to make the method look comparative. | Use the one-apparatus path until candidate or choice work is genuinely current. |
+| Invent a rival to make the method look comparative. | Use the one-apparatus path until candidate or choice work is current. |
 | Call candidate generation a choice. | Use `C.39` to explain a missing way or `C.40` to vary and examine usable material; let `C.11` operate on the existing eligible set. Add `C.18` when the generation account or archive/front claim matters. |
 | Treat the apparatus-choice `ChoiceResult` as an application plan or the problem-facing result. | Keep selected object, plan, dated work, application note, and domain result separate. |
 | Let a `U.MethodDescription` episteme, its described Method, a plan, option row, publication, or reader position perform Work. | State in ordinary language that an admitted System performs dated Work using the Method. Recover its A.13 core and independently admit the Work under A.15.1; add F.6 only when the present use needs precise assignment-bound attribution. Expand assignment and attribution detail only when that use needs it, attribution is ambiguous, or the source wording must be repaired. |
@@ -143,7 +144,7 @@ The main bias is prestige-by-apparatus: richer form, newer tooling, or familiar 
 
 ### C.19.2:9 - Consequences
 
-The pattern makes cheap, truthful use a first-class result. Teams can apply one current method without ceremony, yet repeated or consequential uses can justify configuration or a real choice. The cost is naming the result, guarantee, applicable condition or predicate, and enough work economics to support the path. That bounded burden prevents apparatus display from replacing practical return.
+The pattern makes cheap use a first-class result. Teams can apply one current method without ceremony, yet repeated or consequential uses can justify configuration or a real choice. The cost is naming the result, guarantee, applicable condition or predicate, and enough work economics to support the path. That bounded burden prevents apparatus display from replacing practical return.
 
 ### C.19.2:10 - Rationale
 
@@ -165,8 +166,8 @@ These sources change the positive method: the user starts from a result, may obt
 ### C.19.2:12 - Relations
 
 - **Coordinates with:** `C.39` for a missing explanation of how to obtain the result; `C.40` for feasible variation and examination; `C.18` for the generation account and archive/front stewardship; `C.19` for explore/exploit policy over still-live candidate pools; `C.19.1` for scale-amenable bearer preference; `C.22.1` for adaptation signatures; `E.23` for repeated improvement; and `C.31.ASAP` for architecture-scale preference.
-- **Uses conditionally:** `C.11` only when an actual local-choice question over a live eligible set exists. It consumes, but does not extend, the four `ChoiceResult` dispositions.
-- **Hands off enactment to:** `A.15.2` for work plans, `A.15.1` for dated work, and `C.24` only for tool-call enactment planning. The direct domain pattern contains the defining content for the practical result.
-- **Description-level specialization:** `A.7.1` narrows the method claims stated here for consequence-guided ontology analysis. It retains the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, separation among plan, Work, and result, stop, and reopen. It retains the candidate and choice branch only when that branch is actually triggered. This wording adds no relation occurrence between the described Methods and asserts neither `U.SubkindOf` nor a world relation.
+- **Uses conditionally:** `C.11` only when a local-choice question over a live eligible set exists. It consumes, but does not extend, the four `ChoiceResult` dispositions.
+- **Hands off enactment to:** `A.15.2` for work plans, `A.15.1` for dated work, and `C.24` only for tool-call enactment planning. The domain pattern contains the defining content for the practical result.
+- **Description-level specialization:** `A.7.1` narrows the method claims stated here for consequence-guided ontology analysis. It retains the declared use, problem-facing result, claimed guarantee, horizon, useful threshold, separation among plan, Work, and result, stop, and reopen. It retains the candidate and choice branch only when that branch is triggered. This wording adds no relation occurrence between the described Methods and asserts neither `U.SubkindOf` nor a world relation.
 
 ### C.19.2:End

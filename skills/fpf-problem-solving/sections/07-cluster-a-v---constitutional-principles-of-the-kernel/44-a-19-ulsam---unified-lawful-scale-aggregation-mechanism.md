@@ -1,10 +1,10 @@
-## A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism (ULSAM)
+## A.19.ULSAM - Unified Lawful Scale Aggregation Mechanism
 
 > **Type:** Architectural (A)
 > **Status:** Stable
-> **Normativity:** Normative (unless explicitly marked informative)
+> **Normativity:** Normative (unless marked informative)
 
-`ULSAM.IntensionRef` identifies the exact `U.Mechanism` declaration in §4.1 under A.6.1. CHR resolves its optional fold_Γ? stage to the local Fold_Γ operation; the declaration supplies the meanings and actual application/binding rules below.
+`ULSAM.IntensionRef` identifies the `U.Mechanism` declaration in §4.1 under A.6.1. CHR resolves its optional fold_Γ? stage to the local Fold_Γ operation; the declaration supplies the meanings and application/binding rules below.
 
 ### A.19.ULSAM:0 - At a glance (didactic, informative)
 
@@ -12,11 +12,11 @@
 * **Input surface:** an admitted `MeasureSetSlot`, `CNSpecSlot`, `CGSpecSlot`, and `GammaFoldSlot`, with the grouping or membership basis, fold and policy editions, claim scope and selected slices, qualification window, evidence basis, contributors, and intended result declared by those inputs; `MinimalEvidenceSlot?` may override the CG-Spec minimum.
 * **Output surface:** `AggregatedMeasureSlot` (+ optional `ContributorSetSlot?` as an explanation surface).
 * **Non‑goals:** no scoring, no comparison, no selection, no “method catalog”, no hidden defaults, no hidden thresholds.
-* **P2W seam:** an A.15.2 baseline selects the fold, evidence policy and their editions. A.15.3 typed filling applies only to independently declared receiving positions under the CHR P2W hook. Actual fold arguments bind under §4.1; a planned value does not establish that binding.
+* **P2W seam:** an A.15.2 baseline selects the fold, evidence policy and their editions. A.15.3 typed filling applies only to independently declared receiving positions under the CHR P2W hook. Fold arguments bind under §4.1; a planned value does not establish that binding.
 * **Failure mode:** tri‑state guard `GuardDecision := {pass|degrade|abstain}`; unknown/insufficient evidence never coerces to “pass”.
-* **Rule of thumb:** if you are about to “average/sum/roll up”, you probably need an explicit ULSAM `Fold_Γ` stage (or a justified decision to *not* fold).
+* **Rule of thumb:** if you are about to “average/sum/roll up”, you probably need a ULSAM `Fold_Γ` stage (or a justified decision to *not* fold).
 
-**What this mechanism is.** `ULSAM` is the CHR mechanism that makes **aggregation explicit**: it performs an explicit **Γ‑fold** over a set of **admitted measures**, producing an **aggregated measure** (and optionally a contributor surface) under **declared admissibility**.
+**What this mechanism is.** `ULSAM` is the CHR mechanism that makes **aggregation explicit**: it performs a **Γ‑fold** over a set of **admitted measures**, producing an **aggregated measure** (and optionally a contributor surface) under **declared admissibility**.
 
 **Use this when** the receiving use needs an aggregate measure:
 - You want to “roll up” multiple measures into one measure (e.g., an overall reliability/assurance coordinate, a single aggregated risk measure, an aggregate score coordinate).
@@ -24,12 +24,12 @@
 - You need the fold to be **scale-lawful** (no ordinal arithmetic; no illegal mixing of units).
 - You need the fold to be **policy-bound and edition-stable** (replayability and pin traceability).
 
-**Choosing the fold.** If the law for the intended result or a required property is unresolved, use A.9 or reuse a sufficient domain result. When the result selects a fold, its law and conditions supply the basis for the explicit fold reference; ULSAM still governs admission of the measures, scale lawfulness and the actual mechanism operation.
+**Choosing the fold.** If the law for the intended result or a required property is unresolved, use A.9 or reuse a sufficient domain result. When the result selects a fold, its law and conditions supply the basis for the fold reference; ULSAM still governs admission of the measures, scale lawfulness and the mechanism operation.
 
 **Where it sits in CHR.**
-- In the CHR suite protocol, ULSAM corresponds to the optional stage `fold_Γ?` (i.e., **explicitly optional** and never hidden inside `score/compare/select`).
+- In the CHR suite protocol, ULSAM corresponds to the optional stage `fold_Γ?`, never hidden inside `score/compare/select`.
 
-**First useful move.** State what the aggregate must mean and which contributors it covers. Resolve the fold and its conditions, then check the actual inputs. If separate measures already answer the receiving question, stop without folding. Make the actual contributors recoverable; a separate ContributorSet result is optional.
+**First useful move.** State what the aggregate must mean and which contributors it covers. Resolve the fold and its conditions, then check the inputs. If separate measures already answer the receiving question, stop without folding. Make the actual contributors recoverable; a separate ContributorSet result is optional.
 
 ### A.19.ULSAM:1 - Problem frame (normative)
 
@@ -38,7 +38,7 @@ Within CHR, teams frequently need an **explicit aggregation step** (Γ‑fold) t
 - leak into selection (“the selector silently computes a scalar”),
 - become an “implementation default” rather than a declared policy,
 - violate scale lawfulness (especially via ordinal arithmetic or unit-mixing),
-- become unauditable (“what exactly got folded, and under what evidence posture?”).
+- become unauditable (“what got folded, and under what evidence posture?”).
 
 ### A.19.ULSAM:2 - Problem (normative)
 
@@ -55,11 +55,11 @@ How do we define an aggregation step that:
 
 - **Lawfulness vs convenience.** The most “convenient” aggregation (e.g., weighted sums) is often illegal across scales/units; lawful folds require explicit constraints.
 - **Explicitness vs brevity.** A single scalar is short to discuss, but expensive in hidden assumptions.
-- **Stable declaration vs method variation.** Different realizers can use the same operation declaration while preserving its argument meanings, fold law and guard. Changing that content requires explicit selection of the changed declaration.
+- **Stable declaration vs method variation.** Different realizers can use the same operation declaration while preserving its argument meanings, fold law and guard. Changing that content requires selection of the changed declaration.
 - **Evidence gating vs “always return a number.”** The mechanism must support abstain/degrade rather than coercion.
 - **Optional stage vs pipeline clarity.** `fold_Γ?` is optional in CHR protocols; optionality must be explicit (not implicit “sometimes scoring folds”).
 - **Auditability vs minimal overhead.** Recording contributor sets and effective pins adds overhead but prevents semantic drift.
-- **Declared-set locality vs reuse.** A fold is valid for one admitted measure set, grouping or membership basis, policy editions, scope and window, evidence basis, contributors, and intended result; a later use must recheck those premises and cite any relation it actually relies on.
+- **Declared-set locality vs reuse.** A fold is valid for one admitted measure set, grouping or membership basis, policy editions, scope and window, evidence basis, contributors, and intended result; a later use must recheck those premises and cite any relation it relies on.
 - **P2W separation and gate/guard separation.** ULSAM must expose eligibility and audit pins without turning into (i) a WorkPlanning baseline binder or (ii) an admissibility gate: planned slot fillings belong to WorkPlanning plan items, while GateDecision/GateLog live in gate patterns / WorkEnactment (suite protocols remain mechanism-steps only).
 
 ### A.19.ULSAM:4 - Solution (normative)
@@ -68,20 +68,20 @@ ULSAM is the **canonical scale‑aggregation mechanism** in the CHR suite. It de
 * a stable **mechanism boundary** (`fold_Γ?` is a stage with its own operation and eligibility predicate),
 * a stable **SlotKind surface** (via the suite lexicon),
 * a **tri‑state admissibility guard** (fail‑closed on missing admissibility/evidence),
-* and an **audit minimum** (admitted set and membership basis, fold and policy editions, scope and window, evidence, contributors, result, and any relation actually used).
+* and an **audit minimum** (admitted set and membership basis, fold and policy editions, scope and window, evidence, contributors, result, and any relation used).
 
 Method semantics (“which aggregation family to use”) remain out of suite core: they belong in SoTA packs (`G.2`) and wiring‑only extension modules (`GPatternExtension` blocks), while ULSAM remains the stable mechanism boundary.
 
 #### A.19.ULSAM:4.1 - Operation declaration (normative)
 
-`ULSAM.IntensionRef` cites this exact A.6.1 U.Mechanism declaration episteme. CHR resolves its fold stage to the local Fold_Γ operation. A changed argument, fold law or guard requires explicit selection of that changed declaration; another realizer of the same declaration changes no suite member.
+`ULSAM.IntensionRef` cites this A.6.1 U.Mechanism declaration episteme. CHR resolves its fold stage to the local Fold_Γ operation. A changed argument, fold law or guard requires selection of that changed declaration; another realizer of the same declaration changes no suite member.
 
-* **Scope note:** A.6.1 governs the operation and its actual bindings below. A planned baseline selects the fold and specification editions; typed filling is conditional on an independently declared receiving position. Fold_Γ returns the aggregate and any declared contributor set. Eligibility, Audit, GateDecision/GateLog and publication retain their separate meanings.
+* **Scope note:** A.6.1 governs the operation and its bindings below. A planned baseline selects the fold and specification editions; typed filling is conditional on an independently declared receiving position. Fold_Γ returns the aggregate and any declared contributor set. Eligibility, Audit, GateDecision/GateLog and publication retain their separate meanings.
 
 * **IntensionHeader:** `id = ULSAM`, `version = 1.0.0`, `status = stable`.
 * **IntensionRef:** `ULSAM.IntensionRef` (canonical target for the suite member named in `A.19.CHR:4.2`).
 * **Purpose:** explicit **Γ‑fold** (and, when declared, time‑fold) over admitted measures — no hidden aggregation inside scoring/selection.
-* **Imports:** `G.0 (CG‑Spec.Γ_fold, CG‑Spec.SCP, CG‑Spec.MinimalEvidence)`, `A.18 (CSLC)`, `A.19.CN (CN‑Spec.acceptance + aggregation routing)`, `A.6.1 (operation declarations and actual bindings)`, `B.3 (justified quantity and dependency model for any R_eff fold)`, `A.19.CHR:4.2.1 (CHR SlotKind Lexicon)`.
+* **Imports:** `G.0 (CG‑Spec.Γ_fold, CG‑Spec.SCP, CG‑Spec.MinimalEvidence)`, `A.18 (CSLC)`, `A.19.CN (CN‑Spec.acceptance + aggregation routing)`, `A.6.1 (operation declarations and bindings)`, `B.3 (justified quantity and dependency model for any R_eff fold)`, `A.19.CHR:4.2.1 (CHR SlotKind Lexicon)`.
 
 * **SubjectBlock:**
   * **SubjectKind:** `ReadingContent`, supplied by the reading contents carried by the contributor entries in MeasureSetSlot.
@@ -94,72 +94,72 @@ Method semantics (“which aggregation family to use”) remain out of suite cor
 
 **Operation-local argument and result declarations**
 
-Each input is declared separately for Fold_Γ and FoldEligibility_Γ. References resolve to one exact value and edition. Cardinalities shown are for Fold_Γ; the guard may assess an incomplete proposal with 0..1 of each otherwise required input. A missing value has no argument binding and invokes the corresponding abstain condition.
+Each input is declared separately for Fold_Γ and FoldEligibility_Γ. References resolve to one value and edition. Cardinalities shown are for Fold_Γ; the guard may assess an incomplete proposal with 0..1 of each otherwise required input. A missing value has no argument binding and invokes the corresponding abstain condition.
 
 | Direction | Local designator | Meaning and ValueKind | Designation; cardinality |
 | --- | --- | --- | --- |
 | Argument | MeasureSetSlot | Set of contributor entries carrying ReadingContent, retaining contributor identities and its declared grouping or membership basis | ByValue; 1 set |
 | Argument | CNSpecSlot | CN-Spec whose acceptance conditions delimit the admitted portion, scope/window and intended aggregate use | CNSpecRef; 1 |
 | Argument | CGSpecSlot | CG-Spec supplying SCP, the declared fold and default evidence conditions | CGSpecRef; 1 |
-| Argument | GammaFoldSlot | ΓFold actually selected through CGSpecSlot.Γ_fold or an explicit admitted override | ΓFoldRef; 1 |
+| Argument | GammaFoldSlot | ΓFold selected through CGSpecSlot.Γ_fold or an admitted override | ΓFoldRef; 1 |
 | Argument | MinimalEvidenceSlot | MinimalEvidence override used in place of CGSpecSlot.MinimalEvidence | MinimalEvidenceRef; 0..1 |
 | Fold_Γ result | AggregatedMeasureSlot | ReadingContent returned by applying the effective fold to its admitted contributors | ByValue; 1 on completed admitted folding, 0 without a result |
-| Fold_Γ result | ContributorSetSlot | Set of contributor entries carrying ReadingContent actually used in that aggregate | ByValue; 0..1 set, optional |
+| Fold_Γ result | ContributorSetSlot | Set of contributor entries carrying ReadingContent used in that aggregate | ByValue; 0..1 set, optional |
 | FoldEligibility_Γ result | GuardDecision | Eligibility judgment under the predicates below: pass, degrade or abstain | ByValue; 1 on completed evaluation |
 
-An argument's **bindingPredicate** holds when that application uses the resolved value in the row's stated role: as offered measures, acceptance/use conditions, fold/admissibility declaration or evidence override. The AggregatedMeasureSlot **bindingPredicate** holds when that Fold_Γ application returns the measure it computes using its bound effective fold and admitted contributors. The ContributorSetSlot binding holds only when the same application also returns that actual contributor set; Law 5 requires both its subset condition and equality of the aggregate to the effective fold of that subset. An omitted contributor result creates no contributor binding. The guard result binds when that FoldEligibility_Γ evaluation returns its determined judgment. A.6.1 governs binding identity and maximal continuous extent within the application, with result binding beginning at return.
+An argument's **bindingPredicate** holds when that application uses the resolved value in the row's stated role: as offered measures, acceptance/use conditions, fold/admissibility declaration or evidence override. The AggregatedMeasureSlot **bindingPredicate** holds when that Fold_Γ application returns the measure it computes using its bound effective fold and admitted contributors. The ContributorSetSlot binding holds only when the same application also returns that contributor set; Law 5 requires both its subset condition and equality of the aggregate to the effective fold of that subset. An omitted contributor result creates no contributor binding. The guard result binds when that FoldEligibility_Γ evaluation returns its determined judgment. A.6.1 governs binding identity and maximal continuous extent within the application, with result binding beginning at return.
 
 **SlotIndex (derived projection).** Project the local designators, ValueKinds, designation modes and cardinalities above. Historical Slot names support CHR lookup; A.6.5 relation SlotSpecs add no operation meanings. The optional FoldTime_Γ extension is not a base operation or a prerequisite of ordinary folding.
 
 * **OperationAlgebra** (suite stage = `fold_Γ?`, per `A.19.CHR:4.5`; canonical stage‑op = `Fold_Γ`):
   * `Fold_Γ(MeasureSetSlot, CNSpecSlot, CGSpecSlot, GammaFoldSlot, MinimalEvidenceSlot?) → (AggregatedMeasureSlot, ContributorSetSlot?)`; the cited inputs supply the set, grouping and use qualifications.
 
-**ApplicationPredicate.** Fold_Γ obtains when a calculation actually applies the resolved effective fold to the admitted contributors selected from the bound measure set under the bound acceptance/use conditions. It proceeds on pass or an explicitly permitted degrade branch; abstain produces no folding result. FoldEligibility_Γ obtains when an evaluation actually assesses the proposed set, fold and conditions under the guard predicates and returns its judgment. Numerical equality to a lawful fold and a passing guard alone establish neither calculation nor its result binding.
+**ApplicationPredicate.** Fold_Γ obtains when a calculation applies the resolved effective fold to the admitted contributors selected from the bound measure set under the bound acceptance/use conditions. It proceeds on pass or a permitted degrade branch; abstain produces no folding result. FoldEligibility_Γ obtains when an evaluation assesses the proposed set, fold and conditions under the guard predicates and returns its judgment. Numerical equality to a lawful fold and a passing guard alone establish neither calculation nor its result binding.
 
 **ApplicationIdentityRule.** One Fold_Γ occurrence is one aggregation invocation at its calculation locus, from taking up the admitted operands/fold to return or termination. One FoldEligibility_Γ occurrence is one corresponding proposal-evaluation invocation. A second invocation remains distinct even when every measure, contributor, fold, policy, qualification window and returned value is equal. Several references to the same established invocation identify one application; creating another reference or copying its result creates none.
 
-**ApplicationExtentRule.** The fold extends from actual use of its operands and rule through aggregate/contributor return or termination. The guard extends from actual proposal assessment through judgment or termination. An unfinished invocation has an open extent and no unreturned result binding. A time window qualifying the measures or an explicitly declared time-fold does not supply the occurrence interval of the calculation that processes them. Ordinary folding mathematics needs no asserted dated U.Work.
+**ApplicationExtentRule.** The fold extends from use of its operands and rule through aggregate/contributor return or termination. The guard extends from proposal assessment through judgment or termination. An unfinished invocation has an open extent and no unreturned result binding. A time window qualifying the measures or a declared time-fold does not supply the occurrence interval of the calculation that processes them. Ordinary folding mathematics needs no asserted dated U.Work.
 
 For example, two separate lawful sums of admitted 2 kg and 3 kg measurements under the same fold, grouping and policy both return 5 kg, with contributor set {2 kg, 3 kg} if requested. Law 5 holds for both contents. The first and second operand-to-return episodes nevertheless supply different aggregate/contributor bindings. A copied pair (5 kg, {2 kg, 3 kg}) is not evidence of another performed sum; two descriptions of the first sum still describe one application.
 
 * **LawSet** (minimum; explicit, scale‑lawful folding only):
   1. **No hidden aggregation:** any Γ‑fold MUST be explicit as `Fold_Γ` (no folding hidden inside `Score/Compare/Select`).
   2. **Scale‑lawfulness:** aggregation MUST be CSLC‑lawful and admissible under `CGSpecSlot.SCP`; ordinal arithmetic (e.g., means on ordinal ranks) is forbidden unless explicitly allowed by the relevant CSLC fragment.
-  3. **Γ‑fold admissibility:** `GammaFoldSlot` MUST resolve to either `CGSpecSlot.Γ_fold` or an explicitly pinned override (CAL policy) -- never an implicit "implementation default".
+  3. **Γ‑fold admissibility:** `GammaFoldSlot` MUST resolve to either `CGSpecSlot.Γ_fold` or a pinned override (CAL policy) -- never an implicit "implementation default".
   4. **Evidence‑gated folding:** if evidence is insufficient/unknown, folding MUST follow tri‑state guard behavior and MUST NOT silently coerce.
   5. **Contributor accountability (when produced):** when `ContributorSetSlot?` is produced, it MUST be a subset of the admitted portion of `MeasureSetSlot`, and `AggregatedMeasureSlot` MUST be the result of applying the effective Γ‑fold to that contributor subset (no “hidden contributors”).
-  6. **No implicit UNM:** ULSAM MUST NOT silently normalize/rescale to “force comparability.” If establishing a compare‑on‑invariants surface requires UNM for the measures being folded, UNM MUST appear as an explicit stage (Uses + pins) upstream; ULSAM itself remains folding‑only.
+  6. **No implicit UNM:** ULSAM MUST NOT silently normalize/rescale to “force comparability.” If establishing a compare‑on‑invariants surface requires UNM for the measures being folded, UNM MUST appear as a stage (Uses + pins) upstream; ULSAM itself remains folding‑only.
 
 * **AdmissibilityConditions** (tri‑state guard; fail‑closed on missing admissibility/evidence):
   * `FoldEligibility_Γ(MeasureSetSlot, CNSpecSlot, CGSpecSlot, GammaFoldSlot, MinimalEvidenceSlot?) → GuardDecision ∈ {pass|degrade|abstain}`.
-  * `pass` requires: (i) `CGSpecSlot` provides SCP, (ii) `GammaFoldSlot` resolves to the admitted fold or an explicit override, (iii) the actual contributor subset and its grouping or membership basis are admitted by `CNSpecSlot.acceptance`, (iv) scope, window, evidence, contributors, and intended result are recoverable, and (v) the set is scale-compatible for that fold, (vi) the fold is defined for the actual contributors and satisfies its law and SCP restrictions, and (vii) any exclusions or multiplicities agree with the declared aggregate meaning.
+  * `pass` requires: (i) `CGSpecSlot` provides SCP, (ii) `GammaFoldSlot` resolves to the admitted fold or an override, (iii) the contributor subset and its grouping or membership basis are admitted by `CNSpecSlot.acceptance`, (iv) scope, window, evidence, contributors, and intended result are recoverable, and (v) the set is scale-compatible for that fold, (vi) the fold is defined for the contributors and satisfies its law and SCP restrictions, and (vii) any exclusions or multiplicities agree with the declared aggregate meaning.
   * Define `EffectiveMinimalEvidence := (MinimalEvidenceSlot if present, else CGSpecSlot.MinimalEvidence)`; the guard MUST evaluate evidence against `EffectiveMinimalEvidence`.
   * If evidence is missing/unknown under `EffectiveMinimalEvidence`, the guard MUST NOT return `pass` (return `degrade` or `abstain` per the effective failure behavior; record the basis in Audit).
   * `degrade` requires every non-evidence condition above and an effective policy permitting the qualified result. `abstain` applies otherwise, including an undefined fold or missing required contributor basis. A policy cannot supply a value where the fold is undefined, including an empty contributor set unless the fold declares a result for it.
 
 * **Applicability:**
-  * Intended to be used only when a fold is explicitly required (and never as a hidden sub‑step of scoring/comparison/selection).
-  * Applicable only when CG-Spec supplies SCP and the effective fold resolves through its Γ_fold or an admitted explicit override (fail-closed otherwise).
-  * If comparability routing is UNM-based, applicability requires the explicit upstream result and preservation/loss basis needed by the fold. A fold inherited on classes requires equivalent outputs and representative-independent availability; a requested aggregate answer must be recoverable. Otherwise retain/refine the original inputs or return the missing distinction.
+  * Intended to be used only when a fold is required (and never as a hidden sub‑step of scoring/comparison/selection).
+  * Applicable only when CG-Spec supplies SCP and the effective fold resolves through its Γ_fold or an admitted override (fail-closed otherwise).
+  * If comparability routing is UNM-based, applicability requires the upstream result and preservation/loss basis needed by the fold. A fold inherited on classes requires equivalent outputs and representative-independent availability; a requested aggregate answer must be recoverable. Otherwise retain/refine the original inputs or return the missing distinction.
 
-* **Relation boundary:** folding creates no transfer relation. If the admitted set or receiving use relies on an F.9 Bridge, kind relation, aggregation or membership relation, or plane relation, cite the exact obtaining relation, its direction and loss; assess loss for the receiving use and apply any numerical assurance penalty under A.6.7:4.2(2).
+* **Relation boundary:** folding creates no transfer relation. If the admitted set or receiving use relies on an F.9 Bridge, kind relation, aggregation or membership relation, or plane relation, cite the obtaining relation, its direction and loss; assess loss for the receiving use and apply any numerical assurance penalty under A.6.7:4.2(2).
 * **Γ_timePolicy:** `point` by default; time‑fold requires explicit windowing policy (if an explicit operator is needed, introduce `FoldTime_Γ` as an `⊑⁺` extension using `GammaTimeRuleSlot` from the CHR SlotKind Lexicon).
 * **PlaneRegime:** each contributor and aggregated measure keeps its declared reference plane; ULSAM introduces no plane crossing. When a result depends on a relation between planes, cite that relation, its direction and loss, and keep the receiving use separate.
 
 * **Audit:**
   * MUST record the proposed measure set and its grouping or membership basis when available, including the admitted portion when established; the `CNSpecRef.edition`, `CGSpecRef.edition`, and effective `ΓFoldRef` that were resolved; and the available claim scope, selected slices, qualification window, and intended result. Identify any required value that remains missing or unresolved. MUST record the aggregated measure if `Fold_Γ` returned one.
   * MUST record the evidence refs used to admit the measure set and evaluate `FoldEligibility_Γ`.
-  * If `GammaFoldSlot` resolves via an explicit override, SHOULD record the override’s `policy-id` (or its stable ref) alongside `ΓFoldRef`.
+  * If `GammaFoldSlot` resolves via an override, SHOULD record the override’s `policy-id` (or its stable ref) alongside `ΓFoldRef`.
   * When `MinimalEvidenceSlot?` is present, MUST record its resolved `MinimalEvidenceRef` or identify the override as unresolved. When no override is supplied, MUST cite the resolved `CGSpecSlot.MinimalEvidence` or identify the default policy as missing or unresolved.
   * When `ContributorSetSlot?` is produced, SHOULD record it (or an id reference) as an auditable explanation surface.
-  * SHOULD record: any explicit UNM invocation ids/pins when folding presumes a compare‑on‑invariants surface established by UNM.
-  * SHOULD record: an F.9 Bridge, kind relation, aggregation or membership relation, or plane relation only when the fold or receiving use actually relies on that obtaining relation.
+  * SHOULD record: any UNM invocation ids/pins when folding presumes a compare‑on‑invariants surface established by UNM.
+  * SHOULD record: an F.9 Bridge, kind relation, aggregation or membership relation, or plane relation only when the fold or receiving use relies on that obtaining relation.
   * SHOULD record: the evaluated `GuardDecision` (especially when not `pass`) and, when applicable, the effective evidence policy / failure behavior reference used to justify `degrade|abstain`.
 
 #### A.19.ULSAM:4.2 - Interpretation notes (didactic, informative)
 
-- **Identify the fold and its governing conditions.** The fold is the aggregation rule; ΓFoldRef identifies the selected rule. Its use is a policy-level commitment: `GammaFoldSlot` MUST be resolvable to `CGSpecSlot.Γ_fold` routing or an explicit pinned override. An actual calculation can still have occurred without that citation, but its conformance and reuse basis remain unresolved until the rule is recovered.
-- **ULSAM is not normalization.** ULSAM does not establish comparability by itself: it does not normalize, rescale, or “align units” as a hidden convenience. If a compare‑on‑invariants surface is required, invoke UNM explicitly upstream and cite the effective pins in Audit.
+- **Identify the fold and its governing conditions.** The fold is the aggregation rule; ΓFoldRef identifies the selected rule. Its use is a policy-level commitment: `GammaFoldSlot` MUST be resolvable to `CGSpecSlot.Γ_fold` routing or a pinned override. A calculation can still have occurred without that citation, but its conformance and reuse basis remain unresolved until the rule is recovered.
+- **ULSAM is not normalization.** ULSAM does not establish comparability by itself: it does not normalize, rescale, or “align units” as a hidden convenience. If a compare‑on‑invariants surface is required, invoke UNM upstream and cite the effective pins in Audit.
 - **Keep separate measures when sufficient.** If separate measures answer the receiving question, keep them separate. Use `CPM` for a needed comparison and `SelectorMechanism` for a needed selection, under their declared partial-order and set-return rules. A fold can discard distinctions; state which distinctions the declared fold preserves and loses.
 - **Recover the actual contributors.** Existing input and calculation content may already establish the contributor subset; use the optional ContributorSet output when it supplies needed recoverability. Equal numbers from different contributors remain distinct measures: two boxes each measured as 2 kg contribute twice to their total, rather than collapsing to the bare set {2}. Conversely, copying the assertion about one box does not make two boxes or authorize counting its mass twice. Any ordering, multiplicity or weight consumed by the fold must be declared in its grouping basis or rule. Excluding a contributor may change a total into a partial total; retain that distinction in the result instead of treating missing input as zero.
 - **Time-fold is a specialization, not a loophole.** The base ULSAM declares `Γ_timePolicy` and allows time-fold only via explicit windowing policy. If a project needs an explicit `FoldTime_Γ` operator, declare it with its additional operation and arguments, preserve inherited meanings and test the claimed extension under A.6.1 §4.8. The local `⊑⁺` label alone establishes no preservation result.
@@ -170,8 +170,8 @@ For example, two separate lawful sums of admitted 2 kg and 3 kg measurements und
 #### A.19.ULSAM:5.1 - Tell
 
 - In CHR, ULSAM exists to keep the stage `fold_Γ?` **explicit**: if a pipeline wants folding, it invokes `ULSAM.Fold_Γ`; otherwise it skips the stage. Folding MUST NOT be smuggled into `USCM.Score`, `CPM.Compare`, or `SelectorMechanism.Select`.
-- For a `U.System` decision: ULSAM explicitly folds the admitted measures about the named System, under the declared grouping or membership basis and CG-Spec fold policy, only when that aggregate result is actually needed.
-- For a `U.Episteme` assessment: ULSAM explicitly folds the admitted evidential or measurement set about that episteme into an aggregate coordinate, using an aggregation model justified for that exact quantity and support dependence; reliability-like wording alone supplies no weakest-link law.
+- For a `U.System` decision: ULSAM folds the admitted measures about the named System, under the declared grouping or membership basis and CG-Spec fold policy, only when that aggregate result is needed.
+- For a `U.Episteme` assessment: ULSAM folds the admitted evidential or measurement set about that episteme into an aggregate coordinate, using an aggregation model justified for that quantity and support dependence; reliability-like wording alone supplies no weakest-link law.
 
 #### A.19.ULSAM:5.2 - Show
 
@@ -180,23 +180,23 @@ For example, two separate lawful sums of admitted 2 kg and 3 kg measurements und
    `MeasureSetSlot = {m₁, m₂, …, m_k}`.
 2. The team wants a single “readiness” measure `m_ready` to be used as an input to later comparison/selection.
    Define the question this aggregate would answer and its acceptance or comparison use; a readiness label supplies no aggregation law.
-3. ULSAM forces three explicit questions before folding:
+3. ULSAM forces three questions before folding:
    - **Admissibility:** Is the fold admissible under `CGSpecSlot.SCP` (units/scale) and `CGSpecSlot.Γ_fold` (declared fold kinds)?
    - **Evidence:** Is the evidence posture sufficient under `MinimalEvidence`? If not, do we `degrade` or `abstain`?
    - **Policy identity:** What is the identity of the fold (which ΓFoldRef, which edition)?
 4. When those conditions hold, the application computes:
    `Fold_Γ(MeasureSetSlot, CNSpecSlot, CGSpecSlot, GammaFoldSlot, MinimalEvidenceSlot?) → (AggregatedMeasureSlot, ContributorSetSlot?)`.
-   The audit records ΓFoldRef and makes the actual contributors recoverable, with the optional contributor output when needed. If no justified fold answers the readiness question, retain the separate measures and their direct criteria.
+   The audit records ΓFoldRef and makes the actual contributors recoverable, with the optional contributor output when needed. If no justified fold answers the readiness question, retain the separate measures and their criteria.
 
 **Scenario B (engineer-facing): proposed aggregation across different bases.**
-- A project tries to fold measures with different bearers, membership rules, scales, comparison bases, or reference planes. ULSAM first checks whether one admitted set and lawful fold can be stated. If the conclusion relies on an F.9 Bridge, kind relation, aggregation or membership relation, or plane relation, the project cites that exact obtaining relation and its loss. If a required relation is absent or unresolved, keep independently supported folds separate or abstain from the dependent fold.
+- A project tries to fold measures with different bearers, membership rules, scales, comparison bases, or reference planes. ULSAM first checks whether one admitted set and lawful fold can be stated. If the conclusion relies on an F.9 Bridge, kind relation, aggregation or membership relation, or plane relation, the project cites that obtaining relation and its loss. If a required relation is absent or unresolved, keep independently supported folds separate or abstain from the dependent fold.
 
 ### A.19.ULSAM:6 - Bias-Annotation (informative)
 
-This pattern intentionally biases CHR authoring toward **explicit aggregation boundaries** and against “scalarization by convenience”.
+This pattern biases CHR authoring toward **explicit aggregation boundaries** and against “scalarization by convenience”.
 
 * **Gov (governance).** Bias toward auditable folds (editions, effective ΓFoldRef, contributor surfaces). Risk: perceived overhead. Mitigation: keep the signature stable and move method specifics to SoTA wiring.
-* **Arch (architecture).** Bias toward keeping `fold_Γ` a distinct stage (no leakage into score/compare/select). Risk: longer pipelines. Mitigation: the stage is explicitly optional (`fold_Γ?`) and can be omitted when not required.
+* **Arch (architecture).** Bias toward keeping `fold_Γ` a distinct stage (no leakage into score/compare/select). Risk: longer pipelines. Mitigation: the stage is optional (`fold_Γ?`) and can be omitted when not required.
 * **Onto/Epist (ontology/epistemology).** Bias toward scale-lawful aggregation (no illegal ordinal arithmetic; SCP-bound). Risk: forbids many informal “single-number” habits. Mitigation: retain separate measures when sufficient; use partial-order comparison or set-return selection when the receiving question needs it.
 * **Prag (practice).** Bias toward policy-bound defaults (no “implementation default Γ‑fold”). Risk: teams must name policies. Mitigation: provide conservative defaults in `CG‑Spec.Γ_fold` and keep overrides explicit.
 
@@ -209,12 +209,12 @@ This pattern intentionally biases CHR authoring toward **explicit aggregation bo
 | **CC‑A19ULSAM‑1** | **Single governing pattern:** the ULSAM declaration is governed by §4.1; a use cites it rather than inferring semantics from a copied summary. |
 | **CC‑A19ULSAM‑2** | **No hidden aggregation:** any Γ‑fold MUST be explicit as `ULSAM.Fold_Γ` (no folding hidden inside `Score/Compare/Select`, including inside `USCM/CPM/SelectorMechanism`). |
 | **CC‑A19ULSAM‑3** | **Scale-lawfulness:** a conformant ULSAM fold MUST be CSLC-lawful and admissible under `CGSpecSlot.SCP`. Ordinal arithmetic is forbidden unless explicitly allowed by the relevant CSLC fragment. |
-| **CC‑A19ULSAM‑4** | **Γ‑fold admissibility:** a conformant ULSAM publication MUST ensure `GammaFoldSlot` resolves to `CGSpecSlot.Γ_fold` or an explicitly pinned override (CAL policy). "Implementation default fold" is non-conformant. |
+| **CC‑A19ULSAM‑4** | **Γ‑fold admissibility:** a conformant ULSAM publication MUST ensure `GammaFoldSlot` resolves to `CGSpecSlot.Γ_fold` or a pinned override (CAL policy). "Implementation default fold" is non-conformant. |
 | **CC‑A19ULSAM‑5** | **Evidence gating:** a conformant ULSAM publication MUST guard folding via `FoldEligibility_Γ` with `GuardDecision ∈ {pass|degrade|abstain}`; missing/unknown evidence MUST NOT yield `pass`. If `MinimalEvidenceSlot?` is absent, the guard MUST evaluate against `CGSpecSlot.MinimalEvidence`. |
 | **CC‑A19ULSAM‑6** | **SlotKind discipline:** SlotKind tokens used in the ULSAM intension MUST come from the CHR SlotKind Lexicon (`A.19.CHR:4.2.1`). New SlotKinds require lexicon extension first. |
 | **CC‑A19ULSAM‑7** | **Audit surface:** Audit MUST record the resolved `CNSpecRef.edition`, `CGSpecRef.edition`, and effective `ΓFoldRef`; and MUST record a resolved `MinimalEvidenceRef` when overridden, or the resolved `CGSpecSlot.MinimalEvidence` otherwise. Identify missing or unresolved required values as such. |
 | **CC‑A19ULSAM‑8** | **Contributor accountability:** when `ContributorSetSlot?` is produced, it SHOULD be recorded (or referenced by stable id) as an explanation surface for what contributed after admissibility/evidence gating. |
-| **CC‑A19ULSAM‑9** | **P2W separation:** on a P2W path, the A.15.2 baseline MUST select the intended fold/evidence policies and editions. A.15.3 typed filling applies only to independently declared positions. Actual Fold_Γ bindings MUST obtain under §4.1 and remain distinct from planned values and their Audit representation. |
+| **CC‑A19ULSAM‑9** | **P2W separation:** on a P2W path, the A.15.2 baseline MUST select the intended fold/evidence policies and editions. A.15.3 typed filling applies only to independently declared positions. Fold_Γ bindings MUST obtain under §4.1 and remain distinct from planned values and their Audit representation. |
 | **CC‑A19ULSAM‑10** | **Gate/guard separation:** ULSAM MUST NOT embed GateDecision/GateLog or publish/telemetry operations in the `fold_Γ?` stage; admissibility is via `FoldEligibility_Γ` (tri‑state) and run‑time observability via `Audit` pins only. |
 | **CC‑A19ULSAM‑11** | **No implicit UNM:** ULSAM MUST NOT silently normalize/rescale to force comparability. When normalized inputs are required, cite the upstream directed result and preservation/loss basis in Audit. A class-level fold also needs compatibility, partial-availability and receiving-query recovery under A.19.UNM; invoking UNM alone supplies none of them. |
 
@@ -222,18 +222,18 @@ This pattern intentionally biases CHR authoring toward **explicit aggregation bo
 
 | Anti-pattern | Symptom | Why it fails in FPF | How to avoid |
 |---|---|---|---|
-| Hidden rollup inside scoring | “Our score already averages everything.” | Violates the “no hidden aggregation” law and hides Γ‑fold identity. | Keep `USCM.Score` scoring-only; use `ULSAM.Fold_Γ` as an explicit stage. |
-| Averaging ordinals | Means on ranks/levels | Illegal under CSLC/SCP unless explicitly allowed. | Keep ordinal outputs as ordinal; use CPM if a comparison is needed; if folding is required, use an ordinal-legal fold explicitly declared by Γ_fold policy. |
+| Hidden rollup inside scoring | “Our score already averages everything.” | Violates the “no hidden aggregation” law and hides Γ‑fold identity. | Keep `USCM.Score` scoring-only; use `ULSAM.Fold_Γ` as a stage. |
+| Averaging ordinals | Means on ranks/levels | Illegal under CSLC/SCP unless explicitly allowed. | Keep ordinal outputs as ordinal; use CPM if a comparison is needed; if folding is required, use an ordinal-legal fold declared by Γ_fold policy. |
 | Implementation default Γ‑fold | "If not specified, we use X." | Breaks replayability and violates Γ‑fold admissibility. | Require `GammaFoldSlot` to resolve to `CGSpecSlot.Γ_fold` or pinned override. |
 | Coercing unknown to a number | “Missing metric becomes 0.” | Violates tri-state guard discipline; silently changes meaning. | Use `FoldEligibility_Γ` with `{pass|degrade|abstain}` and record the effective evidence policy. |
-| Folding after the admitted set or basis changed | Measures with different bearers, membership rules, scales, scopes or windows, comparison bases, or planes are folded “as-is” | The result no longer follows from one declared set and lawful fold; relation labels cannot repair that gap. | Re-establish the admitted set and eligibility. Cite an obtaining relation and supported loss only when the fold or receiving use actually relies on it. If a required relation is absent or unresolved, keep independently supported folds separate or abstain from the dependent fold. |
-| Treating fold_Γ as mandatory | Always folding even when not needed | Unnecessary aggregation can hide distinctions needed by the receiving use. | Keep `fold_Γ?` explicitly optional in protocols; retain separate measures when sufficient, and use `CPM` or `SelectorMechanism` for a needed comparison or selection. |
+| Folding after the admitted set or basis changed | Measures with different bearers, membership rules, scales, scopes or windows, comparison bases, or planes are folded “as-is” | The result no longer follows from one declared set and lawful fold; relation labels cannot repair that gap. | Re-establish the admitted set and eligibility. Cite an obtaining relation and supported loss only when the fold or receiving use relies on it. If a required relation is absent or unresolved, keep independently supported folds separate or abstain from the dependent fold. |
+| Treating fold_Γ as mandatory | Always folding even when not needed | Unnecessary aggregation can hide distinctions needed by the receiving use. | Keep `fold_Γ?` optional in protocols; retain separate measures when sufficient, and use `CPM` or `SelectorMechanism` for a needed comparison or selection. |
 
 ### A.19.ULSAM:9 - Consequences (didactic, informative)
 
 | Benefits | Costs / trade-offs |
 |---|---|
-| Clear separation of concerns: folding is explicit and auditable. | Adds an explicit step; authors must name Γ‑fold policies. |
+| Clear separation of concerns: folding is explicit and auditable. | Adds a step; authors must name Γ‑fold policies. |
 | Exposes the scale and model conditions that an admitted aggregate must satisfy. | Some familiar heuristics become non-conformant. |
 | Improves evolvability: folding methods evolve via wiring, while the kernel signature stays stable. | Requires discipline to keep method specifics out of kernel prose. |
 | Supports evidence-aware aggregation via tri-state guards. | Guard + Audit expectations may feel heavier than ad-hoc aggregation. |
@@ -243,21 +243,21 @@ This pattern intentionally biases CHR authoring toward **explicit aggregation bo
 Aggregation is a **semantic commitment**: it changes a set/vector of measures into a single measure, and therefore changes what later comparison/selection can legitimately claim. In CHR, that commitment must be explicit, admissibility-gated, and auditable.
 
 Keeping ULSAM as its own mechanism preserves:
-- the strict boundary between **method choice** (SoTA packs) and **operation declaration**,
-- the strict boundary between **planned baseline** (pins chosen in WorkPlanning) and **run-time audit** (what actually executed),
+- the boundary between **method choice** (SoTA packs) and **operation declaration**,
+- the boundary between **planned baseline** (pins chosen in WorkPlanning) and **run-time audit** (what executed),
 - and the engineer-facing clarity that “we folded here, not everywhere”.
 
 ### A.19.ULSAM:11 - Typical uses (didactic, informative)
 
-- CHR suite optional stage `fold_Γ?` (explicitly optional; never hidden).
+- CHR suite optional stage `fold_Γ?` (never hidden).
 - Folding a trust/assurance quantity only under its justified model and applicable policy; a declared default alone supplies no numerical warrant.
 - Any project that requires an auditable “roll-up” measure prior to lawful comparison/selection.
-- In E.18 transformation-flow structures: ULSAM appears as a mechanism instance node whose `ΓFoldRef` / `MinimalEvidenceRef` are bound in planned baseline (P2W), while Audit records the effective pins used at run time.
+- In E.18 transformation-flow structures: ULSAM appears as a mechanism instance node whose `ΓFoldRef` / `MinimalEvidenceRef` are bound in planned baseline (P2W), while Audit records the pins used at run time.
 
 ### A.19.ULSAM:12 - Builds on / Relates to
 
 **Builds on (cite, don’t duplicate).**
-- `A.6.1` (operation declarations and actual application/binding rules).
+- `A.6.1` (operation declarations and application/binding rules).
 - `A.6.1 §4.2` (operation-local argument/result declarations as the source of SlotIndex).
 - `A.19.CHR` (CHR suite boundary; stage `fold_Γ?`; CHR SlotKind Lexicon).
 - `G.0` (`CG-Spec.Γ_fold`, `CG-Spec.SCP`, `CG-Spec.MinimalEvidence`; admissibility gate).
@@ -280,9 +280,9 @@ These source lines inform candidate methods. Their use still requires the select
 | SoTA practice pointer (post‑2015+) | Primary source | Where it connects | Adoption status |
 |---|---|---|---|
 | Permutation‑invariant set aggregation as a *method family* (set → summary) | Zaheer et al., “Deep Sets” (2017) [A19ULSAM-1] | Candidate `ΓFold` families can include permutation‑invariant folds; ULSAM keeps them admissibility-gated and policy-pinned. | **Adapt** (keep admissibility/pins explicit; do not treat learned folds as implicit defaults). |
-| Attention-based permutation‑invariant set aggregation as a *method family* | Lee et al., “Set Transformer” (2019) [A19ULSAM-4] | Alternative learnable set folds (pooling by attention); still requires explicit policy binding and admissibility gating. | **Adapt** (publish as method family in SoTA pack; pin editions/policies; keep kernel unchanged). |
+| Attention-based permutation‑invariant set aggregation as a *method family* | Lee et al., “Set Transformer” (2019) [A19ULSAM-4] | Alternative learnable set folds (pooling by attention); still requires policy binding and admissibility gating. | **Adapt** (publish as method family in SoTA pack; pin editions/policies; keep kernel unchanged). |
 | Choosing a risk-aware objective under distributional uncertainty | Rahimian & Mehrotra, “Distributionally Robust Optimization: A Review” (2019) [A19ULSAM-2] | The optimization framework is not itself a fold over these measures. A receiving application identifies the particular risk quantity and operation, then establishes its aggregation law and conditions. | **Adapt** (policy‑bound and SCP/CSLC‑gated). |
-| Governing-pattern discipline for architectural statements | ISO/IEC/IEEE 42010:2022 [A19ULSAM-3] | FPF adapts architecture-description distinctions to explicit governing-pattern references; the one-pattern assignment is an FPF design choice. | **Adapt** (local FPF pattern assignment, not a rule attributed to the standard). |
+| Governing-pattern discipline for architectural statements | ISO/IEC/IEEE 42010:2022 [A19ULSAM-3] | FPF adapts architecture-description distinctions to governing-pattern references; the one-pattern assignment is an FPF design choice. | **Adapt** (local FPF pattern assignment, not a rule attributed to the standard). |
 
 [A19ULSAM-1]: https://arxiv.org/abs/1703.06114 "Zaheer et al., Deep Sets, 2017"
 [A19ULSAM-2]: https://arxiv.org/abs/1908.05659 "Rahimian & Mehrotra, Distributionally Robust Optimization: A Review, 2019"

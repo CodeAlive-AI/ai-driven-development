@@ -4,9 +4,9 @@
 > **Status:** Stable
 
 
-**Use this when.** Use this pattern when an action or arrangement may benefit one affected entity while harming another across levels or scopes, or when responsibility is assigned across levels.
+**Use this when.** An action or arrangement may benefit one affected entity while harming another across levels or scopes, or responsibility is assigned across levels.
 
-**Not this pattern when.** If only the value frame is missing, use `D.1`. If `D.3` has already described the conflict, use that result. If the conflict has to be mediated or used in a decision, use `D.4`. If the current concern is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
+**Not this pattern when.** If only the value frame is missing, use `D.1`. If `D.3` has already described the conflict, use that result. If the conflict has to be mediated or used in a decision, use `D.4`. If the concern is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
 
 **What goes wrong if missed.** A local improvement is treated as ethically sufficient while another declared level, scope, or affected holon carries the harm.
 
@@ -14,9 +14,9 @@
 
 ### D.2:1 - Problem Frame
 
-Ethical trouble in system-holon work often appears because the current action is good for one level and bad for another. A person may benefit while a team is damaged. A project may benefit while a community pays the cost. A standard may improve coordination while excluding a minority case. A model may improve one metric while moving harm to a less visible scope.
+Ethical trouble in system-holon work often appears because the action is good for one level and bad for another. A person may benefit while a team is damaged. A project may benefit while a community pays the cost. A standard may improve coordination while excluding a minority case. A model may improve one metric while moving harm to a less visible scope.
 
-Do not force these cases into a fixed ladder such as local, group, ecosystem, planetary. Declare the levels and scopes present in the situation and explain who or what may be affected.
+Do not force these cases into a fixed ladder such as local, group, ecosystem, planetary. Declare the levels and scopes present in the situation and explain who or what may be affected, including where the scopes overlap or one contains another.
 
 ### D.2:1.0 - Problem
 
@@ -34,9 +34,11 @@ A change can benefit one affected entity while imposing harm, exclusion or risk 
 
 ### D.2:2 - Solution
 
-Start with the proposed action or arrangement and the local gain. If an adequate account of affected parties and consequences already exists, use it. Otherwise follow the changed work, use or dependency from the proposal to the entities that may bear its effects; use `A.1.CSD` when a consequential bearer or effect path remains unclear. Keep an obtaining relation distinct from a possible consequence and retain an unresolved bearer or path as unresolved. Name the possible loss and the levels or scopes that make it an ethical concern, then state the next question to settle. Recognition is complete when the affected sides and next use are sufficiently clear; an already qualified `D.3` conflict or `D.4` decision question can be used directly.
+Start with the proposed action or arrangement and the local gain. If an adequate account of affected parties and consequences already exists, use it. Otherwise follow the changed work, use or dependency from the proposal to the entities that may bear its effects; use `A.1.CSD` when a consequential bearer or effect path remains unclear. Keep an obtaining relation distinct from a possible consequence and retain an unresolved bearer or path as unresolved.
 
-Use `MultilevelEthicsEntry@Context` when the practitioner or a recipient needs to recover these connections for comparison or revision. Keep its content in the existing answer or working note when that suffices. Add evidence, value-frame editions, and supporting relations where the stated concern actually relies on them:
+Name the possible loss and the levels or scopes that make it an ethical concern, then state the next question to settle. Recognition is complete when the affected sides and next use are sufficiently clear; an already qualified `D.3` conflict or `D.4` decision question can be used.
+
+Use `MultilevelEthicsEntry@Context` when the practitioner or a recipient needs to recover these connections for comparison or revision. Keep its content in the existing answer or working note when that suffices. Add evidence, value-frame editions, and supporting relations where the stated concern relies on them:
 
 ```text
 MultilevelEthicsEntry@Context:
@@ -53,18 +55,18 @@ MultilevelEthicsEntry@Context:
   systemRoleClassificationAssertionRefs?: FinSet(U.EpistemeRef)
   systemRoleAssignmentRows?: FinSet({
     assignmentSpeciesRef: U.RelationKindRef constrained under U.SystemRoleAssignment
-    assignmentOccurrenceRef: U.RelationRef constrained to an obtaining occurrence of assignmentSpeciesRef, with actual participants, holder, applicability, and extent recoverable
+    assignmentOccurrenceRef: U.RelationRef constrained to an obtaining occurrence of assignmentSpeciesRef, with participants, holder, applicability, and extent recoverable
   })
-  participationOrAffectedPartyRelationRefs?: exact direct relation refs
-  participationOrAffectedPartyMissingGovernorRefs?: exact A.6.RCD results
-  responsibilityRelationRefs?: exact direct relation refs
-  responsibilityMissingGovernorRefs?: exact A.6.RCD results
-  commitmentRelationRefs?: exact direct relation refs
-  commitmentMissingGovernorRefs?: exact A.6.RCD results
-  permissionRelationRefs?: exact direct relation refs
-  permissionMissingGovernorRefs?: exact A.6.RCD results
-  authorityRelationRefs?: exact direct relation refs
-  authorityMissingGovernorRefs?: exact A.6.RCD results
+  participationOrAffectedPartyRelationRefs?: direct relation refs
+  participationOrAffectedPartyMissingGovernorRefs?: A.6.RCD results
+  responsibilityRelationRefs?: direct relation refs
+  responsibilityMissingGovernorRefs?: A.6.RCD results
+  commitmentRelationRefs?: direct relation refs
+  commitmentMissingGovernorRefs?: A.6.RCD results
+  permissionRelationRefs?: direct relation refs
+  permissionMissingGovernorRefs?: A.6.RCD results
+  authorityRelationRefs?: direct relation refs
+  authorityMissingGovernorRefs?: A.6.RCD results
   interestOrConcernRefs
   capabilityOrFunctioningConcernRefs?
   methodRefs?
@@ -94,13 +96,17 @@ Material systems and epistemes can be affected EntitiesOfConcern. For an epistem
 
 D.2 recognizes ethical concerns across levels and scopes. Use the corresponding subject method to judge a conflict, mediate it or conduct an audit.
 
-Levels and scopes are declared relations in the current situation. If a mathematical lens is needed for scale, frustration, optimization, Pareto comparison, or renormalization-like reasoning, use `C.29` and the applicable pattern for the current object.
+Levels and scopes are declared relations in the situation. If a mathematical lens is needed for scale, frustration, optimization, Pareto comparison, or renormalization-like reasoning, use `C.29` and the applicable pattern for the object.
 
 ### D.2:5 - Archetypal Grounding (Worked Slice)
 
-A product team wants to reduce service cost by making a medical device harder to service outside authorized centers. The team expects better manufacturer quality control and lower liability risk. To find who may bear the cost, follow the proposed restriction through the service arrangement: some regions have local repair services but no authorized center; losing the local route may prolong device downtime and reduce patients' timely access. This is a possible consequence of the restriction, with its likelihood and extent still to be established. The next question is which service restriction, if any, addresses the particular hazard without imposing avoidable access harm. That question and the connected sides complete the present `D.2` recognition; `D.3` can describe their tension from this account.
+A product team wants to reduce service cost by making a medical device harder to service outside authorized centers. The team expects better manufacturer quality control and lower liability risk. To find who may bear the cost, follow the proposed restriction through the service arrangement: some regions have local repair services but no authorized center; losing the local route may prolong device downtime and reduce patients' timely access.
 
-Now suppose a release decision depends on whether a proposed servicing method can leave calibration outside the declared tolerance. A qualified test team can perform the discriminating check before the release window closes, and the release authority needs its result under the applicable rule. Preserve that focused investigation and the rule's actual force. Use `C.11.DUA` to compare the restriction's protective contribution with access harm, feasible alternatives, delay, and displaced work. `D.4` carries the resulting decision, including the authority needed to change a requirement or accept a residual. If the required basis cannot be obtained, the proposed release remains unsupported; a narrower continuation must meet its own conditions.
+This is a possible consequence of the restriction, with its likelihood and extent still to be established. The next question is which service restriction, if any, addresses the hazard without imposing avoidable access harm. That question and the connected sides complete the present `D.2` recognition; `D.3` can describe their tension from this account.
+
+Now suppose a release decision depends on whether a proposed servicing method can leave calibration outside the declared tolerance. A qualified test team can perform the discriminating check before the release window closes, and the release authority needs its result under the applicable rule. Preserve that investigation and the rule's force.
+
+Use `C.11.DUA` to compare the restriction's protective contribution with access harm, feasible alternatives, delay, and displaced work. `D.4` carries the resulting decision, including the authority needed to change a requirement or accept a residual. If the required basis cannot be obtained, the proposed release remains unsupported; a narrower continuation must meet its conditions.
 
 ### D.2:5.1 - Bias-Annotation
 
@@ -115,10 +121,10 @@ Now suppose a release decision depends on whether a proposed servicing method ca
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-D2-1 | Declared levels or scopes come from the situation and are named by value. | Keeps the ethical comparison grounded in the actual relations rather than a fixed moral ladder. |
-| CC-D2-2 | Name the affected entities, Methods, actual Work and consequences needed for the concern. Clarify unclear role wording with `E.10.ROLE`; keep any local kind and C.2.1 classification assertion distinct. For an assignment, use its declared species and support the actual claim; an asserted occurrence needs its participants and applicability. Establish participation, responsibility, commitment, permission and authority separately when relied on, retaining a supported negative or conditional result, or the specific missing fact or rule. | Keeps the entry usable without making assignment imply participation or responsibility. |
+| CC-D2-1 | Declared levels or scopes come from the situation and are named by value. | Keeps the ethical comparison grounded in the relations rather than a fixed moral ladder. |
+| CC-D2-2 | Name the affected entities, Methods, actual Work and consequences needed for the concern. Clarify unclear role wording with `E.10.ROLE`; keep any local kind and C.2.1 classification assertion distinct. For an assignment, use its declared species and support the claim; an asserted occurrence needs its participants and applicability. Establish participation, responsibility, commitment, permission and authority separately when relied on, retaining a supported negative or conditional result, or the missing fact or rule. | Keeps the entry usable without making assignment imply participation or responsibility. |
 | CC-D2-3 | The result identifies the next live question and `D.3`, `D.4`, `D.5`, `C.30.ILC`, or another subject pattern that answers it. The entry record is used only when its recoverable content contributes to that use. | Keeps D.2 as entry recognition, not conflict solver. |
-| CC-D2-4 | Mathematical reasoning retains its subject, interpretation and applicable conditions. Use `C.29` when representation choice, transfer or supported use remains unresolved, and the direct measurement pattern when a measurement claim is current. | Keeps mathematical support distinct from ethical priority. |
+| CC-D2-4 | Mathematical reasoning retains its subject, interpretation and applicable conditions. Use `C.29` when representation choice, transfer or supported use remains unresolved, and the measurement pattern when a measurement claim is current. | Keeps mathematical support distinct from ethical priority. |
 
 ### D.2:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -131,7 +137,7 @@ Now suppose a release decision depends on whether a proposed servicing method ca
 
 ### D.2:7 - Consequences
 
-Making cross-scope concerns explicit lets the practitioner choose the next useful question, such as an ethical conflict, an architectural consequence or a need for audit.
+Making cross-scope concerns explicit lets the practitioner choose the next question, such as an ethical conflict, an architectural consequence or a need for audit.
 
 ### D.2:9 - Rationale
 
@@ -139,7 +145,9 @@ A change can look technically local while shifting costs, risks or responsibilit
 
 ### D.2:10 - SoTA-Echoing
 
-For recognizing a transferred consequence, **adopt** A.1.CSD's tracing of a proposed change through actual relations and supported possible effects, when the affected account is incomplete. Compared with judging only the proposal's local target or assigning priority by level, :2 and the service-restriction case retain the access loss alongside the claimed quality benefit. D.1 supplies the value premise; D.3 and D.4 describe and decide the resulting conflict. This construction makes the traced concern available for the next question without a fixed level catalogue or a full impact study. Its conclusion covers the bearers and effect paths actually recovered. Reuse an adequate existing account; reconsider it when a new relation, consequence or value premise changes the affected concern.
+For recognizing a transferred consequence, **adopt** A.1.CSD's tracing of a proposed change through actual relations and supported possible effects, when the affected account is incomplete. Compared with judging only the proposal's local target or assigning priority by level, :2 and the service-restriction case retain the access loss alongside the claimed quality benefit. D.1 supplies the value premise; D.3 and D.4 describe and decide the resulting conflict.
+
+This construction makes the traced concern available for the next question without a fixed level catalogue or a full impact study. Its conclusion covers the bearers and effect paths recovered. Reuse an adequate existing account; reconsider it when a new relation, consequence or value premise changes the affected concern.
 
 ### D.2:11 - Relations
 

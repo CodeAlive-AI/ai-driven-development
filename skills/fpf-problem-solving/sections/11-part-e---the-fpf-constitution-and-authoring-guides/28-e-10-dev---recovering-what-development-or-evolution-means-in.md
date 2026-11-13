@@ -4,25 +4,27 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative.
 
-**Use this when.** After the normal `F.19` reading and compact `E.10` routing, use this pattern only while claim-bearing development, develop, progress, growth, maturation, adaptation, evolution, evolve, or lineage wording still hides what changed, what stayed identifiable, whether success or direction is asserted, whether the claim is actual or modelled, or which direct owner must be used—and resolving that ambiguity changes the claim or next action.
+**Use this when.** After the `F.19` reading and compact `E.10` routing, use this pattern only while claim-bearing development, develop, progress, growth, maturation, adaptation, evolution, evolve, or lineage wording still hides what changed, what stayed identifiable, whether success or direction is asserted, whether the claim is actual or modelled, or which direct owner must be used—and resolving that ambiguity changes the claim or next action.
 
 **Primary EntityOfConcern.** One bounded wording-use restoration whose development or evolution expression has an FPF-governed use.
 
 **First useful result.** One short ordinary statement naming the exact changed or represented subject, the continuity or membership rule needed by the use, posture, any declared direction or value basis, the direct owner, and the next use or stop.
 
-**Cheap exit.** Keep ordinary or quoted wording when no FPF inference or action depends on its exact sense. If the subject, claim, posture, and direct owner are already explicit, use that owner immediately and stop.
+**Cheap exit.** Keep ordinary or quoted wording when no FPF inference or action depends on its exact sense. If the subject, claim, posture, and direct owner are already explicit, use that owner and stop.
 
-**Not this pattern when.** Use the direct subject owners to choose an intervention, assess capability, explain biological or cultural mechanisms, build a dynamics model, select a programme, compare opportunities, or decide what to do next. `E.10.DEV` recovers the meaning needed to reach them. Use `E.10.LRN` first when the unresolved expression is specifically learning, teaching, training, model fitting, inference, or information acquisition. Use `E.10.MOVE` when trajectory, route, path, or movement posture remains the action-changing ambiguity.
+**Not this pattern when.** Use the direct subject owners to choose an intervention, assess capability, explain biological or cultural mechanisms, build a dynamics model, select a programme, compare opportunities, or decide what to do next. `E.10.DEV` recovers the meaning needed to reach them.
+
+Use `E.10.LRN` first when the unresolved expression is specifically learning, teaching, training, model fitting, inference, or information acquisition. Use `E.10.MOVE` when trajectory, route, path, or movement posture remains the action-changing ambiguity.
 
 ### E.10.DEV:1 - Problem Frame
 
-The same umbrella wording is used for unlike subjects. For example, a person develops a capability; an organization changes its working arrangement; an organism matures; a population evolves through membership and lineage relations; a model predicts a state history; an engineering search changes an archive or front; and a practitioner proposes a development programme. The claims may share readable language while differing in identity, evidence, method, and practical operation.
+The same umbrella wording is used for unlike subjects. For example, a person develops a capability, an organization changes its working arrangement, and an organism matures. A population evolves through membership and lineage relations. A model predicts a state history, an engineering search changes an archive or front, and a practitioner proposes a development programme. The claims may share readable language while differing in identity, evidence, method, and practical operation.
 
 The repair should make the first useful subject claim visible. It preserves the source word when useful and returns each substantive question to the pattern that owns it.
 
 ### E.10.DEV:2 - Problem
 
-Without a shared recovery move:
+Without a shared way to recover the claim, these mistakes arise.
 
 1. the umbrella word substitutes for identifying the current subject and direct owner;
 2. intervention Work is treated as the holder's actual change or as evidence that the intended result occurred;
@@ -52,7 +54,7 @@ Recover the current claim from the subject and use rather than from the umbrella
 4. **Expose direction or value only when claimed.** Name the objective, characteristic, scale, polarity, viewpoint, and evidence needed by the receiving use. The word *development* does not establish improvement.
 5. **State posture.** Mark the claim's posture—for example, actual, observed, reconstructed, predicted, simulated, proposed, recommended, or planned.
 6. **Choose one direct branch.** Split the sentence when it carries several independently actionable claims.
-7. **Stop after recovery.** The allowed recovery outcomes are the repaired claim, ordinary non-use, quote-only use, missing information, direct owner, or exact architecture gap. State the next use or stop for the selected outcome.
+7. **Stop after recovery.** Choose one of six recovery outcomes—a repaired claim, ordinary non-use, quote-only use, missing information, the direct owner, or an exact architecture gap. State the next use or stop for the selected outcome.
 
 #### E.10.DEV:4.1 - Optional DevelopmentEvolutionWordingRecoveryLine
 
@@ -72,7 +74,7 @@ DevelopmentEvolutionWordingRecoveryLine:
   currentnessOrReopen?:
 ```
 
-`blockedOverread?` states a rejected reading only when independent local evidence makes that reading plausible to the intended reader and deleting the boundary would change understanding, selection, safety, reliance, stop, or action. This temporary line supports inspection or replay of the wording repair; admission of a substantive product uses its direct owner. Omit fields the receiving use does not need.
+`blockedOverread?` states a rejected reading only when independent local evidence makes that reading plausible to the intended reader and deleting the boundary would change understanding, selection, safety, reliance, stop, or action. Use the temporary line for inspection or replay of the wording repair. When a substantive product needs admission, apply its direct owner’s rule. Omit fields the receiving use does not need.
 
 #### E.10.DEV:4.2 - Direct branches
 
@@ -92,7 +94,7 @@ DevelopmentEvolutionWordingRecoveryLine:
 
 #### E.10.DEV:4.3 - Coordination with trajectory wording
 
-The phrase *development trajectory* does not require two full repairs by spelling alone.
+The phrase *development trajectory* does not by itself require two full repairs.
 
 - Start with `E.10.DEV` when the action-changing doubt is which subject is developing, what remains identifiable, or whether improvement is asserted. If that repair also makes the path wording harmless, stop.
 - Continue to `E.10.MOVE` only when the trajectory itself still carries a separate claim about position space, order, segment identity, actual, predicted, or planned posture, or representation.
@@ -115,19 +117,25 @@ Return a **missing-information result** to the programme author. First ask wheth
 #### E.10.DEV:5.2 - Change in human capability
 Source wording: `Mira developed as an engineer.`
 
-For the capability reading, recover the named Work family, supported envelope, attained bounds and evidence under `A.2.2`, with the qualification and time conditions needed by the use. To preserve *developed*, also recover the change over time from comparable qualification conditions and evidence under the applicable change owner. If that comparison is unavailable, return the missing comparison; state any supported current capability separately. If the later question concerns an apparent loss, failed transfer, or condition-dependent expression, use current `E.23.CAE` only to return the qualified differential observation and disposition; do not turn that result into a trajectory choice or development Work. If a dated intervention occurred, identify its Work and Method separately. Use `E.23.CDI` when the receiving task calls for capability development.
+For the capability reading, recover the named Work family, supported envelope, attained bounds and evidence under `A.2.2`, with the qualification and time conditions needed by the use. To preserve *developed*, also recover the change over time from comparable qualification conditions and evidence under the applicable change owner. If that comparison is unavailable, return the missing comparison; state any supported current capability separately.
+
+If the later question concerns an apparent loss, failed transfer, or condition-dependent expression, use current `E.23.CAE` only to return the qualified differential observation and disposition. That result supplies neither a trajectory choice nor development Work. If a dated intervention occurred, identify its Work and Method separately. Use `E.23.CDI` when the receiving task calls for capability development.
 
 #### E.10.DEV:5.3 - Organization change
 
 Source wording: `The organization evolved after the platform rollout.`
 
-If the claim asserts actual rollout Work, recover its performer and occurrence independently under A.13 and A.15.1. For the separate organization-change claim, identify the organization and the changed working relations. Use the applicable organizational DPF or domain Method to establish which working relations changed and under what conditions, with `A.3.4` for the actual change and the direct patterns for the other claimed relations. Recover the roles, assignments, interfaces, routines, capabilities, observed organization Work and effects, period, evidence, or cultural relations on which that claim depends. State any benefit under its declared basis and supporting evidence.
+If the claim asserts actual rollout Work, recover its performer and occurrence independently under A.13 and A.15.1.
+
+For the separate organization-change claim, identify the organization and the changed working relations. Use the applicable organizational DPF or domain Method to establish which working relations changed and under what conditions, with `A.3.4` for the actual change and the direct patterns for the other claimed relations. Recover the roles, assignments, interfaces, routines, capabilities, observed organization Work and effects, period, evidence, or cultural relations on which that claim depends. State any benefit under its declared basis and supporting evidence.
 
 #### E.10.DEV:5.4 - Population and archive
 
 Source wording: `The population evolved as the archive improved.`
 
-Split the claims. Recover the population relations actually relied on—for example, membership, generation or lineage, variation, selection or retention, environment, or distribution—and their evidence under the applicable domain account. Keep a sufficient supported population claim; return only a definition, relation or evidential premise still missing for the receiving use. Archive or front improvement uses the relevant `C.17`–`C.19` contribution. Establish any additionally claimed reproduction or population relation under its own domain rules.
+Split the claims. Recover the population relations the claim relies on—for example, membership, generation or lineage, variation, selection or retention, environment, or distribution—and their evidence under the applicable domain account. Keep a sufficient supported population claim; return only a definition, relation or evidential premise still missing for the receiving use.
+
+Archive or front improvement uses the relevant `C.17`–`C.19` contribution. Establish any additionally claimed reproduction or population relation under its own domain rules.
 
 #### E.10.DEV:5.5 - Model and plan postures
 
@@ -137,7 +145,9 @@ For `The model predicts rapid development`, use the model branch in :4.2 to iden
 
 Source wording: `The development trajectory improved.`
 
-Start by asking what developed and what *improved* means. If the intended result is `Mira's capability for review Work increased under the named measures and evidence`, `E.10.DEV` returns that claim to the capability and change owners; apply their rules to the comparative evidence to establish the increase. Use `E.10.MOVE` only if a separately relied-on trajectory representation or ordered path remains—for example, a planned sequence of interventions or a modelled state history. Otherwise stop with the capability claim instead of completing a second form.
+Start by asking what developed and what *improved* means. If the intended result is `Mira's capability for review Work increased under the named measures and evidence`, `E.10.DEV` returns that claim to the capability and change owners; apply their rules to the comparative evidence to establish the increase.
+
+Use `E.10.MOVE` only if a separately relied-on trajectory representation or ordered path remains—for example, a planned sequence of interventions or a modelled state history. Otherwise stop with the capability claim instead of completing a second form.
 
 ### E.10.DEV:6 - Bias Annotation
 
@@ -183,7 +193,9 @@ Reopen this pattern when a recurring branch cannot reach a direct owner or exact
 
 ### E.10.DEV:10 - Rationale
 
-The reusable transdisciplinary problem is recovering the claim carried by the wording. The same recovery applies across these cases: recover the subject and continuity basis, separate Work and result, expose direction and posture, choose the direct owner, and stop. `E.10.DEV` makes that recovery available through compact `E.10` routing. Developmental science, evolutionary theory, organization change, guidance, and learning retain their direct owners.
+The reusable transdisciplinary problem is recovering the claim carried by the wording. Across these cases, recover the subject and continuity basis, separate Work and result, expose direction and posture, choose the direct owner, and stop.
+
+`E.10.DEV` makes that recovery available through compact `E.10` routing. Developmental science, evolutionary theory, organization change, guidance, and learning retain their direct owners.
 
 ### E.10.DEV:11 - SoTA Echoing
 
@@ -191,7 +203,7 @@ The reusable transdisciplinary problem is recovering the claim carried by the wo
 
 | Available approach | When it fits | Practical effect and effort |
 | --- | --- | --- |
-| Subject-first recovery | The subject, continuity or membership, posture, or value basis remains unclear. | Ask only the missing questions needed to state the claim and choose its direct pattern. Stop with the named missing information or architecture gap if it cannot be recovered. |
+| Subject-first recovery | The subject, continuity or membership, posture, or value basis remains unclear. | Ask only what is still needed to state the claim and choose its direct pattern. Stop with the named missing information or architecture gap if it cannot be recovered. |
 | Transformation-first interpretation | Actual change of one continuing entity has already been established. | Use the applicable transformation or change pattern in :4.2 directly. |
 | Learning or cultural-evolution branch | A remaining wording ambiguity concerns learning or cultural evolution. | Use E.10.LRN for the learning wording or C.36.P for the cultural-evolution wording. |
 

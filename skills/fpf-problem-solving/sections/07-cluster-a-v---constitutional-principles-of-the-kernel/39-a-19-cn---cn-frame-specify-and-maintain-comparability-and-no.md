@@ -4,9 +4,9 @@
 
 > **Scope.** Use a CN-frame to state which values may be compared for one bearer and intended use. Declare the characteristic space, chart and comparison basis in CN-Spec, adding normalization when needed. Maintain editions retained for later reuse or shared use, and apply the conditions for each proposed reuse.
 >
-> **Use this when** readings need a recoverable comparison basis or a changed basis may affect their reuse. Keep the bearer, Characteristic and Scale meanings, observation or evaluation basis and intended comparison together. An already sufficient account can serve as CN-Spec; its notation is unrestricted. Apply the corresponding `A.19` mechanism pattern when normalization, indicatorization, scoring, aggregation, comparison or selection is actually needed. C.16 governs measurement backing and G.0 governs the applicable admission conditions.
+> **Use this when** readings need a recoverable comparison basis or a changed basis may affect their reuse. Keep the bearer, Characteristic and Scale meanings, observation or evaluation basis and intended comparison together. An already sufficient account can serve as CN-Spec; its notation is unrestricted. Apply the corresponding `A.19` mechanism pattern when normalization, indicatorization, scoring, aggregation, comparison or selection is needed. C.16 governs measurement backing and G.0 governs the applicable admission conditions.
 >
-> **Reader guide (fast navigation).**
+> **Reader guide.**
 > - “What does `NormalizationMethodId/…InstanceId/≡_UNM/NormalizationFix` mean?” → **A.19.UNM**.
 > - “What is an Indicator / `IndicatorChoicePolicy` and why NCV ≠ Indicator?” → **A.19.UINDM**.
 > - “Why can we trust a normalization / where does calibration or evidence live?” → **C.16 (MM‑CHR)**.
@@ -40,16 +40,16 @@ When the comparison basis is missing or changes silently, these failures can occ
 
 | Force                         | Tension we must balance                                                              |
 | ----------------------------- | ------------------------------------------------------------------------------------ |
-| **Universality vs nuance**    | One Standard for robotics, safety, and finance, while each named source scheme retains its own exact meanings. |
+| **Universality vs nuance**    | One Standard for robotics, safety, and finance, while each named source scheme retains its own meanings. |
 | **Speed vs audit**            | A short sufficient comparison basis; further evidence when assurance or independent certification is required.                   |
-| **Local truth vs federation** | Keep meanings tied to their exact schemes and claims; still allow explicit relations and bounded receiving uses. |
+| **Local truth vs federation** | Keep meanings tied to their schemes and claims; still allow explicit relations and bounded receiving uses. |
 | **Minimalism vs safety**      | Few mandatory slots; enough structure to forbid silent normalization drift.                  |
 
 ### A.19.CN:4 - Solution — Specify the comparison basis and maintain it when reused
 
 #### A.19.CN:4.1 - The **CN‑Spec** (comparability and normalization specification)
 
-A **CN‑frame** is described by a compact, notation-free specification. The specification names the bearer and the exact boundary within which its readings may be compared:
+A **CN‑frame** is described by a notation-free specification. The specification names the bearer and the boundary within which its readings may be compared:
 
 ```
 CN‑Spec {
@@ -88,33 +88,33 @@ CN‑Spec {
 }
 ```
 
-**Reading:** the CN-frame is the selected characteristic space and chart for one named bearer and use. The normalization block is needed for normalization-based comparison; direct coordinatewise comparison can omit it. Add maintenance arrangements when the specification is retained for later reuse or maintained as a shared edition. `CN‑Spec` fixes the editions, comparison basis, qualifying scope/window and admission evidence needed by that use, with normalization references and aggregation choices when used. A.19.UNM defines normalization semantics, A.19.UINDM defines indicatorization, C.16 supplies measurement and evidence backing, and G.0 supplies the applicable admission conditions. An actual `Γ_fold` cites its law and applicability basis. Its property codes express only the claims needed by this use; A.9 supplies an unresolved law choice or property check, while ULSAM retains the actual CHR fold and admissibility rules.
+**Reading:** the CN-frame is the selected characteristic space and chart for one named bearer and use. The normalization block is needed for normalization-based comparison; coordinatewise comparison can omit it. Add maintenance arrangements when the specification is retained for later reuse or maintained as a shared edition. `CN‑Spec` fixes the editions, comparison basis, qualifying scope/window and admission evidence needed by that use, with normalization references and aggregation choices when used. A.19.UNM defines normalization semantics, A.19.UINDM defines indicatorization, C.16 supplies measurement and evidence backing, and G.0 supplies the applicable admission conditions. A `Γ_fold` cites its law and applicability basis. Its property codes express only the claims needed by this use; A.9 supplies an unresolved law choice or property check, while ULSAM retains the CHR fold and admissibility rules.
 
-The space reference selects the space itself. Add `characteristicSpaceDescriptionRef` when the selected use needs one exact definition or description edition; UNM and UINDM require this pin for their applications. Resolve the pair under A.19:5.1.1.1 and check that the description supplies the basis of that same space. An unchanged space may have a different description episteme, and a changed basis may require a different space even when the description retains its familiar title.
+The space reference selects the space itself. Add `characteristicSpaceDescriptionRef` when the selected use needs one definition or description edition; UNM and UINDM require this pin for their applications. Resolve the pair under A.19:5.1.1.1 and check that the description supplies the basis of that same space. An unchanged space may have a different description episteme, and a changed basis may require a different space even when the description retains its familiar title.
 
-**Mechanism-reference note.** `UNM_id` identifies the admitted normalization mechanism. `NormalizationMethodId` and `NormalizationMethodInstanceId` retain the meanings declared by A.19.UNM, and evidence for a relied-on instance remains with C.16. CN‑Spec neither redefines those terms nor implies transport or a cross-local relation.
+**Mechanism references.** `UNM_id` identifies the admitted normalization mechanism. `NormalizationMethodId` and `NormalizationMethodInstanceId` retain the meanings declared by A.19.UNM, and evidence for a relied-on instance remains with C.16. CN‑Spec neither redefines those terms nor implies transport or a cross-local relation.
 
 **L‑CN‑Spec‑NORM‑IDs (by reference).** Cite the normalization identifiers defined by A.19.UNM.
 
 #### A.19.CN:4.2 - CN-frame registry and conditional independent certification
 
-First identify whether the receiving claim or applicable control requires independent certification of this exact CN-Spec edition or admission basis. When it does, the holder certifying it must not have authored or materially selected that basis. Include relevant earlier authoring whose content the certified basis retains. Renaming an assignment or waiting until an authoring assignment ends does not satisfy this condition.
+First identify whether the receiving claim or applicable control requires independent certification of this CN-Spec edition or admission basis. When it does, the holder certifying it must not have authored or materially selected that basis. Include relevant earlier authoring whose content the certified basis retains. Renaming an assignment or waiting until an authoring assignment ends does not satisfy this condition.
 
-Recover the actual holders, their relevant Work, the exact edition or basis and the applicable history under A.2.1 and A.2.7. Distinct assignments do not establish distinct holders. Missing history leaves independence unresolved. Different holders can satisfy this non-self-certification condition while their assignment windows overlap; any stronger organizational-independence or commissioning control still applies. The certifier's authority and adequacy of examination require their own grounds.
+Recover the holders, their relevant Work, the edition or basis and the applicable history under A.2.1 and A.2.7. Distinct assignments do not establish distinct holders. Missing history leaves independence unresolved. Different holders can satisfy this non-self-certification condition while their assignment windows overlap; any stronger organizational-independence or commissioning control still applies. The certifier's authority and adequacy of examination require their own grounds.
 
 When no independent-certification claim or control applies, an adequately grounded one-person comparison can remain explicitly uncertified. Its measurement, comparison and reliance requirements still apply.
 
-One named registry edition may publish the CN-frame's names, exact editions, characteristic-space and bearer references, the maintenance assignment, and the deprecation relation. When certification affects the receiving use, it also makes the applicable control, relied-on edition, certification result and supporting references recoverable. Distinguish:
+One named registry edition may publish the CN-frame's names, editions, characteristic-space and bearer references, the maintenance assignment, and the deprecation relation. When certification affects the receiving use, it also makes the applicable control, relied-on edition, certification result and supporting references recoverable. Distinguish:
 
 * an adequate comparison for the named use with independent certification not required and no such claim made;
-* a certification condition satisfied for the exact edition, with the participation, authority and examination grounds;
+* a certification condition satisfied for the edition, with the participation, authority and examination grounds;
 * a required condition that is unmet or unresolved, with its consequence for the dependent use under the applicable control.
 
 These are different conclusions, not interchangeable registry labels. The registry helps discovery and currentness; it supplies no missing comparison, independence or certification evidence. A changed comparison basis reopens only the certification and receiving conclusions that rely on that change. A display-only registry change does not reopen them.
 
-#### A.19.CN:4.3 - **Bridges between exact local meanings**
+#### A.19.CN:4.3 - **Bridges between local meanings**
 
-When a comparison or reuse needs a semantic correspondence or difference between two exact F.17 local senses, test the direct F.9 predicate. Cite a Bridge only when it obtains; otherwise retain the actual F.9 exit and its reason. A use that needs an absent or unresolved correspondence remains unsupported. A coordinate mapping or plane relation keeps its own grounds. A compact account may show an obtaining Bridge and its separate bounded-use claim together:
+When a comparison or reuse needs a semantic correspondence or difference between two F.17 local senses, test the F.9 predicate. Cite a Bridge only when it obtains; otherwise retain the F.9 exit and its reason. A use that needs an absent or unresolved correspondence remains unsupported. A coordinate mapping or plane relation keeps its own grounds. A compact account may show an obtaining Bridge and its separate bounded-use claim together:
 
 ```
 Bridge: <obtaining occurrence between exact source and receiving F.17 cells>
@@ -133,7 +133,7 @@ BoundedUseClaim:
   extra_guards?: {additional evidence, required review, or an authorized exception within its applicable scope}
 ```
 
-The Bridge is only the exact sense relation. The separate C.2.1 claim states whether it suits the named use, direction, rule and tolerated loss. For reliance on an affirmative claim, obtain or reuse the A.10 disposition required by F.9:4.2; a negative or unresolved claim supplies no positive use basis. Add a B.3 result only for a current named assurance claim. Matching names establish no Bridge, and a reverse use needs its own justified direction. B.3 determines any assurance consequence under the selected argument or model; CN-Spec may state additional receiving-use conditions.
+The Bridge is only the sense relation. The separate C.2.1 claim states whether it suits the named use, direction, rule and tolerated loss. For reliance on an affirmative claim, obtain or reuse the A.10 disposition required by F.9:4.2; a negative or unresolved claim supplies no positive use basis. Add a B.3 result only for a current named assurance claim. Matching names establish no Bridge, and a reverse use needs its own justified direction. B.3 determines any assurance consequence under the selected argument or model; CN-Spec may state additional receiving-use conditions.
 
 ### A.19.CN:5 - Conformance Checklist (normative)
 
@@ -145,7 +145,7 @@ The Bridge is only the exact sense relation. The separate C.2.1 claim states whe
 
 **CC‑A19.D1‑3 (Chart).** `chart` **MUST** name its reference state and coordinate patch. For measured values, cite the applicable measurement method and protocol under C.16; for evaluated or otherwise ascribed values, cite the rule and basis that establish those values.
 
-**CC‑A19.D1‑4 (Normalization references, not redefinition).** When normalization is used, `normalization` **MUST** identify the admitted mechanism and provide the normalization references required by the A.19.UNM governing pattern (methods / invariants / fix, and instances when used) so that any normalization‑based comparison is auditable. This pattern does not define what a “NormalizationMethod” is — it requires that CN‑Spec can point to the governing pattern that does.
+**CC‑A19.D1‑4 (Normalization references, not redefinition).** When normalization is used, `normalization` **MUST** identify the admitted mechanism and provide the normalization references required by A.19.UNM (methods / invariants / fix, and instances when used) so that any normalization‑based comparison is auditable. This pattern does not define what a “NormalizationMethod” is — it requires that CN‑Spec can point to the governing pattern that does.
 
 **CC‑A19.D1‑5 (Comparability mode).** `comparability.mode` **MUST** be either **coordinatewise** (same chart, Scales and applicable Units) or **normalization‑based** (“normalize‑then‑compare” via the declared **UNM**). Mixed/implicit modes are prohibited. A.19.UNM governs the directed result and any optional classes. The receiving comparison must retain its required distinctions; equality of normalized outputs alone establishes no operational congruence. CN-Spec pins the chosen result branch and its basis.
 
@@ -153,9 +153,9 @@ The Bridge is only the exact sense relation. The separate C.2.1 claim states whe
 
 **CC‑A19.D1‑7 (Aggregation discipline).** When aggregation is used, `aggregation.Γ_fold` **MUST** identify the declared scale-lawful fold, its applicable algebraic properties and any required time policy. G.0 and A.19.ULSAM govern admissibility and the fold; B.3 applies when the fold serves an assurance claim. Keep the values separate when no fold is needed.
 
-**CC‑A19.D1‑8 (Relation and use discipline).** When reuse depends on a semantic correspondence or difference between two exact F.17 local senses, test the F.9 predicate and cite a Bridge only when it obtains. To use an obtaining Bridge, the receiving C.2.1 claim **MUST** separately state the use, direction, correspondence rule, tolerated loss and polarity. Reliance on an affirmative claim requires the A.10 disposition under F.9:4.2; a named assurance use also requires its B.3 result. Missing or unresolved required correspondence blocks the dependent use. A coordinate mapping and any applicable plane relation retain their separate grounds.
+**CC‑A19.D1‑8 (Relation and use discipline).** When reuse depends on a semantic correspondence or difference between two F.17 local senses, test the F.9 predicate and cite a Bridge only when it obtains. To use an obtaining Bridge, the receiving C.2.1 claim **MUST** separately state the use, direction, correspondence rule, tolerated loss and polarity. Reliance on an affirmative claim requires the A.10 disposition under F.9:4.2; a named assurance use also requires its B.3 result. Missing or unresolved required correspondence blocks the dependent use. A coordinate mapping and any applicable plane relation retain their separate grounds.
 
-**CC‑A19.D1‑9 (Conditional non-self-certification).** When the receiving claim or control requires independent certification, the certifying holder **MUST NOT** have authored or materially selected the exact CN-Spec edition or admission basis being certified, including relevant retained earlier content. Apply §4.2 to holder/Work/history, required authority and examination. Unknown history is unresolved. An adequate use with no such requirement may remain explicitly uncertified.
+**CC‑A19.D1‑9 (Conditional non-self-certification).** When the receiving claim or control requires independent certification, the certifying holder **MUST NOT** have authored or materially selected the CN-Spec edition or admission basis being certified, including relevant retained earlier content. Apply §4.2 to holder/Work/history, required authority and examination. Unknown history is unresolved. An adequate use with no such requirement may remain explicitly uncertified.
 
 **CC‑A19.D1‑10 (Maintenance, deprecation, and DRR).** A CN-Spec maintained for later reuse or as a shared edition **MUST** make its maintenance responsibility, applicable deprecation arrangement and consequential decisions recoverable. Use E.9 for decisions that need a DRR. A one-use comparison need not invent a maintenance assignment or retirement plan.
 
@@ -195,7 +195,7 @@ A comparison depends on the meaning and basis of its values. Keeping that basis 
 
 * `cs_basis`: *P50Latency\[ms] (↓)*, *P99Latency\[ms] (↓)*, *Load\[req/s]*
 * `chart`: client vantage, trace sampler v4; `MethodDescription#HTTP_probe_v4`
-* Before comparing a client end-to-end reading with a server processing reading, resolve their actual Characteristic and observation basis. Both may use ms yet answer different questions. Keep separate coordinates or obtain readings for the same declared characteristic and basis; a unit conversion alone cannot supply that match.
+* Before comparing a client end-to-end reading with a server processing reading, resolve their Characteristic and observation basis. Both may use ms yet answer different questions. Keep separate coordinates or obtain readings for the same declared characteristic and basis; a unit conversion alone cannot supply that match.
 * `normalization`: monotone time‑warp compensation for collector skew; invariant = percentile order
 * `comparability`: **normalization‑based (UNM)** with declared normalization
 * `aggregation`: use a max-of-mins latency fold only when the declared service model justifies it; a WLNK bound needs its own bottleneck model. Neither follows from latency percentiles alone.
@@ -239,7 +239,11 @@ Work ── performedBy ──> assigned System
 Work ── enacts ──> Method
 ```
 
-The System is classified under the exact local system-role kind and participates in the obtaining assignment used by this RSG account. A deliberately asserted evaluation or operational Work additionally needs the complete A.13 core: the performing System, exact local agential-role kind and its membership criterion, and an obtaining assignment of its declared direct species for the relevant scope and time. A.15.1 independently admits the Work; F.6 applies afterward only when precise assignment-bound attribution is needed. The schema abbreviates these grounds; its arrows do not establish them. A role-state graph lists states such as Ready, Waiting, or Degraded. Evaluation applies the state checklist and supports a StateAssertion. In this gating use, operational enactment requires an admissible assertion that an enactable state obtains; the Work, Method, assignment, and result remain different objects.
+The System is classified under the local system-role kind and participates in the obtaining assignment used by this RSG account.
+
+An asserted evaluation or operational Work additionally needs the complete A.13 core: the performing System, local agential-role kind and its membership criterion, and an obtaining assignment of its declared direct species for the relevant scope and time. A.15.1 independently admits the Work; F.6 applies afterward only when precise assignment-bound attribution is needed. The schema abbreviates these grounds; its arrows do not establish them.
+
+A role-state graph lists states such as Ready, Waiting, or Degraded. Evaluation applies the state checklist and supports a StateAssertion. In this gating use, operational enactment requires an admissible assertion that an enactable state obtains; the Work, Method, assignment, and result remain different objects.
 
 _Relational stub:_
 
@@ -265,7 +269,7 @@ ComparisonClaim ── cites ──> normalization instance and/or Bridge-use cl
 RelianceClaim ── cites ──> evidence status and assurance limits
 ```
 
-The normalization instance identifies the declared re-expression and its validity window. The Bridge identifies only an obtaining relation between two exact local senses. A comparison that relies on either one says so in its own use claim; its evidence and assurance limits remain explicit.
+The normalization instance identifies the declared re-expression and its validity window. The Bridge identifies only an obtaining relation between two local senses. A comparison that relies on either one says so in its own use claim; its evidence and assurance limits remain explicit.
 
 _Relational stub:_
 
@@ -290,7 +294,7 @@ source F.17 cell ── obtaining Bridge under its predicate profile ──> rec
 SystemRoleKind' ── stated refinement relation ──> SystemRoleKind
 ```
 
-A checklist re-expression cites the normalization instance when it uses normalization. When it also needs a semantic correspondence or difference between exact local senses, apply §4.3: test the F.9 predicate, retain any missing or unresolved required correspondence, and separately ground the use of an obtaining Bridge. A stated refinement between system-role kinds records how their state distinctions correspond; it must preserve the entailment needed for enactability rather than relying on similar role names.
+A checklist re-expression cites the normalization instance when it uses normalization. When it also needs a semantic correspondence or difference between local senses, apply §4.3: test the F.9 predicate, retain any missing or unresolved required correspondence, and separately ground the use of an obtaining Bridge. A stated refinement between system-role kinds records how their state distinctions correspond; it must preserve the entailment needed for enactability rather than relying on similar role names.
 
 _Relational stub:_
 
@@ -316,9 +320,9 @@ In an ordinary comparison with no independent-certification requirement or claim
 | **Chartless number**    | “Latency = 120”                           | No unit/vantage → untestable | Fill `cs_basis` + `chart`                          |
 | **Normalization smuggling**     | Quiet “per‑unit” normalisation mid‑stream | Trend reversal               | Declare UNM normalization references (`NormalizationMethodId` / `NormalizationMethodInstanceId`) + named invariants (see A.19.UNM)        |
 | **Bridge-by-name** | Reusing equal labels under different schemes | False comparability | Test the needed F.9 predicate; cite a Bridge only when it obtains, then ground the separate receiving-use claim and reliance. An unsupported required correspondence blocks that use. |
-| **Free-hand averaging** | An arithmetic mean is used without a model for the intended risk result | The number can answer the wrong question | Use A.9 to select a justified law, bound or separate-input result; declare an actual `Γ_fold` only for the selected fold |
+| **Free-hand averaging** | An arithmetic mean is used without a model for the intended risk result | The number can answer the wrong question | Use A.9 to select a justified law, bound or separate-input result; declare a `Γ_fold` only for the selected fold |
 | **CN‑frame sprawl** | Overlapping definitions obscure which comparison basis to use | Avoidable reconstruction and maintenance | Reuse a sufficient basis and retain differences that change the use. A registry supports maintained editions; use E.9 when a consequential decision needs a DRR. |
-| **Self-certification hidden by assignments** | A holder authors the basis and later certifies it under a new role | A required independent check still examines that holder's own basis | Apply §4.2 to actual participation in the exact edition; separate authority and examination, and keep uncertified use explicit when certification is not required |
+| **Self-certification hidden by assignments** | A holder authors the basis and later certifies it under a new role | A required independent check still examines that holder's own basis | Apply §4.2 to participation in the edition; separate authority and examination, and keep uncertified use explicit when certification is not required |
 
 ### A.19.CN:10 - Didactic quick cards (one‑liners teams reuse)
 
@@ -326,7 +330,7 @@ In an ordinary comparison with no independent-certification requirement or claim
 2. **Expose a normalization used by the trend.** An undisclosed change leaves the comparison basis unresolved.
 3. **The intended result selects the law.** Use a weakest-part bound only when its declared dependency model justifies it; a safety label alone selects no fold.
 4. **Ground an RSG-based Work-admission decision.** Establish the required state assertion before relying on it for admission; establish the other Work-admission conditions separately under A.15.1.
-5. **Ground the semantic correspondence needed by reuse.** Test the F.9 predicate between exact local senses; use an obtaining Bridge only through the separate bounded-use claim and required reliance. Retain a false or unresolved result when no positive relation is established.
+5. **Ground the semantic correspondence needed by reuse.** Test the F.9 predicate between local senses; use an obtaining Bridge only through the separate bounded-use claim and required reliance. Retain a false or unresolved result when no positive relation is established.
 6. **When independence is required, check who made the basis.** A later role assignment does not remove self-certification; a sufficient uncertified comparison remains possible when no independent certification is required.
 7. **Ground each chart value.** Name the reference state and coordinate patch. For measured values, cite the applicable measurement method and protocol; for evaluated or otherwise ascribed values, cite their rule and basis.
 8. **Make deprecation recoverable.** A maintained edition identifies its retirement conditions and any supported successor relation.
@@ -340,10 +344,10 @@ In an ordinary comparison with no independent-certification requirement or claim
 #### A.19.CN:11.1 - **SCR — Acceptance (first introduction)**
 
 * **SCR‑A19.4‑S01 (Completeness).** CN-Spec has every applicable mandatory value. Each cs_basis position declares its Scale and value meanings, Unit when that Scale has one, and any preference rule used for desirability ranking. Descriptive comparisons need no preference rule. The chart names its reference state and coordinate patch; measured values cite their C.16 measurement method/protocol, while evaluated or otherwise ascribed values cite the rule and basis that establish them, as required by CC-A19.D1-2 and CC-A19.D1-3.
-* **SCR‑A19.4‑S02 (Normalization clarity).** When normalization is used, `normalization` identifies the admitted mechanism and provides the normalization references required by the A.19.UNM governing pattern (methods / invariants / fix, and instances when used). If instances are referenced in assurance logs, their evidence/backing and validity constraints are handled by the governing evidence pattern (C.16), not by A.19.CN.
+* **SCR‑A19.4‑S02 (Normalization clarity).** When normalization is used, `normalization` identifies the admitted mechanism and provides the normalization references required by A.19.UNM (methods / invariants / fix, and instances when used). If instances are referenced in assurance logs, their evidence/backing and validity constraints are handled by C.16, not by A.19.CN.
 * **SCR‑A19.4‑S03 (Comparability test).** Provide one worked coordinatewise or normalization-based comparison and the source/evaluation basis needed for its result. Use an Evidence Graph reference when that is how the required basis is represented.
 * **SCR‑A19.4‑S04 (Γ‑fold audit).** When aggregation is used, the rule states the intended result, law and applicability basis, with only the required property claims; the reviewer reconstructs the result on a toy set under that model.
-* **SCR‑A19.4‑S05 (Required certification).** Identify the exact receiving claim/control and relied-on CN-Spec edition or admission basis. If independent certification is required, check the actual certifier against authoring/material-selection history, then the independently applicable authority and examination conditions. Replay both successive same-holder assignments and overlapping different-holder assignments. When neither an independent-certification claim nor a control applies, keep the sufficiently grounded comparison; add a certification status only when it matters to the receiving use.
+* **SCR‑A19.4‑S05 (Required certification).** Identify the receiving claim/control and relied-on CN-Spec edition or admission basis. If independent certification is required, check the certifier against authoring/material-selection history, then the applicable authority and examination conditions. Replay both successive same-holder assignments and overlapping different-holder assignments. When neither an independent-certification claim nor a control applies, keep the sufficiently grounded comparison; add a certification status only when it matters to the receiving use.
 * **SCR‑A19.4‑S06 (Bearer and basis recoverable).** For each CN-Spec characteristic used in the worked example, retain its bearer, Characteristic and Scale editions, reference/comparison basis, any qualifying scope/window, and the measurement, evaluation or other value-ascription grounds required for the reading. Shared frame-level values need not be repeated for every characteristic. Use A.10 when provenance or bounded reliance must remain replayable.
 
 #### A.19.CN:11.2 - **RSCR — Regression (on change)**
@@ -356,16 +360,16 @@ In an ordinary comparison with no independent-certification requirement or claim
 * **RSCR‑A19.4‑R06 (Deprecation rule).** On deprecating a CN-frame, the registry gives any supported successor relation, or states that no successor is established when that matters to reuse. Reconsider affected Bridges and uses; preserve historical relations instead of silently changing their endpoints.
 * **RSCR‑A19.4‑R07 (Certification basis).** A change to the relied-on basis, relevant participation history or applicable control reopens only the certification and receiving conclusions it can change. A registry display change alone does not.
 
-### A.19.CN:12 - Interaction summary (wiring to the rest of the kernel)
+### A.19.CN:12 - Interaction summary
 
 * **A.2 / A.2.5 (Roles / RSG).** RSG **checklists** quote **CN‑Spec.acceptance**; enactment gates rely on **admitted** CN‑frame data.
 * **B.1 and A.9.** B.1 supplies any claimed whole/part construction; A.9 supplies an unresolved aggregation-law choice or property check. CN-Spec records the justified `Γ_fold`, including its model and time policy.
 * **B.3 (Assurance).** For a named assurance claim, retain the relation and use evidence consumed by its argument. CL may serve as evidence shorthand; any quantitative effect needs a declared Scale and model. A safety roll-up requires the law or bound justified for its named outcome and dependency model.
-* **Current proof/inference support and the C.16/A.19 characterization stack.** Scales, applicable Units and measurement guidance come from C.16, A.17, A.18 and A.19. Claims about folds use C.2.1 when claim/episteme identity matters, A.10 when evidence or provenance must remain replayable, B.3 for a named assurance claim, and C.23 when method-family evidence or maturity is at issue.
+* **Proof/inference support and the C.16/A.19 characterization stack.** Scales, applicable Units and measurement guidance come from C.16, A.17, A.18 and A.19. Claims about folds use C.2.1 when claim/episteme identity matters, A.10 when evidence or provenance must remain replayable, B.3 for a named assurance claim, and C.23 when method-family evidence or maturity is at issue.
 
 ### A.19.CN:13 - Minimal CN‑Spec template (copy/paste, informational)
 
-**Template note.** This example arranges the information needed to specify the comparison basis. A.19.UNM defines normalization terms; A.19.UINDM defines indicatorization; C.16 governs measurement and evidence backing; G.0 supplies the applicable admission conditions.
+This example arranges the information needed to specify the comparison basis. A.19.UNM defines normalization terms; A.19.UINDM defines indicatorization; C.16 governs measurement and evidence backing; G.0 supplies the applicable admission conditions.
 
 ```
 CN‑frame: <Name>      Edition: <edition>      Bearer: <bearer ref>
@@ -407,7 +411,7 @@ MaintenanceAndDeprecation (for a maintained edition):
   deprecation_plan: <short note>
 ```
 
-
+When producing a `StateAssertion`, an implementation should be able to cite the CN-Spec edition and evidence anchors used, along with any normalization instance and Bridge on which the assertion depends.
 
 ### A.19.CN:14 - SoTA-Echoing — enough basis to compare coordinate values
 
@@ -415,7 +419,7 @@ MaintenanceAndDeprecation (for a maintained edition):
 
 The [QUDT quantity model](https://www.qudt.org/pages/QUDToverviewPage.html) is the useful comparator: it separates Quantity, QuantityKind, QuantityValue and Unit and supports precise quantity descriptions. **Adopt** that discipline where a Unit applies. Using only that portion is cheaper and sufficient when the same property, procedure and observation basis are already fixed outside the record. **Reject** treating it alone as evidence that two independently obtained readings answer the same question; this is a limit of that reduced use, not a claim that QUDT forbids richer descriptions.
 
-The [SOSA/SSN 2023-edition working draft of 24 September 2026](https://www.w3.org/TR/2026/WD-vocab-ssn-2023-20260924/) supplies the compared observation/procedure line: it distinguishes the feature, observed property, procedure, result and temporal qualifications. **Adapt** that separation in CN-Spec's bearer, cs_basis and chart, CC-A19.D1-1/-3/-11, and SCR-S01. The source is work in progress and does not establish FPF admission, Scale lawfulness, certification independence or a Bridge; those retain their direct rules. An evaluated coordinate keeps its actual rule and basis rather than acquiring a fictive measurement or Unit.
+The [SOSA/SSN 2023-edition working draft of 24 September 2026](https://www.w3.org/TR/2026/WD-vocab-ssn-2023-20260924/) supplies the compared observation/procedure line: it distinguishes the feature, observed property, procedure, result and temporal qualifications. **Adapt** that separation in CN-Spec's bearer, cs_basis and chart, CC-A19.D1-1/-3/-11, and SCR-S01. The source is work in progress and does not establish FPF admission, Scale lawfulness, certification independence or a Bridge; those retain their rules. An evaluated coordinate keeps its rule and basis rather than acquiring a fictive measurement or Unit.
 
 At comparable effort, both alternatives start from the same pair of readings and existing method records. The selected line adds the references that can change this comparison, reusing common frame-level values rather than repeating a full observation history for every cell. The SRE case in §8.2 shows the gain: equal millisecond units cannot make client end-to-end latency and server processing latency the same Characteristic. Keep them separate or obtain values for the same declared characteristic and observation basis. The added references cost more than a bare numeric pair; that cost is accepted when the basis is not already common and recoverable.
 
@@ -426,6 +430,6 @@ Reopen when a proposed comparison changes the property, value-producing rule, re
 ### A.19.CN:Close - Closing perspective
 
 
-A CN-Spec keeps the comparison basis with the readings. Reuse it while that basis remains sufficient; revise it and the dependent conclusions when the Characteristic, chart, normalization or intended use changes. A registry supports maintained editions. Cross-local reuse retains the coordinate mapping, semantic relation or plane relation it actually needs, with any separate bounded-use claim and required reliance.
+A CN-Spec keeps the comparison basis with the readings. Reuse it while that basis remains sufficient; revise it and the dependent conclusions when the Characteristic, chart, normalization or intended use changes. A registry supports maintained editions. Cross-local reuse retains the coordinate mapping, semantic relation or plane relation it needs, with any separate bounded-use claim and required reliance.
 
 ### A.19.CN:End

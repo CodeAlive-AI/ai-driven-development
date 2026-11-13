@@ -6,13 +6,13 @@
 
 ### A.3.3.TR:1 - Problem frame
 
-Use this pattern when you can describe a situation's state but still need to work out how it can change. A connection limits two bodies' positions but leaves their acceleration to be determined. Each participant in a computation has a valid procedure, yet their interleaving can produce an unexpected result. A transformation preserves a mathematical property but can repeat forever.
+Use this pattern when you can describe a situation's state but need to work out how it can change. A connection limits two bodies' positions but leaves their acceleration to be determined. Each participant in a computation has a valid procedure, yet their interleaving can produce an unexpected result. A transformation preserves a mathematical property but can repeat forever.
 
 **First useful move.** Choose one possible change and write which values it reads, which values it changes, what must hold for it to occur and which other values stay fixed during that step. For a participant that has saved a counter value r, its later write sets x' = r + 1. It need not produce x' = x + 1: another participant may have changed x since the read. This small rule exposes the lost-increment case in :5.1.
 
 The Method constructs a rule relating states or describing their continuous evolution under stated inputs. “Allowed” means permitted by that model. The resulting rule can support a conditional calculation, reveal competing continuations or identify a missing interaction, operation or input. A.3.3 supplies the criteria for a U.Dynamics episteme and connects its state space, transition law and observation account.
 
-The finite cases require ordinary arithmetic and conditions. The continuous case additionally uses derivatives and Newton's equation for a stated ideal mechanical model. Subject laws and operation semantics supply the content that the common construction combines.
+The finite cases require ordinary arithmetic and conditions. The continuous case additionally uses derivatives and Newton's equation for an ideal mechanical model. Subject laws and operation semantics supply the content that the common construction combines.
 
 If a suitable state-change rule already answers the question, apply it directly. When only compatible arrangements are needed, A.3.3.CC can supply that result before a rule of change is available. Use the present Method to construct or revise the rule.
 
@@ -20,9 +20,9 @@ If a suitable state-change rule already answers the question, apply it directly.
 
 A state constraint and a transition rule answer different questions. Two connected carts may have to maintain a fixed separation; that condition permits many common accelerations. Forces and masses are needed to select one. Similarly, saying that a participant reads before it writes constrains local order but leaves several global execution orders possible.
 
-A rule assembled from separately plausible statements can also be inconsistent or too permissive. An omitted unchanged value may become free to vary. Combining alternatives as if they had to occur together can eliminate legitimate behavior. Treating a desired invariant as an automatic filter can hide the very failure the model was meant to investigate.
+A rule assembled from separately plausible statements can also be inconsistent or too permissive. An omitted unchanged value may become free to vary. Combining alternatives as if they had to occur together can eliminate legitimate behavior. Treating a desired invariant as an automatic filter can hide the failure the model was meant to investigate.
 
-The practical problem is to construct a connected account from which the needed changes follow, while keeping visible the choices and missing information that still affect the answer.
+The practical problem is to construct a connected account from which the needed changes follow, while keeping visible the choices and missing information that affect the answer.
 
 ### A.3.3.TR:3 - Forces
 
@@ -41,7 +41,7 @@ Construct the rule around the change that matters to the question. Recover the r
 
 #### A.3.3.TR:4.1 - Choose the state, step and inputs
 
-Name what changes and the result needed from that change. Recover the admitted states, using A.3.3.CC when their compatibility is still unresolved. Separate changing values, parameters held fixed and inputs supplied from outside the model.
+Name what changes and the result needed from that change. Recover the admitted states, using A.3.3.CC when their compatibility is unresolved. Separate changing values, parameters held fixed and inputs supplied from outside the model.
 
 Choose what counts as one step. A step can be one instruction, one transaction, an event, an observation interval or an interval of physical evolution. Say which intermediate effects the model retains. Declaring a read-and-write pair atomic is a substantive assumption about interference, as :5.1 shows.
 
@@ -163,7 +163,7 @@ This is a transition account for a mathematical construction. An implementation 
 
 #### A.3.3.TR:5.4 - A switch changes the law within the prediction interval
 
-Consider a stated temperature model with T in degrees Celsius and heater mode OFF or ON. While OFF, temperature falls at 1 degree/minute; while ON, it rises at 2 degrees/minute. OFF at T<=18 switches immediately to ON. ON at T>=20 switches immediately to OFF. A switch changes the mode and preserves T.
+Consider a temperature model with T in degrees Celsius and heater mode OFF or ON. While OFF, temperature falls at 1 degree/minute; while ON, it rises at 2 degrees/minute. OFF at T<=18 switches immediately to ON. ON at T>=20 switches immediately to OFF. A switch changes the mode and preserves T.
 
 Start at T=19, OFF. The requested result is temperature and mode at 1.5 minutes. In OFF mode, flow is permitted while T>18. The trajectory T(t)=19-t reaches 18 at minute 1; the event then switches the mode to ON. The new law gives T(t)=18+2\*(t-1) until T reaches 20. At 1.5 minutes the result is **19 degrees, ON**.
 

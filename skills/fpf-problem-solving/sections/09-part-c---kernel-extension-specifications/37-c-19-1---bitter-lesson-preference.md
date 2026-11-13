@@ -3,21 +3,21 @@
 > **Status:** Stable
 
 **Purpose.**
-State the empirical Bitter Lesson narrowly: in search, learning, planning, and related computational work, general methods able to use increasing compute or data have often displaced hand-engineered special cases. Treat that history as a comparison pressure, not as proof about every bearer. Here *bearer* names the candidate being compared under the scale claim or generality policy. A project may declare an analogous preference for a module, platform, organization design, evidence arrangement, or other bearer only as a separate local policy, with a scale predicate, objective vector, comparison basis, and evidence form appropriate to that bearer. Safety, cost, admissibility, uncertainty, and non-dominance remain visible; the word `general` creates no preference by itself.
+State the empirical Bitter Lesson: in search, learning, planning, and related computational work, general methods able to use increasing compute or data have often displaced hand-engineered special cases. Treat that history as a comparison pressure, not as proof about every bearer. Here *bearer* names the candidate being compared under the scale claim or generality policy. A project may declare an analogous preference for a module, platform, organization design, evidence arrangement, or other bearer only as a separate local policy, with a scale predicate, objective vector, comparison basis, and evidence form appropriate to that bearer. Safety, cost, admissibility, uncertainty, and non-dominance remain visible; the word `general` creates no preference by itself.
 **Builds on.** C.19 (E and E‑LOG), C.24 (Agent‑Tools‑CAL; **ATC‑2**), B.3 (Assurance), E.3 (Precedence), E.5 (Guard‑Rails).
 **Coordinates with.** G.5 (Selector), G.8 (SoS‑LOG Bundles), G.9 (Parity), G.11 (Refresh‑Telemetry), A.0 (On‑Ramp).
 **Keywords.** general-solution preference; scale‑amenability; **BLP‑waiver**; iso‑scale parity; **Scale‑Audit**; slope vector; **alpha and delta tolerances**.
 
 ### C.19.1:0 - Use This When
-Use `C.19.1` when a current choice or policy makes a scale claim or invokes a declared generality preference: a narrower special-purpose approach is preferred over a general alternative, or a general approach is preferred because its measured performance is expected to improve across a declared scale window. For search, learning, planning, and agent substrates, the empirical Bitter Lesson can supply the motivating line. For a module relation, platform, organization design, evidence-bearing episteme or work arrangement, or selected structure, state explicitly that the move is a local analogy or policy rather than an empirical Bitter-Lesson result.
+Use `C.19.1` when a current choice or policy makes a scale claim or invokes a declared generality preference: a narrower special-purpose approach is preferred over a general alternative, or a general approach is preferred because its measured performance is expected to improve across a declared scale window. For search, learning, planning, and agent substrates, the empirical Bitter Lesson can supply the motivating line. For a module relation, platform, organization design, evidence-bearing episteme or work arrangement, or selected structure, state that the move is a local analogy or policy rather than an empirical Bitter-Lesson result.
 
-The pattern governs only that scale-based comparison, preference, or waiver. It neither proves architecture adequacy nor turns a bearer label into a holon kind. If the project is merely using a bounded specialization and makes no scale advantage or durable generality claim, keep the use local under the bearer's direct pattern and stop here.
+The pattern governs only that scale-based comparison, preference, or waiver. It neither proves architecture adequacy nor turns a bearer label into a holon kind. If the project is using a bounded specialization and makes no scale advantage or durable generality claim, keep the use local under the bearer's direct pattern and stop here.
 
 When comparing a general adaptive loop with a specialized cycle or direct repair for an `E.23` use, use `C.19.1` only if the decision relies on scale advantage or a declared generality policy. The `E.23` loop still names the object under improvement, evaluation, cost and risk account, protected trade-offs, and stop or switch condition.
 
 #### C.19.1:0.1 - What Goes Wrong If Missed
 
-A team treats "more agentic", "more automated", "more specialized", or "works on this benchmark" as proof that one bearer should displace a more general scale-amenable bearer. Another team repeats the opposite error: it invokes the Bitter Lesson as permission to ignore safety, cost, task-family fit, or a narrow heuristic that actually wins inside the declared scale window. In both cases, the selector loses parity, waiver, and scale-window discipline.
+A team treats "more agentic", "more automated", "more specialized", or "works on this benchmark" as proof that one bearer should displace a more general scale-amenable bearer. Another team repeats the opposite error: it invokes the Bitter Lesson as permission to ignore safety, cost, task-family fit, or a narrow heuristic that wins inside the declared scale window. In both cases, the selector loses parity, waiver, and scale-window discipline.
 
 #### C.19.1:0.2 - What This Buys
 
@@ -36,11 +36,11 @@ First examine the scale claim and its available basis before selecting a `Scale-
 - `bounded scale comparison`: state the smallest parity and uncertainty method adequate for this use;
 - `full Scale-Audit selected`: state why the claim, stakes, feasible evidence, and receiving use justify the added work.
 
-A `BLP-waiver` is needed only when an actual declared generality preference would otherwise decide the use.
+A `BLP-waiver` is needed only when a declared generality preference would otherwise decide the use.
 
 ### C.19.1:1 - Problem frame
 
-Bespoke computational heuristics can win locally while failing to exploit larger compute, data, or search budgets. General methods can improve across a declared scale window, but the empirical record is strongest for computational search, learning, and planning. A module organization, institution, work arrangement, or episteme does not inherit that empirical result by analogy. A project may still adopt a broader policy, but it must state the bearer-specific scale relation and evidence rather than treating all growth, reuse, or generality as one phenomenon.
+Bespoke computational heuristics can win locally while failing to exploit larger compute, data, or search budgets. General methods can improve across a declared scale window, but the empirical record is strongest for computational search, learning, and planning. A module organization, institution, work arrangement, or episteme does not inherit that empirical result by analogy. A project may adopt a broader policy, but it must state the bearer-specific scale relation and evidence rather than treating all growth, reuse, or generality as one phenomenon.
 
 Without this separation, teams either repeat the Bitter Lesson as a slogan or impose a costly machine-learning experiment recipe on bearers for which seeds, FLOPs, compute slopes, or data sweeps have no meaning.
 
@@ -51,59 +51,64 @@ Every BLP use starts with the scale-claim examination above. A claim ready for c
 
 When the scale claim is current, choose evidence proportional to the bearer, stakes, feasible observations, and receiving use. A selector-facing superiority claim, durable reusable-bearer policy, safety-material override, or expensive irreversible choice normally justifies a fuller audit. A reversible local probe may need only a small matched comparison. The method shall preserve:
 
-(a) **Parity and admissibility:** comparable task family or use, safety boundary, budget basis, current editions, and set-returning Pareto comparison unless a declared policy lawfully selects another operation.
-(b) **Bearer-appropriate scale dimensions:** compute, data, model capacity, or freedom of action for computational methods when they actually vary; for another bearer, state its own capacity, resource, reuse, throughput, coordination, or other exact scale predicate and explain why it provides a comparable scale basis for the two candidates.
-(c) **Uncertainty appropriate to the evidence:** repeated seeds or bootstrap intervals for repeatable stochastic trials when useful; measurement error, interval estimates, case comparison, or another justified form for other bearers. Do not demand seeds from an organization design or FLOPs from an episteme.
-(d) **Cost, resource, and safety visibility:** report the accounts material to the decision through their direct patterns. Add B.3 only for a named assurance claim and receiving use, including when a material-reliance threshold requires such a claim.
-(e) **Objective honesty:** keep quality, risk, cost, and any policy-promoted coverage or illumination coordinates separate unless their Scale permits the declared operation.
-(f) **Risk-selected design:** choose a design that can answer this claim. Fractional factorial, Latin-hypercube, three-level sweeps, heteroscedasticity treatment, and repeated-seed designs are options for suitable multi-knob experiments, not a universal minimum. Record why the selected design is adequate and what it cannot establish.
-(g) **Claim-matched tests:** use knee or budget-constrained regret tests only when the asserted advantage depends on a knee or dominance inside the audited window.
+- (a) **Parity and admissibility:** comparable task family or use, safety boundary, budget basis, current editions, and set-returning Pareto comparison unless a declared policy lawfully selects another operation.
+- (b) **Bearer-appropriate scale dimensions:** compute, data, model capacity, or freedom of action for computational methods when they vary; for another bearer, state its capacity, resource, reuse, throughput, coordination, or other scale predicate and explain why it provides a comparable scale basis for the two candidates.
+- (c) **Uncertainty appropriate to the evidence:** repeated seeds or bootstrap intervals for repeatable stochastic trials when useful; measurement error, interval estimates, case comparison, or another justified form for other bearers. Do not demand seeds from an organization design or FLOPs from an episteme.
+- (d) **Cost, resource, and safety visibility:** report the accounts material to the decision through their direct patterns. Add B.3 only for a named assurance claim and receiving use, including when a material-reliance threshold requires such a claim.
+- (e) **Objective honesty:** keep quality, risk, cost, and any policy-promoted coverage or illumination coordinates separate unless their Scale permits the declared operation.
+- (f) **Risk-selected design:** choose a design that can answer this claim. Fractional factorial, Latin-hypercube, three-level sweeps, heteroscedasticity treatment, and repeated-seed designs are options for suitable multi-knob experiments, not a universal minimum. Record why the selected design is adequate and what it cannot establish.
+- (g) **Claim-matched tests:** use knee or budget-constrained regret tests only when the asserted advantage depends on a knee or dominance inside the audited window.
 
 **BLP-2 — Preference rule with alpha and delta tolerances.**
-Among admissible options with comparable budgets, using `alpha` when a tolerance is needed, and comparable assurance under any applicable `delta` when an assurance result is material to this use, a scale-based preference is warranted when one option’s response over the audited range Pareto-dominates the other’s, with uncertainty accounted for. Apply any required assurance condition; a comparison that consumes no assurance result does not create one merely to fill `delta`. If no option dominates within the evidence bounds, `C.19.1` returns `no scale-based preference`; it does not turn greater generality into an empirical winner. A separately declared project policy may break that tie in favor of a more general bearer, but the result shall be labeled as that local policy or analogy, not as the empirical Bitter Lesson, and its E/E-LOG tie-breaker and edition shall be cited. For an agentic use, keep any alpha and delta values in the actual C.19.1 comparison, local-policy or waiver result consumed by the C.24 CallPlan.
+Among admissible options with comparable budgets, using `alpha` when a tolerance is needed, and comparable assurance under any applicable `delta` when an assurance result is material to this use, a scale-based preference is warranted when one option’s response over the audited range Pareto-dominates the other’s, with uncertainty accounted for. Apply any required assurance condition; a comparison that consumes no assurance result does not create one merely to fill `delta`. If no option dominates within the evidence bounds, `C.19.1` returns `no scale-based preference`; it does not turn greater generality into an empirical winner. A separately declared project policy may break that tie in favor of a more general bearer, but the result shall be labeled as that local policy or analogy, not as the empirical Bitter Lesson, and its E/E-LOG tie-breaker and edition shall be cited. For an agentic use, keep any alpha and delta values in the C.19.1 comparison, local-policy or waiver result consumed by the C.24 CallPlan.
 > **BLP‑2.1 — Valid waiver grounds (override transparency).**
+>
 > Overrides of a declared local generality preference are allowed **only** when:
-> • **Admissibility override:** guard rails, ethics, or precedence make the general bearer inadmissible (`E.5`, `E.3`).
-> • **Scale‑probe overturn:** under **iso‑scale parity** in the declared **ScaleWindow**, the heuristic **sustainedly outperforms** with uncertainty accounted for.
-> • **Complementary bias:** the heuristic is an **inductive bias** that **improves** the general method **without blocking scale** (graceful degradation as `S` grows).
-> All overrides record a **BLP-waiver** with rationale, admitted review System, direct waiver-review responsibility relation or exact A.6.RCD missing governor, and expiry or review in the DRR. Any system-role kind or assignment needed by the review Work is cited separately.
+>
+> - **Admissibility override:** guard rails, ethics, or precedence make the general bearer inadmissible (`E.5`, `E.3`).
+> - **Scale‑probe overturn:** under **iso‑scale parity** in the declared **ScaleWindow**, the heuristic **sustainedly outperforms** with uncertainty accounted for.
+> - **Complementary bias:** the heuristic is an **inductive bias** that **improves** the general method **without blocking scale** (graceful degradation as `S` grows).
+>
+> All overrides record a **BLP-waiver** with rationale, admitted review System, waiver-review responsibility relation or A.6.RCD missing governor, and expiry or review in the DRR. Any system-role kind or assignment needed by the review Work is cited separately.
 
 **BLP-2.2 — Task-family specialization compatibility.**
 A bounded specialization that makes no scale-advantage, selector-facing superiority, durable generality, or override claim may be used under its direct pattern with an explicit task family, work target, budget guard rails, and evidence locus. It needs neither a full `Scale-Audit` nor a BLP waiver merely because it is specialized.
 
-If a scale claim becomes current, run the cheap probe first. Select a full audit only when the claim, stakes, feasible evidence, and receiving use justify it. A specialization produced by a general substrate or described as a complementary bias is not automatically compatible: state the exact non-blocking scale relation and evidence when that fact is relied on. Low-human-overlap or newly discovered approaches remain admissible under the same bounded-use, parity, safety, cost, and evidence rules; novelty neither proves nor defeats scale amenability.
+If a scale claim becomes current, run the cheap probe first. Select a full audit only when the claim, stakes, feasible evidence, and receiving use justify it. A specialization produced by a general substrate or described as a complementary bias is not automatically compatible: state the non-blocking scale relation and evidence when that fact is relied on. Low-human-overlap or newly discovered approaches remain admissible under the same bounded-use, parity, safety, cost, and evidence rules; novelty neither proves nor defeats scale amenability.
 
 **BLP-3 — Prescription architecture is a separate question.**
 The Bitter Lesson establishes no universal preference for prohibitions over positive instructions and no general right to autonomous sequencing. For tool-call planning, use `C.24` with its budget, stop, replan, and Guard-Rail rules. For another WorkPlan or normative constraint, use the A.15 planning family, `E.3`, `E.5`, and the direct policy or commitment pattern. A project may adopt a minimal-prescription policy only with its own trigger, safety boundary, evidence, and review condition; it is not a consequence of a BLP comparison.
+
 **BLP‑4 — Heuristic‑Debt register (mandatory).**
-Record **Heuristic Debt** only when an admitted heuristic functions as reusable solution-family policy, selector-facing preference, durable override of a general scale-amenable alternative, DRR-backed scale waiver, or project-side choice that claims scale advantage or BLP override. Ordinary local bounded tactics that make no reusable-bearer, scale-advantage, selector-facing, or override claim may remain local and bounded without Heuristic Debt publication. `BLP.HeuristicDebtEntry` is a `C.19.1`-local or `G.11`-linked policy and debt entry; it is not a universal `U.*` record kind unless separately admitted under `E.24.UK`, with `F.18` for naming, `C.3` for Kind semantics, and `E.9` for the decision record. For a live debt entry, record scope, admitted review System, direct debt-review responsibility relation or exact A.6.RCD missing governor, expiry or review window, and a de-hardening plan; any exact system-role kind or assignment needed by review Work remains separate. Track the entry in **CalibrationLedger** or **BCT** and cite it in SCR.
+Record **Heuristic Debt** only when an admitted heuristic functions as reusable solution-family policy, selector-facing preference, durable override of a general scale-amenable alternative, DRR-backed scale waiver, or project-side choice that claims scale advantage or BLP override. Ordinary local bounded tactics that make no reusable-bearer, scale-advantage, selector-facing, or override claim may remain local and bounded without Heuristic Debt publication. `BLP.HeuristicDebtEntry` is a `C.19.1`-local or `G.11`-linked policy and debt entry; it is not a universal `U.*` record kind unless separately admitted under `E.24.UK`, with `F.18` for naming, `C.3` for Kind semantics, and `E.9` for the decision record. For a live debt entry, record scope, admitted review System, debt-review responsibility relation or A.6.RCD missing governor, expiry or review window, and a de-hardening plan; any system-role kind or assignment needed by review Work remains separate. Track the entry in **CalibrationLedger** or **BCT** and cite it in SCR.
 
 **BLP-5 — Adaptation policy is a separate question.**
-The Bitter Lesson does not by itself require feedback-driven adaptation or make disabling adaptation a waiver. When adaptation is current, use `C.22.1` for the task-family adaptation claim, `E.23` for repeated object-version improvement, and `C.24` for tool-call planning and replanning, together with the applicable privacy and Guard-Rail patterns. A product policy may require or prohibit adaptation, but that result needs its own objective, evidence, risk boundary, and review date.
+The Bitter Lesson does not by itself require feedback-driven adaptation or make disabling adaptation a waiver. When adaptation is current, use `C.22.1` for the task-family adaptation claim, `E.23` for repeated object-version improvement, and `C.24` for tool-call planning and replanning, together with the applicable privacy and Guard-Rail patterns. A product policy may require or prohibit adaptation, but that result needs an objective, evidence, a risk boundary, and a review date.
+
 **BLP‑6 — Precedence & safeguards.**
-BLP draws on **P‑10**, **P‑11**, **P‑7** and **P‑1**. Apply E.3 to the actual principles being compared; the combined policy has no single precedence class. It **does not supersede Guard‑Rails (E.5) or precedence rulings (E.3)**. Where a declared **NQD** or **C.19 E‑LOG** policy promotes illumination into dominance, use that lens for the audited window.
+BLP draws on **P‑10**, **P‑11**, **P‑7** and **P‑1**. Apply E.3 to the principles being compared; the combined policy has no single precedence class. It **does not supersede Guard‑Rails (E.5) or precedence rulings (E.3)**. Where a declared **NQD** or **C.19 E‑LOG** policy promotes illumination into dominance, use that lens for the audited window.
 
 **BLP‑7 — Publication discipline.**
-When a durable `Scale-Audit` is actually performed, its artifacts **SHALL** be exported to **G.11** with the used edition pins, uncertainty method, alpha and delta tolerances when current, ComparatorSet, policy reference, and qualification window. A `no scale claim yet` or local bounded-use exit creates no audit package.
+When a durable `Scale-Audit` is performed, its artifacts **SHALL** be exported to **G.11** with the used edition pins, uncertainty method, alpha and delta tolerances when current, ComparatorSet, policy reference, and qualification window. A `no scale claim yet` or local bounded-use exit creates no audit package.
 
 ### C.19.1:3 - Conformance Checklist (CC-BLP)
 
 1. The cheap scale-claim probe names the bearer kind and direct pattern, task family or receiving use, scale predicate, objective vector, comparison basis, feasible evidence, safety boundary, and stakes.
 2. The result says `no scale claim yet`, `local analogy or policy`, `bounded scale comparison`, or `full Scale-Audit selected`; it does not hide the choice of audit depth.
 3. A performed comparison uses parity, current editions, explicit uncertainty, material resource and safety accounts, and lawful Pareto or declared policy operations.
-4. The evidence method fits the bearer. Compute/data sweeps, seeds, bootstraps, and factorial or Latin-hypercube designs appear only when they answer the actual claim.
+4. The evidence method fits the bearer. Compute/data sweeps, seeds, bootstraps, and factorial or Latin-hypercube designs appear only when they answer the claim.
 5. Non-dominance returns no empirical scale preference. Any generality tie-break is identified as a separately declared local policy.
-6. A waiver identifies the policy it overrides, rationale, admitted review System, direct responsibility relation or exact missing governor, and expiry or review window.
+6. A waiver identifies the policy it overrides, rationale, admitted review System, responsibility relation or missing governor, and expiry or review window.
 7. A live Heuristic Debt entry meets the bounded `BLP-4` trigger; ordinary local tactics create no debt record.
 8. Prescription architecture and adaptation policy are routed through their direct patterns rather than reported as consequences of BLP.
 9. An actual durable audit is exported to `G.11`; a bounded-use or no-claim exit is not padded into an audit artifact.
-10. A narrower specialist bearer names its task family, work target, and the exact scale, waiver, or bounded-use ground relied on.
+10. A narrower specialist bearer names its task family, work target, and the scale, waiver, or bounded-use ground relied on.
 
 ### C.19.1:4 - Anti-patterns & remedies
 
-- **Slogan as evidence.** `General`, `agentic`, or `Bitter Lesson` is treated as proof. Repair with the cheap probe and an actual comparison basis.
+- **Slogan as evidence.** `General`, `agentic`, or `Bitter Lesson` is treated as proof. Repair with the cheap probe and a comparison basis.
 - **Analogy as empirical result.** A module relation, organization, or episteme is assigned compute/data scaling semantics. State a local analogy or policy and use a bearer-appropriate predicate and evidence form.
-- **Universal experiment recipe.** Every claim receives seeds, FLOPs, and a multi-factor design. Select the smallest method that can answer the actual risk-bearing claim.
+- **Universal experiment recipe.** Every claim receives seeds, FLOPs, and a multi-factor design. Select the smallest method that can answer the risk-bearing claim.
 - **General wins by non-dominance.** Error bars overlap, so the more general option is declared superior. Return no empirical scale preference or cite a separate tie-break policy.
 - **Single-winner leaderboard.** Hidden budget mixing or scalarization replaces Pareto comparison. Restore comparable windows, objective coordinates, uncertainty, and policy identifiers.
 - **Debt without trigger.** A local bounded tactic is entered into Heuristic Debt. Apply the `BLP-4` trigger before creating the entry.
@@ -111,7 +116,7 @@ When a durable `Scale-Audit` is actually performed, its artifacts **SHALL** be e
 
 ### C.19.1:5 - Archetypal grounding (post-2015; informative)
 
-These computational examples illustrate where a scale comparison may be useful; they supply no empirical conclusion for another bearer family. Each actual comparison still needs its task family, comparator, budget and safety basis, uncertainty, applicable alpha/delta tolerances and any source-currentness condition required by its receiving use.
+These computational examples illustrate where a scale comparison may be useful; they supply no empirical conclusion for another bearer family. Each comparison needs its task family, comparator, budget and safety basis, uncertainty, applicable alpha/delta tolerances and any source-currentness condition required by its receiving use.
 
 * **LLMs:** prompt programs, **retrieval-augmented** policies, and **MoE** policies compared with narrow task-specific pipelines; set-returning selection across editions and budgets.
 * **RL and planning:** model-based optimization and general agents compared with hand-coded controllers, subject to alpha and delta tolerances and safety.
@@ -128,7 +133,7 @@ These computational examples illustrate where a scale comparison may be useful; 
 
 The specialist wins at the first probed budget, while the general method wins at the other two even after allowing for the supplied uncertainty. Neither response dominates across all three probed budgets. Return `no scale-based preference` for that whole comparison; the word general does not reverse it. The result supports the stated comparisons at those points, not an interpolated law between them or a claim outside the window.
 
-If the receiving choice is confined to 100 CPU-seconds, the specialist's bounded advantage can be used under that question's comparison rule. A separately declared prefer-general policy, if applicable, still needs its own tie-break or waiver treatment. No such policy is stipulated here, so no waiver or debt entry is created merely to report these results. Changing the task family, hardware-cost account or budget window reopens the dependent comparison. This is a constructed application, not a new benchmark finding.
+If the receiving choice is confined to 100 CPU-seconds, the specialist's bounded advantage can be used under that question's comparison rule. A separately declared prefer-general policy, if applicable, needs its own tie-break or waiver treatment. No such policy is stipulated here, so no waiver or debt entry is created merely to report these results. Changing the task family, hardware-cost account or budget window reopens the dependent comparison. This is a constructed application, not a new benchmark finding.
 
 ### C.19.1:5.1 - SoTA-Echoing
 
@@ -152,9 +157,9 @@ The row omits fields that are not current. `PreferenceDefault=declared-prefer-ge
 
 #### C.19.1:7.1 - C.32 architecture-synthesis use relation
 
-When using `C.32` to generate candidate architectures, `C.19.1` applies only if a claim about a candidate asserts scale advantage or invokes a declared local generality policy. For a universal module relation, platform, organization design, evidence arrangement, or selected structure, that branch is a project analogy or policy: the empirical machine-learning literature is not proof. Name the exact bearer and its direct pattern, the holon under change when one is current, the bearer-specific scale predicate, objective vector, comparison basis, feasible evidence, admissibility boundary, and intended receiving use.
+When using `C.32` to generate candidate architectures, `C.19.1` applies only if a claim about a candidate asserts scale advantage or invokes a declared local generality policy. For a universal module relation, platform, organization design, evidence arrangement, or selected structure, that branch is a project analogy or policy: the empirical machine-learning literature is not proof. Name the bearer and its direct pattern, the holon under change when one is current, the bearer-specific scale predicate, objective vector, comparison basis, feasible evidence, admissibility boundary, and intended receiving use.
 
-BLP neither selects the architecture nor turns method-family, practice, role-side, or culture wording into a holon kind. If the candidate merely removes parts, carries several functions, or is described as reusable, with no recoverable scale claim or declared generality-policy claim, keep the question in `C.32` and `C.31`; return `no scale claim yet` rather than manufacturing an audit. A TRIZ-style ideality move enters BLP only when the declared comparison actually relies on scale amenability inside a named window.
+BLP neither selects the architecture nor turns method-family, practice, role-side, or culture wording into a holon kind. If the candidate removes parts, carries several functions, or is described as reusable, with no recoverable scale claim or declared generality-policy claim, keep the question in `C.32` and `C.31`; return `no scale claim yet` rather than manufacturing an audit. A TRIZ-style ideality move enters BLP only when the declared comparison relies on scale amenability inside a named window.
 
 #### C.19.1:7.2 - C.29 mathematical-lens use relation
 
@@ -164,6 +169,6 @@ If scale advantage or a declared generality policy is live, start with the cheap
 
 > *Memory hook.* **Test what scales; label policy when evidence does not decide.**
 
-When choosing between a general adaptive loop, a specialized object-family cycle, or a mixed operation-family set for an `E.23` use, `C.19.1` applies only when the decision relies on scale advantage or a declared generality policy. Start with the cheap probe. Compare the declared characteristic values for material resources, tools and instruments, adaptation attempts, skilled attention, rework or delay, risk exposure, and avoided loss on their admitted scales; keep them separate, reject a dominated option, and use the declared project policy to choose or hold when no option dominates. Net-cost arithmetic is permitted only after every term has been converted to one declared unit through an admissible conversion whose basis, uncertainty, and scope remain visible. Repeated automation alone does not satisfy BLP; the record still names the object under improvement, evaluation, protected trade-offs, bounded cost and risk condition, and stop or switch condition. If neither a scale claim nor a declared generality policy is current, `E.23` proceeds without a BLP audit or waiver.
+When choosing between a general adaptive loop, a specialized object-family cycle, or a mixed operation-family set for an `E.23` use, `C.19.1` applies only when the decision relies on scale advantage or a declared generality policy. Start with the cheap probe. Compare the declared characteristic values for material resources, tools and instruments, adaptation attempts, skilled attention, rework or delay, risk exposure, and avoided loss on their admitted scales; keep them separate, reject a dominated option, and use the declared project policy to choose or hold when no option dominates. Net-cost arithmetic is permitted only after every term has been converted to one declared unit through an admissible conversion whose basis, uncertainty, and scope remain visible. Repeated automation alone does not satisfy BLP; the record names the object under improvement, evaluation, protected trade-offs, bounded cost and risk condition, and stop or switch condition. If neither a scale claim nor a declared generality policy is current, `E.23` proceeds without a BLP audit or waiver.
 
 ### C.19.1:End

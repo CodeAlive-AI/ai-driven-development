@@ -8,7 +8,19 @@
 
 **Intent.** Help a practitioner turn an already fixed action or option into a budgeted call plan, then revise that plan or return a bounded checkpoint without confusing planning with selection or execution.
 
-**Depends on.** `A.15` and its planning and Work patterns for Methods, descriptions, plans, performed Work, and attribution; `A.15.7` for a situation-responsive next-action decision; `C.11` for a fixed choice among a current `OptionSet`; `C.2.1` when the relied-on decision or checkpoint needs a persistent episteme; `C.18` for candidate-generation records; `C.19` for live-pool policy; `C.19.1` for a scale-based comparison or waiver; `C.16` for measured comparison inputs; `OPS.11.1:4.2–4.3` for constructing a route from required contributions and reconciling its resource conditions; `G.6` when a call trace must remain replayable; and `B.3` only when a named assurance use needs one bounded assurance result.
+**Depends on.**
+
+- `A.15` and its planning and Work patterns for Methods, descriptions, plans, performed Work, and attribution;
+- `A.15.7` for a situation-responsive next-action decision;
+- `C.11` for a fixed choice among a current `OptionSet`;
+- `C.2.1` when the relied-on decision or checkpoint needs a persistent episteme;
+- `C.18` for candidate-generation records;
+- `C.19` for live-pool policy;
+- `C.19.1` for a scale-based comparison or waiver;
+- `C.16` for measured comparison inputs;
+- `OPS.11.1:4.2–4.3` for constructing a route from required contributions and reconciling its resource conditions;
+- `G.6` when a call trace must remain replayable;
+- `B.3` only when a named assurance use needs one bounded assurance result.
 
 **Coordinates with.** `U.PromiseContent` for service acceptance conditions, `C.28` when a planned call is intended to support a causal use, and `E.17`/`E.24.PUB` when an already obtained result is being published or made available.
 
@@ -28,8 +40,8 @@ Do not use it to generate candidates, keep a live pool, choose among unresolved 
 
 #### C.24:0.1 - What goes wrong if missed
 
-- a route is scheduled by an opaque heuristic, so nobody can see which budget is being burned or what should stop it;
-- unresolved choice or pool-policy work is smuggled into a plan;
+- a route is scheduled by an opaque heuristic, so its budget use and stop conditions are hidden;
+- unresolved choice or pool-policy work is hidden in a plan;
 - a route description is mistaken for a Method, a plan for performed Work, or a successful probe for a decision to adopt and execute the route; and
 - replanning loses the basis that fixed the action and its conditions.
 
@@ -42,7 +54,11 @@ Do not use it to generate candidates, keep a live pool, choose among unresolved 
 
 **Primary working object.** One `ATC.CallPlan : U.WorkPlan`. Each step selects a `U.Method`. A route description may help locate or constrain that Method, but remains a separate `U.MethodDescription`. Actual calls are dated `U.Work` and remain outside this planning result.
 
-**First useful move.** Recover the action and completion conditions fixed by the domain prescription, A.15.7 decision or C.11 choose-now result. Reuse an adequate known route. Otherwise, work backwards from the required result to admitted Methods and their needed inputs, then follow the proposed route forwards from the available inputs as in section 4.1. Return the supported ordered calls, applicable budget and stop or replan conditions, or the particular missing contribution or condition. Add route-description refs where they are needed to understand or qualify the route.
+**First useful move.** Recover the action and completion conditions fixed by the domain prescription, A.15.7 decision or C.11 choose-now result. Reuse an adequate known route.
+
+Otherwise, work backwards from the required result to admitted Methods and their needed inputs, then follow the proposed route forwards from the available inputs as in section 4.1.
+
+Return the supported ordered calls, applicable budget and stop or replan conditions, or the particular missing contribution or condition. Add route-description refs where they are needed to understand or qualify the route.
 
 **Not this pattern when.** Use `C.11` while fixed-option choice is unresolved, `C.19` while treatment of a live pool is unresolved, `G.5` when the current task is selector-facing result declaration, `A.15.5` for work-entry readiness, and `A.15.1` when the question is what Work actually occurred or which Method it enacted.
 
@@ -102,7 +118,11 @@ CheckpointReturn:
 ```
 
 
-`nextPlannedAction` and `recommendedNextAction` are local fields, not claims that Work has occurred. Exactly one action-basis branch is present. Add one of the branch-specific refs in C.24:4.4 only when that constraint still affects the plan. A plan with no current policy branch needs no policy placeholder. If neither output can cite its accepted action basis and state what happens next, the C.24 work is unfinished.
+`nextPlannedAction` and `recommendedNextAction` are local fields. Exactly one action-basis branch is present.
+
+Add one of the branch-specific refs in C.24:4.4 only when that constraint still affects the plan. A plan with no current policy branch needs no policy placeholder.
+
+If neither output can cite its accepted action basis and state what happens next, the C.24 work is unfinished.
 
 If the domain prescription, its applicability or the action it requires changes, reopen that domain basis before revising the plan. If the A.15.7 decision changes, is withdrawn, or no longer fixes the action, reopen the plan and return to A.15.7. If the C.11 `ChoiceResult` changes or no longer says `choose now`, return to C.11. A changed live-pool branch returns separately to C.19. Do not revise the call plan as though its action basis were still settled.
 
@@ -110,7 +130,11 @@ If the domain prescription, its applicability or the action it requires changes,
 
 Tool-using Systems may plan across web services, local programs, instruments, robots, or human-operated routes. The implementation may be an LLM agent, a search system, a conventional planner, or a fixed program. The planning problem is the same: turn a fixed action or option into an ordered and bounded route without hiding route grounding, budget, or stop logic.
 
-A local system-role kind or assignment is recorded only when that separate fact matters. When planning, revision, or a call is claimed as precise performed Work, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated Work from its performer, Method, interval, and containment facts. Add the exact A.2.1 assignment reference and F.6 only when the plan or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 attribution alone leaves the Work intact while its independent A.13/A.15.1 grounds still hold.
+A local system-role kind or assignment is recorded only when that separate fact matters.
+
+When planning, revision, or a call is claimed as precise performed Work, recover each performer's identity through A.13 and let A.15.1 independently admit the dated Work from its performer, Method, interval, and containment facts.
+
+Add the exact A.2.1 assignment reference and F.6 only when the plan or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 attribution alone leaves the Work intact while its independent A.13/A.15.1 grounds still hold.
 
 ### C.24:2 - Problem
 
@@ -134,9 +158,15 @@ We need a tool-neutral way to produce or revise one call plan under explicit bud
 - `ATC.CheckpointReturn` is a C.2.1 result episteme stating what was tested, what budget was burned, and what route action is recommended next. It is not the tested Work.
 - `ATC.CallGraphRef` cites the applicable `G.6` trace representation over actual call Work. The representation records or points to facts; it creates none of them.
 
-`actionBasis` contains exactly one of three branches. `domainPrescribedAction` identifies the applicable domain Method, the exact prescription and its required action, applicability and stop conditions. An optional intended WorkPlan may carry that intention; it establishes neither authority nor permission. No decision wrapper or ongoing Work is required for this branch. `situationResponsiveDecisionEpistemeRef` refers to an episteme identified under C.2.1 because this plan relies on an A.15.7 decision; the episteme states the selected action, deciding System, intended performer, action-changing fact, relevant Method limit, and stop or feedback condition. `fixedOptionChoiceResultRef` refers to a C.11 `ChoiceResult` whose result is `choose now`. Consuming either decision result here preserves its existing result kind.
+`actionBasis` contains exactly one of three branches:
 
-There is no catch-all `ATC.PolicyRef`. When a constraint branch is current, cite its actual object: C.19 `PoolPolicyResult` or `EmitterPolicy`, a C.19.1 probe, comparison, local-policy, or waiver result, or a domain constraint whose kind and defining pattern are named. The plan retains applicable time, compute, cost and risk ceilings and its stop or replan conditions.
+- `domainPrescribedAction` identifies the applicable domain Method, the exact prescription and its required action, applicability and stop conditions. An optional intended WorkPlan may carry that intention; it establishes neither authority nor permission. No decision wrapper or ongoing Work is required for this branch.
+- `situationResponsiveDecisionEpistemeRef` refers to an episteme identified under C.2.1 because this plan relies on an A.15.7 decision; the episteme states the selected action, deciding System, intended performer, action-changing fact, relevant Method limit, and stop or feedback condition.
+- `fixedOptionChoiceResultRef` refers to a C.11 `ChoiceResult` whose result is `choose now`.
+
+Consuming either decision result here preserves its existing result kind.
+
+There is no catch-all `ATC.PolicyRef`. When a constraint branch is current, cite its object: C.19 `PoolPolicyResult` or `EmitterPolicy`, a C.19.1 probe, comparison, local-policy, or waiver result, or a domain constraint whose kind and defining pattern are named. The plan retains applicable time, compute, cost and risk ceilings and its stop or replan conditions.
 
 #### C.24:4.1 - Owned planning operations
 
@@ -158,13 +188,19 @@ revisePlan(
 ) -> CallPlan | CheckpointReturn | neighborExit
 ```
 
-`A.3.1` supplies Method admission. The action basis fixes the action or option being planned; it does not admit the Methods chosen for plan steps. A domain-prescribed basis carries its Method, prescription, required action, applicability and stop conditions. Permission and authority remain independently governed. An A.15.7 basis keeps the selected action, deciding System, intended performer, action-changing fact, relevant domain-Method limit, and stop or feedback condition. A C.11 basis is a `ChoiceResult` whose lawful result is `choose now`; `probe again`, `reject current set`, and `reroute` do not fix an action for C.24. C.18 may supply generated candidate or front material, and C.19 may supply a live-pool treatment that informed the decision; neither record admits a Method. Comparison comes from the selected evaluation Method and, when scale preference is claimed, `C.19.1`. A.15.1 governs the actual call or observation Work; `G.6` provides a trace representation when those independently established facts, results and provenance relations must remain replayable. C.24 only constrains what the plan or checkpoint must retain for those later uses.
+`A.3.1` supplies Method admission. The action basis fixes the action or option being planned; it does not admit the Methods chosen for plan steps.
+
+A domain-prescribed basis carries its Method, prescription, required action, applicability and stop conditions. Permission and authority remain independently governed. An A.15.7 basis keeps the selected action, deciding System, intended performer, action-changing fact, relevant domain-Method limit, and stop or feedback condition. A C.11 basis is a `ChoiceResult` whose lawful result is `choose now`; `probe again`, `reject current set`, and `reroute` do not fix an action for C.24.
+
+C.18 may supply generated candidate or front material, and C.19 may supply a live-pool treatment that informed the decision; neither record admits a Method. Comparison comes from the selected evaluation Method and, when scale preference is claimed, `C.19.1`.
+
+A.15.1 governs the actual call or observation Work; `G.6` provides a trace representation when those independently established facts, results and provenance relations must remain replayable. C.24 only constrains what the plan or checkpoint must retain for those later uses.
 
 To construct the route, use the backward construction and forward check in `OPS.11.1:4.2–4.3` for this fixed action:
 
 1. **Recover usable contributions.** Read the available Methods and any needed route descriptions for the results they supply, required inputs, preconditions, relevant effects and limits. Resolve missing interface meaning from the maintained description or provider. Begin with the action's receiving completion conditions.
 2. **Work backwards from the required result.** Choose an admitted Method that can supply it. For each input not already available, find a qualified preceding Method or an available source that supplies it. Continue until the route reaches available inputs. Keep required joins and enabling conditions. If a contribution cannot be supplied, return that particular gap rather than adding an ungrounded call.
-3. **Check forwards from the available inputs.** Follow the actual proposed outputs into the next inputs. Check consequential units, scope, access, timing and other use conditions. Reconcile shared resources and applicable budget. Elapsed time is not the sum of resource expenditure when calls overlap. Reuse established interface and performance bounds where adequate.
+3. **Check forwards from the available inputs.** Follow the proposed outputs into the next inputs. Check consequential units, scope, access, timing and other use conditions. Reconcile shared resources and applicable budget. Elapsed time is not the sum of resource expenditure when calls overlap. Reuse established interface and performance bounds where adequate.
 4. **Return the route or the unresolved question.** A supported route states the calls, intermediate results, order or safe parallelism, resource assumptions and stop or replan conditions needed by the use. If an unknown condition could change feasibility or route choice, identify it and what information could settle it. Section 4.2 selects a bounded scout only when such a scout can usefully answer that question. A changed action returns to its selecting Method.
 
 
@@ -172,7 +208,10 @@ To construct the route, use the backward construction and forward check in `OPS.
 
 When the action remains fixed but an unresolved route condition could change the continuation, first use adequate interface documentation, existing observations or provider information. Select a bounded scout only when its attainable answer can change the warranted continuation enough to justify its burden, within the applicable budget and permission. State what observation would retain, revise or reject the route before planning that scout. Its actual performance can support a `CheckpointReturn`; an unfamiliar route alone does not require probing.
 
-If another probe could still change which option survives the `OptionSet`, the budget remains a C.11 probe budget and planning returns there. If changed live facts or domain-Method limits could change an A.15.7 action, return there instead. If a prescribed action loses its applicable prescription, return to the domain Method before further route planning. If the action or option remains fixed and only route shape or rollout order is uncertain, the probe uses enactment budget and its checkpoint belongs here.
+- If another probe could still change which option survives the `OptionSet`, the budget remains a C.11 probe budget and planning returns there.
+- If changed live facts or domain-Method limits could change an A.15.7 action, return there instead.
+- If a prescribed action loses its applicable prescription, return to the domain Method before further route planning.
+- If the action or option remains fixed and only route shape or rollout order is uncertain, the probe uses enactment budget and its checkpoint belongs here.
 
 `commitTrigger` states the condition for considering a checkpoint decision to end route probing and adopt an identified `CallPlan` for the fixed action. Name the proposed plan and the work it schedules in `recommendedNextAction` or in the accompanying explanation. When the trigger holds, the responsible planner considers that transition using the probe evidence, residual budget, and any required safety or assurance result; the planner may adopt the plan, require a further bounded probe, or stop. Satisfying the trigger alone does not make that decision.
 
@@ -182,11 +221,17 @@ Adopting the plan settles which route to use. Permission to perform its calls re
 
 **ATC-1 — Plan the call, not the app.** A plan step selects a Method. A route description, endpoint, service promise, trace row, or response does not become that Method or an actual call.
 
-**ATC-2 — Use the actual C.19.1 branch.** A bounded call plan with no scale/generalization claim or declared generality policy can proceed under its task, budget and guards. When that claim or policy is current, start with C.19.1's scale-claim probe. Consume its actual first result: `no scale claim yet`, `local analogy or policy`, `bounded scale comparison`, or `full Scale-Audit selected`. Only the latter two open comparison or audit work. A completed comparison of usable responses over the receiving budget range, with uncertainty and applicable floors, may then warrant a bounded preference or `no scale-based preference`. A larger slope alone is insufficient; a generality tie-break needs its separate policy basis. Keep a `BLP-waiver` separate: it is used only when a declared generality preference would otherwise decide the use, and it records rationale, the admitted review System, the direct waiver-review responsibility or missing governor, and expiry or review. If comparable evidence is absent, stop the empirical preference; do not invent a slope vector or treat a waiver as evidence.
+**ATC-2 — Use the C.19.1 branch that applies.** A bounded call plan with no scale/generalization claim or declared generality policy can proceed under its task, budget and guards. When that claim or policy is current, start with C.19.1's scale-claim probe. Consume its first result: `no scale claim yet`, `local analogy or policy`, `bounded scale comparison`, or `full Scale-Audit selected`. Only the latter two open comparison or audit work.
+
+A completed comparison of usable responses over the receiving budget range, with uncertainty and applicable floors, may then warrant a bounded preference or `no scale-based preference`. A larger slope alone is insufficient; a generality tie-break needs its separate policy basis.
+
+Keep a `BLP-waiver` separate: it is used only when a declared generality preference would otherwise decide the use, and it records rationale, the admitted review System, the direct waiver-review responsibility or missing governor, and expiry or review.
+
+If comparable evidence is absent, stop the empirical preference; do not invent a slope vector or treat a waiver as evidence.
 
 **ATC-3 — Make budgets and harm limits visible.** A `CallPlan` states its applicable planned ceilings. A `CheckpointReturn` or Work-side record states actual burn. The admitted System stops or replans when a named ceiling or safety condition is breached.
 
-**ATC-4 — Keep live-pool exploration declared.** Cite a C.19 `PoolPolicyResult` only while treatment of that still-live pool constrains this plan. Cite its exact `EmitterPolicy` only when the plan actually uses that profile; then record `explore_share`, including `0` when the current profile explicitly plans none. Do not fabricate either ref after the fixed action or option has made pool treatment irrelevant, and do not silently turn illumination or novelty telemetry into a decision criterion.
+**ATC-4 — Keep live-pool exploration declared.** Cite a C.19 `PoolPolicyResult` only while treatment of that still-live pool constrains this plan. Cite its exact `EmitterPolicy` only when the plan uses that profile; then record `explore_share`, including `0` when the current profile explicitly plans none. Do not fabricate either ref after the fixed action or option has made pool treatment irrelevant, and do not silently turn illumination or novelty telemetry into a decision criterion.
 
 **ATC-5 — Preserve the execution basis needed by later use.** An actual call claim retains its dated Work, performer, enacted Method, interval and containing-System relation under A.15.1. When later use needs a replayable account, retain the relevant plan ref, actual budget delta, inputs and outputs subject to privacy, route-description edition used, and G.6 trace reference. The plan and trace do not establish the represented facts by themselves.
 
@@ -217,7 +262,11 @@ CallPlan optional branch fields:
   assuranceResultRef?              # only for a named assurance use
 ```
 
-Each comparison tolerance names its characteristic, bearer, scale, evidence basis, and window. Graduation, rollout, or widening uses a concrete condition defined by the cited result or direct domain pattern. Plan-local ceilings and stop conditions need no policy object. If another domain constraint is current, give its field the actual result-kind name and cite its defining pattern; do not put it in a catch-all constraint ref. When a condition relies on assurance, cite the exact B.3 result and its supported scope; no universal assurance level is inherited from C.19.
+Each comparison tolerance names its characteristic, bearer, scale, evidence basis, and window. Graduation, rollout, or widening uses a condition defined by the cited result or direct domain pattern.
+
+Plan-local ceilings and stop conditions need no policy object. If another domain constraint is current, give its field the result-kind name and cite its defining pattern; do not put it in a catch-all constraint ref.
+
+When a condition relies on assurance, cite the exact B.3 result and its supported scope; no universal assurance level is inherited from C.19.
 
 #### C.24:4.5 - Causal action-use field
 
@@ -297,16 +346,24 @@ CallPlan:
   nextPlannedAction = enact_now
 ```
 
-The plan claims no call occurred. An actual call needs its independent A.15.1 grounds; add assignment-bound attribution and a trace representation when the receiving use consumes them.
+An actual call needs its independent A.15.1 grounds; add assignment-bound attribution and a trace representation when the receiving use consumes them.
 
 
-**Constructing a route from a fixed result.** In this constructed case, the action is to deliver an accepted weekly report from a named export. The maintained interface specifies millisecond timestamps and the receiving report's week boundary and time zone. Available admitted Methods extract rows, convert them to the temporal representation accepted by the aggregator, aggregate by that week, and render the report. Their planning bounds are respectively 2, 3, 4 and 1 minutes for the stipulated input size and one sequential performer; prerequisites and permission are satisfied, and 12 minutes are available.
+**Constructing a route from a fixed result.**
 
-Work backwards: the report needs aggregates; the aggregator needs compatible rows; the converter needs the export's declared timestamps; extraction supplies those rows. Check forwards that each output meets the next input conditions. The supported route needs at most 10 minutes under these bounds, so no scout is needed. If the export already supplies the required temporal representation, omit conversion and the bound becomes 7 minutes. If only 9 minutes remain while conversion is still needed, these bounds do not establish that the unchanged route will meet the deadline. It cannot be adopted on this basis when the use requires that guarantee. A tighter justified bound, a qualified faster route or prepared compatible input could change the result; their basis must be established. If the timestamp unit or week boundary is missing, recover that interface or receiving condition from its authoritative source. The magnitude of sample numbers does not establish a unit. A changed report requirement returns to the action basis before replanning.
+In this constructed case, the action is to deliver an accepted weekly report from a named export. The maintained interface specifies millisecond timestamps and the receiving report's week boundary and time zone. Available admitted Methods extract rows, convert them to the temporal representation accepted by the aggregator, aggregate by that week, and render the report. Their planning bounds are respectively 2, 3, 4 and 1 minutes for the stipulated input size and one sequential performer; prerequisites and permission are satisfied, and 12 minutes are available.
+
+Work backwards: the report needs aggregates; the aggregator needs compatible rows; the converter needs the export's declared timestamps; extraction supplies those rows. Check forwards that each output meets the next input conditions. The supported route needs at most 10 minutes under these bounds, so no scout is needed.
+
+If the export already supplies the required temporal representation, omit conversion and the bound becomes 7 minutes. If only 9 minutes remain while conversion is still needed, these bounds do not establish that the unchanged route will meet the deadline. It cannot be adopted on this basis when the use requires that guarantee. A tighter justified bound, a qualified faster route or prepared compatible input could change the result; their basis must be established.
+
+If the timestamp unit or week boundary is missing, recover that interface or receiving condition from its authoritative source. The magnitude of sample numbers does not establish a unit. A changed report requirement returns to the action basis before replanning.
 
 **Unfamiliar route.**
 
-In this constructed repair case, `ci_route_choice_09` fixes the action: produce a candidate patch and run the targeted tests. The proposed `ci_patch_plan_09` orders `EditCandidateMethod_2` and `TargetedTestMethod_7`, has an upper duration bound of 25 minutes, and stops for replanning if the reproduction changes or the tests fail twice. Adoption here requires a supported guarantee that the repair fits the enactment time left after route probing. Before adopting that plan, the maintainer probes whether the failure can be reproduced reliably enough to guide the patch. For this case, `MinimalReproductionMethod_5` requires the same failure in two consecutive runs on the fixed repository revision, with the trace and reproduction evidence collected on that revision. One such run has completed. The enactment budget covers both this route probing and the planned repair.
+In this constructed repair case, `ci_route_choice_09` fixes the action: produce a candidate patch and run the targeted tests. The proposed `ci_patch_plan_09` orders `EditCandidateMethod_2` and `TargetedTestMethod_7`, has an upper duration bound of 25 minutes, and stops for replanning if the reproduction changes or the tests fail twice. Adoption here requires a supported guarantee that the repair fits the enactment time left after route probing.
+
+Before adopting that plan, the maintainer probes whether the failure can be reproduced reliably enough to guide the patch. For this case, `MinimalReproductionMethod_5` requires the same failure in two consecutive runs on the fixed repository revision, with the trace and reproduction evidence collected on that revision. One such run has completed. The enactment budget covers both this route probing and the planned repair.
 
 ```text
 CheckpointReturn:
@@ -321,11 +378,21 @@ CheckpointReturn:
   commitTrigger = reproduction_is_stable_and_required_evidence_is_current
 ```
 
-If the repeat establishes the trigger, the maintainer decides whether to end route probing and adopt `ci_patch_plan_09`: produce the patch, then run its targeted tests. The maintainer compares the time remaining after that repeat with the plan's 25-minute upper duration bound and checks the applicable safety or assurance conditions. A 3-minute repeat leaves 27 minutes, which covers that bound. A 6-minute repeat leaves 24 minutes, so the current bound does not establish the required guarantee. A tighter justified bound for the same route, a qualified alternative route or an independently permitted budget revision may establish fit; otherwise stop. If the plan is adopted, the repair agent may start its first call only with the required work-entry permission. The checkpoint itself records neither that permission nor a performed call.
+If the repeat establishes the trigger, the maintainer decides whether to end route probing and adopt `ci_patch_plan_09`: produce the patch, then run its targeted tests. The maintainer compares the time remaining after that repeat with the plan's 25-minute upper duration bound and checks the applicable safety or assurance conditions.
 
-**Two vendor routes with one token.** Vendor A and Vendor B both publish a route called `search`. `vendor_a_search_v2` states scheme `VendorA API`, edition `2026-07`, intended use `repository text search`, and selected Method `RepositoryTextSearchMethod_3`. `vendor_b_search_v5` states scheme `VendorB agent tools`, edition `2026-08`, intended use `web source retrieval`, and selected Method `WebSourceRetrievalMethod_8`. The shared token identifies neither binding; the description fields do. An executable adapter, if used, remains distinct from the Method it implements, and its execution remains separate Work.
+A 3-minute repeat leaves 27 minutes, which covers that bound. A 6-minute repeat leaves 24 minutes, so the current bound does not establish the required guarantee. A tighter justified bound for the same route, a qualified alternative route or an independently permitted budget revision may establish fit; otherwise stop.
 
-**Scale comparison, when current.** The cheap C.19.1 probe for `BatchSearchMethod_3` and `IndexedSearchMethod_6` returns `bounded scale comparison` for the same repository-search task and `10k–100k files` window. The comparison then uses elapsed time and missed-match rate from `repo_search_benchmark_12`, including uncertainty and cost limits, and warrants a preference for `IndexedSearchMethod_6` only inside that window. If one Method is evidenced only on small text files and the other only on large mixed repositories, the comparison returns `no scale-based preference`. A project may separately cite a local policy or `BLP-waiver`; neither changes the empirical result.
+If the plan is adopted, the repair agent may start its first call only with the required work-entry permission. The checkpoint itself records neither that permission nor a performed call.
+
+**Two vendor routes with one token.**
+
+Vendor A and Vendor B both publish a route called `search`. `vendor_a_search_v2` states scheme `VendorA API`, edition `2026-07`, intended use `repository text search`, and selected Method `RepositoryTextSearchMethod_3`. `vendor_b_search_v5` states scheme `VendorB agent tools`, edition `2026-08`, intended use `web source retrieval`, and selected Method `WebSourceRetrievalMethod_8`. The shared token identifies neither binding; the description fields do. An executable adapter, if used, remains distinct from the Method it implements, and its execution remains separate Work.
+
+**Scale comparison, when current.**
+
+The cheap C.19.1 probe for `BatchSearchMethod_3` and `IndexedSearchMethod_6` returns `bounded scale comparison` for the same repository-search task and `10k–100k files` window. The comparison then uses elapsed time and missed-match rate from `repo_search_benchmark_12`, including uncertainty and cost limits, and warrants a preference for `IndexedSearchMethod_6` only inside that window.
+
+If one Method is evidenced only on small text files and the other only on large mixed repositories, the comparison returns `no scale-based preference`. A project may separately cite a local policy or `BLP-waiver`; neither changes the empirical result.
 
 **Near misses.** A route label with no recovered Method remains probe material. A plan with no Work is still intent. A trace row does not prove performer, assignment, Method, or service acceptance. A satisfied `commitTrigger` with no checkpoint decision leaves the proposed route unadopted.
 
@@ -337,13 +404,13 @@ Keep notation and vendors out of the conceptual contract. Do not average unlike 
 
 ### C.24:7 - Conformance Checklist
 
-1. Every result states exactly one grounded action basis: an applicable domain-prescribed action with its Method, prescription and conditions; an A.15.7 decision episteme; or a C.11 choose-now ChoiceResult. A WorkPlan alone supplies no permission or authority, and a prescribed action needs no fictional decision or ongoing Work.
+1. Every result states exactly one grounded action basis: an applicable domain-prescribed action with its Method, prescription and conditions; an A.15.7 decision episteme; or a C.11 choose-now ChoiceResult. A WorkPlan alone supplies no permission or authority, and a prescribed action needs no decision wrapper or ongoing Work.
 2. Every planned step names an A.3.1-admitted Method that realizes or supports the fixed action. The action basis fixes the action or option; selecting it does not establish Method identity. Route-description refs remain separate and optional.
 3. The plan records its applicable time, compute, cost or risk ceilings and stop or replan conditions.
 4. C.18 candidates or front material and C.19 live-pool treatment may inform the action basis but do not admit Methods; C.24 owns only planning and replanning results.
-5. A scale branch first cites one actual C.19.1 probe result, then any selected comparison or Scale-Audit result; a `BLP-waiver` remains separate from evidence.
+5. A scale branch first cites one C.19.1 probe result, then any selected comparison or Scale-Audit result; a `BLP-waiver` remains separate from evidence.
 6. Every vendor-bound `ATC.CallRouteDescription` identifies source scheme, exact edition, intended use, and selected Method; an arbitrary profile, adapter, or Bridge cannot substitute.
-7. Each current policy or constraint ref resolves to its actual C.19, C.19.1, B.3, or domain-defined object; a plan with no such branch remains valid.
+7. Each current policy or constraint ref resolves to its C.19, C.19.1, B.3, or domain-defined object; a plan with no such branch remains valid.
 8. A `CheckpointReturn` states tested Methods, evidence, burned and residual budget, next action, and commit trigger.
 9. Actual call claims retain their A.15.1 Work grounds. A receiving use that needs replay also retains the relevant plan, budget delta, source editions and G.6 trace refs.
 10. A causal action-use branch uses the current C.28 question, support-component, and support-result contract and grants no downstream authority.
@@ -355,7 +422,7 @@ Keep notation and vendors out of the conceptual contract. Do not average unlike 
 - **Route description as Method.** Recover the Method or keep the route in probe state.
 - **Plan as execution.** Put actual burn and call facts in Work-side results and the trace.
 - **BLP slogan as comparison.** Use C.19.1's probe and any selected comparison; keep a waiver separate or return no scale claim or no scale-based preference.
-- **Catch-all policy or profile ref.** Cite the actual PoolPolicyResult, EmitterPolicy, C.19.1 result, B.3 result, or domain-defined constraint, or omit the branch.
+- **Catch-all policy or profile ref.** Cite the PoolPolicyResult, EmitterPolicy, C.19.1 result, B.3 result, or domain-defined constraint, or omit the branch.
 - **Confidence threshold as assurance.** Use a direct condition and cite B.3 only for a named assurance use.
 - **Executable adaptation by implication.** Store the binding in a route description; identify any executable adaptation independently.
 - **Successful probe as commitment.** Keep the trigger, decision to adopt the proposed plan, and permission to perform its calls distinct; satisfying the trigger supplies no missing decision or permission.
@@ -372,10 +439,10 @@ Tool use becomes inspectable before execution: the result shows which applicable
 | --- | --- | --- |
 | ToolPlanner, EMNLP 2024, [ToolPlanner: A Tool Augmented LLM for Multi Granularity Instructions with Path Planning and Feedback](https://aclanthology.org/2024.emnlp-main.1018/) | **Adopt:** keep path planning, feedback, and replanning explicit instead of hiding them inside one call loop. | The gain is replayable route revision; the cost is a plan object. The LLM benchmark does not define universal FPF objects. |
 | PlanningArena, ACL 2025, [PlanningArena: A Modular Benchmark for Multidimensional Evaluation of Planning and Tool Learning](https://aclanthology.org/2025.acl-long.1499/) | **Adapt:** check tool selection, reasoning, user-input interpretation, and execution-relevant constraints separately instead of treating one aggregate score as plan quality. | Its scenarios do not set universal weights or safety limits. C.24 keeps only the dimensions that change this plan or checkpoint. |
-| IBM Research, ECAI 2025, [From Grounding to Planning: Benchmarking Bottlenecks in Web Agents](https://research.ibm.com/publications/from-grounding-to-planning-benchmarking-bottlenecks-in-web-agents) | **Retain with a rejected overread:** keep route grounding distinct from plan quality, but reject the claim that planning is always the dominant bottleneck. | This preserves a cheap diagnostic split without hard-coding a web-agent bottleneck order. |
+| IBM Research, ECAI 2025, [From Grounding to Planning: Benchmarking Bottlenecks in Web Agents](https://research.ibm.com/publications/from-grounding-to-planning-benchmarking-bottlenecks-in-web-agents) | **Retain:** keep route grounding distinct from plan quality, but reject the claim that planning is always the dominant bottleneck. | This preserves a cheap diagnostic split without hard-coding a web-agent bottleneck order. |
 | Aghzal et al., 2026 preprint, [Why Do LLM-based Web Agents Fail? A Hierarchical Planning Perspective](https://arxiv.org/abs/2603.14248) | **Adopt:** separate high-level planning, low-level execution, and replanning; a sound plan does not excuse failed grounding or adaptive control. | The result makes the IBM split conditional. It does not make every web-agent layer mandatory in a known fixed route. |
 | DeepPlanning, ACL 2026, [DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints](https://aclanthology.org/2026.acl-long.335/) | **Adapt:** retain global budgets, dependencies, or safe parallelism when material, and use the bounded scout and checkpoint cycle for information needed before commitment. | Long-horizon benchmarks expose degradation and efficiency trade-offs, but their task schemas do not belong in every ordinary call plan. |
-| `C.19.1` current scale-comparison sources and method | **Adopt conditionally:** use Bitter-Lesson pressure only with the actual probe and a named bearer, scale window, evidence, cost, safety, and uncertainty. | Generality is not a winner by label; local policy and waiver stay separate from empirical comparison. |
+| `C.19.1` current scale-comparison sources and method | **Adopt conditionally:** use Bitter-Lesson pressure only with the probe and a named bearer, scale window, evidence, cost, safety, and uncertainty. | Generality is not a winner by label; local policy and waiver stay separate from empirical comparison. |
 
 These contributions distinguish route grounding, plan quality, execution and replanning. Keep only fields that change the route, stop, reliance or replay. Reconsider the plan when new knowledge changes one of those decisions; another benchmark alone need not change an adequate plan.
 
@@ -385,7 +452,7 @@ These contributions distinguish route grounding, plan quality, execution and rep
 - The steering Method in `A.15.7` is used to reach the situation-responsive decision cited through `situationResponsiveDecisionEpistemeRef`; when this plan relies on the decision, its episteme has the identity conditions defined in C.2.1.
 - A C.11 `ChoiceResult` whose result is `choose now` is cited through `fixedOptionChoiceResultRef`.
 - `C.18` supplies generated candidate or front material, and `C.19` supplies `PoolPolicyResult` or `EmitterPolicy` only when live-pool treatment still constrains the plan. Neither admits a Method.
-- `C.19.1` supplies the scale-claim probe, any selected comparison or Scale-Audit result, and any separate local policy or `BLP-waiver`; C.24 invents none of them.
+- `C.19.1` supplies the scale-claim probe, any selected comparison or Scale-Audit result, and any separate local policy or `BLP-waiver`.
 - `A.15`, `A.15.1`, `A.15.2`, `A.2.1`, and `F.6` keep Method, description, plan, Work, performer, and attribution distinct.
 - `G.6` supplies the trace representation cited by `ATC.CallGraphRef`.
 - `B.3` supplies one bounded assurance result only when a named assurance use is current.

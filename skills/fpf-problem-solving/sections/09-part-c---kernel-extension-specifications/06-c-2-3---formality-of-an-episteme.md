@@ -35,7 +35,7 @@ The practical problem is therefore to establish which expression properties the 
 
 ### C.2.3:4 - Solution - Assess the required properties of expression
 
-Formality is assessed on a named expression of an episteme's content. Establish what its next use requires, recover the relevant interpretation and inferential relations, and inspect the actual expression against those requirements. Keep independent properties distinct. A shared profile makes their combination visible; a local summary is useful only when its declared criteria preserve the distinctions the receiving use needs.
+Formality is assessed on a named expression of an episteme's content. Establish what its next use requires, recover the relevant interpretation and inferential relations, and inspect the expression against those requirements. Keep independent properties distinct. A shared profile makes their combination visible; a local summary is useful only when its declared criteria preserve the distinctions the receiving use needs.
 
 #### C.2.3:4.1 - Subject and representation of the assessment
 
@@ -61,7 +61,13 @@ Compare profiles only after aligning the assessed properties, their meanings and
 
 When an order is useful, declare its domain and comparison rule. For a fixed compatible basis of independently established requirements, an expression that satisfies all requirements satisfied by another and some additional ones can dominate it under that declared rule. This does not rank the entire languages or establish a preference for every use. Preserve incomparability when different requirements are satisfied; unresolved assessment is a separate result. Use A.19:5.1.3 for an order overlay when a CharacteristicSpace is involved.
 
-A local ordinal summary is possible when its levels have nested criteria. For example, one team's specification-expression scale can require: named objects and stable terms; those conditions plus explicit acceptance predicates and their interpretation; those conditions plus expressed derivations for a specified set of obligations. The last level includes the earlier criteria by declaration. Its proof-checking evidence is still assessed separately. State the exact scale, mapping from the profile, domain and conditions before using its levels or a threshold. Another team's levels are not comparable merely because they use the same numbers.
+A local ordinal summary is possible when its levels have nested criteria. For example, one team's specification-expression scale can require:
+
+- named objects and stable terms;
+- those conditions plus explicit acceptance predicates and their interpretation;
+- those conditions plus expressed derivations for a specified set of obligations.
+
+The last level includes the earlier criteria by declaration. Its proof-checking evidence is still assessed separately. State the exact scale, mapping from the profile, domain and conditions before using its levels or a threshold. Another team's levels are not comparable merely because they use the same numbers.
 
 Arithmetic, averages and numerical differences are not licensed by an ordinal scale. Where a change is described as an increase in formality, identify the strengthened property or the established order that makes that claim meaningful. A new logic, extra subsystem or larger toolchain is not such a property by itself.
 
@@ -69,16 +75,16 @@ Arithmetic, averages and numerical differences are not licensed by an ordinal sc
 
 Express a formality requirement through what the recipient needs to do. “The invariant has explicit types and semantics, and every inference needed for this proof is expressed in the selected calculus” is a recoverable condition. If checked validity is also required, name that separate evidence requirement. A local ordinal threshold can abbreviate the expression condition only when its named scale captures the required criteria.
 
-Normative content must make the expression conditions needed for its intended use recoverable. A suitable ordinary explanation can do this without a separate score, profile document or formal proof. A richer assessment is required when a comparison, assurance argument or automated consumer actually relies on it. Neither a satisfactory formality assessment nor a threshold result grants permission to act.
+Normative content must make the expression conditions needed for its intended use recoverable. A suitable ordinary explanation can do this without a separate score, profile document or formal proof. A richer assessment is required when a comparison, assurance argument or automated consumer relies on it. Neither a satisfactory formality assessment nor a threshold result grants permission to act.
 
-Improving an expression can change its assessed properties while preserving the episteme's claim content. Correcting an erroneous assessment can leave the expression unchanged. When the receiving requirement changes, return to the property, formal apparatus, derivation or external support it actually needs; do not automatically raise every part of the expression.
+Improving an expression can change its assessed properties while preserving the episteme's claim content. Correcting an erroneous assessment can leave the expression unchanged. When the receiving requirement changes, return to the property, formal apparatus, derivation or external support it needs; do not automatically raise every part of the expression.
 
 #### C.2.3:4.5 - Assess and improve an expression
 
 1. Identify the exact claim or argument and the next operation: interpretation, execution, combination or checking. Name the required result and any applicable binding requirement.
 2. Recover the terms, domains, variable bindings, constraints, operation meanings and inferential connections needed for that operation. Section 13 supplies common distinctions, not a mandatory assessment form.
 3. Inspect the expression. State which needed properties it provides and where interpretation, an operation or an inference remains unspecified. Keep a proposed derivation separate from the result of checking it.
-4. Test the receiving condition. A sufficient expression ends this inquiry. If a missing property prevents the use, repair that part or obtain a suitable expression. Use C.19.2 to choose and configure formal apparatus when that is the actual question; use C.39 when a way to obtain the needed result still has to be developed.
+4. Test the receiving condition. A sufficient expression ends this inquiry. If a missing property prevents the use, repair that part or obtain a suitable expression. Use C.19.2 to choose and configure formal apparatus when that is the question; use C.39 when a way to obtain the needed result still has to be developed.
 5. After the change, repeat the affected use, including any connecting inference. Preserve unchanged scope and support assessments unless their own grounds changed. If the repaired expression reveals a different claim or assumption, assess that change explicitly rather than calling it a purely notational improvement.
 
 ### C.2.3:5 - Archetypal Grounding
@@ -105,21 +111,21 @@ The pattern favors recoverable expression properties over a universal prestige r
 - `CC-F-8` Changes in G, R or CL **SHALL NOT** change an expression assessment unless its own grounds change.
 - `CC-F-9` Transport **SHALL** preserve a formality assessment only when its relied-on properties and interpretation are preserved. A receiving rewrite that changes claim content, EntityOfConcern or the effective reference scheme has its own episteme identity under C.2.1.
 - `CC-F-10` Translation and bridge limitations **SHALL** remain explicit for the receiving use. Assess assurance effects under their governing models.
-- `CC-F-11` Assigned properties **SHALL** be supported by the actual terms, predicates, semantics, derivations or other assessed content. A claimed checking result needs its own evidence.
+- `CC-F-11` Assigned properties **SHALL** be supported by the terms, predicates, semantics, derivations or other assessed content. A claimed checking result needs its own evidence.
 - `CC-F-12` A named notation, prover, calculus or execution harness **SHALL NOT** by itself establish the required expression property or a successful check.
 - `CC-F-13` Publication and approval status **MUST NOT** substitute for formality.
 - `CC-F-14` A policy consuming formality **SHALL** state the required properties, or a justified threshold on a named local scale, and keep separate assurance and authority conditions explicit.
-- `CC-F-15` Language-state facets **MUST NOT** be hidden inside a formality rank. Each actual Characteristic used in a space retains its own Scale and slot.
+- `CC-F-15` Language-state facets **MUST NOT** be hidden inside a formality rank. Each Characteristic used in a space retains its own Scale and slot.
 
 ### C.2.3:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | What it looks like | Repair |
 | --- | --- | --- |
 | Status leakage | Approved content is assumed to have a precise interpretation. | Inspect the terms, conditions and inferences needed for the use. |
-| Tool prestige | A prover or fashionable foundation is named in place of a demonstrated property. | Inspect the actual expression and the relevant checking evidence. |
+| Tool prestige | A prover or fashionable foundation is named in place of a demonstrated property. | Inspect the expression and the relevant checking evidence. |
 | Appendix inflation | A formal annex is used to describe the whole argument as formally derived. | Assess the essential connecting inferences as well as the annex. |
 | One ladder for different capabilities | Execution, hybrid modeling and higher-order proof receive successively higher ranks. | Separate their contributions and test the receiving requirement. |
-| Profile as one Coordinate | Several characteristics are concealed inside one atomic F slot. | Declare the real slots or use an ordinary structured assessment. |
+| Profile as one Coordinate | Several characteristics are concealed inside one atomic F slot. | Declare a slot for each Characteristic or use an ordinary structured assessment. |
 | Assessment replaces improvement | A larger scorecard is produced while a necessary predicate remains unstated. | Supply the missing expression and repeat its receiving use. |
 
 ### C.2.3:9 - Consequences
@@ -127,7 +133,7 @@ The pattern favors recoverable expression properties over a universal prestige r
 | Benefit | Trade-off and response |
 | --- | --- |
 | Adequate expressions remain usable across different formal traditions. | Comparison needs shared property meanings, not only matching numbers. |
-| Formalization work targets the actual obstacle. | The recipient must state the operation and result that matter. |
+| Formalization work targets the obstacle. | The recipient must state the operation and result that matter. |
 | Composite arguments expose missing connections. | The assessment must include the relevant whole and its essential inferences. |
 | Expression, scope and support remain distinct. | A concise assessment sometimes needs more than one sentence; it need not become a universal form. |
 
@@ -135,7 +141,7 @@ The pattern favors recoverable expression properties over a universal prestige r
 
 Formality matters because an expression can make interpretations, operations and inferential commitments available for shared examination. The properties that enable these uses are related but not identical. A formal specification can define what is required without giving a procedure; a procedure can run without expressing a proof of the required property. A richer logic can express additional distinctions without improving an already sufficient statement of an ordinary invariant.
 
-A profile preserves these relations without pretending that every pair has one overall order. Declared local chains remain economical when their criteria are genuinely nested. Comparison then rests on the receiving operation and preserved meaning. Composition follows the same reasoning: a whole must supply the connections its result depends on, while evidence about the world retains its separate role.
+A profile preserves these relations without pretending that every pair has one overall order. Declared local chains remain economical when their criteria are nested. Comparison then rests on the receiving operation and preserved meaning. Composition follows the same reasoning: a whole must supply the connections its result depends on, while evidence about the world retains its separate role.
 
 ### C.2.3:11 - SoTA-Echoing
 
@@ -146,7 +152,7 @@ A profile preserves these relations without pretending that every pair has one o
 | [Isabelle overview](https://isabelle.in.tum.de/overview.html), maintained tool documentation, including its HOL and LCF account. | A higher-order environment supplies formal statements and checked reasoning with substantial reusable libraries. | The availability of these capabilities does not establish that a particular submitted expression or proof has passed its required checks. |
 | [The HoTT Book](https://homotopytypetheory.org/book/), authors' description of univalent foundations; foundational source. | Univalence and higher inductive types change what can be expressed and how mathematical reasoning is organized. | A different foundation is not a higher universal formality rank. Its relevance depends on the needed structures and admitted assumptions. |
 
-These sources support distinctions among actual capabilities and formal bases. They do not establish a total order from prose through execution to successive schools of logic. Apply the assessment method above to the expression and use at hand; consult the sources when their particular language or apparatus is in question.
+These sources support distinctions among capabilities and formal bases. They do not establish a total order from prose through execution to successive schools of logic. Apply the assessment method above to the expression and use at hand; consult the sources when their particular language or apparatus is in question.
 
 ### C.2.3:12 - Relations
 
@@ -170,7 +176,7 @@ A note can identify its topic and use terms consistently while leaving criteria 
 
 #### C.2.3:13.3 - Structured outline
 
-A coherent section structure helps readers find claims and their grounds. Placeholder criteria can remain inside a complete outline. Editorial organization is useful, but inspect what the filled content actually defines.
+A coherent section structure helps readers find claims and their grounds. Placeholder criteria can remain inside a complete outline. Editorial organization is useful, but inspect what the filled content defines.
 
 #### C.2.3:13.4 - Controlled narrative
 
@@ -210,7 +216,7 @@ A useful assessment explains which of these contributions cooperate. A controlle
 
 1. Which claim, declaration or argument must be understood, executed, combined or checked?
 2. Are its terms, domains and interpretation sufficient for that operation?
-3. Are the required predicates, operations and inference steps actually expressed?
+3. Are the required predicates, operations and inference steps expressed?
 4. Which calculus and assumptions matter, and what checking result is available when required?
 5. Would changing the expression property change the receiving result, or would it only add unused apparatus?
 
@@ -246,7 +252,7 @@ Formality concerns expression; G concerns applicability or claim scope. Making a
 
 #### C.2.3:15.3 - Relation to R
 
-An explicit expression can make a claim easier to test or its derivation easier to check. It does not create empirical support. A checked formal argument establishes its conclusion under the admitted premises and calculus; applying that conclusion to the world additionally needs the relevant interpretation and evidence. Assess freshness, corroboration and mapping limitations under their actual assurance models.
+An explicit expression can make a claim easier to test or its derivation easier to check. It does not create empirical support. A checked formal argument establishes its conclusion under the admitted premises and calculus; applying that conclusion to the world additionally needs the relevant interpretation and evidence. Assess freshness, corroboration and mapping limitations under their assurance models.
 
 #### C.2.3:15.4 - Relation to CL and Bridges
 
@@ -288,26 +294,26 @@ Make the expression sufficient for its intended use. State a remaining ambiguity
 
 #### C.2.3:17.2 - For reviewers
 
-Read the assessed claim or argument and its actual expression. Check its terms, predicates, semantics and required inferences, including essential connections. Recover the basis for any claimed checking result. Keep missing expression, missing proof, weak empirical support and inadequate readability distinct, because they call for different repairs. A complete template or named tool answers none of those questions alone.
+Read the assessed claim or argument and its expression. Check its terms, predicates, semantics and required inferences, including essential connections. Recover the basis for any claimed checking result. Keep missing expression, missing proof, weak empirical support and inadequate readability distinct, because they call for different repairs. A complete template or named tool answers none of those questions alone.
 
 #### C.2.3:17.3 - For integrators and assurance leads
 
-State the expression properties a receiving operation consumes. For a composition or transfer, establish their preservation through its actual connections. Reuse a declared local scale when it captures those needs; retain the underlying meaning when several participants use different scales. Apply separate scope, evidence, authority and language-state conditions where they matter.
+State the expression properties a receiving operation consumes. For a composition or transfer, establish their preservation through its connections. Reuse a declared local scale when it captures those needs; retain the underlying meaning when several participants use different scales. Apply separate scope, evidence, authority and language-state conditions where they matter.
 
 ### C.2.3:18 - Glossary and notation
 
 - **Formality assessment (F).** An assessment of selected properties of an episteme's expression, with its subject, interpretation and basis recoverable.
-- **Formality profile.** A structured account of those selected properties; when represented in a CharacteristicSpace, each actual Characteristic has its own declared slot.
+- **Formality profile.** A structured account of those selected properties; when represented in a CharacteristicSpace, each Characteristic has its own declared slot.
 - **Local ordered summary.** An explicit mapping from such assessments to a named ordinal scale whose levels have justified nested criteria.
 - **Change in formality.** A change in an assessed property or in a justified order, not a numerical difference between unrelated labels.
 - **Essential content and inference.** The content and connecting reasoning required by the assessed whole under its named composition relation; external warrant is assessed separately.
-- **Example notation.** `F: explicit typed invariant; derivation not supplied`, or a threshold on a specifically declared local specification-expression scale.
+- **Example notation.** `F: explicit typed invariant; derivation not supplied`, or a threshold on a declared local specification-expression scale.
 
 ### C.2.3:19 - Reusing an earlier assessment
 
 #### C.2.3:19.1 - Recover the assessed meaning
 
-An earlier label such as F4 or F8 is a locator for an assessment, not enough information to use it. Recover the actual expression, criteria and basis. Preserve useful properties already established, such as explicit predicates, executable semantics or a checked derivation. Do not infer a new profile or admissibility result from the number alone.
+An earlier label such as F4 or F8 is a locator for an assessment, not enough information to use it. Recover the expression, criteria and basis. Preserve useful properties already established, such as explicit predicates, executable semantics or a checked derivation. Do not infer a new profile or admissibility result from the number alone.
 
 #### C.2.3:19.2 - Reuse a sufficient result
 

@@ -5,7 +5,7 @@
 
 ### E.10.D2:1 - Problem frame
 
-Use this pattern when one passage names an exact entity and also speaks of a description, specification, view, diagram, publication, file, dashboard, model, evidence item, assurance result, gate result, or decision around it. The recognizable failure is that the wording makes one of those neighboring objects stand in for the entity, the episteme, or the authority for the next action.
+Use this pattern when one passage names an exact entity and also speaks of a description, specification, view, diagram, publication, file, dashboard, model, evidence item, assurance result, gate result, or decision around it. The wording fails when it makes one of those neighboring objects stand in for the entity, the episteme, or the authority for the next action.
 
 Begin with the receiving use:
 
@@ -27,7 +27,7 @@ The working distinctions are:
 * **specification use** is a checkable use of a description episteme, not a third peer ontology class;
 * viewpoint, view, claim scope, model-use structure, grounding, evidence, edition, publication, carrier, and representation remain neighboring objects and relations.
 
-The first result is that the reader can say what is described, which claim-bearing episteme is being used, what the receiving use needs next, and where any additional claim is governed. A formal-looking file, card, suffix, approval, or diagram gains no ontological or practical authority by appearance.
+The reader can now say what is described, which claim-bearing episteme is being used, what the receiving use needs next, and where any additional claim is governed. A formal-looking file, card, suffix, approval, or diagram gains no ontological or practical authority by appearance.
 
 ### E.10.D2:2 - Problem
 
@@ -58,7 +58,7 @@ For the current passage or artifact:
 4. **Open only a needed neighbor.** Add empirical grounding, viewpoint, view, claim scope, model-use structure, evidence, edition, specification evaluation, publication, form, carrier, currentness, or representation only when the named receiving use depends on its direct relation.
 5. **Stop at the smallest sufficient result.** Do not produce a universal description card. A readable sentence naming the receiving use, the recovered episteme, its EntityOfConcern, and the one needed neighboring relation is normally enough.
 
-The ordinary minimum is prose, not a mandatory record:
+A short statement usually suffices.
 
 > For `<receiving use>`, episteme `<E>` carries claims `<G>` about exact EntityOfConcern `<T>` under effective scheme `<R>`. `<One named neighboring relation>` is additionally current because `<the next action depends on it>`.
 
@@ -74,7 +74,7 @@ A ClaimGraph may designate several other entities as participants in relational,
 
 ##### E.10.D2:4.1.2 - Description episteme
 
-In “revise the description,” the word description can designate the same `U.Episteme` E identified under C.2.1: its claim content G states claims about its EntityOfConcern T under its effective ReferenceScheme R. The word description supplies no additional kind or identity criterion. Where the action concerns selected claims, wording, layout or describing work, recover that actual object instead. C.2.1:4.0.5 and :6 explain these readings and the specification-use boundary.
+In “revise the description,” the word description can designate the same `U.Episteme` E identified under C.2.1: its claim content G states claims about its EntityOfConcern T under its effective ReferenceScheme R. The word description supplies no additional kind or identity criterion. When the instruction concerns selected claims, wording, layout or describing work, identify the object of that action. C.2.1:4.0.5 and :6 explain these readings and the specification-use boundary.
 
 Descriptive claims may assign designations, characterize the entity, state criteria, or describe structure or behavior. A diagram may express those claims under the effective scheme and separately serve a representation use under §8.4. Their expression does not by itself establish parts or properties of the EntityOfConcern; recover those subject-side facts under their direct patterns.
 
@@ -89,7 +89,7 @@ Use a `...Spec` name only when the receiving use depends on specification force 
 
 A `BoundedModelUseStructure` is selected only when the receiving assertion, calculation, interpretation, comparison, or other use depends on the organization of admitted model-applicability, model-use, and coherence relations governed by A.1.1. The receiving use designates that exact structure through its direct relation. The structure is never a constituent of description-episteme identity merely because the episteme is used inside it.
 
-If a proposed dependent relation species genuinely requires one exact model-use structure as an identity-bearing participant, its own pattern must declare that participant and its obtaining and identity rules. E.10.D2 supplies no generic context relation as a shortcut.
+If a proposed dependent relation species requires one exact model-use structure as an identity-bearing participant, its own pattern must declare that participant and its obtaining and identity rules. E.10.D2 supplies no generic context relation as a shortcut.
 
 ##### E.10.D2:4.1.5 - Episteme about an episteme
 
@@ -101,11 +101,15 @@ When an episteme is described, use C.2.1's ordinary recursion. A review episteme
 
 **Reserved suffix.** Use `...Spec` only when the specification-use conditions above obtain. Do not use it as a synonym for detailed, official, approved, formal-looking, or stored in a schema.
 
-**Entity names.** Name the EntityOfConcern by its independently governed kind and identity: one exact local system-role kind, `Method`, `System`, `ArchitectureRelation`, `Characteristic`, `PromiseContent`, `Work`, `Episteme`, or another exact kind. Append `Description`, `Spec`, `View`, `Publication`, `Form`, `Carrier`, or `Representation` only when that neighboring object is what the name actually designates.
+**Entity names.** Name the EntityOfConcern by its independently governed kind and identity: one exact local system-role kind, `Method`, `System`, `ArchitectureRelation`, `Characteristic`, `PromiseContent`, `Work`, `Episteme`, or another exact kind. Append `Description`, `Spec`, `View`, `Publication`, `Form`, `Carrier`, or `Representation` only when that neighboring object is what the name designates.
 
 **Relation language.** Prefer the direct governing verb: a description carries claims about an entity; a publication occurrence makes an edition available; a carrier bears a form; a representation corresponds under a scheme; evidence supports an assertion; an admitted system performs work. Do not turn those verbs into one generic description link.
 
-**Ambiguous role language.** When source wording says that a description, source, standard, requirement, evidence item, publication, dashboard, or view “has a role,” recover its exact evidence-use, source-use, standard-use, requirement-use, publication-use, assurance-use, or gate-use relation. For a claimed Work use, name the exact premise, governed reference, decision-use relation, or A.6.1 operation-argument binding and its actual participants. If the claimed use needs another relation and no direct governor supplies its predicate and participants, return the exact `missing-governor` result rather than inferring a universal description-to-Work or episteme-to-Work relation. Open one exact occurrence of a directly declared `U.SystemRoleAssignment` species only when an independently admitted `U.System` is assigned to one exact local system-role kind for the bounded work; an acting holon is eligible only after that exact entity has independently passed `U.System` admission for this claim.
+**Ambiguous role language.** When source wording says that a description, source, standard, requirement, evidence item, publication, dashboard, or view “has a role,” recover its exact evidence-use, source-use, standard-use, requirement-use, publication-use, assurance-use, or gate-use relation. For a claimed Work use, name the exact premise, governed reference, decision-use relation, or A.6.1 operation-argument binding and its actual participants.
+
+If the claimed use needs another relation and no direct governor supplies its predicate and participants, return `missing-governor` rather than inferring a universal description-to-Work or episteme-to-Work relation.
+
+Open one exact occurrence of a directly declared `U.SystemRoleAssignment` species only when an independently admitted `U.System` is assigned to one exact local system-role kind for the bounded work; an acting holon is eligible only after that exact entity has independently passed `U.System` admission for this claim.
 
 ### E.10.D2:6 - Invariants
 
@@ -141,11 +145,11 @@ When an episteme is described, use C.2.1's ordinary recursion. A review episteme
 
 ### E.10.D2:8 - Neighboring use routing
 
-Open a neighboring object only after naming the receiving use and recovering the description episteme. The same episteme can participate in several of the uses below; each use retains its own subject pattern, participants, obtaining condition, and identity.
+Open a neighboring object only after naming the receiving use and recovering the description episteme. The same episteme can participate in several of the uses below. Each use retains its subject pattern, participants, obtaining condition, and identity.
 
 #### E.10.D2:8.1 - Describing use, viewpoint, and view
 
-For one named describing use, state that the use selects one exact `U.Viewpoint` episteme P when that selection changes what is read or checked. It says from which concern-bearing viewpoint the already identified episteme is being read for that use.
+For one named describing use, state that the use selects one exact `U.Viewpoint` episteme P when that selection changes what is read or checked. This selection says from which concern-bearing viewpoint the already identified episteme is being read for that use.
 
 That selection:
 
@@ -155,23 +159,31 @@ That selection:
 * selects no receiving view and performs no A.6.3 viewing construction;
 * may change between two describing uses while the episteme remains unchanged.
 
-Call the same episteme a `U.View` only when it conforms to at least one exact `U.Viewpoint` episteme under E.17.0's fixed membership rule. Direct authoring and A.6.3 source-to-receiving construction can produce an episteme but grant no view membership. A rendering, publication form, or carrier-borne display is not a view by appearance. If one use selects several viewpoints, keep each identified. Use C.13 only when that use depends on the plurality as a collection and A.22 only when it depends on their organization; do not overload one context qualification.
+Call the same episteme a `U.View` only when it conforms to at least one exact `U.Viewpoint` episteme under E.17.0's fixed membership rule. Direct authoring and A.6.3 source-to-receiving construction can produce an episteme but grant no view membership. A rendering, publication form, or carrier-borne display is not a view by appearance.
+
+If one use selects several viewpoints, keep each identified. Use C.13 only when that use depends on the plurality as a collection and A.22 only when it depends on their organization; do not overload one context qualification.
 
 #### E.10.D2:8.2 - Scope, model use, grounding, evidence, and currentness
 
 Use A.2.6 when the receiving use depends on the exact claim scope and its context-slice membership. Use A.1.1 when the receiving use depends on one exact `BoundedModelUseStructure`. Neither scope nor structure becomes a description constituent merely because a table displays it.
 
-Use C.2.1 empirical grounding only when claims must be mapped to exact observation, intervention, measurement, or test relations involving one grounding holon. Retain an adequate evidence-provenance basis; use A.10 when the source-to-use path is still implicit or a replayable account is needed; use B.3 when an assurance claim is made or its material-reliance threshold is met. Evidence, assurance, or an evaluation result can support an assertion about a description or its specification use; none makes the subject-side claim true, changes the EntityOfConcern, or mutates the description episteme. State the exact validity or reliance window when that receiving use depends on one.
+Use C.2.1 empirical grounding only when claims must be mapped to exact observation, intervention, measurement, or test relations involving one grounding holon.
+
+Retain an adequate evidence-provenance basis. Use A.10 when the source-to-use path is still implicit or a replayable account is needed. Use B.3 when an assurance claim is made or its material-reliance threshold is met.
+
+Evidence, assurance, or an evaluation result can support an assertion about a description or its specification use; none makes the subject-side claim true, changes the EntityOfConcern, or mutates the description episteme. State the exact validity or reliance window when that receiving use depends on one.
 
 Retain an adequate currentness basis for the description edition, evidence path, harness, viewpoint, publication or other neighbor. Use G.11 when a changed premise or condition may alter that basis and the receiving use needs a refresh decision. A currentness judgment applies to that exact object or relation.
 
-Where claims cross reference schemes, first recover the exact F.17 source and receiving senses and the obtaining F.9 Bridge needed by the direct use. A separate current C.2.1 claim states whether that Bridge is suitable for the named bounded use, direction, correspondence rule, and loss tolerance. For reliance on that claim, preserve the A.10 evidence-provenance path for that same use; ordinary evidence reliance requires the applicable local RelianceDisposition, while an actual named assurance claim requires its B.3 result for the same bounded assurance use. A Bridge, profile, card, or shared spelling is neither a licence nor proof that comparison, translation, or work occurred.
+Where claims cross reference schemes, first recover the exact F.17 source and receiving senses and the obtaining F.9 Bridge needed by the direct use. A separate current C.2.1 claim states whether that Bridge is suitable for the named bounded use, direction, correspondence rule, and loss tolerance.
+
+For reliance on that claim, preserve the A.10 evidence-provenance path for that same use. Ordinary evidence reliance requires the applicable local RelianceDisposition, while an actual named assurance claim requires its B.3 result for the same bounded assurance use. A Bridge, profile, card, or shared spelling is neither a licence nor proof that comparison, translation, or work occurred.
 
 #### E.10.D2:8.3 - Edition, publication, form, and carrier
 
 Changed ClaimGraph, EntityOfConcern, or effective ReferenceScheme identifies another episteme under C.2.1. When the receiving use also claims continuity between two epistemes, use the exact C.2.1 edition relation. A version label, file history, publication order, shared name, or collection membership establishes neither another episteme nor edition continuity.
 
-Use E.24.PUB to distinguish these actual publication-side objects and relations:
+Use E.24.PUB to distinguish these publication-side objects and relations:
 
 | Current object or relation | What it does | What it does not establish |
 |---|---|---|
@@ -183,7 +195,9 @@ Use E.24.PUB to distinguish these actual publication-side objects and relations:
 | independently identified carrier C | supplies an actual state or realization from which X can be recovered | episteme identity or truth of the expressed claims |
 | publication occurrence | makes the selected edition available to the declared audience for the declared bounded use | expression, bearing, access work, reading, or reliance |
 
-E.24.PUB defines `PublicationExpressionRelation(E,X,U)`, `PublicationExpressionBearingRelation(C,X)` and exact `EpistemePublicationRelation(E,A,U,X,C)`. A selected reusable F adds X/F conformance. Its form-mediated relations preserve their quantified uses with the same X as witness for availability. Rendering, printing, uploading, indexing or access-control Work remains separately governed. Plain “published episteme” names contingent participation in a publication occurrence.
+E.24.PUB defines `PublicationExpressionRelation(E,X,U)`, `PublicationExpressionBearingRelation(C,X)` and exact `EpistemePublicationRelation(E,A,U,X,C)`. A selected reusable F adds X/F conformance. Its form-mediated relations preserve their quantified uses with the same X as witness for availability.
+
+Rendering, printing, uploading, indexing or access-control Work remains separately governed. Plain “published episteme” names contingent participation in a publication occurrence.
 
 For an inspection card, distinguish the organized claims that constitute E, the filled expression X, reusable layout rules F and the sheet or file C. A publication occurrence can make E available through X and C to a maintenance team for one bounded use. Recover the object needed by the question and its actual predicate.
 
@@ -215,7 +229,7 @@ Epistemic and deontic statuses over epistemes are not `SystemRoleAssignmentState
 
 **Card and diagram case.** A filled card or diagram can be a claim-bearing episteme when its C.2.1 constitution is recoverable. Its layout can separately be a publication form or representation, and its file can be a carrier. Filling or displaying it makes no subject relation obtain.
 
-The dominant bias is substitution by the most visible object: a reader sees a file, diagram, dashboard, card, label, or status and lets it replace the independently governed entity, episteme, relation occurrence, or authority needed for the decision. The corrective move is not lexical replacement. Recover the exact object and direct relation for the named receiving use.
+The dominant bias is substitution by the most visible object: a reader sees a file, diagram, dashboard, card, label, or status and lets it replace the independently governed entity, episteme, relation occurrence, or authority needed for the decision. Replacing the word leaves that substitution unresolved. Recover the exact object and direct relation for the named receiving use.
 
 ### E.10.D2:10 - Anti-patterns and repairs
 
@@ -230,11 +244,11 @@ The dominant bias is substitution by the most visible object: a reader sees a fi
 | **Publication as authority** | Availability, an approval mark, card, dashboard, or file is treated as permission, evidence, assurance, gate result, decision, or work. | Recover the exact publication occurrence, then apply the direct governor for the stronger claim. |
 | **Carrier identity** | A file path, screen, sheet, or repository entry is treated as the episteme or EntityOfConcern. | Identify the exact carrier and bearing relation while keeping form, publication occurrence, episteme, and EntityOfConcern separate. |
 | **Status-state leakage** | Evidence, requirement, approval, or standard status becomes an assignment-state relation or runtime value. | Keep status claims on their exact epistemic or deontic subject; use A.2.5 only for one exact `U.SystemRoleAssignment` satisfying one `SystemRoleAssignmentStatePredicate`. |
-| **Episteme-role shortcut** | “The standard plays the compliance role”; “the evidence has the approval role”; “the source authorizes work.” | Recover the exact standard-use, evidence-use, source-use, assurance-use, gate-use, or publication-use relation. For a claimed Work use, name the exact premise, governed reference, decision-use relation, or A.6.1 operation-argument binding and its actual participants; if no direct governor supplies the needed predicate and participants, return the exact `missing-governor` result. Reserve `U.SystemRoleAssignment` for exact assignments of independently admitted systems to local system-role kinds. |
+| **Episteme-role shortcut** | “The standard plays the compliance role”; “the evidence has the approval role”; “the source authorizes work.” | Recover the exact standard-use, evidence-use, source-use, assurance-use, gate-use, or publication-use relation. For a claimed Work use, name the exact premise, governed reference, decision-use relation, or A.6.1 operation-argument binding and its actual participants; if no direct governor supplies the needed predicate and participants, return `missing-governor`. Reserve `U.SystemRoleAssignment` for exact assignments of independently admitted systems to local system-role kinds. |
 
 ### E.10.D2:11 - Worked examples
 
-Each example begins with a receiving use and stops after the smallest sufficient recovery. It adds no generic description record.
+Each example begins with a receiving use and stops after the smallest sufficient recovery. The examples require no generic description record.
 
 #### E.10.D2:11.1 - Description of a system-role kind
 
@@ -248,19 +262,27 @@ The receiving use needs recognizability, not specification force, so the practit
 
 A team wants to teach `BacklogRefinement`, an independently admitted `U.Method`. `BacklogRefinementMethodDescription` is one C.2.1 episteme about that exact method. A.3.2 admits the same episteme as `U.MethodDescription` only when its claims make a substantive statement about the method as a way of doing—for example its applicability, preconditions, effects, bounds, enactment concern, or internal composition.
 
-The organized claims expressed by a practice card may constitute that episteme. Its filled expression X can follow reusable form F and be borne by sheet or file C; any representation correspondence is established separately. Classify a calendar session, chat thread, or ticket update from its actual facts as a Work occurrence, assertion or record, publication-side object, or another object whose kind and applicable relation are already known; medium and label do not decide. An assertion or work record whose claim depends on the exact method-description edition may cite that edition through the exact premise, typed reference, or A.6.1 operation-argument binding required by the receiving claim. Separately, A.15.1 states the exact relation by which an actual dated Work occurrence enacts the admitted Method; the method-description episteme is not a participant of that relation. Bibliographic metadata, approval, or a method label alone grants neither method-description membership nor specification force.
+The organized claims expressed by a practice card may constitute that episteme. Its filled expression X can follow reusable form F and be borne by sheet or file C; any representation correspondence is established separately.
+
+Classify a calendar session, chat thread, or ticket update from its actual facts as a Work occurrence, assertion or record, publication-side object, or another object whose kind and applicable relation are already known; medium and label do not decide. An assertion or work record whose claim depends on the exact method-description edition may cite that edition through the exact premise, typed reference, or A.6.1 operation-argument binding required by the receiving claim.
+
+A.15.1 separately states the exact relation by which an actual dated Work occurrence enacts the admitted Method; the method-description episteme is not a participant of that relation. Bibliographic metadata, approval, or a method label alone grants neither method-description membership nor specification force.
 
 #### E.10.D2:11.3 - Architecture description and view
 
 An architecture review asks how `PaymentService` is organized for the operations concern. The architecture-description episteme has that exact holon as its EntityOfConcern; its claims identify the selected structure and state whether C.30's `ArchitectureRelation` obtains. The named review use selects the exact operations viewpoint because that concern changes which claims it reads and checks. If it did not change the reading, checking, or permitted conclusion, the use would remain named and the viewpoint selection would be omitted.
 
-The episteme is a `U.View` only if the E.17.0 conformance relation to an exact viewpoint obtains. Distinguish asserted structure in G, a graph expression X representing that structure, and reusable formation rules F. Use an adequate mathematical result with its interpretation and subject-side grounds. C.29 applies when a separate choice, transfer or reliance question about that mathematical representation remains. An ADR or dashboard creates no permission, assurance, or work relevance without the corresponding direct claim. If work uses the description, state the exact premise, reference, decision-use, or operation-argument relation through which the performed work actually consumes it.
+The episteme is a `U.View` only if the E.17.0 conformance relation to an exact viewpoint obtains. Distinguish asserted structure in G, a graph expression X representing that structure, and reusable formation rules F. Use an adequate mathematical result with its interpretation and subject-side grounds. C.29 applies when a separate choice, transfer or reliance question about that mathematical representation remains. An ADR or dashboard creates no permission, assurance, or work relevance without the corresponding direct claim.
+
+If work uses the description, state the exact premise, reference, decision-use, or operation-argument relation through which the performed work consumes it.
 
 #### E.10.D2:11.4 - Specification use
 
 An integration team needs to decide whether a service-interface description is fit to drive a conformance test. The exact interface is the EntityOfConcern of `PaymentInterfaceDescription`; its ClaimGraph states message, ordering, error, and tolerance claims under the effective interface scheme. Name the current integration-test use. Record an exact integration viewpoint only if it changes which interface claims are read or checked or what the team may conclude from the test; otherwise omit viewpoint selection.
 
-The team may call the episteme `PaymentInterfaceSpec` for this use only after the relevant claims are checkable and the exact conformance harness or validation relation is named. If viewpoint selection affects reliance, the named describing use and its exact selected viewpoint are preserved or explicitly updated. Formal notation or an approval signature can help interpret or constrain a neighboring claim, but neither substitutes for those conditions. A changed test result changes the result or reliance claim; it does not reidentify the interface or the episteme.
+The team may call the episteme `PaymentInterfaceSpec` for this use only after the relevant claims are checkable and the exact conformance harness or validation relation is named. If viewpoint selection affects reliance, the named describing use and its exact selected viewpoint are preserved or explicitly updated.
+
+Formal notation or an approval signature can help interpret or constrain a neighboring claim, but neither substitutes for those conditions. A changed test result changes the result or reliance claim; it does not reidentify the interface or the episteme.
 
 #### E.10.D2:11.5 - Publication form and carrier
 
@@ -288,7 +310,7 @@ A project note says, “The architecture dashboard approves the deployment role.
 * no checkable-claims-plus-harness basis has been named, so specification force is not admitted;
 * no gate verdict, permission relation, acting system, system-role assignment, or performed deployment work has been established.
 
-If the exact E.24.PUB objects are recoverable, the admissible next sentence is that one publication occurrence makes the selected architecture-description edition available for operations discussion through a dashboard publication form borne by an exact display or file carrier. “Approves” and “deployment role” remain non-assertable until their direct governors and case facts are named. The practitioner stops there instead of replacing the original sentence with another overloaded noun.
+If the operations audience can obtain the selected edition for its discussion from a dashboard expression on the identified display or file, and that same expression follows the dashboard form, state that this publication occurrence makes the edition available for that use. “Approves” and “deployment role” remain non-assertable until their direct governors and case facts are named. The practitioner stops there instead of replacing the original sentence with another overloaded noun.
 
 ### E.10.D2:12 - Consequences
 
@@ -297,7 +319,7 @@ If the exact E.24.PUB objects are recoverable, the admissible next sentence is t
 | Description and specification names have explicit constitution and checkability conditions. | Authors must recover one C.2.1 constitution and the receiving use instead of relying on a suffix, title, or filled context record. |
 | One episteme can remain stable across changed viewpoint selections, harnesses, evidence, publications, carriers, and representations. | Each changed neighboring use needs its own subject pattern when it matters to the next action. |
 | Publication, evidence, assurance, gate, work, state, and system-role-kind or assignment claims remain independently testable. | Prose can become slightly longer when a source phrase compressed several non-substitutable relations. |
-| The ordinary move stays small because optional neighbors are opened conditionally. | A genuinely load-bearing neighbor cannot be hidden merely to keep the sentence short. |
+| The ordinary move stays small because optional neighbors are opened conditionally. | Keep a load-bearing neighbor visible even when naming it lengthens the sentence. |
 | A local application can return an exact blocker. | Name the missing receiving use, C.2.1 discriminator, direct governor or checkability basis; resume when it can be recovered. |
 
 ### E.10.D2:13 - Rationale
@@ -315,7 +337,7 @@ Making those neighbors fields of a description tuple would erase those rules and
 | Current FPF C.2.1, E.17.0, E.24.PUB, A.1.1, A.2.6, A.10/B.3, G.11, and C.29 interfaces | Supply the authoritative local identities and direct-use boundaries for episteme, viewpoint/view, publication, model use, scope, reliance, currentness, and representation. | E.10.D2 consumes those interfaces; it does not mint a rival description ontology or copy every neighbor into one pattern. |
 | Andrei Rodin, [*Univalence and Constructive Identity*](https://arxiv.org/abs/1206.1769) (2012), used as conceptual lineage | The Venus example connects an identity judgment with its empirical grounds. FPF uses its own identity discriminators when comparing labels or presentations. | This conceptual analogy does not establish C.2.1 identity, an obtaining Bridge or admissible substitution; those require their direct FPF grounds. |
 
-Reopen this source-use synthesis when a cited standard changes the practical distinction, or when the current FPF constitution, viewpoint, publication, specification-use, Bridge, or representation interface changes enough that one of the routed decisions above would be stated differently. A newer source matters only when it changes the working decision, not merely because it is newer.
+Reopen this source-use synthesis when a cited standard changes the practical distinction, or when the current FPF constitution, viewpoint, publication, specification-use, Bridge, or representation interface changes enough that one of the routed decisions above would be stated differently. A newer source matters here only when it changes the working decision.
 
 ### E.10.D2:15 - Relations
 
@@ -323,7 +345,7 @@ Reopen this source-use synthesis when a cited standard changes the practical dis
 
 * **A.7 - Strict Distinction.** Supplies the general discipline for keeping an independently governed entity distinct from epistemic and presentation-side objects around it.
 * **C.2.1 - Episteme Identity, Constitution, Grounding, and Edition.** Supplies the exact ClaimGraph, EntityOfConcern, effective ReferenceScheme constitution and the neighboring grounding and edition relations.
-* **E.10 - Ontological Precision Restoration.** Supplies subject-first recovery and the rule that a word, field, position, or representation does not create the governed object.
+* **E.10 - Unified Lexical Rules for FPF.** Supplies subject-first recovery and the rule that a word, field, position, or representation does not create the governed object.
 
 **Coordinates with:**
 
@@ -332,7 +354,7 @@ Reopen this source-use synthesis when a cited standard changes the practical dis
 * **A.10, B.3, and G.11.** Govern evidence provenance, assurance reliance, and currentness for exact objects and relations.
 * **A.6.3.RT / A.6.3.RT.OE** govern expression construction and correspondence; **C.29** supplies the mathematical-lens branch. **A.6.2, A.6.3, A.6.4, and F.9** govern episteme morphing, source-to-receiving construction, retargeting, and cross-scheme Bridge semantics without label-only sameness.
 * **A.3.2, F.4, and F.5.** Define method-description membership, system-role-kind-description content, and naming after the exact object and local sense are recovered.
-* **A.15.1 and direct receiving-use patterns.** Govern performed work and the exact premise, reference, decision-use, or operation-argument relations through which work actually uses an episteme.
+* **A.15.1 and direct receiving-use patterns.** Govern performed work and the exact premise, reference, decision-use, or operation-argument relations through which work uses an episteme.
 
 ### E.10.D2:16 - Repair moves
 
@@ -363,7 +385,7 @@ Use these repairs on live prose; retain old spellings only as quoted source-side
 | **CC-D2-6** | Are grounding, view, scope, model-use structure, evidence, assurance, edition, currentness, publication, carrier, and representation opened only when the receiving use depends on their direct relation? |
 | **CC-D2-7** | Are publication occurrence, form, carrier, representation, file, dashboard and work-record uses recovered under their own rules, and is `U.View` membership a separately established property of the same episteme rather than another identity? |
 | **CC-D2-8** | Is current prose free of peer-layer I-D-S vocabulary, `intensional object`, `DescribedEntity*`, `EntityOfInterest`, `EoI`, `EoIClass`, mandatory context recursion, and a local DescriptionContext tuple? |
-| **CC-D2-9** | Is the word `plane` absent for this distinction, with `ReferencePlane` reserved for a subject pattern such as CHR that actually defines it? |
+| **CC-D2-9** | Is the word `plane` absent for this distinction, with `ReferencePlane` reserved for a subject pattern such as CHR that defines it? |
 | **CC-D2-10** | Is wording about the “role” of a description, source, standard, requirement, evidence item, publication, dashboard, or view resolved to its exact typed use rather than a spurious `U.SystemRoleAssignment`? |
 | **CC-D2-11** | Do systems perform work while epistemes carry claims, and are statuses, gate verdicts, permission, acceptance, assurance, and runtime state kept under their subject patterns? |
 | **CC-D2-12** | Does the application stop at the smallest sufficient result or return one exact missing-fact or missing-governor blocker? |
@@ -378,7 +400,7 @@ Use these repairs on live prose; retain old spellings only as quoted source-side
 | “The PDF is the method.” | “The method-description episteme concerns the identified Method; the PDF carrier provides an expression of that episteme, optionally following reusable publication-form rules.” |
 | “Same label, same thing.” | “Identify each entity under its own identity rule. For epistemes compare ClaimGraph, EntityOfConcern and effective scheme. Use F.9 only when a receiving claim also needs a semantic relation between exact local senses with different interpretation bases; keep the bounded-use claim and reliance separate.” |
 | “Evidence status is a role state.” | “The status claim concerns its exact epistemic or deontic subject; use `SystemRoleAssignmentStateRelation` only for one exact assignment and predicate, or the direct system-state relation for another runtime fact.” |
-| “The source has the approval role.” | “State the exact source-use, evidence-use, assurance-use, gate-use, or publication-use relation. For a claimed Work use, name the exact premise, governed reference, decision-use relation, or A.6.1 operation-argument binding and its actual participants; otherwise return the exact `missing-governor` result. None is a work-facing role assignment by wording.” |
+| “The source has the approval role.” | “State the exact source-use, evidence-use, assurance-use, gate-use, or publication-use relation. For a claimed Work use, name the exact premise, governed reference, decision-use relation, or A.6.1 operation-argument binding and its actual participants. Return `missing-governor` if no direct rule supplies the predicate and participants needed for the claimed use. None is a work-facing role assignment by wording.” |
 | “Fill the description context tuple.” | “Name the receiving use and the exact viewpoint it selects only when that selection changes what the receiver reads or checks; do not create a context tuple.” |
 | “The dashboard approves deployment.” | “An exact publication occurrence may make the architecture-description edition available through a dashboard form borne by a carrier; an exact gate verdict or permission relation is separately required for approval.” |
 
@@ -390,7 +412,7 @@ Use the short memory **use, claims, entity, scheme, one needed neighbor**:
 2. **Claims.** What exact ClaimGraph is being used?
 3. **Entity.** What exact independently identified EntityOfConcern are those claims about?
 4. **Scheme.** What effective ReferenceScheme makes the claims readable about that entity?
-5. **One needed neighbor.** Does the next action actually need a describing-use viewpoint, specification checking, grounding, scope, model-use structure, evidence, edition, currentness, publication, carrier, representation, Bridge, or work use?
+5. **One needed neighbor.** Does the next action need a describing-use viewpoint, specification checking, grounding, scope, model-use structure, evidence, edition, currentness, publication, carrier, representation, Bridge, or work use?
 6. **Stop.** Add only that direct relation, or stop after constitution if none is needed.
 
 ### E.10.D2:End

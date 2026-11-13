@@ -19,7 +19,7 @@ Capability is a System's ability to perform a work family or produce a result cl
 
 - If the current claim is which admitted System is assigned to an exact local system-role kind, use `A.2.1`.
 - If the current claim is whether that assignment is in an enactable state, use `A.2.5`.
-- If the current claim is a local system-role kind, its classification, description, designation, exact assignment, relation structure, or bundle, use `A.2`, `A.2.1`, `F.4`, `F.18`, or `A.2.7` for that exact object.
+- If the current claim is a local system-role kind, its classification, description, designation, exact assignment, relation structure, or bundle, use `A.2`, `A.2.1`, `F.4`, `F.18`, or `A.2.7` for that object.
 - If the current claim is a way of doing, use `A.3.1`; if it is an episteme describing that way, use `A.3.2`.
 - If the current claim is dated performed work or planned work, use `A.15`, `A.15.1`, or `A.15.2`.
 - If the current claim is a promise to others, use the promise-content and commitment patterns.
@@ -64,9 +64,9 @@ Use these values when the receiving comparison needs them:
 | Qualification policy and currentness assessment | The rule for relying on that support now, and its dated assessment. A qualification window may expire while actual ability remains unchanged. |
 | Capability-fit predicate | The receiving comparison of demanded work conditions and bounds with the qualified holder claim. This is distinct from the ability proposition and its support. |
 
-WorkScope describes work conditions, even when an episteme states them. That episteme's ClaimScope concerns its claims; the two scopes do not become interchangeable. Quantitative bounds and qualification policy remain separate from WorkScope membership. A time condition belongs in WorkScope only when it actually changes which work slices are covered; an evidence-age rule belongs in qualification.
+WorkScope describes work conditions, even when an episteme states them. That episteme's ClaimScope concerns its claims; the two scopes do not become interchangeable. Quantitative bounds and qualification policy remain separate from WorkScope membership. A time condition belongs in WorkScope only when it changes which work slices are covered; an evidence-age rule belongs in qualification.
 
-These distinctions permit ordinary capability use without `U.Capability` as an additional kind. A separate kind question arises only if a concrete receiving use needs another individual's continuity or a useful stable classification beyond the holder and these claims; E.24.UK then requires that question's actual identity and membership facts.
+These distinctions permit ordinary capability use without `U.Capability` as an additional kind. A separate kind question arises only if a concrete receiving use needs another individual's continuity or a useful stable classification beyond the holder and these claims; E.24.UK then requires that question's identity and membership facts.
 
 #### A.2.2:2.1 - Method-relative capability: the structure the holder can use
 
@@ -91,7 +91,7 @@ Current usable structure says what the holder can do now. **Acquired structure**
 3. **Recover sufficient support.** Reuse or obtain the evidence and source-use relations required by the receiving claim. Assess their currency under the applicable qualification policy. When sampled measurements support a bound, retain the uncertainty needed for the receiving decision; a point estimate close to its limit may leave the comparison unresolved. Missing support leaves reliance unresolved; it is not proof of inability.
 4. **Compare with the receiving demand.** Under A.2.6, test whether the declared WorkScope covers the intended `JobSlice`, whether the claimed attained bounds meet the required bounds, and whether qualification holds at the evaluation time. If a necessary condition or translation is missing, name it instead of returning a positive fit.
 5. **Apply the remaining entry conditions only when required.** Authority, assignment and assignment state, resources, interfaces, Method-side conditions and assurance retain their direct governors. Passing the capability comparison supplies only its part of the receiving decision.
-6. **Return the bounded answer.** State the supported ability and fit, the mismatch, or the exact unresolved premise. Stop when that answer suffices. A described check does not assert that Work occurred or that a proposed intervention achieved its target.
+6. **Return the bounded answer.** State the supported ability and fit, the mismatch, or the unresolved premise. Stop when that answer suffices. A described check does not assert that Work occurred or that a proposed intervention achieved its target.
 
 One possible statement-and-use record is shown below. It is a way to preserve the claims needed by this use, not a mandatory new entity or classification.
 
@@ -126,7 +126,7 @@ The record separates what is claimed about the System from the grounds for belie
 |---|---|
 | “Engineer role can approve the design.” | Treat bare *role* as an E.10.ROLE trigger. If it means classification, recover local kind `EngineerSystemRole` and a C.3.2 judgment for an admitted System. If assignment identity matters, name the assignment occurrence and its declared `U.SystemRoleAssignment` species. Do not infer permission, capability, action, responsibility, or approval Work from either claim; add a capability claim only for the measured and qualified ability of the holder System, and use the permission and performed-Work relations when those claims are made. |
 | “The robot is assigned as welder.” | Name an assignment occurrence with the robot as holder and its declared `U.SystemRoleAssignment` species, whose assigned-kind position has local domain `WelderSystemRoleKindDomain`; the occurrence supplies `WelderSystemRole` as the value admitted by that domain. Add a capability claim only if the claim also says that the robot can meet a welding envelope and measures. |
-| "The solver has the scheduling algorithm." | First identify what the possession phrase claims: a deployed-software relation, a capability statement about the solver system, a reference to exact `U.Method`, or a candidate claim-bearing episteme. Apply `A.3.2` only to the last candidate; it is `U.MethodDescription` only when its exact `EntityOfConcern` is one admitted Method and at least one substantive claim says how that Method is done. The phrase alone establishes none of these. |
+| "The solver has the scheduling algorithm." | First identify what the possession phrase claims: a deployed-software relation, a capability statement about the solver system, a reference to a `U.Method`, or a candidate claim-bearing episteme. Apply `A.3.2` only to the last candidate; it is `U.MethodDescription` only when its exact `EntityOfConcern` is one admitted Method and at least one substantive claim says how that Method is done. The phrase alone establishes none of these. |
 | "The report has evidence capability." | Recover the report's evidence-use relation. A separate capability claim needs a system that can perform evidential work. |
 | "The team did one successful run." | `U.Work` occurrence; a broader capability claim needs justified conditions, attained measures and current support. |
 | "We promise five-day close." | Promise content and commitment; the provider's qualified ability and its fit to the promised result need separate support. |
@@ -153,7 +153,9 @@ The checks are separate:
 - one exact `U.Method` supplies the method-side condition, while an independently admitted `U.MethodDescription` or work-admission episteme may state the capability threshold used by the check;
 - the ability claim states what the holder can achieve under the declared conditions and attained bounds;
 - the capability-fit condition compares that qualified claim with the current work conditions and required bounds;
-- after execution, A.13 first recovers the exact actual performer and A.15.1 independently admits the dated Work occurrence; F.6 `performedUnderAssignment(W, RA)` is added only when this capability account or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment, while actual `enactsMethod(W, M)` separately relates the Work to the exact Method;
+- after execution, A.13 first recovers the actual performer and A.15.1 independently admits the dated Work occurrence.
+
+  F.6 `performedUnderAssignment(W, RA)` is added only when this capability account or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment, while actual `enactsMethod(W, M)` separately relates the Work to the exact Method.
 
 Do not put the threshold into the local system-role-kind name.
 
@@ -176,7 +178,9 @@ SupportAndUseBasis:
   evidenceOrSourceUse: latest welding test report and calibration source relation
 ```
 
-`WeldingShiftAssignment` is a declared species under `U.SystemRoleAssignment`. Under A.2.1 its signature defines the holder and assigned-kind participant meanings and uses `WelderSystemRoleKindDomain` as the local assigned-kind domain; it adds another participant only if that participant changes the assignment predicate or occurrence identity. One occurrence has `RobotArm_A` as holder, `WelderSystemRole` as the assigned-kind value admitted by that domain, and an extent lasting while the predicate obtains without interruption for the same participants. The assertion has exact claim content, EntityOfConcern, and effective ReferenceScheme; a ClaimScope, selected slice, interval, or qualification window is stated separately when it changes interpretation or validity. None of those values is another assignment participant. A separate Work or system-locus relation may place intended or performed welding at `AssemblyLine_2026` when that relation obtains.
+`WeldingShiftAssignment` is a declared species under `U.SystemRoleAssignment`. Under A.2.1 its signature defines the holder and assigned-kind participant meanings and uses `WelderSystemRoleKindDomain` as the local assigned-kind domain; it adds another participant only if that participant changes the assignment predicate or occurrence identity. One occurrence has `RobotArm_A` as holder, `WelderSystemRole` as the assigned-kind value admitted by that domain, and an extent lasting while the predicate obtains without interruption for the same participants.
+
+The assertion has exact claim content, EntityOfConcern, and effective ReferenceScheme; a ClaimScope, selected slice, interval, or qualification window is stated separately when it changes interpretation or validity. None of those values is another assignment participant. A separate Work or system-locus relation may place intended or performed welding at `AssemblyLine_2026` when that relation obtains.
 
 If a Method step requires an obtaining `WeldingShiftAssignment` whose local kind is `WelderSystemRole` and bead-width tolerance below 0.2 mm, the assignment and capability are both checked. The declared ±0.2 mm bound does not establish the stricter tolerance, so this capability statement alone cannot support admission of the step.
 
@@ -186,7 +190,9 @@ If a Method step requires an obtaining `WeldingShiftAssignment` whose local kind
 
 Dispatch the phrase by claim: use A.2.2 only for the bounded ability; A.3.1 for the Method; a deployed-software or possession relation when that is the claim; and A.3.2 for candidate episteme `TurbineInspectionProcedure-v3` only after its `EntityOfConcern` resolves to that Method and one substantive claim says how it is done.
 
-Assignment and capability still do not prove execution. If `InspectionWork-17` actually occurs, A.13 first recovers `Robot-7` as the exact actual performer through obtaining `InspectionAssignment-17`, and A.15.1 independently admits the Work. Because this example expressly states assignment-bound attribution, F.6 afterward establishes `performedUnderAssignment(InspectionWork-17, InspectionAssignment-17)` through that same assignment; F.6 identifies neither assignment nor performer, and failed attribution leaves the Work intact. The Work occurrence separately stands in `enactsMethod(InspectionWork-17, TurbineInspection@Maintenance-2026)`.
+Assignment and capability still do not prove execution. If `InspectionWork-17` occurs, A.13 first recovers `Robot-7` as the actual performer through obtaining `InspectionAssignment-17`, and A.15.1 independently admits the Work.
+
+Because this example expressly states assignment-bound attribution, F.6 afterward establishes `performedUnderAssignment(InspectionWork-17, InspectionAssignment-17)` through that same assignment; F.6 identifies neither assignment nor performer, and failed attribution leaves the Work intact. The Work occurrence separately stands in `enactsMethod(InspectionWork-17, TurbineInspection@Maintenance-2026)`.
 
 #### A.2.2:6.2 - Software Service as Deployed System
 
@@ -208,7 +214,11 @@ The monthly-close service promise is a promise-content claim. The actual close f
 
 Consider a constructed rhythmic case with eight pulses and audible attacks at pulses 0, 3 and 6. One Method alternates left and right on audible attacks; another alternates on every pulse, including silent ones. Both yield L,R,L in the first cycle. In the next cycle, attack-wise alternation yields R,L,R, while pulse-wise alternation yields L,R,L again. The first cycle therefore cannot distinguish control of these two state-update rules.
 
-Suppose a performer draws both traces correctly and performs the second rule while following a teacher, but reverts to attack-wise alternation without that demonstration. The comparison preserves the correct explanation as a recovery result. Its capability conclusion concerns execution with the demonstration; independent control of the silent-pulse transition remains unsupported. A pulse reference may remain if the receiving performance normally provides it. If the receiving work still needs a way to obtain correct execution of the pulse-wise rule, use E.23.CDI to decide how to develop the holder's ability, supply the missing contribution through another arrangement, or combine the two. A digital controller can be compared on the same selected relation using its input/output traces, but that comparison supplies neither a human learning mechanism nor evidence that either holder acquired the rule through training.
+Suppose a performer draws both traces correctly and performs the second rule while following a teacher, but reverts to attack-wise alternation without that demonstration. The comparison preserves the correct explanation as a recovery result. Its capability conclusion concerns execution with the demonstration; independent control of the silent-pulse transition remains unsupported. A pulse reference may remain if the receiving performance normally provides it.
+
+If the receiving work still needs a way to obtain correct execution of the pulse-wise rule, use E.23.CDI to decide how to develop the holder's ability, supply the missing contribution through another arrangement, or combine the two.
+
+A digital controller can be compared on the same selected relation using its input/output traces, but that comparison supplies neither a human learning mechanism nor evidence that either holder acquired the rule through training.
 
 ### A.2.2:7 - Reconsider the Claim, Its Support or Its Fit
 
@@ -267,7 +277,7 @@ The claim is about `Cell_3`. Justify its attained bounds under the stated compon
 | System-role-kind-as-capability | “The inspector role can detect this defect.” | Treat bare *role* through E.10.ROLE; retain the exact local system-role kind and any independently obtaining assignment, then state capability for the holder System only when the bounded capability claim and current support justify it. |
 | Assignment-as-capability | "Assigned, therefore able." | Use A.2.1 for assignment and A.2.2 for the qualified holder ability. |
 | Capability attributed to a procedure | "The procedure has capability" | Keep capability with the holder system. |
-| Unjustified `U.MethodDescription` admission | Treating "the solver has the algorithm" as sufficient for `U.MethodDescription` admission. | Treat procedure or algorithm wording as a cue to one candidate episteme only when that is the actual object; admit it as `U.MethodDescription` through A.3.2 only after its exact `EntityOfConcern` is an admitted Method and a substantive claim says how that Method is done. |
+| Unjustified `U.MethodDescription` admission | Treating "the solver has the algorithm" as sufficient for `U.MethodDescription` admission. | Treat procedure or algorithm wording as a cue to one candidate episteme only when that is the object; admit it as `U.MethodDescription` through A.3.2 only after its exact `EntityOfConcern` is an admitted Method and a substantive claim says how that Method is done. |
 | Work-as-capability | "We did it once, so we can." | Keep the work occurrence; add a separate capability claim only when envelope, measures, and currentness are justified. |
 | Promise-as-capability | "The SLA is our capability." | Use promise content or commitment for what is offered; capability is the internal measured ability that makes the promise credible. |
 | Episteme-as-holder | "The report has assessment capability." | Use evidence, source, status, or assessment relation for the episteme; capability holder remains a system. |
@@ -301,7 +311,7 @@ These distinctions let practitioners check authorization, ability, method, and p
 
 For repeatable production, the strongest answer in this comparison is to retain a condition-bound description of performance and compare it with the receiving specification. The NIST/SEMATECH *e-Handbook of Statistical Methods*, [§3.4.5](https://www.itl.nist.gov/div898/handbook/ppc/section4/ppc45.htm), requires stability before this process-capability use. Its [§6.1.6](https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm) compares specification limits with the process distribution, distinguishes spread-only `Cp` from centering-sensitive `Cpk`, and treats estimation uncertainty and non-normal data separately. These sections supply the substantive practice answer and its limits, not an FPF classification of a capability holder.
 
-The serious alternative is a `Cp` width screen: it usefully answers whether the process spread could fit the tolerance if centered. For an actual job, however, the same available mean, spread and limits permit a `Cpk` comparison without another production run. Retaining the mean removes the extra centering assumption. **Adopt** that condition-sensitive comparison; **reject** a spread-only score as sufficient evidence of actual fit when centering is unresolved. This choice costs one additional comparison, while preserving the width screen's useful information.
+An alternative is a `Cp` width screen: it usefully answers whether the process spread could fit the tolerance if centered. For an actual job, however, the same available mean, spread and limits permit a `Cpk` comparison without another production run. Retaining the mean removes the extra centering assumption. **Adopt** that condition-sensitive comparison; **reject** a spread-only score as sufficient evidence of actual fit when centering is unresolved. This choice costs one additional comparison, while preserving the width screen's useful information.
 
 In a constructed drilling case, take a stable normal diameter distribution with known mean `10.04 mm` and standard deviation `0.02 mm`, and demand `9.90–10.10 mm`. Then `Cp = 1.67`, but `Cpk = 1.00`. A local rule requiring an index of at least `1.33` therefore gives different answers: the width screen passes, while the centering-sensitive fit fails. The threshold is this example's demand, not a universal NIST rule. Real sample estimates would also need the uncertainty treatment required by that rule.
 

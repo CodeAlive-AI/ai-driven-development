@@ -8,7 +8,7 @@ Use this pattern when a precise claim of agency matters: which System qualifies 
 
 Open the characteristic profile when a Grade, autonomy or profile claim consumes it, when the local kind’s criterion depends on a characteristic, or when a named assurance use requires it. Otherwise stop at the core. A characteristic-only claim about an admitted System need not assert a system-role assignment.
 
-Ordinary use of "agent" does not by itself require this precise account. Use A.12 for an acting/changed-participant question and A.15.1 for whether a particular dated Work occurrence took place.
+Ordinary use of "agent" does not by itself require this precise account. Use A.12 for an acting/changed-participant question and A.15.1 for whether a dated Work occurrence took place.
 
 ### A.13:1 - Intent & Context
 
@@ -58,7 +58,7 @@ This keeps a useful ordinary word without creating a universal `Agent` or `Agent
 #### A.13:4.2 - Local Agential System-Role Kinds and Their Specializations
 
 *   **Local agential system-role kind:** A practice or source may define a local kind whose stable work-facing contribution is goal-directed action. The kind classifies candidate Systems under its own criterion; it is not a universal root kind, an assignment occurrence, or Work.
-*   **Specialized agential system-role kinds:** A local practice may distinguish transformation, observation, planning, or another contribution when it supplies a real criterion for the distinction. An assignment to one such kind establishes only that assignment; any transformation, observation, plan, or performed Work still needs its own claim.
+*   **Specialized agential system-role kinds:** A local practice may distinguish transformation, observation, planning, or another contribution when it supplies a criterion for the distinction. An assignment to one such kind establishes only that assignment; any transformation, observation, plan, or performed Work still needs its own claim.
 
 #### A.13:4.3 - Measuring Agency: The Agency Characteristic Profile and the Spectrum
 
@@ -114,7 +114,9 @@ A local mapping may cover only the profiles needed for its communication use. St
 
 ### A.13:5 - Archetypal Grounding
 
-Start with the controller: “Thermostat_Model_T800 holds T800-home-heating-assignment as HomeHeatingController for household-temperature control.” In this constructed case, Thermostat_Model_T800 identifies one installed unit, admitted as a System, in House-H1 from 08:00 to 12:00 on Day-D. The local HomeHeatingController criterion is the ability to read the household temperature and selected set-point, command heating below the set-point and stop heating at or above it. The stipulated device behavior satisfies that criterion at the selected 21 °C set-point. The directly declared HomeHeatingAssignment species assigns a qualifying System to that kind when the household controller designation and enabled control connection obtain; both hold for T800 in that household and window.
+Start with the controller: “Thermostat_Model_T800 holds T800-home-heating-assignment as HomeHeatingController for household-temperature control.” In this constructed case, Thermostat_Model_T800 identifies one installed unit, admitted as a System, in House-H1 from 08:00 to 12:00 on Day-D.
+
+The local HomeHeatingController criterion is the ability to read the household temperature and selected set-point, command heating below the set-point and stop heating at or above it. The stipulated device behavior satisfies that criterion at the selected 21 °C set-point. The directly declared HomeHeatingAssignment species assigns a qualifying System to that kind when the household controller designation and enabled control connection obtain; both hold for T800 in that household and window.
 
 The core result is that this System qualifies for HomeHeatingController and holds the obtaining assignment for the stated use. No Grade or autonomy measurement is needed for that result. If the household withdraws the designation while the device retains its capabilities, the assignment ceases under its rule; classification may remain true, and the precise agency claim must change. The table gives further schematic variations for individual and collective Systems, then a knowledge-artifact contrast. Its local kind names and profile/Grade assumptions are illustrative.
 
@@ -153,9 +155,13 @@ Starting at `b = 0`, the three committed offsets are 0.3, 0.45 and 0.525 °C. Th
 | PER: 0.95 for uniform selection from the stated finite population | The population is 20 fully examined scripted bench episodes with valid inputs. Successful execution means completing the required reads, checks and commits of OffsetUpdateMethod-3. Nineteen histories meet it; one records a failed commit. Under uniform selection of one of these episodes, the probability is 19/20. A production-population estimate would need its own sampling and inference basis. |
 | OC: one independently adjustable target pursued in this case | The local complexity criterion counts independently adjustable target quantities. Here the target quantity is residual temperature error; the three-minute budget and offset-update bounds are fixed conditions of this comparison. The calculation establishes pursuit of this objective in the stated regime. |
 
-For the C.22.1 adaptation question, the first successful minute checkpoint is at 180 seconds, with a budget of three reference/update cycles and the stated initial model. This threshold result uses the residual-error bound; MP reports the parameter-change rate. For a local didactic convention, assign Grade 3 within this controller family when BMC covers the named perturbation set, temporal PH is positive and error-driven MP is distinguishable from zero at the declared resolution. Leave other profiles unclassified. S7 receives that label; PER and OC remain explicit profile results outside what this partial mapping summarizes.
+For the C.22.1 adaptation question, the first successful minute checkpoint is at 180 seconds, with a budget of three reference/update cycles and the stated initial model. This threshold result uses the residual-error bound; MP reports the parameter-change rate.
 
-**Changed receiving condition.** Tighten the residual-error target to 0.05 °C while keeping the three-update budget. The profile values and local Grade remain supported, but the calibration result fails the new target: even the lower residual bound after three updates is 0.055 °C. Under the same model, five updates would give an upper residual bound of 0.03875 °C. The practitioner can compare a larger adaptation budget with another update Method. The changed tolerance reopens the adaptation decision.
+For a local didactic convention, assign Grade 3 within this controller family when BMC covers the named perturbation set, temporal PH is positive and error-driven MP is distinguishable from zero at the declared resolution. Leave other profiles unclassified. S7 receives that label; PER and OC remain explicit profile results outside what this partial mapping summarizes.
+
+**Changed receiving condition.** Tighten the residual-error target to 0.05 °C while keeping the three-update budget. The profile values and local Grade remain supported, but the calibration result fails the new target: even the lower residual bound after three updates is 0.055 °C.
+
+Under the same model, five updates would give an upper residual bound of 0.03875 °C. The practitioner can compare a larger adaptation budget with another update Method. The changed tolerance reopens the adaptation decision.
 
 ### A.13:6 - Conformance Checklist
 

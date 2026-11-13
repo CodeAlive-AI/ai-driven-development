@@ -8,7 +8,7 @@
 
 Use this pattern when practitioners need reusable claims about how one Method is carried out and must keep those claims distinct from the representation, publication, approval, plan, or actual Work through which the Method is discussed or enacted. In FPF terms, decide whether an already identified `U.Episteme` is a `U.MethodDescription`: whether its `EntityOfConcern` is one admitted `U.Method` and its claims say something substantive about that Method as a way of doing.
 
-**When the reusable way is still only a candidate.** A candidate account or mined behavioural model is not a `U.MethodDescription` merely because it is coherent, executable, process-shaped, or traceable to sources. Use `A.3.1.MR` when the question is recovery from performance evidence; use `A.3.1` when a candidate is ready for Method identification. Positive `U.MethodDescription` membership requires an admitted `U.Method` as that episteme's `EntityOfConcern` and at least one substantive claim about the Method as a way of doing.
+**When the reusable way is only a candidate.** A candidate account or mined behavioural model is not a `U.MethodDescription` merely because it is coherent, executable, process-shaped, or traceable to sources. Use `A.3.1.MR` when the question is recovery from performance evidence; use `A.3.1` when a candidate is ready for Method identification. Positive `U.MethodDescription` membership requires an admitted `U.Method` as that episteme's `EntityOfConcern` and at least one substantive claim about the Method as a way of doing.
 
 **Plain reading.** A method description is the knowledge object whose claims say how one identified method is done. Code, text, or a diagram may represent those claims; a publication occurrence may make an edition available.
 
@@ -20,17 +20,19 @@ Recognizable working moments include:
 
 **Object being classified.** A.3.2 examines one already identified claim-bearing `U.Episteme` candidate and judges whether that same individual belongs to the dependent kind `U.MethodDescription`. For positive membership, the candidate episteme's C.2.1 `EntityOfConcern` must resolve to one admitted `U.Method`, and at least one of its claims must concern that Method as a way of doing. The Method is the internal subject of the episteme's claims, not a second candidate and not the object being classified. A.3.2 adds neither another episteme identity nor a binary description relation.
 
-**First useful move.** Name the candidate `U.Episteme`. Check two things: its C.2.1 `EntityOfConcern` is one admitted `U.Method`, and at least one claim says how that Method is done. If both hold, the same episteme is a `U.MethodDescription`; if either condition is false, it is not. If the basis does not establish whether a condition holds, leave membership unresolved. Only then, if someone proposes a concrete further use, write that use's criterion and result as a separate subject assertion under its predicate, with an optional subject-pattern locator. Otherwise stop at membership.
+**First useful move.** Name the candidate `U.Episteme`. Check two things: its C.2.1 `EntityOfConcern` is one admitted `U.Method`, and at least one claim says how that Method is done. If both hold, the same episteme is a `U.MethodDescription`; if either condition is false, it is not. If the basis does not establish whether a condition holds, leave membership unresolved.
+
+Only then, if someone proposes a concrete further use, write that use's criterion and result as a separate subject assertion under its predicate, with an optional subject-pattern locator. Otherwise stop at membership.
 
 **What goes wrong if missed.** A visible file or diagram is classified by its form, a mere mention is mistaken for a description, or an episteme about a relation structure among several Methods is treated as if it described one composite Method. Planning, enactment, audit, and review then rely on the wrong object.
 
 **What this buys.** The project can identify, compare, revise, and reuse claims about one Method while keeping representation, publication, planned use, enactment, and evidence use distinct.
 
-**Not this pattern when.** Do not infer membership from words such as `algorithm`, `program`, `proof`, `workflow`, `process`, `procedure`, `recipe`, or `model`. Ask what the sentence actually asserts. If its `EntityOfConcern` is not an admitted `U.Method`, or it says nothing substantive about that Method as a way of doing, `U.MethodDescription` membership does not hold. Use the subject pattern for any further claim about the actual Method, selected structure, formal declaration, work plan, dated Work, evidence use, or publication use.
+**Not this pattern when.** Do not infer membership from words such as `algorithm`, `program`, `proof`, `workflow`, `process`, `procedure`, `recipe`, or `model`. Ask what the sentence asserts. If its `EntityOfConcern` is not an admitted `U.Method`, or it says nothing substantive about that Method as a way of doing, `U.MethodDescription` membership does not hold. Use the subject pattern for any further claim about the Method, selected structure, formal declaration, work plan, dated Work, evidence use, or publication use.
 
 ### A.3.2:2 - Problem
 
-Without a precise `U.MethodDescription` distinction, projects collapse several different claims:
+Without the `U.MethodDescription` distinction, projects collapse several different claims:
 
 1. **Description as run.** A flowchart, repository, executable, lab protocol, or solver file is treated as if it were the dated work occurrence.
 2. **Description as method semantics.** A notation or file is treated as the method itself, so equivalent descriptions look like competing methods and different methods can hide behind one document name.
@@ -53,9 +55,9 @@ Without a precise `U.MethodDescription` distinction, projects collapse several d
 
 #### A.3.2:4.1 - Definition
 
-`U.MethodDescription` is a same-individual dependent kind of `U.Episteme`. Membership holds when the already identified episteme has one admitted `U.Method` as its exact `EntityOfConcern` and its claims, interpreted under the effective `ReferenceScheme`, make at least one substantive claim about that method as a way of doing. Such a claim may state the method's transformation or enactment concern, generic participant meanings, applicability, precondition, intended effect or preserved condition, bound, or internal method composition. These are claims about method semantics, not planned assignments or actual participation. Naming the method, giving bibliographic metadata, or stating approval alone does not establish membership.
+`U.MethodDescription` is a same-individual dependent kind of `U.Episteme`. Membership holds when the already identified episteme has one admitted `U.Method` as its `EntityOfConcern` and its claims, interpreted under the effective `ReferenceScheme`, make at least one substantive claim about that method as a way of doing. Such a claim may state the method's transformation or enactment concern, generic participant meanings, applicability, precondition, intended effect or preserved condition, bound, or internal method composition. These are claims about method semantics, not planned assignments or actual participation. Naming the method, giving bibliographic metadata, or stating approval alone does not establish membership.
 
-The C.2.1 claim content, exact `EntityOfConcern`, and effective `ReferenceScheme` remain the identity discriminators of the episteme; A.3.2 adds no second identity. Whether the claims are detailed, current, or reliable enough for a particular planning, enactment, comparison, audit, revision, publication, or teaching use is a separate evaluation. A new receiving use alone neither creates a new method description nor removes membership.
+The C.2.1 claim content, `EntityOfConcern`, and effective `ReferenceScheme` remain the identity discriminators of the episteme; A.3.2 adds no second identity. Whether the claims are detailed, current, or reliable enough for a particular planning, enactment, comparison, audit, revision, publication, or teaching use is a separate evaluation. A new receiving use alone neither creates a new method description nor removes membership.
 
 If someone claims empirical grounding, state the C.2.1 `EpistemeEmpiricalGroundingRelation`. If a proposed use depends on a test, write the tested claim, criterion, evidence path, and result under the evaluation, evidence, or assurance pattern that defines them. Do not add these as method-description fields or let a test change membership.
 
@@ -83,9 +85,9 @@ Name the receiving use before asking whether this method-description edition is 
 | --- | --- | --- |
 | membership only | A.3.2 judges the already identified C.2.1 episteme | no adequacy judgment; do not fabricate a receiver |
 | preparing planned work | A.15.2 is the pattern for the `U.WorkPlan`; a gate, authority, or evaluation claim stays with its own pattern | does this edition state the applicability, preconditions, parameters, bounds, and stops that the plan cites? |
-| enacting or recording dated work | A.15.1 is the pattern for the Work occurrence; its assertion may cite `methodDescriptionRef` when the edition matters | does this edition state the method claims used by that enactment or record? Actual participants and results still need their own relations. |
+| enacting or recording dated work | A.15.1 is the pattern for the Work occurrence; its assertion may cite `methodDescriptionRef` when the edition matters | does this edition state the method claims used by that enactment or record? Actual participants and results need their own relations. |
 | comparing, revising, or auditing claim content | C.2.1 identifies each episteme and any persisted comparison or audit result; the concrete evaluation, evidence, or assurance claim stays with its subject pattern | which method claims are preserved, absent, stale, or incompatible for this comparison or audit? |
-| publishing or teaching | C.2.1 is the pattern for the claim-bearing or teaching episteme; E.24.PUB is the pattern for publication occurrence and form; use A.15.1 only for teaching Work that actually happened | does this edition preserve the method distinctions needed by this audience or teaching use? |
+| publishing or teaching | C.2.1 is the pattern for the claim-bearing or teaching episteme; E.24.PUB is the pattern for publication occurrence and form; use A.15.1 only for teaching Work that happened | does this edition preserve the method distinctions needed by this audience or teaching use? |
 
 Name the concrete receiving object and the pattern that defines or tests the current claim about it.
 
@@ -119,7 +121,7 @@ When a method description is used to prepare or enact work, distinguish the plan
 1. Identify the episteme under C.2.1 and apply the membership test in §4.1.
 2. `U.WorkPlan` may cite that episteme when preparing dated work.
 3. For a claim about actual Work, use the Work-admission and conditional assignment-attribution rules in §4.1. Cite `methodDescriptionRef` only when the claim depends on that edition.
-4. The word *result* is only a cue. Ask which claim is being made: an A.6.1 application returned a value, a referent changed under A.3.4, Work produced something under A.15.PROD, or a measurement, evaluation, delivery, or acceptance occurred. If the use needs a Work-to-result relation and no exact predicate is defined for it, keep Work and result separate and state `missing-predicate[work-to-result]`. A log, trace, measurement, or result episteme supports another claim only through its evidence relation.
+4. The word *result* is only a cue. Ask which claim is being made: an A.6.1 application returned a value, a referent changed under A.3.4, Work produced something under A.15.PROD, or a measurement, evaluation, delivery, or acceptance occurred. If the use needs a Work-to-result relation and no predicate is defined for it, keep Work and result separate and state `missing-predicate[work-to-result]`. A log, trace, measurement, or result episteme supports another claim only through its evidence relation.
 
 #### A.3.2:4.5 - Method, mechanism, and formal-substrate boundary
 
@@ -129,11 +131,13 @@ For A.3.2 ask only: is this episteme about one admitted Method, and does at leas
 
 Use these claim checks instead of forcing distinct claims into one generic relation:
 
-* A **method-description membership judgment** identifies one admitted `U.Method` as the episteme's exact `EntityOfConcern` and finds at least one substantive claim about that method as a way of doing.
+* A **method-description membership judgment** identifies one admitted `U.Method` as the episteme's `EntityOfConcern` and finds at least one substantive claim about that method as a way of doing.
 * A **method claim** states the reusable way of doing, its participant meanings, applicability, conditions, intended result or preserved condition, and bounds.
 * A **formal-substrate claim** concerns the selected formal object, structure, invariant, or mathematical declaration used for reasoning.
 * A **mechanism-declaration claim** concerns the law-governed operation family, direct subject and range fields, operation algebra, law set, admissibility predicates, and applicability. Transport, audit, realization, evaluation, and evidence-use relations remain separately governed neighboring claims.
-* A **work claim** concerns one dated occurrence independently admitted under A.15.1: each performing System with its A.13 core, including an obtaining assignment of a separately declared species, the enacted Method, temporal extent, and containing System. Add F.6 attribution through that same assignment only when precise assignment-bound attribution is asserted. Add participant, resource, or work-to-referent claims only through relations that actually obtain; otherwise return the corresponding missing-governor result.
+* A **work claim** concerns one dated occurrence independently admitted under A.15.1: each performing System with its A.13 core, including an obtaining assignment of a separately declared species, the enacted Method, temporal extent, and containing System.
+
+  Add F.6 attribution through that same assignment only when precise assignment-bound attribution is asserted. Add participant, resource, or work-to-referent claims only through relations that obtain; otherwise return the corresponding missing-governor result.
 
 Connect these claims only through an admitted relation whose predicate and participants are present. If no pattern or declaration defines the needed relation, keep the objects separate rather than inferring dual typing.
 Example: a `U.MethodDescription` episteme for a scheduling Method can meet the membership rule while a MILP file represents some of its claims. Another episteme may describe the mathematical formulation; a selector mechanism may declare operations over candidate Methods; a dated solver run is Work; and an issued production-schedule episteme is a separate result. Use that result as evidence only through a current A.10 path and its bounded disposition. Without that path, keep the result available but do not rely on it as evidence for another claim.
@@ -151,21 +155,21 @@ Across these cases, identifying the claim and described Method allows different 
 
 #### A.3.2:4.7 - Declarative representation boundary
 
-Some method descriptions use declarative representations: constraint sets, graph patterns, state predicates, SQL-like queries, policy rules, e-graphs, monoidal diagrams, or process constraints. Do not translate such representations into an imperative route unless the method claim actually states an ordered action structure.
+Some method descriptions use declarative representations: constraint sets, graph patterns, state predicates, SQL-like queries, policy rules, e-graphs, monoidal diagrams, or process constraints. Do not translate such representations into an imperative route unless the method claim states an ordered action structure.
 
 Even a representation that runs or is internally consistent may have more than one sound interpretation. If a comparison depends on variables and their bindings, surrounding context, or an e-graph kept across compiler stages, say what counts as equal. Agreement under one such rule does not by itself show whether the Method is the same, whether the claims are equivalent, or whether one episteme edition continued into another.
 
-Use `C.2.P.DR` when a graph path, evidence path, query plan, predicate, checklist, publication face, or neighboring-pattern relation is treated as an action route by its form or layout alone. Recover the direct object or relation and any separate representation use, then check whether the source actually asserts the proposed order. State a genuine ordered Method or WorkPlan as its own subject assertion with the ordering and conditions its claim actually defines.
+Use `C.2.P.DR` when a graph path, evidence path, query plan, predicate, checklist, publication face, or neighboring-pattern relation is treated as an action route by its form or layout alone. Recover the direct object or relation and any separate representation use, then check whether the source asserts the proposed order. State an ordered Method or WorkPlan as its own subject assertion with the ordering and conditions its claim defines.
 
 #### A.3.2:4.8 - Composite methods and independent method structures
 
 When claims concern relations among methods, first determine whether the related methods construct one admitted composite `U.Method`.
 
-If admitted methods are actual method parts whose organization constitutes one composite method under `A.3.1` and, when order-sensitive composition is current, `B.1.5`, the composite `U.Method` remains the exact `EntityOfConcern`. A `U.MethodDescription` can make substantive claims about that composite method's internal organization without changing its object of concern to an independently selected structure.
+If admitted methods are method parts whose organization constitutes one composite method under `A.3.1` and, when order-sensitive composition is current, `B.1.5`, the composite `U.Method` remains the `EntityOfConcern`. A `U.MethodDescription` can make substantive claims about that composite method's internal organization without changing its object of concern to an independently selected structure.
 
 Description nodes, workflow boxes, code blocks, proof-script blocks, diagram paths, and table rows are representation constituents. They do not become method parts by position in the description. A constituent can participate in method-holon composition only after the recovered object is itself an admitted `U.Method`.
 
-If a selected relation structure instead connects several methods as alternatives, substitutes, fallbacks, comparison candidates, or members of a family without constituting one composite method, the selected `U.Structure` is the exact `EntityOfConcern` under `A.22` and C.2.1. The resulting episteme can describe that structure, but the present rule does not classify it as `U.MethodDescription`.
+If a selected relation structure instead connects several methods as alternatives, substitutes, fallbacks, comparison candidates, or members of a family without constituting one composite method, the selected `U.Structure` is the `EntityOfConcern` under `A.22` and C.2.1. The resulting episteme can describe that structure, but the present rule does not classify it as `U.MethodDescription`.
 
 A mathematical or graphical representation can express or analyze either case. Its correspondence to claims is recovered through A.6.3.RT and A.6.3.RT.OE, with C.29 additionally governing a mathematical lens. A work plan, work occurrence, method-family registry, or selector result also keeps its own governed object and subject pattern.
 
@@ -173,7 +177,7 @@ A mathematical or graphical representation can express or analyze either case. I
 
 Across the slices below, recognize the claim-bearing episteme before examining how it is represented or published. Ask in this order:
 
-1. Which admitted `U.Method` is its exact `EntityOfConcern`?
+1. Which admitted `U.Method` is its `EntityOfConcern`?
 2. Which claim says something substantive about that method as a way of doing?
 3. Is anyone proposing a use beyond membership? If so, name the use, its subject pattern, and the claims it needs; if not, stop at membership.
 4. When expression or availability matters, which expression conveys the claims, which reusable form does it follow when that matters, which carrier bears it, and which publication occurrence makes the selected episteme available? Use C.29 separately for a mathematical lens.
@@ -184,33 +188,39 @@ A procedure episteme about `EtchAl2O3@FabA` qualifies when its claims state how 
 
 An expression recoverable from a PDF carrier may convey one edition of those claims, and a PLC ladder representation may correspond to some of them. A `U.WorkPlan` states the planned maintenance-window preparation; tool run `W-143` is Work. A metrology result supports another claim only through the evidence relation for that claim.
 
-**Named use — preparing `WP-Etch-MW-47`.** The maintenance planner needs four claims before drafting this A.15.2 `U.WorkPlan`: the chamber is empty, inert, and leak-check complete before gas feed; the method's temperature range is 58–62 °C; calibration is no more than 24 hours old; and pressure above the stated bound stops the run. `EtchAl2O3-Description-e7` passes A.3.2 membership because it concerns `EtchAl2O3@FabA` and says how that Method is done. It also states all four needed claims. To verify that this is the current edition, the planner checks its ClaimGraph against publication occurrence `Pub-Etch-e7`, particular expression `EtchAl2O3-SOP-e7`, and carrier `FabA-MethodRepository-2026`, plus the source trace from `EtchDescriptionReleaseWork-e7`, performed under `EtchDescriptionMaintainerAssignment-4` with method trace `ClaimGraphReleaseCheck-v2`. A.10 path `EP-Etch-e7-Plan47` links those sources to claim `C-Etch-e7-has-Plan47-claims`. Its bounded use is citing e7 while drafting `WP-Etch-MW-47`; unsupported uses are gate passage, authorization, safe execution, and a claim that Work occurred. Its window reopens when e7, `RecipeWindow-Al2O3-3`, the calibration rule, or a source named in the path changes. `RelianceDisposition=pass` therefore supports citing e7 only for this drafting use.
+**Named use — preparing `WP-Etch-MW-47`.** The maintenance planner needs four claims before drafting this A.15.2 `U.WorkPlan`: the chamber is empty, inert, and leak-check complete before gas feed; the method's temperature range is 58–62 °C; calibration is no more than 24 hours old; and pressure above the stated bound stops the run. `EtchAl2O3-Description-e7` passes A.3.2 membership because it concerns `EtchAl2O3@FabA` and says how that Method is done. It also states all four needed claims.
 
-`EtchAl2O3-Description-brief-e7` still passes membership because it concerns the same Method and states the gas-feed and temperature procedure. It omits the 24-hour calibration condition and pressure stop. A.10 path `EP-Etch-brief-e7-Plan47` points to that brief edition and cannot evidence the two missing claims, so `RelianceDisposition=blocked-current-use` applies to drafting `WP-Etch-MW-47`. Reopen after selecting an edition that states both claims; until then the planner stops or selects another edition. Membership is unchanged. If the result must persist, C.2.1 is the pattern for its result episteme and ClaimGraph, A.10 is the pattern for the evidence path and disposition, and A.15.2 is the pattern for the plan.
+To verify that this is the current edition, the planner checks its ClaimGraph against publication occurrence `Pub-Etch-e7`, particular expression `EtchAl2O3-SOP-e7`, and carrier `FabA-MethodRepository-2026`, plus the source trace from `EtchDescriptionReleaseWork-e7`, performed under `EtchDescriptionMaintainerAssignment-4` with method trace `ClaimGraphReleaseCheck-v2`. A.10 path `EP-Etch-e7-Plan47` links those sources to claim `C-Etch-e7-has-Plan47-claims`.
+
+Its bounded use is citing e7 while drafting `WP-Etch-MW-47`; unsupported uses are gate passage, authorization, safe execution, and a claim that Work occurred. Its window reopens when e7, `RecipeWindow-Al2O3-3`, the calibration rule, or a source named in the path changes. `RelianceDisposition=pass` therefore supports citing e7 only for this drafting use.
+
+`EtchAl2O3-Description-brief-e7` passes membership because it concerns the same Method and states the gas-feed and temperature procedure. It omits the 24-hour calibration condition and pressure stop. A.10 path `EP-Etch-brief-e7-Plan47` points to that brief edition and cannot evidence the two missing claims, so `RelianceDisposition=blocked-current-use` applies to drafting `WP-Etch-MW-47`. Reopen after selecting an edition that states both claims; until then the planner stops or selects another edition. Membership is unchanged.
+
+If the result must persist, C.2.1 is the pattern for its result episteme and ClaimGraph, A.10 is the pattern for the evidence path and disposition, and A.15.2 is the pattern for the plan.
 
 #### A.3.2:5.2 - Optimization model
 
-A `U.MethodDescription` episteme for the scheduling Method qualifies when its exact `EntityOfConcern` is `JSScheduleV4@Plant2026` and its claims state how a production schedule is produced or evaluated. A MILP representation and an explicitly recovered solver-configuration representation can stand in declared correspondence to those claims.
+A `U.MethodDescription` episteme for the scheduling Method qualifies when its `EntityOfConcern` is `JSScheduleV4@Plant2026` and its claims state how a production schedule is produced or evaluated. A MILP representation and a recovered solver-configuration representation can stand in declared correspondence to those claims.
 
 A separate formal-substrate episteme can make claims about variables, constraints, objective, admissible solution set, or invariants. An expression of that episteme can be borne by the same carrier and follow its selected reusable form. A timestamped solver run is work. A selector mechanism, if declared, is governed by `A.6.1` and `E.20`. Solver search order does not by itself state the project work sequence.
 
 #### A.3.2:5.3 - Proof script
 
-An episteme about a reusable derivation or checking method qualifies when it identifies that `U.Method` exactly and makes a substantive claim about how the derivation or check is done. A proof-assistant script may represent those claims.
+An episteme about a reusable derivation or checking method qualifies when it identifies that `U.Method` and makes a substantive claim about how the derivation or check is done. A proof-assistant script may represent those claims.
 
 A concrete proof-checking session is work. Claims about a formal substrate, a theorem, or evidence for the theorem remain separately governed even when expressions of those epistemes are borne by the same carrier. A publication occurrence makes a selected edition available to an audience for a bounded use.
 
 #### A.3.2:5.4 - Clinical guideline
 
-A guideline episteme qualifies when its exact `EntityOfConcern` is `AcuteAppendicitisTriage@HospitalContext` and its claims state the triage Method through patient-information and resource participant meanings, exclusions, decision criteria, relevant local system-role kinds and capabilities, intended effects, or failure response. A particular expression conveys one selected edition, optionally following reusable form rules, and a publication occurrence can make that edition available; approval status remains a separate claim.
+A guideline episteme qualifies when its `EntityOfConcern` is `AcuteAppendicitisTriage@HospitalContext` and its claims state the triage Method through patient-information and resource participant meanings, exclusions, decision criteria, relevant local system-role kinds and capabilities, intended effects, or failure response. A particular expression conveys one selected edition, optionally following reusable form rules, and a publication occurrence can make that edition available; approval status remains a separate claim.
 
 Patient-specific dated enactment is a Work individual admitted under `U.Work`. If a causal claim relies on a triage disposition, diagnostic finding, or measurement result, name that premise and apply `C.28`. Merely using the guideline during Work establishes neither a causal effect nor a causal-use result.
 
 #### A.3.2:5.5 - Workflow diagram
 
-An episteme whose claims state one reusable method may qualify as `U.MethodDescription`; a BPMN or object-centric process model may represent those claims. A diagram can also represent a work plan, event-log model, or independently selected structure, so its notation does not settle the exact `EntityOfConcern`.
+An episteme whose claims state one reusable method may qualify as `U.MethodDescription`; a BPMN or object-centric process model may represent those claims. A diagram can also represent a work plan, event-log model, or independently selected structure, so its notation does not settle the `EntityOfConcern`.
 
-If readers treat the diagram as a route that tokens or workers must follow, compare that reading with the source claim. Keep an ordered sequence only when the method claim actually states one. When order comes only from layout, use `C.2.P.DR` and stop at the represented graph, constraints, objects, or events.
+If readers treat the diagram as a route that tokens or workers must follow, compare that reading with the source claim. Keep an ordered sequence only when the method claim states one. When order comes only from layout, use `C.2.P.DR` and stop at the represented graph, constraints, objects, or events.
 
 ### A.3.2:6 - Bias-Annotation
 
@@ -220,10 +230,10 @@ The following biases obscure method-description membership:
 * **description-as-method bias**: the representation is treated as the way of doing itself;
 * **description-as-work bias**: executable or operational-looking representation is treated as dated work;
 * **approval-as-proof bias**: accepted, approved, or regulated descriptions are treated as evidence, gate passage, or safe execution;
-* **notation-prestige bias**: code, formal notation, or solver files are treated as more authoritative than procedures, diagrams, or guidelines. Compare the actual method claims; representation form supplies no priority;
+* **notation-prestige bias**: code, formal notation, or solver files are treated as more authoritative than procedures, diagrams, or guidelines. Compare the method claims; representation form supplies no priority;
 * **imperative-metaphor bias**: graph, query, predicate, or process-model representation is treated as an ordered work-control claim.
 
-First identify the claim-bearing episteme, the claim it makes, and the Method it concerns. When the use needs them, keep its representation, publication occurrence, publication form, and presentation carrier separate under §4.2. State each additional plan, Work, evidence, gate, authority, mechanism, formal, or mathematical claim under its exact predicate or constraint with an optional subject-pattern locator.
+First identify the claim-bearing episteme, the claim it makes, and the Method it concerns. When the use needs them, keep its representation, publication occurrence, publication form, and presentation carrier separate under §4.2. State each additional plan, Work, evidence, gate, authority, mechanism, formal, or mathematical claim under its predicate or constraint with an optional subject-pattern locator.
 
 ### A.3.2:7 - Conformance Checklist
 
@@ -233,7 +243,9 @@ First identify the claim-bearing episteme, the claim it makes, and the Method it
 
 **CC-A3.2-3 (No automatic trigger repair).** Wording such as `algorithm`, `program`, `proof`, `solver`, `workflow`, `process`, `procedure`, `recipe`, or `model` is only a cue. Classify the episteme as `U.MethodDescription` only after its claim and admitted Method pass CC-A3.2-1 and CC-A3.2-2.
 
-**CC-A3.2-4 (Description not work).** Executable-looking material is not a Work occurrence. For a program run, proof-checking session, solver run, lab run, or clinical application, first recover every performing System's A.13 core, including its obtaining assignment of a separately declared species. Admit Work only after A.15.1 independently identifies the world-side occurrence, enacted Method, temporal extent, and containing System. Apply F.6 through that same assignment afterward only when precise assignment-bound attribution is claimed; a missing or failed F.6 attribution leaves independently admitted Work intact. Any participant, resource-use, or work-to-referent claim needs its own admitted relation; if none exists, return the corresponding missing-governor result.
+**CC-A3.2-4 (Description not work).** Executable-looking material is not a Work occurrence. For a program run, proof-checking session, solver run, lab run, or clinical application, first recover every performing System's A.13 core, including its obtaining assignment of a separately declared species. Admit Work only after A.15.1 independently identifies the world-side occurrence, enacted Method, temporal extent, and containing System.
+
+Apply F.6 through that same assignment afterward only when precise assignment-bound attribution is claimed; a missing or failed F.6 attribution leaves independently admitted Work intact. Any participant, resource-use, or work-to-referent claim needs its own admitted relation; if none exists, return the corresponding missing-governor result.
 
 **CC-A3.2-5 (Membership and additional claims).** Method-description membership does not establish WorkPlan membership, a gate decision, permission, approval, external-rule authorization, or an evidence relation. Test each additional claim under its subject pattern. The same episteme may also be a `U.WorkPlan` when it meets A.15.2.
 
@@ -251,9 +263,13 @@ First identify the claim-bearing episteme, the claim it makes, and the Method it
 
 **CC-A3.2-12 (Nondeterminism).** When a description permits search, optimization, sampling, nondeterministic choice, or learned behavior, state the admissible result range and the criterion for evaluating actual Work or results. Name the pattern or declaration that defines that criterion.
 
-**CC-A3.2-13 (Cross-context and semantic-locality boundary).** F.9 answers only whether a Bridge obtains between two `SchemeSenseCell` values. For proposed reuse, state a separate C.2.1 claim with the use, direction, correspondence rule, loss tolerance, and affirmative or negative polarity. Positive polarity alone is not reliance. Ordinary reliance with no assurance claim requires `RelianceDisposition=pass` on its A.10 path. When an actual named assurance claim about the same bounded use is current, apply B.3; positive assurance requires its `AssuranceResult` with `disposition=supported-for-use`. A direct domain rule may require that claim, but consequence alone does not create it. A negative or absent use claim, a non-passing A.10 disposition, or—when that assurance claim is current—a B.3 result that does not support the attempted use stops or narrows reuse even while the Bridge obtains. Changes of reference scheme, unit, role taxonomy, claim scope, or model use stay under their own patterns.
+**CC-A3.2-13 (Cross-context and semantic-locality boundary).** F.9 answers only whether a Bridge obtains between two `SchemeSenseCell` values. For proposed reuse, state a separate C.2.1 claim with the use, direction, correspondence rule, loss tolerance, and affirmative or negative polarity. Positive polarity alone is not reliance. Ordinary reliance with no assurance claim requires `RelianceDisposition=pass` on its A.10 path.
 
-**CC-A3.2-14 (Declarative representation).** Use `C.2.P.DR` when a declarative representation's form or layout is being treated as sufficient to prescribe work. Recover the direct object or relation and any representation use. Assert the proposed route, dispatch, call, or work-control sequence only when its exact predicate is defined and current facts satisfy it; otherwise retain the direct object or representation without that unsupported action claim.
+When a named assurance claim about the same bounded use is current, apply B.3; positive assurance requires its `AssuranceResult` with `disposition=supported-for-use`. A direct domain rule may require that claim, but consequence alone does not create it.
+
+A negative or absent use claim, a non-passing A.10 disposition, or—when that assurance claim is current—a B.3 result that does not support the attempted use stops or narrows reuse even while the Bridge obtains. Changes of reference scheme, unit, role taxonomy, claim scope, or model use stay under their own patterns.
+
+**CC-A3.2-14 (Declarative representation).** Use `C.2.P.DR` when a declarative representation's form or layout is being treated as sufficient to prescribe work. Recover the direct object or relation and any representation use. Assert the proposed route, dispatch, call, or work-control sequence only when its predicate is defined and current facts satisfy it; otherwise retain the direct object or representation without that unsupported action claim.
 
 **CC-A3.2-15 (Causal-use boundary).** A method description may describe intervention assignment, target-trial emulation, realized-counterfactual sampling, simulation, or causal-evidence collection. It does not by itself establish causal use. If causal effect, intervention success, counterfactual comparison, causal fairness, or policy effect is claimed, use `C.28`.
 
@@ -261,7 +277,7 @@ First identify the claim-bearing episteme, the claim it makes, and the Method it
 
 | Anti-pattern | Repair |
 | --- | --- |
-| Treating executable text as sufficient Method identity. | Identify the reusable way under A.3.1. When method-description membership is claimed, identify the episteme and apply §4.1. Use §4.2 for representation and publication, and A.15.1 for a run that actually happened. |
+| Treating executable text as sufficient Method identity. | Identify the reusable way under A.3.1. When method-description membership is claimed, identify the episteme and apply §4.1. Use §4.2 for representation and publication, and A.15.1 for a run that happened. |
 | Treating a Work log as a method description solely because it records a sequence. | The log is an episteme about dated Work, not the Work or a method description by being recorded. Identify the occurrence under A.15.1; cite or write a separate method description only when its claims pass the membership rule. |
 | Inferring safe use solely from protocol approval. | Separate method description, approval or gate claim, safety evidence, work plan, and work occurrence. |
 | Leaving the optimization-model claim unresolved. | Ask whether the episteme says how a scheduling Method works or instead states variables, constraints, and an objective for a formal model. Keep the solver run as Work and any selector mechanism under A.6.1/E.20. |
@@ -278,7 +294,7 @@ First identify the claim-bearing episteme, the claim it makes, and the Method it
 | Audits can distinguish description, plan, work, evidence, and authority. | The first repair is to identify the claim-bearing episteme, its Method, and one substantive method claim; replacing vocabulary is not enough. |
 | Software, lab, industrial, organizational, and proof-centered descriptions can be compared under one FPF kind. | Some files contain several current claims and must be split into several subject-pattern statements. |
 | Equivalent descriptions can be declared without forcing identical notation. | Equivalence and refinement need local criteria. |
-| Declarative representations can be used without being turned into ordered work-control claims. | An order inferred solely from form or layout needs `C.2.P.DR`; a supported order needs its subject assertion with its actual ordering and conditions. |
+| Declarative representations can be used without being turned into ordered work-control claims. | An order inferred solely from form or layout needs `C.2.P.DR`; a supported order needs its subject assertion with its ordering and conditions. |
 
 ### A.3.2:10 - Rationale
 
@@ -294,14 +310,14 @@ The pattern is representation-agnostic because a method can be described through
 | scoped-effects and handlers work | Bosman et al., ["A Calculus for Scoped Effects & Handlers"](https://arxiv.org/abs/2304.09697), 2024; Matache et al., ["Scoped Effects as Parameterized Algebraic Theories"](https://arxiv.org/abs/2402.03103), 2024; Kura, ["On Complete Categorical Semantics for Effect Handlers"](https://arxiv.org/abs/2602.03275), 2026. | Separate syntax, handling, scope, resources, equations and semantic model; executable coherence does not establish uniquely determined semantics. | An executable-looking episteme may describe a Method, but form or one working interpretation does not by itself settle its Method, mechanism law, semantic equivalence, or success. |
 | binding-aware equality representation | Tiurin, Ghica, and Hu, ["E-Graphs With Bindings"](https://arxiv.org/abs/2505.00807), 2025; Zucker, ["Lifting E-Graphs: A Function Isn't a Constant"](https://arxiv.org/abs/2606.22734), 2026. | Variables, binders, and contexts need explicit representation semantics; ordinary graph equality is not enough. | When equivalence depends on binding or context, state that comparison basis. Alpha-equivalent or graph-equivalent representations do not automatically identify one Method or equivalent claim content. |
 | persistent equality representation | Merckx et al., ["E-Graphs as a Persistent Compiler Abstraction"](https://arxiv.org/abs/2602.16707), 2026. | An equality representation may persist across several intermediate-representation levels while its expression changes. | Persistence of one representation structure across compiler stages is a representation fact; it does not establish episteme-edition continuity, Method identity, MethodDescription membership, or performed Work. |
-| Historical declarative-versus-imperative programming contrasts | Codd 1970; Kowalski 1979; Selinger et al. 1979; van der Aalst, Pesic, and Schonenberg 2009; Van Roy and Haridi 2004. | Historical lineage and comparison cases; these anchors do not establish the current state of their fields. | Older slogans remain useful recognition cues, but the reader still asks what the artifact asserts and which FPF object that claim concerns. |
+| Historical declarative-versus-imperative programming contrasts | Codd 1970; Kowalski 1979; Selinger et al. 1979; van der Aalst, Pesic, and Schonenberg 2009; Van Roy and Haridi 2004. | Historical lineage and comparison cases; these anchors do not establish the current state of their fields. | Older slogans remain useful recognition cues, but the reader asks what the artifact asserts and which FPF object that claim concerns. |
 
 ### A.3.2:12 - Relations
 
 A.3.2.DE develops the description for a declared receiving use, including explanation of the operation and its changed conditions. C.37.MP relates representations across different uses, and C.37.CF compares content and form changes. None changes MethodDescription membership merely by improving usefulness.
 
-* **Builds on:** `C.2.1` for the identity, grounding, and edition relations of the same claim-bearing episteme; `A.3.1` for the exact `U.Method`; and `E.24.UK` for admission of the dependent U-kind.
-* **Coordinates with:** `A.3.1` and `B.1.5` for actual Method parts, Method identity, and composite-Method organization; `A.22` for an independently selected structure among several Methods; `A.1.1` only when an independently selected `BoundedModelUseStructure` changes the proposed use; `F.9` only for cross-context `SchemeSenseCell` correspondence; `C.2.1` for the separate claim that one obtaining Bridge suits one bounded use; `A.10` for ordinary evidence reliance on that claim and `B.3` only when an actual named assurance claim is current; `A.6.3.RT` and `A.6.3.RT.OE` for representation correspondence, with `C.29` when a mathematical lens is used or remains to be chosen; `E.24.PUB` for publication occurrence and form; `A.15.2` for `U.WorkPlan`; `A.15.1` for `U.Work`; `A.2` for local system-role kinds and System-classification judgments; `A.2.1` for assignment species and obtaining assignment occurrences; F.6 for Work–assignment attribution; `A.2.2` for capability thresholds; and `C.28` for causal-use claims.
+* **Builds on:** `C.2.1` for the identity, grounding, and edition relations of the same claim-bearing episteme; `A.3.1` for the `U.Method`; and `E.24.UK` for admission of the dependent U-kind.
+* **Coordinates with:** `A.3.1` and `B.1.5` for Method parts, Method identity, and composite-Method organization; `A.22` for an independently selected structure among several Methods; `A.1.1` only when an independently selected `BoundedModelUseStructure` changes the proposed use; `F.9` only for cross-context `SchemeSenseCell` correspondence; `C.2.1` for the separate claim that one obtaining Bridge suits one bounded use; `A.10` for ordinary evidence reliance on that claim and `B.3` only when a named assurance claim is current; `A.6.3.RT` and `A.6.3.RT.OE` for representation correspondence, with `C.29` when a mathematical lens is used or remains to be chosen; `E.24.PUB` for publication occurrence and form; `A.15.2` for `U.WorkPlan`; `A.15.1` for `U.Work`; `A.2` for local system-role kinds and System-classification judgments; `A.2.1` for assignment species and obtaining assignment occurrences; F.6 for Work–assignment attribution; `A.2.2` for capability thresholds; and `C.28` for causal-use claims.
 * **Separates from:** `A.6.0` formal-substrate declarations; `C.29` mathematical-lens use; `A.6.1 U.Mechanism`; `E.20` mechanism-meaning introduction and revision.
 * **Uses for precision restoration:** `F.19` for the connected reading of wording that leaves the claim, object, or relation unclear; `E.10`, `E.10.ARCH`, `F.18`, or `C.2.P.DR` for a remaining word, kind, durable naming, or declarative-representation question.
 

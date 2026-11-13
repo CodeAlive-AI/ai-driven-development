@@ -8,7 +8,7 @@
 
 Use this pattern when you have an indication or a proposed measurement procedure, but the relation between that indication and the property you want to determine is missing or unsuitable. A connected voltmeter can change the voltage. A test response can depend on both capability and the assistance offered. A counter can report the remainder after a wrap rather than the total number of events.
 
-**First useful move.** Follow one indication back through the procedure that produces it. Name the sought property, the conditions under which it is sought, and one interaction or transformation that can make the indication differ from it. Express the relation supplied by that interaction. For an ideal source with open-circuit voltage E and series resistance Rs, a voltmeter of resistance Rm reads V=E\*Rm/(Rs+Rm). This already shows why the indication alone need not determine E.
+**First useful move.** Follow one indication back through the procedure that produces it. Name the sought property, the conditions under which it is sought, and one interaction or transformation that can make the indication differ from it. Express the relation supplied by that interaction. For an ideal source with open-circuit voltage E and series resistance Rs, a voltmeter of resistance Rm reads V=E\*Rm/(Rs+Rm). This shows why the indication alone need not determine E.
 
 The Method constructs a measurement relation: how sought values, the measuring arrangement and relevant influences produce an indication, or how those contributions jointly constrain the sought value. The relation may use laws, an applicable calibration, an empirical response model or their combination. It can be used to plan a measurement or interpret an obtained indication.
 
@@ -22,7 +22,7 @@ An instrument display, test outcome or log value is produced by a procedure. Its
 
 A correction copied from another arrangement can also fail. Its sign, magnitude and uncertainty depend on the relation that produced it. Unknown influences can leave multiple compatible values even when the displayed number is stable.
 
-The working difficulty is to construct enough of that relation to interpret the indication for the intended use, without modeling every possible influence or assuming that a familiar formula applies unchanged.
+The working difficulty is to construct the relation at the level of detail needed to interpret the indication for the intended use. This requires selecting consequential influences and checking whether familiar formulas apply to the stated conditions.
 
 ### C.16.MR:3 - Forces
 
@@ -141,7 +141,7 @@ Here d is the least nonnegative remainder of r1-r0 modulo 16, and k is a nonnega
 
 If the interval is known to contain fewer than 16 events, N=5. Without that bound, subtracting the displayed numbers or returning the modular difference loses possible complete wraps. A wider counter, a recorded wrap count or shorter observation intervals can supply the missing information for a later measurement.
 
-To infer elapsed time, another relation is needed: the counter must count timing ticks with an applicable tick-duration account. A counter of arbitrary work events alone measures no duration. This identifies a missing relation rather than inventing one from the numerical display.
+To infer elapsed time, another relation is needed: the counter must count timing ticks with an applicable tick-duration account. A counter of arbitrary work events alone measures no duration. This identifies a missing relation.
 
 ### C.16.MR:6 - Bias-Annotation
 
@@ -169,7 +169,7 @@ The construction can be shared across human, organizational and machine measurem
 | Fill an unknown influence with zero | A numerical answer hides unresolved alternatives. | Keep the influence unknown and use available bounds or a justified distribution. |
 | Treat expected response as an error-free observed proportion | The inferred population property loses sampling uncertainty. | Keep the response model and sampling inference distinct. |
 | Repeat measurements to remove structural ambiguity | The same indication can still fit different sought values. | Change the relation or observation that distinguishes those values. |
-| Model every conceivable influence before answering | The work expands without changing the result. | Test the consequence of the influence for the intended use and stop with an adequate result. |
+| Continue modeling an influence once its contribution has been shown to be negligible for the intended use | The work expands without changing the result. | Test the consequence of the influence for the intended use and stop with an adequate result. |
 
 ### C.16.MR:9 - Consequences
 
@@ -187,13 +187,13 @@ Physical interaction, mathematical expression and computational readout particip
 
 ### C.16.MR:11 - SoTA-Echoing
 
-The working question is to connect an indication to the property needed by the task. The selected construction follows the indication-producing procedure and includes its consequential interactions and transformations. A serious alternative is to reuse a supplied direct calibration or conversion. That alternative saves derivation when it already applies to the current arrangement and range. The present Method is needed when a changed interaction, procedure or target leaves that relation incomplete.
+The working question is to connect an indication to the property needed by the task. The selected construction follows the indication-producing procedure and includes its consequential interactions and transformations. An alternative is to reuse a supplied direct calibration or conversion. That alternative saves derivation when it already applies to the current arrangement and range. The present Method is needed when a changed interaction, procedure or target leaves that relation incomplete.
 
 The voltmeter case exhibits the trade-off. Reading V directly is sufficient for the connected terminal voltage in the ideal model. Recovering the open-circuit value adds the source resistance and loading relation; it changes the answer from 5 to 10 volts in the worked case. At a sufficiently small resistance ratio, an available loading bound can justify the simpler use. More detail is valuable through that changed interpretation.
 
 [GUM-6:2020, §§7, 9-10](https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf) develops measurement models from a principle, empirical information and effects of implementation. **Adapt:** :4.2-:4.4 combine those contributions, locate an influence where it acts, and retain unknown effects when no useful correction is available. The guide concerns quantity measurement; the assessment and counter constructions here use their separately stated response and operation models.
 
-[Dounas-Frazer and Lewandowski (2018), §2](https://arxiv.org/pdf/1805.10334), distinguishes the investigated phenomenon, measuring equipment and their models. **Adapt:** :4.1-:4.2 recover the measurement contribution, while :4.5 preserves the separate model and arrangement repairs. The source studies experimental physics education; this cross-practice construction does not claim that its educational findings establish transfer to all agents or domains.
+[Dounas-Frazer and Lewandowski (2018), §2](https://arxiv.org/pdf/1805.10334), distinguishes the investigated phenomenon, measuring equipment and their models. **Adapt:** :4.1-:4.2 recover the measurement contribution, while :4.5 preserves the separate model and arrangement repairs. The source studies experimental physics education.
 
 The common procedure is a methodological synthesis. The worked cases are constructed under their stated conditions. Reopen the construction choice when a supplied calibration achieves the same interpretation with less work, or when a newly consequential interaction or response condition defeats the existing relation. Detailed uncertainty propagation, calibration design and model identification remain substantial specialized Methods.
 

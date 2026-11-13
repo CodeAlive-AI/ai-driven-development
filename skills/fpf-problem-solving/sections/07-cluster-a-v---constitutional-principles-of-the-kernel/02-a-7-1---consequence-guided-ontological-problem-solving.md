@@ -6,19 +6,23 @@
 
 ### A.7.1:0 - Use this when
 
-Use this pattern when a clear or apparently clear engineering claim produces the wrong action, identity, dependence, obtaining, responsibility, or projection consequence, and a typed or constructive distinction may repair it. One grounded counterexample or one subject-pattern invariant can trigger the work; you do not need two polished alternative ontologies before starting.
+Use this pattern when a clear or apparently clear engineering claim produces the wrong action, identity, dependence, obtaining, responsibility, or projection consequence, and a typed or constructive distinction may repair it. One grounded counterexample or one subject-pattern invariant can trigger the work; you do not need two alternative ontologies before starting.
 
 The first useful move is to state the affected engineering result and the smallest defeated or disputed claim, then enter the first diagnostic locus that can change that result. Stop as soon as an admitted working account determines the next move truthfully.
 
 **Not this pattern when.** If the blocker is missing observation or evidence, reopen the domain or evidence question and its predicate. If wording alone hides the distinction, use `F.19`, with `C.2.P` or `E.10` for a remaining semantic question. If the problem is a material premise conflict between FPF methods, use `A.7.2`. A proposed new framework pattern or U-kind follows the applicable `E.24` or `E.24.UK` admission, with `A.8` and `A.11`; a local clarification or saved result alone requires neither proposal.
 
-The primary reader is a domain engineer or ontology analyst responsible for the affected use. The procedural content describes the consequence-guided ontology-analysis Method developed in §4. To assert `U.MethodDescription` membership for a pattern episteme, identify that admitted Method as its exact EntityOfConcern and satisfy A.3.2. When actual ontology-analysis Work is claimed, recover the performing `U.System` through A.13 and let A.15.1 independently admit the dated `U.Work` and enacted Method. Add F.6 only when the analysis result also consumes precise assignment-bound attribution through the same obtaining A.13 assignment; missing or failed attribution alone leaves independently admitted Work intact. Recheck any admission premise invalidated by the same finding and its dependent conclusions under A.15.1. The reader, performer System, description episteme, Method, any assignment and attribution, Work, and returned engineering result remain separate.
+The primary reader is a domain engineer or ontology analyst responsible for the affected use. The procedural content describes the consequence-guided ontology-analysis Method developed in §4. To assert `U.MethodDescription` membership for a pattern episteme, identify that admitted Method as its EntityOfConcern and satisfy A.3.2.
+
+When ontology-analysis Work is claimed, recover the performing `U.System` through A.13 and let A.15.1 independently admit the dated `U.Work` and enacted Method. Add F.6 only when the analysis result also consumes assignment-bound attribution through the same obtaining A.13 assignment; missing or failed attribution alone leaves independently admitted Work intact. Recheck any admission premise invalidated by the same finding and its dependent conclusions under A.15.1.
+
+The reader, performer System, description episteme, Method, any assignment and attribution, Work, and returned engineering result remain separate.
 
 ### A.7.1:1 - Problem frame
 
 A maintenance sentence can be lexically clear and still merge two relation occurrences across removal and reinstallation. A responsibility claim can use a plausible system-role word or assignment while omitting the direct responsibility predicate and its participants. A graph or logical type can look exact while omitting the construction that changes the action. In these situations, a glossary is too little and an exhaustive ontology exercise is too much.
 
-The governed concern is the smallest ontology-analysis application that changes one declared engineering use, result, or guarantee. The ordinary product is a repaired statement, Method choice, action, subject-qualified result, or explicit blocker—not an ontology artifact by default.
+The concern is the smallest ontology-analysis application that changes one declared engineering use, result, or guarantee. The ordinary product is a repaired statement, Method choice, action, subject-qualified result, or explicit blocker—not an ontology artifact by default.
 
 ### A.7.1:2 - Problem
 
@@ -42,7 +46,11 @@ The practical question is which distinction changes the engineering move at the 
 
 The analysis described here narrows C.19.2's method claims to consequence-guided ontology questions. Retain the declared use, problem-facing result, claimed guarantee, horizon and useful threshold. Keep the description episteme, described Method, reader and result distinct; add the performer, assignment and dated Work basis in §0 only when such a Work is asserted. This relation between descriptions alone establishes no relation occurrence between their described Methods.
 
-The normal short path uses the already selected A.7.1 analysis method as its one current apparatus. It begins from an engineering subject, subject predicate, and the pattern content locating that predicate; subject and predicate are inputs and constraints, not apparatus candidates. Use `C.18` only when the team must generate or reframe alternative analysis methods, models, formalisms, or other direct-kind apparatuses for the same declared use. Use `C.11` only when two or more already available apparatuses are eligible for that same use and guarantee and a local choice is needed. Apply A.15.2 when planning remains necessary, the §0 basis when dated Work is asserted, and C.24 when tool-call enactment planning is the remaining question.
+The normal short path uses the already selected A.7.1 analysis method as its one apparatus. It begins from an engineering subject, subject predicate, and the pattern content locating that predicate; subject and predicate are inputs and constraints, not apparatus candidates.
+
+Use `C.18` only when the team must generate or reframe alternative analysis methods, models, formalisms, or other direct-kind apparatuses for the same declared use. Use `C.11` only when two or more already available apparatuses are eligible for that same use and guarantee and a local choice is needed.
+
+Apply A.15.2 when planning remains necessary, the §0 basis when dated Work is asserted, and C.24 when tool-call enactment planning is the remaining question.
 
 #### A.7.1:4.2 - Start from the defeated consequence
 
@@ -63,37 +71,54 @@ The four loci are a named diagnostic set; they are not a mandatory sequence.
 1. **Domain inquiry.** Ask whether the relevant behaviors, interventions, evidence, and consequences are known. If not, return domain, measurement, or evidence work without ontology invention.
 2. **Wording use.** Ask whether one term or sentence obscures distinct claims. Use `F.19`; continue to `C.2.P` or `E.10` only when a semantic question remains.
 3. **Working typed account.** Test whether direct kinds, participant positions, relation direction, temporal qualification, evidence relation, and occurrence identity suffice for the use. Reuse the direct relation, local system-role-kind, system-role-assignment, state, capability, Method, Work, responsibility, and evidence patterns already in FPF.
-4. **Subject-specific constructive ground.** Return to the exact subject construction only when action, identity, dependence, obtaining, constitution, or decision-changing CT2R loss differs across constructions. Use the direct relation-occurrence, local system-role-kind, direct `U.SystemRoleAssignment` species, system-recognition, Work-occurrence, state or capability, responsibility, or structural-construction pattern. Do not default to `C.13` or a generic constructive calculus.
+4. **Subject-specific constructive ground.** Return to the subject construction only when action, identity, dependence, obtaining, constitution, or decision-changing CT2R loss differs across constructions. Use the direct relation-occurrence, local system-role-kind, direct `U.SystemRoleAssignment` species, system-recognition, Work-occurrence, state or capability, responsibility, or structural-construction pattern. Do not default to `C.13` or a generic constructive calculus.
 
 #### A.7.1:4.4 - Perform only consequence-changing ontology work
 
 1. Select the first locus capable of resolving the delta.
 2. Perform the required domain inquiry, wording repair, typing, evidence assessment or construction analysis.
-3. Cite exact `A.7.CP` claim IDs when their contents are load-bearing. Use `ClaimUsedAsReasoningBasisRelation@Context` when the receiving use needs to recover the actual Work, receiving result, posture, scope, or interval of that reliance. Do not traverse the compact by default.
+3. Cite `A.7.CP` claim IDs when their contents are load-bearing. Use `ClaimUsedAsReasoningBasisRelation@Context` when the receiving use needs to recover the Work, receiving result, posture, scope, or interval of that reliance. Do not traverse the compact by default.
 4. Preserve direct evidence, currentness, source-use, kind-admission, and subject-construction patterns.
 5. Return the repaired result immediately when the next action is truthful at the declared guarantee.
 
-The method result uses one of these closed local dispositions in its result episteme: `repairedEngineeringStatement`, `methodChoice`, `actionSelected`, `noOntologyIntervention`, `returnToDirectOwner`, or `unresolvedWithBlocker`. These are method-result dispositions, not new U-kinds. Each names the affected use, practical result or blocked claim, and stop/reopen condition.
+The method result uses one of these closed local dispositions in its result episteme:
+
+- `repairedEngineeringStatement`;
+- `methodChoice`;
+- `actionSelected`;
+- `noOntologyIntervention`;
+- `returnToDirectOwner`;
+- `unresolvedWithBlocker`.
+
+These are method-result dispositions, not new U-kinds. Each names the affected use, practical result or blocked claim, and stop/reopen condition.
 
 #### A.7.1:4.5 - Decide whether the working account is enough
 
 A working account is sufficient when admitted direct kinds and relations determine the next move and plausible constructional alternatives do not change the result or guarantee. Stop without declaring the alternatives false. Do not create an occurrence ledger, evidence apparatus, publication package, or ontology record whose distinctions cannot change the use.
 
-Save the ontology result when reuse, dispute, consequence, automation or cross-pattern change makes persistence valuable. Admission of a proposed framework pattern or U-kind follows E.24 or E.24.UK respectively; a local distinction follows its subject rule. Persistence alone opens no new-kind admission. If a needed predicate or kind remains unadmitted, return the missing governor or affected blocked claim; rely on it only after the applicable positive admission.
+Save the ontology result when reuse, dispute, consequence, automation or cross-pattern change makes persistence valuable.
+
+Admission of a proposed framework pattern or U-kind follows E.24 or E.24.UK respectively; a local distinction follows its subject rule. Persistence alone opens no new-kind admission. If a needed predicate or kind remains unadmitted, return the missing governor or affected blocked claim; rely on it only after the applicable positive admission.
 
 #### A.7.1:4.6 - Reopen and teach without premature structure admission
 
 Reopen on a consequential counterexample, changed guarantee, failed use, projection loss, changed occurrence identity, or a newly admitted subject-pattern distinction. Reopen only the affected engineering and ontology decisions.
 
-A short presentation of the domain inquiry, wording repair, typed account or constructive ground may remain an ordinary explanation. Identify any claim-bearing episteme under C.2.1 when its identity matters; persistence is a separate choice. A reusable CGUS requires one identified A.22 structure, local locus bindings, selected relations and applied constraints, and at least two potential continuations; its present-case continuation results remain separate.
+A short presentation of the domain inquiry, wording repair, typed account or constructive ground may remain an ordinary explanation. Identify any claim-bearing episteme under C.2.1 when its identity matters; persistence is a separate choice.
+
+A reusable CGUS requires one identified A.22 structure, local locus bindings, selected relations and applied constraints, and at least two potential continuations; its present-case continuation results remain separate.
 
 ### A.7.1:5 - Archetypal Grounding
 
-**Support occurrence inquiry.** A maintenance claim says bearing B1 continued supporting shaft S1 after removal and reinstallation. The A.7.1 analysis method is already selected; the bearing/shaft subject and the applicable subject predicate are inputs and constraints, so the work creates no option set. Recover the exact load-bearing relation and its obtaining and occurrence-identity rules before counting occurrences. If an admitted subject rule makes removal end one occurrence and reinstallation begin another, apply that rule and the current facts to repair the warranty and incident-attribution claim. If the receiving use needs that distinction but no applicable rule defines it, return the missing governor and blocked claim. Use `A7CP-01` and `A7CP-10` only when their claims are load-bearing in this reasoning; neither compact claim defines the subject relation.
+**Support occurrence inquiry.** A maintenance claim says bearing B1 continued supporting shaft S1 after removal and reinstallation. The A.7.1 analysis method is already selected; the bearing/shaft subject and the applicable subject predicate are inputs and constraints, so the work creates no option set.
 
-**Missing telemetry non-use.** A team cannot determine pump state because telemetry was never collected. State kinds, evidence relations, and candidate actions are already clear. The result is `returnToDirectOwner` for measurement and evidence work with the blocked state claim; no premise-use occurrence or ontology artifact is minted.
+Recover the load-bearing relation and its obtaining and occurrence-identity rules before counting occurrences. If an admitted subject rule makes removal end one occurrence and reinstallation begin another, apply that rule and the current facts to repair the warranty and incident-attribution claim. If the receiving use needs that distinction but no applicable rule defines it, return the missing governor and blocked claim.
 
-**Construction-changing case.** A maintenance account uses “part” both for an item belonging to inventory collection R and for a component installed in pump P. Suppose R's membership rule includes exactly items with an active inventory entry. Closing that entry ends belonging to R; it does not by itself remove the installed component. Physical removal changes ComponentOf only under the direct A.14/subject predicate and case facts. If one item participates in both relations, test each separately. Use C.13 when the decision also needs the resulting construction account. Repair the maintenance claim to name the actual change and preserve any unaffected relation.
+Use `A7CP-01` and `A7CP-10` only when their claims are load-bearing in this reasoning; neither compact claim defines the subject relation.
+
+**Missing telemetry non-use.** A team cannot determine pump state because telemetry was never collected. State kinds, evidence relations, and candidate actions are already clear. The result is `returnToDirectOwner` for measurement and evidence work with the blocked state claim; no premise-use occurrence or ontology artifact is created.
+
+**Construction-changing case.** A maintenance account uses “part” both for an item belonging to inventory collection R and for a component installed in pump P. Suppose R's membership rule includes exactly items with an active inventory entry. Closing that entry ends belonging to R; it does not by itself remove the installed component. Physical removal changes ComponentOf only under the direct A.14/subject predicate and case facts. If one item participates in both relations, test each separately. Use C.13 when the decision also needs the resulting construction account. Repair the maintenance claim to name the change and preserve any unaffected relation.
 
 ### A.7.1:6 - Bias-Annotation
 
@@ -107,11 +132,11 @@ Ontology-display bias favors elaborate category systems even when existing predi
 | `CC-A7.1-1` | The use names one engineering result, guarantee, smallest disputed claim, and consequence failure. |
 | `CC-A7.1-2` | One grounded defeated reading can trigger the method; fabricated alternatives are not required. |
 | `CC-A7.1-3` | The work enters the first capable domain, wording, typed-account, or constructive-ground locus rather than a mandatory ladder. |
-| `CC-A7.1-4` | The normal case uses the already selected A.7.1 analysis method as its one current apparatus; the engineering subject and its subject pattern remain inputs and constraints. Candidate generation and choice open only for alternative direct-kind apparatuses eligible for the same use and guarantee. |
+| `CC-A7.1-4` | The normal case uses the already selected A.7.1 analysis method as its one apparatus; the engineering subject and its subject pattern remain inputs and constraints. Candidate generation and choice open only for alternative direct-kind apparatuses eligible for the same use and guarantee. |
 | `CC-A7.1-5` | Keep the reader, description episteme, Method and problem-facing result distinct. A MethodDescription claim satisfies A.3.2; an asserted dated Work uses the independent A.13/A.15.1 basis in §0, with F.6 only for the precise attribution consumed. Local system-role-kind classification and the obtaining assignment remain separate claims. |
-| `CC-A7.1-6` | Cite only load-bearing `A.7.CP` claims; identify their reasoning-basis occurrences when the receiving use needs the actual reliance account under §4.4. |
+| `CC-A7.1-6` | Cite only load-bearing `A.7.CP` claims; identify their reasoning-basis occurrences when the receiving use needs the reliance account under §4.4. |
 | `CC-A7.1-7` | Direct relation, local system-role-kind, assignment, state, capability, responsibility, evidence, source-use, Work, and kind-admission patterns remain authoritative. |
-| `CC-A7.1-8` | The result uses one declared local disposition and includes stop/reopen or exact blocker. |
+| `CC-A7.1-8` | The result uses one declared local disposition and includes stop/reopen or blocker. |
 | `CC-A7.1-9` | A saved ontology result serves reuse, dispute, consequence, automation or cross-pattern change. Any new framework-pattern or U-kind proposal satisfies its applicable admission; saving a local distinction does not itself open that proposal. |
 | `CC-A7.1-10` | No provisional branch presentation is treated as an admitted CGUS. |
 
@@ -120,11 +145,11 @@ Ontology-display bias favors elaborate category systems even when existing predi
 | Anti-pattern | Repair |
 |---|---|
 | Begin from a glossary or full ontology checklist. | Begin from the affected result and defeated claim; enter only the capable locus. |
-| Treat missing evidence as a missing kind. | Return to measurement/evidence with the exact blocked claim. |
+| Treat missing evidence as a missing kind. | Return to measurement/evidence with the blocked claim. |
 | Run constructive analysis for every typed relation. | Stop when direct kinds, positions, direction, time, and identity already determine the move. |
 | Treat a graph, predicate, or formal class as the world construction. | Recover CT2R loss and the direct subject construction before reverse inference. |
 | Let a description episteme, local kind or assignment act. | Name the capable System when it is unclear. For a deliberately asserted dated ontology-analysis Work, apply the §0 basis; keep local-kind classification, assignment and any F.6 attribution distinct. Ordinary reader action needs no invented Work identity. |
-| Copy the twelve compact claims into the method. | Cite exact `A7CP-*` IDs only when load-bearing; keep `A.7.CP` as the authoritative source. |
+| Copy the twelve compact claims into the method. | Cite `A7CP-*` IDs only when load-bearing; keep `A.7.CP` as the authoritative source. |
 
 ### A.7.1:9 - Consequences
 
@@ -148,11 +173,11 @@ Ontology effort should scale with the consequence that changes. A subject-patter
 
 ### A.7.1:12 - Relations
 
-- **Description-level specialization:** A.7.1 narrows the method claims stated by `C.19.2` to ontology analysis. It retains the use, problem-facing result, guarantee, horizon, useful threshold and stop/reopen conditions. On the ordinary one-apparatus path, the selected analysis Method is the apparatus and the engineering subject and its rule are inputs. Alternative generation and choice use C.18/C.11 only under §4.1. Description membership and actual Work use the separate conditions in §0; this description-level relation alone establishes no relation between the described Methods.
-- **Consumes:** exact `A.7.CP` claim content when load-bearing; uses `ClaimUsedAsReasoningBasisRelation@Context` when the receiving use needs the actual reasoning-basis account under §4.4.
+- **Description-level specialization:** A.7.1 narrows the method claims stated by `C.19.2` to ontology analysis. It retains the use, problem-facing result, guarantee, horizon, useful threshold and stop/reopen conditions. On the ordinary one-apparatus path, the selected analysis Method is the apparatus and the engineering subject and its rule are inputs. Alternative generation and choice use C.18/C.11 only under §4.1. Description membership and Work use the separate conditions in §0; this description-level relation alone establishes no relation between the described Methods.
+- **Consumes:** `A.7.CP` claim content when load-bearing; uses `ClaimUsedAsReasoningBasisRelation@Context` when the receiving use needs the reasoning-basis account under §4.4.
 - **Coordinates with:** `A.7.2` when a material cross-pattern premise conflict is current; neither method is the other's parent or source of premise truth.
 - **Returns to:** direct relation, local system-role-kind, assignment, System, state, capability, Method, Work, responsibility, evidence, temporal, structural, and domain patterns for the claim being repaired.
 - **Uses for new framework-pattern or U-kind proposals:** `E.24` or `E.24.UK`, with `A.8` and `A.11`. A.7.1 itself admits neither; local kinds and relations retain their subject rules.
-- **Preserves:** current `A.7` Strict Distinction and `A.22.CGUS` admission law.
+- **Preserves:** `A.7` Distinction and `A.22.CGUS` admission law.
 
 ### A.7.1:End

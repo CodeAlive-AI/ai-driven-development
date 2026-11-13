@@ -30,14 +30,14 @@ The problem is to recover the alternatives allowed by the indication and its con
 | --- | --- |
 | Convenient answer and remaining alternatives | One number is easy to use; several values may fit the same reading. |
 | Target and influential quantities | Full parameter recovery can be costly; the sought quantity may already be determined. |
-| Exact data and uncertain data | An ideal relation may have one solution while the actual error range permits many. |
+| Exact data and uncertain data | An ideal relation may have one solution while the error range permits many. |
 | Complete computation and sufficient conclusion | Describing the entire compatible set can be expensive; a bound can answer the working question. |
 | Additional observation and changed subject | A second reading can distinguish alternatives only under the relations that connect the two measurement situations. |
 | Calculation and model revision | Inconsistent premises require diagnosis; forcing a numerical answer can conceal the conflict. |
 
 ### C.16.IR:4 - Solution
 
-Construct the cases compatible with the indication and relevant conditions. Obtain the sought values represented by those cases, retaining the distinction between feasible examples and bounds that contain all solutions. Use that result to answer the current question.
+Construct the cases compatible with the indication and relevant conditions. Obtain the sought values represented by those cases, retaining the distinction between feasible examples and bounds that contain all solutions. Use that result to answer the question.
 
 #### C.16.IR:4.1 - Fix the sought distinction and available relation
 
@@ -57,9 +57,9 @@ With bounded error, include the unknown error in its stated range. If a relation
 
 `r = f(x,z) + e, with e in the supplied error range.`
 
-Use that equation only when additive error describes the actual indication convention. An error before clipping, an error after clipping and a missed event can require different relations.
+Use that equation only when additive error describes the indication convention. An error before clipping, an error after clipping and a missed event can require different relations.
 
-A compact mathematical expression for the compatible sought values is:
+A mathematical expression for the compatible sought values is:
 
 `S(r) = {x : there exist admitted z and e for which r = f(x,z) + e}.`
 
@@ -75,7 +75,7 @@ During elimination, preserve the conditions of each operation. Dividing by an un
 
 For several unknowns, obtain the sought value from each compatible joint case. The other unknowns can remain unresolved when every compatible case gives the same sought answer. Section :5.1 gives a source voltage determined while its internal resistance remains unknown.
 
-When a complete solution is costly, distinguish two useful computational results:
+When a complete solution is costly, distinguish two computational results:
 
 - A **feasible example** is one case that satisfies the original relations and conditions. Two such cases can establish a consequential ambiguity.
 - An **outer bound** contains every compatible sought value but can also contain values that no case realizes. If the whole bound satisfies an inequality, that inequality holds for every compatible value. A bound spanning both sides of a threshold alone does not establish that both outcomes are possible.
@@ -128,7 +128,7 @@ Hence, when the denominator is nonzero,
 
 The supplied readings give Rs = 1 MΩ and E = 10 V. Substitution recovers both 5 V and 7.5 V. The answer to E ≤ 8 V is now no.
 
-The shared-source condition does work here. If E changes between readings, replacing it with E1 and E2 leaves the original inference unsupported. A second number is useful through the relation connecting its measurement to the first.
+The inference depends on the shared-source condition. If E changes between readings, replacing it with E1 and E2 leaves the original inference unsupported. A second number is useful through the relation connecting its measurement to the first.
 
 For two zero readings under the same model, E = 0 follows while Rs can be any finite nonnegative value. A zero denominator in the derived formula is a reason to return to the original equations. Full recovery of Rs is unnecessary for this voltage result.
 
@@ -150,7 +150,7 @@ A device starts at zero, increments once per event and stores N modulo 16. No re
 
 These six values come from `N = 5 + 16*k` with an integer k in the range allowed by the bound. They all satisfy the original operation. The reading settles N < 90, while N < 30 remains unresolved; 21 and 37 are witnesses.
 
-Suppose a second counter starts at the same event boundary, sees every same event, and stores N modulo 17. It reports 4. Test the six candidates against this second relation: only N = 21 remains. The physical event correspondence and initialization make the mathematical intersection appropriate.
+Suppose a second counter starts at the same event boundary, counts the same events, and stores N modulo 17. It reports 4. Test the six candidates against this second relation: only N = 21 remains. The physical event correspondence and initialization make the mathematical intersection appropriate.
 
 If the supplied bound is relaxed to N < 300, both 21 and 293 satisfy the two remainders. The earlier uniqueness conclusion therefore depended on the bound. If the counters cover different event intervals, use separate counts and recover the relation between them before combining their readings.
 
@@ -183,7 +183,7 @@ The set-based branch treats uncertainty as admitted possibilities. Statistical i
 
 ### C.16.IR:9 - Consequences
 
-The practitioner can identify what information the measurement actually supplies for a question. A useful bound can end inquiry; an explicit pair of alternatives can direct a better observation or a model repair.
+The practitioner can identify what information the measurement supplies for a question. A useful bound can end inquiry; an explicit pair of alternatives can direct a better observation or a model repair.
 
 The cost grows with the relation and the conclusion claimed. A single ambiguity witness can be cheap, while excluding every alternative may require a global argument or specialized computation. The Method retains that difference so the amount of work follows the receiving use.
 
@@ -199,9 +199,9 @@ The same reasoning connects physical measurement, mathematical inverse relations
 
 **Practice question.** What does an indication determine when an available relation has influential unknowns, lost distinctions or consequential input uncertainty?
 
-**Selected answer and serious alternative.** Adopt a question-relative compatible-set calculation or sufficient bound when those features can change the answer. The serious alternative is direct use of a suitable calibrated analysis function, or a justified estimate with its uncertainty. Keep that cheaper route when it settles the same question. In :5.1, using one loaded reading as E returns the wrong target; two elementary compatible cases expose the loss at comparable effort. In :5.2, a threshold result needs less work than a point estimate. The selected method trades a convenient single output for the alternatives needed by the decision.
+**Selected answer and alternative.** Adopt a question-relative compatible-set calculation or sufficient bound when those features can change the answer. The alternative is direct use of a suitable calibrated analysis function, or a justified estimate with its uncertainty. Keep that cheaper route when it settles the same question. In :5.1, using one loaded reading as E returns the wrong target; two elementary compatible cases expose the loss at comparable effort. In :5.2, a threshold result needs less work than a point estimate. The selected method trades a convenient single output for the alternatives needed by the decision.
 
-**Measurement-model contribution.** [JCGM GUM-6:2020, §11.4 and §§13.5–13.6](https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf) distinguishes calibration and analysis functions, permits directly estimating an analysis function, and retains implicit measurement models under a stated local-uniqueness assumption. **Adapt** that direction distinction in :4.1–4.3. When uniqueness is unavailable, :4.4 returns the alternatives needed by the question. The document supplies quantitative measurement-model practice; it does not establish that every inverse problem has a unique solution.
+**Measurement-model contribution.** [JCGM GUM-6:2020, §11.4 and §§13.5–13.6](https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf) distinguishes calibration and analysis functions, permits directly estimating an analysis function, and retains implicit measurement models under a stated local-uniqueness assumption. **Adapt** that direction distinction in :4.1–4.3. When uniqueness is unavailable, :4.4 returns the alternatives needed by the question. The document supplies quantitative measurement-model practice.
 
 **Computational contribution.** [IBEX 2.9, Contractors, Introduction and Forward-Backward](https://ibex-team.github.io/ibex-lib/contractor.html) describes filtering a domain while preserving its feasible solutions. **Adopt** that preservation requirement for the bounded numerical branch in :4.3. A surviving outer domain can still contain infeasible points, which motivates the feasible-witness distinction. Symbolic elimination and finite enumeration suffice for the worked cases.
 

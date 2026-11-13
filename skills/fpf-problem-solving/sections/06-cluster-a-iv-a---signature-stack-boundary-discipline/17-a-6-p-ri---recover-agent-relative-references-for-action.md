@@ -38,7 +38,7 @@ Recover the source reference, establish the receiving purpose, then derive only 
 
 #### A.6.P.RI:4.1 - Find the expression whose reference matters
 
-Start with the actual statement and the work it is meant to support. Identify a word or omitted participant whose interpretation changes the result: for example, whose account, whose left side, which location or which time.
+Start with the statement and the work it is meant to support. Identify a word or omitted participant whose interpretation changes the result: for example, whose account, whose left side, which location or which time.
 
 Use A.6.P to recover the relevant participants and relation. Read a quotation relative to its attributed speaker until the use calls for another interpretation. An imperative may leave the intended actor implicit; distinguish that actor from the person relaying the message.
 
@@ -61,7 +61,7 @@ Ask what the recipient is being asked to do with the source. For example:
 - obtain the same external result through the recipient's own action; or
 - apply the same relative rule afresh to the recipient.
 
-Recover the actual purpose from the assignment or working agreement.
+Recover the purpose from the assignment or working agreement.
 
 For example, “move the crate one metre to my left” can identify a direction from the speaker's orientation. A second performer preserving that displacement may need to move to their own right. “Repeat the movement to your own left” instead applies the relative rule to the second performer and can produce a different displacement.
 
@@ -129,7 +129,7 @@ In this figure, maintaining balance during the turn is part of performing the fi
 
 ### A.6.P.RI:6 - Bias-Annotation
 
-A translator can assume that the recipient occupies the same position as the source. A shared diagram or vocabulary makes this especially easy. Test the particular changed condition on which the action depends.
+A translator can assume that the recipient occupies the same position as the source. A shared diagram or vocabulary makes this especially easy. Test the changed condition on which the action depends.
 
 An observer can also replace the performer's report with an interpretation that is easier to describe externally. Keep the report open to correction by its source and give the additional interpretation its own basis.
 
@@ -143,7 +143,7 @@ For a consequential interpretation or transfer, ask:
 - Can the recipient identify its own relevant position in the account?
 - Does the derived action still satisfy that purpose when the consequential condition changes?
 - Are missing information, authority, capability and support distinguished?
-- Does any actual change of EntityOfConcern use A.6.4 rather than being assumed from new notation?
+- Does any change of EntityOfConcern use A.6.4 rather than being assumed from new notation?
 
 Use the questions needed for the receiving decision. An already clear instruction needs no additional record.
 
@@ -153,13 +153,13 @@ Use the questions needed for the receiving decision. An already clear instructio
 
 **Replacing every “I” with the recipient.** A quotation or relayed instruction loses its original speaker. Preserve the source attribution unless the new task deliberately applies a rule to another participant.
 
-**Treating shared facts as self-identification.** Several systems receive the same participant description, but none has been linked to its own entry. Obtain that link from the actual working configuration.
+**Treating shared facts as self-identification.** Several systems receive the same participant description, but none has been linked to its own entry. Obtain that link from the working configuration.
 
 **Turning a felt report into a bodily cause.** “The dancer reports tension here” becomes “this tissue causes the failure”. Preserve the report and use the appropriate subject method to examine the causal claim.
 
 ### A.6.P.RI:9 - Consequences
 
-The same source account can support a usable receiving instruction without losing who or what it concerned. A changed position or participant becomes a condition to handle explicitly where it matters.
+The same source account can support a usable receiving instruction without losing who or what it concerned. A changed position or participant becomes a condition to handle where it matters.
 
 The method can expose missing information and thereby postpone an action that previously appeared clear. Where ordinary shared understanding already settles the reference, further formalization would add cost without improving the action.
 
@@ -167,7 +167,7 @@ The method can expose missing information and thereby postpone an action that pr
 
 Relational precision restoration recovers missing participants. Agent-relative use additionally requires a link between the receiving agent and the described participants, together with a decision about what the transfer preserves. Neither a complete participant list nor a change of notation supplies these by itself.
 
-The construction therefore combines the source interpretation, receiving purpose and recipient's position. Representation change and EntityOfConcern retargeting retain their existing conditions. Domain operations compute the actual conversion or classification; this method exposes the premises they need and returns their result to the receiving action.
+The construction therefore combines the source interpretation, receiving purpose and recipient's position. Representation change and EntityOfConcern retargeting retain their existing conditions. Domain operations compute the conversion or classification; this method exposes the premises they need and returns their result to the receiving action.
 
 The method applies when the receiving performer can be identified in the account and the relevant reference conditions can be recovered. Human first-person experience remains available through the experiencing person's account and correction. An artificial agent uses the identification, representations and signals its configuration supplies.
 
@@ -187,7 +187,7 @@ Use the simpler direct clarification when it already settles the action. Reopen 
 
 - **A.6.P** restores the participants and relations hidden by an underspecified claim.
 - **C.2.1** supplies designation, interpretation and EntityOfConcern distinctions.
-- **A.6.3.RT** changes representation while preserving the EntityOfConcern; **A.6.4** governs bounded use across a real change of that object.
+- **A.6.3.RT** changes representation while preserving the EntityOfConcern; **A.6.4** governs bounded use across a change of that object.
 - **B.5.EA** articulates a distinction from experience while preserving the source participant's correction.
 - **B.1.5.EW** recovers how constituent actions enact the encompassing work; a change of reference position is not itself a change of Method level.
 - **A.15.10** recovers a transferred or interrupted continuation. Use this method when an unresolved agent-relative expression prevents that continuation.

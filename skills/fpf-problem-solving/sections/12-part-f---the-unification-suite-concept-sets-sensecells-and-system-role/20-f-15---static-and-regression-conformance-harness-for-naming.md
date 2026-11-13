@@ -6,7 +6,7 @@
 
 **Type:** Architectural pattern.
 **Normativity:** Normative.
-**Builds on:** F.17 for exact `SchemeSenseCell`, local-sense basis, and row epistemes; F.18 for naming-settlement `NameCard` epistemes and selected designation expressions; F.14 and F.8 for anti-explosion and mint-or-reuse decisions; F.13 for lineage; F.9 for actual cross-local Bridge occurrences and separate bounded-use claims; F.4 for system-role-kind-description epistemes; F.10 or the current pattern that defines the status values and windows; C.2.1 for exact claim and record epistemes; A.2.6 for ClaimScope; A.1.1 and A.22 only when a selected bounded-model-use Structure actually changes the checked use; and E.24.PUB for publication.
+**Builds on:** F.17 for exact `SchemeSenseCell`, local-sense basis, and row epistemes; F.18 for naming-settlement `NameCard` epistemes and selected designation expressions; F.14 and F.8 for anti-explosion and mint-or-reuse decisions; F.13 for lineage; F.9 for actual cross-local Bridge occurrences and separate bounded-use claims; F.4 for system-role-kind-description epistemes; F.10 or the current pattern that defines the status values and windows; C.2.1 for exact claim and record epistemes; A.2.6 for ClaimScope; A.1.1 and A.22 only when a selected bounded-model-use Structure changes the checked use; and E.24.PUB for publication.
 
 **Coordinates with:** A.6.1 for exact check-application bindings; A.13 for every precise performer's local core, A.15.1 for independent dated assessment-Work admission, and F.6 only for a current precise assignment-bound attribution; A.10 and B.3 for evidence reliance and assurance; G.11 for currentness; A.2, A.2.1, A.2.5, and A.2.7 for system-role kinds, assignments, assignment-state predicates and direct state relations, and relations among system-role kinds; E.17 and E.10.D2 for view, description, and source-use claims; A.6.5 for relation declaration; and the pattern that defines each non-naming object included in the selected slice.
 
@@ -14,29 +14,33 @@
 
 ### F.15:1 - Intent and applicability
 
-**Intent.** Give one compact harness for checking whether a finite naming and unification slice is locally sound now and remains sound across exact changes. F.15 does not define schemes, local senses, cells, values, relation occurrences, descriptions, rows, system-role kinds or assignments, status families, aliases, names, evidence, or publication. Its application checks exact objects already recovered through their defining or testing rules and records result claims without duplicating F.18 naming settlement.
+**Intent.** Give one compact harness for checking whether a finite naming and unification slice is locally sound now and remains sound across identified changes.
+
+F.15 does not define schemes, local senses, cells, values, relation occurrences, descriptions, rows, system-role kinds or assignments, status families, aliases, names, evidence, or publication. Its application checks exact objects already recovered through their defining or testing rules and records result claims without duplicating F.18 naming settlement.
 
 **Applicability.** Use F.15 when one receiving use depends on several already recovered items: effective ReferenceSchemes, F.17 `SchemeSenseCell` values, F.18 NameCards and selected designations, F.17 rows, local system-role kinds or status values, actual F.9 Bridge occurrences, or exact prior and later editions. Include a selected bounded-model-use Structure and its description only when that structure's organization changes this check or receiving use.
 
 **Primary EntityOfConcern in plain terms.** One exact finite slice version under a declared set of static or regression rules for one named receiving use. The checked scope is not evidence, a work process, result, registry, Bridge, system-role assignment, status value, publication, or universal context.
 
-**Admissible move in plain terms.** Resolve the finite member refs and exact versions; apply only the triggered rules; identify the check application or assessment work when it occurs; constitute each result claim separately under C.2.1; cite witnesses and evidence relations separately; and use the defining or testing rule for every failed subject claim, with its PatternID retained only as a locator.
+**Admissible move in plain terms.** Resolve the finite member refs and exact versions and apply only the triggered rules. Identify an exact check application when the claim needs its identity. Recover dated assessment Work when the claim needs its performance history. Constitute each result claim separately under C.2.1. Cite witnesses and evidence relations separately. Use the defining or testing rule for every failed subject claim, with its PatternID retained only as a locator.
 
 **Primary working reader.** A practitioner checking whether selected names and semantic-unification results meet the rules for one stated reuse.
 
-**Use this when.** Use F.15 when a slice feels "almost unified" but one or more questions remain:
+**Use this when.** A slice feels "almost unified", but one or more of these questions remain:
 
 1. Does each local expression resolve under its exact effective ReferenceScheme and local-sense claim?
 2. Does each `SystemRoleKindDescription` still describe its exact local system-role kind without becoming the kind, assignment, or NameCard?
-3. Does each F.17 row still pass its own entry and result gate, including the valid one-cell case?
-4. Does every cited F.9 Bridge actually obtain between exact cells, with its description/Card and bounded-use claim kept separate?
+3. Does each F.17 row still pass the entry and result gate for that row, including the valid one-cell case?
+4. Does every cited F.9 Bridge obtain between exact cells, with its description/Card and bounded-use claim kept separate?
 5. Do exact earlier and later values, descriptions, rows, names, relations, and status windows support the stated continuity or change claim for this receiving use?
 
 **What goes wrong if missed.** Shared spelling globalizes local senses; a table row or NameCard looks like value identity; a Bridge description replaces relation truth; record membership becomes evidence; a check record appears to perform work or emit its own result; and an edition label silently proves sameness or difference.
 
-**What this buys.** A finite, replayable conformance check: selected names remain tied to exact governed values, cross-local use stays relation- and claim-bound, non-naming claims remain governed by their defining or testing rules, and regression closure says exactly which versions, rules, evidence, losses, and receiving use were checked.
+**What this buys.** A finite, replayable conformance check: selected names remain tied to exact governed values, cross-local use stays relation- and claim-bound, non-naming claims remain governed by their defining or testing rules, and regression closure states which versions, rules, evidence, losses, and receiving use were checked.
 
-**Not this pattern when.** Use F.18 to settle a name, F.17 to admit a row, F.9 to establish a Bridge, and the direct subject pattern to decide a system-role-kind, assignment, status or evidence claim. Use F.15 when their already-defined outputs must be checked together. Ordinary checking follows its questions directly; a claim about dated assessment Work or an exact operation application additionally uses A.15.1/A.6.1, and publication of a record uses E.24.PUB.
+**Not this pattern when.** Use F.18 to settle a name, F.17 to admit a row, F.9 to establish a Bridge, and the direct subject pattern to decide a system-role-kind, assignment, status or evidence claim. Use F.15 when their already-defined outputs must be checked together.
+
+For ordinary checking, apply the F.15 questions directly. A claim about dated assessment Work or an exact operation application additionally uses A.15.1/A.6.1, and publication of a record uses E.24.PUB.
 
 **Recognition versus assurance note.** Recognition identifies the exact finite scope, versions, triggered rules, and receiving use. Assurance, when needed, concerns reliance on separately constituted result claims through exact A.10 or B.3 paths. Neither a filled record nor scope membership supplies assurance.
 
@@ -56,7 +60,9 @@ F.15 catches these failures before the finite slice is used for naming reuse, cr
 
 ### F.15:2.1 - Problem
 
-A slice can look stable because labels, cards, rows, descriptions, relation records, aliases, and version ids are arranged in one table. Yet the table establishes none of its listed subject relations, checks, results, evidence uses, continuity claims, or publication occurrences. F.15 makes the exact static and before-and-after questions inspectable without defining or establishing the neighbouring naming, ontology, checking, evidence-use, or publication claims itself.
+A slice can look stable because labels, cards, rows, descriptions, relation records, aliases, and version ids are arranged in one table. Yet the table establishes none of its listed subject relations, checks, results, evidence uses, continuity claims, or publication occurrences.
+
+F.15 makes the exact static and before-and-after questions inspectable without defining or establishing the neighbouring naming, ontology, checking, evidence-use, or publication claims itself.
 
 ### F.15:3 - Forces
 
@@ -77,9 +83,11 @@ The harness has two rule families:
 
 Both families are F.15-local check declarations over already defined objects. A practitioner may apply their questions and obtain a local result without naming the checking activity as Tech `U.Work`. An exact rule application, when its identity is needed, uses A.6.1.
 
-If a replayable result or example asserts dated assessment `U.Work`, recover each actual performer's A.13 core and independently admit the Work under A.15.1. Add F.6 afterward only when the result also needs precise assignment-bound attribution. A short record may omit an assignment identifier unused by its receiving claim only when every relation it consumes remains recoverable. Name the A.6.1 application and bindings when that application is also asserted.
+If a replayable result or example asserts dated assessment `U.Work`, recover each actual performer's A.13 core and independently admit the Work under A.15.1. Add F.6 afterward only when the result also needs precise assignment-bound attribution.
 
-C.2.1 separately constitutes the result claims and optional conformance-record episteme. A.10 and B.3 supply evidence-reliance and assurance rules; E.24.PUB supplies publication rules; G.11 supplies currentness rules.
+A short record may omit an assignment identifier unused by its receiving claim only when every relation it consumes remains recoverable. Name the A.6.1 application and bindings when that application is also asserted.
+
+C.2.1 separately constitutes the result claims and optional conformance-record episteme. A.10 and B.3 supply evidence-reliance and assurance rules. E.24.PUB governs publication, and G.11 governs currentness.
 
 ### F.15:5 - Minimal vocabulary
 
@@ -95,7 +103,7 @@ C.2.1 separately constitutes the result claims and optional conformance-record e
 
 ### F.15:6 - Objects under check
 
-A practitioner applying F.15 may check these exact objects together but redefines none:
+F.15 lets a practitioner check the following objects together. Each keeps its own definition:
 
 1. effective reference scheme values and exact prior/later editions;
 2. independently governed local-sense claims and F.17 `SchemeSenseCell` coordinates;
@@ -155,7 +163,11 @@ UnificationConformanceRecord:
   ReopenTrigger:
 ```
 
-The checked scope, rule declaration, ordinary checking action or admitted dated assessment Work, exact application, result claim, witness, A.10 evidence-provenance path, conformance-record episteme, E.24.PUB occurrence, publication form, carrier, and G.11 currentness relation remain distinct. A result ref is included only after its C.2.1 claim exists. The optional record may cite an already admitted Work ref; it does not restate the Work's performer, Method, assignment, time, or containing System. Publication and currentness refs are neighbouring claims, not record identity shortcuts.
+The checked scope, rule declaration, ordinary checking action or admitted dated assessment Work, exact application, result claim, witness, A.10 evidence-provenance path, conformance-record episteme, E.24.PUB occurrence, publication form, carrier, and G.11 currentness relation remain distinct.
+
+A result ref is included only after its C.2.1 claim exists.
+
+The optional record may cite an already admitted Work ref; it does not restate the Work's performer, Method, assignment, time, or containing System. Publication and currentness refs are neighbouring claims, not record identity shortcuts.
 
 ### F.15:8 - Static conformance rules for local material
 
@@ -180,10 +192,12 @@ Another expression under the same `<ReferenceScheme, LocalSenseClaim>` projectio
 ### F.15:9 - Static conformance rules for composed material
 
 **SCR-F15-S7 (`SystemRoleKindDescription` boundary).**
-An F.4 `SystemRoleKindDescription` is one C.2.1 episteme about one exact local system-role kind under one effective ReferenceScheme. It makes the C.3 candidate domain, operative membership condition, intended member/non-member boundary, continuity rule, and current `KindSignature` recoverable. Practice or source provenance may locate the definition but does not identify the kind. The description is not the kind, NameCard, `SchemeSenseCell`, assignment, status, evidence template, method, or work; a cell is cited only when the naming use needs one.
+An F.4 `SystemRoleKindDescription` is one C.2.1 episteme about one exact local system-role kind under one effective ReferenceScheme. It makes the C.3 candidate domain, operative membership condition, intended member/non-member boundary, continuity rule, and current `KindSignature` recoverable.
+
+Practice or source provenance may locate the definition but does not identify the kind. The description is not the kind, NameCard, `SchemeSenseCell`, assignment, status, evidence template, method, or work; a cell is cited only when the naming use needs one.
 
 **SCR-F15-S8 (Name discipline without F.18 duplication).**
-Every candidate or selected name cites the recovered governed value and the pattern containing its defining or constraining rule. Apply the F.14 and F.8 criteria to decide whether naming work continues; use F.18 to form the NameCard and choose designations; use F.17 to constitute an admitted row. In an F.15 check, verify those exact references; do not choose a name.
+Every candidate or selected name cites the recovered governed value and the pattern containing its defining or constraining rule. Apply the F.14 and F.8 criteria to decide whether naming work continues. If the naming use requires a durable settlement, check the NameCard and designations established under F.18. If a term row is claimed, check its admission under F.17. Name selection remains with the naming decision.
 
 **SCR-F15-S9 (F.17 row truth).**
 Each cited row is one exact F.17 `UnifiedTermRow` episteme that records one value, its direct kind, the locator where that kind or value is defined, its NameCard, selected designations, effective scheme, one or more exact `SchemeSenseCell` refs, admitted uses, any grounded blocked uses required by F.19, and reopen condition. One cell is valid when the row use is not cross-local; a row-shaped local note or table position is not a row episteme.
@@ -195,7 +209,9 @@ Each row cell remains an exact SchemeSenseCell. NameCard, local-sense basis rela
 When an existing NameCard or row supports the same governed value and admitted use, reuse it or record the exact F.8 decision that justifies another naming settlement. A new label, table, project, or edition is not a visible value difference.
 
 **SCR-F15-S12 (Actual Bridge before Bridge use).**
-A cited F.9 Bridge has two exact endpoint cells, one exact relation-semantic profile, a currently true kind-defined predicate, and all required dependencies. Its assertion/description episteme and optional Card remain separate. A separate C.2.1 claim states whether that occurrence suits the exact direction, rule, loss tolerance, polarity, and use; A.10 or B.3 separately governs reliance.
+A cited F.9 Bridge has two exact endpoint cells, one exact relation-semantic profile, a currently true kind-defined predicate, and all required dependencies. Its assertion/description episteme and optional Card remain separate.
+
+A separate C.2.1 claim affirms or rejects the proposed use of that Bridge in the stated direction, under the stated correspondence rule and loss tolerance. Use A.10 for ordinary reliance on the claim. Use B.3 when the receiving use needs a named assurance claim.
 
 **SCR-F15-S13 (Cross-local locality).**
 Use F.9 only for different `<ReferenceScheme, LocalSenseClaim>` projections and one named current correspondence use. Same-projection expression reuse stays with designation; different projections do not themselves establish a relation; when no current correspondence use exists, add no Bridge or bounded-use claim.
@@ -241,7 +257,7 @@ The RSCR family compares exact earlier and later refs for each changed member an
 For each changed member, resolve exact `@t0` and `@t1` refs and versions. A changed effective ReferenceScheme changes interpretation-bearing content; an unchanged label or shared designator does not prove continuity. State the exact identity, continuity, split, retirement, or replacement claim and cite the rule that defines or tests it.
 
 **RSCR-F15-E2 (Known confusion check).**
-Recheck or explicitly retire every prior confusion, blocked use, and nearest counterexample affected by the change. A new edition does not erase an old trap.
+For each prior confusion, blocked use, and nearest counterexample affected by the change, recheck it or explicitly retire it. A new edition does not erase an old trap.
 
 #### F.15:11.2 - Local senses and SchemeSenseCells
 
@@ -265,7 +281,9 @@ When a changed value, sense, or use alters row support, preserve the exact earli
 Compare exact F.4 description epistemes and the described kinds' candidate domains, operative membership conditions, intended member/non-member boundaries, continuity rules, current `KindSignature` editions, effective schemes, and claim content. Source or practice provenance is a cue to compare those definitions, not an identity key. A label-only change cannot prove that the described kind or description episteme stayed the same.
 
 **RSCR-F15-E8 (Alias for expression change; direct recovery for meaning change).**
-If only a selected expression changes while the exact value, scheme, sense and use are preserved, F.13 and F.18 may record an alias or rename. When a described kind, candidate domain, membership distinction, boundary, continuity rule, scheme, local sense or description claim changes, recover the affected object or episteme under its subject rule. Reopen the naming settlement when that change affects the named value, interpretation or receiving use; reuse an unaffected settlement. A practice or source change by itself triggers comparison and proves neither continuity nor a split.
+If only a selected expression changes while the exact value, scheme, sense and use are preserved, F.13 and F.18 may record an alias or rename.
+
+When a described kind, candidate domain, membership distinction, boundary, continuity rule, scheme, local sense or description claim changes, recover the affected object or episteme under its subject rule. Reopen the naming settlement when that change affects the named value, interpretation or receiving use; reuse an unaffected settlement. A practice or source change by itself triggers comparison and proves neither continuity nor a split.
 
 #### F.15:11.5 - Bridges and bounded uses
 
@@ -302,7 +320,9 @@ changedMemberResult(priorRef, laterRef, rscrRef, continuityOrChangeClaim, losses
   = one exact C.2.1 result claim after the rule application and its evidence are recoverable.
 ```
 
-`changedSliceOK(...)` may summarize only exact current changed-member results that pass for the named receiving use; `fail` or `undetermined` leaves the affected use unadmitted. Unchanged members reuse prior results after a direct contradiction check; one changed member does not trigger a full-slice rerun unless its dependencies invalidate the other results.
+`changedSliceOK(...)` may summarize only exact current changed-member results that pass for the named receiving use; `fail` or `undetermined` leaves the affected use unadmitted.
+
+Reuse prior results for unchanged members after a direct contradiction check. One changed member does not trigger a full-slice rerun unless its dependencies invalidate the other results.
 
 ```text
 failedRule(ruleRef, subjectClaimRef)
@@ -333,9 +353,13 @@ F.15 result:
 * An `ExecutionSystemRoleKindDescription` remains an F.4 episteme about one exact local `ExecutionSystemRole` under one scheme; it does not describe both cells, assign a system, or prove work.
 * If a later `task` sense becomes cyclic while the `activity` sense remains non-periodic, RSCR-F15-E4 and E9 compare exact later cells and Bridge candidates; evidence may change the use claim or reliance without silently rewriting the prior Bridge.
 
-Suppose `CheckRun-17` is dated assessment `U.Work`, `CheckMethod-17` is its semantic `U.Method`, `CheckInterval-17` is the Work interval, and `HarnessSystem-17` is the containing System. `Evaluator-17` is the admitted `U.System` that performs the Work using that Method during `CheckInterval-17`. First recover Evaluator-17's A.13 core for this action, including declared assignment species `EvaluatorAssignmentSpecies-17` and one obtaining occurrence `EvaluatorAssignment-17` with every required participant value, Evaluator-17 as holder, and interval coverage. A.15.1 then independently admits `CheckRun-17` from its performance history, enacted Method, interval, and containing-System relation. Because this example also claims performance under `EvaluatorAssignment-17`, F.6 afterward links the already admitted Work to that same assignment.
+Suppose `CheckRun-17` is dated assessment `U.Work`, `CheckMethod-17` is its semantic `U.Method`, `CheckInterval-17` is the Work interval, and `HarnessSystem-17` is the containing System. `Evaluator-17` is the admitted `U.System` that performs the Work using that Method during `CheckInterval-17`.
 
-`ApplySCR-S12-17` is the exact A.6.1 rule application and bindings. `BridgeRuleResult-17` is a separate C.2.1 result claim; `WitnessTrace-17` and its A.10 path are separate again. `UnificationConformanceRecord-17` merely cites those admitted refs. Publishing the record requires its own E.24.PUB occurrence, form, and carrier.
+First recover Evaluator-17's A.13 core for this action, including declared assignment species `EvaluatorAssignmentSpecies-17` and one obtaining occurrence `EvaluatorAssignment-17` with every required participant value, Evaluator-17 as holder, and interval coverage.
+
+A.15.1 then independently admits `CheckRun-17` from its performance history, enacted Method, interval, and containing-System relation. Because this example also claims performance under `EvaluatorAssignment-17`, F.6 afterward links the already admitted Work to that same assignment.
+
+`ApplySCR-S12-17` is the exact A.6.1 rule application and bindings. `BridgeRuleResult-17` is a separate C.2.1 result claim; `WitnessTrace-17` and its A.10 path are separate again. The record `UnificationConformanceRecord-17` cites these independently admitted items. Publishing the record requires an E.24.PUB publication occurrence with a particular expression borne by a carrier. If a reusable publication form is selected, check that expression’s conformance to it.
 
 #### F.15:13.2 - Service availability across service and observation schemes
 
@@ -344,7 +368,7 @@ The slice contains one service-management status value/use and one uptime-observ
 F.15 result:
 
 * SCR-F15-S14 requires F.10 for the status family/value, target, scope, window, source condition, and intended use, or the exact defining or testing rule for the current status claim.
-* A named cross-local comparison must pass SCR-F15-S12 and S13; the row or shared `availability` label does not create the Bridge.
+* If the comparison uses a semantic correspondence, check it under SCR-F15-S12 and S13. To use the uptime measurement to judge service fulfilment, check the applicable measurement and acceptance rules. A shared label or row establishes neither claim.
 * Observation evidence and A.10 reliance are not the status value, comparison result, assurance claim, or F.15 result.
 * Use B.3 only when an actual named assurance claim is current. If a direct rule requires that claim for this use, recover it first; materiality or slice membership alone establishes no assurance claim.
 
@@ -382,7 +406,7 @@ F.15 result:
 
 ### F.15:13.6 - Bias-Annotation
 
-F.15 counters unification bias by comparing actual definitions, local senses and continuity grounds. Shared spelling, table membership, a stable id, an earlier pass, a Bridge description or a NameCard does not establish common meaning or continuity.
+F.15 counters unification bias by comparing definitions, local senses and continuity grounds. Shared spelling, table membership, a stable id, an earlier pass, a Bridge description or a NameCard does not establish common meaning or continuity.
 
 ### F.15:14.5 - Conformance Checklist
 
@@ -392,12 +416,12 @@ F.15 counters unification bias by comparing actual definitions, local senses and
 | `CC-F15-2` | Resolve every member to its exact governed value, occurrence, episteme, scheme, or version; selected Structure is optional and independent. |
 | `CC-F15-3` | Keep checked scope, rule, application/work, result claim, witness/evidence path, record episteme, publication occurrence/form/carrier, and currentness relation distinct. |
 | `CC-F15-4` | Check exact F.17/F.18 names, cells, cards, and rows without selecting names or duplicating their settlement. |
-| `CC-F15-5` | Cite an actual F.9 Bridge only after its exact predicate obtains; keep description/Card, bounded-use claim, reliance, and receiving occurrence separate. |
+| `CC-F15-5` | Cite an F.9 Bridge occurrence only after its exact predicate obtains; keep description/Card, bounded-use claim, reliance, and receiving occurrence separate. |
 | `CC-F15-6` | Apply the defining or testing rule for each failed subject claim before the receiving use; a record update is not subject repair. |
 | `CC-F15-7` | For regression, name exact prior/later refs, the continuity or change claim, admitted losses, evidence, and receiving use; spelling and editions prove neither sameness nor difference. |
 | `CC-F15-8` | Reuse unaffected result claims only after a direct contradiction check; rerun dependents, not the whole package by habit. |
 | `CC-F15-9` | Scope membership is not evidence, witnesses are not results, and a description/card/row/table/id establishes no governed relation or authority. |
-| `CC-F15-10` | Closure is limited to the exact slice versions, rule results, evidence/reliance, currentness, and receiving use actually checked. |
+| `CC-F15-10` | Closure is limited to the exact slice versions, rule results, evidence/reliance, currentness, and receiving use checked. |
 
 ### F.15:14 - Common Anti-Patterns and How to Avoid Them
 
@@ -442,7 +466,7 @@ Closure is local. A later change reopens only the affected rule results and thei
 
 ### F.15:15.2 - Rationale
 
-Cross-local reuse depends on the exact local meanings and supported relation; regression compares the relevant earlier and later values for a named use. F.15 brings those checks together in a finite slice and returns unresolved subject questions to the patterns that can settle them.
+Cross-local reuse depends on the exact local meanings and supported relation. Regression compares the relevant earlier and later values for a named use. F.15 brings those checks together in a finite slice and returns unresolved subject questions to the patterns that can settle them.
 
 ### F.15:17 - SoTA-Echoing
 
@@ -464,12 +488,16 @@ Currentness rule: when the defining or testing rule for a value—or F.17/F.18, 
 * **F.9, C.2.1, A.10, and B.3.** Govern actual Bridge occurrences, separate bounded-use claims, evidence reliance, and assurance. Descriptions, Cards, `CL`, and witnesses are not relation truth or use authority.
 * **F.10 or the applicable status pattern.** Use it for status family, value, target, scope, window, source, and use claims.
 * **A.1.1 and A.22.** Supply an optional independently selected bounded-model-use Structure only when its organization changes the checked use; description and membership remain separate.
-* **A.13, A.15.1, F.6, and A.6.1.** A.13 recovers each exact actual performer and A.15.1 independently admits dated Work; F.6 adds only an expressly consumed precise assignment-bound attribution through the same obtaining A.13 assignment, and A.6.1 governs exact rule application. Ordinary checking need not be admitted as `U.Work`, and missing or failed F.6 alone leaves independently admitted Work intact. Recheck any admission premise invalidated by the same finding, with its dependent conclusions, under F.6:4.2.
+* **A.13, A.15.1, F.6, and A.6.1.** A.13 recovers each exact actual performer and A.15.1 independently admits dated Work; F.6 adds only an expressly consumed precise assignment-bound attribution through the same obtaining A.13 assignment, and A.6.1 governs exact rule application.
+
+  Ordinary checking need not be admitted as `U.Work`, and missing or failed F.6 alone leaves independently admitted Work intact. Recheck any admission premise invalidated by the same finding, with its dependent conclusions, under F.6:4.2.
 * **E.24.PUB and G.11.** Govern publication occurrence/form/carrier and currentness separately from the checked record.
 * **C.34.** Supplies architecture-specific preservation or equivalence adequacy when exact selected architecture structures and losses are the live subject; F.15 carries only the finite regression check and result refs.
 
 ### F.15:18 - Didactic distillation
 
-Use F.15 as a small check over exact already-governed objects. First pin the finite scope, versions, rules, and receiving use. Then check locality and naming: schemes and cells are exact, the F.18 result records the selected names, an F.17 result records any admitted row, and actual Bridges remain separate from Cards and use claims. Next check execution and result: an application or dated Work is not its C.2.1 result, witnesses are not evidence use, and a record does not perform or publish anything. For change, compare exact prior/later refs and state continuity, loss, and use. When a rule fails, re-evaluate that subject claim under its defining or testing rule; do not patch the label or record field.
+Use F.15 as a small check over exact already-governed objects. First pin the finite scope, versions, rules, and receiving use. Then check locality and naming: schemes and cells are exact, the F.18 result records the selected names, an F.17 result records any admitted row, and actual Bridges remain separate from Cards and use claims. Next check execution and result: an application or dated Work is not its C.2.1 result, witnesses are not evidence use, and a record does not perform or publish anything.
+
+For change, compare exact prior/later refs and state continuity, loss, and use. When a rule fails, re-evaluate that subject claim under its defining or testing rule; do not patch the label or record field.
 
 ### F.15:End

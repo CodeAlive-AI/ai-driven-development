@@ -12,13 +12,13 @@
 
 Start with one bounded subject, a question worth investigating, a horizon, protected conditions, and an effort limit. The question may concern a known receiver or what a change to available material could reveal. Ask what could change if the receiving use, the way of contributing, a relevant characteristic, or the support were different. The first useful result can be a small set of materially different leads with their generating operations, sources and next question. An examined local result can also be enough to stop this branch.
 
-This is opportunity-generating search: the worthwhile problem and target contribution may still be provisional. A *lead* is a possibility worth examining, not yet a supported need, complete direction, or reachable change. A separate adviser is unnecessary.
+This is opportunity-generating search: the worthwhile problem and target contribution may be provisional. A *lead* is a possibility worth examining, not yet a supported need, complete direction, or reachable change. A separate adviser is unnecessary.
 
-**Ordinary non-use boundary.** Reuse an adequate lead or direction set when another search is unlikely to change the current inquiry. If a bounded decision-support question already needs a finite alternative set, use an applicable Method for generating decision alternatives. If one domain practice owns the whole discovery question, use it directly. If the only question is a requirement's justification, use C.11.DUA with its direct domain basis without reopening opportunity search. Do not open a generation archive merely to remember two possibilities.
+**Ordinary non-use boundary.** Reuse an adequate lead or direction set when another search is unlikely to change the current inquiry. If a bounded decision-support question already needs a finite alternative set, use an applicable Method for generating decision alternatives. If one domain practice owns the whole discovery question, use it. If the only question is a requirement's justification, use C.11.DUA with its domain basis without reopening opportunity search. Do not open a generation archive merely to remember two possibilities.
 
 ### C.40.NU:2 - Problem
 
-A search can inherit its answer from the first suggestion. Searching for better courses still assumes that learning is the needed change; searching for better models still assumes that the model is the limiting part. Different brands then masquerade as different opportunities.
+A search can inherit its answer from the first suggestion. Searching for better courses still assumes that learning is the needed change; searching for better models still assumes that the model is the limiting part. Different brands are then mistaken for different opportunities.
 
 Unbounded brainstorming fails differently. It accumulates possibilities without a recoverable receiving use, generating operation, source limit, or next discriminating question. Idea count and novelty replace usefulness; checking every lead consumes the time intended for development.
 
@@ -41,7 +41,7 @@ Vary the few dimensions that could change the opportunity, make the resulting di
 
 #### C.40.NU:4.1 - Choose the search question and its limit
 
-Recover the subject and configuration, the receiving concern when known, the local question, horizon, protections, and effort boundary. Use `C.40.OI` only if these are still too loose to distinguish a useful lead from a slogan. Use `C.40.OC` when an unclear characteristic, scale, or current reading prevents a productive contrast.
+Recover the subject and configuration, the receiving concern when known, the local question, horizon, protections, and effort boundary. Use `C.40.OI` only if these are too loose to distinguish a useful lead from a slogan. Use `C.40.OC` when an unclear characteristic, scale, or current reading prevents a productive contrast.
 
 Write a question such as: “What different contribution could help the receiving engineer recover unsupported acceptance claims within this quarter?” The question may explore what is worthwhile; it need not name one fixed target or preferred solution.
 
@@ -58,7 +58,7 @@ Use the following search prompts selectively.
 | Substitute a technology or Method | Could manual, organizational, technical, provider, or mixed support supply the contribution differently? | A different mechanism, burden, limitation, or dependency, not just a new brand. |
 | Vary a characteristic | Could lower latency, clearer limits, better accessibility, reversibility, or a different burden make a contribution worthwhile? | An action-changing characteristic and the question about its meaning or evidence. |
 | Combine or change support | Could access, feedback, review, interfaces, resources, or a different division of contributions make an existing capability usable? | The support change and the dependency it would remove or introduce. |
-| Challenge an assumed constraint | Is this restriction a fact, an authoritative limit, a chosen premise, or an untested assumption? | A conditional alternative and the exact premise that must be resolved. |
+| Challenge an assumed constraint | Is this restriction a fact, an authoritative limit, a chosen premise, or an untested assumption? | A conditional alternative and the premise that must be resolved. |
 
 Do not lift a binding safety, confidentiality, legal, or authority condition merely to generate a convenient lead. If the requirement's own justification is the live question, use `C.11.DUA` §4.3 with the competent domain contribution. Identify the protected person or System and outcome, governed quantity or activity, evidence and threshold basis, marginal protection, full burden and displaced protective work. Compare retaining, tightening, revising or replacing it only where those are meaningful alternatives.
 
@@ -68,7 +68,7 @@ Use explicit value questions: what would matter to a receiver, what burden shoul
 
 #### C.40.NU:4.3 - Keep the operation, source, and claim status together
 
-For each retained lead, say what was varied, where the idea came from, what concrete difference might matter, and any material limit or unsupported premise. Preserve a source date or edition when its currentness affects the next use. Distinguish the source's actual claim from the inference made for this subject.
+For each retained lead, say what was varied, where the idea came from, what concrete difference might matter, and any material limit or unsupported premise. Preserve a source date or edition when its currentness affects the next use. Distinguish the source's claim from the inference made for this subject.
 
 For example: “The supplier describes long-record retrieval; changing the receiving use from automatic approval to claim-to-evidence recovery suggests a possible review aid. We have no result establishing its accuracy or permitted use with these records.” That is a search lead with a testable connection, not a supplier-validated opportunity.
 
@@ -78,11 +78,11 @@ Independent-looking pages that repeat one announcement supply one lineage of sug
 
 Keep a lead when its difference could change the receiving problem, proposed contribution, support, burden, protection, horizon, or next evidence request. Merge duplicates whose differences change none of those. Do not discard a distinct useful question solely because another lead has a more impressive demonstration.
 
-Keep the current way, a smaller repair, or no new development when each is a serious answer. “No new development” still has the continuing Work, costs, and exposure of the actual baseline.
+Keep the current way, a smaller repair, or no new development when each is a serious answer. “No new development” still has the continuing Work, costs, and exposure of the baseline.
 
 Mark leads as ready for problem/contribution inquiry, conditional on a named premise, rejected for this use, or retained for a separately stated future question. These are working descriptions, not scores or a universal classification. The strongest available result may be that none of the searched leads yet identifies a worthwhile contribution.
 
-#### C.40.NU:4.5 - Stop at a useful difference or an exact gap
+#### C.40.NU:4.5 - Stop at a useful difference or a gap
 
 Stop widening when the retained contrasts expose the unknowns that can change the inquiry at its chosen effort, when an adequate set already exists, or when a missing premise makes further generation uninformative. If the effort limit is reached first, report that limit and any consequential unsearched area; do not describe the search as sufficient merely because the time was spent.
 
@@ -90,9 +90,9 @@ When the receiving inquiry needs a further answer, state the discriminating ques
 
 A two-sentence return can suffice: “Changing the use and support exposed claim-to-evidence recovery and shift-exception handoff as different leads; three other products repeat the first mechanism. We stopped after the agreed source search because the next difference depends on whether receivers need either contribution; accessibility beyond the current office use remains unsearched.”
 
-#### C.40.NU:4.6 - Use formal search machinery only for its actual question
+#### C.40.NU:4.6 - Use formal search machinery only for the questions it answers
 
-Use [C.17](../03-first-principles-framework-readme/_index.md) when novelty, creativity, or value must be characterized for a named bearer, comparison basis, and objective. A novelty result alone does not establish worth for this opportunity inquiry. Use [C.18](../03-first-principles-framework-readme/_index.md) when an actual generation archive or front needs its generator, operators, descriptors, lineage, retention, or comparison basis. Use [C.19](../03-first-principles-framework-readme/_index.md) when the question is how to treat a still-live pool under its declared policy: widen it, keep its frontier, narrow it to a subset, or sunset a line. Selecting the next local candidate or probe under an unchanged policy is not that question.
+Use [C.17](../03-first-principles-framework-readme/_index.md) when novelty, creativity, or value must be characterized for a named bearer, comparison basis, and objective. A novelty result alone does not establish worth for this opportunity inquiry. Use [C.18](../03-first-principles-framework-readme/_index.md) when a generation archive or front needs its generator, operators, descriptors, lineage, retention, or comparison basis. Use [C.19](../03-first-principles-framework-readme/_index.md) when the question is how to treat a live pool under its declared policy: widen it, keep its frontier, narrow it to a subset, or sunset a line. Selecting the next local candidate or probe under an unchanged policy is not that question.
 
 Visiting a new region does not by itself expand the admissible possibility space. A stronger expansion claim needs the earlier and changed generation conditions and evidence of what a new operator, access relation, or building block makes available. Ordinary neighboring search need not make that claim.
 
@@ -147,7 +147,7 @@ A conforming search return:
 2. **MUST** identify the generating operations and the differences that make retained leads consequential.
 3. **MUST** distinguish source claims, local inferences, analogy, and missing evidence.
 4. **MUST NOT** equate source count, idea count, novelty, or a supplier demonstration with local worth or reachability.
-5. **MUST** preserve binding constraints while separately identifying assumptions that may be investigated. A live merits question returns its supported judgement of protection and burden and the actual amendment limit, without treating the recommendation as a changed rule.
+5. **MUST** preserve binding constraints while separately identifying assumptions that may be investigated. A live merits question returns its supported judgement of protection and burden and the amendment limit, without treating the recommendation as a changed rule.
 6. **MUST** state the stopping reason and any unsearched area whose omission can change the receiving use.
 7. **MUST** return a useful local answer, a next question with action-changing answers, an adequate lead set, rejection, or a specific gap.
 8. **MUST NOT** require a workshop, exhaustive search, archive, live pool, recommendation, or selected direction for an ordinary search result.
@@ -162,7 +162,7 @@ A conforming search return:
 | Analogy as permission | Another configuration's demonstration supplies no local access or safety basis. | Retain the conditional lead; obtain the receiving practice's result when its attainable contribution warrants the burden. |
 | Protected constraint deleted | The attractive lead depends on an unauthorized change. | Keep the limit or investigate a separately authorized alternative. |
 | Infinite ideation | Generation postpones the receiver or evidence question. | State which answer would retain, narrow or reject the lead; obtain it when worthwhile, or finish with the conditional result or gap. |
-| Archive as value verdict | Retention is mistaken for a useful or non-dominated opportunity. | Name the archive's actual retention basis and keep worth and comparison separate. |
+| Archive as value verdict | Retention is mistaken for a useful or non-dominated opportunity. | Name the archive's retention basis and keep worth and comparison separate. |
 
 ### C.40.NU:9 - Consequences
 
@@ -182,7 +182,7 @@ Stopping at the next discriminating question converts breadth into a usable retu
 
 **Best-known line for this use.** Value-guided contrastive search, coupled to source-qualified return, supplies the useful move. [ISO 56007:2023](https://www.iso.org/standard/75068.html) places opportunity and concept work before solution development and deployment and rejects one universal tool set. Its public scope supplies a normative boundary, not evidence that this search succeeds. [Keeney's value-focused brainstorming](https://pubsonline.informs.org/doi/10.1287/deca.1120.0251) supplies the historical generation anchor: use explicit values to generate alternatives and, when groups are involved, obtain individual ideas before group anchoring. This pattern **adapts** those contributions in `:4.1`–`:4.5` to provisional receiving uses, explicit operations, protected constraints, and proportional stopping.
 
-**Comparison at comparable effort.** A short supplier-menu search is efficient when the needed contribution is settled. In the constructed model case, the same bounded inquiry obtains more consequential differences by varying use and support than by retaining three brands. Unstructured brainstorming can reveal surprises but leaves the practitioner to reconstruct source limits and the next question. Adopt the contrastive move for that unresolved-use situation; retain a menu or direct domain Method when it already answers the question. The cost is explaining each retained difference instead of reporting only names.
+**Comparison at comparable effort.** A short supplier-menu search is efficient when the needed contribution is settled. In the constructed model case, the same bounded inquiry obtains more consequential differences by varying use and support than by retaining three brands. Unstructured brainstorming can reveal surprises but leaves the practitioner to reconstruct source limits and the next question. Adopt the contrastive move for that unresolved-use situation; retain a menu or domain Method when it already answers the question. The cost is explaining each retained difference instead of reporting only names.
 
 **Current neighboring contribution.** An applicable decision-alternative generation Method supplies a finite alternative set for a bounded decision-support question; C.18 supplies archive/front stewardship. Neither result is required merely to perform this earlier search. Their boundaries prevent a search lead from being promoted by its position in a list or archive.
 
@@ -195,7 +195,7 @@ Stopping at the next discriminating question converts breadth into a usable retu
 - **Supplies C.40.PC:** leads whose worthwhile problem and proposed contribution need inquiry.
 - **Supplies C.40.DC:** leads with an adequate contribution premise that need distinct support configurations.
 - **Returns to decision-alternative generation:** finite alternative generation when a bounded decision-support question is the receiving use; this is a conditional return, not the next numbered stage.
-- **Uses C.17, C.18, or C.19:** only for the actual novelty/value characterization, archive/front stewardship, or live-pool treatment policy each governs; local candidate/probe selection is a different question.
+- **Uses C.17, C.18, or C.19:** only for the novelty/value characterization, archive/front stewardship, or live-pool treatment policy each governs; local candidate/probe selection is a different question.
 - **Uses C.40.JF and C.40.RQ:** qualification of a material reachability premise and tracing of changed premises into retained uses.
 - **Returns to domain and holder practices:** local need, feasibility, capability, access, safety, and other substantive results that search cannot supply.
 

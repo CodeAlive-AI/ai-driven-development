@@ -3,7 +3,7 @@
 > **Type:** Method pattern
 > **Status:** Stable
 
-> **Primary working result:** `keep`, `revise`, `replace`, `branch`, or `stop` for one named Method decision, or a retained set with its limitation when the choice remains unresolved. The result compares the receiving contribution and full burden of the current alternatives, then states what the selected action preserves, creates or changes within its qualification window. Bounded evidence may inform another Method-repertoire decision without transferring this decision or a broader claim.
+> **Primary working result:** `keep`, `revise`, `replace`, `branch`, or `stop` for one Method decision, or a retained set with its limitation when the choice remains unresolved. The result compares the receiving contribution and full burden of the current alternatives, then states what the selected action preserves, creates or changes within its qualification window. Bounded evidence may inform another Method-repertoire decision without transferring this decision or a broader claim.
 
 ### C.11.MV:0 - Use This When
 
@@ -13,13 +13,15 @@ The first useful result is a practical-worth comparison for the named Method or 
 
 Here *practical worth* is Plain practice wording for the situated judgment that a Method-related course is worth keeping, changing, replacing, branching, or stopping relative to named alternatives. It is not a universal score, Method admission, fit result, causal attribution, or organization-wide adoption decision.
 
-Use C.11.DUA §4.3 directly when the whole question is a requirement’s justification; C.39.RQ §4.4 applies it to a situated Method criterion. Return to C.11.MV when a Method-related course also needs comparison. Do not use this pattern when no current alternative or decision receiver is named. Conformance, familiarity, one favourable occurrence or Method popularity alone does not establish comparative worth. A.3.1.QM qualification, A.3.1.CC coherence and A.3.1.FT fit can inform the present comparison; each retains its own scope. A missing stronger empirical result can limit this decision without erasing an independently supported current choice.
+Use C.11.DUA §4.3 directly when the whole question is a requirement’s justification; C.39.RQ §4.4 applies it to a situated Method criterion. Return to C.11.MV when a Method-related course also needs comparison. Do not use this pattern when no current alternative or decision receiver is named.
+
+Conformance, familiarity, one favourable occurrence or Method popularity alone does not establish comparative worth. A.3.1.QM qualification, A.3.1.CC coherence and A.3.1.FT fit can inform the present comparison; each retains its own scope. A missing stronger empirical result can limit this decision without erasing an independently supported current choice.
 
 #### C.11.MV:0.1 - Working Distinctions
 
 | Item | Working meaning here | Boundary |
 | --- | --- | --- |
-| current alternative | A feasible Method, variant, support change, status quo, stop, or next-slot course available to the named decision within its window. | A historical example or impossible ideal is not a current alternative unless it changes the decision. |
+| current alternative | A feasible Method, variant, support change, status quo, stop, or next-slot course available to the named decision within its window. | Historical examples and impossible ideals may inform the comparison when they can affect the decision; the current alternative set contains only feasible courses available within the decision window. |
 | domain result | The result in the receiving practice that the Method-related Work is intended to help produce or protect. | A Method task pass, conformance result, or positive report is not automatically the domain result. |
 | burden | Time, cognitive, coordination, resource, maintenance, transition, or evidence burden observed or credibly estimated for the alternative. | Burden is not one scalar unless an explicitly defined aggregation is justified for the decision. |
 | capability demand | The holder, Work family or result class, operating envelope, measures, qualification window, and evidence required for reliance. | Training completion, title, assignment, permission, authority, or one success does not establish capability. |
@@ -67,10 +69,12 @@ Compare feasible current alternatives in the named decision situation using sepa
 4. **Assemble the available basis by alternative.** Use current A.3.1.QM qualification, credible domain estimates or judgement, and structural constraints alongside A.3.1.WT actual Work, A.3.1.CC corrections and A.3.1.FT fit or transfer results where available and relevant. Distinguish observed results from estimates, recover the source and conditions of each relied-on claim, and retain the missing basis that limits the decision. Absence of evidence for one alternative is not evidence of its inferiority.
 5. **Preserve the receiving result and Method contribution boundary.** Record the domain result separately from Method task completion, support use, report, or self-assessment. Distinguish direct observation, association, contribution, and causal claim. If contribution is unknown, compare the observed or estimated bundle at its supported strength and carry the attribution limit where it matters to the recipient.
 6. **Compare capability, System, Work, and relation demands explicitly.** For every alternative, name holder-capability inputs, participating Systems, Agent-performed Work, direct relations, assignments, permissions, authority, access, provider and confidentiality boundaries, maintenance, recovery, and evidence Work that changes the decision. Do not let availability or assignment substitute for capability.
-7. **Keep trade-offs visible.** Show where one alternative improves a domain result but increases burden, side effect, exposure, or opportunity cost. Use current `A.19.CPM` for non-trivial multi-criteria comparison and `A.19.SelectorMechanism` when a set-valued selection is needed. Do not invent a total order or scalar winner.
+7. **Keep trade-offs visible.** Show where one alternative improves a domain result but increases burden, side effect, exposure, or opportunity cost. Use `A.19.CPM` for non-trivial multi-criteria comparison and `A.19.SelectorMechanism` when a set-valued selection is needed. Do not invent a total order or scalar winner.
 8. **Compare branch and further-inquiry options where they matter.** Ask whether alternatives serve different situation families and what information, retained material, capability, support or rollback a branch needs. Name its situation discriminator. Select a further trial or inquiry through C.11.DUA only when its obtainable result could change the choice enough to warrant its full burden, including displaced Work and the available window. An adequate current choice can finish directly.
 9. **Return the strongest supported action.** `keep` retains the present course for the named window; `revise` names the decision or maintained result to reconsider under step 10; `replace` names the selected alternative and transition conditions; `branch` names the situation discriminator and retained alternatives; `stop` names the stopped use or change, what happens to current Work, and any unresolved trade-off. If the available basis cannot distinguish the possible actions, return the retained set and the limitation, together with any supported present course. Select a further probe only under step 8. A stronger choice can remain unresolved when no worthwhile inquiry is feasible.
-10. **Route each action according to its kind.** For `revise`, `replace`, or `branch`, name the receiving C.39.RP repertoire choice, C.39.RQ requirement, C.32.MWA.PP architecture decision, B.1.5.CM construction result, or A.3.1.MV entry and the change needed there. If an existing claim is contradicted, identify that claim and reopen only its owning result. If this is a first situated choice or a new applicability distinction, create the needed decision or entry through its owner; do not invent an earlier claim or contradiction. `keep` adds no repair return. `stop` preserves any unresolved trade-off and stopped use without inventing a correction owner. If the comparison exposes a possible A.3.2.DE description, C.37.MP Method representation profile-row, A.15.8.MS support, or directly governed lower representation contradiction, return the bounded evidence to A.3.1.CC; A.3.1.CC identifies and rechecks the maintained correction owner. A worth result does not rewrite that owner automatically.
+10. **Route each action according to its kind.** For `revise`, `replace`, or `branch`, name the receiving C.39.RP repertoire choice, C.39.RQ requirement, C.32.MWA.PP architecture decision, B.1.5.CM construction result, or A.3.1.MV entry and the change needed there. If an existing claim is contradicted, identify that claim and reopen only its owning result. If this is a first situated choice or a new applicability distinction, create the needed decision or entry through its owner; do not invent an earlier claim or contradiction. `keep` adds no repair return. `stop` preserves any unresolved trade-off and stopped use without inventing a correction owner.
+
+    If the comparison exposes a possible A.3.2.DE description, C.37.MP Method representation profile-row, A.15.8.MS support, or directly governed lower representation contradiction, return the bounded evidence to A.3.1.CC; A.3.1.CC identifies and rechecks the maintained correction owner. A worth result does not rewrite that owner automatically.
 11. **Return evidence to another Method-repertoire decision only when needed.** Supply the situated Method-worth evidence and limits needed for a compatible decision in engineering or another subject practice. This return transfers neither the C.11.MV action, authority, Method rank, causal claim, nor evidence beyond its source-use conditions.
 12. **State refresh conditions.** Reopen when alternatives, domain consequences, capability or support demands, direct relations, evidence reach, costs, reversibility, situation fit, or the receiving decision window changes.
 
@@ -92,7 +96,7 @@ Ordinary prose or an existing comparison can carry this content. Use the table t
 
 #### C.11.MV:4.3 - What Changes in Practice
 
-Teams stop asking whether a Method is “best” in the abstract. They can see what it changes in the receiving practice, what it demands from people and Systems, which side effects and opportunities matter, what the evidence actually reaches, and why several alternatives may remain.
+Teams stop asking whether a Method is “best” in the abstract. They can see what it changes in the receiving practice, what it demands from people and Systems, which side effects and opportunities matter, what the evidence reaches, and why several alternatives may remain.
 
 This also makes stopping constructive. A `stop` can protect scarce Work or avoid an unrecoverable commitment while retaining the evidence and conditions needed to reopen the decision later.
 
@@ -100,7 +104,9 @@ This also makes stopping constructive. A `stop` can protect scarce Work or avoid
 
 Continue the constructed temperature-sensor review case. The decision is how `Calibration-Team-A` should review reports through day D30. Alternative `ALT-M` retains admitted `M-Unit-Review-1`, description edition 4, and the manual conversion table; for the present review decision it uses the representation repaired in A.3.1.CC. Alternative `ALT-L` uses the current lightweight checklist that verifies tolerance but has no explicit unit-normalization step. `ALT-S` stops the proposed Method change and keeps the present release hold until a supported permissible continuation is available.
 
-The evidence for `ALT-M` includes the two earlier admitted A.3.1.WT occurrences of `M-Unit-Review-1` performed by the same qualified `Reviewer-17`: seven minutes on the ordinary same-unit report and twelve minutes plus one table lookup on the mixed-unit report; both decisions were correct and the mixed-unit release was stopped. A separate constructed matched replay of `ALT-L`, admitted as `W-L-Rep-1` and `W-L-Disc-1` under the same holder, team, report pair, and window, took five and six minutes. It accepted the ordinary report but failed to expose the mixed-unit mismatch. The replay supplies no causal claim beyond these occurrences and no evidence about another holder or automated support route. The two earlier A.3.1.WT observations are not trials of the later representation repair in A.3.1.CC.
+The evidence for `ALT-M` includes the two earlier admitted A.3.1.WT occurrences of `M-Unit-Review-1` performed by the same qualified `Reviewer-17`: seven minutes on the ordinary same-unit report and twelve minutes plus one table lookup on the mixed-unit report; both decisions were correct and the mixed-unit release was stopped. A separate constructed matched replay of `ALT-L`, admitted as `W-L-Rep-1` and `W-L-Disc-1` under the same holder, team, report pair, and window, took five and six minutes. It accepted the ordinary report but failed to expose the mixed-unit mismatch.
+
+The replay supplies no causal claim beyond these occurrences and no evidence about another holder or automated support route. The two earlier A.3.1.WT observations are not trials of the later representation repair in A.3.1.CC.
 
 | Position | `ALT-M` | `ALT-L` | `ALT-S` |
 | --- | --- | --- | --- |
@@ -110,7 +116,11 @@ The evidence for `ALT-M` includes the two earlier admitted A.3.1.WT occurrences 
 | reversibility | Checklist and representation can be reverted while evidence is retained. | Already current; reverting loses no transition Work but retains the exposed hazard. | Reopen after the missing comparison or support basis is supplied. |
 | evidence strength | Two constructed teaching occurrences, not field evidence. | Two constructed teaching occurrences, not field evidence. | Consequence follows from the stated stop; downstream cost is unmeasured. |
 
-Return `branch`: require `ALT-M` for reports whose sources can use different unit systems; retain `ALT-L` for the bounded same-unit situation. The discriminator is recoverable source-unit variability, not reviewer preference. Retain `ALT-S` as the stop when that variability cannot be recovered. No earlier decision about this unit-variability branch is supplied in the constructed case. Return the branch to A.3.1.MV as new applicability entry `APP-UnitReview-TeamA-D30`, recording the three alternatives, the source-unit discriminator and the D30 window. It records when to use the existing alternatives; it changes no Method identity and claims no contradicted predecessor. This result covers the stated conditions through D30. For a later reliance, use A.10.1 to identify which premises remain applicable and which qualification, condition or evidence gap actually needs renewal. A real expiry still limits use; new field investigation is selected for its useful obtainable answer, not merely because the date advanced.
+Return `branch`: require `ALT-M` for reports whose sources can use different unit systems; retain `ALT-L` for the bounded same-unit situation. The discriminator is recoverable source-unit variability, not reviewer preference. Retain `ALT-S` as the stop when that variability cannot be recovered.
+
+No earlier decision about this unit-variability branch is supplied in the constructed case. Return the branch to A.3.1.MV as new applicability entry `APP-UnitReview-TeamA-D30`, recording the three alternatives, the source-unit discriminator and the D30 window. It records when to use the existing alternatives; it changes no Method identity and claims no contradicted predecessor.
+
+This result covers the stated conditions through D30. For a later reliance, use A.10.1 to identify which premises remain applicable and which qualification, condition or evidence gap needs renewal. A real expiry still limits use; new field investigation is selected for its useful obtainable answer, not merely because the date advanced.
 
 This result does not show that `ALT-M` is universally superior or caused every correct decision. It demonstrates why lower burden alone cannot compensate for the current release stop. The merits of that stop are a separate question when they are disputed; use §4.5 for that appraisal.
 
@@ -126,7 +136,7 @@ A proposed automated conversion route might reduce later review effort, but its 
 
 Use C.11.DUA §4.3 when the live comparison asks whether a protective criterion, threshold or evidence demand is justified. Identify the protected person, system or result and the particular unwanted outcome. Examine the governed quantity or activity, the measurement and causal basis needed for this question, the threshold’s value choice, and the additional protection under the present conditions. Compare that protection with the burden, delay and displaced protective Work, using the domain methods needed to judge them. Return supported retention, tightening, revision, replacement or removal only among meaningful alternatives.
 
-In the unit-review case, normalization exposes a consequential mismatch that the tolerance-only checklist missed. That supports preserving the protection where source units can vary. Whether every report needs the same extra operation still depends on the actual unit guarantees, what the operation adds and what its burden displaces. The label safety and the fact that a rule is currently binding settle neither that merits question nor the authority to amend it.
+In the unit-review case, normalization exposes a consequential mismatch that the tolerance-only checklist missed. That supports preserving the protection where source units can vary. Whether every report needs the same extra operation still depends on the unit guarantees, what the operation adds and what its burden displaces. The label safety and the fact that a rule is currently binding settle neither that merits question nor the authority to amend it.
 
 Name the disputed protective rule and explain whether it should be retained or changed, what protection your advice preserves, and why the evidence supports it. If you propose a change, identify who can approve it and when it can take effect. End the appraisal with the supported advice and its relevant limits. Approval of a proposed change is a separate decision. Until the rule is changed, select only a way of working that complies with it. If none can deliver the needed result by the deadline, report that consequence. A later change of the rule does not undo the missed opportunity.
 
@@ -161,7 +171,11 @@ In the constructed EC-417 case, the team must release a controller firmware and 
 
 Keep the comparison tied to this decision and make burden, confidentiality, holder capabilities, project, user, provider, repository, PLM and CI Systems, Agent-performed Work, direct relations, recovery, side effects, reversibility, and evidence limits explicit. The three A.15.8.MS support tasks establish their bounded task observations only; the three-release WorkPlan supplies no release-worth evidence.
 
-Keep `C-EC-Release-v2` as a candidate. Preserve the missing A.22 selection basis, untested AI-provider and feedback branches, and unsupported `CUR-EC417-CadenceEffect-1`. The timing and capacity estimates support rejecting B's overloaded safety allocation and retaining B2 as a proposal for at most three trials under its entry conditions. If those conditions cannot be met, return stop/next-slot or the signed-first A alternative with its timing consequence. An actual release or trial entry still needs every applicable capability, assignment, permission and authority condition. If the question is demonstrated release worth, return the missing performed-release and alternative evidence. The observed support-task results, with the tailoring operation still undefined and its permission/authority stop untested, do not establish that stronger result.
+Keep `C-EC-Release-v2` as a candidate. Preserve the missing A.22 selection basis, untested AI-provider and feedback branches, and unsupported `CUR-EC417-CadenceEffect-1`.
+
+The timing and capacity estimates support rejecting B's overloaded safety allocation and retaining B2 as a proposal for at most three trials under its entry conditions. If those conditions cannot be met, return stop/next-slot or the signed-first A alternative with its timing consequence.
+
+An actual release or trial entry still needs every applicable capability, assignment, permission and authority condition. If the question is demonstrated release worth, return the missing performed-release and alternative evidence. The observed support-task results, with the tailoring operation still undefined and its permission/authority stop untested, do not establish that stronger result.
 
 #### C.11.MV:5.2 - Use situated evidence in another Method-repertoire decision
 
@@ -169,7 +183,7 @@ Supply evidence to another Method-repertoire decision only when that receiving u
 
 | Evidence contribution | Required boundary |
 | --- | --- |
-| source decision | C.11.MV subject and status, receiving practice, domain result, situation family, alternative set, qualification window, and exact action considered. |
+| source decision | C.11.MV subject and status, receiving practice, domain result, situation family, alternative set, qualification window, and action considered. |
 | evidence | Observations and credible estimates distinguished per alternative, with their sources, domain consequences, burdens, capability and System demands, side effects, opportunity costs, reversibility, reach and gaps. Actual Work, performers and direct relations retain their independently supported basis wherever claimed. |
 | supported statement | The smallest situated worth statement that bears on the receiving Method-repertoire decision. |
 | non-transfer | No transfer of the C.11.MV `keep`/`revise`/`replace`/`branch`/`stop` action, implementation authority, universal Method rank, causal claim, or evidence outside the stated source-use conditions. |
@@ -198,7 +212,7 @@ The receiving practice remains responsible for its Method repertoire and compati
 - [ ] Qualification, observations, estimates and structural or domain judgement retain their sources, applicable conditions and limits; stronger observed, fit, transfer and causal claims have the evidence they require.
 - [ ] Missing evidence is not converted into inferiority, and one favourable occurrence is not converted into causality.
 - [ ] Trade-offs, non-dominated alternatives, branch discriminators, and non-compensable stops remain visible.
-- [ ] When requirement merits are disputed, the recommendation compares actual protection and burden, retains the threshold or evidence basis needed for that judgement, and separates it from current force and feasible amendment.
+- [ ] When requirement merits are disputed, the recommendation compares the protective contribution and burden, retains the threshold or evidence basis needed for that judgement, and separates it from current force and feasible amendment.
 - [ ] The result is a supported `keep`, `revise`, `replace`, `branch`, `stop`, or retained set with its limit and any supported present course. A further probe is selected only for a useful obtainable answer worth its whole burden.
 - [ ] A `revise`, `replace`, or `branch` result names the owning result under §4.1 step 10 and distinguishes a new situated choice from correction of an identified contradiction; `keep` adds no repair return; `stop` preserves any unresolved trade-off and stopped use.
 - [ ] A possible description, representation or support contradiction returns as bounded evidence to A.3.1.CC under §4.1 step 10 for the applicable owner-specific check.
@@ -216,7 +230,7 @@ The receiving practice remains responsible for its Method repertoire and compati
 
 ### C.11.MV:9 - Consequences
 
-Practical-worth decisions become revisable accounts rather than Method rankings. Teams can act while retaining branch conditions, evidence gaps, and stop alternatives, and later evidence can reopen the exact comparison position that changed.
+Practical-worth decisions become revisable accounts rather than Method rankings. Teams can act while retaining branch conditions, evidence gaps, and stop alternatives, and later evidence can reopen the comparison position that changed.
 
 The cost is resisting a convenient scalar answer. Some comparisons leave several alternatives open or justify another probe, and the team must name burdens, capability and support demands, side effects, and opportunity costs that were previously hidden.
 
@@ -224,7 +238,13 @@ The cost is resisting a convenient scalar answer. Some comparisons leave several
 
 Worth is relational: a Method-related course is worth something for a receiver, situation, domain result, alternative set, and time. Coherence and fit can be necessary inputs to the decision, but they do not settle it. A visible trade-off is more actionable than a score whose composition and evidence reach are hidden.
 
-The five actions distinguish maintenance from change. `Keep` preserves a situated course and adds no repair return; `revise`, `replace`, and `branch` identify the owning decision or entry and distinguish a newly needed choice from correction of an existing claim; `stop` protects against unsupported or dominated continuation while preserving any unresolved trade-off and stopped use without inventing a correction owner. None supplies implementation authority.
+The five actions distinguish maintenance from change.
+
+- `Keep` preserves a situated course and adds no repair return.
+- `revise`, `replace`, and `branch` identify the owning decision or entry and distinguish a newly needed choice from correction of an existing claim.
+- `stop` protects against unsupported or dominated continuation while preserving any unresolved trade-off and stopped use without inventing a correction owner.
+
+None supplies implementation authority.
 
 ### C.11.MV:11 - SoTA-Echoing
 

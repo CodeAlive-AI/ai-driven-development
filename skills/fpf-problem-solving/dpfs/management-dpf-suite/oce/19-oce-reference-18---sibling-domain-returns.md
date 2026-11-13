@@ -4,7 +4,7 @@
 | --- | --- |
 | Which leadership contribution, capable help or continuation is missing? | [LDR.1](../ldr/08-ldr-1---obtain-and-continue-the-leadership-contribution-need.md) |
 | How can participants obtain feasible agreement on their contributions? | [LDR.2](../ldr/09-ldr-2---agree-feasible-joint-contributions.md) |
-| How can substantive discussion produce a usable answer? | [FPF B.5.SD](../../../sections/08-part-b---trans-disciplinary-reasoning-cluster/43-b-5-sd---construct-a-useful-answer-through-substantive-discu.md) |
+| How can substantive discussion produce a usable answer? | [FPF B.5.SD](../../../sections/08-part-b---trans-disciplinary-reasoning-cluster/43-b-5-sd---construct-an-answer-through-substantive-discussion.md) |
 | How can a proposal reach decision, commitment and first useful work? | [LDR.4](../ldr/10-ldr-4---prepare-a-proposal-for-decision-and-first-use.md) |
 | How can capability preparation and current obligations connect to real receiving work? | [OCE.18](34-oce-18---arrange-capability-development-and-receiving-work-i.md) |
 

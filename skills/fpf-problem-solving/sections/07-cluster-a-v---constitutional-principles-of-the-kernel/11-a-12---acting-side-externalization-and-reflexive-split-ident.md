@@ -17,7 +17,7 @@ Typical moments:
 - "the system verifies that its own change succeeded";
 - "the lathe makes the workpiece, therefore the workpiece is part of the lathe during manufacturing".
 
-**First useful move.** Name the proposed acting participant and the subject claimed to change, then state the relation between them that matters to your question. For the robot below, the calibration controller acts on the sensor suite. Keep ordinary wording when those participants and their relation are already clear. Use §4.1 when their identities or a particular System, change, Work or evidence claim need the precise account.
+**First useful move.** Name the proposed acting participant and the subject claimed to change, then state the relation between them that matters to your question. For the robot below, the calibration controller acts on the sensor suite. Keep ordinary wording when those participants and their relation are already clear. Use §4.1 when their identities or a System, change, Work or evidence claim need the precise account.
 
 **What goes wrong if missed.** A controller and controlled part can collapse into one object, an automated publication update can hide its performer, and the performer’s output can be mistaken for sufficient evidence of success. Changing another holon can also be mistaken for containing it.
 
@@ -37,8 +37,6 @@ Separate the acting and changed participants before deciding whether the claimed
 
 ### A.12:2 - Problem
 
-Without A.12:
-
 1. **Self-action hides the acting side.** "The system changed itself" leaves unclear who acts, what changes, and which participation relation is asserted.
 2. **Transformation and work collapse.** A bounded transformation, a method, a work occurrence, and evidence of success are treated as the same claim.
 3. **Epistemes become agents.** An episteme is treated as the acting participant because its carrier or an executing System is described as updating, deciding or verifying.
@@ -54,7 +52,7 @@ Without A.12:
 | Internal regulation vs object collapse | A larger holon may contain both regulator and regulated parts; that does not make the regulator and regulated position identical for the current claim. |
 | Automation vs accountability | Automated action may require distinct System, role, Method, Work and evidence claims; include each only when the explanation needs it and its basis holds. |
 | Episteme use vs episteme agency | A carrier update, another episteme edition and a changed publication relation need different identity tests (§4.3). A Work performer or `U.SystemRoleAssignment` holder must be an admitted `U.System`. |
-| Boundary crossing vs parthood | When an exact boundary-crossing relation independently satisfies the predicate, applicability, and identity rules that define it, it does not thereby make the acting system a part of the changed holon or the larger whole containing it. Without those rules, keep the crossing claim open rather than inferring either crossing or parthood. |
+| Boundary crossing vs parthood | When a boundary-crossing relation independently satisfies the predicate, applicability, and identity rules that define it, it does not thereby make the acting system a part of the changed holon or the larger whole containing it. Without those rules, keep the crossing claim open rather than inferring either crossing or parthood. |
 
 ### A.12:4 - Solution
 
@@ -97,14 +95,20 @@ For another condition, state the condition or relation and apply its defining or
 Use:
 
 - `A.3.4` when `transformationRef` becomes current;
-- `A.3.1` for Method identity, `A.3.2` for MethodDescription admission, `A.15.2` for a WorkPlan, and `A.15.1` for a dated Work claim; `A.15` connects these distinct claims, and an actual Work occurrence follows the performer/admission/attribution order below;
+- `A.3.1` for Method identity, `A.3.2` for MethodDescription admission, `A.15.2` for a WorkPlan, and `A.15.1` for a dated Work claim; `A.15` connects these distinct claims, and a Work occurrence follows the performer/admission/attribution order below;
 - `A.2.1` when an exact assignment occurrence becomes current, and `A.2.7` only when a relation among exact local system-role kinds becomes current;
 - `A.10` when evidence or source independence becomes current;
 - `A.1`, `A.14`, and `C.13` when holon identity, part-whole, or constructive grounding becomes current.
 
-For a dated Work claim, first establish each actual performer’s A.13 core: an admitted System, a local agential system-role kind and criterion it satisfies, an obtaining assignment, and the scope, situation and window the use needs, supported by evidence. Add an agency-characteristic profile only for a consumed Grade/autonomy/profile claim, a characteristic-dependent local criterion, or an assurance use that requires it. Then admit the occurrence independently under A.15.1 from its performance history, enacted Method, temporal extent and obtaining containing-System relation. Only if precise assignment-bound attribution is also claimed does F.6 relate that admitted Work to the same obtaining assignment. A Work-only account stops after admission.
+For a dated Work claim, first establish each actual performer’s A.13 core: an admitted System, a local agential system-role kind and criterion it satisfies, an obtaining assignment, and the scope, situation and window the use needs, supported by evidence. Add an agency-characteristic profile only for a consumed Grade/autonomy/profile claim, a characteristic-dependent local criterion, or an assurance use that requires it.
 
-When the receiving question also asks how that Work changed the subject, use A.3.4:4.2.4. Recover the actual action performed within the Work, the property changed and the subject grounds connecting them. A.6.RCD permits an ordinary compound claim when its base facts and constructor semantics suffice. A physical account may need the interacting participants, an applicable response law and preparation under A.3.3.TR; a boundary-exchange question additionally selects the quantity, boundary and interval under C.29.BB. Develop only the connection the receiving question consumes. Section 5.3 shows a local contribution claim and the separate question of a durable crossing reference.
+Then admit the occurrence independently under A.15.1 from its performance history, enacted Method, temporal extent and obtaining containing-System relation.
+
+Only if precise assignment-bound attribution is also claimed does F.6 relate that admitted Work to the same obtaining assignment. A Work-only account stops after admission.
+
+When the receiving question also asks how that Work changed the subject, use A.3.4:4.2.4. Recover the action performed within the Work, the property changed and the subject grounds connecting them. A.6.RCD permits an ordinary compound claim when its base facts and constructor semantics suffice.
+
+A physical account may need the interacting participants, an applicable response law and preparation under A.3.3.TR; a boundary-exchange question additionally selects the quantity, boundary and interval under C.29.BB. Develop only the connection the receiving question consumes. Section 5.3 shows a local contribution claim and the separate question of a durable crossing reference.
 
 #### A.12:4.2 - Reflexive Split
 
@@ -126,7 +130,7 @@ ReflexiveSplit@Context:
 
 `ReflexiveSplit@Context` carries no system-recognition position. Its two part-or-subsystem fields identify exact entities, not phases, assignments, relation occurrences, or generic structures. Each filled entity position needs an independently obtaining parthood or subsystem relation to `containingHolonRef` under A.14 and the direct part-relation specialization.
 
-When the acting-position entity must also be evaluated as a system, state its A.1 recognition result or blocker alongside the part relations. An optional companion `ActingSideExternalization@Context` can carry that result or blocker: its `actingEntityRef` identifies that exact `U.Entity`; its disposition or blocker remains explicit before recognition; and its optional `actingSystemRef` may identify the same entity only after A.1 recognition. Do not insert `actingSystemRef` or an A.1 disposition into `ReflexiveSplit@Context`.
+When the acting-position entity must also be evaluated as a system, state its A.1 recognition result or blocker alongside the part relations. An optional companion `ActingSideExternalization@Context` can carry that result or blocker: its `actingEntityRef` identifies that `U.Entity`; its disposition or blocker remains explicit before recognition; and its optional `actingSystemRef` may identify the same entity only after A.1 recognition. Do not insert `actingSystemRef` or an A.1 disposition into `ReflexiveSplit@Context`.
 
 A temporal phase, system-role assignment, parthood occurrence, software-module description, or selected structure remains a separate object under the identity and relation rules that define it. A software component fills a part-or-subsystem field only when it is itself the exact entity and its direct part relation obtains. If a source supplies only unlike positions such as phases or assignments, state those direct relations and do not force them into this frame.
 
@@ -138,7 +142,9 @@ actingPartOrSubsystemRef != changedPartOrSubsystemRef
 
 for the current change-bearing claim.
 
-For controlled self-change, this split supplies the internal acting and changed participants. Connect their action to the rule or intended result that selects the intervention, its effect on later operation and the consequences used to revise it. **C.43:4.1.2** develops that account. An updater installing a poor setting can satisfy Reflexive Split; whether the update is suitably controlled and improves the result are further questions. If only roles or successive states are established, retain the supported acting-side account without inventing internal entity parts.
+For controlled self-change, this split supplies the internal acting and changed participants. Connect their action to the rule or intended result that selects the intervention, its effect on later operation and the consequences used to revise it. **C.43:4.1.2** develops that account.
+
+An updater installing a poor setting can satisfy Reflexive Split; whether the update is suitably controlled and improves the result are further questions. If only roles or successive states are established, retain the supported acting-side account without inventing internal entity parts.
 
 #### A.12:4.3 - Episteme And Publication Cases
 
@@ -154,7 +160,7 @@ Choose the reading before filling a singular field; carriers, epistemes and rela
 
 Treat the interaction and part-whole claims separately. A system changing another holon does not thereby become its part or the larger whole containing it.
 
-For a part-whole claim, use A.14 or the rule defining the exact part-whole predicate to test parthood independently of the interaction claim.
+For a part-whole claim, use A.14 or the rule defining the part-whole predicate to test parthood independently of the interaction claim.
 
 #### A.12:4.5 - No Self-Evidence Shortcut
 
@@ -195,7 +201,9 @@ Source wording: "the document updates its cross-references."
 
 BuildRunner-4 updates the cross-references in PublicationFile-17. BuildScriptEpisteme-9 has the already admitted CrossReferenceUpdateMethod-3 as its exact EntityOfConcern and describes how that Method updates links, satisfying A.3.2. The script is its MethodDescription; BuildRunner-4 is the acting participant. This case follows the publication carrier through the update.
 
-The bounded case-local continuity rule treats PublicationFile-17 as the same carrier only if the file object opened for the build still exists when the build closes, every write asserted to update PublicationFile-17 targets that same open object, and the build neither deletes and recreates that file, atomically replaces it, nor substitutes another carrier. E.24.PUB states which independently identified expression the carrier's actual state yields; it does not supply this case-local identity rule. If a continuity fact fails, identify the replacement carrier rather than asserting a transformation of one continuing file. If carrier identity is unresolved, stop before asserting that change. A changed C.2.1 episteme discriminator selects the separate episteme-edition reading.
+The bounded case-local continuity rule treats PublicationFile-17 as the same carrier only if the file object opened for the build still exists when the build closes, every write asserted to update PublicationFile-17 targets that same open object, and the build neither deletes and recreates that file, atomically replaces it, nor substitutes another carrier. E.24.PUB states which independently identified expression the carrier's actual state yields; it does not supply this case-local identity rule.
+
+If a continuity fact fails, identify the replacement carrier rather than asserting a transformation of one continuing file. If carrier identity is unresolved, stop before asserting that change. A changed C.2.1 episteme discriminator selects the separate episteme-edition reading.
 
 ```text
 ActingSideExternalization@DocumentBuild:
@@ -213,7 +221,11 @@ ActingSideExternalization@DocumentBuild:
 
 A.10 governs source recovery and bounded reliance on the build log for the following carrier-history claims; A.7 keeps the carrier distinct from the episteme it presents.
 
-Before the boundary, exact `PublicationExpressionBearingRelation(PublicationFile-17, CrossReferenceExpression-26)` obtains. CrossReferenceExpression-26 is the independently identified ordered text containing the stale link addresses. During the boundary, the same open file object remains in place while its link-address state is rewritten; the build log records no replacement event. After the boundary, exact `PublicationExpressionBearingRelation(PublicationFile-17, CrossReferenceExpression-27)` obtains; the changed address strings identify another ordered-text expression. Both expressions can conform to the same reusable CrossReferencePublicationForm, so `PublicationFormBearingRelation(PublicationFile-17, CrossReferencePublicationForm)` can remain continuously true through the update when a conforming expression remains recoverable. Those facts, the build-open/build-close boundary, and the case-local continuity rule ground `PublicationCarrierChange-27` under A.3.4. They do not decide episteme identity: if claim content, EntityOfConcern, or the effective reference scheme changed, C.2.1 identifies another episteme and any historical continuation needs a separately governed edition relation.
+Before the boundary, `PublicationExpressionBearingRelation(PublicationFile-17, CrossReferenceExpression-26)` obtains. CrossReferenceExpression-26 is the independently identified ordered text containing the stale link addresses. During the boundary, the same open file object remains in place while its link-address state is rewritten; the build log records no replacement event. After the boundary, `PublicationExpressionBearingRelation(PublicationFile-17, CrossReferenceExpression-27)` obtains; the changed address strings identify another ordered-text expression.
+
+Both expressions can conform to the same reusable CrossReferencePublicationForm, so `PublicationFormBearingRelation(PublicationFile-17, CrossReferencePublicationForm)` can remain continuously true through the update when a conforming expression remains recoverable.
+
+Those facts, the build-open/build-close boundary, and the case-local continuity rule ground `PublicationCarrierChange-27` under A.3.4. They do not decide episteme identity: if claim content, EntityOfConcern, or the effective reference scheme changed, C.2.1 identifies another episteme and any historical continuation needs a separately governed edition relation.
 
 An episteme-edition case instead identifies predecessor and successor epistemes plus their edition relation. A reference-relation case identifies one relation occurrence and its defining rule. Keep those accounts separate from the carrier-change case; they are not alternative values for its singular fields.
 
@@ -236,9 +248,13 @@ ActingSideExternalization@Machining:
 
 `MachiningWork-8` and `MachiningTransformation-8` are independently identified. To explain their connection, extend this constructed case with the following supplied facts. During the named Work, Lathe-3 performed `TurningApplication-8` with CuttingTool-3 on the continuing Workpiece-8. The operation history identifies the actual engaged cutting pass, its tool and workpiece bindings, and its start/end interval. The supplied material-removal account establishes that this pass removed the outer layer of the selected cylindrical surface, reducing its radius from 10 mm to 9.5 mm. Before/after measurements under the same dimensional reference conditions identify the corresponding diameter change from 20 mm to 19 mm as `MachiningTransformation-8`.
 
-The useful result is the local assertion `MachiningContribution-8`: this Work included the actual cutting application whose material removal produced this diameter change. Under A.6.RCD disposition 2, its conjunction has these named base facts and their common workpiece and interval; it holds when all those facts hold for the same application and transformation. This supplies one C.2.1 compound claim. If the history records only a commanded feed and actual engagement is unknown, the connecting claim has `missing-information`; the independently observed diameter change remains available. Selecting a different physical regime reopens the material-removal account that the connection consumes.
+The useful result is the local assertion `MachiningContribution-8`: this Work included the actual cutting application whose material removal produced this diameter change. Under A.6.RCD disposition 2, its conjunction has these named base facts and their common workpiece and interval; it holds when all those facts hold for the same application and transformation. This supplies one C.2.1 compound claim.
 
-For an ordinary boundary explanation, select the tool-workpiece contact surface and interval. The contact force is the rate of the tool's momentum transfer to the workpiece across that surface; C.29.BB locates that contribution in a momentum balance. Predicting the workpiece's motion also needs the other consequential forces and applicable response conditions. This explanatory claim does not supply an occurrence identity for `holonBoundaryCrossingRelationRef`. If a further use needs that exact reference, it still needs the crossing predicate, applicability and occurrence-identity rule; their absence is the A.6.RCD `missing-governor` for that reference. The local contribution and boundary explanation remain usable, and parthood keeps its separate A.14 test.
+If the history records only a commanded feed and actual engagement is unknown, the connecting claim has `missing-information`; the independently observed diameter change remains available. Selecting a different physical regime reopens the material-removal account that the connection consumes.
+
+For an ordinary boundary explanation, select the tool-workpiece contact surface and interval. The contact force is the rate of the tool's momentum transfer to the workpiece across that surface; C.29.BB locates that contribution in a momentum balance. Predicting the workpiece's motion also needs the other consequential forces and applicable response conditions.
+
+This explanatory claim does not supply an occurrence identity for `holonBoundaryCrossingRelationRef`. If a further use needs that exact reference, it still needs the crossing predicate, applicability and occurrence-identity rule; their absence is the A.6.RCD `missing-governor` for that reference. The local contribution and boundary explanation remain usable, and parthood keeps its separate A.14 test.
 
 ### A.12:5.4 - Bias-Annotation
 
@@ -256,7 +272,7 @@ For an ordinary boundary explanation, select the tool-workpiece contact surface 
 | `CC-A12-1` | A self-action or passive change account names the proposed acting participant and changed subject separately. When the precise frame is used, it identifies one exact continuing `changedSubjectRef` by that referent’s identity rule and requires `actingEntityRef`. Fill the optional `actingSystemRef` only after complete A.1 recognition; it identifies the same entity under `U.System`. When this account needs an A.1 recognition result and recognition is not established, keep the exact disposition or blocker. A filled `transformationRef` identifies an A.3.4 bounded change of that same `changedSubjectRef`. `ReflexiveSplit@Context` has no system-recognition position; state any needed A.1 recognition result or blocker separately, using a companion acting-side outline if useful. |
 | `CC-A12-2` | A Reflexive Split case identifies distinct exact entity parts or subsystems inside one containing holon, and each position has its independently obtaining direct part relation. Temporal phases keep their phase identity rules; assignments use A.2.1; parthood uses A.14 or the exact part-relation rule; descriptions use C.2.1; selected structures use A.22. None fills an A.12 part position merely by being nearby. |
 | `CC-A12-3` | An acting-side account uses the existing entities and relations it requires. A proposal for a new durable kind, including a transformer, boundary or interaction kind, needs the separate A.11 and E.24.UK admission process. |
-| `CC-A12-4` | Bounded transformation claims require `A.3.4`; Method identity uses `A.3.1`, MethodDescription admission uses `A.3.2`, and a WorkPlan uses `A.15.2`. For an actual Work claim, establish each performer's A.13 core before independent A.15.1 occurrence admission. The profile is conditional as stated in §4.1. |
+| `CC-A12-4` | Bounded transformation claims require `A.3.4`; Method identity uses `A.3.1`, MethodDescription admission uses `A.3.2`, and a WorkPlan uses `A.15.2`. For a Work claim, establish each performer's A.13 core before independent A.15.1 occurrence admission. The profile is conditional as stated in §4.1. |
 | `CC-A12-5` | A system-role-assignment field is filled only by one exact obtaining work-facing `U.SystemRoleAssignment`; any claim that exact Work was performed under it uses `F.6`. System-role-kind relation claims require `A.2.7`. |
 | `CC-A12-6` | Evidence and source-use claims use A.10's direct relations; a separately current assurance conclusion uses B.3. |
 | `CC-A12-7` | Episteme and publication cases do not assign agency to the episteme or publication form. |

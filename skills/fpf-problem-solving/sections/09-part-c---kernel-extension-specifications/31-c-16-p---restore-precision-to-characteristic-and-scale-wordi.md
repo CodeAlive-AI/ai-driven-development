@@ -35,7 +35,7 @@ The repair must recover the meaning needed by the receiving work. It should not 
 | Force | Tension |
 | --- | --- |
 | Compact comparison vs recoverable construction | Readers want quick words such as strong, weak, metric, score, and level; FPF needs characteristic, scale, value, and use boundaries. |
-| Measurement discipline vs ordinary evaluation | Some words are informal cues, some are real measurement claims, and some are quality-term or evaluative characterization. |
+| Measurement discipline vs ordinary evaluation | Some words are informal cues, some are measurement claims, and some are quality-term or evaluative characterization. |
 | Proxy usefulness vs proxy overread | Indicators and scores can be useful proxies but can also hide distortion, threshold choice, and non-comparability. |
 | Characteristic-space breadth vs gate discipline | A characteristic space can guide comparison without becoming a gate, decision, or release authority. |
 | Mathematical-lens use vs scalar shortcut | A mathematical lens may expose structure, but `C.29` lens-use result is not repaired by score wording alone. |
@@ -95,9 +95,9 @@ A local rewrite is sufficient when the sentence conveys the needed meaning and c
 | `feature` or `property` | Is this an observed feature, characteristic, model feature, entity property, relation property, or ordinary prose? | `Feature` or `property` as automatic characteristic. |
 | `strong` or `weak` | Does it state a degree of a characteristic or another claim? For a degree, on which scale and under which comparison reference or comparator set? | A degree of a characteristic without its scale. |
 | `robust` | Robust to what perturbation, under which scale, comparison, loss, or preserved-structure and lost-structure? | Robust as general praise. |
-| `level` | Level on which declared scale or abstraction, not a free hierarchy. | Level as undefined scale or maturity status. |
+| `level` | Level on which declared scale or abstraction? | Level as undefined scale or maturity status. |
 | `indicator` | Indicator of what characteristic or claim, through which direct relation? If it is a proxy, what is the proxy relation and distortion risk? | Indicator as the indicated property. |
-| `threshold` | Predicate over which characteristic space coordinates, with the applicable comparison operator, cut value, band, region, or dominance condition, scalarization policy if any, comparison reference or comparator set, any gate or acceptance relation used by the claim, and necessary applicability or stop conditions? Add an explanatory non-use guard only under F.19:4. | Threshold as characteristic, measure, scalar score, decision, or proof by itself. |
+| `threshold` | What predicate is applied to which characteristic space coordinates? Identify the applicable comparison operator, cut value, band, region or dominance condition; any scalarization policy; the comparison reference or comparator set; any gate or acceptance relation used by the claim; and necessary applicability or stop conditions. Add an explanatory non-use guard only under F.19:4. | Threshold as characteristic, measure, scalar score, decision, or proof by itself. |
 | `benchmark` | Benchmark for which characteristic, comparison set, front, archive, or harness? | Benchmark result as proof or release. |
 
 ### C.16.P:6 - Adjacent Claim Governance Named by Value
@@ -106,12 +106,12 @@ A local rewrite is sufficient when the sentence conveys the needed meaning and c
 | --- | --- |
 | `Characteristic` | `A.17` |
 | `Scale`, value set, value, coordinate, unit, scoring method, measurement use | `A.18`, `C.16` |
-| `CharacteristicSpace` | `A.19` or `A.19.ECS` when evaluation-characteristic-space construction is live |
+| `CharacteristicSpace` | `A.19` or `A.19.ECS` when the question concerns evaluation-characteristic-space construction |
 | Q-bundle or quality-family decomposition into differently typed contributors | `C.25` |
 | Quality-term or evaluative characterization wording | `C.16.Q` after any needed characteristic and scale repair |
 | Pattern-quality coordinate or pattern-quality evaluation | `E.21` |
 | Mathematical function, mathematical lens, preserved-structure and lost-structure, model adequacy or lens-use result | `C.29` for the mathematical-lens-use part; direct model or domain pattern for a non-lens adequacy claim; ordinary mathematics when no FPF-governed use is claimed. |
-| CHR mechanism, characteristic-space mechanism, selector, suite, or set-return law | `A.19.CN`, `G.0`, `A.19.UINDM`, `A.19.USCM`, `A.19.ULSAM`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, `C.11`, or mechanism pattern named by value |
+| CHR mechanism, characteristic-space mechanism, selector, suite, or set-return law | `A.19.CN`, `G.0`, `A.19.UINDM`, `A.19.USCM`, `A.19.ULSAM`, `A.19.CPM`, `A.19.SelectorMechanism`, `G.5`, `C.11`, or the pattern governing the recovered mechanism |
 | Evidence or proof | The pattern governing the evidence or proof claim; `A.10` when the source-to-use account for a relied-on claim remains implicit. |
 | Assurance or engineering justification | `B.3` or the governing assurance pattern for an assurance claim with a named target claim and use; otherwise the pattern governing the engineering justification. |
 | Gate, constraint, release, readiness threshold | `A.20`, `A.21`, release or admissibility pattern, or gate pattern governing the claim |
@@ -130,9 +130,9 @@ A local rewrite is sufficient when the sentence conveys the needed meaning and c
 | "The metric supports launch." | Recover measure, characteristic, scale, scoring method, threshold predicate or reference, and gate or decision pattern. A measurement may support a named launch criterion; establish that evidence use and any further launch conditions under their governing rules. |
 | "The model has robust quality." | Recover robustness perturbation and scale, quality-term or evaluative characterization under `C.16.Q`, Q-bundle under `C.25`, or mathematical-lens use under `C.29`. |
 | "Latent axis explains behavior." | Recover whether `axis` is a latent coordinate, factor, mathematical lens, characteristic, or ordinary source-local word. Use `C.29` when choosing, transferring or relying on the mathematical representation leaves an unresolved question. |
-| "The benchmark proves the method is better." | Recover benchmark harness, characteristic space, comparison set, scale, statistical or evidential claim, and decision use. Use evidence named by value, decision, and work patterns as needed. |
+| "The benchmark proves the method is better." | Recover benchmark harness, characteristic space, comparison set, scale, statistical or evidential claim, and decision use. Use the patterns governing the evidence, decision and work claims as needed. |
 
-**Worked comparison.** A report calls a new implementation “stronger.” Its supplied observations concern response time in four matched workload cases under the same conditions. Response time is elapsed duration on a ratio Scale, expressed in milliseconds. The earlier times are 80, 100, 120 and 140 ms; the new times are 70, 90, 110 and 130 ms. Both comparisons use the median, defined here as the mean of the two middle ordered values. The respective medians are 110 and 100 ms.
+**Worked comparison.** A report calls a new implementation “stronger.” Its supplied observations concern response time in four matched workload cases under the same conditions. Response time is elapsed duration on a ratio Scale, expressed in milliseconds. The earlier times are 80, 100, 120 and 140 ms; the new times are 70, 90, 110 and 130 ms. Both sets of times are summarized by the median, defined here as the mean of the two middle ordered values. The respective medians are 110 and 100 ms.
 
 The supported rewrite is: “For these four matched workload cases, median response time fell by 10 ms, from 110 to 100 ms.” Together with the stated median rule, it identifies the Characteristic, Unit, comparison set and aggregation operation and can finish the wording repair. It supplies no comparison for other workloads. If a receiving criterion requires median response time at most 105 ms on these cases, the new value satisfies that numerical condition. Any other release conditions remain separate. If the new trials used different workload cases, the original comparison would need an account of their comparability before supporting the same claim.
 
@@ -142,7 +142,7 @@ The supported rewrite is: “For these four matched workload cases, median respo
 | --- | --- | --- |
 | Scalar verdict bias | `strong`, `weak`, `robust`, or `high` is used as a verdict without characteristic, scale, and comparison reference. | Recover the intended construction and its basis, state a supported narrower gain, or leave the characterization unresolved. |
 | Proxy promotion bias | An indicator, metric, score, or benchmark result is treated as the thing indicated. | Name the direct indicator relation, any proxy relation and distortion risk used by the claim, admissible use, and subject pattern for any wider claim. |
-| Gate-by-number bias | A threshold or score is treated as release, readiness, proof, or decision authority. | Recover the threshold rule and cite the gate, assurance, decision, or release pattern that actually governs the use. |
+| Gate-by-number bias | A threshold or score is treated as release, readiness, proof, or decision authority. | Recover the threshold rule and cite the gate, assurance, decision, or release pattern that governs the use. |
 
 ### C.16.P:10 - Conformance Checklist
 
@@ -150,20 +150,20 @@ The supported rewrite is: “For these four matched workload cases, median respo
 | --- | --- |
 | `CC-C16P-1` | The repaired statement makes its subject, relevant characterization or comparison, basis and supported use recoverable. It identifies an applicable subject rule when that rule is needed; a separate note is conditional on the receiving work. Necessary subject applicability and stop conditions remain explicit; an explanatory `nonAdmissibleUse` is optional under the full F.19:4 test. |
 | `CC-C16P-2` | The words in §5 are triggers for interpretation, not recovered kinds by themselves. |
-| `CC-C16P-3` | Direct `C.16`, `A.17`, `A.18`, `A.19`, `C.25`, `C.29`, `E.21`, or subject-pattern use applies the subject pattern directly when construction is already recoverable. |
+| `CC-C16P-3` | When the construction is already recoverable, apply `C.16`, `A.17`, `A.18`, `A.19`, `C.25`, `C.29`, `E.21`, or the relevant subject pattern directly. |
 | `CC-C16P-4` | Evidence, assurance, gate, work, decision, causal-use, release, publication, benchmark, and authority claims are governed by their direct patterns. |
 | `CC-C16P-5` | The repair does not create a scalar verdict, undefined maturity-status scheme, or release decision. |
-| `CC-C16P-6` | The repaired wording preserves one useful admissible reader use; type-correct but inert characterization wording is not recovered by value. |
+| `CC-C16P-6` | The repaired wording preserves one useful admissible reader use. Type-correct wording that the reader cannot use does not meet this requirement. |
 
 ### C.16.P:11 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
-| Metric-as-evidence | A metric is used to assert evidence, proof, gate passage or decision authority without the conditions that establish that relation. | Recover characteristic and scale construction, then apply `A.10` or evidence named by value, gate, or decision pattern if that claim is being made. |
-| Score-as-gate | A score is treated as gate passage, readiness, release, or decision. | Recover scale, threshold rule or reference, comparison reference or comparator set, and exact gate, decision, or release pattern. |
+| Metric-as-evidence | A metric is used to assert evidence, proof, gate passage or decision authority without the conditions that establish that relation. | Recover characteristic and scale construction, then apply `A.10` or the pattern governing the evidence, gate or decision claim, if that claim is being made. |
+| Score-as-gate | A score is treated as gate passage, readiness, release, or decision. | Recover scale, threshold rule or reference, comparison reference or comparator set, and gate, decision, or release pattern. |
 | Axis-as-ontology | Axis or dimension is treated as if it already named a characteristic or factor. | Recover `Characteristic`, coordinate, latent factor, mathematical lens, structural aspect, or ordinary prose. |
 | Strong-without-scale | Strong or weak asserts a degree of a characteristic without its scale or comparison reference or comparator set. | State the Characteristic and Scale used by the claim, or replace the unsupported degree with a supported narrower statement. |
-| Indicator-as-indicated-characteristic | Indicator wording hides the indicated characteristic or proxy relation. | Name the indicated characteristic or claim, exact direct relation, and proxy-distortion risk when a proxy is used; return `missing-governor` only when no governing rule can state or test that claim. Keep missing facts and failed positive tests distinct under `A.6.RCD:0.1`. |
+| Indicator-as-indicated-characteristic | Indicator wording hides the indicated characteristic or proxy relation. | Name the indicated characteristic or claim, direct relation, and proxy-distortion risk when a proxy is used; return `missing-governor` only when no governing rule can state or test that claim. Keep missing facts and failed positive tests distinct under `A.6.RCD:0.1`. |
 
 ### C.16.P:12 - Consequences
 
@@ -175,7 +175,7 @@ The supported rewrite is: “For these four matched workload cases, median respo
 
 ### C.16.P:12.1 - Rationale
 
-A compact word can summarize a construction once the reader can recover it. Restoring only the missing subject, relation or condition lets that shorthand remain useful while making its actual implication inspectable.
+A compact word can summarize a construction once the reader can recover it. Restoring only the missing subject, relation or condition lets that shorthand remain useful while making its implication inspectable.
 
 ### C.16.P:12.2 - SoTA-Echoing
 
@@ -198,6 +198,6 @@ Measurement and comparison practice distinguishes characteristics, scales, measu
 - `C.16.Q` governs quality-term or evaluative characterization wording.
 - `E.21` governs pattern-quality evaluation characteristic spaces.
 - `C.29` governs mathematical-lens use.
-- Exact evidence, assurance, gate, work, decision, causal-use, release, benchmark, and publication patterns define or constrain their own claims.
+- Evidence, assurance, gate, work, decision, causal-use, release, benchmark, and publication patterns define or constrain their own claims.
 
 ### C.16.P:End

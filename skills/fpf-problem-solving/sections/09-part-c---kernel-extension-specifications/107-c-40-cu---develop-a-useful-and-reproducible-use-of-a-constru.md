@@ -12,7 +12,7 @@ The working reader develops or investigates such an application and can perform 
 
 **First useful move.** Preserve one response and the conditions that produced it. Ask what receiving use it could change, and what uncertainty would change the next action. Use the response within its supported limits, or construct the smallest worthwhile contrast needed before relying on it.
 
-The first result can be a bounded usable response, a candidate application, or an explicit missing contribution. A repeatable application additionally needs an obtainable method, capable participants and the conditions under which its result can be obtained. Use an already adequate application directly; ordinary material variation under C.40 is enough when no discovery-to-use connection is missing.
+The first result can be a bounded usable response, a candidate application, or a statement of the contribution still needed. A repeatable application additionally needs an obtainable method, capable participants and the conditions under which its result can be obtained. Use an already adequate application directly; ordinary material variation under C.40 is enough when no discovery-to-use connection is missing.
 
 ### C.40.CU:2 - Problem
 
@@ -103,19 +103,19 @@ Start at the first unsupported contribution of the chosen way. The relevant engi
 
 Make the critical joins explicit. What does the receiver of a probe result treat as established? What does the designer change because of it? What must the operator recognize before using the resulting arrangement? Which result satisfies the original receiving need? B.1.5 governs composition; B.1.5.EW recovers how the constituent actions perform the encompassing work.
 
-Examine a representative use against the same result conditions used to choose the arrangement. A derivation can establish a model-conditional result; a performed trial supplies observations within its actual conditions. Keep these forms of support distinct. If the result is partial, retain the qualified part and name the unmet condition.
+Examine a representative use against the same result conditions used to choose the arrangement. A derivation can establish a model-conditional result; a performed trial supplies observations within its conditions. Keep these forms of support distinct. If the result is partial, retain the qualified part and name the unmet condition.
 
 When the whole fails, locate the first consequential mismatch: response qualification, architecture, realization, joining, performer capability, access or changed support. Repair that contribution and reuse the rest where its conditions still hold. A changed deadline can require a different operation; it need not reopen the origin of an already qualified response.
 
-If reliance includes a transition between realizations, examine the transition as well as the endpoints. The running arrangement may need to detect the trigger, change realization and preserve the required result during the transient. A designer's possession of two alternatives does not establish that runtime ability. Use A.15.8 when configuration or recovery reliance is the actual question.
+If reliance includes a transition between realizations, examine the transition as well as the endpoints. The running arrangement may need to detect the trigger, change realization and preserve the required result during the transient. A designer's possession of two alternatives does not establish that runtime ability. Use A.15.8 when configuration or recovery reliance is the question.
 
 #### C.40.CU:4.6 - Make the use reproducible for another performer or occasion
 
-Recover what made the successful enactment possible: preparation, inputs, operative steps, supporting artifacts or people, recognition conditions, acceptance basis and stops. Preserve the needed intermediate meanings, not just the final output.
+Recover what made the successful enactment possible: preparation, inputs, operative steps, supporting artifacts or contributors, recognition conditions, acceptance basis and stops. Preserve the needed intermediate meanings, not just the final output.
 
 Decide which contributions the receiver must perform and which can remain obtainable from elsewhere. Restore access or activation when that is sufficient; develop capability when the receiver cannot perform a necessary operation. E.23.CAE distinguishes those gaps under grounded capability claims, E.23.CDI develops the named capability, and C.36.RP arranges acquisition, provision and continuing access.
 
-Use a receiving attempt that can reveal the uncertain transfer. A person who copied a demonstration may still be unable to adapt its critical step. Ask the receiver to use the method under the changed condition that matters, with the support the intended arrangement actually permits. If the helper supplied the decision, the supported configuration's success remains useful, but does not establish the receiver's independent capability.
+Use a receiving attempt that can reveal the uncertain transfer. A person who copied a demonstration may still be unable to adapt its critical step. Ask the receiver to use the method under the changed condition that matters, with the support the intended arrangement permits. If the helper supplied the decision, the supported configuration's success remains useful, but does not establish the receiver's independent capability.
 
 For shared terms, test a consequential action on the common object. Ask participants to classify or act on the same borderline case, state what they expect to happen, and inspect the difference. Repair the operative distinction or action when identical words hide different uses. Agreement in wording alone does not establish common understanding.
 
@@ -125,7 +125,7 @@ Retain an obtainable explanation, executable material or demonstration suited to
 
 Keep the useful construction, its supported scope and the means needed for another enactment. If a disturbance can reveal a different retained state or recovery behavior, qualify that behavior over the window the use needs. Normal appearance now is not evidence of indefinite retention or recovery after every disturbance.
 
-A new input, environment, performer, criterion or time window can reopen a particular connection. Use B.1.5.RS when a constituent is replaced across several encompassing uses. Use C.40.CD when the result opens a new problem or requires a changed obtaining way. Keep the previous bounded application where it remains supported.
+A new input, environment, performer, criterion or time window can reopen a connection. Use B.1.5.RS when a constituent is replaced across several encompassing uses. Use C.40.CD when the result opens a new problem or requires a changed obtaining way. Keep the previous bounded application where it remains supported.
 
 End the current development when the selected receiving use is supplied, when a sufficient conditional result serves the assignment, or when no attainable next distinction or construction warrants its burden. State which of these outcomes has been reached. A promising clue can be retained without claiming a realized application.
 
@@ -133,7 +133,7 @@ End the current development when the selected receiving use is supplied, when a 
 
 Recognition needs a concrete response, a possible useful difference and one uncertainty or connection that changes the next move. A modest proposed application can begin there.
 
-A reliance claim additionally needs support for the actual holder or configuration, obtaining conditions, interpretation, receiving result and material limitations. The receiving domain determines the necessary trials, safety, ethics, authorization and operating evidence. This pattern neither certifies a construct nor establishes intelligence, sentience, clinical efficacy or universal independence from assistance.
+A reliance claim additionally needs support for the holder or configuration, obtaining conditions, interpretation, receiving result and material limitations. The receiving domain determines the necessary trials, safety, ethics, authorization and operating evidence. This pattern neither certifies a construct nor establishes intelligence, sentience, clinical efficacy or universal independence from assistance.
 
 ### C.40.CU:5 - Archetypal Grounding
 
@@ -196,7 +196,7 @@ Environmental redesign can hide burden transfers to installers, maintainers or o
 - Any selected contrast can distinguish a consequential uncertainty under supplied domain conditions.
 - The conclusion separates what was revealed from what was changed or supplied.
 - Candidate ways include the enabling and displaced contributions that can change their comparison.
-- The chosen way is carried through its critical joins to the receiving result or an exact remaining gap.
+- The chosen way is carried through its critical joins to the receiving result or to where a contribution is still missing.
 - Reproduction supplies the necessary method, participants and support; independent capability is claimed only when supported.
 - A changed whole condition returns to the affected constituent or connection.
 - Retained use, proposed continuation and stop remain distinct.
@@ -209,7 +209,7 @@ Environmental redesign can hide burden transfers to installers, maintainers or o
 | Failure proves intrinsic incapacity | Examine the tested configuration, probe sensitivity and missing support. |
 | Every discovery needs complete causal explanation | Obtain only the distinction required by the receiving use. |
 | Offloading means assigning the same operation elsewhere | Compare redistribution with redesign that removes the operation, including preparation and maintenance. |
-| The environment is a single agent | Identify the actual contributing systems and relations needed by the claim. |
+| The environment is a single agent | Identify the contributing systems and relations needed by the claim. |
 | Two valid endpoints guarantee a valid transition | Examine trigger detection, changeover and transient result conditions. |
 | Repeat the successful demonstration with its expert | Attempt the receiving use with its permitted support and changed conditions. |
 | Matching words prove shared meaning | Compare consequential actions and expectations on the same object. |
@@ -233,7 +233,9 @@ The contribution here is their conditional organization: qualify only what the a
 | Michael Levin, “Ingressing Minds: Causal, Non-Physical Patterns In-Form Natural, Synthetic, and Hybrid Embodiments” (2026), Philosophies 11(5), 161, §§3–7. [Article](https://doi.org/10.3390/philosophies11050161) | Motivates exploration beyond assigned function, sensitivity to preparation and observation scale, alternative influence and recovery-sensitive inquiry. | The non-physical causal interpretation is the author's proposal, not a premise of this Method. Source examples do not establish the performance of a new application. |
 | Chris Fields and Michael Levin, “Cognitive Offloading Is a Cognitive Universal” (2026), v1, §§2–5. [Preprint](https://doi.org/10.20944/preprints202607.0507.v1) | Motivates operation elimination, probing environmental support through changed demands, reciprocal effects and retained environmental contributions. | The practical questions are used without relying on the preprint's universal proof. Physical or informational dependence alone does not establish that an environment models its performer. |
 
-**How should an unfamiliar response become a useful, repeatable arrangement?** The selected line couples application-relative inquiry to construction of the whole arrangement and a receiver's reproduction. A serious alternative is to qualify a response through causal or measurement Methods and leave application and transfer as separate expert work. That alternative is sufficient and cheaper when the receiving question is only the bounded response or throughput value, as the first branch in 5.2 shows. It is insufficient when a practitioner must decide what to build and preserve: 4.4–4.6 add operation elimination, allocation of environmental support, constituent conditions and the receiver's missing contribution. The two articles motivate these questions; their wider theoretical claims are not evidence for the effectiveness of this composition. The added cost is developing and trying the connections needed by the actual use. A directly usable existing whole can remove that cost; an unavailable domain operation or a failed receiving attempt reopens the affected construction. The changed deadline in 5.1 and changed service conditions in 5.2 show those returns without discarding the earlier bounded result.
+**How should an unfamiliar response become a useful, repeatable arrangement?** The selected line couples application-relative inquiry to construction of the whole arrangement and a receiver's reproduction. An alternative is to qualify a response through causal or measurement Methods and leave application and transfer as separate expert work. That alternative is sufficient and cheaper when the receiving question is only the bounded response or throughput value, as the first branch in 5.2 shows. It is insufficient when a practitioner must decide what to build and preserve: 4.4–4.6 add operation elimination, allocation of environmental support, constituent conditions and the receiver's missing contribution.
+
+The two articles motivate these questions; their wider theoretical claims are not evidence for the effectiveness of this composition. The added cost is developing and trying the connections needed by the use. A directly usable existing whole can remove that cost; an unavailable domain operation or a failed receiving attempt reopens the affected construction. The changed deadline in 5.1 and changed service conditions in 5.2 show those returns without discarding the earlier bounded result.
 
 Claims about living systems, learning and human cooperation require the applicable domain sources and safeguards.
 

@@ -12,17 +12,17 @@ Use this pattern when work must recover one reusable kind, decide whether one ki
 
 **What this buys.** The user gets an operational kind-continuity test, a replayable subkind test, and a preorder of subkind facts distinct from declaration identity, current extension, evidence, bridging, and public naming.
 
-**Primary EntityOfConcern.** One `U.Kind` individual recovered through its candidate domain, operative membership condition, intended member/non-member distinction, and continuity rule; or one proposed `U.SubkindOf` relation between exact kind participants within declared applicability.
+**Primary EntityOfConcern.** One `U.Kind` individual recovered through its candidate domain, operative membership condition, intended member/non-member distinction, and continuity rule; or one proposed `U.SubkindOf` relation between kind participants within declared applicability.
 
-**First useful move.** Write the ordinary claim first: `CoolingPumpKind is a subkind of PumpKind because every candidate that satisfies the declared cooling-pump condition also satisfies the pump condition.` Then name the exact criteria and applicability that make that statement true. Introduce an occurrence designator or formal equivalence grouping only when a receiver uses it.
+**First useful move.** Write the ordinary claim first: `CoolingPumpKind is a subkind of PumpKind because every candidate that satisfies the declared cooling-pump condition also satisfies the pump condition.` Then name the criteria and applicability that make that statement true. Introduce an occurrence designator or formal equivalence grouping only when a receiver uses it.
 
 **Not this pattern when.** Use C.3.2 for a declaration, admissibility result, candidate classification, or extension; C.3.3 only for a claimed correspondence between independently identified distinct kinds; and `E.24.UK` when admitting another durable public kind rather than using an already admitted `U.Kind` individual.
 
 ### C.3.1:1 - Problem Frame
 
-A practice/source boundary is provenance and a comparison cue. It affects the continuity decision only when comparison exposes a real difference in the candidate domain or membership distinction.
+A practice/source boundary is provenance and a comparison cue. It affects the continuity decision only when comparison exposes a difference in the candidate domain or membership distinction.
 
-`U.SubkindOf` is a same-individual dependent kind under `U.Relation`. Its participants are an exact narrower kind and broader kind. An effective reference scheme and aligned `KindSignature` editions make the criteria interpretable and qualify applicability; they are not relation participants or occurrence-identity discriminators. Candidate state, context slice, declaration edition, kind identity, and one obtaining subkind relation can therefore change for different reasons.
+`U.SubkindOf` is a same-individual dependent kind under `U.Relation`. Its participants are a narrower kind and broader kind. An effective reference scheme and aligned `KindSignature` editions make the criteria interpretable and qualify applicability; they are not relation participants or occurrence-identity discriminators. Candidate state, context slice, declaration edition, kind identity, and one obtaining subkind relation can therefore change for different reasons.
 
 ### C.3.1:2 - Problem
 
@@ -44,9 +44,9 @@ The sentence `cooling pump is a pump` is useful only when the membership conditi
 | Object | Meaning | Boundary |
 | --- | --- | --- |
 | `U.Kind` | The admitted meta-kind whose individuals are reusable intensional classification distinctions. One individual is recovered through its candidate domain, operative membership condition, intended member/non-member distinction, and continuity rule. | A `KindSignature`, label, source boundary, reference scheme, current extension, or receiving use is not the kind. |
-| `U.SubkindOf` | The admitted direct relation kind whose occurrences relate exact narrower and broader `U.Kind` participants within declared applicability. Its obtaining facts form a preorder. | It is not a predicate expression, assertion episteme, dependency, part-whole relation, construction, system-role assignment, or admission relation. |
+| `U.SubkindOf` | The admitted direct relation kind whose occurrences relate narrower and broader `U.Kind` participants within declared applicability. Its obtaining facts form a preorder. | It is not a predicate expression, assertion episteme, dependency, part-whole relation, construction, system-role assignment, or admission relation. |
 | `SubkindOfObtains(k1, k2)` | The relation-obtaining condition. It holds either because the exact membership criterion for `k1` entails the criterion for `k2` under an aligned interpretation and applicability, or because every candidate in a deliberately closed finite domain has been evaluated and every admissible `true` result for `k1` is also `true` for `k2`. | The first branch is criterion-based. The second is explicitly domain-bounded. Non-exhaustive observations support a separate assertion but do not make the relation obtain. |
-| `R_sub : U.SubkindOf` | One obtaining relation occurrence between exact narrower kind `k1` and broader kind `k2`. | Use a designator only when a receiver needs it. The ordered kind participants determine occurrence identity; schemes, signatures, evidence, assertions, and publications do not. |
+| `R_sub : U.SubkindOf` | One obtaining relation occurrence between narrower kind `k1` and broader kind `k2`. | Use a designator only when a receiver needs it. The ordered kind participants determine occurrence identity; schemes, signatures, evidence, assertions, and publications do not. |
 | subkind assertion episteme | A C.2.1 episteme that affirms, denies, or leaves unresolved the obtaining condition and cites its interpretation, applicability, branch, and support. | The assertion does not make the relation obtain; a negative or unresolved assertion designates no obtaining occurrence. |
 | classification equivalence for an alignment | Mutual obtaining `U.SubkindOf` facts between two kinds within the same declared applicability. | It says that the two membership distinctions classify alike there. It does not identify the kinds. A consumer that needs a partial order may order these equivalence groups. |
 | `KindSignature` edition | The C.3.2 declaration episteme used to interpret and evaluate one kind. | It is neither the kind nor the subkind relation. |
@@ -55,9 +55,13 @@ The sentence `cooling pump is a pump` is useful only when the membership conditi
 
 A readable sentence such as `CoolingPumpKind is a subkind of PumpKind for this declared plant use` states that the direct relation obtains. It needs no occurrence identifier when no receiver distinguishes or refers to the occurrence.
 
-The relation obtains under the criterion-entailment branch when the exact narrower membership condition entails the broader one under the aligned interpretation and applicability. Under the closed-domain branch, it obtains only when the candidate domain is deliberately finite and closed, every candidate's admissibility has been checked, and exhaustive evaluation leaves no narrower `true` without a broader `true`. A counterexample refutes either proposal. A missing dependency or `unknown` judgment cannot establish either branch; a `not-applicable` request is outside the comparison.
+The relation obtains under the criterion-entailment branch when the exact narrower membership condition entails the broader one under the aligned interpretation and applicability. Under the closed-domain branch, it obtains only when the candidate domain is deliberately finite and closed, every candidate's admissibility has been checked, and exhaustive evaluation leaves no narrower `true` without a broader `true`.
 
-When a receiver needs one occurrence, `R_sub` is participant-determined by the ordered pair of kind identities. The effective scheme, aligned signatures, and applicability qualify how obtaining is tested and asserted. A scheme-edition change therefore prompts an alignment and renewed test; it does not create another relation occurrence. If the same participants still satisfy the condition, the same relation continues to obtain. If they no longer do, the prior obtaining claim is no longer current; another assertion may record that change without inventing a scheme-keyed occurrence.
+A counterexample refutes either proposal. A missing dependency or `unknown` judgment cannot establish either branch; a `not-applicable` request is outside the comparison.
+
+When a receiver needs one occurrence, `R_sub` is participant-determined by the ordered pair of kind identities. The effective scheme, aligned signatures, and applicability qualify how obtaining is tested and asserted.
+
+A scheme-edition change therefore prompts an alignment and renewed test; it does not create another relation occurrence. If the same participants still satisfy the condition, the same relation continues to obtain. If they no longer do, the prior obtaining claim is no longer current; another assertion may record that change without inventing a scheme-keyed occurrence.
 
 ### C.3.1:5 - Solution
 
@@ -69,7 +73,7 @@ When a receiver needs one occurrence, `R_sub` is participant-determined by the o
 6. **Separate relation, predicate, and assertion.** Use the readable relation sentence first. Add `R_sub`, a C.2.1 assertion, evidence, or publication only when a named receiver consumes that object.
 7. **Diagnose counterexamples at the rule.** Repair a false relation proposal, incompatible declaration alignment, or missing distinct-kind bridge. Do not edit an extension row to make the order appear true.
 8. **Decide kind continuity independently.** Apply the before/after test in section 6 whenever criterion, candidate domain, assumptions, dependencies, effective scheme, or locality changes. Another `KindSignature` edition neither proves nor denies kind continuity.
-9. **Keep scope and Work outside the kind.** A kind carries no claim scope. An exact `W : U.Work` remains a dated work occurrence under its direct pattern; keep it distinct from a plan, log, label, classification record, or episteme about W.
+9. **Keep scope and Work outside the kind.** A kind carries no claim scope. A `W : U.Work` remains a dated work occurrence under its direct pattern; keep it distinct from a plan, log, label, classification record, or episteme about W.
 
 ### C.3.1:6 - Continuity Decision
 
@@ -78,7 +82,7 @@ Compare the old and proposed declarations in this order:
 | Question | Continuity consequence |
 | --- | --- |
 | What candidate domain and operative membership condition did the old kind use? | Write at least one intended member and one relevant non-member or boundary case that exposes the discriminator. |
-| What exact criterion, domain, assumption, dependency, or interpretation changed? | Separate a wording, unit, source, or scheme change from a changed membership law. |
+| What criterion, domain, assumption, dependency, or interpretation changed? | Separate a wording, unit, source, or scheme change from a changed membership law. |
 | Under an explicit alignment, do the old and new conditions classify the boundary probes alike for the receiving typed use, and does the operative discriminator keep the same meaning? | If yes, the same kind may continue; cite the actual declaration edition in each judgment. If no, identify another kind. |
 | Did only the practice, source, team, or publication locality change? | Run the same comparison. Locality alone supplies no result and no `KindBridge`. |
 | Are two distinct kinds now being related? | State an obtaining `U.SubkindOf` fact when its criterion or closed-domain branch passes. Use C.3.3 only for a separately justified directional correspondence. |
@@ -87,7 +91,7 @@ Compare the old and proposed declarations in this order:
 
 **Identity-breaking change.** A proposed edition replaces physical cooling performance with the presence of schema label `CoolingPump`. A physical pump without the row changes from member to non-member and a labelled non-performing row can appear to qualify. The operative distinction and candidate domain changed; identify another kind rather than continuing `CoolingPumpKind`.
 
-**Locality change.** Journal and grant teams may reuse one exact `ReviewerSystemRole` when candidate Systems, required contribution, and acceptance condition remain aligned. If grant review requires a different contribution or admits a materially different candidate boundary, identify another kind. The two labels decide neither case.
+**Locality change.** Journal and grant teams may reuse one `ReviewerSystemRole` when candidate Systems, required contribution, and acceptance condition remain aligned. If grant review requires a different contribution or admits a materially different candidate boundary, identify another kind. The two labels decide neither case.
 
 ### C.3.1:7 - Archetypal Grounding
 
@@ -101,7 +105,7 @@ Compare the old and proposed declarations in this order:
 | Pump #14 changes state in a later plant slice. | Re-evaluate the admissible candidate and allow the extension to change. | Candidate-state change alone does not create a kind, signature, or relation occurrence. |
 | `InspectionWorkKind` is used locally. | Classify only an independently identified `W : U.Work`. | `U.Work`, a plan, or a log row cannot occupy W's candidate position. |
 | `WorkPlan` depends on Work. | Use the governing work or E.24.UK relation. | Do not encode dependency as `U.SubkindOf`. |
-| `SafetyCriticalFunctionKind` is proposed as a subkind of `FunctionKind`. | First recover both function senses under A.6.F, then use exact criterion entailment or the deliberately closed-domain branch. | The word *function*, a risk label, or current examples establish neither the kinds nor the subkind fact; another public `U.*` name still requires E.24.UK. |
+| `SafetyCriticalFunctionKind` is proposed as a subkind of `FunctionKind`. | First recover both function senses under A.6.F, then use exact criterion entailment or the deliberately closed-domain branch. | The word *function*, a risk label, or current examples establish neither the kinds nor the subkind fact; another public `U.*` name requires E.24.UK. |
 | A project proposes public `U.CoolingPump`. | Take the recovered kind to `E.24.UK`, then apply naming patterns if admitted. | Local typed use and `U.SubkindOf` do not admit or publish another durable kind. |
 
 ### C.3.1:8 - Bias-Annotation
@@ -113,7 +117,7 @@ C.3.1 counters hierarchy, sample-as-law, assertion-as-world, locality, and table
 | Check | Requirement |
 | --- | --- |
 | `CC-C31-1` | Each `U.Kind` individual has a recoverable candidate domain, operative membership condition, intended member/non-member boundary, and continuity rule. Practice/source provenance is a comparison cue, not an automatic identity discriminator. |
-| `CC-C31-2` | `U.SubkindOf` has exact ordered kind participants, declared applicability, one valid obtaining branch, and participant-determined occurrence identity. |
+| `CC-C31-2` | `U.SubkindOf` has ordered kind participants, declared applicability, one valid obtaining branch, and participant-determined occurrence identity. |
 | `CC-C31-2a` | Predicate content, C.2.1 assertion, evidence item, representation edge, scheme and signature editions, and optional occurrence designator remain distinct; none makes the relation obtain by form. |
 | `CC-C31-2b` | Obtaining facts form a preorder. Mutual facts between distinct kinds record classification equivalence for the alignment; a partial order is formed only over equivalence groups when needed. |
 | `CC-C31-3` | Criterion entailment compares exact membership rules under aligned interpretation, or exhaustive evaluation covers a deliberately closed finite domain. Non-exhaustive observations support only the assertion. |
@@ -135,13 +139,13 @@ C.3.1 counters hierarchy, sample-as-law, assertion-as-world, locality, and table
 
 ### C.3.1:11 - Consequences
 
-**Benefits.** Local typed compatibility remains small while its consequences for actual candidate judgments are testable.
+**Benefits.** Local typed compatibility remains small while its consequences for candidate judgments are testable.
 
 **Costs.** A declaration change that matters to later classification needs an explicit edition and a separate continuity decision.
 
 ### C.3.1:12 - Rationale
 
-Kind identity, direct `U.SubkindOf` obtaining, assertion identity, declaration identity, candidate state, and current extension answer different questions and change under different conditions. Their separation lets a kind survive a compatible declaration revision while preventing an assertion or revised criterion from creating an order fact, silently rewriting prior classifications, or hiding a non-obtaining subkind proposal. Keeping the core small also prevents construction, admission, naming, scope, slot discipline, or dependency from being smuggled into one hierarchy relation.
+Kind identity, direct `U.SubkindOf` obtaining, assertion identity, declaration identity, candidate state, and current extension answer different questions and change under different conditions. Their separation lets a kind survive a compatible declaration revision while preventing an assertion or revised criterion from creating an order fact, silently rewriting prior classifications, or hiding a non-obtaining subkind proposal. Keeping the core small also prevents construction, admission, naming, scope, slot discipline, or dependency from being introduced into one hierarchy relation.
 
 ### C.3.1:13 - SoTA-Echoing
 
@@ -149,7 +153,7 @@ For a subkind question restricted to a deliberately closed finite domain, the ex
 
 ### C.3.1:14 - Relations
 
-- **Specializes:** `A.6.REL` for `U.SubkindOf`: exact ordered kind participants, criterion-entailment or exhaustive closed-domain obtaining, applicability, lightweight occurrence use, and participant-determined identity; schemes and declaration editions qualify interpretation and assertion rather than occurrence identity.
+- **Specializes:** `A.6.REL` for `U.SubkindOf`: ordered kind participants, criterion-entailment or exhaustive closed-domain obtaining, applicability, lightweight occurrence use, and participant-determined identity; schemes and declaration editions qualify interpretation and assertion rather than occurrence identity.
 - **Builds on:** `C.3`, A.6.0 declaration identity, C.2.1 episteme and assertion identity, A.2.6/USM context-slice and scope discipline, F-G-R, and C.2.3 formality.
 - **Coordinates with:** `C.3.2` judgments and extensions, `C.3.3` correspondence between independently identified distinct kinds, `A.2` when one local kind is a system-role kind, `A.6.5` declaration-slot uses that consume an already obtaining subkind relation, `C.29` representations, `E.24.UK` durable U-kind admission, and `A.8`, `A.11`, `F.8`, and `F.5` when public kind governance is current.
 - **Other governing patterns:** Use C.2.1 for subkind-assertion epistemes, whether affirmative, negative, or unresolved; candidate features, classification assertions, kind declarations, context bridges, and public naming decisions retain their own governing patterns.

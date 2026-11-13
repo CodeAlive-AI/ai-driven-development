@@ -8,7 +8,11 @@
 
 #### E.11.DSG:1.1 - Use this when
 
-Use this pattern when writing an architectural account for the users of a named method language: how it is assembled, why its parts and connections are selected, what they make possible and how to use them. The account can explain one framework, a DPF Suite or FPF Library. Understanding its choices also lets a user question a premise or propose an improvement. Call it `<name of the explained whole> Architectural Reference`. It carries the public architecture, shared explanation and useful question-led entries, with returns to the full Methods and evidence. It is a support unit of the explained language unless independent use or change justifies a separate product boundary; this function does not by itself make the account another framework or the discipline being described.
+Use this pattern when writing an architectural account for the users of a named method language: how it is assembled, why its parts and connections are selected, what they make possible and how to use them. The account can explain one framework, a DPF Suite or FPF Library.
+
+Understanding the language's choices also lets a user question a premise or propose an improvement. Call the account `<name of the explained whole> Architectural Reference`. It carries the public architecture, shared explanation and useful question-led entries, with returns to the full Methods and evidence.
+
+It is a support unit of the explained language unless independent use or change justifies a separate product boundary; this function does not by itself make the account another framework or the discipline being described.
 
 **First useful result.** Give the reader a usable account of the whole's purpose, constituents, connections and limits, then a direct way into the needed explanation or Method. For a working question, give an answer or honest blocker. Distinguish an available result, a MethodDescription to use, direct-source evidence and a result still missing. Explain each necessary contribution and end that entry with an ordinary stop or return. Do not fill a missing result with another title.
 
@@ -16,7 +20,11 @@ Use this pattern when writing an architectural account for the users of a named 
 
 **What this buys.** The reader can understand the whole without its internal development records, select a useful route, recognize constituent and external contributions, and reach the full Methods, cases, limits and evidence needed to act or adapt the language.
 
-**Not this pattern when.** Use E.4:4.2 and E.4.PFAD to decide which discipline a Suite describes and how its subdisciplines compose it. Use E.8 and the applicable Core or DPF authoring pattern to develop an unwritten Method, including a composite Method. Use a known pattern directly when its contribution is already clear; the architectural reference is not a prerequisite for that use. A separate curriculum or instructional Guide is a pedagogical companion. E.11.PFP governs framework publication form; it does not turn a supporting architectural reference into another framework. Describing FPF Library's connections does not claim a discipline above all its DPFs.
+**Not this pattern when.** Use E.4:4.2 and E.4.PFAD to decide which discipline a Suite describes and how its subdisciplines compose it. Use E.8 and the applicable Core or DPF authoring pattern to develop an unwritten Method, including a composite Method.
+
+Use a known pattern directly when its contribution is already clear; the architectural reference is not a prerequisite for that use.
+
+A separate curriculum or instructional Guide is a pedagogical companion. E.11.PFP governs framework publication form; it does not turn a supporting architectural reference into another framework. Describing FPF Library's connections does not claim a discipline above all its DPFs.
 
 ### E.11.DSG:2 - Problem
 
@@ -32,14 +40,18 @@ These failures confuse different structures. A reader may treat all cited discip
 | Exact return | A short entry must lead to the full contribution, its actual supplying framework and the conditions needed for use. |
 | Public architectural account | Shared rationale, alternatives, sources and whole conditions must remain available without making the reader traverse them before every known pattern. |
 | Different subjects | The composite discipline, its Suite description, constituent frameworks, external suppliers, Reference and publication or access arrangement are not interchangeable. |
-| Honest combination | Several resources may be necessary, alternatives, or merely plausible; the Reference must state the actual relation or uncertainty. |
+| Basis for combining resources | Several resources may be necessary, alternatives, or merely plausible; the Reference must state the actual relation or uncertainty. |
 | Current action | Date, status, warning, availability, and source return matter only when they change what the reader should do. |
 | Low record burden | Ordinary lookup may remain conversation; addressable answers are justified only by later review, reuse, publication, or reliance. |
 | Language reach | Translation and language-specific maintenance may change the episteme or the product boundary. |
 
 ### E.11.DSG:4 - Solution
 
-Develop the account of the named whole under section 4.1, preserving the explanations needed to understand and adapt it. For a problem-led entry, write the practical answer first. State the recognizable situation and question, then say what each returned item actually is and what it contributes: an available result of its own kind and supplying product, a MethodDescription used to select or perform its Method, direct-source evidence for a named claim or decision, or a named unavailable result with its blocker and retry. State maintenance only when it changes the answer. End the entry with the ordinary stop or return. Add identity, relation, evidence, warning, or reliance detail only when it changes the answer's truth, the reader's choice, or a named later use.
+Develop the account of the named whole under section 4.1, preserving the explanations needed to understand and adapt it.
+
+For a problem-led entry, write the practical answer first. State the recognizable situation and question, then say what each returned item is and what it contributes: an available result of its own kind and supplying product, a MethodDescription used to select or perform its Method, direct-source evidence for a named claim or decision, or a named unavailable result with its blocker and retry.
+
+State maintenance only when it changes the answer. End the entry with the ordinary stop or return. Add identity, relation, evidence, warning, or reliance detail only when it changes the answer's truth, the reader's choice, or a named later use.
 
 When an account cites a basis or directs readers to another contribution, use E.8:4.2.2.2 to make the purpose clear in ordinary prose. Preserve the difference among an explanation already given, an available result, material to apply, and a contribution still unavailable. This distinction does not make every relation between frameworks an application instruction or require a label beside every address.
 
@@ -55,19 +67,31 @@ Establish publication, availability, currentness and maintenance only to the ext
 
 ##### E.11.DSG:4.1.1 - Explain the architecture and its reasons at this level
 
-Explain the working problems served by the whole, the contributions of its constituents and the connections that make their use coherent. State the shared assumptions, combination conditions and limitations that are not recoverable from one constituent alone. Include the alternatives and tradeoffs that help a reader choose or adapt the arrangement, the source synthesis and SoTA grounds behind it, and representative cases in which a whole condition changes the next action. Use the substantive questions in E.11.PFP:4.7 for a framework account; at another assembly level retain the questions that its promised use actually needs. A short entry and exact constituent returns can spare a familiar reader repetition, but a locator does not supply an unwritten shared explanation.
+Explain the working problems served by the whole, the contributions of its constituents and the connections that make their use coherent. State the shared assumptions, combination conditions and limitations that are not recoverable from one constituent alone. Include the alternatives and tradeoffs that help a reader choose or adapt the arrangement, the source synthesis and SoTA grounds behind it, and representative cases in which a whole condition changes the next action.
 
-Place the account at the assembly level of the whole it explains, then choose its carrier. In a one-file framework, embed that framework's architectural reference as a named unit. In a multi-file language, provide the account at that language's assembly level and make the constituent accounts reachable. For example, an Engineering Suite Architectural Reference explains the Suite's composition; the FPF Library Architectural Reference explains its relations to other Suites and standalone DPFs. Neither source-file boundaries nor generated website pages create additional explained wholes. Use the full qualified title at the unit's entrance and an unambiguous shorter mention within it; a generic heading `Reference` alone does not identify the subject.
+Use the substantive questions in E.11.PFP:4.7 for a framework account; at another assembly level retain the questions that its promised use needs. A short entry and exact constituent returns can spare a familiar reader repetition, but a locator does not supply an unwritten shared explanation.
+
+Place the account at the assembly level of the whole it explains, then choose its carrier. In a one-file framework, embed that framework's architectural reference as a named unit. In a multi-file language, provide the account at that language's assembly level and make the constituent accounts reachable.
+
+For example, an Engineering Suite Architectural Reference explains the Suite's composition; the FPF Library Architectural Reference explains its relations to other Suites and standalone DPFs.
+
+Neither source-file boundaries nor generated website pages create additional explained wholes. Use the full qualified title at the unit's entrance and an unambiguous shorter mention within it; a generic heading `Reference` alone does not identify the subject.
 
 Keep the account's **referential index** recoverable: who speaks, to whom, about which language, and for which reader action. In an Architectural Reference, its author explains the named language to its users. They need to understand how the arrangement works, what it enables, how to use its contributions and why it was chosen. Resolve wording such as 'we', 'you', 'here' and 'this framework' from that position. Identify the reading purpose, not a person's profession: a framework developer selecting a Method is a user in that passage; when the explained framework itself teaches framework development, its developers are its practitioner users.
 
 Distinguish that explanation from instructions for constructing or revising a pattern language. This pattern and the applicable E.9, architecture and authoring patterns address that development work. A Reference can explain a constraint on valid use of its language; state whom it constrains, under which conditions and from which governing pattern it follows. A sentence about what the authors selected does not by itself impose an obligation on users or future authors.
 
-Publish the architectural decisions realized by this language and the reasons needed to understand and use them. The architectural reference can be their public statement, not merely a summary of a private record. Keep chronology, superseded decisions, review correspondence and release logs in the corresponding project's documentation. E.9 develops and records a substantive decision; a decision record is not historical by its kind. The public account retains the operative choice and its useful grounds. An explanation of an already described Method can remain in its pattern or the architectural reference of the whole it explains. A separate course or Guide serves a learning purpose; it is not a substitute for the language's own explanation.
+Publish the architectural decisions realized by this language and the reasons needed to understand and use them. The architectural reference can be their public statement, not merely a summary of a private record.
+
+Keep chronology, superseded decisions, review correspondence and release logs in the corresponding project's documentation. E.9 develops and records a substantive decision; a decision record is not historical by its kind. The public account retains the operative choice and its useful grounds.
+
+An explanation of an already described Method can remain in its pattern or the architectural reference of the whole it explains. A separate course or Guide serves a learning purpose; it is not a substitute for the language's own explanation.
 
 ##### E.11.DSG:4.1.2 - Make current decisions understandable and revisable
 
-Organize the account around the architectural questions that matter to users of this language. A reader may need to understand a boundary before choosing a Method. The same explanation can let that reader challenge the boundary and propose a change; it need not teach the work of developing the next framework edition. Give such a decision a recognizable title and section address. Connect related decisions: a choice of field boundary can determine which Methods are constituents, which are suppliers and what a whole-level Method still has to obtain. A list of isolated decisions cannot replace the account of that whole.
+Organize the account around the architectural questions that matter to users of this language. A reader may need to understand a boundary before choosing a Method. The same explanation can let that reader challenge the boundary and propose a change; it need not teach the work of developing the next framework edition.
+
+Give such a decision a recognizable title and section address. Connect related decisions: a choice of field boundary can determine which Methods are constituents, which are suppliers and what a whole-level Method still has to obtain. A list of isolated decisions cannot replace the account of that whole.
 
 For a decision needed to understand, combine or revise the language, make these answers recoverable:
 
@@ -76,11 +100,19 @@ For a decision needed to understand, combine or revise the language, make these 
 3. **Grounds and alternatives.** Why is this arrangement useful under those conditions? Compare the serious alternatives that could change the choice, with their sources and limits. An unexplained preference or reference to an inaccessible DRR supplies no rationale.
 4. **Consequences and revision.** What can readers obtain with this arrangement, what does it cost or leave unresolved, and which Methods or connections depend on it? Explain what changed condition would justify reconsideration and what related claims would then need examination.
 
-These are substantive questions, not four mandatory subheadings or a demand for one ADR file per decision. Use connected prose, a comparison table, a diagram or a developed case as the question requires. Section titles should name the architectural issue or choice; E.11.PFP:4.7 supplies the framework-wide content functions, and section 4.2.1 supplies the addresses. Keep a shared premise once and return to it from the decisions that use it. The reader should not have to assemble the whole from repeated miniature forms.
+These are substantive questions, not four mandatory subheadings or a demand for one ADR file per decision. Use connected prose, a comparison table, a diagram or a developed case as the question requires.
+
+Section titles should name the architectural issue or choice; E.11.PFP:4.7 supplies the framework-wide content functions, and section 4.2.1 supplies the addresses. Keep a shared premise once and return to it from the decisions that use it. The reader should not have to assemble the whole from repeated miniature forms.
 
 A decision can define the architecture of this published language without imposing a universal rule on all disciplines or frameworks. State any normative requirement with its actual scope and return to its governing pattern. Conversely, an explanatory form does not make the language's declared composition an optional opinion. Claims about the discipline still need their C.20 grounds; publishing a decision does not create those subject-side relations.
 
-Architectural patterns can contribute to this account or organize its explanation when they belong to the explained language and supply a result its users need. Develop a missing reusable construction as a complete E.8 pattern in Core, the relevant DPF or the Suite according to its subject. An architectural-reference publication may carry that pattern if its full body, identity, reader use, entry and authoritative source remain explicit under E.11.PFP. Otherwise return to its existing full body. Distinguish a domain architectural Method used by the language's practitioners from a Method for developing the language itself. Reusability alone does not place the latter in a user-facing account. Sharing a carrier does not turn ordinary explanatory sections into normative authoring Methods. A record explaining why this language selects one architecture is not automatically a new pattern; E.9 and the applicable architecture and authoring patterns supply the development Methods.
+Architectural patterns can contribute to this account or organize its explanation when they belong to the explained language and supply a result its users need. Develop a missing reusable construction as a complete E.8 pattern in Core, the relevant DPF or the Suite according to its subject.
+
+An architectural-reference publication may carry that pattern if its full body, identity, reader use, entry and authoritative source remain explicit under E.11.PFP. Otherwise return to its existing full body.
+
+Distinguish a domain architectural Method used by the language's practitioners from a Method for developing the language itself. Reusability alone does not place the latter in a user-facing account. Sharing a carrier does not turn ordinary explanatory sections into normative authoring Methods.
+
+A record explaining why this language selects one architecture is not automatically a new pattern; E.9 and the applicable architecture and authoring patterns supply the development Methods.
 
 First test the account for its user's work. From the account and its reachable suppliers, can the reader recognize when the language is useful, select and connect its contributions, and explain why a relevant architectural condition changes that use? If the reader can only repeat the arrangement or guess why it was chosen, develop the missing explanation.
 
@@ -88,7 +120,9 @@ An informed change proposal supplies an additional test of that understanding. A
 
 #### E.11.DSG:4.2 - Make the public minimum immediately useful
 
-Make the account noticeable from the ordinary entrance to the explained language. A reader who does not know that an architectural explanation exists must be able to recognize its purpose before searching for its title. In a README or equivalent entrance, offer a prominent, ordinary-language question such as “How is this language organized and why?”, link directly to the account, and state what it explains. Place that choice where readers first choose how to enter, alongside the route to a known Method. A link buried among filenames or offered only as an extra worked example does not communicate that purpose.
+Make the account noticeable from the ordinary entrance to the explained language. A reader who does not know that an architectural explanation exists must be able to recognize its purpose before searching for its title. In a README or equivalent entrance, offer a prominent, ordinary-language question such as “How is this language organized and why?”, link directly to the account, and state what it explains.
+
+Place that choice where readers first choose how to enter, alongside the route to a known Method. A link buried among filenames or offered only as an extra worked example does not communicate that purpose.
 
 Test this entrance from the reader's starting situation, without supplying the Reference's name or destination as the answer. Can the reader notice that the explanation exists, tell what question it answers, and choose it when the arrangement is unclear? Can someone with a familiar sufficient Method still proceed directly? Successful filename search or link resolution answers a different question.
 
@@ -112,31 +146,63 @@ available result, MethodDescription, direct-source evidence, or named unavailabl
 ordinary stop or return
 ```
 
-Add a DPF product series' or edition's state, field promise, detailed locator, applicability, evidence, availability, dependency, compatibility, warning, author, or claim-local reopen condition only when it changes the choice, truth, stop, return, or named reliance. Put a genuinely shared boundary once at Reference or section level. Do not repeat empty fields or turn ordinary architectural decisions into pattern-index entries. Use section addresses for the account. If the publication also carries declared E.8 patterns, retain their distinct entries and full bodies under E.11.PFP.
+Add a DPF product series' or edition's state, field promise, detailed locator, applicability, evidence, availability, dependency, compatibility, warning, author, or claim-local reopen condition only when it changes the choice, truth, stop, return, or named reliance.
 
-Frame each entry around a real working question and the decision or action the reader needs next. Let the answer branch, overlap, or offer several honest stops when the situation does; do not force a false linear procedure. Keep the action-changing answer in the entry and return to detailed sources and explanations already provided in the account or its constituents instead of repeating them. At Reference level, state whose information need is served, how the publication is presented and made available, how readers return to its sources, and where later review or retirement is decided. Future revision or continued availability requires a separate commitment.
+State a boundary shared by the entries once at Reference or section level. Do not repeat empty fields or turn ordinary architectural decisions into pattern-index entries. Use section addresses for the account. If the publication also carries declared E.8 patterns, retain their distinct entries and full bodies under E.11.PFP.
+
+Frame each entry around a real working question and the decision or action the reader needs next. Let the answer branch, overlap, or offer several justified stopping points when the situation warrants them; do not force a false linear procedure. Keep the action-changing answer in the entry and return to detailed sources and explanations already provided in the account or its constituents instead of repeating them.
+
+At Reference level, state whose information need is served, how the publication is presented and made available, how readers return to its sources, and where later review or retirement is decided. Future revision or continued availability requires a separate commitment.
 
 ##### E.11.DSG:4.2.1 - Give each answer a stable address and a recoverable extent
 
-Use the architectural-reference unit's declared key and give each substantive heading a stable section address, for example `Engineering.Reference:2` and `Engineering.Reference:2.1`. These are `SectionRef` values for the unit, not PatternIDs or a framework identity. Keep one qualified unit title, a contents entry for every substantive heading, and a final `<ReferenceKey>:End` boundary. In an embedded account, use the containing publication's ToC rather than add another one. A structural Contents heading needs no section address. Use nested contents entries to make the answer hierarchy visible and every substantive heading reachable.
+Use the architectural-reference unit's declared key and give each substantive heading a stable section address, for example `Engineering.Reference:2` and `Engineering.Reference:2.1`. These are `SectionRef` values for the unit, not PatternIDs or a framework identity.
+
+Keep one qualified unit title, a contents entry for every substantive heading, and a final `<ReferenceKey>:End` boundary.
+
+In an embedded account, use the containing publication's ToC rather than add another one. A structural Contents heading needs no section address. Use nested contents entries to make the answer hierarchy visible and every substantive heading reachable.
 
 Make the heading levels express the actual containment of the answers. In a Markdown carrier, a complete addressed section includes its own text and child sections up to the next heading of the same or a higher level, or the document's end boundary. The numbers and heading hierarchy must agree; a number alone does not change the returned extent. Place examples and variations under the explanation whose answer they develop. An independently retrieved example returns to any parent or related explanation needed to interpret it.
 
-Keep an established SectionRef when only the heading title changes. When moving a section beneath another parent requires a different hierarchical path, assign its current SectionRef and record the correspondence in the publication or access maintenance material. Update maintained links to the current section. Preserve former returns in each access route that claims that continuity; do not reuse a former address for another answer or place a migration history in practitioner prose. A new answer receives an unused address. Preserve returns to saved heading fragments using facilities permitted by the selected publication form. For Markdown, follow E.8:4.1.1 and update maintained links to the corresponding native heading. Resolution of a carrier fragment does not establish that another access route can resolve the former SectionRef. If a route cannot preserve a return, identify the replacement and the affected reliance before claiming continuity. Check the full contents and complete returned sections, including their children, in each selected presentation or access route. Successful title search establishes findability for that query; stable identity and complete extraction need their own evidence.
+Keep an established SectionRef when only the heading title changes. When moving a section beneath another parent requires a different hierarchical path, assign its current SectionRef and record the correspondence in the publication or access maintenance material.
+
+Update maintained links to the current section. Preserve former returns in each access route that claims that continuity; do not reuse a former address for another answer or place a migration history in practitioner prose.
+
+A new answer receives an unused address. Preserve returns to saved heading fragments using facilities permitted by the selected publication form.
+
+For Markdown, follow E.8:4.1.1 and update maintained links to the corresponding native heading. Resolution of a carrier fragment does not establish that another access route can resolve the former SectionRef. If a route cannot preserve a return, identify the replacement and the affected reliance before claiming continuity.
+
+Check the full contents and complete returned sections, including their children, in each selected presentation or access route. Successful title search establishes findability for that query; stable identity and complete extraction need their own evidence.
 
 #### E.11.DSG:4.3 - Keep lookup Work and the answer separate
 
-A person, team, or assisting System may use one Reference edition while doing lookup Work. Ordinary use alone does not establish a Method, assignment, operation application, evidence, or authority. Identify those objects only when the current claim actually needs their direct rules.
+A person, team, or assisting System may use one Reference edition while doing lookup Work. Ordinary use alone does not establish a Method, assignment, operation application, evidence, or authority. Identify those objects only when the claim needs their direct rules.
 
-An ordinary answer may remain readable conversation. Persist one only when review, reuse, publication, or later reliance needs an addressable result. First identify the exact practical-question episteme `Q`. Then identify the answer episteme `A` under `C.2.1` as `<claim content = J_a, EntityOfConcern = Q, effective ReferenceScheme = R_a>`. `J_a` states the answer, exact Reference edition used, every returned resource or blocker, and what each does in this answer. `R_a` resolves those values and the use-specific relation words. This is an ordinary episteme, not a new lookup-result kind.
+An ordinary answer may remain readable conversation. Persist one only when review, reuse, publication, or later reliance needs an addressable result.
 
-Say directly what each returned item does. For an available result, name the result's actual kind, supplying product and edition or current state, receiving use, and any currentness or availability condition that can change that use. State maintenance only when it changes the answer. For a MethodDescription, name the described Method and how the reader uses the description; do not present its expected result as already obtained. For direct-source evidence, name the supported claim or decision and the source limits. For an unavailable result, name the blocker and retry condition. Recommendation, alternative, dependency, compatibility, and co-listing remain separate claims and create none of these stronger relations.
+For an answer that must be persisted, first identify the exact practical-question episteme `Q`. Then identify the answer episteme `A` under `C.2.1` as `<claim content = J_a, EntityOfConcern = Q, effective ReferenceScheme = R_a>`.
+
+`J_a` states the answer, exact Reference edition used, every returned resource or blocker, and what each does in this answer. `R_a` resolves those values and the use-specific relation words. This is an ordinary episteme, not a new lookup-result kind.
+
+Say directly what each returned item does. For an available result, name the result's actual kind, supplying product and edition or current state, receiving use, and any currentness or availability condition that can change that use. State maintenance only when it changes the answer.
+
+For a MethodDescription, name the described Method and how the reader uses the description; do not present its expected result as already obtained.
+
+For direct-source evidence, name the supported claim or decision and the source limits. For an unavailable result, name the blocker and retry condition.
+
+Recommendation, alternative, dependency, compatibility, and co-listing remain separate claims and create none of these stronger relations.
 
 #### E.11.DSG:4.4 - Test sufficiency and each item's necessity
 
-Call a combination sufficient when it satisfies the required result and sufficiency rule within the recoverable candidate boundary. The boundary is the resources actually inspected through the entry and its direct source returns, not every publication that might exist. Claim that every returned item is necessary only when removing any one makes the result insufficient. This item-necessity test does not establish the smallest combination: that claim also needs a size criterion and a comparison or argument showing that no smaller in-scope combination is sufficient.
+Call a combination sufficient when it satisfies the required result and sufficiency rule within the recoverable candidate boundary. The boundary is the resources actually inspected through the entry and its direct source returns, not every publication that might exist.
 
-Return the strongest supported conclusion. Established sufficiency remains usable when item necessity or minimal size is unestablished; when sufficiency itself remains open, name the missing premise and qualify the combination accordingly. Distinguish resources included together from alternatives retained for later choice. When justified all-member inclusion needs a selector-facing `JointUseSet` declaration, use `G.5-6 DeclareSetResult` with the identified members, named use and current inclusion basis. The resources retain their own kinds; this declaration does not perform their selection.
+Claim that every returned item is necessary only when removing any one makes the result insufficient.
+
+This item-necessity test does not establish the smallest combination: that claim also needs a size criterion and a comparison or argument showing that no smaller in-scope combination is sufficient.
+
+Return the strongest supported conclusion. Established sufficiency remains usable when item necessity or minimal size is unestablished; when sufficiency itself remains open, name the missing premise and qualify the combination accordingly.
+
+Distinguish resources included together from alternatives retained for later choice. When justified all-member inclusion needs a selector-facing `JointUseSet` declaration, use `G.5-6 DeclareSetResult` with the identified members, named use and current inclusion basis. The resources retain their own kinds; this declaration does not perform their selection.
 
 #### E.11.DSG:4.5 - Return to the full Methods and refresh the affected answers
 
@@ -154,7 +220,9 @@ When an answer loses a required contribution, name the missing result and its co
 
 Another layout, carrier, rendering, or faithful expression of the same exact claims under the same scheme presents the same Reference episteme. A translation or other derivative that changes claims or effective scheme is a distinct episteme with an exact source-to-use path under `C.2.P`; when meanings cross schemes, test the `F.9` Bridge and bounded use separately. Title or provenance alone establishes no `EpistemeEditionRelation`.
 
-A language-specific derivative stays within the same Reference product only while it uses the same intended readers and use, access rule, warning rule, later-review rule, and retirement rule. A separately established maintenance relation changes product identity only when the identity rule says so. If a language community needs a different current state or any of those rules, select another Reference product. A comparison across Suites can belong to the FPF Library Architectural Reference. Give it an independent product identity only when its use and change boundary justify that choice under E.4:4.1.
+A language-specific derivative stays within the same Reference product only while it uses the same intended readers and use, access rule, warning rule, later-review rule, and retirement rule. A separately established maintenance relation changes product identity only when the identity rule says so. If a language community needs a different current state or any of those rules, select another Reference product.
+
+A comparison across Suites can belong to the FPF Library Architectural Reference. Give it an independent product identity only when its use and change boundary justify that choice under E.4:4.1.
 
 ### E.11.DSG:5 - Archetypal Grounding
 
@@ -166,7 +234,9 @@ If the decision is safety-critical or legally constrained, add the exact source 
 
 #### E.11.DSG:5.2 - External suppliers and a translated Reference
 
-A Reference may combine results from narrative, language-practice and pedagogical DPFs for one lesson-planning question. It labels each as a constituent or an external supplier according to the actual field architecture; their co-use alone creates no Suite. Explain the contribution and conditions of the resources included together and judge whether their combination supplies the lesson-planning result. Claim that every item is necessary only if removing any one defeats that result. Retain an established sufficient combination without that stronger claim; distinguish it from alternatives or a combination whose sufficiency is still open.
+A Reference may combine results from narrative, language-practice and pedagogical DPFs for one lesson-planning question. It labels each as a constituent or an external supplier according to the actual field architecture; their co-use alone creates no Suite.
+
+Explain the contribution and conditions of the resources included together and judge whether their combination supplies the lesson-planning result. Claim that every item is necessary only if removing any one defeats that result. Retain an established sufficient combination without that stronger claim; distinguish it from alternatives or a combination whose sufficiency is still open.
 
 A Spanish translation of an English Reference is a derivative episteme when its effective scheme changes. It remains in the same Reference product only while it uses the same reader and use, access rule, warning rule, later-review rule, and retirement rule. A separately established maintenance relation changes product identity only when the identity rule says so. A different Spanish use or current state may select another Reference product even when its title and cited DPFs remain recognizable.
 
@@ -187,9 +257,17 @@ A Spanish translation of an English Reference is a derivative episteme when its 
 
 #### E.11.DSG:5.4 - Understanding an arrangement before questioning it
 
-A Library user needs to work without a network and considers proposing that each DPF include its own editable copy of all general Methods. The Library Architectural Reference explains two relevant decisions: general constructions have one full Core source because their conditions apply across subjects; a usable publication must also make its required texts obtainable. Their consequence is not a requirement for network access. A self-contained distribution of identified editions can answer the access problem without creating separately maintained versions of the same Method. A change to the general Method is a different proposal and must consider its other users. The account lets the user choose a sufficient offline arrangement and distinguish it from a proposal to change a general Method. It does not teach how to maintain the Library.
+A Library user needs to work without a network and considers proposing that each DPF include its own editable copy of all general Methods. The Library Architectural Reference explains two relevant decisions: general constructions have one full Core source because their conditions apply across subjects; a usable publication must also make its required texts obtainable.
 
-A user of a single-file semantic-integration framework wants repeatable queries and considers proposing a materialized graph for every integration. Its architectural reference explains the selected freedom of realization: a live provider can forbid copying, while another use may require repeatable local queries. SIE.8 carries the full Method for selecting a realization under those conditions. The Reference explains why the language retains that choice and how it relates to identity, interfaces and validation. An issue claiming that every integration must copy the sources can therefore be tested against a stated condition; an issue showing a new arrangement that meets both access and repeatability requirements can improve the Method. Reprinting SIE.8 in the Reference would add no missing architectural explanation.
+Their consequence is not a requirement for network access. A self-contained distribution of identified editions can answer the access problem without creating separately maintained versions of the same Method.
+
+A change to the general Method is a different proposal and must consider its other users. The account lets the user choose a sufficient offline arrangement and distinguish it from a proposal to change a general Method. It does not teach how to maintain the Library.
+
+A user of a single-file semantic-integration framework wants repeatable queries and considers proposing a materialized graph for every integration. Its architectural reference explains the selected freedom of realization: a live provider can forbid copying, while another use may require repeatable local queries.
+
+SIE.8 carries the full Method for selecting a realization under those conditions. The Reference explains why the language retains that choice and how it relates to identity, interfaces and validation.
+
+An issue claiming that every integration must copy the sources can therefore be tested against a stated condition; an issue showing a new arrangement that meets both access and repeatability requirements can improve the Method. Reprinting SIE.8 in the Reference would add no missing architectural explanation.
 
 In both cases the author first explains an arrangement that the user needs to apply. Understanding its reasons also makes a meaningful challenge possible. That additional result does not change the account into instructions to future framework developers. A project log or a table of current filenames supplies neither the practical explanation nor its reasons.
 
@@ -239,7 +317,7 @@ In both cases the author first explains an arrangement that the user needs to ap
 
 ### E.11.DSG:10 - Rationale
 
-An architectural reference explains the structure and reasons of a method language. For a Suite, the discipline described and the account of its framework remain different subjects; for FPF Library, connections among languages need not be disciplinary part relations. This is why the account can explain outside contributions without absorbing their fields and why repairing or retiring the account does not reidentify a discipline.
+An architectural reference explains the structure and reasons of a method language. For a Suite, the discipline described and the account of its framework remain different subjects; for FPF Library, connections among languages need not be disciplinary part relations. These distinctions let the account explain outside contributions without absorbing their fields. Repairing or retiring the account does not by itself change the discipline's identity.
 
 Progressive detail keeps ordinary use short without shortening the full explanation needed for adaptation. A trustworthy entry exposes its useful contribution and returns to the developed Method rather than making navigation compensate for missing content.
 

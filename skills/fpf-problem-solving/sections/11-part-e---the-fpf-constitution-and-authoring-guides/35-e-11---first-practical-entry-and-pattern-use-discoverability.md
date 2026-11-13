@@ -16,11 +16,11 @@ A reader may arrive with a project question rather than a PatternID: for example
 
 **Primary EntityOfConcern.** One public entry or discoverability publication unit: pattern title, README first-entry guidance, architectural-reference explanation, ToC query material, retrieval cue, expanded entry-disambiguation case, or a pattern-local `Problem frame`.
 
-**Author and reader remain different.** An FPF author or maintainer publishes or refreshes the public guidance. A practitioner, manager, or assisting agent reads it and opens the direct pattern; that reader is not thereby performing E.11 publication work.
+**Who publishes and who reads.** An FPF author or maintainer publishes or refreshes the public guidance. A practitioner, manager, or assisting agent reads it and opens the direct pattern; that reader is not thereby performing E.11 publication work.
 
 **Practical gain.** The entry connects a project question to a direct pattern and its first useful result. The direct pattern retains the governing explanation; each navigation unit carries its own entry function.
 
-**Not this pattern when.** After one direct pattern is selected, use `E.11.PUA` to follow its `Solution` to the smallest useful result or an honest missing-basis stop. Use `E.11.PUR` to judge applicability, recommendation, coordination, or ordering among candidate pattern uses, and to stop on an earlier result that still answers the concern. Use the direct pattern for the actual result, plan, work, evidence, decision, authorization, or publication claim.
+**Not this pattern when.** After one direct pattern is selected, use `E.11.PUA` to follow its `Solution` to the smallest useful result or a stop that states the missing basis. Use `E.11.PUR` to judge applicability, recommendation, coordination, or ordering among candidate pattern uses, and to stop on an earlier result that still answers the concern. Use the direct pattern for the actual result, plan, work, evidence, decision, authorization, or publication claim.
 
 ### E.11:2 - Problem
 
@@ -40,11 +40,13 @@ Attempts to help can create a second problem. Public guidance becomes a numbered
 | Durable reliance | Only a named later review, replay, audit, automation, or costly decision justifies addressable comparison history. |
 | No duplicate canon | README, architectural reference, ToC, retrieval, expanded cases, and local `Problem frame` sections keep different jobs. |
 | Didactic continuity | A public entry gives a readable example or walkthrough, not only a PatternID list. |
-| Corpus evolution | Repair the smallest affected entry and its true consumers when a direct pattern's result, boundary, or recognition condition changes. |
+| Corpus evolution | Repair the smallest affected entry and the publications or uses that depend on it when a direct pattern's result, boundary, or recognition condition changes. |
 
 ### E.11:4 - Solution - Give Each Entry Publication Unit One Job
 
-Write the short public entry first: recognizable working situation, practical question, first useful result or blocker, direct pattern or small plausible set, and ordinary stop or wrong-turn return. If that prose is truthful and sufficient, stop expanding the entry. Add an expansion, exact result basis, or durable comparison only when ambiguity or a named receiving reliance needs it. The entry returns to the full architectural reference and pattern bodies when their explanation is needed.
+Write the short public entry first: recognizable working situation, practical question, first useful result or blocker, direct pattern or small plausible set, and ordinary stop or wrong-turn return.
+
+If that prose is truthful and sufficient, stop expanding the entry. Add an expansion, exact result basis, or durable comparison only when ambiguity or a named receiving reliance needs it. The entry returns to the full architectural reference and pattern bodies when their explanation is needed.
 
 Use this distribution:
 
@@ -60,9 +62,15 @@ Use this distribution:
 
 The framework Readme is the single editable public entry set. If another publication form needs the same guidance, project it from that Readme rather than maintaining a second version. Put any unique cue in the publication unit whose job matches it, then remove the duplicate row or index.
 
-Use `E.11.PFP` when one public FPF, DPF, or LPF edition needs the shared reader-facing publication form: a compact product-declared opening, separate declared product title and Readme H1, Readme and architectural reference represented in the product's established ToC grammar before one logical pattern index, Readme entry fields, a front-only development-metadata boundary, language boundary, and deterministic source-hazard plus rendered-structure checks. E.11 still tells the reader how to state the practical question, obtain a first useful result, use the direct pattern, and stop or return. Do not copy the form grammar here or treat a form-valid carrier as a usable framework.
+Use `E.11.PFP` when one public FPF, DPF, or LPF edition needs the shared reader-facing publication form: a compact product-declared opening, separate declared product title and Readme H1, Readme and architectural reference represented in the product's established ToC grammar before one logical pattern index, Readme entry fields, a front-only development-metadata boundary, language boundary, and deterministic source-hazard plus rendered-structure checks.
 
-Use `E.11.DSG` for the full architectural reference of a framework, Suite or FPF Library and its useful question-led entries. The account explains the whole's architecture and reasons; an entry starts with a recognizable situation and returns to the full Methods, available results, evidence or an honest gap. For a Suite, distinguish constituent subdisciplines from outside suppliers. Embed the framework account in an all-in-one publication; a Suite or Library account can have its own carrier at that assembly level. These are applications of the same explanatory function, not additional frameworks or necessarily independent product series. A known sufficient contribution remains directly usable; an absent or stale account limits its explanatory route. `E.11.PFP` governs framework publication form.
+E.11 still tells the reader how to state the practical question, obtain a first useful result, use the direct pattern, and stop or return. Do not copy the form grammar here or treat a form-valid carrier as a usable framework.
+
+Use `E.11.DSG` for the full architectural reference of a framework, Suite or FPF Library and its useful question-led entries. The account explains the whole's architecture and reasons; an entry starts with a recognizable situation and returns to the full Methods, available results, evidence or a statement of what is missing.
+
+For a Suite, distinguish constituent subdisciplines from outside suppliers. Embed the framework account in an all-in-one publication; a Suite or Library account can have its own carrier at that assembly level. These are applications of the same explanatory function, not additional frameworks or necessarily independent product series.
+
+A known sufficient contribution remains directly usable; an absent or stale account limits its explanatory route. `E.11.PFP` governs framework publication form.
 
 Pattern count is only a diagnostic. A one-pattern edition asks whether the result is instead a seed, candidate, or contribution to an existing framework; a larger count still does not establish a pattern language. Use `E.4` and `E.4.PFAD` to decide framework architecture, `E.4.DPF.DA` or `E.2.DA` for the applicable package or whole-FPF adequacy, and `E.21` for pattern quality.
 
@@ -70,7 +78,9 @@ When the reader's obstacle is finding material under unfamiliar source wording o
 
 When discoverability has become use of one selected pattern, continue with `E.11.PUA`. When the live question is which applicable pattern use to recommend, how several uses relate, or whether an earlier result already answers the concern, continue with `E.11.PUR`. Neither continuation turns a public entry order into a universal workflow.
 
-For an FPF-grounded domain or local practice framework, README, architectural reference, ToC, practical entries, an all-in-one carrier, a skill pack, retrieval, or a callable access service may expose the entry. That publication or access use neither decides framework architecture nor supplies authority, and the carrier is not the pattern body merely because a reader reaches it first. Use `E.4` to identify the framework family and member. Only when a downstream-used framework-architecture question is live, record its selected answer in one `E.9` DRR using the `E.4.PFAD` profile; use `E.4.PFR` separately when a named relation or edition maintenance use needs its representation.
+For an FPF-grounded domain or local practice framework, README, architectural reference, ToC, practical entries, an all-in-one carrier, a skill pack, retrieval, or a callable access service may expose the entry. That publication or access use neither decides framework architecture nor supplies authority, and the carrier is not the pattern body merely because a reader reaches it first.
+
+Use `E.4` to identify the framework family and member. Only when a downstream-used framework-architecture question is live, record its selected answer in one `E.9` DRR using the `E.4.PFAD` profile; use `E.4.PFR` separately when a named relation or edition maintenance use needs its representation.
 
 Before a query exists, distinguish an unexamined way of working from a known method that goes unnoticed. `B.5.PI` connects an ordinary work occasion with inquiry; `B.5.EA` helps retain and express a sensed but unformulated distinction. A recoverable early cue need not yet become a query. Once there is a question, the entry discipline here helps reach the contribution that could answer it.
 
@@ -93,7 +103,13 @@ The semantic keys in `E.11:4.5` identify situations, not steps. A reader may ins
 
 When an entry describes a reusable composite Method, make its complete problem–move–result explanation obtainable in a normal public pattern or other appropriate developed owner. E.4.CM develops a missing composition and chooses that owner. The card can then be a short presentation of the Method; its status as a publication unit does not reduce the described Method to navigation. An entry that only helps select among Methods can remain navigation.
 
-Keep three reader-facing jobs distinct. A compact locator points to a direct pattern when retrieval is enough and carries no mandatory mantra. An ordinary practical entry makes the five values above recoverable when one direct pattern, with at most a plainly conditioned next use, can answer the difficulty, provide a first result or blocker, and say when to stop or return. A Practical-Use Card is a selected Readme example for a recurring complex difficulty whose useful answer normally spans several direct pattern contributions, checks, and returns. Its visible mantra keeps that longer dependency in attention during repeated or interrupted use. The card is a publication unit that publishes practical-use guidance: the guidance is what it tells the reader, while the card unit is the entry that carries it. Neither is the shared form, a pattern body, a Method, performed Work, a project result, authority, or a CGUS demonstration.
+Keep three reader-facing jobs distinct. A compact locator points to a direct pattern when retrieval is enough and carries no mandatory mantra.
+
+An ordinary practical entry makes the five values above recoverable when one direct pattern, with at most a plainly conditioned next use, can answer the difficulty, provide a first result or blocker, and say when to stop or return.
+
+A Practical-Use Card is a selected Readme example for a recurring complex difficulty whose useful answer normally spans several direct pattern contributions, checks, and returns. Its visible mantra keeps that longer dependency in attention during repeated or interrupted use.
+
+The card is the publication unit. Its practical-use guidance is what it tells the reader. Neither is the shared form, a pattern body, a Method, performed Work, a project result, authority, or a CGUS demonstration.
 
 When a Card or mantra is useful because it keeps material dependencies among several independently reusable recurring problem–move–result contributions in attention, return to the candidate-recognition move in `E.4.DPF:4` before treating the Card as only an access front. Its form is a cue for that comparison, not proof of framework scale or product membership. When no live framework question remains, continue choosing or maintaining the entry form under the tests below.
 
@@ -101,12 +117,29 @@ The displayed entries illustrate how the pattern language can help. When both us
 
 The following comparison selects a Practical-Use Card for an entry; it does not select which subject reasoning the language preserves. A long mantra and its developed account can explain the language's architecture even when an ordinary entry is sufficient. Use E.11.PFP:4.7.2 to publish that connected explanation and its overview without forcing it into a card.
 
-Before selecting a card, compare the proposed entry with the same truthful content but no mantra. If a cold reader can still recognize the situation, choose the direct pattern and any plainly conditioned next use, recover the first result or blocker, and return after interruption or repetition just as reliably, keep a locator or ordinary entry. Select a card only when, without the repeatable formula, the reader is materially more likely to lose a choice-changing question, intermediate result, check, branch, or return, and repeating the mantra restores that reasoning. Immediate recognition, repeated exposure, fluent recitation, pattern count, heading depth, an existing label, a quota, or a wish to avoid validation is not evidence. If the mantra crowds out the first result or return, or adds no recall advantage over the same content without it, use the ordinary entry or locator instead. Check declared cards and plausible non-card entries under the same test; the number of cards is an outcome, not a target.
+Before selecting a card, compare the proposed entry with the same truthful content but no mantra. If a cold reader can still recognize the situation, choose the direct pattern and any plainly conditioned next use, recover the first result or blocker, and return after interruption or repetition just as reliably, keep a locator or ordinary entry.
 
-Keep four claims separate. A product selects a card unit for a reader use. The unit publishes practical-use guidance. The product gives every selectable example one stable semantic key and assigns that key one ordinary-entry or card form in one product-wide declaration. The visible card applies the shared form from `E.11.PFP`. A key, heading, form, or mantra establishes none of the other claims by itself.
+Select a card only when, without the repeatable formula, the reader is materially more likely to lose a choice-changing question, intermediate result, check, branch, or return, and repeating the mantra restores that reasoning.
 
-A local mantra may keep one bounded result or one direct pattern contribution in attention. It belongs in the direct pattern, an ordinary entry, or other teaching material when useful; it does not by itself select a Practical-Use Card. A card mantra keeps the reasoning from the recognizable difficulty to a more distant intended result in attention across several pattern contributions. Include only the intermediate questions, results, checks, branches, and return conditions that change how the reader continues. Phrase length does not decide either use. The mantra remains Plain, repeatable action or judgement wording. It does not replace a direct pattern's `Solution`, create Work, or establish a CGUS structure. An optional same-key expansion explains only the branch choice or result support that the compact card cannot omit truthfully; an ordinary walkthrough remains an explanation, and a demonstrative slice still requires independent `A.22.CGUS` admission. `E.11.PFP` defines the required visible field and heading grammar rather than this section.
-When an entry must show how one pattern use may lead to another, name the starting cue, direct pattern or plausible set, first result or blocker, each condition that makes another pattern use current, and the stop or return. Do not imply that those references prescribe a workflow. For recurring multi-pattern use that needs mnemonic continuity, use a Plain mantra as above. Only after `A.22.CGUS` independently admits the represented conditional structure, name its loci and bindings or potential continuation candidates when they change which continuation is available. An entry, card, mantra, or readable continuation creates neither the selected `U.Structure` nor its CGUS membership.
+Immediate recognition, repeated exposure, fluent recitation, pattern count, heading depth, an existing label, a quota, or a wish to avoid validation is not evidence.
+
+If the mantra crowds out the first result or return, or adds no recall advantage over the same content without it, use the ordinary entry or locator instead. Check declared cards and plausible non-card entries under the same test; the number of cards is an outcome, not a target.
+
+Keep four claims separate. A product selects a card unit for a reader use. The unit publishes practical-use guidance. The product gives every selectable example one stable semantic key and assigns that key one ordinary-entry or card form in one product-wide declaration. The visible card applies the shared form from `E.11.PFP`.
+
+A key, heading, form, or mantra establishes none of the other claims by itself.
+
+A local mantra may keep one bounded result or one direct pattern contribution in attention. It belongs in the direct pattern, an ordinary entry, or other teaching material when useful; it does not by itself select a Practical-Use Card.
+
+A card mantra keeps the reasoning from the recognizable difficulty to a more distant intended result in attention across several pattern contributions. Include only the intermediate questions, results, checks, branches, and return conditions that change how the reader continues. Phrase length does not decide either use.
+
+The mantra remains Plain, repeatable action or judgement wording. It does not replace a direct pattern's `Solution`, create Work, or establish a CGUS structure.
+
+An optional same-key expansion explains only the branch choice or result support that the compact card cannot omit truthfully; an ordinary walkthrough remains an explanation, and a demonstrative slice still requires independent `A.22.CGUS` admission. `E.11.PFP` defines the required visible field and heading grammar rather than this section.
+
+When an entry must show how one pattern use may lead to another, name the starting cue, direct pattern or plausible set, first result or blocker, each condition that makes another pattern use current, and the stop or return. Do not imply that those references prescribe a workflow. For recurring multi-pattern use that needs mnemonic continuity, use a Plain mantra as above.
+
+Only after `A.22.CGUS` independently admits the represented conditional structure, name its loci and bindings or potential continuation candidates when they change which continuation is available. An entry, card, mantra, or readable continuation creates neither the selected `U.Structure` nor its CGUS membership.
 
 Use this internal explicitness ladder only when it helps decide where the explanation belongs; do not persist a score for every entry:
 
@@ -119,10 +152,10 @@ Use this internal explicitness ladder only when it helps decide where the explan
 | 4 | Starting cues, conditional continuations, affected loci, and next readable outputs are also needed. | Use an optional E.11 expansion or expanded disambiguation case. |
 | 5 | A worked case, exact result basis, named reliance, and refresh condition have been tested. | Keep this depth only for a recurrent ambiguity or a receiving use that relies on it. |
 
-The ladder is a placement aid, not a completeness target. Higher is not automatically better.
+Use the ladder to choose where the explanation belongs. Once an entry gives the reader what its form promises, add detail only when ambiguity or a receiving use calls for it.
 
 
-The following schemas contain no project values and provide optional authoring support for a card whose result promise, boundary, or later reuse cannot remain truthful from the short prose alone. They are not a public form and contain no reader-project instance:
+Authors may use these schemas when short prose alone cannot truthfully convey a card's result promise, boundary or later reuse. The schemas contain no project values or reader-project instance and are not a public form.
 
 ```text
 PracticalUseGuidance@FPFReadme <: U.Episteme:
@@ -162,16 +195,38 @@ Keep the public set representative of FPF's range. Wording and description repai
 
 ##### E.11:4.1.2 - Recover the direct object before a PatternID is known
 
-Some readers arrive before a practical-use key is recognizable: a familiar relation, project, process, case, context, or problem phrase is already blocking the work, but its direct object is not yet clear. Give such readers an ordinary-language recovery entry before asking them to compare PatternIDs. These entries are independent alternatives, not stages, a required form, or another card set.
+Some readers arrive before a practical-use key is recognizable: a familiar relation, project, process, case, context, or problem phrase is already blocking the work, but its direct object is not yet clear. Give such readers an ordinary-language recovery entry before asking them to compare PatternIDs. Choose among these independent entries as alternatives. They impose no sequence, require no form and add no card set.
 
 Keep four moments distinct. **Recognize** why the ordinary situation matches this entry. **Select** the direct pattern whose `Solution` tells the practitioner how to obtain the expected first object. **Use** only the branch needed now. **Return** the smallest usable result or a named blocker. A direct result exists, or a relation obtains, only when the applicable pattern's conditions are satisfied; the entry cue creates neither.
 
 Apply the same compact entry shape each time: recognizable situation; practical distinction; expected first object; direct pattern; smallest usable result or honest blocker; ordinary stop; and one neighboring exit. Stop before signatures, card schemas, full Methods, pattern catalogues, or copied `Solution` prose.
 
-- **An obtaining relation must be referred to, and perhaps distinguished from a repeated episode.** First name the exact participants and the readable direct relation, then open the pattern whose content defines or tests that relation. A current assertion can stop there when later work only needs to know whether the relation obtains. If history, comparison, another relation, or a declared operation application must distinguish this occurrence from another of the same kind, use `A.6.REL` and the relevant direct pattern's same-versus-new-occurrence rule before naming or referencing it. The smallest result is the readable direct assertion or, only when consumed, one recoverably individuated occurrence; a missing participant, predicate, current fact, identity rule, or relation rule is an honest blocker. Stop as soon as the named receiving use can use that result. If no current direct relation can state the needed claim after exact recovery, require `A.6.RCD`; a row, edge, identifier, report, or mention makes no occurrence obtain.
-- **Project, process, or case wording no longer reveals the subject of the decision.** Open `A.15.6` and recover the subject before using the management label. An actual project is qualifying composite `U.Work`; a process concern may be a reusable `U.Method`, a structure selected under `A.22`, or a `TransformationFlowStructure`; a case follows one affected referent or claim through the change history needed for closure and keeps the relevant downstream use outside that closure. The smallest result names that subject, the pattern used to identify or constrain it, and the claim the current decision may make—or the missing identity, relation, closure basis, or information. When a source says *target system*, recover whether it means the project system-of-interest. Use **system-of-interest** for that project role in the resulting English account; the phrase alone establishes neither identity nor the role. Keep plans, decisions, work-to-system relations, system-role classifications, assignments, participation, responsibility, and authority separate. If *role* still hides the claim, use `E.10.ROLE`. Stop when the recovered subject and claim answer the decision; use `A.1.SCR` only if systemhood still changes the answer.
-- **A claimed bounded context may be only a label, boundary picture, team, or subsystem.** Open `A.1.1` with the engineering decision, one exact model edition, and its exact use locus. Recover the smallest direct applicability, assigned-Work use, or fixed-content coherence relation first and stop there when it answers the decision. Select a `BoundedModelUseStructure` under `A.22` only when the joint organization itself changes the decision and all four discriminators are exact: independently identified constituents, selected obtaining relation occurrences, applied constraints, and one named selection-use frame. The smallest result is therefore one direct relation or that optional selected structure; a missing constituent, occurrence, constraint, or use frame is an honest no-structure blocker. `Context Mapping` remains a `U.Method`; any cross-context structure needs its own A.22 selection; and a scheme, scope, viewpoint, conforming view, representation, or diagram remains a different object. Stop at the direct relation or selected organization. Use `E.17.0` only when the actual question is whether an exact episteme conforms to a viewpoint and is thereby a view. A bounded-context phrase creates no holon, subsystem, team, structure, relation, viewpoint, view, or representation.
-- **Problem-side material may describe a concern without identifying an actual Problem.** Open `C.22.PFR` only when the claim may concern one obtaining `ProblematicForRelation`: an exact actual-condition occurrence and exact problem-criterion-applicability occurrence whose selected input is actually adverse. Keep that occurrence distinct from the predicate, applicability occurrence, assessment or evaluation, assertion and reliance, `ProblemCard`, forecast or modal concern, and current-solvability or continuation claim. The smallest result is an ordinary actual-problem sentence naming condition and value, criterion, entity and use, and applicability window, or an honest non-PFR classification or blocker when the condition, applicability, adverse input, or required PFR rule is missing. Stop as soon as the later use can distinguish actuality from problem-side claim material. Use `C.22.2` when the useful object is a reviewable problem-side card or formulation rather than the world-side relation. One `ProblemCard` may describe no actual PFR; selecting or discovering a method changes only the current solvability or continuation claim, not PFR participants, obtaining, identity, or the adverse condition.
+- **An obtaining relation must be referred to, and perhaps distinguished from a repeated episode.** First name the exact participants and the readable direct relation, then open the pattern whose content defines or tests that relation. A current assertion can stop there when later work only needs to know whether the relation obtains.
+
+  If history, comparison, another relation, or a declared operation application must distinguish this occurrence from another of the same kind, use `A.6.REL` and the relevant direct pattern's same-versus-new-occurrence rule before naming or referencing it.
+
+  The smallest result is the readable direct assertion or, only when consumed, one recoverably individuated occurrence; a missing participant, predicate, current fact, identity rule, or relation rule blocks that result. Stop as soon as the named receiving use can use that result.
+
+  If no current direct relation can state the needed claim after exact recovery, require `A.6.RCD`; a row, edge, identifier, report, or mention makes no occurrence obtain.
+- **Project, process, or case wording no longer reveals the subject of the decision.** Open `A.15.6` and recover the subject before using the management label. An actual project is qualifying composite `U.Work`; a process concern may be a reusable `U.Method`, a structure selected under `A.22`, or a `TransformationFlowStructure`; a case follows one affected referent or claim through the change history needed for closure and keeps the relevant downstream use outside that closure.
+
+  The smallest result names that subject, the pattern used to identify or constrain it, and the claim the current decision may make—or the missing identity, relation, closure basis, or information.
+
+  When a source says *target system*, recover whether it means the project system-of-interest. Use **system-of-interest** for that project role in the resulting English account; the phrase alone establishes neither identity nor the role.
+
+  Keep plans, decisions, work-to-system relations, system-role classifications, assignments, participation, responsibility, and authority separate. If *role* still hides the claim, use `E.10.ROLE`. Stop when the recovered subject and claim answer the decision; use `A.1.SCR` only if systemhood still changes the answer.
+- **A claimed bounded context may be only a label, boundary picture, team, or subsystem.** Open `A.1.1` with the engineering decision, one exact model edition, and its exact use locus. Recover the smallest direct applicability, assigned-Work use, or fixed-content coherence relation first and stop there when it answers the decision.
+
+  Select a `BoundedModelUseStructure` under `A.22` only when the joint organization itself changes the decision and all four discriminators are exact: independently identified constituents, selected obtaining relation occurrences, applied constraints, and one named selection-use frame. The smallest result is therefore one direct relation or that optional selected structure; a missing constituent, occurrence, constraint, or use frame blocks selection of that structure.
+
+  `Context Mapping` remains a `U.Method`; any cross-context structure needs its own A.22 selection; and a scheme, scope, viewpoint, conforming view, representation, or diagram remains a different object. Stop at the direct relation or selected organization.
+
+  Use `E.17.0` only when the actual question is whether an exact episteme conforms to a viewpoint and is thereby a view. A bounded-context phrase creates no holon, subsystem, team, structure, relation, viewpoint, view, or representation.
+- **Problem-side material may describe a concern without identifying an actual Problem.** Open `C.22.PFR` only when the claim may concern one obtaining `ProblematicForRelation`: an exact actual-condition occurrence and exact problem-criterion-applicability occurrence whose selected input is actually adverse. Keep that occurrence distinct from the predicate, applicability occurrence, assessment or evaluation, assertion and reliance, `ProblemCard`, forecast or modal concern, and current-solvability or continuation claim.
+
+  The smallest result is an ordinary actual-problem sentence naming condition and value, criterion, entity and use, and applicability window, or an honest non-PFR classification or blocker when the condition, applicability, adverse input, or required PFR rule is missing. Stop as soon as the later use can distinguish actuality from problem-side claim material.
+
+  Use `C.22.2` when the useful object is a reviewable problem-side card or formulation rather than the world-side relation. One `ProblemCard` may describe no actual PFR; selecting or discovering a method changes only the current solvability or continuation claim, not PFR participants, obtaining, identity, or the adverse condition.
 
 - **The present work succeeds, but another useful continuation may be possible.** The framework Readme's `WORK-OPPORTUNITY` entry connects bounded exploration, needed method contributions and the worth of advice. Begin with the available material or action; a changed constraint is not required. Select `C.40`, `C.39` or `C.11.DUA` by the first missing result, then stop at that result or its exact blocker. Continuing the present work without a new recommendation is a normal outcome.
 
@@ -220,11 +275,21 @@ PublicResultCoarseningRow@FPFReadme:
   resultRelativeDirectBasisTemplateRef: U.Episteme
 ```
 
-An expanded public template asserts no project result and contains no project value. It names only the exact positions needed to keep its promise or blocker truthful: the potential result and how it would be identified, the direct pattern whose content defines or constrains it, and any identity, obtaining, relative-basis, continuation, or receiving-use distinction that changes the branch. Method, plan, dated Work, transformation, evaluation, decision, and receiving-use identities remain absent unless the current promise or later reliance actually depends on them.
+An expanded public template asserts no project result and contains no project value. It names only the exact positions needed to keep its promise or blocker truthful: the potential result and how it would be identified, the direct pattern whose content defines or constrains it, and any identity, obtaining, relative-basis, continuation, or receiving-use distinction that changes the branch.
 
-The result-relative basis template has exactly one category. A direct-relation template asks for predicate, participants, applicability, obtaining, occurrence identity, and direct governor. An A.6.1 template asks for operation, application, argument or result binding, and direct governor. An A.6.RCD local-claim template asks for one C.2.1 claim episteme with polarity, substrate or constructor, base predicates and their direct patterns, participants, case facts, and any support or warrant required by the later receiving use. The claim does not obtain, and A.6.RCD does not replace the base patterns. Result identity or currentness and result-relative basis are different public questions; they coincide only when the potential result is the same direct relation occurrence used to close the later application.
+Method, plan, dated Work, transformation, evaluation, decision, and receiving-use identities remain absent unless the current promise or later reliance depends on them.
 
-`conditionalNextQuestionPatternRef` is present only when the public branch itself promises a continuation or names a downstream reliance. A result template without such a continuation leaves it absent. A public `stop`, `missingGovernor`, or `missingInformation` boundary has no receiver. `return`, `wrongTurnRecovery`, and `strongerNeighbor` name a receiver only when that continuation is part of the branch. The optional obstacle names a recognizable obstacle only when one matters. Practical use may begin from an object to inspect, a result to evaluate, or an existing Method to improve without first inventing a Problem.
+The result-relative basis template has exactly one category. A direct-relation template asks for predicate, participants, applicability, obtaining, occurrence identity, and direct governor.
+
+An A.6.1 template asks for operation, application, argument or result binding, and direct governor.
+
+An A.6.RCD local-claim template asks for one C.2.1 claim episteme with polarity, substrate or constructor, base predicates and their direct patterns, participants, case facts, and any support or warrant required by the later receiving use. The base patterns define the predicates. Use case facts or constituting history to support the local claim at its stated polarity. Stating the claim creates no separate relation occurrence.
+
+Result identity or currentness and result-relative basis are different public questions; they coincide only when the potential result is the same direct relation occurrence used to close the later application.
+
+`conditionalNextQuestionPatternRef` is present only when the public branch itself promises a continuation or names a downstream reliance. A result template without such a continuation leaves it absent. A public `stop`, `missingGovernor`, or `missingInformation` boundary has no receiver. `return`, `wrongTurnRecovery`, and `strongerNeighbor` name a receiver only when that continuation is part of the branch.
+
+The optional obstacle names a recognizable obstacle only when one matters. Practical use may begin from an object to inspect, a result to evaluate, or an existing Method to improve without first inventing a Problem.
 
 #### E.11:4.3 - Candidate-use templates and basis completeness
 
@@ -248,7 +313,9 @@ CandidatePatternUseBasisCompletenessCondition@FPFReadme <: U.Episteme:
 
 `PatternSolutionSectionRef` is an edition-pinned reference to the cited pattern's `Solution`. A broad result family or pattern title is insufficient.
 
-Exactly one of `expectedResultTemplateRef` and `resultPromiseBlockerRef` is present in an expanded candidate branch. A result promise is admissible only when its potential-result kind, identification question, direct pattern, identity-or-obtaining basis, relative object and category-correct basis, minimum usable result, and any actually current continuation are stateable. A blocker states the missing rule or information and carries no fulfilled result template. Optional omissions cannot masquerade as a weak passing promise.
+Exactly one of `expectedResultTemplateRef` and `resultPromiseBlockerRef` is present in an expanded candidate branch. A result promise is admissible only when its potential-result kind, identification question, direct pattern, identity-or-obtaining basis, relative object and category-correct basis, minimum usable result, and any continuation that applies to this branch are stateable.
+
+A blocker states the missing rule or information and carries no fulfilled result template. Optional omissions cannot masquerade as a weak passing promise.
 
 The completeness condition inherits C.2.1 constitution. Its EntityOfConcern is the reusable candidate-basis position declared by the template; its ClaimGraph states the admitted filler kind and positive completeness condition; its ReferenceScheme explains how later current project fillers satisfy that position. It contains no project value.
 
@@ -280,7 +347,11 @@ Where an exact row is used, it carries one result template or public blocker. It
 
 Read each published entry first in the form the public will see. A passing ordinary entry exposes the recognizable situation, practical question, first useful result or blocker, one direct pattern or small plausible set, and the stop or wrong-turn return. This check creates no project instance, applicability verdict, result entity, relation occurrence, receiving use, or separate positive record.
 
-For a selected card, also compare the same truthful entry without its mantra. The card passes only when repeating the mantra materially improves repeated or extended use under the test in `E.11:4.1`. After one read, a cold engineer or manager can repeat the formula in their own words, name the first useful result or blocker, follow `Start with` to the direct pattern and any conditioned next use, and use the same key to recover any optional expansion. The direct pattern remains authoritative. A short slogan that loses a choice-changing distinction fails, and a form-valid card that provides no mnemonic gain returns to ordinary-entry or locator form.
+For a selected card, also compare the same truthful entry without its mantra. The card passes only when repeating the mantra materially improves repeated or extended use under the test in `E.11:4.1`.
+
+After one read, a cold engineer or manager can repeat the formula in their own words, name the first useful result or blocker, follow `Start with` to the direct pattern and any conditioned next use, and use the same key to recover any optional expansion. The direct pattern remains authoritative.
+
+A short slogan that loses a choice-changing distinction fails, and a form-valid card that provides no mnemonic gain returns to ordinary-entry or locator form.
 
 
 When an entry needs the optional exact expansion because a promise, ambiguity, or named reliance cannot otherwise remain truthful, use this conceptual view over the already published values:
@@ -303,9 +374,15 @@ PracticalUseCarryThroughCheck:
   principalBlockedOverreadRef?: PublicPatternUseBoundaryConditionTemplate@FPFReadme
 ```
 
-The view is not a form to complete or a durable check object. Inspect only positions that the expansion actually uses. Use an ordinary walkthrough or an admitted demonstrative slice when it explains a distinction the branch needs. Add another case only when its changed condition reveals a consequential choice or limit that the first case leaves unclear. The demonstrative form must satisfy `A.22.CGUS`; the ordinary form needs no non-admission rationale. State a principal blocked overread only when the public wording otherwise invites a consequential false project claim.
+The view is not a form to complete or a durable check object. Inspect only positions the expansion uses.
 
-For each expanded candidate-use template, exactly one result promise or exact public blocker is present. A promise identifies the direct pattern and `Solution`, potential-result kind, local identification question, the identity or obtaining basis and result-relative basis that actually make the promise true, the minimum usable result, and a receiver only when that continuation is current. A blocker states the missing rule or information and carries no fulfilled result template. A broad family, generic result relation, omitted value disguised as a weak promise, fabricated project occurrence, or PatternID list without selection conditions does not pass.
+Use an ordinary walkthrough or an admitted demonstrative slice when it explains a distinction the branch needs. Add another case only when its changed condition reveals a consequential choice or limit that the first case leaves unclear. The demonstrative form must satisfy `A.22.CGUS`; the ordinary form needs no non-admission rationale.
+
+State a principal blocked overread only when the public wording otherwise invites a consequential false project claim.
+
+For each expanded candidate-use template, exactly one result promise or exact public blocker is present. A promise identifies the direct pattern and `Solution`, potential-result kind, local identification question, the identity or obtaining basis and result-relative basis that make the promise true, the minimum usable result, and a receiver only when that continuation is current.
+
+A blocker states the missing rule or information and carries no fulfilled result template. A broad family, generic result relation, omitted value disguised as a weak promise, fabricated project occurrence, or PatternID list without selection conditions does not pass.
 
 #### E.11:4.5 - Stable practical-use keys and selected forms
 
@@ -313,13 +390,21 @@ Give every selectable public entry one stable semantic key so the reader can ret
 
 `E.4.FPF` carries the current FPF example-key and form declaration plus its language-appropriate reading-burden measure and two maxima. A DPF or LPF carries its own product declaration under `E.4.DPF`. E.11 therefore does not maintain another FPF key list or treat displayed examples as product coverage.
 
-E.11 records one F.13-form historical read path: `splits(SYSTEM-IN-CONTEXT -> {SYSTEM-RECOGNITION, SYSTEM-DELIMITATION, WORDING, ARCHITECTURE})`. The old card had no single surviving public-guidance identity: system recognition, system delimitation, lexical recovery, and architecture have different referents, relations or evaluations, receiving uses, first results, and direct governors. Older writing remains readable through this one read path; current entry use names only the four resulting keys. A.1.STM is a conditional continuation with a dedicated readable README guide, not a fifth resulting key. The split creates no U-kind, relation kind, record kind, result kind, or generic `Context` claim.
+E.11 records one F.13-form historical read path: `splits(SYSTEM-IN-CONTEXT -> {SYSTEM-RECOGNITION, SYSTEM-DELIMITATION, WORDING, ARCHITECTURE})`.
+
+The old card had no single surviving public-guidance identity: system recognition, system delimitation, lexical recovery, and architecture have different referents, relations or evaluations, receiving uses, first results, and direct governors. Older writing remains readable through this one read path; current entry use names only the four resulting keys.
+
+A.1.STM is a conditional continuation with a dedicated readable README guide, not a fifth resulting key. The split creates no U-kind, relation kind, record kind, result kind, or generic `Context` claim.
 
 The FPF Readme carries a selected set of current public examples and their optional expansions. The First Principles Framework Architectural Reference explains why FPF's distinctions and Methods work together. ToC locates pattern families and questions outside the examples. Full patterns carry Methods, conditions, costs, consequences, and result semantics. None is a second entry store or a claim that the examples bound FPF use.
 
 #### E.11:4.5.1 - Architectural Reference, local recognition, and first-entry terminology
 
-The First Principles Framework Architectural Reference explains the language as a whole, including the connections and grounds behind the README entries. Use E.11.DSG and E.11.PFP:4.7 for that complete account. It uses plain engineering language before FPF vocabulary and explains the cross-cutting ideas once rather than copying the scenario set. Its coverage includes transdisciplinary use without collapsing local meaning; local closure in an open world; holons, systems, epistemes, and architecture as structure; `EntityOfConcern` and description/publication/view separation; thinking-through-writing; epiplexity; first-principles-to-work; mathematical lenses and FormalSubstrate distinctions; ontology-first wording repair; evidence/assurance/gate/decision/work separation; characteristic spaces, quality, NQD/OEE, and improvement; novelty, diversity, and SoTA; and didactic primacy. A strict FPF term that carries the explanation receives an immediate plain gloss. Pattern IDs are addresses for stricter treatment, not the main explanatory language.
+The First Principles Framework Architectural Reference explains the language as a whole, including the connections and grounds behind the README entries. Use E.11.DSG and E.11.PFP:4.7 for that complete account. It uses plain engineering language before FPF vocabulary and explains the cross-cutting ideas once rather than copying the scenario set.
+
+Its coverage includes transdisciplinary use without collapsing local meaning; local closure in an open world; holons, systems, epistemes, and architecture as structure; `EntityOfConcern` and description/publication/view separation; thinking-through-writing; epiplexity; first-principles-to-work; mathematical lenses and FormalSubstrate distinctions; ontology-first wording repair; evidence/assurance/gate/decision/work separation; characteristic spaces, quality, NQD/OEE, and improvement; novelty, diversity, and SoTA; and didactic primacy.
+
+A strict FPF term that carries the explanation receives an immediate plain gloss. Pattern IDs are addresses for stricter treatment, not the main explanatory language.
 
 A pattern's own `Problem frame` is the local high-precision recognition section. It makes recoverable the primary `EntityOfConcern`, working problem, failure if missed, first admissible action, practical result, and ordinary non-use boundary. Add candidate-pattern comparison only when a real discoverability ambiguity exists; otherwise keep cross-pattern comparison in README, ToC, `Relations`, or an expanded case.
 
@@ -342,7 +427,9 @@ ToC and lexical-query phrases remain finding aids, not alternate names, semantic
 
 When more than one selectable entry remains plausible, compare four things: recognizable-situation fit, difference among first results or exact public blockers, direct pattern, and stop or return condition. Keep the comparison in conversation for ordinary bounded use. Open the most promising direct pattern before constructing a project candidate.
 
-In the optional forms below, `claimGraph` carries the episteme's complete asserted content, including the reasons and qualifications that change what it says. The scheme designation resolves under C.2.1:4.2.6 to the rules actually governing that account. It can select another episteme's effective scheme or exact content defining those rules; a reference to a document alone does not choose between them. Preserve an unresolved interpretation rather than filling the field with a nearby name. These forms organize addressable writing when needed; ordinary conversation and partial notes remain sufficient under the entry conditions above.
+In the optional forms below, `claimGraph` carries the episteme's complete asserted content, including the reasons and qualifications that change what it says. The scheme designation resolves under C.2.1:4.2.6 to the rules actually governing that account. It can select another episteme's effective scheme or exact content defining those rules; a reference to a document alone does not choose between them.
+
+Preserve an unresolved interpretation rather than filling the field with a nearby name. These forms organize addressable writing when needed; ordinary conversation and partial notes remain sufficient under the entry conditions above.
 
 Materialize the rationale only when a named later use needs addressable comparison history; then it has one public-guidance subject and no fabricated project result:
 
@@ -391,7 +478,11 @@ PracticalUseEntryComparison@Context <: U.Episteme:
   inspectionDisposition: keep | defer | discard | startHere
 ```
 
-Guidance, practical question, compared result templates or blockers, first-result differences, named reliance, stop, and return remain ClaimGraph content or separate references under their direct patterns; none replaces the C.2.1 identity. Each comparison cites at least one result template or exact blocker from the guidance it evaluates. `claimScopeRef` or `modelUseStructureRef` is present only when the named scope or model-use structure changes the reliance being recorded. Several plausible entries alone do not make this record current. The named reliance may be a later review, replay, audit, automation, or another use that needs addressable comparison history. Retain only the rows that use needs.
+Guidance, practical question, compared result templates or blockers, first-result differences, named reliance, stop, and return remain ClaimGraph content or separate references under their direct patterns; none replaces the C.2.1 identity.
+
+Each comparison cites at least one result template or exact blocker from the guidance it evaluates. `claimScopeRef` or `modelUseStructureRef` is present only when the named scope or model-use structure changes the reliance being recorded.
+
+Several plausible entries alone do not make this record current. The named reliance may be a later review, replay, audit, automation, or another use that needs addressable comparison history. Retain only the rows that use needs.
 
 ##### E.11:4.6.1 - Compare the information the reader actually receives
 
@@ -406,11 +497,19 @@ Keep these comparisons distinct:
 | Full bodies or search windows | What the available passages let this reader recover; the result includes any body explanation actually supplied. |
 | Indexed or retrieved fragments | What the consuming system can find and show from the fields and context it actually receives. |
 
-For a title-only comparison, withhold the fuller cue and the author's intended answer. Keep the task and allowed preparation comparable, include tempting neighboring patterns and an ordinary non-use case, then open the selected body to inspect the promised result and boundary. Preserve an actual first response before giving explanations that could teach the intended choice. A desk comparison can justify a visible repair; use an actual reading when unresolved interpretations can change the selection or when claiming that a reader recovered the intended question.
+For a title-only comparison, withhold the fuller cue and the author's intended answer. Keep the task and allowed preparation comparable, include tempting neighboring patterns and an ordinary non-use case, then open the selected body to inspect the promised result and boundary.
 
-For AI retrieval, inspect the real input: the file or index fields, included heading and parent context, chunk boundary and returned passage. A renamed heading can affect only a path that carries its text or resulting representation. Adding context to a fragment is another intervention. A heading scan, a full-text search and a contextual embedding query therefore need their own declared conditions; a result from one does not establish the others.
+Preserve an actual first response before giving explanations that could teach the intended choice.
 
-Check both discovery from a working question and re-finding by a useful technical term. An attractive first click is insufficient if the body returns the reader from a wrong use or the familiar method becomes harder to find. Keep the useful shortlist, correction or no-use return; ordinary comparison needs no extra catalogue or score. A local AI reading supports that observed response, not a human-effect estimate. Keep any new body content separate from a title or presentation contribution, and use an appropriate description-comparison method when that attribution matters.
+A desk comparison can justify a visible repair; use an actual reading when unresolved interpretations can change the selection or when claiming that a reader recovered the intended question.
+
+For AI retrieval, inspect the real input: the file or index fields, included heading and parent context, chunk boundary and returned passage. A renamed heading can affect only a path that carries its text or resulting representation.
+
+Adding context to a fragment is another intervention. A heading scan, a full-text search and a contextual embedding query therefore need their own declared conditions; a result from one does not establish the others.
+
+Check both discovery from a working question and re-finding by a useful technical term. An attractive first click is insufficient if the body returns the reader from a wrong use or the familiar method becomes harder to find. Keep the useful shortlist, correction or no-use return; ordinary comparison needs no extra catalogue or score.
+
+A local AI reading supports that observed response, not a human-effect estimate. Keep any new body content separate from a title or presentation contribution, and use an appropriate description-comparison method when that attribution matters.
 
 
 
@@ -422,7 +521,9 @@ When a short entry and the candidate's `Problem frame` still leave two different
 
 Use the worked comparisons in `E.11:5.7–5.14` only when their working question resembles yours. Each shows a discriminating fact, the direct `Solution` worth opening, and an ordinary stop or return. They are examples, not a complete pattern catalogue or a reading sequence. A sufficient compact cue can bypass them.
 
-Compare the plausible entries against the fact: what would each help you obtain first, and what would make that result premature or irrelevant? Obtain the fact from the task material or the inspected source. If it is unavailable, name the missing fact and the choice it prevents; an attractive example supplies no missing project evidence. Then open the promising direct pattern's `Solution` and check its actual inputs and boundary. If that body changes your understanding of the question, revise only the affected comparison and keep earlier useful reading.
+Compare the plausible entries against the fact: what would each help you obtain first, and what would make that result premature or irrelevant? Obtain the fact from the task material or the inspected source. If it is unavailable, name the missing fact and the choice it prevents; an attractive example supplies no missing project evidence.
+
+When the comparison points to a promising direct pattern, open its `Solution` and check the inputs and boundary stated in that pattern. If that body changes your understanding of the question, revise only the affected comparison and keep earlier useful reading.
 
 Stop entry comparison when the direct body gives a justified starting point, no remaining plausible entry can change the choice, or a concrete missing basis prevents it. Continue with `E.11.PUA` to use one selected pattern. If inspected candidate uses still require applicability, recommendation, coordination or ordering, use `E.11.PUR`; presenting an example first has settled none of those judgements.
 
@@ -430,7 +531,7 @@ For publication, expand an ambiguity only when compact guidance cannot resolve i
 
 #### E.11:4.7 - Replay and currentness
 
-Replay one public entry first from its recognizable situation, practical question, first useful result or blocker, direct pattern or plausible set, boundary, and readable walkthrough. Consult the exact helper fields only when that entry actually uses them for truth, disambiguation, or named reliance. The guidance remains current only while its situation and question still point to the same use.
+Replay one public entry first from its recognizable situation, practical question, first useful result or blocker, direct pattern or plausible set, boundary, and readable walkthrough. Consult the exact helper fields only when the entry uses them for truth, disambiguation, or named reliance. The guidance remains current only while its situation and question still point to the same use.
 
 Recheck the smallest affected entry slice when its recognizable situation, question, first result or blocker, direct `Solution`, selection condition, stop, return, or true consumer changes, or when use evidence shows a recurrent wrong turn. Recheck exact result and basis fields only when the changed entry uses them. Use `G.11` for edition, telemetry, currentness-window, and decay orchestration; E.11 supplies the entry-specific values and change conditions that orchestration inspects.
 
@@ -456,7 +557,9 @@ The card does not promise a machined component. When actual machining later beco
 
 #### E.11:5.4 - Repair the smallest card slice after a direct result changes
 
-Suppose a new `A.6.3.RT` edition restores a progressive representation result: an ordinary target representation plus source-comparison note first, exact endpoints only when a named receiver makes their identity material, and a historical transition occurrence only when actual transition Work and all required participants are current. Repair only the affected `WORKING-DOCUMENTS` branch so its first result and escalation triggers match the direct pattern. The card heading and general question remain unchanged when readers still recognize the same situation.
+Suppose a new `A.6.3.RT` edition restores a progressive representation result: an ordinary target representation plus source-comparison note first, exact endpoints only when a named receiver makes their identity material, and a historical transition occurrence only when actual transition Work and all required participants are current.
+
+Repair only the affected `WORKING-DOCUMENTS` branch so its first result and escalation triggers match the direct pattern. The card heading and general question remain unchanged when readers still recognize the same situation.
 
 If the repair changes the cross-pattern path that the mantra must help the reader recover, or its first result or return, compare the same truthful entry with and without the mantra after a delay or interruption. Reuse a still-applicable comparison for unchanged mnemonic content and use. Keep the card only when the comparison supports a material mnemonic gain. If the two forms perform alike, use an ordinary entry or locator; if the mantra hides the result or return, repair or drop it.
 
@@ -468,7 +571,9 @@ The visible navigation measure improved while the intended value worsened. Keep 
 
 #### E.11:5.6 - Discharge a duplicate first-entry row by function
 
-Suppose a compact row combines architecture and diagrams, evidence, dashboard use, and alternative comparison. Do not keep it as another public example merely to display topic coverage. Put architecture design or review in `ARCHITECTURE`; put description, view, dashboard, and rendering use in `WORKING-DOCUMENTS` and the direct E.17/C.30.AD patterns; put costly evidence or commitment questions in `OPTION-COMPARISON` and their direct A.10/B.3/A.21 patterns; put useful search phrases in the ToC or retrieval. Use the worked comparisons in `E.11:5.7–5.14` only if those cues still leave a genuine ambiguity. Delete the duplicate after every useful function has a matching home.
+Suppose a compact row combines architecture and diagrams, evidence, dashboard use, and alternative comparison. Do not keep it as another public example merely to display topic coverage. Put architecture design or review in `ARCHITECTURE`; put description, view, dashboard, and rendering use in `WORKING-DOCUMENTS` and the direct E.17/C.30.AD patterns; put costly evidence or commitment questions in `OPTION-COMPARISON` and their direct A.10/B.3/A.21 patterns; put useful search phrases in the ToC or retrieval.
+
+Use the worked comparisons in `E.11:5.7–5.14` only if those cues still leave the first choice unresolved. Delete the duplicate after every useful function has a matching home.
 
 
 
@@ -506,7 +611,11 @@ An already accepted engineering account may instead need reader-facing publicati
 
 A team says, “We need a shortlist, not one winner.” Ask which first result is missing: an admissible comparison, a pool of candidates, policy over that pool, a selected-set declaration, publication of the result, or one local decision. The fact that the current use concerns a governed set changes the choice; a one-winner doctrine is premature.
 
-If comparison or aggregation is not yet admissible, inspect `G.0`, `A.19.CN` and the relevant `A.17–A.19` bodies; `A.19.CPM` or `A.19.SelectorMechanism` becomes current when the comparator or selector structure itself is unsettled. For generation and archive/front stewardship while forming the pool, open `C.18`. For policy over still-live candidates, open `C.19`. Use `G.5-6 DeclareSetResult` when already identified members and a current choice, pool treatment or other inclusion basis need a selector-facing set declaration. `G.5-3 Select` applies when selection among its admitted Method or generator candidates is itself needed. `E.24.PUB` separately makes a declared result available.
+If comparison or aggregation is not yet admissible, inspect `G.0`, `A.19.CN` and the relevant `A.17–A.19` bodies; `A.19.CPM` or `A.19.SelectorMechanism` becomes current when the comparator or selector structure itself is unsettled.
+
+For generation and archive/front stewardship while forming the pool, open `C.18`. For policy over still-live candidates, open `C.19`.
+
+Use `G.5-6 DeclareSetResult` when already identified members and a current choice, pool treatment or other inclusion basis need a selector-facing set declaration. `G.5-3 Select` applies when selection among its admitted Method or generator candidates is itself needed. `E.24.PUB` separately makes a declared result available.
 
 If the actual question is one local choice, open `C.11`. If the action or option is already fixed and the missing result is a tool or service call plan or checkpoint return, use `C.24`, including for a call that performs an already chosen comparison. Stop at the correct direct body or a sufficiently discriminated candidate set; neither a shortlist nor the order of these examples prescribes a sequence. If several inspected pattern uses still need a recommendation or coordination, take that question to `E.11.PUR`.
 
@@ -538,7 +647,9 @@ A team says, “Adding review capacity for two sprints will double backlog reduc
 
 Keep a snapshot as Dyn0 and a measured trend or rate as Dyn1. Open `C.16` when measurement construction or comparability is missing. Use `C.27` when the temporal claim changes admissible action because effort, window, resistance or cost, basis and reopening conditions matter. Its local `Dyn2TemporalClaimAdequacyCard`, or a boundary-crossing `Dyn2TemporalClaimProfile`, states that temporal-use question; it is not benchmark or causal proof.
 
-Return a different question to its direct owner: `A.3.3` for a reusable transition law or formal dynamics model; `B.1.4` or `B.1.6` when contextual/temporal or work-resource aggregation is the missing subject; `G.9` for benchmark parity; `C.25` for quality, first asking whether one Characteristic and Scale suffice and using a bundle only when differently typed contributors jointly determine the claim; `C.26.3` for viability diagnosis and selected boundary regulation. `C.24` addresses call planning for an already fixed action. A relied-on causal effect belongs to `C.28`, not to the fact that the rate changed.
+Return a different question to its direct owner: `A.3.3` for a reusable transition law or formal dynamics model; `B.1.4` or `B.1.6` when contextual/temporal or work-resource aggregation is the missing subject; `G.9` for benchmark parity; `C.25` for quality, first asking whether one Characteristic and Scale suffice and using a bundle only when differently typed contributors jointly determine the claim; `C.26.3` for viability diagnosis and selected boundary regulation.
+
+`C.24` addresses call planning for an already fixed action. A relied-on causal effect belongs to `C.28`, not to the fact that the rate changed.
 
 Use `C.26` only if an exact contextual-model obstruction still changes inference or action after the applicable ordinary subject assertion and predicate are in place. Stop at ordinary prose, Dyn0, Dyn1 with the needed measurement body, the relevant Dyn2 account, or a correctly named neighbor use. Reopen when the effort, window, resistance/cost, basis or intended action changes. Faster is not automatically better. A velocity target alone establishes no improvement or service promise; a dynamic benchmark needs a comparison basis before it supports superiority.
 
@@ -546,13 +657,19 @@ Use `C.26` only if an exact contextual-model obstruction still changes inference
 
 #### E.11:5.14 - A decision relies on a causal or counterfactual claim
 
-A reader encounters “this policy would have prevented harm”, “the intervention caused the improvement”, “this fairness result is causal”, or “these simulated counterfactuals prove the decision”. Ask whether publication, choice, deployment, assurance, audit, benchmarking or method dispatch actually relies on causal support. Causal-looking wording alone is insufficient; the relied-on claim is the discriminating fact.
+A reader encounters “this policy would have prevented harm”, “the intervention caused the improvement”, “this fairness result is causal”, or “these simulated counterfactuals prove the decision”.
 
-Open `C.28` when the required support concerns an effect, intervention success, counterfactual comparison, causal fairness, policy optimality, causal evidence, off-policy/causal-RL evaluation or causal method superiority. Its `Solution` recovers the causal-use question, causality-ladder rung, claim kind, estimand, identification, counterfactual sampling realizability and support components, then distinguishes supported from unsupported use. A cheap downgrade sentence can be enough; a `CausalUseTriageRecord`, `CausalUseEvidenceDesignRecord` or `CausalUseSupportResult` is used only at the scope needed by the receiving claim.
+Ask whether publication, choice, deployment, assurance, audit, benchmarking or method dispatch relies on causal support. Causal-looking wording alone is insufficient; the relied-on claim is the discriminating fact.
+
+Open `C.28` when the required support concerns an effect, intervention success, counterfactual comparison, causal fairness, policy optimality, causal evidence, off-policy/causal-RL evaluation or causal method superiority. Its `Solution` recovers the causal-use question, causality-ladder rung, claim kind, estimand, identification, counterfactual sampling realizability and support components, then distinguishes supported from unsupported use.
+
+A cheap downgrade sentence can be enough; a `CausalUseTriageRecord`, `CausalUseEvidenceDesignRecord` or `CausalUseSupportResult` is used only at the scope needed by the receiving claim.
 
 If only a measured value is at issue, use `C.16`; if rate, trend or temporal adequacy is at issue, use `C.27`. If the question is method, work or work-plan structure, use `A.15` and `A.3.2`; a sampling procedure, intervention recipe or target-trial phrase does not supply causal support by itself. Split a boundary duty or agreement with `A.6`. Use `C.26` for residual QL modeling only when an exact contextual-model obstruction still changes inference or action after the ordinary subject assertion and predicate are in place.
 
-`A.10` governs the evidence/provenance paths actually relied on. `B.3`, `D.5`, `G.5` and `G.9` use a `C.28` support result when the downstream question is respectively assurance, ethical/fairness audit, method dispatch or benchmark parity. Keep `C.11`, `C.19` or `C.24` as the direct local-choice, live-pool-policy or fixed-action call-planning use when that is the actual work; the support result does not decide it. Stop at the sufficient downgrade, scoped causal record/support result, or named neighboring use that cites its limits.
+`A.10` governs the evidence/provenance paths relied on. `B.3`, `D.5`, `G.5` and `G.9` use a `C.28` support result when the downstream question is respectively assurance, ethical/fairness audit, method dispatch or benchmark parity.
+
+Keep `C.11`, `C.19` or `C.24` as the direct local-choice, live-pool-policy or fixed-action call-planning use when that is the actual work; the support result does not decide it. Stop at the sufficient downgrade, scoped causal record/support result, or named neighboring use that cites its limits.
 
 Return to causal support if the estimand, causal rung, identification, realizability or relied-on use changes. A randomized procedure is not automatically counterfactual support; simulation is not realized counterfactual data; a fairness metric is not causal fairness; and methods on different causal rungs or estimands are not made comparable by one benchmark. Causal support itself creates no duty, promise, commitment, release gate or admissibility predicate.
 
@@ -603,7 +720,9 @@ Return to causal support if the estimand, causal rung, identification, realizabi
 
 ### E.11:9 - Consequences
 
-**Benefits.** FPF gains a human-readable entry from working questions to direct patterns without losing the result and boundary support that matters. A few ordinary examples show that one pattern may answer a bounded difficulty; selected cards show that the language can sustain longer reasoning across pattern contributions. Readers can stop cheaply, inspect a small plausible set, and recover from wrong turns, while the unmatched-question return keeps discovery available beyond the displayed situations. README, architectural reference, ToC, local recognition, expanded cases, and retrieval keep distinct jobs, so useful entry value does not become a duplicate canon.
+**Benefits.** FPF gains a human-readable entry from working questions to direct patterns without losing the result and boundary support that matters. A few ordinary examples show that one pattern may answer a bounded difficulty; selected cards show that the language can sustain longer reasoning across pattern contributions.
+
+Readers can stop cheaply, inspect a small plausible set, and recover from wrong turns, while the unmatched-question return keeps discovery available beyond the displayed situations. README, architectural reference, ToC, local recognition, expanded cases, and retrieval keep distinct jobs, so useful entry value does not become a duplicate canon.
 
 **Costs.** Maintainers must keep each public entry aligned with the direct pattern's current result and boundary, and must repair its true consumers when those meanings change. A recurrent ambiguity or named later reliance may justify an exact expansion, worked case, or addressable comparison history; those deeper objects then need currentness care. Ordinary entries pay none of that record burden when readable prose is sufficient.
 
@@ -617,9 +736,13 @@ Public guidance remains weaker than the direct pattern. It helps a reader choose
 
 **Navigation question.** How can a reader choose a useful first pattern without inspecting the whole corpus, and recover when the first cue was misleading? The best-known line for this use is sequential, bounded inspection with an explicit return: compare the result or blocker offered by a few plausible entries, open one direct pattern, and stop or backtrack when its boundary rules it out.
 
-The alternative is familiar-title or ranked-result lookup with a short topical snippet. It is cheap and remains sufficient when the direct pattern is already known. For an ambiguous question, however, the same small reading budget can be spent on a situation, first-result difference, and return instead of another topical label. This deliberately trades some snippet brevity for a recoverable wrong-turn decision; it does not promise fewer clicks or faster task completion. **Adapt:** `E.11:4.1`, `4.1.2`, `4.4`, `4.6`, and `4.7` keep that bounded inspection and cheap exit; case `5.5` rejects a better first-click metric when the reader reaches the wrong use. Section `4.6.2` and cases `5.7–5.14` unfold the discriminating fact, direct result and return when a compact cue still leaves an ambiguity; they retain the cheaper sufficient-cue exit.
+The alternative is familiar-title or ranked-result lookup with a short topical snippet. It is cheap and remains sufficient when the direct pattern is already known. For an ambiguous question, however, the same small reading budget can be spent on a situation, first-result difference, and return instead of another topical label. This choice trades some snippet brevity for a recoverable wrong-turn decision; it does not promise fewer clicks or faster task completion.
 
-[Jin, Bai, and Oulasvirta, *Modeling Trial-and-Error Navigation With a Sequential Decision Model of Information Scent*, arXiv:2603.11759v1](https://arxiv.org/html/2603.11759v1), supplies a best-known-line candidate and counterexample to treating navigation as fully informed, one-shot selection. Its model reproduces partial inspection, premature choices, and backtracking; it does not test FPF entries or require the reader to run a navigation model. The first-result comparison and reliance-conditioned history are FPF adaptations. Reopen this choice if a same-budget title/snippet or other entry preserves result discrimination and wrong-turn recovery with less burden, or if reader evidence shows that the added return cues distract from the first useful choice.
+**Adapt:** `E.11:4.1`, `4.1.2`, `4.4`, `4.6`, and `4.7` keep that bounded inspection and cheap exit; case `5.5` rejects a better first-click metric when the reader reaches the wrong use. Section `4.6.2` and cases `5.7–5.14` unfold the discriminating fact, direct result and return when a compact cue still leaves an ambiguity; they retain the cheaper sufficient-cue exit.
+
+[Jin, Bai, and Oulasvirta, *Modeling Trial-and-Error Navigation With a Sequential Decision Model of Information Scent*, arXiv:2603.11759v1](https://arxiv.org/html/2603.11759v1), supplies a best-known-line candidate and counterexample to treating navigation as fully informed, one-shot selection. Its model reproduces partial inspection, premature choices, and backtracking; it does not test FPF entries or require the reader to run a navigation model.
+
+The first-result comparison and reliance-conditioned history are FPF adaptations. Reopen this choice if a same-budget title/snippet or other entry preserves result discrimination and wrong-turn recovery with less burden, or if reader evidence shows that the added return cues distract from the first useful choice.
 
 **Mnemonic question.** When is a repeatable formula worth the extra space in a cross-pattern entry? The selected line is conditional mnemonic support tested against the same truthful content without the mantra, not an acronym or repetition by default.
 
@@ -629,11 +752,17 @@ The alternative is familiar-title or ranked-result lookup with a short topical s
 
 **Cue question.** When a reader's familiar wording or language hides another useful target, should the entry merely translate the same label, show more results, or explain the choice nearby? The selected line is the smallest situation-and-result cue that lets this reader distinguish the targets, with an expansion only for a distinction that cannot fit truthfully. The alternative is a concise translated title or ordinary search snippet. Keep that alternative when it already distinguishes the use; otherwise prefer a short explanation of what the reader can obtain over extra synonyms. This trades a little reading space for a visible choice, without requiring full translation, a multilingual interface, or another public scenario.
 
-[Zhu, Reinecke, and Mitra, *Language Scent: Exploring Cross-Language Information Navigation*, arXiv:2604.03604v2](https://arxiv.org/html/2604.03604v2), supplies bounded evidence for considering such proximal cues: its multilingual system exposes information value and interpretation cues, and its lab study involved 16 English–Chinese speakers. It does not compare FPF names or establish that two labels have the same referent. **Adapt as a local probe:** `E.11:4.1.1`, `4.1.2`, and `4.5.1` test recognizable wording against the direct result; `E11-9/10/11` keep cue, entry, and direct content distinct. Reopen if a shorter label works equally well for the actual readers, if the cue invites the wrong result, or if stronger evidence changes the transfer from multilingual navigation. No universal benefit from contextual wording is inferred.
+[Zhu, Reinecke, and Mitra, *Language Scent: Exploring Cross-Language Information Navigation*, arXiv:2604.03604v2](https://arxiv.org/html/2604.03604v2), supplies bounded evidence for considering such proximal cues: its multilingual system exposes information value and interpretation cues, and its lab study involved 16 English–Chinese speakers. It does not compare FPF names or establish that two labels have the same referent.
+
+**Adapt as a local probe:** `E.11:4.1.1`, `4.1.2`, and `4.5.1` test recognizable wording against the direct result; `E11-9/10/11` keep cue, entry, and direct content distinct. Reopen if a shorter label works equally well for the actual readers, if the cue invites the wrong result, or if stronger evidence changes the transfer from multilingual navigation. No universal benefit from contextual wording is inferred.
 
 For a cross-DPF entry, `E.11.DSG` supplies the four-return, full-source and known-DPF-bypass rules used in `E.11:4` and `E11-13`. The Suite's disciplinary and framework composition follows C.20 and E.4:4.2; the entry's actual contributions can also come from external suppliers. E.8, E.17, F.17, F.18 and E.11.PUA retain their direct authoring, publication, naming and use functions. Reopen the affected entry when its supplying contribution or conditions change; use G.11 when currentness or telemetry is the actual question.
 
-**Retrieval-exposure question.** Which part of a publication can help an assistant find the needed pattern? The selected line makes the actual indexed and returned context explicit. A title-only change cannot repair a passage whose retrieval representation omits that title. **Adapt:** §4.6.1 separates heading, row, body-window and fragment comparisons. [Anthropic's Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval) (2024) supplies a concrete context-enrichment alternative; [Conti et al., Context is Gold to find the Gold Passage](https://aclanthology.org/2025.emnlp-main.1150/) (EMNLP 2025) supplies context-dependent retrieval evaluation and contextual embedding training. These interventions differ from title revision and provide no effect estimate for it. Keep the cheaper existing cue when it suffices; reopen when the consuming system changes its fields, chunking or context, or when the changed cue repeatedly selects the wrong body.
+**Retrieval-exposure question.** Which part of a publication can help an assistant find the needed pattern? The selected line makes the actual indexed and returned context explicit. A title-only change cannot repair a passage whose retrieval representation omits that title.
+
+**Adapt:** §4.6.1 separates heading, row, body-window and fragment comparisons. [Anthropic's Contextual Retrieval](https://www.anthropic.com/engineering/contextual-retrieval) (2024) supplies a concrete context-enrichment alternative; [Conti et al., Context is Gold to find the Gold Passage](https://aclanthology.org/2025.emnlp-main.1150/) (EMNLP 2025) supplies context-dependent retrieval evaluation and contextual embedding training.
+
+These interventions differ from title revision and provide no effect estimate for it. Keep the cheaper existing cue when it suffices; reopen when the consuming system changes its fields, chunking or context, or when the changed cue repeatedly selects the wrong body.
 
 ### E.11:12 - Relations
 

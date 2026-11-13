@@ -11,11 +11,11 @@
 
 What inquiry is worth conducting when someone says “we should develop,” names a fashionable solution, or asks what to develop next before the receiving change is clear?
 
-Use this pattern when a person, organization, community, AI arrangement, platform, facility, research programme, or another identified subject has a development concern or aspiration but the receiving use, horizon, protected conditions, reason to explore, or affordable inquiry effort is still loose. The first useful result is a bounded inquiry that another person can inspect, or one exact missing premise that prevents such an inquiry.
+Use this pattern when a person, organization, community, AI arrangement, platform, facility, research programme, or another identified subject has a development concern or aspiration but the receiving use, horizon, protected conditions, reason to explore, or affordable inquiry effort is loose. The first useful result is a bounded inquiry that another person can inspect, or one missing premise that prevents such an inquiry.
 
 Begin here without appointing an adviser. A person can bound a self-inquiry and continue into opportunity construction. When a distinct performer is already being asked to advise a named recipient, this pattern can recover the subject, use, and horizon, but the applicable professional engagement Method governs whether the advising relationship itself is admissible.
 
-**Cheap exit.** Reuse an existing inquiry when it already identifies the same subject, receiving use, horizon, protections, posture, and effort boundary and no material premise changed. If a qualified domain practice owns the whole question, use it directly. If adequate alternatives already exist and the remaining need is comparison, recommendation, or authorized choice, stop opportunity construction and use the direct decision-support owner.
+**Cheap exit.** Reuse an existing inquiry when it already identifies the same subject, receiving use, horizon, protections, posture, and effort boundary and no material premise changed. If a qualified domain practice owns the whole question, use it. If adequate alternatives already exist and the remaining need is comparison, recommendation, or authorized choice, stop opportunity construction and use the decision-support owner.
 
 **Ordinary non-use boundary.** A research account of change in a non-cultural population or lineage is not advice to that population. A separately authorized researcher may have an opportunity or decision question, but the researcher or sponsoring organization—not the population—then supplies the recipient and authority boundary.
 
@@ -38,7 +38,7 @@ Without an explicit inquiry boundary:
 - search effort grows without a proportional stopping reason; and
 - missing authority or evidence is hidden by a polished opportunity statement.
 
-The reader then cannot tell whether to characterize the subject, search neighboring possibilities, request a direct specialist result, bound an advising relationship, or stop.
+The reader then cannot tell whether to characterize the subject, search neighboring possibilities, request a specialist result, bound an advising relationship, or stop.
 
 ### C.40.OI:3 - Forces
 
@@ -47,20 +47,20 @@ The reader then cannot tell whether to characterize the subject, search neighbor
 | Early ambiguity | Discovery can begin before a full goal exists, but a slogan is too weak to support a useful return. |
 | Cross-holder reuse | One inquiry shape should work across people, organizations, AI arrangements, engineered systems, and epistemes without inventing one development mechanism. |
 | Openness | The inquiry must leave room for materially different contributions without becoming an exhaustive search mandate. |
-| Protection | Conditions that must not be traded away need to appear before candidate enthusiasm, while their exact measures remain with their owners. |
+| Protection | Conditions that must not be traded away need to appear before candidate enthusiasm, while their measures remain with their owners. |
 | Proportional effort | A reversible preliminary inquiry may be cheap; a consequential commitment needs stronger evidence and authority. |
-| Honest posture | Proposed, predicted, recommended, planned, performed, and observed claims must remain distinct. |
+| Claim posture | Proposed, predicted, recommended, planned, performed, and observed claims must remain distinct. |
 | Independent entry | Opportunity construction can begin without an adviser, and advice can begin from an already adequate opportunity. |
 
 ### C.40.OI:4 - Solution
 
-Bound the inquiry so it can direct the selected useful action and identify a sufficient return or truthful stopping point.
+Bound the inquiry so it can direct the selected useful action and identify a sufficient return or supported stop.
 
 #### C.40.OI:4.1 - Identify the subject and claim posture
 
-Name what may develop or be changed at the grain that matters now: a particular person, organization, community arrangement, AI model-and-scaffold configuration, facility, platform, research programme, episteme, or another exact subject. If identification is provisional, state the candidate boundary and what would settle it.
+Name what may develop or be changed at the grain that matters now: a person, organization, community arrangement, AI model-and-scaffold configuration, facility, platform, research programme, episteme, or another subject. If identification is provisional, state the candidate boundary and what would settle it.
 
-Mark the claim posture. A proposed future contribution is not actual change. A plan is not performed Work. A model prediction is not an observed result. If *development* or *evolution* still hides the subject, continuity rule, or value claim, use [`E.10.DEV`](../03-first-principles-framework-readme/_index.md) and return with the direct subject owner.
+Mark the claim posture. A proposed future contribution is not actual change. A plan is not performed Work. A model prediction is not an observed result. If *development* or *evolution* still hides the subject, continuity rule, or value claim, use [`E.10.DEV`](../03-first-principles-framework-readme/_index.md) and return with the subject owner.
 
 #### C.40.OI:4.2 - Identify a receiving use or an exploratory question
 
@@ -74,7 +74,7 @@ An inquiry can still start from material that someone can use or change: permitt
 
 State when the inquiry's result must be usable and over what horizon the proposed development or its consequences matter. For example, an inquiry can return by Friday about a contribution intended to improve work over four months. The available effort within that window belongs in §4.5: six staff-hours is a resource ceiling, not the inquiry's elapsed duration. Add another change or consequence horizon only when it changes the question or protections.
 
-Name conditions that the inquiry may not silently trade away. Depending on the subject and use, these can include safety, legal or professional limits, privacy, confidentiality, workload, service continuity, accessibility, resource ceilings, reversibility, distributional consequences, or preservation of future options. The direct practice owns their meaning and evidence.
+Name conditions that the inquiry may not silently trade away. Depending on the subject and use, these can include safety, legal or professional limits, privacy, confidentiality, workload, service continuity, accessibility, resource ceilings, reversibility, distributional consequences, or preservation of future options. The practice governing those conditions owns their meaning and evidence.
 
 #### C.40.OI:4.4 - State the reason to explore and separate its status
 
@@ -86,15 +86,15 @@ Write why exploration is warranted now. Distinguish:
 - a supplier promise, technology signal, or PatternID used only as a search lead; and
 - curiosity about a question worth examining.
 
-Preserve competing formulations when they would send the inquiry toward different contributions. Use the direct problem-structuring pattern when deciding among those formulations is itself the current Work.
+Preserve competing formulations when they would send the inquiry toward different contributions. Use the problem-structuring pattern when deciding among those formulations is itself the current Work.
 
 #### C.40.OI:4.5 - Establish available means and permissions
 
-Identify what can actually be used before the inquiry must return: people's time and capability, source access, conversations, computation and other relevant means. Check who can obtain and interpret the proposed result. An available effort ceiling is not yet a reason to spend it; select the budget with the result in §4.6.
+Identify what can be used before the inquiry must return: the performers’ time and capabilities, source access, conversations, computation and other relevant means. Check who can obtain and interpret the proposed result. An available effort ceiling is not yet a reason to spend it; select the budget with the result in §4.6.
 
 Count the work the inquiry would require from everyone affected, including preparation, obtaining the result, interpretation and use. Include delay, displaced work and downside where they can change the choice. A short interview can require substantial preparation or interrupt someone whose contribution is needed elsewhere.
 
-Permission to inspect a source, interview a participant, or run a desk study does not authorize an intervention, access to restricted records, procurement, advice, or implementation. If the proposed inquiry cannot respect a protected condition, select a permitted alternative or return the exact gap. Keep any stronger evidence condition for a later consequential commitment visible.
+Permission to inspect a source, interview a participant, or run a desk study does not authorize an intervention, access to restricted records, procurement, advice, or implementation. If the proposed inquiry cannot respect a protected condition, select a permitted alternative or return the gap. Keep any stronger evidence condition for a later consequential commitment visible.
 
 #### C.40.OI:4.6 - Choose a worthwhile first result and enough inquiry
 
@@ -110,7 +110,7 @@ Say what plausible answers would change: the next question, a possible contribut
 
 Compare the attainable inquiry with what the present basis already supports. A narrower answer, smaller probe, different source, deferral or stop may serve the use better. Compare their whole burdens under §4.5 and the protections, not uncertainty alone. Use [C.11.DUA:4.1–4.4](../03-first-principles-framework-readme/_index.md) when the connection between the receiving question, evidence demand and worthwhile continuation needs development. Qualitative judgement is enough when it settles that choice.
 
-Select the affordable inquiry whose attainable contribution is worth that burden, or finish with the supported answer now. State what would be enough for this use before spending the selected budget: for example, one evidenced difficulty and a question that distinguishes two plausible contributions. This condition need not settle every unknown. If the inquiry cannot reach it within the permitted means, return the narrower supported result or exact gap; exhausting a budget supplies no missing evidence.
+Select the affordable inquiry whose attainable contribution is worth that burden, or finish with the supported answer now. State what would be enough for this use before spending the selected budget: for example, one evidenced difficulty and a question that distinguishes two plausible contributions. This condition need not settle every unknown. If the inquiry cannot reach it within the permitted means, return the narrower supported result or gap; exhausting a budget supplies no missing evidence.
 
 For an outside-practice contribution, [A.15.9:4.1](../03-first-principles-framework-readme/_index.md), steps 2–3, connects reuse of an available answer with the decision to obtain more. When acquisition is worthwhile, its later steps bound the request and qualify the returned result for use. Asking for it does not supply it.
 
@@ -118,7 +118,7 @@ Start at that selected contribution. Publication order does not require the earl
 
 #### C.40.OI:4.7 - Return the bounded inquiry or exact gap
 
-Use ordinary prose first. The following compact form can support a handoff when several people must inspect the same boundary:
+Use ordinary prose first. The following compact form can support a handoff when several parties must inspect the same boundary:
 
 ```text
 BoundedOpportunityInquiry@Context:
@@ -143,13 +143,13 @@ A complete return can be modest: “By Friday, use three of the six available st
 
 #### C.40.OI:4.8 - Stop, reuse, and reopen locally
 
-Finish the boundary-setting work when the selected result, worthwhile effort, sufficient return and responsible practice are clear, or when the supported answer or exact gap already completes the present use. The inquiry itself stops at that sufficient return, a relevant blocker or its agreed limit; extending it requires a changed contribution comparison. Do not widen merely to increase idea count.
+Finish the boundary-setting work when the selected result, worthwhile effort, sufficient return and responsible practice are clear, or when the supported answer or gap already completes the present use. The inquiry itself stops at that sufficient return, a relevant blocker or its agreed limit; extending it requires a changed contribution comparison. Do not widen merely to increase idea count.
 
 Reopen only the affected boundary when the subject, receiver, receiving use, horizon, protected condition, posture, authority, source premise, or effort budget changes. A changed characteristic need not erase an otherwise usable inquiry; a changed receiving use may.
 
 #### C.40.OI:4.9 - What changes in practice
 
-Instead of starting with a course, tool, provider, maturity label, or long opportunity list, the practitioner can now say what is being explored and why, over what horizon, under which protections, at what cost, and which result is needed next. A proposed contribution also needs its prospective receiving use. That is enough to begin responsibly without pretending that a recommendation or choice already exists.
+Instead of starting with a course, tool, provider, maturity label, or long opportunity list, the practitioner can now say what is being explored and why, over what horizon, under which protections, at what cost, and which result is needed next. A proposed contribution also needs its prospective receiving use. That is enough to begin; it does not establish a recommendation or choice.
 
 ### C.40.OI:5 - Archetypal Grounding
 
@@ -165,13 +165,13 @@ An existing summary establishes delayed handoffs but does not locate where they 
 | Examine the three examples and clarify the handoffs | Three staff-hours: half an hour of preparation, one hour on records, one hour of conversations counting both sides, and half an hour of interpretation. | Can locate an evidenced difficulty and distinguish a question about review practice from one about missing information or support. |
 | Review a larger incident sample | Six staff-hours, including preparation and interpretation, displacing more optional reporting. | Could add evidence about recurrence, but that estimate is unnecessary for Friday's first improvement question. It would not establish the benefit of AI. |
 
-She selects the three-hour inquiry under `C.40.OC`. Its sufficient return is one evidenced handoff difficulty, the protected workload limit and the next question that could change the proposed contribution. A tool, a change in review support and personal development remain possible; none is selected from the word “AI.” If the examples cannot support that return, she brings the exact evidence gap on Friday instead of extending the study automatically.
+She selects the three-hour inquiry under `C.40.OC`. Its sufficient return is one evidenced handoff difficulty, the protected workload limit and the next question that could change the proposed contribution. A tool, a change in review support and personal development remain possible; none is selected from the word “AI.” If the examples cannot support that return, she brings the evidence gap on Friday instead of extending the study automatically.
 
 **Changed condition.** If the existing summary already locates that difficulty and supports the next question under the same conditions, the half-hour interpretation is enough. She reuses it and ends this inquiry. The unused budget creates no obligation to interview anyone. Neither result requires an adviser or a course choice.
 
 #### C.40.OI:5.2 - Organization with a fashionable solution
 
-An engineering company announces that it should “become platform-led.” The inquiry identifies the organization and a specific product-development arrangement, the receiving use as faster and more reliable product-family delivery, a twelve-month horizon with two decision windows, and protected safety, customer continuity, regulatory obligations, and scarce specialist attention.
+An engineering company announces that it should “become platform-led.” The inquiry identifies the organization and a product-development arrangement, the receiving use as faster and more reliable product-family delivery, a twelve-month horizon with two decision windows, and protected safety, customer continuity, regulatory obligations, and scarce specialist attention.
 
 The provider proposal is recorded as a suggested premise. Strategy owns any commitment, organization-change practice owns changed arrangements, systems and platform engineering own enabling-system realization, and operations owns continuing service. The first missing result is not a platform purchase decision; it is the change-relevant characterization that can distinguish materially different contributions.
 
@@ -181,7 +181,7 @@ A committee already has three qualified directions for an identified facility, a
 
 #### C.40.OI:5.4 - Population anti-case
 
-A researcher asks, “What should this non-cultural lineage develop next?” No population-local recipient or choice owner is identified. This pattern does not manufacture one. Evolutionary description remains with the applicable domain owner. If the researcher is instead deciding whether to fund an experiment, the researcher or sponsor becomes the decision recipient and a separately bounded research opportunity or decision inquiry can begin.
+A researcher asks, “What should this non-cultural lineage develop next?” No population-local recipient or choice owner is identified. This pattern does not establish either role. Evolutionary description remains with the applicable domain owner. If the researcher is instead deciding whether to fund an experiment, the researcher or sponsor becomes the decision recipient and a separately bounded research opportunity or decision inquiry can begin.
 
 ### C.40.OI:6 - Bias-Annotation
 
@@ -196,13 +196,13 @@ A researcher asks, “What should this non-cultural lineage develop next?” No 
 
 A conforming use or companion account:
 
-1. **MUST** name the exact subject or provisional subject boundary and claim posture.
+1. **MUST** name the subject or provisional subject boundary and claim posture.
 2. **MUST** state the receiving use and receiver when known. Otherwise, identify the local question being investigated and keep the future receiving use open.
 3. **MUST** distinguish the inquiry's return time, available effort and relevant change or consequence horizon.
 4. **MUST** expose protected conditions before candidate selection.
 5. **MUST** distinguish qualified grounds, explicit hypotheses, supplier promises, and search leads.
 6. **MUST** select an inquiry budget from attainable contribution, whole burden, available means and permissions, or use a sufficient existing answer.
-7. **MUST** identify the selected result, its direct owner or next pattern, and what makes the return sufficient for the present use.
+7. **MUST** identify the selected result, its owner or next pattern, and what makes the return sufficient for the present use.
 8. **MUST NOT** present the inquiry as a recommendation, choice, programme, Guide, performed Work, observed effect, or intervention authority.
 9. **MUST** preserve independent Construction and Advising entry; no PatternID order may be presented as a mandatory lifecycle.
 10. **MUST** state a stop or local reopen condition.
@@ -216,7 +216,7 @@ A conforming use or companion account:
 | “Develop in X” as the inquiry | It names a subject area or solution without a question worth investigating. | Name the subject, local question, horizon, protections and first useful result; identify the receiving use when investigating a proposed contribution. |
 | Full goal required before discovery | It suppresses useful exploration when the problem is still provisional. | Permit an explicit hypothesis, but bind effort and the question that would qualify or reject it. |
 | Uncertainty sets the budget | A large unknown attracts an expensive study even when its results cannot improve the present use. | Compare attainable answers and whole burden with a sufficient current answer or smaller inquiry; stop at the result this use needs. |
-| One cross-holder development mechanism | It imports human, organizational, technical, epistemic, or evolutionary assumptions across unlike subjects. | Recover the exact subject and return substantive claims to its direct owner. |
+| One cross-holder development mechanism | It imports human, organizational, technical, epistemic, or evolutionary assumptions across unlike subjects. | Recover the subject and return substantive claims to its owner. |
 | Inquiry as engagement authorization | Permission to explore is treated as authority to advise or intervene. | Keep inquiry permission, advising admissibility, choice authority, and implementation authority separate. |
 | Horizon by convenience | Time is shortened or extended to favor one candidate. | Declare the horizon before comparison and reopen when it changes. |
 | Protected conditions added late | Candidate momentum hides safety, continuity, workload, privacy, or option losses. | State protections before search or selection. |
@@ -232,7 +232,7 @@ The cost is explicit incompleteness. The result may be only a question, blocker,
 
 The earliest reusable contribution is not generic goal setting or decision-support engagement. Opportunity construction often begins before a decision, option set, or separate adviser exists. Yet a fully unbounded discovery activity cannot distinguish useful exploration from fashion following.
 
-The selected boundary is therefore intentionally small: enough identity, use, horizon, protection, posture, and effort to choose one missing result. Characterization, opportunity search, problem construction, support configuration, reachability, portfolio retention, advising, and refresh remain separable because each changes the practitioner's action and can be entered or stopped independently.
+The selected boundary is therefore small: enough identity, use, horizon, protection, posture, and effort to choose one missing result. Characterization, opportunity search, problem construction, support configuration, reachability, portfolio retention, advising, and refresh remain separable because each changes the practitioner's action and can be entered or stopped independently.
 
 ### C.40.OI:11 - SoTA-Echoing
 
@@ -242,7 +242,7 @@ The selected boundary is therefore intentionally small: enough identity, use, ho
 
 **Useful adaptation here.** C.40.OI joins those contributions to development-subject identification from [E.10.DEV](../03-first-principles-framework-readme/_index.md), inquiry appraisal from C.11.DUA and bounded outside-practice use from A.15.9. Sections 4.1–4.6 connect the subject, local question or receiving use, protections, available means and sufficient return. This supports a self-inquiry, an unsettled future receiver, or a question that an existing qualified result can already answer. None of those entries requires convening a decision conference or constructing a decision model.
 
-**Serious alternative and price.** Requisite modelling is a strong direct choice when participants need to develop shared understanding, examine consequential trade-offs or test sensitivity to disputed judgements. Use the corresponding decision-support practice directly when it supplies the whole needed result. C.40.OI's smaller return can be useful before that need is established, but it supplies neither the model nor the facilitated shared understanding. Its explicit boundary costs attention too: repeating it around an adequate modelling brief adds work without a useful contribution.
+**Alternative and price.** Requisite modelling is a strong choice when participants need to develop shared understanding, examine consequential trade-offs or test sensitivity to disputed judgements. Use the corresponding decision-support practice when it supplies the whole needed result. C.40.OI's smaller return can be useful before that need is established, but it supplies neither the model nor the facilitated shared understanding. Its explicit boundary costs attention too: repeating it around an adequate modelling brief adds work without a useful contribution.
 
 **Source roles and limits.** [ISO 56007:2023](https://www.iso.org/standard/75068.html) provides the normative opportunity/idea-management boundary before solution development. Reliance here is on its public scope, not an inspected full standard or evidence of effectiveness. Phillips supplies a developed practitioner account and cases, not proof of this Method's comparative performance. The FPF contributions retain their respective semantic, appraisal and reliance roles; subject practices supply the actual development evidence.
 
@@ -250,7 +250,7 @@ The selected boundary is therefore intentionally small: enough identity, use, ho
 
 ### C.40.OI:12 - Relations
 
-- **Uses:** `E.10.DEV` to recover the subject, posture, and direct owner when development wording changes the next action.
+- **Uses:** `E.10.DEV` to recover the subject, posture, and owner when development wording changes the next action.
 - **Uses:** `C.11.DUA` to compare attainable inquiry with its receiving value and whole burden; `A.15.9` to reuse or obtain and qualify an outside-practice result.
 - **Prepares:** `C.40.OC` when selected characteristics and current, intended, protected, or unknown readings are the first missing result.
 - **Prepares:** `C.40.NU` or `C.40.PC` when the inquiry needs materially different leads or a worthwhile problem and proposed contribution.

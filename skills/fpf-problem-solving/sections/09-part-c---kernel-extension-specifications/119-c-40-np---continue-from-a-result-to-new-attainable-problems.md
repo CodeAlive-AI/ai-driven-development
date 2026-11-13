@@ -6,43 +6,43 @@
 
 ### C.40.NP:1 - Problem frame
 
-Use this Method after a qualified result changes what can be understood or obtained, but the next worthwhile problem and means of continuation are unclear. A successful project can reveal a deeper limit, make another question answerable, or provide a construction another carrier can develop. The result is a justified attainable continuation, a useful retained possibility or an explicit local stop.
+Use this Method after a qualified result changes what can be understood or obtained, but the next worthwhile problem and means of continuation are unclear. A successful project can reveal a deeper limit, make another question answerable, or provide a construction another carrier can develop. The result is a justified attainable continuation, a useful retained possibility or a local stop.
 
 Routine repetition of the same service, more exercises under an unchanged aim and a mandatory next project are not the intended result. Use ordinary operations when the current way is adequate. Use C.40.JD when a present way, holder and provision still need to be made jointly workable.
 
 ### C.40.NP:2 - Problem
 
-Success is often treated either as final closure or as a reason to repeat the visible activity. The new knowledge or capability then remains disconnected from the harder question it makes attainable. Conversely, demanding continual novelty can consume useful practice and manufacture problems without value. The practitioner needs to select a warranted continuation from the changed position.
+Success can conceal a new limit or supply the means to overcome an old one. Treating it as final closure, or repeating the successful activity on schedule, can leave a more demanding problem undiscovered. Demanding novelty at every occasion can consume useful practice. The practitioner needs to decide what the changed position now warrants.
 
 ### C.40.NP:3 - Forces
 
 | Force | Tension |
 | --- | --- |
 | Consolidation and novelty | A reliable result deserves reuse; a new limit can justify a different construction. |
-| Possibility and attainability | A newly imaginable problem still needs means for a useful next move. |
+| Possibility and attainability | A newly imaginable problem needs means for a useful next move. |
 | Immediate and future value | Investment in further capability can temporarily consume current output. |
 | Independent carriers | Useful cultural continuation can occur outside the original provider’s control. |
-| Honest evidence | Finite transitions can qualify mechanisms and actual growth, not infinite future success. |
+| Evidence limits | Finite transitions can qualify mechanisms and growth, not infinite future success. |
 
 ### C.40.NP:4 - Solution
 
 #### C.40.NP:4.1 - Recover the changed starting position
 
-After a qualified result changes the subject's position, use that position as new input to problem formation. Recover what the subject can now notice, attempt, combine or question. Compare that with a consequential situation it could not previously handle. This can yield a further problem even when the completed project satisfies every acceptance condition. The new question is not an automatically scheduled repeat of the first task.
+Start from the result and the conditions under which it holds. Recover what a performer can now notice, attempt or combine, or what an improved account now enables someone to infer. A revised Method can open a new class of performances. A change in a discipline's repertoire or standard of evidence can make previously unsupported investigations possible. Compare the old and new position and formulate the worthwhile problem that has come within reach. A completed project can satisfy all its acceptance conditions. Repeating it on schedule can also remain useful routine work.
 
 For example, a lead who can now revise a planning assumption may become able to notice that the organization has no way for another lead to dispute an inherited assumption. The next problem concerns the conditions under which a judgement can be reconstructed, challenged and renewed across people. Repeating the planning course does not supply that result. The new direction can require a different way of discussing evidence, a different information-use rule and learning support for another carrier. It uses the first result without making the first project endless.
 
-Cultural continuation is a connected but distinct strand. Use the operative explanation, decisive contrasts and actual conditions from the successful work to make the practice obtainable by another carrier. Through C.36.RP, arrange reconstruction, first consequential use and renewal in that carrier's conditions. A faithful copy can fail when those conditions differ. Return a useful new variant or a revealing failure to the common repertoire; preserve local differences that explain why the variants work. A shared employer or an organized community can support this work, but is not required for it.
+Cultural continuation is a connected but distinct strand. Use the operative explanation, decisive contrasts and conditions from the successful work to make the practice obtainable by another carrier. Through C.36.RP, arrange reconstruction, first consequential use and renewal in that carrier's conditions. A faithful copy can fail when those conditions differ. Return a useful new variant or a revealing failure to the common repertoire; preserve local differences that explain why the variants work. A shared employer or an organized community can support this work, but is not required for it.
 
-When several occasions reveal the same costly limitation in noticing, framing, constructing or continuing, the subject may develop its **way of developing**. The returned result must make a subsequent worthwhile transition better attainable or less burdensome. Producing a new framework, helper or training programme does not establish that gain by itself. Reuse the same construction at that subject and purpose; do not create a new universal level of development merely because its object is another development Method.
+When several occasions reveal the same costly limitation in noticing, framing, constructing or continuing, those responsible for that work can develop the **way they conduct development**. The returned result must make a subsequent worthwhile transition more attainable or less burdensome. Producing a new framework, helper or training programme does not establish that gain by itself. Reuse the same construction at that subject and purpose; do not create a new universal level of development merely because its object is another development Method.
 
 #### C.40.NP:4.2 - Construct the next worthwhile attainable problem
 
-Recover the starting position established by the qualified result: attainable work, actual support dependence, new constraints, retained possibilities and newly exposed limits. C.40.OP, C.40.RQ preserve opportunities and requalify changed premises. B.5.PI and C.40.CD support the next inquiry even if the completed project meets all its declared criteria.
+Recover the starting position established by the qualified result: attainable work, support dependence, new constraints, retained possibilities and newly exposed limits. C.40.OP and C.40.RQ preserve opportunities and requalify changed premises. B.5.PI and C.40.CD support the next inquiry even if the completed project meets all its declared criteria.
 
-Ask what became worth attempting that was previously inaccessible or invisible. Select a more demanding but still attainable problem when its contribution justifies the burden. “More demanding” is relative to the subject and the useful contribution; it is not an obligation to increase workload, status, budget or a single numerical score. A strategic contraction can free the means for a more important development.
+Ask what became worth attempting that was previously inaccessible or invisible. A Goldilocks problem stretches what can currently be achieved and is within reach of the agents undertaking it with the support, time and resources available for the attempt. Judge the value of the advance and the cost of an unsuccessful attempt. A reversible trial can make a demanding problem worth taking up. Record the fit for this use under C.22.2:9. A change in support can change the difficulty. Ending one undertaking can free the means for a more important one.
 
-Separate the end of a project, a provider's contract, one chosen direction and the subject's continuing development. A provider may complete a good bounded service while another provider or the subject takes the next work. If nobody can yet continue without the original helper choosing the problem, retain the supported-development result and identify what remains before claiming the intended self-development.
+Separate the end of a project, a provider's contract, one chosen direction and the subject's continuing development. A provider may complete a good bounded service while another provider or the subject takes the next work. If nobody can yet continue without the original helper choosing the problem, retain the supported-development result and identify what remains before claiming the intended self-development. For a claim that self-development has begun, identify the developing agent, the problem it chose, the first step it took and the support it used.
 
 Improvement of development itself is another possible direction. Identify the limitation in noticing, framing, choosing, obtaining means, checking or continuing; construct a better way; use it in a subsequent development occasion; and compare the result and its total burden. Preparing a replacement helper sustains supply. Changing how future helpers are developed can improve the means of development. Neither recursion nor a new generation is valuable by label alone.
 
@@ -54,7 +54,7 @@ When the changed position exposes several costly or previously unattainable ways
 
 When development is intended to become ordinary practice, identify what must be reconstructed and used by further carriers. The object is not necessarily a fixed procedure. It can include ways of noticing difficulties, disputing formulations, obtaining professional help, constructing a transition and reopening the question after success.
 
-Use C.36/C.36.RP to distinguish generation, transmission, reconstruction, use, selection and retention. Use C.36.MC for the bounded cultural claim and its receiving construction. Where the continuation relies on distributed participation, obtain the actual contributions, usable occasions, access, support and agreements that make another carrier able and willing to act and return a useful result. Retain their voluntary limits and shared demands. The applicable organizing and subject practices supply those mechanisms; a communication campaign does not establish their results.
+Use C.36/C.36.RP to distinguish generation, transmission, reconstruction, use, selection and retention. Use C.36.MC for the bounded cultural claim and its receiving construction. Where the continuation relies on distributed participation, obtain the contributions, usable occasions, access, support and agreements that make another carrier able and willing to act and return a useful result. Retain their voluntary limits and shared demands. The applicable organizing and subject practices supply those mechanisms; a communication campaign does not establish their results.
 
 A workplace, association, customer community and population of independent practitioners expose different constraints. Organizational membership may support some work assignments; participation in a community or receipt of a public text does not confer the same authority. Independent carriers can use and develop the practice without a shared meeting, employer or provider.
 
@@ -68,7 +68,7 @@ Characterize what has become attainable: a new problem class, a previously unava
 
 Use the mechanisms appropriate to the subject. Software may permit restoration of a previous version; human experience, changed authority and damaged work relationships cannot be rolled back by replacing a file. Limited trials, parallel work, revised commitments and recovery of necessary functions need their own subject Methods. A cross-subject analogy identifies a question, not its mechanism.
 
-Where criteria change, retain the earlier result and explain the new question. A better score under changed criteria is not evidence that the subject improved. If quantities are not comparable, state the acquired possibility and its conditions directly. Qualify the observed transitions and retained means; do not extrapolate finite success into guaranteed endless development.
+Where criteria change, retain the earlier result and explain the new question. A better score under changed criteria is not evidence that the subject improved. If quantities are not comparable, state the acquired possibility and its conditions. Qualify the observed transitions and retained means; do not extrapolate finite success into guaranteed endless development.
 
 ### C.40.NP:5 - Archetypal Grounding
 
@@ -82,21 +82,25 @@ After the first projects work, the lead reviews a newcomer's planned integration
 
 The lead now identifies a further problem herself. How can another person reconstruct and dispute the reason for an inquiry, without either copying a ritual or requiring the original adviser to authorize every case? This is harder than making her own commitment: another carrier must recognize the distinction under different preparation and conditions, and the working arrangement must permit a justified disagreement. It is attainable because the first development supplied contrasting cases, an explained construction and a lead able to examine its limits.
 
-She does not solve it by adding a rule saying “do not run unnecessary trials”. She obtains help for the missing learning operation from the applicable capability-development practice and uses C.36.RP for reproducible access and renewal. Together they construct a comparison in which the newcomer must relate the input premise, proposed inquiry result and changed action. For one adequately supported case he explains why no new trial is needed. For a differently unsupported case he constructs the result he must obtain and the consequence of each possible answer. A disagreement with the lead is examined against the actual material and receiving decision, rather than treated as a failure to remember the house style.
+She does not solve it by adding a rule saying “do not run unnecessary trials”. She obtains help for the missing learning operation from the applicable capability-development practice and uses C.36.RP for reproducible access and renewal. Together they construct a comparison in which the newcomer must relate the input premise, proposed inquiry result and changed action. For one adequately supported case he explains why no new trial is needed. For a differently unsupported case he constructs the result he must obtain and the consequence of each possible answer. A disagreement with the lead is examined against the material and receiving decision, rather than treated as a failure to remember the house style.
 
-The lead also changes provision. The usable account retains the decisive contrasting material and the reasons for the selected action, with access to a subject specialist for technical questions. It is not a catalogue of approved answers. At a later real occasion, the newcomer must formulate the issue and obtain the needed contribution under the support conditions the company intends to maintain. An adviser silently repairing the case would preserve delivery but defeat this particular transfer claim.
+The lead also changes provision. The usable account retains the decisive contrasting material and the reasons for the selected action, with access to a subject specialist for technical questions. It is not a catalogue of approved answers. At a later real occasion, the newcomer must formulate the issue and obtain the needed contribution under the support conditions the company intends to maintain. An adviser silently repairing the case would preserve delivery but defeat this transfer claim.
 
-The earlier two-hour joint construction has ended. In the next explicitly agreed horizon, its released adviser time can support this carrier-development work while the two hours of incumbent support and the two individual hours remain. That gives six hours again, subject to the real allocation being confirmed. If first-stage support has not in fact ended, the transfer undertaking needs another arrangement. A programme's successful milestone does not free capacity by wording alone.
+The earlier two-hour joint construction has ended. In the next explicitly agreed horizon, its released adviser time can support this carrier-development work while the two hours of incumbent support and the two individual hours remain. That gives six hours again, subject to the allocation being confirmed. If first-stage support has not ended, the transfer undertaking needs another arrangement. A programme's successful milestone does not free capacity by wording alone.
 
-The new result can establish a usable way for another carrier and a better local means of development within its observed scope. It does not prove endless continuation. The practice keeps returning from the changed position to worthwhile attainable problems; a later one might concern several teams' incompatible commitments, another subject's learning needs or a better way to expose hidden assumptions. Select it for its actual contribution and difficulty relative to the subject. Do not manufacture increasingly elaborate exercises simply to keep the programme running.
+The new result can establish a usable way for another carrier and a better local means of development within its observed scope. It does not prove endless continuation. The practice keeps returning from the changed position to worthwhile attainable problems; a later one might concern several teams' incompatible commitments, another subject's learning needs or a better way to expose hidden assumptions. Select it for its contribution and difficulty relative to the subject. Do not manufacture increasingly elaborate exercises simply to keep the programme running.
 
 #### C.40.NP:5.2 - An editorial result opens a different condition-loss problem
 
-Suppose an editing Method shortens a cost comparison. The full instruction permits selection only when the complete uncertainty interval is below the limit. The shortened text leaves only a point estimate. Restoring the interval condition repairs that text. The editor then develops a better shortening operation: show how every retained condition changes the reader's possible action, and test a consequential variation.
+An editing Method shortens a cost comparison. The source permits selection only when the complete uncertainty interval is below the limit. The shortened text leaves only a point estimate. Restoring the interval condition repairs this instruction. The editor adds a reusable operation. For every condition stated in the source that could change the reader's action, compare what the reader may do before and after shortening.
 
-Another editor applies that operation to a different text. This time the lost condition is permission to act, not numerical uncertainty. Reusing an interval calculation cannot recover it. The new problem is to construct a condition-preserving editing operation that distinguishes magnitude, authority and other operative conditions while keeping the result readable.
+A second editor tries the operation on a publication instruction. The source says that only the volume editor can authorize release, but the shortened draft lets any reviewer do so. Comparing the two permitted actions detects the loss. The operation already works for this stated authority condition. Its use here establishes transfer.
 
-The earlier repair makes this problem attainable: it provides a demonstrated loss, a contrast between two reader actions and a way of testing the shortened explanation. The next construction still needs the direct authority premise and an appropriate varied case. Compare the usable text, author effort, checking and repair burden. A new subject matter alone would show transfer of an existing operation; a new kind of condition can require actual Method growth.
+A later instruction says simply “approve the order”. The purchasing rule gives that power only to the budget holder and the source omits the rule. Comparing source wording with shortened wording preserves the same misleading reading. The next problem is to catch an operative condition supplied outside the source. The editor extends the Method to consult the rule governing the action when authority is implicit. In a further case about approving a refund, another editor locates the applicable rule and keeps its approval limit in the public instruction. Compare the resulting decisions and the cost of finding the governing rule to judge where the added operation earns its use.
+
+#### C.40.NP:5.3 - A proved bound makes a new mathematical problem attainable
+
+In C.40.CD:5.2, three sessions are necessary and sufficient for the conflict graph with edges A–B, B–C, C–D and A–C. The proof supplies an obstruction and a working schedule. Researchers can now ask which additional conflicts the three-session construction can absorb. Adding A–D invalidates the old schedule, but assigning A=1, B=2, C=3 and D=2 satisfies all five conflicts. Adding B–D as well makes all four events pairwise incompatible. Four sessions are then necessary and sufficient. The earlier claim still holds for its graph. What develops is the account of when the bound survives and why it fails. A decision to reserve a fourth session concerns a particular event and whoever has authority over it.
 
 ### C.40.NP:6 - Bias-Annotation
 
@@ -116,11 +120,11 @@ A successful exercise can anchor the next undertaking, while a programme owner c
 
 | Failure | Repair |
 | --- | --- |
-| Repeat the successful exercise regardless of the next premise | Recover what the next case actually needs. |
+| Repeat the successful exercise regardless of the next premise | Recover what the next case needs. |
 | Call a larger backlog open-ended development | Identify the new understanding or construction and the possibilities it opens. |
-| Treat publication as another carrier’s competence | Obtain an actual reconstruction and receiving-use result. |
+| Treat publication as another carrier’s competence | Obtain a reconstruction and receiving-use result. |
 | Change the metric and claim the subject improved | Preserve the former comparison and explain the new criterion. |
-| Promise rollback for human or organizational change | Use the subject’s actual recovery and transition mechanisms. |
+| Promise rollback for human or organizational change | Use the subject’s recovery and transition mechanisms. |
 
 ### C.40.NP:9 - Consequences
 
@@ -128,18 +132,18 @@ The result of one undertaking becomes material for a more capable next construct
 
 ### C.40.NP:10 - Rationale
 
-The changed position, rather than a calendar or programme promise, supplies the next question. Tracing how a result changes the next obtaining way makes recursion examinable. Cultural continuation adds independently acting carriers without making a population one managed agent.
+A qualified result can put a previously inaccessible problem within reach. Those undertaking or authorizing the next work can choose it when the expected gain justifies the cost of an attempt. Tracing how a result changes the next obtaining way makes recursion examinable. Cultural continuation adds independently acting carriers without making a population one managed agent.
 
 ### C.40.NP:11 - SoTA-Echoing
 
-C.40.CD already permits a useful construction to change the next problem. C.18/C.19 preserve exploration and selection beyond a fixed objective; E.23 distinguishes improvement from improvement of its means. This Method develops the practical return from a qualified result to a newly attainable question, including the means and cost of that continuation. If a current practice already supplies that return, use it without another cycle.
+C.40.CD already permits a useful construction to change the next problem. C.18/C.19 preserve exploration and selection beyond a fixed objective; E.23 distinguishes improvement from improvement of its means. This Method develops the practical return from a qualified result to a newly attainable problem, including an inquiry whose result is knowledge. It considers the means and cost of pursuing it. If a current practice already supplies that return, use it without another cycle.
 
 C.36/C.36.RP supply cultural reconstruction and renewal. The 2024 essays on role communities [inside a company](https://ailev.ru/1741032.html) and [around a company](https://ailev.ru/1741983.html) motivate attention to overlapping organization/community relations, participants' own journeys and competing formal and informal influence. They are conceptual contributions, not evidence for universal predictions about human replacement or office disappearance.
 
-The integration-lead and editorial cases are constructed explanations of these connections, not measured effectiveness results. Actual growth, transfer, retained independence and comparative burden require evidence from their use. Scientific or computational open-endedness mechanisms remain with their research and subject Methods; this general construction does not supply an executable learning algorithm.
+The integration-lead and editorial cases are constructed explanations of these connections, not measured effectiveness results. Growth, transfer, retained independence and comparative burden require evidence from their use. Scientific or computational open-endedness mechanisms remain with their research and subject Methods; this general construction does not supply an executable learning algorithm.
 
 ### C.40.NP:12 - Relations
 
-C.40.CD develops problem and way together. C.40.OD constructs the wider open-ended undertaking; C.40.JD joins way, holder and provision for a present change. C.40.OCN and C.40.OP develop and retain opportunities. E.23 addresses improvement of improvement means; C.18/C.19 govern relevant search and selection; C.36/C.36.RP support cultural reconstruction. Human-capability development, organizational change, community practice and the actual technical practice supply the subject-specific realization.
+C.40.CD develops problem and way together. C.40.OD constructs the wider open-ended undertaking; C.40.JD joins way, holder and provision for a present change. C.40.OCN and C.40.OP develop and retain opportunities. E.23 addresses improvement of improvement means; C.18/C.19 govern relevant search and selection; C.36/C.36.RP support cultural reconstruction. Human-capability development, organizational change, community practice and the technical practice supply the subject-specific realization.
 
 ### C.40.NP:End

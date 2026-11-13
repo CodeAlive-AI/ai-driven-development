@@ -12,7 +12,7 @@ Mathematical Lens Use, C.29, covers choosing a mathematical account and returnin
 
 **What changes in practice.** Instead of accepting a familiar formula because the symbols look similar, you identify what its inputs represent and show why the intended conclusion follows after the change. The first useful result can be an equality, a sufficient bound, or two allowed cases that the representation merges although they require different answers. That last result tells you what to retain or which question to weaken.
 
-For example, one item on hand can be unreserved or already reserved. Both situations have stock total one, but only one permits another reservation. The pair immediately exposes why total stock cannot by itself decide availability. You can then construct available stock as on-hand stock minus reserved stock and compare the reservation updates in the two accounts.
+For example, one item on hand can be unreserved or already reserved. Both situations have stock total one, but only one permits another reservation. The pair exposes why total stock cannot by itself decide availability. You can then construct available stock as on-hand stock minus reserved stock and compare the reservation updates in the two accounts.
 
 **Ordinary non-use boundary.** Use a familiar result directly when the correspondence and its conditions are already established for the present use. A symbol rename or conversion under an established notation rule normally needs only A.6.3.RT. If the mathematical object or result is still missing, construct it in the relevant mathematical practice; C.29 helps choose the account and B.5 helps organize the missing reasoning. Transfer cannot provide an absent theorem by itself. If the mathematical relation is established but its physical interpretation or execution remains unresolved, use B.5.MPC to connect those contributions.
 
@@ -28,7 +28,7 @@ Agreement on object names or on a few numerical examples does not establish agre
 
 To reuse the result, the practitioner constructs the correspondence, recovers the result's dependencies, and compares the operations in the direction of use. When exact transfer fails, the same work should reveal whether an added distinction, a smaller domain or a weaker conclusion is sufficient.
 
-The central question is: **what can be concluded in the receiving account, and returned to the working question, from the correspondence that has actually been established?**
+The central question is: **what can be concluded in the receiving account, and returned to the working question, from the correspondence that has been established?**
 
 ### C.29.1:3 - Forces
 
@@ -39,12 +39,12 @@ The central question is: **what can be concluded in the receiving account, and r
 | Forward consequence vs returned action | Every source action may have a receiving representation while some receiving actions have no source realization. |
 | Exactness vs useful approximation | Equality is convenient; a justified bound may answer the question with less retained information. |
 | Local comparison vs extended use | One update can agree while later composition fails because the summary omits a condition for the next operation. |
-| General method vs subject knowledge | The transfer comparison recurs across mathematics and applications; the particular algebra, order, geometry or physical law still comes from its subject. |
+| General method vs subject knowledge | The transfer comparison recurs across mathematics and applications; the algebra, order, geometry or physical law still comes from its subject. |
 | Recoverable reasoning vs recording cost | Another user needs the correspondence and qualifications that affect the result, but a short derivation often carries them without a separate form. |
 
 ### C.29.1:4 - Solution
 
-**Recover the intended conclusion and its source → construct the correspondence → compare the relevant operations and their conditions → determine what merged cases can still answer → derive the exact or bounded consequence → return it, or repair the particular lost connection.**
+**Recover the intended conclusion and its source → construct the correspondence → compare the relevant operations and their conditions → determine what merged cases can still answer → derive the exact or bounded consequence → return it, or repair the lost connection.**
 
 The arrows show dependencies. An existing map or proof can supply several steps. A counterexample can send the work back to the choice of representation. A sufficient bound can end the inquiry before an exact answer is constructed.
 
@@ -69,7 +69,7 @@ Then name the direction of use. There are several common possibilities.
 | Choose a receiving solution and carry it back as an action | The selected receiving solution has an allowed source counterpart, and the returned counterpart has the claimed properties. |
 | Transfer a theorem to an entire receiving domain | The theorem's premises and inference steps survive, and the domain claimed in the conclusion is covered. |
 
-The last two uses are stronger than merely mapping source cases forward. Keeping the direction explicit prevents an answer about a relaxed problem from becoming an unsupported action recommendation.
+The last two uses are stronger than mapping source cases forward. Keeping the direction explicit prevents an answer about a relaxed problem from becoming an unsupported action recommendation.
 
 #### C.29.1:4.2 - Construct the correspondence from the required distinctions
 
@@ -79,7 +79,7 @@ A correspondence can use several maps. An operation may take one kind of input a
 
 Construct the correspondence by asking what the receiving question needs. Identify a candidate variable, relation or operation that carries that information. Compute its value on source cases. Determine which cases it combines. Try to express the receiving operation using only what remains. If the expression still depends on an omitted quantity, either retain that quantity or establish why it cancels for this use.
 
-For a change of coordinates, construct the inverse when returning a complete source state is intended. For a summary, identify the source cases compatible with each receiving value. A many-to-one map can answer a particular question exactly even though it cannot reconstruct the whole source state.
+For a change of coordinates, construct the inverse when returning a complete source state is intended. For a summary, identify the source cases compatible with each receiving value. A many-to-one map can answer a question exactly even though it cannot reconstruct the whole source state.
 
 Keep the domain visible. A division requires a nonzero denominator; a square-root substitution may impose a sign choice; a route may exist only for certain endpoints or histories. A map justified on one part of X supports conclusions on that part. A receiving value outside F(X), the set of represented source cases, needs a further argument before it is used as a source possibility.
 
@@ -102,7 +102,7 @@ Read this as an equality of the outcomes relevant to the question. The letters c
 
 Derive the equality from the definitions or use an applicable preservation theorem. Numerical examples can discover an error or make the relation understandable. For a general claim, establish the comparison throughout its declared domain. Exhaustive enumeration can establish a claim about a specified finite domain when every permitted case has been included.
 
-Also compare where each operation is available. For a forward representation of a source operation, every source step used by the claim has a defined receiving counterpart. If the receiving account is to decide whether a particular source step is allowed, its answer agrees with the source condition for the represented case. If a receiving action is to be returned to the source, construct an allowed source action with the required outcome.
+Also compare where each operation is available. For a forward representation of a source operation, every source step used by the claim has a defined receiving counterpart. If the receiving account is to decide whether a source step is allowed, its answer agrees with the source condition for the represented case. If a receiving action is to be returned to the source, construct an allowed source action with the required outcome.
 
 An equality on inputs where both sides happen to be defined leaves those availability questions open. This matters in reservations and in routes with restricted continuations.
 
@@ -134,7 +134,7 @@ Use this as a construction, not only as a test. First try to rewrite q in terms 
 
 For an update, ask whether cases sharing the current summary have the same required next summary. For a summary that is also to decide availability, compare the operation conditions across those cases. For a prediction after several steps, compare what the permitted continuations can do. The relevant comparison follows the requested result; it does not require preserving every property of the original object.
 
-Distinguish defining a value on a merged class from changing the question. “The cost of this route” requires the chosen route's cost. “The least cost among these routes” deliberately combines several costs by taking a minimum. The second is a new, potentially useful function; it does not make the first independent of its representative.
+Distinguish defining a value on a merged class from changing the question. “The cost of this route” requires the chosen route's cost. “The least cost among these routes” combines several costs by taking a minimum. The second is a new, potentially useful function; it does not make the first independent of its representative.
 
 #### C.29.1:4.5 - Derive the consequence in the strength that survives
 
@@ -162,7 +162,7 @@ min over T of receiving cost ≤ min over S of source cost.
 
 The reason is that the receiving search includes a cost-preserving image of every source option. Maximization gives an upper bound under the analogous assumptions. An optimal receiving solution that has no source counterpart still supports the bound; it does not supply a feasible source plan. A returned plan requires an allowed source witness.
 
-Where the comparison is approximate, derive the error relation for the needed operation and propagate it through later steps. For example, if a later scalar operation h satisfies |h(a) − h(b)| ≤ K|a − b|, with K ≥ 0, on the relevant interval, an input error at most ε contributes at most Kε at its output. Any additional error introduced by computing h is added to that contribution. Merely adding the errors of successive steps without accounting for amplification can understate the final error.
+Where the comparison is approximate, derive the error relation for the needed operation and propagate it through later steps. For example, if a later scalar operation h satisfies |h(a) − h(b)| ≤ K|a − b|, with K ≥ 0, on the relevant interval, an input error at most ε contributes at most Kε at its output. Any additional error introduced by computing h is added to that contribution. Adding the errors of successive steps without accounting for amplification can understate the final error.
 
 #### C.29.1:4.6 - Return a sufficient result or repair the failed correspondence
 
@@ -185,7 +185,7 @@ Stop when the exact consequence or bound answers the working question. A located
 
 ### C.29.1:5 - Archetypal Grounding
 
-The following constructions use stated mathematical models. Their conclusions show what follows from those models and correspondences. Applying them to an actual store, transport arrangement or thermal system also depends on the relevant accounting, compatibility or physical premises.
+The following constructions use stated mathematical models. Their conclusions show what follows from those models and correspondences. Applying them to a store, transport arrangement or thermal system also depends on the relevant accounting, compatibility or physical premises.
 
 #### C.29.1:5.1 - Transfer a reservation update to available stock
 
@@ -237,7 +237,7 @@ The arithmetic min(1,4)+2 = 3 still holds. Its use as the attainable minimum fai
 
 Repair the state at B by retaining whether the continuation permission remains. Let p arrive at (B,0) and q at (B,1). Only (B,1) has the r transition to C. Minimizing over the allowed complete routes in this expanded account yields 4 + 2 = 6. Returning q followed by r supplies an allowed source witness.
 
-There is also a useful result from the coarser account. If it deliberately ignores the permission restriction, its feasible route set contains the real feasible routes. Costs of retained routes remain unchanged. Its minimum 3 is therefore a lower bound on the true minimum, here 6. The bound rules out a source route costing at most 2. It cannot establish that a source route costing at most 4 exists; that would need an allowed witness.
+There is also a useful result from the coarser account. If it deliberately ignores the permission restriction, its feasible route set contains all routes allowed by the source account. Costs of retained routes remain unchanged. Its minimum 3 is therefore a lower bound on the source minimum, here 6. The bound rules out a source route costing at most 2. It cannot establish that a source route costing at most 4 exists; that would need an allowed witness.
 
 **Returned result.** Endpoint reachability, the cost of a selected route and the minimum over compatible routes are different questions. Retain history only insofar as it changes future compatibility or cost. When a coarser account is cheaper to use, its lower bound may still answer the receiving question without constructing the optimal source route.
 
@@ -297,7 +297,7 @@ Temperature differences are added to a temperature on the same scale. At k = 1 t
 
 If an exact maximum is wanted, retaining (m,|d|) is sufficient under this symmetric update. The sign of d is needed only for questions distinguishing which body is warmer. Retain the distinction needed by the question, rather than restoring both coordinates automatically.
 
-**Returned result and return condition.** The bound answers the stated question at the second sampling instant under the supplied model. It does not assert that the bodies were always below 60 °C: the initial pair (20,80) was not. Unequal heat capacities, external heat exchange or a changed transfer rule require a new update and a new comparison. Establishing that this discrete model predicts an actual pair of bodies requires physical and measurement work; B.5.MPC connects that work to the mathematical result.
+**Returned result and return condition.** The bound answers the stated question at the second sampling instant under the supplied model. It does not assert that the bodies were always below 60 °C: the initial pair (20,80) was not. Unequal heat capacities, external heat exchange or a changed transfer rule require a new update and a new comparison. Establishing that this discrete model predicts a pair of bodies requires physical and measurement work; B.5.MPC connects that work to the mathematical result.
 
 #### C.29.1:5.4 - Return a rational result from a real-number construction
 
@@ -354,14 +354,14 @@ A complete argument about a mathematical model establishes its stated conditiona
 | Naming an on-hand total “available” | The name conceals reserved stock; the same display permits and forbids a reservation. | Construct n − r and compare the update and its condition. |
 | Choosing a convenient representative | The chosen route's cost is assigned to a summary that also represents other costs. | Establish independence or define the intended class operation, such as minimum over compatible routes. |
 | Transferring arithmetic while dropping availability | The cost 1 + 2 is correct for a route composition that is unavailable. | Restore the permission or history needed for composition; otherwise use the relaxed minimum only as a bound. |
-| Reversing a many-to-one map without justification | Equal receiving values are treated as identical source states or as a unique source action. | Retain a distinguishing quantity or construct an allowed source witness for the specific result. |
+| Reversing a many-to-one map without justification | Equal receiving values are treated as identical source states or as a unique source action. | Retain a distinguishing quantity or construct an allowed source witness for the result. |
 | Treating one preserved quantity as a complete state | Correct mean evolution is used to infer an unresolved maximum. | Express the query in retained variables and bound or restore the missing contrast. |
-| Rejecting every inexact transfer | A sufficient threshold bound is discarded because it is not a reconstructed value. | Compare the justified bound with the actual decision. |
-| Treating physical interpretation as another algebraic equality | A correct thermal derivation is taken to validate its exchange law for actual bodies. | State the model's physical premises and establish their application through physical and measurement work. |
+| Rejecting every inexact transfer | A sufficient threshold bound is discarded because it is not a reconstructed value. | Compare the justified bound with the decision. |
+| Treating physical interpretation as another algebraic equality | A correct thermal derivation is taken to validate its exchange law for bodies. | State the model's physical premises and establish their application through physical and measurement work. |
 
 ### C.29.1:9 - Consequences
 
-**Useful consequences.** A transferred result comes with the correspondence that makes it usable. A failed transfer becomes a specific mathematical finding: two merged cases disagree, an operation lacks a counterpart, a domain is uncovered, or a bound is insufficient. Each finding suggests a repair that is narrower than discarding the whole account.
+**Useful consequences.** A transferred result comes with the correspondence that makes it usable. A failed transfer becomes a mathematical finding: two merged cases disagree, an operation lacks a counterpart, a domain is uncovered, or a bound is insufficient. Each finding suggests a repair that is narrower than discarding the whole account.
 
 The method also makes productive simplification possible. Available stock omits separate totals while preserving reservation behavior. A route relaxation omits compatibility while providing a lower bound. Mean and contrast simplify a thermal update, and a bounded contrast suffices for a later threshold decision.
 
@@ -373,7 +373,7 @@ The method also makes productive simplification possible. Available stock omits 
 
 #### C.29.1:10.1 - Why operations, conditions and questions are considered together
 
-A result is produced by a particular construction under particular premises. Mapping the named objects alone leaves open what happens to that construction. Comparing the two orders exposes the mathematical obligation at the point where it matters.
+A result comes from a construction and the premises it uses. Mapping the named objects alone leaves open what happens to that construction. Comparing the two orders identifies the requirements for transfer.
 
 Operation conditions belong to this comparison because partial operations are common in practice. A reservation consumes availability. A route continuation consumes or requires permission. Removing the condition can enlarge the receiving problem even while preserving the arithmetic of every allowed source step.
 
@@ -413,9 +413,9 @@ The working problem is reuse of mathematical consequences across accounts at a c
 | Patrick Cousot, *Abstract Interpretation: From 0, 1, To ∞*, §2. Its abstract operations cover the possible concrete results represented by their inputs. [Author's text](https://pcousot.github.io/publications/CSV-2023-cousot.pdf). | Exact reconstruction retains more information; a sound abstraction can establish a property with less information but can leave a question undecided. Testing selected cases is cheaper in some settings but does not establish coverage of all permitted cases. | **Adopt** coverage as the reason a bounded abstract result supports a concrete conclusion. **Adapt** that reasoning to C.29.1:4.5's compatible cases and bounds. General abstract-domain construction and program-analysis algorithms remain in their mathematical and computational practice. |
 | A. Yu. Khrennikov, *Введение в квантовую теорию информации* (2008), pp. 66–68. The passage constructs real numbers and a Hilbert space by completion. | Keeping only the starting domain avoids extra objects but can leave a needed limit unavailable. Completion retains an embedded copy of the starting domain and supplies those limits; returning a source result still requires its allowed form. | **Adapt** this explanatory contrast in C.29.1:5.4's rational-setting construction. The example and its parity argument are this pattern's worked synthesis. In physical modeling, relate the resulting mathematical quantities to the preparations and observations for which the model is used. |
 
-The pattern's synthesis is the practitioner sequence connecting these obligations to the intended answer: construct the map, compare operations and availability, establish independence or coverage, and return the consequence. The reservation, route, thermal and rational-setting constructions derive their claims from their stated premises. The cited sources supply reusable mathematical lines, not evidence that a particular physical or organizational application satisfies those premises.
+The pattern's synthesis is the practitioner sequence connecting these obligations to the intended answer: construct the map, compare operations and availability, establish independence or coverage, and return the consequence. The reservation, route, thermal and rational-setting constructions derive their claims from their stated premises. The cited sources supply reusable mathematical lines, not evidence that a physical or organizational application satisfies those premises.
 
-A direct proof in the original account remains a serious alternative. Prefer it when it is simpler than establishing and maintaining a transfer. Reconsider a chosen summary when a new query needs a distinction it omits, when composition introduces a new condition, or when a tighter justified bound changes the decision. Reopen the mathematical work affected by that change.
+A direct proof in the original account remains an alternative. Prefer it when it is simpler than establishing and maintaining a transfer. Reconsider a chosen summary when a new query needs a distinction it omits, when composition introduces a new condition, or when a tighter justified bound changes the decision. Reopen the mathematical work affected by that change.
 
 ### C.29.1:12 - Relations
 

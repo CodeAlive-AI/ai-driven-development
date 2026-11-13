@@ -18,7 +18,7 @@ When a claim crosses domains without its meaning, basis or conditions, the recei
 | ------------------------------- | ----------------------------------------------------------------------- |
 | **Conceptual Unity**            | Freedom to evolve ↔ invariant principles that prevent vocabulary drift. |
 | **Rigor vs Agility**            | Formal verifiability ↔ rapid, iterative exploration.                    |
-| **Universality vs Specificity** | Shared conceptual grounds ↔ methods suited to a particular problem. |
+| **Universality vs Specificity** | Shared conceptual grounds ↔ methods suited to a problem. |
 | **Didactic Clarity**            | Human comprehension ↔ abstract purity and density.                      |
 | **Physical Grounding** | Proposed material realization or physical intervention ↔ a feasibility basis for that action under its resource and physical constraints. |
 
@@ -45,14 +45,14 @@ FPF expresses these shared grounds and reusable contributions through:
 
    * **Evolvability** — change is expected and governed;
    * **Cross‑Scale Coherence** — preserve shared distinctions across scales and qualify each part–whole algebra for its subject and the structure it preserves;
-   * **Didactic Transparency** — each element exposes its own reasoning path.
+   * **Didactic Transparency** — each element exposes its reasoning path.
 
 For a proposed rule or artifact, take one affected use through these steps:
 
 1. State the intended user, decision or action, and the failure the proposal addresses.
 2. For a normative rule, name at least one core invariant and explain the rule's contribution in that use. A copied invariant label is insufficient; if the contribution is unresolved, retain the proposal and return the missing argument or case before treating it as charter-conformant.
 3. State the artifact's intended measurable benefit, its comparison basis and how it could be checked, or the reason a benefit statement is inapplicable. Distinguish an aim or supported prediction from an observed result. Withdraw an unsupported outcome claim or obtain the evidence needed by that claim; do not substitute conformance for benefit.
-4. Apply only the additional feasibility and lexical conditions that the claim activates. Keep any remaining gap and the next useful action explicit. A changed benefit basis or invariant argument reopens the affected claim, not unrelated conclusions.
+4. Apply only the additional feasibility and lexical conditions that the claim activates. State any remaining gap and the next useful action. A changed benefit basis or invariant argument reopens the affected claim, not unrelated conclusions.
 
 ### E.1:5 - Conformance Checklist
 
@@ -63,15 +63,15 @@ For a proposed rule or artifact, take one affected use through these steps:
 | **CC‑Vision.3** | Abstract Core definitions **MUST** exclude incidental implementation dependence under E.5.1. Exact syntax **MAY** remain when necessary to state the conformance condition of the named publication form, protocol or grammar, with its edition/use boundary. | Preserves portable concepts and usable rules about concrete forms. |
 | **CC‑Vision.4** | A conformant artefact **MUST** state a measurable benefit for at least one of the three roles (*Engineer, Researcher, Learner*) or justify omission. | Aligns success with stakeholder trajectories.   |
 
-Mathematical constructions retain their own validity and composition conditions. Material feasibility becomes an additional question when a claim proposes realizing a construction materially or intervening in a physical system. A missing manufacturing method, resource or constraint basis leaves that proposed action unresolved; a physical expression of a mathematical object establishes no realization of its elements.
+Mathematical constructions retain their validity and composition conditions. Material feasibility becomes an additional question when a claim proposes realizing a construction materially or intervening in a physical system. A missing manufacturing method, resource or constraint basis leaves that proposed action unresolved; a physical expression of a mathematical object establishes no realization of its elements.
 
-An in-principle feasibility claim does not assert that production occurred. Actual Work, change, entity inception and production completion require their separate bases under A.12, A.15.1 and A.15.PROD when those claims are made.
+An in-principle feasibility claim does not assert that production occurred. Work, change, entity inception and production completion require their separate bases under A.12, A.15.1 and A.15.PROD when those claims are made.
 
-#### E.1:5.1 - Three different questions about construction
+#### E.1:5.1 - Three questions about construction
 
-* **Mathematical product.** A construction of R² × R³ needs its defined elements, product operations and applicable mathematical laws. With no proposed material realization, it needs no manufacturing actor or resource budget. Printing the construction on paper produces a carrier, not physical copies of all its elements.
+* **Mathematical product.** A construction of R² × R³ needs its defined elements, product operations and mathematical laws. With no proposed material realization, it needs no manufacturing actor or resource budget. Printing the construction on paper produces a carrier, not physical copies of all its elements.
 * **Proposed pump assembly.** An engineer proposes assembling a named shaft and housing with a required clearance of 0.05–0.10 mm. The feasibility claim cites the manufacturing/assembly method, available equipment and materials, and the tolerance calculation supporting the stated clearance under those conditions. If the equipment capability or tolerances are unknown, return that missing basis before claiming feasibility for the decision. A valid drawing alone is insufficient.
-* **Manufactured pump.** Claiming that pump P17 was produced additionally needs the actual assembly Work and change, and the independently applicable inception/completion facts. In an illustrative trace, a measured 0.07 mm clearance can support that one completion criterion; it supplies neither the whole production account nor an untested performance claim. A.12, A.15.1 and A.15.PROD govern those occurrence claims, while any actual composition retains its own composition rules.
+* **Manufactured pump.** Claiming that pump P17 was produced additionally needs the assembly Work and change, and the independently applicable inception/completion facts. In an illustrative trace, a measured 0.07 mm clearance can support that one completion criterion; it supplies neither the whole production account nor an untested performance claim. A.12, A.15.1 and A.15.PROD govern those occurrence claims, while any actual composition retains its composition rules.
 
 
 #### E.1:5.2 - Decide a proposed reuse rule and its benefit
@@ -87,12 +87,12 @@ R1 supports **Didactic Transparency** by making the reason for reuse or reopenin
 
 There is one invalid reuse under the label-only rule and none under R1 in these two cases. This supports the stated failure-prevention argument; it is not an observation of reader behavior or proof that review is faster. The added comparison has a cost. If a receiver claims “R1 makes all reviews 20% faster” without observations, remove that outcome claim and retain the bounded aim, or select a task-matched inquiry before making it. If the proposed rule merely requires a new label and says “supports Evolvability,” return the missing continuity or change-handling contribution; the label alone does not satisfy CC-Vision.2.
 
-The next action is therefore specific: use the supported instruction for this bounded concern, investigate a claimed reader benefit through E.12 when worthwhile, or repair the unsupported invariant argument. New evidence about the source population reopens applicability; new evidence about reading cost reopens the benefit claim.
+Therefore, use the supported instruction for this bounded concern, investigate a claimed reader benefit through E.12 when worthwhile, or repair the unsupported invariant argument. New evidence about the source population reopens applicability; new evidence about reading cost reopens the benefit claim.
 
 ### E.1:6 - Consequences
 
-*Intended gains* — Make cross-domain claims easier to recover, make their support traceable, and help learners use the concepts. A particular artifact states and supports its own benefit; this charter is not evidence that those gains have already occurred.
-*Trade‑offs* — Authors face an initial learning curve and must trace every rule to an invariant; disciplined traceability is required to prevent variant sprawl.
+*Intended gains* — Make cross-domain claims easier to recover, make their support traceable, and help learners use the concepts. An artifact states and supports its benefit; this charter is not evidence that those gains have already occurred.
+*Trade‑offs* — Authors face an initial learning curve and must trace every rule to an invariant; traceability is required to prevent variant sprawl.
 
 #### E.1:6.1 - SoTA-Echoing — connect conformance to intended use
 
@@ -100,9 +100,9 @@ The next action is therefore specific: use the supported instruction for this bo
 
 The [NASA Systems Engineering Handbook's product verification and validation distinction, §§5.3–5.4](https://www.nasa.gov/reference/5-0-product-realization/) supplies the substantive line: requirements conformance and satisfaction of stakeholder expectations in intended use answer different questions. **Adapt** that distinction to CC-Vision.2/4 and §4 steps 2–3. The handbook concerns engineered products; its authority neither admits an FPF invariant nor proves the universal value of a reasoning framework. The conformance-only shortcut is the compared local default, not NASA's complete method.
 
-The [GOV.UK Service Standard's success-definition guidance](https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data) supports the complementary move of identifying useful performance measures together with user research. **Adapt** it to the explicit benefit and evidence boundary in §5.2. **Reject** treating a metric target as an achieved effect. Neither source supplies a required improvement percentage or a universal framework-effectiveness test.
+The [GOV.UK Service Standard's success-definition guidance](https://www.gov.uk/service-manual/service-standard/point-10-define-success-publish-performance-data) supports the complementary move of identifying useful performance measures together with user research. **Adapt** it to the benefit and evidence boundary in §5.2. **Reject** treating a metric target as an achieved effect. Neither source supplies a required improvement percentage or a universal framework-effectiveness test.
 
-At the same proposal and two-case scope, §5.2's substantive replay detects the unsafe label-only reuse that a complete traceability field would leave unanswered. It costs a small explicit comparison; wider reader or performance claims cost separately justified inquiry. Reuse an already adequate argument when its conditions match, and justify an omitted benefit where CC-Vision.4 permits it. Reopen only when the intended task, invariant contribution, benefit evidence or cheaper alternative changes enough to affect adoption.
+At the same proposal and two-case scope, §5.2's substantive replay detects the unsafe label-only reuse that a complete traceability field would leave unanswered. It costs a small comparison; wider reader or performance claims cost separately justified inquiry. Reuse an already adequate argument when its conditions match, and justify an omitted benefit where CC-Vision.4 permits it. Reopen only when the intended task, invariant contribution, benefit evidence or cheaper alternative changes enough to affect adoption.
 
 ### E.1:7 - Relations & Precedence
 Pattern E.1 governs **E.2 Eleven Pillars** and the Guard‑Rail set **E.5**; any later pattern that conflicts with E.1 **MUST** be revised via a DRR before entering the Canon.

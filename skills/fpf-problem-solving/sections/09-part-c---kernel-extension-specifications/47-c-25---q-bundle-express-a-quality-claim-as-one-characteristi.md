@@ -7,11 +7,20 @@
 **Plain-name.** Quality-bundle normal form.
 
 **Builds on.**
-`C.2.1` for the enclosing quality-claim episteme, `A.2.6` for scope algebra, `A.6.1` for operation-declaration references when current, and `C.16` / `A.18` for Characteristic and Scale legality.
-**Coordinates with.**
-`C.17-C.19` for quality-related measurement families, `C.16.P` when characteristic/scale/score wording is not yet recoverable, `A.15` for method, work-plan, or work-occurrence gating, and `C.16.Q` for quality/evaluative-characterization wording before the endpoint is one explicit characteristic, Q-Bundle-shaped claim content, objective, or another governing pattern.
 
-**Use this pattern when.** Use C.25 when an engineering-quality family such as availability, resilience, security or maintainability may be hiding several differently typed contributors and the reader needs one claim that keeps them distinct.
+- `C.2.1` for the enclosing quality-claim episteme;
+- `A.2.6` for scope algebra;
+- `A.6.1` for operation-declaration references when current;
+- `C.16` / `A.18` for Characteristic and Scale legality.
+
+**Coordinates with.**
+
+- `C.17-C.19` for quality-related measurement families;
+- `C.16.P` when characteristic/scale/score wording is not yet recoverable;
+- `A.15` for method, work-plan, or work-occurrence gating;
+- `C.16.Q` for quality/evaluative-characterization wording before the endpoint is one explicit characteristic, Q-Bundle-shaped claim content, objective, or another governing pattern.
+
+**Use this pattern when** an engineering-quality family such as availability, resilience, security or maintainability may be hiding several differently typed contributors and the reader needs one claim that keeps them distinct.
 
 **First useful move.** Ask: *what would make this quality claim false?* If one measure on one declared Scale answers the question, state that one Characteristic and stop. Use Q-Bundle-shaped claim content only when several differently typed contributors—such as a measure and scope, or measures plus a load-bearing window or mechanism—jointly determine the answer.
 
@@ -35,17 +44,17 @@ Without a normal form for engineering quality families:
    Presence of redundancy, certification, or audit controls is described as if it were itself a measurement value.
 4. **Guards become unstable.**
    Admission checks silently mix scope coverage, numerical thresholds, mechanism presence, and evidence freshness in one phrase.
-5. **Evaluative governing-pattern selection remains underspecified.**
+5. **The governing pattern for the quality claim remains unclear.**
    After `C.16.Q` repairs a bare quality term, or `C.16.P` repairs characteristic, scale, score, metric, or proxy wording inside that term, the admissible endpoint is unclear unless FPF distinguishes single-CHR cases from bundle-shaped quality families.
 
 ### C.25:3 - Forces
 
 | Force | Tension |
 |---|---|
-| **Simplicity vs category hygiene** | Authors want one convenient quality label; the framework must still keep CHR, USM, mechanism, status values, and status-use relations distinct. |
+| **Simplicity vs category distinctions** | Authors want one convenient quality label; the framework must still keep CHR, USM, mechanism, status values, and status-use relations distinct. |
 | **Comparability vs local applicability** | Measures should compare legally across contexts, while scope remains context-local and set-valued. |
 | **Thin ontology vs practical authoring** | The pattern should regularize quality authoring without creating a new heavy kernel family for every `-ility`. |
-| **Endpoint clarity vs expressive breadth** | Some quality terms really are one characteristic; others are bundles. The endpoint rule must cover both without ambiguity. |
+| **Endpoint clarity vs expressive breadth** | Some quality terms are one characteristic; others are bundles. The endpoint rule must cover both without ambiguity. |
 
 ### C.25:4 - Solution - Q-Bundle normal form
 
@@ -66,16 +75,18 @@ The full escalation form is:
 
 `Q-Bundle := <Name, QualityBearer, ClaimScope?, WorkScope?, Measures[CHR], QualificationWindow?, Mechanisms?, Status?, Evidence?>`
 
-`Q-Bundle` names a C.25-local record-shaped portion of one episteme's exact claim content. It is not a new Kernel kind, an independently identified world object, or a second identity beside the enclosing episteme. That episteme supplies the exact claim content, one independently identified `QualityBearer` as its EntityOfConcern, and the effective reference scheme under which the quality claim is read.
+`Q-Bundle` names a C.25-local record-shaped portion of one episteme's claim content. It is not a new Kernel kind, an independently identified world object, or a second identity beside the enclosing episteme. That episteme supplies the claim content, one independently identified `QualityBearer` as its EntityOfConcern, and the effective reference scheme under which the quality claim is read.
 
-The `?` is operative: omit any optional slot unless changing it could change the current claim or receiving action. A bundle may therefore contain only Name, QualityBearer, Measures, and one load-bearing scope or window. The full tuple is an escalation aid, not a form every author must fill.
+The `?` marks an optional slot: omit that slot unless changing it could change the current claim or receiving action. A bundle may therefore contain only Name, QualityBearer, Measures, and one load-bearing scope or window. The full tuple is an escalation aid, not a form every author must fill.
 
-Changing any bundle content that changes the quality claim changes the ClaimGraph and therefore identifies another episteme under `C.2.1`. A changed layout, form, publication occurrence, or carrier can leave that episteme unchanged. A gate, publication, proxy, comparison, or roll-up cites the exact episteme or one exact `C.2.1 ClaimAddress`, meaning the exact edition plus an intrinsic claim identity declared by that edition's ClaimGraph. Later `ClaimAddress` uses in C.25 mean that same value; a field list or raw record reference is not enough.
+Changing any bundle content that changes the quality claim changes the ClaimGraph and therefore identifies another episteme under `C.2.1`. A changed layout, form, publication occurrence, or carrier can leave that episteme unchanged.
+
+A gate, publication, proxy, comparison, or roll-up cites the exact episteme or one exact `C.2.1 ClaimAddress`, meaning the exact edition plus an intrinsic claim identity declared by that edition's ClaimGraph. Later `ClaimAddress` uses in C.25 mean that same value; a field list or raw record reference is not enough.
 
 #### C.25:4.3 - Field meanings
 
 - **Name.** The engineering quality family label inside the claim content, such as `Availability`, `Resilience`, or `Security`; it is not an identity key.
-- **QualityBearer.** The one independently identified EntityOfConcern of the enclosing claim episteme. It may be an exact `U.System`, `U.PromiseContent`, `U.Episteme`, or another exact entity under its direct identity pattern. When selected organization is the subject, use one `A.22` `U.Structure` with exact constituents, selected obtaining relations, applied constraints, and one selection-use frame. A list of local system-role kinds and assignment occurrences does not by itself identify a bearer.
+- **QualityBearer.** The one independently identified EntityOfConcern of the enclosing claim episteme. It may be a `U.System`, `U.PromiseContent`, `U.Episteme`, or another entity under its direct identity pattern. When selected organization is the subject, use one `A.22` `U.Structure` with exact constituents, selected obtaining relations, applied constraints, and one selection-use frame. A list of local system-role kinds and assignment occurrences does not by itself identify a bearer.
 - **ClaimScope / WorkScope.** USM sets over `U.ContextSlice` describing where the claim holds or where the capability's deliverability claim may be evaluated. These are **set-valued scope objects**, not characteristics.
 - **Measures[CHR].** One or more admissible CHR characteristics, each bound to one declared scale.
 - **QualificationWindow.** The temporal policy under which the quality claim is judged.
@@ -84,23 +95,29 @@ Changing any bundle content that changes the quality claim changes the ClaimGrap
 
 #### C.25:4.4 - Guard reading
 
-A quality guard is conjunctive only over the truth conditions that the current claim actually declares. For example:
+A quality guard is conjunctive only over the truth conditions that the current claim declares. For example:
 
 `declared scope covers TargetSlice AND declared measures satisfy their own laws AND each other declared prerequisite holds`
 
-An absent optional slot contributes no condition. Each measure keeps its own Scale and comparison law; a trade-off, alternative, weighted combination, or partial order must be stated under the pattern that defines it rather than being smuggled into `AND`. If this typed decomposition cannot express what makes the claim true, do not force the family into C.25.
+An absent optional slot contributes no condition. Each measure keeps its own Scale and comparison law; a trade-off, alternative, weighted combination, or partial order must be stated under the pattern that defines it rather than hidden in `AND`. If this typed decomposition cannot express what makes the claim true, do not force the family into C.25.
 
 ### C.25:5 - Archetypal Grounding
 
 A quality family is not automatically one metric. Use one Characteristic when one measure and Scale carry the claim; use a Q-Bundle only when several differently typed contributors are jointly load-bearing.
 
-**Minimal completed availability case.** Under `ServiceQualityScheme-v4`, the claim says: *CheckoutAPI maintained at least 99.9% availability for customer-facing request handling over the rolling 30-day window.* Its exact bearer is the independently identified `CheckoutAPI` System. In this example the receiving use separately checks coverage of customer-facing requests and the rolling-window qualification as well as the ratio. Its Q-Bundle content has `Name: Availability`, `ClaimScope: customer-facing request handling`, `Measures: AvailabilityRatio[%] >= 99.9`, and `QualificationWindow: rolling 30 days`. `WorkScope`, `Mechanisms`, `Status`, and `Evidence` are omitted because this drafting use does not rely on them. If evidence reliance, a failover prerequisite, or a gate later becomes current, add only the direct relation or slot that question needs. If the receiving question instead asks only for AvailabilityRatio under an already fixed scope and measurement window, the single-Characteristic branch is sufficient.
+**Minimal availability case.**
+
+Under `ServiceQualityScheme-v4`, the claim says: *CheckoutAPI maintained at least 99.9% availability for customer-facing request handling over the rolling 30-day window.* Its exact bearer is the independently identified `CheckoutAPI` System. In this example the receiving use separately checks coverage of customer-facing requests and the rolling-window qualification as well as the ratio.
+
+Its Q-Bundle content has `Name: Availability`, `ClaimScope: customer-facing request handling`, `Measures: AvailabilityRatio[%] >= 99.9`, and `QualificationWindow: rolling 30 days`. `WorkScope`, `Mechanisms`, `Status`, and `Evidence` are omitted because this drafting use does not rely on them.
+
+If evidence reliance, a failover prerequisite, or a gate later becomes current, add only the direct relation or slot that question needs. If the receiving question instead asks only for AvailabilityRatio under an already fixed scope and measurement window, the single-Characteristic branch is sufficient.
 
 **Escalation examples.** A resilience or security claim often needs several measures, scenario or attack-class scope, mechanisms or control statuses, and a qualification window. Those contributors belong in the bundle only when they are part of that claim's truth conditions; treating the family as one scalar score would erase which contributor failed.
 
 ### C.25:6 - Bias-Annotation
 
-The pattern biases authors toward explicit decomposition. That bias is intentional. It is better to publish a visibly structured quality bundle than to gain short-term convenience by collapsing scope, measures, and mechanisms into one overloaded quality label.
+The pattern biases authors toward explicit decomposition. It is better to publish a visibly structured quality bundle than to gain short-term convenience by collapsing scope, measures, and mechanisms into one overloaded quality label.
 
 ### C.25:7 - Conformance Checklist
 
@@ -109,7 +126,9 @@ The pattern biases authors toward explicit decomposition. That bias is intention
 - `CC-C.25-3` `ClaimScope` and `WorkScope` **SHALL** remain USM set-valued scope objects; they **MUST NOT** be treated as ordinal or numeric quality levels.
 - `CC-C.25-4` Mechanism or status slots **MUST NOT** be conflated with `Measures[CHR]`.
 - `CC-C.25-5` Any scalar comparison or thresholding inside a Q-Bundle **SHALL** apply only to declared CHR measures, not to scope slots.
-- `CC-C.25-6` When cross-context comparison is current, the publisher **SHALL** align the exact bundle heads or slots, resolve the two exact `F.17` local senses, and, when their `<ReferenceScheme, LocalSenseClaim>` projections differ and the comparison needs semantic correspondence, test the direct `F.9` Bridge predicate and state a separate bounded-use claim only if that Bridge obtains. The comparison and its reliance **MUST NOT** change any Q-Bundle slot; ordinary reliance uses `A.10`, while `B.3` opens only when an actual named assurance claim is current.
+- `CC-C.25-6` When cross-context comparison is current, the publisher **SHALL** align the exact bundle heads or slots, resolve the two exact `F.17` local senses, and, when their `<ReferenceScheme, LocalSenseClaim>` projections differ and the comparison needs semantic correspondence, test the direct `F.9` Bridge predicate and state a separate bounded-use claim only if that Bridge obtains.
+
+  The comparison and its reliance **MUST NOT** change any Q-Bundle slot; ordinary reliance uses `A.10`, while `B.3` opens only when a named assurance claim is current.
 - `CC-C.25-7` A materialized Q-Bundle **SHALL** be recoverable as content of one exact `C.2.1` episteme with one independently identified QualityBearer as EntityOfConcern and one effective ReferenceScheme. A gate, publication, comparison, proxy, or roll-up **MUST NOT** cite a field list as though it were an independently identified bundle object.
 
 ### C.25:8 - Common Anti-Patterns and How to Avoid Them
@@ -125,29 +144,34 @@ The pattern biases authors toward explicit decomposition. That bias is intention
 
 | Benefit | Trade-off / Mitigation |
 |---|---|
-| **Category hygiene.** Scope, measurement, mechanism, and status no longer collapse into one term. | Slightly heavier authoring structure; mitigation: only composite cases need a bundle, and immaterial optional slots remain absent. |
+| **Category distinctions.** Scope, measurement, mechanism, and status no longer collapse into one term. | Slightly heavier authoring structure; mitigation: only composite cases need a bundle, and immaterial optional slots remain absent. |
 | **Portable comparison.** CHR measures compare legally, while scope remains governed by USM set algebra. | Authors must declare scales and scope explicitly. |
-| **Cleaner gating.** Method/work guards can read the same structure without hidden semantics. | Requires discipline in separating guard factors. |
-| **Better endpoint classification.** `C.16.Q` can terminate in either one characteristic or one Q-Bundle with a clear endpoint pattern. | Requires a first-pass endpoint decision during authoring. |
+| **Shared guard structure.** Method/work guards can read the same structure without hidden semantics. | Requires discipline in separating guard factors. |
+| **Endpoint classification.** `C.16.Q` can terminate in either one characteristic or one Q-Bundle with a clear endpoint pattern. | Requires a first-pass endpoint decision during authoring. |
 
 ### C.25:10 - Rationale
 
-Engineering quality language is useful precisely because it groups recurring concerns under memorable family labels. The same grouping becomes dangerous when those labels are mistaken for one universal metric. `C.25` preserves the family labels but forces the underlying structure to stay typed and visible.
+Engineering quality language is useful because it groups recurring concerns under memorable family labels. The same grouping becomes dangerous when those labels are mistaken for one universal metric. `C.25` preserves the family labels but forces the underlying structure to stay typed and visible.
 
 ### C.25:11 - SoTA-Echoing
 
-The comparison below selects lines by the quality-family problem they can solve, not by publication popularity or by the availability of a convenient form.
+The comparison below selects lines by the quality-family problem they can solve.
 
 | Current problem-solving line | What it solves well | Remaining limit or effort cost | C.25 disposition |
 | --- | --- | --- | --- |
 | [ISO/IEC 25010:2023 product quality model](https://www.iso.org/standard/78176.html) | Provides a current reference model of nine product-quality characteristics and their subcharacteristics for specification, measurement, evaluation, and acceptance criteria. It prevents one undifferentiated word *quality* from doing all the work. | Its reference taxonomy does not identify one local claim episteme, its exact bearer, use-bounded scope, window, mechanism prerequisite, or evidence reliance. A domain may also need qualities outside its ICT-product boundary. | Adopt characteristic decomposition and explicit measures; do not import the taxonomy as a universal bundle schema or bearer identity. |
 | [Google SRE Workbook: Implementing SLOs](https://sre.google/workbook/implementing-slos/) and [Alerting on SLOs](https://sre.google/workbook/alerting-on-slos/) | Couples an indicator and objective to an explicit time window, error budget, stakeholder decision, and actionable response; multiwindow and multi-burn-rate alerts expose the precision/recall and management trade-off. | It is a mature service-reliability line, not a general ontology of resilience, security, maintainability, or assurance. It assumes measurement and operational-policy work whose cost is justified only for the receiving use. | Adapt the explicit measure/window/action boundary and the rule that engineering effort should match the decision; do not make an SLO or error budget mandatory for every quality family. |
-| [NIST SP 800-160 Vol. 2 Rev. 1, *Developing Cyber-Resilient Systems*](https://doi.org/10.6028/NIST.SP.800-160v2r1) | Treats cyber resilience through distinct goals, objectives, techniques, approaches, and design principles for anticipating, withstanding, recovering from, and adapting to adverse conditions. It keeps resilience from becoming one score. | The line is security-specific and intentionally broad; applying its life-cycle and risk constructs can be expensive. It does not provide one lightweight local claim identity or universal aggregation law. | Adopt the separation of scenario, measures, mechanisms, and outcomes when they are load-bearing; reject a universal resilience scalar and do not copy the full handbook into a Q-Bundle. |
+| [NIST SP 800-160 Vol. 2 Rev. 1, *Developing Cyber-Resilient Systems*](https://doi.org/10.6028/NIST.SP.800-160v2r1) | Treats cyber resilience through distinct goals, objectives, techniques, approaches, and design principles for anticipating, withstanding, recovering from, and adapting to adverse conditions. It keeps resilience from becoming one score. | The line is security-specific and intentionally broad; applying its life-cycle and risk constructs can be expensive. It does not provide one lightweight local claim identity or universal aggregation law. | Adopt the separation of scenario, measures, mechanisms, and outcomes when they are load-bearing; reject a universal resilience scalar. |
 | [OMG SACM 2.3](https://www.omg.org/spec/SACM/2.3) | Separates structured claims, argument links, artifact references, counter-evidence, and interchange packages, making an assurance case inspectable across tools. | A complete assurance case and its interchange structure can be much heavier than an ordinary quality claim. SACM does not decide which quality contributors make the claim true or whether one bundle guard is admissible. | Keep quality claim content distinct from evidence and assurance. Open `A.10` or `B.3` only on their own trigger instead of embedding an assurance case in C.25. |
 
-**FPF-local synthesis.** C.25 combines the contributions needed to express the local quality claim: one exact bearer; a single-Characteristic exit; otherwise a typed separation of load-bearing measures, scopes, windows, mechanisms, statuses, and evidence references; and a guard over only the conditions the claim actually states. The tuple and this conditional guard are FPF synthesis, not a claim that contemporary practice already shares one universal Q-Bundle.
+**FPF-local synthesis.** C.25 combines the contributions needed to express the local quality claim: one exact bearer; a single-Characteristic exit; otherwise a typed separation of load-bearing measures, scopes, windows, mechanisms, statuses, and evidence references; and a guard over only the conditions the claim states. The tuple and this conditional guard are FPF synthesis, not a claim that contemporary practice already shares one universal Q-Bundle.
 
-**Defeating and reopen conditions.** Prefer a direct domain pattern when it already supplies a clearer composite-quality identity, aggregation law, and practitioner route. Reopen C.25 when a useful quality claim cannot be stated through the available typed contributors without inventing filler, when a non-conjunctive trade-off or dependency cannot be named under its direct pattern, when the record costs more than the receiving decision warrants, or when a proxy repeatedly becomes the decision object despite the source claims remaining load-bearing.
+**Defeating and reopen conditions.** Prefer a direct domain pattern when it already supplies a clearer composite-quality identity, aggregation law, and practitioner route. Reopen C.25 when:
+
+- a useful quality claim cannot be stated through the available typed contributors without inventing filler;
+- a non-conjunctive trade-off or dependency cannot be named under its direct pattern;
+- the record costs more than the receiving decision warrants; or
+- a proxy repeatedly becomes the decision object despite the source claims remaining load-bearing.
 
 ### C.25:12 - Relations
 
@@ -160,8 +184,18 @@ The comparison below selects lines by the quality-family problem they can solve,
 - Non-admissible use: temporal adequacy alone does not establish quality adequacy; speed, recovery, or rhythm becomes quality content only when it contributes to a declared quality-family claim. Include scope, mechanism/status slots, evidence, and failure mode only when the claim or receiving action depends on them.
 - Coordinate with C.27 only when a temporal claim is being used to change action; do not make every quality bundle carry dynamic slots.
 
+**Other relations.**
+
 - **Builds on:** `A.2.6` for scope algebra, `A.6.1` for operation-declaration references when current, and `C.16 / A.18` for CHR legality.
-- **Coordinates with:** `C.2.2a`, `A.16.0`, `A.10` for ordinary reliance on a bounded cross-context use, `B.3` only when an actual named assurance claim is current, `A.15` for gate use, `C.16.P` for unresolved characteristic, scale, score, metric, or proxy wording inside a quality-family statement, `C.16.Q` for overloaded quality or evaluative-characterization wording, `C.33`, `C.34`, and `C.35` when captured structure, lost structure, preservation, or generated-result adequacy becomes part of a composite architecture quality family, `C.17`, `C.18`, and `C.19` for adjacent quality-family measures, and `F.9` when bundle comparison needs semantic correspondence between local senses with different interpretation bases, or `F.9.1` when Bridge stance annotation is required.
+- **Coordinates with:**
+  - `C.2.2a`, `A.16.0`, `A.10` for ordinary reliance on a bounded cross-context use;
+  - `B.3` only when a named assurance claim is current;
+  - `A.15` for gate use;
+  - `C.16.P` for unresolved characteristic, scale, score, metric, or proxy wording inside a quality-family statement;
+  - `C.16.Q` for overloaded quality or evaluative-characterization wording;
+  - `C.33`, `C.34`, and `C.35` when captured structure, lost structure, preservation, or generated-result adequacy becomes part of a composite architecture quality family;
+  - `C.17`, `C.18`, and `C.19` for adjacent quality-family measures;
+  - `F.9` when bundle comparison needs semantic correspondence between local senses with different interpretation bases, or `F.9.1` when Bridge stance annotation is required.
 - **Constrains:** engineering quality authoring whenever a quality term would otherwise drift between single-CHR and composite-bundle readings.
 
 #### C.25:12.1 - Endpoint function in evaluative classification
@@ -176,7 +210,7 @@ The most common authoring failure is not in the bundle syntax itself; it is in c
 
 A quality claim should terminate in one admissible CHR characteristic only when all of the following hold together:
 
-- one measurable aspect is actually doing the evaluative work,
+- one measurable aspect is doing the evaluative work,
 - one declared scale is enough to compare relevant cases,
 - the bearer and scope are already clear without introducing extra quality slots,
 - mechanism or status presence is not itself part of the core quality head,
@@ -192,7 +226,7 @@ A quality claim belongs in `C.25` when one family label is standing over several
 - scenario or claim scope is load-bearing,
 - mechanism presence or certification state constrains admissibility,
 - qualification windows alter the reading materially,
-- or one scalar head would hide which part of the family is actually failing.
+- or one scalar head would hide which part of the family is failing.
 
 The bundle is the explicit authoring form for claims whose truth conditions are already composite.
 
@@ -200,14 +234,14 @@ The bundle is the explicit authoring form for claims whose truth conditions are 
 
 Some quality families contain both a bundle-shaped form and a narrow single-characteristic form. For example, a service team may use:
 
-- one CHR characteristic for a very narrow uptime commitment, and
+- one CHR characteristic for a narrow uptime commitment, and
 - one Q-Bundle for the broader service-availability family that includes scope, windows, failover mechanisms, and evidence.
 
 This is legitimate as long as the text states clearly which head is currently in play. The single-characteristic form does not replace the broader family; it selects one evaluative slice of it.
 
 ### C.25:14 - Slot Interaction Law
 
-The practical payoff of `C.25` is not just that it names the slots. It also stabilizes how those slots interact.
+`C.25` names the slots and defines how they interact.
 
 #### C.25:14.1 - Scope and measure remain orthogonal
 
@@ -217,9 +251,9 @@ The practical payoff of `C.25` is not just that it names the slots. It also stab
 
 Mechanisms and statuses may be load-bearing for admissibility, but they do not become measurements merely because they matter. A redundancy mechanism may be required for claiming a resilience bundle, and a certification status may be required for external publication, yet neither slot is itself the `Measures[CHR]` head.
 
-This matters because many quality arguments fail by turning mechanism presence into an implicit hidden score.
+This matters because many quality arguments fail by turning mechanism presence into an implicit score.
 
-#### C.25:14.3 - Qualification windows are not decorative
+#### C.25:14.3 - Declare windows that affect the claim
 
 A quality claim that depends on rolling windows, observation periods, maintenance intervals, or disruption horizons must publish that temporal qualifier explicitly. If the truth of the quality claim changes when the window changes, then the window is part of the declared bundle record rather than optional commentary.
 
@@ -266,7 +300,14 @@ Security claims routinely combine:
 
 #### C.25:15.4 - Maintainability and evolvability
 
-For maintainability or evolvability, recover the particular claim and the contributors on which it depends. These may include the system or change-class scope; measures such as change lead time, defect reintroduction rate, restoration interval or review load; enabling mechanisms such as modularity rules or a test harness; and the observation window or other support actually used. Keep measures distinct from mechanism and scope claims. A narrow claim carried by one Characteristic can stop there; a broader claim retains every load-bearing contributor, not every example in this list.
+For maintainability or evolvability, recover the particular claim and the contributors on which it depends. These may include:
+
+- the system or change-class scope;
+- measures such as change lead time, defect reintroduction rate, restoration interval or review load;
+- enabling mechanisms such as modularity rules or a test harness; and
+- the observation window or other support used.
+
+Keep measures distinct from mechanism and scope claims. A narrow claim carried by one Characteristic can stop there; a broader claim retains every load-bearing contributor, not every example in this list.
 
 ### C.25:16 - Authoring and Review Guidance
 
@@ -288,15 +329,15 @@ The schema remains available for a demanding case; it is not the authoring order
 A checking reader should ask:
 
 - whether the chosen endpoint shape is admissible,
-- whether any scope slot has been smuggled into scalar language,
+- whether any scope slot is described as a scalar,
 - whether mechanism presence has been mistaken for a metric,
-- whether the window is truly optional or actually load-bearing,
-- and whether any summary proxy is trying to replace the underlying bundle.
+- whether the window is optional or load-bearing,
+- and whether any summary proxy is being used to replace the underlying bundle.
 
 
 #### C.25:16.3 - For gate designers and assurance leads
 
-Resist a guard such as *resilience must be high*. Cite the exact quality-claim episteme or addressed claim and name only the slots the decision actually uses—for example one scope, one measure threshold, a load-bearing window, or a required mechanism. Do not require an absent slot merely because the source claim uses Q-Bundle-shaped content.
+Resist a guard such as *resilience must be high*. Cite the exact quality-claim episteme or addressed claim and name only the slots the decision uses—for example one scope, one measure threshold, a load-bearing window, or a required mechanism. Do not require an absent slot merely because the source claim uses Q-Bundle-shaped content.
 
 ### C.25:17 - Repair and Boundary Notes
 
@@ -335,7 +376,7 @@ The lesson is the same as elsewhere in `C.25`: once the truth of the family clai
 - viewpoint-fit or grounded architecture adequacy claims, which may belong in viewpoint or evaluative-ascription patterns,
 - or selector/objective heads where *quality* means use-value under a search or portfolio frame.
 
-This boundary matters because the same word *quality* appears across those zones. `C.16.Q` repairs overloaded quality wording, `C.16.P` repairs characteristic, scale, score, metric, or proxy wording when that is the hidden object, and the resting endpoint depends on what is actually being evaluated.
+This boundary matters because the same word *quality* appears across those zones. `C.16.Q` repairs overloaded quality wording, `C.16.P` repairs characteristic, scale, score, metric, or proxy wording when that is the hidden object, and the resting endpoint depends on what is being evaluated.
 
 ### C.25:18 - Bundle Decomposition and Comparison Law
 
@@ -346,7 +387,11 @@ A family label may remain stable while its internal slots differ materially acro
 A publication may expose one narrow Characteristic claim from a broader Q-Bundle-shaped claim episteme, but it must identify that addressed claim as only one contributor to the broader family. It must not cite the slice as though it exhausted or reidentified the source episteme.
 
 #### C.25:18.3 - Cross-context family comparison
-Cross-context comparison of quality families starts with explicit bundle alignment: compare scope with scope, measures with corresponding measures, mechanisms or statuses with their own kinds, and windows or evidence only when the receiving comparison uses them. For each semantic correspondence the comparison needs, resolve the two exact `F.17` senses and test the direct `F.9` predicate only when their `<ReferenceScheme, LocalSenseClaim>` projections differ. Cite a Bridge only when it obtains, then state the proposed use separately with its direction, correspondence rule, tolerated loss, and polarity. Keep observed loss in evidence, use `A.10` for ordinary reliance, and open `B.3` only on its own assurance trigger. None of this changes the Q-Bundle or supplies an automatic penalty.
+Cross-context comparison of quality families starts with explicit bundle alignment: compare scope with scope, measures with corresponding measures, mechanisms or statuses with their own kinds, and windows or evidence only when the receiving comparison uses them.
+
+For each semantic correspondence the comparison needs, resolve the two exact `F.17` senses and test the direct `F.9` predicate only when their `<ReferenceScheme, LocalSenseClaim>` projections differ. Cite a Bridge only when it obtains, then state the proposed use separately with its direction, correspondence rule, tolerated loss, and polarity.
+
+Keep observed loss in evidence, use `A.10` for ordinary reliance, and open `B.3` only on its own assurance trigger. None of this changes the Q-Bundle or supplies an automatic penalty.
 
 ### C.25:19 - Gate, Proxy, and Reporting Discipline
 
@@ -365,7 +410,7 @@ A checking reader can test a Q-Bundle with five questions:
 
 1. **Is the endpoint shape admissible?** One characteristic where one characteristic is live, one bundle where several typed contributors are load-bearing.
 2. **Are scope and mechanism slots kept distinct from measures?**
-3. **Is any summary number trying to replace the bundle?**
+3. **Is any summary number being used to replace the bundle?**
 4. **Would a gate still be auditable if the family label were removed?**
 5. **If comparison needs cross-context semantic correspondence, is the `F.9` Bridge predicate tested separately from the family bundle?**
 
@@ -379,7 +424,7 @@ Practical reading:
 
 1. Decide whether one Characteristic answers the quality question; if it does, stop there.
 2. If several differently typed contributors are load-bearing, identify the bearer and include only those measures, scopes, windows, mechanisms, statuses, or evidence anchors.
-3. If one proxy or this proportional bundle answers the receiving question, stay in `C.25`.
+3. If one proxy or this bundle answers the receiving question, stay in `C.25`.
 4. Open `C.26.3` when several conditions must hold together under a disturbance and the question is whether the viable region is retained, violated or unresolved, or how a proposed change could restore it.
 5. Open `C.27` only when a temporal claim is being used to change action—for example, when rate-change, effort, window, resistance, recovery, or cadence changes that action.
 

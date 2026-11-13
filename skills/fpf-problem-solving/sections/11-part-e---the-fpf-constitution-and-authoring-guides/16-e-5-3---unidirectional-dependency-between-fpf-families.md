@@ -13,20 +13,22 @@ A Core pattern can become dependent on a tutorial or helper feature introduced f
 
 | Force | Tension |
 |-------|---------|
-| **Agility vs Stability** | Tooling must iterate quickly ↔ Core must remain slow and deliberate. |
-| **Reuse vs Isolation** | Authors want to reuse helper concepts ↔ Core cannot depend on volatile code. |
-| **Simplicity** | Rule must be testable and unambiguous ↔ must allow legitimate upward imports. |
+| **Agility vs Stability** | Tooling must iterate quickly, while changes to Core must remain slow and deliberate. |
+| **Reuse vs Isolation** | Authors want to reuse helper concepts, but Core cannot depend on volatile code. |
+| **Simplicity** | The rule must be testable and unambiguous and must allow legitimate upward imports. |
 
 ### E.5.3:4 - Solution — One‑Way, Acyclic Imports
-Define a strict **partial order** over FPF ecosystem families **and guard meaning flow** (see **E.10 V-1**): imports between families point only **upward** in stability, and **no Core semantics** may derive from Tooling/Pedagogy. No linters or machine checking in Conceptual Core.
+Define a strict **partial order** over FPF ecosystem families. Imports between families point only **upward** in stability. Also protect the direction of meaning flow under **E.10 V-1**: **no Core semantics** may derive from Tooling or Pedagogy. The Conceptual Core excludes linters and machine checking.
 
-**`imports` expresses dependency; specialisation is separate (normative).** Whenever an artefact exposes an explicit `imports : [...]` list (e.g., `SignatureManifest.imports` in A.6.0), treat the dependency claims carried by `imports` as **dependency edges** governed by this section: the induced `imports` graph MUST be **acyclic** (a DAG) and MUST respect the declared direction. `imports` MUST NOT be used to encode *specialisation* (e.g., `⊑` / `⊑⁺` between mechanisms); specialisation relations and any specialisation-chain claims are declared separately under their defining rules. For mechanism declarations, apply A.6.1:4.8 to the comparison claim. Use C.29 when a separate mathematical-representation choice, transfer or reliance question remains.
+**`imports` expresses dependency. Specialisation is a separate relation (normative).** When an artefact exposes an `imports : [...]` list (e.g., `SignatureManifest.imports` in A.6.0), treat each dependency claim in the list as an edge of its `imports` graph. The graph MUST be **acyclic** (a DAG) and MUST respect the declared direction.
+
+`imports` MUST NOT be used to encode *specialisation* (e.g., `⊑` / `⊑⁺` between mechanisms). Specialisation relations and any specialisation-chain claims are declared separately under their defining rules. For mechanism declarations, apply A.6.1:4.8 to the comparison claim. Use C.29 when a separate mathematical-representation choice, transfer or reliance question remains.
 
 Pedagogical Companion  ⟶  Tooling Reference  ⟶  Conceptual Core
 
 1. **Allowed edges**
    Dependencies between families **MAY** point **only upward** (toward greater semantic
-   stability). No cycle is ever permitted.
+   stability). Cycles are forbidden.
 
 2. **No downward import**
    Conceptual Core patterns **SHALL NOT** import Tooling Reference or Pedagogical Companion family members.
@@ -34,15 +36,15 @@ Pedagogical Companion  ⟶  Tooling Reference  ⟶  Conceptual Core
 
 3. **Future layers**
    Any new family is inserted below an existing one or becomes part of
-   the Tooling or Pedagogy strata; the ordering extends accordingly.
+   the Tooling or Pedagogy strata. The ordering extends accordingly.
 
 ### E.5.3:5 - Archetypal Grounding (System / Episteme)
 
 | Layer | `U.System` illustration | `U.Episteme` illustration |
 |-------|------------------------|---------------------------|
 | Core | Definition of `U.System` and boundary invariant. | Definition of F‑G‑R assurance components. |
-| Tooling | “Reference system‑profile” that checks boundary flow; *imports* Core invariants. | “Episteme‑scoring routine” that calculates R‑score; *imports* Core characteristics. |
-| Pedagogy | Tutorial using the system‑profile to model a pump; *imports* profile and Core term. | Case study explaining R‑score evolution; *imports* scoring routine and Core term. |
+| Tooling | The “Reference system‑profile” checks boundary flow and *imports* Core invariants. | The “Episteme‑scoring routine” calculates R‑score and *imports* Core characteristics. |
+| Pedagogy | A tutorial uses the system‑profile to model a pump and *imports* the profile and Core term. | A case study explains R‑score evolution and *imports* the scoring routine and Core term. |
 | **Forbidden** | Core pattern importing measurement script. | Core pattern importing R‑score web dashboard. |
 
 ### E.5.3:6 - Conformance Checklist
@@ -58,7 +60,7 @@ Pedagogical Companion  ⟶  Tooling Reference  ⟶  Conceptual Core
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
 | Core stays free of tool churn and tutorial bias. | Authors must create abstraction layers in Tooling instead of inserting hooks into Core. |
-| Tooling and Pedagogy changes need not require a Core release. | Slight duplication when multiple tools target same concept; mitigated by shared Core definitions. |
+| Tooling and Pedagogy can change without a Core release. | Slight duplication occurs when several tools target the same concept. Shared Core definitions mitigate it. |
 
 ### E.5.3:8 - Rationale
 One-way dependencies keep changes in Tooling or Pedagogy from becoming prerequisites for interpreting Core claims. The rule implements **P-4 Open-Ended Kernel** and **P-5 FPF Layering** while allowing those families to evolve under the Core semantics they use.

@@ -9,9 +9,11 @@
 
 Begin with one receiving decision and the exact source edition or snapshot. For several sources, keep each source's role and recovery scope visible. Recover only contributions and dependency slices that can change the decision; completeness is relative to this boundary.
 
-The first useful result is a source-traceable Method-recovery dossier. Identified Methods and individually scoped candidate accounts can proceed to A.3.1.QM with their support and evidence limits. A proposed whole proceeds to B.1.5.CM when its identity and relations are the question. Tools, descriptions, capability, authority, and other useful contributions remain available under their actual kinds.
+The first useful result is a source-traceable Method-recovery dossier. Identified Methods and individually scoped candidate accounts can proceed to A.3.1.QM with their support and evidence limits. A proposed whole proceeds to B.1.5.CM when its identity and relations are the question. Tools, descriptions, capability, authority, and other useful contributions remain available under their kinds.
 
-**Ordinary non-use.** Do not decompose an already precise Method to populate a library or inventory material whose presence cannot change the receiving decision. If records, interviews, traces, or observations are offered as evidence from which a reusable way must be reconstructed, use A.3.1.MR; enter specialist RMP.10 only when its additional evidence programme is needed. A document can contain both prescribed guidance and testimony about performance: route the selected contribution by its use, not by its file extension.
+**Ordinary non-use.** Do not decompose an already precise Method to populate a library or inventory material whose presence cannot change the receiving decision. If records, interviews, traces, or observations are offered as evidence from which a reusable way must be reconstructed, use A.3.1.MR; enter specialist RMP.10 only when its additional evidence programme is needed.
+
+A document can contain both prescribed guidance and testimony about performance: route the selected contribution by its use, not by its file extension.
 
 #### A.3.1.DR:1.1 - Working Distinctions
 
@@ -29,7 +31,7 @@ The first useful result is a source-traceable Method-recovery dossier. Identifie
 
 Heavyweight packages connect concerns through publication, pedagogy, institutional history, tools, or viewpoints. Their visible organization may differ from Method, Work, subject, description, capability/provider/support, allocation, or cultural structures.
 
-Method Content Theory and design-Method element research contribute questions about goal, procedure, rationale, framing, mindset, representation, intended use, and tools. Keep the answers with the Method, candidate account, description, capability, support relation, cultural claim, or other subject they actually concern. Several sources can ask similar questions without giving the same answer.
+Method Content Theory and design-Method element research contribute questions about goal, procedure, rationale, framing, mindset, representation, intended use, and tools. Keep the answers with the Method, candidate account, description, capability, support relation, cultural claim, or other subject they concern. Several sources can ask similar questions without giving the same answer.
 
 ### A.3.1.DR:2 - Problem
 
@@ -51,7 +53,7 @@ A later qualification then appears precise but cannot be replayed from the sourc
 
 F.0.1 supplies source-local meaning recovery; A.3.1.MR instead reconstructs a candidate reusable way from Work evidence. The documentary operation below retains what an author proposes, including the source's complete constructive scope where that is the requested result. It does not convert a documentary assertion into an observation of practice.
 
-Build a source-traceable dossier around the receiving decision. Recover each documentary contribution in its own source meaning, preserve unlike kinds, and prepare only the downstream subjects whose question is current.
+Build a source-traceable dossier around the receiving decision. Recover each documentary contribution in its own source meaning, preserve unlike kinds, and prepare only the downstream subjects needed for the receiving decision.
 
 #### A.3.1.DR:4.1 - Pattern-Use Unfolding
 
@@ -61,7 +63,9 @@ Build a source-traceable dossier around the receiving decision. Recover each doc
 4. **Preserve the subject and evidence role.** Distinguish identified Methods, individually scoped candidate accounts, MethodDescriptions or other epistemes, Systems and support/access, capabilities and assignments, inputs/results/premises, and direct relations. A source's report of evidence is recovered as that report, not as independently established Work or effectiveness. Send a new question about a reusable way in occurrence evidence to A.3.1.MR; specialist RMP.10 follows only under its entry condition.
 5. **Record intended use and possible loss.** Say what the receiving use proposes to keep, change, reject, or leave unresolved and what source meaning or context would be lost. These are source-local recovery dispositions. Do not yet assert cross-source sameness, perform semantic merging, allocate a remainder to a supplier, or design the resulting pattern language.
 6. **Recover direct relations and small dependency slices.** Retain supported production/use, schema correspondence, provider access, allocation, responsibility, authority, or other relevant relations. A line, container, chapter, lane, or local section supplies no relation. Attach only the source claims, conditions, and returns needed for the next judgement.
-7. **Prepare the actual downstream subjects.** A.3.1.QM receives only identified Methods and individually scoped candidate Method accounts, each with the smallest slice needed to judge contribution, inputs/results, applicability, burden, capability, support, authority/access, and evidence. B.1.5.CM receives a proposed-whole account when whole identity and relations are the question; retain its proposed semantics, participant statuses, relation boundary, and source slices. Other kinds remain in the dossier or accompany those subjects without becoming Methods.
+7. **Prepare the downstream subjects.** A.3.1.QM receives only identified Methods and individually scoped candidate Method accounts, each with the smallest slice needed to judge contribution, inputs/results, applicability, burden, capability, support, authority/access, and evidence.
+
+   B.1.5.CM receives a proposed-whole account when whole identity and relations are the question; retain its proposed semantics, participant statuses, relation boundary, and source slices. Other kinds remain in the dossier or accompany those subjects without becoming Methods.
 8. **Return the dossier and any blocking gaps.** Use open navigation sections when they help retrieval. Stop when the subjects and source basis needed for the receiving decision are recoverable. If edition, role, receiving use, a needed current comparator, source return, kind, relation, or evidence is missing, name the affected contribution and the missing basis. Continue unaffected recovery when it can still serve the receiving decision; do not claim completeness beyond the recovered boundary.
 
 ##### A.3.1.DR:4.1.1 - Select the Recovery Profile Per Source
@@ -75,7 +79,7 @@ For an ordinary package, the default is **decision-bounded recovery**: inspect o
 | Gap-only | An exact earlier source/supplier comparison and its affected gap or delta are recoverable. | Recover that gap and its dependencies. Widen or stop if the baseline, scope, or source meaning has changed. A missing keyword is not a gap definition. |
 | Mixed | The bounded corpus contains sources with different roles or recovery needs. | Apply the appropriate profile separately to each documentary source. Route occurrence evidence separately and retain the limits of any returned candidate account, specialist dossier, or lower result. |
 
-“Full” is not an instruction to extract all possible knowledge from a source. The receiving decision sets the completeness boundary. A change from source-local recovery to cross-source reconciliation is a new question, not the final unspoken step of A.3.1.DR.
+“Full” is not an instruction to extract all possible knowledge from a source. The receiving decision sets the completeness boundary. A change from source-local recovery to cross-source reconciliation is a new question, not the final step of A.3.1.DR.
 
 #### A.3.1.DR:4.2 - Record the Result
 
@@ -85,7 +89,7 @@ For an ordinary package, the default is **decision-bounded recovery**: inspect o
 | source/use statement | Per source: locator, role, recovery profile, receiving use, and currentness or reopening condition; combine this with the boundary for one ordinary package. |
 | entries | Local reference, source locator and meaning, difficulty/opportunity, any asserted action/change, any first result/blocker, existing kind or unresolved status, bounded use, and loss. |
 | direct relations | Related subjects, relation, source or evidence basis, truth status, and unresolved condition. |
-| occurrence-evidence return, when current | The A.3.1.MR or RMP.10 result with its own candidate statuses, real rivals, gaps and evidence limits. Include a distinguishing question only when it changes the receiving use, or a held-out result only when actually obtained. An ordinary account needs no prospective study to fill this row; raw observations are not documentary Method entries. |
+| occurrence-evidence return, when needed | The A.3.1.MR or RMP.10 result with its own candidate statuses, rivals, gaps and evidence limits. Include a distinguishing question only when it changes the receiving use, or a held-out result only when obtained. An ordinary account needs no prospective study to fill this row; raw observations are not documentary Method entries. |
 | navigation | Open local sections used only for finding contributions. |
 | downstream subjects | Identified Methods and individually scoped accounts with dependency slices for A.3.1.QM; a proposed-whole account with its identity/relation boundary for B.1.5.CM when needed. |
 | stop and return | Supported result for the receiving decision; any missing source, role, use, comparator, kind, relation, or evidence; any further question the decision requires. |
@@ -118,13 +122,13 @@ Two example dependency slices show why the full package is neither copied nor di
 - `M-HW-Verify` travels with its change input, verification-result meaning, rig condition, hardware capability, procedure provenance, and evidence window.
 - `C-Evidence-Reconcile-Supplier` travels with the supplier procedure, signed-evidence condition, supplier-configuration responsibility, closure authority, four observed source cases, and the unresolved `A.3.1` identification question.
 
-The supplier procedure's four reported cases remain a documentary source claim and evidence return in this recovery. Inspecting the underlying occurrence records to reconstruct a reusable way is a separate A.3.1.MR question; it does not silently occur inside A.3.1.DR.
+The supplier procedure's four reported cases remain a documentary source claim and evidence return in this recovery. Inspecting the underlying occurrence records to reconstruct a reusable way is a separate A.3.1.MR question.
 
 The four identified Methods and the three individually scoped candidate accounts are potential A.3.1.QM subjects for this use. PLM, rig, competence, authority, schema, evidence, and descriptions remain in their slices under their own kinds. `C-EC-Release-v2` remains a proposed-whole candidate account and may later be resolved by B.1.5.CM; its presence in the package creates neither a fifth Method nor `methodPartOf` facts.
 
 #### A.3.1.DR:5.1 - Two Documentary Roles and an Interview
 
-This constructed case concerns a change to the release-assurance arrangement. Handbook H, edition 3, section 4, is an accepted maintained synthesis for reconstructing the supplier-evidence practice. Comparison C, edition 2, section 2, is the current comparator for the same receiving decision. Interview I, recorded on day D1, is offered as evidence about what happened during one release. These are local scenario references, not external studies.
+This constructed case concerns a change to the release-assurance arrangement. Handbook H, edition 3, section 4, is an accepted maintained synthesis for reconstructing the supplier-evidence practice. Comparison C, edition 2, section 2, is the current comparator for the same receiving decision. Interview I, recorded on day D1, is offered as evidence about what happened during one release. These are local scenario references.
 
 | Source/use statement | Source-local contribution retained | Result and return |
 | --- | --- | --- |
@@ -132,7 +136,7 @@ This constructed case concerns a change to the release-assurance arrangement. Ha
 | C/2 §2; current comparator; SoTA-first for this decision; return if a rival or the comparison basis changes. | A separately reviewed evidence bundle is proposed to reduce reliance on one supplier account. Its first result is a reviewed bundle or a named evidence gap. The claim's tested reach is limited to the comparison's cases. | Retain this alternative and its limits separately from H. Do not decide that two differently supported activities are one Method or that either replaces the other. |
 | I/D1; occurrence evidence, not a third documentary recovery profile. | The interview reports one release episode but does not yet distinguish a reusable way from a one-off response. | For the one-occurrence question use A.15.1. If several occurrences create a candidate-recovery question, use A.3.1.MR; keep a record-only lower result when that is all the evidence supports. RMP.10 is not an automatic next step. |
 
-The first result is the two-source documentary dossier plus the honest occurrence-evidence return, not a merged release Method. When the receiving decision needs a semantic comparison, examine whether the two documentary contributions overlap, conflict or complement one another; leave unresolved relations explicit.
+The first result is the two-source documentary dossier plus the occurrence-evidence return, not a merged release Method. When the receiving decision needs a semantic comparison, examine whether the two documentary contributions overlap, conflict or complement one another; leave unresolved relations explicit.
 
 If C's full argument becomes unavailable but a page-located excerpt remains, retain the excerpt and reopen only entries whose receiving use depends on the missing context. H's independent source-local result remains usable. Do not turn unavailable support into proof that C was false, or continue a gap-only recovery without its baseline.
 
@@ -140,7 +144,7 @@ If C's full argument becomes unavailable but a page-located excerpt remains, ret
 
 | Bias | Likely drift | Repair |
 | --- | --- | --- |
-| source-taxonomy bias | Goal, procedure, rationale, framing, mindset, representation, role, or tool becomes a universal Method component kind. | Use those terms as source questions and place each returned claim with its actual subject. |
+| source-taxonomy bias | Goal, procedure, rationale, framing, mindset, representation, role, or tool becomes a universal Method component kind. | Use those terms as source questions and place each returned claim with its subject. |
 | diagram-containment bias | A box or lane is read as composition or parthood. | Require the direct relation and its evidence independently. |
 | package-authority bias | Institutional or standards status becomes Method identity, fit, or effectiveness. | Separate source authority from the receiving claim and evidence. |
 | procedure-only bias | A reusable action is extracted without rationale, applicability, input/result, support, or authority. | Carry the smallest dependency slice that can change qualification. |
@@ -179,7 +183,7 @@ The cost is explicit kind and relation recovery. Important support, authority, o
 
 A heavyweight package is a publication and practice carrier, not evidence that its visible organization is a Method structure. Preserving unlike kinds lets several useful representations coexist without forcing one-to-one correspondence among Method, Work, subject, description, capability/provider/support, allocation, and cultural structures.
 
-The dossier is deliberately open. Its value lies in tracing source contributions to the receiving decision and retaining their dependency slices, not in a fixed number of sections or a universal element taxonomy.
+The dossier is open. Its value lies in tracing source contributions to the receiving decision and retaining their dependency slices, not in a fixed number of sections or a universal element taxonomy.
 
 ### A.3.1.DR:11 - SoTA-Echoing
 

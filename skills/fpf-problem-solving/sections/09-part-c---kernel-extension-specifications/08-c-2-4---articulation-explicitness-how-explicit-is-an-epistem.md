@@ -6,17 +6,17 @@
 
 **Plain-name.** Articulation explicitness.
 
-**Use this pattern when.** Use C.2.4 when the next move depends on how explicitly a governed episteme's meaning is articulated for its semantic branch and receiving use.
+**Use this pattern when.** Use C.2.4 when the next move depends on how explicitly an episteme's meaning is articulated for its semantic branch and receiving use.
 
 **What goes wrong if missed.** A formal-looking sentence is treated as semantically ready, a real early cue is discarded as too vague, or a partly explicit note is forced through relation repair even when its receiving question concerns another kind of content, such as a plan or ordinary domain statement.
 
 **What this buys.** One branch-neutral ordinal characteristic: a stable cue can acquire recoverable governed structure and a complete form for its actual semantic branch, with meaning that remains stable in a receiving use, without confusing articulation with formality, closure, truth, trust, or endpoint authority.
 
 ### C.2.4:1 - Problem frame
-A governed `U.Episteme` may matter before its meaning is fully explicit. In the language-state chart over `U.CharacteristicSpace`, `AE` assesses how explicit that meaning is for its receiving use. The content may be a relation claim, a plan, a question or another domain statement; :17.1 gives the applicable branches.
+A `U.Episteme` may matter before its meaning is fully explicit. In the language-state chart over `U.CharacteristicSpace`, `AE` assesses how explicit that meaning is for its receiving use. The content may be a relation claim, a plan, a question or another domain statement; :17.1 gives the applicable branches.
 
 ### C.2.4:2 - Problem
-When articulation explicitness stays implicit, authors either overstate readiness for a receiving pattern or hide useful early structure. Reusing `F` for this judgement creates a category error: formality assesses the expression properties needed by a use, while articulation concerns whether the meaning needed by the actual receiving use is explicit. A relation-shaped ladder creates a second error by scoring other well-formed claim kinds as immature merely because they are not relations.
+When articulation explicitness stays implicit, authors either overstate readiness for a receiving pattern or hide useful early structure. Reusing `F` for this judgement creates a category error: formality assesses the expression properties needed by a use, while articulation concerns whether the meaning needed by the receiving use is explicit. A relation-shaped ladder creates a second error by scoring other well-formed claim kinds as immature merely because they are not relations.
 
 ### C.2.4:3 - Forces
 | Force | Tension |
@@ -64,7 +64,7 @@ Use `C.2.8` to compare how much selected structure a reader can correctly extrac
 | `AE0` | a cue is felt or observed but cannot yet be stated as a stable question or contrast | preserve the source or cue without claiming a route |
 | `AE1` | a stable cue, question, contrast, or disturbance is nameable | an early cue publication becomes useful |
 | `AE2` | candidate anchors, participants, actions, fields, or meanings are visible, but the branch or structure remains partial | route candidates and missing pieces can be stated |
-| `AE3` | the governed claim structure is recoverable enough to choose its direct semantic branch | the relevant repair or authoring pattern may receive it if the local threshold is met |
+| `AE3` | the claim structure is recoverable enough to choose its direct semantic branch | the relevant repair or authoring pattern may receive it if the local threshold is met |
 | `AE4` | a complete branch-appropriate form is publishable with the participants, conditions, and bounds needed by the current use | the direct subject pattern can check or use the publication |
 | `AE5` | the meaning remains stable in one named receiving use, and a later change can be reviewed without reconstructing it from the source | the receiving use is straightforward; the level alone does not settle truth, closure, trust, or use authorization |
 
@@ -95,13 +95,13 @@ The pattern legitimizes early cues. The counter-bias is explicit: low `AE` never
 - `CC-C.2.4-2` A route change **SHOULD** require the local articulation threshold declared for that receiving branch; `A.6.P` applies only to a current relational branch.
 - `CC-C.2.4-3` `AE` judgements that drive routing or use **SHALL** cite the anchors, participants, actions, conditions, bounds, or other branch-appropriate structure that justifies the chosen level.
 - `CC-C.2.4-4` Raising `AE` **SHALL NOT** be described as if it automatically settled closure, truth, trust, authority, or admissibility.
-- `CC-C.2.4-5` Relation-shaped notation **SHALL NOT** raise the level or select `A.6.P` when the actual claim belongs to another branch.
+- `CC-C.2.4-5` Relation-shaped notation **SHALL NOT** raise the level or select `A.6.P` when the claim belongs to another branch.
 
 ### C.2.4:8 - Common Anti-Patterns and How to Avoid Them
 - **Precise syntax, unclear meaning.** A template constrains the sentence form while needed meanings remain unresolved. State the expression properties and the articulation gap separately.
 - **Mystical cue immunity.** Low `AE` is presented as exempt from authoring discipline. Preserve it, but state what remains unresolved.
-- **Ready-by-tone.** A sentence sounds precise, so authors assume `AE3+`. Publish the actual recoverable structure.
-- **Relation-shaped shortcut.** Arrows, columns, or grammatical subjects and objects are treated as proof that the claim is relational. Recover the actual claim kind and route its branch before assigning the higher level.
+- **Ready-by-tone.** A sentence sounds precise, so authors assume `AE3+`. Publish the recoverable structure.
+- **Relation-shaped shortcut.** Arrows, columns, or grammatical subjects and objects are treated as proof that the claim is relational. Recover the claim kind and route its branch before assigning the higher level.
 
 ### C.2.4:9 - Consequences
 The benefit is admissible publication of early cues and branch-aware threshold setting. The trade-off is that authors must distinguish `not yet explicit` from `already formal` and must name the receiving branch rather than treating relation repair as the universal destination.
@@ -119,10 +119,12 @@ The benefit is admissible publication of early cues and branch-aware threshold s
 ### C.2.4:13 - Worked Examples and Edge Cases
 
 #### C.2.4:13.1 - Precise syntax, unclear meaning
-A template may enforce precise syntax while leaving the meaning needed by the receiving use unclear. For example, a plan template can name a field without identifying the actual actor or the completion condition. A local system-role kind, classification, or assignment is selected only after evidence supports that branch. Formal-looking language does not make its semantic route recoverable.
+A template may enforce precise syntax while leaving the meaning needed by the receiving use unclear. For example, a plan template can name a field without identifying the actor or the completion condition. A local system-role kind, classification, or assignment is selected only after evidence supports that branch. Formal-looking language does not make its semantic route recoverable.
 
 #### C.2.4:13.2 - Plain plan, high articulation
-The note `At 14:00, Maintenance Team 2 will isolate Pump P-17, replace Seal S-4, and restore service only after Leak Test LT-9 passes` uses ordinary language and little formal notation. It can still reach `AE4`: the planned actor, affected entity, ordered actions, time, and completion condition are explicit enough for the planning branch. It routes to `A.15`; the note describes planned actions, while `A.15.1` governs any admitted Work occurrence. The note needs no relation repair merely to count as explicit.
+The note `At 14:00, Maintenance Team 2 will isolate Pump P-17, replace Seal S-4, and restore service only after Leak Test LT-9 passes` uses ordinary language and little formal notation. It can still reach `AE4`: the planned actor, affected entity, ordered actions, time, and completion condition are explicit enough for the planning branch.
+
+It routes to `A.15`; the note describes planned actions, while `A.15.1` governs any admitted Work occurrence. The note needs no relation repair merely to count as explicit.
 
 For a planning check whose required content is exactly those items, inspect them directly. Add the `AE4` reading only when a comparison, chart or declared threshold needs that Scale. The plan's explicitness still leaves the planned action and any authorization for it to their own tests.
 
@@ -170,7 +172,7 @@ When routing or use depends on words such as "still vague", "more explicit now",
 #### C.2.4:16.1 - Minimal articulation package
 An `AE` claim that changes routing or use should be published with more than a level token. State:
 
-- the exact episteme publication being judged;
+- the episteme publication being judged;
 - the stable cue, question, or contrast;
 - the candidate anchors, participants, actions, fields, or meanings relevant to the current branch;
 - the branch-appropriate structure already recoverable and any decision-relevant gap;
@@ -190,12 +192,12 @@ When `AE` controls a route change, publish the intended receiving pattern, its s
 #### C.2.4:17.1 - Branch-aware high-articulation exits
 At `AE3+`, use the local threshold of the direct branch rather than one universal destination:
 
-- for an actual relation claim, restore precision through `A.6.P` when needed, then use its direct relation pattern;
+- for a relation claim, restore precision through `A.6.P` when needed, then use the pattern that governs that relation;
 - for a plan or intended activity, use `A.15`;
 - for a Method, use `A.3.1`; use `A.3.2` to test a `C.2.1` episteme's membership as a MethodDescription;
 - for a dated Work-occurrence claim, recover the performer under `A.13` and independently test Work admission under `A.15.1`; use `F.6` only when precise assignment-bound attribution is needed;
-- for a representation claim, use the represented subject's rule and the representation's correspondence; use `C.29` when choosing or transferring a mathematical representation or relying on it beyond its supported correspondence leaves a separate question. Use `C.2.P.DR` when declarative form is being overread, adding `A.6.3.RT` only when a representation transition is current;
-- for an abductive prompt or explicit open question, use `B.5.2.0` or the direct question pattern;
+- for a representation claim, use the represented subject's rule and the representation's correspondence; use `C.29` when choosing or transferring a mathematical representation or relying on it beyond its supported correspondence leaves a separate question. Use `C.2.P.DR` when declarative form is being overread, adding `A.6.3.RT` only when a representation transition is at issue;
+- for an abductive prompt or explicit open question, use `B.5.2.0` or the pattern that governs the question;
 - for a Characteristic or Scale claim, use `A.17` and `A.18`, with `C.16.P` when its scalar wording hides the construction;
 - for an ordinary domain claim, use the domain pattern that governs its subject; use `C.2.1` when episteme identity is needed.
 
@@ -205,7 +207,7 @@ If the branch or threshold is unresolved, preserve the episteme through `B.4.1` 
 A note may reach `AE4+` while remaining low or mid in `CD`. In such cases state that articulation is sufficient for precise handling while closure still leaves rival routes or frames live.
 
 #### C.2.4:17.3 - Articulation claims for separate fragments
-Scope each fragment's articulation claim to its receiving use; do not assign one averaged level that hides the actual route structure. The fragments may remain in the same note or publication when their scopes are clear.
+Scope each fragment's articulation claim to its receiving use; do not assign one averaged level that hides the route structure. The fragments may remain in the same note or publication when their scopes are clear.
 
 ### C.2.4:18 - Review Matrix and Endpoint Boundary Tests
 

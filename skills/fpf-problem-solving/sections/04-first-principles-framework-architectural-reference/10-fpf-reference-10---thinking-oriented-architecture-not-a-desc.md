@@ -1,6 +1,6 @@
 ## FPF.Reference:10 - Thinking-Oriented Architecture, Not A Descriptive Upper Ontology
 
-FPF uses ontological distinctions to make reasoning usable across domains. Its practical question is what a person or agent must understand, distinguish, decide or do, and which meanings must remain stable for that use. The architecture connects distinctions with guidance for obtaining a result, inspecting its grounds and reconsidering it when conditions change.
+FPF uses ontological distinctions to make reasoning usable across domains. Its practical question is what the practitioner must understand, distinguish, decide or do, and which meanings must remain stable for that use. The architecture connects distinctions with guidance for obtaining a result, inspecting its grounds and reconsidering it when conditions change.
 
 Start from the receiving use and recover the subject and claim it needs. Identify what is being asserted, about which entities, between which participants and under which conditions. Writing can help obtain this meaning before a stable name or classification is available. F.19 restores the predicates and participants compressed by wording; E.10 directs an unresolved meaning to its subject pattern. For a Characteristic, A.18 requires a defined aspect and Scale; A.19 organizes already defined characteristics and Scales without supplying their missing subject meaning.
 

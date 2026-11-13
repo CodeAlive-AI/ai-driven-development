@@ -2,13 +2,13 @@
 
 > **Type:** Part E FPF evaluation and repair pattern
 > **Status:** Stable
-> **Normativity:** Normative unless a section is explicitly informative
+> **Normativity:** Normative unless a section is marked informative
 
 ### E.13:0 - Use This When
 
 Use this pattern when a project treats a visible measure, score, proxy, benchmark, dashboard, quality value, review result, release posture, or evidence volume as if it were the practical value or objective itself.
 
-Typical moments:
+Look for situations such as these:
 
 - a metric improves, but the team cannot say what intended value improved;
 - a quality score, all-`5` posture, assurance level, citation count, source count, or review pass becomes the target;
@@ -16,7 +16,7 @@ Typical moments:
 - a model, method, pattern, or system is formally better while users or operators are worse off, or safety, maintainability, learning, or decision quality worsens;
 - an evaluation loop adds apparatus to satisfy the evaluator instead of improving the object of concern.
 
-**First useful move.** Name the intended value or objective, name the proxy or visible measure, and state how that proxy is being used now: measure, target, incentive, gate, release argument, decision driver, reputation signal, repair target, or orientation cue.
+**First useful move.** Name the intended value or objective and the proxy or visible measure. State how the proxy is used now: measure, target, incentive, gate, release argument, decision driver, reputation signal, repair target, or orientation cue.
 
 **What goes wrong if missed.** The team optimizes the proxy and loses the value. It can produce a better score, cleaner review proof, larger source packet, or more complete record while practical utility gets worse.
 
@@ -32,9 +32,11 @@ Typical moments:
 
 ### E.13:1 - Problem Frame
 
-Practical work often needs visible measures. Teams use scores, dashboards, quality coordinates, tests, evidence counts, source freshness rows, release checks, and worked examples because invisible value is hard to steer directly.
+Practical work often needs visible measures. Teams use scores, dashboards, quality coordinates, tests, evidence counts, source freshness rows, release checks, and worked examples because practical value can be hard to observe and steer directly.
 
-The danger starts when the visible measure becomes the object being optimized. A proxy can be useful as a signal and harmful as a target. A pattern can become easier to defend while harder to use. A safety dashboard can look better while unmeasured hazards increase. A review result can look more complete while the decision it was meant to support becomes less decisive.
+The danger starts when the visible measure becomes the object being optimized. A proxy can be useful as a signal and harmful as a target.
+
+A pattern can become easier to defend while harder to use. A safety dashboard can look better while unmeasured hazards increase. A review result can look more complete while the decision it was meant to support becomes less decisive.
 
 `E.13` governs the proxy-to-value repair. It asks whether the visible measure still serves the intended value in the declared use, and what became worse when the measure improved.
 
@@ -45,8 +47,8 @@ Typical failures include:
 1. **Measures replace objectives.** Teams speak as if the score, metric, benchmark, assurance level, or all-`5` posture is the value.
 2. **Evaluation loops become reward functions.** A checking reader asks for improvement; the author adds fields, guards, source rows, proof sketches, and relation catalogues until the visible evaluation looks better.
 3. **Unmeasured value is damaged.** Usability, safety margin, maintainability, learning, domain fit, affordability, or operator action quality gets worse while the proxy improves.
-4. **Proxy use is not typed.** The same metric is treated as orientation cue, target, incentive, gate, and release proof without saying which use is live.
-5. **No value slice exists.** The text claims practical payoff, but no minimally viable slice shows the value being realized in a case.
+4. **The proxy's use is unspecified.** The same metric is treated as orientation cue, target, incentive, gate, and release proof without saying which use applies.
+5. **No value slice exists.** The text claims practical payoff, but gives no minimally viable case that shows the value being realized.
 
 ### E.13:3 - Forces
 
@@ -60,7 +62,9 @@ Typical failures include:
 
 ### E.13:4 - Solution
 
-Use `ProxyToValueAlignment` to recover the intended value, the proxy's current use, the value at risk, and the justified repair or stop. A short answer or local repair is enough when it settles the case. When later review, reuse, or reliance needs a note, use the fields below that change the conclusion.
+Use `ProxyToValueAlignment` to recover the intended value, the proxy's current use, the value at risk, and the justified repair or stop. A short answer or local repair is enough when it settles the case.
+
+When later review, reuse, or reliance needs a note, use the fields below that change the conclusion.
 
 ```text
 ProxyToValueAlignment:
@@ -80,15 +84,15 @@ ProxyToValueAlignment:
   ReopenCondition:
 ```
 
-Keep any note as small as the case allows. Its fields help explain how the proxy serves the intended value; fill only those needed for the current conclusion, repair, stop, or later reliance.
+Record only the fields needed for the current conclusion, repair, stop, or later reliance. Use them to explain the relationship between the proxy and the intended value.
 
 #### E.13:4.1 - Name the Value Before the Proxy
 
-Name the intended value, objective, or practical payoff in terms of the work it is supposed to improve. If only the proxy can be named, lower the claim: the project has a measure, not a demonstrated value relation.
+Name the intended value, objective, or practical payoff in terms of the work it is supposed to improve. If only the proxy can be named, report that the project has a measure. Its connection to the intended value has yet to be shown.
 
 #### E.13:4.2 - Type the Proxy Use
 
-A proxy can be harmless as an orientation cue and dangerous as a target. State the current proxy use explicitly.
+A proxy can be harmless as an orientation cue and dangerous as a target. State how the proxy is being used.
 
 | Proxy use | Admissible use | Danger |
 | --- | --- | --- |
@@ -103,21 +107,27 @@ A proxy can be harmless as an orientation cue and dangerous as a target. State t
 
 #### E.13:4.3 - Ask What Got Worse
 
-Whenever a proxy improves under optimization pressure, ask what became worse or more fragile. Check at least usability, affordability, safety or harm boundary, maintainability, domain fit, source preservation, decision quality, learning, and neighboring-pattern fit when they are live in the case.
+Whenever a proxy improves under optimization pressure, ask what became worse or more fragile.
 
-If nothing worsened, say which loci were checked. If no loci were checked, do not claim value alignment.
+Check at least usability, affordability, safety or harm boundary, maintainability, domain fit, source preservation, decision quality, learning, and neighboring-pattern fit when they are live in the case.
+
+If nothing worsened, identify what was checked. If nothing was checked, do not claim value alignment.
 
 #### E.13:4.4 - Require a Minimally Viable Value Slice
 
-Require a minimally viable value slice: one compact case, worked slice, observation, trial, user/operator moment, or decision replay where the intended value is visible enough for the declared use. State whether the slice is an illustration, desk replay, or observed use, and what conclusion it supports.
+Require a minimally viable value slice: one compact case, worked slice, observation, trial, user/operator moment, or decision replay where the intended value is visible enough for the declared use.
 
-The value slice may be small. It must show the intended value rather than merely the proxy. A worked illustration can explain how a proposed repair would serve that value; it does not by itself establish an observed gain. Keep any claim about actual improvement within the comparison and evidence that support it.
+State whether the slice is an illustration, desk replay, or observed use, and what conclusion it supports.
+
+The slice may be small. It must show the intended value for the declared use. A proxy reading alone is insufficient.
+
+A worked illustration can explain how a proposed repair would serve that value; it does not by itself establish an observed gain. Keep any claim about actual improvement within the comparison and evidence that support it.
 
 #### E.13:4.5 - Repair by Value Movement
 
-When the proxy has displaced the value, choose a repair, combining these moves when needed:
+When the proxy has displaced the value, choose one or more of these repairs:
 
-- where the governing rule permits it, change the proxy use from target/gate/incentive to orientation or bounded measure; if a binding requirement must change, propose the amendment under its authority and keep the current requirement in force until that amendment takes effect;
+- where the governing rule permits it, change the proxy use from target/gate/incentive to orientation or bounded measure. If a binding requirement must change, propose the amendment under its authority and keep the current requirement in force until that amendment takes effect;
 - add a protected quality or counter-metric that names the value at risk;
 - change the work or design so the value slice improves, not only the proxy;
 - split the claim: one measure report, one value claim, one assurance or gate claim if needed;
@@ -127,7 +137,7 @@ When the proxy has displaced the value, choose a repair, combining these moves w
 
 | Case | Proxy pressure | E.13 repair |
 | --- | --- | --- |
-| Pattern quality loop | All-`5` pattern-quality posture becomes the target. | Use `E.21` values as measurements; repair only substantive content movement and record what worsened when apparatus grew. |
+| Pattern quality loop | All-`5` pattern-quality posture becomes the target. | Use `E.21` values as measurements. Revise the pattern only where its substantive content can improve. Record what worsened when apparatus was added. |
 | DRR review | Source rows and selected-locus tables grow while the decision remains vague. | Use `E.9.DA`; the DRR improves only when selected answer, source payload, or first drafting action improves. |
 | Safety dashboard | A lower incident count is used as proof of safety. | Split measure, reporting behavior, unreported hazard, and safety assurance; use the safety/assurance pattern for the stronger claim. |
 | AI reward model | A model gets higher reward or judge score by exploiting the specification. | Treat the score as proxy; inspect unmeasured intended outcome and blocked value dimensions. |
@@ -135,7 +145,9 @@ When the proxy has displaced the value, choose a repair, combining these moves w
 
 ### E.13:6 - Bias-Annotation
 
-E.13 blocks proxy-for-value bias: the visible measure, score, evidence volume, review result, release posture, or dashboard state is treated as the practical value itself. It also blocks evaluator-satisfaction bias: adding apparatus to satisfy an evaluation signal while the governed object, user work, safety, maintainability, or decision quality does not improve.
+E.13 rules out two substitutions. In proxy-for-value bias, the visible measure, score, evidence volume, review result, release posture, or dashboard state is treated as the practical value itself.
+
+In evaluator-satisfaction bias, a team adds apparatus to satisfy an evaluation signal while the governed object, user work, safety, maintainability, or decision quality does not improve.
 
 ### E.13:7 - Conformance Checklist
 
@@ -154,8 +166,8 @@ E.13 blocks proxy-for-value bias: the visible measure, score, evidence volume, r
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
 | Score as value | A higher score is reported as practical improvement. | Name intended value, proxy use, and value slice. |
-| All-`5` targeting | A pattern or DRR is rewritten to make every coordinate defensible as `5`. | Use the evaluation as measurement; repair content movement and protected trade-offs. |
-| Source-count proof | More citations or source rows are treated as better decision quality. | Ask which decision payload changed. |
+| All-`5` targeting | A pattern or DRR is rewritten to make every coordinate defensible as `5`. | Use the evaluation as measurement; improve the content and address the trade-offs for protected qualities. |
+| Source-count proof | More citations or source rows are treated as better decision quality. | Ask what changed in the substance of the decision. |
 | Dashboard myopia | A visible dashboard metric improves while unmeasured harm rises. | Add protected qualities and split measure from value. |
 | Proxy as gate authority | A proxy is treated as authority for release or gate passage without satisfying the rule that governs that decision. | Apply the governing release rule for release, `A.21` for gate passage, and `B.3` for an assurance claim; keep proxy use bounded. |
 | Value slice missing | Practical payoff is asserted but never shown in a case. | Add a minimally viable value slice or lower the payoff claim. |
@@ -170,9 +182,9 @@ E.13 blocks proxy-for-value bias: the visible measure, score, evidence volume, r
 
 ### E.13:9 - Rationale
 
-FPF needs measurement, evaluation, assurance, and release checks, but those checks remain instruments. They are not the value by themselves. `E.13` keeps the visible instrument attached to the intended value and asks whether the value survives optimization pressure.
+FPF needs measurement, evaluation, assurance, and release checks as instruments for pursuing practical value. `E.13` keeps the visible instrument attached to the intended value and asks whether the value survives optimization pressure.
 
-Goodhart-style failure is not repaired by another large audit apparatus. It is repaired by restoring the relation among value, proxy, use position, protected qualities, and a small slice where the value is visible.
+To repair a Goodhart-style failure, restore the relation among the intended value, the proxy, its use, the protected qualities, and a small case that shows the value. Adding another large audit cannot by itself restore that relation.
 
 ### E.13:10 - SoTA-Echoing
 

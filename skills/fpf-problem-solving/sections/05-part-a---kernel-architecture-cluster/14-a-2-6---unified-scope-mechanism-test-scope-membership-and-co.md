@@ -3,11 +3,11 @@
 > **Type:** Ontic pattern
 
 
-> **One-line summary.** A.2.6 lets a practitioner test one exact `U.ContextSlice` against one exact set-valued scope. For a claim, `member(slice, claimScope)` is `true` or `false`: `true` admits the claim-scope condition and `false` stops that use. An evaluation returns `unknown` when its available basis cannot determine membership. The predicate is not a `U.Relation` occurrence.
+> **One-line summary.** A.2.6 lets a practitioner test one `U.ContextSlice` against one set-valued scope. For a claim, `member(slice, claimScope)` is `true` or `false`: `true` admits the claim-scope condition and `false` stops that use. An evaluation returns `unknown` when its available basis cannot determine membership. The predicate is not a `U.Relation` occurrence.
 
-**Use this pattern when** a receiving action needs to decide whether a claim, capability, or publication use covers one exact combination of standards, environment, local sense, platform, cohort, or time selectors.
+**Use this pattern when** a receiving action needs to decide whether a claim, capability, or publication use covers one combination of standards, environment, local sense, platform, cohort, or time selectors.
 
-**First useful move.** Name the exact claim, its exact `U.ClaimScope`, and the target `U.ContextSlice`; evaluate membership. Stop on `false`. On `unknown`, obtain the missing evaluation input, narrow the attempted use, or abstain. Add a result episteme or table only when the receiving use needs one. If exact local senses must be translated, follow §7.5: name the obtaining F.9 Bridge and separate affirmative C.2.1 claim for this translation, then establish the A.10 evidence basis and applicable reliance condition before using the translated scope.
+**First useful move.** Name the claim, its `U.ClaimScope`, and the target `U.ContextSlice`; evaluate membership. Stop on `false`. On `unknown`, obtain the missing evaluation input, narrow the attempted use, or abstain. Add a result episteme or table only when the receiving use needs one. If exact local senses must be translated, follow §7.5: name the obtaining F.9 Bridge and separate affirmative C.2.1 claim for this translation, then establish the A.10 evidence basis and applicable reliance condition before using the translated scope.
 
 **What goes wrong if missed.** Teams infer coverage from a document, table, “current context” label, or selected structure; treat an unevaluated slice as excluded; or mint `ScopeDelimitationRelation` occurrences for included and excluded slices. Those moves collapse predicate truth, evaluation, representation, and structure.
 
@@ -33,7 +33,7 @@ Use source terms such as *applicability*, *envelope*, *generality*, and *capabil
 
 ### A.2.6:1 - Problem frame - Purpose and Audience
 
-This pattern gives practitioners one exact question: *does this slice belong to the scope needed by this use?* It applies first to claim scope and reuses the same value algebra for work and publication scopes.
+This pattern gives practitioners one question: *does this slice belong to the scope needed by this use?* It applies first to claim scope and reuses the same value algebra for work and publication scopes.
 
 The claim-bearing episteme, capability, or publication object designates or uses an exact `U.ClaimScope`, `U.WorkScope`, or `U.PublicationScope`. The membership predicate, evaluation work, result episteme, gate, and evidence claim also remain separate.
 
@@ -44,7 +44,7 @@ With USM, a practitioner can:
 * combine exact scopes by intersection or independently supported union;
 * translate only when exact local senses require an obtaining F.9 Bridge, a separate affirmative C.2.1 claim about this translation, and the current A.10 or B.3 reliance branch.
 
-A.2.6 defines the scope values, membership predicate, mathematical scope algebra, exact reusable A.6.1 operation declarations, and use boundaries. Use A.15.1 for evaluation work, A.10 for evidence, A.21 for gate decisions, and A.22 for structure selection. The practitioner decides whether and which claim to widen for the receiving use.
+A.2.6 defines the scope values, membership predicate, mathematical scope algebra, reusable A.6.1 operation declarations, and use boundaries. Use A.15.1 for evaluation work, A.10 for evidence, A.21 for gate decisions, and A.22 for structure selection. The practitioner decides whether and which claim to widen for the receiving use.
 
 ### A.2.6:2 - Context
 
@@ -55,13 +55,13 @@ A project may combine formal specifications, data-driven models, safety cases an
 * Standards and specs often say *applicability* or *scope*.
 * Modeling communities say *envelope*.
 * Safety and performance documents speak about *capability envelope*.
-* Knowledge patterns have used *generality* (G) as if it were “more abstract,” when we actually need “**where the statement holds**.”
+* Knowledge patterns have used *generality* (G) as if it were “more abstract,” when we need “**where the statement holds**.”
 
 #### A.2.6:2.2 - Slice-bounded reasoning
 
 `U.ContextSlice` is an addressable value identified by its exact declared selector schema and selector values under the effective reference scheme: for example local senses, named standard editions, environmental values, platform or cohort selectors, and a time selector when that selector belongs to the declared schema. One scope predicate may inspect only a projection of those selectors, but that projection does not reidentify the slice.
 
-The practical question is therefore concrete: *does this exact slice belong to this exact scope?* A phrase such as “inside the current context,” a project label, or a selected `U.Structure` does not answer it.
+The practical question is therefore concrete: *does this slice belong to this scope?* A phrase such as “inside the current context,” a project label, or a selected `U.Structure` does not answer it.
 
 #### A.2.6:2.3 - Minimal, composable trust math
 
@@ -71,7 +71,7 @@ In **F–G–R**:
 * **G** must be “**where it holds**,” not “how abstract it sounds.”
 * **R** describes how strongly the claim is warranted by its evidence under the declared scope and use conditions (C.2.2). Observed semantic mismatch or loss may be evidence about a proposed translation, while the permitted-loss tolerance belongs to the separate C.2.1 claim about that use.
 
-When **G** is a **set‑valued scope**, composition becomes precise: serial dependencies **intersect** scopes; parallel, independently supported lines can publish a **SpanUnion**—but only where each line is supported.
+When **G** is a **set‑valued scope**, serial dependencies **intersect** scopes; parallel, independently supported lines can publish a **SpanUnion** over their supported areas.
 
 ### A.2.6:3 - Problem
 
@@ -101,7 +101,9 @@ USM keeps the following things distinct:
 * **`U.ClaimScope`**, **`U.WorkScope`**, and **`U.PublicationScope`** - C.3 specializations for claim, capability, and publication uses;
 * **membership semantics, mathematical scope algebra, and reusable operations** - three separate layers: the bivalent predicate, its C.29 set representations, and the exact A.6.1 declarations used only when a receiving use needs an actual application and binding.
 
-The primitive claim-scope question is `member(x, S)` for exact slice `x` and exact scope `S`. Intersection handles serial dependence. `spanUnion` is allowed only for independently supported areas. `widen` and `narrow` change the extension; `refit` preserves it while changing only a scope expression or parameterization. `translate` is used only when exact local-sense content must cross an obtaining F.9 Bridge and a separate affirmative C.2.1 claim names this translation's direction, rule, and tolerance. A receiving guard relies on that claim through a passing A.10 disposition or, when an actual named assurance claim is current, a B.3 `AssuranceResult` for the same use with `disposition=supported-for-use`; a different label or reference scheme alone selects none of these.
+The primitive claim-scope question is `member(x, S)` for exact slice `x` and exact scope `S`. Intersection handles serial dependence. `spanUnion` is allowed only for independently supported areas. `widen` and `narrow` change the extension; `refit` preserves it while changing only a scope expression or parameterization. `translate` is used only when exact local-sense content must cross an obtaining F.9 Bridge and a separate affirmative C.2.1 claim names this translation's direction, rule, and tolerance.
+
+A receiving guard relies on that claim through a passing A.10 disposition or, when an actual named assurance claim is current, a B.3 `AssuranceResult` for the same use with `disposition=supported-for-use`; a different label or reference scheme alone selects none of these.
 
 One exact `U.ClaimScope` may participate in a `ModelApplicabilityRelation`. That relation, its actual obtaining extent, a selected A.22 structure, a membership evaluation, and a table displaying members remain separate.
 
@@ -115,7 +117,7 @@ Keep three layers explicit:
 
 1. **Scope semantics.** `member(x,S)` is a bivalent predicate over one exact `U.ContextSlice` and one exact `U.Scope`.
 2. **Mathematical representation.** The formulae below represent membership and set operations under C.29. Use the declarations and bindings below for an actual operation application.
-3. **Reusable actual operations.** When a receiving use needs one identified calculation or evaluation application and its bound result, use one of the exact A.6.1 `OperationDeclaration`s below. These are argument and result declarations, never A.6.5 SlotSpecs.
+3. **Reusable actual operations.** When a receiving use needs one identified calculation or evaluation application and its bound result, use one of the A.6.1 `OperationDeclaration`s below. These are argument and result declarations, never A.6.5 SlotSpecs.
 
 **Mathematical semantics.**
 
@@ -131,11 +133,13 @@ narrow(S0,S1)                       := extension(S1) proper-subset extension(S0)
 refit(E0,E1,S)                      := expressions E0 and E1 both designate exact scope S
 ```
 
-Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finite scope family, `B` is an exact obtaining F.9 Bridge, `C_use` is the exact current C.2.1 claim with `B` as EntityOfConcern and affirmative polarity for this named scope-translation use, and `RS` is the exact target reference scheme. The claim's content names the direction, scope-correspondence rule, and permitted-loss tolerance used to select the target image; its effective ReferenceScheme makes those designations interpretable. `scopeSubset`, `coversSet`, `widen`, `narrow`, and `refit` are mathematical predicates or comparison classifications, not actual A.6.1 operations. The formula represents the claim's proposed mapping but proves neither the claim nor reliance on it and declares no operation application. Work that authors or compares scope declarations remains separately governed.
+Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finite scope family, `B` is an exact obtaining F.9 Bridge, `C_use` is the exact current C.2.1 claim with `B` as EntityOfConcern and affirmative polarity for this named scope-translation use, and `RS` is the exact target reference scheme. The claim's content names the direction, scope-correspondence rule, and permitted-loss tolerance used to select the target image; its effective ReferenceScheme makes those designations interpretable.
+
+`scopeSubset`, `coversSet`, `widen`, `narrow`, and `refit` are mathematical predicates or comparison classifications, not actual A.6.1 operations. The formula represents the claim's proposed mapping but proves neither the claim nor reliance on it and declares no operation application. Work that authors or compares scope declarations remains separately governed.
 
 **A.6.1 declaration A — `ScopeMembershipEvaluationMechanism`.**
 
-- `EntityOfConcernRef`: exact operation family `ScopeMembershipEvaluationOperationFamily = {evaluateMembership}`.
+- `EntityOfConcernRef`: operation family `ScopeMembershipEvaluationOperationFamily = {evaluateMembership}`.
 - effective reference scheme: the scheme under which this mechanism's argument, result, and application meanings are interpreted.
 - `SubjectKind`: `U.Scope`.
 - `RangedValueKind`: `U.ContextSlice`.
@@ -148,7 +152,7 @@ Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finit
 | --- | --- | --- | --- | --- | --- |
 | argument `targetSlice` | exact independently identified slice being tested | `U.ContextSlice` | `ByValue` | this application evaluates the bound slice | exactly 1 |
 | argument `scope` | exact extensional scope against which membership is tested | `U.Scope` | `ByValue` | this application evaluates against the bound scope | exactly 1 |
-| argument `interpretationBasis` | exact separately identified episteme containing the scope expression, available selector resolutions, and any translation input used by this application | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact basis actually used; citation or availability alone is insufficient | exactly 1 |
+| argument `interpretationBasis` | exact separately identified episteme containing the scope expression, available selector resolutions, and any translation input used by this application | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact basis used; citation or availability alone is insufficient | exactly 1 |
 | result `membershipJudgment` | what the application could determine about the bivalent predicate | `MembershipEvaluationValue` | `ByValue` | this application returns this value | exactly 1 |
 
 `ApplicationPredicate`: with those bindings, evaluate `member(targetSlice, scope)` under the bound interpretation basis; return `true` or `false` when the basis determines the predicate and `unknown` when a required selector resolution or translation input is unavailable. The application leaves the target slice and scope unchanged.
@@ -159,19 +163,19 @@ Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finit
 
 **`ScopeMembershipEvaluationMechanism` LawSet.** With the same exact argument bindings, interpretation basis, and effective reference scheme, evaluation is deterministic. `true` reports that the basis determines `member(targetSlice, scope)`; `false` reports that it determines non-membership; `unknown` reports only that it cannot determine either result.
 
-**`ScopeMembershipEvaluationMechanism` AdmissibilityConditions.** Admit an application only after the exact slice, exact scope, and exact interpretation basis are bound. `unknown` is admitted when that basis records an unavailable required selector resolution or translation input. A missing exact scope, slice, or basis blocks the application rather than creating a guessed binding.
+**`ScopeMembershipEvaluationMechanism` AdmissibilityConditions.** Admit an application only after the exact slice, exact scope, and exact interpretation basis are bound. `unknown` is admitted when that basis records an unavailable required selector resolution or translation input. A missing exact scope, slice, or basis blocks the application.
 
 **`ScopeMembershipEvaluationMechanism` Applicability.** Use this declaration only for evaluating exact `U.ContextSlice` and `U.Scope` values under its effective reference scheme. The receiving use names its exact `U.ClaimScope`, selected evaluation time when current, selected `CHR:ReferencePlane` only when the use is plane-dependent, and any mechanism-specific condition.
 
-**`ScopeMembershipEvaluationMechanism` SignatureManifest (optional).** When dependency replay needs it, name the actual imported or provided declarations for `U.ContextSlice`, `U.Scope`, and the local `MembershipEvaluationValue`.
+**`ScopeMembershipEvaluationMechanism` SignatureManifest (optional).** When dependency replay needs it, name the imported or provided declarations for `U.ContextSlice`, `U.Scope`, and the local `MembershipEvaluationValue`.
 
 **`ScopeMembershipEvaluationMechanism` neighboring objects.** An evaluation application can occur within dated work governed by A.15.1. A separately persisted result episteme remains optional under C.2.1; A.15.PROD enters only for a current claim that work first constituted that episteme. Evidence-use and gate occurrences stay under A.10 and A.21. None of those objects, nor another evaluation invocation, reidentifies this mechanism unless it reveals changed declaration content.
 
-**`ScopeMembershipEvaluationMechanism` refinement or conservative extension.** A refinement preserves `evaluateMembership`, its argument and result meanings, binding rules, application predicate, identity and extent, and the bivalent-truth boundary while stating every strengthened law or admission condition. A conservative extension adds exact optional arguments, results, or operations without changing those inherited meanings or admitted uses.
+**`ScopeMembershipEvaluationMechanism` refinement or conservative extension.** A refinement preserves `evaluateMembership`, its argument and result meanings, binding rules, application predicate, identity and extent, and the bivalent-truth boundary while stating every strengthened law or admission condition. A conservative extension adds optional arguments, results, or operations without changing those inherited meanings or admitted uses.
 
 **A.6.1 declaration B — `ScopeDerivationMechanism`.**
 
-- `EntityOfConcernRef`: exact operation family `ScopeDerivationOperationFamily = {deriveIntersectionScope, deriveSpanUnionScope, deriveTranslatedScope}`.
+- `EntityOfConcernRef`: operation family `ScopeDerivationOperationFamily = {deriveIntersectionScope, deriveSpanUnionScope, deriveTranslatedScope}`.
 - effective reference scheme: the scheme under which this mechanism's operation meanings and returned scopes are interpreted.
 - `SubjectKind`: `U.Scope`.
 - `RangedValueKind`: `U.Scope`; each derivation operation still returns a `U.Scope`, so no distinct mechanism-level `ResultKind` is current.
@@ -182,19 +186,19 @@ Here `T : ContextSliceSet` is a finite target set, `F : Set[U.Scope]` is a finit
 | `deriveIntersectionScope` | argument `scopeFamily` | exact finite family whose scope extensions are intersected | `Set[U.Scope]` | `ByValue` | this application uses the bound set value, containing at least two exact scopes | exactly 1 set value |
 |  | result `derivedScope` | exact extensional scope returned for the intersection | `U.Scope` | `ByValue` | this application returns this independently identifiable scope value | exactly 1 |
 | `deriveSpanUnionScope` | argument `scopeFamily` | exact finite family whose independently supported extensions are united by the established `SpanUnion` operation | `Set[U.Scope]` | `ByValue` | this application uses the bound set value, containing at least two exact scopes | exactly 1 set value |
-|  | argument `independenceBasis` | exact episteme stating the support lines and their required independence | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact basis actually used by this application | exactly 1 |
+|  | argument `independenceBasis` | exact episteme stating the support lines and their required independence | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact basis used by this application | exactly 1 |
 |  | result `derivedScope` | exact extensional scope returned for `SpanUnion(scopeFamily)` | `U.Scope` | `ByValue` | this application returns this independently identifiable scope value | exactly 1 |
 | `deriveTranslatedScope` | argument `sourceScope` | exact source scope whose extension is mapped | `U.Scope` | `ByValue` | this application maps the bound scope value | exactly 1 |
-|  | argument `bridgeOccurrence` | exact obtaining F.9 Bridge whose direct semantic relation is used | `U.Relation` | `ByGovernedReference` | the reference resolves to the exact obtaining occurrence actually used by this application; it carries no use-specific rule, tolerance, or reliance | exactly 1 |
+|  | argument `bridgeOccurrence` | exact obtaining F.9 Bridge whose direct semantic relation is used | `U.Relation` | `ByGovernedReference` | the reference resolves to the exact obtaining occurrence used by this application; it carries no use-specific rule, tolerance, or reliance | exactly 1 |
 |  | argument `scopeTranslationClaim` | exact current C.2.1 claim that says the bound Bridge is suitable for this named scope translation | `U.Episteme` | `ByGovernedReference` | the reference resolves to the exact affirmative claim whose EntityOfConcern is the bound Bridge and whose content names this use, direction, rule, and tolerance | exactly 1 |
 |  | argument `targetReferenceScheme` | exact scheme under which target slices and their local senses are interpreted | `EpistemeInterpretationScheme` (C.2.1:4.1.2) | `ByValue` | this application interprets the returned target-slice extension under the bound scheme | exactly 1 |
 |  | result `derivedScope` | exact extensional scope returned for the target image selected by the claim's rule and tolerance | `U.Scope` | `ByValue` | this application returns this independently identifiable scope value | exactly 1 |
 
-The target scheme is the exact rule collection classified by C.2.1:4.1.2, including the rules needed to read the target slices and local senses. A scheme can pass that range test while the proposed translation lacks its required mapping or bounded-use basis. Apply the translated-scope law to the actual bound value; range membership supplies neither that mapping nor any additional scope support.
+The target scheme is the exact rule collection classified by C.2.1:4.1.2, including the rules needed to read the target slices and local senses. A scheme can pass that range test while the proposed translation lacks its required mapping or bounded-use basis. Apply the translated-scope law to the bound value; range membership supplies neither that mapping nor any additional scope support.
 
 **ApplicationPredicate rules.** `deriveIntersectionScope` returns the scope represented under C.29 by `intersection of extension(S) for S in scopeFamily`. `deriveSpanUnionScope` implements the already established `SpanUnion`: it is admitted only when `independenceBasis` establishes the section 7.3 independence condition and returns the scope represented by `SpanUnion(scopeFamily)`. `deriveTranslatedScope` is admitted only when the bound Bridge obtains and the bound C.2.1 claim has that Bridge as EntityOfConcern, affirmative polarity, and content naming this scope-translation use, its direction, rule, and tolerance. The application applies that rule within that tolerance and returns the scope represented by `translate(bridgeOccurrence, scopeTranslationClaim, sourceScope, targetReferenceScheme)`. The formulae and claim alone declare no application or result binding.
 
-For every governed-reference argument, record presence, citation, or a compatible token is insufficient: the reference must resolve to the exact value actually used. For every result row, the result binding obtains only when this application returns the independently identifiable extensional scope.
+For every governed-reference argument, record presence, citation, or a compatible token is insufficient: the reference must resolve to the exact value used. For every result row, the result binding obtains only when this application returns the independently identifiable extensional scope.
 
 `ApplicationIdentityRule`: each derivation application is one independently bounded calculation invocation identified through its exact invocation boundary, mechanism edition, and operation designator rather than the argument tuple alone. Repeated calculations with equal arguments remain distinct applications.
 
@@ -202,17 +206,21 @@ For every governed-reference argument, record presence, citation, or a compatibl
 
 **`ScopeDerivationMechanism` LawSet.** Serial composition uses intersection. Parallel publication uses the one established `SpanUnion` and preserves only slices supplied by independently supported lines. Translation returns only the target-slice image selected by the bound claim's rule and tolerance over the bound obtaining F.9 Bridge. No derivation operation widens support by itself.
 
-**`ScopeDerivationMechanism` AdmissibilityConditions.** Intersection and `SpanUnion` require at least two exact scopes. `deriveSpanUnionScope` additionally requires the bound independence basis to meet section 7.3. `deriveTranslatedScope` requires both an exact obtaining Bridge and the exact affirmative C.2.1 claim whose named rule and tolerance select the claimed target image. A missing or non-obtaining Bridge or a missing or non-affirmative claim blocks that positive derivation application rather than creating a guessed scope; the latter does not negate an otherwise obtaining Bridge.
+**`ScopeDerivationMechanism` AdmissibilityConditions.** Intersection and `SpanUnion` require at least two exact scopes. `deriveSpanUnionScope` additionally requires the bound independence basis to meet section 7.3. `deriveTranslatedScope` requires both an exact obtaining Bridge and the exact affirmative C.2.1 claim whose named rule and tolerance select the claimed target image. A missing or non-obtaining Bridge or a missing or non-affirmative claim blocks that positive derivation application; the latter does not negate an otherwise obtaining Bridge.
 
 **`ScopeDerivationMechanism` Applicability.** Name the exact source scopes and reference schemes required by the selected derivation. For translation, also name the bound Bridge and separate C.2.1 claim. Before a receiving guard, assertion, publication, or structure selection relies on the returned scope, require the exact A.10 evidence-provenance relation for this bounded use. For ordinary reliance, require `RelianceDisposition=pass`. If an actual named assurance claim about that use is current, require its B.3 `AssuranceResult` for the same bounded use with `disposition=supported-for-use`. A direct domain rule may require such a claim, but neither scope translation nor consequence creates it.
 
-A missing or non-affirmative use claim or a non-passing A.10 disposition stops ordinary reliance without changing membership truth or the Bridge. When an actual named assurance claim is current, a B.3 `AssuranceResult` with `disposition=narrowed` supports only its stated narrower use; `abstain`, `evidence-needed`, `reopen`, or `blocked` stops the attempted use. A.10 `pass` or B.3 `supported-for-use` supports only the named use. Neither is legal, policy, or deontic authorization, and neither proves that a derivation application or another receiving object occurred. Any required authorization remains under its direct pattern. The receiving use also names its exact `U.ClaimScope`, selected time when current, selected `CHR:ReferencePlane` only when plane-dependent, and derivation-specific conditions. `GammaTimePolicy` enters only when time changes membership; `ReferencePlane` is absent from ordinary set algebra.
+A missing or non-affirmative use claim or a non-passing A.10 disposition stops ordinary reliance without changing membership truth or the Bridge. When an actual named assurance claim is current, a B.3 `AssuranceResult` with `disposition=narrowed` supports only its stated narrower use; `abstain`, `evidence-needed`, `reopen`, or `blocked` stops the attempted use. A.10 `pass` or B.3 `supported-for-use` supports only the named use. Neither is legal, policy, or deontic authorization, and neither proves that a derivation application or another receiving object occurred. Any required authorization remains under its direct pattern.
 
-**`ScopeDerivationMechanism` SignatureManifest (optional).** When dependency replay needs it, name the actual imported or provided declarations for `U.Scope` and, for translation, the exact F.9 Bridge declaration and C.2.1 claim identity rules. The independence basis, particular Bridge, and particular scope-translation claim are application arguments, not declaration-manifest entries by adjacency. `scopeTranslationClaim` is only this declaration's argument label; it names no public claim kind. A.10 and B.3 reliance objects remain under their subject patterns rather than becoming a common mechanism signature.
+The receiving use also names its exact `U.ClaimScope`, selected time when current, selected `CHR:ReferencePlane` only when plane-dependent, and derivation-specific conditions. `GammaTimePolicy` enters only when time changes membership; `ReferencePlane` is absent from ordinary set algebra.
 
-**`ScopeDerivationMechanism` neighboring objects.** A derivation can occur within dated calculation work under A.15.1. Its bound independence-basis episteme, Bridge, and C.2.1 scope-translation claim retain their own identities and direct patterns. The exact A.10 relation and disposition, or the exact B.3 `AssuranceResult` when an actual named assurance claim is current, states whether the use has the needed evidence or assurance support; neither is a mechanism argument or result. The returned `U.Scope` is independently identified by its extension. Evidence, publication, gate, assurance, and any downstream Work, assertion, relation, or publication occurrence remain with their direct patterns. None of those objects, nor another derivation invocation, reidentifies this mechanism unless it reveals changed declaration content.
+**`ScopeDerivationMechanism` SignatureManifest (optional).** When dependency replay needs it, name the imported or provided declarations for `U.Scope` and, for translation, the exact F.9 Bridge declaration and C.2.1 claim identity rules. The independence basis, particular Bridge, and particular scope-translation claim are application arguments, not declaration-manifest entries by adjacency. `scopeTranslationClaim` is only this declaration's argument label; it names no public claim kind. A.10 and B.3 reliance objects remain under their subject patterns rather than becoming a common mechanism signature.
 
-**`ScopeDerivationMechanism` refinement or conservative extension.** A refinement preserves the inherited derivation operations, argument and result meanings, binding rules, application predicates, identity and extent, and the intersection, `SpanUnion`, and translation semantics while stating every strengthened law or admission condition. A conservative extension adds exact optional arguments, results, or operations without changing those inherited meanings or admitted uses.
+**`ScopeDerivationMechanism` neighboring objects.** A derivation can occur within dated calculation work under A.15.1. Its bound independence-basis episteme, Bridge, and C.2.1 scope-translation claim retain their own identities and direct patterns. The exact A.10 relation and disposition, or the exact B.3 `AssuranceResult` when an actual named assurance claim is current, states whether the use has the needed evidence or assurance support; neither is a mechanism argument or result.
+
+The returned `U.Scope` is independently identified by its extension. Evidence, publication, gate, assurance, and any downstream Work, assertion, relation, or publication occurrence remain with their direct patterns. None of those objects, nor another derivation invocation, reidentifies this mechanism unless it reveals changed declaration content.
+
+**`ScopeDerivationMechanism` refinement or conservative extension.** A refinement preserves the inherited derivation operations, argument and result meanings, binding rules, application predicates, identity and extent, and the intersection, `SpanUnion`, and translation semantics while stating every strengthened law or admission condition. A conservative extension adds optional arguments, results, or operations without changing those inherited meanings or admitted uses.
 
 **Relation between the declarations.** These are two independently identified `U.Mechanism` epistemes. They coordinate by value: a later `evaluateMembership` application may bind a scope returned by one derivation application. If a receiving claim needs a refinement, extension, equivalence, or other direct relation between exact mechanism editions, state its endpoints, predicate, scope, and preserved and changed content under A.6.1.
 
@@ -236,7 +244,7 @@ The slice is one value. A finite target is one value of mathematical ValueKind `
 
 For example, `slice_A` and `slice_B` may share substrate `Al6061`, temperature `140 °C`, and rig edition `Calib-v3` while carrying different declared cohort selectors. A temperature-only scope predicate can return the same result for both slices, but the slices remain distinct; a cohort-sensitive predicate can distinguish them without reidentifying either one.
 
-Do not write an implicit “current” or “latest” selector. If time changes membership, name the exact point, interval, or policy. If time does not change membership, do not add a fictitious temporal field merely to complete the tuple.
+Do not write an implicit “current” or “latest” selector. If time changes membership, name the exact point, interval, or policy. If time does not change membership, do not add a temporal field merely to complete the tuple.
 
 #### A.2.6:6.2 - `U.Scope` - set-valued scope
 
@@ -248,7 +256,7 @@ For exact scope `S` and exact slice `x`, the primitive delimitation semantics is
 member(x, S)
 ```
 
-The predicate has the exact slice and exact scope as arguments. It is not by itself an explicitly individuated `U.Relation` occurrence. Included slices satisfy it; excluded slices do not. The excluded area is not materialized as an unbounded complement entity.
+The predicate has the slice and scope as arguments. It is not by itself an explicitly individuated `U.Relation` occurrence. Included slices satisfy it; excluded slices do not. The excluded area is not materialized as an unbounded complement entity.
 
 For effective reference scheme `RS`, define `extension_RS(S) := { x : U.ContextSlice | member(x, S) }`. Two scope designators resolve to the same extensional `U.Scope` value when their extensions contain exactly the same independently identified slices under the same or explicitly reconciled reference scheme. An equivalent predicate expression, unit conversion, factoring, or publication change can preserve that value; a boundary change that adds or removes even one slice identifies another scope value.
 
@@ -273,7 +281,11 @@ An evaluation of `member(x, S)` is also separate:
 
 One exact `U.ClaimScope` participates in `ModelApplicabilityRelation` when model applicability is current. A declared `ModelApplicabilityInterval` belongs to an assertion or occurrence description. The actual applicability occurrence uses the maximal continuous extent over which its predicate obtains, as governed by A.1.1; the interval is not another direct participant.
 
-A `BoundedModelUseStructure` may be selected over exact model-applicability and other governed relation occurrences under applied constraints that refer to exact claim-scope values. Keep the scope value distinct from the two ways it can affect structure identity. A bare scope, slice, membership outcome, or displayed boundary never enters A.22 identity. One exact `U.ClaimScope` remains a participant of an independently governed `ModelApplicabilityRelation`; when that exact obtaining occurrence is selected into the structure, the occurrence contributes through A.22's relation-occurrence discriminator. Separately, one exact applied constraint claim may refer to that scope and contribute through A.22's applied-constraint discriminator. Neither route turns the scope into a structure constituent, a membership-relation occurrence, or a second delimiter. The same scope may participate in differently selected relation occurrences or be referenced by differently identified structures, and a changed structure does not by itself reidentify the scope.
+A `BoundedModelUseStructure` may be selected over exact model-applicability and other governed relation occurrences under applied constraints that refer to exact claim-scope values. Keep the scope value distinct from the two ways it can affect structure identity. A bare scope, slice, membership outcome, or displayed boundary never enters A.22 identity.
+
+One exact `U.ClaimScope` remains a participant of an independently governed `ModelApplicabilityRelation`; when that exact obtaining occurrence is selected into the structure, the occurrence contributes through A.22's relation-occurrence discriminator. Separately, one exact applied constraint claim may refer to that scope and contribute through A.22's applied-constraint discriminator. Neither route turns the scope into a structure constituent, a membership-relation occurrence, or a second delimiter.
+
+The same scope may participate in differently selected relation occurrences or be referenced by differently identified structures, and a changed structure does not by itself reidentify the scope.
 
 **Expression.** State a Claim scope as an exact predicate or condition block over slice selectors: assumptions, parameter ranges, cohorts, platform or standard editions, exact local senses when current, and time conditions only when they change membership.
 
@@ -286,8 +298,10 @@ A `BoundedModelUseStructure` may be selected over exact model-applicability and 
 **Meaning.** `U.WorkScope` is the set of `U.ContextSlice` values under which a capability's deliverability claim may be evaluated. Work-measure targets and qualification windows are checked separately at use time; they are not members or identity fields of the scope.
 
 **Expression.** The capability declaration designates an exact `U.WorkScope` expressed only as conditions over `U.ContextSlice`: environment, versioned standards or platforms, resource regimes, exact local senses when current, and `gammaTime` only when time changes membership. Quantitative deliverables and qualification windows are not part of the scope value:
+
 * Declare targets as **work-measure target sets** (e.g., latency <= L, throughput >= T, tolerance <= epsilon) bound in guards (WG‑2).
 * Declare inspection/recertification policies as **qualification-window policies** bound in guards (WG‑3).
+
 The use‑time admission requires **all** of: `WorkScope covers JobSlice` **AND** `WorkMeasures satisfied` **AND** `qualificationWindowHolds(holderAbilityClaim, qualificationWindowPolicy, evaluationTime)`.
 
 Here `holderAbilityClaim` supplies the identified holder, claimed work conditions and bounds, and the declared support basis to which the qualification policy applies. The policy evaluates reliance at the stated time; its failure does not itself prove a loss of actual ability.
@@ -299,12 +313,15 @@ Here `holderAbilityClaim` supplies the identified holder, claimed work condition
 **Separation from knowledge.** A Work scope is a set-valued scope. The capability declaration uses it to delimit where a deliverability claim is evaluated. Measurements and monitoring may support that claim through separately governed evidence and reliance judgments.
 
 **Required guard facets (capabilities).**
+
 * **Work-measure target set (mandatory).** A set of measurable targets with units and tolerated ranges, evaluated on the JobSlice.
 * **Qualification-window policy (mandatory for operational use).** A time policy stating when the capability is considered qualified; evaluated at the exact evaluation time selected by the receiving guard, not copied into `U.WorkScope`.
+
 These facets are **separate** from `U.WorkScope` and belong to the evidence and reliance conditions. They MUST be referenced in Method–Work guards (see §10.3 WG‑2/WG‑3); B.3 applies when an actual named assurance claim is current.
 
 #### A.2.6:6.5 - `U.PublicationScope` — scope of a publication view or publication form
 **Carrier.** A publication view or form is rendered on a carrier; the carrier is a separate object.
+
 **Meaning.** The set of `U.ContextSlice` where a **publication** (a view, card, or lane about some object or morphism) is **admissible for use** within its underlying Claim scope or Work scope.
 
 **Relation to other scopes (normative).**
@@ -359,7 +376,7 @@ Scope_published = SpanUnion({S_i})  =  ⋃_{i=1..n} S_i
 **Constraints.**
 
 * Independence MUST be justified (different support lines must not rely on the same weakest link).
-* The union MUST NOT exceed the union of supported slices; “hopeful” areas are disallowed.
+* The union MUST NOT exceed the union of supported slices.
 * Publishers SHOULD annotate coverage density/heterogeneity (informative) to aid R assessment, but numeric “coverage” is not part of G.
 * **Independence criterion.** Support lines in a **SpanUnion** MUST be partitioned so that each line has a set of **essential components** disjoint from the others’ essential components (no shared weakest link). The partition (or a certificate thereof) SHALL be referenced in the publication.
 
@@ -371,7 +388,7 @@ Under **USM**, `U.ClaimScope` is a **set‑valued** **USM scope object** over `U
 **2) G composes via `∩` / `SpanUnion`, not via `min` / `avg`.**
 USM already fixes composition: along a **dependent path** use **intersection**; across **independent support lines** publish **SpanUnion**. None of these operations relies on (or preserves) any linear order. An ordinal “G ladder” invites people to take **minimums/averages**, which is **incorrect** for sets and breaks the established algebra.
 
-**3) A G ladder drags in “abstraction level,” which is orthogonal.**
+**3) Abstraction level is orthogonal to G.**
 A ladder from instances through patterns and formal types to equivalence up to isomorphism describes an abstraction or typing distinction. That distinction does not determine where a claim holds. **Abstraction** can be described by the optional **`AbstractionTier (AT)`** facet; **applicability** is **`U.ClaimScope (G)`**.
 
 **4) A G ladder breaks locality and Bridge semantics.**
@@ -394,7 +411,9 @@ Use translation only when ordinary designation resolution cannot settle the exac
 
 The Bridge establishes the direct semantic correspondence. The separate claim selects this translation's direction, rule, and tolerance. A Bridge profile, Bridge Card, reference-scheme difference, project label, or slice designator cannot supply that claim or its reliance basis. A missing or non-obtaining Bridge blocks the semantic branch. A missing or non-affirmative use claim blocks reliance. A non-passing A.10 disposition blocks ordinary reliance; when an actual named assurance claim is current, a B.3 result other than `supported-for-use` stops or narrows the assurance-bearing use. None of these outcomes makes an otherwise obtaining Bridge false.
 
-An A.10 `pass`, or a B.3 `AssuranceResult` with `disposition=supported-for-use`, supports only the named use; neither authorizes it. A direct domain rule may require an assurance claim, but it must be stated separately. Observed mismatch, calibration error, and counterexamples are evidence about the use claim. The permitted loss is the tolerance inside that claim. If the rule and tolerance permit translation only for part of the source scope, identify that part and return its target image. Neither the Bridge nor the claim supplies direct support for adding a slice, and neither makes membership true. The exact `deriveTranslatedScope` application remains an A.6.1 operation application; the claim and reliance basis do not prove that it occurred.
+An A.10 `pass`, or a B.3 `AssuranceResult` with `disposition=supported-for-use`, supports only the named use; neither authorizes it. A direct domain rule may require an assurance claim, but it must be stated separately.
+
+Observed mismatch, calibration error, and counterexamples are evidence about the use claim. The permitted loss is the tolerance inside that claim. If the rule and tolerance permit translation only for part of the source scope, identify that part and return its target image. Neither the Bridge nor the claim supplies direct support for adding a slice, and neither makes membership true. The exact `deriveTranslatedScope` application remains an A.6.1 operation application; the claim and reliance basis do not prove that it occurred.
 
 #### A.2.6:7.6 - Δ‑Operations (Widen, Narrow, Refit)
 
@@ -432,7 +451,7 @@ Do not assume that a similarly named selector elsewhere has the same sense. Use 
 
 #### A.2.6:8.2 - Time selector `Γ_time`
 
-When membership depends on time, the scope predicate and target slice name an exact `gammaTime` point, interval, or policy and state which boundary changes a slice from member to non-member or back. Implicit “latest” is forbidden. A time-independent predicate need not inspect `gammaTime`. Keep every selector already declared in the slice schema; do not invent a time selector merely to complete a new declaration. Evidence freshness remains a separate R-lane predicate.
+When membership depends on time, the scope predicate and target slice name an exact `gammaTime` point, interval, or policy and state which boundary changes a slice from member to non-member or back. Implicit “latest” is forbidden. A time-independent predicate need not inspect `gammaTime`. Keep every selector already declared in the slice schema; do not add a time selector merely to complete a new declaration. Evidence freshness remains a separate R-lane predicate.
 
 #### A.2.6:8.3 - Standards, versions & notations
 
@@ -440,7 +459,7 @@ When a standard, interface, or schema edition affects membership, name the exact
 
 #### A.2.6:8.4 - Determinism of evaluation
 
-For a fixed exact scope, exact slice, and available evaluation inputs, the evaluation method returns one reproducible result. `false` stops the attempted use. `unknown` also blocks admission but does not assert non-membership.
+For a fixed scope, slice, and available evaluation inputs, the evaluation method returns one reproducible result. `false` stops the attempted use. `unknown` also blocks admission but does not assert non-membership.
 
 #### A.2.6:8.5 - Interaction with R (freshness & decay)
 
@@ -462,7 +481,7 @@ For empirical claims and operational capabilities, an evidence-freshness policy 
 
 #### A.2.6:10.1 - Common guard shape
 
-A claim-scope guard starts with one exact judgment:
+A claim-scope guard starts by evaluating membership:
 
 ```text
 membershipResult := evaluateMembership(TargetSlice, ClaimScope, InterpretationBasis)
@@ -480,7 +499,7 @@ Add a translation branch only when the membership predicate uses exact local sen
 member(TargetSlice, ClaimScope) = true
 ```
 
-Name the exact claim-bearing episteme, exact `U.ClaimScope`, and exact target slice. The episteme, scope, and slice remain different values.
+Name the claim-bearing episteme, `U.ClaimScope`, and target slice. The episteme, scope, and slice remain different values.
 
 **EG-2 - Formality or evidence, only when current.** A receiving state may separately require a C.2.3 condition on expression properties, possibly abbreviated by a justified local threshold, or an A.10 freshness judgment.
 
@@ -537,19 +556,19 @@ The source claim-bearing episteme designates `SourceScope`. The Bridge relates e
 
 When membership depends on time, name an exact `gammaTime` point, interval, or policy and the boundary that changes membership. Keep every selector already declared in the slice schema, even when this predicate does not inspect it. If a work qualification or evidence-freshness condition varies with time, name its exact evaluation time and interval or policy under that condition's direct governor rather than copying it into scope. For example, `qualificationWindowHolds(holderAbilityClaim, Recertification90d, evaluationTime)` is a separate guard; it is not a scope selector.
 
-Do not write implicit “latest.” Do not invent a time selector merely to complete a new slice declaration.
+Do not write implicit “latest.” Do not add a time selector merely to complete a new slice declaration.
 
 ### A.2.6:11 - Archetypal Grounding - Worked Examples
 
 #### A.2.6:11.1 - Claim-scope membership boundary
 
-Claim-bearing episteme `E_adhesive` states that Adhesive X retains at least 85 percent tensile strength on Al6061 for two hours at 120-150 °C under rig edition `Calib-v3`. It designates exact claim scope `G_adhesive`.
+Claim-bearing episteme `E_adhesive` states that Adhesive X retains at least 85 percent tensile strength on Al6061 for two hours at 120-150 °C under rig edition `Calib-v3`. It designates claim scope `G_adhesive`.
 
 * `slice_in = {substrate=Al6061, temp=140°C, dwell=90min, rig=Calib-v3}`. `member(slice_in, G_adhesive)` is true.
 * `slice_out = {substrate=Al6061, temp=160°C, dwell=90min, rig=Calib-v3}`. Membership is false; the attempted use stops.
 * `slice_unknown = slice_in`, evaluated with an interpretation basis whose required rig-edition resolution is unavailable. Evaluation returns `unknown`; it neither excludes the slice nor permits the use.
 
-`LabEvaluator_A` may perform exact membership-evaluation work through the declared USM operation. When a named audit or replay use needs a judgment to persist, a C.2.1 episteme may record it. A table showing the three rows is a C.29 representation.
+`LabEvaluator_A` may perform membership-evaluation work through the declared USM operation. When a named audit or replay use needs a judgment to persist, a C.2.1 episteme may record it. A table showing the three rows is a C.29 representation.
 
 The same `G_adhesive` may participate in two independently governed model-applicability relation occurrences and may be referred to by exact applied constraint claims in two A.22 structures. Only a selected obtaining model-applicability occurrence or an exact constraint claim as applied contributes through its corresponding A.22 discriminator; the common scope itself contributes through neither path and neither merges nor identifies the relations or structures. A declared applicability interval in either occurrence description is separate from the actual maximal continuous obtaining extent.
 
@@ -559,11 +578,13 @@ An assembly use expresses temperature through an exact local calibration sense d
 
 Separate C.2.1 claim `C-adhesive-scope-translation` has that Bridge as EntityOfConcern and affirmative polarity. Its content names use `translate G_adhesive for the assembly membership check`, direction laboratory-to-assembly, the calibration rule for mapping the source interval, and tolerance `no selector-meaning loss and at most 2 °C boundary uncertainty`.
 
-Use that translation only while exact A.10 relation `EP-adhesive-scope-translation` connects the claim and that bounded use to evidence record `CalibrationComparisonRecord.Calib-v3-to-AssemblyCalibration-v5.2026-07-25`. Provenance edge `CalibrationComparisonRecord.Calib-v3-to-AssemblyCalibration-v5.2026-07-25 --carriedBy--> CalibrationComparisonRegister.Calib-v3-to-AssemblyCalibration-v5.2026-07-25.csv` names its carrier. The window runs from `2026-07-25` through `2026-10-23` and closes earlier if either calibration edition, the mapping rule, or the 2 °C tolerance changes.
+Use that translation only while A.10 relation `EP-adhesive-scope-translation` connects the claim and that bounded use to evidence record `CalibrationComparisonRecord.Calib-v3-to-AssemblyCalibration-v5.2026-07-25`. Provenance edge `CalibrationComparisonRecord.Calib-v3-to-AssemblyCalibration-v5.2026-07-25 --carriedBy--> CalibrationComparisonRegister.Calib-v3-to-AssemblyCalibration-v5.2026-07-25.csv` names its carrier. The window runs from `2026-07-25` through `2026-10-23` and closes earlier if either calibration edition, the mapping rule, or the 2 °C tolerance changes.
 
 The path supports neither reverse translation, a mapping outside the named rule or tolerance, nor a claim that the A.6.1 application or membership evaluation occurred. If the record, carrier, or provenance edge is missing or stale, or the window closes, stop before translation and set `RelianceDisposition=reopen`; otherwise `RelianceDisposition=pass` applies only to this bounded use. No assurance claim is made.
 
-For this worked case, let the named calibration rule associate each assembly reading `t` with possible laboratory temperatures in `[t−2,t+2]°C`, throughout the range being considered. Let the acceptance rule require this whole interval to lie within the supported laboratory range `[120,150]°C`. Then `t−2 ≥ 120` and `t+2 ≤ 150`, so the accepted assembly readings are `[122,148]°C`. These are assumptions of this example; a boundary-uncertainty limit alone does not supply the calibration rule or the acceptance rule. With the other selectors preserved, the actual A.6.1 application `deriveTranslatedScope(G_adhesive, B-lab-assembly-temp, C-adhesive-scope-translation, AssemblyReferenceScheme)` returns the scope with this temperature range. The receiving membership evaluation uses that scope.
+For this worked case, let the named calibration rule associate each assembly reading `t` with possible laboratory temperatures in `[t−2,t+2]°C`, throughout the range being considered. Let the acceptance rule require this whole interval to lie within the supported laboratory range `[120,150]°C`. Then `t−2 ≥ 120` and `t+2 ≤ 150`, so the accepted assembly readings are `[122,148]°C`.
+
+These are assumptions of this example; a boundary-uncertainty limit alone does not supply the calibration rule or the acceptance rule. With the other selectors preserved, the actual A.6.1 application `deriveTranslatedScope(G_adhesive, B-lab-assembly-temp, C-adhesive-scope-translation, AssemblyReferenceScheme)` returns the scope with this temperature range. The receiving membership evaluation uses that scope.
 
 If the receiving use merely uses another designation for the same sense under an ordinary resolvable reference scheme, introduce no Bridge, use claim, or translation.
 
@@ -603,15 +624,15 @@ With only the method labels, leave P-UNION unresolved. If `CalibrationRecord-Q` 
 * **Model claim:** “AUC >= 0.92 on cohort K, pipeline P, feature sense `Training.F`.”
 * **Claim scope:** `{cohort=K, pipeline=P, exactLocalSense=Training.F}`. No `gammaTime` selector is present because this example does not claim that model applicability changes with the slice time.
 * **Target slice:** product `On-Device@v7`, pipeline `P-prime`, feature sense `Device.F-prime`.
-* **Translation trigger:** ordinary designation resolution fails because `Training.F` and `Device.F-prime` have different declared semantics, not merely different labels. Exact F.9 Bridge `B-training-device-feature` obtains between those cells under a lossy-subset correspondence profile; the profile carries no device-use rule or tolerance.
-* **Bounded translation claim:** exact current C.2.1 claim `C-device-feature-scope-translation` has that Bridge as EntityOfConcern and affirmative polarity. It names use `translate the training claim scope for the On-Device@v7 membership check`, direction training-to-device, the subset-mapping rule, and tolerance `no feature-kind substitution and no target slice outside the tested mapped subset`.
-* **Evidence and reliance:** Before translating, verify that exact A.10 relation `EP-device-feature-scope-translation` connects claim `C-device-feature-scope-translation` and this bounded use to both records below.
-  * **Mapping evidence:** `MappingTestRecord.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25`, with exact carrier edge `MappingTestRecord.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25 --carriedBy--> MappingTestReport.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25.json`.
-  * **Training evidence:** `TrainingEvaluationEvidence.K-P-TrainingF.2026-07-25`, with exact carrier edge `TrainingEvaluationEvidence.K-P-TrainingF.2026-07-25 --carriedBy--> TrainingEvaluationReport.K-P-TrainingF.2026-07-25.json`.
+* **Translation trigger:** ordinary designation resolution fails because `Training.F` and `Device.F-prime` have different declared semantics, not merely different labels. F.9 Bridge `B-training-device-feature` obtains between those cells under a lossy-subset correspondence profile; the profile carries no device-use rule or tolerance.
+* **Bounded translation claim:** current C.2.1 claim `C-device-feature-scope-translation` has that Bridge as EntityOfConcern and affirmative polarity. It names use `translate the training claim scope for the On-Device@v7 membership check`, direction training-to-device, the subset-mapping rule, and tolerance `no feature-kind substitution and no target slice outside the tested mapped subset`.
+* **Evidence and reliance:** Before translating, verify that A.10 relation `EP-device-feature-scope-translation` connects claim `C-device-feature-scope-translation` and this bounded use to both records below.
+  * **Mapping evidence:** `MappingTestRecord.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25`, with carrier edge `MappingTestRecord.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25 --carriedBy--> MappingTestReport.TrainingF-to-DeviceFprime.OnDevice-v7.2026-07-25.json`.
+  * **Training evidence:** `TrainingEvaluationEvidence.K-P-TrainingF.2026-07-25`, with carrier edge `TrainingEvaluationEvidence.K-P-TrainingF.2026-07-25 --carriedBy--> TrainingEvaluationReport.K-P-TrainingF.2026-07-25.json`.
   * **Window and stop:** the 180-day window runs from `2026-07-25` through `2027-01-21` and closes earlier if pipeline `P` or `P-prime`, either feature-sense edition, or the tested mapped subset changes. If a record, carrier, or edge is missing or stale, the window closes, or a named dependency changes, stop before translation and set `RelianceDisposition=reopen`; otherwise `RelianceDisposition=pass` applies only to this bounded use.
   * **Boundary:** the path supports neither feature-kind substitution, a target outside the tested subset, material release or assurance, nor a claim that deployment occurred. No assurance claim is made; a material release use stays with its direct release rule, and an actual assurance claim uses B.3.
 * **Guard:** bind `translatedScope := deriveTranslatedScope(G, B-training-device-feature, C-device-feature-scope-translation, ProductReferenceScheme)`, then evaluate `evaluateMembership(TargetSlice, translatedScope, InterpretationBasis)`; separately require the chosen formality predicate. The translated scope covers only the tested mapped subset.
-* **Outcome:** admit only a target slice in the returned subset; otherwise return false or unknown according to the exact returned scope and available evaluation input.
+* **Outcome:** admit only a target slice in the returned subset; otherwise return false or unknown according to the returned scope and available evaluation input.
 
 ### A.2.6:12 - Bias-Annotation
 
@@ -631,7 +652,7 @@ USM counters three recurring biases. First, scope wording can hide a claim that 
 | **CC-USM-8 Set algebra.** | Intersection, independently supported `spanUnion`, widen, narrow, and refit operate on exact scope values; refit preserves membership. |
 | **CC-USM-9 Translation boundary.** | `translate` uses an exact obtaining F.9 Bridge plus a separate affirmative C.2.1 claim naming the use, direction, rule, and tolerance. A receiving guard requires A.10 `pass` for ordinary reliance or, when an actual named assurance claim is current, a B.3 `AssuranceResult` for the same use with `disposition=supported-for-use`; scheme or label difference, a profile, or a card supplies none of these. |
 | **CC-USM-10 Representation boundary.** | A set expression, query, table, graph, or diagram is a C.29 representation of an independently identified scope or evaluation result. |
-| **CC-USM-11 Time only when material.** | Name `gammaTime` and its membership boundary when time changes membership; never use implicit “latest.” A time-independent predicate need not inspect `gammaTime`; retain every selector already declared in the slice, and do not invent one merely to complete a new declaration. |
+| **CC-USM-11 Time only when material.** | Name `gammaTime` and its membership boundary when time changes membership; never use implicit “latest.” A time-independent predicate need not inspect `gammaTime`; retain every selector already declared in the slice, and do not add one merely to complete a new declaration. |
 | **CC-USM-12 Separate reliance.** | Evaluate any required freshness, formality, time-currentness and assurance conditions separately from membership. The gate decision remains under A.21. A.10 governs ordinary reliance on a cross-scheme translation claim; B.3 applies only to an actual named assurance claim. Either result supports only its named use; neither authorizes that use. `unknown` remains an evaluation result used by the receiving guard; it does not change the scope. |
 | **CC-USM-13 Publication and capability specializations.** | `U.WorkScope` and `U.PublicationScope` reuse the same value and membership boundary; their measures, qualification, publication, and carrier relations remain separately governed. |
 
@@ -653,7 +674,7 @@ USM counters three recurring biases. First, scope wording can hide a claim that 
 
 ### A.2.6:15 - Consequences
 
-A correct USM use makes scope checks reproducible: every judgment names an exact scope and slice, and true, false, and unknown evaluation results have different actions. Translation appears only for exact local senses after an obtaining F.9 Bridge, a separate affirmative C.2.1 claim about the proposed translation, and its current A.10 or B.3 reliance branch are distinguished. The cost is naming the selectors, mapping rule, tolerated loss, and evidence that actually affect the receiving use while keeping membership truth, operation application, result epistemes, representations, model applicability, and structure separate.
+A correct USM use makes scope checks reproducible: every judgment names an exact scope and slice, and true, false, and unknown evaluation results have different actions. Translation appears only for exact local senses after an obtaining F.9 Bridge, a separate affirmative C.2.1 claim about the proposed translation, and its current A.10 or B.3 reliance branch are distinguished. The cost is naming the selectors, mapping rule, tolerated loss, and evidence that affect the receiving use while keeping membership truth, operation application, result epistemes, representations, model applicability, and structure separate.
 
 ### A.2.6:16 - Playbooks (Informative)
 
@@ -669,7 +690,7 @@ A correct USM use makes scope checks reproducible: every judgment names an exact
 #### A.2.6:16.2 - Declaring and combining scopes
 
 * **Make membership conditions explicit.** Name the parameters, ranges and standard editions that affect membership. Ordinary prose can express the predicate when its meaning is recoverable; name `gammaTime` only when time affects membership.
-* **Factor common conditions.** Use Refit to normalize units and factor shared predicates; do not widen by stealth.
+* **Factor common conditions.** Use Refit to normalize units and factor shared predicates while preserving membership.
 * **Partition support lines.** If you plan a **SpanUnion**, document independence up front.
 * **Publish supported scope.** When widening is needed, add only supported slices (ΔG+).
 * **Prepare needed translations.** When the receiving use needs a translation, establish the F.9 Bridge, then state the proposed use with its direction, mapping rule, tolerated loss and evidence plan. Establish the §7.5 reliance condition before using the mapping.
@@ -691,7 +712,7 @@ receivingGuards:
     relevance_window_days: 365 # A.10/R guard, not Claim scope
 ```
 
-*(Illustrative only; the specification does not mandate a particular syntax.)*
+The specification does not mandate a particular syntax.
 
 #### A.2.6:16.4 - Profiles as Scope configurations (informative)
 **Idea.** A **Scope profile** is a **named, editioned configuration** that expands to a concrete `U.Scope` predicate block (over `U.ContextSlice`), used to avoid repetition and to keep declarations consistent across carriers.
@@ -699,13 +720,13 @@ receivingGuards:
 **Rules.**
 * **P1 (Expansion).** Profiles are macros: guards **MUST** expand them to explicit predicates before evaluating `Scope covers TargetSlice`.
 * **P2 (Edition).** Profiles are editioned. A changed predicate expression changes the profile declaration even when the exact scope extension is preserved; a changed extension additionally identifies another scope value.
-* **P3 (No stealth widen).** A profile update MUST NOT implicitly widen a carrier’s published scope; ΔG+ must be explicit in that carrier.
+* **P3 (Explicit widening).** A profile update MUST NOT implicitly widen a carrier’s published scope; ΔG+ must be explicit in that carrier.
 * **P4 (Translation awareness).** If a profile expands to predicates whose exact local senses require translation, name the obtaining F.9 Bridge and the separate affirmative C.2.1 claim for that translation's direction, rule, and tolerance. The receiving guard must recover the current A.10 or B.3 reliance branch; a different label, scheme, profile, or Bridge Card alone is insufficient.
 * **P5 (No hidden context container).** A profile expands to predicates; it is not a context object, scope pattern, or additional scope kind.
 
 **Examples (illustrative).**
 - An engineering team defines `Ops-Lab-v3` as a profile pinning standard editions and environment selectors. It leaves `LabEvidenceRelevanceWindow365d` to the receiving A.10/R guard and contains no `gammaTime`, because evidence age does not change scope membership.
-- A field team defines `WinterCampaign-v1` with `gammaTime in [2026-11-01, 2027-03-31]` because the exact scope predicate admits only slices during the declared winter campaign; a slice before or after those boundaries is a non-member.
+- A field team defines `WinterCampaign-v1` with `gammaTime in [2026-11-01, 2027-03-31]` because the scope predicate admits only slices during the declared winter campaign; a slice before or after those boundaries is a non-member.
 - A publication stack defines `TechCard‑Lite@Σ` as a profile that **narrows** `U.PublicationScope` to slices where required pins are available.
 
 ### A.2.6:17 - Governance Hooks & Audits
@@ -766,6 +787,7 @@ First decide what “latest” is doing. If it means that evidence or data must 
 
 **Q7. How do we use a scope with differently named slice selectors?**
 First resolve whether the designations refer to the same values under the effective reference scheme. If exact local senses differ and membership must be expressed across them, name the obtaining F.9 Bridge. Then state the separate affirmative C.2.1 claim for the proposed translation's direction, mapping rule, and tolerated loss, establish the exact A.10 or B.3 reliance branch, and evaluate the scope returned by `deriveTranslatedScope`.
+
 **Q8. What about abstraction level or detail?**
 Keep **AT (AbstractionTier)** and **D (Detail and Resolution)** as orthogonal, optional annotations. They never substitute for **Claim scope** or **Work scope**.
 
@@ -807,7 +829,8 @@ the exact audience, interface, availability, and other selectors that restrict p
 
 **Separate use-time guard:**
 work-measure targets, qualification windows, evidence freshness, and any decision threshold. These are not fields of the scope value.
-*(These are informative; the spec does not mandate a concrete serialization.)*
+
+The specification does not mandate a concrete serialization.
 
 #### A.2.6:19.3 - Pseudocode membership evaluation (illustrative)
 
@@ -861,13 +884,13 @@ USM's additional result is an independently identified scope that further uses c
 | 2 | OMG Essence 1.2 | *Alpha State; Work Product; LevelOfDetail; EntryCriterion; CompletionCriterion* | **D** for information detail; **ESG** for claim-use conditions in state transitions; **A.2.5** for assignment-state conditions used in **RSG**; **Scope** for applicability | Entry and completion criteria test an alpha state or work-product level of detail. Keep the information-detail aspect of LoD with D. Reuse a checklist condition in ESG or RSG only after identifying its claim-use or assignment-state meaning. Scope requires a separate condition delimiting applicable slices. |
 | 3 | NIST AI RMF 1.0, §3.1 and §5.2/MAP | *Context of use; targeted application scope; validity, reliability, robustness; monitoring* | **Claim scope (G)** for specified applicability conditions; performance measures and reliance grounds remain distinct | MAP places application scope within purposes, settings, affected people and risks. Extract conditions for the claim's scope predicate; preserve performance/risk assessment and monitoring. Interpret validity-related claims by content, and keep the source's performance reliability distinct from FPF **R**. |
 | 4 | FDA final guidance (2023), §IV and §VI.A; ASME V&V 40–2018 definitions reproduced there | *Context of use; model risk; credibility; verification and validation* | **Claim scope (G)** for extracted applicability conditions; **R** for justified reliance | The COU also states the model's role in answering a question and its use with other evidence. Preserve that decision relation when expressing applicability as a scope. Credibility is assessed for that use and its model risk; scope membership alone does not establish it. |
-| 5 | W3C SHACL §2.1.2–2.1.3; SHACL-AF §3 | *Shapes; focus nodes; targets (`sh:targetClass`; AF `sh:target`); constraints* | Target selection provides an analogy for delimiting applicability; **F** concerns expression properties | SHACL targets produce RDF terms to validate; constraints determine their conformance. A USM scope contains declared `U.ContextSlice` values. Identify those slices and their membership predicate before using the analogy; target selection alone does not establish that a claim holds. C.2.3 assesses the actual expression properties. |
+| 5 | W3C SHACL §2.1.2–2.1.3; SHACL-AF §3 | *Shapes; focus nodes; targets (`sh:targetClass`; AF `sh:target`); constraints* | Target selection provides an analogy for delimiting applicability; **F** concerns expression properties | SHACL targets produce RDF terms to validate; constraints determine their conformance. A USM scope contains declared `U.ContextSlice` values. Identify those slices and their membership predicate before using the analogy; target selection alone does not establish that a claim holds. C.2.3 assesses the expression properties. |
 | 6 | OWL 2 Direct Semantics and Structural Specification, Second Editions | *Class extension; intersection/union; property domain/range; imports; version IRI* | Set extension as an analogy for scope algebra; ontology editions as selectors or interpretation inputs when applicable | Class extensions supply sets; property domain/range axioms imply membership of property-pair ends in specified classes or data ranges. Construct the corresponding USM slice domain independently. Imports supply ontology dependencies; version IRIs identify editions. An edition enters the slice when claim applicability depends on it; otherwise retain a required edition in the interpretation basis. |
 |  7 | [IETF BCP 14: RFC 8174](https://www.rfc-editor.org/rfc/rfc8174.html) | *MUST/SHALL/SHOULD; requirements language* | Requirement strength in normative guard statements | BCP 14 defines the special meanings of its uppercase requirement keywords. The observable, deterministic membership conditions are USM requirements; they do not follow from those keywords alone. |
-| 8 | FAA AC 20-115D on DO-178C, DO-333 and DO-330 | *Software level; formal-methods supplement; tool qualification level (TQL); life-cycle objectives and evidence* | **F** for actual expression and proof properties; **R** for justified reliance; scope kind follows the bounded claim or capability | The software level selects applicable objectives; the formal-methods supplement and tool qualification address distinct assurance work. A condition on a software or tool claim can delimit Claim scope, while a capability's operating conditions can delimit Work scope. Neither a level label nor a method name supplies the resulting FPF scope or assurance judgement. |
+| 8 | FAA AC 20-115D on DO-178C, DO-333 and DO-330 | *Software level; formal-methods supplement; tool qualification level (TQL); life-cycle objectives and evidence* | **F** for expression and proof properties; **R** for justified reliance; scope kind follows the bounded claim or capability | The software level selects applicable objectives; the formal-methods supplement and tool qualification address distinct assurance work. A condition on a software or tool claim can delimit Claim scope, while a capability's operating conditions can delimit Work scope. Neither a level label nor a method name supplies the resulting FPF scope or assurance judgement. |
 | 9 | ISO 26262:2018, published scope summaries | *Item definition; hazard analysis and risk assessment; functional safety concept; ASIL-oriented analyses* | **Claim scope** or **Work scope** for stated applicability conditions | An operating situation or mode can supply a selector when it changes applicability of the receiving claim or capability. Item definition and safety analysis also determine domain requirements. Preserve those requirements and their evidence; an ASIL label alone supplies neither a scope nor a measured value of FPF **R**. |
 | 10 | IEC functional-safety overview; HSE control-systems explanation | *Safety function; SIL; demand/continuous mode; proof-test interval* | **Claim scope** or **Work scope** for stated operating conditions; performance requirements and reliance grounds remain distinct | SIL specifies safety-integrity requirements. A proof-test interval affects the basis of a failure-probability claim, so it cannot be reduced to evidence age. State which operating or maintenance condition bounds applicability and which support condition must hold before reliance. |
-| 11 | ACM artifact badging, PADS 2022 and CCS 2025 | *Available; Evaluated—Functional/Reusable; Results Reproduced/Replicated* | Evidence relevant to **R**; **Context slice** when the evaluated environment is explicitly identified | The badges distinguish availability, artifact assessment and independent result checks. Use the actual badge criteria, checked claim and environment when assessing support; the badges do not form a single FPF warrant scale. An environment description supplies slice selectors only when their schema and values are made explicit. |
+| 11 | ACM artifact badging, PADS 2022 and CCS 2025 | *Available; Evaluated—Functional/Reusable; Results Reproduced/Replicated* | Evidence relevant to **R**; **Context slice** when the evaluated environment is explicitly identified | The badges distinguish availability, artifact assessment and independent result checks. Use the badge criteria, checked claim and environment when assessing support; the badges do not form a single FPF warrant scale. An environment description supplies slice selectors only when their schema and values are made explicit. |
 | 12 | Google SRE, “Service Level Objectives” | *SLIs; SLOs; measurement windows; workload classes; error budgets* | Performance **measures**; **Claim scope** or **Work scope** for stated service conditions | Keep metric definitions and aggregation windows with their measures. A workload class or region enters a scope when it changes applicability. In a USM rollout example, `gammaTime` enters scope only when crossing the declared start or end changes membership; an error-budget window alone does not establish that boundary. |
 
 These comparisons suggest two useful questions: which conditions matter to the receiving use, and under which of them the claim or ability applies. A.2.6 answers them with independently identified slices and set-valued scopes. Choose Claim scope or Work scope from what is being bounded; the source term alone does not choose the scope kind. Preserve the source's decision relation, performance measures, safety requirements and evidence where the receiving use depends on them. Any relied-on translation follows §7.5.
@@ -886,7 +909,7 @@ These comparisons suggest two useful questions: which conditions matter to the r
 | Exact local-sense translation | **Obtaining F.9 Bridge + separate affirmative C.2.1 use claim + current A.10 or B.3 reliance** | **Bridge, translation rule and tolerance, checked reliance** | — | automatic Bridge use or treating a loss score as permission |
 | Parallel coverage               | **SpanUnion**                                   | **Union of supported areas**         | —                    | unqualified “union” without independence                              |
 | Serial dependency               | **Intersection**                                | **Intersection of scopes**           | —                    | ordinal “more/less general” language                                  |
-| Scope edits                     | **ΔG+ (widen), ΔG− (narrow), Refit, Translate** | **Widen, narrow, refit, translate**  | —                    | stealth widening (“it’s obvious”)                                     |
+| Scope edits                     | **ΔG+ (widen), ΔG− (narrow), Refit, Translate** | **Widen, narrow, refit, translate**  | —                    | implicit widening                                     |
 | Optional didactics              | **`Detail (D)`, `AbstractionTier (AT)`**        | **Detail and abstraction tier**      | **D / AT**           | avoid as G substitutes                                                |
 
 **Naming rationale:**
@@ -902,7 +925,7 @@ These comparisons suggest two useful questions: which conditions matter to the r
 * When time changes membership, name exact **`gammaTime`** and its membership boundary; never say “latest.” A time-independent predicate need not inspect `gammaTime`, but keep every selector already declared in the slice.
 * To compose, say: **“intersection along dependency paths; SpanUnion across independent support lines.”**
 * When exact local-sense translation is current, say: **“through an obtaining F.9 Bridge and a separate affirmative C.2.1 claim for this direction, rule, and tolerance; rely on it only through the current A.10 or B.3 branch, then evaluate membership on the returned scope.”**
-* When widening/narrowing, write **“ΔG+ / ΔG−”**; use **“Refit”** for unit/parameter normalization only when the exact scope extension is preserved.
+* When widening or narrowing, write **“ΔG+ / ΔG−”**. If support for the affected slices changed, say what support was gained or lost. Use **“Refit”** for unit/parameter normalization only when the exact scope extension is preserved.
 
 ###### A.2.6:20.1.3.3 - Source-phrase comparison summary
 

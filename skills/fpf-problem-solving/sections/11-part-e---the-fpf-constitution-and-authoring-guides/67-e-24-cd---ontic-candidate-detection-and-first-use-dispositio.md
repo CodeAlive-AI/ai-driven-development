@@ -2,7 +2,7 @@
 
 > **Type:** Part E FPF authoring discipline pattern
 > **Status:** Stable
-> **Normativity:** Normative unless a section is explicitly informative
+> **Normativity:** Normative unless a section is marked informative
 
 ### E.24.CD:0 - Use This When
 
@@ -16,13 +16,13 @@ Typical moments:
 - a draft ToC row names a family that no current pattern yet governs;
 - a proposed `U.*` kind feels useful, but it may duplicate a current kind or direct relation.
 
-**Primary EntityOfConcern.** When the author records this choice in a C.2.1 episteme, its EntityOfConcern is the subject already identified under a direct pattern. If that subject cannot yet be identified, use the source episteme or expression entity whose inquiry remains open. The visible form and the note recording the disposition are not substitutes.
+**Primary EntityOfConcern.** When the author records this choice in a C.2.1 episteme, its EntityOfConcern is the subject already identified under a direct pattern. If that subject cannot yet be identified, an independently identified source episteme or expression entity can carry the open inquiry. Without an identifiable subject, keep the question attached to the blocked work or source material. The visible form and the note recording the disposition are not substitutes.
 
-**First useful move.** Write one plain sentence: “For this work or decision, we need to know or do `<action>` about `<subject>`.” Then ignore the wrapper long enough to recover the subject, the needed claim, and the current pattern that defines or constrains it. Apply the first truthful disposition in section 4.
+**First useful move.** Write one plain sentence: “For this work or decision, we need to know or do `<action>` about `<subject>`.” Then look past the form to recover the subject, the needed claim, and the current pattern that defines or constrains it. Apply the first disposition in section 4 that fits the case.
 
 **What goes wrong if missed.** FPF grows shadow ontology. A table becomes a kind; a field label is mistaken for a relation-participant meaning; a filled field is treated as an actual relation participant merely because it occupies a column; a card becomes the subject; or a convenient word creates a second ontology over values and relations that already have subject patterns.
 
-**What this buys.** The author identifies one usable subject pattern without filling a candidate record or maintaining a registry. A genuine durable ontic must still pass E.24's full identity and relation test; simpler cases stop with their subject pattern, local classification, description or publication handling, wording repair, or a precise unresolved question.
+**What this buys.** The author identifies an applicable pattern or the fact still needed to choose one without filling a candidate record or maintaining a registry. A proposal for a durable ontic must pass E.24's full identity and relation test; simpler cases stop with their subject pattern, local classification, description or publication handling, wording repair, or a precise unresolved question.
 
 **Not this pattern when.**
 
@@ -56,7 +56,7 @@ Without an explicit first-use disposition:
 | Early recognition vs premature ontology | A recurring concern should be noticed, but recurrence alone must not mint a durable subject or `U.*` kind. |
 | Visible form vs governed subject | A form can reveal the problem while remaining an episteme, publication form, representation, carrier, or local record. |
 | Direct reuse vs shared coordination | Existing patterns carry their own claims; concrete duplication or disagreement across named consumers can require E.24 to decide whether shared ontology is needed. |
-| First-use affordability vs adequate discrimination | The author needs a quick choice, but the choice must still separate direct use, local classification, publication, wording, and durable admission. |
+| First-use affordability vs adequate discrimination | The author needs a quick choice, but the choice must separate direct use, local classification, publication, wording, and durable admission. |
 | Traceability vs registry growth | A disputed choice may need one explanatory sentence; it does not need a standing candidate catalogue. |
 
 ### E.24.CD:4 - Solution
@@ -68,18 +68,18 @@ Ask these four questions in order:
 1. **What must the next person do or decide?** Name the comparison, classification, publication, repair, decision, or other practical use.
 2. **What is that use about?** Name the subject, claim, or source expression without treating its card, row, filename, diagram, or field bundle as the answer.
 3. **Which current pattern already governs the needed claim?** Name the predicate or judgment that would let the work proceed.
-4. **If that pattern does not close the case, what is actually missing?** State one applicable pattern or one precise unresolved stop below.
+4. **If that pattern does not close the case, what is missing?** State one applicable pattern or one precise unresolved stop below.
 
-#### E.24.CD:4.1 - Apply the first truthful disposition
+#### E.24.CD:4.1 - Apply the first disposition that fits the case
 
-Plain `situation`, `incident`, `current configuration`, `operating <system>`, and `emergency` are recognition cues, not kind names. Recover only the subjects, claims, and relations that the receiving work actually needs.
+Plain `situation`, `incident`, `current configuration`, `operating <system>`, and `emergency` are recognition cues, not kind names. Recover only the subjects, claims, and relations that the receiving work needs.
 
 | Current need | Next use | Stop that follows |
 | --- | --- | --- |
-| One current subject pattern already states the needed claim or action. | Apply that subject pattern. If the missing piece is a relation-bearing claim that no current direct predicate closes, apply `A.6.RCD` before proposing a relation kind. | Do not create an ontic, kind, candidate note, or disposition record. A local compound claim or predicate-definition episteme is neither a relation kind nor an occurrence; only a separately justified kind candidate proceeds through `E.24` and `E.24.UK`. |
-| One exact ClaimGraph forms one claim-bearing whole about one truthful exact EntityOfConcern under one effective ReferenceScheme. | Use `C.2.1` to identify that episteme. Other independently governed objects may be designated inside its claims without becoming extra EntityOfConcern fields or ontic slots. | If one truthful EntityOfConcern or one identity-bearing ClaimGraph cannot be recovered, keep the epistemes separate. State a collection, publication, representation, or other use relation only when its own predicate obtains; common use or co-publication does not identify one episteme. |
+| The receiving use needs a governed claim or action. An existing pattern states it, or the remaining gap is a relation-bearing claim no current direct predicate closes. | Apply the existing subject pattern when it suffices. For the unresolved relation-bearing claim, apply `A.6.RCD` before proposing a relation kind. | Do not create an ontic, kind, candidate note, or disposition record. A local compound claim or predicate-definition episteme is neither a relation kind nor an occurrence; only a separately justified kind candidate proceeds through `E.24` and `E.24.UK`. |
+| One exact ClaimGraph forms one claim-bearing whole about one exact EntityOfConcern under one effective ReferenceScheme. | Use `C.2.1` to identify that episteme. Other independently governed objects may be designated inside its claims without becoming extra EntityOfConcern fields or ontic slots. | If one EntityOfConcern for the whole ClaimGraph or one identity-bearing ClaimGraph cannot be recovered, keep the epistemes separate. State a collection, publication, representation, or other use relation only when its own predicate obtains; common use or co-publication does not identify one episteme. |
 | Wording such as `situation`, `incident`, `current configuration`, `operating <system>`, or `emergency` groups several cues. | Recover the exact systems or holons, characteristic or state claims, actual part relations, and only the temporal or causal relations needed by the current use. Add actual `U.Transformation` or `U.Work` only when independently grounded under `A.3.4` or `A.15.1`. Use a possible-state episteme when possibility is the subject, and a separate C.2.1 description episteme only when claim-bearing orientation is current. | Their conjunction is neither `U.Situation` nor `U.IncidentSituation`. An episteme's EntityOfConcern and any grounding holon in a separately current `EpistemeEmpiricalGroundingRelation` neither identify the world-side subject nor become mandatory fields. Stop decomposition once the action-facing distinction needed by the receiving use is recovered. |
-| A proposed subject exists only as an arbitrary fusion, co-presence, connected set, or chosen boundary. | Reject the bundle without forcing it through a construction record. If a constructed object survives as the current subject, apply `B.1`, `A.14`, and `C.13`, and apply `B.2` only when whole reidentification is current; recover its exact construction inputs, whole-forming relations, and identity rule. | Fusion, co-presence, connectedness, and a selected boundary alone form no durable whole. The no-mint result does not block a genuinely irreducible subject later shown to have its own identity and obtaining laws. |
+| A proposed subject exists only as an arbitrary fusion, co-presence, connected set, or chosen boundary. | Reject the bundle without forcing it through a construction record. If a constructed object survives as the current subject, apply `B.1`, `A.14`, and `C.13`, and apply `B.2` only when whole reidentification is current; recover its exact construction inputs, whole-forming relations, and identity rule. | Fusion, co-presence, connectedness, and a selected boundary alone form no durable whole. The no-mint result does not block an irreducible subject later shown to have its own identity and obtaining laws. |
 | Repeated typed reasoning needs a local criterion, candidate judgment, or true-candidate set for one context slice. | Use `C.3`, `C.3.1`, and `C.3.2`. | The local kind, `KindSignature`, judgment, and optional extension stay distinct; neither a public `U.*` kind nor a classification-relation occurrence follows. |
 | A card, record, table, diagram, file, or schema carries claims, is used as a description, conforms to a viewpoint, expresses an edition, represents something, or bears a form. | Use `C.2.1` to identify an episteme only when its constitution test passes. If it describes a method, structure, relation occurrence, or another subject, apply that subject's description pattern. Use `E.17.0` for actual view membership, `E.24.PUB` for publication, the subject-description pattern for its representation correspondence, `A.6.3.RT` for a representation-scheme transition, and `C.29` for an unresolved mathematical representation, transfer or reliance question. Several patterns can apply because they govern different objects or relations. | Visible shape does not identify the described subject or make any neighboring relation obtain. |
 | A path, table, dashboard, schema, or other declarative form seems to authorize, dispatch, prove, prescribe, or perform something by its shape. | Use `C.2.P.DR` to name the visible expression, recover the direct object or relation, state its representation or correspondence use—or `none`—and block the unsupported action claim. | A declarative form does not itself authorize or dispatch work, perform an action, or grant authority. |
@@ -114,9 +114,11 @@ Open E.24 when these detection facts are recoverable:
 - the named consumers that make shared coordination plausible; and
 - why one obvious direct-pattern route does not already close the blocked use.
 
-Transfer those facts to E.24. E.24—not E.24.CD—tests the complete identity or constitution rule, minimal direct-relation set, dependent reliance, non-duplication, practical gain, declared use, and its applicability limits. A missing settlement condition may lead to E.24's unresolved result; a missing detection fact instead leaves the E.24.CD inquiry open. Detection therefore does not require the author to settle the candidate before opening the settlement pattern.
+Transfer those facts to E.24. E.24 tests the complete identity or constitution rule, minimal direct-relation set, dependent reliance, non-duplication, practical gain, declared use, and its applicability limits.
 
-A plainly direct case still stops at its subject pattern. Repeated words, several source forms, copied fields, or a useful schema can prompt inspection, but without a blocked use, an independently recoverable inquiry subject, concrete cross-pattern pressure, named consumers, and failure of an obvious direct route, they do not open E.24.
+A missing settlement condition may lead to E.24's unresolved result; a missing detection fact instead leaves the E.24.CD inquiry open. Detection therefore does not require the author to settle the candidate before opening the settlement pattern.
+
+When the subject pattern clearly closes the case, stop there. Repeated words, several source forms, copied fields, or a useful schema can prompt inspection, but without a blocked use, an independently recoverable inquiry subject, concrete cross-pattern pressure, named consumers, and failure of an obvious direct route, they do not open E.24.
 
 #### E.24.CD:4.4 - State one result and stop
 
@@ -124,19 +126,23 @@ Most cases need only one sentence:
 
 > For `<work or decision>`, apply `<subject pattern>` to `<exact subject or claim>` because `<decisive fact>`; next, `<action or stop>`.
 
-When no pattern can yet apply truthfully, say:
+When the available facts do not yet justify applying a pattern, say:
 
 > For `<work or decision>`, leave `<exact subject or claim question>` unresolved because `<missing subject, predicate, or subject pattern>`; return when `<missing fact becomes recoverable>`.
 
-Any denied reading must pass `F.19`'s grounded-contribution test. Use a longer explanation only when another author must understand a disputed disposition. Do not create an `OnticCandidateCluster`, candidate registry, scorecard, or mandatory disposition form. Continue at the applicable pattern or unresolved return; reopen E.24.CD only if the recovered subject or practical use changes.
+Any denied reading must pass `F.19`'s grounded-contribution test. Use a longer explanation only when another author must understand a disputed disposition.
+
+Do not create an `OnticCandidateCluster`, candidate registry, scorecard, or mandatory disposition form. Continue at the applicable pattern or unresolved return; return to E.24.CD when the subject or practical use changes, or when a missing detection fact becomes available for the same inquiry.
 
 ### E.24.CD:5 - Archetypal Grounding
 
-#### E.24.CD:5.1 - A candidate that genuinely opens E.24
+#### E.24.CD:5.1 - A candidate that opens E.24
 
 Consider a library under development in which “description”, “view”, “claim set”, and “publication” repeatedly point to a claim-bearing object used across many patterns. The named consumers need stable claim identity across description, evaluation, reference, and publication work, but their current rules leave conflicting identity claims. No obvious direct-pattern route closes that gap.
 
-Those facts open E.24 to test the proposed shared identity and relation set. FPF's episteme ontology illustrates the resulting division of responsibility: C.2.1 governs `U.Episteme`; E.17.0, E.24.PUB, F.18, and the applicable subject-description or representation pattern keep viewpoint conformance, publication, naming and representation separate. In current FPF, use those established rules directly when they close the case. Cards and files do not become the episteme.
+Those facts open E.24 to test the proposed shared identity and relation set.
+
+FPF's episteme ontology illustrates the resulting division of responsibility: C.2.1 governs `U.Episteme`; E.17.0, E.24.PUB, F.18, and the applicable subject-description or representation pattern keep viewpoint conformance, publication, naming and representation separate. In current FPF, use those established rules directly when they close the case. Cards and files do not become the episteme.
 
 #### E.24.CD:5.2 - Local cooling-pump classification
 
@@ -148,9 +154,15 @@ Apply C.3.2. A `KindSignature` may declare the criterion for repeated use; the j
 
 A `ProblemCard@Context` under `C.22.2` is a problem-side episteme. It may carry a signal, hypothesis, forecast, scenario, anticipated-condition claim, affected-entity reference, evidence cue, constraint, proposed direction, assignment cue, source reference, or gate cue without creating an actual Problem.
 
-An actual Problem is one obtaining `ProblematicForRelation` under `C.22.PFR`. A card may assert that exact predicate, but it may designate a current Problem occurrence only after C.22.PFR independently establishes the actual-condition relation, criterion-applicability relation, adverse truth, and occurrence identity. Signals, hypotheses, forecasts, scenarios, anticipated conditions, and reviewable formulations remain under `C.22.2` or their exact forecast, scenario, temporal, or causal governor.
+An actual Problem is one obtaining `ProblematicForRelation` under `C.22.PFR`. A card may assert that predicate, but it may designate a current Problem occurrence only after C.22.PFR independently establishes the actual-condition relation, criterion-applicability relation, adverse truth, and occurrence identity.
 
-For a repair decision, keep the affected entity, evidence-use relation, any current local system-role kind and classification judgment, any exact obtaining system-role assignment, any separately governed responsibility relation, source-use relation, and gate or decision claim under their subject patterns. Apply `E.18.1`, `E.23`, and the exact Work, search, evaluation, or continuation pattern when repeated problematization or later action is current. Neither the card nor its acceptance or publication creates or ends an actual Problem. Open `E.24` only if a different reusable subject-identity or relation gap remains after these direct claims are recovered; do not rediscover the actual Problem as a new ontic.
+Signals, hypotheses, forecasts, scenarios, anticipated conditions, and reviewable formulations remain under `C.22.2` or their exact forecast, scenario, temporal, or causal governor.
+
+For a repair decision, keep the affected entity, evidence-use relation, any current local system-role kind and classification judgment, any exact obtaining system-role assignment, any separately governed responsibility relation, source-use relation, and gate or decision claim under their subject patterns.
+
+Apply `E.18.1`, `E.23`, and the exact Work, search, evaluation, or continuation pattern when repeated problematization or later action is current. Neither the card nor its acceptance or publication creates or ends an actual Problem.
+
+Open `E.24` only if a different reusable subject-identity or relation gap remains after these direct claims are recovered; do not rediscover the actual Problem as a new ontic.
 
 #### E.24.CD:5.4 - Record-shaped false candidate
 
@@ -168,38 +180,48 @@ ChangeItem:
   source:
 ```
 
-Treat the schema as source material, not as an ontology. A proposal episteme, method, mechanism declaration, work plan, intended-work claim, performed-work occurrence, holder system, state claim, evidence item, result, affected referent, and source remain different objects. Recover only those that the meeting actually uses:
+Use the schema as source material. Its fields do not establish an ontology. A proposal episteme, method, mechanism declaration, work plan, intended-work claim, performed-work occurrence, holder system, state claim, evidence item, result, affected referent, and source remain different objects. Recover only those that the meeting uses:
 
 | Field cue | Object and relation to recover |
 | --- | --- |
-| `owner` | Apply E.10's bounded `owner` recovery, then name the exact recovered relation and participants, ordinary or quoted non-use, or blocker. An established architectural owner—for example, the module designated for one functional-architecture object—keeps that direct architecture relation. Organizational, policy, source-maintenance or stewardship, legal ownership, responsibility, authority, and commitment uses keep their own recovered relations. Only a claim actually recovered as work-facing local classification or assignment proceeds through E.10.ROLE to A.2 or A.2.1. The field alone creates no System, kind, assignment, ownership occurrence, responsibility, or authority. |
+| `owner` | Apply E.10's bounded `owner` recovery, then name the recovered relation and participants, ordinary or quoted non-use, or blocker. An established architectural owner—for example, the module designated for one functional-architecture object—keeps that direct architecture relation. Organizational, policy, source-maintenance or stewardship, legal ownership, responsibility, authority, and commitment uses keep their own recovered relations. Only a claim recovered as work-facing local classification or assignment proceeds through E.10.ROLE to A.2 or A.2.1. The field alone creates no System, kind, assignment, ownership occurrence, responsibility, or authority. |
 | `status` | Name the exact bearer and the governed state or status value, claim, gate disposition, decision result, or other current relation. Field presence implies no readiness, validity, gate passage, work authorization, or release. |
 | `method` and `mechanism` | Keep an admitted `U.Method` and any qualifying `U.MethodDescription` distinct from the A.6.1 `U.Mechanism` declaration episteme and its declared operation family. If the field concerns one use, identify the exact operation application and only its declaration-local argument or result bindings that obtain. If it concerns realization, identify the realizing entity and the obtaining mechanism-realization relation. Apply `A.6.1` when the row does not yet distinguish these readings. Shared wording identifies none of them. |
 | plan, intended work, and actual work | Keep a `U.WorkPlan` or intended-work claim under `A.15.2`. Add a `U.Work` under `A.15.1` only for an independently grounded performed occurrence, whether ongoing with an open end or completed. A proposal, row, trace, or completion label does not make work occur. |
 | `evidence` | First identify what the field points to; do not rename it to fit a pattern. Keep its direct kind: an episteme or evidence record, a carrier, the work that produced or interpreted evidence, a currentness relation, or a provenance relation. If it is an episteme and the meeting asks only about its bounded evidence-use or status-use for the claim, use `A.2.4` first. Use `A.10` when the source-to-use account remains implicit or must be retraceable; include only the record, carrier, work, currentness relation, and provenance relation needed for this claim. Use `B.3` only when a separate assurance claim is current. The field proves neither the claim nor the row's status. |
-| `result` | Identify the result entity, value, or result episteme independently, then state the exact production, measurement, evaluation, decision, delivery, acceptance, or other result relation actually claimed. A result label creates no generic result object or relation. |
+| `result` | Identify the result entity, value, or result episteme independently, then state the production, measurement, evaluation, decision, delivery, acceptance, or other result relation claimed. A result label creates no generic result object or relation. |
 | `target` | Identify the affected referent and state an exact work-to-referent, change, effect, or other subject relation only when current. The field does not make the referent a work participant or changed entity. |
 | `source` | Identify the source episteme or expression and the exact source-use relation. Source presence is not evidence, authority, or currentness by itself. |
 
-Not every row has every listed object, not every filled field is claim-bearing, and co-presence in one row does not constitute a larger subject. The filled row is one C.2.1 episteme only when one exact ClaimGraph forms a claim-bearing whole about one truthful exact EntityOfConcern under one effective ReferenceScheme. Otherwise keep the epistemes separate and state only the exact collection, publication, representation, or meeting-use relation that actually obtains.
+Not every row has every listed object, not every filled field is claim-bearing, and co-presence in one row does not constitute a larger subject. The filled row is one C.2.1 episteme only when one exact ClaimGraph forms a claim-bearing whole about one exact EntityOfConcern under one effective ReferenceScheme.
 
-The column arrangement is a publication form only when selected to express an identified episteme for the meeting. The form is not a `U.ChangeItem`, and its columns are not ontic slots. If the project later needs a local kind of records for a query, `C.3.2` may classify those records as records. If a later blocked use has an independently recoverable inquiry subject, named consumers and concrete cross-pattern duplication or disagreement that one obvious direct route cannot close, open `E.24` to test the proposed shared subject. The schema's shape supplies none of those facts.
+Otherwise keep the epistemes separate and state only the exact collection, publication, representation, or meeting-use relation that obtains.
+
+The column arrangement is a publication form only when selected to express an identified episteme for the meeting. The form is not a `U.ChangeItem`, and its columns are not ontic slots. If the project later needs a local kind of records for a query, `C.3.2` may classify those records as records.
+
+If a later blocked use has an independently recoverable inquiry subject, named consumers and concrete cross-pattern duplication or disagreement that one obvious direct route cannot close, open `E.24` to test the proposed shared subject. The schema's shape supplies none of those facts.
 
 #### E.24.CD:5.5 - Current configuration around a holon
 
 A maintenance review asks about “the current configuration around Pump #14.” Identify Pump #14 under its system governor, then recover only the characteristic or state claims, actual part relations, temporal phase, and other direct relations that the maintenance decision uses. If the work compares a possible configuration, identify the possible-state episteme and its direct state or configuration claims rather than asserting current actuality.
 
-A separate C.2.1 description episteme may provide claim-bearing orientation. Its exact EntityOfConcern and any grounding holon in a separately current `EpistemeEmpiricalGroundingRelation` neither identify Pump #14 nor turn the surrounding claims into one world-side object. The holon and those current relations answer the question; their conjunction is not `U.Situation`.
+A separate C.2.1 description episteme may provide claim-bearing orientation. Its EntityOfConcern and any grounding holon in a separately current `EpistemeEmpiricalGroundingRelation` neither identify Pump #14 nor turn the surrounding claims into one world-side object. The holon and those current relations answer the question; their conjunction is not `U.Situation`.
 
 #### E.24.CD:5.6 - Operating pump with connected parts
 
-Pump #14 is operating while a sensor, valve, and controller are connected. `Operating` first cues a governed state claim; it does not establish `U.Work` or `U.Transformation`. Connectedness does not establish parthood. Identify the pump and connected entities, state the exact connection relations, and use `A.14` only for part relations whose predicates actually obtain.
+Pump #14 is operating while a sensor, valve, and controller are connected. `Operating` first cues a governed state claim; it does not establish `U.Work` or `U.Transformation`. Connectedness does not establish parthood. Identify the pump and connected entities, state the exact connection relations, and use `A.14` only for part relations whose predicates obtain.
 
-Add dated maintenance or control `U.Work` only after every precise performer has an A.13 core and A.15.1 independently identifies the Work's performance history, Method, time, containing System, and performers. Add F.6 only when the recovered situation account also needs precise assignment-bound attribution. A local system-role kind and its classification remain separate. A short situation-recovery sentence may omit identifiers its receiving use does not need. If maintenance or control is merely intended, keep it as an A.15.2 WorkPlan or other modal claim; it creates neither Work nor assignment. Add an actual bounded change under `A.3.4` only when its changed referent, boundary, conditions, and change facts obtain. No bundle of system, state, connection, work, and change becomes a situation entity.
+Add dated maintenance or control `U.Work` only after every precise performer has an A.13 core and A.15.1 independently identifies the Work's performance history, Method, time, containing System, and performers. Add F.6 only when the recovered situation account also needs precise assignment-bound attribution. A local system-role kind and its classification remain separate. A short situation-recovery sentence may omit identifiers its receiving use does not need.
+
+If maintenance or control is merely intended, keep it as an A.15.2 WorkPlan or other modal claim; it creates neither Work nor assignment. Add an actual bounded change under `A.3.4` only when its changed referent, boundary, conditions, and change facts obtain. No bundle of system, state, connection, work, and change becomes a situation entity.
 
 #### E.24.CD:5.7 - Multi-party emergency
 
-An emergency report mentions a leaking vessel, an overheated subsystem, a suppression system, and response teams. Recover each participating System and each actual change separately. For every dated response claimed as `U.Work`, recover each precise performer's A.13 core and independently admit the occurrence under A.15.1 as stated in `E.24.CD:5.6`; add F.6 only when the current account also needs exact assignment-bound attribution. Keep any local system-role classification separate. Keep an intended response as a plan or other modal content until it occurs. State temporal relations through their temporal patterns and a causal relation through `C.28` only when that claim is current and supported.
+An emergency report mentions a leaking vessel, an overheated subsystem, a suppression system, and response teams. Recover each participating System and each actual change separately.
+
+For every dated response claimed as `U.Work`, recover each precise performer's A.13 core and independently admit the occurrence under A.15.1 as stated in `E.24.CD:5.6`; add F.6 only when the current account also needs exact assignment-bound attribution. Keep any local system-role classification separate.
+
+Keep an intended response as a plan or other modal content until it occurs. State temporal relations through their temporal patterns and a causal relation through `C.28` only when that claim is current and supported.
 
 Use a C.2.1 emergency-description episteme only when the receiving work needs claim-bearing orientation across those objects. The emergency word, the record, and the co-presence of several systems and works identify neither `U.IncidentSituation` nor another bundled whole. Stop decomposition once the response decision has the exact subjects and relations it needs.
 
@@ -207,17 +229,21 @@ Use a C.2.1 emergency-description episteme only when the receiving work needs cl
 
 Two specification epistemes state constraints that cannot both hold under one declared `FormalSubstrate` and applicability. Identify the exact claims or epistemes, name that formal substrate, and state the exact inconsistency or consequence relation under its direct formal governor. Use `C.29` when using the formalism as a mathematical lens leaves a representation, transfer or reliance question unresolved.
 
-The formal relation may guide a later decision or repair-work occurrence, but it establishes no project-world event, work, transformation, causal relation, adverse episode, actual Problem, or situation entity. Formal consequence is not causation. Inconsistent descriptions do not make their world-side subjects inconsistent without a separately governed bridge claim. If the exact relation or substrate cannot be named, leave the formal claim unresolved rather than letting the word `inconsistency` stand for it.
+The formal relation may guide a later decision or repair-work occurrence, but it establishes no project-world event, work, transformation, causal relation, adverse episode, actual Problem, or situation entity. Formal consequence is not causation.
+
+Inconsistent descriptions do not make their world-side subjects inconsistent without a separately governed bridge claim. If the exact relation or substrate cannot be named, leave the formal claim unresolved rather than letting the word `inconsistency` stand for it.
 
 #### E.24.CD:5.9 - Architecture diagram
 
-An architecture diagram may carry claims about selected structures of one holon. If the diagram is selected as one claim-bearing whole, C.2.1 identifies that episteme. The same episteme has `U.View` membership only when E.17.0 conformance obtains; its publication form and carrier use E.24.PUB; C.30.AD governs its architecture-description adequacy and correspondence to the independently recovered subject. Use A.6.3.RT if a representation-scheme transition is claimed, and C.29 for an unresolved mathematical representation, transfer or reliance question.
+An architecture diagram may carry claims about selected structures of one holon. If the diagram is selected as one claim-bearing whole, C.2.1 identifies that episteme.
 
-The diagram does not become the architecture, structure, or ontic by being visible. If the current work is simply to correct one architectural claim, apply the architecture and structure patterns directly.
+The same episteme has `U.View` membership only when E.17.0 conformance obtains; its publication form and carrier use E.24.PUB; C.30.AD governs its architecture-description adequacy and correspondence to the independently recovered subject. Use A.6.3.RT if a representation-scheme transition is claimed, and C.29 for an unresolved mathematical representation, transfer or reliance question.
+
+The diagram does not become the architecture, structure, or ontic by being visible. If the current work is to correct one architectural claim, apply the architecture and structure patterns directly.
 
 #### E.24.CD:5.10 - Broad source word
 
-A source says that a method “supports” production. If the author can recover a specific required-effect, method-use, work-enactment, capability, evidence-use, or other direct claim, apply its subject pattern. If the source word still compresses several claims, use E.10 and E.10.ARCH to retain it only with its bounded meaning or in quote-only or reduced use.
+A source says that a method “supports” production. If the author can recover a required-effect, method-use, work-enactment, capability, evidence-use, or other direct claim, apply its subject pattern. If the source word still compresses several claims, use E.10 and E.10.ARCH to retain it only with its bounded meaning or in quote-only or reduced use.
 
 Do not open E.24 merely because `support` recurs, and do not invent `SupportRelation` as the candidate.
 
@@ -231,7 +257,7 @@ The table does not admit `U.CharacteristicSpace` by appearance and does not requ
 
 
 
-This pattern intentionally biases toward early recovery of the real subject and the blocked work. It resists:
+This pattern favors early recovery of the real subject and the blocked work. It resists:
 
 - **publication-form bias:** treating a card, schema, table, or record as the subject matter;
 - **wording bias:** treating a repeated word as a kind or relation decision;
@@ -239,7 +265,7 @@ This pattern intentionally biases toward early recovery of the real subject and 
 - **scoring bias:** rating a candidate before its subject, identity rule, direct relations, and practical use are known;
 - **semio-bias:** discussing forms and labels while the governed subject and claim disappear.
 
-The mitigation is concrete: name the work, subject, needed claim, pattern that states it, applicable disposition, next action, and stop or return. Open E.24 from the detection facts in section 4.3; the identity rule and relation set remain its settlement question.
+Name the work, the subject and claim you can identify, and the applicable pattern or missing fact. State the disposition, next action and stop or return condition. Open E.24 from the detection facts in section 4.3; the identity rule and relation set remain its settlement question.
 
 ### E.24.CD:7 - Conformance Checklist
 
@@ -249,18 +275,18 @@ The mitigation is concrete: name the work, subject, needed claim, pattern that s
 | `CC-E24CD-2` | A visible card, row, schema, diagram, filename, or field bundle is not treated as the subject merely by form. |
 | `CC-E24CD-3` | Independently governed objects and direct predicates are recovered before a new ontic or kind is proposed. |
 | `CC-E24CD-4` | A current subject pattern is applied when it already closes the needed claim. A relation-bearing claim that no current predicate closes goes through A.6.RCD; a local compound claim or predicate-definition episteme is not thereby a relation kind or occurrence. |
-| `CC-E24CD-5` | One C.2.1 episteme requires one exact ClaimGraph, one truthful exact EntityOfConcern, and one effective ReferenceScheme. Otherwise epistemes remain separate, and co-use or co-publication supplies no shared identity. |
+| `CC-E24CD-5` | One C.2.1 episteme requires one exact ClaimGraph, one exact EntityOfConcern for those claims, and one effective ReferenceScheme. Otherwise epistemes remain separate, and co-use or co-publication supplies no shared identity. |
 | `CC-E24CD-6` | Local classification uses C.3.2's kind, signature, judgment, and optional extension distinction and does not imply a public `U.*` kind or direct classification relation. |
 | `CC-E24CD-7` | Episteme, view membership, publication form, representation, carrier, and publication occurrence remain separate and use their subject patterns only when current. |
 | `CC-E24CD-8` | E.24 opens from a blocked use, an independently recoverable candidate, proposal, or source construct, concrete duplication or disagreement pressure across named patterns, named plausible consumers, and failure of one obvious direct route. E.24.CD supplies those entry facts; E.24 owns the identity rule, minimal relation set, dependent-use judgement, non-duplication result, practical gain, declared use, and applicability limits, and may return unresolved. |
 | `CC-E24CD-9` | Any public U-kind question is handled by E.24.UK as a separate admission result; E.24.CD admits neither ontic nor kind. |
 | `CC-E24CD-10` | No candidate cluster, registry, scorecard, or mandatory disposition form is created. |
-| `CC-E24CD-11` | The result names the exact pattern applied to the exact subject or claim, or a precise unresolved stop, and gives the next action or return condition. Any denied reading passes `F.19`'s grounded-contribution test. |
+| `CC-E24CD-11` | The result names the pattern applied and the subject or claim it governs, or a precise unresolved stop, and gives the next action or return condition. Any denied reading passes `F.19`'s grounded-contribution test. |
 | `CC-E24CD-12` | A record-shaped false candidate keeps holder, status bearer and value, method, mechanism, plan, work, evidence item and use, result and relation, target and subject relation, and source and source-use relation distinct; absent fields and row shape establish none of them. |
 | `CC-E24CD-13` | Bare *role* uses E.10.ROLE and then the recovered branch; ambiguous relation, slot, interface, function, and endpoint wording uses its matching precision-restoration pattern. None becomes ontology by wording alone. |
 | `CC-E24CD-14` | Declarative-form agency is blocked through C.2.P.DR, and reusable naming starts in F.18 only after the governed value and any needed relation settlement are available. |
 | `CC-E24CD-15` | Wording such as `situation`, `incident`, `current configuration`, `operating <system>`, or `emergency` recovers only the Systems, claims, Work, change, and temporal or causal relations needed by the current use; their conjunction creates neither `U.Situation` nor `U.IncidentSituation`. Every asserted actual Work first recovers each precise performer's A.13 core and is independently admitted under A.15.1 from its performance history, Method, time, and containing System. F.6 is added only when precise assignment-bound attribution is also current; local system-role-kind classification remains separate. Intended action stays plan or other modal content until its predicates obtain. |
-| `CC-E24CD-16` | Arbitrary fusion, co-presence, connectedness, or a chosen boundary creates no whole. Only a surviving constructed-object candidate is tested for exact inputs, whole-forming relations, and identity under B.1, A.14, C.13, and B.2 when reidentification is current. |
+| `CC-E24CD-16` | An arbitrary fusion, co-presence, connectedness, or a chosen boundary is insufficient on its own to establish a whole. Only a surviving constructed-object candidate is tested for exact inputs, whole-forming relations, and identity under B.1, A.14, C.13, and B.2 when reidentification is current. |
 | `CC-E24CD-17` | Mathematical inconsistency names exact claims or epistemes, the declared formal substrate, and the direct inconsistency or consequence relation; it establishes no world event, causation, Work, Transformation, Problem, or situation. |
 | `CC-E24CD-18` | A ProblemCard, signal, forecast, scenario, formulation, actual Problem, and later problematization or work remain under C.22.2, C.22.PFR, and their exact continuation governors rather than one card-derived ontic. |
 
@@ -273,8 +299,8 @@ The mitigation is concrete: name the work, subject, needed claim, pattern that s
 | Column-to-participant jump | A field label is treated as a relation-participant meaning, or a filled field as an actual participant; either is called a `SlotSpec` because of column position. | Recover the direct predicate, its relation-participant meanings, and its actual participants first. Keep the field as a representation element or participant designation; under `A.6.5`, declare a `SlotSpec` only inside a needed `RelationSignature` for that already recovered relation. |
 | One-word candidate | A broad word is renamed and treated as settled. | Recover the subject and predicate; use F.19 when only wording remains and E.10 for unresolved meanings. |
 | Local-kind inflation | A useful project criterion is promoted to durable public ontology. | Use C.3.2 and keep the local kind, declaration, judgment, and extension distinct. |
-| Registry trap | The author keeps a list of possible ontics without deciding the blocked case. | State the work, apply one truthful subject pattern or name one precise unresolved stop, and stop. |
-| Scoring before identity | A score form is filled before the subject and direct relation gap are known. | Recover the subject, identity rule, dependent uses, and missing coordination; use A.19.ECS only for an actual comparison. |
+| Registry trap | The author keeps a list of possible ontics without deciding the blocked case. | State the blocked work. Apply the subject pattern that fits, or stop and name what remains unresolved. |
+| Scoring before identity | A score form is filled before the subject and direct relation gap are known. | Recover the subject, identity rule, dependent uses, and missing coordination; use A.19.ECS when the work needs evaluation characteristics for comparing alternatives. |
 | Repetition-as-admission | Several forms or patterns share a label, so an ontic is inferred. | Require the detection facts in section 4.3: a blocked use, an independently recoverable inquiry subject, concrete cross-pattern pressure, named consumers and no sufficient obvious direct route. Let E.24 settle identity and the relation set. |
 | Negative-catalogue repair | The text lists only what the candidate is not. | State the positive subject, claim, direct pattern, and next action. |
 
@@ -290,15 +316,21 @@ Positive consequences:
 
 Costs:
 
-- the author must recover the subject and needed claim before choosing a subject pattern or unresolved stop;
+- choosing a subject pattern requires identifying the subject and needed claim; an unresolved stop identifies what is missing;
 - some attractive names are lowered to local kinds, source wording, epistemes, publication forms, or representations;
-- a genuine durable candidate still requires the full E.24 decision and, when current, a separate E.24.UK admission result.
+- a proposal for a durable ontic requires the full E.24 decision and, when current, a separate E.24.UK admission result.
 
 ### E.24.CD:10 - Rationale
 
 Ontic candidates rarely arrive as pure ontology. They appear through the forms people use: project tables, cards, schemas, diagrams, source packets, draft rows, examples, and repeated words. Those forms reveal working concerns, but they do not decide what exists, what relation obtains, or what FPF kind is needed.
 
-The pattern therefore asks for one first-use disposition instead of a candidate record. Keep direct claims in their direct patterns; use C.2.1 only when one exact ClaimGraph, one truthful EntityOfConcern, and one effective ReferenceScheme constitute an episteme; and use C.3.2 for local classification. Keep publication in E.24.PUB, subject-description correspondence with its applicable pattern, representation-scheme transition in A.6.3.RT and unresolved mathematical representation, transfer or reliance questions with C.29. Use C.2.P.DR to block action inferred from declarative form; resolve ambiguous wording through A.6.RSIR, A.6.F, A.6.P, or E.10; and name only an already governed value through F.18. Open E.24 when the detection facts in section 4.3 make shared ontology a live question that those simpler applications do not close.
+The pattern therefore asks for one first-use disposition instead of a candidate record.
+
+Keep direct claims in their direct patterns; use C.2.1 only when one exact ClaimGraph, one EntityOfConcern for those claims, and one effective ReferenceScheme constitute an episteme; and use C.3.2 for local classification.
+
+Keep publication in E.24.PUB, subject-description correspondence with its applicable pattern, representation-scheme transition in A.6.3.RT and unresolved mathematical representation, transfer or reliance questions with C.29. Use C.2.P.DR to block action inferred from declarative form; resolve ambiguous wording through A.6.RSIR, A.6.F, A.6.P, or E.10; and name only an already governed value through F.18.
+
+Open E.24 when the detection facts in section 4.3 make shared ontology a live question that those simpler applications do not close.
 
 This order keeps the first move affordable and falsifiable. Another author can see which fact selected the applicable pattern or unresolved stop and what to do next. A list of candidate fields or scores would make the form look authoritative and invite optimization of the record instead of settlement of the subject.
 
@@ -312,7 +344,7 @@ This order keeps the first move affordable and falsifiable. Another author can s
 | CYC microtheory line. | Lineage-only caution: context-bounded knowledge modules are a useful analogy for contradiction locality and scope-bounded ontology fragments. | Do not cite CYC as current decisive support for FPF ontic design and do not import CYC architecture as FPF law. |
 | OWL, SKOS, RDF, and triple-store practice. | Infrastructure and expression lineage: these lines carry ontology descriptions, vocabulary links, queries, and serialization forms. | Use them as expression and publication caution only; they do not substitute for `U.Ontic`, do not show that labels are ontology, and do not answer FPF ontic modularization by themselves. |
 
-Smallest source-currentness reopen trigger: reopen this SoTA slice when a newer ontology-engineering or data-model-to-ontology source changes the selected criteria for reusable subject identity, minimal relation sets, bounded scope, validation, or source-form overread; do not reopen it merely because a new vocabulary, serialization, or KG tool appears.
+Reopen this source comparison when a newer ontology-engineering or data-model-to-ontology source changes the selected criteria for reusable subject identity, minimal relation sets, bounded scope, validation, or source-form overread; do not reopen it merely because a new vocabulary, serialization, or KG tool appears.
 
 ### E.24.CD:12 - Relations
 

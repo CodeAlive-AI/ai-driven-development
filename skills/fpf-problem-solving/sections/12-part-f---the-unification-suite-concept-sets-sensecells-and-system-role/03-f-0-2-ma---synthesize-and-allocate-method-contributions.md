@@ -8,7 +8,7 @@
 
 **Use this when.** You have recovered useful Method-related material from several sources, but still have to decide which contributions belong together and where they should be used. Documentary sources and accounts recovered from practice may use the same words for different actions, or different words for the same useful move.
 
-The working reader is a Method engineer building or revising descriptions, a repertoire or a pattern language. Begin with one disputed allocation: **which recovered contribution should this description or pattern carry, and what would be lost by placing it there?**
+As a Method engineer building or revising descriptions, a repertoire or a pattern language, begin with one disputed allocation: **which recovered contribution should this description or pattern carry, and what would be lost by placing it there?**
 
 The first useful result is one justified allocation. For example: “Use the existing coherence-checking Method; keep this source's narrower qualification window with the affected description claim; leave the observed shortcut as a candidate account.” Stop there if it settles the receiving decision.
 
@@ -32,18 +32,18 @@ A vocabulary crosswalk or chapter-to-pattern table does not decide these differe
 
 ### F.0.2.MA:4 - Solution
 
-F.0.2 returns a source-grounded synthesis, contrast or unresolved inquiry. Here the receiving action is allocation of Method content: what existing operation answers the question, what constructive condition remains, and which body or direct source must carry it. Use the synthesis directly if it already supplies that allocation.
+F.0.2 returns a source-grounded synthesis, contrast or unresolved inquiry. To allocate Method content, decide which existing operation answers the question, what constructive condition remains, and which body or direct source must carry it. Use the synthesis directly if it already supplies that allocation.
 
-Reconcile meanings before assigning destinations. Preserve every difference that changes the receiving Method use, and make the allocation's source return recoverable.
+Reconcile meanings before assigning destinations. Preserve every difference that changes the receiving Method use, and show how to return to the sources behind the allocation.
 
 #### F.0.2.MA:4.1 - Work one allocation
 
 1. **Name the receiving use and contribution.** Identify the description, Method question or pattern-language use being changed. Take the recovered source claim together with its difficulty or opportunity, proposed action, result, conditions and source location.
 2. **Keep the input roles distinct.** A documentary claim remains what that source asserts. A returned MR account keeps its candidate, rival and evidence limits. A current FPF/DPF result keeps its declared scope. A source's report that work occurred is not independent occurrence evidence.
-3. **Resolve only the meaning difference that matters.** Use F.0.1 when a source expression is ambiguous, F.1 when the source cut is insufficient, and F.0.2 when cross-source synthesis is needed. Use its provisional synthesis, contrast or unresolved-inquiry result, with its source edition, grounds and any disposition already made. Preserve a locator when later citation needs it; a similarity score does not replace the comparison.
+3. **Resolve only the meaning difference that matters.** Use F.0.1 when a source expression is ambiguous, F.1 when the source cut is insufficient, and F.0.2 when cross-source synthesis is needed. Use F.0.2’s provisional synthesis, contrast or unresolved-inquiry result, with its source edition, grounds and any disposition already made. Preserve a locator when later citation needs it; a similarity score does not replace the comparison.
 4. **Subtract the current answer by value.** Open the current FPF or DPF supplier that appears to cover the contribution. Compare the practitioner question, action, first result, applicability and stop. Use the supplier directly if it answers those positions. When a source adds a warranted Method-specific condition or move, retain that remainder and explain its receiving use.
 5. **Decide whether the contributions can share an account.** Compare reusable action, participant meanings, preconditions, result, variation and stop. Merge supported common content while retaining different conditions. Split incompatible actions or statuses. Keep an unresolved alternative when the evidence cannot distinguish them. A.3.1.QM and B.1.5.CM settle any Method or whole claim needed by the allocation.
-6. **Assign the contribution and its remainder.** State what is reused from current supply; what is added to or changes a Method description or pattern; what remains direct source material; and what is unresolved. Allocate the shared construction by its actual premises. A Method, corpus or publication can be the subject of a transdisciplinary operation. Retain a domain contribution where its action depends on that discipline's substantive knowledge; do not infer either Core placement or exclusion from the subject's name.
+6. **Assign the contribution and its remainder.** Identify the existing result to reuse, the addition or change to a Method description or pattern, the material to keep at its source and any unresolved question. Allocate the shared construction by its premises. A Method, corpus or publication can be the subject of a transdisciplinary operation. Retain a domain contribution where its action depends on that discipline's substantive knowledge; do not infer either Core placement or exclusion from the subject's name.
 7. **Make the decision usable and revisable.** Give the reader the contribution, reason, destination, retained difference, source return and next action. If a later user will cite the allocation, keep a stable local locator with its edition. Name the source or supplier change that reopens it.
 
 A one-contribution answer is enough. Expand to several allocations only when their overlap, omissions or shared conditions change the language or receiving decision.
@@ -54,7 +54,7 @@ A pattern may present the reusable action and still leave a worked derivation, l
 
 When contributions merge, retain the reason that their common action is usable under the resulting conditions. When they split, preserve the action-changing difference and the relation between the resulting accounts. Shared terminology, publication order and apparent granularity are not sufficient reasons for either decision.
 
-The allocation concerns source contributions and their uses. It is not a Method-composition result. Actual Method parts are independently identified Methods related through B.1.5; a pattern body, tool, source fragment or source-recovery step is not a part by position.
+The allocation concerns source contributions and their uses. It is not a Method-composition result. Method parts are independently identified Methods related through B.1.5; a pattern body, tool, source fragment or source-recovery step is not a part by position.
 
 #### F.0.2.MA:4.3 - A compact retained answer
 
@@ -75,7 +75,7 @@ Use ordinary prose instead of a table when it is clearer. A retained allocation 
 
 #### F.0.2.MA:5.1 - One review action, two conditions and a candidate shortcut
 
-This is a constructed case. A Method engineer is preparing guidance for reusing an earlier review of a Method description.
+In this constructed case, a Method engineer is preparing guidance for reusing an earlier review of a Method description.
 
 - Handbook H, edition 3, §4, says to reuse the earlier review when only the description's display changes.
 - Paper L, edition 1, §2, says that reuse also depends on the same reviewed claims, question and qualification window.
@@ -92,17 +92,17 @@ The engineer's allocation is:
 | Shortening the warning | Retain W's rival accounts and the missing comparison. Do not create an admitted “shortcut Method” from one reported occurrence. |
 | Layout instructions for the handbook's publishing tool | Keep them in H. They do not belong in the reusable Method claim. |
 
-The first useful result is the conditional reuse answer. A description author can now state the condition and the return to A.3.1.CC.
+The first useful result is the conditional reuse answer. A description author can state the condition and the return to A.3.1.CC.
 
 #### F.0.2.MA:5.2 - A changed source does not erase a former result
 
-Later, H is available only as excerpts. The retained dossier contains merely a locator for the argument used by the allocation, and a new receiving use requires checking that argument. Return that recheck as unavailable and lower the dependent use. Preserve the earlier result with its historical basis, L's independently supported condition and unrelated allocations. Reopen only what relied on the missing argument.
+Later, only excerpts of H are available. Neither they nor the retained dossier contain the argument needed for the new use; the dossier gives its locator. Report that the argument cannot be rechecked and limit the dependent use to what the available evidence supports. Preserve the earlier result with its historical basis, L's independently supported condition and unrelated allocations. Reopen only what relied on the missing argument.
 
 If the complete argument had already been preserved with a suitable basis, loss of current website access alone would not establish that the earlier claim was wrong.
 
 ### F.0.2.MA:6 - Bias-Annotation
 
-A source familiar to the engineer can become the vocabulary into which every other source is translated. Counter this by stating each source's action-changing meaning before merging. A desire for a neat language can also make every contribution look like a new Method; retain the non-Method and unresolved material that the receiving use actually needs.
+A source familiar to the engineer can become the vocabulary into which every other source is translated. Counter this by stating each source's action-changing meaning before merging. A desire for a neat language can also make every contribution look like a new Method; retain the non-Method and unresolved material that the receiving use needs.
 
 The worked case illustrates allocation decisions. It does not establish the effectiveness of review reuse in an external project.
 
@@ -128,7 +128,7 @@ The worked case illustrates allocation decisions. It does not establish the effe
 
 ### F.0.2.MA:9 - Consequences
 
-The engineer gains a language or description whose source decisions can be challenged and repaired locally. Reuse is more selective: some material disappears from the new body because a current supplier already answers it, while useful differences survive instead of being averaged away.
+The engineer gains a language or description whose source decisions can be challenged and repaired locally. Reuse becomes more selective. The new body omits material that a current supplier already provides and preserves differences that matter to the receiving use.
 
 The cost is retaining the few source and dependency facts needed for later reconsideration. For a one-off question that F.0.2 or a direct source already closes, another allocation account adds no value.
 
@@ -140,7 +140,9 @@ Keeping this result separate from A.3.1.DR lets documentary recovery remain fait
 
 ### F.0.2.MA:11 - SoTA-Echoing
 
-For the allocation question, combine source-local conceptual comparison with Method-content and use analysis. F.0.2 supplies the former; A.3.1.DR, A.3.1.QM, A.3.2.DE and the other direct Method-development results supply their respective subjects. In the H/L/W case, this allocation preserves a usable conditional review answer, rejects an unsupported shortcut-Method identification and leaves tool instructions at their source. A generic synthesis note is sufficient when it already supplies those destinations and returns; allocation is useful when one of them remains missing.
+For the allocation question, combine source-local conceptual comparison with Method-content and use analysis. F.0.2 supplies the former; A.3.1.DR, A.3.1.QM, A.3.2.DE and the other direct Method-development results supply their respective subjects.
+
+In the H/L/W case, this allocation preserves a usable conditional review answer, rejects an unsupported shortcut-Method identification and leaves tool instructions at their source. A generic synthesis note is sufficient when it already supplies those destinations and returns; allocation is useful when one of them remains missing.
 
 [Daalhuizen and Cash's Method Content Theory (2021)](https://doi.org/10.1016/j.destud.2021.101018) supplies questions about goal, procedure, rationale, framing and mindset. [Stacey et al. (2025)](https://doi.org/10.1017/dsj.2025.9) reinforces the need to retain the knowledge and use conditions around procedural guidance. Adopt these as source questions; do not turn their different models into a universal field schema or FPF parthood test.
 

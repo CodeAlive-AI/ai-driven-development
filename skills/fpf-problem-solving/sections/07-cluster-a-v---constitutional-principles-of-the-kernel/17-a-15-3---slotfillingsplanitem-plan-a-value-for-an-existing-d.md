@@ -11,7 +11,7 @@
 > **Used by:** plans that must remember a chosen future relation participant, operation argument, expected result, or another value tied to an already declared member before work begins
 
 
-**At a glance.** Use `SlotFillingsPlanItem` when a plan must preserve a concrete choice before Work begins—for example, `Robot_8_Ref` as the planned holder for a future system-role assignment, with the assignment species named separately, or `Pump_37_Ref` as the planned `candidate` in a recognition operation. Point to the declaration member that already defines that position, and record the planned value and conditions. When a later question asks whether the choice was used, compare the established actual facts with the preserved plan. A field name, compatible type, Method phrase, form position, or plan label is not such a declaration.
+**At a glance.** Use `SlotFillingsPlanItem` when a plan must preserve a choice before Work begins—for example, `Robot_8_Ref` as the planned holder for a future system-role assignment, with the assignment species named separately, or `Pump_37_Ref` as the planned `candidate` in a recognition operation. Point to the declaration member that already defines that position, and record the planned value and conditions. When a later question asks whether the choice was used, compare the established actual facts with the preserved plan. A field name, compatible type, Method phrase, form position, or plan label is not such a declaration.
 
 **Use this when.** Use this pattern only when the choice points to a member already defined in a `RelationSignature`, an A.6.1 `OperationDeclaration`, or another declaration whose own pattern states both the member's meaning and the rule for its later actual use. If the plan merely says *use this method*, *reserve this resource*, or *meet this threshold* without reusing such a member, keep ordinary A.15.2 plan content.
 
@@ -20,7 +20,7 @@
 **Working use order.**
 
 1. Identify the `U.WorkPlan` episteme and the future performance being planned. Keep the WorkPlan's already identified present EntityOfConcern unchanged.
-2. Open the declaration that will be used later and choose one member it actually defines. Verify that the declaration's own pattern states both what that member means and what must hold for actual use.
+2. Open the declaration that will be used later and choose one member it defines. Verify that the declaration's own pattern states both what that member means and what must hold for actual use.
 3. Record the declaration episteme, its local member designator, and the planned value or designation. Do not substitute a description, record, form field, or matching label.
 4. Apply the member's ValueKind, designation rule, and semantic cardinality. Add conditions and edition pins only when they can change which planned value is effective. State prohibitions, exclusions, and completeness as separate plan claims; omission is not prohibition.
 5. When a later question requires comparison, establish each claimed relation participant or operation binding independently. Identify a dated Work under A.15.1 only when that occurrence claim is needed. Compare actual with planned under the applicable policy, preserving the plan as the baseline.
@@ -29,13 +29,20 @@
 
 **Reliance-bearing use.** Add concrete reference kinds, declaration or value episteme pins, alternative-selection conditions, target-declared cardinality, and a later comparison policy only when coordination, replay, audit, or work-entry preparation would change without them.
 
-**Stop condition.** Finish with one of these results. (1) The row resolves to an existing declaration member, and the planned value meets its ValueKind, designation, cardinality, and condition rules. (2) No reusable member is needed, so the choice stays ordinary A.15.2 plan content. (3) Typed reuse is needed but the member, its meaning, its actual-use rule, or the pattern that defines them is missing; return `missing-governor` for that planned use. (4) Required planning information is missing or unresolved; name what must be recovered (§12b). Do not invent a SlotSpec, wrapper declaration, generic field, or actual-use relation here.
+**Stop condition.** Finish with one of these results.
+
+1. The row resolves to an existing declaration member, and the planned value meets its ValueKind, designation, cardinality, and condition rules.
+2. No reusable member is needed, so the choice stays ordinary A.15.2 plan content.
+3. Typed reuse is needed but the member, its meaning, its actual-use rule, or the pattern that defines them is missing; return `missing-governor` for that planned use.
+4. Required planning information is missing or unresolved; name what must be recovered (§12b).
+
+Do not invent a SlotSpec, wrapper declaration, generic field, or actual-use relation here.
 
 **What goes wrong if missed.** A plan silently turns method prose or a schema field into a slot, treats type compatibility as planned or actual participation, treats omission or an empty filler as a prohibition, or later edits the baseline to match what happened.
 
 **What this buys.** The team can later say what it intended, what actually happened, and whether the two differ, while the declaration, plan, work, and actual participation remain separate objects.
 
-**Not this pattern when.** Use the exact declaration predicate and ClaimGraph located through `A.6.5`, `A.6.1`, or another declared-member source when defining the member; use A.15.2 for ordinary intended work without a planned filling; use A.15.1 for dated work; and use the exact applicable predicates for actual relation participation, operation bindings, methods, evidence, assurance, gates, acceptance, results, publication, or representation.
+**Not this pattern when.** Use the declaration predicate and ClaimGraph located through `A.6.5`, `A.6.1`, or another declared-member source when defining the member; use A.15.2 for ordinary intended work without a planned filling; use A.15.1 for dated work; and use the applicable predicates for actual relation participation, operation bindings, methods, evidence, assurance, gates, acceptance, results, publication, or representation.
 
 ### A.15.3:1 - Context
 
@@ -88,7 +95,7 @@ Each row points to one member in one declaration episteme selected for the inten
 | expected result of a future operation application | one `ResultDeclaration` in one A.6.1 `OperationDeclaration` | A.6.1 and the cited mechanism define result meaning and the result-binding predicate; an expected value is not a returned value |
 | another declared future use | one declaration member whose own pattern defines both the member meaning and its actual-use predicate | cite that pattern and declaration; if either definition is absent, return `missing-governor` instead of inventing a target |
 
-A `U.MethodDescription` is not a target merely because it mentions inputs, effects, parameters, bounds, or acceptance conditions. A table or form exposes an A.6.5 SlotSpec only when a cited `RelationSignature` actually contains that SlotSpec. Operation arguments and results stay in A.6.1 declarations; planning them does not turn them into A.6.5 SlotSpecs.
+A `U.MethodDescription` is not a target merely because it mentions inputs, effects, parameters, bounds, or acceptance conditions. A table or form exposes an A.6.5 SlotSpec only when a cited `RelationSignature` contains that SlotSpec. Operation arguments and results stay in A.6.1 declarations; planning them does not turn them into A.6.5 SlotSpecs.
 
 One item may contain several rows when they serve the same intended performance, baseline policy, and rule for revising the plan. Each row still resolves to its own declared member. Split the item when those three controls differ. The WorkPlan's present EntityOfConcern remains its C.2.1 identity discriminator; a merely possible future performance does not replace it.
 
@@ -157,7 +164,7 @@ The row plans a value; it is not an application or binding. An actual argument b
 
 When actual use is compared with the plan, establish the relation participation under its obtaining predicate or the operation argument/result binding under A.6.1. A plan row, matching label, type or value supplies none of those facts by itself. Add an independently admitted A.15.1 Work identity only when the comparison also consumes that dated occurrence claim.
 
-If the team must state whether actual use matched the plan, name the comparison policy and the independently established actual facts. A one-off comparison may use A.6.RCD disposition 2 for a local compound assertion. Repeated parameterized comparisons may use disposition 3: keep a compound law subject-bounded when every reuse concerns one exact subject, or identify a reusable predicate-definition episteme when the rule is used across subjects. Do not admit a comparison relation kind unless a named receiving use needs distinct comparison occurrences as such; then name that use and follow relation-kind admission. None of these comparisons changes the WorkPlan or creates a universal planned-to-actual relation.
+If the team must state whether actual use matched the plan, name the comparison policy and the independently established actual facts. A one-off comparison may use A.6.RCD disposition 2 for a local compound assertion. Repeated parameterized comparisons may use disposition 3: keep a compound law subject-bounded when every reuse concerns one subject, or identify a reusable predicate-definition episteme when the rule is used across subjects. Do not admit a comparison relation kind unless a named receiving use needs distinct comparison occurrences as such; then name that use and follow relation-kind admission. None of these comparisons changes the WorkPlan or creates a universal planned-to-actual relation.
 
 An unplanned participant is still an actual participant when the relation's obtaining predicate holds for the complete participant set. To say that a planned value was missing, excluded, or substituted, apply the comparison policy's closure or negative criterion to the case facts. Return `missing-information` when facts required to decide the comparison are unavailable; return `missing-governor` when the required comparison predicate or policy rule is absent.
 
@@ -185,7 +192,9 @@ With that declaration available, the typed row points to its `HolderSystemSlot` 
 
 #### A.15.3:5.2 - Planned argument and expected result against A.6.1
 
-A team plans one Pump #37 recognition evaluation. It expects the application to use Pump #37 as `candidate` and return `true` if the cited criterion, construction facts, reidentification rule, interpretation basis, and required fastening-relation fact are available and determine satisfaction. The condition reference records that expectation; it makes none of those claims true. `Pump37-Classification-Plan-E1_Ref` identifies the WorkPlan, `HolonRecognitionMechanism-E1_Ref` identifies the cited A.6.1:5.7 mechanism episteme, and `Pump37-ExpectedTrue-Conditions-E1_Ref` identifies the separate condition claims. The WorkPlan concerns the already admitted Pump #37, uses `PumpMaintenanceEvaluationScheme-E1`, and coordinates intended `HolonRecognitionEvaluation@FPF` during 10:00–10:15 UTC on 2026-07-21 with intended performer `RecognitionEvaluator_A`. These are planning claims; the later application below is established separately.
+A team plans one Pump #37 recognition evaluation. It expects the application to use Pump #37 as `candidate` and return `true` if the cited criterion, construction facts, reidentification rule, interpretation basis, and required fastening-relation fact are available and determine satisfaction. The condition reference records that expectation; it makes none of those claims true. `Pump37-Classification-Plan-E1_Ref` identifies the WorkPlan, `HolonRecognitionMechanism-E1_Ref` identifies the cited A.6.1:5.7 mechanism episteme, and `Pump37-ExpectedTrue-Conditions-E1_Ref` identifies the separate condition claims.
+
+The WorkPlan concerns the already admitted Pump #37, uses `PumpMaintenanceEvaluationScheme-E1`, and coordinates intended `HolonRecognitionEvaluation@FPF` during 10:00–10:15 UTC on 2026-07-21 with intended performer `RecognitionEvaluator_A`. These are planning claims; the later application below is established separately.
 
 The WorkPlan carries this copyable planning content:
 
@@ -289,7 +298,7 @@ If a cited declaration exposes an A.6.1 argument or result, a `RelationSignature
 
 Planning needs a way to preserve intended values without turning every planning field into ontology. Existing `RelationSignature` SlotSpecs, A.6.1 operation declarations, and other declarations already define reusable member meanings and actual-use predicates. A.15.3 records only the intended use of those members inside one WorkPlan.
 
-The split is concrete: the declaration pattern defines member meaning and actual-use rule; A.6.5 or A.6.1 defines the applicable declaration form; the WorkPlan records intention under C.2.1 and A.15.2. Establish a later application, relation occurrence, result or comparison under its own predicate. Identify dated Work only when its occurrence is claimed. The planning row supplies none of those actual-use facts by itself.
+The declaration pattern defines member meaning and actual-use rule; A.6.5 or A.6.1 defines the applicable declaration form; the WorkPlan records intention under C.2.1 and A.15.2. Establish a later application, relation occurrence, result or comparison under its own predicate. Identify dated Work only when its occurrence is claimed. The planning row supplies none of those actual-use facts by itself.
 
 ### A.15.3:11 - SoTA-Echoing
 

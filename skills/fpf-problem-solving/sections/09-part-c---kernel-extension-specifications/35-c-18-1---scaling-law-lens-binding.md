@@ -7,7 +7,7 @@
 
 **What goes wrong if missed.** Teams compare unequal budgets, call coverage telemetry an objective, claim a knee without probe evidence, or assume more scale means linear improvement across a window where the behavior has already changed.
 
-**What this buys.** A compact scale-law lens: declare the scale variables, ScaleWindow, probe points, elasticity class, parity notes, and policy thresholds before treating an empirical scale claim as usable in selection, parity, refresh, shipping, or mathematical-lens work.
+**What this buys.** A scale-law lens: declare the scale variables, ScaleWindow, probe points, elasticity class, parity notes, and policy thresholds before treating an empirical scale claim as usable in selection, parity, refresh, shipping, or mathematical-lens work.
 
 **Purpose.** Declare which scale variables change, the ScaleWindow and the supported behavior class. Numeric fits remain domain work. G.9 governs parity, and a selector policy must admit any decision use of illumination.
 
@@ -95,7 +95,7 @@ Hidden budget mismatches; averaging ordinals across families; **illumination in 
 `SLL.Card@Context` (UTS row; editioned):
 `⟨S{knobs, applicable units, phase when relevant}, ScaleWindow, Scale‑Probe{points≥2, design, uncertainty basis, seeds?, CI?}, ElasticityClass χ?, ParityNotes{iso‑scale?|loss, invariants}, BridgeIds?/Φ/Ψ, PolicyIds? (E/E‑LOG), PathSliceId?⟩`.
 
-**UTS row template (conceptual; pencil‑ready).**
+**UTS row template (conceptual).**
 `SLL.Card@Context := S=(ordered variables; applicable units=…; phase when relevant=…), ScaleWindow=[LOW…HIGH], Probe=(points=…, design=…, uncertainty basis=…, seeds?=…, CI?=…), χ?=rising|knee|flat|declining, ParityNotes=(iso=true|false; invariants=…), Bridge/Φ/Ψ=(…), PolicyIds=(…), PathSliceId=(…)`.
 
 Here `χ?` means that the class is omitted when unresolved; uncertainty is not a fifth behavior class. Keep the probe account and its limitation available to the receiving comparison. An unassigned class cannot support a class-dependent preference.
@@ -106,7 +106,7 @@ Here `χ?` means that the class is omitted when unresolved; uncertainty is not a
 
 **Trade-offs.** A supported scale claim needs observations at at least two scale points and recoverable invariants, applicable phase and uncertainty information, any seeds used, and applicable policy thresholds. Reuse of an applicable account can avoid new probing. The gain is that selectors, parity harnesses, refresh telemetry, and mathematical-lens uses can cite one bounded scale claim instead of guessing whether the observed behavior transfers.
 
-**Stop condition.** Stop at C.18.1 when the scale variable, ScaleWindow, probe basis, supported class or explicit classification limit, and parity notes suffice for the receiving question. An unresolved class can finish this inquiry while leaving a scale-dependent preference unsupported. Select further probing only when its attainable contribution to the decision warrants its burden; use C.11.DUA if that choice needs resolution. Move to `G.9`, `C.19`, `G.11`, `C.29`, or a domain annex when parity, selector policy, telemetry refresh, mathematical lens, or numeric fit becomes the live object.
+**Stop condition.** Stop at C.18.1 when the scale variable, ScaleWindow, probe basis, supported class or explicit classification limit, and parity notes suffice for the receiving question. An unresolved class can finish this inquiry while leaving a scale-dependent preference unsupported. Select further probing only when its attainable contribution to the decision warrants its burden; use C.11.DUA if that choice needs resolution. Move to `G.9`, `C.19`, `G.11`, `C.29`, or a domain annex when the next question concerns parity, selector policy, telemetry refresh, a mathematical lens, or a numeric fit.
 
 ### C.18.1:12 - Rationale
 
@@ -114,7 +114,7 @@ C.18.1 exists because scale claims are easy to overread as universal improvement
 
 ### C.18.1:12.1 - SoTA-Echoing
 
-**Which evidence is sufficient for a scale claim?** Retain the distinction in `C.29` between a consequence inside a declared mathematical model and a claim about the modelled phenomenon. The conditional cost equations in `C.19.2:5` establish their break-even horizon from the supplied assumptions; empirical probes would answer whether those assumptions describe actual handoffs. Requiring a probe for the derivation adds work without strengthening that conditional result, while using the derivation as observed performance omits the needed evidence. This pattern therefore limits its probe requirements to empirical scale claims and adapts `C.19.1`'s claim-matched evidence rule: keep real parity and uncertainty conditions, and reuse an adequate account. Reopen when the assertion extends beyond the model conditions, the empirical window or the supported uncertainty.
+**Which evidence is sufficient for a scale claim?** Retain the distinction in `C.29` between a consequence inside a declared mathematical model and a claim about the modelled phenomenon. The conditional cost equations in `C.19.2:5` establish their break-even horizon from the supplied assumptions; empirical probes would answer whether those assumptions describe actual handoffs. Requiring a probe for the derivation adds work without strengthening that conditional result, while using the derivation as observed performance omits the needed evidence. This pattern therefore limits its probe requirements to empirical scale claims and adapts `C.19.1`'s claim-matched evidence rule: keep parity and uncertainty conditions, and reuse an adequate account. Reopen when the assertion extends beyond the model conditions, the empirical window or the supported uncertainty.
 
 Scaling-law fits, knee detectors, segmented regressions and experimental-design methods support the scale claim under their own conditions. Keep the measurement, parity and selector-policy grounds required by the use. Apply `C.29` only when a mathematical representation choice, transfer or reliance question remains unresolved.
 
@@ -125,9 +125,13 @@ Scaling-law fits, knee detectors, segmented regressions and experimental-design 
 - C.27 may flag: a claim that more review capacity, tool calls, tokens, data, model capacity, parallelism, freedom of action, sprints, or another declared scale variable changes rate, learning, recovery, throughput, stabilization, or improvement.
 - This pattern keeps: scale variable, scale window, scale probes, and elasticity value.
 - Non-admissible use: more scale does not by itself establish linear improvement, and a scale word does not create a C.27 rate-change claim by itself.
-- Neighboring-pattern use: if comparison or benchmark use is current, cite G.9 for parity; if linear improvement is merely assumed, name the scale variable and scale window or state the improvement claim as an assumption.
+- Neighboring-pattern use: for a comparison or benchmark, cite G.9 for parity; if linear improvement is assumed, name the scale variable and scale window or state the improvement claim as an assumption.
 
-**Builds on:** C.16/17/18. **Coordinates with:** C.19 (lenses/policies), **G.5** (set‑returning selector), **G.9** (parity; **ParetoOnly** default; UNM/NormalizationMethod‑based mapping), **G.10** (shipping). Use C.24 only when a fixed action or option needs tool or service call planning; a scale claim about budgets or freedom of action alone does not require that plan.
+**Builds on:** C.16/17/18.
+
+**Coordinates with:** C.19 (lenses/policies), **G.5** (set‑returning selector), **G.9** (parity; **ParetoOnly** default; UNM/NormalizationMethod‑based mapping), **G.10** (shipping).
+
+Use C.24 only when a fixed action or option needs tool or service call planning; a scale claim about budgets or freedom of action alone does not require that plan.
 
 > *Pedagogical cue.* **Say what is scaled, use the probe basis and steer only by the behavior it supports.**
 

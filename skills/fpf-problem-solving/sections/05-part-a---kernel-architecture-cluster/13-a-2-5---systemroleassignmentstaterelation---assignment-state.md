@@ -8,9 +8,9 @@
 
 **Plain designations.** Say “this assignment to a system role satisfies this state condition” for the relation and “state condition for an assignment to a system role” for the predicate.
 
-Use this pattern when one exact assignment to a system role already obtains, but a method step, Work occurrence, incompatibility check, or operational gate depends on that assignment satisfying a particular condition during a particular window.
+Use this pattern when one assignment to a system role already obtains, but a method step, Work occurrence, incompatibility check, or operational gate depends on that assignment satisfying a particular condition during a particular window.
 
-Start with the practical question: **Does this exact assignment satisfy this exact state condition throughout the window that matters now?** The first useful result identifies an obtaining `SystemRoleAssignmentStateRelation` occurrence or establishes its absence; if neither is established, keep that determination unresolved. Add an assertion and evidence-use relation only when a later decision must rely on that result.
+Start with the practical question: **Does this assignment satisfy this state condition throughout the window that matters now?** The first useful result identifies an obtaining `SystemRoleAssignmentStateRelation` occurrence or establishes its absence; if neither is established, keep that determination unresolved. Add an assertion and evidence-use relation only when a later decision must rely on that result.
 
 Typical working moments include these:
 
@@ -20,15 +20,15 @@ Typical working moments include these:
 - two assignments are incompatible only while both satisfy the conditions that make them work-admitting; and
 - a model-use structure, `KindSignature`, reference scheme, or bridge changes the meaning of one predicate clause and must therefore be included in that predicate's semantic basis.
 
-**Primary EntityOfConcern.** The EntityOfConcern is one obtaining occurrence of `SystemRoleAssignmentStateRelation`. This direct relation kind is admitted under `U.Relation`. The occurrence has two participants: one exact obtaining `U.SystemRoleAssignment` occurrence and one by-value `SystemRoleAssignmentStatePredicate`. Its maximal continuous temporal extent comes from uninterrupted predicate truth while that assignment obtains.
+**Primary EntityOfConcern.** The EntityOfConcern is one obtaining occurrence of `SystemRoleAssignmentStateRelation`. This direct relation kind is admitted under `U.Relation`. The occurrence has two participants: one obtaining `U.SystemRoleAssignment` occurrence and one by-value `SystemRoleAssignmentStatePredicate`. Its maximal continuous temporal extent comes from uninterrupted predicate truth while that assignment obtains.
 
 **Primary working reader.** The intended reader defines or checks the state conditions that the next operation requires of an assignment.
 
 **What goes wrong if missed.** A system-role label is treated as current readiness. A dashboard value is substituted for the world-side state relation. Missing evidence is read as proof that the predicate is false. Capability is mistaken for Work admission. A state-machine diagram is used as both the ontology and the method order.
 
-**What this buys.** The reader can identify repeated state episodes inside one continuing assignment, keep evidence and world-side obtaining distinct, combine simultaneous conditions, and pass the exact state claim to the direct pattern governing the next decision or Work use.
+**What this buys.** The reader can identify repeated state episodes inside one continuing assignment, keep evidence and world-side obtaining distinct, combine simultaneous conditions, and pass the state claim to the direct pattern governing the next decision or Work use.
 
-**Not this pattern when.** Use `A.2` and `C.3` for the exact local system-role kind, `A.2.1` for the assignment and its holder, `A.2.2` for capability and operating envelope, `A.2.7` for relations among system-role kinds, and `A.15.1` for Work that actually occurred. Use `A.2.4` or `A.10` when the current object is the evidence-use relation rather than the assignment-state relation. A displayed status, credential entry, gate decision, or organizational position keeps its own direct pattern.
+**Not this pattern when.** Use `A.2` and `C.3` for the local system-role kind, `A.2.1` for the assignment and its holder, `A.2.2` for capability and operating envelope, `A.2.7` for relations among system-role kinds, and `A.15.1` for Work that occurred. Use `A.2.4` or `A.10` when the current object is the evidence-use relation rather than the assignment-state relation. A displayed status, credential entry, gate decision, or organizational position keeps its own direct pattern.
 
 ### A.2.5:0.1 - Kind Settlement
 
@@ -36,17 +36,19 @@ Typical working moments include these:
 
 `SystemRoleAssignmentStatePredicate` is a local ValueKind declared by this pattern, not another root U-kind. One predicate value is identified by:
 
-1. the exact local system-role kind for whose assignments it is defined;
+1. the local system-role kind for whose assignments it is defined;
 2. normalized truth-condition ClaimGraph clauses naming the governed qualities or relations tested;
 3. its temporal reading;
 4. its applicability conditions; and
-5. the exact semantic basis whose edition changes meaning, including a `KindSignature`, reference scheme, bridge, or model-use structure only when the clauses depend on it.
+5. the semantic basis whose edition changes meaning, including a `KindSignature`, reference scheme, bridge, or model-use structure only when the clauses depend on it.
 
-A displayed name such as `InspectionReady` can designate the predicate. The name alone does not identify it. `Ready@InspectorSystemRole` and `Ready@ApproverSystemRole` are different predicate values unless one separately declared predicate has one exact common domain and identical clauses, temporal reading, applicability, and semantic basis.
+A displayed name such as `InspectionReady` can designate the predicate. The name alone does not identify it. `Ready@InspectorSystemRole` and `Ready@ApproverSystemRole` are different predicate values unless one separately declared predicate has one common domain and identical clauses, temporal reading, applicability, and semantic basis.
 
 A compatible semantic-basis edition preserves the predicate only through an explicit predicate-continuity decision showing that those identity-bearing facts continue. A changed system-role kind, truth clause, temporal reading, applicability condition, or meaning-bearing semantic basis yields another predicate.
 
-A `SystemRoleAssignmentStateAssertion` is a `U.Episteme` whose EntityOfConcern is the exact assignment or an explicitly individuated state-relation occurrence, according to the claim. Its ClaimGraph names the predicate, direct claim family, and `assertionPolarity: affirmative | negative`. An affirmative claim may state a known actual extent only after A.2.5 independently establishes obtaining. A receiving evaluation may separately state its target window. Supported, refuted, or unresolved reliance belongs to `A.10` or a separately constituted evaluation result or reliance assertion. Assertion, reliance posture, evidence episteme, evidence-use relation, and world-side occurrence remain different objects.
+A `SystemRoleAssignmentStateAssertion` is a `U.Episteme` whose EntityOfConcern is the exact assignment or an explicitly individuated state-relation occurrence, according to the claim. Its ClaimGraph names the predicate, direct claim family, and `assertionPolarity: affirmative | negative`. An affirmative claim may state a known actual extent only after A.2.5 independently establishes obtaining. A receiving evaluation may separately state its target window.
+
+Supported, refuted, or unresolved reliance belongs to `A.10` or a separately constituted evaluation result or reliance assertion. Assertion, reliance posture, evidence episteme, evidence-use relation, and world-side occurrence remain different objects.
 
 A representation episteme may describe predicates, possible configurations, and possible changes. A statechart or state-machine display is a mathematical or representational lens.
 
@@ -58,7 +60,7 @@ An occurrence of a declared `U.SystemRoleAssignment` species assigns an admitted
 
 The same distinction appears in social and computational Work. An on-call person can remain assigned while conflicted or fatigued. A service can remain assigned to `ApproverSystemRole` while one predicate concerns fulfilment approval and another concerns payment authorization. A tool-using agent can expose a capability while a concrete action remains inadmissible for the current task and inputs.
 
-The engineering problem is therefore to identify the exact assignment, predicate, and interval; distinguish affirmative or negative assertion polarity from reliance posture; recognize an occurrence only while the direct predicate is true; and connect an assertion to evidence only when a consequence-bearing use needs that support.
+The engineering problem is therefore to identify the assignment, predicate, and interval; distinguish affirmative or negative assertion polarity from reliance posture; recognize an occurrence only while the direct predicate is true; and connect an assertion to evidence only when a consequence-bearing use needs that support.
 
 ### A.2.5:2 - Problem
 
@@ -99,15 +101,17 @@ This pattern defines the `RelationSignature` for `SystemRoleAssignmentStateRelat
 | `SystemRoleAssignmentSlot` | `U.SystemRoleAssignment` | `U.RelationRef` constrained to `U.SystemRoleAssignment` | The exact assignment occurrence being evaluated; its declared species remains recoverable. |
 | `StatePredicateSlot` | `SystemRoleAssignmentStatePredicate` | `ByValue` | The exact predicate value identified under section 0.1. |
 
-These are the only two generic participants. `SystemRoleAssignmentStateRelation` obtains exactly while the assignment obtains and the fixed by-value predicate is true under its temporal reading. Its actual extent is the maximal continuous interval of that obtaining. An affirmative assertion or occurrence description may state the known extent as `systemRoleAssignmentStateExtent` only for an independently established occurrence; a receiving evaluation may state a separate `declaredSystemRoleAssignmentStateEvaluationWindow`. Neither temporal value, assertion polarity, reliance posture, taxonomy episteme, reference scheme, bridge, nor model-use structure is another relation participant.
+These are the only two generic participants. `SystemRoleAssignmentStateRelation` obtains exactly while the assignment obtains and the fixed by-value predicate is true under its temporal reading. Its actual extent is the maximal continuous interval of that obtaining.
 
-A relied-on assertion uses a direct evidence-use relation. Another world-side occurrence affects predicate truth only when an exact truth-condition clause cites that occurrence through its subject pattern.
+An affirmative assertion or occurrence description may state the known extent as `systemRoleAssignmentStateExtent` only for an independently established occurrence; a receiving evaluation may state a separate `declaredSystemRoleAssignmentStateEvaluationWindow`. Neither temporal value, assertion polarity, reliance posture, taxonomy episteme, reference scheme, bridge, nor model-use structure is another relation participant.
+
+A relied-on assertion uses a direct evidence-use relation. Another world-side occurrence affects predicate truth only when a truth-condition clause cites that occurrence through its subject pattern.
 
 #### A.2.5:4.2 - Predicate Meaning and Semantic Basis
 
 One `SystemRoleAssignmentStatePredicate` value names:
 
-- the exact local system-role kind for whose assignment species the predicate is defined;
+- the local system-role kind for whose assignment species the predicate is defined;
 - normalized truth-condition ClaimGraph clauses, each naming its governed quality or relation, actual participants, and subject pattern;
 - the temporal reading, such as truth at an instant, throughout a receiving-use window, or for a declared tolerated portion of that window;
 - applicability conditions; and
@@ -115,9 +119,9 @@ One `SystemRoleAssignmentStatePredicate` value names:
 
 This content defines one predicate value. The direct qualities and relations keep their own kinds and subject patterns.
 
-Predicates need not be mutually exclusive. `Calibrated`, `Synchronized`, and `InRange` can hold simultaneously; `InspectionReady` may be a conjunction over them. Use an exclusive state configuration only when the subject-domain model actually needs one.
+Predicates need not be mutually exclusive. `Calibrated`, `Synchronized`, and `InRange` can hold simultaneously; `InspectionReady` may be a conjunction over them. Use an exclusive state configuration only when the subject-domain model needs one.
 
-A shared label does not establish shared meaning. Cross-context reuse needs the same predicate identity or an explicit comparison or bridge stating which truth and admission effects are preserved. A bridge or scheme enters the predicate's semantic basis only when the predicate clauses really depend on it.
+A shared label does not establish shared meaning. Cross-context reuse needs the same predicate identity or an explicit comparison or bridge stating which truth and admission effects are preserved. A bridge or scheme enters the predicate's semantic basis only when the predicate clauses depend on it.
 
 #### A.2.5:4.3 - Occurrence Identity and Repeated Episodes
 
@@ -138,7 +142,11 @@ For a relied-on state claim, keep this order:
 5. use `A.2.4` to state the evidence-use relation. When bounded reliance needs a judgement, obtain or reuse it under `A.10` or the directly governing evaluation pattern; add fuller source/provenance detail only when the use requires it.
 6. let the direct consumer apply the supported assertion under its own subject pattern.
 
-When the account makes a claim about a particular dated evaluation Work, recover the evaluator System through A.13 and let A.15.1 independently admit that evaluation `W_eval : U.Work`. Add F.6 `performedUnderAssignment(W_eval, RA_eval)` through the same obtaining A.13 assignment only when this account or its receiving use expressly consumes precise assignment-bound attribution; F.6 identifies neither assignment nor performer, and missing or failed attribution alone leaves independently admitted evaluation Work intact. Recheck any admission premise invalidated by the same finding and its dependent conclusions under A.15.1. A separately constituted evaluation result is a `C.2.1` episteme whose ClaimGraph states the judgment about the assignment or established occurrence. The evaluation and receiving use add no participants to the state relation: its participants remain the tested assignment and its predicate, and occurrence identity still follows §4.3.
+When the account makes a claim about a particular dated evaluation Work, recover the evaluator System through A.13 and let A.15.1 independently admit that evaluation `W_eval : U.Work`.
+
+Add F.6 `performedUnderAssignment(W_eval, RA_eval)` through the same obtaining A.13 assignment only when this account or its receiving use expressly consumes precise assignment-bound attribution; F.6 identifies neither assignment nor performer, and missing or failed attribution alone leaves independently admitted evaluation Work intact. Recheck any admission premise invalidated by the same finding and its dependent conclusions under A.15.1.
+
+A separately constituted evaluation result is a `C.2.1` episteme whose ClaimGraph states the judgment about the assignment or established occurrence. The evaluation and receiving use add no participants to the state relation: its participants remain the tested assignment and its predicate, and occurrence identity still follows §4.3.
 
 The actual state extent, target evaluation window, and evidence-relevance interval answer different questions. When evidence no longer supports the receiving use, reconsider reliance without retroactively rewriting an earlier world-side occurrence.
 
@@ -172,18 +180,18 @@ Use statecharts or state machines when mutually exclusive configurations, orthog
 
 A change arrow represents a proposed or observed change in predicate truth; it is not the world-side change by form. Recover the exact changed object or relation, then use the direct pattern governing that change. Use the Method description for any prescribed Method order.
 
-When the model needs continuous coordinates rather than discrete labels, use `A.19` for the characteristic space and let the by-value state predicate select a region, band, ordering condition, or other exact condition. Measurement and evaluation stay with `C.16` and their direct patterns.
+When the model needs continuous coordinates rather than discrete labels, use `A.19` for the characteristic space and let the by-value state predicate select a region, band, ordering condition, or other condition. Measurement and evaluation stay with `C.16` and their direct patterns.
 
 #### A.2.5:4.8 - Semantic Basis and Receiving-Use Qualification
 
 Use directly governed truth-condition clauses when they suffice for the state claim.
 
-When a `KindSignature`, reference scheme, bridge, or `BoundedModelUseStructure` changes the meaning of a predicate clause, include its exact edition in `SystemRoleAssignmentStatePredicate` semantic basis and therefore in predicate identity. When it changes only how a separate receiving assertion, comparison, or Work use presents or consumes an unchanged predicate, cite it in that receiving use instead. The generic relation signature remains the two-participant declaration in §4.1.
+When a `KindSignature`, reference scheme, bridge, or `BoundedModelUseStructure` changes the meaning of a predicate clause, include its edition in `SystemRoleAssignmentStatePredicate` semantic basis and therefore in predicate identity. When it changes only how a separate receiving assertion, comparison, or Work use presents or consumes an unchanged predicate, cite it in that receiving use instead. The generic relation signature remains the two-participant declaration in §4.1.
 
 ### A.2.5:5 - Working Guidance
 
 1. Write the readable sentence naming the current assignment and state condition; name the receiving-use window only when the current check selects one.
-2. Recover the predicate by value: exact system-role kind, normalized truth-condition clauses, temporal reading, applicability, and only meaning-bearing semantic-basis editions.
+2. Recover the predicate by value: system-role kind, normalized truth-condition clauses, temporal reading, applicability, and only meaning-bearing semantic-basis editions.
 3. Derive the maximal continuous extent from assignment obtaining and predicate truth; separately check any receiving-use window against that extent.
 4. Ask whether the receiving use needs occurrence identity and whether it relies on the state claim. If both answers are no, keep the readable assertion and stop.
 5. For relied-on use, make the assertion episteme, polarity, direct claim-family reference, and required evidence-use relation explicit. Record supported, refuted, or unresolved reliance separately; absent evidence is neither negative polarity nor world-side non-obtaining.
@@ -228,27 +236,27 @@ A calibration report is a separate `U.Episteme`; an A.2.4 evidence-use relation 
 
 #### A.2.5:6.2 - Drive Motor in a Pump Assembly
 
-`Motor-M1` is the holder of an exact pump-maintenance assignment whose assigned local kind is `DriveMotorSystemRole`. The current Work claim needs `DriveReady`, whose predicate names the exact supply relation, torque capability-fit relation, thermal band, and installed-connection relation.
+`Motor-M1` is the holder of a pump-maintenance assignment whose assigned local kind is `DriveMotorSystemRole`. The current Work claim needs `DriveReady`, whose predicate names the exact supply relation, torque capability-fit relation, thermal band, and installed-connection relation.
 
 The pump assembly grounds those direct claims; it is not a mandatory context slot. No scheme or `BoundedModelUseStructure` is required because the direct predicate clauses determine the state. Torque capability can remain while a missing supply relation makes `DriveReady` false. An affirmative `DriveReady` assertion states the assignment's condition; use A.15.1 for any claim that pumping Work occurred.
 
 #### A.2.5:6.3 - Socially Constituted Credential State
 
-A clinician holds one exact assignment whose local kind is `ProcedureOperatorSystemRole`. Predicate `CredentialCurrentForProcedure-X` depends on an accepted credential decision, its validity interval, and absence of a suspending decision.
+A clinician holds one assignment whose local kind is `ProcedureOperatorSystemRole`. Predicate `CredentialCurrentForProcedure-X` depends on an accepted credential decision, its validity interval, and absence of a suspending decision.
 
 The accepted decision relation helps constitute the predicate because the credential ontology says so. A certificate publication may evidence that decision but does not substitute for it. The state occurrence still has the assignment and predicate as participants; evidence and publication remain neighboring relations.
 
 #### A.2.5:6.4 - Two Approval Predicates
 
-`ApprovalService-2` holds an exact assignment to `ApproverSystemRole`. `FulfilmentApprovalReady` concerns fulfilment-state change; `PaymentApprovalReady` concerns payment authorization. Their truth clauses and applicability differ, so they are different `SystemRoleAssignmentStatePredicate` values even if one interface displays both as `Ready`.
+`ApprovalService-2` holds an assignment to `ApproverSystemRole`. `FulfilmentApprovalReady` concerns fulfilment-state change; `PaymentApprovalReady` concerns payment authorization. Their truth clauses and applicability differ, so they are different `SystemRoleAssignmentStatePredicate` values even if one interface displays both as `Ready`.
 
-If an independently selected model-use structure changes the meaning of one predicate's clauses, its exact edition belongs in that predicate's semantic basis. If it only selects which already identified predicate a view presents, it remains a receiving-use qualification.
+If an independently selected model-use structure changes the meaning of one predicate's clauses, its edition belongs in that predicate's semantic basis. If it only selects which already identified predicate a view presents, it remains a receiving-use qualification.
 
 #### A.2.5:6.5 - Approved Standard or Evidence Dataset Is a Different Relation
 
 Suppose a project says, “Standard S is approved.” The standard is an episteme, not a system under a work-facing assignment. Recover the direct status-use, decision, source-use, or publication-use relation.
 
-Likewise, a dataset or report that “plays a role” remains an episteme used through direct evidence, source, measurement, freshness, provenance, or assurance relations. Apply A.2.5 only if an admitted system's exact assignment is being tested by a `SystemRoleAssignmentStatePredicate` that depends on one of those relations.
+Likewise, a dataset or report that “plays a role” remains an episteme used through direct evidence, source, measurement, freshness, provenance, or assurance relations. Apply A.2.5 only if an admitted system's assignment is being tested by a `SystemRoleAssignmentStatePredicate` that depends on one of those relations.
 
 ### A.2.5:7 - Archetypal Grounding and Bias Control
 
@@ -268,7 +276,7 @@ The main bias risk is label-first reasoning. A familiar state word invites the r
 |---|---|
 | `CC-A2.5-01` | Does the claim concern whether the exact assignment satisfies the identified state predicate, with an occurrence named only when obtaining is established? |
 | `CC-A2.5-02` | Does `SystemRoleAssignmentSlot` use a `U.RelationRef` constrained to `U.SystemRoleAssignment` and resolve to the exact assignment occurrence being evaluated, with its declared species, holder, and extent established under A.2.1? |
-| `CC-A2.5-03` | Is `StatePredicateSlot` present by value with exact system-role-kind domain, normalized truth clauses, temporal reading, applicability, and only meaning-bearing semantic-basis refs? |
+| `CC-A2.5-03` | Is `StatePredicateSlot` present by value with system-role-kind domain, normalized truth clauses, temporal reading, applicability, and only meaning-bearing semantic-basis refs? |
 | `CC-A2.5-04` | Is actual state extent derived from uninterrupted predicate truth while the assignment obtains, with any target evaluation window kept separate? |
 | `CC-A2.5-05` | When occurrence identity is needed, does it use the fixed assignment, fixed predicate value, and maximal continuous truth interval rather than a representation key? |
 | `CC-A2.5-06` | Are a demonstrated predicate gap and a mere evidence gap distinguished? |
@@ -314,9 +322,9 @@ Reassess only the affected state assertion or receiving use when the assignment,
 
 The pattern starts from the world-side relation because state truth can matter before a record exists. A robot can cease to satisfy its inspection predicate before a dashboard refreshes. A credential decision can constitute an institutional condition before a certificate is published. A supported assertion is needed for some reliance uses.
 
-Using uninterrupted predicate truth as the identity boundary distinguishes repeated episodes even when assignment and predicate stay the same. A description may refine an open interval's end without creating another occurrence; a genuine false gap does create a boundary.
+Using uninterrupted predicate truth as the identity boundary distinguishes repeated episodes even when assignment and predicate stay the same. A description may refine an open interval's end without creating another occurrence; a gap in predicate truth creates a boundary.
 
-Assignment state is neither capability nor Work. Capability says what operations a system can perform in an envelope. `SystemRoleAssignmentStateRelation` says whether one current assignment satisfies one predicate over an interval. A Work claim states what was actually performed. A Method, gate, or Work pattern may depend on all three, but none proves the others.
+Assignment state is neither capability nor Work. Capability says what operations a system can perform in an envelope. `SystemRoleAssignmentStateRelation` says whether one current assignment satisfies one predicate over an interval. A Work claim states what was performed. A Method, gate, or Work pattern may depend on all three, but none proves the others.
 
 ### A.2.5:12 - SoTA-Echoing
 
@@ -335,7 +343,7 @@ The sources' transferable contribution is bounded: current action decisions need
 
 | Related pattern | Relation |
 |---|---|
-| `A.2` and `C.3` | Govern exact context-local system-role kinds and their `KindSignature`s; assignment-state predicates may name those kinds and signatures without making them relation participants. |
+| `A.2` and `C.3` | Govern context-local system-role kinds and their `KindSignature`s; assignment-state predicates may name those kinds and signatures without making them relation participants. |
 | `A.2.1` | Use for the declared `U.SystemRoleAssignment` species and the obtaining occurrence referenced by every state relation. |
 | `A.2.2` | Governs capability and operating-envelope claims that a state predicate may reference but does not replace. |
 | `A.2.4` and `A.10` | A.2.4 governs first-use evidence classification; A.10 governs source/provenance recovery and bounded reliance. |
@@ -344,7 +352,7 @@ The sources' transferable contribution is bounded: current action decisions need
 | `A.6.5` | Governs SlotKind, ValueKind, and reference-mode discipline for the direct declaration. |
 | `A.19` and `C.16` | Govern characteristic spaces, predicates over measured coordinates, measurement, and comparability when used by a state predicate. |
 | `A.15`, `A.15.1`, `A.15.2`, and `A.21` | Govern Method participation, performed or planned Work, and gate outcomes that consume state claims. |
-| `A.1.1` | Use for any selected `BoundedModelUseStructure`; A.2.5 includes its exact edition in predicate identity only when meaning depends on it. |
+| `A.1.1` | Use for any selected `BoundedModelUseStructure`; A.2.5 includes its edition in predicate identity only when meaning depends on it. |
 | `C.27` and `G.11` | Govern temporal currentness, decay, and evidence refresh when those claims are current. |
 
 ### A.2.5:End

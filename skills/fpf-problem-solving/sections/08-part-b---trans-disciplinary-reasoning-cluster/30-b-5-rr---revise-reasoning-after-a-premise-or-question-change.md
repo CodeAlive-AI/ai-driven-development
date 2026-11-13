@@ -6,21 +6,21 @@
 
 ### B.5.RR:1 - Problem frame
 
-Use this pattern when reasoning that you could previously use needs to answer a changed question, or when a premise, observation or application condition changes. You need to know what still follows, what must be worked again and what can now be done.
+Use this pattern when reasoning that you could previously use needs to answer a changed question, or when a premise, observation or application condition changes. You need to know what still follows, what must be worked again and what can be done.
 
 The object of revision is the reasoning used for that question: its premises, intermediate contributions, conclusion and conditions of application. The relevant practice supplies its inference rules and the grounds for using its premises.
 
-**First useful move:** state the change beside the result you now need. Find where the earlier reasoning used the changed condition, or where the new result requires a contribution the earlier argument did not supply.
+**First useful move:** state the change beside the result you need. Find where the earlier reasoning used the changed condition, or where the new result requires a contribution the earlier argument did not supply.
 
-This work requires enough subject knowledge to follow the argument. Use B.5.RA when that reasoning must first be recovered. If the established result already answers the new question under conditions that still hold, apply it and stop. Rebuilding the entire argument is useful when recovery would cost more, or when a separate obligation requires a full new derivation.
+This work requires enough subject knowledge to follow the argument. Use B.5.RA when that reasoning must first be recovered. If the established result answers the new question under conditions that hold, apply it and stop. Rebuilding the entire argument is useful when recovery would cost more, or when an obligation requires a full new derivation.
 
 ### B.5.RR:2 - Problem
 
 A familiar answer often survives in a formula, report or program after the reason for using it has changed. Repeating the earlier steps can produce a convincing answer to the former question. Discarding everything can waste constructions and arguments that remain useful.
 
-Revision requires following the reason for a result. One conclusion may need several premises together; another may have two sufficient arguments. A premise may be shared by apparently different arguments. A change can also make a formerly fixed quantity the unknown, so replacing a number leaves the real task undone.
+Revision requires following the reason for a result. One conclusion may need several premises together; another may have two sufficient arguments. A premise may be shared by apparently different arguments. A change can also make a formerly fixed quantity the unknown, so replacing a number leaves the task undone.
 
-The result is reasoning that answers the changed question at its supported scope, or a useful partial result and the contribution still needed. It should let the receiver act, obtain that contribution or pursue the newly exposed question.
+The result is reasoning that answers the changed question at its supported scope, or a partial result and the contribution needed. It should let the receiver act, obtain that contribution or pursue the newly exposed question.
 
 ### B.5.RR:3 - Forces
 
@@ -29,21 +29,21 @@ The result is reasoning that answers the changed question at its supported scope
 | Reuse and hidden dependence | Retaining an established result saves work, but its application may use the changed premise indirectly. |
 | Local repair and a changed question | A small correction can preserve the conclusion; a new objective may require another argument. |
 | Several arguments and a shared weakness | An alternative can preserve a conclusion, while a premise common to both can defeat that apparent independence. |
-| Useful qualification and continued inquiry | A conditional result or bound may suffice now; another use may need the unresolved premise or a new construction. |
+| Useful qualification and continued inquiry | A conditional result or bound may suffice; another use may need the unresolved premise or a new construction. |
 
 ### B.5.RR:4 - Solution
 
-Start with the receiving question, follow the affected reasoning and derive the result that can now be used. A useful reminder is:
+Start with the receiving question, follow the affected reasoning and derive the result that can be used. A reminder is:
 
 **Changed question or condition → affected reasoning → retained or replacement contribution → revised conclusion → receiving use.**
 
-#### B.5.RR:4.1 - Say what changed and what is needed now
+#### B.5.RR:4.1 - Say what changed and what is needed
 
 Compare the earlier question with the present one. State the result needed and the changed condition in terms that can be used in the reasoning. For a calculation, that may be a new range or an input that is now an unknown. For an empirical conclusion, it may be an observation, a changed population or an operating condition.
 
-Distinguish a change in the situation from a correction to your account of it. A measurement taken yesterday can remain a sound report of yesterday while being insufficient for today's operation. A proposed condition can be explored hypothetically without replacing the account of what has happened.
+Distinguish a change in the situation from a correction to your account of it. A measurement taken yesterday can remain a sound report of yesterday while being insufficient for today's operation. A proposed condition can be explored without replacing the account of what has happened.
 
-Keep the meanings of the quantities and claims visible. If the same term now denotes a different quantity, translate the question before substituting its value. If only the spelling or presentation changed and the established application still fits, no reasoning revision is needed.
+Keep the meanings of the quantities and claims visible. If the same term denotes a different quantity, translate the question before substituting its value. If only the spelling or presentation changed and the established application fits, no reasoning revision is needed.
 
 #### B.5.RR:4.2 - Recover the dependence that matters
 
@@ -59,13 +59,13 @@ If the needed dependence is missing from the account, recover it through B.5.RA 
 
 #### B.5.RR:4.3 - Derive what follows after the change
 
-Work from available premises through the affected transitions. Reuse a contribution whose conditions and required result still fit. Where they do not, derive the replacement, select an adequate alternative or identify the unresolved step.
+Work from available premises through the affected transitions. Reuse a contribution whose conditions and required result fit. Where they do not, derive the replacement, select an adequate alternative or identify the unresolved step.
 
-Withdrawing a premise removes that premise as a basis for asserting the conclusion. Another sufficient argument may still support it. To assert the opposite conclusion, obtain a reason for that assertion. The conditional argument can remain available for situations in which its premises hold.
+Withdrawing a premise removes that premise as a basis for asserting the conclusion. Another sufficient argument may support it. To assert the opposite conclusion, obtain a reason for that assertion. The conditional argument can remain available for situations in which its premises hold.
 
 Follow the change through each needed use of a shared prerequisite. Keep the premises of an alternative argument together: pieces from two incompatible situations do not form a supported argument for either situation. If conclusions refer back to one another, recover the grounding of that reasoning, such as an initial case and induction step. Mutual repetition alone cannot replace the starting support.
 
-A changed requested result can require working backward as well. Identify what the new conclusion would need, reuse the earlier contributions that supply it, and produce the remaining contribution. Release a former fixed value when the question now asks you to determine it.
+A changed requested result can require working backward as well. Identify what the new conclusion would need, reuse the earlier contributions that supply it, and produce the remaining contribution. Release a former fixed value when the question asks you to determine it.
 
 Compare the work of recovering and repairing the affected reasoning with the work of obtaining a fresh sufficient answer. A short new calculation can be cheaper and clearer. A maintained dependency account is useful when repeated revisions repay its cost; it is optional for an ordinary one-off question.
 
@@ -77,13 +77,13 @@ For a mathematical argument, carry the domain and assumptions into its conclusio
 
 If the original target is unattainable under the retained conditions, use the obstruction to propose a changed condition or a different question. Keep that proposal visible as a choice. A weaker result can be useful without silently replacing the requested result.
 
-Obtain further evidence or checking when its possible outcomes can change this use. C.11.DUA helps compare that contribution with its cost. The method can finish with an explicitly conditional result when conditional use is sufficient.
+Obtain further evidence or checking when its possible outcomes can change this use. C.11.DUA helps compare that contribution with its cost. The method can finish with a conditional result when conditional use is sufficient.
 
 #### B.5.RR:4.5 - Apply the result and carry the change to its users
 
 Perform the receiving use, or give its next contributor the revised conclusion and the condition that governs it. When others rely on the earlier result, tell the affected users what changed and which application must change with it. Their unchanged uses need no new argument merely because a nearby result was revised.
 
-Check the changed transition by the method appropriate to its claim. A small instance can reveal a substitution error; a proof establishes its stated general conclusion; an observation can test a physical consequence. Choose the check for the result actually being relied on.
+Check the changed transition by the method appropriate to its claim. A small instance can reveal a substitution error; a proof establishes its stated general conclusion; an observation can test a physical consequence. Choose the check for the result being relied on.
 
 Stop when the receiving question is answered at the required level, or when the remaining contribution has been located well enough to obtain it. A useful new question can begin another inquiry under B.5.
 
@@ -107,17 +107,17 @@ For the next use, retain four terms and the increment 2, but require their sum t
 
 A team needs to read revision 17 of a report. Its established account has two ways to obtain that revision's bytes: decrypt the local backup using its available key and decryptor, or obtain an unencrypted remote copy. An available viewer then displays the report.
 
-The key becomes unavailable. Following that change removes the local decryption route. The remote copy and viewer still supply the requested reading, so the team can proceed through them. The missing key need not be recovered for this use.
+The key becomes unavailable. Following that change removes the local decryption route. The remote copy and viewer supply the requested reading, so the team can proceed through them. The missing key need not be recovered for this use.
 
-Now consider a different finding: the supposed remote alternative is encrypted with the same key. Both routes need that key, so neither supplied route obtains the bytes. The next contribution is the key, another usable copy or a different way to obtain the report. A second storage location had concealed a shared prerequisite.
+Now consider a different finding: the supposed remote alternative is encrypted with the key. Both routes need that key, so neither supplied route obtains the bytes. The next contribution is the key, another usable copy or a different way to obtain the report. A second storage location had concealed a shared prerequisite.
 
-If instead the viewer becomes unavailable, either route may still provide the bytes. Reading now needs a suitable viewer or format conversion. This repair preserves the obtained result and locates the different operation that the receiving use requires.
+If instead the viewer becomes unavailable, either route may provide the bytes. Reading needs a suitable viewer or format conversion. This repair preserves the obtained result and locates the different operation that the receiving use requires.
 
 #### B.5.RR:5.3 - A repeated conclusion loses its starting support
 
 An analysis establishes claim A from an observation O, derives B from A and uses B in a further argument for A. A corrected interpretation of O removes its support for A.
 
-The second occurrence of A does not preserve that support: its offered reason B was itself obtained from A. Reopen both uses and look for an argument grounded in retained premises. The conclusion may be true, but this circular route no longer establishes it.
+The second occurrence of A does not preserve that support: its offered reason B was obtained from A. Reopen both uses and look for an argument grounded in retained premises. The conclusion may be true, but this circular route no longer establishes it.
 
 Contrast this with an induction argument whose base case remains established and whose step derives the next case from the preceding one. Its recurrence has a grounded way to obtain each finite case. The relevant inference, rather than the visual presence of a cycle or repeated letter, decides what can be retained.
 
@@ -134,13 +134,13 @@ The method can also overvalue salvage. When the earlier reasoning is poorly reco
 - Joint prerequisites, shared premises and sufficient alternatives are preserved.
 - Affected transitions are reworked under their applicable inference or construction rules.
 - The revised conclusion retains its domain, conditions and any unresolved premise.
-- The receiver can identify the next action, useful stop or contribution still required.
+- The receiver can identify the next action, useful stop or contribution required.
 
 ### B.5.RR:8 - Common Anti-Patterns and How to Avoid Them
 
 | Observed failure in revision | Why it matters | Repair |
 | --- | --- | --- |
-| Replace a number while retaining the old question | The calculation still solves for the former unknown. | Restate the givens and requested result before choosing the computation. |
+| Replace a number while retaining the old question | The calculation solves for the former unknown. | Restate the givens and requested result before choosing the computation. |
 | Treat the loss of one argument as a refutation | A different sufficient argument may remain. | Examine its premises and derive the conclusion or its negation separately. |
 | Count two dependent arguments as independent | Both can fail with their shared prerequisite. | Follow the common premise through both uses. |
 | Preserve a conclusion through circular repetition | The retained statements supply no starting support. | Recover a grounded argument or leave the conclusion unresolved. |
@@ -156,17 +156,17 @@ Recovery costs attention and sometimes specialist help. Its value increases when
 
 An argument and an application can change separately. A theorem can remain established while its former substitution ceases to answer the question. An empirical premise can become doubtful while its conditional consequences remain worth investigating. Keeping those distinctions lets revision preserve knowledge without preserving an unsupported use.
 
-The method therefore joins backward recovery of what the desired result needs with forward derivation from the premises now available. Alternative arguments preserve useful results; shared prerequisites explain where that preservation fails. Detailed deduction, statistical inference and physical-model revision remain contributions of their respective practices.
+The method therefore joins backward recovery of what the desired result needs with forward derivation from the premises available. Alternative arguments preserve useful results; shared prerequisites explain where that preservation fails. Detailed deduction, statistical inference and physical-model revision remain contributions of their respective practices.
 
 This is a method of obtaining and applying knowledge. Its result can also change the method repertoire: the revised sum reveals a parameterized construction, and an unresolved dependency can become the next research question. Those continuations are useful when they enable further work.
 
 ### B.5.RR:11 - SoTA-Echoing
 
-**Which part of an argument needs revision?** Adapt the assumption-sensitive reasoning of de Kleer's [*A General Labeling Algorithm for Assumption-Based Truth Maintenance* (1988), §2](https://cdn.aaai.org/AAAI/1988/AAAI88-034.pdf). Compared with discarding every conclusion that used a removed premise, §4.3 retains sufficient alternatives and their shared conditions. This historical computational method supplies a precise model of conditional support. The present method uses that insight without requiring an ATMS or exhaustive assumption labels for an ordinary inquiry.
+**Which part of an argument needs revision?** Adapt the assumption-sensitive reasoning of de Kleer's [*A General Labeling Algorithm for Assumption-Based Truth Maintenance* (1988), §2](https://cdn.aaai.org/AAAI/1988/AAAI88-034.pdf). Compared with discarding every conclusion that used a removed premise, §4.3 retains sufficient alternatives and their shared conditions. This historical computational method supplies a model of conditional support. The present method uses that insight without requiring an ATMS or exhaustive assumption labels for an ordinary inquiry.
 
-**When is incremental repair cheaper than starting again?** Adapt the comparison in Hu, Motik and Horrocks, [*Optimised Maintenance of Datalog Materialisations* (2018), §§1–4](https://www.cs.ox.ac.uk/people/boris.motik/pubs/hmh18optimised-maintenance.pdf): eagerly finding alternative derivations can avoid unnecessary deletion, but that search can itself be costly; recursive support needs more than simple counting. Section 4.3 therefore compares recovery and repair with a fresh answer. These are results for Datalog maintenance; selecting subject premises and interpreting empirical change require further reasoning.
+**When is incremental repair cheaper than starting again?** Adapt the comparison in Hu, Motik and Horrocks, [*Optimised Maintenance of Datalog Materialisations* (2018), §§1–4](https://www.cs.ox.ac.uk/people/boris.motik/pubs/hmh18optimised-maintenance.pdf): eagerly finding alternative derivations can avoid unnecessary deletion, but that search can be costly; recursive support needs more than simple counting. Section 4.3 therefore compares recovery and repair with a fresh answer. These are results for Datalog maintenance; selecting subject premises and interpreting empirical change require further reasoning.
 
-**What should repair preserve for its receiver?** Adapt Klowden and Tao's [*Mathematical methods and human thought in the age of AI* (2026), §§4.4–4.6](https://arxiv.org/html/2603.26524v1). An inspectable proof result can serve one use, while changing its assumptions or applying its idea needs recoverable reasoning. Sections 4.1–4.5 retain that receiving question. The trade-off is explanation and recovery effort when another use actually needs them; full exposition is unnecessary for an already adequate application.
+**What should repair preserve for its receiver?** Adapt Klowden and Tao's [*Mathematical methods and human thought in the age of AI* (2026), §§4.4–4.6](https://arxiv.org/html/2603.26524v1). An inspectable proof result can serve one use, while changing its assumptions or applying its idea needs recoverable reasoning. Sections 4.1–4.5 retain that receiving question. The trade-off is explanation and recovery effort when another use needs them; full exposition is unnecessary for an adequate application.
 
 **What does automated proof repair contribute?** [Wang et al., *Learning to Repair Lean Proofs from Compiler Feedback* (2026), §§3–5](https://arxiv.org/html/2602.02990v1), studies repair from generated failures and compiler feedback. Adapt its use of a localized failing transition when such feedback is available. Its single-shot formal-repair result answers a narrower question than choosing changed premises or interpreting an application. Section 4.4 preserves those questions instead of using compiler success as their answer.
 

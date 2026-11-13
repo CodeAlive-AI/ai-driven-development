@@ -31,7 +31,7 @@ Teams often need a local projection of a widely used kind: `Vehicle` with ABS fo
 
 ### C.3.4:2 - Context
 
-C.3.1 governs kind identity and subkind relations; C.3.2 governs candidate admissibility and classification judgment. A.2.6 governs a claim's declared scope. A procedure may still tailor use for a compliance procedure, product line, or cohort without changing the kind.
+C.3.1 governs kind identity and subkind relations; C.3.2 governs candidate admissibility and classification judgment. A.2.6 governs a claim's declared scope. A procedure may tailor use for a compliance procedure, product line, or cohort without changing the kind.
 
 Three objects remain distinct:
 
@@ -45,7 +45,7 @@ The third object is a C.2.1 declaration episteme. Its effective scheme makes sou
 
 1. **Kind sprawl.** Teams mint near-duplicates for every procedure.
 2. **Hidden constraints.** Informal acceptance rules leak into prose and cannot be replayed.
-3. **Scope conflation.** Jurisdiction, API version, or another scope condition is smuggled into kind identity.
+3. **Scope conflation.** Jurisdiction, API version, or another scope condition is treated as part of kind identity.
 4. **Automatic bridge pressure.** A changed source or team is treated as proof of another kind and a bridge.
 5. **Collapsed outcomes.** A non-applicable candidate, unsettled admissible candidate, and guard refusal are reported as one `unknown` or `false` result.
 
@@ -54,7 +54,7 @@ The third object is a C.2.1 declaration episteme. Its effective scheme makes sou
 | Force | Tension to resolve |
 | --- | --- |
 | Local specialization vs common core | A use needs tailoring without forking the base kind. |
-| Expressivity vs determinism | Real constraints must remain reproducibly checkable. |
+| Expressivity vs determinism | Constraints must remain reproducibly checkable. |
 | Applicability vs uncertainty | Candidate/slice mismatch stops before the judgment; missing facts preserve `unknown`. |
 | Scope vs candidate constraints | Conditions on ClaimScope stay under A.2.6; conditions on the candidate enter classification. |
 | Reuse vs proliferation | Stable conceptual distinctions may warrant a separately identified kind, but declaration reuse alone does not. |
@@ -70,7 +70,7 @@ A `KindUseAdaptationDeclaration` is a named, versioned C.2.1 declaration epistem
 4. vocabulary or notation bindings;
 5. exact candidate and slice applicability plus dependencies;
 6. scope expectations routed separately through A.2.6; and
-7. intended guard use and this declaration episteme's formality, when current.
+7. intended guard use and this declaration episteme's formality, when the receiving use requires that assessment.
 
 For a candidate-bearing use, first evaluate adaptation admissibility. A candidate rejected by the base signature's ValueKind, an adaptation-specific candidate requirement needed merely to form the question, or the declared slice applicability is `not-applicable`; no adaptation judgment is formed. For an admissible request, use:
 
@@ -114,7 +114,7 @@ A stable conceptual refinement may justify another kind and an obtaining C.3.1 s
 
 #### C.3.4:6.4 - Cross-local Use
 
-**KUA-09 (Identity check before bridge).** On a locality change, first compare exact base-kind definitions. Same-kind reuse needs no `KindBridge` but still uses the receiving declaration and, when the receiving use is candidate-bearing, a fresh judgment. Distinct-kind use establishes a `KindBridge` only when its directional correspondence predicate obtains. Differing adaptation constraints or bindings may additionally require an exact correspondence declaration. Source judgments are never copied as receiving truth; justified bridge consequences affect R only.
+**KUA-09 (Identity check before bridge).** On a locality change, first compare exact base-kind definitions. Same-kind reuse needs no `KindBridge` but uses the receiving declaration and, when the receiving use is candidate-bearing, a fresh judgment. Distinct-kind use establishes a `KindBridge` only when its directional correspondence predicate obtains. Differing adaptation constraints or bindings may additionally require an exact correspondence declaration. Source judgments are never copied as receiving truth; justified bridge consequences affect R only.
 
 **KUA-10 (Definedness and fail-closed use).** Outside adaptation applicability, return `not-applicable` and form no judgment. For an admissible request, return `unknown` when an unavailable dependency leaves the conjunction unsettled under KUA-04; a known false conjunct still gives `false`. Outside correspondence definedness, the guard declines that cross-local use without rewriting an independently evaluated receiving result.
 
@@ -122,7 +122,7 @@ A stable conceptual refinement may justify another kind and an obtaining C.3.1 s
 
 - **No Scope leakage.** An adaptation declaration cannot widen or narrow Claim scope G; context conditions are enforced by A.2.6 guards.
 - **Identity preservation.** The base kind remains `k`; the declaration does not change its `EntityOfConcern`.
-- **Aggregation unaffected.** Adaptation and correspondence declarations do not change the applicable F rule under C.2.3 or the justified support-composition model or non-aggregate synthesis under C.2.2; guards route candidate-feature predicates to the exact judgment and context predicates to Scope.
+- **Aggregation unaffected.** Adaptation and correspondence declarations do not change the applicable F rule under C.2.3 or the justified support-composition model or non-aggregate synthesis under C.2.2; guards route candidate-feature predicates to the adaptation judgment and context predicates to Scope.
 
 ### C.3.4:8 - Interactions
 
@@ -134,7 +134,7 @@ Use an adaptation declaration for procedural tailoring. If the receiving uses ne
 
 - The base `KindSignature` episteme supplies the kind criterion and its own F.
 - The separate adaptation declaration supplies additional candidate-feature constraints or vocabulary bindings and may have its own F.
-- The exact `KindUseAdaptationJudgment` pins both editions and preserves `unknown`; neither formality assessment belongs to the kind, candidate, or truth value.
+- The `KindUseAdaptationJudgment` pins both editions and preserves `unknown`; neither formality assessment belongs to the kind, candidate, or truth value.
 - An optional extension-like result remains only a pinned-edition representation of true adaptation judgments.
 
 #### C.3.4:8.3 - With KindBridge
@@ -143,7 +143,7 @@ A locality change first prompts kind-identity comparison. When the same base kin
 
 #### C.3.4:8.4 - With Guards
 
-`Guard_KindUseAdaptation` designates exact adaptation and base-signature editions, checks admissibility, evaluates an admissible candidate, checks Scope separately, and keeps `not-applicable`, `unknown`, and refusal distinct. For distinct-kind cross-local use, it composes with the C.3.3 guard only after the bridge and receiving declarations are recoverable. For same-kind reuse, it performs the fresh receiving evaluation without inventing a bridge.
+`Guard_KindUseAdaptation` designates exact adaptation and base-signature editions, checks admissibility, evaluates an admissible candidate, checks Scope separately, and keeps `not-applicable`, `unknown`, and refusal distinct. For distinct-kind cross-local use, it composes with the C.3.3 guard only after the bridge and receiving declarations are recoverable. For same-kind reuse, it performs the fresh receiving evaluation without a bridge.
 
 ### C.3.4:9 - Anti-patterns and Repairs
 
@@ -160,15 +160,21 @@ A locality change first prompts kind-identity comparison. When the same base kin
 
 #### C.3.4:10.1 - `Vehicle@ABSOnly` Constraint Use
 
-`VehicleABSUse-2026` designates `Vehicle`, pins its signature, and adds the governed candidate condition that the vehicle has ABS. For this example, the base signature's candidate domain is physical vehicles. A vehicle in the declared slice is admissible. With a `true` base judgment, the adaptation returns `true` if the vehicle is known to have ABS, `false` if it is known not to have ABS, and `unknown` if that condition is unresolved; a non-vehicle input is `not-applicable`. Surface, rig, and time conditions used only to bound the claim remain Scope. If ABS becomes a stable classification distinction, recover another kind and test its subkind relation separately.
+`VehicleABSUse-2026` designates `Vehicle`, pins its signature, and adds the governed candidate condition that the vehicle has ABS. For this example, the base signature's candidate domain is physical vehicles. A vehicle in the declared slice is admissible. With a `true` base judgment, the adaptation returns `true` if the vehicle is known to have ABS, `false` if it is known not to have ABS, and `unknown` if that condition is unresolved; a non-vehicle input is `not-applicable`.
+
+Surface, rig, and time conditions used only to bound the claim remain Scope. If ABS becomes a stable classification distinction, recover another kind and test its subkind relation separately.
 
 #### C.3.4:10.2 - `AuthenticatedRequest@Frontend` Vocabulary Use
 
-`FrontendAuthHeaderUse-2026` binds `authHeader` to local spelling `X-Auth` and adds no candidate condition. Its judgment therefore equals the admissible base judgment. Moving the same exact request kind to another team requires a fresh receiving evaluation when the receiving use applies the declaration to a request, but no `KindBridge` merely because the team or spelling changed. If two independently identified request kinds differ, establish any bridge separately.
+`FrontendAuthHeaderUse-2026` binds `authHeader` to local spelling `X-Auth` and adds no candidate condition. Its judgment therefore equals the admissible base judgment.
+
+Moving the same request kind to another team requires a fresh receiving evaluation when the receiving use applies the declaration to a request, but no `KindBridge` merely because the team or spelling changed. If two independently identified request kinds differ, establish any bridge separately.
 
 #### C.3.4:10.3 - `AdultPatient@Clinic` Composite Use
 
-`ClinicAdultPatientUse-2026` pins the base adult-patient signature. For this illustrative composite use, it binds local spelling `ClinicAdultPatient` to the base kind's `AdultPatient` designator and adds the candidate condition `ageAt(patient, slice) >= 21`, with age expressed in years; the chosen clinic and claim window remain separately governed scope/applicability values. At an applicable slice, a person in the declared candidate domain is admissible; with a `true` base judgment, unavailable birth-date information needed to decide the age condition yields `unknown`.
+`ClinicAdultPatientUse-2026` pins the base adult-patient signature. For this illustrative composite use, it binds local spelling `ClinicAdultPatient` to the base kind's `AdultPatient` designator and adds the candidate condition `ageAt(patient, slice) >= 21`, with age expressed in years; the chosen clinic and claim window remain separately governed scope/applicability values.
+
+At an applicable slice, a person in the declared candidate domain is admissible; with a `true` base judgment, unavailable birth-date information needed to decide the age condition yields `unknown`.
 
 In Jurisdiction Y, first compare the exact patient-kind membership distinctions. If the same kind continues, use the Y declaration and evaluate afresh without a bridge. If the threshold or interpretation makes a distinct target kind and a directional correspondence is relied on, establish the `KindBridge`. A separate adaptation-correspondence declaration may then state how the two exact use declarations differ. Neither object transfers source truth.
 

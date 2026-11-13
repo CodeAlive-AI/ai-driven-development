@@ -2,13 +2,15 @@
 
 > **Type:** Characterization pattern
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 ### C.31.RSA:1 - Problem frame
 
 Use this pattern when a practitioner needs to locate where reusable structure lives, where bespoke residue grows, which accounting basis is being used, what can be refactored, and what remains a bounded exception or source-return condition. A report-only share supports a separate use only when that use meets the conditions defined by its applicable pattern.
 
-Claim-use boundary: any use that relies on the RSA account to make a claim beyond reusable-structure accounting is outside RSA. Examples include comparison, publication, evidence validity, assurance or safety-case reliance, gate use, architecture scale preference, causal use, selected-set result declaration, candidate synthesis, and local decision. Record with C.31.RSA only the reusable locus, bespoke residue, accounting basis, report-only share, repair direction, and source-return condition. Add another claim only after naming and applying the pattern that defines and tests it.
+Claim-use boundary: any use that relies on the RSA account to make a claim beyond reusable-structure accounting is outside RSA. Examples include comparison, publication, evidence validity, assurance or safety-case reliance, gate use, architecture scale preference, causal use, selected-set result declaration, candidate synthesis, and local decision.
+
+Record with C.31.RSA only the reusable locus, bespoke residue, accounting basis, report-only share, repair direction, and source-return condition. Add another claim only after naming and applying the pattern that defines and tests it.
 
 Start from the receiving reuse question and an adequate existing account, or recover reuse and residue from relevant instances as in :4.0. Explain any warranted repair or bounded exception. An adequate ordinary account can finish. `ReusableStructureTriage` can retain these distinctions:
 
@@ -38,15 +40,25 @@ ReusableStructureTriage:
 
 Use a fuller accounting description when the receiving question needs its structure references and accounting rule. Ordinary use stops when the practitioner knows where reusable structure lives, where bespoke residue grows, what can be refactored and what remains a bounded exception. Retaining or sharing that answer need not create another form.
 
-What goes wrong if C.31.RSA is missed: a reusable share is treated as a proof of modularity; one-off work is hidden under a reuse label; evidence reuse is counted without validity context; hidden residual uncertainty is averaged with reusable templates; and "more reusable structure" is treated as always better.
+What goes wrong if C.31.RSA is missed:
 
-What C.31.RSA buys in practice: the practitioner can state where structure is reusable, where it is bespoke, what source-side distinctions must remain reachable, and when the result is only report-only accounting.
+- a reusable share is treated as a proof of modularity;
+- one-off work is hidden under a reuse label;
+- evidence reuse is counted without validity context;
+- hidden residual uncertainty is averaged with reusable templates; and
+- "more reusable structure" is treated as always better.
 
-Not this pattern when the question under repair is source-label recovery, module-interface relation repair, modularity-characteristic selection, measurement or comparability admissibility, architecture scale preference, mathematical-lens use, or any outside-RSA use named above. Use `C.30.STRAT`, `A.6.M`, `C.31`, `C.16`, `A.10`, `B.3`, `G.6`, `C.31.ASAP`, `C.29`, `G.5`, or `C.11` as appropriate; do not treat C.31.RSA as the synthesis or selector pattern.
+What C.31.RSA buys in practice: the practitioner can state where structure is reusable, where it is bespoke, what source-side distinctions must remain reachable, and when the result is report-only accounting.
+
+Not this pattern when the question under repair is source-label recovery, module-interface relation repair, modularity-characteristic selection, measurement or comparability admissibility, architecture scale preference, mathematical-lens use, or any outside-RSA use named above.
+
+Use `C.30.STRAT`, `A.6.M`, `C.31`, `C.16`, `A.10`, `B.3`, `G.6`, `C.31.ASAP`, `C.29`, `G.5`, or `C.11` as appropriate; do not treat C.31.RSA as the synthesis or selector pattern.
 
 ### C.31.RSA:2 - Problem
 
-Architecture teams often say that structure is reusable, repeated, templated, common, standardized, or bespoke. Those phrases are useful, but they do not say what is being counted, described, or compared. Structure can be selected from functions, flows, control relations, module interfaces, work methods, evidence packages, regulatory arguments, data schemas, deployment constraints, or exception networks.
+Architecture teams often say that structure is reusable, repeated, templated, common, standardized, or bespoke. Those phrases are useful, but they do not say what is being counted, described, or compared.
+
+Structure can be selected from functions, flows, control relations, module interfaces, work methods, evidence packages, regulatory arguments, data schemas, deployment constraints, or exception networks.
 
 Functional, flow, control, module-interface, work, evidence, and assurance structures may be included only under their declared `accountingBasisRef`. Name any evidence, assurance, or source relation being claimed by value, and state any source-return condition relied on by the account.
 
@@ -75,7 +87,7 @@ Begin with the result for which reuse matters: for example, delivering another p
 2. **Explain the differences that matter.** For each consequential difference, find the requirement, input, environmental condition or arrangement that it responds to. Inspect a contrasting instance and the relevant instruction or requirement; ask its provider what would fail if the difference were removed. If that answer is unknown, name the document, participant, observation or justified bounded replay that could distinguish the possibilities. Keep the dependent part unresolved while using the supported common parts.
 3. **State the reusable rule and its permitted variation.** Identify what can remain the same, which values or steps change, and under which conditions the resulting instance still supplies the required result. A necessary customer-specific approval or local adaptation may remain bespoke. A repeated workaround may instead expose a missing parameter, interface condition or Method step. Actual substitution, evidence validity and assurance claims retain their subject rules; resemblance between instances does not establish those claims.
 4. **Choose the next sufficient result.** The common rule, its reusable locus, necessary exceptions and any unresolved dependency may finish a qualitative account. If a repair is needed, use :4.5 to consider where to place the common structure, then follow the affected instance through to its receiving result to check the change and any new burden. A proposed refactoring is a C.32 candidate; the account can also support retaining the present arrangement.
-5. **Count only when the question needs a share.** Select the population, unit and reuse test from that question, then apply :4.1–:4.4. A count of template uses, a claim of valid evidence reuse and a claim that whole deliveries can share a Method answer different questions. Preserve the conditions and uncertainty of the one actually counted.
+5. **Count only when the question needs a share.** Select the population, unit and reuse test from that question, then apply :4.1–:4.4. A count of template uses, a claim of valid evidence reuse and a claim that whole deliveries can share a Method answer different questions. Preserve the conditions and uncertainty of the one counted.
 
 #### C.31.RSA:4.1 - Typed accounting description
 
@@ -134,7 +146,11 @@ HiddenOrResidualShare:
   report-only uncertainty or residue interpretation under accountingBasisRef
 ```
 
-Every numeric share needs its accounting rule, counted population and scale or unitless-value interpretation, with a unit when relevant. A comparison or ranking additionally needs aligned bases, preference direction when relevant, and its applicable comparator, such as `CG-Spec`, `ComparatorSetRef` or a governing comparator reference. A gate or decision needs that comparator only if its rule relies on such a comparison; it retains its own other requirements. A share with an established counting basis can remain a bounded local report when stronger reliance lacks grounds.
+Every numeric share needs its accounting rule, counted population and scale or unitless-value interpretation, with a unit when relevant.
+
+A comparison or ranking additionally needs aligned bases, preference direction when relevant, and its applicable comparator, such as `CG-Spec`, `ComparatorSetRef` or a governing comparator reference. A gate or decision needs that comparator only if its rule relies on such a comparison; it retains its own other requirements.
+
+A share with an established counting basis can remain a bounded local report when stronger reliance lacks grounds.
 
 #### C.31.RSA:4.4 - Pseudo-sum boundary
 
@@ -147,7 +163,7 @@ total-described-structure under accountingBasisRef:
   hidden or residual uncertainty slots
 ```
 
-This is a readable decomposition of one declared accounting description, not an equation defining an architecture amount. If the slots do not share a declared accounting basis and comparability rule, they cannot be summed or ranked.
+This is a decomposition of one declared accounting description, not an equation defining an architecture amount. If the slots do not share a declared accounting basis and comparability rule, they cannot be summed or ranked.
 
 #### C.31.RSA:4.5 - Structure-relocation actions
 
@@ -187,7 +203,7 @@ Develop the accounting rule and structure references when the question depends o
 
 #### C.31.RSA:4.7 - Reopen and lowering conditions
 
-An RSA result retains its declared scope, structure edition and accounting basis, together with source-return and comparator conditions on which its use actually depends. Reopen the triage or lower the admissible use when any of the following changes:
+An RSA result retains its declared scope, structure edition and accounting basis, together with source-return and comparator conditions on which its use depends. Reopen the triage or lower the admissible use when any of the following changes:
 
 - a hidden source distinction becomes action-relevant;
 - the accounting basis changes or proves heterogeneous;
@@ -198,13 +214,15 @@ An RSA result retains its declared scope, structure edition and accounting basis
 - recurrence changes a bounded exception's cost, conditions or justification;
 - a reuse move improves one locus while worsening interface cost, variation loss, evidence decay, assurance work, source-return cost, or hidden bespoke residue.
 
-Block the dependent comparison or ranking when its required comparator or aligned basis is missing; preserve a valid bounded report. For another gate or decision, recover the particular missing premise under its own rule. If the accounting basis is unknown, retain only the qualitative or source-only meaning actually supported. If reuse and residue cannot be distinguished at one locus, mark that part unresolved while preserving independently established parts.
+Block the dependent comparison or ranking when its required comparator or aligned basis is missing; preserve a valid bounded report. For another gate or decision, recover the missing premise under its own rule.
+
+If the accounting basis is unknown, retain only the qualitative or source-only meaning supported. If reuse and residue cannot be distinguished at one locus, mark that part unresolved while preserving independently established parts.
 
 ### C.31.RSA:5 - Archetypal Grounding
 
 Account for structure at declared loci under a declared accounting basis.
 
-In one architecture, reusable structure may be located in a template and interface grammar. In another, it may be located in a test package, regulatory argument, work method, or flow pattern. In a third, the reusable part may be small, but the bounded exception is exactly what preserves safety or local fit.
+In one architecture, reusable structure may be located in a template and interface grammar. In another, it may be located in a test package, regulatory argument, work method, or flow pattern. In a third, the reusable part may be small, but the bounded exception is what preserves safety or local fit.
 
 A share can be useful as a local report. It becomes misleading when it hides which structure was counted, which structure was not counted, and when the reader must return to source records.
 
@@ -219,9 +237,19 @@ A regulated product line has reusable component templates and a reusable test pa
 Each customer delivery still repeats approval work and bespoke integration exceptions.
 ```
 
-Start with the delivery instructions, completed approval material and integration exceptions. The ordinary variants use the same component interfaces and test procedure within the package's stated operating envelope. One customer's approval adds an on-site witness required by its contract; another delivery repeats an adapter workaround because its input format falls outside the shared interface grammar. Comparing those cases with their requirements separates three contributions: a reusable test procedure within its conditions, a necessary customer-specific witness, and an unresolved design choice about accommodating the input format. Where the record does not explain a difference, recover that condition from the provider or governing requirement before deciding whether to remove it.
+Start with the delivery instructions, completed approval material and integration exceptions. The ordinary variants use the same component interfaces and test procedure within the package's stated operating envelope. One customer's approval adds an on-site witness required by its contract; another delivery repeats an adapter workaround because its input format falls outside the shared interface grammar.
 
-The next account can therefore retain the common test and approval preparation, preserve the contractual witness, and propose an interface or adapter change for the recurring format exception. Replaying that proposed change through input, integration and test shows whether it preserves the required result and merely relocates work. Evidence validity for a new deployment still depends on that deployment's conditions; a reused procedure or file alone does not settle it. If the existing bounded account answers the receiving question, no refactoring or numeric share is needed.
+Comparing those cases with their requirements separates three contributions:
+
+- a reusable test procedure within its conditions;
+- a necessary customer-specific witness; and
+- an unresolved design choice about accommodating the input format.
+
+Where the record does not explain a difference, recover that condition from the provider or governing requirement before deciding whether to remove it.
+
+The next account can therefore retain the common test and approval preparation, preserve the contractual witness, and propose an interface or adapter change for the recurring format exception. Replaying that proposed change through input, integration and test shows whether it preserves the required result and whether it merely relocates work.
+
+Evidence validity for a new deployment still depends on that deployment's conditions; a reused procedure or file alone does not settle it. If the existing bounded account answers the receiving question, no refactoring or numeric share is needed.
 
 `ReusableStructureTriage`:
 
@@ -259,7 +287,7 @@ sourceReturnCondition:
 relatedClaimPatternsIfClaimed:
   direct evidence-validity rule and its required source-to-use grounds; `A.10` when a replayable evidence account is needed; `G.6` for a needed citable provenance path; `B.3` for assurance reliance; `A.6.M` for an unresolved module-interface claim; `C.16` for measurement; `A.19.CPM` for a selected profile comparison
 stopCondition:
-  report-only accounting; establish comparison, evidence-validity or assurance grounds when that particular further use is made
+  report-only accounting; establish comparison, evidence-validity or assurance grounds when that further use is made
 ```
 
 Admissible move: publish the local report-only RSA note and refactor the repeated organization of delivery approval work into reusable work structure and reusable evidence structure. Non-admissible move: claim that the reusable evidence package proves every deployment or that a high reusable share makes the architecture better.
@@ -275,7 +303,11 @@ The template makes many local exceptions necessary for product teams and side-ch
 
 This is not a successful RSA result. The accounting basis counts template instances but hides interface relation cost, lost variation, hidden bespoke work, and evidence decay. The repair is to mark the share as report-only, add the missing bespoke-residue slots, and apply A.6.M, C.31, or a characteristic pattern governing the claim to the interface relation cost before any comparison or decision use.
 
-Lowering replay: the team tries to use the 85 percent share to rank this template architecture above another product-line variant and approve the template program. The use is lowered to local report-only accounting because the comparator set, accounting-basis alignment, interface-cost measure, source-return condition, and decision record are absent. Recover the interface claim and actual costs, using A.6.M for unresolved module-interface meaning and C.16 for the cost measurement. A.19.CPM governs comparison of admitted profiles; A.19 applies to a CharacteristicSpace or reusable space predicate when one is used, and C.11 to local choice. These grounds can support comparison of the existing variants before any interface is changed. A chosen repair changes the candidate and reopens the affected accounting and comparison.
+Lowering replay: the team tries to use the 85 percent share to rank this template architecture above another product-line variant and approve the template program. The use is lowered to local report-only accounting because the comparator set, accounting-basis alignment, interface-cost measure, source-return condition, and decision record are absent.
+
+Recover the interface claim and actual costs, using A.6.M for unresolved module-interface meaning and C.16 for the cost measurement. A.19.CPM governs comparison of admitted profiles; A.19 applies to a CharacteristicSpace or reusable space predicate when one is used, and C.11 to local choice.
+
+These grounds can support comparison of the existing variants before any interface is changed. A chosen repair changes the candidate and reopens the affected accounting and comparison.
 
 Stop condition: do not use the 85 percent share for outside-RSA ranking, gate, assurance, or decision. Reopen the RSA note when the interface grammar, exception register, or comparator set changes.
 
@@ -288,7 +320,7 @@ A model architecture replaces a repeated attention block with a hybrid SSM-atten
 The benchmark improves, but cache placement, memory access, and ablation evidence change.
 ```
 
-RSA can transfer from product-line architecture to neural-network architecture only after `C.30.STRAT` has treated `block`, `cache`, and related terms as source labels unless the reusable locus is already recovered. Then RSA names the declared structures and accounting basis:
+To transfer RSA from product-line architecture to neural-network architecture, use the already recovered reusable locus or first apply `C.30.STRAT` to treat `block`, `cache`, and related terms as source labels. Then RSA names the declared structures and accounting basis:
 
 - reusable structure may be located in recovered repeated-block topology, dataflow pattern, cache-placement rule, or evaluation harness;
 - bespoke residue may be located in model-specific tuning, data distribution dependence, memory-layout exception, or ablation gap;
@@ -347,7 +379,7 @@ Benefits:
 
 Costs:
 
-- Some attractive reuse reports remain report-only.
+- Some reuse reports remain report-only.
 - Numeric shares require an explicit counting and scale basis. Comparison needs aligned bases and its comparator; each further claim adds only its own required grounds.
 - The pattern raises a source-return question whenever accounting hides distinctions needed by downstream action.
 
@@ -355,7 +387,7 @@ Costs:
 
 C.31.RSA is separate from C.31 because accounting over reusable structure answers a different question from choosing modularity characteristics. C.31 asks which characteristic changes action. C.31.RSA asks where reusable structure and bespoke residue are located under a declared accounting basis.
 
-C.30 distinguishes an architecture relation from its selected structure. RSA does not define `StructureAmount`. A useful accounting description can still report shares, but only under declared structure refs, structural aspects, and an accounting basis.
+C.30 distinguishes an architecture relation from its selected structure. RSA does not define `StructureAmount`. An accounting description can still report shares, but only under declared structure refs, structural aspects, and an accounting basis.
 
 The pattern also keeps residue ethically and practically neutral until interpreted. Bespoke residue can be a defect, a local necessity, a safety boundary, a regulatory constraint, or a deliberately accepted exception. The repair is to name which one.
 
@@ -365,15 +397,15 @@ The pattern also keeps residue ethically and practically neutral until interpret
 | --- | --- | --- | --- | --- |
 | C.25 Q-Bundle discipline inside FPF | FPF-local discipline for decomposing quality-family claims. | Adopt separation of scope, measures, mechanisms, windows, evidence, and admissible use. In C.31.RSA this changes `ReusableStructureShare`: the share is report-only accounting under declared `accountingBasisRef` until the relevant outside-RSA use meets the conditions defined by its applicable pattern. | A reusable-structure share does not replace the underlying Q-Bundle, description, evidence relation, or decision record. | Apply `C.25` for quality-family decomposition and `C.16` for a measurement account; the practitioner may report a share locally but must not use it as proof without the governing pattern for that use. |
 | ISO/IEC/IEEE 42010:2022 architecture-description, viewpoint, model-kind, and correspondence discipline (`https://www.iso.org/standard/74393.html`; `https://www.iso-architecture.org/ieee-1471/cm/`) | The 2022 international standard and conceptual-model source for architecture-description and view discipline. | Adopt explicit architecture description, source view, viewpoint, model-kind, correspondence, and conformance pressure. In C.31.RSA this changes source-return use: reusable-structure accounting names the structure refs, source view or architecture-description refs, correspondence refs, and source-return condition before any cross-view share is used. | A view, diagram, model kind, or correspondence label is not the reusable structure itself and does not make a share comparable, admissible for decision use, or assurance-bearing. | Apply `C.30` for architecture claims, `C.30.AD` for architecture-description use, `C.30.ASV` for structural-view use, and `E.17.0` for viewpoint conformance; RSA may count only after the selected structure refs and accounting basis are recoverable. |
-| Modular Open Systems Approach (MOSA) and open-system acquisition or engineering practice (`https://www.cto.mil/sea/mosa/`; `https://www.cto.mil/wp-content/uploads/2025/03/MOSA-Implementation-Guidebook-27Feb2025-Cleared.pdf`) | Engineering and acquisition practice family for modular interfaces, conformance, replacement, and supplier-diversity pressure. | Adopt the pressure to make reusable interface, conformance, substitution, and supplier-diversity structure explicit. In C.31.RSA this changes interface reuse: a claim about reusable interfaces needs the interface grammar, substitution and version conditions on which it relies. Use A.6.M for unresolved module-interface meaning; establish actual conformance and relied-on source or evidence relations under their direct rules. The supplier-diversity relation likewise needs its direct predicate when that relation is being claimed. | Open interface label, API label, platform label, or supplier-diversity goal is not reusable structure, procurement suitability, assurance, gate passage, or decision authority by itself. | Use A.6.M when the module-interface claim still needs recovery of interface grammar, substitution, version or change conditions, or conformance expectations; keep source or evidence relations and any claimed supplier-diversity relation under their direct patterns before RSA comparison or decision use. Use `G.5` for supplier-set result declaration or `C.11` for a procurement decision when that use is being made. |
+| Modular Open Systems Approach (MOSA) and open-system acquisition or engineering practice (`https://www.cto.mil/sea/mosa/`; `https://www.cto.mil/wp-content/uploads/2025/03/MOSA-Implementation-Guidebook-27Feb2025-Cleared.pdf`) | Engineering and acquisition practice family for modular interfaces, conformance, replacement, and supplier-diversity pressure. | Adopt the pressure to make reusable interface, conformance, substitution, and supplier-diversity structure explicit. In C.31.RSA this changes interface reuse: a claim about reusable interfaces needs the interface grammar, substitution and version conditions on which it relies. Use A.6.M for unresolved module-interface meaning; establish conformance and relied-on source or evidence relations under their direct rules. The supplier-diversity relation likewise needs its direct predicate when that relation is being claimed. | Open interface label, API label, platform label, or supplier-diversity goal is not reusable structure, procurement suitability, assurance, gate passage, or decision authority by itself. | Use A.6.M when the module-interface claim still needs recovery of interface grammar, substitution, version or change conditions, or conformance expectations; keep source or evidence relations and any claimed supplier-diversity relation under their direct patterns before RSA comparison or decision use. Use `G.5` for supplier-set result declaration or `C.11` for a procurement decision when that use is being made. |
 | DSM, dependency, and product-architecture practice, including Eppinger and Browning DSM lineage | Architecture-analysis lineage for dependency and product-architecture reasoning, not a complete standard. | Adopt typed dependency structures as possible source for reusable loci and bespoke-residue diagnosis. In C.31.RSA this changes dependency use: dependency counts, partitions, and clusters become candidate source fields only when declared `structureRefs`, structural aspects, and accounting basis are present. | Dependency count, cluster count, or DSM modularity score is not architecture amount, quality proof, or decision verdict. | Apply `C.31` to select modularity characteristics, `C.16` when the count or other result must be interpreted as a measurement, and `A.18` for scale-operation legality; use `C.29` when choosing or transferring that representation, or relying on its result, leaves an unresolved question. |
 | Goodhart and Campbell proxy-pressure laws | General proxy-risk lineage for report-only shares, reuse scores, and benchmark-like accounting. | Adopt proxy-risk discipline for reusable-share use. In C.31.RSA this changes share use: a reusable-structure share remains report-only until the relevant outside-RSA use meets the conditions defined by its applicable pattern. | Reusable-share improvement, coverage improvement, or benchmark improvement is not value, assurance, evidence sufficiency, gate passage, or architecture decision by itself. | Before a reuse number guides selection or reliance, apply the corresponding measurement, quality-family, set-result, decision, evidence, or assurance pattern identified in section 12. |
 | System-evolution, information-hiding, and effective-interface lineage | General holon-architecture lineage for reusable structure that changes over time and hides variation-prone structure. | Adopt evolution and hidden-change discipline. In C.31.RSA this changes residue interpretation: reusable loci, bespoke residue, hidden interface behavior, source-return conditions, and bounded exceptions are reopened when the structure edition, accounting rule, implicit interface, or reliance relation changes. | One-time reusable-share accounting is not sustainable fitness; a stable-looking interface or template does not prove future substitutability. | Reopen or lower the RSA result when hidden variation, implicit dependency, source distinction, or continuing adaptation changes the accounting meaning. |
 | Software product-line variability: Bachmann and Clements, *Variability in Software Product Lines* (2005), §§4–5 ([report](https://www.sei.cmu.edu/documents/753/2005_005_001_14600.pdf)); broader product-line lineage includes Pohl, Boeckle, and van der Linden | Historical method contribution: product requirements and production strategy constrain allowable variation and its mechanism. | Compare the common and varying parts against those requirements, including the effort to build a reusable asset and to use it for a variant. RSA adapts this question to its stated loci; :4.0 supplies the local recovery from instances. | The report is not a universal reuse algorithm or evidence that a shared artifact satisfies every instance. | Use A.6.M for an unresolved module-interface claim, C.31.ASAP for a scale preference, and C.32 when the account leads to a changed candidate. |
 | GSN Community Standard v3 and assurance-case reuse and safety-case reuse practice (`https://scsc.uk/gsn`; `https://arxiv.org/abs/2506.11023`) | The named assurance-case standard and formalization work; assurance validity remains context-sensitive. | Adopt the distinction between reusable assurance argument structure, reusable evidence structure, and context-specific validity witnesses. In C.31.RSA this changes evidence and assurance reuse: reuse remains accounting until evidence validity, safety-case use, or assurance reliance is governed by its own pattern. | Evidence reuse share or assurance-argument template reuse does not infer assurance, safety-case success, gate passage, or release permission. | Establish the evidence-validity claim's required source-to-use grounds and applicable validity conditions. Use `A.10` for a needed replayable account, `G.6` for a needed citable provenance path, and `B.3` for assurance, including safety-case support; retain any source-return or time condition on which that reliance depends. |
-| Architecture-operation language, with neural-network and software-system discussions as source examples, including the GonzoML architecture-operation intake | Practitioner-language source for structural substitution, gating, memory placement, cache placement, routing, ablation, pruning, distillation, and architecture search; not used as a current standard by itself. | Adopt the recognition that replacement and search expose reusable and bespoke structural loci. In C.31.RSA this changes architecture-operation use: recover the structures, aspects and accounting basis actually used, preserving clear local meanings of block, layer, expert, cache, router, gate or pruning mask. Use C.30.STRAT only for a remaining meaning problem. | Block, layer, expert, cache, router, gate, benchmark, ablation, pruning mask, or distillation success is not RSA slot ontology, architecture decision, evidence sufficiency, gate passage, assurance, or architecture adequacy by itself. | Apply `C.30.STRAT` first where source-label recovery is needed, then `C.30` or `C.30.ASV` for architecture claim and structural view, `C.30.TFS-REL` for flow changes, `C.29` for an unresolved mathematical representation choice, transfer or reliance question, `A.10` for a needed replayable evidence account or `G.6` for a needed citable provenance path, and `C.28` for causal claims. |
+| Architecture-operation language, with neural-network and software-system discussions as source examples, including the GonzoML architecture-operation intake | Practitioner-language source for structural substitution, gating, memory placement, cache placement, routing, ablation, pruning, distillation, and architecture search; not used as a current standard by itself. | Adopt the recognition that replacement and search expose reusable and bespoke structural loci. In C.31.RSA this changes architecture-operation use: recover the structures, aspects and accounting basis used, preserving clear local meanings of block, layer, expert, cache, router, gate or pruning mask. Use C.30.STRAT only for a remaining meaning problem. | Block, layer, expert, cache, router, gate, benchmark, ablation, pruning mask, or distillation success is not RSA slot ontology, architecture decision, evidence sufficiency, gate passage, assurance, or architecture adequacy by itself. | Apply `C.30.STRAT` first where source-label recovery is needed, then `C.30` or `C.30.ASV` for architecture claim and structural view, `C.30.TFS-REL` for flow changes, `C.29` for an unresolved mathematical representation choice, transfer or reliance question, `A.10` for a needed replayable evidence account or `G.6` for a needed citable provenance path, and `C.28` for causal claims. |
 
-**Source use and refresh.** Preserve each adopted contribution's scope and assumptions. A dated standard or historical method can support a claim within those conditions; a claim about present requirements or comparative standing needs the applicable current basis. A source row supplies neither actual conformance nor the evidence-validity, assurance or decision grounds of a particular reuse.
+**Source use and refresh.** Preserve each adopted contribution's scope and assumptions. A dated standard or historical method can support a claim within those conditions; a claim about present requirements or comparative standing needs the applicable current basis. A source row supplies neither conformance nor the evidence-validity, assurance or decision grounds of a reuse.
 
 Reopen the affected RSA use when a changed source or rule alters its reusable locus, residue, accounting basis, source-return condition or relied-on comparison. For example, a new evidence-validity window can limit reuse of a test package without erasing the count of earlier uses. Preserve unaffected historical accounts, and recover new grounds before stronger reliance.
 
@@ -387,7 +419,7 @@ Reopen the affected RSA use when a changed source or rule alters its reusable lo
 | `C.30`, `C.30.AD`, and `C.30.ASV` | Supply architecture-claim, architecture-description-use, and structural-view context, respectively, for the structures being accounted over. |
 | `C.16`, `A.17`, `A.18`, `A.19`, `A.19.CPM` | When RSA shares are used beyond report-only, use C.16 for measurement construction, A.17 for Characteristics, A.18 for scale, unit, and operation legality, including any score used; A.19 for a CharacteristicSpace or reusable space predicate when current; and A.19.CPM for comparison of admitted profiles under a declared comparator. |
 | `C.25` | Governs broader quality-family bundles when reusable structure is used in a quality claim. |
-| `A.10`, `B.3`, `G.6` | A.10 supplies a replayable source-to-use account when needed; G.6 makes an established provenance path citable; B.3 governs assurance claims, including safety-case support. Actual reliance retains the grounds required by its claim. |
+| `A.10`, `B.3`, `G.6` | A.10 supplies a replayable source-to-use account when needed; G.6 makes an established provenance path citable; B.3 governs assurance claims, including safety-case support. Reliance retains the grounds required by its claim. |
 | `C.29` | Helps resolve mathematical representation choice, transfer or reliance when the accounting's ordinary mathematical treatment does not already answer that question. |
 | `C.27`, `C.28`, `C.31.ASAP`, `C.18.1`, `C.19.1` | For claims arising from residue growth or reuse movement, use C.27 for temporal-claim adequacy, C.28 for causal use, C.31.ASAP for architecture alternatives under a declared scale variable and window, C.18.1 for scaling-law lens binding, and C.19.1 for scale-based preference or declared generality policy; a generality preference for architecture structure remains a declared local analogy or policy. |
 | `C.32.P2S` | RSA rows may supply reusable structure, bespoke residue, evidence reuse, or source-return pressure to an architecturing flow. Candidate synthesis, selected-set result declaration, and architecture decisions remain outside RSA. |

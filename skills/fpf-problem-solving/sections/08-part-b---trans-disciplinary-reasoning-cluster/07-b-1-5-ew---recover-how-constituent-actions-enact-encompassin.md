@@ -11,7 +11,7 @@ Start with one action and ask: **“What am I doing through this action now, and
 
 The first useful result is an explanation you can use: the selected action, its relevant constituents and encompassing work, the connections that make the whole possible, and any difference that requires changing the action or its organization. A short demonstration can supply this result. A retained diagram or record is useful only when someone needs it later.
 
-Use an already understood connection directly. This pattern does not require reanalysing every familiar act or finding the smallest possible action and largest conceivable whole. Stop where further detail would not change the present performance, learning, division of work or correction. Use B.1.5 when the separate question is whether identified Methods qualify as one composite Method; use C.32.MWA when several structures need to be synthesized into a practice architecture.
+Use an already understood connection. This pattern does not require reanalysing every familiar act or finding the smallest possible action and largest conceivable whole. Stop where further detail would not change the present performance, learning, division of work or correction. Use B.1.5 when the separate question is whether identified Methods qualify as one composite Method; use C.32.MWA when several structures need to be synthesized into a practice architecture.
 
 ### B.1.5.EW:2 - Problem
 
@@ -24,21 +24,21 @@ The reverse mistake is to call every concurrent or indispensable activity a cons
 ### B.1.5.EW:3 - Forces
 
 - Familiar constituents make work possible, while their combination can introduce a difficulty absent from separate practice.
-- Encompassing requirements constrain the parts; the parts' actual capabilities limit what the whole can achieve.
+- Encompassing requirements constrain the parts; the parts' capabilities limit what the whole can achieve.
 - One action can serve several wholes, whose conditions can differ or conflict.
 - A short account can guide action; unnecessary decomposition consumes the attention needed to act.
 - The whole may be ongoing while only some of its constituents are active.
-- A planned connection helps design work, but actual enactment needs the performed connection.
+- A planned connection helps design work, but enactment needs the performed connection.
 
 ### B.1.5.EW:4 - Solution
 
-Recover the connection in both directions: **what larger work is being performed through this action, and what constituent actions make it performable?** Keep genuine before-and-after dependencies alongside these connections.
+Recover the connection in both directions: **what larger work is being performed through this action, and what constituent actions make it performable?** Keep before-and-after dependencies alongside these connections.
 
 #### B.1.5.EW:4.1 - Choose an action and the work being explained
 
 Name an action in a recognizable situation and the moment or interval under consideration. State whether you are explaining observed Work or proposing how future work could be done. Identify what is being attempted and what a useful result would be.
 
-Use ordinary verbs first: adjusting a step, comparing a measurement, adding a value, questioning an assumption. If the description supplies only a noun such as “coordination”, recover what the participant actually does.
+Use ordinary verbs first: adjusting a step, comparing a measurement, adding a value, questioning an assumption. If the description supplies only a noun such as “coordination”, recover what the participant does.
 
 #### B.1.5.EW:4.2 - Recover an encompassing performance
 
@@ -62,7 +62,7 @@ Continue through the constituent–whole connections in the selected Method or W
 
 Then ask what you must be able to do, or obtain from another participant, to perform the selected action. If a described construction remains unclear, use B.5.RC to recover its inputs, operations, conditions and a small execution. If you lack the domain know-how, obtain an explanation or demonstration. If you understand the operation but cannot perform it in the combination, practise with the encompassing conditions, obtain support or use another qualified contributor. Stop a branch at an understood operation or an available contribution sufficient for this use.
 
-These moves need not end in one tree. Nor does following several connections establish an unrestricted transitive parthood rule. Carry the actual conditions through the intervening wholes. A move from an action to its enabling tool, or from a Method to a more general Method, changes the relation; describe it accordingly.
+These moves need not end in one tree. Nor does following several connections establish an unrestricted transitive parthood rule. Carry the conditions through the intervening wholes. A move from an action to its enabling tool, or from a Method to a more general Method, changes the relation; describe it accordingly.
 
 #### B.1.5.EW:4.4 - Examine the combination at a revealing moment
 
@@ -105,7 +105,7 @@ The selected Work structure here connects the performed movement, coordinated fi
 
 An analyst is totaling accepted observations as part of preparing a report. The algorithm maintains a running sum. On reading the next value, adding it to the accumulator is a constituent of computing the total; computing that total is part of the report preparation currently under way. The addition, computation and report preparation do not incur three copies of that minute of work.
 
-The addition is correct over the supplied numbers. The report, however, requires excluding duplicate observations. If duplicate detection is missing, more precise addition cannot repair the report. Recover the accepted-observation rule and apply it before the affected update. The genuine order remains: the next update consumes the current accumulator, and the report cannot use the final total before the calculation finishes.
+The addition is correct over the supplied numbers. The report, however, requires excluding duplicate observations. If duplicate detection is missing, more precise addition cannot repair the report. Recover the accepted-observation rule and apply it before the affected update. The order remains: the next update consumes the current accumulator, and the report cannot use the final total before the calculation finishes.
 
 A scheduler running on the same machine overlaps the calculation. That overlap alone makes it neither an arithmetic constituent nor report-preparation Work.
 
@@ -113,11 +113,11 @@ A scheduler running on the same machine overlaps the calculation. That overlap a
 
 A delivery team is following a route. Each driving action is part of progressing along that route and performing the delivery. Route planning was done earlier. Its result still constrains driving; the team is not performing the planning Work at every instant.
 
-A newly closed road makes the old reference unusable. Better steering cannot restore feasibility. The team needs a revised route under the actual road and delivery constraints. If the road is open and the driver has merely missed a turn, execution correction may suffice. This distinction locates the useful intervention without imposing a fixed number of control layers.
+A newly closed road makes the old reference unusable. Better steering cannot restore feasibility. The team needs a revised route under the road and delivery constraints. If the road is open and the driver has merely missed a turn, execution correction may suffice. This distinction locates the useful intervention without imposing a fixed number of control layers.
 
 ### B.1.5.EW:6 - Bias-Annotation
 
-An observer can recognize their own specialist operation while missing the connection needed by another participant. Ask the receiver what the encompassing work requires. Equally, do not presume that a manager's broad description supplies the constituent expertise. Actual constraints can invalidate the requested whole.
+An observer can recognize their specialist operation while missing the connection needed by another participant. Ask the receiver what the encompassing work requires. Equally, do not presume that a manager's broad description supplies the constituent expertise. Constraints can invalidate the requested whole.
 
 ### B.1.5.EW:7 - Conformance Checklist
 
@@ -125,7 +125,7 @@ An observer can recognize their own specialist operation while missing the conne
 - Is each claimed encompassing connection explained through performed or proposed organization, rather than timing or importance alone?
 - Are the needed constituents recoverable without indefinite decomposition?
 - Does the account explain whether and how relevant changes in whole conditions affect the selected action or its coordination?
-- Are genuine result dependencies and relevant external support retained?
+- Are result dependencies and relevant external support retained?
 - Does the result identify a useful continuation without claiming that recognition establishes success or assurance?
 
 ### B.1.5.EW:8 - Common Anti-Patterns and How to Avoid Them
@@ -156,9 +156,9 @@ Craver and Bechtel's [mechanistic account](https://mechanism.ucsd.edu/bill/resea
 
 [Matni, Ames and Doyle](https://arxiv.org/html/2401.15185v1) explain interacting control functions with different rates and recursively refinable organization. Their formal control constructions support the control example; they do not establish the constitution of every human practice. The practical recovery operation here is a methodological synthesis under FPF's Method and Work distinctions.
 
-For the practical question here—what larger work is being done through this action, and how the conditions of that work affect the action—a lifecycle account is a serious but incomplete alternative. It usefully preserves preparation, delivery and other genuine precedence. It does not by itself explain why a smaller partnered step performs the figure better than a larger solo step at the same moment. Sections 4.2 and 4.4 therefore adopt organized-participation recovery and a changed-whole-condition comparison, retaining the lifecycle account where order matters. A short explanation can settle this question without building a full practice architecture.
+For the practical question here—what larger work is being done through this action, and how the conditions of that work affect the action—a lifecycle account is a serious but incomplete alternative. It usefully preserves preparation and delivery, and the precedence relations between activities. It does not by itself explain why a smaller partnered step performs the figure better than a larger solo step at the same moment. Sections 4.2 and 4.4 therefore adopt organized-participation recovery and a changed-whole-condition comparison, retaining the lifecycle account where order matters. A short explanation can settle this question without building a full practice architecture.
 
-A fixed control-layer diagram is another useful alternative when the problem already has a justified controller/reference/plant interpretation. The Matni–Ames–Doyle account helps interpret such a case and its differing rates. Section 4.4 retains the distinction between inadequate execution and an infeasible reference; section 4.2 requires the particular constituent connection rather than inferring it from diagram depth. For non-control work, the source's formal constructions provide an analogy, not its ontology or a guarantee. Reconsider the proposed connection if its explanation rests only on causal influence or if the comparison contradicts the claimed dependence. Use a simpler subject Method when it supplies the same useful result. Where only an earlier-result dependency matters, keep that dependency account and stop.
+A fixed control-layer diagram is another useful alternative when the problem already has a justified controller/reference/plant interpretation. The Matni–Ames–Doyle account helps interpret such a case and its differing rates. Section 4.4 retains the distinction between inadequate execution and an infeasible reference; section 4.2 requires the constituent connection rather than inferring it from diagram depth. For non-control work, the source's formal constructions provide an analogy, not its ontology or a guarantee. Reconsider the proposed connection if its explanation rests only on causal influence or if the comparison contradicts the claimed dependence. Use a simpler subject Method when it supplies the same useful result. Where only an earlier-result dependency matters, keep that dependency account and stop.
 
 ### B.1.5.EW:12 - Relations
 

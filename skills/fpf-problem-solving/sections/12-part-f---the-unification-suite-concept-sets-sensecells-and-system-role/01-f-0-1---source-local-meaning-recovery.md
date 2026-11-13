@@ -2,7 +2,7 @@
 
 > **Type:** Architectural (A)
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 ### F.0.1:1 - Problem frame
 
@@ -20,17 +20,17 @@ The first useful result is one source-backed meaning statement. For example: “
 
 A string does not identify one meaning across sources. The same spelling can denote different kinds of subject; for example, *process* can name a designed structure or a performed occurrence. If the source, edition, and passage disappear, a later claim can silently change its entity, relation, time stance, or intended use.
 
-The opposite response is also harmful. A full source survey, durable cell, provenance record, reliance disposition, or assurance claim for every word makes ordinary reading needlessly expensive. The problem is to recover one local meaning cheaply while keeping the point of escalation visible.
+Requiring a full source survey, durable cell, provenance record, reliance disposition, or assurance claim for every word makes ordinary reading needlessly expensive. Recover one local meaning first and show when further work is needed.
 
 ### F.0.1:3 - Forces
 
 | Force | Tension |
 | --- | --- |
 | Local fidelity vs later reuse | The answer must stay true to its source while remaining available to later work. |
-| Inspectability vs readable prose | Source and edition must remain recoverable without mechanically qualifying every repetition. |
+| Inspectability vs readable prose | Keep the source and edition recoverable. Repeat them where the reference would otherwise be ambiguous. |
 | Cheap answer vs durable address | One sentence may close the question; repeated or cross-source use may need an exact reusable cell. |
 | Useful relation vs false sameness | Two meanings may stand in a useful relation, but shared wording, similarity, or a family label does not establish it. |
-| Continuity vs revision | Historical meanings remain citable while a changed relied premise reopens only the affected use. |
+| Continuity vs revision | Historical meanings remain citable. If a premise changes, reopen only the uses that relied on it. |
 
 ### F.0.1:4 - Solution — recover locally, strengthen only for use
 
@@ -48,7 +48,7 @@ The source, edition, expression, passage, and plain meaning are the ordinary min
 
 Create one F.17 `SchemeSenseCell <ReferenceScheme, LocalExpression, LocalSenseClaim>` only when stable reuse, a later claim, a named receiver, or an actual relation to another local sense needs an exact address. The effective ReferenceScheme keeps the source and edition recoverable; the LocalSenseClaim states the meaning rather than hiding it in a label.
 
-State an obtaining `LocalSenseBasisRelation` only when the support relation from an exact basis episteme to that cell is itself current and supported. Identifying a source, stating that support relation, relying on it in a later use, and assuring that reliance are four different claims. Use A.10 and B.3 only for the latter questions.
+State an obtaining `LocalSenseBasisRelation` only when the support relation from an exact basis episteme to that cell is current and supported. Identifying a source, stating that support relation, relying on it in a later use, and assuring that reliance are four different claims. Use A.10 and B.3 only for the latter questions.
 
 When a source fixes a designed-versus-performed distinction or another time stance, put it in the local sense claim or its exact basis. Do not make an edition label or separate container stand in for the distinction.
 
@@ -56,13 +56,13 @@ When a source fixes a designed-versus-performed distinction or another time stan
 
 A shared label, close paraphrase, common superclass, table row, embedding score, or family membership does not establish identity or another relation. First recover each source-local meaning separately. Then use F.9 when a receiving use needs an actual relation between the two F.17 cells.
 
-The F.9 result states which two cells are related, what kind of relation obtains, how its endpoints are oriented, and what relation profile makes it true. When a receiving use is current, state a separate C.2.1 claim: what action is proposed, in which direction, under which correspondence rule, how much loss it tolerates, and whether the Bridge is suitable for that use. Changing this use claim does not change the Bridge. Neither the relation nor the claim by itself permits translation, substitution, or row membership, establishes reliance or authorization, or shows that the action occurred. A chain of relations does not silently create a direct endpoint relation.
+The F.9 result states which two cells are related, what kind of relation obtains, how its endpoints are oriented, and what relation profile makes it true. When a receiving use is current, state a separate C.2.1 claim: what action is proposed, in which direction, under which correspondence rule, how much loss it tolerates, and whether the Bridge is suitable for that use. Changing this use claim does not change the Bridge. Neither the relation nor the claim by itself permits translation, substitution, or row membership, establishes reliance or authorization, or shows that the action occurred. A chain alone does not establish a direct relation between its endpoints.
 
 #### F.0.1:4.4 - Recover old Context-shaped artifacts only for a current reliance
 
-An old Context Card or two-part SenseCell remains an historical episteme or representation under its original edition. Do not relabel it as a current F.17 cell.
+An old Context Card or two-part SenseCell remains a historical episteme or representation under its original edition. Do not relabel it as a current F.17 cell.
 
-When a current claim or action actually relies on it, recover only the values that use needs: for example, the exact source and edition, expression, source-local claim, passage, effective scheme, claim scope, or obtaining relation. If a needed value cannot be recovered, return the exact unresolved value and reopen only the dependent claim or action. Mere archival presence does not start a migration.
+When a current claim or action relies on it, recover only the values that use needs: for example, the exact source and edition, expression, source-local claim, passage, effective scheme, claim scope, or obtaining relation. If a needed value cannot be recovered, return the exact unresolved value and reopen only the dependent claim or action. Keeping an artifact in an archive does not require migration.
 
 #### F.0.1:4.5 - Minimal conceptual objects
 
@@ -80,7 +80,7 @@ When a current claim or action actually relies on it, recover only the values th
 2. A plain source-backed statement may be the complete result.
 3. A `SchemeSenseCell` is created only for a named durable use and keeps scheme, expression, and claim distinct.
 4. A basis relation is stated only when it obtains; reliance and assurance remain separate.
-5. Different local meanings remain distinct unless an exact relation between them is established.
+5. Keep the local meanings separately identifiable. An established relation supports only the correspondence its profile specifies.
 6. Designed and performed readings do not become identical through shared wording.
 7. A changed edition, passage, or relation reopens only claims and uses that relied on the changed premise.
 8. Historical artifacts remain historical; current recovery does not require corpus-wide relabelling.
@@ -102,18 +102,18 @@ These examples illustrate the reasoning; they prescribe no storage format or wor
 
 Start with one troublesome use in one already selected source. Return one ordinary sentence plus a source pointer. Stop when it answers the question.
 
-Continue only for the next result actually needed:
+Continue only for the next result you need:
 
 - `F.1` for a question-relative source cut;
 - `F.17` for a durable local-sense address and, when current, its basis relation;
 - `F.9` for an actual relation between distinct recovered cells;
 - `F.0.2` for a bounded comparison or synthesis among source ontologies;
 - `F.18` for naming after the subject distinction is settled; or
-- the rule that defines or tests the exact entity, relation, claim, measurement, permission, or Work question itself, with its pattern ID as locator.
+- the rule that defines or tests the exact entity, relation, claim, measurement, permission, or Work question, with the pattern ID as locator.
 
 #### F.0.1:5.2 - Compact worked results and recognition cues
 
-A **worked result** below names the exact source, edition, passage, and meaning used. A **recognition cue** only marks a likely false friend; it establishes no local meaning until the practitioner supplies those four values. This distinction keeps a broad set of examples useful without dressing an unresolved pointer as source-backed knowledge.
+A **worked result** below names the exact source, edition, passage, and meaning used. A **recognition cue** only marks a likely false friend; it establishes no local meaning until the practitioner supplies those four values. This distinction lets readers use examples from several fields while seeing which readings still need source work.
 
 ##### F.0.1:5.2.1 - *process* and *activity*
 
@@ -195,7 +195,7 @@ Recover the RBAC *role* meaning from its source before relating it to the ODRL *
 
 - **RSCR-F01 (Affected edition change).** A changed edition or passage reopens only local claims and later uses that relied on the changed content.
 - **RSCR-F02 (Endpoint change).** A changed cell claim or stance triggers recheck of relations and uses that cite that endpoint.
-- **RSCR-F03 (Composition guard).** A relation chain never silently becomes a direct relation or unrestricted substitution.
+- **RSCR-F03 (Composition guard).** A relation chain alone establishes neither a direct endpoint relation nor unrestricted substitution.
 - **RSCR-F04 (Source-cut relevance).** Reopen F.1 only when the receiving question or use, a relied source role, known rival, counterexample, or transfer limit changes.
 - **RSCR-F05 (Historical recovery).** An old Context-shaped artifact is recovered only for a current reliance; missing values return as exact unresolved inputs.
 
@@ -204,9 +204,9 @@ Recover the RBAC *role* meaning from its source before relating it to the ODRL *
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
 | Global term | A load-bearing word has no recoverable source reading. | Name the exact source and passage and state the local meaning. |
-| String-match identity | The same label in two sources is treated as one meaning. | Recover both meanings and inspect the actual F.9 relation. |
+| String-match identity | The same label in two sources is treated as one meaning. | Recover both meanings and use F.9 to test whether a relation obtains. |
 | Edition blur | A source is cited without the edition that fixes the reading. | Identify the edition and reopen only affected uses when it changes. |
-| Domain equals source | “Control” or another shelf label is treated as one vocabulary. | Identify the actual source or practice and its claim. |
+| Domain equals source | “Control” or another shelf label is treated as one vocabulary. | Identify the source or practice behind the label and state its claim. |
 | Time-stance confusion | A design description and a performed occurrence are treated as the same thing. | State the source-local distinction and any supported relation. |
 | Mixed local-sense claim | A lexical gloss absorbs behaviour, permissions, measurement, or proof rules. | Keep the meaning statement local, then use the defining or testing rule for each non-lexical claim. |
 | Relation by similarity | A score, paraphrase, or common row is treated as an obtaining relation. | Use it only to guide inspection; state the exact relation if supported. |
@@ -215,22 +215,22 @@ Recover the RBAC *role* meaning from its source before relating it to the ODRL *
 
 ### F.0.1:9 - Consequences
 
-Local meanings become inspectable and revisable without forcing a global vocabulary. A reader sees when source selection, synthesis, naming, subject reasoning, or a cross-local relation is the real next question. Most uses become cheaper because one sentence and one citation can close them.
+Local meanings become inspectable and revisable without forcing a global vocabulary. A reader sees when source selection, synthesis, naming, subject reasoning, or a cross-local relation is the next question. When one sentence and a citation answer the question, the reader can stop before preparing a reusable cell.
 
-The cost is explicit judgment about source, edition, passage, and meaning. A reusable cell or relation requires more work only when a later receiver needs it.
+Making the source, edition, passage, and meaning explicit takes judgment. Creating a reusable cell or establishing a relation takes additional work. Undertake it only when a later receiver needs it.
 
 ### F.0.1:10 - Rationale
 
-Meaning is cheapest to recover where a source actually uses an expression. Starting with the source passage prevents a later comparison from rewriting the source before the commonality or difference is known. Keeping durable cell identity in F.17 and cross-local relations in F.9 prevents local recovery from becoming a second ontology or relation catalogue.
+Recover the meaning from the passage where the source uses the expression. When the passage settles the question, this avoids the cost of a wider comparison. Starting with the source passage prevents a later comparison from rewriting the source before the commonality or difference is known. Keeping durable cell identity in F.17 and cross-local relations in F.9 prevents local recovery from becoming a second ontology or relation catalogue.
 
-The proportional split also protects practical use: one identified source can yield an answer immediately; several possible sources call for F.1; several source ontologies call for F.0.2; an actual relation calls for F.9.
+This keeps the work proportionate: one identified source can yield an answer immediately; several possible sources call for F.1; several source ontologies call for F.0.2; an actual relation calls for F.9.
 
 ### F.0.1:11 - SoTA-Echoing
 
 | Current practice line and exact sources | Decision and effect in `F.0.1` | Limit kept visible |
 | --- | --- | --- |
 | ISO 1087:2019 and ISO 704:2022 distinguish objects, concepts, definitions, and designations. | **Adopt, with a boundary.** Recover the source-local designation and concept contribution before comparison. | Standard status establishes neither one universal vocabulary nor the receiving claim. |
-| Kapferer and Zimmermann, *Domain-driven Architecture Modeling and Rapid Prototyping with Context Mapper* (2021), keep a software-domain model and language within a named DDD boundary and make inter-boundary relations explicit. | **Adapt as a software-domain example.** Use that boundary only when a DDD bounded context is the actual subject. | It does not warrant a transdisciplinary `U.BoundedContext` or make that object the source of all meaning. |
+| Kapferer and Zimmermann, *Domain-driven Architecture Modeling and Rapid Prototyping with Context Mapper* (2021), keep a software-domain model and language within a named DDD boundary and make inter-boundary relations explicit. | **Adapt as a software-domain example.** Use that boundary only when a DDD bounded context is the subject being described. | It does not warrant a transdisciplinary `U.BoundedContext` or make that object the source of all meaning. |
 | Abd Nikooie Pour et al., *Results of the Ontology Alignment Evaluation Initiative 2025* (2025); Giglou et al., *LLMs4OM* (2024); Hu and Ichise, *From Matching to Retrieval: A New Role for LLMs in Ontology Alignment* (2025); and Qiang et al., *OAEI-LLM* (2024). | **Adapt.** Use lexical, structural, retrieved, or model-produced correspondences to find candidates worth inspecting; establish an F.9 relation only from the exact recovered senses and its relation profile. | A benchmark result, similarity score, or model answer establishes neither semantic identity nor the separate C.2.1 claim that a Bridge suits a receiving use. |
 | W3C SHACL (2017) and DCAT 3 (2024) separate constraints, validation, catalog metadata, versions, and provenance from described subject claims. | **Adapt.** Keep source and edition metadata recoverable and use a compact source note when useful. | Metadata form, validation, or provenance establishes neither meaning, truth, reliance, nor assurance. |
 

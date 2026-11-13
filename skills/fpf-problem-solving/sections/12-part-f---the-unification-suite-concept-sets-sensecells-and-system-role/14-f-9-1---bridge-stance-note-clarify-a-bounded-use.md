@@ -4,17 +4,17 @@
 > **Status:** Stable
 > **Normativity:** Normative unless marked informative
 
-**Plain name.** A short note that helps a reader interpret one particular use of a Bridge.
+**Plain name.** A short note that helps a reader interpret one use of a Bridge.
 
 **One-line summary.** A bridge stance note is a separate claim-bearing episteme about one exact F.9 bounded-use claim. It may say that the use is best read as a local rename, operationalization, partial analogy, projection, or warning against equivalence. It changes neither the Bridge nor the claim it explains.
 
-**Use this when.** Use F.9.1 after an F.9 Bridge has been shown to obtain and a separate bounded-use claim already says what someone proposes to do with that Bridge, in which direction, under which rule, and with what tolerated loss. Add a stance note only when one short interpretive cue will help a reader without replacing those facts.
+**Use this when.** Use F.9.1 after an F.9 Bridge has been shown to obtain and a separate bounded-use claim says what someone proposes to do with that Bridge, in which direction, under which rule, and with what tolerated loss. Add a stance note only when one short interpretive cue will help a reader without replacing those facts.
 
 **Start here when.** You already have the Bridge and its bounded-use claim, but a reader may still overread a phrase such as “operationalizes”, “projection”, or “roughly analogous”.
 
 **First useful move.** Point to the exact bounded-use claim and write one ordinary sentence: “For this named use, read the relation as `___`.” Add a rejected overread only when it has an independent local ground and changes the intended reader's interpretation, as F.19 requires. Choose a stance word only if it makes the sentence shorter and clearer.
 
-**What goes wrong if missed.** An interpretive gloss is treated as proof of equivalence, permission to substitute, or evidence that a use happened. The opposite failure also occurs: authors build a second bridge taxonomy merely to explain how one already warranted use should be read.
+**What goes wrong if missed.** An interpretive gloss is treated as proof of equivalence, permission to substitute, or evidence that a use happened. Authors can also build a second bridge taxonomy where one warranted use needs a gloss.
 
 **What this buys.** Readers get a compact caution or reading aid while the Bridge, proposed use, evidence, reliance, authorization, actual downstream act, and optional publication package remain separately checkable.
 
@@ -26,9 +26,9 @@ People often need one short gloss after they have established a cross-local sema
 
 ### F.9.1:2 - Object and identity
 
-A bridge stance note is an ordinary C.2.1 episteme. It is not a U-kind and it is not part of the Bridge occurrence.
+A bridge stance note is an ordinary C.2.1 episteme. It is neither a U-kind nor part of the Bridge occurrence.
 
-Its C.2.1 identity is settled as follows:
+Three values determine its C.2.1 identity:
 
 - its `EntityOfConcern` is one exact F.9 bounded-use claim;
 - its `ClaimGraph` states the selected stance, the ordinary-language reading that stance abbreviates, and any grounded overread it needs to reject;
@@ -76,8 +76,8 @@ The stance note may cite evidence or a current A.10 or B.3 reliance result, but 
 
 | Stance | Plain reading | Nearest overread to reject |
 | --- | --- | --- |
-| `localRename` | For this use, the receiving expression is being read as a near-renaming within the stated local boundary. | Cross-local identity or unrestricted replacement. |
-| `operationalizes` | For this use, the receiving expression gives a procedural, observable, or measurable reading of the source. | Enactment, implementation, work authority, permission, or type-structure equivalence. |
+| `localRename` | For this use, read the receiving expression as a near-renaming within the stated local boundary. | Cross-local identity or unrestricted replacement. |
+| `operationalizes` | Name the expression that gives a procedural, observable or measurable reading of the other, and the aspect it makes observable in this use. | Enactment, implementation, work authority, permission, or type-structure equivalence. |
 | `partialAnalogy` | For this use, the two senses share one stated explanatory pattern and differ elsewhere. | Admissible substitution or equivalence. |
 | `projection` | For this use, the receiving expression keeps one stated aspect and drops others. | Completeness, reversibility, recoverability, or permission to ignore the dropped distinctions. |
 | `nonEquivalent` | For this use, read the comparison as an explicit warning against equivalence. | A claim of disjointness, a negative Bridge claim, or a general ban beyond the stated use. |
@@ -94,7 +94,9 @@ A stance word carries no direction by itself. Direction belongs to the bounded-u
 - The stance note says how to read that one claim.
 - A claim that a comparison, translation, publication, Work occurrence or other downstream act occurred uses that object's subject pattern and evidence. When authorization is needed, recover it under the pattern that defines the permission or authority claim. The stance note establishes neither.
 
-A Bridge Card is optional claim-bearing packaging. A Card may package the Bridge description, bounded-use claim, evidence references, reliance result, and stance note together, but the Card is not a prerequisite for any of them. The Card's layout and edition, and any publication occurrence or file carrying it, remain separate from the objects it brings together.
+A Bridge Card is optional claim-bearing packaging. A Card may package the Bridge description, bounded-use claim, evidence references, reliance result, and stance note together, but the Card is not a prerequisite for any of them.
+
+The Card's layout and edition, and any publication occurrence or file carrying it, remain separate from the objects it brings together.
 
 `CL` is optional F.9 shorthand for evidence strength about a stated correspondence. It is not a substitution threshold and does not rank the stance. A stance note establishes neither suitability nor permission from `CL`, a loss note, or the gloss itself.
 
@@ -102,23 +104,25 @@ A Bridge Card is optional claim-bearing packaging. A Card may package the Bridge
 
 A `projection` or `nonEquivalent` stance can highlight loss, but it does not provide the source tether, narrower admissible use, blocked downstream use, or return trigger required for controlled coarsening. When those duties are live, use A.6.3.CSC and keep the stance note only if it still helps explain an independently established bounded-use claim.
 
-Publication does not cure a missing source. If a reader must return to a source episteme or source publication before the Bridge or bounded-use claim can be checked, perform that return first.
+When checking the Bridge or bounded-use claim requires the source episteme or source publication, return to that source first. Publication cannot substitute for the missing source.
 
 ### F.9.1:5 - Archetypal Grounding
 
 #### F.9.1:5.1 - Local rename inside one bounded use
 
-An obtaining Bridge and a separate affirmative bounded-use claim say that one operational label is suitable as a near-renaming of another in one proposed glossary use. A `localRename` stance can make that reading quick to recognize. It establishes neither cross-local identity nor unrestricted replacement outside the stated use.
+The Bridge obtains between the two local senses. The separate affirmative claim says that one operational label can serve as a near-renaming of the other for this glossary. A `localRename` stance can make that reading quick to recognize. It establishes neither cross-local identity nor unrestricted replacement outside the stated use.
 
 #### F.9.1:5.2 - Operational reading of a control cue
 
-An F.9 `Partial-overlap` Bridge obtains between one exact operator-alarm sense and one broader control-cue sense. A separate affirmative bounded-use claim says that this Bridge is suitable for using the alarm term in one training explanation, in the alarm-to-control direction, under a rule that preserves the response trigger but not the complete control model, with zero tolerance for treating the term as implementation authority. A current A.10 reliance judgment says the available evidence supports relying on that narrow claim.
+An F.9 `Partial-overlap` Bridge obtains between one exact operator-alarm sense and one broader control-cue sense. A separate affirmative bounded-use claim says that this Bridge is suitable for using the alarm term in one training explanation, in the alarm-to-control direction, under a rule that preserves the response trigger but not the complete control model, with zero tolerance for treating the term as implementation authority.
+
+For this training use, a current A.10 reliance judgment says the available evidence supports relying on that narrow claim.
 
 A stance note may now say: “For this training explanation, read the alarm term as operationalizing the response-trigger part of the control cue; do not read it as the complete control model or as permission to change the controller.” The stance is `operationalizes`.
 
 #### F.9.1:5.3 - Projection into a report
 
-An obtaining Bridge and a bounded-use claim say that the Bridge is suitable for showing one aspect of a rich operations concept in one proposed weekly-report use. The claim names the report use, direction, correspondence rule, and tolerated omission. A `projection` stance note may foreground that the report keeps only queue age and drops causal and capacity distinctions.
+The Bridge relates the two local senses. The bounded-use claim says that this relation suits a weekly report showing one aspect of the operations concept. The claim names the report use, direction, correspondence rule, and tolerated omission. A `projection` stance note may foreground that the report keeps only queue age and drops causal and capacity distinctions.
 
 If readers must return to the source account before making a staffing or release decision, follow A.6.3.CSC: return to the source and do not use the report for those decisions. The stance note alone cannot set that boundary.
 
@@ -126,9 +130,9 @@ If readers must return to the source account before making a staffing or release
 
 Two schools use different senses that share one explanatory pattern. For example, a TAE felt-sense phrase and a later formal term may share one stated explanatory feature while differing elsewhere. Their F.9 Bridge obtains, and an affirmative bounded-use claim says that the Bridge is suitable for one teaching comparison while rejecting method transfer. A `partialAnalogy` stance helps the reader notice the shared pattern. It does not make the methods equivalent.
 
-#### F.9.1:5.5 - `nonEquivalent` is a warning, not a verdict generator
+#### F.9.1:5.5 - The `nonEquivalent` warning
 
-An affirmative bounded-use claim says that the Bridge is suitable for placing two senses in the same comparison table. A separate negative claim rejects the proposed substitution use. A `nonEquivalent` stance may make that limit easy to see. The label does not make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
+An affirmative bounded-use claim says that the Bridge is suitable for placing two senses in the same comparison table. A separate negative claim rejects the proposed substitution use. A `nonEquivalent` note on the negative substitution claim can explain why the comparison heading gives no basis for replacement. The label does not make the Bridge `Disjoint`, set `CL=0`, negate another use, or prohibit a future use with different direction, rule, and tolerance.
 
 #### F.9.1:5.6 - Anti-case: the gloss comes first
 
@@ -170,11 +174,15 @@ An affirmative bounded-use claim says that the Bridge is suitable for placing tw
 
 ### F.9.1:9 - Rationale
 
-The stance vocabulary is useful because practitioners already write short interpretive glosses. The ontology stays small by treating each gloss as ordinary claim-bearing content rather than a new relation kind or universal classification. Making the bounded-use claim the EntityOfConcern also keeps a Card as optional publication packaging rather than the subject or source of the relation and use claims. One primary stance per claim is a readability default, not a new cardinality law. The real criterion is whether the note makes the claim easier to understand without hiding a materially different reading; when one ordinary sentence does that better, the sentence wins.
+The stance vocabulary is useful because practitioners already write short interpretive glosses. The ontology stays small by treating each gloss as ordinary claim-bearing content rather than a new relation kind or universal classification. Making the bounded-use claim the EntityOfConcern also keeps a Card as optional publication packaging rather than the subject or source of the relation and use claims.
+
+One primary stance per claim is a readability default, not a new cardinality law. The criterion is whether the note makes the claim easier to understand without hiding a materially different reading; when one ordinary sentence does that better, use the sentence.
 
 ### F.9.1:10 - Bias-Annotation
 
-**Favored reading.** Prefer disciplined, claim-local comparative reading to sweeping synonym claims. **Counter-risk.** Do not turn harmless comparison into a Bridge, bounded-use claim, reliance judgment, and stance note when that machinery changes no action. Apply the four checks in 4.1; when item 4 has no reader benefit, stop.
+**Favored reading.** Prefer disciplined, claim-local comparative reading to sweeping synonym claims.
+
+Do not turn harmless comparison into a Bridge, bounded-use claim, reliance judgment, and stance note when that machinery changes no action. Apply the four checks in 4.1; when item 4 has no reader benefit, stop.
 
 ### F.9.1:11 - SoTA-Echoing
 
@@ -197,6 +205,6 @@ For each legacy stance passage, ask in order:
 3. Which exact bounded-use claim is being explained?
 4. Does a short stance note add reader value?
 
-If question 2 or 3 has no answer, do not preserve the stance as if it supplied one. If all four answers exist, keep every useful legacy idea as the plain reading, stance, loss emphasis, example, or non-use boundary of the new C.2.1 episteme. A Card reference may remain as optional publication access, never as the stance's identity or prerequisite.
+Keep a stance note when you can identify both senses, establish their Bridge, cite the bounded-use claim and explain what the note adds for its reader. Preserve useful legacy wording as the plain reading, stance, loss emphasis, example or grounded non-use boundary. If the note adds nothing for that reader, omit it. Retain any independently useful legacy explanation with the claim or example it explains. A Card reference may remain as optional publication access, never as the stance's identity or prerequisite.
 
 ### F.9.1:End

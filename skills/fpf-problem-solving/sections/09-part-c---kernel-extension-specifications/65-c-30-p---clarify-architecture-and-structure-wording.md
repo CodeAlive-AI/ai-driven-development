@@ -2,14 +2,14 @@
 
 > **Type:** Architectural pattern
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 **Plain-name.** Architecture-structure wording repair.
 
 **Intent.**
 Recover architecture or structure wording whose selected structure, architecture relation, architecture-description use, structural-view use, source-return relation, or named C.30 subcase is hidden before a reader applies `A.22`, `C.30`, `C.30.ASV`, or a named `C.30.*` pattern.
 
-This pattern does not mint `U.Architecture`, does not fuse architecture and structure into one kind, and does not replace grounded architecture adequacy or structural-view adequacy. It repairs overloaded wording so the architecture, structure, description, view, publication, source, relation, characteristic, mathematical-lens, evidence, assurance, gate, work, decision, causal-use, release, or ordinary-prose use becomes recoverable by value.
+This pattern repairs overloaded wording so the architecture, structure, description, view, publication, source, relation, characteristic, mathematical-lens, evidence, assurance, gate, work, decision, causal-use, release, or ordinary-prose use becomes recoverable by value. It does not mint `U.Architecture`, does not fuse architecture and structure into one kind, and does not replace grounded architecture adequacy or structural-view adequacy.
 
 **Builds on.** `E.10`, `E.10.ARCH`, `A.22`, `C.30`, `C.30.ASV`, `C.2.P`, `A.6.P`, `A.6.F`, `C.29`, `C.16.P`, `C.16`, `C.25`, `E.17`, and `E.8`.
 
@@ -26,9 +26,9 @@ Typical triggers:
 - `architecture`, `architecture description`, `architecture model`, `architecture diagram`, `architecture map`, `architecture dashboard`, `architecture score`;
 - `structure`, `structural view`, `structural model`, `module layout`, `component structure`, `interface structure`, or stratification wording or source-label wording such as `layer`, `level`, `tier`, `stack`, `ladder`, `rung`, `block`, `expert`, `cache`, `router`, or `gate` whose technical meaning must be recovered through `C.30.STRAT` before local architecture or structure assignment;
 - `graph`, `flow`, `transformation-flow graph expression`, `control sketch`, `LCA diagram`, `ADR`, `dashboard`, `benchmark`, `source`, or `view` being treated as architecture or structure by wording alone;
-- a function, module, interface, signature, flow, control, quality, score, evidence, assurance, gate, work, decision, causal-use, or release claim being smuggled under architecture or structure wording.
+- a function, module, interface, signature, flow, control, quality, score, evidence, assurance, gate, work, decision, causal-use, or release claim hidden by architecture or structure wording.
 
-**What goes wrong if missed.** A diagram becomes the architecture, a graph becomes proof, a view becomes the selected structure, a source document becomes an architecture decision, a score becomes architecture adequacy, or a function, module, or interface claim becomes architecture by default.
+**What goes wrong if missed.** A diagram is treated as the architecture, a graph as proof, a view as the selected structure, a source document as an architecture decision, a score as architecture adequacy, or a function, module, or interface claim as architecture by default.
 
 **What this buys.** The reader can state the intended claim, retain its useful content, and use the pattern that addresses the remaining question. Clear ordinary wording needs no repair record.
 
@@ -78,7 +78,7 @@ The same word can name a structure, a claim about it, or a description used to i
 
 ### C.30.P:4 - Solution
 
-Repair architecture or structure wording by producing an `architecture-structure repair note` or an equivalent local rewrite.
+Repair architecture or structure wording with a local rewrite or an `architecture-structure repair note`.
 
 An optional note can organize the following information; include only what the repair needs:
 
@@ -104,7 +104,7 @@ ArchitectureOrStructureRepairNote:
   disposition:
 ```
 
-Use the note only when the repair must remain inspectable. A direct local rewrite is enough when one sentence clearly names the selected-structure claim being made, architecture relation, architecture-description use, structural-view use, source-return relation, or subject pattern.
+Use the note only when the repair must remain inspectable. A local rewrite is enough when one sentence clearly names the selected-structure claim being made, architecture relation, architecture-description use, structural-view use, source-return relation, or subject pattern.
 
 #### C.30.P:4.1 - Recovery sequence
 
@@ -134,19 +134,19 @@ Use the note only when the repair must remain inspectable. A direct local rewrit
 | architecture-description identity or use, multi-view correspondence, architecture-description specification-use boundary | `C.30.AD` |
 | architecture structural view, structure-kind view, hidden or lost structure | `C.30.ASV` |
 | transformation-flow graph expression, flow relation, architecture-to-transformation-flow relation | `E.18.2` for a mathematical flow-graph expression; `E.18` for selected transformation-flow structure; `C.30.TFS-REL` for its bounded architecture-use record; otherwise the subject pattern for the claim being made |
-| architecture-synthesis wording | Recover the concrete claim kind, then use the architecture-synthesis routing note below. |
+| architecture-synthesis wording | Recover the claim kind, then use the architecture-synthesis routing note below. |
 | control structure view, LCA sketch or control sketch | `C.30.LCA` when an architecture control-structure view claim is being made |
 | cross-scope conflict or frustration triage | `C.30.ILC` when that question is being asked |
 | source, publication, carrier, view, face, `PublicationUnit`, dashboard, ADR, documentation, source-return | `C.2.P` while the relevant distinction remains hidden; otherwise `E.17`, `E.17.0`, or the publication or source-use pattern governing the claim |
 | relation construction, basedness, source, base-dependence, evidence and relation-claim discrimination, endpoint compression, comparison | `A.6.P` or the A.6 specialization selected by the recovered claim |
-| function, functional, functionality, effect, module, interface, or signature claim | `A.6.F`, `A.6.M`, A.6 signature and slot pattern, or the retained module, interface, or signature specialization selected by the claim |
+| function, functional, functionality, effect, module, interface, or signature claim | `A.6.F`, `A.6.M`, A.6 signature and slot pattern, or the module, interface, or signature specialization selected by the claim |
 | stratification or source labels such as `layer`, `level`, `tier`, `stack`, `ladder`, `rung`, `block`, `expert`, `cache`, `router`, or `gate` | `C.30.STRAT` while the label's technical meaning remains unclear; after recovery, use `A.22`, `C.30`, `C.30.ASV`, `C.30.LCA`, `C.30.TFS-REL`, `A.6.M`, `A.6.F`, `E.18`, `C.16.P`, `C.29`, or the pattern governing the recovered claim |
 | mathematical lens, mapping, model, similarity, preserved-structure and lost-structure as mathematical-lens use | `C.29` |
 | characteristic, scale, metric, score, indicator, threshold, architecture score, quality coordinate | `C.16.P` while the meaning remains unclear; otherwise `C.16`, `A.19`, `C.25`, `E.21`, or the pattern governing the claim |
 | quality-term or evaluative characterization | `C.16.Q`, `C.25`, `E.21`, or the characterization pattern governing the claim |
 | evidence, proof, validation, witness | `A.10` for source recovery and bounded reliance; the defining or testing pattern for the evidence, proof, validation, or witness claim itself |
 | assurance, engineering justification, safety case | `B.3` or the applicable assurance pattern for a named assurance claim; the defining domain pattern for a separate safety claim |
-| internal constraint, gate, admissibility, release, approval | `A.20` for an internal-constraint result; `A.21` for a named gate decision; the direct domain pattern for the particular admissibility, release, or approval claim |
+| internal constraint, gate, admissibility, release, approval | `A.20` for an internal-constraint result; `A.21` for a named gate decision; the domain pattern for the admissibility, release, or approval claim |
 | work, method, implementation, operation, change execution | `A.15` for the Work family; `A.15.4` while appearance hides a work-reliance prerequisite; `A.3.1` for `U.Method`; `A.3.2` for `U.MethodDescription`; or the work or method pattern governing the claim |
 | decision, choice, trade-off result | `C.11` or the decision pattern governing the claim |
 | causal-use or intervention claim | `C.28` |
@@ -173,7 +173,11 @@ Reopen the wording when a changed source meaning, intended use, subject predicat
 | "Functional architecture improved maintainability." | Recover hidden function wording through `A.6.F`, structural-view use through `C.30.ASV`, and the maintainability claim through `C.16.P`, `C.16.Q`, `C.25`, or its domain rule as needed. If improvement is attributed causally to the changed arrangement, use `C.28` for that further claim. |
 | "The module layer supports the architecture." | Use `C.30.STRAT` if the source meaning of `layer` remains unclear. Use C.30.P only for the architecture or structure portion after recovery; use `A.6.M` only if a module-interface relation is recovered, `C.30.LCA` only if a control-layer relation is recovered, `C.2.P` if a publication-label or view-label distinction remains hidden, or `A.6.P` if a basedness, source-use, evidence, or reliance relation is being made; otherwise retain an ordinary source-label disposition. |
 
-**Worked repair.** A review says, “The new module layer improved maintainability.” The available results report 80 seconds for revision R1 and 50 seconds for R2 on regression fixture F; the word *layer* merely labels the changed source grouping. The sufficient rewrite is: “On fixture F, the reported regression-test runtime was 80 seconds for R1 and 50 seconds for R2.” It preserves the observed comparison without claiming a structural layer, general maintainability gain or causal effect from two measurements. If the receiving task only needs that runtime comparison and its measurement basis is adequate, stop. If it needs a maintainability conclusion, establish how the measured runtime bears on that characteristic under `C.25` and the domain method; if it needs a causal conclusion, recover the additional intervention and comparison basis under `C.28`. If the grouping itself must be changed, recover its actual constituents and relations before using `A.22` or `C.30`. The stronger question selects the missing work; it does not invalidate the narrower measured result.
+**Worked repair.** A review says, “The new module layer improved maintainability.” The available results report 80 seconds for revision R1 and 50 seconds for R2 on regression fixture F; the word *layer* merely labels the changed source grouping.
+
+The sufficient rewrite is: “On fixture F, the reported regression-test runtime was 80 seconds for R1 and 50 seconds for R2.” It preserves the observed comparison without claiming a structural layer, general maintainability gain or causal effect from two measurements.
+
+If the receiving task only needs that runtime comparison and its measurement basis is adequate, stop. If it needs a maintainability conclusion, establish how the measured runtime bears on that characteristic under `C.25` and the domain method; if it needs a causal conclusion, recover the additional intervention and comparison basis under `C.28`. If the grouping itself must be changed, recover its constituents and relations before using `A.22` or `C.30`. The stronger question selects the missing work; it does not invalidate the narrower measured result.
 
 ### C.30.P:7 - Reduced SoTA row
 
@@ -195,7 +199,7 @@ These distinctions block diagram-as-architecture, graph-as-proof, view-as-struct
 | --- | --- |
 | `CC-C30P-1` | The repaired span makes its object, claim and useful conclusion recoverable. Name the subject pattern for any unresolved substantive question and state a blocked interpretation only when it changes the use; a separate repair record is optional. |
 | `CC-C30P-2` | A diagram, model, graph, dashboard, ADR, source, publication, view, face, `PublicationUnit`, file, carrier, or rendering is not treated as architecture or structure by appearance. |
-| `CC-C30P-3` | Direct `A.22`, `C.30`, `C.30.ASV`, or named `C.30.*` use applies the subject pattern directly when the selected-structure claim being made, architecture relation, architecture-description use, structural-view use, or named C.30 subcase is already recoverable. |
+| `CC-C30P-3` | Use `A.22`, `C.30`, `C.30.ASV`, or a named `C.30.*` pattern directly when the selected-structure claim being made, architecture relation, architecture-description use, structural-view use, or named C.30 subcase is already recoverable. |
 | `CC-C30P-4` | Source-use, currentness, and publication-to-carrier relation recovery uses `C.2.P` before architecture or structure claim use only while the relevant distinction remains hidden; an already recovered claim goes directly to its subject pattern. |
 | `CC-C30P-5` | Function-like, relation-like, mathematical-lens, characteristic and scale, quality, evidence, assurance, gate, work, decision, causal-use, release, and method claims are assigned to their subject patterns. |
 | `CC-C30P-6` | The repair does not mint `U.Architecture`, `ArchitectureStructure`, a generic architecture head, or mandatory architecture-repair record. |

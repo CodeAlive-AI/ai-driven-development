@@ -4,23 +4,23 @@
 
 **At a glance.** Use B.3.5 when a human-facing structural relation or a collection's own belongs-to relation has been selected for an additional assurance account without exposing constructive machinery as the public vocabulary.
 
-**Use this when.** Use this assurance profile only when a publication choice or named current requirement elects it for a direct relation claim. State the readable relation first. After election, structural parthood and collection belonging follow separate trace and `validationMode` obligations. The trace reports the relation facts and their grounds for inspection.
+**Use this when.** Use this assurance profile only when a publication choice or named requirement elects it for a relation claim. State the readable relation first. After election, structural parthood and collection belonging follow separate trace and `validationMode` obligations. The trace reports the relation facts and their grounds for inspection.
 
 **What goes wrong if missed.** The readable relation and its assurance account collapse: authors either lose usable relation sentences, treat collection belonging as parthood, prohibit separately grounded parthood by label, or make a trace look like the cause of the claim.
 
-**What this buys.** Working-Model relations stay readable, while an elected assurance branch supplies the right inspectable account without changing the direct relation kind.
+**What this buys.** Working-Model relations stay readable, while an elected assurance branch supplies the right inspectable account without changing the relation kind.
 
-**Not this pattern when.** Not this pattern when a direct relation claim is sufficient and no publication choice or current requirement elects this assurance profile. Also not this pattern when the current question is how to construct the trace (`C.13`), which mereology relation kind is intended (`A.14`), whether a whole must be reidentified (`B.2`), or whether a candidate name deserves durable U-kindhood (`E.24.UK`).
+**Not this pattern when.** Not this pattern when a relation claim is sufficient and no publication choice or requirement elects this assurance profile. Also not this pattern when the question is how to construct the trace (`C.13`), which mereology relation kind is intended (`A.14`), whether a whole must be reidentified (`B.2`), or whether a candidate name deserves durable U-kindhood (`E.24.UK`).
 
 > **One‑line summary.**
-> CT2R-LOG keeps **ComponentOf**, ordinary belongs-to sentences, **PortionOf**, and **AspectOf** readable while respecting their different relation kinds. When this assurance profile is elected, structural parthood uses its applicable construction account; collection belonging uses a current `C.13 set` trace. The direct relation pattern supplies the conditions for each relation, including any separately claimed parthood.
+> CT2R-LOG keeps **ComponentOf**, ordinary belongs-to sentences, **PortionOf**, and **AspectOf** readable while respecting their different relation kinds. When this assurance profile is elected, structural parthood uses its applicable construction account; collection belonging uses a current `C.13 set` trace. The relation pattern supplies the conditions for each relation, including any separately claimed parthood.
 
 ### B.3.5:1 - Intent
 
 *Keep **Working-Model** relations readable and, when this profile is elected, connect each covered assertion to inspectable grounding and a declared validation posture.*
 
 **What you get (manager/engineer view).**
- The same relations you already know (e.g., **ComponentOf**) remain the **public relation vocabulary**.
+ The same relations (e.g., **ComponentOf**) remain the **public relation vocabulary**.
 
 **What changes when the profile is elected (auditor/ontologist view).**
 * Each covered published edge carries two additional commitments:
@@ -28,37 +28,37 @@
   1. **`tv:groundedBy`** → points to the support required by the relation's branch: the applicable `sum` or `slice` trace for structural parthood, one current `C.13 set` trace for the collection's belongs-to relation, or an admissible argument or evidence object for another permitted claim.
   2. **`validationMode ∈ {axiomatic, inferential, postulate}`** → declares how the author justifies the assertion.
 
-The pattern that defines the relation still decides when it obtains. CT2R-LOG records the branch-specific support link and declared assurance posture. An optional `tv:AliasOf` declaration resolves a local relation label to its accepted Tech designation under E.10 and Lang-CHR.
+The pattern that defines the relation decides when it obtains. CT2R-LOG records the branch-specific support link and declared assurance posture. An optional `tv:AliasOf` declaration resolves a local relation label to its accepted Tech designation under E.10 and Lang-CHR.
 
 ### B.3.5:2 - Problem Frame
 
-B.3.5 exists where a readable Working-Model relation must remain usable by practitioners while assurance readers still need a grounding relation and declared validation stance. The pattern governs how a public relation claim connects to the support required by its selected assurance use.
+B.3.5 exists where a readable Working-Model relation must remain usable by practitioners while assurance readers need a grounding relation and declared validation stance. The pattern governs how a public relation claim connects to the support required by its selected assurance use.
 
 ### B.3.5:3 - Problem
 
 Working-Model relations such as **ComponentOf** and an ordinary belongs-to sentence are easy to use but not self-justifying. Their declarations alone do not show which participants and occurrences obtain, which rule defines the relation, or what identifies the whole or collection. Conversely, exposing construction traces everywhere makes the graph unreadable to non-specialists.
 
-**We need**: a stable **public relation layer** for relations and, where this profile is elected, a required, **reconstructible** **grounding channel** plus a visible **validation intent** that downstream assurance can reason about. The direct relation layer does not depend on electing the profile.
+**We need**: a stable **public relation layer** for relations and, where this profile is elected, a required, **reconstructible** **grounding channel** plus a visible **validation intent** that downstream assurance can reason about. The relation layer does not depend on electing the profile.
 
 ### B.3.5:3.1 - Forces
 
-* **Readable claims and inspectable support.** Practitioners need stable relation meanings; assurance readers need the direct facts and identity conditions supporting each claim.
+* **Readable claims and inspectable support.** Practitioners need stable relation meanings; assurance readers need the facts and identity conditions supporting each claim.
 * **Parsimony constraint.** The Kernel stays minimal; construction is **outside** the Kernel.
-* **Unification inside FPF.** We already unify external vocabularies; the same discipline is applied **internally** so patterns that publish structural claims can reuse one three-form construction-account discipline and one readable relation façade without making that account a second ontology.
+* **Unification inside FPF.** FPF unifies external vocabularies; the same discipline applies **internally** so patterns that publish structural claims can reuse one three-form construction-account discipline and one readable relation façade without making that account a second ontology.
 
-### B.3.5:4 - Solution (thumbnail)
+### B.3.5:4 - Solution
 
 CT2R-LOG distinguishes an optional link between relation designations from the grounding link and validation flag required for each covered assertion:
 
 1. **Alias link (lexical).**
-   **`tv:AliasOf`** may link a local relation designation to the accepted Tech designation of the same relation in that use. The definition in :5 fixes both endpoints and the conditions for using this alternative label. Cite the direct relation pattern to recover the relation’s meaning.
+   **`tv:AliasOf`** may link a local relation designation to the accepted Tech designation of the same relation in that use. The definition in :5 fixes both endpoints and the conditions for using this alternative label. Cite the relation pattern to recover the relation’s meaning.
 
 2. **Grounding link (assurance level).**
-   Each relation assertion covered by this elected profile carries `tv:groundedBy` according to its direct relation kind:
+   Each relation assertion covered by this elected profile carries `tv:groundedBy` according to its relation kind:
 
    * **ComponentOf, PortionOf, or AspectOf** requires one current C.2.1 construction-trace episteme in the applicable `sum` or `slice` form and `validationMode=axiomatic`. PortionOf uses the measured-portion profile in `C.13:4.1.1`; AspectOf uses the facet profile. This requirement follows the asserted relation, including measured text portions, and does not make those two profiles interchangeable.
    * **Collection belonging under the collection's own rule** requires one current C.2.1 `C.13 set` trace and `validationMode=axiomatic`. The trace reports the collection, the entity, the already established relation, the rule for belonging, and the identity conditions. It does not make the entity a constructive part, make belonging obtain, or prove that separately grounded parthood is impossible.
-   * **Other epistemic or constitutive edges** use the support appropriate to their claim: an admissible evidence object for `postulate`, a followable argument for `inferential`, or a qualifying C.13 construction account for `axiomatic`. Constructive grounding is optional in this branch; select the mode from the basis actually used for this assertion.
+   * **Other epistemic or constitutive edges** use the support appropriate to their claim: an admissible evidence object for `postulate`, a followable argument for `inferential`, or a qualifying C.13 construction account for `axiomatic`. Constructive grounding is optional in this branch; select the mode from the basis used for this assertion.
 
 3. **Validation flag (author intent).**
    Every relation or aggregation rule covered by this profile carries `tv:validationMode` with one of:
@@ -70,16 +70,16 @@ The applicable branch above selects the allowed modes and grounding targets. The
 
 > **Relation, grounding, and assurance.**
 > **Published relation claim:** `:PumpA ut:ComponentOf :Skid12`. Assess its expression properties under C.2.3 when that assessment matters to the use.
-> **Grounding account:** the assertion links to `:trace_Γm_sum_456`, a C.2.1 episteme about the direct construction facts.
-> **Assurance posture:** `tv:validationMode=axiomatic` is the author's declaration. B.3.3 assesses the actual grounding for the receiving claim and use; a level is published only through an applicable justified profile. The declaration does not alter formality or establish empirical adequacy.
+> **Grounding account:** the assertion links to `:trace_Γm_sum_456`, a C.2.1 episteme about the construction facts.
+> **Assurance posture:** `tv:validationMode=axiomatic` is the author's declaration. B.3.3 assesses the grounding for the receiving claim and use; a level is published only through an applicable justified profile. The declaration does not alter formality or establish empirical adequacy.
 
-#### B.3.5:4.1 - Structural CT2R Typing-Grounding Unfolding Structure Block
+#### B.3.5:4.1 - Inspect correspondence to a target kind or logical representation
 
 When a constructive trace, working-model relation, and target kind or logical representation must be inspected together across contexts, explain their correspondence and what structure is preserved or lost. The block below is an optional way to record that account. Use `A.22.CGUS` for a remaining question about potential continuations and their conditions.
 
 ```text
 StructuralCT2RTypingGroundingUnfoldingStructureBlock:
-  unfoldingStructureRef: exact independently selected A.22 structure, when needed
+  unfoldingStructureRef: independently selected A.22 structure, when needed
   workingModelOrConstructiveRepresentationRef:
   targetKindOrLogicalRepresentationRef:
   bridgeRef?:
@@ -92,23 +92,37 @@ StructuralCT2RTypingGroundingUnfoldingStructureBlock:
   evidenceOrProofLinkageRef?:
 ```
 
-When the receiving use needs a selected A.22 structure, `unfoldingStructureRef` names it. Recover its exact constituents, obtaining relations, applied constraints and named selection/use frame under A.22. `StructuralCT2RTypingGroundingUnfoldingStructure` is a local designator for that selected structure used to inspect this construction-to-typed/logical projection. Any A.22.CGUS qualification is tested separately under its potential-continuation rule; a local name or record does not establish it. C.13 supplies constructive-trace content and C.3 the kind intent, extent and subkind content actually used.
+When the receiving use needs a selected A.22 structure, `unfoldingStructureRef` names it. Recover its constituents, obtaining relations, applied constraints and named selection/use frame under A.22.
 
-When an inadequate working account requires general diagnostic recovery of the exact subject construction, use `A.7.1`. That return may stop at a direct relation, system-role assignment, state or capability, Work occurrence, holon recognition, or the pattern for another subject without opening this structural CT2R specialization.
+`StructuralCT2RTypingGroundingUnfoldingStructure` is a local designator for that selected structure used to inspect this construction-to-typed/logical projection.
 
-`workingModelOrConstructiveRepresentationRef` names the relation, trace, model, or representation being carried. `targetKindOrLogicalRepresentationRef` names the typed or logical target. `bridgeRef` is required when this use actually claims or consumes an obtaining semantic Bridge under F.9 or a kind correspondence under C.3.3. `CL_or_CLk` is required when the consumed assurance/calibration account requires that value. Entity, scheme, plane or notation changes alone establish no crossing; a same-sense unit conversion requires neither invented endpoints nor a Bridge. CL does not by itself authorize use. `preservedStructure` and `lostOrCollapsedStructure` state what survives the passage and what the published relation no longer carries. Evidence linkage remains with B.3 evidence and assurance subject patterns; proof linkage remains with the proof or mathematical subject pattern that is current. The unfolding block only makes the structure of the passage inspectable.
+Any A.22.CGUS qualification is tested separately under its potential-continuation rule; a local name or record does not establish it. C.13 supplies constructive-trace content and C.3 the kind intent, extent and subkind content used.
+
+When an inadequate working account requires general diagnostic recovery of the subject construction, use `A.7.1`. That return may stop at a relation, system-role assignment, state or capability, Work occurrence, holon recognition, or the pattern for another subject without opening this structural CT2R specialization.
+
+`workingModelOrConstructiveRepresentationRef` names the relation, trace, model, or representation being carried. `targetKindOrLogicalRepresentationRef` names the typed or logical target. `bridgeRef` is required when this use claims or consumes an obtaining semantic Bridge under F.9 or a kind correspondence under C.3.3.
+
+`CL_or_CLk` is required when the consumed assurance/calibration account requires that value. Entity, scheme, plane or notation changes alone establish no crossing; a same-sense unit conversion requires neither invented endpoints nor a Bridge. CL does not by itself authorize use.
+
+`preservedStructure` and `lostOrCollapsedStructure` state what survives the passage and what the published relation no longer carries.
+
+Evidence linkage remains with B.3 evidence and assurance subject patterns; proof linkage remains with the proof or mathematical subject pattern. The unfolding block only makes the structure of the passage inspectable.
 
 ### B.3.5:5 - Vocabulary & notation (normative)
 
 * **Working-Model relations (front‑stage).**
- `ut:ComponentOf`, `ut:PortionOf`, and `ut:AspectOf` are publication-grade part relations under their direct A.14 rules. A collection uses the belongs-to predicate defined by the pattern for that collection; FPF has no public generic `ut:MemberOf` relation. Belonging is not a sub-property of `ut:PartOf`, `ut:StructPartOf`, or `ut:EpiPartOf`, but the same entities may separately stand in a constructive part relation when its own rule and all six A.1 matters pass.
+ `ut:ComponentOf`, `ut:PortionOf`, and `ut:AspectOf` are publication-grade part relations under their A.14 rules. A collection uses the belongs-to predicate defined by the pattern for that collection; FPF has no public generic `ut:MemberOf` relation. Belonging is not a sub-property of `ut:PartOf`, `ut:StructPartOf`, or `ut:EpiPartOf`, but the same entities may separately stand in a constructive part relation when its own rule and six A.1 matters pass.
 
 * **Alias declaration (lexical).**
-  `a tv:AliasOf t` states that local designation **a** denotes the same direct relation as accepted Tech designation **t** in the stated use. Both endpoints are designations. Identify the source or practice, effective scheme and local meaning under E.10:6.2.1; preserve the relation’s applicability and the roles and order of its participants. The direction points from the local expression to the Tech designation used to recover its meaning. Cite the defining passage, such as A.14 for `ComponentOf`, as the semantic source.
+  `a tv:AliasOf t` states that local designation **a** denotes the same relation as accepted Tech designation **t** in the stated use. Both endpoints are designations. Identify the source or practice, effective scheme and local meaning under E.10:6.2.1; preserve the relation’s applicability and the roles and order of its participants. The direction points from the local expression to the Tech designation used to recover its meaning. Cite the defining passage, such as A.14 for `ComponentOf`, as the semantic source.
 
-  A glossary sentence can make this declaration once for its stated use. An already clear Tech designation needs no additional alias. Apply F.17/F.18 when the naming task actually requires their records; an alias alone creates no need for a NameCard or SchemeSenseCell. E.10 separately governs the use of a Plain twin.
+  A glossary sentence can make this declaration once for its stated use. A clear Tech designation needs no additional alias. Apply F.17/F.18 when the naming task requires their records; an alias alone creates no need for a NameCard or SchemeSenseCell. E.10 separately governs the use of a Plain twin.
 
-  To use an alias, recover the declared meaning and participant positions, then apply the direct relation’s rule to the assertion. Recheck the declaration when its meaning or use changes. A broader meaning, or an expression that reverses participant positions, needs its own account: for example, `hasComponent(whole, part)` expresses the inverse of `ComponentOf(part, whole)`. A bare alias declaration does not specify that reversal. When distinct local meanings require an actual semantic correspondence, use F.9; matching words alone leave that correspondence unresolved.
+  To use an alias, recover the declared meaning and participant positions, then apply the relation’s rule to the assertion. Recheck the declaration when its meaning or use changes.
+
+  A broader meaning, or an expression that reverses participant positions, needs its own account: for example, `hasComponent(whole, part)` expresses the inverse of `ComponentOf(part, whole)`. A bare alias declaration does not specify that reversal.
+
+  When distinct local meanings require a semantic correspondence, use F.9; matching words alone leave that correspondence unresolved.
 
 * **Grounding (per‑edge).**
  When this profile is elected for structural parthood, `tv:groundedBy` points to the applicable current C.2.1 construction trace and `validationMode=axiomatic`. When elected for collection belonging, it points to one current `C.13 set` trace under the collection's own rule and also uses `validationMode=axiomatic`. Other epistemic or constitutive claims may use a logical argument or evidence object under their permitted mode. Every target lets a reviewer inspect the assertion's basis.
@@ -117,49 +131,55 @@ When an inadequate working account requires general diagnostic recovery of the e
   `Γ_m.sum`, `Γ_m.set`, and `Γ_m.slice` are the C.13 forms used by the covered branches. `sum` and `slice` report structural-parthood constructions; `set` reports an already grounded collection and the belongs-to occurrences established under its own rule. Temporal and workflow claims retain their own patterns.
 
 * **Validation flag.**
- `tv:validationMode ∈ {postulate, inferential, axiomatic}` is required on every claim covered by this elected profile. Structural parthood and collection belonging use `axiomatic` with their branch-specific current trace. A direct relation outside the profile has no B.3.5 field obligation.
+ `tv:validationMode ∈ {postulate, inferential, axiomatic}` is required on every claim covered by this elected profile. Structural parthood and collection belonging use `axiomatic` with their branch-specific current trace. A relation outside the profile has no B.3.5 field obligation.
 
 ### B.3.5:6 - Archetypal Grounding - Running example
 
 > **Story.** A refinery team publishes `:PumpA ut:ComponentOf :Skid12`.
 
-**Optional local wording.** The team’s glossary uses “assembly component of” for A.14 `ComponentOf`, with the component first and its containing whole second. It can state “In this assembly glossary, ‘assembly component of’ is an alias of `ut:ComponentOf` as defined in A.14.” This one declaration lets readers recover the relation intended by “PumpA is an assembly component of Skid12.” Whether PumpA actually satisfies that rule is examined in the account below.
+**Optional local wording.** The team’s glossary uses “assembly component of” for A.14 `ComponentOf`, with the component first and its containing whole second. It can state “In this assembly glossary, ‘assembly component of’ is an alias of `ut:ComponentOf` as defined in A.14.” This one declaration lets readers recover the relation intended by “PumpA is an assembly component of Skid12.” Whether PumpA satisfies that rule is examined in the account below.
 
 Suppose a later inventory glossary widens that phrase to include uninstalled spares reserved for a skid. The earlier alias no longer covers the widened meaning. Keep the assembly meaning explicit or use the inventory’s separately defined reservation relation. PumpA’s existing component claim can remain valid while it stays installed; the label change alone supplies no new assertion about a reserved spare.
 
 * **Publication — Working-Model relation layer.**
-  They publish one assertion using the **Working-Model** relation **ComponentOf**, with exact named participants and the relation interpreted under its declared semantics. Those are its relevant expression properties under C.2.3; a universal F rank is unnecessary. The public view presents the Working-Model relation; a reviewer can follow its grounding link.
+  They publish one assertion using the **Working-Model** relation **ComponentOf**, with named participants and the relation interpreted under its declared semantics. Those are its relevant expression properties under C.2.3; a universal F rank is unnecessary. The public view presents the Working-Model relation; a reviewer can follow its grounding link.
 
 * **Constructive grounding (Γₘ).**
-  In the background, the published assertion links to `:trace_Γₘ_sum_456`, a C.2.1 episteme that names the exact pump and skid, the direct fastening, coupling, enclosure, terminal, flange, and seal occurrences that obtain, the applicable skid assembly rule, and the skid reidentification rule. An auditor replays that account to inspect the assertion's basis. The same listed parts under a different assembly can form another whole, while a permitted pump replacement can preserve Skid12; the direct relations and reidentification rule, not the trace or input list, decide.
+  In the background, the published assertion links to `:trace_Γₘ_sum_456`, a C.2.1 episteme that names the pump and skid, the direct fastening, coupling, enclosure, terminal, flange, and seal occurrences that obtain, the applicable skid assembly rule, and the skid reidentification rule. An auditor replays that account to inspect the assertion's basis.
+
+  The same listed parts under a different assembly can form another whole, while a permitted pump replacement can preserve Skid12; the relations and reidentification rule, not the trace or input list, decide.
 
 * **Assurance stance & R-lane.**
-Because the assertion is linked to the construction account required by its elected branch, authors set `tv:validationMode=axiomatic`. The account makes the relation's basis inspectable. B.3.3 considers the actual grounding and its currentness for the receiving claim and use.
+Because the assertion is linked to the construction account required by its elected branch, authors set `tv:validationMode=axiomatic`. The account makes the relation's basis inspectable. B.3.3 considers the grounding and its currentness for the receiving claim and use.
 
 * **Contrast (epistemic).**
 When the same team asserts `:MassFlowRepresentation RepresentationOf :FlowModel`, they declare `validationMode=postulate` and attach a calibration dataset instead of a Γₘ trace. Judge that empirical basis for the claimed representation and receiving use; the declared mode alone does not establish lower confidence. Under B.3.4, a changed configuration, calibration qualification or other relevant premise can reopen the claim. The dataset's age alone does not defeat still-applicable support.
 
 Result: **one** visible relation for engineers, a grounding reference and a validation-mode declaration for reviewers.
 
-**Collection case — Fleet North.** First publish the ordinary sentence: “Vehicle 12 belongs to Fleet North under its registration rule.” Under that rule, the occurrence begins when Fleet North accepts the vehicle's registration, ends on withdrawal or transfer, and a later accepted registration begins another occurrence. If no current publication choice or requirement elects this profile, the direct sentence is sufficient and the author stops.
+**Collection case — Fleet North.** First publish the ordinary sentence: “Vehicle 12 belongs to Fleet North under its registration rule.” Under that rule, the occurrence begins when Fleet North accepts the vehicle's registration, ends on withdrawal or transfer, and a later accepted registration begins another occurrence. If no publication choice or requirement elects this profile, the sentence is sufficient and the author stops.
 
-Here the fleet publication elects the profile. It links the assertion to one current C.13 `Γ_m.set` trace that names Fleet North and its identity rule, Vehicle 12, the obtaining registration occurrence, the registration rule, and its ending and recurrence conditions; it declares `validationMode=axiomatic`. If a vehicle enters or leaves the fleet, or the rule changes, the earlier trace remains an account of its earlier state but is not current support for the later assertion. The register and trace report this registration history. Any separately claimed ComponentOf relation needs its own grounds.
+Here the fleet publication elects the profile. It links the assertion to one current C.13 `Γ_m.set` trace that names Fleet North and its identity rule, Vehicle 12, the obtaining registration occurrence, the registration rule, and its ending and recurrence conditions; it declares `validationMode=axiomatic`.
 
-**Epistemic constituent case.** A proof of “the product of consecutive integers is even” uses the lemma “one of the two integers is even.” Inspection of that proof establishes `Lemma A ConstituentOf Proof P`. With no elected B.3.5 profile, the relation can be stated directly. A recipient may still require access to the proof under its own evidence requirement.
+If a vehicle enters or leaves the fleet, or the rule changes, the earlier trace remains an account of its earlier state but is not current support for the later assertion. The register and trace report this registration history. Any separately claimed ComponentOf relation needs its own grounds.
 
-If that recipient elects B.3.5 and the basis is the followable argument, link the assertion through `tv:groundedBy` to that argument and choose `inferential`. If a qualifying C.13 account instead explains the proof's independently established constituent relations and assembly, it can supply an `axiomatic` basis. A later proof that omits the lemma requires a fresh content-part judgement; the earlier support remains about Proof P. Select and assess the support for the claim actually being used.
+**Epistemic constituent case.** A proof of “the product of consecutive integers is even” uses the lemma “one of the two integers is even.” Inspection of that proof establishes `Lemma A ConstituentOf Proof P`. With no elected B.3.5 profile, the relation can be stated. A recipient may require access to the proof under its own evidence requirement.
+
+If that recipient elects B.3.5 and the basis is the followable argument, link the assertion through `tv:groundedBy` to that argument and choose `inferential`. If a qualifying C.13 account instead explains the proof's independently established constituent relations and assembly, it can supply an `axiomatic` basis.
+
+A later proof that omits the lemma requires a content-part judgement; the earlier support remains about Proof P. Select and assess the support for the claim being used.
 
 ### B.3.5:7 - Author Standard (at a glance)
 
 When you add or import a relation edge:
 
-1. **Pick a Working-Model relation sentence** such as “Impeller ComponentOf Pump” or “Vehicle 12 belongs to Fleet North under its registration rule”; avoid raw `ut:PartOf` unless you are drafting meta-level axioms. If no current publication choice or requirement elects CT2R-LOG, publish that direct claim and stop.
+1. **Pick a Working-Model relation sentence** such as “Impeller ComponentOf Pump” or “Vehicle 12 belongs to Fleet North under its registration rule”; avoid raw `ut:PartOf` unless you are drafting meta-level axioms. If no publication choice or requirement elects CT2R-LOG, publish that claim and stop.
 
 2. **When CT2R-LOG is elected, attach `tv:groundedBy`**:
 
    * Structural parthood → the applicable current construction trace and `validationMode=axiomatic`.
    * Collection belonging under the collection's own rule → one current `C.13 set` trace and `validationMode=axiomatic`.
-   * Another permitted epistemic or constitutive claim → the evidence object, argument or qualifying C.13 account actually used, with its corresponding mode from :4.
+   * Another permitted epistemic or constitutive claim → the evidence object, argument or qualifying C.13 account used, with its corresponding mode from :4.
 3. **Declare the selected `tv:validationMode`** for every covered claim.
 
 
@@ -167,24 +187,24 @@ When you add or import a relation edge:
 
 ### B.3.5:8 - Compatibility & cross‑references
 
-* **B.3 and the direct proof or mathematical pattern.** CT2R-LOG makes the relied-on construction or support account inspectable; B.3 judges its contribution to the current assurance claim. State the actual logic and proof basis when a formal conclusion is used.
-* **B.3.3 (Assurance subtypes and levels).** The declared `validationMode` and actual `tv:groundedBy` account contribute only what they establish for the receiving assurance claim. They do not compute a universal L0–L2 progression; a published level requires an applicable justified profile.
-* **B.3.4 (Evidence ageing and currentness).** A relation assertion, its construction-trace episteme, and the warrants or evidence used for it retain their own editions and currentness. `validationMode=axiomatic` does not freeze a trace or make described world-side facts timeless; changed participants, relations, rules, or identity conditions require direct reinspection.
+* **B.3 and the proof or mathematical pattern.** CT2R-LOG makes the relied-on construction or support account inspectable; B.3 judges its contribution to the assurance claim. State the logic and proof basis when a formal conclusion is used.
+* **B.3.3 (Assurance subtypes and levels).** The declared `validationMode` and `tv:groundedBy` account contribute only what they establish for the receiving assurance claim. They do not compute a universal L0–L2 progression; a published level requires an applicable justified profile.
+* **B.3.4 (Evidence ageing and currentness).** A relation assertion, its construction-trace episteme, and the warrants or evidence used for it retain their own editions and currentness. `validationMode=axiomatic` does not freeze a trace or make described world-side facts timeless; changed participants, relations, rules, or identity conditions require reinspection.
 
 ### B.3.5:9 - Rule‑set — CT2R‑LOG (conceptual, human‑first)
 
-**Intent (one line).** Publish readable Working-Model relation claims, resolve a useful alternative designation through an optional alias, and supply the assurance account required for assertions covered by an elected B.3.5 profile or named current requirement.
+**Intent (one line).** Publish readable Working-Model relation claims, resolve a useful alternative designation through an optional alias, and supply the assurance account required for assertions covered by an elected B.3.5 profile or named requirement.
 
 #### B.3.5:9.1 - Vocabulary and meanings in this pattern
 
-* **Working-Model relation.** A human-oriented direct relation statement using a public name such as `ut:ComponentOf`, `ut:PortionOf`, or `ut:AspectOf`, or an ordinary sentence such as “this edition belongs to this product series.” It is the canonical public layer for readers; the direct pattern keeps the relation meaning fixed.
+* **Working-Model relation.** A human-oriented relation statement using a public name such as `ut:ComponentOf`, `ut:PortionOf`, or `ut:AspectOf`, or an ordinary sentence such as “this edition belongs to this product series.” It is the canonical public layer for readers; the relation's defining pattern keeps the relation meaning fixed.
 
 * **Assurance Layer.** Within the branch requirements, an author may combine these grounding contributions:
 
   * **Constructive** grounding: an inspectable account in one of the three C.13 forms (`Γ_m.sum | Γ_m.set | Γ_m.slice`). It names independently grounded participants, direct relation occurrences, the applicable construction rule, and identity or reidentification conditions. No formal notation is required, and the account does not create the relation it reports.
   * **Logical** grounding: a *reasoned* chain (think KD‑CAL style arguments) that shows why the relation follows from stated premises.
   * **Mapping** grounding: support for interpreting a relation designation or for a claimed correspondence between meanings. E.10/F.18 govern a same-meaning alias; F.9 governs a required correspondence between distinct local meanings.
-    These contributions can be combined. Mapping supports interpretation or cross-context use; the assertion still needs the construction account, argument or evidence required by its branch in :4.
+    These contributions can be combined. Mapping supports interpretation or cross-context use; the assertion needs the construction account, argument or evidence required by its branch in :4.
 
 * **Empirical Validation.** Observations and calibration results support claims about the relation under the applicable conditions. Assess their contribution under B.3.
 
@@ -204,10 +224,10 @@ When you add or import a relation edge:
 #### B.3.5:9.2 - Normative rules (MUST/SHALL clauses for thinking‑and‑writing)
 
 **S‑1 (Working-Model first).**
-Authors **SHALL** state each covered direct relation claim in Working-Model form. Assurance accounts remain below that public layer. Electing this profile adds branch-specific trace and mode obligations; it is not a precondition for direct use.
+Authors **SHALL** state each covered relation claim in Working-Model form. Assurance accounts remain below that public layer. Electing this profile adds branch-specific trace and mode obligations; it is not a precondition for using the relation.
 
 **S‑2 (Alias declaration).**
-When an alternative relation designation helps readers and carries the same meaning, the author **SHOULD** declare its `tv:AliasOf` link to the accepted Tech designation under :5. State the local use and cite the defining passage so readers can recover the intended relation. A direct claim using an already clear Tech designation needs no alias.
+When an alternative relation designation helps readers and carries the same meaning, the author **SHOULD** declare its `tv:AliasOf` link to the accepted Tech designation under :5. State the local use and cite the defining passage so readers can recover the intended relation. A claim using a clear Tech designation needs no alias.
 
 **S‑3 (Grounding by mode).**
 For every relation instance covered by an elected B.3.5 profile, the author **MUST** set `validationMode` and follow the corresponding grounding stance:
@@ -216,7 +236,7 @@ For every relation instance covered by an elected B.3.5 profile, the author **MU
 
 * **S‑3.b `inferential`.** For a branch that permits it, link `tv:groundedBy` to a reasoned chain from admitted statements that a peer can follow.
 
-* **S‑3.c `axiomatic`.** The author links the assertion to the current C.2.1 trace episteme required by its branch. A competent peer can recover the exact participants, direct relation occurrence, applicable rule, and identity or reidentification conditions. The account makes those facts inspectable.
+* **S‑3.c `axiomatic`.** The author links the assertion to the current C.2.1 trace episteme required by its branch. A competent peer can recover the participants, direct relation occurrence, applicable rule, and identity or reidentification conditions. The account makes those facts inspectable.
 
 * **S‑3.d Structural parthood.** A covered `ComponentOf`, `PortionOf`, or `AspectOf` assertion requires `validationMode=axiomatic` and the applicable current C.13 construction account; `postulate` is not available.
 
@@ -225,7 +245,7 @@ For every relation instance covered by an elected B.3.5 profile, the author **MU
 **S-4 (Relation-kind sense-making).**
 * For structural `ComponentOf`, `PortionOf`, and `AspectOf` claims, the elected profile requires the applicable current construction account and `validationMode=axiomatic`.
 
-* For collection belonging, the elected profile requires one current `C.13 set` trace and `validationMode=axiomatic`. The collection's own rule still decides whether the occurrence obtains.
+* For collection belonging, the elected profile requires one current `C.13 set` trace and `validationMode=axiomatic`. The collection's own rule decides whether the occurrence obtains.
 
 * For other epistemic or constitutive links, constructive grounding remains optional and the branch may prefer inferential or postulate reasoning with empirical cues.
 
@@ -241,7 +261,7 @@ When naming relations in an alias declaration, authors **SHOULD** use the accept
 **S‑8 (No tool talk).**
 Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑oriented notations in place of concepts. If examples are needed, they **MAY** be plain‑language narratives or domain vignettes.
 
-#### B.3.5:9.3 - Scope & Non‑Goals (to keep the plane clean)
+#### B.3.5:9.3 - Scope & Non‑Goals
 
 * **In scope.**
   Canonical publication of relations for humans; clarity of relation designations and their semantic sources; conceptual grounding stories; author‑declared *validationMode*; separation of structure vs order/time.
@@ -252,10 +272,10 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 * **Edge placements.**
   Choose the contribution for the question: resolve a same-meaning alias under E.10/F.18; use **Mapping** under F.9 for a required correspondence between distinct local meanings; use **Logical** grounding for an inference from premises and **Constructive** grounding for an account of a whole from its parts. Combine contributions when needed, retaining the claim support required by the elected branch, including its structural-parthood or collection-belonging trace.
 
-#### B.3.5:9.4 - Author’s working moves (micro‑playbook, notation‑free)
+#### B.3.5:9.4 - Author’s working moves
 
 **M‑1.** State the relation in **Working‑Model** form (e.g., “Impeller `ComponentOf` Pump”).
-**M‑2.** If a publication choice or named current requirement elects this profile, pick `validationMode`; otherwise keep the direct relation claim and stop:
+**M‑2.** If a publication choice or named requirement elects this profile, pick `validationMode`; otherwise keep the relation claim and stop:
 
 * For a permitted exploratory claim, choose **postulate**, link its empirical support, and state scope plus challenge cues.
 * For a permitted conclusion from known statements, choose **inferential** and link the followable argument.
@@ -264,18 +284,18 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 * For another permitted epistemic or constitutive claim whose chosen basis is a qualifying C.13 account, choose **axiomatic** and link that account.
 
 **M‑3.** When an alternative designation helps readers, link that designation through `tv:AliasOf` to the accepted Tech designation of the same relation. State its local use and cite the definition; apply :5 when the meaning or participant order differs.
-**M‑4.** If assembly uses two parallel lines, state the actual Method/Work and temporal facts. Add any independently obtaining part relation under its own rule; parallelism alone does not establish it.
-**M‑5.** Stop when the selected readable relation and any relevant use limits are clear and, if this profile is elected, its validation mode and required current support are recoverable without guessing.
+**M‑4.** If assembly uses two parallel lines, state the Method/Work and temporal facts. Add any independently obtaining part relation under its own rule; parallelism alone does not establish it.
+**M‑5.** Stop when the selected readable relation and any relevant use limits are clear and, if this profile is elected, its validation mode and required current support are recoverable.
 
-### B.3.5:10 - Bias-Annotation (auditable, human-first)
+### B.3.5:10 - Bias-Annotation
 
 | Bias (name)                     | Symptom in the model                                                                                                          | Cognitive counter‑move (conceptual only)                                                                                                                                                                          | Where to check                                                       |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| **Formalism capture** | A trace, constructor expression, or `validationMode` is treated as the source of the direct relation or whole identity. | Recover the exact participants, direct relation occurrences, construction rule, and identity or reidentification rule first. Treat the trace as a current C.2.1 account and the mode as the author's assurance posture. | CC‑CT2R‑1, CC‑CT2R‑2, CC‑CT2R‑3; C.13 trace separation. |
-| **Canonical inversion** | B.3.5 fields are demanded before direct use, or one assurance branch is imposed on every relation. | Use the direct claim first. After election, use the applicable branch: structural parthood or collection belonging takes its required axiomatic trace; other permitted claims may use inferential or postulate support. | CC-CT2R-2, CC-CT2R-3, CC-CT2R-5. |
-| **Order/time leakage** | Inferring parthood from sequence, parallelism or interval inclusion alone. | Recover the independent part relation under A.15.1 or A.14 when it obtains, and keep Method/order/time claims separate. | B.1.5, C.27 and B.1.4; A.15.1 or A.14 for the exact part/phase claim. |
+| **Formalism capture** | A trace, constructor expression, or `validationMode` is treated as the source of the relation or whole identity. | Recover the participants, direct relation occurrences, construction rule, and identity or reidentification rule first. Treat the trace as a current C.2.1 account and the mode as the author's assurance posture. | CC‑CT2R‑1, CC‑CT2R‑2, CC‑CT2R‑3; C.13 trace separation. |
+| **Canonical inversion** | B.3.5 fields are demanded before using the relation, or one assurance branch is imposed on every relation. | Use the claim first. After election, use the applicable branch: structural parthood or collection belonging takes its required axiomatic trace; other permitted claims may use inferential or postulate support. | CC-CT2R-2, CC-CT2R-3, CC-CT2R-5. |
+| **Order/time leakage** | Inferring parthood from sequence, parallelism or interval inclusion alone. | Recover the independent part relation under A.15.1 or A.14 when it obtains, and keep Method/order/time claims separate. | B.1.5, C.27 and B.1.4; A.15.1 or A.14 for the part/phase claim. |
 | **Notation lock-in** | Treating one diagram or syntax as sufficient grounds for the relation, or leaving its meaning unrecoverable outside that notation. | Keep the relation's meaning recoverable independently of one notation. Explain the interpretation and any reasoning or construction step carried by the expression under E.5.2. | E.5.2:4 and CC-NI.1–3. |
-| **Unexamined mapping fit** | A composed claim relies on a mapping without inspecting preserved and lost distinctions. | State the exact mapping, its applicability and loss. Use a numeric reliability consequence only when the receiving model establishes its meaning and calculation; ordinal CL alone is insufficient. | B.3 and the direct mapping or representation pattern. |
+| **Unexamined mapping fit** | A composed claim relies on a mapping without inspecting preserved and lost distinctions. | State the mapping, its applicability and loss. Use a numeric reliability consequence only when the receiving model establishes its meaning and calculation; ordinal CL alone is insufficient. | B.3 and the mapping or representation pattern. |
 | **Collection/composition swap** | A belongs-to predicate is used as `PartOf`, or a part claim is used as collection belonging, and reliability is carried over as if both were one construction. | State collection belonging and constructive parthood separately under A.14. When both obtain, keep both claims and their different `set` and `sum` accounts. | A.14 and C.13. |
 | **Design/run conflation** | Conflating design and run claims or carrying support between them without the needed grounds. | Keep design and run claims, their evidence and conditions distinct; justify any contribution across those scopes. A design result alone does not establish successful performance. | B.3:4.8 and B.3.3:CC-B3.3.5. |
 
@@ -284,12 +304,12 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 | ID                                              | Requirement                                                                                                                                                                                                                                   | Purpose                                                                   |
 | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | **CC-CT2R-1 (Canonical-first).**                | A relation published for readers **SHALL** be stated in Working-Model terms, such as `ut:ComponentOf` or an ordinary belongs-to sentence, as the canonical form; any constructive or logical justification is recorded as **grounding** (not as the definition).                                         | Preserve human-first canon and didactic primacy.                          |
-| **CC‑CT2R‑2 (Mode declaration).**               | For every relation or rule covered by an elected B.3.5 profile, the author **SHALL** declare `tv:validationMode ∈ {postulate, inferential, axiomatic}` in prose. A direct relation outside the profile needs no B.3.5 mode. | Make elected assurance intent explicit without taxing ordinary direct use. |
+| **CC‑CT2R‑2 (Mode declaration).**               | For every relation or rule covered by an elected B.3.5 profile, the author **SHALL** declare `tv:validationMode ∈ {postulate, inferential, axiomatic}` in prose. A relation outside the profile needs no B.3.5 mode. | Declare elected assurance intent without taxing ordinary use. |
 | **CC‑CT2R‑3 (Structural axiomatic grounding).** | A covered structural parthood assertion uses `validationMode=axiomatic` and links to its applicable current C.2.1 `sum` or `slice` construction trace. The account reports independently grounded participants, occurrences, rule, and identity conditions. | Make elected structural assurance inspectable without turning it into a truth-maker. |
-| **CC‑CT2R‑4 (No parthood from order/time alone).** | Authors **SHALL NOT** infer parthood from sequence, parallelism or temporal slicing alone. Any Work-part or proper-phase claim satisfies A.15.1 or A.14 independently; Method order and temporal relations use their direct patterns. | Preserve distinct relation meanings while allowing independently established temporal parts. |
-| **CC‑CT2R‑5 (Collection vs part).** | Authors keep collection belonging under the collection's own rule distinct from every `PartOf` branch. A direct claim needs no profile fields; after B.3.5 election it uses `validationMode=axiomatic` and one current `C.13 set` trace. If constructive parthood also obtains, state and support that claim separately. | Prevent category errors without taxing ordinary belongs-to prose or prohibiting a stronger independently grounded claim. |
+| **CC‑CT2R‑4 (No parthood from order/time alone).** | Authors **SHALL NOT** infer parthood from sequence, parallelism or temporal slicing alone. Any Work-part or proper-phase claim satisfies A.15.1 or A.14 independently; Method order and temporal relations use their patterns. | Preserve distinct relation meanings while allowing independently established temporal parts. |
+| **CC‑CT2R‑5 (Collection vs part).** | Authors keep collection belonging under the collection's own rule distinct from every `PartOf` branch. A claim needs no profile fields; after B.3.5 election it uses `validationMode=axiomatic` and one current `C.13 set` trace. If constructive parthood also obtains, state and support that claim separately. | Prevent category errors without taxing ordinary belongs-to prose or prohibiting a stronger independently grounded claim. |
 | **CC‑CT2R‑5a (Set trace reports).** | The elected set trace names the collection, the entity said to belong, the already established occurrence, the collection's own belongs-to rule, and the identity conditions. The set trace supplies no structural-composition reliability. | Keeps optional assurance from becoming ontology. |
-| **CC‑CT2R‑6 (Fit is explicit).** | Where a claim relies on a mapping or alignment, the author **SHALL** state its actual applicability, preserved/lost distinctions and consequence for this claim. Any quantitative reliability adjustment needs a justified receiving model, compatible Scale and calculation; a CL label alone supplies none. | Keep integration limits inspectable without invented reliability arithmetic. |
+| **CC‑CT2R‑6 (Mapping fit).** | Where a claim relies on a mapping or alignment, the author **SHALL** state its applicability, preserved/lost distinctions and consequence for this claim. Any quantitative reliability adjustment needs a justified receiving model, compatible Scale and calculation; a CL label alone supplies none. | Keep integration limits inspectable without invented reliability arithmetic. |
 | **CC‑CT2R‑7 (Notational independence).**        | Core meaning **MUST NOT** hinge on any specific diagram or syntax; illustrative renderings, if present, are labelled *informative*.                                                                                                           | Ensure longevity and cross‑discipline portability.                        |
 | **CC‑CT2R‑8 (Layer direction).**                | Grounding flows **downwards** from Working‑Model to Assurance layers (Mapping/Logical/Constructive). Authors **SHALL** avoid back‑defining the canonical relation by its Mapping, Logical, Constructive, or Empirical grounding.                                                  | Preserve unidirectional dependence of layers.                             |
 | **CC‑CT2R‑9 (Claim and scope).** | Authors **SHALL** state the assurance claim and its applicable scope. Design and run claims retain their distinct subjects, evidence and conditions. | Prevent unsupported transfer between design and performed Work while retaining relevant evidence contributions. |
@@ -298,19 +318,19 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 
 | Anti-pattern | What goes wrong | Repair |
 | --- | --- | --- |
-| Trace as relation or truth-maker | A `Gamma_m` trace is treated as the public relation or the source of whole identity, or its presence or notation is treated as proof that the relation obtains. | Keep the Working-Model relation canonical; recover the direct relation facts and reidentification rule independently; attach the trace only as their inspectable C.2.1 account. |
-| Unchecked relation label or mode | A familiar relation label or `axiomatic` flag is published as though either settled relation obtaining or identity. | State and test the direct relation first. When B.3.5 is elected, add the branch-specific mode and support account. Stop when a fact required by the direct pattern is missing. |
-| Order/time leakage | Sequence, phase labels or parallel timing are treated as sufficient evidence of parthood. | Recover each direct relation separately: A.15.1 for Work parts, A.14 for a proper phase of an unchanged non-Work carrier, and B.1.4 for aggregation of recovered order or temporal relations. |
-| Assurance by notation | A diagram, graph display, or data format is treated as if it made the relation true. | Use the display to present the relation claim and establish its grounds under the direct relation rule. When this profile is elected, keep its grounding relation and validation mode explicit. |
+| Trace as relation or truth-maker | A `Gamma_m` trace is treated as the public relation or the source of whole identity, or its presence or notation is treated as proof that the relation obtains. | Keep the Working-Model relation canonical; recover the relation facts and reidentification rule independently; attach the trace only as their inspectable C.2.1 account. |
+| Unchecked relation label or mode | A familiar relation label or `axiomatic` flag is published as though either settled relation obtaining or identity. | State and test the relation first. When B.3.5 is elected, add the branch-specific mode and support account. Stop when a fact required by the relation's defining pattern is missing. |
+| Order/time leakage | Sequence, phase labels or parallel timing are treated as sufficient evidence of parthood. | Recover each relation separately: A.15.1 for Work parts, A.14 for a proper phase of an unchanged non-Work carrier, and B.1.4 for aggregation of recovered order or temporal relations. |
+| Assurance by notation | A diagram, graph display, or data format is treated as if it made the relation true. | Use the display to present the relation claim and establish its grounds under the relation rule. When this profile is elected, state its grounding relation and validation mode. |
 
 ### B.3.5:13 - Consequences (benefits, trade-offs, mitigations)
 
 **Benefits**
 
-* **Cognitive clarity for authors and readers.** Working-Model relations remain canonical while assurance accounts stay beneath them. Every claim covered by the elected profile carries only its branch-specific support account; ordinary direct claims remain lightweight. CT2R preserves an inspectable assurance account while keeping collection belonging, constructive parthood, and order or temporal relations distinct. Order and time may organize a structure without establishing parthood.
+* **Cognitive clarity for authors and readers.** Working-Model relations remain canonical while assurance accounts stay beneath them. Every claim covered by the elected profile carries only its branch-specific support account; ordinary claims remain lightweight. CT2R preserves an inspectable assurance account while keeping collection belonging, constructive parthood, and order or temporal relations distinct. Order and time may organize a structure without establishing parthood.
 * **Use-specific assurance without tooling commitments.** Teams choose the grounding that the relation's elected branch and receiving claim require. The declared modes distinguish justification postures; they are not an ascending scale of empirical confidence.
-* **Explicit fit management.** Inspect the mapping and its losses before relying on a composed claim. Its actual limitations can qualify, narrow or block that conclusion; a quantitative effect requires the declared receiving model.
-* **Cleaner separation of concerns.** Distinguish collection belonging, parthood, Method composition and temporal relations by their direct rules. Their separate meanings can coexist in one inspected account without inferring one relation from another.
+* **Mapping fit.** Inspect the mapping and its losses before relying on a composed claim. Its limitations can qualify, narrow or block that conclusion; a quantitative effect requires the declared receiving model.
+* **Distinct relation kinds.** Distinguish collection belonging, parthood, Method composition and temporal relations by their rules. Their separate meanings can coexist in one inspected account without inferring one relation from another.
 
 **Trade‑offs & mitigations**
 
@@ -321,19 +341,25 @@ Core prose **MUST NOT** introduce CI/CD terms, file formats, APIs, or machine‑
 ### B.3.5:14 - Rationale (informative)
 
 **14.1 Why canonical‑first?**
-CT2R-LOG treats the **human-readable, task-appropriate relation** (e.g., `ut:ComponentOf`) as the **canonical publication form** because that is what engineers and managers actually use to reason, decide, and communicate. The formal layers **ground** that form; they do not replace it. Authors state the relation readers need, then point to the support required by the selected assurance use.
+CT2R-LOG treats the **human-readable, task-appropriate relation** (e.g., `ut:ComponentOf`) as the **canonical publication form** because that is what engineers and managers use to reason, decide, and communicate. The formal layers **ground** that form; they do not replace it. Authors state the relation readers need, then point to the support required by the selected assurance use.
 
 **14.2 Why distinguish the two `tv:` links?**
 `tv:AliasOf` connects designations so a reader can recover which relation an expression names. `tv:groundedBy` connects a covered assertion to the account supporting that assertion. An agreed glossary meaning can remain stable while a component is removed and the earlier construction account ceases to support the current claim. Conversely, a changed glossary can require a new interpretation while the physical assembly stays unchanged. Keeping these subjects distinct tells the author what to re-examine. Both links can be expressed in prose or another suitable notation.
 
 **14.3 Why a triad of `validationMode`?**
-The triad **{postulate, inferential, axiomatic}** distinguishes permitted justification postures, not stages of formality or increasing confidence. The direct relation kind and elected profile determine which posture and support are appropriate for the receiving claim and use. A sufficient calibration account in a branch permitting `postulate` needs no mode promotion; an elected structural-parthood or collection-belonging claim still requires its respective current construction trace. Where a load-bearing claim needs stronger proof or an empirical check, select that contribution for the assurance gap it can resolve, not to advance through the three labels. The mode declaration changes neither the canonical relation nor the strength of its support.
+The triad **{postulate, inferential, axiomatic}** distinguishes permitted justification postures, not stages of formality or increasing confidence. The relation kind and elected profile determine which posture and support are appropriate for the receiving claim and use. A sufficient calibration account in a branch permitting `postulate` needs no mode promotion; an elected structural-parthood or collection-belonging claim requires its respective current construction trace.
+
+Where a load-bearing claim needs stronger proof or an empirical check, select that contribution for the assurance gap it can resolve, not to advance through the three labels.
+
+The mode declaration changes neither the canonical relation nor the strength of its support.
 
 **14.4 Why recover parthood independently of order and time?**
-Order and temporal coverage answer different questions from parthood. A chronology or diagram supplies no part relation by itself. A.15.1 can independently establish a Work temporal part, and A.14 a proper temporal phase of an unchanged non-Work carrier. Preserve those relations alongside the applicable Method and temporal claims; B.1.4 aggregates only the relations already recovered.
+Order and temporal coverage answer different questions from parthood. A chronology or diagram supplies no part relation by itself. A.15.1 can independently establish a Work temporal part, and A.14 a proper temporal phase of an unchanged non-Work carrier. Preserve those relations alongside the applicable Method and temporal claims; B.1.4 aggregates only the relations recovered.
 
 **14.5 Why point to `Γ_m.sum | set | slice` (Compose‑CAL) for constructive grounding?**
-The three C.13 forms—**sum, set, slice**—are sufficient to report the recurring construction accounts for integrated assemblies, collections, aspects and measured portions without expanding the kernel. They are not identity functions. A truthful account carries exact participants, direct relation occurrences, the applicable rule, and identity or reidentification conditions: the same inputs under another assembly can form another whole, while a permitted replacement can preserve one whole.
+The three C.13 forms—**sum, set, slice**—are sufficient to report the recurring construction accounts for integrated assemblies, collections, aspects and measured portions without expanding the kernel. They are not identity functions.
+
+A truthful account carries participants, direct relation occurrences, the applicable rule, and identity or reidentification conditions: the same inputs under another assembly can form another whole, while a permitted replacement can preserve one whole.
 
 **14.6 Why mental obligations rather than process mandates?**
 These obligations govern how a relation claim is justified and published: declare a permitted mode for an elected profile, supply the branch's required support, and keep order and temporal claims distinct from parthood. A tool can help inspect that account; its successful execution does not replace the relation's grounds. The requirements concern the claim's justification, not attainment of an axiomatic strength level.
@@ -344,10 +370,10 @@ The assurance profile uses the following contributions. The W3C recommendations 
 
 | Source line | Contribution and boundary | Application in B.3.5 |
 | --- | --- | --- |
-| A.14's current constructional comparison | **Adopt** construction and identity before relation choice. **Reject** both a universal collection-membership predicate and any inference from belonging either to parthood or to the impossibility of parthood. | `S-3.d/e`, `CC-CT2R-3/5/5a`, and the Fleet North case keep collection belonging and a separately grounded part claim distinct. |
-| [ISO/IEC/IEEE 15026-2:2022, *Assurance case*](https://www.iso.org/standard/80625.html) | **Adapt** its separate, maintained assurance-case structure: an elected support account stays inspectable and current beside the claim it supports. **Reject** a mandatory full assurance case for every direct relation. The FPF-specific `validationMode` triad is only the author's declared posture; the standard is not cited as its source. | The Solution, `S-3`, B.3.4 currentness relation, and conformance rows require support only after profile election and keep claim, support, and posture separate. |
-| NIST's [Digital Thread for Manufacturing](https://www.nist.gov/programs-projects/digital-thread-manufacturing) programme | **Adapt** traceable model-based information, validation, and conformance across engineering, manufacturing, and quality. **Reject** a shared model, thread, exchange, or passing syntax check as proof of a world-side relation. | `tv:groundedBy`, the trace-family rule, and the two worked cases keep the support account versioned and inspectable while the direct relation and its own rule decide what obtains; a trace or evidence item creates neither the relation nor its identity. |
-| [SKOS / SKOS-XL (W3C, 2009)](https://www.w3.org/TR/skos-reference/#xl-label-relations) and [OWL 2 Direct Semantics (W3C, 2012)](https://www.w3.org/TR/owl2-direct-semantics/#Object_Property_Expression_Axioms) | **Adopt** the distinction between labels, relations between labels, and the relations they designate. OWL distinguishes equal property extensions from inverse properties with reversed participants. **Adapt** a directed local alias under E.10; neither a generic SKOS-XL label relation nor property equivalence supplies that declaration’s complete meaning. | :5 defines designation endpoints, local use and participant positions. The assembly-glossary case shows why changing the label’s meaning and changing the actual assembly require different reconsideration. |
+| A.14's constructional comparison | **Adopt** construction and identity before relation choice. **Reject** both a universal collection-membership predicate and any inference from belonging either to parthood or to the impossibility of parthood. | `S-3.d/e`, `CC-CT2R-3/5/5a`, and the Fleet North case keep collection belonging and a separately grounded part claim distinct. |
+| [ISO/IEC/IEEE 15026-2:2022, *Assurance case*](https://www.iso.org/standard/80625.html) | **Adapt** its separate, maintained assurance-case structure: an elected support account stays inspectable and current beside the claim it supports. **Reject** a mandatory full assurance case for every Working-Model relation. The FPF-specific `validationMode` triad is only the author's declared posture; the standard is not cited as its source. | The Solution, `S-3`, B.3.4 currentness relation, and conformance rows require support only after profile election and keep claim, support, and posture separate. |
+| NIST's [Digital Thread for Manufacturing](https://www.nist.gov/programs-projects/digital-thread-manufacturing) programme | **Adapt** traceable model-based information, validation, and conformance across engineering, manufacturing, and quality. **Reject** a shared model, thread, exchange, or passing syntax check as proof of a world-side relation. | `tv:groundedBy`, the trace-family rule, and the two worked cases keep the support account versioned and inspectable while the relation and its own rule decide what obtains; a trace or evidence item creates neither the relation nor its identity. |
+| [SKOS / SKOS-XL (W3C, 2009)](https://www.w3.org/TR/skos-reference/#xl-label-relations) and [OWL 2 Direct Semantics (W3C, 2012)](https://www.w3.org/TR/owl2-direct-semantics/#Object_Property_Expression_Axioms) | **Adopt** the distinction between labels, relations between labels, and the relations they designate. OWL distinguishes equal property extensions from inverse properties with reversed participants. **Adapt** a directed local alias under E.10; neither a generic SKOS-XL label relation nor property equivalence supplies that declaration’s complete meaning. | :5 defines designation endpoints, local use and participant positions. The assembly-glossary case shows why changing the label’s meaning and changing the assembly require different reconsideration. |
 
 B.3.5 starts with a readable relation and adds the branch-specific account when the publication elects the profile. Keep the assertion and its support current under their applicable relation and assurance rules.
 
@@ -356,17 +382,17 @@ Reconsider the affected assertion when its member, rule, trace, or evidence chan
 ### B.3.5:15 - Relations
 
 **Builds on**
-- **A.14 Advanced Mereology** — supplies direct structural relations and the discipline for collection belonging under each collection's own rule and separately grounded parthood; B.3.5 adds only the assurance branch elected for the relation.
+- **A.14 Mereology** — supplies structural relations and the discipline for collection belonging under each collection's own rule and separately grounded parthood; B.3.5 adds only the assurance branch elected for the relation.
 - **A.11 Ontological Parsimony (C‑5)** — constructive grounding lives in a calculus; the kernel remains minimal.
 - **B.1 Universal Γ** — shared invariants and the placement of order/time in their respective Γ‑flavours.
-- **Part E authoring rules** — canonical pattern template and notational independence, which CT2R‑LOG explicitly follows.
+- **Part E authoring rules** — canonical pattern template and notational independence, which CT2R‑LOG follows.
 
 **Coordinates with**
 - **Compose-CAL (`Γ_m`) and `C.13`** — supply current construction accounts for structural parthood and the `set` account for elected assurance of collection belonging. Each trace reports facts whose meanings and conditions come from the pattern that defines the relation.
 - **A.22 / A.22.CGUS** — Use A.22 when the receiving question needs a selected structure. B.3.5:4.1 supplies an optional record of construction-to-typed/logical correspondence and preserved or lost structure. Use A.22.CGUS when potential continuations and their conditions are at issue; `A.7.1` supplies general diagnostic return to a subject construction.
-- **KD‑CAL** — provides the **logical** shoulder (inferential justification) when authors pick `validationMode = inferential`.
+- **KD‑CAL** — provides **inferential justification** when authors pick `validationMode = inferential`.
 - **E.10 / Lang-CHR (F.18)** — govern relation designations, local aliases and register use; F.17 supplies naming records when needed.
-- **Kind-CAL / F.9** — govern actual kind correspondences and correspondences between distinct local meanings. A same-meaning alias follows the naming rules above.
+- **Kind-CAL / F.9** — govern kind correspondences and correspondences between distinct local meanings. A same-meaning alias follows the naming rules above.
 
 **Constrained by**
 - **Notational Independence (E.5.2)** — CT2R‑LOG refuses to prescribe formats, keeping all obligations conceptual.

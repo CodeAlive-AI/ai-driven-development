@@ -6,11 +6,11 @@
 
 ### A.3.3:1 - Problem frame
 
-Use this pattern when you need a reusable account of how a particular subject's state can change: which differences the state must retain, the law relating earlier and later state, and the conditions in which that law applies.
+Use this pattern when you need a reusable account of how a subject's state can change: which differences the state must retain, the law relating earlier and later state, and the conditions in which that law applies.
 
 **First useful move.** Name the changing subject and what you want to find about its change. If the state and law are already available, state their meanings in one ordinary sentence; otherwise construct them through :4.4.1. For example: “In this two-substance mixture, the remaining masses in kilograms change from (a,b) to (a/2,b/4) after each treatment cycle; the instrument reports a+b.” The first question is whether the observed total contains enough information to predict the next total. Section 5.6 works out the answer.
 
-If the ordinary statement is sufficient for the current comparison, stop. Add the observation, calibration or assurance account when the receiving use needs it. Before making a prediction, conformance or gate-use claim, name the exact applicability window and any observation relation that use requires; stop that use if a required condition is unavailable.
+If the ordinary statement is sufficient for the current comparison, stop. Add the observation, calibration or assurance account when the receiving use needs it. Before making a prediction, conformance or gate-use claim, name the applicability window and any observation relation that use requires; stop that use if a required condition is unavailable.
 
 The practical gain is a model that supports the needed prediction or comparison, or identifies the missing distinction or rule. A model fitted to the wrong state can lose a difference that changes the answer.
 
@@ -37,14 +37,14 @@ A usable account must connect the changing subject, the state distinctions and t
 
 #### A.3.3:4.1 - Definition
 
-`U.Dynamics` is a same-individual dependent kind of `U.Episteme`. Membership holds when one already identified episteme has the changing subject as its exact C.2.1 `EntityOfConcern` and its ClaimGraph, interpreted under the effective reference scheme, substantively declares both a state space and a state-transition law for that subject. The law may include exogenous inputs, constraints, disturbances, and an observation relation.
+`U.Dynamics` is a same-individual dependent kind of `U.Episteme`. Membership holds when one already identified episteme has the changing subject as its C.2.1 `EntityOfConcern` and its ClaimGraph, interpreted under the effective reference scheme, substantively declares both a state space and a state-transition law for that subject. The law may include exogenous inputs, constraints, disturbances, and an observation relation.
 
-The C.2.1 ClaimGraph, exact `EntityOfConcern`, and effective reference scheme remain the episteme's identity discriminators. A.3.3 adds no context field or second dynamics identity. A `U.ClaimScope`, operating region, applicability window, qualification interval, parameter regime, or scale band enters only through the exact claim that uses it and its subject pattern; changing one can change claim content without becoming an ambient container.
+The C.2.1 ClaimGraph, `EntityOfConcern`, and effective reference scheme remain the episteme's identity discriminators. A.3.3 adds no context field or second dynamics identity. A `U.ClaimScope`, operating region, applicability window, qualification interval, parameter regime, or scale band enters only through the claim that uses it and its subject pattern; changing one can change claim content without becoming an ambient container.
 
-`U.Dynamics` can declare a deterministic transition, permitted alternatives, a probability law over continuations, or a combination of these. Its time description can be continuous, discrete or hybrid. It can make state-change claims about physical systems, software services, organizations, epistemes, claim portfolios, resource states, architecture characteristics, or another exact EntityOfConcern. If several subjects are jointly modelled, the exact C.2.1 EntityOfConcern must itself be an independently identified collection, system, or other admitted subject.
+`U.Dynamics` can declare a deterministic transition, permitted alternatives, a probability law over continuations, or a combination of these. Its time description can be continuous, discrete or hybrid. It can make state-change claims about physical systems, software services, organizations, epistemes, claim portfolios, resource states, architecture characteristics, or another EntityOfConcern. If several subjects are jointly modelled, the C.2.1 EntityOfConcern must itself be an independently identified collection, system, or other admitted subject.
 
 
-If empirical grounding is claimed, state the exact C.2.1 `EpistemeEmpiricalGroundingRelation`.
+If empirical grounding is claimed, state the C.2.1 `EpistemeEmpiricalGroundingRelation`.
 
 #### A.3.3:4.2 - Dynamics statement
 
@@ -80,10 +80,10 @@ Use a contribution below when its question arises while constructing or using th
 | Question now requiring an answer | Contribution |
 | --- | --- |
 | Which reusable way is being identified, and does the episteme describe that way? | A.3.1 identifies the `U.Method`; A.3.2 tests whether an episteme substantively describes that admitted Method. |
-| Does a proposed whole Method have the claimed parts and whole behavior? | B.1.5 establishes the exact part Methods, obtaining `methodPartOf` relations, whole-forming claims and constraints, whole semantics, boundary and reidentification. |
+| Does a proposed whole Method have the claimed parts and whole behavior? | B.1.5 establishes the part Methods, obtaining `methodPartOf` relations, whole-forming claims and constraints, whole semantics, boundary and reidentification. |
 | What work is planned, or what was actually performed? | A.15.2 identifies the `U.WorkPlan` episteme coordinating possible future Work; A.15.1 independently admits dated performed `U.Work` and establishes its actuals. |
 | Does the question concern a continuing role assignment or a particular state episode within it? | A.2.5 distinguishes the assignment from its `SystemRoleAssignmentStateRelation` occurrence: one maximal uninterrupted episode in which the specified predicate holds while that assignment remains in force. Select the subject the modeled change or prediction concerns. |
-| Is one actual bounded change established? | A.3.4 requires the exact changed referent, temporal extent under its continuity rule or formal ordering boundary, boundary conditions, actual characteristic-state and obtaining direct-relation facts, and continuity or reidentification. |
+| Is one actual bounded change established? | A.3.4 requires the changed referent, temporal extent under its continuity rule or formal ordering boundary, boundary conditions, actual characteristic-state and obtaining direct-relation facts, and continuity or reidentification. |
 | Which independently selected organization of constituents and obtaining relations is being used? | A.22 identifies that Structure, including a selected transformation-flow organization. |
 | Which operation or law-governed application is admissible over the subject kind? | A.6.1 identifies the `U.Mechanism` episteme declaring the operation family, laws and admissibility conditions. Use E.20 when introducing or revising a mechanism definition in FPF. |
 | Which mathematical substrate or transferred representation supports the model? | Use the direct mathematical Method; use A.6.0 when the model needs a reusable formal-substrate declaration. Section :4.7 specifies the C.29 transfer question. |
@@ -116,7 +116,11 @@ U.Dynamics membership view {
 }
 ```
 
-`stateSpace` is claim content of this `U.Dynamics` episteme. It refers to an A.19 `CharacteristicSpace`: the product of declared characteristic value sets. The model states which combinations are admitted, through constraints or a predicate over that product. A.3.3.CC constructs such a configuration description; a predictive state can require additional information under :4.4.1. Characteristics retain their local meanings, units, Scales and comparability rules; C.16 supplies measurement construction when needed. A receiving evaluation may reuse this CharacteristicSpace; its scoring and judgement belong to that evaluation. Topology, geometry, aggregation or coordinate transformations are supplied over the domain where trajectories or comparisons use them; an independently selected organization of constituents and obtaining relations remains A.22 `U.Structure`.
+`stateSpace` is claim content of this `U.Dynamics` episteme. It refers to an A.19 `CharacteristicSpace`: the product of declared characteristic value sets. The model states which combinations are admitted, through constraints or a predicate over that product. A.3.3.CC constructs such a configuration description; a predictive state can require additional information under :4.4.1.
+
+Characteristics retain their local meanings, units, Scales and comparability rules; C.16 supplies measurement construction when needed. A receiving evaluation may reuse this CharacteristicSpace; its scoring and judgement belong to that evaluation.
+
+Topology, geometry, aggregation or coordinate transformations are supplied over the domain where trajectories or comparisons use them; an independently selected organization of constituents and obtaining relations remains A.22 `U.Structure`.
 
 `transitionLaw` is paradigm-agnostic. It can be an equation, relation, kernel, finite-state transition, queueing model, Bayesian update, Petri-net firing relation, simulation rule, learned predictor, or hybrid model, provided the state space, semantic basis, and applicability boundary are declared.
 
@@ -141,12 +145,12 @@ The construction can finish before a complete dynamics model exists: a useful re
 
 #### A.3.3:4.5 - Evidence, prediction, conformance, drift, and calibration
 
-Let `D` be a `U.Dynamics` about exact EntityOfConcern `E`. Let `W` denote only exact dated `U.Work` occurrences when Work is current, and let `O` denote separately identified observation, telemetry, source, or measurement records.
+Let `D` be a `U.Dynamics` about EntityOfConcern `E`. Let `W` denote only dated `U.Work` occurrences when Work is current, and let `O` denote separately identified observation, telemetry, source, or measurement records.
 
 | Derived value | Meaning |
 | --- | --- |
-| `trace(W, O, D)` | ordered observed values produced by the declared observation relation from exact Work-side facts when present and separately identified telemetry, source, observation, or measurement records |
-| `initialState(W, O, D)` | stated, measured, or estimated state at trace start, with the exact statement or result and its subject pattern recoverable |
+| `trace(W, O, D)` | ordered observed values produced by the declared observation relation from Work-side facts when present and separately identified telemetry, source, observation, or measurement records |
+| `initialState(W, O, D)` | stated, measured, or estimated state at trace start, with the statement or result and its subject pattern recoverable |
 | `predict(D, initialState, inputs, horizon)` | trajectory or distribution generated by the transition law over the declared horizon |
 | `insideOperatingRegion(D, state)` | check that `state` satisfies D's constraints and invariants; separately name the prediction or use and its relevant time or horizon, then check D's applicability window for that use |
 | `residuals(prediction, trace, alignment)` | discrepancies between the selected prediction and observed trace values under the stated alignment; `prediction` is the result of the identified `predict(D, initialState, inputs, horizon)` calculation |
@@ -155,11 +159,11 @@ Let `D` be a `U.Dynamics` about exact EntityOfConcern `E`. Let `W` denote only e
 
 These expressions name claim-side calculations or questions. When an observation, conformance, drift, measurement, evaluation, gate, or assurance result is claimed, the applicable evaluation or measurement declaration states the criterion and result semantics, and the actual application and result are identified separately; C.2.1 identifies any persisted result episteme, and use A.10 or B.3 only for the separately claimed reliance or assurance use.
 
-Calibration Work and its domain result may support a later dynamics episteme whose changed ClaimGraph receives its own C.2.1 identity; an `EpistemeEditionRelation` obtains only when C.2.1's exact continuation predicate is separately established.
+Calibration Work and its domain result may support a later dynamics episteme whose changed ClaimGraph receives its own C.2.1 identity; an `EpistemeEditionRelation` obtains only when C.2.1's continuation predicate is separately established.
 
 #### A.3.3:4.6 - Prediction use in comparison or gating
 
-A prediction used for comparison, release, gate, assurance, or work preparation states the exact dynamics edition, predicted Coordinates, operating region, horizon, and relevant error or uncertainty. State any time step, parameter regime or source-currentness condition on which the prediction or receiving use depends. The direct consumer's policy then states which observation, validation, sensitivity, robustness, stability, or normalization-composition conditions that use requires.
+A prediction used for comparison, release, gate, assurance, or work preparation states the dynamics edition, predicted Coordinates, operating region, horizon, and relevant error or uncertainty. State any time step, parameter regime or source-currentness condition on which the prediction or receiving use depends. The direct consumer's policy then states which observation, validation, sensitivity, robustness, stability, or normalization-composition conditions that use requires.
 
 A fresh observation may replace or check the prediction when the policy calls for it. A non-expansive bound, another sensitivity bound, or commutation with a normalization step is required only when the named use relies on that property. If the required conditions are absent or fail, the prediction cannot carry that use. State a needed currentness claim through `C.27.TA`. Use `C.27` when a separate authored temporal-claim adequacy question remains. Obtain a needed internal-constraint result through A.20; use A.21 for a gate decision or the applicable decision pattern for another decision.
 
@@ -167,7 +171,7 @@ A fresh observation may replace or check the prediction when the policy calls fo
 
 Stay in A.3.3 when the transition law or observation relation uses accepted local dynamics under one explicit semantic basis and applicability boundary.
 
-Use C.29 when the law's use depends on a contested transfer, cross-domain analogy, learned or speculative mathematical lens, scale change, abstraction, quotienting or reusable explanation across contexts. Establish the preserved and lost structure, operating region or scale window, applicable rival, lens-use boundary and stop condition. Then state the resulting dynamics law and its observation, constraint and calibration conditions here. The direct prediction consumer still determines reliance under :4.6.
+Use C.29 when the law's use depends on a contested transfer, cross-domain analogy, learned or speculative mathematical lens, scale change, abstraction, quotienting or reusable explanation across contexts. Establish the preserved and lost structure, operating region or scale window, applicable rival, lens-use boundary and stop condition. Then state the resulting dynamics law and its observation, constraint and calibration conditions here. The direct prediction consumer determines reliance under :4.6.
 
 #### A.3.3:4.8 - Recover an ambiguous source claim
 
@@ -207,9 +211,11 @@ A team wants to predict how much of two removable substances will remain after t
 
 The instrument reports only their total, `y_n = a_n + b_n`. The model's state is `(a_n, b_n)`; its observation relation maps that pair to the total. The states `(1, 0)` and `(0, 1)` both give `y_0 = 1 kg`, but their next totals are `1/2 kg` and `1/4 kg`. No deterministic law using only the current total can reproduce the next total for every admitted state.
 
-Retain the two masses when they are available. If only totals are observed, two successive exact readings recover the composition in this model: solve `a_0 + b_0 = y_0` and `a_0/2 + b_0/4 = y_1`, giving `a_0 = 4y_1 - y_0` and `b_0 = 2y_0 - 4y_1`. These masses must be nonnegative. Substitution into the next-cycle law gives `y_2 = (3/4)y_1 - (1/8)y_0`; the same recurrence applies at every later cycle. The prediction now uses one previous total as well as the current one. Equivalently, take that pair of totals as the predictive state.
+Retain the two masses when they are available. If only totals are observed, two successive exact readings recover the composition in this model: solve `a_0 + b_0 = y_0` and `a_0/2 + b_0/4 = y_1`, giving `a_0 = 4y_1 - y_0` and `b_0 = 2y_0 - 4y_1`. These masses must be nonnegative.
 
-If only the initial total is available, the model still gives a range: for integer `n ≥ 0`, `y_0/4^n ≤ y_n ≤ y_0/2^n`. Each extreme is attained by putting all the initial mass in one substance. Use this range when it answers the working question; otherwise identify the composition information needed for a narrower answer and decide whether to obtain it. If the two substances instead have the same known retention factor `r` with `0 ≤ r ≤ 1`, the total alone obeys `y_(n+1) = r y_n`. Thus whether aggregation preserves the needed law depends on the modeled operations.
+Substitution into the next-cycle law gives `y_2 = (3/4)y_1 - (1/8)y_0`; the same recurrence applies at every later cycle. The prediction now uses one previous total as well as the current one. Equivalently, take that pair of totals as the predictive state.
+
+If only the initial total is available, the model gives a range: for integer `n ≥ 0`, `y_0/4^n ≤ y_n ≤ y_0/2^n`. Each extreme is attained by putting all the initial mass in one substance. Use this range when it answers the working question; otherwise identify the composition information needed for a narrower answer and decide whether to obtain it. If the two substances instead have the same known retention factor `r` with `0 ≤ r ≤ 1`, the total alone obeys `y_(n+1) = r y_n`. Thus whether aggregation preserves the needed law depends on the modeled operations.
 
 The calculation assumes exact readings and fixed retention factors. Applying it to treatment data requires accounting for measurement error and establishing the retention law over the intended operating range. [Lin and Lu, §§2.1–2.2](https://arxiv.org/html/1908.07725v5) explain the broader state/observation and model-reduction problem; the two-substance case here supplies an elementary construction.
 
@@ -231,9 +237,15 @@ Consider a three-state Markov model with this transition matrix. A readout repor
 | B | 0.1 | 0.2 | 0.7 |
 | C | 0.2 | 0.3 | 0.5 |
 
-A present readout of 0 merges states with next-1 probabilities 0.1 and 0.7. The readout alone therefore leaves predictive information unresolved. The stationary distribution is `(19/54,13/54,22/54)`. At stationarity, after readouts `1,0`, the current A/B weights are `2/5,3/5`, so the next-1 probability is `23/50`. After `0,0`, those weights are `73/105,32/105`, giving `99/350`. A decision that changes above probability 0.4 takes different actions after these histories. Keeping only the present 0 and the stationary A/B mixture gives `11/32` and loses that difference.
+A present readout of 0 merges states with next-1 probabilities 0.1 and 0.7. The readout alone therefore leaves predictive information unresolved. The stationary distribution is `(19/54,13/54,22/54)`.
 
-Condition on the available history or retain the resulting predictive distribution. With no information beyond the current 0, the range `[0.1,0.7]` may already answer a weaker question. The full finite chain is irreducible and aperiodic, and its long-run proportion of readout 1 converges to `22/54`. That long-run result leaves the history-dependent prediction above intact. The finite-chain results are given in [Cambridge's Markov Chains notes, §§9-10](https://www.statslab.cam.ac.uk/~rrw1/markov/M.pdf); the matrix and conditional calculations here are an authored example.
+At stationarity, after readouts `1,0`, the current A/B weights are `2/5,3/5`, so the next-1 probability is `23/50`. After `0,0`, those weights are `73/105,32/105`, giving `99/350`.
+
+A decision that changes above probability 0.4 takes different actions after these histories. Keeping only the present 0 and the stationary A/B mixture gives `11/32` and loses that difference.
+
+Condition on the available history or retain the resulting predictive distribution. With no information beyond the current 0, the range `[0.1,0.7]` may already answer a weaker question.
+
+The full finite chain is irreducible and aperiodic, and its long-run proportion of readout 1 converges to `22/54`. That long-run result leaves the history-dependent prediction above intact. The finite-chain results are given in [Cambridge's Markov Chains notes, §§9-10](https://www.statslab.cam.ac.uk/~rrw1/markov/M.pdf); the matrix and conditional calculations here are an authored example.
 
 #### A.3.3:5.9 - Possible execution orders do not supply a probability law
 
@@ -251,7 +263,7 @@ A familiar equation or a well-fitting simulation can also encourage extrapolatio
 
 ### A.3.3:7 - Conformance Checklist
 
-**CC-A3.3-1 (Membership and identity).** A.3.3 judges one already identified `U.Episteme`. That same individual is `U.Dynamics` only when its exact C.2.1 `EntityOfConcern` is the changing subject and its ClaimGraph, under its effective reference scheme, declares both a state space and a transition law. A.3.3 adds no second identity.
+**CC-A3.3-1 (Membership and identity).** A.3.3 judges one already identified `U.Episteme`. That same individual is `U.Dynamics` only when its C.2.1 `EntityOfConcern` is the changing subject and its ClaimGraph, under its effective reference scheme, declares both a state space and a transition law. A.3.3 adds no second identity.
 
 **CC-A3.3-2 (Local meanings and applicability).** Interpret characteristic names under the effective reference scheme. State the units, operating region, time base, approximation regime, claim scope, qualification window and source-currentness conditions needed to interpret or rely on the model, as claim content or their separately governed values.
 
@@ -261,7 +273,7 @@ A familiar equation or a well-fitting simulation can also encourage extrapolatio
 
 **CC-A3.3-5 (Transition law).** The law states a relation, map, kernel, equation, rule, learned predictor or simulation rule for the declared time base. Its permitted alternatives, conditions selecting among them and any supplied probability law remain recoverable under :4.4.1.
 
-**CC-A3.3-6 (Observation relation).** Evidence use states how exact Work-side facts when present and separately identified work records, telemetry, measurements, observation records, or source records become observed coordinates. Direct observation is declared rather than assumed.
+**CC-A3.3-6 (Observation relation).** Evidence use states how Work-side facts when present and separately identified work records, telemetry, measurements, observation records, or source records become observed coordinates. Direct observation is declared rather than assumed.
 
 **CC-A3.3-7 (Constraints and applicability).** Before prediction or gate use, state the constraints, invariants, operating region, approximation regime, parameter range, horizon and scale window on which that use depends.
 
@@ -269,7 +281,7 @@ A familiar equation or a well-fitting simulation can also encourage extrapolatio
 
 **CC-A3.3-9 (Observed facts and calibration).** Attach resource actuals, timestamps and observations to the Work, measurement or source they describe. Relate them to the dynamics through :4.5. Apply its C.2.1 identity and edition conditions when calibration changes the model.
 
-**CC-A3.3-10 (Prediction use).** Predicted Coordinates used for comparison or gating state the exact model edition, domain, horizon, currentness, error or uncertainty, and every observation, validation, sensitivity, stability, or normalization-composition condition required by that consumer's policy. No universal non-expansiveness or commutation test substitutes for the direct decision rule.
+**CC-A3.3-10 (Prediction use).** Predicted Coordinates used for comparison or gating state the model edition, domain, horizon, currentness, error or uncertainty, and every observation, validation, sensitivity, stability, or normalization-composition condition required by that consumer's policy. No universal non-expansiveness or commutation test substitutes for the direct decision rule.
 
 **CC-A3.3-11 (Temporal use).** State temporal aspects through C.27.TA and establish the adequacy required of an authored temporal claim through C.27, as specified in :4.3.
 
@@ -283,11 +295,11 @@ A familiar equation or a well-fitting simulation can also encourage extrapolatio
 
 | Recognizable failure | Repair |
 | --- | --- |
-| Inferring a transition law from procedure text or a workflow diagram's layout | Recover the actual assertion under :4.8, then test for both a state space and a transition law under :4.1. |
+| Inferring a transition law from procedure text or a workflow diagram's layout | Recover the assertion under :4.8, then test for both a state space and a transition law under :4.1. |
 | Treating telemetry as a law | Declare the proposed law, derive the observed coordinates through :4.5 and compare its consequences with the telemetry. |
 | Using dashboard labels as state coordinates without their meanings | Recover the characteristics, units, scales and comparability rules, and check whether the chosen coordinates retain the needed predictive information. |
 | Treating a simulation as release approval | Check its predicted result against the receiving decision's conditions in :4.6, then obtain that decision. |
-| Extrapolating beyond established model conditions | State the applicable region, source-currentness condition and lowering condition; use :4.7 if the use requires transfer. |
+| Extrapolating beyond established model conditions | State the applicable region, source-currentness condition and the condition for narrowing or stopping reliance on the model; use :4.7 if the use requires transfer. |
 | Relying on a learned prediction without its domain and error conditions | State its training domain, observation relation, error or uncertainty policy and applicability window before reliance. |
 
 ### A.3.3:9 - Consequences
@@ -312,7 +324,9 @@ The needed prediction determines which state distinctions have to remain recover
 
 For a present total of 1 kg, the interval [0.25, 0.5] kg already settles whether the next total is at most 0.6 kg. It leaves an at-most-0.4 kg question unresolved. Acquire composition or a sufficiently informative history only when that remaining uncertainty matters. Equal retention restores a one-total transition law, so the extra state or reading becomes unnecessary.
 
-[Lin and Lu, §§2.1–2.2](https://arxiv.org/html/1908.07725v5) supplies the methodological comparison line: selected observables can discard information that reappears as memory in a reduced description. Its exact projection identity still requires closure choices for a usable reduced model; its statistical treatment uses a stationary-process setting. The elementary calculation above is an authored construction. It selects the state–observation distinction in :4.1–:4.2 and the question-dependent choice in :5.6, with a measurable cost: additional coordinates or observations only when the cheaper description is insufficient.
+[Lin and Lu, §§2.1–2.2](https://arxiv.org/html/1908.07725v5) supplies the methodological comparison line: selected observables can discard information that reappears as memory in a reduced description. Its projection identity requires closure choices for a usable reduced model; its statistical treatment uses a stationary-process setting.
+
+The elementary calculation above is an authored construction. It selects the state–observation distinction in :4.1–:4.2 and the question-dependent choice in :5.6, with a measurable cost: additional coordinates or observations only when the cheaper description is insufficient.
 
 **Strengthen support when the use changes.** For data-driven predictive control, [de Jong and colleagues, §§I–IV, especially III and Theorem IV.2](https://arxiv.org/html/2405.01292v1), compare iterated one-step lifted models with directly learned multi-step predictors. They choose the latter to avoid propagating one-step prediction errors across the horizon, at the cost of learning horizon-dependent prediction matrices and observables. Their constrained controller adds an interpolated initial state and terminal ingredients; recursive feasibility depends on the stated terminal-set assumption and a feasible preceding problem. These are contributions to a particular control problem.
 

@@ -55,7 +55,13 @@ When the list travels separately, supply the unit order and decoding rule needed
 
 ##### C.2.7:4.1.1 - Why begin with these factors?
 
-The starter set separates three questions that often change how a representation can be read or transferred. **LocalityDistribution** concerns whether one selected unit distinguishes a represented value or whether a combination is needed. **Sparsity** concerns how much of the declared unit set is active or used; its reading depends on what is counted and on the local comparison criterion. **Symbolicity** concerns the explicit tokens and structures available to the receiving interpretation, including the applicable decoding or composition rules. These questions can matter separately: locating a report, estimating the units used to express it and recovering its interpretation require different information.
+The starter set separates three questions that often change how a representation can be read or transferred.
+
+- **LocalityDistribution** concerns whether one selected unit distinguishes a represented value or whether a combination is needed.
+- **Sparsity** concerns how much of the declared unit set is active or used; its reading depends on what is counted and on the local comparison criterion.
+- **Symbolicity** concerns the explicit tokens and structures available to the receiving interpretation, including the applicable decoding or composition rules.
+
+These questions can matter separately: locating a report, estimating the units used to express it and recovering its interpretation require different information.
 
 The pair code in :4.1 explains why a count of active units cannot settle locality and why a compact inscription needs its decoder. The starter bundle keeps these distinctions available without requiring a complete model of the representation. Select only the factors that affect the receiving question, as :16.1 permits. Preserve the representation and unit basis for each reading; factors of a source model and factors of its explanation concern different representations.
 
@@ -76,11 +82,11 @@ Authors may add extra local representation factors only if the extension is publ
 **Show (Episteme).** A researcher can describe a distributed activation pattern in a symbolic hypothesis. Assess the model-side code and the hypothesis's expression separately; the new expression alone establishes neither the hypothesis's articulation nor its warrant.
 
 ### C.2.7:6 - Bias-Annotation
-The pattern resists folk theories that try to line up one representation factor with one stage or progression story.
+The pattern resists inferring a stage or progression from one representation factor alone.
 
 ### C.2.7:7 - Conformance Checklist
 - `CC-C.2.7-1` `LanguageStateRepresentationFactorBundle` **SHALL** be published as a factor bundle, not as a hidden scalar.
-- `CC-C.2.7-2` Local aliases such as `EncodingBasis` **MAY** exist only with an explicit docking to the governed factors.
+- `CC-C.2.7-2` Local aliases such as `EncodingBasis` **MAY** exist only with an explicit docking to the bundle's factors.
 - `CC-C.2.7-3` Representation factors **MUST NOT** silently replace the source and use claims recovered through C.2.6 or `LanguageStateClosureDegree`.
 - `CC-C.2.7-4` New local factors **SHALL** preserve the factor-bundle discipline.
 
@@ -93,7 +99,7 @@ The pattern resists folk theories that try to line up one representation factor 
 The benefit is cleaner comparison across schools, substrates, and publication forms. The trade-off is the effort needed to make the relevant factor readings explicit.
 
 ### C.2.7:10 - Rationale
-Separate representation factors let the reader compare code organization while assessing articulation and closure and establishing the required source or use claims on their own grounds. The starter triple earns its place through the three receiving questions in :4.1.1. A direct selection of other representation Characteristics is preferable when it answers the actual task with less irrelevant assessment.
+Separate representation factors let the reader compare code organization while assessing articulation and closure and establishing the required source or use claims on their own grounds. The starter triple earns its place through the three receiving questions in :4.1.1. A direct selection of other representation Characteristics is preferable when it answers the task with less irrelevant assessment.
 
 ### C.2.7:11 - SoTA-Echoing
 The triple is an FPF starting choice for :4.1.1, with bounded external comparisons:
@@ -140,7 +146,7 @@ Assurance readers should also watch for silent replacement of the source and use
 Authors may add extra local factors, but each added factor should answer a distinct question rather than duplicating locality, sparsity, or symbolicity under another label.
 
 #### C.2.7:15.2 - Migration from alias-heavy prose
-Aliases such as `EncodingBasis` or similar should be unfolded into explicit factor dockings before they are relied upon for comparison, bridge claims, or downstream use.
+Aliases such as `EncodingBasis` should be unfolded into explicit factor dockings before they are relied upon for comparison, bridge claims, or downstream use.
 
 #### C.2.7:15.3 - Boundary reminder
 `LanguageStateRepresentationFactorBundle` describes representational organization only. Admissible use, closure and source or interaction claims retain their own conditions and grounds.
@@ -153,7 +159,7 @@ A bundle claim should show the readings relevant to its stated use, using the st
 Compact overlays such as "sparse-symbolic" are admissible only when they dock to the underlying factor bundle. No compact label may behave as a hidden master score for comparison, bridge comparison, or stage/progression talk.
 
 #### C.2.7:16.3 - Alias docking rule
-Local aliases such as `EncodingBasis` are admissible only when their docking to the governed factors is explicit and stable. If an alias compresses several factors, the compression should remain visible.
+Local aliases such as `EncodingBasis` are admissible only when their docking to the bundle's factors is explicit and stable. If an alias compresses several factors, the compression should remain visible.
 
 ### C.2.7:17 - Factor Interaction and Cross-Facet Reading Rule
 
@@ -177,10 +183,10 @@ An assurance reader should ask:
 - has representation talk started to replace articulation, closure, or source and use claims.
 
 #### C.2.7:18.2 - Local extension test
-An additional factor is justified only if it captures a distinct representational question that cannot be reduced to locality, sparsity, or symbolicity. The extra factor should extend the bundle, not become a rival master factor.
+An additional factor is justified only if it captures a distinct representational question that cannot be reduced to locality, sparsity, or symbolicity. The extra factor should extend the bundle, not become a master factor.
 
 #### C.2.7:18.3 - Migration test for source terminology
-For a source term such as "symbolic", "distributed" or "encoding basis", retain its source-local meaning and scope. If an FPF comparison needs factor readings, establish which factors the source actually supports and leave the others unresolved. Mere citation of the source term needs no reconstruction into a complete bundle. Test any further cross-facet claim separately.
+For a source term such as "symbolic", "distributed" or "encoding basis", retain its source-local meaning and scope. If an FPF comparison needs factor readings, establish which factors the source supports and leave the others unresolved. Mere citation of the source term needs no reconstruction into a complete bundle. Test any further cross-facet claim separately.
 
 #### C.2.7:18.4 - Bundle-comparison reminder
 Representation bundles may be compared across contexts only after the compared factors are explicit. If one context uses a compact local alias and another publishes the full factor bundle, require explicit docking before treating the two descriptions as commensurable.

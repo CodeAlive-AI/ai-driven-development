@@ -23,12 +23,12 @@ Typed reuse can fail because a claim's scope changed, because the receiving use 
 
 ### C.3.3:2 - Context
 
-Different sources or practices may use the same kind, or different kinds may coexist inside one source. Names, source labels, compatible schemes, and matching current extensions decide neither. First compare the candidate domains and membership distinctions under C.3.1. Same-kind reuse needs no bridge. Distinct-kind reuse may need a `KindBridge` when its exact correspondence predicate can be established. F.9 is additional only when distinct local senses and their bounded use are current.
+Different sources or practices may use the same kind, or different kinds may coexist inside one source. Names, source labels, compatible schemes, and matching current extensions decide neither. First compare the candidate domains and membership distinctions under C.3.1. Same-kind reuse needs no bridge. Distinct-kind reuse may need a `KindBridge` when its correspondence predicate can be established. F.9 is additional only when distinct local senses and their bounded use are current.
 
 ### C.3.3:3 - Problem
 
 1. **False splitting.** A locality change creates two apparent kinds and a bridge even though the membership distinction is unchanged.
-2. **Semantic drift.** A genuinely different receiving kind is treated as the source kind because names or extensions look alike.
+2. **Semantic drift.** A different receiving kind is treated as the source kind because names or extensions look alike.
 3. **Hidden order loss.** Subkind facts collapse, invert, or become unsettled without being reported.
 4. **Entangled channels.** Scope, sense, and kind correspondence are bundled into one score or record.
 5. **Classification transfer.** A source judgment is copied as receiving truth without checking receiving admissibility and criterion satisfaction.
@@ -48,7 +48,7 @@ Different sources or practices may use the same kind, or different kinds may coe
 
 1. **Compare kind definitions.** Recover source and receiving candidate domains, membership distinctions, and continuity rules. A changed locality or scheme prompts this check; it does not decide it.
 2. **Stop on same-kind reuse.** If the same kind continues, use the declaration edition selected for the receiving use. When that use is candidate-bearing, check admissibility and evaluate the candidate afresh. No `KindBridge` obtains merely because source, practice, team, wording, or scheme changed.
-3. **Open a bridge only for two distinct kinds.** A `KindBridge` occurrence is an obtaining direct relation between one exact source kind and one exact target kind. Its directional predicate states the correspondence and definedness required by the named receiving use. Identify each kind independently under C.3.1.
+3. **Open a bridge only for two distinct kinds.** A `KindBridge` occurrence is an obtaining direct relation between one source kind and one target kind. Its directional predicate states the correspondence and definedness required by the named receiving use. Identify each kind independently under C.3.1.
 4. **Keep the assertion separate.** A C.2.1 bridge-assertion episteme designates the relation when needed and carries paired `KindSignature` editions, mapping rule, selected order-preservation results, loss notes, evidence, and admitted use. Include `CL^k` when the consumed assurance or calibration account requires it. A card, row, F.9 relation, or publication does not make the bridge obtain.
 5. **For candidate-bearing use, evaluate the receiving candidate.** First return `admissible` or `not-applicable` under the receiving signature and slice. Only an admissible request returns `true`, `false`, or `unknown`. A source judgment may support the bridge assertion or reliance but is never copied as receiving truth.
 6. **Route consequences narrowly.** When a receiving claim relies on the obtaining bridge, apply only the justified `CL^k` consequence to R. Scope and any sense relation retain their own objects and rules; F and G do not change.
@@ -65,7 +65,7 @@ The kinds are the direct relation participants. Scheme and signature editions qu
 
 **KB-01 (Distinct participants and obtaining).** One `KindBridge` occurrence has exactly two ordered participants: an independently identified source kind and an independently identified distinct target kind. It obtains only when its directional correspondence predicate holds within declared definedness. A different locality, label, scheme, or extension supplies no bridge. Signatures, assertions, evidence, `CL^k`, loss notes, and slices are not participants.
 
-**KB-02 (No Scope or sense substitution).** A `KindBridge` maps neither Claim/Work scope nor local wording. Scope translation uses A.2.6 when the receiving claim actually consumes it. An F.9 relation is added only for a current distinct-sense use. Neither channel is required merely because a kind bridge exists.
+**KB-02 (No Scope or sense substitution).** A `KindBridge` maps neither Claim/Work scope nor local wording. Scope translation uses A.2.6 when the receiving claim consumes it. An F.9 relation is added only for a current distinct-sense use. Neither channel is required merely because a kind bridge exists.
 
 **No blended score.** Scope congruence, sense-relation loss, and kind congruence remain separate. Do not aggregate them into one interoperability score.
 
@@ -73,27 +73,31 @@ The kinds are the direct relation participants. Scheme and signature editions qu
 
 **KB-03 (Direct settlement).** The C.3.3 settlement SHALL make recoverable:
 
-1. exact ordered source-kind and target-kind participants and the proof that they are distinct;
+1. ordered source-kind and target-kind participants and the proof that they are distinct;
 2. the directional correspondence predicate, applicability, and definedness; and
 3. participant-determined occurrence identity for that ordered pair.
 
-The separate bridge assertion states whether obtaining is affirmed, denied, or unresolved; only an affirmative assertion may designate an obtaining occurrence. It also names the declaration and scheme editions used to interpret the predicate, selected source and target subkind facts, preservation/collapse/non-preservation/unknown results, loss, evidence, and admitted use. Include `CL^k` when the consumed assurance or calibration account requires it. Another assertion, mapping expression, card, signature, scheme edition, or publication does not create another relation occurrence. A changed interpretation prompts a renewed obtaining test. If the same ordered participants and correspondence continue, the same relation continues; if not, the prior obtaining claim is no longer current.
+The separate bridge assertion states whether obtaining is affirmed, denied, or unresolved; only an affirmative assertion may designate an obtaining occurrence. It also names the declaration and scheme editions used to interpret the predicate, selected source and target subkind facts, preservation/collapse/non-preservation/unknown results, loss, evidence, and admitted use. Include `CL^k` when the consumed assurance or calibration account requires it.
+
+Another assertion, mapping expression, card, signature, scheme edition, or publication does not create another relation occurrence. A changed interpretation prompts a renewed obtaining test. If the same ordered participants and correspondence continue, the same relation continues; if not, the prior obtaining claim is no longer current.
 
 **KB-04 (Fresh receiving classification).** With fixed receiving candidate, signature edition, and slice, check admissibility first. `not-applicable` forms no classification judgment. An admissible request is evaluated reproducibly as `true`, `false`, or `unknown`. A source judgment or bridge assertion may support reliance but is never copied into the receiving result. An unavailable bridge dependency blocks that bridge use without rewriting an independently evaluated receiving result.
 
 #### C.3.3:6.3 - Order & Monotonicity
 
-**KB-05 (Monotone order).** If a bridge assertion states that source order fact `SubkindOfObtains(k1, k2; sourceRS)` is preserved, it SHALL designate exact target kinds `k1'` and `k2'`, the respective obtaining `KindBridge` relations from `k1` to `k1'` and from `k2` to `k2'`, and the basis on which `SubkindOfObtains(k1', k2'; targetRS)` holds. Identify a target `R_sub : U.SubkindOf` occurrence only when a receiving use needs occurrence identity.
-**KB-06 (No inversions).** A bridge assertion MUST NOT state preservation when the mapped target order is inverted. If `SubkindOfObtains(k2', k1'; targetRS)` holds for distinct mapped kinds and the required forward fact `SubkindOfObtains(k1', k2'; targetRS)` is established not to hold, state non-preservation and the exact loss. If the required target order cannot be settled, state `unknown`; do not turn non-settlement into either preservation or inversion.
+**KB-05 (Monotone order).** If a bridge assertion states that source order fact `SubkindOfObtains(k1, k2; sourceRS)` is preserved, it SHALL designate target kinds `k1'` and `k2'`, the respective obtaining `KindBridge` relations from `k1` to `k1'` and from `k2` to `k2'`, and the basis on which `SubkindOfObtains(k1', k2'; targetRS)` holds. Identify a target `R_sub : U.SubkindOf` occurrence only when a receiving use needs occurrence identity.
+**KB-06 (No inversions).** A bridge assertion MUST NOT state preservation when the mapped target order is inverted. If `SubkindOfObtains(k2', k1'; targetRS)` holds for distinct mapped kinds and the required forward fact `SubkindOfObtains(k1', k2'; targetRS)` is established not to hold, state non-preservation and the loss. If the required target order cannot be settled, state `unknown`; do not turn non-settlement into either preservation or inversion.
 **KB-07 (Collapse semantics).** A bridge assertion may classify selected source subkind distinctions as collapsed when several source kinds correspond to one target kind. The assertion SHALL designate the affected obtaining `U.SubkindOf` relations and state the lost properties; the direct bridge relation does not alter either local order.
 
 #### C.3.3:6.4 - Congruence & Assurance
 
 **KB-08 (Anchor reuse and AT neutrality).** `CL^k` reuses the ordinal anchor semantics of CL but assesses the declared bridge use over kind intent and order. The bridge-assertion episteme labels it kind-congruence. KindAT remains editorial under C.3.5 and independent of `CL^k`.
 **KB-09 (Effect on R only).** After receiving admissibility has been checked and an admissible candidate has received a fresh target judgment, a claim that relies on both that result and an obtaining KindBridge may apply only the bridge assertion's justified monotone `Ψ(CL^k)` consequence to R, alongside any independently established scope-relation consequence. A `not-applicable` candidate forms no judgment; `unknown` stays `unknown`; F and G do not change.
-**KB-10 (Chaining).** A minimum over comparable link assessments reports the lowest link rank on their common scale and calibration question. It does not by itself assess the composed correspondence. For a receiving use that depends on preservation through the chain, recover the exact mappings and intermediate interpretations, establish their joint definedness, and check that the required source distinctions survive every link and the composition. Keep each obtaining KindBridge and its assertion distinct. Return the preserved structure, actual losses and unresolved requirements; use another correspondence, narrower application or additional basis when an essential distinction is unavailable.
+**KB-10 (Chaining).** A minimum over comparable link assessments reports the lowest link rank on their common scale and calibration question. It does not by itself assess the composed correspondence. For a receiving use that depends on preservation through the chain, recover the mappings and intermediate interpretations, establish their joint definedness, and check that the required source distinctions survive every link and the composition. Keep each obtaining KindBridge and its assertion distinct. Return the preserved structure, losses and unresolved requirements; use another correspondence, narrower application or additional basis when an essential distinction is unavailable.
 
-Two locally useful mappings can lose different distinctions. For a finite order test on `0 < 1 < 2`, let both monotone maps have values `f(0)=0`, `f(1)=0`, `f(2)=1` and `g(0)=0`, `g(1)=0`, `g(2)=1`. Each preserves a nontrivial distinction in its own domain, but their composition maps every source value to `0`. The lowest link rank cannot establish preservation of the source distinction the final use needs. Conversely, an established composition that preserves the required common structure remains usable. A local law may derive a composition characteristic from a minimum when its domain and preservation argument justify that law; there is no universal chain-minimum rule. Any numerical consequence for R still requires the receiving model under C.2.2 and B.3.
+Two locally useful mappings can lose different distinctions. For a finite order test on `0 < 1 < 2`, let both monotone maps have values `f(0)=0`, `f(1)=0`, `f(2)=1` and `g(0)=0`, `g(1)=0`, `g(2)=1`. Each preserves a nontrivial distinction in its own domain, but their composition maps every source value to `0`. The lowest link rank cannot establish preservation of the source distinction the final use needs.
+
+Conversely, an established composition that preserves the required common structure remains usable. A local law may derive a composition characteristic from a minimum when its domain and preservation argument justify that law; there is no universal chain-minimum rule. Any numerical consequence for R still requires the receiving model under C.2.2 and B.3.
 
 #### C.3.3:6.5 - Loss Notes & Definedness
 
@@ -114,11 +118,11 @@ Open only the channels the receiving claim consumes. Keep their definedness, los
 
 #### C.3.3:7.2 - With Receiving Classification
 
-After same-kind reuse or an obtaining bridge, use the receiving `KindSignature` edition. Check candidate and slice admissibility. If admissible, evaluate the exact receiving judgment. If a mapping motivates another signature, author that declaration episteme separately. A source judgment can support a claim but never supplies receiving truth.
+After same-kind reuse or an obtaining bridge, use the receiving `KindSignature` edition. Check candidate and slice admissibility. If admissible, evaluate the receiving judgment. If a mapping motivates another signature, author that declaration episteme separately. A source judgment can support a claim but never supplies receiving truth.
 
 #### C.3.3:7.3 - With Kind-use Adaptations
 
-For same-kind reuse, select the receiving C.3.4 declaration without a bridge; evaluate the receiving candidate afresh when that use is candidate-bearing. For distinct-kind use, recover the obtaining `KindBridge`, bridge assertion, receiving adaptation declaration, and any exact adaptation-correspondence declaration needed for differing constraints or bindings. Source adaptation results are not receiving truth.
+For same-kind reuse, select the receiving C.3.4 declaration without a bridge; evaluate the receiving candidate afresh when that use is candidate-bearing. For distinct-kind use, recover the obtaining `KindBridge`, bridge assertion, receiving adaptation declaration, and any adaptation-correspondence declaration needed for differing constraints or bindings. Source adaptation results are not receiving truth.
 
 #### C.3.3:7.4 - With Guards
 
@@ -129,7 +133,7 @@ A typed receiving guard first determines whether the same kind continues or a di
 #### C.3.3:8.1 - Authoring a KindBridge assertion
 
 * **Compare identity before authoring a bridge.** For a changed locality, source, team, spelling, or scheme, first repeat the kind-definition comparison under C.3.1. Stop without a bridge when the same kind continues.
-* **Start narrow and honest.** For two distinct kinds, declare only the directional correspondence and subkind facts the receiving use actually relies on; mark any required but unsettled order result unknown.
+* **Declare the needed correspondence and order facts.** For two distinct kinds, declare only the directional correspondence and subkind facts the receiving use relies on; mark any required but unsettled order result unknown.
 * **Prefer an existing suitable target kind.** If the target already has a suitable kind and declaration edition, relate that kind directly. If a new target declaration is required, author it separately before asserting bridge obtaining; list what the mapping predicate preserves, relaxes, or drops.
 * **Write loss notes in plain language.** Example: “EV vs ICE subkinds collapsed; battery‑health invariants dropped.”
 * **Fix the definedness area.** Bind to target Standards/versions and any environment selectors essential to classification.
@@ -138,7 +142,7 @@ A typed receiving guard first determines whether the same kind continues or a di
 #### C.3.3:8.2 - Review prompts
 
 1. **Identity checked first?** Same kind reused without a bridge, or two distinct kinds and the obtaining correspondence shown? Add Scope or F.9 relations only when the receiving use consumes them.
-2. **Order claims honest?** Any `⊑` inversions? Collapses disclosed?
+2. **Check the order claims.** Any `⊑` inversions? Collapses disclosed?
 3. **When `CL^k` is used, is it plausible?** Based on preserved properties, not name similarity?
 4. **Loss consequences clear?** Do they change the justified inference, require more basis or leave the intended use adequate?
 5. **Definedness area clear?** Outside it, does the guard decline this bridge use while preserving the independent classification result?
@@ -154,7 +158,11 @@ A typed receiving guard first determines whether the same kind continues or a di
 
 #### C.3.3:9.1 - Vehicle → TransportUnit (manufacturing)
 
-Source kinds `Vehicle` and `PassengerCar`, target kinds `TransportUnit` and `PassengerTransportUnit`, and their exact declaration editions are independently identified. One KindBridge relation obtains from `Vehicle` to `TransportUnit` and another from `PassengerCar` to `PassengerTransportUnit` under the pinned scheme editions. The bridge assertion states that source fact `SubkindOfObtains(PassengerCar, Vehicle; sourceRS)` is preserved by target fact `SubkindOfObtains(PassengerTransportUnit, TransportUnit; targetRS)`, while the EV distinction is collapsed; it records `CL^k=2`, the lost battery-health invariants, and definedness limited to `registryAPI v1.4` in the selected time window. A candidate is first checked for admissibility and, if admissible, then classified by the exact receiving declaration; source classification is not copied. If the receiving claim also relies on an independently established scope translation, that relation's consequence remains separate from the kind-bridge consequence; the kind-bridge consequence leaves F and G unchanged.
+Source kinds `Vehicle` and `PassengerCar`, target kinds `TransportUnit` and `PassengerTransportUnit`, and their declaration editions are independently identified. One KindBridge relation obtains from `Vehicle` to `TransportUnit` and another from `PassengerCar` to `PassengerTransportUnit` under the pinned scheme editions.
+
+The bridge assertion states that source fact `SubkindOfObtains(PassengerCar, Vehicle; sourceRS)` is preserved by target fact `SubkindOfObtains(PassengerTransportUnit, TransportUnit; targetRS)`, while the EV distinction is collapsed; it records `CL^k=2`, the lost battery-health invariants, and definedness limited to `registryAPI v1.4` in the selected time window.
+
+A candidate is first checked for admissibility and, if admissible, then classified by the receiving declaration; source classification is not copied. If the receiving claim also relies on an independently established scope translation, that relation's consequence remains separate from the kind-bridge consequence; the kind-bridge consequence leaves F and G unchanged.
 
 #### C.3.3:9.2 - Same AuthenticatedRequest kind across services — no bridge
 
@@ -168,7 +176,7 @@ The obtaining bridge relates source kind `AdultPatient` to independently identif
 
 | Anti‑pattern                                 | Why it’s wrong                         | Remedy                                                                              |
 | -------------------------------------------- | -------------------------------------- | ----------------------------------------------------------------------------------- |
-| One interoperability score, or mandatory scope-plus-kind bridges | Blurs independent channels and invents unused relations | Open only the exact Scope, kind, and sense relations consumed by the receiving use; keep their losses and R consequences separate |
+| One interoperability score, or mandatory scope-plus-kind bridges | Blurs independent channels and invents unused relations | Open only the Scope, kind, and sense relations consumed by the receiving use; keep their losses and R consequences separate |
 | Claiming preserved `⊑` while inverting order | Makes typed reasoning unsound          | Mark as **not preserved**; add **loss note**; consider adapter or subkind redesign  |
 | Hiding collapses | Overstates coverage | State the collapsed subkinds and their consequence for the receiving use; apply only a justified R consequence. |
 | Implicit latest mapping | Non-deterministic and non-auditable | Pin both scheme editions and the mapping-rule edition in the bridge assertion; outside bridge definedness decline that bridge use without changing an independently obtained receiving result. |
@@ -179,11 +187,11 @@ The obtaining bridge relates source kind `AdultPatient` to independently identif
 
 | ID | Requirement |
 | --- | --- |
-| **KB-01** | A locality or scheme change first triggers kind-definition comparison. A bridge has exact ordered, independently identified distinct kind participants and an obtaining directional correspondence predicate. |
-| **KB-02** | A KindBridge maps neither Scope nor sense; A.2.6 and F.9 are added only when their own exact use is current. |
+| **KB-01** | A locality or scheme change first triggers kind-definition comparison. A bridge has ordered, independently identified distinct kind participants and an obtaining directional correspondence predicate. |
+| **KB-02** | A KindBridge maps neither Scope nor sense; add A.2.6 when the receiving use needs a scope relation, and F.9 when it needs a sense relation. |
 | **KB-03** | Participants, distinctness, direction, predicate, applicability, definedness, and participant-determined identity are recoverable. Scheme/signature/assertion/card/publication editions qualify interpretation or reliance but do not reidentify the occurrence. |
 | **KB-04** | Receiving classification checks admissibility before a fresh three-valued judgment. Source truth is never copied; bridge refusal does not rewrite the receiving result. |
-| **KB-05** | An order-preservation assertion names exact source and target subkind facts and the two bridge relations used. |
+| **KB-05** | An order-preservation assertion names source and target subkind facts and the two bridge relations used. |
 | **KB-06** | Inversion is non-preservation with loss; unsettled order remains unknown. |
 | **KB-07** | Collapse designates affected source order facts and lost distinctions without rewriting either kind order. |
 | **KB-08** | `CL^k` is an assessment in the bridge assertion and does not alter kind identity, formality, scope, or abstraction facet. |

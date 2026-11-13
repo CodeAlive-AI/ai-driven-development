@@ -4,7 +4,7 @@
 > **Status:** Stable.
 > **Normativity:** Normative [A] (Core).
 
-**Use this when.** Several distinct mechanism declarations must be used together under shared conditions. Select their exact contracts and cite the required specifications. State a permitted operation order when joint use needs a protocol.
+**Use this when.** Several distinct mechanism declarations must be used together under shared conditions. Select their contracts and cite the required specifications. State a permitted operation order when joint use needs a protocol.
 
 **First useful result.** The distinct member declarations, their joint conditions and required specification references are recoverable. Each declared protocol step also resolves to one member declaration edition and one operation in that declaration. Two implementations of the same declaration do not become two members.
 
@@ -16,7 +16,7 @@ A `MechSuiteDescription` describes a finite set of distinct mechanism declaratio
 
 **Builds on.** A.6.1 (`U.Mechanism` canonical form), A.6.5 (SlotSpecs where a RelationSignature is current), E.10 (lexical + ontological rules; strict distinction; minimal specificity; kind suffixes), E.18 (transformation-flow structure and crossing visibility), E.18.1 (P2W carry-through), A.21 (gate-level decisions).
 
-**Used by.** Mechanism stacks governed by **shared admissibility, transport and audit obligations** and selected operation declarations, including shared suites reused by Part G patterns such as G.5.
+**Used by.** Mechanism stacks governed by **shared admissibility, transport and audit obligations** and operation declarations, including shared suites reused by Part G patterns such as G.5.
 
 **Declared vocabulary and references.**
 
@@ -50,7 +50,7 @@ The suite user needs one description that can:
 2. declare **shared obligations** that must hold across the set (e.g., crossing visibility, admissibility-citation discipline, guard decision format, penalty routing),
 3. provide **shared spec pins** (e.g., “this suite is governed by CN-Spec and CG-Spec”), without duplicating those spec contents,
 4. constrain **allowed protocols** of use (allowed pipelines / permitted ordering), without turning the suite into a mechanism, and
-5. preserve strict distinction among:
+5. preserve the distinction among:
 
    * a description of several distinct mechanism contracts (`MechSuiteDescription`),
    * a description of realizations of one contract (`MechFamilyDescription`),
@@ -64,7 +64,7 @@ The suite user needs one description that can:
 
 2. **Minimal specificity + kind suffix discipline (E.10).**
    The token name should encode only what is essential: it is a description, it is about mechanisms, it is a suite.
-   It must not capture a particular domain (e.g., CHR) in the Kernel name.
+   It must not capture a domain (e.g., CHR) in the Kernel name.
 
 3. **Governing spec ref centrality (CN‑Spec and CG‑Spec).**
    Suites must cite governing spec refs as pins, not duplicate their internals, otherwise multiple competing admissibility centers arise.
@@ -122,7 +122,7 @@ SuiteObligations := { SuiteObligation[*] } // clause set; duplicates-free.
 
 MechSuiteDescription := ⟨
   mech_suite_id: MechSuiteId ,
-  mechanisms: MechanismDeclarationRef[+] ,     // references to exact member declarations
+  mechanisms: MechanismDeclarationRef[+] ,     // references to member declarations
   suite_obligations: SuiteObligations ,
   suite_spec_pins: SuiteSpecPins ,
   suite_protocols?: SuiteProtocol[*] ,
@@ -143,7 +143,7 @@ MechSuiteDescription := ⟨
 * **WF‑MS‑3 (Suite ≠ Pack).** `MechSuiteDescription` does not carry shipping/publication payloads; use the applicable shipping or publication pattern for those results.
 * **WF‑MS‑4 (Suite ≠ Mechanism).** `MechSuiteDescription` contains no `OperationAlgebra`/`LawSet`/execution semantics and is not admissible where a `U.Mechanism.*` node is required.
 
-* **Membership is by exact declaration (order-free).**
+* **Membership is by declaration (order-free).**
   `mechanisms` MUST resolve to a duplicates-free set of member declaration epistemes. Membership order has no semantics; intended ordering belongs in `suite_protocols`. Shared conditions and selected operations determine which joint uses the description permits.
 
 **Declaration reference and edition selection.** `MechanismDeclarationRef` is a reference to an independently identified A.6.1 `U.Mechanism` episteme, not a new kind. Resolve it under the effective reference scheme to its content and EntityOfConcern. The published edition used for that resolution must be explicit or uniquely determined by the cited suite baseline. When several editions qualify, state a selection condition that yields one before using a protocol step; otherwise return the unresolved alternatives. There is no implicit latest.
@@ -152,7 +152,7 @@ Changing declaration content, EntityOfConcern or effective reference scheme foll
 
 * **No substitution by `MechFamilyDescription`.**
   A suite MUST NOT be encoded as a `MechFamilyDescription`.
-  If desired, a suite MAY additionally **cite** `MechFamilyDescription` / `MechInstanceDescription` for particular members (e.g., “preferred realization for this context”), but such citations do not redefine membership.
+  If desired, a suite MAY additionally **cite** `MechFamilyDescription` / `MechInstanceDescription` for members (e.g., “preferred realization for this context”), but such citations do not redefine membership.
 
 * **No “Pack” meaning.**
   A suite MUST NOT be named or treated as a publication pack. `Pack` remains reserved for publication/shipping bundling (e.g., G.10).
@@ -208,7 +208,7 @@ A MechSuiteDescription may state additional shared obligations within the member
     Any planned filling used as a baseline for suite use is content of an A.15.2 `U.WorkPlan`; A.15.3 applies only to independently declared members. These are intended values under the plan's conditions, preserved separately from later actual-use facts.
 
 11. **`actual_launch_facts_and_witness`.**
-   For an actual launch claim under E.18:5.6, establish one independently admitted A.15.1 Work occurrence and the actual launch values through independently obtaining direct relations or exact A.6.1 application bindings. A separate `FinalizeLaunchValues` episteme may then designate that occurrence and those facts. A plan or suite requirement supplies none of those actual facts by itself.
+   For an actual launch claim under E.18:5.6, establish one independently admitted A.15.1 Work occurrence and the actual launch values through independently obtaining direct relations or A.6.1 application bindings. A separate `FinalizeLaunchValues` episteme may then designate that occurrence and those facts. A plan or suite requirement supplies none of those actual facts by itself.
 
 #### A.6.7:4.3 - SuiteSpecPins
 
@@ -227,14 +227,14 @@ SuiteSpecPins := ⟨
 
 * If the suite is admissibility-gated for characterization, `CNSpecRef` and `CGSpecRef` MUST be required (as references/pins).
 * Spec pins are citations and anchors. They do not replace the underlying `…Spec` objects.
-* A suite may require an edition/reference baseline in ordinary A.15.2 WorkPlan content. Address it through the exact plan and its local content locator; it supplies no launch value or gate decision.
+* A suite may require an edition/reference baseline in ordinary A.15.2 WorkPlan content. Address it through the plan and its local content locator; it supplies no launch value or gate decision.
 * Use A.15.3 typed planned filling only when an existing declaration member independently supplies the position meaning, designation, cardinality and actual-use predicate. A suite Description field is not a SlotSpec or operation argument merely because a plan names it. Missing planned information can remain unknown in the plan; a missing governor requires recovery or definition of that member before typed filling. Actual application bindings retain their A.6.1 predicates; Work admission is additionally needed when the claim consumes a dated Work occurrence. An actual launch claim and any separate `FinalizeLaunchValues` witness follow E.18:5.6.
 
 #### A.6.7:4.4 - SuiteProtocols
 
 A suite MAY describe allowed protocols (pipelines) as descriptive constraints on how suite members are intended to be composed. A `SuiteProtocol` describes the member-operation sequence. Its description:
 
-* MUST name the member mechanisms it uses (explicitly; no “implicit use”),
+* MUST name the member mechanisms it uses,
 * MAY mark steps as optional,
 * MUST NOT introduce hidden crossings or hidden admissibility steps,
 * MUST identify any “publish/telemetry” as an external step of the surrounding protocol, realized through existing publication surfaces (e.g., Part G shipping), rather than as a hidden tail inside a mechanism. This external step is not a `ProtocolStep` in the suite-member sequence.
@@ -249,7 +249,7 @@ SuiteProtocol := ⟨
 ⟩
 
 ProtocolStep := ⟨
-  mechanism: MechanismDeclarationRef, // resolves to the exact selected edition
+  mechanism: MechanismDeclarationRef, // resolves to the selected edition
   operation: declaration-local operationDesignator,
   optionality: {required|optional},
   requires_pins?: PinRef[*]
@@ -258,7 +258,7 @@ ProtocolStep := ⟨
 
 #### A.6.7:4.5 - SuiteAuditObligations
 
-A suite MAY require that downstream use provide certain audit anchors. These are **requirements**, not run-time values. A suite audit obligation MAY include:
+A suite MAY require that downstream use provide audit anchors. These are **requirements**, not run-time values. A suite audit obligation MAY include:
 
 * required `UTS` + `Path` pins,
 * required crossing-surface visibility pins for any crossing relevant to suite use,
@@ -302,7 +302,7 @@ The protocol invariant requires both members to use the same admitted profiles, 
 
 The comparator guard uses A as LeftProfileSlot and B as RightProfileSlot, with OfferCN@1, OfferCG@1 and OfferPareto@1, and returns `pass`: both profiles are complete, admitted and scale-compatible. Application `c1` then returns `ComparisonResultSlot = {A ∥ B}`. Its returned binding, not an equal saved token, supplies the selection basis.
 
-The selector guard binds CandidateSetSlot={A,B}, comparisonBasis={c1}, requiredComparisons={(A,B,OfferPareto@1)}, tokenProvenance={A ∥ B ↦ c1's returned binding}, and ComparisonResultSlot={A ∥ B}. CriteriaSlot contains the single clause “retain all nondominated candidates”; selectorPolicy is OfferSelection@1; TaskSignatureSlot is absent because no default is obtained from it. CN, CG and the common use arguments are those above. Coverage is complete and the guard returns `pass`. Select consumes that exact eligibility result and returns `SelectionSlot = {A,B}`. Incomparability is retained; neither offer is silently chosen as the winner.
+The selector guard binds CandidateSetSlot={A,B}, `comparisonBasis={c1}`, requiredComparisons={(A,B,OfferPareto@1)}, tokenProvenance={A ∥ B ↦ c1's returned binding}, and ComparisonResultSlot={A ∥ B}. CriteriaSlot contains the single clause “retain all nondominated candidates”; selectorPolicy is OfferSelection@1; TaskSignatureSlot is absent because no default is obtained from it. CN, CG and the common use arguments are those above. Coverage is complete and the guard returns `pass`. Select consumes that eligibility result and returns `SelectionSlot = {A,B}`. Incomparability is retained; neither offer is silently chosen as the winner.
 
 **Changed condition and stop.** If B's quality is unknown, OfferCG@1's evidence condition fails: CompareEligibility returns `abstain`, no Compare result is fabricated, and the selector has no complete comparison basis. Its guard returns `abstain`, with no Select application or selected-set result. Changing only the selected comparator declaration to an unresolved edition also stops at protocol resolution before calculation. A suite-shaped record cannot cure either missing basis.
 
@@ -310,7 +310,7 @@ The description answers which contracts can be jointly used and under what condi
 
 **Declaration-change case.** The CHR `normalize` stage resolves to `apply` in a selected UNM declaration edition. Let D1 admit `pass` and policy-supported `degrade`, as A.19.UNM §4.1 does. Suppose a separately proposed D2 changes the operation guard to `pass` only. For the same input whose eligibility is `degrade`, D1 permits the qualified output and D2 does not. Merely pinning both sources or writing `UNM + normalize` cannot decide which contract governs. A step selecting D1 remains on D1; substituting D2 changes the member contract and requires the new guard to pass. These are illustrative edition names, not claims that both editions are published.
 
-Two different realizers of D1 still use one member. UNM and the independently identified UINDM declaration are different members. A differently formatted publication of D1 can preserve the declaration identity. A new declaration about an independently established same family is still a new contract when its content changes; any family-continuity claim remains separate. Thus the protocol can resolve exactly even where family continuity is irrelevant or unresolved.
+Two different realizers of D1 still use one member. UNM and the independently identified UINDM declaration are different members. A differently formatted publication of D1 can preserve the declaration identity. A new declaration about an independently established same family is still a new contract when its content changes; any family-continuity claim remains separate. Thus the protocol can resolve even where family continuity is irrelevant or unresolved.
 
 **Example 2 (non-conformant).** Misusing a family as a suite:
 
@@ -341,7 +341,7 @@ A suite is an archetypal mechanism-suite “passport”:
 Common biases this pattern guards against:
 
 * **Overloading “family”.** Treating “many different mechanisms” as “many realizations of one mechanism” destroys level hygiene and encourages semantic drift across members.
-* **Publication conflation.** Using “pack” semantics to smuggle publication/shipping obligations into the meaning of a mechanism bundle.
+* **Publication conflation.** Using “pack” semantics to include publication/shipping obligations in the meaning of a mechanism bundle.
 * **Gate conflation.** Treating suite-level obligations as gate decisions (“block”) instead of keeping `block` at the gate layer.
 * **Convenience totalization.** Collapsing partial orders into scalars “for ease of selection”, which undermines set-return semantics and admissibility gating.
 
@@ -367,11 +367,11 @@ A `MechSuiteDescription` is conformant iff all applicable items hold:
 
 **CC‑A.6.7‑8 (No thresholds in core).** The suite MUST NOT publish acceptance thresholds or “passing scores”. Thresholds must remain in acceptance clauses / task signatures / gate profiles.
 
-**CC‑A.6.7‑9 (Crossing visibility anchors).** If suite use consumes an actual semantic crossing or an independently governed E.18 crossing/A.21 gate, require only that claim’s applicable visibility and audit anchors, including Bridge, CL, policy, UTS or Path pins when its direct rule requires them. A changed edition alone creates none of those objects; keep the exact changed edition pin without manufacturing a crossing.
+**CC‑A.6.7‑9 (Crossing visibility anchors).** If suite use consumes an actual semantic crossing or an independently governed E.18 crossing/A.21 gate, require only that claim’s applicable visibility and audit anchors, including Bridge, CL, policy, UTS or Path pins when its direct rule requires them. A changed edition alone creates none of those objects; keep the changed edition pin without manufacturing a crossing.
 
 **CC‑A.6.7‑10 (Suite id present).** The suite MUST declare `mech_suite_id: MechSuiteId` so that downstream planning/audit can cite it stably.
 
-**CC‑A.6.7‑11 (Independent correspondence conditions).** A claimed kind correspondence MUST satisfy C.3.3 and retain the calibration and use conditions actually required there. When the use also relies on an F.9 semantic correspondence, establish that Bridge independently and retain both channels' applicable policies and penalties. A new EntityOfConcern of the same kind or a plane-only change creates neither correspondence by itself.
+**CC‑A.6.7‑11 (Independent correspondence conditions).** A claimed kind correspondence MUST satisfy C.3.3 and retain the calibration and use conditions required there. When the use also relies on an F.9 semantic correspondence, establish that Bridge independently and retain both channels' applicable policies and penalties. A new EntityOfConcern of the same kind or a plane-only change creates neither correspondence by itself.
 
 **CC‑A.6.7‑12 (Implementation export hygiene when cited).** If the suite cites realizations/implementations, the citations MUST preserve export/import discipline (LOG/CHR: no Γ export; CAL: exactly one Γ; imports acyclic).
 
@@ -431,11 +431,11 @@ A suite descriptor keeps distinct contracts and their joint conditions explicit.
 
 **Question and selected answer.** How can a practitioner reuse several operation contracts under one set of conditions without selecting an implementation prematurely? For this question, **adapt** the explicit process-reference, input/output and requirement separation in [CWL Workflow v1.2.1, §3.3 and §4.3](https://www.commonwl.org/v1.2/Workflow.html#WorkflowStep). Its [abstract Operation](https://www.commonwl.org/v1.2/Workflow.html#Operation) describes inputs and outputs before binding a concrete process. This supplies a declaration-first composition comparison; FPF admissibility and operation identity retain their own rules.
 
-**Serious alternative.** A pinned executable pipeline is preferable when the task is already to fit and run compatible estimators. [scikit-learn 1.9.1 Pipeline, `steps`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) exposes named estimator steps; each has fit, and intermediate steps have transform. It is a substantive composition alternative, not evidence that every characterization contract should have that interface.
+**Serious alternative.** A pinned executable pipeline is preferable when the task is already to fit and run compatible estimators. [scikit-learn 1.9.1 Pipeline, `steps`](https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html) exposes named estimator steps; each has fit, and intermediate steps have transform. It is a composition alternative.
 
 For OfferChoice, compare both approaches with the same two contracts, four operation uses and four specification references. **Adopt** explicit member/operation resolution and one common specification baseline; **reject** the shortcut of identifying these contracts only by stage names or selected realizers. An executable pipeline could carry the same facts through adapters and metadata, but those additions still need their declarations and checks. The suite keeps them inspectable before an implementation exists. The deliberate cost is another reference layer; it offers no execution or performance advantage. Once executable estimators and their composition fully answer the question, use that pipeline and do not add a suite merely for documentation.
 
-This choice is expressed in §4.1's exact declaration/edition resolution, §4.4's separate protocol and the filled §4.6 case: a returned comparison binding supplies selection, and absent evidence stops the chain. The architectural comparison is a local inference from the stated use and these primary specifications, not a measured productivity result or a claim that either source defines FPF. Reopen it if a receiving use needs only one already complete executable pipeline, if an additional reference layer hides a required condition, or if a rival represents the same distinct contracts and joint conditions with less total reader work.
+This choice is expressed in §4.1's declaration/edition resolution, §4.4's separate protocol and the filled §4.6 case: a returned comparison binding supplies selection, and absent evidence stops the chain. The architectural comparison is a local inference from the stated use and these primary specifications, not a measured productivity result. Reopen it if a receiving use needs only one already complete executable pipeline, if an additional reference layer hides a required condition, or if a rival represents the same distinct contracts and joint conditions with less total reader work.
 
 ### A.6.7:12 - Relations
 

@@ -234,7 +234,7 @@ The same walkthrough can be recalled through questions or through operations:
 | The entries become a checked report. | What prevents the required check under the permitted help, tools and time? | Perform the reporting method, retaining supported human contributions and making unresolved items explicit. |
 | The receiving shift obtains a useful contribution. | Does the report supply what this shift needs to allocate work? | The supervisor judges fitness, uses the report and observes the receiving result. |
 
-A mantra is a [working reminder (FPF E.10.MOVE:4)](../../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/29-e-10-move---move-readiness-and-trajectory-wording-precision.md#e10move4---solution) that can link the applicable patterns and their contributions. Its question form and its operation form can recall the same connections. Use it to find the unresolved question and resume the explanation; its order does not prescribe every participant's work. This ordinary reminder does not require a formal CGUS model.
+A mantra is a [working reminder (FPF E.10.MOVE:4)](../../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/29-e-10-move---clarify-wording-about-moves-readiness-and-trajec.md#e10move4---solution) that can link the applicable patterns and their contributions. Its question form and its operation form can recall the same connections. Use it to find the unresolved question and resume the explanation; its order does not prescribe every participant's work. This ordinary reminder does not require a formal CGUS model.
 
 Retain the continuations omitted by the selected walkthrough:
 

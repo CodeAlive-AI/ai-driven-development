@@ -39,7 +39,7 @@ Without one coordination rule, authors force cues into anomaly or requirement la
 | **Early capture vs endpoint discipline** | Preserve low-articulation content without claiming that an endpoint test has passed. |
 | **Continuity vs identity change** | Keep a form-only publication of one episteme distinct from the first typed preservation and from a content-changing successor episteme. |
 | **Advance vs retreat** | Support formalize and operationalize together with reopen, sketch-backoff, respecify, and retire. |
-| **Plain use vs assurance detail** | Keep the shortest practitioner path short while exposing exact Work, publication, or authority relations when they are genuinely current. |
+| **Plain use vs assurance detail** | Keep the practitioner path short while exposing Work, publication, or authority relations when they are current. |
 
 ### A.16:4 - Solution
 
@@ -49,7 +49,7 @@ Here *move* means a typed transition in the publication of selected episteme con
 
 #### A.16:4.1 - Canonical move table
 
-This is the one canonical move table. Later examples apply it; they do not define another move family.
+This is the canonical move table. Later examples apply it; they do not define another move family.
 
 | Move | Use it when | Publication result | Keep explicit |
 | --- | --- | --- | --- |
@@ -58,11 +58,11 @@ This is the one canonical move table. Later examples apply it; they do not defin
 | `route` | a stabilized cue has several plausible downstream directions or one route must be selected | `RoutedCueSet` or another route-bearing publication makes plurality and any selection explicit | live routes, selected route if any, selection reason, and reopen condition |
 | `projection` | one aspect of an explicit route must be foregrounded without claiming endpoint admission | a typed route-bounded partial publication on an existing MVPK face | what is foregrounded, what is omitted or lost, and how reopen remains possible |
 | `formalize` | articulation or closure can increase under a named later rule | a more explicit symbolic, slot, or normal-form publication | the rule used, changed facets, and any new evidence-generating Work boundary |
-| `operationalize` | selected content is ready to face a method, Work, gate, or other operational question | the episteme or project record is docked to the pattern that defines or tests that use | the exact downstream contribution, its guard, and any world-facing Work boundary |
-| `reopen` | the current route, frame, or closure no longer holds cleanly | a publication in the same broad family expresses the reduced closure claim | reopened rivals, retained witnesses, and which prior endpoint-use or current-use claim no longer holds |
+| `operationalize` | selected content is ready to face a method, Work, gate, or other operational question | the episteme or project record is docked to the pattern that defines or tests that use | the downstream contribution, its guard, and any world-facing Work boundary |
+| `reopen` | the current route, frame, or closure no longer holds | a publication in the same broad family expresses the reduced closure claim | reopened rivals, retained witnesses, and which prior endpoint-use or current-use claim no longer holds |
 | `sketchBackoff` | an endpoint-bound or operational form over-commits the available grounds | an exploratory cue-bearing form becomes admissible again | retained anchors and witnesses, withdrawn closure, and the next safe question |
 | `respecify` | the broad family remains plausible but its framing scaffold, facet reading, or route specification is wrong | a revised framing or route specification replaces the earlier one | replaced commitments, invariants that stay fixed, and any episteme-identity change |
-| `retire` | a cue, route-bearing publication, episteme, or branch is no longer current for the named use because its grounds failed, a successor took over, or a current-use decision ended | retirement or withdrawal is explicit | reason, exact retired object, preserved history, and supported successor information or an unresolved successor question when the receiving use needs it |
+| `retire` | a cue, route-bearing publication, episteme, or branch is no longer current for the named use because its grounds failed, a successor took over, or a current-use decision ended | retirement or withdrawal is explicit | reason, retired object, preserved history, and supported successor information or an unresolved successor question when the receiving use needs it |
 
 The table names moves, not the resulting objects. `PreArticulationCuePack` and `RoutedCueSet` are publication forms defined elsewhere. `U.AbductivePrompt` is the question account defined by `B.5.2.0`; its publication form is selected separately. A claim-bearing episteme remains `U.Episteme`; `E.24.PUB` separately defines a bounded publication occurrence.
 
@@ -82,7 +82,7 @@ Do not use “move between publication forms” as a shortcut across these three
 
 1. **First typed preservation.** A precursor cue, trace, contrast, or witness may have no source episteme or source publication form. Name the precursor and the first typed preservation form. C.2.1 governs the identity of the first claim-bearing episteme when one is admitted.
 2. **Same episteme edition, another form.** When EntityOfConcern, ClaimGraph content, and effective reference scheme remain the same, one episteme edition may be issued in another form or on another carrier. Name the episteme and source and target forms only when they matter. `E.24.PUB` governs each claimed availability occurrence; neither form nor occurrence creates a successor episteme.
-3. **Content-changing successor.** When a C.2.1 discriminator changes, identify a separate target episteme. Name the source and target epistemes, the changed discriminator, what content is preserved, changed, and lost, and the exact lineage relation only when its predicate obtains. A repeated label, form, carrier, or move name proves no continuity. Use `A.16.0` only if the multi-step or branching history is load-bearing.
+3. **Content-changing successor.** When a C.2.1 discriminator changes, identify a separate target episteme. Name the source and target epistemes, the changed discriminator, what content is preserved, changed, and lost, and the lineage relation only when its predicate obtains. A repeated label, form, carrier, or move name proves no continuity. Use `A.16.0` only if the multi-step or branching history is load-bearing.
 
 The same discipline applies to project records through their own identity patterns. `E.24.PUB` says that an already identified episteme was made available for a bounded use; it says neither that content changed nor that an endpoint test passed.
 
@@ -92,11 +92,11 @@ Make the following content recoverable in the publication or, where needed, a sh
 
 | Field | Minimum content |
 | --- | --- |
-| Current item | precursor cue or exact source episteme/project record; source form only when one exists and matters |
+| Current item | precursor cue or source episteme/project record; source form only when one exists and matters |
 | Identity case | first typed preservation, same edition in another form, or content-changing successor |
 | Move and guard | one move from §4.1 and the changed facet or route condition that justifies it |
-| Target | exact target episteme/project record when identified, typed target publication form, and the concrete object or claim that the downstream pattern defines, constrains, or tests; name the exact `ClaimGraph` carrying that rule only when its identity or edition changes the use |
-| Preservation | witnesses or anchors retained; for a successor episteme, content preserved, changed, and lost plus any exact lineage relation |
+| Target | target episteme/project record when identified, typed target publication form, and the concrete object or claim that the downstream pattern defines, constrains, or tests; name the `ClaimGraph` carrying that rule only when its identity or edition changes the use |
+| Preservation | witnesses or anchors retained; for a successor episteme, content preserved, changed, and lost plus any lineage relation |
 | Return | endpoint condition not yet met, omitted or lost content, and reopen or retirement condition |
 
 Add an `EpistemePublicationRelation` occurrence only when bounded availability matters. Add the MVPK face only when rendering matters. Neither replaces the form, episteme, or next pattern.
@@ -105,7 +105,7 @@ Add an `EpistemePublicationRelation` occurrence only when bounded availability m
 
 Some `formalize` and `operationalize` moves only re-express available content. Others require measurement, experiment, installation or use of instrumentation, or execution. Expose the needed action and use the applicable measurement, experiment, gate, or endpoint pattern. If the receiving claim requires a distinct dated `U.Work`, establish its A.13 basis and independent A.15.1 admission; use F.6 afterward only for precise assignment-bound attribution. A.16 records the pending or separately established crossing; it does not establish that the action occurred or produced a result.
 
-Next-use docking and a Work crossing do not by themselves establish a change in authority, responsibility, permission, or commitment. If one of those relations actually changes, record it as a separate claim: the exact relation under its governing pattern; participants in that relation's own roles, including exact giving and receiving admitted systems when its predicate requires them; any exact `U.SystemRoleAssignment` occurrences through which they participate; its object or action, scope, and effective interval; and the assigning, instituting, revoking, or superseding act when its pattern requires one. A.2, A.2.1, and the applicable deontic or authority pattern establish and test that claim.
+Next-use docking and a Work crossing do not by themselves establish a change in authority, responsibility, permission, or commitment. If one of those relations changes, record it as a separate claim: the relation under its governing pattern; participants in that relation's own roles, including giving and receiving admitted systems when its predicate requires them; any `U.SystemRoleAssignment` occurrences through which they participate; its object or action, scope, and effective interval; and the assigning, instituting, revoking, or superseding act when its pattern requires one. A.2, A.2.1, and the applicable deontic or authority pattern establish and test that claim.
 
 Use `A.16.0` for such a handoff only when its legitimacy or interpretation depends on upstream move or lineage history. Otherwise the local account of the needed or performed action and the separately established relation are enough.
 
@@ -116,14 +116,14 @@ Do not compress several claims into `AuthorityState`. A reusable language-state 
 | Claim | What to show |
 | --- | --- |
 | Route plurality or selection | live routes; selected route if any; selection reason; route-bearing publication |
-| Endpoint admission or use disposition | named endpoint test, its result, and the exact stronger use admitted, narrowed, or blocked |
-| Publication availability | exact episteme, form, bounded use, and `EpistemePublicationRelation` occurrence when current |
-| Current use or retirement | exact cue, episteme, publication, or branch and the currentness, withdrawal, supersession, or retirement claim that applies |
+| Endpoint admission or use disposition | named endpoint test, its result, and the stronger use admitted, narrowed, or blocked |
+| Publication availability | episteme, form, bounded use, and `EpistemePublicationRelation` occurrence when current |
+| Current use or retirement | cue, episteme, publication, or branch and the currentness, withdrawal, supersession, or retirement claim that applies |
 | Actual relation change | only an independently established authority, responsibility, permission, or commitment relation with participants, object or action, scope, interval, and any act required by its governing pattern; otherwise omit the optional claim or report the unresolved change; state that a relation is unchanged only when an applicable negative criterion or complete closure basis supports that claim |
 
-Open route plurality is not a lineage fork. A multi-route state keeps several directions live inside one route-bearing publication. A lineage fork has separately identified successor members, their preserved and lost content, and any exact lineage relations that obtain.
+Open route plurality is not a lineage fork. A multi-route state keeps several directions live inside one route-bearing publication. A lineage fork has separately identified successor members, their preserved and lost content, and any lineage relations that obtain.
 
-`EndpointAdmissionProfile` may be reused as a declarative decision profile for next-use docking. Include only inputs required by the proposed use: the relevant `C.2.2a` position, selected `C.2.LS` facet readings, any route condition from `B.4.1`, any prompt-entry conditions from `B.5.2.0`, and the witness or grounding conditions it consumes. Apply it to judge only whether docking to the later question is admissible: relation-like content toward `A.6.P`, an open question and rival set toward `B.5.2.0`, evaluative content toward `C.16.Q`, ambiguous affordance-like wording toward `A.6.A` and then the recovered subject, viability or other quality-family content toward `C.25` when quality-family decomposition is the question, and executable docking toward `A.15`. Apply the selected pattern's own tests. A.6.A may return a sufficient claim, question or exact missing basis; that recovery establishes no common invitation relation. Tone, style or apparent explicitness supplies no subject result by itself. The admission result creates no authority, responsibility, permission, commitment, publication, gate, or Work state.
+`EndpointAdmissionProfile` may be reused as a declarative decision profile for next-use docking. Include only inputs required by the proposed use: the relevant `C.2.2a` position, selected `C.2.LS` facet readings, any route condition from `B.4.1`, any prompt-entry conditions from `B.5.2.0`, and the witness or grounding conditions it consumes. Apply it to judge only whether docking to the later question is admissible: relation-like content toward `A.6.P`, an open question and rival set toward `B.5.2.0`, evaluative content toward `C.16.Q`, ambiguous affordance-like wording toward `A.6.A` and then the recovered subject, viability or other quality-family content toward `C.25` when quality-family decomposition is the question, and executable docking toward `A.15`. Apply the selected pattern's own tests. A.6.A may return a sufficient claim, question or missing basis; that recovery establishes no common invitation relation. Tone, style or apparent explicitness supplies no subject result by itself. The admission result creates no authority, responsibility, permission, commitment, publication, gate, or Work state.
 
 #### A.16:4.7 - One history threshold
 
@@ -148,7 +148,7 @@ An inquiry cue about a model-versus-observation discrepancy may follow `notice -
 
 #### A.16:5.3 - Three identity cases in one line
 
-A raw vibration trace and operator contrast may first be preserved as `PumpVibrationCuePack-1`; no fictional source episteme is required. Publishing the unchanged cue-pack episteme in a review card and a long-form note is a form-only case under E.24.PUB. If later analysis changes its ClaimGraph from “unexpected vibration” to a bounded bearing-fault proposition, C.2.1 identifies a successor episteme; its publication or an accompanying note states the changed claim, retained trace, discarded rival, and any exact `EpistemeEditionRelation` that obtains.
+A raw vibration trace and operator contrast may first be preserved as `PumpVibrationCuePack-1`; no fictional source episteme is required. Publishing the unchanged cue-pack episteme in a review card and a long-form note is a form-only case under E.24.PUB. If later analysis changes its ClaimGraph from “unexpected vibration” to a bounded bearing-fault proposition, C.2.1 identifies a successor episteme; its publication or an accompanying note states the changed claim, retained trace, discarded rival, and any `EpistemeEditionRelation` that obtains.
 
 #### A.16:5.4 - Retired route or branch
 
@@ -156,7 +156,7 @@ A `RoutedCueSet` may keep evaluative and abductive routes live. If review later 
 
 #### A.16:5.5 - Premature endpoint capture
 
-`notice -> gate decision` is not admissible merely because the cue sounds urgent. Recover the contributions required by the applicable endpoint test; stabilize or publish a route when that test or the receiving use needs it. Reopen an over-committing requirement label and publish the earlier safe form instead of defending the label.
+`notice -> gate decision` is not admissible merely because the cue sounds urgent. Recover the contributions required by the applicable endpoint test; stabilize or publish a route when that test or the receiving use needs it. Reopen an over-committing requirement label and publish the earlier safe form.
 
 #### A.16:5.6 - Silent route drift into Work planning
 
@@ -164,7 +164,7 @@ If an evaluative note starts guiding Work planning, make the changed route or op
 
 #### A.16:5.7 - Form, pattern, and face stay distinct
 
-“The move publishes a Tech face” and “the move enters A.6.P” omit the actual form. Name the typed publication form first, the object or claim that the cited pattern defines, constrains, or tests second, and the MVPK face only when rendering or review depends on it.
+“The move publishes a Tech face” and “the move enters A.6.P” omit the form. Name the typed publication form first, the object or claim that the cited pattern defines, constrains, or tests second, and the MVPK face only when rendering or review depends on it.
 
 #### A.16:5.8 - Short compound histories
 
@@ -176,19 +176,19 @@ A.16 biases authors toward typed movement and away from “it naturally matured.
 
 - **Trajectory-wrapper inflation.** Do not wrap every move in A.16.0.
 - **Pattern-as-form or form-face collapse.** A pattern, publication form, episteme, occurrence, carrier, and MVPK face remain different.
-- **Identity laundering.** A new form is not automatically a new episteme; changed C.2.1 content cannot be hidden as mere reformatting.
+- **Identity laundering.** A new form is not automatically a new episteme; changed C.2.1 content cannot be hidden as reformatting.
 - **Irreversible maturity story.** Reopen, sketch-backoff, respecify, and retire are admissible.
 - **Route/fork confusion.** Several routes in one publication are not separate successor epistemes.
 - **Silent branch disappearance.** Retire, merge, or show that a route never became a separate branch.
 - **Status bundle.** Do not call route selection, endpoint admission, publication, current use, and actual authority one state.
 - **Hidden Work.** Formal wording, a gate-facing form, or an operational hook establishes no Work or Work result.
 - **Endpoint substitution.** A.16 docks to the endpoint pattern; it never relaxes or replaces that pattern's conditions.
-- **Old formality-only climb.** Unpack “informal to formal” into the actual move, facet change, route selection, identity case, and use change.
+- **Old formality-only climb.** Unpack “informal to formal” into the move, facet change, route selection, identity case, and use change.
 - **Hidden-lineage laundering.** If an endpoint claim depends on earlier move publications that cannot be recovered anywhere in the publication chain, treat the history as incomplete until those records or an adequate A.16.0 account are supplied.
 
 ### A.16:7 - Conformance checklist
 
-Use this one checklist for authoring and review:
+Use this checklist for authoring and review:
 
 1. `A.16` does not redefine `F`, an endpoint test, Work, publication, or a graph-path calculus.
 2. The publication or accompanying note identifies one move from §4.1 and its facet or route guard; rhetorical relabeling is insufficient.
@@ -196,10 +196,10 @@ Use this one checklist for authoring and review:
 4. The source condition, typed target form, and object or claim that the downstream pattern defines, constrains, or tests are recoverable. The publication occurrence and MVPK face are added only when material and substitute for none of them.
 5. `projection` names a typed route-bounded form and its omissions; `respecify` does not hide an A.6.P, C.16.Q, or A.6.A precision repair.
 6. Route plurality or selection, endpoint disposition, publication availability, and current-use or retirement claims remain separate.
-7. A multi-route publication is not called a lineage fork. A true fork names separate successor identities, losses, and exact lineage relations.
+7. A multi-route publication is not called a lineage fork. A fork names separate successor identities, losses, and lineage relations.
 8. Reopen, backoff, respecify, and retire say which witnesses remain and which closure, route selection, endpoint use, publication, or current-use claim changes.
 9. Any dated Work and Work-result claim is established separately under its own patterns.
-10. Docking or a Work crossing alone establishes no authority, responsibility, permission, or commitment change. A real change names the exact relation and its own participants, object or action, scope, interval, and any instituting or ending act required by its governing pattern. An unchanged-relation claim requires an applicable negative criterion or complete closure basis.
+10. Docking or a Work crossing alone establishes no authority, responsibility, permission, or commitment change. A change names the relation and its own participants, object or action, scope, interval, and any instituting or ending act required by its governing pattern. An unchanged-relation claim requires an applicable negative criterion or complete closure basis.
 11. Use `EndpointAdmissionProfile` only to judge admissible docking; apply all of the endpoint pattern's own conditions.
 12. Sufficient local publication content stands alone. A.16.0 opens only at the §4.7 threshold, and E.18 opens only for an independently selected TransformationFlowStructure.
 13. A summarized chain leaves intermediate move identities, endpoint-rule changes, losses, and material status changes reconstructible.
@@ -221,7 +221,7 @@ Use this one checklist for authoring and review:
 
 **Incident-response contribution.** [NIST SP 800-61r3 (2025), §2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf) connects lessons from incident-response activities to revisions of cybersecurity practices; learning can affect ongoing work rather than wait for recovery to end. A.16 uses that feedback idea for reopening a publication or its use. The source's scope is cybersecurity incident response.
 
-**Historical provenance contribution.** [W3C PROV-DM (2013), §5.2.2](https://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-revision) distinguishes revision as a particular derivation relation between entities. This supplies a historical comparison for stating a lineage predicate rather than inferring it from a repeated label. C.2.1 supplies FPF episteme identity.
+**Historical provenance contribution.** [W3C PROV-DM (2013), §5.2.2](https://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-revision) distinguishes revision as a derivation relation between entities. This supplies a historical comparison for stating a lineage predicate rather than inferring it from a repeated label. C.2.1 supplies FPF episteme identity.
 
 **FPF adaptation.** The ten moves and the threshold for a separate A.16.0 history are FPF's coordination choices. Neither cited source establishes that move set or the threshold. Keep sufficient local content, expose consequential loss and retreat, and use E.18 only for an independently selected TransformationFlowStructure.
 

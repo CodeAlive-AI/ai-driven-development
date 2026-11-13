@@ -14,7 +14,7 @@
 
 Use this pattern when a proposed finite change is being justified by “what it adds,” but its contribution has not been compared with the current configuration under the conditions that matter to the receiving decision. The change may add, replace or remove something; it may also acquire information before a later commitment.
 
-**First useful result.** Return one ordinary `C.2.1` episteme that compares a realizable finite changed configuration with the current configuration under a declared basis. State the result coordinates and resource coordinates, interactions, uncertainty, option effects, unsupported overreads, and the named receiving question that can consume the claim. It can supply local choice under `C.11`, construction of a continuation under `C.43`, or a subject Method that compares proposed changes. The comparison does not choose the option.
+**First useful result.** Return one `C.2.1` episteme that compares a realizable finite changed configuration with the current configuration under a declared basis. State the result coordinates and resource coordinates, interactions, uncertainty, option effects, unsupported overreads, and the named receiving question that can consume the claim. It can supply local choice under `C.11`, construction of a continuation under `C.43`, or a subject Method that compares proposed changes. The comparison does not choose the option.
 
 **Cheap exit.** If an existing domain calculation or `A.19`/`C.11` account already states the same finite baseline and change with the material comparison conditions and reopen condition, use it directly.
 
@@ -57,7 +57,7 @@ Construct the smallest finite counterfactual comparison that can change the answ
 2. **Freeze the current configuration.** Name the actual or currently relied-on configuration `S0`, system boundary, affected Systems, the holder or beneficiary and what it holds or benefits from, relevant environment, and what is held fixed only for this comparison. If the affected-System coordinate is missing and could change the comparison, use `A.1.CSD` first; bring back only consequence claims compatible with this `S0`/`Δ`/`S1`, horizon, evidence window, and receiving decision. A historical, empty, or ideal configuration is not the default baseline.
 3. **Name the finite change.** State the addition, replacement, removal, intervention, or probe `Δ`, the realizable candidate configuration `S1`, admissibility conditions, implementation capability, planned transition work, reversibility, and excluded variants.
 4. **Fix horizon and scenarios.** State the interval, relevant states or scenarios, timing assumptions, and any decision or evidence window. Do not combine results from incompatible horizons without an explicit mapping.
-5. **Declare result coordinates.** Name the result vector whose coordinates can change the decision and the protected coordinates that may not be silently scalarized. Include affected-System consequences and distributional differences when current.
+5. **Declare result coordinates.** Name the result vector whose coordinates can change the decision and the protected coordinates that may not be silently scalarized. Include affected-System consequences and distributional differences when they matter to the comparison.
 6. **Declare resource coordinates.** For the action, transition, information acquisition, and computation, name the attention, capital, time, material, energy, and other resources consumed or expected to be consumed in this field case. State required authority separately as an admissibility condition. Keep costs of evaluating and realizing the change distinct.
 7. **Recover constraints and interactions.** State active and potentially activated constraints, complements, substitutes, thresholds, congestion, downstream effects, common causes, overlaps, and double-counting risks.
 8. **Recover option effects.** State whether the finite change opens, closes, delays, preserves, or makes irreversible later options. Keep information value and option value as decision inputs, not already realized operating results.
@@ -68,7 +68,7 @@ Construct the smallest finite counterfactual comparison that can change the answ
 
 #### C.11.CRC:4.1 - Lightweight comparison form
 
-`ConfigurationRelativeContributionComparison@Context` is a form name for one ordinary comparison episteme. It is not a root U-kind, universal delta value, selector result, or decision.
+`ConfigurationRelativeContributionComparison@Context` is a form name for one comparison episteme. It is not a root U-kind, universal delta value, selector result, or decision.
 
 ```text
 receivingQuestionRef:
@@ -94,7 +94,7 @@ An ordinary comparison sentence or existing calculation can carry this result wh
 
 #### C.11.CRC:4.2 - Mathematical and model-routing distinction
 
-| Expression encountered | Exact question | Required boundary |
+| Expression encountered | Question | Required boundary |
 | --- | --- | --- |
 | Finite difference or counterfactual configuration comparison | What changes between realizable `S0` and `S1` over the declared horizon? | Default here for indivisible, non-smooth, thresholded, path-dependent, or strongly interacting changes. Do not infer additivity. |
 | Derivative or gradient | What is the local rate of change with respect to a coordinate under smoothness and small-change assumptions? | It approximates the finite contribution only when the validity region and remainder are adequate for `Δ`. |
@@ -116,7 +116,11 @@ This is why calculus of variations matters without becoming the default interpre
 
 #### C.11.CRC:5.1 - Flood-pump modernization
 
-The current station configuration `FPS7-C19` supports bounded discharge use. A candidate bearing-temperature sensor is not compared with “no pump” or by its isolated diagnostic accuracy. The finite comparison uses `FPS7-C19` as `S0`; sensor, placement, cabling, controller, maintenance access, calibration, and operating procedure changes as `Δ`; and the installed candidate as `S1`. Result coordinates include discharge continuity, failure detection, maintenance access, recoverability, and evidence continuity. Resource coordinates include outage time and maintenance burden plus the resource costs of installation work, calibration, and observation. The current result is indeterminate because placement and maintenance evidence are missing; another observed-load window can change the decision. The chooser may return `probe again` under `C.11` if that window supplies a feasible, worthwhile probe that could change the choice.
+The current station configuration `FPS7-C19` supports bounded discharge use. A candidate bearing-temperature sensor is not compared with “no pump” or by its isolated diagnostic accuracy. The finite comparison uses `FPS7-C19` as `S0`; sensor, placement, cabling, controller, maintenance access, calibration, and operating procedure changes as `Δ`; and the installed candidate as `S1`.
+
+Result coordinates include discharge continuity, failure detection, maintenance access, recoverability, and evidence continuity. Resource coordinates include outage time and maintenance burden plus the resource costs of installation work, calibration, and observation.
+
+The current result is indeterminate because placement and maintenance evidence are missing; another observed-load window can change the decision. The chooser may return `probe again` under `C.11` if that window supplies a feasible, worthwhile probe that could change the choice.
 
 #### C.11.CRC:5.2 - Capability-development programme
 
@@ -149,7 +153,7 @@ A project is compared with the current portfolio and financing/operating configu
 6. Are constraints, interactions, overlap, thresholds, congestion, and downstream effects considered where material?
 7. Are future option effects distinguished from realized results?
 8. Are evidence, uncertainty, sensitivity/robustness, transfer limits, and unsupported overreads visible?
-9. Is each derivative, sensitivity, shadow-price, functional-variation, variational-inference, or evolutionary-variation result used only for its exact question?
+9. Is each derivative, sensitivity, shadow-price, functional-variation, variational-inference, or evolutionary-variation result used only for its question?
 10. Does the output remain a comparison claim returned to its named use, with `C.11` retaining any `ChoiceResult` sought under that calculus?
 11. Is the smallest reopen condition stated?
 

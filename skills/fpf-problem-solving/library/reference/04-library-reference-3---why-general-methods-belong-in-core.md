@@ -1,6 +1,6 @@
 ## Library.Reference:3 - Why general Methods belong in Core
 
-[FPF Core](../../sections/03-first-principles-framework-readme/_index.md) contains both common conceptual distinctions and developed transdisciplinary Methods. Its Kernel is the subset that defines universal meta-concepts and the rules for their meanings and relations. Core also explains how to investigate a question, construct and combine Methods, compare arrangements, qualify claims, make decisions and continue development. The Kernel is not the whole of Core.
+[FPF Core](../../sections/03-first-principles-framework-readme/_index.md) contains both common conceptual distinctions and developed transdisciplinary Methods. Its Kernel is the subset that defines universal meta-concepts and the rules for their meanings and relations. Core also explains how to investigate a question, construct and combine Methods, compare arrangements, qualify claims, make decisions and continue development.
 
 The placement question turns on what an operation requires. Constructing a Method from interacting contributions, comparing its performance and provision, or deciding which questions a checklist must answer can apply across fields without importing one field's substantive mechanism. These general constructions belong with their shared conditions in Core. Repeated domain copies add a duty to keep the same general construction consistent.
 

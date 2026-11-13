@@ -1,7 +1,7 @@
 ## FPF.Reference:21 - How To Continue After The readme
 
-Start with the `readme` when you are deciding whether FPF can help a working project. Read this architectural reference when you want the ideas that make the first practical entries fit together. Use the Table of Contents when you need to locate a pattern family. Then use the pattern body whose Problem frame and Solution address the working question. Begin with its action- or judgement-guiding content; recover a `MethodDescription`, admitted Method or exact `ClaimGraph` only when the current claim or named reliance needs that distinction.
+Use the Readme to decide whether FPF can help a working project. Read this architectural reference for the ideas that connect the first practical entries. Use the Table of Contents when you need to find a pattern family suited to the working question. Within that family, choose a pattern whose Problem frame and Solution address your question. Start with the action or judgement the pattern guides.
 
-Choose the first useful FPF pattern family from the working question. Linear reading is available when studying the specification is the goal.
+You can also read the specification in order when studying it is the goal.
 
-When a project statement matters, identify what it concerns, what it asserts, the grounds and limits for relying on it, and the guidance needed next. Recover an exact Method, predicate or `ClaimGraph` only when that distinction changes truth, action, stop or a named reliance.
+For a consequential project statement, identify its subject and claim, the grounds and limits of reliance, and the guidance needed next. Identify a `MethodDescription`, admitted Method, predicate or `ClaimGraph` when the distinction changes the truth of the claim, the action, the stopping condition or a named use that relies on it.

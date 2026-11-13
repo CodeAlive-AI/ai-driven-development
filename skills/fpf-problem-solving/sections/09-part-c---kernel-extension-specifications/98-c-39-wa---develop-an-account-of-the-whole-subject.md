@@ -9,7 +9,7 @@
 
 Begin with the question the account must answer and the use it must enable. Recover the subject and required depth from that question and its substantive grounds. Then develop the organization that makes the contributions answer it together.
 
-The result is an account whose relevant parts, relations, grounds and limits can be followed, together with a justified judgement about its adequacy for the original use. A review can instead return an exact missing construction and the work needed to obtain it. Retain an already adequate account. A calculation or a local correction with an established question can finish under its own criterion.
+The result is an account whose relevant parts, relations, grounds and limits can be followed, together with a justified judgement about its adequacy for the original use. A review can instead identify the missing construction and the work needed to obtain it. Retain an already adequate account. A calculation or a local correction with an established question can finish under its own criterion.
 
 ### C.39.WA:2 - Problem
 
@@ -32,9 +32,9 @@ The missing work is constructive as well as evaluative. The author has to obtain
 
 ### C.39.WA:4 - Solution
 
-Keep the original subject available throughout construction, comparison and correction. Develop its organization, distinguish the relations used in consequential inferences, and follow the general grounds into choices about parts. Compare the actual account with the original question. Return a missing contribution to the operation that can supply it.
+Keep the original subject available throughout construction, comparison and correction. Develop its organization, distinguish the relations used in consequential inferences, and follow the general grounds into choices about parts. Compare the account with the original question. Return a missing contribution to the operation that can supply it.
 
-C.39 supplies general construction and explanation; C.41 supplies the design and use of an attention aid. This Method connects those contributions for accounts of a whole subject. The subject practice supplies its own knowledge, construction rules and evidence. C.39.QR supplies the broader return of partial work to an originating question. When that return exposes a missing whole-subject account, carry its question, scope, reader and available contributions into section 4.1 here; return the developed account or precise gap to the originating use. Use this Method directly when building the account is already the assigned work.
+C.39 supplies general construction and explanation; C.41 supplies the design and use of an attention aid. This Method connects those contributions for accounts of a whole subject. The subject practice supplies its own knowledge, construction rules and evidence. C.39.QR supplies the broader return of partial work to an originating question. When that return exposes a missing whole-subject account, carry its question, scope, reader and available contributions into section 4.1 here; return the developed account or state what is still missing for the originating use. Use this Method directly when building the account is already the assigned work.
 
 #### C.39.WA:4.1 - Recover the subject before accepting its decomposition
 
@@ -46,7 +46,7 @@ This expectation is a proposal that substantive inquiry can correct. Keep its ba
 
 The reviewer forms this expectation from the request and necessary subject grounds before relying on the author's readiness judgement. It can be a concise explanation of indispensable constructions and connections; it need not reproduce the author's final text.
 
-**Questions:** What was asked about? Which question about that subject must be answered? What scope and limits were actually assigned? What would let the receiving reader continue?
+**Questions:** What was asked about? Which question about that subject must be answered? What scope and limits were assigned? What would let the receiving reader continue?
 
 #### C.39.WA:4.2 - Construct the organization the account must explain
 
@@ -58,13 +58,13 @@ For a discipline, recover its field question and boundary, the knowledge contrib
 
 For an existing whole, establish its relevant constituents and organizing relations under its subject rule. For a proposed whole, explain how the arrangement could obtain the needed property and which premises remain to be established. A knowledge claim, a physical object and a reusable Method have different conditions of composition and identity.
 
-Develop the relations at the scale where their consequences arise. A field account may need several layers of explanation: a common problem and principles, families of Methods, connections among those families, and particular enactments. Library.Reference:6 distinguishes composition levels, functional layers, abstraction, detail and scale. Select the structure that changes this account's reasoning. A longer list of local activities can leave the organizing relation absent.
+Develop the relations at the scale where their consequences arise. A field account may need several layers of explanation: a common problem and principles, families of Methods, connections among those families, and enactments. Library.Reference:6 distinguishes composition levels, functional layers, abstraction, detail and scale. Select the structure that changes this account's reasoning. A longer list of local activities can leave the organizing relation absent.
 
 A useful general explanation supplies reasons for choices. It lets the reader say why these contributions belong together, what their connection makes possible, and what a changed condition would reopen. Where the available description says only “coordinate,” recover what must be made compatible, who or what supplies it, and how the resulting relation affects the whole.
 
 **Questions:** What makes this the whole under discussion? Which relations explain the relevant property or result? Why this composition or organization? Which external conditions and alternatives matter?
 
-#### C.39.WA:4.3 - Give each consequential transition its actual relation
+#### C.39.WA:4.3 - Identify the relation used in each consequential transition
 
 Identify the subjects on both sides of a transition and the relation that permits the next claim. Use the following distinctions where they change the explanation or its appraisal.
 
@@ -74,12 +74,14 @@ Identify the subjects on both sides of a transition and the relation that permit
 | A narrower kind falls under a broader kind | The directed relation between criteria or the relevant exhaustive finite comparison; C.3.1 governs SubkindOf. |
 | Contributions constitute a whole | The subject-specific composition relation, grounds of unity and conditions of the whole; A.14, B.1.5, C.2.1 and C.20 supply different constructions. |
 | One contribution uses another's result | The supplied result, receiving operation and conditions of use. This dependency has its own meaning alongside any composition. |
-| Work enacts a Method | The reusable Method and the actual performer, occurrence and conditions; A.3.1 and A.15.1 govern these different subjects. |
+| Work enacts a Method | The reusable Method and the performer, occurrence and conditions; A.3.1 and A.15.1 govern these different subjects. |
 | A description or model represents a subject | The original subject, representation objects and relations, claims, correspondence and the returned inference. C.2.1 and, for mathematical model use, C.29/C.29.1 preserve these distinctions. |
-| A particular construction supports a more general operation | The retained premises, variable inputs, operation and grounds for the wider application; C.39.RO develops the generalization. |
+| A construction supports a more general operation | The retained premises, variable inputs, operation and grounds for the wider application; C.39.RO develops the generalization. |
 | An abstraction serves a selected question | The retained distinctions and relations, the omitted detail, and the questions the selected representation can answer. |
 
-A relation identifies how its participants are connected. A returned claim also needs an applicable inference rule. Separately, the resulting work must be compared with the original account question; C.39.QR:4.2–4.4 develops these two judgements. These relations can coexist. A reusable calculation can be a constituent of one Method and supply a result to another. A discipline can contain other disciplines and use results from fields that are not its constituents. A representation can preserve some structure, omit some and introduce useful constructed objects. Explain the relevant correspondence before returning a conclusion to the represented subject.
+A relation identifies how its participants are connected. A returned claim also needs an applicable inference rule. Separately, the resulting work must be compared with the original account question; C.39.QR:4.2–4.4 develops these two judgements.
+
+These relations can coexist. A reusable calculation can be a constituent of one Method and supply a result to another. A discipline can contain other disciplines and use results from fields that are not its constituents. A representation can preserve some structure, omit some and introduce useful constructed objects. Explain the relevant correspondence before returning a conclusion to the represented subject.
 
 Grounding connects a case with an explained construction. Identify that construction and make its relevant objects, relations, operations and grounds available to the reader. Show which consequential moves in the case instantiate which operations, why the conditions select them, and what a change would reopen. In an account of a Method, distinguish the explained Method, its displayed performance and the subject worked on during that performance. For example, when explaining how to design an explanation, a calculation can be the material; selecting a contrast and revising the explanation are performances of the explained Method. E.8:4.2.1.1–1.3 and EXD.2 develop this correspondence for authoring explanations.
 
@@ -95,7 +97,7 @@ Use the account's general construction to choose, interpret, connect or revise i
 
 This is the constructive role of the whole explanation. For a family of Methods, a shared principle can explain why different branches use different means. For a composite Method, a whole requirement can constrain several concurrent actions. For a discipline, a changed knowledge claim can alter a practice's applicability and create a new inquiry. These are different returns with different grounds.
 
-Then follow particular findings back into the common account. An unexpected case can reveal a missing premise, a new problem family or an incorrect connection. Revise the affected explanation and its uses. Keep the source's useful constructions while critically examining its claimed generality.
+Then follow findings back into the common account. An unexpected case can reveal a missing premise, a new problem family or an incorrect connection. Revise the affected explanation and its uses. Keep the source's useful constructions while critically examining its claimed generality.
 
 Distinguish three moves when developing that return. Synthesis connects contributions into an organized account or way. Generalization extends the range for which a claim or operation is warranted. Abstraction selects a representation's distinctions for a question. One piece of work can need all three, with each contribution explained.
 
@@ -103,25 +105,27 @@ Distinguish three moves when developing that return. Synthesis connects contribu
 
 #### C.39.WA:4.5 - Compare the actual account with the original question
 
-Describe what the candidate actually explains, temporarily setting aside its title, field label and declaration of completeness. Compare that content with the expectation from section 4.1 across the assigned scope. Inspect the general construction and its relations as well as local claims. Recover what the cases concretize and which consequential variations of the declared subject they expose. Compare the knowledge and operations available in the general account with those displayed in its cases. If following a running case has shifted attention to its application domain, restore the explanation of the Method being taught and the return from its performance. Retain the useful case content.
+Describe what the candidate explains, temporarily setting aside its title, field label and declaration of completeness. Compare that content with the expectation from section 4.1 across the assigned scope. Inspect the general construction and its relations as well as local claims. Recover what the cases concretize and which consequential variations of the declared subject they expose. Compare the knowledge and operations available in the general account with those displayed in its cases.
+
+If following a running case has shifted attention to its application domain, restore the explanation of the Method being taught and the return from its performance. Retain the useful case content.
 
 For each consequential conclusion, retain its subject, property, scope and grounds. Truth of a claim, membership in a field, coherence of a construction, coverage of an assigned account, usability by a reader and effect in work answer different questions. Select the conclusion the assignment needs and obtain its basis.
 
 When source preservation is promised, F.0.2.RC tests whether the action, conditions, qualifications and returns can be reconstructed through the receiving explanation. Its source cut follows the promise: a commitment to a whole corpus requires that recovery basis. For a new synthesis, identify what the author constructed and how it is supported. A reader's own successful invention locates a useful contribution but does not make it content of the candidate.
 
-Return one of the substantive outcomes the evidence supports: an adequate account for the named use; a precise missing construction; a contradicted inference; an unavailable ground; or a changed, explicitly agreed question. Preserve a useful fragment with its qualified conclusion. Keep the original task open while a required contribution remains unavailable.
+Return one of the substantive outcomes the evidence supports: an adequate account for the named use; a statement of which construction is missing; a contradicted inference; an unavailable ground; or a changed, explicitly agreed question. Preserve a useful fragment with its qualified conclusion. Keep the original task open while a required contribution remains unavailable.
 
-**Questions:** What does this text actually explain? Which required constructions and connections are supplied? Which are missing, unsupported or still unexamined? Did the subject or criterion change, and on what authority?
+**Questions:** What does this text explain? Which required constructions and connections are supplied? Which are missing, unsupported or still unexamined? Did the subject or criterion change, and on what authority?
 
 #### C.39.WA:4.6 - Arrange independent appraisal and complete the return
 
 Select independence according to the intended conclusion and the observed difficulty. A reviewer who must judge the author's construction keeps authorship separate. A fresh reading context is useful when earlier narrowing or a disclosed expected answer could shape recognition. Supply the original question and necessary subject grounds before the candidate and earlier verdicts. A domain specialist can still be needed; freshness does not supply subject competence.
 
-The reviewer compares the account with an independently grounded expectation and explains the missing relation or contribution in subject terms. The author develops that content or obtains its missing supplier. Reconsider the affected conclusion and dependent uses after repair. A coordinator accepting several contributions compares their actual coverage and joint conditions with the original result; C.41.SR supports that reconciliation.
+The reviewer compares the account with an independently grounded expectation and explains the missing relation or contribution in subject terms. The author develops that content or obtains its missing supplier. Reconsider the affected conclusion and dependent uses after repair. A coordinator accepting several contributions compares their coverage and joint conditions with the original result; C.41.SR supports that reconciliation.
 
-Use the six question groups as an aid at the actual work occasions:
+Use the six question groups as an aid at the work occasions:
 
-- **Before decomposition, read-do:** recover the subject and develop the expected organization in the current explanation.
+- **Before decomposition, read-do:** recover the subject and develop the expected organization in the explanation.
 - **During construction, read-do:** follow the questions at a consequential join and construct or correct the missing content.
 - **Before an adequacy claim, do-confirm:** use the performed work and its grounds to answer the questions about the complete relevant account.
 - **At independent review:** recover the expectation first, then compare it with the full relevant candidate.
@@ -141,7 +145,7 @@ The following constructed cases expose different transitions in the Method. Thei
 
 The request is to explain mathematics and judge the completeness of the account. The submitted text is “2 × 2 = 4.” The reviewer establishes that the equality is true and concerns mathematics, then accepts the request as completed.
 
-Recovering the subject immediately changes the judgement. The submitted text explains at most a particular calculation. An account of the field needs a chosen depth and reader, but it must develop mathematical objects and questions, ways of constructing and proving, and relevant relations among its branches. The precise breadth of a future overview remains a design question; the absence of that account in the submitted equality is already apparent.
+Recovering the subject immediately changes the judgement. The submitted text explains at most a calculation. An account of the field needs a chosen depth and reader, but it must develop mathematical objects and questions, ways of constructing and proving, and relevant relations among its branches. The breadth of a future overview remains a design question; the absence of that account in the submitted equality is already apparent.
 
 The wrong inference joins two different relations: the statement's membership in the field and the account's adequacy for the requested subject. Retain the valid calculation as a possible illustration. Return the missing field explanation to authorship.
 
@@ -159,7 +163,7 @@ That organization changes the text. The replication rule moves next to the claim
 
 The author then develops the timing paragraph from the same dependencies. In this constructed design, supported upper bounds are 8 seconds for detection, 12 for authority transfer, 15 for restoration and 5 for opening the route. The specified sequential order warrants a 40-second upper bound. The text attaches the conclusion to that order and to the replication, authority and timing premises. A reviewer can now follow both questions in the commission: what preserves the acknowledged updates, and what supports the recovery bound. A missing deployment test remains identifiable as a missing premise rather than disappearing behind the successful start-up test.
 
-A new requirement of 30 seconds changes the author's comparison. Forty seconds no longer supports it, while the upper bound alone leaves the original design's actual feasibility unresolved. The author obtains the designers' alternative: maintained warm state reduces the restoration bound to 4 seconds, with continuous compute and state-maintenance provision. The account is revised at the affected join: 29 seconds is supported under the new provision, and the state and authority explanation now includes that provision's role. Detection's established bound is retained. If the provision is unavailable, the explanation exposes the unresolved timing or support question for the designers.
+A new requirement of 30 seconds changes the author's comparison. Forty seconds no longer supports it, while the upper bound alone leaves the original design's feasibility unresolved. The author obtains the designers' alternative: maintained warm state reduces the restoration bound to 4 seconds, with continuous compute and state-maintenance provision. The account is revised at the affected join: 29 seconds is supported under the new provision, and the state and authority explanation now includes that provision's role. Detection's established bound is retained. If the provision is unavailable, the explanation exposes the unresolved timing or support question for the designers.
 
 The revision follows the account's organizing grounds. It changes the premises, connection and qualified claim that depend on restoration, while preserving the still-supported contributions. This is the author's construction the reader can reuse when another whole-subject account consists of accurate component descriptions with its decisive relations missing.
 
@@ -167,15 +171,15 @@ The revision follows the account's organizing grounds. It changes the premises, 
 
 An author is preparing the common entry to an operations-management guide. Its reader needs to choose and revise ways of obtaining continuing production or service under competing demands and changing conditions. The supplied chapters explain admission of work, capacity allocation, development of operating methods and review of results. The initial entry groups them by department. That arrangement helps locate a chapter but leaves the reader to discover why a finding in one chapter changes work in another.
 
-The author recovers the field question and reads the knowledge–practice connections in OPS.Reference:1.1–1.6. Two different grounds in the source are particularly consequential. With a consistently identified work population, opening unfinished work plus entries minus exits gives closing unfinished work. A completion forecast additionally depends on premises about capacity, work mix, variability and dependencies. The author uses this difference to construct the entry's organizing explanation: operating knowledge both constrains the arrangement and supplies revisable grounds for anticipating its results; performed work can reveal errors in the account, failed premises or a need for a different Method.
+The author recovers the field question and reads the knowledge–practice connections in OPS.Reference:1.1–1.6. Two different grounds in the source guide the author's construction. With a consistently identified work population, opening unfinished work plus entries minus exits gives closing unfinished work. A completion forecast additionally depends on premises about capacity, work mix, variability and dependencies. The author uses this difference to construct the entry's organizing explanation: operating knowledge both constrains the arrangement and supplies revisable grounds for anticipating its results; performed work can reveal errors in the account, failed premises or a need for a different Method.
 
 This explanation reorganizes the connections among the four chapters. Admission and allocation now return a jointly supportable arrangement. Review compares its predicted and observed consequences, identifies which ground is affected, and returns that question either to the operating account, to provision or to development of the Method. The author writes the reasons for those different returns alongside the connection. An arithmetic discrepancy requires recovering the event account; a defeated forecast premise requires revising the forecast or arrangement. The shared field question holds these contributions together while their different grounds explain why they remain distinct Methods.
 
-To check whether this connection is actually available in the guide, the reviewer follows a supplied report of growing unfinished work. The report counts only items awaiting technicians and explains delay by technician capacity. Completion also requires specialist approval. The author recovers that omitted transition and revises the account's work population and exit condition. The guide's diagnosis paragraph now explains how more technician output can increase the approval queue, and directs the reader to establish the approval contribution or revise admission. These details are needed to show the author's repair: changing the represented operating unit changes the explanation and the Method choice together.
+To check whether this connection is available in the guide, the reviewer follows a supplied report of growing unfinished work. The report counts only items awaiting technicians and explains delay by technician capacity. Completion also requires specialist approval. The author recovers that omitted transition and revises the account's work population and exit condition. The guide's diagnosis paragraph now explains how more technician output can increase the approval queue, and directs the reader to establish the approval contribution or revise admission. These details are needed to show the author's repair: changing the represented operating unit changes the explanation and the Method choice together.
 
 A second supplied situation concerns readiness for an unknown future incident. The initial entry treats every operating result as an item that can be completed and stored. The author discovers that this common assumption cannot organize the readiness chapters: the required capability must remain available during the covered interval. The entry is revised to explain the relation between receiving result, operating unit and commitment. Its production branch follows completed items; its readiness branch follows maintained availability. Their shared principles concern obtaining usable results under joint conditions, while their different objects select different operating Methods.
 
-The completed entry contains that field explanation and the connections at the four chapter entrances. The reviewer reads those actual connections against the original commission, including how a changed knowledge claim returns to practice and how a practice finding revises knowledge. The guide now supplies the joins that its departmental outline had left to the reader. Further chapters receive their own place through the same field question and their actual knowledge–practice relations.
+The completed entry contains that field explanation and the connections at the four chapter entrances. The reviewer reads those connections against the original commission, including how a changed knowledge claim returns to practice and how a practice finding revises knowledge. The guide now supplies the joins that its departmental outline had left to the reader. Further chapters receive their own place through the same field question and their knowledge–practice relations.
 
 #### C.39.WA:5.4 - Organize a theoretical account by the questions its structures answer
 
@@ -183,13 +187,13 @@ A mathematics author is commissioned to explain finite-dimensional linear maps t
 
 The author recovers what must be explained before choosing a more elaborate calculation. Two questions organize the subject: which outputs can a map attain, and which inputs it treats alike? In the standard theory, the image answers the first question. Linearity gives the second a common construction: \(T(x)=T(y)\) exactly when \(x-y\) lies in the kernel. Consequently, \(T(x)=b\) is solvable when \(b\) is in the image; after one solution \(x_0\) is found, all solutions have the form \(x_0+k\) with \(k\) in the kernel. The [UCL account of linear maps](https://www.homepages.ucl.ac.uk/~ucahmto/0007_2021/3-3-linear-maps.html) supplies the definitions and structural grounds.
 
-These relations give the author a reason to change the exposition. The new opening states the two questions and derives their connection through linearity. The kernel and image definitions now perform identifiable explanatory work. A solved equation is placed after the solution-set construction, so the reader can see which features of that calculation arise from the common relation. The matrix section explains how selected bases represent the map and make calculation possible. A change of basis can change the matrix while retaining the map and the two structural questions.
+These relations give the author a reason to change the exposition. The new opening states the two questions and derives their connection through linearity. The kernel and image definitions now help answer those questions. A solved equation is placed after the solution-set construction, so the reader can see which features of that calculation arise from the common relation. The matrix section explains how selected bases represent the map and make calculation possible. A change of basis can change the matrix while retaining the map and the two structural questions.
 
 The reviewer then examines a transition the draft had left implicit: the claim that a map reaches every output. Two maps can have the formula \(T(x,y)=(x,0)\) and different codomains. With codomain \(\mathbb{R}^2\), some outputs are unattainable; with the first coordinate axis as codomain, every allowed output is attained. The formula alone leaves this judgement underdetermined. The author repairs the general explanation by including the declared codomain in the attainable-output question, and updates the affected statements and examples. The kernel argument remains valid. This local finding has changed the common account and selected its dependent revisions.
 
 The reviewer returns to the commissioned use. Existence is explained through image membership; freedom among solutions through the kernel; matrix computation through the chosen representation. The text now gives their connecting grounds before asking the reader to interpret particular calculations. These grounds also let the author select useful contrasts: a different codomain tests the scope of the attainable-output claim, whereas changing only a matrix entry may exercise the same calculation again.
 
-Here the whole account is organized by mathematical structures and justified implications. The author obtained that organization from the questions and theory, used it to choose and arrange the parts, then revised it when a particular judgement exposed a missing participant.
+Here the whole account is organized by mathematical structures and justified implications. The author obtained that organization from the questions and theory, used it to choose and arrange the parts, then revised it when a judgement exposed a missing participant.
 
 ### C.39.WA:6 - Bias-Annotation
 
@@ -199,16 +203,16 @@ Restore the subject from the initiating question and subject grounds at the rele
 
 ### C.39.WA:7 - Conformance Checklist
 
-At a claim about the whole account, answer the following from the actual content and grounds:
+At a claim about the whole account, answer the following from the account's content and grounds:
 
 1. What was the original subject and required use?
 2. Which constructions and relations organize that subject at the required scope?
 3. What relation supports each consequential transition between kinds, parts, levels, representations and claims? What general construction do the examples ground, which significant variations do they reveal, and what warrants any generalization?
-4. How do the common grounds govern the parts, and how do particular findings revise the common account?
-5. What does the candidate actually supply, and what remains missing or unexamined?
+4. How do the common grounds govern the parts, and how do findings revise the common account?
+5. What does the candidate supply, and what remains missing or unexamined?
 6. Which result of appraisal or repair permits the proposed use of the whole account?
 
-Arrange these questions at the work occasions in section 4.6. Preserve an unresolved answer and its continuation instead of manufacturing a positive one.
+Arrange these questions at the work occasions in section 4.6. Preserve an unresolved answer and its continuation without presenting it as a positive one.
 
 ### C.39.WA:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -216,13 +220,13 @@ Arrange these questions at the work occasions in section 4.6. Preserve an unreso
 | --- | --- |
 | A correct example is accepted as the requested field account. | Restore the original subject, retain the example and develop the missing general construction. |
 | Author, reviewer and coordinator use the same reduced question. | Independently recover the expected subject before relying on the candidate's outline or verdict. |
-| A relation is inferred from a shared word such as “level” or “part.” | Recover the actual participants, direction and governing relation. |
+| A relation is inferred from a shared word such as “level” or “part.” | Recover the participants, direction and governing relation. |
 | The checklist is complete but its detected repair remains only proposed. | Perform the content repair and reconsider the affected conclusion. |
 | A reader supplies the missing explanation from expertise. | Identify that contribution and make it accessible under the promised reader conditions. |
 
 ### C.39.WA:9 - Consequences
 
-The account can supply the connections and grounds that let a reader use and change its parts. Appraisal preserves the assigned subject across handovers and qualifies local successes at their actual scope.
+The account can supply the connections and grounds that let a reader use and change its parts. Appraisal preserves the assigned subject across handovers and qualifies local successes within their scope.
 
 The work costs subject recovery, construction, connected reading and repair. Reuse adequate explanations and valid earlier grounds. Select further inquiry by its attainable contribution and total burden through C.11.DUA. Ordinary use provides evidence about whether the arrangement reduces consequential omissions and rework.
 
@@ -234,11 +238,11 @@ The Method joins construction with appraisal because missing content must be obt
 
 ### C.39.WA:11 - SoTA-Echoing
 
-The practice question is how an author or reviewer can develop an account of an organized subject that answers the whole assigned question. The selected line is the connected operation in section 4: independently recover the subject and expected organization, construct its grounds and relations, bring those grounds into choices about parts, and compare the actual account with the original use.
+The practice question is how an author or reviewer can develop an account of an organized subject that answers the whole assigned question. The selected line is the connected operation in section 4: independently recover the subject and expected organization, construct its grounds and relations, bring those grounds into choices about parts, and compare the account with the original use.
 
-A serious alternative is a competent author's direct use of C.39 with the relevant subject patterns and C.41. That arrangement can supply the same account when the author already knows how to connect its operations. This profile supplies that connection as reusable content, including the discipline/Method/system differences, the whole-to-parts return and the question groups at their use occasions. It accepts additional reading and maintenance in exchange for making that construction available to readers who would otherwise have to develop it themselves. Use the direct arrangement when it is already adequate; the profile adds no further work by virtue of being available.
+An alternative is a competent author's direct use of C.39 with the relevant subject patterns and C.41. That arrangement can supply the same account when the author already knows how to connect its operations. This profile supplies that connection as reusable content, including the discipline/Method/system differences, the whole-to-parts return and the question groups at their use occasions. It accepts additional reading and maintenance in exchange for making that construction available to readers who would otherwise have to develop it themselves. Use the direct arrangement when it is already adequate; the profile adds no further work by virtue of being available.
 
-[Paul E. Newton's 2026 Ofqual account of qualification design](https://www.gov.uk/government/publications/designing-qualifications-that-will-be-fit-for-their-purposes--2/designing-qualifications-that-will-be-fit-for-their-purposes-accessible) explains construct underrepresentation and how systematic omissions from assessment can narrow enacted teaching. Adapt that distinction to section 4.1 and section 4.5: derive the expected account from the subject and intended use, then inspect which constructions the appraisal actually elicits. The report concerns qualification design; it does not evaluate this authoring Method.
+[Paul E. Newton's 2026 Ofqual account of qualification design](https://www.gov.uk/government/publications/designing-qualifications-that-will-be-fit-for-their-purposes--2/designing-qualifications-that-will-be-fit-for-their-purposes-accessible) explains construct underrepresentation and how systematic omissions from assessment can narrow enacted teaching. Adapt that distinction to section 4.1 and section 4.5: derive the expected account from the subject and intended use, then inspect which constructions the appraisal elicits. The report concerns qualification design; it does not evaluate this authoring Method.
 
 [NASA's Systems Engineering Handbook, section 2.4](https://www.nasa.gov/reference/2-0-fundamentals-of-systems-engineering/), supplies the distinction between conformity to requirements and suitability for the intended purpose and environment. Adapt it to the separate questions about a local criterion and the whole use. Section 5.2 makes those different conditions visible in one conditional service construction.
 
@@ -247,7 +251,7 @@ C.39.QR owns the wider return from any partial result to its originating questio
 ### C.39.WA:12 - Relations
 
 - C.39.QR returns partial work to its original question and uses this Method when the missing result is a whole-subject account.
-- A.6.H recovers the exact subject and relations of a holism claim.
+- A.6.H recovers the subject and relations of a holism claim.
 - A.14, B.1.5, C.2.1 and C.20 govern different constructions of wholes.
 - C.3/C.3.1 and A.3.1 distinguish kind relations and Method variation from composition.
 - C.29/C.29.1 govern mathematical representation and returned inference.

@@ -20,7 +20,7 @@ An observed value tells us something about how the existing mechanisms operated.
 
 A second difficulty appears when a mathematical or software operation has an unclear physical interpretation. Assigning a value to an indicator, replacing a controller and forcing a physical quantity can change different mechanisms. Reusing the same variable name hides that difference.
 
-Even a clearly specified replacement can change the solvability of a model or its subsequent dynamics. The useful result requires both the model transformation and a derivation for the question actually asked.
+Even a clearly specified replacement can change the solvability of a model or its subsequent dynamics. The useful result requires both the model transformation and a derivation for the question asked.
 
 ### C.28.MR:3 - Forces
 
@@ -36,7 +36,7 @@ Even a clearly specified replacement can change the solvability of a model or it
 
 **Choose the intervention and question → recover the mechanisms and input law → replace the selected mechanisms → solve the affected relations → obtain the requested consequence → return its interpretation and useful limit.**
 
-These moves form a derivation. A few equations can carry the complete small result.
+These moves form a derivation. A few equations can carry the complete result.
 
 #### C.28.MR:4.1 - Specify what is changed and what is asked
 
@@ -54,13 +54,13 @@ Keep the subject interpretation with the equations. An equation's left-hand side
 
 Preserve common inputs and their dependence. If two disturbances arise from one shared event, retain that event or their joint law when calculating both effects. A simulation must generate one compatible joint input for a case; independent resampling of its components would change the model.
 
-Recover only the mechanisms needed to determine the queried consequence and their relevant conditions. A missing actuator relation may prevent a physical consequence while still allowing a useful comparison inside an explicitly assumed model. State that assumption where the result uses it.
+Recover only the mechanisms needed to determine the queried consequence and their relevant conditions. A missing actuator relation may prevent a physical consequence while allowing a useful comparison inside an assumed model. State that assumption where the result uses it.
 
 #### C.28.MR:4.3 - Construct the modified model
 
 Replace each targeted mechanism by its stated constant or function. Retain the other mechanism functions and the supplied input law. Then let their output values follow from the new inputs to those functions.
 
-For a randomized replacement, give its randomization law and its dependence on existing inputs. An independent randomizer is one possible specification. If the proposed change also alters the environment or population, include that change in the compared model instead of silently treating it as part of a constant intervention.
+For a randomized replacement, give its randomization law and its dependence on existing inputs. An independent randomizer is one possible specification. If the proposed change also alters the environment or population, include that change in the compared model instead of treating it as part of a constant intervention.
 
 Keep a replacement's scope visible in time. In a discrete-time model, identify the affected update steps. In an event-driven model, identify the triggering condition and the state change it initiates. A.3.3.TR helps construct the relevant continuation rule from interactions, events and subject laws when that rule is missing.
 
@@ -70,11 +70,11 @@ For physical interpretation, ask whether the proposed action also changes anothe
 
 For an acyclic model, evaluate the retained and replaced functions in dependency order. For a time-stepped model, propagate from its initial conditions through the selected horizon. For simultaneous equations or continuous dynamics, use the solution method and conditions appropriate to those relations.
 
-Check the transformed relations themselves when a replacement can change existence or select among several solutions. A solver's first returned branch may leave other admitted answers. If all admitted solutions agree on the queried quantity, that agreement can answer the question. If their answers differ, retain the possible answers, derive a useful bound, or expose the condition needed to choose among them. If the model has no relevant solution for inputs the query includes, return that obstruction and repair the model or question.
+Check the transformed relations when a replacement can change existence or select among several solutions. A solver's first returned branch may leave other admitted answers. If all admitted solutions agree on the queried quantity, that agreement can answer the question. If their answers differ, retain the possible answers, derive a useful bound, or expose the condition needed to choose among them. If the model has no relevant solution for inputs the query includes, return that obstruction and repair the model or question.
 
-For probabilistic results, the selected solutions must define the requested random quantity under the input law. Existence of one numerical trace supplies less than a uniquely determined distribution. A general proof is unnecessary when a direct finite calculation settles the present query.
+For probabilistic results, the selected solutions must define the requested random quantity under the input law. Existence of one numerical trace supplies less than a uniquely determined distribution. A general proof is unnecessary when a finite calculation settles the present query.
 
-For a dynamically triggered jump, recover the event-order or flow/jump choice if it changes the result. A model's steady-state solution alone does not determine what happens during a transient. The hybrid-system approach discussed in :11 supplies one treatment with explicit conditions; the subject model still determines which treatment is appropriate.
+For a dynamically triggered jump, recover the event-order or flow/jump choice if it changes the result. A model's steady-state solution alone does not determine what happens during a transient. The hybrid-system approach discussed in :11 supplies one treatment with explicit conditions; the subject model determines which treatment is appropriate.
 
 #### C.28.MR:4.5 - Calculate the consequence under the retained conditions
 
@@ -124,7 +124,7 @@ Replacing the display equation by `D=6 V` leaves `V=12 V`; current and power rem
 
 Suppose the supply's current limit is now relevant. Use the revised positive-command model `V=min(C, I_max R)` with `I_max=1.5 A`. The 12 V command now gives 9 V at the load and 13.5 W. The 6 V command still gives 6 W. Relative to natural behavior, the calculated power reduction is now 7.5 W, instead of 18 W in the earlier operating-region model.
 
-This is a model comparison. Using this result for a physical supply requires an account of its regulation, load and limiting behavior. Altering a graphical interface value is a physical intervention only when the interface actually controls the modeled command.
+This is a model comparison. Using this result for a physical supply requires an account of its regulation, load and limiting behavior. Altering a graphical interface value is a physical intervention only when the interface controls the modeled command.
 
 #### C.28.MR:5.3 - A definite intervention answer with an indefinite baseline
 
@@ -148,7 +148,7 @@ The examples illustrate derivation under supplied assumptions. They do not estim
 - The joint input law and common causes needed by the query survive the computation.
 - The transformed model determines the reported answer, or the result retains the relevant alternatives, bound or obstruction.
 - A comparison uses the required baseline and conditions; an intervention outcome alone is not reported as an estimated change.
-- The result's physical use connects the actual action to the modeled replacement and any consequential additional effect.
+- The result's physical use connects the action to the modeled replacement and any consequential additional effect.
 - The amount of calculation, recording and new evidence serves the receiving question.
 
 ### C.28.MR:8 - Common Anti-Patterns and How to Avoid Them
@@ -174,11 +174,11 @@ The main effort lies in recovering the mechanisms and conditions needed to answe
 
 The construction works on mechanisms because the question concerns what would change if a different way of determining a variable operated. Statistical conditioning instead uses information about values generated by the current ways. Both operations are useful; :5.1 shows when they answer different questions.
 
-Retaining functions while recomputing values carries the effects of a local replacement through the model. Keeping the input law retains the population and common causes against which those effects are compared. This makes the difference attributable to the specified modeled change rather than an unnoticed change of background.
+Retaining functions while recomputing values carries the effects of a local replacement through the model. Keeping the input law retains the population and common causes against which those effects are compared. This makes the difference attributable to the specified modeled change rather than a change of background.
 
 Acyclic evaluation is the simplest executable case. Coupled constraints and dynamic events require attention to the transformed system's solutions. Query-specific determinacy keeps that requirement proportionate: the relevant question can have one answer even when another part of the model is unresolved.
 
-Direct physical enactment, empirical identification and model-based derivation provide different needed results. A supplied model is enough for the conditional derivation. Applying that consequence to the world additionally needs a suitable connection between action, model and observations. This arrangement lets a theoretical construction contribute immediately while exposing the particular additional result its physical use needs.
+Physical enactment, empirical identification and model-based derivation provide different needed results. A supplied model is enough for the conditional derivation. Applying that consequence to the world additionally needs a suitable connection between action, model and observations. This arrangement lets a theoretical construction contribute immediately while exposing the particular additional result its physical use needs.
 
 ### C.28.MR:11 - SoTA-Echoing
 

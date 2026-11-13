@@ -5,8 +5,11 @@
 **Type:** Architectural pattern.
 
 > **Status:** Stable
+
 **Builds on:** E.10.D1 **Recovering What “Context” Means in Use**; A.3, A.3.1, and A.3.2 for `U.Method` and `U.MethodDescription`; A.13 for actual-performer admission, then A.15 and A.15.1 for dated `U.Work`; C.2.1 for the identity of each claim-bearing episteme or report.
+
 **Coordinates with.** F.0.1 and F.17 for exact source-local meaning and an optional durable cell; F.4 for local system-role-kind descriptions; F.5 for naming; A.2.1 for system-role assignment and F.6 for precise performed-Work attribution; F.9 only for an actual relation between distinct local meanings; F.10 for status and windows; B.1.5 for Method composition and Work enactment.
+
 **Aliases (informative).** *Method, description, Work, and control-output split*; *design and run distinction*.
 
 ### F.11:1 - Intent & applicability
@@ -15,7 +18,7 @@
 
 1. What **`U.Method`**, the way of doing, is meant?
 2. What **`U.MethodDescription`**, the episteme whose one exact `EntityOfConcern` is that Method, is being used?
-3. What dated **`U.Work`** actually occurred?
+3. What dated **`U.Work`** occurred?
 4. Did that Work produce a domain-specific output that matters to this claim?
 
 These questions are a reading aid, not a universal four-kind ontology. The fourth answer is whatever value and relation its direct control or transformation pattern defines; F.11 does not mint a universal `U.Actuation` kind.
@@ -43,16 +46,20 @@ These questions are a reading aid, not a universal four-kind ontology. The fourt
 
 ### F.11:4 - Core idea (didactic)
 
-Use four questions, then state only the relations that actually obtain:
+Use four questions, then state only the relations that obtain:
 
 * **Method — the way.** A.3 and A.3.1 govern the way of doing, such as a welding technique.
 * **MethodDescription — the description episteme.** An episteme is a `U.MethodDescription` only when A.3.2 finds one admitted Method as its exact `EntityOfConcern` and at least one substantive claim about that Method as a way of doing.
 * **Work — the occurrence.** A dated occurrence is `U.Work` only after admission under A.15 and A.15.1. Work is the occurrence itself, not a record of the occurrence; a record or report is a separate episteme or carrier.
 * **Control or transformation output — if present.** Identify the output under its direct pattern and relate it to the Work only when that relation obtains.
 
-F.11 allows the plain sentence “this MethodDescription describes the Method” as shorthand for that A.3.2 constitution and membership judgement. It does not add a binary description relation. Several epistemes may each have the same Method as their exact `EntityOfConcern`; one episteme may concern one admitted composite Method; and one document or publication may present several separately identified epistemes. One MethodDescription episteme cannot have several Methods as its `EntityOfConcern`.
+F.11 allows the plain sentence “this MethodDescription describes the Method” as shorthand for that A.3.2 constitution and membership judgement. It does not add a binary description relation.
 
-Work may enact a Method when the exact enactment relation and evidence are stated. Recover the actual performer through A.13 and admit the Work independently under A.15.1; add F.6 only when precise attribution to the same obtaining assignment is needed. A claim that a System or Work used, followed, deviated from, conformed to, or relied on a particular MethodDescription edition is separate. Cite the pattern that defines or tests that claim; use A.10 or B.3 for evidence reliance, and return A.6.RCD `missing-governor` when no current pattern supplies the needed relation after its participants and sentence are explicit.
+Several epistemes may each have the same Method as their exact `EntityOfConcern`; one episteme may concern one admitted composite Method; and one document or publication may present several separately identified epistemes. One MethodDescription episteme cannot have several Methods as its `EntityOfConcern`.
+
+Every admitted Work enacts at least one Method. To claim that it enacted the Method in question, identify that Method and the performance history supporting the claim. Recover the actual performer through A.13 and admit the Work independently under A.15.1; add F.6 only when precise attribution to the same obtaining assignment is needed.
+
+A claim that a System or Work used, followed, deviated from, conformed to, or relied on a particular MethodDescription edition is separate. Cite the pattern that defines or tests that claim; use A.10 or B.3 for evidence reliance, and return A.6.RCD `missing-governor` when no current pattern supplies the needed relation after its participants and sentence are explicit.
 
 ### F.11:5 - Minimal vocabulary
 
@@ -73,15 +80,21 @@ Name the Method and its relevant boundary. Do not identify it merely by a file n
 
 #### F.11:6.2 - Which description?
 
-Name the already identified episteme and the one admitted Method that is its exact `EntityOfConcern`. State edition or version when it matters. Several epistemes may each concern the same Method. One episteme may concern one admitted composite Method, while a document or publication may present several separately identified epistemes; one MethodDescription episteme never has several Methods as its `EntityOfConcern`. Saying that it *describes* the Method is only A.3.2's plain shorthand. Approval remains a separate claim and is not evidence that Work occurred or succeeded.
+Name the already identified episteme and the one admitted Method that is its exact `EntityOfConcern`. State edition or version when it matters.
 
-#### F.11:6.3 - Which Work actually occurred?
+Several epistemes may each concern the same Method. One episteme may concern one admitted composite Method, while a document or publication may present several separately identified epistemes; one MethodDescription episteme never has several Methods as its `EntityOfConcern`.
 
-For every claimed actual performer, recover the A.13 core: the admitted System, local agential system-role kind and classification, obtaining assignment, and the scope, situation, window and evidence needed by the claim. A.15.1 then independently admits the dated Work. Use F.6 only when this account needs precise assignment-bound attribution through that same assignment; a missing attribution alone leaves independently admitted Work intact. Recheck a consumed admission premise and its dependent conclusions if the same finding invalidates it, as F.6:4.2 requires. Do not replace these objects with a behavioural “mask” or a `System-in-Role` pseudo-object.
+Saying that the episteme *describes* the Method is A.3.2's plain shorthand for this membership judgement. Approval remains a separate claim and is not evidence that Work occurred or succeeded.
+
+#### F.11:6.3 - Which Work occurred?
+
+For every claimed actual performer, recover the A.13 core: the admitted System, local agential system-role kind and classification, obtaining assignment, and the scope, situation, window and evidence needed by the claim. A.15.1 then independently admits the dated Work.
+
+Use F.6 only when this account needs precise assignment-bound attribution through that same assignment; a missing attribution alone leaves independently admitted Work intact. Recheck a consumed admission premise and its dependent conclusions if the same finding invalidates it, as F.6:4.2 requires. Do not replace these objects with a behavioural “mask” or a `System-in-Role` pseudo-object.
 
 #### F.11:6.4 - Which output matters, if any?
 
-Name the actual signal, command, setpoint, transformation output, or resulting value. State how it relates to the Work under the direct control or transformation pattern. Some Work has no control output; the fourth question does not require a universal output kind.
+Name the signal, command, setpoint, transformation output, or resulting value the Work produced. State how it relates to the Work under the direct control or transformation pattern. Some Work has no control output; the fourth question does not require a universal output kind.
 
 #### F.11:6.5 - Which evidence and status claim?
 
@@ -89,13 +102,13 @@ Keep approval or validity claims about a MethodDescription distinct from observa
 
 ### F.11:7 - Source-local harmonisation map
 
-The following are prompts for recovering local meanings, not declarations of identity:
+Use the following examples as prompts for recovering local meanings. They do not declare identities.
 
 * **SPEM and ISO 24744:** inspect whether a selected *task definition*, *activity definition*, or process description denotes a Method, a MethodDescription, or another value in that exact passage.
 * **BPMN 2.0:** a process diagram is ordinarily a design description; do not call it the Work that later occurred.
 * **PROV-O:** an Activity is a time-bounded occurrence under the PROV scheme. Do not identify it with `U.Work` by label; when a report uses that source-local claim for a Work occurrence, state the exact semantic or representation relation established for the case.
 * **IEC 61131-3:** distinguish the runtime task execution, the program or program description, and output commands or setpoints.
-* **SOSA/SSN:** an Observation and its Result provide measurement structure; neither is the Work merely because it reports on the Work.
+* **SOSA/SSN:** an Observation and its Result provide measurement structure; reporting on the Work does not make either one the Work.
 
 Use F.17 only when these local meanings need stable addresses. Use F.9 only if an actual semantic relation between two exact local meanings must be stated. A relation between a description and Work, or between Work and an output, belongs to its direct pattern rather than to a generic Bridge.
 
@@ -116,7 +129,7 @@ For each dated Work named here and in §11, take independent A.13/A.15.1 admissi
 
 1. **Data pipeline deployment.** Method: delta-load transformation. MethodDescription: `etl_delta.py@v3` plus its documented rules. Work: the nightly run on 2025-07-14. No control output is material. Approval of the description and measured rows processed are separate claims.
 2. **Valve control.** Method: PID tuning and control method. MethodDescription: tuning sheet and cited IEC program description. Work: PLC task cycles from 18:00 to 18:30. Outputs: the exact setpoints and PWM duty values produced during those cycles. Temperature observations, not the commands alone, support a settling-time verdict.
-3. **Clinical assay.** Method: ELISA. MethodDescription: kit IFU v7. Work: batch B217. Robot commands are outputs during the Work; absorbance observations support the batch evaluation. IFU approval does not settle the batch verdict.
+3. **Clinical assay.** Method: ELISA. MethodDescription: kit IFU v7. Work: the assay run on batch B217. Robot commands are outputs during the Work; absorbance observations support the batch evaluation. IFU approval does not settle the batch verdict.
 
 ### F.11:10 - Anti-patterns & remedies
 
@@ -143,10 +156,10 @@ For each dated Work named here and in §11, take independent A.13/A.15.1 admissi
 * **MethodDescription:** the versioned canary plan with traffic slices and rollback rules.
 * **Work:** two dated canary deployment occurrences.
 * **Outputs:** traffic-shifting commands, if material to the claim.
-* **Agency:** the deploying System and its A.13 core, including the exact local agential kind, classification and obtaining assignment, are part of the independent Work-admission premise. Add F.6 only for a precise attribution through that same assignment; any responsibility claim keeps its own governor.
+* **Agency:** the deploying System and its A.13 core, including the exact local agential kind, classification and obtaining assignment, are part of the independent Work-admission premise. Add F.6 only for a precise attribution through that same assignment. Any responsibility claim keeps its own governor.
 * **Evidence:** latency and error-rate observations about the Work; the plan’s approval is separate.
 
-The example does not infer SLO satisfaction from the plan. F.12 evaluates the promise from Work outcomes in the stated window.
+The plan does not establish SLO satisfaction. F.12 evaluates the promise from Work outcomes in the stated window.
 
 #### F.11:11.2 - Industrial furnace control
 
@@ -160,17 +173,17 @@ If the IEC task expression and a PROV Activity expression are related for report
 
 #### F.11:11.3 - Clinical assay
 
-The Method is ELISA; the MethodDescription is kit IFU v7; the Work is batch B217; robot commands are optional output detail; absorbance observations support the quality verdict. Any deviation from the IFU is an explicit description-use or conformance claim, not a property inferred from the four-question layout.
+The Method is ELISA, its MethodDescription is kit IFU v7, and the Work is the assay run on batch B217. Robot commands are optional output detail. Absorbance observations support the quality verdict. Any deviation from the IFU is an explicit description-use or conformance claim, not a property inferred from the four-question layout.
 
 #### F.11:11.4 - Incident response
 
 The Method is triage-first incident handling; the MethodDescription is the playbook and diagram; the Work is the handling of INC-3421 from 09:10 to 10:02. The handling duration, 52 minutes, is computed from observations of that Work. Command invocations are included only if a direct control or transformation claim needs them.
 
-### F.11:12 - Safe reasoning moves
+### F.11:12 - Reasoning with the four questions
 
 1. **Classify the subject.** Is the sentence about a Method, MethodDescription, Work, or a particular output?
 2. **Keep design and occurrence apart.** A design claim does not establish a Work outcome.
-3. **Check membership.** Name the one admitted Method that is the episteme's exact `EntityOfConcern`; *describes* is only the plain shorthand allowed by A.3.2.
+3. **Check membership.** Identify the episteme’s one admitted Method as its exact `EntityOfConcern` and at least one substantive claim it makes about that Method as a way of doing. For this A.3.2 judgement, say that the episteme *describes* the Method.
 4. **State enactment only when supported.** Name the Work, Method, and basis for the enactment claim.
 5. **State description use separately.** Say whether and how the Work or performing System used, followed, deviated from, or conformed to the versioned description, and cite the rule that defines or tests that claim; otherwise return the bounded missing-governor result.
 6. **Locate outputs.** Relate a signal or changed value to the Work through its direct pattern.
@@ -191,7 +204,7 @@ The Method is triage-first incident handling; the MethodDescription is the playb
 
 - **F.4 and F.6:** a local system-role kind, its description, an assignment, and performed-Work attribution remain distinct from Method, MethodDescription, Work, and output.
 - **F.5:** use distinct designations when one source expression hides different subjects. Add a Plain counterpart only when it helps the intended reader and retains the same subject.
-- **F.7 and F.9:** compare exact local claims or F.17 cells and cite F.9 only when a semantic relation actually obtains. A shared heading creates no identity, relation, or use licence.
+- **F.7 and F.9:** compare exact local claims or F.17 cells and cite F.9 only when a semantic relation obtains. A shared heading creates no identity, relation, or use licence.
 
 **Used by.** Part C examples and the A.3, A.15, and B.1.5 method-and-work stack. Every MethodDescription membership judgement, enactment, performed-Work attribution, description use, observation, output, evidence use, or publication claim still uses the pattern that defines or tests it.
 
@@ -224,6 +237,6 @@ The Method is triage-first incident handling; the MethodDescription is the playb
 
 ### F.11:16 - Didactic distillation
 
-> “Ask four questions. What is the **Method**, the way of doing? Which **MethodDescription** has that one Method as its exact `EntityOfConcern`—plainly, describes it? What dated **Work** actually occurred? Which particular control or transformation output matters, if any? These are not four universal boxes. Work is the occurrence, not its record. MethodDescription membership adds no binary relation; Work may enact the Method only when that relation is supported. Recover each performer's A.13 core before independent Work admission; add F.6 only for precise assignment-bound attribution. Use observations for outcome claims, and use F.9 only for a real relation between source-local meanings.”
+> “Ask four questions. What is the **Method**, the way of doing? Which **MethodDescription** has that one Method as its exact `EntityOfConcern`—plainly, describes it? What dated **Work** occurred? Which particular control or transformation output matters, if any? These are not four universal boxes. Work is the occurrence, not its record. MethodDescription membership adds no binary relation. Every admitted Work enacts at least one Method. Identify the Method or Methods supported by the performance history. Recover each performer's A.13 core before independent Work admission; add F.6 only for precise assignment-bound attribution. Use observations for outcome claims, and use F.9 only for a real relation between source-local meanings.”
 
 ### F.11:End

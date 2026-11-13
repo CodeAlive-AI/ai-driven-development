@@ -8,7 +8,7 @@
 
 **Use this when.** A Method-description language claims to preserve useful source contributions, but you need to find out whether a user can recover the promised action, conditions and source basis. Use it again when a source or use changes and you must identify the affected repair without discarding supported work.
 
-The working reader is a Method engineer maintaining a source-grounded description or pattern language. Begin with one promise: **which source contribution should a user be able to reconstruct for this action, and what would count as a consequential loss?**
+As a Method engineer maintaining a source-grounded description or pattern language, begin with one promise: **which source contribution should a user be able to reconstruct for this action, and what would count as a consequential loss?**
 
 The first useful result is one reconstruction answer: the contribution recovered, a deliberate omission with a usable return, or the missing or contradicted element and its next repair. A known one-claim contradiction already owned by A.3.1.CC needs no additional reconstruction exercise.
 
@@ -30,9 +30,9 @@ When a source changes, follow its dependencies to determine which claims need re
 
 ### F.0.2.RC:4 - Solution
 
-F.0.1/F.0.2 recover and reconcile source meaning, while A.10.1 revalidates an affected reliance after a source change. The reconstruction test below asks the distinct constructive question: can the promised action, condition, join and return actually be recovered from the receiving explanation? A source citation or unchanged bytes alone does not answer it.
+F.0.1/F.0.2 recover and reconcile source meaning, while A.10.1 revalidates an affected reliance after a source change. Test whether the reader can recover the promised action, condition, join and return from the receiving explanation. A source citation or unchanged bytes alone cannot establish that the reader can make that recovery.
 
-Attempt the promised reconstruction, retain the exact loss or success at its tested scope, and follow changed premises to the claims and uses that depend on them.
+Attempt the promised reconstruction, state what was lost or recovered in the tested scope, and follow changed premises to the claims and uses that depend on them.
 
 #### F.0.2.RC:4.1 - Make the coverage claim testable
 
@@ -50,7 +50,9 @@ From a promised language answer, return to its supporting sources and allocation
 
 One direction may settle the question. Use both when the language claims source coverage and the risk includes unsupported additions. A held-out passage or a source condition omitted from the authoring route can expose a loss that the destination map misses.
 
-For a promise about performing a composite Method, also recover a constituent action within its ongoing whole and the conditions that make that combination possible. Change an encompassing requirement and ask what must change in the action. A reader who can repeat the steps but cannot recover that dependence has not yet recovered this promised use. Likewise, available lower-level skills and a known whole procedure can conceal a missing intermediate coordination. A promised actionable account must expose that gap or give a usable return to the contribution that closes it. Retain genuine earlier-result dependencies; a list of simultaneous activities alone does not explain constitution.
+For a promise about performing a composite Method, also recover a constituent action within its ongoing whole and the conditions that make that combination possible. Change an encompassing requirement and ask what must change in the action. A reader who can repeat the steps but cannot recover that dependence has not yet recovered this promised use.
+
+Available lower-level skills and a known whole procedure can conceal a missing intermediate coordination. A promised actionable account must expose that gap or give a usable return to the contribution that closes it. Retain genuine earlier-result dependencies; a list of simultaneous activities alone does not explain constitution.
 
 #### F.0.2.RC:4.3 - State the reconstruction result
 
@@ -73,7 +75,7 @@ A positive reconstruction concerns the inspected claim and use. It does not esta
 
 1. **Name the changed source or use fact.** Distinguish changed content, changed qualification window, unavailable access, defeated evidence and a different receiving question.
 2. **Recover what relied on it.** Identify the allocation, Method/candidate claim, description, pattern relation or reader use that consumed the changed premise.
-3. **Classify the resulting change at its owner.** F.0.2.MA handles allocation; A.3.2.DE description content; A.3.1.CC a contradicted maintained claim; A.3.1.MV a reusable Method variant or a non-variant change; E.8.ML the language arrangement. Use the direct source, evidence or access result where that is the actual question.
+3. **Classify the resulting change at its owner.** F.0.2.MA handles allocation; A.3.2.DE description content; A.3.1.CC a contradicted maintained claim; A.3.1.MV a reusable Method variant or a non-variant change; E.8.ML the language arrangement. Use the direct source, evidence or access result when the question concerns the source, its evidence or access to it.
 4. **Retain independent results.** State why an unaffected result's relied-on basis still holds. A different file or nearby paragraph alone does not establish independence.
 5. **Repeat the affected reconstruction.** Compare the repaired action, condition, result and source return with the same promised use. If the promise itself changes, identify the narrowed or different use rather than report the original test passed.
 
@@ -93,7 +95,7 @@ This constructed case starts with handbook H, edition 3, §4: “Reuse an earlie
 
 A candidate language has a “Reuse review” entry and cites H and L, but its body says only “reuse the prior review for display changes”. The destination map marks H §4 and L §2 as covered.
 
-Reconstruction finds the reusable action but not the qualification window or source-return stop. The topic is present; the promised decision is not fully recoverable. Return a description-content correction to the body carrying that answer. The bounded result is that the action is recoverable while its conditions are missing.
+The map locates the topic, and the reader can recover the review action. The entry gives no test for matching the reviewed claims, question and qualification window, or for stopping a source-dependent recheck when its argument is unavailable. Return those missing conditions to the body that promises the decision.
 
 After repair, the body states the matching-claim/question/window condition and the local source stop. Repeat the same use: the reader can now distinguish permitted reuse from a recheck lacking its basis. This is a constructed content check, not a measurement of review effectiveness.
 
@@ -107,9 +109,9 @@ The later facts are:
 | A2, a narrower condition supplied independently by paper L | L remains available and its relied-on claim is unchanged. |
 | A3, an unresolved shortcut from returned MR account W | W retains its rival explanations and evidence gap; the H argument was not its basis. |
 
-Return A1's new recheck as unavailable and lower only the dependent current use. Keep its earlier result with the historical basis; do not infer falsity from lost access. Retain A2's condition and A3's uncertainty. If another pattern copied A1's assumption, it is affected even if its file did not change.
+Report that A1 cannot be rechecked and limit only the current uses that depend on its missing argument to what the available evidence supports. Keep its earlier result with the historical basis; do not infer falsity from lost access. Retain A2's condition and A3's uncertainty. If another pattern copied A1's assumption, it is affected even if its file did not change.
 
-The repair is either to recover the required argument, use a separately justified sufficient basis, or narrow the current use. A full repertoire rewrite would add no supported correction to A2 or A3.
+The repair is to recover the required argument, use a separately justified sufficient basis, or narrow the current use. A full repertoire rewrite would add no supported correction to A2 or A3.
 
 #### F.0.2.RC:5.3 - When gap-only is not justified
 
@@ -117,14 +119,14 @@ A team has no recoverable earlier allocation and cannot tell which source claims
 
 ### F.0.2.RC:6 - Bias-Annotation
 
-Authors can reconstruct a missing condition from memory and mistake that success for a property of the language. Use the actual accessible reader route and retain which information was supplied externally.
+Authors can reconstruct a missing condition from memory and mistake that success for a property of the language. Use the route available to the reader and retain which information was supplied externally.
 
 A coverage percentage can reward destinations while hiding a decisive lost stop. Treat counted items as a discovery aid unless their relation to the receiving use is established. Constructed cases and small reader probes retain their limited scope.
 
 ### F.0.2.RC:7 - Conformance Checklist
 
 - The source/language editions, receiving use and coverage promise are identifiable.
-- The reconstruction tests actionable meaning, conditions, stops and source qualifications, not topic presence alone.
+- The reconstruction tests actionable meaning, conditions, stops and source qualifications, not just the presence of a topic.
 - Unsupported additions and deliberate omissions are distinguished from missing promised content.
 - The result states its tested scope and evidence limits.
 - Every changed premise has an affected claim or an unresolved impact boundary.
@@ -151,13 +153,15 @@ The cost is preserving the basis and dependence needed to make that judgment. Wh
 
 A.3.1.CC begins with a potentially contradicted claim and locates its owner. This pattern can start earlier: a promised source contribution is missing, and the language may not yet expose the claim or relation that should own it. Reconstruction finds that loss and supplies the repair question.
 
-Combining falsification with affected refresh keeps the original promise and its change history connected. A.3.1.MV still decides whether reusable Method semantics changed; a missing description condition is not automatically a new Method variant.
+Combining falsification with affected refresh keeps the original promise and its change history connected. A.3.1.MV decides whether reusable Method semantics changed; a missing description condition is not automatically a new Method variant.
 
 ### F.0.2.RC:11 - SoTA-Echoing
 
 [Riehle, Harutyunyan and Barcomb's pattern-discovery and validation work](https://arxiv.org/abs/2107.06065) uses established research Methods rather than treating the “rule of three” as sufficient validation. Adopt the need for explicit evidence and discriminating cases; source reconstruction is only one bounded check, not a substitute for their empirical programme or for domain trials.
 
-Current F.0.2 and F.0.2.MA preserve source meanings and allocation, while A.3.1.CC/A.3.1.MV and G.11 retain their correction and refresh results. Compared with a chapter-to-pattern map, the H/L case exposes a missing qualification condition that changes the review decision. Compared with a full reread, the A1/A2/A3 case retains L's condition and W's unresolved account while returning the one unavailable recheck.
+F.0.2 and F.0.2.MA preserve source meanings and allocation, while A.3.1.CC/A.3.1.MV and G.11 retain their correction and refresh results.
+
+Compared with a chapter-to-pattern map, the H/L case exposes a missing qualification condition that changes the review decision. Compared with a full reread, the A1/A2/A3 case retains L's condition and W's unresolved account while returning the one unavailable recheck.
 
 These examples justify the useful form of the result, not a general claim of faster maintenance. Reopen when a lost dependency defeats localization, a source promise changes, a direct correction makes reconstruction unnecessary, or observed maintenance burden outweighs its benefit.
 

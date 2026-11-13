@@ -8,13 +8,13 @@
 
 Use this pattern when a claim about speed, rhythm, throughput, recovery, convergence, rollout, adoption, braking, coasting, redirection, or stabilization is being used to change action.
 
-The practical question is simple:
+The practical question is:
 
 > Are we only reading a state, only reading a rate, or claiming that an intervention changes a rate, rhythm, recovery, or regime?
 
 If the claim is only a state or rate reading and that answers the receiving question, stop. For an intervention-sensitive claim, recover the proposed input, relevant time, resistance or cost, and grounds for the predicted change. Return the supported use and any material limitation; add a reopening condition when later reliance needs it.
 
-**What this buys.** A trend no longer passes silently as an intervention model. Braking, pausing, stabilizing, redirecting, coasting, widening, narrowing, or slowing rollout remain available when acceleration would be the wrong move.
+**What this buys.** The practitioner distinguishes a trend from an intervention model. Braking, pausing, stabilizing, redirecting, coasting, widening, narrowing, or slowing rollout remain available when acceleration would be the wrong move.
 
 **Primary working object.** The temporal claim whose adequacy matters to the receiving action. Recover its content and subject from the available plan, report, model, observation or other account. An exact C.2.1 episteme or `ClaimAddress` is needed when the receiving use relies on that independently referable identity. Here `ClaimAddress` means exact edition plus intrinsic claim identity declared by that edition's ClaimGraph.
 
@@ -39,7 +39,7 @@ Dyn0, Dyn1, and Dyn2 classify authored claims. They do not classify Systems, tea
 - The question is a bounded transformation. Use A.3.4.
 - The question is planned or performed Work. Use A.15.2, A.15.1, and F.6 as applicable.
 - The question is causal use, benchmark parity, a promise, assurance, value, harm, viability, scaling, adaptation, search health, publication, or residual QL. Use the direct pattern for that question; keep C.27 only if a separate temporal-claim adequacy question remains.
-- The reader has only a cue such as braking difficulty, rhythm mismatch, demand accumulation, divergent event traces, or more activity without better results. Keep the cue through A.16, A.16.1, B.4.1, or B.5.2.0 until an exact temporal claim can be stated.
+- The reader has only a cue such as braking difficulty, rhythm mismatch, demand accumulation, divergent event traces, or more activity without better results. Keep the cue through A.16, A.16.1, B.4.1, or B.5.2.0 until a temporal claim can be stated.
 
 ### C.27:1 - Problem
 
@@ -52,8 +52,8 @@ Typical consequences include:
 - a past slope is used as a future control law;
 - visible throughput rises while hidden queues, rework, quality loss, service demand, or burnout worsen;
 - a local rate change is projected across scale without an aggregation relation or bearer continuity;
-- rhythm becomes a mood word with no exact bearer, temporal reference, window, or supported use;
-- a planning assumption is laundered into causal proof, benchmark superiority, a release gate, public promise, or assurance claim;
+- rhythm is used without an identified bearer, temporal reference, window, or supported use;
+- a planning assumption substitutes for the grounds needed for causal proof, benchmark superiority, a release gate, a public promise, or an assurance claim;
 - more reviewers, data, tokens, tool calls, model capacity, or parallelism is assumed to produce linear improvement;
 - slowing, braking, pausing, or recovery is treated as failure merely because speed is the implicit value;
 - probe, frame, token, dashboard, or active-sensing language activates QL before ordinary patterns have carried their questions.
@@ -66,11 +66,11 @@ Faster is not automatically better. A temporally adequate claim is not automatic
 ### C.27:2 - Forces
 
 1. **Cheap recognition versus costly overformalization.** Keep the state, rate and intervention-sensitive distinction easy to recover. Use C.27 when a temporal-adequacy question can change the receiving action.
-2. **Effort profiles versus derivative words.** Real interventions can be impulses, scheduled pushes, feedback policies, adaptive regimes, brakes, pauses, coasting periods, or redirections. The useful question is what input occurs over which window, not whether the prose says acceleration.
-3. **Resistance without fake physics.** Lag, queue pressure, habit, coordination cost, technical debt, service demand, physical inertia, or another domain-local resistance can matter. None becomes a new mass or force kind.
+2. **Effort profiles versus derivative words.** Interventions can be impulses, scheduled pushes, feedback policies, adaptive regimes, brakes, pauses, coasting periods, or redirections. The useful question is what input occurs over which window.
+3. **Domain-specific resistance.** Lag, queue pressure, habit, coordination cost, technical debt, service demand, physical inertia, or another domain-local resistance can matter. None becomes a new mass or force kind.
 4. **Temporal meaning and coupling.** Preserve the temporal claim's bearer, predicate and timing under C.27.TA; add an exact separate reference when needed. Cross-bearer phase, synchronization, coupling or entrainment appears only when the receiving use relies on that relation.
 5. **Readable practice versus hidden claim inflation.** Ordinary actor and practice wording should stay readable. Exact System, assignment, authority, Work, causal, benchmark, promise, and assurance details appear only when the current claim relies on them.
-6. **Preservation versus copied neighboring schemas.** Rare uses need exact trigger questions, but C.27 should cite the result of C.16, C.28, G.9, C.26.3, or another direct pattern instead of reproducing its schema.
+6. **Preservation versus copied neighboring schemas.** Rare uses need trigger questions, but C.27 should cite the result of C.16, C.28, G.9, C.26.3, or another direct pattern instead of reproducing its schema.
 7. **Value neutrality versus acceleration bias.** C.27 must allow acceleration, deceleration, braking, redirecting, coasting, pausing, stabilizing, recovering, sustaining, widening, and narrowing without deciding which is valuable.
 
 ### C.27:3 - Solution
@@ -126,7 +126,9 @@ Unknown resistance can support a local diagnosis or planning discussion. It cann
 
 Ordinary practitioner prose may say, for example, “the engineer slowed the rollout” when it recognizably names the System acting in the situation.
 
-If the receiving claim relies on performed Work, identify the actual System actor, recover its A.13 core, and independently admit the dated Work under A.15.1. Add F.6 afterward only when the temporal claim also needs precise assignment-bound attribution. If the claim relies on a local system-role kind, System classification, or assignment, add each distinction separately. An assignment does not act and does not supply authority; cite its directly declared relation species and exact obtaining occurrence while still naming the holder System.
+If the receiving claim relies on performed Work, identify the actual System actor, recover its A.13 core, and independently admit the dated Work under A.15.1. Add F.6 afterward only when the temporal claim also needs precise assignment-bound attribution.
+
+If the claim relies on a local system-role kind, System classification, or assignment, add each distinction separately. An assignment does not act and does not supply authority; cite its directly declared relation species and exact obtaining occurrence while still naming the holder System.
 
 For a non-system input, name its actual direct relation to the temporal behavior, or keep it as an unresolved or source-side intervention claim. Keep authority, WorkPlan, capability, performed Work, and claimed effect separate.
 
@@ -134,9 +136,9 @@ For a non-system input, name its actual direct relation to the temporal behavior
 
 Observed cadence can remain Dyn1. A rhythm claim becomes Dyn2 only when effort pattern, coordination, recovery, stabilization, or another intervention-sensitive use changes the supported action.
 
-For coasting, ask what continues after effort changes or stops, why it may continue, over which window, what use that reading supports, and what change reopens it. Possible bases include habit, automation, stored work, queue pressure, learned capability, commitment momentum, social norm, physical inertia, or unknown; these are examples, not proof.
+For coasting, ask what continues after effort changes or stops, why it may continue, over which window, what use that reading supports, and what change reopens it. Possible bases include habit, automation, stored work, queue pressure, learned capability, commitment momentum, social norm, physical inertia, or unknown.
 
-Keep coasting and debt distinct. Coasting describes continued movement or stability. Debt or hysteresis describes what remains and how costly reversal or recovery is. A claim may need both. Rework, service demand, quality loss, burnout, hidden queues, risk, or coordination cost can appear after acceleration. Reversibility may be unknown; that bounds use instead of forcing a theory.
+Keep coasting and debt distinct. Coasting describes continued movement or stability. Debt or hysteresis describes what remains and how costly reversal or recovery is. A claim may need both. Rework, service demand, quality loss, burnout, hidden queues, risk, or coordination cost can appear after acceleration. Reversibility may be unknown; that bounds use.
 
 #### C.27:3.4 - Boundary-Crossing Header
 
@@ -159,7 +161,7 @@ activeNeighborResults:
 
 When the profile is used to identify an adequacy episteme, its EntityOfConcern is the source episteme or addressed claim denoted by `sourceTemporalClaimRef`. The profile's references preserve the direct results it consumes; they are not substituted for those results.
 
-Each activeNeighborResults entry names the actual result kind supplied by its direct pattern. Do not replace a C.16 measurement result, C.28 causal-use result, G.9 parity result, C.26.3 envelope-regulation claim, Work occurrence, evidence relation, or assurance claim with a generic C.27 field.
+Each activeNeighborResults entry names the result kind supplied by its direct pattern. Do not replace a C.16 measurement result, C.28 causal-use result, G.9 parity result, C.26.3 envelope-regulation claim, Work occurrence, evidence relation, or assurance claim with a generic C.27 field.
 
 ### C.27:4 - Archetypal Grounding
 
@@ -192,7 +194,9 @@ reopenTrigger:
   work-mix shift, saturation, quality loss, or a measured rate after sprint N that does not match the planning estimate
 ~~~
 
-For a numerical version of this constructed case, let the backlog start at 120 comparable items, the baseline reduction rate be 20 per week, and each sprint last one week with no new incoming items. The doubling assumption gives 40 per week and leaves 40 items after the two sprints. That conditional calculation can inform local staffing discussion without establishing the assumed gain. If the measured first-sprint reduction is 20, there is progress, but the uniform 40-per-week estimate is not met in that sprint. Reassess ramp-up and the remaining estimate before relying on the second-sprint forecast; the first sprint alone does not determine the two-sprint outcome. No boundary-crossing profile is needed for this local use.
+For a numerical version of this constructed case, let the backlog start at 120 comparable items, the baseline reduction rate be 20 per week, and each sprint last one week with no new incoming items. The doubling assumption gives 40 per week and leaves 40 items after the two sprints. That conditional calculation can inform local staffing discussion without establishing the assumed gain.
+
+If the measured first-sprint reduction is 20, there is progress, but the uniform 40-per-week estimate is not met in that sprint. Reassess ramp-up and the remaining estimate before relying on the second-sprint forecast; the first sprint alone does not determine the two-sprint outcome. No boundary-crossing profile is needed for this local use.
 
 #### C.27:4.2 - Braking to Protect Viability
 
@@ -263,7 +267,7 @@ Cross-bearer coupling is absent because the claim does not rely on synchronizati
 | --- | --- | --- |
 | “Backlog is 120 items today.” | Dyn0 snapshot | stop; C.16 only when the measurement construction matters |
 | “Backlog fell by 20 items per week.” | Dyn1 rate | stop or C.16; no intervention claim |
-| “More tool calls will speed debugging.” | exact outcome rate, System actor only when Work is claimed, input, resistance, evaluation evidence, stop or replan, and unsupported reasoning-quality inference | C.24, A.15.1, F.6, evaluation, and evidence as applicable |
+| “More tool calls will speed debugging.” | outcome rate, System actor only when Work is claimed, input, resistance, evaluation evidence, stop or replan, and unsupported reasoning-quality inference | C.24, A.15.1, F.6, evaluation, and evidence as applicable |
 | “Method A improves faster than Method B.” | Dyn1 versus Dyn2 comparison, baseline and other windows, effort parity, hidden costs, and no causal or universal superiority | G.9 and C.16; C.28 only for causal use |
 | Equal final scores | adaptation window, effort parity, rework, validity, and recovery may still differ | G.9 |
 | “Velocity improved after becoming the target.” | measure, target pressure, actual Work change, gaming or selection, causal claim if any, and proxy divergence remain separate | C.16, E.13, C.28 when causal; C.26 only for residual QL |
@@ -277,15 +281,15 @@ Cross-bearer coupling is absent because the claim does not rely on synchronizati
 | “More data, reviewers, tokens, calls, or capacity doubles improvement.” | scale variable, scale window, probes, elasticity, and parity are missing | C.18.1 and G.9 |
 | “Release velocity rose while service demand and recovery time worsened.” | acceleration, braking, recovery, hidden cost, and unsupported improvement claim remain visible | C.26.3, C.25, and direct harm, safety, or assurance patterns |
 | “We can halve review time for this regulated release.” | temporal action and window do not establish safety, legality, quality, or release permission | direct legal, quality, safety, gate, and assurance patterns |
-| “The process is agile.” | recover the actual local head before treating agility as a temporal claim | A.6.P first; C.27 only if braking, redirection, or rate change is current |
+| “The process is agile.” | recover the local head before treating agility as a temporal claim | A.6.P first; C.27 only if braking, redirection, or rate change is current |
 | “This chapter accelerates orientation.” | ordinary explanatory prose | no C.27 record unless used for a decision, comparison, promise, or intervention claim |
 | Dashboard, probe, token, or active-sensing wording | ordinary measurement and use questions remain primary | C.16, planning, evidence, control; C.26 only for a residual QL cue |
 
 ### C.27:5 - Optional Boundary-Trigger Reference
 
-Skip this section for ordinary local diagnosis and planning. It is a trigger-and-destination map, not a form. The examples in each row are representative rather than exhaustive.
+Skip this section for ordinary local diagnosis and planning. It is a trigger-and-destination map. The examples in each row are representative rather than exhaustive.
 
-| Trigger in the supported use | Distinction C.27 must not hide | Exact destination |
+| Trigger in the supported use | Distinction C.27 must not hide | Destination |
 | --- | --- | --- |
 | rate, measure, metric, score, proxy, or base-characteristic wording is not yet recoverable | do not guess the characteristic or measure from a familiar word | C.16.P |
 | rate or rate-change measurement | base characteristic, coordinate construction when current, construction method, sampling window, comparability, noise or stability, and evidence legality | A.19 and the exact C.16 result |
@@ -302,7 +306,7 @@ Skip this section for ordinary local diagnosis and planning. It is a trigger-and
 | multiple object traces | object bearers, events, interactions, queues, convergence or divergence, and aggregation | object-centric process evidence and aggregation patterns |
 | cross-scale transfer | source bearer, target bearer, aggregation, bearer continuity, mix shift, and explicit transfer-use boundary | aggregation, evidence, and architecture patterns |
 | changed scale variable | resource or capacity variable, scale window, probes, elasticity as rising, knee, flat, declining, or unknown, and parity; this differs from transferring a reading across bearers | C.18.1 and G.9 |
-| time-scale choice changes use | spot, episode, sprint, life-cycle, learning-cycle, technoevolution, lifetime, or another exact temporal scale is named only when it changes bearer, evidence, use, or reopen | C.27.TA and the direct domain pattern |
+| time-scale choice changes use | spot, episode, sprint, life-cycle, learning-cycle, technoevolution, lifetime, or another temporal scale is named only when it changes bearer, evidence, use, or reopen | C.27.TA and the direct domain pattern |
 | task-family adaptation | declared TaskFamily or TaskSignature, usable threshold, time and budget to threshold, prior exposure, transfer, retention, and downside | C.22.1 |
 | search speed | narrowing speed differs from novelty, archive growth, illumination, frontier coverage, and search health | C.17, C.18, and C.19 |
 | method composition or capability emergence | temporal adequacy does not define method composition, Work enactment, adaptive cycle, or capability emergence | B.1.5 and B.2.4 |
@@ -323,7 +327,7 @@ Skip this section for ordinary local diagnosis and planning. It is a trigger-and
 
 #### C.27:5.1 - Pattern-Use Notes
 
-- A local resistance value of unknown is allowed. It blocks stronger use without the direct evidence or assumption boundary required for that use; it does not force a new theory.
+- A local resistance value of unknown is allowed. It blocks stronger use without the direct evidence or assumption boundary required for that use.
 - A historical trend does not supply a control horizon, update rule, constraints, or stability.
 - Evidence from policy A does not carry policy B merely because both policies concern the same rate.
 - Equal final scores do not erase unequal adaptation windows, effort, rework, validity, or recovery.
@@ -343,7 +347,7 @@ Lenses: **Onto**, **Prag**, **Epist**, **Arch**, **Gov**.
 - **Arch:** C.27 keeps temporal-claim adequacy and cites the direct pattern for every other question.
 - **Gov:** a local card does not widen into a budget, gate, benchmark, promise, assurance, or public claim without the direct result required for that use.
 
-Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, service, and tool-call wording may help recognition. In a technical claim, recover the actual rate, temporal window, input or Work, resistance, exact bearer, and direct relation. This is an ontological recovery rule, not a lexical ban.
+Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, service, and tool-call wording may help recognition. In a technical claim, recover the rate, temporal window, input or Work, resistance, exact bearer, and direct relation.
 
 ### C.27:7 - Conformance Checklist
 
@@ -351,13 +355,13 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 | --- | --- |
 | C27-1 | A C.27 result exists only when the temporal distinction changes a practical use. |
 | C27-2 | The source claim and its subject are recoverable. When its independent identity is consumed, cite the exact episteme or ClaimAddress. |
-| C27-3 | A separately identified adequacy episteme concerns that source episteme or addressed claim; it does not silently substitute the described subject or reference value. |
+| C27-3 | A separately identified adequacy episteme concerns that source episteme or addressed claim; it does not substitute the described subject or reference value. |
 | C27-4 | The positive temporal aspect retains its bearer, predicate, temporal reference and required extent or condition under C.27.TA. A separate exact reference is used only when needed. |
 | C27-5 | Dyn0, Dyn1, and Dyn2 classify claims, not Systems or other world objects. |
 | C27-6 | Ordinary prose or a record supplies the required explanation. A fuller profile adds only the direct-result references and contributions needed by its use. |
 | C27-7 | The assessment recovers the claimed input, temporal effect, relevant time, resistance or cost, grounds and supported use. An unsupported use or reopening condition is stated when it changes the receiving action. |
 | C27-8 | Performed Work names the actual System actor, whose A.13 core precedes independent A.15.1 Work admission. F.6 follows only when precise assignment-bound attribution is current. An assignment remains a separate obtaining relation and never acts. |
-| C27-9 | A non-system input uses its actual direct relation or remains an unresolved or source-side intervention claim; no generic applier branch is created. |
+| C27-9 | A non-system input uses its actual direct relation or remains an unresolved or source-side intervention claim. |
 | C27-10 | A viability use retains the C.26.3 envelope claim and the bearer's direct identity; an exact separate claim reference is added when the receiving use requires it. |
 | C27-11 | Measurement, dynamics, Work, causality, benchmark, promise, value, quality, viability, scaling, adaptation, search, publication, assurance, and residual QL stay with their direct patterns. |
 | C27-12 | A sufficient local use can finish without the optional trigger reference. A dependent use cites the needed neighboring result without copying its schema. |
@@ -372,7 +376,7 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 | Effort-free acceleration | Name the claimed input, window when different, resistance or cost, and reason for the reading. |
 | Past slope becomes control law | Keep it diagnostic or cite the direct dynamics, control, or evaluation result. |
 | Rate change after effort becomes causal proof | Keep causal use unsupported or cite the exact C.28 result. |
-| Rhythm becomes decoration | State the bearer, recurrence and timing reference; add coupling and exact claim references when the receiving use depends on them. |
+| Rhythm lacks a bearer or timing | State the bearer, recurrence and timing reference; add coupling and exact claim references when the receiving use depends on them. |
 | Metric improvement becomes System improvement | Split measure, target, Work change, gaming or selection, causal claim, and proxy distortion. |
 | Local speed becomes aggregate agility | Name both bearers, aggregation, continuity, mix shift, and transfer boundary. |
 | Faster becomes better | Reopen value, harm, quality, promise, safety, legal, ethical, or assurance claims through their direct patterns. |
@@ -385,7 +389,7 @@ Plain speed, acceleration, effort, inertia, rhythm, agility, process, practice, 
 
 ### C.27:9 - Consequences and Reopen Conditions
 
-C.27 makes intervention-sensitive temporal claims inspectable. An adequate state or rate reading can remain sufficient; a stronger forecast needs its actual temporal and effect grounds.
+C.27 makes intervention-sensitive temporal claims inspectable. An adequate state or rate reading can remain sufficient; a stronger forecast needs its temporal and effect grounds.
 
 Refresh follows the receiving use:
 
@@ -417,7 +421,7 @@ C.27 adopts:
 - braking, redirection, coasting, recovery, stabilization, and rhythm as legitimate working questions;
 - interval-sensitive practice transfer, including the error introduced by copying static poses or rate words without the timing and effort pattern.
 
-C.27 uses physical vocabulary only for the temporal property or dependency actually claimed. Choose calculus, control modeling or another subject method when its operation is needed to answer that question.
+C.27 uses physical vocabulary only for the temporal property or dependency claimed. Choose calculus, control modeling or another subject method when its operation is needed to answer that question.
 
 ### C.27:11 - SoTA-Echoing
 

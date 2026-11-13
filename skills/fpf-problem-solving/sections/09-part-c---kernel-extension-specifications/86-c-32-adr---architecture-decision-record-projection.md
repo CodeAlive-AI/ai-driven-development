@@ -2,7 +2,7 @@
 
 > **Type:** Architecture publication pattern under C.32
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 ### C.32.ADR:1 - Problem frame
 
@@ -26,15 +26,15 @@ The primary `EntityOfConcern` is `ArchitectureDecisionRecordProjection@Project`:
 
 `ArchitectureDecisionRecordProjection@Project` is not a new `U.*` kind and not a new root publication ontology. It publishes a project decision description for the declared reader use. Use `E.24.PUB` for actual publication and `E.17` when a source-backed face and source return are needed; use `C.32.PAD` for the decision relation.
 
-What goes wrong if C.32.ADR is missed: the project either publishes a record-shaped text that hides the actual architecture decision, or it copies architecture descriptions, diagrams, and method material into a record without telling the reader what decision was made and what work must change.
+A project can publish a record-shaped text that hides the actual architecture decision, or copy architecture descriptions, diagrams, and method material into a record without telling the reader what decision was made and what work must change.
 
-What C.32.ADR buys in practice: a decision record can be small, readable, updateable, and still tied to candidate synthesis, selected structures, architecture characteristics, method-use instructions, work split, confirmation evals, and source-return.
+A decision record can be small, readable, updateable, and tied to candidate synthesis, selected structures, architecture characteristics, method-use instructions, work split, confirmation evals, and source-return.
 
 Ordinary working move: start from a PAD decision relation, select the record's publication scope, map each necessary section to the decision content it carries, then publish only what the reader needs to use, check, or reopen the decision.
 
 Adoption test: after using C.32.ADR, a future reader can recover the decision question, considered options, outcome, rationale, consequences, required method or work change, confirmation or eval path, source links, and supersession condition without mistaking the record for the architecture or the decision relation.
 
-Use `C.32.PAD` when the decision content still needs development; drafting its record can support that work without a second artifact. Keep an unresolved proposal visibly proposed. Use the direct subject pattern when the current question is architecture-description adequacy, a general MVPK face, evidence, assurance, gate passage, local choice, performed work or pattern authoring. Use the pattern for the next question named in `Relations`.
+Use `C.32.PAD` when the decision content needs development; drafting its record can support that work without a second artifact. Keep an unresolved proposal visibly proposed. Use the subject pattern when the current question is architecture-description adequacy, a general MVPK face, evidence, assurance, gate passage, local choice, performed work or pattern authoring. Use the pattern for the next question named in `Relations`.
 
 The first useful output is the readable decision record. `ArchitectureDecisionRecordProjection@Project` can organize its content when a structured account is useful; include the fields needed by the declared use:
 
@@ -65,7 +65,7 @@ ArchitectureDecisionRecordProjection@Project:
   publicationUseRefs?
 ```
 
-Here `@Project` is a compatibility and retrieval cue only. It does not make the projection a project, project work, or the architecture decision relation. When this record projection is genuinely local to one actual project, `projectWorkOccurrenceRef` identifies the exact composite `U.Work`, while `architectureDecisionRecordProjectUseRelationRef` identifies the direct relation by which the record is published for, relied on by, or otherwise used in that work under the corresponding subject pattern. The decision relation, its description, the publication projection, any publication occurrence, and the composite project work remain separately identifiable.
+Here `@Project` is a compatibility and retrieval cue only. It does not make the projection a project, project work, or the architecture decision relation. When this record projection is local to one project, `projectWorkOccurrenceRef` identifies the exact composite `U.Work`, while `architectureDecisionRecordProjectUseRelationRef` identifies the direct relation by which the record is published for, relied on by, or otherwise used in that work under the corresponding subject pattern. The decision relation, its description, the publication projection, any publication occurrence, and the composite project work remain separately identifiable.
 
 ### C.32.ADR:2 - Problem
 
@@ -73,7 +73,7 @@ ADR practice is useful because it makes architectural decisions small enough to 
 
 C.32.ADR treats ADR as a publication projection. The project decision relation belongs to `C.32.PAD`. The architecture description belongs to `C.30.AD` and related view patterns. The method description or pattern-use recommendation belongs to `A.15`, `E.8`, and `E.11.PUR` when those claims are live. The ADR-like record publishes a decision description for a declared reader and use.
 
-For a principle framework, use C.32.ADR only in the exceptional case where the accepted framework-architecture answer is also an exact project architecture decision with the `ArchitectureDecisionRelation@Project` and `ArchitectureDecisionDescription@Project` required by this pattern. Its prior basis may then cite the accepted answer and the exact `E.9` DRR that records it; acceptance remains a separate decision, and `E.4.PFAD` only profiles the framework-specific content. An ADR-like publication may project the question, selected answer, alternatives, rationale, consequences, status, links, and supersession conditions for declared readers. That projection remains separate from the answer, its acceptance, the DRR, framework realization, pattern quality, and publication adequacy. When the principle-framework answer is not an exact project architecture decision, publish the selected decision episteme or reader-specific projection through `E.24.PUB`, with `E.17` when its face/source-return conditions apply; do not use C.32.ADR.
+For a principle framework, use C.32.ADR only in the exceptional case where the accepted framework-architecture answer is also a project architecture decision with the `ArchitectureDecisionRelation@Project` and `ArchitectureDecisionDescription@Project` required by this pattern. Its prior basis may then cite the accepted answer and the exact `E.9` DRR that records it; acceptance remains a separate decision, and `E.4.PFAD` only profiles the framework-specific content. An ADR-like publication may project the question, selected answer, alternatives, rationale, consequences, status, links, and supersession conditions for declared readers. That projection remains separate from the answer, its acceptance, the DRR, framework realization, pattern quality, and publication adequacy. When the principle-framework answer is not a project architecture decision, publish the selected decision episteme or reader-specific projection through `E.24.PUB`, with `E.17` when its face/source-return conditions apply; do not use C.32.ADR.
 
 The section question is therefore not "which headings are allowed?" The section question is "which decision functions must a reader recover?" Headings can vary by organization or industry. Preserve the decision question, outcome, rationale, material consequences, status and update conditions; include options, Method/work instructions, confirmation and source return when they are needed for the declared use.
 
@@ -104,7 +104,7 @@ Work in this order:
 6. Carry the decision outcome. State the selected architecture option, bounded exception, or supersession relation from PAD.
 7. Carry rationale, accepted losses, and consequences. Include architecture-characteristic trade-offs and guardrails, not only benefits.
 8. Carry Method-use instructions and work split when the decision guides developer work. State the required action and expected structure effect plainly; cite the Method, pattern-use guidance or readiness rule when the reader needs it.
-9. Carry the confirmation, evaluation or violation-detection conditions needed by the decision's use. Use `C.32.ACE` for evaluation framing, `C.16` for measurement, `A.10` for a needed replayable source-to-use account, and `B.3`, `A.21` or the direct governance rule for the respective assurance, gate or authority claim. Preserve the actual support each claim requires.
+9. Carry the confirmation, evaluation or violation-detection conditions needed by the decision's use. Use `C.32.ACE` for evaluation framing, `C.16` for measurement, `A.10` for a needed replayable source-to-use account, and `B.3`, `A.21` or the governance rule for the respective assurance, gate or authority claim. Preserve the support each claim requires.
 10. Carry the applicable publication and source-return boundaries. Use `E.24.PUB` for publication occurrences and audience availability, `E.17` when a source-backed face and source return are needed, and `C.30.AD` for architecture-description claims.
 11. Carry status, supersession, and update conditions. Old records remain useful as history when superseded; the active decision relation tells which one governs current work.
 
@@ -122,7 +122,7 @@ Select the following functions by the declared reader use, retaining what is nee
 | Rationale | Why this outcome is acceptable now, including accepted losses and protected guardrails. |
 | Consequences | Expected effects on structures, methods, teams, costs, risks, evidence, operation, and later change. |
 | Method-use instruction | Required style, pattern use, method description, or work practice, when the decision changes developer work. |
-| Work split | Prospective allocation or instruction content through the plan, policy, commitment, permission, decision, responsibility, authority, or other direct relation that actually states it; otherwise the exact missing governor. Also show readiness or gate exits and the source-return condition. Professional titles are audience cues, not ownership predicates. |
+| Work split | Prospective allocation or instruction content through the plan, policy, commitment, permission, decision, responsibility, authority, or other direct relation that states it. If no applicable predicate is admitted, record the missing governor; keep an unresolved application premise distinct. Also show readiness or gate exits and the source-return condition. Professional titles are audience cues, not ownership predicates. |
 | Confirmation or eval exit | How the decision can be checked, evaluated, monitored, or found violated. |
 | Publication boundary | Links to architecture descriptions, views, evidence, assurance, and source material without making the ADR the source object. |
 
@@ -169,11 +169,11 @@ When one decision changes another, use explicit supersession or amendment links.
 
 | Anti-pattern | Symptom | Repair |
 |---|---|---|
-| `BlankTemplateADR` | A template is filled with plausible prose but no PAD relation can be cited. | Develop or recover the decision content with `C.32.PAD`, using the same draft if useful. Publish its actual status rather than treating completed template fields as a made decision. |
+| `BlankTemplateADR` | A template is filled with plausible prose but no PAD relation can be cited. | Develop or recover the decision content with `C.32.PAD`, using the same draft if useful. Publish its status rather than treating completed template fields as a made decision. |
 | `ArchitectureDescriptionDump` | The ADR copies diagrams, views, or model text and the decision outcome is hard to find. | Keep the record small; cite architecture-description refs and restore decision outcome, rationale, consequences, and work effects. |
 | `OptionsInventedInRecord` | The ADR lists options that were not part of candidate synthesis or accepted decision basis. | Use `C.32`, `A.19.CPM`, or PAD; update the decision relation before updating the record. |
-| `MethodInstructionHiddenInRationale` | A decision requires developers to change their practice, but the instruction is buried in rationale prose. | Record the prospective content through the exact plan, policy, commitment, permission, decision, responsibility, authority, or other direct relation that states it, with Method refs, intended Systems, expected structure effect, and readiness or gate exit; otherwise return its exact missing governor. Do not manufacture a current assignment or performed Work. If performance later occurs, recover every precise performer's A.13 core and independently admit the Work under A.15.1; add F.6 only when precise assignment-bound attribution is current, and add only the other direct relations that independently obtain. |
-| `NoConfirmationPath` | Future teams cannot tell whether the decision still holds or has been violated. | Add confirmation, eval, guardrail, source-return, or supersession condition; use the receiving evaluation or governance pattern. |
+| `MethodInstructionHiddenInRationale` | A decision requires developers to change their practice, but the instruction is buried in rationale prose. | Record the prospective content through the exact plan, policy, commitment, permission, decision, responsibility, authority, or other direct relation that states it, with Method refs, intended Systems, expected structure effect, and readiness or gate exit. If no applicable predicate is admitted, return the missing governor; keep an unresolved application premise distinct. Do not manufacture a current assignment or performed Work. If performance later occurs, recover every performer's A.13 core and independently admit the Work under A.15.1; add F.6 only when precise assignment-bound attribution is current, and add only the other direct relations that independently obtain. |
+| `NoConfirmationPath` | Future teams cannot tell whether the decision holds or has been violated. | Add confirmation, eval, guardrail, source-return, or supersession condition; use the receiving evaluation or governance pattern. |
 | `PackageOrderAsGovernance` | The latest file by number is treated as active without explicit status or supersession. | Add package map or status fields; make active, proposed, superseded, and related relations explicit. |
 
 ### C.32.ADR:9 - Consequences
@@ -189,7 +189,7 @@ When one decision changes another, use explicit supersession or amendment links.
 
 ADR practice is valuable when it makes architectural decisions communicable and revisitable. It becomes weak when a record is treated as the decision itself or when a template substitutes for decision work.
 
-C.32.ADR therefore uses the record as a projection. `C.32.PAD` governs the decision relation; the record publishes its description for a declared reader. Drafting can help develop that decision without establishing it by itself. This preserves the strongest ADR practice, small and updateable records, while adding FPF kind control for architecture descriptions, method descriptions, evidence, assurance, gate, publication, and performed work.
+C.32.ADR therefore uses the record as a projection. `C.32.PAD` governs the decision relation; the record publishes its description for a declared reader. Drafting can help develop that decision without establishing it by itself. This preserves the ADR practice of keeping records small and updateable, while adding FPF kind control for architecture descriptions, method descriptions, evidence, assurance, gate, publication, and performed work.
 
 The pattern also generalizes ADR practice beyond software by using section functions rather than software-specific carrier assumptions. A record can be a Markdown file, engineering memo, or certification rationale if it projects the decision description and keeps receiving claims with their subject patterns.
 
@@ -204,7 +204,7 @@ These sources inform the section functions, projection boundaries, and update co
 | ISO/IEC/IEEE 42010:2022 official standard (`https://www.iso.org/standard/74393.html`; IEEE page `https://standards.ieee.org/ieee/42010/6846/`) with the 42010 companion site as secondary reading (`https://iso-architecture.org/42010/`) | Current official source for architecture descriptions, viewpoints, views, correspondence, and rationale. | Keep architecture views as cited description refs inside the ADR projection. | A 42010 architecture description is not an ADR projection and not a PAD relation. |
 | 2026 ADR violation-detection research (`https://arxiv.org/abs/2602.07609`) | The study reports higher LLM violation-detection accuracy for explicit, code-inferable decisions and lower accuracy for implicit or deployment-oriented decisions that depend on deployment configuration or organizational knowledge. | Make confirmation, violation-detection scope, and non-code source refs explicit. | LLM-detectability is not evidence, assurance, or gate passage. |
 | Current FPF `E.8`, `E.17`, `E.24.PUB`, `A.15`, `A.10`, `B.3`, `C.30.AD`, and `C.32.PAD` | Existing FPF patterns define or constrain pattern form, publication, method work, evidence, assurance, architecture description, and decision relation. | Keep ADR projection thin and typed. | ADR projection does not duplicate pattern language, MVPK, method, evidence, assurance, gate, or description doctrine. |
-| NASA Systems Engineering Handbook, decision analysis and trade-study practice (`https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf`) plus domain certification-rationale practice where governed locally | Non-software engineering decisions are commonly recorded through trade studies, engineering memos, review records, safety cases, or certification rationale. NASA supplies a concrete source for alternatives, criteria, assumptions, recommendation, impacts, and decision documentation. | Generalize by record function and reader use rather than by Markdown file convention. | Non-software record form does not change the PAD decision relation or section functions. |
+| NASA Systems Engineering Handbook, decision analysis and trade-study practice (`https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf`) plus domain certification-rationale practice where governed locally | Non-software engineering decisions are commonly recorded through trade studies, engineering memos, review records, safety cases, or certification rationale. NASA supplies a source for alternatives, criteria, assumptions, recommendation, impacts, and decision documentation. | Generalize by record function and reader use rather than by Markdown file convention. | Non-software record form does not change the PAD decision relation or section functions. |
 
 **Source-currentness boundary.** Recheck a source row when ADR template practice, decision-record tooling, violation-detection practice, architecture-description practice, FPF publication patterns, or project governance changes the section function or update rule used by C.32.ADR.
 

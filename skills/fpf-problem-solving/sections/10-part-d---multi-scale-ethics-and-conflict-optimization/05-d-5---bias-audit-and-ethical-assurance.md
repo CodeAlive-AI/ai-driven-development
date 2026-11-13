@@ -4,9 +4,15 @@
 > **Status:** Stable
 
 
-**Use this when.** Use this pattern when you need to examine bias or fairness in a current or intended use, assess its effects on people, or establish what an ethical-assurance claim supports.
+**Use this when.** You need to examine bias or fairness in a current or intended use, assess its effects on people, or establish what an ethical-assurance claim supports.
 
-**Not this pattern when.** If the ethical value frame is missing, use `D.1`. If the current question is multilevel ethics entry, use `D.2`. If the current question is to describe the sides and tension of an interlevel ethical conflict, use `D.3`. If the current question is mediation or decision use of that conflict, use `D.4`. If the current question is only evidence, causality, assurance, measurement, or architecture residual without bias, fairness, human or group impact, or ethical assurance, use the corresponding subject pattern.
+**Not this pattern when.**
+
+- If the ethical value frame is missing, use `D.1`.
+- For multilevel ethics entry, use `D.2`.
+- To describe the sides and tension of an interlevel ethical conflict, use `D.3`.
+- For mediation or decision use of that conflict, use `D.4`.
+- If the question is only evidence, causality, assurance, measurement, or architecture residual without bias, fairness, human or group impact, or ethical assurance, use the corresponding subject pattern.
 
 **What goes wrong if missed.** Ordinary technical verification is accepted as sufficient while bias or harm to affected people remains unexamined.
 
@@ -27,7 +33,7 @@ The failure is to treat technical verification as sufficient for a fairness or e
 | Force | Tension |
 | --- | --- |
 | Ordinary verification vs. subgroup harm | Ordinary verification can leave bias or harm to particular groups unexamined. |
-| Bounded answer vs. stronger reliance | A current concern may need only a qualified answer; a release or assurance claim can need a fuller account of the basis, mitigations, and residuals it relies on. |
+| Bounded answer vs. stronger reliance | A concern may need only a qualified answer; a release or assurance claim can need a fuller account of the basis, mitigations, and residuals it relies on. |
 | Fairness wording vs. causal claim | Metric disparity, associative fairness, interventional fairness, and counterfactual fairness are different claims. |
 | Assurance relation vs. ethical permission | Assurance can record examined evidence and residuals, but cannot turn unresolved bias or harm into moral authorization. |
 | Connected audit vs. distinct supporting claims | Use the methods needed for measurement, causal support, assurance or ethical conflict; connect their results through the audit question and intended use. |
@@ -36,7 +42,7 @@ The failure is to treat technical verification as sufficient for a fairness or e
 
 Identify the object, the bias or fairness concern, and the use the answer must support. Give the result warranted by the available basis, with the affected groups and limitations that change that use. A metric comparison can finish at its qualified measurement result; recognizing a value conflict returns to `D.3` or `D.4`.
 
-An intended audit, fairness, or assurance conclusion must satisfy its own evidence conditions. A missing basis leaves that conclusion unsupported. Select further investigation and the record it needs for that particular claim or decision, using §3.1.
+An intended audit, fairness, or assurance conclusion must satisfy its evidence conditions. A missing basis leaves that conclusion unsupported. Select further investigation and the record it needs for that claim or decision, using §3.1.
 
 Use `BiasAuditAssuranceFrame@Context` to organize an audit whose recipient needs to inspect the connection among claims, evidence, constraints, and residuals. The applicable content may already be present in the result being used:
 
@@ -67,11 +73,11 @@ BiasAuditAssuranceFrame@Context:
   strongerSourceReturnCondition?
 ```
 
-The frame organizes the audit account. Include relied-on evidence and any stronger-source return needed by the particular conclusion.
+The frame organizes the audit account. Include relied-on evidence and any stronger-source return needed by the conclusion.
 
 ### D.5:3 - Bias and Fairness Recognition
 
-| Current claim | What D.5 requires | Neighboring owner |
+| Claim | What D.5 requires | Neighboring owner |
 | --- | --- | --- |
 | "This metric shows the system is fair." | Distinguish metric disparity, proxy choice, subgroup impact, and intended use. | `C.16` for metric construction |
 | "This intervention makes outcomes fair." | Declare the causal fairness use, C.28 support components and causal-use support result. | `C.28` |
@@ -100,13 +106,13 @@ BiasRegister@Context:
 
 Choose depth from the claim and consequence that the recipient needs to judge. A bounded finding, corrected metric statement, or identified conflict can complete the present use, including when it concerns an affected group or appears in a publication. Retain the limitation that prevents that result from being read as a wider fairness or assurance claim.
 
-Use a fuller `BiasAuditReport@Context` when the receiving decision needs to inspect the combined evidence, mitigations, and residuals behind an audit or assurance conclusion. A consequential or reusable causal-fairness audit retains this report and the C.28 support it consumes. A release that relies on a particular protective claim needs the evidence and audit account required to support that claim. Reuse a matching existing account; after a material change, reopen the claims whose basis or use changed. The report is a Description episteme or publication-use object, with scope and depth set by that reliance.
+Use a fuller `BiasAuditReport@Context` when the receiving decision needs to inspect the combined evidence, mitigations, and residuals behind an audit or assurance conclusion. A consequential or reusable causal-fairness audit retains this report and the C.28 support it consumes. A release that relies on a protective claim needs the evidence and audit account required to support that claim. Reuse a matching existing account; after a material change, reopen the claims whose basis or use changed. The report is a Description episteme or publication-use object, with scope and depth set by that reliance.
 
 A concrete indication of harm, a missing basis for an intended claim, or an applicable assurance requirement can make further investigation necessary before that use. Name what its result could change, who can obtain it, and whether its contribution warrants its full cost and delay; use `C.11.DUA` when this appraisal is unresolved. If the needed basis remains unavailable, state which intended claim remains unsupported and give any feasible narrower use, mitigation, or stop with its conditions.
 
-Exposure, repetition, automation, publication, and changed populations are cues to examine the actual use and consequence. They do not by themselves prescribe a full audit. When a protective or documentation requirement is disputed, use `C.11.DUA` to examine its hazard, threshold basis, protective contribution, feasibility, and distributed burden, while keeping its current force and amendment authority explicit.
+Exposure, repetition, automation, publication, and changed populations are cues to examine the use and consequence. They do not by themselves prescribe a full audit. When a protective or documentation requirement is disputed, use `C.11.DUA` to examine its hazard, threshold basis, protective contribution, feasibility, and distributed burden, while keeping its current force and amendment authority explicit.
 
-#### D.5:3.2 - Compact Bias Concern Taxonomy
+#### D.5:3.2 - Bias Concern Taxonomy
 
 | Code | Concern | Typical question |
 | --- | --- | --- |
@@ -126,17 +132,19 @@ When counterfactual fairness is consequential, reusable, published, or used for 
 
 Cite the C.28 result from the existing `BiasAuditReport@Context`. When only metric disparity is claimed, record the metric or evaluation result and stop. An interventional proxy may support a bounded interventional fairness statement, but it does not establish counterfactual fairness without the required estimand and support components.
 
-The C.28 result is one evidence basis for the audit conclusion. Interpret it within the declared audit scope. A release decision or ethical-assurance claim requires its own judgement and supporting basis.
+The C.28 result is one evidence basis for the audit conclusion. Interpret it within the declared audit scope. A release decision or ethical-assurance claim requires a judgement and supporting basis.
 
 ### D.5:5 - Ethical Assurance Boundary
 
-Ethical assurance is not a stamp of moral permission. It is an assurance claim that bias, fairness, impact, and accepted residuals have been examined for the current use.
+Ethical assurance is not a stamp of moral permission. It is an assurance claim that bias, fairness, impact, and accepted residuals have been examined for the use.
 
 Use `B.3` for the assurance relation. Establish the needed evidence and its currentness through the applicable subject and source rules; use `A.10` when the source-to-use relation is implicit or must be made replayable. Use `D.3` to describe an interlevel ethical conflict and `D.4` to mediate or use it in a decision. Use `C.30.ILC` when the issue is an architecture residual rather than a bias or fairness audit.
 
 ### D.5:6 - Archetypal Grounding (Worked Slice)
 
-A hiring-screening model has high aggregate accuracy and an internal note says it is "fair." D.5 first asks what fairness claim is being made. If the claim is only a metric disparity comparison, give the metric or evaluation result with its affected groups, intended use, and material limits, then stop. A recipient can reuse or publish that bounded comparison without treating it as a conclusion that hiring is fair. An intended stronger conclusion reopens its actual missing basis. If the team claims counterfactual fairness, C.28 must expose the causal estimand, additional counterfactual-identifiability assumptions, and an estimate with its consistency result when that estimate is relied on. Missing conditions lower the C.28 support result before D.5 decides its audit use. If the audit exposes a conflict between company efficiency and applicant harm across declared scopes, D.3 describes that conflict and D.4 guides its decision use.
+A hiring-screening model has high aggregate accuracy and an internal note says it is "fair." D.5 first asks what fairness claim is being made. If the claim is only a metric disparity comparison, give the metric or evaluation result with its affected groups, intended use, and material limits, then stop. A recipient can reuse or publish that bounded comparison without treating it as a conclusion that hiring is fair. An intended stronger conclusion reopens its missing basis.
+
+If the team claims counterfactual fairness, C.28 must expose the causal estimand, additional counterfactual-identifiability assumptions, and an estimate with its consistency result when that estimate is relied on. Missing conditions lower the C.28 support result before D.5 decides its audit use. If the audit exposes a conflict between company efficiency and applicant harm across declared scopes, D.3 describes that conflict and D.4 guides its decision use.
 
 ### D.5:6.1 - Bias-Annotation
 
@@ -151,8 +159,8 @@ A hiring-screening model has high aggregate accuracy and an internal note says i
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-D5-1 | The result names the audited EntityOfConcern, intended use, affected populations or Systems, and the bias, fairness, impact, or ethical concern being answered. Relied-on evidence and material limitations qualify its warranted use. Assurance use, repair return, ClaimScope, and qualification window are explicit when they delimit the audit; record and investigation depth follow the particular reliance in §3.1. | Keeps audit scope inspectable. |
-| CC-D5-2 | Metric, causal fairness, evidence, assurance, publication, and architecture-residual claims use their direct owners. | Prevents D.5 from swallowing neighboring patterns. |
+| CC-D5-1 | The result names the audited EntityOfConcern, intended use, affected populations or Systems, and the bias, fairness, impact, or ethical concern being answered. Relied-on evidence and material limitations qualify its warranted use. Assurance use, repair return, ClaimScope, and qualification window are explicit when they delimit the audit; record and investigation depth follow the reliance in §3.1. | Keeps audit scope inspectable. |
+| CC-D5-2 | Metric, causal fairness, evidence, assurance, publication, and architecture-residual claims use their subject patterns. | Prevents D.5 from swallowing neighboring patterns. |
 | CC-D5-3 | Ethical assurance is recorded as assurance or evidence relation, not moral permission. | Keeps assurance from becoming ethical authorization. |
 | CC-D5-4 | If the audit exposes interlevel conflict, use D.3 for the conflict description and D.4 for mediation or decision use. | Keeps D.5 connected to the D cluster without replacing it. |
 
@@ -172,11 +180,11 @@ A reader can distinguish a supported metric finding from a causal-fairness or et
 
 Technical accuracy alone does not establish fairness for affected groups. Connect the audit question with its object and intended use, then use the evidence appropriate to that claim. Measurement, causal support and ethical assurance answer different questions; interpret their results accordingly.
 
-Audit depth follows what a particular claim or decision needs from the result. A compact account can carry a useful finding; a stronger audit or assurance conclusion needs its supporting evidence and the record required for that reliance. Material changes reopen the affected basis, and a disputed requirement remains open to substantive appraisal without losing its present force.
+Audit depth follows what a claim or decision needs from the result. A compact account can carry a useful finding; a stronger audit or assurance conclusion needs its supporting evidence and the record required for that reliance. Material changes reopen the affected basis, and a disputed requirement remains open to substantive appraisal without losing its present force.
 
 ### D.5:10 - SoTA-Echoing
 
-For deciding what a fairness result supports, **adapt** C.16’s measurement interpretation and C.28:4.6’s claim-specific identification and estimation conditions. Against the aggregate-accuracy inference in :6, :2–4 retain the qualified metric result and obtain the additional causal basis only for a conclusion that needs it. Section :3.1 reuses an adequate audit account and selects further work from the actual reliance, while a missing required basis leaves the stronger conclusion unsupported. B.3 supplies any assurance relation and D.4 its ethical decision use. Reopen the affected basis when the population, intended use, claimed effect, evidence conditions or binding requirement changes.
+For deciding what a fairness result supports, **adapt** C.16’s measurement interpretation and C.28:4.6’s claim-specific identification and estimation conditions. Against the aggregate-accuracy inference in :6, :2–4 retain the qualified metric result and obtain the additional causal basis only for a conclusion that needs it. Section :3.1 reuses an adequate audit account and selects further work from the reliance, while a missing required basis leaves the stronger conclusion unsupported. B.3 supplies any assurance relation and D.4 its ethical decision use. Reopen the affected basis when the population, intended use, claimed effect, evidence conditions or binding requirement changes.
 
 ### D.5:11 - Relations
 

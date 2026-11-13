@@ -1,12 +1,15 @@
 ## F.7 - Display Source-Local Comparisons in a Concept-Set Table
 
-**“Put exact local meanings and already established relations side by side; let the table display the argument, never create it.”**
+**Put exact local meanings and established relations side by side. The table displays the argument. Each claim needs grounds independent of its place in the table.**
 
 **Type:** Architectural pattern.
 
 > **Status:** Stable
-**Depends on.** E.10.D1 **Recovering What “Context” Means in Use**; F.0.1 **Source-Local Meaning Recovery**; F.1 **Question-Relative Source Selection**; F.2 **Term Harvesting**; F.3 **Source-Local Sense Clustering**; F.17 for optional exact cells; F.5 **Naming Discipline**; F.9 for actual semantic relations and their separate bounded-use claims.
+
+**Depends on.** E.10.D1 **Recovering What “Context” Means in Use**; F.0.1 **Source-Local Meaning Recovery**; F.1 for finding and selecting sources for the question; F.2 for source-local term harvesting and normalisation; F.3 **Source-Local Sense Clustering**; F.17 for optional exact cells; F.5 **Naming Discipline**; F.9 for established relations between distinct source-local meanings and the separate claims about their bounded uses.
+
 **Coordinates with.** F.4 **SystemRoleKindDescription**; F.6 **SystemRoleAssignment and Performed-Work Attribution Check**; direct Part C patterns for the compared values; C.16 for characteristics; A.6.9 when umbrella sameness wording must be repaired before a relation is asserted.
+
 **Aliases (informative).** *Concept-Set table*; *comparison grid*; *Giants’ table*.
 
 ### F.7:1 - Intent & applicability
@@ -19,10 +22,10 @@
 
 ### F.7:2 - Problem frame
 
-Cross-source comparison commonly fails through:
+Four common errors in cross-source comparison are:
 
 1. **Silent equivalence:** similar labels are treated as one meaning.
-2. **Loss denial:** an actual relation is shown without direction or limitation.
+2. **Loss denial:** a relation that holds is shown without direction or limitation.
 3. **Name inflation:** a new umbrella label is coined merely because several entries share a row.
 4. **Cognitive scatter:** source meanings, relations, evidence, and the receiving question are separated across documents.
 
@@ -32,7 +35,7 @@ Cross-source comparison commonly fails through:
 | --- | --- |
 | **Locality vs comparison** | Each meaning remains source-local, yet the reader must compare them. |
 | **Didactics vs fidelity** | A compact row must not hide direction, loss, evidence, or a missing relation. |
-| **Simplicity vs completeness** | The page should be memorable without pretending that the table contains the full proof. |
+| **Simplicity vs completeness** | The page should be memorable while making clear when the full proof lies elsewhere. |
 | **Similarity vs relation** | Entries may look alike while no identity, hierarchy, or substitution relation obtains. |
 
 ### F.7:4 - Core idea (didactic)
@@ -46,7 +49,9 @@ A **Concept-Set row** is a didactic grouping for one stated comparison or use. I
 * the evidence or direct pattern that supports each substantive claim;
 * a counterexample or boundary showing where the comparison stops.
 
-The word *set* names the entries collected for display. It does not assert that they are one value. A row may show an identity, overlap, ordering, incompatibility, disjointness, or no relation at all, but only because that claim is established outside the layout. F.9 is used only when the actual relation is between distinct local meanings. For every other relation, cite the pattern that defines, constrains, or tests it.
+The word *set* names the entries collected for display. It does not assert that they are one value. A row can show a grounded relation, such as identity, overlap, ordering, incompatibility or disjointness. When the comparison asserts no relation, say so. A claim that a particular relation does not hold needs its own grounds.
+
+Use F.9 only for a relation between distinct local meanings. For every other relation, cite the pattern that defines, constrains, or tests it.
 
 ### F.7:5 - Minimal vocabulary
 
@@ -60,12 +65,12 @@ The word *set* names the entries collected for display. It does not assert that 
 
 ### F.7:6 - The table
 
-Use the smallest columns that make the current argument recoverable:
+Choose the fewest columns that make the current argument recoverable:
 
 | Comparison or use | Exact source-local entries | Obtaining relations and direction | Loss and boundary | Basis and evidence | Receiving-use conclusion |
 | --- | --- | --- | --- | --- | --- |
 
-For a teaching contrast, the relation column may say **none asserted** and the conclusion may say **keep distinct**. For an F.9 relation, show its declared relation kind, direction, CL if that relation actually defines one, and loss. Do not compute a row-wide CL or replace the separate bounded-use claim with a table label.
+For a teaching contrast, the relation column may say **none asserted** and the conclusion may say **keep distinct**. For an F.9 relation, show its declared relation kind, direction, CL if the relation defines one, and loss. Do not compute a row-wide CL or replace the separate bounded-use claim with a table label.
 
 **Reading rules:**
 
@@ -80,14 +85,14 @@ For a teaching contrast, the relation column may say **none asserted** and the c
 
 * **Start from a question.** State the comparison or receiving use before selecting entries.
 * **Bring exact local meanings.** Use F.0.1, F.2, F.3, and F.17 only as needed.
-* **Bring relations, do not manufacture them.** Cite the direct pattern and evidence for each relation that matters.
+* **Show established relations.** Cite the direct pattern and evidence for each relation that matters.
 * **State the receiving-use conclusion separately.** Say what the current comparison permits, with its basis and limits.
 * **Keep the row focused.** Add an entry only when it changes the answer.
 * **Use contrast.** When no adequate relation is established, show the difference rather than forcing a unification.
 
 ### F.7:8 - Invariants
 
-1. **Exact entries.** Every filled source-local cell identifies the exact source and edition and claim, or an exact F.17 cell.
+1. **Exact entries.** Every filled source-local cell identifies the particular source, edition and claim, or the particular F.17 cell.
 2. **No row-created relation.** Co-placement, matching labels, or a shared FPF designation establishes nothing about the entries.
 3. **Direct relation basis.** Every stated relation cites its direct pattern and available evidence; F.9 is conditional, not universal.
 4. **Separate receiving use.** Any conclusion about comparison, substitution, reporting, or reuse is stated and supported separately.
@@ -99,7 +104,7 @@ For a teaching contrast, the relation column may say **none asserted** and the c
 
 ### F.7:9 - Micro-illustrations
 
-> The examples show table shapes. Every positive relation still requires its own evidence in an actual use.
+> The examples show table shapes. To use a row for a particular comparison, supply evidence for each positive relation.
 
 
 
@@ -117,7 +122,7 @@ For a teaching contrast, the relation column may say **none asserted** and the c
 
 | Comparison or use | Exact source-local entries | Obtaining relations | Loss and boundary | Basis | Conclusion |
 | --- | --- | --- | --- | --- | --- |
-| Compare values against a service target | SOSA result claim; ISO 80000 quantity value; ITIL metric value | Exact measurement, scale and unit, and any source-local semantic relations that actually obtain | Composite ITIL indices may lack unit fidelity | C.16, F.9 when needed, cited observations | Comparable only for the named characteristic, scale conversion, population, and window. |
+| Compare values against a service target | SOSA result claim; ISO 80000 quantity value; ITIL metric value | Exact measurement, scale and unit, and any source-local semantic relations that obtain | Composite ITIL indices may lack unit fidelity | C.16, F.9 when needed, cited observations | Comparable only for the named characteristic, scale conversion, population, and window. |
 
 
 
@@ -132,7 +137,7 @@ For a teaching contrast, the relation column may say **none asserted** and the c
 
 | # | Anti-pattern | Symptom | Why harmful | Remedy |
 | --- | --- | --- | --- | --- |
-| **AP-1** | Row-created sameness | Entries are called “the same” because they share a row. | Layout is mistaken for evidence. | State the actual relation or mark a contrast. |
+| **AP-1** | Row-created sameness | Entries are called “the same” because they share a row. | Layout is mistaken for evidence. | State the established relation or mark a contrast. |
 | **AP-2** | Scope label as licence | “Naming-only” or another row label is treated as permission. | The receiving-use claim and its evidence disappear. | Write the use conclusion separately. |
 | **AP-3** | `senseFamily` typing | One broad label is used instead of explaining the comparison. | Hidden kinds and relations remain unnamed. | State the intensional comparison and direct relation. |
 | **AP-4** | Temporal blur | Design descriptions and Work occurrences are treated as interchangeable. | MethodDescription and Work collapse. | Show the distinction and any actual relation through F.11, A.3, and A.15. |
@@ -157,7 +162,7 @@ Section 11.1 supplies exact source bases for one contrast row. Sections 11.2–1
 
 | Comparison or use | Exact entries | Relation | Boundary | Basis | Conclusion |
 | --- | --- | --- | --- | --- | --- |
-| Report selected PLC task runs as provenance activities | IEC task-execution claim; PROV Activity claim | A stated source-local semantic or representation relation, direction IEC → PROV, when actually established | PROV omits scan-cycle and scheduling semantics | F.9 or the direct representation pattern plus evidence | Report only the covered occurrence facts; do not infer that every PROV Activity is an IEC task run. |
+| Report selected PLC task runs as provenance activities | IEC task-execution claim; PROV Activity claim | A stated source-local semantic or representation relation, direction IEC → PROV, when established for those entries | PROV omits scan-cycle and scheduling semantics | F.9 or the direct representation pattern plus evidence | Report only the covered occurrence facts; do not infer that every PROV Activity is an IEC task run. |
 
 Performed-Work attribution remains an A.15.1 and F.6 claim about actual Work and system-role assignment. The table supplies neither.
 
@@ -173,9 +178,9 @@ A contrast row may show OWL class inclusion, FPF `U.SubkindOf`, and FCA concept 
 
 #### F.7:11.5 - *Role* trigger word
 
-Show NIST RBAC **role** as a permission grouping and a local system-role-kind claim as a kind whose instances are Systems. Mark them **distinct subjects**. Use E.10.ROLE to recover other uses such as relation participation or signature position; do not assign them one `senseFamily` merely because the spelling matches.
+Show NIST RBAC **role** as a permission grouping. Beside it, show the local claim that identifies a system-role kind whose members are Systems. Mark them **distinct subjects**. Use E.10.ROLE to recover other uses such as relation participation or signature position. Shared spelling alone gives no basis for assigning one `senseFamily`.
 
-### F.7:12 - Safe reasoning moves
+### F.7:12 - Reasoning with a comparison row
 
 1. **Name the comparison.** What question or receiving use makes the row worth having?
 2. **Recover each entry.** Cite its exact source, scheme, expression, and local claim.
@@ -183,7 +188,7 @@ Show NIST RBAC **role** as a permission grouping and a local system-role-kind cl
 4. **Judge the use separately.** Explain what the named use may conclude and why.
 5. **Expose absence.** When no relation is established, say so and use a contrast row.
 6. **Resist closure.** Do not invent missing pairwise or transitive relations.
-7. **Extend cautiously.** Add a source only when its claim or relation changes the answer; re-evaluate the use conclusion.
+7. **Adding a source.** Include it only when its claim or relation changes the answer, then re-evaluate the conclusion for this use.
 8. **Keep evidence visible.** A table cell never replaces the evidence-use or reliance relation.
 
 ### F.7:13 - Relations
@@ -193,7 +198,7 @@ Show NIST RBAC **role** as a permission grouping and a local system-role-kind cl
 - Use **F.1** for the exact source cut and receiving question, and use **F.2** and **F.3** for exact expressions and source-local claims.
 - Use **F.17** only when durable local-meaning addresses are needed.
 - Use **F.5** for selected designations without making them the values being named.
-- Use **F.9** to define and test a relation between exact local meanings and to state the separate bounded-use claim when that is the actual relation family. A table creates none of these facts.
+- When the relation is between distinct source-local meanings, use **F.9** to define and test it for those meanings and to state the separate bounded-use claim. A table creates none of these facts.
 
 **Constrains:**
 
@@ -218,7 +223,7 @@ Show NIST RBAC **role** as a permission grouping and a local system-role-kind cl
 * **SCR-F7-S01 (exact entries).** Every local entry identifies an exact claim or F.17 cell and its source and edition.
 * **SCR-F7-S02 (no row-created fact).** No relation or permission is inferred from co-placement, label similarity, or layout.
 * **SCR-F7-S03 (relation basis).** Every positive relation cites the pattern that defines, constrains, or tests it, states direction where relevant, and cites its evidence.
-* **SCR-F7-S04 (receiving use).** Every practical use conclusion is separate from the row and has its own basis.
+* **SCR-F7-S04 (receiving use).** The row states the practical use conclusion separately from the relation between the entries and gives the grounds for that use.
 * **SCR-F7-S05 (loss disclosure).** Material limitations and counterexamples remain visible.
 * **SCR-F7-S06 (parsimony).** Every extra entry changes the current comparison or use.
 

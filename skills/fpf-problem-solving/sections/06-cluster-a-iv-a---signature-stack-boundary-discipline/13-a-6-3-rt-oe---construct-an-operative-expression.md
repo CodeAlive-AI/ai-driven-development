@@ -22,7 +22,7 @@ Content can be present while its useful relations remain difficult to recover. A
 
 Making the expression visually tidy can preserve that difficulty. Changing its arrangement can also suggest a relation that the source never supplied: equality through aligned marks, precedence through left-to-right position, or simultaneous action through matching rows.
 
-The task is to prepare the expression so that the needed operation can be carried out under its actual conventions, while retaining the content and qualifications that the operation uses.
+The task is to prepare the expression so that the needed operation can be carried out under its conventions, while retaining the content and qualifications that the operation uses.
 
 ### A.6.3.RT.OE:3 - Forces
 
@@ -45,7 +45,7 @@ Construction and use may alternate. A partial expression can be sufficient to ob
 
 #### A.6.3.RT.OE:4.1 - Recover the operation and the available content
 
-State what the practitioner should do with the expression and what result would count as useful. “Understand the diagram” is insufficient when the actual work is to compare two paths, substitute a quantity, identify a shared prerequisite or enter a phrase at the right time.
+State what the practitioner should do with the expression and what result would count as useful. “Understand the diagram” is insufficient when the work is to compare two paths, substitute a quantity, identify a shared prerequisite or enter a phrase at the right time.
 
 Recover the givens, constraints, unknowns and partial construction used by that operation. Keep their status visible when it matters: a given equality, a provisional correspondence and a result just derived support different next steps.
 
@@ -53,7 +53,7 @@ Use the subject Method to recover an absent operation or premise. B.5.RC and B.5
 
 ##### A.6.3.RT.OE:4.1.1 - Let a partial expression help obtain the question
 
-Sometimes the available material reveals a difficulty before it supplies a definite question. Start with an attainable operation on that material: place two reports together, arrange events by their stated times, separate an observation from its interpretation, or compare a proposed outcome with what is actually available. State what this attempt could distinguish. A provisional operation can be selected without pretending that the final inquiry is settled.
+Sometimes the available material reveals a difficulty before it supplies a definite question. Start with an attainable operation on that material: place two reports together, arrange events by their stated times, separate an observation from its interpretation, or compare a proposed outcome with what is available. State what this attempt could distinguish. A provisional operation can be selected while the final inquiry remains open.
 
 Try the operation and inspect what its expression lets you see. An unanswered position can expose a missing observation. Two incompatible interpretations can reveal a conflated question. A row that cannot accommodate a second attempt can reveal that the chosen unit was too coarse. Change the arrangement when the available material warrants that change; obtain a missing contribution when rearrangement cannot supply it.
 
@@ -75,9 +75,11 @@ Use the amount of labeling the operation needs. Reuse familiar conventions; expl
 
 A table also needs an interpretation for its rows and columns. A row may represent a case or relation with several participants, rather than one object. A column can ask for an object, quantity, condition or judgement. Explain what its entries denote and which combinations are meaningful before relying on alignment.
 
-For example, suppose a local `BenchKind` admits physical test benches already identified as `U.System` individuals. A column headed "Bench" asks which of those benches a job used. The entry `B7` designates a particular bench; it is not the name of the domain kind. `BenchKind` is a classification distinction, hence an individual of `U.Kind` under C.3.1, while B7 is classified by that distinction. These upper-kind, domain-kind and particular-object claims answer different questions. A table of kinds could instead contain `BenchKind` itself; it would need a different column interpretation.
+For example, suppose a local `BenchKind` admits physical test benches already identified as `U.System` individuals. A column headed "Bench" asks which of those benches a job used. The entry `B7` designates a bench; it is not the name of the domain kind.
 
-Use those distinctions to catch an actual mismatch. Placing `BenchKind` in the job's Bench position would name a classifying distinction when the operation needs the used bench. Placing a duration there supplies a different kind of value. A "30" in an occupation-duration column still needs its unit and interval meaning. Domain membership and the relation to this job require their own grounds; a heading or a successful spreadsheet entry does not establish them.
+`BenchKind` is a classification distinction, hence an individual of `U.Kind` under C.3.1, while B7 is classified by that distinction. These upper-kind, domain-kind and particular-object claims answer different questions. A table of kinds could instead contain `BenchKind` itself; it would need a different column interpretation.
+
+Use those distinctions to catch a mismatch. Placing `BenchKind` in the job's Bench position would name a classifying distinction when the operation needs the used bench. Placing a duration there supplies a different kind of value. A "30" in an occupation-duration column still needs its unit and interval meaning. Domain membership and the relation to this job require their own grounds; a heading or a successful spreadsheet entry does not establish them.
 
 Retain such annotations where the distinction changes inference, comparison or transfer. Familiar domain wording can be enough for an experienced reader. A computational validator can enforce the declared checks only when its implemented rules match this interpretation.
 
@@ -101,7 +103,7 @@ A useful relation may require an intermediate expression. Expand a shorthand, in
 
 Read the prepared expression using the selected conventions. Compare its participating parts, grouping, ordering and reference with the source content.
 
-Pay particular attention to a relation conveyed by position, enclosure, adjacency, repetition or timing. State its meaning when the convention does not already supply it. An arrow can mean implication, temporal order, a permitted transition or material flow; use the relation needed by this expression.
+Pay attention to a relation conveyed by position, enclosure, adjacency, repetition or timing. State its meaning when the convention does not already supply it. An arrow can mean implication, temporal order, a permitted transition or material flow; use the relation needed by this expression.
 
 When a plausible alternative interpretation would change the operation, test a small case that distinguishes it from the intended reading. In :5.2, the continuation C distinguishes two groupings because one requires A first and the other permits C on its own. The test exposes a change in permitted work that a list of retained letters would miss.
 
@@ -109,7 +111,7 @@ When the expression is used as a replacement for another, A.6.3.RT compares the 
 
 #### A.6.3.RT.OE:4.5 - Perform the operation and repair the expression
 
-Use the subject Method to perform the intended operation on the prepared expression. Inspect the actual transition: which parts were selected, how they were combined and what result followed.
+Use the subject Method to perform the intended operation on the prepared expression. Inspect the transition: which parts were selected, how they were combined and what result followed.
 
 If the operation cannot be followed, locate what is missing. The expression may hide a shared part, omit a scope delimiter or lack a stable reference. Repair that contribution. If the notation lacks a required distinction, return to scheme selection or design. If the subject inference or construction lacks a premise or operation, return to that Method.
 
@@ -192,7 +194,7 @@ For a performer who needs to locate the cycle boundaries inside this phrase, add
 
 The duration labels retain the whole phrase. These additional cues expose the positions needed for its coordination; use the compact labels alone when that relationship is already available to the performer.
 
-This case adapts Nelson's exercise 7. Reuse the pulse alignment when phrase and cycle change tempo together. Recompute it when a syllable duration in pulses, the cycle's pulse division or the phrase's entry relative to the cycle changes. A particular performer's fluency remains a question for actual performance.
+This case adapts Nelson's exercise 7. Reuse the pulse alignment when phrase and cycle change tempo together. Recompute it when a syllable duration in pulses, the cycle's pulse division or the phrase's entry relative to the cycle changes. A performer's fluency remains a question for performance.
 
 #### A.6.3.RT.OE:5.4 - Discover which duration an investigation needs
 
@@ -272,11 +274,11 @@ E.5.2 keeps interpretation portable across notations. C.37 helps choose represen
 
 ### A.6.3.RT.OE:11 - SoTA-Echoing
 
-**Practice question and selected answer.** How can available content be made usable in a notation for a particular operation? Prepare the participating parts, their common relations and a workable reference; try the subject operation and repair the expression.
+**Practice question and selected answer.** How can available content be made usable in a notation for an operation? Prepare the participating parts, their common relations and a workable reference; try the subject operation and repair the expression.
 
 **A comparison for the phrase/cycle use.** Consider a performer who knows the syllable-duration and hand-cycle conventions of :5.3 but still needs to locate the cycle boundaries within this phrase. Pulse-labelled syllables and a joint phrase/cycle expression are both available under the same pulse, duration assignments and six-pulse preparation. The compact syllable notation preserves the phrase and its durations; the performer must derive where the cycle boundaries occur. The joint expression adds the three boundary cues developed in :5.3: hold the first group's `ki` at pulse 12, begin the second group's `ṭa` at 24 and complete the final syllable as the next cycle begins at 36.
 
-Choose those additional cues when locating that relation is the current difficulty. Their price is three more entries to prepare and follow; their gain is that the needed coordination can be read at its common reference instead of being reconstructed during this use. The compact notation remains sufficient when the performer already coordinates the phrase with the cycle. This deliberately exchanges a little preparation and notation for an explicit relation. Once that relation can be followed from the compact notation, the extra entries can be omitted.
+Choose those additional cues when locating that relation is the current difficulty. Their price is three more entries to prepare and follow; their gain is that the needed coordination can be read at its common reference instead of being reconstructed during this use. The compact notation remains sufficient when the performer already coordinates the phrase with the cycle. This exchanges a little preparation and notation for an explicit relation. Once that relation can be followed from the compact notation, the extra entries can be omitted.
 
 **Adapt** Nelson's comparison of verbal instructions, pulse annotations and joint phrase/tāḷa notation (printed p. 17). It supplies the preparation-sensitive choice, rather than a measured universal improvement. The comparison governs the shared-reference operation in :4.3, the interpretation check in :4.4, the boundary cues in :5.3 and the sufficient-stop rule in :4.6.
 
@@ -284,9 +286,13 @@ Choose those additional cues when locating that relation is the current difficul
 
 **Manipulation and interpretation.** Catarina Dutilh Novaes, *Formal Languages in Logic: A Philosophical and Cognitive Analysis* (2012), §§3.2, 5.2 and 6.1, especially pp. 201-203, examines writing used in reasoning and learned symbolic manipulation. **Adapt** the connection between available rules, recipient preparation and operative use. Her discussion makes abstraction from meaning neither necessary nor sufficient for a cognitive gain. This pattern therefore keeps both rule-governed manipulation and the interpretation required by the next use. The source's accounts of human cognition do not establish equal effects for all readers or AI agents.
 
-**Vocal and gestural construction.** David P. Nelson, *Solkattu Manual: An Introduction to the Rhythmic Language of South Indian Music* (2008), printed pp. 17 and 19, supplies the notation comparison above and exercise 7's duration assignments, continuing hand cycle and six-pulse preparation. **Adapt** their coordination in :5.3; the added boundary cues are derived from those durations. The rhythmic Method and learned conventions supply the subject operation. The source's teaching advice and the constructed alignment give bounded support for this use; performance remains subject to its actual execution.
+**Vocal and gestural construction.** David P. Nelson, *Solkattu Manual: An Introduction to the Rhythmic Language of South Indian Music* (2008), printed pp. 17 and 19, supplies the notation comparison above and exercise 7's duration assignments, continuing hand cycle and six-pulse preparation. **Adapt** their coordination in :5.3; the added boundary cues are derived from those durations. The rhythmic Method and learned conventions supply the subject operation. The source's teaching advice and the constructed alignment give bounded support for this use; performance remains subject to its execution.
 
-**Exploratory expressions.** The two-column duration comparison in :5.4 preserves the reported numbers but leaves their meanings unresolved. The event table adds source-supported endpoints and permits the waiting/occupation distinction. Its fixed row convention then fails for Q43, whose two attempts require a different unit. Retain useful constraints while revising the one that excludes the relevant history. David Kirsh's [analysis of external representations in problem solving](https://link.springer.com/article/10.1007/s00146-010-0272-8) supports making operations possible through external arrangements; Shipman and Marshall's [analysis of premature formality](https://people.engr.tamu.edu/shipman/formality-paper/harmful.html) supports allowing structure to develop with the work. These are conceptual and historical grounds for the construction, not comparative efficacy evidence for the particular tables. The sufficient existing log remains the lower-burden alternative when it already supports the same operation.
+**Exploratory expressions.** The two-column duration comparison in :5.4 preserves the reported numbers but leaves their meanings unresolved. The event table adds source-supported endpoints and permits the waiting/occupation distinction. Its fixed row convention then fails for Q43, whose two attempts require a different unit. Retain useful constraints while revising the one that excludes the relevant history.
+
+David Kirsh's [analysis of external representations in problem solving](https://link.springer.com/article/10.1007/s00146-010-0272-8) supports making operations possible through external arrangements; Shipman and Marshall's [analysis of premature formality](https://people.engr.tamu.edu/shipman/formality-paper/harmful.html) supports allowing structure to develop with the work. These are conceptual and historical grounds for the construction, not comparative efficacy evidence for the tables.
+
+The sufficient existing log remains the lower-burden alternative when it already supports the same operation.
 
 These are conceptual and practice-specific sources for the chosen construction, with the common sequence developed by synthesis. Reopen the choice when an available expression supports the same operation with less preparation, a local repair fails because notation rules are inadequate, or use reveals a consequential relation that the current expression hides.
 

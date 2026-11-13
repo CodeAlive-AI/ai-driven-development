@@ -14,7 +14,7 @@ For an opportunity portfolio, name the later option that retention is meant to p
 
 This pattern governs opportunity retention and path construction, including development opportunities. A *portfolio* here is the maintained set of opportunity descriptions and their relevant relations. It is not a funding allocation, selected development programme, recommendation, or permission to realize every member. A *stepping stone* is a candidate step retained for what it may enable later, not necessarily for being best now.
 
-**Ordinary non-use boundary.** Do not create a portfolio when one current question needs only a direct qualification or choice and there is no useful later retention. Reuse an adequate set with its current conditions. Enter directly from existing opportunities; no complete opportunity-construction sequence is required. When an authorized programme and its implementation are already the subject, use the owning programme or work practice. If an actual search archive, front, or live-pool treatment is the question, use C.18 or C.19 at the specific return in `:4.5`.
+**Ordinary non-use boundary.** Do not create a portfolio when one current question needs only a qualification or choice and there is no useful later retention. Reuse an adequate set with its current conditions. Enter from existing opportunities; no complete opportunity-construction sequence is required. When an authorized programme and its implementation are already the subject, use the owning programme or work practice. If a search archive, front, or live-pool treatment is the question, use C.18 or C.19 at the return in `:4.5`.
 
 ### C.40.OP:2 - Problem
 
@@ -41,11 +41,11 @@ Retain an opportunity when its expected use or learning value justifies the burd
 
 #### C.40.OP:4.1 - State why and for how long something is retained
 
-Name the subject, receiving use, protected conditions, and the horizon or horizons that actually affect this inquiry. Use the horizon needed by the opportunity; do not impose universal near-, medium-, and long-term buckets. When horizons differ, preserve that difference rather than merging their anticipated results into one comparison.
+Name the subject, receiving use, protected conditions, and the horizon or horizons that affect this inquiry. Use the horizon needed by the opportunity; do not impose universal near-, medium-, and long-term buckets. When horizons differ, preserve that difference rather than merging their anticipated results into one comparison.
 
 For each retained opportunity, keep its contribution and support configuration, present qualification, source or parent candidate, retention reason, material retention burden, and revisit or discard condition recoverable. Name who will reconsider it when someone has accepted that responsibility. A source pointer may suffice for an unchanged description.
 
-Distinguish preserving an account from preserving an obtainable option. Saving a direction in a note does not reserve a provider, renew data rights, maintain a skill, or keep equipment ready. If retention needs resources or continuing Work, identify that burden and the actual authority or arrangement. Without it, retain a conditional possibility or description, not a claim that the option remains available.
+Distinguish preserving an account from preserving an obtainable option. Saving a direction in a note does not reserve a provider, renew data rights, maintain a skill, or keep equipment ready. If retention needs resources or continuing Work, identify that burden and the authority or arrangement. Without it, retain a conditional possibility or description, not a claim that the option remains available.
 
 An ordinary two-sentence account is enough:
 
@@ -55,11 +55,11 @@ An ordinary two-sentence account is enough:
 
 Name the later option or reachable region, the proposed enabling transition, and the evidence connecting the step to that later use. Ask what becomes possible, less costly, or better qualified because of this step, and what could show that the connection fails.
 
-When a later opportunity is still unknown, a smaller retention claim may suffice: keep an examined construction for an affordable next question. [C.40](../03-first-principles-framework-readme/_index.md) supplies the development and continuation Method. Preserve the material, operation and conditions that let someone try that continuation. Judge its burden against what the next answer could change; do not invent a distant payoff or call this a qualified path to an unnamed opportunity.
+When a later opportunity is unknown, a smaller retention claim may suffice: keep an examined construction for an affordable next question. [C.40](../03-first-principles-framework-readme/_index.md) supplies the development and continuation Method. Preserve the material, operation and conditions that let someone try that continuation. Judge its burden against what the next answer could change; do not invent a distant payoff or call this a qualified path to an unnamed opportunity.
 
 Keep a *candidate stepping stone* distinct from one whose retention is justified under the stated policy. A plausible connection may justify a bounded inquiry, but does not by itself justify performing the step. State the value, burden, delay, uncertainty, and protected conditions that make retention worthwhile for this use.
 
-A data-access question can be a candidate stepping stone toward representative evaluation. Its possible answers change which evaluation routes remain available. The question itself grants no access and establishes no model capability. A useful course, preliminary project, archive variant, or “zone of proximal development” label likewise needs the particular enabling relation and holder-owned evidence.
+A data-access question can be a candidate stepping stone toward representative evaluation. Its possible answers change which evaluation routes remain available. The question itself grants no access and establishes no model capability. A useful course, preliminary project, archive variant, or “zone of proximal development” label likewise needs the enabling relation and holder-owned evidence.
 
 Do not require immediate dominance. Retention can be justified by later reachability, coverage, learning, or reversibility even when another candidate has a stronger current result. Conversely, novelty or diversity alone is not proof of future usefulness.
 
@@ -67,7 +67,7 @@ Do not require immediate dominance. Retention can be justified by later reachabi
 
 For every material step in a path or branch, name its own starting configuration, finite change, and resulting candidate configuration. Write `S_i -> Δ_i -> S_i+1` only as compact notation for those three descriptions, not as evidence that the transition is feasible.
 
-Recover what the starting configuration inherits: established or still-conditional capability, support, access, ongoing Work, resource demand, remaining uncertainty, and effects of earlier choices. If the earlier step has not occurred, the later starting configuration is conditional too. If the path can branch, name the condition that distinguishes the continuations and the stop when neither is supported.
+Recover what the starting configuration inherits: established or conditional capability, support, access, ongoing Work, resource demand, remaining uncertainty, and effects of earlier choices. If the earlier step has not occurred, the later starting configuration is conditional too. If the path can branch, name the condition that distinguishes the continuations and the stop when neither is supported.
 
 State each step's transition burden, reversibility, and effects on later options. Do not repeatedly credit the full difference from the original configuration as each later step's contribution. Use [C.11.CRC](../03-first-principles-framework-readme/_index.md) for finite comparisons with the complete relevant result, resource, affected-System/distributional, and protected coordinates. Each coordinate keeps its own scale and polarity under the common comparison basis. When step horizons or scenarios differ, obtain an adequate mapping or keep those comparison claims separate.
 
@@ -81,25 +81,25 @@ Preserve materially different candidates, including conditional directions and a
 
 Use a comparison only for the question it answers. A result about non-domination requires a declared comparator, complete relevant coordinates, and admissibility basis. A retained candidate need not be non-dominated now. Different contribution premises or horizons may support only a partial comparison; do not invent one scalar ranking to make the portfolio look settled.
 
-Make resource interactions visible when retention itself competes for scarce attention, expertise, access, or maintenance. If the available retention allowance cannot support the set, return the needed allocation or reduction decision to its authorized owner. Meanwhile, describe only what the available maintenance actually supports. Do not silently make every member “available” by naming it in the portfolio.
+Make resource interactions visible when retention itself competes for scarce attention, expertise, access, or maintenance. If the available retention allowance cannot support the set, return the needed allocation or reduction decision to its authorized owner. Meanwhile, describe only what the available maintenance supports. Do not silently make every member “available” by naming it in the portfolio.
 
-Stop expanding the account when the next missing result belongs to a holder practice, an actual pool-treatment decision, or a local choice. The inquiry can return a useful partial set.
+Stop expanding the account when the next missing result belongs to a holder practice, a pool-treatment decision, or a local choice. The inquiry can return a useful partial set.
 
-#### C.40.OP:4.5 - Use archive, front, and pool treatment only for their actual questions
+#### C.40.OP:4.5 - Use archive, front, and pool treatment only for the questions they answer
 
-Use [C.18 — Open-Ended Search Archive and Front Stewardship](../03-first-principles-framework-readme/_index.md) when generation or retention actually needs a search archive, front, descriptor space, lineage, or exploration policy. Its archive preserves exploration or stepping-stone value; its front reports current non-domination under a declared comparator and admissibility. Neither return is a recommendation, selected-set declaration, or work permission.
+Use [C.18 — Open-Ended Search Archive and Front Stewardship](../03-first-principles-framework-readme/_index.md) when generation or retention needs a search archive, front, descriptor space, lineage, or exploration policy. Its archive preserves exploration or stepping-stone value; its front reports current non-domination under a declared comparator and admissibility. Neither return is a recommendation, selected-set declaration, or work permission.
 
-For generation, recover the generator, operators, descriptors, source/lineage, and retention basis that matter. Claim a changed possibility space only when that stronger claim changes the inquiry. A newly visited region under the same effective generation conditions is exploration, not evidence of expansion. Use C.18 for the earlier and candidate space declarations, changed component, supported mode, evidence, and blocked overread; causal claims require the direct causal result.
+For generation, recover the generator, operators, descriptors, source/lineage, and retention basis that matter. Claim a changed possibility space only when that stronger claim changes the inquiry. A newly visited region under the same effective generation conditions is exploration, not evidence of expansion. Use C.18 for the earlier and candidate space declarations, changed component, supported mode, evidence, and blocked overread; causal claims require the causal result.
 
-Use [C.19 — Explore–Exploit Governor](../03-first-principles-framework-readme/_index.md) when the current question is how to treat a still-live pool under its declared policy: widen it, keep its frontier, narrow it to a subset, or sunset a line. The policy may remain unchanged while that treatment question becomes current. Selecting the next local candidate or probe is a different question, as are generating a variant, declaring a selected set, and enacting Work.
+Use [C.19 — Explore–Exploit Governor](../03-first-principles-framework-readme/_index.md) when the question is how to treat a live pool under its declared policy: widen it, keep its frontier, narrow it to a subset, or sunset a line. The policy may remain unchanged while that treatment question becomes current. Selecting the next local candidate or probe is a different question, as are generating a variant, declaring a selected set, and enacting Work.
 
 Ordinary opportunity retention does not require all those practices. A few descriptions with recoverable reasons and conditions can be enough.
 
 #### C.40.OP:4.6 - Return a discriminating question and reconsider locally
 
-When further qualification or revision is needed, name the next question whose plausible answers would retain, narrow, reject, or open a particular opportunity or path. An adequate retained set can be used directly until its reconsideration condition occurs. Use the declared receiving policy to consider relevant value, inquiry burden, delay, protections, and uncertainty. Reuse a sufficient partial comparison; no complete ranking is needed merely to state the question.
+When further qualification or revision is needed, name the next question whose plausible answers would retain, narrow, reject, or open an opportunity or path. An adequate retained set can be used until its reconsideration condition occurs. Use the declared receiving policy to consider value, inquiry burden, delay, protections, and uncertainty. Reuse a sufficient partial comparison; no complete ranking is needed merely to state the question.
 
-If the question becomes “which candidate or probe should we choose now?”, return to the actual local choice or decision-support question. A proposed probe needs its own feasibility, exposure, authority, and execution basis before it becomes recommended or performed. An information request is not that authorization.
+If the question becomes “which candidate or probe should we choose now?”, return to the local choice or decision-support question. A proposed probe needs its own feasibility, exposure, authority, and execution basis before it becomes recommended or performed. An information request is not that authorization.
 
 Revisit at the declared trigger, including a material source, use, horizon, resource, support, permission, or evidence change. Use C.40.RQ to update the smallest affected opportunity and its dependent paths or advice. Preserve unaffected candidates and source lineage; retire a retention claim when its later use disappears, its cost no longer fits, or a qualified result defeats its enabling connection.
 
@@ -109,7 +109,7 @@ Revisit at the declared trigger, including a material source, use, horizon, reso
 
 #### C.40.OP:5.1 - An index changes the starting point of the later model step
 
-Consider a constructed review-support inquiry over ninety days. The actual case baseline is manual qualification, with sixty minutes per representative case and no separate index-maintenance allocation. A candidate index might reduce this to forty minutes, at two maintainer hours each week and six setup hours. A later retrieval-assisted configuration might reduce it to thirty minutes, with total maintenance of three hours weekly and four additional setup hours.
+Consider a constructed review-support inquiry over ninety days. The case baseline is manual qualification, with sixty minutes per representative case and no separate index-maintenance allocation. A candidate index might reduce this to forty minutes, at two maintainer hours each week and six setup hours. A later retrieval-assisted configuration might reduce it to thirty minutes, with total maintenance of three hours weekly and four additional setup hours.
 
 These are stipulated illustrative estimates under the same representative case type and compatible service assumptions, not observed effects. Data custody, representative verification, acceptance quality, and the feasibility of fitting the transitions within ninety days remain unqualified.
 
@@ -121,9 +121,9 @@ These are stipulated illustrative estimates under the same representative case t
 
 The second transition's marginal estimate is ten minutes per case, not thirty. A full path comparison against `S0` can still be made separately, but it must include the whole path's transition burden and time-dependent operating costs without counting the first gain again.
 
-The table is not a Pareto-improvement claim: maintenance demand increases and the protection/quality coordinates remain unqualified. Nor does it show that the index enables retrieval merely because it comes first. The relevant engineering result must establish whether the particular index and its data representation are actually reusable for the proposed retrieval configuration.
+The table is not a Pareto-improvement claim: maintenance demand increases and the protection/quality coordinates remain unqualified. Nor does it show that the index enables retrieval merely because it comes first. The engineering result must establish whether the index and its data representation are reusable for the proposed retrieval configuration.
 
-If that connection is absent, the index can remain a manual-support candidate on its independent contribution, while its stepping-stone claim remains unknown or is rejected. The team returns that exact reuse question rather than treating the three labels as a committed roadmap.
+If that connection is absent, the index can remain a manual-support candidate on its independent contribution, while its stepping-stone claim remains unknown or is rejected. The team returns that reuse question rather than treating the three labels as a committed roadmap.
 
 #### C.40.OP:5.2 - A retained question can cease to be a stepping stone
 
@@ -135,7 +135,7 @@ The steward rules out the proposed use. The team retires the stepping-stone clai
 
 #### C.40.OP:5.3 - Mira retains directions before choosing a programme
 
-In this constructed case, Mira is exploring review contributions over four months. She keeps two directions: develop more independent review capability, or improve the conditions for supported contribution. The first needs human-capability evidence about representative practice, feedback, and transfer; the second needs an actual continuing support arrangement. Both can remain described while those questions are open.
+In this constructed case, Mira is exploring review contributions over four months. She keeps two directions: develop more independent review capability, or improve the conditions for supported contribution. The first needs human-capability evidence about representative practice, feedback, and transfer; the second needs a continuing support arrangement. Both can remain described while those questions are open.
 
 A preliminary exercise is only a candidate stepping stone toward independent review until its enabling relation and feasible development conditions are supported. Being the first item in a course sequence is not that evidence. Retaining its description does not reserve Mira's practice time or a specialist's attention.
 
@@ -151,11 +151,11 @@ Ask what later use justifies retention now, what continuing burden it creates, a
 
 1. For a retained opportunity or proposed path, **MUST** bind the subject, receiving use, relevant horizon or horizons, and protected conditions. Retaining material for further inquiry without a known later opportunity uses the C.40 return in :4.2.
 2. **MUST** preserve each retained opportunity's contribution, conditions, lineage, retention reason, material burden, and revisit or discard condition.
-3. **MUST** distinguish preserving a description from maintaining an obtainable option and identify actual resources or authority where the latter requires them.
+3. **MUST** distinguish preserving a description from maintaining an obtainable option and identify resources or authority where the latter requires them.
 4. **MUST** state the later option or region, enabling transition, and evidence for a stepping-stone claim; a candidate connection may remain explicitly unqualified.
 5. **MUST** describe each material path step from its own starting configuration, finite change, and candidate result, including inherited uncertainty and continuing obligations.
 6. **MUST** preserve step-specific transition burden, reversibility, option effects, and the complete C.11.CRC basis when making finite comparison claims.
-7. **MUST** qualify joint reachability through C.40.JF or the adequate direct domain result before asserting it.
+7. **MUST** qualify joint reachability through C.40.JF or the adequate domain result before asserting it.
 8. **MUST** distinguish archive retention, current-front membership, live-pool treatment, local choice, and actual Work when those questions occur.
 9. **MUST NOT** force one scalar winner, universal horizon taxonomy, selected programme, or work permission from a retained set.
 10. **MUST** localize changed-premise effects, retire defeated retention claims, and preserve unaffected independent opportunities.
@@ -165,13 +165,13 @@ Ask what later use justifies retention now, what continuing burden it creates, a
 
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
-| Keep only today's best | Later reachability and useful exploration can disappear with a currently weaker candidate. | State the specific retention reason independently of current-front membership. |
+| Keep only today's best | Later reachability and useful exploration can disappear with a currently weaker candidate. | State the retention reason independently of current-front membership. |
 | Keep everything | Retention consumes resources and loses its practical purpose. | Name the later use, cost, reconsideration trigger, and discard condition. |
 | Every step starts from today | Earlier gains are counted again and earlier obligations vanish. | Reconstruct each step from its own inherited configuration. |
 | First in the sequence means enabling | Temporal order is mistaken for a supported stepping-stone relation. | Use a qualified connection to the later option, or retain only a candidate stepping stone. |
-| Saved means available | A note is treated as reserved capacity, maintained capability, or permission. | Qualify actual preservation or label the option conditional. |
+| Saved means available | A note is treated as reserved capacity, maintained capability, or permission. | Qualify the option's continued availability or label it conditional. |
 | More novelty means expanded possibilities | Visiting a region is mistaken for changing what the generator can admit. | Use C.18's earlier/candidate space and mode claim only when the stronger distinction matters. |
-| C.19 chooses my next probe | Pool treatment is mistaken for a local choice or permission. | Return the actual local decision and the probe's own feasibility and authority question. |
+| C.19 chooses my next probe | Pool treatment is mistaken for a local choice or permission. | Return the local decision and the probe's own feasibility and authority question. |
 
 ### C.40.OP:9 - Consequences
 
@@ -189,22 +189,22 @@ Stage-specific configurations make the retained path intelligible. A later step 
 
 **Practice question.** How can opportunity inquiry retain later possibilities and useful intermediate steps without forcing a current winner or disguising an unqualified sequence as a programme?
 
-**Best-known line for this use.** Retain candidates for an explicit later use, while comparing each finite step from its own inherited configuration. This pattern **adapts** C.18's distinction between archive exploration/stepping-stone value and current-front non-domination in `:4.1`–`:4.2` and `:4.5`. It **adopts** C.11.CRC's finite comparison and option-effect discipline in `:4.3`. C.19 supplies actual live-pool treatment, not a local next-probe choice.
+**Best-known line for this use.** Retain candidates for an explicit later use, while comparing each finite step from its own inherited configuration. This pattern **adapts** C.18's distinction between archive exploration/stepping-stone value and current-front non-domination in `:4.1`–`:4.2` and `:4.5`. It **adopts** C.11.CRC's finite comparison and option-effect discipline in `:4.3`. C.19 supplies live-pool treatment, not a local next-probe choice.
 
 **Serious alternative and trade-off.** Retaining only the current front is useful when immediate comparison is the whole question. It loses a presently weaker candidate whose supported enabling relation matters to a later use. Keeping an unrestricted backlog avoids that loss but hides retention costs and defeated premises. At the modest effort of the index case, adding a retention reason and a stage-specific increment exposes both the possible later use and the extra maintenance burden. The cost is reconsidering conditions that a static list ignores; comparative efficiency has not been measured.
 
-**Organization-specific source return.** [Proactive portfolio management in mission-oriented innovation policy, OECD, 2025](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/03/proactive-portfolio-management-in-mission-oriented-innovation-policy_6bc6df0e/1ee956a5-en.pdf), sections 2–4, supplies a current answer-bearing line on complementary activities, development-stage dependencies, resource distribution, adaptation, and termination. This pattern **adapts** those interdependence and reconsideration concerns in `:4.1`, `:4.3`, and `:4.6`. The source's mission-management scope includes selection and funding; opportunity retention here supplies inputs to those separately authorized moves. It establishes neither a universal three-horizon rule nor a person- or AI-development mechanism.
+**Organization-specific source return.** [Proactive portfolio management in mission-oriented innovation policy, OECD, 2025](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/03/proactive-portfolio-management-in-mission-oriented-innovation-policy_6bc6df0e/1ee956a5-en.pdf), sections 2–4, supplies current guidance on complementary activities, development-stage dependencies, resource distribution, adaptation, and termination. This pattern **adapts** those interdependence and reconsideration concerns in `:4.1`, `:4.3`, and `:4.6`. The source's mission-management scope includes selection and funding; opportunity retention here supplies inputs to those separately authorized moves. It establishes neither a universal three-horizon rule nor a person- or AI-development mechanism.
 
 **Limits and reopen.** The constructed cases show what must be distinguished; they do not demonstrate future option value or intervention effectiveness. This is not a complete comparison of investment-portfolio or real-options methods. Return such a specialist comparison when the receiving use requires valuation or allocation. Reopen the affected retention rule when a serious alternative preserves the needed possibilities at lower burden, the enabling evidence fails, or the governing use, source, horizon, or resource condition changes.
 
 ### C.40.OP:12 - Relations
 
-- **Receives from C.40.NU, C.40.PC, C.40.DC or adequate direct sources:** searched leads, proposed contributions, and direction/support candidates with source lineage.
-- **Uses C.40.JF and A.15.9:** joint reachability and exact external-result qualification for retained paths and stepping stones.
+- **Receives from C.40.NU, C.40.PC, C.40.DC or adequate sources:** searched leads, proposed contributions, and direction/support candidates with source lineage.
+- **Uses C.40.JF and A.15.9:** joint reachability and external-result qualification for retained paths and stepping stones.
 - **Uses C.11.CRC:** finite step comparisons, inherited configurations, complete coordinates, transition burden, and future option effects.
-- **Uses C.18:** actual generation, archive, front, descriptor, lineage, and possibility-space claims.
-- **Uses C.19:** treatment of a still-live pool under its declared policy; local choice remains a different result.
-- **Supplies bounded advising and decision support:** retained alternatives and conditional paths for an actual bounded advising and decision-support question.
+- **Uses C.18:** generation, archive, front, descriptor, lineage, and possibility-space claims.
+- **Uses C.19:** treatment of a live pool under its declared policy; local choice remains a different result.
+- **Supplies bounded advising and decision support:** retained alternatives and conditional paths for a bounded advising and decision-support question.
 - **Returns to programme design and learning-material production:** human programme comparison and later Guide realization; authorized choices and performed Work remain separate.
 - **Uses C.40.RQ:** affected reconsideration, revision, or retirement while preserving independent candidates.
 

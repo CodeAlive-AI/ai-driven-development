@@ -10,11 +10,11 @@
 
 Start with one input the work needs. Explain how it is prepared in the proposed system, which actions perform the computation and how the result is read. Compare the interpreted result with what the abstract computation requires. A failed input preparation, such as a command outside the interface's range, can already determine a useful repair.
 
-The first result is a realization design under stated conditions, an interpreted result from an execution, or a particular failed connection with a proposed correction. The method helps construct and use that connection. The engineering of a circuit, controller, physical apparatus or administrative arrangement supplies the mechanisms that perform the computation.
+The first result is a realization design under stated conditions, an interpreted result from an execution, or a failed connection with a proposed correction. The method helps construct and use that connection. The engineering of a circuit, controller, physical apparatus or administrative arrangement supplies the mechanisms that perform the computation.
 
-The reader should understand the intended computation and be able to obtain explanations of the system's relevant operations. The examples supply their arithmetic, elementary electrical account and card rules. More demanding uses need the corresponding knowledge of hardware, numerical methods, physical models or concurrent operation.
+The reader should understand the intended computation and be able to obtain explanations of the system's operations. The examples supply their arithmetic, elementary electrical account and card rules. More demanding uses need the corresponding knowledge of hardware, numerical methods, physical models or concurrent operation.
 
-Use an adequate existing implementation directly when its inputs, behavior and result interpretation already meet the receiving need. Use C.29.2 when the computational procedure itself must be constructed. Use B.5.MPC when the open question also concerns which physical account and mathematical question can answer the original problem.
+Use an adequate existing implementation when its inputs, behavior and result interpretation already meet the receiving need. Use C.29.2 when the computational procedure itself must be constructed. Use B.5.MPC when the open question also concerns which physical account and mathematical question can answer the original problem.
 
 ### C.29.3:2 - Problem
 
@@ -51,7 +51,7 @@ The second route must supply the result relation needed by the receiving work. T
 
 **Recover the needed result → prepare a representable input → construct the executing actions → interpret the output or behavior → compare the routes → repair the failed connection → use the sufficient result.**
 
-Enter at an already available contribution. A known device behavior can guide a revised formulation; a settled implementation can supply an operation within a larger computation.
+Enter at an available contribution. A known device behavior can guide a revised formulation; a settled implementation can supply an operation within a larger computation.
 
 #### C.29.3:4.1 - Determine what the receiving work needs
 
@@ -81,17 +81,17 @@ For each operation whose realization is unresolved, identify what the system doe
 
 When one logical operation spans several physical actions, examine the intervening states. Reserving a card, crossing a room boundary and returning the card are separate events. A visitor can be outside while the card is unavailable. Either show that the intervening behavior preserves the needed result, or change the model or the arrangement.
 
-For shared operation, determine how the same resource or state is accessed. Exclusive possession means that each card can be held by only one participant at a time. Independent copies of an available-card count require a different coordination mechanism. The applicable engineering or administrative method supplies that mechanism.
+For shared operation, determine how the same resource or state is accessed. Exclusive possession means that each card can be held by only one participant at a time. Independent copies of an available-card count require a different coordination mechanism. The engineering or administrative method supplies that mechanism.
 
 For repeated or timed operation, include completion, reset and ordering where they affect the result. Two relative increments add only when both are executed under the intended rule. Repeating an absolute target ordinarily asks for the same target again. An ongoing physical process can require a temporal model rather than a sequence of instantaneous assignments.
 
 A physical evolution can itself perform the computation. Determine which initial preparation, controls and interval make its readout useful. A sampler may use a stationary law; a finite-time estimator may use a transient. Choose the evolution and reading rule for the requested result.
 
-A.3.3 supplies the construction of state and permitted continuations. A.6.1:4.6 supplies the realization relation when a reusable operation declaration needs it. Their contributions leave the particular circuit, physical interaction or operating procedure to its subject method.
+A.3.3 supplies the construction of state and permitted continuations. A.6.1:4.6 supplies the realization relation when a reusable operation declaration needs it. Their contributions leave the circuit, physical interaction or operating procedure to its subject method.
 
 #### C.29.3:4.4 - Construct result interpretation
 
-Identify the state or indication that the receiver can actually obtain, and explain how it yields the computational result. Give its scale, reference, timing and aggregation rule wherever those change the answer. When several observations yield an estimate, include their dependence in the sampling argument; the number of readings alone does not determine the estimate's uncertainty.
+Identify the state or indication that the receiver can obtain, and explain how it yields the computational result. Give its scale, reference, timing and aggregation rule wherever those change the answer. When several observations yield an estimate, include their dependence in the sampling argument; the number of readings alone does not determine the estimate's uncertainty.
 
 Derive this interpretation from the executing relation. An input scale need not be the output scale. In the analog example below, each input uses one volt for ten units, while the output uses one volt for twenty units.
 
@@ -103,11 +103,11 @@ Use C.16 when reading the result requires a measurement model. Instrument loadin
 
 Work a small input through both routes with its meanings intact. Then establish why the required relation holds over the input range or histories for which the result will be used.
 
-For a finite case, a complete case analysis can suffice. For an invariant, show it in the initial state and show how every permitted operation preserves it. For an approximate result, propagate the relevant losses to the quantity used by the receiver. For a sampler or statistical estimator, compare the relevant distributions or estimation properties. Use the mathematical, numerical or empirical method appropriate to that claim.
+For a finite case, a complete case analysis can suffice. For an invariant, show it in the initial state and show how every permitted operation preserves it. For an approximate result, propagate the losses to the quantity used by the receiver. For a sampler or statistical estimator, compare the distributions or estimation properties. Use the mathematical, numerical or empirical method appropriate to that claim.
 
 For example, a required binary sampler gives output 1 with probability 0.5. Suppose the device model gives probability p between 0.49 and 0.51 under the intended preparation. The absolute discrepancy in that probability is at most 0.01, so it meets a tolerance of 0.02. Comparing two individual draws cannot establish or refute that distributional result. Estimating p from a finite run requires the sampling assumptions and uncertainty calculation appropriate to those observations.
 
-When the requested result contains several random components, compare their joint behavior. Suppose the target is a pair of independent fair bits. Preparing one fair bit B and returning (B,B) gives the right distribution at each output separately. But the target assigns probability 1/2 to unequal outputs; this system assigns probability 0. Using two independent draws gives each of the four pairs probability 1/4 and restores the requested result. The realization must provide that joint sampling behavior. When its observations are dependent, use the actual joint law or change how the second component is obtained.
+When the requested result contains several random components, compare their joint behavior. Suppose the target is a pair of independent fair bits. Preparing one fair bit B and returning (B,B) gives the right distribution at each output separately. But the target assigns probability 1/2 to unequal outputs; this system assigns probability 0. Using two independent draws gives each of the four pairs probability 1/4 and restores the requested result. The realization must provide that joint sampling behavior. When its observations are dependent, use the joint law or change how the second component is obtained.
 
 Choose changed cases from consequential features of the arrangement: an endpoint of the command range, a different initial state, an overlapping action or a possible indication error. These cases help locate failures. A sampled success supports the tested case; the broader argument supplies the broader conclusion.
 
@@ -131,11 +131,11 @@ When adapting the formulation and the apparatus together could improve the resul
 
 Give the usable realization, input conditions, interpreted consequence and the change that would require reconsideration. Preserve the derivation or operating explanation at the depth needed by its receiver; a short calculation may be enough.
 
-A conditional design can finish before a device is built. An observed execution can establish a result for its actual conditions. An identified incompatibility can stop an unsuitable implementation and open another. Further information or assurance is obtained when the receiving use requires its contribution.
+A conditional design can finish before a device is built. An observed execution can establish a result under its conditions. An identified incompatibility can stop an unsuitable implementation and open another. Further information or assurance is obtained when the receiving use requires its contribution.
 
 ### C.29.3:5 - Archetypal Grounding
 
-These constructed cases expose different realization failures. They establish consequences of the stated models; using an actual apparatus also requires the relevant physical and operating knowledge.
+These constructed cases expose different realization failures. They establish consequences of the stated models; using an apparatus also requires physical and operating knowledge.
 
 #### C.29.3:5.1 - Carry a calculated count through a finite command interface
 
@@ -159,7 +159,7 @@ Suppose the interface wraps modulo 65,536 and interprets the result as signed. T
 modeled displacement ≈ -0.0588734463 m
 ~~~
 
-The calculation of the desired count remains correct; input preparation changes the delivered count. An interface that rejects the value would produce a different failure, so the actual interface behavior matters.
+The calculation of the desired count remains correct; input preparation changes the delivered count. An interface that rejects the value would produce a different failure, so the interface behavior matters.
 
 One repair uses two completed commands of 31,831. Under the relative-addition rule, their total is 63,662 and their modeled displacement is approximately 2.0000007151 m. The preparation now supplies two representable values, and the execution argument uses addition across their completed displacements.
 
@@ -167,7 +167,7 @@ If a command means "reach this absolute count," repeating 31,831 leaves the same
 
 A range restriction is another useful repair. The largest positive relative command corresponds to approximately 1.0294056648 m under this model. Whether that restriction is adequate depends on the requested motion. A deadline can make two commands unsuitable even when their displacements add.
 
-The result is a command procedure with a stated input range and composition rule. For actual travel, determine whether the commands were completed and use a measurement or physical relation that accounts for consequential slip and effective radius.
+The result is a command procedure with a stated input range and composition rule. To assess travel, determine whether the commands were completed and use a measurement or physical relation that accounts for consequential slip and effective radius.
 
 #### C.29.3:5.2 - Read an analog sum with the output scale it needs
 
@@ -185,7 +185,7 @@ Each source is connected through an equal resistor R to one common node. The sup
 Vout = (Vx + Vy) / 2
 ~~~
 
-The arrangement physically produces an average voltage. To obtain the intended sum, derive its readout:
+The arrangement produces an average voltage. To obtain the intended sum, derive its readout:
 
 ~~~text
 decoded result = 20 × [Vout expressed in volts]
@@ -205,7 +205,7 @@ decoded-result error ≤ 20 × 0.003 = 0.06
 
 An absolute tolerance of 0.1 is therefore met under these bounds. A tolerance of 0.01 is not established by them. Better input setting or readout, a different realization, or a weaker receiving requirement would need comparison. The bound is deterministic; no cancellation or probability distribution has been assumed.
 
-If the instrument loads the node or the resistor values differ, the stated averaging relation needs revision. Those changes belong in the circuit and measurement account, through C.16 where appropriate. The common realization method supplies the preparation/execution/readout comparison and the receiving error calculation. Electrical design supplies the physical law and actual component behavior.
+If the instrument loads the node or the resistor values differ, the stated averaging relation needs revision. Those changes belong in the circuit and measurement account, through C.16 where appropriate. The common realization method supplies the preparation/execution/readout comparison and the receiving error calculation. Electrical design supplies the physical law and component behavior.
 
 #### C.29.3:5.3 - Preserve a bound during material admission operations
 
@@ -231,13 +231,13 @@ A second entrance can share the same stock or receive a partition of it, such as
 
 Partitioning can cause waiting at one entrance while a card is free at the other. Moving an existing free card preserves the total; creating another accepted card changes it. This separates the capacity property from the additional question of useful service across entrances.
 
-The result is a conditional admission arrangement, its preserved bound and a qualified reading of the free stock. The administrative method supplies controlled entry, exclusive possession and return. The mathematical construction makes explicit which physical and procedural properties the computation consumes.
+The result is a conditional admission arrangement, its preserved bound and an occupancy bound derived from the free stock. The administrative method supplies controlled entry, exclusive possession and return. The mathematical construction makes explicit which physical and procedural properties the computation consumes.
 
 ### C.29.3:6 - Bias-Annotation
 
 | Bias | Action-changing consequence | Correction |
 | --- | --- | --- |
-| A correct program is taken to settle its execution | A valid count is changed by preparation or readout. | Follow a required input through the actual encoding and interpretation. |
+| A correct program is taken to settle its execution | A valid count is changed by preparation or readout. | Follow a required input through the encoding and interpretation. |
 | Input and output are assumed to use one scale | The analog sum is read as half its value. | Derive the output interpretation from the executing relation. |
 | Logical atomicity is projected onto physical actions | Reservations and unfinished returns are counted as occupants. | Represent the intermediate states or establish why they leave the required property intact. |
 | Local success hides a shared resource | Two locally correct stocks exceed one room's capacity. | Recover the common stock or state and how each participant changes it. |
@@ -245,7 +245,7 @@ The result is a conditional admission arrangement, its preserved bound and a qua
 
 ### C.29.3:7 - Conformance Checklist
 
-Apply the checks to the particular realization and use. Their answers can remain in the working calculation, diagram or operating explanation.
+Apply the checks to the realization and use. Their answers can remain in the working calculation, diagram or operating explanation.
 
 | Check | What must be recoverable |
 | --- | --- |
@@ -282,15 +282,15 @@ Constructing those connections can cost more than the displayed calculation. Reu
 
 Mathematical result transfer compares accounts and their operations. Computational formulation constructs a procedure for the requested result. Realization begins with that procedure and asks how an executing arrangement supplies it. Its new work is preparation, physical or operational execution, readout and comparison under the conditions of use.
 
-A.6.1 provides the declaration and realization relation. It leaves the design and interpretation of a particular executing arrangement to the method that uses the relation. C.29.3 supplies that constructive work within the mathematical-use family. The method can be entered directly with an available computation.
+A.6.1 provides the declaration and realization relation. It leaves the design and interpretation of an executing arrangement to the method that uses the relation. C.29.3 supplies that constructive work within the mathematical-use family. The method can be entered with an available computation.
 
 Checking a program alone is useful when its execution environment is already established. It is insufficient for the unresolved interface, readout and shared-stock cases here. The present comparison follows only connections on which the receiving result depends.
 
 #### C.29.3:10.2 - Preparation, execution and interpretation
 
-[Horsman and colleagues (2014)](https://arxiv.org/abs/1309.7979) distinguish abstract computation from its use through physical preparation, evolution and representation. Adopt their comparison as the basis for :4. The practical extension here is to return the equality, bound or behavior needed by the work, and to repair the particular connection that defeats it.
+[Horsman and colleagues (2014)](https://arxiv.org/abs/1309.7979) distinguish abstract computation from its use through physical preparation, evolution and representation. Adopt their comparison as the basis for :4. The practical extension here is to return the equality, bound or behavior needed by the work, and to repair the connection that defeats it.
 
-That account is one theory of physical computation. The method uses its constructive comparison without settling every philosophical classification of computing systems. For the declared use, establish whether the interpreted execution supplies the required result under the stated conditions, using :4.5.
+That account is one theory of physical computation. The method uses its constructive comparison. For the declared use, establish whether the interpreted execution supplies the required result under the stated conditions, using :4.5.
 
 The examples explain why both directions matter. Input preparation asks what state can be made; output interpretation asks what result can be obtained from the state or indication. They can have different scales, ranges and physical means.
 
@@ -304,7 +304,7 @@ The robot calculation supplies a command; the command's execution and its relati
 
 A fixed computation can be a useful constraint on the device design. A fixed device can instead suggest more suitable computational operations. [Stepney (2019), §§4–5](https://eprints.whiterose.ac.uk/id/eprint/147381/) proposes combining these directions in model-and-substrate co-design.
 
-[Kalita and colleagues (2026), §§1 and 3–4](https://arxiv.org/html/2603.24531v1) develop the reverse direction through a bosonic-device example: capabilities of the physical system inform a computational model and language. Adapt this source contribution as the formulation return in :4.6. Developing such a language requires its own constructive repertoire; a return from realization identifies that work rather than completing it.
+[Kalita and colleagues (2026), §§1 and 3–4](https://arxiv.org/html/2603.24531v1) develop the reverse direction through a bosonic-device example: capabilities of the physical system inform a computational model and language. Adapt this source contribution as the formulation return in :4.6. Developing such a language requires its own constructive repertoire; a return from realization identifies that work.
 
 The analog example shows a small instance of the same design freedom. Keeping the averaging circuit and changing its encoding or decoding can supply a useful addition operation. The physical relation constrains which interpretation works.
 
@@ -318,7 +318,7 @@ The selected answer combines a physical-realization comparison with scope-sensit
 | --- | --- | --- |
 | How does an abstract result become obtainable through a physical arrangement? | **Adopt** preparation, evolution and interpretation from Horsman et al. (2014), as used in :4.2–4.5. | Compared with abstract refinement alone, the comparison exposes input and readout failures. The theory's general classification claims are outside this method's required conclusion. |
 | How does computation participate in physical control? | **Adapt** the compute-cycle/control-cycle distinction from Horsman et al. (2026) in :4.1 and :4.3. | The preprint sharpens the timing and output question. Its broader claim about all control systems is not needed to establish these worked cases. |
-| Should the device or the computational model change? | **Adapt** Stepney's 2019 co-design proposal and Kalita et al.'s 2026 substrate-to-model construction as the two-way return in :4.6. | A fixed-model implementation remains preferable when it meets the use at lower cost. The bosonic example demonstrates a particular methodology; it establishes no general performance advantage for every substrate. |
+| Should the device or the computational model change? | **Adapt** Stepney's 2019 co-design proposal and Kalita et al.'s 2026 substrate-to-model construction as the two-way return in :4.6. | A fixed-model implementation remains preferable when it meets the use at lower cost. The bosonic example demonstrates a methodology; it establishes no general performance advantage for every substrate. |
 | How is a stochastic program realized? | **Adapt** the distinction between a target stochastic program, its compiled kernels and its interpreted readout from [Amico et al. (2026), III and V](https://arxiv.org/html/2608.01615v1), in :4.1 and :4.5. | Comparing local operations, composed output laws and receiving-task results can reveal different failures. The preprint's compilation demonstrations do not establish a general hardware energy advantage. |
 | Must physical evolution reach equilibrium? | **Adapt** the finite-time approximation choice from [Thermodynamic natural gradient descent (2026), Results](https://www.nature.com/articles/s44335-025-00049-x), in :4.3. | A useful inner estimate can support the learning update before equilibrium. The reported thermodynamic timing is estimated; select the interval by the receiving computation's requirements. |
 | How much additional checking is useful? | **Use** C.11.DUA to compare what a further observation, proof or trial could change. | A conditional design can be sufficient. An actual-performance or wider-range claim needs the grounds that its receiving use consumes. |

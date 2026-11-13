@@ -4,7 +4,7 @@
 
 > **Type:** Architectural (A)
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 > **One-sentence summary.** Find inspectable material for the current question, expose search and access limits, and select the smallest sufficient source set when its claims, rivals or counterexamples need a justified basis.
 
@@ -17,7 +17,9 @@
 
 When candidate sources are already inspectable and more than one may change the answer, use :4.2 to justify the smallest sufficient source cut. Ask how each exact source and edition can change the answer or its limits, and retain the distinct contributions that matter. Finding and source selection can be used separately: a sufficient known source can answer directly, and a justified cut can start without a new search.
 
-The source-selection branch returns one `SourceCutNote : U.Episteme`. Before treating the note as that episteme, identify the receiving question as one exact project entity. That question is the note's `EntityOfConcern`; the intended use remains in the ClaimGraph rather than becoming a second subject. Name the effective reference scheme explicitly: it must resolve the question, the cited source-edition designators, and the answer-changing role claims. The ClaimGraph also names deliberate exclusions, known limits or source gaps, and reopen conditions. If the question or scheme is still missing, keep an ordinary working note and return that missing value instead of claiming a C.2.1 episteme. A one-screen source note may represent the same episteme when it carries the same claims; its compact form neither admits a source nor contains its local meaning.
+The source-selection branch returns one `SourceCutNote : U.Episteme`. Before treating the note as that episteme, identify the receiving question as one exact project entity. That question is the note's `EntityOfConcern`; the intended use remains in the ClaimGraph rather than becoming a second subject.
+
+For that note, name the effective reference scheme: it must resolve the question, the cited source-edition designators, and the answer-changing role claims. The ClaimGraph also names deliberate exclusions, known limits or source gaps, and reopen conditions. If the question or scheme is still missing, keep an ordinary working note and return that missing value instead of claiming a C.2.1 episteme. A one-screen source note may represent the same episteme when it carries the same claims; its compact form neither admits a source nor contains its local meaning.
 
 **What this buys.** You can reach material under unfamiliar wording, explain what the available search could have missed, and return passages whose contribution to the current question can be inspected. Later source use can begin from an inspected reason for selecting each source.
 
@@ -27,13 +29,13 @@ The source-selection branch returns one `SourceCutNote : U.Episteme`. Before tre
 
 ### F.1:2 - Problem
 
-Without question-led finding and a justified source cut where one is needed:
+The following problems can arise when people search without a guiding question or omit a source cut that the work needs.
 
 1. **Word drift.** Familiar terms silently change meaning across sources and editions.
 2. **Canon lock.** One influential standard is mistaken for the whole answer.
 3. **Recency blur.** An old edition remains load-bearing merely because it was used first.
 4. **Category bleed.** Designed structures, performed occurrences, system roles, statuses, permissions, and measurements are merged before their source claims are inspected.
-5. **Source bloat.** A large reading list hides which sources can actually change the current answer.
+5. **Source bloat.** A large reading list hides which sources can change the current answer.
 6. **Search substitution.** Rank, similarity, or family membership is mistaken for relevance, truth, or completeness.
 7. **Vocabulary lock.** The question's first wording misses a source that uses another name or explains the needed relation differently.
 8. **Access blur.** A title, excerpt or failed search over one subset is treated as if the full source had been inspected.
@@ -57,7 +59,7 @@ Without question-led finding and a justified source cut where one is needed:
 #### F.1:4.1 - Minimal vocabulary
 
 - **Exact source and edition.** The identified publication, canon, corpus, practice source, or other claim-bearing basis being considered.
-- **Receiving question and use.** What needs an answer and what that answer will serve. A plain concern can start finding. For source selection, independently identify the exact question that the selection claims concern; it is the `SourceCutNote`'s EntityOfConcern, while the intended use remains claim content.
+- **Receiving question and use.** What needs an answer and what that answer will serve. A plain concern can start finding. For source selection, independently identify the exact question addressed by the source-selection claims; it is the `SourceCutNote`'s EntityOfConcern, while the intended use remains claim content.
 - **Candidate material.** A passage or other source content that can be inspected for a contribution to the question. A source address without accessible content remains a lead.
 - **Query variant.** Words tried to reach material for the same original question; any added interpretation is a hypothesis, not a replacement question.
 - **Answer-changing role.** The inspected claim, limit, rival explanation, counterexample, transfer condition, material non-fit, or other stated contribution by which a source can change the answer.
@@ -77,7 +79,7 @@ Say what answer is needed, what later use it serves, and which source difference
 Use identified sources whose relevant claims can be inspected. A discipline or domain-family label may help discovery but is not a source.
 
 **Step 3 — Inspect the answer-changing role of each candidate.**
-Ask what claim or limit from that edition can change the answer. If that role depends on a disputed expression, pause selection only long enough to use F.0.1's ordinary branch: name the exact source, edition, and passage, and say in plain language what the expression means there. Then return to source selection. Do not run this branch for every candidate. Look deliberately for intended-use contributions, rival explanations, action-changing counterexamples, transfer limits, and material non-fit. One source may serve several roles.
+Ask what claim or limit from that edition can change the answer. Use F.0.1's ordinary branch only when that role depends on a disputed expression. Pause selection just long enough to name the exact source, edition, and passage, and say in plain language what the expression means there. Then return to source selection. Look deliberately for intended-use contributions, rival explanations, action-changing counterexamples, transfer limits, and material non-fit. One source may serve several roles.
 
 **Step 4 — Take the smallest sufficient cut.**
 Retain sources that cover distinct answer-changing roles. Exclude a candidate when no inspected claim from it changes the stated question or use. Do not optimize for a fixed count, diversity score, canonical status, or exhaustive appearance.
@@ -87,25 +89,26 @@ Name deliberate exclusions and why they do not change this answer. State a load-
 
 **Step 6 — Return one `SourceCutNote`.**
 Identify it under C.2.1 by three values: the ClaimGraph produced by Steps 1–5, the exact receiving question from Step 1 as EntityOfConcern, and the named effective ReferenceScheme that resolves the question, cited editions, and role claims. Keep the intended use in the ClaimGraph. Use a one-screen representation when it helps the receiver hold the result in view. Detailed source analysis stays with the receiving comparison, synthesis, or evidence method.
+
 **Step 7 — Recover only the meanings the work needs.**
 After the cut is stable, create an F.17 local-sense cell only for a retained expression that later reuse, a claim, a named receiver, or an actual relation needs. Do not postpone a meaning needed by Step 3 to this stage, and do not manufacture a cell for every retained source.
 
 ##### F.1:4.2.1 - When the cut will support a SoTA claim
 
-A source cut used to claim SoTA has a stricter role test because source relevance and source currentness do not establish the best-known answer. `E.8:11` owns the FPF definition of SoTA and the meanings of its comparison roles; F.1 neither redefines SoTA nor selects the winning line. For each retained source, record one of those roles in plain wording: **best-known-line candidate**, **serious current rival**, **failure or counterexample evidence**, **official or popular comparator**, **lineage only**, or **identity/currentness only**.
+A source cut used to claim SoTA has a stricter role test because source relevance and source currentness do not establish the best-known answer. Use `E.8:11` for the FPF definition of SoTA and its comparison roles. F.1 records the sources’ roles and leaves selection of the best-known line to that comparison. For each retained source, record one of those roles in plain wording: **best-known-line candidate**, **serious current rival**, **failure or counterexample evidence**, **official or popular comparator**, **lineage only**, or **identity/currentness only**.
 
-The first three roles can supply answer-changing evidence. An official or popular comparator may stay only when its named defect is necessary to the comparison. Roles are assigned by contribution, not institution: an official standard or widely used practice may instead be a best-known-line candidate when its substantive answer wins against the serious alternatives. Officiality, prevalence, maintenance, citation, freshness, or academic praise contributes nothing to that rank. An official catalogue, publisher page, or registry entry may verify the source's identity, edition, publication date, or maintenance state; it establishes neither truth, adequacy, nor SoTA rank.
+The first three roles can supply answer-changing evidence. An official or popular comparator may stay only when its named defect is necessary to the comparison. Roles are assigned by contribution, not institution: an official standard or widely used practice may instead be a best-known-line candidate when its substantive answer wins against the serious alternatives. Official status, prevalence, maintenance, citation, freshness, or academic praise contributes nothing to that rank. An official catalogue, publisher page, or registry entry may verify the source's identity, edition, publication date, or maintenance state; it establishes neither truth, adequacy, nor SoTA rank.
 
-For a SoTA claim, disable the generic one-source cheap exit unless the one source is itself a current critical synthesis that compares the serious alternatives for the named question and the author can state why no known action-changing rival or counterexample remains hidden. Otherwise retain the necessary rival and failure evidence or return an unresolved source gap. Do not manufacture confidence from a one-source cut.
+For a SoTA claim, one source suffices only when it is a current critical synthesis that compares the serious alternatives for the named question and the author can state why no known action-changing rival or counterexample remains hidden. Otherwise retain the necessary rival and failure evidence or return an unresolved source gap. A one-source cut alone does not warrant confidence in the answer.
 
 An original FPF or DPF answer is compared under E.8:11 on the same basis as a source-derived answer. Select the sources needed to expose serious alternatives, their limits and relevant failure evidence; do not require a prior external publication containing the authored answer. The original answer still needs that comparison, so its authorship does not restore the generic one-source exit.
 
-The `SourceCutNote` records the `E.8:11` roles and the missing comparison, but it does not itself select the best-known line. Use `F.0.2` when an actual cross-source synthesis claim is required. Use `G.2` only when a broader refreshable evidence pack is justified; a bounded comparison does not require that apparatus by default.
+The `SourceCutNote` records the `E.8:11` roles and the missing comparison, but it does not select the best-known line. Use `F.0.2` when the receiving work requires a cross-source synthesis claim. Use `G.2` only when a broader refreshable evidence pack is justified; a bounded comparison does not require that apparatus by default.
 
 
 #### F.1:4.3 - The `SourceCutNote`
 
-The note's exact EntityOfConcern is the independently identified receiving question from Step 1. It is not the note, its file or one-screen form, the retained-source list, or a question-and-use bundle. The intended use remains part of what the note claims. Name the effective ReferenceScheme explicitly and make sure it resolves the question, every exact source-edition reference, and every answer-changing role statement. If either the question or scheme is unresolved, return that gap and keep the text as an ordinary working note.
+The note's exact EntityOfConcern is the independently identified receiving question from Step 1. It is not the note, its file or one-screen form, the retained-source list, or a question-and-use bundle. The intended use remains part of what the note claims. Name an effective ReferenceScheme that resolves the question, every exact source-edition reference, and every answer-changing role statement. If either the question or scheme is unresolved, return that gap and keep the text as an ordinary working note.
 
 Its ClaimGraph states:
 
@@ -132,7 +135,7 @@ Keep the original question, what an answer would change, and any unresolved cond
 
 Source reading can change what you understand the question to be. Keep the original receiving concern and explain what the new material changes: a different needed result, a mistaken premise or an additional condition. Use B.5.PI:4.4 when that inquiry needs reconstruction, then return with the revised question. A query variant tries another way to find material for a question; a revised question can require different material.
 
-Establish what can actually be inspected: which publications, collections or archive portions, which editions, and what access they provide. Full bodies, titles, excerpts and an index have different reach. Record a consequential missing collection or unavailable original. This boundary makes a later no-hit result interpretable and prevents an available subset from silently standing for the whole repertoire.
+Establish what the available access lets you inspect: which publications, collections or archive portions, which editions, and what access they provide. Full bodies, titles, excerpts and an index have different reach. Record a consequential missing collection or unavailable original. This boundary makes a later no-hit result interpretable and prevents an available subset from silently standing for the whole repertoire.
 
 ##### F.1:4.4.2 - Choose an attainable first route
 
@@ -160,11 +163,11 @@ After an unhelpful result, ask what that route could have missed. Change the par
 
 ##### F.1:4.4.4 - Inspect the source around the candidate
 
-Open the candidate with its enclosing heading and the definitions, conditions, examples or dependencies needed to understand the passage. Say how its content could contribute to the current question. A useful candidate can supply a direct answer, an operation, a rival, a counterexample or a limit. Mere word similarity supplies none of those roles.
+Open the candidate with its enclosing heading and the definitions, conditions, examples or dependencies needed to understand the passage. Say how its content could contribute to the current question. A useful candidate can supply a direct answer, an operation, a rival, a counterexample or a limit. Word similarity alone establishes none of those roles.
 
 Compare the material obtained with the contributions the next use needs. New wording, another search route or a different document can still repeat the same contribution. When several aspects matter, identify the one still unsupported and why its absence could change the receiving answer; seek material for that gap. Several documents elaborating one aspect do not supply another. Keep an unresolved aspect visible when its source cannot be inspected. A brief statement of the remaining need suffices.
 
-Check what was actually obtained. Distinguish an inspected body passage from a title or reference to an inaccessible original. An excerpt can be returned as inspected material with its missing context stated; it cannot supply an uninspected original's omitted conditions. Recover the source and edition as far as access permits, and retain an unresolved edition identity when it affects use. If a source-role judgement turns on a disputed term, use the ordinary F.0.1 source-local reading and return here or to :4.2.
+Distinguish an inspected body passage from a title or reference to an inaccessible original. An excerpt can be returned as inspected material with its missing context stated; it cannot supply an uninspected original's omitted conditions. Recover the source and edition as far as access permits, and retain an unresolved edition identity when it affects use. If a source-role judgement turns on a disputed term, use the ordinary F.0.1 source-local reading and return here or to :4.2.
 
 For a candidate FPF Method, retrieve the relevant complete pattern and the conditions needed for its use through the available publication. Material finding supplies that text; E.11.PUR judges a proposed use and E.11.PUA guides application of a selected pattern. A promising fragment can be enough to continue finding while remaining insufficient to perform the Method.
 
@@ -176,7 +179,7 @@ Choose the continuation from the receiving need:
 
 - Use a sufficient identified source directly for the subject question. Finding creates no source-cut obligation.
 - Use :4.2 when several inspected sources could change the answer and a justified source cut is needed. Source selection then returns its own SourceCutNote.
-- Use the relevant subject method for truth, applicability, synthesis, reliance or assurance. When the inspected contributions still leave an obtaining way unexplained, C.39 develops that connection or returns its precise gap. For proposed FPF uses, continue with E.11.PUR only when such a judgement is current.
+- Use the relevant subject method for truth, applicability, synthesis, reliance or assurance. When the inspected contributions still leave an obtaining way unexplained, C.39 develops that connection or returns its precise gap. For proposed FPF uses, continue with E.11.PUR only when the receiving work requires that judgement.
 - Return the exact missing material or access condition when the next use cannot yet be supplied.
 
 Stop finding when the next use has the material it needs, or no affordable available route could presently change that result. Judge another search by the missing contribution it could supply, not by the availability of more terms or documents. A limited search with no useful hit returns “no useful material found by these routes in this accessible scope”, with the remaining gap. It establishes no claim of universal absence or completeness.
@@ -186,7 +189,7 @@ Reopen the affected finding when the question, needed result, source edition or 
 #### F.1:4.5 - Invariants
 
 
-For finding, keep the original concern distinct from search variants, identify what was actually inspected, and return consequential access limits. A no-hit result is relative to the searched scope and routes. The following invariants govern the source cut when source selection is current:
+For finding, keep the original concern distinct from search variants, identify the material inspected, and return consequential access limits. A no-hit result is relative to the searched scope and routes. The following invariants govern the source cut when the work calls for source selection:
 
 1. Every retained source has an inspected answer-changing role for the stated question and use.
 2. The cut is finite, inspectable, and revisable; no universal count establishes sufficiency.
@@ -205,7 +208,7 @@ For finding, keep the original concern distinct from search variants, identify w
 For finding:
 
 - **Question-preservation test.** Could a changed or omitted query term change what would answer the original question? Restore that condition when inspecting candidates.
-- **Reach test.** What material could the available route actually inspect, and which consequential blind spot remains? Use a complementary route only if it could repair that gap.
+- **Reach test.** What material could you inspect through the available route, and which consequential blind spot remains? Use a complementary route only if it could repair that gap.
 - **Candidate-return test.** Can the receiver obtain the inspected passage, see why it matters and distinguish missing context or an unavailable original?
 - **Stop test.** Does the next use already have sufficient material, or is its exact missing basis returned? Do not turn a scoped no-hit result into a claim of absence.
 
@@ -292,7 +295,7 @@ The resulting `SourceCutNote` is identified by that ClaimGraph, the stated recei
 - **Exclude:** “No inspected claim from this source changes the stated use; record the exclusion and what would reopen it.”
 - **Return a gap:** “This unavailable or uninspectable source may be load-bearing; the cut remains limited here.”
 - **Keep meanings local:** “Selection puts both sources in view; it does not say their terms are identical or related.”
-- **Use search assistance:** “The ranking tells us what to inspect next; the source claim decides whether it enters the cut.”
+- **Use search assistance:** “The ranking tells us what to inspect next; we decide whether to retain the source from the claim we inspect.”
 - **Reopen:** “This question, use, relied claim, rival, counterexample, or transfer boundary changed, so select again.”
 
 
@@ -307,9 +310,9 @@ A workshop reader asks, “May a shared bench be used while an acceptance run is
 
 The reader preserves the whole question, including the cooling interval, and bounds the search to those binders. The catalogue has no “cooling” entry. That is a limitation of this route. Browsing *Setup* produces a reference to an older equipment name and a drawing whose legend says “reserved interval”. The reader tries that term in the drawing register and obtains drawing D-14, edition 2, note 6. The note reserves the bench through the cooling interval; its exception allows sharing only before the run begins.
 
-The result is that inspected note, its drawing and edition address, why the interval and exception matter, and the scope of the archive searched. It supplies a rule for the subject practitioner to use with the actual run conditions. It does not establish the present bench state or permission by itself. The reader need not produce a SourceCutNote merely to return this sufficient source.
+The result is that inspected note, its drawing and edition address, why the interval and exception matter, and the scope of the archive searched. It supplies a rule for the subject practitioner to use with the actual run conditions. It does not establish the present bench state or permission by itself. The reader can return this sufficient source without producing a SourceCutNote.
 
-Change the question to “Which inspection condition changed between editions?” The reader obtains the available D-14 edition 1 note and compares it with edition 2 around the exception. Both passages become candidates. If the later comparison needs a justified two-edition basis, :4.2 selects their roles and returns a SourceCutNote. Change the question instead to “What word do these drawings use for the cooling interval?” The inspected wording can answer directly; further source selection adds nothing to that use.
+Change the question to “Which condition for sharing the bench changed between editions?” The reader obtains the available D-14 edition 1 note and compares it with edition 2 around the exception. Both passages become candidates. If the later comparison needs a justified two-edition basis, :4.2 selects their roles and returns a SourceCutNote. Change the question instead to “What word do these drawings use for the cooling interval?” The inspected wording can answer directly; further source selection adds nothing to that use.
 
 The first failed route mattered because its catalogue vocabulary excluded the older name. The complementary route recovered source wording. This construction works with paper and ordinary reading; it requires no index engineering or automated ranking.
 
@@ -327,7 +330,7 @@ A title-only service that cannot search or return those body conditions would re
 
 An engineer already has the needed fictional WS-4 procedure, edition 2, clause 7. An edition-3 notice names a changed inspection exception. The question remains whether the same inspection condition applies. The engineer opens edition 3 at that clause and reads the exception with its surrounding applicability conditions.
 
-If the relied condition is unchanged, the passage remains usable for its earlier contribution, with the updated edition address. If the exception changed, the engineer returns the changed passage and the earlier passage when the comparison needs it, then reopens the affected subject judgement or source-cut claim. No unchanged chapter needs a new search merely because the cover changed.
+If the relied condition is unchanged, the passage remains usable for its earlier contribution, with the updated edition address. If the exception changed, the engineer returns the changed passage and the earlier passage when the comparison needs it, then reopens the affected subject judgement or source-cut claim. A changed cover gives no reason to search unchanged chapters again.
 
 Now change the question to whether a particular attachment can be accepted. The retrieved clause does not settle an unknown material or operating condition. The subject engineer receives the passage and that missing premise. A found rule and a justified source cut supply different contributions from engineering applicability.
 
@@ -335,7 +338,7 @@ Now change the question to whether a particular attachment can be accepted. The 
 
 A review cites a 2025 original, but the reader can obtain only the review's excerpt and the original's catalogue record. The catalogue establishes a lead. The excerpt is inspectable at its own review address; the original's body and omitted conditions remain inaccessible.
 
-Return those distinctions and identify the needed original or authorized access. Continue a use that the excerpt can actually support; keep a dependent judgement open when its missing context can change the answer. Another search over the same catalogue cannot turn the original into inspected material. A later copy of the original reopens that gap; it does not require discarding other unchanged findings.
+Return those distinctions and identify the needed original or authorized access. Continue a use the excerpt can support; keep a dependent judgement open when its missing context can change the answer. Another search over the same catalogue cannot turn the original into inspected material. A later copy of the original reopens that gap; it does not require discarding other unchanged findings.
 
 
 #### F.1:5.10 - A changed question with two needed contributions
@@ -346,7 +349,7 @@ The catalogue points to a note about equipment labels. Reading it reveals that a
 
 The equipment register explains how current identifiers distinguish the pumps. Further guides found through different terms give more identification examples, but leave the preparation-state question unanswered. A reference in the register gives a route to H-2. The next search opens its completion condition in section 5, with the definition of the reported state and interval. The new contribution is that condition, not merely a new document.
 
-The reader now returns R-4:2 for the equipment-identification basis and H-2:5 for the condition on reporting completed preparation. These supply the current requirement question. Stop searching and use them to examine the proposed handover. Choosing a course still requires judging the actual learning need; identifying the requirements did not make that judgement. If the available operations do not explain how to produce the required handover, use C.39 to develop the missing connection, with those passages as inputs.
+The reader now returns R-4:2 for the equipment-identification basis and H-2:5 for the condition on reporting completed preparation. These supply the current requirement question. Stop searching and use them to examine the proposed handover. Choosing a course still requires judging the learning need. Identifying the handover requirements did not settle that question. If the available operations do not explain how to produce the required handover, use C.39 to develop the missing connection, with those passages as inputs.
 
 If the procedure is inaccessible, return the inspected identification passage and the missing preparation-condition source. More identification guides do not close that gap. If both passages were already known and sufficient, open them directly. No additional route or SourceCutNote is needed for that use.
 
@@ -364,7 +367,7 @@ If the procedure is inaccessible, return the inspected identification passage an
 #### F.1:7.1 - Static checks
 
 
-Checks that refer to a cut or `SourceCutNote` apply when source selection is current; ordinary finding needs no note identity.
+Checks that refer to a cut or `SourceCutNote` apply when the work calls for source selection; ordinary finding needs no note identity.
 
 - **SCR-F1-S01 (Question and use).** The receiving question is independently identified as the note's exact EntityOfConcern; the intended use and the source difference that can change the answer remain in its ClaimGraph.
 - **SCR-F1-S02 (Exact sources).** Every retained source and edition is recoverable.
@@ -408,7 +411,7 @@ Checks that refer to a cut or `SourceCutNote` apply when source selection is cur
 | Designed-versus-performed collapse | A design description is treated as a performed occurrence. | State the source role and the time distinction it contributes. |
 | Search score as gate | Rank, distance, threshold, or model answer admits or excludes a source. | Use the reading to prioritize inspection; decide from the source's contribution. |
 | Variant becomes the question | A broader query drops a condition, and the returned passage answers that broader question instead. | Preserve the original concern and restore its conditions during candidate inspection. |
-| Locator becomes source | A title or excerpt is treated as inspection of the unavailable original. | Return what was actually inspected, its address and missing context; retain the original as an inaccessible lead. |
+| Locator becomes source | A title or excerpt is treated as inspection of the unavailable original. | Return the material inspected, its address and missing context; retain the original as an inaccessible lead. |
 | No hit becomes absence | One phrase or limited index finds nothing, so the whole repertoire is declared empty. | State the route's reach, repair a consequential blind spot if feasible, or return the scoped gap. |
 | Exhaustive pretense | A small cut is reported as complete literature coverage or saturation. | State its question-relative limits and use the domain review method when needed. |
 | Compact-note inflation | The one-screen representation grows into a second source analysis. | Keep the ClaimGraph concise and place detailed analysis with the receiving work. |
@@ -438,7 +441,7 @@ The cut is not evidence that its sources are true, sufficient, representative, m
 ### F.1:10 - Rationale
 
 
-Finding is useful when the question and the source's wording do not yet meet. An exact address or lexical lookup is sufficient when it reaches the needed content. Variants and complementary routes earn their extra cost by exposing material that the first route could miss. Restoring the original conditions during inspection prevents broader discovery from changing the question. Returning source context and actual access prevents a compact finding aid from supplying claims it never showed.
+Finding is useful when the question and the source's wording do not yet meet. An exact address or lexical lookup is sufficient when it reaches the needed content. Variants and complementary routes earn their extra cost by exposing material that the first route could miss. Restoring the original conditions during inspection prevents broader discovery from changing the question. State what the reader could inspect and return the passage in context so the receiver can tell which claims it supports.
 
 The receiving question determines which source differences matter. A source belongs in the active cut when an inspected claim can change the answer, expose a rival or counterexample, or mark where transfer fails.
 
@@ -448,7 +451,7 @@ This keeps the useful part of purposive and iterative sampling—selection for a
 
 | Practice question | Best-known line | Serious alternative or default | Defect overcome and F.1 mutation | Source roles and limits | Reopen condition |
 | --- | --- | --- | --- | --- | --- |
-| How should a small source cut remain question-led while exposing decisive heterogeneous rivals and limits? | Critical interpretive synthesis is the best-known-line candidate for this bounded comparison because it begins from a compass question, uses purposive iterative selection, critiques assumptions, and can synthesize heterogeneous evidence. Perlman, Ben-Sheleg, and Ellen's 2026 scoping review makes the method's recurring phases, variation, and gaps inspectable. | Protocol-first systematic-review reporting and one-canon selection are the serious defaults. PRISMA and PRISMA-S are retained only as an official/popular comparator when a protocol-defined review is actually required. | Fixed eligibility and reporting can preserve search history without deciding which conceptual claim changes the answer; one-canon selection hides rivals and transfer failure. **Adapt:** F.1 uses a stated question, inspected roles, iterative reopen, explicit gaps, and a separate `F.0.2` synthesis boundary. **Reject:** a saturation claim, health-domain appraisal rules, and an exhaustive protocol for every bounded question. | Perlman, Ben-Sheleg, and Ellen, [*Making sense of conducting a critical interpretive synthesis: A scoping review*](https://doi.org/10.1017/rsm.2025.10041) (2026), is the current critical synthesis; PRISMA/PRISMA-S are the explicit protocol comparator; purposive-sampling studies support the variation problem but set no FPF quota. | Reopen if a stronger current source-selection synthesis offers a cheaper method that exposes the same action-changing rivals, counterexamples, limits, and gaps. |
+| How should a small source cut remain question-led while exposing decisive heterogeneous rivals and limits? | Critical interpretive synthesis is the best-known-line candidate for this bounded comparison because it begins from a compass question, uses purposive iterative selection, critiques assumptions, and can synthesize heterogeneous evidence. Perlman, Ben-Sheleg, and Ellen's 2026 scoping review makes the method's recurring phases, variation, and gaps inspectable. | Protocol-first systematic-review reporting and one-canon selection are the serious defaults. PRISMA and PRISMA-S are retained only as an official/popular comparator when the work requires a protocol-defined review. | Fixed eligibility and reporting can preserve search history without deciding which conceptual claim changes the answer; one-canon selection hides rivals and transfer failure. **Adapt:** F.1 uses a stated question, inspected roles, iterative reopen, explicit gaps, and a separate `F.0.2` synthesis boundary. **Reject:** a saturation claim, health-domain appraisal rules, and an exhaustive protocol for every bounded question. | Perlman, Ben-Sheleg, and Ellen, [*Making sense of conducting a critical interpretive synthesis: A scoping review*](https://doi.org/10.1017/rsm.2025.10041) (2026), is the current critical synthesis; PRISMA/PRISMA-S are the protocol comparator; purposive-sampling studies support the variation problem but set no FPF quota. | Reopen if a stronger current source-selection synthesis offers a cheaper method that exposes the same action-changing rivals, counterexamples, limits, and gaps. |
 | How may search automation reduce effort without deciding the source cut? | Transparent active-learning screening is the best-known-line candidate for prioritizing inspection in a large candidate set when its corpus, model, and stopping interpretation remain recoverable. | Ranking, similarity, citation count, or an LLM answer used directly as the membership gate is the serious default. | The default converts an attention proxy into relevance, truth, or completeness. **Adapt:** `F.1:4.4`, invariants, self-checks, and regression checks let search readings order inspection but require the underlying claim before membership changes. | van de Schoot et al., [*An open source machine learning framework for efficient and transparent systematic reviews*](https://doi.org/10.1038/s42256-020-00287-7) (2021), supplies an efficient transparent-screening branch, not evidence that a retained source is relevant or sufficient. Search-tool documentation and latest-model status are identity/currentness only. | Reopen if a current method demonstrates lower inspection effort while preserving claim-level membership decisions and explicit omission risk. |
 | How should finding adapt to a revised question and stop with enough material for its next use? | Adopt exploratory, source-led search and adapt it with an explicit comparison of the material still needed by the receiving use. In :5.10 this directs the next search to the missing preparation condition and then permits a sufficient stop. | Developed berrypicking already changes the information need, follows references and changes techniques. A sufficient direct lookup remains preferable to further exploration. | Changing terms or documents can leave a necessary contribution unrepresented. **Adopt:** evolving inquiry and varied routes. **Construct:** the connection from their results to :4.4.1's revised question, :4.4.4's remaining contribution and :4.4.5's bounded return to selection or subject work. The deliberate cost is this local comparison; no extra search is required when the material is sufficient. | Bates, [*The Design of Browsing and Berrypicking Techniques*](https://pages.gseis.ucla.edu/faculty/bates/berrypicking.html) (1989), §§II–IV, is the developed historical comparator. [BRIGHT-PRO](https://aclanthology.org/2026.acl-long.1705.pdf) (2026), §6.3, supplies contemporary failure evidence: repeated evidence, neglect of a required aspect and continued search after sufficient retrieval in its evaluated agent setting. Neither source establishes an FPF retrieval advantage or a universal stopping rule. | Reopen when the contribution comparison misses a needed aspect, imposes effort without changing the return, or a stronger method supplies the same bounded result more affordably. |
 

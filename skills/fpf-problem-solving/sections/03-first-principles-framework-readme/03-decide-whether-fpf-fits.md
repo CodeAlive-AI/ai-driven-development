@@ -25,11 +25,11 @@ Examples of use include:
 2. Mixed team: use it to keep specialists, managers, safety leads, and AI assistants aligned around the same work.
 3. AI-assisted: attach or index the specification, ask for plain-language project help first, and use pattern names only when they make the answer easier to check.
 
-FPF can help with the evidence and decision questions that remain as AI becomes more capable. AI can generate fluent options quickly, but projects still need to decide what counts as evidence, which option is being compared, who may rely on an answer, when a claim is stale, what remains only a guess, and what work is actually authorized. FPF helps make those boundaries explicit before the answer is used.
+FPF can help with the evidence and decision questions that remain as AI becomes more capable. AI can generate fluent options quickly, but projects still need to decide what counts as evidence, which option is being compared, who may rely on an answer, when a claim is stale, what remains a guess, and what work is authorized. FPF helps make those boundaries explicit before the answer is used.
 
 Core ideas in plain language:
 
-- first name the project object under concern; FPF calls it a holon when its actual construction supports treatment as a whole with parts and as a possible part of a larger whole; use `A.1` to check a particular candidate;
+- first name the project object under concern; FPF calls it a holon when its actual construction supports treatment as a whole with parts and as a possible part of a larger whole; use `A.1` to check a candidate;
 - local teams may use local meanings; boundary-crossing work makes the translation relation explicit;
 - the project object itself, its description, a dashboard about it, a decision about it, and the work done to change it are not the same;
 - architecture is structure of that holon or project object in a context, not the diagram, document, approval, or plan about it;
@@ -38,7 +38,9 @@ Core ideas in plain language:
 - to decide whether setting up and applying a selected apparatus, such as a model, is worth the cost for one use, inspect `C.19.2`; it tests the bounded application against the required result and guarantee. Use `C.39` when a missing obtaining explanation must be developed, or `C.40` when usable material needs variation and examination. Use `C.18` for archive or front claims, and `C.11` when two or more eligible alternatives make a local choice current;
 - when a clear engineering claim leads to an incorrect conclusion about action, identity, dependence, whether a relation obtains, responsibility or projection, inspect `A.7.1`; when current FPF uses produce incompatible consequences for the same receiving claim and scope, inspect `A.7.2`. The latter can expose an unresolved incompatibility rather than produce one reconciled answer;
 - when an accepted C.22.2 `ProblemCard` episteme must remain usable while the project selects a method, prepares or performs work, interprets a result, branches, stops, or returns after a changed assumption, inspect `E.18.1 P2W Problem-to-Work Carry-Through`; it carries the accepted problem-side distinctions into one next value or relation returned by the pattern that answers the current question;
-- when route-like positions, relations, or constraints change which continuation remains possible, inspect `E.18.3`: begin with the concrete thing being transformed, two recognizable places or states, the proposed connection or guard, and the current continuation question. An ordinary provisional explanation may answer it or stop with the exact missing predicate or occurrence rule, missing case fact, or unavailable information. Recover exact A.22/E.18 qualification only when a named use depends on the identity and qualification of the unfolding organization as an E.18.3 structure; add a separate demonstrative-slice claim only when the use needs it; if no branch, connection, or constraint changes the continuation question, keep an ordinary route description;
+- when route-like positions, relations or constraints change which continuation is possible, use `E.18.3`. Start with the thing being transformed, two recognizable places or states, the proposed connection or guard, and the continuation question. An ordinary provisional explanation may answer it or identify what is missing: a predicate, an occurrence rule, a fact about the case or information you cannot obtain.
+
+  Use A.22/E.18 qualification when the named use depends on the identity and qualification of the unfolding organization as an E.18.3 structure. Add a separate demonstrative-slice claim only if that use needs it. When no branch, connection or constraint affects the continuation question, an ordinary route description suffices.
 - keep several options alive until the comparison is clear enough to choose;
 - say what "better" means before optimizing or scoring;
 - make trust depend on evidence, freshness, scope, and intended use;

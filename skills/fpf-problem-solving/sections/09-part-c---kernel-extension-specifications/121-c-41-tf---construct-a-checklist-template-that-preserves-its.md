@@ -23,26 +23,26 @@ The construction problem is to make truthful interpretation easy without turning
 | Tension | Practical implication |
 | --- | --- |
 | Compact scanning and sufficient meaning | Put common references once, while preserving their reach to every answer. |
-| Reuse and particular subjects | Make the places for binding actual subjects and descriptions unambiguous. |
-| Simple answers and real uncertainty | Provide a way to express unresolved or inapplicable questions where they occur. |
+| Reuse and particular subjects | Make the places for binding subjects and descriptions unambiguous. |
+| Simple answers and uncertainty | Provide a way to express unresolved or inapplicable questions where they occur. |
 | Local convenience and shared interpretation | A split view retains the associations needed by another participant. |
 | Nearby help and reading burden | Explain a difficult distinction where it is used; avoid copying entire manuals. |
 
 ### C.41.TF:4 - Solution
 
-C.37 selects a representation for one receiving use. Here the construction binds each selected question, subject, answer meaning and ground so that the template can be filled, transposed or shared without changing the claim. Use an adequate existing representation; a different layout is useful only when it repairs the actual receiving difficulty.
+C.37 selects a representation for one receiving use. Here the construction binds each selected question, subject, answer meaning and ground so that the template can be filled, transposed or shared without changing the claim. Use an adequate existing representation; a different layout is useful only when it repairs the receiving difficulty.
 
 #### C.41.TF:4.1 - Carry the question and its interpretation together
 
 Take the selected questions and coverage from C.41 or another adequate source. Identify information shared across the list, such as the physical set and comparison description. Place it where users can see its scope. Keep question-specific conditions with the question.
 
-Phrase the questions in the language practitioners use for their actual work: the card set, print run or catalogue import. Adapt the selected subjects, conditions and questions as well as their names. Replacing “system-of-interest” with “cards” is insufficient if “ready” still hides an unfamiliar or unsuitable account of readiness. Compare the wording with a real case and the recipient's way of working. An applicable explanation-design Method helps recover the explanation needed for that use. Framework distinctions can guide the author's reasoning without requiring every recipient to learn their terminology.
+Phrase the questions in the language practitioners use for their work: the card set, print run or catalogue import. Adapt the selected subjects, conditions and questions as well as their names. Replacing “system-of-interest” with “cards” is insufficient if “ready” still hides an unfamiliar or unsuitable account of readiness. Compare the wording with a real case and the recipient's way of working. An applicable explanation-design Method helps recover the explanation needed for that use. Framework distinctions can guide the author's reasoning without requiring every recipient to learn their terminology.
 
-Develop ambiguous headings with someone who understands the work. For a printing checklist, distinguish the person who wrote the comparison description, the system assigned to checking, and the system that actually performed this check. One person may occupy all three positions, but a name under “Responsible” does not tell the recipient which relation is asserted. A system's role kind and assignment, its capability and its performed work remain distinct; an applicable organizational Method helps when the assignment or enabling arrangement itself needs repair. For a file or description, name the actual relation, such as input to printing or basis of comparison. Use the resulting practitioner wording in the form and retain further explanation only where it helps interpretation.
+Develop ambiguous headings with someone who understands the work. For a printing checklist, distinguish the person who wrote the comparison description, the system assigned to checking, and the system that performed this check. One person may occupy all three positions, but a name under “Responsible” does not tell the recipient which relation is asserted. A system's role kind and assignment, its capability and its performed work remain distinct; an applicable organizational Method helps when the assignment or enabling arrangement itself needs repair. For a file or description, name the relation, such as input to printing or basis of comparison. Use the resulting practitioner wording in the form and retain further explanation only where it helps interpretation.
 
-For each answer, make recoverable what is being asked, what counts as an answer and what grounds could support it. A direct instruction may name the observation; a more complex judgement may point to a domain procedure. [A.3.2.DE](../05-part-a---kernel-architecture-cluster/30-a-3-2-de---describe-a-method-for-its-intended-use.md) supplies the broader description of how to carry out the Method. A short checklist can refer to that description without trying to replace it.
+For each answer, make recoverable what is being asked, what counts as an answer and what grounds could support it. An instruction may name the observation; a more complex judgement may point to a domain procedure. [A.3.2.DE](../05-part-a---kernel-architecture-cluster/30-a-3-2-de---describe-a-method-for-its-intended-use.md) supplies the broader description of how to carry out the Method. A short checklist can refer to that description without trying to replace it.
 
-Distinguish a reusable instruction from a filled claim. “Count the cards against the contents description” is part of the template's help. “Twenty cards present in S, observed at 10:00” is an instance answer and its basis. [FPF A.3.2](../05-part-a---kernel-architecture-cluster/29-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) governs a MethodDescription claim when the template has an already admitted Method as its exact EntityOfConcern and makes at least one substantive claim about that Method as a way of doing.
+Distinguish a reusable instruction from a filled claim. “Count the cards against the contents description” is part of the template's help. “Twenty cards present in S, observed at 10:00” is an instance answer and its basis. [FPF A.3.2](../05-part-a---kernel-architecture-cluster/29-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) governs a MethodDescription claim when the template has an already admitted Method as its EntityOfConcern and makes at least one substantive claim about that Method as a way of doing.
 
 #### C.41.TF:4.2 - Give answers enough expressive range
 
@@ -52,7 +52,7 @@ Use **not applicable** only with a reason why the question does not concern this
 
 When a label such as “prepared” abbreviates several conditions, recover which conditions hold together, which are alternatives, and which depend on another subject. A later label in a displayed list does not establish every earlier condition. A supplied plan can answer a question about planning while leaving resource availability or actual performance unanswered. Keep those conditions explicit enough for the intended action; an ordinary explanation can suffice.
 
-Where the aid supports planning, distinguish an expected occasion for a condition from when it actually holds, is observed, and is recorded. Preserve the scope of a question that continues across several editions or attempts, as well as questions confined to one edition. Repeated attempts and alternative paths do not form a universal ladder in which every answer stays positive.
+Where the aid supports planning, distinguish an expected occasion for a condition from when it holds, is observed, and is recorded. Preserve the scope of a question that continues across several editions or attempts, as well as questions confined to one edition. Repeated attempts and alternative paths do not form a universal ladder in which every answer stays positive.
 
 Add observation time, description edition, performer or evidence reference when the receiving use depends on it. Keep entry time distinct from observation time. Avoid fields with no practical consumer. A three-question aid used immediately can be spoken; a record reused tomorrow usually needs enough context to recover its grounds.
 
@@ -60,7 +60,7 @@ Add observation time, description edition, performer or evidence reference when 
 
 Choose paper, editable text, a table or a working application according to the occasion. Transpose or split the presentation only while preserving the associations needed to interpret an answer: subject, question, comparison basis, answer and grounds. Keep shared reference information visible or directly reachable in each local view.
 
-Retain one form when it serves the receiving uses. Make another view only for a specific access or interpretation difficulty, and compare both with the same filled cases. Include the effort of preparing the view, recovering references during use and updating affected copies. Deriving views from shared content can reduce divergent copies; a separate generator is worthwhile only when that saving exceeds its setup and maintenance cost.
+Retain one form when it serves the receiving uses. Make another view only for an access or interpretation difficulty, and compare both with the same filled cases. Include the effort of preparing the view, recovering references during use and updating affected copies. Deriving views from shared content can reduce divergent copies; a separate generator is worthwhile only when that saving exceeds its setup and maintenance cost.
 
 For a maintained aid, make clear which question set and template edition are in use. A corrected wording question in the working application can coexist unnoticed with an obsolete printed form or presentation. Derive needed views from the same maintained content where practical; otherwise identify how affected copies are updated or withdrawn. Preserve the earlier question and comparison basis when historical answers still refer to them. The useful result is a recoverable current form and interpretable earlier records; a separate modeling application is worthwhile only if it helps sustain that result.
 
@@ -96,14 +96,14 @@ Suppose the wide table on a small screen separates the answer from its S/v2 refe
 
 If entries are recorded at 10:12, that time describes the recording. It neither changes the observation times nor shows when each condition first became true. A split view for counting and a view for wording comparison retain the S/v2 references and the relevant observation grounds.
 
-For an AI-assisted importer, a template can ask for an observed catalogue before and after a malformed input, with a reference to the input and the comparison performed. A field headed “Tests pass” loses the specific question if it is detached from those cases. When an observation tool fails, the form supports “unknown: post-import catalogue was not obtained”; it does not coerce the agent into a positive completion entry.
+For an AI-assisted importer, a template can ask for an observed catalogue before and after a malformed input, with a reference to the input and the comparison performed. A field headed “Tests pass” loses the question if it is detached from those cases. When an observation tool fails, the form supports “unknown: post-import catalogue was not obtained”; it does not coerce the agent into a positive completion entry.
 
 
 ### C.41.TF:6 - Bias-Annotation
 
 A form convenient for its author may be difficult on a phone, inaccessible to a participant or opaque to an AI tool. Colour can supplement but cannot carry the only answer distinction. Specialist abbreviations and apparently obvious dates deserve testing with intended users.
 
-Recorded evidence privileges what can be captured. Allow a relevant conversation or observation to contribute without pretending that an empty attachment field invalidates it.
+Recorded evidence privileges what can be captured. Allow a relevant conversation or observation to contribute. An empty attachment field does not invalidate that contribution.
 
 ### C.41.TF:7 - Conformance Checklist
 
@@ -120,7 +120,7 @@ Inspect an actual filled example, not only the blank template:
 | Failure | Repair |
 | --- | --- |
 | A copied tick survives while its question or edition changes. | Preserve the association or reopen the answer for the new question. |
-| Every blank means failure, or every filled cell means success. | Give absence, unresolved answers and supported negative answers their actual meanings. |
+| Every blank means failure, or every filled cell means success. | Preserve the meanings of absence, unresolved answers and supported negative answers. |
 | A timestamp silently becomes attainment time. | Name whether it records observation, entry or an independently observed change. |
 | Each heading is treated as a new type or state. | Recover the subject and relation the heading expresses; keep layout as representation. |
 
@@ -136,18 +136,18 @@ Editable text and tables are useful when people adapt, transpose or split the ai
 
 ### C.41.TF:11 - SoTA-Echoing
 
-When is a local form worth maintaining alongside a shared checklist? **Adapt** the supplied *Methodology* manuscript's template/instance and transposed-view practice together with the supplied *Systems Management* manuscript's local interpretation: retain shared question meanings and provide a different view only where a receiving action needs it. The serious alternatives are one fixed master form and independently adapted local copies. The master is preferable when it already permits the needed interpretation; independent copies can be cheaper for a small one-off use but introduce a continuing update problem when reused.
+When is a local form worth maintaining alongside a shared checklist? **Adapt** the supplied *Methodology* manuscript's template/instance and transposed-view practice together with the supplied *Systems Management* manuscript's local interpretation: retain shared question meanings and provide a different view only where a receiving action needs it. The alternatives are one fixed master form and independently adapted local copies. The master is preferable when it already permits the needed interpretation; independent copies can be cheaper for a small one-off use but introduce a continuing update problem when reused.
 
 Section 4.3 compares these choices with the same filled cases and includes preparation, reference recovery and later updates. In §5, the small-screen condition justifies transposition because the subject/basis and answer can be read together while the three questions, answers and grounds remain unchanged. It does not justify another checklist meaning. If the wide form already shows those associations adequately, keep it. If several views change frequently, accept the setup cost of deriving them from shared content when it avoids more costly inconsistent updates; a single occasional copy need not acquire that machinery.
 
-The supplied *Methodology* and *Systems Management* manuscripts supply the competing arrangements and preservation question, not comparative reading-time measurements. The study by [Facey and colleagues](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298224) supplies failure evidence about documentary completion and actual use. It supports preserving unknown, observation and record meanings in §§4.1–4.2; it does not show that a particular layout is superior. **Reject** uniform appearance as the selection criterion when it hides a needed distinction, and reject richer fields whose later usefulness does not warrant their entry cost.
+The supplied *Methodology* and *Systems Management* manuscripts supply the competing arrangements and preservation question, not comparative reading-time measurements. The study by [Facey and colleagues](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298224) supplies failure evidence about documentary completion and actual use. It supports preserving unknown, observation and record meanings in §§4.1–4.2; it does not show that a layout is superior. **Reject** uniform appearance as the selection criterion when it hides a needed distinction, and reject richer fields whose later usefulness does not warrant their entry cost.
 
-The conditional choice improves access at the deliberately accepted cost of maintaining another expression of the same questions. Where neither interpretation nor total effort can be judged from the filled cases, obtain a bounded comparison of the recovered question, next move and total effort in representative use. Reopen the choice when a recipient loses a reference, an answer meaning diverges after an update, or the extra view costs more than the difficulty it removes.
+The conditional choice improves access at the accepted cost of maintaining another expression of the same questions. Where neither interpretation nor total effort can be judged from the filled cases, obtain a bounded comparison of the recovered question, next move and total effort in representative use. Reopen the choice when a recipient loses a reference, an answer meaning diverges after an update, or the extra view costs more than the difficulty it removes.
 
 ### C.41.TF:12 - Relations
 
 C.41 supplies questions and bounded coverage. C.41.OF consumes the usable template to arrange an occasion. C.41.UA supplies real answers, and C.41.SR consumes local views without assuming that identical layouts imply identical claims.
 
-[A.3.2.DE](../05-part-a---kernel-architecture-cluster/30-a-3-2-de---describe-a-method-for-its-intended-use.md) supplies the broader Method description; the applicable explanation-design Methods can recover what the recipient needs explained and compare explanations for that use when those separate questions are current. [FPF A.3.2](../05-part-a---kernel-architecture-cluster/29-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) governs an actual MethodDescription claim; [A.6.P.RI](../06-cluster-a-iv-a---signature-stack-boundary-discipline/17-a-6-p-ri---recover-agent-relative-references-for-action.md) supplies recovery of references whose meaning depends on the participant or occasion.
+[A.3.2.DE](../05-part-a---kernel-architecture-cluster/30-a-3-2-de---describe-a-method-for-its-intended-use.md) supplies the broader Method description; the applicable explanation-design Methods can recover what the recipient needs explained and compare explanations for that use when those separate questions are current. [FPF A.3.2](../05-part-a---kernel-architecture-cluster/29-a-3-2---u-methoddescription-description-episteme-for-a-way-o.md) governs a MethodDescription claim; [A.6.P.RI](../06-cluster-a-iv-a---signature-stack-boundary-discipline/17-a-6-p-ri---recover-agent-relative-references-for-action.md) supplies recovery of references whose meaning depends on the participant or occasion.
 
 ### C.41.TF:End

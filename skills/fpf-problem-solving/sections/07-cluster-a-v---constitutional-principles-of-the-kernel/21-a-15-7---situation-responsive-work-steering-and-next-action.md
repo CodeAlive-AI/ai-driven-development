@@ -6,11 +6,11 @@
 
 **Plain name.** Choose the next action while Work is under way and current facts matter.
 
-**Primary reader.** A person, team, robot, AI system, organization, or other deciding System that must choose what should happen next during ongoing Work, or someone supporting that choice.
+**Reader.** A person, team, robot, AI system, organization, or other deciding System that must choose what should happen next during ongoing Work, or someone supporting that choice.
 
 ### A.15.7:1 - Problem frame
 
-**Use this when.** Use this pattern when you are in the middle of Work, current facts can change what should happen next, and a domain Method still sets what is allowed.
+**Use this when.** Use this pattern when you are in the middle of Work, current facts can change what should happen next, and a domain Method sets what is allowed.
 
 **First useful result.** Give a supported next-action answer in ordinary language, with the content needed for its use:
 
@@ -22,8 +22,8 @@ For a reversible local choice, ordinary project language is enough. When a use n
 
 **Three recognition cases.**
 
-- A DJ is already performing. The current track is ending, the room response has changed, a promised genre constraint still applies, and several known tracks remain possible. The question is what to play next, who will make the transition, and what cue would make the DJ abandon it.
-- A case worker is handling an open case. New evidence may make the displayed case state stale, while policy and authority still bound the allowed response. The question is whether to refresh, take the safe fallback, compare several live actions, or stop.
+- A DJ is already performing. The current track is ending, the room response has changed, a promised genre constraint applies, and several known tracks remain possible. The question is what to play next, who will make the transition, and what cue would make the DJ abandon it.
+- A case worker is handling an open case. New evidence may make the displayed case state stale, while policy and authority bound the allowed response. The question is whether to refresh, take the safe fallback, compare several live actions, or stop.
 - A robotic maintenance system receives a recommendation during inspection. A sensor state has changed since the recommendation was produced. The question is whether the recommendation remains usable, needs refresh, or must give way to a safe response.
 
 **What goes wrong if missed.** A plan, policy, score, case file, recommender output, dashboard, trace, or pattern body is treated as the chooser. Every cue is forced into a heavy decision record, or every adjustment is called improvisation. The team may also invent an option set after the real issue has become stale information, missing authority, missing capability, or no current Work at all.
@@ -34,11 +34,11 @@ For a reversible local choice, ordinary project language is enough. When a use n
 
 - Before Work exists, use `A.15.2` for intended-work content and `A.15.5` for work-entry readiness.
 - After an interruption, use `A.15.10` when the purpose, governing method or unfinished contribution must be recovered before a useful next action can be selected. If these are already available, continue here.
-- When ongoing Work is blocked because an exact performer, support, or continuation-state relation is missing or unsupported—not because known candidates need choosing—use the actual-Work branch of `A.15.8` to repair that configuration or stop, then return here.
+- When ongoing Work is blocked because a performer, support, or continuation-state relation is missing or unsupported—not because known candidates need choosing—use the actual-Work branch of `A.15.8` to repair that configuration or stop, then return here.
 - For a settled short procedure with no material branch, use the applicable domain Method; consult its `A.3.2` MethodDescription when a description is needed.
 - For a choice outside current Work when the chooser and `OptionSet` are already known, use `C.11`.
-- For missing action candidates, use a subject-specific generation Method; use `C.18` only for an actual open-ended candidate archive and front.
-- After the action is fixed, use `C.24` if calls to tools or services must be planned. An already prescribed action can enter C.24 directly before Work begins; it needs no A.15.7 decision.
+- For missing action candidates, use a subject-specific generation Method; use `C.18` only for an open-ended candidate archive and front.
+- After the action is fixed, use `C.24` if calls to tools or services must be planned. An already prescribed action can enter C.24 before Work begins; it needs no A.15.7 decision.
 - For intended-work content or plan revision before or during Work, use `A.15.2`; return here when current facts require a next-action choice.
 - For retrospective Method recovery, use `A.3.1.MR`.
 
@@ -48,23 +48,23 @@ For a reversible local choice, ordinary project language is enough. When a use n
 
 Situation-responsive Work needs more than permission to vary. A practitioner must notice which facts can change the continuation, remain within the applicable domain Method, distinguish choosing from performing, and know when to stop or reconsider. `C.11` compares an already formed `OptionSet` for a known chooser. Steering selects a next continuation from current Work facts; planning records or revises intended-work content before or during performance. Tool-call planning begins after the underlying action has been fixed.
 
-Without a direct Method, teams oscillate between two errors. They follow an obsolete plan as though nothing changed, or they call unconstrained variation improvisation and lose reviewability. In both cases the current fact, relevant Method limits, chooser, performer, and return condition disappear.
+Without a steering Method, teams oscillate between two errors. They follow an obsolete plan as though nothing changed, or they call unconstrained variation improvisation and lose reviewability. In both cases the current fact, relevant Method limits, chooser, performer, and return condition disappear.
 
 ### A.15.7:3 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Responsiveness versus method discipline | Current facts may require a different continuation, but the domain Method still limits admissible action. |
+| Responsiveness versus method discipline | Current facts may require a different continuation, but the domain Method limits admissible action. |
 | Speed versus truthfulness | Keep a supported choice as light as its consequences allow. When a changed condition or missing required support defeats a consumed premise, compare feasible refresh, a supported alternative, fallback or stop. |
 | Recognition versus explicit comparison | A familiar cue may support one response without constructing an `OptionSet`; several live alternatives may require `C.11`. |
 | Choice versus action | The deciding System and intended performer may be the same or different, and neither a score nor a document occupies either position. |
 | Domain Method versus steering Method | The reusable way being performed and the Method for choosing its next action are distinct even when the same Work enacts both. |
 | Feedback versus claims about past performance | A new observation can guide the next choice and reveal an earlier unsupported claim. Correct the claim while preserving the actual occurrence history. |
-| Plain use versus durable reliance | Most local choices need a readable sentence; another use may need a separately identified claim-bearing episteme and exact supporting relations. |
+| Plain use versus durable reliance | Most local choices need a readable sentence; another use may need a separately identified claim-bearing episteme and supporting relations. |
 
 ### A.15.7:4 - Solution
 
-Use the following steering Method. Keep the answer as small as the current decision permits, and stop as soon as a direct result or honest blocker is available.
+Use the following steering Method. Keep the answer as small as the current decision permits, and stop as soon as a result or blocker is available.
 
 #### A.15.7:4.1 - Keep the two Method positions distinct
 
@@ -72,41 +72,71 @@ The **domain Method** is the reusable way whose current enactment is being steer
 
 The **steering Method** supplied here uses current facts to choose one next action within those limits.
 
-One current Work occurrence may enact the domain Method and, when this steering Method is actually used, also enact the steering Method. Before either claim, use A.13 to identify the actual performer and A.15.1 to admit the dated Work independently. If this account must also say under which assignment the Work was performed, check that relation separately through F.6. Ground each `enactsMethod` claim separately; neither follows from the other. If the choice must be treated as a smaller Work occurrence, identify its own performer and Work basis and state its relation to the larger Work only when that relation actually obtains.
+One current Work occurrence may enact the domain Method and, when this steering Method is used, also enact the steering Method. Before either claim, use A.13 to identify the actual performer and A.15.1 to admit the dated Work independently.
 
-A domain Method may instead be an admitted composite containing the steering Method as a submethod. That requires the identity of both Methods and an exact composition relation under `A.3.1` and `B.1.5` or another direct composition rule. Method composition still does not prove that a particular Work occurrence enacted the submethod.
+If this account must also say under which assignment the Work was performed, check that relation separately through F.6. Ground each `enactsMethod` claim separately; neither follows from the other.
+
+If the choice must be treated as a smaller Work occurrence, identify its own performer and Work basis and state its relation to the larger Work only when that relation obtains.
+
+A domain Method may instead be an admitted composite containing the steering Method as a submethod. That requires the identity of both Methods and a composition relation under `A.3.1` and `B.1.5` or another composition rule. Method composition does not prove that a Work occurrence enacted the submethod.
 
 Reading this pattern, consulting a MethodDescription, following a plan, or receiving a recommendation does not by itself establish those Method, composition, or enactment claims.
 
 #### A.15.7:4.2 - Run the seven-step steering Method
 
-1. **Confirm current Work or close this entry.** Name the ongoing Work occurrence at the grain that changes the decision. When the performed-Work claim matters, use the full A.15.1:4.1 admission test, including the candidate occurrence's common construction and every actual performer's A.13 core. Ground the claimed domain-Method enactment as section 4.1 explains. If this steering account must also identify the assignment under which the Work was performed, check that assignment separately through F.6; F.6 identifies neither performer nor assignment. Its failure alone leaves independently admitted Work intact; if the same finding questions a premise of that admission, recheck that premise and the claims that depend on it. If Work has not begun, stop using this pattern: use `A.15.2` for intended-work content, `A.15.5` for work-entry readiness, or `C.11` only when a known chooser must compare an already formed `OptionSet`. Do not turn intended Work into a current occurrence or every small action into separate Work.
-2. **Use only action-guiding information about current facts.** Name the relevant observation, participant response, available material, resource or safety limit, commitment, case fact, or time pressure. Recover the source and time conditions that can change its use. A missing timestamp or the age of a record alone does not defeat still-applicable information. When a changed condition or missing required support defeats a relied-on claim, retain the other qualified information and name the affected limit. Use `C.11.DUA` to compare a feasible, timely refresh with a supported narrower action, the declared safe fallback or stopping. Obtain the needed evidence for the selected use; do not act on an unsupported premise because refresh is costly. A directly checkable live cue needs an ordinary observation sentence, not a universal situation record or evidence dossier.
+1. **Confirm current Work or close this entry.** Name the ongoing Work occurrence at the grain that changes the decision. When the performed-Work claim matters, use the full A.15.1:4.1 admission test, including the candidate occurrence's common construction and every actual performer's A.13 core. Ground the claimed domain-Method enactment as section 4.1 explains.
+
+   If this steering account must also identify the assignment under which the Work was performed, check that assignment separately through F.6; F.6 identifies neither performer nor assignment. Its failure alone leaves independently admitted Work intact; if the same finding questions a premise of that admission, recheck that premise and the claims that depend on it.
+
+   If Work has not begun, stop using this pattern: use `A.15.2` for intended-work content, `A.15.5` for work-entry readiness, or `C.11` only when a known chooser must compare an already formed `OptionSet`. Do not turn intended Work into a current occurrence or every small action into separate Work.
+2. **Use only action-guiding information about current facts.** Name the relevant observation, participant response, available material, resource or safety limit, commitment, case fact, or time pressure. Recover the source and time conditions that can change its use. A missing timestamp or the age of a record alone does not defeat applicable information.
+
+   When a changed condition or missing required support defeats a relied-on claim, retain the other qualified information and name the affected limit. Use `C.11.DUA` to compare a feasible, timely refresh with a supported narrower action, the declared safe fallback or stopping. Obtain the needed evidence for the selected use; do not act on an unsupported premise because refresh is costly.
+
+   A directly checkable live cue needs an ordinary observation sentence, not a universal situation record or evidence dossier.
 3. **Recover both Method positions.** State the domain Method and its relevant allowances and stops. When this steering Method is being used, keep that contribution clear. Add a separately grounded co-enactment or admitted-submethod account under section 4.1 only when that relationship is asserted or needed by the receiving use; an ordinary next-action answer need not assert either. Use a description, plan, policy, score, case model, recommendation or dashboard for the information it supplies to the deciding System.
-4. **Form the smallest honest set of available actions.** Include only actions allowed now by the domain Method and named constraints. If the Method already requires one action and no material branch remains, follow it and stop using this pattern. When further candidate development is needed to make a supported choice, use a subject-specific generation Method; use `C.18` only when an open-ended candidate archive and front are actually needed. When the obstacle is a known constraint or missing required ground, resolve that question under its rule or stop; see step 6 and section 4.3. Do not hide invention inside choice.
-5. **Use the lightest truthful choice mode.** State the cue, comparison, quick forecast, value concern, or mandatory criterion that can change the answer. A reliable cue may support a familiar response after an applicability and consequence check. A claim that it is better than alternatives additionally needs the comparison rule and basis that establish that claim. An unfamiliar or consequential case may require diagnosis, adaptation, or a quick mental or physical forecast. When several live alternatives genuinely require comparison, pass the chooser, current `OptionSet` and comparison basis to `C.11`. Include an inquiry question only when it is live under C.11's conditions; an already supported choice needs no invented probe or omission account.
-6. **Keep choosing, authority, and acting separate.** Identify the deciding System and, for a selected action, the intended performer. If the choice depends on permission, responsibility, commitment, capability, or authority, establish that exact relation instead of inferring it from a system-role label or recommendation score. If its factual basis is unknown, seek the needed information from an appropriate source, use a supported alternative, or stop. If the required relation is known not to obtain, choose an admissible alternative, repair the relevant conditions under their governing rule, or stop. An obligation for another System to supply information or make the repair needs its own ground.
-7. **Return the supported answer and its continuation conditions.** When an action is selected, state it and its grounds, the intended performer, and any stop, fallback, observation or return condition needed for that use. If no action can yet be supported, state the blocker and the supported return or stop. If the choice revises a `U.WorkPlan`'s intended-work content, update that plan separately under `A.15.2`. If the receiving claim needs a distinct Work occurrence for the performed action, follow step 1 for its performer and independent admission; add F.6 only for assignment-bound attribution. Otherwise retain the action and observation at the current Work grain. Ground any asserted operation application separately. Use any resulting observation that bears on a subsequent choice. If it challenges an earlier Method-enactment or Work claim, recheck that claim and its dependents as in step 1; correct or retract the claim when the new grounds refute it. Preserve the actual performance history.
+4. **Form the smallest set of available actions.** Include only actions allowed now by the domain Method and named constraints. If the Method already requires one action and no material branch remains, follow it and stop using this pattern.
 
-#### A.15.7:4.3 - Select the current branch
+   When further candidate development is needed to make a supported choice, use a subject-specific generation Method; use `C.18` only when an open-ended candidate archive and front are needed.
 
-| Current situation | What to use now | Result and stop |
+   When the obstacle is a known constraint or missing required ground, resolve that question under its rule or stop; see step 6 and section 4.3. Do not hide invention inside choice.
+5. **Use the lightest choice mode.** State the cue, comparison, quick forecast, value concern, or mandatory criterion that can change the answer. A reliable cue may support a familiar response after an applicability and consequence check. A claim that it is better than alternatives additionally needs the comparison rule and basis that establish that claim.
+
+   An unfamiliar or consequential case may require diagnosis, adaptation, or a quick mental or physical forecast.
+
+   When several live alternatives require comparison, pass the chooser, current `OptionSet` and comparison basis to `C.11`. Include an inquiry question only when it is live under C.11's conditions; an already supported choice needs no invented probe or omission account.
+6. **Keep choosing, authority, and acting separate.** Identify the deciding System and, for a selected action, the intended performer. If the choice depends on permission, responsibility, commitment, capability, or authority, establish that relation instead of inferring it from a system-role label or recommendation score.
+
+   If its factual basis is unknown, seek the needed information from an appropriate source, use a supported alternative, or stop.
+
+   If the required relation is known not to obtain, choose an admissible alternative, repair the relevant conditions under their governing rule, or stop. An obligation for another System to supply information or make the repair needs its own ground.
+7. **Return the supported answer and its continuation conditions.** When an action is selected, state it and its grounds, the intended performer, and any stop, fallback, observation or return condition needed for that use. If no action can yet be supported, state the blocker and the supported return or stop.
+
+   If the choice revises a `U.WorkPlan`'s intended-work content, update that plan separately under `A.15.2`.
+
+   If the receiving claim needs a distinct Work occurrence for the performed action, follow step 1 for its performer and independent admission; add F.6 only for assignment-bound attribution. Otherwise retain the action and observation at the current Work grain. Ground any asserted operation application separately.
+
+   Use any resulting observation that bears on a subsequent choice. If it challenges an earlier Method-enactment or Work claim, recheck that claim and its dependents as in step 1; correct or retract the claim when the new grounds refute it. Preserve the actual performance history.
+
+#### A.15.7:4.3 - Select the branch
+
+| Situation | What to use now | Result and stop |
 | --- | --- | --- |
-| The domain Method already requires one action | Follow the Method or its selected description directly. | The required action and its existing stop; no steering or decision wrapper. |
+| The domain Method already requires one action | Follow the Method or its selected description. | The required action and its existing stop; no steering or decision wrapper. |
 | One familiar live cue points to one response and a quick consequence check passes | Use the recognition branch in this pattern. | One decision, intended performer, live cue, and any stop or feedback condition needed for the continuation. |
 | Several admissible actions remain and comparison can change the choice | Use `C.11`; add `A.19` kernels only when their comparison or selection result matters. | A `ChoiceResult` under the applicable constraints. Return a fixed action here for performer and feedback; keep any retained tie-set explicit, and follow a `reject current set`, `probe again`, or `reroute` result to its stated next question. |
-| Adequate action candidates still need to be developed | Use a subject-specific generation Method; use `C.18` only for an actual open-ended archive/front question. | New candidates or an honest failure to generate; no premature choice. |
+| Adequate action candidates need to be developed | Use a subject-specific generation Method; use `C.18` only for an open-ended archive/front question. | New candidates or a failure to generate; no premature choice. |
 | The action is fixed but calls to tools or services must be planned | Use `C.24`. | A call plan and checkpoint return; the call plan is not the underlying choice. |
 | A changed condition or missing required support defeats an action-guiding claim | Keep the other qualified information; compare feasible, worthwhile refresh with a supported narrower action, the named safe fallback or stopping under §4.2. | Qualified information supports the selected continuation, with the affected limit stated. Age or a missing administrative time field alone does not invalidate an applicable claim. |
 | A required safety, authority, capability, applicability, or current-Work condition is unresolved or fails | Use the pattern that defines or tests that condition—for example, `A.2.2` for capability, `A.15.1` for performed Work, and `A.15.5` only for work-entry readiness; keep safety, authority, and applicability with the pattern that defines them. | Retain the supported result: if a needed fact is unknown, name the gap; if the applicable test fails, name the failed condition. Obtain a needed basis, make a permitted repair, choose a supported alternative, or stop. An unresolved or failed condition does not establish action, permission, capability, Work, or a Method change. |
 
-A current account may treat an unexamined outcome or recurring adjustment as ordinary, so that no question enters this choice. `B.5.PI` uses a selected demonstration, handover or other ordinary work occasion to compare a result with its use and develop a question or retain an early cue. It requires actual access and attention, not a prior diagnosis. Use it when that contribution is needed; ordinary next-action selection does not require auditing every action.
+A current account may treat an unexamined outcome or recurring adjustment as ordinary, so that no question enters this choice. `B.5.PI` uses a selected demonstration, handover or other ordinary work occasion to compare a result with its use and develop a question or retain an early cue. It requires access and attention, not a prior diagnosis. Use it when that contribution is needed; ordinary next-action selection does not require auditing every action.
 
-When an available method repeatedly goes unconsidered at a relevant moment, use `A.15.11` to connect it with an occasion in the work. This can make a useful candidate available to step 4; the current constraints still determine which actions are admissible.
+When an available method repeatedly goes unconsidered at a relevant moment, use `A.15.11` to connect it with an occasion in the work. This can make a useful candidate available to step 4; the current constraints determine which actions are admissible.
 
 #### A.15.7:4.4 - Keep the first result light
 
-For a reversible local use, speak plainly: “Choose track B because the room response changed and it still satisfies the promised genre constraint; the DJ performs the transition; abandon it if the next cue shows the transition is failing.”
+For a reversible local use, speak plainly: “Choose track B because the room response changed and it satisfies the promised genre constraint; the DJ performs the transition; abandon it if the next cue shows the transition is failing.”
 
 When a current or later use needs an identified claim-bearing episteme, reuse a sufficient one or identify one under `C.2.1`. State the decision or observation it concerns and the distinctions on which that use relies. Arrange durable access when later reliance requires it.
 
@@ -114,9 +144,11 @@ When a current or later use needs an identified claim-bearing episteme, reuse a 
 
 #### A.15.7:5.1 - DJ performance
 
-In this constructed case, assume the full A.15.1:4.1 admission basis is independently established for one performance from 20:00 to 21:00 UTC on 20 July 2026, including that occurrence's A.1:4.2 common construction. Its complete history satisfies the declared local containment predicate's boundary, window and applicability conditions for the admitted System `EventService-1`. The independently identified actual performer System is the DJ. The local `SetPerformerRole` criterion requires control over track selection and transition; the observed behavior satisfies it independently of the Work label. The directly declared `SetPerformanceAssignment` species assigns that kind when event designation and control of the set's playback obtain. Both stipulated facts establish `RA-DJ-Set1` for the stated set and window. The performance history shows the DJ following the independently identified `EventPerformanceMethod-1`. With admission established, identify `SetWork-1 : U.Work` and assert its grounded domain-Method enactment and containing-System relation. No assignment-bound attribution is requested.
+In this constructed case, assume the full A.15.1:4.1 admission basis is independently established for one performance from 20:00 to 21:00 UTC on 20 July 2026, including that occurrence's A.1:4.2 common construction. Its complete history satisfies the declared local containment predicate's boundary, window and applicability conditions for the admitted System `EventService-1`. The independently identified performer System is the DJ. The local `SetPerformerRole` criterion requires control over track selection and transition; the observed behavior satisfies it independently of the Work label. The declared `SetPerformanceAssignment` species assigns that kind when event designation and control of the set's playback obtain. Both stipulated facts establish `RA-DJ-Set1` for the stated set and window.
 
-The DJ is already performing under that Method. The current track is ending, the DJ directly hears that room response has fallen, one promised genre constraint still applies, and three known tracks fit the remaining time. The DJ rules out one track because its transition violates the domain Method, recognizes a familiar cue favoring a second, briefly checks how the transition is likely to land, and chooses it.
+The performance history shows the DJ following the independently identified `EventPerformanceMethod-1`. With admission established, identify `SetWork-1 : U.Work` and assert its grounded domain-Method enactment and containing-System relation. No assignment-bound attribution is requested.
+
+The DJ is already performing under that Method. The current track is ending, the DJ hears that room response has fallen, one promised genre constraint applies, and three known tracks fit the remaining time. The DJ rules out one track because its transition violates the domain Method, recognizes a familiar cue favoring a second, briefly checks how the transition is likely to land, and chooses it.
 
 The answer names the chosen track and reason, the DJ as chooser and intended performer, and the condition for abandoning the transition. The described selection, cue check and stop condition supply the separate basis for saying this Work also enacts the steering Method. The performance history supplies its domain-Method enactment; neither claim follows merely from the other. The playlist supplies the available material; the performance and selection facts above ground the two enactment claims.
 
@@ -130,7 +162,7 @@ The performers, deciding System, musical or movement material, interaction, Meth
 
 A worker is performing one case-handling Work occurrence under a domain Method. A displayed case state predates newly filed evidence. The new evidence changes a fact consumed by the displayed state, so the worker refreshes that affected claim before relying on it. If refresh is unavailable, the worker uses the declared safe fallback or stops. The case file conveys the claims used by the worker; any authority or performed-Work claim keeps its own grounds.
 
-The worker also uses an identified procedure whose version and applicability remain unchanged. The displayed copy has no separate expiry field, and this use requires none. The worker retains that procedure while refreshing the case-state claim affected by the new evidence. The result names the current next action and its limits, with no separate certificate for retaining the unaffected procedure.
+The worker also uses an identified procedure whose version and applicability remain unchanged. The displayed copy has no separate expiry field, and this use requires none. The worker retains that procedure while refreshing the case-state claim affected by the new evidence. The result names the next action and its limits, with no separate certificate for retaining the unaffected procedure.
 
 If the organization's admitted case-handling Method already includes this steering Method, state that composition separately. Do not infer it from the case model or a repeated workflow label.
 
@@ -143,12 +175,12 @@ An AI system using a model proposes the next inspection action, but a sensor con
 - **Optimization bias:** do not force every responsive choice into a fully enumerated optimization problem.
 - **Human-only bias:** deciding and performing Systems may be people, teams, robots, AI systems, organizations, or other equipped or combined arrangements.
 - **Automation bias:** a recommender output, score, dashboard, or case file informs a decision only through current and applicable claims; it does not become the chooser.
-- **Improvisation romanticism:** responsiveness remains bounded by the domain Method, actual constraints, and stop conditions.
-- **Record inflation:** durable records are optional and use-driven; a direct observation sentence can be enough.
+- **Improvisation romanticism:** responsiveness remains bounded by the domain Method, constraints, and stop conditions.
+- **Record inflation:** durable records are optional and use-driven; an observation sentence can be enough.
 
 ### A.15.7:7 - Conformance Checklist
 
-- **CC-A15.7-1 — Current Work.** Is ongoing Work identified, or did the user correctly stop and name `A.15.2`, `A.15.5`, or `C.11` for the question that remains?
+- **CC-A15.7-1 — Current Work.** Is ongoing Work identified, or did the user stop and name `A.15.2`, `A.15.5`, or `C.11` for the question that remains?
 - **CC-A15.7-2 — Method limits.** Is the applicable domain Method and the relevant allowance or stop explicit?
 - **CC-A15.7-3 — Action-guiding information.** Does every stated fact matter to the action, and is the observation, report, recommendation, or other information current enough when that matters?
 - **CC-A15.7-4 — Method relation.** Are domain and steering Methods distinct, with co-enactment or composition asserted only from its own basis?
@@ -168,13 +200,13 @@ An AI system using a model proposes the next inspection action, but a sensor con
 | “The steering Method is obviously part of the domain Method.” | Assert composition only with the admitted Methods and an obtaining composition relation. A needed co-enactment claim instead requires two separately grounded enactments. If neither relationship is asserted or needed, retain the ordinary next-action answer without adding one. |
 | “The recommendation was recent enough.” | Establish that the action-guiding claims remain applicable. When a consumed premise is defeated, refresh it, use a supported alternative or safe fallback, or stop. |
 | “The plan already contains the action, so Work occurred.” | Keep plan revision, next-action answer, and performed Work separate. |
-| “Several options might exist, so use C.11 first.” | Recover the current Work, relevant Method limits, facts, and available actions first; use `C.11` when the live alternatives genuinely need comparison. |
+| “Several options might exist, so use C.11 first.” | Recover the current Work, relevant Method limits, facts, and available actions first; use `C.11` when the live alternatives need comparison. |
 
 ### A.15.7:9 - Consequences
 
 | Benefit | Cost or caution |
 | --- | --- |
-| Responsive Work remains methodical without becoming rigid. | The practitioner must identify the few facts that can actually change the next action. |
+| Responsive Work remains methodical without becoming rigid. | The practitioner must identify the few facts that can change the next action. |
 | Familiar cue recognition stays lightweight. | High-consequence cases require grounds adequate to the consequence. An already supported choice may suffice; uncertainty in a consumed premise can require comparison, refresh, fallback, or stop. |
 | Choosing, authority, and acting remain visible. | A recommender cannot absorb accountability merely because it supplies a score. |
 | Feedback can improve later choices or Methods. | Preserve the actual occurrence history. Correct or retract an earlier claim when new grounds refute it, and recheck dependent conclusions. Preserve an earlier claim edition when the receiving use needs it. |
@@ -190,7 +222,7 @@ The pattern begins before late-stage option comparison and ends before tool-call
 
 | Source line | Contribution | FPF adoption |
 | --- | --- | --- |
-| Reviews of [high-risk decision-making](https://pmc.ncbi.nlm.nih.gov/articles/PMC10564111/) (2023) and [recognition-primed decision-making in sport](https://pmc.ncbi.nlm.nih.gov/articles/PMC9252097/) (2022) | Distinguish direct recognition, diagnosis or adaptation, quick simulation, rule-based response, analytic comparison, and adaptive response in different situations. | **Adopt the plurality of choice modes.** Do not turn one occupational model into a universal law; use the lightest truthful mode for the current case. |
+| Reviews of [high-risk decision-making](https://pmc.ncbi.nlm.nih.gov/articles/PMC10564111/) (2023) and [recognition-primed decision-making in sport](https://pmc.ncbi.nlm.nih.gov/articles/PMC9252097/) (2022) | Distinguish direct recognition, diagnosis or adaptation, quick simulation, rule-based response, analytic comparison, and adaptive response in different situations. | **Adopt the plurality of choice modes.** Do not turn one occupational model into a universal law; use the lightest mode for the current case. |
 | Mature representation standard: [OMG CMMN 1.1](https://www.omg.org/spec/CMMN/1.1/About-CMMN) (2016) | Represents discretionary, event-centered case work whose later actions can depend on changing case information. | **Use as a representation contrast, not as current universal practice.** A case account can name or describe its deciding System. That System's agency and authority, and the next-action Method used, require their own grounds; notation alone does not establish them. |
 | [OMG Essence 2.0 Beta 2](https://www.omg.org/spec/Essence/2.0/Beta2) (beta, March 2026) | Offers a beta proposal for describing and composing engineering-method elements. | **Use only as neighboring beta Method Engineering.** Its beta status and method-description purpose do not make it a stable next-action doctrine. |
 | Method Engineering lineage: the [2010 situational Method Engineering review](https://www.jucs.org/jucs_16_3/situational_method_engineering_state.html) and a [2023 review](https://doi.org/10.1016/j.procir.2024.06.001) | Describe ways to construct or adapt Methods for a situation. | **Keep as neighboring Method Engineering.** Constructing or describing a Method and choosing the next action during its enactment are distinct activities; a claim about a dated Work occurrence of either requires its own A.15.1 basis after A.13 identifies the performer. |
@@ -198,7 +230,7 @@ The pattern begins before late-stage option comparison and ends before tool-call
 ### A.15.7:12 - Relations
 
 - **Builds on:** `A.3.1` for domain and steering Method identity; A.13 for each actual performer; `A.15.1` for independently admitted current Work and each separately obtaining enactment; F.6 when the result must also identify the assignment under which that Work was performed; and `A.10` when a source-to-use account must remain replayable.
-- **Coordinates with:** `A.15` for SystemRole–Method–Work alignment before next-action selection; `A.15.6` for recovery of the direct subject from project, process, or case wording before live Work steering; `A.15.2` for intended-work content and a separate WorkPlan change; `A.15.5` for work-entry readiness; `B.1.5` for admitted Method composition; `C.11` for comparison among a current `OptionSet`; `A.19` only for a current comparison or selector result; `C.18` only for an actual open-ended candidate archive/front; `C.24` for tool-call planning after the action is fixed; and `G.11` for scoped refresh.
+- **Coordinates with:** `A.15` for SystemRole–Method–Work alignment before next-action selection; `A.15.6` for recovery of the subject from project, process, or case wording before live Work steering; `A.15.2` for intended-work content and a separate WorkPlan change; `A.15.5` for work-entry readiness; `B.1.5` for admitted Method composition; `C.11` for comparison among a current `OptionSet`; `A.19` only for a comparison or selector result; `C.18` only for an open-ended candidate archive/front; `C.24` for tool-call planning after the action is fixed; and `G.11` for scoped refresh.
 - **Keeps separate:** chooser, intended performer, authority, capability, MethodDescription, plan, recommendation, performed action, result, and later Method or description change.
 
 ### A.15.7:End

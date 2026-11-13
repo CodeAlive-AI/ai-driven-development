@@ -2,7 +2,7 @@
 
 > **Type:** Specialization pattern
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 ### A.6.3.NAR:1 - Problem frame
 
@@ -23,7 +23,7 @@ Plain starting vocabulary:
 | `ordering and connective account` | The chosen event, causal, discovery, didactic, tension, traversal, or other order, plus the links that explain why one step follows another. |
 | `narrative rendering` | The receiving sequential account. A page, audio file, slide, or publication carrier can express or make it available without being the account's claim-bearing identity. |
 | `loss and return` | What the narrative omits, weakens, rearranges, or cannot support, and where the reader returns when that missing structure matters. |
-| `narrating or rendering worker` | The person, team or system preparing the narrative. A particular dated Work claim follows A.13 and independent A.15.1 admission; F.6 applies only when precise assignment-bound attribution matters. Any authority claim has its own grounds. |
+| `narrating or rendering worker` | The person, team or system preparing the narrative. A dated Work claim follows A.13 and independent A.15.1 admission; F.6 applies only when precise assignment-bound attribution matters. Any authority claim has its own grounds. |
 | `structural-information question` | How much of the selected source structure can this reader correctly extract from the narrative under the stated preparation, access and budget? Use `C.2.8` for the characteristic, `C.33` for architecture-use adequacy and the applicable domain evaluation for a local scale. |
 
 **First useful move.** Write a useful narrative and give the reader enough source and ordering information to see what it preserves, foregrounds or omits. A compact note can carry that information. Add a source-return condition when omitted structure or a changed question requires it; any excluded downstream use follows F.19:4's full guard test.
@@ -34,7 +34,9 @@ Plain starting vocabulary:
 
 **Ordinary use.** For low-reliance teaching, orientation, or internal explanation, the useful narrative with the needed source and ordering information is enough. Exact endpoint identities and a formal construction record are not prerequisites for this first result.
 
-**Reliance-facing use.** Open the exact branch only when the receiving use makes claim-level identity and preservation evidence material: for example, the narrative must travel independently, be cited or disputed, cross a material representation-scheme boundary for consequential use, enter generated-output admission under an identity-bearing receiver, support consequential reliance, or satisfy another named receiver that requires exact identity. A public context is a cue to ask which receiving requirement applies; publicness alone is not sufficient. Then recover exact source episteme `X`, receiving narrative episteme `Y`, and construction `n : X -> Y`, together with the additional source dependencies, scheme relation, loss, evidence, or assurance actually required by that receiving use.
+**Reliance-facing use.** Open the exact branch only when the receiving use makes claim-level identity and preservation evidence material: for example, the narrative must travel independently, be cited or disputed, cross a material representation-scheme boundary for consequential use, enter generated-output admission under an identity-bearing receiver, support consequential reliance, or satisfy another named receiver that requires exact identity. A public context is a cue to ask which receiving requirement applies; publicness alone is not sufficient.
+
+Then recover source episteme `X`, receiving narrative episteme `Y`, and construction `n : X -> Y`, together with the additional source dependencies, scheme relation, loss, evidence, or assurance required by that receiving use.
 
 Carrier export, generated-output admission, publication, evidence, assurance, ethics, and work authorization are separate questions; apply the corresponding pattern only when that claim is current.
 
@@ -44,7 +46,7 @@ Projects often need narrative because selected source structures are too tangled
 
 Without `A.6.3.NAR`:
 
-1. narrative is treated as style polish after the real work is done;
+1. narrative is treated as a final style-polishing step;
 2. narrative is treated as mere lossy summary even when sequence-making is the main representational move;
 3. selected structure, ordering decisions, event models, and lost relations disappear behind fluent prose;
 4. engagement is allowed to raise confidence, authority, ethical permission, or policy force without the current evidence relation, assurance result, ethical basis, or policy basis required for that stronger claim;
@@ -70,7 +72,7 @@ Produce the ordinary useful result first:
 2. Point to the source material and select only the structures needed for that use. Say why those structures matter.
 3. State temporal posture or mediation only when it changes the ordering or the trust boundary.
 4. Choose an ordering and connective account: event, causal, discovery, didactic, tension, traversal, or another explicit rule.
-5. Draft the smallest narrative that lets the reader follow that path. For technical prose, use F.19 for precise plain-language repair.
+5. Draft the smallest narrative that lets the reader follow that path. For technical prose, use F.19 for plain-language repair.
 6. Compare the draft back to the source material. Record what it preserves and foregrounds, what it omits or weakens, and which connective or interpretive statements are not source claims.
 7. State the supported narrative use. When omitted structure or a changed question requires return, identify the source to restore or the stronger claim-specific question and its governing pattern. Any excluded use follows F.19:4's full guard test.
 
@@ -79,29 +81,29 @@ Use this compact note when it helps make the source-to-narrative comparison insp
 | Narrative note entry | Practical question |
 | --- | --- |
 | Reader/listener and use | Who needs the narrative, and what should it enable? |
-| Source material | What exact page, episteme, graph, model, record, or source pack will the author return to? |
+| Source material | What page, episteme, graph, model, record, or source pack will the author return to? |
 | Selected structures and rationale | Which selected source structures matter, and why these? |
 | Ordering and connective account | Why does this path help the reader, and which links are explanatory additions rather than source claims? |
 | Preserved and foregrounded | What can the reader still recover, and what receives extra attention? |
 | Omitted, weakened, or unsupported | What is deferred, lost, rearranged, or newly suggested without source support? |
 | Use boundary | What use does this narrative support, and within which limits? |
-| Return or stronger question | When must the reader restore exact source material, or what stronger claim-specific question must be answered before the use continues? |
+| Return or stronger question | When must the reader restore source material, or what stronger claim-specific question must be answered before the use continues? |
 
 #### A.6.3.NAR:4.0.1 - Exact construction branch
 
-Open this branch when the identified receiving use depends on exact claim identity and preservation, under §1. Citation, distribution or generated status is a cue to examine that need, not a requirement by itself. Apply E.24.PUB separately when an actual publication occurrence, form, carrier, audience or bounded publication use matters.
+Open this branch when the identified receiving use depends on exact claim identity and preservation, under §1. Citation, distribution or generated status is a cue to examine that need, not a requirement by itself. Apply E.24.PUB separately when a publication occurrence, form, carrier, audience or bounded publication use matters.
 
-Then establish exact A.6.3 construction `n : X -> Y`:
+Then establish the A.6.3 construction `n : X -> Y`:
 
-1. identify source episteme `X` and receiving narrative episteme `Y` independently under C.2.1 by claim content, exact EntityOfConcern, and effective interpretation rules (`ReferenceScheme`);
-2. require the same exact EntityOfConcern; a narrative about another concern requires A.6.4;
-3. state how exact claims in `X` and any named additional source epistemes construct the sequential claim content of `Y`;
+1. identify source episteme `X` and receiving narrative episteme `Y` independently under C.2.1 by claim content, EntityOfConcern, and effective interpretation rules (`ReferenceScheme`);
+2. require the same EntityOfConcern; a narrative about another concern requires A.6.4;
+3. state how claims in `X` and any named additional source epistemes construct the sequential claim content of `Y`;
 4. state the endpoint scheme relation, ordering rule, preserved and foregrounded content, admitted loss, prohibited strengthening, applicability, and return; and
-5. cite every exact correspondence relation on which the construction actually depends and test it under its direct predicate.
+5. cite every correspondence relation on which the construction depends and test it under its direct predicate.
 
-Recover `X` as the exact source episteme whose claim content and EntityOfConcern supply the narrative source, and recover `Y` as the exact receiving narrative episteme. Treat input models and publications according to their source claims and keep forms and carriers in their direct roles. If the receiving item lacks recoverable claim content, an exact EntityOfConcern, or an effective reference scheme, keep it as candidate prose or a carrier and stop before asserting exact NAR.
+Recover `X` as the source episteme whose claim content and EntityOfConcern supply the narrative source, and recover `Y` as the receiving narrative episteme. Treat input models and publications according to their source claims and keep forms and carriers in their direct roles. If the receiving item lacks recoverable claim content, an EntityOfConcern, or an effective reference scheme, keep it as candidate prose or a carrier and stop before asserting exact NAR.
 
-When the exact branch is needed, use this fuller local record if the receiving use needs this explicit form; otherwise retain the required construction information in the account already being used:
+When the exact branch is needed, use this fuller local record if the receiving use needs this form; otherwise retain the required construction information in the account already being used:
 
 ```text
 StructureToNarrativeRenderingCase:
@@ -119,10 +121,10 @@ StructureToNarrativeRenderingCase:
   sourceStructureConstraintClaimEpistemeRefs?:
   narrativeConstructionWorkRef?:
   narratingOrRenderingSystemRef?: U.EntityRef resolving to an admitted U.System
-  narratingOrRenderingSystemRoleKindRef?: U.KindRef resolving to one exact local system-role kind
+  narratingOrRenderingSystemRoleKindRef?: U.KindRef resolving to one local system-role kind
   narratingOrRenderingSystemRoleAssignmentRef?: U.RelationRef constrained to U.SystemRoleAssignment
   readerOrListenerSystemRefs[]?: U.EntityRef values resolving to admitted systems
-  readerOrListenerSystemRoleKindRefs[]?: U.KindRef values resolving to exact local system-role kinds
+  readerOrListenerSystemRoleKindRefs[]?: U.KindRef values resolving to local system-role kinds
   readerOrListenerSystemRoleAssignmentRefs[]?: U.RelationRef values constrained to U.SystemRoleAssignment
   readerInterestOrUseHypothesis?:
   intendedReaderOrListenerUse:
@@ -140,15 +142,19 @@ StructureToNarrativeRenderingCase:
   strongerClaimQuestionsAndActions[]?:
 ```
 
-`selectedSourceStructureRefs` identifies the selected structures. A PatternID mentioned in `sourceStructureSelectionRationale` or surrounding prose only locates the content used to recognize or test them; it is not another structure reference. Include `sourceStructureDefinitionClaimEpistemeRefs` or `sourceStructureConstraintClaimEpistemeRefs` only when the exact identity of one or more definition or constraint claims changes reconstruction, comparison, dispute, or reliance. Both lists may be present and each resolves only to claim-bearing C.2.1 epistemes of the named kind.
+`selectedSourceStructureRefs` identifies the selected structures. A PatternID mentioned in `sourceStructureSelectionRationale` or surrounding prose only locates the content used to recognize or test them; it is not another structure reference. Include `sourceStructureDefinitionClaimEpistemeRefs` or `sourceStructureConstraintClaimEpistemeRefs` only when the identity of one or more definition or constraint claims changes reconstruction, comparison, dispute, or reliance. Both lists may be present and each resolves only to claim-bearing C.2.1 epistemes of the named kind.
 
-Resolve `X` and `Y` to their complete C.2.1 identities and use this record only for the construction account. When actual production history matters, recover each precise performer's A.13 core and independently admit dated narrative-construction Work under A.15.1; add F.6 afterward only when precise assignment-bound attribution is current. Include `readerInterestOrUseHypothesis` only when an assumption about the reader affects selection or ordering; retain it as a hypothesis. Include each optional System, system-role-kind, or assignment reference only when its exact referent and direct claim obtain independently. Connect source epistemes, parameters, methods, tools, and `Y` through exact direct relations or A.6.1 bindings. If the Work first constitutes `Y` and that inception claim matters, use A.15.PROD to test that separate local claim.
+Resolve `X` and `Y` to their C.2.1 identities and use this record only for the construction account. When production history matters, recover each performer's A.13 core and independently admit dated narrative-construction Work under A.15.1; add F.6 afterward only when precise assignment-bound attribution is current.
 
-`epiplexityOrStructuralInformationRef?` refers to a qualified `C.2.8` comparison or estimate when the narrative use depends on structural amount. Identify the receiving narrative episteme, its particular expression, the observer and relevant preparation, access and budget. A formal epiplexity or other mathematical estimate uses the `C.29` model-to-characteristic correspondence; a domain estimate retains its scale and evaluation conditions. The field remains optional for the ordinary narrative and note.
+Include `readerInterestOrUseHypothesis` only when an assumption about the reader affects selection or ordering; retain it as a hypothesis. Include each optional System, system-role-kind, or assignment reference only when its referent and direct claim obtain independently.
+
+Connect source epistemes, parameters, methods, tools, and `Y` through direct relations or A.6.1 bindings. If the Work first constitutes `Y` and that inception claim matters, use A.15.PROD to test that separate local claim.
+
+`epiplexityOrStructuralInformationRef?` refers to a qualified `C.2.8` comparison or estimate when the narrative use depends on structural amount. Identify the receiving narrative episteme, its expression, the observer and relevant preparation, access and budget. A formal epiplexity or other mathematical estimate uses the `C.29` model-to-characteristic correspondence; a domain estimate retains its scale and evaluation conditions. The field remains optional for the ordinary narrative and note.
 
 `nonAdmissibleDownstreamUse?`, also named `groundedNonAdmissibleDownstreamUse?`, is one optional explanatory field governed by F.19:4's plausible-reader test.
 
-Publication remains separate. E.24.PUB identifies any occurrence that makes selected episteme `Y` available to an audience and bounded use through one independently identified expression and the actual state or realization of its independently identified carrier. Any selected reusable publication form constrains that expression separately. C.2.1 identifies `Y`, A.6.3 governs the construction `n`, and E.17.0 independently decides whether `Y` has `U.View` membership.
+Publication remains separate. E.24.PUB identifies any occurrence that makes selected episteme `Y` available to an audience and bounded use through one independently identified expression and the state or realization of its independently identified carrier. Any selected reusable publication form constrains that expression separately. C.2.1 identifies `Y`, A.6.3 governs the construction `n`, and E.17.0 independently decides whether `Y` has `U.View` membership.
 
 Use this optional unfolding block when an independently identified selected structure must be carried into a reader-facing sequence with explicit loss and return:
 
@@ -162,11 +168,11 @@ NarrativeUnfoldingStructureBlock:
   receivingNarrativeEpistemeRef: Y
   preservedStructure:
   lostOrCoarsenedStructure:
-  narrativeStructureUseReturnCondition: return to exact source episteme X, then through its designation relations to the selected source structure when an omitted branch or exact order matters; apply the relevant pattern for any stronger claim
+  narrativeStructureUseReturnCondition: return to source episteme X, then through its designation relations to the selected source structure when an omitted branch or exact order matters; apply the relevant pattern for any stronger claim
   blockedOverread?: optional explanatory guard under F.19:4's plausible-reader test
 ```
 
-`structureBeingRenderedRef`, `narrativeOrderingStructureRef`, and any receiving narrative episteme occupy different positions. Use `unfoldingStructureBeingRenderedRef` only when the source structure is itself a constraint-governed unfolding structure. Apply A.22.CGUS identity and membership tests to the particular source or narrative-ordering structure whose CGUS membership is claimed. The block records references to those structures; ordinary NAR does not require such a qualification. `returnCondition` names the same value as `narrativeStructureUseReturnCondition`, not a second return rule.
+`structureBeingRenderedRef`, `narrativeOrderingStructureRef`, and any receiving narrative episteme occupy different positions. Use `unfoldingStructureBeingRenderedRef` only when the source structure is itself a constraint-governed unfolding structure. Apply A.22.CGUS identity and membership tests to the source or narrative-ordering structure whose CGUS membership is claimed. The block records references to those structures; ordinary NAR does not require such a qualification. `returnCondition` names the same value as `narrativeStructureUseReturnCondition`, not a second return rule.
 
 #### A.6.3.NAR:4.1 - Ordinary and reliance-facing cases
 
@@ -176,23 +182,25 @@ Move progressively. Add temporal posture, event-model support, mediation, viewpo
 
 #### A.6.3.NAR:4.2 - Exact same-EntityOfConcern and correspondence-mediated profiles
 
-This subsection applies only after the exact branch is open. Exact NAR is same-EntityOfConcern: `X` and `Y` designate the same exact concern even when their effective reference schemes differ. Similar content or a declared correspondence does not relax this rule. If the receiving narrative concerns another entity, use A.6.4 and state the retargeting relation there.
+This subsection applies only after the exact branch is open. Exact NAR is same-EntityOfConcern: `X` and `Y` designate the same concern even when their effective reference schemes differ. Similar content or a declared correspondence does not relax this rule. If the receiving narrative concerns another entity, use A.6.4 and state the retargeting relation there.
 
-Use the **direct-source-claims** profile when `n` constructs `Y` from claims in `X` and fixed configuration. A situation, event stream, domain model, proof-dependency field, evidence set, fictional canon, or source pack can contribute only through claims in `X` or through named additional source epistemes and exact relation occurrences. The raw object, graph, set, or pack is not the source endpoint.
+Use the **direct-source-claims** profile when `n` constructs `Y` from claims in `X` and fixed configuration. A situation, event stream, domain model, proof-dependency field, evidence set, fictional canon, or source pack can contribute only through claims in `X` or through named additional source epistemes and relation occurrences. The raw object, graph, set, or pack is not the source endpoint.
 
 Use the **correspondence-mediated** profile when `n` depends on relations among `X`, additional source epistemes or their designated structures. Recover each needed relation under its defining predicate and identify the source assertion used by the construction. That assertion may remain within a broader source episteme; a separate relation-description episteme is needed only when the use depends on it. C.34 applies only when its correspondence test fits the architecture use.
 
 ##### A.6.3.NAR:4.2.1 - Direct and architecture-mediated routes
 
-In the direct route, the exact source episteme states or designates the source situation, event structure, proof dependencies, canon claims, or source-pack claims that `n` orders. Viewpoint discipline may help, but `X`, `Y`, and `n` remain the central objects.
+In the direct route, the source episteme states or designates the source situation, event structure, proof dependencies, canon claims, or source-pack claims that `n` orders. Viewpoint discipline may help, but `X`, `Y`, and `n` remain the central objects.
 
-In the architecture-mediated route, one exact architecture-description, architecture-view, decision, candidate-structure, or telemetry episteme participates as `X` or as an explicitly named additional source episteme. Independently recover any selected A.22 structures, world-side holons, decisions, relations, or telemetry occurrences that its claims designate. The return chain is `Y` to exact source episteme(s), then through their exact designation relations to exact structures or occurrences when those are current. Keep every selection, coarsening, abstraction, omission, ordering, and correspondence explicit by using the applicable `C.32.*`, C.33, C.34, architecture-description, or decision test. NAR defines only `n`'s source-to-narrative construction, preservation, loss, and return boundary.
+In the architecture-mediated route, one architecture-description, architecture-view, decision, candidate-structure, or telemetry episteme participates as `X` or as a named additional source episteme. Independently recover any selected A.22 structures, world-side holons, decisions, relations, or telemetry occurrences that its claims designate. The return chain is `Y` to source episteme(s), then through their designation relations to structures or occurrences when those are current.
 
-In either route, identify temporal posture when it affects interpretation. A historical reconstruction, live commentary, prospective project narrative and fictional continuation have different source claims, uncertainty and ordering conditions. A particular dated narrative-construction Work claim remains separately governed by A.13 and A.15.1, with F.6 only for precise assignment-bound attribution.
+Keep every selection, coarsening, abstraction, omission, ordering, and correspondence explicit by using the applicable `C.32.*`, C.33, C.34, architecture-description, or decision test. NAR defines only `n`'s source-to-narrative construction, preservation, loss, and return boundary.
+
+In either route, identify temporal posture when it affects interpretation. A historical reconstruction, live commentary, prospective project narrative and fictional continuation have different source claims, uncertainty and ordering conditions. A dated narrative-construction Work claim remains separately governed by A.13 and A.15.1, with F.6 only for precise assignment-bound attribution.
 
 #### A.6.3.NAR:4.3 - Ordering rationale
 
-The ordering rationale is not decoration. It is the structure-to-sequence rule.
+The ordering rationale is the structure-to-sequence rule.
 
 Common ordering rationales:
 
@@ -211,28 +219,28 @@ If the source material only changes carrier form, file format, export layout, OC
 
 If the narrative asks readers to understand events, actions, mechanisms, or change, state enough event-model support to preserve the relevant happening or mechanism type, participants, causal or dependency links, update points, and what the reader is expected to predict or revise.
 
-If viewpoint, narrator, focalized object, protagonist, or agency choices affect understanding, keep their detailed vocabulary in the narrative domain. In FPF Core the reusable check is simpler: which selected source structure does the viewpoint foreground, hide, or weaken for this declared use? Invoke another FPF pattern only for a specific stronger claim that pattern actually defines.
+If viewpoint, narrator, focalized object, protagonist, or agency choices affect understanding, keep their detailed vocabulary in the narrative domain. In FPF Core the reusable check is: which selected source structure does the viewpoint foreground, hide, or weaken for this declared use? Invoke another FPF pattern only for a specific stronger claim that pattern defines.
 
 #### A.6.3.NAR:4.5 - Engagement, ethics, and assurance boundary
 
-Engagement is a real use claim. When engagement or motivation matters, state the intended effect, the source structure that may not be distorted for that effect, the affected reader or decision context, and the return condition. Use F.19:4's plausible-reader test for any optional explanatory guard.
+Engagement is a use claim. When engagement or motivation matters, state the intended effect, the source structure that may not be distorted for that effect, the affected reader or decision context, and the return condition. Use F.19:4's plausible-reader test for any optional explanatory guard.
 
 Use `D.1` for ethical value-frame entry, `D.2` through `D.4` for multilevel conflict and decision use, `D.5` for bias, human impact, or ethical assurance, `A.10` for evidence, and `B.3` for assurance. Apply only the patterns needed by the current claim.
 
 #### A.6.3.NAR:4.6 - Reopen, lower, and return rule
 
-An ordinary narrative remains fit while its source material, selected structures, reader use, ordering/connective account, loss statement, and return still match the actual use. An exact case additionally depends on the current identities of `X` and `Y`, the construction `n`, its source relations, and every exact qualification used by the receiving claim. Repair the smallest affected account and its dependent claims; do not turn NAR into a general narrative monitor.
+An ordinary narrative remains fit while its source material, selected structures, reader use, ordering/connective account, loss statement, and return still match the actual use. An exact case additionally depends on the current identities of `X` and `Y`, the construction `n`, its source relations, and every qualification used by the receiving claim. Repair the smallest affected account and its dependent claims.
 
 | Trigger | Required move |
 | --- | --- |
 | Source material or selected structures change | Compare the narrative with the changed source. Retain it when the change leaves its selected structures, claims and supported use unchanged; otherwise repair the affected ordering, preservation, loss, unsupported additions or return, and restrict only uses no longer supported. |
-| An exact discriminator of `X`, `Y`, an additional source episteme, or a depended-on relation changes | Reidentify only the changed exact object; restate the affected part of `n`, preservation, loss, and return. Use C.33 only for architecture-relevant captured/lost structure and G.2 only for its SoTA harvesting/synthesis claims. |
+| An exact discriminator of `X`, `Y`, an additional source episteme, or a depended-on relation changes | Reidentify only the changed object; restate the affected part of `n`, preservation, loss, and return. Use C.33 only for architecture-relevant captured/lost structure and G.2 only for its SoTA harvesting/synthesis claims. |
 | Intended reader or listener use becomes stronger, broader, or more reliance-facing | Reassess the narrative for the changed use and retain any already supported use. Open the exact branch only if the changed receiver now makes claim identity material, and add only the identity, source-chain, evidence, assurance, ethics, publication, or policy account that receiver requires; otherwise revise the ordinary account only as needed. |
 | Ordering rationale or connective account changes | Reopen the ordering and visible-loss account. Use RT as well when a material representation-scheme shift remains after narrative ordering is accounted for; use CSC when a narrower-use coarsened episteme is primary. |
-| Exact source material is missing, stale, or unreachable, or a stronger claim still lacks its claim-specific result | Identify and restrict the uses that depend on the missing, stale or unreachable source or absent claim-specific result. Restore source access or obtain the needed result when the receiving task requires it; preserve already supported uses. Use G.11 when currentness or freshness is the live defect. |
+| Source material is missing, stale, or unreachable, or a stronger claim still lacks its claim-specific result | Identify and restrict the uses that depend on the missing, stale or unreachable source or absent claim-specific result. Restore source access or obtain the needed result when the receiving task requires it; preserve already supported uses. Use G.11 when currentness or freshness is the live defect. |
 | Generated output, source-pack plan, schema, or admission result changes | Use C.35 for admission of an affected generated result to architecture use and G.2 for its SoTA harvesting/synthesis claims; reopen NAR only for the affected source-to-narrative relation, loss, and return. |
 | Domain narrative vocabulary or relevant narrative, NLG, or cognitive SoTA changes a relied-on field | Refresh that domain basis and replay the affected use; do not enlarge Core vocabulary merely to mirror the domain source. |
-| Downstream use requires evidence, assurance, ethics, publication, policy, decision, or work authority that NAR does not supply | Keep NAR as the narrative construction account and state the stronger claim under `A.10`, `B.3`, `D.1`–`D.5`, `E.24.PUB`, or the exact pattern that defines the needed decision or Work relation. |
+| Downstream use requires evidence, assurance, ethics, publication, policy, decision, or work authority that NAR does not supply | Keep NAR as the narrative construction account and state the stronger claim under `A.10`, `B.3`, `D.1`–`D.5`, `E.24.PUB`, or the pattern that defines the needed decision or Work relation. |
 | A correspondence or preservation claim weakens | Use C.34 for the correspondence that remains only when the receiving architecture use is within its scope, and C.33 for captured/lost architecture-relevant structures. Revisit a depended-on `C.2.8` structural comparison and its domain evaluation when the weakened claim changes what counts as correct recovery. Lower uses that required stronger sameness. |
 | Observer preparation, access, assistance or budget changes for a relied-on structural-amount claim | Reopen that `C.2.8` comparison under the changed conditions. Revise the narrative when the changed recovery no longer supports its stated reader use. |
 
@@ -262,7 +270,7 @@ When the receiver needs exact claim identity, `ArchitectureTradeoff-X` and `Arch
 
 Later, a rejected candidate gains a new measurement basis and a placement constraint changes. The old story remains coherent but no longer preserves the live candidate set. Lower it to historical orientation, update the selected structures and ordering, state the changed loss and residual, and restore return to the current architecture description or decision material. In an exact case, reidentify only source epistemes whose C.2.1 identity changed, and restate the affected construction `n` under A.6.3.
 
-C.33 carries captured and lost architecture-relevant structures: preserve the old rejected-candidate relation as history, capture the new candidate-set relation, and mark the obsolete measurement basis lost for current decision use. C.34 carries only a correspondence that actually remains. Implementation or decision use stays non-admissible until the exact architecture claim, decision result, or synthesis result and any required use relation are current.
+C.33 carries captured and lost architecture-relevant structures: preserve the old rejected-candidate relation as history, capture the new candidate-set relation, and mark the obsolete measurement basis lost for current decision use. C.34 carries only a correspondence that remains. Implementation or decision use stays non-admissible until the architecture claim, decision result, or synthesis result and any required use relation are current.
 
 #### A.6.3.NAR:5.2.2 - Live unfolding event narrative
 
@@ -292,7 +300,7 @@ When a mathematical use needs exact preservation, identify `HomotopySource-X` an
 
 An LLM or NLG system uses source claims designating an event graph, agent goals, constraints, and a domain schema, then performs generation Work and proposes the resulting story-scene carrier. The first inspection compares the proposed sequence with the selected event relations, marks preserved constraints, omissions, and hallucinated connective claims, and limits use to candidate review.
 
-Use C.35 when the generated result is intended to inform architecturing; it tests that exact result's next architecture use. If reliance-facing use later opens exact NAR, independently identify `EventPlan-X` and `StoryScene-Y`, then state `EventNarrativization : EventPlan-X -> StoryScene-Y`, the additional source dependencies, loss, prohibited strengthening, and return. The graph and schema are not `X`; the system's generation Work, evidence, assurance, and publication remain separate.
+Use C.35 when the generated result is intended to inform architecturing; it tests that result's next architecture use. If reliance-facing use later opens exact NAR, independently identify `EventPlan-X` and `StoryScene-Y`, then state `EventNarrativization : EventPlan-X -> StoryScene-Y`, the additional source dependencies, loss, prohibited strengthening, and return. The graph and schema are not `X`; the system's generation Work, evidence, assurance, and publication remain separate.
 
 ### A.6.3.NAR:6 - Bias-Annotation
 
@@ -302,7 +310,7 @@ Use C.35 when the generated result is intended to inform architecturing; it test
 | Formality-first bias | Produces a useful narrative and source comparison without opening an exact identity record that the receiving use does not need. |
 | Engagement-authority bias | Treats engagement as a bounded use claim; evidence, assurance, ethics, and policy force remain with the patterns that define those claims. |
 | Sequence-naturalization bias | Makes the ordering and connective account explicit instead of letting a fluent order look inevitable or source-given. |
-| Carrier-serialization bias | Keeps file export, stream order, OCR, and layout changes outside NAR unless selected source structure is actually ordered into a narrative path. |
+| Carrier-serialization bias | Keeps file export, stream order, OCR, and layout changes outside NAR unless selected source structure is ordered into a narrative path. |
 | Generated-fluency bias | Keeps generated output as candidate material until source comparison and any independently required admission pass. |
 | Narratology-import bias | Keeps narratology and storycraft detail in domain practice instead of creating automatic FPF Core kinds. |
 
@@ -316,11 +324,11 @@ Use C.35 when the generated result is intended to inform architecturing; it test
 | `CC-NAR-4` | The narrative has been compared with its source for preservation, foregrounding, omission, weakening, rearrangement, and unsupported strengthening. |
 | `CC-NAR-5` | The supported use is clear; source return is specified when omitted structure or a changed question requires it. Any excluded use passes F.19:4's full guard test. |
 | `CC-NAR-6` | Temporal posture, mediation, event-model support, viewpoint, engagement, and worker history appear only when each changes use or blocks a likely overread. |
-| `CC-NAR-7` | Evidence, assurance, ethics, policy, publication, decision, and Work claims use the patterns that define or test those exact claims. |
+| `CC-NAR-7` | Evidence, assurance, ethics, policy, publication, decision, and Work claims use the patterns that define or test those claims. |
 | `CC-NAR-8` | The exact branch opens when the identified receiving use depends on claim identity and preservation. Citation, distribution or generated status alone does not establish that need. |
 | `CC-NAR-9` | In that branch, `X` and `Y` are independently identified by claim content, EntityOfConcern and effective interpretation rules (`ReferenceScheme`); a model, file or prose label alone supplies none of those identities. |
 | `CC-NAR-10` | Exact `n : X -> Y` states same EntityOfConcern, claim construction, endpoint scheme relation, ordering, preservation, loss, prohibited strengthening, applicability, and return. |
-| `CC-NAR-11` | Additional source epistemes and correspondence dependencies are exact when used; actual Work, system, system-role kind or assignment, method, publication, carrier, evidence, assurance, and `U.View` membership remain separately identified and must satisfy their own definitions or tests. Completing the exact record does not itself authorize reliance. |
+| `CC-NAR-11` | Additional source epistemes and correspondence dependencies are exact when used; Work, system, system-role kind or assignment, method, publication, carrier, evidence, assurance, and `U.View` membership remain separately identified and must satisfy their own definitions or tests. Completing the exact record does not itself authorize reliance. |
 | `CC-NAR-12` | Changes to the source, selected structure, order, loss, use, exact identity, depended-on relation or return are checked for their effect on the narrative. Preserve unaffected uses; repair affected content or restrict only uses no longer supported. |
 
 Counterexample replay:
@@ -328,13 +336,13 @@ Counterexample replay:
 | Case | Required result |
 | --- | --- |
 | Ordinary entry | A team can turn an architecture trade-off structure into a useful explanatory sequence and loss note without first inventing `X`, `Y`, `n`, Work, or assurance records. |
-| Preserve vs retarget | Exact NAR requires the same exact EntityOfConcern; a different narrated concern requires A.6.4 even when derived from `X`. |
+| Preserve vs retarget | Exact NAR requires the same EntityOfConcern; a different narrated concern requires A.6.4 even when derived from `X`. |
 | Same vs different scheme | Narrative order may be primary in either case. A material scheme change additionally opens RT, but scheme difference alone establishes neither `n` nor correspondence. |
-| Candidate vs `U.View` | A valid narrative episteme and NAR construction can fail conformance to exact viewpoint P. That failed test grants no `U.View` membership through P; conformance to another viewpoint remains independent. |
+| Candidate vs `U.View` | A valid narrative episteme and NAR construction can fail conformance to viewpoint P. That failed test grants no `U.View` membership through P; conformance to another viewpoint remains independent. |
 | Source publication/form/carrier | A publication can make `X` available and a form or carrier can express it; none becomes `X`, and a narrative page or audio file is not `Y`. |
 | Narrative order | Chronology, tension, or didactic order is a declared construction rule, not automatically world-side event order, proof order, performed-Work order, or an obtaining relation. |
 | Controlled loss | If `Y` is usable only under declared loss, narrower use, and source return, coordinate CSC; NAR ordering alone does not make the loss admissible. |
-| Grounded source, ungrounded narrative | Grounding of `X` or a designated evidence set does not ground `Y`; recover a separate exact `EpistemeEmpiricalGroundingRelation` for `Y` only when its own claims satisfy that rule. |
+| Grounded source, ungrounded narrative | Grounding of `X` or a designated evidence set does not ground `Y`; recover a separate `EpistemeEmpiricalGroundingRelation` for `Y` only when its own claims satisfy that rule. |
 | Selected structure overread | NAR may order an A.22 structure designated by source claims. Identify the source and receiving epistemes independently; keep the selected-structure and narrative-ordering positions distinct. |
 
 ### A.6.3.NAR:8 - Common Anti-Patterns and How to Avoid Them
@@ -357,7 +365,7 @@ Positive consequences:
 - A reader receives a usable sequence before formal identity work is required.
 - Selection, ordering, connective additions, loss, and return remain inspectable.
 - Exact episteme identity and source dependencies remain available when the receiving claim needs them.
-- Human-authored and generated narratives face the same source-comparison boundary without pretending that their production histories are the narrative relation.
+- Human-authored and generated narratives face the same source-comparison boundary; their production histories remain separate from the narrative relation.
 - Domain narrative conventions can be used without confusing them with FPF Core kinds.
 
 Costs and trade-offs:
@@ -379,19 +387,19 @@ The narrow reusable move is therefore reader-first and progressive. Choose struc
 | --- | --- | --- | --- |
 | Roald Hoffmann, “The Tensions of Scientific Storytelling” (American Scientist, 2014) | Adopt as practice grounding: scientific narratives order calculations, failed attempts, mechanisms, unresolved tensions, and discoveries rather than merely decorating results. | Grounds the discovery-order worked case and the need to retain unresolved tension and source return. | Historical practice anchor, not current cognitive SoTA. |
 | Wolf Schmid, `Narratology: An Introduction` (2010), and Matei Chihaia, `Introductions to Narratology: Theory, Practice and the Afterlife of Structuralism` (2012) | Adapt source material, selection, composition, order, viewpoint, and presentation as domain distinctions. | Grounds the ordering/connective account and viewpoint-sensitive loss. | Historical domain anchors; fiction-specific vocabulary does not become FPF Core ontology. |
-| Tan T. Nguyen, “A Review of Mechanistic Models of Event Comprehension” (2024); Lijuan Chen and Xiaodong Xu, “Neural and Behavioral Evidence for Differential Processing of Narrative Perspective in Novel Reading” (2026); Christoph Mengelkamp, Stefanie Golke, and Markus Appel, “Effects of Reading Goal Instructions on the Comprehension and Metacomprehension of Informative Narratives” (2025); Antonios Georgiou, Tankut Can, Mikhail Katkov, and Misha Tsodyks, “Large-scale study of human memory for meaningful narratives” (2025) | The named studies examine event models, prediction and update, reading-goal effects, reconstruction, memory loss, metacomprehension error, and viewpoint-sensitive recovery. | Supports triggered event-model/viewpoint fields, reader-use entry, source comparison, and return. | These studies inform narrative use. A claim about a particular narrative's effects, assurance, ethical permissibility or policy authority requires grounds applicable to that claim. |
+| Tan T. Nguyen, “A Review of Mechanistic Models of Event Comprehension” (2024); Lijuan Chen and Xiaodong Xu, “Neural and Behavioral Evidence for Differential Processing of Narrative Perspective in Novel Reading” (2026); Christoph Mengelkamp, Stefanie Golke, and Markus Appel, “Effects of Reading Goal Instructions on the Comprehension and Metacomprehension of Informative Narratives” (2025); Antonios Georgiou, Tankut Can, Mikhail Katkov, and Misha Tsodyks, “Large-scale study of human memory for meaningful narratives” (2025) | The named studies examine event models, prediction and update, reading-goal effects, reconstruction, memory loss, metacomprehension error, and viewpoint-sensitive recovery. | Supports triggered event-model/viewpoint fields, reader-use entry, source comparison, and return. | These studies inform narrative use. A claim about a narrative's effects, assurance, ethical permissibility or policy authority requires grounds applicable to that claim. |
 | Albert Gatt and Emiel Krahmer, “Survey of the State of the Art in Natural Language Generation” (2018); Amal Alabdulkarim, Siyan Li, and Xiangyu Peng, “Automatic Story Generation: Challenges and Attempts” (2021); Rogelio E. Cardona-Rivera, Arnav Jhala, Julie Porteous, and R. Michael Young, “The Story So Far on Narrative Planning” (2024); Vikram Kumaran, Jonathan Rowe, Bradford Mott, and James Lester, “SceneCraft: Automating Interactive Narrative Scene Generation in Digital Games with Large Language Models” (2023), DOI `10.1609/aiide.v19i1.27504`; Yuan Ma, Richard Susilo, Patrik Haslum, and Hanna Suominen, “Text-to-Text Automatic Story Generation: A Survey” (2026); Aynigar Rahman, Aihe Yu, and Kyungeun Cho, “Game Knowledge Management System: Schema-Governed LLM Pipeline for Executable Narrative Generation in RPGs” (2026) | Adopt content and narrative planning, grounding, controllability, schema constraints, repair, and evaluation limits for automated cases. | Grounds the generated event-graph case, generated-fluency boundary, source comparison, and conditional C.35 architecture-use exit. | The 2018/2021 surveys are historical anchors; the 2024/2026 planning, survey and schema-governed work supplies the later sources used here. |
-| Melanie C. Green and Timothy C. Brock, “The Role of Transportation in the Persuasiveness of Public Narratives” (2000); Michael F. Dahlstrom and Shirley S. Ho, “Ethical Considerations of Using Narrative to Communicate Science” (2012); Hanna Meretoja, “Narrative and Human Existence: Ontology, Epistemology, and Ethics” (2014, background only); FPF `D.1` through `D.5` | Adapt engagement as a real effect with a bounded-use and ethical boundary. | Grounds the engagement check and the anti-pattern against treating engagement as evidence or permission. | Historical/background anchors. Current evidence, assurance, ethics, and policy claims still require their own exact sources and FPF patterns. |
+| Melanie C. Green and Timothy C. Brock, “The Role of Transportation in the Persuasiveness of Public Narratives” (2000); Michael F. Dahlstrom and Shirley S. Ho, “Ethical Considerations of Using Narrative to Communicate Science” (2012); Hanna Meretoja, “Narrative and Human Existence: Ontology, Epistemology, and Ethics” (2014, background only); FPF `D.1` through `D.5` | Adapt engagement as an effect with a bounded-use and ethical boundary. | Grounds the engagement check and the anti-pattern against treating engagement as evidence or permission. | Historical/background anchors. Current evidence, assurance, ethics, and policy claims still require their own sources and FPF patterns. |
 
 ### A.6.3.NAR:12 - Relations
 
-- **Specializes:** `A.6.3` for structure-to-sequence narrative construction. The ordinary entry exposes selection, ordering, loss, use, and return; the triggered exact branch states same-EntityOfConcern `n : X -> Y` and any exact correspondence dependencies.
+- **Specializes:** `A.6.3` for structure-to-sequence narrative construction. The ordinary entry exposes selection, ordering, loss, use, and return; the triggered exact branch states same-EntityOfConcern `n : X -> Y` and any correspondence dependencies.
 - **Coordinates with:** `A.6.3.CR` for same-regime textual re-expression, `A.6.3.RT` for a material representation-scheme transition, `A.6.3.CSC` for controlled semantic coarsening, `A.6.4` for changed EntityOfConcern, and `E.17.EFP` for explanation-use adequacy.
-- **Uses when current:** `C.2.8` for extractable structural amount, the applicable domain evaluation for its local scale, `C.29` for a mathematical estimate's correspondence, `C.33` for captured and lost architecture-relevant structure, and `C.34` for an exact correspondence claim needed by architecture work.
-- **Coordinates with:** `A.22.CGUS` for its ordinary branch when continuation conditions need clarification. For a claimed source or narrative-ordering CGUS, establish that particular structure's identity and membership; the optional unfolding block records references to that structure.
+- **Uses when current:** `C.2.8` for extractable structural amount, the applicable domain evaluation for its local scale, `C.29` for a mathematical estimate's correspondence, `C.33` for captured and lost architecture-relevant structure, and `C.34` for a correspondence claim needed by architecture work.
+- **Coordinates with:** `A.22.CGUS` for its ordinary branch when continuation conditions need clarification. For a claimed source or narrative-ordering CGUS, establish that structure's identity and membership; the optional unfolding block records references to that structure.
 - **Coordinates with:** `C.35` for generated results entering architecture work, `G.2` for its SoTA harvesting/synthesis claims, `E.6` and `E.11` for learning order and first-entry publication questions, and `E.17` for publication-form use, `E.17.0` for viewpoint conformance, `E.17.AUD` for audience, and `E.24.PUB` for publication questions.
-- **Uses when current:** `G.11` for source-return currentness; `D.1`–`D.5`, `A.10`, and `B.3` for the particular ethics, evidence, or assurance claims they define.
-- **Uses when current:** `F.19` for precise plain language in technical narrative and for the plausible-reader test of an optional explanatory guard.
+- **Uses when current:** `G.11` for source-return currentness; `D.1`–`D.5`, `A.10`, and `B.3` for the ethics, evidence, or assurance claims they define.
+- **Uses when current:** `F.19` for plain language in technical narrative and for the plausible-reader test of an optional explanatory guard.
 - **Boundary:** NAR defines the structure-to-sequence construction, preservation, loss, and return boundary.
 
 ### A.6.3.NAR:End

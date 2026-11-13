@@ -13,21 +13,26 @@ Use this pattern when authoring or revising Core concepts or their Tooling and P
 These risks undermine Pillars **P-1 Cognitive Elegance**, **P-4 Open-Ended Kernel** and **P-5 FPF Layering**. Use E.5.1–E.5.4 for the corresponding detailed rules.
 
 ### E.5:2 - Problem
-Core definitions can become tied to transient tools or one notation, acquire dependency cycles, or present domain-specific assumptions as universal. Authors need constraints that preserve reusable meanings while permitting concrete examples and different forms of expression.
+Core definitions can become tied to transient tools or one notation, acquire dependency cycles, or present domain-specific assumptions as universal. Authors need constraints that preserve reusable meanings while allowing concrete examples and different forms of expression.
 
 
 ### E.5:3 - Forces
 
 | Force | Tension |
 |-------|---------|
-| **Abstraction vs Concrete Use** | Stable concept definitions ↔ useful real examples. |
-| **Universality vs Convention** | Rules valid across domains ↔ convenience of one familiar notation. |
-| **Modularity vs Integration** | Independent layers ↔ temptation to cross‑link for speed. |
-| **Cross-Domain Use vs Perspective** | Claims intended across domains ↔ contributors’ disciplinary and cultural assumptions. |
+| **Abstraction vs Concrete Use** | Keep concept definitions stable while illustrating them with useful examples from real situations. |
+| **Universality vs Convention** | A familiar notation can be convenient, but tying a cross-domain rule to that notation limits its use elsewhere. |
+| **Modularity vs Integration** | Keep layers independent despite the temptation to cross-link them for speed. |
+| **Cross-Domain Use vs Perspective** | Claims intended for several domains can reflect contributors’ disciplinary and cultural assumptions. |
 
 ### E.5:4 - Solution — the Four Guard‑Rails
 Every Core, Tooling, and Pedagogy artefact must obey these **four guard-rails** at its own layer.
-**Scope.** These guard-rails regulate concepts, claims and their relations. Abstract Core definitions exclude incidental tools, formats and workflows. A rule about a named publication form, protocol or grammar may retain the syntax necessary for that subject under E.5.1, with its edition/use boundary. Linting and automation remain outside Core and are optional unless a separate operational contract requires them; they preserve the governed conditions rather than define the concepts.
+
+**Scope.** These guard-rails regulate concepts, claims and their relations. Abstract Core definitions exclude incidental tools, formats and workflows.
+
+A rule about a named publication form, protocol or grammar may retain the syntax necessary for that subject under E.5.1, with its edition/use boundary.
+
+Linting and automation remain outside Core and are optional unless a separate operational contract requires them. They preserve the governed conditions rather than define the concepts.
 
 | # | Guard‑Rail | Protects against |
 |---|------------|------------------|
@@ -36,7 +41,7 @@ Every Core, Tooling, and Pedagogy artefact must obey these **four guard-rails** 
 | **GR‑3** | **Unidirectional Dependency** | Convenience cycles |
 | **GR‑4** | **Cross‑Disciplinary Bias Audit** | Disciplinary monoculture |
 
-Concrete rules for each rail live in patterns **E.5.1 – E.5.4**.
+For the detailed rule behind each guard-rail, see **E.5.1 – E.5.4**.
 
 ### E.5:5 - Archetypal Grounding (System / Episteme)
 
@@ -44,7 +49,7 @@ Concrete rules for each rail live in patterns **E.5.1 – E.5.4**.
 |------------|-------------------|----------------------|
 | GR‑1 | Definition of `U.System` never cites file formats or build scripts. | Definition of `U.Episteme` avoids naming specific proof engines. |
 | GR‑2 | A meaning-preserving mapping between text and diagram retains the pump boundary invariant. | A meaning-preserving mapping between algebraic and graph expressions retains F‑G‑R semantics. |
-| GR‑3 | A sizing helper imports Core invariants; Core never imports helper tutorials. | Learning guide cites R‑score; Core does not derive its semantics from the guide. |
+| GR‑3 | A sizing helper imports Core invariants. Core never imports helper tutorials. | A learning guide cites the R‑score. Core does not derive its semantics from the guide. |
 | GR‑4 | Bias audit removes thermo‑mechanical jargon from a “universal” pattern. | Audit replaces physics‑centric metaphors in a trust pattern. |
 
 ### E.5:6 - Conformance Checklist
@@ -52,9 +57,9 @@ Concrete rules for each rail live in patterns **E.5.1 – E.5.4**.
 | ID | Requirement | Purpose |
 |----|-------------|---------|
 | **CC‑GR.1** | A Core pattern **SHALL** name the guard-rails whose interpretation, realization or interaction changes its design or use, and explain that relation. | Makes material rule interactions recoverable. |
-| **CC‑GR.2** | Core, Tooling and Pedagogy respect GR-1 through GR-4 at their own layer: implementation and runnable teaching remain in their sources; necessary subject-defining syntax follows E.5.1 and interpretation/mapping follows E.5.2. | Preserves both portability and applicable concrete-subject rules. |
+| **CC‑GR.2** | Core, Tooling and Pedagogy respect GR-1 through GR-4 at their own layer. Implementation and runnable teaching remain in their sources. Necessary subject-defining syntax follows E.5.1 and interpretation/mapping follows E.5.2. | Preserves both portability and applicable concrete-subject rules. |
 | **CC‑GR.3** | A change to a guard-rail's governing meaning **REQUIRES** an E.9 Design-Rationale Record stating the reason and Pillar impact under the E.3 precedence model. | Grounds a changed constitutional obligation while preserving E.9's ordinary editorial branch. |
-| **CC‑GR.4** | The aggregate of guard‑rail rules **MUST** remain internally consistent and acyclic; no guard‑rail may override another without explicit precedence edges. | Preserves deterministic governance. |
+| **CC‑GR.4** | The aggregate of guard‑rail rules **MUST** remain internally consistent and acyclic. No guard‑rail may override another without explicit precedence edges. | Preserves deterministic governance. |
 | **CC‑GR.5** | Every Core pattern **MUST** make its primary EntityOfConcern or primary relation recoverable at first mention. Declare **CHR:ReferencePlane** (`world | concept | episteme`) when the defining rule or receiving use requires that distinction. | Preserves the intended referent and any plane-dependent interpretation. |
 
 *All CC‑GR duties are **conceptual**. Any automated checks are **informative only** and live in Tooling/Pedagogy.*
@@ -64,8 +69,8 @@ Concrete rules for each rail live in patterns **E.5.1 – E.5.4**.
 | Benefits | Trade‑offs / Mitigations |
 |----------|-------------------------|
 | **Long‑term integrity** – stops slow drift of the Core toward jargon, notation lock‑in, and hidden cycles. | Authors must check the applicable guard-rails before submission. |
-| **Stable yet evolvable ecosystem** – Core meanings can remain stable while Tooling and Pedagogy change independently. | Early stage contributions may feel constrained; examples in the Pedagogical Companion show compliant paths. |
-| **Trust & auditability** – readers can inspect the declared meaning, dependency and bias boundaries. | Review adds effort; the four named rules make its scope explicit. |
+| **Stable yet evolvable ecosystem** – Core meanings can remain stable while Tooling and Pedagogy change independently. | Contributors may find the guard-rails restrictive in the early stages of a contribution. Examples in the Pedagogical Companion show how to work within them. |
+| **Trust & auditability** – readers can inspect the declared meaning, dependency and bias boundaries. | Review adds work. The four rules identify what the review covers. |
 
 ### E.5:8 - Rationale
 The four guard-rails turn abstract Pillars into constraints on wording, notation, dependency and bias. Grouping them here gives newcomers one entry to the applicable rule, identifies any needed amendment, and supplies shared requirements for optional automated checks.
@@ -83,6 +88,6 @@ They instantiate Pillars **P-1**, **P-2**, **P-4** and **P-5** and follow the pr
 * **Depends on:**
   * `pat:constitution/pillars` (E.2)
   * `pat:constitution/principle‑taxonomy` (E.3)
-* **Constrains:** every Core, Tooling, and Pedagogy artefact; all DRRs.
+* **Constrains:** every Core, Tooling, and Pedagogy artefact and all DRRs.
 
 ### E.5:End

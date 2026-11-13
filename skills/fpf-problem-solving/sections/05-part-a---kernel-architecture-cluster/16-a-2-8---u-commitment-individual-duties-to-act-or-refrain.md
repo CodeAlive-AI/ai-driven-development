@@ -13,13 +13,13 @@ Start with the ordinary question: **does this actual bearer have this duty now?*
 
 **What this buys.** The actual duty bearer, content, modality, scope, validity, constitutive rule, and instituting basis remain inspectable. Generic prescriptions stay usable as generic claims, while evidence and records can support claims about actual commitments.
 
-**Not this pattern when.** Use `A.2.3` for promise content, `A.2.9` for the communicative Work that may institute a duty, and `A.2.8.PER` for permission or authorization. For responsibility, use an admitted domain responsibility predicate; if none exists, return its exact `A.6.RCD` missing governor. Use a gate pattern for admissibility and `A.15.1` for performed Work. If no current subject pattern defines how the proposed individual duty is instituted, return `missing-governor[individual commitment institution]` instead of completing a record by convention.
+**Not this pattern when.** Use `A.2.3` for promise content, `A.2.9` for the communicative Work that may institute a duty, and `A.2.8.PER` for permission or authorization. For responsibility, use an admitted domain responsibility predicate; if none exists, return its `A.6.RCD` missing governor. Use a gate pattern for admissibility and `A.15.1` for performed Work. If no current subject pattern defines how the proposed individual duty is instituted, return `missing-governor[individual commitment institution]` instead of completing a record by convention.
 
 ### A.2.8:0.1 - Individual Duty and Source Wording
 
 `U.Commitment` is an enduring individual deontic relation. It covers obligation, recommendation-as-duty, and prohibition.
 
-The words *bind* and *binding* already denote technical bindings in FPF; they do not name this relation. Source phrases such as *binding promise*, *must*, *shall*, *guarantees*, *is responsible for*, or *legally required* are recognition cues. Recover their exact claim before selecting `U.Commitment`.
+The words *bind* and *binding* already denote technical bindings in FPF; they do not name this relation. Source phrases such as *binding promise*, *must*, *shall*, *guarantees*, *is responsible for*, or *legally required* are recognition cues. Recover their claim before selecting `U.Commitment`.
 
 ### A.2.8:1 - Problem Frame
 
@@ -37,7 +37,7 @@ Those are different objects. If a generic policy and an individual relation shar
 How can a practitioner state an individual deontic relation so that:
 
 1. the actual duty bearer is explicit;
-2. the duty referents, modality, scope, and validity are exact;
+2. the duty referents, modality, scope, and validity are specified;
 3. one applicable constitutive rule and its required actual basis make institution testable;
 4. a generic prescription remains generic until the rule is satisfied;
 5. relation identity survives compatible description changes but not a changed bearer, content, rule, or interrupted validity;
@@ -105,7 +105,9 @@ One occurrence is identified by:
 - the actual instituting basis, only when that rule makes the basis identity-bearing; and
 - one maximal continuous validity interval.
 
-The actual instituting basis is always required for obtaining. It is part of occurrence identity only when the exact constitutive rule says that reinstitution identifies another duty. A compatible policy edition, new record, or later instituting act preserves the occurrence only through an explicit continuity decision showing that every identity-bearing fact and the rule's deontic effect continue. A changed bearer, modality, referent set, constitutive rule, identity-bearing basis, or interrupted validity prevents reuse of the same occurrence identity. Establish the new commitment under §4.2 before asserting another occurrence. The commitment ID and its describing claim do not decide sameness.
+The actual instituting basis is always required for obtaining. It is part of occurrence identity only when the exact constitutive rule says that reinstitution identifies another duty.
+
+A compatible policy edition, new record, or later instituting act preserves the occurrence only through an explicit continuity decision showing that every identity-bearing fact and the rule's deontic effect continue. A changed bearer, modality, referent set, constitutive rule, identity-bearing basis, or interrupted validity prevents reuse of the same occurrence identity. Establish the new commitment under §4.2 before asserting another occurrence. The commitment ID and its describing claim do not decide sameness.
 
 When a rule makes a duty end with a system-role assignment, an assignment boundary ends that commitment. When the rule makes the duty persist for the same actual system across a replacement assignment, state that continuity explicitly. A duty for a different actual bearer, if it obtains under §4.2, has another occurrence identity.
 
@@ -115,7 +117,7 @@ A generic prescription states what one exact policy or other normative episteme 
 
 For example, a policy can concern `ProviderSystemRole` or another exact local system-role kind. Its `systemRoleKindRef : U.KindRef` can appear in the rule's antecedent, but the policy episteme is not an individual `U.Commitment`.
 
-An exact `systemRoleAssignmentRef : U.RelationRef constrained to U.SystemRoleAssignment` can show that an actual system satisfies one applicability condition for a time. The assignment is still not the duty bearer or the commitment relation. The only valid direction is:
+An exact `systemRoleAssignmentRef : U.RelationRef constrained to U.SystemRoleAssignment` can show that an actual system satisfies one applicability condition for a time. The assignment is not the duty bearer or the commitment relation. The only valid direction is:
 
 ```text
 current policy or prescription
@@ -168,7 +170,9 @@ CommitmentConflictInputClaim:
   unresolvedInputRefs?: exact missing-information or missing-governor results
 ```
 
-These conflict inputs stay outside commitment identity by default. Each authority relation must already obtain under its own predicate, and each selecting rule must be current and applicable to this selection use under the pattern that defines it. If this selection use requires an authority relation or selecting rule and that input is unavailable or no current pattern defines it, put its exact unresolved result in `unresolvedInputRefs`, such as `missing-governor[commitment conflict authority relation]` or `missing-governor[commitment conflict selecting rule]`. An optional field means that the input is not required for this use; it never licenses dropping a required input. For an interlevel ethical conflict, use D.3 to map the conflict and D.4 for mediation or decision use. When an explicit choice among already available options is current, C.11 supplies the `ChoiceRule` and `ChoiceResult`. Otherwise apply the direct pattern for the claimed conflict result; if none exists, return `missing-governor[commitment conflict resolution]`.
+These conflict inputs stay outside commitment identity by default. Each authority relation must already obtain under its own predicate, and each selecting rule must be current and applicable to this selection use under the pattern that defines it. If this selection use requires an authority relation or selecting rule and that input is unavailable or no current pattern defines it, put its exact unresolved result in `unresolvedInputRefs`, such as `missing-governor[commitment conflict authority relation]` or `missing-governor[commitment conflict selecting rule]`. An optional field means that the input is not required for this use; it never licenses dropping a required input.
+
+For an interlevel ethical conflict, use D.3 to map the conflict and D.4 for mediation or decision use. When an explicit choice among already available options is current, C.11 supplies the `ChoiceRule` and `ChoiceResult`. Otherwise apply the direct pattern for the claimed conflict result; if none exists, return `missing-governor[commitment conflict resolution]`.
 
 Evidence used only to measure or verify the duty belongs to the support for the assertion. An evidence-producing or evidence-retaining duty instead names that production or retention content among its duty referents.
 
@@ -179,10 +183,10 @@ Evidence used only to measure or verify the duty belongs to the support for the 
 | What does a generic policy prescribe? | one normative claim episteme and its applicable rule content | an individual duty from generic content alone |
 | Which System holds a local system-role assignment? | one A.2.1 assignment occurrence and its declared species | a duty or responsibility |
 | Did a communicative act occur? | one A.2.9 `U.SpeechAct` Work occurrence | its institutional effect without the constitutive rule |
-| Is the bearer responsible? | one admitted domain responsibility predicate and occurrence; otherwise the exact missing governor | responsibility from duty, assignment, position, or “owner” wording |
+| Is the bearer responsible? | one admitted domain responsibility predicate and occurrence; otherwise the missing governor | responsibility from duty, assignment, position, or “owner” wording |
 | Is an action permitted or authorized? | the exact A.2.8.PER grant, exercise, non-prohibition, non-violation, or conflict result | permission from commitment or assignment |
 | Did access occur? | an exact domain access relation; otherwise `missing-governor` | access from permission, duty, or assignment |
-| Did the bearer perform Work? | recover the exact actual performer through A.13 and let A.15.1 independently admit one dated `U.Work`; add F.6 only when this duty account or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment | Work or attribution from the duty alone |
+| Did the bearer perform Work? | recover the actual performer through A.13 and let A.15.1 independently admit one dated `U.Work`; add F.6 only when this duty account or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment | Work or attribution from the duty alone |
 | Was the duty satisfied or violated? | a separately governed evaluation or compliance result using actual Work and evidence | compliance from publication or record completeness |
 | What resulted? | the separately identified result and its direct result relation, or A.15.PROD for production and inception | a generic result relation from duty or Work |
 
@@ -204,7 +208,9 @@ Current `IncidentResponsePolicy-2026` says that systems assigned to `ProviderSys
 
 The commitment assertion may cite `E-SLO-RESP-1`, incident tickets, timestamps, and the selected clock source for adjudication. Those values make reliance testable; `SA-Issue-IncidentDuty-2026` remains the policy-recognized instituting Work.
 
-If `OpsTeamProviderAssignment-2026` ends and `RecoveryTeamProviderAssignment-2026` begins, apply the constitutive rule's continuity conditions. When the rule ties duty continuity to the assignment, the OpsTeam commitment ends and a RecoveryTeam commitment begins only after its own required basis and facts obtain. If the rule instead preserves the duty for the same system across a replacement assignment, the continuity decision says so. Any duty that obtains under §4.2 for a different bearer has another occurrence identity. Likewise, a second policy-recognized act reissuing the same uninterrupted duty identifies another commitment only when the constitutive rule makes that instituting basis identity-bearing; otherwise the new act is a new ground or record for the continuing occurrence.
+If `OpsTeamProviderAssignment-2026` ends and `RecoveryTeamProviderAssignment-2026` begins, apply the constitutive rule's continuity conditions. When the rule ties duty continuity to the assignment, the OpsTeam commitment ends and a RecoveryTeam commitment begins only after its own required basis and facts obtain. If the rule instead preserves the duty for the same system across a replacement assignment, the continuity decision says so. Any duty that obtains under §4.2 for a different bearer has another occurrence identity.
+
+Likewise, a second policy-recognized act reissuing the same uninterrupted duty identifies another commitment only when the constitutive rule makes that instituting basis identity-bearing; otherwise the new act is a new ground or record for the continuing occurrence.
 
 A policy-recognized speech act can also institute `ShutdownNoticeCommitment-7` directly for admitted system `PlantController-7`.
 
@@ -262,7 +268,7 @@ policy mentions one system-role kind
 | Legal-form bias | A maximal legal-policy schema is imposed on every duty. | Keep the direct participants minimal and establish the rule-required instituting basis. Add further legal-policy detail or assurance only when the receiving claim needs it. |
 | Evidence-as-constitution | An audit trail is treated as what creates the duty. | Keep support and institution separate. |
 | Responsibility overreach | Duty is read as ownership or accountability. | Apply the direct responsibility predicate or return its missing governor. |
-| Keyword bias | `MUST`, `SHALL`, `MAY`, or `responsible` selects an ontology by spelling. | Recover the claim first, then select the exact relation or ordinary non-use. |
+| Keyword bias | `MUST`, `SHALL`, `MAY`, or `responsible` selects an ontology by spelling. | Recover the claim first, then select the relation or ordinary non-use. |
 
 ### A.2.8:8 - Conformance Checklist
 
@@ -287,7 +293,7 @@ policy mentions one system-role kind
 | `CommitmentSubject ::= RoleRef | RoleAssignmentRef | PartyRef` | It merges a kind, relation occurrence, and actual bearer. | Use one actual bearer branch; keep kind and assignment in the rule's grounds. |
 | Optional institution source | A published sentence appears sufficient to create the relation. | Require the applicable rule and its actual instituting basis. |
 | Assignment-as-duty | Staffing becomes obligation. | Treat the assignment only as a rule fact and identify a separate commitment. |
-| Duty-as-responsibility | One deontic relation silently creates ownership. | State the independent responsibility predicate or return `missing-governor`. |
+| Duty-as-responsibility | One deontic relation is treated as ownership. | State the independent responsibility predicate or return `missing-governor`. |
 | Gate-as-duty | Entry conditions become obligations. | Keep the A-claim and let an independently instituted commitment cite it when required. |
 | Auditable rhetoric without support | “Guaranteed” cannot be adjudicated. | Cite exact evidence claims and carriers only when reliance or adjudication is current. |
 | Silent mutation | Changed bearer or rule is hidden under one ID. | A changed identity-bearing fact prevents reuse of the same occurrence identity. Establish the new commitment under §4.2 before asserting another occurrence. |
@@ -305,7 +311,7 @@ policy mentions one system-role kind
 **Costs and mitigations**
 
 - An individual-duty assertion must establish the applicable rule and actual instituting basis. A generic policy statement can remain sufficient when no individual duty is being asserted.
-- Domains with another instituting basis need the pattern that defines that basis. Until then, return the exact `missing-governor` result.
+- Domains with another instituting basis need the pattern that defines that basis. Until then, return the `missing-governor` result.
 - Conflict resolution remains outside this pattern. Preserve each current commitment plus the exact source, independently obtaining authority relation, and selecting rule required by the named conflict or choice use; apply D.3/D.4 for an interlevel ethical conflict, C.11 for an explicit choice among available options, or return `missing-governor[commitment conflict resolution]` when no direct result rule exists.
 
 ### A.2.8:11 - Rationale

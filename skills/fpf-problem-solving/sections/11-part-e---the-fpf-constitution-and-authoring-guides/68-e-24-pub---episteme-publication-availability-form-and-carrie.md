@@ -2,7 +2,7 @@
 
 > **Type:** Part E FPF authoring discipline pattern
 > **Status:** Stable
-> **Normativity:** Normative unless a section is explicitly informative
+> **Normativity:** Normative unless a section is marked informative
 
 ### E.24.PUB:0 - Use This When
 
@@ -10,7 +10,11 @@ Use this pattern when an ontic or another entity is encountered through a card, 
 
 **Primary working reader.** A practitioner or FPF author distinguishing a claim-bearing episteme, a `U.View`, its expression, a reusable publication form, a carrier or an exact publication occurrence. Open representation methods when the expression also supports reasoning through a correspondence to its subject.
 
-**First useful move.** Put the intended receiving use in the bounded-use declaration itself. Then say which episteme is available, to which declared audience, for which bounded use, through which expression and carrier. Name a reusable form when its constraints matter. Cite a separate plan, decision question or `U.WorkPlan` only when it independently exists and changes the publication claim. Distinguish availability from a claim of actual access or use. Open fuller relation detail when needed to resolve disputed availability, its boundary or publication-occurrence identity.
+**First useful move.** Put the intended receiving use in the bounded-use declaration. Then say which episteme is available, to which declared audience, for which bounded use, through which expression and carrier.
+
+Name a reusable form when its constraints matter. Cite a separate plan, decision question or `U.WorkPlan` only when it independently exists and changes the publication claim. Distinguish availability from a claim of actual access or use.
+
+Open fuller relation detail when needed to resolve disputed availability, its boundary or publication-occurrence identity.
 
 **What goes wrong if missed.** A visible layout is treated as the described subject, a file is treated as the claims it carries, a diagram is treated as a view merely because it is graphical, or publication availability alone is used to admit a durable `U.EpistemePublication` kind. The receiving work then cannot tell which object changed when claims, layout, carrier, audience, or use changes.
 
@@ -18,7 +22,7 @@ Use this pattern when an ontic or another entity is encountered through a card, 
 
 **Not this pattern when.**
 
-- Use `C.2.1` when the question is the identity or content of the episteme itself.
+- Use `C.2.1` when the question is the identity or content of the episteme.
 - Use `E.17.0` when the question is whether an exact episteme conforms to an exact viewpoint episteme and therefore has `U.View` membership. Use `A.6.3` separately when source-to-receiving viewing construction is current.
 - Use `A.6.3.RT` and `A.6.3.RT.OE` to construct or change an expression and recover its correspondence; use `C.29` when a mathematical lens and its inference or transfer conditions are current.
 - Use `E.24.CD`, then `E.24`, when a durable ontic is still being considered.
@@ -27,7 +31,9 @@ Use this pattern when an ontic or another entity is encountered through a card, 
 
 ### E.24.PUB:1 - Problem Frame
 
-Ontics and other entities are usually encountered through expressions of epistemes and physical or digital carriers. In a completed inspection card, the claims about the inspected subject can constitute a `U.Episteme`; the particular signs express those claims; reusable arrangement rules supply a publication form; and a file or sheet bears the expression. A publication occurrence makes the selected episteme available through that expression and carrier to a declared audience for a bounded use.
+Ontics and other entities are usually encountered through expressions of epistemes and physical or digital carriers.
+
+In a completed inspection card, the claims about the inspected subject can constitute a `U.Episteme`; the particular signs express those claims; reusable arrangement rules supply a publication form; and a file or sheet bears the expression. A publication occurrence makes the selected episteme available through that expression and carrier to a declared audience for a bounded use.
 
 These relations connect separately identified objects. E.24.PUB defines exact publication through expression and bearing, and reusable-form conformance when a form is selected. It also supplies form-mediated claims and broader availability for uses that do not require one fixed expression. Ordinary publication can be stated in one sentence.
 
@@ -37,7 +43,7 @@ Here a publication occurrence is an occurrence of `EpistemePublicationRelation`:
 
 ### E.24.PUB:2 - Problem
 
-The practical problem is change localization. When a reader sees only “the diagram was updated” or “the model was published”, five materially different changes are hidden:
+When a reader sees only “the diagram was updated” or “the model was published”, it is hard to tell what changed. Five different changes may be hidden:
 
 1. the selected episteme edition may have changed because its claim content, EntityOfConcern, or effective reference scheme changed;
 2. another episteme edition may have been constructed, or the exact episteme may conform to a different viewpoint edition;
@@ -76,23 +82,31 @@ Its actual participants are:
 | selected episteme edition | one exact `U.Episteme` identified under `C.2.1` | the claims made available |
 | audience declaration | one `U.Episteme` whose claims identify the intended receiving entities or a C.3-governed local kind and its membership criterion | who is included; a reader label alone is insufficient when the boundary matters |
 | bounded-use declaration | one `U.Episteme` whose claims state the operations or decisions supported, the conditions of that use, and any stronger-use boundary needed to interpret those claims | what availability is for; actual reliance remains another relation |
-| publication expression | one independently identified `U.Entity`, X, under its expression domain's formation and equality rules | the particular sign construction from which the required claims can be recovered |
+| publication expression | one independently identified `U.Entity`, X, under its expression domain's formation and equality rules | the sign construction from which the required claims can be recovered |
 | presentation carrier | one independently identified `U.Entity`, C, under its physical or digital domain's identity rule | the entity whose actual state or realization provides that exact expression |
 
 The `U.Entity` ranges leave X, F and C with their independently established domain identities. The positive predicates below determine expression, conformance and bearing. E.8 supplies FPF pattern-form rules, E.17 selects multi-view publication forms, and a domain publication pattern can supply another form.
 
-**Obtain X with an identity that answers the actual comparison.** X is an independently identified sign construction: specified elements organized under the formation and equality rules of an expression domain. The domain tells a receiver which differences change that construction. A construction can be compared before anyone establishes which episteme it expresses. Two useful domains are:
+**Obtain X with an identity that answers the comparison.** X is an independently identified sign construction: specified elements organized under the formation and equality rules of an expression domain. The domain tells a receiver which differences change that construction. A construction can be compared before anyone establishes which episteme it expresses. Two useful domains are:
 
 - An ordered Unicode text has the declared codepoint sequence as its value. Changing a codepoint or its position changes X. Encoding the same sequence in UTF-8 or UTF-16 can preserve X while changing the stored bytes. Any normalization of line endings or Unicode variants must be part of the selected domain's equality or its decoding rule before comparison; it is not inferred from visual similarity.
 - A keyed typed table has its column definitions, key-to-row mapping and typed cell values as its value. Keys are unique; missing, unknown and numeric zero have separately declared representations. Under an unordered-row domain, displaying rows in another order preserves X. A domain that includes row order instead gives a different X after that permutation. If the receiving use or selected F relies on order, the expression domain must retain it.
 
-These are independently specified domains, not a closed taxonomy. Another notation supplies its own elements, organization, equality and formation conditions. The chosen domain remains fixed in a comparison. A move between domains requires an explicit correspondence and cannot obtain identity merely by choosing a coarser equality after the change. Concrete copies of a construction do not multiply X when the domain gives them the same value; their carrier tokens can differ.
+These are independently specified domains, not a closed taxonomy. Another notation supplies its own elements, organization, equality and formation conditions.
 
-**Obtain F as reusable rules.** F is an independently identified collection of rules for constructing or arranging eligible expressions. Its identity is the interpreted rules, their application domains and imported dependencies. A layout-only F can leave subject claims unconstrained; another F can require fields, units, coverage or particular interpretations. The episteme that describes F retains its own C.2.1 identity. An expression X conforms to F when it belongs to the applicable expression domain and satisfies each applicable rule and dependency. A rule referring to R uses C.2.1:4.1.1's distinction; a label such as format does not exclude a semantic requirement.
+The chosen domain remains fixed in a comparison. A move between domains requires an explicit correspondence and cannot obtain identity merely by choosing a coarser equality after the change. Concrete copies of a construction do not multiply X when the domain gives them the same value; their carrier tokens can differ.
 
-**Obtain C through its own domain.** C is a physical or digital entity from which X can actually be recovered under the stated conditions. For a continuing file object, a write can preserve C while changing its state and X. For an immutable digital snapshot identified by its complete byte value, different bytes identify another C. For a physical sheet or copy token, another copy has another identity. A route such as a URL is the designation or access path used to reach the chosen carrier; it does not determine that carrier's continuity. State which domain the current comparison uses before judging it.
+**Obtain F as reusable rules.** F is an independently identified collection of rules for constructing or arranging eligible expressions. Its identity is the interpreted rules, their application domains and imported dependencies. A layout-only F can leave subject claims unconstrained; another F can require fields, units, coverage or particular interpretations. The episteme that describes F retains its own C.2.1 identity.
 
-A snapshot value alone establishes no actual availability. Its bearing and publication claims require an actual retrievable realization with a decoding path to X. When several copies realize the same snapshot value, a value-based availability claim can remain true while one copy disappears. A claim about which physical or managed file copy was supplied instead selects that copy as C. These choices preserve the question each consumer actually asks.
+An expression X conforms to F when it belongs to the applicable expression domain and satisfies each applicable rule and dependency. A rule referring to R uses C.2.1:4.1.1's distinction; a label such as format does not exclude a semantic requirement.
+
+**Obtain C through its own domain.** C is a physical or digital entity from which X can actually be recovered under the stated conditions.
+
+For a continuing file object, a write can preserve C while changing its state and X. For an immutable digital snapshot identified by its complete byte value, different bytes identify another C. For a physical sheet or copy token, another copy has another identity.
+
+A route such as a URL is the designation or access path used to reach the chosen carrier; it does not determine that carrier's continuity. State which domain the current comparison uses before judging it.
+
+A snapshot value alone establishes no actual availability. Its bearing and publication claims require a retrievable realization with a decoding path to X. When several copies realize the same snapshot value, a value-based availability claim can remain true while one copy disappears. A claim about which physical or managed file copy was supplied instead selects that copy as C. These choices answer different questions about the carrier.
 
 The reusable declaration is:
 
@@ -118,9 +132,15 @@ The audience-declaration episteme identifies the audience criterion; it is not t
 3. entities admitted by the audience declaration can obtain X from C and recover the required content of E under the conditions stated by the bounded-use declaration;
 4. E, A, U, X and C remain the identified participants of this occurrence.
 
-One occurrence is reidentified by those five fixed participants and their maximal continuous interval of availability. Changing any participant yields another publication occurrence. Demonstrated loss of availability followed by restoration yields a later occurrence. Missing or stale evidence leaves current obtaining unresolved; it does not prove a gap.
+One occurrence is reidentified by those five fixed participants and their maximal continuous interval of availability. If availability obtains with any different participant, it is another publication occurrence. Demonstrated loss of availability followed by restoration yields a later occurrence.
 
-Rendering, printing, uploading, indexing, or granting access are activities separate from the publication occurrence. When a precise performed-Work claim is independently current, recover each exact actual performer through A.13 and let A.15.1 independently admit the dated Work; add F.6 only when that claim or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted Work intact. Follow A.6.1 for an operation binding, C.11 for a `ChoiceResult`, or the exact access, reliance, or use relation without reproducing its test here. The activity and any result remain separate from the publication-relation participants.
+Missing or stale evidence leaves current obtaining unresolved; it does not prove a gap.
+
+Rendering, printing, uploading, indexing, or granting access are activities separate from the publication occurrence.
+
+When a precise performed-Work claim is independently current, recover each actual performer through A.13 and let A.15.1 independently admit the dated Work; add F.6 only when that claim or its receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment. F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted Work intact.
+
+Follow A.6.1 for an operation binding, C.11 for a `ChoiceResult`, or the exact access, reliance, or use relation without reproducing its test here. The activity and any result remain separate from the publication-relation participants.
 
 #### E.24.PUB:4.2 - Recover expression and bearing only when needed
 
@@ -153,7 +173,7 @@ PublicationFormConformanceRelationSignature:
     PublicationFormSlot: ValueKind=U.Entity, refMode=U.EntityRef, Required
 ```
 
-**Form-mediated uses.** `PublicationFormExpressionRelation(E,F,U)` obtains while at least one independently identified X conforms to F and satisfies `PublicationExpressionRelation(E,X,U)`. It states that the selected form has an actual adequate expression for this E and U. The existence of a template alone is insufficient.
+**Form-mediated uses.** `PublicationFormExpressionRelation(E,F,U)` obtains while at least one independently identified X conforms to F and satisfies `PublicationExpressionRelation(E,X,U)`. At least one expression of this E for U must meet the selected form’s rules. The existence of a template alone is insufficient.
 
 `PublicationFormBearingRelation(C,F)` obtains while C bears at least one independently identified X that conforms to F. It establishes the recoverability of a conforming construction; the expressed episteme and audience access require their own predicates.
 
@@ -181,14 +201,18 @@ For form-mediated availability through C, the same X must witness expression, be
 
 ##### E.24.PUB:4.2.1 - Keep the granularity of the availability claim
 
-A consumer can claim continuous availability of E to A for U over an interval when, at every time in that interval, at least one appropriate X and C provides that availability. If the consumer fixes F, C or a set of permitted carriers, retain those constraints in that claim. A change of exact publication does not prove an interruption of this broader availability. A gap is established when the required availability fails across the permitted alternatives. Failure of one copy or route alone does not establish that broader gap. This broader statement needs no new public publication kind or generic occurrence unless a receiving use independently needs its identity.
+A consumer can claim continuous availability of E to A for U over an interval when, at every time in that interval, at least one appropriate X and C provides that availability. If the consumer fixes F, C or a set of permitted carriers, retain those constraints in that claim.
+
+A change of exact publication does not prove an interruption of this broader availability. A gap is established when the required availability fails across the permitted alternatives. Failure of one copy or route alone does not establish that broader gap.
+
+This broader statement needs no new public publication kind or generic occurrence unless a receiving use independently needs its identity.
 
 #### E.24.PUB:4.3 - Use progressive explicitness
 
 Use the smallest statement that supports the current work:
 
 1. **Ordinary use:** name the selected episteme, audience, bounded use, expression and carrier in one sentence; add selected form conformance when needed.
-2. **Changed-object use:** say which one of those objects changed and which relation must be re-evaluated.
+2. **Changed-object use:** identify the objects that changed and the relations those changes require you to re-evaluate.
 3. **Contested availability:** state the `EpistemePublicationRelation` participants, obtaining evidence, and occurrence identity.
 4. **Contested expression:** open `PublicationExpressionRelation` and the applicable representation, preservation or loss pattern; inspect form conformance when the claim relies on it.
 5. **Contested carrier availability:** open `PublicationExpressionBearingRelation` plus the direct carrier-currentness or access pattern; preserve the fixed or quantified alternatives of the actual availability claim.
@@ -203,8 +227,8 @@ Ask one question at a time:
 | --- | --- |
 | Do the selected claims form an identifiable whole about an EntityOfConcern under an effective reference scheme? | a `U.Episteme` under `C.2.1`; the filled card or diagram supplies its expression |
 | Does `EpistemeViewpointConformanceRelation(E,P)` obtain for that episteme E and at least one exact viewpoint episteme P? | the same E has dependent-kind membership as `U.View` under `E.17.0`; any A.6.3 construction remains a separate optional relation |
-| Does the particular expression follow selected reusable formation or arrangement rules? | `PublicationFormConformanceRelation(X,F)`; expression of E for U is checked separately |
-| Do selected elements correspond to independently recovered objects and support modeling or reasoning operations? | a representation and its correspondence under A.6.3.RT and A.6.3.RT.OE; C.29 supplies the additional grounds for a mathematical lens |
+| Does the expression follow selected reusable formation or arrangement rules? | `PublicationFormConformanceRelation(X,F)`; expression of E for U is checked separately |
+| Do selected elements correspond to independently recovered objects and support modeling or reasoning operations? | a representation with a correspondence to its subject under the applicable subject or representation rule. Use A.6.3.RT for a scheme transition and A.6.3.RT.OE for constructing an expression. Use C.29 when mathematical representation, inference or transfer needs additional grounds |
 | Does an actual state or realization of the selected carrier yield exact X? | `PublicationExpressionBearingRelation(C,X)` |
 | Is the selected episteme available to the declared audience for the declared use through X and C? | one `EpistemePublicationRelation(E,A,U,X,C)` occurrence |
 
@@ -214,10 +238,10 @@ The answers can be jointly positive because they concern different objects or re
 
 - an episteme carries claims and designations;
 - a `U.View` is the same episteme individual for which E.17.0 conformance to at least one exact viewpoint episteme obtains;
-- a particular expression conveys the selected episteme's required claims for a bounded use;
+- an expression conveys the selected episteme's required claims for a bounded use;
 - a reusable publication form constrains eligible expressions;
 - a representation stands in an identified correspondence to its subject; C.29 governs the mathematical-lens branch;
-- a carrier bears a particular expression through its actual state or realization;
+- a carrier bears an expression through its actual state or realization;
 - a publication occurrence makes one selected episteme edition available;
 - a system may perform publication activity and may later access or rely on the published episteme, but those are separate claims under their direct patterns; publication availability establishes none of them;
 
@@ -227,25 +251,37 @@ A designator designates and a governed reference resolves to a referent. Neither
 
 In a pattern about an ontic, structure, architecture, characteristic space, method, or another subject, explain the subject's identity, relations, practical problem, and solution before publication details. Add E.24.PUB only when the receiving use depends on distinguishing the description, selected edition, form, carrier, audience, or bounded use.
 
-When the EntityOfConcern is itself a description episteme, the same rule applies one level up. The description stays the subject; publication of that description is a neighboring relation.
+When the EntityOfConcern is a description episteme, the same rule applies one level up. The description stays the subject; publication of that description is a neighboring relation.
 
 ### E.24.PUB:5 - Archetypal Grounding
 
 #### E.24.PUB:5.1 - Maintenance inspection card
 
-A completed pump-inspection card states measured clearances and identified defects about Pump #37 under the maintenance reference scheme. Those organized claims constitute the card episteme E. The filled card supplies expression X; its reusable layout rules supply F. The PDF file is C under its selected file-object or snapshot identity. One publication occurrence makes edition 4 of the card episteme available through X and C to the maintenance-planning team for planning the next repair.
+A completed pump-inspection card states measured clearances and identified defects about Pump #37 under the maintenance reference scheme. Those organized claims constitute the card episteme E. The filled card supplies expression X; its reusable layout rules supply F. The PDF file is C under its selected file-object or snapshot identity.
 
-Changing the PDF filename changes neither E nor necessarily C. Correcting a measured clearance changes the claim content and therefore E; a later-edition claim also needs C.2.1:4.5 continuity. Replacing the layout changes F. If this changes X, it also changes the exact publication, while broader availability of E can continue. Making the same E available to a supplier for quotation creates another exact publication because A or U changes.
+One publication occurrence makes edition 4 of the card episteme available through X and C to the maintenance-planning team for planning the next repair.
+
+Changing the PDF filename changes neither E nor necessarily C. Correcting a measured clearance changes the claim content and therefore E; a later-edition claim also needs C.2.1:4.5 continuity.
+
+Replacing the layout changes F. If this changes X and the availability conditions hold for the new X, the resulting publication is a different occurrence. Broader availability of E can continue. Making the same E available to a supplier for quotation creates another exact publication because A or U changes.
 
 #### E.24.PUB:5.2 - Architecture diagram
 
-An architecture diagram can express claims about selected structures of one holon. Those claims can constitute an architecture-description episteme. When that exact episteme conforms to an architectural viewpoint under E.17.0, the same individual is a `U.View`; direct authoring and A.6.3 construction are independent construction routes. Reusable graphical conventions can supply F; the constructed diagram supplies X. A correspondence connects its elements to the represented subject, with C.29 additionally governing any mathematical inference or transfer. A screen or sheet can supply C.
+An architecture diagram can express claims about selected structures of one holon. Those claims can constitute an architecture-description episteme.
+
+When that episteme conforms to an architectural viewpoint under E.17.0, the same individual is a `U.View`; direct authoring and A.6.3 construction are independent construction routes.
+
+Reusable graphical conventions can supply F; the constructed diagram supplies X. A correspondence connects its elements to the represented subject, with C.29 additionally governing any mathematical inference or transfer. A screen or sheet can supply C.
 
 The diagram does not become the architecture by being published. `C.30` governs the `ArchitectureOf@Context` claim and `A.22` governs selected `U.Structure` values. E.24.PUB lets the architect locate a publication defect without replacing the architectural question with a discussion of diagrams.
 
 #### E.24.PUB:5.3 - Clinical procedure edition
 
-A hospital procedure description is an episteme about how a procedure is performed. Treat it as a `U.MethodDescription` only when its EntityOfConcern is one independently admitted `U.Method` and its claims describe how that Method is carried out. A wall poster expresses a selected edition for quick pre-procedure orientation; the laminated sheet is the carrier. A separate controlled publication makes the same edition available to clinicians for authoritative use during the procedure. The two publication occurrences differ in bounded use even if the words are identical. Neither publication proves access, reliance, Method enactment, or clinical Work. If later clinical Work is independently claimed, route that claim to its direct Work and attribution patterns rather than restating their basis here. Keep the publication occurrence and every separately current access, reliance, assignment, Method, Work, or result claim distinct.
+A hospital procedure description is an episteme about how a procedure is performed. Treat it as a `U.MethodDescription` only when its EntityOfConcern is one independently admitted `U.Method` and its claims describe how that Method is carried out.
+
+A wall poster expresses a selected edition for quick pre-procedure orientation; the laminated sheet is the carrier. A separate controlled publication makes the same edition available to clinicians for authoritative use during the procedure. The two publication occurrences differ in bounded use even if the words are identical.
+
+Neither publication proves access, reliance, Method enactment, or clinical Work. If later clinical Work is independently claimed, use its direct Work pattern. Add the attribution pattern when the claim or receiving use needs precise assignment-bound attribution, as in §4.1. Keep the publication occurrence and every separately current access, reliance, assignment, Method, Work, or result claim distinct.
 
 #### E.24.PUB:5.4 - FPF pattern host
 
@@ -255,7 +291,11 @@ An E.24 pattern host contains an expression X of an ontic-description episteme a
 
 One instruction edition is available to a training group for studying a method. That `EpistemePublicationRelation` occurrence establishes availability to the declared audience for that bounded use; it establishes neither that anyone read the instruction nor that adjustment, inspection, acceptance, or release work occurred. The same availability alone does not support an acceptance commission's choice about releasing one named lot.
 
-If a commission later makes a release choice and that stronger claim is current, recover each exact actual choice-work performer through A.13 and let A.15.1 independently admit any dated choice Work. Add F.6 only when the choice account or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted choice Work intact. Identify the resulting `ChoiceResult` separately under C.11. Keep both Work and result separate from the publication occurrence; the publication statement need not carry their identity, staffing, or omission rules.
+If a commission later makes a release choice and that stronger claim is current, recover each actual choice-work performer through A.13 and let A.15.1 independently admit any dated choice Work.
+
+For that choice Work, add F.6 only when the choice account or receiving use expressly consumes precise assignment-bound attribution through the same obtaining A.13 assignment; F.6 identifies neither assignment nor performer, and missing or failed F.6 alone leaves independently admitted choice Work intact.
+
+Identify the resulting `ChoiceResult` separately under C.11. Keep both Work and result separate from the publication occurrence; the publication statement need not carry their identity, staffing, or omission rules.
 
 When the later claim says that the published instruction was actually used, state that exact use under its direct relation, or under A.6.1 only when a declared operation application is current. If no such route is established, stop at publication availability and let the receiving pattern identify its own blocker. The `ChoiceResult` is neither the choice Work, the bounded-use declaration, nor a participant of the publication occurrence.
 
@@ -274,10 +314,10 @@ When the later claim says that the published instruction was actually used, stat
 
 | Check | Observable conformance condition |
 | --- | --- |
-| `CC-E24PUB-1` | The bounded-use declaration itself names the intended receiving use. A separate plan, decision question, or `U.WorkPlan` is cited only when it independently exists and changes the publication claim. The publication statement names the selected edition, audience, bounded use, expression and carrier; it establishes no actual access, reliance, use, Work, or result. Any independently current stronger claim is routed to its direct pattern without reproducing that pattern's test here. |
+| `CC-E24PUB-1` | The bounded-use declaration names the intended receiving use. A separate plan, decision question, or `U.WorkPlan` is cited only when it independently exists and changes the publication claim. The publication statement names the selected edition, audience, bounded use, expression and carrier; it establishes no actual access, reliance, use, Work, or result. Any independently current stronger claim is routed to its direct pattern without reproducing that pattern's test here. |
 | `CC-E24PUB-2` | The selected episteme edition, audience declaration, bounded-use declaration, particular expression and carrier are independently identified; an optional reusable form has its own rules and conformance predicate. |
 | `CC-E24PUB-3` | `EpistemePublicationRelation` has the five exact participant meanings, the availability predicate, and the maximal-continuous-occurrence identity rule stated in section 4.1. |
-| `CC-E24PUB-4` | Exact expression and bearing predicates are recoverable when load-bearing. A selected form has its conformance predicate. Form-mediated availability uses the same X as witness for expression, bearing and conformance; broader availability retains its permitted alternatives. |
+| `CC-E24PUB-4` | Exact expression and bearing predicates are recoverable when the receiving use depends on them. A selected form has its conformance predicate. Form-mediated availability uses the same X as witness for expression, bearing and conformance; broader availability retains its permitted alternatives. |
 | `CC-E24PUB-5` | Plain `published episteme` states publication participation. A receiving classification use has its C.3.2 basis; public-kind admission follows E.24.UK. The availability-only use retains the rejection `E24UK-NAR-EPUB-01`. |
 | `CC-E24PUB-6` | A `U.View` remains a same-individual dependent specialization of `U.Episteme` under an obtaining E.17.0 conformance relation; graphical appearance and A.6.3 construction alone supply no membership. |
 | `CC-E24PUB-7` | Representation correspondence is stated for the applicable operation; C.29 is used for its mathematical branch. Expression elements, reusable-form rules and subject-side objects retain their own identities. |
@@ -287,7 +327,7 @@ When the later claim says that the published instruction was actually used, stat
 
 ### E.24.PUB:8 - Common Misuses and Repairs
 
-| Misuse | What actually failed | Repair move |
+| Misuse | What failed | Repair move |
 | --- | --- | --- |
 | File equals episteme | Carrier continuity is used as claim-content identity. | Recover the C.2.1 episteme identity and the carrier's direct identity separately. |
 | Diagram equals view | Graphical form or construction history is used as the `U.View` membership criterion. | Recover exact candidate episteme E, exact viewpoint episteme P, and E.17.0 conformance; keep any A.6.3 construction, selected use, form, and representation separate. |
@@ -299,15 +339,17 @@ When the later claim says that the published instruction was actually used, stat
 
 ### E.24.PUB:9 - Consequences
 
-The main gain is local repair. A stale carrier can be replaced without pretending that the claims changed. A revised claim can create another episteme edition without pretending that the audience or form changed. A narrower audience or use can create another publication occurrence while preserving the edition.
+The main gain is local repair. Replacing a stale carrier does not imply a change to the claims. A layout repair can preserve the model being presented. A revised claim can create another episteme edition without implying a change to the audience or form. A narrower audience or use can create another publication occurrence while preserving the edition.
 
-The cost is that load-bearing publication claims need five identified participants and two supporting relations. Progressive explicitness contains that cost: ordinary users state one sentence; only disputed availability, expression, or bearing opens the complete relation detail.
+The cost is that load-bearing publication claims need five identified participants and two supporting relations. Progressive explicitness contains that cost: the ordinary publication statement can be one sentence. Recover the fuller relation details when the receiving use needs them, including when availability, expression, or bearing is disputed.
 
 ### E.24.PUB:10 - Rationale
 
-Publication does not change an episteme into a nested publication object. It is a real availability relation supported by an expression relation and a bearing relation. That architecture explains why one encountered card, diagram, or file can matter in several ways without admitting one umbrella presentation kind.
+Publication does not change an episteme into a nested publication object. It is an availability relation supported by an expression relation and a bearing relation. That architecture explains why one encountered card, diagram, or file can matter in several ways without admitting one umbrella presentation kind.
 
-The split also preserves agency. A System can render, upload, print, index, withdraw, or replace a carrier, but the publication occurrence is the enduring availability relation, not that activity. It may obtain with no continuing publication Work, and an attempted publication activity can fail while no publication occurrence begins. If an actual Work claim matters, its direct patterns govern it; E.24.PUB only keeps it and its result outside the publication-relation participants.
+The split also preserves agency. A System can render, upload, print, index, withdraw, or replace a carrier, but the publication occurrence is the enduring availability relation, not that activity.
+
+The availability relation may obtain with no continuing publication Work, and an attempted publication activity can fail while no publication occurrence begins. If an actual Work claim matters, its direct patterns govern it; E.24.PUB only keeps it and its result outside the publication-relation participants.
 
 
 
@@ -326,7 +368,7 @@ The practical question is what an audience can obtain for a stated use, and whic
 
 For form-mediated availability, one and the same X must satisfy expression, bearing and form conformance. An adequate expression elsewhere and a different conforming expression on C do not establish that C makes E available. This shared witness is the binding that the two separate existential support claims leave open.
 
-A change of exact X or C creates another exact publication occurrence. Broader availability can nevertheless continue while at least one permitted expression and carrier remains available at every time in the stated interval. Keep any form or carrier restriction that the receiving use actually requires. A failure of one copy establishes a broader gap only if all permitted alternatives fail.
+When publication obtains with a different X or C, it is another exact occurrence. Broader availability can nevertheless continue while at least one permitted expression and carrier remains available at every time in the stated interval. Keep any form or carrier restriction that the receiving use requires. A failure of one copy establishes a broader gap only if all permitted alternatives fail.
 
 The cost of the exact comparison is selecting the expression domain and equality, carrier identity, and relevant time interval before comparing publications. A continuing managed file and an immutable snapshot answer different identity questions. For ordinary use, the readable publication sentence suffices; recover this detail when its alternatives can change the answer.
 
@@ -340,7 +382,9 @@ The following bounded comparisons support those choices. Their source models ret
 | [Fathallah et al. 2026, v2 of 26 July](https://arxiv.org/abs/2506.01232v2), author abstract: RIGOR starts from relational schemas and enriches them with domain information to construct OWL ontologies. | The expression test retains the interpreted claims; section 4.2 permits a schema or table migration to change X or C while E is preserved. Mapping or serialization alone is not treated as full recovery of domain meaning. |
 | [Oyewale and Soru 2026](https://arxiv.org/abs/2602.01276v1), author abstract: ontology construction separates extraction, hierarchy formation and RDF serialization, with reported limitations in scope and hierarchy. | Sections 4.4–4.5 and CC-E24PUB-8 keep construction and its epistemic adequacy separate from publication availability. Export success supplies no missing adequacy judgement. |
 
-The abstracts supply these bounded problem comparisons, not a validated performance ranking or the five-participant FPF predicate. A.6.REL supplies the direct-relation and occurrence rules; C.2.1 supplies episteme identity. A.6.3, C.29, E.17 and E.24.UK retain their construction, mathematical-representation, view-membership and admission questions. Their combination here is the FPF construction justified by the publication questions above.
+The abstracts supply these bounded problem comparisons, not a validated performance ranking or the five-participant FPF predicate.
+
+A.6.REL supplies the direct-relation and occurrence rules; C.2.1 supplies episteme identity. A.6.3, C.29, E.17 and E.24.UK retain their construction, mathematical-representation, view-membership and admission questions. Their combination here is the FPF construction justified by the publication questions above.
 
 Reopen the choice when a real receiving use cannot distinguish the provided content under the declared identities, or when the broader-availability rule reports a gap despite continuous availability through its permitted alternatives. Reopen a source comparison when a newer result changes the distinction it supports. A different file format or storage tool alone supplies neither counterexample.
 

@@ -16,9 +16,9 @@ A purely abstract statement risks two failures:
 
 | Force | Tension |
 |-------|---------|
-| **Universality vs Concreteness** | Abstract law ↔ concrete example. |
-| **Brevity vs Clarity** | Spec should stay concise ↔ dual examples add length. |
-| **Rigour vs Accessibility** | Formal semantics ↔ intuitive narrative. |
+| **Universality vs Concreteness** | How can concrete examples explain an abstract rule without making its scope seem limited to the illustrated cases? |
+| **Brevity vs Clarity** | The specification should stay concise, but two examples add length. |
+| **Rigour vs Accessibility** | How can an intuitive account convey the formal semantics? |
 
 ### E.7:4 - Solution — mandatory *Archetypal Grounding* subsection
 
@@ -27,7 +27,9 @@ Every architectural pattern **SHALL** include a dedicated section titled **“Ar
 1. **`U.System`** — an acting physical or operational holon.
 2. **`U.Episteme`** — a non-agentive claim-bearing holon.
 
-When the rule applies across both, use the **Tell-Show-Show** sequence below. When it intentionally applies to only one substrate, supply that case and the scope justification required by CC-AG.3. The cases make application and limits inspectable; a wider universality claim needs its own proof or evidence.
+When the rule applies across both, use the **Tell-Show-Show** sequence below. When it intentionally applies to only one substrate, supply that case and the scope justification required by CC-AG.3.
+
+The cases make application and limits inspectable. A claim of wider applicability needs proof or evidence for that wider scope.
 
 | Stage | Content |
 |-------|---------|
@@ -35,11 +37,11 @@ When the rule applies across both, use the **Tell-Show-Show** sequence below. Wh
 | **Show #1** | `Archetypal Grounding` gives a concrete `U.System` case when applicable. |
 | **Show #2** | The same section gives a parallel `U.Episteme` case when applicable. |
 
-### E.7:5 - Archetypal Grounding (of this pattern itself)
+### E.7:5 - Archetypal Grounding for E.7
 
 | Universal rule | `U.System` instantiation | `U.Episteme` instantiation |
 |----------------|--------------------------|----------------------------|
-| “State what makes a claimed whole and its parts obtain.” | `B.1:5.1` recovers the pump-skid part–whole claim and returns to A.14 and C.13 for the actual part relations and construction. | `B.1:5.2` distinguishes an evidence collection from an integrated claim-bearing whole and requires the A.1 criterion before asserting the latter. |
+| “State what makes a claimed whole and its parts obtain.” | `B.1:5.1` recovers the pump-skid part–whole claim. It returns to A.14 to identify the skid’s component or portion relations and to C.13 for the constructional grounds. | `B.1:5.2` distinguishes an evidence collection from an integrated claim-bearing whole and requires the A.1 criterion before asserting the latter. |
 
 ### E.7:6 - Conformance Checklist
 
@@ -47,15 +49,15 @@ When the rule applies across both, use the **Tell-Show-Show** sequence below. Wh
 |----|-------------|---------|
 | **CC‑AG.1** | Every architectural pattern **SHALL** contain a section headed *“Archetypal Grounding”* under E.8's heading rules. | Keeps grounding findable across all Parts. |
 | **CC‑AG.2** | The Archetypal Grounding section **MUST** illustrate the rule with both `U.System` and `U.Episteme` when it applies to both. A single-substrate rule follows CC‑AG.3. | Makes the claimed application and scope inspectable. |
-| **CC‑AG.3** | If a rule intentionally applies to only one substrate, the subsection **SHALL** state the scope limitation and justify it against the five Principle‑Taxonomy lenses (`Gov`, `Arch`, `Epist` (epistemological and ontological), `Prag`, `Did`). | Prevents silent bias; links to Bias‑Audit guard‑rail. |
+| **CC‑AG.3** | If a rule intentionally applies to only one substrate, the subsection **SHALL** state the scope limitation and justify it against the five Principle‑Taxonomy lenses (`Gov`, `Arch`, `Epist` (epistemological and ontological), `Prag`, `Did`). | Prevents bias from passing unnoticed. The five lenses connect the justification to the Bias‑Audit guard‑rail. |
 | **CC‑AG.4** | Patterns lacking a compliant Archetypal Grounding subsection **MAY NOT** progress to “Accepted” status. | Keeps grounding a condition of acceptance. |
 
 ### E.7:7 - Consequences
-Applicable, contrasting cases let readers inspect how the rule works and where another basis is needed. Authors must construct cases that preserve its actual conditions and keep the added explanation proportionate to its scope.
+Applicable, contrasting cases let readers inspect how the rule works and where another basis is needed. Authors must construct cases that preserve the rule's conditions and keep the added explanation proportionate to its scope.
 
 
 ### E.7:8 - Rationale
-Tell-Show-Show places the rule next to applicable cases and makes their shared conditions and differences inspectable. Making that connection explicit implements **P‑2 Didactic Primacy** while **P‑1 Cognitive Elegance** keeps the grounding proportionate to the rule's actual scope. The five Principle lenses connect scope justification to the **Taxonomy-Guided Bias Audit** in E.5.4.
+Tell-Show-Show places the rule next to applicable cases and makes their shared conditions and differences inspectable. Making that connection explicit implements **P‑2 Didactic Primacy** while **P‑1 Cognitive Elegance** keeps the grounding proportionate to the rule’s scope. The five Principle lenses connect scope justification to the **Taxonomy-Guided Bias Audit** in E.5.4.
 
 ### E.7:9 - Relations
 

@@ -85,7 +85,7 @@ Use a sufficient result and stop this development. Otherwise follow the part of 
 
 For each continuation, state what it would permit and which earlier requirement it answers, changes or leaves open. A problem constructed for exploration can be retained for a later possible use without claiming present demand. Its interest lies in the further reasoning or action it may enable.
 
-Retain the actual material and explanation needed to continue. Compare the prospective gain with the cost of the attempt, adaptation and retention, including displaced work. C.11.DUA helps when the value of further information work is unsettled. Close an unwarranted branch without discarding an earlier qualified use of its source method.
+Retain the material and explanation needed to continue. Compare the prospective gain with the cost of the attempt, adaptation and retention, including displaced work. C.11.DUA helps when the value of further information work is unsettled. Close an unwarranted branch without discarding an earlier qualified use of its source method.
 
 #### C.40.CD:4.6 - Coordinate several attempts only when their results warrant it
 
@@ -126,7 +126,7 @@ A new conflict A-C creates the triangle A-B-C. Applying two-coloring now exposes
 
 That result supports the next mathematical question: what is the least number of sessions? The triangle requires at least three. The assignment A=1, B=2, C=3, D=1 satisfies every edge, so three suffice and are minimal. The obstruction and construction together answer the new question.
 
-If the receiving project actually has only two sessions, the new mathematical answer identifies a resource mismatch. Receiving work must change a real conflict condition, obtain another session or accept that the stated assignment cannot be supplied. Merely asking the easier resource question has not removed that requirement.
+If the receiving project has only two sessions, the new mathematical answer identifies a resource mismatch. Receiving work must change a real conflict condition, obtain another session or accept that the stated assignment cannot be supplied. Merely asking the easier resource question has not removed that requirement.
 
 The successful three-session construction opens a further question when more conflicts are expected: which additions remain compatible with three sessions? Adding A-D invalidates the old assignment because A and D both use session 1. Retain A=1, B=2 and C=3, and move D to session 2. This changed construction satisfies all five conflicts.
 
@@ -190,9 +190,9 @@ An automated problem generator supplies one implementation of problem constructi
 
 The selected line combines constructive problem development, operation reuse and target examination. Compare it with keeping the target fixed and improving a sufficient existing way: that cheaper alternative is preferred when it supplies the wanted result without developing a new question.
 
-[POET v3](https://arxiv.org/html/1901.01753v3), §3, supplies a concrete paired environment/agent construction with environment generation, optimization and cross-environment transfer. Adapt those connections in :4.2–4.5. Its fixed thresholds and copying of policy parameters belong to that computational implementation.
+[POET v3](https://arxiv.org/html/1901.01753v3), §3, supplies a paired environment/agent construction with environment generation, optimization and cross-environment transfer. Adapt those connections in :4.2–4.5. Its fixed thresholds and copying of policy parameters belong to that computational implementation.
 
-[Enhanced POET](https://arxiv.org/html/2003.08536v1), §3 and appendices A.1/A.4, distinguishes environment encoding from behavioral characterization and changes when costly transfer adaptation is attempted. Adapt characterization for the actual transfer choice and attention to adaptation cost in :4.6. A policy that skips adaptation after poor direct transfer is a bounded economy; an intelligible target-specific adaptation can warrant a different choice.
+[Enhanced POET](https://arxiv.org/html/2003.08536v1), §3 and appendices A.1/A.4, distinguishes environment encoding from behavioral characterization and changes when costly transfer adaptation is attempted. Adapt characterization for the transfer choice and attention to adaptation cost in :4.6. A policy that skips adaptation after poor direct transfer is a bounded economy; an intelligible target-specific adaptation can warrant a different choice.
 
 [LLM-POET](https://arxiv.org/html/2406.04663v1), §§2–4, changes the environment generator while retaining the need to make its generated representation usable in the environment. Adapt that validity condition in :4.2. Its reported performance comparison has substantial uncertainty and concerns the tested generators and environments.
 

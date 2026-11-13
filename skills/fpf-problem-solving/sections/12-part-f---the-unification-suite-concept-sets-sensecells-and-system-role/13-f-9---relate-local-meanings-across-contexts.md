@@ -6,31 +6,33 @@
 
 **Type:** Architectural pattern.
 **Normativity:** Normative.
-**Builds on:** F.17 for exact scheme-based `SchemeSenseCell` identity and `SenseCellAddressRef`; F.18 for designation selection; C.2.1 for assertion and description-episteme identity; F.0.1 for `senseFamily` and bridge-only crossing discipline; F.7 and F.8 for downstream naming and reuse decisions.
+**Builds on:** F.17 for exact scheme-based `SchemeSenseCell` identity and `SenseCellAddressRef`; F.18 for designation selection; C.2.1 for assertion and description-episteme identity; F.0.1 for recovering each source-local meaning before proposing a relation between the two; F.7 and F.8 for downstream naming and reuse decisions.
 
-**Coordinates with:** A.6.REL for demand-driven occurrence individuation; C.2.1 for assertion, occurrence-description, and Card identity; E.24.PUB for publication occurrence, form, and carrier; A.10 for descriptive evidence-provenance paths citing independently established direct relations and for local reliance dispositions; B.3 for actual named assurance claims and their bounded `AssuranceResult` values; E.10.ROLE for claim-bearing source wording with *role*; A.2, C.3, F.4, F.5, and A.2.1 for local system-role kinds and assignments; A.13 and A.15.1 for exact actual performers and independently admitted Work; F.6 only for a precise assignment-bound attribution expressly consumed by the Bridge use; A.6.5 for relation-slot discipline; C.29 for mathematical-lens use; A.6.3.CSC for controlled coarsening; C.26.1 and C.26.2 for quantum-like export boundaries.
+**Coordinates with:** A.6.REL for demand-driven occurrence individuation; C.2.1 for assertion, occurrence-description, and Card identity; E.24.PUB for publication occurrence, form, and carrier; A.10 for descriptive evidence-provenance paths citing independently established direct relations and for local reliance dispositions; B.3 for actual named assurance claims and their bounded `AssuranceResult` values; E.10.ROLE for claim-bearing source wording with *role*; A.2, C.3, F.4, F.5, and A.2.1 for local system-role kinds and assignments; A.13 and A.15.1 for exact actual performers and independently admitted Work; F.6 only for a Bridge use that explicitly relies on precise assignment-bound attribution; A.6.5 for relation-slot discipline; C.29 for mathematical-lens use; A.6.3.CSC for controlled coarsening; C.26.1 and C.26.2 for quantum-like export boundaries.
 
 **Plain entry cues (informative).** Context-to-context translator; sense bridge.
 
 ### F.9:1 - Intent and applicability
 
-**Intent.** Govern one actual semantic `Bridge` relation between two exact F.17 `SchemeSenseCell` values from different semantic contexts. Keep that occurrence separate from every assertion, Bridge description episteme, Bridge Card, registry record, publication occurrence, publication form, presentation carrier, bounded-use claim, evidence or assurance relation, and object created when a proposed use is actually performed.
+**Intent.** Govern one actual semantic `Bridge` relation between two exact F.17 `SchemeSenseCell` values from different semantic contexts. Keep that occurrence separate from every assertion, Bridge description episteme, Bridge Card, registry record, publication occurrence, publication form, presentation carrier, bounded-use claim, evidence or assurance relation, and object created when a proposed use is performed.
 
 **Applicability.** Use this pattern when an author needs to compare local senses across contexts, reuse a familiar label, connect design-time and run-time senses, compare two standards' terms, or justify a cross-context row. A shared word or available mapping is only a reason to ask whether a Bridge obtains.
 
 **Primary EntityOfConcern in plain terms.** One actual correspondence or difference between two exact local senses. This pattern concerns the direct `Bridge` occurrence, not a card, context, transport chain, work process, local system-role kind, assignment occurrence, evidence item, or global meaning layer.
 
-**Admissible move in plain terms.** First resolve the two local senses. Then state and test the correspondence or difference between them. If the Bridge obtains, state the proposed use separately: what the reader will do, direction, correspondence rule, and tolerated loss. A current C.2.1 claim answers whether the Bridge suits that bounded use. Check ordinary reliance under A.10; use B.3 only when an actual named assurance claim is current. If the use happened, recover its Work, assertion, publication, relation, operation application, or other object under its subject pattern. Add a Bridge Card only when a reusable package is worth maintaining.
+**Admissible move in plain terms.** First resolve the two local senses. Then state and test the correspondence or difference between them. If the Bridge obtains, state the proposed use separately: what the reader will do, direction, correspondence rule, and tolerated loss. A current C.2.1 claim answers whether the Bridge suits that bounded use.
 
-**Primary working reader.** An author, checker, or practitioner deciding first whether a cross-local semantic relation actually obtains and then whether it supports one named use.
+For that bounded-use claim, check ordinary reliance under A.10; use B.3 only when an actual named assurance claim is current. If the use happened, recover its Work, assertion, publication, relation, operation application, or other object under its subject pattern. Add a Bridge Card only when a reusable package is worth maintaining.
+
+**Primary working reader.** An author, checker, or practitioner deciding first whether a cross-local semantic relation obtains and then whether it supports one named use.
 
 **Use this when.** Use F.9 when a receiving claim needs an exact semantic relation between two local senses whose `<ReferenceScheme, LocalSenseClaim>` interpretation bases differ. Different schemes, identical spelling, a mapping implementation, or a request for comparison does not establish that relation.
 
-**What goes wrong if missed.** Teams turn shared labels and convenient mappings into silent equivalence, substitution, structural inference, status transfer, classification under a local system-role kind, or assignment to it. They also mistake evidence about a proposed use, or a polished card, for the relation itself.
+**What goes wrong if missed.** Teams turn shared labels and convenient mappings into silent equivalence, substitution, structural inference, status transfer, classification under a local system-role kind, or assignment to it. They also mistake evidence about a proposed use, or a card, for the relation itself.
 
-**What this buys.** A reader can see which relation is true, which proposed use is being judged, what evidence supports reliance on that judgement, and whether any downstream act actually happened. Those facts can change independently without silently merging local meanings.
+**What this buys.** A reader can see which relation is true, which proposed use is being judged, what evidence supports reliance on that judgement, and whether any downstream act happened. Those facts can change independently without silently merging local meanings.
 
-**Not this pattern when.** Not F.9 when the case is still inside one semantic context, or when the live question is a local system-role kind, assignment occurrence, performed-work attribution, evidence use, status use, source use, publication, assurance, authorization, a gate, a decision, or a mathematical-lens operation. Use the subject pattern for that object; cite F.9 only when cross-context semantic correspondence is also needed.
+**Not this pattern when.** Skip F.9 within one semantic context or when the live question is a local system-role kind, assignment occurrence, performed-work attribution, evidence use, status use, source use, publication, assurance, authorization, a gate, a decision, or a mathematical-lens operation. Use the subject pattern for that object; cite F.9 only when cross-context semantic correspondence is also needed.
 
 **Recognition versus assurance note.** Resolving the endpoint senses and testing the direct Bridge predicate recognizes the semantic relation. A separate C.2.1 claim judges one bounded use. A.10 states whether ordinary evidence reliance passes. When an actual named assurance claim is current, B.3 supplies its bounded result for the same use. None of those steps supplies legal, policy, or deontic authorization.
 
@@ -70,7 +72,9 @@ Start with the two exact local senses, not with a context object, mapping table,
 <ReferenceScheme by value, LocalExpression, LocalSenseClaim>
 ```
 
-For F.9, **semantic bounded context** is a Plain practice name for the local interpretation basis recovered from one exact cell's `<ReferenceScheme, LocalSenseClaim>` projection. It names this interpretation basis, not a separate FPF entity, relation participant, or selected model-use Structure. Two expressions under the same projection remain with ordinary designation and scope operations. Different projections make a Bridge question possible but do not make a Bridge obtain.
+For F.9, **semantic bounded context** is a Plain practice name for the local interpretation basis recovered from one exact cell's `<ReferenceScheme, LocalSenseClaim>` projection. It names this interpretation basis, not a separate FPF entity, relation participant, or selected model-use Structure.
+
+Two expressions under the same projection remain with ordinary designation and scope operations. Different projections make a Bridge question possible but do not make a Bridge obtain.
 
 When the two cells are from different semantic contexts, declare one relation-semantic `BridgePredicateProfile` and test it against their current meanings. Shared spelling, different schemes, a mapping implementation, a card, a registry entry, evidence, an assessment score, or publication establishes none of those facts by itself.
 
@@ -85,7 +89,9 @@ When the two cells are from different semantic contexts, declare one relation-se
 
 Only the two endpoint meanings are RelationSignature participants. `CL`, Loss Notes, `U.ClaimScope`, an admitted-use qualifier, evidence, counterexamples, policy, time or as-of values, `BoundedModelUseStructure`, description, Card, publication, registry identifier, form, and carrier are qualifiers or neighboring objects. No proposed-use field, use direction, use-specific rule, permitted-loss tolerance, assertion, or reliance result is a third participant.
 
-The reusable Bridge declaration is one independently constituted C.2.1 episteme whose exact EntityOfConcern is the direct `Bridge` relation kind. The same declaration episteme is used relation-facing as the compatible `RelationSignature`; its two SlotSpecs declare participant meanings but create neither endpoint nor occurrence. The relation kind, declaration episteme, RelationSignature use, SlotSpecs, actual cells, obtaining occurrence, assertion, occurrence-description episteme, Card, and publication remain distinct.
+The reusable Bridge declaration is one independently constituted C.2.1 episteme whose exact EntityOfConcern is the direct `Bridge` relation kind. The same declaration episteme is used relation-facing as the compatible `RelationSignature`; its two SlotSpecs declare participant meanings but create neither endpoint nor occurrence.
+
+The relation kind, declaration episteme, RelationSignature use, SlotSpecs, actual cells, obtaining occurrence, assertion, occurrence-description episteme, Card, and publication remain distinct.
 
 An F.9-local `BridgePredicateProfile` is a by-value predicate declaration, not a U-kind, participant, card, claim, or evaluation result. Direction is stated in the Bridge kind and endpoint orientation when the predicate is asymmetric. Its identity-bearing content is only:
 
@@ -108,15 +114,17 @@ The profile contains no proposed-use field, use direction, use-specific correspo
 
 If an endpoint is unresolved, the projections are the same, a dependency is missing, or the predicate is false or unresolved, assert no positive occurrence and state the exact exit: ordinary designation, `unresolved SenseCell endpoint`, `same semantic context`, `missing Bridge dependency`, `Bridge predicate false`, or `Bridge predicate unresolved`.
 
-**Admitted-use qualifier.** The Bridge declaration admits this relation only as the semantic-correspondence or semantic-difference premise for a comparison, explanation, translation, naming, or other bounded-use claim. Its nearest non-use is equally explicit: the Bridge alone licenses no substitution and creates no scope result, model-use crossing, local system-role kind, assignment occurrence, Work, evidence authority, status transfer, U-kind admission, publication, or other subject relation. This readable use boundary is a declaration or description qualifier; it is neither a participant nor profile identity and grants no specific use.
+**Admitted-use qualifier.** The Bridge declaration admits this relation only as the semantic-correspondence or semantic-difference premise for a comparison, explanation, translation, naming, or other bounded-use claim. The nearest non-use is substitution on the strength of the Bridge alone. The Bridge creates no scope result, model-use crossing, local system-role kind, assignment occurrence, Work, evidence authority, status transfer, U-kind admission, publication, or other subject relation. This use boundary is a declaration or description qualifier; it is neither a participant nor profile identity and grants no specific use.
 
 **Non-optional occurrence identity and recurrence rule.** `BridgeOccurrenceIdentityRule` identifies the occurrence by the exact endpoint cells together with the exact profile. For an asymmetric kind, the ordered source-to-receiving tuple is identity-bearing and an inverse relation requires another profile and directed occurrence. For a symmetric kind, swapping only the readable presentation of the same canonical endpoint pair does not create another occurrence. A changed endpoint or changed relation-semantic profile identifies another candidate.
 
-A Bridge is non-recurrent for one fixed canonical endpoint tuple and exact profile: at most one occurrence has that identity. Repeated tests, assertions, descriptions, Cards, registry rows, or publications neither split nor repeat it. A later applicability or as-of basis changes the profile and therefore opens another occurrence candidate. If a claimed lapse and resumption cannot be represented by an endpoint or profile change, stop at `missing Bridge recurrence basis` rather than inventing two occurrences with one identity. Changed proposed use, direction, rule, tolerance, evidence path, reliance disposition, assurance claim, Card, registry entry, publication, form, or carrier never reidentifies or recurs the fixed Bridge.
+A Bridge is non-recurrent for one fixed canonical endpoint tuple and exact profile: at most one occurrence has that identity. Repeated tests, assertions, descriptions, Cards, registry rows, or publications neither split nor repeat it.
+
+A later applicability or as-of basis changes the profile and therefore opens another occurrence candidate. If a claimed lapse and resumption cannot be represented by an endpoint or profile change, stop at `missing Bridge recurrence basis` rather than inventing two occurrences with one identity. Changed proposed use, direction, rule, tolerance, evidence path, reliance disposition, assurance claim, Card, registry entry, publication, form, or carrier never reidentifies or recurs the fixed Bridge.
 
 #### F.9:4.2 - Judge a bounded use separately
 
-Once exact Bridge `b` obtains, state the proposed use in ordinary language before introducing FPF terms. Name:
+Once Bridge `b` obtains, state the proposed use in ordinary language before introducing FPF terms. Name:
 
 - `u`: what the reader proposes to compare, substitute, translate, publish, or otherwise do;
 - `d`: the exact source-to-receiving direction for that use;
@@ -132,7 +140,9 @@ For ordinary evidence reliance, recover the descriptive A.10 evidence-provenance
 
 Use B.3 only when an actual named assurance claim about the proposed use is current. Require its result for the same bounded assurance use; a non-positive disposition stops or narrows that use. A direct domain rule may require the claim, but the Bridge, display, consequence, or A.10 disposition does not create it.
 
-Neither an A.10 passing disposition nor a B.3 `AssuranceResult` with `disposition=supported-for-use` is legal, policy, or deontic authorization. If authorization is needed, recover it under its direct pattern. If a later claim says the use happened, recover the actual Work, assertion episteme, publication occurrence, direct relation, operation application, or other object under its own pattern; the `u` designation in the ClaimGraph names the proposed use and is not that occurrence.
+Neither an A.10 passing disposition nor a B.3 `AssuranceResult` with `disposition=supported-for-use` is legal, policy, or deontic authorization. If authorization is needed, recover it under its direct pattern.
+
+If a later claim says the use happened, recover the actual Work, assertion episteme, publication occurrence, direct relation, operation application, or other object under its own pattern; the `u` designation in the ClaimGraph names the proposed use and is not that occurrence.
 
 ### F.9:5 - Minimal vocabulary
 
@@ -163,7 +173,7 @@ A Bridge kind classifies the direct semantic relation tested by a profile. It sa
 4. **Partial-overlap** - the senses have a non-empty intersection, while each has cases excluded by the other. The relation is symmetric.
 5. **Disjoint** - the senses have no common admissible case under the stated readings. The relation is symmetric.
 
-For inclusion, a narrower-to-broader proposed use is usually easier to justify than the reverse, but neither direction follows from the relation alone. A broader-to-narrower proposal normally needs refined endpoint cells and a separately tested Bridge plus a separately warranted bounded-use claim.
+For inclusion, a narrower-to-broader proposed use is usually easier to justify than the reverse, but neither direction follows from the relation alone. State and warrant the bounded-use claim for a proposed broader-to-narrower use separately. If it needs narrower endpoint meanings to succeed, refine the cells and test the resulting Bridge. A reverse use can also be ruled out on the existing Bridge.
 
 #### F.9:6.2 - Cross-family relation kinds
 
@@ -176,7 +186,7 @@ These kinds state semantic correspondence across different `senseFamily` reading
 
 ### F.9:7 - Evidence about relation and use
 
-Evidence must answer the question it actually bears on:
+Evidence must answer the question it bears on:
 
 | Evidence question | What the evidence may support | What it cannot establish |
 | --- | --- | --- |
@@ -184,17 +194,25 @@ Evidence must answer the question it actually bears on:
 | Does the Bridge suit `<u,d,r,t>`? | affirmative or negative polarity of the exact C.2.1 bounded-use claim | authorization or performance of the use |
 | May the reader rely on that claim now? | an A.10 local `RelianceDisposition`; when an actual named assurance claim is current, its B.3 `AssuranceResult` for the same bounded use | the Bridge occurrence, legal permission, or a receiving occurrence |
 
-`CL` may summarize evidence strength for a stated correspondence: `0` contradicted, `1` weakly comparable, `2` bounded support with explicit counterexamples, and `3` matched stated invariants with no current material counterexample. It is optional and never serves as a use threshold. A `CL=3` label does not make a type-structure use suitable; the separate claim must still name the rule and tolerance, and reliance must still pass under A.10 or B.3.
+`CL` may summarize evidence strength for a stated correspondence: `0` contradicted, `1` weakly comparable, `2` bounded support with explicit counterexamples, and `3` matched stated invariants with no current material counterexample. It is optional and never serves as a use threshold.
 
-Observed losses, unit differences, counterexamples, and invariant checks can supply grounds for a relation or bounded-use claim. Use an A.10 path when provenance or reliance must remain replayable, including the ordinary reliance required by §4.2; use a Card when reusable packaging is warranted under §8. The proposed use's permitted-loss tolerance belongs in its ClaimGraph. A loss observation can change without reidentifying either the fixed Bridge or the bounded-use claim; it may instead reopen the claim's polarity or the current reliance disposition.
+A `CL=3` label does not make a type-structure use suitable; the separate claim must still name the rule and tolerance, and reliance must still pass under A.10 or B.3.
+
+Observed losses, unit differences, counterexamples, and invariant checks can supply grounds for a relation or bounded-use claim. Use an A.10 path when provenance or reliance must remain replayable, including the ordinary reliance required by §4.2; use a Card when reusable packaging is warranted under §8.
+
+The proposed use's permitted-loss tolerance belongs in its ClaimGraph. A loss observation can change without reidentifying either the fixed Bridge or the bounded-use claim; it may instead reopen the claim's polarity or the current reliance disposition.
 
 ### F.9:8 - Bridge occurrence, description, Card, and publication
 
 Recover and, when needed, individuate the direct relation before describing it. A Bridge may obtain without any assertion, description, Card, registry row, or publication.
 
-A Bridge occurrence description is constituted independently under C.2.1 from its complete interpreted claim content, the already individuated occurrence as EntityOfConcern, and its effective interpretation rules (`ReferenceScheme`). Its content and rules satisfy the C.2.1:4.1.2 ranges; each endpoint cell retains its own scheme and exact local sense. A proposal may instead be a modal C.2.1 episteme whose EntityOfConcern is the admitted direct Bridge relation kind and whose ClaimGraph designates proposed endpoints and profile; it supplies no positive occurrence reference and makes no relation obtain.
+A Bridge occurrence description is constituted independently under C.2.1 from its complete interpreted claim content, the already individuated occurrence as EntityOfConcern, and its effective interpretation rules (`ReferenceScheme`). Its content and rules satisfy the C.2.1:4.1.2 ranges; each endpoint cell retains its own scheme and exact local sense.
 
-Use a Bridge Card only when durable reuse, delayed handoff, evidence review, audit, publication, or costly reversal makes reusable packaging worthwhile. A particular filled Card's claim-bearing account can be the description episteme when its C.2.1 identity supports that exact use. Identify its particular expression separately from the reusable layout rules. `PublicationExpressionRelation` states which claim content can be recovered from the expression for the bounded use, and `PublicationFormConformanceRelation` states whether it follows the selected Card form. That expression witnesses the form-mediated `PublicationFormExpressionRelation`; use the same expression for any carrier-bearing claim relied on for availability. When availability matters, publish one selected description/Card edition through E.24.PUB: its `EpistemePublicationRelation` occurrence, particular expression, reusable form, and independently identified physical or digital carrier remain distinct from the selected episteme and from the Bridge.
+A proposal may instead be a modal C.2.1 episteme whose EntityOfConcern is the admitted direct Bridge relation kind and whose ClaimGraph designates proposed endpoints and profile; it supplies no positive occurrence reference and makes no relation obtain.
+
+Use a Bridge Card only when durable reuse, delayed handoff, evidence review, audit, publication, or costly reversal makes reusable packaging worthwhile. A particular filled Card's claim-bearing account can be the description episteme when its C.2.1 identity supports that exact use. Identify its particular expression separately from the reusable layout rules. `PublicationExpressionRelation` states which claim content can be recovered from the expression for the bounded use, and `PublicationFormConformanceRelation` states whether it follows the selected Card form. That expression witnesses the form-mediated `PublicationFormExpressionRelation`; use the same expression for any carrier-bearing claim relied on for availability.
+
+When availability matters, publish one selected description/Card edition through E.24.PUB: its `EpistemePublicationRelation` occurrence, particular expression, reusable form, and independently identified physical or digital carrier remain distinct from the selected episteme and from the Bridge.
 
 ```text
 BridgeCard:
@@ -213,7 +231,9 @@ BridgeCard:
   CardReferenceScheme: EpistemeInterpretationScheme, byValue // rules interpreting this description/Card's complete claims
 ```
 
-For `ClaimMode: actual`, the description/Card episteme's exact EntityOfConcern is the already individuated Bridge occurrence. It may package the Bridge assertion, one or more bounded-use propositions, their evidence and polarity, the descriptive A.10 evidence-provenance path, the independently established direct relations it cites, and local disposition, or the exact B.3 `AssuranceResult` when an actual named assurance claim is current, plus currentness and nearest non-use. Its C.2.1 identity is not the occurrence identity.
+For `ClaimMode: actual`, the description/Card episteme's exact EntityOfConcern is the already individuated Bridge occurrence.
+
+In actual mode, the description/Card may package the Bridge assertion, one or more bounded-use propositions, their evidence and polarity, the descriptive A.10 evidence-provenance path, the independently established direct relations it cites, and local disposition, or the exact B.3 `AssuranceResult` when an actual named assurance claim is current, plus currentness and nearest non-use. Its C.2.1 identity is not the occurrence identity.
 
 For `ClaimMode: candidate` or `negative`, no positive occurrence reference exists. The modal description/Card episteme's EntityOfConcern is the admitted F.9 direct `Bridge` relation kind; its ClaimGraph designates the proposed endpoints and profile. `candidate` says the proposed Bridge may obtain; `negative` says its predicate does not obtain. Any bounded-use proposition in the same graph keeps its own polarity. Completing, approving, registering, or publishing the description/Card creates no Bridge.
 
@@ -239,7 +259,7 @@ When a state, metric, option, causal reading, or viability claim crosses the sem
 1. **Exact endpoints first.** A Bridge has exactly two F.17 `SchemeSenseCell` participants.
 2. **No context object.** Semantic context is recovered from endpoint content and is not a relation participant.
 3. **Different context is not enough.** Different projections trigger the question but do not establish the relation.
-4. **Profile contains relation semantics only.** Receiving use, direction, use rule, loss tolerance, polarity, reliance, authorization, and receiving objects are absent from profile identity.
+4. **Profile contains relation semantics only.** The proposed use, its direction, its correspondence rule, loss tolerance, polarity, reliance, authorization, and receiving objects are absent from profile identity.
 5. **Obtaining before occurrence reference.** A positive Bridge reference appears only after the fixed predicate is true and its dependencies are present.
 6. **Use claim is separate.** Every proposed use names `u`, `d`, `r`, `t`, and polarity in a C.2.1 claim about the exact Bridge.
 7. **Reliance is separate.** A.10 says whether ordinary evidence supports relying on the bounded-use claim. When an actual named assurance claim is current, B.3 supplies its bounded `AssuranceResult`. Neither answer comes from F.9 or the Card.
@@ -266,15 +286,19 @@ The labels below are readable aliases. An actual case resolves exact F.17 cells 
 
 #### F.9:12.0 - Two display glossaries
 
-This constructed case supplies its complete local meanings. Display scheme A has the closed value domain `{0, 1, 2}` and uses `high` exactly for value `2`. Display scheme B has the same closed domain and uses `high` exactly for values `1` and `2`. These sentences are the complete glossary definitions for this case; no claim about a real measurement scale or acceptance status is made.
+In this constructed case, display scheme A has the closed value domain `{0, 1, 2}` and uses `high` exactly for value `2`. Display scheme B has the same closed domain and uses `high` exactly for values `1` and `2`. These sentences are the complete glossary definitions for this case; no claim about a real measurement scale or acceptance status is made.
 
 Cell A is `<scheme A by value, high, value = 2>`; cell B is `<scheme B by value, high, value = 1 or value = 2>`. The different sense claims give different semantic-context projections. Each glossary definition directly supports its cell's exact claim under that scheme, so its F.17 `LocalSenseBasisRelation` can be cited separately.
 
 Profile P declares `Narrower-than`, oriented A → B. Its relation condition is proper inclusion of the admitted values; it applies only to the two complete definitions printed above. The Boolean test is `{2} ⊂ {1, 2}`: `0` belongs to neither set, `1` only to B's set, and `2` to both. The closed domain and both membership rules are its required dependencies; an absent or unresolved rule stops the test. All dependencies are present and the test is true, so the exact Bridge b obtains for these cells and P.
 
-Now propose two uses. For the first, `u` is to explain that every A-high value is B-high; `d` is A → B; `r` is membership implication for each value in the closed domain; `t` permits no counterexample. The C.2.1 claim about b is affirmative. For the second, `u` is to replace B-high by A-high in the same explanation; `d` is B → A; `r` again requires membership implication for every value; `t` again permits no counterexample. Value `1` defeats that rule, so this claim is negative while b remains unchanged.
+Now propose two uses. For the first, `u` is to explain that every A-high value is B-high; `d` is A → B; `r` is membership implication for each value in the closed domain; `t` permits no counterexample. The C.2.1 claim about b is affirmative.
 
-For reliance on this bounded explanation, the A.10 descriptive account cites the two exact glossary definitions, their independently established cell-basis relations, and the complete three-value comparison. Those inputs supply the evidence required by these membership rules; `pass` is limited to this explanation of the printed definitions. No actual named assurance claim is current. The first result is one obtaining Bridge and two separately warranted use claims, not a published glossary, an operational classification or performed Work. No Card is needed for this one-case explanation.
+For the second use, `u` is to replace B-high by A-high in the same explanation; `d` is B → A; `r` again requires membership implication for every value; `t` again permits no counterexample. Value `1` defeats that rule, so this claim is negative while b remains unchanged.
+
+For reliance on this bounded explanation, the A.10 descriptive account cites the two exact glossary definitions, their independently established cell-basis relations, and the complete three-value comparison. Those inputs supply the evidence required by these membership rules; `pass` is limited to this explanation of the printed definitions. No actual named assurance claim is current.
+
+The result for this example is one obtaining Bridge and two separately warranted use claims, not a published glossary, an operational classification or performed Work. No Card is needed for this one-case explanation.
 
 Sections 12.1–12.4 are application sketches. Their external source labels and profile placeholders must be replaced by exact cells, rules, dependencies and evidence before an actual positive Bridge or passing reliance is claimed.
 
@@ -284,7 +308,7 @@ A service team resolves two exact cells: the ITIL sense of an availability targe
 
 The team next proposes use `u-slo-check`: compare one observation result with the target. Direction `d-slo` is observation-to-target; rule `r-slo` requires the same quantity kind, aligned windows, and the stated unit conversion; tolerance `t-slo` permits the named rounding loss but no quantity-kind change. A C.2.1 claim with EntityOfConcern `b-slo-obs` states affirmative polarity for `<u-slo-check,d-slo,r-slo,t-slo>`.
 
-Because this is an ordinary bounded evidence use and no assurance claim is made, the team recovers the descriptive A.10 evidence-provenance path for the observation record, checks the independently established direct relations it cites, and states `RelianceDisposition=pass` only for `u-slo-check`. That supports reliance within its boundary. It does not make the SLO fulfilled, authorize acceptance, or prove that comparison Work occurred.
+Because this is an ordinary bounded evidence use and no assurance claim is made, the team recovers the descriptive A.10 evidence-provenance path for the observation record, checks the independently established direct relations it cites, and states `RelianceDisposition=pass` only for `u-slo-check`. The team may therefore rely on the comparison claim within that boundary. The disposition does not establish SLO fulfilment, authorize acceptance, or prove that comparison Work occurred.
 
 #### F.9:12.2 - Behavioral participant and access role
 
@@ -292,15 +316,21 @@ An exact `Partial-overlap` Bridge obtains between a BPMN participant sense and a
 
 When a later claim uses the RBAC source word *role*, apply `E.10.ROLE` and first say whether it concerns access, permission, authority, a work-facing classification, an assignment, or performed Work. For access, permission, or authority, use the direct pattern for that relation. Use A.2.8.PER for granted permission while keeping actual access separate. If access wording still hides the subject or relation, use A.6.P:4.11a; if the participants and predicate are clear but no direct pattern defines the relation, return A.6.RCD `missing-governor[direct access relation]`.
 
-A work-facing classification separately requires an admitted System, one exact local system-role kind with its `KindSignature`, and the C.3.2 classification judgment under A.2 and C.3. Use F.4 only when the receiving use separately needs a `SystemRoleKindDescription` episteme, and F.5 only when it needs a durable designation. An assignment claim then separately identifies an occurrence of a directly declared species under `U.SystemRoleAssignment` through A.2.1.
+A work-facing classification requires an admitted System, one exact local system-role kind with its `KindSignature`, and the C.3.2 classification judgment under A.2 and C.3. Use F.4 only when the receiving use needs a `SystemRoleKindDescription` episteme, and F.5 only when it needs a durable designation.
 
-If performed Work is also claimed, recover every exact actual performer through A.13 and use A.15.1 to identify the dated Work, exact Method, time, and containing System independently. Use F.6 only when the Bridge account or receiving use expressly represents precise assignment-bound attribution through the same obtaining assignment already established by A.13, and the direct case fact links that exact Work-assignment pair. Missing or failed F.6 alone leaves independently admitted Work intact. If the same finding invalidates a premise consumed by A.13/A.15.1 admission, recheck that premise and its dependent conclusions under F.6:4.2. The Bridge, bounded-use claim, and reliance result establish none of these facts.
+An assignment claim separately identifies an occurrence of a directly declared species under `U.SystemRoleAssignment` through A.2.1.
+
+If performed Work is also claimed, recover every exact actual performer through A.13 and use A.15.1 to identify the dated Work, exact Method, time, and containing System independently.
+
+Use F.6 only when the Bridge account or receiving use explicitly represents precise assignment-bound attribution through the same obtaining assignment already established by A.13, and the direct case fact links that exact Work-assignment pair. Missing or failed F.6 alone leaves independently admitted Work intact. If the same finding invalidates a premise consumed by A.13/A.15.1 admission, recheck that premise and its dependent conclusions under F.6:4.2. The Bridge, bounded-use claim, and reliance result establish none of these facts.
 
 #### F.9:12.3 - Subtype notions in one structural row
 
-The endpoint senses are `OWL2:SubClassOf` under a cited OWL profile and curated-taxonomy `is-a` under one named taxonomy edition. The Bridge profile states `Equivalence` and makes its direct relation predicate true only when both endpoint meanings use compatible class-level reasoning and satisfy the stated acyclicity and anti-symmetry conditions. When those facts and dependencies are current, the exact Bridge obtains.
+The endpoint senses are `OWL2:SubClassOf` under a cited OWL profile and curated-taxonomy `is-a` under one named taxonomy edition. To test `Equivalence`, align the domain and class interpretation, compare which inclusions each sense admits, and test the relevant intensional criteria in §6.1. If the profile also requires acyclicity and antisymmetry, check both. When the full equivalence test passes and its dependencies are current, the Bridge obtains.
 
-A second premise is still required. The C.2.1 claim names the proposed type-structure row, its source-to-receiving direction, the rule that preserves the three invariants, and zero material-loss tolerance. Only an affirmative current claim with passing A.10 reliance, or, when an actual named assurance claim is current, a B.3 `AssuranceResult` for the same use with `disposition=supported-for-use`, supports relying on the row. A contradicted relation invariant makes the Bridge predicate false; a use-specific tolerance failure can instead make the bounded-use claim negative while the Bridge remains unchanged.
+A second premise is still required. The C.2.1 claim names the proposed type-structure row, its source-to-receiving direction, the rule that preserves the three invariants, and zero material-loss tolerance. Only an affirmative current claim with passing A.10 reliance, or, when an actual named assurance claim is current, a B.3 `AssuranceResult` for the same use with `disposition=supported-for-use`, supports relying on the row.
+
+A contradicted relation invariant makes the Bridge predicate false; a use-specific tolerance failure can instead make the bounded-use claim negative while the Bridge remains unchanged.
 
 #### F.9:12.4 - Setpoint versus service target
 
@@ -311,10 +341,10 @@ A second premise is still required. The C.2.1 claim names the proposed type-stru
 | ID | Anti-pattern | Symptom | Repair |
 | --- | --- | --- | --- |
 | AP-1 | String-equals becomes sense-equals | Same spelling is used as proof of identity. | Resolve the exact cells and test the least-committing relation profile. |
-| AP-2 | Profile as use licence | Direction, use rule, or tolerated loss is placed inside profile identity. | Keep only relation semantics in the profile; state `<u,d,r,t>` in a separate C.2.1 claim. |
+| AP-2 | Profile as use licence | The direction, rule or tolerated loss of a proposed use is placed inside profile identity. | Keep only relation semantics in the profile; state `<u,d,r,t>` in a separate C.2.1 claim. |
 | AP-3 | Bridge-alone substitution | “A corresponds to B, therefore use A as B.” | Require both the obtaining Bridge and an affirmative bounded-use claim, then check A.10 or B.3 reliance. |
 | AP-4 | Symmetry grants two directions | An `Equivalence` Bridge is treated as two approved substitutions. | State and test each proposed use direction separately. |
-| AP-5 | Inclusion grants the reverse use | A broader sense is silently substituted for a narrower one. | Refine the endpoint senses and test the reverse relation and bounded use independently. |
+| AP-5 | Inclusion grants the reverse use | A broader sense is silently substituted for a narrower one. | Test the reverse use on its own rule and loss tolerance. If a positive use requires refined endpoint meanings or an inverse relation, test that new Bridge separately. |
 | AP-6 | Assessment score grants use | `CL=3` is cited instead of the exact rule, tolerance, and reliance path. | Treat the score as optional evidence shorthand; write and warrant the bounded-use claim. |
 | AP-7 | Loss note becomes tolerance | An observed difference is treated as automatically acceptable. | Put observed loss in evidence and the accepted maximum in the claim's `t`. |
 | AP-8 | Card creates relation or permission | An approved or published card is cited as obtaining or authorization. | Test the Bridge independently and recover authorization under its direct governor. |
@@ -328,7 +358,7 @@ A second premise is still required. The C.2.1 claim names the proposed type-stru
 
 ### F.9:14 - Reasoning primitives
 
-These are conceptual judgements, not work-enactment, card-completion, registry, publication, permission, or authorization rules.
+These conceptual judgements do not supply work-enactment, card-completion, registry, publication, permission, or authorization rules.
 
 #### F.9:14.1 - Direct Bridge occurrence
 
@@ -346,7 +376,7 @@ iff
   and requiredDependencies(P) are present.
 ```
 
-No proposed use, direction, use-specific rule, loss tolerance, claim polarity, reliance result, or card is a component of `P`.
+The proposed use, its direction, its rule and tolerated loss, the claim's polarity, the reliance result and the Card are outside `P`. An asymmetric relation retains its endpoint orientation in `P`.
 
 #### F.9:14.2 - Bounded-use proposition
 
@@ -397,7 +427,7 @@ A claim about an actual receiving object needs the participants or arguments, ob
 
 #### F.9:14.6 - Direction guard
 
-Relation symmetry or orientation does not select `d`. Each proposed direction receives its own bounded-use claim. For an inclusion relation, a broader-to-narrower proposal normally requires refined endpoint senses and a separately tested Bridge; it cannot borrow safety from the inverse reading.
+Relation symmetry or orientation does not select `d`. Each proposed direction receives its own bounded-use claim. For inclusion, a broader-to-narrower use needs its own grounds. If it requires refined meanings, test their Bridge separately. A reverse use can be rejected while the original Bridge stands.
 
 #### F.9:14.7 - Chained-use guard
 
@@ -426,7 +456,7 @@ The card concerns the admitted direct Bridge relation kind and places proposed e
 
 * **A.10.** Use it for the descriptive evidence-provenance path, the independently established direct relations it cites, and local `RelianceDisposition` for ordinary bounded evidence use.
 * **B.3.** Use B.3 only after an actual named assurance claim is current; it states the bounded `AssuranceResult` or non-positive disposition and does not create the claim, authorization, or use.
-* **E.10.ROLE, A.2, C.3, F.4, F.5, A.13, A.15.1, A.2.1, and F.6.** Use E.10.ROLE first when source wording leaves *role* ambiguous. Use A.2 and C.3 for the local system-role kind and any separate System-classification judgment. Use F.4 only when a description of that kind is current, and F.5 only when its durable naming is current. Recover each exact actual performer through A.13 and admit dated Work independently through A.15.1. A.2.1 governs the assignment species and obtaining occurrence already required by the A.13 core. Add F.6 only when the receiving Bridge use expressly consumes precise assignment-bound attribution through that same assignment. A Bridge establishes none of these facts.
+* **E.10.ROLE, A.2, C.3, F.4, F.5, A.13, A.15.1, A.2.1, and F.6.** When source wording leaves *role* ambiguous, use E.10.ROLE first. Use A.2 and C.3 for the local system-role kind and any separate System-classification judgment. Use F.4 only when a description of that kind is current, and F.5 only when its durable naming is current. Recover each exact actual performer through A.13 and admit dated Work independently through A.15.1. A.2.1 governs the assignment species and obtaining occurrence already required by the A.13 core. Add F.6 only when the receiving Bridge use explicitly relies on precise assignment-bound attribution through that same assignment. A Bridge establishes none of these facts.
 * **F.8.** A mint-or-reuse decision may consume an obtaining Bridge plus a separately warranted bounded-use claim; it does not strengthen either.
 * **A.2.6.** Scope translation may use an obtaining Bridge only together with an affirmative claim naming the exact direction, scope-correspondence rule, and loss tolerance. Use A.2.6 for the translated scope and membership.
 * **A.6.1.** Use it to identify any actual operation application. The `u` designation in a Bridge claim names a proposed use and is not an application binding.
@@ -484,7 +514,7 @@ The card concerns the admitted direct Bridge relation kind and places proposed e
 Use this five-part script:
 
 1. Find the two exact local senses.
-2. Say what semantic relation holds and test whether that Bridge obtains.
+2. State the proposed correspondence or difference and test it. Report whether the Bridge obtains, is ruled out or remains unresolved.
 3. State the proposed use separately: action, direction, rule, tolerated loss, and polarity.
 4. Check whether current evidence or assurance supports relying on that claim; recover authorization separately if needed.
 5. If the use happened, identify the actual object and apply the relevant pattern to the claim about it. Make a card only when reuse is worth the maintenance.
@@ -503,7 +533,7 @@ The observation sense can bear a semantic relation to the target sense without b
 
 #### F.9:19.3 - Show: access-control lane
 
-A process team and an access-control team both use `operator`. An obtaining overlap Bridge plus an affirmative, warranted label-use claim can support one glossary row. It establishes no access, permission, authority, local system-role kind, assignment, performer, or Work. Recover whichever fact is actually claimed under its direct pattern; preserve the source term *access-control role* only when referring to the external scheme.
+A process team and an access-control team both use `operator`. An obtaining overlap Bridge plus an affirmative, warranted label-use claim can support one glossary row. It establishes no access, permission, authority, local system-role kind, assignment, performer, or Work. Recover whichever fact is claimed under its direct pattern; preserve the source term *access-control role* only when referring to the external scheme.
 
 #### F.9:19.4 - Show: episteme lane
 
@@ -512,15 +542,15 @@ An actual card can package the relation claim, bounded-use claim, evidence path,
 ### F.9:20 - Bias-Annotation
 
 
-* **Governance bias.** The pattern adds a separate use claim and reliance check. Mitigation: keep them in ordinary sentences when durable packaging has no payoff.
-* **Architecture bias.** Typed relation profiles can look heavier than synonym prose. Mitigation: the five-part script begins with the practical action and introduces exact terms only where they stop a real overread.
-* **Ontology and episteme bias.** F.9 resists global meaning claims and keeps claims separate from their subject. Mitigation: explicit Bridges still permit practical cross-context comparison.
-* **Pragmatic bias.** Conservative separation can feel slower than reusing a mapping table. Mitigation: a fixed Bridge can support many independently stated uses without being reidentified.
-* **Didactic bias.** An explanation using only internal nouns can obscure the action. Mitigation: every use starts by saying what a person will do, what rule they will follow, and what result would make them stop.
+* **Governance bias.** A separate use claim and reliance check add work. Keep them in ordinary sentences when durable packaging has no payoff.
+* **Architecture bias.** Typed relation profiles can look heavier than synonym prose. The five-part script begins with the practical action and introduces exact terms only where they stop a real overread.
+* **Ontology and episteme bias.** F.9 resists global meaning claims and keeps claims separate from their subject. Explicit Bridges permit practical cross-context comparison.
+* **Pragmatic bias.** Conservative separation can feel slower than reusing a mapping table. A fixed Bridge can support many independently stated uses without being reidentified.
+* **Didactic bias.** An explanation using only internal nouns can obscure the action. Every use starts by saying what a person will do, what rule they will follow, and what result would make them stop.
 
 ### F.9:21 - Conformance Checklist
 
-An F.9 use conforms iff:
+A positive Bridge claim conforms if and only if it meets the applicable conditions below. Apply the further conditions for a use, assurance, Card or publication when it is proposed. When no positive Bridge can be asserted, give the applicable outcome in §4.1.
 
 1. both endpoints resolve to exact F.17 `SchemeSenseCell` values;
 2. their semantic-context projections differ;
@@ -529,7 +559,7 @@ An F.9 use conforms iff:
 5. the profile applies, its Boolean predicate is true, and its dependencies are present before a positive occurrence is cited;
 6. every proposed use is a separate C.2.1 claim naming `u`, `d`, `r`, `t`, polarity, and effective scheme;
 7. observed loss stays in evidence while permitted loss stays in the bounded-use claim;
-8. current ordinary reliance uses the exact A.10 branch for the same bounded use; when an actual named assurance claim is current, use its exact B.3 `AssuranceResult`;
+8. current ordinary reliance uses the A.10 branch for the same bounded use; when an actual named assurance claim is current, use its B.3 `AssuranceResult` for that use;
 9. no reliance or assurance statement is read as authorization;
 10. any actual receiving object is recovered under its subject pattern;
 11. description episteme, Card, registry record, E.24.PUB publication occurrence, form, and carrier remain distinct from Bridge occurrence and receiving-use occurrence;
@@ -548,7 +578,7 @@ An F.9 use conforms iff:
 
 ### F.9:23 - Rationale
 
-Cross-context comparison is unavoidable, but the truth of a semantic relation and the suitability of one action are different claims. Putting direction, a use rule, and tolerated loss into `BridgePredicateProfile` would reidentify the relation whenever the proposed use changed. Putting them in a separate C.2.1 claim lets one Bridge remain fixed while several uses are affirmed, rejected, narrowed, or reopened independently.
+Cross-context comparison is unavoidable, but the truth of a semantic relation and the suitability of one action are different claims. Putting a proposed use's direction, rule and tolerated loss into `BridgePredicateProfile` would reidentify the relation whenever the proposed use changed. Putting them in a separate C.2.1 claim lets one Bridge remain fixed while several uses are affirmed, rejected, narrowed, or reopened independently.
 
 A.10 or B.3 can reopen reliance without erasing the relation. A card can travel without becoming the relation. A proposed use can be warranted without being authorized or performed. These boundaries preserve practical reuse and make each failure local and repairable.
 
@@ -565,7 +595,11 @@ A.10 or B.3 can reopen reliance without erasing the relation. A card can travel 
 
 #### F.9:25.1 - Minimal truthful card
 
-A reusable description/Card states its mode and exact C.2.1 identity. An actual one names its already individuated Bridge; a candidate or negative one names the admitted direct Bridge relation kind and modally designates proposed endpoints, profile, and polarity in its ClaimGraph. When it packages a proposed use, it states `u`, `d`, `r`, `t`, polarity, observed loss, evidence, currentness, nearest non-use, and the exact A.10 disposition or, when an actual named assurance claim is current, its B.3 `AssuranceResult`. Missing relation facts are never repaired by filling more fields. If availability matters, E.24.PUB publishes the selected episteme edition for one declared audience and bounded use through its independently governed publication occurrence, form, and carrier.
+A reusable description/Card states its mode and exact C.2.1 identity. An actual one names its already individuated Bridge; a candidate or negative one names the admitted direct Bridge relation kind and modally designates proposed endpoints, profile, and polarity in its ClaimGraph.
+
+When the description or Card packages a proposed use, it states `u`, `d`, `r`, `t`, polarity, observed loss, evidence, currentness, nearest non-use, and the exact A.10 disposition or, when an actual named assurance claim is current, its B.3 `AssuranceResult`. Missing relation facts are never repaired by filling more fields.
+
+If availability matters, E.24.PUB publishes the selected episteme edition for one declared audience and bounded use through its independently governed publication occurrence, form, and carrier.
 
 #### F.9:25.2 - One occurrence, several claims and descriptions
 

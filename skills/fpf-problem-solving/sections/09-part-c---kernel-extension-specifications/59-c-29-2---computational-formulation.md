@@ -12,15 +12,15 @@ The practical question is: **What should be represented, and how will the availa
 
 **The object being developed** is a computational construction for a stated question: represented quantities or state, computational rules, and a way of obtaining and interpreting the requested result. *Computational formulation* names this work. The construction may leave evaluation order to a solver or describe a stochastic or continuing process. Its account can be a short derivation, pseudocode or a program with an explanation; these are ways to communicate the construction, not additional required records.
 
-**Intended reader.** A practitioner who can state the working question and read its subject mathematics, and who needs to recover, construct or commission the computation. Elementary arithmetic and following a sequence of instructions suffice for the first case. A numerical or quantum-modeling case additionally supplies its relevant mathematical assumptions locally; developing a production solver still needs that discipline's preparation.
+**Intended reader.** A practitioner who can state the working question and read its subject mathematics, and who needs to recover, construct or commission the computation. Elementary arithmetic and following a sequence of instructions suffice for the first case. A numerical or quantum-modeling case additionally supplies its mathematical assumptions locally; developing a production solver still needs that discipline's preparation.
 
-Computational thinking is the wider practice. This pattern covers formulation: represented inputs and state, computational rules, a way to obtain and interpret the output, and the argument and resource account needed for its use. Algorithm design, numerical analysis, programming-language design, learning and distributed computation supply deeper construction methods. This body is not a complete repertoire for those disciplines.
+Computational thinking is the wider practice. This pattern covers formulation: represented inputs and state, computational rules, a way to obtain and interpret the output, and the argument and resource account needed for its use. Algorithm design, numerical analysis, programming-language design, learning and distributed computation supply deeper construction methods.
 
 **Family relation.** C.29 groups methods for constructing, transferring and realizing interpretable mathematical accounts. C.29.2 contributes a computational formulation by composition and result use; it does not inherit every step or recording option of C.29. C.29.1 supplies a needed result-transfer argument. C.29.3 connects a computation with a system that prepares, performs and exposes its result. Enter this pattern directly when the working question is already available.
 
-**First useful result.** Return a formulation with an applicable way to obtain and interpret the requested result under stated conditions, or a demonstrated obstruction and the particular construction still needed. A justified restriction, error bound or resource rejection may finish the current question.
+**First useful result.** Return a formulation with an applicable way to obtain and interpret the requested result under stated conditions, or a demonstrated obstruction and the construction still needed. A justified restriction, error bound or resource rejection may finish the current question.
 
-**Ordinary non-use.** Use an already adequate local calculation or implementation directly when its inputs, operations and result are understood. Open C.29.1 for an unsettled transfer between accounts, C.29.3 for an unsettled execution correspondence, or the relevant subject method when that is the only missing contribution.
+**Ordinary non-use.** Use an already adequate local calculation or implementation directly when its inputs, operations and result are understood. Open C.29.1 for an unsettled transfer between accounts, C.29.3 for an unsettled execution correspondence, or the subject method when that is the only missing contribution.
 
 ### C.29.2:2 - Problem
 
@@ -29,16 +29,16 @@ Knowing a condition that the answer satisfies does not always tell a practitione
 Three failures make this gap expensive:
 
 - A representation identifies cases that require different answers. No later procedure using only that representation can recover the missing distinction without another input.
-- An operation such as “solve”, “update” or “sample” hides the very construction that is unavailable. Giving it a name does not make it elementary or obtainable.
+- An operation such as “solve”, “update” or “sample” hides the construction that is unavailable. Giving it a name does not make it elementary or obtainable.
 - A procedure is assessed under the wrong semantics or cost model. Exact integers, fixed-width words and rounded values have different operations; a single arithmetic instruction may manipulate a growing number of bits.
 
-The repair is to connect the requested answer to an actual construction, then follow the construction's meaning and costs. It need not start by writing software. A hand calculation, an invariant or a storage count can locate the decisive obstacle first.
+The repair is to connect the requested answer to a construction, then follow the construction's meaning and costs. It need not start by writing software. A hand calculation, an invariant or a storage count can locate the decisive obstacle first.
 
 ### C.29.2:3 - Forces
 
 | Force | Choice the practitioner must make |
 | --- | --- |
-| Answer specification and obtaining a result | Preserve what counts as an answer while finding operations that can actually produce one. |
+| Answer specification and obtaining a result | Preserve what counts as an answer while finding operations that can produce one. |
 | Sufficient state and affordable representation | Retain distinctions needed by later steps without storing the whole history by default. |
 | Familiar algorithm and problem-specific structure | Reuse an understood construction when applicable; exploit special structure when its gain warrants another argument. |
 | Exactness and useful approximation | Match error to the receiving question instead of treating every real number as exactly available or every approximation as adequate. |
@@ -63,7 +63,7 @@ Identify an input distinction that would change the answer. If two such inputs h
 
 #### C.29.2:4.2 - Choose represented state and operations together
 
-Choose data in which the relevant next operation can be expressed. Explain what each stored value means, how an input initializes it, and how a returned value will be interpreted. The same mathematical quantity may be represented by an integer, an interval, a symbolic expression or another subject-appropriate object; the operations must match that choice.
+Choose data in which the next operation can be expressed. Explain what each stored value means, how an input initializes it, and how a returned value will be interpreted. The same mathematical quantity may be represented by an integer, an interval, a symbolic expression or another subject-appropriate object; the operations must match that choice.
 
 Construct the state from what the continuation needs. In a sequential procedure this often includes a control position and intermediate values. For each proposed next step, ask what it reads, changes and preserves. If two histories reach the same stored state but require different continuations, recover the omitted condition or summary. Use A.3.3 for the underlying state-and-continuation construction; keeping every past observation is only one possible repair.
 
@@ -84,7 +84,7 @@ When the connection is not yet known, work on the missing operation rather than 
 3. Retain the intermediate information needed to join the contributions. If an operation overwrites a value still needed later, save it or change the ordering.
 4. State how the joined result satisfies the original answer condition, then try a case that changes a material assumption.
 
-This is a way to expose and develop a construction, not a universal algorithm-discovery guarantee. Recurrence construction, search, optimization, numerical discretization and other techniques have their own subject methods. Use C.39 to find or develop a missing way; use C.40 when a workable change-and-test operation is already available and branching search is the live difficulty.
+This is a way to expose and develop a construction. Recurrence construction, search, optimization, numerical discretization and other techniques have their own subject methods. Use C.39 to find or develop a missing way; use C.40 when a workable change-and-test operation is already available and branching search is the live difficulty.
 
 For a still-missing contribution, return a substantive task: the available inputs and operations, the result or intermediate relation needed, the conditions it must preserve, and what would count as a useful solution. “Find a better algorithm” is usually too weak. After a dense-state rejection, for example: “Given this circuit family and this requested observable, provide a representation and update/readout procedure with a justified error bound and a peak-memory estimate below the stated budget; do not materialize the full amplitude array in a hidden conversion.”
 
@@ -94,13 +94,13 @@ For a proposed computation, follow a small case from supplied inputs through the
 
 Then supply the argument appropriate to the claimed range. For a loop, find a statement relating the current state to the work already completed and the answer still sought. Show that initialization establishes it, each iteration preserves it, and the stopping condition makes the desired conclusion follow. This statement is the loop invariant. Separately explain why the loop reaches that condition, for example through a nonnegative integer that decreases at every iteration. For a recursive construction, explain its initial cases, the smaller calls and how their results give the caller's answer.
 
-These are useful proof forms, not compulsory syntax for every computation. A direct finite composition may need only substitution through its operations. A randomized procedure needs its probability argument. For an estimated statistic, state the sampling assumptions and connect the claimed error or uncertainty to the sample count. For a continuing interaction, state the preservation or response property required and the assumptions under which progress is claimed; global termination may be the wrong requirement.
+The proof form depends on the computation. A direct finite composition may need only substitution through its operations. A randomized procedure needs its probability argument. For an estimated statistic, state the sampling assumptions and connect the claimed error or uncertainty to the sample count. For a continuing interaction, state the preservation or response property required and the assumptions under which progress is claimed; global termination may be the wrong requirement.
 
-Keep the extent of the conclusion honest. A trace establishes that traced case. A proof using exact arithmetic establishes the stated abstract procedure under exact arithmetic. A finite precision implementation or an executing device requires the relevant additional comparison. Tests can expose failures and support selected empirical claims; a few passing tests do not prove an unrestricted input claim.
+Limit the claim to what the argument or observation supports. A trace establishes that traced case. A proof using exact arithmetic establishes the stated abstract procedure under exact arithmetic. A finite precision implementation or an executing device requires the additional comparison. Tests can expose failures and support selected empirical claims; a few passing tests do not prove an unrestricted input claim.
 
 #### C.29.2:4.5 - Resolve accuracy and computational limits that affect the use
 
-A well-defined mathematical object need not have the finite representation or uniform procedure being assumed. Ask what information the input representation actually provides and which operations are effective on it. Replacing “all real numbers” by finite strings, an evaluation oracle or a family of increasingly accurate approximations changes the computational problem. If a computability or impossibility claim matters, obtain the applicable subject argument rather than inferring it from a failed attempt.
+A well-defined mathematical object need not have the finite representation or uniform procedure being assumed. Ask what information the input representation provides and which operations are effective on it. Replacing “all real numbers” by finite strings, an evaluation oracle or a family of increasingly accurate approximations changes the computational problem. If a computability or impossibility claim matters, obtain the applicable subject argument rather than inferring it from a failed attempt.
 
 For a finite search domain with an effective test, explicit enumeration can provide a terminating baseline. It may be too expensive, but it separates an obtainable procedure from an open construction. For an unbounded search, failure to find an answer in the allotted time leaves a different result; it does not establish nonexistence.
 
@@ -116,13 +116,13 @@ Begin with the resource that can decide the choice. For a stored array, derive h
 
 For several simultaneously live arrays, add their payloads and the workspace, indices, temporary copies and other storage used by the proposed algorithm. Peak memory concerns what must coexist, not the total amount ever allocated. A payload lower bound may already reject a design; a payload that fits is not yet a complete fit argument.
 
-In a model of discrete operations, count how often each operation is performed and what each performance costs. State the size parameters. An instruction count with one unit per arithmetic operation answers a different question from bit operations on growing integers, memory transfers or elapsed time on a particular machine. Explain the dominant term before using asymptotic notation. A bound for one representation is not a lower bound for every algorithm solving the mathematical problem.
+In a model of discrete operations, count how often each operation is performed and what each performance costs. State the size parameters. An instruction count with one unit per arithmetic operation answers a different question from bit operations on growing integers, memory transfers or elapsed time on a machine. Explain the dominant term before using asymptotic notation. A bound for one representation is not a lower bound for every algorithm solving the mathematical problem.
 
-A computation described by continuous dynamics may need a cost relation for duration and accuracy rather than an instruction count; obtain the relevant estimate with C.29.3.
+A computation described by continuous dynamics may need a cost relation for duration and accuracy rather than an instruction count; obtain the estimate with C.29.3.
 
 Include input conversion, preparation computation and output production when they can dominate the result. Precomputation can be worthwhile across many uses, but say how many uses amortize it. A compact internal state does not make an explicitly requested exponential-size output cheap to enumerate.
 
-When resources fail, change one of the actual causes: represented structure, stored precision, retained data, procedure, admitted problem class, requested answer or proposed execution resources. Recompute for the chosen alternative. An exact structural reduction, a lossy approximation and a different cost model are different changes. C.29.1 supplies a needed consequence-transfer argument; C.29.3 assesses whether the resulting execution arrangement supports the selected computation.
+When resources fail, change one of the causes: represented structure, stored precision, retained data, procedure, admitted problem class, requested answer or proposed execution resources. Recompute for the chosen alternative. An exact structural reduction, a lossy approximation and a different cost model are different changes. C.29.1 supplies a needed consequence-transfer argument; C.29.3 assesses whether the resulting execution arrangement supports the selected computation.
 
 #### C.29.2:4.7 - Return the sufficient result and its next use
 
@@ -161,13 +161,13 @@ This explains the elementary operations and their order. A parser or caller admi
 | `increment, double, stop`; `x0 = 3` | `(0,3)` | `(1,4)` | `(2,8)` | `8` |
 | `double, increment, stop`; `x0 = 3` | `(0,3)` | `(1,6)` | `(2,7)` | `7` |
 
-**Argument.** After `p` arithmetic steps, `x` is the result of applying exactly the first `p` instructions to `x0`, and `0 <= p <= n`. Initialization gives the empty composition. Each branch applies the next specified operation and advances the position, preserving that statement. While an arithmetic instruction remains, `n-p` decreases by one and cannot be negative. At `p=n` the next instruction is `stop`, so the returned integer is the requested composition. With `P = [stop]`, the same procedure returns `x0` immediately.
+**Argument.** After `p` arithmetic steps, `x` is the result of applying exactly the first `p` instructions to `x0`, and `0 <= p <= n`. Initialization gives the empty composition. Each branch applies the next specified operation and advances the position, preserving that statement. While an arithmetic instruction remains, `n-p` decreases by one and cannot be negative. At `p=n` the next instruction is `stop`, so the returned integer is the requested composition. With `P = [stop]`, the same procedure returns `x0`.
 
 **Cost changes with representation.** Counting one step for each arithmetic instruction and the final `stop` gives `n+1` instruction steps, apart from validation and input/output costs. That does not make arbitrary-size arithmetic constant-time. Represent the magnitude in binary and retain the sign separately. Let `b0` be the binary length of `|x0|`, counting zero as one bit. Each operation increases the magnitude's length by at most one, so the current magnitude needs at most `b0+n` bits, plus one sign bit. The position and stored program need additional space.
 
-With simple materialized binary arithmetic that scans or copies the current digits, an arithmetic step on `b` bits costs at most proportional to `b`. Summing the growing lengths gives an arithmetic-work upper bound proportional to `n*b0 + n^2` for that implementation, before any separately material program-access costs. A representation that treats doubling differently requires another estimate. On a fixed-width integer implementation, enough increments or doublings can instead overflow; the exact-integer argument then requires a range restriction or a different realization.
+With simple materialized binary arithmetic that scans or copies the current digits, an arithmetic step on `b` bits costs at most proportional to `b`. Summing the growing lengths gives an arithmetic-work upper bound proportional to `n*b0 + n^2` for that implementation. Add program-access costs when they matter to the estimate. A representation that treats doubling differently requires another estimate. On a fixed-width integer implementation, enough increments or doublings can instead overflow; the exact-integer argument then requires a range restriction or a different realization.
 
-**What became possible.** The executor can perform any calculation in this finite instruction class by receiving another sequence. [Turing's 1936 construction, §§5–7](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf), makes encoded computation rules available to an interpreter; this small case uses that constructive idea. Turing's universal-machine result concerns a much richer simulation construction. Adding jumps or continuing input to this case changes its progress and cost questions and requires their own argument.
+**What became possible.** The executor can perform any calculation in this finite instruction class by receiving another sequence. [Turing's 1936 construction, §§5–7](https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf), makes encoded computation rules available to an interpreter; this small case uses that constructive idea. Turing's universal-machine result concerns a richer simulation construction. Adding jumps or continuing input to this case changes its progress and cost questions and requires their own argument.
 
 #### C.29.2:5.2 - Turn a root condition into a bounded approximation
 
@@ -225,7 +225,7 @@ Starting with all pairs `(1,0)`, apply the Hadamard operation `(a,b) -> ((a+b)/s
 
 An entangling gate can invalidate that representation. The two-qubit state with nonzero amplitudes `1/sqrt(2)` at `00` and `11` and zeros at `01` and `10` cannot be one product: nonzero `alpha_0*alpha_1` and `beta_0*beta_1` would make all four factors nonzero, contradicting a zero cross term. The product procedure must therefore reject that extension or receive a richer representation and update algorithm. Even in the product class, requesting all `2^50` amplitudes explicitly restores an exponential output count.
 
-**First result and next contribution.** The original dense proposal is ruled out. The factorized procedure answers the separately stated restricted question; it is not a replacement for an unspecified general circuit. To continue, recover the actual input-state and gate family, requested observable or samples, and tolerated error, then obtain and cost an applicable domain algorithm. The general method supplied the count and the construction question; quantum simulation supplies the representations and update/readout algorithms.
+**First result and next contribution.** The original dense proposal is ruled out. The factorized procedure answers the separately stated restricted question; it is not a replacement for an unspecified general circuit. To continue, recover the input-state and gate family, requested observable or samples, and tolerated error, then obtain and cost an applicable domain algorithm. The general method supplied the count and the construction question; quantum simulation supplies the representations and update/readout algorithms.
 
 #### C.29.2:5.4 - Obtain different computations from the same circuit relations
 
@@ -259,7 +259,7 @@ With `h = 0.1 s`, its first step gives `v_C_next = 3 V`, from which the readouts
 
 **Consistent initialization is another problem.** In the voltage-given question, the prescribed `v_C(0)=2 V` and `v_s(0)=12 V` force `v_R(0)=10 V`, `i(0)=1 A` and `dv_C/dt(0)=10 V/s`. An initializer's guess `i(0)=0 A` may be replaced while finding these values. Making `i(0)=0 A` an additional required condition instead contradicts the relations. The capacitor's prescribed initial voltage represents an initial physical condition in this model. A starting guess guides numerical search; the resulting numerical approximation is assessed against the initial constraints and required accuracy.
 
-For a larger differential-algebraic model, obtain the needed consistent-initialization, tearing or index-reduction Method from that discipline. Return the actual equations, givens, initial constraints and requested readouts with the unresolved question. A numerical initialization failure alone does not establish that the constraints are inconsistent; the contradiction in this small case follows from the displayed algebra.
+For a larger differential-algebraic model, obtain the needed consistent-initialization, tearing or index-reduction Method from that discipline. Return the equations, givens, initial constraints and requested readouts with the unresolved question. A numerical initialization failure alone does not establish that the constraints are inconsistent; the contradiction in this small case follows from the displayed algebra.
 
 #### C.29.2:5.5 - Construct a probability estimate with a specified error guarantee
 
@@ -282,7 +282,7 @@ Taking n = 2,000 makes the bound 0.05 at epsilon = 0.05. The guarantee concerns 
 
 This construction consumes 2,000 observations and counter updates. Each counter needs 11 bits to represent values through 2,000; the output can be retained as the rational s/2,000. Include the cost of obtaining an observation when that cost matters. This conservative bound already supplies a finite construction; a sharper concentration argument can reduce the required observations when that saving is worth obtaining.
 
-**Change the sampling premise.** If every read repeats one sampled bit B, then p_hat=B for every n. At p=0.5, its error is always 0.5, so the requested guarantee fails. More reads of that retained bit do not repair the construction. Obtain a sampling operation with the required independence, or recompute the error bound from the dependence actually supplied.
+**Change the sampling premise.** If every read repeats one sampled bit B, then p_hat=B for every n. At p=0.5, its error is always 0.5, so the requested guarantee fails. More reads of that retained bit do not repair the construction. Obtain a sampling operation with the required independence, or recompute the error bound from the dependence supplied.
 
 ### C.29.2:6 - Bias-Annotation
 
@@ -293,7 +293,7 @@ This construction consumes 2,000 observations and counter updates. Each counter 
 | Exact-arithmetic default | Name representable values and operation semantics before transferring a proof to finite precision. |
 | Successful-example confidence | Preserve the traced result but obtain the argument needed for a larger input claim. |
 | Cheap-operation assumption | Recount when operand length, data movement or requested output size grows. |
-| Representation inevitability | Reject the failed representation at its demonstrated scope; test a concrete alternative rather than claiming the problem is impossible. |
+| Representation inevitability | Reject the failed representation at its demonstrated scope; test an alternative rather than claiming the problem is impossible. |
 
 ### C.29.2:7 - Conformance Checklist
 
@@ -316,26 +316,26 @@ Apply these checks to the computational claim being made.
 | Misuse | Repair |
 | --- | --- |
 | “Solve the constraints” is the algorithm | Supply an applicable solver or construct the search/update procedure, with its input class and result guarantee. |
-| Store only the current answer estimate | Recover the control position, bounds, pending work or other information the next operation actually needs. |
+| Store only the current answer estimate | Recover the control position, bounds, pending work or other information the next operation needs. |
 | A branch chooses an exactly known sign of an arbitrary real value | Explain how that sign is obtainable from the available representation; use a justified enclosure or return the unresolved comparison. |
-| The invariant holds, so the loop finishes | Supply the separate progress argument or state the continuing behavior actually intended. |
+| The invariant holds, so the loop finishes | Supply the separate progress argument or state the continuing behavior intended. |
 | A tiny equation residual proves a tiny answer error | Connect residual to output error under the applicable conditioning or other subject argument. |
-| One matrix operation costs one step | Expand the operation count and storage for the actual matrix dimensions and representation. |
+| One matrix operation costs one step | Expand the operation count and storage for the matrix dimensions and representation. |
 | The dense array fails, so no simulation is possible | Retain the dense-allocation rejection; examine the needed output and an applicable alternative algorithm. |
 | A smaller numeric type is an exact compression | State the changed precision and establish the error consequence. |
 | A reference simulator defines what the physical system did | Retain the computational result and use C.29.3 for preparation, execution and result-reading correspondence. |
 
 ### C.29.2:9 - Consequences
 
-The practitioner can now tell whether the computation answers the question, answers a useful restricted question, or still lacks a particular construction. Procedure recovery can expose missing information before implementation, and a representation-level estimate can reject an infeasible design before substantial resource use.
+The practitioner can now tell whether the computation answers the question, answers a useful restricted question, or still lacks a construction. Procedure recovery can expose missing information before implementation, and a representation-level estimate can reject an infeasible design before substantial resource use.
 
-The cost is making the answer-producing connection explicit. For an ordinary small calculation this may take only a few lines. A large or delicate problem can require substantial algorithmic and numerical work; this pattern helps identify that work and connect its results, but does not remove it. Retaining a simple reference procedure may cost extra implementation effort while providing an intelligible comparison for an optimized candidate.
+The cost is making the answer-producing connection explicit. For an ordinary small calculation this may take only a few lines. A large or delicate problem can require substantial algorithmic and numerical work; this pattern helps identify that work and connect its results. Retaining a simple reference procedure may cost extra implementation effort while providing an intelligible comparison for an optimized candidate.
 
 ### C.29.2:10 - Architectural Rationale
 
 **Why formulate around the answer and operations together?** Starting with a data structure is convenient when it already supports the required query. Otherwise it can discard the needed distinction or force an unnecessarily expensive computation. Starting only with an answer predicate has the opposite defect: it can hide unavailable operations. Connecting the two makes each choice answerable to the same use.
 
-**Why recover a known construction before inventing another?** Its procedure and argument may already resolve the question at low cost. A new representation or specialized algorithm becomes worthwhile when a concrete input property, repeated use, precision requirement or resource limit changes the result. A direct formula, a library routine, exhaustive enumeration and a new algorithm are genuine alternatives; none wins merely by looking more formal or sophisticated.
+**Why recover a known construction before inventing another?** Its procedure and argument may already resolve the question at low cost. A new representation or specialized algorithm becomes worthwhile when an input property, repeated use, precision requirement or resource limit changes the result. A direct formula, a library routine, exhaustive enumeration and a new algorithm are alternatives; none wins merely by looking more formal or sophisticated.
 
 **Why keep a simple procedure when a faster one exists?** A small exact baseline exposes meaning and can provide expected results for selected implementation tests. Bisection's interval reduction is easy to inspect; a more elaborate solver can reduce expensive evaluations. The choice depends on the present cost of evaluation and the needed guarantee. A reference calculation is not required if an already adequate construction supplies those answers.
 
@@ -349,17 +349,17 @@ The cost is making the answer-producing connection explicit. For an ordinary sma
 
 #### C.29.2:11.1 - Meaning and correctness before a larger claim
 
-The [Dafny tutorial, “Loop Invariants” and “Termination”](https://dafny.org/latest/OnlineTutorial/guide#loop-invariants) demonstrates constructing a preserved relation to the answer and proving progress separately. **Adapt** that practice in :4.4 and :5.1: a short manual argument can establish the finite interpreter's stated semantics; a few traces cannot establish its whole input class. Mechanized checking is a serious alternative when program complexity or assurance needs justify its specification and proof effort. Reopen the choice when the procedure or required assurance becomes too large for the retained argument.
+The [Dafny tutorial, “Loop Invariants” and “Termination”](https://dafny.org/latest/OnlineTutorial/guide#loop-invariants) demonstrates constructing a preserved relation to the answer and proving progress separately. **Adapt** that practice in :4.4 and :5.1: a short manual argument can establish the finite interpreter's stated semantics; a few traces cannot establish its whole input class. Mechanized checking is an alternative when program complexity or assurance needs justify its specification and proof effort. Reopen the choice when the procedure or required assurance becomes too large for the retained argument.
 
 #### C.29.2:11.2 - Choose numerical methods by their guarantees and costs
 
 The [SciPy bisection documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.bisect.html) states the bracketing premises and its absolute-plus-relative termination criterion. **Adopt** explicit tolerance selection in :4.5; library defaults need not match the receiver's requirement.
 
-[The documented Brent routine](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html) is a serious alternative combining bracketing, bisection and interpolation. **Adapt** the choice in :5.2: retain bisection for its simple bound and small exact case, while considering Brent's method when function evaluations are costly. The deliberate trade-off is a simpler argument for potentially more evaluations. Reopen for a changed function class, tolerance, evaluation cost or finite precision failure.
+[The documented Brent routine](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html) is an alternative combining bracketing, bisection and interpolation. **Adapt** the choice in :5.2: retain bisection for its simple bound and small exact case, while considering Brent's method when function evaluations are costly. The trade-off is a simpler argument for potentially more evaluations. Reopen for a changed function class, tolerance, evaluation cost or finite precision failure.
 
 #### C.29.2:11.3 - Cost the represented objects, not the problem label
 
-[Qiskit Aer's simulator documentation](https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.AerSimulator.html) supplies a concrete comparator: dense state-vector storage, alternative simulation representations, and controls that discard matrix-product-state coefficients. **Adopt** representation-sensitive counting in :4.6 and **reject** treating a truncation setting as an accuracy guarantee for an arbitrary observable. The :5.3 payload arithmetic and restricted product-state construction expose the relevant gain directly. The suitable general simulator remains unselected until the state family, operations, output and error are known. Reopen the calculation when those conditions or the actual algorithm change.
+[Qiskit Aer's simulator documentation](https://qiskit.github.io/qiskit-aer/stubs/qiskit_aer.AerSimulator.html) supplies a comparator: dense state-vector storage, alternative simulation representations, and controls that discard matrix-product-state coefficients. **Adopt** representation-sensitive counting in :4.6 and **reject** treating a truncation setting as an accuracy guarantee for an arbitrary observable. The :5.3 payload arithmetic and restricted product-state construction expose the gain. The suitable general simulator remains unselected until the state family, operations, output and error are known. Reopen the calculation when those conditions or the algorithm change.
 
 #### C.29.2:11.4 - Let executing capabilities change the formulation
 
@@ -384,8 +384,8 @@ The [SciPy bisection documentation](https://docs.scipy.org/doc/scipy/reference/g
 - **Uses A.3.3:** constructs sufficient state and permitted continuations, including control and retained history when required.
 - **Uses A.6.3.RT:** constructs expressions under available notation rules and checks the content of a representation change. Notation- or language-design methods supply missing rules.
 - **Uses C.39 and C.40 by their entry conditions:** obtains a missing way, or develops branching search when a workable change-and-test operation is available.
-- **Uses subject Methods:** algorithm design, numerical analysis, symbolic computation and other computational disciplines supply their specific constructions, proofs and cost models. C.16 and physical-modeling methods supply measurement and empirical conditions when the requested result depends on them.
+- **Uses subject Methods:** algorithm design, numerical analysis, symbolic computation and other computational disciplines supply their constructions, proofs and cost models. C.16 and physical-modeling methods supply measurement and empirical conditions when the requested result depends on them.
 - **Coordinates with A.3.1, A.6.1, B.1.5 and B.1.6:** Method identity, an explicitly needed operation declaration, composition of identified Methods and resource accounting for performed Work remain under those patterns. A description of a procedure is not a claim that its execution occurred.
-- **Uses C.2.1, A.10 and B.3 for the corresponding claims:** C.2.1 governs episteme identity, A.10 governs evidence use, and B.3 governs assurance of the particular result and reliance being asserted.
+- **Uses C.2.1, A.10 and B.3 for the corresponding claims:** C.2.1 governs episteme identity, A.10 governs evidence use, and B.3 governs assurance of the result and reliance being asserted.
 
 ### C.29.2:End

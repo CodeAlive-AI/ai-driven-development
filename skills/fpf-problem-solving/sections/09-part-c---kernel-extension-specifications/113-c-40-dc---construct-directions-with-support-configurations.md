@@ -54,7 +54,7 @@ For every serious proposal, explain what the subject or supported arrangement co
 
 When a pattern is the proposed address, cite its complete current body and recover the action-bearing contribution from it. Do not substitute its title, PatternID, a summary card, or a list of topics for that contribution. Keep the body's relevant applicability, assurance, and stopping conditions; the direction need not copy the entire source.
 
-If the receiving claim depends on a Method or MethodDescription, preserve its established relation under [A.3.1](../03-first-principles-framework-readme/_index.md) and [A.3.2](../03-first-principles-framework-readme/_index.md). A pattern is a MethodDescription only after A.3.2 establishes an already admitted Method as its exact EntityOfConcern and at least one substantive claim about that Method as a way of doing. Otherwise use its content as pattern guidance and leave that stronger relation unasserted. In neither case does reading or publishing the description establish the subject's capability.
+If the receiving claim depends on a Method or MethodDescription, preserve its established relation under [A.3.1](../03-first-principles-framework-readme/_index.md) and [A.3.2](../03-first-principles-framework-readme/_index.md). A pattern is a MethodDescription only after A.3.2 establishes an already admitted Method as its EntityOfConcern and at least one substantive claim about that Method as a way of doing. Otherwise use its content as pattern guidance and leave that stronger relation unasserted. In neither case does reading or publishing the description establish the subject's capability.
 
 For a person, connect the contribution to representative later Work. “Use A.15.9 to formulate and rely on a bounded outside-practice result in evidence review” can specify a contribution; “finish A.15.9” cannot specify capability or transfer. A capability or transfer claim needs qualified evidence about this person, the later Work and permitted support; obtain that result from the relevant capability and subject practice before relying on it.
 
@@ -67,9 +67,9 @@ Distinguish two questions:
 - **Different contribution premises:** directions address different worthwhile problems, results, uses, or acceptance expectations. Preserve those differences for the receiving comparison.
 - **Different ways of obtaining one contribution:** candidates hold the result premise stable but vary the supporting arrangement. For organization-change decisions, use an applicable organizational comparison Method when that whole same-result question is current.
 
-For a separately selected decision-design inquiry, an applicable alternative-generation Method can develop an explicit set of decision alternatives from the directions returned here. That Method can retain alternatives for different live formulations; same-result parity is not its universal entry condition.
+For a separately selected decision-design inquiry, an applicable alternative-generation Method can develop a set of decision alternatives from the directions returned here. That Method can retain alternatives for different live formulations; same-result parity is not its universal entry condition.
 
-Retain the actual baseline, a smaller repair, a staged direction, or no new development when each answers the inquiry. No change still carries continuing Work, resource use, and exposure. A missing alternative is an honest return; do not invent a weak candidate to make a preferred one win.
+Retain the actual baseline, a smaller repair, a staged direction, or no new development when each answers the inquiry. No change still carries continuing Work, resource use, and exposure. State when an alternative is missing; do not invent a weak candidate to make a preferred one win.
 
 #### C.40.DC:4.4 - Specify the finite change and support configuration
 
@@ -90,7 +90,7 @@ Use direct holder, engineering, operations, organization, provider, safety, and 
 
 When making a finite contribution comparison, use [C.11.CRC](../03-first-principles-framework-readme/_index.md). Compare actual or relied-on `S0`, finite `Delta`, and realizable candidate `S1` under one system boundary, receiving decision, horizon, scenarios, constraints, interactions, transition basis, uncertainty, and evidence window.
 
-Keep four coordinate families visible: useful results; consumed resources; consequences for affected Systems and the distribution of gains and burdens; and explicitly protected conditions. Retain each characteristic's scale and polarity. Do not hide one family in another or average incompatible scales.
+Keep four coordinate families visible: useful results; consumed resources; consequences for affected Systems and the distribution of gains and burdens; and protected conditions. Retain each characteristic's scale and polarity. Do not hide one family in another or average incompatible scales.
 
 For a Pareto-improvement claim, no coordinate in the declared complete set may worsen and at least one must improve under that same basis. Otherwise state only the supported relation, such as beneficial under a stated value judgement, harmful, dominated, non-dominated, or indeterminate. A direction with a possible gain and an unresolved protected condition is not thereby a Pareto improvement or a selected option.
 
@@ -98,7 +98,7 @@ If reachability or another necessary premise is missing, give the conditional co
 
 For a later step, use its stage-specific `S_i`, finite `Delta_i`, and candidate `S_i+1`, not the original baseline by default. `C.40.OP` maintains the resulting finite path or branch account, including each step's burden, reversibility, option effects, and reopen condition. Neither the path nor its separate comparisons select a programme.
 
-#### C.40.DC:4.6 - Return a usable candidate or the exact gap
+#### C.40.DC:4.6 - Return a usable candidate or identify what is missing
 
 An ordinary direction account can say:
 
@@ -124,7 +124,7 @@ One lead is “learn A.15.9.” The direction instead cites the complete [A.15.9
 | --- | --- |
 | Situation | A review decision depends on an outside-practice result, but the available request names only a department, document, or tool. |
 | Move | Inspect an existing answer; use its supported contribution and material limit. Select a further request only when its obtainable contribution warrants the whole acquisition burden; preserve the supplier/receiver judgement boundary. |
-| First result | A useful supported answer with its material limit, a selected worthwhile result request, or an exact blocker. |
+| First result | A useful supported answer with its material limit, a selected worthwhile result request, or a blocker. |
 | Stop/non-use | Finish at the useful answer and its necessary limit; use the direct domain Method when the substantive specialist answer is the whole question. |
 
 The pattern supplies guidance for the proposed contribution, not evidence of Mira's capability. The applicable human-capability and review-domain practices must establish representative performance, support, and transfer.
@@ -142,13 +142,13 @@ Two directions now differ materially:
 
 The candidates do not yet share a qualified same-result comparison: the first proposes development of independent recognition; the second proposes supported result use. The next question is which contribution the receiving review needs and what human-capability or supplier result can qualify the corresponding transition. Combining them creates another candidate whose joint time and support need testing.
 
-The result is two conditional directions, not a learning programme or recommendation. If a selected direction calls for human capability development, an applicable programme-design Method can supply programme candidates and comparison. Within that branch, any requested programme recommendation and authorized programme choice remain separate; only then can an applicable learning-material production Method realize the appropriate Guide. The person can also stop now with the conditional directions and the support limits that matter; an exact support request is a further selected contribution.
+The result is two conditional directions, not a learning programme or recommendation. If a selected direction calls for human capability development, an applicable programme-design Method can supply programme candidates and comparison. Within that branch, any requested programme recommendation and authorized programme choice remain separate; only then can an applicable learning-material production Method realize the appropriate Guide. The person can also stop now with the conditional directions and the support limits that matter; a support request is a further selected contribution.
 
 #### C.40.DC:5.2 - A faster retrieval candidate is not a cost-free improvement
 
-This constructed example stipulates a service unit's actual manual qualification arrangement and an engineering estimate for a possible indexed arrangement over a ninety-day horizon. The result premise is fixed: a source-traceable claim-to-evidence account under the same acceptance criteria. The candidate does not replace independent acceptance. Review capacity and scarce index-maintainer capacity are separate resource coordinates.
+This constructed example stipulates a service unit's manual qualification arrangement and an engineering estimate for a possible indexed arrangement over a ninety-day horizon. The result premise is fixed: a source-traceable claim-to-evidence account under the same acceptance criteria. The candidate does not replace independent acceptance. Review capacity and scarce index-maintainer capacity are separate resource coordinates.
 
-| Finite-comparison coordinate | Actual `S0`: current manual account | Candidate `S1`: indexed account | Qualification and consequence |
+| Finite-comparison coordinate | `S0`: current manual account | Candidate `S1`: indexed account | Qualification and consequence |
 | --- | --- | --- | --- |
 | Result latency | 60 minutes per representative package in the case record. | 40 minutes estimated for the same package class. | Potential improvement, not an observed effect of an implemented change. |
 | Index-maintainer capacity | No index maintenance is needed in this manual configuration. | Two maintenance hours per week are required by the estimate. | A resource increase that cannot be omitted or silently netted against a different person's time saving. |
@@ -156,7 +156,7 @@ This constructed example stipulates a service unit's actual manual qualification
 | Affected-System distribution | Reviewers currently bear the recovery burden. | Some burden moves to the index maintainer. | The recipient of the time saving and bearer of the new burden differ. |
 | Protected conditions | Existing confidentiality and traceability basis. | The proposed index's custody and coverage are not yet qualified. | The protected-condition premise blocks a positive whole-configuration conclusion. |
 
-The finite change is adding and maintaining the index, not merely subtracting twenty minutes. Discarding the index could reverse its future use but would not recover spent setup time. A later model-assisted retrieval candidate would start from whichever configuration is then actually assumed, including its index-maintenance burden; it cannot reuse today's `S0` silently.
+The finite change is adding and maintaining the index, not merely subtracting twenty minutes. Discarding the index could reverse its future use but would not recover spent setup time. A later model-assisted retrieval candidate would start from whichever configuration is then assumed, including its index-maintenance burden; it cannot reuse today's `S0` silently.
 
 The return is a conditional configuration and two decisive questions: can the access owner qualify the proposed custody/use, and can the unit supply setup, verification, and maintenance without violating protected continuing Work? Even if latency improves, the resource increase prevents a no-worsening Pareto claim. C.11.CRC supplies the finite-comparison discipline; `C.40.JF` must qualify the joint premises before a stronger reachability claim. The illustrative numbers establish no measured effectiveness.
 
@@ -172,12 +172,12 @@ An organization already has a stable contribution and acceptance basis, adequate
 
 ### C.40.DC:6 - Bias-Annotation
 
-- **Label concreteness:** naming a course, tool, person, or PatternID feels more specific than the contribution it actually describes.
+- **Label concreteness:** naming a course, tool, person, or PatternID feels more specific than the contribution it describes.
 - **Capability default:** an access or support limitation is treated as a need to develop the holder.
 - **Fragment parity:** a fully supported direction is compared with an advertised fragment.
 - **Benefit-only comparison:** transition, maintenance, distribution, or protected conditions disappear behind a desired gain.
 - **Combination optimism:** attractive components are presumed to work together despite shared capacity or incompatible premises.
-- **Baseline drift:** later steps are compared with the original situation instead of their actual assumed starting configurations.
+- **Baseline drift:** later steps are compared with the original situation instead of their assumed starting configurations.
 - **Learning-route projection:** a prospective contribution path is mistaken for a selected programme or a Guide.
 
 ### C.40.DC:7 - Conformance Checklist
@@ -189,12 +189,12 @@ A conforming direction/support account:
 3. **MUST** preserve established Method/MethodDescription relations when relied on and must not infer them from a title or publication alone.
 4. **MUST** state what makes retained directions materially different and whether their contribution premises are the same or different.
 5. **MUST** identify the finite change, candidate configuration, material supports, prerequisites, constraints, interactions, and transition basis.
-6. **MUST** preserve result, resource, affected-System/distributional, and explicitly protected coordinate families for finite comparison, with each coordinate's declared scale and polarity under a common comparison basis.
+6. **MUST** preserve result, resource, affected-System/distributional, and protected coordinate families for finite comparison, with each coordinate's declared scale and polarity under a common comparison basis.
 7. **MUST** state transition burden, reversibility, and supported or conditional option effects; a later compared step must use its own starting configuration.
 8. **MUST** keep unknown support and ruled-out support different and return the missing owner-qualified result before asserting realizability or joint reachability.
 9. **MUST NOT** claim Pareto improvement when any coordinate in the complete set worsens or its necessary qualification is absent.
 10. **MUST** distinguish a direction or path from a recommendation, choice, programme, Guide, performed Work, or observed effect.
-11. **SHOULD** retain a serious baseline, smaller repair, or no-change alternative and stop when the next missing result belongs elsewhere.
+11. **SHOULD** retain a baseline, smaller repair, or no-change alternative when it answers the inquiry, and stop when the next missing result belongs elsewhere.
 
 ### C.40.DC:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -205,7 +205,7 @@ A conforming direction/support account:
 | Tool versus whole arrangement | The comparison credits one fragment with unprovided support. | Complete the candidate or return the missing support; retain a same-result basis only when it is true. |
 | Two plausible steps equal a path | Joint resources, interactions, and transition conditions are untested. | Use C.40.JF for joint reachability and C.40.OP for the stage-specific path account. |
 | More benefit means Pareto improvement | Resource, distribution, or protection losses are omitted. | Use the complete oriented set under C.11.CRC and state only the warranted relation. |
-| Small means reversible | A small probe can still disclose data, consume scarce access, or close an option. | Name the actual recovery, irreversibility, and permission basis. |
+| Small means reversible | A small probe can still disclose data, consume scarce access, or close an option. | Name the recovery, irreversibility, and permission basis. |
 | Publication means capability | A pattern, programme, or Guide is treated as achieved development. | Obtain the relevant holder-owned performance, transfer, or effect evidence. |
 
 ### C.40.DC:9 - Consequences
@@ -220,7 +220,7 @@ A constructed direction remains a possibility. Realization, authority, programme
 
 A contribution and its support jointly determine what a proposed change means. A course without representative practice, a model without permitted data, or a provider without a usable interface can be a relevant ingredient without being a way to obtain the contribution.
 
-Finite changes and stage-specific baselines make hidden burden visible. They let a receiver retain a useful possibility while identifying the exact condition that prevents a stronger claim, and they prevent a gain at one stage from being counted again in every later step.
+Finite changes and stage-specific baselines make hidden burden visible. They let a receiver retain a useful possibility while identifying the condition that prevents a stronger claim, and they prevent a gain at one stage from being counted again in every later step.
 
 ### C.40.DC:11 - SoTA-Echoing
 
@@ -228,9 +228,9 @@ Finite changes and stage-specific baselines make hidden burden visible. They let
 
 **Best-known line for this use.** Construct the contribution and support together, then apply finite configuration-relative comparison. The applicable organizational Methods supply whole-arrangement construction and comparison when one organization result premise is stable. C.11.CRC supplies actual `S0`, finite change, realizable `S1`, complete coordinates, transition basis, and option effects. This pattern **adapts** their contributions in `:4.3`–`:4.6` for development inquiries that may still retain different contribution premises. Human-capability and other holder practices retain the change mechanisms and evidence.
 
-**Serious alternative and comparison.** A course or product catalogue is cheaper when the missing contribution and all material supports are already known. When they are not, it omits the difference between developing capability and making an existing capability usable. At the bounded effort of the Mira case, two contribution/support descriptions expose different evidence and provider needs; ranking two course brands would not do so. A direct organizational Method supplying the complete same-result arrangement comparison is the stronger alternative once that comparison is the whole question. Use it directly; no additional opportunity-construction pass is needed.
+**Alternative and comparison.** A course or product catalogue is cheaper when the missing contribution and all material supports are already known. When they are not, it omits the difference between developing capability and making an existing capability usable. At the bounded effort of the Mira case, two contribution/support descriptions expose different evidence and provider needs; ranking two course brands would not do so. A direct organizational Method supplying the complete same-result arrangement comparison is the stronger alternative once that comparison is the whole question. Use it directly; no additional opportunity-construction pass is needed.
 
-**Front-end boundary.** [ISO 56007:2023](https://www.iso.org/standard/75068.html) supplies normative guidance for opportunity/concept work before solution development and deployment. Here that boundary supports prospective configurations and truthful gaps; it supplies no missing support, implementation, or effect evidence. A complete cited pattern contribution similarly supplies guidance, not holder capability.
+**Front-end boundary.** [ISO 56007:2023](https://www.iso.org/standard/75068.html) supplies normative guidance for opportunity/concept work before solution development and deployment. Here that boundary supports prospective configurations and gaps; it supplies no missing support, implementation, or effect evidence. A complete cited pattern contribution similarly supplies guidance, not holder capability.
 
 **Trade-off, limits, and reopen.** Recovering the contribution and support takes work; compare that burden with using an adequate existing direction or obtaining the fuller implementation detail needed by the receiving use. The constructed cases demonstrate distinctions, not comparative effectiveness. Reopen the affected move if current holder or configuration practice preserves the contribution, complete consequences, and necessary support with less burden; if a relied-on comparison or source changes; or if a real use reveals a consequential omitted interaction or transition.
 
@@ -245,6 +245,6 @@ Finite changes and stage-specific baselines make hidden burden visible. They let
 - **Supplies C.40.OP:** contribution-bearing finite steps and their stage-specific baselines for retention, paths, or branches.
 - **Returns to human-capability, organization, strategy, AI, engineering, operations, and other direct practices:** their interventions, mechanisms, capability, support, evidence, authority, and realization results.
 - **Returns human programme and Guide work:** The applicable programme-design Method composes and compares programmes; authorized participants choose; the applicable learning-material production Method realizes the selected programme and pattern contributions as a Guide.
-- **Uses C.40.RQ:** local requalification of changed directions or supports. A separately requested advising service retains its actual engagement conditions, established through the applicable professional Method.
+- **Uses C.40.RQ:** local requalification of changed directions or supports. A separately requested advising service retains its engagement conditions, established through the applicable professional Method.
 
 ### C.40.DC:End

@@ -11,7 +11,7 @@ Use this pattern when a proposal names an intended Method whole, such as a metho
 
 Begin with the proposal's intended result, participants and relation claims. Recover the available whole semantics and the guards, burdens, unresolved conditions and selection reason that matter for the receiving use. Test the identity and relation grounds required for the conclusion sought.
 
-The first useful result is deliberately two-branched. If the whole and participant Methods are identified and the required relations are shown to obtain, record the bounded composition result. Otherwise return the prospective account or partial claim supported by the evidence. That account can finish a present design comparison while whole identity or relation truth remains unresolved. Select later realization or testing only when its obtainable contribution warrants the full burden and is feasible.
+The first useful result is two-branched. If the whole and participant Methods are identified and the required relations are shown to obtain, record the bounded composition result. Otherwise return the prospective account or partial claim supported by the evidence. That account can finish a present design comparison while whole identity or relation truth remains unresolved. Select later realization or testing only when its obtainable contribution warrants the full burden and is feasible.
 
 Do not require prior performance of C.32.MWA.PP when equivalent proposal content is already available. Do not treat a coherent description, selected architecture, WorkPlan, tool implementation, or successful first trial as Method construction or identification by itself.
 
@@ -51,7 +51,7 @@ The first error overclaims, the second prevents learning, and the third confuses
 
 ### B.1.5.CM:4 - Solution
 
-B.1.5 supplies the exact composition test. This construction supplies the candidate whole, constituent contributions, interfaces and grounds to which that test applies; it can also return a useful relation account below the whole-Method threshold. Use an already complete B.1.5 result directly rather than reconstructing it.
+B.1.5 supplies the composition test. This construction supplies the candidate whole, constituent contributions, interfaces and grounds to which that test applies; it can also return a useful relation account below the whole-Method threshold. Use an already complete B.1.5 result directly rather than reconstructing it.
 
 Recover the proposed whole's semantics, test whole and participant identity separately from relation truth, and return the branch supported by that evidence.
 
@@ -72,7 +72,7 @@ Recover the proposed whole's semantics, test whole and participant identity sepa
 | --- | --- |
 | use and whole semantics | Intended result or preserved condition and receiving use; the whole semantics needed for the returned claim, including operations or invariant, applicability, participants and any relevant variation, bounds or reidentification conditions. A prospective or partial result keeps missing identity or relation grounds explicit. |
 | participant account | Each subject, kind or status, identity basis or open condition, and proposed contribution. |
-| relation sets | Each load-bearing direct relation, its participants, truth status, grounds and any guard required for its receiving use. |
+| relation sets | Each load-bearing relation, its participants, truth status, grounds and any guard required for its receiving use. |
 | branch verdict | Obtaining composition result, prospective candidate account, or lower return with decisive reason. |
 | prospective content | The guards, adapters, alternatives, recovery, stops, burdens, variation points and unresolved conditions that change the intended contribution or receiving use. |
 | continuation, when selected | Later Work and observations, any required authority, acceptance/failure and reconsideration condition; a realization/test WorkPlan where its coordination needs one. |
@@ -112,23 +112,29 @@ For this selected trial, B.1.5.CM returns a prospective candidate account with a
 
 At each proposed release's `D-21` entry checkpoint, `SafetyReviewer-17` accepts or rejects the entry evidence under `ASG-SafetyReview-17` and `AUTH-SafetyEvidence-17`; `ReleaseDecider-17` then decides branch entry under `ASG-ReleaseDecision-17` and `AUTH-ReleaseDecision-17`. The filled entry case identifies these decisions as `W-SafetyEvidenceDecision-17` and `W-ReleaseDecision-17`.
 
-For closure or recovery, the two decision-makers use the evidence then available to decide safety-evidence acceptance and release, withhold, or next-slot disposition under the applicable assignments and authorities. Each performed later or repeated decision is a distinct dated Work occurrence with its own inputs and result. Neither decision or authority relation substitutes for the other.
+For closure or recovery, the two decision-makers use the evidence then available to decide safety-evidence acceptance and release, withhold, or next-slot disposition under the applicable assignments and authorities. Each performed later or repeated decision is a distinct dated Work occurrence with its inputs and result. Neither decision or authority relation substitutes for the other.
 
-In B2, `TraceReviewer-17` accepts or rejects each AI trace suggestion used by the release branch under `ASG-TraceReview-17` and `PERM-TraceAcceptReject-17`. [The full EC-417 application, §16.9.5](../04-first-principles-framework-architectural-reference/16-fpf-reference-16---big-fpf-storylines.md#fpfreference1695---5-build-the-repertoire-and-criteria-without-preselecting-an-architecture) records the one permission grant and the dated Work `W-TraceAcceptReject-17-01` that returns acceptance in the filled case. The separate relation `PEX-TraceAcceptReject-17-01` connects that dated Work to the permission it exercised. `EV-PEX-TraceAcceptReject-17-01` supplies evidence about this exercise. Each additional used suggestion requires its own dated decision Work and result, confirmation that the permission applies at that time, and its own Work-to-permission exercise relation.
+In B2, `TraceReviewer-17` accepts or rejects each AI trace suggestion used by the release branch under `ASG-TraceReview-17` and `PERM-TraceAcceptReject-17`. [The full EC-417 application, §16.9.5](../04-first-principles-framework-architectural-reference/16-fpf-reference-16---big-fpf-storylines.md#fpfreference1695---5-build-the-repertoire-and-criteria-without-preselecting-an-architecture) records the one permission grant and the dated Work `W-TraceAcceptReject-17-01` that returns acceptance in the filled case. The separate relation `PEX-TraceAcceptReject-17-01` connects that dated Work to the permission it exercised. `EV-PEX-TraceAcceptReject-17-01` supplies evidence about this exercise.
+
+Each additional used suggestion requires its own dated decision Work and result, confirmation that the permission applies at that time, and its own Work-to-permission exercise relation.
 
 If signed evidence is missing at the `D-8` closure checkpoint, withhold release and enter recovery R. In R, preserve the performed-integration record and evidence history. Repeat the evidence comparison and affected verification when evidence arrives by `D0` while the existing evidence and reversibility guards still hold. Record whether early integration is retained, rolled back, or repeated, and the added burden. If closure remains unresolved at `D0`, the release result is withhold/next-slot and this R occurrence ends as a failed B2 trial.
 
 `ASG-TraceReview-17` and `PERM-TraceAcceptReject-17` end at `D0`; continuing safety or release relations extend neither. This trial provides no post-`D0` AI-supported continuation and asserts no later Work or recovery WorkPlan. Unresolved R may motivate separate later planning.
 
-When later non-AI recovery needs coordination, the project may create a new `A.15.2` WorkPlan; `A.15.2` itself does not require planning before every otherwise valid later Work. Planned or unplanned Work would still need its separate qualification/currentness, readiness, assignment, permission/authority, and `A.15.1` occurrence as applicable. These stops preserve all earlier Work and evidence history. A is only a pre-entry alternative.
+When later non-AI recovery needs coordination, the project may create a new `A.15.2` WorkPlan; `A.15.2` does not require planning before every otherwise valid later Work. Planned or unplanned Work would still need its separate qualification/currentness, readiness, assignment, permission/authority, and `A.15.1` occurrence as applicable. These stops preserve all earlier Work and evidence history. A is only a pre-entry alternative.
 
-Acceptance observations include whether each trial respects confidentiality and authority, remains at or below the `D-8` capacity bound, preserves evidence/version correspondence, and reaches a truthful release or recovery result by `D0`. An attempted post-`D0` AI-supported continuation, or an assertion of later Work without a separately admitted `A.15.1` dated Work occurrence, is an explicit stop and failed trial observation. The withhold/next-slot result preserves earlier Work and may motivate later planning. Those observations may support, narrow, split, or reject the account. They do not by themselves identify the whole; `A.3.1` remains the identity owner.
+Acceptance observations include whether each trial respects confidentiality and authority, remains at or below the `D-8` capacity bound, preserves evidence/version correspondence, and reaches a release or recovery result by `D0`. An attempted post-`D0` AI-supported continuation, or an assertion of later Work without a separately admitted `A.15.1` dated Work occurrence, is a stop and failed trial observation.
 
-For this series, a release counts once as a failed trial if it has a capacity or supplier-pinout/integration-bundle mismatch failure or enters R, even if recovery later succeeds; keep all failure reasons. After two distinct failed trials, `ReleaseDecider-17`, within `AUTH-ReleaseDecision-17`, returns B2 for revision or rejects further use. That disposition retains the separate safety decision and grants no authority to revise the account. The immediate confidentiality, assignment, permission and authority stops still apply to the first breach. The existing decision covers at most three trials; a further release needs a new applicable decision.
+The withhold/next-slot result preserves earlier Work and may motivate later planning. Those observations may support, narrow, split, or reject the account. They do not by themselves identify the whole; `A.3.1` remains the identity owner.
+
+For this series, a release counts once as a failed trial if it has a capacity or supplier-pinout/integration-bundle mismatch failure or enters R, even if recovery later succeeds; keep all failure reasons.
+
+After two distinct failed trials, `ReleaseDecider-17`, within `AUTH-ReleaseDecision-17`, returns B2 for revision or rejects further use. That disposition retains the separate safety decision and grants no authority to revise the account. The immediate confidentiality, assignment, permission and authority stops still apply to the first breach. The existing decision covers at most three trials; a further release needs a new applicable decision.
 
 #### B.1.5.CM:5.1 - Finish a Design Comparison Before a Trial Is Available
 
-Suppose an earlier design use asks whether this release-coordination proposal preserves signed-before-closure, confidentiality and the A/B2/R distinctions well enough to compare with another proposal. The current sources support that account, but whole identity and composition relations remain unresolved, and the team has no rig access, allocated effort or trial window. Return the traceable prospective account with those identity and relation limits. The receiving designer can compare the proposals and finish that question on the available content.
+Suppose an earlier design use asks whether this release-coordination proposal preserves signed-before-closure, confidentiality and the A/B2/R distinctions well enough to compare with another proposal. The sources support that account, but whole identity and composition relations remain unresolved, and the team has no rig access, allocated effort or trial window. Return the traceable prospective account with those identity and relation limits. The receiving designer can compare the proposals and finish that question on the available content.
 
 A later opportunity with useful obtainable observations can warrant implementation or a trial and its coordination plan. The already selected three-release case above retains its WorkPlan, observations and stops.
 
@@ -165,7 +171,7 @@ A later opportunity with useful obtainable observations can warrant implementati
 
 ### B.1.5.CM:9 - Consequences
 
-Projects can move from architecture proposal to realization and learning under explicit identity and relation conditions. An established composition and a supported proposal remain distinguishable, and either can support the use for which its grounds are sufficient.
+Projects can move from architecture proposal to realization and learning under identity and relation conditions. An established composition and a supported proposal remain distinguishable, and either can support the use for which its grounds are sufficient.
 
 The cost is a visible open identity or relation question. Some proposed methodologies will remain candidate accounts after useful trials, and some will split into several Methods or a relation structure instead of maturing as one whole.
 
@@ -181,7 +187,7 @@ B.1.5.CM does not depend on applying C.32.MWA.PP first. C.32.MWA.PP is one commo
 | --- | --- | --- |
 | Henderson-Sellers and Ralyté, [Situational Method Engineering review](https://opus.lib.uts.edu.au/handle/10453/13456) | Construction and adaptation of Methods for situations. | Source-local fragment, process, role, and assembly concepts do not establish FPF identity or composition. |
 | Gericke, Eckert, and Stacey, [Elements of a design method](https://doi.org/10.1017/dsj.2022.23) | Intended use, procedure, representation, tool, ecosystem, and adaptation conditions for a coherent proposal. | Conceptual completeness does not prove world-side Method existence or relations. |
-| Current FPF `A.3.1`, `A.22`, `B.1.5`, and `C.32.MWA` | Method identification, selected structures, Method composition, and several-structure synthesis. | B.1.5.CM adds the truthful whole-versus-prospective-account resolution and realization continuation. |
+| Current FPF `A.3.1`, `A.22`, `B.1.5`, and `C.32.MWA` | Method identification, selected structures, Method composition, and several-structure synthesis. | B.1.5.CM adds the whole-versus-prospective-account resolution and realization continuation. |
 
 Reconsider the account when its content fits none of these supported results, when variation defeats its reidentification rule, or when the claimed composition depends only on Work order or co-use.
 

@@ -5,7 +5,7 @@
 
 ### A.3.1.FT:0 - Use This When
 
-Use this pattern when actual Work has supplied evidence in one or more situations and a practitioner must decide whether an admitted Method fits a named situation, where its applicability stops, or whether a supported claim transfers from a source situation family. Begin with the required result and the conditions of the situation in which the Method will be used. For a transfer question, also name the source situation and the claim whose support is being carried into the receiving situation.
+Use this pattern when Work has supplied evidence in one or more situations and a practitioner must decide whether an admitted Method fits a named situation, where its applicability stops, or whether a supported claim transfers from a source situation family. Begin with the required result and the conditions of the situation in which the Method will be used. For a transfer question, also name the source situation and the claim whose support is being carried into the receiving situation.
 
 The first useful result is a bounded assessment of fit, an applicability limit, or transfer, with the evidence used and any missing premise. Identify the Method or candidate status, the situation and required result, relevant actual Work, adaptations and evidence reach. Where the question requires comparison, also distinguish source and receiving situations, matched and changed conditions, and material differences in capability, support, domain results and burdens.
 
@@ -30,7 +30,7 @@ Do not use this pattern to infer practical worth, causal contribution, general e
 
 Methods are often moved by name: a team says that a Method worked in one project, industry, or organization and applies it to another. The label hides the conditions that mattered—project purpose, development phase, technical problem, performer capability, support Systems, direct relations, adaptations, and the domain result being judged.
 
-The reverse inference can also fail. Any adaptation or local failure is treated as evidence that the Method cannot transfer, even when the changed condition, support defect, or altered Method semantics has not been identified. A useful transfer result must show what stayed the same, what changed, what actual Work occurred, and what claim survives.
+The reverse inference can also fail. Any adaptation or local failure is treated as evidence that the Method cannot transfer, even when the changed condition, support defect, or altered Method semantics has not been identified. A useful transfer result must show what stayed the same, what changed, what Work occurred, and what claim survives.
 
 ### A.3.1.FT:2 - Problem
 
@@ -52,7 +52,7 @@ These shortcuts produce confident but unreplayable applicability claims. Practit
 
 ### A.3.1.FT:4 - Solution
 
-Method identity under A.3.1 does not establish fit for a particular use. Assess the required result against relevant actual Work and the conditions under which it occurred. A local fit result can be sufficient for the named decision. To claim transfer or a broader applicability boundary, recover the additional situation evidence and comparison on which that claim depends.
+Method identity under A.3.1 does not establish fit for a use. Assess the required result against relevant Work and the conditions under which it occurred. A local fit result can be sufficient for the named decision. To claim transfer or a broader applicability boundary, recover the additional situation evidence and comparison on which that claim depends.
 
 Preserve Method semantics and status throughout. Compare source and receiving conditions when carrying a claim between them; use a situation capable of testing the asserted limit when qualifying an applicability boundary. Return the supported result at that scope, or the specific missing basis.
 
@@ -87,7 +87,7 @@ Keep the distinctions needed for the selected decision in the assessment and its
 
 #### A.3.1.FT:4.3 - What Changes in Practice
 
-Practitioners can use a sufficient local fit result without arranging an unrelated comparison. When they transfer a claim or qualify an applicability boundary, they can show the relevant source and receiving conditions, actual Work, semantic continuity, discriminating evidence, and the exact claim that survived or failed.
+Practitioners can use a sufficient local fit result without arranging an unrelated comparison. When they transfer a claim or qualify an applicability boundary, they can show the relevant source and receiving conditions, actual Work, semantic continuity, discriminating evidence, and the claim that survived or failed.
 
 A narrow result such as “Fits this decision for this holder and support window; transfer untested” can support a decision to use the Method now while protecting later teams from a universal claim.
 
@@ -109,7 +109,7 @@ The SSFD workplace evidence supplies varied actual-project reports and a decisio
 
 Use Project 11 as a source situation only after the SSFD Method or candidate status, relevant Work evidence, performer and capability facts, support conditions, and relied-on claim are recovered. Use Project 32 as a discriminating unlike situation because the closed-loop relation can challenge a representation or applicability claim. Do not infer that Project 11 preceded Project 32, that the same performers and capabilities were present, or that a difficulty establishes whole-Method failure.
 
-A defensible result may be narrow: Project 11 supplies bounded evidence for one functional-analysis situation; Project 32 raises a question about a broader representation claim. A.3.1.CC can determine whether correction is needed when the relevant claim and evidence are recoverable; a transfer conclusion still requires the receiving Work and comparison basis. The 41-report set broadens the evidence pool but does not establish transfer across every project stratum or causal contribution by SSFD alone.
+A result may be narrow: Project 11 supplies bounded evidence for one functional-analysis situation; Project 32 raises a question about a broader representation claim. A.3.1.CC can determine whether correction is needed when the relevant claim and evidence are recoverable; a transfer conclusion requires the receiving Work and comparison basis. The 41-report set broadens the evidence pool but does not establish transfer across every project stratum or causal contribution by SSFD alone.
 
 #### A.3.1.FT:5.1 - Unlike-Domain and Current-Alternative Probes
 
@@ -130,7 +130,7 @@ While the required release Work is absent, return `missing-performed-work`. Retu
 | Bias | Likely drift | Repair |
 | --- | --- | --- |
 | label-transfer bias | The same Method name is treated as evidence of the same Method and conditions. | Recover Method status, semantics, actual Work, and situation positions. |
-| success-generalization bias | One favourable occurrence becomes a situation-family claim. | Return the narrow fit result and name transfer evidence still missing. |
+| success-generalization bias | One favourable occurrence becomes a situation-family claim. | Return the narrow fit result and name the missing transfer evidence. |
 | uncontrolled-sameness bias | Unrecorded capability, support, and organizational conditions are called matched. | Separate matched, changed, and unknown positions with their bases. |
 | adaptation laundering | Changed reusable semantics are called local tailoring. | Return an A.3.1.MV variant question and preserve both branches. |
 | failure-totalization bias | One difficulty becomes whole-Method failure. | Determine which claim, if any, the evidence contradicts, and identify that claim's situation boundary and correction owner. |
@@ -162,7 +162,7 @@ While the required release Work is absent, return `missing-performed-work`. Retu
 
 ### A.3.1.FT:9 - Consequences
 
-Fit and transfer claims become inspectable and narrow enough to guide real decisions. Practitioners can see which conditions matter, what actual Work supports the result, whether the same Method persisted, and where another situation must reopen the claim.
+Fit and transfer claims become inspectable and narrow enough to guide decisions. Practitioners can see which conditions matter, what actual Work supports the result, whether the same Method persisted, and where another situation must reopen the claim.
 
 The cost is that many plausible transfers end as missing evidence or a smaller applicability envelope. A semantic adaptation may also leave a separate variant to maintain.
 

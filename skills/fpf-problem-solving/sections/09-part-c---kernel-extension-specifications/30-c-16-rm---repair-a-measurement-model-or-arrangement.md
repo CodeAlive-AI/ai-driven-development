@@ -8,11 +8,11 @@
 
 Use this pattern when a measurement disagrees with an expected result or cannot distinguish the cases needed for the work. A detector combines a beam with background light. A voltmeter changes the voltage it measures. A program turns correctly recorded counts and times into an incorrect rate. Each situation offers a different place to repair.
 
-**First useful move.** Put the wanted quantity beside the indication and recover the relation used to connect them. Mark the contribution that prevents the wanted answer. If a detector responds to beam plus background, repeating that reading leaves their separate contributions unknown; a reading with the beam removed can make their difference usable.
+**First useful move.** Put the wanted quantity beside the indication and recover the relation used to connect them. Mark the contribution that prevents the wanted answer. If a detector responds to beam plus background, repeating that reading leaves their separate contributions unknown; a reading with the beam removed can make the difference between beam-on and beam-off readings usable.
 
 The Method selects and carries through a change to a measurement model, its computation or the actual arrangement. The useful result is a corrected interpretation, an adequate changed measurement, a conditional design result or a remaining limitation with its effect on the work. C.16 supplies the measurement, model, performed work and obtained-result meanings.
 
-The examples assume elementary algebra, bounds and units. The subject law, calibration and operating conditions come from the relevant physical or other domain practice. Apply a suitable established correction or repair procedure directly when the fault and applicable remedy are already known. Use the present Method when the choice of what to change remains consequential.
+The examples assume elementary algebra, bounds and units. The subject law, calibration and operating conditions come from the relevant physical or other domain practice. Apply an established correction or repair procedure directly when the fault and applicable remedy are known. Use the present Method when the choice of what to change remains consequential.
 
 ### C.16.RM:2 - Problem
 
@@ -67,7 +67,7 @@ For a suspected computational fault, run a supplied or constructed input whose a
 
 #### C.16.RM:4.3 - Compare changes by their predicted contribution
 
-For each serious available repair, change the corresponding part of the relation and determine what would become knowable. An added parameter can represent a missing effect while introducing an unknown that one reading cannot determine. A physical change can remove the effect or make its influence small enough to bound.
+For each available repair, change the corresponding part of the relation and determine what would become knowable. An added parameter can represent a missing effect while introducing an unknown that one reading cannot determine. A physical change can remove the effect or make its influence small enough to bound.
 
 A difference measurement is useful when the target changes between two observations in a known way while the influences being cancelled remain sufficiently stable. A larger input resistance is useful when the loading relation shows how much it reduces the consequential error. Repeating an unchanged observation needs its own error or dynamics account to support a narrower conclusion.
 
@@ -79,13 +79,13 @@ The needed conclusion sets the reach of diagnosis. Replacing a defective assembl
 
 Keep the target and receiving question fixed while revising the selected contribution. If an alternative target or operating condition is acceptable, make that change part of the receiving decision and derive the relation for the new use.
 
-For a model repair, include the consequential influence and obtain its value, range or relation from available information. An added correction term earns its use through that basis. Carry any remaining uncertainty into the sought result.
+For a model repair, include the consequential influence and obtain its value, range or relation from available information. An added correction term needs that basis. Carry any remaining uncertainty into the sought result.
 
 For a computation repair, correct the operation and recalculate the affected results from retained inputs. Reuse observations whose meaning and conditions still fit. Identify outputs that depended on the incorrect operation so that subsequent comparisons use the repaired result.
 
 For an arrangement change, derive how preparation, interaction, indication and calibration are affected. An attenuator can move a detector out of saturation while introducing an attenuation factor and its uncertainty. A shield can remove ambient light while changing alignment. Retain the conditions that make the new relation appropriate.
 
-A planned change supports a conditional result. Once performed, use the resulting observations and conditions to interpret that measurement. Older observations can still answer their original question or be reinterpreted through a supported revised relation; changing a model now does not supply a new past observation.
+A planned change supports a conditional result. Once performed, use the resulting observations and conditions to interpret that measurement. Older observations can still answer their original question or be reinterpreted through a supported revised relation.
 
 #### C.16.RM:4.5 - Test the repaired contribution at the needed scope
 
@@ -131,9 +131,9 @@ Suppose instead that the shield removes ambient light but transmits a known frac
 
 `I = (r - b)/(g*alpha) = (7.4 - 2)/(2*0.9) = 3 mW.`
 
-If the transmission fraction is unknown, this new reading alone leaves the original beam unresolved. The earlier valid on/off observations still support their result of 3 mW. The shield's changed interaction must be included in any conclusion drawn from the new measurement.
+If the transmission fraction is unknown, this new reading alone leaves the original beam unresolved. The earlier on/off observations still support their result of 3 mW. The shield's changed interaction must be included in any conclusion drawn from the new measurement.
 
-For a question I ≤ 3.2 mW, suppose each on/off reading has an arbitrary additive error between -0.1 and 0.1 mV, while g and the shared background remain fixed. The difference gives 2.9 ≤ I ≤ 3.1 mW, so the bound settles the question. Drift in A between on and off would add a further term. Alternating readings reduces that uncertainty only with a supplied account of the drift; the alternation itself is insufficient.
+For a question I ≤ 3.2 mW, suppose each on/off reading has an arbitrary additive error between -0.1 and 0.1 mV, while g and the shared background remain fixed. The difference gives 2.9 ≤ I ≤ 3.1 mW, so the bound settles the question. Drift in A between on and off would add a further term. Alternating readings reduces that uncertainty only with a supplied account of the drift.
 
 #### C.16.RM:5.2 - Reduce loading enough to settle the question
 
@@ -147,7 +147,7 @@ One option is to determine Rs more closely and correct the loaded reading. Anoth
 
 `9.9*(1 + 0.8/100) ≤ E ≤ 9.9*(1 + 1.2/100),`
 
-so 9.9792 ≤ E ≤ 10.0188 V. The bound settles E ≤ 10.5 V while Rs remains unresolved. The repair earned its place by reducing the unknown resistance's influence on this conclusion.
+so 9.9792 ≤ E ≤ 10.0188 V. The bound settles E ≤ 10.5 V while Rs remains unresolved. The repair reduces the unknown resistance's influence on this conclusion.
 
 Restore a supplied reading-error bound of ±0.1 V for the new meter. The positive factors give:
 
@@ -173,7 +173,7 @@ The useful result is a repaired average rate from existing observations. Repeati
 
 ### C.16.RM:6 - Bias-Annotation
 
-The examples separate influences with simple relations and supplied conditions. Coupled effects, nonlinear response, drift, hysteresis or uncertain model structure can require richer diagnosis and uncertainty Methods. The pattern identifies where those contributions become necessary; it does not supply their complete domain repertoires.
+The examples separate influences with simple relations and supplied conditions. Coupled effects, nonlinear response, drift, hysteresis or uncertain model structure can require richer diagnosis and uncertainty Methods. The pattern identifies where those contributions become necessary. Use the relevant domain Methods for their detailed treatment.
 
 The method favors a repair sufficient for the receiving use. A fault investigation concerned with reliability, causal explanation or a wider operating range can require work beyond restoring one useful reading. Keep that broader question explicit when it governs the effort.
 
@@ -184,7 +184,7 @@ The method favors a repair sufficient for the receiving use. A fault investigati
 - **CC-C16.RM-3 - Choice basis.** Available comparisons, domain relations or proportionate further inquiry support the selected repair.
 - **CC-C16.RM-4 - Target continuity.** The revised arrangement retains the intended target or a stated relation to the accepted changed use.
 - **CC-C16.RM-5 - Dependent results.** Changed models, computations, calibration and observations are carried through the affected interpretation.
-- **CC-C16.RM-6 - Adequate test.** The comparison can expose the addressed defect and supports the range or result actually claimed.
+- **CC-C16.RM-6 - Adequate test.** The comparison can expose the addressed defect and supports the range or result claimed.
 - **CC-C16.RM-7 - Useful completion.** The returned result and remaining uncertainty answer the receiving question or state the consequential limitation.
 
 ### C.16.RM:8 - Common Anti-Patterns and How to Avoid Them
@@ -206,7 +206,7 @@ A targeted repair also limits what is established. A successful local result may
 
 ### C.16.RM:10 - Architectural Rationale
 
-Measurement joins a subject, an interaction, a mathematical relation and a calculation used to interpret an indication. The same unwanted effect can be addressed by representing it, reducing it in the arrangement or changing how the indication distinguishes the target. Keeping these alternatives together helps avoid repairing the most familiar component merely because it is familiar.
+Measurement joins a subject, an interaction, a mathematical relation and a calculation used to interpret an indication. The same unwanted effect can be addressed by representing it, reducing it in the arrangement or changing how the indication distinguishes the target. Keeping these alternatives together helps choose a repair by its effect on the wanted result.
 
 C.16.MR constructs a relation and C.16.IR determines what it resolves. This Method begins when that existing use is inadequate and chooses what to change. B.5.MPC.R supplies the wider repair across physical, mathematical and computational contributions. Here the distinction between subject and instrument, cancellation conditions, loading reduction and reinterpretation of retained observations makes that repair actionable for measurement.
 
@@ -214,11 +214,11 @@ The result can be epistemic, such as a corrected interpretation, or include an a
 
 ### C.16.RM:11 - SoTA-Echoing
 
-**Practice question and selected answer.** How should one change a measurement whose current model, calculation or arrangement fails the receiving question? Select a contribution-specific repair, compare what it would resolve, and stop at an adequate result. The serious alternatives are a known applicable correction, a more detailed model, or more observations under the unchanged procedure. A known sufficient correction remains the cheaper route. The selected comparison is useful when repetition preserves the defect or extra model detail adds an undetermined influence. In :5.1 the already available on/off contrast resolves the beam contribution; in :5.2 changing loading yields a sufficient bound without identifying every parameter. Changing equipment can cost more than calculation, so its value depends on availability and the wanted conclusion.
+**Practice question and selected answer.** How should one change a measurement whose current model, calculation or arrangement fails the receiving question? Select a contribution-specific repair, compare what it would resolve, and stop at an adequate result. The alternatives are a known applicable correction, a more detailed model, or more observations under the unchanged procedure. A known sufficient correction remains the cheaper route. The selected comparison is useful when repetition preserves the defect or extra model detail adds an undetermined influence. In :5.1 the already available on/off contrast resolves the beam contribution; in :5.2 changing loading yields a sufficient bound without identifying every parameter. Changing equipment can cost more than calculation, so its value depends on availability and the wanted conclusion.
 
-**Model and apparatus alternatives.** [Dounas-Frazer and Lewandowski (2018), §2 and §§4.1–4.3](https://arxiv.org/pdf/1805.10334) explains iterative comparison and revision of physical-system and measurement-system models and apparatus. Its optics cases distinguish controlling unwanted light, avoiding saturation and revising response models. **Adapt** these alternatives into :4.2–4.4's choice of repair location and conditions. The paper's educational investigations support these modeling moves in experimental physics; they do not establish universal transfer or the effectiveness of the present cross-case Method.
+**Model and apparatus alternatives.** [Dounas-Frazer and Lewandowski (2018), §2 and §§4.1–4.3](https://arxiv.org/pdf/1805.10334) explains iterative comparison and revision of physical-system and measurement-system models and apparatus. Its optics cases distinguish controlling unwanted light, avoiding saturation and revising response models. **Adapt** these alternatives into :4.2–4.4's choice of repair location and conditions. The paper's educational investigations support these modeling moves in experimental physics; they do not establish the effectiveness of the present cross-case Method.
 
-**Adequacy and computational comparison.** [JCGM GUM-6:2020, §12](https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf) distinguishes comparisons with reference situations, computational tests using generated data, fit over the intended range and the adequacy of a simpler model. **Adapt** those distinctions in :4.2 and :4.5: select a comparison for the contribution and claim being repaired. Section :4.3 applies C.11.DUA to its attainable value and cost. The numerical cases are constructed demonstrations; the source does not supply their instrument laws or performed observations.
+**Adequacy and computational comparison.** [JCGM GUM-6:2020, §12](https://www.bipm.org/documents/20126/2071204/JCGM_GUM_6_2020.pdf) distinguishes comparisons with reference situations, computational tests using generated data, fit over the intended range and the adequacy of a simpler model. **Adapt** those distinctions in :4.2 and :4.5: select a comparison for the contribution and claim being repaired. Section :4.3 applies C.11.DUA to its attainable value and cost. The numerical cases are constructed demonstrations using the instrument laws and conditions stated in each case. This source supplies the comparison distinctions, not those instrument laws or performed observations.
 
 The integrated repair sequence, target continuity and return through a useful conclusion are methodological synthesis. Reopen the choice when a cheaper remedy settles the same question, a changed condition invalidates the correction, or a comparison reveals a consequential influence left outside the model.
 

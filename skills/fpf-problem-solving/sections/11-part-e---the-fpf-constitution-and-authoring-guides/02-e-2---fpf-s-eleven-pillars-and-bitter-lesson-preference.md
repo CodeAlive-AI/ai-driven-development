@@ -3,7 +3,7 @@
 > **Status:** Stable
 
 ### E.2:1 - Problem frame
-Use the Eleven Pillars in §4 to assess whether an FPF rule or artifact meets its constitutional obligations. Use the separate BLP policy in §6 when a computational choice claims a scale/generalization advantage or invokes a declared local generality policy: start with C.19.1's cheap scale-claim probe. An ordinary bounded fixed procedure can stop with its task-specific justification; specialization alone creates no scale audit, heuristic-debt entry or waiver. Independently applicable assurance or oversight requirements retain their own checks.
+Use the Eleven Pillars in §4 to assess whether an FPF rule or artifact meets its constitutional obligations. Use the separate BLP policy in §6 when a computational choice claims a scale/generalization advantage or invokes a declared local generality policy: start with C.19.1's cheap scale-claim probe. An ordinary bounded fixed procedure can stop with its task-specific justification; specialization alone creates no scale audit, heuristic-debt entry or waiver. Independently applicable assurance or oversight requirements retain their checks.
 
 E.1 sets the aim of making reliable reasoning accessible across disciplines through shared grounds, reusable Core methods and suitable domain methods. To turn that aim into a durable architecture, FPF needs a small, explicit constitution - principles that remain stable while everything built on top of them can evolve. Without such invariants, domain silos, vocabulary drift, and tool-centric shortcuts quickly erode coherence and reproducibility across disciplines.
 
@@ -22,7 +22,7 @@ Without binding first principles, contributors cannot distinguish commitments th
 | **Pragmatic Grounding**        | Abstract invariants ↔ measurable, falsifiable outcomes |
 
 ### E.2:4 - Solution
-FPF rests on **eleven binding pillars**. Every artefact, pattern, and design-rationale record (DRR) must honour the applicable constraints and explain material conflicts. Together the pillars guide evolvability, cross-scale coherence and didactic clarity; their realization must be established for the particular use.
+FPF rests on **eleven binding pillars**. Every artefact, pattern, and design-rationale record (DRR) must honour the applicable constraints and explain material conflicts. Together the pillars guide evolvability, cross-scale coherence and didactic clarity; their realization must be established for the use.
 
 | ID       | Pillar                         | Essence                                                                                                                   |
 | -------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ FPF rests on **eleven binding pillars**. Every artefact, pattern, and design-rat
 | **P‑10** | **Open‑Ended Evolution**       | Keep justified improvement, revision, replacement and branching possible. Choose continuation under the use’s cost and safety constraints; permit retention, local stopping and retirement with explicit reasons and reopen conditions.               |
 | **P‑11** | **State‑of‑the‑Art Alignment** | The kernel and extension domain-specific patterns track reliable contemporary knowledge and update when the SoTA advances.                     |
 
-A pillar-impact argument can use ordinary accepted mathematical theory directly. Use `C.29` when a separate question remains about choosing a mathematical representation, transferring a result, or relying on the represented structure. State the correspondence, preserved and lost structure, and limits needed for that use; `E.2` continues to govern the pillar claim.
+A pillar-impact argument can use ordinary accepted mathematical theory. Use `C.29` when a separate question remains about choosing a mathematical representation, transferring a result, or relying on the represented structure. State the correspondence, preserved and lost structure, and limits needed for that use; `E.2` continues to govern the pillar claim.
 
 > Any DRR that contradicts a pillar must first amend this constitutional pattern.
 
@@ -50,7 +50,7 @@ A pillar-impact argument can use ordinary accepted mathematical theory directly.
 | **CC‑P‑2** | Every DRR proposing a normative change **must** include a “Pillar Impact Analysis.”                                               | Makes constitutional review explicit. |
 | **CC‑P‑3** | Tooling and pedagogical artefacts **should** document which pillar(s) shape their design.                                         | Upholds P‑2 (Didactic Primacy).       |
 | **CC‑P‑4** | Assess the substance of every applicable Pillar constraint and any material conflict. Name the Pillars whose realization changes the pattern’s design or use; no minimum link count substitutes for that argument. | Grounds conformance in the obligations that matter to the pattern. |
-| **CC‑P‑5** | When a choice claims scale/generalization advantage in a computational domain, or invokes a separately declared local generality policy, authors **MUST** apply BLP to the usable response over its declared budget range and receiving conditions. Ordinary bounded specialization alone activates no scale audit, debt entry or waiver. | Keeps scale preference tied to usable performance and its actual claim. |
+| **CC‑P‑5** | When a choice claims scale/generalization advantage in a computational domain, or invokes a separately declared local generality policy, authors **MUST** apply BLP to the usable response over its declared budget range and receiving conditions. Ordinary bounded specialization alone activates no scale audit, debt entry or waiver. | Keeps scale preference tied to usable performance and its claim. |
 | **CC‑P‑6** | A pillar-impact analysis that relies on mathematical structure, scale behavior, optimization, uncertainty, invariance, obstruction, or other first-principles modeling support is complete only when that support is ordinary accepted local theory, a cited `C.29` output, or a named neighboring-pattern output for evidence, causal, bridge, assurance, measurement, work, decision, publication, or admission claims. | Keeps mathematical support for pillars inspectable without letting `C.29` revise pillar authority. |
 
 ### E.2:6 - Policy — Bitter‑Lesson Preference (BLP)
@@ -60,18 +60,18 @@ A pillar-impact argument can use ordinary accepted mathematical theory directly.
 **BLP-1 — Claim-matched comparison and audit.** Begin an activated BLP use with C.19.1's cheap scale-claim probe. Name the candidate, task/use, scale variable, objective, usable budget range, receiving conditions and evidence form. Missing comparison premises return `no scale claim yet`; select evidence depth by claim and risk. An independently activated profile can require a fuller Scale-Audit. That audit retains:
 
 * (a) **Parity and admissibility:** comparable tasks, budget basis, editions, freshness and risk/safety envelope. Use G.5/G.9 when their selector/parity contracts apply. Pareto comparison is the default over the declared objective vector; another comparison needs a lawful declared policy under E.3.
-* (b) **Usable budgets:** vary the dimensions actually relevant to the claim—compute, data or freedom of action where applicable—and pin held conditions. Compare only over the range available to the receiving use; extrapolation needs its own basis.
+* (b) **Usable budgets:** vary the dimensions relevant to the claim—compute, data or freedom of action where applicable—and pin held conditions. Compare only over the range available to the receiving use; extrapolation needs its own basis.
 * (c) **Response and uncertainty:** report performance over that range with an uncertainty treatment appropriate to the evidence. Slopes may characterize response but cannot replace its level, admissibility or receiving floor. Repeatable stochastic trials retain seeds/replicates and confidence intervals where used; deterministic derivations retain their assumptions and validity bounds.
 * (d) **Resources and assurance:** retain decision-material resource accounts through A.15.1, A.15.2, B.1.6, C.16 and A.10 as applicable. A named assurance claim uses B.3; independently applicable assurance and oversight requirements remain binding.
-* (e) **Objectives and tolerances:** declare quality, risk, cost and any illumination coordinate promoted by an explicit CAL policy. State units and the budget/assurance tolerances α/δ used by the comparison. Publish the actual audit's edition and policy pins through G.11.
+* (e) **Objectives and tolerances:** declare quality, risk, cost and any illumination coordinate promoted by an explicit CAL policy. State units and the budget/assurance tolerances α/δ used by the comparison. Publish the audit's edition and policy pins through G.11.
 
 **BLP-2 — Usable-performance preference.** Among admissible options under the receiving conditions, with comparable assurance within δ and budget within α when those tolerances are used, prefer the option whose response over the usable audited range Pareto-dominates the other's, accounting for uncertainty. If neither dominates, return `no scale-based preference`. A preference for greater generality can then follow only from a separately declared project policy under E.3; label that basis and its costs instead of reporting an empirical winner.
 
-**BLP-3 — Task-appropriate prescription.** Positive procedures and prohibitions are both available under their actual task or control needs. A mandated safety procedure keeps its force. Minimal prescription and autonomous sequencing need their own justified policy, authority and guards; neither follows from a scale comparison. Ordinary use of a positive procedure requires no BLP waiver solely because a general search alternative exists.
+**BLP-3 — Task-appropriate prescription.** Positive procedures and prohibitions are both available under their task or control needs. A mandated safety procedure keeps its force. Minimal prescription and autonomous sequencing need their justified policy, authority and guards; neither follows from a scale comparison. Ordinary use of a positive procedure requires no BLP waiver solely because a general search alternative exists.
 
 **BLP-4 — Conditional heuristic debt.** Apply C.19.1's debt branch when an admitted heuristic carries a durable scale/generality preference, reusable solution-family policy, selector-facing preference or override within an activated BLP use. Retain scope, review responsibility, expiry/review window, replacement target and de-hardening plan in CalibrationLedger/BCT and SCR as applicable. A bounded task-specific tactic that makes none of those claims is not debt merely because it is specialized.
 
-**BLP-5 — Separately authorized adaptation.** Enable, require or prohibit adaptation under the product's objective, evidence, permission, change authority and risk/Guard-Rail conditions. A fixed method needs no BLP adaptation waiver solely for remaining fixed. A product policy that actually requires adaptation or its review retains that obligation and its exception rule.
+**BLP-5 — Separately authorized adaptation.** Enable, require or prohibit adaptation under the product's objective, evidence, permission, change authority and risk/Guard-Rail conditions. A fixed method needs no BLP adaptation waiver solely for remaining fixed. A product policy that requires adaptation or its review retains that obligation and its exception rule.
 
 **BLP‑6 — Precedence & Safeguards.** BLP combines governance and architectural principles; classify each compared principle under E.3 rather than assigning one class to the whole policy. It is instantiated by Pillars **P‑10 (Open‑Ended Evolution)**, **P‑11 (SoTA Alignment)**, **P‑7 (Pragmatic Utility)**, and **P‑1 (Cognitive Elegance)**. It does **not** override applicable safety and ethics requirements, **E.5** Guard‑Rails, or E.3 precedence rulings; where BLP conflicts with Guard‑Rails, **Guard‑Rails prevail**. When **NQD/E/E‑LOG** elevates illumination to dominance for exploration mandates, BLP **adopts that lens** rather than overriding it.
 
@@ -81,13 +81,13 @@ BLP applies to comparisons such as prompt programming versus fine-tuning and mod
 
 | ID            | Requirement                                                                                                     | Purpose                                       |
 | ------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
-| **CC‑BLP.1** | An activated comparison declares the α/δ tolerances, units and receiving conditions it actually uses, directly or through a policy profile. | Makes the comparison reproducible. |
+| **CC‑BLP.1** | An activated comparison declares the α/δ tolerances, units and receiving conditions it uses, directly or through a policy profile. | Makes the comparison reproducible. |
 | **CC‑BLP.2** | A Scale-Audit is required only when selected by the claim/risk or an independently applicable profile; it retains BLP-1a–e responses, uncertainty and pins. | Matches audit burden to the claimed use. |
 | **CC‑BLP.3** | A scale-based selection cites BLP-2 and the applicable precedence rules; non-dominance yields no scale preference unless a separate local policy decides it. | Separates evidence from policy preference. |
-| **CC‑BLP.4** | A heuristic meeting BLP-4's activated debt conditions is logged with scope, review, expiry and de-hardening plan. | Keeps real durable overrides inspectable. |
+| **CC‑BLP.4** | A heuristic meeting BLP-4's activated debt conditions is logged with scope, review, expiry and de-hardening plan. | Keeps durable overrides inspectable. |
 | **CC‑BLP.5** | Prescription form follows the task/control requirement; adaptation follows its product policy, permission, change authority and guards. | Preserves warranted procedures and bounded autonomy. |
 | **CC‑BLP.6** | Decision-material resource accounts use A.15.1, A.15.2, B.1.6, C.16 and A.10; an assurance claim uses B.3. A separately activated stronger profile retains its required accounts and oversight. | Preserves applicable resource and assurance duties. |
-| **CC‑BLP.7** | The response comparison records evidence-appropriate uncertainty; stochastic trial claims retain the actual replicate/seed and interval basis. | Prevents unsupported superiority. |
+| **CC‑BLP.7** | The response comparison records evidence-appropriate uncertainty; stochastic trial claims retain the replicate/seed and interval basis. | Prevents unsupported superiority. |
 
 #### E.2:7.1 - Usable response and ordinary non-use
 
@@ -116,13 +116,13 @@ These constructed cases distinguish the rule; they are not empirical findings ab
 *Trade‑offs*
 
 * Constitutional review adds friction to rapid, informal changes.
-* Amending the pillar set itself demands high‑bar governance.
+* Amending the pillar set demands high‑bar governance.
 
 ### E.2:11 - Rationale
 
 The pillars interlock: *Cognitive Elegance* (P‑1) enables *Didactic Primacy* (P‑2); *Open‑Ended Kernel* (P‑4) and *FPF Layering* (P‑5) make *Open‑Ended Evolution* (P‑10) and *SoTA alignment* (P‑11) feasible; *Cross‑Scale Consistency* (P‑8) provides the algebraic backbone for *Scalable Formality* (P‑3). Together the pillars balance stability with change, rigor with accessibility, and abstraction with measurable impact.
 
-`C.29` supports a pillar-impact argument when its mathematical representation choice, transfer, or reliance remains unresolved. It makes the relevant correspondence, loss and use condition explicit; `E.2` remains authority over the pillars.
+`C.29` supports a pillar-impact argument when its mathematical representation choice, transfer, or reliance remains unresolved. It states the relevant correspondence, loss and use condition; `E.2` remains authority over the pillars.
 
 ### E.2:12 - Relations
 

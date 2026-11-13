@@ -5,7 +5,7 @@
 
 ### A.3.1.QM:0 - Use This When
 
-Use this pattern when a project has one or more Methods identified under `A.3.1`, candidate Method accounts, and situational criteria, but it still does not know which subjects are individually usable for the bounded result. Use it before a several-structure comparison when an individual condition can settle whether the subject remains a candidate for the receiving use.
+Use this pattern when a project has one or more Methods identified under `A.3.1`, candidate Method accounts, and situational criteria, but it does not know which subjects are individually usable for the bounded result. Use it before a several-structure comparison when an individual condition can settle whether the subject remains a candidate for the receiving use.
 
 Begin with one Method or candidate account, its status, the contribution it is expected to make, and the criteria that matter for that contribution. Keep whole-level allocation, synchronization, composition, and compatibility questions outside the individual result.
 
@@ -22,7 +22,7 @@ Do not use qualification wording to admit a candidate account as a Method, to es
 | individual contribution | The result or preserved condition expected from enacting the Method or proposed reusable way under the stated use, rather than the success of a whole arrangement. |
 | local connection | An input/result, schema-correspondence, or adapter-feasibility claim whose truth does not depend on choosing one whole synthesis. |
 | individual qualification | A bounded result covering contribution, applicability, inputs/results, attributable time or burden, capability, support, authority/access, evidence, source limits, and stop. |
-| architecture question | A claim about combined allocation, timing, composition, Work overlap, provider arrangement, authority distribution, or another several-structure relation. It belongs to C.32.MWA.PP when live. |
+| architecture question | A claim about combined allocation, timing, composition, Work overlap, provider arrangement, authority distribution, or another several-structure relation. Use C.32.MWA.PP when such a question needs resolution. |
 
 ### A.3.1.QM:1 - Problem Frame
 
@@ -50,7 +50,7 @@ The project then believes the architecture problem is solved even though no resu
 
 A.3.1 decides Method identity. This Method uses that result, or an explicitly unresolved candidate, to qualify one contribution for a receiving use. It does not repeat Method admission or infer the adequacy of a combined arrangement from the qualification of its participants.
 
-Qualify one subject at a time against the bounded receiving use. Preserve status, expose unsupported conditions, and route only genuinely combined questions to C.32.MWA.PP.
+Qualify one subject at a time against the bounded receiving use. Preserve status, expose unsupported conditions, and route only combined questions to C.32.MWA.PP.
 
 #### A.3.1.QM:4.1 - Pattern-Use Unfolding
 
@@ -59,7 +59,7 @@ Qualify one subject at a time against the bounded receiving use. Preserve status
 3. **Recover the individual contribution.** Name the input, result or preserved condition, procedure or invariant as far as known, applicability, and important source meaning. Do not credit the subject with another Method's result.
 4. **Check attributable conditions.** Inspect the conditions relevant to this contribution: timing and burden attributable to this subject; performer capability; support and provider access; authority or responsibility; evidence; and source or transfer limits.
 5. **Test local connections only.** Check an input/result handoff, schema correspondence, or adapter feasibility when it can be assessed independently of a whole synthesis. Record its scope and any known failure condition relevant to the receiving use.
-6. **Return the truthful branch.** An identified Method is qualified or not qualified for the bounded use. For a not-qualified result, distinguish a failed criterion from an insufficient basis to judge it. A candidate account is retained or excluded *as an account*, with unresolved identification conditions unchanged. A local connection is supported, unsupported, or unresolved.
+6. **Return the result.** An identified Method is qualified or not qualified for the bounded use. For a not-qualified result, distinguish a failed criterion from an insufficient basis to judge it. A candidate account is retained or excluded *as an account*, with unresolved identification conditions unchanged. A local connection is supported, unsupported, or unresolved.
 7. **Choose the stop.** Stop when the individual qualification or local-connection result is sufficient for the receiving decision and no whole question remains. Enter C.32.MWA.PP only when a several-structure choice can change the decision.
 
 #### A.3.1.QM:4.2 - Record the Result
@@ -75,7 +75,7 @@ Qualify one subject at a time against the bounded receiving use. Preserve status
 
 #### A.3.1.QM:4.3 - What Changes in Practice
 
-Teams can use individual qualifications without treating them as a verdict on the whole arrangement. They can reject one Method, retain a promising account without admitting it, and prove one schema mapping without calling the whole arrangement compatible. C.32.MWA.PP then receives only the genuinely combined timing, allocation, support, authority, or composition questions.
+Teams can use individual qualifications without treating them as a verdict on the whole arrangement. They can reject one Method, retain a promising account without admitting it, and prove one schema mapping without calling the whole arrangement compatible. C.32.MWA.PP then receives only the combined timing, allocation, support, authority, or composition questions.
 
 ### A.3.1.QM:5 - Archetypal Grounding — EC-417 Individual Stops
 
@@ -84,7 +84,7 @@ The EC-417 dossier supplies four identified Methods and several candidate accoun
 | Subject and prior status | Individual result | A.3.1.QM return |
 | --- | --- | --- |
 | `M-HW-Verify`, identified Method | accepts the affected change and pinout version; produces a verification result with named rig and hardware capability conditions | qualified for the bounded use |
-| `M-SW-Integrate`, identified Method | accepts explicitly versioned provisional or signed pinout evidence; its integration record preserves the exact edition, any provisional uncertainty, and the edition actually used; later signed evidence supersedes a provisional edition only for safety-closure reliance while the earlier use and provisional-to-signed relation remain traceable; software remains reversible until `D-1` | qualified under the evidence-version, history, closure-reliance, and reversibility conditions |
+| `M-SW-Integrate`, identified Method | accepts explicitly versioned provisional or signed pinout evidence; its integration record preserves the exact edition, any provisional uncertainty, and the edition used; later signed evidence supersedes a provisional edition only for safety-closure reliance while the earlier use and provisional-to-signed relation remain traceable; software remains reversible until `D-1` | qualified under the evidence-version, history, closure-reliance, and reversibility conditions |
 | `M-Supplier-Approve`, identified Method | produces signed supplier approval or the explicit missing-approval stop; requires supplier-configuration responsibility and evidence access | qualified under the named access and responsibility conditions |
 | `M-Release-Authorize`, identified Method | consumes the safety result and named evidence conditions; admitted human System `ReleaseDecider-17` performs `W-ReleaseDecision-17` under covering assignment `ASG-ReleaseDecision-17` and independently supported direct relation `AUTH-ReleaseDecision-17`; returns release, withhold, or next-slot authorization | qualified for the bounded Work, assignment, and authority scope; none proves the others |
 | `C-Evidence-Reconcile-Internal`, candidate account | eight internal cases support an account in which the versioned provisional edition, uncertainty, and earlier integration use remain traceable through reconciliation to later signed evidence before closure | retained as a candidate account; `A.3.1` identification remains open |
@@ -95,13 +95,13 @@ The `provider-default AI proposal` is outside A.3.1.QM's present qualification s
 
 Local schema correspondence `A-17` maps signed or explicitly provisional pinout-version fields to the integration bundle and preserves the exact edition and uncertainty used. Five stored bundles support that mapping for the named schema editions. The mapping preserves the provisional basis after later signed evidence becomes the safety-closure basis. This is a local connection result, not whole compatibility.
 
-Two honest stops are now available. A project needing only hardware verification can stop with the qualified `M-HW-Verify`; no architecture comparison is required. A project investigating supplier reconciliation can stop with the retained `C-Evidence-Reconcile-Supplier` account and its open `A.3.1` question. EC-417 continues to C.32.MWA.PP only because the combined safety allocation, board timing, evidence routing, and recovery burden differ among whole alternatives.
+Two stops are now available. A project needing only hardware verification can stop with the qualified `M-HW-Verify`; no architecture comparison is required. A project investigating supplier reconciliation can stop with the retained `C-Evidence-Reconcile-Supplier` account and its open `A.3.1` question. EC-417 continues to C.32.MWA.PP only because the combined safety allocation, board timing, evidence routing, and recovery burden differ among whole alternatives.
 
 ### A.3.1.QM:6 - Bias-Annotation
 
 | Bias | Likely drift | Repair |
 | --- | --- | --- |
-| fit-score bias | Unlike contribution, capability, authority, evidence, and burden claims collapse into one number. | Return the decision-changing conditions and truthful branch instead of an opaque total. |
+| fit-score bias | Unlike contribution, capability, authority, evidence, and burden claims collapse into one number. | Return the decision-changing conditions and qualification result instead of an opaque total. |
 | candidate-upgrade bias | “Qualified candidate” is read as identified Method. | Repeat the account status in the verdict and state the open `A.3.1` condition. |
 | compatibility bias | One feasible handoff or schema mapping becomes whole fit. | Call it a bounded local connection and route combined questions to C.32.MWA.PP. |
 | decomposition bias | Each support System, role, or evidence item is evaluated as a Method candidate. | Accept only identified Methods and candidate Method accounts as qualification subjects. |
@@ -125,7 +125,7 @@ Two honest stops are now available. A project needing only hardware verification
 | “All individual Methods pass, so the architecture is compatible.” | State the unresolved combined structure and use C.32.MWA.PP only when it changes the decision. |
 | “The adapter works, so integration is solved.” | Bound the adapter-feasibility result; use C.32.MWA.PP for placement, versioning, responsibility or failure questions only when the combined arrangement changes the decision. |
 | “Use the same checklist for every subject.” | Ask only applicable questions but preserve the common result positions needed by the decision. |
-| “More evidence is always safer.” | Select evidence by consequence and claim; stop when the bounded decision can be made honestly. |
+| “More evidence is always safer.” | Select evidence by consequence and claim; stop when the bounded decision can be made on sufficient grounds. |
 
 ### A.3.1.QM:9 - Consequences
 
@@ -135,7 +135,7 @@ The cost is keeping the different conditions visible even when a project needs o
 
 ### A.3.1.QM:10 - Rationale
 
-Individual suitability and whole architecture answer different questions. A Method can be usable alone yet overload a shared Agent when combined with others. A candidate account can be useful evidence for design while still failing Method identification. Keeping the individual and architecture results separate protects both cheap stops and escalation when combined questions remain.
+Individual suitability and whole architecture answer different questions. A Method can be usable alone yet overload a shared Agent when combined with others. A candidate account can be useful evidence for design while failing Method identification. Keeping the individual and architecture results separate protects both cheap stops and escalation when combined questions remain.
 
 ### A.3.1.QM:11 - SoTA-Echoing
 
@@ -153,7 +153,7 @@ Revisit an individual qualification when its conclusion turns out to depend on a
 - `A.3.1` alone governs Method identification. A.3.1.QM does not admit Methods.
 - C.32.MWA.PP receives retained subjects only when combined Method, Work, allocation, support, description, subject, or cultural structures change the decision.
 - B.1.5.CM resolves a proposed whole; A.3.1.QM qualification supplies no whole identity, compatibility, or `methodPartOf` fact.
-- `C.11` or the applicable domain decision Method consumes the bounded individual results when a choice is live.
+- `C.11` or the applicable domain decision Method consumes the bounded individual results when a choice is needed.
 - C.18 supplies candidate generation when needed; G.5 supplies bounded Method-family and selector results.
 
 ### A.3.1.QM:End

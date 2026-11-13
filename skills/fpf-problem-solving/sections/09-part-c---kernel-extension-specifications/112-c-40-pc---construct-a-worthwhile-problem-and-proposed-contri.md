@@ -8,19 +8,19 @@
 
 ### C.40.PC:1 - Problem Frame
 
-**Use this when** a development lead names an attractive niche, technology, course, service, or provider promise, but the receiving use and the reason to change it remain unclear. Someone may say “we need AI,” “become a leader,” or “offer faster analysis” without identifying whose result is unsatisfactory, what difference matters, or what could actually be supplied.
+**Use this when** a development lead names an attractive niche, technology, course, service, or provider promise, but the receiving use and the reason to change it remain unclear. Someone may say “we need AI,” “become a leader,” or “offer faster analysis” without identifying whose result is unsatisfactory, what difference matters, or what could be supplied.
 
-Recover from the receiver's account or adequate existing evidence what is missing or foregone in one bounded use. Relate that problem to a proposed contribution and an inspectable acceptance expectation. The first useful result is a supported worthwhile problem or an explicitly unconfirmed problem hypothesis, together with the proposed contribution, its material limits and, when needed, a question that could confirm, narrow or reject it.
+Recover from the receiver's account or adequate existing evidence what is missing or foregone in one bounded use. Relate that problem to a proposed contribution and an inspectable acceptance expectation. The first useful result is a supported worthwhile problem or an unconfirmed problem hypothesis, together with the proposed contribution, its material limits and, when needed, a question that could confirm, narrow or reject it.
 
 The subject that might develop and the receiver of its later contribution can differ. A person may explore their own future Work without an adviser; an organization may investigate a contribution for a client; a research programme may seek an epistemic contribution rather than a commercial offer.
 
-**Ordinary non-use boundary.** Reuse an adequate problem/contribution account when its receiving use, evidence, protections, and horizon remain current. Proceed to `C.40.DC` if only the way of obtaining that contribution is missing. Use an applicable problem-structuring Method when a bounded decision-support inquiry needs materially different problem formulations. This pattern does not establish an actual commitment, choose a direction, or justify intervention by itself.
+**Ordinary non-use boundary.** Reuse an adequate problem/contribution account when its receiving use, evidence, protections, and horizon remain current. Proceed to `C.40.DC` if only the way of obtaining that contribution is missing. Use an applicable problem-structuring Method when a bounded decision-support inquiry needs materially different problem formulations. This pattern does not establish a commitment, choose a direction, or justify intervention by itself.
 
 ### C.40.PC:2 - Problem
 
 A niche, a worthwhile problem, and a proposed contribution answer different questions. A niche is a possible fit between a contribution and a use. The problem explains why an inadequate or foregone result matters there. The contribution says what could be supplied and how the receiver would recognize it.
 
-If these are collapsed, a supplier's enthusiasm becomes demand, a proposed offer becomes a commitment, and a useful intermediate result becomes a promise of benefit. “Recover missing evidence” turns into “approve faster,” although neither the time saving nor the approval is established. Alternatively, a practitioner rejects a useful problem merely because no feasible way to address it is known yet.
+If these are collapsed, a supplier's enthusiasm is treated as demand, a proposed offer as a commitment, and a useful intermediate result as a promise of benefit. “Recover missing evidence” is read as “approve faster,” although neither the time saving nor the approval is established. Alternatively, a practitioner rejects a useful problem merely because no feasible way to address it is known yet.
 
 The needed move is to make the value and contribution claims separately inspectable, preserving uncertainty without losing a worthwhile next question.
 
@@ -55,7 +55,7 @@ For example:
 
 - **Problem:** an acceptance engineer cannot recover which submitted claims lack a sufficient evidence basis before the handoff review.
 - **Proposed contribution:** an inspectable claim-to-evidence account that identifies supported claims, missing premises, and qualification limits in the permitted source set.
-- **Acceptance expectation:** the receiver can trace each entry to its source and identify unresolved claims under the applicable review criteria.
+- **Acceptance expectation:** the receiver can trace each entry to its source and identify unresolved claims under the review criteria.
 
 Faster approval is a different benefit claim; automatic approval is a different contribution and authority question. Preserve those differences if they become live rather than silently extending the proposal.
 
@@ -71,26 +71,26 @@ Return the strongest supported statement:
 
 - a worthwhile problem for this receiving use under stated conditions;
 - an attributed or contested value claim requiring a named resolution;
-- an unconfirmed problem hypothesis with the exact confirming question; or
+- an unconfirmed problem hypothesis with the confirming question; or
 - rejection or revision of the lead because no worthwhile problem is supported at the chosen scale.
 
-A receiver's desire alone does not defeat a binding protection. Conversely, missing feasibility does not disprove the problem: retain the worthwhile problem and name the unresolved way of addressing it. For a comparative claim such as “worth the transition cost,” obtain the applicable comparison rather than treating this inquiry as its proof.
+A receiver's desire alone does not defeat a binding protection. Conversely, missing feasibility does not disprove the problem: retain the worthwhile problem and name the unresolved way of addressing it. For a comparative claim such as “worth the transition cost,” obtain the comparison rather than treating this inquiry as its proof.
 
 #### C.40.PC:4.4 - State the proposed contribution and its acceptance expectation
 
-Say what could be supplied, for which receiving use, under what conditions, with what exclusions, and what the receiver could inspect to determine whether that contribution was supplied as proposed. Keep the proposed result, the acceptance criterion, and any actual acceptance separate.
+Say what could be supplied, for which receiving use, under what conditions, with what exclusions, and what the receiver could inspect to determine whether that contribution was supplied as proposed. Keep the proposed result, the acceptance criterion, and any acceptance separate.
 
-Use [A.2.3](../03-first-principles-framework-readme/_index.md) when a promise's content must be identified or relied on. Read an existing provider promise from its actual source; mark a newly constructed promise as proposed. Neither description establishes a provider commitment, capability, access, provision, fulfilment, or achieved benefit.
+Use [A.2.3](../03-first-principles-framework-readme/_index.md) when a promise's content must be identified or relied on. Read an existing provider promise from its source; mark a newly constructed promise as proposed. Neither description establishes a provider commitment, capability, access, provision, fulfilment, or achieved benefit.
 
-A research contribution can be a criticism, discriminating experiment, reproducible comparison, or clarification of an unresolved claim. It need not be sold, but its intended epistemic result and evidence standard must still be inspectable. Do not impose a commercial service model on that use.
+A research contribution can be a criticism, discriminating experiment, reproducible comparison, or clarification of an unresolved claim. It need not be sold, but its intended epistemic result and evidence standard must be inspectable. Do not impose a commercial service model on that use.
 
 #### C.40.PC:4.5 - Link the contribution to the problem without assuming success
 
 Explain why the proposed result could address the missing receiving result. Mark that connection as supported, conditional, disputed, or hypothetical according to its evidence. Identify what a plausible contrary answer would change.
 
-When a consequential uncertainty remains, ask a discriminating question whose attainable answer warrants the inquiry. “Does the reviewer need a source-traceable account of unsupported claims, or is the delay actually caused by unavailable acceptance authority?” can redirect the contribution. “Would you like better AI?” cannot distinguish the problem from the preferred solution.
+When a consequential uncertainty remains, ask a discriminating question whose attainable answer warrants the inquiry. “Does the reviewer need a source-traceable account of unsupported claims, or is the delay caused by unavailable acceptance authority?” can redirect the contribution. “Would you like better AI?” cannot distinguish the problem from the preferred solution.
 
-Use existing adequate results before requesting new Work. When another practice must supply an answer, use [A.15.9](../03-first-principles-framework-readme/_index.md) for the bounded result request and reliance boundary. The supplying practice answers its own substantive question. A proposed interview, measurement, or experiment still needs the permissions and conditions applicable to that activity.
+Use existing adequate results before requesting new Work. When another practice must supply an answer, use [A.15.9](../03-first-principles-framework-readme/_index.md) for the bounded result request and reliance boundary. The supplying practice answers its own substantive question. A proposed interview, measurement, or experiment needs the permissions and conditions applicable to that activity.
 
 #### C.40.PC:4.6 - Return the account at the strength it supports
 
@@ -98,7 +98,7 @@ Ordinary prose is enough when the receiver can recover the situation, worthwhile
 
 > The case's acceptance engineer reports that unsupported claims cannot be recovered reliably from the incoming package, and the stipulated review records support that concern. We propose a source-traceable claim-to-evidence account, not approval; the next question is whether the available records and review criteria cover a representative package without breaching confidentiality.
 
-Use `C.40.DC` when the contribution premise is adequate and materially different directions need construction. Return to `C.40.NU` when the lead must change. Stop with a problem hypothesis or rejection when that is the truthful result. If an adequate direction already exists, proceed directly to the missing reachability, comparison, or advising result; no mandatory cycle through earlier PatternIDs follows.
+Use `C.40.DC` when the contribution premise is adequate and materially different directions need construction. Return to `C.40.NU` when the lead must change. Stop when the result is a problem hypothesis or rejection. If an adequate direction already exists, proceed to the missing reachability, comparison, or advising result; no mandatory cycle through earlier PatternIDs follows.
 
 Reopen the affected problem or contribution under `C.40.RQ` when the receiving use, value evidence, acceptance expectation, source, horizon, or protected condition changes. A narrower permitted source set can narrow one proposed contribution while leaving the receiver's problem and another direction intact.
 
@@ -108,7 +108,7 @@ Reopen the affected problem or contribution under `C.40.RQ` when the receiving u
 
 This constructed example stipulates an engineering-services unit's ninety-day inquiry. Its acceptance engineer reports repeated difficulty finding unsupported claims in incoming evidence packages; the example's review records corroborate that bounded concern. Confidentiality, traceability, independent acceptance, and tolerable review burden are protected.
 
-The technology lead was “use a long-record model.” The problem/contribution account instead proposes a claim-to-evidence account for one class of package. The acceptance expectation is that the reviewer can recover each included claim's cited support and identify unresolved premises under the relevant criteria. A manual index and bounded retrieval assistance could both serve that proposal.
+The technology lead was “use a long-record model.” The problem/contribution account instead proposes a claim-to-evidence account for one class of package. The acceptance expectation is that the reviewer can recover each included claim's cited support and identify unresolved premises under the criteria. A manual index and bounded retrieval assistance could both serve that proposal.
 
 No result yet establishes faster approval or representative model accuracy. The first useful return preserves the worthwhile qualification problem while marking the processing route as conditional on purpose-specific access and evaluation. If the data owner permits only public, non-representative samples, a narrow demonstration remains possible; the original representative-use claim remains unsupported.
 
@@ -133,7 +133,7 @@ The problem is provisional: no result yet shows that the suspected loss changes 
 - **Benefit inflation:** an inspectable intermediate contribution is described as a guaranteed downstream improvement.
 - **Supplier authority:** an offer is taken as evidence of need, capability, or fulfilment.
 - **Commercial projection:** a research or community contribution is forced into a sales promise.
-- **Feasibility contamination:** an unknown solution causes rejection of a still-worthwhile problem, or a feasible tool creates a supposed need.
+- **Feasibility contamination:** an unknown solution causes rejection of a worthwhile problem, or a feasible tool creates a supposed need.
 
 ### C.40.PC:7 - Conformance Checklist
 
@@ -143,7 +143,7 @@ A conforming problem/contribution account:
 2. **MUST** distinguish the inadequate or foregone result, why it matters, and the proposed contribution.
 3. **MUST** distinguish a supported worthwhile problem, an attributed or disputed claim, an unconfirmed hypothesis, and rejection where those outcomes are live.
 4. **MUST** preserve material contrary evidence, affected-System consequences, and burdens that can reverse the worth claim.
-5. **MUST** state an inspectable acceptance expectation without reporting actual acceptance or achieved benefit.
+5. **MUST** state an inspectable acceptance expectation without reporting acceptance or achieved benefit.
 6. **MUST** distinguish a proposed promise from an existing promise and both from commitment, provision, and fulfilment.
 7. **MUST** expose the evidence or hypothesis linking the contribution to the problem, and a discriminating question when a material uncertainty remains.
 8. **MUST NOT** infer need from novelty, a supplier offer, or solution feasibility, or reject a supported receiving problem solely because solution evidence is missing.
@@ -158,7 +158,7 @@ A conforming problem/contribution account:
 | Faster approval by implication | Qualification support is promoted into an unproved benefit and authority claim. | State the inspectable contribution and qualify stronger benefits separately. |
 | Offer equals commitment | The content of an offer is mistaken for an obtaining provider relation. | Identify the promise source and separately establish any commitment or provision. |
 | One sponsor speaks for everyone | Effects and conflicting interests disappear. | Preserve attributed concerns and consequential missing voices or evidence. |
-| Unreachable therefore worthless | Missing support is allowed to erase a genuine receiving problem. | Retain the problem and return the exact direction or reachability gap. |
+| Unreachable therefore worthless | Missing support is allowed to erase a receiving problem. | Retain the problem and return the direction or reachability gap. |
 
 ### C.40.PC:9 - Consequences
 
@@ -176,7 +176,7 @@ An explicit confirming question gives provisional value a practical use. It says
 
 **Practice question.** How can a promising lead become a worthwhile receiving problem and proposed contribution without importing the supplier's preferred solution or overstating benefit?
 
-**Best-known line for this use.** Combine receiver-grounded problem inquiry with an explicit problem/contribution distinction. [ISO 56007:2023](https://www.iso.org/standard/75068.html) supplies the bounded opportunity/concept front-end before solution development. Problem-structuring Methods supply materially different formulations and their evidence consequences; A.2.3 supplies promise-content identity without conflating commitment and fulfilment. This pattern **adapts** those contributions in `:4.1`–`:4.6` to one prospective development contribution and its confirming return. Domain evidence, rather than the source combination, supports the actual worth claim.
+**Best-known line for this use.** Combine receiver-grounded problem inquiry with an explicit problem/contribution distinction. [ISO 56007:2023](https://www.iso.org/standard/75068.html) supplies the bounded opportunity/concept front-end before solution development. Problem-structuring Methods supply materially different formulations and their evidence consequences; A.2.3 supplies promise-content identity without conflating commitment and fulfilment. This pattern **adapts** those contributions in `:4.1`–`:4.6` to one prospective development contribution and its confirming return. Domain evidence, rather than the source combination, supports the worth claim.
 
 **Serious alternative and trade-off.** An offer-led brief is cheaper when a qualified receiving need and acceptance basis already exist. When they do not, it hides the problem inside the offered answer. At comparable bounded inquiry effort, asking what result is missing and what would count as a supplied contribution can distinguish qualification support from faster approval and from shift handoff in `:5.1`. A full decision-modeling engagement can handle richer competing values, but is unnecessary when a short receiver account or a negative answer resolves the lead. Use that fuller work when it changes the decision rather than making it an entry requirement.
 
@@ -192,7 +192,7 @@ An explicit confirming question gives provisional value a practical use. It says
 - **Uses A.2.3:** identity and conditions of relied-on promise content, distinct from commitment and provision.
 - **Uses A.15.9:** the needed bounded outside-practice result and its reliance boundary, without performing the supplier's Method.
 - **Supplies C.40.DC:** worthwhile problem/proposed-contribution accounts, including explicit hypotheses and acceptance expectations.
-- **Supplies C.40.JF:** the value and contribution claims whose necessary transitions still need qualification; a worthwhile problem is not a reachability verdict.
+- **Supplies C.40.JF:** the value and contribution claims whose necessary transitions need qualification; a worthwhile problem is not a reachability verdict.
 - **Uses C.40.RQ:** local requalification when receiving need, source, acceptance, protection, or horizon changes.
 
 ### C.40.PC:End

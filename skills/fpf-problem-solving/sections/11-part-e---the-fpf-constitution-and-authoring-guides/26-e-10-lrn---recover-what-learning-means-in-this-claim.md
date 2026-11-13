@@ -1,0 +1,217 @@
+## E.10.LRN - Recover What “Learning” Means in This Claim
+
+> **Type:** lexical and ontological precision restoration (E)
+>
+> **Status:** Stable
+>
+> **Plain name:** recover what “learning” means here
+
+### E.10.LRN:0 - Use This When
+
+Use this pattern when claim-bearing wording says *learn*, *learning*, *learned*, *taught*, or *trained*, and the sentence does not yet reveal which participant, changed subject, Work, Method, result, evidence, or receiving use is meant.
+
+**First useful result.** Rewrite or split the sentence so that each exact subject claim is recognizable, then continue with the direct pattern for that claim. A local repair normally ends with a recovered claim or ordinary non-use. It does not end with a generic `LearningResult`.
+
+**Cheap exit.** Keep ordinary wording when no FPF inference or action depends on which sense is meant. If the changed subject, operation, result, evidence, and direct pattern are already explicit, use that pattern directly.
+
+**Not this pattern when.** Use the relevant subject practice to choose a teaching or training Method, assess a capability, fit a statistical model, design an experiment, perform inference, measure a result, or decide what to do next. Use `E.10.LRN` to identify the claim that calls for that practice.
+
+`LRN` remains in this PatternID because the ambiguous source wording opens the recovery. It is not a Tech designation for one governed process or value and is not a UTS-row precedent.
+
+### E.10.LRN:1 - Problem Frame
+
+The same word family is used for different situations:
+
+- a person inquires, notices, remembers, or reorganizes an episteme;
+- another System performs teaching, coaching, demonstration, or feedback Work;
+- a person acquires a capability for later Work;
+- a computing System performs parameter-estimation or optimization Work using an algorithm and returns a fitted model;
+- an inference Method returns a posterior or approximate distribution;
+- a query policy acquires data or reduces uncertainty;
+- a probe decodes a representation from system-side phenomena;
+- an organization or culture retains, reconstructs, selects, or loses a practice variant;
+- a course, lesson, dataset, artifact, or guide is produced; or
+- ordinary prose says only that someone found something out.
+
+These uses can occur together without becoming one process. A teacher can teach while no capability is acquired. A person can acquire a capability without the sentence identifying a teacher. A model can be trained without a deployed System satisfying its capability claim. A posterior can be approximated without any human or machine capability changing.
+
+### E.10.LRN:2 - Problem
+
+When the umbrella word remains load-bearing, authors transfer evidence and conclusions from one subject to another without naming the change. A lesson is mistaken for a capability, an artifact for proof of authorship or transfer, and a benchmark improvement for generalization. Information gain is mistaken for competence gain, and model fitting for inference. An organizational slogan stands in for changed practice, and a repeated pattern for a universal atom of knowledge.
+
+The repair must preserve familiar language while preventing those transfers. The direct subject patterns define capabilities, Work, Methods, epistemes, evidence, models, representations, cultures, and decisions. This pattern recovers the claim to which they apply.
+
+### E.10.LRN:3 - Forces
+
+| Force | Tension |
+| --- | --- |
+| Useful umbrella vs distinct subjects | Ordinary language needs *learning*; action-bearing claims need the exact changed subject and result. |
+| Occurrence vs outcome | Teaching or training Work can occur without establishing the intended capability or generalization result. |
+| Human and machine cases | Biological and computing substrates can support different operations; substrate alone does not classify the claim. |
+| Internal change vs inspectable construction | An external artifact or performance can expose reasoning without proving capability, authorship, transfer, or retention. |
+| Source fidelity vs FPF ontology | A paper may deliberately use one label across several quantities; FPF preserves that quotation while recovering distinct claims for use. |
+| Precision vs paperwork | One local rewrite should suffice when no durable recovery record is needed. |
+
+### E.10.LRN:4 - Solution
+
+Recover the current claim from its participants, subject, operation, result, and use rather than from the word *learning*.
+
+1. **Bound the wording use.** Quote or locate only the sentence or source expression whose interpretation changes a claim, inference, or action.
+2. **Recover the grammatical commitment.** Identify who or what is said to have taught, trained, learned, changed, produced, inferred, or acquired something. Grammar foregrounds a claim but does not fill missing causal participants or evidence.
+3. **Name the changed subject.** State whether the current claim concerns a person's capability, an episteme, a model and parameters, a probability distribution, a representation relation, an organization or population, a product, a Work occurrence, or another exact subject.
+4. **Separate Work, Method, and result.** Name inquiry, teaching, practice, training, optimization, inference, experiment, data acquisition, assessment, publication, or cultural-continuation Work only when it is current. Keep its performer, Method, inputs, and dated occurrence separate from the result attributed to another subject.
+5. **State the evidence and any material transfer boundary.** Name what was observed or assessed and the task, population, configuration, window, support arrangement and use conditions required to interpret that evidence or rely on the claim. Identify a stronger reading as unsupported only when independent local grounds make it plausible and the distinction changes use.
+6. **Select one direct branch.** Use the branch table below. When one sentence contains several branches, keep the claims distinguishable and route each separately.
+7. **Stop after recovery.** Return the repaired claim and direct pattern, or an exact missing-information, missing-governor, quote-only, ordinary-use, or blocker result. Do not create a generic learning record, role kind, process, progress scale, or causal relation.
+
+#### E.10.LRN:4.1 - Direct branches
+
+| Recovered current claim | Required route and boundary |
+| --- | --- |
+| A person or other System acquired or changed a capability for later Work | Use `A.2.2` and the direct capability-development/evaluation patterns. Name holder, target Work, conditions, support arrangement, performance evidence, transfer horizon, and uncertainty. Practice, teaching, a score, or one successful performance does not by itself establish the capability. |
+| A teacher, coach, peer, tool-using System or other admitted System performed teaching, demonstration, feedback, or practice-support Work | Use A.13 and A.15.1 for the independently admitted performer and dated Work, A.3.1 for the enacted Method, and direct responsibility/authority relations when current. Environmental conditions keep their own causal or support relations unless an actual performer is independently established. The occurrence and intended result do not entail capability acquisition by the recipient. |
+| A person inquired, noticed, remembered, understood, or revised an episteme | Recover the episteme or claim change and the representation, source use or inquiry Work asserted or required for the receiving use, using `C.2.1` and the direct subject pattern. Use `A.6.3.RT` for a representation-scheme transition and A.10 when the source-to-use account is implicit or must be replayable. A claim that the holder acquired the ability to understand, explain, or reason in later Work uses the capability branch above, with its conditions and evidence. |
+| A statistical or machine-learning system was trained or fitted | Identify target function, distribution, or policy; data and data-generating assumptions; model family; objective or estimator; training/optimization Work; and resulting model edition. Recover the evaluation and deployment conditions required by the claim being made. Parameter change, a low training loss, a generated sample, and deployed-system capability remain different claims. |
+| A probabilistic inference Method returned a posterior or approximation | Identify the target model/distribution, observations, selected inference Method, computation and returned distribution, with the approximation family, objective/divergence/bound and diagnostics required by that Method or receiving claim. Variational inference is an inference/optimization branch. |
+| Active learning, curiosity, exploration, question asking, or data mining selected or acquired information | Identify the query, observation, experiment, or data-acquisition option; current belief/model state; expected or observed information result; cost; and receiving decision. Information acquisition or uncertainty reduction does not by itself establish capability, transfer, useful action, or an evidence-qualified next choice. |
+| A probe found a “learned representation” | Recover the system-side phenomenon, the probe and decoded result, and the representation relation supporting the claim. Identify training history or probe-training Work when relevant, `A.6.3.RT` when a representation-scheme transition is at issue, `C.29` when a mathematical representation or transfer question remains, and any episteme whose admission is claimed. Decodability or a readable label does not establish causal use, internal semantic identity, or general capability. |
+| An organization, community, or culture “learned” | Recover the claimed change in the bounded practice or population through its direct pattern and `C.36`: for example, transmission, reconstruction, selection, memory, retention, loss, or enacted practice. Name the participants and grounds needed by that claim. Recover Methods, assignments and Work when the asserted change relies on them. A report, policy, or lesson-learned entry does not by itself establish changed enacted practice. |
+| A course, lesson, guide, dataset, pattern, artifact, or other learning product was created or used | Identify the product episteme or artifact, any claimed production Work, publication or use relation, intended capability contribution and observed result separately. Use of an existing product need not assert its production Work. The carrier is not the holder's capability or internal state. |
+| Ordinary or quoted wording makes no FPF-governed claim | Preserve it. If relied on later, recover the exact branch then. |
+
+#### E.10.LRN:4.2 - Grammar does not settle the route
+
+| Wording | What it foregrounds | What remains unresolved |
+| --- | --- | --- |
+| “The teacher taught Mira to swim.” | Teaching Work, participants, and an intended capability result. | Whether Mira acquired, retained, or transferred the swimming capability; the exact causal contribution of the teaching. |
+| “Mira learned to swim.” | Ordinarily, a changed capability of Mira. | Whether the route included a teacher, self-directed inquiry, practice, tool, peer, environment, or several contributors; the evidence and transfer boundary. |
+| “Mira learned from the manual.” | A source-use or inquiry route may be claimed. | The exact episteme change, capability result, evidence, and whether the manual was merely available or actually used. |
+| “The GAN learned the distribution.” | Source-local shorthand for adversarial training and a resulting model. | What distributional relation was established, which model edition, evaluation/generalization basis, and deployed capability. |
+| “Learning progress increased.” | Some change over a window. | Whether the coordinate is performance, capability evidence, prediction error, information gain, model fit, compression, representation, or something else. |
+
+Passive and active grammar can also shift attention without changing ontology. “Was taught” foregrounds an intervention received. “Learned” foregrounds the attributed result. Neither wording alone establishes the full causal route.
+
+#### E.10.LRN:4.3 - Construction, public results, and patterns
+
+Constructivism and constructionism remain source-local theories and Method families. Constructionism shares the learner-side construction emphasis and adds a design commitment to making something public or shareable. This commitment guides FPF Method and evidence design. A model, program, explanation, dance, diagram, or other external construction can expose distinctions and Methods for inspection.
+
+The construction does not prove capability, authorship, independent use, transfer, or retention. Pair construction tasks with representative later-Work tasks and direct evidence when those claims matter. Reciting a poem or reproducing a pattern may establish a narrow remembered performance; it is not automatically action-guiding capability in a new situation.
+
+An FPF pattern is an action-guiding episteme. In a named cultural case it can also be a retained, transmitted, selected, or reconstructed cultural variant under `C.36`. It is not the universal atomic unit of knowledge, a “meme” kind, the holder's internal state, or the holder's capability merely because it was copied or published.
+
+#### E.10.LRN:4.4 - Lightweight local result
+
+Suppose a training record identifies a minimax optimization run, its resulting generator G-17, and sample evaluations T1–T3. The record supports this clarification.
+
+```text
+source wording: the GAN learned the target distribution
+supported clarification:
+  - the recorded run optimized generator and discriminator parameters under its minimax objective
+  - generator G-17 produced the samples evaluated in T1–T3
+  - these observations support the reported evaluation results; exact distributional recovery remains a separate mathematical claim
+continuation: use the statistical-model-fitting Method for any remaining fitting question; examine deployment capability only if the receiving use needs it
+```
+
+No persistent record is required unless another use needs to inspect or reuse this recovery.
+
+### E.10.LRN:5 - Worked Slices
+
+#### E.10.LRN:5.1 - Taught to swim and learned to swim
+
+“A coach taught Lee to swim” opens a teaching-Work claim. Recover coach and Lee as Systems, the dated coaching and practice Work, enacted Method, conditions, and intended result.
+
+“Lee learned to swim” opens a holder-capability claim. Recover target swimming Work, support conditions, observed performance, transfer conditions, and evidence. The capability claim leaves the causal route open. The teaching claim does not prove the capability claim. A later causal question uses `C.28`.
+
+#### E.10.LRN:5.2 - GAN training
+
+A GAN training run is optimization Work over generator and discriminator parameters under a declared objective and data basis. The run, trained model editions, generated samples, benchmark results, and a deployed system's capability are separate. Calling all five “what the network learned” loses the decision-relevant boundaries.
+
+#### E.10.LRN:5.3 - Variational inference
+
+A variational-inference procedure selects an approximate distribution from a declared family by optimizing a divergence or bound against a target probabilistic model. It returns an inferential approximation and diagnostics. It does not establish capability acquisition.
+
+#### E.10.LRN:5.4 - Active learning
+
+An active-learning policy chooses a query or observation because its expected result may improve a model or decision. Recover the current model state, acquisition option, expected information or decision value, cost, returned observation, update, and next decision separately. The data-acquisition choice is closer to inquiry or mining in this branch than to a claim that a holder acquired a capability.
+
+#### E.10.LRN:5.5 - Public construction
+
+A participant builds and explains a working pump simulation. The artifact and explanation make some model choices inspectable. Assessment Work may use them as evidence for bounded claims.
+
+Independent diagnosis of a changed pump configuration is a different representative task. Use adequate existing performance evidence for that capability or transfer claim. If its relevant conditions remain untested, a warranted test under the declared support conditions can supply the missing evidence.
+
+#### E.10.LRN:5.6 - Organizational learning
+
+An organization publishes a “lessons learned” report. This establishes an available episteme. A supported claim that a new variant entered an institutional memory may finish at that narrower result.
+
+A claim that people changed their practice needs the relevant Method, assignment and Work facts and evidence of the claimed change. Recover selection, retention or operating consequences only for the cultural claim that uses them. Publication alone does not establish changed enacted practice.
+
+### E.10.LRN:6 - Bias Annotation
+
+- **Human-default bias:** do not assume every use concerns a person's capability.
+- **Machine-anthropomorphism bias:** do not translate model fitting into human cognition or agency.
+- **Substrate bias:** biological and computing substrates can support several kinds of Work and result; substrate does not choose the branch.
+- **Artifact bias:** public construction improves inspectability but does not prove authorship, capability, or transfer.
+- **English-grammar bias:** active/passive voice and English lexical convention do not establish causal structure.
+- **Metric bias:** a changed score or loss does not identify which subject changed or which stronger claim it supports.
+
+### E.10.LRN:7 - Conformance Checklist
+
+1. Is the word family claim-bearing for the current use?
+2. Are participants, changed subject, Work or Method, result, and receiving use explicit enough to choose a direct pattern?
+3. Are teaching/training occurrences separated from capability, model, inference, or generalization results?
+4. Does the evidence identify the task or population and the conditions, support arrangement, window and locally grounded transfer boundary required by the claim or receiving use?
+5. Are information acquisition, belief/model update, statistical fitting, and capability change kept distinct?
+6. Are public constructions, recall performances, patterns, and cultural variants kept distinct from holder capability and internal state?
+7. Is source-local wording preserved as quotation where needed without becoming FPF ontology?
+8. Did the repair avoid a generic `Learning`, `Learner`, `Teacher`, `LearningProgress`, or `LearningResult` kind or UTS row?
+9. Did each recovered claim return to its direct pattern and stop there?
+
+### E.10.LRN:8 - Common Anti-Patterns and Repairs
+
+| Anti-pattern | Repair |
+| --- | --- |
+| One `Learning` process joins teaching, capability, training, inference, and data acquisition | Split by changed subject, Work, result, evidence, and receiving use. |
+| “The teacher taught it, therefore the person can do it” | Separate teaching Work from capability evidence and transfer. |
+| “The model learned it, therefore the deployed System can do it” | Separate training, model edition, evaluation, deployment, and capability. |
+| “Information gain is learning progress” | Name the belief/model update and keep capability change separate. |
+| “A public artifact proves knowledge” | Identify the claim and what the artifact supports. A proposition may be supported by its proof or explanation; a claim about the holder's independent use or transfer needs evidence of that performance under the relevant conditions. Reuse sufficient evidence, and test only the remaining consequential question. |
+| “A pattern is the atom of knowledge or a meme” | Treat the pattern as an episteme and, only in a named case, a cultural variant under `C.36`. |
+| Replace *learning* with one preferred synonym | Recover the subject claim; vocabulary replacement alone does not close the ambiguity. |
+
+### E.10.LRN:9 - Consequences and Reopen Condition
+
+**Benefits.** Education, human capability, machine learning, inference, inquiry, representation, organizational, and cultural claims can share readable prose without sharing false identity. Evidence stays attached to the result it supports. Downstream DPFs can specialize Methods without inheriting an ambiguous FPF process.
+
+**Costs.** A load-bearing umbrella use needs one bounded recovery, and some sentences must be split. Domain methods and evidence still need their direct products.
+
+Reopen this pattern when a recurring claim-bearing use cannot reach one direct subject pattern, ordinary non-use, or exact blocker with the recovery fields above; when cold readers still transfer evidence among branches after the repair; or when a direct pattern absorbs the same entry, action, first result, and stop without losing discoverability.
+
+### E.10.LRN:10 - Rationale
+
+The recurring transdisciplinary problem is lexical recovery, not a common learning substance. The same bounded action applies across these cases: recover who or what changed, separate Work and Method from result, state evidence and any action-changing transfer boundary, split unlike claims, and route each claim to its owner. That action changes practice while leaving every substantive ontology and Method with its direct pattern.
+
+Familiar spelling is insufficient for one `UnifiedTermRow`. A durable public row is considered only for an independently governed value after its own naming and use tests. The umbrella word creates neither that value nor a Bridge among the branches.
+
+### E.10.LRN:11 - SoTA Echoing
+
+| Source line | Adopted distinction | Limit retained here |
+| --- | --- | --- |
+| OECD, [*Teaching Compass*](https://www.oecd.org/en/publications/oecd-teaching-compass_8297a24a-en.html), 2025 | Keep teaching agency and practice distinct from student competency development. | The framework does not define FPF kinds or prove capability from teaching occurrence. |
+| ISO/IEC 22989:2022 terminology as reused by [ISO/IEC TS 42119-2:2025](https://www.iso.org/obp/ui?_escaped_fragment_=iso%3Astd%3Aiso-iec%3Ats%3A42119%3A-2%3Aed-1%3Av1%3Aen) | Treat ML as computational optimization of model parameters and keep the resulting model and testing distinct. | Source-local terminology does not settle human learning, deployment capability, or generalization evidence. |
+| Goodfellow et al., [*Generative Adversarial Nets*](https://arxiv.org/abs/1406.2661), 2014 | Separate minimax training Work, trained models, and generated samples. | Historical anchor; it does not establish every current GAN evaluation or deployment claim. |
+| de Boer et al., [*Guiding Curiosity*](https://onlinelibrary.wiley.com/doi/10.1111/desc.70229), 2026 | Preserve the current empirical contrast between performance-based and information-based uses of “learning progress.” | Shared source wording does not make capability change and information gain the same FPF result. |
+| Tajwar et al., [*Training a Generally Curious Agent*](https://proceedings.mlr.press/v267/tajwar25a.html), 2025 | Keep trained information-gathering capability, interaction data, environment feedback, and transfer conditions explicit. | One agent-training line does not supply a universal curiosity or learning objective. |
+| Papert and Harel, [*Situating Constructionism*](https://web.eecs.umich.edu/~mjguz/csl/home.cc.gatech.edu/allison/uploads/4/papert91.html), 1991, and Holbert, Berland and Kafai (eds.), [*Designing Constructionist Futures*](https://mitpress.mit.edu/9780262361095/designing-constructionist-futures/), 2020 | Treat public/shareable construction as a Method and evidence-design commitment, not a synonym for incremental constructivism. | Artifact existence does not prove authorship, capability, transfer, or retention. |
+| Nichols et al., [cultural-evolution review](https://www.cambridge.org/core/journals/evolutionary-human-sciences/article/cultural-evolution-a-review-of-theoretical-challenges/F1DAA0367EBB4F7866F9B624DB2D9BEA), 2024 | Keep copying and reconstructive transmission alternatives and the unit-of-transmission question open. | A pattern can be one named cultural variant without becoming a universal meme or knowledge atom. |
+
+Recheck a source line only when a newer edition changes a distinction used by this Solution or when contrary evidence shows that the current branch boundary changes a practitioner action. Recency alone does not merge branches.
+
+### E.10.LRN:12 - Relations
+
+- **Selected by:** `E.10` and `E.10.ARCH` when learning-word recovery is current.
+- **Builds on:** `F.0.1`, `F.0.2`, `F.1`, `F.17`, `F.18`, `C.2.1`, A.3, A.15, `A.2.2`, `A.10`, `A.6.3.RT`, `C.16`, `C.29`, and `C.36`.
+- **Returns to:** the direct human-capability, Work, Method, statistical-model-fitting, inference, experiment/data-acquisition, representation, product, publication, organizational, cultural, evidence, or decision pattern selected by the recovered claim.
+- **Keeps outside:** one generic Learning process, learner/teacher role kinds, teaching or training Method selection, capability assessment, model fitting, inference, experiment design, evidence qualification, causal explanation, and choice.
+
+### E.10.LRN:End

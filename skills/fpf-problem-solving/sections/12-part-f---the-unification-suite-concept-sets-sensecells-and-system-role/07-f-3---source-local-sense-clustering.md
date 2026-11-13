@@ -4,7 +4,7 @@
 **Type:** Architectural pattern.
 
 > **Status:** Stable
-**Depends on.** F.1 **Question-Relative Source Selection**; F.2 **Source-Local Term Harvesting & Normalisation**; F.17 for the optional three-part local-sense cell; E.10.D1 **Recovering What “Context” Means in Use**; A.7 **Strict Distinction**; A.11 **Ontological Parsimony**.
+**Depends on.** F.1 for question-relative source selection; F.2 **Source-Local Term Harvesting & Normalisation**; F.17 for the optional three-part local-sense cell; E.10.D1 **Recovering What “Context” Means in Use**; A.7 **Strict Distinction**; A.11 **Ontological Parsimony**.
 **Coordinates with.** F.4 **SystemRoleKindDescription**; F.7 **Concept-Set Table**; F.8 **Mint or Reuse Decision**; F.9 only when two exact local meanings need a tested relation.
 **Aliases (informative).** *source-local clustering*; *sense consolidation*.
 
@@ -25,7 +25,7 @@ Source-local lexical notes often over- or under-differentiate meaning:
 3. **Source drift:** different chapters, editions, or translations are blended without checking whether the interpretation basis changed.
 4. **Didactic drift:** the Tech and Plain labels begin to teach different things.
 
-F.3 repairs this by testing usage under the exact source basis rather than by counting strings.
+Test how each expression is used under the exact source basis. Counting strings cannot distinguish these cases.
 
 ### F.3:3 - Forces
 
@@ -57,7 +57,7 @@ The cluster’s outcome is a **LocalSenseClaim**, with supporting expressions, a
 
 ### F.3:6 - Solution — how to think about clustering
 
-#### F.3:6.1 - Consolidate source-blessed aliases
+#### F.3:6.1 - Consolidate aliases supported by source usage
 
 If spelling variants, abbreviations, or explicit synonyms are interchangeable in the relevant passages and do not change a conclusion, let one LocalSenseClaim cover them.
 
@@ -67,7 +67,7 @@ If spelling variants, abbreviations, or explicit synonyms are interchangeable in
 
 Split when the same head takes materially different participants or occupies a different place in the source’s propositions.
 
-*Example:* a BPMN *event* as a diagram node is not an outage occurrence merely because a tutorial uses the same word narratively.
+*Example:* in a BPMN diagram, *event* names a node. In a tutorial’s account of an outage, the same word can name an occurrence.
 
 #### F.3:6.3 - Split divergent entailments
 
@@ -77,7 +77,7 @@ If one use entails occurrence in time and another entails a design structure or 
 
 #### F.3:6.4 - Prefer the coarsest adequate partition
 
-Merge candidates when the recovered source uses establish that they are interchangeable for the receiving question and preserve every relevant conclusion. A failed attempt to find a distinction is insufficient when the source basis is too weak to decide. Keep that uncertainty explicit. Split when a concrete counterexample would otherwise be admitted; do not split merely to fill a taxonomy.
+Merge candidates when the recovered source uses establish that they are interchangeable for the receiving question and preserve every relevant conclusion. A failed attempt to find a distinction is insufficient when the source basis is too weak to decide. State which comparison remains unresolved. Split when a concrete counterexample would otherwise be admitted; do not split merely to fill a taxonomy.
 
 #### F.3:6.5 - Keep labels honest
 
@@ -97,7 +97,7 @@ For each interpretation basis used by the receiving question, F.3 yields a small
 * an optional counterexample that sharpens the boundary;
 * an optional F.17 SchemeSenseCell when durable addressability is worth its cost.
 
-These are reference points for reasoning. They are not mandatory records, and their proximity creates no relation.
+Use these claims as reference points for reasoning. They can be stated in ordinary prose; make a record when the receiving use requires one. Displaying the claims together establishes no relation.
 
 ### F.3:8 - Invariants
 
@@ -116,7 +116,7 @@ These are reference points for reasoning. They are not mandatory records, and th
 * **Argument probe.** Substitute the participants from one use into the other. Split when this exposes incompatible source-required participant kinds or semantic roles. A false instance alone does not establish another sense: “Alice is licensed” and “Bob is licensed” can differ in truth while using `licensed` with the same meaning.
 * **Entailment probe.** Does one use imply an occurrence while the other implies a description, kind, or status? Split.
 * **Label inversion.** When a Plain label is used, read it alone. If it invites a broader claim, tighten it.
-* **Counterexample ping.** Use a source-grounded excluded use when it matters to the receiving question. If that use falls inside the claim, refine the boundary.
+* **Test a counterexample.** Use a source-grounded excluded use when it matters to the receiving question. If that use falls inside the claim, refine the boundary.
 * **Memory rule.** Poor recall is a cue to inspect the partition for needless splits. Retain every source-grounded distinction that changes the receiving use.
 
 ### F.3:10 - Anti-patterns & remedies
@@ -125,9 +125,9 @@ These are reference points for reasoning. They are not mandatory records, and th
 | --- | --- | --- | --- | --- |
 | **A1** | String = sense | Surface identity decides the cluster. | Different propositions collapse. | Compare argument patterns and entailments. |
 | **A2** | Cross-source creep | A BPMN use is folded with a PROV use inside F.3. | The interpretation basis changes unnoticed. | Finish each local claim first; test any relation in F.9. |
-| **A3** | Over-granulation | *SLO* and its full form become separate claims without a difference in use. | Friction rises without gain. | Consolidate source-blessed aliases. |
+| **A3** | Over-granulation | *SLO* and its full form become separate claims without a difference in use. | Friction rises without gain. | Consolidate aliases whose source uses support the same claim. |
 | **A4** | Under-granulation | Diagram node and real occurrence share one claim. | Later inferences contradict each other. | Split on argument or entailment conflict and add a counterexample. |
-| **A5** | Imported definition | A dictionary replaces the selected source passages. | The result is no longer source-local. | Ground the claim in the actual passages. |
+| **A5** | Imported definition | A dictionary replaces the selected source passages. | The result is no longer source-local. | Ground the claim in the passages from the selected source. |
 | **A6** | Label drift | Plain adds scope not present in Tech or the claim. | The cold reader learns the wrong concept. | Keep both labels within the same claim. |
 | **A7** | Meaning used as factual warrant | A sense claim is used to establish that a policy, equation or kind criterion holds for an instance. | Interpreting a substantive condition and establishing its application are different questions. | Keep defining content needed to explain the source meaning; test the separate substantive claim under its direct pattern. |
 | **A8** | Edition blend | Two editions with changed usage share one unqualified claim. | Replay and comparison become unreliable. | State each basis; merge only if evidence supports the same claim. |
@@ -144,7 +144,7 @@ An optional one-glance card may show:
 * **LocalSenseClaim**;
 * **supporting expressions and passages**;
 * **counterexample**;
-* **F.17 cell**, only when one is actually used.
+* **F.17 cell**, only when its stable address is used for this claim.
 
 The card is a display. Its fields do not create a new object or relation.
 
@@ -190,7 +190,7 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 
 **Task.** Claim: a cyclic or event-driven runtime unit that invokes programs. Counterexample: a control algorithm or program description is not the task occurrence.
 
-### F.3:13 - Safe reasoning moves
+### F.3:13 - Reasoning about a local-sense cluster
 
 1. **Alias consolidation.** Merge expressions only when the source uses them interchangeably for the current question.
 2. **Argument split.** Split uses whose required participants differ materially.
@@ -200,7 +200,7 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 6. **Label check, when labels are used.** Tech stays idiomatic; Plain explains without widening.
 7. **Address check.** Create an F.17 cell only when the receiving use needs a stable address.
 8. **Edition check.** Re-evaluate the interpretation basis before carrying a claim across an edition change.
-9. **Coverage ping.** If a frequent source expression that matters to the receiving question has no local-sense claim, check whether one useful cluster is missing.
+9. **Check coverage.** If a frequent source expression that matters to the receiving question has no local-sense claim, check whether one useful cluster is missing.
 10. **Stop rule.** Do not infer a relation to another local meaning from clustering alone.
 
 ### F.3:14 - Relations
@@ -219,7 +219,7 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 - **F.8** compares proposed wording with exact existing designations and claims without treating either as the value being named.
 - **F.9** tests a relation only between exact local meanings whose interpretation bases differ. F.3 establishes no Bridge, cross-source sameness, substitution, or use licence.
 
-**Used by.** Part C patterns may cite a local-sense claim under its exact source and scheme; the direct pattern still defines or constrains the substantive value or relation in the example.
+**Used by.** Part C patterns may cite a local-sense claim under its exact source and scheme; the direct pattern defines or constrains the substantive value or relation in the example.
 
 ### F.3:15 - Migration notes
 
@@ -251,6 +251,6 @@ The namespace expansion supports the alias consolidation; the temporal-occurrenc
 
 ### F.3:17 - Didactic close
 
-> “Start with one explicit source and interpretation basis. Merge aliases only when the source uses them interchangeably and no relevant conclusion changes. Split uses when their participants, entailments, or time stance differ. Add labels when a naming or didactic use needs them, preserving the same claim, and a short counterexample when a boundary test is needed. Use an F.17 cell only when the receiving work needs the address. Nothing in this clustering makes two sources the same; test that separately in F.9.”
+> “Start with one explicit source and interpretation basis. Merge aliases only when the source uses them interchangeably and no relevant conclusion changes. Split uses when their participants, entailments, or time stance differ. Add labels when a naming or didactic use needs them, preserving the same claim, and a short counterexample when a boundary test is needed. Use an F.17 cell only when the receiving work needs the address. To test a proposed relation between meanings from different sources, use F.9.”
 
 ### F.3:End

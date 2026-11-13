@@ -13,4 +13,4 @@ Use `F.19` for the complete connected reading and repair. This summary shows whe
 
 `E.10` supplies wording cues and routes remaining FPF meaning questions; `E.10.ARCH` directs unresolved ontology questions to their governing patterns. `A.6.P`, `C.2.P`, `C.16.P`, `C.16.Q`, `C.30.P`, `A.19.SPR`, `A.6.F` and `F.18` supply subject-specific restoration or naming guidance. `C.29` helps when a mathematical lens is needed. `A.6.0` governs formal-substrate declarations when a formal signature is the object at issue. `F.19` governs the connected rewrite and local rereading.
 
-A repair succeeds when it preserves the warranted meaning and lets the intended reader use it, obtain a needed clarification or recognize the exact remaining blocker.
+A repair succeeds when it preserves the warranted meaning and lets the intended reader use it, obtain a needed clarification or identify what still blocks the work.

@@ -10,7 +10,7 @@
 
 **Sufficient result and non-use.** State the relations and conditions that can change the intended interpretation, check or action. Use an already sufficient description directly. A new account, classification or chart is unnecessary when the receiving work can recover those facts and conditions from the available text.
 
-**What goes wrong if missed.** A report can preserve a sentence while losing access to the observation, model state or interaction needed to use it. An unspecified claim that it is "anchored" leaves the reader to infer whether this means derivation, evidence or an actual condition of action.
+**What goes wrong if missed.** A report can preserve a sentence while losing access to the observation, model state or interaction needed to use it. An unspecified claim that it is "anchored" leaves the reader to infer whether this means derivation, evidence or a condition of action.
 
 **What this buys.** The recipient can identify which conclusions remain supported, which action conditions still hold and what must be recovered before the intended use can continue.
 
@@ -28,11 +28,13 @@ A common label can conceal the particular relation on which a use depends. Knowi
 | **Comparability vs oversimplification** | Compare a shared aspect without treating different relations as values of one unspecified Scale. |
 
 ### C.2.6:4 - Solution
-Recover the claims about sources, evidence, access and action conditions that the receiving work actually needs. State each with its participants and grounds. Then determine what publication, translation or a changed use preserves, changes or leaves unknown. The result is an ordinary account of those facts and conditions; C.2.1 governs the account and E.24.PUB governs its publication.
+Recover the claims about sources, evidence, access and action conditions that the receiving work needs. State each with its participants and grounds. Then determine what publication, translation or a changed use preserves, changes or leaves unknown. The result is an ordinary account of those facts and conditions; C.2.1 governs the account and E.24.PUB governs its publication.
 
 #### C.2.6:4.0a - Relations, readings and a shared account
 
-A source relation, an evidence-use claim and an operator's use of an alert can hold together. Each keeps its own predicate and grounds. For empirical grounding, apply C.2.1:4.3 to the designated claim coverage and observation or test; apply A.2.4 to the relation between the evidence episteme and its target claim, and A.10 when provenance or bounded reliance must be established. Use C.2.P to distinguish the epistemic objects. When basedness is hidden by an umbrella word, apply A.6.6:4.0; A.6.P supplies the wider route to an unclear direct relation. Return their exact assertion or unresolved condition to the receiving use. An ordinary adequate statement can supply this account without a new formal record.
+A source relation, an evidence-use claim and an operator's use of an alert can hold together. Each keeps its own predicate and grounds. For empirical grounding, apply C.2.1:4.3 to the designated claim coverage and observation or test; apply A.2.4 to the relation between the evidence episteme and its target claim, and A.10 when provenance or bounded reliance must be established. Use C.2.P to distinguish the epistemic objects.
+
+When basedness is hidden by an umbrella word, apply A.6.6:4.0; A.6.P supplies the wider route to an unclear direct relation. Return the recovered assertion or unresolved condition to the receiving use. An ordinary adequate statement can supply this account without a new formal record.
 
 An account collecting several such statements is not one Coordinate. A language-state profile may cite it beside its Characteristic readings. A local summary can occupy a chart slot only when its single measured aspect, subject/input signature and Scale are defined under A.18/A.19, as :15.1 explains. The account's component relations remain recoverable.
 
@@ -45,20 +47,20 @@ The following are recurring examples of questions to resolve, not a closed taxon
 | Where did this reading come from? | The source trace and the operation that produced the reading. If evidence is needed, separately establish what observation supports which target claim. | Trace references, measured events and the calculation or other derivation; evidence qualification for the target claim. |
 | What does this model-derived account report? | The identified model state, probe or decoding operation and its output; the grounds for the interpretation made from that output. | Model-state references, probe conditions and results, and interpretation evidence. |
 | What can the recipient recover from the document? | The particular assertions available to that recipient, and any source or evidence claim on which their use depends. | The identified document edition, accessible content and relevant cited sources. |
-| How is the information used in an operator's work? | Who acknowledges, interprets or acts on it, and which actual interaction or rule connects that act to a check or control action. | Operator observation, console event or an applicable action rule, with the implementation or performance needed for the claimed connection. |
+| How is the information used in an operator's work? | Who acknowledges, interprets or acts on it, and which interaction or rule connects that act to a check or control action. | Operator observation, console event or an applicable action rule, with the implementation or performance needed for the claimed connection. |
 
 ##### C.2.6:4.1.1 - Recover the relations needed for one receiving use
 
 1. Identify the episteme edition, the claim or cue being used and the receiving judgement or action. Keep a source episteme and an analyst's resulting account distinct under C.2.P when their contents or concerns differ.
 2. Ask which facts the receiving work needs: for example, the source of a reading when diagnosing a calculation, the relevant observation when checking a pressure claim, or an acknowledgement condition when arranging an operator's next check. Obtain only the relations that can change that work. The table in :4.1 helps locate common questions; the subject of the work determines the answer and can require another relation.
-3. State each needed relation with its actual participants, applicable scope and grounds. When a trace is used as evidence, establish its relation to the target claim as well as its provenance. When an action is claimed, establish the actual interaction or governing condition and the relevant performer. Preserve a consequential unknown instead of filling it from a neighbouring fact.
+3. State each needed relation with its participants, applicable scope and grounds. When a trace is used as evidence, establish its relation to the target claim as well as its provenance. When an action is claimed, establish the interaction or governing condition and the relevant performer. Preserve a consequential unknown instead of filling it from a neighbouring fact.
 4. Compare the source situation with the receiving situation. Identify what remains accessible and applicable, what changed and what those changes permit or prevent. Retain supported claims and return to a missing observation, interpretation or action condition where the proposed use depends on it.
 
 For example, an alert can be computed from a measurement, delivered in a report and acknowledged by an operator. Replacing the report file while preserving the accessible assertions can leave the derivation and evidence unchanged. Discovering that the measurement concerned another pump changes its evidential use for the pressure claim. Disabling an acknowledgement channel changes the interaction available to the operator. These changes call for different continuations, so the account must keep their predicates distinct.
 
 #### C.2.6:4.2 - Contribution boundary
 
-This pattern organizes the source and use questions; their direct patterns establish the individual claims. Representation factors describe how information is represented; closure describes fixity of the current candidate space. Assess those Characteristics under their own definitions. A required bodily observation or operator participation is stated here or in the cited account, with its actual contribution to the receiving work.
+This pattern organizes the source and use questions; the patterns governing those relations establish the individual claims. Representation factors describe how information is represented; closure describes fixity of the current candidate space. Assess those Characteristics under their own definitions. A required bodily observation or operator participation is stated here or in the cited account, with its contribution to the receiving work.
 
 #### C.2.6:4.3 - Several relations and incomplete information
 When several relations matter together, name each and explain its contribution. Distinguish their established conjunction from alternatives left unresolved by the available evidence. For example, "the source was either a sensor reading or a simulation" leaves provenance uncertain; it does not establish that both sources contributed. A generic "mixed" label supplies neither the missing facts nor their conjunction.
@@ -86,20 +88,22 @@ The questions favour explicit source and use claims when they affect a decision.
 - **Text-only illusion.** Treating a written report as a sufficient account of the observation or interaction that its use needs. Recover the relevant claim and its basis.
 - **Representation capture.** Using symbolic/distributed labels to conceal a source or use condition. State that condition separately.
 - **Embodiment mystification.** Treating bodily or operator-loop cues as beyond explicit publication. Publish the relevant observation or action account and the limits of its recovery.
-- **Common-word classification.** Grouping provenance, evidence and interaction as alternative values because each has been called "anchoring". Establish the actual predicate before choosing a Scale.
+- **Common-word classification.** Grouping provenance, evidence and interaction as alternative values because each has been called "anchoring". Establish the predicate before choosing a Scale.
 
 ### C.2.6:9 - Consequences
 The recipient can inspect the facts that make the proposed use possible and return to the particular missing basis. This requires enough source and interaction detail for that use. An account can cite existing adequate descriptions; repeating them or filling every row of :4.1 adds no necessary assurance.
 
 ### C.2.6:10 - Rationale
-`A.16.0`, `A.16.1`, `B.4.1` and an applicable F.9 use need to preserve different facts when a cue is expressed or used elsewhere. An observation may remain the source after it is reported in text, while the recipient has access only to that report. An operator's interaction can change independently of either. Direct statements preserve these distinctions and explain which continuation changes. A common nominal summary is useful only when a specified comparison really consumes it and its criterion consistently measures one aspect (:15.1).
+`A.16.0`, `A.16.1`, `B.4.1` and an applicable F.9 use need to preserve different facts when a cue is expressed or used elsewhere. An observation may remain the source after it is reported in text, while the recipient has access only to that report. An operator's interaction can change independently of either. Direct statements preserve these distinctions and explain which continuation changes.
+
+A common nominal summary is useful only when a specified comparison uses it and its criterion consistently measures one aspect (:15.1).
 
 ### C.2.6:11 - SoTA-Echoing
 The following sources contribute particular distinctions and alternatives for the use questions in :4.1.1. They do not establish one universal classification of the listed relations.
 
 | Source and status | Contribution and boundary |
 |---|---|
-| [Hutchins, *How a Cockpit Remembers Its Speeds* (1995)](https://pages.ucsd.edu/~c8johnson/COGS102B/Hutchins95.pdf), historical account, pp.13–16 | Coordinated instrument settings, spoken reports and pilot actions show why the actual working connections matter. This supports recovery of operator interaction and its conditions. |
+| [Hutchins, *How a Cockpit Remembers Its Speeds* (1995)](https://pages.ucsd.edu/~c8johnson/COGS102B/Hutchins95.pdf), historical account, pp.13–16 | Coordinated instrument settings, spoken reports and pilot actions show why the working connections matter. This supports recovery of operator interaction and its conditions. |
 | [W3C PROV-DM (2013)](https://www.w3.org/TR/prov-dm/#term-Derivation), §§2.2.1.2 and 5.2.1, stable provenance comparator | Derivation exposes the entities, activity, usage and generation involved. Such explicit relations preserve the dependency needed to inspect where a result came from. |
 | [Fraser-Taliente et al., *Natural Language Autoencoders* (2026)](https://transformer-circuits.pub/2026/nla/index.html), Method and Discussion | Activation verbalization distinguishes model-state input from its textual explanation. Reported confabulations require a separate basis for the explanation's claims; identification of the input establishes the source connection only. |
 | [Denamganaï (October 2026)](https://arxiv.org/html/2610.18727v1), §§6.2–7, exploratory preprint | In limited transcript-level tests, activation identification and true-account discrimination differ. This reinforces the boundary between recovering a source connection and warranting an interpretation; processing-level claims remain untested. |
@@ -114,12 +118,14 @@ The following sources contribute particular distinctions and alternatives for th
 An operator first notices vibration through bodily sensation. A prose report describes that observation. A later analyst who has only the report can recover its assertions but cannot repeat the operator's sensation from the text. Distinguish the source cue from the analyst's episteme; identify which observation circumstances the intended comparison or check needs and whether the report preserves them. Apply F.9 when the use claims a semantic correspondence between local senses from different semantic contexts.
 
 #### C.2.6:13.2 - Model-derived score used by an operator
-An episteme records a probe score obtained from a model state. A receiving alert reports that score in a procedure that requires operator acknowledgement before selection of the next diagnostic check. Keep both the source/probe derivation and the acknowledgement condition visible. A console display establishes the latter connection only when the required interaction is actually provided; the displayed score alone does not show that.
+An episteme records a probe score obtained from a model state. A receiving alert reports that score in a procedure that requires operator acknowledgement before selection of the next diagnostic check. Keep both the source/probe derivation and the acknowledgement condition visible. A console display establishes the latter connection only when the required interaction is provided; the displayed score alone does not show that.
 
 #### C.2.6:13.3 - Provenance, evidence and interaction in one alert
 An alert E asserts that Pump P's pressure is below 90 kPa. The software produced E from trace T. An operator has acknowledged E and selected a diagnostic check under the stated procedure. Inspection then shows that T was a measurement of Pump Q.
 
-The derivation from T remains established. T supplies no measurement of P for the claimed pressure: return to an appropriate observation of P before using that measurement as support for this claim. The acknowledgement and selected check remain facts about the operator's work. Whether to continue, suspend or change that check follows its actual rule and purpose; neither derivation nor acknowledgement settles the truth of the pressure claim. A report can publish all these statements together with their different grounds.
+The derivation from T remains established. T supplies no measurement of P for the claimed pressure: return to an appropriate observation of P before using that measurement as support for this claim.
+
+The acknowledgement and selected check remain facts about the operator's work. Whether to continue, suspend or change that check follows its rule and purpose; neither derivation nor acknowledgement settles the truth of the pressure claim. A report can publish all these statements together with their different grounds.
 
 ### C.2.6:14 - Authoring and Review Guidance
 
@@ -142,7 +148,7 @@ For example, a team comparing access to a designated primary check can define on
 When the summary is used in a language-state chart, declare its Characteristic as its own slot. A changed aspect or Scale changes that chart's meaning under A.19:5.1.2; preserve or establish an explicit mapping when an old position must be compared with it. C.3.2 governs any separate classification using these readings.
 
 #### C.2.6:15.2 - Recover a relation hidden by metaphor
-When wording such as "the system wants" or "the note suggests" leaves the intended action or claim unclear, identify what the system does, what the note asserts, or who makes the interpretation. Recover the relevant detector, performer or witness through the direct subject pattern. An ordinary understood metaphor needs no expanded record.
+When wording such as "the system wants" or "the note suggests" leaves the intended action or claim unclear, identify what the system does, what the note asserts, or who makes the interpretation. Recover the relevant detector, performer or witness through the pattern governing the subject. An ordinary understood metaphor needs no expanded record.
 
 #### C.2.6:15.3 - Boundary reminder
 Source and use relations answer their stated questions. Representation, articulation, closure and trust retain their own definitions and tests.
@@ -152,7 +158,7 @@ Source and use relations answer their stated questions. Representation, articula
 Identify the episteme and the receiving use, then state or cite only the source, evidence, access or action conditions that use needs. Make their participants, grounds and any consequential uncertainty recoverable. Include a source transformation when it changes the claim or its use. For one unchanged relation, its adequate existing description can suffice.
 
 #### C.2.6:16.2 - Source-versus-form rule
-Distinguish the source episteme, any receiving episteme and their publication forms under C.2.P. State provenance, evidence and use claims about the actual participants. A prose form alone establishes neither a document as the original source nor a change in the observation or interaction being reported.
+Distinguish the source episteme, any receiving episteme and their publication forms under C.2.P. State provenance, evidence and use claims about the participants. A prose form alone establishes neither a document as the original source nor a change in the observation or interaction being reported.
 
 #### C.2.6:16.3 - Joint-use account
 When several relations jointly enable the use, identify their separate contributions and which facts establish each. Retain the known relations while recovering a missing one; uncertainty about one does not erase the others or establish a mixture.
@@ -174,7 +180,7 @@ Two cues may be paraphrased into the same sentence while being produced by diffe
 For the stated use, check the original source and relevant transformations, what the recipient can recover or do now, and the grounds for the resulting claims. Include the separate F.9 question when a semantic correspondence is claimed. A joint-use account identifies each relation that matters.
 
 #### C.2.6:18.2 - Local extension test
-Add another direct relation when the receiving work needs it. Introduce a nominal summary only when :15.1's aspect, mapping and comparison are actually supplied; a common word for several dependencies is insufficient.
+Add another direct relation when the receiving work needs it. Introduce a nominal summary only when :15.1's aspect, mapping and comparison are supplied; a common word for several dependencies is insufficient.
 
 #### C.2.6:18.3 - Cross-facet reminder
 A changed source or interaction can accompany a change in representation or articulation. Test those changes separately. A model-derived score, a bodily observation or an operator's acknowledgement supplies no reading of vagueness, closure or trust without the corresponding criterion and grounds.

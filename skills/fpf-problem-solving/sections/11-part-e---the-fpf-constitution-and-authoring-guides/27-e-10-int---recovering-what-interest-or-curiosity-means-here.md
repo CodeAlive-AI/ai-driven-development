@@ -6,7 +6,7 @@
 
 ### E.10.INT:1 - Problem frame
 
-**Use this when** a claim that something is *interesting*, *in someone's interest* or *driven by curiosity* is being used to choose work, but leaves you unsure what to do. You may need to select an experiment, retain a promising construction, design an agent's exploration policy or understand why participants want different outcomes.
+**Use this when** a claim that something is *interesting*, *in someone's interest* or *driven by curiosity* guides a choice of work but leaves you unsure what to do. You may need to select an experiment, retain a promising construction, design an agent's exploration policy or understand why participants want different outcomes.
 
 Begin by saying whose interest is involved and what the sentence proposes. “This experiment is interesting” might mean that its result would distinguish two models, that a participant wants to try it, or that the resulting technique could support further experiments. Each meaning can guide useful work.
 
@@ -14,7 +14,7 @@ The first result is a clearer sentence and a next action that follows from its m
 
 ### E.10.INT:2 - Problem
 
-The same word connects several different questions. An informative observation changes beliefs; a learning-progress signal compares what a learner can do; a promising stepping stone offers further possibilities; an affected participant has something to gain or lose. In a joint project these relations often coexist.
+The same word connects several different questions. An informative observation changes beliefs. A learning-progress signal compares what a learner can do. A promising stepping stone offers further possibilities, and an affected participant has something to gain or lose. In a joint project these relations often coexist.
 
 Their differences matter when a phrase becomes an instruction. Asking an agent to maximize “surprise” may reward unpredictable observations instead of observations that help it distinguish its hypotheses. Requiring a promising idea to demonstrate progress toward a distant goal may discard the very construction from which another goal could emerge. Selecting an “interesting rhythm” leaves the choice unresolved until the listener, performer or musical use is known.
 
@@ -35,7 +35,7 @@ Recover the relied-on meaning, then continue the work that gives it value.
 2. **Name the participant and relation.** Identify who is engaged, affected, learning or choosing. Identify what draws attention, what might change, or what the participant stands to gain or lose. Use the distinctions in §4.1 only where they resolve the sentence.
 3. **Preserve combined meanings.** If a participant enjoys an experiment and the experiment could distinguish two models, say both. Let the corresponding motivation and inquiry methods supply their different contributions.
 4. **Restore a needed comparison.** When a score or optimization rule is proposed, name what it compares and under which model, experience or resources. Use §4.2 to resolve ambiguous appeals to surprise, progress or a Goldilocks region.
-5. **Return to the action.** Rewrite the claim so its recipient can choose, inquire, practise, retain a result or explain a concern. Continue once that meaning is sufficient. A shared decision can keep the clarification in its existing account; an ordinary sentence needs no additional form.
+5. **Return to the action.** Rewrite the claim so its recipient can choose, inquire, practise, retain a result or explain a concern. Continue once that meaning is sufficient. A shared decision can keep the clarification in its existing account. An ordinary sentence needs no additional form.
 
 #### E.10.INT:4.1 - Recover the contribution being claimed
 
@@ -52,11 +52,11 @@ These are recurring uses of the wording. Select the ones needed for the sentence
 
 An information-seeking policy can be attributed to a human, an AI agent or a collective whose members obtain and use the information. For a claim about a person's experience, preserve that experiencer. A policy description alone leaves the question of subjective experience open.
 
-A prospective continuation can be supported by a hunch, a newly available operation or a promising variation. State that basis at its actual strength. Where its future destination is unknown, the next action can be to explore or retain the construction. C.18 supplies retention in an exploration archive; C.19 helps choose which directions in an active search pool to continue, retain or stop; C.40 helps develop problems and ways together.
+A prospective continuation can be supported by a hunch, a newly available operation or a promising variation. Say how strongly that basis supports the continuation. Where its future destination is unknown, the next action can be to explore or retain the construction. C.18 supplies retention in an exploration archive; C.19 helps choose which directions in an active search pool to continue, retain or stop; C.40 helps develop problems and ways together.
 
 #### E.10.INT:4.2 - Recover the model behind the comparison
 
-For **surprise**, first recover the quantity being used. The surprisal of an observation, `-log p(observation)`, concerns its probability under a selected model. Bayesian surprise concerns the change from prior to posterior beliefs about chosen variables. Expected information gain evaluates a possible observation before it is obtained. A learning-progress signal compares successive predictive or constructive performance under a learning procedure. Those comparisons can disagree, as §5.1 shows.
+For **surprise**, identify the quantity first. The surprisal of an observation, `-log p(observation)`, concerns its probability under a selected model. Bayesian surprise concerns the change from prior to posterior beliefs about chosen variables. Before choosing a query, expected information gain averages what its possible outcomes would tell the agent about the variables of interest, using their probabilities under the model. A learning-progress signal compares successive predictive or constructive performance under a learning procedure. Those comparisons can disagree, as §5.1 shows.
 
 In **active inference**, distinguish updating beliefs from selecting actions. Predictive coding uses prediction errors to update beliefs about hidden states and, in learning formulations, model parameters. Policy selection also depends on the information and outcomes expected from action. Recover the prior preferences when a source explains avoiding an outcome through its expected surprise. The source's account may couple epistemic and pragmatic value. Preserve that coupling together with the quantities and assumptions that give it meaning.
 
@@ -68,7 +68,11 @@ When a quantitative answer is needed, C.16 supplies measurement and C.17 separat
 
 A project can use information-seeking to distinguish alternatives, learning progress to choose a promising practice opportunity, and novelty or diversity to retain further possibilities. State the contribution of each rule to that project.
 
-For example, a group can test the controller in §5.1 during a maintenance window. The researcher calls input 1 interesting because its response distinguishes two candidate relations. A colleague sees the query construction as material for other unknown interfaces. The maintenance team needs the controller returned to service before the window ends. Recover their claims as three instructions: “Query input 1 to choose the command”; “Keep this construction available for exploration of other interfaces”; and “Schedule controller work within the available window.” If the relation is supplied, the query becomes unnecessary. The potential use of the construction remains, and the window still constrains any remaining controller work.
+For example, a group can test the controller in §5.1 during a maintenance window. The researcher calls input 1 interesting because its response distinguishes two candidate relations. A colleague sees the query construction as material for other unknown interfaces. The maintenance team needs the controller returned to service before the window ends.
+
+Recover their claims as three instructions: “Query input 1 to choose the command”; “Keep this construction available for exploration of other interfaces”; and “Schedule controller work within the available window.”
+
+If the relation is supplied, the query becomes unnecessary. The potential use of the construction remains, and the window still constrains any remaining controller work.
 
 C.11 compares formed options when a choice is needed. C.19 helps decide which directions in an active search pool to continue, retain or stop. A single agent's information-seeking policy uses the applicable subject method; choosing among formed queries can use C.11. C.40 supports the development of problems and ways. The field's methods supply the experiment, training activity or construction itself.
 
@@ -86,9 +90,11 @@ The example constructs an information-seeking policy. Whether a particular contr
 
 #### E.10.INT:5.2 - Progress and a stepping stone
 
-In a constructed example, a compressor learns a dictionary entry for a repeated substring in a fixed data block. Its total lossless description of that block, counting the dictionary and encoded data under the same convention, falls from 100 bits before the update to 80 afterwards. “The second version is more interesting” can now be recovered as “this dictionary update reduced the total description by 20 bits for this block.” If the team is choosing more training, it considers the likely further improvement and the work required.
+In a constructed example, a compressor learns a dictionary entry for a repeated substring in a fixed data block. Its total lossless description of that block, counting the dictionary and encoded data under the same convention, falls from 100 bits before the update to 80 afterwards. “The second version is more interesting” can now be recovered as “this dictionary update reduced the total description by 20 bits for this block.”
 
-Another construction may deserve attention even though that measure has not improved. In Stanley and Lehman's Picbreeder example, a participant retained and developed an image resembling an alien face; a car-like image appeared through later changes. The first participant could act on the available image and its variation possibilities before knowing that destination. The practical result of this recovery is to retain the construction and its means of variation for exploration. C.18 governs an archive used for that purpose.
+If the team is choosing more training, it considers the likely further improvement and the work required.
+
+Another construction may deserve attention even though that measure has not improved. In Stanley and Lehman's Picbreeder example, a participant retained and developed an image resembling an alien face; a car-like image appeared through later changes. The first participant could act on the available image and its variation possibilities before knowing that destination. For further exploration, retain the construction and its means of variation. C.18 governs an archive used for that purpose.
 
 These cases permit different choices: improving a known performance measure and preserving a possible starting point for new work.
 
@@ -98,7 +104,7 @@ A workshop needs music for listeners who are familiar with 4/4 and are beginning
 
 Recover the request as “choose material that helps these listeners maintain the beat and want to move while encountering 7/8.” The facilitator can start from simpler 7/8 material and adjust from the listeners' response. If the purpose is instead to exercise a skilled drummer's coordination, that practice question needs its own choice of material.
 
-This distinction is supported by Spiech and colleagues' study: Western listeners' groove ratings peaked at moderate complexity in 4/4, while simpler rhythms received the highest ratings in the less common meters tested. Here *groove* means the pleasurable urge to move. The study supports adapting the comparison to listener and meter; the workshop's teaching method supplies the exercise.
+Spiech and colleagues found that Western listeners' groove ratings peaked at moderate complexity in 4/4, while simpler rhythms received the highest ratings in the less common meters tested. Here *groove* means the pleasurable urge to move. The study supports adapting the comparison to listener and meter. The workshop's teaching method supplies the exercise.
 
 ### E.10.INT:6 - Bias-Annotation
 
@@ -157,7 +163,7 @@ Reconsider these comparisons when a source provides a better account of the part
 - **E.10 and E.10.ARCH** locate this recovery when interest-family wording hides the relation needed for work. F.19 handles the surrounding prose.
 - **E.10.LRN** recovers a remaining ambiguity about what learned or changed. E.10.DEV handles a remaining development or evolution claim.
 - **C.16 and C.17** supply measurement and the distinctions among novelty, usefulness and sample surprise.
-- **C.11** compares formed options; **C.19** governs directions in an active search pool; **C.18** supplies retention in an exploration archive. **C.40** develops problems and ways together.
+- **C.11** compares formed options. **C.19** governs directions in an active search pool. **C.18** supplies retention in an exploration archive. **C.40** develops problems and ways together.
 - **D.1 and D.3** supply ethical-value and conflict analysis when affected interests raise those questions.
 - **E.23.CDI** supplies capability development when that is the receiving task, separating the acquisition Method, its execution and the asserted capability change. Its entry conditions and the applicable field Method govern the intervention.
 

@@ -16,7 +16,9 @@ Use this pattern when the word *context* can change a statement or the next prac
 
 ### E.10.D1:2 - Problem
 
-The word *context* is useful because it points toward locality, but it does not say which locality matters. Terminology work uses source schemes and local senses. Domain-driven design uses a model boundary and relations among model uses. Claims use scopes and qualification windows. Architecture work distinguishes a described holon, actual subject relations, a selected structure, an obtaining `ArchitectureRelation`, and an `ArchitectureClaim`; viewpoint, environment, and operating-condition claims introduce further distinctions. A pattern's Problem frame describes a recognizable situation. A DPF has a domain subject, audience, source basis, and local qualification conditions.
+The word *context* is useful because it points toward locality, but it does not say which locality matters. Terminology work uses source schemes and local senses. Domain-driven design uses a model boundary and relations among model uses. Claims use scopes and qualification windows.
+
+Architecture work distinguishes a described holon, actual subject relations, a selected structure, an obtaining `ArchitectureRelation`, and an `ArchitectureClaim`; viewpoint, environment, and operating-condition claims introduce further distinctions. A pattern's Problem frame describes a recognizable situation. A DPF has a domain subject, audience, source basis, and local qualification conditions.
 
 Treating these uses as one `Context` participant, `ContextId`, or two-part `SenseCell(Context, LocalSense)` hides the distinctions supplied by `A.1.1`, `A.2.6`, `C.2.1`, `F.0.1`, `F.17`, and `F.9`. Replacing that proxy with another universal container preserves the failure under a new name.
 
@@ -38,9 +40,9 @@ Start with the sentence and the practical use that makes it matter.
 2. Select the smallest branch in `E.10.D1:4.1` that answers that difference.
 3. Apply the named subject pattern and recover its value, relation, claim, or situation. For source-local meaning, reuse an adequate current `F.0.1` result or apply `F.0.1` only when that meaning remains unclear. Do not create a generic Context participant as an intermediate step.
 4. Rewrite the sentence with the recovered content and state the next action or stop.
-5. If the same defect recurs across framework contributions, use the shared method in `E.10.ARCH`; keep this pattern as the word-specific branch and keep the recovered content in its subject pattern or DPF.
+5. If the same defect recurs across framework contributions, use the shared method in `E.10.ARCH`. Keep this pattern as the word-specific branch and keep the recovered content in its subject pattern or DPF.
 
-The bounded result is the repaired statement. No additional record is part of this result; create one only when a named later use needs its identity.
+The result is the repaired statement. Create a separate record only when a named later use needs its identity.
 
 #### E.10.D1:4.1 - Positive recovery branches
 
@@ -50,13 +52,13 @@ The bounded result is the repaired statement. No additional record is part of th
 | DDD or model-use boundary | The direct A.1.1 `ModelApplicabilityRelation`, assigned-Work `ModelUseRelation`, or `ModelExpressionCoherenceRelation`. Select one `BoundedModelUseStructure` only when the organization of several such facts changes the engineering decision. | Stop at the direct relation when it answers the question. Select the wider structure only under A.1.1 and A.22. |
 | Claim applicability or comparison boundary | The claim, its applicability conditions, and the comparison basis or direct relation needed by the receiving use. When a receiving rule requires A.2.6 scope membership, identify its U.ClaimScope, admitted U.ContextSlice values and membership result; recover scheme and temporal qualifications where they change that use. | State the sufficient conditions and grounds directly, or apply the required scope-membership guard. |
 | Working situation, project use, or reader use | The named situation; intended reader; use; decision; non-use boundary; and the participants, Work, and claims whose change would alter that use or decision. `Problem frame` remains a readable pattern heading rather than a formal Context value. | Write the situation and use directly. Introduce a formal value only when a named later use needs its identity. |
-| Design-time or run-time wording | The design artifact, plan, description, or model edition, or the performed Work, world-side occurrence, or state on which the sentence actually relies. | Keep design-time descriptions and plans separate from run-time holons, states, relations, and Work. Apply the pattern for the recovered object; the labels *design* and *run* create no shared Context or time-tag object. |
+| Design-time or run-time wording | The design artifact, plan, description, or model edition, or the performed Work, world-side occurrence, or state on which the sentence relies. | Keep design-time descriptions and plans separate from run-time holons, states, relations, and Work. Apply the pattern for the recovered object; the labels *design* and *run* create no shared Context or time-tag object. |
 | Architecture relation or claim | The described holon, actual subject relations, selected `U.Structure`, and an obtaining `ArchitectureRelation` only when the C.30 predicate holds. Otherwise recover an `ArchitectureClaim` whose content says that the relation does not obtain, remains unresolved, or concerns a candidate or expected structure. | Apply `C.30`. State the actual relation and selected structure when they obtain. If the described holon, selected structure, architecture concern, or actual-versus-candidate distinction is still missing, stop with C.30's `concernCueOnly` or `problemCardReady` result. |
 | Viewpoint or view | One identified candidate episteme, one identified `U.Viewpoint` edition with fixed rules, and the `EpistemeViewpointConformanceRelation` question between them. The same candidate episteme is a `U.View` relative to that viewpoint only when the relation obtains. | Apply `E.17.0` and return its readable positive, negative, or unresolved result. Stop there unless a named receiving use needs occurrence identity, warrant, new-viewpoint authoring, multi-view organization, or publication detail. |
 | Environment, operating region, or operating condition | The subject claim and the actual holon, relation, state, spatial or temporal qualifier, constraint, or condition whose change affects that claim or the next action. An environmental label remains source wording until the practitioner uses the subject pattern's definitions or constraints to identify the content used by the statement. | Apply the pattern that defines or constrains the subject claim. If the statement still cannot name which environmental fact or operating condition changes the claim or action, return an unresolved wording result; do not infer an architecture or viewpoint claim. |
-| DPF, domain, or local-practice boundary | The domain subject, intended audience and use, effective scheme, source basis and qualifications that actually bound the claim, including a temporal window when needed. | Keep domain or local meaning in its DPF or LPF. The word *domain* is neither restricted to a catalogue mark nor promoted to a U-kind by this pattern. |
+| DPF, domain, or local-practice boundary | The domain subject, intended audience and use, effective scheme, source basis and qualifications that bound the claim, including a temporal window when needed. | Keep domain or local meaning in its DPF or LPF. The word *domain* is neither restricted to a catalogue mark nor promoted to a U-kind by this pattern. |
 
-#### E.10.D1:4.2 - Word use is a trigger, not a verdict
+#### E.10.D1:4.2 - When to retain the word
 
 `E.10.D1` defines no `U.BoundedContext`, generic `Context`, universal `ContextId`, or two-part `SenseCell(Context, LocalSense)`. A source or subject pattern may define a value whose established designation contains *context*; keep that designation and its defined meaning. A DDD **bounded context** is the Plain retrieval name for the A.1.1 `BoundedModelUseStructure`, not a universal semantic-locality container.
 
@@ -66,7 +68,7 @@ An F.1 Source-Cut Card is a memory aid for one retained source edition and its a
 
 #### E.10.D1:4.3 - Short working script
 
-Use this sentence-sized script:
+Name the meaning, its basis and the reader’s next move.
 
 ```text
 This phrase uses “context” to mean [identified value, relation, scope, scheme, situation, or use].
@@ -78,9 +80,13 @@ The bracketed words are prompts, not a public schema. Delete them in the final p
 
 ### E.10.D1:5 - Archetypal Grounding
 
-**Source-local meaning.** A draft says, “In the maintenance context, *service* includes scheduled inspection.” The author finds an existing `F.0.1` result for the current `MaintenanceGuide-2026` edition: its exact F.17 cell says that *service* includes scheduled inspection, and its `LocalSenseBasisRelation` names the supporting claim episteme. That result is adequate for this sentence, so the author reuses it and writes, “In `MaintenanceGuide-2026`, *service* includes scheduled inspection,” with a citation to the cell. If the source-local meaning were still unclear, the author would apply `F.0.1` first. `F.1`, `F.9`, and `F.0.2` remain closed unless source selection, a cross-local relation, or comparison of several source ontologies becomes a live question.
+**Source-local meaning.** A draft says, “In the maintenance context, *service* includes scheduled inspection.” The author finds an existing `F.0.1` result for the current `MaintenanceGuide-2026` edition: its exact F.17 cell says that *service* includes scheduled inspection, and its `LocalSenseBasisRelation` names the supporting claim episteme. That result is adequate for this sentence, so the author reuses it and writes, “In `MaintenanceGuide-2026`, *service* includes scheduled inspection,” with a citation to the cell.
 
-**Model-use decision.** A change note says, “The controller change stays inside the press-control context.” If the decision asks only whether `PressControlModel-5` applies to `Press-3` within the stated claim scope, the engineer states that `ModelApplicabilityRelation` and stops. If release review depends jointly on model applicability, actual assigned-Work use, fixed-content coherence, applied constraints, and one selection-use frame, the engineer selects their A.1.1 `BoundedModelUseStructure`. The word *context* does not decide between those branches.
+If the source-local meaning were still unclear, the author would apply `F.0.1` first. `F.1`, `F.9`, and `F.0.2` remain closed unless source selection, a cross-local relation, or comparison of several source ontologies becomes a live question.
+
+**Model-use decision.** A change note says, “The controller change stays inside the press-control context.” If the decision asks only whether `PressControlModel-5` applies to `Press-3` within the stated claim scope, the engineer states that `ModelApplicabilityRelation` and stops.
+
+If release review depends jointly on model applicability, actual assigned-Work use, fixed-content coherence, applied constraints, and one selection-use frame, the engineer selects their A.1.1 `BoundedModelUseStructure`. The word *context* does not decide between those branches.
 
 **Claim boundary.** A review says, “The comparison is valid in this context.” Name the compared bearers, comparison basis, applicability conditions, evidence basis, and intended use. When those conditions and the calculation settle the question, stop. If the receiving rule requires A.2.6 scope membership, identify the required scope and slice and apply its guard; retain any qualification window required by that use.
 
@@ -98,7 +104,7 @@ The bracketed words are prompts, not a public schema. Delete them in the final p
 
 ### E.10.D1:7 - Conformance Checklist
 
-A use of `E.10.D1` conforms when:
+A use of `E.10.D1` conforms when it meets these conditions.
 
 1. the sentence and the action-changing ambiguity are named;
 2. one recovery branch supplies the smallest sufficient content;
@@ -118,7 +124,7 @@ A use of `E.10.D1` conforms when:
 | Anti-pattern | What fails | Repair |
 | --- | --- | --- |
 | Universal Context proxy | One entity stands for source scheme, scope, situation, architecture, and model-use boundary. | Select the branch and name the direct value or relation. |
-| Context field as participant | A `ContextId` or `...ContextRef` field silently becomes a relation participant or identity discriminator. | Resolve the field to the subject-pattern value; otherwise keep it as a designator and state the blocker. |
+| Context field as participant | A `ContextId` or `...ContextRef` field is treated as a relation participant or identity discriminator without establishing that use. | Resolve the field to the subject-pattern value; otherwise keep it as a designator and state the blocker. |
 | Automatic bounded-context structure | The phrase *bounded context* selects A.1.1 even when one direct relation answers the decision. | Begin with applicability, actual use, or coherence and stop at the first sufficient result. |
 | Context map as relation truth | A diagram or table is treated as an obtaining Bridge, `ArchitectureRelation`, or model-use crossing. | Recover the represented objects, correspondence, and direct relation under their subject patterns. Use an `ArchitectureClaim` when architecture remains negative, unresolved, candidate, or expected. |
 | Blanket word ban | Every occurrence of *context* or *anchor* is deleted, including precise source terms and established designations. | Preserve the defined source or subject-pattern use; rewrite only wording that hides content needed by the FPF claim. |
@@ -128,7 +134,9 @@ A use of `E.10.D1` conforms when:
 
 The repair removes one convenient universal alias. Authors must sometimes name several values that the old word compressed, and legacy `ContextId`, `U.BoundedContext`, and two-part SenseCell fields need semantic repair rather than mechanical renaming.
 
-In return, the author can use the method supplied for the subject question. Source-local meanings remain traceable to schemes and basis epistemes; model-use boundaries remain engineering structures; claim scopes remain scopes; working situations remain readable; obtaining `ArchitectureRelation` occurrences remain distinct from `ArchitectureClaim` content; and environment, domain, and publication claims keep their own participants and tests. A local repair can stop after one sentence, while recurring problems can reuse `E.10.ARCH` without copying a second ontology into every DPF.
+The author can then use the method supplied for the subject question. Source-local meanings remain traceable to schemes and basis epistemes; model-use boundaries remain engineering structures; claim scopes retain their applicability conditions. Working situations remain readable. Obtaining `ArchitectureRelation` occurrences remain distinct from `ArchitectureClaim` content. Environment, domain, and publication claims keep their own participants and tests.
+
+A local repair can stop after one sentence, while recurring problems can reuse `E.10.ARCH` without copying a second ontology into every DPF.
 
 ### E.10.D1:10 - Rationale
 
@@ -163,6 +171,6 @@ These comparisons support the recovery branches for the wording uses named here.
 - `C.30` defines the obtaining `ArchitectureRelation` and the separate `ArchitectureClaim` form. Use the actual relation only when its predicate holds; use claim content for a negative, unresolved, candidate, or expected architecture statement.
 - `E.17.0` defines viewpoint identity, the direct `EpistemeViewpointConformanceRelation`, its readable positive, negative, and unresolved results, and the resulting same-episteme `U.View` membership.
 - For environment, operating-region, and operating-condition wording, use the pattern that defines or constrains the subject claim. When the affecting fact or condition cannot be recovered, keep the wording result unresolved rather than inferring architecture or viewpoint content.
-- Apply `F.19` for the normal connected reading and final plain rewrite. Use `E.10.D1` only for a consequential context ambiguity that remains; apply `F.18` only when the repair creates a durable reusable designation.
+- Apply `F.19` for the connected reading and final plain rewrite. Use `E.10.D1` only for a consequential context ambiguity that remains. Apply `F.18` only when the repair creates a durable reusable designation.
 
 ### E.10.D1:End

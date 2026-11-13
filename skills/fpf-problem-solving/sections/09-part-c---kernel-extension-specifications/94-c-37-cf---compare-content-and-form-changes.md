@@ -63,29 +63,35 @@ If a cell cannot be constructed without changing another load-bearing feature, s
 
 Ask the reader to obtain the first useful result, not to rate which document looks better. Recover:
 
-- the applicable action or decision and the answer actually given;
+- the action or decision called for, and the reader's answer;
 - the result, stop or missing condition the reader identifies;
 - unsupported inferences or lost distinctions that change the answer;
 - the source returns needed to support or correct it; and
-- the observed burden when time, source openings, attempts or other relevant effort were actually recorded.
+- the observed burden when time, source openings, attempts or other relevant effort were recorded.
 
-When the question is how much selected structure the reader can extract, use [`C.2.8 ExtractableStructuralInformation`](12-c-2-8---extractablestructuralinformation-structure-this-read.md). Identify the expressed account, its particular expression and the reader, with selected relations, correctness criterion, prior knowledge, operations, help, access and budget qualified for this comparison. A qualitative account of recovered and missing relations often suffices. A number needs a declared structural scale and fixed units or denominator, not counts of words or arrows.
+When the question is how much selected structure the reader can extract, use [`C.2.8 ExtractableStructuralInformation`](12-c-2-8---extractablestructuralinformation-structure-this-read.md). Identify the expressed account, the expression being tested and the reader, with selected relations, correctness criterion, prior knowledge, operations, help, access and budget qualified for this comparison. A qualitative account of recovered and missing relations often suffices. A number needs a declared structural scale and fixed units or denominator, not counts of words or arrows.
 
-Keep a design estimate separate from an actual recovery observation or a mapped formal estimate. A response establishes recovery in that trial, not a maximum or population reliability. State what changed in content, what changed in expression, and what preparation, actual help or a source return supplied. Familiar relations can count; a reader's independent correction of false or absent instruction is not credited to the expression. Missing basis is not zero. A successful changed-condition return supports its own condition rather than increasing the original amount.
+Keep a design estimate separate from an actual recovery observation or a mapped formal estimate. A response establishes recovery in that trial, not a maximum or population reliability.
+
+State what changed in content, what changed in expression, and what preparation, help or a source return supplied. Familiar relations can count; a reader's independent correction of false or absent instruction is not credited to the expression.
+
+Missing basis is not zero. A successful changed-condition return supports its own condition rather than increasing the original amount.
 
 These are candidate observations, not one universal score. Select those that can change this comparison. A source-opening count does not measure comprehension; shorter reading does not prove lower total effort; recognizing a prescribed action does not establish its correct enactment.
 
-Choose readers and allocation to variants in proportion to the claim. A fresh probe withholds the other answers and the author's preferred conclusion when they would teach the task. Repeated-reader comparisons retain learning and order effects instead of calling the reader fresh. In AI probes, keep the model, supplied context and available tools recoverable when they affect inference. Generalizing from a few AI answers to human performance is another unanswered question.
+Choose readers and allocation to variants in proportion to the claim. A fresh probe withholds the other answers and the author's preferred conclusion when they would teach the task. Repeated-reader comparisons retain learning and order effects instead of calling the reader fresh.
+
+In AI probes, keep the model, supplied context and available tools recoverable when they affect inference. Generalizing from a few AI answers to human performance is another unanswered question.
 
 #### C.37.CF:4.4 - When testing a changed-condition return
 
 Use this probe when the comparison needs to establish how a reader responds to a new fact. First retain the reader's initial answer. Then disclose the changed source, missing fact or altered receiving use. Ask what must change and what remains usable.
 
-A good return revisits the dependent claim rather than repeating the whole task or preserving an invalid assumption. Compare the actual revised answer, its source returns and its stop. If the changed condition changes the comparison question or available action set, identify that new question; do not present the two answers as observations under identical conditions.
+The reader should revisit the dependent claim rather than repeat the whole task or preserve an invalid assumption. Compare the reader's revised answer, its source returns and its stop. If the changed condition changes the comparison question or available action set, identify that new question; do not present the two answers as observations under identical conditions.
 
 #### C.37.CF:4.5 - Return a bounded revision result
 
-State the inspected variants, the content/form contrasts they actually support, observations, losses, uncertainty and next decision. Distinguish a demonstrated local difference, no distinguishing result in this probe, an unavailable contrast and a confounded comparison.
+State the inspected variants, the content/form contrasts they support, observations, losses, uncertainty and next decision. Distinguish a demonstrated local difference, no distinguishing result in this probe, an unavailable contrast and a confounded comparison.
 
 Compare extraction effort and receiving value separately from structural amount through C.11.CRC and C.11. Retain the sufficient incumbent when the proposed change supplies no worthwhile gain.
 
@@ -97,7 +103,7 @@ An ordinary comparison can remain short prose. When another decision will rely o
 
 #### C.37.CF:5.1 - Added stop information versus a table
 
-This is a constructed comparison, with explicit text rather than an assumed reader study.
+This constructed comparison uses the texts below; it reports no reader study.
 
 The receiving action is deciding whether an earlier review may support a current description revision.
 
@@ -115,9 +121,9 @@ The receiving action is deciding whether an earlier review may support a current
 
 Initially, the facts say that the change is display-only, the claims and question are unchanged, and the qualification window is current. All variants can support reuse. The later condition says that a new recheck needs an argument outside the available excerpts and that the retained dossier contains only its locator.
 
-B and C explicitly support the local stop and preservation answer; A does not contain that distinction. This establishes a content-coverage difference in the constructed texts. It does not show that an actual reader preferred or used C more effectively than B. A reader comparison would still be needed for that form claim.
+B and C state the local stop and preservation instructions; A does not contain that distinction. This establishes a content-coverage difference in the constructed texts. It does not show that an actual reader preferred or used C more effectively than B. A reader comparison would still be needed for that form claim.
 
-The useful authoring decision is to retain the missing stop information and withhold the table-superiority claim.
+For the revision, retain the missing stop information and withhold the table-superiority claim.
 
 #### C.37.CF:5.2 - A graph that adds a claim
 
@@ -161,10 +167,10 @@ presentation difference. The full E.8.ML account remains available for condition
 selected explanation.
 
 For the stated task, the answer must preserve the reason for separate entries and select the first missing
-result. With an adequate allocation and one contradictory maintained claim, direct A.3.1.CC use is enough.
+result. With an adequate allocation and one contradictory maintained claim, A.3.1.CC use is enough.
 In a changed case, an argument needed for a new recheck becomes unavailable. Return the affected current-use
 claim and source relation, preserving the earlier answer and independently supported contributions. If the
-question becomes publication authorization, obtain that separately applicable result.
+question becomes publication authorization, obtain that result separately.
 
 A reading comparison would keep the engineer's preparation, task, source access, tools and permitted help
 comparable and retain the initial answer before giving a corrective cue. Record reading or source-return
@@ -191,7 +197,7 @@ The constructed examples expose content and inference boundaries. They contain n
 - Reader learning, tool differences and other material confounds remain visible.
 - When a changed-condition return is tested, an initial answer precedes disclosure of that condition.
 - Observed burden is distinguished from estimated or unmeasured burden.
-- The result returns to the proper content, selection, trial or worth decision.
+- The result returns to the content, selection, trial or worth decision it informs.
 
 ### C.37.CF:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -207,7 +213,7 @@ The constructed examples expose content and inference boundaries. They contain n
 
 A useful revision can be retained without overstating why it helped. Content defects and representation defects receive different repairs, and later selection or worth decisions receive evidence with usable limits.
 
-The cost is preparing informative contrasts and observing the actual task. When that cost cannot change the decision, take the sufficient direct result or an honestly bounded bundle comparison.
+The cost is preparing informative contrasts and observing the reader carry out the task. When that cost cannot change the decision, take the sufficient direct result or a bounded bundle comparison.
 
 ### C.37.CF:10 - Architectural Rationale
 
@@ -221,7 +227,7 @@ This pattern joins established representation-preservation and validation Method
 
 [NIST's factorial-design account](https://www.itl.nist.gov/div898/handbook/pri/section3/pri3331.htm) supplies the established crossed-factor idea. Adapt it to the contrasts the Method-description decision needs; do not claim a new experimental theory. C.37, A.6.3.RT and C.37.MP retain their representation results.
 
-The serious cheaper alternative is direct claim inspection plus the existing representation selection. In the review-reuse example it already identifies the missing stop information; no reader experiment is necessary for that content defect. Use the fuller comparison only when a material form, learning, burden or interaction question remains. Reopen the result on a changed task, source condition, candidate content, reader population or hidden confound.
+The cheaper alternative is direct claim inspection plus the existing representation selection. In the review-reuse example it already identifies the missing stop information; no reader experiment is necessary for that content defect. Use the fuller comparison only when a material form, learning, burden or interaction question remains. Reopen the result on a changed task, source condition, candidate content, reader population or hidden confound.
 
 ### C.37.CF:12 - Relations
 

@@ -2,7 +2,7 @@
 
 > **Type:** A.22 specialization of `U.Structure`
 > **Status:** Stable
-> **Normativity:** Normative unless explicitly marked informative
+> **Normativity:** Normative unless marked informative
 
 ### A.22.CGUS:0 - Use This When
 
@@ -34,11 +34,11 @@ The opposite repair is also harmful: authors replace the simple decision questio
 
 | Force | Tension |
 | --- | --- |
-| Useful explanation vs workflow overread | A visible path helps a reader, but actual Work may be nonlinear, interrupted, iterative, or arranged by another Method or plan. |
+| Useful explanation vs workflow overread | A visible path helps a reader, but Work may be nonlinear, interrupted, iterative, or arranged by another Method or plan. |
 | Potential structure vs present result | The structure can retain several possible branches while the present case enables none, one, or several. |
 | Plain entry vs formal replay | An ordinary correction should be cheap; qualification and replay still need enough identity and relation detail to be checked later. |
 | Description vs described structure | A card, graph, table, or narrative can describe a structure without creating it. |
-| Reuse vs copied mini-patterns | CGUS needs direct exits to relation, transformation-flow, work, publication, and assurance patterns without copying their architectures. |
+| Reuse vs copied mini-patterns | CGUS needs exits to relation, transformation-flow, work, publication, and assurance patterns without copying their architectures. |
 
 ### A.22.CGUS:4 - Solution
 
@@ -47,7 +47,7 @@ The opposite repair is also harmful: authors replace the simple decision questio
 Write the smallest useful answer in domain language:
 
 1. name the decision or question;
-2. list the real alternatives;
+2. list the alternatives;
 3. state the condition for each alternative;
 4. state the facts known for this case;
 5. mark each alternative `available`, `blocked`, or `unknown` under its condition, and name any gap that prevents deciding it. If the evaluation itself failed, state that error rather than treating it as a domain fact.
@@ -97,7 +97,7 @@ A22IdentityBasis:
   selectedObtainingRelationOccurrenceRefs[]
   appliedConstraintClaimRefs[]
   namedSelectionUseFrame:
-    questionOrAction: exact selection question
+    questionOrAction: selection question
     admissibleAction
     stopOrReturnCondition
 forbiddenOverread?: optional explanation outside A22IdentityBasis
@@ -123,13 +123,13 @@ CGUSLocusBinding := <selectedCGUSRef, locusId, locusMeaning, selectedConstituent
 
 The constituent must already belong to the A.22 identity basis. A locus binding neither changes that constituent's kind nor creates a relation. Do not use an A.6.5 `SlotSpec` as a free-standing structure position.
 
-When replay must identify one participant in a relation occurrence, retain the direct relation definition, the occurrence, the participant order, and the participant binding:
+When replay must identify one participant in a relation occurrence, retain the relation definition, the occurrence, the participant order, and the participant binding:
 
 ```text
 RelationParticipantLocator := <relationDefinitionRef, relationOccurrenceRef, participantOrder, participantRef, relationSignatureRef?, slotSpecRef?>
 ```
 
-Add a `RelationSignature` and its declaration-local `SlotSpec` together only when an existing reusable declaration is itself needed for replay. Neither declaration value substitutes for the obtaining occurrence. The CGUS has no ambient context field.
+Add a `RelationSignature` and its declaration-local `SlotSpec` together only when an existing reusable declaration is needed for replay. Neither declaration value substitutes for the obtaining occurrence. The CGUS has no ambient context field.
 
 Judge each continuation separately. An immediate local use may keep the following values in the explanation; persistence or replay may place them in an ordinary C.2.1 result episteme.
 ```text
@@ -168,13 +168,13 @@ CurrentContinuationSetResult:
   recheckConditions[]
 ```
 
-A claim reference identifies the claim being applied; it does not show that the test applies or that its condition is satisfied. An obtaining relation is not a condition claim. Keep these two basis branches distinct and derive the case result only from completed judgements. Apply the candidate’s own condition logic: for example, one false required conjunct can establish `disabled` despite another unknown conjunct. Retain that unknown basis value; it is not thereby satisfied. An evaluation failure yields `error` under the applicable test, not an invented fact about the candidate.
+A claim reference identifies the claim being applied; it does not show that the test applies or that its condition is satisfied. An obtaining relation is not a condition claim. Keep these two basis branches distinct and derive the case result only from completed judgements. Apply the candidate’s condition logic: for example, one false required conjunct can establish `disabled` despite another unknown conjunct. Retain that unknown basis value; it is not thereby satisfied. An evaluation failure yields `error` under the applicable test, not an invented fact about the candidate.
 
 The membership test concerns potential topology. Changed facts, evidence, test outcomes, or time windows normally change a judgement and the current set, not the structure. Reidentify the A.22 structure when a constituent, selected obtaining relation occurrence, applied constraint, or named use frame changes. Reapply CGUS membership when a locus binding or potential-continuation row changes.
 
 #### A.22.CGUS:4.3 - Four separate decisions
 
-| Decision | Passing basis | Honest lower result |
+| Decision | Passing basis | Lower result |
 | --- | --- | --- |
 | A.22 identity and CGUS membership | The four A.22 discriminators identify one structure; its local loci, relations, and constraints define at least two potential continuations across allowed cases. | Name the missing discriminator, binding, relation, constraint, or candidate. Keep the artifact as an explanation. |
 | Continuation result for this case | Each candidate retains its condition-evaluation and obtaining-relation basis rows as applicable. A condition-evaluation row keeps the test, applicability, inputs, required polarity, and observed outcome; an obtaining-relation row keeps the definition, occurrence, and ordered participants. Keep the relevant facts or evidence, time window, and an `enabled`, `disabled`, `unknown`, or `error` result. | Mark the affected candidate unknown when the gap prevents deciding its condition; retain an independently established disabled result. Do not revoke an independently established structure. |
@@ -185,9 +185,9 @@ Potential branches and joins remain part of the structure even when the present 
 
 #### A.22.CGUS:4.4 - Explanations, descriptions, and the non-workflow boundary
 
-An ordinary explanation keeps the subject actually designated by its claims. When its episteme identity matters, recover that independently identified `EntityOfConcern` under C.2.1. It may already be an A.22 structure whose CGUS membership is unresolved. An assertion of CGUS membership still requires its qualification basis.
+An ordinary explanation keeps the subject designated by its claims. When its episteme identity matters, recover that independently identified `EntityOfConcern` under C.2.1. It may already be an A.22 structure whose CGUS membership is unresolved. An assertion of CGUS membership still requires its qualification basis.
 
-After qualification, a whole-structure description may describe loci, bindings, relations, constraints, potential branches, case results, and relevant omissions. A separate demonstrative slice may show one traversal for a declared teaching or comparison use. That slice is a C.2.1 episteme: its exact claim content, the qualified CGUS as `EntityOfConcern`, and its effective reference scheme jointly recover its identity. `DemonstrativeUnfoldingSlice@Context` is readable lineage for this possibility, not a `U.Kind` or an exact slice by itself. The slice neither creates nor reidentifies the structure. Use C.33 only when hidden or lost structure in its carrier matters to a declared architecture use within C.33's scope.
+After qualification, a whole-structure description may describe loci, bindings, relations, constraints, potential branches, case results, and relevant omissions. A separate demonstrative slice may show one traversal for a declared teaching or comparison use. That slice is a C.2.1 episteme: its claim content, the qualified CGUS as `EntityOfConcern`, and its effective reference scheme jointly recover its identity. `DemonstrativeUnfoldingSlice@Context` is readable lineage for this possibility, not a `U.Kind` or a slice by itself. The slice neither creates nor reidentifies the structure. Use C.33 only when hidden or lost structure in its carrier matters to a declared architecture use within C.33's scope.
 
 Where a slice shows one selected pattern use, it may recall the difficulty through the pattern's `Problem frame` or `Problem`, or recall the way of addressing it through the `Solution`. To show that same use in either form, preserve the selected pattern, working subject and question or proposed use, current conditions, expected result, stop or continuation, and relevant locus bindings. Changing between those formulations changes only the description when the selected pattern use and the qualified structure remain the same. A.22 structure identity still depends on its constituents, selected obtaining relations, applied constraints and named selection-use frame; CGUS membership additionally depends on its locus bindings and at least two potential continuations. Question or action labels establish neither.
 
@@ -195,7 +195,7 @@ Displayed words such as *move*, *next*, and *path* remain ordinary language unle
 
 For a transformation-flow use, apply `E.18.3`. It owns the choice among one TFS, one parent-relative `SubflowRef`, or an E.18.NET network and the corresponding position and demonstration locators. CGUS keeps only its local locus bindings and potential topology; it does not copy the network's members, positions, valuations, Work, transformations, or tags.
 
-Cite another pattern only when its content supplies a needed definition, constraint, test, method, evidence rule, or assurance rule. For example, use C.30 for an architecture claim and C.32 for architecture-candidate synthesis, E.23 for repeated quality improvement under a declared evaluation, G.11 for source currentness, C.29 for a mathematical-lens claim, A.10 when the source-to-use account is implicit or must remain replayable, or B.3 for an actual named assurance claim.
+Cite another pattern only when its content supplies a needed definition, constraint, test, method, evidence rule, or assurance rule. For example, use C.30 for an architecture claim and C.32 for architecture-candidate synthesis, E.23 for repeated quality improvement under a declared evaluation, G.11 for source currentness, C.29 for a mathematical-lens claim, A.10 when the source-to-use account is implicit or must remain replayable, or B.3 for a named assurance claim.
 
 If a durable name or a relation between local senses is the question, use F.17, F.18, or F.9 after the value has been recovered. Do not copy their naming or Bridge procedures into this pattern. Entry cards and publication faces remain under E.11 and E.17.
 
@@ -276,7 +276,7 @@ stopOrNextAction: show repair as available; recheck when the case results or win
 
 The structure has two potential continuations although this case enables only repair. The selected proposal-to-design relation belongs to its identity basis. Thermal and service result epistemes, and their about-candidate relations, belong to the current case basis; they are not constituents or selected relation occurrences of this structure.
 
-If the proposal-to-design relation cannot be established, this exact formal structure claim remains provisional. The ordinary explanation can still report repair as unknown. Do not treat an unknown identity-bearing relation as an established constituent of a qualified CGUS.
+If the proposal-to-design relation cannot be established, this formal structure claim remains provisional. The ordinary explanation can still report repair as unknown. Do not treat an unknown identity-bearing relation as an established constituent of a qualified CGUS.
 
 A later passing thermal check is a different result episteme and supplies a new case input. With service still satisfied, acceptance becomes enabled and repair becomes disabled. The selected design, proposal, continuation candidates, proposal-to-design relation, constraints, use frame, loci and potential topology are unchanged, so the same CGUS remains available for that new case.
 
@@ -289,7 +289,7 @@ In this constructed learning case, a dancer has the strength and static axis con
 | Perform the complete figure under its intended conditions. | The required balance during rotation cannot yet be sustained. | Unavailable for the intended performance; naming the figure or its steps does not remove the gap. |
 | Practise the rotational coordination under a suitable reduced demand. | A domain-appropriate exercise, suitable space and the needed support are available in the stipulated case. | Available as practice of the intermediate performance. It does not establish ability to perform the full figure. |
 
-During the rotation, balance coordination would constitute part of turning; that turn would constitute part of the figure. These are connections through current performance, not three successive tasks. The practice alternative can exercise the first connection without already performing the intended figure.
+During the rotation, balance coordination would constitute part of turning; that turn would constitute part of the figure. These are connections through performance, not three successive tasks. The practice alternative can exercise the first connection without already performing the intended figure.
 
 When the coordination can be sustained, return to the encompassing figure and vary the relevant conditions before drawing a broader capability conclusion. The case condition and its continuation judgement can change without changing the potential alternatives. The subject's training Method supplies the exercise and assessment; CGUS makes their effect on the available continuation explicit.
 
@@ -297,10 +297,10 @@ When the coordination can be sustained, return to the encompassing figure and va
 
 | Bias risk | Mitigation |
 | --- | --- |
-| Workflow bias | Ask about alternatives and conditions; use work and method patterns only for actual work-order or way-of-doing claims. |
+| Workflow bias | Ask about alternatives and conditions; use work and method patterns only for work-order or way-of-doing claims. |
 | Display bias | Treat cards, graphs, tables, narratives, and entry lines as explanations or descriptions, not as the structure. |
 | Formality bias | Start with the ordinary decision answer and open formal qualification only for a named later use. |
-| Consumer bias | Keep transformation-flow, architecture, improvement, currentness, evidence, and publication details in their direct patterns. |
+| Consumer bias | Keep transformation-flow, architecture, improvement, currentness, evidence, and publication details in their patterns. |
 | Lexical bias | Words such as *route*, *path*, *loop*, *workflow*, *graph*, or *sequence* establish no CGUS by themselves. |
 
 ### A.22.CGUS:7 - Conformance Checklist
@@ -309,7 +309,7 @@ When the coordination can be sustained, return to the encompassing figure and va
 | --- | --- | --- |
 | **CC-CGUS-1 Identity and profile.** | The four A.22 discriminators identify one `U.Structure`; local locus bindings, relations, and constraints define at least two potential continuations across allowed cases. | Recover the missing value or keep the artifact as an explanation. |
 | **CC-CGUS-2 Local loci and relation participants.** | Every `CGUSLocusBinding` uses a locus declared inside this CGUS and binds one constituent for a stated meaning. A needed relation participant retains its definition, occurrence, order, and binding; `RelationSignature` and `SlotSpec` appear together only for declaration-level replay. | Restore the locus or complete relation-participant basis. Never use a free-standing `SlotSpec` as a structure position. |
-| **CC-CGUS-3 Explanation and description separation.** | An ordinary or persisted provisional explanation concerns the actual subject of its claims; this may be an already identified A.22 structure whose CGUS membership remains unresolved. Post-qualification descriptions and slices concern the CGUS. None is the structure or a membership condition. | Restore the right `EntityOfConcern` or keep the explanation ordinary. |
+| **CC-CGUS-3 Explanation and description separation.** | An ordinary or persisted provisional explanation concerns the subject of its claims; this may be an already identified A.22 structure whose CGUS membership remains unresolved. Post-qualification descriptions and slices concern the CGUS. None is the structure or a membership condition. | Restore the right `EntityOfConcern` or keep the explanation ordinary. |
 | **CC-CGUS-4 Current continuation result.** | Each judgement retains its basis rows with the values required by each applicable condition-evaluation or obtaining-relation branch in `4.2`, the relevant case inputs and facts or evidence, dependent occurrences, window, continuation result, and reason. The enabled set may contain zero, one, or several alternatives. | Apply the candidate’s condition logic; mark it unknown only when the missing value prevents deciding the result, and retain evaluation errors separately. |
 | **CC-CGUS-5 Separate decisions.** | Identity and membership, case result, description adequacy, and each neighboring claim are judged separately. | Reopen only the affected decision. |
 | **CC-CGUS-6 Work-order boundary.** | The selected structure and display expose branches and conditions. | Put any prescribed or performed Work order under the Method, work-plan, or Work pattern that establishes it. |
@@ -323,12 +323,12 @@ When the coordination can be sustained, return to the encompassing figure and va
 | **Condition label as result** | A label or claim reference is treated as proof that a continuation is enabled. | Apply the test or recover the obtaining relation and facts; otherwise return `unknown`. |
 | **One enabled branch as one-branch structure** | The present result erases other potential continuations. | Keep potential topology and the case result separate. |
 | **Formal package or field count first** | A simple correction requires replay fields, or authors add references merely to raise schema completion. | Use the ordinary branch and stop when it answers the question. In formal use, retain only fields consumed by qualification or replay and test whether readers recover the right alternatives and smallest repair. |
-| **Displayed order as Work** | A teaching slice becomes a project procedure or authorization. | Use the applicable Method, work-plan, or Work pattern for work order, A.21 for an actual gate decision, and the direct permission or authority rule for authorization, only when that claim is actually made. |
-| **Consumer architecture copied inward** | CGUS repeats transformation-flow locators, naming procedures, or catalogs of neighboring claims. | Keep the local structural rule and exit directly to the pattern that defines or tests the other claim. |
+| **Displayed order as Work** | A teaching slice becomes a project procedure or authorization. | Use the applicable Method, work-plan, or Work pattern for work order, A.21 for a gate decision, and the permission or authority rule for authorization, only when that claim is made. |
+| **Consumer architecture copied inward** | CGUS repeats transformation-flow locators, naming procedures, or catalogs of neighboring claims. | Keep the local structural rule and exit to the pattern that defines or tests the other claim. |
 
 ### A.22.CGUS:9 - Consequences
 
-CGUS preserves the usefulness of a route-shaped explanation without making it a workflow. Ordinary use is cheap: decision, alternatives, conditions, facts, honest result, and stop. Formal use costs more because structure identity, CGUS membership, the case result, and any description or neighboring claim must remain separately checkable.
+CGUS preserves the usefulness of a route-shaped explanation without making it a workflow. Ordinary use is cheap: decision, alternatives, conditions, facts, result, and stop. Formal use costs more because structure identity, CGUS membership, the case result, and any description or neighboring claim must remain separately checkable.
 
 This separation prevents a changed fact from reidentifying a stable structure and prevents a missing publication, evidence, or assurance value from erasing a useful ordinary answer.
 
@@ -354,7 +354,7 @@ Specializes: one A.22 `U.Structure` whose local locus bindings, obtaining relati
 
 Specialized by: `E.18.3` when the same structure also satisfies its transformation-flow condition. Local applications include architecture, abduction, improvement, narrative, grounding, currentness, and first-entry uses only when their own constituents, relations, constraints, and use frames are recoverable.
 
-Coordinates with: `A.6.P` and A.6.5 for relation occurrence and reusable declaration precision; `E.18`, `E.18.NET`, and `E.18.3` for transformation-flow substrates; `A.3` and `A.15` for Method, plan, Work, and Transformation claims; `A.10` for claim-bound evidence reliance, `B.3` for an actual named assurance claim, `A.20` for internal-constraint validity, and `A.21` for gate decisions; `C.30` for architecture claims and C.32 for architecture-candidate synthesis; `E.23` for repeated quality improvement under a declared evaluation; `G.11` for currentness; `C.29` for mathematical-lens use; `C.33` for description loss that affects a declared architecture use; `E.11` for entry, `E.17` for a source-backed reader face, and `E.24.PUB` for publication occurrence, form, carrier, audience, bounded use, and availability; and `F.17`, `F.18`, and `F.9` for source-local sense, durable naming, and Bridge claims.
+Coordinates with: `A.6.P` and A.6.5 for relation occurrence and reusable declaration precision; `E.18`, `E.18.NET`, and `E.18.3` for transformation-flow substrates; `A.3` and `A.15` for Method, plan, Work, and Transformation claims; `A.10` for claim-bound evidence reliance, `B.3` for a named assurance claim, `A.20` for internal-constraint validity, and `A.21` for gate decisions; `C.30` for architecture claims and C.32 for architecture-candidate synthesis; `E.23` for repeated quality improvement under a declared evaluation; `G.11` for currentness; `C.29` for mathematical-lens use; `C.33` for description loss that affects a declared architecture use; `E.11` for entry, `E.17` for a source-backed reader face, and `E.24.PUB` for publication occurrence, form, carrier, audience, bounded use, and availability; and `F.17`, `F.18`, and `F.9` for source-local sense, durable naming, and Bridge claims.
 
 Does not replace any pattern that supplies the definition, constraint, test, method, evidence rule, or assurance rule for a neighboring claim.
 

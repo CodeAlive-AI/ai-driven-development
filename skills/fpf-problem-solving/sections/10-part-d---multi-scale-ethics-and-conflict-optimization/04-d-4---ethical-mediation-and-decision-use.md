@@ -4,9 +4,9 @@
 > **Status:** Stable
 
 
-**Use this when.** Use this pattern when you need to develop and assess ways of responding to a described ethical conflict.
+**Use this when.** You need to develop and assess ways of responding to a described ethical conflict.
 
-**Not this pattern when.** If the conflict has not yet been described, use `D.3`. If the issue is only value plurality, use `D.1`. If the issue is only entry recognition, use `D.2`. If the current work is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
+**Not this pattern when.** If the conflict has not been described, use `D.3`. If the issue is only value plurality, use `D.1`. If the issue is only entry recognition, use `D.2`. If the work is bias, fairness, impact audit, causal-fairness audit consumption, or ethical assurance, use `D.5`.
 
 **What goes wrong if missed.** Naming the conflict or filling in a decision record replaces the work of developing options and judging what each would require or change.
 
@@ -16,7 +16,7 @@
 
 Once an interlevel ethical conflict is visible, the next risk is premature closure. A team may declare a compromise before evidence is sufficient, turn an assurance input into ethical permission, use one level's value as a trump card, or hide a refusal behind technical language.
 
-From the current conflict account, ask which continuations can be justified and what remains to be established. Use the subject method for any missing basis.
+From the conflict account, ask which continuations can be justified and what remains to be established. Use the subject method for any missing basis.
 
 ### D.4:1.0 - Problem
 
@@ -40,11 +40,11 @@ Recover the conflict, develop feasible alternatives, compare their consequences 
 
 1. **Recover the decision and the affected concerns.** Use the D.3 account to identify who or what may gain or lose, over which horizon, and why those consequences matter. Check whether the proposed chooser can make the decision in question. Paying for a project, being represented in a survey, being affected by its result and having authority to decide are different relations. Return a consequential missing party to A.1.CSD; return an unresolved value premise to D.1.
 2. **Separate the end from the proposed means.** A valued result can be pursued through means that create another objection. Ask which feature, condition or operation produces that objection and what could supply the valued result without it. B.5.QD.CF develops that question when an assumed necessary means creates the conflict; C.39 supplies construction of another way. Consider continuing the present work, narrowing the change, changing its conditions or refusing it when those are feasible alternatives. A proposed alternative remains a proposal until its required contributions are available.
-3. **Compare the same alternatives under the live value premises.** Preserve each side's affected participants, consequences, constraints and uncertainty. An encompassing system's gain does not by itself establish priority over a constituent's loss. Where different value frames give different orderings, keep those orderings distinct. An alternative that is no worse under every retained ordering and better under at least one can remove a need to trade those values for this choice. This conclusion is limited to the alternatives, premises and affected concerns actually compared. If a trade-off remains, state the priority, compromise or other reason proposed for making it. Authority to choose does not make that reason correct or establish others' agreement.
+3. **Compare the same alternatives under the value premises.** Preserve each side's affected participants, consequences, constraints and uncertainty. An encompassing system's gain does not by itself establish priority over a constituent's loss. Where different value frames give different orderings, keep those orderings distinct. An alternative that is no worse under every retained ordering and better under at least one can remove a need to trade those values for this choice. This conclusion is limited to the alternatives, premises and affected concerns compared. If a trade-off remains, state the priority, compromise or other reason proposed for making it. Authority to choose does not make that reason correct or establish others' agreement.
 4. **Resolve only the uncertainty that changes this use.** Separate disagreement about consequences from disagreement about which consequences or duties should govern. A causal inquiry can improve the former; it does not by itself settle the latter. Use available support and qualified uncertainty. Where an intended use requires a stronger claim, C.28 or the corresponding subject method supplies its basis; C.11.DUA compares an attainable inquiry with a narrower recommendation, a different option or a stop. Include delay, burden shifted to other parties and displaced work. Preserve a binding requirement's current force while examining its merits or a feasible revision.
-5. **Return the supported recommendation or decision.** If the comparison basis and available options are settled, C.11 supplies the local choice. If the value conflict remains unresolved, give the conditional alternatives, the missing agreement or authority, or an explicit refusal or impasse. Do not manufacture a common scalar to force a winner. State a residual consequence and a reconsideration condition when they matter to this use. A recommendation does not establish consent, permission or performed work.
+5. **Return the supported recommendation or decision.** If the comparison basis and available options are settled, C.11 supplies the local choice. If the value conflict remains unresolved, give the conditional alternatives, the missing agreement or authority, or a refusal or impasse. Do not manufacture a common scalar to force a winner. State a residual consequence and a reconsideration condition when they matter to this use. A recommendation does not establish consent, permission or performed work.
 
-Use the same reasoning when the option is advice, publication, a technical change or a change to a method. Identify how its possible use can affect other participants; describing one's contribution as analysis leaves that question open. The relevant causal and responsibility relations still need their own basis.
+Use the same reasoning when the option is advice, publication, a technical change or a change to a method. Identify how its possible use can affect other participants; describing one's contribution as analysis leaves that question open. The relevant causal and responsibility relations need their basis.
 
 #### D.4:2.2 - Retain the decision basis when the work needs it
 
@@ -80,20 +80,20 @@ EthicalMediationDecisionUse:
     - performerSystemRef: exact U.System
       workOccurrenceRef: exact dated U.Work
       assignmentSpeciesRef?: exact directly declared species under U.SystemRoleAssignment, when assignment-bound attribution is claimed
-      assignmentOccurrenceRef?: obtaining occurrence of that species with actual participant values, applicability, and extent covering the Work
+      assignmentOccurrenceRef?: obtaining occurrence of that species with participant values, applicability, and extent covering the Work
       f6AttributionRef?: exact performedUnderAssignment occurrence, for that attribution
       holderEquality?: performerSystemRef = assignmentOccurrenceRef.HolderSystemSlot, for that attribution
       methodRef:
       workExtentRef:
       containingSystemRef:
-  responsibilityRelationRefs?: exact direct predicate, participants, applicability, and occurrence identity
-  responsibilityMissingGovernorRefs?: exact A.6.RCD results
-  authorityRelationRefs?: exact direct relation refs
-  authorityMissingGovernorRefs?: exact A.6.RCD results
-  permissionRelationRefs?: exact direct relation refs
-  permissionMissingGovernorRefs?: exact A.6.RCD results
-  commitmentRelationRefs?: exact direct relation refs
-  commitmentMissingGovernorRefs?: exact A.6.RCD results
+  responsibilityRelationRefs?: direct predicate, participants, applicability, and occurrence identity
+  responsibilityMissingGovernorRefs?: A.6.RCD results
+  authorityRelationRefs?: direct relation refs
+  authorityMissingGovernorRefs?: A.6.RCD results
+  permissionRelationRefs?: direct relation refs
+  permissionMissingGovernorRefs?: A.6.RCD results
+  commitmentRelationRefs?: direct relation refs
+  commitmentMissingGovernorRefs?: A.6.RCD results
   admissibleUse
   inadmissibleOverread?
   strongerSourceReturnCondition?
@@ -104,20 +104,20 @@ Name the affected EntityOfConcern and any affected Systems, the value premises a
 
 ### D.4:3 - Mediation Moves
 
-| Current situation | Admissible D.4 move | Neighboring subject pattern |
+| Situation | Admissible D.4 move | Neighboring subject pattern |
 | --- | --- | --- |
 | A compromise is proposed but the D.3 description omits a side, affected entity, scope, value frame, consequence, or horizon. | Return to `D.3` and complete the affected side or tension. | `D.3` |
 | A causal claim can change the recommendation or decision. | Use its C.28 support and retain the uncertainty that changes this use. If stronger support is needed, use C.11.DUA to compare a feasible inquiry with a narrower use, another option or stopping. | `C.28`, `C.11.DUA` |
 | Evidence is too weak or outdated for the proposed use. | Name the affected claim and use. Use `C.11.DUA` to compare a feasible evidence request with a narrower use, explicit residual acceptance or refusal; obtain stronger or fresher evidence when the selected use needs it. | `C.11.DUA`; the evidence's subject pattern for support, `A.10` when its source-to-use relation is implicit or must be replayable, and `C.27` when temporal adequacy changes that use |
 | Assurance claim is being used as ethical permission. | Keep assurance as an assurance or evidence relation, not moral authorization. | `B.3`, `D.5` |
 | Architecture move reduces one residual but creates ethical conflict elsewhere. | Return the architecture residual and keep the ethical conflict distinct. | `C.30.ILC`, `D.3` |
-| A decision must proceed with residual harm. | Keep the accepted residual, affected parties, decision basis and material evidence limits recoverable. Include the authority, responsibility, plan, commitment, permission, assignment requirement or return condition that this decision relies on, preserving each claim's status and any precise unresolved condition. If Work has actually occurred, recover each precise performer's A.13 core and independently admit the Work under A.15.1; add F.6 only when the decision account also needs exact assignment-bound attribution. | `C.11`, `B.3`, `D.5`, A.2.1, A.13, A.15.1, and F.6 as applicable |
+| A decision must proceed with residual harm. | Keep the accepted residual, affected parties, decision basis and material evidence limits recoverable. Include the authority, responsibility, plan, commitment, permission, assignment requirement or return condition that this decision relies on, preserving each claim's status and any unresolved condition. If Work has occurred, recover each performer's A.13 core and independently admit the Work under A.15.1; add F.6 only when the decision account also needs assignment-bound attribution. | `C.11`, `B.3`, `D.5`, A.2.1, A.13, A.15.1, and F.6 as applicable |
 
-When the basis required for a particular claim cannot be obtained, that claim remains unsupported. A narrower recommendation or decision must satisfy its own evidence, ethical and authority conditions. Preserve an accepted residual where it changes the use.
+When the basis required for a particular claim cannot be obtained, that claim remains unsupported. A narrower recommendation or decision must satisfy its evidence, ethical and authority conditions. Preserve an accepted residual where it changes the use.
 
 ### D.4:4 - Archetypal Grounding (Worked Slices)
 
-**Fair-share case.** A service outage plan can protect hospitals, households, or industrial customers, but not all at once. The `D.3` conflict description connects each affected scope and value concern to its consequence and horizon. `D.4` records the mediation use: the options, accepted residuals and supporting basis, with any evidence demand, decision participant, prospective commitment, responsibility claim or return condition that this decision needs. No assignment or Work is asserted merely because the plan names intended action. If the account reports execution, add the actual Work occurrence and its performer; add assignment-bound attribution when that further claim is made. A mathematical allocation Method may have a separate C.29 representation or lens-use assertion, but the allocation formula is not the ethical decision, assignment, or responsibility relation.
+**Fair-share case.** A service outage plan can protect hospitals, households, or industrial customers, but not all at once. The `D.3` conflict description connects each affected scope and value concern to its consequence and horizon. `D.4` records the mediation use: the options, accepted residuals and supporting basis, with any evidence demand, decision participant, prospective commitment, responsibility claim or return condition that this decision needs. No assignment or Work is asserted merely because the plan names intended action. If the account reports execution, add the Work occurrence and its performer; add assignment-bound attribution when that further claim is made. A mathematical allocation Method may have a separate C.29 representation or lens-use assertion, but the allocation formula is not the ethical decision, assignment, or responsibility relation.
 
 **Override case.** An assurance review says a release has the required technical assurance relation, but the `D.3` description shows unresolved harm for a subgroup. `D.4` does not let assurance override that conflict. It records whether release is refused, conditioned, delayed for evidence, handled under C.28 causal-use analysis, or allowed with an explicit residual and the independently justified authority and responsibility conditions required for that decision. An unresolved required condition leaves that release unsupported.
 
@@ -159,16 +159,16 @@ Use a mathematical representation when its operations improve the comparison. Ex
 | Conflict description becomes decision | A D.3 description is treated as if it already selected an action. | Name the D.4 move and its admissible use. |
 | Assurance becomes permission | Technical assurance is read as ethical authorization. | Keep assurance as an assurance or evidence relation and record the ethical use separately. |
 | Formula becomes ethics | Allocation, optimization, or scoring is treated as the ethical decision. | Explain how the calculation's result and conditions inform the ethical comparison; use `C.29` when the representation's choice, transfer or supported use remains unresolved. |
-| Residual harm disappears | Action proceeds while consequential residuals, affected parties or the authority and responsibility needed for the decision remain unclear. | Name the consequential residual and the decision basis, including the authority and responsibility it relies on. Add plans, commitments, permissions, assignment requirements and a return condition where this decision needs them; retain material evidence limits and precise unresolved claims. Identify actual Work and its performer when performance is claimed; add assignment-bound attribution when that further claim is made. |
+| Residual harm disappears | Action proceeds while consequential residuals, affected parties or the authority and responsibility needed for the decision remain unclear. | Name the consequential residual and the decision basis, including the authority and responsibility it relies on. Add plans, commitments, permissions, assignment requirements and a return condition where this decision needs them; retain material evidence limits and unresolved claims. Identify Work and its performer when performance is claimed; add assignment-bound attribution when that further claim is made. |
 
 ### D.4:6 - Conformance Checklist
 
 | ID | Requirement | Purpose |
 | --- | --- | --- |
-| CC-D4-1 | The conflict and its sides are recoverable through D.3; add a stable conflict-description reference when the receiving use needs to cite or revise it. | Keeps the decision connected to the actual tension without requiring a separate record for a short answer. |
+| CC-D4-1 | The conflict and its sides are recoverable through D.3; add a stable conflict-description reference when the receiving use needs to cite or revise it. | Keeps the decision connected to the tension without requiring a separate record for a short answer. |
 | CC-D4-2 | The recommendation or decision connects the affected concerns, value premises, feasible alternatives and comparison to its intended use. Retain differing orderings and residuals when they change the conclusion; add scope, qualification window and reference detail when that use needs them. | Makes the chosen continuation follow from its basis instead of merely listing decision fields. |
 | CC-D4-3 | Evidence, causality, assurance, architecture, and decision claims use their subject patterns. | Prevents D.4 from becoming universal decision authority. |
-| CC-D4-4 | When proceeding under residual harm, keep the consequential residual, affected parties and justified decision basis recoverable. Add local kinds, classification assertions, plans, assignment requirements and relation identities only where their distinctions change this use. Every responsibility, authority, permission or commitment claim retains its own predicate, polarity or modality and factual basis or precise unresolved condition; an affirmative occurrence claim requires its obtaining basis. Every actual Work row first recovers each precise performer's A.13 core and independently admits the Work under A.15.1; it adds F.6 only when precise assignment-bound attribution is also current. | Keeps bounded decision use reviewable without deriving responsibility or performance from an assignment or decision. |
+| CC-D4-4 | When proceeding under residual harm, keep the consequential residual, affected parties and justified decision basis recoverable. Add local kinds, classification assertions, plans, assignment requirements and relation identities only where their distinctions change this use. Every responsibility, authority, permission or commitment claim retains its predicate, polarity or modality and factual basis or unresolved condition; an affirmative occurrence claim requires its obtaining basis. Every Work row first recovers each performer's A.13 core and independently admits the Work under A.15.1; it adds F.6 only when assignment-bound attribution is also current. | Keeps bounded decision use reviewable without deriving responsibility or performance from an assignment or decision. |
 
 ### D.4:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -189,11 +189,13 @@ Recognizing a conflict leaves a practical question: what can be done under the s
 
 ### D.4:10 - SoTA-Echoing
 
-For **turning a value conflict into a different design**, **adapt** Value Sensitive Design's joint examination of technical and social arrangements. Against choosing only between the initial proposal and abandoning its aim, :2.1 and :4.1 follow the needed contribution to another means. The [VSD Lab's current account](https://vsdesign.org/vsd/) distinguishes designer and stakeholder values, direct and indirect stakeholders, and several levels of analysis. Miller, Friedman, Jancke and Gill's [*Value Tensions in Design*](https://www.cs.washington.edu/research/projects/aiweb/media/papers/tmp3oRDl8.pdf) (2007), §§6.1–6.2, supplies a concrete design comparison: useful usage information need not disclose who searched. Its local survey thresholds are not ethical constants or a voting rule for every project. The retained contribution is changing the means while keeping the affected values visible. Developing another design costs work; select it when it could improve the available choice. Reopen when the new arrangement fails a retained value or excludes an affected party.
+For **turning a value conflict into a different design**, **adapt** Value Sensitive Design's joint examination of technical and social arrangements. Against choosing only between the initial proposal and abandoning its aim, :2.1 and :4.1 follow the needed contribution to another means. The [VSD Lab's current account](https://vsdesign.org/vsd/) distinguishes designer and stakeholder values, direct and indirect stakeholders, and several levels of analysis. Miller, Friedman, Jancke and Gill's [*Value Tensions in Design*](https://www.cs.washington.edu/research/projects/aiweb/media/papers/tmp3oRDl8.pdf) (2007), §§6.1–6.2, supplies a design comparison: useful usage information need not disclose who searched. Its local survey thresholds are not ethical constants or a voting rule for every project.
+
+The retained contribution is changing the means while keeping the affected values visible. Developing another design costs work; select it when it could improve the available choice. Reopen when the new arrangement fails a retained value or excludes an affected party.
 
 For **reasoning with several value frames**, **adopt** the comparison problem made explicit by MacAskill, Bykvist and Ord in [*Moral Uncertainty*](https://academic.oup.com/book/31934/chapter/267645761) (2020), Chapter 3, Introduction and §I: ordinal orderings do not supply comparable numerical differences. Against adding arbitrary ranks, :2.1 preserves separate orderings and uses agreement where it suffices, as in :4.1. **Adapt** this limited contribution without making the book's Borda rule or expected-choiceworthiness proposal a universal FPF rule. C.11 already supports a partial ordering; D.4 keeps unresolved ethical aggregation visible rather than duplicating a decision calculus. Reopen when the present choice needs a trade-off or comparison across frames that the available basis cannot justify.
 
-For **deciding how much investigation this mediation needs**, **adopt** C.11.DUA's comparison of attainable information work with its receiving contribution and full burden. Against either an automatic demand for causal certification or ignoring a missing basis, :2.1, :3 and :4.2 distinguish a supported bounded continuation from a stronger unsupported claim. C.28, A.10 and B.3 retain their own causal, evidence and assurance meanings; they do not supply moral permission. This comparison can end with required inquiry, a narrower result or refusal. Reopen when a changed consequence, intended claim, requirement or available inquiry can change that continuation. Use C.29 when an unresolved representation choice, transfer or supported-use question can change the comparison; a calculated ranking remains conditional on its ethical premises.
+For **deciding how much investigation this mediation needs**, **adopt** C.11.DUA's comparison of attainable information work with its receiving contribution and full burden. Against either an automatic demand for causal certification or ignoring a missing basis, :2.1, :3 and :4.2 distinguish a supported bounded continuation from a stronger unsupported claim. C.28, A.10 and B.3 retain their causal, evidence and assurance meanings; they do not supply moral permission. This comparison can end with required inquiry, a narrower result or refusal. Reopen when a changed consequence, intended claim, requirement or available inquiry can change that continuation. Use C.29 when an unresolved representation choice, transfer or supported-use question can change the comparison; a calculated ranking remains conditional on its ethical premises.
 
 ### D.4:11 - Relations
 
