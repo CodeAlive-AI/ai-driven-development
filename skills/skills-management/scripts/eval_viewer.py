@@ -29,6 +29,8 @@ import re
 import webbrowser
 from pathlib import Path
 
+from skill_md import parse_frontmatter
+
 
 # Protected slow-update markers — mirror optimize_skill.py.
 SLOW_UPDATE_START = "<!-- SLOW_UPDATE_START -->"
@@ -110,12 +112,9 @@ def truncate(text: str, limit: int) -> str:
 def parse_skill_name(skill_text: str | None, report_text: str | None) -> str:
     """Pull a skill name from a YAML frontmatter or the report header."""
     if skill_text:
-        match = re.match(r"^---\s*\n(.*?)\n---", skill_text, re.DOTALL)
-        if match:
-            for line in match.group(1).splitlines():
-                line = line.strip()
-                if line.startswith("name:"):
-                    return line.split(":", 1)[1].strip().strip("\"'")
+        name = parse_frontmatter(skill_text).get("name", "").strip()
+        if name:
+            return name
     if report_text:
         match = re.search(r"^#\s*SkillOpt Optimization Report:\s*(.+)$", report_text, re.M)
         if match:

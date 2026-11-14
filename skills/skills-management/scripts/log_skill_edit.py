@@ -25,6 +25,8 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from skill_md import extract_body
+
 
 LOG_FILENAME = ".skill_edit_log.jsonl"
 SNAPSHOTS_DIRNAME = ".skill_snapshots"
@@ -58,14 +60,6 @@ def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | 
             return skill_path, scope_name
 
     return None, None
-
-
-def parse_frontmatter_body(content: str) -> str:
-    """Return the body portion of SKILL.md (everything after the frontmatter)."""
-    body_match = re.match(r"^---\s*\n.*?\n---\s*\n(.*)$", content, re.DOTALL)
-    if body_match:
-        return body_match.group(1)
-    return content
 
 
 def compute_sha256(text: str) -> str:
@@ -141,7 +135,7 @@ def build_entry(
     """
     skill_md = skill_path / "SKILL.md"
     content = skill_md.read_text(encoding="utf-8")
-    body = parse_frontmatter_body(content)
+    body = extract_body(content)
     body_lines = len(body.split("\n"))
     body_tokens = len(body) // 4
 

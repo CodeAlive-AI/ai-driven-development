@@ -28,6 +28,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 from agents import AGENTS, get_all_global_skills_dirs
+from skill_md import read_skill_md, skill_name
 
 
 IGNORED_PARTS = {".git", ".DS_Store", "__pycache__", ".pytest_cache"}
@@ -46,26 +47,6 @@ class SkillRecord:
     is_plugin: bool
     is_backup: bool
     content_hash: str | None = None
-
-
-def parse_frontmatter(skill_dir: Path) -> dict[str, str]:
-    """Read simple scalar fields from a SKILL.md frontmatter block."""
-    skill_md = skill_dir / "SKILL.md"
-    if not skill_md.is_file():
-        return {}
-
-    text = skill_md.read_text(encoding="utf-8", errors="replace")
-    match = re.match(r"^---\s*\n(.*?)\n---", text, re.DOTALL)
-    if not match:
-        return {"name": skill_dir.name}
-
-    result: dict[str, str] = {}
-    for line in match.group(1).splitlines():
-        field = re.match(r"^(name|version):\s*(.*?)\s*$", line)
-        if field:
-            result[field.group(1)] = field.group(2).strip("\"'")
-    result.setdefault("name", skill_dir.name)
-    return result
 
 
 def hash_skill_directory(skill_dir: Path) -> str:
@@ -174,10 +155,11 @@ def default_roots(cwd: Path, anchors: list[Path] | None = None) -> list[tuple[Pa
 
 def record_for_directory(skill_dir: Path, root: Path, root_kind: str) -> SkillRecord | None:
     """Build an inventory record for one skill directory."""
-    metadata = parse_frontmatter(skill_dir)
-    name = metadata.get("name")
-    if not name:
+    parsed = read_skill_md(skill_dir)
+    if parsed is None:
         return None
+    metadata, _ = parsed
+    name = skill_name(metadata, skill_dir)
     path_text = str(skill_dir.absolute())
     return SkillRecord(
         name=name,

@@ -24,6 +24,8 @@ import subprocess
 import tempfile
 from pathlib import Path
 
+from skill_md import extract_body
+
 
 LOG_FILENAME = ".skill_edit_log.jsonl"
 SNAPSHOTS_DIRNAME = ".skill_snapshots"
@@ -53,14 +55,6 @@ def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | 
             return skill_path, scope_name
 
     return None, None
-
-
-def parse_frontmatter_body(content: str) -> str:
-    """Return the body portion of SKILL.md (everything after the frontmatter)."""
-    body_match = re.match(r"^---\s*\n.*?\n---\s*\n(.*)$", content, re.DOTALL)
-    if body_match:
-        return body_match.group(1)
-    return content
 
 
 def git_available() -> bool:
@@ -172,8 +166,8 @@ def render_unified(label_a: str, label_b: str, text_a: str, text_b: str) -> str:
 
 def render_stats(label_a: str, label_b: str, text_a: str, text_b: str) -> str:
     """Render a compact stats summary."""
-    body_a = parse_frontmatter_body(text_a)
-    body_b = parse_frontmatter_body(text_b)
+    body_a = extract_body(text_a)
+    body_b = extract_body(text_b)
     tokens_a = len(body_a) // 4
     tokens_b = len(body_b) // 4
     headings_a = len(re.findall(r"^#+\s", body_a, re.MULTILINE))

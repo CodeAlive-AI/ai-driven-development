@@ -26,6 +26,7 @@ from agents import (
 )
 from audit_skill_duplicates import audit_candidate
 from fs_ops import link_into_place, path_present, same_location, stage_and_swap
+from skill_md import read_skill_md, skill_name
 
 
 # Files to exclude when copying skills (per add-skill pattern)
@@ -41,22 +42,10 @@ def parse_skill_name(skill_path: Path) -> str | None:
     Returns:
         Skill name from frontmatter, or directory name as fallback
     """
-    skill_md = skill_path / "SKILL.md"
-    if not skill_md.exists():
+    parsed = read_skill_md(skill_path)
+    if parsed is None:
         return None
-
-    try:
-        content = skill_md.read_text(encoding="utf-8")
-        match = re.match(r"^---\s*\n(.*?)\n---", content, re.DOTALL)
-        if match:
-            frontmatter = match.group(1)
-            for line in frontmatter.split("\n"):
-                if line.startswith("name:"):
-                    return line.split(":", 1)[1].strip().strip('"\'')
-    except Exception:
-        pass
-
-    return skill_path.name
+    return skill_name(parsed[0], skill_path)
 
 
 def sanitize_name(name: str) -> str:

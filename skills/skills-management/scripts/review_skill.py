@@ -17,6 +17,8 @@ import json
 import re
 from pathlib import Path
 
+from skill_md import parse_skill_md, read_skill_text
+
 
 def get_user_skills_dir() -> Path:
     return Path.home() / ".claude" / "skills"
@@ -39,24 +41,6 @@ def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | 
         if skill_path.exists() and (skill_path / "SKILL.md").exists():
             return skill_path, scope_name
     return None, None
-
-
-def parse_frontmatter(content: str) -> tuple[dict, str]:
-    """Parse YAML frontmatter and return (metadata, body)."""
-    match = re.match(r"^---\s*\n(.*?)\n---\s*\n(.*)$", content, re.DOTALL)
-    if not match:
-        return {}, content
-
-    frontmatter = match.group(1)
-    body = match.group(2)
-    metadata = {}
-
-    for line in frontmatter.split("\n"):
-        if ":" in line:
-            key, value = line.split(":", 1)
-            metadata[key.strip()] = value.strip().strip('"\'')
-
-    return metadata, body
 
 
 def check_name(name: str) -> list[dict]:
@@ -622,8 +606,8 @@ def review_skill(name: str, scope: str | None = None, output_format: str = "text
         }
 
     skill_md = skill_path / "SKILL.md"
-    content = skill_md.read_text(encoding="utf-8")
-    metadata, body = parse_frontmatter(content)
+    content = read_skill_text(skill_md)
+    metadata, body = parse_skill_md(content)
 
     skill_name = metadata.get("name", skill_path.name)
     description = metadata.get("description", "")

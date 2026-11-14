@@ -19,45 +19,11 @@ from fs_ops import move_into_place, path_present, same_location
 from agents import (
     agents_sharing_dir,
     AGENTS,
+    find_skill_in_agent,
     get_agent_config,
     get_skills_dir,
     validate_agent,
 )
-
-
-def find_skill_in_agent(
-    name: str,
-    agent: str,
-    scope: str | None = None,
-    cwd: Path | None = None
-) -> tuple[Path | None, str | None]:
-    """Find a skill by name in an agent's skills directories.
-
-    Args:
-        name: Skill name (directory name)
-        agent: Agent ID
-        scope: Specific scope to search, or None for both
-        cwd: Working directory for project scope
-
-    Returns:
-        Tuple of (skill_path, scope_name) or (None, None) if not found
-    """
-    scopes_to_check = []
-    if scope is None or scope == "global":
-        global_dir = get_skills_dir(agent, "global")
-        if global_dir:
-            scopes_to_check.append(("global", global_dir))
-    if scope is None or scope == "project":
-        project_dir = get_skills_dir(agent, "project", cwd)
-        if project_dir:
-            scopes_to_check.append(("project", project_dir))
-
-    for scope_name, skills_dir in scopes_to_check:
-        skill_path = skills_dir / name
-        if skill_path.exists() and (skill_path / "SKILL.md").exists():
-            return skill_path, scope_name
-
-    return None, None
 
 
 def move_skill(

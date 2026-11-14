@@ -194,10 +194,6 @@ def hash_split(
 # Skill document I/O & edit application                                       #
 # --------------------------------------------------------------------------- #
 
-def read_skill_body(skill_path: Path) -> str:
-    return (skill_path / "SKILL.md").read_text(encoding="utf-8")
-
-
 def split_protected(content: str) -> tuple[str, str | None, str]:
     """Split content into (before, protected_block_with_markers, after).
 

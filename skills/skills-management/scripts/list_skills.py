@@ -14,8 +14,9 @@ if sys.version_info < (3, 11):
 
 import argparse
 import json
-import re
 from pathlib import Path
+
+from skill_md import skill_summary
 
 
 def get_user_skills_dir() -> Path:
@@ -29,30 +30,8 @@ def get_project_skills_dir() -> Path:
 
 
 def parse_skill_metadata(skill_path: Path) -> dict | None:
-    """Parse SKILL.md frontmatter to extract name and description."""
-    skill_md = skill_path / "SKILL.md"
-    if not skill_md.exists():
-        return None
-
-    try:
-        content = skill_md.read_text(encoding="utf-8")
-        # Parse YAML frontmatter between --- markers
-        match = re.match(r"^---\s*\n(.*?)\n---", content, re.DOTALL)
-        if not match:
-            return {"name": skill_path.name, "description": "(no frontmatter)"}
-
-        frontmatter = match.group(1)
-        metadata = {"name": skill_path.name, "description": ""}
-
-        for line in frontmatter.split("\n"):
-            if line.startswith("name:"):
-                metadata["name"] = line.split(":", 1)[1].strip().strip('"\'')
-            elif line.startswith("description:"):
-                metadata["description"] = line.split(":", 1)[1].strip().strip('"\'')
-
-        return metadata
-    except Exception as e:
-        return {"name": skill_path.name, "description": f"(error reading: {e})"}
+    """Name and description from SKILL.md frontmatter."""
+    return skill_summary(skill_path)
 
 
 def list_skills(scope: str | None = None, output_format: str = "text") -> list[dict]:

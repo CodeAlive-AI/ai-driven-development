@@ -334,6 +334,41 @@ def get_skills_dir(agent: str, scope: str, cwd: Path | None = None) -> Path | No
     return None
 
 
+def find_skill_in_agent(
+    name: str,
+    agent: str,
+    scope: str | None = None,
+    cwd: Path | None = None
+) -> tuple[Path | None, str | None]:
+    """Find a skill by name in an agent's skills directories.
+
+    Args:
+        name: Skill name (directory name); a match needs a SKILL.md inside
+        agent: Agent ID
+        scope: Specific scope to search, or None for both
+        cwd: Working directory for project scope
+
+    Returns:
+        Tuple of (skill_path, scope_name) or (None, None) if not found
+    """
+    scopes_to_check = []
+    if scope is None or scope == "global":
+        global_dir = get_skills_dir(agent, "global")
+        if global_dir:
+            scopes_to_check.append(("global", global_dir))
+    if scope is None or scope == "project":
+        project_dir = get_skills_dir(agent, "project", cwd)
+        if project_dir:
+            scopes_to_check.append(("project", project_dir))
+
+    for scope_name, skills_dir in scopes_to_check:
+        skill_path = skills_dir / name
+        if skill_path.exists() and (skill_path / "SKILL.md").exists():
+            return skill_path, scope_name
+
+    return None, None
+
+
 def agents_sharing_dir(skills_dir: Path, cwd: Path | None = None) -> list[str]:
     """Agent IDs whose global or project skills directory is ``skills_dir``.
 

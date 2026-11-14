@@ -27,6 +27,8 @@ import re
 import subprocess
 from pathlib import Path
 
+from skill_md import parse_frontmatter, read_skill_text
+
 
 def get_user_skills_dir() -> Path:
     """Get the user-level skills directory."""
@@ -56,36 +58,6 @@ def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | 
             return skill_path, scope_name
 
     return None, None
-
-
-def parse_frontmatter(content: str) -> dict:
-    """Parse YAML frontmatter from SKILL.md content."""
-    match = re.match(r"^---\s*\n(.*?)\n---", content, re.DOTALL)
-    if not match:
-        return {}
-
-    frontmatter = match.group(1)
-    metadata = {}
-
-    current_key = None
-    current_value = []
-
-    for line in frontmatter.split("\n"):
-        key_match = re.match(r"^(\w[\w-]*):\s*(.*)", line)
-        if key_match:
-            if current_key:
-                value = "\n".join(current_value).strip()
-                metadata[current_key] = value.strip('"\'')
-            current_key = key_match.group(1)
-            current_value = [key_match.group(2)]
-        elif current_key and line.startswith("  "):
-            current_value.append(line.strip())
-
-    if current_key:
-        value = "\n".join(current_value).strip()
-        metadata[current_key] = value.strip('"\'')
-
-    return metadata
 
 
 # Common English stop words removed when extracting keywords.
@@ -582,7 +554,7 @@ def main() -> int:
         return 1
 
     skill_md = skill_path / "SKILL.md"
-    metadata = parse_frontmatter(skill_md.read_text(encoding="utf-8"))
+    metadata = parse_frontmatter(read_skill_text(skill_md))
     description = metadata.get("description", "")
 
     if not description:
