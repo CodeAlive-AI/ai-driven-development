@@ -5,6 +5,8 @@ Based on the Skills CLI registry (https://skills.sh, https://github.com/vercel-l
 Supports 40 AI coding agents with their skill directory configurations.
 """
 
+from __future__ import annotations
+
 import os
 from pathlib import Path
 from typing import TypedDict
