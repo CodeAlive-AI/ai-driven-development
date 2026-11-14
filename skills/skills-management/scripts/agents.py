@@ -417,3 +417,18 @@ def get_skills_dir(agent: str, scope: str, cwd: Path | None = None) -> Path | No
     elif scope == "global":
         return get_global_skills_dir(agent)
     return None
+
+
+def agents_sharing_dir(skills_dir: Path, cwd: Path | None = None) -> list[str]:
+    """Agent IDs whose global or project skills directory is ``skills_dir``.
+
+    Several agents read the same directory (for example ``~/.agents/skills``), so a
+    change there affects all of them.
+    """
+    wanted = os.path.abspath(skills_dir)
+    return [
+        agent
+        for agent in AGENTS
+        for scope in ("global", "project")
+        if (d := get_skills_dir(agent, scope, cwd)) is not None and os.path.abspath(d) == wanted
+    ]

@@ -25,7 +25,7 @@ Constraints:
 | `disable-model-invocation` | `true` = only the user can invoke (`/name`); Claude will not load it automatically. Also blocks subagent preload. Default: `false`. |
 | `user-invocable` | `false` = hide from `/` menu (background knowledge skills). Default: `true`. |
 | `allowed-tools` | Tools Claude can use without permission prompt while skill is active. Space-separated string or YAML list. Does NOT restrict tools — use permission settings to deny. |
-| `model` | Model alias (`sonnet`, `opus`, `haiku`, `inherit`) or full ID (`claude-opus-4-7`). Override applies for the rest of the turn only — does not save to settings. |
+| `model` | Model alias (`sonnet`, `opus`, `haiku`, `inherit`) or full ID (`claude-opus-5-5`). Override applies for the rest of the turn only — does not save to settings. |
 | `effort` | Effort level: `low`, `medium`, `high`, `xhigh` (Opus 4.7 only), `max`. Inherits session level if absent. |
 | `context` | `fork` to run in a forked subagent with isolated context. |
 | `agent` | Subagent type when `context: fork` (`Explore`, `Plan`, `general-purpose`, or any custom `.claude/agents/*`). |

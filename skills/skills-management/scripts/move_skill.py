@@ -1,10 +1,21 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Move a Claude Code skill between user and project scopes."""
 
-import argparse
-import shutil
 import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
+import argparse
 from pathlib import Path
+
+from fs_ops import move_into_place, path_present, same_location
 
 
 def get_user_skills_dir() -> Path:
@@ -25,7 +36,7 @@ def find_skill(name: str) -> tuple[Path | None, str | None]:
     """
     for scope_name, skills_dir in [("user", get_user_skills_dir()), ("project", get_project_skills_dir())]:
         skill_path = skills_dir / name
-        if skill_path.exists() and (skill_path / "SKILL.md").exists():
+        if skill_path.is_symlink() or (skill_path / "SKILL.md").exists():
             return skill_path, scope_name
     return None, None
 
@@ -48,8 +59,8 @@ def move_skill(name: str, to_scope: str, force: bool = False) -> bool:
         return False
 
     if from_scope == to_scope:
-        print(f"Skill '{name}' is already in {to_scope} scope.")
-        return False
+        print(f"Skill '{name}' is already in {to_scope} scope; nothing to do.")
+        return True
 
     # Determine target path
     if to_scope == "user":
@@ -59,24 +70,23 @@ def move_skill(name: str, to_scope: str, force: bool = False) -> bool:
 
     target_path = target_dir / name
 
-    # Check if target exists
-    if target_path.exists():
+    if path_present(target_path) and same_location(skill_path, target_path):
+        print(f"Error: '{skill_path}' and '{target_path}' are the same directory "
+              f"({target_path.resolve()}); one is a symlink to the other.")
+        link_scope = from_scope if skill_path.is_symlink() else to_scope
+        print(f"To drop the alias, delete the symlink instead: "
+              f"uv run scripts/delete_skill.py {name} -s {link_scope} --force")
+        return False
+
+    if path_present(target_path):
         if not force:
             print(f"Error: Skill '{name}' already exists in {to_scope} scope.")
-            print(f"Use --force to overwrite.")
+            print("Use --force to overwrite.")
             return False
         print(f"Overwriting existing skill in {to_scope} scope...")
-        if target_path.is_symlink():
-            target_path.unlink()
-        else:
-            shutil.rmtree(target_path)
 
-    # Ensure target directory exists
-    target_dir.mkdir(parents=True, exist_ok=True)
-
-    # Move the skill
     try:
-        shutil.move(str(skill_path), str(target_path))
+        move_into_place(skill_path, target_path)
         print(f"Moved skill '{name}': {from_scope} -> {to_scope}")
         print(f"  From: {skill_path}")
         print(f"  To:   {target_path}")

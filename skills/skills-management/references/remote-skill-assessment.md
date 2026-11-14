@@ -53,8 +53,8 @@ Fetch 3-6 candidates at a time. If more than 6 results, focus on the top candida
 Before recommending a skill, check what the user already has:
 
 ```bash
-python3 scripts/list_skills.py -s user
-python3 scripts/list_skills.py -s project
+uv run scripts/list_skills.py -s user
+uv run scripts/list_skills.py -s project
 ```
 
 If an installed skill already covers the same domain, note the overlap and assess whether the new skill adds enough value to justify installation.

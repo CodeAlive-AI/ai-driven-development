@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Run trigger tests against a skill's description.
 
 Given a list of user prompts and the expected trigger outcome for each,
@@ -10,11 +13,18 @@ optimised skills transfer across models and harnesses; trigger fidelity is
 a precondition for that.
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import json
 import re
 import subprocess
-import sys
 from pathlib import Path
 
 
@@ -223,6 +233,7 @@ def claude_cli_judge(description: str, prompt: str) -> tuple[bool, str]:
             ["claude", "-p", instruction],
             capture_output=True,
             text=True,
+            encoding="utf-8",
             timeout=120,
         )
     except FileNotFoundError:
@@ -294,7 +305,7 @@ def parse_simple_yaml_list(text: str) -> list[dict]:
 
 def load_cases(cases_path: Path) -> list[dict]:
     """Load test cases from a YAML or JSON file."""
-    text = cases_path.read_text()
+    text = cases_path.read_text(encoding="utf-8")
     suffix = cases_path.suffix.lower()
 
     if suffix == ".json":
@@ -571,7 +582,7 @@ def main() -> int:
         return 1
 
     skill_md = skill_path / "SKILL.md"
-    metadata = parse_frontmatter(skill_md.read_text())
+    metadata = parse_frontmatter(skill_md.read_text(encoding="utf-8"))
     description = metadata.get("description", "")
 
     if not description:

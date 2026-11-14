@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Show detailed information about a Claude Code skill."""
+
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
 
 import argparse
 import json
-import os
 import re
-import sys
 from pathlib import Path
 
 
@@ -77,7 +86,7 @@ def parse_frontmatter(content: str) -> dict:
 def get_skill_info(skill_path: Path, scope: str) -> dict:
     """Get comprehensive information about a skill."""
     skill_md = skill_path / "SKILL.md"
-    content = skill_md.read_text()
+    content = skill_md.read_text(encoding="utf-8")
 
     # Parse frontmatter
     metadata = parse_frontmatter(content)
@@ -179,36 +188,36 @@ def show_skill(name: str, scope: str | None = None, output_format: str = "text",
     print(f"{'=' * 60}")
     print(f"Scope:       {info['scope']}")
     print(f"Path:        {info['path']}")
-    print(f"")
-    print(f"Description:")
+    print("")
+    print("Description:")
     print(f"  {info['description']}")
-    print(f"")
+    print("")
 
     # Metadata
     if info['metadata']:
         other_meta = {k: v for k, v in info['metadata'].items() if k not in ('name', 'description')}
         if other_meta:
-            print(f"Other Metadata:")
+            print("Other Metadata:")
             for k, v in other_meta.items():
                 print(f"  {k}: {v}")
-            print(f"")
+            print("")
 
     # Stats
-    print(f"Statistics:")
+    print("Statistics:")
     print(f"  SKILL.md body: {info['body_lines']} lines, {info['body_words']} words")
     print(f"  Total files:   {info['file_count']}")
     print(f"  Total size:    {format_size(info['total_size'])}")
-    print(f"")
+    print("")
 
     # Structure
-    print(f"Structure:")
+    print("Structure:")
     print(f"  scripts/:    {'Yes' if info['has_scripts'] else 'No'}")
     print(f"  references/: {'Yes' if info['has_references'] else 'No'}")
     print(f"  assets/:     {'Yes' if info['has_assets'] else 'No'}")
 
     if show_files and info['files']:
-        print(f"")
-        print(f"Files:")
+        print("")
+        print("Files:")
         for f in sorted(info['files'], key=lambda x: x['path']):
             print(f"  {f['path']} ({format_size(f['size'])})")
 

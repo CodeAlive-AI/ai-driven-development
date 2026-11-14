@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """SkillOpt-style optimisation loop for a Claude Code skill.
 
 Treats the SKILL.md document as the trainable state of a frozen agent and
@@ -23,19 +26,23 @@ then becomes the mean across runs with stddev recorded; aggregate scores are
 the mean of per-task means.
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import hashlib
 import json
 import math
-import os
 import random
 import re
 import shutil
 import statistics
 import subprocess
-import sys
-import tempfile
-import time
 from pathlib import Path
 
 
@@ -313,6 +320,7 @@ def _run_cli(cmd: list[str], stdin: str, timeout: int = DEFAULT_TIMEOUT) -> str:
             input=stdin,
             capture_output=True,
             text=True,
+            encoding="utf-8",
             timeout=timeout,
             check=False,
         )
@@ -1361,8 +1369,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--reflection-minibatch", type=int, default=4)
     p.add_argument("--edit-budget", type=int, default=4)
     p.add_argument("--lr-schedule", choices=["constant", "linear", "cosine"], default="cosine")
-    p.add_argument("--optimizer-cmd", default="claude -p --model claude-opus-4-7")
-    p.add_argument("--target-cmd", default="claude -p --model claude-haiku-4-5-20251001")
+    p.add_argument("--optimizer-cmd", default="claude -p --model opus")
+    p.add_argument("--target-cmd", default="claude -p --model haiku")
     p.add_argument("--verifier", default="llm-judge",
                    help="'exact-match', 'llm-judge', 'assertions', or a path "
                         "to a script. The 'assertions' verifier requires each "

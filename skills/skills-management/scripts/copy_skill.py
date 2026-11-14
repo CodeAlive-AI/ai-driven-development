@@ -1,11 +1,21 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Copy a skill between AI coding agents."""
 
-import argparse
-import shutil
 import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
+import argparse
 from pathlib import Path
 
+from fs_ops import copy_into_place, path_present, same_location
 from agents import (
     AGENTS,
     get_agent_config,
@@ -85,23 +95,18 @@ def copy_skill(
 
     target_path = target_base / name
 
-    # Check same path
-    if source_path.resolve() == target_path.resolve():
-        return False, f"Source and target are the same path"
+    if path_present(target_path) and same_location(source_path, target_path):
+        return False, (
+            f"Source and target are the same directory ({source_path.resolve()}); "
+            "one of them is a symlink to the other, so there is nothing to do."
+        )
 
-    # Check if target exists
-    if target_path.exists():
-        if not force:
-            return False, f"Skill '{name}' already exists at {target_path}. Use --force to overwrite."
-        if target_path.is_symlink():
-            target_path.unlink()
-        else:
-            shutil.rmtree(target_path)
+    if path_present(target_path) and not force:
+        return False, f"Skill '{name}' already exists at {target_path}. Use --force to overwrite."
 
     # Copy
     try:
-        target_base.mkdir(parents=True, exist_ok=True)
-        shutil.copytree(source_path, target_path)
+        copy_into_place(source_path, target_path)
 
         from_config = get_agent_config(from_agent)
         to_config = get_agent_config(to_agent)

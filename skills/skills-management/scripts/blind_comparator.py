@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Blind A/B comparator for two skill versions.
 
 Runs the same set of tasks against a target agent twice — once per skill — and
@@ -12,23 +15,29 @@ gate: the SkillOpt loop uses the same verifier that proposed the edits, which
 can self-confirm. The comparator is the independent oracle.
 
 Usage:
-    python3 blind_comparator.py \\
+    uv run scripts/blind_comparator.py \\
         --skill-a path/to/skill_a/SKILL.md \\
         --skill-b path/to/skill_b/SKILL.md \\
         --tasks tasks.jsonl \\
-        --target-cmd "claude -p --model claude-haiku-4-5-20251001" \\
-        --judge-cmd  "claude -p --model claude-opus-4-7" \\
+        --target-cmd "claude -p --model haiku" \\
+        --judge-cmd  "claude -p --model opus" \\
         --output-dir comparison-out/
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import json
-import os
 import random
 import re
 import shutil
 import subprocess
-import sys
 from pathlib import Path
 
 
@@ -114,6 +123,7 @@ def _run_cli(cmd: list[str], stdin: str, timeout: int = DEFAULT_TIMEOUT) -> str:
             input=stdin,
             capture_output=True,
             text=True,
+            encoding="utf-8",
             timeout=timeout,
             check=False,
         )
@@ -581,9 +591,9 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--skill-b", required=True,
                    help="Path to skill B's SKILL.md (or its parent directory)")
     p.add_argument("--tasks", required=True, help="Path to tasks.jsonl")
-    p.add_argument("--target-cmd", default="claude -p --model claude-haiku-4-5-20251001",
+    p.add_argument("--target-cmd", default="claude -p --model haiku",
                    help="CLI command for the target agent (the one under test)")
-    p.add_argument("--judge-cmd", default="claude -p --model claude-opus-4-7",
+    p.add_argument("--judge-cmd", default="claude -p --model opus",
                    help="CLI command for the blind judge")
     p.add_argument("--output-dir", default="./comparison-runs/run-001",
                    help="Directory for per-task artifacts and the final report")

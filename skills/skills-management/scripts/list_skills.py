@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """List all Claude Code skills from user and project scopes."""
+
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
 
 import argparse
 import json
-import os
 import re
-import sys
 from pathlib import Path
 
 
@@ -26,7 +35,7 @@ def parse_skill_metadata(skill_path: Path) -> dict | None:
         return None
 
     try:
-        content = skill_md.read_text()
+        content = skill_md.read_text(encoding="utf-8")
         # Parse YAML frontmatter between --- markers
         match = re.match(r"^---\s*\n(.*?)\n---", content, re.DOTALL)
         if not match:

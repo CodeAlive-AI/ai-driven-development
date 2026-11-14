@@ -243,7 +243,7 @@ For a run that clears every checklist gate, ship via:
 
 ```
 cp <output-dir>/best_skill.md ~/.claude/skills/<skill>/SKILL.md
-python3 ../scripts/log_skill_edit.py <skill> \
+uv run scripts/log_skill_edit.py <skill> \
   --reason "Promoted from SkillOpt run; test_delta=+X.XXX" \
   --source from-trajectory \
   --ref <output-dir> \

@@ -164,18 +164,108 @@ skill optimised on a strong model with a strict verifier is usually worth
 shipping to the cheaper or weaker model that will actually run in
 production.
 
-## When to use the script
+## Tooling
 
-Run `python3 ../scripts/optimize_skill.py <skill> --tasks tasks.jsonl
---dry-run` first to see the plan. Then drop `--dry-run` to actually run.
-Inspect `best_skill.md` and `optimization_report.md`. Diff the result
-against the original with `../scripts/diff_skill_versions.py`. Use
-`../scripts/log_skill_edit.py` to record any manual follow-up edits you
-make after reading the report — those edits also belong in the audit trail.
+Commands run from the skill directory with `uv run` (see SKILL.md, "Running the scripts").
+
+### Run the loop
+
+```bash
+uv run scripts/optimize_skill.py <skill> --tasks tasks.jsonl --epochs 4 --edit-budget 4 \
+    --output-dir runs/r1 --dry-run              # plan first: splits, schedule, prompt previews
+uv run scripts/optimize_skill.py <skill> --tasks tasks.jsonl --output-dir runs/r1 \
+    --optimizer-cmd "claude -p --model opus" \
+    --target-cmd "claude -p --model sonnet"
+uv run scripts/diff_skill_versions.py <skill> --files \
+    runs/r1/initial_skill.md runs/r1/best_skill.md --format stats
+```
+
+Inspect `best_skill.md` and `optimization_report.md`, then audit the run with
+`optimization-grading-checklist.md`.
+
+### Assertions verifier
+
+`--verifier assertions` grades each rollout against declarative `assertions[]` in
+`tasks.jsonl`. The grader returns per-assertion pass/fail with evidence, extracted claims, and
+a critique of the assertions themselves (`eval_feedback`) that flags weak or
+non-discriminating checks; `optimization_report.md` aggregates it into an "Assertion critique"
+section.
+
+```json
+{"id":"t1","prompt":"...","assertions":["The output is a valid JSON array","Each item has a name field"]}
+```
+
+### Variance: multiple runs per task
+
+`--runs-per-task 3` runs each task N times; `rollouts.jsonl` records `score_mean` and
+`score_stddev`, and the validation gate uses the mean. Use it when the verifier is noisy or the
+agent is non-deterministic.
+
+### Blind A/B comparison
+
+The SkillOpt gate uses the same verifier that proposed the edits, which can be
+self-confirming. Get an independent verdict:
+
+```bash
+uv run scripts/blind_comparator.py --skill-a runs/r1/initial_skill.md \
+    --skill-b runs/r1/best_skill.md --tasks tasks.jsonl --output-dir cmp/r1
+```
+
+Both skills run on each prompt; an independent judge sees the outputs as X/Y with randomised
+labels. Results go to `comparison_report.{json,md}`.
+
+### HTML viewer and run aggregation
+
+```bash
+uv run scripts/eval_viewer.py runs/r1                    # opens a static page in the browser
+uv run scripts/eval_viewer.py runs/r1 runs/r2 --compare  # side by side
+uv run scripts/aggregate_runs.py runs/r1 runs/r2 --compare
+```
+
+The page shows the per-epoch chart, accepted/rejected edit timelines, slow-update history,
+per-task rollouts with grading and the initial-to-best diff, with no JS or CSS dependencies.
+
+### Protected slow-update section
+
+A skill that is optimised iteratively should hold longitudinal guidance in a fenced region:
+
+```markdown
+<!-- SLOW_UPDATE_START -->
+<!-- This block is managed by the epoch-boundary slow-update process.
+     Step-level edits never modify it. -->
+<!-- SLOW_UPDATE_END -->
+```
+
+`review_skill.py` flags unbalanced or nested markers; `optimize_skill.py` refuses step-level
+edits that target content inside the region.
+
+### Manual-edit audit trail
+
+For edits made outside the loop, keep a lightweight log:
+
+```bash
+uv run scripts/log_skill_edit.py <skill> --reason "tightened insert_after target" \
+    --source from-bug --ref "issue #42" --snapshot
+uv run scripts/log_skill_edit.py <skill> --list --since 30d
+uv run scripts/diff_skill_versions.py <skill> --log --format stats
+uv run scripts/diff_skill_versions.py <skill> --git HEAD~3 HEAD
+```
+
+`--snapshot` saves `<skill>/.skill_snapshots/SKILL.<sha8>.md` so the diff helper can show
+content, not only hashes. Snapshots and `.skill_edit_log.jsonl` are local working artefacts:
+in a git-tracked skill, git history is the record, so do not commit them.
+
+### Trigger and transfer tests
+
+```bash
+uv run scripts/trigger_test.py <skill> --generate > cases.yaml   # candidate cases from the description
+uv run scripts/trigger_test.py <skill> --cases cases.yaml --threshold 0.8
+uv run scripts/transfer_test.py <skill> --all --scope global     # lands and parses in other agents
+```
 
 ## References
 
 - Yang et al. *SkillOpt: Executive Strategy for Self-Evolving Agent Skills.*
   Microsoft, May 2026. arXiv:2605.23904.
-- See companion files: `../scripts/optimize_skill.py`, `../prompts/*.md`
+- See companion files: `scripts/optimize_skill.py`, `../prompts/*.md`
   (verbatim §C.2 contracts).

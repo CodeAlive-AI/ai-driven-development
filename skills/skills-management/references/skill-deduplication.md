@@ -94,7 +94,7 @@ Before every install:
 2. Run:
 
    ```bash
-   python3 scripts/audit_skill_duplicates.py --candidate /path/to/skill --fail-on-conflict
+   uv run scripts/audit_skill_duplicates.py --candidate /path/to/skill --fail-on-conflict
    ```
 
 3. If the name already exists, update or reuse the canonical copy. Do not install first

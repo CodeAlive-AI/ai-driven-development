@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Aggregate one or more SkillOpt optimisation runs into a comparable summary.
 
 Reads the artefacts written by `optimize_skill.py` and surfaces the metrics
@@ -9,12 +12,19 @@ See `../references/optimization-artifacts-schemas.md` for the artefact
 contract this script reads.
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import glob
 import json
 import math
 import re
-import sys
 from pathlib import Path
 
 

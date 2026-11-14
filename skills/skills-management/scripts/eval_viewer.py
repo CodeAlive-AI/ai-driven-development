@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Render an HTML viewer for a SkillOpt optimisation run.
 
 Reads the artefacts written by `optimize_skill.py` and produces a single
@@ -10,12 +13,19 @@ See `../references/optimization-artifacts-schemas.md` for the artefact
 contract this script reads.
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import difflib
 import html
 import json
 import re
-import sys
 import webbrowser
 from pathlib import Path
 

@@ -1,16 +1,26 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Diff two versions of a Claude Code skill's SKILL.md.
 
 Supports diffing across git commits, between two arbitrary files, or against
 the previous logged snapshot (when log_skill_edit.py --snapshot was used).
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import difflib
 import re
 import shutil
 import subprocess
-import sys
 import tempfile
 from pathlib import Path
 
@@ -71,6 +81,7 @@ def git_show_file(repo_path: Path, commit: str, relative_path: str) -> tuple[str
             ["git", "-C", str(repo_path), "show", f"{commit}:{relative_path}"],
             capture_output=True,
             text=True,
+            encoding="utf-8",
             check=False,
         )
     except OSError as e:
@@ -91,6 +102,7 @@ def git_repo_root(path: Path) -> Path | None:
             ["git", "-C", str(path), "rev-parse", "--show-toplevel"],
             capture_output=True,
             text=True,
+            encoding="utf-8",
             check=False,
         )
     except OSError:

@@ -1,9 +1,20 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Delete a skill from AI coding agents."""
 
-import argparse
-import shutil
 import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
+import argparse
+import os
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from agents import (
@@ -13,6 +24,31 @@ from agents import (
     get_skills_dir,
     validate_agent,
 )
+from fs_ops import remove_path
+
+SCRIPT = "uv run scripts/delete_skill.py"
+
+
+@dataclass
+class Location:
+    """One filesystem entry holding a skill, and every agent scope that reads it."""
+
+    path: Path
+    readers: list[tuple[str, str, str]] = field(default_factory=list)  # (agent_id, display, scope)
+
+    @property
+    def is_link(self) -> bool:
+        return self.path.is_symlink()
+
+    def describe(self) -> str:
+        readers = ", ".join(f"{display} ({agent_id}) [{scope}]" for agent_id, display, scope in self.readers)
+        if self.is_link:
+            kind = f"symlink -> {os.readlink(self.path)}"
+            if not self.path.exists():
+                kind += " (broken)"
+        else:
+            kind = "directory"
+        return f"{self.path} ({kind})" + (f"\n      read by: {readers}" if readers else "")
 
 
 def get_user_skills_dir() -> Path:
@@ -25,12 +61,9 @@ def get_project_skills_dir() -> Path:
     return Path.cwd() / ".claude" / "skills"
 
 
-def remove_path(path: Path) -> None:
-    """Remove a path, handling both symlinks and real directories."""
-    if path.is_symlink():
-        path.unlink()
-    else:
-        shutil.rmtree(path)
+def has_skill_entry(path: Path) -> bool:
+    """A skill directory, a symlink to one, or a broken symlink left behind."""
+    return path.is_symlink() or (path / "SKILL.md").is_file()
 
 
 def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | None]:
@@ -47,42 +80,79 @@ def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | 
 
     for scope_name, skills_dir in scopes_to_check:
         skill_path = skills_dir / name
-        if skill_path.exists() and (
-            (skill_path / "SKILL.md").exists() or skill_path.is_symlink()
-        ):
+        if has_skill_entry(skill_path):
             return skill_path, scope_name
 
     return None, None
 
 
-def find_skill_in_agents(name: str) -> list[tuple[str, str, str, Path]]:
-    """Find a skill across all detected agents.
+def collect_locations(name: str, agent_ids: list[str]) -> list[Location]:
+    """Every distinct entry for ``name`` in the given agents' scopes.
 
-    Returns:
-        List of (agent_id, display_name, scope, path) tuples
+    Entries are keyed by their own path, not by the directory they resolve to, so a
+    canonical directory and each symlink to it are separate locations, while agents
+    that share one skills directory are readers of the same location.
     """
-    found = []
-    seen_paths = set()
-
-    for agent_id in detect_installed_agents():
+    by_path: dict[str, Location] = {}
+    for agent_id in agent_ids:
         config = get_agent_config(agent_id)
         if not config:
             continue
-
         for scope in ("global", "project"):
             skills_dir = get_skills_dir(agent_id, scope)
             if not skills_dir:
                 continue
-
             skill_path = skills_dir / name
-            resolved = str(skill_path.resolve()) if skill_path.exists() else str(skill_path)
+            if not has_skill_entry(skill_path):
+                continue
+            key = os.path.abspath(skill_path)
+            location = by_path.setdefault(key, Location(Path(key)))
+            location.readers.append((agent_id, config["display_name"], scope))
+    return list(by_path.values())
 
-            if skill_path.exists() and resolved not in seen_paths:
-                if (skill_path / "SKILL.md").exists() or skill_path.is_symlink():
-                    seen_paths.add(resolved)
-                    found.append((agent_id, config["display_name"], scope, skill_path))
 
-    return found
+def find_skill_in_agents(name: str) -> list[Location]:
+    """Find a skill across all detected agents."""
+    return collect_locations(name, detect_installed_agents())
+
+
+def links_left_dangling(name: str, deleting: list[Location]) -> list[Location]:
+    """Symlinks outside ``deleting`` that point at a real directory about to be deleted."""
+    doomed_real = {loc.path.resolve() for loc in deleting if not loc.is_link}
+    if not doomed_real:
+        return []
+    doomed_paths = {loc.path for loc in deleting}
+    candidates = find_skill_in_agents(name)
+    for scope in ("user", "project"):
+        path, _ = find_skill(name, scope)
+        if path and path.is_symlink():
+            candidates.append(Location(Path(os.path.abspath(path)), [("claude-code", "Claude Code", scope)]))
+    return [
+        loc for loc in candidates
+        if loc.is_link and loc.path not in doomed_paths and loc.path.resolve() in doomed_real
+    ]
+
+
+def refuse_dangling(name: str, dangling: list[Location]) -> bool:
+    print("\nRefusing: these symlinks point at the directory being deleted and would break:")
+    for loc in dangling:
+        print(f"  - {loc.describe()}")
+    print("Next step, after confirming with the user, one of:")
+    print(f"  {SCRIPT} {name} --all-agents --force   # delete the directory and every link to it")
+    print("  or delete only the links by naming their agents with --agent.")
+    return False
+
+
+def confirm(prompt: str) -> bool:
+    """Ask on a terminal; refuse with the next command when there is none."""
+    if not sys.stdin.isatty():
+        print("\nNo terminal to confirm on. Confirm with the user, then rerun with --force.")
+        return False
+    response = input(prompt).strip().lower()
+    if response != "y":
+        print("Cancelled.")
+        return False
+    return True
 
 
 def delete_skill_default(name: str, scope: str | None = None, force: bool = False) -> bool:
@@ -105,36 +175,34 @@ def delete_skill_default(name: str, scope: str | None = None, force: bool = Fals
             print(f"Error: Skill '{name}' not found in user or project scope.")
         return False
 
-    print(f"Found skill '{name}' at: {skill_path}")
+    target = Location(Path(os.path.abspath(skill_path)))
+    print(f"Found skill '{name}' at: {target.describe()}")
     print(f"Scope: {found_scope}")
-    if skill_path.is_symlink():
-        print(f"Type: symlink -> {skill_path.resolve()}")
+
+    dangling = links_left_dangling(name, [target])
+    if dangling:
+        return refuse_dangling(name, dangling)
 
     if not force:
-        if not skill_path.is_symlink():
-            files = list(skill_path.rglob("*"))
-            file_count = len([f for f in files if f.is_file()])
+        if not target.is_link:
+            file_count = sum(1 for f in skill_path.rglob("*") if f.is_file())
             print(f"Contains {file_count} file(s)")
-
-        response = input("\nDelete this skill? [y/N]: ").strip().lower()
-        if response != "y":
-            print("Cancelled.")
+        if not confirm("\nDelete this skill? [y/N]: "):
             return False
 
     try:
         remove_path(skill_path)
         print(f"Deleted skill '{name}' from {found_scope} scope.")
-    except Exception as e:
+    except OSError as e:
         print(f"Error deleting skill: {e}")
         return False
 
-    # Warn about remaining copies in other agents
     remaining = find_skill_in_agents(name)
     if remaining:
-        print(f"\nWarning: '{name}' still exists in {len(remaining)} other location(s):")
-        for agent_id, display_name, agent_scope, path in remaining:
-            print(f"  - {display_name} ({agent_id}) [{agent_scope}]: {path}")
-        print("Use --all-agents to delete from all agents.")
+        print(f"\nNote: '{name}' still exists in {len(remaining)} other location(s):")
+        for loc in remaining:
+            print(f"  - {loc.describe()}")
+        print(f"To delete them too: {SCRIPT} {name} --all-agents --force")
 
     return True
 
@@ -162,74 +230,57 @@ def delete_skill_agents(
             print(f"Error: Skill '{name}' not found in any detected agent.")
             return False
     else:
-        locations = []
-        for agent_id in agents:
-            config = get_agent_config(agent_id)
-            if not config:
-                continue
-            for scope in ("global", "project"):
-                skills_dir = get_skills_dir(agent_id, scope)
-                if not skills_dir:
-                    continue
-                skill_path = skills_dir / name
-                if skill_path.exists() and (
-                    (skill_path / "SKILL.md").exists() or skill_path.is_symlink()
-                ):
-                    locations.append((agent_id, config["display_name"], scope, skill_path))
-
+        locations = collect_locations(name, agents or [])
         if not locations:
-            agent_names = ", ".join(agents)
-            print(f"Error: Skill '{name}' not found in: {agent_names}")
+            print(f"Error: Skill '{name}' not found in: {', '.join(agents or [])}")
             return False
 
-    # Show what will be deleted
     print(f"Found '{name}' in {len(locations)} location(s):")
-    for agent_id, display_name, scope, path in locations:
-        link_info = f" (symlink)" if path.is_symlink() else ""
-        print(f"  - {display_name} ({agent_id}) [{scope}]: {path}{link_info}")
+    for loc in locations:
+        print(f"  - {loc.describe()}")
 
-    if not force:
-        response = input(f"\nDelete from all {len(locations)} location(s)? [y/N]: ").strip().lower()
-        if response != "y":
-            print("Cancelled.")
-            return False
+    dangling = links_left_dangling(name, locations)
+    if dangling:
+        return refuse_dangling(name, dangling)
 
-    # Delete from each location
+    if not force and not confirm(f"\nDelete all {len(locations)} location(s)? [y/N]: "):
+        return False
+
+    # Links first, so a failure never leaves links pointing at a deleted directory.
+    ordered = sorted(locations, key=lambda loc: not loc.is_link)
     results = []
-    for agent_id, display_name, scope, path in locations:
+    for loc in ordered:
         try:
-            remove_path(path)
-            results.append((agent_id, display_name, scope, path, True, "Deleted"))
-        except Exception as e:
-            results.append((agent_id, display_name, scope, path, False, str(e)))
+            remove_path(loc.path)
+            results.append((loc, True, "Deleted"))
+        except OSError as e:
+            results.append((loc, False, str(e)))
 
-    # Print results
-    print(f"\n=== DELETE RESULTS ===\n")
-    success_count = 0
-    for agent_id, display_name, scope, path, success, message in results:
-        status = "OK" if success else "FAILED"
-        print(f"[{status}] {display_name} ({agent_id})")
-        print(f"      {message}: {path}")
-        if success:
-            success_count += 1
-        print()
-
-    print(f"Deleted from {success_count}/{len(results)} location(s).")
+    print("\n=== DELETE RESULTS ===\n")
+    for loc, success, message in results:
+        print(f"[{'OK' if success else 'FAILED'}] {message}: {loc.describe()}")
+    success_count = sum(1 for _, success, _ in results if success)
+    print(f"\nDeleted {success_count}/{len(results)} location(s).")
     return success_count == len(results)
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Delete a skill from AI coding agents")
+    parser = argparse.ArgumentParser(
+        description=(
+            "Delete a skill. Without --agent/--all-agents only Claude Code scopes are touched. "
+            "Refuses to delete a directory that other agents' symlinks still point at."
+        )
+    )
     parser.add_argument("name", help="Name of the skill to delete")
     parser.add_argument(
         "--scope", "-s",
         choices=["user", "project"],
-        help="Scope to search (default: search both, user takes precedence)"
+        help="Claude Code scope to search (default: both, user takes precedence)"
     )
     parser.add_argument(
         "--force", "-f",
         action="store_true",
-        help="Skip confirmation prompt"
+        help="Skip the confirmation prompt (required in non-interactive shells)"
     )
     parser.add_argument(
         "--agent", "-a",
@@ -240,18 +291,16 @@ def main():
     parser.add_argument(
         "--all-agents",
         action="store_true",
-        help="Delete from all detected agents where the skill exists"
+        help="Delete every copy and symlink in all detected agents"
     )
     args = parser.parse_args()
 
-    # Validate flag combinations
     if args.agents and args.all_agents:
         parser.error("Cannot use both --agent and --all-agents")
 
     if (args.agents or args.all_agents) and args.scope:
         parser.error("Cannot use --scope with --agent or --all-agents")
 
-    # Validate agent IDs
     if args.agents:
         for agent in args.agents:
             if not validate_agent(agent):
@@ -259,7 +308,6 @@ def main():
                 print(f"Valid agents: {', '.join(sorted(AGENTS.keys()))}")
                 return 1
 
-    # Route to appropriate handler
     if args.agents or args.all_agents:
         success = delete_skill_agents(args.name, args.agents, args.all_agents, args.force)
     else:

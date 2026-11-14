@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Log a manual edit to a Claude Code skill into an append-only audit trail.
 
 Modelled on Microsoft's SkillOpt paper (arXiv 2605.23904): every accepted skill
@@ -6,12 +9,19 @@ edit is recorded so regressions can be diagnosed and bisected. Each entry is one
 line of JSON in <skill>/.skill_edit_log.jsonl.
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import hashlib
 import json
 import os
 import re
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
 

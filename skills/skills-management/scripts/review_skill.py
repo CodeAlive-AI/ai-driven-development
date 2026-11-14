@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Review a Claude Code skill against best practices."""
+
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
 
 import argparse
 import json
 import re
-import sys
 from pathlib import Path
 
 
@@ -267,7 +277,7 @@ def check_body(body: str, skill_path: Path) -> list[dict]:
     for ref_file in ref_files:
         ref_path = skill_path / ref_file
         if ref_path.exists():
-            ref_content = ref_path.read_text()
+            ref_content = ref_path.read_text(encoding="utf-8")
             nested_refs = re.findall(r"\[.*?\]\(([^)]+\.md)\)", ref_content)
             if nested_refs:
                 issues.append({
@@ -580,7 +590,7 @@ def check_structure(skill_path: Path) -> list[dict]:
     for md_file in skill_path.glob("**/*.md"):
         if md_file.name == "SKILL.md":
             continue
-        content = md_file.read_text()
+        content = md_file.read_text(encoding="utf-8")
         lines = content.split("\n")
         if len(lines) > 100:
             toc_patterns = [r"## contents", r"## table of contents", r"- \[.*\]\(#"]
@@ -612,7 +622,7 @@ def review_skill(name: str, scope: str | None = None, output_format: str = "text
         }
 
     skill_md = skill_path / "SKILL.md"
-    content = skill_md.read_text()
+    content = skill_md.read_text(encoding="utf-8")
     metadata, body = parse_frontmatter(content)
 
     skill_name = metadata.get("name", skill_path.name)
@@ -712,13 +722,13 @@ def format_output(result: dict, output_format: str) -> str:
         f"Scope: {result['scope']}",
         f"Path:  {result['path']}",
         f"Lines: {result['body_lines']}",
-        f"",
-        f"Token footprint:",
+        "",
+        "Token footprint:",
         f"  Body:           {result['body_tokens']} tokens  (target 300-2000)",
         f"  References:     {result['references_tokens']} tokens",
         f"  Slow-update:    {result['slow_update_tokens']} tokens  (protected section)",
         f"  Total:          {result['total_tokens']} tokens",
-        f"",
+        "",
         f"Score: {result['summary']['score']}/100",
         f"  Errors:   {result['summary']['errors']}",
         f"  Warnings: {result['summary']['warnings']}",
@@ -733,7 +743,7 @@ def format_output(result: dict, output_format: str) -> str:
         for issue in result["issues"]:
             severity = issue["severity"].upper()
             icon = {"error": "❌", "warning": "⚠️", "info": "ℹ️"}.get(issue["severity"], "•")
-            lines.append(f"")
+            lines.append("")
             lines.append(f"{icon} [{severity}] {issue['rule']}")
             lines.append(f"   {issue['message']}")
             lines.append(f"   → {issue['suggestion']}")

@@ -1,10 +1,20 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Install a skill to one or more AI coding agents."""
+
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
 
 import argparse
 import re
 import shutil
-import sys
 from pathlib import Path
 
 from agents import (
@@ -15,6 +25,7 @@ from agents import (
     validate_agent,
 )
 from audit_skill_duplicates import audit_candidate
+from fs_ops import link_into_place, path_present, same_location, stage_and_swap
 
 
 # Files to exclude when copying skills (per add-skill pattern)
@@ -35,7 +46,7 @@ def parse_skill_name(skill_path: Path) -> str | None:
         return None
 
     try:
-        content = skill_md.read_text()
+        content = skill_md.read_text(encoding="utf-8")
         match = re.match(r"^---\s*\n(.*?)\n---", content, re.DOTALL)
         if match:
             frontmatter = match.group(1)
@@ -163,26 +174,20 @@ def install_skill(
 
     target_path = target_base / skill_name
 
-    if (target_path.exists() or target_path.is_symlink()) and target_path.resolve() == source.resolve():
+    if path_present(target_path) and same_location(target_path, source):
         return True, f"Already linked to canonical source: {target_path}"
 
-    # Check if target exists
-    if target_path.exists() or target_path.is_symlink():
-        if not force:
-            return False, f"Skill '{skill_name}' already exists at {target_path}. Use --force to overwrite."
-        if target_path.is_symlink():
-            target_path.unlink()
-        else:
-            shutil.rmtree(target_path)
+    if path_present(target_path) and not force:
+        return False, f"Skill '{skill_name}' already exists at {target_path}. Use --force to overwrite."
 
     # Link a maintained local source when possible; copy only when isolation is desired.
+    # The old target is replaced only after the new link or copy is complete.
     try:
-        target_path.parent.mkdir(parents=True, exist_ok=True)
         if link:
-            target_path.symlink_to(source.resolve(), target_is_directory=True)
+            link_into_place(source, target_path)
             action = "Linked"
         else:
-            copy_skill_directory(source, target_path)
+            stage_and_swap(target_path, lambda staging: copy_skill_directory(source, staging))
             action = "Installed"
         return True, f"{action} '{skill_name}' to {agent} ({scope}): {target_path}"
     except Exception as e:
@@ -286,7 +291,7 @@ def main():
         results.append((agent, config["display_name"], success, message))
 
     # Print results
-    print(f"\n=== INSTALL RESULTS ===\n")
+    print("\n=== INSTALL RESULTS ===\n")
     success_count = 0
     for agent, display_name, success, message in results:
         status = "OK" if success else "FAILED"

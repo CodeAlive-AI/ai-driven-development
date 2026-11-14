@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Verify a skill transfers correctly to other agent directories.
 
 Inspired by Microsoft's SkillOpt paper (arXiv 2605.23904) §4.3, which
@@ -9,11 +12,18 @@ Optionally, with --copy, it can copy the skill from the source location into
 the target's skills directory first.
 """
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import json
 import re
 import shutil
-import sys
 from pathlib import Path
 
 # Reuse the agent registry from sibling scripts.
@@ -133,7 +143,7 @@ def check_agent_target(
         return info
 
     try:
-        content = skill_md.read_text()
+        content = skill_md.read_text(encoding="utf-8")
     except OSError as exc:
         info["status"] = "present-invalid"
         info["reason"] = f"cannot read SKILL.md: {exc}"

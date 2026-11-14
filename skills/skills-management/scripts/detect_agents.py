@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Detect installed AI coding agents on the system."""
+
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
 
 import argparse
 import json
-import sys
-from pathlib import Path
 
 # Import from local agents module
 from agents import AGENTS, detect_installed_agents, get_agent_config

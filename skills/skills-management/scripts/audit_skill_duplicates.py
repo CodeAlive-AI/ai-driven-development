@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.11"
+# ///
 """Audit skill discovery roots for duplicate frontmatter names.
 
 The audit is read-only. It distinguishes aliases to one real directory, identical
@@ -8,12 +11,19 @@ implementations that require a canonical-source decision.
 
 from __future__ import annotations
 
+import sys
+
+if sys.version_info < (3, 11):
+    sys.exit(
+        f"{__file__} needs Python 3.11+, but runs on {sys.version.split()[0]}.\n"
+        f"Run it with uv instead: uv run {__file__}"
+    )
+
 import argparse
 import hashlib
 import json
 import re
 import subprocess
-import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -101,6 +111,7 @@ def active_claude_plugin_skill_roots() -> list[Path]:
             capture_output=True,
             check=True,
             text=True,
+            encoding="utf-8",
             timeout=15,
         )
         plugins = json.loads(result.stdout)
