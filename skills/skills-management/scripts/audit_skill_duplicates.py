@@ -27,7 +27,7 @@ import subprocess
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
-from agents import AGENTS
+from agents import AGENTS, get_all_global_skills_dirs
 
 
 IGNORED_PARTS = {".git", ".DS_Store", "__pycache__", ".pytest_cache"}
@@ -97,10 +97,20 @@ def find_repo_root(start: Path) -> Path | None:
 def add_root(
     roots: dict[str, tuple[Path, str]], root: Path, root_kind: str
 ) -> None:
-    """Add an existing skill root once, using its lexical path as identity."""
+    """Add an existing skill root once, using its lexical path as identity.
+
+    A root that is a symlink to a root already added (for example the legacy
+    ``~/.gemini/antigravity/skills`` -> ``~/.gemini/config/skills``) is skipped:
+    it holds the same entries and would only list each skill twice.
+    """
     expanded = root.expanduser()
-    if expanded.is_dir():
-        roots.setdefault(str(expanded.absolute()), (expanded, root_kind))
+    if not expanded.is_dir():
+        return
+    if expanded.is_symlink():
+        target = expanded.resolve()
+        if any(existing.resolve() == target for existing, _ in roots.values()):
+            return
+    roots.setdefault(str(expanded.absolute()), (expanded, root_kind))
 
 
 def active_claude_plugin_skill_roots() -> list[Path]:
@@ -132,8 +142,9 @@ def default_roots(cwd: Path, anchors: list[Path] | None = None) -> list[tuple[Pa
     home = Path.home()
 
     add_root(roots, home / ".agents" / "skills", "canonical-user")
-    for config in AGENTS.values():
-        add_root(roots, Path(config["global_dir"]), "agent-user")
+    for agent_id in AGENTS:
+        for global_dir in get_all_global_skills_dirs(agent_id):
+            add_root(roots, global_dir, "agent-user")
 
     search_anchors = [cwd, *(anchors or [])]
     seen_repos: set[Path] = set()

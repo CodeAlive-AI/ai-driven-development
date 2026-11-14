@@ -50,7 +50,9 @@ On an older interpreter a script exits with the exact `uv run` command to use in
 Skill discovery is consumer-specific. Codex uses `$HOME/.agents/skills` for user skills,
 scans `.agents/skills` from CWD to repo root, and follows symlinks. Other agents use the
 paths in `scripts/agents.py` (print them with `detect_agents.py --all` rather than copying
-them into instructions); plugins add a separately managed namespaced layer.
+them into instructions). Installs write to an agent's `global_dir`; the duplicate audit and
+`delete_skill.py --all-agents` also scan the further dirs it reads (`extra_global_dirs`).
+Plugins add a separately managed namespaced layer.
 
 Maintain one active implementation of a frontmatter `name` per consumer topology. Aliases
 to one real directory are not independent copies; identical agent-specific replicas may be

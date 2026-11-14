@@ -30,6 +30,7 @@ class Sandbox(unittest.TestCase):
         self.agent_dirs = {agent: self.base / agent / "skills" for agent in ("alpha", "beta", "gamma")}
         for directory in self.agent_dirs.values():
             directory.mkdir(parents=True)
+        self.extra_dirs: dict[str, list[Path]] = {}
         self.claude_user = self.base / "claude-user" / "skills"
         self.claude_project = self.base / "claude-project" / "skills"
         self.claude_user.mkdir(parents=True)
@@ -42,6 +43,11 @@ class Sandbox(unittest.TestCase):
                 delete_skill,
                 "get_skills_dir",
                 side_effect=lambda a, scope, cwd=None: self.agent_dirs[a] if scope == "global" else None,
+            ),
+            patch.object(
+                delete_skill,
+                "get_all_global_skills_dirs",
+                side_effect=lambda a: [self.agent_dirs[a], *self.extra_dirs.get(a, [])],
             ),
             patch.object(delete_skill, "get_user_skills_dir", return_value=self.claude_user),
             patch.object(delete_skill, "get_project_skills_dir", return_value=self.claude_project),
@@ -110,6 +116,18 @@ class DeleteSkillTests(Sandbox):
         self.assertTrue(ok)
         self.assertFalse(fs_ops.path_present(self.agent_dirs["beta"] / "demo"))
         self.assertTrue((real / "SKILL.md").is_file())
+
+    def test_all_agents_also_removes_copies_in_extra_global_dirs(self):
+        legacy = self.base / "alpha-legacy" / "skills"
+        self.extra_dirs["alpha"] = [legacy]
+        make_skill(self.agent_dirs["alpha"] / "demo")
+        make_skill(legacy / "demo")
+
+        ok, _ = self.run_quietly(delete_skill.delete_skill_agents, "demo", ["alpha"], force=True)
+
+        self.assertTrue(ok)
+        self.assertFalse(fs_ops.path_present(legacy / "demo"))
+        self.assertFalse(fs_ops.path_present(self.agent_dirs["alpha"] / "demo"))
 
     def test_broken_symlink_can_be_deleted(self):
         (self.agent_dirs["beta"] / "demo").symlink_to(self.base / "gone", target_is_directory=True)

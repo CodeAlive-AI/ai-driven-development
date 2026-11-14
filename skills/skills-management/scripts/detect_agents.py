@@ -16,7 +16,7 @@ import argparse
 import json
 
 # Import from local agents module
-from agents import AGENTS, detect_installed_agents, get_agent_config
+from agents import AGENTS, detect_installed_agents
 
 
 def format_output(agents: list[dict], output_format: str, show_all: bool) -> str:
@@ -53,6 +53,9 @@ def format_output(agents: list[dict], output_format: str, show_all: bool) -> str
             lines.append(f"  {a['display_name']} ({a['name']}){installed}")
             lines.append(f"    Project: {a['project_dir']}")
             lines.append(f"    Global:  {a['global_dir']}")
+            if a["extra_global_dirs"]:
+                lines.append(f"    Also reads: {', '.join(a['extra_global_dirs'])}")
+            lines.append(f"    Source:  {a['source']}")
             lines.append("")
     else:
         lines = ["=== DETECTED AI CODING AGENTS ===", ""]
@@ -62,6 +65,20 @@ def format_output(agents: list[dict], output_format: str, show_all: bool) -> str
             lines.append("")
 
     return "\n".join(lines)
+
+
+def agent_info(agent_id: str, installed: bool) -> dict:
+    """Registry entry of one agent, as printed by this script."""
+    config = AGENTS[agent_id]
+    return {
+        "name": config["name"],
+        "display_name": config["display_name"],
+        "project_dir": config["project_dir"],
+        "global_dir": config["global_dir"],
+        "extra_global_dirs": config.get("extra_global_dirs", []),
+        "source": config["source"],
+        "installed": installed,
+    }
 
 
 def main():
@@ -81,31 +98,12 @@ def main():
     )
     args = parser.parse_args()
 
-    if args.all:
-        # Show all supported agents with installation status
-        detected = set(detect_installed_agents())
-        agents = []
-        for agent_id, config in AGENTS.items():
-            agents.append({
-                "name": config["name"],
-                "display_name": config["display_name"],
-                "project_dir": config["project_dir"],
-                "global_dir": config["global_dir"],
-                "installed": agent_id in detected,
-            })
-    else:
-        # Show only detected agents
-        detected_ids = detect_installed_agents()
-        agents = []
-        for agent_id in detected_ids:
-            config = get_agent_config(agent_id)
-            if config:
-                agents.append({
-                    "name": config["name"],
-                    "display_name": config["display_name"],
-                    "project_dir": config["project_dir"],
-                    "global_dir": config["global_dir"],
-                })
+    detected = detect_installed_agents()
+    agent_ids = list(AGENTS) if args.all else detected
+    agents = [agent_info(agent_id, agent_id in detected) for agent_id in agent_ids]
+    if not args.all:
+        for info in agents:
+            del info["installed"]
 
     print(format_output(agents, args.format, args.all))
     return 0 if agents else 1

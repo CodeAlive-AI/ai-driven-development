@@ -21,6 +21,7 @@ from agents import (
     AGENTS,
     detect_installed_agents,
     get_agent_config,
+    get_all_global_skills_dirs,
     get_skills_dir,
     validate_agent,
 )
@@ -98,10 +99,10 @@ def collect_locations(name: str, agent_ids: list[str]) -> list[Location]:
         config = get_agent_config(agent_id)
         if not config:
             continue
-        for scope in ("global", "project"):
-            skills_dir = get_skills_dir(agent_id, scope)
-            if not skills_dir:
-                continue
+        scoped_dirs = [("global", d) for d in get_all_global_skills_dirs(agent_id)]
+        if project_dir := get_skills_dir(agent_id, "project"):
+            scoped_dirs.append(("project", project_dir))
+        for scope, skills_dir in scoped_dirs:
             skill_path = skills_dir / name
             if not has_skill_entry(skill_path):
                 continue
