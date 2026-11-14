@@ -15,7 +15,6 @@ if sys.version_info < (3, 11):
 import argparse
 from pathlib import Path
 
-from fs_ops import move_into_place, path_present, same_location
 from agents import (
     agents_sharing_dir,
     AGENTS,
@@ -24,6 +23,7 @@ from agents import (
     get_skills_dir,
     validate_agent,
 )
+from fs_ops import move_into_place, path_present, same_location
 
 
 def move_skill(

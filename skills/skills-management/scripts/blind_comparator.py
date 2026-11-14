@@ -33,63 +33,20 @@ if sys.version_info < (3, 11):
     )
 
 import argparse
-import json
 import random
-import re
 import shutil
-import subprocess
 from pathlib import Path
+
+from llm_cli import DEFAULT_TIMEOUT, call_llm_json, run_rollout
+from run_io import load_jsonl, log, write_json
 
 
 DEFAULT_SEED = 42
-DEFAULT_TIMEOUT = 300
 
 
 # --------------------------------------------------------------------------- #
 # Helpers (mirroring optimize_skill.py conventions)                           #
 # --------------------------------------------------------------------------- #
-
-def log(msg: str) -> None:
-    """Log to stderr so stdout stays clean for piping."""
-    print(msg, file=sys.stderr, flush=True)
-
-
-def safe_json_loads(text: str) -> dict | None:
-    """Parse JSON; if that fails, try to extract the first {...} block."""
-    text = text.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*\n", "", text)
-        text = re.sub(r"\n```\s*$", "", text)
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        pass
-    match = re.search(r"\{.*\}", text, re.DOTALL)
-    if match:
-        try:
-            return json.loads(match.group(0))
-        except json.JSONDecodeError:
-            return None
-    return None
-
-
-def load_jsonl(path: Path) -> list[dict]:
-    items: list[dict] = []
-    with path.open("r", encoding="utf-8") as fh:
-        for i, raw in enumerate(fh, 1):
-            raw = raw.strip()
-            if not raw:
-                continue
-            try:
-                items.append(json.loads(raw))
-            except json.JSONDecodeError as exc:
-                raise ValueError(f"{path}: line {i}: invalid JSON: {exc}") from exc
-    return items
-
-
-def write_json(path: Path, obj) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def read_skill_file(path: Path) -> str:
@@ -115,51 +72,6 @@ def resolve_skill_path(raw: str) -> Path:
 # CLI runner                                                                  #
 # --------------------------------------------------------------------------- #
 
-def _run_cli(cmd: list[str], stdin: str, timeout: int = DEFAULT_TIMEOUT) -> str:
-    """Run a CLI command, pipe stdin, return stdout. Raises on non-zero exit."""
-    try:
-        result = subprocess.run(
-            cmd,
-            input=stdin,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            timeout=timeout,
-            check=False,
-        )
-    except FileNotFoundError as exc:
-        raise RuntimeError(
-            f"CLI not found: {' '.join(cmd)} ({exc}). "
-            f"Use --dry-run to plan without executing."
-        ) from exc
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError(f"CLI timed out after {timeout}s: {' '.join(cmd)}") from exc
-
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"CLI exited {result.returncode}: {' '.join(cmd)}\n"
-            f"stderr: {result.stderr[:400]}"
-        )
-    return result.stdout
-
-
-def call_llm_text(cmd_str: str, prompt: str, timeout: int = DEFAULT_TIMEOUT) -> str:
-    """Call an LLM CLI with a free-text prompt. Returns the model's stdout."""
-    cmd = cmd_str.split()
-    return _run_cli(cmd, stdin=prompt, timeout=timeout)
-
-
-def call_llm_json(cmd_str: str, prompt: str, timeout: int = DEFAULT_TIMEOUT) -> dict | None:
-    """Call an LLM CLI expecting a JSON response. Retries once on parse failure."""
-    raw = call_llm_text(cmd_str, prompt, timeout=timeout)
-    parsed = safe_json_loads(raw)
-    if parsed is not None:
-        return parsed
-    log("  [warn] JSON parse failed, retrying with stricter prompt")
-    retry_prompt = prompt + "\n\nRespond ONLY with valid JSON. Previous output was malformed."
-    raw = call_llm_text(cmd_str, retry_prompt, timeout=timeout)
-    return safe_json_loads(raw)
-
 
 def cli_available(cmd_str: str) -> bool:
     """Return True if the first token of cmd_str is on PATH."""
@@ -172,22 +84,6 @@ def cli_available(cmd_str: str) -> bool:
 # --------------------------------------------------------------------------- #
 # Target rollout                                                              #
 # --------------------------------------------------------------------------- #
-
-def run_rollout(target_cmd: str, skill_text: str, task: dict, timeout: int = DEFAULT_TIMEOUT) -> str:
-    """Run one task against the target agent with the skill text prepended.
-
-    Mirrors optimize_skill.py's approach: prepend the skill document as part of
-    the user prompt rather than relying on --append-system-prompt semantics
-    that may vary across CLI surfaces.
-    """
-    composite = (
-        "SKILL DOCUMENT (read this before answering):\n"
-        "---\n"
-        f"{skill_text}\n"
-        "---\n\n"
-        f"TASK:\n{task['prompt']}\n"
-    )
-    return call_llm_text(target_cmd, composite, timeout=timeout)
 
 
 # --------------------------------------------------------------------------- #

@@ -35,32 +35,9 @@ from agents import (  # noqa: E402
     get_skills_dir,
     validate_agent,
 )
+
+from claude_scopes import find_skill, get_project_skills_dir, get_user_skills_dir  # noqa: E402
 from skill_md import extract_body, parse_frontmatter, read_skill_text  # noqa: E402
-
-
-def get_user_skills_dir() -> Path:
-    """Get the Claude Code user-level skills directory (the source default)."""
-    return Path.home() / ".claude" / "skills"
-
-
-def get_project_skills_dir() -> Path:
-    """Get the Claude Code project-level skills directory."""
-    return Path.cwd() / ".claude" / "skills"
-
-
-def find_source_skill(name: str) -> tuple[Path | None, str | None]:
-    """Find the source skill in the standard claude-code locations.
-
-    Returns (path, scope) or (None, None).
-    """
-    for scope_name, skills_dir in (
-        ("user", get_user_skills_dir()),
-        ("project", get_project_skills_dir()),
-    ):
-        candidate = skills_dir / name
-        if candidate.exists() and (candidate / "SKILL.md").exists():
-            return candidate, scope_name
-    return None, None
 
 
 def check_agent_target(
@@ -278,7 +255,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    source_path, source_scope = find_source_skill(args.name)
+    source_path, source_scope = find_skill(args.name)
     if not source_path:
         print(
             f"Error: source skill '{args.name}' not found in "

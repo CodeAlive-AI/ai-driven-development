@@ -29,12 +29,11 @@ import re
 import webbrowser
 from pathlib import Path
 
-from skill_md import parse_frontmatter
+from run_io import log, read_json, read_jsonl, safe_read_text
+from skill_md import SLOW_UPDATE_END, SLOW_UPDATE_START, parse_frontmatter, split_protected
 
 
 # Protected slow-update markers — mirror optimize_skill.py.
-SLOW_UPDATE_START = "<!-- SLOW_UPDATE_START -->"
-SLOW_UPDATE_END = "<!-- SLOW_UPDATE_END -->"
 
 PROMPT_PREVIEW_CHARS = 200
 REASONING_PREVIEW_CHARS = 120
@@ -45,39 +44,6 @@ MAX_DIFF_CONTEXT_LINES = 3
 # --------------------------------------------------------------------------- #
 # Helpers                                                                     #
 # --------------------------------------------------------------------------- #
-
-def log(msg: str) -> None:
-    """Log to stderr so stdout stays clean."""
-    print(msg, file=sys.stderr, flush=True)
-
-
-def read_json(path: Path):
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def read_jsonl(path: Path) -> list[dict]:
-    rows: list[dict] = []
-    with path.open("r", encoding="utf-8") as fh:
-        for i, line in enumerate(fh, 1):
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                rows.append(json.loads(line))
-            except json.JSONDecodeError as exc:
-                log(f"  [warn] {path}: line {i}: invalid JSON ({exc})")
-                continue
-    return rows
-
-
-def safe_read_text(path: Path) -> str | None:
-    if not path.exists():
-        return None
-    try:
-        return path.read_text(encoding="utf-8")
-    except OSError as exc:
-        log(f"  [warn] could not read {path}: {exc}")
-        return None
 
 
 def safe_read_json(path: Path):
@@ -138,16 +104,6 @@ def parse_report_summary(text: str | None) -> dict:
         key, raw_val = line.split(":", 1)
         out[key.strip()] = raw_val.strip()
     return out
-
-
-def split_protected(content: str) -> tuple[str, str | None, str]:
-    """Same semantics as optimize_skill.split_protected."""
-    start = content.find(SLOW_UPDATE_START)
-    end = content.find(SLOW_UPDATE_END)
-    if start == -1 or end == -1 or end < start:
-        return content, None, ""
-    end_with_marker = end + len(SLOW_UPDATE_END)
-    return content[:start], content[start:end_with_marker], content[end_with_marker:]
 
 
 def extract_slow_update(skill_text: str | None) -> str | None:

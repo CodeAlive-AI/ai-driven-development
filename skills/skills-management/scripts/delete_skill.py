@@ -25,6 +25,7 @@ from agents import (
     get_skills_dir,
     validate_agent,
 )
+from claude_scopes import find_skill
 from fs_ops import remove_path
 
 SCRIPT = "uv run scripts/delete_skill.py"
@@ -52,39 +53,9 @@ class Location:
         return f"{self.path} ({kind})" + (f"\n      read by: {readers}" if readers else "")
 
 
-def get_user_skills_dir() -> Path:
-    """Get the user-level skills directory."""
-    return Path.home() / ".claude" / "skills"
-
-
-def get_project_skills_dir() -> Path:
-    """Get the project-level skills directory (current working directory)."""
-    return Path.cwd() / ".claude" / "skills"
-
-
 def has_skill_entry(path: Path) -> bool:
     """A skill directory, a symlink to one, or a broken symlink left behind."""
     return path.is_symlink() or (path / "SKILL.md").is_file()
-
-
-def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | None]:
-    """Find a skill by name in Claude Code scopes.
-
-    Returns:
-        Tuple of (skill_path, scope_name) or (None, None) if not found
-    """
-    scopes_to_check = []
-    if scope is None or scope == "user":
-        scopes_to_check.append(("user", get_user_skills_dir()))
-    if scope is None or scope == "project":
-        scopes_to_check.append(("project", get_project_skills_dir()))
-
-    for scope_name, skills_dir in scopes_to_check:
-        skill_path = skills_dir / name
-        if has_skill_entry(skill_path):
-            return skill_path, scope_name
-
-    return None, None
 
 
 def collect_locations(name: str, agent_ids: list[str]) -> list[Location]:
@@ -125,7 +96,7 @@ def links_left_dangling(name: str, deleting: list[Location]) -> list[Location]:
     doomed_paths = {loc.path for loc in deleting}
     candidates = find_skill_in_agents(name)
     for scope in ("user", "project"):
-        path, _ = find_skill(name, scope)
+        path, _ = find_skill(name, scope, include_links=True)
         if path and path.is_symlink():
             candidates.append(Location(Path(os.path.abspath(path)), [("claude-code", "Claude Code", scope)]))
     return [
@@ -167,7 +138,7 @@ def delete_skill_default(name: str, scope: str | None = None, force: bool = Fals
     Returns:
         True if deleted, False otherwise
     """
-    skill_path, found_scope = find_skill(name, scope)
+    skill_path, found_scope = find_skill(name, scope, include_links=True)
 
     if not skill_path:
         if scope:

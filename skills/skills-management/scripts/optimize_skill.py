@@ -42,16 +42,17 @@ import random
 import re
 import shutil
 import statistics
-import subprocess
 from pathlib import Path
+
+from claude_scopes import find_skill
+from llm_cli import call_llm_json, run_cli, run_rollout, safe_json_loads
+from run_io import approx_tokens, load_jsonl, log, read_json, write_json
+from skill_md import SLOW_UPDATE_END, SLOW_UPDATE_START, split_protected
 
 
 # Protected slow-update markers — step-level edits must never touch this region.
-SLOW_UPDATE_START = "<!-- SLOW_UPDATE_START -->"
-SLOW_UPDATE_END = "<!-- SLOW_UPDATE_END -->"
 
 DEFAULT_SEED = 42
-DEFAULT_TIMEOUT = 300
 LR_FLOOR = 2
 
 
@@ -59,76 +60,10 @@ LR_FLOOR = 2
 # Skill discovery (mirrors show_skill.py / review_skill.py)                    #
 # --------------------------------------------------------------------------- #
 
-def get_user_skills_dir() -> Path:
-    return Path.home() / ".claude" / "skills"
-
-
-def get_project_skills_dir() -> Path:
-    return Path.cwd() / ".claude" / "skills"
-
-
-def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | None]:
-    """Find a skill by name, optionally filtering by scope."""
-    scopes_to_check: list[tuple[str, Path]] = []
-    if scope is None or scope == "user":
-        scopes_to_check.append(("user", get_user_skills_dir()))
-    if scope is None or scope == "project":
-        scopes_to_check.append(("project", get_project_skills_dir()))
-
-    for scope_name, skills_dir in scopes_to_check:
-        skill_path = skills_dir / name
-        if skill_path.exists() and (skill_path / "SKILL.md").exists():
-            return skill_path, scope_name
-    return None, None
-
 
 # --------------------------------------------------------------------------- #
 # Helpers                                                                     #
 # --------------------------------------------------------------------------- #
-
-def approx_tokens(text: str) -> int:
-    """Approximate token count (English-ish, ~4 chars/token)."""
-    return len(text) // 4
-
-
-def log(msg: str) -> None:
-    """Log to stderr so stdout stays clean for piping."""
-    print(msg, file=sys.stderr, flush=True)
-
-
-def safe_json_loads(text: str) -> dict | None:
-    """Parse JSON; if that fails, try to extract the first {...} block."""
-    text = text.strip()
-    # Strip markdown fences if present.
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*\n", "", text)
-        text = re.sub(r"\n```\s*$", "", text)
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError:
-        pass
-    # Fallback: greedy first balanced-ish object.
-    match = re.search(r"\{.*\}", text, re.DOTALL)
-    if match:
-        try:
-            return json.loads(match.group(0))
-        except json.JSONDecodeError:
-            return None
-    return None
-
-
-def load_jsonl(path: Path) -> list[dict]:
-    items: list[dict] = []
-    with path.open("r", encoding="utf-8") as fh:
-        for i, raw in enumerate(fh, 1):
-            raw = raw.strip()
-            if not raw:
-                continue
-            try:
-                items.append(json.loads(raw))
-            except json.JSONDecodeError as exc:
-                raise ValueError(f"{path}: line {i}: invalid JSON: {exc}") from exc
-    return items
 
 
 def write_jsonl(path: Path, rows: list[dict]) -> None:
@@ -136,15 +71,6 @@ def write_jsonl(path: Path, rows: list[dict]) -> None:
     with path.open("w", encoding="utf-8") as fh:
         for row in rows:
             fh.write(json.dumps(row, ensure_ascii=False) + "\n")
-
-
-def write_json(path: Path, obj) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False), encoding="utf-8")
-
-
-def read_json(path: Path):
-    return json.loads(path.read_text(encoding="utf-8"))
 
 
 # --------------------------------------------------------------------------- #
@@ -193,18 +119,6 @@ def hash_split(
 # --------------------------------------------------------------------------- #
 # Skill document I/O & edit application                                       #
 # --------------------------------------------------------------------------- #
-
-def split_protected(content: str) -> tuple[str, str | None, str]:
-    """Split content into (before, protected_block_with_markers, after).
-
-    Returns (content, None, "") if no protected block exists.
-    """
-    start = content.find(SLOW_UPDATE_START)
-    end = content.find(SLOW_UPDATE_END)
-    if start == -1 or end == -1 or end < start:
-        return content, None, ""
-    end_with_marker = end + len(SLOW_UPDATE_END)
-    return content[:start], content[start:end_with_marker], content[end_with_marker:]
 
 
 def touches_protected(content: str, target: str | None) -> bool:
@@ -308,59 +222,6 @@ def lr_for_epoch(budget: int, schedule: str, epoch: int, total_epochs: int) -> i
 # CLI runner                                                                  #
 # --------------------------------------------------------------------------- #
 
-def _run_cli(cmd: list[str], stdin: str, timeout: int = DEFAULT_TIMEOUT) -> str:
-    """Run a CLI command, pipe stdin, return stdout. Raises on non-zero exit."""
-    try:
-        result = subprocess.run(
-            cmd,
-            input=stdin,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            timeout=timeout,
-            check=False,
-        )
-    except FileNotFoundError as exc:
-        raise RuntimeError(
-            f"CLI not found: {' '.join(cmd)} ({exc}). "
-            f"Use --dry-run to plan without executing."
-        ) from exc
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError(f"CLI timed out after {timeout}s: {' '.join(cmd)}") from exc
-
-    if result.returncode != 0:
-        raise RuntimeError(
-            f"CLI exited {result.returncode}: {' '.join(cmd)}\n"
-            f"stderr: {result.stderr[:400]}"
-        )
-    return result.stdout
-
-
-def call_llm_text(
-    cmd_str: str,
-    prompt: str,
-    timeout: int = DEFAULT_TIMEOUT,
-) -> str:
-    """Call an LLM CLI with a free-text prompt. Returns the model's stdout."""
-    cmd = cmd_str.split()
-    return _run_cli(cmd, stdin=prompt, timeout=timeout)
-
-
-def call_llm_json(
-    cmd_str: str,
-    prompt: str,
-    timeout: int = DEFAULT_TIMEOUT,
-) -> dict | None:
-    """Call an LLM CLI expecting a JSON response. Retries once on parse failure."""
-    raw = call_llm_text(cmd_str, prompt, timeout=timeout)
-    parsed = safe_json_loads(raw)
-    if parsed is not None:
-        return parsed
-    log("  [warn] JSON parse failed, retrying with stricter prompt")
-    retry_prompt = prompt + "\n\nRespond ONLY with valid JSON. Previous output was malformed."
-    raw = call_llm_text(cmd_str, retry_prompt, timeout=timeout)
-    return safe_json_loads(raw)
-
 
 # --------------------------------------------------------------------------- #
 # Rollout & verification                                                      #
@@ -404,7 +265,7 @@ def verify_script(script_path: Path, rollout_output: str, reference: str, prompt
     a JSON object {score: 0|1}.
     """
     payload = json.dumps({"prompt": prompt, "reference": reference, "output": rollout_output})
-    raw = _run_cli([str(script_path)], stdin=payload)
+    raw = run_cli([str(script_path)], stdin=payload)
     parsed = safe_json_loads(raw) or {}
     return 1 if int(parsed.get("score", 0)) >= 1 else 0
 
@@ -453,30 +314,6 @@ def verify_assertions(
         pass_rate = 0.0
     pass_rate = max(0.0, min(1.0, pass_rate))
     return pass_rate, parsed
-
-
-def run_rollout(
-    target_cmd: str,
-    skill_text: str,
-    task: dict,
-    timeout: int = DEFAULT_TIMEOUT,
-) -> str:
-    """Run one task against the target agent with the skill prepended.
-
-    Tries `--system-prompt-file` first, then falls back to plain prepend.
-    """
-    # We use plain prepend for portability — Claude Code's `claude -p` reads
-    # stdin as the user prompt and accepts an `--append-system-prompt` arg but
-    # not every CLI surface speaks the same dialect. Prepending is the lowest
-    # common denominator.
-    composite = (
-        "SKILL DOCUMENT (read this before answering):\n"
-        "---\n"
-        f"{skill_text}\n"
-        "---\n\n"
-        f"TASK:\n{task['prompt']}\n"
-    )
-    return call_llm_text(target_cmd, composite, timeout=timeout)
 
 
 def score_rollout(

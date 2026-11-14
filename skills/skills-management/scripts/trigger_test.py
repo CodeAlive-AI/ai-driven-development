@@ -27,37 +27,8 @@ import re
 import subprocess
 from pathlib import Path
 
+from claude_scopes import find_skill
 from skill_md import parse_frontmatter, read_skill_text
-
-
-def get_user_skills_dir() -> Path:
-    """Get the user-level skills directory."""
-    return Path.home() / ".claude" / "skills"
-
-
-def get_project_skills_dir() -> Path:
-    """Get the project-level skills directory (current working directory)."""
-    return Path.cwd() / ".claude" / "skills"
-
-
-def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | None]:
-    """Find a skill by name, optionally filtering by scope.
-
-    Returns:
-        Tuple of (skill_path, scope_name) or (None, None) if not found
-    """
-    scopes_to_check = []
-    if scope is None or scope == "user":
-        scopes_to_check.append(("user", get_user_skills_dir()))
-    if scope is None or scope == "project":
-        scopes_to_check.append(("project", get_project_skills_dir()))
-
-    for scope_name, skills_dir in scopes_to_check:
-        skill_path = skills_dir / name
-        if skill_path.exists() and (skill_path / "SKILL.md").exists():
-            return skill_path, scope_name
-
-    return None, None
 
 
 # Common English stop words removed when extracting keywords.

@@ -26,11 +26,6 @@ from agents import (
 from skill_md import skill_summary
 
 
-def parse_skill_metadata(skill_path: Path) -> dict | None:
-    """Name and description from SKILL.md frontmatter."""
-    return skill_summary(skill_path)
-
-
 def list_skills_for_agent(
     agent: str,
     scope: str | None = None,
@@ -67,7 +62,7 @@ def list_skills_for_agent(
 
         for item in sorted(skills_dir.iterdir()):
             if item.is_dir() and (item / "SKILL.md").exists():
-                metadata = parse_skill_metadata(item)
+                metadata = skill_summary(item)
                 if metadata:
                     skills.append({
                         "name": metadata["name"],

@@ -11,6 +11,7 @@ from unittest.mock import patch
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 
+import claude_scopes  # noqa: E402
 import delete_skill  # noqa: E402
 import fs_ops  # noqa: E402
 import move_skill  # noqa: E402
@@ -49,8 +50,8 @@ class Sandbox(unittest.TestCase):
                 "get_all_global_skills_dirs",
                 side_effect=lambda a: [self.agent_dirs[a], *self.extra_dirs.get(a, [])],
             ),
-            patch.object(delete_skill, "get_user_skills_dir", return_value=self.claude_user),
-            patch.object(delete_skill, "get_project_skills_dir", return_value=self.claude_project),
+            patch.object(claude_scopes, "get_user_skills_dir", return_value=self.claude_user),
+            patch.object(claude_scopes, "get_project_skills_dir", return_value=self.claude_project),
             patch.object(move_skill, "get_user_skills_dir", return_value=self.claude_user),
             patch.object(move_skill, "get_project_skills_dir", return_value=self.claude_project),
         ]

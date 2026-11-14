@@ -17,30 +17,8 @@ import json
 import re
 from pathlib import Path
 
-from skill_md import parse_skill_md, read_skill_text
-
-
-def get_user_skills_dir() -> Path:
-    return Path.home() / ".claude" / "skills"
-
-
-def get_project_skills_dir() -> Path:
-    return Path.cwd() / ".claude" / "skills"
-
-
-def find_skill(name: str, scope: str | None = None) -> tuple[Path | None, str | None]:
-    """Find a skill by name, optionally filtering by scope."""
-    scopes_to_check = []
-    if scope is None or scope == "user":
-        scopes_to_check.append(("user", get_user_skills_dir()))
-    if scope is None or scope == "project":
-        scopes_to_check.append(("project", get_project_skills_dir()))
-
-    for scope_name, skills_dir in scopes_to_check:
-        skill_path = skills_dir / name
-        if skill_path.exists() and (skill_path / "SKILL.md").exists():
-            return skill_path, scope_name
-    return None, None
+from claude_scopes import find_skill
+from skill_md import SLOW_UPDATE_END, SLOW_UPDATE_START, parse_skill_md, read_skill_text
 
 
 def check_name(name: str) -> list[dict]:
@@ -306,8 +284,8 @@ def _strip_fenced_code(body: str) -> str:
 
 def _extract_slow_update_section(body: str) -> str | None:
     """Return content between SLOW_UPDATE markers, or None if not both present."""
-    start_marker = "<!-- SLOW_UPDATE_START -->"
-    end_marker = "<!-- SLOW_UPDATE_END -->"
+    start_marker = SLOW_UPDATE_START
+    end_marker = SLOW_UPDATE_END
     if start_marker not in body or end_marker not in body:
         return None
     start_idx = body.find(start_marker)
@@ -494,8 +472,8 @@ def check_slow_update_section(body: str) -> list[dict]:
     """Validate the protected SLOW_UPDATE longitudinal-guidance section markers."""
     issues = []
 
-    start_marker = "<!-- SLOW_UPDATE_START -->"
-    end_marker = "<!-- SLOW_UPDATE_END -->"
+    start_marker = SLOW_UPDATE_START
+    end_marker = SLOW_UPDATE_END
     has_start = start_marker in body
     has_end = end_marker in body
 

@@ -224,3 +224,21 @@ def _block_scalar(block: list[str], folded: bool) -> str:
                 text += " " + line
             previous_more_indented = more_indented
     return text.rstrip("\n")
+
+
+SLOW_UPDATE_START = "<!-- SLOW_UPDATE_START -->"
+SLOW_UPDATE_END = "<!-- SLOW_UPDATE_END -->"
+
+
+def split_protected(content: str) -> tuple[str, str | None, str]:
+    """Split SKILL.md text around its protected SLOW_UPDATE block.
+
+    Returns (before, block_with_markers, after), or (content, None, "") if the text
+    has no complete block.
+    """
+    start = content.find(SLOW_UPDATE_START)
+    end = content.find(SLOW_UPDATE_END)
+    if start == -1 or end == -1 or end < start:
+        return content, None, ""
+    end_with_marker = end + len(SLOW_UPDATE_END)
+    return content[:start], content[start:end_with_marker], content[end_with_marker:]

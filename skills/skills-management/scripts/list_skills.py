@@ -14,24 +14,9 @@ if sys.version_info < (3, 11):
 
 import argparse
 import json
-from pathlib import Path
 
+from claude_scopes import get_project_skills_dir, get_user_skills_dir, scope_dirs
 from skill_md import skill_summary
-
-
-def get_user_skills_dir() -> Path:
-    """Get the user-level skills directory."""
-    return Path.home() / ".claude" / "skills"
-
-
-def get_project_skills_dir() -> Path:
-    """Get the project-level skills directory (current working directory)."""
-    return Path.cwd() / ".claude" / "skills"
-
-
-def parse_skill_metadata(skill_path: Path) -> dict | None:
-    """Name and description from SKILL.md frontmatter."""
-    return skill_summary(skill_path)
 
 
 def list_skills(scope: str | None = None, output_format: str = "text") -> list[dict]:
@@ -46,19 +31,13 @@ def list_skills(scope: str | None = None, output_format: str = "text") -> list[d
     """
     skills = []
 
-    scopes_to_check = []
-    if scope is None or scope == "user":
-        scopes_to_check.append(("user", get_user_skills_dir()))
-    if scope is None or scope == "project":
-        scopes_to_check.append(("project", get_project_skills_dir()))
-
-    for scope_name, skills_dir in scopes_to_check:
+    for scope_name, skills_dir in scope_dirs(scope):
         if not skills_dir.exists():
             continue
 
         for item in sorted(skills_dir.iterdir()):
             if item.is_dir() and (item / "SKILL.md").exists():
-                metadata = parse_skill_metadata(item)
+                metadata = skill_summary(item)
                 if metadata:
                     skills.append({
                         "name": metadata["name"],

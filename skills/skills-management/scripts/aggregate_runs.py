@@ -27,46 +27,12 @@ import math
 import re
 from pathlib import Path
 
+from run_io import approx_tokens, log, read_json, read_jsonl, safe_read_text
+
 
 # --------------------------------------------------------------------------- #
 # Helpers                                                                     #
 # --------------------------------------------------------------------------- #
-
-def log(msg: str) -> None:
-    """Log to stderr so stdout stays clean for piping."""
-    print(msg, file=sys.stderr, flush=True)
-
-
-def approx_tokens(text: str) -> int:
-    """Approximate token count (~4 chars/token)."""
-    return len(text) // 4
-
-
-def read_json(path: Path):
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def read_jsonl(path: Path) -> list[dict]:
-    rows: list[dict] = []
-    with path.open("r", encoding="utf-8") as fh:
-        for line in fh:
-            line = line.strip()
-            if not line:
-                continue
-            try:
-                rows.append(json.loads(line))
-            except json.JSONDecodeError:
-                continue
-    return rows
-
-
-def safe_read_text(path: Path) -> str | None:
-    if not path.exists():
-        return None
-    try:
-        return path.read_text(encoding="utf-8")
-    except OSError:
-        return None
 
 
 def sample_stddev(values: list[float]) -> float:

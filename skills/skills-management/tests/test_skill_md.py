@@ -30,6 +30,7 @@ from skill_md import (  # noqa: E402
     parse_skill_md,
     read_skill_md,
     skill_name,
+    skill_summary,
     split_frontmatter,
 )
 
@@ -199,8 +200,6 @@ class SkillDirectoryTests(unittest.TestCase):
         import audit_skill_duplicates
         import eval_viewer
         import install_skill
-        import list_agent_skills
-        import list_skills
         import review_skill
         import show_skill
         import transfer_test
@@ -218,8 +217,7 @@ class SkillDirectoryTests(unittest.TestCase):
                 names = {
                     "audit": record.name,
                     "install": install_skill.parse_skill_name(skill),
-                    "list": list_skills.parse_skill_metadata(skill)["name"],
-                    "list_agent": list_agent_skills.parse_skill_metadata(skill)["name"],
+                    "list": skill_summary(skill)["name"],
                     "eval": eval_viewer.parse_skill_name(text, None),
                     "show": show_skill.get_skill_info(skill, "user")["name"],
                     "review": self.review_name(review_skill, skill),

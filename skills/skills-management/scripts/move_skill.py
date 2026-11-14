@@ -13,32 +13,9 @@ if sys.version_info < (3, 11):
     )
 
 import argparse
-from pathlib import Path
 
+from claude_scopes import find_skill, get_project_skills_dir, get_user_skills_dir
 from fs_ops import move_into_place, path_present, same_location
-
-
-def get_user_skills_dir() -> Path:
-    """Get the user-level skills directory."""
-    return Path.home() / ".claude" / "skills"
-
-
-def get_project_skills_dir() -> Path:
-    """Get the project-level skills directory (current working directory)."""
-    return Path.cwd() / ".claude" / "skills"
-
-
-def find_skill(name: str) -> tuple[Path | None, str | None]:
-    """Find a skill by name in either scope.
-
-    Returns:
-        Tuple of (skill_path, scope_name) or (None, None) if not found
-    """
-    for scope_name, skills_dir in [("user", get_user_skills_dir()), ("project", get_project_skills_dir())]:
-        skill_path = skills_dir / name
-        if skill_path.is_symlink() or (skill_path / "SKILL.md").exists():
-            return skill_path, scope_name
-    return None, None
 
 
 def move_skill(name: str, to_scope: str, force: bool = False) -> bool:
@@ -52,7 +29,7 @@ def move_skill(name: str, to_scope: str, force: bool = False) -> bool:
     Returns:
         True if moved, False otherwise
     """
-    skill_path, from_scope = find_skill(name)
+    skill_path, from_scope = find_skill(name, include_links=True)
 
     if not skill_path:
         print(f"Error: Skill '{name}' not found in user or project scope.")
