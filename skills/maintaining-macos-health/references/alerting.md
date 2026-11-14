@@ -2,6 +2,8 @@
 
 Design and operations of the `mac-health-check` LaunchAgent — the active complement to passive Stats menubar monitoring. It covers critical disk/memory failure signals and persistent CPU anomalies on a developer workstation.
 
+For a one-second, consent-gated process response to compressor saturation, see [the native memory guard](memory-guard.md); this five-minute notification monitor does not terminate processes.
+
 ## Table of contents
 
 - [Design principles](#design-principles)

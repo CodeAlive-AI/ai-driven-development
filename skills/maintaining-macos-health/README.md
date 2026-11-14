@@ -109,6 +109,7 @@ The skill packages three complementary capabilities, each with its own entry poi
 | **Triage + cleanup playbook** | `references/triage.md`, `references/cleanup-tiers.md`, `references/never-touch.md`, `references/mole-techniques.md` | Tells the agent how to classify a health signal, which 10-tier cleanup block to run, and what categories to never touch |
 | **Interactive cleanup UI** | `assets/render-cleanup-plan.py` + `assets/apply-cleanup-selection.py` | Renders a categorised, sortable, checkbox-driven HTML report from the agent's scan, serves it on `127.0.0.1:18347`, captures the user's selection, and feeds it to a sanctioned apply script that only deletes what was actually picked |
 | **Active alerter** | `references/alerting.md` + `assets/{mac-health-check, mac-health-action, config.sh, com.local.mac-health-check.plist}` | Bash + launchd implementation. Critical disk/memory/Jetsam triggers plus whole-system and per-process CPU incident tracking with explicit investigation/stop actions |
+| **Memory runaway guard** | `references/memory-guard.md` + `assets/memory-guard/` | Native C++17 one-second compressor monitor; observe by default, with gradual freezing and termination gated by versioned consent |
 
 ### Triage flow (signal classification)
 
@@ -210,12 +211,16 @@ skills/maintaining-macos-health/
 │   ├── cleanup-tiers.md                # 10 risk-ordered cleanup tiers, copy-paste-safe
 │   ├── never-touch.md                  # Hard-protected categories with consequence notes
 │   ├── mole-techniques.md              # Marker→target map, safety guards, SIGPIPE-safe dry-run capture
-│   └── alerting.md                     # Alerter design + install + troubleshoot
+│   ├── alerting.md                     # Alerter design + install + troubleshoot
+│   └── memory-guard.md                 # Native compressor guard, consent, operation and limits
 ├── assets/
     ├── mac-health-check                # Bash 3.2-compatible health-check script
     ├── mac-health-action               # Action dispatcher: read-only investigation + confirmed graceful stop
     ├── config.sh                       # Default thresholds (sourced by the script)
     ├── com.local.mac-health-check.plist   # LaunchAgent (uses __HOME__ placeholder)
+    ├── build-memory-guard.sh           # Native guard build entry point
+    ├── com.local.mac-memory-guard.plist # One-second guard LaunchAgent template
+    └── memory-guard/                   # C++17 runtime, pure core and tests
     ├── render-cleanup-plan.py          # Interactive HTML cleanup-plan UI (local HTTP server)
     └── apply-cleanup-selection.py      # Sanctioned apply path — reads selection JSON, validates, executes
 └── tests/

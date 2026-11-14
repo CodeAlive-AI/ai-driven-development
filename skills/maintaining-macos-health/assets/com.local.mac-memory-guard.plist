@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.local.mac-memory-guard</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__HOME__/bin/mac-memory-guard</string>
+        <string>run</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ProcessType</key>
+    <string>Interactive</string>
+    <key>StandardOutPath</key>
+    <string>__HOME__/Library/Logs/mac-health/memory-guard-launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>__HOME__/Library/Logs/mac-health/memory-guard-launchd.err.log</string>
+</dict>
+</plist>

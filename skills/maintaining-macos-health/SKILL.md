@@ -49,6 +49,7 @@ Trigger on any of:
 | `assets/mac-health-disk`, `assets/disk_*.py` | Consent-gated disk controller, deterministic inventory, restricted Codex runner and authenticated local selection/confirmation page. Both modes default off. |
 | `assets/mole-exact-file.sh`, `assets/mole-core-1.39.0.json` | Compatibility-pinned exact-file adapter to Mole; no general `mo clean`, sudo, or shell commands from the agent. |
 | `assets/space-scan/`, `assets/build-space-scan.sh` | Read-only bulk metadata scanner with explicit directory exclusions and a compact full folder tree; see `references/storage-report.md` for manual inventory |
+| `assets/memory-guard/`, `assets/build-memory-guard.sh`, `assets/com.local.mac-memory-guard.plist` | Native C++17 memory runaway guard; defaults to observe mode and requires a versioned consent record before acting. See `references/memory-guard.md`. |
 | `assets/render-storage-report.py`, `assets/storage-tree.js` | Append scanner output to the report; lazily expand folders and show largest files |
 | `assets/mac-health-check` | Production-ready bash script (~250 lines, bash 3.2 compatible) |
 | `assets/mac-health-action` | Background action dispatcher for read-only Codex/Claude investigations and explicitly confirmed graceful process stopping |
@@ -78,6 +79,10 @@ On the first **operational, interactive** use on a Mac (including an existing in
 Record each explicit answer independently; silence, a generic "set up monitoring", or approval of one option does not authorize the other. Keep declined choices across sessions and upgrades. Ask again only on user request, a new machine, or a material change to the consent scope. Existing monitoring continues without either option.
 
 **Implementation scope:** the bundled controller supports a pinned Mole 1.39.0 adapter and a restricted Codex CLI session with the same cleanup-plan UI used by Workflow A. Emergency cleanup covers only old Homebrew package downloads and npm content-cache files. Automated planning runs Workflow A's fixed read-only bulk metadata scan, Mole clean/purge preview, Docker inventory and Downloads audit. The automatic executor remains narrower: it can delete only controller-verified regenerable cache files; storage-map and possible user-data findings are visible but disabled and require a later interactive Workflow A session. Read the reference, disclose these limits and verify local compatibility before recording approval with `mac-health-disk configure`. Installation alone never enables a mode. No consent is inferred from a feature-development request.
+
+### Memory runaway guard
+
+For severe compressor growth or a memory-pressure incident, read [`references/memory-guard.md`](references/memory-guard.md). Build and use `mac-memory-guard explain` and `run` in observe mode first; the daemon samples compressor segments every second and records ranked candidates. Acting requires `MODE=act` plus a separate, versioned `consent --accept` record after the owner reviews its printed scope. Never create that consent as part of skill development or installation.
 
 ### A. "Free space NOW" (incident response)
 
@@ -139,7 +144,7 @@ Read `references/alerting.md` § Troubleshooting. Common causes:
 4. **For Time Machine backups: `tmutil delete <path>`, never `rm`.** TM-tagged paths require the `tmutil` API.
 5. **For sudo cleanup of `/Library`, `/private/var/db/*`**: only the allowlisted subpaths from `references/never-touch.md` § Sudo allowlist.
 6. **No unrestricted auto-cleanup hooks tied to alerts.** The only exception is the independently approved, bounded emergency Mole cache profile below 2% in `references/optional-disk-responses.md`. Its exact-file dry-run is mandatory; prior profile consent replaces the incident-time confirmation only for that profile. Planning at <= 5% never grants deletion permission. Emergency consent cannot authorize ordinary cleanup tiers or protected paths.
-7. **No auto-kill hooks tied to CPU alerts.** A CPU advisory may offer `Stop Process…`, but only as an explicit user action. Revalidate PID/executable identity and ownership, confirm, send SIGTERM first, and require a separate confirmation before SIGKILL.
+7. **Automatic process termination is permitted only by `mac-memory-guard`, in `act` mode with a recorded versioned consent, and only for the memory signals in `references/memory-guard.md`.** A CPU advisory may offer `Stop Process…`, but only as an explicit user action. Revalidate PID/executable identity and ownership, confirm, send SIGTERM first, and require a separate confirmation before SIGKILL.
 8. **Don't delete swap files.** `rm /private/var/vm/swapfile*` while running = guaranteed kernel panic.
 9. **Apply phase reads only the selection JSON.** Never hand-roll `rm` blocks or hard-code paths from the earlier scan when applying. Real incident: agent applied the default-selected recordings list from the original scan, ignoring that the user had unchecked them in the UI before submitting. The fix is structural — use `assets/apply-cleanup-selection.py` which iterates `selected_items` from the selection JSON only.
 
