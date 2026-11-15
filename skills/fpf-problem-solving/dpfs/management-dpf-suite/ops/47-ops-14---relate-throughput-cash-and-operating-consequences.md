@@ -7,9 +7,9 @@
 
 **Use this when** an operating alternative appears worthwhile because it raises output, lowers unit cost, releases capacity or brings money sooner. Examples include buying an extra resource window, changing a service mix, deferring work or automating preparation.
 
-Begin with the actual alternatives and the horizon of the decision. Ask which accepted service, resource use, payments and receipts differ. The first useful result is a comparison that lets the responsible practitioner choose a feasible alternative, make an explicit trade-off or request the missing financial or resource decision.
+Begin with the actual alternatives and the horizon of the decision. Ask which accepted service, resource use, payments and receipts differ. The first useful result identifies the feasible alternatives, their differences and any missing financial or resource result. The responsible party can use that comparison to choose, accept a trade-off or retain the current arrangement.
 
-This pattern governs the operating and financial consequences of a bounded operations choice. Use financial statements, investment appraisals or funding decisions supplied by qualified practitioners when the comparison needs them. If producing one of those results is the main unresolved work, obtain it for the named choice. An operating throughput calculation cannot settle them by itself.
+This pattern governs the operating and financial consequences of a bounded operations choice. Use financial statements, investment appraisals or funding decisions supplied by qualified practitioners when the comparison needs them. If the comparison depends on a missing result, seek it from its responsible provider or state which conclusion remains conditional. An operating throughput calculation cannot settle them by itself.
 
 In PumpWorks, completing a third test package now yields positive eventual net cash. Deferring the same package can yield more net cash over the same horizon, and the immediate option can still lack money for its advance payments. The comparison must make all three statements visible.
 
@@ -33,7 +33,7 @@ Comparing only one attractive option compounds the problem. Its positive net cas
 
 #### OPS.14:4.1 - Name the alternatives and the operating change
 
-State the decision, recipient of the comparison, alternatives and horizon. Include current practice or deferral when either is a real option. Establish which alternatives satisfy applicable service, protection and authority conditions; use OPS.12 and OPS.13 where those conditions need development.
+State the decision, recipient of the comparison, alternatives and horizon. Include current practice or deferral when either is a real option. Establish which alternatives satisfy applicable service, protection and authority conditions; use OPS.12 and OPS.13 when their contribution is needed to establish or change those conditions.
 
 Describe the operational difference: what accepted result changes, which demand it serves, what work and resources it requires, which work is delayed or displaced, and what happens after failure. Use a schedule or bounded scenarios when timing matters. Keep unresolved assumptions visible.
 
@@ -48,10 +48,10 @@ Keep the accounting basis with the quantity being compared.
 | Physical throughput | The physical output counted, its unit and period, keeping completed service results separate from the attempts needed to obtain them. |
 | Monetary throughput or contribution | The selected model of proceeds less specified variable costs, with its cost assumptions and demand basis. |
 | Recognized revenue or accounting profit | The accounting period and recognition rules supplied for that purpose. |
-| Cash receipts and payments | The amounts that actually enter or leave, their timing, conditions and authority. |
+| Cash receipts and payments | Amounts received or paid for a historical account, or amounts expected to enter or leave under each alternative, with their timing, conditions and authority. |
 | Released resource capacity | The usable time or capability released and the next service or avoided payment that could use it. |
 
-Choose only the quantities whose difference can change the decision. A throughput-accounting model can be useful for a short-horizon product or service mix when one resource is limiting and its assumptions fit. The common direct-material treatment presumes that other costs remain largely fixed over that horizon. Per-use cloud charges, contracted labor or changed support costs can defeat that presumption.
+Choose the quantities that support the comparison, including any common amount needed to establish whether an alternative can be funded. A throughput-accounting model can be useful for a short-horizon product or service mix when one resource is limiting and its assumptions fit. The common direct-material treatment presumes that other costs remain largely fixed over that horizon. Per-use cloud charges, contracted labor or changed support costs can defeat that presumption.
 
 For a suitable model, compare contribution per unit of the scarce resource together with demand limits. With coupled resources, indivisible jobs, sequencing requirements or binding commitments, obtain the feasible schedule or corresponding optimization result. A ranking alone does not determine the feasible mix.
 
@@ -59,11 +59,11 @@ For a suitable model, compare contribution per unit of the scarce resource toget
 
 For each alternative, identify future payments and receipts that differ because of the choice. State amount, time and the condition that produces the flow. The same unchanged amount in both alternatives cancels in their difference; keep it elsewhere if the receiving account needs the whole operation's cash position.
 
-Inspect avoidability. A historical payment is not saved by declining future work. An allocated share of rent may remain unchanged, whereas an additional contracted shift or per-use charge can be avoidable. A cost that is fixed this week can become avoidable at a later renewal, so use the decision's actual horizon.
+Inspect avoidability. A historical payment is not saved by declining future work. An allocated share of rent may remain unchanged, whereas an additional contracted shift or per-use charge can be avoidable. A cost that is fixed this week can become avoidable at a later renewal, so use the period over which the decision can affect that payment.
 
 Include displaced use when it is real. Identify the best relevant foregone alternative and its consequence, or state the qualified premise that no material contribution is displaced. Count that loss once. If the cash comparison already includes the missing receipts and avoided costs of displaced work, do not subtract the same foregone contribution again as an extra opportunity cost.
 
-Connect receipts to demand, delivered service, acceptance and payment conditions. Consider the adverse cases that can change the choice: repeat work, delayed acceptance, nonpayment or a lost resource window. A claimed receipt needs its stated basis even when its arithmetic is simple.
+Connect receipts to demand, delivered service, acceptance and payment conditions. Consider adverse cases that could affect the choice or the conditions on which it rests, such as repeat work, delayed acceptance, nonpayment or a lost resource window. A claimed receipt needs its stated basis even when its arithmetic is simple.
 
 When a reported contribution deducts labor that will still be paid after redeployment, recover the receipts and genuinely avoided payments behind it before using it as the foregone amount. Otherwise the comparison can treat a retained salary as if it were saved. A competent relevant-cost account already makes this correction; reuse it rather than adding another opportunity-cost line.
 
@@ -73,17 +73,17 @@ Calculate each alternative's net cash within the horizon, then the difference be
 
 Lay out consequential advance payments and later receipts. Determine whether available authorized funds cover each payment when due, taking prior payments, receipt dates and other obligations on the same funds into account. A favorable final balance can coexist with an earlier funding gap.
 
-Show material flows just outside the horizon and test whether extending it changes the conclusion. A timing advantage can be useful for the receiving cash decision; describe its duration and effect. For longer-lived assets, financing, taxes, discounting or statutory accounting, request the qualified result needed by that use. The simple undiscounted comparison below does not answer those questions.
+Show material flows just outside the horizon and test whether extending it changes the conclusion. A timing advantage can be useful for the receiving cash decision; describe its duration and effect. For longer-lived assets, financing, taxes, discounting or statutory accounting, use an applicable qualified result or identify the remaining input needed for that use. The simple undiscounted comparison below does not answer those questions.
 
-A fixed annual allocation can be an inadequate description of current need. Refresh the operating forecast and request a resource or funding decision where conditions have changed. A revised forecast itself grants no spending authority.
+A fixed annual allocation can be an inadequate description of current need. Refresh the operating forecast and determine whether existing resource or funding authority still covers the proposed use. Seek a further decision if needed. A revised forecast itself grants no spending authority.
 
 #### OPS.14:4.5 - Return the choice, trade-off or exact missing result
 
-Present the feasible alternatives with the consequential service, resource, human, quality and financial differences. State the assumptions that could reverse the comparison and the observation or decision that would resolve them.
+Present the feasible alternatives with the consequential service, resource, human, quality and financial differences. State any assumption that materially affects the ranking, timing or feasibility, and what would settle a remaining question.
 
 If one alternative is better on the receiving decision's criteria, recommend it with that basis. If earlier service costs more, make the price of that service visible to the authorized decision maker. Preserve mandatory conditions before comparing preferences.
 
-The result can be a short operating account rather than a permanent dashboard. Use OPS.15 when the source events or definitions need repair. After action, compare actual flows and operating results with the assumptions needed for continuation; reopen the affected method or service decision if they change.
+A short account of the alternatives and their consequences can suffice. Use OPS.15 when the source events or definitions need repair. After action, compare actual flows and operating results with the assumptions needed for continuation; reopen the affected method or service decision if they change.
 
 ### OPS.14:5 - Archetypal Grounding
 
@@ -102,7 +102,7 @@ The customer permits either date below. It pays 900 currency units at the end of
 
 Completing now minus deferring gives +100 − (+800) = **−700 currency units** over the stated horizon. Earlier test service costs 700 more under these assumptions. The financial comparison favors deferral; the responsible practitioner may still value earlier service enough to justify that cost if the governing conditions allow the choice.
 
-The immediate option needs 800 before any receipt. Only 500 is currently available under the supplied cash allowance, so this option has a **300 funding gap**. Its eventual +100 net cash does not fill that earlier gap. The practitioner must obtain the additional authorized funding or choose a funded alternative. The deferred option still requires its 100 payment when due.
+The immediate option needs 800 before any receipt. Only 500 is currently available under the supplied cash allowance, so this option has a **300 funding gap**. Its eventual +100 net cash does not fill that earlier gap. Report the gap. Proceeding with the immediate option requires additional authorized funding; the decision maker can also select a funded alternative. The deferred option still requires its 100 payment when due.
 
 Qualified relief preserves the original operator's recovery and incident coverage in the proposed extension. Its 400 payment is part of making that alternative feasible. The resource owner's access and displaced-use decision is also required. Paying the fee cannot supply either the staffing result or permission to release the product.
 
@@ -123,7 +123,7 @@ If the immediate package instead misses acceptance or payment, its 900 receipt a
 
 Suppose two indivisible jobs compete for three usable machine-hours. Under the stated contribution model, job A yields 70 currency units and needs two hours; job B yields 100 and needs three. Demand exists for one of each, both are otherwise feasible, and partial jobs have no accepted result.
 
-A has the higher ratio: 35 per hour versus approximately 33.33. Choosing A leaves one unusable hour and yields 70. Choosing B yields 100. The feasible alternatives, not the ratio order alone, settle this decision.
+A has the higher ratio: 35 per hour versus approximately 33.33. Choosing A leaves one unusable hour and yields 70. Choosing B yields 100. Of the two feasible whole jobs, B earns the larger contribution.
 
 With several scarce resources or service obligations, the practitioner uses the appropriate scheduling or optimization method. This small example establishes the effect of indivisibility.
 
@@ -169,10 +169,10 @@ A budget category or unit-cost display can also dominate attention because it is
 | --- | --- |
 | The comparison has a real choice. | Alternatives, receiving decision, service result and horizon are explicit. |
 | Quantities retain their meaning. | Physical output, contribution, accounting amounts, cash and released capacity have their own units and basis. |
-| Operating feasibility is preserved. | Demand, resource windows, human conditions, acceptance, rework and displacement fit each alternative. |
+| Operating feasibility is preserved. | For each alternative, the account states whether demand, resource windows, human conditions, acceptance, rework and displacement support it, or what remains unknown. |
 | The incremental account is causal enough for the choice. | Changed payments and receipts follow from stated actions and conditions; unchanged amounts cancel only in the difference. |
 | Timing is visible. | Advance payments, receipts, funding gaps and material flows outside the horizon are shown. |
-| The result supports the actual decision. | The preference or trade-off, uncertainty, authority gap and reopen condition can be recovered. |
+| The result supports the actual decision. | The preference or trade-off, any material uncertainty or authority gap, and the conditions for reconsideration can be recovered. |
 
 ### OPS.14:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -199,21 +199,21 @@ Comparing alternatives on one basis makes an incremental claim intelligible. Sep
 
 ### OPS.14:11 - SoTA-Echoing
 
-The practice question is how to choose operating work when output, scarce resources and financial timing interact. The selected strongest line uses relevant future differences between feasible alternatives, with a constrained-throughput model only where its assumptions fit. Compared with a single unit-cost or utilization figure, this line explains both PumpWorks' cheaper deferred service and the immediate funding gap.
+The practice question is how to choose operating work when output, scarce resources and financial timing interact. Compare future differences between the alternatives and identify any condition, such as timely funding, that must hold before an option can be used. Use a constrained-throughput model when its assumptions fit. The dated comparison explains both PumpWorks' cheaper deferred service and its immediate funding gap.
 
 [ACCA's treatment of relevant costs](https://www.accaglobal.com/my/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/relevant-costs.html) supplies the future incremental cash and opportunity-cost reasoning used in sections 4.3–4.4. PumpWorks adapts that reasoning to explicit acceptance dates and two alternatives. Section 5.5 additionally works the source's redeployed-labor distinction: recover the retained payment before using a reported contribution, and count displaced cash once. The instructional model does not supply tax, financing permission, discounting or statutory recognition rules.
 
 [ACCA's throughput-accounting treatment](https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/throughput-constraints2.html) contributes the scarce-resource mix question under short-horizon cost assumptions. Section 4.2 retains the useful contribution comparison while the whole-job case shows a limit of using the ratio as a decision rule. Variable cloud or labor payments require the actual cost model.
 
-The [Beyond Budgeting principles](https://www.afponline.org/docs/librariesprovider7/default-document-library/bb-principles-handout-2020-%281%29.pdf?sfvrsn=157d3a6b_2), in a 2020-named handout citing Hope, Bunce and Röösli's 2011 work, support resource decisions responsive to current need. Section 4.4 adapts that move when a fixed allocation no longer describes the operating situation. It preserves the separate funding decision; a refreshed forecast is not authorization. The source supplies practitioner guidance for this resource decision.
+The [Beyond Budgeting principles](https://www.afponline.org/docs/librariesprovider7/default-document-library/bb-principles-handout-2020-%281%29.pdf?sfvrsn=157d3a6b_2), in a 2020-named handout citing Hope, Bunce and Röösli's 2011 work, support resource decisions responsive to current need. Section 4.4 adapts that move when a fixed allocation no longer describes the operating situation. It preserves the separate funding decision; a refreshed forecast is not authorization.
 
-For a money-bearing choice with significant long-term or financing effects, a qualified investment or financial model is the stronger alternative to this simple account. Use it when those consequences can change the decision. Reopen the comparison when demand, avoidability, acceptance, displacement, funding or horizon changes.
+For a money-bearing choice with significant long-term or financing effects, a qualified investment or financial model is the stronger alternative to this simple account. Use it when those consequences matter to the choice or the grounds for it. Reopen the comparison when demand, avoidability, acceptance, displacement, funding or horizon changes.
 
 ### OPS.14:12 - Relations
 
 OPS.10 helps establish the feasible resource alternatives. OPS.12 supplies a method for comparing human conditions, and OPS.13 guides the commitment and resource decisions that can make an alternative usable. OPS.15 helps construct the operating account where events or definitions need reconciliation.
 
-OPS.18 guides action when quality or reliability changes the expected result or recovery work. OPS.17 helps select a different operating or financial method when the current model's assumptions fail. Qualified finance and accounting practitioners supply the result needed for investment, financing, tax or statutory use.
+OPS.18 guides action when quality or reliability changes the expected result or recovery work. OPS.17 helps select a different operating or financial method when the current model's assumptions fail. Use the relevant qualified finance or accounting result for investment, financing, tax or statutory use.
 
 FPF C.16 preserves comparison characteristics, units and model assumptions; A.10 keeps their evidence reach explicit. A.11.OP limits account detail to what contributes to the decision, required assurance or recovery.
 

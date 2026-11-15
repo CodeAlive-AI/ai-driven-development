@@ -8,7 +8,7 @@
 
 [PHY.6](11-phy-6---construct-physical-evolution-from-balances-and-respo.md) combines physical participants, exchanges, response laws and compatible preparation into an evolution. A balance alone can leave a response undetermined. Locating that missing contribution is useful before any solver is selected.
 
-[PHY.7](12-phy-7---obtain-motion-from-a-physical-variational-principle.md) offers another construction when a physically justified variational principle applies. The interactions, allowed comparisons and boundary freedoms determine what is varied. Mathematical variation then derives a consequence. A direct balance remains sufficient in many cases; applying an action formalism to every problem adds work without a corresponding gain.
+[PHY.7](12-phy-7---obtain-motion-from-a-physical-variational-principle.md) offers another construction when a physically justified variational principle applies. The interactions, allowed comparisons and boundary freedoms determine what is varied. Mathematical variation then derives a consequence. A direct balance can suffice, as it does for the rod’s angular acceleration in PHY.7:5.1.
 
 [PHY.8](13-phy-8---infer-macroscopic-physical-behavior-from-microscopic.md) constructs collective predictions from physically admissible alternatives and their weighting grounds. It retains correlations, preparation and the difference between sampling a distribution and following physical evolution. A distribution or sufficient bound can remain useful when a particular moment or equilibrium approximation is unavailable.
 
@@ -24,7 +24,7 @@
 
 [PHY.3](18-phy-3---derive-a-physical-limit-from-permitted-transformatio.md) derives a bound or impossibility from the complete transformation and an admissible comparison. That result may finish the question or show which physical premise a different construction would have to change.
 
-These connections form possible routes. They do not prescribe a ten-stage workflow. A known response can enter at measurement; an unknown interaction can enter at law construction; a useful impossibility can end work before a device or computation is built.
+The starting point and stopping point depend on the question. A known response can enter at measurement; an unknown interaction can enter at law construction; a useful impossibility can end work before a device or computation is built.
 
 ### PHY.Reference:3.3 - Constituent actions in ongoing work
 

@@ -35,7 +35,7 @@ Start from the rules and qualified interpretations already available for this co
 
 Locate the provisions that address the question in the applicable law, constitution and relevant agreements or delegations. Determine how those provisions interact. A shareholders' agreement can create a contractual obligation between its parties without itself changing an organ's legal power. A recommended governance code can guide a choice without imposing the same obligation as law. Where the distinction is decisive and unresolved, obtain a bounded interpretation of that interaction.
 
-The useful question is “does this provision reserve this guarantee for a board decision?”, not “have we collected all governance documents?”. Ask for additional material only when it can change the proposed action or the reliance placed on the answer. A disputed, high-consequence interpretation may justify specialist work; an adequate existing answer does not require a new legal opinion.
+Ask, for example, “Does this provision reserve this guarantee for a board decision?” Seek additional material only when it could change the proposed action or the grounds for relying on the answer. A disputed interpretation with serious consequences may justify a specialist opinion.
 
 #### CGOV.1:4.3 - Identify the affected rights and the receiving decision
 
@@ -53,7 +53,7 @@ In a constructed case, North Parent wants to obtain a loan. North Operations wou
 
 The practitioner changes “approve the group's borrowing” into two connected questions: the parent's borrowing decision and the subsidiary's guarantee decision. The finance analysis can support both, but the subsidiary's question also concerns its own obligations and the basis on which its directors may act. CGOV.3 can now establish the responsible organ and any other applicable consent.
 
-If the borrower instead asks only for a financial comparison of two offers already within its established authority, use FIN.1 and the relevant finance methods. Reconstructing the subsidiary's governance would add no answer to that different question.
+If the borrower instead asks only for a financial comparison of two offers already within its established authority, use FIN.1 and the relevant finance methods.
 
 #### CGOV.1:5.2 - A shared chair, two corporations
 
@@ -76,7 +76,7 @@ Can the receiver tell what act is proposed, which corporation it concerns, when 
 
 ### CGOV.1:9 - Consequences
 
-The practitioner can direct work to the people able to answer the corporate question and distinguish it from financial, organizational or operating work. Some apparently single decisions separate into connected acts. This costs a small amount of framing now and avoids preparing a decision that cannot have the intended effect.
+The practitioner can direct work to those able to answer the corporate question and distinguish it from financial, organizational or operating work. Some apparently single decisions separate into connected acts. This costs a small amount of framing now and avoids preparing a decision that cannot have the intended effect.
 
 ### CGOV.1:10 - Architectural Rationale
 
@@ -84,14 +84,14 @@ The proposed act determines which entities, rules and rights matter. Starting fr
 
 ### CGOV.1:11 - SoTA-Echoing
 
-The practice question is how to enter a corporate matter without importing a universal governance model. The [G20/OECD Principles, About the Principles](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-3.html) supplies the comparative, nonbinding frame; the [IFC methodology](https://www.ifc.org/en/what-we-do/sector-expertise/corporate-governance/cg-methodology-tools) distinguishes company and ownership settings. This pattern adapts those contributions into act-specific framing instead of requiring their entire assessment apparatus for each decision.
+The practice question is how to enter a corporate matter without importing a universal governance model. The [G20/OECD Principles, About the Principles](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-3.html) supplies the comparative, nonbinding frame; the [IFC methodology](https://www.ifc.org/en/what-we-do/sector-expertise/corporate-governance/cg-methodology-tools) distinguishes company and ownership settings. This pattern adapts those contributions into act-specific framing.
 
-A standard corporate document list remains useful for an appraisal whose scope demands it. For a bounded matter, the selected method instead asks which provision changes the next act. The trade-off is deliberate limited scope: it does not provide a whole-company governance assessment. Neither international principles nor this framework supplies a missing local legal rule. Reopen the frame when the corporation, act, relevant rule or effective date changes.
+A standard corporate document list remains useful for an appraisal whose scope demands it. For a bounded matter, the selected method instead asks which provision changes the next act. If the local legal rule is missing, obtain the applicable provision or its interpretation. Reopen the frame when the corporation, act, relevant rule or effective date changes.
 
 ### CGOV.1:12 - Relations
 
 CGOV.2 supplies the relevant ownership, voting and control relations; CGOV.3 uses the bounded matter to establish authority. Their results can feed later decision, disclosure, conflict or constitutional-change work.
 
-FIN.1 frames a financial choice and FIN.16 prepares financial advice; they leave the corporate-law basis to the applicable rules and their interpretation. OCE.6 coordinates assignments and enabling relations when an organization arrangement actually changes. C.11.DUA helps decide whether a proposed further inquiry is worth its attainable contribution.
+FIN.1 frames a financial choice and FIN.16 prepares financial advice; they leave the corporate-law basis to the applicable rules and their interpretation. OCE.6 coordinates assignments and enabling relations when an organization arrangement changes. C.11.DUA helps decide whether a proposed further inquiry is worth its attainable contribution.
 
 ### CGOV.1:End

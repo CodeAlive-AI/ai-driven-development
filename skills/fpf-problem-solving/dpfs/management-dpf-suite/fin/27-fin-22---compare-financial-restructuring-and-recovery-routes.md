@@ -6,7 +6,7 @@
 
 ### FIN.22:0 - Use this when
 
-Ordinary financing or repayment is no longer adequate, and the corporation must compare an extension, amended claims, new funding, asset sale, broader restructuring or exit. Compare viable routes and the actual recoveries of affected claimants. A narrow covenant remedy that already suffices remains in FIN.12.
+Ordinary financing or repayment is no longer adequate, and the corporation must compare an extension, amended claims, new funding, asset sale, broader restructuring or exit. Compare viable routes and determine what the affected claimants would recover under each. A narrow covenant remedy that already suffices remains in FIN.12.
 
 ### FIN.22:1 - Problem frame
 
@@ -27,11 +27,11 @@ Preserve viable value while respecting time, cash urgency, claimant differences 
 
 1. State the debtor's question, current cash runway and obligations, affected claimants and the latest dates at which choices remain available. Obtain the applicable legal and contractual facts for any route whose availability depends on them.
 2. Form credible alternatives: consensual amendment or extension, operational and financial restructuring, new capital, asset or business sale, and available formal or exit routes. Identify the operating changes required to make a continuation viable.
-3. Project each route's timed operating and realization cash, process and disposal costs, taxes, collateral effects and interim finance. Establish who can actually provide interim money and under what consent, security and repayment conditions.
-4. Apply the actual proposed or applicable treatment of claims. Calculate what each materially affected class or claimant receives, when, in which form and with what risk. A distribution to one claimant is not the same as value available to all.
+3. Project each route's timed operating and realization cash, process and disposal costs, taxes, collateral effects and interim finance. Establish who can provide interim money and under what consent, security and repayment conditions.
+4. Apply the proposed treatment for a conditional route or the terms already in force for an existing arrangement. Calculate what each materially affected class or claimant receives, when, in which form and with what risk. A distribution to one claimant is not the same as value available to all.
 5. Compare recoveries on a common valuation date and matching currency, timing and risk grounds. Use ranges or scenarios for uncertain realization and timing. Keep contractual claim amount, expected payment and present value distinct.
 6. Examine whether the required consents, implementation capacity and interim funding make the route feasible. A financially preferable offer may still be rejected; report whose agreement is needed without asserting that financial superiority grants authority.
-7. Return the route comparison, conditional proposal or reason no supported route remains. Identify the immediate funded action or specialist question that changes survival or feasibility. Keep any applicable notice or filing obligation with its actual institutional source.
+7. Return the route comparison, conditional proposal or reason no supported route remains. Identify any immediate funded action or specialist question that can change survival or feasibility. Keep any applicable notice or filing obligation with its institutional source.
 
 
 
@@ -40,7 +40,7 @@ Preserve viable value while respecting time, cash urgency, claimant differences 
 
 Begin with the debtor's immediate payments and the time available to make a different route possible. FIN.2 supplies the dated cash need; FIN.12 supplies binding conditions, affected actions and remedy deadlines. Identify essential operations, people, assets and relationships that would be lost if funding stopped. A valuation of future recoveries is unusable as a survival plan if the debtor cannot reach the date at which they arise.
 
-Keep an immediate stabilization action distinct from the eventual restructuring. A short agreed extension or interim facility may buy time to investigate and negotiate; it does not establish that the business is viable. Include its price, security, consents and fallback if the wider plan fails. An assumption of continued supply or creditor forbearance requires actual grounds. Obtain applicable legal advice about duties, procedure and authority when those determine the available action.
+Keep an immediate stabilization action distinct from the eventual restructuring. A short agreed extension or interim facility may buy time to investigate and negotiate; it does not establish that the business is viable. Include its price, security, consents and fallback if the wider plan fails. An assumption of continued supply or creditor forbearance needs grounds that cover the proposed period. Obtain applicable legal advice about duties, procedure and authority when those determine the available action.
 
 Diagnose the financial mechanism of distress. A viable operation with a concentrated maturity can need a financing change. An operation with persistent cash losses may need operational change, sale or closure as well. A profitable forecast can still be unfinanceable because working capital and maintenance consume the receipts. Use FIN.4 and the actual operating plan to distinguish these cases. Extending principal without repairing a continuing cash deficit simply moves the failure.
 
@@ -51,11 +51,11 @@ Diagnose the financial mechanism of distress. A viable operation with a concentr
 
 Construct the alternatives appropriate to the debtor and its creditors: an agreed extension, reduced or converted claims, new money, operating restructuring, asset or business sale, and an available formal or exit route. The alternatives may combine these moves. State the payments, asset use, financing and claim treatment that make each route different.
 
-For continuation, obtain a credible operating plan with the changes needed to restore supportable cash. Include transition spending, customer and supplier response, maintenance and later investment. Forecast what happens if the changes arrive late or achieve less than intended. The financial Method tests those consequences; it does not invent a turnaround capability merely because the spreadsheet needs higher margins.
+For continuation, obtain a credible operating plan with the changes needed to restore supportable cash. Include transition spending, customer and supplier response, maintenance and later investment. Forecast what happens if the changes arrive late or achieve less than intended. Test those consequences and establish who can carry out any operating change the plan relies on.
 
 For a sale, distinguish asset disposal from sale of an operating business. Establish which assets and contracts transfer, which liabilities remain, the sale process, achievable timing and net proceeds. An orderly sale and an immediate forced realization can have different values and costs. FIN.7 supplies the matching valuation premise; FIN.9 supplies retained-business and divestment consequences. Do not add a business value and the assets already supporting that value.
 
-For exit, include the cash costs and remaining obligations of stopping, disposal, employee or supplier settlement where applicable, taxes and the procedure itself. The relevant alternative is the feasible exit under the actual conditions, not a frictionless book-value liquidation. A continued loss-making route needs comparison with what can actually be recovered and preserved by another route.
+For exit, include the cash costs and remaining obligations of stopping, disposal, employee or supplier settlement where applicable, taxes and the procedure itself. The relevant alternative is the exit available under these conditions, with its costs and recoverable proceeds. A continued loss-making route needs comparison with what can be recovered and preserved by another route.
 
 
 
@@ -77,11 +77,11 @@ Debt capacity after restructuring must fit the repaired operation and its uncert
 
 Identify the relevant debtor or asset pool, secured and unsecured claims, guarantees, setoff or other material rights, and the applicable or proposed priority. Several entities or collateral pools cannot be combined into one distributable pot merely because they share owners. FDM.1–FDM.2 establish those boundaries. Use the responsible institutional interpretation when the effect of a right is disputed.
 
-Work from the available net proceeds and apply the stated treatment in order. A senior capped claim receives no more than its allowed claim or the proceeds available to it; the remainder goes to the next permitted claim or class. Claimants sharing a class receive the allocation actually required by the arrangement, which may be proportional to their allowed claims. Equity receives only the residual under the stipulated treatment. These are calculation moves after the rights are established, not a universal legal priority schedule.
+Work from the available net proceeds and apply the stated treatment in order. A senior capped claim receives no more than its allowed claim or the proceeds available to it; the remainder goes to the next permitted claim or class. Claimants sharing a class receive the allocation required by the arrangement, which may be proportional to their allowed claims. Equity receives only the residual under the stipulated treatment. These are calculation moves after the rights are established, not a universal legal priority schedule.
 
-Allocate within each material scenario before calculating expected recoveries. Priority and caps are nonlinear. Allocating an expected total as though it were a certain pool can overstate junior or equity recovery and conceal senior loss in a low outcome. Keep the scenario probabilities, recovery dates and uncertainty grounds explicit. When only a range is supported, report that range.
+Allocate within each material scenario before calculating expected recoveries. Priority and caps are nonlinear. Allocating an expected total as though it were a certain pool can misstate junior recovery, omit an equity residual in a high outcome or hide a senior loss in a low outcome. Keep the scenario probabilities, recovery dates and uncertainty grounds explicit. When only a range is supported, report that range.
 
-When a plan offers cash, new debt and equity, value each actual instrument on matching grounds. Face amount is not the value of a delayed or risky promise. Use FIN.5 and FIN.7 for the claim-specific valuation, including its contingent rights and residual exposure. Use FIN.7's bridge from enterprise value to the actual equity interest. Treating the full enterprise value as equity recovery while also crediting the debt claims would count their value twice. Preserve the difference between the allowed old claim, promised new treatment, expected payment and present value.
+When a plan offers cash, new debt and equity, value each instrument offered on matching grounds. Face amount is not the value of a delayed or risky promise. Use FIN.5 and FIN.7 for the claim-specific valuation, including its contingent rights and residual exposure. Use FIN.7's bridge from enterprise value to the actual equity interest. Treating the full enterprise value as equity recovery while also crediting the debt claims would count their value twice. Preserve the difference between the allowed old claim, promised new treatment, expected payment and present value.
 
 
 
@@ -101,7 +101,7 @@ Assess proposed transfers or concessions as changes to the route. An interest up
 #### FIN.22:4.6 - Return an implementable proposal or a precise unresolved condition
 
 
-State the proposed operating and claim changes, the financing needed to reach them, the affected participants and the actual consents or procedure on which they depend. Include immediate action and the date after which another route or specialist response is needed. Use FIN.16 to return the advice and FIN.15 for sufficient authorized financial actions.
+State the proposed operating and claim changes, the financing needed to reach them, the affected participants and the consents or procedure on which they depend. Identify any immediate action the route needs and the date after which another route or specialist response is needed. Use FIN.16 to return the advice and FIN.15 for sufficient authorized financial actions.
 
 Separate financial preference, feasibility, agreement and actual performance. A modeled route may be worth proposing without being agreed. A signed arrangement may still require operational execution. Continue monitoring cash and the few milestones that determine survival or recovery; return when those conditions change. Do not keep an earlier preferred route alive in the recommendation after its finance, agreement date or operating premise has failed.
 
@@ -126,7 +126,7 @@ With several creditors, repeat the payment treatment for their actual claims and
 
 Consider a separate constructed debtor with two old claims against one pool: a senior claim of 60, a junior claim of 40 and residual equity. The applicable exit treatment is stipulated: net sale proceeds of 70 are available now after every cost and other claim. Senior receives 60, junior 10 and equity zero.
 
-A proposed turnaround followed by sale needs 10 immediately for the necessary transition work. A new lender actually offers 10 net, repayable as 11 in one year ahead of both old claims under a priority that all required parties would have to accept. The dated operating plan is otherwise funded throughout the year. At year end, realizable proceeds after ordinary operating payments and tax but before final process costs and the interim claim are 120 or 80, each with supported probability one half. Final process cost is 8 in either state. These proceeds include the benefits of the initial transition spending; that spending is funded by the 10 advance and is not deducted a second time at sale.
+A proposed turnaround followed by sale needs 10 immediately for the necessary transition work. A new lender offers 10 net, repayable as 11 in one year ahead of both old claims under a priority that all required parties would have to accept. The dated operating plan is otherwise funded throughout the year. At year end, realizable proceeds after ordinary operating payments and tax but before final process costs and the interim claim are 120 or 80, each with supported probability one half. Final process cost is 8 in either state. These proceeds include the benefits of the initial transition spending; that spending is funded by the 10 advance and is not deducted a second time at sale.
 
 After process cost and interim repayment, the pool for old claims is 101 in the high state and 61 in the low state. Applying the original priority gives:
 
@@ -149,13 +149,13 @@ If the only obtainable interim offer instead requires repayment 20 for the same 
 #### FIN.22:5.2 - Recover value from a continuing business and new instruments
 
 
-In a separate constructed proposal, the old creditor's allowed claim is 100. The feasible liquidation alternative pays it 60 now, net of all relevant costs and other claims. A continuation plan requires 20 immediately for implementation. A new lender actually offers 20 net on specified terms, with a claim paying 22 in one year and valued at 20 on the common comparison date. The proposed treatment ranks this claim ahead of the replacement note described below. The dated plan covers the other operating and financing needs; acceptance of the proposed claim treatment remains required.
+In a separate constructed proposal, the old creditor's allowed claim is 100. The feasible liquidation alternative pays it 60 now, net of all relevant costs and other claims. A continuation plan requires 20 immediately for implementation. A new lender offers 20 net on specified terms, with a claim paying 22 in one year and valued at 20 on the common comparison date. The proposed treatment ranks this claim ahead of the replacement note described below. The dated plan covers the other operating and financing needs; acceptance of the proposed claim treatment remains required.
 
 FIN.7 supplies a supportable operating value of 120 for the subsequent cash flows of the implemented plan, before payments to financing claims. The upfront 20 is paid from the advance and is outside those subsequent flows; no surplus advance remains as cash to add to the value. The new-money debt is deducted once when deriving the interests available under the plan. There are no other prior claims, excess assets or omitted implementation costs.
 
-The proposal extinguishes the old claim of 100 in exchange for a new note promising 40 in two years and 50% of the ordinary equity. On compatible FIN.5 and FIN.7 valuation grounds, the note is worth 32, reflecting its actual timing, priority and risk. The note's face amount is not its present value. All ordinary shares have identical proportionate economic rights, and there is no separate control adjustment in this case.
+The proposal extinguishes the old claim of 100 in exchange for a new note promising 40 in two years and 50% of the ordinary equity. On compatible FIN.5 and FIN.7 valuation grounds, the note is worth 32, reflecting its timing, priority and risk. The note's face amount is not its present value. All ordinary shares have identical proportionate economic rights, and there is no separate control adjustment in this case.
 
-Deduct the actual debt values to obtain common equity: 120 − 20 − 32 = 68. The old creditor receives the note worth 32 plus half the equity, worth 34, for a recovery value of 66. The other half is worth 34 to the remaining owners. The new lender's 20, the creditor's 66 and those owners' 34 sum to 120. The old face claim of 100 has been replaced; it is not another deduction alongside the new instruments.
+Deduct the values of the two debt claims to obtain common equity: 120 − 20 − 32 = 68. The old creditor receives the note worth 32 plus half the equity, worth 34, for a recovery value of 66. The other half is worth 34 to the remaining owners. The new lender's 20, the creditor's 66 and those owners' 34 sum to 120. The old face claim of 100 has been replaced; it is not another deduction alongside the new instruments.
 
 Compared with liquidation at 60, the creditor gains value 6 on the stated grounds. The 66 is a valuation of its promised note and ownership, not cash available to meet an immediate payment. Trading or financing against those interests would need its own attainable terms. Neither the continuing business value of 120 nor the exchanged face amount of 100 is the creditor's receipt.
 
@@ -175,7 +175,7 @@ Comparing 80 later with 65 now as simple amounts ignores time and risk; use a ma
 
 ### FIN.22:9 - Consequences
 
-The corporation receives a financially interpretable restructuring proposal or a precise reason a route cannot be relied on. It can support negotiation while remaining distinct from an accepted plan or successful recovery.
+The corporation receives a financial comparison, a restructuring proposal or the reason a route cannot be relied on. The comparison can support negotiation. The treatment of claims follows the applicable agreement or authorized procedure. What each claimant recovers depends on its rights, the proceeds realized, costs and timing.
 
 ### FIN.22:10 - Architectural Rationale
 
@@ -187,6 +187,6 @@ The [World Bank's 2022 workout toolkit][WB-WORKOUT], especially its financial-mo
 
 ### FIN.22:12 - Relations
 
-FIN.2 establishes cash urgency, FIN.7 supports route-specific values, FIN.10–FIN.12 supply financing and covenant facts, and FIN.16 returns conditional advice. [FDM][FDM] resolves disputed parties, positions or event consequences. Specialist restructuring and legal methods carry the actual negotiation or proceeding.
+FIN.2 establishes cash urgency, FIN.7 supports route-specific values, FIN.10–FIN.12 supply financing and covenant facts, and FIN.16 returns conditional advice. Use [FDM][FDM] to identify the parties, positions and conditional events in the financial model. If rights are disputed, compare routes conditionally and establish the applicable treatment with the competent authority before relying on one as enforceable. The responsible parties use the applicable restructuring and legal methods to negotiate or conduct a proceeding.
 
 ### FIN.22:End

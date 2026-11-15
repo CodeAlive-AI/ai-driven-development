@@ -7,7 +7,7 @@
 
 Use this pattern when a selected maintenance intervention is being performed and later decisions depend on what actually happened. The planned bearing has been replaced, but an interruption, substituted part or changed setting can leave the work record inconsistent with the machine.
 
-Perform the task within its applicable procedure and operative conditions, preserving the material actions and actual resulting configuration. The first result is evidence of the performed intervention, including its incomplete or changed portions. [MNT.10](21-mnt-10---verify-restored-functioning-after-maintenance.md) establishes restored functioning and [MNT.11](22-mnt-11---hand-back-and-authorize-resumed-use-after-maintenan.md) establishes the hand-back result. This pattern does not require physical work to finish a recommendation request.
+Perform the task within its applicable procedure and operative conditions, preserving the material actions and actual resulting configuration. The first result is evidence of the performed intervention, including its incomplete or changed portions. [MNT.10](21-mnt-10---verify-restored-functioning-after-maintenance.md) establishes restored functioning and [MNT.11](22-mnt-11---hand-back-and-authorize-resumed-use-after-maintenan.md) establishes the hand-back result. A recommendation can answer a request for advice before work begins.
 
 ### MNT.9:2 - Problem
 
@@ -17,33 +17,33 @@ Unexpected conditions make this worse when the team improvises beyond the permit
 
 ### MNT.9:3 - Forces
 
-The practitioner needs enough freedom to respond to the actual machine while preserving the limits that make the response acceptable. Detailed recording can support later diagnosis but distract from protected work if poorly timed. A work interruption can require relief or re-establishment of a condition; simply extending the shift may impair performance.
+The practitioner needs enough freedom to respond to the machine as found while preserving the limits that make the response acceptable. Detailed recording can support later diagnosis but distract from protected work if poorly timed. A work interruption can require relief or re-establishment of a condition; simply extending the shift may impair performance.
 
 ### MNT.9:4 - Solution
 
-Recover the selected task and the operative work conditions before performing it. The applicable equipment procedure supplies the concrete technique, tool use, tolerances and controls. This Method organizes maintenance performance and its usable account; it does not replace that procedure.
+Recover the selected task and the operative work conditions before performing it. The applicable equipment procedure supplies the technique, tool use, tolerances and controls. Use this Method to organize the intervention and the account that later users need.
 
 Maintain correspondence between work and actual state. Identify the unit, relevant configuration, selected parts and settings. Where the procedure requires a check before an irreversible or consequential step, perform that check at the point where it establishes the needed condition. A later signature cannot recreate an unobserved state that is no longer recoverable.
 
 When the actual condition differs from the expected one, determine what changes. A harmless access detail may remain within the permitted task. Unexpected damage, a different part interface, a lost protection condition or a larger repair can change competence, permission, time and verification. Use the applicable hold or restoration procedure and return the changed maintenance decision rather than silently extending the scope.
 
-Handle interruption explicitly. Preserve a condition that the next practitioner can safely recognize, transfer the relevant unfinished work and protection through the applicable arrangement, and re-establish any condition that no longer has usable support. If fatigue or working conditions impair the task, change allocation, relief or timing. The completion pressure does not supply capability.
+If work stops, prepare for its continuation. Preserve a condition that the next practitioner can safely recognize, transfer the relevant unfinished work and protection through the applicable arrangement, and re-establish any condition that no longer has usable support. If fatigue or working conditions impair the task, change allocation, relief or timing. A deadline cannot restore the practitioner’s ability to do the task.
 
-Preserve the facts that later users actually need. These commonly include material actions, installed or removed part identities, relevant settings and measurements, deviations from the selected work and unresolved conditions. Use the existing maintenance record when it serves that purpose. Applicable regulatory or organizational retention requirements remain in force.
+Preserve the facts that later users need. These commonly include material actions, installed or removed part identities, relevant settings and measurements, deviations from the selected work and unresolved conditions. Use the existing maintenance record when it serves that purpose. Applicable regulatory or organizational retention requirements remain in force.
 
 Keep statements at their supported level. “Bearing installed using the applicable procedure” concerns the intervention. “The required flow is restored” needs functioning evidence. “This recurring failure has been eliminated” needs a different horizon and causal basis. Link those later results when they exist without assigning them to a task-completion entry.
 
-Return the performed work and resulting configuration to the tester, operator or maintenance-history user who needs them. If the work is incomplete, state its actual stopping state and the condition needed for continuation. A truthful partial result is more useful than a closed order that implies unperformed work.
+Give the tester, operator or maintenance-history user the evidence they need about the work performed and the resulting configuration. If the work is incomplete, state the condition in which it stopped and the condition needed for continuation. A partial account should show which planned work remains unperformed.
 
 ### MNT.9:5 - Archetypal Grounding
 
 In the extended constructed PS17 branch, the part return, protected access and permission are in place. The team performs the selected bearing intervention under the applicable equipment procedure.
 
-The removed bearing is identified as R551 and the installed compatible bearing as R607. These are constructed serial-unit identifiers. The resulting installed configuration is identified as C42; it retains the same approved design basis while the actual bearing individual has changed. The maintenance record describes that change; it is not the physical configuration itself.
+The removed bearing is identified as R551 and the installed compatible bearing as R607. These are constructed serial-unit identifiers. The resulting installed configuration is identified as C42; it retains the same approved design basis although the installed bearing has changed. The maintenance record describes that change; it is not the physical configuration itself.
 
 If unexpected housing damage is found, the original bearing task may no longer answer the condition. The team preserves the supported state and obtains the relevant revised diagnosis and work decision. It does not mark the original plan complete merely because the replacement bearing was available.
 
-In the completed branch, the intervention record supplies the actual configuration and material observations to MNT.10. It does not yet claim restored district-heating service or removal of the unresolved long-horizon recurrence mechanism.
+In the completed branch, the intervention record identifies the resulting configuration and supplies the material observations to MNT.10. It does not yet claim restored district-heating service or removal of the unresolved long-horizon recurrence mechanism.
 
 ### MNT.9:6 - Bias-Annotation
 
@@ -59,7 +59,7 @@ The result concerns performed intervention. Functioning and resumed-use claims r
 
 A task is closed because the planned hours were consumed. Record what actually happened and the remaining state. A substituted part is described only as “equivalent” when applicability is material. Preserve the basis that makes it usable in this configuration.
 
-An exhausted specialist is instructed to finish more carefully. Revise relief or timing in response to the actual capability limit.
+An exhausted specialist is instructed to finish more carefully. Revise relief or timing in response to the capability limit.
 
 ### MNT.9:9 - Consequences
 
@@ -67,11 +67,11 @@ The tester and operator receive an account that corresponds to the intervention,
 
 ### MNT.9:10 - Architectural Rationale
 
-Performance and its account are joined because later maintenance decisions rely on that correspondence. Separating intervention evidence from functioning and release prevents one completion claim from silently taking on several incompatible meanings.
+Performance and its account are joined because later maintenance decisions rely on that correspondence. Separating intervention evidence from functioning and release keeps task completion, evidence of functioning and authorization to resume use distinct.
 
 ### MNT.9:11 - SoTA-Echoing
 
-The practice question is how to preserve reliable continuation when work differs from its plan. This pattern adapts the work-management concern in GFMAM's maintenance framework and the fatigue-reporting problem in CASA's 2026 maintenance risk account. Against task-closure-only management, it adds the interruption, actual-state and relief decisions in the Solution. It accepts focused reporting and occasional replanning to avoid concealing incomplete or unsupported work. CASA's aviation account supplies a relevant failure mechanism, not a universal duty-time threshold. Reopen when a new work variant or observed interruption defeats the continuation arrangement. See [GFMAM](https://www.gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf) and [CASA's fatigue account](https://www.casa.gov.au/operations-safety-and-travel/safety-management-systems/sector-safety-risk-profiles/maintenance-activities-sector-safety-risk-profile/fatigue).
+The practice question is how to preserve reliable continuation when work differs from its plan. This pattern adapts the work-management concern in GFMAM's maintenance framework and the fatigue-reporting problem in CASA's 2026 maintenance risk account. Against task-closure-only management, it adds the interruption, actual-state and relief decisions in the Solution. It accepts focused reporting and occasional replanning to avoid concealing incomplete or unsupported work. CASA’s aviation account explains how fatigue can impair maintenance work. It supplies no duty-time threshold for every setting. Reopen when a new work variant or observed interruption defeats the continuation arrangement. See [GFMAM](https://www.gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf) and [CASA's fatigue account](https://www.casa.gov.au/operations-safety-and-travel/safety-management-systems/sector-safety-risk-profiles/maintenance-activities-sector-safety-risk-profile/fatigue).
 
 ### MNT.9:12 - Relations
 

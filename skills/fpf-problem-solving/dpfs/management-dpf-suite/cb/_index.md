@@ -6,7 +6,7 @@ Edition: [Community Management — Participation and practice-support edition](_
 
 # Table of Contents
 
-CB is this framework's reference code; its numeric local locators give CB.1–CB.16. The § column gives publication position. Part order helps retrieval and does not prescribe use order. Dependencies name contributions needed under the conditions stated in the bodies.
+CB is this framework's reference code; its numeric local locators give CB.1–CB.16. The § column gives publication position. Choose a starting point by the contribution you need. Dependencies name contributions needed under the conditions stated in the bodies.
 
 | Unit | Reader use |
 | --- | --- |
@@ -55,7 +55,7 @@ CB is this framework's reference code; its numeric local locators give CB.1–CB
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 14 | [CB.14 - Develop and Maintain a Shared Repertoire of Practice](24-cb-14---develop-and-maintain-a-shared-repertoire-of-practice.md) | Stable | Shared repertoire; documentation, benchmarking and renewal | Core Method-development patterns and RMP for actual method-development contributions |
+| 14 | [CB.14 - Develop and Maintain a Shared Repertoire of Practice](24-cb-14---develop-and-maintain-a-shared-repertoire-of-practice.md) | Stable | Shared repertoire; documentation, benchmarking and renewal | Core Method-development patterns and RMP when the work requires method development |
 | 15 | [CB.15 - Connect Practices through a Useful Joint Contribution](25-cb-15---connect-practices-through-a-useful-joint-contributio.md) | Stable | Cross-community work; visits, translation and received use | Relevant practitioners, access and receiving conditions |
 | 16 | [CB.16 - Form and Carry a Collective Voice into a Decision](26-cb-16---form-and-carry-a-collective-voice-into-a-decision.md) | Stable | Joint response; collective voice, dissent and representation | CB.13 for mandate; the receiving decision |
 
@@ -73,7 +73,7 @@ CB is this framework's reference code; its numeric local locators give CB.1–CB
 
 Use this framework when people need useful participation, relationships or joint contributions: help one another, take part in a valued activity, keep shared work feasible, or make their experience useful elsewhere. A community organiser, participant, practitioner, sponsor or assisting agent can enter at the difficulty already present. When the proposed community is meant to support a wider cultural purpose, CB.1 also helps decide whether that purpose needs a community contribution at all.
 
-These are selected examples. Bring the actual question to the [Table of Contents](_index.md#table-of-contents) when none fits. Open a pattern's Problem frame, then its Solution and worked case. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
+These are selected examples. Bring your question to the [Table of Contents](_index.md#table-of-contents) when none fits. Open a pattern's Problem frame, then its Solution and worked case. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
 
 ### OFFER — Choose what would help
 
@@ -81,7 +81,7 @@ These are selected examples. Bring the actual question to the [Table of Contents
 - **Question:** Which contribution is worth making for these people under the available conditions?
 - **First useful result or blocker:** A credible offer and a bounded action to obtain a response, or the particular missing contribution that prevents an honest offer.
 - **Start with:** [CB.1](11-cb-1---choose-a-useful-cultural-or-community-contribution.md). Its comparison includes ways to develop carriers of a practice without requiring mutual communication.
-- **Stop or return:** Keep an adequate existing arrangement. When the offer is sound and the remaining task is a first exchange, move to CB.2; when a professional method or permission is missing, obtain it from its actual supplier.
+- **Stop or return:** Keep an adequate existing arrangement. When the offer is sound and the remaining task is a first exchange, move to CB.2; when a professional method or permission is missing, obtain it from a source that can provide the method or grant the permission.
 
 ### EXCHANGE — Make one request lead to useful help
 
@@ -94,16 +94,16 @@ These are selected examples. Bring the actual question to the [Table of Contents
 ### CONTINUE — Carry a voluntary activity through a change of organiser
 
 - **Situation:** An organiser is leaving. People want some activity to continue, while access, funding or the right to decide remains unsettled.
-- **Question:** What can continue, on whose terms, with whom actually able to perform it?
+- **Question:** What can continue, on whose terms, and who can perform the work?
 - **First useful result or blocker:** An agreed feasible continuation or ending. For a transfer, someone can take over and completes a first activity under the new arrangement; otherwise the missing mandate, capability or resource remains explicit. The useful activity, decision mandate, willing work with its means, first performance, settlement of what ends, and a return of what happened need to remain connected through the change.
 - **Start with:** [CB.11](21-cb-11---continue-change-transfer-or-end-a-community-arrangem.md); use [CB.13](23-cb-13---establish-a-workable-mandate-for-shared-decisions.md) for missing mandate, [CB.7](17-cb-7---prepare-and-sustain-distributed-organising.md) for organising capability and [CB.9](19-cb-9---provide-for-community-work-and-agree-its-terms.md) for provision and terms.
 - **Stop or return:** Reduce, pause or end an unsupported promise. Keep an adequate existing arrangement. An unresolved incident still needs its responsible receiver under CB.8.
 
 ## How to use the language
 
-Use the method that answers your present difficulty. Choose a contribution that can answer the situation with the available skills, time and means, and whose total burden is acceptable to those undertaking it. Obtain its real inputs, perform the relevant work, and inspect what reached the intended person or action. The [Architectural Reference](_index.md#community-management-principles-framework-architectural-reference) explains how to connect methods and why the alternatives matter. The [Applications](27-applications.md) show complete constructed uses across unlike settings.
+Use the method that answers your present difficulty. Choose a contribution that can answer the situation with the available skills, time and means, and whose total burden is acceptable to those undertaking it. Obtain the inputs it needs, perform the relevant work, and inspect what reached the intended recipient or activity. The [Architectural Reference](_index.md#community-management-principles-framework-architectural-reference) explains how to connect methods and why the alternatives matter. The [Applications](27-applications.md) show complete constructed uses across unlike settings.
 
-The four Parts group related questions for finding them. They are not stages that every community must traverse. You can begin with a resource dispute, an incident, a missing contribution or a useful existing practice. Follow another pattern when you need its result. Permission refused, unavailable expertise or a burden that nobody accepts can stop the proposed action.
+The four Parts group related questions so you can start where you need help. You can begin with a resource dispute, an incident, a missing contribution or a useful existing practice. Follow another pattern when you need its result. Permission refused, unavailable expertise or a burden that nobody accepts can stop the proposed action.
 
 ---
 

@@ -6,7 +6,7 @@
 
 Use this pattern when joint work needs an explanation, challenge, role conversation, allocation of help or other leadership contribution that is missing or depends on one initiator. Begin with the next piece of receiving work and ask what a participant needs to be able to do differently. The first useful result is a capable, feasible arrangement for supplying that contribution; follow it into actual performance.
 
-For example, a reviewer needs an unsupported claim returned to its author, but a novice facilitator suppresses the objection. The missing contribution is to preserve the objection and obtain a qualified answer. It is not a general need for more inspirational leadership.
+For example, a reviewer needs an unsupported claim returned to its author, but a novice facilitator suppresses the objection. The missing contribution is to preserve the objection and obtain a qualified answer.
 
 A competent current participant may already be able and authorized to help. Use that arrangement directly. If a file is inaccessible, restore access; if a technical choice is unsettled, obtain the relevant professional answer. A leadership conversation is useful when it helps obtain or use such a contribution, not as a substitute for it.
 
@@ -28,7 +28,7 @@ Candour helps expose errors and consequences. Employment, status or dependence o
 
 #### LDR.1:4.1 - Find the contribution through the receiving work
 
-Recover a representative next task, the result it needs and what currently prevents it. When people cannot yet say what to undertake together, use LDR.5 to form the direction and participation needed for that next task. For an established task, ask the participants what help would change their next action. Useful answers include:
+Recover a representative next task, the result it needs and what currently prevents it. When the participants cannot yet say what to undertake together, use LDR.5 to form the direction and participation needed for that next task. For an established task, ask the participants what help would change their next action. Useful answers include:
 
 - making the intended result and its grounds understandable;
 - bringing an unvoiced concern into the decision;
@@ -39,7 +39,7 @@ Recover a representative next task, the result it needs and what currently preve
 - preparing a proposal that others can examine and begin;
 - allowing another capable participant to continue without the initiator.
 
-These are recognition cues, not a required classification. State the actual contribution in the vocabulary of the work: “Help the authors distinguish the obsolete source and return the unsupported claim before review,” rather than “improve engagement.”
+State the actual contribution in the vocabulary of the work: “Help the authors distinguish the obsolete source and return the unsupported claim before review,” rather than “improve engagement.”
 
 Locate the cause only as far as the current choice needs. If a permission or tool failure is already established, ask its responsible provider for the missing condition. If the observed non-use has several plausible causes, OCE.10 supplies the organization-specific investigation; do not infer unwillingness from absence of performance. A voluntary community may need a question about participation, not an employer's assignment.
 
@@ -49,7 +49,7 @@ Name the receiving occasion and a small observation that would reveal whether th
 
 Choose the conversation or practical assistance by the needed result. A short brief can connect familiar contributions before work. If people have lost or never formed a direction they can undertake, LDR.5 addresses that prior question. A huddle can adjust a shared plan after a change. A role conversation can clarify a participant's responsibility and help. A debrief can examine a completed episode. A disputed whole arrangement needs LDR.2; an unanswered substantive question needs B.5.SD; a proposal not yet connected to its first use needs LDR.4.
 
-Identify the actual contributions required to perform the selected method. Facilitation, subject expertise, decision authority, resource allocation, coaching and peer help can come from different providers. One person may supply several when capable and authorized. Select willing, capable participants with time and access for this occasion. A job title, an available calendar slot or general fluency is insufficient evidence of a difficult professional contribution.
+Identify the actual contributions required to perform the selected method. Facilitation, subject expertise, decision authority, resource allocation, coaching and peer help can come from different providers. One performer may supply several when capable and authorized. Select willing, capable participants with time and access for this occasion. A job title, an available calendar slot or general fluency is insufficient evidence of a difficult professional contribution.
 
 Compare the available arrangements against the same result and period. Begin with competent ordinary coordination, including its existing assistance and follow-through. Compare an additional helper, another provider, supported development, autonomous qualified AI or a changed scope only when the alternatives matter. Include preparation, participants' consultation, representation, inquiry, allocation, execution, continuing help, checking, waiting and displaced work. Include overlaps: do not allocate the same time twice to contributions that require the mentor's separate attention. Qualify any combined or concurrent performance under the performer's actual capacity and the required guarantees.
 
@@ -65,7 +65,7 @@ If the help changes a person's work, examine a representative task together with
 
 Account for displaced work. Reserving four hours for practice in a forty-hour week requires a feasible thirty-six-hour delivery allocation, another contributor, an accepted later result or some other actual adjustment. Obtain the affected receiver's contribution to that adjustment; a mentor's advice does not revise another team's promise.
 
-Use OCE.4 to design necessary organizational contribution relations, OCE.6 to establish actual assignments and enabling conditions, and OCE.5 only if a continuing position is needed. A one-off contribution does not require a new office. In a voluntary association, use the participant's own agreement and the association's actual decision rules. A participant needing employer time or permission to share material obtains it from the relevant provider.
+Use OCE.4 to design necessary organizational contribution relations, OCE.6 to establish actual assignments and enabling conditions, and OCE.5 only if a continuing position is needed. In a voluntary association, use the participant's own agreement and the association's actual decision rules. A participant needing employer time or permission to share material obtains it from the relevant provider.
 
 Agree the purpose of the conversation, what can be disclosed, who may use observations and how concerns can be raised. Keep a learning conversation distinct from an employment, clinical or disciplinary determination. The relevant professional or institutional procedure governs those determinations. Permission to facilitate does not confer access to protected material or authority to decide its subject.
 
@@ -85,7 +85,7 @@ A short conversation may settle an objection or a contribution conflict. Use a f
 
 ##### LDR.1:4.4.1 - Relate a person's aims to the role they can undertake
 
-When accepting, sustaining or changing a role is the missing contribution, keep the result expected of the role separate from the person's own purpose. Ask what the person wants to achieve or protect through participation and what they understand the assignment to require. They may value mastery, income, belonging, a useful public contribution or a bounded amount of work. These examples do not constitute a psychological classification. Use the answer the person actually gives and keep private matters outside the work unless they choose to make them relevant.
+When accepting, sustaining or changing a role is the missing contribution, keep the result expected of the role separate from the person's own purpose. Ask what the person wants to achieve or protect through participation and what they understand the assignment to require. They may value mastery, income, belonging, a useful public contribution or a bounded amount of work. Use the answer the person actually gives and keep private matters outside the work unless they choose to make them relevant.
 
 Compare the two accounts through a real next episode. What would the role require the person to do, what discretion would they have, what would others rely on, and what would happen to their other commitments? A mismatch can justify a clearer explanation, changed scope, different allocation, practical support, a development opportunity or another performer. Generate the alternative that changes the mismatch. If the expected work is necessary and the person legitimately declines it, obtain another contribution or revise the promise. If an effective assignment governs the work, use its actual decision and challenge route rather than disguising that obligation as personal enthusiasm.
 
@@ -93,7 +93,7 @@ Turn the supported choice into a contribution the person can explain and attempt
 
 A goal conversation can use a familiar local practice, including suitable OKRs, without adopting a universal target regime. Make clear which result others may rely on, which attempt is exploratory, how the goal will be revisited and how observations may affect the person. The [Google re:Work account](https://rework.withgoogle.com/intl/en/guides/set-goals-with-okrs) is a historical company practice: it combines organizational, team and individual goals, makes progress visible and distinguishes OKRs from employee evaluation. It does not support the proposition that every goal must be individual, unattainable or detached from joint priorities.
 
-Obtain the decisions that make the agreed opportunity real. Review it at an interval where the next observation can still change the work; a calendar ritual without a receiving choice adds little. Use observed performance and the actual assignment to adjust the person's responsibility and support. If the person's purpose, receiving work or available conditions change, reconsider the affected arrangement. Keeping a willing person in an obsolete role is not successful continuation.
+Obtain the decisions that make the agreed opportunity real. Review it at an interval where the next observation can still change the work; a calendar ritual without a receiving choice adds little. Use observed performance and the actual assignment to adjust the person's responsibility and support. If the person's purpose, receiving work or available conditions change, reconsider the affected arrangement.
 
 #### LDR.1:4.5 - Obtain human development when that additional result is worthwhile
 
@@ -109,7 +109,7 @@ Human development may be unnecessary when a qualified colleague, external servic
 
 #### LDR.1:4.6 - Continue with the stated help, and change the arrangement when needed
 
-Arrange the next contribution: when it is needed, who can supply it, what assistance remains and where an issue beyond that performer's competence or authority goes. Retain a useful example or explanation where the next participant can find it. Use the existing work product or communication channel; a new record has value only if somebody needs it.
+Arrange the next contribution: when it is needed, who can supply it, what assistance remains and where an issue beyond that performer's competence or authority goes. Keep a useful example or explanation in a work product or communication channel the next participant can reach. Create a new record only if that participant or another user needs it.
 
 If continuation without the initiator matters, observe a later comparable episode with another capable participant. State the retained help. A performance in which the initiator supplies the decisive question does not establish independence in asking that question. It can still be a useful assisted result. Rotate responsibilities only among willing, capable and properly supported performers; rotation alone does not develop them.
 
@@ -145,13 +145,13 @@ If the learner instead needs the mentor to form the question, the discussion con
 
 #### LDR.1:5.2 - An ordinary brief around a disputed source
 
-Suppose an engineer and an electrical peer are preparing an evidence package. Their ordinary brief already identifies source revisions, the receiver's acceptance boundary and the person who can answer a missing-source question. They need no new leadership programme.
+Suppose an engineer and an electrical peer are preparing an evidence package. Their ordinary brief already identifies source revisions, the receiver's acceptance boundary and the person who can answer a missing-source question.
 
 A rehearsal exposes confusing old and current version labels. In the debrief, the peer shows how the obsolete revision could be mistaken for the current one. The tool owner receives a concrete display-repair request. A qualified coach supplies practice in challenging an unsupported claim; the line manager provides its time without breaking the current service allocation.
 
 In the next episode the peer raises the missing-source question without the initiating facilitator. The source owner investigates. The engineer and peer return claims that remain unsupported to their authors before completing the evidence package. This is useful continuation with the stated support. It establishes neither enduring culture nor general leadership mastery.
 
-If the only problem had been a broken access link, restoring the link would have been sufficient. The brief helps discover that distinction; it does not oblige the group to continue with coaching.
+If the only problem had been a broken access link, restoring the link would have been sufficient. The brief can show whether coaching would add anything.
 
 #### LDR.1:5.3 - An experienced engineer can perform a role but does not want its present terms
 
@@ -175,14 +175,14 @@ A conforming use of this method makes the following questions answerable at the 
 
 - Which receiving task needs help, and what contribution changes its next action?
 - If taking or changing a role is the difficulty, how do the person's purposes, actual assignment and needed work fit, and which goal is exploratory or relied on?
-- Can an existing competent arrangement already supply that result?
+- Can an existing competent arrangement supply that result?
 - Who supplies facilitation, subject expertise, authority, time allocation and learning where each is needed?
 - Do the contributions fit together in the relevant time windows, including displaced work?
 - If human development is selected, what target, qualified provider, practice and later observation justify it?
 - What was actually performed, with which help, and what continuation remains warranted?
 - If an AI changes the arrangement, which real work or guarantee remains and which old activity can be removed?
 
-These questions examine the same contribution as the Solution. They are not a requirement to create a separate report for a routine brief.
+A routine brief can answer the relevant questions in the ordinary exchange.
 
 ### LDR.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -208,7 +208,7 @@ The receiving contribution is the stable object across different titles and orga
 
 For obtaining useful leadership work, the selected line combines task-specific contributions, competent teamwork and supported development only when its additional result matters. The serious alternative is already competent ordinary coordination, including resource allocation, assistance and feedback. It is sufficient for many cases; this method adds no value merely by renaming it. LDR.1:4.1–LDR.1:4.6 add value where a missing contribution, provider condition or continuation claim would otherwise remain implicit. The case deliberately accepts extra work for another participant's bounded performance.
 
-**Adapt** the relational emphasis in CCL's [2026 leadership account](https://www.ccl.org/articles/leading-effectively-articles/what-is-leadership-a-definition/): contributions can be produced through several participants rather than inferred from one position. Its direction, alignment and commitment model is a conceptual source, not the ontology of every leadership practice or evidence that this method is effective.
+**Adapt** the relational emphasis in CCL's [2026 leadership account](https://www.ccl.org/articles/leading-effectively-articles/what-is-leadership-a-definition/): contributions can be produced through several participants rather than inferred from one position. Its concepts help identify direction, alignment and commitment in the work. This is one way to examine leadership. An effectiveness claim about the adapted method needs evidence from its use.
 
 **Adapt** AHRQ TeamSTEPPS [briefs](https://www.ahrq.gov/teamstepps-program/curriculum/team/tools/briefs.html), [huddles](https://www.ahrq.gov/teamstepps-program/curriculum/team/tools/huddle.html) and [debriefs](https://www.ahrq.gov/teamstepps-program/curriculum/team/tools/debrief.html) in LDR.1:4.4: prepare familiar joint work, update its arrangement when conditions change and examine a completed episode. Healthcare permissions and evidence do not automatically transfer to editorial or engineering work. These teamwork practices remain adequate alternatives.
 
@@ -218,7 +218,7 @@ Reopen the arrangement when the receiving work, support, capability evidence or 
 
 ### LDR.1:12 - Relations
 
-LDR.5 forms joint direction and participation when the next receiving work remains unsettled. LDR.2 supplies a feasible accepted whole when contributions conflict. B.5.SD obtains the connected answer a discussion promises. LDR.4 prepares a proposal through decision and first useful performance. None is mandatory when the ordinary contribution is already adequate.
+LDR.5 forms joint direction and participation when the next receiving work remains unsettled. LDR.2 supplies a feasible accepted whole when contributions conflict. B.5.SD obtains the connected answer a discussion promises. LDR.4 prepares a proposal through decision and first useful performance. Use an adequate ordinary contribution directly.
 
 [FPF A.3.1.QM — Qualify a Method for Its Intended Contribution](../../../sections/05-part-a---kernel-architecture-cluster/23-a-3-1-qm---qualify-a-method-for-its-intended-contribution.md) qualifies the leadership Method or candidate account for its bounded receiving use and examines independently decidable local connections. Return the actual failed contribution and conditions; obtaining a competent person does not settle the Method's suitability. OCE.15 constructs or specifies the organization-change contribution only when that is the receiving question.
 

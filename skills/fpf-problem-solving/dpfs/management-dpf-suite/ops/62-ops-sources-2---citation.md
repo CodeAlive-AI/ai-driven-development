@@ -7,4 +7,4 @@ Operations Management Principles Framework.
 GitHub repository: https://github.com/ailev/FPF
 ```
 
-The [Architectural Reference](01-operations-management-principles-framework-architectural-ref.md) explains the connected language and the consequences of these sources for its use.
+Use the [Architectural Reference](01-operations-management-principles-framework-architectural-ref.md) to find the operating question, method and professional input you need.

@@ -5,11 +5,11 @@
 
 ### OPS.13:1 - Problem frame
 
-**Use this when** someone needs a credible service promise, an existing commitment has become doubtful, or a resource change could alter what the operation can deliver. The question may concern test evidence by Friday, timely patient service, an incident response or accepted outputs from an assisted workflow.
+**Use this when** a recipient needs a credible service promise, an existing commitment has become doubtful, or a resource change could alter what the operation can deliver. The question may concern test evidence by Friday, timely patient service, an incident response or accepted outputs from an assisted workflow.
 
-Begin with the result the recipient needs and the promise being considered. Recover its scope and deadline, then test what work, resources and outside results it requires. The first useful result is a supported commitment agreed by the authorized parties, an explicit revision or refusal, or the precise missing decision that prevents agreement.
+Begin with the result the recipient needs and the promise being considered. Recover its scope and deadline, then test what work, resources and outside results it requires. The first useful result is a supported commitment agreed by the authorized parties, an explicit revision or refusal, or the specific missing input or decision that prevents a supported agreement. An existing commitment can be confirmed under the conditions already in force.
 
-This pattern concerns service commitments within continuing operations. Capacity analysis supplies one input; the promise also depends on acceptance, protected conditions, dependencies and authority. If an individual job fits an already supported service arrangement, use the ordinary admission method. A disputed engineering, clinical, staffing or safety result requires the corresponding qualified practitioner.
+This pattern concerns service commitments within continuing operations. Capacity analysis supplies one input; the promise also depends on acceptance, protected conditions, dependencies and authority. If an individual job fits an already supported service arrangement, use the ordinary admission method. For a disputed engineering, clinical, staffing or safety result, use an applicable qualified determination or refer the remaining question to the responsible provider.
 
 PumpWorks has four ready packages needing eight rig-hours and a six-hour window. Even extra rig access leaves questions about repeats, qualified cover and acceptance. A promise of test completion also has a narrower result than permission to release the controller into the field.
 
@@ -51,17 +51,17 @@ Ask what acceptance requires. A completed test attempt, a passed test with appli
 
 #### OPS.13:4.2 - Obtain the work, resource and dependency basis
 
-Map the required work far enough to identify consequential dependencies and timing. Recover the remaining work on already admitted items, upstream readiness, actual resource windows, needed skills and configurations, setup, handover, recovery and downstream acceptance. Use OPS.10 when the capacity comparison needs development.
+Use the existing work account or trace the required work far enough to identify consequential dependencies and timing. Recover the remaining work on already admitted items, upstream readiness, actual resource windows, needed skills and configurations, setup, handover, recovery and downstream acceptance. Use OPS.10 when the capacity comparison needs development.
 
-Check the resources' availability for the required time, assignment and use. A provider's offer remains conditional until its resource decision is made. A person already assigned elsewhere supplies no additional simultaneous capacity merely because their skill is suitable.
+Check the resources' availability for the required time, assignment and use. For provider resources, establish what the offer or existing agreement makes available and which further decision or condition, if any, is required. A person already assigned elsewhere supplies no additional simultaneous capacity merely because their skill is suitable.
 
-Use OPS.12 where the proposed arrangement changes human conditions. Obtain the exact professional result needed by a disputed capability, protection or release claim. A forecast can state an unresolved condition, while a commitment that depends on it needs either the result or an explicit agreement about that condition.
+Use OPS.12 where the proposed arrangement changes human conditions. Use an applicable professional result for a disputed capability, protection or release claim, or obtain the specific answer still needed. A forecast can state an unresolved condition, while a commitment that depends on it needs either the result or an explicit agreement about that condition.
 
 Keep existing evidence when it fits this demand, configuration and horizon. If a historical service forecast excludes stalled items or concerns a different work mix, inspect that limitation before relying on it. OPS.15 helps reconstruct the eligible population and observation basis.
 
 #### OPS.13:4.3 - Test the proposed promise at the required level
 
-Start with a transparent load and time-window bound. If known work already exceeds usable resources before the deadline, select another plan or resource decision before adding a sophisticated model. Where order matters, lay out a feasible sequence with the required resources available together.
+Start with a transparent load and time-window bound. If known work already exceeds usable resources before the deadline, report that bound. If the recipient needs a feasible route, compare a changed plan or resource arrangement. Where order matters, lay out a feasible sequence with the required resources available together.
 
 Compare the normal case with adverse and changed-condition cases that can alter this service decision. Include relevant repeats, absence, arrival bursts, failed inputs or delayed acceptance. State how each case consumes resources and which result it supports. Reserve time protects a named scenario only while its location, capability and availability fit that scenario.
 
@@ -71,11 +71,11 @@ Preserve customer classes or conditions whose losses matter separately. A favora
 
 #### OPS.13:4.4 - Choose and agree a supported response
 
-Select among the supported alternatives: keep the proposed promise, change its scope or time, change the resource arrangement, refuse the request or obtain a missing result. Compare consequential financial differences with OPS.14 when payment, displaced use or funding changes feasibility or preference.
+Consider the supported responses: keep the proposed promise, change its scope or time, change the resource arrangement, refuse the request or obtain a missing result. Compare consequential financial differences with OPS.14 when payment, displaced use or funding changes feasibility or preference.
 
 State the selected result in the parties' ordinary service terms. Include the conditions on which they rely, the relevant uncertainty and the observation that would require another decision. Make any requested recipient action explicit, such as timely provision of an input or acceptance by a specified date.
 
-For an existing promise, obtain an authorized acceptance or refusal of the proposed revision. Until that agreement changes, continue to report the old obligation and its current risk. Record an unresolved position as unresolved. Internal replanning alone cannot discharge the promise.
+Apply the terms already in force to any change in an existing promise. If a proposed revision requires a new decision, obtain it from the authorized parties or report where it stands. Until an applicable revision takes effect, report the existing obligation and its current risk. An internal replan alone cannot discharge it.
 
 A short confirmation in the existing service account can be sufficient. Add detail where the commitment's consequences require it, such as several recipients, contractual terms or a consequential uncertainty. Qualified legal or commercial work supplies those terms when needed.
 
@@ -83,13 +83,13 @@ A short confirmation in the existing service account can be sufficient. Add deta
 
 Choose the observations and review point from how quickly the plan can become infeasible and how long recovery takes. Confirm resource decisions before they are needed. Follow readiness, actual progress, repeats, acceptance and protected conditions where a change would affect the promise.
 
-Work backward from the last time a useful response can start. Include the delay before detecting the problem, conveying it to someone who can decide, making that decision and obtaining the remedy. Use OPS.10.2 when resource windows or other work affect the remedy's timing. For a response intended to preserve the promise, the whole detection-to-remedy sequence must fit the remaining usable window. If no such response fits, use the early information to compare another remedy or a service revision. A percentage of reserve consumed can help direct attention; it supplies neither a delay probability nor the resources needed to respond.
+Work backward from the last time a useful response can start. Include detection, communication and the time to start and complete the remedy. If a separate decision is required, include routing to its holder and the decision time. An already authorized response can start when its trigger and execution conditions hold. Use OPS.10.2 when resource windows or other work affect the remedy's timing. For a response intended to preserve the promise, the whole detection-to-remedy sequence must fit the remaining usable window. If no such response fits, use the early information to compare another remedy or a service revision. A percentage of reserve consumed can help direct attention; it supplies neither a delay probability nor the resources needed to respond.
 
 Use this response timing to choose a periodic review, an event signal or both. A report of a consequential change can require action before a dashboard threshold is crossed. Where the current account supports continuation and no shared decision is needed, a status meeting need not interrupt the work. Preserve other purposes for meeting, such as learning or resolving an actual disagreement.
 
 Compare the whole observation-and-response arrangement. For periodic review, count the reviews, the conditions that can be missed between them and the resulting latest response. For an event policy, obtain coverage, delivery and acknowledgement behavior, false or repeated notifications, reset behavior and the capacity needed to triage them. Include setup, maintenance and interruption of other work. In a recurring event service, a qualified multiwindow burn-rate policy can distinguish fast serious loss from slower deterioration; it needs a meaningful eligible-event population and service-specific parameters. A sparse discrete delivery may be better served by a direct readiness check. Retain the cheaper adequate policy, and reopen it when alert load or response availability defeats its timing.
 
-When the basis changes, calculate the affected service consequence and contact the responsible parties while a useful choice remains. Preserve what can still be performed under existing authority. Use observed delivery and acceptance to determine which promised results were fulfilled, and retain any remaining obligation. A changed forecast records the new outlook.
+When the basis changes, calculate the affected service consequence and inform the responsible parties in time for any remaining choice. If that window has closed, report the consequence and identify any remedy still available. Preserve what can still be performed under existing authority. Use observed delivery and acceptance to determine which promised results were fulfilled, and retain any remaining obligation. A changed forecast records the new outlook.
 
 ### OPS.13:5 - Archetypal Grounding
 
@@ -112,13 +112,13 @@ OPS.12's staffing comparison requires qualified relief for an extension that wou
 
 Suppose the test-service authority and customer accept the two-case basis, the three-package scope and the evidence required for a completed test package. Once the additional access, relief and other prerequisites are confirmed, they can agree the three-completion service under those stated conditions. Before confirmation, that result remains a proposal. If only the six-hour arrangement is available, the supported proposal covers two completions under the same adverse-case requirement.
 
-The calculation supplies no probability of the adverse event and no guarantee beyond its conditions. A customer requiring a quantified delivery probability needs a matching forecasting basis. An existing four-completion promise remains a live obligation until the authorized parties accept a revision.
+The calculation supplies no probability of the adverse event and no guarantee beyond its conditions. A customer requiring a quantified delivery probability needs a matching forecasting basis. An existing four-completion promise remains a live obligation until a revision takes effect under the governing terms.
 
 #### OPS.13:5.2 - A test promise and a field-release promise differ
 
 Field release of candidate R42 requires applicable T9 test evidence, the result of safety question S19 and the authorized release decision. A test-service commitment can establish when the agreed test result should be available. Its acceptance criteria concern that test service.
 
-If S19 is still unresolved or T9 evidence does not apply to the configuration proposed for release, the release practitioner lacks a result needed for the wider promise. The operating response is to state that dependency and obtain the missing decision. The test work can continue where its laboratory permission and other conditions allow it.
+If S19 is still unresolved or T9 evidence does not apply to the configuration proposed for release, the release practitioner lacks a result needed for the wider promise. The operating response is to state the dependency and seek the particular evidence, safety result or decision still needed. The test work can continue where its laboratory permission and other conditions allow it.
 
 If an earlier commitment promised field release, agreeing a narrower test service does not close it. The recipient needs an explicit revision, refusal or unresolved release position from the parties authorized to make that decision.
 
@@ -144,25 +144,25 @@ An accepted report is due at hour fourteen. Once its validated input is availabl
 
 At hour seven, an input failure occurs. A supplied recovery method needs two hours after authorization; its qualified performer and resources are available immediately. Authorization must occur by eight if recovery is to supply the input by ten. The next routine review at nine is too late: even immediate authorization then gives input at eleven, leaving analysis until fourteen and requiring release from fourteen to fifteen, outside its available window.
 
-Instead, suppose detection takes at most fifteen minutes and conveying the result and deciding together take another fifteen. Recovery can start by 7.5, finish by 9.5, and be followed by analysis until 12.5 and release until 13.5. The response preserves half an hour before the deadline under these stated bounds. The signal needs to reach the person who can authorize recovery.
+Instead, suppose detection takes at most fifteen minutes and conveying the result and deciding together take another fifteen. Recovery can start by 7.5, finish by 9.5, and be followed by analysis until 12.5 and release until 13.5. The response preserves half an hour before the deadline under these stated bounds. The signal needs to reach whoever can authorize recovery.
 
 Now change one fact: the recovery resource cannot start before ten. Recovery could supply input at twelve, but the three-hour analysis would already overrun its availability until fourteen; release would require a further hour. Sixteen is only the arithmetic end if those windows were extended, not a supported delivery time. Faster notification alone cannot restore the promise. Obtain a different workable remedy or an agreed service revision. The earlier calculation remains valid only with its earlier availability premise.
 
-These times illustrate a constructed operating choice.
+
 
 #### OPS.13:5.6 - Compare the cost of obtaining a usable warning
 
 Keep :5.5's report, hour-14 deadline, two-hour recovery and four hours after input recovery. Consider ten daily repetitions with the same qualified resource windows. In this bounded planning comparison, an input failure is persistent until repaired and can arise only between 7 and 7.5. One readiness inspection completed at 7.5 finds it; communication and authorization then take at most fifteen minutes. Recovery starts by 7.75 and the report finishes by 13.75. This periodic policy is sufficient for these supplied conditions; detecting every failure as quickly as an event mechanism could is unnecessary for this promise.
 
-Each inspection costs three staff-minutes, or thirty over ten days. A capable alternative uses the service's existing event mechanism, checked to cover these failures and deliver an actionable warning within five minutes, with acknowledgement and escalation. Its adaptation takes 120 staff-minutes once, with qualified preparation time available before the ten-day service window; health/coverage checks take two per day. The supplied comparison trace also contains three nonactionable or repeated notifications per day after the policy's normal grouping/reset handling, at four minutes each to triage. In that trace, the notifications are separated and the true-incident decision maker remains available. Its additional observation burden is therefore 120 + 10 × (2 + 12) = 260 minutes. The same true-incident decision and recovery work is required under both policies and is counted in their resource plans, not treated as a saving. Retain periodic inspection for this sparse service. These counts are constructed inputs.
+Each inspection costs three staff-minutes, or thirty over ten days. A capable alternative uses the service's existing event mechanism, checked to cover these failures and deliver an actionable warning within five minutes, with acknowledgement and escalation. Its adaptation takes 120 staff-minutes once, with qualified preparation time available before the ten-day service window; health/coverage checks take two per day. The supplied comparison trace also contains three nonactionable or repeated notifications per day after the policy's normal grouping/reset handling, at four minutes each to triage. In that trace, the notifications are separated and the true-incident decision maker remains available. Its additional observation burden is therefore 120 + 10 × (2 + 12) = 260 minutes. The same true-incident decision and recovery work is required under both policies and is counted in their resource plans, not treated as a saving. Retain periodic inspection for this sparse service.
 
-Now the same service undertakes twelve independently checked reports per day with staggered windows. Qualified analysis, recovery and release resources have been supplied for that population; this assumption cannot be inferred from having more alerts. Manual inspection still needs three minutes per report: 36 per day. A qualified shared event arrangement retains the five-minute delivery bound, combined two-minute daily health check and the stated twelve-minute triage burden across that population. Over ten days, 360 observation minutes compare with 260, including the event policy's setup. With only thirty daily minutes available for these observation tasks, the shared event policy is the usable candidate; staffing and protected response work must remain feasible as well. A burn-rate policy is a serious further option only if the promised service and its eligible-event volume support a loss-rate objective. A failed discrete report must not disappear in a favorable aggregate.
+Now the same service undertakes twelve independently checked reports per day with staggered windows. Qualified analysis, recovery and release resources have been supplied for that population; verify that supply before relying on the increased volume. Manual inspection still needs three minutes per report: 36 per day. A qualified shared event arrangement retains the five-minute delivery bound, combined two-minute daily health check and the stated twelve-minute triage burden across that population. Over ten days, 360 observation minutes compare with 260, including the event policy's setup. With only thirty daily minutes available for these observation tasks, the shared event policy is the usable candidate; staffing and protected response work must remain feasible as well. A burn-rate policy is a serious further option only if the promised service and its eligible-event volume support a loss-rate objective. A failed discrete report must not disappear in a favorable aggregate.
 
-Test the changed condition that defeats this choice. Three spurious alerts queued ahead of a true one can consume twelve minutes; five-minute delivery plus twelve-minute triage wait plus fifteen-minute communication/decision gives 32 minutes. A failure at 7.5 would then be authorized after 8, too late for the original remedy. The operating owner needs an effective priority/triage arrangement, additional cover, an earlier direct check or another service decision. Verify the actual response queue and affected report, retain unrelated reports whose basis still holds, and use the existing promise-revision authority if no workable response remains.
+Test the changed condition that defeats this choice. Three spurious alerts queued ahead of a true one can consume twelve minutes; five-minute delivery plus twelve-minute triage wait plus fifteen-minute communication/decision gives 32 minutes. For a failure at 7.5, a 32-minute response reaches authorization at hour 8 plus two minutes, too late for the original remedy. A response taking 3 + 12 + 10 = 25 minutes meets the cutoff. The queued policy therefore loses the guarantee. The operating owner needs an effective priority/triage arrangement, additional cover, an earlier direct check or another service decision. Verify the actual response queue and affected report, retain unrelated reports whose basis still holds, and use the existing promise-revision authority if no workable response remains.
 
 ### OPS.13:6 - Bias-Annotation
 
-Urgency and commercial pressure can make a desired date feel like an established promise. Read back the result and conditions to the actual parties, and distinguish an offer from their agreement.
+Urgency and commercial pressure can make a desired date feel like an established promise. Check what the parties have agreed, using the agreement already in force or confirming the result and conditions with them when needed.
 
 Resource counts also favor what is easy to see: rooms, machines or generated drafts. Follow the binding skill, acceptance and time conditions before describing the service as feasible. Preserve the interests of recipients whose existing work would be displaced.
 
@@ -175,7 +175,7 @@ Resource counts also favor what is easy to see: rooms, machines or generated dra
 | Capacity is usable for this service. | Resources, capability, windows, sequence, dependencies and protected conditions support the plan. |
 | Uncertainty matches the claim. | Scenario conclusions stay within their cases; probability claims have an appropriate forecasting basis. |
 | The result is an actual decision or a clear gap. | Acceptance, refusal, requested revision or unresolved input is distinguished from the internal plan. |
-| Change can be handled in time. | Observations and response points preserve a useful choice before the promise fails. |
+| Change can be handled in time. | The observation and response times support the proposed remedy, or the result identifies a missed window and the remaining choices. |
 
 ### OPS.13:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -184,7 +184,7 @@ Resource counts also favor what is easy to see: rooms, machines or generated dra
 | Turn a historical service forecast into a promise without agreement. | Recover the recipient, conditions and commitment authority, then test the receiving use. |
 | Add nominal hours while the required skill is unavailable. | Use the time in which all required resources and conditions obtain together. |
 | Count reserve twice, as both normal work capacity and protection against repeats. | Show the sequence and load for the actual normal and adverse cases. |
-| Treat a planning update as release from an existing promise. | Obtain the authorized parties' decision and retain any unresolved obligation. |
+| Treat a planning update as release from an existing promise. | Apply the terms of revision, use or obtain any required decision, and retain outstanding obligations. |
 | Count a narrower result as the promised outcome. | Keep test, customer acceptance, review decision and field release distinct wherever the service depends on them. |
 
 ### OPS.13:9 - Consequences
@@ -201,7 +201,7 @@ Starting with a simple bound prevents needless forecasting when the plan is alre
 
 ### OPS.13:11 - SoTA-Echoing
 
-The practice question is how to make service commitments under uncertain demand and constrained resources. The selected best-known line combines explicit work and time boundaries, a forecast appropriate to the claim, and a service decision by the responsible parties. Compared with a plan based on average utilization or an unqualified target, it exposes the answer-changing deficits shown by PumpWorks and the hospital case.
+The practice question is how to make service commitments under uncertain demand and constrained resources. A workable comparison combines explicit work and time boundaries, a forecast appropriate to the claim, and a service decision by the responsible parties. Compared with a plan based on average utilization or an unqualified target, it exposes the answer-changing deficits shown by PumpWorks and the hospital case.
 
 [The Kanban Guide 2025.5](https://kanbanguides.org/the-kanban-guide/2025.5/) describes a service-level expectation through elapsed time and probability, informed by the relevant cycle-time history. Section 4.3 adopts that explicit forecast shape when a probabilistic claim is needed. It also asks whether the observed population and operating conditions fit the new promise. The guide's workflow forecast does not itself provide resource authority or customer agreement.
 
@@ -209,7 +209,7 @@ The [SRE Workbook's service-objective guidance](https://sre.google/workbook/impl
 
 Steve Tendon, *The Book of TameFlow* (2022), printed pp. 215-220 and 259-269, connects reserve consumption, progress and management attention. Adopt its use of changing conditions to focus intervention, including information that arrives before a formal alarm. Section 4.5 adds the time and resource construction that tests whether a response can preserve the promise and exposes the need for another remedy or a revised agreement. The book's heuristic conversion from a duration fraction to a delivery probability (p. 212), and its use of mean flow time as the 50th-percentile cutoff (p. 220), do not establish those probabilities. A probabilistic promise needs the applicable distribution; an alarm needs a workable response. Retain periodic meetings where they perform another needed function. Reconsider the observation policy when detection, authority, remedy duration or resource availability changes.
 
-The [SRE Workbook's alerting comparison](https://sre.google/workbook/alerting-on-slos/), chapter 5, supplies a capable alternative: choose for detection, precision, recall and reset behavior, using several windows/burn rates when the service signal supports them. It also exposes low-traffic and response-time limits. Sections 4.5 and 5.6 adapt that whole-choice reasoning to a discrete promise and price notifications and response capacity. They retain cheaper periodic inspection when it is adequate.
+The [SRE Workbook's alerting comparison](https://sre.google/workbook/alerting-on-slos/), chapter 5, supplies a capable alternative: choose for detection, precision, recall and reset behavior, using several windows/burn rates when the service signal supports them. It also exposes low-traffic and response-time limits. Sections 4.5 and 5.6 adapt that whole-choice reasoning to a discrete promise and count the work of handling notifications and the capacity available for response. They retain cheaper periodic inspection when it is adequate.
 
 For a small known job set, a feasible sequence and explicit adverse case can answer the commitment question at lower effort than a stochastic model. PumpWorks uses that branch. A changed demand distribution, recurring service-level claim or consequential tail risk can justify the stronger forecasting work. Reopen the basis when work mix, windows, resources, acceptance or the promised result changes.
 

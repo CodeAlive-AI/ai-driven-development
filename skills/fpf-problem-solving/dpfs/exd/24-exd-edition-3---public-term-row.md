@@ -1,6 +1,6 @@
 ## EXD.Edition:3 - Public term row
 
-The [FPF F.17](../../sections/12-part-f---the-unification-suite-concept-sets-sensecells-and-system-role/22-f-17---make-a-settled-naming-decision-recoverable-for-reuse.md) public row below makes the single local naming settlement available for reuse. Public citation of the framework and its prefix needs this one stable designation; the six ordinary action titles do not require six additional term families. The row's claim content consists of the identity, sense, basis, use and currentness claims stated here; the row and the naming settlement are distinct epistemes about the same governed framework.
+The [FPF F.17](../../sections/12-part-f---the-unification-suite-concept-sets-sensecells-and-system-role/22-f-17---make-a-settled-naming-decision-recoverable-for-reuse.md) public row gives the designation and prefix needed to cite the framework. Its six method titles retain their ordinary action names. The row states identity, sense, basis, use and currentness claims. The row and the naming settlement are distinct epistemes about the same framework.
 
 | Row field | Value |
 | --- | --- |
@@ -12,7 +12,7 @@ The [FPF F.17](../../sections/12-part-f---the-unification-suite-concept-sets-sen
 | NameCardRef | EXD-NAME-01 in Naming settlement, this edition. |
 | SenseCellRefs | EXD-SENSE-01: the local scheme above, the expression “Explanation Design”, and the local sense “this Domain Principle Framework for constructing and adapting explanations for recipient use, including performed interaction”. |
 | LocalSenseBasisRelation | EXD-SENSE-BASIS-01 relates this edition's account in the Architectural Reference, six Methods and Use profiles to EXD-SENSE-01: that account specifies the named practice, repertoire and boundary. This edition is the basis episteme; its section titles locate the supporting content. |
-| RowRationale | Stable public citation is useful; the selected name includes preparation and interaction through its explicit scope. |
+| RowRationale | The designation supports stable public citation. Its stated scope includes preparation and performed interaction. |
 | AdmissibleUse | Refer to this framework and its EXD pattern addresses at this edition and stated scope. |
 | RowEditionId | EXD-TERM-01@2026-09-09, an edition designator. |
-| CurrentnessCondition | The named value and local sense remain applicable to the receiving citation. Reconsider an affected use if the practice, repertoire identity or collision changes; preserve the distinction between naming, publication availability and substantive adequacy. |
+| CurrentnessCondition | Use the designation while the value and local sense still match the citation. Reconsider an affected use if the practice or repertoire changes or a naming collision prevents identification. Availability of the publication and adequacy of its methods have separate grounds. |

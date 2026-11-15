@@ -2,8 +2,8 @@
 
 This publication contains the 54 `SYSE.*` pattern bodies indexed across eight reading Parts,
 the Readme, this Architectural Reference, two navigation walkthroughs, four worked cross-pattern applications, and the
-Sources and Edition Notes with their professional source coverage. Boundary and refresh explanations belong to this
-Architectural Reference. The bodies remain the authority for working moves; the Readme, Architectural Reference, ToC,
+Sources and Edition Notes with their professional sources. Section 12 gives the framework’s scope. The revision conditions follow below.
+The bodies remain the authority for working moves; the Readme, Architectural Reference, ToC,
 and applications help readers find and combine them.
 For an engineer using this language, a changed premise can affect reliance in several ways:
 
@@ -30,4 +30,4 @@ for framework construction and publication, and
 The author refreshes the affected content and its dependent uses. The framework architecture is reopened only when evidence changes the
 promised field, selected problem families, pattern split, material result relations, publication form, or maintenance boundary.
 
-For source qualifications, citation and edition information, see the [Sources and Edition Notes](_index.md#systems-engineering-principles-framework-sources-and-edition-notes).
+For source qualifications, citation and edition information, see the [Sources and Edition Notes](_index.md#systems-engineering-principles-framework-sources-and-edition-notes). The [earlier deployment recovery step](https://github.com/ailev/FPF/blob/1e57ccda08ebbb9d49b7b2190bc2740b72075a13/DPFs/Engineering%20DPF%20Suite/SYSTEMS-ENGINEERING-PRINCIPLES-FRAMEWORK.md#syse4145---reconcile-partial-failure-before-repeating) and the [current SYSE.41:4.5](62-syse-41---deploy-a-verified-software-artifact-with-the-targe.md#syse4145---choose-a-safe-continuation-after-partial-failure) describe how to continue after partial failure.

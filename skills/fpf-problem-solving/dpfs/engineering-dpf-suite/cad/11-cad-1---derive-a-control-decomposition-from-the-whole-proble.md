@@ -9,7 +9,7 @@
 
 Start by writing one consequential behavior that the entire closed loop must produce, together with the available observations, actuators and execution limits. Then identify the decision that prevents a direct solution. The first useful result is a candidate split and an account of what its parts must jointly preserve.
 
-If one qualified controller already meets the task and implementation constraints, retain it. Layering needs an identified benefit; it is not a requirement for accuracy or sophistication.
+If one qualified controller meets the task and implementation constraints, retain it. Layering needs an identified benefit; it is not a requirement for accuracy or sophistication.
 
 ### CAD.1:2 - Problem
 
@@ -34,9 +34,9 @@ State the controlled quantities, objective or preference, hard constraints, oper
 
 Use a centralized mathematical formulation when it helps reveal coupling, even if that formulation is too expensive to run. It can be a finite-horizon objective with dynamics and constraints, a reach-and-avoid problem, or a reference-following requirement. It is the common comparison basis, not a promise that one optimizer must solve everything.
 
-Retain a feasible simple controller as a baseline where available. State what it cannot achieve at acceptable effort: for example obstacle look-ahead, preview-dependent economy or long-horizon allocation. If the baseline's actual limitation is unknown, test that uncertainty before adding layers.
+Retain a feasible simple controller as a baseline where available. State what it cannot achieve at acceptable effort: for example obstacle look-ahead, preview-dependent economy or long-horizon allocation. If the baseline's limitation is unknown, test that uncertainty before adding layers.
 
-When a qualified existing loop has adequate tracking and disturbance rejection but requested commands violate constraints, compare adding a reference or command governor before redesigning that loop. Use the joint plant-controller model, admissible initial conditions and qualified command-update rule described in [CAD.Reference:4.5.1](04-cad-reference-4---the-layered-planning-and-feedback-branch.md#cadreference451---keep-a-qualified-loop-and-govern-its-commands). Check whether the resulting command delay or distortion still meets the task. If it does, retain that candidate; if it does not, identify the unmet requirement that a different interface, planner or controller must address.
+When a qualified existing loop has adequate tracking and disturbance rejection but requested commands violate constraints, compare adding a reference or command governor before redesigning that loop. Use the joint plant-controller model, admissible initial conditions and qualified command-update rule described in [CAD.Reference:4.5.1](04-cad-reference-4---the-layered-planning-and-feedback-branch.md#cadreference451---keep-a-qualified-loop-and-govern-its-commands). Check whether the resulting command delay or distortion meets the task. If it does, retain that candidate; if it does not, identify the unmet requirement that a different interface, planner or controller must address.
 
 #### CAD.1:4.2 - Separate decisions because their information and effects differ
 
@@ -50,7 +50,7 @@ Generate materially different candidates. Compare a single loop, a planning-and-
 
 A useful way to derive a candidate is to introduce separate variables for decisions that were coupled in the whole problem. Initially constrain them to agree. For example, let a planner choose a nominal trajectory z while the plant state is x; keep the relation that says what plant behavior z represents. Only then relax that relation to obtain separately solvable subproblems.
 
-For each relaxation, recover its price. Replacing equality by tracking allows an error; removing full dynamics requires a realizability condition; replacing continuous interaction by periodic exchange introduces stale information and intersample evolution. Removing future disturbance information requires a prediction or uncertainty treatment. These are concrete missing relations, not a generic “integration risk”.
+For each relaxation, recover its price. Replacing equality by tracking allows an error; removing full dynamics requires a realizability condition; replacing continuous interaction by periodic exchange introduces stale information and intersample evolution. Removing future disturbance information requires a prediction or uncertainty treatment.
 
 Use MMP.9 when reduction is involved: derive the retained evolution and identify terms depending on omitted state, past inputs or unresolved quantities. A term does not disappear because the upper model has fewer states. Decide whether it is retained through memory, bounded as mismatch, supplied by a lower closed loop, or left as an unresolved limitation.
 
@@ -60,7 +60,7 @@ The first candidate is complete enough to continue when every removed interactio
 
 Do not optimize the slow part as if the faster part were free. Eliminate or approximate the fast response inside the slow objective when the model permits it.
 
-For example, suppose a particular linear design starts at x = 0 and keeps x at zero by choosing a fast action f after observing w, while a slow action s remains fixed for a block. If the fast input matrix is invertible, the required correction is
+For example, suppose a linear design starts at x = 0 and keeps x at zero by choosing a fast action f after observing w, while a slow action s remains fixed for a block. If the fast input matrix is invertible, the required correction is
 
 $$
 f=-B_f^{-1}(B_s s+w).
@@ -69,10 +69,10 @@ $$
 Substitution gives a slow objective containing both the cost of s and the anticipated cost of these corrections. With a block of k forecast values, a possible norm-cost objective is
 
 $$
-k\|s\|_s+\sum_{i=1}^{k}\|B_f^{-1}(B_s s+\widehat w_i)\|_f.
+k\lVert s\rVert_s+\sum_{i=1}^{k}\lVert B_f^{-1}(B_s s+\widehat w_i)\rVert_f.
 $$
 
-This is a derivation under a particular model, not a general recipe for plants with saturation or delay. When fast actions are limited, retain their feasibility condition as well as their cost. When an exact elimination is unavailable, use a qualified response model, a bound or joint optimization; label the remaining approximation and compare the actual combined result.
+The derivation uses the linear model above. Saturation or delay can prevent the assumed fast correction. When fast actions are limited, retain their feasibility condition as well as their cost. When an exact elimination is unavailable, use a qualified response model, a bound or joint optimization; label the remaining approximation and compare the actual combined result.
 
 #### CAD.1:4.5 - Preserve the whole question through the next design move
 
@@ -86,7 +86,7 @@ A constructed actuator model is $x_{k+1}=x_k+u_k$, with $|x|\leq1$ and $|u|\leq0
 
 One candidate sends a new held value every four ticks. Another sends a timed segment whose intermediate values the fast task can generate. They differ in the interaction removed by planning: the first assumes a jump can be tracked within the input limit; the second assumes a known continuous segment and a reliable clock. CAD.2 derives those consequences. Neither candidate has yet earned a safety claim.
 
-As a non-use case, suppose the only task is stabilization around one fixed equilibrium and the existing fast law meets every limit. A slow planner adds no demonstrated decision benefit; keep the simpler controller.
+Suppose the only task is stabilization around one fixed equilibrium and the existing fast law meets every limit. A slow planner adds no demonstrated decision benefit; keep the simpler controller.
 
 ### CAD.1:6 - Bias-Annotation
 
@@ -106,17 +106,17 @@ Organizational hierarchies and biological analogies make layered pictures persua
 
 ### CAD.1:9 - Consequences
 
-The result is a smaller set of explainable architecture candidates. Some apparently attractive splits will be rejected before controller tuning. The cost is retaining the original problem long enough to compare whole behavior instead of judging each box independently.
+The result is a smaller set of explainable architecture candidates. The whole-problem comparison can rule out a split before tuning even when its individual controllers look promising. The cost is retaining the original problem long enough to compare whole behavior instead of judging each box independently.
 
 ### CAD.1:10 - Architectural Rationale
 
-The method starts from coupled behavior because a decomposition is a change to that coupling. Introducing agreement before relaxing it makes the lost condition recoverable. This gives later error and feasibility work a specific obligation rather than an open-ended request to integrate components.
+The method starts from coupled behavior because a decomposition is a change to that coupling. Introducing agreement before relaxing it makes the lost condition recoverable. The subsequent error and feasibility calculations must account for the condition lost in the split.
 
 ### CAD.1:11 - SoTA-Echoing
 
-**When should the decisions be separated?** The selected line derives the split from the whole problem and keeps a qualified existing loop, with a governor if needed, and a single constrained controller as serious alternatives in :4.1–4.3. Separation earns its additional interface and assurance work when differences in information, prediction horizon or execution resources prevent those simpler arrangements from meeting the same demand. If a single MPC formulation can retain the relevant coupling and meet the deadline, decomposition still has to offer a gain that outweighs maintaining its interfaces.
+**When should the decisions be separated?** Sections :4.1–4.3 derive the split from the whole problem. The alternatives include retaining a qualified loop, adding a governor if needed, or using a single constrained controller. Separation earns its additional interface and assurance work when differences in information, prediction horizon or execution resources prevent those simpler arrangements from meeting the same demand. If a single MPC formulation can retain the relevant coupling and meet the deadline, decomposition still has to offer a gain that outweighs maintaining its interfaces.
 
-The method adopts the problem-decomposition and coupling-relaxation move in [Matni, Ames and Doyle, §2.2](https://arxiv.org/html/2401.15185), while treating its particular layer arrangement as a choice. It adapts [Goel, Chen and Wierman's construction, §§II–IV](https://arxiv.org/html/1704.07785v2) in :4.4 to include fast consequences in the slow decision. That fixed two-rate, prediction-dependent cost result does not select a layer count or cover actuator limits. The corresponding price is explicit here: a split that saves computation still owes an error and feasibility construction.
+The method adopts the problem-decomposition and coupling-relaxation move in [Matni, Ames and Doyle, §2.2](https://arxiv.org/html/2401.15185), while treating its layer arrangement as a choice. It adapts [Goel, Chen and Wierman's construction, §§II–IV](https://arxiv.org/html/1704.07785v2) in :4.4 to include fast consequences in the slow decision. That fixed two-rate, prediction-dependent cost result does not select a layer count or cover actuator limits. A split that saves computation requires a derivation of its error behavior and feasibility.
 
 A contemporary alternative is to keep the stabilized dynamics fixed and combine online optimization of references with a governor. [Nonhoff, Al Torshan and Müller, 2026 preprint, §§II–IV](https://arxiv.org/html/2601.23160v1) construct this combination for disturbed linear systems under strong convexity of the steady-state costs, compact convex constraints and their bounded-disturbance and initialization assumptions. Their performance statement concerns regret against varying optimal steady states; it is not a solution for arbitrary trajectory or mission objectives. Retain that alternative when changing costs, rather than preview-dependent motion, create the upper decision. The governor comparison in [CAD.Reference:4.5.1](04-cad-reference-4---the-layered-planning-and-feedback-branch.md#cadreference451---keep-a-qualified-loop-and-govern-its-commands) explains when the existing loop can remain.
 

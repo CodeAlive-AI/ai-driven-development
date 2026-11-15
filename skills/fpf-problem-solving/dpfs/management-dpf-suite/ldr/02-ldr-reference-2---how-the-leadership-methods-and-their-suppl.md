@@ -1,6 +1,6 @@
 ## LDR.Reference:2 - How the leadership methods and their suppliers connect
 
-The methods address different breaks in the relationship between people, purposes and joint work. Their ordering follows what is already available, rather than a fixed leadership lifecycle.
+The methods address different breaks in the relationship between participants, purposes and joint work. Begin with the result that is still missing.
 
 | What the situation leaves unresolved | Useful leadership result | Where the way is explained |
 | --- | --- | --- |
@@ -15,4 +15,4 @@ For example, a designer and service staff can begin from unlike accounts of recu
 
 The same evidence can select a different continuation. New findings can defeat the problem interpretation, returning to LDR.5 and the domain inquiry. A sound shared direction with a withdrawn support offer returns to LDR.2. An effective decision followed by an inaccessible tool needs that access restored. Repeating the direction-setting conversation in the latter cases would add no missing contribution.
 
-These connections make a repertoire usable; they do not make all joint work one leadership Method. A proposal, agreement, plan, instruction, performed contribution and capability claim remain different things. One performer may supply several methods, while one method can require several performers and working products. FPF C.32.MWA provides the fuller account when that distinction changes the arrangement.
+The connected methods can be used separately. A proposal, agreement, plan, instruction, performed contribution and capability claim remain different things. One performer may supply several methods, while one method can require several performers and working products. FPF C.32.MWA provides the fuller account when that distinction changes the arrangement.

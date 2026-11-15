@@ -21,7 +21,7 @@ An organiser may speak confidently for a community without knowing whether its m
 
 Even a properly authorised message can fail because it asks only for recognition, gives the recipient no feasible action or reaches someone who cannot decide. A meeting may then be reported as influence although the receiving decision and working conditions remain unchanged.
 
-The task is to build a contribution that both the represented participants and the decision-maker can use, carry it under a valid mandate, and return its actual effect and remaining work.
+Build a contribution that the represented participants and the decision-maker can use, and carry it under a valid mandate. Tell those represented what response you obtained, what effect you can establish and any work still needed. If you could not reach the decision-maker in time, report that limit.
 
 ### CB.16:3 - Forces
 
@@ -32,15 +32,15 @@ The task is to build a contribution that both the represented participants and t
 | Timing | A decision window can be short while affected people need a usable opportunity to contribute. |
 | Feasibility | An ambitious request may matter but require contributions that the community cannot provide or promise. |
 | Negotiation | A representative needs enough discretion to respond while preserving the limits members accepted. |
-| Influence | A received or accepted proposal still needs effective decisions and later observation of the practical result. |
+| Influence | Receipt shows that the proposal reached its recipient. To claim a change in practice, establish the effective decision and what happened in its use. |
 
 ### CB.16:4 - Solution
 
-Locate the decision that can change the practice, develop the useful contribution with the people concerned, obtain the mandate to carry it and engage the actual recipient. Return the response and its consequences to the represented participants before treating the contribution as complete.
+Identify the decision that can change the practice. Develop a useful contribution with those affected, obtain the mandate to carry it and take it to the recipient who can act on it. Return the response and its consequences to those represented, or explain what prevented the contribution from reaching the decision in time.
 
 #### CB.16:4.1 - Locate the receiving decision and the practical gain
 
-Recover the proposed change or recurring exclusion from an actual source: a decision proposal, current arrangement, invitation or account of the work. Identify who can decide, what is still open, the constraints and the time by which a contribution can matter. Confirm uncertainty with the recipient when access permits.
+Recover the proposed change or recurring exclusion from a source such as a decision proposal, current arrangement, invitation or account of the work. Identify who can decide, what is still open, the constraints and the time by which a contribution can matter. Where access permits, ask the recipient to clarify any uncertainty about the decision.
 
 Ask practitioners what difference they need. Describe the receiving task or result and how the current arrangement helps or defeats it. “Include the technical writer before the interface is fixed so that operating instructions can influence its design” gives a recipient more to assess than “recognise the importance of writers”.
 
@@ -64,7 +64,7 @@ Agree what may be quoted, summarised or disclosed. A confidential case can infor
 
 #### CB.16:4.3 - Develop a position the recipient can act on
 
-Construct the contribution around the actual decision. Explain the current difficulty, the proposed change, why it helps the receiving work, the evidence and limits, and the support needed to make it feasible. State what response is requested: a decision, a change to a proposal, a trial, information or a further conversation.
+Construct the contribution around the decision the recipient faces. Explain the current difficulty, the proposed change, why it helps the receiving work, the evidence and limits, and the support needed to make it feasible. State what response is requested: a decision, a change to a proposal, a trial, information or a further conversation.
 
 Compare materially different options when the choice remains open. Include the useful part of the current arrangement and the loss each change introduces. A narrower feasible request may obtain a needed contribution sooner; a broader request may be necessary if the narrow one leaves the real problem intact. Explain the choice to the represented participants.
 
@@ -94,11 +94,11 @@ If the first contact cannot decide, ask for the appropriate receiving route. Whe
 
 Use the exchange to test understanding. Ask the recipient to identify the question they can decide and any missing condition. Recover objections from the work: an unavailable resource, another affected interest, an unsupported claim or a different decision boundary may each require a different response.
 
-Work within the authorised discretion. A representative can clarify the case or compare an allowed option. A materially different commitment or claim returns to the people who can approve it. State the pending condition to the recipient so that a provisional discussion is not mistaken for an agreement.
+Work within the authorised discretion. A representative can clarify the case or compare an allowed option. A materially different commitment or claim goes back to those with authority to approve it. State the pending condition to the recipient so that a provisional discussion is not mistaken for an agreement.
 
 Keep disagreement intelligible. The recipient may decline the request for a reason members contest. Return that reason and the remaining possible action; do not replace it with an unsupported account of the recipient's motives.
 
-If the recipient offers a trial or accepts a change, identify the actual decision, owner, scope and next contribution. Obtain the assignments, access and resources through their owners. An invitation to discuss, a favourable comment and an effective decision remain different results.
+If the recipient offers a trial or accepts a change, identify what was decided, who has authority over it, its scope and any contribution needed next. Obtain the assignments, access and resources through their owners. An invitation to discuss, a favourable comment and an effective decision remain different results.
 
 #### CB.16:4.6 - Return the answer and make the next action usable
 
@@ -106,9 +106,9 @@ Report the contribution and response to the represented participants. Explain wh
 
 Give dissenting or previously absent participants a usable opportunity to correct a misrepresentation. Correct a materially inaccurate account with the recipient as well as within the community. CB.13 supplies reconsideration or replacement when the representative exceeded the mandate.
 
-Return implementation work to its actual owners. Use OCE.14 for a bounded revision of an existing arrangement and OCE.6 for needed assignments and enabling conditions. CB.14 supplies a new practice contribution; HCD supplies a needed learning result. If the community has only obtained an invitation to further work, preserve that bounded gain and the unfinished result.
+Take implementation work to those responsible for it. Use OCE.14 for a bounded revision of an existing arrangement and OCE.6 for needed assignments and enabling conditions. CB.14 supplies a new practice contribution; HCD supplies a learning result when a person needs to develop a capability. If the community has only obtained an invitation to further work, preserve that bounded gain and the unfinished result.
 
-Agree an observation that can tell whether the expected practical change occurred. For example, check whether writers were actually included before the specified decision and whether their contribution was usable. CB.10 can connect those observations with the community's value question. A causal claim about the whole intervention still requires suitable evidence.
+To find out whether the expected practical change occurred, agree which observation would show it. Use an existing observation if it suffices. For example, check whether writers were included before the specified decision and whether their contribution was usable. CB.10 can connect those observations with the community's value question. A causal claim about the whole intervention still requires suitable evidence.
 
 Close the representation episode when the answer, effective commitments and remaining work are understood by their recipients. A refusal or a bounded agreement may complete this episode even though the community's wider aim remains open.
 
@@ -150,7 +150,7 @@ The smaller group explains that it needs live questions about its cases, so a re
 
 A platform invites comments from repair practitioners on a proposed information form. Several members of a loose network have useful experience, but the network has no authorised common position and many independent repairers are outside it.
 
-The willing contributors submit a joint technical account in their own names, stating the settings their examples cover and the limits of their agreement. They make the permitted account available for others to use or challenge. The response is a real contribution; it is not presented as the view of all repairers.
+The willing contributors submit a joint technical account in their own names, stating the settings their examples cover and the limits of their agreement. They make the permitted account available for others to use or challenge. The response represents the named contributors. The wider repair network has given them no mandate to speak for all repairers.
 
 A later proposal to maintain an ongoing representative relationship would require a mandate and provision through CB.13.
 
@@ -160,7 +160,7 @@ A club needs its existing room booking corrected. The authorised organiser conta
 
 ### CB.16:6 - Bias-Annotation
 
-A spokesperson may overrepresent confident contributors, people available at the consultation time or the position most convenient to a sponsor. Invitations from a prestigious recipient can also encourage overclaiming the community's mandate. Recover affected differences, show the scope of support and preserve useful dissent. Keep represented people able to challenge the speaker's account and the claims open to contrary evidence.
+A spokesperson may overrepresent confident contributors, people available at the consultation time or the position most convenient to a sponsor. Invitations from a prestigious recipient can also encourage overclaiming the community's mandate. Recover affected differences, show the scope of support and preserve useful dissent. Give those represented a way to challenge the speaker's account. Keep the claims open to contrary evidence.
 
 ### CB.16:7 - Conformance Checklist
 
@@ -170,7 +170,7 @@ For reliance on a collective contribution, establish:
 - The practical gain and proposed action are supported at the claimed scope, with a serious alternative where it changes the choice.
 - Affected positions, meaningful dissent and missing responses remain distinguishable.
 - The position is approved and the spokesperson has a valid mandate with usable discretion and return conditions.
-- Promised resources and commitments have their actual owners' decisions.
+- Those who can commit the promised work or resources have agreed to provide them.
 - The response is returned accurately, with the effective result and unfinished work.
 - Misrepresentation, new conditions and expired authority can reopen the affected contribution.
 
@@ -181,10 +181,10 @@ A recurring exclusion or an external invitation is enough to recognise the oppor
 | Failure in practice | Repair |
 | --- | --- |
 | Ask for recognition without a contribution the recipient can assess. | Explain the receiving work, proposed change, benefit, cost and needed support. |
-| Treat the most visible members as the whole constituency. | Recover affected positions and state the actual representation scope. |
+| Treat the most visible members as the whole constituency. | Recover affected positions and state whom the spokesperson is authorised to represent. |
 | Wait for unanimity while hiding the alternatives. | Use the applicable decision rule and carry meaningful disagreement explicitly. |
 | Give a speaker an unlimited mandate because they know the subject. | Separate expertise from representation and bound negotiable commitments. |
-| Promise other people's time in order to obtain approval. | Request and obtain the actual allocation before relying on the promise. |
+| Promise other people's time in order to obtain approval. | Obtain the allocation from its owner before relying on the promise. |
 | Count access to a meeting as a changed practice. | Return the specific decision and observe whether its conditions and contribution become effective. |
 | Report only the favourable response to members. | Include refusals, changed terms, unsupported conditions and needed decisions. |
 | Extend one episode's authority into permanent representation. | Obtain a current continuing mandate with returns and replacement. |
@@ -209,9 +209,9 @@ The practice question is how a community can make its expertise and shared inter
 | --- | --- | --- |
 | Etienne Wenger-Trayner, Beverly Wenger-Trayner, Phil Reid and Claude Bruderlein, *Communities of practice within and across organizations*, second edition (2023), pp.112–115 and 179. | **Adapt** stewardship of a domain and a joint response in CB.16:4.1–CB.16:4.3. Preserve disagreement while articulating the professional contribution a decision could use. | Reputation and a learning opportunity do not establish representation authority. Recovering positions and obtaining a mandate add effort to the source's joint-response form. |
 | STR.5:4 and LDR.1:4.4. | **Adopt** contribution, recipient, support and alternatives, then use a prepared working conversation to make the request actionable and handle a changed proposal. | A strategic proposal remains conditional where provision is missing; conversation does not make the recipient's decision. |
-| CB.13:4, compared with an informal spokesperson arrangement. | **Adopt** actual mandate, bounded discretion and reconsideration in CB.16:4.4 and CB.16:4.6. **Reject** inferring community authority from expertise, visibility or an invitation. | The scope must fit the real constituency. A smaller attributed contribution is available when the broader mandate cannot be obtained. |
+| CB.13:4, compared with an informal spokesperson arrangement. | **Adopt** a mandate from the represented group, bounded discretion and reconsideration in CB.16:4.4 and CB.16:4.6. **Reject** inferring community authority from expertise, visibility or an invitation. | The scope must fit the constituency that authorised the position. A smaller attributed contribution is available when the broader mandate cannot be obtained. |
 
-The Guidebook contribution is an analytical adaptation with attribution to its authors, under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/); see the [source text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf). The constructed cases and mandate connections are developed here.
+This pattern adapts work by the four Guidebook authors listed above under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/); see the [source text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf). The constructed cases and mandate connections are developed here.
 
 Reopen the selected approach when the receiving decision changes, a missing constituency invalidates the representation claim, evidence changes the useful contribution, or the burden of obtaining and maintaining the voice exceeds its practical use.
 
@@ -221,7 +221,7 @@ Reopen the selected approach when the receiving decision changes, a missing cons
 - **CB.13** supplies the common decision arrangement and representation mandate. **CB.15** connects different communities when they need a shared response.
 - [STR.5:4](../str/23-str-5---generate-strategic-directions.md#str54---solution) develops the worthwhile contribution and supporting conditions.
 - [LDR.1:4.4](../ldr/08-ldr-1---obtain-and-continue-the-leadership-contribution-need.md#ldr144---perform-the-smallest-sufficient-working-conversation) supplies preparation and the working exchange. [OCE.14 (OCE.14:4)](../oce/36-oce-14---decide-whether-and-how-to-revise-the-organization-f.md#oce144---solution) revises an existing arrangement; [OCE.6](../oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md) obtains assignments and enabling conditions.
-- **CB.10** connects observed influence and practical results; **CB.11** revisits continuing provision. **HCD** supplies any later learning contribution.
+- **CB.10** connects observed influence and practical results; **CB.11** revisits continuing provision. **HCD** can help a person develop a capability needed later.
 - **RMP** supplies a needed research result where a consequential claim remains unresolved; a representation mandate does not settle that evidence question.
 
 ### CB.16:End

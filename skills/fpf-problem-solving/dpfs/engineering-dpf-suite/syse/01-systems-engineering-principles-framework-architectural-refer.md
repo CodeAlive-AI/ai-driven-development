@@ -1,13 +1,13 @@
 # Systems Engineering Principles Framework Architectural Reference
 
-Systems Engineering changes or brings about engineered Systems through explicit reasoning about use, problem
+In Systems Engineering, practitioners change or bring about engineered Systems through explicit reasoning about use, problem
 formulations, System families, architecture, realization, configuration, evidence, evolvability, and the
 engineering arrangement itself. The phrase is not a synonym for *engineering of systems*. Software engineering,
 electrical engineering, ship engineering, building engineering, medical-device engineering, and other profiles
 concern different kinds of engineered System and retain specialist Methods, evidence, laws, tools, and sources.
-This framework provides the common Systems Engineering layer that materially changes their Work, together
-with selected service-software platform Methods and engineering of agent work and support. That selection does not replace the remaining professional
-Methods or make one application profile universal.
+This framework provides common Systems Engineering methods that materially change how practitioners do this work, together
+with selected service-software platform Methods and engineering of agent work and support. Each application field also supplies the specialist
+Methods its work requires.
 
 FPF supplies the transdisciplinary distinctions used here: holons and Systems, parts and relations, Methods and
 MethodDescriptions, Work and results, architecture as selected structures, evidence and assurance, decisions and

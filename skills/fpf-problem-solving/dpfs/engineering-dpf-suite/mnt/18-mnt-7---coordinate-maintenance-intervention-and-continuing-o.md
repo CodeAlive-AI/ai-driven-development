@@ -7,7 +7,7 @@
 
 Use this pattern when maintenance and operation need one feasible arrangement for access, service continuity and return to use. A repair estimate fits the outage, but shutdown, testing and restoration have not been counted.
 
-Relate the selected intervention's whole demands to the operation's actual service result. Return an actionable timing and operating arrangement, or the unmet condition that prevents it. A recommendation can finish before this coordination is complete. Several jobs that compete across shared resources additionally need [MNT.15](26-mnt-15---reconcile-simultaneous-maintenance-operation-and-su.md)'s whole-combination reasoning.
+Relate the selected intervention's whole demands to the service the operation must provide. Return an actionable timing and operating arrangement, or the unmet condition that prevents it. A recommendation can finish before this coordination is complete. Several jobs that compete across shared resources additionally need [MNT.15](26-mnt-15---reconcile-simultaneous-maintenance-operation-and-su.md)'s whole-combination reasoning.
 
 ### MNT.7:2 - Problem
 
@@ -21,17 +21,17 @@ A longer window permits more contingency but increases loss of service. Preparat
 
 ### MNT.7:4 - Solution
 
-Recover the operating commitment for the actual horizon: required service, permissible reduction, applicable fallback and authority over changes. Use a qualified capacity result such as [OPS.10](../../management-dpf-suite/ops/40-ops-10---qualify-operating-capacity-under-variability.md) where relevant. Do not substitute a pump's nameplate rating for the operation's service claim.
+Recover the operating commitment for the period in question: required service, permissible reduction, applicable fallback and authority over changes. Use a qualified capacity result such as [OPS.10](../../management-dpf-suite/ops/40-ops-10---qualify-operating-capacity-under-variability.md) where relevant. Do not substitute a pump's nameplate rating for the operation's service claim.
 
 Lay out the intervention's dependency and time demands. Separate preparation that can occur without the outage from work that requires shutdown, protected access or a changed operating state. Include the necessary testing and return to control. Some activities can overlap; establish that they do not compete for the same person, equipment, access or protection condition.
 
-Use an elapsed-time model appropriate to the real dependencies. Sum sequential activities; use the critical path only when the supported overlaps are real. Identify whether task estimates already include contingency before adding another allowance. Labour-hours, access-hours and elapsed service-loss time are different quantities.
+Use an elapsed-time model that respects the dependencies. Sum sequential activities. When the arrangement supports overlap, calculate elapsed time from the critical path. Identify whether task estimates already include contingency before adding another allowance. Labour-hours, access-hours and elapsed service-loss time are different quantities.
 
 Compare the resulting demand with the whole available service envelope. If it does not fit, change a real variable: another window, another supported intervention, qualified fallback, additional capable provider, permitted rate adjustment or a justified deferral. A smaller written estimate does not change the work. A rate change is useful only when its service and deterioration consequences are supported.
 
 Agree what happens when a condition changes during the window. The relevant response can be a safe hold, restoration to a supported condition, a separately permitted extension or a revised operating decision. Identify the latest decision point before loss of a viable return becomes consequential. Do not treat an allowance as permission to omit a required check when time runs short.
 
-Return the coordinated arrangement to the people who control operation and maintenance. Preserve the service assumptions, actual resource commitments, protection transitions and stopping conditions that they need to act. The result is qualified by those conditions, not a guarantee that no interruption will occur.
+Return the coordinated arrangement to those responsible for controlling operation and maintenance. Preserve the service assumptions, actual resource commitments, protection transitions and stopping conditions that they need to act. Those conditions support the feasibility of the plan. An interruption can still occur.
 
 ### MNT.7:5 - Archetypal Grounding
 
@@ -50,7 +50,7 @@ Ninety minutes of preparatory work occurs before the outage and is excluded from
 
 If an additional 20-minute demand arises beyond all included allowances, the demand becomes 245 minutes and no longer fits. The team revisits the operating or intervention arrangement. It does not consume testing or hand-back time to preserve the appearance of a four-hour plan.
 
-If the spare applicability return is absent before the planned start, the team does not begin this replacement branch. If the actual isolation cannot be established, the affected protected work does not start. Those limits preserve the earlier completed recommendation and return a different coordination question.
+If the spare applicability return is absent before the planned start, the team does not begin this replacement branch. If the isolation cannot be established, the affected protected work does not start. Those limits preserve the earlier completed recommendation and return a different coordination question.
 
 ### MNT.7:6 - Bias-Annotation
 
@@ -60,7 +60,7 @@ Repair estimates often reflect the technician's direct work and omit operator pr
 
 Does the arrangement consume a valid operating-capacity and service result? Are preparation, protected work, testing, restoration and material contingency accounted for without double counting? Are overlaps compatible with actual resources and protection? Is there a supported response when the plan no longer fits?
 
-A coordination result is complete when the responsible people can act on its bounded arrangement or know the unmet condition.
+A coordination result is complete when those responsible can act on its bounded arrangement or know the unmet condition.
 
 ### MNT.7:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -76,11 +76,11 @@ The maintenance and operating commitments refer to one feasible arrangement. Som
 
 This Method coordinates one intervention with continuing operation. The complete elapsed-time condition belongs here because pairwise task approvals cannot establish whole-window fit. [MNT.15](26-mnt-15---reconcile-simultaneous-maintenance-operation-and-su.md) extends that reasoning when several jobs and support arrangements impose simultaneous demands.
 
-Rate adjustment and more advanced scheduling remain options, not compulsory tools. A simple bound can already settle the present question.
+A simple bound may settle the question. Rate adjustment and more advanced scheduling remain options.
 
 ### MNT.7:11 - SoTA-Echoing
 
-The practice question is whether maintenance can fit the real operating commitment. This pattern adapts preparation-before-intervention and flexible timing as candidate choices from the bounded scheduling work of Gan and colleagues and Kasuya and Jin. Against repair-duration-only planning, the Method uses the complete elapsed-demand comparison and conditional operating return above. Their models do not supply these constructed times, field effectiveness or permission to change duty. The complete elapsed-time comparison is sufficient when it settles the receiving question. Use optimization or another scheduling model when its attainable improvement in the arrangement or decision warrants the effort. Reopen when demand, preparation dependency or operating capacity changes. See [preparation-aware scheduling](https://journals.sagepub.com/doi/abs/10.1177/09544054251350538) and [flexible-timing research](https://www.sciencedirect.com/science/article/abs/pii/S095183202600342X).
+The practice question is whether maintenance can fit the operating commitment. This pattern adapts preparation-before-intervention and flexible timing as candidate choices from the bounded scheduling work of Gan and colleagues and Kasuya and Jin. Against repair-duration-only planning, the Method uses the complete elapsed-demand comparison and conditional operating return above. Their models do not supply these constructed times, field effectiveness or permission to change duty. Use optimization or another scheduling model when its attainable improvement in the arrangement or decision warrants the effort. Reopen when demand, preparation dependency or operating capacity changes. See [preparation-aware scheduling](https://journals.sagepub.com/doi/abs/10.1177/09544054251350538) and [flexible-timing research](https://www.sciencedirect.com/science/article/abs/pii/S095183202600342X).
 
 ### MNT.7:12 - Relations
 

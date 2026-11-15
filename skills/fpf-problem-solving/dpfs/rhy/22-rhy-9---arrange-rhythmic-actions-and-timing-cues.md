@@ -5,15 +5,15 @@
 
 ### RHY.9:1 - Problem frame
 
-**Use this when** a passage is individually performable but its participants cannot receive or act on the timing information they need while doing their own parts. A player's hands may be occupied when a visible cue is needed. An audible attack may arrive too late to prepare a simultaneous entry. A cue may be clear in a demonstration and hidden from the position used in performance.
+**Use this when** a participant needs timing information while performing their part. A player may need both hands when a partner needs a visible cue. An attack can arrive too late to prepare a simultaneous entry, and a gesture visible in a demonstration can be hidden from the performance position. Use the method to address a difficulty, explain how a cue worked in a recorded passage or assess a proposed arrangement.
 
-Start with the passage, its performers and the next relation that fails. Arrange the production of the rhythmic contributions and the availability of the needed cues together. The first result is a usable allocation and cue arrangement for that passage, a proposal ready for a suitable trial, or an identified missing contribution.
+Identify the passage, who performs it, the action that needs a cue and when that information must be available. Establish how cueing fits alongside the other actions. Depending on the question, report what the arrangement achieved, retain a usable arrangement, propose one for trial or identify the missing contribution.
 
-Use an established adequate arrangement directly. When the problem concerns the wider performing whole—its instruments, support, placement or responsibilities—MDPE.3 supplies that configuration method. Here the question is how rhythmic action and timely information can coexist within it.
+Use an adequate existing arrangement directly. For a question about instruments, support, placement or responsibilities in the wider performing whole, use MDPE.3. RHY.9 addresses production of the rhythmic action and access to its timing information within that arrangement.
 
 ### RHY.9:2 - Problem
 
-Producing the desired event and making its timing usable to another performer can require different actions. Removing a movement that makes no sound may remove the receiver's preparation cue. Adding a count or gesture can occupy the body part, channel or attention already needed by another contribution. Component availability therefore leaves a joint arrangement to be solved.
+Producing an event and giving another performer time to prepare can take different actions. A silent movement may be the partner’s cue to begin preparing. A count or gesture can occupy a hand, a channel or attention already needed for another part. Examine which actions and cues can coexist during the passage.
 
 ### RHY.9:3 - Forces
 
@@ -22,59 +22,59 @@ Producing the desired event and making its timing usable to another performer ca
 | Production and communication | A sound-producing action may reveal timing only after another performer must begin preparing. |
 | Economy and access | Fewer cues reduce demands but can remove a necessary reference. |
 | Reuse and competing actions | A familiar gesture is available in isolation but may conflict with the passage. |
-| Planning and realization | A compatible timing calculation leaves actual cue recognition and execution to be established. |
+| Planning and realization | A calculation can show that the schedule allows time to prepare. To say what performers recognized or did, use evidence from the performance. |
 
 ### RHY.9:4 - Solution
 
 #### RHY.9:4.1 - Recover the contributions and their receivers
 
-Take a short passage containing the difficulty, including its entry and continuation. Identify what must continue, what must be articulated, who produces each contribution, and who needs timing information from it. RHY.2 and RHY.3 supply these distinctions when they are unresolved.
+Take a short passage that includes the entry and its continuation. Identify what must continue, what is articulated, who produces each contribution and who needs its timing information. Use RHY.2 and RHY.3 for any of these relations that remain unclear.
 
-For each consequential cue, ask what its receiver must learn: the next entry, a cycle position, an approaching change of pace, a release, or permission to recover at a later landmark. Retain an already shared convention or demonstrate the intended cue. The same head movement can otherwise be read as an accent, a tempo change or preparation for an entrance.
+For each cue that matters, identify what its receiver needs to know. It could mark an entry, a cycle position, a change of pace, a release or an agreed place to resume. Use a shared convention when it fits. A record, explanation or demonstration can establish an existing meaning. Specify the intended meaning of a proposed new cue. When performers are to use it, communicate that meaning to them. The same head movement can mark an accent, a tempo change or preparation for an entrance.
 
-A solo performer may use an internal reference. A partner can use it only through some accessible consequence. Add an external cue only where that receiving need exists.
+A solo performer may use an internal reference. A partner needs an accessible consequence of that reference to use it. An existing movement may already provide the cue. Add a signal when the receiving task needs one.
 
 #### RHY.9:4.2 - Allocate production and cueing without losing another contribution
 
-Assign the required sound, movement and cue actions to available performers or means. Inspect their overlap in the passage. A hand making a reference gesture may also be needed for an instrumental stroke; a performer reading a score may not see a small peripheral movement.
+Identify who or what produces each required sound, movement and cue. When creating or changing an arrangement, allocate the affected actions to the available performers or equipment. Check where they overlap in the passage. A hand used for a reference gesture may also be needed for an instrumental stroke. Someone reading a score may miss a small movement at the edge of their vision.
 
-Choose a concrete repair: expose an existing preparatory movement, change the receiver's access, move the cue to another available channel, reassign a contribution, or simplify a conflicting articulation. Preserve the rhythmic and stylistic relations the passage needs. More or larger signals are useful only if the receiver can use them without losing another task.
+If the allocation causes a problem, identify the conflicting actions. For a requested repair, consider exposing an existing preparatory movement, improving the sightline, using another channel, reassigning a contribution or simplifying the articulation in conflict. Choose an arrangement that preserves the required rhythmic and stylistic relations. An extra or stronger signal helps only when the receiver can use it without losing another needed action.
 
-Use familiar, appropriately supported bodily or instrumental actions. If the proposed allocation requires a technique the performer does not have, return that capability question to RHY.12 instead of treating the assignment as its realization.
+Use bodily or instrumental actions the performer can carry out with the support available. If a proposed allocation depends on a technique the performer lacks, identify the missing capability. Use RHY.12 when developing it is part of the task.
 
 #### RHY.9:4.3 - Make the information usable before the dependent action
 
-Trace the needed relation from cue production through availability and interpretation to preparation and the receiving event. A cue may announce a future event; waiting for that event's sound would provide different information at a different time. RHY.4 helps distinguish the physical event from the moment or feature the receiver uses.
+Follow the cue from its production to the receiver’s access, interpretation, preparation and action. An advance cue may identify the target time before the final attack occurs. The sound of that attack arrives later. RHY.4 can help distinguish the physical event from the feature or time the receiver uses.
 
-For a controller or a measured arrangement, compare available advance time with the applicable delivery and preparation times. Include variation where it matters. If the receiver can prepare and wait for a known target time, enough advance information can solve a problem that reacting to the final attack cannot.
+For a controller or a measured arrangement, compare the available advance time with cue delivery and preparation time. Include variation that affects the comparison. If the cue identifies a future target time and the receiver can prepare and wait, an advance cue can make the target achievable.
 
-For ordinary rehearsal, a clear preparatory gesture followed by a short joint trial may answer the question without timing measurements. Seek a delay estimate only when its possible values would change the arrangement. A precise command timestamp alone does not establish when the action or usable cue occurs.
+In rehearsal, a short joint trial with a clear preparatory gesture may answer the question. Existing observations can also supply the answer. Estimate a delay when the result it could establish for the explanation or choice justifies the work. A command timestamp can establish when the command was issued. Establish the action and the cue available to the receiver from evidence of those events.
 
 #### RHY.9:4.4 - Try the receiving relation while the passage continues
 
-Use the arrangement in the part of the passage where the receiver needs it. Observe whether the receiver obtains the intended information, prepares the contribution and continues the other required actions. Compare with the troublesome arrangement when that contrast can localize the remaining difficulty.
+For a question about a performance, use a record or observation of the relevant passage to establish which cue was available, whether the receiver used its intended information and what they did while the other required actions continued. If a new trial is warranted and feasible, try the arrangement at that point in the passage. A comparison with the troublesome arrangement can help locate a remaining difficulty.
 
-Keep cue availability separate from correction: a visible gesture can be available while performers still disagree about which beat it marks. RHY.10 resolves that reference and adjustment question. If adding the cue disrupts another simultaneous contribution, use RHY.11 to resolve the joint relation.
+A gesture may be visible to both performers even when they disagree about the beat it marks. Use RHY.10 to examine their reference and adjustments. If producing or using the cue interferes with another simultaneous contribution, use RHY.11 to examine how the parts fit together.
 
-Include a familiar recovery at a recognizable later point if entry is missed. Do not demand a hurried catch-up that defeats the available technique or support. Existing domain limits and stopping conditions govern the trial.
+When missed entries need a recovery plan, use a familiar return at a recognizable later point. Allow enough time for the technique and the support available. Follow the practice’s existing limits and stopping conditions during a trial.
 
 #### RHY.9:4.5 - Retain the useful arrangement and its scope
 
-Keep the allocation, cue meaning and access that answer the receiving task. Preserve the conditions that matter—such as sightline, tempo, preparation, equipment or a continuing support gesture.
+Describe the allocation, cue meaning and access that matter to the question. Retain the conditions on which the finding depends, such as sightline, tempo, preparation time, equipment or continuing support. These conditions also determine where a successful arrangement can be used again.
 
-A calculation can justify a trial; an observed local success can justify retaining that arrangement in comparable use. Wider reliability and transfer remain separate questions. Stop when the next performance decision is possible, or name the unavailable cue, action or capability that prevents it.
+A calculation can establish timing feasibility under stated conditions or justify a trial. An observed local success can support retaining that arrangement in comparable use. Give the finding that answers the question, including any limit due to an unavailable cue, action or capability. For a wider claim about reliability or transfer, establish the additional conditions it requires.
 
-Reopen the affected allocation or cue relation when the passage, performer, channel, placement, tempo or preparation changes. Reuse the relations those changes leave intact.
+If a change of passage, performer, channel, placement, tempo or preparation affects the answer, reconsider the allocation or cue relation that depends on it. Reuse relations whose conditions still hold.
 
 ### RHY.9:5 - Archetypal Grounding
 
 #### RHY.9:5.1 - A timely command whose cue arrives too late
 
-In a constructed stage controller, a receiver must make an event at 2.00 seconds. A cue identifies that future target time. The supplied bounds are 0.05 seconds for cue delivery and 0.40 seconds for preparation; after preparation the receiver can wait until the target.
+In a constructed stage controller, a receiver must produce an event at 2.00 seconds. The cue specifies this future target time. Delivery takes at most 0.05 seconds and preparation at most 0.40 seconds. Once ready, the receiver can wait for the target.
 
-Sending the cue at 1.65 gives latest readiness at 2.10. Sending it at 1.50 gives latest readiness at 1.95, leaving 0.05 seconds before the target. Choose the earlier cue for a trial under those bounds. The intended event time stays 2.00.
+Sending at 1.65 seconds gives a latest readiness time of 2.10 seconds, so readiness by 2.00 is not assured. Sending at 1.50 seconds gives 1.95 seconds, leaving at least 0.05 seconds before the target. Under the stated bounds, the earlier send gives enough time for the proposed trial. The intended event time is 2.00 seconds in both cases.
 
-The calculation concerns advance information and readiness. It does not establish audience-perceived timing or the bounds' validity for another mechanism. If the delivery delay is unresolved enough to cross the available margin, return that uncertainty or choose an arrangement with sufficient known margin.
+These bounds give the latest readiness time for each proposed send. To establish when the receiver was ready, use evidence of that run. A claim about timing perceived by the audience or about a different mechanism needs its own evidence. If uncertainty about delivery could use up the margin, report it. For a design task, a way of supplying enough known advance time may resolve it.
 
 #### RHY.9:5.2 - Preserve the sound while changing cue access
 
@@ -86,26 +86,26 @@ A constructed ensemble passage requires a player to sustain an already learned b
 | Keep the playing actions, leave the cue obscured | Yes | No | Yes |
 | Keep the playing actions and expose an existing preparatory cue by changing the partner's position | Yes | Yes | Yes |
 
-Retain the third arrangement for these conditions. No new gesture technique is needed. If the performance position cannot change, the same result becomes a concrete need for another accessible cue, not evidence that the partner should simply try harder.
+Retain the third arrangement under the observed conditions. Changing the partner’s position makes the existing cue accessible while both playing actions and the following action continue. If the performance position keeps this cue hidden and cannot change, the passage needs another way to make the cue accessible.
 
 #### RHY.9:5.3 - A beat gesture preserves reference but not sound duration
 
-A learner recites an onset-syllable pattern while a teacher shows every beat. The teacher's gesture can keep the reference available through an unspoken position. Whether the earlier sound continues or a rest occurs still needs the duration-bearing score, demonstration or agreed instruction.
+A learner recites an onset-syllable pattern while a teacher marks every beat. The gesture locates even an unspoken beat. To establish whether the earlier sound continues or a rest occurs, use the duration-bearing score, a timed demonstration or an agreed instruction that specifies it.
 
-RHY.5 chooses that representation and RHY.6 checks the correspondence. The cue arrangement retains the teacher's gesture for reference and the demonstrated duration for realization. With either removed, only the conclusions dependent on it need reconsideration.
+Use RHY.5 to choose a representation when one is needed and RHY.6 to check its correspondence with the performance. In this example the teacher’s gesture marks the beats and the demonstrated durations guide the sustain and release. If either source becomes unavailable, identify which part of the performance can still be specified.
 
 ### RHY.9:6 - Bias-Annotation
 
-Visible and audible cues are prominent in the examples. A performer may instead use contact, proprioception or an equipped display. Those alternatives need the same receiving-action question, with their own access and interpretation conditions. A mathematical timing bound is not a prescription for bodily reaction time.
+The examples use visible and audible cues. Contact, proprioception and an equipped display can also guide action. Establish what the performer could perceive and use in the conditions of interest. A mathematical upper bound from a stage controller applies to the controller as specified.
 
 ### RHY.9:7 - Conformance Checklist
 
-- The failed receiving action and the timing information it needs are recognizable.
-- Production, cueing and the other simultaneous demands have a compatible allocation or a named conflict.
-- Advance information is available in time for the required preparation.
-- The receiving relation is considered during the actual passage, including continuation and recovery.
-- A proposal, calculated compatibility and observed performance retain their different conclusions.
-- Changed conditions reopen the affected relation.
+- Identify the receiving action and the timing information it needs.
+- Establish which production, cueing and simultaneous demands fit together, which conflict or which relation remains open.
+- Where preparation requires advance information, establish whether it arrives in time or report the limit of the evidence.
+- Examine the receiving relation at the relevant point in the passage, including continuation or recovery when it matters.
+- Distinguish a proposal, what its timing calculation establishes and any performance supported by observations.
+- Reconsider an earlier conclusion if a condition on which it depends has changed.
 
 ### RHY.9:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -113,29 +113,29 @@ Visible and audible cues are prominent in the examples. A performer may instead 
 | --- | --- |
 | Remove all non-sounding movement as wasted effort | Check whether it supplies preparation information to another performer. |
 | Treat an attack as a sufficient cue for a simultaneous action | Establish advance reference or preparation when the receiving action requires it. |
-| Add a signal using an already occupied hand or attention channel | Reallocate the cue or change access, then try the joint passage. |
-| Infer shared understanding from cue visibility | Demonstrate the intended event and use RHY.10 when its reference is ambiguous. |
+| Add a signal that occupies a hand or attention already needed for performance | Identify the overlap. When a change is needed, consider reallocating the cue or changing access. Use the constraints of the arrangement to assess a proposal and suitable performance evidence to establish how the actions worked together. |
+| Infer shared understanding from cue visibility | Establish which event each participant takes the cue to mark. Use RHY.10 if the reference is ambiguous. |
 
 ### RHY.9:9 - Consequences
 
-The arrangement can make an existing capability usable without prescribing more training. It can also expose a missing coordination or an inaccessible cue that practice alone will not repair. Extra signalling remains a cost when the receiving task does not need it.
+Changing the sightline or timing of a cue can make an existing capability usable. The passage may reveal a coordination the performer has yet to acquire or a cue the current arrangement conceals. Additional practice alone cannot restore access to a hidden cue. Additional signals cost time or attention and may be unnecessary for this receiver.
 
 ### RHY.9:10 - Architectural Rationale
 
-A performance relation includes production, information and a receiver able to act. Optimizing any one separately can defeat the relation. Preparatory movement can help precisely because it precedes the event; a second channel can help precisely because the sound-producing channel is occupied.
+The cue has to be produced, reach a receiver and arrive in time for the receiving action. A preparatory movement can identify an event before it happens. A second channel can carry the cue while the first is occupied with producing sound. Improving one contribution in isolation may make their joint use harder.
 
-The method changes the arrangement only far enough to make the rhythmic contribution usable. The availability of timing information and the performer's ability to combine the required actions remain separate constraints.
+When a change is needed, adjust the arrangement enough to make the rhythmic contribution usable. Check access to timing information and the ability to perform the required actions together as separate conditions.
 
 ### RHY.9:11 - SoTA-Echoing
 
-Gao and colleagues' [Shimon study](https://doi.org/10.3389/frobt.2024.1461615) compared gesture conditions while pianists followed a preprogrammed robot. Head-plus-arm gestures helped in changing-tempo conditions; the constant-tempo comparison did not show that benefit. This supports a conditional anticipatory-cue option, not a universal gesture prescription or demonstrated mutual adaptation.
+Gao and colleagues’ [Shimon study](https://doi.org/10.3389/frobt.2024.1461615) compared gesture conditions while pianists followed a preprogrammed robot. Head-plus-arm gestures helped in the changing-tempo conditions. The constant-tempo comparison did not show that benefit. The study supports considering this cue for anticipation under comparable conditions. The robot’s preprogrammed part left mutual adaptation untested.
 
-Lau and colleagues' [robot ensemble integration](https://doi.org/10.7717/peerj-cs.2632) connects mechanical realization and timing communication. Its improved end-of-piece alignment motivates testing those dependencies; it does not establish every within-phrase alignment.
+Lau and colleagues’ [robot ensemble integration](https://doi.org/10.7717/peerj-cs.2632) connects mechanical realization and timing communication. The improved alignment at the end of the piece gives a reason to examine those dependencies. Alignment within a phrase requires evidence from that part of the performance.
 
-Cha's [Takadimi reconsideration](https://doi.org/10.1177/0305735614528063) supplies the duration-information objection. [Hoffman's teaching recommendation](https://www.takadimi.net/teachingWithTakadimi.html) supplies beat-keeping movement; Birch and Walsh's [conducting proposal](https://www.music.org/images/conf/reg/ne/2022_NE_Schedule_20220214.pdf#page=18) offers a response to Cha. A maintained beat reference still needs separate sustain/rest information; the teaching proposals do not establish comparative superiority. The general allocation method here is a synthesis of these contributions. Reconsider a selected cue when its receiving benefit, access or competing demand changes.
+Cha’s [Takadimi reconsideration](https://doi.org/10.1177/0305735614528063) identifies missing duration information. [Hoffman's teaching recommendation](https://www.takadimi.net/teachingWithTakadimi.html) uses beat-keeping movement, and Birch and Walsh’s [conducting proposal](https://www.music.org/images/conf/reg/ne/2022_NE_Schedule_20220214.pdf#page=18) offers a response to Cha. A beat reference can locate the next unarticulated beat. Sustaining or releasing a sound also requires duration information. The teaching proposals leave their comparative effectiveness open. This allocation method combines the contributions. Reconsider a cue when its usefulness to the receiver, accessibility or competing demands change.
 
 ### RHY.9:12 - Relations
 
-MDPE.3 configures the wider performing whole. RHY.3 constructs carrier and articulation together; RHY.4 distinguishes usable timing from physical or recorded marks. RHY.5–RHY.6 supply needed representations and correspondences. RHY.10 uses the available cues for reference and correction, RHY.11 coordinates simultaneous layers, and RHY.12 develops a missing capability. RHY.14 supplies a more demanding performance or response comparison when the receiving decision needs one.
+Use MDPE.3 to configure the wider performing whole, RHY.3 to construct the carrier and articulation together, and RHY.4 to distinguish a physical or recorded mark from the timing the performer can use. RHY.5–RHY.6 address representations and their correspondence. Use RHY.10 for shared reference and correction, RHY.11 for simultaneous layers and RHY.12 when a missing capability needs development. RHY.14 can supply a stronger performance or response comparison when the question warrants it.
 
 ### RHY.9:End

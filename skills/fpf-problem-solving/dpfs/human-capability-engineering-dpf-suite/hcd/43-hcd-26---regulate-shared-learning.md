@@ -5,27 +5,27 @@
 
 ### HCD.26:0 - Use This When
 
-Use this pattern when a group needs to notice and change how it is carrying out a learning attempt: the question has drifted, a necessary contribution is absent, one explanation has displaced everyone else's reasoning, or the available help no longer fits the difficulty.
+Use this method when a group needs to establish how a shared learning attempt is going or change how it proceeds. The question may have drifted, a necessary contribution may be absent, one answer may have displaced others’ reasoning or the available help may no longer fit the difficulty. An existing observation may also answer a question about how a past attempt was regulated.
 
-The governed activity is **regulation of the shared learning attempt**: participants make a consequential difference between intention and actual work accessible, choose a feasible change and inspect what follows. Individual self-regulation and ordinary workplace coordination are wider neighbouring practices. A dashboard, reflection prompt or facilitator comment is a possible means; it is not the regulated activity itself.
+In **regulating a shared learning attempt**, compare the intended contribution with what the group is doing. Make a consequential difference accessible to those who can act on it. Where a response is needed, choose a feasible one and examine the subsequent work. A dashboard, reflection prompt or facilitator comment may help. For a historical question, establish which of those actions occurred. Individual self-regulation and ordinary workplace coordination have their own practices.
 
-The first useful result is a checked continuation, a precise request for help or a justified pause. If the group is already progressing adequately, continue the task without an additional regulation step. If the subject Method is unknown, a process prompt cannot supply it; return the subject question to its competent owner.
+Return a supported account of the attempt, a checked continuation, a justified request for help or a reason to pause. An adequately progressing group can continue. When the difficulty concerns a subject Method, use a qualified subject result, seek needed help or state which inference remains open.
 
 #### HCD.26:0.1 - Working Terms
 
 | Term | Meaning here |
 | --- | --- |
 | shared intention | The result and required contributions the group presently understands itself to be pursuing. |
-| actual state | What has been attempted, obtained, misunderstood or left unavailable, at the grain needed for the next action. |
-| process cue | A question or suggestion about how to continue the work, distinguished from supplying the subject answer. |
-| uptake | Participants' actual use, adaptation or rejection of the cue; hearing or displaying it establishes less. |
-| checked continuation | A changed or retained next action supported by an observation of what happened after the regulation move. |
+| actual state | What has been attempted, obtained, misunderstood or left unavailable at the scope relevant to the inquiry or next action. Use the available evidence to establish what is known about it. |
+| process cue | A question or suggestion about how to continue the work. Identify separately any subject answer the intervention also supplied. |
+| uptake | What participants did with a cue: they may use, adapt or reject it. To establish uptake, examine their response. Evidence of delivery or display alone may leave their use unknown. |
+| checked continuation | A next action supported by the observed work. It can retain an adequately progressing course. When a regulation move was made, inspect the relevant work after it to assess its consequence. |
 
 ### HCD.26:1 - Problem Frame
 
 Four participants intend to compare model grounds. Halfway through the meeting, they are editing the wording of one person's answer. Each is busy, the shared document is growing and the intended reasoning remains unperformed. A facilitator can interrupt, but a generic instruction to collaborate better may be ignored or consume the remaining time.
 
-The group needs enough access to its actual work to choose a useful change. This can be a short spoken comparison with the intended result, not a permanent monitoring system. The difference must lead to an action people can take with the time, material and competence actually available.
+Make enough of the work accessible to answer the question. Comparing the next required contribution with the actual response may suffice in a short discussion. If a change is needed, identify what participants can do within the available time, access and competence.
 
 ### HCD.26:2 - Problem
 
@@ -43,51 +43,51 @@ How can a group recognize a consequential deviation, choose proportionate proces
 
 #### HCD.26:4.1 - Make the intended work recoverable
 
-State the common question, the needed contributions and the next usable result in a form participants can recover during the attempt. For a short exchange, a sentence and an accessible case can suffice. For a longer task, retain the unresolved decision and who is preparing each necessary contribution. Do not require a display of every private thought or emotion to coordinate a bounded learning action.
+Make the common question, needed contributions and next useful result recoverable during the attempt. A sentence and an accessible case may suffice. For longer work, keep any unresolved decision and responsibility for each necessary contribution available to the participants. For a past attempt, use the evidence of what they were pursuing and could access. Limit disclosure to what coordinating the action needs.
 
-Agree how participants can request a pause, report missing information or challenge the current course. Clarify what a facilitator or tool can observe and provide. A learner who expects a bot to answer subject questions may disregard a process cue because its purpose was never understood. HCD.7 establishes the actual support and access conditions.
+Establish how participants can request a pause, report missing information or challenge the course. Use a suitable existing agreement or help the participants settle the missing condition. Clarify what the facilitator or tool can observe and supply. A group expecting a subject answer from a bot may misunderstand a process cue. Use HCD.7 when help or access needs arranging.
 
-Choose observation occasions from consequential dependencies: before adopting a model, when a needed contribution should have arrived, or when work visibly stalls. A short scheduled check can help inexperienced groups. It can be removed when participants already recognize the relevant occasions.
+Choose an observation occasion when a dependency matters, such as before adopting a model, when a contribution is due or when progress stalls. A scheduled check can help an inexperienced group. Retain or remove it in light of how participants recognize and handle that occasion under the needed conditions.
 
 #### HCD.26:4.2 - Compare actual work with the intention
 
-Ask what is available now and what the next action needs. Use evidence close to the work: an unexplained step, the response to a changed condition, a missing annotation or an unresolved question. Attendance and transcript volume alone do not establish that the required reasoning occurred.
+Compare the contribution needed with the evidence of work so far, such as an unexplained step, a response to a changed condition, a missing annotation or an unresolved question. Attendance and transcript volume can establish presence or amount of talk. To establish reasoning, examine the relevant explanation or action.
 
-Distinguish plausible causes that would change the remedy. A silent participant may be reasoning, lack an accessible channel, feel unable to challenge a supervisor or lack the subject prerequisite. Ask for the needed contribution or clarify the condition before assigning a generic participation deficit. A group can also be pursuing a better warranted question; recover its reason before restoring the old plan.
+Distinguish explanations that change the requested finding or a possible remedy. A quiet participant may be reasoning, lack a usable channel, feel unable to challenge a supervisor or lack a prerequisite. Use available evidence of the required contribution and its conditions. If the contribution is still needed, ask for it; seek the participant’s own account when their experience matters. Check why a revised question may now serve the group before restoring an older plan.
 
-Make uncertainty usable. “We have the ratio but no account connecting it to a cause” identifies a missing step. “The group is disengaged” may merely restate an impression. If a short inspection settles that the source is unavailable, repair access. If the subject criterion is defective, return that criterion. HCD.14 supports revision from evidence when the resulting change concerns a person's development arrangement.
+“We have the ratio but no account connecting it to a cause” locates a missing inference. An impression of disengagement leaves its cause open. If access is the obstacle, report that finding or restore access when the task requires it and a remedy is feasible. If the criterion is defective, identify the affected conclusion and send the defect to whoever can correct the criterion when correction is needed. Use HCD.14 for a question about revising an individual’s development arrangement.
 
 #### HCD.26:4.3 - Select the smallest feasible regulation move
 
-Choose a change that addresses the actual difference. The following examples show distinct remedies:
+When an intervention is needed, choose the smallest feasible change that addresses the established difficulty while preserving productive work. The table links possible moves to the work that can show their use.
 
 | Observed difference | Possible process move | What must then be inspected |
 | --- | --- | --- |
-| One account has become the answer without comparison | Ask another participant to reconstruct its decisive ground and offer a rival or breaking condition. | Whether another person uses the ground and the comparison changes or supports the answer. |
+| One account has displaced a needed comparison | Ask another participant to reconstruct its decisive ground and test it against a credible rival or breaking condition. | What that person did with the ground, and whether the comparison supports, changes or limits the conclusion. |
 | Two participants use different task assumptions | Pause selection and align those assumptions. | Whether the remaining disagreement still exists under the same conditions. |
-| A needed contribution has not arrived | Restore the source, redistribute a feasible action or request help. | Whether the next action now has usable input and whose learning opportunity remains missing. |
-| A prompt repeatedly interrupts useful reasoning | Let the current connection finish; alter or remove the trigger. | Whether the relevant difficulty is now noticed without that interruption. |
-| The remaining time cannot contain the required personal action | Narrow the current result or obtain a viable later window. | Whether the promised continuation and qualified help are actually available. |
+| A needed contribution has not arrived | Restore access to the source, use a qualified substitute, reassign feasible work or request help as appropriate. If the contribution remains unavailable, identify the limit. | What reached the next participant in usable form, and whether anyone missed a required learning opportunity. |
+| A prompt repeatedly interrupts useful reasoning | Let the current connection finish. Adjust or remove the trigger when justified. | Whether the group now notices the relevant difficulty and can continue without the interruption. |
+| The required personal action does not fit the remaining time | Narrow the present result or arrange a feasible later window. Report a needed action that cannot be scheduled. | Whether the revised plan provides the time, access and help it requires. |
 
-A cue should identify the relevant work and an intelligible next move. “Before choosing resistance, which observation distinguishes it from the other account?” is useful only if the group has the criterion or access to someone who can supply it. If it does not, repeating the cue turns an unavailable contribution into apparent non-compliance.
+Make the cue intelligible in relation to the actual work. “Before choosing resistance, which observation distinguishes it from the other account?” may reveal a missing question. To complete the comparison, the group also needs the criterion or a qualified way to obtain it. If that is the missing contribution, repeated reminders leave it unavailable.
 
-Count the intervention inside the actual window. A two-minute pause can be affordable early and impossible just before a hard stop. Retain the target action when reducing other work. If a protected action cannot fit, return the limitation or arrange another window through HCD.27; do not claim that the plan was completed because everyone stayed busy.
+Count the intervention within the actual window. A two-minute pause may fit early in the session and miss a later deadline. Preserve protected work when reducing other demands. If it cannot fit, return the limit or use HCD.27 to arrange a feasible later continuation. Report completion from the actions performed.
 
 #### HCD.26:4.4 - Inspect uptake and consequence
 
-After the move, inspect the next relevant action. Did participants use the cue, adapt it, reject it with grounds or ignore it? Did the missing connection become available? A delivered prompt establishes only delivery. A repeated phrase in the transcript can show imitation without changed reasoning.
+For an intervention already made, examine the next relevant work. Establish whether participants used, adapted, rejected or ignored the cue, or whether the evidence leaves their response unknown. Check what the next action required and what the participants did. A delivery record shows delivery. Repeating a phrase may show imitation without the reasoning the task required.
 
-When a cue is ignored, ask whether it was audible or visible, understood, timely and useful under the current task. If the group already resolved the issue, withdraw it. If the cue is misunderstood, clarify it. If the task or help is defective, change that condition. Do not increase prompting frequency before identifying which contribution another prompt could supply.
+If a cue appears to have been ignored, establish what reached participants, whether they understood it and whether it suited the work and timing. If the group has already resolved the issue, withdraw an obsolete cue. Clarify a misunderstood cue or address a task or support defect when useful and feasible. Add another prompt only when it can supply a contribution still needed. An account of a finished attempt can end with the established reason or limit.
 
-Keep a supported partial gain. A prompt may elicit the missing question while leaving its subject answer unresolved. That can justify obtaining targeted help without declaring successful learning. Conversely, if the interruption harms the attempt, restore the prior productive activity where possible and revise the trigger.
+A prompt may elicit the missing question while leaving the subject answer open. Report that partial gain. If the answer matters, use qualified help that is available or worth obtaining. If an interruption disrupts productive work, resume it where feasible and reconsider the trigger.
 
 #### HCD.26:4.5 - Make regulation available to participants
 
-When participants need to regulate later work themselves, explain what the facilitator noticed and why the selected intervention fit. Let participants identify the next comparable occasion, propose the change and inspect its consequence. Reduce external prompting according to those observed contributions; a fixed fade-out date does not establish readiness.
+If participants need to regulate later work themselves, make the occasion, observed difficulty and grounds for the facilitator’s action intelligible. Give participants a feasible opportunity to notice a comparable occasion, choose a response and inspect its consequences. Use evidence of their actual work to decide whether to reduce the external cue.
 
-A group can retain occasional external help. Independence is required only for the contribution and use that call for it. If the intended result is reliable work with a facilitator, establish that arrangement and its cost. If the intended result is an independently regulating team, take the team-capability question to the relevant OCE method and observe the team's actual work under the claimed conditions.
+A group may need occasional external help. For reliable work with a facilitator, establish the required help, access and cost. To claim independent regulation, observe the relevant contribution without the help that would supply it, or use adequate evidence of such work. Use OCE when the subject is the capability of a workplace team.
 
-Recognition rests on a consequential mismatch in the current attempt. Assurance for a beneficial intervention needs evidence of uptake and the resulting work, while a causal claim about the intervention needs an appropriate comparison. Stop once the current continuation is supported; do not add a reflection meeting solely to complete a sequence.
+A regulation question arises when the intended and observed learning work diverge or their relation needs checking. To report uptake or the work that followed, use evidence of the corresponding action. To claim that an intervention improved the work, compare the relevant outcomes on grounds that support that attribution. Close when the finding or continuation is supported within its stated limits.
 
 ### HCD.26:5 - Archetypal Grounding
 
@@ -95,65 +95,65 @@ Recognition rests on a consequential mismatch in the current attempt. Assurance 
 
 In a constructed thirty-minute diagnostic discussion, four participants should compare rival accounts and return to personal model selection. At minute twelve the shared page contains one person's conclusion and stylistic edits by the others. The facilitator asks which observation distinguishes that account from the rival. Participants nod and continue editing.
 
-Uptake has not occurred. A short clarification reveals that the group can calculate the indicator but does not know the account's pressure implication. The facilitator supplies the permitted subject reference and asks two participants to relate its prediction to the observed pressure. The others explain the resulting limit. The group now preserves the arithmetic and revises the causal statement. This is a supported comparison after a supplied reference; it does not establish that the learners originally possessed the criterion.
+The continued editing shows that the group did not use the requested comparison at this point. A short clarification reveals that participants can calculate the indicator but lack the pressure implication. The facilitator supplies the permitted subject reference and asks two learners to relate its prediction to the reading. The others explain the resulting limit. The group preserves the arithmetic and revises the causal statement with that help. The episode leaves its earlier independent command of the criterion open.
 
-The facilitator used part of the booked help window, including the clarification, and checks that enough time remains for the planned personal action. If only ten minutes remain and explanation plus reconciliation needs fifteen, the group cannot fit the original promise by speaking faster. It preserves the supported result and obtains a viable later window for the missing action, or reports the limit.
+The facilitator used part of the booked help window for clarification and checks the time left for the planned personal action. If explanation and reconciliation need fifteen minutes and ten remain, the group cannot deliver the original result in that window. It keeps the supported work and uses or arranges a feasible later window for the missing action if still needed, or reports the limit.
 
-A two-minute explanation after this first episode makes the facilitator's ground available: the page changed, but no participant had connected a predicted observation to a cause. The group chooses the next comparable occasion as the point before committing to a causal recommendation. The pressure criterion remains accessible. They agree to try noticing that occasion themselves; qualified subject help remains available.
+A two-minute explanation after this first episode makes the facilitator's ground available: the page changed, but no participant had connected a predicted observation to a cause. The group identifies the next comparable occasion just before committing to a causal recommendation. The pressure criterion remains accessible. They agree to try noticing that occasion themselves; qualified subject help remains available.
 
 In the next constructed twenty-minute case, the facilitator withholds the scheduled process cue. At minute six a participant notices that a preferred cause has again become the common answer without its predicted observation. Another adapts the earlier question into “write the prediction first, then compare it with the reading.” Two minutes for personal predictions and four for comparison expose the decisive relation. Using the case's supplied resistance prediction, one learner writes 448 kPa against the supplied 400 ± 4 kPa observation and withdraws the resistance-specific remedy; the other three also connect their judgement to the supplied condition instead of polishing the first answer. Five minutes remain for personal returns and three to inspect whether the comparison occurred and whether the cue helped. The group has supplied the occasion, adapted the move and inspected its consequence without the scheduled interruption. Repeating the phrase without those actions would leave the original difficulty.
 
-The following twenty-minute case tests the limit. At minute four the group notices that the machine's current operating condition is missing, so the earlier pressure account cannot yet be applied. They reject another immediate “compare the predictions” cue: it would ask them to invent the missing premise. During minutes four to six they prepare the narrow question for the qualified provider booked from minute six to twelve. The provider confirms that the available case cannot establish the operating condition and that no further observation is available within this exercise. The participants therefore change their shared question from choosing a remedy to stating the supported conclusion and the missing input that prevents the choice. Each writes that bounded return in minutes twelve to seventeen; in the remaining three they inspect whether it preserves the useful calculation and the reason to withhold a cause-specific remedy. A changed question now serves the task better than restoring the original demand.
+The following twenty-minute case tests the limit. At minute four the group notices that the machine's current operating condition is missing, so the earlier pressure account cannot yet be applied. They reject an immediate “compare the predictions” cue because the case lacks the operating condition the comparison needs. During minutes four to six they prepare the narrow question for the qualified provider booked from minute six to twelve. The provider confirms that the available case cannot establish the operating condition and that no further observation is available within this exercise. The participants therefore change their shared question from choosing a remedy to stating the supported conclusion and the missing input that prevents the choice. Each writes that bounded return in minutes twelve to seventeen; in the remaining three they inspect whether it preserves the useful calculation and the reason to withhold a cause-specific remedy. A changed question now serves the task better than restoring the original demand.
 
-These episodes justify dropping the scheduled process cue for this familiar decision point while retaining accessible criteria and the subject-help route. They do not justify removing qualified help or claiming an independently capable team. If participants miss the decision point again, or their new cue displaces the personal action, restore the smallest relevant support and inspect its use. An already adequate attempt continues without a new reflection obligation.
+For this familiar decision point, the two cases support withdrawing the scheduled process cue while retaining accessible criteria and qualified subject help. The observed actions concern these occasions under those conditions. An independent-team claim needs evidence from the intended operating situation. If participants again miss the decision point or their cue displaces personal work, restore the smallest support that addresses the difficulty and examine its use. An adequate attempt can continue.
 
-For this extension, preparation takes twelve facilitator-minutes to build the two cases and six subject-provider-minutes to qualify their accounts. The two-minute explanation, both twenty-minute facilitator bookings and the six-minute subject-help booking bring the added total to 66 provider-minutes. Four learners each spend 42 minutes, including the explanation and both cases: 168 learner-minutes. Reading the new cases is inside their opening work intervals. These allowances are additional to the first episode. The facilitator remains booked while observing the participant-led attempts, so fewer spoken cues do not yet establish a staff-time saving. Further teaching, unavailable help or an unresolved condition changes the arrangement. The trajectory is constructed to expose the decisions and their evidence; it is not an observed learning-effect result.
+For this extension, preparation takes twelve facilitator-minutes to build the two cases and six subject-provider-minutes to qualify their accounts. The two-minute explanation, both twenty-minute facilitator bookings and the six-minute subject-help booking bring the added total to 66 provider-minutes. The allowance for four learners is 42 minutes each for the explanation and both cases, or 168 learner-minutes. Reading the new cases is inside their opening work intervals. These allowances are additional to the first episode. The facilitator remains booked while observing the participant-led attempts, so fewer spoken cues do not yet establish a staff-time saving. Further teaching, unavailable help or an unresolved condition changes the arrangement. The trajectory is constructed to expose the decisions and their evidence; it is not an observed learning-effect result.
 
 #### HCD.26:5.2 - A quiet equipment observer
 
-In an internal training team, one participant operates a safe instrument and another watches silently. A talk-frequency dashboard flags low participation. Before prompting speech, the facilitator asks for the task's required prediction. The observer points out the unexpected reading and requests the planned pause. That is useful participation; forcing additional commentary could interrupt the observation.
+In an internal training team, one participant operates a safe instrument and another watches silently. A talk-frequency dashboard flags low participation. Before prompting speech, the facilitator asks for the task's required prediction. The observer points out the unexpected reading and requests the planned pause. The observer has supplied the required contribution. Additional commentary could interrupt the observation.
 
-If the observer cannot see the display, the repair is access. If they see it but do not recognize the significant difference, HCD.6.1 supplies a teaching contrast. The same visible silence therefore permits different continuations, and the dashboard alone cannot choose between them.
+If the observer cannot access the reading, restore suitable access where feasible or identify the limit. If the reading is accessible but its significant difference is unclear, use a suitable existing contrast or construct one with HCD.6.1. The same silence under different conditions therefore leads to different actions.
 
 ### HCD.26:6 - Bias-Annotation
 
-Facilitators can prefer interventions they know how to give, and tools can privilege what they can count. Preserve the task's contribution as the criterion. A shared-state display should expose a needed decision, not turn learners into a continuous reporting workforce.
+Facilitators may favor familiar interventions and tools may privilege what they can count. Judge the response by the contribution the task requires. Use a shared display when it makes a needed question or condition visible at an acceptable reporting cost.
 
 ### HCD.26:7 - Conformance Checklist
 
-- Participants can recover the intended result and consequential contributions.
-- The intervention follows evidence of a relevant difference.
-- Process, subject, access and timing problems receive fitting remedies.
-- The cue or change fits the available work window.
-- Actual uptake and subsequent work are inspected.
+- Establish the intended result and consequential contributions. For live coordination, make them recoverable by the participants. For a past attempt, use the available evidence of what the group understood and identify any remaining uncertainty.
+- Identify the relevant difference, the grounds for keeping the present course, or the condition that prevents a judgement on this attempt.
+- Match a proposed remedy to the process, subject, access or timing condition it addresses. Record a consequential condition that remains open.
+- For a proposed cue or change, check that it fits the available work window. When examining a past cue, establish whether it fitted and what that meant for the task.
+- For a claim about what happened, establish uptake and subsequent work to the extent the claim requires.
 - Any claim about participant regulation distinguishes it from facilitator performance.
 
 ### HCD.26:8 - Common Anti-Patterns and How to Avoid Them
 
-**A prompt was delivered, so regulation occurred.** Inspect use and consequence.
+**Credit delivery as uptake.** Use the delivery record for delivery. For a claim of regulation, examine how participants responded and what followed.
 
 **Repeat until obeyed.** Check relevance, comprehension, timing and missing inputs.
 
 **Measure collaboration by speech count.** Look for the required contribution.
 
-**Remove help on schedule.** Change assistance from observed ability to regulate or preserve the supported arrangement.
+**Remove help on a fixed date.** Adjust assistance using evidence about the required performance, or retain an adequate supported arrangement.
 
 ### HCD.26:9 - Consequences
 
-The group can localize a difficulty and recover useful work without restarting the whole programme. Regulation consumes attention and can harm timing if poorly chosen. The method therefore supports withdrawing an unnecessary cue as well as introducing one.
+The group can locate a difficulty and recover useful work, or establish that its present course is adequate. A poorly timed intervention can consume the window needed for learning. Assess the cost and expected contribution when introducing, changing or withdrawing a cue.
 
 ### HCD.26:10 - Rationale
 
-A mismatch matters through the action it prevents or distorts. Making it accessible can support a change, but the change helps only when participants can and do use it. Following that connection prevents an observation tool or a well-worded prompt from being mistaken for the group's restored learning.
+A mismatch matters when it changes the learning contribution, the grounds for judging it or the feasible next action. Making the difference visible can give participants an opportunity to respond. To assess what happened, trace the group’s or facilitator’s action to the subsequent work. When the question concerns a cue, establish how the participants used, adapted, rejected or ignored it, or what the available evidence leaves open.
 
 ### HCD.26:11 - SoTA-Echoing
 
 [Edwards et al., 2025](https://doi.org/10.1111/bjet.13534) supplies a bounded design line connecting awareness, externalization and process prompting. The study involved 52 pre-service teachers in 14 groups; trained humans simulated proactive voice intervention, while a separate reactive chat used GPT-4. It found no significant increase in lexical alignment following prompts, and its revised prompt design remained a proposal.
 
-Sections 4.1–4.4 adapt the useful construction while requiring actual uptake and consequence. Compared with an automatic reflection prompt, the intervention is selected from the work; compared with unassisted continuation, it can supply a missing occasion or question. Coordination burden and task preparation from the [collaborative cognitive-load account](https://doi.org/10.1007/s11412-018-9277-y) constrain that choice. Reconsider the trigger when it is ignored, disrupts useful action or addresses the wrong cause. Neither cited account validates the constructed cases or establishes an autonomous agent's equivalent performance.
+Sections 4.1–4.4 adapt the relation between awareness, prompting and subsequent work. To report uptake or a consequence, examine the corresponding evidence. Compared with an automatic reflection prompt, the intervention is selected from the work; compared with unassisted continuation, it can supply a missing occasion or question. Coordination burden and task preparation from the [collaborative cognitive-load account](https://doi.org/10.1007/s11412-018-9277-y) constrain that choice. Reconsider the trigger when it is ignored, disrupts useful action or addresses the wrong cause. Neither cited account validates the constructed cases or establishes an autonomous agent's equivalent performance.
 
 ### HCD.26:12 - Relations
 
-HCD.22 supplies the shared task. Use HCD.23 for explanatory work or HCD.24 for evaluative work as needed. HCD.7 and HCD.8 address the availability of help. HCD.14 supplies evidence-based revision of an individual arrangement when that question emerges. HCD.21 changes membership when the needed contribution requires it; HCD.27 restores timing and material connections. HCD.28 uses recurrent regulation needs and costs in the whole product. OCE supplies organisation-level capability and working coordination beyond this learning attempt.
+Use HCD.22 to design or assess the shared task, HCD.23 for explanatory work or HCD.24 for evaluative work when needed. Use HCD.7 or HCD.8 for help and HCD.14 for a question about revising an individual arrangement. HCD.21 can assess or change membership, and HCD.27 can restore compatibility of timing and materials. HCD.28 uses regulation requirements and costs when they affect the whole product. Use OCE for workplace team capability or operating coordination.
 
 ### HCD.26:End

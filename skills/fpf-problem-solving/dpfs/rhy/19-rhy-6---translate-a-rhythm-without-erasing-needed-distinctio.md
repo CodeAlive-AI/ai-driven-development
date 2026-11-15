@@ -5,15 +5,15 @@
 
 ### RHY.6:1 - Problem frame
 
-**Use this when** rhythmic material must move between conventions or carriers and the receiving user needs more than a familiar-looking sequence. Examples include moving between position syllables and percussion articulations, between a spoken phrase and an instrumental realization, or between an ordered cycle and a geometric comparison.
+**Use this when** rhythmic material must move between conventions or carriers and the receiving task depends on how it is interpreted. Examples include relating position syllables to the percussion articulations at those positions, relating a spoken phrase to an instrumental realization, and translating between an ordered cycle and a geometric representation.
 
-State what the receiver must preserve: attack positions, grouping, sound classes, an entrance, a continuous shape or another selected consequence. The first result is a target representation with a usable rhythmic correspondence and a clear treatment of what the translation loses or adds.
+Identify what the receiving operation must preserve, such as attack positions, grouping, sound classes, an entrance or a continuous shape. Produce the target representation and its correspondence where the source supports them. If the question is what can be recovered, an account of a preserved or missing distinction can be sufficient. State what a translation adds or loses.
 
-A recording transfer that preserves all needed interpretation unchanged may need no new translation method. The difficult case is a changed convention, abstraction or receiving operation.
+Use an existing transfer directly when it preserves the interpretation the task needs. Examine the correspondence when the convention, abstraction or receiving operation could change that result.
 
 ### RHY.6:2 - Problem
 
-Identical syllables can play different roles in different practices, and different expressions can encode the same onset positions while prescribing different articulations. Replacing each sign with a target sign can therefore create a plausible reading that cannot reconstruct the required performance or answer the source question.
+The same syllable can have different roles across practices. Two expressions can also locate the same attacks while prescribing different articulations. Substituting a sign for each source sign may therefore leave the user unable to perform the intended phrase or answer the source question.
 
 ### RHY.6:3 - Forces
 
@@ -28,78 +28,78 @@ Identical syllables can play different roles in different practices, and differe
 
 #### RHY.6:4.1 - Recover the source's rhythmic interpretation
 
-Identify the actual convention, its beat or cycle reference, the relation of phrases to that reference, and any articulation or realization distinctions consumed by the receiving task.
+Identify the source convention, any beat or cycle reference and the phrase’s relation to it. Retain articulation or realization distinctions on which the receiving task depends.
 
-Use RHY.2 and RHY.5 results when they already supply this information. If the source is a recording, distinguish observed features from the chosen transcription. If it is a prototype, retain the performer choices it leaves open. Ask a prepared source practitioner when a sign's meaning depends on a phrase or tradition you cannot recover.
+Use existing results from RHY.2 and RHY.5 when they establish the interpretation. For a recording, distinguish the features observed from the transcription chosen. For a prototype, preserve the choices left open to the performer. Where the meaning depends on a phrase or tradition, use a qualified source or a prepared practitioner if that meaning cannot already be recovered.
 
-Select a bounded family for the proposed translation. A rule for a four-part equal subdivision does not automatically cover unequal divisions, tempo changes or free timing.
+Specify the family covered by the proposed rule. A correspondence for four equal subdivisions leaves uneven subdivisions, tempo changes or free timing open unless it also accounts for them.
 
 #### RHY.6:4.2 - Construct a shared rhythmic correspondence
 
-Align the relevant occurrences or phrase portions, then relate their positions under the source and target references. Preserve cycle identity and phase when later entry or coordination needs them. Carry duration, articulation, grouping or continuous course when the receiving operation consumes those features.
+Align the relevant occurrences or phrase portions and relate their positions under the source and target references. Preserve cycle identity and phase where entry or coordination needs them. Carry duration, articulation, grouping or continuous course when the receiving operation depends on those features.
 
-Choose a convenient shared description for the construction, such as ordered positions with event labels. It is a working intermediary whose fields come from this task, not a universal format for all rhythm.
+When an intermediate description helps, use one that carries the distinctions needed here. For example, ordered positions and labels can relate the two readings of a percussion exercise. Use a direct correspondence when it already suffices.
 
-For a duration-sensitive translation, align more than attacks. Locate where a sound continues across a beat, where it ends and where silence is prescribed. A printed continuation sign must retain that meaning in the receiving spoken or performed form. If the source has only attack labels, return duration as unresolved instead of inventing a sustained note or a rest.
+For a duration-sensitive translation, locate continuation across a beat, release and prescribed silence as well as attacks. Preserve the meaning of a continuation sign in the receiving form. If the source provides only attacks, use an accessible companion that carries duration or report where duration remains unresolved.
 
-When a source syllable names a sound class and the target names a beat position, derive the target sign from the event's position. Preserve the sound class separately if needed. When a phrase maps to a learned instrumental realization, establish that phrase correspondence; do not manufacture a one-sign–one-stroke dictionary.
+If a source syllable names a sound class and the target sign specifies a beat position, derive the target sign from the position of this occurrence. Carry the sound label alongside it when needed. Where a phrase has a learned instrumental realization, establish the correspondence for that phrase.
 
 #### RHY.6:4.3 - Expose collapsed distinctions
 
-Look for two admitted source cases that translate to the same target. If such a pair exists, would the receiving operation need different answers?
+Check whether different admitted source cases have the same target reading. For such a pair, ask whether the receiving operation needs different answers. A pair that needs different answers demonstrates the loss. Use an existing comparison or a rule covering the family when it provides the needed result.
 
-When such a pair needs different answers, retain the missing distinction as a target feature or companion representation, or keep the relevant source phrase or recording accessible with a way to locate that distinction. When the answers coincide, that loss is harmless for this operation. Consulting source material to recover missing content is different from interpreting a target answer back into the source question in :4.4. That answer may need the same timing, a compatible performance or the original expression; state which the work requires.
+If the pair needs different answers, add the missing distinction to the target, retain a companion representation, or give the receiver a way to locate the relevant event or phrase in an accessible source. If the required answers agree, the omission is harmless for those cases and this operation. To return an answer from the target to the source question, establish whether the task needs the original expression, the same timing or a compatible performance. Looking up omitted content and interpreting the target answer perform different work.
 
-A target with richer notation cannot recover source information that has already been discarded. For a continuous shape reduced to sample points, name the interpolation or reconstruction assumption if the receiver must act between points.
+A richer target vocabulary cannot establish information already discarded from the source. For a trajectory represented by samples, state the basis for an interpolation or reconstruction if the receiver needs a position between them.
 
 #### RHY.6:4.4 - Perform the receiving operation and return its result
 
-Use the target to carry out the intended comparison, reading or construction. Interpret the answer against the source question. A target calculation of phase, for example, needs to return a position under the source's cycle and orientation.
+Use the target to carry out the intended comparison, reading or construction, then interpret the result for the source question. For example, give a phase calculation as a position under the source cycle and direction. An established target result can be used directly when it has the required correspondence.
 
-Keep reading separate from physical performance. Correct target syllables can express the intended positions while the receiving performer still lacks the corresponding instrumental or movement technique.
+Correct target syllables can express the intended positions. To credit the performer with the corresponding instrumental or movement technique, use evidence of that performance.
 
-For a target edit, distinguish a changed rhythmic requirement from a representational rewrite. Update the source-side event correspondences, then test that the translated new source gives the requested target. Retain source restrictions whose loss would change the proposal's identity or admissible performance.
+For a target edit, determine whether it changes the rhythmic requirement or expresses the same requirement differently. Identify the compatible source interpretation, update affected event correspondences and check that the resulting translation gives the requested target. Preserve restrictions needed for the proposal’s identity or admissible performance. Report any conflict or missing assignment.
 
 #### RHY.6:4.5 - Keep the translation at the needed scope
 
-Retain the rule, reference, required companion and meaningful loss with the receiving material. A local example can establish that translation; a reusable family needs a rule covering the admitted cases.
+Keep the correspondence, its reference, any required companion and material losses available to the receiving user. One example can establish a translation for that case. For a reusable family, establish the rule and the cases it covers.
 
-Stop with a usable target, a narrower adequate use, or a named missing correspondence. Further comparisons are worthwhile only when their possible result could change reliance or the construction. Reopen the affected correspondence when the source or target interpretation, reference, receiving question or admitted edits change; retain unaffected results. NOT.5 supplies the general preservation, reflection and return questions.
+Return the target and its supported use, or name the missing correspondence and the result that remains open. Seek further comparisons when their likely contribution to the requested finding, reliance or construction justifies the effort. Revisit a correspondence when the source or target interpretation, reference, receiving question or permitted edits change its grounds. Use NOT.5 for the general questions of preservation, reflection and return.
 
 ### RHY.6:5 - Archetypal Grounding
 
 #### RHY.6:5.1 - Positions survive while sound classes disappear
 
-This constructed percussion exercise has two attacks in one beat. Let D and T denote two distinct sound classes under a supplied local convention. They are not a claim about a particular named iqa‘.
+Suppose a percussion exercise has two attacks in one beat. In the local convention, D and T denote different sound classes.
 
 | Beat position | Version A | Version B | Position-oriented target |
 | --- | --- | --- | --- |
 | 0 | D | T | ta |
 | 1/2 | T | D | di |
 
-The target preserves the two attack positions but cannot distinguish A from B. It is sufficient for asking where the attacks fall. To reproduce the sound-class order, retain (D, T) or (T, D) associated with those occurrences.
+The target shows the two attack positions identically in A and B. It answers where they fall. To reproduce the sound classes, retain their order at those positions, (D, T) for A and (T, D) for B.
 
-Now shift A's two attacks forward by one quarter of the beat, without changing their sound classes. Their new positions are 1/4 and 3/4, yielding the position reading ka–mi under the four-part convention. D remains with the first shifted event and T with the second. Repeating ta–di after the shift would preserve the old positions, not the requested edit.
+Shift A’s attacks forward by one quarter of a beat, keeping their sound classes. The new positions are 1/4 and 3/4. Under the four-part convention their position syllables are ka–mi, with D on the first shifted event and T on the second. The old ta–di still specifies 0 and 1/2.
 
-The edit can also originate in the target. Suppose the user changes ta–di to ka–mi while keeping the two occurrences and their associated D/T order. Under the selected four-part convention, reconstruct D at 1/4 and T at 3/4. Translating that revised source yields ka–mi; leaving ta–di unchanged leaves D at 0 and T at 1/2 unchanged.
+A user can also edit ta–di to ka–mi while keeping the two occurrences and their D/T order. Under the selected convention reconstruct D at 1/4 and T at 3/4. Translating this revised source gives ka–mi. With no edit, the original D and T remain at 0 and 1/2.
 
-If the user instead inserts a third attack, the two-label companion supplies no sound class for it. Return that missing assignment when the receiving task needs the sound-class phrase; the three positions alone can still serve a positional question. If a companion also demands that the old positions remain fixed, it conflicts with the requested ka–mi edit: resolve which positional requirement changes instead of silently retaining incompatible instructions.
+If the user inserts a third attack, the two-label companion leaves its sound class open. Return the three positions for a positional question. For a sound-class phrase, establish the new assignment or identify it as missing. If a companion requires the old positions to stay fixed, it conflicts with a ka–mi edit. Establish which requirement applies before changing the phrase.
 
-This is a bounded construction of positions and labels. Whether a changed phrase still belongs to a particular musical prototype needs that practice's identity conditions.
+The construction establishes positions and labels in this family. Deciding whether the changed phrase belongs to a particular musical prototype requires its practice-specific identity conditions.
 
 #### RHY.6:5.2 - A phrase is not a string of independent stroke commands
 
 Nelson describes learning spoken patterns and their instrumental realizations in parallel, without a universal one-to-one correspondence between syllables and strokes. Suppose the receiving task is to realize a supplied phrase on an instrument.
 
-Retain the phrase's cycle placement and obtain its applicable instrumental realization from the prepared performer or lesson. Align the phrase portions that matter to the receiving use. If two realizations preserve the phrase's timing but differ in technique or sound, keep that choice with the performance decision instead of hiding it in a guessed dictionary.
+Retain the phrase’s place in the cycle and use its applicable instrumental realization from a prepared performer, lesson or other competent source. Align the relevant phrase portions. Two realizations can keep the same timing while differing in technique or sound. Leave that choice available unless the performance specifies one.
 
-The translation may support rhythmic analysis before every instrumental choice is settled. It cannot then be presented as complete instructions for an unprepared player.
+An established timing correspondence can support analysis while some instrumental choices remain open. To supply complete instructions to an unprepared player, also make the required realization and technique available.
 
 #### RHY.6:5.3 - Rotating a cyclic picture changes a cue
 
-A constructed eight-unit pattern has attacks at 0, 3 and 5. A comparison identifies all rotations as the same shape. A target result chooses a rotation by two units, giving positions 2, 5 and 7 under the original cycle reference.
+Consider an eight-unit cycle with attacks at 0, 3 and 5. Shape comparison can treat rotations as equivalent. If the target operation selects a rotation by two units, the positions become 2, 5 and 7 under the original cycle reference.
 
-Returning only “the same rhythm” loses the information needed by an entering performer. Return the displacement and origin when the use requires those positions. If the task compares shapes regardless of phase, keep the coarser answer.
+For a performer who needs to enter, give the origin, direction and displacement needed to locate those positions. For a phase-independent shape comparison, “the same shape” can be sufficient.
 
 If the target instead changes traversal direction, recover the new order separately. Rotation and reversal are different operations unless the declared comparison deliberately identifies both.
 
@@ -107,31 +107,31 @@ If the target instead changes traversal direction, recover the new order separat
 
 Reuse the two-beat instructions from RHY.5:5.4. The source supplies an onset at position 0 and either an endpoint at position 2 (A), or an endpoint at position 1 followed by a rest until position 2 (B). Units are beats; the interval ends at 2.
 
-An onset-only target gives **ta** for both, losing the sustain/stop answer. Under Cha's explicitly selected extension, translate A as **ta–ah** and B as **ta (ta)**. Reading back through that convention recovers the required continuation or rest. A sustained syllable plus a beat gesture and an explicit endpoint can supply the same distinction without using this extension.
+An onset-only target gives **ta** for both cases. In Cha’s extension, translate A as **ta–ah** and B as **ta (ta)**. Under that convention the two readings distinguish continuation from rest. Another scheme can combine a syllable sustained for the sounding duration, a gesture marking the beats and the appropriate endpoint.
 
-If the received source is only the untimed string **ta**, neither A nor B can be recovered uniquely. Keep the onset information and ask for duration only if the receiver must decide sustain versus silence. For an onset-count question, the available information already suffices.
+If the source contains only the untimed string **ta**, it does not determine A or B. It can answer the onset-count question. For a sustain-or-stop instruction, use available duration information or, when the receiving work calls for it, ask a source that can supply it. Until then the duration remains unresolved.
 
-The translation therefore ends in one of two useful results: a complete instruction for the supplied duration-sensitive source, or a qualified onset-only result for the underdetermined source. No experiment is needed to discover this information loss; the two constructed cases exhibit it.
+With a duration-bearing source the translation can give a complete sustain-or-stop instruction. With the bare string it can give the qualified onset-only result. The two constructed cases demonstrate why the onset string leaves duration open.
 
 #### RHY.6:5.5 - Reconstruct between samples only within the admitted family
 
-Reuse trace A from RHY.5:5.5, now represented by samples (time, position): (0, 0), (1, 1), (2, 0). The receiving question asks for the position at time 1/2. Select, for this constructed source family, straight-line interpolation between successive samples. The first segment then gives position 1/2; the target answer returns to the source's time unit and position axis.
+Use the three samples from trace A in RHY.5:5.5, at times 0, 1 and 2 with positions 0, 1 and 0. For the position at time 1/2, suppose the admitted source family uses straight-line interpolation. At half a source time unit the first segment gives a position of +1/2 along the agreed position axis.
 
-The same samples also fit a different trace whose first segment is position = time squared. That trace gives position 1/4 at time 1/2, while keeping positions 0 and 1 at the sampled endpoints. If the source family admits both traces, the sampled target cannot determine the requested answer. Retain the actual segment description or obtain the needed intermediate observation; otherwise return the answer as unresolved.
+All three samples also fit a trace whose first segment follows position = time squared and whose second segment returns to 0 at time 2. At time 1/2 this trace gives position 1/4. If both traces are admitted, the samples leave the answer open. Use a segment description or intermediate observation that distinguishes them, or obtain the needed observation when the task calls for it. Otherwise report the unresolved position.
 
-This is a local reopening: the shared samples still answer their sampled-position questions, and the time-1 side distinction remains intact. Only the unsupported between-sample reconstruction loses its warrant. Actual movement requires a basis for the chosen reconstruction; the calculation alone does not establish its physical course.
+The shared samples still establish positions at the sampled times, including the side at time 1. What becomes unresolved is the between-sample position. To establish the course of an actual movement, use a reconstruction justified for that movement or evidence of its course.
 
 ### RHY.6:6 - Bias-Annotation
 
-A shared syllable can invite a false cross-tradition equivalence. Identify what it does in each practice before translating it. Conversely, lack of a one-to-one dictionary need not make translation impossible: a phrase-level correspondence or a qualified partial translation can supply the needed result.
+A shared spelling may carry different meanings in two practices. Identify the syllable’s role in each. If the individual signs have no one-to-one mapping, a correspondence between phrases or a qualified partial translation may still answer the question.
 
 ### RHY.6:7 - Conformance Checklist
 
 - Source and target conventions, references and receiving operation are identified.
-- The correspondence preserves the rhythmic distinctions that operation consumes, including duration and silence when attack positions alone do not suffice.
+- The account establishes which distinctions the target preserves for the operation, and what further source or correspondence is needed where it does not. These distinctions can include duration and silence when attacks alone are insufficient.
 - Lost, added and unresolved distinctions receive a treatment the receiver can use.
-- The target answer is interpreted back into the source question.
-- An edited target yields a compatible revised source or an explicit conflict.
+- When the target supplies an answer, the account gives its interpretation for the source question. If it cannot supply the required answer, the limit is identified.
+- For an edited target, the account gives a compatible source interpretation, identifies a conflict or states which required assignment is missing.
 - Claims about an entire translation family have a basis beyond one successful example.
 
 ### RHY.6:8 - Common Anti-Patterns and How to Avoid Them
@@ -146,29 +146,29 @@ A shared syllable can invite a false cross-tradition equivalence. Identify what 
 
 ### RHY.6:9 - Consequences
 
-Rhythmic material can move between analysis, teaching and performance without silently expanding what the target says. Some translations remain partial. A companion or access to the relevant source material can recover a needed distinction without enlarging the target notation. Interpreting the target answer back into the source question remains a separate step.
+A qualified translation can support analysis, teaching or performance within its stated scope. A companion representation or accessible source can supply missing content without enlarging the target notation. Returning a target answer to the source question also requires interpreting its reference and meaning there.
 
 ### RHY.6:10 - Architectural Rationale
 
-The translation concerns interpreted rhythmic relations, not sign resemblance. Its granularity can be an occurrence, a phrase or a trajectory portion because different practices make different compositional commitments.
+Translate the rhythmic relation under the conventions in use. The unit of correspondence may be an occurrence, a phrase or a portion of a trajectory because practices differ in how they build the whole from its parts.
 
-The rhythm-specific construction uses the general NOT.5 method and fills its source and target operations. Keeping that connection allows improvements in general translation methods to be reused while preserving the interpretation work that only the rhythmic domain supplies.
+Use NOT.5 to establish what the target must preserve and how its result returns to the source question. Supply the rhythmic interpretations, references and actions of this case. This division lets improvements in the general translation method carry over while the rhythmic practice supplies the meanings needed for this correspondence.
 
 ### RHY.6:11 - SoTA-Echoing
 
-Nelson's *Solkattu Manual* (2008), Introduction, supplies the distinction between phrase construction and instrumental realization. Adopt phrase-sensitive correspondence; reject a universal syllable-to-stroke substitution.
+Nelson’s *Solkattu Manual* (2008), Introduction, distinguishes the construction of a phrase from its instrumental realization. Use a phrase-level correspondence where a learned phrase has a realization that its individual syllables do not specify.
 
-The [Takadimi convention](https://www.takadimi.net/documents/TakadimiArticle.pdf) supplies the target position labels used in the bounded example. Its rule does not retain the source's sound classes. A separate event-label correspondence restores that distinction when the receiving task needs it.
+The [Takadimi convention](https://www.takadimi.net/documents/TakadimiArticle.pdf) specifies the target position labels in the percussion example. To preserve the original sound classes, carry the D/T labels with their corresponding events.
 
-Cha's [Takadimi reconsideration](https://doi.org/10.1177/0305735614528063), pp. 570–574 and note 7, supplies the sustain/rest counterexample and an explicit extension. Sections :4.2 and :5.4 use it to make the translation's input sufficient. A bare syllable string, its timed performance and a score-supported reading are different inputs. The method requires the receiving task's result to remain recoverable; it does not adopt a universal bijection between syllable strings and scores.
+Cha’s [Takadimi reconsideration](https://doi.org/10.1177/0305735614528063), pp. 570–574 and note 7, gives the sustain/rest counterexample and an extension that makes the distinction explicit. The extension can carry a duration distinction supplied by the source. A bare syllable string, its timed performance and a reading with the score give the receiver different information. Judge the translation by the distinction the task needs.
 
-Toussaint's *The Geometry of Musical Rhythm* (2020) supports cyclic constructions and differing equivalences. Keep rotation or reversal equivalence only for the selected comparison; a performance entrance can require the information the equivalence discards.
+Toussaint’s *The Geometry of Musical Rhythm* (2020) describes cyclic constructions with different equivalences. Use rotation or reversal equivalence when it preserves the selected comparison. A performer’s entrance may require the phase or direction that a shape comparison discards.
 
-A literal symbol replacement is cheaper only when the source and target meanings coincide for the admitted family.
+A direct sign substitution can be the least costly adequate translation when the source and target meanings coincide throughout the admitted family.
 
 ### RHY.6:12 - Relations
 
-RHY.5 chooses the receiving representation; RHY.2 supplies the selected rhythmic content. RHY.7 and RHY.8 use translations in comparison and transformation. RHY.10 consumes shared references when participants coordinate through different forms.
+Use RHY.5 to choose the receiving representation and RHY.2 to select the rhythmic content. RHY.7 and RHY.8 can use translations for comparison and transformation. For coordination through different forms, use RHY.10 with a shared reference.
 
 Notational Engineering's NOT.5 governs translation and return; NOT.6 manages retained complementary representations; NOT.8 supplies temporal and embodied reading procedures. Mathematical Thinking's MATH.18 supplies interpretation-preservation arguments when a formal family of rhythmic translations calls for them.
 

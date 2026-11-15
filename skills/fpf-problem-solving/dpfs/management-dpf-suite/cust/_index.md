@@ -10,7 +10,7 @@ Original framework content © Anatoly Levenchuk, licensed under [CC BY 4.0](http
 
 # Table of Contents
 
-Search by the working question or required result. CUST identifiers are stable pattern addresses; the section position gives reading placement. Dependencies identify conditional contributions, not a compulsory sequence.
+Search by the working question or required result. CUST identifiers are stable pattern addresses; their place in the contents shows where to read them. Follow a dependency when you need its contribution.
 
 ## Public units
 
@@ -40,13 +40,13 @@ Search by the working question or required result. CUST identifiers are stable p
 
 ## Practical entries
 
-Bring the question you are actually trying to answer. These entries are selected examples. If none fits, search the Table of Contents or enter a pattern directly. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
+Bring the question you need to answer. These three entries are examples. If none fits, search the Table of Contents or enter a pattern directly. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
 
 ### CUST-ENTRY-DELIVERY - Turn a successful delivery into an obtainable method
 
 - **Situation:** A service works when its author is present, but another prepared team cannot yet repeat it.
 - **Question:** Which work, preparation and help must become available for the next delivery?
-- **First useful result or blocker:** A constructed delivery method with an attainable receiving performance, or the exact missing capability, permission or support.
+- **First useful result or blocker:** A constructed delivery method with an attainable receiving performance, or the capability, permission or support that is missing.
 - **Start with:** [CUST.6](19-cust-6---establish-repeatable-deployment-and-service-deliver.md).
 - **Stop or return:** Retain explicit assisted provision when it fits; return a false family assumption to CUST.3.
 
@@ -70,7 +70,7 @@ Bring the question you are actually trying to answer. These entries are selected
 
 **Start with the supported offering and the actual customer result. Recover their consequential differences, then construct a compatible local and shared continuation.** Productization can produce a repeatable service or reusable contribution; it does not require every local adaptation to become a common product.
 
-The intended reader manages a product, service, customer delivery, implementation practice or another undertaking with continuing customer commitments. Use the large CUST.1 Method when the customer case and future offering must be developed together. Use a smaller Method when the current problem is already bounded. A supported configuration needs no new productization programme.
+The intended reader manages a product, service, customer delivery, implementation practice or another undertaking with continuing customer commitments. Use the full CUST.1 Method when the customer case and future offering must be developed together. Use a smaller Method when the problem is bounded. A supported configuration needs no new productization programme.
 
 Read the [Architectural Reference](01-cust-reference-1---field-and-use.md) for the field, connections and limits. [Using FPF Library](../../../library/USING-FPF.md) explains how to obtain supplying frameworks. Perform the work with the required professional capabilities and permissions.
 

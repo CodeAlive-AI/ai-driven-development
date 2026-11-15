@@ -22,7 +22,7 @@ The need to assign money does not establish that one assignment rule answers all
 
 An allocation makes an account add up, which can give the assigned number an unwarranted causal meaning. Closing a segment can then appear to avoid a payment even when the payment for the shared resource stays unchanged and only its allocation among the remaining segments changes.
 
-Refusing every assignment is also unhelpful when the receiving use legitimately requires one. The task is to supply that assignment while preserving what it actually means.
+When the receiving use requires an assignment, supply it and explain what the assigned amounts mean.
 
 ### MA.3:3 - Forces
 
@@ -66,11 +66,11 @@ A has revenue 900 and other avoidable payments of 300. B has revenue 700 and oth
 
 If A closes and all other conditions remain unchanged, the group loses its 600 contribution while the shared payment remains 1,200. B's remaining account is **700 − 200 − 1,200 = −700**. The assigned loss of 120 did not identify a 720 payment saving.
 
-If an actual permitted supply change instead avoids 300 of the shared payment in the relevant horizon, include that changed amount. The comparison now differs by **−600 + 300 = −300**, under the stated remaining premises. OPS.14 performs the choice with any further displacement, timing and feasibility consequences. Reallocating the same 1,200 does not supply this change.
+If a permitted supply change instead avoids 300 of the shared payment in the relevant horizon, include that changed amount. The comparison now differs by **−600 + 300 = −300**, under the stated remaining premises. Use OPS.14 to make the choice with any further displacement, timing and feasibility consequences. Reallocating the same 1,200 does not supply this change.
 
 ### MA.3:6 - Bias-Annotation
 
-A recipient can prefer a driver that lowers its charge. An analyst can prefer measurable activity even when it poorly explains the resource pool. Make the source purpose and evidence inspectable.
+A recipient can prefer a driver that lowers its charge. An analyst can prefer measurable activity even when it poorly explains the resource pool. Show the purpose of the assignment and the evidence for its driver.
 
 The example uses an agreed internal convention.
 
@@ -104,7 +104,7 @@ A single stable driver is adequate when it serves the agreed purpose. A more det
 
 The selected line uses managerial costing's separation of supported consumption from attribution and the throughput-accounting warning about average or allocated amounts in an incremental choice. Bragg's *Throughput Accounting* (2007), printed pp.44–47, supplies historical pricing and allocation examples; MA.1 supplies the quantitative resource construction used here.
 
-The adaptation retains an allocation when the receiving purpose needs it, while withholding an unsupported avoidance interpretation. At the effort of identifying one pool and its rule, the segment example reveals a closure loss that its allocated result conceals. Reopen the assignment when its purpose, source pool, consumption evidence or applicable rule changes.
+The adaptation retains an allocation when the receiving purpose needs it, while withholding an unsupported avoidance interpretation. In the segment example, compare the contribution lost on closure with any shared payment that can be avoided. The assigned charge alone gives neither amount. Reopen the assignment when its purpose, source pool, consumption evidence or applicable rule changes.
 
 ### MA.3:12 - Relations
 

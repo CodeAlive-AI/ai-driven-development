@@ -1,6 +1,6 @@
 ## CUST.Reminder:1 - Retain the questions that change the continuation
 
-Use this reminder after reading the relevant Methods. It does not construct a delta, family or delivery method on its own. Keep only the answers needed by the actual decision, in the work products already used.
+After reading the relevant Methods, use this reminder to keep only the answers your decision needs in the work products you already use. Return to the Method when you need to establish differences, construct a family or develop a delivery method.
 
 | Question to retain | Receiving use |
 | --- | --- |
@@ -11,7 +11,7 @@ Use this reminder after reading the relevant Methods. It does not construct a de
 | What common result and invariants make a family? Where may variation live, and what remains local or excluded? | CUST.3 constructs a member, its boundary and supported provision. |
 | Which solution can the customer meaningfully select? What common work can precede the order, and what must wait? | CUST.4 connects choice and differentiation to actual capacity. |
 | What uncertainty can change the next local or shared decision? What may be observed, used and transferred? | CUST.5 obtains two qualified answers and permits negative or local-only outcomes. |
-| Can another prepared performer obtain the result with the materials and assistance actually offered? | CUST.6 constructs and performs the receiving connection. |
+| Can another prepared performer obtain the result with the materials and assistance offered? | Use CUST.6 to arrange delivery, then have another prepared performer do the work with the materials and support offered. |
 | What grows, by which mechanism should burden change, and what full work continues over the relevant period? | CUST.7 compares common, local, transferred, support and transition work. |
 | Does an outcome promise have a supported provider concept, other-party contributions, evidence, acceptance, responsibility and resources? | CUST.4 uses the full SYSE.8 Method; an unsupported promise is narrowed or returned. |
 | Which present customers, configurations, meanings and obligations change? What continuation can each relevant use obtain? | CUST.8 constructs transition, coexistence, retained provision or an authorized end. |

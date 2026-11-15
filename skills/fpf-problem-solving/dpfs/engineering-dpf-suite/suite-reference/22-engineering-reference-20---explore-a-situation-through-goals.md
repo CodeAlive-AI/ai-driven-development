@@ -2,7 +2,7 @@
 
 Use [PSDA.20 — Explore a Situation through Goals and Dependencies](../../psda/36-psda-20---explore-a-situation-through-goals-and-dependencies.md) when a proposed change looks useful from one participant's position but its required contributions and consequences for others remain unexplained. The full Method develops the actors-and-goals inquiry, including the complete car-park case, a different publication-access case and its source limits. This section explains how that inquiry connects the Suite's work to Decision Design and to actual operating changes.
 
-An intentional model can reveal a service, staffing or technical question without answering all of them. Systems Engineering, organizational coordination and direct technical modeling retain their own results. A useful question or conditional comparison can complete the present inquiry; it is not already a design decision or a changed operating arrangement.
+An intentional model can reveal a service, staffing or technical question without answering all of them. Systems Engineering, organizational coordination and direct technical modeling retain their own results. A useful question or conditional comparison can complete the present inquiry. Choosing a design or changing operations requires a further decision or action.
 
 ### Engineering.Reference:20.1 - Let the question determine what to model
 
@@ -10,7 +10,7 @@ An engineering proposal can raise different receiving questions: what the servic
 
 ### Engineering.Reference:20.2 - Connect provision to the reasons on both sides
 
-A requirement for a supplied result and a prescription of the provider's task allow different engineering choices. [PSDA.20:4.2](../../psda/36-psda-20---explore-a-situation-through-goals-and-dependencies.md#psda2042---connect-provision-to-the-reasons-on-both-sides) keeps the recipient's purpose, provision and proposed production distinct. This matters when design or organizational work substitutes a supplier or method: preserving a label such as “floor count” need not preserve its needed interval or accuracy. The model identifies the dependence; actual acceptance, capability and allocation still require their own grounds.
+A requirement for a supplied result and a prescription of the provider's task allow different engineering choices. [PSDA.20:4.2](../../psda/36-psda-20---explore-a-situation-through-goals-and-dependencies.md#psda2042---connect-provision-to-the-reasons-on-both-sides) keeps the recipient's purpose, provision and proposed production distinct. This matters when design or organizational work substitutes a supplier or method: preserving a label such as “floor count” need not preserve its needed interval or accuracy. The model identifies the dependence; acceptance, capability and allocation each require their own grounds.
 
 ### Engineering.Reference:20.3 - Show the part of the model needed for the current question
 
@@ -18,11 +18,11 @@ Dependency and rationale views can expose different parts of one intentional mod
 
 ### Engineering.Reference:20.4 - Turn a working question into an analysis, then recover its meaning
 
-[PSDA.8:4.2.1](../../psda/25-psda-8---compare-consequences-of-decision-alternatives.md#psda8421---construct-and-question-a-qualitative-consequence-network) owns the qualitative consequence analysis. [PSDA.20:4.4](../../psda/36-psda-20---explore-a-situation-through-goals-and-dependencies.md#psda2044---turn-a-working-question-into-an-analysis-then-recover-its-meaning) connects it to the working question and interprets its conditional answer. Assuming that an installation works can support a service comparison; it does not establish the installation interval or investment cost. The wider engineering decision takes only the contribution actually obtained.
+[PSDA.8:4.2.1](../../psda/25-psda-8---compare-consequences-of-decision-alternatives.md#psda8421---construct-and-question-a-qualitative-consequence-network) explains how to analyse qualitative consequences. [PSDA.20:4.4](../../psda/36-psda-20---explore-a-situation-through-goals-and-dependencies.md#psda2044---turn-a-working-question-into-an-analysis-then-recover-its-meaning) connects that analysis to the working question and interprets its conditional answer. Assuming that an installation works can support a service comparison; it does not establish the installation interval or investment cost. Carry into the wider decision only what the analysis supports. Here it supports a conditional service comparison. Obtain the missing interval or cost if the decision needs it.
 
 ### Engineering.Reference:20.5 - Use surprising results to discover a different problem
 
-A favorable service model can conceal incompatible assignments. [PSDA.20:4.5](../../psda/36-psda-20---explore-a-situation-through-goals-and-dependencies.md#psda2045---use-surprising-results-to-discover-a-different-problem) follows the car-park conflict from simultaneous checking and desk coverage to a revised allocation and its limited result. [OCE.11](../../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) supplies organizational coordination when change work competes with continuing service. An analysis can identify that need without supplying the person, time or permission.
+A favorable service model can conceal incompatible assignments. [PSDA.20:4.5](../../psda/36-psda-20---explore-a-situation-through-goals-and-dependencies.md#psda2045---use-surprising-results-to-discover-a-different-problem) follows the car-park conflict from simultaneous checking and desk coverage to a revised allocation and its limited result. [OCE.11](../../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) supplies organizational coordination when change work competes with continuing service. The analysis can identify the need to reallocate work. Providing the required worker, time and permission is a separate task.
 
 ### Engineering.Reference:20.6 - Stop with a usable answer and preserve the right return
 

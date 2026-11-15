@@ -1,6 +1,6 @@
 ## MDPE.Reference:13 - PatternID and reader order
 
-`MDPE.*` identifies patterns in this Music and Dance Practice Engineering Principles Framework. A PatternID is a
-stable local address for one authoritative pattern body in this product. Its number does not encode reader order,
-lifecycle stage, Method composition, level, or dependency. The five Parts group patterns for reading; the practical entries connect them for selected working situations.
-Neither imposes a project sequence or a Method hierarchy.
+Within this framework, `MDPE.*` identifies the pattern bodies. Each PatternID gives a
+stable local address. The five Parts group methods for reading and the practical entries
+connect them to recurring situations. Determine working order, constituent relations
+and dependencies from the work being done and the conditions that the methods describe.

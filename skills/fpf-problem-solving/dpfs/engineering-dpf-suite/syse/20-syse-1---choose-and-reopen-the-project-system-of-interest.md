@@ -8,7 +8,7 @@ Use this pattern when participants use a familiar project name but cannot say wh
 
 The first useful result is a **project-system choice account**: the actual System or intended referent selected as the system-of-interest (SoI), its intended use, the grounds for the choice and what would reopen it. When the immediate engineering subject differs, identify that subject and its bounded result alongside the product it serves.
 
-First recover the intended use and the first assumption that could change the choice. A.1.STM explains why receiving use and encompassing functioning ground construction and provision decisions. An individual can use a provisional answer for the next concept question. Before joint work relies on it, compare the participants' referents and contribution connections through §4.4.1. Reuse an adequate existing account.
+Recover the intended use and any assumption that could change the choice. A.1.STM explains why receiving use and encompassing functioning ground construction and provision decisions. A contributor can use a provisional answer for the next concept question. Before joint work relies on it, compare the participants' referents and contribution connections through §4.4.1. Reuse an adequate existing account.
 
 A manufacturer may need to improve its planning organization while a vendor supplies a software product. Naming both projects does not settle their SoIs. The manufacturer's product remains the common reference for work on its creator; the vendor's independently supplied software can be its own SoI. Both the organizational work and the software supply can have finite results and acceptance conditions.
 
@@ -47,11 +47,11 @@ Begin with the cooperation and decision that need a shared reference. Recover:
 3. the contribution needed from that work and the conditions for accepting or stopping it; and
 4. the plan or decision that needs the SoI designation now.
 
-For work that creates or develops an organization as a creator, retain the SoI on the product side. Name the organization as the creator being engineered. Its use, functions, structure, characteristics, realization and own creators can all require full engineering. The SoI name is not a prerequisite for those operations. A new contract, external consultant or label such as “enterprise producer” does not change this relation.
+For work that creates or develops an organization as a creator, retain the SoI on the product side. Name the organization as the creator being engineered. Its use, functions, structure, characteristics, realization and own creators can all require full engineering. The SoI name is not a prerequisite for those operations. The product and creator retain those roles when the organization is given a new label or the work is assigned to an external consultant under a new contract.
 
 The local project can finish when its agreed contribution has been established. For example, a planning-system project can establish the ability to produce usable plans under specified order changes before the corresponding products enter service. Product usefulness, organizational capability, software installation and acceptance of a limited supplier contribution have different evidence. Preserve the responsibility and limits of each undertaking.
 
-For a shared creator, retain the products or classes of future use that actually govern its capability, including differences that compete for the same resources. Do not select one convenient product to hide that competition. An unsettled future use can require research into concrete possibilities; do not invent a finished product to complete the account. Research retains its own epistemic result and stopping conditions.
+For a shared creator, retain the products or classes of future use that govern its capability, including differences that compete for the same resources. Do not select one convenient product to hide that competition. An unsettled future use can require research into concrete possibilities; do not invent a finished product to complete the account. Research retains its own epistemic result and stopping conditions.
 
 A supplier can have a different product. A machine can be its maker's SoI and a creator at the customer's factory; an engine can be its maker's SoI and an aircraft component. Recover the usable supply, recipient or class of applications, substantive decision boundaries and acceptance obligations. The customer may specify the design and use. The supplier need not control the whole product strategy or accept responsibility for every larger system. These facts inform the judgement; the existence of a separate contract alone does not make the same servicing or organizational work a different product.
 
@@ -75,7 +75,7 @@ Recognition, choice of an engineering subject and SoI designation remain differe
 
 #### SYSE.1:4.3 - Generate and criticize materially different referents
 
-Generate materially different product referents from the working situation under §4.2's existence and recognition conditions. A product, component, tool or operating System can be a candidate when its intended use supplies the product grounds for the cooperation. Apply §4.1 to distinguish a supplier's own product from work on the same creator under another project name.
+Generate materially different product referents from the working situation using the existence and recognition conditions in §4.2. A product, component, tool or operating System can be a candidate when its intended use supplies the product grounds for the cooperation. Apply §4.1 to distinguish a supplier's own product from work on the same creator under another project name.
 
 For each candidate, compare the claims that matter now:
 
@@ -88,9 +88,9 @@ For each candidate, compare the claims that matter now:
 
 Alternatives for an organization, platform or production arrangement remain full engineering alternatives. Compare their functions, construction, obtaining ways and capability against the products or future uses they must serve. Choosing among those creators does not by itself change the product SoI.
 
-Payment, delivery, ownership, organizational boundaries and local acceptance can inform the judgement. None alone establishes the SoI. In particular, a firm's sale or valuation is an economic question; work on that firm's productive capability still engineers a creator. Preserve the economic question and its own evidence.
+Payment, delivery, ownership, organizational boundaries and local acceptance can inform the judgement. None alone establishes the SoI. A firm's sale or valuation is an economic question; work on that firm's productive capability engineers a creator. Preserve the economic question and its own evidence.
 
-Retain several product candidates when learning can change their order or when they preserve valuable options. For several products served together, retain their common demands and consequential differences. Let the current decision, available resources and useful stop determine the comparison effort. Stop when the next engineering question is askable and the reopening condition is clear.
+Retain several product candidates when learning can change their order or when they preserve valuable options. For several products served together, retain their common demands and consequential differences. Let the current decision, available resources and useful stop determine the comparison effort. Stop when you can ask the next engineering question and the reopening condition is clear.
 
 #### SYSE.1:4.4 - Record a sufficient choice account
 
@@ -112,13 +112,13 @@ Stop when the project can ask the next concrete engineering question about the i
 
 ##### SYSE.1:4.4.1 - Establish enough common focus for the current coordination
 
-When a decision depends on several contributors, compare their understanding through one concrete use or change. Include the people whose contribution, receiving use or limits can change that decision. Existing compatible exchanges may already supply the answer.
+When a decision depends on several contributors, compare their understanding through one concrete use or change. Include the participants whose contribution, receiving use or limits can change that decision. Existing compatible exchanges may supply the answer.
 
-Ask each contributor to identify the product or products the joint work serves and the subject of their own work. Have them explain the contribution, its recipient, the conditions for using it and the limit of their commitment. Follow each consequential connection: the receiver explains what they expect to obtain and how it supports the proposed use. A conversation, annotated case or asynchronous exchange can suffice.
+Establish from each contributor which products the joint work serves, what their work concerns, what they supply, to whom and under what conditions and limits. For each consequential connection, establish from the receiver what they expect and how they will use the contribution. A conversation, annotated case, asynchronous exchange or existing work that shows what the participants supply and expect can provide these answers.
 
 For example, “install the planning software” and “produce a feasible production plan” can share a project name. Follow one order moved to an earlier date. Determine whether installation, current stock information, capacity decisions and the planner's use connect to feasible commitments for the manufacturer's products. A missing contribution can leave the planning capability unavailable even when installation is complete.
 
-Resolve a material mismatch through the actual decision authority and available contributions. Explain the selected product grounds and local engineering subject, then ask the affected contributors to use them on the same case. Enough common focus exists for this decision when those relying on it can identify these subjects, connect the contributions needed by their next action and identify any unresolved condition that limits it. They may retain different interests and preferred alternatives. Obtain permission and commitments separately where the next action needs them.
+Use the available contributions to resolve a material mismatch with the party authorized to decide. Explain the selected product grounds and local engineering subject, then ask the affected contributors to use them on the same case. Enough common focus exists for this decision when those relying on it can identify these subjects, connect the contributions needed by their next action and identify any unresolved condition that limits it. They may retain different interests and preferred alternatives. Obtain permission and commitments separately where the next action needs them.
 
 If participants still mean different subjects or cannot connect a needed contribution, retain the individual account as provisional and hold only the joint claim that relies on the unresolved connection. Name the missing answer; independently supported work can continue. Separate projects retain their own boundaries and acceptance. They can share a product SoI. When an independently supplied product has its own SoI, coordinate the receiving contribution between them; use `SYSE.8` for provision or `SYSE.9` for a specialist return where needed.
 
@@ -182,7 +182,7 @@ If that information cannot be obtained, the joint planning-capability claim rema
 
 Now transfer the same planning-change work to an external consultant with a separate budget and completion date. The consultant may design the organization, its functions, responsibilities, tools and supporting work. Acceptance can establish its agreed capability under representative order changes and operating conditions before the resulting pumps enter service. The consultant's responsibility remains limited to the accepted scope. The external contract creates neither another product purpose for this work nor a requirement to wait for every downstream product outcome before closing it.
 
-The ERP vendor's own product undertaking has different grounds: a usable software product supplied to customers under identified decision and acceptance boundaries. That software can be its SoI while it is a means in the manufacturer's planning arrangement. The parties coordinate their real contributions and commitments without merging their projects or interests. A vendor label or a deployment contract by itself would not establish this independent product case.
+The ERP vendor's own product undertaking has different grounds: a usable software product supplied to customers under identified decision and acceptance boundaries. That software can be its SoI while it is a means in the manufacturer's planning arrangement. The parties coordinate their contributions and commitments without merging their projects or interests. A vendor label or a deployment contract by itself would not establish this independent product case.
 
 #### SYSE.1:5.3 - Continuing building through several projects
 
@@ -192,7 +192,7 @@ while using different plans, transformer Systems, access arrangements, and evide
 the engineer selects the continuing building because its occupied performance is being changed and records
 access during use as the main unresolved assumption.
 
-Several descriptions of the building do not create several Systems or projects. Conversely, one programme does
+Different descriptions of the same building can serve one project or several. One programme overseeing several projects does
 not become the performer of all Work. Each project account states its own reason for selecting the building and
 can reopen that choice when its reason or conditions change.
 
@@ -222,14 +222,14 @@ plausible referent into permanent project scope; retain material alternatives an
 | --- | --- | --- |
 | Project-name shortcut | The noun in a charter or backlog is used as the selected System without a use or change reason. | State the current project decision, generate plausible referents, and compare how each changes the next question. |
 | Tool or provider substitution | The immediate engineering subject replaces the product that justifies work on its creator. | Keep the product SoI, creator and local result distinct. Engineer the creator fully and accept its bounded contribution; establish separate product grounds before selecting a supplier product as another SoI. |
-| Account-as-agreement | A clear choice written by one person is treated as the participants' shared project focus. | Follow a concrete use through contributors and receivers; resolve the material mismatch or limit the coordination that depends on it. |
-| First-candidate freeze | Work has started, so later use or feasibility evidence is treated as irrelevant to project focus. | Record the main assumption and reopen condition with the first choice; return evidence to that claim when it changes. |
+| Account-as-agreement | A clear choice recorded by one contributor is treated as the participants' shared project focus. | Follow a concrete use through contributors and receivers; resolve the material mismatch or limit the coordination that depends on it. |
+| First-candidate freeze | Work has started, so later use or feasibility evidence is treated as irrelevant to project focus. | Record the grounds and reopen condition with the first choice, including any main unresolved assumption; return evidence to that claim when it changes. |
 | Important-subject inflation | A desired state, Work result, description, collection, capability, or transformation is called a System because the project centres on it. | Keep the direct subject and use its FPF pattern. Open `SYSE.1` only if a System designation is required for the current project decision. |
 | Programme-as-performer | Shared resources or one programme plan are treated as proof of one composite acting System. | Use the programme or portfolio grouping for its coordination decision and establish any System composition separately. |
 
 ### SYSE.1:9 - Consequences
 
-The cooperation gains defensible product grounds and an explicit local engineering subject. Contributors can compare what each must supply without treating a local completion as the final product result. Several projects can retain one product SoI; independent product undertakings can retain different SoIs and connected commitments. Architecture and realization evidence can reopen the claim it actually defeats.
+The cooperation gains defensible product grounds and an explicit local engineering subject. Contributors can compare what each must supply without treating a local completion as the final product result. Several projects can retain one product SoI; independent product undertakings can retain different SoIs and connected commitments. Architecture and realization evidence can reopen the claim it defeats.
 
 The cost is visible uncertainty and, for a shared claim, comparison of participants' understanding. Several candidates may remain open. Spend that effort where an unresolved difference can redirect architecture, provision or acceptance; reuse compatible established results.
 
@@ -246,7 +246,7 @@ Outside use supplies the grounds of the comparison rather than a fixed calendar 
 The practice question is how to establish a defensible, shared and revisable project focus for the next
 engineering decision. The selected answer combines explicit framing and valuable alternatives with the
 contribution comparison in §4.4.1. The following research lines support parts of that synthesis; they do not
-establish its comparative effectiveness as a whole. Exact work titles, primary identifiers and evidence limits
+establish its comparative effectiveness as a whole. The work titles, primary identifiers and evidence limits
 are in the public [project-focus research sources](82-syse-sources-1---project-focus-research-sources.md).
 
 
@@ -254,7 +254,7 @@ are in the public [project-focus research sources](82-syse-sources-1---project-f
 | --- | --- | --- | --- |
 | Design framing treats what matters to a design problem as revisable while problem and solution understanding develop together. | The Solution makes the project-system choice revisable and requires the use, assumptions, and contextual relations behind it. | Kelly and Gero (2022), Litster, Cardoso, and Hurst (2024), and Nickel, Hurst, and Duimering (2024). These conceptual and small empirical studies support explicit framing and revision, not one framing ontology or universal Method. | **Adopt and bound.** Adopt co-development and contextual comparison; let the project decision select the focus and establish actual System identity separately. |
 | Set-based design retains alternatives while learning can change feasibility or trade-offs. | The Solution asks for materially different referents and preserves valuable alternatives when the decision needs them. | Toche, Pellerin, and Fortin (2020) review the set-based line; Al Handawi et al. (2024) demonstrate margin-based exploration in one aeroengine-component case. | **Adapt.** Retain alternatives and narrow them by evidence; let the receiving project determine candidate count and decision choreography. |
-| Decision making under deep uncertainty uses robust alternatives, staged commitments, monitoring, and revision rather than prediction alone. | The first account carries an unresolved assumption and a reopen condition; later evidence can change the choice. | Haasnoot et al. (2013), Marchau et al. (2019), Lempert et al. (2024), and Akse (2024), mainly in climate, infrastructure, policy, and sociotechnical-transition settings. | **Adapt.** Use staged commitment and explicit reopening; let the receiving project establish its scenarios, thresholds, triggers, and decision Method. |
+| Decision making under deep uncertainty uses robust alternatives, staged commitments, monitoring, and revision rather than prediction alone. | Record what would warrant reconsidering the first choice. If that choice depends on a materially uncertain assumption, identify it so later evidence can be brought to bear on it. | Haasnoot et al. (2013), Marchau et al. (2019), Lempert et al. (2024), and Akse (2024), mainly in climate, infrastructure, policy, and sociotechnical-transition settings. | **Adapt.** Use staged commitment and explicit reopening; let the receiving project establish its scenarios, thresholds, triggers, and decision Method. |
 | Entrepreneurial-action research treats available means, commitments, contingencies, prediction, and judgement as context-dependent complements. | Candidate generation may use available Systems and commitments without treating them as proof of the project referent or of success. | Chen, Liu, and Chen (2021), Zhang et al. (2023), and Rapp, Olbrich, and Packard (2026). Meta-analytic associations and conceptual synthesis do not establish one causal engineering Method. | **Adapt narrowly.** Keep contingent action and revision as candidate pressure; leave business and Strategy decisions with their practices. |
 
 The serious practice alternative is the NASA handbook's
@@ -269,10 +269,10 @@ receiving use. A bounded expectations-and-scenario discussion can expose the sta
 discovery: which product use grounds the cooperation, which System is being engineered, and which contributions have separate acceptance boundaries? Its direct-subject exit remains available in §4.2.
 
 For this next concept decision, the selected result is a revisable focus and the unresolved connection.
-It deliberately leaves a complete expectations set and broader commitments unprovided. When the receiving
+A complete expectations set and broader commitments remain open. When the receiving
 decision needs those results, obtain them through the expectations treatment. When an existing scenario exchange
-already establishes the needed focus and connections, reuse it. The small account saves no participant work that
-is actually necessary, and the comparison establishes no general time or outcome advantage.
+already establishes the needed focus and connections, reuse it. A shorter account does not reduce the work participants need to establish a common focus. This comparison
+does not establish a general time or outcome advantage.
 
 Reopen this methodological choice when contributors can repeat the designation but apply incompatible
 contribution paths, or when a bounded scenario or facilitated framing treatment resolves the same mismatch with
@@ -298,6 +298,6 @@ These sources support comparing and revising project focus. Actual System recogn
 - `A.1.STM` provides the wider systems-mantra traversal when a practitioner must reconnect this local choice to
   intended product use, architecture, realization, change and recursive creators. It supplies the product/creator distinction while leaving the case-specific designation and actual Work order to their grounds.
 - The applicable FPF decision, authority, evidence, value, harm, temporal, and direct-relation patterns define
-  or constrain those claims when they become current; this pattern does not replace them.
+  or constrain those claims when the engineering question calls for them.
 
 ### SYSE.1:End

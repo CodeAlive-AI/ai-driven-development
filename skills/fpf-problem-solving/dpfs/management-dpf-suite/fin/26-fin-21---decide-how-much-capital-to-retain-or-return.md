@@ -23,22 +23,22 @@ Balance current owner returns, valuable investment, liquidity, financing flexibi
 ### FIN.21:4 - Solution
 
 1. Recover usable cash, existing payment and funding commitments, reserves and restrictions through adequate FIN.2 and FIN.12 results. Obtain the applicable distributability, solvency, tax and authority facts where they affect the action.
-2. Compare retention for actual investment, liquidity or financing needs with return to owners. Use FIN.9 for competing capital uses and FIN.11 for financing consequences. A vague future opportunity is not the same as a selected project, but preserving access can still have supported value.
+2. Compare retention for the investment, liquidity or financing needs identified with return to owners. Use FIN.9 for competing capital uses and FIN.11 for financing consequences. A vague future opportunity is not the same as a selected project, but preserving access can still have supported value.
 3. Set the amount and timing that the corporation can support under the relevant adverse states. Separate a recurring dividend policy from a special distribution; include the consequences of establishing or changing expectations where they matter.
-4. Compare the forms. The corporation pays a dividend to eligible holders according to the rights attached to their interests. A repurchase exchanges company cash for specified interests at a price, changing ownership quantities and potentially their distribution. Include actual tax, transaction, liquidity, control and legal conditions.
+4. Compare the forms. The corporation pays a dividend to eligible holders according to the rights attached to their interests. A repurchase exchanges company cash for specified interests at a price, changing ownership quantities and potentially their distribution. Include the tax, transaction, liquidity, control and legal conditions that apply to each form.
 5. Compare a repurchase price with the value of the interests on matching grounds; do not use an increase in earnings per share alone as proof of value creation.
-6. Return a retention decision or conditional payout recommendation with its amount, form, timing and constraints. Obtain the actual decision and execute through FIN.15 when required.
+6. Return the decision or recommendation to retain or distribute capital, with its amount, form, timing and constraints. Identify any authorization still needed. The responsible parties can use FIN.15 to carry out an authorized payout.
 
 
 
 #### FIN.21:4.1 - Separate capital, profit and cash before naming a surplus
 
 
-Retained profit is the part of earnings kept in the corporation instead of distributed to owners. It can finance receivables, inventory or equipment, so it need not remain in a bank account. Conversely, cash from a new loan or asset sale can increase the bank balance without being recurring profit. Identify the corporation that can make the distribution, the interests entitled to receive it and the actual cash source.
+Retained profit is the part of earnings kept in the corporation instead of distributed to owners. It can finance receivables, inventory or equipment, so it need not remain in a bank account. Conversely, cash from a new loan or asset sale can increase the bank balance without being recurring profit. Identify the corporation that can make the distribution, the interests entitled to receive it and the source of the cash.
 
 Use FIN.2 for the dated available cash and FIN.12 for restrictions. Recover the applicable distributability and solvency conditions, authority and taxes from their responsible sources. Accounting reserves, contractual payout capacity and usable bank cash answer different questions; the smallest relevant limit can constrain the proposed action, but a simple minimum is valid only when the limits refer to the same amount and date and do not themselves change with the payout.
 
-A holding company cannot distribute a subsidiary's cash merely because consolidated accounts show it. Establish the subsidiary-to-parent transfer, its conditions and the parent's own payments before relying on the money. Likewise, cash pledged or reserved for creditors does not become available to owners because management calls it excess. FDM.1–FDM.2 supply the actual parties, positions and transfer relations when these are unclear.
+A holding company cannot distribute a subsidiary's cash merely because consolidated accounts show it. Establish the subsidiary-to-parent transfer, its conditions and the parent's own payments before relying on the money. Likewise, cash pledged or reserved for creditors does not become available to owners because management calls it excess. FDM.1–FDM.2 help identify the parties, positions and transfer relations when these are unclear.
 
 
 
@@ -75,20 +75,20 @@ A policy based on a proportion of earnings makes distributions move with that ea
 
 Test a proposed recurring amount against a sequence of operating, investment and financing conditions. A single strong year can fund a special return without supporting that amount every year. Conversely, an isolated weak year need not defeat a recurring payout if funded reserves and future capacity support it. State the protection horizon and remaining uncertainty; do not infer permanent sustainability from a two-year example.
 
-Consider investor expectations and information effects when proposing a change. A regular payout can be relied on by some owners, while a reduction can convey information or change their willingness to hold the interest. These effects need evidence about the company and audience; an announcement does not mechanically create or destroy a fixed amount of value. Explain the financial cause and the proposed policy clearly enough for FIN.16's advice and the actual decision process.
+Consider investor expectations and information effects when proposing a change. A regular payout can be relied on by some owners, while a reduction can convey information or change their willingness to hold the interest. These effects need evidence about the company and audience; an announcement does not mechanically create or destroy a fixed amount of value. Explain the financial cause and the proposed policy so the decision maker can use the resulting advice under FIN.16.
 
 
 
 #### FIN.21:4.5 - Compare the actual forms and their ownership consequences
 
 
-A proportional cash dividend transfers cash to holders entitled under the interests' rules while ordinarily leaving the number of those interests unchanged. A repurchase transfers cash to participating sellers and removes or changes ownership interests according to the actual transaction. Remaining holders' percentage can increase even while the value of each retained interest falls. Recover the eligible holders, timing, price or pricing rule and quantity; FIN.15 carries payment and settlement once the decision is sufficient.
+A proportional cash dividend transfers cash to holders entitled under the interests' rules while ordinarily leaving the number of those interests unchanged. A repurchase transfers cash to participating sellers and removes or changes ownership interests under the terms of the repurchase. Remaining holders' percentage can increase even while the value of each retained interest falls. Recover the eligible holders, timing, price or pricing rule and quantity; the authorized parties can use FIN.15 for payment and settlement once the decision is sufficient.
 
-For identical ordinary shares in a simplified company with equity value V and N shares before a repurchase, spending P per share for q shares, with 0 < q < N, leaves value V − Pq across N − q shares if nothing else changes. Comparing (V − Pq)/(N − q) with V/N isolates the transfer from a purchase above or below the initial value per share. This is a conditional valuation identity. Taxes, financing, fees, changed information, control or operating effects require their actual adjustments; a market quotation is neither automatically mistaken nor proof of intrinsic value.
+For identical ordinary shares in a simplified company with equity value V and N shares before a repurchase, spending P per share for q shares, with 0 < q < N, leaves value V − Pq across N − q shares if nothing else changes. Comparing (V − Pq)/(N − q) with V/N isolates the transfer from a purchase above or below the initial value per share. This is a conditional valuation identity. Taxes, financing, fees, changed information, control or operating effects require corresponding adjustments to the comparison; a market quotation is neither automatically mistaken nor proof of intrinsic value.
 
 Earnings per share has a different numerator. Repurchase reduces the share count, but earnings may also fall through foregone investment income, financing interest or operating changes. An increase in EPS can coexist with overpayment. Evaluate owner wealth and the actual claim rather than substitute the accounting ratio for the value comparison. A stock dividend or split that merely subdivides identical interests provides no cash and creates no value through the subdivision alone.
 
-Choose the repurchase arrangement from the intended scale and participation: purchases over time, an offer to holders or a specifically negotiated purchase can differ in execution uncertainty, pricing, equal-treatment conditions and control effects. Obtain the actual institutional requirements instead of assuming an authorization is a completed purchase. The quantity and cost actually attainable may differ from the announced maximum.
+Choose the repurchase arrangement from the intended scale and participation: purchases over time, an offer to holders or a specifically negotiated purchase can differ in execution uncertainty, pricing, equal-treatment conditions and control effects. Establish the institutional requirements that apply. An authorization can expire without a purchase. Use completed transactions to establish how many shares were repurchased and at what price. The quantity and cost attainable may differ from the announced maximum.
 
 Compare owner outcomes after applicable tax and transaction consequences when they matter. Owners can differ in residence, tax basis, eligibility and preference for cash. Do not assume one universal dividend-versus-gain tax ranking. Recover the actual affected interests, and retain a disagreement or conditional recommendation when the corporation's choice benefits owners differently.
 
@@ -105,7 +105,7 @@ Reuse a sufficient established policy for an ordinary payment; this Method is fo
 
 Usable cash is 100, unavoidable forthcoming payments are 70 and minimum reserve is 20. Only 10 remains before any further investment or distribution. If a selected feasible investment needs 6, at most 4 remains on these cash grounds. Paying 20 based on the original bank balance would exceed the 4 available for distribution after the selected investment.
 
-In a separate simplified comparison, a company worth 200 has ten identical shares and no other claims. Repurchasing two shares at 25 costs 50 and leaves value 150 across eight shares: 18.75 each. Under the stated unchanged value grounds, the initial value per share was 20, so overpaying harms remaining owners. With the same 50 paid as a proportional dividend, a holder receives 5 for each original share and keeps that share, now worth 15, totaling 20 per share before any tax or transaction effects. All ten shares remain outstanding after the dividend. The examples isolate the price effect; actual forms require their own conditions.
+In a separate simplified comparison, a company worth 200 has ten identical shares and no other claims. Repurchasing two shares at 25 costs 50 and leaves value 150 across eight shares: 18.75 each. Under the stated unchanged value grounds, the initial value per share was 20, so overpaying harms remaining owners. With the same 50 paid as a proportional dividend, a holder receives 5 for each original share and keeps that share, now worth 15, totaling 20 per share before any tax or transaction effects. All ten shares remain outstanding after the dividend. These calculations isolate the effect of the repurchase price. For another payout, use its terms, rights, taxes and transaction costs.
 
 The selling holders give up two shares initially worth 40 and receive 50, a gain of 10. The remaining holders' initial interests were worth 160 and are now worth 150, a loss of 10. Cash received by sellers plus the remaining equity is still 50 + 150 = 200. A repurchase below the initial value per share reverses the direction of this transfer on the same unchanged-value, identical-rights, no-tax/fee grounds; it does not create aggregate owner value by that price difference alone.
 
@@ -138,7 +138,7 @@ A controlling owner's preference may differ from other owners' cash, tax or cont
 
 ### FIN.21:7 - Conformance Checklist
 
-Is the amount supported by dated cash and applicable restrictions? Are retained uses and adverse states considered? Are the actual interests, price, timing and ownership effects clear? Does the advice distinguish a recurring policy from one payment and an approved action from a proposal?
+Is the amount supported by dated cash and applicable restrictions? Are retained uses and adverse states considered? Which interests, price, timing and ownership effects does the comparison use? Does the advice distinguish a recurring policy from one payment and an approved action from a proposal?
 
 ### FIN.21:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -154,10 +154,10 @@ Retention and distribution are competing capital uses with distinct ownership co
 
 ### FIN.21:11 - SoTA-Echoing
 
-The public [CFA payout discussion][CFA-PAYOUT] distinguishes payout policies, forms and owner effects. Damodaran's historical [cash-return treatment][DAM-PAYOUT] connects cash after reinvestment and debt service with the retention decision. FIN.21 develops a dated amount and ownership comparison using actual financial suppliers. It rejects automatic distribution of profit, free cash flow or unused borrowing capacity and does not infer market-value creation from EPS. The two-year case preserves a viable choice between timing patterns while exposing an unsupported recurring amount. Changed investment, access, restrictions or owner-value grounds reopen the recommendation.
+The public [CFA payout discussion][CFA-PAYOUT] distinguishes payout policies, forms and owner effects. Damodaran's historical [cash-return treatment][DAM-PAYOUT] connects cash after reinvestment and debt service with the retention decision. FIN.21 develops a dated amount and ownership comparison using the liquidity, investment and financing results the choice needs. It rejects automatic distribution of profit, free cash flow or unused borrowing capacity and does not infer market-value creation from EPS. The two-year case preserves a viable choice between timing patterns while exposing an unsupported recurring amount. Changed investment, access, restrictions or owner-value grounds reopen the recommendation.
 
 ### FIN.21:12 - Relations
 
-FIN.2 supplies liquidity, FIN.7 the needed interest value, FIN.9 investment alternatives and FIN.11–FIN.12 financing conditions. FIN.16 returns advice and FIN.15 performs an authorized distribution.
+FIN.2 supplies liquidity, FIN.7 the needed interest value, FIN.9 investment alternatives and FIN.11–FIN.12 financing conditions. FIN.16 guides the return of advice. Use FIN.15 to carry out an authorized distribution.
 
 ### FIN.21:End

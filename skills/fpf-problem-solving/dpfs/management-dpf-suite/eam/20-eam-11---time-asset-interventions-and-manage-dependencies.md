@@ -7,7 +7,7 @@
 
 Use this pattern when the timing of an asset intervention can change whether the service or portfolio plan is feasible. A job estimate fits the window, but its preparation, shutdown, testing, return or shared resources do not.
 
-Begin with the complete intervention and its service conditions. Return a feasible timing arrangement or the exact unmet condition. A value recommendation can be delivered before a particular work window has been authorized.
+Begin with the complete intervention and its service conditions. Return a feasible schedule or identify the condition that prevents one. A value recommendation can be delivered before a work window has been authorized.
 
 ### EAM.11:2 - Problem
 
@@ -29,9 +29,9 @@ Place the complete demands in actual windows. A necessary resource bound is tota
 
 If the arrangement fails, compare a real change: another window, another supported option, a qualified provider, a service-preserving fallback or justified deferral. Include its cost and moved burden.
 
-State what happens if an important condition changes during the window. Identify the time, personnel, access or fallback needed to return this asset to a supported operating state, and keep those resources available. Agree with the people controlling maintenance and operation when they must decide on a supported hold or return before that option is lost. Obtain the required allocation or operating decision before relying on reassigned resources, an extended window or changed service.
+State what happens if an important condition changes during the window. Identify the time, personnel, access or fallback needed to return this asset to a supported operating state, and keep those resources available. Agree with those authorized to control maintenance and operation on the latest time to decide on a supported hold or return. Obtain the required allocation or operating decision before relying on reassigned resources, an extended window or changed service.
 
-Return the timing arrangement to the people controlling the work and operation. Stop when the requested planning question is answered. Actual protected work and resumption require their own applicable permissions and evidence.
+Return the timing arrangement to those responsible for controlling the work and operation. Stop when the requested planning question is answered. Actual protected work and resumption require their own applicable permissions and evidence.
 
 ### EAM.11:5 - Archetypal Grounding
 
@@ -51,7 +51,7 @@ Does the schedule include the complete outage and return? Are exclusive resource
 
 ### EAM.11:8 - Common Anti-Patterns and How to Avoid Them
 
-Summing labor-hours and calling them an outage mixes quantities. Model the actual elapsed dependencies.
+Summing labor-hours and calling them an outage mixes quantities. Use the dependencies between tasks to calculate elapsed outage time.
 
 Assuming that two individually feasible outages can overlap can remove the fallback supporting each. Check their combined service and resource conditions.
 
@@ -61,7 +61,7 @@ The programme can be planned against real windows and revised when a constraint 
 
 ### EAM.11:10 - Architectural Rationale
 
-Timing follows the whole intervention's participation in service. This keeps scheduling, technical support and authority distinct while allowing a small finite plan to settle the current question.
+Time the whole intervention against the service that must continue. This keeps scheduling, technical support and authority distinct while allowing a small finite plan to settle the current question.
 
 ### EAM.11:11 - SoTA-Echoing
 

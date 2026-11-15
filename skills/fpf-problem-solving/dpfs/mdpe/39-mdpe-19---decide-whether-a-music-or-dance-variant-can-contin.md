@@ -4,15 +4,15 @@
 
 > **Type:** DPF pattern body
 >
-> **Primary working result:** a **qualified continuation account or decision**. It names the Music-or-Dance subject, representative Work and horizon, the supporting arrangement, available evidence and limits, and the supported continuation, targeted change, restoration, local retirement, investigation or bounded-loss conclusion. A current dependence account or supported decision can finish without another test. A **tested continuation decision** additionally identifies the relevant change, representative Work actually observed, and failure, resilience or inconclusiveness. A post-change reproduction result and a tested causal contribution remain separate.
+> **Primary working result:** a finding or decision about whether, where and for how long a particular music or dance practice continued or can continue. Identify the recurring work, who performed it or could perform it, what support they used or would need, and the time and conditions the evidence covers. A change, restoration proposal, local retirement or finding of loss needs its own grounds. For a change already tested, report what happened under the changed conditions. Attribute success or failure to the change only when a suitable comparison supports that claim.
 
 ### MDPE.19:0 - Use This When
 
-Use this pattern when one successful performance, surviving record, famous name, or remaining expert is being treated as proof that a Music-or-Dance practice can continue.
+Use this pattern to establish how a practice was sustained, whether a variant can be reproduced for a specified use or what a proposed change would affect. A surviving recording, famous name, remaining specialist or single successful performance may supply evidence for only part of that question.
 
-The practical question is:
+The starting question can be historical or prospective.
 
-> Can the named Music-or-Dance variant still be reproduced for the intended use when a credible performer, partner, teacher, instrument, venue, organizer, software, or context change occurs—and what should we change if it cannot?
+> Did the work recur, or can it be reproduced, in the period and arrangement that matter here? If a performer, partner, teacher, instrument, venue, organizer, software component or other condition changes, which parts can continue and which might require action?
 
 Typical situations include:
 
@@ -22,110 +22,110 @@ Typical situations include:
 - a festival, competition, platform, or school keeps a style name visible while the Work that once reproduced it has changed or disappeared; and
 - a robotic or AI Music project retains code and recordings while the hardware, runtime, calibration, operator capability, or performance Method can no longer be assembled.
 
-The gain is a usable account of what sustains reproduction, what dependence matters to the intended horizon, and whether continuation, a targeted change, inquiry or local retirement warrants its burden.
+Identify the conditions that sustain reproduction and the dependencies that matter over the relevant period. If a project must choose, it can use that account to compare continuation, a targeted change, further inquiry or local retirement with their costs.
 
-Use direct repertoire, teaching, rehearsal, preservation, reconstruction, instrument-maintenance, software-maintenance, event-production, community-stewardship, deprecation, or retirement Methods without this pattern when they already return the needed continuation decision. Use `MDPE.19` when the project still confuses a record, one occurrence, one bearer, or one provider decision with continuation of a practice.
+Use a sufficient repertoire, teaching, rehearsal, preservation, reconstruction, maintenance, production or community result directly. A decision about retiring an arrangement can also use the relevant existing deprecation or retirement work. Apply this chapter when the remaining question concerns past recurrence or loss, a current dependency, or the ability of an existing or proposed arrangement to sustain the practice over the stated period.
 
 Use another pattern when the live difficulty is narrower:
 
 - `MDPE.18` for source-traceable memory and lineage evidence;
-- `MDPE.17` for receiving enactment and source contribution;
-- `MDPE.10` for developing performer capability;
+- `MDPE.17` for a receiving performance, the way transmission was arranged or the contribution of a source;
+- `MDPE.10` to assess or develop performer capability;
 - the applicable direct Method for carrying out and testing an already selected local change;
 - `MDPE.20` for several possible future cultural trajectories; or
 - `MDPE.5` for producing one performance occurrence.
 
 #### MDPE.19:0.1 - Working Distinctions
 
-Name the world-side subject before using continuation language. A *variant* in this pattern can be, for example, a performance Method, musical or movement material, a teaching Method, a performance configuration, an event form, or a recognition arrangement. These subjects can continue or fail independently.
+Identify the subject whose continuation, absence or possible restoration is in question. It may be a performance method, piece of music or movement material, teaching method, performing configuration, event form or way of recognizing and selecting variants. A school’s name, its class and its teaching method can have different histories.
 
-Keep five distinctions visible:
+These distinctions affect what the conclusion establishes.
 
 | Distinction | Practical consequence |
 | --- | --- |
-| Record versus practice | A score, video, model, tutorial, or archive entry can support reconstruction; reproducing the practice requires Music-or-Dance Work. |
-| Occurrence versus reproducibility | One performance shows that one performance occurred. Continuation requires another representative occurrence or credible capacity to produce one when needed. |
-| Performer and performing whole | A performing Agent performs Work that enacts a Method. Identify the whole used for that performance, its actual constituents and coordination, and its external support. |
+| Record versus practice | A score, video, model or tutorial can support reconstruction. Records can also document a past reproduction when they establish the relevant work. |
+| Occurrence versus reproducibility | One performance can establish that occurrence. For actual continuation, look for representative repeated work. For the ability to repeat it, establish the necessary participants, resources and conditions over the stated horizon. |
+| Performer and performing whole | For a past performance, identify the performer or ensemble, method, constituents, coordination and outside support relevant to the question. For a proposed arrangement, establish what the performance would require. |
 | Support versus fragility | Intended support is not a defect. It becomes a continuation risk when the receiving use requires replacement, variation, or operation after that support changes. |
 | Local retirement versus cultural loss | A school can stop a class and an ensemble can remove a work from its repertoire. Neither decision establishes that a wider practice has disappeared. |
 
-Here *Agent* means a System with enough agency for the deciding or performing contribution in the case.
+Use *Agent* here for a system with the agency needed for the particular performance or decision. A supporting service or technical constituent may play a different part.
 
 ### MDPE.19:1 - Problem
 
-Music and Dance practices are reproduced by arrangements of actual Work, Methods, performer and audience capabilities, bodies and instruments, teaching, organizers, venues, media, memory, recognition, and selection. These contributions can fail on different time scales.
+Musicians, dancers, teachers, organizers and technical performers can sustain different parts of a practice. Their methods, skills, instruments, venues, records, supporting services and opportunities for recognition or selection can change at different times. Identify which relations make another representative occurrence possible.
 
 A visible trace often hides that structure. A school publishes a class schedule, but only one teacher can make the partner practice work. An ensemble owns a score, but its instrument and performer cannot be replaced. A video preserves a choreography while timing, partner response, improvisation, and teaching knowledge have vanished. A platform reports many views while few practitioners can recognize or enact the style. Conversely, a practice can continue under a new label or medium and be wrongly declared lost.
 
-The expensive error is to protect the visible trace while the reproduction arrangement collapses—or to fund a restoration project without finding the relation that actually prevents another representative occurrence. The project needs a bounded answer about reproduction, not a declaration about culture in general or a new experiment merely to complete that answer.
+A preservation project can spend its budget on the surviving trace while the necessary instrument, teacher or event becomes unavailable. A restoration project can likewise spend on a resource that does not address the reason for the loss. Identify what the available evidence establishes about the particular practice and where the remaining dependence matters.
 
 ### MDPE.19:2 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Fidelity and change | A living practice must preserve some distinctions while changing across performers, bodies, instruments, material, and settings. |
-| Excellence and replacement | One outstanding performer can keep a result reachable while making the practice dependent on one person. |
-| Documentation and embodiment | Records make reconstruction possible, but tacit timing, touch, attention, interaction, and correction can remain absent. |
-| Support and independence | A partner, score, cue, controller, venue, or teacher can be a legitimate part of the practice; removing all support is not automatically a better test. |
+| Fidelity and change | Identify the distinctions needed for continuity and the changes of performer, body, instrument, material or setting that the practice can accommodate. |
+| Excellence and replacement | One outstanding performer may keep the work available. Determine whether anyone else can supply the required contribution when replacement matters. |
+| Documentation and embodiment | Records can support reconstruction. Timing, touch, attention, interaction or correction may still be missing. |
+| Support and independence | For a claim about the intended use, preserve its requirements for the partner, score, cue, controller, venue or teacher. For a past performance, establish which permitted help was used. For a proposed arrangement, establish what support it requires and whether that support will be available. A separate question about dependence may require a comparison under changed support. |
 | Urgency and evidence | Waiting can lose a bearer or instrument, while premature intervention can freeze or misrepresent the practice. |
 | Continuation and opportunity cost | Maintaining one arrangement uses teaching time, venues, money, tools, and attention that could support other practices. |
 | Stewardship and authority | An archive, school, festival, platform, or state body may provide support without having authority to define a community's practice. |
 
 ### MDPE.19:3 - Solution
 
-Select one continuation promise and describe the arrangement that makes representative Work possible. Use the available evidence to return a qualified account, supported continuation, targeted change or local stop. Select a new reproduction test only when its attainable contribution warrants its full design, performer, support, observation and displaced-Work burden. For a selected change, use its direct domain Method; a claimed tested replacement or renewed reproduction requires representative Work under the relevant condition. A later success does not establish the change's causal contribution without the appropriate `C.28` result.
+Identify the practice, period and conditions in question. Describe the arrangement that sustained or could sustain representative work. Use existing records, observations and resource evidence to return the bounded history, present dependence, prospective feasibility or choice they support. If a question remains, weigh the likely contribution of a test against design, performer and observer time, resources, delay and displaced work. Use the appropriate domain method for a chosen change. For a tested replacement or renewed reproduction, establish what was actually performed under the new conditions. For a claim about an effect of the change, use the corresponding `C.28` grounds.
 
-Observations, capability development and support changes may overlap or repeat.
+For example, organizers can change rehearsal support while observing a performer’s development. Establish each result from the work that bears on it.
 
-#### MDPE.19:3.1 - Choose one continuation promise
+#### MDPE.19:3.1 - Identify the subject and period of continuation
 
-State what must still be possible, for whom, where, and over what horizon. Include:
+Identify what reproduction would require, or whether it occurred, for whom, where and over what period. Specify
 
-- the subject—for example, a partnered-improvisation Method, a rhythmic accompaniment practice, a work in active repertoire, or a robotic performance configuration;
-- representative Work that matters to the intended use;
-- the practitioner population, place, and period;
-- the distinctions that must persist and the variations that remain acceptable; and
-- one credible change under which reproduction matters.
+- the subject, such as a partnered improvisation method, rhythmic accompaniment, a work in active repertoire or a robotic performance configuration,
+- the representative work,
+- the population, place and period,
+- the relations that must persist and the variations that still count, and
+- any change of personnel, resources or setting that the question specifically requires.
 
-Prefer a claim that can fail. “Keep Tarraxo alive” is too broad. A testable promise is: “during the next season, at least two teacher-organizer pairs can run a social Tarraxo practice in which dancers use the admitted timing, partner-response, and improvisation Method with varied partners and music, even when the present lead teacher is absent.”
+Use a criterion that lets a reader tell what would satisfy or defeat the claim. For example, a Tarraxo school may promise that during the next season at least two teacher-organizer pairs can run social practice with varied partners and music in the lead teacher’s absence. Establish whether each of at least two distinct teacher-organizer pairs can provide such a session, with dancers using the specified timing, partner response and improvisation method.
 
-If the project cannot name representative Work or continuity discriminators, return that gap to `MDPE.1`, `MDPE.18`, or the direct Music or Dance Method.
+If the question cannot be answered until the representative work or criterion of continuity is identified, obtain that distinction from `MDPE.1`, `MDPE.18` or the relevant music or dance practice.
 
-#### MDPE.19:3.2 - Describe the current continuation arrangement
+#### MDPE.19:3.2 - Describe the arrangement that supports reproduction
 
-Recover only the contributors and relations that could change the promise. Useful questions include:
+Identify the contributors and relations that matter to the claim about this period. For a past occurrence, establish which contributions the evidence documents. If the question concerns dependence, distinguish what was required from what happened to be available or used.
 
 | Concern | Ask about the actual case |
 | --- | --- |
-| Enactment | Which performing Agent performs the representative Work, and which Method does that Work enact? |
+| Enactment | Who carried out or can carry out the representative work, and by what method? |
 | Performing whole | What constitutes the performing whole, how is its Work coordinated, and which conditions, equipment or services support it externally? |
 | Capability | Who can perform, teach, organize, maintain, recognize, or correct the practice under the stated conditions? |
-| Memory | Which records or other source materials, such as recordings, notation, tutorials, oral histories or model files, can support another occurrence, and what do they omit? |
-| Provision | Which Agents provide teaching, rehearsal, venue, event, maintenance, access, or technical support? |
-| Recognition and selection | Which audience, teacher, curator, competition, platform, or practitioner population can recognize the relevant differences, and which choices affect later opportunities? |
-| Authority | Who may change the class, repertoire, event, support service, publication, or technical configuration? |
+| Memory | Which records or other source materials, such as recordings, notation, tutorials, oral histories or model files, document the earlier work or can support another occurrence? Which relevant details, if any, remain unavailable? |
+| Provision | Who supplied the teaching, rehearsal, venue, event, maintenance, access or technical support, or who could provide it? For a claim that the support is secured, establish the commitment. |
+| Recognition and selection | Which audience, teacher, curator, competition, platform, or practitioner population recognized or can recognize the relevant differences? Which choices affected or could affect later opportunities? |
+| Authority | Who held or would need authority to decide about the class, repertoire, event, service, publication or technical configuration during the period in question? |
 
-State the relation: a teacher develops capability; a score describes material; a venue enables an event; a maintainer keeps an instrument usable; an organizer schedules Work; an audience or jury recognizes a difference; a performing Agent performs Work, and that Work enacts a Method.
+Name what each contributor supplies. A teacher may give instruction, a score may specify material, and a venue may make an event possible. A maintainer may keep an instrument usable, an organizer may schedule work, and a jury may recognize a difference. A performer’s work may enact the method in question. Evidence of each contribution licenses a conclusion about that particular relation.
 
-Mark a **continuation-critical relation** when losing or changing it could defeat the stated promise. The first useful result can be as small as “the practice currently depends on one Agent who both teaches the Method and organizes the only recurring event; neither contribution has a tested replacement.”
+Identify a relation as critical to continuation when losing or changing it would put the required recurrence at risk. An adequate finding may be that the same person taught the method and organized the only recurring event, with no demonstrated replacement for either contribution.
 
-#### MDPE.19:3.3 - Use present reproduction evidence
+#### MDPE.19:3.3 - Establish what the evidence shows about reproduction
 
-Use compatible observations of representative Work under current conditions. Arrange new Work only for a needed worthwhile and obtainable observation. For a claimed observed reproduction, identify:
+Use suitable observations of representative work in the period and conditions in question. Arrange a new observation only when a material gap remains and the attainable result justifies the work. For a claim about an actual reproduction, establish
 
 - who performed, what constituted the performing whole, and which coordination and external support relations were used;
 - the Method and material used;
 - which continuity discriminators and allowed variations were observed;
-- which support relations were needed; and
-- what the occurrence establishes for the continuation promise.
+- which participants, resources or services were used and, for a dependence claim, which were required; and
+- what the occurrence establishes about the stated period and conditions.
 
-One successful occurrence supports present enactment. It does not by itself support replacement capacity, transmission, population prevalence, or continuation over the whole horizon.
+One successful occurrence can establish enactment then. A recorded second performance may establish a recurrence. Replacement capacity, transmission, population prevalence and continuation throughout a longer period each require grounds covering that claim.
 
-When no current reproduction can be attempted, keep the current dependence, uncertainty or local retirement conclusion if it answers the receiving question. Use `MDPE.18` and direct historical, archival or reconstruction Methods only when the inquiry is attainable and its expected contribution warrants the whole inquiry burden. Record survival can support a restoration proposal, not a claim that reproduction already occurred.
+If the practice cannot be tried now, use the evidence for the question actually asked. A record of earlier performances can establish their occurrence. Surviving instructions can support a restoration proposal. Records of staffing and resources can establish a present dependency or feasibility limit. A record of cessation can establish which provision stopped. For a claim of deliberate retirement, establish the decision and its scope. Use `MDPE.18` or a specialist method when a historical or reconstruction question remains and further work is worthwhile.
 
-#### MDPE.19:3.4 - Select a useful test of a relevant change
+#### MDPE.19:3.4 - Assess the evidence for a change and decide whether a test is needed
 
-First ask whether uncertainty about a credible change affects the current decision and whether an obtainable test could distinguish the possibilities well enough to justify all its work, delay and cost. Available evidence can suffice for continuation under the supported conditions while replacement remains unknown. If a test is selected, choose a change relevant to the stated horizon. For example:
+For a question about a change, first examine the existing observations and known constraints. They may already establish continuation, successful or failed replacement, a constraint that rules a replacement out, or a dependence that remains unresolved. If a new test could distinguish relevant possibilities, weigh its full cost and delay. If a new test is warranted, choose a variation that represents the claim, such as
 
 - another teacher, performer, partner, organizer, venue, instrument, controller, or software version;
 - a delay before the next occurrence;
@@ -133,48 +133,48 @@ First ask whether uncertainty about a credible change affects the current decisi
 - loss of one provider or support relation; or
 - a different receiving population.
 
-Do not remove a needed constituent or withdraw legitimate support merely to claim independence. If safe withdrawal is impossible or harmful, use a rehearsal, simulation, historical comparison, or other qualified evidence and state the weaker conclusion.
+Assess the intended use with its required constituents and permitted support. Vary a support separately if its loss or contribution is the question. Where withdrawing a support would be unsafe or harmful, use a relevant rehearsal, simulation, historical comparison or other evidence. State precisely what it establishes. A record of the real change may settle a historical question in full.
 
-Varying context is especially important when literal repetition can conceal cue dependence. A performer who succeeds only with one teacher, one partner, one exercise order, or one room may have learned a narrow context-response relation rather than the capability needed by the continuation promise. `MDPE.17` and Human Capability Development govern stronger transfer claims; this test only reveals whether the continuation decision needs them.
+A performer who succeeds with one teacher, partner, exercise order or room may depend on an accompanying cue. Examine a relevant change when that dependence matters. Use `MDPE.17` to assess what a receiver carried over, and Human Capability Development for questions about a human performer’s contribution or development. A performance after a change can establish what happened there before its cause is known.
 
-#### MDPE.19:3.5 - Change the selected relation and test the claimed reproduction
+#### MDPE.19:3.5 - Address a dependency or assess reproduction after a change
 
-When a change is warranted, target the continuation-critical relation supported by the current account or a completed test. Examples of targeted changes include:
+When a change is wanted and warranted, choose one that addresses the relation on which reproduction depends. An existing account or a completed test may already identify it. Possible changes include the following.
 
 | Observed weakness | Relation-specific intervention |
 | --- | --- |
-| One performer or teacher is irreplaceable | Develop and test another Agent's capability; distribute teaching or correction Work; preserve access to the remaining expert without assuming unlimited unpaid Work. |
-| Material survives but tacit Method is missing | Combine source recovery with rehearsal, annotation, oral history, movement or sound analysis, and a receiving trial. |
+| One performer or teacher currently has no established replacement | Use existing capability where it meets the demand, develop another performer, or distribute teaching and correction. Agree how much of the remaining expert’s time is available and on what terms. |
+| Material survives but evidence of the embodied method is missing | Recover the missing relation from usable sources, rehearsal, annotation, oral history, or movement or sound analysis. Arrange a receiving trial where the claim requires one. |
 | Instrument, hardware, software, or calibration is the single point of failure | Maintain it, prepare a compatible replacement, preserve configuration information, or branch to a variant with declared changes. |
 | One venue, organizer, or event provides the only recurring opportunity | Develop another provider arrangement, share organizing capability, or redesign the practice for another suitable setting. |
-| Practitioners can perform representative Work that enacts the variant, but audiences or selectors cannot recognize it | Develop recognition capability through `MDPE.23` or change the presentation and selection arrangement through `MDPE.13`, while preserving the variant's relevant distinctions. |
-| Literal reproduction is infeasible or undesirable | Select a branch that preserves the needed function or relations and state what changed; do not claim uninterrupted identity without evidence. |
-| Support cost or harm exceeds current value | Retire the named class, repertoire membership, service, publication, or support arrangement within authority; preserve useful memory and notify affected Agents when required. |
+| Performers can use the variant, but audiences or selectors cannot recognize it | Use `MDPE.23` to establish who can recognize the difference under the required conditions or to develop that capability when appropriate. Use `MDPE.13` to assess or change how the variant is presented and selected. Preserve the distinctions relevant to the variant. |
+| Literal reproduction is infeasible or undesirable | If a branch can preserve the required function or relations, describe what would change and select it when authorized. Report a feasibility limit or local stop if no suitable branch is available. |
+| Support cost or harm exceeds the value of continuing the present arrangement | Within the holder’s authority, retire the relevant class, repertoire entry, service, publication or support arrangement if that is the chosen response. Preserve useful memory and notify affected participants when required. |
 
-When the task includes performing a selected intervention, a capable and authorized Agent uses the applicable direct teaching, coaching, rehearsal, preservation, maintenance, software, event-production, organization-change or retirement Method. The continuation decision neither grants permission nor establishes that the intervention occurred. A warranted proposal can finish before that Work; a claimed tested intervention cannot.
+A capable, authorized party carries out a chosen intervention using the relevant teaching, rehearsal, maintenance, preservation, software, production, organizational or retirement method. A proposal or decision can finish before implementation. To report an intervention as completed, establish the work that took place.
 
-When the requested result is tested post-change reproduction, observe representative Work under the changed condition. A document, training event, software change, new assignment or maintenance action is not that result. If reproduction succeeds, report the Work and changed arrangement; if it fails or remains inconclusive, report that result. Claim that the intervention repaired or strengthened continuation only with a suitable `C.28` basis. A bounded keep, reverse, revise or stop decision can use the weaker supported result without another trial or causal comparison.
+For a claim about reproduction after a change, use evidence of representative work under the changed conditions. A manual can show what was written. Records of instruction, assignment or installation can establish those changes where they took place. Report what the resulting performance achieved, where it failed or what remains uncertain. A claim that the intervention improved or impaired reproduction needs suitable `C.28` grounds. The authorized holder may still decide to keep, reverse, revise or stop an arrangement on the narrower evidence.
 
 #### MDPE.19:3.6 - Return the supported continuation account or decision
 
-State the conclusion supported by the available basis at the scope needed for this decision. Distinguish a qualified current account from a performed test:
+Return the conclusion about the specified practice, conditions and period. If further action is in question, explain which finding it uses. Examples include
 
-| Supported conclusion | Useful decision |
+| What the evidence establishes | Possible use of the finding |
 | --- | --- |
-| Reproduction survived the relevant change | Continue the named arrangement for the stated horizon; retain the test and recheck condition. |
-| Current evidence supports reproduction under one named dependent arrangement | Continue within that supported horizon, retaining the dependence and any unknown replacement. Strengthening the relation or testing replacement is a separate choice. |
-| Reproduction succeeded after the arrangement changed | Keep or continue the arrangement only for the tested scope; monitor the reproduced Work, dependencies, and burdens moved elsewhere. This result alone does not identify what caused the difference. |
-| A `C.28` result supports the selected change's causal contribution | Use the supported contribution claim needed by the decision; preserve the comparison, scope, alternatives, uncertainty, and moved burdens. |
-| Current reproduction failed, but restoration conditions are available | Propose or authorize a restoration trial only if its attainable contribution warrants its full burden; retain the direct Method, performer capability, source basis, support, permission and stop condition. An available but unwarranted trial need not be undertaken. |
-| One provider no longer supports the practice | Retire only that provider's class, event, repertoire membership, service, or publication; make no wider loss claim without evidence. |
-| Observation supports absence in a stated population, place, and period | Report bounded absence under the observation criterion and state what would revise it. A loss claim additionally needs evidence of prior presence and the change; preserve its historical and causal limits. |
-| Evidence cannot distinguish the live alternatives | Finish the qualified account or decision supported across those alternatives. Select one useful attainable observation only when its contribution warrants its whole burden; otherwise keep the uncertainty and withhold claims that depend on resolving it. |
+| Representative work continued after the relevant change | Report what continued, when and under which conditions. A holder deciding to rely on it can use that scope and identify when it would need reconsideration. |
+| Reproduction depended on a named arrangement during the stated period | Identify the dependence and any unknown replacement. Rely on the arrangement for further work only over the period for which its availability and the needed capability are established. Strengthening it or testing a replacement requires its own choice. |
+| Representative work succeeded after an arrangement changed | Report the reproduced work, conditions and any costs moved elsewhere. A decision about keeping it can use those grounds. Attribution of success to the change needs further causal grounds. |
+| A suitable `C.28` comparison supports a causal contribution | Identify the change, supported effect, scope, comparison, alternatives, uncertainty and any burden moved elsewhere. The finding may itself answer the question. |
+| Reproduction failed, but conditions for a restoration trial are available | Report the failed attempt. If restoration is in question, describe the feasible trial and compare its likely contribution and full cost. Identify the direct method, performer, sources, support, permission and stop condition for a warranted proposal or authorized trial. |
+| One provider has withdrawn | Establish just what stopped, when and for whom. Another provider or a continuing group may already sustain the same class or practice. A decision to retire a provider’s own remaining arrangement belongs to the holder with authority over it. |
+| Observation supports absence in a stated population, place and period | Report the observed absence under the specified criterion. A claim of loss also needs evidence of earlier presence and the subsequent change. State when the conclusion would need reconsideration and identify any uncertainty about whether, when or why loss occurred. |
+| The evidence does not distinguish remaining explanations | Report what the explanations share and which further conclusion remains open. Seek another observation if its attainable contribution to the question warrants its burden. |
 
-A useful return fits in one paragraph:
+For example, the school deciding how to cover an absence might report the following.
 
-> The class-and-social practice currently depends on the lead teacher-organizer. In the absence trial one assistant supplied the needed correction, but neither assistant completed the event provision. The school will retain that corrector, prepare the other assistant for organizing Work over the next six sessions, and then try the combined arrangement with varied partners and music. The gap concerns provision in this arrangement; it does not require both assistants to become complete replacement teachers. Until representative reproduction succeeds, the school retains the qualified dependence claim.
+> The class-and-social practice currently depends on the lead teacher-organizer. In the absence trial one assistant supplied the needed correction, but neither completed the organizing work needed to hold the social session. The school will retain that corrector, prepare the other assistant for organizing Work over the next six sessions, and then try the combined arrangement with varied partners and music. The gap concerns provision in this arrangement; it does not require both assistants to become complete replacement teachers. Until representative reproduction succeeds, the school retains the qualified dependence claim.
 
-Include the evidence limits, deciding Agent, authority, affected Agents, cost, and recheck condition when they change the decision.
+Include the decision holder, authority, affected participants, cost and grounds for reconsideration where these matter to the use. For an account of a past decision, establish whose authority and resource commitments applied at the time.
 
 ### MDPE.19:4 - Worked Cases
 
@@ -184,14 +184,14 @@ In this constructed example, a Tarraxo school advertises a class and holds many 
 partner response, recruits dancers, books the room, and runs the weekly social practice. The continuation promise
 is one partner-responsive class-and-social occurrence during the next term when the lead teacher is absent.
 
-Two assistants first run a representative session with varied partners and music while the lead teacher observes
-without cueing. Both demonstrate figures, one can correct timing and partner response, and neither completes the
-organizing Work needed to start and sustain the social session. The missing relation is event provision. The
-available corrector already supports the teaching part of this promise; the observation does not establish a
-second failure merely because the other assistant cannot also correct. The class-and-social arrangement must
-supply the required contributions, not every capability in every participant.
+The two assistants first run a representative session with varied partners and music. The lead teacher
+observes without cueing. Both assistants demonstrate figures. One corrects timing and partner
+response, but neither completes the organizing work needed to start and sustain the social session. The
+school now knows which contribution failed in this trial. The corrector can supply the teaching part,
+while the organizing work still needs a provider. The promise concerns the combined class and social
+practice, so this evidence gives the school no reason to require both assistants to qualify as teachers.
 
-Before choosing the change, the school compares three treatments for that same next-term absence. The following burdens are the local teacher's planning estimates, not measured learning rates:
+The school compares three ways to cover the lead teacher’s absence next term. The local teacher estimates the preparation each option will require. Use subsequent performance to assess any newly developed capability. The first trial already established the correction one assistant can provide.
 
 | Treatment | Contribution and full relevant burden | Decision for this promise |
 | --- | --- | --- |
@@ -199,70 +199,70 @@ Before choosing the change, the school compares three treatments for that same n
 | Develop the second assistant as an independent teacher-organizer | Six additional ninety-minute tutorials would require nine lead-teacher hours, plus three hours of partner practice and the same event preparation. This could broaden later coverage, but it takes time from the lead teacher's other scheduled class and still leaves new correction capability to establish. | Defer for this horizon: the present promise requires one functioning arrangement, and no decision-bearing need for two interchangeable teachers earns that extra burden. Reconsider if separate coverage becomes necessary. |
 | Offer a distinct self-practice branch using existing videos | A school administrator can prepare access in one hour; participants study individually. It uses no partner-correction session, but also returns no live partner-responsive class and social occurrence. | Decline under the current promise. It becomes an option only if the school and participants accept that narrower use; preserving the title would not preserve the result. |
 
-The comparison does not wait for a trial of every alternative. Existing capability evidence, available staff time and the agreed receiving use suffice to choose the targeted preparation; the promised post-change reproduction remains to be observed.
+The school can choose targeted preparation from the existing evidence of correction, staff time and the agreed use. It has yet to see the changed arrangement produce the class and social session.
 
-The school retains the capable assistant's correction Work. Through its direct event-production and teaching
-Methods, it prepares the other assistant for room, communication, admission and session-running Work over six
-guided sessions. It tests their complementary arrangement rather than training two interchangeable teachers.
-They then run another
-representative class and social session without the lead teacher. The session occurs, the assistants correct the
-observed timing and partner-response failures, and the planned social Work continues with varied partners and
-music. The school keeps the arrangement for the next term within those staffing and support conditions.
-If organizing duties later take the corrector away from the needed partner corrections, or the corrector becomes
-unavailable, that observation reopens coverage: add a complementary provider, develop replacement capability or
-narrow the promise. A further absence test is selected only if it can change that decision at worthwhile burden;
-the present occurrence does not establish reproduction three months later.
+The school retains the assistant who can correct partner response and uses six
+guided sessions to prepare the other for room booking, communication, admission
+and running the event. The two assistants then run another representative class
+and social session without the lead teacher. The session takes place, the pair
+provides the needed corrections to timing and partner response, and social practice
+continues with varied partners and music. The school keeps the arrangement for
+next term under these staffing and support conditions. If organizing duties draw
+the corrector away or that person becomes unavailable, the school may need another
+provider, a replacement skill or a narrower promise. It would run another
+absence trial if sufficiently useful for that choice. This occurrence establishes
+what happened then and leaves actual reproduction three months later open.
 
-The warranted conclusion is: **representative reproduction succeeded after the support arrangement changed**.
-Several changes occurred together and no comparison isolated their contributions. The school does not need that
-stronger claim for the reversible keep-and-monitor decision, so it records the causal contribution of each change
-as **not tested**. If the school later must choose which costly element to retain, it can use a `C.28`-governed
-comparison. Until then, “the co-teaching intervention repaired continuation” would be stronger than the obtained
-evidence.
+**The assistants reproduced the practice after the support arrangement changed.** Several
+changes occurred together, and the school has no comparison that isolates their contributions.
+The school can keep and monitor the arrangement on the strength of the observed session. It
+may later need to decide which
+costly element to retain. For that decision it can compare the elements through `C.28`. Until such a comparison
+is available, the school can report what followed the change and leave its cause open.
 
-#### MDPE.19:4.2 - Ensemble: the score survives, the active repertoire does not yet
+#### MDPE.19:4.2 - Ensemble: one scheduled concert and a five-year repertoire commitment
 
-An ensemble owns a score and recording, and one specialist can perform the work on a rare instrument. In this constructed case, current rehearsal, instrument, performer, permission and venue evidence support one scheduled concert. A replacement trial would displace needed preparation without changing that choice: the ensemble continues the concert arrangement and states its single-specialist dependence. That is a complete current decision, not a tested replacement. For a five-year active-repertoire promise the same basis is insufficient: maintenance, another performer, rehearsal access and organizer commitment have no tested replacements.
+An ensemble has a score, a recording and one specialist able to play the work on a rare instrument. In this constructed case, rehearsal, instrument, performer, permission and venue arrangements are sufficient for one scheduled concert. A replacement trial would displace preparation without changing that decision, so the ensemble keeps the arrangement and records its dependence on the specialist. For a five-year repertoire commitment, establish how long the performer, maintenance, rehearsal access and organizing support will be available. If the commitment requires cover during an absence, establish a suitable replacement for the contribution at issue.
 
-For that changed five-year question, suppose a qualified alternate performer, maintained instrument, rehearsal access, permission and preparation window make replacement testing both obtainable and worth its full burden. The ensemble tests an alternate performer with the maintained instrument and later a compatible substitute instrument. The first test exposes missing technique; the second changes timbre beyond the admitted continuity limit. The resulting decision can be to train the alternate performer and maintain the original instrument for two seasons while keeping the substitute as a distinct branch. These failed tests remain failed; a score-preservation project alone would not solve either failure.
+For the five-year question, suppose an alternate with suitable general qualifications, a maintained instrument, access, permission and preparation time make a trial worthwhile. The ensemble tries the alternate performer with the original instrument and later tests a compatible substitute instrument. The first trial reveals a gap in technique. The second produces a timbre outside the agreed limit. On that basis the ensemble could choose to train the alternate, maintain the original instrument for two seasons and keep the substitute as a distinct variant. These options address the observed technique and timbre limits. Preserving the score would retain the written material.
 
 #### MDPE.19:4.3 - Archive reconstruction: a new present variant without invented continuity
 
-Film, notes, music, and testimony survive for a partner-dance practice, but no current pair has been observed performing representative Work that realizes its timing, partner response, improvisation, and social use. `MDPE.18` supplies source-traceable evidence and visible gaps. A reconstruction team then uses direct movement-analysis, oral-history, rehearsal, teaching, and performance Methods to prepare a receiving trial.
+Film, notes, music, and testimony survive for a partner-dance practice, but no current pair has been observed performing representative Work that realizes its timing, partner response, improvisation, and social use. Using `MDPE.18`, the team establishes what the sources show and which relations remain open. To produce a present reconstruction, it uses direct movement-analysis, oral-history, rehearsal, teaching, and performance Methods to prepare a receiving trial.
 
-If a pair performs representative Work, the project can claim a present reconstructed variant within the tested limits. It cannot infer uninterrupted transmission, historical identity beyond the evidence, population recognition or durable retention. Testing another pair and organizer after a delay becomes a separate useful inquiry only when the receiving continuation question needs that attainable contribution.
+If the pair performs the relations required for the reconstruction, that performance can establish a current variant within its observed limits. Uninterrupted transmission, wider historical identity, population recognition and durable retention each require corresponding evidence. Examine another pair and organizer after a delay if that question matters and the further observation is worth obtaining.
 
 #### MDPE.19:4.4 - A school closes a class; the wider practice remains an open question
 
 A school may stop offering a class because the teacher leaves, the venue closes, safety conditions change, or another programme has higher value. The school can decide about its own class and support. It cannot, from that decision alone, retire the style or declare it lost in the city.
 
-If the wider question matters, observe the named practitioner population, Work, reproduction opportunities, place, and period with a suitable field Method. When no useful wider decision depends on the answer, stop at the local retirement result.
+If the question concerns the wider practice, use sufficient evidence about the relevant practitioners, occurrences, opportunities, place and period. Seek further field observations if needed and warranted. When the question concerns only the school, the known local outcome can finish the account.
 
 #### MDPE.19:4.5 - Stored AI Music code is not a reproducible performing whole
 
-A repository contains model weights, code, musical material, configuration notes, and a recording. The result supports memory and possible reconstruction. It does not show that a current Agent and compatible hardware, runtime, interfaces, calibration, instruments, and support can perform representative Music Work.
+Model weights, code, material, configuration notes and a recording survive in a repository. They can help reconstruct an earlier performance. To assess present reproducibility, establish the required performer, compatible hardware, runtime, interfaces, calibration, instruments and support, and whether that configuration is available and capable of the required work.
 
-A reconstruction test assembles the performing whole and attempts the named Work. Success establishes one present occurrence under that configuration. A later test after a software or hardware change can support a bounded continuation decision. Neither test establishes that a wider Music culture recognizes or retains the variant.
+For a reconstruction trial, the team assembles the performing configuration and attempts the named work. A successful trial establishes the occurrence under those conditions. Suitable records may already document that result or a later one after a software or hardware change. Use them for the question they answer. Recognition or continued use across a musical population requires evidence about that population.
 
 ### MDPE.19:5 - Recognition and Assurance
 
-Check that the continuation account answers four questions:
+Use these questions to check the conclusion about the particular period and subject.
 
-1. What Music-or-Dance subject should remain reproducible, and in what representative Work?
-2. Which actual relation currently makes reproduction possible?
-3. What available basis and limits support the current account? If a change was tested, what failed, survived or remained inconclusive?
-4. What continuation, targeted change, inquiry or local stop follows, and which stronger claims remain unsupported?
+1. What subject and representative work define reproduction in this case?
+2. Which relations sustained the work, currently support it or would be required to reproduce it?
+3. Which evidence covers the period and conditions? If a change was tested, what failed, survived or remained inconclusive?
+4. What does that evidence establish or leave open? If a further choice is requested, what supports continuation, a change, inquiry or a local stop?
 
-Assure the result with the following checks:
+For the claims made, check that
 
-- the performing and deciding Agents are named as Agents only where agency matters;
-- records and descriptions are not treated as performing Agents or living practice;
-- the performing whole, its coordination and its external support are visible when they change the result;
-- continuity discriminators and allowed variation prevent both identity-free drift and frozen purity;
-- one occurrence, receiving enactment, recognition event, or local provider decision is not inflated into population-wide retention;
-- a post-change reproduction claim includes repeated representative Work, not only completed training, documentation, software, maintenance, or organizational activity;
-- a claim that the selected change repaired or strengthened continuation also has the `C.28` causal-use result needed by the decision;
-- retirement is limited to the arrangement within the deciding Agent's authority;
+- the performers, organizers, maintainers and decision holders are identified where their different contributions matter,
+- records and descriptions are used for what they document about a practice,
+- the performing whole, its coordination and its external support are identified where they affect the finding,
+- the criteria of continuity identify which relations must persist and which may vary,
+- the population and period claimed are covered by evidence beyond a single receiving performance, act of recognition or local closure when that scope requires it,
+- a claim about one post-change performance has evidence of that occurrence, and a claim of renewed recurring practice has evidence of recurrence over the stated period,
+- a causal claim about how a change affected continuation has a suitable `C.28` basis,
+- local retirement is attributed to its authorized holder and identified arrangement, and
 - a loss claim names its population, place, period, observation basis, uncertainty and revision condition.
 
 ### MDPE.19:6 - Common Failures and Repairs
@@ -271,64 +271,64 @@ Assure the result with the following checks:
 | --- | --- |
 | “The archive proves the practice is alive.” | Use the archive through `MDPE.18` for what it supports. A claimed present reproduction needs representative Work evidence; a qualified current account need not commission a new trial. |
 | “One expert can still do it, so continuation is secure.” | Bound continuation by that dependence and horizon. Use applicable replacement evidence or select a worthwhile obtainable test when the promised use requires replacement. |
-| “We ran a workshop, so transmission succeeded.” | Use `MDPE.17` for receiving enactment; then test later reproduction if continuation is current. |
-| “Remove every support to prove independence.” | Keep the constituents and external support required by the promised use; vary only a relation whose change matters to that use. |
-| “The ministry, platform, or press recognizes it, so practitioners retain it.” | Use that evidence for visibility or official recognition and inspect practitioner Work separately. |
-| “Our school stopped, so the dance is lost.” | Retire the school's arrangement; make a wider claim only from wider evidence. |
-| “We strengthened continuation by writing a manual.” | Repeat representative Work. Report renewed reproduction under the changed arrangement; claim the manual's causal contribution only with a suitable `C.28` result. |
-| “The practice failed; preserve everything.” | Identify the failed relation and compare a targeted repair, a branch, local retirement, and bounded loss. |
-| “If continuation is fragile, remove the obstacle or continue anyway.” | State the supported dependence and horizon. A qualified continuation, targeted repair proposal or authorized local retirement can finish now; a tested repair still requires its actual representative Work and evidence. |
+| “We ran a workshop, so transmission succeeded.” | Establish what the workshop evidence shows about the instruction provided. For a claim that it transmitted a method, examine the receiver’s performance and the source’s contribution through `MDPE.17`. For continuation, use evidence of later reproduction or establish the limit of what is known. |
+| “Remove every support to prove independence.” | Use the constituents and help specified for the target performance. Qualify a comparison with changed support separately when its contribution or the consequences of its loss are at issue. |
+| “The ministry, platform, or press recognizes it, so practitioners retain it.” | Report the visibility or recognition actually documented. To establish retention by practitioners, examine evidence about their work during the relevant period. |
+| “Our school stopped, so the dance is lost.” | Establish which school provision ended. Investigate other arrangements when the question extends to the wider practice. A wider loss claim needs corresponding evidence. |
+| “We strengthened continuation by writing a manual.” | Report what was written. Use existing or new representative performance evidence for any subsequent reproduction, and suitable `C.28` grounds for a claim that the manual helped cause it. |
+| “The practice failed; preserve everything.” | Identify the failed relation. For a further choice, compare feasible responses, including retaining a still-supported arrangement, targeted repair, branching or local retirement. A bounded loss, when established, is a finding about what happened. |
+| “If continuation is fragile, remove the obstacle or continue anyway.” | Report the supported dependence and horizon. The project may use that account, propose an affordable change or choose a local retirement within its authority. To claim that a completed repair restored practice, examine the actual work and the grounds for the asserted cause. |
 
 ### MDPE.19:7 - Consequences
 
-Positive consequences:
+These findings can help practitioners in several ways.
 
-- preservation resources target performer capability, teaching, instrument, software, venue, organizer, recognition, or memory according to the observed failure;
-- hidden dependence on one bearer or provider becomes visible before loss;
-- reconstruction can create a useful present variant without fabricating an uninterrupted lineage;
-- a living practice can change medium or name without being declared lost merely because its old trace disappeared;
-- local retirement remains separate from cultural extinction; and
-- evidence about actual practitioner Work is not displaced by official, academic, or media visibility.
+- A finding about a failure can guide expenditure on the performer, teacher, instrument, software, venue, staff, recognition or records relevant to it.
+- Dependence on a single bearer or provider can be identified before that resource is lost.
+- A team can reconstruct and identify a useful present variant while leaving the earlier lineage open.
+- A change of name or medium can be compared with evidence about whether the practice continued.
+- A local retirement can be attributed within its actual scope.
+- Evidence about what practitioners did can be considered alongside institutional, academic or media accounts of visibility.
 
 Costs and limits:
 
 - representative tests consume performer, venue, instrument, teaching, and observation capacity;
-- some relations cannot be varied safely or ethically, so conclusions remain weaker;
+- some relations cannot be varied safely or ethically. A historical record or a suitable substitute may answer the question. Otherwise the relevant uncertainty remains;
 - changing one continuation relation can move cost or burden to teachers, maintainers, organizers, source communities, or alternative practices; and
-- no bounded project can guarantee future cultural retention. It can only improve or qualify the reproduction arrangement within its horizon and authority.
+- a project can improve the arrangement or qualify its prospects within its own horizon and authority. Future cultural retention depends on what the population continues to do.
 
 ### MDPE.19:8 - Rationale and Source Use
 
-UNESCO's intangible-cultural-heritage practice distinguishes documentation from continued recreation, transmission, community participation, and revitalization. This pattern uses that distinction without treating official listing or policy authority as evidence of actual practice.
+UNESCO's intangible-cultural-heritage practice distinguishes documentation from continued recreation, transmission, community participation, and revitalization. Use an official listing as evidence of recognition. If an accompanying account documents actual practice, examine what it observed and when.
 
-Experimental cultural-evolution work distinguishes several transmission arrangements, learning opportunities, costs, redundancy, and information-loss mechanisms. It supports varying the relation relevant to a claim rather than assuming one universal transmission-chain test.
+Derex and colleagues compare individual and social learning arrangements, acquisition costs, repeated effort and differences in learning opportunity. Use those distinctions to choose a comparison appropriate to the claim about reproduction.
 
-Singh and Hill report no evidence of dance, operationalized as movement intentionally synchronized to music, or infant-directed song among the Northern Aché during 122 months of fieldwork between November 1977 and January 2020. Infant-directed song is broader than lullabies. This bounded negative observation challenges universality of those behaviours under those criteria; it does not show absent biological capacity or absence of every activity that might be called Dance. Later introduction remains possible. Settlement-era loss and an earlier bottleneck are alternative historical explanations, not observed loss events or settled causes. The observation grants no authority for an outside restoration project.
+Singh and Hill report no evidence of dance, defined for their inquiry as movement intentionally synchronized to music, or of infant-directed song during 122 months of fieldwork among the Northern Aché between November 1977 and January 2020. Infant-directed song includes more than lullabies. Their observations challenge claims that these behaviours occur in every population under those criteria. They leave other definitions of dance, biological capacity and later introduction open. The authors discuss settlement-era loss and an earlier bottleneck as historical explanations. Neither the event nor its cause follows from the reported absence. Authority for any proposed intervention is a separate question.
 
-Dance-interaction and reporting studies show why video or movement geometry alone can miss partner response, touch, timing, agency, feedback, teaching, and social setting. Direct Music and Dance Methods remain necessary for deciding which differences matter and for performing the test.
+Dance-interaction and reporting studies identify information about touch, timing, agency, feedback, partner response, teaching and setting that video or geometry alone may miss. Use an appropriate music or dance method to identify which differences matter. Consult existing observations or obtain a representative performance when the question requires one.
 
 | Source | Use in this pattern | Limit |
 | --- | --- | --- |
-| UNESCO, [2003 Convention](https://ich.unesco.org/en/convention), [Transmission](https://ich.unesco.org/en/transmission-00078), and [Safeguarding without freezing](https://ich.unesco.org/en/safeguarding-00012) | Distinguish record preservation, enactment, transmission, recreation, participation, and revitalization. | Listing and policy do not establish present continuation or value in one population. |
-| Singh and Hill, [“Loss of dance and infant-directed song among the Northern Aché”](https://doi.org/10.1016/j.cub.2025.04.018), 2025 | Negative observation of intentionally music-synchronized movement and infant-directed song in the Northern population, 1977–2020. | Scope excludes a claim about every Dance meaning, biological capacity, later introduction or an identified loss event; historical explanations and intervention authority remain separate. |
-| Derex et al., [“Trade-offs, control conditions, and alternative designs in the experimental study of cultural evolution”](https://doi.org/10.1073/pnas.2322886121), 2024 | Select transmission and reproduction probes according to the claim and cost. | No experimental arrangement is the default for field practice. |
+| UNESCO, [2003 Convention](https://ich.unesco.org/en/convention), [Transmission](https://ich.unesco.org/en/transmission-00078), and [Safeguarding without freezing](https://ich.unesco.org/en/safeguarding-00012) | Distinguish record preservation, enactment, transmission, recreation, participation, and revitalization. | For a finding about current practice or its value to a community, examine the supporting observations and participants’ accounts, including any reported in the listing. |
+| Singh and Hill, [“Loss of dance and infant-directed song among the Northern Aché”](https://doi.org/10.1016/j.cub.2025.04.018), 2025 | No evidence of intentionally music-synchronized movement or infant-directed song during 122 months of fieldwork among the Northern Aché between 1977 and 2020. | Scope excludes a claim about every Dance meaning, biological capacity, later introduction or an identified loss event; historical explanations and intervention authority remain separate. |
+| Derex et al., [“Trade-offs, control conditions, and alternative designs in the experimental study of cultural evolution”](https://doi.org/10.1073/pnas.2322886121), 2024 | Compare learning opportunities, time available and repeated effort when choosing a test of a transmission or reproduction claim. | No experimental arrangement is the default for field practice. |
 | Barnstaple et al., [“This time with feeling”](https://doi.org/10.3389/fcogn.2024.1385087), 2024; Whitehead et al., [“Capturing spontaneous interactivity”](https://doi.org/10.3389/fpsyg.2024.1465595), 2024 | Preserve bodies, interaction, setting, equipment, participant evidence, and coordination in Dance tests. | Their measures do not by themselves establish continuation or select an intervention. |
 
-Refresh a source only when a newer result changes a test, intervention, evidence limit, or continuation decision. Publication status, official authority, and press attention do not substitute for actual Work in the named practice.
+Reconsider a source when new evidence could change a historical finding, a proposed test, a decision or the limits on use. Interpret publication, official recognition and press attention at the scope they document. Evidence of actual practice can be present in those sources when they report the relevant work.
 
 ### MDPE.19:9 - Relations
 
 | Related result | Use here |
 | --- | --- |
 | `C.36` and `C.36.P` | Supply cultural generation, transmission, recognition, selection, retention, intervention and loss distinctions. `MDPE.19` specializes them to a Music-or-Dance continuation account or decision, including a selected reproduction test. |
-| `MDPE.17` | Supplies compatible evidence of receiving enactment and source contribution. One receiving occurrence does not establish later continuation. |
-| `MDPE.18` | Supplies source-traceable memory, lineage alternatives, and missing embodied knowledge. Evidence of memory is not present reproduction. |
-| `MDPE.10` | Supplies compatible performer-capability evidence and its limits. Capability without representative Work is not continuation. |
-| `MDPE.13` | Supplies recognition-and-selection changes when failure lies in how variants become visible, recognized, or selected. |
-| Applicable direct teaching, rehearsal, preservation, maintenance, software, event-production, organization-change or retirement Method | Governs actual selected intervention Work by a capable and authorized Agent. `MDPE.19` uses compatible observations for a tested result; a continuation account or warranted proposal does not imply that Work was performed. |
-| `MDPE.20` | Can use qualified present continuation evidence and its limits as input to competing trajectory hypotheses; a tested input names the Work actually observed. |
+| `MDPE.17` | Use suitable findings about receiving performance, transfer or source contribution. A further claim of continuation needs evidence covering the relevant later period. |
+| `MDPE.18` | Use historical findings about memory, lineage and any missing embodied knowledge. Where a record documents an actual reproduction, examine it as evidence of that performance in its period. |
+| `MDPE.10` | Assess a performer’s capability and its limits. Capability evidence can support the feasibility of later work. A claim about an actual recurrence needs evidence of that occurrence. |
+| `MDPE.13` | Use this method to establish how a variant was presented and selected, or to assess or change the arrangements when that is the task. |
+| Applicable direct teaching, rehearsal, preservation, maintenance, software, event-production, organization-change or retirement Method | Use it to carry out an authorized change when that work is required, or to interpret a result from an earlier intervention. For a claim of renewed reproduction, examine the relevant performance. |
+| `MDPE.20` | Use findings about earlier or present continuation, with their scope and limits, when developing or comparing possible cultural trajectories. Identify the observed work behind any claim based on a test. |
 | `A.15.7`, `C.11.DUA` and `C.11` | Use the continuation result for the current next action; appraise a questionable inquiry demand including its design and whole burden; or resolve an already formed bounded choice, respectively. These decisions remain separate from later Work. |
-| `C.28` | Governs a causal claim that an intervention contributed to later continuation or loss. Observation and succession alone are insufficient. |
-| Systems Engineering results for architecture, configuration, capability, assurance, and support | Supply compatible results when the continuation promise depends on a designed performing whole or supporting arrangement. They do not replace the Music-or-Dance continuity discriminators or representative Work. |
+| `C.28` | Evaluate a claim that an intervention contributed to continuation or loss, using evidence that distinguishes this explanation from alternatives. |
+| Systems Engineering results for architecture, configuration, capability, assurance, and support | Supply compatible results when the continuation promise depends on a designed performing whole or supporting arrangement. Use the music or dance criteria for continuity and establish any representative performance the question requires. A technical constraint may already decide feasibility. |
 
 ### MDPE.19:End

@@ -4,15 +4,15 @@
 
 ### SYSE.17:0 - Use This When
 
-Use this pattern when a decision about a proposed System, configuration, or use change already names some
-participants—for example, users, owners, operators, or interacting Systems—but may still omit bearers of
+Use this pattern when a decision about a proposed System, configuration, or use change names some
+participants—for example, users, owners, operators, or interacting Systems—but may omit bearers of
 consequences. Their states or decision-relevant characteristics could change through Work or events such as
 realization, operation, maintenance, misuse, failure, recovery, retirement, or later modification. Retain existing
 bearers even when their identities are only partly known. Qualify not-yet-present bearers as intended System
 referents in modal claims.
 
-Begin with one proposed engineering alternative or change and the decision that can still alter it. If an existing
-account already covers the material consequences at the needed scope and evidence strength, use that answer.
+Begin with one proposed engineering alternative or change and the decision that can alter it. If an existing
+account covers the material consequences at the needed scope and evidence strength, use that answer.
 Otherwise trace possible consequences beyond the current contractual, organizational, and technical-interface
 boundaries. Keep obtaining relations, modal path claims, observed changes, value judgements, and specialist
 decisions separate. When the missing result is a person's preference, an agreement, or an account of how a proposed
@@ -28,7 +28,7 @@ the receiving decision uses it and its own grounding is available.
 `A.1.CSD` supplies the general discovery move. This pattern specializes it for engineering choices: start from a
 proposed System, configuration, or use change and connect qualified consequences to the named engineering
 decision.
-Use `C.28` when one already identified causal claim is the whole question. Obtain a result from the applicable
+Use `C.28` when one identified causal claim is the whole question. Obtain a result from the applicable
 specialist practice whenever the decision relies on authority outside Systems Engineering.
 
 #### SYSE.17:0.1 - Terms and Distinctions
@@ -39,7 +39,7 @@ specialist practice whenever the decision relies on authority outside Systems En
 | consequence-bearing System | An actual System whose state or decision-relevant characteristic may change under the proposed alternative or change. Its identity may be only partly known. A not-yet-present bearer remains an intended System referent inside a modal claim. |
 | unresolved bearer reference | A reference whose identity, boundary, or existence is not established to the extent needed by the decision. State which question is unknown. Unknown personal identity does not erase evidence that someone was present. |
 | supported obtaining relation occurrence | An actual relation occurrence under stated conditions, supported by evidence about its participants and predicate. Preserve any limits on participant identification: an observed encounter can be supported while personal identities remain unknown. A line in a diagram is only a representation. |
-| modal consequence-path claim | An episteme describing relations and changes that may connect the proposed alternative or change to a bearer, with candidate participants, conditions, evidence, uncertainty, and the limit that matters to the receiving decision. A probe is conditional on its selected contribution. Establish every world-side relation occurrence in the path separately. |
+| modal consequence-path claim | An episteme describing relations and changes that may connect the proposed alternative or change to a bearer, with candidate participants, conditions, evidence, uncertainty, and the limit that matters to the receiving decision. A probe is conditional on its selected contribution. Support each relation claimed to have occurred with evidence of that occurrence. |
 | consequence claim | A claim about a possible or observed change, bearer, conditions, direction, time, evidence, uncertainty, and causal status. The claim and its world-side change have separate identities. |
 | value-qualified consequence claim | A descriptive consequence plus a stated value judgement—for example, benefit, harm, burden, or opportunity—under a named value frame, bearer, scope, and evidence. |
 | affected-System claim | A consequence claim that identifies the System bearing the possible or observed change. It supports that bearer–consequence statement; establish any project assignment, authority, or other relation separately when the decision needs it. |
@@ -49,7 +49,7 @@ specialist practice whenever the decision relies on authority outside Systems En
 Test System identity when the claim relies on treating a bearer as one System—for example, when attributing a
 consequence to a population as a whole. Candidate bearers include people, organizations, technical Systems, and
 ecological Systems. Preserve evidence of an actual bearer even when its name or full boundary is unknown. Use an
-intended System referent for a not-yet-present bearer, and state uncertainty explicitly when existence itself is
+intended System referent for a not-yet-present bearer, and state when the bearer’s existence is
 unestablished. A project assignment or decision authority requires its own grounding.
 
 ### SYSE.17:1 - Problem Frame
@@ -84,7 +84,7 @@ resources needed to act, especially when possible consequences are treated as eq
 
 Recurring tensions include:
 
-- Consequences can cross, for example, contractual, ownership, organizational, interface, and project boundaries.
+- Consequences can cross boundaries of contract, ownership, organization, interface or project.
 - Early choices need expert judgement; exhaustive measurement is often unavailable or uneconomic.
 - A weakly supported possibility can justify a cheap probe or reversible design, but not an observed-effect claim.
 - A descriptive consequence claim, a value judgement, and a deontic or governance claim use different predicates
@@ -103,9 +103,9 @@ perform the bounded discovery below. If the choice instead needs preferences, ag
 situations, use an available elicitation or scenario result, or assess its acquisition under step 8. Return a
 needed but unavailable result as an explicit gap.
 
-Retain consequence claims that change or hold open the named engineering decision, and state what supports each.
-This bounded account can support a choice with explicit uncertainty; it does not promise complete preferences,
-representation, or operational scenarios.
+Retain consequence claims that support, change or hold open the named engineering decision, and state what supports each.
+A bounded account can support a choice when it states any material uncertainty.
+Use separate grounds for preferences, representation or operating scenarios when the choice depends on them.
 
 #### SYSE.17:4.1 - Perform the Move
 
@@ -114,8 +114,8 @@ representation, or operational scenarios.
    and the engineering decision that can use the result.
 2. **Generate consequence-producing situations.** Consider Work and events that may expose the alternative's
    consequences—for example, realization, intended use, maintenance, plausible misuse, failure, recovery,
-   retirement, or later modification. Retain only situations whose consequences could alter the receiving decision;
-   these examples do not impose a lifecycle.
+   retirement, or later modification. Retain situations whose consequences bear on the receiving decision.
+
 3. **Trace outward without promoting hypotheses to facts.** Follow supported obtaining relation occurrences
    separately from modal consequence-path claims. For each modal path, name candidate participants and proposed
    relation kinds—for example, material transfer, energy transfer, information transfer, exposure, access, resource
@@ -125,8 +125,8 @@ representation, or operational scenarios.
    name or full identity is unknown; refer to the observation, place, and time that support the claim. Keep a
    not-yet-present bearer as an intended System referent in a modal claim. If existence itself is uncertain,
    retain that uncertainty. Test System identity and boundary when the consequence claim depends on that
-   classification, especially for a collection treated as one whole. A role label or representative cannot supply
-   that evidence. Return any unresolved recognition question that matters to the decision.
+   classification, especially for a collection treated as one whole. A role label or an appointment to represent a group
+   does not establish the group’s identity or boundary. Return any unresolved recognition question that matters to the decision.
 5. **Qualify the consequence.** State the characteristic or condition that may change, bearer, configuration,
    conditions, direction or magnitude cue when known, interval, and uncertainty. Distinguish an observed occurrence
    from a modal claim. State the evidence basis—for example, observation, measurement, simulation, model-based
@@ -142,14 +142,14 @@ representation, or operational scenarios.
 8. **Finish with the useful answer and its material uncertainty.** A qualified consequence account, constraint,
    alternative, or explicit unknown can complete this use. Select a further discovery action through C.11.DUA
    only when its obtainable contribution warrants the full preparation, access, performer, interpretation,
-   delay, displacement, and downside. Compare observations separately and together against shared resources
-   and the decision window. Retain the residual and reopen condition that matter to the receiver. Reopen the account when a new bearer, changed configuration
+   delay, displacement, and downside. Compare what each proposed observation and the combined inquiry could contribute with the resources they would require in the available decision window. Retain the residual and reopen condition that matter to the receiver.
+   Reopen the account when a new bearer, changed configuration
    or use, conflicting value claim, failed premise, or required missing authority could change the decision. If
-   discovery reveals that the operating situation or affected people's requirements are insufficiently understood,
+   discovery reveals that the operating situation or the requirements of those affected are insufficiently understood,
    reconsider broader elicitation or scenario work against that missing result and its attainable contribution.
 
 Discovery, design, trial, specialist inquiry, and consequence observation can overlap and reopen one another.
-A receiving decision still needs the claims and evidence on which it relies. An observed encounter can support an
+A receiving decision needs the claims and evidence on which it relies. An observed encounter can support an
 account before personal identities are known; a claimed future consequence remains conditional on its path and
 conditions. Select any further inquiry separately from identifying that possible consequence.
 
@@ -158,24 +158,24 @@ conditions. Select any further inquiry separately from identifying that possible
 | Field | Required content |
 | --- | --- |
 | focus and receiver | Proposed alternative or change; actual System or intended System referent and configuration to which it applies; use, scope, horizon, and receiving engineering decision. |
-| examined situations | Consequence-producing Work or events retained because their consequences could alter the decision. |
+| examined situations | Work or events whose consequences bear on the decision. |
 | bearer references | Actual bearers with the evidence and limits of identification; intended System referents for not-yet-present bearers; explicit unknowns where identity, boundary, or existence remains unresolved. Include a System-recognition basis when the consequence claim relies on that classification. |
 | relations and modal paths | Supported obtaining relation occurrences; separately stated modal consequence-path claims; conditions, evidence, uncertainty, any selected probes, and missing-relation blockers. |
 | consequence claims | Changed characteristic or condition, bearer, configuration, time, direction or magnitude cue, observed-or-modal status, evidence basis, uncertainty, and causal status. |
-| value and specialist results | Current value judgement and value-frame source, any conflict, the required specialist result, and its authority boundary. |
-| engineering decision contribution | A named change to or unresolved need in the receiving decision—for example, a constraint, alternative, probe, safeguard, monitoring condition, reversible step, refusal, escalation, authorized representative, or protection result. |
+| value and specialist results | When the decision uses a value judgement, state the grounds for the judgement, the value frame and its source, and any conflict. When it needs a specialist result, give that result and the limits of the specialist’s authority, or identify what is missing. |
+| engineering decision contribution | What supports, changes or holds open the receiving decision—for example, a constraint, alternative, probe, safeguard, monitoring condition, reversible step, refusal, escalation, an authorized representative or the need for one, or protection result. |
 | residual and reopen | Missing bearer references or modal paths and the concrete change that matters to a later receiving use. Include a further action only when its obtainable contribution warrants the complete inquiry burden. |
 
 An initial account can contain one qualified consequence and one named uncertainty—for example, an
-unidentified bearer, unsupported relation, or missing specialist result—when they already change the decision.
+unidentified bearer, unsupported relation, or missing specialist result—when they matter to the choice.
 A bounded expert estimate can be usable when better evidence is not affordable, provided it meets the receiving
 decision's evidence requirements. Label it as judgement with its basis and uncertainty rather than measurement
 or prevalence evidence.
 
 #### SYSE.17:4.3 - What Changes in Practice
 
-Visibility, influence, contract, and project role stop being the entry criteria. Engineers trace a proposed
-alternative or change to consequence bearers, retaining supported occurrences even when identities remain
+Visibility, influence, contracts and project roles can help identify possible bearers. When the decision may omit a material consequence, engineers trace the proposed
+alternative or change to the Systems that bear or could bear it, including bearers the existing list overlooks. They retain supported occurrences even when identities remain
 partly unknown. They distinguish obtaining relations from modal path claims and feed uncertain but material
 consequences back into decisions while change remains affordable.
 
@@ -192,7 +192,7 @@ Systems not captured by the original user-and-owner list:
 | Heat-pump plant: increased compressor cycling and wear | The current command relation obtains. Manufacturer data support a conditional wear estimate; the proposed configuration has not run for a heating season. | Add a cycle-rate constraint and monitored-service condition. |
 | Maintenance-provider organization: higher expected inspection workload and less remaining recovery capacity | Service records and the current agreement identify the provider organization and the maintenance Work it performs. The additional workload remains an estimate, and no current commitment covers it. | Keep remote monitoring conditional; use `SYSE.8` or `SYSE.24` to settle provider capacity and commitment. |
 | Maintenance technician: reduced cabinet clearance and greater exposure during inspection | Current geometry is described by drawings; the reduction under the proposed cabinet position remains unmeasured. | Hold the cabinet-location choice open pending a plant-room measurement and specialist safety result. |
-| Individual residents in a nearby building: increased low-frequency night noise | An acoustic model supports a possible increase; no night measurement establishes an observed effect or its distribution among residents. | Retain a low-noise alternative and the conditional noise/distribution claim; a stronger release claim still needs its applicable acoustic basis. The model settles neither legal compliance nor ethical acceptability. |
+| Individual residents in a nearby building: increased low-frequency night noise | An acoustic model supports a possible increase; no night measurement establishes an observed effect or its distribution among residents. | Retain a low-noise alternative and the conditional noise/distribution claim; a stronger release claim needs its applicable acoustic basis. The model settles neither legal compliance nor ethical acceptability. |
 | Individual building occupants: room-temperature deviation during grid load shifting | Current thermal relations are supported, but sensor latency, override behaviour, and the distribution of deviations among occupants remain unresolved. | Retain an override-safe concept branch and the latency limit; select a trial when its obtainable result warrants the burden for the decision. |
 | Electricity-distribution System: changed peak-load contribution | Meter history supports the baseline; the proposed controller effect is simulated. | Keep the grid-response claim conditional; commission measurement only when its obtainable contribution warrants the work. |
 
@@ -203,7 +203,7 @@ For example, suppose a plant-room measurement and competent safety interpretatio
 freeze; their combined result could rule out an unsafe irreversible placement at a burden justified by that gain.
 Select that acquisition. An unavailable seasonal noise study is a different proposal: retain the low-noise
 alternative and the conditional noise claim without making the study a condition of this narrower return.
-The resulting account grants neither release permission nor evidence of an observed improvement.
+The account does not authorize release or establish that the proposed change has produced an improvement.
 
 #### SYSE.17:5.2 - Observed Pedestrians and a Not-Yet-Installed Locker
 
@@ -232,11 +232,11 @@ is attainable only if access, preparation, and interpretation also fit that wind
 is warranted only for a result the receiving decision needs: for example, elicitation if footpath-priority
 requirements remain unsettled, or scenario development if replenishment and crossing arrangements are not yet
 defined. Those results may expose further bearers and revise the layout alternatives; they do not replace the
-missing physical-clearance evidence. If an existing qualified geometry and access account already settles the
+missing physical-clearance evidence. If an existing qualified geometry and access account settles the
 narrow choice, use it directly.
 
-**When the full pattern is unnecessary.** If the available account already answers the decision at its required
-scope and strength, return that answer. If one identified causal claim about one already identified System is
+**When the full pattern is unnecessary.** If the available account answers the decision at its required
+scope and strength, return that answer. If one identified causal claim about one identified System is
 the whole question, use `C.28` and the direct subject pattern.
 
 ### SYSE.17:6 - Bias Annotation
@@ -264,7 +264,7 @@ consequence can change the decision; specialist authority remains with the appli
 - [ ] Every material claim states bearer, changed characteristic or condition, configuration, time, evidence,
       uncertainty, and causal status.
 - [ ] Every value-qualified consequence names its bearer and value frame, and any conflict remains explicit.
-- [ ] Each retained consequence changes or holds open an engineering choice through a named decision contribution.
+- [ ] Each retained consequence supports, changes or holds open an engineering choice through a named decision contribution.
 - [ ] The account retains the residual uncertainty and reopen condition needed by its recipient. Further inquiry
       is selected for attainable value against its whole burden, including the combined programme.
 
@@ -291,8 +291,8 @@ Engineers can compare benefits to visible participants with consequences borne e
 Quiet and future bearers enter through qualified consequence claims. Those claims can change the decision through,
 for example, a probe, safeguard, specialist result, monitoring condition, or unresolved decision need.
 
-The cost is additional inquiry and maintenance of uncertain claims. Every retained bearer or modal path claim must
-change a decision, evidence need, probe, or reopen condition so the account does not grow without bound.
+Examining possible consequences and maintaining an account of uncertain claims take time and resources.
+Retain a bearer or possible path if its consequence supports or could change the decision, affects what evidence or probe is needed, or changes when to reconsider the choice.
 
 ### SYSE.17:10 - Rationale
 
@@ -324,7 +324,7 @@ Consequence tracing cannot establish someone's preference or agreement.
 unresolved recognition questions remain separate from modal consequences. This pattern adapts that move to
 configuration choices and physical and operational situations. `A.15.9` and `C.11.DUA` govern acquiring further
 results: compare attainable decision contributions with the complete burden, including competing use of the
-same people and decision window.
+same resources and decision window.
 
 The research contributions qualify how the account is used. [Volden and Welde](https://doi.org/10.1016/j.ijproman.2022.06.006)
 distinguish delivery performance from outcomes and wider effects, with context-dependent indicators and valuations.

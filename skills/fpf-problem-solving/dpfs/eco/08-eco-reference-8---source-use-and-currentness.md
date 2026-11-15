@@ -1,6 +1,6 @@
 ## ECO.Reference:8 - Source use and currentness
 
-The language is a conceptual synthesis. Historical sources identify mechanisms and disagreements; later research sharpens particular questions.
+The Methods draw on historical accounts of economic mechanisms, disagreements among those accounts and later research on particular questions. Use a source for the mechanism it explains and within the conditions its evidence supports.
 
 | Source line | Adopted contribution and limit |
 | --- | --- |
@@ -12,6 +12,6 @@ The language is a conceptual synthesis. Historical sources identify mechanisms a
 | Foss, Klein and Murtinu | Resource mobilization and differences in understanding novel ventures; conceptual accounts do not guarantee stakeholder agreement. |
 | Rebound research, including recent AI work | Demand and wider-use responses to efficiency, with explicit causal and measurement limits. |
 
-The bodies provide the primary source links and the comparisons that change their instructions. The contemporary rebound discussion includes the [FAccT 2025 analysis](https://facctconference.org/static/docs/facct2025-206archivalpdfs/facct2025-final37-acmpaginated.pdf); Hayek's overlapping-order argument can be read in [The Fatal Conceit, pp. 18–19](https://www.mrsmuellersworld.com/uploads/1/3/0/5/13054185/fatal_conceit_by_hayek.pdf). Currentness means that the contribution and its conditions still answer the working question, not that the oldest source has been replaced by the newest date.
+Each Method links the sources that inform its instructions. The rebound discussion includes the [FAccT 2025 analysis](https://facctconference.org/static/docs/facct2025-206archivalpdfs/facct2025-final37-acmpaginated.pdf). Hayek addresses different local and wider orders in [The Fatal Conceit, pp. 18–19](https://www.mrsmuellersworld.com/uploads/1/3/0/5/13054185/fatal_conceit_by_hayek.pdf). Use a contribution if it still answers the question under the relevant conditions. Compare later work when it changes a premise, explanation or limit on use.
 
-Revisit an affected method when new evidence changes its mechanism, the institutional or technical conditions no longer fit, a relied-on external method changes, or actual use reveals a missing operation. Preserve unaffected reasoning. A new source alone does not require rewriting the whole language.
+Reconsider a Method when new evidence changes its explanation, a relevant institution or technology changes, an external method no longer supplies the same contribution, or use exposes a missing operation. Keep the parts of the reasoning whose grounds still hold.

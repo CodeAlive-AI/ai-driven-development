@@ -8,7 +8,7 @@
 
 **Use this when** computations that work separately must run together, but shared state, communication or scheduling can change their results. You need to construct their interaction, repair a failing interleaving, or replace a component while retaining the behavior on which the rest relies.
 
-The reader can describe each component's operations and the results expected from their combination. This method adds the shared state, communication and ordering rules needed to reason about the whole. It applies to concurrent algorithms and protocols, including computations performed by cooperating software agents. The implementation language and physical machine supply particular operations and failure conditions.
+The reader can describe each component's operations and the results expected from their combination. This method adds the shared state, communication and ordering rules needed to reason about the whole. It applies to concurrent algorithms and protocols, including computations performed by cooperating software agents. The implementation language, machine and operating environment determine which operations are available and which failures the composition must allow for.
 
 The first useful result is a composed procedure with a trace or invariant explaining how it obtains the required observation, or a counterexample that identifies the interaction to change. A small shared-state example needs only a few explicit steps. A general guarantee over an implementation needs the corresponding memory, scheduling and failure assumptions.
 
@@ -32,7 +32,7 @@ Two correct increments can lose an update. Retrying a request can repeat its eff
 
 ### CMP.14:4 - Solution
 
-**Local mantra:** choose the observations; expose the interactions; construct compatible steps; find the failing order or invariant; repair the protocol; establish progress under its actual assumptions.
+**Choose the observations; expose the interactions; construct compatible steps; find the failing order or invariant; repair the protocol; establish progress under its actual assumptions.**
 
 #### CMP.14:4.1 - Specify what the combined computation must make observable
 
@@ -40,9 +40,9 @@ State the allowed inputs and required results. Include the observations a receiv
 
 Choose the required ordering. For a concurrent object, **linearizability** compares a history of calls and responses with legal sequential behavior. A finite history can contain pending calls. Append responses to any selected pending calls, then omit those still pending. Keep every originally completed operation, including its arguments and returned value. Seek a legal sequential order of the retained operations that respects every case where one operation returned before another was called. Each retained operation appears to take effect between its call and response in this extended history.
 
-The appended responses belong to this comparison; they do not establish that the pending operations will actually return. Section :5.4 shows a pending call whose effect another operation has already observed. Other applications may accept weaker order, duplicate-tolerant combination or eventual agreement; use the property the receiving computation needs.
+The appended responses belong to this comparison; they do not establish that the pending operations will return. Section :5.4 shows a pending call whose effect another operation has already observed. Other applications may accept weaker order, duplicate-tolerant combination or eventual agreement; use the property the receiving computation needs.
 
-Also state required eventual events, such as a pending operation returning. An acceptable state or finite history does not alone settle that question. In concurrency theory, a **safety property** excludes a violation detectable in a finite execution prefix; a **liveness property** requires progress that no finite delay alone disproves. These meanings describe execution properties here.
+Also state required eventual events, such as a pending operation returning. An acceptable state or finite history does not alone settle that question. In concurrency theory, a **safety property** excludes a violation detectable in a finite execution prefix; a **liveness property** requires progress that no finite delay alone disproves.
 
 #### CMP.14:4.2 - Expose steps, shared state and the environment
 
@@ -84,7 +84,7 @@ Identify what can enable and execute each required next step. A component may wa
 
 Choose only scheduling and delivery assumptions the intended use can support. **Weak fairness** excludes postponing an action forever once it remains continuously enabled. **Strong fairness** also excludes postponing an action forever when it becomes enabled infinitely often. Name the action or action family: fairness for an entire process does not make every branch of its code fair.
 
-Use those assumptions with a progress measure or a dependency argument. Show why a required response eventually becomes possible and occurs. A bound on elapsed time additionally needs timing and resource bounds. A retry limit provides a finite failure return, not a guarantee that the requested effect happened or that it did not happen.
+Use those assumptions with a progress measure or a dependency argument. Show why a required response eventually becomes possible and occurs. A bound on elapsed time additionally needs timing and resource bounds. With a retry limit, the caller can return failure after the final unsuccessful attempt if each attempt ends or times out. That failure return leaves open whether the requested effect occurred.
 
 Test the relevant lost-progress case: an unavailable participant, an indefinitely lost reply, a stopped lock holder or an unfair scheduler. Return the supported result or the unresolved execution status. Do not preserve an eventual-response claim after removing its delivery or scheduling premise.
 
@@ -126,7 +126,7 @@ The invariant is `x = number of successful compare-and-swap actions`. It holds i
 
 If A and B both read 0, A can succeed first; B's stale attempt fails. B then reads 1 and succeeds with 2. For these two one-shot callers, each failed attempt is attributable to the other caller's success, so there can be at most one failed attempt before that caller completes. With both callers continuing to receive steps, both finish. A system with an unlimited stream of competing callers needs a different per-caller progress argument.
 
-**Changed condition:** the environment supplies only a separate comparison and write. The old failing order is possible again. Use a primitive that really combines them or protect the read-modify-write region.
+**Changed condition:** the environment supplies only a separate comparison and write. The old failing order is possible again. Use a primitive that combines them atomically or protect the read-modify-write region.
 
 #### CMP.14:5.2 - A retry must refer to the same logical operation
 
@@ -164,13 +164,13 @@ A resource-wait cycle would require a strictly increasing sequence of resource p
 
 An initially empty FIFO queue has this history: A calls `enqueue(7)` at t=1; B calls `dequeue()` at t=2 and receives 7 at t=3; A has not returned by t=4. Comparing only completed operations would leave a dequeue from an empty queue.
 
-For the comparison, append A's response at t=5. The sequential order `enqueue(7); dequeue() returns 7` is legal. For example, their effects can be placed at t=1.5 and t=2.5, within their call/response intervals. This is a witness for the finite history; it supplies no promise that A will eventually respond in the actual execution.
+For the comparison, append A's response at t=5. The sequential order `enqueue(7); dequeue() returns 7` is legal. For example, their effects can be placed at t=1.5 and t=2.5, within their call/response intervals. This is a witness for the finite history; it supplies no promise that A will eventually respond when the program runs.
 
 If there is no enqueue call at all, appending responses cannot invent one: a dequeue returning 7 from the empty queue remains invalid. If A instead returned at t=2 before B called at t=3, the sequential order must keep A before B. Pending-call completion thus preserves both the observed values and the order already imposed by completed calls.
 
 ### CMP.14:6 - Bias-Annotation
 
-Sequential intuition can hide an interleaving between a read and its use. An atomic-looking API can hide a smaller implementation primitive. A successful retry demonstration can hide the uncertainty introduced by a lost reply or restart. Recover the actual transitions and observations before assigning the result of a simpler model to them.
+Sequential intuition can hide an interleaving between a read and its use. An atomic-looking API can hide a smaller implementation primitive. A successful retry demonstration can hide the uncertainty introduced by a lost reply or restart. Recover the transitions and observations the implementation permits before assigning the result of a simpler model to them.
 
 ### CMP.14:7 - Conformance Checklist
 
@@ -208,7 +208,7 @@ The counter, retry and resource-order cases construct three different repairs: c
 
 How should local computations be combined without losing the required whole behavior? **Adopt** the separation of state/action description, refinement, progress and environment-dependent composition in Lamport's [*A Science of Concurrent Programs*](https://lamport.azurewebsites.net/tla/science-book.html), chapters 3, 4, 6 and section 8.2. It supports :4.2–4.6. Its composition discussion exposes the circularity of proving each component's eventual success by assuming the other's. A direct global invariant remains a serious simpler choice for small interacting systems; a component proof becomes useful when its explicit environment assumptions reduce repeated reasoning. The accepted cost is recovering those assumptions. Changes in observed behavior or progress premises reopen the choice.
 
-When reasoning about a concurrent implementation by using an abstract atomic specification, **adapt** the composition-sensitive account in [Oliveira Vale, Shao and Chen](https://flint.cs.yale.edu/flint/publications/ctlinear-jacm.html). It relates linearizability, locality and observational refinement through explicit composition operations. For the observation and replacement questions in :4.1 and :4.6, identify the client context and establish that its observations with the implementation are permitted by the abstract specification. The specification may permit additional behavior. A short history/linearization-point argument is sufficient for :5.1; the richer algebra is useful when it reduces actual composition-proof work. It does not automatically preserve progress or supply an implementation. A new interaction context can reverse the choice.
+When reasoning about a concurrent implementation by using an abstract atomic specification, **adapt** the composition-sensitive account in [Oliveira Vale, Shao and Chen](https://flint.cs.yale.edu/flint/publications/ctlinear-jacm.html). It relates linearizability, locality and observational refinement through explicit composition operations. For the observation and replacement questions in :4.1 and :4.6, identify the client context and establish that its observations with the implementation are permitted by the abstract specification. The specification may permit additional behavior. A short history/linearization-point argument is sufficient for :5.1; the richer algebra is useful when it reduces the work of proving the composition correct. It does not automatically preserve progress or supply an implementation. A new interaction context can reverse the choice.
 
 Which interference may a component assume? **Adopt** the memory-model parameterization demonstrated by [Lahav and colleagues' rely/guarantee treatment of causally consistent shared memory](https://arxiv.org/abs/2305.08486) as a boundary on :4.2–4.3. Sequential interleaving is a convenient comparator, while weaker visibility needs a compatible semantics and reasoning rules. Retaining the simpler model is justified when the implementation supplies its conditions. Otherwise synchronization, the algorithm or the claimed observation must change.
 

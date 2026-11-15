@@ -12,7 +12,7 @@ Examples include bounding a best attainable value by a feasible construction and
 
 **First useful move:** name the unknown and one comparison that would change the next action. A single feasible construction can settle an existence question or one side of an optimum bound. A proved enclosure can exclude a region. Construct only the bound the current question needs.
 
-The reader needs elementary inequalities, sets and functions. The examples introduce their graph and set constructions; the residual example also uses linear equations and an inverse map. More specialized bounds require the properties of their particular mathematical objects.
+The reader needs elementary inequalities, sets and functions. The examples introduce their graph and set constructions; the residual example also uses linear equations and an inverse map. More specialized bounds require the properties of the mathematical objects involved.
 
 If an available value or direct calculation answers the question more easily, use it. FPF's characterization and choice methods select among alternatives; this pattern supplies mathematical bounds those choices may use. A mathematical comparison applied to a physical or organizational subject also requires the correspondence work in C.29 and MMP.
 
@@ -60,7 +60,7 @@ Choose a construction whose relation to the unknown can be proved with available
 
 Other constructions can use symmetry, a conserved quantity, a norm inequality or a comparison theorem. Select the property that supplies the missing direction. A familiar shape or similar-looking value is a candidate for investigation until that relation is established.
 
-A comparator can be a different kind of object from the result. In :5.1 a node potential produces a numerical lower bound on every path length. The derivation makes those resulting values comparable; it does not compare a potential directly with a path.
+A comparator can be a different kind of object from the result. In :5.1 the edge inequalities give p(t)−p(s) as a lower bound on the length of every path from s to t.
 
 #### MATH.20:4.3 - Establish the bound over its claimed domain
 
@@ -100,7 +100,7 @@ Return the comparator, its relation to the requested result and the premises nee
 
 For a minimization with feasible value U and lower bound L, the candidate is within `U-L` of the optimal value when these quantities are finite. The receiver can use that gap to decide whether further optimization matters. If only exclusion, existence or a threshold result was needed, stop once that result follows.
 
-General choices about cost, value and further work use FPF's existing characterization, Pareto and improvement methods. Componentwise mathematical bounds can inform them, but a candidate attaining one coordinate need not attain another. Preserve which constructions actually realize the compared results.
+General choices about cost, value and further work use FPF's existing characterization, Pareto and improvement methods. Componentwise mathematical bounds can inform them, but a candidate attaining one coordinate need not attain another. Preserve which constructions realize the compared results.
 
 Reopen the affected bound when its domain, objective, available information or following operation changes. Preserve bounds whose proofs still apply.
 
@@ -110,7 +110,7 @@ Reopen the affected bound when its domain, objective, available information or f
 
 Consider a finite directed graph with nonnegative edge weights and at least one path from s to t. Its shortest path length D is attained: cycles can be removed without increasing length, leaving one of finitely many simple paths.
 
-Any particular s-to-t path of length U gives `D≤U`. For a lower bound, assign a number p(v) to each node such that, for every edge from u to v,
+Any s-to-t path of length U gives `D≤U`. For a lower bound, assign a number p(v) to each node such that, for every edge from u to v,
 
 `p(v)-p(u)≤w(u,v)`.
 
@@ -146,11 +146,11 @@ The bound K is the missing comparison between residual and solution error. It ca
 
 For a concrete case, A is diagonal with entries 1 and 0.001, b=(1,1), and xhat=(1,999). Use the maximum absolute coordinate as the vector norm. The inverse scales the coordinates by 1 and 1000, so its operator norm is 1000. The residual is (0,-0.001); the bound on solution error is 1. The actual solution (1,1000) attains that error.
 
-A requested error of at most 0.01 therefore requires a residual bound of at most 0.00001 under this comparison. The apparent smallness of 0.001 was insufficient for that request.
+To guarantee a maximum error of 0.01 from the residual norm alone, for every residual direction, the norm must be at most 0.00001. A residual of (0.001,0) gives an error of 0.001, whereas (0,0.001) gives an error of 1.
 
 **Changed condition.** Let the second diagonal entry become zero and b=(1,0). The equation fixes the first coordinate and leaves the second arbitrary. Residual zero cannot bound distance to a specified second-coordinate value: solutions with arbitrarily different second coordinates have the same residual. A request about the first coordinate alone is still answerable. Return that determined component or supply an additional condition selecting the second.
 
-The method has derived an error relation and exposed its failure condition. A numerical method can now decide how accurately to obtain the residual and the approximation; the bound itself has not selected a solver.
+The error relation and its failure condition can guide the choice of accuracy for computing the residual and the approximation.
 
 #### MATH.20:5.3 - Enclose a set and improve the consequence
 
@@ -219,9 +219,9 @@ The working question is how to obtain a useful justified comparison without firs
 
 Vandenberghe's [Duality, EE236A lecture 6, especially 6-4](https://www.seas.ucla.edu/~vandenbe/ee236a/lectures/duality.pdf) derives the relation between feasible primal and dual values. Its contribution to :4.2/:5.1 is that a feasible construction and a general inequality can bound the same optimum from opposite sides. A complete optimal solution is unnecessary for each bound. Direct solution is cheaper for an easy instance; bounding becomes useful when a partial construction already settles the receiving question. Equality and attainment require the particular argument, not an unrestricted assumption of strong duality.
 
-Higham's [What Is Backward Error?](https://nhigham.com/2020/03/25/what-is-backward-error/) and [What Is a Condition Number?](https://nhigham.com/2020/03/19/what-is-a-condition-number/) explain why a discrepancy must be combined with the relevant sensitivity and why norm, perturbation class and requested output matter. The adopted consequence is :4.3/:5.2: derive a bound for the requested error and inspect the inverse action. A bare residual is a cheaper observable but can answer a different question. A proved componentwise or structure-specific estimate can be more informative than a coarse whole-vector estimate; no one condition number is imposed on every problem.
+Higham's [What Is Backward Error?](https://nhigham.com/2020/03/25/what-is-backward-error/) and [What Is a Condition Number?](https://nhigham.com/2020/03/19/what-is-a-condition-number/) explain why a discrepancy must be combined with the relevant sensitivity and why norm, perturbation class and requested output matter. The adopted consequence is :4.3/:5.2: derive a bound for the requested error and inspect the inverse action. A bare residual is a cheaper observable but can answer a different question. A proved componentwise or structure-specific estimate can be more informative than a coarse whole-vector estimate.
 
-The current [Mathematics in Lean treatment of monotonicity](https://leanprover-community.github.io/mathematics_in_lean/C03_Logic.html) and [set inclusion](https://leanprover-community.github.io/mathematics_in_lean/C04_Sets_and_Functions.html) makes the quantified preservation steps explicit. It supports :4.3-.4 and the set branch of :5.3. These mechanisms are usable in ordinary proofs or formal checking; choosing Lean is optional.
+The current [Mathematics in Lean treatment of monotonicity](https://leanprover-community.github.io/mathematics_in_lean/C03_Logic.html) and [set inclusion](https://leanprover-community.github.io/mathematics_in_lean/C04_Sets_and_Functions.html) makes the quantified preservation steps explicit. It supports :4.3-.4 and the set branch of :5.3. These arguments can be used in ordinary proofs or checked formally.
 
 The synthesis retains the cheapest comparison that supports the requested result and exposes the part of its proof that could be tightened. Reopen it when the domain, objective, available premises or required operation changes, or when a different bound would resolve a still-open use with less work.
 

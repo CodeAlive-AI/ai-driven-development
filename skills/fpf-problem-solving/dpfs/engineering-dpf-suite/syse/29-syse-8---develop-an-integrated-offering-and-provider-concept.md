@@ -6,7 +6,7 @@
 
 Use this pattern when a project is defining what a provider will make available and under what promise. The
 proposal may, for example, transfer a product, grant access to a shared enabling System, maintain an agreed
-condition, or accept responsibility for an agreed result, but the project has not yet connected that promise to
+condition, or accept responsibility for an agreed result, but the project has not connected that promise to
 the provider arrangement needed for the receiving use.
 
 The result is an **account that connects a bounded offering to the provider arrangement, responsibility claims,
@@ -32,7 +32,7 @@ The everyday words in this field are overloaded. Recover the object or relation 
 | supplied or accessed subject | The product, asset, material portion, data, episteme, capability access, or other subject transferred, changed, accessed, or made available. It need not be a System. |
 | provider System | An actual System that participates in a named provider relation, is classified under a local provider SystemRole kind, or holds an assignment under that kind. A department or company name is only a clue until the underlying System and relation are identified. |
 | provider arrangement | The Systems and relations through which provision is expected to happen. Its account distinguishes actual providers and partners from possible-future provider referents. |
-| integrated offering concept | The engineering proposal connecting a bounded offering to the provider arrangement needed for the receiving use. This local collective name preserves the kinds of its participants. |
+| integrated offering concept | The engineering proposal connecting a bounded offering to the provider arrangement needed for the receiving use. |
 | fulfilment or acceptance claim | An assertion of whether specified promise content was fulfilled or a named acceptance occurred, under stated conditions and within a declared window. An evaluator assesses evidence and reaches the judgement. The assertion and the underlying fulfilment or acceptance remain distinct. |
 
 Bare *service* is a recognition cue. At a consequential use, apply the FPF service-word recovery in
@@ -67,7 +67,7 @@ for the bounded decision, with their claims and omissions explicit.
 
 ### SYSE.8:3 - Forces
 
-The engineering decision must manage these recurring tensions:
+Balance these demands when choosing the provider arrangement.
 
 - A first concept must support its receiving decision with proportionate effort, while the provider arrangement crosses several kinds of boundary—for
   example, technical, operational, organizational, financial, legal, or commercial.
@@ -81,7 +81,7 @@ The engineering decision must manage these recurring tensions:
 - Continuing provision needs a dependable arrangement, while changed conditions or evidence can require
   reconsideration of both the offering and provider choices.
 - Current PSS and servitization literature supplies many representations and Methods. Selecting one for the
-  current use and claiming a performance gain still require project evidence.
+  current use and claiming a performance gain require project evidence.
 
 ### SYSE.8:4 - Solution
 
@@ -91,7 +91,7 @@ each choice and obtain needed specialist results from the responsible practice.
 First inspect available accounts of this use. Reuse one that already connects plausible alternatives, the
 provider's and client's decision-relevant Work, and applicable grounds to the receiving decision. If a missing
 connection can change the choice, develop that connection through :4.1 and preserve unaffected grounds. When
-the receiving use or the range of possible arrangements is itself unsettled, use the relevant PSS design work
+the receiving use or the range of possible arrangements is unsettled, use the relevant PSS design work
 in :11 to generate candidates before qualifying them for the engineering decision.
 
 
@@ -111,7 +111,7 @@ in :11 to generate candidates before qualifying them for the engineering decisio
 4. **Compare materially different candidates.** Reuse applicable alternatives and generate further ones when
    an unresolved decision needs them. Plausible arrangements include product transfer with support, access or
    use provision, continuing availability responsibility, result-oriented provision, and mixed forms. Retain
-   variety when evidence can still change the choice.
+   variety when evidence can change the choice.
 5. **Develop the provider structure.** For each candidate, identify the actual provider and partner Systems.
    Represent a provider that does not yet exist only as an intended referent in a possible-future claim. Record the
    relations and assignments that obtain. Then name the capabilities, Methods, recurring and exceptional Work,
@@ -129,7 +129,7 @@ in :11 to generate candidates before qualifying them for the engineering decisio
    example, the product, provider capability, interfaces, data, operating arrangement, or shared enabling
    Systems. State what later evidence or change will reopen the concept—for example, evidence from a new
    configuration, update, migration, maintenance event, partner change, or recovery attempt.
-8. **Obtain specialist results.** Request a specialist result only when it can change the candidate—for example,
+8. **Obtain specialist results.** Use an available, applicable specialist result when it bears on the candidate. Request a missing result when it could establish or change its disposition—for example,
    a result from strategy, marketing, commercial analysis, finance, law, organization change, operations,
    supporting-System engineering, safety, security, or environmental engineering. Preserve its source and
    authority boundary. When finance depends on the engineering result or its acceptance, use :4.4 to develop the connected alternative.
@@ -138,8 +138,8 @@ in :11 to generate candidates before qualifying them for the engineering decisio
    changeability, evidence, or affected-System consequences. Keep non-equivalent measures separate unless an
    explicit aggregation Method preserves the distinctions used by the decision.
 10. **Record the bounded concept.** Give each candidate one current disposition: select it, retain it for later
-    comparison, branch it by a stated condition, or reject it. Record unsupported claims, needed specialist and
-    realization results, responsibilities, evidence needs, and conditions for reconsideration. A conditional
+    comparison, branch it by a stated condition, or reject it. Record needed specialist and realization results, responsibilities and conditions for reconsideration, together with
+    any unsupported claims or remaining evidence needs. A conditional
     candidate is useful when it makes the next decision visible.
 
 Analysis of use, concept development, architecture, organization change, operations, commercial analysis, trials,
@@ -171,19 +171,19 @@ Use this continuation when obtaining money depends on a technical result or its 
 
 **Connect the promised result to the event that permits payment.** For each live candidate, recover the required functioning and operating conditions, the configuration to which the evidence applies, and what must be observed or demonstrated. Identify who judges that result and what the proposed terms make payable after that judgement. Obtain the applicable terms and event interpretation through [FDM.1](../../fdm/09-fdm-1---recover-the-financial-position-behind-a-record.md) and [FDM.3](../../fdm/11-fdm-3---derive-events-and-conditional-flows-from-financial-c.md) when those relations are unresolved. Keep the technical result, its acceptance, the payment obligation and the money's usable date distinguishable. A satisfactory trial can support the technical claim while the agreed payment still arrives too late for the next construction action.
 
-**Ask finance for the condition that the engineering proposal must resolve.** Supply the relevant realization and operating account, including the work and means needed to obtain the acceptance evidence. [FIN.2](../../management-dpf-suite/fin/15-fin-2---assess-liquidity-and-funding-needs-by-date.md) returns the payer, amount, usable date and remaining exposure; [FIN.10](../../management-dpf-suite/fin/23-fin-10---design-financing-instruments-and-terms.md) constructs or compares terms with prospective participants. Recover which technical or acceptance premise those results consume. If funds are released after commissioning but commissioning needs those funds, the current proposal has no funded start. ECO.4 supplies the general construction of attainable complementary commitments; the engineer must still identify a realizable first result and what its evidence establishes.
+**Ask finance for the condition that the engineering proposal must resolve.** Supply the relevant realization and operating account, including the work and means needed to obtain the acceptance evidence. [FIN.2](../../management-dpf-suite/fin/15-fin-2---assess-liquidity-and-funding-needs-by-date.md) returns the payer, amount, usable date and remaining exposure; [FIN.10](../../management-dpf-suite/fin/23-fin-10---design-financing-instruments-and-terms.md) constructs or compares terms with prospective participants. Recover which technical or acceptance premise those results consume. If funds are released after commissioning but commissioning needs those funds, the current proposal has no funded start. ECO.4 supplies the general construction of attainable complementary commitments; the engineer must identify a realizable first result and what its evidence establishes.
 
 **Develop the changed offering with the affected specialists.** Work back from that failed condition. A smaller independently useful result may be obtainable with available means. A different bearer, temporary qualified operating method, supplied component or division of responsibility may change the first payment, preparation cost or continuing work. Compare these with retaining the technical arrangement and changing only financing. Preserve the receiving use's necessary performance and protection; a proposed reduction in the promise needs the affected recipient's decision.
 
 For every serious variation, explain what changes in functioning, realization, observation, recovery and provider capability. Obtain the corresponding operating and financial consequences. For example, replacing an automatic observation with a manual one requires an adequate observation method, capable available performers and an interval that fits the required response. Its recurring labour and exception work belong in the new account. A temporary method also needs a supported end or transition; calling it temporary supplies neither the replacement nor the work of switching.
 
-An earlier milestone can become a financing condition if a participant accepts the result it actually establishes and the exposure that remains. A readiness test might justify an advance while leaving performance in use to later acceptance. State that allocation in the proposal. Changing a payment milestone does not make the earlier evidence establish the later performance claim. Conversely, a qualified earlier test can be useful even when it does not establish the entire service: use its result for the bounded decision it supports.
+An earlier milestone can become a financing condition if a participant accepts the result it establishes and the exposure that remains. A readiness test might justify an advance while leaving performance in use to later acceptance. State that allocation in the proposal. Use the earlier test for the decision it supports. If a payment moves to that milestone, the later service performance needs evidence from the applicable configuration and period.
 
 **Return one compatible alternative to both decisions.** Send the changed configuration, evidence requirement, preparation and operating work to the financial contributor. Return the resulting cash dates, conditions and restrictions to the engineering and provider decisions. Replace the affected premises together: a new advance changes the later amount due, while a new operating method can change the cost and meaning of acceptance. Use FIN.10 for participation, financing claims and closing, and ECO.3–ECO.4 when the missing contribution is a different exchange or combination of commitments. The participating decision-makers retain their respective authority.
 
 Follow an ordinary completion and a consequential interruption through the proposed arrangement. If evidence arrives late, fails, or applies to another configuration, determine which payment, draw or next action is still supported and what remains due. Reconsider the dependent construction or service commitment while it can still be changed. A contractual remedy for failure can allocate loss without providing the means to maintain the promised functioning; obtain the engineering recovery separately.
 
-Return the supported concept, a conditional proposal for the participants, a justified wait for a specified result, or rejection of an unsupported arrangement. A wait is useful only while it can still meet the receiving need or leads to an agreed changed need. Technical approval, acceptance of commercial terms and provision of money remain decisions or events of their respective participants. This engineering account supplies their connection and the design consequences; it does not itself perform those acts.
+Return the supported concept, a conditional proposal for the participants, a justified wait for a specified result, or rejection of an unsupported arrangement. A wait is useful only while it can meet the receiving need or leads to an agreed changed need. Technical approval, acceptance of commercial terms and provision of money remain decisions or events of their respective participants. The engineering account explains how those decisions and events depend on one another and what that means for the design.
 
 
 ### SYSE.8:5 - Worked Case: Cast-Iron Transfer, Delivery, or Replenishment
@@ -242,8 +242,8 @@ exceeds EUR 100 and records any earlier payment obligation.
 
 The EUR 150 advantage exceeds the EUR 100 threshold. Using the schedule assessment, the operations
 coordinator's acceptance and the comparison rule, the authorized commercial lead selects scheduled delivery
-for this lot and retains gate transfer as fallback. The earlier haulage payment remains visible rather than
-being silently treated as equivalent credit. Replenishment remains a possible-future candidate pending its
+for this lot and retains gate transfer as fallback. Gate transfer would require the buyer to pay for haulage within seven days,
+earlier than payment for the lot. Replenishment remains a possible-future candidate pending its
 named observation test and finance decision.
 
 The selection does not assert that transport, handover, acceptance, or recovery Work has occurred. The intended
@@ -260,7 +260,7 @@ model would need a further decision to justify it.
 
 If the question changes to keeping stock available throughout a season, explore the plant's consumption and
 replenishment activities, possible provider partners and the inventory business arrangement. That broader
-design work can generate alternatives to the present replenishment proposal. It still leaves the named
+design work can generate alternatives to the present replenishment proposal. It leaves the named
 observation test, financing and restoration commitment to their responsible practices; a promising blueprint
 does not supply those results.
 
@@ -269,13 +269,13 @@ does not supply those results.
 
 Now change the foundry case from one delivered lot to keeping the machining plant's accepted stock above an agreed minimum during days 10–60. This is a new receiving use, so the single-lot selection in :5.3 remains valid for its original question. The new proposal needs observation, replenishment and exception response under stated limits on consumption and delivery delay.
 
-The following constructed inputs are supplied for comparing two provider arrangements. They are stipulated engineering, operating and negotiating grounds, not observations of a real provider. Amounts are thousands of euros. The provider has 5 of usable cash after other commitments and must retain 1. The compatible operating account covers routine purchases and replacements; the table shows the additional preparation, opening inventory and observation work that distinguish these proposals. At day 60 the plant resumes its established stock arrangement; the supplied account includes the needed handover and support. The initial schedule assumes timely successful performance and payment, with no other incremental cash flows, taxes or financing charges.
+The engineering, operating and negotiating inputs below are stipulated for this comparison. They do not report observations of a provider. Amounts are thousands of euros. The provider has 5 of usable cash after other commitments and must retain 1. The compatible operating account covers routine purchases and replacements; the table shows the additional preparation, opening inventory and observation work that distinguish these proposals. At day 60 the plant resumes its established stock arrangement; the supplied account includes the needed handover and support. The initial schedule assumes timely successful performance and payment, with no other incremental cash flows, taxes or financing charges.
 
 The automatic candidate costs 4 on day 0 to prepare the observation and control system, 6 for inventory on day 10, and 2 for operation on day 45. Its stipulated commissioning method requires the installed stock and plant configuration. The customer offers total payment 12 on day 30, after acceptance of the initial service period. No presently offered finance is drawable before that acceptance. A successful component test would not satisfy either this installed commissioning requirement or the customer's service-acceptance condition.
 
 A qualified operating comparison also supplies a manual candidate for the same bounded stock promise. Preparation and a readiness demonstration cost 3 on day 0, inventory still costs 6 on day 10, and manual observation and response cost 5 on day 45. The specified consumption and delivery limits permit this method; the needed people, observation interval and exception response are included in that account. Its readiness can be demonstrated with existing means before buying the opening inventory. A satisfactory demonstration would support readiness for the bounded manual operation under those conditions; acceptance of the actual service period remains later.
 
-The customer is willing to consider paying 6 on day 7 after that readiness judgement and the remaining 6 on day 30 after service acceptance. This advance transfers exposure to the customer. Its stated negotiating position accepts that exposure only for the demonstrated manual arrangement and the proposed correction or refund terms. The parties must still agree those terms and make the payments. Before commitment, FIN.10 must also establish the cash consequences of the agreed correction or refund obligations in the states where they apply. The successful-performance schedule below leaves that exposure unresolved. There is no corresponding early-payment offer for the automatic candidate.
+The customer is willing to consider paying 6 on day 7 after that readiness judgement and the remaining 6 on day 30 after service acceptance. This advance transfers exposure to the customer. Its stated negotiating position accepts that exposure only for the demonstrated manual arrangement and the proposed correction or refund terms. The parties must agree those terms and make the payments. Before commitment, FIN.10 must also establish the cash consequences of the agreed correction or refund obligations in the states where they apply. The successful-performance schedule below leaves that exposure unresolved. There is no corresponding early-payment offer for the automatic candidate.
 
 | Event | Automatic candidate: projected cash | Manual candidate with the proposed advance: projected cash |
 | --- | ---: | ---: |
@@ -290,11 +290,11 @@ FIN.2 exposes a day-10 need for 6 of additional usable money in the automatic ca
 
 The engineering return is a conditional manual offering with its observation method, staffing, supported operating limits, early readiness question and later service acceptance. The financial return is its dated conditional coverage. Neither return establishes the other's premises: the cash account does not qualify manual replenishment, and the operating comparison does not create the customer's advance. The useful next work is to obtain the stated readiness judgement and participant agreements, or change the proposal if their conditions cannot be met. The customer can also retain ordinary lot purchasing if it prefers arranging its own stock protection to accepting the new exposure.
 
-This is not a choice of the cheapest isolated component. The manual method has higher continuing work cost, while its different readiness conditions make an earlier payment proposal possible. The parties compare that complete arrangement with obtainable finance for automation, another complete provider offer, a changed service start or refusal. A financial value comparison uses FIN.6 or FIN.9 if the decision needs it; the displayed balances establish only dated payment capacity under the supplied terms.
+The manual method has higher continuing work cost, while its different readiness conditions make an earlier payment proposal possible. The parties compare that complete arrangement with obtainable finance for automation, another complete provider offer, a changed service start or refusal. A financial value comparison uses FIN.6 or FIN.9 if the decision needs it; the displayed balances establish only dated payment capacity under the supplied terms.
 
 **Change the readiness date.** Suppose the manual readiness result cannot be obtained until day 14, so the proposed advance cannot settle before then. On day 10, cash would be 2 − 6 = −4. Maintaining the reserve now requires 5 of earlier net funding. Waiting for the unchanged day-14 advance leaves the promised day-10 start unsupported. Obtain a finance arrangement covering that interval, agree a later start with its operating consequences, select another provider arrangement, or decline the start. Preserve the manual method's otherwise adequate technical result; the changed evidence date has invalidated the funding and start conditions.
 
-**Change financing while retaining the automatic design.** Instead, suppose a lender actually offers 6 net before the day-10 inventory payment, independently of service acceptance, for repayment of 7 on day 30. With all other supplied conditions retained, automatic-candidate cash is 1 after preparation, 1 after funding and inventory purchase, 6 after receiving 12 and repaying 7, and 4 after operation. It now meets the reserve without changing the technical concept. FIN.10 compares that financing proposal and its conditions; the engineering decision can retain the automatic arrangement if the whole comparison supports it. The earlier funding failure no longer supplies a reason to prefer manual provision.
+**Change financing while retaining the automatic design.** Instead, suppose a lender offers 6 net before the day-10 inventory payment, independently of service acceptance, for repayment of 7 on day 30. With all other supplied conditions retained, automatic-candidate cash is 1 after preparation, 1 after funding and inventory purchase, 6 after receiving 12 and repaying 7, and 4 after operation. It now meets the reserve without changing the technical concept. FIN.10 compares that financing proposal and its conditions; the engineering decision can retain the automatic arrangement if the whole comparison supports it. The earlier funding failure no longer supplies a reason to prefer manual provision.
 
 If consumption or the permitted response interval changes, obtain the affected operating qualification and return its cost, capability and evidence consequences to the same comparison. A cash forecast for the earlier manual arrangement remains evidence about that earlier arrangement. The decision needs the version that can fulfil the changed stock promise.
 
@@ -307,7 +307,7 @@ engineering of shared enabling Systems can contribute bounded alternatives. Repo
 environmental gains are configuration-dependent. Academic popularity or official adoption is evidence of
 visibility or declared use, not of enacted prevalence or success.
 
-Identify each provider or receiving System from its own basis and name the actual Agent performing each Work
+Identify each provider or receiving System from its own basis and name the Agent performing each Work
 occurrence. Keep neighboring claims separate—for example, claims about ownership, legal duty, capability,
 authority, assignment, or a later provider-development decision—even when one System participates in several of
 them.
@@ -323,7 +323,7 @@ them.
 | `CC-SYSE8-5` | separates expected Work, result restoration, custody or ownership, and risk exposure from any independently supported responsibility, duty, permission, or authority claim. |
 | `CC-SYSE8-6` | connects the selected concept to realization, provider-capability change, configuration, continuing operation, and reopen evidence. |
 | `CC-SYSE8-7` | preserves specialist decisions and authority rather than absorbing, for example, strategy, finance, law, organization change, operations, or Platform Engineering. |
-| `CC-SYSE8-8` | returns a bounded conditional or selected concept with unsupported claims, evidence needs, receiving decisions, and reopen conditions. |
+| `CC-SYSE8-8` | returns a bounded conditional or selected concept with the receiving decisions, conditions for reconsideration, and any unsupported claims or remaining evidence needs. |
 | `CC-SYSE8-9` | when finance depends on technical acceptance, connects the same configuration, evidence, payment conditions and usable dates; returns changed work and exposure to both the engineering and financial comparisons. |
 
 ### SYSE.8:8 - Common Failures and Repairs
@@ -356,8 +356,8 @@ branch or stop the candidate before commitment.
 ### SYSE.8:10 - Rationale
 
 A choice among transfer, access, continuing provision, or responsibility for a result can change both the
-engineered subject and the provider arrangement that sustains its use. This pattern connects those design
-decisions, using the FPF distinctions at their points of application.
+engineered subject and the provider arrangement that sustains its use. Consider both designs together when choosing the form of provision.
+
 
 
 
@@ -387,7 +387,7 @@ development has no demonstrated decision benefit. For the changed question of co
 that exploration can reveal different allocations and provider arrangements.
 
 The trade-off is to maintain the grounds and allocations needed for the bounded choice while
-deferring broader opportunity search. Each claim used in the decision still needs applicable support.
+deferring broader opportunity search. Each claim used in the decision needs applicable support.
 Bounding the use too narrowly can hide an alternative; use the richer PSS treatment to reconsider the range
 of arrangements. No comparative time saving or industrial performance advantage is established by the worked
 arithmetic. Reopen the depth choice when a changed use, overlooked actor or continuing task, or evidence of a
@@ -399,15 +399,15 @@ The [PPP Reference Guide 3.0, Performance Requirements](https://ppp.worldbank.or
 
 ### SYSE.8:12 - Relations
 
-- `A.15.6` supplies the general project-focus and system-of-interest distinctions. `SYSE.1` specializes that
-  result for an engineering project; `SYSE.16` supplies the operational use-context account; and `SYSE.17`
-  supplies consequence-bearing Systems and unresolved consequences. Compatible current results can be supplied
+- `A.15.6` supplies the general project-focus and system-of-interest distinctions. `SYSE.1` specializes those distinctions for engineering projects. `SYSE.16` explains how to identify
+  the operational use context; `SYSE.17`
+  explains how to identify affected Systems, the consequences supported by available grounds and any consequential uncertainty. Compatible current results can be supplied
   directly; the relations do not impose a lifecycle order.
 - A `SYSE.8` account supplies only its supported provider-arrangement claims and design constraints to the
   Agents performing linked-concept, realization, or architecture-decision Work. Those Agents apply `SYSE.2` to
   compare linked use and System concepts, `SYSE.3` to develop the recursive realization network, or `SYSE.6` to
   decide the engineered architecture.
-- `A.2.3` defines promise content and its acceptance-facing structure. `A.6.P:4.11a` recovers the actual referent
+- `A.2.3` defines promise content and its acceptance-facing structure. `A.6.P:4.11a` recovers the referent
   or relation hidden by *service* or *access* wording. Neither pattern selects a provider arrangement.
 - Organization Change Engineering changes provider organization and capability; Operations Management
   coordinates continuing provision; and Platform Engineering changes shared enabling Systems and the Methods
@@ -417,6 +417,6 @@ The [PPP Reference Guide 3.0, Performance Requirements](https://ppp.worldbank.or
   mechanical, building, ship, transport, medical, industrial, or public-sector Methods—when their subjects,
   risks, evidence, or working moves differ.
 
-For conditional finance, FIN.2 supplies dated funding needs and FIN.10 constructs financing terms; FDM.1 and FDM.3 supply unresolved positions and contractual events. ECO.3 and ECO.4 supply exchange construction and complementary commitments. SYSE.8:4.4 returns those results to the offering, technical evidence and provider arrangement; the financial and economic Methods remain external suppliers.
+For conditional finance, FIN.2 supplies dated funding needs and FIN.10 constructs financing terms; FDM.1 and FDM.3 supply unresolved positions and contractual events. ECO.3 and ECO.4 supply exchange construction and complementary commitments. Use those results in SYSE.8:4.4 to develop the offering, its technical evidence requirements and its provider arrangement.
 
 ### SYSE.8:End

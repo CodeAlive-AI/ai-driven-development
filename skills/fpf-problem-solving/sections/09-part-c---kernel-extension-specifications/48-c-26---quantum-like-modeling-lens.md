@@ -76,16 +76,16 @@ Example style:
 | Better | The readiness dashboard was not a passive read: its publication changed team behavior, so the dashboard result cannot be used alone as pre-publication readiness evidence. |
 | Best | Apply `C.16` and `A.15` to the metric and changed work; `C.26.1` can clarify the probe effect. Publication changed readiness behavior in window W, so add independent work traces before using the dashboard for release assurance under `B.3`. These facts alone supply no contextual-model obstruction and require no QL wording. |
 
-Informative bilingual translation note:
+Read these terms by the distinctions the model needs.
 
-| English | Prefer in Russian or bilingual use | Risk |
-| --- | --- | --- |
-| `probe` | probe / пробное воздействие / считывающее взаимодействие | "измерение" is too narrow; "зонд" sounds too physical. |
-| `state reading` | чтение состояния / state-reading claim | "состояние" without reading sounds ontological. |
-| `frame` | рамка сравнения, probe frame, or model frame | "контекст" can collide with bounded context. |
-| `instrument` | instrument-like operation / операция-инструмент | "прибор" sounds too physical. |
-| `distributed state` | distributed-state reading | "распределённое состояние" sounds like a new object. |
-| `faithful-enough export` | достаточно верный перенос для заявленного use | "копия" suggests an impossible-copy ideal. |
+| Term | What to preserve in use |
+| --- | --- |
+| Probe | An interaction that elicits a reading. Measuring an existing quantity and inserting a physical sensor are two possible cases. |
+| State reading | A claim about the state inferred under the stated conditions. |
+| Frame | Say what governs the comparison, probe or model. A reference to the surrounding context alone leaves this open. |
+| Instrument | The operation that produces a reading may be carried out with a physical device. Identify what the operation does. |
+| Distributed state | Give the observations and the distributed-state reading they support. A new entity requires its own grounds. |
+| Faithful-enough export | State which properties the receiving use needs the transfer to preserve and which losses it permits. |
 
 ### C.26:2 - Problem
 

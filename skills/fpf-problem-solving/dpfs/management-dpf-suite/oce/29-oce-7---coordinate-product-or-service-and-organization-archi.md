@@ -3,7 +3,7 @@
 > **Type:** Method pattern
 > **Status:** Stable
 >
-> **Primary working result:** **coordinated but separately governed product-or-service and organization architecture decisions** that name both holons and selected structures, correspondence pressure, four candidate forms, expected gains and losses, authority, evolution window, realization returns, and observations that reopen either decision.
+> **Primary working result:** **coordinated but separately governed product-or-service and organization architecture decisions** that name both holons and selected structures, correspondence pressure, the relevant candidate forms, expected gains and losses, authority, evolution window and conditions for realizing or reopening each decision. A comparison can also return a proposal or a specific unresolved dependency before either side chooses.
 
 ### OCE.7:0 - Use This When
 
@@ -11,7 +11,7 @@ Use this pattern when a product or service architecture and an organization desi
 
 Begin with a bounded contribution question and at least one organization-side structure or candidate from `OCE.3` or `OCE.4`. When the organization serves several products, retain the product-specific constraints and shared demands that can change this question. Recover the product-or-service focus, concept, architecture claims, and qualified specialist contributions from Systems Engineering or another owning practice when available. State missing inputs and what they block.
 
-The first useful result can be a bounded mismatch: two separately governed decisions that say which structures will align, which will remain deliberately non-isomorphic, what burden is accepted, and what observation will reopen that choice.
+A first result can be a comparison or proposal for the responsible parties, or a precise limit on the remaining choice. An authorized choice of a bounded mismatch can yield two separately governed decisions that say which structures will align, which will remain deliberately non-isomorphic, what burden is accepted, and what observation will reopen that choice.
 
 Use `C.32.CONWAY` directly when only correspondence candidate synthesis is needed. Use `C.32.PAD` or the owning domain pattern for each architecture decision. Use `OCE.4` when only organization contribution structure is changing, Systems Engineering when only the engineered product architecture is current, and Operations when the question concerns managing continuing Work rather than changing the organization.
 
@@ -21,7 +21,7 @@ Use `C.32.CONWAY` directly when only correspondence candidate synthesis is neede
 | --- | --- |
 | organization-side architecture content | Actual or modal `C.30` content about the named organization holon and selected contribution, Work, decision, information, access, service, coordination, legal, or other structures. |
 | product-or-service-side architecture content | Actual or modal architecture content about the named product, service System, offering System, platform, or other exact product-or-service-side holon. For each stated directional pressure, identify whether this content describes the influence-source side or the side being changed. |
-| correspondence pressure | A bounded claim that one side's selected structures influence the feasibility or burden of candidates on the other side through a named relation. It is not a universal law or automatic decision. |
+| correspondence pressure | A bounded claim that one side's selected structures influence the feasibility or burden of candidates on the other side through a named relation. State the conditions under which the influence is supported. |
 | correspondence frame | The `C.32.CONWAY` synthesis frame used while either side is modal or the direct influence relation is unresolved. |
 | exact correspondence row | A reusable `C.32.CONWAY` row about one obtaining direct influence relation whose two participants are obtaining `C.30` architecture-relation occurrences, with each holon and selected structure recoverable. |
 | evolution window | The period and expected change range over which the correspondence decision is intended to guide Work. |
@@ -32,7 +32,7 @@ Use `C.32.CONWAY` directly when only correspondence candidate synthesis is neede
 
 Products and services are produced, operated, supported, assured, and changed through organizations. Communication, deployment, test, approval, provider, evidence, and capability-home structures can make some product or service architectures easier to sustain. Technical dependencies can in turn create coordination and specialization pressure in the organization.
 
-Correspondence can help without becoming one-to-one mirroring. Independent safety acceptance, scarce specialist homes, legal entities, platform services, regional operations, provider contracts, and continuing service can justify deliberate non-isomorphism. The task is to decide both sides with their gains, losses, authorities, and evolution windows visible.
+Correspondence can help without becoming one-to-one mirroring. Independent safety acceptance, scarce specialist homes, legal entities, platform services, regional operations, provider contracts, and continuing service can justify deliberate non-isomorphism. Compare both sides with their gains, losses, authorities and evolution windows visible. Where a choice is required, present its grounds to the holder of the relevant authority or decide within your mandate.
 
 ### OCE.7:2 - Problem
 
@@ -53,9 +53,9 @@ Mirroring language hides these facts when it treats similarity as adequacy or in
 
 ### OCE.7:4 - Solution
 
-Frame the organization/product-or-service architecture pair needed for the decision and generate four candidate forms: change the organization side, change the product-or-service side, change both, or keep a bounded mismatch. For a shared creator, connect the relevant pairs through their actual common resources and obligations; a choice for one product must preserve or explicitly revise the other affected commitments. Keep product-side SoI and organization-as-creator distinct while making both architecture decisions. Compare complete candidates across the declared evolution window. Make the organization and product-or-service decisions under their own authorities, then connect them through explicit constraints, accepted burdens, realization returns, and shared reopen conditions.
+Frame the organization/product-or-service architecture pair needed for the decision and generate four candidate forms: change the organization side, change the product-or-service side, change both, or keep a bounded mismatch. For a shared creator, connect the relevant pairs through their actual common resources and obligations; a choice for one product must preserve or explicitly revise the other affected commitments. Keep the product or service distinct from the organization that creates it. Determine what each proposed or existing architecture would require of the other. Compare complete candidates across the declared evolution window. Use existing organization and product or service decisions where their grounds still apply. Return proposals to the appropriate decision holders or make the choices within your authority. Connect the decisions through their constraints, accepted burdens, implementation needs and shared conditions for reopening.
 
-Recognition is cheap: one architecture choice whose feasibility depends on an unlike structure on the other side is enough to enter. Assurance is stronger: actual correspondence claims require the exact holons, selected structures, direct influence predicate and occurrence, conditions, evidence, and window. Modal material remains in the synthesis frame.
+Start when a choice on one side depends on a structure on the other. To establish an existing correspondence, identify the exact holons, selected structures, direct influence predicate and occurrence, conditions, evidence, and window. Modal material remains in the synthesis frame.
 
 Begin with the strongest applicable existing arrangement. For a software-delivery question, a competent DORA-style design may already support independent testing and deployment, clear service contracts and feasible operating support. Reuse its settled answers and qualified constraints. The paired comparison is useful when a consequential product or organization choice remains unresolved, for example whether an independent acceptance function should remain separate or a shared test resource prevents the proposed independence. Consider all four directions at the depth needed to settle that question; a disqualified form needs its reason, not a complete redesign. Count the effort of this comparison alongside the migration and continuing coordination it could change.
 
@@ -67,22 +67,22 @@ The two authorized decision-makers can work from one short paired note:
 
 > The organization-only candidate would merge the groups and disrupt an existing specialist-service commitment. The product-only and joint candidates require redesign that cannot fit the two-release window under the current engineering assessment. We therefore choose a bounded mismatch. The product decision retains the module and test boundaries. The organization decision retains the two groups and specifies one integration contribution and exception return per release. The gain is low migration burden; the accepted cost is shared-test coordination and no claim of independent release by each group. Reopen both decisions if the shared-test burden defeats the protected service commitment, or when the two-release window ends.
 
-Each decision-maker records the decision for their own subject and authority. Send the needed assignment, access, test-time and service-protection requests to their owners for action before the dependent releases. Keep the existing evidence with the note. Use the fuller questions below for an unresolved claim or consequence that could change the pair, rather than rebuilding settled architecture accounts.
+Each decision-maker records the decision for their own subject and authority. Use effective assignments, access, test-time allocations and service protections for the dependent releases. If a condition is missing, seek the action or evidence needed from its responsible party. Keep the existing evidence with the note. Use the fuller questions below for an unresolved claim or consequence that could change the pair, rather than rebuilding settled architecture accounts.
 
 #### OCE.7:4.1 - Pattern-Use Unfolding
 
-1. **Bind the paired question.** Name the intended contribution, organization holon, product-or-service holon, decision subjects, authorities, current Work, horizon, evolution window, protected characteristics, and first users of both decisions.
+1. **Bind the paired question.** Name the intended contribution, organization holon, product-or-service holon, the question to be answered, its users, current Work, horizon, evolution window and protected characteristics. Identify the decision subjects and authorities for any choices required.
 2. **Recover both architecture sides.** Separate actual `ArchitectureRelation` occurrences from candidate, required, desired, or expected `ArchitectureClaim` content. Name each selected structure, description source, currentness, and known loss.
 3. **Recover each directional pressure relation.** State which side supplies the influence source and which side contains the changed architecture referent for this candidate; the direction can reverse between pressures. State how a communication, Work, test, deployment, approval, evidence, provider, capability-home, legal, service, or other source structure constrains the transformed-side candidate. Use the applicable direct predicate. Keep modal architecture content or unresolved facts in a `C.32.CONWAY` frame, naming what is unestablished; return `missing-governor` only when the required influence kind or predicate is absent. A false predicate excludes the claimed occurrence. A reciprocal claim requires its own reversed frame or relation occurrence.
-4. **Select decision characteristics.** Name the few characteristics and burdens that can reverse the choice. Ask about the intended contribution, coordination, latency, changeability, safety, evidence, resilience, provider dependence, capability and service continuity, migration, effects on affected Systems, or another exact concern.
+4. **Select decision characteristics.** Name the few characteristics and burdens that could affect the comparison, its limits or the choice. Ask about the intended contribution, coordination, latency, changeability, safety, evidence, resilience, provider dependence, capability and service continuity, migration, effects on affected Systems, or another exact concern.
 5. **Prepare all four candidate forms.** Change the organization side while retaining product/service content; change the product/service side while retaining organization content; change both; or keep a bounded mismatch with explicit cost and return. A form can be rejected quickly when a non-negotiable condition fails. Reuse a domain method’s existing comparison when it answers these choices at the required scope. Develop only unresolved consequences; the four forms do not require four complete alternative projects.
 6. **Obtain qualified domain inputs.** Use available `SYSE.1`, `SYSE.2`, and `SYSE.9` results for engineering focus, linked use/System concepts, and professional contributions when compatible. Use qualified direct sources or return the missing result when a sibling body is unavailable.
-7. **Compare whole consequences.** Include current and transition Work, provider and platform arrangements, independent authority, evidence paths, scarce capability, legal and service boundaries, affected Systems, reversibility, and the burden of preserving deliberate non-isomorphism. Include the effort to recover both sides, consult their decision makers, investigate rejected options and maintain coupled decisions. Accept that extra comparison only for a consequence that can alter the pair; retain a sufficient narrower answer when those conditions are already settled.
-8. **Challenge the preferred pair.** Ask which omitted dependency, exception, configuration, operating episode, or later evolution would reverse the choice. Use prototypes, simulations, participant criticism, sampled Work, or specialist results only within their evidence limits.
-9. **Make separate decisions.** Use `C.32.PAD`, `C.11`, or the owning pattern for each decision. State selected structures, fixed constraints, open refinements, accepted losses, authority, effectivity, retained alternatives, and relation to the paired decision.
-10. **Specify realization and coexistence returns.** Name the organization-change Work, product/service realization Work, continuing-service conditions, assignment/access needs, and observations each owner must return. Keep the realization Work and its evidence separate from the decisions selecting it.
+7. **Compare whole consequences.** Include current and transition Work, provider and platform arrangements, independent authority, evidence paths, scarce capability, legal and service boundaries, affected Systems, reversibility, and the burden of preserving deliberate non-isomorphism. Include the effort to recover both sides, consult their decision makers, investigate rejected options and maintain coupled decisions. Pursue further comparison when it can improve the grounds for choosing or relying on the arrangement enough to justify the work. Use a sufficient narrower answer directly.
+8. **Challenge the preferred pair.** Ask which omitted dependency, exception, configuration, operating episode, or later evolution could defeat the choice or narrow the conditions under which it is justified. Use prototypes, simulations, participant criticism, sampled Work, or specialist results only within their evidence limits.
+9. **Make separate decisions.** Use `C.32.PAD`, `C.11`, or the owning pattern for each decision. Use a sufficient existing decision within its conditions. For a new selection, state its structures, constraints, authority and effectivity, any open refinements, losses or retained alternatives, and how it relates to the other side. If the work is advisory, return the supported proposal or remaining question to the appropriate recipient.
+10. **Specify realization and coexistence returns.** Where implementation is in scope, identify the required organization or product changes, continuing-service conditions and evidence of completion. State the assignment, access or observation each party still needs. Keep the realization Work and its evidence separate from the decisions selecting it.
 11. **Reopen locally or jointly.** Reconsider only the affected decision when one side changes without altering the correspondence choice. Reopen both when the pressure relation, accepted mismatch, protected characteristic, or evolution window changes materially.
-12. **Stop at coordinated sufficiency.** Return when both owners know what is selected, what remains open, why structures align or differ, which burden is accepted, and what evidence can reopen the pair.
+12. **Stop at coordinated sufficiency.** Return the supported comparison or decisions and any unsettled question. Explain which structures align or differ, what burden the arrangement carries, what remains conditional and what evidence would reopen the choice.
 
 #### OCE.7:4.2 - Record the Result
 
@@ -90,16 +90,16 @@ Each decision-maker records the decision for their own subject and authority. Se
 | --- | --- |
 | paired boundary | Contribution, two holons, decision subjects, authorities, current Work, horizon, evolution window, protected characteristics, and first users. |
 | architecture sides | Actual relation or modal claim status, selected structures, descriptions, sources, currentness, and known losses for each side. |
-| correspondence | Direction of each pressure, direct influence predicate/occurrence or synthesis frame, source and transformed architecture content, affected characteristic, evidence, and missing governor. |
+| correspondence | Direction of each pressure, direct influence predicate/occurrence or synthesis frame, source and transformed architecture content, affected characteristic, evidence and any unresolved relation. Distinguish an unspecified governing predicate from a relation that is absent or whose occurrence is unknown. |
 | candidate forms | Organization-side change, product/service-side change, joint change, bounded mismatch, expected gain, known loss, migration burden, and rejected non-negotiables. |
-| comparison | Contribution, coordination, safety, evidence, resilience, provider, capability, service, affected-System, reversibility, and uncertainty consequences that change this decision. |
-| separate decisions | Selected option and structure effects, authority, fixed/open boundary, accepted losses, retained alternatives, effectivity, and cross-reference to the paired decision. |
-| realization returns | Work, assignments, access, provider, coexistence, specialist, observation, and evidence results required from each owner. |
+| comparison | Contribution, coordination, safety, evidence, resilience, provider, capability, service, affected-System, reversibility, and uncertainties relevant to the comparison or its use. |
+| separate decisions | For each side, current decision or proposal, structural effects, scope and applicable authority, any open choice, accepted losses or retained alternatives, and the connection to the other side. |
+| realization returns | Work, assignments, access, provider, coexistence, specialist, observation, and evidence conditions or results needed for any implementation in scope. |
 | continuation | Local and joint reopen observations, source-return conditions, and end of the evolution window. |
 
 #### OCE.7:4.3 - What Changes in Practice
 
-Practitioners stop treating product and organization architecture as either independent or forced copies. They can change the cheaper or more valuable side, change both, or accept a visible mismatch. Independent safety, evidence, platform, provider, capability-home, and service boundaries become design constraints rather than embarrassing exceptions to a topology slogan.
+Practitioners stop treating product and organization architecture as either independent or forced copies. They can change the cheaper or more valuable side, change both, or accept a visible mismatch. Independent safety acceptance, shared platforms and scarce specialists can constrain the arrangement even when matching boundaries would reduce some coordination.
 
 ### OCE.7:5 - Archetypal Grounding -- PumpWorks Product and Organization Decisions
 
@@ -118,7 +118,7 @@ For the software portion, PumpWorks also considers a qualified DORA-style arrang
 
 PumpWorks selects the joint candidate for a bounded release family. The product architecture decision selects the alignment of module/evidence-package boundaries. The organization decision selects stream contribution boundaries and identifies the release-evidence integration need. Safety acceptance remains independent, platform and scarce capability homes remain shared, and provider support does not mirror a product module.
 
-The two decisions cite the same assumptions and evolution window but retain separate authorities and realization Work. `OCE.6` supplies assignments and access; product realization remains with Systems Engineering; `OCE.9` later tests organization relations and capability; Operations supplies continuing-release and service observations. A changed safety regime, provider boundary, platform coupling, product family, or observed coordination burden reopens the affected decision pair.
+The two decisions cite the same assumptions and evolution window but retain separate authorities and realization Work. Use `OCE.6` to establish the assignments and access required for implementation. Product realization remains with Systems Engineering. Use `OCE.9` to assess the organizational relations and capability, and Operations for continuing-release and service observations. A changed safety regime, provider boundary, platform coupling, product family, or observed coordination burden reopens the affected decision pair.
 
 The correspondence is partial. Routine package production follows the selected module boundaries, while the knowledge needed to challenge cross-module assumptions remains with a wider integration and specialist network. Safety acceptance also spans the release. The pair deliberately retains these wider relations rather than treating them as defective copies of the production structure.
 
@@ -146,13 +146,13 @@ A later provider version introduces shared calibration state across the modules.
 
 ### OCE.7:7 - Conformance Checklist
 
-- [ ] The contribution, two exact holons, decisions, authorities, current Work, and evolution window are explicit.
+- [ ] The contribution, two exact holons, receiving question, current Work, evolution window and any relevant decisions and authorities are explicit.
 - [ ] Actual architecture relations and modal claims remain distinguishable on both sides.
 - [ ] The correspondence uses a direct predicate/occurrence or an explicitly provisional `C.32.CONWAY` frame.
 - [ ] Organization-side, product/service-side, joint, and bounded-mismatch candidates are considered.
-- [ ] Comparison includes the characteristics, independent/shared contributions, migration, affected Systems, and uncertainty that can change this decision.
+- [ ] Comparison includes the characteristics, independent/shared contributions, migration, affected Systems, and uncertainty that bear on the requested comparison or choice.
 - [ ] Systems Engineering or other domain results are consumed only when available and compatible.
-- [ ] The paired decisions retain separate authorities, subjects, fixed/open boundaries, and realization Work.
+- [ ] The result distinguishes proposals from decisions. Each decision has its own subject, authority, conditions and any required realization work.
 - [ ] Local and joint reopen observations are stated.
 
 ### OCE.7:8 - Common Anti-Patterns and How to Avoid Them
@@ -163,7 +163,7 @@ A later provider version introduces shared calibration state across the modules.
 | “Every service has one autonomous team.” | Recover shared platform, data, safety, evidence, provider, capability, Operations, and governance relations before deciding autonomy. |
 | “Refactor the monolith and coordination will disappear.” | Name the organization Work and relations that the technical change is expected to alter, and observe them after realization. |
 | “Reorganize around customer journeys.” | Identify the service and contribution structures, decision authority, shared capabilities, provider boundaries, and journeys' representation losses. |
-| “The Conway workshop approved the target.” | Treat workshop output as candidate and participant evidence; make the separate architecture decisions under current authority. |
+| “The Conway workshop approved the target.” | Treat workshop output as candidate and participant evidence; identify any decisions still needed and the authority for each. |
 
 ### OCE.7:9 - Consequences
 
@@ -181,15 +181,15 @@ Separate decisions preserve accountability and distinguish selected changes from
 
 #### OCE.7:11.1 - Current-Line Selection for Coordinated Architectures
 
-Compare answers for the same weekly inspection-software contribution, product family and evolution window, retaining the same safety, resource and service conditions. DORA's *Loosely coupled teams* is a serious conditional answer: it links testing and deployment independence with architecture and team design, compares architectural trade-offs, and recommends incremental change. It also exposes operating and dependency-management costs. It is more capable than universal mirroring.
+Compare answers for the same weekly inspection-software contribution, product family and evolution window, retaining the same safety, resource and service conditions. DORA's *Loosely coupled teams* is a serious conditional answer: it links testing and deployment independence with architecture and team design, compares architectural trade-offs, and recommends incremental change. It also exposes operating and dependency-management costs.
 
 **Adopt** its tests of practical software independence and **adapt** its evolutionary approach in the Solution opening and PumpWorks software slice. Where an existing software arrangement can meet the contribution and its governing conditions, that narrower answer is sufficient. Keeping a suitable small monolith or existing team arrangement can be legitimate. The practitioner need not manufacture a new paired decision just to restate it.
 
 The OCE construction is selected when the unresolved question crosses product and organization authority or includes a consequential shared or independent relation. **Construct** the explicit organization-only, product/service-only, joint and bounded-mismatch comparison in steps 5–9 using `C.32.CONWAY` and the two owners' domain methods. It asks, for example, whether preserving independent acceptance and a shared rig is better than paying for a product redesign or organization migration. The partial-correspondence continuation in section 5 retains a wider knowledge boundary and shows why one observation revises only the organization, while changed calibration dependencies require both owners to decide again.
 
-The extra work is recovery of two architecture accounts, consultation, investigation of alternatives and maintenance of shared assumptions. Accept it when it can avoid transferring an unresolved burden to the other side or distinguish a feasible mismatch from an infeasible alignment. This is a deliberate effort/coverage trade-off, not a claim that four-form comparison is cheaper for ordinary software changes. Compare preparation, migration, recurring operation and later revision together; reuse DORA or another established practice when it already supplies the same qualified alternatives and decisions.
+The extra work is recovery of two architecture accounts, consultation, investigation of alternatives and maintenance of shared assumptions. Accept it when it can avoid transferring an unresolved burden to the other side or distinguish a feasible mismatch from an infeasible alignment. Compare preparation, migration, recurring operation and later revision together; reuse DORA or another established practice when it already supplies the same qualified alternatives and decisions.
 
-The wider comparison retains the contingent research line in section 11.2; DORA's software guidance supplies no universal institution or product-domain rule. **Reject** universal mirroring as the decision rule, while retaining it as the failure example in section 8. Reopen when added coordination does not change a decision, a sufficient narrower method becomes available, or a new product, provider or operating condition changes the accepted burden or correspondence.
+The wider comparison retains the contingent research line in section 11.2; DORA's software guidance supplies no universal institution or product-domain rule. **Reject** universal mirroring as the decision rule, where regulation, shared resources or timing justify different boundaries. Reopen when added coordination no longer supplies a consequential basis for either decision, a sufficient narrower method becomes available, or a new product, provider or operating condition changes the accepted burden or correspondence.
 
 #### OCE.7:11.2 - Source Contributions and Boundaries
 

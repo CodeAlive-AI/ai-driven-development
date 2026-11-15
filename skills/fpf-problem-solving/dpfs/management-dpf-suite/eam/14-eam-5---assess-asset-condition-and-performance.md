@@ -21,9 +21,9 @@ Earlier interpretation can improve response while false signals cause unnecessar
 
 Identify the asset, installed configuration, required functioning and decision horizon. Recover the condition account from [MNT.4](../../engineering-dpf-suite/mnt/15-mnt-4---monitor-and-interpret-system-condition-for-maintenan.md) when available. Check the measurement location, method, units, operating state, observation window and relevant limitations before comparing values.
 
-Keep observed, inferred and forecast claims separate. State what changed in the observations, what the applicable diagnostic evidence supports and what future-duty assumptions a forecast requires. Use a specialist's diagnosis where the mechanism matters; an alarm alone does not supply it.
+Keep observed, inferred and forecast claims separate. State what changed in the observations, what the applicable diagnostic evidence supports and what future-duty assumptions a forecast requires. If the decision depends on the mechanism, obtain a specialist’s diagnosis. An alarm can trigger the inquiry.
 
-Recover the relevant service-performance evidence. The useful content from [OPS.18](../ops/52-ops-18---control-operating-quality-and-reliability.md) might be an affected population, observed loss, quality result or reliability evidence, with its requirement and window. A favorable operating decision is not an asset-condition certificate.
+Recover the relevant service-performance evidence. The useful content from [OPS.18](../ops/52-ops-18---control-operating-quality-and-reliability.md) might be an affected population, observed loss, quality result or reliability evidence, with its requirement and window. Check the condition evidence separately before drawing a conclusion about the asset’s condition.
 
 Relate condition and performance to the proposed options. Identify what contribution is at risk, the consequence of delay and the supported intervention effect. Distinguish a condition ranking from risk: risk additionally depends on the exposure, uncertainty and consequence needed for this decision.
 
@@ -35,13 +35,13 @@ Return the supported interpretation and its implication for [EAM.6](15-eam-6---a
 
 In the constructed D case, the supplied maintenance account identifies abnormal increasing vibration under comparable duty. A separate specialist diagnosis and policy qualification support the initial intervention and five-year continued-use policy under stated conditions. Those are distinct premises; the vibration observation does not establish the policy by itself.
 
-Suppose the operating record also shows delivery meeting the service requirement during the observed month. The practitioner can report both maintained service during that month and abnormal condition needing the supported response. Neither claim erases the other.
+Suppose the operating record also shows delivery meeting the service requirement during the observed month. The practitioner can report both maintained service during that month and abnormal condition needing the supported response.
 
 If later inspection finds a different structural defect outside the policy's qualification, the EAM practitioner removes D continuation from the eligible alternatives. The portfolio changes to FFLR under the common application's unchanged limits. A continued green service dashboard does not restore the invalid engineering support.
 
 ### EAM.5:6 - Bias-Annotation
 
-Easily measured signals can dominate attention while poorly observed failure mechanisms are neglected. Preserve the measurement's actual coverage. A predictive model's apparent precision can also disguise a duty change or insufficient evidence for its receiving use.
+Easily measured signals can dominate attention while poorly observed failure mechanisms are neglected. State what the measurements covered, including the assets, operating conditions and periods observed. A predictive model's apparent precision can also disguise a duty change or insufficient evidence for its receiving use.
 
 ### EAM.5:7 - Conformance Checklist
 
@@ -51,7 +51,7 @@ Do the records concern the same asset and duty? Are observation, diagnosis, fore
 
 Interpreting a health score as a remaining-life date gives an unsupported forecast. Recover the model and duty assumptions or report the narrower condition result.
 
-Interpreting current service success as proof of sound condition ignores deterioration. Keep the actual condition and functioning claims separate.
+Interpreting current service success as proof of sound condition ignores deterioration. Keep the condition and functioning claims separate.
 
 ### EAM.5:9 - Consequences
 
@@ -65,7 +65,7 @@ The pattern joins condition and performance at their asset consequence while lea
 
 For deciding what the available condition evidence implies for an asset option, adopt the separation of observation, interpretation and forecast in [MNT.4](../../engineering-dpf-suite/mnt/15-mnt-4---monitor-and-interpret-system-condition-for-maintenan.md), and use the applicable service-evidence component of OPS.18. The Solution matches those claims to the actual unit and duty before using them in eligibility or consequence reasoning. In D's case, the supplied diagnosis and policy qualification support the continued-use option while the observed vibration alone supports a narrower condition statement.
 
-A serious technical alternative, when the asset choice needs a life forecast, is to fit a degradation model and project time to a supported failure criterion. The NIST/SEMATECH *e-Handbook of Statistical Methods*, [section 8.4.2.3, “Fitting models using degradation data instead of failures”](https://www.itl.nist.gov/div898/handbook/apr/section4/apr423.htm), supplies an established regression-based comparator and its physical, measurement and model assumptions. It is useful where that relationship and future-duty transfer are supported; a vibration trend by itself does not supply them. Adapt this modeling route when an obtainable life forecast could change the asset policy or timing. For the already qualified D alternatives, developing it anew would add data, fitting and validation work without being necessary for the stated comparison. The trade-off is a supported option implication with no independently derived remaining-life date. Neither the handbook nor [MNT.4](../../engineering-dpf-suite/mnt/15-mnt-4---monitor-and-interpret-system-condition-for-maintenan.md) supplies a real pump's failure threshold. Reopen the choice when the diagnosis, duty or policy qualification changes, or when a forecast's expected decision contribution justifies the work of establishing its applicable model and evidence.
+A serious technical alternative, when the asset choice needs a life forecast, is to fit a degradation model and project time to a supported failure criterion. The NIST/SEMATECH *e-Handbook of Statistical Methods*, [section 8.4.2.3, “Fitting models using degradation data instead of failures”](https://www.itl.nist.gov/div898/handbook/apr/section4/apr423.htm), supplies an established regression-based comparator and its physical, measurement and model assumptions. It is useful where that relationship and future-duty transfer are supported; a vibration trend by itself does not supply them. Adapt this modeling route when an obtainable life forecast could change the asset policy or timing. For the already qualified D alternatives, developing it anew would add data, fitting and validation work without being necessary for the stated comparison. The trade-off is a supported option implication with no independently derived remaining-life date. The handbook and [MNT.4](../../engineering-dpf-suite/mnt/15-mnt-4---monitor-and-interpret-system-condition-for-maintenan.md) describe methods. A forecast for this pump also needs evidence for its failure threshold and expected duty. Reopen the choice when the diagnosis, duty or policy qualification changes, or when a forecast's expected decision contribution justifies the work of establishing its applicable model and evidence.
 
 ### EAM.5:12 - Relations
 

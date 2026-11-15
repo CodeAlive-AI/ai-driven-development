@@ -5,84 +5,84 @@
 
 ### ECO.2:1 - Problem frame
 
-Use this pattern when a changed price or offer can alter how you use, substitute or supply a resource. Begin by identifying the exchange whose terms changed. Compare the feasible response with keeping the present plan. The useful result is an adjustment, or a reason to leave the plan unchanged, with the condition that would change that answer.
+Use this Method to establish what a changed price or offer means for the use, substitution or supply of a resource. Identify which exchange has changed and whether the terms apply to the work in question. When the task calls for a response, compare feasible adjustments with continuing the present plan. Report the grounds for a change or for keeping the plan.
 
-A complete account of why the market changed is needed only when it affects the response. A routine purchase already covered by an adequate operating rule can stay with that rule.
+Investigate why the market changed when that explanation is requested or would improve the response enough to justify the effort. Apply an adequate operating rule directly to a routine purchase it already covers.
 
 ### ECO.2:2 - Problem
 
-A firm can continue wasting a newly scarce input because its internal numbers are stale. It can also overreact to a price that applies to another grade, quantity or delivery date. Waiting for a complete causal explanation can delay an otherwise useful substitution; responding to an irrelevant quote can create a worse plan.
+Stale internal figures can hide a newly costly input. A new price for a different grade, quantity or delivery date can be irrelevant to the present work. Establish whether the price applies. A supported substitution can proceed while the wider cause is still unknown.
 
 ### ECO.2:3 - Forces
 
-A price condenses information beyond one participant's knowledge but omits many facts relevant to a particular use. An inexpensive operational adjustment and an irreversible investment need different support. Deliberately maintained access or service obligations can outweigh the cheapest purchase.
+A price can convey information beyond one participant’s knowledge while omitting conditions important to its use. An inexpensive reversible adjustment and an irreversible investment need different grounds. Access and service obligations may exclude the cheapest purchase.
 
 ### ECO.2:4 - Solution
 
 #### ECO.2:4.1 - Establish the changed exchange
 
-Compare like terms: unit, specification, quantity, time, location, payment and access. Determine which part changed and which obligations already fix the price for the current work. Include a consequential service or supply condition even when the quoted money amount stays constant.
+Compare unit, specification, quantity, time, location, payment and access. Identify what changed and whether existing obligations fix the terms for this work. A change in delivery or service can matter even when the quoted amount stays the same.
 
-Ask whether the change applies at the margin of the contemplated action. A cheaper bulk offer may require more storage than is available. An average historic price can be irrelevant to the next attainable unit. ECO.1 supplies a missing interpretation.
+Establish the terms for the next unit the plan could use. A bulk offer might exceed the storage available. The price paid for earlier units may differ from the price now attainable. Use ECO.1 when the meaning of an input remains in question.
 
 #### ECO.2:4.2 - Construct feasible responses
 
-Use knowledge of the actual work to consider the responses that could matter: use less per result, substitute another input, change timing or output, increase supply, or keep the present use.
+When a response is needed, consider what changes the work permits. It may be possible to reduce use per result, substitute an input, change timing or output, increase supply or maintain the present use.
 
-Carry each response through its material complements. A replacement input can require another tool, skill, inspection or delivery arrangement. Price alone cannot establish that the substitute performs the needed function. If the substitute's function is unresolved, use SYSE.9 to obtain and apply the needed specialist result—for the packaging case below, whether the insert protects the product under its handling conditions. OPS.14 compares the operating alternatives and their transition costs; MA.1 constructs a missing resource-use account; FIN.6 supplies an investment comparison when the response entails a longer commitment. Use only the contribution the present decision lacks.
+For each proposed response, establish the contributions it requires. A substitute may need another tool, skill, inspection or delivery arrangement. To use a different packaging insert, for example, establish whether it protects the product during handling. When this engineering result is missing, use SYSE.9 to obtain and apply it. Use OPS.14 to compare operating alternatives and transition costs, MA.1 for a missing resource account and FIN.6 for an investment comparison if a longer commitment is involved.
 
 Compare the attainable net effects over the relevant period, including transition and forgone uses. Retain differences in performance and affected interests alongside the monetary comparison.
 
 #### ECO.2:4.3 - Match the response to what remains unknown
 
-For a small reversible change, an applicable current offer and adequate functional account may suffice. For a dedicated plant or long commitment, ask which uncertainty about persistence, access or substitution could reverse the decision. Seek only the information that can change that commitment, or retain a conditional plan.
+For a small reversible change, an applicable offer and a sufficient functional account may settle the question. For a long commitment, identify whether uncertainty about persistence, access or substitution could change the comparison or the grounds for relying on it. Seek further information when it is worth the cost, or give the conditional plan the evidence supports.
 
-A price rise can arise from supply loss, demand growth, altered quality, taxes or market power. Identifying the cause matters when it changes the chosen response; otherwise the current attainable terms can already justify using less or substituting. Return the chosen response and the event that would reopen it, in the ordinary working plan.
+A price may rise because of supply loss, demand growth, altered quality, taxes or market power. If the question concerns the cause, examine which explanations the evidence supports. If it concerns the response, applicable terms can already justify reducing use or substituting. When proposing or selecting an action, state which conditions support it and what change would call for reconsideration.
 
 ### ECO.2:5 - Archetypal Grounding
 
 #### ECO.2:5.1 - A substitute becomes worthwhile
 
-A constructed packaging case has two qualified alternatives. The present insert uses two units of material at €3 each. Another uses 1.5 units of a different material at €4 each and adds €0.50 of handling per package. All other relevant costs and performance are supplied as equal. The present choice costs €6; the alternative costs €6.50.
+Suppose two packaging inserts meet the same performance requirements and differ only in the stated costs. The current insert uses two units at €3 each, so it costs €6. The other uses 1.5 units at €4 each, plus €0.50 handling, for €6.50 per package.
 
-A current matching offer raises the first material to €4 per unit. Its cost becomes €8, so the alternative saves €1.50 per package before a €150 changeover. For a confirmed order of 200 packages the expected saving is €300, or €150 after changeover. The practitioner can select the substitute without first explaining the whole price movement.
+A matching offer raises the first material to €4 per unit. The current insert now costs €8. The substitute saves €1.50 per package before the €150 changeover. For a confirmed order of 200 packages that gives €300 gross and €150 net saving. Under these terms a practitioner with the necessary authority can select the substitute while the market cause remains open.
 
-If only 50 packages remain before an already contracted cheaper delivery, the saving is €75 before changeover, so the same observation supports keeping the present setup. With these unchanged conditions, 100 packages is the monetary break-even point: €150 / €1.50. At that quantity, other consequences can determine the choice. If the substitute is not qualified for the product, its required qualification is part of the comparison.
+If 50 packages remain before a contracted cheaper delivery, the €75 gross saving would leave the substitute €75 more expensive after changeover. At 100 packages the €150 gross saving covers the €150 changeover exactly. Under the stated assumptions the monetary costs then tie, so another consequence can matter. If functional qualification is missing, include its cost, timing and outcome in the comparison.
 
 #### ECO.2:5.2 - A price has a different scope
 
-An electricity contract fixes the price for today's shift. Tomorrow's spot-price spike does not itself change that contractual payment. It may still change the opportunity to sell stored energy or the terms of future work. The practitioner identifies that separate exchange before moving production.
+Suppose the electricity contract fixes the price for today’s shift. A spike in tomorrow’s spot price leaves today’s contracted payment unchanged. It can change the opportunity to sell stored energy or the terms of future production. Establish the relevant exchange before recommending a schedule change.
 
 ### ECO.2:6 - Bias-Annotation
 
-The newest number attracts attention even when it does not apply. A preferred technology can also make its transition burden disappear from the comparison. Retain the available incumbent and identify the exchange and work conditions under which each alternative matters.
+A newly published price may not apply to the participant’s work. A preferred substitute may have a transition cost that its quoted price omits. Include the present arrangement where it is still feasible and identify the conditions that support each compared option.
 
 ### ECO.2:7 - Conformance Checklist
 
-Is the changed offer applicable to this action? Do the considered responses remain feasible with their complements and obligations? Can the receiver explain why more information about the cause would, or would not, change the present commitment?
+Which terms changed, and do they apply to the exchange in question? For a proposed response, are its complements and obligations feasible? State what the evidence establishes about the price, the response or its cause, according to the question. Identify the conditions that matter to any proposed commitment.
 
 ### ECO.2:8 - Common Anti-Patterns and How to Avoid Them
 
-- **Every price movement requires a market investigation.** First test the feasible response already supported by the available terms.
+- **Every price movement triggers a market investigation.** If the question concerns an operating response, examine what the applicable terms already support. Investigate the cause when the task or remaining uncertainty requires it.
 - **A cheap input is treated as a cheap result.** Carry substitution through performance, complementary work and transition.
 - **Internal historic prices hide a changed external opportunity.** Recalculate the consequential next use rather than replacing every accounting number.
 
 ### ECO.2:9 - Consequences
 
-Resource use can adapt to dispersed changes without one participant understanding their entire history. The method can also justify inaction. It does not establish that the resulting prices represent every affected interest.
+Participants can adapt resource use to changes elsewhere using local knowledge and applicable terms. Those terms can also support retaining the current plan. To assess effects on different parties, examine their interests and consequences outside the price.
 
 ### ECO.2:10 - Architectural Rationale
 
-A price-mediated adjustment uses local knowledge of possible responses together with terms formed beyond that locality. This is a division of reasoning as well as of production. The chosen commitment determines how much of the remaining uncertainty must be resolved.
+A participant combines local knowledge about possible responses with exchange terms formed elsewhere. The work of forming and interpreting the terms can be distributed, as can production. Match the depth of inquiry to the result and the commitment it will support.
 
 ### ECO.2:11 - SoTA-Echoing
 
-[Hayek, The Use of Knowledge in Society, §§V–VI](https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/92/Hayek_0766_EBk_v6.0.pdf) supplies the historical account of adjusting to a scarcity signal without knowing its complete cause. The pattern adopts that economy of knowledge while requiring the signal to fit the actual exchange.
+[Hayek, The Use of Knowledge in Society, §§V–VI](https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/92/Hayek_0766_EBk_v6.0.pdf) explains how a participant can respond to a scarcity signal without knowing its complete cause. We adopt this use of distributed knowledge when the observed terms apply to the exchange in question.
 
-A detailed market model is the stronger rival when the decision depends on future price formation. For a bounded substitution its extra work can add nothing to the present choice. Neither route assumes that current prices perfectly represent scarcity, power or unpriced effects. Reconsider when the relevant offer, functional substitution or commitment horizon changes.
+A detailed market model can be worth the work when the question concerns future price formation or a commitment depends on it. For a bounded substitution, the applicable offer may already answer the question. Current prices may reflect power or leave effects unpriced. Reconsider the affected conclusion if the offer, the functional substitute or the commitment horizon changes.
 
 ### ECO.2:12 - Relations
 
-ECO.1 restores a disputed calculation basis. ECO.3 explores a new exchange when existing offers no longer serve the plan. OPS.14 supplies a bounded operating comparison, MA.1 a resource-use account and FIN.6 an investment comparison. SYSE.9 obtains and applies a specialist engineering result when functional suitability remains unresolved. ECO.10 is needed when lower unit cost may change the total volume of activity.
+Use ECO.1 for a disputed calculation basis and ECO.3 to explore a new exchange when current offers no longer meet the need. Use OPS.14 for operating comparisons, MA.1 for resource accounts, FIN.6 for investment and SYSE.9 for an unresolved engineering requirement. Use ECO.10 when the effect on total activity or resource use depends on the demand response.
 
 ### ECO.2:End

@@ -8,7 +8,7 @@
 
 Use this pattern when bursts, expensive work or a failing dependency prevent other users from obtaining supported platform results. Start with the constrained resource and the workload classes consuming it, including the control and recovery work needed to keep the service operable.
 
-The first result is a tested capacity-protection arrangement for a stated operating envelope, or the proposed envelope and the conditions whose qualification is missing. The arrangement includes admission, bounded waiting, separation, deadline/retry limits and useful rejected or degraded outcomes.
+The first result is a tested capacity-protection arrangement for a stated operating envelope, or the proposed envelope and the conditions whose qualification is missing. Identify the admission, waiting, separation and deadline limits the protected task needs, limits on any retries, and how users can recognise a refusal or usable degraded result.
 
 If ordinary demand already fits a qualified envelope and no consequential coupling exists, use that arrangement. If an active failure needs immediate mitigation, use SYSE.38. Continuing allocation of operating work remains an operating responsibility; this pattern engineers the means and limits.
 
@@ -16,7 +16,7 @@ If ordinary demand already fits a qualified envelope and no consequential coupli
 
 Requests with the same name or arrival rate can consume very different CPU, memory, storage, connection or worker resources. A long queue can hide overload until every accepted task misses its useful deadline. Retries can multiply demand while the original work is still running.
 
-Adding capacity may not repair a serial bottleneck, a downstream limit or a failure that affects every new instance. Likewise, protecting a front-end proxy does not automatically protect its upstream service or preserve the user's task.
+Adding capacity may not repair a serial bottleneck, a downstream limit or a failure that affects every new instance. A protected front-end proxy can remain healthy while its upstream service fails and the user's task cannot finish.
 
 ### SYSE.40:3 - Forces
 
@@ -33,7 +33,7 @@ Adding capacity may not repair a serial bottleneck, a downstream limit or a fail
 
 Identify supported task classes, their demand patterns and the resources they consume through the path. Include costly variants, concurrency, fan-out, dependencies and resource use during failure, not only average successful requests.
 
-Measure the relevant resource constraints directly where possible. A requests-per-second figure can be useful for a stable workload but cannot stand in for changing request cost. Distinguish available capacity from a configured limit and from a provider's promised future supply.
+Use applicable measurements of the relevant resource constraints. Where a relevant limit is unknown, measure it directly when feasible. A requests-per-second figure can be useful for a stable workload but cannot stand in for changing request cost. Distinguish available capacity from a configured limit and from a provider's promised future supply.
 
 Locate shared failure effects. Heavy tests may occupy the workers needed for release control; retrying clients may overload a recovering dependency; the monitoring or cancellation path may depend on the same exhausted pool. Determine which useful work must remain available under the selected failure.
 
@@ -41,7 +41,7 @@ Locate shared failure effects. Heavy tests may occupy the workers needed for rel
 
 Compare additional capacity, reduced offered work, a cheaper qualified result, per-user or workload isolation, and redesigning the execution path to remove an identified serialization point. Autoscaling is one possible mechanism; its start delay, quotas, dependency capacity and failure behavior remain conditions.
 
-Choose a bounded demand/resource envelope and the supported degradation outside it. Obtain the actual authority for priority and resource trade-offs. A technical queue cannot decide by itself which users may be delayed or refused.
+Choose a bounded demand/resource envelope and the supported degradation outside it. Apply the authorised decision on priority and resource trade-offs. If a new decision is needed, make it within your authority or obtain it from the holder. A queue can apply an authorised priority rule.
 
 Define the useful outcome for rejected, delayed or degraded work. Preserve the distinction between an accepted task, a refusal before effects, an unfinished task and a partial result. Do not count overload rejection as user success merely because it protects the service.
 
@@ -55,31 +55,31 @@ Expose a useful response when work cannot be admitted. Give the user enough info
 
 #### SYSE.40:4.4 - Bound retry and dependency failure
 
-For each retrying layer, know the operation's replay behavior, deadline and attempt identity. Reconcile uncertain effects before repeating a state-changing operation. SYSE.34 and SYSE.41 supply the relevant data and runtime boundaries.
+For each retrying layer, establish the operation’s replay behavior, deadline, authority and any required attempt identity. Resolve effects that could make repetition unsafe, or use a retry qualified across the remaining states. SYSE.34 and SYSE.41 supply the relevant data and runtime conditions.
 
-Bound the aggregate retry amplification across layers, not only each local loop. Delays and jitter can spread attempts but do not make an unbounded retry policy finite. Stop work that can no longer produce its permitted result rather than spending resources until an outer timeout hides it.
+Where retries are permitted, bound the total number of calls they can produce across layers. Delays and jitter can spread attempts but do not make an unbounded retry policy finite. Stop work that can no longer produce its permitted result rather than spending resources until an outer timeout hides it.
 
-Protect both the component receiving pressure and the dependency receiving calls. A local resource monitor, a dependency concurrency limit and a fallback can address different failure mechanisms. Do not treat one control's existence as proof that the whole path is protected.
+Protect both the component receiving pressure and the dependency receiving calls. A local resource monitor, a dependency concurrency limit and a fallback can address different failure mechanisms. Check that the selected controls protect the path through its dependencies.
 
 #### SYSE.40:4.5 - Exercise overload, isolation and recovery
 
-Test representative ordinary demand and the bursts, expensive variants or dependency slowdowns/failures that can defeat the claimed operating envelope, within a safe permitted environment. Observe accepted, rejected, delayed and partial task outcomes as well as resources.
+Use applicable tests of ordinary demand and of the bursts, expensive variants or dependency failures and slowdowns that could defeat the claimed envelope. Exercise a relevant untested condition where a safe, permitted test is feasible. Identify any condition that remains unqualified. Check the resource observations and the accepted, rejected, delayed and partial task outcomes.
 
 Verify that the protected class still obtains its qualified result, queues stay bounded, and other tenants or downstream Systems are not made worse in an unaccepted way. Check the control/observation path under pressure; repair the arrangement if its state cannot be observed or admission cannot resume under the selected recovery conditions.
 
-Then reduce pressure and verify recovery. Ensure queues drain usefully, admission resumes appropriately and clients do not overwhelm the recovering service. A lower resource chart alone does not show that users can work again.
+Verify what happens as pressure falls. Use the recovery observations or exercise the missing condition to establish that useful queued work drains, admission resumes and returning clients stay within the recovering service's capacity. A lower resource chart alone does not show that users can work again.
 
 Return the exercised envelope, chosen limits, response behavior and remaining blind spots. Use SYSE.36 to retain user-visible failure and delay in measurement, and SYSE.38 for unresolved active failures.
 
 #### SYSE.40:4.6 - Derive limits from useful work and check the recovering system
 
-Develop a capacity model at the bottleneck that the task can actually reach. For a reasonably stable task class, measure resource demand per completed task and its variation, then combine it with the anticipated arrival and concurrency pattern. Distinguish sustained demand from a burst and include service time while a dependency is slow. A mean CPU cost can help estimate a baseline; it does not bound a costly tail or a separate memory, connection or storage constraint. Establish which resource becomes limiting under each relevant workload mix.
+Develop a capacity model at the limiting resource on the task’s path. For a reasonably stable task class, measure resource demand per completed task and its variation, then combine it with the anticipated arrival and concurrency pattern. Distinguish sustained demand from a burst and include service time while a dependency is slow. A mean CPU cost can help estimate a baseline; it does not bound a costly tail or a separate memory, connection or storage constraint. Establish which resource becomes limiting under each relevant workload mix.
 
 Use those observations to choose headroom and an admission rule. Headroom covers selected variation and failure conditions, such as one worker unavailable or a dependency taking longer to respond. It is not a universal percentage. A limit based on active concurrency can protect a connection pool better than a request-rate cap when calls become slow. A rate cap can protect a service from excessive arrivals even when each finishes quickly. Some paths need both, together with a bounded waiting population. Follow the request into shared dependencies before concluding that either local limit is sufficient.
 
 Relate waiting to the task's remaining useful time. In a simple single-class example, two dedicated workers complete each job within a qualified two-second bound and have no hidden downstream wait. Four queued jobs behind two just-started jobs can complete in three waves, by six seconds. If the task must finish within five seconds from admission, accepting all six cannot guarantee that bound: when each job uses the permitted two seconds, the last pair is late. Reduce accepted work, shorten qualified service time, add usable capacity or change the promise with its holder. If service time is only an average, this deterministic bound is unavailable; qualify a probabilistic or observed service objective instead.
 
-Compare strict reservation with borrowing deliberately. Strictly separate pools make a protected class easier to reason about but can leave capacity idle. Borrowing can improve utilization if the protected class can reclaim sufficient capacity within its response bound. Non-preemptible long jobs can make that reclaim promise false. Separate execution pools also do not separate a shared database lock, network limit or provider quota. Choose the mechanism at the actual point of interference, including priority propagation where the downstream system supports it.
+Compare strict reservation with borrowing. Strictly separate pools make a protected class easier to reason about but can leave capacity idle. Borrowing can improve utilization if the protected class can reclaim sufficient capacity within its response bound. Non-preemptible long jobs can make that reclaim promise false. Separate execution pools also do not separate a shared database lock, network limit or provider quota. Choose the mechanism at the point of interference, including priority propagation where the downstream system supports it.
 
 Design admission and recovery as one feedback arrangement. When measured pressure rises, reduce offered work soon enough to preserve the selected useful tasks. When it falls, resume in a way that does not immediately recreate the overload. Hysteresis, a gradual increase or a limited trial population can prevent rapid oscillation, but each needs a trigger and observation appropriate to the mechanism. Autoscaling can provide later capacity without protecting the interval before new workers are ready; a scaling request is not available capacity.
 
@@ -91,7 +91,7 @@ If one worker becomes unavailable during the trial, the two-worker calculation n
 
 Keep the service accountable for the resulting user outcomes. A cheaper response counts as a good degraded result only if that meaning was agreed for the task; stale data can be acceptable for one display and unacceptable for another. Expiring a queued task does not cancel an effect that has already begun. A recovery exercise must show both restored new-task admission and resolution or explicit limitation of earlier accepted work. Track retries and resumed demand during that exercise: a healthy idle service can fail as soon as all waiting clients return together.
 
-When ParcelWorks adds a test class with much larger memory demand, the six-heavy-slot arrangement may cease to be safe even though the job count is unchanged. Introduce the relevant memory bound or a distinct class, qualify its effect on the shared dependency, and reconsider the accepted waiting population. Preserve the control reservation only if it still protects the actual end-to-end control task. This gives a concrete change rule for the capacity model rather than a permanent significance to the example's six-and-two split.
+When ParcelWorks adds a test class with much larger memory demand, the six-heavy-slot arrangement may cease to be safe even though the job count is unchanged. Introduce the relevant memory bound or a distinct class, qualify its effect on the shared dependency, and reconsider the accepted waiting population. Preserve the control reservation only if it still protects the end-to-end control task.
 
 ### SYSE.40:5 - Archetypal Grounding
 
@@ -106,7 +106,7 @@ The candidate reserves six execution slots for heavy tests and two for control w
 | 20 heavy test requests | 6 | 12 | 2 |
 | 8 control requests | 2 | 4 | 2 |
 
-The counts close the admission example: eighteen heavy and six control requests are accepted, while four requests receive explicit refusal without execution effects. The total of eight running tasks respects the slot limit. A refusal is not counted as a successful developer task.
+Eighteen heavy and six control requests are accepted, while four requests receive explicit refusal without execution effects. The total of eight running tasks respects the slot limit. A refusal is not counted as a successful developer task.
 
 The control queue is not a guarantee that all six accepted control requests will finish in time. Their task-duration/dependency envelope and remaining deadlines must be exercised. If that qualification fails, reduce admission, provide capacity or change the service promise; a short queue alone does not establish responsiveness.
 
@@ -118,9 +118,9 @@ To make the cross-layer bound concrete, suppose one user attempt permits at most
 
 After pressure falls, the test verifies that waiting useful work completes, expired work is resolved according to its rule, and admission resumes without a synchronized flood. Observation and recovery operations must themselves remain available.
 
-An implementation comparison is Envoy's [overload-manager architecture](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/operations/overload_manager.html): it connects resource-pressure observations to configured actions protecting the proxy. Its own-resource protection is distinct from upstream circuit breaking. The linked latest/development documentation is not a pinned production configuration; the deployed edition and actual monitors/actions need separate qualification.
+An implementation comparison is Envoy's [overload-manager architecture](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/operations/overload_manager.html): it connects resource-pressure observations to configured actions protecting the proxy. Its own-resource protection is distinct from upstream circuit breaking. The linked latest/development documentation is not a pinned production configuration; identify the deployed edition and establish which configured monitors and actions are qualified for the task. Qualify any missing part before relying on it.
 
-What changes in practice is that accepted work and overload responses have explicit bounds, and one workload cannot be assumed isolated merely because it has a different queue name.
+State the limits on accepted work and on the response to overload. Even two named queues can compete for one downstream connection pool. Check whether the protected class can finish within the proposed or agreed envelope and whether admitted work can recover after a burst.
 
 ### SYSE.40:6 - Bias-Annotation
 
@@ -129,21 +129,21 @@ Average throughput can conceal expensive requests and a small class losing all s
 ### SYSE.40:7 - Conformance Checklist
 
 - The constrained resources and workload/failure conditions are identified.
-- The protected envelope and priority trade-offs have an actual basis and holder.
+- The protected envelope has supporting grounds, and priority trade-offs reflect a decision by their authorised holder.
 - Admission and waiting are bounded by capacity and task usefulness.
 - Isolation includes consequential downstream and control-path dependencies.
 - Any retry mechanism has a qualified effect model and aggregate amplification limit.
-- Rejected, delayed and degraded work remains visible as its actual user outcome.
+- Rejected, delayed and degraded work remains visible in the results reported for each affected user class.
 - Ordinary use, overload and recovery are exercised before relying on the envelope.
 
 ### SYSE.40:8 - Common Anti-Patterns and How to Avoid Them
 
 | Misuse | Repair |
 | --- | --- |
-| Size everything by average requests per second. | Inspect actual resource cost and supported expensive variants. |
+| Size everything by average requests per second. | Inspect resource use per task and supported expensive variants. |
 | Add an unbounded queue to avoid rejections. | Bound waiting and expose work that cannot finish usefully. |
 | Assume autoscaling solves a shared dependency limit. | Qualify the bottleneck and the time/capacity available to scale. |
-| Retry at every layer until the task succeeds. | Reconcile effects and bound total retries, deadlines and offered load. |
+| Retry at every layer until the task succeeds. | Qualify the repeat under the possible effect states and bound total retries, deadlines and offered load. |
 
 ### SYSE.40:9 - Consequences
 
@@ -155,7 +155,7 @@ Overload is a relation between offered work, its resource cost and the available
 
 ### SYSE.40:11 - SoTA-Echoing
 
-For resource pressure, **adopt and adapt** the developed 2016 [SRE Handling Overload](https://sre.google/sre-book/handling-overload/) treatment. Resource-sensitive demand, quotas, client throttling and differentiated criticality are already professional capabilities. Sections 4.1–4.6 connect those choices to useful task deadlines, retained effects and recovery of accepted work; they do not replace the service's workload model with universal limits.
+For resource pressure, **adopt and adapt** the 2016 [SRE Handling Overload](https://sre.google/sre-book/handling-overload/) treatment. Resource-sensitive demand, quotas, client throttling and differentiated criticality are part of the source’s approach to handling overload. Sections 4.1–4.6 connect those choices to useful task deadlines, retained effects and recovery of accepted work. Derive the limits for the service from its workload model.
 
 **Compare** the chosen controls with Envoy's [overload-manager architecture](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/operations/overload_manager.html) and [configuration](https://www.envoyproxy.io/docs/envoy/latest/configuration/operations/overload_manager/overload_manager) when that mechanism is used. Local proxy protection differs from upstream protection. Strict reservation, reclaimable borrowing, extra capacity and reduced demand have different utilization and response consequences.
 

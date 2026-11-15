@@ -5,88 +5,88 @@
 
 ### ECO.7:1 - Problem frame
 
-Use this pattern when several parties depend on a resource whose useful condition is undermined by their separate uses or by insufficient contribution to its upkeep. Start with the resource condition that matters and the actions which change it. Construct feasible rules for use, renewal and adaptation with the participants who can make them effective.
+Use this Method when separate uses of a shared resource or insufficient upkeep put its useful condition at risk. Identify the condition and the actions that affect it. Assess the existing rules or, if a change is needed, develop workable arrangements for use, renewal and adaptation with those who can make them effective.
 
-A machine already allocated by one responsible operator under adequate rules can stay with ordinary OPS methods. The added difficulty here is coordinating the different claims, contributions and effects that those rules have not resolved.
+For routine allocation of a machine under adequate rules, use the applicable OPS Method. Use ECO.7 when different claims, contributions or effects on the shared resource require examination.
 
 ### ECO.7:2 - Problem
 
-An individually reasonable withdrawal can leave too little for other users or for renewal. Restricting withdrawals without maintaining the resource can also fail. A visible group of users may omit downstream parties, seasonal users or people whose access is difficult to defend. An ownership designation alone establishes neither the physical constraints nor effective rules for use and upkeep.
+A withdrawal that fits one user’s plan can deprive another user or leave too little for renewal. Cutting withdrawals may still leave upkeep unfunded. Include affected downstream and seasonal users and people whose rights or access are easily overlooked. Establish the physical limit, actual rights and provision for upkeep from their respective grounds.
 
 ### ECO.7:3 - Forces
 
-Use, maintenance and exclusion may be costly to observe. Participants have unequal knowledge, needs, alternatives and power. A locally useful rule can transfer the problem beyond its boundary; a uniform rule can ignore physical and social differences.
+Observing withdrawals, upkeep and exclusion can cost time and money. Participants may differ in knowledge, needs, alternatives and power. Check whether a local rule shifts a cost beyond its boundary and whether a common rule covers relevant local differences.
 
 ### ECO.7:4 - Solution
 
 #### ECO.7:4.1 - Recover the resource and the actions that affect it
 
-Identify the resource, the useful units or services obtained, the relevant condition and the time over which it can change. Distinguish taking a unit from providing or restoring the resource. Ask whose actions affect availability, quality or renewal, including parties outside the initial user group.
+Identify the resource, the units or services obtained from it, the condition that matters and the relevant period. Distinguish withdrawal from provision or renewal. Determine whose actions affect availability, quality or renewal, including parties outside the initial group.
 
-Use the physical or operating account already available. When its limits matter, obtain the required contribution from PHY, MMP or OPS. A stated allocation cannot enlarge a physical flow. Equally, a model of flow does not settle who is entitled to use it.
+Use an adequate physical or operating account directly. Use PHY, MMP or OPS when a missing fact or model matters. An allocation must fit the available flow. Establish rights to that flow from the applicable rules or agreements.
 
-Determine what access, exclusion and withdrawal rights already hold. Separate those from actual control and practice. A proposed change must be adopted through the applicable arrangements; the analyst's allocation is not itself an effective rule.
+Identify the current rights of access, exclusion and withdrawal. Compare them with what participants can do and what they have done. A proposed allocation takes effect through the applicable decision or agreement.
 
 #### ECO.7:4.2 - Construct a workable combination of rules
 
-Compare combinations that address the actual difficulty: who can enter, what may be used and when, who contributes to upkeep, how consequential use and condition become visible, how disagreements are resolved and who can change the arrangement. Existing suitable rules can be retained; this is not a requirement to invent a complete code.
+Start with the rules that govern the question. They can concern entry, quantities, timing, upkeep, observation, dispute resolution or authority to change the arrangement. Use suitable existing rules. If a different combination is needed, compare how the proposed arrangements address the actual difficulty.
 
-Test whether contributions and benefits give participants a feasible reason and ability to comply. Check the costs of observation and response, including the burden on smaller participants. Make a response to a violation proportionate to its effect and the available interpretation; a missing observation can be a measurement problem rather than proof of abuse.
+Assess whether participants have the means and incentives to comply. Include the costs of observation and response, especially for smaller users. Before treating an event as a violation, check what the observation establishes. A missed reading may be a measurement problem. For an established violation, match the response to its effect and the applicable rule.
 
-Relate local arrangements to wider effects. Several communities may share a catchment or infrastructure; their local allocations need a way to handle the common constraint. Provide the coordination needed for that common constraint, retaining legitimate local decisions.
+Trace effects beyond a local arrangement. Several communities may use one catchment or infrastructure even if they allocate separately. Identify the common constraint. Where an operating arrangement is needed, establish how it can handle that constraint while preserving legitimate local decisions.
 
 #### ECO.7:4.3 - Test ordinary use and changed conditions
 
-Run a concrete allocation and renewal case through the proposed rules. Include a plausible change such as low supply, new entry, a failure to contribute or a disputed reading. Determine who detects the change and which decision can adapt the arrangement.
+Compare the proposed allocation with the available resource and the amount needed for renewal or other protected uses. A shortfall can settle a feasibility question. To establish how a proposed rule would work, follow an allocation and renewal case under the relevant conditions. For a claim about low supply, a missing payment, new entry or a disputed reading, identify who can detect the change and what the rule permits. Use a suitable existing case or test when it covers the question.
 
-Return the feasible arrangement, a limited trial or the unresolved constraint. A few measurements that discriminate the choices can be enough; a complete social survey is not automatically required. Revisit physical conditions, access and rule effects when their change invalidates the arrangement.
+Return the supported finding, feasible arrangement, proposed trial or constraint still unresolved. Use the observations that distinguish the relevant cases. Reconsider a conclusion when a change in the resource, access or rule affects its grounds.
 
 ### ECO.7:5 - Archetypal Grounding
 
 #### ECO.7:5.1 - Sharing water while retaining a downstream flow
 
-A constructed canal has a supplied daily-flow account: 100 units enter, upstream uses consume water without a return during that day, and at least 40 units must reach downstream users. Two upstream groups request 50 and 40 units. Granting both leaves 10, so their separate requests are incompatible with the downstream condition.
+Suppose 100 units enter a canal each day. Upstream users consume what they withdraw, and downstream users must receive at least 40 units. Two upstream groups request 50 and 40. Granting both would leave 100 − 50 − 40 = 10 downstream. The maximum combined upstream withdrawal is 60 under these conditions.
 
-For this case, the day's controlled release is known before withdrawal. The two groups and the downstream users can adopt the following arrangement under their existing rights. Normal upstream allowances are 35 and 25 units, leaving 40 downstream. A caretaker is available for €40 per week to read the inlet and outlet meters, check the gates and perform the specified routine upkeep. Each upstream group can pay €20. Larger repairs require a separate decision; the service does not promise unlimited repair work.
+The parties know the day’s controlled inflow before withdrawal and have authority to adopt an arrangement. With 100 units, upstream allowances of 35 and 25 leave 40 downstream. A caretaker can read inlet and outlet meters, check gates and perform specified routine upkeep for €40 per week. Each upstream group can pay €20. Larger repairs need a separate decision.
 
-The same agreement authorizes the caretaker to apply allowances of 20 and 20 when the available daily inflow falls to 80. Both groups can sustain their essential uses at that level. The caretaker announces the changed allowance before withdrawal and checks its execution. If two credible readings disagree between 80 and 100, the parties temporarily use the lower allowance and jointly check the meter; disagreement alone is not treated as abuse.
+The adopted agreement allows the caretaker to set allowances of 20 and 20 on an 80-unit day. Each group can meet its essential needs at 20. The caretaker announces the allowance before withdrawal and checks what happens. When two credible readings differ between 80 and 100, the parties temporarily use the lower allowance and jointly check the meter. Disagreement alone leaves the cause open.
 
-Thus an 80-unit day leaves 40 downstream through an available decision, observation and operating service. Below 80, the stated essential uses are incompatible with the available flow; the caretaker must return that limitation rather than extend the same allowances. A missed fee instead threatens the upkeep contribution. An already funded €40 reserve can buy one more week while the groups resolve the payment; after that, continued upkeep requires a replacement contribution or a reduced operating plan that the resource can support. If neither is attainable, the arrangement cannot promise continued service. These are stipulated means and commitments in a constructed case, not claims about an actual canal.
+With 80 units, withdrawals of 20 and 20 leave the required 40 downstream. Below 80 the stated essential uses cannot all be supplied. The caretaker must report that limit. If one group misses its €20 weekly payment and the other pays, the funded €40 reserve covers two weeks of the shortfall. If both groups miss their payments, it covers one week of upkeep. Once the reserve runs out, continuing service requires a replacement contribution or a feasible reduced plan. The case stipulates these means and commitments.
 
 #### ECO.7:5.2 - Information and the services needed to use it
 
-A team can copy a software manual without depriving another team of its copy. The same teams can exhaust a shared service's processing capacity or the maintainers' available time. Identify the constrained service or contribution before importing a water-withdrawal rule into a knowledge-sharing problem.
+Several teams can copy a software manual without exhausting the copies. They can, however, exhaust a shared service’s processing capacity or its maintainers’ time. Identify which contribution is scarce before applying a withdrawal or access rule.
 
 ### ECO.7:6 - Bias-Annotation
 
-The organized, visible users can dominate the account while dispersed users bear the effects. Symmetric-looking allocations can also conceal different starting rights and needs. Retain the physical consequence and the relevant interests rather than treating one common percentage as fairness.
+Identify dispersed or downstream users who bear consequences even if better-organized participants speak for themselves. Equal percentages can yield different results when rights or needs differ. Explain the physical consequences and the interests affected before drawing a conclusion about fairness.
 
 ### ECO.7:7 - Conformance Checklist
 
-Does the arrangement connect use to the resource's condition and renewal? Are affected participants and existing rights distinguished from proposed rules? Can the worked case and its changed condition be carried out with attainable observation, contribution and decision mechanisms?
+Does the finding relate use to the resource’s condition or renewal? Which participants are affected, which rights apply, and which proposed rules are still open? For a claim that an arrangement can operate or adapt, establish the means to observe, supply and decide in the conditions claimed.
 
 ### ECO.7:8 - Common Anti-Patterns and How to Avoid Them
 
 - **Allocation is treated as physical feasibility.** Check the resource account and time window.
 - **Upkeep is expected to happen by goodwill alone.** Recover its contribution and means, or reduce the promise.
-- **One successful local rule is copied everywhere.** Test the receiving resource, participants, observation and wider effects.
+- **A successful local rule is copied into a different setting.** Check whether the receiving resource, users, means of observation and wider effects support the proposed use.
 
 ### ECO.7:9 - Consequences
 
-Users can preserve a shared contribution while adapting its rules to changing conditions. The result can involve several centres of decision. That can improve local responsiveness but introduces coordination, dispute and maintenance work.
+A shared-resource arrangement can protect required uses while allowing changes in supply. Several centres of decision may respond well to local conditions, but they also need ways to coordinate, maintain the resource and handle disputes. Assess the actual arrangement under its conditions.
 
 ### ECO.7:10 - Architectural Rationale
 
-Resource dynamics, rights, participant behavior and decisions are different structures. A usable arrangement connects them at the places where one changes another. Treating any one structure as the whole problem loses either physical feasibility or the means of collective action.
+Relate physical conditions, rights, participant actions and decisions where they affect one another. A workable allocation needs both a physical basis and an arrangement under which it can take effect. A report on one of these questions can use a narrower account.
 
 ### ECO.7:11 - SoTA-Echoing
 
-[Ostrom (2010), sections IV and VII](https://web.pdx.edu/~nwallace/EHP/OstromPolyGov.pdf) provides a comparative basis for shared-resource institutions and interacting decision centres. The adopted contribution is to compare feasible combinations of rules in their setting, rather than prescribe one ownership form.
+[Ostrom (2010), sections IV and VII](https://web.pdx.edu/~nwallace/EHP/OstromPolyGov.pdf) provides a basis for comparing shared-resource institutions and interacting decision centres. We adopt the comparison of feasible rules in their settings, including the effects of ownership arrangements where relevant.
 
-[Baldwin and colleagues (2024)](https://onlinelibrary.wiley.com/doi/10.1111/psj.12518) identifies limits in evidence about polycentric arrangements and emphasizes context and change over time. The pattern therefore uses a local constructed case and revision conditions; multiple centres are not a guarantee of good results. A single operator's established allocation remains preferable where it already answers the use without a collective-rule problem.
+[Baldwin and colleagues (2024)](https://onlinelibrary.wiley.com/doi/10.1111/psj.12518) identify limits in the evidence about polycentric arrangements and examine their context and changes over time. The canal case illustrates a local comparison and when to revisit it. Use a single operator’s established allocation if it meets the need. A claim that one arrangement performs better requires comparison under the relevant conditions.
 
 ### ECO.7:12 - Relations
 
-ECO.8 connects the arrangement with wider orders; ECO.9 changes its rules through the practices they sustain. OPS supplies operating allocation and upkeep. PHY and MMP supply physical constraints and models where missing. Applicable rights and authority remain external constraints; OCE is used only for a selected change to an organization's arrangements.
+Use ECO.8 for wider coordination and ECO.9 when the rules or their implementation need to change. Use OPS for operating allocation and upkeep, and PHY or MMP for a missing physical account or model. Identify applicable rights and authority. Use OCE if an organizational change is selected.
 
 ### ECO.7:End

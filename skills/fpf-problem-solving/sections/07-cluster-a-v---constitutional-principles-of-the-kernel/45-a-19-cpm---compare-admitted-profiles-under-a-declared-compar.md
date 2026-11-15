@@ -108,7 +108,7 @@ This pattern defines:
   * **SubjectKind:** `ReadingContent`, supplied by the reading contents in the left and right profiles.
   * **RangedValueKind:** CHR-typed profile values in a CG-Frame (see `CG-Spec.ComparatorSet`).
   * Results are declared per operation: a set of relation/poset tokens and a separate eligibility judgment.
-  * Input qualification: comparison ranges over admitted left/right profiles in one U.ClaimScope. The selected U.ContextSlice values are its members under A.2.6; these qualifications do not define the calculation extent or add a duplicate membership relation.
+  * Input qualification: bind the left and right profiles to be compared. The `U.ClaimScope` states when claims about comparing them apply. Check that the selected `U.ContextSlice` values belong to that scope under A.2.6. The extent of the calculation is determined separately.
 
   These are direct A.6.0 declaration components.
 
@@ -126,7 +126,7 @@ Each argument meaning is declared separately for Compare and CompareEligibility.
 | Argument | CGSpecSlot | CG-Spec governing comparator admission, SCP and default evidence conditions | CGSpecRef; 1 |
 | Argument | ComparatorSpecSlot | ComparatorSpec supplying the comparison rule and any thresholds or tie-breakers | ComparatorSpecRef; 1 |
 | Argument | MinimalEvidenceSlot | MinimalEvidence override used instead of CGSpecSlot.MinimalEvidence | MinimalEvidenceRef; 0..1 |
-| Argument | claimScope | U.ClaimScope delimiting this profile pair and comparison claim | ByRef; 1 |
+| Argument | claimScope | `U.ClaimScope` specifying the cases in which the comparison claim applies. The two profile slots identify what is compared. | ByRef; 1 |
 | Argument | selectedSlices | Set of selected U.ContextSlice members of claimScope under A.2.6 | ByValue set of slice references; 1 set |
 | Argument | characteristicPredicate | A.19 CharacteristicSpacePredicate used to restrict this comparison, if any | ByValue; 0..1, explicitly absent when unused |
 | Argument | referenceScheme | `EpistemeInterpretationScheme` (C.2.1:4.1.2), governing this comparison | ByRef through C.2.1 SchemeDesignation; 1 |

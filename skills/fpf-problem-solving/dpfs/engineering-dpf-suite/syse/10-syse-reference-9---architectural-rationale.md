@@ -5,7 +5,7 @@ need them together. A proposed System can have an attractive functional organiza
 builder arrangement; a realized configuration can pass its tests yet fail the receiving use. The repertoire
 therefore separates independently useful results and states how one result constrains or enables another.
 Observations from realization or use can reopen an earlier assumption. A project phase plan remains usable
-when it preserves those returns and the orders required by actual dependencies, physical operations and
+when it preserves those returns and the orders required by dependencies, physical operations and
 governing decisions.
 
 FPF distinctions and a curated standards or handbook route are a useful smaller answer when they already
@@ -48,10 +48,10 @@ Choosing a platform's architecture requires comparing the available arrangements
 a bounded contribution, obtaining external provision and adding an interface can each be appropriate.
 [APP-SYSE-05](79-syse-application-5---app-syse-05---worked-application-constr.md)
 keeps the repaired local and thin shared arrangements tied after their matched initial trial; developing
-the shared candidate further does not select it. This preserves a serious alternative to treating shared
-provision or a portal as the inevitable outcome of Platform Engineering.
+the shared candidate further
+does not select it.
 
-The common and software Methods are available together so that a reader can follow these real result
+The common and software Methods are available together so that a reader can follow these result
 dependencies without duplicating the common Methods in every profile. A focused profile can reuse that
 content while explaining its own changed conditions. Further physical and software profiles need their
 professional Methods: recoverable software state, irreversible material processing and an instrument's

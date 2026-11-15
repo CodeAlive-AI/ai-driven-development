@@ -19,9 +19,9 @@ relation and remains connected to the problem it addresses.
 ### SYSE.Application:2.2 - 2. Compare options and choose the next evidence
 
 Use `SYSE.2`, `SYSE.5`–`SYSE.7`, `SYSE.10`, and `SYSE.13` to keep use concepts, architecture candidates,
-descriptions, evidence, family identity, configuration, and effectivity comparable. The deciding Agent uses `SYSE.22` to compare the problems and options and records one
-replayable next-decision `ChoiceResult` for later planning or authorization. The Agent records a bounded probe only when a named feasible probe can change
-the decision enough to justify its cost. Otherwise the Agent chooses among surviving options, rejects the option
+descriptions, evidence, family identity, configuration, and effectivity comparable. The deciding Agent uses `SYSE.22` to compare the problems and options and records a
+replayable next-decision `ChoiceResult` for later planning or authorization. The Agent records a bounded probe only when a named feasible probe could improve the choice or establish its conditions
+enough to justify its cost. Otherwise the Agent chooses among surviving options, rejects the option
 set, or sends a question or missing-authority result to the Agent responsible for the named receiving decision.
 
 
@@ -32,7 +32,7 @@ platform contribution. Use `SYSE.20` to distinguish simultaneous Work from depen
 Use `SYSE.15` for the Method repertoire, `SYSE.19` when a relied-on source changes, and `SYSE.21` only for a
 question about continuation across a practitioner population.
 
-Use `SYSE.23` to compare changes to a surviving System-family option, its builder arrangement, or both. A part
+Use `SYSE.23` to compare retaining the present arrangement with changes to a surviving System-family option, its builder arrangement or both. A part
 or family-membership structure of an actual or intended System, a service or dependency relation with a builder
 System, and Work order are different relations. Practitioner
 capability and cultural continuation remain results of their own patterns. A build-before-trial dependency is a

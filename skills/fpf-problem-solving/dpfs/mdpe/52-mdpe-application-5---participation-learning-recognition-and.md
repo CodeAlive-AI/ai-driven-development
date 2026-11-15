@@ -1,213 +1,213 @@
 ## MDPE.Application:5 - Participation, learning, recognition and renewal in music and movement practices
 
-A school can teach better, a competition can become more impressive, and the social occasion that originally made both worthwhile can deteriorate. The difficulty concerns their connections. More difficult figures may retain experienced participants while making newcomers less willing to join; a visible competition result may reward something that partners do not value during a whole evening; protecting a recognizable tradition may also exclude a useful variation.
+A school may teach more effectively or a competition may offer a more impressive display while the social floor that drew participants loses its appeal. More difficult figures may retain experienced dancers and discourage newcomers. An award may favour a feature partners do not value during a whole evening of social dancing. A rule intended to preserve a tradition may exclude a variation participants value. Ask how participation, teaching and recognition affect one another in this practice.
 
-This account connects six contributions to developing music and movement practices:
+Choose the contribution that fits the question about the practice.
 
-- **[Renew a shared practice (MDPE.25)](42-mdpe-25---renew-a-shared-music-or-dance-practice.md)** constructs a response across participation, teaching, recognition and continued use.
-- **Recover the subject of a music or movement claim** resolves consequential ambiguity before a decision relies on words such as *dance*, *kizomba*, *school* or *style*.
-- **Connect stylistic distinctions to Method structure and acquisition** explains what may survive a variation, what a particular observer can recover, and what a performer can learn to do.
-- **[MDPE.26 - Construct and Change a Partnered Movement Organization](28-mdpe-26---construct-and-change-a-partnered-movement-organiza.md)** connects feasible bodily means, attention and a transition that both participants can continue.
-- **[MDPE.27 - End Voluntary Partnered Performance](30-mdpe-27---end-voluntary-partnered-performance.md)** connects a decision to stop with usable bodily support, released contact and an available exit.
-- **[MDPE.28 - Receive a Declined Invitation and Find an Available Next Action](31-mdpe-28---receive-a-declined-invitation-and-find-an-availabl.md)** connects the actual answer to disengagement, a wanted continuation and the help it needs.
+- **[Renew a shared practice (MDPE.25)](42-mdpe-25---renew-a-shared-music-or-dance-practice.md)** helps identify the relations among participation, teaching, recognition and continued use that the question concerns, and helps develop a response when needed.
+- **Recover the subject of a music or movement claim** when the answer depends on what the source means by *dance*, *kizomba*, *school* or *style*.
+- **Connect stylistic distinctions to Method structure and acquisition** to establish which distinctions might survive a variation, what an observer can recover and what a performer did, could do or learned to do under the stated conditions.
+- **[MDPE.26 - Construct and Change a Partnered Movement Organization](28-mdpe-26---construct-and-change-a-partnered-movement-organiza.md)** helps a pair assess available bodily means, cues and a transition into the next action, or design a change.
+- **[MDPE.27 - End Voluntary Partnered Performance](30-mdpe-27---end-voluntary-partnered-performance.md)** helps partners stop, maintain needed bodily support and release contact, or helps an observer establish how a previous encounter ended. Establish separately which onward actions were or are available.
+- **[MDPE.28 - Receive a Declined Invitation and Find an Available Next Action](31-mdpe-28---receive-a-declined-invitation-and-find-an-availabl.md)** helps the inviter accept an answer and find wanted, available activity or support. It also helps establish what happened after an earlier refusal.
 
-Start with renewal when the difficulty lies in the relations among participation, learning and recognition. Use claim recovery when ambiguous wording blocks a decision, and Method reconstruction when a stylistic difference lacks an explanation of how to obtain it. Use movement organization when a pair needs a wanted movement quality or a workable transition under changing musical or partner conditions. Use the ending method when participation is finishing, and the refusal method when an invitation has been declined. These are situational entries; several contributions may be needed for one task.
+Examine renewal when the question concerns how participation, learning or recognition affected the practice, or when a change to their arrangement is wanted. Clarify a claim whose wording obscures the subject. Reconstruct the method when a recognizable stylistic difference lacks an explanation of how to produce it. For a wanted bodily quality or transition, work on the partnered movement. Use the ending method to plan or carry out a voluntary ending, or to establish how an earlier encounter ended. After a declined invitation, use the method for that situation and any continuation the person wants. Combine these contributions when the task crosses those boundaries.
 
 ### MDPE.Application:5.1 - Renew a shared practice without losing what makes participation worthwhile
 
-When local improvements to teaching, competition or provision impair shared participation, use [MDPE.25 - Renew a Shared Music or Dance Practice](42-mdpe-25---renew-a-shared-music-or-dance-practice.md). It constructs an attainable arrangement from the participation people value and follows changed conditions back to the affected contribution.
+Use [MDPE.25 - Renew a Shared Music or Dance Practice](42-mdpe-25---renew-a-shared-music-or-dance-practice.md) to examine how a local change to teaching, competition or support affects participation. When a change is needed, identify what people value in taking part and construct an arrangement that can preserve or restore it under the available conditions.
 
-The [complete constructed Mara case](42-mdpe-25---renew-a-shared-music-or-dance-practice.md#mdpe2551---a-complete-constructed-case-the-evening-that-became-a-qualification-course) shows why restoring the social floor also changes the teaching task and the award's entry criterion. When a second room becomes unavailable, the arrangement is reconsidered from the participation it must still make possible.
+In the [complete constructed Mara case](42-mdpe-25---renew-a-shared-music-or-dance-practice.md#mdpe2551---a-complete-constructed-case-the-evening-that-became-a-qualification-course), Mara and the group keep the longer open-floor period, Sol varies the cue and partner in the learning task, and Ren revises the award’s entry criterion. When a second room becomes unavailable, they reconsider which arrangement can still provide the promised participation.
 
 ### MDPE.Application:5.2 - Recover the subject of a music or movement claim
 
 #### MDPE.Application:5.2.1 - Use this when
 
-Apply C.36.P's precision-restoration Method when a familiar label recurs but the action depends on which subject or relation it names. This application develops the music and movement distinctions needed for that restoration. The same word may name musical material, a way of moving or interacting, a performed occurrence, a recognition category, a teaching organization or a social event. The trouble is consequential when it changes what is taught, measured, selected, organized or said to persist.
+Use C.36.P when a familiar label has more than one plausible meaning and the distinction could change the answer. Here the same word may refer to musical material, a way of moving with a partner, a particular performance, a selection category, a school or an event. Identify which the claim concerns before deciding what was taught or measured, what was selected or what continued.
 
-Ordinary language can remain when the reader can recover the intended claim. A quotation can preserve its source's wording. Neither a capital letter nor translation into English resolves an ambiguous subject.
+Keep familiar language when readers can identify the subject and relation. In a quotation preserve the source’s wording even when its meaning is disputed. If an ambiguity matters, explain the locally supported readings. Changing capitalization or translating the word into English may still leave several readings open.
 
 #### MDPE.Application:5.2.2 - The recurring failure
 
-“Teach kizomba,” “the dance became more difficult” and “preserve the style” can hide different proposed changes. A musical classification alone is then taken to specify the movement to teach; an event's popularity becomes evidence of acquired capability; a stage category is treated as a description of all social performance.
+“Teach kizomba,” “the dance became more difficult” and “preserve the style” can refer to different work. A music label may leave the partnering instructions unclear. An attendance count can show how many people came. A claim about acquired ability needs evidence of learning. A stage category identifies performances eligible under the event’s rules. Actual selection and social use need evidence about those activities.
 
-The cost of precision is extra explanation. The cost of omitting it is changing the wrong subject. Resolve only the distinction on which the claim or action relies.
+Clarify a term when the distinction changes the claim or the work. Extra explanation has a cost, and leaving the subject ambiguous can send a teacher or organizer to work on the wrong thing.
 
 #### MDPE.Application:5.2.3 - Solution
 
-Read the whole claim and its receiving use before inspecting individual labels. State what the sentence asks someone to believe or do. Identify the subject, the relevant action or relation, and the observation or example that distinguishes the intended sense.
+Read the whole claim and establish what its recipient wants to understand or do. Identify the subject, the action or relation and a feature of the use, example or source that distinguishes the intended sense.
 
-Use the existing domain account where it supplies that meaning. If the intended meaning is absent or disputed in a way that changes the answer, return to the source or construct the needed semantic comparison. A precision-restoration pattern cannot invent a missing domain claim. Keep the unresolved alternatives visible until the decision has a basis.
+Use the existing domain account if it gives the intended meaning. When a material ambiguity remains, consult the source or compare the competing uses against evidence from the practice. If that evidence leaves more than one reading open, state which readings it supports and the limit on choosing among them. That can complete a historical inquiry. For a decision that turns on the difference, identify the needed evidence or the convention an authorized party would have to choose.
 
-The following entries recover different uses of recurring labels. They are not a universal vocabulary or a classification of all music and movement traditions.
+The following terms illustrate distinctions that matter in particular music and movement practices.
 
 | Trigger in a claim | Recover for the current use | A useful restored claim and its continuation |
 | --- | --- | --- |
-| “a dance,” “this dance,” “Dance” | Does the claim concern a particular performed episode, a reusable movement or partnering method, a score, a broad activity category or an event? | “This pair completed the phrase with the counted cue; the task is to determine whether they can respond to an unfamiliar partner's cue.” Use MDPE.10 for the capability question. |
-| “tango,” “tango vals,” “waltz,” “vals” | Which musical material or musical classification, and which movement or partnering method, are meant? Which timing relation connects them? | “Use the specified tango-based partnering method with this waltz track, adapting phrasing to the track's meter.” This does not rename the music or prove that every tango method transfers. Use MDPE.6 for the actual adaptation. |
-| “milonga” | In this sentence, is it a social event, musical material/category, or a movement practice? | “Book the room for the milonga event” and “select a track classified here as milonga” prescribe different work. Preserve the local source and criteria if the classification matters. |
-| “kizomba” | Is it this event's advertised umbrella, a musical category, a movement/partnering method or a historical claim? | “This organizer's programme uses ‘kizomba’ for a mixed event; the clinic teaches the separately specified partnering method.” State the actual programme rather than inferring a universal family tree. |
-| “style,” “authentic,” “traditional” | Which distinctions, examples, participants and comparison conditions support recognition or continuity? Is the claim historical, prescriptive or about current use? | “This event retains the stated phrasing and partner-response relation while allowing these movement variations.” Use the next contribution for comparison and MDPE.18 for a relied-on historical account. |
-| “school,” “level,” “master” | Organization, course, taught lineage, contest division or capability under a specified task? | “Entry into this contest division follows its rules; it does not establish ability to teach this beginner task.” Use the actual selection or acquisition method. |
-| “transmitted,” “learned,” “kept alive” | A published record, reconstructed description, assisted performance, acquired capability or continued use across participants and occasions? | “The receiver reconstructed the response rule and performed it in the receiving setting; later retention remains unobserved.” Use MDPE.17 and MDPE.19 for their respective claims. |
+| “a dance,” “this dance,” “Dance” | Does the term refer to a performance, a way of moving alone or with a partner, a score, an activity or an event? | “This pair completed the phrase with a counted cue.” If the question concerns their response to an unfamiliar partner’s cue, use MDPE.10 to assess that ability under the specified conditions. |
+| “tango,” “tango vals,” “waltz,” “vals” | Which recording or musical category and which partnering method does the claim concern? How does their timing fit? | “Use the specified tango-based partnering method with this waltz track, adapting the phrasing to its meter.” Use MDPE.6 to develop or assess the adaptation. The classification of this track and transfer to other tracks each have their own grounds. |
+| “milonga” | Does the term refer to a social event, music or a movement practice? | “Book the room for the milonga” concerns an event. “Select a milonga track” concerns the music. Use the local source and its criteria if the track’s classification is in question. |
+| “kizomba” | Is this a billing term for an event, a musical category, a partnering method or a claim about historical use? | “The organizer advertises a mixed event as ‘kizomba’. The clinic teaches the partnering method described in its instructions.” An event programme can establish how its organizer used the name. |
+| “style,” “authentic,” “traditional” | Who recognizes which distinctions, in what examples and under what conditions? Is the claim historical, prescriptive or about current use? | “This event retains the stated phrasing and partner response while allowing these movement variations.” Use §5.3 for the stylistic comparison and MDPE.18 if the claim depends on a historical source. |
+| “school,” “level,” “master” | Does this mean an organization, course, lineage, contest division or ability under a specified task? | “Entry to this division follows the contest rules.” To determine whether the entrant can teach a beginner task, assess the entrant’s contribution to that task under the allowed conditions. |
+| “transmitted,” “learned,” “kept alive” | Does the claim concern a record, an explanation recovered from it, assisted performance, acquired ability or recurring use? | “The receiver reconstructed the response rule and performed it in the receiving setting. Later retention remains unobserved.” Use MDPE.17 for transmission and MDPE.19 for continuation across people and occasions. |
 
-An event can advertise several forms under an umbrella while teachers distinguish them more narrowly. For example, an organizer may include authentic kizomba, urban kiz, tarraxo, semba, compa and an afro-animation segment under a local event label. That programme is not evidence that the names denote disjoint movement kinds, that every name denotes the same kind of subject, or that every community accepts the umbrella. Recover the exact programme and the claim before using such a list.
+An organizer might advertise authentic kizomba, urban kiz, tarraxo, semba, compa and an afro-animation segment under one event label while the teachers distinguish what they teach. Cite the actual programme for its advertised scope. To claim that the names identify distinct movement kinds or that other communities use this umbrella, examine those classifications and communities.
 
-Write the shortest ordinary sentence that preserves the needed distinctions and the useful action. Then return to that action.
+Express the restored claim in ordinary language and use it to answer the original question. If a consequential distinction still cannot be established, identify what is missing.
 
 #### MDPE.Application:5.2.4 - Apply the restoration to a cross-combination
 
-Suppose a teacher proposes comparing two specified ways of performing a partnering task, taught locally as *tango* and *tango vals*. Two recordings are available, one classified locally as tango music and one as waltz music. Keep the actual partnering instructions and recordings with the comparison; their labels alone do not specify either the movement or the musical timing.
+A teacher proposes comparing two specified partnering methods taught locally as *tango* and *tango vals*. One available recording is locally classified as tango music and the other as waltz music. Identify the actual instructions and recordings so that a reader can recover which movement and musical timing are being compared.
 
 | Partnering way used | Tango recording | Waltz recording |
 | --- | --- | --- |
-| The specified tango partnering way | First receiving case | Same partnering way with a different recording; determine the needed phrasing adaptation |
-| The specified tango-vals partnering way | Different partnering way with the first recording; determine the needed phrasing adaptation | Fourth receiving case, with both the tango-vals instructions and the waltz recording identified |
+| Specified tango partnering method | First use to assess | Keep the method and use the waltz recording. Identify any phrasing adaptation needed. |
+| Specified tango-vals partnering method | Keep the tango recording and assess the changed method and any phrasing adaptation. | Fourth proposed use, with tango-vals instructions and the waltz recording. |
 
-Each cell is a proposed use whose compatibility must be established. It is not a claim that every method bearing the label works with every recording in that musical category.
+Each cell identifies a proposed pairing. To judge compatibility, use the instructions, recording and evidence for that pairing. A result for one cell applies to other methods or tracks only as far as its basis warrants.
 
-A comparison along a row changes the recording while retaining the selected partnering way to the extent its applicability permits. A comparison down a column changes the partnering way with the recording held fixed. A diagonal comparison changes both; its result cannot be attributed to just one hidden change. If adapting to the recording also changes a defining condition of the partnering Method, state that change rather than claiming that the Method was held fixed.
+Across a row the recording changes while the specified partnering method is held fixed where applicable. Down a column the partnering method changes with that recording held fixed. A diagonal changes both, so that difference alone cannot identify either contribution. If adapting to the recording changes a defining condition of the method, name the adaptation and revise the comparison.
 
-Thus “switch from tango to tango vals” is still insufficient. Say which instructions and which recording changed, what receiving result is sought, and what remains applicable. When the task is to book a milonga event, none of these four performance comparisons is required merely because the event shares a label with a musical or movement category.
+When someone proposes switching from tango to tango vals, specify which instructions or recording would change and which result is wanted. Someone booking the room for a milonga can use the event’s requirements directly.
 
 #### MDPE.Application:5.2.5 - Worked repair
 
 
-Consider: “Kizomba is easy, but schools must make the dance harder to keep it alive.”
+Consider the claim “Kizomba is easy, but schools must make the dance harder to keep it alive.”
 
-The initial wording leaves the learner, task, form of difficulty and meaning of continuity unstated. In the event case above, the relevant claim can instead be:
+The statement leaves open for whom the task is easy, what a harder task would require, and what would count as continuity. If the question concerns the illustrated event, a more specific proposal could read as follows.
 
 “Newcomers can attempt this event's entry partnering task after the short clinic. The school proposes an optional advanced class to retain participants seeking more demanding work. Check whether the class supplies that challenge and whether its schedule leaves the promised social floor and affordable entry available.”
 
-The repair retains the development proposal. It removes the inference from a general label to an intrinsic difficulty and from greater difficulty to continued participation. It permits the advanced class while making its contribution and complication inspectable. If those case facts are unavailable, keep the statement a proposal requiring them rather than manufacturing them through wording.
+This version proposes a more demanding class and makes affordable social dancing a condition. Use that interpretation only where the sources support it. A claim that the new class retained participants would need evidence of who continued and why. If the clinic or its entry task is still a proposal, describe what newcomers are expected to be able to attempt and identify the needed evidence.
 
-R9.3:1 explicitly explains why its teaching avoids bare “танец”: occurrence, style/pattern and broad activity category are easily confused. This is a useful recognition example, not a proof that one replacement word has a fixed meaning everywhere. A work method still needs its action, applicability and result; a cultural label can have another legitimate use.
+R9.3:1 asks readers to determine whether “dance” refers to one performance, a style or repeatable pattern, or a broader activity. Use the sense relevant to the decision here. A method needs its action, conditions and result specified, while an event programme may legitimately use a cultural label.
 
 #### MDPE.Application:5.2.6 - Assurance and boundaries
 
-For recognition, ask what would be changed if the other plausible sense were intended. For assurance, follow the restored claim to its source meaning and the actual receiving action. A stylistic rewrite that changes neither understanding nor action may need only F.19. A newly developed semantic claim needs domain grounds before wording can make it usable.
+To recognize a consequential ambiguity, ask what claim or action would change under the other reading. To check the proposed meaning, follow it to the source and the receiving use. Use F.19 for a wording problem when the subject is already clear. A new claim about the domain needs grounds in the practice.
 
-The method succeeds when the intended reader can distinguish the consequential senses, preserve the useful claim and continue or identify the missing fact. Recovering what a claim means and establishing whether it is true remain separate questions.
+The reader should be able to distinguish the relevant senses, recover the claim and answer the question or identify the missing fact. If the assignment also asks whether the claim is true, examine evidence from the source or work it concerns.
 
-C.36.P supplies the general cultural wording routes. The domain entries above add the music/material/movement/event distinctions needed by this practice. E.10.ARCH governs the construction and placement of such reusable restoration guidance; practitioners use the guidance at its recognition cue, rather than treating E.10.ARCH as a lexical inspection checklist.
+Use C.36.P for the general method of recovering cultural wording. The examples here distinguish musical material, movement, performance and events. An author developing comparable reusable guidance can use E.10.ARCH to decide how to construct and place it.
 
 ### MDPE.Application:5.3 - Connect style, Method structure and acquisition
 
 #### MDPE.Application:5.3.1 - Begin with the difference the work needs
 
-Use this application when a project can recognize a style or reproduce an example but cannot explain which distinctions should survive a change, how a method produces them, or which part a receiving performer can acquire. E.23.CDI:4.2.1 supplies the Method for choosing how the needed Method structure becomes usable: recover the missing connection, compare learning with provision, and return the supported choice to the receiving work. A.2.2:2.1 characterizes the operations and relations the holder can use; C.2.8 characterizes what the description lets a reader recover. The music and movement comparisons below establish the distinctions those contributions need in this application.
+A project may recognize a style or reproduce a phrase and still need to know which distinctions survive a change, how performers produce them or what someone else can learn. E.23.CDI:4.2.1 helps identify which part, if any, is missing from the intended work. When a choice is needed, compare learning or obtaining that contribution and use the supported arrangement. Use A.2.2:2.1 to characterize operations and relations available to the capability holder. Use C.2.8 to examine what a specified reader can correctly recover from the description.
 
-Three questions can concern the same phrase without sharing an answer:
+The same phrase can raise three questions.
 
 1. Which stylistic distinctions remain recognizable under the selected changes?
 2. Which reusable operations, conditions and interactions produce or preserve them?
 3. What can this observer recover, and what can this performer learn and later do, with the available preparation, help and time?
 
-A recording can answer the first question partly while concealing the second. A correct explanation can expose the second while leaving the third dependent on practice and provision.
+A recording may show features by which a style can be recognized while hiding the choice that produced them. An explanation may correctly describe the choice. Whether someone understood the explanation, can perform the action or acquired it through the lesson calls for evidence of the corresponding result.
 
 #### MDPE.Application:5.3.2 - Compare a style through declared changes and distinctions
 
-Choose the material and the receiving use. Name the distinctions that matter there and the changes under which they should remain. Then compare an example, a varied example and a consequential counterexample.
+Identify the material, intended use and stylistic distinctions that matter. Specify the changes under which each distinction should remain. Use a suitable existing comparison when it answers the question. To establish the range of a distinction or separate plausible accounts, choose an example, a relevant variation and, where needed, a case that breaks it.
 
-For a performed movement phrase, changing the camera may preserve the action but hide the cue from an observer. Changing the partner can preserve the intended partnering method while making its application harder. Slowing the music can make a cue available for longer and alter the expressive result. Mirroring may change the interaction convention. These operations must be examined separately; none is a universal harmless distortion.
+A different camera position may hide a cue while the performed movement stays the same. Another partner may make the same method harder to apply. Slower music may make a cue available for longer and change the expressive result. Mirroring can change the partnering convention. Choose which variation to examine, and distinguish its effect when a claim depends on it.
 
-Chong and Forsyth's GANs N' Roses defines a content/style split relative to chosen image augmentations and uses consistency, reconstruction and diversity constraints together. That supplies a constructive analogy: declare what is varied and what must remain, rather than treating style as an unexplained label. Its learned latent variables and image benchmarks are not an ontology of human artistic practice or a measure of skill acquisition. [Paper, §§3–5](https://arxiv.org/abs/2106.06561).
+In *GANs N’ Roses*, Chong and Forsyth define content and style relative to selected transformations of images. They train the image model with consistency, reconstruction and diversity constraints. A choreographer can borrow the question of what to vary and what must persist. Evidence for that choice in dance, or for an effect on what a performer learns, comes from the dance practice. [Paper, §§3–5](https://arxiv.org/abs/2106.06561).
 
-Do not assume musical material, movement content and style can always be independently recombined. A musical accent may help define a movement's phrasing; a partner-response relation may itself be part of the stylistic distinction. If a proposed variation breaks that relation, revise the comparison or accept a different variant. A failed separation is useful information.
+Check whether the proposed changes can be made independently. A musical accent may help define a movement’s phrasing, or a partner’s response may be part of the style. If a variation changes a defining relation, revise the comparison or identify the resulting variant.
 
 #### MDPE.Application:5.3.3 - Restore the Method behind a stylistic result
 
-A recognized family of performed works is not automatically one Method. Recover the reusable way only when the question needs it: what the performer attends to, chooses and does, under which conditions, toward what result, with which permitted variation and stop.
+When the question concerns a reusable way of performing, establish what the performer attends to, chooses and does, under which conditions, to what result, how the action can vary and when it ends. Works that viewers recognize as a family may share some of these relations and differ in others.
 
-For example, “pause after the partner's cue, preserve a shared pulse and offer a continuation when the partner responds” describes an interaction to develop. “Looks like the recorded performance” describes a comparison result. The latter does not supply the former's control conditions.
+“Pause after the partner’s cue, preserve a shared pulse and offer a continuation when the partner responds” gives an interaction a performer can develop. Two versions may look alike while using different cues or continuation rules. Use evidence of those choices to establish the interaction.
 
-One Method can permit several stylistic results; several Methods can produce results that a coarse comparison groups together. A style can also name a convention for recognizing and selecting a family. Use A.3.1's identity conditions to decide whether a change stays within one Method, refines it for a narrower use or requires another way. Neither a shared label nor visual resemblance makes the decision.
+One method can permit several stylistic results. Different methods can produce performances that look alike under a coarse comparison. A style may also be a convention for recognizing and selecting performances. Use the identity conditions in A.3.1 to decide whether a change preserves the method, refines it for a narrower use or requires another method.
 
-To reconstruct a useful method, follow the desired result backward to the required actions and conditions, then forward through a complete case. Ask the performer or inspect a revealing attempt when the record does not expose the choice. Keep what was inferred or supplied by that inquiry separate from what the original record already made recoverable.
+To reconstruct a method, trace the required result back to its conditions and actions, then follow them through a complete case. If the existing record does not expose a choice, use another suitable source or a revealing attempt when that difference matters. Where neither is available, give the reconstruction within its limits. State which relations the record shows, which are inferred and which came from a further source.
 
 #### MDPE.Application:5.3.4 - Make granularity a declared comparison choice
 
-Choose enough detail to distinguish the action-changing alternatives. More detail is not invariably more useful.
+Choose the detail that can distinguish the alternatives that matter for the task.
 
-Suppose a response begins within the first beat after a partner's cue. A coarse account records only that fact. Two performances with delays of 0.25 and 0.75 beats both satisfy it. A finer receiving task requires the response within 0.5 beats: the first qualifies and the second does not. This is a constructed timing example, not a universal criterion of good partnering.
+In a constructed case, two performances have response delays of 0.25 and 0.75 beats after a partner’s cue. Both satisfy “within one beat”. If the task requires a response within 0.5 beats, the first meets the requirement and the second misses it. The threshold belongs to this task.
 
-A reader who extracts only “within one beat” has not recovered the finer condition. A recording that cannot reveal the cue does not support either delay estimate. Conversely, when the only decision concerns whether a phrase has a response at all, sub-beat distinctions may add work without changing the answer.
+A reader who reports “within one beat” has given the coarser condition. To determine whether they also know the finer condition, examine a response that distinguishes the two. A recording that omits the cue cannot by itself establish either delay. When the question asks only whether a response occurred, sub-beat timing may add cost without changing the answer.
 
-State what each comparison retains. A coarser classification can group distinct methods; a finer observation can distinguish performances of the same Method. Neither operation determines a general hierarchy of styles or proves that one performer has greater mastery overall.
+State which differences the comparison preserves. Coarse classification can group distinct methods. Finer observation can distinguish two performances of one method. A wider judgement about mastery or a hierarchy of styles would require its own criteria and evidence.
 
 #### MDPE.Application:5.3.5 - Separate recoverable structure from acquired capability
 
-C.2.8 characterizes selected structure extractable from an episteme through its particular expression by a specified observer under stated conditions. It can be used for a MethodDescription: which branches, dependencies or reasons the reader correctly recovers, with what preparation, accessible help and budget.
+C.2.8 characterizes selected relations a particular observer can correctly recover from an episteme through a particular expression under stated conditions. For a MethodDescription, identify the relevant branches, dependencies or reasons and what the reader could recover with the specified preparation, accessible help and budget. Use the reader’s response for a claim about what they actually recovered.
 
-Applying the Method is another result. A reader may recover the instruction for response timing without acquiring the coordination needed to enact it. A skilled performer may already enact a relation that they cannot yet explain from the supplied description. Better access to an expert may make an operation obtainable without transferring it to the receiving person.
+A reader may understand the response-timing rule and still need practice to coordinate the movement. An experienced performer may already use that timing without being able to explain the supplied score. An expert can also supply an operation the recipient cannot yet perform personally. Establish which contribution the work needs and which the available evidence supports.
 
-For the current learning question, name the particular relations and operations being acquired. Keep the evidence at the resolution that changes the instructional decision:
+For the teaching question, identify the relations and operations the learner needs. Use observations that establish the learner’s contribution under the permitted help and any change over time at issue.
 
 | Selected contribution | Evidence about understanding | Evidence about receiving performance | Possible repair |
 | --- | --- | --- | --- |
-| Identify when the partner's cue calls for a response | The learner distinguishes a cue from a coincidental movement in the supplied examples | The learner notices it during the relevant interaction | Improve the contrast or observation conditions before adding sequence difficulty. |
-| Choose a continuation or a pause | The learner can explain the branch in a changed example | The learner selects an appropriate branch with the actual partner | Practice the decision at an attainable pace; check what help is being supplied. |
-| Coordinate the response in time | The learner recovers the timing relation | The response occurs within the local receiving criterion | Develop coordination or change support; another verbal explanation alone may be insufficient. |
-| Adapt after an unfamiliar response | The learner reconstructs why the original continuation no longer fits | A changed partner or condition yields a usable recovery | Work on the missing adaptation and return to the whole interaction. |
+| Identify when the partner’s cue calls for a response | The learner distinguishes the cue from a coincidental movement in the examples. | The learner identifies the cue or responds in a way that distinguishes it from coincidental movement during the interaction, with the support allowed. | If discrimination is the obstacle, improve the contrast or observation conditions before adding sequence difficulty. |
+| Choose a continuation or a pause | The learner explains the branch in a changed example. | With the actual partner the learner selects an appropriate continuation or pause. | If the choice is difficult, practise it at an attainable pace and establish what help the learner used. |
+| Coordinate the response in time | The learner shows or explains the required timing relation. | The learner supplies the response within the local time criterion, with the permitted help. | If the problem concerns execution, develop coordination or change the support. Check understanding separately if it is in doubt. |
+| Adapt after an unfamiliar response | The learner explains why the original continuation no longer fits. | With a different partner or in changed conditions, the learner produces a usable recovery. | Practise the adaptation if needed and return to the whole interaction. |
 
-The table is an optional explanation of the gap. Select the contributions that matter to the particular use.
+Use the rows that distinguish what the learner explained, what they performed and what remains open for the use at issue. A single unsuccessful attempt may leave several explanations possible.
 
 #### MDPE.Application:5.3.6 - A worked acquisition contrast
 
-Consider two participants learning a constructed eight-pulse operation. The demonstrated onset positions are 0, 3 and 6. The receiving task is to shift every onset by two positions, wrapping at the end of the eight-pulse cycle. The result is 2, 5 and 0, or the ordered onset set 0, 2 and 5.
+In a constructed case, Ira and Toni are learning an eight-pulse operation. The demonstrated onsets are 0, 3 and 6. Shift every onset forward by two, wrapping at the end of the eight-pulse cycle. This gives 2, 5 and 0, or 0, 2 and 5 in ascending pulse order.
 
-Ira can read the expression “add two modulo eight,” obtains the correct set, and explains why position 6 becomes 0. Ira nevertheless cannot yet clap the shifted phrase with the ensemble. The structural explanation has supplied a useful relation; the bodily coordination remains unavailable in this receiving performance.
+Ira reads “add two modulo eight,” obtains the correct set and explains why 6 becomes 0. The explanation and answer give evidence of understanding the operation. When the ensemble plays, Ira cannot clap the shifted phrase in that attempt. A claim about what Ira can do in other conditions needs corresponding evidence.
 
-Toni accurately copies the original recording but cannot construct the shifted phrase. Slower repetition of the original can preserve that performance without supplying the missing operation. The teacher instead marks the eight positions, performs the original and changed phrases, and asks Toni to shift a different onset set. That attempt can reveal whether the transformation was recovered. The ensemble then tries the changed phrase as music, because a correct written set alone does not establish performed integration.
+Toni accurately copies the original recording but cannot construct the shifted phrase in this attempt. Repeating the original more slowly can rehearse that phrase while leaving the shift unexplained. The teacher marks the eight positions, performs the original and changed phrases, then asks Toni to shift a different onset set. That response can show how Toni used the operation. The ensemble also tries the changed phrase so that actual coordination can be assessed.
 
-Suppose both later succeed while following the teacher's audible count. This establishes performance with that support in the observed task. If the concert arrangement retains the count, it can be an adequate solution. If it requires unaided entry after another player's cue, try that receiving condition; do not remove support merely to satisfy a general preference for independence.
+Suppose both later play the shifted phrase while following the teacher’s audible count. This establishes their performance with that support in the observed task. If the concert retains the count, it may be an adequate arrangement. If the brief calls for entry after another player’s cue without the count, use a suitable existing performance under that condition, or try it when the answer justifies the additional work. Keep the support permitted for the performance being assessed.
 
-A later successful varied performance may support a stronger acquisition claim. A failed attempt can instead concern cue access, execution, fatigue, an unfamiliar ensemble relation or the explanation. Its interpretation needs the conditions that discriminate those repairs.
+Successful performance in a varied case may extend the claim about what Ira or Toni can do. To establish acquisition, relate it to earlier performance and relevant practice. A failed attempt might concern cue access, execution, fatigue, an unfamiliar relation with the ensemble or the explanation. Use conditions that distinguish those possibilities if the cause matters to the next step.
 
-This connects a Method's structure, a description's recoverable relations and acquisition without treating them as one amount. Different agents can acquire different useful portions, or reach the same capability through different means. Counts become comparable only after their units, granularity, selected set, criteria and conditions are fixed.
+People or other agents may acquire different parts of the same method or reach the same capability in different ways. To compare counts of relations correctly recovered or operations acquired, specify what is being counted, the level of detail, the selected set, the criteria and the conditions. The unit for one of these counts may differ from the other.
 
-Use [MDPE.30](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md) for the complete rhythmic construction that joins a seed, its phase, the action rule and the receiving part. The present teaching comparison uses one of those operations.
+Use [MDPE.30](25-mdpe-30---construct-a-rhythmic-part-from-a-seed-phase-and-ac.md) to join the seed, phase, action rule and accompaniment into a rhythmic part. Ira and Toni’s task isolates the shift within that larger construction.
 
 #### MDPE.Application:5.3.7 - Use assisted reach as a question, not a permanent rank
 
-The familiar distinction between what a learner can do without help, can do with suitable help and cannot yet do under the available arrangement is useful here. Each result is relative to the task, preparation, kind of assistance and budget. It is not a permanent level of the person.
+For a particular task, distinguish what the learner demonstrated without help, what they demonstrated with specified help and what they tried without success in the observed arrangement. Available time, preparation and support affect each result. An untried condition remains open.
 
-The interesting development question is what the assistance changes. It may expose a distinction, supply an operation, let the learner practice it, or merely perform the difficult part for them. Those cases call for different next moves. Close collaboration can therefore help discover a method or acquire a capability, but it can also remain a justified part of the eventual work. The desired receiving arrangement decides whether to reduce dependence.
+Establish what the assistance supplied. It may make a distinction visible, perform a difficult operation, or leave that operation to the learner with an opportunity to practise it. Collaboration can help people discover a method or acquire an ability. It can also be the intended long-term way to do the work. Adjust assistance when the target requires a different personal contribution, or vary it in a comparison that needs to distinguish its role.
 
-This resembles the question raised by the zone of proximal development, while preserving a wider range of agents, assistance and intended results. It does not turn a reported assisted success into a measure of a learner's maximum potential.
+The zone of proximal development raises the question of what a learner can do with assistance. Here the question also applies to other agents, kinds of assistance and intended uses. An assisted success describes the response under those conditions. A claim about maximum potential would need a different basis.
 
 #### MDPE.Application:5.3.8 - Where an epiplexity analogy is useful
 
-Computational epiplexity, as treated in C.2.8, uses a bounded model class and a two-part coding criterion to distinguish model structure from residual unpredictability. A mathematical application must state what represents the account, observer, prior knowledge and extraction operation.
+In C.2.8, computational epiplexity uses a bounded model class and a two-part coding criterion to distinguish model structure from residual unpredictability. To apply the mathematics here, specify what represents the account, the observer, prior knowledge and the extraction operation.
 
-For method acquisition, a comparable research question would ask which reusable organization of action a specified learner can acquire from specified material and assistance within a budget, and how that acquisition changes later performance. That question is useful without an established universal numerical characteristic.
+For acquisition, a related research question is which reusable actions and relations a particular learner can acquire from specified material and assistance within a budget, and how the change affects later performance. A researcher can investigate this question in a particular setting. A general numerical measure would require a definition and evidence over its claimed scope.
 
-Begin with the explicit structure and acquisition contrasts above. Reusing C.2.8 for description recovery and capability-development methods for learning preserves their different bearers and evidence. A new general characteristic, or a conditional epiplexity model of learning, needs additional construction: units of Method structure, correspondence to the learner's representation, an acquisition criterion, time and assistance conditions, and an account of transfer. A count of instructions, perceived intricacy or hours of lessons supplies none of these by itself.
+Use C.2.8 for recovery from a description and the appropriate capability-development methods for learning. To build a general characteristic or a conditional epiplexity model of learning, define the units of method structure, correspondence to the learner’s representation, criterion for acquisition, time and assistance, and an account of transfer. Instruction counts, reported intricacy and lesson hours do not by themselves supply those relations.
 
-An agent can extract more already familiar structure without learning anything new. Learning can also change future extraction. That reciprocal relation is one reason to keep prior preparation and the timing of the comparison explicit. It is also a reason not to assign a single intrinsic “learnability” number to a Method independently of its learner and learning arrangement.
+An agent may recover familiar structure without learning anything new. Learning can, in turn, change what the agent can recover later. For a defined measure of learnability, include prior preparation and the timing of the comparison as well as the units, learning criterion and budget above.
 
 #### MDPE.Application:5.3.9 - Return the distinction to the shared practice
 
-The event's organizer can now ask a concrete question: is the difficulty an unavailable opportunity, an unreadable stylistic cue, a missing response operation, unacquired coordination, an incompatible partner convention or a selection rule that rewards another result?
+In the event case, the organizer can ask whether participants lacked an opportunity, could not read a stylistic cue, lacked a response or its coordination, used incompatible partnering conventions, or encountered an award rule that favoured a different result.
 
-The answer changes where to intervene. It may change the clinic, the receiving floor, the task used in a competition, the available help or the claim about what an award establishes. Learning observations can also expose a richer structure than the original style account described, reopening that account and its methods.
+Report the answer the evidence permits. If a change is wanted and warranted, it may concern the clinic, the social floor, the competition task, the available help or the claim made for the award. Observations of learning may also reveal a relation omitted from the style account and justify revising that account and its methods.
 
-This is the connection between cultural renewal and acquisition: the methods and distinctions that a practice makes available affect what participants can learn and use; their attempts and innovations can, in turn, change the repertoire and the criteria by which it is recognized. A project can work on those relations while keeping its contribution and its claims within the reach of the actual participants.
+The distinctions and methods available in a practice affect what participants can learn and use. What participants then try, develop and adopt may change the repertoire and what observers recognize. To attribute either change to that work, trace the participants’ actions and use a comparison or other grounds that distinguish relevant competing explanations.
 
 ### MDPE.Application:5.4 - Obtain and change a movement organization for partnered performance
 
-When familiar figures leave the needed bodily means, partner response or transition unavailable, use [MDPE.26 - Construct and Change a Partnered Movement Organization](28-mdpe-26---construct-and-change-a-partnered-movement-organiza.md). It connects support and preparation, readable signals, attention and the entry into another movement organization. The full cases distinguish changing a bodily arrangement from merely changing the figure name.
+Use [MDPE.26 - Construct and Change a Partnered Movement Organization](28-mdpe-26---construct-and-change-a-partnered-movement-organiza.md) to identify, change or assess the bodily organization behind partnered movement. Identify the preparation, support supplied by either partner or another source, readable signals and transition that matter to the question. Two performances may use the same figure name and different bodily means.
 
-Return the obtained movement to the musical and participation task. MDPE.Application:5.3 helps when the target stylistic distinction itself remains unclear; MDPE.25 concerns the practice's wider renewal.
+Assess the movement for the musical task and the participation conditions in question. Use MDPE.Application:5.3 when the stylistic distinction remains unclear and MDPE.25 when the question concerns renewal of the wider practice.
 
 ### MDPE.Application:5.5 - End voluntary partnered performance
 
-Use [MDPE.27 - End Voluntary Partnered Performance](30-mdpe-27---end-voluntary-partnered-performance.md) to turn a decision to finish into an actual ending with bodily support, released contact and an available onward action. A composed musical ending and an ended voluntary encounter have different completion conditions; both can matter in the same performance.
+Use [MDPE.27 - End Voluntary Partnered Performance](30-mdpe-27---end-voluntary-partnered-performance.md) to arrange or act on an ending, or to establish whether and how an earlier encounter ended. Distinguish the musical ending of a phrase from the participants’ release of contact, the support each needs and the actions available afterwards.
 
-Its complete Lena and Omar case changes a planned phrase ending to an immediate stop and distinguishes release from a delayed exit. Return a missing movement to MDPE.26 and a missing floor route to MDPE.5.
+In the Lena and Omar case, an immediate request to stop changes the planned phrase ending. Release of contact and a delayed departure occur at different times. Use MDPE.26 if assistance with movement is needed and MDPE.5 if the route across the floor needs attention.
 
 ### MDPE.Application:5.6 - Receive a declined invitation and find an available next action
 
-Use [MDPE.28 - Receive a Declined Invitation and Find an Available Next Action](31-mdpe-28---receive-a-declined-invitation-and-find-an-availabl.md) when a declined invitation must end and the inviter needs a wanted next action. The full Alex and Ren case separates continued bargaining, unavailable continuation, needed support and a claim about changed feelings.
+Use [MDPE.28 - Receive a Declined Invitation and Find an Available Next Action](31-mdpe-28---receive-a-declined-invitation-and-find-an-availabl.md) to understand what happened after a refusal or to act on it. In the encounter, accept the answer. The inviter may want another activity, choose to stay where they are or need support. In the Alex and Ren case, further bargaining, unavailable support and a claimed change in someone’s feelings require different responses and evidence.
 
-Those distinctions determine the contribution to obtain or practise. For a repeated participation problem involving the event's arrangement, use MDPE.25 and MDPE.5 without attributing a particular person's refusal to an unobserved cause.
+If help is wanted, establish what support is already available and arrange the missing contribution with the people able and authorized to supply it. If the event’s arrangements repeatedly affect participation, use MDPE.25 or MDPE.5 for that question. A particular person’s reason for declining requires evidence about that refusal.

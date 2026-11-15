@@ -7,9 +7,9 @@
 
 Use this pattern when the next useful contribution in a customer relationship is uncertain, an expected continuation does not occur, or a failure requires recovery. It covers continuing a suitable arrangement, changing it, pausing, restoring a damaged contribution and ending the relationship or a particular part of it.
 
-The result is a justified, permissible next contribution or ending, agreed to the extent the parties' decisions require, with responsibilities, remaining obligations and evidence of what actually happened. Relationship continuation is not the same as another sale. A completed one-off contribution can end well; a continuing relationship can contain a long interval without a purchase.
+The result is a justified, permissible next contribution or ending, agreed to the extent the parties' decisions require, with responsibilities, remaining obligations and evidence of what happened. A completed one-off contribution can end well; a continuing relationship can contain a long interval without a purchase.
 
-The intended reader can recover the customer's current situation, commitments and relevant performance, and can obtain decisions from the responsible people. A known ordinary renewal under unchanged conditions can use its existing arrangement. A fully completed transaction with no unresolved obligation does not automatically need a retention programme. This method does not determine legal remedies or override the customer's choice about further participation.
+The intended reader can recover the customer's current situation, commitments and relevant performance, and can obtain any needed decisions from those entitled to make them. For a routine renewal under unchanged conditions, you can use the existing arrangement. When the transaction is complete and all obligations are settled, the work can end. This method does not determine legal remedies or override the customer's choice about further participation.
 
 ### MKT.7:2 - Problem
 
@@ -24,24 +24,24 @@ Recover what the relationship is for now, distinguish the reason for the uncerta
 | The provider values continuity; the customer's need can end or change. | Useful continuation and renewal pursued for its own sake. |
 | A complaint can reveal a failure or a changed expectation. | Restoring a promised contribution and negotiating a different one. |
 | Commercial history informs the decision; past expenditure cannot be undone. | Historical economics and the consequences of today's alternatives. |
-| Several relations can involve the same people. | Distinguish paid service, voluntary cooperation and community participation by the agreements or rules governing each. |
-| A relationship can end while obligations remain. | Future optional work, unfinished commitments and the actual completion of closure. |
+| Several relations can involve the same parties. | Distinguish paid service, voluntary cooperation and community participation by the agreements or rules governing each. |
+| A relationship can end while obligations remain. | Future optional work, unfinished commitments and evidence that the ending took effect. |
 
 ### MKT.7:4 - Solution
 
 #### MKT.7:4.1 - Identify the actual relationship and the event needing a decision
 
-Name the contribution, customer situation and period concerned. Identify the people receiving the result, deciding continuation, paying and providing the work. Recover what is currently agreed, which contributions have occurred, what remains open, and which contact or next action is appropriate under the existing arrangement.
+Name the contribution, customer situation and period concerned. Identify who receives the result, who can decide whether to continue, who pays and who performs the work. Recover what is currently agreed, which contributions have occurred, what remains open, and which contact or next action is appropriate under the existing arrangement.
 
-Describe the event without prematurely interpreting it: a service period is ending, a report was not delivered, the customer declined an invitation, an expected purchase did not occur, or the customer requested a pause. Then determine whether the event is actually unusual for this relationship. A quarterly need cannot be judged by a monthly repurchase expectation. A contact changing jobs can interrupt communication without changing the organisation's need.
+Describe the event without prematurely interpreting it: a service period is ending, a report was not delivered, the customer declined an invitation, an expected purchase did not occur, or the customer requested a pause. Then determine whether the event is unusual for this relationship. A quarterly need cannot be judged by a monthly repurchase expectation. A contact changing jobs can interrupt communication without changing the organisation's need.
 
 Use [Account for Customer and Product Economics Over Time (MA.8)](../ma/_index.md) when timing, cohorts or future economics affect the decision. Preserve who was eligible for renewal, the observation period and the meaning of nonpurchase. Do not infer an individual customer's reason from a population retention rate.
 
 #### MKT.7:4.2 - Recover current usefulness and the action-changing cause
 
-Ask what useful result the customer still seeks, whether the contribution is helping, what changed and what continuation the customer wants. Combine the customer's account with relevant performance and commitment evidence. Distinguish an observation from an interpretation: an unused feature may be unnecessary, difficult, inaccessible or no longer suited to the goal. Use [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) for a consequential unknown that existing information cannot settle.
+Establish what useful result the customer still seeks, whether the contribution is helping, what changed and what continuation the customer wants. Combine the customer's account with relevant performance and commitment evidence. Distinguish an observation from an interpretation: an unused feature may be unnecessary, difficult, inaccessible or no longer suited to the goal. Use [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) for a consequential unknown that existing information cannot settle.
 
-Select the needed depth. An explicit request to end an optional service can settle that decision without a compulsory interview. A serious ambiguous service failure may need competent investigation before a remedy is promised. A known scheduling gap can need only a later agreed contact. Ask only for information that can change a legitimate next action.
+Select the needed depth. An explicit request to end an optional service can settle that decision without a compulsory interview. A serious ambiguous service failure may need competent investigation before a remedy is promised. A known scheduling gap can need only a later agreed contact. Ask for information when an attainable answer could justify its cost by changing a legitimate next action or strengthening the grounds for it.
 
 Separate the following working situations, allowing more than one where the evidence supports them:
 
@@ -59,13 +59,13 @@ If the cause is unknown, return that uncertainty rather than selecting a persuas
 
 For continuation, connect the current useful result to the next feasible contribution. Confirm the needed customer work, provider capacity, support, access, terms and time. A familiar name for the service does not establish that its conditions are unchanged. Let a changed contribution reopen the offer and its dependent promises.
 
-For a pause, identify what actually pauses and what continues: access, reserved capacity, communication, charges or support can have different arrangements. State the return condition, such as a resumed work cycle or a customer request, and who may initiate it. Avoid turning a pause into repeated unsolicited invitations. If an indefinite pause cannot be supplied, explain the feasible alternatives instead of silently retaining an unavailable arrangement.
+For a pause, identify what pauses and what continues: access, reserved capacity, communication, charges or support can have different arrangements. State the return condition, such as a resumed work cycle or a customer request, and who may initiate it. Avoid turning a pause into repeated unsolicited invitations. If an indefinite pause cannot be supplied, explain the feasible alternatives instead of silently retaining an unavailable arrangement.
 
-For recovery, first identify the failed commitment and the affected result. Distinguish an immediately attainable correction, remaining harm or inconvenience, and any question that needs a competent decision. Arrange the actual restorative work and communicate its supported scope and timing. [OPS.6](../ops/34-ops-6---continue-cases-and-handle-exceptions.md) can supply a concrete continuation with performer, conditions, evidence and fallback, or return the exact unmet condition. An apology or concession may matter but does not perform a missing service.
+For recovery, first identify the failed commitment and the affected result. Distinguish an immediately attainable correction, remaining harm or inconvenience, and any question that needs a competent decision. Arrange the restorative work and communicate its supported scope and timing. [OPS.6](../ops/34-ops-6---continue-cases-and-handle-exceptions.md) can supply a concrete continuation with performer, conditions, evidence and fallback, or return the exact unmet condition. An apology or concession may matter but does not perform a missing service.
 
 Do not make restoration conditional on buying more when the restoration is already owed under the applicable arrangement. A new useful proposal can be considered separately after its conditions are clear. If the original result cannot be restored, obtain the appropriate decision about an alternative or remedy instead of promising a fictional repair. Legal or specialist questions go to their competent source.
 
-For ending, distinguish the part that ends from work that must still be completed. Arrange any required handover, return or export, final communication, access change, support and other outstanding contributions under the governing terms. Identify who performs each necessary action and what will establish completion. A closed customer record does not itself return working material, stop a charge or fulfil a support commitment.
+For ending, distinguish the part that ends from work that must still be completed. Arrange any required handover, return or export, final communication, access change, support and other outstanding contributions under the governing terms. Identify who performs each necessary action and what will establish completion. Check whether closing the record triggered any required action and whether it took effect, such as returning working material or stopping a charge.
 
 #### MKT.7:4.4 - Compare prospective consequences and respect different relations
 
@@ -73,19 +73,19 @@ Compare only the alternatives that are appropriate and feasible. Consider the cu
 
 Keep past acquisition expenditure in the historical account without making it a new avoidable cost. Conversely, do not remove a prior support obligation from the ending alternative merely because no future sale occurs. These distinctions can change whether continuation is feasible or worthwhile for the provider; they do not override a customer's decision to decline it.
 
-When the same people also cooperate in a community or another shared activity, use [ECO.8](../../eco/18-eco-8---join-direct-cooperation-with-a-wider-economic-order.md) to preserve the relations and their authority. A volunteer's willingness to help does not amend a paid service obligation, and purchasing a course does not oblige someone to participate in a community. Choose the actual agreement or rule that governs each contribution instead of using personal loyalty to blur the boundary.
+When the same parties also cooperate in a community or another shared activity, use [ECO.8](../../eco/18-eco-8---join-direct-cooperation-with-a-wider-economic-order.md) to preserve the relations and their authority. A volunteer's willingness to help does not amend a paid service obligation, and purchasing a course does not oblige someone to participate in a community. Choose the actual agreement or rule that governs each contribution instead of using personal loyalty to blur the boundary.
 
 #### MKT.7:4.5 - Agree and perform the next action
 
-Present the relevant alternatives, material conditions and practical consequences in language the customer can use. Make the selected action and any refusal or deferral effective through the applicable means. Obtain a decision from the person entitled to make it; a user who reports a difficulty may not be the person who can renew an organisational contract.
+Present the relevant alternatives, material conditions and practical consequences in language the customer can use. Make the selected action and any refusal or deferral effective through the applicable means. Use an applicable decision already made by the entitled party. If a decision is still needed, obtain it from that party before proceeding. A user can report a difficulty while the authority to renew belongs to the purchasing organisation.
 
-Arrange the selected work with its responsible people, attainable timing and fallback. Tell the customer what will happen, what they need to do, what remains uncertain and how to obtain a relevant update. The amount of communication follows the actual work; a simple confirmed cancellation does not need a series of retention conversations.
+Arrange the selected work with those responsible for carrying it out, attainable timing and fallback. Tell the customer what will happen, what they need to do, what remains uncertain and how to obtain a relevant update. The amount of communication follows the actual work; a simple confirmed cancellation does not need a series of retention conversations.
 
 After performance, establish what changed. Recover direct evidence of the completed contribution, restored result, effective pause or ending and any obligation still open. Ask about the customer's resulting situation when it matters and is appropriate. Do not infer restored trust from a completed ticket or treat acceptance of a refund as a request to resume the service.
 
 #### MKT.7:4.6 - Return the result and improve the affected arrangement
 
-Return the relationship's current practical condition: what continues or ends, what was fulfilled, what remains to be done and what event could justify another decision. Keep unknown reasons unknown. A legitimate refusal or a completed useful result can close the present work without predicting whether the person will ever return.
+Return the relationship's current practical condition: what continues or ends, what was fulfilled, what remains to be done and what event could justify another decision. Keep unknown reasons unknown. A legitimate refusal or a completed useful result can close the present work without predicting whether the customer will return.
 
 When evidence reveals a repeated mismatch, send its substance to the owning method. MKT.2 can narrow a misleading offer, MKT.5 can repair contradictory experience conditions, MKT.6 can reconsider the useful result, and MKT.11 can restore the contributor arrangement. Population-level economics or a causal claim about a retention intervention needs its own adequate comparison through MA.8 or MKT.10. One recovered relationship does not establish that a general programme works.
 
@@ -113,7 +113,7 @@ Past effort can make a team overvalue continuation; a visible complaint can make
 
 ### MKT.7:7 - Conformance Checklist
 
-- The relationship, contribution, people and period are specific enough to interpret the event.
+- The relationship, contribution, parties and period are specific enough to interpret the event.
 - Current usefulness, wanted continuation, failed supply and changed goals remain distinguishable.
 - The selected action has a feasible performer, conditions, timing and appropriate authority.
 - Future consequences preserve dated costs and receipts, uncertainty and obligations under each alternative.
@@ -132,7 +132,7 @@ Past effort can make a team overvalue continuation; a visible complaint can make
 
 ### MKT.7:9 - Consequences
 
-Continuation can follow actual usefulness, and recovery can address the failed contribution rather than merely its appearance. An ending can protect a useful completed result and clarify remaining work. The method may reduce immediate renewals and still improve the appropriateness of the relationship.
+Continuation can follow the customer’s current need, and recovery can restore a promised contribution. An ending can protect a useful completed result and clarify remaining work. The method may reduce immediate renewals and still improve the appropriateness of the relationship.
 
 ### MKT.7:10 - Architectural Rationale
 
@@ -146,12 +146,12 @@ For a continuing useful result, **adapt** the joint goal identification and revi
 
 For temporal and economic judgement, **adopt** MA.8's distinction between observed customer or product histories, eligible continuation, conditional forecasts and prospective alternatives. It improves a single lifetime-value label when later support or closure work changes the decision. Its additional accounting is unnecessary for an ordinary settled ending whose economics do not affect the action.
 
-For multiple relations between the same people, **adopt** ECO.8's separation of direct cooperation, exchange and wider rules. For actual recovery, use OPS.6's executable continuation and evidence. Together these contributions supply boundaries and working moves that a persuasive renewal script omits. Reconsider the arrangement when the goal, governing commitment, operating ability or relevant time horizon changes.
+For multiple relations between the same parties, **adopt** ECO.8's separation of direct cooperation, exchange and wider rules. For actual recovery, use OPS.6's executable continuation and evidence. Together these contributions supply boundaries and working moves that a persuasive renewal script omits. Reconsider the arrangement when the goal, governing commitment, operating ability or relevant time horizon changes.
 
 ### MKT.7:12 - Relations
 
 MKT.2 can change the offer, MKT.4 can make the selected continuation or refusal effective, MKT.5 can repair the encounter, and MKT.6 can reshape the useful result. MKT.11 coordinates required contributors, MKT.12 investigates a consequential unknown, and MKT.10 evaluates a claimed intervention effect or resource difference. MKT.14 can distinguish the continuation of several opportunities inside one organisation.
 
-MA.8 supplies the temporal economic account; ECO.8 preserves different forms of cooperation and exchange; Operations supplies actual restorative and closing work. A marketing decision or updated customer record does not establish those results.
+MA.8 supplies the temporal economic account; ECO.8 preserves different forms of cooperation and exchange; the operating provider performs the restorative and closing work. Use evidence of performance to establish what the customer received.
 
 ### MKT.7:End

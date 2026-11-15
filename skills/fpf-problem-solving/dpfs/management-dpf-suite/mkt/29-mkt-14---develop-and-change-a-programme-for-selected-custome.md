@@ -35,9 +35,9 @@ Begin with the commercial purpose and the useful customer contribution that coul
 
 Within each organisation, distinguish the opportunities that can proceed or fail independently. Recover the working group, affected users, purchaser or sponsor, the intended useful result and the material conditions of choice and delivery. Two departments may share an employer yet need different products, permissions or decisions. One person's interest does not establish the organisation's agreement or every department's need.
 
-Keep the organisation, its representatives, the commercial opportunity and its record distinct. A customer record can help preserve knowledge, but it neither grants authority nor makes several opportunities one. Use only enough structure to maintain the differences that change action: a small programme may need a short opportunity table and connected explanation.
+Keep the organisation, its representatives, the commercial opportunity and its record distinct. A customer record can help preserve knowledge. Check who is authorized to represent the customer and which opportunities have their own commitments. Use only enough structure to maintain the differences that change action: a small programme may need a short opportunity table and connected explanation.
 
-State why each opportunity is included, which condition would exclude it and what further inquiry could change that choice. Consider the option of serving an ordinary request directly or leaving a weak opportunity outside the programme. Selection commits scarce attention; it is not merely a descriptive classification.
+State why each opportunity is included, which condition would exclude it and what further evidence, if any, could change or justify that choice. Consider the option of serving an ordinary request directly or leaving a weak opportunity outside the programme. Selection commits scarce attention; it is not merely a descriptive classification.
 
 #### MKT.14:4.2 - Choose the breadth and degree of shared work
 
@@ -52,7 +52,7 @@ Choose two related things: the breadth of the useful result within an organisati
 
 These are alternatives to compare, not mandatory stages. Wider repeatable work may include several groups and individual exceptions; it need not be fully automated. Broad individual work can finish with a small remaining problem that needs only a limited programme. A shared group can dissolve when its common basis no longer holds.
 
-Test the proposed commonality against the actual result. Similar sector or company size may help locate candidates but is insufficient when one needs batch-file analysis and another needs unavailable continuous integration. Ask which preparation transfers, what must change locally, and whether those changes still make sharing worthwhile. Preserve evidence from each consequential difference; information about one client does not automatically apply to the others.
+Test the proposed commonality against the result each organisation needs. Similar sector or company size may help locate candidates but is insufficient when one needs batch-file analysis and another needs unavailable continuous integration. Ask which preparation transfers, what must change locally, and whether those changes still make sharing worthwhile. Preserve evidence from each consequential difference; information about one client does not automatically apply to the others.
 
 #### MKT.14:4.3 - Construct the reusable contribution and its permitted adaptations
 
@@ -62,7 +62,7 @@ Then name what remains local. Customer work, input samples, permitted uses, bene
 
 Use [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) and [MKT.6](21-mkt-6---jointly-shape-a-useful-result-and-help-achieve-it.md) to obtain the supported offer and useful result. [MKT.9](24-mkt-9---select-an-offer-or-help-for-a-particular-customer.md) selects a suitable variant or obtains the missing service construction. Shared preparation cannot supply an absent technical or organisational contribution.
 
-Prepare the people and means that will use the common contribution. They need to recognise where it fits, adapt it, answer the relevant questions and return an exception they cannot resolve. Account for learning, rehearsal, access and later updates. A reusable file on a shared drive does not establish any of these results.
+Establish who will apply the shared contribution. Use or obtain the means to recognise eligible cases, adapt the contribution where needed, answer questions and refer exceptions to a recipient able to resolve them. Supply any missing access or updates, and learning or rehearsal for staff who need them. A reusable file on a shared drive does not establish that the resulting arrangement works.
 
 #### MKT.14:4.4 - Join each opportunity to its next meaningful action
 
@@ -70,33 +70,33 @@ For every live opportunity, identify the next useful result and who can act on i
 
 Use MKT.3 for a suitable contact and meaningful response, MKT.4 for choice and acquisition, MKT.6 for obtaining the useful result, and MKT.7 for continuation, restoration or ending. The programme relates these contributions across opportunities; it does not replace them with a count of meetings.
 
-Obtain effective contributors through [MKT.11](26-mkt-11---align-promises-partners-and-execution.md). Agree how a response reaches the person who can continue it, what information that person needs, and what happens if the promised work is unavailable. Reconcile calendars, specialist access and overlapping contacts from different teams. A marketing interaction should not create a promise the receiving sales or service team cannot support.
+Obtain effective contributors through [MKT.11](26-mkt-11---align-promises-partners-and-execution.md). Agree how a response reaches the party or service that can take the next action, what information it needs, and what happens if the promised work is unavailable. Reconcile calendars, specialist access and overlapping contacts from different teams. A marketing interaction should not create a promise the receiving sales or service team cannot support.
 
-When software selects or performs actions, specify the needed information, selection conditions, permitted action and receiving result. Check behaviour when information is missing, stale or contradictory and when an exception exceeds the prepared variants. The programme can use automation only to the extent that those conditions and its actual receiving work are supported.
+When software selects or performs actions, specify the needed information, selection conditions, permitted action and receiving result. Check behaviour when information is missing, stale or contradictory and when an exception exceeds the prepared variants. The programme can use automation only to the extent that those conditions and the work needed to receive and act on its output are supported.
 
 #### MKT.14:4.5 - Compare the complete programme and obtain its resources
 
 Compare alternatives against the same useful results and period. Include research, qualification, common preparation, adaptation, team learning, contacts, coordination, provision, support, exceptions, updates and closure where required. Reuse may lower one component while increasing another. Compare a shared programme with the complete individual alternative, not with an individual alternative that omits its receiving work.
 
-Check the contributors' actual available capacity and the timing of simultaneous work. Use OCE.11 to preserve continuing service while preparing or changing the programme. A total within the available hours does not establish compatible calendars, capability, access or cash. Use [STR.8](../str/26-str-8---relate-capabilities-dependencies-business-models-and.md) for the sustaining contribution and [MA.8](../ma/_index.md) for dated economic flows, shared resources and obligations.
+Check the contributors' available capacity and the timing of simultaneous work. Use OCE.11 to preserve continuing service while preparing or changing the programme. A total within the available hours does not establish compatible calendars, capability, access or cash. Use [STR.8](../str/26-str-8---relate-capabilities-dependencies-business-models-and.md) for the sustaining contribution and [MA.8](../ma/_index.md) for dated economic flows, shared resources and obligations.
 
 Select the smallest complete supported programme. If demand exceeds available capacity, reduce the agreed scope, sequence the work differently, obtain a missing contribution or change the included opportunities. Preserve the useful result and communicate the revised promise. Cheaper message production does not resolve an unavailable specialist or an impossible service.
 
-Obtain the actual resource and contributor decisions within the decision makers' authority. A calculated proposal remains a proposal until those conditions hold. Return precisely which part can start and which part depends on an unresolved contribution.
+Use existing commitments within their scope and obtain any further resource or contributor decision from the party entitled to make it. A calculated proposal remains a proposal until those conditions hold. Return precisely which part can start and which part depends on an unresolved contribution.
 
 #### MKT.14:4.6 - Use the programme and learn at the receiving decisions
 
-Keep enough current information to act: the opportunity, supported useful result, present conditions, performed work, response, next action and receiving person. Preserve the reason for a stop or delay. Do not translate silence into refusal or a first purchase into achieved benefit without the relevant observation.
+Keep enough current information to act: the opportunity, supported useful result, present conditions, performed work, response, next action and its recipient. Preserve the reason for a stop or delay. Do not translate silence into refusal or a first purchase into achieved benefit without the relevant observation.
 
-Provide different receiving answers where their decisions differ. The person continuing a sale needs the specific customer's situation and next feasible action. The programme owner needs grounds to change inclusion, common preparation or resource commitment. The service provider needs the actual promise, inputs, timing and capacity conditions. One report may support several of these, but one engagement score cannot answer them all.
+Provide different receiving answers where their decisions differ. The party continuing a sale needs the specific customer's situation and next feasible action. The programme owner needs grounds to change inclusion, common preparation or resource commitment. The service provider needs the actual promise, inputs, timing and capacity conditions. One report may support several of these, but one engagement score cannot answer them all.
 
-Compare the observed result and whole burden with the proposed programme. Use [MKT.10](25-mkt-10---evaluate-the-contribution-and-cost-of-a-marketing-i.md) when the decision requires the programme's causal contribution; descriptive progress is sufficient for some operational adjustments. Use [MKT.13](28-mkt-13---test-commercial-model-repeatability-and-deployment.md) before expanding a model whose ordinary repeatability or sustaining conditions remain uncertain.
+Compare the observed result and whole burden with the proposed programme. Use [MKT.10](25-mkt-10---evaluate-the-contribution-and-cost-of-a-marketing-i.md) when a decision or a claim about the programme depends on its causal contribution; descriptive progress is sufficient for some operational adjustments. Use [MKT.13](28-mkt-13---test-commercial-model-repeatability-and-deployment.md) before expanding a model whose ordinary repeatability or sustaining conditions remain uncertain.
 
 #### MKT.14:4.7 - Revise, separate or finish the affected work
 
 Reconsider the affected connection when a customer's goal, participants, data permission, available service, economics or provider capacity changes. Keep sound common preparation where its conditions remain valid; separate an exception when preserving it inside the group would distort the offer or burden the other work.
 
-Admit a new organisation only after checking its contribution, permitted use, necessary adaptation and complete additional burden. A larger list is not itself an improvement. When repeated exceptions remove the advantage of sharing, compare an individual continuation or a newly justified group.
+Admit a new organisation only after checking its contribution, permitted use, necessary adaptation and complete additional burden. When repeated exceptions remove the advantage of sharing, compare an individual continuation or a newly justified group.
 
 End completed or no-longer-useful opportunities after settling their remaining commitments or arranging how the parties still obliged will fulfil them. A broad relationship can continue while one opportunity ends; an individual success does not automatically advance another opportunity in the same organisation. Preserve reusable learning.
 
@@ -108,7 +108,7 @@ In this constructed case, a provider considers Sever, Vector and Luch. Inquiry w
 
 The first two opportunities share a useful basis: compatible permitted input formats, a limited batch result and a return condition: a rejected sample must be replaced by a permitted compatible one before scheduling. Their data-use permissions and commitments remain separate. The other two receive a scoped engineering question and a time for returning the answer; they do not receive an invitation that promises the unavailable integration. A trial for Sever's first department says nothing by itself about the second department's opportunity.
 
-The provider can reuse an anonymised demonstration, the explanation of its observation conditions, and preparation of the two customer-facing teams. Each customer retains its own sample, permission, agreed result, price, responsible participants and stopping condition. MKT.9 supplies the actual trial variant; MKT.11 joins it to the receiving analysts and support.
+The provider can reuse an anonymised demonstration, the explanation of its observation conditions, and preparation of the two customer-facing teams. Each customer retains its own sample, permission, agreed result, price, responsible participants and stopping condition. MKT.9 supplies the supported trial variant; MKT.11 joins it to the receiving analysts and support.
 
 The team compares complete alternatives for the same result. Forty additional person-hours are available over the two-week window after continuing service has been accounted for. The following numbers are illustrative planning inputs, not an empirical claim about account-based marketing.
 
@@ -122,7 +122,7 @@ The team compares complete alternatives for the same result. Forty additional pe
 
 Sharing saves six hours of preparation while adding two hours of coordination, a net saving of four. The individual alternative needs four more hours or a revised window. The shared alternative reaches the available ceiling without reserve. It can be chosen only after the relevant people confirm compatible timing, adequate capability, effective permissions and actual allocation. The hours comparison establishes neither profitability nor customer benefit; MA.8 and the trials answer their respective questions.
 
-Suppose an additional mandatory exception would require eight hours. The shared alternative now needs 48 hours. The team reduces scope by agreement, reschedules or obtains another qualified contribution before making the affected promise. Automatically generating cheaper emails does not remove the missing eight hours of actual work.
+Suppose an additional mandatory exception would require eight hours. The shared alternative now needs 48 hours. The team reduces scope by agreement, reschedules or obtains another qualified contribution before making the affected promise. Automatically generating cheaper emails does not remove the eight hours needed to handle the exception.
 
 Other changes reopen different parts. If Vector still wants the limited trial but requires different customer-local preparation, obtain the feasible preparation conditions and rebuild the complete programme comparison. If Vector instead refuses the service method or its required data use, reopen the opportunity and offer before deciding whether a trial remains possible. If Luch later obtains the missing integration contribution, it can return for selection and capacity qualification; availability alone does not put it into the current two trials. If one trial succeeds, the other opportunities retain their own evidence and continuation.
 
@@ -132,7 +132,7 @@ A wider programme maintains reliable information about named organisations and p
 
 #### MKT.14:5.3 - An educational community and an employer are different participants
 
-A learning community may help an employer explore a commercial offer for a particular work result. That programme concerns the employer's opportunity and agreed contributions. A learner's development and voluntary participation in the community retain their own purposes and conditions. Common educational material can be reused where appropriate, but participation does not imply purchasing authority or consent to an employer programme. HCD and Community Management supply their actual results; MKT.14 joins only the commercial work that has a justified place.
+A learning community may help an employer explore a commercial offer for a particular work result. That programme concerns the employer's opportunity and agreed contributions. A learner's development and voluntary participation in the community retain their own purposes and conditions. Common educational material can be reused where appropriate, but participation does not imply purchasing authority or consent to an employer programme. HCD guides the learner’s development and Community Management helps organize voluntary participation; MKT.14 joins only the commercial work that has a justified place.
 
 ### MKT.14:6 - Bias-Annotation
 
@@ -153,7 +153,7 @@ Prestigious names, easy contacts and visible engagement can displace less conspi
 | Anti-pattern | Correction |
 | --- | --- |
 | Treating one organisation as one buyer with one state. | Separate opportunities, participants and simultaneous conditions that change action. |
-| Calling a sector list a justified programme. | Establish the common useful contribution and actual application conditions. |
+| Calling a sector list a justified programme. | Establish the common useful contribution and conditions of use. |
 | Sharing a message while repeating or omitting all preparation. | Construct the reusable work, local adaptations and prepared receiving teams. |
 | Comparing communication costs while omitting service and exceptions. | Compare complete alternatives for the same result and period. |
 | Expanding automation before responses can be handled. | Obtain the information, action variants and capacity for the actual continuations. |
@@ -170,7 +170,7 @@ The programme has a distinct whole: selected organisations, related opportunitie
 
 For a bounded result within one organisation, **adapt** [Burgess's Scenario ABM](https://inflexiongroup.com/resources/what-is-scenario-abm/): relate the chosen outcome, preparation and available team effort. For shared work, **adapt** [Segment ABM](https://inflexiongroup.com/resources/how-is-segment-abm-used-today/): justify the group's common basis while retaining separate continuations. For broader repeated work, **adapt** [Programmatic ABM](https://inflexiongroup.com/resources/how-is-programmatic-abm-used-today/): prepare relevant organisation information, differentiated actions and their receiving work. These distinctions help choose a way of working; the reported engagement results alone do not establish causal benefit.
 
-STR.8, MA.8 and OCE.11 strengthen the comparison by supplying sustaining dependencies, temporal economics and change alongside continuing service. Their use prevents a choice based only on message volume or reuse of a document.
+STR.8, MA.8 and OCE.11 contribute the conditions for sustaining the programme, its costs and funding over time, and the demands of change alongside continuing service. Use their results to establish what the programme can support and identify any outstanding condition for funding or execution.
 
 ### MKT.14:12 - Relations
 

@@ -5,7 +5,7 @@
 
 ### HRM.2:1 - Problem frame
 
-**Use this when** recruitment, promotion, allocation or another personnel choice relies on a claim about a person's suitability for actual work. Begin with the decision and the contribution it needs, not an available test or candidate score. The first useful result is a warranted comparison and recommendation, or the exact uncertainty that prevents it. The object is the assessment and selection inference; an appointment remains a separate act.
+**Use this when** recruitment, promotion, allocation or another personnel choice relies on a claim about a person's suitability for actual work. Begin with the decision and the contribution it needs, not an available test or candidate score. The first useful result is a warranted comparison and recommendation, or the uncertainty that prevents that comparison or recommendation. The object is the assessment and selection inference; an appointment remains a separate act.
 
 Use a sufficient established procedure directly when its work, population, support conditions and decision remain applicable. A formative learning conversation need not become a selection exercise.
 
@@ -28,7 +28,7 @@ Evidence gathered for one purpose can acquire an unjustified second meaning. Cou
 
 Name what is being decided, who may decide, the candidate population, applicable eligibility conditions and the proposed terms. Separate an entry requirement from something learnable after appointment with available support. Recover the actual work through documents, observation and knowledgeable participants. Include consequential uncommon situations, coordination and recovery where they matter; frequency alone does not establish importance. Identify which variations in work, location, tools and support the role must cover.
 
-Translate this analysis into claims needed for the decision: for example, the ability to turn a client's ambiguous concern into a bounded advisory question using the provided agent, explain the resulting recommendation, and recognize when a required professional conclusion is unavailable. Distinguish this from the obsolete ability to type a report unaided. If adequate work analysis is missing, obtain it before selecting the instrument. OPM's job-analysis practice and qualified industrial/organizational assessment are useful suppliers; the reader must still specify the receiving decision.
+Translate this analysis into claims needed for the decision: for example, the ability to turn a client's ambiguous concern into a bounded advisory question using the provided agent, explain the resulting recommendation, and recognize when a required professional conclusion is unavailable. Distinguish this from the obsolete ability to type a report unaided. If adequate work analysis is missing, obtain it before selecting the instrument. OPM's job-analysis practice and qualified industrial/organizational assessment are useful suppliers; specify the personnel decision these findings will inform.
 
 For an internal talent or promotion opportunity, establish who can be considered, how nomination or application works, and which exclusions have an applicable basis. Exclusive, inclusive and blended arrangements make different participation promises. Consider whether a supported direct application or another access route is needed; do not treat a manager's nomination as evidence of capability. More places do not by themselves establish that people experience inclusion or that the selection is fair.
 
@@ -36,13 +36,13 @@ For recruitment, make the proposed role and terms sufficiently real to offer. Ch
 
 #### HRM.2:4.2 - Build the evidence argument before scoring candidates
 
-For each consequential claim, choose evidence that could support it and explain the inferential step. A representative work sample may demonstrate a defined operation; a structured interview can investigate particular prior behavior or reasoning; a qualified test can support a specified construct or predictive claim. None is universally best. Specify the conditions, relevant comparison and decision use before knowing who benefits from the rule.
+For each consequential claim, choose evidence that could support it and explain the inferential step. A representative work sample may demonstrate a defined operation; a structured interview can investigate particular prior behavior or reasoning; a qualified test can support a specified construct or predictive claim. Specify the conditions, relevant comparison and decision use before knowing who benefits from the rule.
 
 | Claim needed | Possible evidence | What must be established before use |
 | --- | --- | --- |
 | Performance of a representative advisory task | Work sample with permitted tools and an explained scoring basis | The task samples consequential work, scoring concerns that work, and the support corresponds to the job |
 | A contribution across a wider class of cases | Relevant history or a professionally supported assessment | The evidence can generalize to the proposed work, population and conditions |
-| Eligibility or a required qualification | The applicable verified fact | The rule actually requires it and the fact concerns this person and use |
+| Eligibility or a required qualification | The applicable verified fact | The rule requires it and the fact concerns this person and use |
 | Performance after an obtainable learning period | Appropriate evidence and a credible learning/provision arrangement | The recommendation distinguishes present capability from the conditional future contribution |
 
 Ask a qualified assessment supplier for the validity argument for this decision, population and conditions; the consistency of measurement; relevant fairness and bias findings; limitations; permissible administration and change conditions. A vendor's reference customer or general accuracy figure is insufficient when the inference changes. The supplier can perform technical validation; HR must obtain enough of its result to understand which use is warranted. If the result is unavailable, use an adequate alternative or leave the dependent comparison unresolved.
@@ -61,7 +61,7 @@ AI assessment needs an identified model/procedure and evidence relevant to its u
 
 Apply the supported procedure to the eligible population. Separate missing evidence from unfavorable evidence and record material uncertainty. A person denied a relevant opportunity should not silently receive the same interpretation as one who demonstrated failure. Seek a proportionate clarification or another valid opportunity when it can change the choice and is permitted.
 
-Distinguish minimum conditions from compensable preferences. A required professional permission cannot be compensated by a high interview score. Among candidates who meet binding conditions, use the explained comparison relevant to the work. Do not construct weights retrospectively to select a favored person. When candidates are not distinguishable on the evidence, use the applicable tie or further-evidence procedure and state the limit; artificial numerical precision supplies no missing information.
+Distinguish minimum conditions from compensable preferences. A required professional permission cannot be compensated by a high interview score. Among candidates who meet binding conditions, use the explained comparison relevant to the work. Do not construct weights retrospectively to select a favored person. When candidates are not distinguishable on the evidence, use the applicable tie or further-evidence procedure and state what the evidence leaves unresolved.
 
 Construct the recommendation with the proposed work and terms, evidence and uncertainty, applicable conditions, and any learning or support on which it depends. The authorized decision maker may accept it, request a defined missing contribution or make another supported choice within the actual rules. Communicate the decision and available correction or challenge route through HRM.4. Use ADM and the relevant organizational process to make an appointment or assignment effective; selection itself does not provide access, remuneration or authority.
 
@@ -73,7 +73,7 @@ Follow the receiving work and appropriate assessment evidence. A failure can con
 
 A reporting service needs two advisers. Its old test ranks unaided spreadsheet speed. Work analysis now shows that agents prepare the tables; advisers must frame client questions, identify unsupported conclusions and negotiate an actionable response. The owner constructs two representative cases with the provided agent and criteria covering those operations. A qualified assessor examines the work coverage, scoring and limits. One case contains missing client evidence; a warranted refusal to recommend is a successful response, not an incomplete answer.
 
-Candidate A produces a polished recommendation but misses that absence. Candidate B identifies it, obtains the permitted clarification and supplies a usable bounded answer. Under the established critical condition, fluency does not compensate for the unsupported recommendation. The comparison favors B for this role, subject to the remaining eligibility and employment conditions. It does not establish B's general intelligence or unaided spreadsheet mastery.
+Candidate A produces a polished recommendation but misses that absence. Candidate B identifies it, obtains the permitted clarification and supplies a usable bounded answer. Under the established critical condition, fluency does not compensate for the unsupported recommendation. The comparison favors B for this role, subject to the remaining eligibility and employment conditions. The assessment concerns assisted advisory work. B’s unaided spreadsheet performance would need other evidence.
 
 Now the proposed service must continue during agent outages. The owner may obtain fallback provision or require an additional human operation. Only after that choice should the assessment change. A blanket ban on tools would have tested a different job; a blanket promise that tools remove all human requirements would have missed the changed dependency.
 
@@ -98,15 +98,15 @@ Recognizing a plausible work sample does not assure its validity. That conclusio
 
 ### HRM.2:9 - Consequences
 
-The comparison becomes usable for its defined decision, and unsuitable instruments can be rejected before affecting candidates. Some decisions remain uncertain or require professional validation. A supported rejection or no-selection result can be preferable to a confident appointment based on irrelevant evidence. Administrative and participation work still remain after selection.
+The comparison becomes usable for its defined decision, and unsuitable instruments can be rejected before affecting candidates. Some decisions remain uncertain or require professional validation. A supported rejection or no-selection result can be preferable to a confident appointment based on irrelevant evidence. Administrative and participation work remain after selection.
 
 ### HRM.2:10 - Architectural Rationale
 
-The Method owns the personnel inference joining work evidence to a consequential choice. It consumes job analysis, learning and operating results without equating them. The distinction allows one observation to retain its valid use while a proposed promotion or appointment remains unsupported.
+The Method helps assess what evidence about a person’s work supports the proposed personnel choice. It consumes job analysis, learning and operating results without equating them. The distinction allows one observation to retain its valid use while a proposed promotion or appointment remains unsupported.
 
 ### HRM.2:11 - SoTA-Echoing
 
-SIOP's 2018 Principles and OPM's job-analysis/work-sample practice ground work relevance and appropriate use. SIOP's January 2023 AI-assessment guidance adds attention to changed scoring, data sources and the applicability of validation; it concerns AI used to assess people and expressly does not cover all employee–AI collaboration. This Method's treatment of actual assisted work is a construction from work relevance and current obtaining alternatives, not a claim that the 2023 document evaluates 2026 agents. A sufficient qualified assessment service is a valid alternative to local procedure development. Its narrower technical result still needs the actual personnel decision and effective act.
+SIOP's 2018 Principles and OPM's job-analysis/work-sample practice ground work relevance and appropriate use. SIOP's January 2023 AI-assessment guidance adds attention to changed scoring, data sources and the applicability of validation; it concerns AI used to assess people and expressly does not cover all employee–AI collaboration. This Method extends work-relevance reasoning to assisted work and the alternatives available for obtaining it. A sufficient qualified assessment service is a valid alternative to local procedure development. Its narrower technical result still needs the actual personnel decision and effective act.
 
 ### HRM.2:12 - Relations
 

@@ -6,17 +6,17 @@
 
 ### OPS.15.1:1 - Problem frame
 
-**Use this when** a decision depends on waiting, unfinished work, output or resource use, but the available totals do not make clear what was counted. Two teams report different “cycle times”. A batch completion appears against several orders and inflates machine use. A short observation window excludes unfinished cases and makes service look faster.
+**Use this when** an operating claim or decision depends on waiting, unfinished work, output or resource use, but the available totals do not make clear what was counted. Two teams report different “cycle times”. A batch completion appears against several orders and inflates machine use. A short observation window excludes unfinished cases and makes service look faster.
 
-Choose the operating subject and boundary events, construct the relevant intervals or counts, and aggregate them under a common clock and population rule. The first useful result can be a corrected comparison or a bound showing that an unknown event cannot change the decision.
+Choose the operating subject and boundary events, construct the relevant intervals or counts, and aggregate them under a common clock and population rule. The first useful result can be a corrected comparison or a supported value or bound, including one that settles a decision despite an unknown event.
 
 **Start with one case.** Identify the events that would start and end the proposed measurement, then locate what the records actually establish about them. A database timestamp can mark entry of a record rather than occurrence of the work event.
 
-**Practical gain.** The practitioner can tell a change in service from a change in counting, find which records are needed for a particular decision, and use partial observations without inventing a complete history.
+**Practical gain.** The practitioner can tell a change in service from a change in counting, find which records are needed for the requested result, and use partial observations without inventing a complete history.
 
 The reader needs to identify the operation's subjects and events and understand elementary intervals, rates and averages. Statistical inference requires additional methods when the intended claim goes beyond the observed cases.
 
-Use an existing quantity directly when its definition and observations already fit the receiving question. This pattern does not require a new log format or complete event capture before an operating decision.
+Use an existing quantity directly when its definition and observations already fit the receiving question.
 
 ### OPS.15.1:2 - Problem
 
@@ -38,15 +38,15 @@ Aggregation can hide these differences. A mean over completed cases omits those 
 
 Define the quantity from the operating question, reconstruct the events and their subjects, derive the intervals or count changes, and then aggregate. Keep incomplete observation visible in the result. Return the number with enough meaning to use or recompute it.
 
-#### OPS.15.1:4.1 - Choose what the decision needs to measure
+#### OPS.15.1:4.1 - Choose the quantity that answers the operating question
 
-Name the subject and the consequence being compared. A customer's time to an accepted result, a machine's occupied time and the number of service visits answer different questions even when they concern the same order.
+Name the subject and the quantity required. When comparing alternatives, state which consequence matters. A customer's time to an accepted result, a machine's occupied time and the number of service visits answer different questions even when they concern the same order.
 
 Define membership of the counted population. State when a subject enters and leaves that population. For unfinished orders, choose the arrival and completion events for the service being considered. For a ready queue, include the conditions that make the next operation possible.
 
 Separate unique cases from visits. A return for correction may create another visit to a station while the same customer case remains unfinished. If the case is closed and later reopened, decide whether the receiving question concerns separate episodes or one extended service. Use its operating meaning; do not decide from the number of log rows.
 
-OPS.15 supplies the decision-specific account, and OPS.3 helps identify its subjects. A short statement of the chosen quantity is enough when it removes the ambiguity.
+OPS.15 supplies the account needed for the operating question, and OPS.3 helps identify its subjects. A short statement of the chosen quantity is enough when it removes the ambiguity.
 
 #### OPS.15.1:4.2 - Relate the records to the operating events
 
@@ -54,7 +54,7 @@ For the events used in the calculation, recover the subject, event meaning and o
 
 Recover the relationships needed by the question. A dispatch can concern several order lines; one machine cycle can process several parts; one invoice can cover charges for several deliveries. Keep the common event identifiable while following each related subject. A row per event-subject relation is a useful representation, but its row count is not automatically an event count.
 
-Check what the recorded label establishes. “Completed” may mean that a worker reported completion, that inspection accepted the result or that the customer received it. If the receiving comparison needs a later event, either obtain it or report the result under the available boundary.
+Check what the recorded label establishes. “Completed” may mean that a worker reported completion, that inspection accepted the result or that the customer received it. If the receiving comparison needs a later event, use evidence for that event when it is available, seek it if needed, or report the result under the available boundary.
 
 Use MMP.7 when selection, censoring or the recording procedure affects an inference. Missing records do not by themselves show that the corresponding work did not occur.
 
@@ -94,21 +94,21 @@ This finite observation identity does not estimate an unseen tail, establish a l
 
 #### OPS.15.1:4.5 - Aggregate only compatible observations
 
-Keep the population, event pair, clock and weighting rule consistent within the reported aggregate. Combine totals before dividing when group sizes differ. An unweighted mean of departmental means gives each department equal weight, not each case equal weight.
+Keep the population, event pair, clock and weighting rule consistent within the reported aggregate. For a case-weighted mean, combine the totals and case counts before dividing when group sizes differ. An unweighted mean of departmental means gives each department equal weight, not each case equal weight.
 
-Choose the weighting from the question. A case-weighted mean describes a typical counted case. Resource-demand weighting describes a different burden. Retain classes when the proposed change affects them differently or an aggregate conceals a service commitment.
+Choose the weighting from the question. A case-weighted mean gives each counted case equal weight. Resource-demand weighting describes a different burden. Retain classes when the proposed change affects them differently or an aggregate conceals a service commitment.
 
 To compare policies, use the same recipient boundary unless changing that boundary is the point of the decision. If internal admission moves later, report upstream waiting together with internal residence before concluding that customers receive results sooner.
 
-For uncertain or incomplete observations, derive the consequence still supported. A residence known to be between four and ten hours cannot decide an eight-hour criterion. It can already satisfy an upper limit of twelve hours under the same assumptions. Choose further observation through C.11.DUA; a complete history is not a prerequisite for every comparison.
+For uncertain or incomplete observations, derive the consequence they support. Residence between four and ten hours leaves compliance with an eight-hour limit open and establishes compliance with a twelve-hour limit. Use C.11.DUA when deciding whether the remaining question warrants another observation.
 
-#### OPS.15.1:4.6 - Return the quantity to the operating decision
+#### OPS.15.1:4.6 - Report the quantity for its intended use
 
 Explain the result in terms the recipient uses: for example, “the machine was occupied for forty of the sixty available minutes” or “the shorter internal time excludes four hours of waiting before admission”.
 
 Retain the definition and observations needed to reproduce a consequential quantity, using the existing account when it suffices. Distinguish a direct calculation from a model-based estimate or forecast. MMP.13 supplies inference when the result must generalize beyond the observed population.
 
-When a check fails, localize the repair: a subject was counted twice, a boundary event was misidentified, a clock was shifted, an unfinished interval was excluded, or the aggregation rule answered another question. Correct that construction and the decisions that used it. A changed route, acceptance event or recording procedure reopens the affected quantity.
+When a check fails, localize the repair: a subject was counted twice, a boundary event was misidentified, a clock was shifted, an unfinished interval was excluded, or the aggregation rule answered another question. Correct the construction and reassess the conclusions or decisions that relied on it. A changed route, acceptance event or recording procedure reopens the affected quantity.
 
 ### OPS.15.1:5 - Archetypal Grounding
 
@@ -124,7 +124,7 @@ Observe an operation from hour zero to hour eight. Case A arrived at minus three
 
 The population-time area is seven case-hours, so mean population is 7/8. Counting departures gives two in eight hours. Their full residence mean is four hours; multiplying 2/8 by four gives one, not 7/8.
 
-There is no contradiction. The departure cohort includes three hours of A before the observation window and excludes C's two observed hours. Computing the clipped intervals answers the window question. C's eventual completion is unnecessary for that result.
+The departure cohort includes three hours of A before the observation window and excludes C's two observed hours. Computing the clipped intervals answers the window question. C's eventual completion is unnecessary for that result.
 
 Now the question changes to the mean full residence of all three cases. C's endpoint matters. If no later information is available, the sum is at least ten hours and the mean at least 10/3, with no supported finite upper bound. The earlier mean population does not fill that missing endpoint.
 
@@ -142,13 +142,13 @@ If an operator attends only loading and unloading, machine occupation does not e
 
 One uninterrupted processing episode starts at hour ten. A reliable observation shows it still in progress at fourteen and a later observation shows completion by twenty. The elapsed processing duration is bounded by four and ten hours; its precise endpoint is unknown.
 
-A question about completion by eighteen remains unresolved. A question about completion by twenty-two is already settled by the observation at twenty. The second decision needs no search for the precise endpoint. If the claim instead concerns uninterrupted duration and interruption was possible but unobserved, that premise must be revisited before using the duration bound.
+Completion by eighteen remains unresolved. The observation at twenty establishes completion by twenty-two without a more precise endpoint. A claim about uninterrupted duration also requires grounds for continuity if an interruption could have gone unobserved.
 
-These cases are constructed demonstrations of the measurement operations.
+
 
 ### OPS.15.1:6 - Bias-Annotation
 
-Event logs privilege what the information system records. Unrecorded work, informal coordination and off-system waiting can disappear from an apparently complete account. Compare the chosen event meaning with the work when that omission could alter the decision.
+Event logs privilege what the information system records. Unrecorded work, informal coordination and off-system waiting can disappear from an apparently complete account. Compare the chosen event meaning with the work when an omission could affect the requested claim or decision.
 
 Case counting also privileges discrete populations. For continuous material, the corresponding subject may be an amount with changing inflow and outflow. Retain its unit and balance; a row count cannot replace the measured amount.
 
@@ -160,7 +160,7 @@ Case counting also privileges discrete populations. For continuous material, the
 - Interval combinations match the question, including overlap and calendars.
 - A cut observation window retains initially present and unfinished subjects.
 - Aggregation uses compatible definitions and an appropriate weighting rule.
-- Missing observations produce supported bounds or an unresolved contribution rather than invented completion.
+- Missing observations produce supported bounds or an unresolved contribution at the stated boundary.
 - A claimed service improvement retains the recipient's waiting origin.
 
 ### OPS.15.1:8 - Common Anti-Patterns and How to Avoid Them
@@ -193,13 +193,13 @@ When a decision needs comparable quantities from shared events or a cut observat
 
 Summing a shared processing interval once per part overstates machine time. In :5.2 this would turn thirty machine-minutes into ninety. Keeping the common cycle identifiable while following its three parts preserves both the machine occupation and part residence. OCEL supplies qualified event-to-object and object-to-object relations and changing attributes. Its instantaneous records still require the interval interpretation in :4.2–4.3; the standard does not establish how much work occurred or whether a policy improved service.
 
-The added effort is to recover a shared relationship or an interval boundary when the receiving quantity depends on it. A simple case table remains sufficient when events belong to one case and the table retains the boundaries needed for the calculation. A few shared-event references can handle a small batch; full OCEL serialization is unnecessary. Sections :4.2–4.5 retain only the relationships, window contributions and weighting needed by the question.
+The added effort is to recover a shared relationship or an interval boundary when the receiving quantity depends on it. A simple case table remains sufficient when events belong to one case and the table retains the boundaries needed for the calculation. A few shared-event references can handle a small batch. Sections :4.2–4.5 retain only the relationships, window contributions and weighting needed by the question.
 
-[Hopp and Spearman, Factory Physics](https://www.waveland.com/browse.php?t=587), supplies the operating uses of flow, cycle-time and capacity quantities. This pattern reconstructs their populations and boundaries before applying those relations; a compatible average alone does not establish a cause. Reopen the construction when an event changes meaning, a recording change affects an interval or shared occurrence, the decision needs another population, or a simpler construction preserves the same required distinctions. The affected event relation or aggregate is the place to revise.
+[Hopp and Spearman, Factory Physics](https://www.waveland.com/browse.php?t=587), supplies the operating uses of flow, cycle-time and capacity quantities. This pattern reconstructs their populations and boundaries before applying those relations; a compatible average alone does not establish a cause. Reopen the construction when an event changes meaning, a recording change affects an interval or shared occurrence, the decision needs another population, or a simpler construction preserves the same required distinctions.
 
 ### OPS.15.1:12 - Relations
 
-OPS.15 chooses the decision-specific account; this method constructs its operating quantities. OPS.3 supplies subject distinctions, OPS.8 consumes readiness and waiting quantities, and OPS.10 uses them in capacity and service models.
+Use OPS.15 to choose the account the operating question needs and this method to derive its quantities. OPS.3 supplies subject distinctions, OPS.8 consumes readiness and waiting quantities, and OPS.10 uses them in capacity and service models.
 
 OPS.11.1 reconciles operating models whose inputs and outputs use these quantities. C.16 supplies common measurement, and F.0.1/F.9 recover and relate local meanings when needed.
 

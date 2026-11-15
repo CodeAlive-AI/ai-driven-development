@@ -1,9 +1,9 @@
 ## SOM.Reference:2 - How the methods work together
 
-Start from the difficulty in the movement you want to perform. SOM.1 connects three accounts: what is experienced, what can be deliberately changed and what happens in the movement. It selects the question for the other methods and receives their results.
+Start with the question about the movement. Use SOM.1 to relate what the performer experiences, what they can deliberately change and what happens in the action. This comparison can answer the question or identify a contribution needed from another Method. Bring that result back to the movement and check what it establishes about the original question.
 
-When the performer cannot distinguish what a required bodily change feels like, SOM.2 constructs a contrast. SOM.3 works on increasing, reducing or releasing a change that is distinguishable but not sufficiently controlled. SOM.4 makes several available changes usable together, including learning to recall their development instead of reconstructing them serially. SOM.5 revises that coordination where support, contact or load changes.
+Use SOM.2 to develop a contrast when the performer cannot distinguish a needed bodily change. Use SOM.3 if a distinguishable change is difficult to increase, reduce or release. SOM.4 addresses coordinating available changes and recalling their development in motion. Use SOM.5 to examine or adapt that coordination when support, contact or load changes.
 
-This is a repertoire with returns, not a five-stage course. An experienced performer can begin with a transition failure and use SOM.5. A result may instead call for a different tool, a better observation or domain instruction, with no new bodily learning. Distinguishing those returns avoids spending practice effort on the wrong contribution.
+An experienced performer whose difficulty occurs during a transition can enter at SOM.5. A result may instead identify a different tool, an observation or domain instruction that supplies the needed contribution. Use each Method where its contribution is missing.
 
 The methods also involve different uses of attention. A detailed observation can be distributed across repeated attempts when doing it inside one movement disrupts the action. After learning a bodily difference, test whether attending to it still helps during performance. Keep a suitable cue about the action's effect when that cue gives the needed coordination more simply.

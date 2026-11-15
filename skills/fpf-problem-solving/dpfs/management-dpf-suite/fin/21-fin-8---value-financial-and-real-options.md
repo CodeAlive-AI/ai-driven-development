@@ -10,7 +10,7 @@ The corporation can wait, expand, switch or abandon after new information arrive
 
 ### FIN.8:1 - Problem frame
 
-The valuation requires familiarity with present value and payoffs that depend on later events or choices. Using the replication model also requires understanding its trading and borrowing assumptions, stated in the procedure below.
+The valuation requires familiarity with present value and payoffs that depend on later events or choices. Using the replication model also requires understanding the model’s trading and borrowing assumptions in section 4.3.
 
 
 The object is a contingent choice available to a named party within an exercise window and constraints. Financial options derive their rights from an instrument; real flexibility also requires capacity, access and the ability to act. This method assesses their value or a useful bound.
@@ -25,16 +25,16 @@ Represent contingent decisions without claiming that every business risk is trad
 
 ### FIN.8:4 - Solution
 
-Use an adequate supplied option value with its rights, timing and valuation grounds intact. When constructing or adapting it, begin with the decisions the holder can actually make. The exercise rule, the value of the strategy and the price worth paying to obtain it are connected but different results.
+Use an adequate supplied option value with its rights, timing and valuation grounds intact. When constructing or adapting it, begin with the decisions available to the holder. The exercise rule, the value of the strategy and the price worth paying to obtain it are connected but different results.
 
 
 
 #### FIN.8:4.1 - Establish the choice and what makes it available
 
 
-Name the holder, underlying asset or activity, exercise actions, window and expiry. Recover the actual financial right through [FDM][FDM] when disputed. For operational flexibility, identify the capacity, access, implementation time and people or counterparties required to act. A plan to switch suppliers is not an available switch if qualification takes longer than the decision window. A plan to abandon is not a costless right to disregard existing obligations.
+Name the holder, underlying asset or activity, exercise actions, window and expiry. Recover the actual financial right through [FDM][FDM] when disputed. For operational flexibility, identify who or what can carry out each action, the capacity, access and time it needs, and any action or consent required from a counterparty. A plan to switch suppliers is not an available switch if qualification takes longer than the decision window. A plan to abandon is not a costless right to disregard existing obligations.
 
-Describe what the action changes in cash and future choices. Waiting postpones commitment and can preserve a later investment decision. Expansion adds scale; contraction reduces it. Switching changes an operating mode or input. Abandonment ends an existing activity and creates its actual exit consequences. Several of these may coexist, but they can exclude or enable one another. Selling equipment may surrender the ability to restart; installing flexible equipment may permit repeated switching.
+Describe what the action changes in cash and future choices. Waiting postpones commitment and can preserve a later investment decision. Expansion adds scale; contraction reduces it. Switching changes an operating mode or input. Abandonment ends an existing activity and brings the cash flows and obligations associated with exit into the comparison. Several of these may coexist, but they can exclude or enable one another. Selling equipment may surrender the ability to restart; installing flexible equipment may permit repeated switching.
 
 Distinguish holding a choice from buying or creating it. An existing right can have value even if no new acquisition payment is required. A reservation fee, pilot, license, extra design cost or capacity commitment may create a new choice; retain its full incremental cost and the alternatives for obtaining access. Count costs of keeping the right alive, as well as later exercise costs. A nonrefundable fee belongs in today's acquisition decision even when the optimal later action is not to exercise.
 
@@ -43,7 +43,7 @@ Distinguish holding a choice from buying or creating it. An existing right can h
 #### FIN.8:4.2 - Identify information and build the contingent action
 
 
-Place observations and decisions in their actual order. At each decision use only information then obtainable; future outcomes must remain uncertain where they are not yet revealed. If a test produces an imperfect signal, condition the valuation on that signal and retain the remaining uncertainty. A scenario model that chooses the best action separately in every final state can falsely grant perfect foresight to an earlier decision.
+Place observations and decisions in the order in which observations become available and decisions can be made. At each decision use only information then obtainable; future outcomes must remain uncertain where they are not yet revealed. If a test produces an imperfect signal, condition the valuation on that signal and retain the remaining uncertainty. A scenario model that chooses the best action separately in every final state can falsely grant perfect foresight to an earlier decision.
 
 Use operating forecasts and FIN.6's incremental cash construction to specify the consequence of each available action. FIN.7 can supply an asset value at the decision date; keep its uncertainty and claim definition. The value of an expansion must exclude the exercise outlay if that outlay is subtracted separately. A payoff belongs to the holder and to one date and currency, with its tax and remaining liabilities treated consistently.
 
@@ -58,11 +58,11 @@ For several stages, work backward. At the last decision, compare the values of t
 
 For traded contingent claims, an appropriate no-arbitrage model can infer value from a position reproducing the claim's payments. In a one-period binomial model without an intermediate underlying payout, let current underlying value be S, up/down factors u and d, and accessible risk-free borrowing and lending growth R lie between d and u. The risk-neutral up weight is (R−d)/(u−d); discount the weighted state payoffs by R.
 
-The reason is replication: choose an underlying holding and borrowing or lending so that both end-state payments match the option. Since the two available positions deliver the same payments under the model, different prices would allow an arbitrage. The worked call below recovers the actual holding and borrowing. The weight is not a forecast frequency, and substituting an analyst's optimistic probability into that price calculation changes the model.
+The reason is replication: choose an underlying holding and borrowing or lending so that both end-state payments match the option. Since the two available positions deliver the same payments under the model, different prices would allow an arbitrage. The worked call below calculates the holding and borrowing that reproduce the two payoffs. The weight is not a forecast frequency, and substituting an analyst's optimistic probability into that price calculation changes the model.
 
 At an allowed early-exercise date, compare immediate exercise with the value of retaining the claim; at a date without that right, do not insert the exercise branch. For multiple periods apply the same local valuation backward under the model's trading assumptions. Intermediate distributions, exercise restrictions, transaction frictions, borrowing limits, counterparty risk or path-dependent settlement can change both the payoff and replication. Obtain a model that treats those features when they matter instead of importing the simple price unchanged.
 
-Match estimated inputs to the modeled quantity and period. Volatility of an underlying value, volatility of accounting profit and beta are different measures. An uncertainty estimate for the whole project including flexibility cannot automatically serve as the uncertainty of a fixed underlying activity to which that flexibility is then added.
+Match estimated inputs to the modeled quantity and period. Volatility of an underlying value, volatility of accounting profit and beta are different measures. An uncertainty estimate for the whole project including flexibility cannot automatically serve as the uncertainty of a fixed underlying activity to which that flexibility is then added. Finer time steps can improve a numerical approximation, but they cannot correct the choice of the underlying asset or its volatility, or supply trades the holder cannot make.
 
 
 
@@ -75,7 +75,7 @@ With supported real-world probabilities, value the contingent strategy using a j
 
 If the basis supports only state-dependent exercise choices or conditional values, return that useful result. Show what remains to establish today's amount worth paying. Supported bounds can sometimes settle the purchase decision: if even an upper bound on incremental flexibility is below its unavoidable cost, that cost cannot be justified on this basis. A claimed bound itself needs grounds; an optimistic scenario is not automatically an upper bound.
 
-Compare the strategy with the best available fixed commitment and with declining where that is possible. Deduct obtaining and preserving the choice once. The value gained from flexibility is the difference between otherwise comparable strategies, not the entire favorable-state project value. A positive gross option value can coexist with an unattractive purchase price. Include actual exercise funding through FIN.2 and obtainable terms through FIN.10–FIN.12; the right can be valuable while the holder cannot presently finance its use.
+Compare the strategy with the best available fixed commitment and with declining where that is possible. Deduct the costs of obtaining and preserving the choice once. The value gained from flexibility is the difference between otherwise comparable strategies, not the entire favorable-state project value. A positive gross option value can coexist with an unattractive purchase price. Include actual exercise funding through FIN.2 and obtainable terms through FIN.10–FIN.12; the right can be valuable while the holder cannot presently finance its use.
 
 
 
@@ -108,9 +108,9 @@ The exercise threshold is a result of that comparison. It can differ from zero N
 #### FIN.8:4.7 - Distinguish non-entry, abandonment and switching
 
 
-Declining a new investment can have zero future incremental cash in a case with no remaining obligation. Abandoning an existing activity instead creates an exit account. FIN.6 supplies the remaining cash under continuation and the dated disposal, working-capital runoff and closure effects; FIN.7 can supply realizable asset values. Include tax, cancellation, cleanup, employee and customer obligations according to the actual applicable terms. The original sunk investment does not need to be recovered before exit can be preferable.
+Declining a new investment can have zero future incremental cash in a case with no remaining obligation. Abandoning an existing activity instead creates an exit account. FIN.6 supplies the remaining cash under continuation and the dated disposal, working-capital runoff and closure effects; FIN.7 can supply realizable asset values. Include tax, cancellation, cleanup, employee and customer obligations according to the applicable terms. The original sunk investment does not need to be recovered before exit can be preferable.
 
-At an exit decision date, let C be the supported value of feasible continuation and A the value of feasible abandonment, both for the same claim and remaining consequences. Choose the higher available value under the stated financial criterion. Relative to mandatory continuation, the gross value of having this exit choice at that node is max(A−C, 0). A itself can be negative: paying 5 to exit can be preferable to a remaining loss valued at 12. It is false to replace every abandonment branch with zero or with the asset's unadjusted book value.
+At an exit decision date, let C be the supported value of feasible continuation and A the value of feasible abandonment, both for the same claim and remaining consequences. Choose the higher available value under the stated financial criterion. Relative to mandatory continuation, the gross value of having this exit choice at that node is max(A−C, 0). A itself can be negative: paying 5 to exit can be preferable to a remaining loss valued at 12. Use the dated net proceeds or cost of exit for that branch.
 
 Past losses do not determine that comparison. Nor does stopping production automatically cancel finance or contract obligations. Retain obligations that survive exit in the relevant claim account, and use FIN.22 where the question is a wider restructuring or claimant recovery route. A contractual sale price may give an exit amount more support than a speculative salvage forecast; absent such terms, exit proceeds and timing can vary with the same adverse conditions that reduce operating value.
 
@@ -133,7 +133,7 @@ The practical conclusion can be to pay for flexibility, commit now, choose a che
 
 A constructed European call has exercise price 100. Its tradable underlying is worth 100 now and can be worth 120 or 80 in one period, with no interim payout. Risk-free growth is 1.05; the stated idealized model permits replication without transaction frictions. Payoffs are 20 and zero. The risk-neutral up weight is (1.05−0.8)/(1.2−0.8) = 0.625, so option value is 0.625×20/1.05 = 11.90. The weight is a pricing device under these assumptions, not a forecast that the up state occurs with probability 62.5%. To see the replication, buy 0.5 units of the underlying and borrow 40/1.05 = 38.10. The initial outlay is 50 − 38.10 = 11.90; at expiry the position pays 60 − 40 = 20 or 40 − 40 = 0. If those trades or terms are unavailable, this particular replication no longer establishes a price.
 
-For a different, nontraded expansion, suppose the decision date has two stated scenarios: an expansion costing 60 then produces value 90 in the favorable case and 40 in the adverse case. If the corporation may choose at that date, net exercise values are 30 and zero, instead of 30 and −20 under an unavoidable commitment. That shows the consequential branch. A price today additionally needs the cost of preserving the choice and justified timing and risk grounds; the two scenario numbers alone do not establish it.
+For a different, nontraded expansion, suppose the decision date has two stated scenarios: an expansion costing 60 then produces value 90 in the favorable case and 40 in the adverse case. Exercising would net 30 in the favorable case and −20 in the adverse case. If the corporation can choose at that date, it declines in the adverse case and receives zero. That shows the consequential branch. A price today additionally needs the cost of preserving the choice and justified timing and risk grounds; the two scenario numbers alone do not establish it.
 
 To complete a present decision, now stipulate a one-year waiting period, a nonrefundable fee of 8 paid today, and information that reveals which of those two values applies before exercise. The values and costs are after tax. Suppose the favorable probability is 0.5 and the qualified valuation basis assigns no risk premium to either strategy's incremental payoffs before that decision: the uncertainty has no priced systematic component, and no additional nonmarket risk charge is required for this use. The applicable one-year risk-free return is 5%. These are case assumptions; an ordinary nontraded project must establish its own risk basis.
 
@@ -178,13 +178,13 @@ The result can justify paying to preserve flexibility, selecting a fixed commitm
 
 ### FIN.8:10 - Architectural Rationale
 
-Flexibility changes which cash flows the holder chooses under information available later. Its value therefore depends on both uncertainty and the ability to change action. A wider forecast distribution without an available response is merely more uncertainty; a response chosen with information that arrives too late is an unattainable strategy. Backward valuation keeps the action and information order intact.
+Flexibility changes which cash flows the holder chooses under information available later. Its value therefore depends on both uncertainty and the ability to change action. A wider forecast distribution without an available response adds uncertainty; a response chosen with information that arrives too late is an unattainable strategy. Backward valuation keeps the action and information order intact.
 
 An initial investment can create access, information, operating capacity or several of these. Only its improvement over attainable alternatives belongs to its incremental value. This connects option analysis with FIN.6's baseline and FIN.9's whole-route comparison. It explains why a superficially unprofitable first stage can sometimes be worthwhile, while a generic promise of future opportunity cannot justify it.
 
 Abandonment and switching expose the same principle from the other direction: the valuable action may preserve less activity or accept a smaller remaining loss. The relevant comparison is between future consequences still affected by the decision. Keeping sunk cost, exit obligations and preserved choices distinct prevents both throwing more money after a past loss and pretending that stopping is free.
 
-Replication supplies a market price under a supported trading model. Nontraded strategy analysis must establish its additional risk grounds or retain a conditional result. These are different inference routes to a usable financial comparison, not different labels for the same probability calculation.
+Replication supplies a market price under a supported trading model. Nontraded strategy analysis must establish its additional risk grounds or retain a conditional result. Replication uses pricing weights. An analysis based on real-world probabilities also needs a model for the risk of the contingent cash flows.
 
 ### FIN.8:11 - SoTA-Echoing
 

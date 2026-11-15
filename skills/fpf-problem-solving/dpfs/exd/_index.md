@@ -2,25 +2,25 @@
 
 **DocID:** `EXD` within **FPF Library**.
 
-Help a recipient recover and use a warranted connection by choosing the question, account, expression and support that the situation needs.
+Develop or use a warranted explanation of the connection a recipient needs. Choose the question, account, expression and any assistance the intended use requires.
 
 Anatoly Levenchuk, with AI-assisted development and review.
 
-Release date: 23 October 2026.
+Edition dated 23 October 2026.
 
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for original framework content; third-party material retains its own terms.
 
 
 # Table of Contents
 
-Use a public unit for orientation or source access. Search the complete pattern index by the working difficulty or useful result. EXD numbers are stable addresses; they prescribe no order of explaining Work.
+Use the public units for orientation and source access. The pattern index below lists six methods by the question each helps answer. The EXD numbers are stable addresses for the methods. Enter where the task needs an explanation, example, expression, exchange or comparison.
 
 ## Public units
 
 | Unit | Reader use |
 | :--- | :--- |
 | [Readme](_index.md#readme) | Follow an explanation through a changed question, a learner's retry and a comparison that separates content repair from a change of form. |
-| [Explanation Design Principles Framework Architectural Reference](_index.md#explanation-design-principles-framework-architectural-reference) | Connect warranted accounts, reader-relative structural recovery and the language's worked feedback relations. |
+| [Explanation Design Principles Framework Architectural Reference](_index.md#explanation-design-principles-framework-architectural-reference) | Find the grounds for an explanation, identify what its recipient can reconstruct and, when a reply is available, use it to decide what the exchange needs. |
 | [EXD.Reference:1](01-exd-reference-1---the-practice-and-the-problem-it-solves.md) | The practice and the problem it solves |
 | [EXD.Reference:2](02-exd-reference-2---the-distinctions-that-change-the-work.md) | The distinctions that change the work |
 | [EXD.Reference:3](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md) | Obtain and Carry the Subject Explanation |
@@ -37,22 +37,22 @@ Use a public unit for orientation or source access. Search the complete pattern 
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | [EXD.1 - Establish and Revise What a Recipient Needs Explained](09-exd-1---establish-and-revise-what-a-recipient-needs-explaine.md) |  Stable  | *Keywords:* question, purpose, contrast, changed condition. *Queries:* "Which question needs an explanation?" "Did the question change, or is the inference wrong?" Establish or revise the useful question and return a missing premise or choice. | FPF A.2.9; EXD.4 |
-| 2 | [EXD.2 - Build and Bound an Explanatory Example](10-exd-2---build-and-bound-an-explanatory-example.md) |  Stable  | *Keywords:* worked example, correspondence, analogy, counterexample. *Queries:* "How does this instance show the rule?" "Where does the correspondence stop?" Construct a discriminating instance and its consequential boundary. | EXD.1; HCD.6 |
-| 3 | [EXD.3 - Coordinate the Expression of an Explanation](11-exd-3---coordinate-the-expression-of-an-explanation.md) |  Stable  | *Keywords:* prose, table, diagram, demonstration, access, cognitive load. *Queries:* "What should each form contribute?" "Is the repair missing content, a clearer expression or help?" Use one sufficient form or coordinate complementary forms for the receiving reconstruction. | EXD.1; FPF C.37, C.2.8 |
-| 4 | [EXD.4 - Co-Construct and Repair an Explanation in Dialogue](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) |  Stable  | *Keywords:* dialogue, feedback, changed question, diagnosis, close. *Queries:* "What does this contribution change?" "Should I clarify, repair, return a premise or close?" Adapt the next explanatory move to the actual contribution. | EXD.1; FPF A.2.9 |
-| 5 | [EXD.5 - Guide a Recipient's Own Explanation](13-exd-5---guide-a-recipient-s-own-explanation.md) |  Stable  | *Keywords:* learner explanation, self-explanation, error, feedback, assistance, retry. *Queries:* "Which relation did the learner use?" "What correction and retry address that relation?" Obtain and interpret a recipient product with its actual help. | EXD.1, EXD.2; HCD.9, HCD.10 |
-| 6 | [EXD.6 - Compare Explanations for the Recipient's Use and Decide Whether a Repair Is Worthwhile](14-exd-6---compare-explanations-for-the-recipient-s-use-and-dec.md) |  Stable  | *Keywords:* structural recovery, reader, effort, incumbent, marginal improvement. *Queries:* "What can this recipient reconstruct at these conditions?" "Which smallest repair is worth its burden?" Compare the actual contribution or retain a sufficient explanation. | EXD.1; FPF C.2.8, C.11.CRC, C.11; C.37.CF, HCD.19 |
+| 1 | [EXD.1 - Establish and Revise What a Recipient Needs Explained](09-exd-1---establish-and-revise-what-a-recipient-needs-explaine.md) |  Stable  | question, purpose, contrast, changed condition. Which question needs explaining? Did the question change, or was the inference wrong? Establish or revise the question and identify a missing premise or policy choice if it matters. | FPF A.2.9; EXD.4 |
+| 2 | [EXD.2 - Build and Bound an Explanatory Example](10-exd-2---build-and-bound-an-explanatory-example.md) |  Stable  | worked example, correspondence, analogy, counterexample. How does the instance illustrate the rule, and where does that correspondence end? Assess an existing example or construct one that shows the required distinction. | EXD.1; HCD.6 |
+| 3 | [EXD.3 - Coordinate the Expression of an Explanation](11-exd-3---coordinate-the-expression-of-an-explanation.md) |  Stable  | prose, table, diagram, demonstration, access, cognitive load. Is the missing contribution a relation, a usable form or help? Which form would help the recipient recover the relation? A single form may suffice. Use complementary forms when their different contributions matter. | EXD.1; FPF C.37, C.2.8 |
+| 4 | [EXD.4 - Co-Construct and Repair an Explanation in Dialogue](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) |  Stable  | dialogue, feedback, changed question, diagnosis, close. What does the recipient’s contribution establish or change? Interpret the reply. That finding can answer a question about the exchange or guide a clarification, correction or close. | EXD.1; FPF A.2.9 |
+| 5 | [EXD.5 - Guide a Recipient's Own Explanation](13-exd-5---guide-a-recipient-s-own-explanation.md) |  Stable  | learner explanation, self-explanation, feedback, assistance, retry. Which relation did the recipient use, and with what help? Interpret their explanation. If learning calls for correction, offer relevant feedback and another opportunity. | EXD.1, EXD.2; HCD.9, HCD.10 |
+| 6 | [EXD.6 - Compare Explanations for the Recipient's Use and Decide Whether a Repair Is Worthwhile](14-exd-6---compare-explanations-for-the-recipient-s-use-and-dec.md) |  Stable  | structural recovery, reader, effort, comparison, repair. What can the recipient reconstruct under these conditions? Keep an adequate explanation, identify what remains unknown or compare the gain from a change with its burden. | EXD.1; FPF C.2.8, C.11.CRC, C.11; C.37.CF, HCD.19 |
 
 # Readme
 
 ## Practical entries
 
-Explanation Design connects a recipient's question with a warranted account and an expression the recipient can use. An example can expose the needed relation; the recipient's next contribution can reveal a missing step, change the question or show that the explanation is already sufficient. These returns make the methods a language for explaining rather than a fixed production sequence.
+Explanation Design connects a recipient’s question with a warranted account in a form they can use. An example can show the required relation. A reply may expose a missing step, change the question or show that the current explanation is sufficient. Select the method that addresses the difficulty you have.
 
-The two situations below show different ways to use that language. The Table of Contents gives direct access to the six methods. The shared section [Obtain and Carry the Subject Explanation](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md) supplies their common return to the mathematical, causal, technical or advisory grounds. A polished expression cannot supply a missing derivation or justify a recommendation whose grounds remain unknown.
+The two cases below illustrate different uses of the six methods in the Table of Contents. See [Obtain and Carry the Subject Explanation](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md) for the mathematical, causal, technical or advisory basis of an explanation. A missing derivation or recommendation premise needs grounds appropriate to that claim.
 
-You can ask an assisting agent to explain or apply these methods in the language of your work, without framework jargon, while preserving the distinctions needed for the question.
+Use these methods in the language of the work. A practitioner or service can produce the explanation or use the account directly. An assisting agent can explain or apply a method in the language and terminology the recipient uses. Keep the distinctions needed to answer the question.
 
 ### EXD-CHANGE — Distinguish a changed question from a mistaken inference
 
@@ -60,18 +60,18 @@ You can ask an assisting agent to explain or apply these methods in the language
 
 **Question:** What should the next explanation answer, and which part of the existing account can it reuse?
 
-**First useful result or blocker:** A revised answer to the changed question, a repaired relation under the same question, or the subject input needed to resolve a disputed premise.
+**Possible result:** the answer to the revised question, a justified correction under the original question, or an account of the disputed premise, including any grounds still needed.
 
-**Start with:** [EXD.4 - Co-Construct and Repair an Explanation in Dialogue](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md), using the recipient's actual contribution. Return to [EXD.1 - Establish and Revise What a Recipient Needs Explained](09-exd-1---establish-and-revise-what-a-recipient-needs-explaine.md) if it changes what the answer must explain.
+**Start with** [EXD.4 - Co-Construct and Repair an Explanation in Dialogue](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) when an actual reply is available. Use [EXD.1 - Establish and Revise What a Recipient Needs Explained](09-exd-1---establish-and-revise-what-a-recipient-needs-explaine.md) if the reply changes what the account must explain.
 
-**Stop or return:** Close when the recipient can use the needed relation. Understanding a recommendation does not require agreeing with it; return a different preference to the decision rather than extending the explanation.
+**Stop or return** when the requested explanatory work is complete. Evidence of the recipient using the relation can settle a question about their understanding. A recipient who understands a recommendation may decline it. If the remaining issue is what to choose, identify who may make that choice.
 
-1. **Use the current question to recover the relevant subject relation.** In the [worked exchange](04-exd-reference-4---a-worked-exchange-and-its-consequential-re.md), one group has two values with mean 3 and another has six values with mean 8. For the mean across all individuals, reconstruct the sums: `2 × 3 + 6 × 8 = 54`; divide by eight to obtain 6.75. Equal weighting of the two group means gives 5.5 and answers a different question.
-2. **Make that correspondence usable.** [EXD.2 - Build and Bound an Explanatory Example](10-exd-2---build-and-bound-an-explanatory-example.md) connects each count and mean to its group sum. [EXD.3 - Coordinate the Expression of an Explanation](11-exd-3---coordinate-the-expression-of-an-explanation.md) can align those same relations in a table with the weighting condition beside it. Use one sufficient expression; adding a missing mathematical relation is a content change, not merely a new layout.
-3. **Let the reply determine the return.** “Each branch should have equal influence regardless of size” changes the target. EXD.1 establishes that question and the answer becomes 5.5; the 6.75 result remains valid for individual weighting. If the target is still individual weighting but the recipient divides by two because there are two averages, EXD.4 identifies a wrong relation under the unchanged question. Repair what the denominator counts. If the dispute concerns which weighting policy should be used, return that choice to the person responsible for the report.
-4. **Use a learner's own explanation when learning is the purpose.** [EXD.5 - Guide a Recipient's Own Explanation](13-exd-5---guide-a-recipient-s-own-explanation.md) preserves the initial product, gives feedback about groups versus individuals, and asks for the affected use again. Three values with mean 4 and nine with mean 8 give `(12 + 72)/12 = 7`; equal group influence instead gives 6. Retain the help used in reaching either answer. Immediate correction does not establish independent performance after a delay.
+1. **Recover the relation the question needs.** In the [worked exchange](04-exd-reference-4---a-worked-exchange-and-its-consequential-re.md), two values have mean 3 and six values have mean 8. Their total is `2 × 3 + 6 × 8 = 54`. Dividing by the eight individual observations gives 6.75. If each branch instead receives equal weight, the mean of 3 and 8 is 5.5.
+2. **Show that correspondence.** Use [EXD.2 - Build and Bound an Explanatory Example](10-exd-2---build-and-bound-an-explanatory-example.md) to connect each count and mean to its group sum. Use [EXD.3 - Coordinate the Expression of an Explanation](11-exd-3---coordinate-the-expression-of-an-explanation.md) when a table showing these quantities and the weighting condition would help. A single clear form suffices. Adding the missing relationship between count, mean and sum changes the content.
+3. **Use the reply.** If the recipient says “Each branch should have equal influence regardless of size,” EXD.1 helps establish the revised target. The answer is 5.5. The result 6.75 still answers the individual-weighting question. If the target remains equal weight per individual but the recipient divides the sum of two branch means by two, EXD.4 helps locate the error. Explain how each group mean and count give its sum, then divide the total of those sums by the number of individuals. If the issue is which policy should govern the report, use the applicable policy or seek a choice from its holder when necessary.
+4. **Use the learner’s own explanation when that is the purpose.** With [EXD.5 - Guide a Recipient's Own Explanation](13-exd-5---guide-a-recipient-s-own-explanation.md), retain the learner’s initial answer and the help they received. If the distinction needs practice, give feedback on groups versus individuals and offer a changed case. Three values with mean 4 and nine with mean 8 give `(12 + 72)/12 = 7`. Equal branch weights give 6. An immediate correction shows performance under those conditions. Independent performance after a delay needs evidence from that condition.
 
-The same return matters in advising. “Why does this assignment fit my present strengths?” and “Why would it develop my missing capability?” require different grounds. A change from the first question to the second calls for the development rationale. If that rationale is understood but the person prefers another social setting, the remaining question belongs to their choice.
+In advising, “Why does this assignment fit my present strengths?” and “Why would it develop a missing capability?” call for different grounds. A change to the second question requires the rationale for expected development. If the recipient understands that rationale and prefers another setting, respect their preference and identify its bearing on the choice they actually face.
 
 ### EXD-REPAIR — Repair what the recipient cannot use without rewriting everything
 
@@ -79,22 +79,22 @@ The same return matters in advising. “Why does this assignment fit my present 
 
 **Question:** Which repair addresses the actual difficulty, and is it worth its burden compared with the available explanation?
 
-**First useful result or blocker:** A targeted repair, a sufficient explanation to retain, or the missing subject or reader evidence that prevents choosing between the alternatives.
+**Possible result:** a justified repair, an adequate explanation to retain, or the subject or reader evidence missing for the particular comparison.
 
-**Start with:** [EXD.6 - Compare Explanations for the Recipient's Use and Decide Whether a Repair Is Worthwhile](14-exd-6---compare-explanations-for-the-recipient-s-use-and-dec.md), fixing what the recipient needs to recover and the criterion for using it.
+**Start with** [EXD.6 - Compare Explanations for the Recipient's Use and Decide Whether a Repair Is Worthwhile](14-exd-6---compare-explanations-for-the-recipient-s-use-and-dec.md). Identify the relation the recipient needs and the criterion for its use.
 
-**Stop or return:** Keep a sufficient explanation when no worthwhile contribution is missing. Repair an explicit false claim from its subject basis; obtain reader evidence when the unresolved question concerns recoverability and the observation can change the choice.
+**Stop or return.** Keep an explanation that satisfies the intended use. A supported subject result can justify correcting an explicit false claim. For a mathematical error, the definitions may suffice. For a question about what a reader can recover, use suitable existing evidence or obtain an observation if its attainable contribution warrants the effort.
 
-1. **Identify the relation that the explanation must supply.** Consider a constructed explanation of active effort for one person's task. Its stated accounting rule counts time actually spent on the task. The draft instead says to subtract start time from handoff time. On an uninterrupted task both rules agree, so that example cannot reveal the error.
-2. **Use an example that separates the rules.** EXD.2 can use work from 09:00 to 10:00 and 11:00 to 12:00, with no task work during the intervening hour. Active effort is two hours; elapsed turnaround is three. The subject definition justifies changing the draft's rule. EXD.3 can then label separate effort and turnaround columns and place the interruption beside the calculation. Relabelling columns without correcting the rule would leave the content defect in place.
-3. **Respond to the actual remaining difficulty.** If a recipient still counts the interruption, EXD.4 uses that contribution to locate the missing distinction. For a learning purpose, EXD.5 asks the recipient to explain what each interval contributes, provides the needed help, and retries the relation on a relevant changed case. Preserve the first response: a prepared reader may have corrected the false instruction from prior knowledge, and a later correct answer may depend on the supplied help.
-4. **Choose the conclusion the evidence supports.** EXD.6 can justify the rule repair through subject inspection. It cannot attribute an unobserved reading-speed or learning advantage to the new table. If an existing prose account already supplies the correct distinction and serves the receiving task, retain it unless the table offers a worthwhile additional use, such as repeatedly locating corresponding intervals. A comparison of forms keeps the selected claims and help comparable.
+1. **Identify the required relation.** Consider a proposed explanation of active effort on one person’s task. The accounting rule counts time spent working on that task. The draft instead uses the elapsed time from start to handoff. On an uninterrupted task they agree, so that case cannot distinguish the rules.
+2. **Choose an example that distinguishes the rules.** Work from 09:00 to 10:00 and again from 11:00 to 12:00 gives two hours of active effort and three hours elapsed, provided the person does no task work in the intervening hour. Use EXD.2 to explain why the rules differ. If a table helps, use EXD.3 to show the intervals and label the two quantities. Correct the rule itself wherever it equates effort with elapsed time.
+3. **Identify any remaining difficulty.** If a recipient still counts the interruption, use EXD.4 to find out what their answer means. If they need practice, ask them to explain how each interval enters the calculation. Use EXD.5 to give feedback on that explanation and offer a changed case when useful. Keep any initial answer and the help received. A knowledgeable reader may have corrected the draft from prior knowledge. A later correct answer may depend on the help.
+4. **Choose the conclusion the evidence supports.** The accounting rule justifies correcting the draft. Faster reading or better learning with the table requires evidence about those outcomes. If accurate prose already serves the task, retain it. Repeated comparison of corresponding intervals might justify another form. When comparing forms, keep the claims and the available help comparable.
 
-If the changed task now concerns several people working concurrently, obtain the population accounting rule before extending the one-person explanation. Layout alone cannot decide how person-hours combine. Evaluation of an instructional material as a whole uses HCD.18/.19; a claim about later human performance, transfer or retention uses the relevant HCD method. The explanatory repair can finish without requiring those stronger conclusions.
+If the task changes to concurrent work by several people, establish what total is wanted and how each person’s effort counts. The one-person example does not determine the answer. Use HCD.18 or HCD.19 to assess an instructional material and the relevant HCD method for claims about later human performance, transfer or retention. A correction to the explanation may already finish the present task.
 
 ## Using the repertoire
 
-Begin where the needed input is already available. A clear question with a sufficient account may need only an expression adjustment; a missing subject premise returns to the subject practice. Use dialogue when a recipient's contribution is available and can guide the next move, not as a compulsory questionnaire. For a one-way explanation, state the consequential conditions and provide a usable return to the fuller account.
+Enter where the required inputs are available. A clear question and a sufficient account may call for an adjustment to expression or no change. Use subject evidence for a missing premise. Use dialogue when the recipient’s contribution can inform the answer. In a one-way explanation, state the consequential conditions and give the intended reader access to the fuller account when their use requires it.
 
 The [Architectural Reference](_index.md#explanation-design-principles-framework-architectural-reference) develops the distinctions used above. The [use profiles](15-use-profiles.md) adapt them to instruction, technical and advisory work, and human–AI interaction.
 

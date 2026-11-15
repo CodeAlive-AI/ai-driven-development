@@ -6,11 +6,11 @@
 
 ### OPS.10.1:1 - Problem frame
 
-**Use this when** a capacity decision has a service question and an operating arrangement, but the calculation needed to compare its alternatives is missing or misleading. A faster machine produces longer queues. Two staffing plans have the same average hours but different completion risks. A workload controller changes an aggregate smoothly while the customer is waiting for one complete order.
+**Use this when** you know the service question and operating arrangement, but the calculation needed to answer it is missing or misleading. A faster machine produces longer queues. Two staffing plans have the same average hours but different completion risks. A workload controller changes an aggregate smoothly while the customer is waiting for one complete order.
 
-Model how the available resources produce the required result, then calculate the consequence of each proposed change. Keep the arrival, service, resource and completion meanings attached to the quantities. The result can be a finite schedule, an obstruction, a mean estimate, a conditional probability or a useful bound.
+Model how the available resources produce the required result, then calculate the service result under the stated conditions and for any proposed changes. Keep the arrival, service, resource and completion meanings attached to the quantities. The result can be a finite schedule, an obstruction, a mean estimate, a conditional probability or a useful bound.
 
-**First useful move.** Select one result and its time criterion. Recover who or what must serve it, what is already waiting and what prevents the next service from starting. A resource-time shortfall may settle the question immediately.
+**First useful move.** Select one result and its time criterion. Recover who or what must serve it, what is already waiting and whether anything prevents the next service from starting. A resource-time shortfall may settle the question immediately.
 
 The reader needs to interpret rates, durations and elementary probability for the branches used. A practitioner can obtain a specialist calculation while retaining the operating assumptions and result interpretation. Use an adequate existing model directly; reconstruct it when a changed resource, arrival process or question invalidates a needed relation. OPS.10 selects the wider capacity/service decision. This method develops the model used in that decision.
 
@@ -31,7 +31,7 @@ At the other extreme, a full simulation can consume effort while leaving a simpl
 
 ### OPS.10.1:4 - Solution
 
-Model how work arrives, uses resources and reaches completion. Calculate each alternative against the same service question. If an assumption fails, revise it and the results that depend on it. Enter at a later step when its inputs are already adequate.
+Model how work arrives, uses resources and reaches completion. For a choice between alternatives, calculate the answer to the same service question for each. If an assumption fails, revise it and the results that depend on it. Enter at a later step when its inputs are already adequate.
 
 #### OPS.10.1:4.1 - Define the completion question and its clock
 
@@ -57,7 +57,7 @@ resource demand per unit time =
 
 Expected resource time includes the modeled visits, setups and recovery attributable to that arrival. A return may require another visit without producing another delivered order. If return behavior depends on congestion or policy, recover that dependence before reusing the old expectation.
 
-Divide this demand by the usable resource time supplied per unit time to obtain an offered-load ratio. It can exceed one: the work offered exceeds that capacity. The observed fraction of time busy remains at most one. Both measures can be useful, but they answer different questions.
+Divide this demand by the usable resource time supplied per unit time to obtain an offered-load ratio. A ratio above one means that offered work exceeds this capacity. The observed fraction of time busy remains at most one. Both measures can be useful, but they answer different questions.
 
 Define service time for the chosen server. Include an interruption in effective service when the model treats it as extending that server's service; otherwise represent the unavailable interval separately. Count its loss once. Waiting for another team or for permission is not automatically occupancy of this server. A batch's shared machine time is also different from the sum of its parts' elapsed times. OPS.11.1 and OPS.15.1 supply these resource and event constructions.
 
@@ -73,7 +73,7 @@ wait[i]   = start[i] - arrival[i]
 
 The initial finish represents the server's remaining occupied time; it is zero for an empty system available at zero. This recurrence obtains the earliest schedule under that fixed policy. It does not choose a better job order.
 
-When a job needs an uninterrupted usable interval, replace the proposed start by the first interval that fits its duration and required resources. If work can pause, account for the work completed before each interruption and the permitted restart, including lost setup or recovery. Construct precedence and resource choices explicitly when several activities interact. OPS.10.2 develops this finite schedule, including calendar windows and conditional time reserve. A feasible candidate demonstrates its own schedule; a failed search does not demonstrate that all schedules fail.
+When a job needs an uninterrupted usable interval, replace the proposed start by the first interval that fits its duration and required resources. If work can pause, account for the work completed before each interruption and the permitted restart, including lost setup or recovery. Construct precedence and resource choices explicitly when several activities interact. OPS.10.2 develops this finite schedule, including calendar windows and conditional time reserve. A feasible placement shows that the schedule fits the modeled conditions. Distinguish a search that finds no schedule from a complete valid exclusion of every permitted placement.
 
 For a changing regime, begin with the actual initial state and advance arrivals, completions, failures, returns and control actions using their event rules. A model of continuous aggregate quantities can use fewer variables when amounts and rates are the required outputs: write its accumulation balance and the rule that determines outflow. Retain any capacity, nonnegativity and delay constraints of that rule. Section 5.3 shows why a proportional outflow and a constant service rate give different completion accounts.
 
@@ -94,19 +94,19 @@ Here `ca²` is interarrival variance divided by squared mean interarrival time; 
 
 Use this as a qualified mean calculation under those premises. In the Poisson-arrival case, the displayed mean wait equals the established single-server result for a general independent service distribution with finite second moment. Section 5.1 uses that special case. Neither use supplies a wait percentile.
 
-Temporal dependence can defeat a description consisting of two moments. Count arrivals in windows at time scales relevant to the queue; examine whether their variance relative to mean changes with window length. Retain that dependence in a richer queue model or in simulated arrival paths when it can change the choice. Dispersion-based queueing analysis supplies one such mean-performance alternative; it retains its own stationarity and service assumptions.
+Temporal dependence can defeat a description consisting of two moments. Count arrivals in windows at time scales relevant to the queue; examine whether their variance relative to mean changes with window length. Retain that dependence in a richer queue model or in simulated arrival paths when it matters to the required service result or the choice that depends on it. Dispersion-based queueing analysis supplies one such mean-performance alternative; it retains its own stationarity and service assumptions.
 
 Do not substitute the one-server formula after pooling servers, adding priorities, introducing blocking or changing the dependence. Reconstruct the model of service. A deterministic arrival every hour and a one-hour uninterrupted service can operate continuously without a queue; its feasible timing is not invalidated by a stochastic formula singular at `rho = 1`.
 
 #### OPS.10.1:4.5 - Obtain the needed probability or protective bound
 
-For a finite probability question, specify the joint uncertain inputs, initial state and operating policy. When a policy adapts during execution, base each choice on information available at that time. Separate schedules chosen after each complete outcome is known do not establish one policy that can be executed. When there are few combinations of uncertain inputs, enumerate them; otherwise generate paths from that joint model and apply the event rules to each path. For each path, test the stated service predicate, such as both named orders complete by hour four. Aggregate by the paths' probabilities, or estimate the probability with the sampling uncertainty needed by the decision. MMP.7, MMP.13 and CMP.9 supply observation, inference and sampling methods when those contributions are needed.
+For a finite probability question, specify the joint uncertain inputs, initial state and operating policy. When a policy adapts during execution, base each choice on information available at that time. Separate schedules chosen after each complete outcome is known do not establish one policy that can be executed. State the service event, such as both named orders completing by hour four. Derive its probability directly from the joint model when possible. Alternatively, apply the event rules to enumerated outcomes and sum their probabilities, or to sampled paths and estimate the probability with its sampling uncertainty. MMP.7, MMP.13 and CMP.9 supply observation, inference and sampling methods when those contributions are needed.
 
 Preserve dependence between arrivals, service durations, outages and returns. Equal marginal means or distributions do not make different joint models equivalent. Section 5.2 changes only service dependence and changes the probability while preserving the mean completion time.
 
 A scenario without probabilities supports a conditional consequence. A family of bounded disturbances can support a protective bound if the response is shown to work for every disturbance in that family. One successful replay supplies only its case. A mean replenishment time multiplied by a consumption rate gives no such worst-case or probability statement by itself.
 
-Include the starting backlog and horizon for a transient service question. Use a continuing-regime mean only for the mean question it answers. For an empirical claim, interpret source coverage and input/model uncertainty as well as calculation or sampling error. Obtain another observation only if the unresolved difference can alter the receiving decision.
+Include the starting backlog and horizon for a transient service question. Use a continuing-regime mean only for the mean question it answers. For an empirical claim, interpret source coverage and input/model uncertainty as well as calculation or sampling error. Obtain another observation when it could improve the required service estimate or the decision enough to justify its cost.
 
 #### OPS.10.1:4.6 - Compare operating changes and return their consequences
 
@@ -137,7 +137,7 @@ For example, A's mean wait is `((1+2.25)/2) * ((2/3)/(1/3)) * 2 = 6.5`. The spec
 
 If the decision needs a mean residence below six hours, B meets that modeled criterion and A does not. Cost and actual availability still affect the operating choice.
 
-Change the arrival rate to 0.48 jobs per hour. A's mean service rate is 0.5 and B's is about 0.455. A has load ratio 0.96, while B has 1.056. The former comparison cannot justify B for that continuing arrival regime. Return the increased demand to capacity or admission instead of inserting a ratio above one into the steady-mean formula.
+Change the arrival rate to 0.48 jobs per hour. A's mean service rate is 0.5 and B's is about 0.455. A has load ratio 0.96, while B has 1.056. The former comparison cannot justify B for that continuing arrival regime. Review the admission or capacity arrangement at the increased demand. The steady-mean formula used here requires a load ratio below one.
 
 #### OPS.10.1:5.2 - Four hours on average, with a missed-deadline risk
 
@@ -164,13 +164,13 @@ A different operating account says one indivisible job takes exactly one uninter
 
 Even the exponential curve permits another interpretation under different premises. For one exponentially distributed service duration with mean one hour, it is the expected number of unfinished jobs; completion by one hour then has probability about 0.632. It is not a deterministic promise.
 
-The practitioner chooses the account by the receiving question and the operating service law, not by whether the display uses a curve or discrete events. For the fixed one-hour deadline, use the completion event. For aggregate feedback, establish the outflow relation and how a commanded rate change can be realized. A new capacity setting without a corresponding operating mechanism leaves the proposed intervention unsupported.
+The practitioner chooses the account by the receiving question and the operating service law. For the fixed one-hour deadline, use the completion event. For aggregate feedback, establish the outflow relation and how a commanded rate change can be realized. A new capacity setting without a corresponding operating mechanism leaves the proposed intervention unsupported.
 
 ### OPS.10.1:6 - Bias-Annotation
 
 Nominal speed attracts attention because it is easy to compare. Section 5.1 keeps recovery variation and queue consequences visible. A smooth trajectory can be equally persuasive: section 5.3 recovers what the curve represents before interpreting it as a completed result.
 
-A familiar formula can survive after its regime disappears. Reconstruct the changed arrival, service or dependence relation rather than preserving the number merely because the formula still accepts the inputs.
+A familiar formula can survive after its regime disappears. Reconstruct the changed arrival, service or dependence relation and recompute the service quantity under the applicable model.
 
 ### OPS.10.1:7 - Conformance Checklist
 
@@ -182,7 +182,7 @@ A familiar formula can survive after its regime disappears. Reconstruct the chan
 6. Does the comparison distinguish a changed service mechanism from a changed measurement boundary?
 7. Can admission, protection or commitment use the result and identify what would reopen it?
 
-**Recognition and assurance.** A reproducible conditional calculation is a model result. For reliance on actual service, establish the resource availability and input assumptions that can change the decision, at the assurance level the work requires. Missing information may leave a probability unknown while a resource bound still settles the decision.
+**Recognition and assurance.** A reproducible conditional calculation is a model result. For reliance on actual service, establish the resource availability and input assumptions on which the service claim or decision depends, at the assurance level the work requires. Missing information may leave a probability unknown while a resource bound still settles the decision.
 
 ### OPS.10.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -197,19 +197,19 @@ A familiar formula can survive after its regime disappears. Reconstruct the chan
 
 The practitioner can obtain a capacity comparison from the smallest sufficient construction and see which operating change would alter its conclusion. Mean, scenario, deadline and probability questions remain connected without substituting one answer for another.
 
-The cost grows when dependence, calendars or uncertain service matter. A bounded decision may finish with an elementary obstruction; a probability-sensitive decision may need richer modeling and input support. The method makes that additional work conditional on the receiving question.
+The cost grows when dependence, calendars or uncertain service matter. A bounded decision may finish with an elementary obstruction; a probability-sensitive decision may need richer modeling and input support.
 
 ### OPS.10.1:10 - Architectural Rationale
 
-To compare capacity choices, explain how available resources perform activities under a policy and produce the required results. Observations, estimates or stipulated case inputs supply the quantities; mathematics relates them and calculation obtains the consequences. Their correspondence to the operating work determines what a calculation answers.
+To compare capacity choices, explain how available resources perform activities under a policy and produce the required results. Observations, estimates or stipulated case inputs supply the quantities; the mathematical model relates them, and solving it gives the consequences under its premises. Their correspondence to the operating work determines what a calculation answers.
 
 The construction therefore separates what the resources must do, how their service evolves and which result is requested. The same arrangement can need a finite deadline model today and a continuing mean model for another decision. Cases 5.1–5.3 show changes of variation, dependence and interpretation that a single scalar capacity value cannot retain.
 
-Common model construction, inference and comparison remain in their supplying Methods. This pattern supplies the service laws and operating assumptions needed to use those Methods for a capacity decision.
+Common model construction, inference and comparison remain in their supplying Methods. Use the operating arrangement and evidence to select the service laws and assumptions that the capacity calculation requires.
 
 ### OPS.10.1:11 - SoTA-Echoing
 
-For a quick mean comparison of one continuing first-come server, **adopt** the service-process and two-moment construction in [Hopp and Spearman, Factory Physics, third edition](https://www.waveland.com/browse.php?t=587), §8.6.5, equations 8.25–8.26. A utilization-only calculation is cheaper but loses the action-changing service variation in section 5.1. Sections 4.2 and 4.4 retain both variance contributions, the saturation factor and their premises. The formula is a mature approximation with a useful exact Poisson-arrival special case, not a universal service law. Its low calculation cost is accepted for the mean question; a changed operating regime or a required deadline probability reopens the choice.
+For a quick mean comparison of one continuing first-come server, **adopt** the service-process and two-moment construction in [Hopp and Spearman, Factory Physics, third edition](https://www.waveland.com/browse.php?t=587), §8.6.5, equations 8.25–8.26. A utilization-only calculation is cheaper but loses the action-changing service variation in section 5.1. Sections 4.2 and 4.4 retain both variance contributions, the saturation factor and their premises. The formula is a mature approximation with a useful exact Poisson-arrival special case. Its low calculation cost is accepted for the mean question; a changed operating regime or a required deadline probability reopens the choice.
 
 For dependent traffic, **adapt** the richer description developed by [Whitt and You (2022)](https://www.columbia.edu/~ww2040/RQNA_pub.pdf), §§2.1–2.2: count dispersion over time retains variability a fixed two-moment description can lose. This costs additional traffic characterization. Section 4.4 selects that effort when the lost dependence matters. Their robust-queueing construction approximates mean performance in a steady regime under its stationarity and independent-service assumptions. Although the derivation uses a worst-case construction, the returned result estimates a mean; it does not guarantee an upper bound on individual waits. Changed dependence, routing or the requested result reopens that use.
 

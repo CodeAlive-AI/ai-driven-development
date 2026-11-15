@@ -1,22 +1,22 @@
 ## RHY.Reference:4 - Solution - Connect the contributions through their results
 
-The fourteen patterns form a repertoire. The Parts group related reading; work can begin in any Part. A useful path follows the result that the next operation needs, with returns when that result is unavailable.
+The fourteen Methods can be used separately or together. Their order in a case depends on the results the work requires. Return to an earlier question if a contribution is missing or its grounds have changed.
 
-RHY.1 localizes a rhythmic complaint. RHY.2 retains the actual changes and relations needed to understand it. RHY.3 constructs a combination of a continuing contribution and articulation; RHY.4 chooses timing events appropriate to the receiving task. Together they can turn “make it clearer” into a correction that a performer can try.
+Use RHY.1 to locate the difficulty and RHY.2 to identify the changes or relations needed to explain it. Use RHY.3 to coordinate articulation with an action that must continue and RHY.4 for timing events relevant to the task. In a rehearsal, these distinctions can turn “make it clearer” into a correction the performer can try.
 
-RHY.5 chooses a representation for an operation, and RHY.6 preserves its needed distinctions during translation. RHY.7 makes a comparison appropriate to a decision; RHY.8 constructs a proposed variant while retaining its required relations and feasibility conditions. A useful drawing or numerical comparison may be enough for that question. An assertion about actual performance or response needs its own observation.
+Use RHY.5 to choose a representation and RHY.6 to translate it while preserving the distinctions needed later. RHY.7 supports a comparison and RHY.8 the construction of a variant that retains the required relations and conditions of feasibility. A drawing or numerical result may answer a structural question. For a claim about real performance or response, use relevant observations.
 
-RHY.9 allocates rhythmic actions and timing cues. RHY.10 establishes shared reference and correction, while RHY.11 coordinates simultaneous layers. These methods use available performing techniques. They can expose an unavailable constituent contribution, which is a different problem from aligning otherwise available layers.
+Use RHY.9 to allocate actions and timing cues. Use RHY.10 for a shared reference or correction and RHY.11 when layers must continue together. Establish which contributing techniques are available. A missing action requires different work from misalignment between two actions the performers can already carry out.
 
-RHY.12 develops a human rhythmic contribution through representative practice. RHY.13 tests the particular transfer, retention or support dependence needed for a decision; its task may concern a human, a technical performer or an equipped whole. RHY.14 obtains and compares the observations or responses on which the decision depends. Developing a controller calls for its engineering or training method.
+Use RHY.12 to develop a human rhythmic capability through representative practice. Use RHY.13 to examine a claim about transfer, retention or support dependence for a person, a technical performer or an equipped arrangement. Use RHY.14 to obtain, interpret or compare observations of performance and response. A controller that needs development calls for its engineering or training Method.
 
 | Available result | Next use when needed | Return when the result is insufficient |
 | --- | --- | --- |
 | A localized difficulty and selected relation | Choose a correction, representation or variant through RHY.3–.8 | Return to the actual passage if the description hides a consequential change. |
 | A represented or transformed rhythm | Arrange its actions and cues through RHY.9 | Obtain the missing duration, reference, technique or feasible action. |
 | Available individual actions | Coordinate reference and layers through RHY.10/.11 | Reconsider the arrangement or develop the unavailable contribution. |
-| A successful exercise | Restore the intended performance through RHY.12; use RHY.13 for the relevant changed condition | Preserve the narrower success while locating the difference that caused the failure. |
-| A performance or reported response | Use RHY.14's bounded result for the rehearsal, design or teaching decision | Correct a decisive observation condition or retain the named unknown. |
-| A usable rhythmic way of working | Make it available through C.36.RP and, in music or dance, MDPE.17–.20 | Repair the particular receiving, continuation or forecasting condition. |
+| A successful exercise | Use RHY.12 to restore the intended performance when needed. Use RHY.13 to assess performance under a changed condition. | Preserve the narrower success. If the full performance fails, examine which differences could explain it. |
+| A performance or reported response | Use RHY.14 to establish what was observed and what it supports for rehearsal, design, teaching or a report. | Correct an observation condition if it matters and the correction is attainable, or state what remains unknown. |
+| A usable rhythmic way of working | Use C.36.RP and, in music or dance, MDPE.17–.20 when the task requires another user to obtain the practice, an account of its continuation or a forecast. | Identify a limit on receipt, continuation or forecasting. Address it when the requested work calls for a repair and the affected conditions can be changed. |
 
-A short mantra can help retain a chosen path: identify the relation, preserve what the next use needs, supply the performing contributions, try the relevant whole, and return to the contribution that fails. It is a reminder of dependencies, not an obligation to apply every pattern.
+A short reminder can help during rehearsal. Identify the relation and what the next use requires. Obtain any missing performing contribution and try the whole action when the question needs another attempt. Keep the result that answers the question, or return to a specific difficulty the observation reveals.

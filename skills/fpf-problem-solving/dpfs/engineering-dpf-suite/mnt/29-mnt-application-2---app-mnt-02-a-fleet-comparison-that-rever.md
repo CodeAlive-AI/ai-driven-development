@@ -6,4 +6,4 @@ The constructed fleet contains 48 pumps in two groups. One has fewer counted fai
 
 [MNT.2](13-mnt-2---select-and-reopen-the-maintenance-policy.md) and [MNT.14](25-mnt-14---compare-maintenance-methods-for-retention-or-change.md) then examine which task or Method fits the actual failure and response conditions. A known applicable-spare deficiency can be addressed without waiting for a new fleet study. A low-consequence obvious failure and a hidden protective-function failure remain materially different policy cases.
 
-A proposed further comparison needs a question that the available population, time and access can answer. Its acquisition and interpretation burden belongs in the choice. “Collect more data” is not the automatic result of a limited causal account.
+A proposed further comparison needs a question that the available population, time and access can answer. Its acquisition and interpretation burden belongs in the choice.

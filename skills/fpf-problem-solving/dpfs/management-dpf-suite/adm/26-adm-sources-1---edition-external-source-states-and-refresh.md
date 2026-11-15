@@ -1,8 +1,8 @@
 ## ADM.Sources:1 - Edition, external source states and refresh
 
-This is the first edition of the **Organization Administration Principles Framework**, with reference code **ADM** and fifteen patterns: ADM.1–ADM.11 and ADM.13–ADM.16. It offers prospective practitioner guidance for administrative conditions, cases and arrangements under the actual rules of the organization. Its constructed cases explain the instructions; claims about a particular service's effectiveness require that service's evidence.
+This is the first edition of the **Organization Administration Principles Framework**, with reference code **ADM** and fifteen patterns: ADM.1–ADM.11 and ADM.13–ADM.16. It offers prospective practitioner guidance for administrative conditions, cases and arrangements under the actual rules of the organization. Its constructed cases illustrate the instructions. A claim about a particular service’s effectiveness needs evidence applicable to that service.
 
-Cite the framework name, release date and PatternID when the wording or source basis matters. A pattern address continues across editions only while its practical answer continues. The ToC's Part and position locate the current presentation.
+Cite the framework name, edition date and PatternID. When the wording or source basis matters, include a permanent link to the file at the commit you used or to an accessible archived copy. A pattern address continues across editions only while its practical answer continues. The ToC's Part and position locate the current presentation.
 
 Copyright © Anatoly Levenchuk. The original framework text and worked examples are licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). The [licensing notice (Licensing FPF and its DPF publications)](../../../library/LICENSING.md) states the scope and attribution terms. Referenced third-party works retain their own terms.
 
@@ -10,9 +10,9 @@ Copyright © Anatoly Levenchuk. The original framework text and worked examples 
 
 ### ADM.Sources:1.1 - External source states and refresh
 
-Use the following source states when checking a source change or reconstructing this edition's basis. The [applied-instruction table in ADM.Reference:7](07-adm-reference-7---applied-framework-instructions.md) and the [source arguments below](27-adm-sources-2---administrative-source-contributions-and-acce.md) name the exact sections, contributions and limits used. The hashes identify the source texts used.
+Use the following source states when checking a source change or reconstructing this edition's basis. The [applied-instruction table in ADM.Reference:7](07-adm-reference-7---applied-framework-instructions.md) and the [source arguments below](27-adm-sources-2---administrative-source-contributions-and-acce.md) identify the relevant sections, their contributions and limits. The hashes identify the source texts.
 
-ADM relies on the cited FPF relation, permission, evidence and structure distinctions and on the named OPS, OCE, SIE, SYSE and Core's Method-development family instructions for their stated receiving uses. Those texts remain external to ADM. Removing a needed contribution or changing its meaning can invalidate the corresponding ADM instruction or return; it reopens that use.
+ADM relies on the cited FPF relation, permission, evidence and structure distinctions and on the named OPS, OCE, SIE, SYSE and Core's Method-development family instructions for their stated receiving uses. If a relied-on contribution changes or is withdrawn, recheck the ADM instruction or use that depends on it.
 
 | External source text | SHA-256 of the relied-on source state |
 | --- | --- |
@@ -27,6 +27,6 @@ ADM relies on the cited FPF relation, permission, evidence and structure distinc
 | [Systems Engineering (SYSE)][SYSE] | `d82c411414e50a001fa9f018b1b8c1039e701435e8cf1b6d8242b229ffed7b87` |
 | Method Engineering (historical source state) | `c7f791f9f6f7ef9899f287335204a2727e35a4bf4a54b611e174c9f79dd5076c` |
 
-A changed source file calls for comparison of the relied-on sections. Unchanged contributions remain usable within their conditions. If a needed external instruction or its source cannot be recovered, retain the missing contribution and continue only the questions that do not depend on it. A citation supplies neither the organization's rule nor permission to act.
+A changed source file calls for comparison of the relied-on sections. Unchanged contributions remain usable within their conditions. If a needed external instruction or its source cannot be recovered, identify what cannot be established and which questions can proceed. For a local decision or action, use the organization’s governing rule and the applicable authority.
 
-Revisit an affected pattern when a real use exposes an unclear action, a missed case, unsupported evidence or an excessive burden. Revisit the connected explanation when an individual result no longer supports the next question it promises to answer. A changed source meaning, organizational rule, population or operating condition reopens only the claims that depend on it. The relevant pattern's source return and stopping conditions identify the first place to work.
+Revisit an affected pattern when use exposes an unclear action, a missed case, unsupported evidence or an excessive burden. Revisit the connected explanation when an individual result no longer supports the next question it promises to answer. A changed source meaning, organizational rule, population or operating condition reopens only the claims that depend on it. The relevant pattern's source return and stopping conditions identify the first place to work.

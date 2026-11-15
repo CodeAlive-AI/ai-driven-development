@@ -18,7 +18,7 @@ This method starts with freely formed constructor expressions: each input suppli
 
 An assertion that a suitable object exists can leave the receiver unable to obtain it. A recursive formula can leave a different gap: it may call itself without reaching an answer, omit a case, or return objects that fail the required property.
 
-The mathematical task is to build the operation and its justification together. The case for a larger input must use only what the smaller-input results actually provide. Sometimes this reveals that the proposed result was too weak: the step needs an extra parameter or an auxiliary value.
+The mathematical task is to build the operation and its justification together. The case for a larger input must use only what the smaller-input results provide. Sometimes this reveals that the proposed result was too weak: the step needs an extra parameter or an auxiliary value.
 
 ### MATH.4:3 - Forces
 
@@ -39,7 +39,7 @@ Name the input family, its constructors and any fixed parameters. For natural nu
 
 For each input `x`, state the kind of output `y` and the property `P(x,y)` it must satisfy. Include bounds or retained information that the next use consumes. For division by a positive integer `d`, the output is a pair `(q,r)` satisfying `n=q*d+r` and `0≤r<d`.
 
-Use the input's actual formation rules to choose the cases. A proof about trees cannot be applied to a structure with additional edges without considering those edges.
+Use the input's formation rules to choose the cases. A proof about trees cannot be applied to a structure with additional edges without considering those edges.
 
 #### MATH.4:4.2 - Construct the base witnesses
 
@@ -83,7 +83,7 @@ If the receiver needs another quantity, check whether the current result retains
 
 An executable recursive construction is already an algorithm. Its operation count, storage and representation can become further design questions when the intended scale makes them matter. A faster implementation can retain the same mathematical specification; the correspondence between the two constructions needs its own argument.
 
-Stop with the required witness, a reusable construction with its property, or a particular unresolved clause. Formalizing the same result in a proof assistant is useful when that receiving use needs it.
+Stop with the required witness, a reusable construction with its property, or an unresolved clause. Formalizing the same result in a proof assistant is useful when that receiving use needs it.
 
 ### MATH.4:5 - Archetypal Grounding
 
@@ -186,7 +186,7 @@ The stronger specification is part of the construction method. It lets a smaller
 
 Structural recursion was selected because finite constituent structure supplies a local termination argument. Finite enumeration is a serious alternative for one small instance, and an existing operation can be the cheapest way to obtain its answer. Inductive construction earns its extra work when a family, reusable operation or premise-sensitive argument is needed.
 
-The division and tree cases use different objects while sharing the base-and-constructor move.
+
 
 ### MATH.4:11 - SoTA-Echoing
 

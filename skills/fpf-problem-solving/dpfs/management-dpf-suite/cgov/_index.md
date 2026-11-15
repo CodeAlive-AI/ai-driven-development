@@ -10,7 +10,7 @@
 
 Begin with the corporate matter and the result you need. A director, company secretary, shareholder, executive or adviser can use the methods to determine who may act, prepare a matter for decision, exercise a right, establish an arrangement or improve an existing practice.
 
-Use the Table of Contents for a direct question. The Readme shows selected combinations of methods; the Architectural Reference explains their architecture, prerequisites and limits. **CGOV** is this framework's reference code. Its pattern numbers are stable addresses; the Parts group reading rather than prescribe an order of work.
+Use the Table of Contents for a direct question. The Readme shows selected combinations of methods; the Architectural Reference explains their architecture, prerequisites and limits. **CGOV** is this framework's reference code. Its pattern numbers are stable addresses; the Parts group the methods by subject.
 
 The framework belongs to the [Management DPF Suite](../_index.md). To cite it, give the author, framework title, version shown here and, where relevant, the PatternID or Architectural Reference section.
 
@@ -54,7 +54,7 @@ The framework belongs to the [Management DPF Suite](../_index.md). To cite it, g
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | [CGOV.8 - Provide Corporate Information under Applicable Rights and Duties](18-cgov-8---provide-corporate-information-under-applicable-righ.md) | Stable | disclosure; information rights; confidentiality; timely access. What must this recipient receive, and has provision occurred? | CGOV.1 and CGOV.3 for the corporate basis; ADM.2 for permission questions where needed. |
+| 1 | [CGOV.8 - Provide Corporate Information under Applicable Rights and Duties](18-cgov-8---provide-corporate-information-under-applicable-righ.md) | Stable | disclosure; information rights; confidentiality; timely access. What must this recipient receive, and has provision occurred? | CGOV.1 and CGOV.3 for the corporate basis. Where needed, ADM.2 identifies the parties and their relations, and ADM.8 tests permission to read or disclose the material. |
 | 2 | [CGOV.9 - Establish and Operate Internal Control](19-cgov-9---establish-and-operate-internal-control.md) | Stable | internal control; exposure; operation; response; effectiveness. How does this control change the exposure, and can it operate? | CGOV.3 for authority; OPS.18 where an operating-control contribution is needed. |
 | 3 | [CGOV.10 - Obtain and Use a Scoped Audit or Assurance Conclusion for Corporate Governance](20-cgov-10---obtain-and-use-a-scoped-audit-or-assurance-conclus.md) | Stable | audit; assurance; professional conclusion; independence; scope. Does this report support the conclusion needed here? | CGOV.8 for provision; specialist engagement methods and applicable standards. |
 | 4 | [CGOV.11 - Make and Record a Corporate Decision](21-cgov-11---make-and-record-a-corporate-decision.md) | Stable | corporate decision; deliberation; eligible participation; vote; resolution; record. How do authorized participants perform this decision? | CGOV.1 and CGOV.3 and any needed CGOV.6–CGOV.10 results; PSDA.14 may supply advice. |
@@ -80,7 +80,7 @@ You can ask an assisting agent: “Explain this and give me your comments in ord
 
 ### CGOV-DELEGATION - Can this director sign the proposed commitment?
 
-- **Situation:** A director is asked to sign a commitment, and an existing delegation may already be sufficient.
+- **Situation:** A director is asked to sign a commitment, and an existing delegation may be sufficient.
 - **Question:** Who can authorize this act, and who can sign it?
 - **First useful result or blocker:** The authority answer for the proposed act, including any distinct approval or signing condition.
 - **Start with:** [CGOV.3](13-cgov-3---establish-authority-for-corporate-appointments-remo.md). Use the existing delegation and its conditions; [CGOV.1](11-cgov-1---frame-the-corporate-matter-and-its-governing-rules.md) helps if the corporation or proposed act remains unclear.
@@ -92,11 +92,11 @@ You can ask an assisting agent: “Explain this and give me your comments in ord
 - **Question:** Which contributions must come together so that eligible participants can decide the actual proposal?
 - **First useful result or blocker:** A usable answer to the unresolved authority, conflict or information question; an actual corporate decision when that is the assignment and its conditions can be met.
 - **Start with:** [CGOV.1](11-cgov-1---frame-the-corporate-matter-and-its-governing-rules.md) to identify the act; use [CGOV.6](16-cgov-6---expose-conflicts-and-related-party-interests.md) for the interest and its consequences, [CGOV.7](17-cgov-7---arrange-independent-review-and-a-disinterested-corp.md) for warranted independent review and eligible participation, [CGOV.8](18-cgov-8---provide-corporate-information-under-applicable-righ.md) for information provision, and [CGOV.11](21-cgov-11---make-and-record-a-corporate-decision.md) for deliberation and decision. Existing sufficient contributions can be reused.
-- **Stop or return:** Stop the affected decision when its participation or other required condition fails. Return only the missing contribution; preparation may remain possible. The connected example below explains the distinction.
+- **Stop or return:** Stop the affected decision when its participation or other required condition fails. Return only the missing contribution; preparation may remain possible.
 
 Suppose the supplied rules reserve the transaction to the board, exclude the interested director from deliberation and voting, and require both remaining directors to approve. They also require a shareholder summary before the decision. Those are this case's inputs, not universal corporate rules.
 
-The conflict account identifies the participation conditions. The information account specifies what the summary must convey and what confidential detail can be withheld. A specialist's valuation helps the directors judge terms under its assumptions. If another independent report would add no needed contribution and no rule requires it, [CGOV.7](17-cgov-7---arrange-independent-review-and-a-disinterested-corp.md) does not make commissioning one a prerequisite.
+The conflict account identifies the participation conditions. The information account specifies what the summary must convey and what confidential detail can be withheld. A specialist's valuation helps the directors judge terms under its assumptions. Under [CGOV.7](17-cgov-7---arrange-independent-review-and-a-disinterested-corp.md), the existing valuation can suffice when the directors have what they need to judge the terms and no rule requires another report.
 
 Now separate a preparatory commitment from a proposed live deployment. The case permits preparation but requires a technical release for deployment. The board may authorize preparation after the corporate conditions are met; the favourable valuation supplies neither the corporate act nor the technical release. If a director cannot participate, the existing advice remains usable while the decision awaits a permitted participation arrangement. If shareholder disclosure lacks a material assumption, repair that disclosure rather than commission a replacement valuation.
 

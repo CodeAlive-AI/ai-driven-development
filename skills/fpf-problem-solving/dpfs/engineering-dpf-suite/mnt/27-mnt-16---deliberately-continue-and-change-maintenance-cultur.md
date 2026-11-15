@@ -5,7 +5,7 @@
 
 ### MNT.16:1 - Problem frame
 
-Use this pattern when the question concerns how maintenance practice is actually continued or changed among people: a hand-back Method is taught, a new diagnostic approach spreads or an older practice persists despite a revised manual.
+Use this pattern when the question concerns how practitioners continue or change a maintenance practice: a hand-back Method is taught, a new diagnostic approach spreads or an older practice persists despite a revised manual.
 
 Return a qualified account of the relevant cultural relations or a supported decision to continue, change, branch or stop an arrangement. Maintenance culture here concerns the generation, transmission, enactment, recognition, selection, retention and loss of practice variants in a stated population. A training release alone does not establish those outcomes.
 
@@ -21,19 +21,19 @@ Shared practice supports continuity but can retain a stale or harmful habit. Loc
 
 ### MNT.16:4 - Solution
 
-State the maintenance population, period and receiving question. Identify the relevant Method variant and the work or result whose continuation matters. Use ordinary terms before introducing a cultural label such as school, tradition or maturity.
+State the maintenance population, period and receiving question. Identify the method in use and the work or result whose continuation matters. Name a variant when the comparison supports a difference in the reusable way. Use ordinary terms before introducing a cultural label such as school, tradition or maturity.
 
 Recover the cultural relations that the available basis supports. A manual can transmit a description; a mentor can demonstrate a technique; practitioners can enact it in actual work; peers or supervisors can recognize and reward it; the population can retain or abandon it. These are different claims. Use [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) when their distinction changes the account.
 
-Connect an enactment claim to actual practitioners, work and maintained Systems at the scope needed for that claim. A selected class of technicians or a training plan does not supply an observed occurrence. If a precise performed-Work claim is needed, [FPF A.13](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/12-a-13---the-agential-role-agency-spectrum.md) and [FPF A.15.1](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/15-a-15-1---u-work-dated-performed-work-occurrence.md) govern the performer and occurrence; assignment-bound attribution is added only when that relation is actually consumed.
+Connect an enactment claim to actual practitioners, work and maintained Systems at the scope needed for that claim. A selected class of technicians or a training plan does not supply an observed occurrence. If a precise performed-Work claim is needed, [FPF A.13](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/12-a-13---the-agential-role-agency-spectrum.md) and [FPF A.15.1](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/15-a-15-1---u-work-dated-performed-work-occurrence.md) govern the performer and occurrence; assignment-bound attribution is added only when the claim depends on that assignment.
 
-Compare plausible explanations for the current pattern of use. A variant may persist because it works under local conditions, because suitable tools are available, because reporting rewards it or because another variant cannot be enacted with the available time. Retain hypotheses at their actual support. A population-wide causal explanation may remain unresolved while a bounded current account is complete.
+Compare plausible explanations for the current pattern of use. A variant may persist because it works under local conditions, because suitable tools are available, because reporting rewards it or because another variant cannot be enacted with the available time. State how much support each hypothesis has. A population-wide causal explanation may remain unresolved while a bounded current account is complete.
 
 Select a deliberate change only when its attainable contribution warrants the whole burden. The action might change access to applicable descriptions, mentoring, recognition, provider support or the conditions that discourage reporting. Compare keeping, revising, branching and stopping the arrangement. Include effects on practitioners and operation, not just attendance or publication counts.
 
 Keep proposal, performed intervention, changed practice and measured maintenance effect separate. If an intervention is performed, judge it by the relevant actual-use and maintenance consequences. Training completion can establish a training result; it does not by itself establish adoption, reliability improvement or safer work.
 
-Return the supported continuation and its population, period and uncertainty. A new survey or experiment is selected only for a worthwhile attainable answer. When the existing evidence already supports retaining a practice or fixing a known access problem, return that answer without requiring a full cultural study.
+Return the supported continuation and its population, period and uncertainty. A new survey or experiment is selected only for a worthwhile attainable answer. When the existing evidence supports retaining a practice or fixing a known access problem, return that answer without requiring a full cultural study.
 
 ### MNT.16:5 - Archetypal Grounding
 
@@ -51,7 +51,7 @@ Visible experts and day-shift work can dominate the account while contractors an
 
 ### MNT.16:7 - Conformance Checklist
 
-Are population, period, Method variant and receiving use clear? Are transmission, enactment, recognition, selection and retention distinguished where the conclusion depends on them? Are proposed changes, performed actions and observed effects separately supported? Does a selected intervention address an actual relation or condition rather than only a label?
+Are the population, period, method actually used and receiving use clear? Are transmission, enactment, recognition, selection and retention distinguished where the conclusion depends on them? Are proposed changes, performed actions and observed effects separately supported? Does a selected intervention address an actual relation or condition rather than only a label?
 
 A qualified current account or supported continuation can close the request. New inquiry and stronger causal claims need their own attainable contribution and evidence.
 
@@ -73,7 +73,7 @@ The maintenance lead can act on a specific continuation problem without overstat
 
 ### MNT.16:11 - SoTA-Echoing
 
-The question is how to choose a useful maintenance-culture intervention from limited evidence. This pattern adapts [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md)'s relation-specific account and conditional inquiry, with CASA's 2026 fatigue-reporting concern as a domain counterexample to awareness-only responses. Against training-count or maturity-label reasoning, the Method distinguishes transmission of a description, enactment in work and maintenance effects. The second-shift access case illustrates how those distinctions guide an intervention. It accepts bounded observation and uncertainty while avoiding an unnecessary universal study. The aviation source does not prove the same incentive effect in every maintenance population. Reopen when actual-use evidence, provider conditions or consequences change the continuation decision. See [CASA's account](https://www.casa.gov.au/operations-safety-and-travel/safety-management-systems/sector-safety-risk-profiles/maintenance-activities-sector-safety-risk-profile/fatigue).
+The question is how to choose a useful maintenance-culture intervention from limited evidence. This pattern adapts [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md)'s relation-specific account and conditional inquiry, with CASA's 2026 fatigue-reporting concern as a domain counterexample to awareness-only responses. Against training-count or maturity-label reasoning, the Method distinguishes transmission of a description, enactment in work and maintenance effects. Limited observations can justify an intervention, as when the second shift’s terminal points to the wrong instructions, while the wider causal explanation remains uncertain. CASA’s account concerns fatigue reporting in aviation. A claim about the effect of reporting incentives in another maintenance population needs evidence for that population. Reopen when actual-use evidence, provider conditions or consequences change the continuation decision. See [CASA's account](https://www.casa.gov.au/operations-safety-and-travel/safety-management-systems/sector-safety-risk-profiles/maintenance-activities-sector-safety-risk-profile/fatigue).
 
 ### MNT.16:12 - Relations
 

@@ -5,17 +5,17 @@
 
 ### RHY.11:1 - Problem frame
 
-**Use this when** a performer or group can produce parts separately but loses their intended relationship when they occur together. A voice may copy the accents of the beat gesture instead of keeping its phrase. A continuous movement may stop at every instrumental attack. Two regular action sequences may compete for the same mechanism.
+**Use this when** the question concerns how rhythmic parts work together. A performer may be able to produce each part alone and lose their intended relationship in combination. The voice may copy the beat gesture’s accents, a continuous movement may stop at each instrumental attack, or two regular sequences may require the same mechanism at incompatible times. The same method can explain a successful joint performance or assess a proposed one.
 
-Recover what each contribution must retain and how the contributions relate. Construct and try the combined passage. The first result is a usable joint coordination, a qualified construction for a trial, or a localized conflict or missing capability.
+Identify what each part must retain and how it relates to the others. For a design task, construct a combination and check it against the passage. Try it when a feasible joint attempt would supply needed evidence. Report the observed coordination, the feasibility of a proposal or the particular conflict or missing capability the evidence supports.
 
-When the parts already coexist as required, use that performance directly. A lesson sequence is needed only when developing or restoring the joint capability becomes the next question.
+Use an adequate joint performance and the evidence of it for the question it answers. Develop a practice sequence when the task calls for acquiring or recovering that capability.
 
 ### RHY.11:2 - Problem
 
-A description can place several parts on the same time line without giving a performer a way to realize them together. Conversely, forcing every part onto the same accents can make execution easier while removing the intended rhythm. Separate success, aligned notation and a shared count leave joint production unresolved.
+A time line can show the intended coincidences, offsets and independent groupings of the parts while leaving their joint execution open. Aligning all their accents may make performance easier and remove a relation the passage requires. Examine what performers or mechanisms must do together as well as what the notation and separate performances establish.
 
-A particularly demanding instance combines a regular pulse with accents whose places can be chosen relative to it. The accent may shorten the next pulse interval or make the sustaining movement stop. Conversely, the regular movement may pull the accent towards its own convenient turning point. The intended result retains both the pulse and the chosen accent placement. Learning one fixed combined figure can supply that figure without yet supplying freedom to change the accents.
+Consider a regular pulse with accents that can move relative to it. An accent may shorten the next pulse interval or interrupt the sustaining movement. The supporting movement may also pull the accent towards a convenient turning point. The intended performance preserves the pulse and the chosen placement of the accent. Learning a fixed figure can make that figure available at the practised tempo and with the practised support. A claim about choosing different placements needs evidence of that range.
 
 ### RHY.11:3 - Forces
 
@@ -30,67 +30,67 @@ A particularly demanding instance combines a regular pulse with accents whose pl
 
 #### RHY.11:4.1 - Recover what must obtain together
 
-Identify the overlapping contributions and their bearers: for example a vocal phrase, a reference gesture, an instrumental pattern, a continuous body movement and a partner cue. Retain each contribution's required order, duration, grouping, accent or continuous course.
+Identify the contributions that overlap and who or what produces each, such as the voice carrying a phrase, a hand giving the reference, an instrument playing a pattern or a partner providing a cue. For each, specify the order, duration, grouping, accent or continuous course the passage requires.
 
-Include entry and the following action. A combination that works only until the last accent can still defeat the passage. Use sufficient RHY.2 descriptions and RHY.5 representations rather than reconstruct them.
+Include the entry and following action when they affect the answer. A combination may work until the last accent and prevent the continuation. Use adequate descriptions from RHY.2 and representations from RHY.5 when available.
 
-Ask which differences are essential. The voice may cross gesture boundaries; the movement may continue through silence. Those relations define what the combined performance must preserve.
+Identify what the combination must preserve. For example, a vocal phrase may cross a gesture boundary or a movement may continue through silence.
 
 #### RHY.11:4.2 - Find the relations that make joint timing recoverable
 
-Locate the relevant shared landmarks, intended displacements and intervals. For commensurate periodic parts, a common subdivision can make coincidence and alternation visible. Retain each part's own grouping on that subdivision.
+Locate the relevant shared landmarks, intended displacements and intervals. For periodic parts with a common subdivision, that subdivision can show coincidence and alternation while preserving each part’s grouping.
 
-Use a few shared arrival points or demonstrated relations when a fine count is unnecessary or obstructive. For continuous contributions, relate identifiable portions of the course—such as a rise, turn or release—to the other part without reducing the whole course to those markers.
+Use a few shared arrival points or a demonstration when a fine count would add little or distract the performer. For a continuous contribution, relate a rise, turn or release to the other part and retain the course between those landmarks when it matters.
 
-Do not force a common repeating grid on material that lacks one. A free phrase can relate to a sustained movement through a particular entrance or release; the interior relation may remain deliberately flexible. State the relationship the performance actually needs.
+Use the relation the passage actually calls for. A free phrase can meet a sustained movement at an entrance or release while their interior relation stays flexible. Such a passage can be specified without a common repeating grid.
 
 #### RHY.11:4.3 - Check simultaneous demands, not just separate schedules
 
-Map the required actions onto the body parts, performers or mechanisms that produce them. Compare overlapping preparation, recovery, attention and cue use. RHY.9 repairs the allocation or access when a contribution has nowhere to occur.
+Identify which body parts, performers or mechanisms produce the actions. Check overlapping preparation, recovery, attention and access to cues. If allocation or access prevents a contribution, describe the conflict. Use RHY.9 to change the arrangement when a repair is requested.
 
-Distinguish rhythmic layers from the methods that make them possible. Keeping balance, maintaining contact, articulating a phrase and performing the larger figure can occur together through constituent and encompassing methods. They are not automatically four separate rhythm lines. Conversely, two instrument parts can be parallel rhythmic layers without either method being part of the other.
+A rhythmic layer is a course of events or movement with a role in the passage. A constituent method is part of how an encompassing action is performed. Keeping balance and contact can contribute to articulating a phrase and performing the larger figure at the same time. These contributions need not be separate rhythmic lines. Two instrument parts can also be parallel layers even when neither method is a constituent of the other.
 
-If an individual can recall the figure and produce its components but loses a needed coordination in combination, locate that joint demand before adding repetition. RHY.12 addresses the missing capability at the relevant level.
+If a performer can recall the figure and produce its parts but loses their intended relationship when combining them, locate the particular joint demand before prescribing more repetitions. Use RHY.12 when developing that capability is the task.
 
 #### RHY.11:4.4 - Establish the joint relation and restore complexity selectively
 
-Use a familiar feasible means to make the wanted relation perceptible and executable. Options include a demonstrated composite, an external reference, separately allocated parts, slower compatible performance, or a simplified articulation that preserves the essential cross-layer relation.
+For a new or difficult combination, use a feasible means of making its essential relation perceptible and achievable. A familiar demonstration of the combined phrase, an external reference, separately assigned parts, a compatible slower tempo or a simpler articulation can help. Check that the performer can use the means chosen and that it preserves the relation between parts.
 
-Try the parts together. Then restore the omitted contribution whose addition matters next. Keep the common landmarks and each part's own organization. If one part begins copying the other's accent or tempo, return to the specific relation that was lost rather than restart unrelated learning.
+When their joint execution still needs to be learned or tested, try the parts together. Restore an omitted contribution when the intended performance requires it and preserve the landmarks and grouping of each part. If one part begins to copy the other’s accents or tempo, identify the relation that was lost. An existing record of the combined passage may suffice for an assessment.
 
-Choose changes compatible with the actual technique. A slower tempo can alter balance, gesture, phrasing or control demands; success there supports only the corresponding conditions. Do not infer full-tempo capability from the diagram or slower construction.
+Choose changes compatible with the technique and the target passage. A slower tempo can change balance, gesture, phrasing or control. Limit any conclusion about performance to the conditions observed, and use evidence at full tempo for a claim about that tempo.
 
 ##### RHY.11:4.4.1 - Keep a common time while allowing different actions
 
-For a pulse with independently chosen accents, first distinguish the time being maintained from the movement used to maintain it. A regular pulse has recurring events at the required intervals. Its producing movement can accelerate, slow down, reverse and redistribute effort within each interval. A brush circle and a standing leg's pressure–release need not have constant instantaneous speed or force.
+When accents can be chosen independently of the pulse, distinguish the recurring events from the movement that produces them. Their intervals can remain regular while the movement speeds up, slows down, reverses or redistributes effort within an interval. The brush circle or standing leg’s pressure and release need not have constant instantaneous speed or force.
 
-**Give both actions one recoverable temporal relation.** Establish the beat, phrase or other reference that the passage uses, and locate the accent relative to it. Hear, speak, demonstrate or represent the combined result with its actual gaps. An accent halfway between beats must remain halfway between them; placing it on the next beat changes the result. When an external metronome supplies the pulse, the performer's accent cannot physically alter that pulse. When the performer also produces the supporting movement, the actions share bodily resources and can disturb each other. The external reference can expose that disturbance while the performer constructs the joint action.
+**Place both actions against the passage’s reference.** Identify the beat, phrase or other reference and locate the accent relative to it. Hear, speak, demonstrate or represent the combined result with its gaps. For an accent halfway between beats, moving it to the next beat changes the task. With a fixed external metronome, accent placement cannot change the metronome’s pulse. If the performer also produces the supporting movement, the actions can disturb each other through shared bodily resources. Comparing them with the external reference may reveal that disturbance.
 
-**Prepare the accent within the continuing action.** Choose a realization whose preparation and recovery fit between the required events. Keep the supporting movement going while the other contribution approaches its target. Start that approach early enough for the intended sound, contact or weight event to arrive at its chosen place. If the accent is late because its excursion takes too long, begin the preparation earlier or use a smaller feasible excursion while preserving the required articulation. Starting every preparation on a beat is unnecessary when the accent belongs elsewhere. A demonstrated combined phrase can make these overlapping preparations recoverable.
+**Prepare the accent while the support continues.** Choose a movement whose preparation and recovery fit between the required events. Begin early enough for the sound, contact or weight event to arrive at the chosen position. If a long excursion makes the accent late, earlier preparation or a shorter feasible excursion may preserve the required articulation. Preparation can begin between beats. A demonstration of the combined phrase can make the overlap easier to recover.
 
-**Allocate effort according to the two results.** Give the accent a controllable means of articulation: a local change of pressure, a stroke, a free-limb movement or a different already available technique. Avoid recruiting a whole supporting movement merely because it makes the accent easier. For example, a short stroke can articulate while the other hand completes its sweep; an unloaded toe contact can articulate while the standing leg continues its pressure–release. The actual technique must preserve balance, contact, sound and continuation. Compensating changes of effort may help preserve the pulse: useful coordination does not require every part of the body to remain physically unchanged.
+**Allocate effort for both results.** Articulate the accent with a controllable change of pressure, a stroke, a free-limb movement or another available technique. A short stroke with one hand can leave the other hand’s sweep intact. An unloaded toe contact can coexist with the standing leg’s pressure and release. Check that the technique preserves the required balance, contact, sound and continuation. Compensating changes of effort may help keep the pulse regular.
 
-**Correct the contribution that missed its target, using the intended relation.** Attend to the pulse before and after the accent as well as to the accent's place. If only the accent was late, change its preparation or articulation; do not make its accidental arrival the next starting point of the pulse. If the supporting cycle lengthened, restore that cycle against the selected reference and inspect the accent again. If both drifted together, their mutual agreement alone can hide loss of the musical reference. RHY.10 supplies a permitted phase or tempo correction when the whole reference actually needs to change. During a dense passage, act through the familiar coordinated movement and assess a short trace afterwards instead of trying to issue a separate conscious command for every muscle.
+**Use the intended relation to locate the correction.** Check the pulse before and after the accent as well as the accent’s position. If the accent alone arrives late, change its preparation or articulation while keeping the next pulse at its intended time. If the supporting cycle lengthens, restore it against the reference and examine the accent again. If both actions drift together, compare them with the intended musical reference. Their mutual agreement can hide the displacement. Use RHY.10 when the task calls for adjusting the shared phase or tempo. In a dense passage a performer can use a familiar coordinated movement and examine a short record afterwards.
 
-**Keep choices available within a feasible range.** Move the next accent to another required place while retaining the support. Later change the tempo or reference as the passage requires, and relocate the accents accordingly. This retains the useful timing connection while reducing interference between the actions. A technique that works only at one habitual phase needs further development if the intended use demands other phases. If an accent requires the same support, space or recovery time needed by the next pulse, change its means or the performing arrangement. Removing a required accent or moving it to an easier beat does not satisfy that version of the task.
+**Develop the range of choices the passage needs.** For variable placement, move the next accent while retaining the support. If the intended tempo or reference changes, relocate the accents against it. A technique that works at one habitual phase may suffice for a fixed figure. For other phases, check whether the accent competes with the support, space or recovery time of the next pulse. If the demands conflict, a different realization or allocation may preserve both. If they are compatible and the performer needs to learn the other placements, practise those placements against the pulse. Keep any accent and placement the task requires.
 
-This is selective coupling in the practical sense: share the timing that the passage needs, while controlling preparation, articulation and correction so that one contribution does not impose its unwanted changes on the other. A performer may organize a familiar combined pattern as one action or use more separately controlled contributions; the description does not require one particular internal clock. RHY.12 develops the missing coordination through practice of this joint result.
+Both actions share the timing needed by the passage. Their preparation, articulation and correction can still be controlled so that an unintended change in one does not displace the other. A performer may organize a familiar combination as one movement or control its contributions more separately. The description leaves the internal timing mechanism open. Use RHY.12 if the joint coordination needs development.
 
-The same construction can be tried beyond a particular instrument when the receiving activity has a continuing temporal contribution, a separately variable articulation, means to realize both, and feedback that distinguishes their two errors. Singing a varied phrase over a beat gesture is one such use. A machine can realize comparable timing requirements through scheduling and suitable actuators, but its control implementation and qualification are engineering work. Matching the requirements supports reuse of this construction; it does not transfer an already acquired human skill.
+Consider this construction for another instrument or activity when it has a continuing temporal contribution, a separately variable articulation, means to produce both and feedback that distinguishes their errors. Singing a phrase against a beat gesture is one example. An engineered machine may meet similar timing requirements with its own controller and actuators. Reusing a construction requires compatible conditions. Transferring an acquired human skill or qualifying an engineered implementation needs evidence for that claim.
 
 #### RHY.11:4.5 - Keep the combination that serves the passage
 
-Judge the contributions together, their required relationship and the continuation. Where a combination fails, distinguish a wrong relationship, an incompatible allocation and an unavailable execution capability. They call for different repairs.
+Examine the parts together, their required relationship and the continuation. When the combination fails, distinguish evidence of a wrong relation, a conflicting allocation or a missing execution capability. If the evidence does not distinguish these explanations, state the limit. A repair depends on which problem is established.
 
-Retain a successful local combination, a proposal whose constraints are satisfied but execution remains to be tried, or the particular missing contribution. Separate practice remains useful input; it is not the joint result.
+Report what the evidence establishes about the combination. It may support observed joint execution, a proposal within the checked constraints, a specific conflict or a remaining uncertainty. Separate performances give evidence about the parts. To report what happened jointly, use evidence of the combined passage.
 
-Stop with the answer needed by the next performance or development choice. Reopen the affected cross-layer relation when a part, allocation, tempo, cue, grouping, performer or continuation changes; preserve sufficient unaffected work.
+Finish when the evidence answers the structural, performance or development question or establishes the limit on the answer. If a change in part, allocation, tempo, cue, grouping, performer or continuation affects the conclusion, reconsider that relation and retain the rest.
 
 ### RHY.11:5 - Archetypal Grounding
 
 #### RHY.11:5.1 - Two against three, then a resource conflict
 
-In a constructed six-unit cycle, part A has actions at 0 and 3; part B at 0, 2 and 4. The next cycle begins at 6.
+In a constructed six-unit cycle, part A has events at 0 and 3 and part B at 0, 2 and 4. The next cycle begins at 6.
 
 | Position | Required contribution |
 | --- | --- |
@@ -100,11 +100,11 @@ In a constructed six-unit cycle, part A has actions at 0 and 3; part B at 0, 2 a
 | 4 | B |
 | 6 | A and B together at the next cycle |
 
-A preserves two equal intervals of three units; B preserves three equal intervals of two. The joint sequence has successive gaps 2, 1, 1 and 2. Counting or displaying the six units makes their relationship inspectable without making A adopt B's grouping.
+A has two intervals of three units and B three intervals of two. The combined sequence has successive gaps of 2, 1, 1 and 2 units. Counting or displaying the six positions shows both the shared start and the alternating attacks while preserving their different groupings.
 
-Suppose one mechanism must realize all events and its supplied limit requires at least 1.5 units between successive actions. Even if coincident A/B events can be realized by one action, the one-unit gaps conflict with that limit. Both separate parts satisfy it; their single-mechanism combination does not.
+Suppose one mechanism must perform all events and requires at least 1.5 units between successive actions. Even allowing one action to serve coincident A and B events, the two one-unit gaps violate its limit. Each part alone allows at least two units, so both separate schedules fit.
 
-Allocating A and B to two suitable mechanisms removes this particular conflict: their own intervals remain three and two. The calculation returns a compatible allocation for a joint trial, not proof of a human's two-hand skill or a completed robot performance.
+Two suitable mechanisms, one per part, remove that recovery conflict. A still has intervals of three units and B intervals of two. The allocation fits this constraint and can be proposed for a joint trial. Actual robot performance or a human performer’s two-hand skill requires evidence of its own.
 
 #### RHY.11:5.2 - Phrase accents need not follow every beat gesture
 
@@ -114,41 +114,41 @@ The gestures mark 0, 1 and 2, with the cycle restarting at 3. Syllables occur at
 
 Suppose a learner already performs both contributions alone. In the first constructed joint attempt, they restart the phrase at every gesture and lose the three-syllable grouping. An aligned display shows the two phrase starts across one gesture cycle; a familiar demonstration preserves that relation. In a subsequent stipulated attempt, the learner keeps the three gesture beats, both phrase groups and the return at 3.
 
-Retain that supported combination for this rate. Its result is joint coordination with the given support. Removing the display, changing rate or performing a longer passage changes the later question; it is not covered by the stipulated attempt.
+The attempt supports joint coordination at this rate with the display and demonstration available. Retain that result for comparable use. A different tempo, unaided entry or a longer passage requires evidence under the corresponding conditions.
 
 #### RHY.11:5.3 - Keep a continuous course while an accent crosses it
 
 A constructed passage combines a familiar four-beat swell with an articulated accent at the third beat. The swell must continue rising until the fourth beat; the accent must not restart that course. The performer has the relevant safe instrumental technique.
 
-Suppose separate attempts preserve the swell and place the accent correctly. In the first combined attempt, the accent causes an audible restart. Reducing the accent's size within the already learned technique yields a second attempt in which the swell continues, the accent remains recognizable at the third beat, and the following release is retained.
+Suppose the separate attempts preserve the swell and place the accent as required. In the first combined attempt, the accent causes the swell to restart audibly. For the second attempt the performer reduces the accent’s size within the learned technique. The swell continues, the accent remains recognizable at the third beat and the following release is retained.
 
-Keep the second combination locally. Coincidence of attack marks would not distinguish the two results: the continuous course is the deciding relation. RHY.3 supplies a new carrier/articulation construction if no available means retains it.
+The second combination meets the requirements in this passage. Both attempts can share the same attack positions while differing in the continuous swell. Use RHY.3 to find a different way to articulate the accent while preserving the required carrier when the present means cannot do both.
 
 #### RHY.11:5.4 - Move an accent without moving the pulse
 
-Consider a constructed four-beat passage. The supporting events belong at beat positions 0, 1, 2 and 3; the next phrase begins at 4. A second contribution must articulate at 1.75. The performer has a manageable sustaining movement and a short articulation, but their combination is unsettled.
+Consider four supporting events at beat positions 0, 1, 2 and 3, followed by the next phrase at 4. A second contribution must articulate at 1.75. The performer has a manageable sustaining movement and a short articulation. The question concerns their combination.
 
-The performer first hears or demonstrates the joint result: the accent falls three quarters of the way from beat 1 to beat 2, and the next supporting event still arrives at 2. Preparation begins before 1.75. In a stipulated first attempt, the accent arrives at 1.75 but its large preparatory movement delays the next supporting event to 2.15. In a second attempt, support stays at 2 but the accent waits for that familiar movement phase and also lands at 2. These are different failures.
+A demonstration or audible example gives the joint target. The accent comes three quarters of the way from beat 1 to beat 2. The next supporting event remains at 2, and preparation for the accent begins before 1.75. In the first stipulated attempt the accent lands at 1.75, but its large preparation delays the support to 2.15. In the second, the support arrives at 2, and the accent follows its familiar movement phase and also lands at 2. The two attempts miss different targets.
 
-For the next candidate, the performer uses a smaller already learned articulation, begins its preparation early enough to reach 1.75, and continues the supporting movement through both preparation and release. In the stipulated trial, the accent arrives at 1.75 and the next supporting events remain at 2 and 3. The change preserved both targets; merely reducing the accent until it vanished would not have done so. The numbers make the intended relation inspectable and are not universal timing tolerances.
+For the next candidate the performer uses a smaller learned articulation, starts preparing early enough for 1.75 and continues the support through preparation and release. In the stipulated trial the recognizable accent arrives at 1.75 and the next supporting events occur at 2 and 3. Both targets are met. Disappearance of the accent would leave one target unmet. These times specify this passage.
 
-Now request accents at 0.5 and 2.75 in the following phrase. The performer must prepare those events within the same continuing pulse rather than replay the first combined figure. If the pulse stays regular but an accent slips to a beat, the new choice remains unavailable. If the intended tempo then changes, both supporting intervals and accent locations must change together. Keeping the old absolute accent times would preserve isolation at the expense of synchronization.
+Suppose the following phrase requires accents at 0.5 and 2.75. Prepare those accents at their new positions within the continuing pulse. The first combined figure leaves those placements untested. If the pulse stays regular and an accent slips to a beat, the corresponding attempt misses the requested placement. When the tempo changes, locate both the supporting events and the accents against the new reference. Keeping the old absolute accent times may lose their required relationship.
 
-This worked construction distinguishes a successful local coordination from an acquired range of choices. The concrete brush and partnered-movement realizations are developed in [MDPE.11:4.5](../mdpe/29-mdpe-11---interpret-or-shape-music-or-dance-material-while-p.md#mdpe1145---balboa-brushes-and-event-timing); their related practice is in MDPE.10:4.6. The particular means, partner response and available recovery decide whether the construction fits each use.
+The first successful figure establishes local coordination. A claim about a range of choices requires evidence from other required positions. For concrete brush and partnered-movement realizations, see [MDPE.11:4.5](../mdpe/29-mdpe-11---interpret-or-shape-music-or-dance-material-while-p.md#mdpe1145---balboa-brushes-and-event-timing) and the related practice in MDPE.10:4.6. The available means, partner response and recovery time affect whether the construction fits each use.
 
 ### RHY.11:6 - Bias-Annotation
 
-A common grid is especially convenient for simple ratios and can bias analysis towards discrete commensurate parts. Continuous courses and flexible phrasing need their own retained relations. The worked attempts are constructed demonstrations.
+A common grid works particularly well for simple ratios and can draw attention away from the shape of a movement between landmarks. Continuous movement and flexible phrasing require the relations that matter between landmarks or across an unfixed span. The worked attempts are constructed demonstrations. Claims about learning speed or how well a cue works across learners need observations of those outcomes.
 
 ### RHY.11:7 - Conformance Checklist
 
 - Each contribution and its essential differences are recoverable.
-- Shared landmarks or flexible relations are sufficient for the intended coordination.
+- Identify the shared landmarks or flexible relation the coordination requires and assess whether the available arrangement supplies them.
 - Simultaneous demands and continuation are considered under the actual allocation.
-- The combined result is distinguished from separate success or a compatible diagram.
+- Distinguish evidence about the combined passage from separate performances and calculated compatibility.
 - A pulse-and-accent use checks pulse regularity and requested accent placement separately, including continuation.
-- Claimed freedom of accent choice includes a changed choice; a change of reference retains the required synchronization.
-- A failure returns to its relationship, allocation or capability question.
+- For a claim about a range of accent choices, use evidence covering the required placements or supporting the range claimed. For a changed reference, establish whether the required synchronization is retained.
+- Give the supported explanation for a failure or identify which relation, allocation or capability remains uncertain.
 - Support and changed conditions qualify the retained result.
 
 ### RHY.11:8 - Common Anti-Patterns and How to Avoid Them
@@ -156,39 +156,39 @@ A common grid is especially convenient for simple ratios and can bias analysis t
 | Failure | Repair |
 | --- | --- |
 | Make every part adopt the reference's accents | Preserve each part's grouping while showing their common landmarks. |
-| Treat a combined time line as a performable combination | Inspect joint resource demands and try the relevant passage. |
+| Treat a combined time line as proof of joint execution | Examine the simultaneous demands and constraints. Use evidence from the combined passage, or try it when needed, to establish how performers actually execute it. |
 | Repeat a whole figure when one middle coordination is missing | Locate the constituent or joint capability that the figure depends on. |
 | Add complexity until the continuing contribution disappears | Restore one consequential contribution while retaining the joint relation. |
-| Call the order of exercises the vertical structure of the methods | Identify which constituent methods operate while the encompassing method is performed. |
+| Infer the constituent methods of a performance from the order of exercises | Identify the methods performed as part of the encompassing work while it is under way. |
 
 ### RHY.11:9 - Consequences
 
-A performer can preserve contrasting parts rather than simplify the rhythm into uniformity. Failure becomes a more specific choice among explanation, reallocation, a different realization and capability development. A successful construction remains tied to its tempo, support and performing conditions.
+A performer can preserve different accents, groupings and continuous courses in one passage. A failure can indicate a need for explanation, reallocation, a different realization or capability development. Keep a successful combination with its tempo, support and performing conditions.
 
 ### RHY.11:10 - Architectural Rationale
 
-The whole imposes relations that do not appear in either part alone. Common landmarks make those relations recoverable, while allocation determines whether the same resources can support the required actions together. Neither substitutes for learned execution.
+The whole can require a relation that neither part specifies alone. Its design can show the required relation; evidence of joint execution shows what the performers realized. Common landmarks make it easier to identify, and allocation determines which actions can use the same resources at the required time. Learned joint execution needs suitable evidence of performance.
 
-Simultaneous layers and the constituent/encompassing method vertical cross-cut each other. The same balance method can support several layers; one layer can require several constituent methods. Keeping those relations explicit helps distribute work between people and equipped agents and helps locate a missing capability without forcing one tree onto every description.
+A passage can have several rhythmic layers, and the methods that realize them can cut across those layers. Balance control may support several layers, and one layer may depend on several constituent methods. Use those relations to explain an existing allocation, assign work when needed or locate a coordination the performer still needs to learn.
 
 ### RHY.11:11 - SoTA-Echoing
 
-Nelson's *Solkattu Manual* (2008), printed pp. 15–17, supplies the explicit contrast between gesture cycle and phrase at several rates. It provides a concrete practice construction. The completed attempt above is constructed to demonstrate the resulting method.
+Nelson’s *Solkattu Manual* (2008), printed pp. 15–17, gives a concrete construction for performing a phrase against a gesture cycle at several rates. The worked attempt in §5.2 stipulates the learner’s performance to illustrate that construction. A learning schedule for another performer depends on their task and practice conditions.
 
-Toussaint's *The Geometry of Musical Rhythm*, second edition (2020), supplies useful discrete rhythmic constructions and action-allocation comparisons. A grid makes such relations calculable; continuous courses and actual joint capability require additional content.
+Toussaint’s *The Geometry of Musical Rhythm*, second edition (2020), gives discrete rhythmic constructions and compares the allocation of actions. A grid makes their relations calculable. A continuous course needs information between landmarks, and a claim of joint capability requires appropriate performance evidence.
 
-Cha's [Takadimi reconsideration](https://doi.org/10.1177/0305735614528063) proposes added syllabic information. Birch and Walsh's [conducting response](https://www.music.org/images/conf/reg/ne/2022_NE_Schedule_20220214.pdf#page=18) instead proposes a maintained gestural reference. That reference does not itself distinguish sustained sound from silence. Their comparison supports using complementary layers while retaining what each supplies. General joint coordination here is a conceptual synthesis.
+Cha’s [Takadimi reconsideration](https://doi.org/10.1177/0305735614528063) proposes adding syllabic information. Birch and Walsh’s [conducting response](https://www.music.org/images/conf/reg/ne/2022_NE_Schedule_20220214.pdf#page=18) proposes maintaining a gestural reference. The gesture can locate a beat while duration information distinguishes a sustained sound from silence. These proposals help explain how different contributions can work together. The general account of joint coordination is a synthesis. Its effectiveness in a particular movement or equipped performance requires evidence from that use.
 
-For the specific question of pulse and freely placed accents, the useful line is a shared temporal relation with task-dependent realization and correction. Historical laboratory anchors expose why simple addition is insufficient: [de Rugy and Sternad (2003)](https://doi.org/10.1016/j.brainres.2003.09.031) report phase-dependent interaction in combined discrete and rhythmic elbow movements; [Calvin, Huys and Jirsa (2010)](https://doi.org/10.1037/a0020403) report that a discrete wrist movement can accelerate or decelerate the other wrist's rhythmic movement. These bounded findings motivate examining both directions of interference; neither supplies a brush or Balboa teaching technique.
+Earlier movement experiments illustrate interference between discrete and rhythmic actions. [de Rugy and Sternad (2003)](https://doi.org/10.1016/j.brainres.2003.09.031) reported phase-dependent interaction between discrete and rhythmic elbow movements. [Calvin, Huys and Jirsa (2010)](https://doi.org/10.1037/a0020403) found that a discrete wrist movement could speed or slow the rhythmic movement of the other wrist. These findings give a reason to examine interference in both directions. Brush playing and Balboa require their own realizations and teaching techniques.
 
-[Krampe et al. (2000)](https://doi.org/10.1037/0096-1523.26.1.206) found different timing organizations across tempi in professional pianists' two bimanual tasks. Use this as a reason to retain several ways of organizing performance and to recheck changed tempo. A common temporal target does not establish a single biological timing mechanism.
+[Krampe et al. (2000)](https://doi.org/10.1037/0096-1523.26.1.206) found different timing organizations across tempi in two bimanual tasks performed by professional pianists. Consider more than one possible organization and examine what a change of tempo requires. Identical temporal targets leave the biological mechanism open.
 
-[Mårup, Møller and Vuust (2022)](https://doi.org/10.1038/s41598-022-11783-8) compared rhythm/beat role assignments across voice, hands and feet in right-handed participants; assignment affected joint performance even though the parts could be performed separately. [Mårup et al. (2024)](https://doi.org/10.1016/j.cortex.2023.11.019) found related performance differences in professional musicians under the studied assignments. Consider allocation as one changeable condition. These experiments do not establish a universal ranking for other bodies, continuous brush motions or partnered weight transfer.
+[Mårup, Møller and Vuust (2022)](https://doi.org/10.1038/s41598-022-11783-8) compared rhythm and beat assignments to voice, hands and feet in right-handed participants. Joint performance varied with assignment even when the separate parts were playable. [Mårup et al. (2024)](https://doi.org/10.1016/j.cortex.2023.11.019) found related differences in professional musicians under the assignments studied. Allocation is therefore a condition worth examining. Ranking assignments for other bodies, continuous brush movements or partnered weight transfer requires evidence for those uses.
 
 Use an adequate learned combined pattern directly when the passage is fixed. Develop the additional range of accent choices when the receiving performance needs it. Reconsider the chosen realization when a changed phase, tempo, support or allocation exposes interference that the current means cannot resolve.
 
 ### RHY.11:12 - Relations
 
-RHY.2 and RHY.5 describe and represent the relevant layers; RHY.3 constructs carrier and articulation together. RHY.9 resolves allocation and cue access, and RHY.10 establishes reference and adjustment. C.32.MWA distinguishes the several structures that one performance can instantiate. RHY.12 supplies practice for a human performer's missing rhythmic capability; RHY.13 tests its transfer or support dependence, and RHY.14 evaluates the result relevant to the receiving task.
+Use RHY.2 and RHY.5 for description and representation of the layers, and RHY.3 for carrying an articulation within a continuing action. RHY.9 addresses allocation and cue access. RHY.10 addresses reference and adjustment. C.32.MWA distinguishes structures that one performance can instantiate. For human performers, use RHY.12 to develop a needed capability and RHY.13 to examine transfer or dependence on support. RHY.14 addresses observations of performance and response for the intended use.
 
 ### RHY.11:End

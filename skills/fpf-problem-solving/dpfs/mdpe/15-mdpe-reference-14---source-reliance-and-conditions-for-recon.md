@@ -1,9 +1,9 @@
 ## MDPE.Reference:14 - Source reliance and conditions for reconsideration
 
-Each pattern records the sources that change its move, result, test or return and states the limits of those contributions. Academic attention, institutional endorsement, press coverage, standardization, label popularity and artifact availability can support their own claims; current practice, effectiveness, prevalence, transmission and retention need the corresponding grounds. When direct evidence is sparse, an informed expert estimate can support a bounded decision if its basis, uncertainty and revision condition are adequate. Otherwise retain the unknown and choose a supported narrower response, attainable inquiry or stop.
+Use each pattern’s sources for the operation and conditions that they support. A citation count can establish attention, a professional endorsement its stated position, a standard its requirements, and an available artifact what its contents preserve. Current practice, effectiveness, prevalence, transmission and retention each need evidence for the corresponding claim. With sparse direct evidence, an expert estimate can support a bounded conclusion if its grounds, uncertainty and conditions for revision fit the use. Otherwise state the uncertainty. For a decision that still needs an answer, consider a narrower supported response, a worthwhile attainable inquiry or a justified stop.
 
-Refresh only the affected pattern, relation, practical entry, or source use when a direct source changes, a new
-Music-or-Dance Method alters the recommended move, an FPF result used below changes, or representative reader and
-practitioner use reveals a costly omission. Reopen the pattern-language architecture only when that evidence
-changes a pattern identity, split or merge, material result relation, problem-family coverage, or product
-boundary.
+Reconsider the pattern, practical entry or source use affected by a changed
+source, a new specialist method, a change to a relied-on FPF contribution
+or a consequential omission revealed by reader or practitioner use. Reconsider the architecture when that
+evidence affects the identity, division or combination of patterns,
+relations among results, problem coverage or the publication boundary.

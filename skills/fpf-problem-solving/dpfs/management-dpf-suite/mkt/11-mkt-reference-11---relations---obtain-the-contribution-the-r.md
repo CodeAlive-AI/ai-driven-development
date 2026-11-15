@@ -1,6 +1,6 @@
 ## MKT.Reference:11 - Relations - Obtain the contribution the receiving decision needs
 
-The edition uses FPF's September 2026 foundation and the direct framework contributions listed under [Sources and refresh](_index.md#marketing-principles-framework-architectural-reference). The named relations concern methods and their results.
+This edition uses FPF’s September 2026 foundation and the [framework contributions listed in §13](13-mkt-reference-13---direct-framework-returns.md). The table identifies what marketing work uses and when to revisit that use.
 
 | Supplier and result | Marketing use | Fact reopening that use |
 | --- | --- | --- |

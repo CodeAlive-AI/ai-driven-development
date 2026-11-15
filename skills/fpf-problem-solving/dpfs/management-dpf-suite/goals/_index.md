@@ -35,13 +35,13 @@ Framework text: Anatoly Levenchuk, with AI assistance. [CC BY 4.0](https://creat
 
 ## Practical entries
 
-These entries help you find a useful first operation. Bring your actual question; the Table of Contents also provides direct routes for situations not illustrated here. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
+These entries help you find a useful first operation. Bring your question; the Table of Contents also provides direct routes for situations not illustrated here. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
 
 ### ACHIEVEMENT — The numbers improved, but the wanted result is missing
 
 - **Situation:** A team completed its planned activities and reports green key results, while customers still lack the promised outcome.
 - **Question:** What would establish that the goal was achieved?
-- **First useful result or blocker:** A corrected achievement test that distinguishes the wanted result from activity and keeps unfinished cases visible; or the exact unavailable observation needed to decide.
+- **First useful result or blocker:** A corrected achievement test that distinguishes the wanted result from activity and keeps unfinished cases visible; or the observation still needed to decide.
 - **Start with:** GOALS.2, using the actual goal and cases.
 - **Stop or return:** Use sufficient existing evidence directly. Return to GOALS.1 if participants disagree about the result itself.
 
@@ -55,7 +55,7 @@ These entries help you find a useful first operation. Bring your actual question
 
 ### AGENT — Give an AI a result it can pursue and finish
 
-- **Situation:** An agent can carry out substantial work across tools or sessions, and the result needs more than a plausible answer.
+- **Situation:** An agent can carry out work across tools or sessions, and the result needs more than a plausible answer.
 - **Question:** What must the agent obtain, what may it do, and how will completion or an impasse be recognized?
 - **First useful result or blocker:** A usable assignment with available inputs, action limits, completion evidence and a continuation arrangement suited to the actual runtime.
 - **Start with:** GOALS.7.
@@ -63,20 +63,20 @@ These entries help you find a useful first operation. Bring your actual question
 
 ### Practical-Use Cards
 
-The following entry retains a connection that is easily lost when each team writes its own goals separately.
+When teams set goals separately, their combined demands can exceed the available capacity.
 
 #### JOINT-OKR — Make the quarter's goals possible together
 
 - **Situation:** Teams have attractive OKRs, but they depend on the same specialists and continuing service.
 - **Question:** What can we jointly undertake and rely on?
-- **First useful result or blocker:** A coherent shared undertaking, including displaced work and the unresolved dependency that prevents a promise.
+- **First useful result or blocker:** A coherent shared undertaking that accounts for displaced work and identifies any dependency that prevents a promise.
 - **Mantra:** Connect the wanted result to evidence, reliance and shared means; use what happens to revise the affected connection.
-- **Start with:** GOALS.5, then GOALS.2 and GOALS.3 for the actual construction; [Reference:2](02-goals-reference-2---how-a-system-of-goals-holds-together.md) explains the connections.
+- **Start with:** GOALS.5, then GOALS.2 and GOALS.3 to establish achievement criteria and joint feasibility; [Reference:2](02-goals-reference-2---how-a-system-of-goals-holds-together.md) explains the connections.
 - **Stop or return:** An unresolved priority belongs to the decision owner; an unavailable specialist window remains an unmet condition.
 
 ## How the methods work together
 
-A goal system connects what matters to action that people and agents can actually perform. A completed task can supply a valuable result, new knowledge or a new capability; which of these it establishes depends on what was done and observed. The framework helps construct these distinct aims and combine them without losing either immediate work or development. Read the Architectural Reference when the question spans several methods, when a condition changes their combination, or when you need the grounds for adapting the practice.
+A goal system connects what matters to actions its participants can perform. A completed task can supply a valuable result, new knowledge or a new capability; which of these it establishes depends on what was done and observed. The framework helps construct these distinct aims and combine them without losing either immediate work or development. Read the Architectural Reference when the question spans several methods, when a condition changes their combination, or when you need the grounds for adapting the practice.
 
 ---
 

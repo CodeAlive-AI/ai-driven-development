@@ -5,13 +5,13 @@
 
 ### RHY.2:1 - Problem frame
 
-**Use this when** a score, count, waveform, movement trace or list of attacks leaves out something needed to explain, reproduce or change the rhythm. Start with the activity or material and a question: where a player can enter, what a partner must recognize, how two versions differ, or which feature an analysis must preserve.
+**Use this when** a score, count, waveform, movement trace or attack list omits a distinction needed to explain, reproduce or change the rhythm. Start from the activity or material and the question it must answer. Where can a player enter? What must a partner recognize? Which difference between versions must an analysis preserve?
 
-The first useful result identifies the changing things and relations needed for that question. It may be an annotated recording, a demonstration with an explanation, or a small diagram. A complete notation or mathematical model is not needed for every use.
+Identify the changes and relations the question needs. Show them in a form the recipient can use, such as an annotated recording, a demonstration with an explanation or a small diagram. Develop a fuller notation or mathematical model if the work requires it.
 
 ### RHY.2:2 - Problem
 
-Available representations expose different aspects of an activity. A list of attacks can preserve their order while omitting a continuous movement. A histogram of intervals can preserve their frequencies while losing their order. A video can show contact without establishing which contact carried weight. Treating any one of these as a complete rhythmic account makes a later comparison or correction depend on information it never contained.
+An attack list can preserve order while omitting a continuous movement. An interval histogram can preserve frequencies while losing order. A video may show contact while leaving the transfer of weight unknown. A later comparison or correction that depends on the missing relation needs another source or a qualified conclusion.
 
 ### RHY.2:3 - Forces
 
@@ -26,69 +26,69 @@ Available representations expose different aspects of an activity. A list of att
 
 #### RHY.2:4.1 - Start with the required discrimination
 
-Ask what two possibilities must remain distinguishable. Examples are an entrance after the third rather than fourth attack, an accent produced by pressure rather than a break in contact, and a full rather than partial weight transfer.
+Identify the distinction the question requires. A player might need to enter after the third or after the fourth attack. An accent might come from pressure or a break in contact. A partner might need to recognize whether a weight transfer is partial or complete.
 
-Use the smallest material portion that contains the relevant relation. Extend it when the boundary matters: a cyclic pattern needs its return to the next cycle; an entrance may need the preceding cue; a continuous change may need more than its peak.
+Choose the shortest passage that preserves the relation the question needs. Include its boundaries where they matter. A cyclic interval can cross the return to the next cycle, an entrance may depend on the preceding cue, and understanding a continuous change may require observing more than its peak.
 
 #### RHY.2:4.2 - Identify what actually changes
 
-Locate the sound-producing action, movement, contact, load change or other occurrence involved. Say which body, instrument or material changes. If the analysis concerns a perceived grouping or accent, include the responding listener or partner and the task in which that response occurred.
+Locate the relevant action or change and identify the body, instrument or material that changed. It might be a movement, sound-producing action, contact or change of load. For a claim about a perceived grouping or accent, identify the listener or partner, the task they performed and the conditions of their response.
 
 Select suitable units for the question. They may be bounded actions, portions of a continuous trajectory, identifiable positions on that trajectory, or relations among several such contributions. Define a start, completion or threshold only when it serves the question. If more than one boundary is plausible, preserve the alternatives or use an interval.
 
-A detected peak is an observation made under a detection rule. Connect it to the event it is supposed to indicate before using it as a count of performed actions.
+A peak detector reports a peak under its detection rule. Before using the peaks to count performed actions, establish how they correspond to the actions in this passage.
 
 #### RHY.2:4.3 - Preserve the relations that affect the result
 
-Recover order, separation, grouping, recurrence, phase, accent or coupling only where they change the receiving use. State the reference: “after the singer's pickup,” “within this eight-unit cycle” or “relative to the partner's perceived arrival” can be more useful than a bare timestamp.
+Keep order, separation, grouping, recurrence, phase, accent or coupling where the question depends on it. Give the relevant reference. A timestamp may locate a sound in a recording, while “after the singer’s pickup” tells the player when to enter. Other questions may require a position within an eight-unit cycle or the arrival perceived by a partner.
 
-Keep continuous contributions when their course matters between selected positions. A brush can remain in contact while pressure varies; a dancer can continue a weight path while a foot articulates an extra sound. Marking only the accents would erase the relation the practitioner must preserve.
+Preserve the course of a continuous action when it matters between selected positions. A brush can remain in contact as pressure varies. A dancer can continue a weight path while a foot articulates an extra sound. Marking only the accents would lose the continuous change in each case.
 
-Distinguish an observed relation from a proposed one. A desired coincidence of sound and movement is a performance instruction until an occurrence supports the corresponding observation.
+Identify whether a relation is observed or proposed. An instruction to align sound and movement states an intended coincidence. To report an observed coincidence, use evidence of both events and their relative timing.
 
 #### RHY.2:4.4 - Try the selection against the question
 
-Use the selected information to answer the question or reconstruct the intended part of the activity. Then change a feature that the selection omits. Would that change the answer?
+Use the selected information to answer the question or reconstruct the relevant part of the activity. Test whether changing an omitted feature could change that answer. A contrasting example, an existing observation or a trial can make the difference visible.
 
-If yes, include the missing feature, obtain its observation, or narrow the claim. If no, the omission can be useful simplification. This test applies to the operation and conditions being considered; it does not declare the omitted feature irrelevant to every rhythmic use.
+If the answer could change, include the feature and its basis or state what remains unresolved. If the answer would hold, the omission simplifies the account for this operation under these conditions.
 
 For a numerical analysis, keep the rule that produced the numbers. An onset detector's threshold, the treatment of a cycle boundary, or the choice of a perceived rather than physical event can alter the result.
 
 #### RHY.2:4.5 - Hand over a usable account
 
-Show the selected units, their consequential relations and their connection to the activity. Keep enough source material or demonstration for the next user to recover the intended reading. State uncertainty where it changes that user's action.
+Show the selected units and relations, and identify the occurrences or portions of the activity they represent. Give a receiving user enough of the source or a suitable demonstration to recover the intended reading when needed. State uncertainty that affects the finding or its use.
 
-Keep observed changes and proposed changes distinguishable in the account. A.22 governs the selected structure of the activity; C.2.1 governs the description of it.
+Use A.22 for the selected structure of the activity and C.2.1 for its description. In that description distinguish what was observed from what is proposed.
 
-Stop when the account supports the current operation. RHY.5 can develop its representation for repeated use; RHY.7 can compare alternatives. A missing relation may instead call for a focused observation.
+The selection is sufficient when it answers the current question, including a question about what the available material can establish. If the question requires a relation still missing, identify what remains open. Use RHY.5 when the representation needs development for repeated use and RHY.7 when alternatives need comparison. A focused observation may supply a missing relation.
 
 ### RHY.2:5 - Archetypal Grounding
 
 #### RHY.2:5.1 - Equal interval counts, different entrances
 
-Consider a constructed repeated cycle of eight equal time units with identical short sounds. Version A has attacks at 0, 1, 2 and 4; version B at 0, 1, 3 and 4. The next cycle starts at 8.
+Consider two constructed versions of a repeated eight-unit cycle with identical short sounds. A has attacks at 0, 1, 2 and 4. B has attacks at 0, 1, 3 and 4. The next cycle starts at 8.
 
-The cyclic intervals are respectively (1, 1, 2, 4) and (1, 2, 1, 4). Both have two intervals of length 1, one of length 2 and one of length 4. A histogram therefore cannot distinguish them. Yet an instruction to enter with the third attack places the entrance at 2 in A and 3 in B.
+The cyclic intervals are (1, 1, 2, 4) for A and (1, 2, 1, 4) for B. Each cycle has two intervals of length 1, one of length 2 and one of length 4. Their histograms agree. An entrance on the third attack falls at 2 in A and at 3 in B.
 
-The needed account preserves ordered attacks relative to the cycle start. The histogram remains usable for questions about interval frequencies. No listener preference or perceived meter follows from this arithmetic alone.
+For this entrance, preserve attack order and the times relative to the cycle start. For interval frequencies, the histogram suffices. To draw a conclusion about perceived meter or listener preference, use evidence of that response.
 
 #### RHY.2:5.2 - A contact trace leaves out the load change
 
-A constructed dance recording shows a foot contacting the floor before a transfer becomes usable by the partner. For a question about foot placement, contact timing may be enough. For a question about responding to the transfer, the account also needs the load change and the partner's response.
+Suppose a dancer’s foot touches the floor before the partner can use the weight transfer as a cue. A dance recording shows the contact. Its timing may answer a question about foot placement. To explain the partner’s response to the transfer, the account also needs evidence of the load change and of how or when the partner responded.
 
-Select those relations from an appropriate observation or bounded trial. If the video cannot show them, return the unresolved relation rather than labeling the contact “weight arrival.” RHY.4 develops the timing comparison.
+Use a suitable observation or a bounded trial to recover the relation. If the available evidence establishes only foot contact, report that and identify what remains unknown about loading or the partner’s response. Use RHY.4 to compare the relevant times.
 
 #### RHY.2:5.3 - A smooth sound has a rhythmic shape
 
-A continuously sounding tone has a changing amplitude envelope. Consider two constructed envelopes over two seconds. A completes one smooth rise-and-fall cycle; B completes two. Both remain audible throughout, with the same beginning and end of the tone.
+Consider two smooth amplitude envelopes on continuously audible tones lasting two seconds. A completes one rise-and-fall cycle and B completes two. Both tones start and end at the same times.
 
-The receiving question is which modulation repeats once per second. A list containing only the tone's start and stop gives the same answer for both and cannot resolve the question. Retain the course of amplitude change, or its modulation period when that summary suffices: two seconds for A and one second for B. B has the required repetition period. The tone's attack list remains useful for onset questions.
+Which modulation repeats once per second? A list of the two tones’ start and stop times is identical and leaves the answer open. Retain the amplitude course or its period. The period is two seconds for A and one second for B, so B satisfies the criterion. The attack list can still answer onset questions.
 
-This construction establishes the stated envelope difference, not what a listener feels as a beat. For a question about that response, retain the listening conditions and obtain the response relation; the envelope period alone does not supply it.
+The construction establishes the envelope periods. To find out what a listener hears as a beat, use evidence of the listener’s response under the relevant listening conditions.
 
 ### RHY.2:6 - Bias-Annotation
 
-A familiar notation makes some units easy to notice. A grid invites discrete positions; an amplitude plot invites peaks; a motion trace can hide a partner's response. Begin with the discrimination the work needs and test the available representation against it.
+A grid draws attention to discrete positions, an amplitude plot to peaks. A motion trace may leave a partner’s response unrepresented. Check whether the familiar representation supports the distinction the work needs.
 
 ### RHY.2:7 - Conformance Checklist
 
@@ -97,7 +97,7 @@ A familiar notation makes some units easy to notice. A grid invites discrete pos
 - Each retained relation has a usable reference and an adequate basis for the claim being made.
 - The treatment of continuity, boundary and order preserves the required discrimination.
 - Proposed variants and observed occurrences remain distinguishable.
-- The receiving user can recover the account's meaning and its material limits.
+- Anyone who needs this account can recover its meaning and the limits that matter to their use.
 
 ### RHY.2:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -109,26 +109,26 @@ A familiar notation makes some units easy to notice. A grid invites discrete pos
 
 ### RHY.2:9 - Consequences
 
-A later representation, comparison or rehearsal can use a smaller but better chosen account. Different questions may legitimately select different structures from the same activity. Maintaining all possible detail would lose the economy of selection.
+A later comparison, representation or rehearsal can use a smaller account that preserves the relation it needs. Another question about the same activity may require a different selection.
 
 ### RHY.2:10 - Architectural Rationale
 
-The method separates choosing what matters from choosing how to encode it. That prevents a tool's data format from deciding the ontology of rhythm. The two choices can iterate: difficulty representing a relation may reveal an ambiguity in the selection, and a better observation may change the selected units.
+Choose which relation matters to the question and then how to encode it. A tool’s data format can otherwise hide a relation the activity needs. Revisit the selection if representation reveals an ambiguity or a better observation changes which units can be distinguished.
 
-Selection also preserves relations across grains. A phrase, a carrier and an articulation can constrain one another without becoming one list of equivalent events.
+A phrase, a continuous action and a local articulation can constrain one another. Where their interaction matters, preserve those relations across the different durations or levels of the activity.
 
 ### RHY.2:11 - SoTA-Echoing
 
-Godfried T. Toussaint's *The Geometry of Musical Rhythm*, second edition (2020), chapters 1–2, provides a productive treatment of attack and duration patterns within a declared scope. Adopt its explicit abstraction for questions that retain what the construction needs; adapt the scope when movement or response matters. Geometric economy is valuable only while it preserves the receiving operation.
+Godfried T. Toussaint’s *The Geometry of Musical Rhythm*, second edition (2020), chapters 1–2, develops attack and duration patterns. Use its geometric abstraction when it retains the distinction your question requires. Extend the account when the required relation involves continuous movement or a participant’s response.
 
-Robert O. Gjerdingen's [“Smooth” Rhythms as Probes of Entrainment](https://doi.org/10.2307/40285585) supplies a historical counterexample to treating all rhythmic material as discrete attacks: smoothly modulated sounds can elicit rhythmic responses. Adopt the representational challenge. Its informal observations and proposed perceptual mechanism do not establish a universal segmentation rule.
+In [“Smooth” Rhythms as Probes of Entrainment](https://doi.org/10.2307/40285585), Robert O. Gjerdingen reported informal observations of rhythmic responses to smoothly modulated sounds. This historical result motivates preserving continuous changes when the response matters. The proposed perceptual mechanism and a general segmentation rule require separate grounds.
 
-For a simple entrance, an ordered sequence is cheaper and sufficient. For a continuously shaped sound or motion, retaining the changing envelope can prevent a false equivalence that the sequence alone cannot resolve.
+For an entrance specified by attack order and position, an ordered sequence and its reference can be sufficient at lower cost than preserving the full trajectory. When continuous sounds or movements share the same attacks, their different courses may supply the distinction the question needs.
 
 ### RHY.2:12 - Relations
 
 RHY.1 selects the working difficulty. RHY.3 uses the retained carrier–articulation relation, and RHY.4 examines timing correspondences. RHY.5–RHY.8 use the account for representation, translation, comparison and possible variants.
 
-A.22 supplies the general structure distinction; C.27.TA qualifies a temporal claim; C.2.1 governs the account's relation to its subject and evidence. NOT.1 asks which distinctions an expression must preserve. RHY.2 supplies the rhythmic distinctions before that notational design.
+Use A.22 to select structure, C.27.TA to qualify a temporal claim and C.2.1 to connect the account to its subject and evidence. NOT.1 asks which distinctions an expression must preserve. RHY.2 helps identify those distinctions in the rhythm being represented.
 
 ### RHY.2:End

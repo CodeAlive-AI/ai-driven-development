@@ -15,7 +15,7 @@ This method concerns the corporate institutional act. Financial appraisal, techn
 
 An executive recommendation can be circulated as if the board had approved it. A meeting can contain enough people but too few eligible participants for its particular matter. Minutes can omit a condition that made the proposal acceptable. A later signature can then commit the company to something the decision did not permit.
 
-The converse also occurs: participants repeatedly ask for an approval already supplied by effective delegation, while delaying the authorized work. Correct performance requires the actual decision conditions, not a universal preference for more meetings.
+Participants can also delay work by returning a delegated decision to the board. Use the delegated procedure when the act meets its conditions.
 
 ### CGOV.11:3 - Forces
 
@@ -35,7 +35,7 @@ Use CGOV.3 when the power or its holder is unclear. Otherwise use the adequate e
 
 Where several procedures are permitted, compare their participation, information and agreement conditions before selecting one. For example, a written route may avoid convening a meeting but require unanimity; a meeting route may permit a majority but require notice and real participation. Choose a route that can meet this matter's conditions without unnecessary coordination.
 
-Identify how this procedure produces an effective decision. In one setting, votes at a meeting make the decision and minutes record it. In another, completion of a written resolution constitutes the decision. Do not impose the former sequence on the latter.
+Identify how this procedure produces an effective decision. In one setting, votes at a meeting make the decision and minutes record it. In another, completion of a written resolution constitutes the decision.
 
 #### CGOV.11:4.2 - Prepare the matter and eligible participation
 
@@ -55,7 +55,7 @@ If the proposal changes during deliberation, check the changed scope against aut
 
 #### CGOV.11:4.4 - Perform the permitted decision procedure
 
-Make the decision through the actual procedure: the eligible holder's act, a vote, an agreed written resolution or another permitted form. Apply the relevant denominator, threshold, abstention and participation rules. Establish what outcome the procedure produced; do not substitute the chair's announcement for an unmet condition.
+Make the decision through the procedure that applies to this act: the eligible holder's act, a vote, an agreed written resolution or another permitted form. Apply the relevant denominator, threshold, abstention and participation rules. Establish what outcome the procedure produced; do not substitute the chair's announcement for an unmet condition.
 
 State the chosen act, limits and conditions clearly enough for the receiver to distinguish approval from refusal or deferral. Where a condition must be satisfied before commitment, preserve that order. Where the decision is effective now but requires later monitoring, preserve that different relation.
 
@@ -63,7 +63,7 @@ If a material procedural defect is discovered, identify the affected act and the
 
 #### CGOV.11:4.5 - Preserve the outcome and enable its proper use
 
-Make or retain the record required by this procedure: the decision, relevant participation, conditions, material reasons and dissent to the extent required for its use. Use the ordinary existing record.
+Make the record the procedure requires or retain a suitable existing one. Preserve the decision, relevant participation, conditions, material reasons and dissent to the extent required for its use.
 
 Communicate the usable decision to those who must act on it. Identify who may sign or implement it where that remains a separate question, what must happen first and which change must return for reconsideration. Provide the follow-up conditions needed by CGOV.13.
 
@@ -85,7 +85,7 @@ If the directors instead wish to commit without renewal, they must consider that
 
 Lena has effective authority to decide and sign ordinary purchases through 20 within an approved operating budget. A purchase of 12 meets those conditions; the current information is sufficient and no additional consent is required.
 
-Lena compares the available offer as needed, decides and signs under the existing procedure, and makes the ordinary required purchase record. Asking the board to repeat her decision would add a step without supplying a missing power. If the purchase becomes 24, its route must be reconsidered; the earlier limit cannot be replaced by a favourable business case.
+Lena compares the available offer as needed, decides and signs under the existing procedure, and makes the ordinary required purchase record. If the purchase becomes 24, its route must be reconsidered; the earlier limit cannot be replaced by a favourable business case.
 
 ### CGOV.11:6 - Bias-Annotation
 
@@ -107,8 +107,8 @@ A well-supported proposal can make procedural defects less noticeable. Conversel
 | Anti-pattern | What fails | Useful correction |
 | --- | --- | --- |
 | The recommendation is announced as approval. | The authorized holder has not performed the corporate act. | Use the recommendation in the applicable decision procedure. |
-| Everyone present is counted for every matter. | Conflict or participation conditions alter eligibility and quorum. | Establish the eligible participants for the particular act. |
-| The minute drops the condition. | Implementation follows an unconditional instruction the decision did not give. | Restore the actual condition and correct affected communication. |
+| Everyone present is counted for every matter. | Conflict or participation conditions alter eligibility and quorum. | Establish the eligible participants for this act. |
+| The minute drops the condition. | Implementation follows an unconditional instruction the decision did not give. | Restore the condition the decision imposed and correct affected communication. |
 | A new meeting repeats sufficient delegation. | The delay supplies no missing authority or judgement. | Use the effective delegated route within its limits. |
 
 ### CGOV.11:9 - Consequences
@@ -127,9 +127,9 @@ The method connects these contributions through the act being attempted. It acco
 
 The practice question is how prepared judgement becomes an effective corporate decision without unnecessary coordination. The selected line joins informed judgement to the procedure that can produce the required act. The [G20/OECD Principles, board responsibilities](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-8.html) supply the informed-judgement and differentiated-duty contribution. They do not supply a particular company's decision rule.
 
-A meeting decision, a permitted written decision and an act under effective delegation are alternatives. The [UK private-company model articles, 5 and 7–16](https://www.gov.uk/government/publications/model-articles-for-private-companies-limited-by-shares/model-articles-for-private-companies-limited-by-shares) provide a bounded comparison: delegation has stated limits; collective procedures have eligibility, conflict, quorum, participation and record conditions; the unanimous route can use writing. These are alternative legal constructions, not evidence that one form is always best. The constructed cases here supply different rules.
+A meeting decision, a permitted written decision and an act under effective delegation are alternatives. The [UK private-company model articles, 5 and 7–16](https://www.gov.uk/government/publications/model-articles-for-private-companies-limited-by-shares/model-articles-for-private-companies-limited-by-shares) provide a bounded comparison: delegation has stated limits; collective procedures have eligibility, conflict, quorum, participation and record conditions; the unanimous route can use writing. The constructed cases here supply different rules.
 
-Hold the matter, available information and participants fixed. A written route may avoid convening a meeting but require agreement that a permitted majority procedure does not. A meeting can support needed exchange but adds coordination when an effective delegated route already suffices. The chosen trade-off is the least burdensome permitted route that retains the needed participation and judgement, rather than meeting frequency or document completion as a proxy for decision quality.
+Hold the matter, available information and participants fixed. A written route may avoid convening a meeting but require agreement that a permitted majority procedure does not. A meeting can support needed exchange but adds coordination when an effective delegated route already suffices. Choose the least burdensome permitted route that retains the participation and judgement the matter needs.
 
 The method adapts these distinctions by comparing the permitted procedures for the same matter and carrying the decision's conditions into its record and communication. Reopen when authority, eligibility, required participation, information or the proposed act changes.
 
@@ -139,6 +139,6 @@ CGOV.1–CGOV.3 establish the matter and needed rights or authority. CGOV.6–CG
 
 PSDA.14 supplies a recommendation with its limits. The authorized corporate participants may use that recommendation in their decision. A.2.8.PER distinguishes permission from exercise; B.1.5.EW and CGOV.16 help recover how constituent actions enact the decision work when that connection fails.
 
-CGOV.12 preserves affected minority protections. CGOV.13 follows implementation and consequences; CGOV.14 addresses an actual change to governance arrangements.
+CGOV.12 preserves affected minority protections. CGOV.13 follows implementation and consequences; CGOV.14 addresses a change to the governance arrangements themselves.
 
 ### CGOV.11:End

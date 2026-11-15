@@ -7,11 +7,11 @@
 
 Use this pattern when corporate participants need to preserve, transmit or change a shared way of governing. A board may retain its papers and procedure while newcomers cannot challenge a proposal's assumptions. A committee may know how to raise an exception but stop doing so when challenge is discouraged. A professional association may distribute guidance without knowing which practices recipients can use.
 
-Start with the corporate contribution that must remain obtainable and the participants who need it. Recover how it is actually performed, locate a consequential gap, and choose how to sustain or renew the practice.
+Start with the corporate contribution that must remain obtainable and the participants who need it. Recover how participants perform it, locate a consequential gap, and choose how to sustain or renew the practice.
 
 The first result can be a qualified account of the practice, a supported decision to continue it, or a proposed change. When implementation is assigned, continue through the receiving participants' use. Claims that a practice persists or improves governance need observations of those further consequences.
 
-Here, governance culture concerns shared ways of working and the processes through which people or organizations transmit, recognize, select, retain or lose them. Use an adequate available practice directly. A single person's difficulty within a stable arrangement can use the relevant development method without a wider cultural-change project.
+Here, governance culture concerns shared ways of working and the processes through which participants transmit, recognize, select, retain or lose them. Use an adequate available practice directly. A single person's difficulty within a stable arrangement can use the relevant development method without a wider cultural-change project.
 
 ### CGOV.17:2 - Problem
 
@@ -25,7 +25,7 @@ Calling every such failure “culture” conceals the repair. Repeating training
 
 Continuity supports reliable corporate work, while changing participants, circumstances and methods can require renewal. Informal ways of working can preserve useful judgement or protect habits that suppress challenge.
 
-Capabilities can be distributed among directors, staff, specialists and tools, but corporate responsibilities and powers constrain that distribution. Confidentiality can limit observation and teaching material. Existing evidence can justify a useful correction even when a broad cultural or causal claim remains unanswered.
+Several participants can supply the capabilities a practice needs. Allocate their contributions within the applicable corporate responsibilities and powers. Confidentiality can limit observation and teaching material. Existing evidence can justify a useful correction even when a broad cultural or causal claim remains unanswered.
 
 ### CGOV.17:4 - Solution
 
@@ -61,7 +61,7 @@ Recover constituent work where it matters. A correct calculation can still be un
 
 Choose a repair that answers the found gap. An explanation, demonstration, practice with feedback, obtainable specialist or improved information service can each be appropriate.
 
-Determine which understanding the corporate participant must retain and which operation can be supplied by others. A director may receive specialist analysis while needing to recognize its assumptions and exercise the judgement assigned to the director. People, AI and tools can supply permitted contributions; the governing rules determine any non-transferable participation or decision duty.
+Determine which understanding the corporate participant must retain and which operation can be supplied by others. A director may receive specialist analysis while needing to recognize its assumptions and exercise the judgement assigned to the director. The governing rules determine which contributions may be supplied by others and which participation or decision duties the holder must perform.
 
 Use the relevant capability-development or explanation method when acquisition is needed. Preserve enough of the reasoning and conditions for the receiving use. A participant who must adapt a method needs more than a completed answer to copy.
 
@@ -73,7 +73,7 @@ C.11.DUA governs additional inquiry. Include the effort of access, confidentiali
 
 When implementation is assigned, make the selected support or learning available and use the method in the receiving matter. Give participants the information and participation conditions needed for that work.
 
-Observe the contribution relevant to the original difficulty. Can newcomers recover the assumption and use it in deliberation? Does an exception reach the person able to respond? Does an eligible participant actually take part in the collective act?
+Observe the contribution relevant to the original difficulty. Can newcomers recover the assumption and use it in deliberation? Does an exception reach a participant able to respond? Does an eligible participant take part in the collective act?
 
 Distinguish performance with assistance from unaided performance when that difference matters. Assistance can remain part of the intended arrangement. A useful distributed practice does not require every participant to perform every specialist operation.
 
@@ -135,7 +135,7 @@ Continuity can protect valuable practice or exclusionary habits. Compare whose c
 | Training attendance is used as evidence that directors can use the method. | Examine the operation in the receiving work when that claim matters. |
 | A capability problem is assumed while the necessary information is inaccessible. | Restore the information contribution. |
 | A specialist's competent analysis is treated as the director's required judgement. | Preserve the supplied analysis and the director's separate participation. |
-| A code revision is reported as adoption across the profession. | Distinguish publication, distribution and the uses actually observed. |
+| A code revision is reported as adoption across the profession. | Distinguish publication, distribution and the uses observed. |
 | Every continuity problem starts a whole-company culture programme. | Locate the missing contribution and make the smallest sufficient repair. |
 
 ### CGOV.17:9 - Consequences
@@ -154,9 +154,9 @@ CGOV.15 maintains method choices and their applicability. This method concerns h
 
 ### CGOV.17:11 - SoTA-Echoing
 
-The [FRC Corporate Governance Code Guidance](https://www.frc.org.uk/library/standards-codes-policy/corporate-governance/corporate-governance-code-guidance/), especially paragraphs 19–24, 170–180 and 232–236, connects governance practice with behaviour, development, actual discussion and conditions for challenge. Adopt those practical questions within the guidance's scope; recommendation alone does not demonstrate cultural or commercial effects.
+The [FRC Corporate Governance Code Guidance](https://www.frc.org.uk/library/standards-codes-policy/corporate-governance/corporate-governance-code-guidance/), especially paragraphs 19–24, 170–180 and 232–236, connects governance practice with behaviour, development, actual discussion and conditions for challenge. Use those questions within the scope of the guidance. Attributing a cultural or commercial effect to a recommendation requires evidence of that effect and of the role the recommendation played in producing it.
 
-C.36 distinguishes transmission, receiving use, selection, retention and loss; C.36.RP sustains obtainable methods through suitable learning, access and distributed contributions. C.11.DUA keeps further inquiry proportional to the receiving decision. The cases are constructed applications, not observations of actual companies.
+C.36 distinguishes transmission, receiving use, selection, retention and loss; C.36.RP sustains obtainable methods through suitable learning, access and distributed contributions. C.11.DUA keeps further inquiry proportional to the receiving decision.
 
 Reconsider the arrangement when succession, changed information conditions, new methods or observed failures change what participants can obtain and use. A dated code or source revision can prompt that question when its content matters.
 
@@ -164,7 +164,7 @@ Reconsider the arrangement when succession, changed information conditions, new 
 
 CGOV.1–CGOV.3 and CGOV.8 supply unresolved corporate basis, powers and information conditions. CGOV.6 and CGOV.7 address a relevant conflict or eligibility problem. CGOV.16 helps recover the constituent contributions needed for the corporate work.
 
-CGOV.15 supplies a method or comparison when alternatives are needed; observations from receiving use can revise its applicability. CGOV.14 changes an arrangement when that is required, and CGOV.11 supplies the method for a required corporate decision.
+CGOV.15 supplies a method or comparison when alternatives are needed; observations from receiving use can revise its applicability. Use CGOV.14 for a required change to the arrangement and CGOV.11 for a required corporate decision.
 
 Use C.36 and C.36.RP for the cultural and continuity work, and the relevant capability-development and explanation methods for acquisition. CGOV.13 can follow a corporate undertaking to provide the selected continuation.
 

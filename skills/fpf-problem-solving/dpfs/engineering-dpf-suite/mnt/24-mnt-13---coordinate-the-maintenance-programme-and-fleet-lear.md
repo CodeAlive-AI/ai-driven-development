@@ -13,7 +13,7 @@ Return a qualified programme or fleet-learning decision. The result can be to re
 
 Local repairs can repeatedly succeed while the programme leaves the same failure, delay or support deficiency untouched. Conversely, crude fleet comparisons can trigger a large policy change on weak evidence.
 
-A programme is the arrangement of maintenance policies, support and work for an identified population. Its document describes that arrangement. Writing a new programme does not establish that it was enacted or improved equipment performance.
+A programme is the arrangement of maintenance policies, support and work for an identified population. Its document describes that arrangement. Writing a new programme document does not establish that it was enacted or improved equipment performance.
 
 ### MNT.13:3 - Forces
 
@@ -31,7 +31,7 @@ Compare credible programme alternatives. Retain a sound existing arrangement, ch
 
 When a deliberate improvement is selected, use [FPF E.23](../../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/63-e-23---quality-improvement-loop-method.md)'s loop at this subject: name the programme arrangement and the maintenance contribution sought, choose the evaluation that will judge it, perform the selected change only when authorized, and compare the changed arrangement through the same relevant measures. Selection, implementation and observed effect remain different facts.
 
-Choose further fleet inquiry only when its attainable result can change the decision enough to warrant its design, access, measurement, interpretation and displaced work. If current evidence already supports retaining the policy or fixing a known support deficiency, return that answer now. Sparse or incomparable data withholds the stronger causal claim, not every programme decision.
+Choose further fleet inquiry only when its attainable result can change the decision enough to warrant its design, access, measurement, interpretation and displaced work. If current evidence supports retaining the policy or fixing a known support deficiency, return that answer now. Sparse or incomparable data withholds the stronger causal claim, not every programme decision.
 
 Return the decision with the population and evidence limits that affect its use. Identify the recurrence, changed duty, support failure or new professional result that would reopen it. A long-term learning question can remain open while today's programme answer is complete.
 
@@ -51,7 +51,7 @@ Fleet averages can hide the units with the greatest exposure or service conseque
 
 ### MNT.13:7 - Conformance Checklist
 
-Is the population and receiving programme decision clear? Do event meanings, exposure and observation conditions support the comparison? Are causal and descriptive claims distinguished? Does the selected change improve the intended maintenance contribution without concealing moved burden? If implementation or improvement is claimed, is that claim supported separately from the proposal?
+Are the population and the programme decision clear? Do event meanings, exposure and observation conditions support the comparison? Are causal and descriptive claims distinguished? Does the selected change improve the intended maintenance contribution without concealing moved burden? If implementation or improvement is claimed, is that claim supported separately from the proposal?
 
 An adequate retained programme or qualified fleet account is a completed answer. Further inquiry needs its own attainable contribution and burden justification.
 
@@ -59,11 +59,11 @@ An adequate retained programme or qualified fleet account is a completed answer.
 
 Fewer failures are read as a better policy without exposure. Recover a compatible comparison. A dashboard target is improved by recoding failures rather than changing functioning. Preserve event meaning and compare the actual programme contribution.
 
-Every incomplete causal explanation becomes a research programme. Return the supported maintenance decision first and select only the inquiry that can improve a real next use.
+Every incomplete causal explanation becomes a research programme. Return the supported maintenance decision first and select only the inquiry that can improve the next use.
 
 ### MNT.13:9 - Consequences
 
-Repeated work can change the programme when the evidence warrants it, while adequate policies avoid unnecessary churn. Some comparisons remain descriptive or population-limited. Learning effort is directed toward maintenance decisions rather than data accumulation for its own sake.
+Repeated work can change the programme when the evidence warrants it. Keeping a policy that still serves the fleet avoids needless changes to work and support. Some comparisons remain descriptive or population-limited. Learning effort is directed toward maintenance decisions rather than data accumulation for its own sake.
 
 ### MNT.13:10 - Architectural Rationale
 

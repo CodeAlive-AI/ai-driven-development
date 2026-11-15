@@ -11,7 +11,7 @@ Begin with the question the board or another responsible organ needs answered. D
 
 ### CGOV.5:2 - Problem
 
-A committee can have a recognized name but no usable contribution. It reviews reports after the relevant decision, lacks access to the people who know the problem, or passes a recommendation that nobody is assigned to consider. Adding another committee can divide information further.
+A committee can have a recognized name but no usable contribution. It reviews reports after the relevant decision, lacks access to those who can explain the problem, or passes a recommendation that nobody is assigned to consider. Adding another committee can divide information further.
 
 An opposite error makes the committee a substitute for the board merely because it examined the matter closely. Expertise, a recommendation and corporate decision authority are different conditions.
 
@@ -33,7 +33,7 @@ Return early if the current arrangement can supply the result under adequate con
 
 #### CGOV.5:4.2 - Define remit and relation to the responsible organ
 
-Specify the matters covered, the questions to examine, the expected return and its timing. Establish what the committee may request, investigate, recommend or decide. Distinguish a power it actually holds from a proposed delegation.
+Specify the matters covered, the questions to examine, the expected return and its timing. Establish what the committee may request, investigate, recommend or decide. Distinguish a power it holds from a proposed delegation.
 
 Name the recipient's response: consider a recommendation, make a reserved decision, remedy an information gap or act on a material exception. State how an urgent or unresolved matter reaches that recipient.
 
@@ -41,15 +41,15 @@ Coordinate overlaps with other committees. One body may examine financial conseq
 
 #### CGOV.5:4.3 - Make membership and support workable
 
-Choose members against the contribution: relevant competence, available time and the required independence or eligibility. State independence from whom and for what matter; apply the applicable criteria and examine relationships that could defeat the intended judgement.
+Choose members against the contribution: relevant competence, available time and the required independence or eligibility. State independence from whom and for what matter; use the governing criteria and examine relationships that could defeat the intended judgement.
 
 Provide access to needed information, specialists and protected ways to raise a concern. Where independent advice is warranted, arrange a usable way to commission and receive it. A member who is formally eligible but cannot obtain the necessary facts may be unable to perform the task.
 
-Check capacity across the arrangement. The same two directors on every committee may have neither the time nor the range of knowledge the combined work needs. Attendance and a membership list establish less than the ability to perform the oversight contribution.
+Check capacity across the arrangement. The same two directors on every committee may have neither the time nor the range of knowledge the combined work needs. When judging their capacity, check the time and expertise available across all their assignments.
 
 #### CGOV.5:4.4 - Return the arrangement and its use conditions
 
-Return a design that the authorized participants can adopt. Identify any needed appointment, delegation, access provision or resource commitment. Those acts follow their applicable procedures; the design does not perform them. Confirm the resulting conditions before relying on the arrangement.
+Return a design that the authorized participants can adopt. Identify any needed appointment, delegation, access provision or resource commitment. The responsible participants carry out those acts under the applicable procedures. Confirm the resulting conditions before relying on the arrangement.
 
 Keep the expected contribution distinct from a performed review. Examine whether the recipient can use the actual returns, whether important matters escape the remit and whether the burden remains justified. Repair the remit or support when needed; retire a temporary arrangement when its work is finished and the applicable rules permit.
 
@@ -61,11 +61,11 @@ In a constructed corporation, the board may establish an advisory committee, but
 
 The design uses two eligible directors with access to financial and technical specialists. Its remit is to examine the proposal, alternatives and identified conflict conditions and return the findings before the board deliberates. It can request information and recommend changes; it cannot approve the acquisition. A material unresolved finding goes to the board rather than waiting for a routine committee report.
 
-This design still requires the authorized appointment and access arrangements.
+This design requires the authorized appointment and access arrangements.
 
 After the appointments and access arrangements take effect, the financial assessment assumes production starts three months after purchase; the technical assessment requires six months for commissioning. The two committee members ask the specialists to reconcile these assumptions. On the six-month basis, the financial specialist's revised assessment raises the pre-production funding requirement from 12 to 18 million currency units; the technical specialist finds no supported way to bring commissioning forward. The committee returns that common timing basis and revised funding requirement to the board, retaining the unresolved conflict conditions. This uses the existing advisory remit: the membership and powers stay unchanged, and the board still has to decide whether the acquisition should proceed.
 
-When the acquisition work ends, there is no assumed need to preserve a permanent committee.
+When the acquisition work ends, the temporary arrangement can end with it.
 
 #### CGOV.5:5.2 - A required committee with missing capability
 
@@ -94,18 +94,18 @@ A board can obtain focused oversight while retaining the matters for which it re
 
 ### CGOV.5:10 - Architectural Rationale
 
-The arrangement connects an oversight contribution to a receiving corporate act. Its components matter because they enable that contribution; their presence does not establish that it occurred. Separating design, effective appointment and performed review prevents a paper committee from being treated as functioning governance.
+A remit, effective appointments and resources can equip a committee for oversight. To establish that it supplied the oversight a corporate act needs, examine the review it performed.
 
 ### CGOV.5:11 - SoTA-Echoing
 
 The [G20/OECD Principles, V.E.2](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-8.html) discusses committee remits, support and proportionality while preserving the board's responsibility unless the legal arrangement provides otherwise. The [FRC guidance, paragraphs 87–95](https://www.frc.org.uk/library/standards-codes-policy/corporate-governance/corporate-governance-code-guidance/) adds practical treatment of committee composition, terms, capacity and coordination. Its provisions must be read in their UK Code context.
 
-The adopted contribution is to design a usable oversight arrangement rather than infer one from its name. The worked arrangements are constructed examples, not jurisdictional defaults. Direct full-board consideration and focused outside support remain alternatives where permitted. The receiving use and operating conditions determine whether the proposal is helpful.
+Design the arrangement around the oversight its recipient needs and the conditions for doing the work. The worked cases illustrate possible arrangements. Where the rules permit, the full board can consider the matter directly or obtain focused outside support.
 
 ### CGOV.5:12 - Relations
 
-CGOV.4 identifies the needed contribution and CGOV.3 supplies authority conditions. CGOV.6 exposes conflicts relevant to membership or a matter; CGOV.7 uses an adequate arrangement for review and decision preparation. It can also use an existing arrangement without repeating this design method.
+CGOV.4 identifies the needed contribution and CGOV.3 supplies authority conditions. CGOV.6 exposes conflicts relevant to membership or a matter; CGOV.7 guides review and decision preparation under an adequate arrangement. You can use an existing arrangement without repeating the design.
 
-OCE.4 supports the design of contributions and their receiving uses. CGOV.9 and CGOV.10 provide the domain work for internal control and audit; a committee with those names does not itself supply their methods.
+OCE.4 supports the design of contributions and their receiving uses. CGOV.9 and CGOV.10 provide the domain work for internal control and audit.
 
 ### CGOV.5:End

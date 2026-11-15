@@ -5,9 +5,9 @@
 
 ### MNT.11:1 - Problem frame
 
-Use this pattern when maintenance control is being returned to operation and the receiving person needs a supported basis to resume use. The work is complete and functioning has been checked, but restrictions, configuration changes or required release authority are still unresolved.
+Use this pattern when maintenance control is being returned to operation and the party taking control needs a supported basis to resume use. The work is complete and functioning has been checked, but restrictions, configuration changes or required release authority are still unresolved.
 
-Reconcile the evidence and actual state, obtain certification where the concrete use requires it, transfer control and establish the operative permission for resumed use. The result can be unrestricted use, supported restricted use or the precise missing condition. This pattern is not a prerequisite for completing maintenance advice.
+Reconcile the evidence and actual state, obtain certification where the concrete use requires it, transfer control and establish the operative permission for resumed use. The result can be unrestricted use, supported restricted use or the missing condition preventing that use. An adequate maintenance recommendation can be issued before hand-back.
 
 ### MNT.11:2 - Problem
 
@@ -17,7 +17,7 @@ Hand-back can also fail physically: the expected configuration, controls, access
 
 ### MNT.11:3 - Forces
 
-Operation needs a clear timely return, while relevant assurance and protection cannot be inferred from urgency. A restricted use can preserve service but imposes conditions that the receiving people must be able to maintain. Excessive generic sign-offs add delay; missing an applicable release condition can invalidate the intended use.
+Operation needs a clear timely return, while relevant assurance and protection cannot be inferred from urgency. A restricted use can preserve service but imposes conditions that the receiving operation must be able to maintain. Excessive generic sign-offs add delay; missing an applicable release condition can invalidate the intended use.
 
 ### MNT.11:4 - Solution
 
@@ -31,7 +31,7 @@ Resolve remaining limitations through the applicable decision. Some defects or u
 
 Transfer control so that maintenance and operation know who controls the next state change. Communicate the configuration and conditions that change the receiver's action, using the existing hand-back arrangement. One person may hold both responsibilities, but the evidence and decisions remain distinguishable.
 
-Record or communicate the resulting permission at the level the actual use and operative requirements need. Do not create a universal release certificate for every machine. Conversely, a framework's preference for a small useful result cannot cancel a concrete requirement.
+Record or communicate the resulting permission in the form and level of detail the intended use and applicable requirements call for.
 
 Reopen the hand-back result when its configuration, functioning, restrictions or authority basis changes. A completed maintenance recommendation remains usable within its earlier scope even if the proposed intervention's release is still unavailable.
 
@@ -51,7 +51,7 @@ Aviation illustrates why the distinction matters. EASA's September 2025 Part-145
 
 ### MNT.11:7 - Conformance Checklist
 
-Can the receiving person identify the actual returned configuration and supported functioning? Are material unfinished work and restrictions resolved for the intended use? Are required certificates or independent returns applicable and issued within their authority? Has control been transferred, and is the resumed-use permission supported?
+Can the party taking control identify the actual returned configuration and supported functioning? Are material unfinished work and restrictions resolved for the intended use? Are required certificates or independent returns applicable and issued within their authority? Has control been transferred, and is the resumed-use permission supported?
 
 A qualified restricted-use or missing-condition answer can close the hand-back question. It does not automatically complete the intended unrestricted operation.
 
@@ -59,7 +59,7 @@ A qualified restricted-use or missing-condition answer can close the hand-back q
 
 A component certificate is read as whole-System permission. Recover the certified claim and the still-needed operating decision. A successful test is treated as a physical hand-back while temporary controls remain in the test state. Reconcile actual restoration and control.
 
-A recommendation is withheld until release paperwork exists. Return the adequate advice at its own boundary; obtain release only for the selected actual use.
+A recommendation is withheld until release paperwork exists. Return the adequate advice at its own boundary; obtain release only for the selected use.
 
 ### MNT.11:9 - Consequences
 
@@ -67,7 +67,7 @@ The receiver knows what can be used, under which conditions and who controls the
 
 ### MNT.11:10 - Architectural Rationale
 
-Hand-back joins the evidence and control needed by operation without collapsing their kinds. It remains separate from [MNT.10](21-mnt-10---verify-restored-functioning-after-maintenance.md) because “functioning supported” and “use permitted” can truthfully have different outcomes. Certification is a conditional contributor, not the universal definition of maintenance completion.
+During hand-back, establish what the evidence supports and who controls resumed operation. It remains separate from [MNT.10](21-mnt-10---verify-restored-functioning-after-maintenance.md) because “functioning supported” and “use permitted” can have different outcomes. Certification is a conditional contributor, not the universal definition of maintenance completion.
 
 ### MNT.11:11 - SoTA-Echoing
 

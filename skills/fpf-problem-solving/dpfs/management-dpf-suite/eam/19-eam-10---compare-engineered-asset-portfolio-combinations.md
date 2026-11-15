@@ -7,7 +7,7 @@
 
 Use this pattern when asset choices compete for shared funding, service, people, outages or other resources. Several individually attractive projects cannot all be performed, choosing one changes the feasible alternatives for another, or performing them together changes their consequences.
 
-Begin with the actual combination question and its constraints. Return the preferred feasible combination, a justified non-dominated set or the precise condition that prevents one. An isolated single-asset comparison can remain in EAM.9.
+Begin with the combination to be decided and its constraints. Return the preferred feasible combination, a justified non-dominated set or the precise condition that prevents one. An isolated single-asset comparison can remain in EAM.9.
 
 ### EAM.10:2 - Problem
 
@@ -17,7 +17,7 @@ Adding standalone costs can also count shared preparation twice or omit a cost c
 
 ### EAM.10:3 - Forces
 
-Shared allocation must preserve required service and actual technical eligibility while comparing value. A more complete model can reveal a better combination but costs effort and relies on input quality. Deferral can preserve flexibility or create unacceptable risk, depending on its supported policy.
+Shared allocation must preserve required service and technical eligibility while comparing value. A more complete model can reveal a better combination but costs effort and relies on input quality. Deferral can preserve flexibility or create unacceptable risk, depending on its supported policy.
 
 ### EAM.10:4 - Solution
 
@@ -37,7 +37,7 @@ For each material relation, identify the affected alternatives, its operating or
 #### EAM.10:4.2 - Construct the whole consequence account
 
 
-Start from compatible policies on the same service boundary, perspective and horizon. If a policy omits later support or its ending, return to EAM.8. Then describe what work and service the combination actually entails. Identify shared preparation, enabling work, recurring operation, temporary service and ending consequences. Obtain amounts and dates for those actual operations.
+Start from compatible policies on the same service boundary, perspective and horizon. If a policy omits later support or its ending, return to EAM.8. Then describe what work and service the combination entails. Identify shared preparation, enabling work, recurring operation, temporary service and ending consequences. Obtain amounts and dates for those operations.
 
 Reconcile this whole account with the separate accounts. For costs on the same basis, `joint adjustment = whole-combination cost − sum of standalone costs`. A negative amount is a saving; a positive amount is an additional cost. Explain what causes it and when it occurs. Where effects differ by date, construct the dated differences first and obtain their financial value through [FIN.9](../fin/22-fin-9---compare-capital-investments-and-allocations.md) on the applicable basis. [FIN.9](../fin/22-fin-9---compare-capital-investments-and-allocations.md) develops this interaction comparison and dated funding constraints; its return must identify the combination, common baseline, perspective, amounts, dates and significant assumptions.
 
@@ -56,7 +56,7 @@ Enumerate a small finite set of indivisible choices. For the CityWater shortlist
 
 For a larger problem, select an optimization or scenario method whose objective, choices, constraints and interactions represent the actual question. Specify what is selectable, which selections imply or exclude others, dated resource use and the joint effects. Model contingent actions with the information available when each action is chosen; the combination cannot assume different early choices for future outcomes that are not yet known. A mathematical optimum applies to the represented set and basis.
 
-Compare eligible combinations using the actual value criteria. When required service and other material consequences are equal, minimize total present cost. Otherwise preserve justified trade-offs or a non-dominated set. A cheaper programme that requires more scarce resources does not automatically dominate a dearer one.
+Compare eligible combinations using the applicable value criteria. When required service and other material consequences are equal, minimize total present cost. Otherwise preserve justified trade-offs or a non-dominated set. A cheaper programme that requires more scarce resources does not automatically dominate a dearer one.
 
 
 
@@ -87,7 +87,7 @@ The whole P+Q account is `1.8 + 1.8 + 0.2 = 3.8`. Adding the separate estimates 
 
 Suppose incompatible access windows require two visits and two mobilizations. P+Q returns to 4.0 and Z becomes cheaper at 3.9. If instead the proposed shared visit fails the service condition, remove that arrangement as ineligible and compare any qualified two-visit arrangement with Z. Reducing its price cannot repair the lost service. [EAM.11](20-eam-11---time-asset-interventions-and-manage-dependencies.md) establishes which visit arrangement is feasible; [EAM.10](19-eam-10---compare-engineered-asset-portfolio-combinations.md) uses its consequences.
 
-The example does not infer a common saving for CityWater's separate station jobs. A proposed CityWater sharing arrangement would need its own work, service and financial account before altering the following result.
+Before applying a saving to CityWater’s station jobs, establish what work they could share, whether service would be maintained, and how their joint costs would change.
 
 
 
@@ -114,13 +114,13 @@ Are all required choices, prerequisites and exclusions represented? Does the sel
 
 Funding the highest-ranked items until money runs out can miss a feasible combination of different options. Evaluate the relevant combinations.
 
-Accepting each project separately does not establish the shared condition. Construct the actual whole demands and consequences, then test their dependencies at portfolio scope.
+Accepting each project separately does not establish the shared condition. Determine the combined demands and consequences, then test their dependencies at portfolio scope.
 
 A generic synergy percentage hides which work or cash changes. Reconcile the whole account with the separate accounts and retain the conditions that make the difference possible.
 
 ### EAM.10:9 - Consequences
 
-The portfolio can deliver more useful service or value within actual constraints. Some individually preferred projects are displaced. The result's quality still depends on the eligible option set, consequence model and supported feasibility; it does not authorize work.
+The portfolio can deliver more useful service or value within actual constraints. Some individually preferred projects are displaced. The recommendation depends on the eligible options, the model of their consequences and evidence of feasibility. Starting work requires the applicable authorization.
 
 ### EAM.10:10 - Architectural Rationale
 
@@ -132,7 +132,7 @@ NIST HB135e2025, chapters 4, 7 and 8, supplies common-period costing, comparison
 
 [FIN.9](../fin/22-fin-9---compare-capital-investments-and-allocations.md) develops whole incremental cash under interactions, dated constraints and service continuations. Its B+C example shows that a negative joint cash effect can reverse the allocation even when the combined initial funding remains feasible. Use that financial construction together with the actual engineering and operating conditions; financial interaction and physical feasibility answer different questions.
 
-Enumeration fits a small indivisible shortlist because every permissible combination and exclusion can be inspected. Independent ranking is defensible only when the relevant choices and consequences are independent and the allocation rule fits the constraints. The value-per-capital ranking in [FIN.9](../fin/22-fin-9---compare-capital-investments-and-allocations.md) requires divisible, linearly scalable investments and one initial capital limit; indivisibility, minimum scale, interactions or later funding needs can defeat it. These conditions do not hold merely because each asset has a score.
+Enumeration fits a small indivisible shortlist because every permissible combination and exclusion can be inspected. Independent ranking is defensible only when the relevant choices and consequences are independent and the allocation rule fits the constraints. The value-per-capital ranking in [FIN.9](../fin/22-fin-9---compare-capital-investments-and-allocations.md) requires divisible, linearly scalable investments and one initial capital limit; indivisibility, minimum scale, interactions or later funding needs can defeat it. An asset score alone does not establish those conditions.
 
 An optimizer can help when enumerating a larger set becomes burdensome, provided the actual selection rules, interactions, dates and criteria can be represented. If a consequential relation remains unqualified, retain that uncertainty or obtain the missing result.
 

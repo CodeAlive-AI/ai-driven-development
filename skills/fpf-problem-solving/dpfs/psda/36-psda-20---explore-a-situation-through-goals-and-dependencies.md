@@ -3,23 +3,23 @@
 > **Type:** Method pattern body
 > **Status:** Stable
 >
-> **Primary working result:** a usable answer about a proposed change, an explained new difficulty, or a precise next inquiry question, with the participants' reasons, required provision, analysis assumptions and remaining limits connected.
+> **Primary working result:** a supported answer about the proposed change or observed situation, an explanation of a newly identified difficulty, or a precise unresolved question. Connect the result to the relevant purposes, provision, assumptions and limits.
 
 ### PSDA.20:1 - Problem frame
 
-**Use this when** a proposed change looks useful from one participant's position, but you cannot explain what it would require or change for the others. It develops an early inquiry using participants' intentions, provision and alternatives. The result may be a comparison, a newly discovered difficulty or a precise question for investigation. A diagram is useful when it makes those relationships easier to inspect.
+**Use this when** a change appears helpful from one participant’s position and you need to know what it would require or change for others. You can also trace a reported outcome to the provision it depended on. The inquiry may yield a comparison, a newly identified difficulty or a question for investigation. Use a diagram when it makes the relevant relationships easier to inspect.
 
-Start with one actual episode or proposal. Ask who needs an answer and which difference would change what they do; then trace one provision on which the proposed improvement depends. The first useful result may be an omitted contributor or an unsupported condition, before a complete model or comparison is available.
+Start with a particular episode or proposal. Identify the needed answer and the difference that matters to its conclusion, grounds or use. Trace a provision on which the result depends. An omitted contributor or an unsupported condition can be the first useful finding.
 
-Use an already adequate model or qualified answer directly. **Do not use this pattern** for a lone technical calculation whose subject and conditions are settled, or merely to draw a more elaborate picture. If only the consequence comparison is missing, use PSDA.8; if several adequate models need their contributions reconciled, use PSDA.3. A settled choice or the actual allocation of work belongs to its responsible decision or performing practice.
+Use an adequate existing model or qualified answer directly. For a settled technical calculation, use the relevant technical method. Use PSDA.8 for a missing consequence comparison or PSDA.3 for contributions from several models that need to be reconciled. A choice or work allocation requires the appropriate authority.
 
-An analyst, practitioner or assisting agent can conduct this inquiry for their own work or with others. Access to the relevant accounts and enough preparation to interpret the selected relationships are needed. A separate adviser, a workshop, a formal notation and a solver are not prerequisites. When another person's intention or a specialist relationship cannot be established, retain that limit rather than supply it on their behalf.
+The performer can conduct this inquiry independently or with others when they have the necessary access and competence to interpret the relationships. Use participants’ accounts and qualified specialist evidence where the question needs them. If an intention or specialist relation remains unknown, identify that limit. A separate adviser, workshop, formal notation or solver can help when its expected benefit, such as a better-grounded answer or time saved, warrants its cost.
 
 ### PSDA.20:2 - Problem
 
 A proposal can improve one visible result while relying on work that nobody has provided. A replacement sensor may improve a count without settling who keeps the service operating during installation. A diagram can make the dependency visible yet still conceal its purpose, timing or competing assignment. Evaluating the diagram as if those conditions already held produces an answer to a different question.
 
-The reverse difficulty also matters. An unexpected model result can reveal that the original problem was incomplete. Continuing to rank the initial proposals then misses a useful change in question: perhaps the immediate obstacle is a joint staffing arrangement rather than the proposed technology. The practitioner needs a way to move between the working situation, the model question and the interpreted answer while preserving what earlier reasoning still establishes.
+An unexpected result can expose an incomplete question. The immediate difficulty may be staffing two services together. Trace the answer to its premises, revise the affected question and retain earlier conclusions whose grounds still hold.
 
 ### PSDA.20:3 - Forces
 
@@ -33,17 +33,17 @@ The reverse difficulty also matters. An unexpected model result can reveal that 
 
 ### PSDA.20:4 - Solution
 
-Connect the receiving question to participants' reasons and required provision, use the model to answer a stated conditional question, and interpret that answer back in the working situation. If the answer exposes an omitted condition, revise the affected model and question. Stop with the result that the receiving work can use.
+Connect the question to the relevant purposes and provision. Use the model to infer what follows from its relationships and stated premises, then interpret that result in the working situation. If an omitted condition affects the answer, revise the relevant model or question. Close with the finding, limit or next inquiry the receiving work needs.
 
 The connected contributions are [PSDA.12](28-psda-12---recover-participants-concerns-and-affected-systems.md) for whose concerns enter, [PSDA.3](20-psda-3---construct-complementary-situation-and-option-models.md) for what the model can answer, [PSDA.5](22-psda-5---generate-decision-alternatives.md) for alternatives, and [PSDA.8:4.2.1](25-psda-8---compare-consequences-of-decision-alternatives.md#psda8421---construct-and-question-a-qualitative-consequence-network) for qualitative analysis. Enter at the unresolved question and retain usable answers. If a current direct calculation or an already qualified comparison settles it, use that result.
 
-The sections below develop one complete car-park inquiry alongside the general moves. They are not compulsory stages. A current model can supply the needed relationships; an already precise question can enter analysis; an unexpected result can return directly to the missing provider or condition. Preserve those adequate inputs rather than rebuilding them to follow the exposition. The other case in :5 starts from a different kind of constraint.
+The car-park case follows the inquiry through a staffing conflict and a revised allocation. Enter the general method at the part the question needs. An existing model may supply the relationships, a precise question may be ready for analysis, and an unexpected result may identify one missing premise. The exhibition case in §5 examines permissions and supply.
 
 #### PSDA.20:4.1 - Let the question determine what to model
 
-Begin with an episode, proposal or unexplained result. Ask who needs an answer, what they could do with it and which difference would change that action. Obtain relevant participants' accounts where possible; otherwise use attributable interviews, documents and observations, retaining unanswered questions for those who know the work. Participation in constructing the model can help correct it, but attendance does not establish agreement with a proposal.
+Identify what the inquiry needs to explain or support. Use existing records, relevant accounts and observations that establish the operating conditions. For a participant’s intention or experienced burden, use an attributable account or ask when needed and feasible. State any material gap. Participation in building the model may help correct it. To report agreement with a proposal, use evidence of the relevant response.
 
-Consider a car park whose unreliable sensors sometimes send drivers towards occupied floors. Attendants walk the floors and correct the displayed counts. Management proposes replacing the entire system, since the sensors cannot simply be exchanged in the current design. The initial inquiry is: **does replacement address the service difficulty better than continuing manual correction?** This is an adaptation of the parking exercise in the [iStar tutorial, slide 57](https://zenodo.org/records/10637477/files/iStar-tutorial-online.pdf?download=1). The following participants, conditions and judgements are constructed for this walkthrough.
+Consider a car park whose unreliable sensors sometimes send drivers towards occupied floors. Attendants walk the floors and correct the displayed counts. Management proposes replacing the entire system, since the sensors cannot simply be exchanged in the current design. The inquiry asks, **Does replacement address the service difficulty better than continuing manual correction?** This is an adaptation of the parking exercise in the [iStar tutorial, slide 57](https://zenodo.org/records/10637477/files/iStar-tutorial-online.pdf?download=1). The following participants, conditions and judgements are constructed for this walkthrough.
 
 Include drivers because the guidance affects finding a place; attendants because correction requires their work; the operations manager because staffing and service arrangements are theirs to decide; and the technical supplier because replacement feasibility and installation depend on its contribution. Management cares about operating cost and reputation. Drivers care about usable guidance and protection of their cars. An attendant's account of an assignment is evidence about that work, not a statement of every driver's preferences.
 
@@ -51,19 +51,19 @@ Keep the questions distinct. What would make the displayed count trustworthy? Ca
 
 #### PSDA.20:4.2 - Connect provision to the reasons on both sides
 
-Separate a desired state, an action, a required entity and a quality. “Current guidance is available” states a desired result. “Walk each floor and enter a corrected count” prescribes work. The count is information used in producing the display. Accuracy concerns whether that information represents the occupied and available spaces well enough for the intended guidance. A completed round does not by itself establish that accuracy.
+Distinguish a desired state, action, required entity and quality. Current guidance is a desired result. Walking the floors and entering a corrected count prescribes work. The supplied count is information used in the display. Accuracy concerns how well it represents available and occupied spaces for the intended guidance. Evidence of a completed round needs a further connection to support a claim about accuracy.
 
-For each important provision, connect five positions: the receiving participant, why that participant needs it, what must be provided, the provider, and how the provider proposes to obtain it. For example:
+For a material dependency, identify who needs the contribution, why, and what must be supplied. Establish who could or did supply it and how, insofar as the question needs those facts. Keep an unknown provider or an unsettled means open. For example, an agreed assignment might read as follows.
 
 > The operations manager needs a checked floor count from the attendant so that the service can issue current guidance; the attendant obtains the count by inspecting the floor and entering the result before the next update.
 
-Keep the attendant's checking task, the supplied count and the manager's need as distinct parts of this statement. If the checking method or update deadline is unknown, leave that question visible. Describing a dependency does not establish that the provider has accepted the work or can perform it.
+Distinguish the checking task, supplied count and manager’s need. State any missing method, deadline or condition that limits the result. To claim availability, acceptance or completed work, use evidence for the particular claim.
 
 Requiring a count with stated fitness conditions leaves room to choose its production method. Requiring a specified inspection task restricts that choice. State which relationship the work needs. Similarly, two recipients needing information called “the floor count” may need different intervals or accuracy; matching names do not establish interchangeable provision.
 
-Now recover the internal relationships that explain the alternatives. Current guidance needs a suitable count and a working way to publish it. A count might come from supported automatic sensing or from a sufficiently recent manual inspection. These are candidate means; neither is adequate merely because it appears under an “or”. Manual correction also needs staff time and access. Replacing the system needs a qualified design, installation and an operating arrangement. A technical supplier's future delivery is an external dependency, not a task the attendant can perform.
+For this service, a suitable count and a working display are both needed. A recent manual inspection or supported automatic sensing might supply the count. Check the operating conditions for the means under consideration. Manual correction needs staff time and access. Replacement needs an applicable design, installation and operation. Investigate a proposed external delivery as a supplier contribution.
 
-For each arrow, state whether it means a necessary condition, a sufficient alternative, a favorable or adverse contribution, or a quality of something. Accuracy can help reputation without guaranteeing it: the manager also relates reputation to protection of parked cars. An arrow saying that protection matters does not establish that it is provided.
+Give each relationship its intended meaning, such as necessity, sufficiency under stated conditions, a favorable or adverse contribution or a quality of a provision. The manager considers accuracy helpful to reputation and also values protection of parked cars. Evidence of protection is still needed to count it as provided.
 
 #### PSDA.20:4.3 - Show the part of the model needed for the current question
 
@@ -71,25 +71,25 @@ For each arrow, state whether it means a necessary condition, a sufficient alter
 
 A view showing only participants and external provision helps locate a missing supplier. Opening the manager's and attendant's internal reasons exposes why the count is needed and what work supports it. Opening the supplier's proposed arrangement becomes useful when installation or later maintenance can change the answer.
 
-In iStar these are the strategic dependency view, strategic rationale view and selective combinations of them. They show different amounts of one model. They are not required stages, and a hidden detail is not an absent condition. Preserve the same identified dependency when changing views; otherwise a convenient simplification can silently replace the thing being examined.
+In iStar the strategic dependency view, strategic rationale view and their selective combinations expose different parts of one model. Use the view that answers the question. Preserve the identified dependency across views. Check underlying conditions when the display omits a detail that matters.
 
-For this car park, an overview can show “attendant supplies count”. To examine availability during a shift, open the checking task and its staffing conditions. To compare whole cost, obtain the relevant cost account. The [iStar 2.0 Guide, §§2–8](https://arxiv.org/html/1605.07767v3) supplies the notation, distinctions and integrity rules when an actual iStar model is wanted. This prose walkthrough uses those distinctions without claiming to be a solver-ready model.
+For this car park, an overview can show “attendant supplies count”. To examine availability during a shift, open the checking task and its staffing conditions. For a whole-cost comparison, use an applicable cost account, calculate it from qualified inputs or state the cost still unknown. The [iStar 2.0 Guide, §§2–8](https://arxiv.org/html/1605.07767v3) supplies the notation, distinctions and integrity rules when an actual iStar model is wanted. This prose walkthrough uses those distinctions without claiming to be a solver-ready model.
 
 #### PSDA.20:4.4 - Turn a working question into an analysis, then recover its meaning
 
 
 
-Define one alternative precisely enough to tell which work and assumptions change. Alternative A retains the existing displays and uses manual correction. Alternative B installs the proposed replacement and uses its automatic counts. For the initial comparison, suppose staffing for A is available and the supplier has described a technically plausible B, while B's installation interval and whole cost remain unknown. Do not compare A in its troublesome current state with B in an unexplained ideal state.
+For each alternative the question concerns, identify which work or assumptions differ from the current arrangement. Alternative A retains the existing displays and uses manual correction. Alternative B installs the proposed replacement and uses its automatic counts. For the initial comparison, suppose staffing for A is available and the supplier has described a technically plausible B, while B's installation interval and whole cost remain unknown. Do not compare A in its troublesome current state with B in an unexplained ideal state.
 
-An initial analysis value expresses an observation or an assumption in this particular question. To ask what B would change *if installed and operating as proposed*, provisionally assume that installation and specified sensing performance hold. Mark both as assumptions. Keep the unresolved installation and cost questions attached to the investment decision. A conditional service comparison can proceed without pretending those inputs have been obtained.
+In this question, label each initial value as an observation or a stipulated assumption. To examine B if installed and operating as proposed, assume installation and the specified sensing performance. Keep installation and whole cost open for any investment decision. The conditional service comparison can proceed on its stated inputs.
 
-Likewise, leaving manual rounds out of B means they are not part of that proposed arrangement. It is not evidence that attendants cannot inspect a floor. An uninvestigated element stays uninvestigated; an investigated effect may remain unknown; opposed grounds may remain in conflict. Neither omission nor uncertainty means a negative observation.
+Omitting manual rounds from B defines the proposal. It supplies no evidence about the attendants’ capability to inspect a floor. Use any independent evidence available for that question. Distinguish an unexamined element, an examined effect for which evidence is insufficient, a negative observation and conflicting grounds.
 
-Carry each alternative through the relationships using [PSDA.8:4.2.1](25-psda-8---compare-consequences-of-decision-alternatives.md#psda8421---construct-and-question-a-qualitative-consequence-network). Keep the initial assumptions and intermediate judgements with its result. For A, a sufficiently recent and correctly performed round supports a corrected count; publication still needs the working display. For B, the stipulated sensing performance supports the count conditionally; it does not establish the installation date or remove all future maintenance work.
+Follow the relevant relationships for each alternative. Use [PSDA.8:4.2.1](25-psda-8---compare-consequences-of-decision-alternatives.md#psda8421---construct-and-question-a-qualitative-consequence-network) for a needed qualitative analysis. Keep the initial assumptions and intermediate judgements with its result. For A, a sufficiently recent and correctly performed round supports a corrected count; publication still needs the working display. For B, the stipulated sensing performance supports the count conditionally; it does not establish the installation date or remove all future maintenance work.
 
-Contributions require the relevant person's or specialist's judgement when the incoming grounds do not settle the answer. Here management judges that fewer misleading indications would help reputation. It cannot infer satisfactory reputation from that improvement alone while the protection concern remains unanswered. The same extra staff work that supports accurate guidance also adds operating burden. Do not cancel these effects by counting favorable and adverse arrows.
+Use the source that can support an unresolved contribution, such as a relevant participant’s stated judgement, an operating record or a specialist assessment. Here management judges that fewer misleading indications would help reputation. That supports a favorable contribution from guidance. The overall judgement about reputation remains open while protection is unresolved. Manual inspection can improve counts and increase staff burden at the same time. Assess those effects on their own grounds.
 
-Return an answer in the language of the original inquiry:
+Return the conditional comparison in the terms of the car-park inquiry.
 
 | Question | A: retained system with manual correction | B: proposed replacement |
 | --- | --- | --- |
@@ -97,42 +97,42 @@ Return an answer in the language of the original inquiry:
 | What happens to work and cost? | Inspection remains a recurring demand. | Some inspection may be displaced, but acquisition, transition and operating costs remain to be established. |
 | Does it meet the concerns behind reputation? | Better count information addresses one concern; protection of cars needs its own grounds. | The same limit applies; a better sensor is not evidence of protection. |
 
-This comparison does not yet justify the investment. It identifies what the proposal can improve and which missing facts can change the choice. Obtain a bounded installation and whole-cost answer if its expected contribution warrants the work; otherwise retain the conditional comparison or defer the choice.
+The comparison identifies a possible service improvement under its assumptions. Installation timing and total cost remain open, so it leaves the investment decision unresolved. Return the conditional comparison if that answers the question. Seek the missing facts when their attainable contribution warrants the work.
 
 #### PSDA.20:4.5 - Use surprising results to discover a different problem
 
-An unexpected answer raises two questions: whether the model or its analysis needs correction, and whether the proposed work has a problem that the original question omitted. Trace the answer back to the relations and premises that produced it. Check the inference against its analysis rules and compare the material premises with the participants' accounts and operating conditions. Correct a misrepresented relationship or mistaken premise, then reconsider the affected conclusions. If this resolves the surprise, continue the original inquiry using the repaired model.
+Trace a surprising answer to the relationships, premises and analysis rules that produced it. Check whether the model misrepresents the work or the original question omitted a consequential condition. Correct an established error and reconsider the affected conclusions. Use the corrected model if it answers the original inquiry.
 
-When the original question omits a necessary contribution, restate the required joint result and its conditions. A question about improving one contribution can thereby become a question about obtaining several contributions together. Explain that change to the participants: it follows from a dependency of their desired result.
+When the original question omits a necessary contribution, state the required joint result and the conditions that make it possible. Explain how the dependency changes the question for the intended use. A supported account of that dependency can finish an inquiry about the original proposal.
 
-Work backward from the joint result to the provisions and conditions that would make it possible. Construct alternatives by changing a provider, the means of producing a provision, its timing or the support available to it. Use PSDA.5 when generating the alternatives needs further development. A proposed relaxation of the required result returns to the people whose need or obligation it changes.
+If the task needs another arrangement, work backward from the joint requirement. Look for feasible changes to the provider, means, timing or support. Use PSDA.5 when generating alternatives needs further work. A proposed relaxation of the requirement needs the applicable authority and the conditions of the recipient’s use.
 
-Then work forward through each promising arrangement, checking the contributions together under the same conditions, including competing assignments and shared resources. Revise the affected conclusions when a premise changes; retain relationships and conditional answers whose grounds still hold. The result is a changed problem with a reason for the change and a candidate answer, rejection or next inquiry that its participants can use.
+Test each candidate combination under the same conditions, including competing assignments and shared resources. When a premise changes, revise the dependent conclusions and keep those still supported. Return the resulting candidate, supported rejection or open condition with the reason it matters.
 
 
 Suppose the first model gave A an unqualified favorable result because it represented the round but omitted other assignments. Ask what must be true for that result to hold. Inspecting the rota now reveals that the same attendant must be at the security desk from 10:00 to 10:15, while the modeled correction requires leaving it for a round from 10:00 to 10:10. No substitute is assigned. These stipulated facts defeat the simultaneous arrangement.
 
 The discovery changes the model and the problem. Add the required desk coverage and its relation to the attendant's available work; then revise A's count availability for this interval. The earlier claim that a completed, timely inspection can supply a count still holds. B's separate technical hypothesis also survives. What fails is the premise that A's work can coexist with the retained service obligations.
 
-The next question is now: **how can current guidance and desk coverage both be obtained in this interval?** The manager who controls assignments must examine a different allocation or contributor. [OCE.11](../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) develops that coordination when change work competes with continuing service.
+If the manager needs a remedy, the next question is **how can the service provide current guidance and cover the desk during this interval?** A different allocation or contributor would need to meet both requirements. The manager holds assignment authority. Use [OCE.11](../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) when the proposed change competes with continuing service.
 
-Work backward from the joint requirement. Current guidance needs an adequate count and publication; desk coverage needs a person at the desk. One candidate is a separately allocated competent checker while the attendant remains at the desk. Test it forward: can that person obtain the count, update the display in time and do so without abandoning another necessary assignment? Until these conditions are established, the candidate is a question for the manager, not an available solution.
+Current guidance requires an adequate count and publication. Desk coverage requires someone at the desk. A competent relief checker could perform the round while the attendant remains at the desk. Establish whether the checker could obtain and publish the count in time with the required access and without leaving another necessary assignment. Until then the proposed allocation is conditional.
 
 For a bounded continuation, suppose the manager assigns a competent relief worker for this interval, verifies that no other required assignment overlaps, and provides the permitted access and existing checking procedure. In the stipulated trial the relief worker obtains and publishes a count meeting the agreed freshness and accuracy conditions, while the attendant remains at the desk. Both required contributions are supplied in this interval. The added staffing cost belongs in A's cost account. If relief is available only today, retain today's result and reopen the staffing question before promising tomorrow's service; the earlier investment question remains open.
 
 A different candidate might change the update interval or the information promised to drivers. That changes the service requirement, so return to whether the altered guidance remains useful and acceptable. Do not weaken the criterion silently to make the diagram succeed. An incompatible candidate can be rejected without proving that all possible arrangements fail; an unsupported candidate stays conditional.
 
-Keep the unsuccessful combination and the reason it failed so that the next attempt does not repeat it. In a formal backward analysis, ask which supported conditions and judgements produce the incompatibility. A solver's failure can concern its encoding, restrictions or current assumptions; it is not a proof that the real organization has no remedy.
+Retain the failed combination and its reason where another decision or attempt depends on it. In formal backward analysis, identify which premises or judgements produce the incompatibility. A proof of incompatibility establishes it within the encoding, premises and restrictions. A search that exhausted its allowance without finding a solution leaves compatibility unresolved. An organizational claim about all remedies needs evidence covering those remedies.
 
 #### PSDA.20:4.6 - Stop with a usable answer and preserve the right return
 
-The manager now has a useful result: replacement is not yet justified by the conditional service comparison; the original staffing proposal cannot provide both services; and the revised allocation has supplied them in the stipulated interval. The immediate allocation question and the longer investment question have different owners and inputs. A repaired rota can settle the first without settling the second. A completed cost comparison does not itself allocate a checker.
+In the stipulated interval the original assignments conflicted and the revised allocation supplied both services. The initial conditional comparison leaves the replacement investment open. A repaired rota can settle allocation for the interval. A cost comparison contributes to an investment question, while assignment of a checker needs a separate authorized act.
 
-Stop when the inquiry's purpose has been met at its declared strength: an adequate comparison is available, the decision-changing incompatibility is explained, or the next useful investigation is precise.
+Close when the result answers the receiving question at the required strength. Return the supported comparison, explained incompatibility, fact about provision or precise missing information with the conditions needed to use it.
 
-When a new fact arrives, identify which assumption, relation or judgement changes. Reconsider the alternatives and consequences that depend on it, including their shared conditions, while retaining independent results. If a technical question needs dynamics, accuracy bounds or failure probabilities that this model cannot establish, use an appropriate technical model and bring its qualified answer back.
+When a new fact matters, trace it to the affected premise, relationship and dependent conclusions. Keep independent results. For a needed technical result such as an accuracy bound or failure probability, use suitable existing evidence or an appropriate model. If the input or model is unavailable, identify the remaining limit.
 
-When the analysis itself is difficult, try a small interpretable question whose expected result can be explained from the modeled relationships. Inspect unreached intentions and omitted providers before taking coverage for granted. The authors' later suggestions include extreme hypothetical settings and realistic alternatives as ways to question a model. Use such settings to inspect the model; their feasibility as actual plans is a separate question. Preparation in the chosen language and help interpreting a model may be needed.
+If the analysis is difficult to interpret, try a small question whose expected answer can be traced through the relationships. Check for omitted providers or intentions relevant to the claimed coverage. The researchers also suggest extreme hypothetical settings and realistic alternatives for examining a model. Their usefulness for diagnosis and their feasibility as actual plans are separate questions. If the chosen language is unfamiliar, seek or provide the preparation the task needs.
 
 ### PSDA.20:5 - Archetypal Grounding
 
@@ -140,40 +140,40 @@ When the analysis itself is difficult, try a small interpretable question whose 
 
 A community archive proposes automatic transcription for a public website so that visitors can search thirty oral-history stories in either of two languages before an exhibition opens. The access rules, source states and capacities below are stipulated for this constructed example.
 
-The curator needs visitors to find the relevant approved story. Speakers have agreed to public use of approved excerpts; the raw recordings remain restricted. The proposed service requires an approved excerpt in both languages for each of the thirty stories. Those are conditions of this proposal, not preferences that can be compensated by faster search. The question is initially: would transcribing and publishing the recordings provide the promised service?
+The curator needs visitors to find the relevant approved story. Speakers have agreed to public use of approved excerpts; the raw recordings remain restricted. The proposed service requires an approved excerpt in both languages for each of the thirty stories. The permitted use protects the speakers’ conditions for sharing. Coverage in both languages for all thirty stories defines the proposed service. Faster search cannot authorize release. Would transcribing and publishing the recordings supply what the curator needs?
 
 Recover the provision before choosing software. The curator needs approved bilingual excerpts from an editorial contributor. That contributor needs permitted access to source material, a usable translation and the approval required for that use. The archive custodian can supply permitted material, while the speakers supply approval under the stipulated arrangement. A transcription tool can propose text; it does not supply permission, translation competence or the speakers' approval.
 
-An overview showing “archive supplies stories” hides these differences. Open the editorial contribution only as far as the current question needs. Distinguish producing a transcript, producing a translation and obtaining approval. Connect fidelity to the speaker's account with the visitor's ability to understand the excerpt; do not treat a readable transcript as evidence that its meaning or permitted use has been preserved.
+An overview showing “archive supplies stories” hides these differences. Open the editorial contribution only as far as the current question needs. Distinguish producing a transcript, producing a translation and obtaining approval. Examine fidelity to the speaker’s account, intelligibility for visitors and permission to use the excerpt. Readability establishes at most one part of that assessment.
 
 Now examine two proposed arrangements. Publishing searchable raw transcripts conflicts with the stated access rule even if the transcripts are accurate. Publishing an index of approved bilingual excerpts could meet the rule, but only if the needed excerpts can be supplied. This comparison neither rejects automatic transcription as an internal aid nor silently relaxes the required public use.
 
 Suppose the first model gave the second arrangement a favorable result because it represented an editor as available. On asking what that assumption includes, the curator finds that approved bilingual excerpts exist for ten stories and the available editorial work can complete five more before opening. No supplier is yet identified for the remaining fifteen. The model had combined “some editorial help is available” with “all thirty contributions will be supplied.” The latter claim is unsupported. The ten existing excerpts and their publication permission remain usable. Completion of the next five remains conditional on the planned editorial work.
 
-The next question becomes: can the remaining approved bilingual material be obtained within the opening conditions? Work backward from that joint requirement. An existing approved translation held by a contributor is one candidate provision; a newly commissioned translation with the necessary review is another. Test any candidate forward for source fitness, access, permitted publication, capacity and timely approval. A smaller public collection would change the promised scope and needs its own authorized decision.
+The next question becomes: can the remaining approved bilingual material be obtained within the opening conditions? Work backward from that joint requirement. An existing approved translation held by a contributor is one candidate provision; a newly commissioned translation with the necessary review is another. Test any candidate forward for source fitness, access, permitted publication, capacity and timely approval. Reducing the collection changes the promised scope and needs an authorized decision. The existing ten excerpts retain their qualified uses.
 
-For a further change, suppose a contributor supplies suitable translations for the fifteen stories that lacked a supplier, but their permission covers display inside the exhibition only. The content and translation claims need not be discarded. What changes is the proposed online publication. Return that restriction to the access arrangement and the curator's decision. An on-site search arrangement would change the proposed access route, so the curator must decide whether it would still meet the receiving need. Public web access is not established. The inquiry can stop with that precise distinction and next question without claiming that the service has been implemented.
+Suppose a contributor supplies suitable translations for the fifteen stories but permits exhibition use only. The translations retain their qualified content. The permission leaves online publication unavailable. An on-site search route would change the proposal. The curator can ask whether it serves the intended audience and seek any needed decision. The access finding can complete the present inquiry before either service is implemented.
 
-Unlike the car-park allocation in :4.5, this continuation does not stipulate a completed remedy. It demonstrates a useful bounded return when a missing provision or use condition remains unresolved. It also shows why a requirement expressed as a quality cannot be weakened merely to obtain a favorable analysis label.
+The car-park trial records that timely guidance and desk coverage were both supplied in the stipulated interval. In the exhibition case, the analysis locates an unresolved provision and a restriction on public use. Each supplies an answer under its conditions. A change to the promised language coverage or access would need a separate decision.
 
 #### PSDA.20:5.2 - A sufficient direct answer
 
-The archive already has a current, qualified answer covering the exact approved excerpts, languages, access route and opening period. The remaining task is to apply the settled publication instruction. Use that answer and the responsible publishing practice. Reconstructing the goals model adds no missing result.
+The archive already has a current, qualified answer covering the exact approved excerpts, languages, access route and opening period. The remaining task is to apply the settled publication instruction. Use that answer and the responsible publishing practice. The existing answer supplies the necessary basis for that action.
 
 ### PSDA.20:6 - Bias-Annotation
 
-**Scope:** early inquiry through participants' intentions and dependencies. **Lenses:** **Onto/Epist** keeps participants, work, model content and evidence distinct; **Prag** selects the answer that changes the receiving action; **Arch** exposes necessary provision and competing assignments; **Gov** preserves actual permission and allocation; **Did** separates a readable account from demonstrated modeling capability.
+**Scope:** Inquiry into participants’ intentions and dependencies. **Lenses:** **Onto/Epist** distinguishes participants, work, model content and evidence. **Prag** relates the finding to the receiving question. **Arch** identifies necessary provision and competing assignments. **Gov** examines permission and allocation. **Did** distinguishes an intelligible account from evidence of modelling capability.
 
 Proposal bias treats the suggested technology as the problem's boundary. Agreement bias mistakes participants' recognition of a diagram for acceptance or feasibility of the work. Favorable-label bias hides unknown provision or offsets a protected condition against another benefit. Ask what each relied-on relationship means and which actual condition supports it; keep a contrary account or missing premise visible.
 
 ### PSDA.20:7 - Conformance Checklist
 
-- The inquiry identifies who needs an answer, what action it can inform and what would make the present result sufficient.
-- A relied-on provision distinguishes its recipient, purpose, supplied result, provider and proposed way of obtaining it. Unknown availability or acceptance is not replaced by a dependency label.
+- Identify the needed answer, its receiving use and what the evidence must establish.
+- Identify the recipient, purpose and needed provision. Establish the provider, means, acceptance and availability to the extent the conclusion uses them. Name any consequential gaps.
 - A view preserves the modeled relationships relevant to the question; omitted display detail is not treated as an absent condition.
 - Initial analysis assumptions remain distinguishable from observations, model relationships and unknown or conflicting grounds.
 - The analysis result is interpreted in the original working terms, with its limited use and any newly discovered problem stated.
-- A backward candidate is tested as a whole under the same requirements; an unsupported combination remains conditional and an incompatible one does not prove that all remedies fail.
+- For a candidate derived from a joint requirement, examine the whole combination under those requirements. For each combination at issue, state what the grounds establish about its feasibility or which condition remains unresolved.
 - Changed assumptions or evidence reopen their dependent answers while independent results remain available. A sufficient result permits stopping.
 - When a notation or solver is chosen, its language and analysis rules are compatible and its restrictions are preserved. Actual allocation, performance, permission and empirical effects retain their own grounds.
 
@@ -183,32 +183,32 @@ Proposal bias treats the suggested technology as the problem's boundary. Agreeme
 | --- | --- |
 | Start by drawing every actor and goal. | A large picture can still miss the consequential question. Begin with the receiving use and add a relationship when it can change the answer. |
 | Count favorable arrows or satisfied goals. | Counts hide the meaning and strength of the grounds, necessary combinations and protected conditions. Use the qualified consequence analysis and explain the returned profile. |
-| Treat a supplier name as delivered work. | A named role can lack access, time, ability or an accepted assignment. Establish the provision needed for the proposed use. |
+| Treat a supplier name as delivered work. | A named provider may lack access, time, competence or an accepted assignment. Use evidence of delivery to claim that work was supplied. To assess a proposal, establish its needed conditions or state the gap. |
 | Interpret an assumption as a result. | “If installed” cannot establish an installation date. Retain the assumption with the conditional answer and return the missing investment or operating premise. |
 | Repair a failed model by weakening the recipient's criterion. | This changes the problem without the required decision. Compare another means or make the proposed requirement change explicit. |
 | Rebuild everything after one change. | Independent results can remain valid. Follow the changed relation and its downstream reliance, reopening the boundary only when the new question requires it. |
 
 ### PSDA.20:9 - Consequences
 
-The inquiry can yield a useful result before a whole decision is possible: an explained incompatibility, a bounded comparison or a question that a particular source can answer. It can also reveal a different problem while preserving earlier conditional knowledge.
+The inquiry may explain an incompatibility, establish what was provided, compare options within known limits or identify a question for a particular source. A newly discovered dependency can change the problem while leaving earlier conditional conclusions usable.
 
 The cost is obtaining and interpreting the relevant accounts and relationships. Large or technical questions can exceed a manual model's useful reach. Reuse a suitable domain result, obtain competent help or narrow the present claim when that is the better way to answer the question.
 
 ### PSDA.20:10 - Architectural Rationale
 
-Participants' intentions matter here because the same supplied entity can serve different purposes and require different conditions. Connecting provision to reasons on both sides explains why substituting a task, supplier or output can change the inquiry. The model is useful when those distinctions alter an answer; it need not become a complete representation of the organization.
+Participants' intentions matter here because the same supplied entity can serve different purposes and require different conditions. Connecting provision to reasons on both sides explains why substituting a task, supplier or output can change the inquiry. Include the distinctions that affect the requested conclusion or its grounds.
 
-Forward analysis examines what follows from a proposed arrangement. Backward inquiry constructs possible means for a needed joint result. Neither alone settles the working question: initial assumptions and intermediate judgements must be interpreted, and a proposed combination must survive its joint conditions. Returning an unexpected answer to an omitted source question allows the problem and the candidate response to change together.
+Forward analysis establishes what follows under stated relationships and premises. Backward inquiry identifies possible means for a joint requirement. Interpret the result in the working situation. For a proposed combination, examine the joint conditions. An unexpected result can reveal an omitted question and change the candidate response.
 
-PSDA.3 remains the Method for making complementary model contributions usable. PSDA.8 remains the Method for comparing consequences, including its developed qualitative branch. The present Method supplies the broader inquiry in which a question, an actors-and-goals model and an interpreted answer develop together. Where a sufficient model and a settled comparison already exist, the narrower direct contribution is preferable.
+Use PSDA.3 when several model contributions must be reconciled and PSDA.8 when consequence comparison is needed, including its qualitative branch. Here the model of purposes and dependencies helps interpret the situation and refine the question. Use a sufficient existing model or a settled comparison directly.
 
 ### PSDA.20:11 - SoTA-Echoing
 
 The iStar Guide defines a language; the [PoEM 2009 treatment](https://www.cs.toronto.edu/~jenhork/Papers/Horkoff_PoEM_2009l.pdf) develops interactive modeling and forward evaluation. The [ER 2010 procedure](https://www.cs.toronto.edu/~jenhork/Papers/ER_Horkoff.pdf) adds formal backward search with human judgements and backtracking under stated structural restrictions. The manual backward question used here is an adaptation, not an implementation of that algorithm. If a named solver is used, select compatible language and analysis versions and preserve their restrictions, rather than applying older propagation tables to iStar 2.0 without a justified mapping.
 
-The [subsequent systematic-versus-ad-hoc study](https://www.cs.toronto.edu/pub/eric/PoEM10-JH.pdf) gives reasons to attend to interpretation, coverage and training. It does not establish that a systematic procedure uniquely produces better understanding or more useful new questions. Use the model and its analysis for the contribution they can actually supply, then establish the domain evidence and decisions needed for reliance.
+The [subsequent systematic-versus-ad-hoc study](https://www.cs.toronto.edu/pub/eric/PoEM10-JH.pdf) gives reasons to attend to interpretation, coverage and training. It does not establish that a systematic procedure uniquely produces better understanding or more useful new questions. Use the model for the relationships and inferences it supports. Reliance on an operating fact or authorized decision requires evidence for that fact or decision.
 
-The comparison concerns this manual, question-led inquiry rather than unrestricted formal analysis or the empirical effectiveness of a consulting intervention.
+These comparisons concern manual inquiry guided by a working question. A formal-analysis claim or claim about consulting effectiveness needs its own basis.
 
 | Source contribution or alternative | Adoption and limit for this Method |
 | --- | --- |
@@ -217,7 +217,7 @@ The comparison concerns this manual, question-led inquiry rather than unrestrict
 | Formal backward search | Retain the useful backward question and whole-candidate forward test. Do not claim an implementation or transfer old formal rules to a different language version without a justified mapping. |
 | A sufficient technical model or qualified comparison | Use it directly for the question it answers. More intentional modeling is not a substitute for missing dynamics, accuracy bounds, probabilities or actual operating evidence. |
 
-The car-park continuation and the exhibition case are constructed applications. Their stipulated allocations, capacities and permissions illustrate the reasoning; they are not new evidence that the Method improves outcomes. A stronger empirical or solver claim needs its own qualified basis.
+The car park and exhibition are constructed applications. Their allocations, capacities and permissions are stipulated. Use them to trace the reasoning. Evidence about actual service outcomes or solver performance must come from the corresponding work.
 
 ### PSDA.20:12 - Relations
 
@@ -226,7 +226,7 @@ The car-park continuation and the exhibition case are constructed applications. 
 - [PSDA.3](20-psda-3---construct-complementary-situation-and-option-models.md) makes several model contributions and their limits usable. [PSDA.5](22-psda-5---generate-decision-alternatives.md) receives a newly constructed candidate without inheriting feasibility or ranking.
 - [PSDA.8:4.2.1](25-psda-8---compare-consequences-of-decision-alternatives.md#psda8421---construct-and-question-a-qualitative-consequence-network) supplies the qualitative forward and backward analysis used here. The whole inquiry retains its purpose, initial assumptions, interpretation and return to the source situation.
 - FPF C.40.CD develops the general relation between a changed problem and a changed way. FPF B.5.SD supplies substantive discussion when constructing the answer with others is the missing contribution.
-- [OCE.11](../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) supplies organizational coordination when change work competes with continuing service. An inquiry result does not itself allocate that work.
-- [PSDA.14](30-psda-14---prepare-and-return-a-decision-support-recommendati.md) can use the qualified answer for a recommendation. The actual choice, performance and any effect claim retain their direct competent owners.
+- [OCE.11](../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) supplies organizational coordination when change work competes with continuing service. An allocation requires the applicable authority and an effective assignment.
+- [PSDA.14](30-psda-14---prepare-and-return-a-decision-support-recommendati.md) can use the qualified result for a recommendation. A decision needs its authority, performed work its evidence, and a claim of effect grounds for the causal connection.
 
 ### PSDA.20:End

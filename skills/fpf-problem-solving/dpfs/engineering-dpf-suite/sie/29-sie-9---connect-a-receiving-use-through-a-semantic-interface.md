@@ -10,7 +10,7 @@
 
 **Use this when** semantic mappings or integrated state exist but the receiving Work still cannot obtain, interpret, challenge, or return the bounded result. Enter when a technically reachable endpoint hides source meanings, currentness, unmatched rows, conflicts, or the difference between “no value” and “source unavailable”.
 
-The primary EntityOfConcern is one semantic interface between the maintained integration arrangement and a named receiving use. The first move is to restate the receiver's action and select the smallest interaction and result form that carries every load-bearing semantic branch. The first result is an interface contract and supplied candidate interface, not a claim that the receiver is authorized or that the service is operationally adequate.
+For the named receiving use, start with the action the result is meant to support. Choose the smallest interaction and result form that connects the maintained integration arrangement to that use and carries every branch the receiver needs. Supply an interface contract and a candidate interface. Establish the receiver’s authorization and the service’s operating adequacy separately when the use requires them.
 
 The payoff is a boundary at which semantic meaning, failure, and provenance are usable by ordinary Work. Do not use SIE.9 to design the application's whole user experience, make its decision, operate the service, or accept engineering/quality results. Those owners consume the interface under their own Methods and authority. Stop rather than return a positive interface when a required semantic branch, interpretation, provenance/currentness condition, source-return path, or receiver-side use test cannot be represented or traced.
 
@@ -25,8 +25,8 @@ When the interface is treated as transport only, semantic obligations remain in 
 | Force | Tension |
 | --- | --- |
 | Minimality | A small interface is easier to use and maintain, while hiding source, loss, or failure makes it unsafe. |
-| Human and machine use | Machines need stable schemas and branch codes; people need interpretations and challenge paths. |
-| Abstraction | Receiver-friendly names reduce burden, while source identifiers and exact meanings must remain recoverable. |
+| Receiving the result | The receiver needs to interpret the result and be able to return a disputed premise for review. A programmatic interface needs a stable schema, stable branch codes and a return path the caller can follow. A human-readable interface needs to explain the branch and show where to raise the question. |
+| Abstraction | Receiver-friendly names reduce burden, while source identifiers and meanings must remain recoverable. |
 | Performance | Rich provenance and alternative claims cost bandwidth and attention, while omitted trace defeats challenge and validation. |
 | Security | The receiver needs enough source information to rely, while disclosure can violate provider, privacy, or protection conditions. |
 | Evolution | Stable interface promises aid use, while source or mapping changes must not be hidden behind unchanged field names. |
@@ -44,7 +44,7 @@ Design the interface from receiving actions and semantic branches, not from the 
 5. **Expose qualified branches.** Represent matched/qualified, unmatched, incompatible, unresolved identity, source-qualified conflict, non-comparability, stale, inaccessible, timeout/source error, and partial result where applicable.
 6. **Expose provenance and currentness.** Provide source/edition or a stable reference, observation/retrieval time, mapping/composition rule version, derivation/trace reference, and freshness status needed by the receiver.
 7. **State access, protection, and authority assumptions.** Explain what the interface verifies, what the caller supplies, what may be disclosed, and which actions remain unauthorized by the semantic result.
-8. **Provide challenge and return paths.** A receiver must be able to identify the source, correspondence, identity, composition, mapping, or operational result that owns a defect or unresolved branch.
+8. **Provide challenge and return paths.** A receiver must be able to identify which source, correspondence, identity disposition, composition, mapping or operational result needs examination and where to return the issue.
 9. **Bind service behavior without claiming it.** State latency, availability, pagination/volume, ordering, idempotence or snapshot expectations only where semantic use depends on them; obtain implementation/operation evidence separately.
 10. **Define conformance and reopen.** Give representative requests, responses, error branches, compatibility conditions, deprecation/change behavior, and observations that reopen the interface.
 
@@ -81,7 +81,7 @@ The quality engineer uses a view or API with request parameters `productDefiniti
 | `rowDisposition` | matched, unmatched-feature, unmatched-characteristic, incompatible, unresolved-identity, stale, source-error, or prohibited |
 | `returnPath` | source record and mapping/correspondence/identity/composition rule references plus the direct engineering or quality owner for the decision |
 
-A known match returns a qualified row. A feature absent at effectivity `E` returns unmatched rather than the nearest label. An unresolved identity returns that branch without claiming no inspection exists. A source timeout returns partial/incomplete only if the contract permits it. The interface does not accept the result or release the configuration.
+A known match returns a qualified row. A feature absent at effectivity `E` returns unmatched rather than the nearest label. An unresolved identity returns that branch without claiming no inspection exists. A source timeout returns partial/incomplete only if the contract permits it. The responsible participants decide whether to accept the result or release the configuration.
 
 ### SIE.9:6 - Bias-Annotation
 
@@ -125,7 +125,7 @@ The cost is a richer branch model and deliberate presentation of uncertainty and
 
 ### SIE.9:10 - Rationale
 
-An integration result has practical value only when it crosses into receiving Work without losing the conditions that make it meaningful. The interface is therefore semantic, not merely syntactic: it carries interpretation, qualification, and return paths while leaving decision authority with the receiver.
+An integration result has practical value only when it crosses into receiving Work without losing the conditions that make it meaningful. The interface carries interpretation, qualification and return paths. The receiving participant uses the result within its authority and refers other decisions to their designated owners.
 
 ### SIE.9:11 - SoTA-Echoing
 
@@ -147,6 +147,6 @@ Reopen when the receiver or action changes, a source/mapping/realization premise
 - `SIE.4`–`SIE.7` supply correspondence, identity, composition, and executable mapping references and branches.
 - `SIE.8` supplies selected realization, service assumptions, fallback, and missing implementation results.
 - `SIE.10` validates the candidate interface and representative receiving workflow.
-- Applications and direct professional owners retain authorization, risk acceptance, and actual outcomes; Data Engineering and Operations retain service execution.
+- The relevant application or professional participants decide on authorization and risk acceptance. Establish any claimed outcome from the receiving work. Data Engineering and Operations remain responsible for running the service.
 
 ### SIE.9:End

@@ -13,7 +13,7 @@ If a known method already obtains the needed result, perform it. If further inqu
 
 ### CUST.5:2 - Problem
 
-Local delivery produces rich experience but often returns only requests, anecdotes or a working artifact. Product development cannot recover which conditions caused the result or what can transfer. Conversely, a probe optimized for general learning can leave the local customer with an unfinished obligation. Both receiving uses must be made explicit and protected.
+Local delivery produces rich experience but often returns only requests, anecdotes or a working artifact. Product development cannot recover which conditions caused the result or what can transfer. Conversely, a probe optimized for general learning can leave the local customer with an unfinished obligation. Specify what the customer and the product team each need from the work, and protect both uses.
 
 ### CUST.5:3 - Forces
 
@@ -33,7 +33,7 @@ Name the local decision and the shared-development decision. They may need diffe
 
 Describe what a useful answer would change: proceed, alter the scope, choose another way, keep the result local or stop. Identify the uncertainty that prevents that choice. Recover already available evidence before designing new work.
 
-Protect the operating baseline: current service, support commitments, access conditions and people whose work the attempt could disrupt. Set a bounded resource and observation window, a recipient for each answer and stop conditions tied to harm, exhausted means or lack of decision value. These bounds can be revised explicitly when the receiving decision changes.
+Protect the operating baseline: current service, support commitments, access conditions and participants whose work the attempt could disrupt. Set a bounded resource and observation window, a recipient for each answer and stop conditions tied to harm, exhausted means or lack of decision value. When the receiving decision changes, state any change to these bounds.
 
 [IS.1 — Agree a Useful Implementation-Support Undertaking](../../is/13-is-1---agree-a-useful-implementation-support-undertaking.md) supplies an agreed implementation-support undertaking; [IS.2 — Find the Implementation Difficulty and Obtain the Next Useful Contribution](../../is/14-is-2---find-the-implementation-difficulty-and-obtain-the-nex.md) supplies inquiry into the difficulty and selection of the next useful contribution. Obtain those results where needed, then state how the proposed field action will serve both receivers.
 
@@ -61,7 +61,7 @@ Carry out the permitted work with the support and stop conditions established. W
 
 Address urgent local failure through its proper operating response. Do not delay it for a convenient research report. Conversely, a repair that restores service need not answer the shared hypothesis. State the narrower result when that is all the evidence supports.
 
-If successive improvisations change the object of the trial, re-establish the question and conditions. Continuing under the old label can produce an impressive outcome with no interpretable basis.
+If successive improvisations change the object of the trial, re-establish the question and conditions. Otherwise even a successful result may tell the reader little about the original question.
 
 #### CUST.5:4.5 - Produce two qualified answers
 
@@ -81,7 +81,7 @@ Stopping can protect resources and expose a boundary that prevents a broader fal
 
 #### CUST.5:4.6 - Return the result into actual product and practice work
 
-Have the receiving practitioner use the answer in a real next decision: revise the family boundary, build a member, change the delivery method, retain a local service or reject a proposed common form. Resolve missing authority or access that prevents this use. “Feedback sent” is not evidence that the receiving work can continue.
+Have the receiving practitioner use the answer in the next decision: revise the family boundary, build a member, change the delivery method, retain a local service or reject a proposed common form. Obtain any missing authority or access needed for that use. “Feedback sent” is not evidence that the receiving work can continue.
 
 A permanent field function repeats this method across changing questions. It needs ongoing connections with product and operating work. Review recurring results for general knowledge implications: does the pattern of cases challenge a claim about transfer, support or scale? Keep that knowledge revision distinct from a change to one customer's configuration.
 
@@ -91,11 +91,11 @@ A private-hosting attempt initially appears to fail because installation is diff
 
 A permitted simulation and one supervised setup show that the tool works when a named access contribution is supplied. During the local attempt, the author's manual correction also reveals an undocumented input precondition. The local service can continue with that precondition and scheduled assistance. The shared answer is narrower: a private profile is plausible, but its preparation and support are not yet independently repeatable.
 
-CUST.3 receives the access and input constraints; CUST.6 receives the missing preparation operation. The product maintainer does not infer that every private environment is supported.
+CUST.3 receives the access and input constraints; CUST.6 receives the missing preparation operation. For another private environment, the maintainer still needs grounds that its access, preparation and support conditions fit.
 
 Change the result: the customer cannot provide the required access. The attempt stops before live deployment. The negative finding still excludes that environment from the proposed family. The local receiver obtains a feasible hosted alternative or an explicit inability to provide the requested service.
 
-For a public service, field inquiry might compare whether a difficulty comes from translated instructions, device access or missing facilitator help. The method still needs permitted participation and a useful local response; it supplies no automatic causal attribution from one session.
+For a public service, field inquiry might compare whether a difficulty comes from translated instructions, device access or missing facilitator help. Arrange participation with the required permission and give the local recipients a useful answer. Evidence from one session may leave open which of the three difficulties caused the outcome.
 
 ### CUST.5:6 - Bias-Annotation
 
@@ -111,7 +111,7 @@ The method can favor what product teams can incorporate. Preserve local benefits
 - Are deviations, assistance and evidence limits recoverable?
 - Are collection, use and transfer permitted for the receiving purpose?
 - Can the inquiry end with a local-only, negative, uncertain or stopped result?
-- Has the answer changed or enabled receiving work, rather than only been transmitted?
+- What receiving work has the answer changed or enabled?
 
 ### CUST.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -137,7 +137,7 @@ Two receiving decisions explain why field work needs both delivery and learning 
 
 Official FDE descriptions from Palantir and OpenAI describe work spanning customer implementation and feedback to product teams. The full-text practitioner account by akshayk emphasizes continuing field/product learning rather than a temporary deployment squad. These sources establish described practice, not comparative effectiveness.
 
-CUST adopts the continuing feedback connection and qualifies it with bounded questions, permissions, current-service protection and all legitimate outcomes. Use the Implementation Facilitation methods and Engineering.Reference:22 for the relevant inquiry and support work.
+CUST adopts the continuing feedback connection and qualifies it with bounded questions, permissions, protection of current service, and local and shared answers that may be positive, negative, inconclusive or limited to one use. Use the Implementation Facilitation methods and Engineering.Reference:22 for the relevant inquiry and support work.
 
 Compared with a success-only pilot or a feature-request pipeline, the selected line changes what returns: conditions, hidden assistance, exclusions and the next receiving action. Reopen it when field inquiry repeatedly fails to produce a usable or permitted contribution.
 
@@ -145,6 +145,6 @@ Compared with a success-only pilot or a feature-request pipeline, the selected l
 
 CUST.5 can start from an unresolved delivery question without a full CUST.1 cycle. CUST.2 supplies recovered differences where available; CUST.3 and CUST.6 receive qualified common candidates; CUST.7 bounds resources; CUST.8 protects dependent customers when a shared change follows.
 
-[IS.5 — Sustain, Transfer, Extend or End Implementation Support](../../is/16-is-5---sustain-transfer-extend-or-end-implementation-support.md) supplies sustaining, transferring, extending or ending implementation support. Receive its continuation result and retain its conditions when concluding the field attempt.
+[IS.5 — Sustain, Transfer, Extend or End Implementation Support](../../is/16-is-5---sustain-transfer-extend-or-end-implementation-support.md) helps decide whether to sustain, transfer, extend or end the support. Use that conclusion and its conditions when closing the field attempt.
 
 ### CUST.5:End

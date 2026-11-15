@@ -6,7 +6,7 @@
 
 ### SYSE.37:1 - Problem frame
 
-Use this pattern when alerts for a software-service loss arrive too often, too late or without an action someone can take. Start with the loss that matters, the time available to respond and the person or mechanism actually able to act.
+Use this pattern when alerts for a software-service loss arrive too often, too late or without an action someone can take. Start with the loss that matters, the time available to respond and who or what can act within that time.
 
 The first result is an exercised alert rule with its intended response and known blind spots, or the missing observation or response capability. An alert rule alone is not an operating on-call arrangement.
 
@@ -33,9 +33,9 @@ The opposite failure is silence caused by lost telemetry, the wrong denominator 
 
 Identify the user task and the condition that merits action. Distinguish budget risk, a direct task or integrity failure, and loss of observation. They can have different urgency, evidence and recipients.
 
-Recover the qualified observation and response basis; for budget-risk alerting, include the actual objective and response policy. Determine how much loss may occur before a useful response is no longer possible, including measurement delay, notification, acknowledgement, diagnosis and mitigation time.
+Recover the qualified observation and response basis; for budget-risk alerting, include the applicable objective and response policy. Determine how much loss may occur before a useful response is no longer possible, including measurement delay, notification, acknowledgement, diagnosis and mitigation time.
 
-Choose an interrupting notification, ordinary work item or observation-only signal according to that response need. Name the actual responsibility and permission. If nobody can receive or perform the response, return that missing capability instead of declaring the alert operational.
+Choose an interrupting notification, ordinary work item or observation-only signal according to that response need. Identify the person or mechanism responsible for the response and the action they are authorized and able to take. If nobody can receive or perform the response, return that missing capability instead of declaring the alert operational.
 
 #### SYSE.37:4.2 - Derive a budget-risk rule on the right basis
 
@@ -51,23 +51,23 @@ A maximum possible burn rate can be below a proposed threshold for a loose objec
 
 Examine ordinary quiet periods and rare task classes. One failure among a few attempts can produce a large ratio without demonstrating a sustained high-volume incident. Its practical significance still depends on the consequence of that one failure.
 
-Choose a response fitted to that use: a direct failure alert, a longer justified observation, qualified synthetic probes or an agreed objective change may be appropriate. Do not dilute real user failures with successful artificial requests or unrelated services merely to make an aggregate quieter.
+Choose a response fitted to that use: a direct failure alert, a longer justified observation, qualified synthetic probes or an agreed objective change may be appropriate. Do not dilute real user failures with successful artificial requests or unrelated services to reduce the reported failure rate.
 
 Treat missing data separately from no bad events. A zero denominator, stale series or absent result is not automatically a zero burn rate. Exercise the chosen loss-of-observation rule and its response; it may merit urgent action even when the actual service state is unknown.
 
 #### SYSE.37:4.4 - Exercise evaluation, delivery and action
 
-Verify the rule's actual inputs, subject labels, triggering and clearing conditions, and evaluation cadence in the deployed monitoring mechanism. For a ratio or windowed rule, check its numerator, denominator and windows; a vendor's lookback or duration can mean something different from the intended decision window. Check that the configured rule implements the chosen logic.
+Verify the rule's inputs, subject labels, triggering and clearing conditions, and evaluation cadence in the deployed monitoring mechanism. For a ratio, check its numerator and denominator. For a windowed rule, check the windows; a vendor's lookback or duration can mean something different from the intended decision window. Check that the configured rule implements the chosen logic.
 
-Use representative recorded or controlled synthetic histories to exercise a significant active failure, recovery, isolated variation and missing telemetry. Inspect when the rule fires and resets, which notifications arrive, and whether related rules duplicate or suppress a needed action.
+Use applicable results from representative recorded or controlled synthetic histories. Exercise any uncovered failure, recovery, isolated variation or loss of telemetry that can change the selected rule’s response. Inspect when the rule fires and resets, which notifications arrive, and whether related rules duplicate or suppress a needed action.
 
-Include enough context in the alert for the recipient to recognize the subject, affected use, evidence and first qualified response. Verify delivery and acknowledgement through the actual arrangement without falsely declaring a production incident. A successful test message proves delivery, not the service-risk predicate.
+Where a person or mechanism must respond, include the subject, affected use, evidence and first qualified response. For a notification, verify delivery through the route in service and any required acknowledgement without falsely declaring a production incident. A successful test message proves delivery, not the service-risk predicate.
 
 #### SYSE.37:4.5 - Improve from actual response
 
-After use, compare alerts with significant events and resulting actions. Find missed harm, noise, late detection, stale firing and unavailable response. Repair the measurement, rule or response arrangement according to the actual defect.
+After use, compare alerts with significant events and resulting actions. Find missed harm, noise, late detection, stale firing and unavailable response. Where a problem is observed, identify which measurement, rule or response arrangement needs repair and act on the supported finding.
 
-Return the exercised rule and limits through the existing service configuration and operating account. SYSE.38 supplies diagnosis/restoration when an event is active. Acknowledging or silencing a notification does not itself restore the user task.
+Return the exercised rule and limits through the existing service configuration and operating account. SYSE.38 supplies diagnosis/restoration when an event is active. For an actual user-task failure, establish recovery from the task result. Acknowledgement or suppression alone does not establish it.
 
 #### SYSE.37:4.6 - Choose rules with useful detection and reset behavior
 
@@ -104,27 +104,27 @@ For the illustrative constant eligible-event-rate basis, T = 720 hours, p = 0.02
 | The short-window series is missing. | The confirmation is unobserved, not favorable; the telemetry-loss response applies. |
 | The metric accidentally includes another service's successful requests. | The rule no longer measures the agreed subject and must be repaired. |
 
-The recipient's first qualified action is to inspect the affected task and current service state, then apply the available mitigation under the service's response policy. The exercise verifies the predicate, notification route and recipient response separately. It does not claim that all incidents or slower budget risks are covered by this single rule.
+The recipient's first qualified action is to inspect the affected task and current service state, then apply the available mitigation under the service's response policy. The exercise verifies the predicate, notification route and recipient response separately. The rule covers fast budget consumption. Slower loss and direct integrity failures need their own response when they matter.
 
 Now consider a low-volume class with ten eligible attempts in an hour and one failure. Its observed bad fraction is 10%; against a 99.9% objective, the normalized burn rate is 100. This arithmetic does not show that the same high-volume paging strategy fits the case. A single high-consequence failed task may merit direct action; an ephemeral retriable failure may warrant a different, explicitly agreed response.
 
 Synthetic probes can reveal some unavailable paths before a real user arrives, but their successful requests must not erase the real task's failed observation. If the rare task cannot be represented by the probe, that blind spot remains.
 
-The platform/application distinction also remains intact. A deployment-path alert uses deployment attempts and its objective. An address-application alert uses address-task observations and that application's objective. Ten successful deployments do not cancel an observed application defect, and unavailable build workers do not automatically spend the running application's error budget.
+A deployment-path alert uses deployment-task observations; an address-application alert uses address-task observations. For a budget-risk rule, use the matching service objective. Ten successful deployments do not cancel an observed application defect, and unavailable build workers do not automatically spend the running application's error budget.
 
-What changes in practice is that a notification says which loss needs what response, while absence of usable data and absence of an available responder remain visible failures of the arrangement.
+A notification can identify which loss needs what response, while absence of usable data and absence of an available responder remain visible failures of the arrangement.
 
 ### SYSE.37:6 - Bias-Annotation
 
-Teams can tune thresholds to reduce page count while losing important failures, or insist that every fluctuation deserves interruption. Investigate the response value of alerts, not only their number. Recompute numerical examples on the actual denominator and time basis.
+Teams can tune thresholds to reduce page count while losing important failures, or insist that every fluctuation deserves interruption. Investigate the response value of alerts, not only their number. Recompute numerical examples using the service’s denominator and time basis.
 
 ### SYSE.37:7 - Conformance Checklist
 
-- Each rule has a named service/task loss and a usable response.
+- An operational rule identifies the relevant service-task loss or observation gap and a usable response. If that response is unavailable, identify the missing capability.
 - Budget-risk logic uses the matching measured objective and eligible population.
-- Thresholds and windows follow the selected loss/response basis.
+- Any thresholds or windows used follow the selected loss and response basis.
 - Missing observations have an explicit disposition; count- or rate-based rules also address low traffic and impossible thresholds.
-- Evaluation, notification, acknowledgement and response are exercised as distinct links.
+- The rule’s evaluation is exercised. Where the selected response requires notification, acknowledgement or action, each required link is exercised separately. If a needed link is unavailable, the result identifies it.
 - Recovery and suppression do not hide remaining user harm or exhausted budget.
 - Platform and application alerts do not exchange subjects or denominators.
 
@@ -132,14 +132,14 @@ Teams can tune thresholds to reduce page count while losing important failures, 
 
 | Misuse | Repair |
 | --- | --- |
-| Copy 14.4 into every alert. | Derive the threshold from the actual objective, window and response need. |
+| Copy 14.4 into every alert. | For a budget-risk rule, derive its threshold from the matching objective, window and response need. For other losses, choose a trigger that fits the loss and available response. |
 | Treat no samples as no failures. | Detect the observation gap and apply its own response. |
 | Reduce noise by adding unrelated successful traffic. | Preserve the task population and repair the response fit instead. |
-| Declare a rule operational after a test email arrives. | Exercise the risk predicate, delivery and actual available action. |
+| Declare a rule operational after a test email arrives. | Exercise the risk predicate, delivery and the action the recipient can take. |
 
 ### SYSE.37:9 - Consequences
 
-Actionable alerting protects response time and practitioner attention. It requires maintained measurement, rule semantics and real response capability. A good arrangement can produce fewer interruptions while revealing more important blind spots; notification count alone cannot establish either improvement.
+Actionable alerting protects response time and practitioner attention. It requires maintained measurement, rule semantics and the capacity and authority to respond. A good arrangement can produce fewer interruptions while revealing more important blind spots; notification count alone cannot establish either improvement.
 
 ### SYSE.37:10 - Rationale
 
@@ -147,14 +147,14 @@ An alert connects evidence of a consequential condition to an available interven
 
 ### SYSE.37:11 - SoTA-Echoing
 
-For actionable reliability alerts, **adopt and adapt** the developed 2018 [SRE Alerting on SLOs](https://sre.google/workbook/alerting-on-slos/) comparison of detection, precision and reset behavior. Multiwindow rules, slower-loss coverage and low-traffic adaptations already belong to this professional Method. Sections 4.2–4.6 derive selected rules and exercise their interaction with telemetry and response delays.
+For actionable reliability alerts, **adopt and adapt** the 2018 [SRE Alerting on SLOs](https://sre.google/workbook/alerting-on-slos/) comparison of detection, precision and reset behavior. Multiwindow rules, slower-loss coverage and low-traffic adaptations belong to this professional Method. Sections 4.2–4.6 derive selected rules and exercise their interaction with telemetry and response delays.
 
-**Compare** the intended rule with the actual [Cloud Monitoring burn-rate semantics](https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring/alerting-on-budget-burn-rate) when using that provider. Implementation names and default durations do not choose the service's loss tolerance. Additional rules cost maintenance and recipient attention; retain only distinctions that support a different needed action.
+**Compare** the intended rule with [Cloud Monitoring burn-rate semantics](https://docs.cloud.google.com/stackdriver/docs/solutions/slo-monitoring/alerting-on-budget-burn-rate) when using that provider. Implementation names and default durations do not choose the service's loss tolerance. Additional rules cost maintenance and recipient attention; retain only distinctions that support a different needed action.
 
 Reopen the arrangement when volume, objective, metric meaning, evaluation behavior or response capability changes. A correct burn calculation, a delivered notification and an effective mitigation are three separate results. Historical example thresholds do not establish any of them for a new service.
 
 ### SYSE.37:12 - Relations
 
-SYSE.36 supplies matching task measurement and objectives. SYSE.38 supplies diagnosis/restoration; SYSE.40 supplies capacity protection where overload is the problem. SYSE.35 uses its own exposure evidence and stop conditions. SYSE.25 can use recurring platform-alert evidence to select improvement, without treating alert volume as user value by itself.
+Use SYSE.36 for the matching task measurement and, when the rule concerns budget risk, the agreed objective. SYSE.38 supplies diagnosis/restoration; SYSE.40 supplies capacity protection where overload is the problem. SYSE.35 uses its own exposure evidence and stop conditions. SYSE.25 can use recurring platform-alert evidence to select improvement, without relying on alert volume alone to establish user value.
 
 ### SYSE.37:End

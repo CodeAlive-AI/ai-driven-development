@@ -3,7 +3,7 @@
 A concept of use says how actual or intended Systems participate in an operating situation and what effects are
 expected. A System concept says what engineered System arrangement could participate that way. Either can expose
 a defect in the other. `SYSE.2` therefore guides an Agent in developing linked use-concept and System-concept
-candidate families rather than letting one preferred technical solution determine the use story after the fact.
+candidate families. Keep the use claim open to evidence that could rule out the preferred technical solution.
 An available construction can also start the inquiry: develop a plausible use, follow its consequential
 behaviour, and let the failed assumption change the required functioning or proposed bearer. The next result
 can be a grounded architecture question while the proposed use remains conditional.
@@ -17,8 +17,8 @@ interface choices explicit. Then use `SYSE.6` to compare the candidates
 for the current engineering use, record the selected result, and state the evidence and conditions that would
 reopen the choice.
 
-When people disagree about the behaviour behind a use claim, SYSE.54 develops a shared event model and
+When participants disagree about the behaviour behind a use claim, SYSE.54 develops a shared event model and
 tests the rules and conditions connecting its events. Its account can change the concept in SYSE.2 before
 functions or software boundaries are selected. For software architecture candidates, SYSE.6:4.4 explains
 why different arrangements change performance, state coordination and release coupling; `SYSE.6:4.4.4` shows a
-bounded choice and its reconsideration. These are direct entries when those particular questions are live.
+bounded choice and its reconsideration. Start with the relevant method when one of those questions is open.

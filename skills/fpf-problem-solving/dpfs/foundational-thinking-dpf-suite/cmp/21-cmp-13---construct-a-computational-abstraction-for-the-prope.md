@@ -12,7 +12,7 @@ The reader can describe the admitted inputs, elementary transitions and requeste
 
 The first useful result is an effective abstract operation or small abstract execution with a justified conclusion about the original process. Extending that result across loops or interacting components requires the corresponding closure or composition argument. A finite reachability example can be done by hand; building an analyzer for a programming language requires its semantics and suitable algorithms for its representations.
 
-Use direct computation when it already answers the question affordably. If the required change is a numerical error allowance, CMP.8 supplies that construction. If the problem is whether the original process describes the intended subject, return to that modeling question: a sound calculation about the process retains its subject assumptions.
+Use direct computation when it answers the question affordably. If the required change is a numerical error allowance, CMP.8 supplies that construction. If the problem is whether the original process describes the intended subject, return to that modeling question: a sound calculation about the process retains its subject assumptions.
 
 ### CMP.13:2 - Problem
 
@@ -32,7 +32,7 @@ A summary can combine possibilities that never occur together. A sequence of ind
 
 ### CMP.13:4 - Solution
 
-**Local mantra:** choose the property; describe the represented possibilities; derive the abstract operations; compute a sufficient closure; interpret the answer; refine the distinction that blocks its use.
+**Choose the property; describe the represented possibilities; derive the abstract operations; compute a sufficient closure; interpret the answer; refine the distinction that blocks its use.**
 
 #### CMP.13:4.1 - Choose the observation and the direction of inference
 
@@ -48,7 +48,7 @@ For an original operation `f` and abstract input `a`, construct `f#(a)` so that 
 
 `post(gamma(a)) ⊆ gamma(post#(a))`.
 
-This is the soundness direction: the abstract step may add possibilities, but it must retain every original successor. Handle branch restrictions, failure and the actual arithmetic under the same interpretation. For example, an interval operation justified over unbounded integers needs revision for wraparound arithmetic.
+This is the soundness direction: the abstract step may add possibilities, but it must retain every original successor. Handle branch restrictions, failure and the arithmetic of the original computation under the same interpretation. For example, an interval operation justified over unbounded integers needs revision for wraparound arithmetic.
 
 Provide a way to combine incoming possibilities. An abstract join of `a` and `b` covers `gamma(a) ∪ gamma(b)`; it may include additional states. Implement the comparison used to recognize that a new result is already covered. Choose a representation whose operations and comparisons are affordable; an arbitrary logical formula may express the wanted property while making those operations difficult to compute.
 
@@ -86,9 +86,9 @@ Loops and infinite-path properties require their own path and recurrence conditi
 
 Locate where the reported execution or answer became impossible. Restore the distinction responsible: separate a merged state, retain a relation, distinguish a calling context, or make an abstract operation more precise. A false path through one merged class can suggest splitting its reachable dead ends from the states that supply its outgoing edge.
 
-Recompute affected dependencies and reuse results whose inputs and interpretation remain valid. Confirm that the revised construction removes the particular spurious result and still covers all original behavior. Removing one false path may leave others.
+Recompute affected dependencies and reuse results whose inputs and interpretation remain valid. Confirm that the revised construction removes the spurious result and still covers all original behavior. Removing one false path may leave others.
 
-Choose further refinement by what it can change in the receiving work. A coarse result that already answers the question is sufficient. A real counterexample changes the original construction or its allowed use; improving the analyzer cannot make that execution disappear. When refinement remains too costly or inconclusive, return the unresolved property and the condition under which another calculation or direct execution would help. C.11.DUA governs the worth of that additional work.
+Choose further refinement by what it can change in the receiving work. A coarse result can settle the question. A real counterexample changes the original construction or its allowed use; improving the analyzer cannot make that execution disappear. When refinement remains too costly or inconclusive, return the unresolved property and the condition under which another calculation or direct execution would help. C.11.DUA governs the worth of that additional work.
 
 ### CMP.13:5 - Archetypal Grounding
 
@@ -114,7 +114,7 @@ while x < N:
 
 At the loop head, a set `X` of possible values is transformed by `F(X)={0} ∪ {x+1: x∈X and x<N}`. An interval hull supplies an abstract transformer. Starting at `[0,0]` produces `[0,1]`, `[0,2]` and so on until `[0,N]`; this takes a number of expansions proportional to `N` even though `N` can be written with logarithmically many bits.
 
-Widen the increasing upper endpoint of `[0,0]` and `[0,1]` to obtain `[0,+infinity]`. It contains the initial value and is closed under the guarded update. It already establishes that `x` is never negative.
+Widen the increasing upper endpoint of `[0,0]` and `[0,1]` to obtain `[0,+infinity]`. It contains the initial value and is closed under the guarded update. It establishes that `x` is never negative.
 
 Suppose the receiving question instead asks for the value on exit. Apply the guard to `[0,+infinity]`: the integer inputs admitted by `x<N` are `[0,N-1]`; adding one and joining the initial value gives `[0,N]`. This smaller interval is itself closed under `F`, and contains 0. The exit condition `x>=N` then leaves `[N,N]`. Therefore every terminating execution exits with `x=N`.
 
@@ -132,7 +132,7 @@ If the second assignment becomes `y=1-b`, both inputs take the unequal branch. A
 
 ### CMP.13:6 - Bias-Annotation
 
-An alarming abstract result can draw attention away from whether its states form an executable case. Trace reconstruction tests that inference. A preference for simpler summaries can hide correlations; a preference for stronger analyses can spend resources recovering distinctions that the current answer does not need. Compare the actual result and cost under the requested observation.
+An alarming abstract result can draw attention away from whether its states form an executable case. Trace reconstruction tests that inference. A preference for simpler summaries can hide correlations; a preference for stronger analyses can spend resources recovering distinctions that the current answer does not need. Compare the result and cost under the requested observation.
 
 ### CMP.13:7 - Conformance Checklist
 
@@ -155,7 +155,7 @@ An alarming abstract result can draw attention away from whether its states form
 
 ### CMP.13:9 - Consequences
 
-The reader obtains a computation over properties, together with the direction in which its answers apply. A false abstract counterexample becomes a constructive guide to a better representation. An already adequate coarse result can end the work.
+The reader obtains a computation over properties, together with the direction in which its answers apply. A false abstract counterexample becomes a constructive guide to a better representation. An adequate coarse result can end the work.
 
 The result depends on the original semantics and on the abstract operations, evaluation strategy and observation. A sound representation can still yield an answer too imprecise or expensive for use. Some properties remain undecidable or require a different form of reasoning.
 
@@ -169,7 +169,7 @@ The examples expose three distinct causes of lost information: incompatible repr
 
 How can a cheaper computation answer a selected question about executions? **Adopt** the calculational approach organized in Cousot's [*Principles of Abstract Interpretation*](https://mitpress.mit.edu/9780262044905/principles-of-abstract-interpretation/): choose the property semantics and derive effective abstract operations. Its scope includes dataflow, dependency and typing as well as numerical properties. Direct finite exploration remains a serious cheaper alternative when its state space is manageable; a changed property or obtaining cost reopens the choice.
 
-When independent summaries lose a needed relation, **adapt** the combination of algebraic and logical abstractions in [Cousot, Cousot and Mauborgne](https://www.di.ens.fr/~cousot/publications.www/CousotCousotMauborgne-JACM-59-6-32p-2012.pdf), especially their sound-transformer and reduced-product constructions. Combine complementary restrictions when that recovers the answer more cheaply than one uniformly rich domain. Solver-backed relations accept solver and representation costs; simple precomputed operations accept reduced expressiveness. The paper's implementation comparisons are historical, not a ranking of current tools. Reconsider the chosen abstraction and refinement when a lost correlation or unsupported machine semantics prevents the required conclusion.
+When independent summaries lose a needed relation, **adapt** the combination of algebraic and logical abstractions in [Cousot, Cousot and Mauborgne](https://www.di.ens.fr/~cousot/publications.www/CousotCousotMauborgne-JACM-59-6-32p-2012.pdf), especially their sound-transformer and reduced-product constructions. Combine complementary restrictions when that recovers the answer more cheaply than one uniformly rich domain. Solver-backed relations accept solver and representation costs; simple precomputed operations accept reduced expressiveness. The paper reports historical implementation comparisons. Reconsider the chosen abstraction and refinement when a lost correlation or unsupported machine semantics prevents the required conclusion.
 
 For a reported abstract counterexample, **adopt** the reconstruct-and-refine step from [Clarke and colleagues](https://www.cs.cmu.edu/~emc/papers/Papers%20In%20Refereed%20Journals/Counterexample-guided%20abstraction%20refinement.pdf), sections 4.3–4.4. Its finite-path construction motivates :4.4–4.5 and :5.1: split the distinction that prevents consecutive realization. Uniformly increasing precision is the rival; it can resolve more future questions but pays for distinctions this path may not need. Infinite-path properties require the additional loop conditions rather than reuse of the finite-path test alone.
 

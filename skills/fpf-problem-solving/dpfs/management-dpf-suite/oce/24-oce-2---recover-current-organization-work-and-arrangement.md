@@ -3,17 +3,17 @@
 > **Type:** Method pattern
 > **Status:** Stable
 >
-> **Primary working result:** a **grounded current-organization account** that identifies the actual Work, supplied results, holder assignments, authority, responsibilities, resource access, information use, material transfer, service provision, coordination, participation, and results needed by one organization-change decision, while keeping formal, observed, contradicted, and unknown claims distinct.
+> **Primary working result:** a **grounded current-organization account** that identifies the actual Work, supplied results, holder assignments, authority, responsibilities, resource access, information use, material transfer, service provision, coordination, participation, and results relevant to the organizational question or decision, while keeping formal, observed, contradicted, and unknown claims distinct.
 
 ### OCE.2:0 - Use This When
 
-Use this pattern when a chart, process map, job catalogue, policy, target operating model, or leader interview is being used as a complete account of the current organization. Enter when a decision depends on how Work actually proceeds, who contributes, which assignments and authority relations obtain, what resources are accessible, or where formal and observed claims diverge.
+Use this pattern when a chart, process map, job catalogue, policy, target operating model, or leader interview is being used as a complete account of the current organization. Enter when the question concerns how Work actually proceeds, who contributes, which assignments and authority relations obtain, what resources are accessible, or where formal and observed claims diverge.
 
-Begin with a compatible `OCE.1` focus or equivalent content. Select only the Work and direct relations that can change the decision.
+Begin with a compatible `OCE.1` focus or equivalent content. Select the Work and direct relations needed to answer the question or support the decision.
 
-The first useful result is a bounded account with each claim's source, status, window and uncertainty. Stop when it supports the decision or identifies the gap that prevents it.
+The first useful result is a bounded account with each claim's source, status, window and uncertainty. Stop when it answers the question, supports the decision or identifies the gap that limits the result.
 
-Do not use OCE.2 to invent target positions, assign holders, redesign contribution boundaries, or judge an informal relation defective merely because it differs from policy. Use `OCE.3` for concepts and the owning downstream pattern for design or assignment.
+Use OCE.3 for concepts and the responsible design or assignment method when new arrangements are required. Compare any informal relation with the applicable obligations and its observed consequences before judging it defective.
 
 #### OCE.2:0.1 - Working Distinctions
 
@@ -25,11 +25,11 @@ Do not use OCE.2 to invent target positions, assign holders, redesign contributi
 | position description | An episteme describing a position, its expected contributions, eligibility, and applicability. A description does not establish the position or an assignment. |
 | system-role kind | A local classification usable by a declared assignment species. Support any assignment, capability, responsibility, authority or performed-Work claim separately. |
 | assignment | An obtaining occurrence of a declared species under `U.SystemRoleAssignment`. Its holder, assigned system-role kind, scope, window, and any real position participant remain recoverable. Identify the actual performer separately. |
-| authority | A direct relation under which a named System may issue a named decision result within a scope, window, and basis. It is not inferred from assignment, responsibility, seniority, or participation. |
+| authority | A direct relation under which a named System may issue a named decision result within a scope, window, and basis. Establish the rule, delegation or decision that actually grants that authority. |
 | resource-access relation | The relation by which Work or a System can use a named resource under stated conditions. Resource presence, budget, and licence are different claims. |
 | boundary relations | Named contribution, information-use, material-transfer, decision, service-provision, access, or coordination relations across a selected organization boundary. “Interface” may be retained as ordinary shorthand only after the boundary, selected structure, members, and direct relations are stated. |
 | formal/observed claim pair | Two separately sourced claims about what should obtain and what evidence says obtains. Their difference is a finding, not automatic failure. |
-| current-organization account | The bounded episteme returned for one decision use, describing the supported Work and organization-relation claims and their gaps. |
+| current-organization account | The bounded episteme that answers a bounded organizational question or supports a decision, describing the supported Work and organization-relation claims and their gaps. |
 
 If an existing organization-position claim lacks an effective establishment basis or the OCE.5 identity criteria, do not infer a position from a title or description. Record the expected-contribution claim, eligibility claim, holder, and assignment separately, plus the missing position-establishment or identity basis.
 
@@ -37,7 +37,7 @@ If an existing organization-position claim lacks an effective establishment basi
 
 Formal descriptions support authorization, communication, administration, or staffing. Observed Work exposes who resolves exceptions, which evidence reaches a decision, where providers enter, what resource is scarce, and which informal coordination preserves service. Both can matter; neither replaces the other.
 
-Select separate contribution, Work, assignment, authority, resource-access, information-use, material-transfer, service-provision, and coordination structures for the decision. They can overlap without being isomorphic. A mathematical graph is an optional lens only after its nodes, edges, semantics, and use are selected.
+Select separate contribution, Work, assignment, authority, resource-access, information-use, material-transfer, service-provision, and coordination structures needed for this question. They can overlap without being isomorphic. A mathematical graph is an optional lens only after its nodes, edges, semantics, and use are selected.
 
 ### OCE.2:2 - Problem
 
@@ -58,27 +58,27 @@ The resulting concept has no defensible baseline. Later claims cannot say which 
 
 ### OCE.2:4 - Solution
 
-Recover the smallest evidence-bearing set of actual Work and direct organization relations that can change the decision. Use `A.22` to select each structure and the direct FPF or domain governor for each relation. Preserve formal, observed, contradicted, and unknown statuses, evidence provenance, and currentness.
+Recover the Work and direct organization relations needed to answer the question. Support each claim with evidence appropriate to its scope. Use `A.22` to select each structure and the direct FPF or domain governor for each relation. Preserve formal, observed, contradicted, and unknown statuses, evidence provenance, and currentness.
 
-One decision-changing difference between a formal description and observed Work is enough to enter. Support each Work, supply, assignment, authority, access, information-use, transfer, service-provision or coordination claim with evidence appropriate to its meaning and time window.
+A difference between a formal description and observed Work can be enough to warrant inquiry. Support each Work, supply, assignment, authority, access, information-use, transfer, service-provision or coordination claim with evidence appropriate to its meaning and time window.
 
 #### OCE.2:4.1 - Pattern-Use Unfolding
 
-1. **Bound the recovery use.** State the organization, intended contribution, receiving decision and horizon. Select a result or preserved condition whose current production or use can change that decision. Begin with an available episode, including an unsuccessful attempt; extend the sample only where another condition could change the account.
-2. **Reconstruct the episode from permitted sources.** Follow the result from the receiving use back to its contributors, then forward through the actual use and any exception return. Use the source-to-claim moves below. Ask participants to show what they used, supplied or decided on that occasion; retain their explanation and the supporting or conflicting trace separately.
+1. **Bound the recovery use.** State the organization, intended contribution, receiving question or decision and horizon. Select a result or preserved condition whose production or use bears on that question. Begin with an available episode, including an unsuccessful attempt; extend the sample only where another condition could change the account.
+2. **Reconstruct the episode from permitted sources.** Follow the result from the receiving use back to its contributors, then forward through the actual use and any exception return. Use the source-to-claim moves below. Use the evidence that establishes what happened, including applicable dated records or direct observations. When a participant can explain a material point that these sources leave open, ask what they used, supplied or decided on that occasion. Distinguish their account from any trace that supports or challenges it.
 3. **Identify Work at its supported precision.** For a relied-on Work claim, recover the performers' `A.13` basis and the `A.15.1` occurrence basis. Keep plans, routine descriptions, schedules and reports distinct from the occurrences they describe. When the basis is incomplete, preserve the observations and name the unresolved occurrence claim. Use `B.1.5.EW:4.1–B.1.5.EW:4.5` when the connection between a constituent action and the receiving whole is unclear; it helps explain what that action performs, supplies or supports.
 4. **Recover the decision-bearing relations.** Use `A.22:4–A.22:4.1` to select the structures needed by this question and `A.6.REL` or the direct relation governor to keep each predicate and its participants explicit. Recover supplied results, information use, material transfer, decisions, service provision, access and coordination as the episode requires. A carrier such as a ticket can supply evidence for several different relations.
-5. **Check the institutional basis where it matters.** For a position, obtain the establishment and continuation basis under OCE.5; otherwise retain only the supported description, contribution, eligibility and holder claims. Use `A.2.1` for obtaining assignments. Establish authority, responsibility and resource access separately, with their scope, window and basis. Ask the participant or owner who can supply the missing evidence; hierarchy or a budget entry cannot settle another relation's claim.
+5. **Check the institutional basis where it matters.** For a position, obtain the establishment and continuation basis under OCE.5; otherwise retain only the supported description, contribution, eligibility and holder claims. Use `A.2.1` for obtaining assignments. Establish authority, responsibility and resource access separately, with their scope, window and basis. Use the applicable bylaw, appointment, grant or record when it settles the relevant claim. Seek missing factual evidence from the source that can establish it. Obtain a new decision from its authorized holder when the relation requires one.
 6. **Match formal and observed claims.** Compare the same action or relation, participants, conditions and time window. Resolve an apparent difference by inspecting its basis, or retain the contradiction and competing explanations. The account distinguishes `agree`, `contradict`, `unknown` and `changed-window`; the worked procedure below explains their use.
-7. **Return a bounded account or a specific gap.** Include omitted participants or burdens that can change the decision, the supported result path and its uncertainty. Use OCE.10:4.1–OCE.10:4.3 for a consequential participation gap, including its participant explanation and discriminating contrast. Stop when the account supports the receiving use or exposes the precise missing contribution. Reopen the affected claim when a new occurrence, source edition, participant account, provider condition, authority decision or service result defeats it.
+7. **Return a bounded account or a specific gap.** Include participants or burdens whose omission could change the finding or the decision, the supported result path and its uncertainty. Use OCE.10:4.1–OCE.10:4.3 for a consequential participation gap, including its participant explanation and discriminating contrast. Stop when the account supports the receiving use or exposes the precise missing contribution. Reopen the affected claim when a new occurrence, source edition, participant account, provider condition, authority decision or service result defeats it.
 
 ##### OCE.2:4.1.1 - Turn an episode into a result path
 
 Choose the episode from the receiving question. For a delayed acceptance decision, begin with the evidence that acceptance needed; for an unreliable service return, begin with the result the service user could or could not use. A conveniently documented meeting is a useful starting point only if it connects to that result. An ordinary completed episode can expose the usual path. A relevant exception, failed attempt or other contrast can expose a condition concealed by success. Neither is a statistical sample of the whole organization merely because it is concrete.
 
-Put the permitted materials beside one another: the applicable rule or commitment; the result and its revisions; traces of request, supply, use and decision; and accounts from the people who performed or received the contribution. Ask ordinary questions: What did you need at this moment? What did you receive? What did you actually do with it? What happened when it was missing or unusable? Whom did you ask next? Ask the next consequential supplier or receiver to inspect that part of the account. This follows a result across a real boundary without requiring interviews with everyone.
+Follow the result using the permitted evidence that bears on it. A rule can establish what was required, revisions can show which version was supplied, and a dated trace or direct observation can establish use or a decision. If a material fact about the work remains uncertain, seek evidence from the service, observation or knowledgeable participant that can establish it. For a person’s experience or hidden burden, ask about their episode. What did they need, receive or use? What happened when it was missing or unusable? Corroborate a consequential link where warranted, or state what remains unknown.
 
-Construct a short path in verbs, for example: Electrical supplied a compatibility report; Integration used it to challenge a package claim; Electrical returned a corrected result; Safety accepted the evidence; the release director decided release. Follow both the normal route and the exception that changes the decision. If a contribution serves two receiving uses, keep their different conditions visible. Use `B.1.5.EW` to settle whether an observed action is part of the encompassing performance or supplies separate support; temporal order alone does not settle that connection.
+Construct a short path in verbs, for example: Electrical supplied a compatibility report; Integration used it to challenge a package claim; Electrical returned a corrected result; Safety accepted the evidence; the release director decided release. Follow the route the evidence supports, including any exception that matters to the question. If a contribution serves two receiving uses, keep their different conditions visible. Use `B.1.5.EW` to settle whether an observed action is part of the encompassing performance or supplies separate support; temporal order alone does not settle that connection.
 
 For each consequential link, inspect what the evidence establishes. A repository entry can establish that a version was present; it does not by itself show who interpreted it or whether a receiver used it. A decision record can show an issued result; the effective rule or delegation supplies its authority basis. A participant can explain an undocumented action; another trace or participant may corroborate, qualify or dispute that account. Write the supported claim at this stage, including a reported but uncorroborated action when that is all that is available. Keep a missing link visible instead of completing the expected route from the procedure manual.
 
@@ -86,13 +86,13 @@ For each consequential link, inspect what the evidence establishes. A repository
 
 Translate the relevant formal statement into the same concrete question as the observation. “Software owns the package” may concern package assembly, while “Electrical supplied the evidence” concerns the source of one input. Both can hold. Ask which action, result, participants and conditions each sentence names before marking contradiction. A policy that applied before a temporary delegation and an observation after it form a `changed-window` pair until the effective window is recovered.
 
-When two claims really concern the same case and predicate, inspect the source closest to the disputed fact and an account from a participant affected by it. A newer chart is not automatically stronger than a dated transaction; an event log is not automatically stronger than the rule defining authority. Record which claim changes and why. If the source supports supply but receiving use is unobserved, that use remains `unknown`. If an applicable rule requires a prior acceptance and the inspected release record precedes the acceptance, retain a `contradict` pair at that scope; separately investigate its explanation and consequences.
+When two claims really concern the same case and predicate, inspect the sources that can establish the disputed fact. A rule, a dated transaction or an affected participant’s account can each answer a different part of the question. A newer chart is not automatically stronger than a dated transaction; an event log is not automatically stronger than the rule defining authority. Record which claim changes and why. If the source supports supply but receiving use is unobserved, that use remains `unknown`. If an applicable rule requires a prior acceptance and the inspected release record precedes the acceptance, retain a `contradict` pair at that scope; separately investigate its explanation and consequences.
 
-Keep alternatives when they imply different repairs. A late return may result from unavailable rig access, a missing request, an unrecognized obligation or an incomplete log. Look for the smallest available contrast that can distinguish the live alternatives, such as the request and access state in another comparable episode. Use OCE.10 for the participation branch and the direct service or resource owner for the corresponding condition. A majority of interviewees agreeing does not remove contrary evidence, and a disagreement need not prevent an account that honestly preserves it.
+Keep alternative explanations when they affect the requested finding or the choice of repair. A late return may result from unavailable rig access, a missing request, an unrecognized obligation or an incomplete log. Look for the smallest available contrast that can distinguish the live alternatives, such as the request and access state in another comparable episode. For a participation question, use OCE.10. For a service or resource condition, use applicable evidence such as the booking record. Seek a missing commitment or decision from its holder, or keep the condition open if it cannot be established. A majority of interviewees agreeing does not remove contrary evidence, and a disagreement need not prevent an account that honestly preserves it.
 
 ##### OCE.2:4.1.3 - Stop in proportion to the decision
 
-Ask which unresolved claim could reverse the next decision or make its use unsupported. Obtain another permitted observation only when it can change that decision, its warranted claim or its conditions enough to justify retrieval, participant effort and delay; use `C.11.DUA` when that appraisal is itself difficult. A sufficient existing result can end the inquiry. If neither rival explanation changes the current concept boundary, carry both into OCE.3 and stop. If a missing authority basis prevents an intervention, stop that intervention while preserving the account and permitted design work.
+Ask which unresolved claim could change the answer, its limits or the next decision. Seek another permitted observation when its attainable contribution justifies retrieval, participant effort and delay; use `C.11.DUA` when that appraisal is itself difficult. A sufficient existing result can end the inquiry. If neither rival explanation changes the current concept boundary, carry both into OCE.3 and stop. If a missing authority basis prevents an intervention, stop that intervention while preserving the account and permitted design work.
 
 The result can be a few linked claims with a stated missing path. It need not be a census, a complete model, agreement among all participants or an admitted Work occurrence for every observation. Protect personal and commercially sensitive material according to the actual permission and professional conditions. If a source cannot be used, retain the resulting evidence limit; do not fill it with an inference from an unrelated case.
 
@@ -100,25 +100,25 @@ The result can be a few linked claims with a stated missing path. It need not be
 
 | Result position | Required content |
 | --- | --- |
-| use boundary | Organization, contribution, receiving decision, horizon, selected structures, and exclusions. |
+| use boundary | Organization, contribution, receiving question or decision, horizon, selected structures, and exclusions. |
 | source evidence | Permitted source or observation, the episode/result path it supports, claim kind, scope/window, sensitivity, and evidential limit. |
 | actual Work | Supported occurrences, performers and their A.13 basis, enacted Methods, time intervals, conditions, containing Systems, associated results and limits; otherwise the observations and unresolved occurrence claim. |
 | supplied results and boundary relations | Participants, direct predicate, result/content/resource, conditions, carrier/support distinction, evidence, and status. |
 | position-related claims and assignments | Position establishment/continuation basis when available; otherwise separate description, expected-contribution, eligibility, holder, and assignment facts plus the missing establishment or identity basis. |
 | authority, responsibility, resources | Direct relations, subjects, scopes, windows, bases, evidence, and blockers. |
-| formal/observed comparison | Matched claims with `agree`, `contradict`, `unknown`, or `changed-window`; the reasoning resolving an apparent difference; surviving explanations and the decision consequence. |
-| participation/consequences | Missing participants, hidden burden, affected-System questions, protection needs, and specialist returns. |
-| return | Grounded account, unresolved gaps, constraints for `OCE.3` or `OCE.11`, stop, and reopen triggers. |
+| formal/observed comparison | Matched claims with `agree`, `contradict`, `unknown`, or `changed-window`; the reasoning resolving an apparent difference; surviving explanations and any consequence for the requested finding or decision. |
+| participation/consequences | Any consequential omissions, hidden burdens, affected-System questions, protection needs or specialist contributions still required. |
+| return | Grounded account, any unresolved gaps, conditions for a dependent use of `OCE.3` or `OCE.11`, stopping point and grounds for reopening. |
 
 #### OCE.2:4.3 - What Changes in Practice
 
-The organization is no longer represented by one chart. Practitioners can see which Work and relations matter, where formal and observed claims differ, what remains unknown, and which gap must be resolved before a concept or coexistence decision can be trusted.
+Practitioners can identify the Work and relations that answer the question, where formal and observed claims agree or differ, and the limits of the available evidence. If a concept or service decision depends on a missing relation, the account identifies that gap.
 
 ### OCE.2:5 - Archetypal Grounding -- PumpWorks Current Relations
 
 The `OCE.1` focus selects `PumpWorks-EngineeringOrg` and weekly evidenced AI-inspection releases while service continues. Recovery is limited to release Work, result supply and use, decision authority, provider service, rig access, and field-service information return.
 
-The following inputs are stipulated for this constructed case. They show how an account is obtained, rather than supplying evidence about a real company. The recovery question is whether weekly package preparation should change its contribution boundaries. The practitioner obtains the current quarterly release procedure, the packages and permitted review records for a routine release R41 and a challenged release R42, the effective safety delegation, a rig-booking extract, and short accounts from the integrator, Electrical contributor and service liaison.
+This example uses the following stipulated inputs. The recovery question is whether weekly package preparation should change its contribution boundaries. The practitioner obtains the current quarterly release procedure, the packages and permitted review records for a routine release R41 and a challenged release R42, the effective safety delegation, a rig-booking extract, and short accounts from the integrator, Electrical contributor and service liaison.
 
 **Start at the receiving use.** The integrator identifies the compatibility claim needed for accepting R42's package. The package history points to Electrical's report E7, while the procedure says that Software prepares the integrated package. Reading these as source and assembly claims removes the apparent contradiction: Software assembled the package using evidence supplied by Electrical. The review's challenge refers to E7 and Electrical's corrected E8; this supports receiving use and exception return, not merely the files' presence. The participants identify the relevant actions, intervals and containing organization. A separate provider upload uses a shared account, however: the artifact's presence is supported while the precise performer and Work basis remain unresolved.
 
@@ -126,7 +126,7 @@ The following inputs are stipulated for this constructed case. They show how an 
 
 **Work through a real mismatch.** The release plan claims rig access on Thursday; the booking extract and the integrator's account show that service diagnostics occupied the required interval. Those claims concern the same rig and interval, so access is contradicted although Engineering's general permission remains supported. A later timestamp also shows that the field-service fault summary arrived after R42's review. The liaison reports that a service incident delayed it; the integrator recalls requesting it late. The available records do not distinguish these explanations. Both justify keeping the information-return relation and its timing visible; neither establishes a general causal bottleneck or poor motivation.
 
-**Choose the next observation or stop.** The request timestamp and the liaison's permitted allocation record could distinguish late request from service displacement. For the present concept comparison, either explanation requires an explicit information-return and exception arrangement, so the practitioner carries both forward without expanding the inquiry. A decision to reallocate liaison time would need that missing distinction and the service owner's conditions. The unsampled release families remain outside the account. The table below summarizes the supported claims and gaps; it is produced by this reconstruction, not inferred from the chart.
+**Choose the next observation or stop.** The request timestamp and the liaison's permitted allocation record could distinguish late request from service displacement. For the present concept comparison, either explanation requires an explicit information-return and exception arrangement, so the practitioner carries both forward without expanding the inquiry. A decision to reallocate liaison time would need that missing distinction and the service owner's conditions. The unsampled release families remain outside the account. The table summarizes the claims supported by those records and accounts and the questions they leave open.
 
 | Selected claim | Formal claim | Observed or current evidence | Current disposition |
 | --- | --- | --- | --- |
@@ -143,41 +143,41 @@ The account records sampled occurrences and source windows. Organization capabil
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
-| chart realism | Formal reporting relations become all organization relations. | Select each decision-changing structure and recover its relations. |
+| chart realism | Formal reporting relations become all organization relations. | Select each structure needed to answer the question and recover its relations. |
 | observation realism | One workaround becomes a stable arrangement. | State occurrence, scope, recurrence evidence, and currentness. |
 | title-to-position bias | A title identifies a position, system-role kind, assignment, capability, and authority. | Require the position basis or keep every supported claim separate. |
 | carrier-as-relation bias | A meeting, ticket, API, or document becomes the contribution relation. | Name participants, direct predicate, result or content, conditions, and carrier use. |
 | deviation-as-defect bias | Any formal/observed mismatch is called resistance. | Ask what result and consequence the difference produces. |
-| complete-model bias | Recovery expands until every relation is mapped. | Stop at the receiving decision or blocker. |
+| complete-model bias | Recovery expands until every relation is mapped. | Stop when the account answers the question or identifies the consequential gap. |
 
 ### OCE.2:7 - Conformance Checklist
 
-- [ ] The account names one decision, horizon, selected structures, and exclusions.
-- [ ] The account shows how permitted traces and participant accounts support the consequential links of a selected episode, with scope, window, sensitivity and evidential limits.
+- [ ] The account names the receiving question or decision, horizon, selected structures, and exclusions.
+- [ ] The account shows how the permitted evidence supports the consequential links of a selected episode, with scope, window, sensitivity and evidential limits.
 - [ ] Actual Work is separate from plans, routines, process descriptions, and reports.
 - [ ] Contribution supply, information use, material transfer, decision, service provision, access, and coordination remain distinct.
 - [ ] A position claim has an establishment/continuation basis, or only its separately supported neighboring facts are recorded.
 - [ ] Job title, position, system-role kind, holder, assignment, capability, responsibility, participation, and authority remain distinct.
 - [ ] Every authority and access relation names its participants, scope, window, basis, and evidence.
 - [ ] Formal/observed differences have explicit status and are not judged by mismatch alone.
-- [ ] An unresolved difference is retained with its competing explanations or missing basis; further inquiry is selected by what it can change.
-- [ ] The result stops before target design and supplies usable constraints.
+- [ ] An unresolved difference is retained with its competing explanations or missing basis; further inquiry is justified by what it could add to the finding or decision.
+- [ ] The account answers its question or states the consequential gap. Where a design depends on the account, it identifies the applicable constraints.
 
 ### OCE.2:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Repair |
 | --- | --- |
-| “The org chart is the as-is architecture.” | Recover the Work and direct relations needed by the decision. |
+| “The org chart is the as-is architecture.” | Recover the Work and direct relations needed for the question or decision. |
 | “The process map proves this is how work happens.” | Treat it as an episteme; identify actual occurrences and evidence. |
 | “The product owner owns the decision.” | Recover the authority or ownership relation; the word “owner” supplies neither. |
-| “Everyone works around the process, so adoption is low.” | Name the formal/observed relation difference, result, burden, and reason first. |
-| “We need a complete digital twin.” | Recover only the structures and currentness needed by the decision. |
+| “Everyone works around the process, so adoption is low.” | Identify the observed difference, its result and any burden. Keep its cause open where the evidence permits several explanations. |
+| “We need a complete digital twin.” | Recover only the structures and currentness that the receiving question requires. |
 
 ### OCE.2:9 - Consequences
 
 The baseline can support concept generation because claims are tied to subjects, relations, evidence, and windows. It can also preserve valuable informal contributions that a target design might destroy.
 
-The cost is plural representation. Contribution, authority, Work, access, and information-use structures may need different views. Their non-isomorphism is a finding.
+The cost is plural representation. Contribution, authority, Work, access, and information-use structures may need different views. Where they differ, the account can show which work, right or resource relation each view captures.
 
 ### OCE.2:10 - Rationale
 
@@ -189,19 +189,19 @@ Ground the account in observed Work and supported direct relations. Separating f
 
 The serious alternative considered here is an experienced practitioner organizing a trace/interview walkthrough with [Albert's activity, decision and legal-entity perspectives](https://doi.org/10.1007/s41469-023-00152-y) (2023 online/2024 issue). Albert supplies those perspectives and explains their different implications; the trace/interview combination is specified here as a practical comparator, not attributed to that paper as a complete protocol. Both answers use the same available episodes, permitted documents and bounded participant access. The alternative can expose a structure absent from the chart and may already supply an adequate account. Such a result can be used directly.
 
-The selected OCE answer makes the intermediate inferences explicit for a reader who must construct the account. In OCE.2:5, package assembly and evidence supply cease to look contradictory, the rig claim is matched to its actual interval, and a late request remains a rival to service displacement. Those distinctions affect different possible repairs even though the same high-level organization views could describe all of them. The added cost is claim matching and returning to a source when the receiving decision depends on it; no larger sample is prescribed. This is a constructive reason to select the developed method for this use, not an empirical finding that experienced reconstruction is inferior.
+The selected OCE answer makes the intermediate inferences explicit for a reader who must construct the account. In OCE.2:5, package assembly and evidence supply cease to look contradictory, the rig claim is matched to its actual interval, and a late request remains a rival to service displacement. Those distinctions affect different possible repairs even though the same high-level organization views could describe all of them. The added cost is matching claims and returning to a source where a consequential uncertainty remains. In this case the matched rig interval and the two open explanations can already support the next comparison.
 
-**Adopt** Albert's plural perspectives; **adapt** their use in OCE.2:4.1, steps 1 and 4, to structures that can change this decision; **reject** a requirement to recover every perspective before retaining a useful observation. The paper acknowledges other structures and permits a sufficient single perspective. OCE.2:4.1.2 adds its own formal/observed comparison, while OCE.2:4.1.3 prevents that precision from becoming an organization census. When the missing link concerns participation, OCE.10:4.1–OCE.10:4.3 supplies the episode/participant/contrast inquiry; its result is reused at that narrower scope.
+**Adopt** Albert's plural perspectives; **adapt** their use in OCE.2:4.1, steps 1 and 4, to structures relevant to the requested account or decision; **reject** a requirement to recover every perspective before retaining a useful observation. The paper acknowledges other structures and permits a sufficient single perspective. OCE.2:4.1.2 adds its own formal/observed comparison, while OCE.2:4.1.3 prevents that precision from becoming an organization census. When the missing link concerns participation, OCE.10:4.1–OCE.10:4.3 supplies the episode/participant/contrast inquiry; its result is reused at that narrower scope.
 
 The [work-design review by Fraccaroli, Zaniboni and Truxillo (2024)](https://doi.org/10.1146/annurev-orgpsych-081722-053704) supports **adapting** the account to actual work characteristics and affected-person outcomes, reflected in OCE.2:4.1, step 7. It supplies no authority or capability conclusion for the organization being examined. [Grote et al., ISSE 2025](https://doi.org/10.1109/ISSE65546.2025.11370103), is an abstract-only contribution-bundle cue here: it can prompt investigation beyond job titles in step 5. The full method and results have not been established in this comparison, so that cue neither proves local assignments nor ranks a workshop method against this reconstruction. A fuller applicable treatment could change the comparison.
 
-Reopen when the method loses a consequential informal contribution, cannot keep incompatible source windows apart, demands more inquiry than the decision can justify, or a developed rival supports the same distinctions with less total reconstruction work.
+Reopen when the method loses a consequential informal contribution, cannot keep incompatible source windows apart, demands more inquiry than the receiving question can justify, or a developed rival supports the same distinctions with less total reconstruction work.
 
 ### OCE.2:12 - Relations
 
 - `OCE.1` supplies organization, contribution, Work/capability questions, affected-System gaps, authority boundary, and horizon.
 - `A.22` governs selected structure identity; direct relation patterns govern supplied-result, assignment, authority, access, information-use, transfer, service, and coordination claims.
-- Use `A.13` for the performer basis, then `A.15.1` for actual Work; use `A.2.1` for assignments. Support each claim needed by the receiving decision.
+- Use `A.13` for the performer basis, then `A.15.1` for actual Work; use `A.2.1` for assignments. Support each claim required for the finding or decision.
 - `OCE.5` governs organization-position identity and descriptions; `OCE.6` governs holder assignments and enabling relations. Until their needed result is available, record the missing position-establishment or identity basis rather than inferring a position.
 - `B.1.5.EW` explains constituent/encompassing performance when needed; `OCE.10:4.1–OCE.10:4.3` supplies the participation-gap inquiry; `C.11.DUA` appraises additional inquiry when its worth is unresolved.
 - `OCE.3` consumes the grounded Work and direct-relation account. `OCE.11` consumes it for change/continuing-Work coexistence.

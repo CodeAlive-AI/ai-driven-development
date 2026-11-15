@@ -10,7 +10,7 @@ Use this pattern when a cost report cannot explain what a proposed order, change
 
 The pattern governs a model relating work outputs to resource consumption and monetary amounts for a stated use. Its useful result is enough of that model to explain the relevant quantities, capacity conditions and money. The operating decision can then use [OPS.14][OPS] to compare options.
 
-If an existing model already supplies adequate quantities and conditions, use it.
+If an existing model supplies adequate quantities and conditions, use it.
 
 ### MA.1:1 - Problem frame
 
@@ -28,7 +28,7 @@ A model can cost more to construct and maintain than its additional detail contr
 
 ### MA.1:3 - Forces
 
-Consumption, available capability and payment are connected but need different evidence. The person who supplies a credible processing-time estimate may not know the supplier's charging terms or the actual payment date. Bringing these facts together is useful even when each is already recorded elsewhere.
+Consumption, available capability and payment are connected but need different evidence. A credible processing-time estimate may come from a source that cannot establish the supplier’s charging terms or the payment date. Bringing these facts together is useful even when each is already recorded elsewhere.
 
 Grouping resources makes an account usable. It loses value when the group hides a capability requirement, a different response to demand or a payment threshold. More detailed observation can reduce a consequential uncertainty, but detailed tracking itself consumes resources and can encourage people to optimize what is easiest to count.
 
@@ -38,7 +38,7 @@ Grouping resources makes an account usable. It loses value when the group hides 
 
 State the work being considered, the relevant result and the period over which the model must answer. Inspect the existing account with its user. Ask what it cannot presently explain: the resources required for another order, the effect of a changed batch size, the cost of unused provision or some other concrete dependency.
 
-Use that question to choose the first observations. For a proposed order, obtain the actual processing route and the conditions under which it works. For a reusable product-cost account, obtain representative routes and the variation the account must retain. Ask the people who perform or arrange the work, and compare their explanation with available operating records. A ledger category locates recorded money; it does not by itself explain how the work consumes a resource.
+Use that question to choose the first observations. For a proposed order, obtain the actual processing route and the conditions under which it works. For a reusable product-cost account, obtain representative routes and the variation the account must retain. Obtain the account of the route from those who perform or arrange the work and compare it with available operating records. A ledger category locates recorded money; it does not by itself explain how the work consumes a resource.
 
 #### MA.1:4.2 - Recover outputs and resource dependencies
 
@@ -56,7 +56,7 @@ If the calculation is familiar but you cannot relate its quantities to the accou
 
 #### MA.1:4.3 - Keep resource quantities and supplied capacity distinct
 
-A rig-hour, a qualified staff-hour and an elapsed hour measure different things. Recover what each resource must actually provide. Check that an estimate of machine occupation has not silently become an estimate of staff attendance.
+A rig-hour, a qualified staff-hour and an elapsed hour measure different things. Recover what each resource must provide. When estimating staff attendance, check how much of the machine time requires a member of staff.
 
 Group resources only while the grouping preserves relevant capability, consumption and money. Two machines can share a pool if their interchangeable capability and behavior suffice for this use. A specialist machine that alone performs a required test needs its own boundary. Likewise, splitting identical consumables by invoice number may add detail without improving the answer.
 
@@ -64,7 +64,7 @@ Compare demand with the supplied capacity conditions for the required time windo
 
 #### MA.1:4.4 - Attach the relevant monetary meanings
 
-Connect resource quantities to money through the relationship that actually applies. For each amount that could be misread, make clear whether it is:
+Connect resource quantities to money through the applicable relationship. For each amount that could be misread, make clear whether it is:
 
 - consumption valued for the account, such as materials issued from stock;
 - the payment required to supply or obtain a resource, such as a whole additional shift;
@@ -105,7 +105,7 @@ A test service considers an order for 100 accepted units at 12 currency units ea
 
 The resource owner supplies an adequate schedule, qualification and reserve account. There are 20 uncommitted usable rig-hours in the required window. Exactly one additional contiguous ten-hour block can be obtained for 240, subject to booking. Setup requires six to nine rig-hours, followed by 0.2 rig-hours per processed unit. One successful attempt per accepted unit is assumed.
 
-The work requires 14 qualified staff-hours; 16 usable hours are already available and pay is unchanged. Materials for this order must be bought now at 2 per unit. A supplier charges 1 per processed unit.
+The work requires 14 qualified staff-hours; 16 usable hours are available and pay is unchanged. Materials for this order must be bought now at 2 per unit. A supplier charges 1 per processed unit.
 
 | Recovered dependency | Quantity or amount | What the receiving comparison can use |
 | --- | --- | --- |
@@ -136,7 +136,7 @@ Return to the test order with a nine-hour setup. Suppose obtaining 100 accepted 
 
 While doing that multiplication, the accountant is deriving rig demand and constructing the order's resource account. The accepted-output requirement governs which attempts must enter the calculation. A colleague may supply the process relationship when the accountant cannot establish it; the accountant still needs to understand how that contribution affects the model. Repeating multiplication exercises would not supply the missing relationship.
 
-The observed production attempts belong to the work being modeled. They are not constituent acts of the accountant's model construction.
+Setup and production attempts occupy the rig for 33 hours. If the cost of constructing the account also matters, count the accountant’s calculation once. If it takes 15 minutes, those same 15 minutes cover deriving rig demand as part of constructing the order’s resource account.
 
 Return the changed demand to the operating comparison. [OPS.11.1][OPS] can recover the routing, shared-resource and completion conditions when a different operating arrangement is needed. Recalculating existing assignments or changing an authorized allocation is an operating question. [OCE][OCE] becomes relevant if the proposed repair changes who may commit resources or other organizational arrangements.
 
@@ -144,7 +144,7 @@ Return the changed demand to the operating comparison. [OPS.11.1][OPS] can recov
 
 An accountant may favor categories already present in the ledger; an operator may favor the resource easiest to observe. Both can miss the relation that changes the answer. Compare their accounts around the actual work and keep different units explicit.
 
-The order example concerns a commercial service and a short horizon. Its arithmetic does not establish that profit is every organization's purpose or that all long-run choices can be made from short-run payments. Public and internal services can use the same construction to explain required resources while obtaining their objectives and decision criteria from the responsible practice.
+The order example concerns a commercial service and a short horizon. For a longer-term choice, include the resource and payment conditions over that horizon. Public and internal services can use the same construction to explain required resources while obtaining their objectives and decision criteria from the responsible practice.
 
 ### MA.1:7 - Conformance Checklist
 
@@ -157,7 +157,7 @@ For the model's stated use, examine whether:
 5. Consumption values, supply payments, timing and allocations can be distinguished where their meanings affect use.
 6. The chosen detail preserves the consequential variation, and the returned result names any premise still needed by its recipient.
 
-A plausible entry cue establishes a reason to inspect the account. These questions assess the model and its warranted use; observing actual consumption, obtaining a resource and achieving the business result require their own evidence.
+A plausible entry cue establishes a reason to inspect the account. These questions assess the model and its warranted use; observing consumption, obtaining a resource and achieving the business result require their own evidence.
 
 ### MA.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -181,13 +181,13 @@ The construction begins with work and quantitative dependencies because a money 
 
 A report based on a stable average can be adequate for the question it was designed to answer. Replacing it is justified when its aggregation conceals an answer-changing relation. A comprehensive activity model can support repeated heterogeneous decisions, but its collection and maintenance burden is unnecessary for a small case whose decisive relations are already known.
 
-Keeping the model separate from the option comparison makes both usable independently. The same model can support a forecast or variance explanation; the same comparison method can use an already adequate model. A longer horizon or different decision changes the needed relationships rather than making one cost label universally correct.
+Keeping the model separate from the option comparison makes both usable independently. The same model can support a forecast or variance explanation; the same comparison method can use an already adequate model. A longer horizon or different decision can require other resource and payment relationships.
 
 ### MA.1:11 - SoTA-Echoing
 
 The practical question is how much resource and monetary structure an internal account needs to support its use. The selected line combines causal management-cost modeling with the constraint-accounting distinction between consumed capability and payments. It adapts IMA's [Developing an Effective Managerial Costing Model][IMA2019]: model resources and their quantitative dependencies, distinguish their monetary treatment, and choose sophistication for the decision. Here those contributions change the construction and detail decision in §§4.2–4.5.
 
-At the effort of recovering a few consequential relationships, this line can distinguish the extra capacity block from a reported average that obscures it. A detailed activity or time-driven model becomes preferable when repeated decisions need the distinctions it supplies and their maintenance is worthwhile. Its use still needs adequate capacity and monetary premises.
+Recovering a few consequential relationships can distinguish the extra capacity block from a reported average that obscures it. A detailed activity or time-driven model becomes preferable when repeated decisions need the distinctions it supplies and their maintenance is worthwhile. Its use still needs adequate capacity and monetary premises.
 
 Bragg's *Throughput Accounting* (2007), printed pp.44–47 and 84–86, supplies historical examples and assumptions behind short-run comparisons. The pattern retains their attention to changed payments and capacity, while including supplier charges, setup supply and other changed flows when actual terms require them. Caspari and Caspari's *Management Dynamics* (2004), printed pp.1–11, supplies the counterexample in which local time reduction need not improve the constrained system or reduce wages. These sources inform the returned quantities and the faster-method case.
 

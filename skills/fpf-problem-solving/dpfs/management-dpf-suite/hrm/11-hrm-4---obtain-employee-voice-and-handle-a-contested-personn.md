@@ -5,7 +5,7 @@
 
 ### HRM.4:1 - Problem frame
 
-**Use this when** affected people need to influence a work or personnel decision, raise a concern, negotiate terms, or challenge how a personnel rule or decision has been applied. Begin by recovering the issue in their terms and identifying the result and process it needs. The first useful result is an obtainable route to influence, determination or remedy, followed through to its actual use.
+**Use this when** affected people need to influence a work or personnel decision, raise a concern, negotiate terms, or challenge how a personnel rule or decision has been applied. Begin by recovering the issue in their terms and identifying the result and process it needs. Find an accessible route to influence, determination or remedy, then follow it through to use.
 
 The object is the participation or contested-decision process. Use a sufficient routine correction directly. Do not make a formal grievance the price of obtaining a clear payment correction or preventive protection.
 
@@ -30,7 +30,7 @@ Obtain the concern or proposed contribution without requiring the participant to
 
 Identify the actual relationship, jurisdiction, agreements, representation and decision rules. Obtain a qualified process answer when these are uncertain: the eligible participants, authority, required steps and timing, information rights, independence and routes outside the organization. Do not turn one country's example into a universal procedure. Where a credible issue requires urgent protection or preservation, obtain the applicable response while the merits remain unresolved. Neither delay nor a provisional protective measure establishes the final conclusion.
 
-Select an obtainable route. A person must know how to reach it, what response to expect and where to go when the usual manager is involved in the complaint or cannot provide the necessary independence. Respect applicable external reporting, representative and appeal routes. Do not promise protection from every consequence or absolute confidentiality that the process cannot provide; explain the actual safeguards, limits and permitted disclosures.
+Select an obtainable route. A person must know how to reach it, what response to expect and where to go when the usual manager is involved in the complaint or cannot provide the necessary independence. Respect applicable external reporting, representative and appeal routes. Explain the safeguards the process provides, their limits, and which disclosures it permits.
 
 #### HRM.4:4.2 - Make influence possible before the relevant choice closes
 
@@ -46,13 +46,13 @@ State the issue to be determined, relevant rule, competent decision maker and ne
 
 Distinguish allegation, observation, interpretation, missing information and supported finding. Seek material evidence from relevant sources, preserve its context and examine plausible alternatives. Provide the required notice, opportunity to respond, representation and access under the applicable process. Protect unrelated private information. Do not assume that an algorithmic record is a complete account or that a lack of a formal complaint establishes absence of harm.
 
-The necessary inquiry varies. A pay-date error may be established from a current appointment and record. A disputed job valuation needs the work and evaluation grounds. A conduct allegation may need a different inquiry, privacy and protective arrangement. A medical cause belongs with a clinician, not an adversarial HR credibility test. If the evidence cannot determine the issue under the applicable standard, state the unresolved question and warranted next act rather than manufacture certainty.
+The necessary inquiry varies. A pay-date error may be established from a current appointment and record. A disputed job valuation needs the work and evaluation grounds. A conduct allegation may need a different inquiry, privacy and protective arrangement. A medical cause belongs with a clinician, not an adversarial HR credibility test. If the evidence cannot determine the issue under the applicable standard, state the unresolved question and what can be done on the evidence available.
 
 #### HRM.4:4.4 - Determine, explain and provide the remedy
 
 The authorized decision maker applies the applicable rule to supported findings, considers the required alternatives and consequences, and issues the determination through the proper process. Keep the factual conclusion, its institutional effect and any discretionary response distinguishable. A correction can be owed even when no one acted with bad intent; an adverse outcome does not alone prove misconduct.
 
-Explain the decision, its grounds and effect to the appropriate recipients, with permitted disclosure and the applicable challenge or appeal route. Obtain required independence for reconsideration. The appeal question may concern facts, procedure, interpretation or remedy; choose the contribution that can actually reconsider it. A second summary of the first decision is not an independent examination merely because a different person or agent wrote it.
+Explain the decision, its grounds and effect to the appropriate recipients, with permitted disclosure and the applicable challenge or appeal route. Obtain required independence for reconsideration. The appeal question may concern facts, procedure, interpretation or remedy; choose the contribution that can reconsider that question. Another participant can summarize the first decision without independently examining its grounds.
 
 Translate the remedy into work. Assign correction of pay to ADM, reassessment to HRM.2, revaluation to HRM.3, changed work or support to OCE/OPS and HRM.5. Specify the owner, effective conditions and how provision can be checked. A determination without an obtainable remedy can leave the original harm unchanged.
 
@@ -62,20 +62,20 @@ Check whether the participation opportunity, determination and remedy actually o
 
 ### HRM.4:5 - Archetypal Grounding
 
-A company proposes using community contributions in promotion. Employees say that evening participation favors people with free time and that private learning discussions were never intended as selection evidence. Consultation occurs while the promotion design is still open. The owner distinguishes the proposed contribution from the proposed evidence and terms. HRM.2 develops a work-relevant demonstration during obtainable paid time; private developmental material remains outside the selection use unless separately justified and permitted. The response changes the design rather than merely explaining it more enthusiastically.
+A company proposes using community contributions in promotion. Employees say that evening participation favors people with free time and that private learning discussions were never intended as selection evidence. Consultation occurs while the promotion design is still open. The owner distinguishes the proposed contribution from the proposed evidence and terms. HRM.2 develops a work-relevant demonstration during obtainable paid time; private developmental material remains outside the selection use unless separately justified and permitted. The employees’ input changes the promotion design.
 
 Later, an employee challenges the promotion assessment because evidence of their work was omitted. The competent process examines the omission and its effect under the existing criteria. If the omission could change the comparison, a qualified reassessment supplies the corrected recommendation; the authorized decision and its remedy follow. This does not require reopening the entire culture programme.
 
-A different concern reports threatening conduct by the usual manager. Do not rely solely on that manager to resolve the concern informally. Obtain the applicable alternative and protective response, then the competent inquiry. The example selects a process; it does not supply one universal legal procedure.
+A different concern reports threatening conduct by the usual manager. Do not rely solely on that manager to resolve the concern informally. Obtain the applicable alternative and protective response, then the competent inquiry.
 
 ### HRM.4:6 - Bias-Annotation
 
-Power, dependency, language, access and fear of consequences can influence what is reported. Representatives and managers can each miss some participants' concerns. Obtain appropriate direct and representative evidence without treating every account as already established fact. A corporate agent must not obtain private conversations simply because they might make investigation easier.
+Power, dependency, language, access and fear of consequences can influence what is reported. Representatives and managers can each miss some participants' concerns. Obtain appropriate direct and representative evidence without treating every account as established fact. A corporate agent must not obtain private conversations simply because they might make investigation easier.
 
 ### HRM.4:7 - Conformance Checklist
 
 - Is the desired result distinguished from the channel: information, influence, negotiation, determination, appeal or remedy?
-- Is the selected process applicable and actually reachable, with required representation, authority and independence?
+- Is the selected process applicable and reachable, with required representation, authority and independence?
 - Can participant input still change the relevant decision?
 - Does inquiry distinguish facts, interpretations and uncertainty and provide the required opportunity to respond?
 - Are the decision, challenge route and remedy usable and appropriately communicated?
@@ -89,7 +89,7 @@ The presence of a grievance policy is recognition evidence only. Assurance requi
 
 ### HRM.4:9 - Consequences
 
-Participants gain a usable route to influence or correction; the organization can discover flawed premises before they spread. The process can reveal real conflicts and require remedies, not merely improve perceived engagement. It needs competent provision and may be constrained by unavailable evidence or external proceedings. Agreement is not guaranteed.
+Participants gain a usable route to influence or correction; the organization can discover flawed premises before they spread. The process can reveal conflicts and require remedies. It needs competent provision and may be constrained by unavailable evidence or external proceedings. Participants may still disagree.
 
 ### HRM.4:10 - Architectural Rationale
 

@@ -8,7 +8,7 @@
 
 Use this method when an intended product, service or other activity must satisfy an economic requirement, but no adequately supported arrangement yet does so. Examples include an offer that cannot earn the required return at an acceptable price, a service that exceeds available funding, or an improvement whose local savings leave the whole activity uneconomic.
 
-The result is an economically explained design or set of alternatives, with the conditions needed for its use. The result may instead be a supported incompatibility that returns the requirement, scope or provision to the responsible decision. The method develops the economic construction with the people who can design the offer, work and provision; it does not grant permission to launch or change their work.
+Develop the alternatives with those who design the offer, work and provision. The result is an economically explained design or set of alternatives, with the conditions needed for its use. If you establish that the available arrangements cannot deliver the required result under its conditions, return the incompatibility to whoever can reconsider the requirement, scope or provision. Launching a design or changing others’ work requires the applicable authority.
 
 If adequate alternatives already exist and only their operating consequences need comparison, use OPS.14. Use MA.8 when the unresolved contribution is their product or customer account over time. A short supported calculation can finish this method; a cross-functional redesign is needed only where the actual dependencies require it.
 
@@ -20,7 +20,7 @@ A usable alternative can require coordinated changes: a different product featur
 
 ### MA.10:2 - Problem
 
-How can participants use an economic requirement to find and substantiate a workable arrangement, while preserving the intended result and exposing the conditions under which the requirement can actually be met?
+How can participants use an economic requirement to find and substantiate a workable arrangement, while preserving the intended result and exposing the conditions under which the requirement can be met?
 
 ### MA.10:3 - Forces
 
@@ -30,7 +30,7 @@ Retaining every feature and commitment can make the requirement unattainable. Ch
 
 ### MA.10:4 - Solution
 
-Develop the requirement and the proposed arrangement together. Enter at the unresolved contribution below, retain adequate supplied results, and revisit earlier assumptions when a constructed alternative changes them. The operations are connected by the design question, not by a requirement to complete every operation in a fixed order.
+Develop the requirement and the proposed arrangement together. Enter at the unresolved contribution below, retain adequate supplied results, and revisit earlier assumptions when a constructed alternative changes them. The design question determines how these operations fit together.
 
 #### MA.10:4.1 - Establish the result, criterion and freedom to change
 
@@ -38,7 +38,7 @@ Recover who needs what result, how its achievement is recognized, and the period
 
 For a commercial offer, use an adequate account of customer use, alternatives and price conditions; [MKT.2][MKT2] supplies the offer construction when it is missing. Expected receipts require support for both price and demand. For a funded service, retain its intended result and funding terms without inventing a selling price. If the economic criterion itself is disputed, obtain the responsible choice or compare explicit alternatives to that criterion.
 
-Translate the criterion into a condition on the whole activity. If revenue is R and the required operating margin is m of revenue, an allowance C <= R(1 - m) follows only for the costs and period included in that margin. A markup k on cost instead gives C <= R/(1 + k). Define the basis before using either expression. A fixed funding ceiling constrains the expenditure it actually covers; it is not automatically a ceiling on every resource consumed or obligation created. For a capital investment, use [FIN.6][FIN6] for valuation with the applicable financial assumptions.
+Translate the criterion into a condition on the whole activity. If revenue is R and the required operating margin is m of revenue, an allowance C <= R(1 - m) follows only for the costs and period included in that margin. A markup k on cost instead gives C <= R/(1 + k). Define the basis before using either expression. A fixed funding ceiling constrains the expenditure it covers; it is not automatically a ceiling on every resource consumed or obligation created. For a capital investment, use [FIN.6][FIN6] for valuation with the applicable financial assumptions.
 
 Keep demand, revenue, resource limits and the criterion explicit where they can change the result. Their values may be conditional or intervals. An allowance is a consequence of those assumptions, not evidence that an arrangement satisfying it exists.
 
@@ -48,7 +48,7 @@ Construct the current or proposed activity's economic account at sufficient deta
 
 Locate the dependencies that make the proposed arrangement miss the requirement. Is the problem unnecessary work, a feature that requires expensive provision, poor yield, an indivisible supply block, low demand relative to an initial commitment, or terms that place a payment before funding is available? Distinguish a resource mechanism, a commercial term and an accounting assignment. Changing an allocation does not change the underlying burden unless the changed use of information also changes action.
 
-Work back from the gap to dependencies that participants can change. A support cost may depend on failure modes established in product design; travel may depend on the service promise and location of provision; a capacity payment may depend on combining or separating workloads. This locates design questions. It does not require distributing the total gap as independent departmental saving targets. An apparently expensive activity can be necessary for the result or can prevent a larger cost elsewhere.
+Work back from the gap to dependencies that participants can change. A support cost may depend on failure modes established in product design; travel may depend on the service promise and location of provision; a capacity payment may depend on combining or separating workloads. Use those dependencies to locate the design questions. An apparently expensive activity can be necessary for the result or can prevent a larger cost elsewhere.
 
 #### MA.10:4.3 - Construct joint alternatives with the responsible participants
 
@@ -78,7 +78,7 @@ An unresolved premise can leave a conditional alternative, a justified next expe
 
 #### MA.10:4.6 - Use the result and revise the economic knowledge
 
-Return the supported alternatives and remaining conditions to the people choosing or authorizing the work. Make clear which commitments the chosen arrangement needs and which conclusions would change if they are not obtained. MA.9 arranges the use of the account when participants otherwise lack a workable way to act on it.
+Return the supported alternatives and remaining conditions to those who choose or authorize the work. Make clear which commitments the chosen arrangement needs and which conclusions would change if they are not obtained. MA.9 arranges the use of the account when participants otherwise lack a workable way to act on it.
 
 After a trial or implementation, compare the observed activity and consequences with the relationships used in the design. MA.7 can locate a cost or margin difference; further evidence establishes its cause. Revise a resource dependency, demand assumption, contractual interpretation or information use where warranted. Retain knowledge whose conditions still hold. If the intended result or economic requirement changes, reconsider the affected design rather than merely issuing a new cost target.
 
@@ -90,9 +90,9 @@ A constructed proposal expects 1,000 units at a supported scenario price of 100 
 
 The initial design requires development of 20,000, manufacture of 75 per unit and expected support and closure of 15 per unit: total 110,000. The 30,000 gap cannot be removed by changing an allocation. Engineering identifies component variety and assembly operations as manufacturing drivers and inaccessible replaceable parts as a support driver. The useful result and safety requirements remain fixed in the exploration.
 
-A first proposed simplification leaves development at 20,000, reduces manufacture to 60 per unit and support to 10. Its 90,000 total still misses the allowance. A more integrated design uses common components and accessible replaceable modules. The engineering estimates, conditional on tests of function, assembly and service, are development of 30,000, manufacture of 40 per unit and support of 8. Its whole cost is 78,000 and surplus 22,000. The extra 10,000 of development is worthwhile under these premises because it enables the combined change in later work. No independent departmental saving targets establish that relationship.
+A first proposed simplification leaves development at 20,000, reduces manufacture to 60 per unit and support to 10. Its 90,000 total still misses the allowance. A more integrated design uses common components and accessible replaceable modules. The engineering estimates, conditional on tests of function, assembly and service, are development of 30,000, manufacture of 40 per unit and support of 8. Its whole cost is 78,000 and surplus 22,000. The extra 10,000 of development is worthwhile under these premises because it enables the combined change in later work.
 
-This is a conditional alternative, not a demonstrated market and engineering success. The team needs evidence that the altered offer still supports the price and demand, and that the estimated work and service behavior are achievable. Suppose these tests support the resource relationship for volumes between 800 and 1,000. At 800 units, cost becomes 30,000 + 48 x 800 = 68,400, revenue 80,000 and surplus 11,600. The required surplus is 16,000. The design now misses the requirement by 4,400, even though its resource estimates remain valid.
+The alternative depends on both market and engineering conditions. The team needs evidence that the altered offer still supports the price and demand, and that the estimated work and service behavior are achievable. Suppose these tests support the resource relationship for volumes between 800 and 1,000. At 800 units, cost becomes 30,000 + 48 x 800 = 68,400, revenue 80,000 and surplus 11,600. The required surplus is 16,000. The design now misses the requirement by 4,400, even though its resource estimates remain valid.
 
 For these stipulated relationships, meeting the margin requires 30,000 + 48Q <= 80Q, hence at least 938 whole units. This threshold tells the inquiry which demand question matters; it does not create demand. A price reduction to 95 at 1,000 units would instead reduce the allowance to 76,000 and reopen the design or criterion. If development must be paid before receipts and only 25,000 is available for it after other obligations, a separate 5,000 funding gap remains even in the favorable operating case.
 
@@ -100,7 +100,7 @@ For these stipulated relationships, meeting the margin requires 30,000 + 48Q <= 
 
 A public service must complete 300 qualified assistance cases within a five-day access condition. Its funding limit for the period is 60,000. There is no sales price or profit target. Under the initial arrangement, staffed provision costs 50,000 and travel costs 18,000. Case work needs 600 hours and travel 300, but only 750 qualified hours are available. The design fails both the funding and capacity conditions.
 
-The team investigates grouped visits at local sites. Under the proposed arrangement, travel would require 150 hours and cost 6,000, while local coordination would cost 4,000. The same 600 case hours plus travel fit 750, and total expenditure fits 60,000. This proposal changes service locations, schedules and coordination, not merely the denominator of cost per case.
+The team investigates grouped visits at local sites. Under the proposed arrangement, travel would require 150 hours and cost 6,000, while local coordination would cost 4,000. The same 600 case hours plus travel fit 750, and total expenditure fits 60,000. The proposal changes service locations, schedules and coordination.
 
 Judge the proposal against the access condition and the work required of its participants. If grouping leaves remote recipients waiting longer than five days, the proposal fails even though its financial and staffing totals fit. If it relies on unpaid local help, that work and the helpers' agreement must be made explicit; it is not a demonstrated reduction in total resource use. The team must construct a mixed provision arrangement, obtain different resources or return an explicit change of scope or access condition to the responsible authority. Replacing the missed requirement with an average waiting time would conceal the unresolved problem.
 
@@ -108,7 +108,7 @@ The commercial case searches for an offer and design that meet a conditional mar
 
 ### MA.10:6 - Bias-Annotation
 
-A stated target can anchor attention on cost reduction and obscure a better result, a changed offer or declining the proposal. Designers can underestimate later support; accountants can mistake a monetary assignment for an avoidable resource burden. Include the relationships that can change the judgement, with appropriate evidence and alternatives, rather than assuming any one profession already supplies the whole explanation.
+A stated target can anchor attention on cost reduction and obscure a better result, a changed offer or declining the proposal. Designers can underestimate later support; accountants can mistake a monetary assignment for an avoidable resource burden. Include the relationships that can change the judgement, with appropriate evidence and alternatives.
 
 ### MA.10:7 - Conformance Checklist
 
@@ -136,10 +136,10 @@ A forward account answers what follows from an arrangement. The inverse question
 
 ### MA.10:11 - SoTA-Echoing
 
-[ACCA's target and life-cycle costing explanation][TARGET] connects an economic allowance with design and later costs. Its teaching examples are useful grounds for the inverse question; general claims about fixed percentages of committed cost or the superiority of one costing method are not premises here. [IMA's 2014 conceptual framework][CFMC] contributes resource relationships and their application to managerial choices. [The 2023 Global Management Accounting Principles][GMAP] provides a broader professional context.
+[ACCA's target and life-cycle costing explanation][TARGET] uses teaching examples to connect an economic allowance with design and later costs. That connection supports working back from a requirement to an alternative design. Which costs this design commits, and how one costing method compares with another, need evidence for the case. [IMA's 2014 conceptual framework][CFMC] contributes resource relationships and their application to managerial choices. [The 2023 Global Management Accounting Principles][GMAP] provides a broader professional context.
 
 ### MA.10:12 - Relations
 
-MA.1, MA.2, MA.4, MA.5 and MA.8 supply missing resource, monetary, forecast and time constructions. MA.3 separates assignment from changed burden. MA.6 preserves the distinction between a requirement and expectation; MA.7 helps learn from observed differences; MA.9 connects the account to its use. MKT.2, SYSE.2 and SYSE.8 supply offer, system and provision constructions where needed. ECO.2, ECO.3 and ECO.4 address substitutions and exchange coordination. OPS.14 and OPS.19 supply the operating comparison and joint operating decision. FIN.2 and FIN.6 supply liquidity and capital-valuation judgements where needed; the responsible people retain authority over the financial decision.
+MA.1, MA.2, MA.4, MA.5 and MA.8 supply missing resource, monetary, forecast and time constructions. MA.3 separates assignment from changed burden. MA.6 preserves the distinction between a requirement and expectation; MA.7 helps learn from observed differences; MA.9 connects the account to its use. MKT.2, SYSE.2 and SYSE.8 supply offer, system and provision constructions where needed. ECO.2, ECO.3 and ECO.4 address substitutions and exchange coordination. OPS.14 and OPS.19 supply the operating comparison and joint operating decision. FIN.2 and FIN.6 supply liquidity and capital-valuation judgements where needed; the financial decision remains with those authorized to make it.
 
 ### MA.10:End

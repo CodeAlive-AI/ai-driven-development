@@ -5,21 +5,21 @@
 
 ### RMP.3:1 - Problem Frame
 
-Use this pattern when a research design has been selected but someone still has to decide which specimens, encounters, sources, observations or computations will make it executable. Begin with one consequential choice and ask: **how will this choice let us distinguish the alternatives in our research question?**
+Use this method to specify or assess the operations of a selected research design. Identify the consequential choice of specimen, encounter, source, observation or computation. Ask how it would help distinguish the alternatives in the qualified research question. A suitable existing protocol may already answer that question.
 
-For example, a pump engineer has selected a comparison between accelerated and field-representative seal degradation. Choosing an easily measured wear score is useful only if that score can distinguish the mechanisms the comparison concerns. A detailed testing schedule cannot repair the missing relation.
+For example, a pump engineer has selected a comparison of accelerated and field-representative seal degradation. An easily measured wear score can answer a wear question. To assess preservation of the failure mechanism, the score or other evidence must distinguish the relevant mechanisms under the comparison conditions. A detailed schedule alone cannot establish that connection.
 
-This pattern governs the **operational specification of one bounded inquiry**: the connection between its selected design and the particular actions and records that will implement it. Operationalization can specify a numerical measure, an interpretive encounter, a historical source comparison or a model experiment. It is not limited to turning a concept into a number.
+The operational specification connects one bounded design to the particular actions and records needed to carry it out. Depending on the question, it may specify a measurement, an interpretive encounter, a historical source comparison or a model experiment.
 
-The first useful result is a **ResearchProtocolAndOperationalizationMap**: the protocol and question-relative reasons for its consequential choices, carried in whatever existing records suit the work. A short protocol with inline reasons may be enough. A complex inquiry can link qualified instruments, source accounts and established procedures rather than copy them into another form. The name does not require a separate document.
+The **ResearchProtocolAndOperationalizationMap** is the protocol and the reasons its consequential choices address the question. A short protocol can state the reasons beside the relevant procedure. For a more complex design, use qualified instrument accounts, source descriptions or established procedures directly, identifying the conditions under which they apply.
 
-The practical gain is a usable specification, or an exact return before unsupported work begins. If a compatible qualified protocol already supplies the required choices and reasons, use it directly. If the question or design is still unsettled, return to RMP.1 or RMP.2. Designing a reusable domain Method, obtaining permission, performing the study and interpreting its findings remain separate work.
+Return the specification that is usable for the stated scope or identify the action or inference it cannot yet support. Reuse an adequate compatible protocol. If a gap concerns the research question, use RMP.1 as needed. If it could overturn the selected design, use RMP.2. Developing a reusable Method, obtaining a required permission, performing the study and interpreting the results each depend on their own tasks and evidence.
 
 ### RMP.3:2 - Problem
 
-A selected design leaves room for operational choices, but not every remaining choice is harmless. Replacing a missing comparison reach, changing a construct's measure or recruiting only convenient cases can change the question the study is capable of answering. Teams often discover the problem after collecting material and then describe the actual arrangement as though it were the intended design.
+Some operational choices can change the question a study can answer. A replacement comparison site, different construct measure or convenience sample may remove the distinction that justified the design. Preserve both the intended arrangement and what actually happened when comparing the protocol with subsequent work.
 
-The opposite response freezes every detail before the first encounter with data. That can be appropriate for a particular confirmatory commitment, but can obstruct legitimate qualitative, exploratory or source-critical development. A protocol must distinguish useful advance commitments from choices whose controlled evolution serves the inquiry.
+Some confirmatory inquiries rely on choices fixed before the relevant outcome is seen. Qualitative, exploratory or source-critical inquiry may instead depend on justified development during the work. Specify what must be settled in advance, what may evolve and how a change will remain open to examination.
 
 How can a practitioner make the design executable, preserve its criticism and allow appropriate adaptation without either hiding a defeated premise or imposing a universal research checklist?
 
@@ -27,100 +27,100 @@ How can a practitioner make the design executable, preserve its criticism and al
 
 | Force | Tension |
 | --- | --- |
-| Specificity | Another person needs to know what to do, while copying entire domain manuals can hide the decisive research choice. |
-| Methodological fit | Different questions need different observation and interpretation arrangements; familiar instruments and reporting templates can select those arrangements prematurely. |
+| Specificity | The specification should let its user recover what to do and why. Copying a full technical manual may obscure the consequential research choice. |
+| Methodological fit | Instruments and templates can aid a question when their observation and interpretation fit it. Familiarity alone leaves that fit untested. |
 | Advance commitment | Prior choices can protect criticism, while some inquiry depends on learning what to ask or inspect during engagement. |
 | Feasibility | Access, timing, measurement and resources may each appear sufficient but fail in combination. |
 | Records and protection | Later criticism needs consequential choices preserved, while indiscriminate recording can expose protected information or add unusable volume. |
-| Supplied competence | A researcher can connect qualified results to the question without personally recreating every laboratory, statistical or source-critical Method. |
+| Supplied competence | A researcher can apply their own qualified procedure or use a suitable laboratory, statistical or archival contribution supplied by another practitioner or service. |
 | Continuity | Most of a design may survive a local obstacle, while work depending on a defeated premise must stop or change. |
 
 ### RMP.3:4 - Solution
 
-Keep the selected question and criticism visible while deciding what will be done. Resolve the consequential choices, check their combined effect, and return only the decision or external result that is actually missing or defeated.
+Keep the research question and the error the design must expose in view. Establish the reasons for consequential choices, check how they work together and identify what can be carried out under the present conditions. If a link is missing, state which action or claim depends on it.
 
 #### RMP.3:4.1 - Recover the question and the selected design
 
-Start with a compatible **ResearchQuestionBrief** from RMP.1 or a supplied equivalent. Recover what is being asked, for which use, within which population, setting, period or corpus, and what would count as a useful answer or stop. The intended episteme change is the change in an explanation, model or other knowledge claim that the inquiry seeks.
+Use the qualified question and its current basis from a **ResearchQuestionBrief** or equivalent information already available. Identify the use, population, setting, period or corpus that determines scope. State what the evidence would have to establish and when work can stop even if uncertainty remains. The inquiry may seek to revise an explanation, a model or another claim.
 
-Recover the **ResearchDesignDecision** from RMP.2 or a supplied equivalent: the selected evidence relation, live alternatives, core contrast, threats and method-appropriate criticism. Here *criticism* means an examination capable of exposing an important error or limiting the proposed answer. It need not be a significance test or an experiment.
+Use the **ResearchDesignDecision** or an equivalent selected design. Identify the evidence strategy, core contrast, relevant rivals, threats and appropriate criticism. Criticism here means an examination capable of exposing an important error or limiting the answer. Use an experiment or significance test only where it bears on that question.
 
-A ResearchDesignHold with a prestigious Method name is still a hold. Obtain the missing selection-changing result before treating the design as selected. Conversely, compatible supplied inputs allow direct entry; there is no requirement to recreate RMP-branded briefs or repeat earlier decisions.
+A ResearchDesignHold identifies an unsettled choice. To proceed on that design, use evidence that resolves the consequential input or a subsequent justified selection. If neither is available, report what the hold prevents. A suitable design supplied independently can already give direct entry.
 
-Choose one operation that matters. Finish the sentence:
+Examine a consequential operation. Explain its relation to the question in terms such as these.
 
-> We will obtain or examine this material in this way because it can distinguish this live alternative, within these limits.
+> Examining this material in this way could distinguish the relevant alternatives because … . The inference applies under these conditions … .
 
-For the seal inquiry, this may connect a mechanism-sensitive observation to the possibility that acceleration changes the degradation process. For a historian, it may connect an authenticated date to the rival possibility that a practice changed before the directive being investigated. If that connection cannot be stated, recover its source or return the unresolved design premise.
+For the seal inquiry, relate the observation to the possibility that acceleration changes the degradation mechanism. For a historical inquiry, relate an authenticated date to the possibility that a practice preceded the directive. If the required connection is missing, use an available subject account or identify the premise on which selection depends.
 
 #### RMP.3:4.2 - Connect the question to particular material and actions
 
-Specify the choices on which that connection depends. The following questions organize one operational specification; they are not a compulsory form to reproduce for every inquiry.
+Specify the choices on which the inference depends. The table offers questions for the parts of this protocol that matter.
 
 | Choice to settle | What makes the specification usable |
 | --- | --- |
 | Phenomenon, construct or meaning | State what the inquiry is trying to distinguish and why the proposed observation, source or encounter bears on it. A familiar variable name or cited scale does not establish that relation in the present use. |
-| Units, cases and selection | Identify what is selected, exposed or changed, what is observed, and what the eventual answer is about. State inclusion and selection reasons and the source of the attainable sample or corpus. Repeated readings of one specimen are not additional independent specimens. |
+| Units, cases and selection | Identify what is selected, what is changed or exposed, what is measured and what units the inference concerns. Give the source and grounds for choosing the attainable sample or corpus. Repeated readings can supply information about one specimen’s measurement variation. Its independent specimen count remains one. |
 | Comparison or interpretive relation | Explain what will be compared, challenged or interpreted, which rival it can expose, and what differences must be controlled, described or acknowledged. |
 | Timing and context | Specify the periods, sequence, exposure or engagement conditions that make the material comparable or interpretable. Retain the conditions that could make a later observation a different case. |
-| Measurement, source or engagement Method | Identify the qualified measurement procedure, source-critical technique, interview or field approach, computation or other supplied Method. Include the material version and conditions that affect its use. |
+| Measurement, source or engagement Method | Identify the qualified procedure, source-critical technique, field or interview approach, computation or other operation and the conditions on which its use depends. Name the edition or configuration if it affects what can be done or inferred. |
 | Information and uncertainty | State why the attainable material is useful for the intended criticism, what its limits are, and which supplied domain or statistical judgement supports that expectation. |
-| Execution and access | Say who or what supplies the necessary capability, material, facility, permission and access before the affected action. A proposed arrangement does not establish their availability. |
+| Execution and access | Identify the capabilities, materials, facilities, permissions and access the proposed action needs. State which are available and which remain unknown. If another party supplies a result or controls access, identify that dependency where it matters. |
 
-For quantitative inquiry, obtain the applicable sample-size or precision rationale, dependence model and measurement qualifications. RMP.3 connects those results to the research question; it does not supply a universal sample count, effect size, psychometric cutoff or causal-identification formula. An instrument indication becomes a measurement result only through its appropriate measurement account, including uncertainty and applicable qualification. FPF C.16 provides the common measurement and characterization discipline.
+For a quantitative inference, establish the applicable basis for sampling or precision, dependence among observations and the measurement qualifications the question requires. An existing qualified result may supply them. To interpret an instrument indication as a measurement result, use the relevant measurement account, including its uncertainty and conditions. FPF C.16 guides measurement and characterization.
 
-For a historical inquiry, operational detail may concern source series, authenticity, dates, provenance uncertainty, transcription and the possibility of archival silence. For qualitative inquiry, it may concern theoretical orientation, researcher and participant positions, encounter conditions and the permitted development of interpretation. Asking what a source or encounter can support is more useful than forcing either inquiry into a trial-outcome table.
+For a historical inquiry, identify relevant source series, dates, authenticity, provenance, transcription and the interpretation of silence where they matter. For qualitative inquiry, consider the theoretical orientation, researcher and participant positions, encounter conditions and how interpretation may develop. Specify the grounds appropriate to each source or encounter.
 
-Use qualified domain procedures where they already answer these questions. Record the research connection and any changed application condition, not a weaker replacement manual.
+Use an adequate domain procedure directly. Explain its connection to the question and identify changes in application conditions that matter to the result.
 
 #### RMP.3:4.3 - State the intended use of the material and the records it needs
 
-Explain how the planned observations or sources will enter the intended analysis or interpretation. Identify the supplied Method and the consequential choices still to be made under it. Specify exclusions, missingness treatment, stopping or adaptation rules where they matter. These are intentions; they do not constitute a performed analysis or a warranted result.
+Explain how the proposed material will be used in the analysis or interpretation. Identify the applicable method and any remaining consequential choices about exclusions, missingness, stopping or adaptation. State what the protocol specifies. An account of what was actually done or inferred requires the corresponding evidence.
 
 Decide what a later critic would need to examine those choices. A specimen identifier may connect an exposure record to a measured value. A search version may explain why a source entered a review. A dated protocol may distinguish an advance commitment from a choice made after an outcome was seen.
 
-Arrange capture before the relevant distinction can be lost. RMP.4 supplies the actual trace and its limitations. Capture can begin while the operational specification is still developing; PatternID order is not a research calendar. Identify unresolved choices as unresolved rather than supplying an invented final claim to make the records look complete.
+For prospective work, arrange to preserve a consequential distinction before it can be lost. Use RMP.4 for a trace of actual decisions and work, including work begun while the specification evolves. For an inherited study, use what the existing records establish. Identify unresolved choices and lost evidence explicitly.
 
-Plan permitted retention and access with their actual owners. A public summary, a controlled original and a later independent inspection can support different examinations. If the desired criticism needs information that cannot be retained or examined, settle that consequence in the design instead of assuming that a disclosure statement will make the criticism possible.
+Identify applicable retention and access conditions. A public summary, a controlled original and a permitted independent inspection can support different examinations. Use existing rights and arrangements when they suffice. If necessary information cannot be retained or examined, identify the effect on the design and on claims that would rely on it.
 
 #### RMP.3:4.4 - Preserve useful commitments and method-appropriate flexibility
 
-Record what was decided, why, and its timing relative to relevant data access, outcome exposure or interpretive engagement. Distinguish a study registration, a protocol and an analysis plan by their actual content. The label “preregistered” alone does not tell a critic which choice preceded which information.
+Preserve the choice, its rationale and its timing relative to data access, exposure to outcomes or interpretive engagement. A registration, protocol and analysis plan may each record different commitments. Check what the dated content actually settled.
 
-Commit in advance where the chosen Method and receiving use rely on that commitment. Permit bounded evolution where it belongs to the inquiry, and explain how a change remains connected to the same question. If an external institution requires a particular registration or approval, obtain that result through its own rules; RMP does not grant it.
+Commit in advance when a method or use depends on a choice preceding the evidence. Where the approach permits development during the inquiry, specify the limits of change and how it remains connected to the question. Apply an institutional registration or approval when required, using a valid existing result where it covers the work.
 
-For example, a reflexive inquiry into how former workers experienced a factory closure can refine a prompt after an encounter exposes a previously unnoticed meaning. Preserve the starting prompt, the reason for refinement and the affected encounters. Changing the task to estimating the fraction of all former workers who agree with a proposition requires a different question and design; calling it another interview amendment does not preserve the original inquiry.
+In a reflexive inquiry into former workers’ experiences of a factory closure, an encounter may reveal a meaning that warrants refining the interview prompt. Preserve the starting prompt, the reason for the change and the encounters affected. Estimating the proportion of all former workers who share a view requires a suitable question, population and design. Revising the prompt alone cannot establish that proportion.
 
 Other design families require their own operational distinctions:
 
 | Inquiry | Consequential detail and return |
 | --- | --- |
-| Historical or source-critical | State which inspected documents can establish chronology and how contrary or inaccessible sources affect it. An unavailable earlier series cannot be treated as inspected silence. Return a defeated chronology comparison to RMP.2. |
+| Historical or source-critical | Specify which documents could establish chronology, or identify those actually inspected for a claim about past work. State how contrary or inaccessible material bears on the inference. If a required series cannot be examined, distinguish missing evidence from the absence of an entry in an inspected record. Use RMP.2 where this defeats the selected comparison. |
 | Computational or model-based | Specify the model–target relation, input and parameter choices, transformations, environment needs and intended sensitivity or analysis Method. A successful program run cannot supply a missing model–phenomenon justification. |
-| Evidence synthesis | Make the supplied review question actionable through eligibility, search arrangements, screening, extraction and appraisal intentions. A convenient source restriction that can change the answer reopens the affected design; reporting the restriction is not sufficient justification. Actual synthesis remains separately performed. |
-| Mixed inquiry | Explain what each component contributes, what they share, and how their results will be related. Check shared access, participants, resources and assumptions. Losing an archival chronology component cannot be repaired merely by adding interviews that depend on the same retrospective account. |
+| Evidence synthesis | Relate the review question to eligibility, search, screening, extraction and intended appraisal. If a restriction could change the answer, assess its effect on the selected design and the warranted scope. Synthesis findings require evidence of the material actually obtained and combined. |
+| Mixed inquiry | Explain the contribution of each component, shared inputs and how results would be related. Check joint access, participation, capacity and assumptions. If the design needs independent evidence of chronology, extra interviews based on the same retrospective account may leave that gap open. |
 
-These are examples of method-sensitive choices, not a closed taxonomy or a checklist applied in full to each study.
+Choose the distinctions that fit the inquiry. Other study families or combinations can require different operational details.
 
 #### RMP.3:4.5 - Test the whole arrangement and choose the exact return
 
-Read the completed arrangement as a possible piece of work. Could it still expose the error or rival that justified the selected design? Check interactions among selection, access, measurement, timing, resources and records, including their jointly admissible unresolved values.
+For a proposed arrangement, ask whether its operations together can expose the error or distinguish the rival that justified the design. Check consequential interactions among selection, access, measurement, timing, resources and records. Include jointly admissible unresolved values. For an existing protocol, use established evidence of these conditions directly.
 
-RMP.2:4.3 supplies the joint-input condition: every admitted combination of PostSelectionNeed values preserves the selected family, core contrast, criticism, feasibility and refusal conditions. A **PostSelectionNeed** is therefore a bounded remaining need, not anything the team happens to postpone. Apply that condition to the actual combined specification. Do not test each uncertainty while holding the others artificially favourable.
+Apply the joint-input condition in RMP.2:4.3. Every admitted combination of PostSelectionNeed values must preserve the family, core contrast, criticism, feasibility and refusal conditions. A detail may safely wait when it passes this test in the combined specification.
 
 | What the specification reveals | Action and result |
 | --- | --- |
-| The choices and their joint effects stay within the selected question/design bounds. | Complete or amend the protocol and its reasons. State the supported scope, remaining bounded needs and change conditions, then proceed only with the supported work. |
-| A particular external result is still missing, but every admissible value preserves the selected design. | Name the needed result, its owner, the action it blocks and the condition for resuming that action. Retain the design and the usable portions of the specification; do not call the blocked part executable. |
-| A new value can defeat the selected family, contrast, criticism, feasibility or refusal condition. | Return that value and its consequences to RMP.2. Preserve the previous decision and any actual work in the trace. The protocol is not a place to silently select another design. |
-| The question, intended knowledge change, population/context claim or useful stop changes. | Return the changed question to RMP.1 and carry its answer into the dependent design and specification. |
-| Permission, resources or another practical decision are withheld independently of evidence sufficiency. | Return to that responsible owner. Preserve the research question and identify the prohibited action. Inability to proceed is not an evidence-sufficient stop. |
+| The choices and their joint effects stay within the selected scope. | Complete or assess the protocol with its reasons. State the supported work, remaining bounded needs and conditions for change. Carry out the work when that is the task and any required permission is in force. |
+| A result is still needed for an operation, but every admissible value preserves selection. | Identify the input, the action it blocks, any known source or holder and what would allow that action to proceed. Keep the justified design and usable parts of the specification. |
+| A new value could defeat the family, comparison, criticism, feasibility or refusal condition. | Identify which values preserve the design and which could defeat it. If a new choice is needed, return the unresolved value and its consequences to RMP.2. Preserve the earlier decision and any actual work in the trace. |
+| The question, intended knowledge, population, context or useful stop changes. | Qualify the changed question through RMP.1 where needed. Use its established answer to revise the dependent design or specification when that work is required. |
+| Permission or resources are withheld independently of evidence sufficiency. | Identify the affected action and the actual limit on proceeding. If a decision is needed, use the applicable authority or state the missing authority. Preserve the research question and assess evidence sufficiency on its own grounds. |
 
-The distinction can be small but decisive. Waiting for the exact calibration result can block a measurement while the design remains justified if all admitted results preserve the required discrimination. Discovering that the instrument may not distinguish the competing mechanisms reopens design selection. A numerical value is not “mere detail” simply because it arrives late.
+A calibration value may be needed for a measurement even if every admissible value preserves the required discrimination. If the instrument might instead fail to distinguish the mechanisms, that uncertainty reopens selection where the comparison depends on it. The timing of the answer does not determine its scientific importance.
 
 #### RMP.3:4.6 - Leave a usable operational result
 
-The ResearchProtocolAndOperationalizationMap is usable for its stated scope when another suitably competent practitioner can recover:
+A **ResearchProtocolAndOperationalizationMap** is usable for its stated purpose when a suitably competent user can recover the following.
 
 - the brief and selected design being elaborated;
 - the consequential operational choices and their question-relative reasons;
@@ -128,115 +128,115 @@ The ResearchProtocolAndOperationalizationMap is usable for its stated scope when
 - the planned conduct, use of material and required records; and
 - the remaining limitations and conditions for an amendment, return or stop.
 
-A small inquiry may put them beside the relevant procedure in an existing protocol. Link larger source and instrument accounts by their actual versions and uses.
+A small inquiry can place the reasons beside the relevant procedures in an existing protocol. For a larger inquiry, identify the source and instrument accounts by the versions and uses on which the specification depends.
 
-An unfinished specification can still be a useful partial result. Name its unsupported action or inference precisely. The responsible owner decides whether obtaining the missing result or revisiting the defeated choice is worthwhile and feasible. Do not extend a protocol whose core comparison no longer works.
+An incomplete specification can answer which action or inference is unsupported. Retain the supported work and name that limit. If further specification is needed, assess whether a missing input can be obtained or a design choice reconsidered with sufficient value, feasibility and authority. A protocol whose core comparison has failed needs a new basis before it can be used for that inference.
 
 ### RMP.3:5 - Archetypal Grounding
 
-The following cases are constructed examples with supplied domain premises. Their identifiers and counts illustrate records and dependence; they are not recommended sample sizes, scientific thresholds or performed studies.
+These constructed cases stipulate the domain premises. Their identifiers and counts illustrate how to relate records and repeated observations to one another. Sample size and scientific thresholds require justification for the intended study.
 
 #### RMP.3:5.1 - Pump-P4: from a mechanism question to an executable comparison
 
-The brief asks whether the accelerated condition preserves the field seal-degradation mechanism within a specified material/fluid envelope. The selected design compares accelerated and field-representative conditions. Assume the domain owner supplies a valid mechanism marker, qualified measurement procedure, safe conditions and an adequate specimen plan.
+The Pump-P4 question asks whether acceleration preserves the field seal-degradation mechanism within a specified material and fluid envelope. Suppose the selected design compares accelerated and field-representative conditions. The mechanism marker and measurement procedure are qualified, the conditions are safe for the proposed work and the specimen plan is adequate.
 
 The team adds these entries to its existing protocol:
 
 | Protocol choice | Question-relative reason and required record |
 | --- | --- |
 | Give each seal a specimen ID and retain its material batch and assigned condition. | The comparison concerns degradation under the two conditions; material and allocation must remain recoverable. |
-| Measure the supplied mechanism marker at the design's specified exposure points with the qualified procedure. | A difference must bear on mechanism, not merely on total visible wear. Retain the procedure version, calibration basis, time and uncertainty. |
-| Treat three readings from one seal as repeated observations of that seal. | Repetition can characterize measurement variation; it does not triple the independent specimen count in the supplied comparison. |
-| Preserve missing observations and departures before preparing the comparison data. | A critic needs to distinguish material behaviour from allocation, handling and selection effects. |
+| Measure the qualified mechanism marker at the specified exposure points. | Preserve the procedure version, calibration basis, time and uncertainty needed to interpret the marker. The observed distinction must bear on the degradation mechanism. Both mechanism references can exhibit the same total visible wear. |
+| Treat three readings from one seal as repeated observations of that seal. | They may characterize measurement variation. The comparison still has one independent specimen here. |
+| Preserve material deviations, missing observations and the conditions under which they occurred. | The available records should let a critic distinguish material behaviour from allocation, handling and selection effects as far as the evidence permits. |
 
-This is an operationalization of the selected design because each choice preserves the mechanism question and names the material needed to challenge it. The team does not obtain permission or a maintenance decision merely by completing the protocol.
+Each choice relates an operation to the mechanism question and identifies material that could challenge the inference. The protocol specifies the proposed work. Permission to proceed and a decision about the maintenance interval require their own bases where applicable.
 
-Now change one premise: the measurement owner reports that the marker cannot distinguish thermal degradation from the competing field mechanism under these conditions. The appropriate result is an RMP.2 return carrying that report and the lost discrimination. Substituting a more convenient wear score would require a justified new evidence relation. The brief and unaffected specimen information can remain useful.
+Suppose a qualified measurement result now shows that the marker cannot distinguish thermal degradation from the competing field mechanism under the proposed conditions. Return that result and its consequence for design selection through RMP.2 when selection remains open. An overall wear score needs a justified relation to mechanism before it can replace the marker. Keep the existing brief and specimen information where they remain applicable.
 
-On the valid-marker branch, specimen P4-07 is later damaged in handling before an observation. The protocol's planned missingness treatment tells the team what intention to consult; RMP.4 records what actually happened and what was decided. Whether the remaining data support an inference is a later analytical question.
+On the valid-marker branch, suppose P4-07 is damaged in handling before the observation. Consult the protocol’s stated treatment of missing material. Preserve what happened and any action taken through RMP.4. The remaining data and their conditions determine which inferences can be supported.
 
 #### RMP.3:5.2 - ResidentStream-S17: a missing comparison is not a scheduling detail
 
-Residents have a compatible brief and a selected spatial-temporal comparison of salinity-related observations. The measurement and site owners supply a valid method, the calibration and uncertainty basis, permissible access and a feasible plan for informative hydrological conditions.
+The residents have a qualified question and a selected comparison of salinity observations across sites and times. Suppose the measurement procedure, calibration, uncertainty and permitted access are established and the plan fits the hydrological conditions of interest.
 
-The operational specification identifies the reach and sampling point, the condition triggering the observation, the time relation between reaches, the qualified measurement result to obtain, and the weather, access and calibration records needed to interpret the comparison. A laboratory may supply the measurement result; residents need not recreate its internal Method.
+The specification identifies the reach and sampling point, the trigger for observation, the required time relation between reaches, the measurement result and the weather, access and calibration records needed for interpretation. The residents can use a qualified laboratory result or perform the measurement themselves if they have the required capability and access.
 
-If the reference reach becomes inaccessible during the informative thaw event while downstream observations remain possible, the original paired comparison has lost a required observation. Record the site, period and access failure, preserve the downstream material, and return to RMP.2. A later dry-weather reference is a different comparison premise, not routine completion of the old schedule. A narrower use can proceed only under the question/design that justifies it.
+Suppose the reference reach becomes inaccessible during the informative thaw. Preserve the downstream observations and the reach, period and access conditions they describe. Check whether an adequate observation of the reference reach in that same event is already available. If the pair cannot be recovered, the downstream evidence can still support its own descriptive claim. Reconsider the paired design under RMP.2 if that question remains live. A reference observation in later dry weather concerns different conditions and needs its own justification.
 
 ### RMP.3:6 - Bias-Annotation
 
-Operational choices determine whose cases and which phenomena become visible. Inspect convenience sampling, survivorship, accessible-source bias and exclusions that protect a favoured explanation. A well-documented restriction can remain an answer-changing bias.
+Examine how operational choices affect which cases, phenomena or voices are represented. Convenience sampling, uneven survival of records, access restrictions and exclusions can limit the answer. Documenting a restriction makes it inspectable. Assess its consequences separately.
 
-Also inspect the researcher's position. Prompt wording, relationships, technical competence and access can shape encounters and interpretations. Preserve the contribution that matters to the chosen approach; do not impose one philosophy of interpretation or universal coder-agreement requirement.
+Consider the researcher’s position when it can affect the encounter or interpretation. Prompt wording, relationships, competence and access may change what can be observed. Use criteria appropriate to the approach, including coder agreement only when the interpretation relies on it.
 
-Instrument familiarity and organizational pressure favour choices that are easy to execute and report. Ask whether an inconvenient rival would still be observable under the completed arrangement. In mixed inquiry, check whether apparently different components rely on the same selected cases or assumptions.
+Ask whether the finished arrangement could expose the important rival or error, even when it is inconvenient to observe. Instrument familiarity and institutional pressure may favor easier observations. In mixed inquiry, check whether components share the same cases, records or assumptions and what that means for their relationship.
 
 ### RMP.3:7 - Conformance Checklist
 
-Use this checklist to examine the operational specification, not as a substitute for the domain Methods it relies on.
+Use the questions that apply to the operational specification. Use qualified domain procedures for the observations or actions themselves.
 
 - The practitioner can recover a compatible question, current frame and selected design, with their criticism and useful-stop conditions.
 - Each consequential operation has a recoverable question-relative reason and the units, context and timing needed to use its material.
-- Measurement, source, analysis and practical-owner results are identified with their applicable conditions; proposed results are not represented as supplied.
-- The specification distinguishes intentions from performed analysis and states the records required before relevant information is lost.
+- Identify relevant measurement, source, analysis and operational inputs with their conditions. Distinguish available results and permissions from proposals or unresolved needs.
+- Distinguish planned analysis from work already performed. Identify which records are needed while the relevant information can still be preserved, or which have survived for a historical use.
 - Commitment and amendment timing is recoverable relative to the information already available. Legitimate adaptation remains method-appropriate.
-- Unresolved operational choices satisfy the RMP.2 joint-input condition; a blocked action is named even when design selection remains valid.
-- A defeated selection premise returns to RMP.2; a changed question returns to RMP.1; independent permission and resource decisions return to their owners.
-- The result states which work is executable, which part is still unsupported and what will permit a return or continuation.
+- Check the jointly admissible values of unresolved operational choices. Identify a blocked action even if the selected design remains justified.
+- If the selection premise fails, identify its consequence for RMP.2. Qualify a changed question under RMP.1 when needed. For a decision about permission or resources, use the applicable authority or state the limit.
+- State what the protocol supports. Identify any action or inference that remains unsupported and what, if anything, could make it available.
 
-For a disputed or consequential use, follow one proposed observation from its actual unit and procedure through the planned comparison to the error it is supposed to expose. Then test the least favourable jointly admissible unresolved conditions. Correctly filled fields do not answer either question.
+For a disputed or consequential use, follow a material observation from its specified unit and procedure through the proposed comparison to the error it could expose. Where unresolved inputs interact, check their adverse admissible combinations. A fully populated form can still leave either connection unsupported.
 
 ### RMP.3:8 - Common Anti-Patterns and How to Avoid Them
 
 | Failure | Why it fails | Repair |
 | --- | --- | --- |
-| “We use the standard scale.” | Familiarity conceals whether administration, scoring or the construct relation fits this inquiry. | Recover the qualified relation and actual use; obtain a domain result or return the defeated design premise. |
+| “We use the standard scale.” | The scale may have been validated for a different construct, population or administration. | Use suitable qualification for the intended conditions. If the relation remains open, state which design premise depends on it. |
 | Three readings become three specimens. | The information claim silently changes its unit and dependence. | Keep observation and inference units distinct and use the applicable sampling and analysis rationale. |
 | A completed reporting checklist is treated as a justified protocol. | Reporting detail cannot select or validate the research relation. | Connect each consequential choice to the question and supplied Method. |
 | Every adaptation is either forbidden or hidden. | The first suppresses legitimate inquiry; the second removes criticism of selection and timing. | State justified commitments and preserve actual reasons, timing and scope of change. |
-| A lost comparison is annotated but its original claim survives. | The record becomes more transparent while the design remains defeated. | Return the failed dependency to RMP.2 and identify what narrower work is still supported. |
+| A lost comparison is recorded but its original inference is retained. | A transparent record of the loss may still leave the inference unsupported. | Use any adequate substitute evidence from the relevant condition. Otherwise state what remains supported and return the defeated selection premise to RMP.2 if a choice is still needed. |
 | Each remaining need is tested with all others favourable. | The combined arrangement may be infeasible or incapable of criticism. | Apply the joint-input test to admissible combinations. |
-| The protocol substitutes for permission or a scientific conclusion. | Research preparation does not supply either result. | Obtain the exact owner decision or the later analysis and criticism. |
+| The protocol is cited as permission or as a scientific result. | Preparatory choices establish what is proposed. | For a permission or a finding, use the applicable decision or suitable evidence for that finding, such as a qualified observation, measurement or analysis. Where these are unavailable, preserve the supported protocol and state the limit. |
 
 ### RMP.3:9 - Consequences
 
-The practitioner can see which choices merely complete a selected design and which change its ability to answer. Records are planned early enough to preserve important distinctions, and existing qualified procedures remain usable without duplicate paperwork.
+The specification shows which operational choices implement the design and which could change the question it can answer. Arrange prospective records while important distinctions can still be preserved. Use qualified procedures and suitable records already available.
 
-The cost is deliberate explanation of choices that might otherwise remain tacit. Some apparently ready studies will return to design selection or await an external result. This cost is justified when it prevents work whose observations could never answer the intended question. The method does not guarantee a useful finding or remove domain uncertainty.
+Explaining a consequential choice takes work. It may reveal that a study needs another design or an unavailable professional result. The effort is justified when it can prevent work that would not address the question. A sound specification still leaves study findings to the actual investigation.
 
 ### RMP.3:10 - Architectural Rationale
 
-Separating design selection from operationalization protects two useful decisions. RMP.2 can compare evidence strategies without pretending every local detail is settled. RMP.3 can make one selected strategy executable without being allowed to change its criticism silently. The joint-input condition connects them: unresolved details are acceptable only inside the selected design's admitted bounds.
+Use RMP.2 to select an evidence strategy and RMP.3 to specify its operations. During specification, check that every jointly admissible remaining choice still preserves the selected evidence relation, criticism and feasibility. When it does not, report the consequence for selection.
 
-The operational specification and the actual trace remain distinct because an intention and an account of conduct answer different questions. They can occupy one notebook and can develop together. RMP.4 also supports inherited work whose prospective specification no longer exists.
+A protocol specifies intended work. A trace records what happened. Both may be kept in one notebook and may develop together. If what happened in an inherited study is unclear, use RMP.4 to examine its surviving trace. Available records may already answer the question even when its original protocol is lost.
 
-The cheaper alternative is often best: use a competent domain protocol and adequate records directly. The RMP contribution is needed when the question-to-operation connection, change consequence or research-use limitation remains unresolved. A universal form would add burden while obscuring differences among measurement, interpretation and source criticism.
+Use a suitable domain protocol and adequate records directly. Examine the connection to the research question when a consequential operation, change or limitation remains unclear. A measurement problem, interpretive inquiry and historical source comparison may each need a different explanation of that connection.
 
 ### RMP.3:11 - SoTA-Echoing
 
-**Practice question.** How much and what kind of advance specification preserves a research question while allowing the inquiry its justified flexibility?
+**Practice question.** Which choices must be specified in advance to preserve the research question, and which may develop as evidence or interpretation changes?
 
-**Selected line.** Adapt question-relative, method-sensitive specification with inspectable commitments and amendments. Compared with either a universal protocol checklist or an unrestricted evolving notebook, this preserves both methodological fit and the timing needed for criticism. It deliberately requires reasons for consequential choices; it does not require more documentation where an adequate domain protocol already supplies them.
+Explain the reasons for consequential choices and make their timing and any amendments inspectable. Use an existing protocol when it already supplies them. Select advance commitments or permitted revisions according to the kind of inquiry and the threat being addressed.
 
-| Comparison and source role | Adopt, adapt or reject; effect on the Method and limit |
+| Source and scope | Operational contribution and limit |
 | --- | --- |
-| Flake and Fried's [Measurement Schmeasurement](https://doi.org/10.1177/2515245920952393) is a methodological candidate against unexplained measure selection. Goos et al.'s [2026 measurement study](https://doi.org/10.1371/journal.pone.0356070) supplies bounded failure evidence from Many Labs measures. | **Adapt** the recoverable construct–measure relation and actual administration/scoring choices in §4.2. Reject publication or replication status as sufficient qualification for a changed measurement use. The sources neither validate the local instrument nor establish a universal research failure rate. |
-| Lakens's [Sample Size Justification](https://doi.org/10.1525/collabra.33267) compares quantitative justifications tied to inferential aims and constraints. | **Adapt** its question-relative rationale in §4.2. Reject an unexplained inherited count and the treatment of a resource-limited sample as automatically sufficient. Applicable statistical calculations remain supplied Methods; power analysis is not a universal standard for qualitative or historical adequacy. |
-| [SPIRIT 2025](https://www.bmj.com/content/389/bmj-2024-081477) is a bounded reporting comparator; [TOP 2025](https://www.cos.io/initiatives/top-guidelines) distinguishes registration, protocol and analysis-plan practices. | **Adapt** consequential specification and separate timed commitments in §§4.2–4.4. Reject the checklist or preregistration label as proof of design quality. Trial-specific objects apply where that design has them, not to every inquiry. |
-| Haven et al.'s [qualitative preregistration study](https://doi.org/10.1177/1609406920976417) supplies a candidate starting account. Braun and Clarke's [RTARG argument and review](https://doi.org/10.1177/02692163241234800) challenges generic qualitative reporting and assessment defaults. | **Adapt** explicit starting commitments with approach-appropriate evolution in §4.4. Reject universal pre-data freezing and universal coder agreement. The Delphi consensus and reflexive-TA critique do not establish one procedure for all qualitative traditions. |
-| AHA's [professional standards](https://www.historians.org/resource/statement-on-standards-of-professional-conduct/) and the [Cochrane Handbook, chapter 2](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-02) supply source-critical and question-led selection comparators. | **Adapt** provenance, contrary material and question-relative selection in §§4.2 and 4.4. These practices cannot restore a lost archive or supply the actual historical or synthesis conclusion. |
+| Flake and Fried’s [Measurement Schmeasurement](https://doi.org/10.1177/2515245920952393) addresses the basis for choosing a measure. The [2026 measurement study](https://doi.org/10.1371/journal.pone.0356070) by Goos et al. examines measurements used in Many Labs. | In §4.2, establish the relation between construct and measure and state consequential administration and scoring choices. A published replication and the Many Labs findings do not by themselves establish the validity of the local instrument or a general failure rate. |
+| Lakens’s [Sample Size Justification](https://doi.org/10.1525/collabra.33267) compares quantitative rationales for sample size in relation to inferential aims and constraints. | In §4.2, justify the attainable sample for the question it must answer. A resource limit can determine the sample obtained while leaving the desired precision open. Use a relevant statistical procedure for quantitative adequacy and suitable criteria for historical or qualitative inquiry. |
+| [SPIRIT 2025](https://www.bmj.com/content/389/bmj-2024-081477) gives reporting guidance for trial protocols. [TOP 2025](https://www.cos.io/initiatives/top-guidelines) distinguishes registration, protocol and analysis-plan practices. | In §§4.2–4.4, identify consequential choices and the information available when they were made. Trial-specific requirements apply where the inquiry uses that design. Inspect the contents and timing when judging what was committed in advance. |
+| Haven et al.’s [qualitative preregistration study](https://doi.org/10.1177/1609406920976417) offers a starting account for qualitative preregistration. Braun and Clarke’s [RTARG argument and review](https://doi.org/10.1177/02692163241234800) challenges generic defaults for qualitative reporting and assessment. | In §4.4, make initial commitments explicit and preserve justified changes under the selected approach. The Delphi study and Braun and Clarke’s review of reporting in studies that used reflexive thematic analysis address particular methodological settings. Other qualitative approaches need their own grounds. |
+| AHA’s [professional standards](https://www.historians.org/resource/statement-on-standards-of-professional-conduct/) and the [Cochrane Handbook, chapter 2](https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-02) address source criticism and question-led selection. | In §§4.2 and 4.4, examine provenance, contrary material and which sources the question requires. A lost archival series limits the conclusion that can be drawn from it. A historical or synthesis finding requires actual relevant material. |
 
-The combined arrangement is a reasoned methodological synthesis, not a demonstrated universal improvement over every research practice. Reopen the affected choice when a changed construct, approach, source corpus or access condition defeats its research connection, or when a better domain procedure preserves that connection and its criticism with less burden.
+These methodological sources support the specified operations within their own conditions. If a change in construct, approach, corpus or access defeats a connection to the question, reassess that choice. Consider a different professional procedure when it preserves the required inference and criticism at lower cost. Claims about an improvement in actual research practice need evidence of that use.
 
 ### RMP.3:12 - Relations
 
-For a selected practice-reconstruction question, RMP.10 connects candidate claims to observations, critical-incident elicitation and log evidence. For Method history, RMP.11 develops the dated sequence, rivals and diagnostic observations. Their particular operations enter the specification with their actual limitations; this protocol does not silently substitute one evidence form for another.
+For a practice-reconstruction question, RMP.10 relates candidate accounts to observations, critical-incident elicitation and log evidence. For a question about Method history, RMP.11 relates dated sequences to competing explanations and diagnostic observations. Include the operations the question requires and identify the limits of each source of evidence.
 
-- **RMP.1** supplies the bounded research question and useful stop; a changed question or receiving use returns there.
-- **RMP.2**, especially §4.3, supplies the selected design and joint-input condition; a defeated selection premise returns there.
-- **RMP.4** preserves actual conduct, changes and receiving limitations. It can begin capture while operationalization is developing.
+- **RMP.1** helps qualify the research question and stopping conditions, including a materially changed question or use whose qualification remains open.
+- **RMP.2**, especially §4.3, gives the selected design and the condition for jointly admissible unresolved inputs. Return a defeated premise there when its consequences for selection need to be settled.
+- **RMP.4** helps preserve evidence of conduct and changes as they occur, or assess what an existing trace supports. Capture may begin while the specification is being developed.
 - **FPF C.16** supplies measurement and characterization discipline; **FPF A.10** supplies claim-bound evidence and provenance discipline. RMP.3 adds the particular research question and operational connection.
 - Qualified domain, statistical, interpretive, source, ethics, safety, access and resource practices supply their own results. The Core Method-development family applies when the reusable Method itself needs design or repair.
-- **RMP.5** connects the actual material and analysis to a bounded claim; **RMP.6** chooses a useful claim-relative credibility examination and interprets its actual result. An operational protocol supplies relevant intentions and choices; it does not perform either contribution.
+- **RMP.5** helps connect actual material and analysis to a bounded claim. **RMP.6** helps assess the claim’s credibility using available evidence or a worthwhile test. A protocol supplies the relevant intentions and choices. Substantiate execution and conclusions from the actual work.
 
 ### RMP.3:End

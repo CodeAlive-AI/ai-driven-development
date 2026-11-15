@@ -1,6 +1,6 @@
 ## OCE.Reference:3 - Several structures and several views can coexist
 
-For the current decision, select the structure and direct relation you need to inspect. Relevant structures may concern contributions, Work, assignments, authority, resource access, information use, material transfer, service provision, coordination, capability, providers or culture. They need not be isomorphic. Do not call every connected arrangement a graph; a mathematical graph is one possible lens after its nodes, edges, relation meanings and intended use are selected.
+Select the structure and direct relation needed to answer the question. Relevant structures include contributions, Work, assignments, authority, resource access, information use, material transfer, service provision, coordination, capability, providers and culture. They can organize the same work differently. When a mathematical graph is useful, identify its nodes, edges, relation meanings and intended use.
 
 Project, process, and case views can expose different claims about the same Work. A project viewpoint foregrounds commitments, allocations, and decision slots; a process viewpoint recurring contributions and controls; a case viewpoint changing evidence, exceptions, and next decisions.
 

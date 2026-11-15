@@ -1,6 +1,6 @@
 ## LDR.Use:1 - A worthwhile proposal with incompatible contributions
 
-The following is a constructed use of LDR.1, LDR.2, LDR.4 and the supplied answer construction. Its joint purpose and initial participation are already established; LDR.5 addresses the different starting condition in which they still need construction. It does not describe an observed organization or claim that these numbers apply elsewhere.
+The following is a constructed use of LDR.1, LDR.2, LDR.4 and the supplied answer construction. Its joint purpose and initial participation are already established; LDR.5 addresses the different starting condition in which they still need construction. The figures are assumptions for this case.
 
 Suppose three independent engineering communities want a monthly service in which practitioners bring a difficult evidence package, obtain a qualified diagnosis and leave with an actionable correction. The wider purpose is to help members develop their practice. The present leadership question is narrower: can the communities begin and continue a supported first service?
 

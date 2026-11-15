@@ -16,7 +16,7 @@ not all application algorithms, software architecture, compiler construction, di
 software engineering. It does not supply cryptographic design, security threat models, privacy decisions or
 security-incident authority merely by providing artifact, deployment or technical-recovery Methods.
 
-Manufacturing still needs operative process/tooling and changeover design, measurement-system qualification
+Manufacturing needs operative process/tooling and changeover design, measurement-system qualification
 and uncertainty, sustained capability, acceptable-part delivery capacity and nonconforming-material recovery.
 Other physical and regulated profiles likewise retain their professional Methods. Electrical design rules,
 naval architecture, structural calculations, medical regulation, safety cases, legal or financial decisions,
@@ -26,16 +26,16 @@ Further profiles can retain the common use, configuration, provider and evidence
 different professional results. Robotics needs the relevant simulation-to-real, calibration, operating-envelope,
 physical recovery and fleet-maintenance Methods. Laboratories need instrument and Method qualification,
 sample identity and handling, uncertainty, contamination control and scientific-validity judgements.
-Administrative enabling paths need the actual finance, personnel or procurement procedures, access and
-authority conditions. These are remaining professional obligations, not additional Methods supplied by
-a common platform description.
+Administrative enabling paths need the applicable finance, personnel or procurement procedures, access and
+authority conditions. These professional results come from the relevant
+administrative practices.
 
 The selected software repertoire also leaves deeper mobile and embedded toolchains, foundation-model pretraining,
 distributed storage, identity and secret infrastructure, comprehensive security design and further service classes
 to their own Methods. Part VIII supplies tool use, external memory, work division, qualified experience,
 procedure and operator construction, assistance decisions, adaptive effort and working-material preparation.
 Its human and technical realizations keep their own mechanisms; SYSE.45 supplies bounded LLM policy learning.
-It does not supply every human-acquisition, ML-evaluation, robotics-control or task-domain Method. For narrower work, reuse appropriate existing Methods and obtain a specialist Method where their
+For human capability development, ML evaluation, robot control or a task-domain method, use the appropriate specialist practice where its result is needed. For narrower work, reuse appropriate existing Methods and obtain a specialist Method where their
 operations or conditions leave the question unresolved.
-For each missing result, recover the relevant practitioner, qualified Method and deciding authority.
+For each missing result, identify its supplier and a method qualified for this case. When a decision is needed, identify who may make it.
 An omission blocks only the dependent claim or action, not every independent engineering move.

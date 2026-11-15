@@ -5,15 +5,15 @@
 
 ### CB.7:1 - Problem frame
 
-Use this pattern when useful participation depends on one organiser, when capable organisers cannot attend to several emerging needs at once, when a local group needs people who can sustain its work, or when an invitation through the most visible members fails to reach the people concerned. A founder still receives every request. A willing host has a title but cannot obtain a room or help with a difficult meeting. A quiet practitioner is the person others actually trust to explain a change.
+Use this pattern when useful participation depends on one organiser, when capable organisers cannot attend to several emerging needs at once, when a local group needs people who can sustain its work, or when an invitation through the most visible members fails to reach the people concerned. A founder still receives every request. A willing host has a title but cannot obtain a room or help with a difficult meeting. A quiet practitioner is the person others trust to explain a change.
 
-The governed work is organising participation through capable, willing people and usable relationships. It includes finding those people, preparing a bounded contribution, enabling temporary groups of participants to support the activity, and arranging continuation or handover. Some organisers hold formal positions; others help without one. The source and scope of any authority to decide for others must be established separately.
+The governed work is organising participation through capable, willing participants and usable relationships. It includes finding those participants, preparing a bounded contribution, enabling temporary groups of participants to support the activity, and arranging continuation or handover. Some organisers hold formal positions; others help without one. The source and scope of any authority to decide for others must be established separately.
 
-**First useful result:** a willing person or temporary participant group can perform an agreed organising contribution at the next relevant occasion, with the access, preparation, time, help and decision boundaries it requires. Where continuity matters, another feasible performer or an honest reduced promise is also available.
+**First useful result:** a willing organiser or temporary participant group can perform an agreed organising contribution at the next relevant occasion, with the access, preparation, time, help and decision boundaries it requires. Where continuity matters, another feasible performer or an honest reduced promise is also available.
 
 Start with the useful activity and the contribution currently missing. A general ambition to "develop leaders" is insufficient to choose whom to involve or what to teach. CB.5 can identify the receiving contribution; LDR.1 develops the explanation, working conversation or preparation that enables it.
 
-**Ordinary non-use:** a stable small exchange already has sufficient willing support and a workable absence arrangement. Continue it without creating a leadership programme. If the intended result is wider use of a practice among independent people, CB.1 may instead select an explanation or learning provision. Shared decision rights that are absent or contested require CB.13; assigning more organisers alone will not establish them.
+**Ordinary non-use:** a stable small exchange already has sufficient willing support and a workable absence arrangement. Continue it without creating a leadership programme. If the intended result is wider use of a practice among independent practitioners, CB.1 may instead select an explanation or learning provision. Shared decision rights that are absent or contested require CB.13; assigning more organisers alone will not establish them.
 
 ### CB.7:2 - Problem
 
@@ -39,7 +39,7 @@ The practical problem is to obtain the needed contribution and its continuation 
 
 ### CB.7:4 - Solution
 
-Construct the next organising contribution around the people who can actually supply and receive it. Investigate relationships only far enough to choose a useful action; prepare performance around a representative episode; then arrange a sustainable next occasion.
+Construct the next organising contribution around those who can supply and receive it. Investigate relationships only far enough to choose a useful action; prepare performance around a representative episode; then arrange a sustainable next occasion.
 
 #### CB.7:4.1 - Name the contribution and the failure it should remedy
 
@@ -66,7 +66,7 @@ Use the inquiry to choose an action:
 | A group already obtains reliable help from a willing local practitioner. | Ask whether that person wants a bounded organising contribution and what support it needs. |
 | Two groups have useful knowledge but no workable exchange. | With their agreement, obtain an introduction or a joint case through CB.2 or CB.5, according to the contribution needed. |
 | The central organiser hears only one group's account. | Obtain the missing group's own account before adapting the offer. |
-| Several people rely on one overburdened intermediary. | Reduce the promise, prepare another contributor or provide an additional route that participants can actually use. |
+| Several people rely on one overburdened intermediary. | Reduce the promise, prepare another contributor or provide an additional route that participants can use. |
 | People understand the proposal but find the practice unsuitable. | Return the substantive problem to its owner; changing the messenger will not repair the practice. |
 
 With a willing participant who understands the receiving group's work, prepare the explanation of the proposed change. Start from a familiar case: what could people do differently, what useful result is expected, and which conditions or commitments would change? Use language and examples the recipients can inspect. Return a substantive objection to the person who can change the practice or offer.
@@ -91,12 +91,12 @@ Recognise the contribution through CB.6 in a form the person values. Distinguish
 
 #### CB.7:4.4 - Prepare the first episode and make support obtainable
 
-Use LDR.1's brief, practice and debrief around the actual next contribution. Explain the purpose and demonstrate the difficult part where that helps. Let the new organiser explain their own next actions and practise a representative difficulty. Return concrete feedback; if a capability must be learned or assessed, obtain the corresponding HCD contribution.
+Use LDR.1's brief, practice and debrief around the next contribution. Explain the purpose and demonstrate the difficult part where that helps. Let the new organiser explain their own next actions and practise a representative difficulty. Return concrete feedback; if a person needs to develop or demonstrate a capability, obtain the corresponding HCD contribution.
 
 Make the working guidance useful at the point of action. A local host may need a room contact, an accessible invitation example, the session's purpose and shape, and a response to an interruption. Put a frequent action near its cue and a consequential exception near the decision it changes.
 
 
-Obtain the actual conditions: permission and access, material, time, a person who will answer a difficult question and a feasible response window. A name in a contact list is insufficient if that person is unavailable. Agree what the organiser should pause or reduce while help is absent.
+Arrange the conditions the work needs: permission and access, material, time, help with difficult questions and a feasible response window. Check that the promised help is available when the organiser needs it. Agree what the organiser should pause or reduce while help is absent.
 
 Arrange peer support where organisers have recurring related problems. Use a feasible rhythm for exchanging cases and working examples that help with the next contribution. Keep sensitive incidents within the agreed handling route.
 
@@ -104,7 +104,7 @@ After the first episode, inspect the receiving result and the organiser's work. 
 
 #### CB.7:4.5 - Give local organisers usable freedom
 
-For a local group or chapter, agree which shared commitments it carries and which choices it can make locally. Common commitments might concern a promised service, use of a shared name, access to a shared resource or a rule for reporting incidents. Local choice might concern timing, examples or a meeting format. Select these boundaries from the actual common work.
+For a local group or chapter, agree which shared commitments it carries and which choices it can make locally. Common commitments might concern a promised service, use of a shared name, access to a shared resource or a rule for reporting incidents. Local choice might concern timing, examples or a meeting format. Select these boundaries from the work the participants share.
 
 Give each retained central decision a reachable decision-maker and a response time compatible with local work. Give local decisions the means to take effect. An organiser who may choose a meeting time but cannot obtain the venue does not yet have a usable arrangement.
 
@@ -116,11 +116,11 @@ Let local observations change the shared offer where warranted. Ask organisers w
 
 Review the next contribution while there is still time to change it. Check willingness, effort and support as well as completion. If work repeatedly exceeds the accepted commitment, reduce the activity, obtain more provision or change the arrangement with its recipient.
 
-Prepare a successor through real work. Introduce the relevant people, transfer permitted working material and obtain their own access. Explain unresolved commitments and consequential exceptions. Agree when responsibility changes and tell the recipients whom to approach.
+Prepare a successor through real work. Introduce the relevant people, transfer the permitted working material and ensure the successor has the access the work needs. Explain unresolved commitments and consequential exceptions. Agree when responsibility changes and tell the recipients whom to approach.
 
-Where independence from the initiator matters, let another prepared person perform an episode without the initiator doing it for them. Preserve the domain assistance, accessibility support and decision routes that the work legitimately requires. Inspect what the new organiser obtained, where they still needed help and what prevented completion.
+Where independence from the initiator matters, let a prepared successor perform an episode without the initiator doing it for them. Preserve the domain assistance, accessibility support and decision routes that the work legitimately requires. Inspect what the new organiser obtained, where they still needed help and what prevented completion.
 
-A willing, capable organiser may continue under the applicable appointment arrangement; another role may need rotation to share learning or burden. An expiring mandate still needs its proper renewal. CB.13 supplies that decision, while this pattern prepares someone to perform the resulting contribution.
+A willing, capable organiser may continue under the applicable appointment arrangement; another role may need rotation to share learning or burden. Continuing to exercise powers beyond their expiry requires renewal under the applicable rule. CB.13 supplies that decision, while this pattern prepares someone to perform the resulting contribution.
 
 If no feasible successor or support can be obtained, inform participants of the reduced or ending offer. Settle outstanding commitments, provide a usable route for remaining questions and preserve material under its applicable permissions. A declared handover is complete only when the recipient can take up the agreed work; otherwise return the missing condition or end that promise explicitly.
 
@@ -193,12 +193,12 @@ Visible participation is easier to notice than quiet preparation, private help o
 For an ordinary next contribution, ask:
 
 - What useful result will participants receive, and which organising work is missing?
-- Why is the proposed person suitable and willing, and what preparation remains?
-- Are their authority, access, time and help actually sufficient for the next occasion?
+- Why is the proposed organiser suitable and willing, and what preparation, if any, is needed?
+- Are their authority, access, time and help sufficient for the next occasion?
 - Which choices are local, and where does an unresolved exception go?
 - What did a performed episode reveal about value, burden and needed support?
 - If a temporary participant group is used, can it confer, act within its scope and return a useful response before its assignment ends?
-- If continuation matters, can the next person perform the work, or has the promise been reduced honestly?
+- If continuation matters, can the successor perform the work, or has the promise been reduced honestly?
 
 A stronger claim about professional competence, influence or cultural continuation requires evidence appropriate to that claim. The ordinary result here is the obtained organising contribution and its supported next use.
 
@@ -225,7 +225,7 @@ Preparation and spare capacity cost effort. Relationship inquiry and shared work
 
 Organising is effective when someone can obtain the contributions that let others participate. Those contributions depend on specific relationships and conditions. Recovering them explains why a nominal replacement or a generic leadership course can fail.
 
-A representative episode links preparation to the receiving work. A later episode performed by another person tests the continuity actually claimed. Keeping authority and expertise separate makes it possible to distribute useful work without inventing powers or demanding that one organiser know everything. Temporary participant groups add a different contribution: several people notice, interpret and support an aspect of the activity together. Their return can change the next activity even when the host already knows how to facilitate it.
+A representative episode links preparation to the receiving work. A later episode performed by a successor tests the claimed continuity. Keeping authority and expertise separate makes it possible to distribute useful work without inventing powers or demanding that one organiser know everything. Temporary participant groups add a different contribution: several people notice, interpret and support an aspect of the activity together. Their return can change the next activity even when the host already knows how to facilitate it.
 
 ### CB.7:11 - SoTA-Echoing
 
@@ -251,7 +251,7 @@ Reopen the arrangement when a relied-on relationship, participant commitment, ac
 - **CB.4 and CB.5** supply the activity design and receiving contributions; **CB.6** supplies appropriate recognition. **CB.10** investigates the value a participant group observes; its findings and proposals can change the next CB.4 activity.
 - **CB.8** supplies usable participation rules and incident handling. **CB.13** establishes or repairs a missing shared decision mandate.
 - [OCE.2:4](../oce/24-oce-2---recover-current-organization-work-and-arrangement.md#oce24---solution) recovers actual work and relations. [LDR.1:4](../ldr/08-ldr-1---obtain-and-continue-the-leadership-contribution-need.md#ldr14---solution) develops the concrete enabling conversation, preparation and next episode.
-- [OCE.6](../oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md) supplies effective assignments and enabling relations when needed; [HCD](../../human-capability-engineering-dpf-suite/hcd/_index.md) supplies the specific learning or assessment contribution.
+- [OCE.6](../oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md) supplies effective assignments and enabling relations when needed; [HCD](../../human-capability-engineering-dpf-suite/hcd/_index.md) supplies the specific human learning or assessment contribution.
 - [ECO.7:4](../../eco/17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md#eco74---solution) supplies rules for an actually constrained shared resource or maintenance contribution.
 
 ### CB.7:End

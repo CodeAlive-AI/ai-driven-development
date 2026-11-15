@@ -6,7 +6,7 @@
 
 **Author:** Anatoly Levenchuk, with AI-assisted development and review
 
-Financial Domain Modeling helps a financial practitioner, business modeler or service designer establish whose financial position a model describes, what events can change it and how a service contributes to a participant's result. Its five methods connect parties, rights and obligations, contractual flows, actual effects and service use.
+Use Financial Domain Modeling to establish whose financial position a model describes, which events can change it or how a service contributes to a participant’s result. Its five methods connect parties and their rights or obligations with contractual flows, actual events and the use of a service.
 
 # Table of Contents
 
@@ -33,51 +33,51 @@ Financial Domain Modeling helps a financial practitioner, business modeler or se
 | --- | --- | --- | --- | --- |
 | 1 | [FDM.1 - Recover the Financial Position Behind a Record](09-fdm-1---recover-the-financial-position-behind-a-record.md) | Stable | Right, duty and record; score; loan position | A.2.8 and A.2.8.PER; FDM.2 for a disputed party. |
 | 2 | [FDM.2 - Choose Party and Group Boundaries for Financial Modeling](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) | Stable | Debtor; entity; fund; founder group; guarantee; usable cash | FDM.1 for positions; SIE.5–6 for identity and composition. |
-| 3 | [FDM.3 - Derive Events and Conditional Flows from Financial Contract Terms](11-fdm-3---derive-events-and-conditional-flows-from-financial-c.md) | Stable | Principal; accrued interest; payment allocation; calendar; guarantee trigger; conditional and actual flow | FDM.1–2 for terms and parties; actual effects use FDM.4. |
-| 4 | [FDM.4 - Establish What a Financial Action Changed](12-fdm-4---establish-what-a-financial-action-changed.md) | Stable | Approval; instruction; posting; payment; effect; residual obligation | FDM.1–3; applicable institutional rule and event evidence. |
+| 3 | [FDM.3 - Derive Events and Conditional Flows from Financial Contract Terms](11-fdm-3---derive-events-and-conditional-flows-from-financial-c.md) | Stable | Principal; accrued interest; payment allocation; calendar; guarantee trigger; conditional and actual flow | FDM.1–2 for terms and parties. Use FDM.4 to establish actual effects. |
+| 4 | [FDM.4 - Establish What a Financial Action Changed](12-fdm-4---establish-what-a-financial-action-changed.md) | Stable | Approval; instruction; posting; payment; effect; residual obligation | Relevant positions, parties and terms from FDM.1–3 or existing sources. Applicable institutional rules and evidence for the event in question. |
 | 5 | [FDM.5 - Trace a Financial Service to a Participant's Result](13-fdm-5---trace-a-financial-service-to-a-participant-s-result.md) | Stable | Score use; admission; financial benefit; service output | FDM.1–4 when financial meaning or effect is missing; relevant decision practice. |
 
 # Financial Domain Modeling Readme
 
 ## Practical entries
 
-The examples below show how the five methods connect a financial question to a usable answer. A service question may need a position or event model; a changed payment may require revising an earlier availability claim. Enter with the results already established and obtain only the missing contribution. Use the Table of Contents for a direct pattern question or a different application.
+Start with the financial question and the results already established. To explain what a service contributed, you may need an account of a position or event. A newly established payment may require revising an earlier claim about what funds were available. Use the Table of Contents to go directly to a method. The cases below show how to combine them.
 
-**FDM** is the reference code for this framework. In FDM.3:4.2, 3 identifies the pattern and 4.2 its section. You can ask an assisting agent to explain or apply the methods in the language of your work, without framework jargon. The cases use supplied terms and facts; actual arrangements require their applicable financial and institutional interpretation.
+**FDM** is the reference code for this framework. FDM.3:4.2 identifies section 4.2 of pattern 3. You can apply the methods yourself or ask an agent to model the case or explain it in the language of your work. The examples stipulate their terms and facts. For an actual arrangement, use the applicable financial and institutional interpretation.
 
 ### FDM-E1 — A score is presented as a financial benefit
 
 - **Situation:** A better score is reported as a benefit to a borrower, but the financial change is unclear.
 - **Question:** What did the service change for this participant, and what remains unresolved?
 - **First useful result or blocker:** A supported contribution to the participant's result, an unchanged financial outcome, or a missing term or event.
-- **Start with:** FDM.5 for the service's use, then the position and event methods needed to establish the claimed change.
-- **Stop or return:** Finish with the supported contribution. Return to the terms, event or outcome connection when its premise fails.
+- **Start with:** FDM.5 to examine how the service was used. Use a position or event method if the claimed change depends on a question still open.
+- **Stop or return:** Report the established contribution and any material limit. Reconsider a term, occurrence or link to the participant’s outcome when the conclusion depends on it.
 
-A scoring team has improved its output and wants to describe the benefit to a borrower. [FDM.5](13-fdm-5---trace-a-financial-service-to-a-participant-s-result.md) locates the decision that uses the score. If an established rule gives the same decision and terms for the old and new score, improved accuracy alone establishes no change in this borrower's financial outcome. That answer can finish the question. A different proposed benefit, such as less information-gathering effort, needs its own comparison.
+A scoring team improves the accuracy of its output and wants to explain the benefit to a borrower. Use [FDM.5](13-fdm-5---trace-a-financial-service-to-a-participant-s-result.md) to identify how the score affects the decision. If the applicable rule gives this borrower the same decision and terms at both scores, the gain in accuracy produces no difference through that route. That can answer the question. A claim that the borrower spent less time supplying information requires its own comparison.
 
-Suppose instead that an adequately authorized decision arrangement uses the score to change a lending decision. [FDM.1](09-fdm-1---recover-the-financial-position-behind-a-record.md) identifies the resulting rights and obligations under the supplied terms; [FDM.2](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) resolves a disputed lender or borrower identity if necessary. The score, agreement and usable funds answer different questions about the service. An actual agreement's formation conditions determine which duties exist before funding.
+Suppose an authorized decision maker uses the new score and changes a lending decision. Use [FDM.1](09-fdm-1---recover-the-financial-position-behind-a-record.md) to identify any rights and obligations created under the applicable terms. If the lender’s or borrower’s identity is disputed, use [FDM.2](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) to resolve it. The agreement’s formation conditions determine which duties already exist before funding. To establish whether the funds are usable, follow the funding event.
 
-The constructed loan supplies valid formation and terms under which successful funding of 100 creates a funded position with 105 due on day 30. [FDM.3](11-fdm-3---derive-events-and-conditional-flows-from-financial-c.md) derives the contractual flows for each party. [FDM.4](12-fdm-4---establish-what-a-financial-action-changed.md) determines what actually occurred and changed. If a payment of 60 is established, all 60 applies to the due amount, and no further interest or fees arise, 45 remains due. A record still showing 105 unpaid must be reconciled with that effect; the original contractual amount remains 105. If the evidence establishes only an instruction to pay 60, the reduction remains unresolved. Correct subtraction cannot settle whether payment occurred.
+In this example a valid agreement provides that successful funding of 100 creates a position with 105 due on day 30. Use [FDM.3](11-fdm-3---derive-events-and-conditional-flows-from-financial-c.md) to derive the contractual flows for each party and [FDM.4](12-fdm-4---establish-what-a-financial-action-changed.md) to determine what occurred and what it changed. Suppose 60 was paid and applied in full to the amount due, with no further interest or fees. The remaining obligation is 45. Reconcile a record showing 105 unpaid with that effect. The original contractual amount remains 105. If the evidence establishes only an instruction to pay 60, the payment and its effect remain open.
 
-FDM.5 uses these effect results to explain what the service supplied. Funding can make the agreed proceeds usable even if the equipment bought with them later fails to arrive. The contribution account then identifies the failed delivery step without erasing the funding result. Whether the financed work produces a later business benefit is a further question. A wider outcome claim can therefore be narrowed while the supported service contribution is retained.
+Use FDM.5 to explain what the financial service supplied. Funding may make the agreed proceeds usable even if the equipment bought with them never arrives. Report the funding and the failed delivery in their respective scopes. A later business benefit requires evidence that the financed work produced it.
 
-The return depends on the failure: ambiguous terms return to FDM.1 or FDM.3, a disputed occurrence to FDM.4, and an unsupported connection to the participant's result to FDM.5. An adequate existing answer can be reused at any of these points.
+For unclear terms, use FDM.1 or FDM.3. For a disputed occurrence, use FDM.4. For a gap between the service output and the participant’s result, use FDM.5. In each case, apply a sufficient existing result directly.
 
 ### FDM-E2 — A group's cash is used to justify one entity's payment
 
 - **Situation:** A group's cash balance is used to claim that one member can pay a debt.
 - **Question:** Which funds can this entity actually use by the due date?
-- **First useful result or blocker:** An availability and shortfall account for the entity, or an unresolved support condition or receipt.
+- **First useful result or blocker:** The resources available to the entity by the due date and any shortfall, or the particular support term or receipt that remains uncertain.
 - **Start with:** FDM.2 for the payment boundary, then FDM.1 and FDM.3 for support terms and FDM.4 for what occurred.
-- **Stop or return:** Finish when the payment question is answered; revise affected availability or support assumptions when an event or term changes.
+- **Stop or return:** Report what the entity could use by the due date. Revisit a conclusion about availability or support if a relevant event or term changes.
 
-X owes 100 on day 7 and has 20 of unrestricted cash available then, after all other receipts and obligations. Y holds 150, and the two entities share a founder. [FDM.2](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) distinguishes the founder-group view from X's payment question. Under these supplied facts, X has an 80 shortfall; adding the two balances does not make Y's funds available to X.
+X owes 100 on day 7 and has 20 of unrestricted cash available then, after all its other receipts and obligations. Y has 150. X and Y share a founder. Use [FDM.2](10-fdm-2---choose-party-and-group-boundaries-for-financial-mode.md) to distinguish exposure to the founder group from X’s ability to pay. On the supplied facts X is short of 80. Adding the two balances establishes no right or means for X to use Y’s cash.
 
-Now suppose a support arrangement requires Y to transfer 80 before day 7. FDM.1 establishes the relevant obligation and its parties; FDM.3 derives the conditions and timing that would make the support useful. If the arrangement instead guarantees payment only after X's failure and a valid demand, that is a different conditional route. It cannot be counted as an already available day-7 transfer. If the timing terms are insufficient, the model returns that unresolved condition.
+Suppose Y undertakes to transfer 80 to X before day 7. Use FDM.1 to establish the obligation and its parties and FDM.3 to derive the conditions and timing of the transfer. A guarantee payable to the creditor after X fails and a valid demand is made gives the creditor a conditional recovery route. Performance of that guarantee would pay the creditor. It would not give X cash to make the original day-7 payment. If the terms leave the timing of support open, report that limit.
 
-FDM.4 then examines the event that would make the funds usable. A support commitment, transfer permission or sent payment instruction does not establish timely receipt. Suppose a later, adequately established transfer makes 60 usable by X before day 7 and nothing else in the supplied cash account changes. X now has 80 available and a remaining shortfall of 20. This actual result updates FDM.2's payment account and any FDM.3 scenario that assumed full support. The earlier 80 commitment and the 60 performance remain distinct.
+Use FDM.4 to examine the event that would make the funds usable. A support commitment, transfer permission or sent payment instruction can precede receipt. Suppose Y transfers 60 under its support obligation and X can use it before day 7, with nothing else in the cash account changed. X now has 80 and is short of 20. Y has performed 60 of its commitment of 80. Update X’s payment account with the confirmed receipt. If the deadline is still ahead, receiving the remaining 20 in time remains a conditional scenario until its outcome is established. Revise any conclusion inconsistent with the established events.
 
-The model can finish with that availability answer, or with the unresolved event when receipt is unknown. The responsible financial practice uses it to compare financing or payment actions. For a different portfolio-risk question, common dependence on the founder may still make the group view useful even when transfer is unavailable. Preserving that view alongside the payment account avoids replacing one question's answer with another's aggregate.
+The question can end with the amount available or with a precise limit if receipt is unknown. When a financing or payment choice is needed, the responsible party can use that result to compare its options. For portfolio risk, common dependence on the founder may matter even when X cannot use Y’s funds. Keep the group exposure distinct from the cash available to X.
 
 ---
 

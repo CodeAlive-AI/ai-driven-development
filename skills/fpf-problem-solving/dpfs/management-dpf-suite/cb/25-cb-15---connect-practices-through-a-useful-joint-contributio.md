@@ -5,13 +5,13 @@
 
 ### CB.15:1 - Problem frame
 
-Use this pattern when a practical result depends on people from different communities understanding and using one another's contribution. A repair workshop and a reuse group repeatedly return incomplete referrals. Two professional groups use the same word for different decisions. Practitioners want to visit another site because its work may help with their own difficulty.
+Use this pattern when a practical result depends on participants from different communities understanding and using one another's contribution. A repair workshop and a reuse group repeatedly return incomplete referrals. Two professional groups use the same word for different decisions. Practitioners want to visit another site because its work may help with their own difficulty.
 
 The governed object is a bounded connection between practices: the useful joint work, its participants and conditions, and the return each side receives. This is one branch of building relations across communities. It can begin with a single exchange and end there; a durable partnership is a further choice.
 
-**First useful result:** the participants agree one useful question or task, each side's contribution, the permitted material and access, and how they will recognise a worthwhile return. A precise missing contribution or decision can also be the result.
+**First useful result:** the participants agree one useful question or task, each side's contribution, the permitted material and access, and how they will recognise a worthwhile return. If they cannot agree on useful work, identifying the missing contribution or decision can be the first result.
 
-**What changes in practice:** contact develops into work that each side can use. People can discover differences through a concrete case, correct a misunderstanding and choose a proportionate continuation.
+**What changes in practice:** contact develops into work that each side can use. Participants can discover differences through a concrete case, correct a misunderstanding and choose a proportionate continuation.
 
 A friendly introduction or shared event may already meet the purpose through CB.2 or CB.4. A sufficient published answer may need only source use through CB.5. Use this pattern when different practices must contribute to the result and the connection itself needs construction. A joint decision mandate belongs to CB.13; a collective external position belongs to CB.16.
 
@@ -36,13 +36,13 @@ The task is to discover a concrete contribution worth obtaining together, make i
 
 ### CB.15:4 - Solution
 
-Find a concrete problem whose answer needs both practices. Bring capable participants to a small useful action, make differences and permissions explicit at that action, then return the result to both sides before deciding whether to expand the relationship.
+Find a concrete problem whose answer needs both practices. Arrange a small joint task with participants who can do it. Establish the differences that matter to the task and obtain any permission it needs. Carry out the task and return the result to both sides before deciding whether to expand the relationship.
 
 #### CB.15:4.1 - Locate the difficulty where the practices meet
 
 Start with an actual request, referral, shared material, decision or outcome. Ask each side what it was trying to achieve, what it needed from the other, what it supplied and what happened. Recover a case where the connection worked as well as the difficulty when that contrast could change the explanation.
 
-Let practitioners describe their own work and constraints. An organiser's account can identify a lead, but someone who performs or receives the contribution may expose a different problem. Use CB.1 and OCE.2 when the relevant people, affected interests or actual relations are still unknown.
+Let practitioners describe their own work and constraints. An organiser's account can identify a lead, but someone who performs or receives the contribution may expose a different problem. Use CB.1 and OCE.2 when the relevant participants, affected interests or working relations are still unknown.
 
 State the common question in terms both sides can test against their work. They need not agree on every explanation. “Make a referral that the receiving workshop can accept or return with a specific reason” gives the groups a joint subject while allowing disagreement about their wider priorities.
 
@@ -54,7 +54,7 @@ Look for an action that is feasible with limited preparation and useful even if 
 
 | Needed result | Possible form | What must come back |
 | --- | --- | --- |
-| An answer to a bounded question. | Consultation or case discussion with qualified contributors. | An answer, applicability limit or precise missing inquiry for its receiver. |
+| An answer to a bounded question. | Consultation or case discussion with qualified contributors. | An answer, applicability limit or question the recipient still needs answered. |
 | A concrete understanding of how another practice works. | A prepared visit, demonstration or learning expedition. | An account of the observed work and conditions, with what the visitor could try or still needs. |
 | A working connection between recurring contributions. | A trial of one handover or jointly produced item. | The received result and an identified correction or condition for repeat use. |
 | A larger new contribution. | A bounded joint project. | The agreed product and its use conditions; CB.14 governs a shared repertoire contribution. |
@@ -66,13 +66,13 @@ Ask both sides to refine the first task. Keep it small enough for their actual c
 
 #### CB.15:4.3 - Obtain participants, access and the working agreement
 
-Invite people who can supply the required experience or result. Distinguish the practitioner who explains the work, the facilitator who helps the exchange and the owner who can change an arrangement. LDR.1 supplies the working conversation; OCE.6 supplies a needed assignment or enabling relation.
+Invite participants who can supply the required experience or result. Distinguish the practitioner who explains the work, the facilitator who helps the exchange and the owner who can change an arrangement. LDR.1 supplies the working conversation; OCE.6 supplies a needed assignment or enabling relation.
 
 Agree the question, preparations, time, location or channel, usable material and expected return. State who may see, retain or reuse the material and what needs permission. If a confidential case is essential and cannot be shared, choose a permitted alternative or stop that part of the exchange.
 
 For a visit, obtain a local practitioner who can reveal the important work and answer questions about decisions. Arrange access to relevant activity, people and context. A room of general presentations can explain the organisation while leaving the intended practice unseen.
 
-For an online visit, choose the work that can actually be shown through that medium. A guided screen demonstration and questions may reveal a sequence well; an aspect requiring physical observation remains outside the result. Distinguish live work, a reconstructed demonstration and an illustrative case when interpreting what was seen.
+For an online visit, choose the work that can be shown through that medium. A guided screen demonstration and questions may reveal a sequence well; an aspect requiring physical observation remains outside the result. Distinguish live work, a reconstructed demonstration and an illustrative case when interpreting what was seen.
 
 Keep the commitment and authority bounded. Participants may offer their own time but need an employer's permission for protected work time or data. A person who attends on behalf of a group needs the scope of that representation. If the first action needs no collective commitment, willing individuals can agree it within their own authority.
 
@@ -86,7 +86,7 @@ When a recurring comparison or translation depends on an exact relation between 
 
 Use the difference to change the joint action. Revise the question, add necessary context, obtain an unavailable contributor or keep two outputs for different recipients. Let each side recover the revised arrangement in its own words and apply it to the case.
 
-Separate a misunderstanding from a substantive conflict. One group may understand a request precisely and still be unable to fulfil it because of cost, priorities or professional obligations. [LDR.2](../ldr/09-ldr-2---agree-feasible-joint-contributions.md) helps make those conflicting contributions and choices explicit; the actual owner decides what can change.
+Separate a misunderstanding from a substantive conflict. One group may understand a request precisely and still be unable to fulfil it because of cost, priorities or professional obligations. [LDR.2](../ldr/09-ldr-2---agree-feasible-joint-contributions.md) helps make those conflicting contributions and choices explicit; the owner with authority over the disputed matter decides what can change.
 
 #### CB.15:4.5 - Perform the action and inspect what each side receives
 
@@ -94,15 +94,15 @@ Brief the participants on the intended result and conditions, then do the select
 
 Give each side a chance to correct the other's account. A participant may have understood the visible sequence while missing an input supplied elsewhere. Recover that dependency before proposing to use the approach in a new setting.
 
-Inspect the receiving result. Can the next person act on the referral? Did the consultation answer the question? Can the visitor explain the observed practice and identify what their own situation lacks? Ask what remains uncertain and what additional work would resolve it.
+Check what the recipient can do with the result. Can the recipient act on the referral? Did the consultation answer the question? Can the visitor explain the observed practice and identify what their own situation lacks? If uncertainty matters to the intended use, ask what would resolve it.
 
-Do not turn one observation into an unearned competence or effectiveness conclusion. A visitor may understand a practice without being able to perform it. HCD can supply the needed preparation, while A.3.1.FT can qualify a method's fit or transfer. Keep that further result separate from the successful visit.
+Do not turn one observation into an unearned competence or effectiveness conclusion. A visitor may understand a practice without being able to perform it. HCD can supply preparation when a person needs to learn the practice, while A.3.1.FT can qualify a method's fit or transfer. Keep that further result separate from the successful visit.
 
 When the action fails, return the failure to the relevant part of the arrangement. Repair an unclear request, obtain a missing decision or stop the unworkable promise. Use CB.8 if conduct prevents the exchange; a legitimate difference in professional judgement belongs to the subject question.
 
 #### CB.15:4.6 - Return the contribution to both practices
 
-Give the result to the people who need it on each side. Explain what was obtained, the conditions on which it depends and the next use or unresolved question. Check that the participants may share the intended account; protect material whose permission was limited to the encounter.
+Give the result to its intended recipients on both sides. Explain what was obtained, the conditions on which it depends and the next use or unresolved question. Check that the participants may share the intended account; protect material whose permission was limited to the encounter.
 
 For a new shared instruction or practice contribution, use CB.14 to obtain qualification and maintenance. For a local adaptation, give the receiving owner the relevant observation and conditions. A helpful encounter may finish with one person changing a request and no new joint resource.
 
@@ -114,7 +114,7 @@ Make the next contact usable when continued exchange is wanted: who can answer w
 
 Compare the received value and burden with the reason for the exchange. The possible result is to stop after the useful episode, repeat a narrow action, revise the arrangement or establish a larger project. Make the choice with the participants and the owners of the additional commitments.
 
-Use a joint project when sustained interdependent work is now worthwhile. Obtain its result, resource provision, assignments, intermediate returns and receiving decision. Use CB.13 for a common decision arrangement and OCE.11 when participants must protect continuing work while contributing.
+Use a joint project when sustained interdependent work is now worthwhile. Agree the result the project will supply, obtain the resources and assignments, and arrange intermediate returns and the decision on the result. Use CB.13 for a common decision arrangement and OCE.11 when participants must protect continuing work while contributing.
 
 Preserve each group's useful independence. A recurring referral, reciprocal visit or shared resource can connect practices without merging their membership or governance. If a common body is needed, name the decisions it must make and construct that mandate explicitly.
 
@@ -158,7 +158,7 @@ An organiser asks a neighbouring club how to make its registration instructions 
 
 ### CB.15:6 - Bias-Annotation
 
-Organisers may invite prestigious or familiar groups while missing the people who perform the relevant work. A host can also present only favourable conditions, and visitors can mistake a polished demonstration for ordinary practice. Ask for the specific work and meaningful contrasts, retain limits on access, and allow the group with less power to decline or renegotiate the proposed contribution.
+Organisers may invite prestigious or familiar groups while overlooking those who perform the relevant work. A host can also present only favourable conditions, and visitors can mistake a polished demonstration for ordinary practice. Ask for the specific work and meaningful contrasts, retain limits on access, and allow the group with less power to decline or renegotiate the proposed contribution.
 
 ### CB.15:7 - Conformance Checklist
 
@@ -180,7 +180,7 @@ An unexplained referral failure or a promising contrast is enough to recognise t
 | --- | --- |
 | Begin with a broad partnership agreement while the shared work is unclear. | Find one contribution both sides can use and try it under a small commitment. |
 | Use a common word as evidence of common practice. | Compare its meaning and consequence in each side's actual case. |
-| Resolve a resource conflict by rewriting terminology. | Return the real allocation or commitment question to its owner. |
+| Resolve a resource conflict by rewriting terminology. | Return the allocation or commitment question to its owner. |
 | Fill a visit with presentations that could happen anywhere. | Arrange practitioner-guided access to the work and questions that need situated observation. |
 | Treat visiting or understanding as being qualified to perform. | Obtain the separate learning, fit or professional result needed for later use. |
 | Expand a successful pilot on the same unexamined volunteer effort. | Obtain provision for the new demand before promising the expanded service. |
@@ -194,31 +194,31 @@ Preparation, access and interpretation take effort. Some connections remain inap
 
 ### CB.15:10 - Rationale
 
-A small joint task gives differences a working consequence. People can ask why an action occurred, discover a missing dependency and judge whether a change helps their receiving work. This makes mutual understanding actionable without requiring complete agreement in advance.
+A small joint task gives differences a working consequence. Participants can ask why an action occurred, discover a missing dependency and judge whether a change helps their receiving work. This makes mutual understanding actionable without requiring complete agreement in advance.
 
 Returning the result to both sides prevents the encounter from becoming an isolated experience for its attendees. Separating that return from further commitment lets the participants keep a useful narrow connection and obtain stronger governance or provision only when the work needs it.
 
 ### CB.15:11 - SoTA-Echoing
 
-The practice question is how to obtain a useful contribution across communities whose meanings, interests and working conditions differ. The selected line begins with a small joint task and practitioner access, then uses its received result to choose continuation. General networking remains useful for contact; it is insufficient when the result depends on understanding or combining actual work.
+The practice question is how to obtain a useful contribution across communities whose meanings, interests and working conditions differ. The methods below start with a small joint task and access to the relevant practitioners. What each side receives helps them decide whether to continue. General networking remains useful for contact; it is insufficient when the result depends on understanding or combining actual work.
 
 | Source or developed treatment | Choice and effect in this pattern | Limit and accepted cost |
 | --- | --- | --- |
 | Etienne Wenger-Trayner, Beverly Wenger-Trayner, Phil Reid and Claude Bruderlein, *Communities of practice within and across organizations*, second edition (2023), pp.180–183. | **Adapt** useful initial activities, boundary projects and practitioner-guided visits in CB.15:4.1–CB.15:4.3 and CB.15:4.5. **Reject** substituting general host presentations for the work the visit needs to reveal. | The guide supplies practical constructions and experience, not a guaranteed trust or performance effect. Obtaining relevant access and returning the result adds preparation. |
-| LDR.1:4.2–LDR.1:4.4 and OCE.11:4. | **Adopt** capable participants, a working brief, handling a changed situation and explicit coexistence with continuing work. | Obtain the necessary authority and capacity from their actual owners. |
+| LDR.1:4.2–LDR.1:4.4 and OCE.11:4. | **Adopt** capable participants, a working brief, handling a changed situation and explicit coexistence with continuing work. | Obtain the necessary authority and capacity from those who can grant them. |
 | F.9:4 and A.3.1.FT:4. | **Adopt** separate local meanings and a bounded translation use when recurring semantic correspondence matters; use A.3.1.FT to qualify the fit or transfer of an observed method. | Formal semantic comparison is needed only for the claim that depends on it; it does not create the social connection or establish professional transfer. |
 
-The Guidebook contribution is an analytical adaptation with attribution to its authors, under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/); see the [source text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf). The constructed cases and supplier connections are this pattern's development.
+This pattern adapts work by the four Guidebook authors listed above under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/); see the [source text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf). The constructed cases and connections to other methods were developed for this pattern.
 
 Reopen the selected approach when the useful task cannot be made small enough, a changed practice defeats the translation, the exchange transfers unaccepted burden, or different evidence shows that the chosen form cannot supply the needed result.
 
 ### CB.15:12 - Relations
 
-- **CB.1 and CB.2** help find the relevant need and people; **CB.4 and CB.5** provide shared activity and a usable contribution when the cross-practice connection is already sufficient.
+- **CB.1 and CB.2** help identify the need and the participants; **CB.4 and CB.5** provide shared activity and a usable contribution when the cross-practice connection is already sufficient.
 - **CB.14** organises development and maintenance of a shared repertoire. **CB.13** supplies a common mandate; **CB.16** carries a collective external voice when needed.
 - [LDR.1:4.4](../ldr/08-ldr-1---obtain-and-continue-the-leadership-contribution-need.md#ldr144---perform-the-smallest-sufficient-working-conversation) supplies working conversations; [OCE.11:4](../oce/33-oce-11---coordinate-organization-change-work-with-continuing.md#oce114---solution) supplies coexistence with continuing commitments.
 - [FPF F.9:4](../../../sections/12-part-f---the-unification-suite-concept-sets-sensecells-and-system-role/13-f-9---relate-local-meanings-across-contexts.md#f94---solution) supplies exact semantic comparison and the separate bounded-use question. Its relation is distinct from the connection between the communities.
-- [FPF A.3.1.FT](../../../sections/05-part-a---kernel-architecture-cluster/26-a-3-1-ft---qualify-method-fit-and-transfer.md) supplies method fit and transfer; **HCD** supplies the learning needed for a later performance.
+- [FPF A.3.1.FT](../../../sections/05-part-a---kernel-architecture-cluster/26-a-3-1-ft---qualify-method-fit-and-transfer.md) supplies method fit and transfer; **HCD** supplies a learning contribution when a person needs to prepare for later performance.
 - **CB.8** addresses conduct that prevents the exchange; **CB.10** helps judge the relationship's value and **CB.11** helps decide its continuation.
 
 ### CB.15:End

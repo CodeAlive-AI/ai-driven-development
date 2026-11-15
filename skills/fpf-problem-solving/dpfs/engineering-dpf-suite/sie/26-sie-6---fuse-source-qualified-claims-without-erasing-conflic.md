@@ -10,9 +10,9 @@
 
 **Use this when** a receiving answer must combine claims from separately governed sources and a simple union, priority rule, average, overwrite, or “golden record” would hide differences in meaning, subject, time, authority, or uncertainty. The recognizable failure is one clean value whose provenance can be displayed but whose conflict or non-comparability can no longer be recovered.
 
-The primary EntityOfConcern is one source-qualified claim composition for a named receiving question. The first move is to state the exact source claims and the subject relation the receiving question requires. The first result is either a qualified view with explicit derivation or a conflict, non-comparability, or unresolved branch.
+For one receiving question, state the source claims and the subject relation it requires. The first result is either a qualified view with its derivation or a conflict, non-comparability or unresolved branch.
 
-The payoff is an answer the receiver can interpret without pretending that integration owns truth or preference. Do not use SIE.6 to decide domain truth, authoritative value, survivorship, risk acceptance, or action. A domain authority or receiving decision may consume the composition and choose; SIE preserves what that choice depends on.
+The receiver can interpret the answer and its grounds. Do not use SIE.6 to decide domain truth, authoritative value, survivorship, risk acceptance, or action. The authorized domain or receiving participant may use the composition to choose. Preserve the basis for that choice.
 
 ### SIE.6:2 - Problem
 
@@ -24,7 +24,7 @@ If composition silently collapses these differences, later validation can test o
 
 | Force | Tension |
 | --- | --- |
-| Simplicity | Receivers prefer one view, while a truthful answer may need several qualified rows or an explicit conflict. |
+| Simplicity | Receivers may prefer one view even when the source claims warrant several qualified rows or an explicit conflict. |
 | Authority | Some sources are authoritative for bounded claims, while no source may own the whole receiving question. |
 | Time | Newer claims may supersede older ones, while differing intervals, effectivity, or observation times can make them jointly informative. |
 | Identity | Composition needs a subject relation, while an unresolved identity premise must stop only the dependent branch. |
@@ -38,8 +38,8 @@ Compose claims only after their meanings, subjects, scopes, intervals, authority
 #### SIE.6:4.1 - Pattern-Use Unfolding
 
 1. **Name the receiving question and action.** State what the composed answer may change and which outcomes are acceptable: one qualified row, several rows, conflict, non-comparability, unresolved, or stop.
-2. **Bind exact source claims.** Reference `SIE.2` rows and `SIE.4` correspondences. Record each proposition or data-derived claim, scope, interval/effectivity, units, status, uncertainty, derivation, source, and authority.
-3. **Bind the subject relation needed by the use.** Reference `SIE.5` when composition depends on claims concerning the same entity. For separately attributed claims about clearly distinct subjects, preserve their subjects and attribution. Keep an explanation of unused identity only when it affects interpretation or later reliance. A correspondence alone does not establish subject identity.
+2. **Identify the source claims.** Reference `SIE.2` rows and `SIE.4` correspondences. Record each proposition or data-derived claim, scope, interval/effectivity, units, status, uncertainty, derivation, source, and authority.
+3. **Bind the subject relation needed by the use.** Reference `SIE.5` when composition depends on claims concerning the same entity. For separately attributed claims about distinct subjects, preserve their subjects and attribution. Keep an explanation of unused identity only when it affects interpretation or later reliance. A correspondence alone does not establish subject identity.
 4. **Test comparability.** Decide whether claims use compatible concepts, subjects, grains, units, intervals, and observation/decision roles. Preserve non-comparability as a result.
 5. **Classify the claim relation.** Distinguish compatible conjunction, refinement, overlap, duplication, supersession under a justified rule, contradiction, non-comparability, and unresolved relation.
 6. **Choose a bounded composition rule.** Examples include retaining all qualified claims, selecting one claim under an explicit domain authority/effectivity rule, deriving a new claim through a stated calculation, or returning conflict. State rejected alternatives and semantic loss.
@@ -52,17 +52,17 @@ Compose claims only after their meanings, subjects, scopes, intervals, authority
 | Composition position | Required content |
 | --- | --- |
 | receiving use | question, action changed, acceptable output branches |
-| source claims | exact propositions/data claims, meanings, subjects, scopes, intervals/effectivity, units, status, uncertainty, source and derivation |
+| source claims | propositions or data claims, meanings, subjects, scopes, intervals/effectivity, units, status, uncertainty, source and derivation |
 | identity premise | referenced `SIE.5` disposition when composition relies on identity; an explanation of unused identity only when it affects interpretation or later reliance |
 | comparability | compatible dimensions and any difference that prevents comparison |
 | claim relation | conjunction, refinement, overlap, duplicate, qualified supersession, contradiction, non-comparability, unresolved |
 | composition rule | rule, authority/evidence basis, conditions, rejected alternatives, semantic loss |
 | output | qualified view or explicit conflict/non-comparability/unresolved result, provenance/trace, permitted use |
-| downstream and reopen | mapping/interface references, failure branches, exact changes that reopen |
+| downstream and reopen | mapping/interface references, failure branches, changes that reopen the composition |
 
 #### SIE.6:4.3 - What Changes in Practice
 
-The team stops treating a canonical value as the natural output of integration. A receiver can see why claims were combined, retained separately, or stopped, and can return to the exact source, identity, authority, or rule that changes the answer.
+The team stops treating a canonical value as the natural output of integration. A receiver can see why claims were combined, retained separately, or stopped, and can return to the source, identity, authority, or rule that changes the answer.
 
 ### SIE.6:5 - Archetypal Grounding - Provider Availability Claims
 
@@ -78,13 +78,13 @@ The source inventory shows that `on hand` is current physical stock before reser
 | What if product identity is unresolved? | stop that product branch and expose the unresolved `SIE.5` premise |
 | What if one API times out? | return available source-qualified rows plus an incomplete-result flag if the contract permits; never substitute zero |
 
-The interface can return two qualified provider rows, explicit non-comparability for arithmetic aggregation, and a missing-source branch. Purchasing owns supplier choice and risk acceptance. SIE.6 supplies no canonical stock fact.
+The interface can return two qualified provider rows, explicit non-comparability for arithmetic aggregation, and a missing-source branch. Purchasing owns supplier choice and risk acceptance.
 
 ### SIE.6:6 - Bias-Annotation
 
 | Lens | Likely drift | Repair |
 | --- | --- | --- |
-| Governance | A source priority table silently decides truth or business action. | Name the authority and exact claim scope for every selection or supersession rule. |
+| Governance | A source priority table silently decides truth or business action. | Name the authority and claim scope for every selection or supersession rule. |
 | Architecture | The target schema requires one value and erases alternatives. | Change the output shape or expose conflict/non-comparability as first-class branches. |
 | Ontology/Epistemology | Data values, claims, facts, and decisions collapse. | Record propositions, scope, uncertainty, derivation, and receiver decision separately. |
 | Pragmatics | Every disagreement becomes an elaborate dispute. | Classify only relations that can change the receiving answer; retain independent claims without forced comparison. |
@@ -107,7 +107,7 @@ The interface can return two qualified provider rows, explicit non-comparability
 | Anti-pattern | Repair |
 | --- | --- |
 | Last write wins | State why time establishes supersession for this claim and interval; otherwise retain both. |
-| Trusted source always wins | Name the source's exact authority scope and preserve losing claims and conflict. |
+| Trusted source always wins | Name the scope of the source’s authority and preserve losing claims and conflict. |
 | Average the values | Establish compatible meaning, subject, unit, interval, and aggregation semantics first. |
 | Null means zero or absent | Preserve missing, unavailable, unknown, not applicable, and zero as distinct branches. |
 | Provenance after fusion | Keep source claims and derivation as inputs to the composition, not decoration on the result. |
@@ -121,7 +121,7 @@ The cost is richer output and explicit rule ownership. Some applications must ha
 
 ### SIE.6:10 - Rationale
 
-Claims are source- and scope-bearing assertions, not free-floating values. Composition is therefore a new derivation whose premises and authority must remain inspectable. Preserving the inputs is what makes conflict, correction, and changed-use replay possible.
+A source claim asserts something about a subject within a stated scope. Composition is a new derivation whose premises and authority must remain inspectable. Preserving the inputs is what makes conflict, correction, and changed-use replay possible.
 
 ### SIE.6:11 - SoTA-Echoing
 

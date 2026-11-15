@@ -5,24 +5,24 @@
 
 ### MKT.4:1 - Problem frame
 
-Use this pattern when a person or organisation is considering an offer but cannot yet compare it meaningfully, make an authorised choice, arrange the transition or complete acquisition under the stated conditions. Interest may be present while an operator, payer or access authority still needs a different answer.
+Use this pattern when a customer is considering an offer but cannot yet compare it meaningfully, make an authorised choice, arrange the transition or complete acquisition under the stated conditions. Interest may be present while an operator, payer or access authority still needs a different answer.
 
-The useful result is an understood and attainable next choice: acquire on known terms, try a bounded option, revise the proposal, defer with a meaningful return condition or decline. The result is useful when the relevant people can act on it; a completed purchase is one possible outcome.
+The useful result is an understood and attainable next choice: acquire on known terms, try a bounded option, revise the proposal, defer with a meaningful return condition or decline. The result is useful when the participants responsible for the next step can act on it; a completed purchase is one possible outcome.
 
-The intended reader can explain the offer and coordinate with the people responsible for supply and exchange. Start with a sufficiently qualified offer through [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) or an existing equivalent. If a routine understood purchase can proceed, use its ordinary route. An already completed acquisition whose use is failing belongs with the service, capability or operating practice responsible for the missing result.
+The intended reader can explain the offer and coordinate with the parties responsible for supply and exchange. Start with a sufficiently qualified offer through [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) or an existing equivalent. If a routine understood purchase can proceed, use its ordinary route. An already completed acquisition whose use is failing belongs with the service, capability or operating practice responsible for the missing result.
 
 ### MKT.4:2 - Problem
 
 A sales process can label someone as interested, qualified or ready while the actual decision remains blocked. More persuasion does not provide a missing budget, authority, access approval or feasible transition. Conversely, an unsuitable offer can be treated as though it merely needs less friction.
 
-Recover the live choices and what each requires. Help the relevant people understand and obtain a suitable option while keeping a meaningful refusal available. Change the proposal when the problem lies in what is offered.
+Recover the live choices and what each requires. Help the customer understand and obtain a suitable option while keeping a meaningful refusal available. Change the proposal when the problem lies in what is offered.
 
 ### MKT.4:3 - Forces
 
 | Tension | Practical consequence |
 | --- | --- |
 | A provider seeks acquisition; the customer has its own alternatives. | Judge whether the next choice is understood and suitable, not only whether it increases conversion. |
-| Different people can control use, payment and permission. | Recover the required contributions and actual authority without assuming one contact speaks for all. |
+| Responsibility for use, payment and permission can lie with different participants. | Recover the required contributions and the authority each participant holds without assuming one contact speaks for all. |
 | Reducing unnecessary effort helps action; some checks protect a real interest. | Remove a needless step only after identifying what it was meant to establish. |
 | A limited trial can reduce uncertainty; it creates obligations and work. | Bound its purpose, cost, data, support and end before it begins. |
 | An immediate decision can be valuable; readiness may depend on another event. | Supply a useful deferral or refusal instead of manufacturing urgency. |
@@ -45,7 +45,7 @@ Distinguish the following difficulties before proposing a remedy:
 
 | Observed difficulty | What to establish | Useful response |
 | --- | --- | --- |
-| The person cannot interpret the proposal. | What result, cost, required work or limit they currently infer. | Explain or repair the offer; return to MKT.2 if its content is inconsistent. |
+| The recipient cannot interpret the proposal. | What result, cost, required work or limit they currently infer. | Explain or repair the offer; return to MKT.2 if its content is inconsistent. |
 | The understood offer is unattractive or unsuitable. | Which result, alternative or burden makes it so. | Change the contribution or terms, offer another appropriate option, or accept refusal. |
 | Someone cannot make the required commitment. | The missing budget, authority, access or other contribution. | Obtain the competent participant's answer or retain a conditional hold. |
 | Transition disrupts valued current work. | What must be preserved, moved, learned or recovered on failure. | Construct a feasible transition with its responsible suppliers. |
@@ -57,7 +57,7 @@ These conditions can coexist. Resolve one without claiming that the others have 
 
 Put the live options on a comparable basis: the useful contribution, prerequisites, total relevant consideration, customer effort, timing, support and important exposure. Explain what changes if an option is declined or deferred. Do not count an unsupported future function as part of today's available alternative.
 
-Ask the relevant people to explain the option in their own situation: what they expect, what they must provide, what could fail and what choice they can actually make. Correct a consequential misunderstanding before relying on their next decision. A person may understand the offer and still prefer an alternative.
+Establish what the participants understand about the option in their own situation: what they expect to receive, what they must provide, what could fail and which choice they can make. In a conversation, ask them to explain it in their own words. Correct a consequential misunderstanding before relying on the decision. A customer can understand the offer and still prefer an alternative.
 
 Use [ECO.3](../../eco/13-eco-3---discover-an-exchange-between-different-plans.md) to construct who gives what to whom, when and under which conditions. Use [ECO.5](../../eco/15-eco-5---choose-exchange-terms-for-private-information-and-ef.md) for a consequential choice among terms such as a limited trial, staged consideration or supported warranty when information and later effort differ. Obtain a competent legal or other specialist result when the relied-on condition requires it. Marketing coordination does not create that authority.
 
@@ -73,7 +73,7 @@ Choose the work from what is missing:
 
 | Situation | Useful move and its result |
 | --- | --- |
-| A useful need has been established but is absent from the comparison. | Derive a criterion from that need: what would distinguish an adequate result, under which conditions, and how could the customer judge it? Confirm it with the affected people. |
+| A useful need has been established but is absent from the comparison. | Derive a criterion from that need: what would distinguish an adequate result, under which conditions, and how could the customer judge it? Confirm the criterion with the affected parties or their authorized representatives. |
 | An important criterion is understood and an option meets it. | Make its warranted importance and that option's fit inspectable. Carry the same meaning and evidence into the later decision; repetition of a product claim is insufficient. |
 | A potentially consequential difference receives little attention. | Find out whether it was never considered or deliberately set aside. Examine the relevant consequence and evidence. Restore its importance only if that changes a justified comparison; retain the customer's reason for setting it aside when that reason still holds. |
 | An important criterion is not met by the present offering. | Establish whether a different comparison or provision can meet the receiving need. Use the alternatives below; retain another provider, deferral and refusal as possible answers. |
@@ -86,7 +86,7 @@ For an important criterion the present offer does not meet, examine four differe
 | --- | --- | --- |
 | **Change relative importance** | Establish another actual consequence and let the customer compare its importance with the original one. For example, an available adequate service may matter more than an extra feature whose benefit would arrive too late. | The original consequence remains in the comparison. A preferred advantage cannot cancel a protected minimum. |
 | **Clarify or revise the criterion's meaning** | Recover the use behind the label. “Easy to use” might concern first setup, ordinary operation, correction or available support. Define the relevant distinction, make the evidence judgeable and return to its importance. | The new meaning needs the customer's grounds and agreement where it changes the comparison. Relabelling an unmet condition as a strength does not meet it. |
-| **Compare an acceptable trade-off** | Show which combinations are actually attainable and what each gives up. Compare the same consequences for the affected people; ask who can accept the sacrifice. | Do not invent a trade-off where another attainable option meets both needs. Incompatible protected conditions require changed provision or a stop. |
+| **Compare an acceptable trade-off** | Show which combinations are attainable and what each gives up. Compare the same consequences for the affected parties; ask who can accept the sacrifice. | Do not invent a trade-off where another attainable option meets both needs. Incompatible protected conditions require changed provision or a stop. |
 | **Change how the result is supplied** | Construct another configuration, supplier, sequence or support arrangement that could meet the need. For example, local stock with replenishment can change the relation between manufacturing lead time and availability. | Obtain the supplying practices' answer about the whole arrangement, including resources, responsibilities and operating conditions, before presenting it as available. |
 
 Often two moves are needed: clarifying “availability” can expose a provision problem; comparing a different configuration can reveal a permissible trade-off. Ask which move changes the next decision and carry its result into that decision. Stop when the available comparison is sufficient. Unresolved supply remains an explicit condition.
@@ -103,13 +103,13 @@ Keep distinct the outcome sought, the changes the representative may authorize, 
 
 Use known needs, available competing offers and the consequences of rejection to select a realistic opening and a working range of proposals. A hoped-for maximum may be implausible; the largest allowed concession need not be offered. Too ambitious an opening can make a useful proposal unworthy of further attention; an unnecessarily low one can consume room to meet a later consequential need. These are reasons to prepare, not a formula for discovering the other party's limit. Keep an uncertain expectation uncertain.
 
-Construct complete packages across issues when their values differ. The customer may prefer specialist installation or supported learning to a price reduction, while the provider may be able to supply that contribution for less than the revenue forgone through the discount. A smaller initial scope can offer another acceptable combination. Establish each party's comparison separately. Compare participation and actual provision through ECO.3/5. For each package, include the reciprocal contribution, timing, conditions and full support demand. Check concessions together: two individually affordable promises can consume the same scarce hours. Tie a conditional service to the condition it really needs, such as operation by prepared people; confirm that the customer can supply its part.
+Construct complete packages across issues when their values differ. The customer may prefer specialist installation or supported learning to a price reduction, while the provider may be able to supply that contribution for less than the revenue forgone through the discount. A smaller initial scope can offer another acceptable combination. Establish each party's comparison separately. Compare participation and actual provision through ECO.3/5. For each package, include the reciprocal contribution, timing, conditions and full support demand. Check concessions together: two individually affordable promises can consume the same scarce hours. Tie a conditional service to the condition it requires, such as operation by prepared people; confirm that the customer can supply its part.
 
 During the exchange, explain the proposal and inquire into the response. Show that a concern is understood without claiming agreement. Revise the part whose grounds have changed, then compare the whole revised package with the protected conditions and feasible alternatives. A new request outside discretion returns to the responsible owner; it is not a promise awaiting later approval. Pause, narrow, change counterparties or decline when no supported package is mutually acceptable.
 
 Use the size and timing of revisions deliberately, but do not treat smaller successive concessions as proof of anyone's true boundary. Avoid trading away a condition merely to keep the conversation moving. Record and resolve consequential ambiguities while they can still change the decision: per unit versus per order, help available versus help included, a target date versus a committed date.
 
-Return the understood proposed package to the people who can accept and supply it. Their commitments, the resulting contract or order and later performance are distinct results. Pass the agreed terms and remaining conditions to §§4.4–4.5. A material impossibility should be raised when discovered; waiting for a supposedly correct negotiating stage only increases wasted work.
+Return the understood proposed package to the parties who can accept and supply it. Their commitments, the resulting contract or order and later performance are distinct results. Pass the agreed terms and remaining conditions to §§4.4–4.5. A material impossibility should be raised when discovered; waiting for a supposedly correct negotiating stage only increases wasted work.
 
 #### MKT.4:4.4 - Construct the transition or bounded trial
 
@@ -119,7 +119,7 @@ Preserve valued current work until the selected change supports replacing it. Th
 
 For a trial, state the unresolved question, permitted work and data, responsible participants, resource limit, observation, end and next choice. The trial should be able to return an unfavourable or inconclusive answer. Agree any continuing obligations explicitly instead of treating participation as an indefinite commitment. If the required preparation or safe return cannot be supplied, revise the proposed trial or stop it.
 
-Use the actual supplying practices: engineering for a changed technical arrangement, Operations for executable work and capacity, OCE for organisational changes, HCD for needed human capability. Send each a bounded request such as “establish whether this permitted sample can be processed and inspected in the trial window”. Consume the returned condition in the choice. A promised later answer does not satisfy the current prerequisite.
+Use the supplying practices the trial needs: engineering for a changed technical arrangement, Operations for executable work and capacity, OCE for organisational changes, HCD for needed human capability. For a missing result, send the relevant supplier a bounded request such as “establish whether this permitted sample can be processed and inspected in the trial window”. Consume the returned condition in the choice. A promised later answer does not satisfy the current prerequisite.
 
 #### MKT.4:4.5 - Complete the selected action and pass on what was agreed
 
@@ -165,7 +165,7 @@ Operations returns a conditional stock-and-replenishment arrangement with the in
 
 In a constructed negotiation, a provider seeks €12,000 for a base implementation using twelve specialist hours. Its representative may offer the base down to €10,500, but the supplied economic comparison puts the acceptable lower boundary at €10,800 under the base conditions. The authorized minimum is therefore not the working lower boundary. The proposed customer use and available alternatives supply reasons to discuss the opening; they do not guarantee acceptance.
 
-The customer asks for operator training and data migration. Each takes six additional hours from the same specialist. Twenty hours are actually allocated for the whole implementation in the required window. Each addition fits alone at eighteen hours; both need twenty-four. A list of permitted concessions would conceal that incompatibility.
+The customer asks for operator training and data migration. Each takes six additional hours from the same specialist. Twenty hours are allocated for the whole implementation in the required window. Each addition fits alone at eighteen hours; both need twenty-four. A list of permitted concessions would conceal that incompatibility.
 
 The provider qualifies two complete packages: training with customer-supplied prepared data, or migration with an already qualified customer trainer. Price, economic acceptability, schedule and responsibilities are checked for each package; the base price boundary is not silently reused for changed work. The customer has no qualified trainer, but its data owner can supply the prepared data. The parties therefore compare the training package, priced at an accepted €11,400, with other suppliers and deferral. The customer authorizes that package and reserves operator time; the provider commits the eighteen hours. These are stipulated decisions, not an estimate of market willingness to pay.
 
@@ -190,7 +190,7 @@ A conversion target can encourage treating informed refusal as failure or hiding
 
 | Misuse | Repair |
 | --- | --- |
-| Interpret every delay as a need for more persuasion. | Identify the actual unanswered condition and its competent owner. |
+| Interpret every delay as a need for more persuasion. | Identify the unanswered condition and its competent owner. |
 | Make a trial easy to enter by hiding the work needed to use or end it. | Explain the preparation, support, end and next decision with the offer. |
 | Optimise a checkout while the offer promises an unavailable service. | Repair or reduce the proposal before improving acquisition. |
 | Require every customer to traverse every sales stage. | Use the live prerequisites and skip a question already answered sufficiently. |
@@ -203,13 +203,13 @@ The provider can distinguish a useful acquisition from mere progression through 
 
 Buying is work in its own right. Its result and prerequisites differ from performing the activity for which a product is acquired. This method therefore connects understanding, choice, commitment, transition and operational completion while permitting different orders and sufficient early stops.
 
-ECO.3/5 explain the exchange and its terms; the supplying practices establish their contributions. The marketing method keeps those results usable by the actual deciding people. It does not take over contracting authority, technical delivery or the customer's subsequent use.
+ECO.3/5 explain the exchange and its terms; the supplying practices establish their contributions. The marketing method keeps those results usable by whoever has the authority to choose. It does not take over contracting authority, technical delivery or the customer's subsequent use.
 
 ### MKT.4:11 - SoTA-Echoing
 
-For understanding a stalled choice, **adapt** the [Christensen Institute's current JTBD account](https://www.christenseninstitute.org/theory/jobs-to-be-done/): recover circumstances and transition rather than infer the decision from product attributes alone. This changes §§4.1–4.4. The serious lighter alternative is repairing a known operational obstacle directly; retain it when the obstacle is already established. Narrative inquiry costs more and is justified when the explanation could change the offer or transition. The source's case stories are not causal estimates of this method's effect. Reopen the explanation when contrasting choices defeat it.
+For understanding a stalled choice, **adapt** the [Christensen Institute's current JTBD account](https://www.christenseninstitute.org/theory/jobs-to-be-done/): recover circumstances and transition rather than infer the decision from product attributes alone. This changes §§4.1–4.4. A less costly alternative is repairing a known operational obstacle directly; retain it when the obstacle is already established. Narrative inquiry costs more and is justified when the explanation could change the offer or transition. The source's case stories are not causal estimates of this method's effect. Reopen the explanation when contrasting choices defeat it.
 
-For making a choice attainable, **adopt** ECO.3/5's developed comparisons of separate plans, terms and actual alternatives. Compared with treating every delay as friction, this adds explicit attention to contributions and protections that a step serves. The gain is a usable conditional choice; the cost is coordinating answers from people who may disagree or be unavailable. Legal validity of the proposed terms requires its own competent result.
+For making a choice attainable, **adopt** ECO.3/5's developed comparisons of separate plans, terms and actual alternatives. Compared with treating every delay as friction, this adds explicit attention to contributions and protections that a step serves. The gain is a usable conditional choice; the cost is coordinating answers from parties that may disagree or be unavailable. Legal validity of the proposed terms requires its own competent result.
 
 The criterion repertoire in §4.3.1 adapts Rackham's historical *Major Account Sales Strategy*, Chapters 4–5. It preserves the outer choice of criterion work and the four ways to address a crucial unmet criterion; it changes the author's commercial selection pressure by requiring the customer's relevant grounds and attainable provision. Compared with an unstructured list of product strengths, it explains which work a comparison needs. That preparation is unnecessary when the criteria and available choice are already sufficient.
 

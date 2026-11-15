@@ -95,7 +95,7 @@ An E.21 result evaluates one exact edition for one declared use. It does not val
 | `PatternQualityCharacteristicSpaceRef` | Reference to the exact A.19 `U.CharacteristicSpace` whose slots are the required E.21 coordinates and whose bindings use the E.21 ordinal scale. |
 | `PatternQualityEvaluationSpecRef` | Reference to this object-specific A.19.ECS evaluation-specification episteme: applicability, coordinate and scale meanings, evidence/missingness rules, calibration, result shape, local status meanings, and reopen conditions. |
 | `PatternOfConcernRef` | Authored FPF pattern edition or bounded version named by value as the checked object, with its host path or monolith section and edition, commit, hash, or other pinned version basis recoverable. `PatternOfConcern` is relation-relative: the same pattern can also be the concern in another use, review, or evaluation flow. The evaluated pattern also has its own primary `EntityOfConcern`: the subject that its Problem, Solution, or guidance is about. FPF patterns are applied to situations, claims, texts, or work objects. Say that a pattern defines, constrains, tests, or supplies a repair for a claim, relation, or boundary only where its content supplies that definition, constraint, test or repair; use `related pattern` for a looser pattern relation and `relation` only for the relation itself. |
-| `ClaimScope` | Quality claim boundary recovered from the governing frame: ordinary use, authoring input, landing input, release input, external-review input, high-assurance reuse input, canonization input, or another explicitly requested pattern-quality use. It is not chosen by the evaluator to make a failing request pass. |
+| `ClaimScope` | Cases in which the quality claims about the checked edition may be used. Recover the coverage required by the evaluation question, including any reader conditions, conditions of use or limits on the evidence that bound those claims. `IntendedUse` says what decision the evaluation will inform. |
 | `WorkingReaderScope` | Working-reader family, viewpoint, and first-use situation the pattern must serve. |
 | `IntendedUse` | Action that may use the result: continue drafting, admit for declared use, repair, refresh, or compare candidates. |
 | `QualificationWindow` | Edition, SoTA, related-pattern, release, time, or comparison window in which the evaluation is current. |
@@ -126,7 +126,7 @@ Names are local to pattern-quality evaluation unless `F.18` promotes a durable n
 ```text
 PatternQualityEvaluationConfiguration:
   PatternOfConcernRef: <exact authored FPF pattern edition or bounded version>
-  ClaimScope: <declared quality claim>
+  ClaimScope: <conditions under which the quality claims about this edition apply>
   WorkingReaderScope: <reader and first-use situation>
   IntendedUse: <what may consume the result>
   QualificationWindow: <edition, source, neighbour, release, or comparison window>
@@ -476,7 +476,7 @@ The final sentence is deliberately defective: an unrelated editorial revision wo
 **Configuration and evidence basis.**
 
 - `PatternOfConcernRef`: the complete quoted `EX.1@source-pin-1` edition.
-- `ClaimScope`: diagnostic rehearsal of E.21 on one small pattern; declared floor `3 sufficientlyExpressedForDeclaredUse` for this rehearsal only.
+- `ClaimScope`: first-use assessments of the quoted edition from its supplied text under the conditions of this rehearsal. The declared floor is `3 sufficientlyExpressedForDeclaredUse` for this rehearsal.
 - `WorkingReaderScope`: a new evaluator who has E.21 and the quoted text but no campaign history.
 - `IntendedUse`: learn whether this edition is coherent enough for the diagnostic rehearsal and identify the first repair; if EX.1 is later proposed for publication or ordinary authoring use, that receiving use requires its own admission decision.
 - `QualificationWindow`: until the quoted edition, E.21 scale, or named comparison evidence changes.

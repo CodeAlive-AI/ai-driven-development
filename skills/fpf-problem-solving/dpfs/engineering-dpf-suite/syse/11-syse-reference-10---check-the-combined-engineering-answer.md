@@ -22,22 +22,22 @@ a combination, ask the following questions about the intended decision.
   abandoned and unsupported practitioner attempts in `SYSE.25`'s task evidence. In the software profile,
   `SYSE.36` keeps platform and application users, task success and missing observations separate.
 - **What action does the evidence support and the relevant authority permit now?** Reuse the applicable `SYSE.4` and `SYSE.10`
-  evidence judgements and retain `SYSE.14`'s release boundary. Software artifact verification, actual runtime
+  evidence judgements and retain `SYSE.14`'s release boundary. Software artifact verification, observed runtime
   deployment, compatible data recovery and wider exposure need the distinct results in `SYSE.32`,
-  `SYSE.41`, `SYSE.34` and `SYSE.35` when that action depends on them. A physical path instead needs its
-  actual process, measurement, material disposition and production-acceptance results.
+  `SYSE.41`, `SYSE.34` and `SYSE.35` when that action depends on them. A physical path needs
+  the results of its process, measurement, material disposition and production acceptance.
 
 The whole-arrangement condition is visible in
 [APP-SYSE-06](80-syse-application-6---app-syse-06---worked-application-qualif.md).
 Its nominal 143 machining cycles do not establish delivery of 120 acceptable brackets: measurement,
-yield, rework, coating and transport still determine the end-to-end result. The supported interface can
+yield, rework, coating and transport determine the end-to-end result. The supported interface can
 nevertheless be improved while the production claim remains open. The software application likewise
 distinguishes a constructed supported path from its unresolved obtaining choice and application-exposure
-result. Each application returns the particular missing contribution rather than discarding every useful part.
+result. Each application returns the missing contribution rather than discarding every useful part.
 
 The examples foreground deliberate engineering projects with identifiable decisions and access to relevant
 observations. A sponsor's or provider's account may omit a future operator, an infrequent user or a System
-bearing harm. Missing access limits the conclusion; it does not make the omitted consequence harmless.
+bearing harm. If access is missing, limit the conclusion to the evidence available. An unobserved consequence may still cause harm.
 Software-practice sources also give more detail for software work than for physical production. Retain
 that difference when using a common Platform Method in another domain.
 

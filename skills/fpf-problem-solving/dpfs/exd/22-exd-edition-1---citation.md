@@ -1,3 +1,3 @@
 ## EXD.Edition:1 - Citation
 
-Anatoly Levenchuk. *Explanation Design Principles Framework*. Use the release date at the beginning of this file when citing this edition. Cite a particular Method by its EXD.1–EXD.6 address and title, together with this edition. The framework's [FPF publication repository](https://github.com/ailev/FPF) is the public discovery route.
+Anatoly Levenchuk. *Explanation Design Principles Framework*. Cite the edition date. For one method, add its EXD address and title. To identify the wording you used, give a permanent link to the file at the commit you used or to an accessible archived copy. The public framework is available through the [FPF publication repository](https://github.com/ailev/FPF).

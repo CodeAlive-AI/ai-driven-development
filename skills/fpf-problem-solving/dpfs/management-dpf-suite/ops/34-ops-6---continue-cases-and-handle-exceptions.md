@@ -11,7 +11,7 @@ The first useful result has one of two forms:
 
 > **Progression:** for case subject `S` in qualified state `Q` at configuration and horizon `H`, matching permission `P` and domain Method `M` support next Work `W` by responsible performer `R`, with stop or fallback `F` and expected evidence `E`; after independently supported performance, report the progressed state `Q'` and its evidence to the participant responsible for the next operating decision under return conditions `N`.
 >
-> **Blocker:** condition `K` is missing, stale, contradicted, unauthorized, unsafe, unsupported, or unavailable; owner or source `O` must supply the bounded result; safe fallback or stop is `F`; retry when `T` obtains.
+> **Blocker:** condition `K` is missing, stale, contradicted, unauthorized, unsafe, unsupported, or unavailable; the result needed from source `O` is specified; the safe fallback or stop is `F`; reconsider when `T` makes that useful.
 
 Recognition concerns a next action left uncertain by current case facts. Before action, assurance establishes the needed permission and performance conditions. After action, any progression claim needs performance evidence and support for the reported state.
 
@@ -22,8 +22,8 @@ Do not use OPS.6 to design one universal workflow or case lifecycle, reconstruct
 | Name used here | Meaning |
 | --- | --- |
 | case | One bounded continuing Work situation organized around an exact subject, state, commitments, evidence, authority, and permissible next Work. It is not its file, ticket, queue position, or every Work item within it. |
-| case subject | The patient, incident, user issue, release candidate, service relation, request, physical item, or other exact subject around which continuation is being coordinated. |
-| case-state claim | A qualified claim about the case subject and relevant relations at a stated time or horizon. It changes only from adequate evidence. |
+| case subject | The patient, incident, user issue, release candidate, service relation, request, physical item, or other identified subject around which continuation is being coordinated. |
+| case-state claim | A qualified claim about the case subject and relevant relations at a stated time or horizon. Revise it when warranted by new evidence, a corrected interpretation or a change in its conditions of use. |
 | exception | A fact or condition for which the standard continuation branch is absent, contradicted, no longer adequate, or requires bounded choice or return. It is not automatically an error or rare event. |
 | matching admission and permission | The applicable case admission and independently supported current permission for the same matter, effective conditions, configuration, and horizon. A valid `OPS.5` result may carry both; admission alone is not permission. |
 | deciding System | The System authorized to select or confirm the next permissible Work. It may differ from the responsible performer. |
@@ -40,7 +40,7 @@ Do not use OPS.6 to design one universal workflow or case lifecycle, reconstruct
 
 Continuing cases do not simply advance because a standard sequence exists. New observations, dependency failures, changed permissions, resource relations, specialist decisions, or unexpected outcomes can make yesterday's next action unsafe, impossible, or irrelevant. The operation still needs a bounded way to continue without replacing the applicable clinical, engineering, legal, safety, security, or other domain Method.
 
-The practical problem is to select the next permissible Work from the current situation and then admit progression only after performance and evidence, while returning exact blockers rather than fabricating a state transition.
+Select the next permissible Work from the current situation. Report what progressed only when the performed Work and its result are supported. When a prerequisite is missing, identify the condition that limits continuation.
 
 ### OPS.6:2 - Problem
 
@@ -66,17 +66,17 @@ The opposite failure treats every exception as improvisation. Practitioners bypa
 
 Name the exact case subject, current configuration and horizon, and the demand or commitment being served. Recover the applicable admission and the required current permission for the same matter and conditions. A valid `OPS.5` result may carry both; admission by itself does not establish permission. If the required permission is absent, expired, or contradicted, return that blocker to the authority or source that can resolve it; do not select Work or claim progression under a merely similar item, earlier approval, queue rank, or general mandate.
 
-#### OPS.6:4.2 - Refresh the action-changing situation
+#### OPS.6:4.2 - Establish the current conditions for continuation
 
-Recover the current qualified case state, applicable domain Method, obligations and operating commitments, action-changing evidence and its currentness, relevant permissions and authority, and the condition that made continuation uncertain. Follow only the reach that can change the next action; unaffected case claims remain reusable under their conditions.
+Recover the current qualified case state, applicable domain Method, obligations and operating commitments, the evidence for continuing and the conditions under which it is still current, relevant permissions and authority, and the condition that made continuation uncertain. Follow the claims that can change the next action, the conditions for relying on it or the conclusion the recipient needs. Reuse unaffected case claims within their established conditions.
 
 #### OPS.6:4.3 - Separate decision, performance, records, and state
 
-Name the deciding System, responsible performer, required permission or authority, available actions, actual Work to be performed, records used or changed, and the state claims the result may support. Do not infer one relation from another. If performer capability, assignment, access, permission, or authority is missing, return that exact condition.
+Name the deciding System, responsible performer, required permission or authority, available actions, Work proposed or selected for performance, records used or changed, and the state claims the result may support. Do not infer one relation from another. If performer capability, assignment, access, permission, or authority is missing, return that exact condition.
 
 #### OPS.6:4.4 - Use the least elaborate adequate steering branch
 
-Apply the direct mandatory branch when a current rule and facts determine the next permissible Work. Use recognition when one current situation clearly matches a governed action. Adapt within the applicable domain Method when a bounded variation is authorized. Use `C.11` only when several admissible live actions genuinely require comparison. Select a bounded probe only when its expected information can change the decision. If no permissible action exists, generate candidates through the owning practice or return the missing result instead of improvising an ungoverned action.
+Apply the direct mandatory branch when a current rule and facts determine the next permissible Work. Use recognition when one current situation clearly matches a governed action. Adapt within the applicable domain Method when a bounded variation is authorized. Use `C.11` only when several admissible live actions genuinely require comparison. Select a bounded probe when its expected result could improve the decision or its grounds enough to warrant the burden. When no permissible action is available, report the stop and its basis. Seek another candidate or a missing contribution through the relevant practice if it can give the recipient a useful continuation.
 
 #### OPS.6:4.5 - Specify the executable continuation contract
 
@@ -84,7 +84,7 @@ State the selected next Work, responsible performer, permission and effective co
 
 #### OPS.6:4.6 - Admit performance and update state separately
 
-After the Work, recover direct performance evidence, the changed subject or result, failures and limits, and the claim each observation supports. Update the case-state claim only when the relevant Work and resulting evidence are independently adequate. If Work did not occur or evidence is insufficient, retain only earlier claims whose support still holds and return the unmet condition. A contradicted or expired claim becomes unsupported or unknown; it is not restored merely because a new result is missing. Never use a record update, successful invocation, generated artifact, or selected action as automatic progression evidence.
+After the Work, recover direct performance evidence, the result, any change to the subject, and any failure or limit, and the claim each observation supports. Update the case-state claim only when the relevant Work and resulting evidence are independently adequate. If Work did not occur or evidence is insufficient, retain only earlier claims whose support still holds and return the unmet condition. A contradicted or expired claim becomes unsupported or unknown; it is not restored merely because a new result is missing. Never use a record update, successful invocation, generated artifact, or selected action as automatic progression evidence.
 
 #### OPS.6:4.7 - Return one usable result
 
@@ -107,19 +107,19 @@ The supplied observations are: E18 performed the comparison from 09:05 to 09:25;
 
 At 09:50 the field contact withdraws availability. The lead cannot start live verification under the earlier access assumption. The result becomes a returned access-and-permission condition, with the field owner as recipient and confirmed contact plus matching permission as the retry condition. Offline analysis of the already authorized capture remains allowed. The separate R42-T9 lab procedure, fixture check and performer are unaffected and remain in use; its result at 10:10 can support only its laboratory criterion. The operation does not erase the captured discrepancy or assert a current safe field state from the lack of a new report.
 
-The next participant receives the bounded diagnostic result, the live-verification blocker, still-permitted work and the next useful contact action. OPS.7 uses those facts for priority and promise decisions without treating the diagnostic return as authority to change either.
+The next participant receives the bounded diagnostic result, the live-verification blocker, still-permitted work and the next useful contact action. For a priority or promise decision, use those facts through OPS.7 and identify who has the authority for each proposed change to priority or the promise.
 
 #### OPS.6:5.2 - Public-hospital clinical case
 
 One admitted clinical case continues from the exact patient and clinical-case subjects, current observations, applicable clinical and operating Methods, authorized practitioners, bed and resource relations, service obligations, and current consent, privacy, safety, and statutory conditions. A qualified clinical System retains medical decisions.
 
-OPS.6 can state the next authorized clinical or operating Work, responsible performer, stop or fallback, and evidence needed before the case-state claim changes. Missing consent, clinical evidence, bed relation, competence, medical-safety return, or statutory permission remains an unmet condition, not an Operations workaround. A record closure, bed-board move, or elapsed wait does not establish treatment, patient change, or clinical resolution.
+Use the authorized clinical result and applicable operating criteria to identify the next permitted Work, its responsible performer, stop or fallback, and the evidence needed to update the case-state claim. Missing consent, clinical evidence, bed relation, competence, medical-safety return, or statutory permission remains an unmet condition, not an Operations workaround. A record closure, bed-board move, or elapsed wait does not establish treatment, patient change, or clinical resolution.
 
 #### OPS.6:5.3 - AI-assisted user issue
 
 An admitted user issue encounters a changed trace, tool result, provider condition, model input, candidate change, or harness state. The operation refreshes evidence and applies the software domain Method and current established authority. It distinguishes the human or other deciding System, the responsible performer, agent episode, tool invocation, candidate change, test evidence, issue record, and release decision.
 
-The continuation contract may authorize one bounded diagnostic, test, or repair Work with context and tool limits, stop, fallback, evidence expectation, and human return. Report issue or candidate progression only after performance evidence supports it. A successful episode, green local test, visible trace, automated loop, or generated patch does not by itself establish issue progression, an integrated change, software assurance, a security result, or release permission.
+The continuation contract may authorize one bounded diagnostic, test, or repair Work with context and tool limits, stop, fallback, expected evidence and the responsible recipient, including a human reviewer when the case requires one. Report issue or candidate progression only after performance evidence supports it. A successful episode, green local test, visible trace, automated loop, or generated patch does not by itself establish issue progression, an integrated change, software assurance, a security result, or release permission.
 
 ### OPS.6:6 - Bias-Annotation
 
@@ -130,7 +130,7 @@ The continuation contract may authorize one bounded diagnostic, test, or repair 
 | automation bias | A successful agent episode or model output is treated as progress. | Separate invocation, Work, artifact, evidence, integration, and case-state claims. |
 | plan-completion bias | Updating a plan or checklist appears to satisfy the obligation. | Name the actual Work, responsible performer, result, and evidence expected. |
 | stale-permission bias | Earlier permission is reused after conditions changed. | Match matter, conditions, configuration, horizon, and authority before selection. |
-| expert-shadowing bias | Operations quietly substitutes for clinical, safety, legal, or engineering judgement. | Return the bounded specialist result and keep the receiving coordination decision local. |
+| expert-shadowing bias | Operations quietly substitutes for clinical, safety, legal, or engineering judgement. | Use a qualified specialist result or ask its provider for the needed answer. Make the coordination decision within the operating authority. |
 | exception novelty bias | Every surprising event is treated as unprecedented improvisation. | Reuse the applicable domain Method and choose the least elaborate adequate branch. |
 
 ### OPS.6:7 - Conformance Checklist
@@ -138,7 +138,7 @@ The continuation contract may authorize one bounded diagnostic, test, or repair 
 - [ ] The exact case subject, configuration, horizon, and served demand or commitment are named.
 - [ ] The required current permission is supported for the same matter and conditions; admission alone is not treated as that permission.
 - [ ] Current case state, domain Method, obligations, commitments, evidence, and exception are recovered.
-- [ ] The authorized chooser and capable, assigned performer are identified; neither selection nor a record update is reported as performance or case change.
+- [ ] For Work selected to proceed, identify the authorized chooser and the capable, assigned performer. If either is missing, identify the condition that prevents action. Use evidence of performance and its effect for claims about them.
 - [ ] Direct mandatory or recognition branches are used when adequate.
 - [ ] `C.11` is used only when several admissible live actions genuinely require comparison.
 - [ ] The continuation contract names Work, performer, conditions, stop or fallback, expected evidence, refresh, and return.
@@ -162,7 +162,7 @@ The continuation contract may authorize one bounded diagnostic, test, or repair 
 
 The operation gains a defensible continuation move for exceptional and changing cases. Practitioners can tell what may happen next, who should perform it, what evidence will count, when to stop, and whether the case truly progressed or remains blocked.
 
-The cost is that visible motion no longer counts as progress by default. In some cases, the account cannot yet report progression while an unmet condition is returned.
+Checking performance and the subject’s state takes time and may require evidence from another participant. When that evidence is missing, the recipient can act on the specific limitation without mistaking a record change for progress.
 
 ### OPS.6:10 - Rationale
 
@@ -176,7 +176,7 @@ The decision is how to continue a case after new facts while reporting a defensi
 
 In I73, such an arrangement can authorize log inspection, execute a diagnostic activity and route a failed or unavailable live verification. If its case contract already states the capture identity, evidence interval, external subject claim and receiving authority, it produces the same adequate continuation as OPS.6. A second contract would only add synchronization work. The residual arises when an engine's successful diagnostic activity is used as evidence that the physical installation is now restored. Sections 4.5–4.7 bind the operation's observation to its warranted subject-state claim: the capture shows a discrepancy; present field condition remains unresolved. Loss of contact stops the dependent action without invalidating independent laboratory work.
 
-That addition costs the domain mapping from execution outcome to observation and subject claim, a check of current permission, and a return the next participant can use. It does not require a new case model or a probe whenever a direct procedure is sufficient. More detailed logging can delay a time-sensitive response; collect the evidence needed by the actual receiving decision, not every available event.
+That addition costs the domain mapping from execution outcome to observation and subject claim, a check of current permission, and a return the next participant can use. Use a sufficient direct procedure and its existing evidence. Additional logging is warranted when the receiving decision needs it and the cost or delay is acceptable within the applicable requirements.
 
 FPF `A.15.7` supplies situation-responsive steering and `C.11` the conditional comparison branch. DEMO helps distinguish production and coordination; software-runtime sources inform bounded automation and stopping. Their execution semantics, source-local roles and software evidence do not grant external domain authority. Reopen when the incumbent already preserves the same physical-subject and permission distinctions more cheaply, or changed evidence, permission or execution semantics defeats the current continuation.
 
@@ -185,7 +185,7 @@ FPF `A.15.7` supplies situation-responsive steering and `C.11` the conditional c
 - `OPS.5` supplies admission and may carry independently grounded start permission for the same matter and effective conditions.
 - `A.15.7` governs the general situation-responsive steering Method. `A.3.1.MR` separately governs candidate reusable Method recovery from several performances or other direct evidence.
 - `C.11` governs comparison only where several admissible live actions require choice. `A.10` governs evidence reliance; `A.15.8` governs the performance configuration or recovery dependency when that is current.
-- `OPS.7` may consume an evidenced progressed state or unmet condition only as evidence where it changes priority or an existing commitment. It does not inherit revision authority.
+- For an `OPS.7` decision, use the evidenced progression or unmet condition when it bears on a priority, commitment or the grounds for retaining either. Establish who can revise priority and who can revise the commitment when those decisions arise.
 - `OPS.8`–`OPS.13` retain wider queue, capacity, interacting-structure, and commitment-account questions.
 - Clinical, medical-safety, consent, privacy, legal, software assurance, security, release, provider, capability, and other specialist practices retain their decisions and evidence.
 - Practitioners may enter OPS.6 directly with matching valid permission for an admitted case, repeat it as facts change, stop at a blocker, or return to another current pattern.

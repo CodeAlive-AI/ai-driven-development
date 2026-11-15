@@ -7,9 +7,9 @@
 
 Use this pattern when a request such as “respond to AI”, “find a growth strategy”, or “develop the organization” leaves people working on different decisions. One person is thinking about the next product, another about the company's continuing ability to serve customers, and a third about this quarter's investment approval. The strategy practitioner helps them identify which direction or commitment is actually in question.
 
-Start by asking: **whose contribution could change, which decision can use our answer, and what answer is useful now?** Name the person or organization whose strategy is being considered, the horizon, the affected contribution and the person or body that can make the relevant choice. Distinguish that chooser from the team preparing the answer.
+Start with whose contribution could change, what strategic question or choice needs an answer and what would be useful now. Name the subject, horizon and affected contribution. For a choice, identify who is authorized to make it and who will prepare the answer.
 
-The first useful result is a bounded strategic question that the recipient can use to request a comparison, select an option or clarify a missing condition. A clear question can finish this work. The gain is that later analysis addresses the choice that matters instead of producing an impressive answer to a different one.
+The first useful result is a bounded strategic question that the recipient can use to request a comparison, select an option or clarify a missing condition. A clear question can finish this work. A useful frame identifies which consequence or choice any later analysis should address.
 
 Do not reopen the whole strategy frame when an existing frame is adequate and only one assumption has changed; use STR.2 for that impact. If the problem is a late service task within an already selected direction, first return it to the practice responsible for service delivery. It becomes a strategic question when resolving it may change the contribution, direction or commitments being pursued.
 
@@ -31,37 +31,37 @@ The difficulty is to choose a boundary wide enough to preserve consequential rel
 
 ### STR.1:4 - Solution
 
-Form the smallest strategic question that preserves the contribution, choice and consequences on which the receiving decision depends. Treat the frame as revisable. Use a short conversation or paragraph when that is sufficient; a larger representation is useful only when different participants or later uses need to recover distinctions that a paragraph would lose.
+Frame the requested strategic question at the smallest scope that retains the contribution, consequences and any relevant choice. Treat the frame as revisable. Use a short conversation or paragraph when that is sufficient; a larger representation is useful only when different participants or later uses need to recover distinctions that a paragraph would lose.
 
 #### STR.1:4.1 - Begin with the consequential change
 
-Ask what has become difficult, newly possible or no longer credible. Connect the concern to a result for somebody: continuing reliable inspection, entering a new customer relationship, sustaining access to a public service or protecting a person's livelihood while developing a new practice.
+Ask what has become difficult, newly possible or no longer credible. Connect the concern to a result for its beneficiary, such as continuing reliable inspection, entering a new customer relationship, sustaining access to a public service or protecting a person's livelihood while developing a new practice.
 
 Separate the observation from its interpretation. “Our inspection price has fallen” can be a supplied fact. “Therefore we should sell an integrated service” is already a proposed response. Preserve the fact while keeping more than one response available.
 
-Identify the kind of concern. An actual loss of the ability to serve a customer differs from a forecast of that loss or an opportunity to serve a different customer. An unresolved choice is not itself proof of a present failure. This distinction determines whether the next answer should address an existing difficulty, a possible future or a newly available contribution.
+Identify the kind of concern. An actual loss of the ability to serve a customer differs from a forecast of that loss or an opportunity to serve a different customer. Where the choice is unresolved, establish whether the difficulty is present or prospective. This distinction determines whether the next answer should address an existing difficulty, a possible future or a newly available contribution.
 
-Then ask what happens if the decision is not made now. A real deadline may arise from a contract, an expiring option or an impending allocation of scarce people. An annual planning date can be useful coordination, but it does not itself prove that every strategic assumption needs revision.
+When a choice is pending, identify the consequence of delaying it. A real deadline may arise from a contract, an expiring option or an impending allocation of scarce people. An annual planning date can be useful coordination, but it does not itself prove that every strategic assumption needs revision.
 
 #### STR.1:4.2 - Identify the developing subject and the affected contribution
 
-Name the actual organization, segment, partnership arrangement or person whose direction may change. If participants use the same word but it is unclear whether their accounts concern the same object, establish what each expression refers to, what identifies that object and what would count as its completion or change before treating their accounts as views of one subject. Resolve only the distinction that changes the choice. A product's design can change while the organization remains able to supply its existing service; conversely, an unchanged product may require a different organization capability.
+Identify the subject whose contribution or direction is in question. It may be a person, an organization or part of one, a partnership, or a product or platform whose provision may change. If participants use the same word but it is unclear whether their accounts concern the same object, establish what each expression refers to, what identifies that object and what would count as its completion or change before treating their accounts as views of one subject. Resolve the distinction when it affects the answer or the grounds for the choice. A product's design can change while the organization remains able to supply its existing service; conversely, an unchanged product may require a different organization capability.
 
 When considering a next-day repair service, the dispatcher may report a customer visit complete once the journey ends, while the customer needs the equipment restored. Before relying on that completion report, distinguish the journey from the repair and use the result the promised service requires.
 
-Distinguish that subject from the means and participants whose development it may need. A more changeable product may still wait months for organizational approval; a trained specialist may still lack access or support. Ask which contribution or working condition limits the proposed direction. The answer can be a small change to how existing work is supported, not replacement of the whole organization.
+Distinguish that subject from the means and participants whose development it may need. A more changeable product may still wait months for organizational approval; a trained specialist may still lack access or support. Ask which contribution or working condition limits the proposed direction. A small change in support for existing work may be sufficient.
 
-Inspect one level beyond the proposed boundary when a dependency could reverse the answer. Ask who supplies the capability, who receives the contribution and who bears the consequences. Include the relevant relationship without automatically making every supplier or customer part of the strategic subject.
+Inspect one level beyond the proposed boundary when a dependency could reverse the answer. Ask who supplies the capability, who receives the contribution and who bears the consequences. Include the relevant relationship and keep the strategic subject at the scope the question requires.
 
-Where System identity or its boundary is unresolved, FPF A.1.SCR supplies the System-question recovery. An organizational chart, a product name or a strategy document is not enough to settle that identity. When ordinary naming already identifies the subject unambiguously, proceed without a separate ontology exercise.
+Where System identity or its boundary is unresolved, FPF A.1.SCR supplies the System-question recovery. An organizational chart, a product name or a strategy document is not enough to settle that identity. When the subject is already unambiguous, continue with that identification.
 
 #### STR.1:4.3 - Distinguish the answer sought now from the later choice
 
-Ask the recipient which result would enable the next useful action. It may be a clarified frame, an account of changed assumptions, a set of feasible directions, a qualified comparison or a recommendation. Request an actual commitment only when it is needed.
+Use the brief, an existing decision or other available evidence to establish what result is needed now. For your own inquiry, state the question you need to answer. If the intended use remains unclear, refine your own inquiry or clarify the need with its recipient. State the unresolved use if it cannot yet be established. A clarified frame, an account of changed assumptions, feasible directions, a comparison or a recommendation can be sufficient. Seek a commitment from its decision holder when the task calls for one.
 
-Name who prepares the result and who can choose. A strategy team may compare service, licensing and exit while the Board retains the direction decision. The Board may control internal preparation but lack the customer agreement, data permission or financing needed for execution. Keep each limitation at the action it governs; missing trial permission need not prevent a comparison from being completed.
+Name who prepares the result and, when a choice is involved, who can make it. A strategy team may compare service, licensing and exit while the Board retains the direction decision. The Board may control internal preparation but lack the customer agreement, data permission or financing needed for execution. Keep each limitation at the action it governs; missing trial permission need not prevent a comparison from being completed.
 
-Reuse a sufficient decision-support engagement frame supplied through PSDA.11. STR.1 adds the strategic subject, contribution, direction and commitment horizon rather than repeating that engagement method. A distinct adviser relationship may also need PSDA.19 guidance on competence, confidentiality and retained choice.
+Reuse a sufficient decision-support engagement frame supplied through PSDA.11. STR.1 adds the strategic subject, contribution, direction and commitment horizon when the engagement also includes those strategic questions. A distinct adviser relationship may also need PSDA.19 guidance on competence, confidentiality and retained choice.
 
 #### STR.1:4.4 - Fix a useful horizon and boundary
 
@@ -69,13 +69,13 @@ State the horizon over which consequences will be compared and the point by whic
 
 Keep the relevant times in view together: current use, the change being prepared and development of the people or means needed for later changes. They need not occur in sequence. An organization can continue service while improving one enabling condition; the frame should expose the conflict when both require the same people.
 
-Include the current contribution that must continue during transition, relevant resource or exposure limits and serious exclusions. Give a reason for the exclusions. “This question concerns one segment because the remaining product lines have different contracts” is more useful than “out of scope” without explanation.
+Include the current contribution that must continue during transition, relevant resource or exposure limits and serious exclusions. Explain exclusions that affect how the answer can be used. “This question concerns one segment because the remaining product lines have different contracts” is more useful than “out of scope” without explanation.
 
 Do not settle a value conflict by hiding it in the boundary. If two participants disagree about whose service may be reduced, retain that disagreement for the comparison. If two plausible framings imply different beneficiaries or strategic responses, use STR.3. The current frame can state that unresolved distinction without claiming consensus.
 
 #### STR.1:4.5 - Return the bounded question and stop
 
-A usable frame lets the recipient answer five connected questions in ordinary language: whose strategy; which contribution and change; what answer is sought; for which horizon and receiving decision; and who can make the choice or supply a missing condition.
+A usable frame identifies whose strategy is at issue, which contribution or change matters, what answer is sought and for which horizon. Name the receiving decision and its holder when a choice is involved. If a condition is missing, identify who can supply it or what remains unknown.
 
 For a consequential engagement, also state the current protected contribution, the exclusion that could otherwise mislead a reader and the observation that would reopen the frame.
 
@@ -93,11 +93,11 @@ The resulting question is:
 
 > For SensorCo's affected inspection segment, what can we responsibly pursue and commit to over the next twelve months while sustaining current service? The StrategyTeam prepares the comparison for the Board. It considers device-only continuation, an integrated service, data licensing and segment exit. The Board retains the direction decision and can authorize only the resources and conduct within its established authority.
 
-This frame does not select the integrated service. It names the declining-price premise that STR.2 will examine and the alternatives that later work must compare. Current service and transition duties remain in the question. Data rights and financing are distinct possible conditions, not capabilities conferred by the frame.
+The frame names the declining-price premise that STR.2 will examine and the alternatives that later work must compare. Current service and transition duties remain in the question. Data rights and financing are distinct possible conditions, not capabilities conferred by the frame.
 
-The team also distinguishes three possible changes: the inspection offering, SensorCo's way of supplying and accepting service, and the specialists' ability to do that work. The certified platform is an existing means, not evidence that all three changes are feasible. Effective data access or incident cover might be the limiting condition. That possibility belongs in the question without turning the opening frame into a diagnosis or a training commission.
+The team also distinguishes three possible changes: the inspection offering, SensorCo's way of supplying and accepting service, and the specialists' ability to do that work. The certified platform is an existing means. Feasibility still depends on the conditions specific to the offering, the organization and the specialists. Effective data access or incident cover might be the limiting condition. That possibility belongs in the question without turning the opening frame into a diagnosis or a training commission.
 
-The opening question is now complete enough to begin the needed analysis. The eventual four-day preparation decision belongs to the later comparison and selection; importing it here as a foregone answer would bias the whole exercise.
+The opening question is now complete enough to begin the needed analysis. The team compares the options and recommends a course. The Board decides whether to authorize the four preparation days.
 
 #### STR.1:5.2 - A professional with eight available hours
 
@@ -110,21 +110,21 @@ The bounded question is whether to retain the current practice, replace a named 
 
 The person commissioning the work can make their preferred answer appear to be the question: “How do we launch the service?” may conceal a still-open choice about whether to launch. Ask what would make continuation or another direction reasonable before accepting that wording.
 
-Availability bias favours the subject that has a visible document or budget. Check one consequential relationship outside that convenient boundary. Equally, resist making every surrounding relationship part of the engagement merely because it exists.
+Availability bias favours the subject that has a visible document or budget. Check one consequential relationship outside that convenient boundary. Include that relationship if it affects the question or its proposed use.
 
 ### STR.1:7 - Conformance Checklist
 
 Use these questions when another participant must rely on the frame.
 
 - Can they identify the strategic subject and contribution, separately from other participants or means that may need development?
-- Does the proposed answer address a receiving decision and horizon, with a useful delivery time?
+- Does the proposed answer address the requested use and horizon, including the decision and delivery time where they matter?
 - Are preparation, recommendation and authorized choice distinguishable?
 - Is a consequential current obligation or affected party preserved rather than excluded by wording?
 - Does any unresolved value, authority or subject question appear as an explicit limitation?
-- Can the work end with the bounded frame, and is the next action tied to a named missing result?
+- Can the work finish with the bounded frame? If another action is needed, does it address a specific missing result?
 - Is the observation that would reopen the frame concrete enough to recognize?
 
-A frame need not answer the later comparison to pass these questions. It must make clear what comparison, if any, is actually needed.
+A completed frame identifies any comparison still needed.
 
 ### STR.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -136,23 +136,23 @@ A frame need not answer the later comparison to pass these questions. It must ma
 
 ### STR.1:9 - Consequences
 
-The practitioner can begin with an answer proportionate to the receiving decision. Participants can distinguish a disagreement about scope from a disagreement about alternatives, and later specialists receive a more precise question.
+The practitioner can begin with an answer proportionate to the current question or decision. Participants can distinguish a disagreement about scope from a disagreement about alternatives, and later specialists receive a more precise question.
 
-The frame remains an interpretation rather than an assurance of a good strategy. Its cost is a small amount of explicit boundary work and, in disputed cases, the effort to recover an affected participant or authority. Revisit it when a newly discovered relationship changes the available choice, not merely because more detail is available.
+A frame identifies the strategic question. Evidence about the available options and their consequences is a separate result. Framing costs the effort of defining the boundary and, in disputed cases, the effort to recover an affected participant or authority. Revisit it when a newly discovered relationship changes the available choice, not merely because more detail is available.
 
 ### STR.1:10 - Architectural Rationale
 
-A strategic direction connects a desired contribution to capabilities and commitments over time. The subject and receiving decision therefore have to remain visible together: identifying only an organization says too little about the question, while identifying only a decision can hide the contribution it is meant to sustain.
+A strategic direction connects a desired contribution to capabilities and commitments over time. The frame connects the subject to the requested answer and any decision it will inform: identifying only an organization says too little about the question, while identifying only a decision can hide the contribution it is meant to sustain.
 
 Framing is separate from uncertainty analysis because a clear question may already have sufficient evidence. It is separate from selection because the recipient may need advice without delegating choice. This division allows each result to be used directly and avoids making a whole planning cycle the price of one useful answer.
 
 ### STR.1:11 - SoTA-Echoing
 
-**How much framing should precede strategic analysis?** Adopt the receiving-use and choice-owner distinction in the Decision Design framework's PSDA.11, and adapt it to direction, contribution and commitment over a strategic horizon. A goal-led plan is a serious alternative when the goal, scope and authority are already settled: in that situation it is cheaper to proceed directly. Its defect here is treating a disputed goal or preferred initiative as agreed. Sections 4.1–4.4 therefore recover the question before expanding the analysis, but section 4.5 preserves the direct stop. PSDA.11 is reusable practice guidance, not empirical evidence that this particular SensorCo frame will succeed.
+**How much framing should precede strategic analysis?** Adopt the receiving-use and choice-owner distinction in the Decision Design framework's PSDA.11, and adapt it to direction, contribution and commitment over a strategic horizon. A goal-led plan is a serious alternative when the goal, scope and authority are already settled: in that situation it is cheaper to proceed directly. Its defect here is treating a disputed goal or preferred initiative as agreed. Sections 4.1–4.4 therefore recover the question before expanding the analysis, but section 4.5 preserves the direct stop. PSDA.11 supplies engagement guidance. The SensorCo application stipulates its conditions as teaching inputs.
 
-**Must goals be fixed before available means are considered?** Rapp, Olbrich and Packard's [2026 analysis of effectuation and judgment](https://doi.org/10.1007/s11846-025-00926-6) is a current conceptual rival to a rigid goal-first account. Adapt its requirement for judgment about means, goals and affordable loss: identify enough of the strategic subject and recipient to make that judgment possible, while allowing the next inquiry to change the goal. The explicit trade-off is a revisable boundary instead of a fully specified plan. The source does not establish a universally superior entrepreneurial method. Reopen this choice if the actual engagement can no longer produce a useful next answer without settling a wider purpose or participant question.
+**Must goals be fixed before available means are considered?** Rapp, Olbrich and Packard's [2026 analysis of effectuation and judgment](https://doi.org/10.1007/s11846-025-00926-6) is a current conceptual rival to a rigid goal-first account. Adapt its requirement for judgment about means, goals and affordable loss: identify enough of the strategic subject and recipient to make that judgment possible, while allowing the next inquiry to change the goal. The explicit trade-off is a revisable boundary instead of a fully specified plan. The source supplies a conceptual argument about judgement under uncertainty. Reopen this choice if the actual engagement can no longer produce a useful next answer without settling a wider purpose or participant question.
 
-**Why keep several developing subjects in view?** Using a system, creating it and examining how its creators work are different activities. The pattern connects continuous organization development with strategy: a product, an organization and a person's capability can require different changes and different evidence. Sections 4.2–4.4 use that distinction when it changes the frame. A product-only roadmap remains sufficient when surrounding capabilities and conditions are adequately supported; otherwise it can hide the actual constraint. The resulting frame identifies the needed contribution without claiming that one mechanism of learning develops every kind of system.
+**Why keep several developing subjects in view?** Using a system, creating it and examining how its creators work are different activities. The pattern connects continuous organization development with strategy: a product, an organization and a person's capability can require different changes and different evidence. Sections 4.2–4.4 use that distinction when it changes the frame. A product-only roadmap remains sufficient when surrounding capabilities and conditions are adequately supported; otherwise it can hide the actual constraint. The resulting frame identifies the needed contribution and which developing subject it concerns.
 
 ### STR.1:12 - Relations
 

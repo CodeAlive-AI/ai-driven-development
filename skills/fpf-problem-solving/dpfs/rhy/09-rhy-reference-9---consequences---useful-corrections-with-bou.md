@@ -1,7 +1,7 @@
 ## RHY.Reference:9 - Consequences - Useful corrections with bounded conclusions
 
-The language supports smaller and more specific corrections: change a cue, recover a duration, retain continuing movement, alter the arrangement or develop a missing contribution. A local failure can preserve the results that still work. Representations and calculations become useful for their declared operations without being mistaken for observations of performance.
+A local finding can support a specific correction, such as changing a cue, recovering a duration, restoring continuing movement, revising an arrangement or developing a missing action. Keep the contributions that still work. Use a calculation or representation for the operation it supports and an observation of practice for a claim about performance.
 
-The cost is attention to the relation that matters and, sometimes, a demonstration or comparison. More demanding claims can require specialist technique, sensing or research. The methods expose that need rather than promise that reading the framework supplies it.
+Examining the relevant relation takes attention and may require a demonstration or comparison. A stronger claim can require specialist technique, sensing or research. Identify the contribution needed and whether it can be obtained under the working conditions.
 
-A reader can stop with a usable action, a narrower result or a named obstacle. Remaining uncertainty does not automatically turn a rehearsal or lesson into a research project.
+The result can be an action ready to use, a bounded finding or a specific obstacle. Further inquiry is warranted when it could supply a result the task still needs at an acceptable cost.

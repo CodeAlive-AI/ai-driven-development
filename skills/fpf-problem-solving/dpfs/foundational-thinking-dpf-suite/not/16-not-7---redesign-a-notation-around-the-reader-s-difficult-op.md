@@ -20,7 +20,7 @@ Keep a sufficient familiar form when no consequential reading or change difficul
 
 How can a notation be made easier to use without removing the distinctions, dependencies or operations on which its usefulness depends?
 
-Shortness, visual neatness and familiarity can each help particular work, but none identifies the difficult operation. A repeated value may be easy to read and costly to change. A shared name may make the change local while sending readers elsewhere to recover the value. A new arrangement must be judged through those operations.
+Shortness, visual neatness and familiarity can each help with some tasks, but none identifies the difficult operation. A repeated value may be easy to read and costly to change. A shared name may make the change local while sending readers elsewhere to recover the value. A new arrangement must be judged through those operations.
 
 The repair also has to separate expression from assistance. An author can explain the missing connection during a trial, making an unchanged notation appear successful. A trained reader can reconstruct a relation that the expression never supplies. Those contributions may be useful, but they change what the notation itself has achieved.
 
@@ -40,7 +40,7 @@ The repair also has to separate expression from assistance. An author can explai
 
 #### NOT.7:4.1 - Locate the operation and its failure
 
-Select a concrete question and the expression on which the reader must work. Ask for the answer or modification, not only an opinion of the notation. Recover the route taken: where the reader searches, which reference is followed, what has to be held in memory and where the result goes wrong or the work becomes costly.
+Select a concrete question and the expression on which the reader must work. Ask the reader to answer the question or make the change. Recover the route taken: where the reader searches, which reference is followed, what has to be held in memory and where the result goes wrong or the work becomes costly.
 
 Use an available response or observed difficulty when one exists. Otherwise, walk through the operation and treat the diagnosis as a design estimate. An actual trial is useful when plausible reader responses would change the repair decision.
 
@@ -60,7 +60,7 @@ Retain successful uses of the current form. They identify what the repair must p
 
 #### NOT.7:4.3 - Construct a change at the source of the burden
 
-Choose a change that alters the difficult operation. The following constructions supply starting points; their costs determine whether to keep them.
+Choose a change that alters the difficult operation. The following constructions supply starting points; compare their benefits and costs before deciding which to keep.
 
 | Difficult operation | Possible construction | Other work to inspect |
 | --- | --- | --- |
@@ -72,13 +72,13 @@ Choose a change that alters the difficult operation. The following constructions
 
 A local label, grouping mark or rearrangement can suffice. Use NOT.4 when an expression transformation needs a preservation argument, NOT.5 when the alternative omits distinctions, and NOT.6 when both forms will remain in joint use.
 
-Keep the alternative small enough to inspect. If construction reveals that the original question was wrong or incomplete, revise the requirement through NOT.1. Do not keep optimizing the old operation merely to preserve the initial design brief.
+Keep the alternative small enough to inspect. If construction reveals that the original question was wrong or incomplete, revise the requirement through NOT.1.
 
 #### NOT.7:4.4 - Preserve what the work needs from the expression
 
 Identify the meaning and operations that must survive the change. Work through one consequential contrast: reversed dependency, local exception, changed grouping or unresolved input, as appropriate to this notation. The new form must make the required difference recoverable.
 
-If the repair adds a claim that was absent before, treat it as a content addition. If it supplies a new procedure or teaches a missing convention, include that contribution in the comparison. A useful combined repair is allowed; attribute its effect to the actual combination.
+If the repair adds a claim that was absent before, treat it as a content addition. If it supplies a new procedure or teaches a missing convention, include that contribution in the comparison. A useful combined repair is allowed; attribute its effect to the combination used.
 
 Preserve the path from a compressed form to the detail needed for its use. A shared definition needs a resolvable reference; an intermediate name needs its construction; an omitted branch needs a rule showing when it can be omitted. Compression is useful when it reduces the relevant work, not merely the displayed size.
 
@@ -88,21 +88,21 @@ Perform the selected operation with the old and new forms under comparable condi
 
 Also perform an operation plausibly made harder by the repair. A shared parameter may make a global change easy and a local exception harder. An outgoing-dependency index may improve downstream search while an incoming-dependency list remains better for finding prerequisites. Keep that trade-off visible in the choice.
 
-For a human or agent trial, retain the first response before explanation or correction. If the same reader sees both forms, practice can contribute to the second result. For a local decision, that limitation may be acceptable. A general superiority or learning claim requires a comparison that supports that stronger conclusion; EXD.6 and, for instructional use, HCD.19 supply the corresponding evaluation methods.
+In a reader trial, retain the first response before explanation or correction. If the same reader sees both forms, practice can contribute to the second result. For a local decision, that limitation may be acceptable. A general superiority or learning claim requires a comparison that supports that stronger conclusion; EXD.6 and, for instruction intended to develop human capability, HCD.19 supply the corresponding evaluation methods.
 
 A family of alternatives can justify matched examples and computed measures. Use those measures to locate an expression or change that needs inspection. Shorter code, fewer symbols or a smaller edit count does not alone establish better understanding. Do not build a comparison gallery when one bounded contrast can settle the local repair.
 
 #### NOT.7:4.6 - Choose the repair at the needed scale
 
-Retain the change when its demonstrated or reasonably expected contribution is worth the new burden for the actual work. Keep the incumbent when it remains sufficient. If different forms serve different important operations, preserve the useful alternatives and their correspondence.
+Retain the change when its demonstrated or reasonably expected contribution is worth the new burden for the work it must support. Keep the incumbent when it remains sufficient. If different forms serve different important operations, preserve the useful alternatives and their correspondence.
 
-Use the existing contribution and choice methods in C.11.CRC/C.11 when cost or competing improvements affect the decision. When the work needs maintained comparison and selection rules, use A.19.CPM for comparison and A.19.SelectorMechanism for selection. This method supplies notation changes and their use differences.
+Use the existing contribution and choice methods in C.11.CRC/C.11 when cost or competing improvements affect the decision. When the work needs maintained comparison and selection rules, use A.19.CPM for comparison and A.19.SelectorMechanism for selection. This method supplies notation changes and the differences they make to the reader’s work.
 
 Leave the needed convention, reference or operation available with the retained expression. A repair that works only while its author explains it has not supplied a self-sufficient notation for that reading condition.
 
 When other participants need to use the changed notation, apply C.36.RP to arrange learning, tools or capable help and keep the variants their work needs.
 
-Stop when the present use is adequately supported and further comparison would not change the choice. Reopen when the operation, preparation, access, scale of use or meaning changes, or an actual response contradicts the claimed benefit.
+Stop when the present use is adequately supported and further comparison would not change the choice. Reopen when the operation, preparation, access, scale of use or meaning changes, or a reader’s response contradicts the claimed benefit.
 
 ### NOT.7:5 - Archetypal Grounding
 
@@ -125,7 +125,7 @@ The repair changes the lookup arrangement and supplies a reading procedure. It d
 
 Now remove C from D's input list. Remove the arrow from C to D as well. A still reaches D through B. A reader who merely drops D from the downstream set has confused removal of one path with removal of every path.
 
-This construction demonstrates the dependencies and operations preserved. It supplies no measured claim that every reader finds the index faster; the local display and reading conditions can change that comparison.
+This construction demonstrates the dependencies and operations preserved. Whether readers find downstream tasks faster with the reverse index than with the original table depends on the display and reading conditions. The example supplies no timing measurements.
 
 #### NOT.7:5.2 - Share a parameter while retaining a local exception
 
@@ -176,7 +176,7 @@ New conventions require learning and migration. Complementary views add maintena
 
 The unit of redesign is the reader's operation on meaningful content. Appearance matters through what it makes available, distinguishable or changeable in that operation. This lets the method apply to formulae, diagrams, programs and other notations.
 
-Meaning preservation and ease of use answer different questions. A transformation can preserve the result while making its construction harder to inspect. Conversely, a helpful explanation may add missing content. Keeping those contributions separate permits a fair comparison without forbidding useful combined repairs.
+Meaning preservation and ease of use answer different questions. A transformation can preserve the result while making its construction harder to inspect. Conversely, a helpful explanation may add missing content. Keeping those contributions separate lets the designer compare each contribution and consider useful combined repairs.
 
 The existing characterization and contribution methods compare the relevant gains and burdens. Notational engineering supplies the constructions and the operation-level differences those methods need.
 

@@ -7,7 +7,7 @@
 
 **Use this when** progress information, a changed need or a failed dependency calls for a decision about pursuing a goal. The object is the continuation and the goal-related premises it uses. The result is a warranted action, deliberate continuation, revision, pause or end, with affected reliance made clear.
 
-When present evidence and an established response already settle the question, act through that arrangement. A fresh meeting, score or complete reconstruction is unnecessary. C.43 supplies the general control method; this pattern develops the distinctions needed to revise goal pursuit without changing the wrong meaning.
+When present evidence and an established response settle the question, act through that arrangement. C.43 supplies the general control method; this pattern develops the distinctions needed to revise goal pursuit without changing the wrong meaning.
 
 ### GOALS.4:2 - Problem
 
@@ -27,7 +27,7 @@ Use available data at their actual age and scope. When information is delayed or
 
 #### GOALS.4:4.2 - Interpret what happened before selecting the repair
 
-Compare the actual result with the achievement basis and the relied-on explanation. A brief review can connect: what changed, what is now expected, what explains the difference, and which decision follows. Investigate rival explanations only when they lead to different useful responses. The following distinctions direct the investigation.
+Compare the actual result with the achievement basis and the relied-on explanation. A brief review can establish what changed, what is now expected, what explains the difference and which decision follows. Investigate rival explanations only when they lead to different useful responses. The following distinctions direct the investigation.
 
 | What changed or failed | Receiving response |
 | --- | --- |
@@ -36,9 +36,9 @@ Compare the actual result with the achievement basis and the relied-on explanati
 | Performed action does not obtain the expected result. | Examine the method and causal assumption; select another way or a warranted inquiry. |
 | The goal is difficult but still valued, and useful means remain available. | Keep the aim and revise the next action, help or provision. |
 | The recipient's need or governing priority changed. | Reconsider the goal with the authorized owner and affected participants. |
-| The result is achieved under its actual criteria. | Close this goal and make any needed maintenance or subsequent use explicit. |
+| The result meets the achievement criteria. | Close this goal and make any needed maintenance or subsequent use explicit. |
 
-The same observation can affect several relations. A delayed supplier can change a forecast immediately and require a separate agreement about a promised date. Preserve that sequence of meanings rather than pretending the forecast update has already changed the promise.
+The same observation can affect several relations. A supplier delay can change the forecast immediately. A change to the promised date requires a separate agreement.
 
 #### GOALS.4:4.3 - Compare continuations from the present situation
 
@@ -50,7 +50,7 @@ A difficult goal need not be unattainable for another continuation to be prefera
 
 #### GOALS.4:4.4 - Make the change effective and keep history truthful
 
-Obtain the decision or agreement needed for the chosen change. Communicate it to those whose work or reliance changes, including dependent teams absent from the review. Update the current goal, plan, allocation or commitment at its actual owner. Keep the earlier basis and the reason for change where later interpretation needs them. A prospective revision can be justified while the earlier promise was missed.
+Obtain the decision or agreement needed for the chosen change. Communicate it to those whose work or reliance changes, including dependent teams absent from the review. Update the current goal, plan, allocation or commitment with the participant who can change it. Keep the earlier basis and the reason for change where later interpretation needs them. A prospective revision can be justified while the earlier promise was missed.
 
 Close a goal only when its completion test is met or an authorized end has been decided. These are different outcomes. At an end, return the useful result or learning, remaining obligations, released means and any required recovery. Choose a new goal only when the next useful undertaking calls for it. An obsolete aspiration need not be carried into another cycle merely because it is unfinished.
 
@@ -62,7 +62,7 @@ A product team aims to reduce failed customer imports. Its early KR tracks succe
 
 Now suppose the customer retires that integration and moves to a different service. Continuing to optimize the old importer would no longer supply the valued result. The owner can end the improvement, preserve any remaining support obligation and redirect the available work. The same technical progress has a different meaning under the changed recipient need.
 
-A separate investigation has reached its agreed answer: the proposed method does not meet the required accuracy under usable conditions. The inquiry closes successfully, the deployment goal remains unmet, and the decision owner declines deployment. A truthful negative finding is the useful result of that inquiry, not a reason to rewrite its evidence as a failure.
+A separate investigation has reached its agreed answer: the proposed method does not meet the required accuracy under usable conditions. The inquiry closes successfully, the deployment goal remains unmet, and the decision owner declines deployment.
 
 ### GOALS.4:6 - Bias-Annotation
 
@@ -94,7 +94,7 @@ The method reuses C.43's full control construction and adds goal-specific semant
 
 ### GOALS.4:11 - SoTA-Echoing
 
-Doerr's tracking and reflection chapters supply continuation, change and retirement within OKR. Contemporary goal-adjustment research distinguishes disengagement, reengagement and flexibility; its heterogeneous evidence supports treating adjustment as a real question, not prescribing one universally beneficial response. The practical choice here is constructed through C.43, actual values, commitments and means. Reopen it when one of those grounds changes.
+Doerr's tracking and reflection chapters supply continuation, change and retirement within OKR. Contemporary goal-adjustment research distinguishes disengagement, reengagement and flexibility; its heterogeneous evidence leaves the choice among those responses dependent on the circumstances. The practical choice here is constructed through C.43, actual values, commitments and means. Reopen it when one of those grounds changes.
 
 ### GOALS.4:12 - Relations
 

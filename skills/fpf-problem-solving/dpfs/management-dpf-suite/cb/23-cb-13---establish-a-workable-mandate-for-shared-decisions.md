@@ -5,13 +5,13 @@
 
 ### CB.13:1 - Problem frame
 
-Use this pattern when people need decisions about a common activity but have not established who may make them, or when the mandate of an existing decision-maker is disputed or has expired. Several local groups want a joint event. A founder asks for comments and participants believe they are voting. A moderator's decision is challenged, but every appeal returns to that same moderator.
+Use this pattern when participants in a common activity need shared decisions but have not established who may make them, or when the mandate of an existing decision-maker is disputed or has expired. Several local groups want a joint event. A founder asks for comments and participants believe they are voting. A moderator's decision is challenged, but every appeal returns to that same moderator.
 
 The governed object is the arrangement that makes specified shared decisions possible: their subjects, participants, source of authority, decision method, limits and means of reconsideration. This is one branch of community governance. Performing an already assigned organising task belongs to CB.7; applying an established participation rule to an incident belongs to CB.8.
 
-**First useful result:** the people who can establish the arrangement have made a usable mandate effective for the named questions, with its limits and challenge route understood. If they cannot do so, the result is the exact unresolved authority or agreement question and the work that may still proceed under existing conditions.
+**First useful result:** those entitled to establish the arrangement have put a usable mandate into effect for the named questions, with its limits and challenge route understood. If they cannot do so, the result is the exact unresolved authority or agreement question and the work that may still proceed under existing conditions.
 
-Start with an actual shared decision and the people or organisations whose contributions and rights it would change.
+Start with a concrete decision the participants need to make. Identify whose contributions or rights it could change.
 
 **Ordinary non-use:** independent carriers of a practice can continue using it without a common governing body. A single activity owner may already have adequate authority and consultation arrangements. Keep that basis; use this pattern only for the missing or contested shared decision arrangement. A legally constituted body or regulated decision requires its applicable institutional and professional basis.
 
@@ -21,7 +21,7 @@ Discussion, influence, ownership and a right to decide are different. A popular 
 
 A proposed governance form can also omit the work that makes it effective. Representatives may have no way to obtain views or return reasons. A vote may have no defined electorate or result rule. Local groups may be called autonomous while every useful exception requires central permission. A challenge to the decision-makers may have no recipient.
 
-The problem is to construct enough shared authority and procedure for the actual work, make it effective through the people entitled to do so, and preserve a workable way to correct or end it.
+The problem is to construct enough shared authority and procedure for the actual work, make it effective through those entitled to do so, and preserve a workable way to correct or end it.
 
 ### CB.13:3 - Forces
 
@@ -32,7 +32,7 @@ The problem is to construct enough shared authority and procedure for the actual
 | Formal authority and practical control can diverge. | Recover both the valid mandate and the means to carry a decision out. |
 | Affected people may be quiet or absent. | Give them a usable way to contribute before treating the visible discussion as sufficient. |
 | Stable decisions need correction. | Keep ordinary work possible while providing bounded amendment, recall and challenge. |
-| A new arrangement must begin somewhere. | Its adoption needs an actual source of agreement or authority; the proposer cannot confer it by description. |
+| A new arrangement must begin somewhere. | Its adoption requires agreement or authority from those entitled to establish it; the proposer cannot confer it by description. |
 
 ### CB.13:4 - Solution
 
@@ -44,7 +44,7 @@ Name the intended common result and decisions needed to obtain it. For a joint e
 
 Identify whose work, resources, access or accepted commitments each decision would change. Include people who supply upkeep or bear an effect without attending the central meeting. Ask what their participation can change: providing facts, proposing an option, consenting to use of their resource or making the shared choice.
 
-Distinguish a community preference from a separate permission or professional judgement. A group can prefer a venue while its owner determines whether it is available. Members can choose a service aim while a qualified provider determines whether a particular promised performance is supportable. Obtain each result through its actual holder.
+Distinguish a community preference from a separate permission or professional judgement. A group can prefer a venue while its owner determines whether it is available. Members can choose a service aim while a qualified provider determines whether a particular promised performance is supportable. When the decision needs permission or a professional judgement, use one that already applies or obtain it from the rights holder or qualified provider, respectively.
 
 State which questions the proposed arrangement can decide, which remain local and which must return elsewhere. If there is no common decision after that separation, use direct agreements or the existing activity owner rather than creating a general governing body.
 
@@ -71,13 +71,13 @@ Compare workable alternatives, including an adequate existing arrangement. Choos
 
 These forms can be combined. For example, local groups may select representatives for a joint event, while the event organiser consults participants about the programme within an already approved budget. Keep the basis of each decision understandable when moving between forms.
 
-For each serious option, follow one ordinary question from proposal through information, discussion, decision, execution and return. Then follow a dispute, including a dispute involving the decision-maker. Identify the person or body performing each move, the time and support it needs, and what happens if it cannot act.
+For each serious option, follow one ordinary question from proposal through information, discussion, decision, execution and return. Then follow a dispute, including a dispute involving the decision-maker. Identify who performs each step, what time and support they need to do it, and what happens if they cannot act.
 
 Compare the costs of the complete alternatives. Broad participation may improve the available account but require time and accessible preparation. Delegation can reduce repeated decision work while requiring explanation and a way to replace the delegate. Select these trade-offs from the local question; neither concentration nor distribution has a universal advantage.
 
 #### CB.13:4.4 - Make representation and local autonomy usable
 
-For a representative arrangement, define the represented constituency in terms participants can verify. State who may nominate, stand, select and challenge the selection, using the current governing basis. Make the opportunity accessible to eligible people who cannot attend the central meeting. Explain how vacancies are filled.
+For a representative arrangement, define the represented constituency in terms participants can verify. State who may nominate, stand, select and challenge the selection, using the current governing basis. Make the opportunity accessible to eligible participants who cannot attend the central meeting. Explain how vacancies are filled.
 
 Specify the mandate's subject, limits and term. A representative may have discretion within a defined aim, be instructed on a particular proposal or need to return a materially different proposal to the constituency. Choose which applies before the consequential decision.
 
@@ -97,7 +97,7 @@ For the named class of decisions, make the following working questions answerabl
 - Who records and explains the result, and who makes it effective?
 - Who receives a challenge or a proposed amendment, including one against the decision-makers?
 
-Choose the result rule explicitly. An authorised person may decide after consultation; a group may use an agreed voting threshold; another group may seek agreement and have a defined way to handle a remaining objection. State what happens when required participation is absent, the result is tied or agreement is not reached. Delay, a further proposal, a limited interim action and referral are different outcomes.
+Choose the result rule explicitly. An authorised decision-maker may decide after consultation; a group may use an agreed voting threshold; another group may seek agreement and have a defined way to handle a remaining objection. State what happens when required participation is absent, the result is tied or agreement is not reached. Delay, a further proposal, a limited interim action and referral are different outcomes.
 
 Make the decision period realistic. Give affected participants the information and time needed for the consequential choice, and define a smaller route for genuinely urgent matters. Any interim authority needs a subject, limits and review point. Obtain that authority before relying on the shorter route.
 
@@ -117,11 +117,11 @@ Select this option only where those participation terms and limits on discussion
 
 #### CB.13:4.6 - Adopt the arrangement and make it effective
 
-Test the proposed arrangement before adoption with an ordinary case and a consequential dispute. Check whether the named participants can actually perform it with available time, information, access and support. Repair a missing contribution or revise the option.
+Test the proposed arrangement before adoption with an ordinary case and a consequential dispute. Check whether the named participants can carry it out with available time, information, access and support. Repair a missing contribution or revise the option.
 
-Present the resulting proposal and its consequences to the people who can adopt it under the existing basis. Show the scope of the proposed authority, what remains with participants or local groups, the commitment required and how it can change or end. Obtain the required agreement or decision through the applicable procedure.
+Present the resulting proposal and its consequences to those who can adopt it under the existing basis. Show the scope of the proposed authority, what remains with participants or local groups, the commitment required and how it can change or end. Obtain the required agreement or decision through the applicable procedure.
 
-If this is the first limited voluntary agreement, make acceptance and its boundary explicit. Provide a way to decline. Record whose activity and contributions it governs and what happens to a person who leaves. Leave external obligations with their actual holders. A discussion of a proposal is not its adoption.
+If this is the first limited voluntary agreement, make acceptance and its boundary explicit. Provide a way to decline. Record whose activity and contributions it governs and what happens to a person who leaves. Leave external obligations with their holders. A discussion of a proposal is not its adoption.
 
 Make the mandates and conditions effective: complete the required appointment or acceptance, provide access, obtain the promised resource contribution and tell participants where decisions and challenges go. Use OCE.6 for assignments and enabling relations when needed. A person can be selected while an essential condition remains unavailable; retain that distinction and reduce the dependent promise.
 
@@ -129,7 +129,7 @@ Keep the usable rule and current appointments discoverable. A short agreement ca
 
 #### CB.13:4.7 - Use, reassess and end the mandate deliberately
 
-Follow the first actual decisions. Could participants offer relevant information? Did the authorised people decide within scope? Could the recipients carry the decision out? Did an affected local group or contributor discover a commitment they had never made?
+Follow the first actual decisions. Could participants offer relevant information? Did those authorised to decide stay within scope? Could the recipients carry the decision out? Did an affected local group or contributor discover a commitment they had never made?
 
 Return the observed difficulty to its proper question. CB.7 repairs preparation or support for the organising work. CB.8 handles an incident under a valid rule. OCE.14 compares and implements a bounded revision of an established organisation when its current owner and decision rule are available. A defective or expired mandate returns here.
 
@@ -137,7 +137,7 @@ Review the arrangement when the activity, affected parties, resource conditions 
 
 At expiry, obtain renewal, replace the holder, reduce the subject or end the mandate through the applicable arrangement. Settle pending decisions and continuing commitments. Explain which ordinary work can continue under its own conditions and which must wait for a new mandate.
 
-Close with an effective arrangement usable for its declared subjects, or with the specific missing authority question returned to the people who can resolve it. Evidence from its later use can justify keeping or revising it; adoption alone establishes no general claim about community trust or effectiveness.
+Close with an effective arrangement usable for its declared subjects, or with the specific missing authority question returned to those who can resolve it. Evidence from its later use can justify keeping or revising it; adoption alone establishes no general claim about community trust or effectiveness.
 
 ### CB.13:5 - Archetypal Grounding
 
@@ -173,7 +173,7 @@ If the owner had announced a binding vote under a valid member decision rule, th
 
 Two local volunteer groups independently schedule their own case meetings. They share a limited pool of mentor time. Their common arrangement governs only allocation of that time and how unmet requests return; ECO.7 helps construct the feasible use and upkeep rules.
 
-One group can change its meeting format locally. It cannot reserve all mentor time merely because it needs more sessions. That request goes through the common allocation and its actual capacity limits. Free copying of the groups' reference notes is not restricted by the same rule: the constrained contribution is mentor time.
+One group can change its meeting format locally. It cannot reserve all mentor time merely because it needs more sessions. That request is subject to the common allocation rule and the mentor time available. Free copying of the groups' reference notes is not restricted by the same rule: the constrained contribution is mentor time.
 
 If the common body begins directing unrelated local topics, either group can challenge that expansion through the adopted route. A new common subject requires the appropriate amendment, not merely repeated practice.
 
@@ -201,7 +201,7 @@ A subsequent forum includes volunteers who want to decide separately which activ
 
 ### CB.13:6 - Bias-Annotation
 
-Governance templates often begin from a company, association or online platform whose decision rights are already partly supplied. A voluntary common activity may lack that basis. Start with the participants' actual contributions, commitments and rights. Visible discussion can also hide people who lack time or access; provide a usable route for their relevant input without claiming that all affected people agree or are represented.
+Governance templates often begin from a company, association or online platform whose decision rights are already partly supplied. A voluntary common activity may lack that basis. Start with the participants' contributions, commitments and rights. Visible discussion can also hide people who lack time or access; provide a usable route for their relevant input without claiming that all affected people agree or are represented.
 
 ### CB.13:7 - Conformance Checklist
 
@@ -210,9 +210,9 @@ For the shared decision arrangement, ask:
 - Are its common subjects, affected parties and retained local decisions intelligible?
 - Does the authority to adopt it come from an actual agreement or applicable institution?
 - Is consultation distinguishable from the procedure that produces a decision?
-- Can representatives obtain views, act within a bounded term and return reasons, and can their constituents replace them?
+- Where the arrangement uses representatives, can they obtain views, act within a bounded term and return reasons, and can their constituents replace them?
 - Can an ordinary question and a dispute pass through proposal, decision, execution and challenge with available people and resources?
-- If a named external procedure is selected, have these participants accepted its actual obligations, including its treatment of abstention, absence and amendment?
+- If a named external procedure is selected, have these participants accepted its obligations, including its treatment of abstention, absence and amendment?
 - Has adoption occurred, and have the appointment, access and support conditions become effective?
 - Is there a workable amendment, expiry and challenge route, including a challenge involving the decision-makers?
 
@@ -223,18 +223,18 @@ A small voluntary agreement can answer these questions briefly. A stronger insti
 | Misuse | Repair |
 | --- | --- |
 | Infer a community-wide mandate from founding the group, moderating it or being widely trusted. | Recover the actual source, subject and term of the decision right. |
-| Ask for comments but present the result as a member vote. | State whether participants advise, consent or decide, and apply that actual arrangement. |
+| Ask for comments but present the result as a member vote. | State whether participants advise, consent or decide, and follow the applicable decision arrangement. |
 | Call a representative's personal preference the unanimous view of a group. | Obtain and return the relevant differences and limits of representation. |
 | Give local groups autonomy while retaining every usable decision centrally. | Allocate specific subjects and provide the means to act on them. |
 | Adopt a vote rule without eligibility, notice or a way to handle no result. | Complete the procedure around a concrete ordinary case and a dispute. |
 | Extend a small team's decision protocol to everyone attending a community activity. | Obtain the actual adoption and mandate, or choose a procedure whose participation terms the affected people can accept. |
 | Let the deciding body be the sole judge of every challenge to its own mandate. | Establish an alternate or return to the people who can constitute the mandate. |
 | Treat an attractive revision as effective after a term has expired. | Preserve the proposal and obtain a current authorised disposition. |
-| Require a governing council for all carriers of a practice. | Identify the actual common decision; retain independent use where no such decision is needed. |
+| Require a governing council for all carriers of a practice. | Identify any decision the users need to make jointly; retain independent use where no such decision is needed. |
 
 ### CB.13:9 - Consequences
 
-Shared decisions can become both possible and bounded. Participants can understand who decides, supply relevant information, challenge an overreach and keep useful local freedom. Organisers and moderators receive an actual decision basis for their work.
+Shared decisions can become both possible and bounded. Participants can understand who decides, supply relevant information, challenge an overreach and keep useful local freedom. Organisers and moderators receive a mandate for the decisions they can make for their work.
 
 Participation, representation and review consume effort. A limited agreement for one activity can be preferable to a general constitution. Where authority or a necessary contribution cannot be obtained, the method makes the unresolved question visible rather than inventing a collective power.
 

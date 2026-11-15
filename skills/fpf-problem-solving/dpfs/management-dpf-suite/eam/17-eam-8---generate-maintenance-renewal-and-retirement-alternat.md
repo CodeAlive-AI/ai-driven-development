@@ -28,7 +28,7 @@ Early replacement can reduce continuing burden but discard useful service life. 
 
 Recover the required service, asset configuration and horizon. Use the relevant condition and diagnostic account to establish which maintained-use responses are supported. [MNT.4](../../engineering-dpf-suite/mnt/15-mnt-4---monitor-and-interpret-system-condition-for-maintenan.md) supplies condition interpretation; [MNT.6](../../engineering-dpf-suite/mnt/17-mnt-6---diagnose-condition-and-choose-a-maintenance-response.md) supplies the diagnosis and intervention recommendation. Their result must apply to this asset and proposed duty.
 
-Form policies rather than isolated job labels. A continued-use policy includes its initial intervention, recurring maintenance, permitted duty, contingency and exit conditions. A renewal policy states what capability or useful life it changes. Replacement includes the new asset's integration and the old asset's disposition. Repurposing names the different receiving use; withdrawal names how a still-required service will be supplied or the decision that ends that requirement.
+Describe each policy over its service horizon. A continued-use policy includes its initial intervention, recurring maintenance, permitted duty, contingency and exit conditions. A renewal policy states what capability or useful life it changes. Replacement includes the new asset's integration and the old asset's disposition. Repurposing names the different receiving use; withdrawal names how a still-required service will be supplied or the decision that ends that requirement.
 
 Lay out the period covered by each technical qualification. An initial repair supported for three years cannot by itself supply a four-year policy. Obtain the further intervention, replacement or service alternative that closes the remaining interval. Where condition determines the next work, state the observation and threshold that trigger it, the time needed to respond and how service remains supported while responding. A conditional forecast retains its duty and mechanism assumptions.
 
@@ -39,7 +39,7 @@ Keep technical eligibility separate from preference. Label an option conditional
 #### EAM.8:4.2 - Construct the dated consequence account
 
 
-For each policy, follow the work and use through time: initial preparation and integration, recurring operation and support, subsequent interventions, interruptions and temporary provision, and the intended ending. Attach each consequence to its cause and date. Include the whole intervention and return to service supplied by [MNT.7](../../engineering-dpf-suite/mnt/18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md); the time spent physically repairing equipment alone can understate the interruption. Carry the resulting work and service conditions into EAM.11.
+For each policy, follow the work and use through time: initial preparation and integration, recurring operation and support, subsequent interventions, interruptions and temporary provision, and the intended ending. Attach each consequence to its cause and date. For an intervention, include the entire outage through the return to service. If you need to determine its duration, use [MNT.7](../../engineering-dpf-suite/mnt/18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md). The physical repair can take less time than the service interruption. Carry the resulting work and service conditions into EAM.11.
 
 Then obtain the economic consequences of that same policy. [FIN.6](../fin/19-fin-6---value-capital-projects.md) develops a dated incremental cash account: compare the proposed policy with its actual alternative, include changed operating and investment cash, and distinguish historical expenditure from future avoidable consequences. Identify the asset and configuration, receiving service, comparison perspective and date, price and discount-rate basis, relevant tax and financing treatment, and ending premise. Ask the finance supplier to return the amounts and dates, significant assumptions and unresolved limits. Its corporate-finance assumptions apply only where appropriate to the receiving case.
 
@@ -52,7 +52,7 @@ A recurring service price may already include maintenance, response or replaceme
 
 Place the alternatives on a common service and analysis horizon. If their technical lives differ, describe the further work needed to cover that horizon or obtain an applicable value of remaining service. A repeating replacement chain needs supported availability, duty and cost assumptions; extending an annuity factor cannot supply them.
 
-Distinguish the end of the study from the end of use. If the asset continues beyond the explicit account, obtain a remaining-value estimate consistent with that continuation and its further support needs. [FIN.7](../fin/20-fin-7---value-assets-and-the-corporation.md) develops valuation under a stated continued-use or disposal premise. If the asset will actually be withdrawn, use realizable proceeds and the dated cost of disconnection, disposal, closure or replacement service as applicable. Book value alone supplies neither answer. Do not add liquidation proceeds for resources whose continuing use is already included in the terminal value.
+Distinguish the end of the study from the end of use. If the asset continues beyond the explicit account, obtain a remaining-value estimate consistent with that continuation and its further support needs. [FIN.7](../fin/20-fin-7---value-assets-and-the-corporation.md) develops valuation under a stated continued-use or disposal premise. If the asset will be withdrawn, use realizable proceeds and the dated cost of disconnection, disposal, closure or replacement service as applicable. Book value alone supplies neither answer. Do not add liquidation proceeds for resources whose continuing use is already included in the terminal value.
 
 When only the explicit table endpoint moves, reconcile the value at the new endpoint with the same later payments and ending premise. The whole policy's present cost remains the same. If a supplied valuation disagrees, use [FIN.7](../fin/20-fin-7---value-assets-and-the-corporation.md) to identify the changed cash, dates, rights or assumptions before relying on it.
 
@@ -65,7 +65,7 @@ Use constant prices with a real discount rate, or a consistent current-price bas
 
 Compare eligible policies using the applicable criterion in EAM.9. Return their service and configuration, dated work and consequences, ending premise, technical support and material conditions. [EAM.10](19-eam-10---compare-engineered-asset-portfolio-combinations.md) can then combine them without losing a later funding need or counting shared work twice.
 
-Retain the smallest alternative set that includes materially different feasible ways to meet the need. Obtain more diagnosis or costing only when an attainable answer could change eligibility, preference or the requested claim enough to justify its full burden. If [EAM.13](22-eam-13---track-realized-outcomes-and-reconsider-asset-plans.md) reports a changed duty, price or support result, revise the affected policy and its recipients; an unrelated qualified policy need not be reconstructed.
+Retain the smallest alternative set that includes materially different feasible ways to meet the need. Obtain more diagnosis or costing only when an attainable answer could change eligibility, preference or the requested claim enough to justify its full burden. If [EAM.13](22-eam-13---track-realized-outcomes-and-reconsider-asset-plans.md) reports a changed duty, price or support result, revise the affected policy and give the revision to those who use it. Keep unrelated policies with current qualifications.
 
 ### EAM.8:5 - Archetypal Grounding
 
@@ -98,7 +98,7 @@ These values represent the same remaining account on the cost-comparison basis. 
 
 Let `a₂ = 1/1.03 + 1/1.03²` and `d₂ = 1/1.03²`. Using unrounded values, the shortened explicit accounts give X: `0.40 + 0.30 × a₂ − V_X(2) × d₂ = 2.161060`; Y: `1.50 + 0.15 × a₂ − V_Y(2) × d₂ = 1.613321`. Replacement remains cheaper. Moving the table boundary has moved later consequences into the ending value; it has removed neither their cost nor their service obligations. A different supplied appraisal needs reconciliation of its changed assumptions before it can support a different recommendation.
 
-Actual withdrawal at year two is another case. If the authority ends the service and X incurs a net exit cost of 0.10 while Y yields net sale proceeds of 0.60, replace the continuing values with those consequences. Present costs are then 1.068300 and 1.221463. X is cheaper in this different case because the service requirement and exit consequences have changed. There is no year-three service obligation in this case. If the service remains required, withdrawal alone is incomplete: a qualified replacement service and its consequences must join the policy.
+Actual withdrawal at year two is another case. If the authority ends the service and X incurs a net exit cost of 0.10 while Y yields net sale proceeds of 0.60, replace the continuing values with those consequences. Present costs are then 1.068300 and 1.221463. X is cheaper under the revised assumptions: service ends in year two, there is no year-three obligation, and the exit costs and sale proceeds replace the continuing values. If the service remains required, withdrawal alone is incomplete: a qualified replacement service and its consequences must join the policy.
 
 
 
@@ -129,17 +129,17 @@ Using a valuation for a different date or continuation can create a false change
 
 ### EAM.8:9 - Consequences
 
-Decision makers obtain alternatives whose differences can be explained and recalculated. Some options are excluded, some remain conditional and some investigations stop. The result supports asset choice. The maintenance team carries out the intervention and returns the equipment to service under the applicable maintenance and operating decisions.
+Decision makers receive alternatives they can compare, explain and recalculate. Some options are excluded, some remain conditional and some investigations stop. The maintenance team carries out the intervention and returns the equipment to service under the applicable maintenance and operating decisions.
 
 ### EAM.8:10 - Architectural Rationale
 
-This pattern joins maintained-functioning results to the asset-value question without merging them. A policy description exposes continuing consequences that a list of interventions hides. Keeping repurposing and withdrawal available prevents replacement from becoming the assumed end of a universal lifecycle.
+The asset decision maker uses the engineering assessment of continued operation to compare the value of the alternatives. A policy description exposes continuing consequences that a list of interventions hides. Keeping repurposing and withdrawal available lets the decision maker compare either with replacement.
 
 ### EAM.8:11 - SoTA-Echoing
 
 NIST HB135e2025, chapter 4, develops the timing of initial, recurring, replacement and residual consequences on a common study period. That discipline supports the dated account here; its federal rates and programme rules are not adopted. A payback-only screen loses later support and the ending premise.
 
-[FIN.6](../fin/19-fin-6---value-capital-projects.md) supplies the incremental financial construction, and [FIN.7](../fin/20-fin-7---value-assets-and-the-corporation.md) supplies a valuation consistent with continued use or actual disposal. Use their developed treatment when financial construction or appraisal is needed; retain a sufficient qualified local answer when it already supplies the result. EAM connects those returns to the technically supported asset policy.
+[FIN.6](../fin/19-fin-6---value-capital-projects.md) explains how to construct the incremental financial account, and [FIN.7](../fin/20-fin-7---value-assets-and-the-corporation.md) explains how to value continued use or disposal. Use an existing qualified answer if it suffices. When the account or appraisal still needs to be constructed, use the corresponding method to do that work. EAM connects those returns to the technically supported asset policy.
 
 ### EAM.8:12 - Relations
 

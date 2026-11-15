@@ -11,13 +11,13 @@ technical solution while phrases such as *environment*, *suprasystem*, *using sy
 *scenario*, *requirement*, or *user story* stand in for several Systems, intended System referents, conditions,
 relations, and effects. A compatible `SYSE.16` use-context account supplies decision-relevant operational
 structures, neighbours, conditions, and outside changes. A compatible `SYSE.17` affected-system account supplies
-qualified consequence claims and unresolved bearers. Use only result claims compatible with the current decision.
+qualified consequence claims and identifies any bearers whose identity or existence remains unresolved. Use the claims that apply to this decision.
 
 The result is a **linked use-and-system concept proposal**: bounded claim content that connects a concrete
 use situation with a candidate System concept and states any main uncertainty. One or more descriptions may
 carry the claims; no document form is required.
 
-First useful move: link one concrete use claim to one candidate system-concept claim and state any main
+Link one concrete use claim to one candidate system-concept claim and state any main
 uncertainty. This is enough to expose a grounded architecture question. Add further content—for example,
 another use situation, structure, participant, failure, effect, or representation—only when it can change the
 candidate or its boundary.
@@ -31,7 +31,7 @@ The payoff is a revisable account that keeps outside use connected to the concep
 Evidence about use can change that concept, while architecture and realization findings can change the use,
 boundary, or affected-System claims.
 
-Use this pattern while a concrete use claim and a candidate System concept still need to be developed together.
+Use this pattern while a concrete use claim and a candidate System concept need to be developed together.
 Use `C.30` and `C.32` when the current question is grounded architecture and candidate synthesis, `A.3.4` when
 the question is whether one actual bounded change occurred, and the applicable Operations Management pattern
 for continuing Work. Return to `SYSE.1` when evidence changes which System should orient the project.
@@ -44,7 +44,7 @@ truth nor the required form for the proposal.
 
 When the concrete use itself is disputed across participants, `SYSE.54` supplies collaborative event
 modelling to recover behaviour and its consequential alternatives. Bring its compatible account back to
-the linked concept here; an already adequate scenario needs no workshop.
+the linked concept here. Reuse a sufficient scenario directly.
 
 ### SYSE.2:2 - Problem
 
@@ -79,12 +79,12 @@ failed claim.
 Take the immediate engineering subject and its receiving purpose from the project-system choice account, or identify that bounded subject directly when no SoI question remains. For a creator, retain the product-use grounds while developing the creator's own use and System concepts. If that choice is
 needed but no compatible `SYSE.1` account is available for the same subject and decision, use a qualified direct
 source for the focus claim or record the missing project-focus result and stop only the linked claim
-it blocks. An individual can explore a linked proposal from a provisional focus. When its use depends on
+it blocks. A contributor can explore a linked proposal from a provisional focus. When its use depends on
 joint action, use `SYSE.1:4.4.1` to establish the common referent and contribution connections for that action,
 or retain the unresolved coordination condition. For an actual System, describe an actual or possible-future
 situation in which it participates. For a not-yet-present referent, keep the
 intended participation in modal plan, decision or description content; do not report the intended System or
-participation as already actual. State:
+participation as actual. State:
 
 1. the subject that relies on, uses, changes, or is affected by the proposal;
 2. the direct relation by which that subject enters the use;
@@ -92,7 +92,7 @@ participation as already actual. State:
 4. the outside effect that matters to the current decision; and
 5. any uncertainty that could change the concept.
 
-Name the relying subject under its admitted kind; a person and a System are only two possible kinds. State the
+Name the relying subject under the kind that applies to it. People and technical systems are familiar examples, and other kinds are admissible. State the
 direct relation by which it enters the use—for example, reliance, participation, performance of Work, or affectedness.
 Include affected Systems or intended System referents whenever their qualified consequence claims can change the
 decision; participation in or ownership of the designated System is not required.
@@ -104,8 +104,8 @@ and decision. If either result is unavailable, recover only the subjects and dir
 linked claim. Use `SYSE.16` when the decision needs several operational structures or a co-change boundary, and
 `SYSE.17` when it needs active discovery of consequence-bearing Systems. A neighbouring System may matter, for
 example, through constructive parthood, placement, interface, interaction, causal participation, use,
-transformation, collection membership, assignment, ownership, permission, authority, or affectedness. State
-only relations that are current and apply the FPF pattern that defines or constrains each claim.
+transformation, collection membership, assignment, ownership, permission, authority, or affectedness. Distinguish
+supported actual relations from those proposed for this use. Apply the FPF pattern that defines or constrains each claim.
 
 Use `A.1.SCR` when the System status of a proposed participant or containing whole is unresolved. Use `A.22`
 when the current question selects an organization among independently identified constituents and obtaining
@@ -140,7 +140,7 @@ When an available construction starts the inquiry, ask who could use it, in what
 outside effect. Follow one consequential behaviour path from the triggering change through the participating
 Systems to that effect. Try the condition most likely to defeat the proposal. Use the resulting success or
 failure to revise the functioning, bearer, interface or use claim that made the difference. Expand the path
-only when another condition could change the concept; no complete scenario set is needed for the first link.
+only when another condition could change the concept.
 
 Use `A.6.F` when function-like wording carries a claim. Name the required functioning and its proposed bearer.
 Any remaining question—for example, about function, capability, Method, Work, module, interface, evidence, or
@@ -154,7 +154,7 @@ remains modal claim content; its description does not establish that the change 
 
 A functional or transformation-flow description of relevant environment structure can support the linked
 proposal by showing selected functioning or flow relations for a named use. The proposal also states which use situation matters, which Systems participate or are affected, which outside
-effect changes the decision, which candidate System concept is being considered, and what remains uncertain.
+effect changes the decision, which candidate System concept is being considered, and any uncertainty that matters to the decision.
 Model only the environment structure needed by those claims.
 
 #### SYSE.2:4.4 - Compare changes on either side of the boundary
@@ -167,9 +167,9 @@ example:
 - a changed interface, placement, or resource relation; or
 - coordinated changes on several sides.
 
-Use a compatible `SYSE.8` provider-arrangement account when its supported provider-arrangement claims
+Use a compatible `SYSE.8` provider-arrangement account when its supported claims
 or design constraints change the use, candidate System or intended referent, boundary, interfaces, realization
-needs, or evidence. Use only the compatible claims named for this use. Without a compatible current
+needs, or evidence. Without a compatible current
 `SYSE.8` account, use a qualified direct source for the needed provider-arrangement claim or record the missing
 result and stop only the linked claim it blocks. Either account
 may need revision when a shared claim changes; that dependency does not prescribe the order of engineering Work.
@@ -191,9 +191,9 @@ Reuse an adequate scenario or use-case slice as the proposal: retain its compati
 add only the missing relation, consequence or uncertainty needed for this decision. The progressive-slice
 comparison in §11 helps choose when to continue toward implemented, tested behaviour.
 
-Expand
-when further content—for example, another use situation, load, failure, participant, affected System, harm,
-benefit, or representation—could change the candidate. Add only the relevant:
+Expand when further content could change the candidate. Examples include
+another use situation, load, failure, participant, affected System, harm,
+benefit or representation. Add the relevant:
 
 - environment structures and obtaining relations;
 - transformations, interactions, conditions, and effects;
@@ -204,7 +204,7 @@ benefit, or representation—could change the candidate. Add only the relevant:
 If source words such as *operational system*, *system in operation*, *operations*, or *operational flow* are
 current, distinguish two questions. Use this pattern for a System's participation in use and the concept that
 supports it. Use Operations Management when the difficulty is managing continuing Work, queues, policies, or
-flows. An operational adjective does not settle that choice.
+flows.
 
 #### SYSE.2:4.6 - Stop at a grounded architecture question and reopen from failed support
 
@@ -213,7 +213,7 @@ uncertainty carried into it. The linked proposal supplies required functioning, 
 decision-relevant environment structures, assumptions, and evidence limits to `C.30` and `C.32`.
 
 Use `C.30.ASV` only when a structural description and its adequacy for a selected architecture use are current.
-Do not open a full view or architecture-description apparatus merely because a sketch helped the discussion.
+
 
 Reopen the affected linked claims when:
 
@@ -262,18 +262,18 @@ The first linked proposal lets the software reschedule a moved order and release
 commitment. Its use claim is that the planners could promise the earlier date from the resulting plan; its
 main assumption is that the runtime's material and capacity information supports that commitment.
 
-Follow the proposed behaviour. When an order needs six units, ten are recorded and actually available, and the
+Follow the proposed behaviour. When an order needs six units, ten are recorded and available, and the
 needed capacity is available, the proposed schedule has support for those constraints. Now try a failure path:
 the imported record still shows ten unreserved units, but eight have since been allocated elsewhere. The moved
 order needs six, while only two remain unreserved. A successful date recalculation leaves the proposed commitment
-unsupported. It has exposed a stale-input failure, without establishing that rescheduling itself is useless.
+unsupported. The plan can still serve as a proposal while the planners seek current stock information.
 
 Revise the linked concept. Required functioning becomes proposing a schedule, obtaining current material and
 capacity confirmation and any needed reservation, and holding commitment when that support is missing.
 One proposed allocation gives `ERP-Runtime-E3` schedule proposal and an explicit unconfirmed state;
 `Planner-A` obtains the needed confirmation and reservations, and `Planner-B` makes the commitment decision
 under the applicable authority. This changes the bearer proposal from software alone to a coordinated use of
-the runtime and people. Their proposed organization still has to satisfy the System criterion for
+the runtime and people. Their proposed organization has to satisfy the System criterion for
 `PlanningSystem-P1`; a list of participants and records does not establish that composite.
 
 The resulting `C.32` question is which arrangement can support that functioning before the required commitment
@@ -320,13 +320,13 @@ reopen condition: a specialist result, measurement, provider result, or operatin
 The remote-monitoring branch remains conditional because the provider-authority and commitment result is
 unavailable. Realization and WorkPlan descriptions may include cabinet relocation, access preparation, and test
 Work. Keep those realization and WorkPlan descriptions distinct from the System concept. If no feasible architecture supports the linked claims, revise this proposal. Reopen `SYSE.1` only if the
-failure changes the project focus itself.
+failure changes the project focus.
 
 ### SYSE.2:6 - Biases to Watch
 
 Two recurring biases matter here. **Representation lock-in** treats a familiar use-model form as the use itself;
 recover the represented Systems, relations, conditions, and effects. **Concept lock-in** narrows use until the
-preferred concept always succeeds; keep the use claim revisable and return evidence to the claims it calls into question.
+preferred concept always succeeds; keep the use claim open to revision and return evidence to whichever use or concept claim it challenges.
 
 ### SYSE.2:7 - Conformance Checklist
 
@@ -356,11 +356,11 @@ preferred concept always succeeds; keep the use claim revisable and return evide
 
 The project can ask architecture questions from a concrete outside-use basis without waiting for a complete
 requirements package. It can compare changes across the assumed boundary, preserve non-nested environment
-structures, and return evidence to the claim it can actually change.
+structures, and return evidence to the claim it can change.
 
 The cost is ongoing concept maintenance. A use claim, System concept and representation can diverge as new
-evidence arrives. Keeping their relations usable takes maintenance; an obsolete description can otherwise be
-used as though it still describes the current use or architecture.
+evidence arrives. Keep each description connected to the use or concept it represents, and revise or retire it
+when that connection no longer holds.
 
 ### SYSE.2:10 - Rationale
 
@@ -369,7 +369,7 @@ conditions, while a chosen containing whole or representation can omit a consequ
 use and System concepts makes the outside reason and inside proposal inspectable while leaving architecture
 selection to the applicable FPF patterns.
 
-The link is intentionally small. One use claim, one concept claim, and one uncertainty can already reveal a
+One use claim linked to one concept claim can reveal a
 missing bearer, harmful effect, or misplaced boundary. Fuller descriptions are justified by decisions they can
 change, not by a prescribed documentation sequence.
 
@@ -382,7 +382,7 @@ detail. Existing scenarios and slices can supply that content directly.
 
 | Current practice line | What changes in this pattern | Source and use | Adoption status |
 | --- | --- | --- | --- |
-| Current use-case practice starts from user goals, admits human and nonhuman participants and failure paths, and revises end-to-end slices as work proceeds. Model-based system-architecture practice connects use cases to candidate functional groupings and interfaces. | The Solution starts with a concrete use situation and keeps success, failure, participants, behavior, and the system-concept claim connected while both change. | Jacobson et al., *Use-Case 3.0: The Definitive Guide — Refreshed* (2024); Weilkiens et al., *Model-Based System Architecture*, 2nd ed. (2022). These are provider and textbook Methods, not comparative proof of one universal sequence. | **Adopt and adapt.** Use revisable slices and explicit links to candidate functioning; choose the representation form for the receiving engineering decision. |
+| Current use-case practice starts from user goals, admits human and nonhuman participants and failure paths, and revises end-to-end slices as work proceeds. Model-based system-architecture practice connects use cases to candidate functional groupings and interfaces. | Start from a concrete use situation. As the use and the candidate System concept change, show how participants’ behaviour on success and failure paths connects the proposed use to the candidate concept. | Jacobson et al., *Use-Case 3.0: The Definitive Guide — Refreshed* (2024); Weilkiens et al., *Model-Based System Architecture*, 2nd ed. (2022). These are provider and textbook Methods, not comparative proof of one universal sequence. | **Adopt and adapt.** Use revisable slices and explicit links to candidate functioning; choose the representation form for the receiving engineering decision. |
 | Agile and continuing requirements research treats models, requirements, traceability, monitoring, and compliance links as maintained parts of changing work rather than one frozen preliminary package. | The linked proposal stays revisable, and representations are chosen for the decision and maintained only while they continue to carry useful claims. | Liebel and Knauss, [*Aspects of modelling requirements in very-large agile systems engineering*](https://doi.org/10.1016/j.jss.2023.111628) (2023; [author preprint](https://arxiv.org/abs/2209.01993)), report one Ericsson case, including model-maintenance and tool trade-offs. [SYSE.19:11](40-syse-19---revalidate-engineering-decisions-when-a-relied-on.md#syse1911---sota-and-source-use) gives the distinct source scopes and references for Hernández, Moros and Nicolás (2023), Norheim et al. (2024), and Kosenkov et al. (2025): DevOps requirements management, LLM requirements tasks, and regulatory compliance. | **Adapt.** Maintain useful claims and choose representations by use; let the receiving project determine how requirements Work is organized. |
 | Product-service system and servitization research treats useful offerings as configurations of products, service Work, provider and customer relations, capabilities, operations, digital support, and consequences. Reported performance is mixed and configuration-dependent. | The Solution compares actual or proposed changes to the designated System, external Systems, interfaces, and Work arrangements and asks for the specialist results that make those alternatives credible. | [Brambila-Macias, Sakao and Kowalkowski (2018)](https://doi.org/10.1017/dsj.2018.3), [Braga Junior, de Toledo and González (2020)](https://doi.org/10.4322/pmd.2019.017), [Kim (2020)](https://doi.org/10.1017/dsj.2019.30), [Brax et al. (2021)](https://doi.org/10.1108/IJOPM-08-2020-0535), [Åkesson et al. (2024)](https://doi.org/10.1108/JMTM-11-2021-0457), [Menon et al. (2024)](https://doi.org/10.1016/j.jclepro.2024.142459), and [Zhao et al. (2025)](https://doi.org/10.1016/j.jclepro.2025.146690). [SYSE.8:11](29-syse-8---develop-an-integrated-offering-and-provider-concept.md#syse811---sota-echoing) develops the bounded offering/provider comparison. | **Adapt.** Use the cross-boundary design pressure; establish each System, Work, provider relation, Method, and consequence directly in the receiving project. |
 
@@ -392,10 +392,10 @@ grow from a sketch through selected normal and failure paths toward a testable i
 all scenarios before useful work starts.
 
 Compare the two on the same moved-order facts in §5.2, including the stale stock record. A small slice for
-rescheduling an order can already reveal the unsupported commitment and supply a failure path that holds it.
+rescheduling an order can reveal the unsupported commitment and supply a failure path that holds it.
 The linked proposal should reveal the same failure. Its selected next result is the architecture question:
 which functioning, people, runtime and interfaces could support a commitment under the stated conditions?
-An adequate slice can already supply those claims; use them without a second description.
+An adequate slice can supply those claims directly.
 
 The trade-off depends on the next result. This linked proposal leaves implementation and path-specific
 acceptance tests unprovided while the bearer and interface choices remain open. Progressive slice practice
@@ -410,7 +410,7 @@ commitment. Add the missing path or use the progressive slice directly. Prefer a
 when it supplies the required architecture claims with less reconstruction or maintenance. These are selection
 conditions, not evidence that one description form has superior project outcomes.
 
-These current lines support continuing, use-led, model-linked revision within their stated domains. This pattern connects a use situation, subjects and relations, qualified consequences and a candidate concept, using compatible SYSE.16, SYSE.17 and SYSE.8 results. Relate evidence to the claim it can change. Apply each source within its stated domain and assess cross-domain transfer against the receiving use, Systems, relations and evidence.
+These current lines support continuing, use-led, model-linked revision in the settings examined. This pattern connects a use situation, subjects and relations, qualified consequences and a candidate concept, using compatible SYSE.16, SYSE.17 and SYSE.8 results. Relate evidence to the claim it can change. Assess transfer to another setting against the receiving use, Systems, relations and evidence.
 
 ### SYSE.2:12 - Relations
 

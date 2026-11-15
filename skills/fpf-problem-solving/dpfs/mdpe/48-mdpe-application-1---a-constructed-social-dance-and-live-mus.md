@@ -2,86 +2,86 @@
 
 
 
-An organizing team runs a monthly partner-Dance practice with live-coded Music. The team can act as the
-practice-developing Agent for scheduling trials and choosing the next local investment; the dancers and musician
-remain the performing Agents for their own Work. One rehearsed pair and one live coder produced an exciting
-showcase. The team is about to buy a larger festival slot, although unfamiliar pairs have not yet sustained the
-coordination and the musician's rapid changes have not been tested on a social floor.
+An organizing team runs a monthly partner-dance practice with live-coded music.
+It can schedule trials and choose the next local investment. One rehearsed
+pair and a live coder gave an exciting showcase. The team is considering buying
+a larger festival slot. The team has yet to establish whether unfamiliar pairs can sustain the coordination.
+The musician’s rapid changes also remain untested on a social floor.
 
 
 
 ### MDPE.Application:1.1 - Enter through the costly difficulty
 
-`MDPE.8` keeps four subjects separate: the successful showcase Work, the candidate partner-coordination Method,
-the proposed recurring social practice, and a possible later style line. The present project concerns the
-recurring practice inside one twenty-minute event block. It does not concern city-wide cultural adoption.
+With `MDPE.8`, the team distinguishes the completed showcase, the coordination method under consideration for unfamiliar pairs, the proposed
+recurring social practice and a possible later style. Its question concerns a twenty-minute block in one
+recurring event. A claim that the practice spread across the city would require evidence of uptake there.
 
-`MDPE.21` compares two materially different style-development architectures. The showcase architecture joins a
-rehearsed pair, live coder, screen, sound system, and spectators around a repeatable presentation. The social
-practice architecture joins varied pairs, partner-readable timing, a live musician, a host, floor and sound
-conditions, observation, later teaching, and another event opportunity. Because the intended use is partner
-Dance among unfamiliar participants, the team selects the social-practice architecture. Its first test concerns
-the relation between live musical articulation and partner-readable coordination under event sound and floor
-conditions.
+The team compares two ways to develop the practice with `MDPE.21`. The showcase brings
+a rehearsed pair and a live coder together with a screen, sound system and spectators.
+For social dancing, unfamiliar partners need cues they can read together, a musician,
+a host and suitable floor and sound. Observers, later teaching and another occasion
+to dance can help the team develop that arrangement. It chooses the arrangement for unfamiliar partners.
+In the first trial it asks whether unfamiliar partners can keep responding to
+one another through the musician’s changes at event volume and on this floor.
 
 
 
 ### MDPE.Application:1.2 - Keep simultaneous Work separate from the decision unfolding
 
-During the trial, the musician performs Music Work, eight pairs perform Dance Work, the organizer operates the event block, and two observers obtain decision-relevant indications. These Work occurrences overlap. Selecting the trial precedes its performance; observation occurs during the Work, and the team uses its results to choose the next investment.
+During the trial, the musician plays, eight pairs dance, the organizer runs the block and two observers watch the pairs. These activities overlap. The team selected the trial before it began and uses the observations afterwards to decide on the next investment.
 
 
 
 ### MDPE.Application:1.3 - Test the support relation and the performed Work
 
-Using `MDPE.22`, the team selects one change to the surroundings: a protected twenty-minute
-social-practice block with a host, admitted participants, a usable floor, event-volume sound, and permission for
-the live coder. The organizer performs the scheduling and event-change Work; the musician and sound operator use
-their direct Methods to configure the musical and sound conditions. The trial now has its event block, floor,
-permission, and host. Having these conditions does not yet show that participants perform the intended Dance practice.
+With `MDPE.22`, the team chooses a protected twenty-minute block for social practice.
+The organizer schedules it, admits participants, arranges the host and floor, and
+secures permission for the live coder. The musician and sound operator configure the
+music and the sound at event volume. The team can now establish that these conditions
+were available. To find out how the pairs danced, it uses observations of their work.
 
-`MDPE.5` integrates the direct Dance, live-coding Music, sound, and event results for one representative pair's
-two-minute Dance Work inside the larger trial. `MDPE.12` then compares observations from all eight pairs. In the
-first round, three pairs preserve partner-responsive timing through the live-coded changes. Five pairs revert to
-a memorized phrase after a dense accent change, and four pairs on the far side report that the pulse becomes
-hard to locate. The observation supports a local integration failure under these conditions. Applause and a
-short video do not answer the partner-use question.
+With `MDPE.5`, the team examines how the dancers’ actions, live-coded music, sound and event arrangements combined in one representative
+pair’s two-minute performance. With `MDPE.12`, it compares observations of all eight pairs. Three keep responding to
+their partners through the musical changes. Five revert to a memorized phrase after a dense change in accent. Four pairs
+on the far side say the pulse became hard to locate. These observations identify the recorded timing responses and the
+reported difficulty on that side. They leave open how much the musical change, the sound there or another condition
+contributed. Applause indicates an audience response. The short video in this case leaves the use of partner cues open. A recording that shows a cue and a particular partner’s response can support a finding about that pair.
 
 
 
 ### MDPE.Application:1.4 - Choose and perform one local change
 
-The team first proposes a longer verbal explanation. `MDPE.14` exposes this as a poor candidate: it moves burden
-to participants but does not change the simultaneous Music–Dance relation that failed. The team compares three
-responses: keep the showcase configuration, constrain musical changes during partner-cue intervals, or keep
-different configurations for showcase and social-practice use. It selects the split-use response and a bounded
-trial of the social-practice configuration. The decision preserves the showcase branch instead of calling it
-wrong for every use.
+The team considers giving a longer verbal explanation. With `MDPE.14`, it asks what such
+an explanation could change. It might clarify the task, but it would take participants’
+time and would leave the timing of accents and the sound reaching the far side as they
+were. The team compares keeping the showcase arrangement, limiting musical changes during
+partner cues and using different arrangements for the showcase and social floor. It
+retains the showcase and chooses a trial of a separate social-practice arrangement.
 
-`MDPE.15` now carries the selected response into actual Work. The live coder changes the social-practice
-configuration so that large accent changes do not coincide with the partner-cue interval, and the sound operator
-re-aims the monitor toward the social floor. In a second round, six of eight pairs preserve partner-responsive
-timing; two still depend on teacher cues. The configuration and sound relation changed, and the later observation
-is usable for the next decision. Because two changes occurred together and the pairs had already experienced the
-material, the team records causal contribution as not tested. It does not report that the intervention improved
-the practice as a general fact.
+To carry out the selected trial (`MDPE.15`), the live coder moves large changes
+of accent outside partner-cue intervals. The sound operator re-aims the monitor
+toward the social floor. In the second round, six of eight pairs preserve
+partner-responsive timing and two still depend on teacher cues. The team can use
+that outcome in its next decision. Both the music and monitor changed, and the
+pairs had encountered the material in round one. The comparison leaves open the
+contribution of each change and whether this result would recur with other pairs.
 
 
 
 ### MDPE.Application:1.5 - Choose the next Work and stop before a cultural claim
 
-`MDPE.7` compares four live options: buy the festival slot, repeat the social-practice trial with unfamiliar
-partners and reversed round order, return the two cue-dependent pairs to capability development, or stop the
-social branch while retaining the showcase branch. The comparison uses the intended social use, partner
-readability, safety, performer burden, available time, and what another observation can change. The team chooses
-one unfamiliar-partner transfer trial and keeps the present event block for one month. It does not buy the larger
-slot yet.
+With `MDPE.7`, the team compares buying the festival slot, trying unfamiliar partners with
+the round order reversed, arranging capability development for the two cue-dependent pairs,
+and stopping the social trial while retaining the showcase. It considers partner readability
+and safety, performer effort, the time available and what another observation could
+change for the intended social use. It chooses one unfamiliar-partner transfer trial,
+retains the twenty-minute event block for one month and defers buying the larger slot.
 
 
 
-The case stops without `MDPE.17`, `MDPE.19`, or `MDPE.24`: no second receiving group, delayed reproduction, or
-independently persistent whole is yet part of the decision. If the team asks whether another receiving group can
-perform representative Work that enacts the received Method, whether the practice continues after a season, or
-whether a new cultural whole has formed, the team opens the corresponding pattern to state what the available
-evidence supports and what a stronger claim still needs. Further observation follows that pattern's actual
-conditions for inquiry.
+The present decision ends here. If the team later asks whether or how another group used
+a method offered to it, use `MDPE.17`. To establish whether the practice continued
+after a season, use `MDPE.19`. To examine whether a distinct cultural organization
+existed or formed, use `MDPE.24`. Answer the relevant question from the available
+work and records. Where they leave a consequential gap, report the limit or
+obtain a further observation whose likely contribution warrants its cost.

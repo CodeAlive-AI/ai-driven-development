@@ -10,7 +10,7 @@
 
 **Use this when** accepted semantic mappings exist and the current question is whether to evaluate them at query time, persist integrated results, or combine both. Enter also when a graph database, warehouse, federation, cache, search index, API composition, or “virtual knowledge graph” has already been proposed and its semantic consequences need comparison.
 
-The primary EntityOfConcern is one realization decision for a named semantic-integration use. The first move is to derive realization-sensitive criteria from the use contract and mapping specification. The first result is a bounded choice, probe, rejection, or missing-input return that leaves physical implementation and operation with their owners.
+For the named integration use, derive the criteria for choosing a realization from the use contract and mapping specification. The result may be a bounded choice, probe, rejection or missing-input return. The responsible providers retain physical implementation and operation.
 
 The payoff is a realization selected because it preserves the required meanings and service conditions, not because one carrier is fashionable or already available. Do not use SIE.8 to build, deploy, or operate a data service, select a whole enterprise platform, authorize access, or prove that the interface works. Data Engineering, platform, security, provider, finance, and other direct owners supply those results.
 
@@ -40,11 +40,11 @@ First use decisive conditions to exclude arrangements that cannot serve the cont
 #### SIE.8:4.1 - Pattern-Use Unfolding
 
 1. **Fix the receiving result.** Reference the `SIE.1` answer, `SIE.7` rules, required source/identity/claim branches, and validation conditions that a successful candidate must preserve.
-2. **Apply decisive exclusions.** A known source prohibition or other sufficient condition can defeat an arrangement. Record the condition and evidence needed for that conclusion and stop developing the excluded alternative. If no serious candidate remains, return the bounded rejection or the exact missing result.
+2. **Apply decisive exclusions.** A known source prohibition or other sufficient condition can defeat an arrangement. Record the condition and evidence needed for that conclusion and stop developing the excluded alternative. If no serious candidate remains, return the bounded rejection or identify the missing result.
 3. **Describe a serious virtual alternative.** When query-time access remains a candidate, state source access, rule evaluation, pushdown or mediation, credentials, latency/availability behavior, provenance capture, and failure return.
 4. **Describe a serious materialized alternative.** When copying remains a candidate, state copied or derived state, snapshot identity, refresh/invalidation, storage and custody, source deletion/correction behavior, provenance, recovery, and exit.
 5. **Describe a hybrid where warranted.** Identify which permitted subset is materialized and which source-sensitive part remains virtual. State coherence, invalidation, and fallback behavior. Confirm permission for each subset selected for copying.
-6. **Compare complete remaining arrangements.** Use the conditions that can change the receiving result: freshness, latency, availability, access, protection, source authority, reproducibility, provenance, operability, recovery, cost, and semantic loss. Include concurrent source calls, shared credentials, trace, retries, support, and other demands within each applicable resource envelope. Pairwise feasibility cannot establish a jointly infeasible arrangement.
+6. **Compare complete remaining arrangements.** Use the conditions that can change the receiving result: freshness, latency, availability, access, protection, source authority, reproducibility, provenance, operability, recovery, cost, and semantic loss. Include concurrent source calls, shared credentials, trace, retries, support, and other demands within each applicable resource envelope. Every pair of contributions may fit a shared limit even when the demands of all the contributions together exceed it.
 7. **Examine relevant failure and change cases.** Use the source outages, corrections, access changes, mapping changes, stale or partial refresh, provenance loss, and recovery cases needed for the proposed conclusion. Earlier sufficient evidence can support a bounded rejection; a positive selection needs its load-bearing conditions.
 8. **Choose or identify worthwhile further work.** Select a supported arrangement, reject it, or return the missing result. Commission a discriminating probe only when its obtainable result can change the decision enough to justify its full burden and displaced work. Keep an unresolved comparison explicit when further inquiry is unavailable or not worthwhile. State the reasons for the disposition that its receiver needs.
 9. **Name implementation returns for a selected choice.** Identify the Data Engineering, platform, provider, security, legal, finance, or operating results required to realize that choice.
@@ -52,7 +52,7 @@ First use decisive conditions to exclude arrangements that cannot serve the cont
 
 #### SIE.8:4.2 - Record the Result
 
-The result follows the conclusion actually supplied. A sufficient rejection of one proposed arrangement is complete with the receiving use, named proposal, decisive grounds and evidence, scope, and material limits. It does not require a comparison with unrequested alternatives or an implementation and interface design.
+A sufficient rejection of one proposed arrangement is complete with the receiving use, named proposal, decisive grounds and evidence, scope, and material limits. It does not require a comparison with unrequested alternatives or an implementation and interface design.
 
 | Decision content | When it is needed | Content supplied |
 | --- | --- | --- |
@@ -61,11 +61,11 @@ The result follows the conclusion actually supplied. A sufficient rejection of o
 | Candidate arrangements and comparison | A comparison remains live or a positive choice is made | Serious remaining alternatives as complete arrangements: required semantic branches, access, state, execution, currentness, latency, provenance, protection, failure, operation, recovery, exit, and joint resource demand. |
 | Failure/change evidence | The supplied conclusion depends on it | Evidence for its load-bearing conditions. One qualified prohibition can suffice for rejection; positive selection needs the relevant failure and change cases for the claimed arrangement. |
 | Further inquiry | A probe is proposed | Obtainability, possible decision contribution, full burden, displaced work, and how its result can change the decision. |
-| Implementation returns | A realization has been selected | Exact required direct-owner results, what is supplied or still missing, and the acceptance evidence needed to realize that choice. |
+| Implementation returns | A realization has been selected | Required results from the responsible providers, what is supplied or still missing, and the acceptance evidence needed to realize that choice. |
 | Interface semantics | A selected realization or receiving result needs them | Currentness, source/error, incomplete-result and fallback meanings supplied to SIE.9. |
 | Continued reliance | A condition can materially change the result's use | The observation, source change, or receiving change that reopens the affected decision. |
 
-A positive choice cannot use the rejection boundary to omit a condition on which that choice relies. The selected arrangement and its implementation returns remain qualified by all their actual semantic, service, access, and resource conditions.
+A positive choice cannot use the rejection boundary to omit a condition on which that choice relies. The selected arrangement and its implementation returns remain qualified by all the semantic, service, access and resource conditions they depend on.
 
 #### SIE.8:4.3 - What Changes in Practice
 
@@ -99,7 +99,7 @@ The decision selects the hybrid arrangement because stable semantic premises can
 
 ### SIE.8:7 - Conformance Checklist
 
-Check the conclusion being returned. Only its applicable checks need an answer.
+Apply the checks below to the conclusion you are returning.
 
 **For every result**
 
@@ -121,7 +121,7 @@ That rejection completes the Method when it answers the requested question. The 
 - [ ] Security/privacy and runtime credential differences are compared where they can change the result.
 - [ ] Reproducibility and provenance behavior are specified for the candidate's virtual occurrences and copied state.
 - [ ] Relevant outage, access, mapping, correction, refresh, provenance-loss, and recovery cases support the proposed conclusion.
-- [ ] For a selected realization, exact implementation and operating results remain with their direct owners, and SIE.9 receives the required currentness, error, incomplete-result, and fallback meanings.
+- [ ] For a selected realization, the required implementation and operating results remain with their direct owners, and SIE.9 receives the required currentness, error, incomplete-result, and fallback meanings.
 
 **For a proposed inquiry**
 
@@ -132,11 +132,11 @@ That rejection completes the Method when it answers the requested question. The 
 | Anti-pattern | Repair |
 | --- | --- |
 | “Knowledge graph” as the requirement | Restate the receiving result and compare graph and non-graph realizations. |
-| Virtual means no state | Record mappings, caches, credentials, query occurrences, source snapshots, and provenance state actually required. |
+| Virtual means no state | Record the state the virtual arrangement needs. Depending on the use, this can include mappings, caches, credentials, query occurrences, source snapshots and provenance. |
 | Materialized means reliable | Test refresh, invalidation, correction/deletion, recovery, and source-authority changes. |
 | Hybrid means best of both | Expose coherence, invalidation, fallback, and doubled operating responsibilities. |
 | Product feature checklist | Compare serious arrangements on use-sensitive criteria, joint resource demand, and relevant failure cases. |
-| Decision equals implementation | Name the exact build, provider, security, and operating results still missing. |
+| Decision equals implementation | Name the build, provider, security, and operating results still missing. |
 
 ### SIE.8:9 - Consequences
 
@@ -146,7 +146,7 @@ The cost is comparison beyond the preferred platform and coordination with opera
 
 ### SIE.8:10 - Rationale
 
-Virtual and materialized are not merely deployment choices: they change when and where mappings execute, which state is copied, how provenance and currentness are established, and which failures reach the receiver. Those changes can alter semantic adequacy, so SIE owns the bounded comparison while direct practices own implementation and operation.
+Choosing virtual or materialized access changes when and where mappings execute, which state is copied, how provenance and currentness are established, and which failures reach the receiver. Those changes can alter semantic adequacy, so SIE owns the bounded comparison while direct practices own implementation and operation.
 
 ### SIE.8:11 - SoTA-Echoing
 

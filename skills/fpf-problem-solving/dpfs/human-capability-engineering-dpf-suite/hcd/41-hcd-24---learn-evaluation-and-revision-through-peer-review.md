@@ -5,27 +5,27 @@
 
 ### HCD.24:0 - Use This When
 
-Use this pattern when people need to learn how to judge work, explain a consequential judgement, use feedback or revise their own work. A peer-review assignment can produce many comments while leaving both the reviewer's reasoning and the author's next action undeveloped.
+Use this method to design or support learning through peer review, or to assess what a past exchange shows about a learner’s judgement or use of feedback. A collection of comments may leave the reviewer’s grounds unknown and the author unsure what to change or retain.
 
-The governed object is a **peer-review learning exchange**. It connects the reviewer's evaluative action with the author's reasoned response and revision. Broader peer review also serves publication, certification and production quality; those purposes retain their subject criteria and authority. Here the first useful result is an inspectable judgement and its use or warranted rejection, with each learner's contribution distinguishable.
+A **peer-review learning exchange** connects a reviewer’s judgement with an author’s response. Identify which participant’s action the task requires and how the design supports it or the existing work shows it. The author may adopt, adapt or reject advice, retain sound work or return an unresolved question. When an accepted issue calls for a change, distinguish the proposed response from the revised work. Publication, certification and production review keep their own criteria and authority.
 
-Begin with permitted work that participants can understand, a criterion and available help for consequential uncertainty. If only a qualified decision on a work product is required, obtain that review directly. If the present purpose is a learner's evaluative judgement, an AI-generated comment cannot perform that human action for them.
+Use permitted work the learners can understand, a usable criterion and help for uncertainty that matters. For a professional judgement on a work product, use an adequate existing review or obtain one from a qualified reviewer. To assess a learner’s evaluative judgement, establish which judgement the learner made and what help they used.
 
 #### HCD.24:0.1 - Working Terms
 
 | Term | Meaning here |
 | --- | --- |
 | criterion | The subject condition used to judge an identified part or property of the work. |
-| calibration | Comparing judgements on shared material with a qualified account of the criterion and resolving action-changing differences. |
+| calibration | Comparing judgements on common material with a qualified account of the criterion. Resolve differences that matter to the judgement, or identify the remaining disagreement. |
 | comparative review | Judging one work using a comparable work to make a relevant difference discernible. |
 | actionable feedback | A located issue or strength, its grounds and consequence, and an intelligible next action or reason to retain the work. |
-| author response | The author's reasoned adoption, modification, rejection or unresolved return, followed by the corresponding work where needed. |
+| author response | The author explains why they adopt, adapt or reject feedback, or identifies an open question. When the response calls for a revision, the author makes it. Evidence of the revised work supports a claim that the repair was made. |
 
 ### HCD.24:1 - Problem Frame
 
 A learner writes that a peer's analysis is clear and convincing. The analysis has selected a cause that its observations do not distinguish. A rubric naming correctness gives the learner a category but may not show how to inspect the missing inference. Later the author receives a score and cannot determine what to change.
 
-Teaching both sides requires accessible criteria, examples that expose the relevant feature, a genuine judgement and a usable return. It also requires time: reading, comparison, feedback, a response, revision and unresolved disputes all consume work. Treating peers as free preliminary assessors can erase the very capability the exchange was intended to develop.
+When teaching both sides, make the criteria and relevant features accessible and give the reviewer and author opportunities to judge and respond. Include the time needed to read, compare, give feedback, respond, revise and resolve material disputes. Assess any saving in expert time separately from what the learners need to do.
 
 ### HCD.24:2 - Problem
 
@@ -43,51 +43,51 @@ How can peer review develop evaluative judgement and revision while giving the r
 
 #### HCD.24:4.1 - Identify what each side is learning
 
-State whether the reviewer must notice a defect, apply a criterion, compare alternatives, explain a judgement or propose a repair. State whether the author must interpret feedback, challenge a ground, revise or preserve a sound choice. These can be separate targets. HCD.6 supplies a representative task and HCD.11 supplies evidence for a later performance claim.
+Identify the reviewer’s learning target if there is one. It might be noticing a defect, applying a criterion, comparing alternatives, explaining a judgement or proposing a repair. On the author’s side it might be interpreting feedback, questioning a ground, revising or retaining a sound choice. Use HCD.6 for a representative task and HCD.11 when a later claim needs evidence of personal performance.
 
-Select a bounded piece of work that exposes the target. Give its purpose, relevant constraints and permitted source context. A peer can judge whether a recommendation follows from the stated evidence without becoming qualified to approve the entire engineering project. Explicitly return a subject question that exceeds this scope to a capable provider.
+Select or use a bounded piece of work that exposes the target, with its purpose, constraints and permitted sources. A peer can judge whether a recommendation follows from the evidence given. Approving a project requires the relevant qualifications and authority. For a necessary question beyond the reviewer’s scope, use a qualified existing answer, refer the narrow issue to a capable provider when needed, or state what remains open.
 
-Allocate actual help, review and revision windows through HCD.7. Include the learner time to understand another person's work and the qualified attention needed for calibration and disputes. Reducing expert reading is a possible consequence to test, not the premise that defines the exercise.
+Establish the shared or individual windows and qualified help needed for reading, review, an author’s response, any revision and consequential disputes. Use adequate existing arrangements. HCD.7 can help arrange missing support or identify a capacity limit. Estimate a potential saving in expert time from the proposed workloads; to report an actual saving, compare the work incurred under the relevant arrangements.
 
 #### HCD.24:4.2 - Make the criterion usable
 
-Explain what the criterion asks of this work and show a small contrast when a label is insufficient. HCD.6.1 supplies that contrast. Ask learners to locate the decisive feature and make a judgement before showing the qualified rationale when independent application is the current question.
+Explain how the criterion applies to the work. If its name leaves the decisive feature unclear, show a small contrast or use HCD.6.1 to construct one. To assess independent application, ask the learner to locate the feature and judge it before receiving a rationale that supplies the judgement. An eligible existing response can provide that evidence.
 
-Compare their grounds with the qualified account. A difference can expose a learner misconception, ambiguous task information, a defective criterion or a legitimate alternative. Resolve which it is. Calibration is useful when those differences can change later review; it need not become a long prerequisite exercise for an already competent reviewer.
+When calibration is needed, compare the learner’s grounds with the qualified account. Differences may reveal a misconception, ambiguous task information, a defective criterion or a legitimate alternative. Establish the supported explanation or indicate which ones remain open. A reviewer already applying the criterion adequately can proceed.
 
-Give feedback on the reasoning, not only on agreement with a reference score. If both reviewers select the same answer for incompatible reasons, inspect that difference. If the reference answer itself is disputed, repair it or qualify the unresolved criterion before using it to judge learners.
+Give feedback on how the reviewer reached the judgement. If reviewers reach the same answer on incompatible grounds, examine the difference when it matters. If the reference answer is disputed, establish or correct its grounds, or state the limits on using it to judge learners.
 
 #### HCD.24:4.3 - Choose and present comparable material
 
-Use a single work when its relevant property can be judged directly. Use comparison when an otherwise hidden relation becomes discernible through another case. Make the comparable parts and their conditions available together: for example, each case's observation, model assumption and recommendation. Equal document length and a common template do not make unlike purposes comparable.
+Use one work when its relevant property can be judged directly. When comparison makes a feature discernible, make the corresponding parts and their conditions available together, such as each observation, model assumption and recommendation. Establish whether the purposes support the comparison. Equal length or a common template leaves that question open.
 
-Ask what difference warrants a different judgement on the selected criterion. A work can be preferable on one property and inadequate on another. Keep legitimate alternatives and incomparable results available; do not force a total ranking when the question does not support one.
+Establish whether a difference warrants a different judgement on the selected criterion. A work may be preferable on one property and inadequate on another. Report equal or different judgements, legitimate alternatives or a supported finding that the works are incomparable. Identify a missing ground when the comparison remains unresolved.
 
-For a sequence of comparisons, retaining one familiar case can reduce rereading while introducing another contrast. Budget the reading and context-switching cost. Long recordings may require permitted aligned excerpts with enough surrounding context. If abridgement removes the decisive relation, obtain a better representation or choose another exercise.
+In successive comparisons, reusing a familiar case can reduce rereading while introducing another contrast. Include reading and context switching in the budget. For long recordings, permitted aligned extracts may provide enough context. If abridgement hides the decisive relation, obtain a suitable representation, select an appropriate exercise or report the limit.
 
-For confidential work, use a permitted fragment, a constructed counterpart retaining the target relation, or a reviewer with appropriate access. A blanked-out assumption may make the review impossible. Preserve that limitation rather than ask the reviewer to guess. HCD.25 develops the related problem of comparing projects for transfer.
+For confidential work, use a permitted fragment, a constructed counterpart preserving the target relation, or a qualified reviewer with the needed access. If a hidden assumption prevents the judgement, state the limit and any criterion that can still be applied. Use HCD.25 when transfer across projects is the question.
 
 #### HCD.24:4.4 - Have the reviewer make and explain the judgement
 
-The reviewer identifies the criterion, locates the relevant passage or action and connects its feature to the judgement. A useful comment then tells the author what can be done: verify a condition, change an inference, add a missing comparison, narrow a claim or retain an effective choice. It need not dictate an entire replacement solution.
+The reviewer identifies the criterion, locates the passage or action and explains how its feature bears on the judgement. Tell the author what the grounds support, such as retaining a sound choice, checking a condition, correcting an inference or narrowing a claim. A well-grounded comment can leave the author to design the repair.
 
-For example, “this conclusion is weak” gives neither the ground nor the next move. “The pressure is unchanged within the stated uncertainty, whereas this resistance explanation predicts an increase under your constant-efficiency assumption; revise the causal conclusion or supply a supported different account” identifies the discrepancy and a bounded action. The subject assumptions must actually be available.
+For example, “this conclusion is weak” gives neither the ground nor the next move. “The pressure is unchanged within the stated uncertainty, whereas this resistance explanation predicts an increase under your constant-efficiency assumption; revise the causal conclusion or supply a supported different account” identifies the discrepancy and a bounded action. The reviewer needs access to the subject assumptions on which that judgement rests.
 
-If AI assists with locating passages, language or a possible counterexample, keep the human's evaluation contribution visible. Decide beforehand which operation the learner must perform, and preserve their initial judgement when that evidence matters. A subsequent tool suggestion can support revision. Interpret the corrected judgement under the help actually used. Tool output used only to supply a competent service has a different learning claim.
+For a new exercise, identify the judgement the learner must make before AI or another provider locates a passage, proposes wording or offers a counterexample. If independent judgement is at issue, preserve the first response before the decisive inference is shown. Later help can support a revision. For completed work, establish what the learner did, what help they received and what they used. A qualified supplied comment can directly serve the product-review task.
 
 #### HCD.24:4.5 - Complete the author's side and resolve consequential disagreement
 
-The author reconstructs the comment's ground, then decides whether to adopt it, adapt its proposed repair, reject it with a reason or return an unresolved question. Require an actual revision when the accepted issue needs one. Preserve the earlier passage sufficiently to inspect what changed; a list of comments marked resolved cannot show the repair.
+The author identifies the grounds for a comment and adopts, adapts or rejects it with a reason, or states what remains unresolved. If an accepted issue calls for revision, make the revision and keep enough of the earlier work to inspect what changed. A resolved flag can record disposition. To establish repair, examine the revised work.
 
-On disagreement, first align the task and criterion. Ask whether the reviewer inspected the right condition and whether the author supplied it. For a subject disagreement beyond the peers' competence, send the narrow question and relevant evidence to the prepared provider. The provider can explain a missing principle or decide a protected matter without rewriting both learners' entire work.
+For a consequential disagreement, align the task and criterion, then check which condition the author supplied and which one the reviewer inspected. Use a qualified existing source when it settles a question beyond the peers’ competence. If a prepared provider is needed and available, send the narrow question and relevant evidence. A protected decision belongs to its authorized holder. If the needed answer is unavailable, state what remains unresolved.
 
-Return the resolution to both sides. The author changes or retains the work for that reason; the reviewer compares their original judgement with the decisive ground and corrects or retains it accordingly. Where the learning target includes later independent evaluation, use a fresh case after this assisted resolution. Formal release, grading or authorization remains with the designated assessor.
+Return a consequential resolution to the affected participants. For an actual exchange, establish how the author changed or retained the work and how the reviewer corrected or retained their judgement, to the extent the question concerns each person. A correction with help supports the work done under that assistance. For a later independent performance claim, use a suitable independent case or existing evidence of one. Formal release, grading and authorization remain with their designated holders.
 
 #### HCD.24:4.6 - Distinguish the resulting evidence
 
-Keep at least the distinctions that matter to the receiving question: useful feedback produced, feedback used, work improved, reviewer judgement demonstrated and author capability demonstrated. One can improve while another remains unknown. HCD.9 supports another attempt, HCD.11 interprets bounded performance and HCD.12 tests a material change when transfer is claimed.
+Report what the receiving question needs. Feedback produced, feedback used, improvement of the work, the reviewer’s demonstrated judgement and the author’s demonstrated ability to respond or revise can each have different evidence. Use HCD.9 when another attempt is warranted, HCD.11 for bounded performance and HCD.12 when transfer under a material change is in question.
 
-Recognize this method from the practical problem of ungrounded comments or unusable feedback. Stronger assurance needs qualified criteria, accessible comparable material, actual independent or assisted responses as declared, and the author's retained or revised work. Stop the exchange when the present judgement and repair are settled. Reopen only the affected use when a source, criterion, permission or learner requirement changes.
+Ungrounded comments or unusable feedback can reveal a learning need. For assurance, examine the qualified criterion, the relevant work, any comparison material, the participant contributions and help, and the author’s retained or revised work as the claim requires. Finish when the evidence answers the requested judgement or establishes its limit. If the assignment includes a repair, establish that the needed change was made before reporting completion. Reopen the affected use when a changed source, permission, criterion or learning requirement matters.
 
 ### HCD.24:5 - Archetypal Grounding
 
@@ -95,17 +95,17 @@ Recognize this method from the practical problem of ungrounded comments or unusa
 
 This constructed exercise uses HCD.22's personal diagnostic case. Pressure is already measured at 400 ± 4 kPa; flow is 99.5 ± 1 m³/h and power 22.3 ± 0.2 kW, compared with the supplied baseline of 100 m³/h, 400 kPa and 20 kW. The task's qualified account states what the constant-efficiency resistance explanation would predict. No further worthwhile observation is obtainable within the case.
 
-Work A correctly computes the approximate increase in the power-to-flow indicator, then recommends correcting increased resistance. Work B preserves the indicator change but says the unchanged pressure fails to support that simple explanation under its assumptions. The review criterion is whether the recommendation is warranted by the supplied evidence, rather than which work sounds more decisive.
+Work A correctly computes the approximate increase in the power-to-flow indicator, then recommends correcting increased resistance. Work B preserves the indicator change but says the unchanged pressure fails to support that simple explanation under its assumptions. The review criterion is whether the supplied evidence warrants the recommendation.
 
-The reviewer first prefers A because it offers an action. Comparing the observation-to-recommendation parts reveals the missing inferential step. Calibration asks the reviewer to identify the expected pressure under A's account and compare it with the measured pressure. The reviewer then returns a specific comment: retain the arithmetic, withdraw the resistance-specific remedy and state the remaining explanation question and present limit.
+The reviewer first prefers A because it offers an action. During calibration the reviewer is asked what pressure A’s explanation predicts under its assumptions. Comparing the predicted pressure with the measurement exposes the missing inference. The reviewer asks the author to retain the arithmetic, withdraw the resistance-specific remedy and state the remaining explanation question and present limit.
 
-The author accepts the mismatch but initially adds “take another pressure reading.” The reviewer points to the already obtained reading and exhausted useful-observation condition. The author replaces that instruction with a bounded conclusion and a return for a qualified alternative explanation if the receiving work requires one. A prepared mentor resolves any dispute about the subject model; peers do not authorize a real plant intervention.
+The author accepts the mismatch but initially adds “take another pressure reading.” The reviewer points to the already obtained reading and exhausted useful-observation condition. The author replaces that instruction with a bounded conclusion and a return for a qualified alternative explanation if the receiving work requires one. A prepared mentor is available for any unresolved question about the subject model. A real plant intervention would need the appropriate operating authority.
 
-Both sides now have a learning result to inspect. The author revised the inference; the reviewer corrected a preference for actionable-sounding text and applied the criterion. The initial and helped judgements remain distinct. The contrasting case in §5.3 supplies a supported action recommendation. These exchanges require their own preparation, time and qualified help in HCD.28's product cost.
+The author revised the inference. The reviewer changed the initial preference for actionable-sounding text and applied the criterion with help. Preserve that distinction when judging the learning. Section 5.3 examines a case in which the recommendation stands. Include the preparation, time and qualified help each exchange requires in HCD.28’s product cost.
 
 #### HCD.24:5.2 - When comparison cannot be made
 
-Two internal teams offer review material. One can disclose a full assumption-to-result fragment; the other can disclose only a recommendation. Ranking the recommendations would ask peers to infer the absent ground. The organiser obtains a permitted constructed counterpart with the same relevant relation, or limits the second review to clarity. The learner can still practise the first criterion on suitable material, but the closed project has not received that review.
+Two internal teams offer material. One may disclose the full assumption-to-result passage. The other can disclose only its recommendation. The reviewer cannot inspect the grounds of the second recommendation. A permitted constructed counterpart can preserve the relation for learning, or the disclosed recommendation can be reviewed for clarity. Neither supplies a judgement on the undisclosed grounds of the second project.
 
 #### HCD.24:5.3 - Retaining a warranted recommendation
 
@@ -113,39 +113,39 @@ A separate constructed instrument-check exercise supplies two reference values, 
 
 The author recommends the permitted referral and a new check before the instrument returns to use. The peer objects: “You have not distinguished a sensor fault from an electronics fault; withdraw the recommendation until you can.” The author accepts that the physical cause remains unknown but rejects the requested withdrawal. Both pairs of readings are six units above their references, outside the stated tolerance. The recommendation invokes the supplied referral criterion; it does not claim a component diagnosis or prescribe an adjustment.
 
-A prepared instructor receives the disputed recommendation, readings and procedure. The narrow question is whether the missing component diagnosis defeats this next action. The instructor confirms that the referral criterion is met and explains the separate authority needed for adjustment and return. Both learners receive that resolution. The author retains the recommendation and its bounded ground. The reviewer withdraws the cause-demanding objection and replaces it with a supported judgement: the referral follows, while the cause and fitness after service remain to be established. The correction changes the reviewer's own criterion application instead of merely marking the author's comment resolved.
+A prepared instructor receives the disputed recommendation, readings and procedure. The narrow question is whether the missing component diagnosis defeats this next action. The instructor confirms that the referral criterion is met and explains the separate authority needed for adjustment and return. Both learners receive that resolution. The author retains the recommendation and its bounded ground. The reviewer withdraws the cause-demanding objection and replaces it with a supported judgement: the referral follows, while the cause and fitness after service remain to be established. The reviewer’s revised judgement provides evidence of using the referral criterion with the instructor’s help.
 
-After the initial reading and comments, this example reserves a ten-minute shared window: three minutes for the author's ground, four with the prepared instructor, and three for the corrected review and author's response. The resolution therefore adds twenty learner-minutes and four instructor-minutes; initial preparation and review are counted separately. If the instructor must first reconstruct the procedure or the dispute remains unresolved, that larger requirement returns to the arrangement. A later independent case, if required, tests the reviewer's new judgement; the helped correction alone does not establish it.
+After the initial reading and comments, this example reserves ten minutes with both learners. Three minutes are for the author’s grounds, four with the prepared instructor, and three for the reviewer’s correction and author’s response. The resolution adds twenty learner-minutes and four instructor-minutes. Count initial preparation and review separately. If the instructor must reconstruct the procedure or the dispute persists, allow for the additional work or state what remains open. A later independent case can test the reviewer’s independent judgement when that is required.
 
 ### HCD.24:6 - Bias-Annotation
 
-Politeness can suppress a needed objection; competitive ranking can turn a local judgement into a judgement of the person. Use the criterion, the work and its conditions as the object of criticism. More comments and longer comments do not establish a better inference or more learning.
+Politeness can suppress a warranted objection, and competitive ranking can turn criticism of a work into a judgement of the person. Apply the criterion to the work and its conditions. Use the reasoning or performance to assess a claim of improvement. Comment counts and lengths show how much commentary was produced. They do not establish that its inferences or the learner’s performance improved.
 
 ### HCD.24:7 - Conformance Checklist
 
-- Reviewer and author learning contributions are named separately.
+- Identify which learning contribution is required of the reviewer, the author or both.
 - The criterion is understandable and supported for the actual work.
-- Compared parts retain the context that makes the comparison meaningful.
-- The reviewer supplies a judgement and grounds under declared assistance.
-- The author uses or rejects the feedback with a reason and performs needed revision.
-- Consequential disagreement has a competent return with real capacity.
+- When works are compared, retain the context that makes their parts comparable.
+- For a claim about the reviewer, establish the judgement they made, its grounds and the assistance they received or used. For independent judgement, establish that the decisive rationale had not already been supplied.
+- For a claim about the author, establish their reasoned response and any revision the accepted issue required.
+- For consequential disagreement, identify the qualified answer, a feasible way to obtain it or the issue that remains open.
 - Feedback quality, product quality and personal learning claims remain distinguishable.
 
 ### HCD.24:8 - Common Anti-Patterns and How to Avoid Them
 
 **A rubric label teaches judgement.** Develop the decisive distinction and calibrate when needed.
 
-**The review is a popularity vote.** Resolve the criterion and grounds before counting preferences.
+**Treat a review as a popularity vote.** Judge the work using its criterion and evidence. If preferences are also relevant, establish whose preferences were expressed.
 
-**AI wrote the comment, so the reviewer practised.** Inspect the learner's required operation.
+**Give a learner credit for an AI-generated judgement.** Establish which evaluative operation the learner performed and the help they used.
 
 **The author must accept every comment.** Teach reasoned use, including warranted rejection.
 
-**Peer review is only a filter for the teacher.** Preserve the reviewer's own learning purpose and the author's use, alongside any required qualified assessment.
+**Count only savings in assessor time.** When learners are meant to judge work or use feedback, include the time and conditions those actions require. Retain qualified assessment where the product or decision needs it.
 
 ### HCD.24:9 - Consequences
 
-The exchange can develop judgement on both sides while improving a work product. It also reveals the costs and limits of peer provision. Some disputes or protected decisions still need qualified assistance, and some work cannot be compared under the available disclosure conditions.
+A peer exchange can improve a work product and give either learner practice in judgement or revision. A disputed criterion may need a qualified source. A protected decision requires its authorized holder. Disclosure limits can prevent a comparison. Include the full burden of supplying the exchange when assessing its cost or feasibility.
 
 ### HCD.24:10 - Rationale
 
@@ -155,10 +155,10 @@ An evaluative distinction becomes useful when a learner can locate its evidence,
 
 [Cambre, Klemmer and Kulkarni's Juxtapeer, 2018](https://d.ucsd.edu/srk/papers/2018/Juxtapeer-CHI2018.pdf) supplies aligned comparative review, overlapping pairs and feedback shown with its comparison context. Its reported feedback/reflection quality and ranking findings do not quantify learning gains or transfer. Sections 4.3–4.5 adapt that construction; calibration remains another useful option when learners need a qualified criterion before judging.
 
-The [CMU Feedback Partner study, 2025](https://www.cmu.edu/teaching/gaitar/gaitaratscale/feedbackpartner.html) found no added writing benefit from giving two reviews on top of its AI-feedback condition. This limits a general promise of automatic benefit. Use that result for the writing outcome it assessed; a claim about learning to review needs evidence of the required judgement. Compared with feedback provision alone, retain peer judgement when that operation is part of the intended capability, and observe it directly. Reconsider the exercise if it adds no needed learning contribution or if another supported arrangement serves the same target at lower full burden.
+The [CMU Feedback Partner study, 2025](https://www.cmu.edu/teaching/gaitar/gaitaratscale/feedbackpartner.html) found no added writing benefit from giving two reviews on top of its AI-feedback condition. Use the study for the writing outcome it assessed. If learners need to develop reviewing judgement, give them an opportunity to apply the criterion and use evidence of their judgements under the stated conditions. Reconsider the exercise if it adds no needed learning contribution or if another supported arrangement serves the same target at lower full burden.
 
 ### HCD.24:12 - Relations
 
-HCD.6 and HCD.6.1 supply the task and discernible criterion; HCD.7 and HCD.8 supply qualified help, access and capacity. HCD.9 supplies feedback and correction, HCD.11 and HCD.12 the relevant personal judgement and transfer observation. HCD.23 develops mutual explanation; HCD.25 carries a relation across projects. HCD.20, HCD.21 and HCD.27 supply feasible grouping, contact and timing. HCD.28 includes the complete exchange and its costs in a product. Subject assessment and authorization remain with their competent owners.
+Use HCD.6 or HCD.6.1 for a needed representative task or discernible contrast, HCD.7 or HCD.8 for help, access or capacity, and HCD.9 for feedback or correction. HCD.11 addresses the relevant personal performance and HCD.12 transfer under a material change. HCD.23 develops mutual explanation and HCD.25 comparison across projects. Use HCD.20, HCD.21 or HCD.27 where grouping, contact or timing matters, and HCD.28 when incorporating the exchange and its costs into a whole product. Seek subject assessment from a competent source and a protected decision from the authorized holder.
 
 ### HCD.24:End

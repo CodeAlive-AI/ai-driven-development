@@ -7,7 +7,7 @@
 
 **Use this when** an operating result may no longer meet its requirement, observed service failures exceed the agreed allowance, a recurring process changes, a lot needs acceptance or an incident raises a containment, recovery or recurrence-prevention question.
 
-Begin with the result at risk, the affected population or configuration, and the action someone is authorized to take. Select the evidence method for that question. The first useful result is a decision about the affected work, service or output, together with the next action and the evidence and conditions needed to support it.
+Begin with the result at risk, the affected population or configuration and the applicable requirement. Use evidence suited to the question. State what it establishes, including any scope or uncertainty. If a response is needed, identify the available action, authority and conditions, or what prevents a decision.
 
 This pattern governs operating decisions about quality and reliability. A monitoring account is one input. A qualified product requirement, clinical decision, statistical method or engineering acceptance result may be another. If the question is only how to define and reconcile observations, use OPS.15. If a current response policy and adequate evidence already settle the action, apply them directly.
 
@@ -37,23 +37,23 @@ State the operating result at risk: conforming output, correct responses, timely
 
 Use the actual requirement. A product specification, an agreed service objective and a statistical control limit answer different questions. A control limit describes variation under its model. A requirement states what the result must satisfy. Recover each from its appropriate basis.
 
-If a known violation already calls for a protective action, take that action under the current authority while obtaining the missing diagnosis or recovery result. A broad data analysis is unnecessary before a response already required by the observed condition.
+If a known violation already calls for a protective action, take that action under the current authority and pursue any diagnosis or recovery result still required. A broad data analysis is unnecessary before a response already required by the observed condition.
 
 #### OPS.18:4.2 - Select the evidence branch
 
 | Current question | Evidence method | First operating use |
 | --- | --- | --- |
 | Has a recurring process changed from its established behavior? | A suitable statistical monitor with a qualified baseline, sampling rule and response policy. | Continue observation or investigate and contain the affected process/result. |
-| Is event-based service meeting its objective? | Good/eligible event definitions, observation coverage, window, permitted loss and a response policy. | Adjust continuation or change activity under the service decision. |
+| Is event-based service meeting its objective? | Definitions of good and eligible events, observation coverage, reporting window and permitted loss. | Report the result against the objective. When a response is needed, apply the authorized policy or identify the missing decision. |
 | Should a particular lot or result be accepted? | Its qualified acceptance plan, defect definitions, sampling basis and relevant risks. | Accept, reject, segregate, rework or obtain the missing acceptance result. |
-| Can an impaired service be restored or restarted? | Evidence of the failure, containment or repair, and the required restart conditions. | Restore service under the appropriate authority and continue any unresolved investigation. |
+| Can an impaired service be restored or restarted? | Evidence of the failure, containment or repair, and the required restart conditions. | Restore service when its conditions hold under the appropriate authority. Continue an investigation if the remaining question requires it. |
 | What prevention does an incident or near miss need? | Reconstructed events, material explanations and sufficient support for feasible protective measures. | Select and verify prevention under :4.4, retaining the limits on the causal conclusion. |
 
-Branches can be complementary. Select each because its answer changes the current action. A favorable result from one branch cannot supply the evidence required by another.
+Use the branches whose results affect the response or the grounds for relying on it. A monitoring signal, lot acceptance and authorization to restart each need evidence for that particular conclusion.
 
-For recurring variation, recover whether observations are comparable, whether the baseline is appropriate and whether the selected model fits the data. Independence, changing sample size, seasonality, clustering or rare events can change the required monitor. A simple chart should yield to a qualified statistical method when its assumptions or detection performance are inadequate. Make that request usable: supply the defect/result definition, sampling and grouping, time order, baseline provenance, plausible dependence or drift, losses from false and missed signals, and the latest useful response. Ask for the population and model to which the return applies, detection and false-signal performance at specified changes, observation burden, and a rule the operator can execute. “Use EWMA” or a new control limit without those conditions is not the needed return.
+For recurring variation, check that the observations are comparable, the baseline is appropriate and the model fits the data. Changing sample size, seasonality, clustering, rare events or dependence can change the required monitor. When a simple chart is inadequate, use an applicable qualified design, develop one within your competence or obtain specialist help. Establish the defect or result definition, sampling, grouping, time order, baseline, plausible dependence or drift, costs of false and missed signals, and the latest useful response. A usable design identifies its population and model, detection and false-signal performance at specified changes, observation burden, and the rule the operator can execute.
 
-For an event-based service, define the good and eligible events from the recipient's experience. Check omitted events, important subgroups and observation delay. A fast failure can require a timely alert before an end-of-window aggregate is available.
+For an event-based service, define the good and eligible events at the service boundary that matters to the recipient. Check omitted events, important subgroups and observation delay. A fast failure can require a timely alert before an end-of-window aggregate is available.
 
 For acceptance, recover the lot or item, what counts as a defect, the sampling/inspection method, and the consequences of accepting unacceptable output or rejecting acceptable output. Obtain the qualified plan where it is missing. An operating practitioner can use a supplied plan without deriving its statistical design anew.
 
@@ -71,26 +71,26 @@ A sample acceptance result supports the named lot decision under its plan and ri
 
 Select an action within the available authority: continue with observation, segregate affected output, pause a risky change, adjust admission, restore a known workable configuration, rework a lot or request the needed professional decision. State the affected scope and any service that must continue.
 
-Obtain the capability, access and protected human conditions required for the action. Use OPS.12 and OPS.13 if recovery competes with existing service or relies on extra cover. An urgent label can identify priority; the actual assignment and authority determine who may act.
+Establish that the required capability, access and human protections are in place. Obtain any missing contribution before starting work that relies on it. Use OPS.12 and OPS.13 if recovery competes with existing service or relies on extra cover. An urgent label can identify priority; the actual assignment and authority determine who may act.
 
 Where containment restores service before the cause is known, state what remains unresolved. Enter the following inquiry when prevention still needs an explanation. Extending a correction to new operating conditions requires support for its protective effect there; a stronger causal claim needs evidence for that claim. Reuse sufficient existing results, and apply a qualified correction directly when they settle the action.
 
-1. **Reconstruct the incident.** Recover the failed result and requirement, affected occurrences and configurations, sequence, effects and containment already performed. Obtain the relevant participants' knowledge and permitted records. Distinguish observations from inferred links and identify missing facts that could matter to prevention.
+1. **Reconstruct the incident.** Recover the failed result and requirement, affected occurrences and configurations, sequence, effects and containment already performed. Use sources that cover the events in question, such as observations, permitted records or participants’ accounts. Seek a missing contribution when the reconstruction needs it. Distinguish observations from inferred links and identify missing facts that could matter to prevention.
 2. **Develop the material explanations.** Follow contributing conditions beyond the immediate symptom, allowing several interacting conditions or rival accounts. Use B.5.2 when plausible explanations still need to be developed. For a disputed link, identify the existing observation, established mechanism or attainable test that could support or challenge it. C.28 helps qualify the causal conclusion; domain knowledge and evidence must supply the links in this incident.
 3. **Choose supported prevention.** Compare retaining adequate protection, a narrow configuration or access correction, a change to the reusable way of working and a larger redesign where these are credible alternatives. Assess future exposure and avoidable consequences together with the full effort, delay, displaced service and other burden of each change. C.11 governs the choice; use C.11.CRC when the contribution of a finite change to the present arrangement needs that comparison. Zero loss in a near miss does not remove the exposed future consequence.
-4. **Assign and verify the chosen change.** Name who will deliver it, the required result and its completion conditions. A recurring operating Method change belongs to OPS.16; choosing among ways to retain in an operating repertoire belongs to OPS.17. A local configuration, access or maintenance correction can finish as that correction. Verify completion separately from the restart conditions and later recurrence observations in :4.5.
+4. **Assign and verify the chosen change.** If a change is selected, name who will deliver it, the required result and its completion conditions. A recurring operating Method change belongs to OPS.16; choosing among ways to retain in an operating repertoire belongs to OPS.17. A local configuration, access or maintenance correction can finish as that correction. Verify completion separately from the restart conditions and later recurrence observations in :4.5.
 
 Require sufficient support for the proposed protection under the relevant explanations that remain plausible. If they all support the same available correction, choosing a final causal account is unnecessary for that prevention decision. Retain the unresolved explanation wherever it limits a claim or later use. Obtain another observation when it can change the prevention, its permissibility or burden, or what the evidence warrants saying. If the worth or feasibility of that inquiry is itself unsettled, use C.11.DUA. Applicable protection and evidence requirements continue to govern the action.
 
 #### OPS.18:4.5 - Verify restart and choose the next observation
 
-Recover the condition under which service, normal production or discretionary change may resume. Obtain the observation that actually establishes it: applicable test evidence, a confirmed working configuration, restored service behavior, qualified acceptance or another required result.
+Recover the condition under which service, normal production or discretionary change may resume. Use current evidence that establishes the required condition, or obtain the missing result. Depending on the condition, the basis can be applicable test evidence, a confirmed working configuration, restored service behavior, qualified acceptance or another required result.
 
 Check the observation's scope and time. A restarted process, a new reporting period or an empty incident queue is not itself evidence that the defect was corrected. Preserve residual uncertainty and a response if the condition fails again.
 
-Choose follow-up from the consequence and detection need. Large isolated departures, small persistent drift and rapid incidents may need different observation rules. Retain enough evidence for the continuing decision, and end collection that no longer contributes to a decision, required assurance or recovery.
+Choose follow-up from the consequence and detection need. Large isolated departures, small persistent drift and rapid incidents may need different observation rules. Retain enough evidence for the continuing decision, and end collection when its result no longer serves a decision, required operating claim, assurance or recovery.
 
-Return the action, its evidence, affected population/configuration, authority and restart or next-observation conditions in the existing operating account. The selected control decision is the result; the chart or dashboard makes its basis inspectable.
+Return the supported quality or reliability conclusion, its evidence and the affected population or configuration. If an operating response is required, state the action, its authority and any restart or monitoring conditions. The existing account or display can carry the result.
 
 ### OPS.18:5 - Archetypal Grounding
 
@@ -106,7 +106,7 @@ The arithmetic establishes the signal under that rule. It does not identify why 
 
 Suppose the investigation finds a changed setup condition. Returning to the earlier setup and obtaining the required process and output evidence can support restart under the responsible authority. A single subsequent point below the limit is insufficient to establish every one of those claims. A persistent smaller shift may call for a monitor such as an exponentially weighted moving average (EWMA), which retains information from successive observations, if its detection properties fit the need.
 
-Change the sampling premise. The 200 inspected items now come as fifty groups of four, sharing one setup within each group. In this constructed return, the qualified statistical supplier establishes a bounded model for the defect being monitored: all four items in a group share its conforming/nonconforming state; different sampled groups are independent; the stable reference probability is 0.02 per group. The sample's twelve defects occupy three groups. The count is therefore 3 of 50 independent group outcomes, not 12 of 200 independent item outcomes. The original 4.97% limit is inapplicable. With this model, its apparent trigger would correspond to at least three defective groups, with a baseline false-signal probability of about 7.84% per sample. More rows did not provide more independent information.
+Change the sampling premise. The 200 inspected items now come as fifty groups of four, sharing one setup within each group. In this constructed return, the qualified statistical supplier establishes a bounded model for the defect being monitored: all four items in a group share its conforming/nonconforming state; different sampled groups are independent; the stable reference probability is 0.02 per group. The sample's twelve defects occupy three groups. The count is therefore 3 of 50 independent group outcomes, not 12 of 200 independent item outcomes. The original 4.97% limit is inapplicable. With this model, its apparent trigger would correspond to at least three defective groups, with a baseline false-signal probability of about 7.84% per sample.
 
 The operating owner needs to protect this finite campaign and decide whether a recurring-shift monitor adds a useful further result. The current product rule already holds any known defective group's output. The supplier is asked to compare early detection with the available inspection and response time, including a persistent rise from 2% to 6% defective groups. It returns these two explicit candidate rules under the stated independent-group model and fixed baseline:
 
@@ -119,7 +119,7 @@ These exact-binomial tail calculations are a constructed statistical return, con
 
 Suppose the next four rounds contain three defective groups each. No individual sample triggers the first rule; twelve of 200 groups triggers the second at the fourth round. The authorized response is a wider process investigation and containment at the supported scope. Each known defective group was held when found under the independent product rule; waiting for the fourth-round monitoring result cannot authorize its release. Unaffected output still uses its own acceptance basis.
 
-Include the whole price and reuse observations already obtained. In this finite campaign each round's fifty groups are all its output. A qualified full screen costs forty staff-minutes per round, 160 over four rounds, and fits the service window. That adequate product-protection rule applies with or without a process monitor; the monitoring rule does not replace it. Its observations already supply the group outcomes, so do not charge for a second sample. The monitor adds two minutes per round for group/time reconciliation, 120 once for qualification/setup and twenty for the wider investigation in the supplied signal trace: 148 additional minutes, or 308 including inspection, apart from unchanged protective handling. Retain direct protection alone for this one-off use when no continuing exposure or other decision needs the separate recurring-shift answer. Where that answer is useful, compare its expected contribution with these added costs, actual signal workload and missed-loss consequences. The full screen protects this output without itself establishing the process-change claim. If action is needed before four rounds, request a qualified sequential design; the ordinary normal-data EWMA limits cannot simply be pasted onto these rare grouped counts. Correlation between groups, a changed defect mechanism or an unrepresentative baseline reopens this statistical return without canceling already supported containment.
+Include the whole price and reuse observations already obtained. In this finite campaign each round's fifty groups are all its output. A qualified full screen costs forty staff-minutes per round, 160 over four rounds, and fits the service window. That adequate product-protection rule applies with or without a process monitor; the monitoring rule does not replace it. Its observations already supply the group outcomes, so do not charge for a second sample. The monitor adds two minutes per round for group/time reconciliation, 120 once for qualification/setup and twenty for the wider investigation in the supplied signal trace: 148 additional minutes, or 308 including inspection, apart from protective handling common to both alternatives. Retain direct protection alone for this one-off use when no continuing exposure or other decision needs the separate recurring-shift answer. Where that answer is useful, compare its expected contribution with these added costs, actual signal workload and missed-loss consequences. The full screen protects this output without itself establishing the process-change claim. If action is needed before four rounds, request a qualified sequential design; the ordinary normal-data EWMA limits cannot simply be pasted onto these rare grouped counts. Correlation between groups, a changed defect mechanism or an unrepresentative baseline reopens this statistical return without canceling already supported containment.
 
 #### OPS.18:5.2 - Service loss exceeds the agreed budget
 
@@ -131,13 +131,13 @@ In a constructed software service, the objective is **99.9% successful requests*
 
 The observed success proportion is 99.85%. The service has exceeded the stated allowance by 500 unsuccessful requests.
 
-Its previously authorized local policy pauses discretionary feature releases when the budget is exceeded, permits the specified urgent recovery and security work, and requires investigation of the affected service. The practitioner applies that policy, names the eligible population and affected service, and directs the authorized recovery work. This is the policy of the constructed case; another service needs its own objective and permitted response.
+Its previously authorized local policy pauses discretionary feature releases when the budget is exceeded, permits the specified urgent recovery and security work, and requires investigation of the affected service. The practitioner applies that policy, names the eligible population and affected service, and directs the authorized recovery work. Another service needs its own objective and permitted response.
 
-A total of 1,500 also needs timely interpretation. If most failures occurred in the last few minutes or affected one important user group, the aggregate alone can understate the current incident. Inspect the relevant time and group breakdown where it changes containment.
+A total of 1,500 also needs timely interpretation. If most failures occurred in the last few minutes or affected one important user group, the aggregate alone can understate the current incident. Inspect the relevant time and group breakdown if it could change the containment or the scope supported by the evidence.
 
 Now suppose a calendar boundary starts a new reporting window while the failing request path remains impaired. The operation still lacks restoration evidence. Later, the recovery team restores a known working configuration, verifies the previously failing user path and obtains the live observations required by the agreed restart criteria. The responsible service owner can then decide whether to resume discretionary changes. Keep any unresolved causal or recurrence question visible.
 
-The responsible owner uses budget consumption in the stated service policy. Independent safety and acceptance conditions still apply, and recovery work requires qualified people with the appropriate assignment.
+The responsible owner uses budget consumption in the stated service policy. Independent safety and acceptance conditions still apply, and recovery work requires a qualified, authorized performer for each action.
 
 #### OPS.18:5.3 - The lot decision uses its own plan
 
@@ -163,7 +163,7 @@ In this constructed print-shop incident, the customer approved proof P2, but the
 
 Trace how P1 reached the station and why P2 was unavailable. Two explanations remain plausible: the preparer copied the earlier attachment, or the station received it from a stale synchronized folder. The records do not distinguish those paths. Both leave the same exposed condition: production can start without checking the proof against the customer's approved edition.
 
-For this case, a qualified proof-control procedure is available for both paths: retrieve the approved proof through the authorized source, check its edition at the station and require first-article acceptance before releasing the order. The responsible production manager has authority and the necessary staff and access to apply it; its effort fits the continuing service commitments. These are supplied premises of the example, not results inferred merely because both explanations sound plausible.
+For this case, a qualified proof-control procedure is available for both paths: retrieve the approved proof through the authorized source, check its edition at the station and require first-article acceptance before releasing the order. The responsible production manager has authority and the necessary staff and access to apply it; its effort fits the continuing service commitments.
 
 The manager applies that correction. Staff verify that P2 is available, perform the edition check and obtain the required first-article acceptance for restart. Selecting between the copying and synchronization explanations is not a prerequisite to this adequately supported response. Their difference would become relevant if, for example, a proposed automatic retrieval change protected only one path; that proposal would need the missing discrimination or a protection covering both.
 
@@ -175,36 +175,36 @@ If the edition check catches P1 before printing, no booklets are spoiled: the ch
 
 Visible control limits can look authoritative even when their model or baseline does not fit the operation. Keep the required product or service result beside the monitoring claim and inspect the assumptions before extending its use.
 
-A recent repair can also encourage early closure. Verify restored service at the affected scope, and distinguish that result from identification of the cause and evidence about recurrence. Acknowledging the remaining question allows useful recovery without overstating it.
+A recent repair can also encourage early closure. Verify restored service at the affected scope, and distinguish that result from identification of the cause and evidence about recurrence.
 
 ### OPS.18:7 - Conformance Checklist
 
 | Check | Evidence sufficient for the declared use |
 | --- | --- |
-| The result and possible action are clear. | Requirement, affected population/configuration, consequence and response authority are recoverable. |
+| The requested result is clear. | Its requirement, population or configuration and consequence are recoverable. If a response is needed, so is its authority or the remaining gap. |
 | The evidence method answers that question. | Monitoring, service-objective, acceptance, recovery and prevention uses retain their distinct bases. |
 | The observation is interpretable. | Baseline, sample or event population, coverage, time, model and uncertainty fit the claim. |
-| The action follows the applicable rule. | Continuation, containment, acceptance, restoration or Method change uses the actual policy and protected conditions. |
-| Restart has real evidence. | The required result is established at the relevant scope and time; a reporting reset does not stand in for it. |
+| Any selected action follows the applicable rule. | Continuation, containment, acceptance, restoration or Method change uses the actual policy and protected conditions. |
+| Any restart is supported. | Evidence or a qualified result establishes the required condition at the relevant scope and time. A reporting reset alone cannot support restart. |
 | Remaining work is directed. | Unresolved cause, recurrence risk, missing professional result or changed method assumption has a concrete receiving use. |
-| Prevention has sufficient support. | Further discrimination changes prevention, permissibility, burden or a supported claim; a common adequately supported correction can proceed with the remaining explanation explicit. |
+| Prevention has sufficient support. | Further discrimination is sought when its attainable result matters to prevention, permissibility, burden or a required conclusion; a common adequately supported correction can proceed with the remaining explanation explicit. |
 
 ### OPS.18:8 - Common Anti-Patterns and How to Avoid Them
 
 | Misuse | Working repair |
 | --- | --- |
 | Treat statistical stability as product conformity. | Compare output with its requirement and obtain the applicable capability or acceptance result. |
-| Use a chart signal as proof of a specific cause. | Contain as required and investigate the actual mechanism. |
+| Use a chart signal as proof of a specific cause. | Contain as required. Pursue a causal investigation when its result is needed. |
 | Let an error budget authorize every kind of loss. | Preserve independent safety, human, clinical and acceptance conditions. |
 | Accept a lot because the process chart looks normal. | Apply the lot's qualified acceptance plan and risks. |
-| Resume normal work when the reporting window resets. | Verify the actual restart conditions and obtain the authorized continuation decision. |
+| Resume normal work when the reporting window resets. | Verify the actual restart conditions and use the applicable continuation authority, obtaining a decision when the conditions require one. |
 | Reuse an old monitor after the population or failure modes change. | Requalify the affected observation and detection method for the new use. |
 
 ### OPS.18:9 - Consequences
 
 The practitioner can connect quality and reliability evidence to a concrete operating response. The action remains scoped to the affected output, service or configuration, while necessary service can continue under its own conditions.
 
-Monitoring and acceptance can incur false alarms, missed failures, inspection cost or delayed service. Recovery can restore operation while leaving a cause unresolved. Selecting the method and evidence by consequence makes these trade-offs visible instead of hiding them in a single green status.
+Monitoring and acceptance can incur false alarms, missed failures, inspection cost or delayed service. Recovery can restore operation while leaving a cause unresolved. Selecting the method and evidence by consequence makes these trade-offs visible for the operating question.
 
 ### OPS.18:10 - Rationale
 
@@ -214,7 +214,7 @@ The separation between containment, restored service and causal knowledge also s
 
 ### OPS.18:11 - SoTA-Echoing
 
-The practice question is how to control operating quality and reliability from evidence suited to the required action. The selected best-known line uses qualified statistical monitoring, user-relevant service indicators and explicit acceptance or recovery criteria. Compared with one aggregate quality status, it exposes the distinct decisions in the worked cases.
+Select quality and reliability evidence for the question being answered. A monitoring rule signals observations that meet its criterion under the stated model, a service indicator measures the agreed outcome, and acceptance and restart each require their own criteria. These distinctions determine what follows in the worked cases.
 
 | Source and practice question | Selected move and alternative | Operative contribution and limit |
 | --- | --- | --- |
@@ -224,18 +224,18 @@ The practice question is how to control operating quality and reliability from e
 | [SRE service objectives](https://sre.google/workbook/implementing-slos/), [error-budget policy](https://sre.google/workbook/error-budget-policy/) and [alerting on SLOs](https://sre.google/workbook/alerting-on-slos/) | Relate user-relevant observed loss to an agreed action and timely detection, instead of using infrastructure availability alone. | The service case adopts the loss calculation and policy relation. Local targets, exceptions, authority and restart evidence are supplied for the actual service. |
 | Ries, *The Lean Startup* (2011), chapter 11; [Lean Enterprise Institute, Five Whys](https://www.lean.org/lexicon-terms/5-whys/); [Google SRE, Postmortem Culture](https://sre.google/sre-book/postmortem-culture/) (2016) | Recover contributing conditions and assign supported prevention, instead of stopping at the first symptom or treating a question count as causal proof. | Sections 4.4 and 5.5 adapt incident reconstruction, knowledgeable participation, countermeasure selection and follow-up. The historical accounts and practice guidance do not prove a particular causal chain or a recurrence reduction; those claims need their own evidence. |
 
-The NIST handbook provides standing technical models. The SRE Workbook supplies software-service guidance and a dated 2018 policy example. Their contributions are adapted to the stated operating decisions.
+The NIST handbook provides standing technical models. The SRE Workbook supplies software-service guidance and a dated 2018 policy example.
 
 For an individual known failure, immediate qualified containment can be the stronger response than developing a new statistical monitor. For recurring uncertain behavior, a designed monitor can reduce reactive disturbance and improve timely detection. Reopen the selected method when the population, baseline, loss consequence, detection need or authorized policy changes.
 
 ### OPS.18:12 - Relations
 
-OPS.15 helps construct the observation account when its subjects, coverage or definitions are unresolved. OPS.4 guides shared attention to qualified operating state. OPS.5–OPS.7 guide admission, continuation and attention to aging work when the control decision changes those actions.
+OPS.15 helps construct the observation account when its subjects, coverage or definitions are unresolved. OPS.4 guides shared attention to qualified operating state. OPS.5–OPS.7 guide admission, continuation and attention to aging work when those actions depend on the control result.
 
 Use OPS.12 for human conditions and OPS.13 for service commitments and resource choices affected by containment or recovery. OPS.14 helps compare consequential operating and financial alternatives. OPS.16 evaluates a change to an operating Method; OPS.17 compares and refreshes the repertoire of ways available for operating work.
 
 B.5.2 helps develop rival explanations of the incident; C.28 qualifies their causal support. C.11 and C.11.CRC support the choice and whole-burden comparison of preventive changes. C.11.DUA enters only when the contribution or feasibility of a requested inquiry remains in question.
 
-FPF C.16 governs the measures and statistical assumptions relied on, and A.10 preserves evidence reach. A.11.OP limits additional monitoring or records to their decision, assurance or recovery contribution. Engineering, clinical and other qualified practitioners supply the specific acceptance, protection or restoration results their domains require.
+FPF C.16 governs the measures and statistical assumptions relied on, and A.10 preserves evidence reach. A.11.OP limits additional monitoring or records to their decision, assurance or recovery contribution. Use the qualified acceptance, protection or restoration result for the domain. Obtain it from the appropriate source when it is missing.
 
 ### OPS.18:End

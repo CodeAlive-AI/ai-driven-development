@@ -1,122 +1,122 @@
 ## NSTD.Reference:7 - Worked combinations across narrative uses
 
-The cases show how the methods combine across teaching, fiction, mathematics and live commentary. Each route can be shortened to the work the current difficulty needs.
+These cases show how a teacher, fiction author, mathematical expositor and live commentator can combine narrative methods. Follow the part that addresses the task.
 
-Use a route to construct a narrative or to locate a defect in an existing one. An existing draft can be evaluated immediately; the absence of its production history does not prevent judging a visible problem. Return to the relevant construction step when repair needs it.
+Use a case to develop a narrative or examine a difficulty in an existing one. A draft can reveal a missing connection even when its production history is unknown. Return to its construction where a repair needs it.
 
 
 
 ### NSTD.Reference:7.1 - Case A - FPF Learning Route Probe With Seminar Carrier
 
-Use: a seminar or slide series that teaches readers to apply FPF patterns. The complete course is a separate teaching publication; a worked teaching example may also appear in a pattern.
+A seminar or slide series is being designed to teach readers to apply FPF patterns. A complete course is a teaching publication in its own right. A pattern may contain a worked example of how to teach it.
 
-Patterns opened: `NSTD.1`, `NSTD.2`, `NSTD.3`, `NSTD.5`, `NSTD.6`, `NSTD.8`.
+The example draws on NSTD.1, NSTD.2, NSTD.3, NSTD.5, NSTD.6 and NSTD.8.
 
-Selected content: what a pattern concerns, when and how to use it, how methods relate, when to consult a source, and how to evaluate and improve the result.
+Learners need to recognize what a pattern concerns, when and how to apply it, how it connects to other methods, when to consult a source, and how to assess or improve the result.
 
-Temporal posture and rendering mediation mode: prospective planned learning route over current FPF source structures; direct source-structure mode unless an architecture-of-FPF explanation is explicitly opened as architecture-mediated support.
+Base the planned lessons on the relevant FPF source. Where the lesson uses an architectural explanation of FPF, preserve the connection through that explanation to its source.
 
-Ordering rule: didactic prerequisite order, with explicit divergence from monolith order when helpful.
+Order the teaching by the prerequisites learners need at each task. The sequence can differ from the order of the source publication.
 
-Construction route:
+One possible construction follows.
 
-1. `NSTD.1`: relate the learner's task to the needed pattern content. For a first-use lesson, select a recognizable difficulty, the method's first operation, its result and the next relevant method.
-2. `NSTD.2`: order the selected content so that each exercise has the needed prerequisites. Depart from the source's chapter order where that serves the lesson, retaining a return to any omitted condition.
-3. `NSTD.3`: turn each session into a reconstruction target: after the session, the learner should be able to reconstruct one pattern-use route from source basis and selected source structure, not only repeat the teaching story.
-4. `NSTD.5`: add motivation devices only where they protect attention without replacing source return; slogans and examples remain subordinate to reconstructable source structure.
-5. `NSTD.8`: try a short learning sequence with a recurring anchor, a reconstruction or application task, and the support needed at that point. Drafting a slide can reveal a missing prerequisite; record the route when course coordination or revision needs it.
-6. `NSTD.6`: evaluate the route once the above source and use basis is recoverable. A missing structural-amount basis returns to source-spine selection; a demonstrated relation loss calls for repair of the selection, expression or usable source return through the relevant NSTD method before style polish. Compare any numerical amount only at its stated scale and conditions.
+1. With NSTD.1, select content for the learner’s task. A first-use lesson may need the recognizable difficulty, the first operation and its result. Introduce another method when the result needs further work.
+2. With NSTD.2, place the necessary distinctions before an exercise relies on them, or provide the reference the learner is expected to use. Keep a usable return to source conditions omitted from the lesson.
+3. Use NSTD.3 to identify the connections learners should reconstruct. For a session on applying a method, ask them to connect the relevant source, the operation and the result it can support.
+4. Use NSTD.5 to choose an example or expression that draws attention to that connection. Preserve any source return needed for the task.
+5. Use NSTD.8 to design a short sequence around a recurring case, a reconstruction or application task, and the support required at that point. While drafting a slide, check whether its task uses a term or distinction before the lesson has made it available. An existing trial can supply separate evidence about what a learner encountered. Try the sequence where the learning question warrants it. Keep the route accessible when others need it for teaching or revision.
+6. With NSTD.6, assess what the sequence lets the intended reader recover. Use a learner’s response and the help they used for a claim about actual recovery. If an essential relation is absent, inspect the source selection, expression and route to the source. Compare amounts only for defined units, selected relations and conditions.
 
-Intentionally lost or deferred: full monolith detail, all neighboring patterns, all source-pack rows, and advanced formal variants. These return through source links.
+The introductory route leaves out advanced formal variants and neighbouring patterns that the exercise does not require. Give a usable source reference where a later task needs that detail.
 
-Related work: use `E.17` and `E.17.AUD` for teaching-publication and audience-unit questions, `NSTD.6` for narrative quality, the subject sources for the taught claims, and `A.10` when the source-to-use account is implicit or must remain replayable. `G.2`/`G.11` apply when synthesizing or refreshing a SoTA basis.
+E.17 and E.17.AUD help design the teaching publication and its audience units. NSTD.6 addresses narrative quality. Use the subject sources for what the lesson teaches. Use A.10 when the link between evidence and its use is unclear or must remain recoverable, and G.2 or G.11 when a state-of-the-art synthesis needs developing or updating.
 
-Low `NSTD.6` repair: if learners enjoy sessions but cannot reconstruct pattern use, repair `NSTD.2`, `NSTD.3`, and `NSTD.8` before changing only style.
+If learners enjoy a session but cannot reconstruct how to apply a pattern, that observation can answer what they did under the stated conditions. For an explanation or repair, examine the chosen content, sequence, task and help. Change the part shown to need it.
 
 
 
 ### NSTD.Reference:7.2 - Case B - Franchise Continuation Storycraft
 
-Use: plan a continuation of an existing fictional world, such as a space-opera franchise. This case concerns narrative construction; it does not determine publication rights.
+An author plans a continuation of an existing fictional world, such as a space opera. The case concerns the story. Determine publication rights if the work will be released under conditions that require them.
 
-Patterns opened: `NSTD.1`, `NSTD.2`, `NSTD.3`, `NSTD.4`, `NSTD.5`, `NSTD.6`, `NSTD.7` when generation is used.
+The example uses NSTD.1–NSTD.6. NSTD.10 can supply missing events and NSTD.7 applies when a generator drafts part of the work.
 
-Selected constraints: canon and continuity, the premise and theme, character motivation, causal plot relations, viewpoint and stakes. New events can be invented within those chosen constraints.
+Identify the established canon, premise, theme, character motives, causal relations, viewpoint and stakes that the continuation must preserve. The author can invent events within the chosen constraints.
 
-Temporal posture: prospective fiction based on a chosen canon or local premise set. Compare directly with those sources; an architecture description is needed only if the story work itself uses one.
+The possible future of the fictional world is constrained by the selected canon or local premises. Compare proposals directly with those sources, using an architecture description where the work actually relies on one.
 
-Ordering rule: choose how plot events and revelations reach the reader. A delayed reveal can be intentional; repair a missing connection when it defeats the intended plot or understanding.
+Choose when events occur, where the narrative discloses them and which clues it offers earlier. A delayed disclosure can sustain interest. A missing means of action can make the proposed event impossible.
 
-Construction route:
+For a proposed plot, the author might proceed as follows.
 
-1. `NSTD.1`: choose the premise and the canon constraints the continuation will retain. Existing excerpts or a compact note may suffice; build a maintained source collection only when repeated work needs it.
-2. `NSTD.2`: distinguish event order from reveal order. For a consequential action, ensure that the necessary means or motive are available in the story, even if the reader learns them later.
-3. `NSTD.3`: build an event or mechanism support map for the proposed plot: initiating condition, constraint, conflict, action, consequence, update, and unresolved tension.
-4. `NSTD.4`: choose the viewpoint and protagonist's contribution. Clarify an attribution or omitted perspective only when it changes the intended account.
-5. `NSTD.5`: try stakes, curiosity, identification or a familiar allusion for the intended reader effect. Keep a device when its contribution is worth its cost and it preserves the chosen narrative constraints.
-6. `NSTD.7`: inspect generated candidates against the chosen premise and continuity. Repair, retain or reject them before deciding their use.
-7. `NSTD.6`: evaluate continuity, character agency, causal plot support, viewpoint discipline, and `NarrativeRenderingEpiplexity`; repair structure before increasing drama.
+1. With NSTD.1, identify the premises and constraints the continuation must retain. An excerpt or existing note may suffice. Maintain a larger source collection where repeated work benefits from it.
+2. With NSTD.2, distinguish event order from reveal order. For a consequential action, establish the means or motive it needs in the story. The narrative can disclose that condition later or leave clues from which it can be inferred.
+3. Use NSTD.3 to examine the conditions, conflict, actions, consequences and unresolved tension that link the proposed events. Sketch their connections where a sketch helps expose a missing link. Use NSTD.10 if an event itself still needs inventing.
+4. With NSTD.4, choose the viewpoint and establish what the protagonist contributes. Clarify an attribution or an omitted perspective where it affects the intended account.
+5. With NSTD.5, consider stakes, curiosity, identification or an allusion for the intended reader experience. Keep the device where it serves the aim at acceptable cost and preserves the story constraints.
+6. If a generator supplies a candidate, use NSTD.7 to compare it with the selected premise and continuity. Keep, revise or reject the passage for the intended use.
+7. Use NSTD.6 to assess continuity, the characters’ actions and knowledge, the events’ causal support, and the viewpoint. Where the question is what structure a reader can recover, use NarrativeRenderingEpiplexity under the relevant conditions. Repair a failed connection when the brief requires a usable continuation.
 
-Intentionally lost or deferred: exhaustive canon, production rights, fan-service catalogue, and publication permission. These are outside this DPF case.
+This case uses only the canon relevant to the proposed scene. Questions about production rights, permission to publish or other parts of the canon can be taken up when the project needs them.
 
-Related work: select canon and its constraints through `NSTD.1`; inspect generated continuations through `NSTD.7` and `NSTD.6`. Use `NSTD.4` for voice and attribution. Additional agency, responsibility, ethics or publication-rights questions depend on the claim and intended use. Maintaining canon alone selects neither `G.2` nor `C.35`.
+Use NSTD.1 for canon and its constraints, NSTD.4 for voice and attribution, and NSTD.7 and NSTD.6 for a generated continuation. Examine authority, ethics or publication rights where the intended use depends on them. G.2 concerns a state-of-the-art synthesis and C.35 work contributing to architecturing.
 
-Low `NSTD.6` repair: continuity drift, premise mismatch, character-agency collapse, escalation without causal structure, fan-service replacing plot function, viewpoint confusion, or stakes without source return repair through `NSTD.1` through `NSTD.4`, not by adding more dramatic prose.
+If the continuation contradicts canon, revisit the relevant premise or event. If a character acts without a necessary motive or means, repair that link. For a confused viewpoint or an allusion that hides a plot relation, examine what the passage lets the reader know. Select the relevant operation in NSTD.1–NSTD.5 or NSTD.10.
 
 
 
 ### NSTD.Reference:7.3 - Case C - Homotopy Theory Explanation
 
-Use: graph-heavy and structure-heavy mathematical theory rendered into sequential explanatory narrative for learners.
+An expositor wants learners to follow a mathematical construction through definitions, examples and dependencies that a graph may show together.
 
-Patterns opened: `NSTD.1`, `NSTD.2`, `NSTD.3`, `NSTD.5`, `NSTD.6`, and `NSTD.8` if taught as a series.
+The case uses NSTD.1, NSTD.2, NSTD.3, NSTD.5 and NSTD.6. NSTD.8 helps arrange the content when a series of lessons is needed.
 
-Source structures that must survive: definitions, dependency order, examples, counterexamples, proof-status boundaries, theorem prerequisites, and source return to formal statements.
+Preserve the definitions, dependencies, representative examples and counterexamples, conditions of the theorems, proof status and access to the formal statements the learner needs.
 
-Temporal posture and rendering mediation mode: retrospective or atemporal explanatory route over existing mathematical source structures; direct source-structure mode unless a teaching architecture or knowledge-graph architecture is explicitly used as mediation.
+An exposition can explain an existing construction retrospectively or present the mathematical relations without a historical chronology. Use the mathematical source directly unless a teaching architecture or knowledge graph mediates the account.
 
-Ordering rule: didactic dependency order with source-return to formal proof order.
+Order the explanation by the learner’s dependencies and provide access to the formal argument in its proof order.
 
-Construction route:
+A teacher developing this explanation can make the following choices.
 
-1. `NSTD.1`: select the learner use and source structures: definitions, dependency graph, examples, counterexamples, theorem prerequisites, proof-status boundaries, and formal-source return.
-2. `NSTD.2`: choose didactic dependency order; explicitly mark where it differs from formal proof order, historical order, or publication order.
-3. `NSTD.3`: define the reconstruction target for each step: what the learner must be able to state, distinguish, use in an example, or return to as formal proof status.
-4. `NSTD.5`: introduce an analogy, question or visual example where it helps the learner. Supply a condition before the learner's next inference needs it; distinguish an intuitive image from a formal result.
-5. `NSTD.8`: if the explanation becomes a series, turn dependencies into session anchors and reconstruction tasks rather than a sequence of entertaining analogies.
-6. `NSTD.6`: evaluate whether learners can recover definitions, dependency order, example boundaries, proof-status boundaries, and source-return points; low values repair source selection and ordering before adding more metaphor.
+1. With NSTD.1, identify the learner’s use and select the definitions, examples, counterexamples, dependencies, prerequisites and proof status needed for that use. Give a route to the corresponding formal statements.
+2. With NSTD.2, choose the teaching order. Point out differences from proof, publication or historical order where misunderstanding them would change the learner’s inference.
+3. With NSTD.3, identify the relations the learner needs at each step. A task may ask them to state a definition, distinguish examples, apply a construction or locate its proof.
+4. Use NSTD.5 for an analogy, question or image that helps the learner follow the construction. Give needed conditions before the next inference. Mark which parts the image illustrates and where formal justification begins.
+5. When the explanation spans several lessons, use NSTD.8 to place reconstruction tasks and their support where each dependency will be used.
+6. Use NSTD.6 to assess recoverability of the definitions, dependencies, limits of examples and proof status. For a claim about the learners, use their responses under the specified conditions. If a needed relation was lost, identify what the selection, ordering or expression omitted.
 
-Intentionally lost or deferred: full proof detail, every lemma, historical order, and advanced generalizations not needed for declared learner use.
+Defer proof details, additional lemmas, history or advanced generalizations only where the selected learning use permits it. Retain a path to any omitted formal result on which the explanation relies.
 
-Related work: `C.29` supports a mathematical lens when one is being constructed; the mathematical source supplies the definition or proof. `A.10` recovers an implicit or needed replayable source-to-use account; `E.17` governs the explanation's publication form.
+C.29 can help construct a mathematical lens. Use the mathematical source for a definition or proof. A.10 can recover a consequential implicit link between source and use or preserve it for later examination. E.17 governs the publication form.
 
-Low `NSTD.6` repair: if learners can retell an analogy but cannot state definitions, dependency order, example boundaries, or proof status, repair `NSTD.1`, `NSTD.2`, and `NSTD.3`; do not raise engagement alone.
+If learners can retell the analogy but cannot identify a definition, dependency, example boundary or proof status, inspect the relevant selection, explanation, ordering and task. A subject correction may be needed if the formal relation itself is missing or incorrect.
 
 
 
 ### NSTD.Reference:7.4 - Case D - Live Event Commentary
 
-Use: live commentary for an unfolding football match or analogous event stream, used for listener orientation and later review only under source-return conditions.
+A commentator helps listeners follow an unfolding football match. A later reviewer can use the account under the conditions its sources support.
 
-Patterns opened: `NSTD.1`, `NSTD.2`, `NSTD.3`, `NSTD.4`, `NSTD.5`, and `NSTD.6`.
+The case draws on NSTD.1–NSTD.6 for source selection, order, event connections, viewpoint, engagement and evaluation.
 
-Source structures that must survive: score state, event sequence, possession or control changes, tactical or situational structure, actor roles, uncertainty, provisional interpretation, and return to official result, telemetry, statistics, or recording.
+Keep score, event order, changes of possession, relevant tactical relations, participant roles and uncertainties accessible to the listener. For later review, identify the official result, statistics, telemetry or recording needed for the claim.
 
-Temporal posture and rendering mediation mode: live unfolding event stream; direct source-structure mode. Architecture-mediated mode opens only if the commentary is explicitly about structure of a team, venue, broadcast system, or other holon and uses architecture descriptions as admitted source basis.
+The live account draws directly on observations and reports as events unfold. Use an architecture description where the account relies on one to explain the structure of a team, venue or broadcast system.
 
-Ordering rule: live event order with explicit prediction and uncertainty markers; later recap may use causal or tension order but must not erase which claims were provisional during the live event.
+Present events in live order and distinguish a prediction from an observation or provisional interpretation. A recap may reorder events around a cause or tension while preserving what could be known at the time.
 
-Construction route:
+The commentator can apply the methods to the following parts of the work.
 
-1. `NSTD.1`: identify what the listener needs from the live account, the available event source, the commentator's viewpoint and which interpretations remain provisional.
-2. `NSTD.2`: follow live event order while marking when the sequence is observation, inference, tactical interpretation, or prediction.
-3. `NSTD.3`: preserve event and state-update support so listeners can reconstruct what changed, who acted, and what remains uncertain.
-4. `NSTD.4`: keep viewpoint and agency wording from assigning responsibility, intention, or capability beyond the observable or sourced basis.
-5. `NSTD.5`: use tension and suspense only as attention support; it cannot make predictions, disputed rulings, or emotional framing into settled evidence.
-6. `NSTD.6`: evaluate whether the listener can distinguish observed event, provisional interpretation, uncertainty, and source-return obligation.
+1. With NSTD.1, identify what listeners need, which sources are available and what the commentator could observe from their position. Mark interpretations that remain provisional.
+2. With NSTD.2, present the unfolding events in order and make clear which claims are observations, tactical interpretations or predictions.
+3. With NSTD.3, connect changes of score, possession or player action with the events that support them. Leave a disputed state clear as disputed.
+4. With NSTD.4, state whose viewpoint the account presents and what the evidence supports about action, intent, ability or responsibility.
+5. Use NSTD.5 to convey excitement or uncertainty. A forecast, a disputed ruling and an emotional interpretation should remain recognizable as such.
+6. With NSTD.6, assess whether the account lets a listener distinguish the observed event, interpretation, uncertainty and later correction. Use a listener’s response to establish what they actually distinguished.
 
-Intentionally lost or deferred: full official statistics, all off-camera events, post-match medical or disciplinary facts, and later tactical analysis. These return through official source refs, telemetry, or recording.
+The live account can omit off-camera events, full statistics, later disciplinary or medical findings and extended tactical analysis. For a later claim about one of these, use a source that actually establishes it.
 
-Related work: return to the official record for a disputed fact or correction. Use the relevant publication guidance for broadcasting; use `D.1`–`D.5` when an actual harm or value conflict arises and `G.11` when a changed source affects a maintained account.
+Use the official record for a disputed ruling or correction. Apply publication guidance where the work is being broadcast, D.1–D.5 for an actual harm or value conflict, and G.11 if a changed source affects a maintained account.
 
-Low `NSTD.6` repair: if listeners remember drama but cannot distinguish observed event from commentator inference or later official correction, repair `NSTD.1`, `NSTD.2`, `NSTD.3`, and `NSTD.4` before increasing engagement.
+If listeners remember the drama but confuse a provisional inference with a later official decision, report that finding under the conditions in which they heard the account. To explain the confusion, examine the source, timing, wording, viewpoint, access and help. If the task calls for a revised commentary, repair the part shown to need it.

@@ -31,13 +31,13 @@ Anatoly Levenchuk, with AI-assisted development. Original framework text: [CC BY
 
 ## Practical entries
 
-These practical examples illustrate ways to enter the framework. If your question does not fit an example, use the [Table of Contents](_index.md#table-of-contents), search the complete text, or follow [Using FPF Library](../../../library/USING-FPF.md) to find the relevant contribution.
+If one of these situations fits, follow its starting link. If your question does not fit an example, use the [Table of Contents](_index.md#table-of-contents), search the complete text, or follow [Using FPF Library](../../../library/USING-FPF.md) to find the relevant contribution.
 
 ### Connected conditions — One personnel change defeats another commitment
 
 **Situation.** A new service needs different work, but selection still tests the old job, reward omits the helping work, or the hours needed to meet the promise conflict with a protection requirement.
 
-**Question.** Which complete work and participation arrangement can actually be sustained?
+**Question.** Which complete work and participation arrangement can be sustained?
 
 **First useful result.** A feasible combination, or the precise incompatible commitment or missing professional result that prevents one.
 
@@ -85,7 +85,7 @@ These practical examples illustrate ways to enter the framework. If your questio
 
 **Situation.** A person wants a new direction after success, reports severe exhaustion, needs changed conditions or a return after absence, considers leaving, or must end the relationship.
 
-**Question.** What continuation, absence, return, movement or exit is actually warranted and obtainable?
+**Question.** What continuation, absence, return, movement or exit is warranted and obtainable?
 
 **First useful result.** An arrangement connecting real work, support and terms to the person's response and applicable constraints.
 

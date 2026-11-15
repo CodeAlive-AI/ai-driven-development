@@ -6,11 +6,11 @@
 
 ### SYSE.25:1 - Problem frame
 
-Use this pattern when practitioners repeatedly wait, redo work or ask for help through a platform, but the next investment is justified only by a preferred tool, adoption target or loud complaint. Choose one user population and one engineering undertaking. Observe how people try to obtain its result, including attempts that fail, are abandoned or fall outside the supported route.
+Use this pattern to decide whether to retain or change platform provision for an engineering task. Repeated waits, rework or requests for help can prompt that question, as can a rare failure that defeats an essential result. Choose one user population and one engineering undertaking. Use evidence of how practitioners try to obtain its result, including attempts that fail, are abandoned or fall outside the supported route.
 
-The first useful result is one task-grounded choice to retain or change provision, a discriminating probe or a named missing-premise return. The governed question is whether and how to improve the enabling System and its provision for that work.
+The first useful result is a choice to retain or change provision for that task, a probe that could distinguish alternatives, or a statement of what is missing for a choice. The governed question is whether and how to improve the enabling System and its provision for that work.
 
-A software developer waiting for reliable feedback, a test engineer reconstructing a bench setup and a manufacturing engineer chasing an inspection result can all face this question. Their professional operations differ. This pattern selects what enabling difficulty to address; it does not provide every missing professional Method. For a one-off missing credential, ask the person who can supply it. An already justified implementation can go directly to its supplying Method.
+A software developer waiting for reliable feedback, a test engineer reconstructing a bench setup and a manufacturing engineer chasing an inspection result can all face this question. Their professional operations differ. This pattern selects what enabling difficulty to address; it does not provide every missing professional Method. For a one-off missing credential, use an existing authorized route that can supply it, or ask whoever is authorized to provide it. An already justified implementation can go directly to its supplying Method.
 
 ### SYSE.25:2 - Problem
 
@@ -37,21 +37,21 @@ Include unsuccessful and unsupported attempts. A sample drawn only from complete
 
 Recover the relevant current configuration and conditions. A difficulty in one environment, shift or service class does not automatically characterize every user.
 
-Build the observation around the task rather than around a platform feature. Ask a practitioner to reconstruct the last attempt using its actual inputs, returned results and help received. Observe another attempt when the reconstruction leaves a consequential gap. Combine this with provider records for the same attempt. An interview can reveal why a user bypassed the path; backend timing can establish where a job waited. Neither replaces the other.
+Build the observation around the task rather than around a platform feature. Use an adequate existing account of an attempt. If an account is needed, ask a practitioner to reconstruct their last attempt from its inputs, returned results and any help received. Observe another attempt when it can resolve a consequential gap at a justified cost. Compare that account with provider records for the same attempt when they can clarify the difficulty. An interview can reveal why a user bypassed the path; backend timing can establish where a job waited. Neither replaces the other.
 
-Select contrasting cases that can expose the suspected difficulty: a routine success and a failure, experienced and occasional users, an ordinary variant and the important exception. This is purposeful diagnosis, not a representative prevalence estimate. State which population is covered before reporting a rate. If an urgent rare failure already defeats an essential result, do not postpone it merely to collect more frequent minor complaints.
+Select contrasting cases that can expose the suspected difficulty. For example, compare a routine success with a failure, experienced with occasional users, or an ordinary variant with a consequential exception. This is purposeful diagnosis, not a representative prevalence estimate. State which population is covered before reporting a rate. If an urgent rare failure already defeats an essential result, do not postpone it merely to collect more frequent minor complaints.
 
 #### SYSE.25:4.2 - Locate the burden without inventing its cause
 
 Separate active practitioner work, waiting, error, rework, diagnosis and assistance. Follow the burden across users and providers rather than optimizing one team's visible time. Preserve missing observations; do not turn an unobserved abandoned attempt into a success.
 
-Ask what actually obstructed the result. Possibilities include an unavailable enabler, an unreliable technical operation, unclear interaction, inadequate capacity, a missing authorized decision, an invalid Method or an unsettled desired result. These lead to different work.
+Ask what obstructed the result. Possibilities include an unavailable enabler, an unreliable technical operation, unclear interaction, inadequate capacity, a missing authorized decision, an invalid Method or an unsettled desired result. These lead to different work.
 
-Ask the person authorized to grant the missing permission. Return a missing professional Method or acceptance meaning to the relevant engineering specialist. Consider platform repair when the enabling System or supported use can change the observed difficulty. Use SYSE.12 when the broader platform's actual participation, capability or provision must first be established.
+When a permission is missing, seek it from the authority that can grant it. Return a missing professional Method or acceptance meaning to the relevant engineering specialist. Consider platform repair when the enabling System or supported use can change the observed difficulty. Use SYSE.12 when the broader platform's actual participation, capability or provision must first be established.
 
 Follow one obstruction through its dependencies. If developers wait for access, determine whether a decision is waiting, an already granted right has not taken effect, or the resource itself is unavailable. Changing the entry form cannot remove that obstruction unless it also changes the operation that creates it. If developers repeatedly ask which package was tested, connect the test result to its actual artifact before diagnosing a training need. These observations discriminate mechanisms; a complaint category alone does not.
 
-Preserve the arrangement of time and work. Two concurrent waits should not be added as if they occurred in sequence; a fast operation that queues behind one shared specialist can still dominate the user's completion time. Compare the task's completion with the earliest point at which all its needed results are jointly usable. Ask whether removing the suspected obstruction would let the task finish, or merely expose the next missing input. This yields a bounded improvement hypothesis and its dependencies rather than a ranking of individually slow tools.
+Preserve the arrangement of time and work. Two concurrent waits should not be added as if they occurred in sequence; a fast operation that queues behind one shared specialist can still dominate the user's completion time. Compare the task's completion with the earliest point at which all its needed results are jointly usable. Ask whether removing the suspected obstruction would let the task finish, or expose the next missing input. This yields a bounded improvement hypothesis and its dependencies rather than a ranking of individually slow tools.
 
 #### SYSE.25:4.3 - Construct competing improvement hypotheses
 
@@ -59,13 +59,13 @@ For each serious candidate, state the difficulty it should change, the proposed 
 
 Compare the same task, acceptance meaning, supported variation and evidence horizon. Include user and provider effort to use, maintain and support the changed provision, migrate to it, and restore operation after failure. Preserve constraints such as unavailable expertise, confidential data and an existing service commitment without treating a constraint label as proof of feasibility.
 
-A disagreement about the whole obtaining arrangement—local provision, a shared service, an external provider or a mixture—uses SYSE.24's complete comparison. The present choice may identify a result worth improving while leaving that obtaining comparison tied.
+If the unresolved choice concerns the whole way of obtaining the result, SYSE.24 compares local provision, a shared service, an external provider or a combination. The present choice may identify a result worth improving while leaving that obtaining comparison tied.
 
-Construct alternatives by changing the mechanism, not just the supplier's brand. For an access wait, plausible alternatives may activate an already granted right earlier, supply a supported standard request, reserve provider assistance, or alter resource provision. Retaining a qualified assisted route is a real alternative when demand is small or judgement is irreducible. Automation is a candidate when repeated, sufficiently understood operations can be performed and recovered under known conditions. A proposed standard path should state which variations it absorbs and which it deliberately leaves to assistance.
+Construct alternatives by changing the mechanism, not just the supplier's brand. For an access wait, plausible alternatives may activate an already granted right earlier, supply a supported standard request, reserve provider assistance, or alter resource provision. Retaining a qualified assisted route is an alternative when demand is small or judgement is irreducible. Automation is a candidate when repeated, sufficiently understood operations can be performed and recovered under known conditions. A proposed standard path should state which variations it absorbs and which it deliberately leaves to assistance.
 
 Follow each candidate through the whole bounded task. Include the work needed to prepare its inputs, learn its use, interpret failure and sustain its providers. Check shared constraints: saving ten minutes for each user may consume the only specialist hour needed for another supported task. Reject an option that cannot meet a necessary condition; compare the remaining options by their consequential differences. When neither dominates, expose the accepted trade-off or retain a tie. A weighted score is useful only if its scales and weights express the deciding participants' actual preferences.
 
-Keep the implementation increment coherent. An artifact-identity repair may require a producer to return the identity and a consumer to preserve and display it. Funding only the first half would not deliver the improvement. Conversely, it need not wait for unrelated portal, deployment and training work. SYSE.26 develops the supported path through the affected operations; SYSE.20 supplies the reconciliation when shared Work or resources create a real conflict.
+Keep the implementation increment coherent. An artifact-identity repair may require a producer to return the identity and a consumer to preserve and display it. Funding only the first half would not deliver the improvement. The identity repair need not wait for unrelated portal, deployment and training work. SYSE.26 develops the supported path through the affected operations; SYSE.20 supplies the reconciliation when shared Work or resources create a real conflict.
 
 #### SYSE.25:4.4 - Select a justified next action
 
@@ -93,7 +93,7 @@ The return is selective. If only the implementation is defective, repair that op
 
 ParcelWorks provides an invented example. In twenty service-release attempts, six require repeated infrastructure contacts, four include tests that pass on unchanged inputs after a rerun, two use different package bytes under the same source label, and one attempted rollback fails after a column rename. These counts overlap; they are not thirteen distinct failed releases.
 
-The team initially proposes a portal, a shared delivery path and more developer training. It first selects a bounded question: can developers obtain and retain the identity of the package whose test result they intend to use? This question does not claim to repair the flaky tests or the data-recovery failure.
+The team initially proposes a portal, a shared delivery path and more developer training. It first asks whether developers can obtain and retain the identity of the package whose test result they intend to use. This question leaves the causes of unreliable test outcomes and the failed rollback open.
 
 Two reconstructed attempts show that the visible source label already agrees while package bytes differ. Merely displaying that label more prominently cannot resolve the problem. The training hypothesis would need evidence that developers can already obtain the needed identity and fail to use it; that evidence is absent. Preserving and returning the exact artifact identity is a plausible different mechanism.
 
@@ -101,7 +101,7 @@ The chosen next result is a limited comparison of the current interaction with a
 
 This selects an improvement question and probe, not a shared-platform winner. The identity and environment repair can be implemented locally or through a thin shared provision. Without matched maintenance and failure evidence, those complete obtaining arrangements remain tied under SYSE.24. The unsupported language-specific variant remains outside the probe.
 
-If the comparison removes identity confusion but slow or unreliable feedback remains, the next question goes to SYSE.31. A healthy artifact path does not repair the old rollback failure; that still needs the actual data construction in SYSE.34.
+If the comparison removes identity confusion but slow or unreliable feedback remains, the next question goes to SYSE.31. A healthy artifact path does not repair the old rollback failure; that requires the data-recovery work described in SYSE.34.
 
 Suppose the bounded trial contains six matched attempts. On both routes, the same two artifact transfers fail once. The repair returns the tested artifact identity in all six outcomes, including the failures, and the developer can distinguish retrying a transfer from rebuilding a package. The existing route requires two manual identity reconciliations. The provider performs no new per-attempt reconciliation. This supports the functional result for the tested service class; a repair that merely hides the two failed transfers would fail the question.
 
@@ -148,13 +148,13 @@ Platform work gains an explicit connection to practitioner results. Some attract
 
 ### SYSE.25:10 - Rationale
 
-An improvement is useful through the result it changes, not through the amount of platform functionality added. A disconfirming observation makes that proposed connection testable. Comparing total burden and retaining ties prevents the selection process from rewarding invisible work transfer or a preferred architecture.
+Judge a proposed improvement by the difference it could make to the practitioner’s result and an implemented change by the difference it makes. A disconfirming observation makes that proposed connection testable. Comparing total burden and retaining ties prevents the selection process from rewarding invisible work transfer or a preferred architecture.
 
 ### SYSE.25:11 - SoTA-Echoing
 
 **Adapt** task discovery and feedback from [DORA Platform engineering](https://dora.dev/capabilities/platform-engineering/), a software practice guide. This selects the user undertaking as the unit for sections 4.1–4.3.
 
-The [2025 DORA report](https://dora.dev/research/2025/dora-report/), platform chapter, gives a different source contribution: observed capability ratings and model-dependent outcome estimates. Its association between clear task feedback and favorable experience motivates examining that mechanism. It does not prove that this local repair causes improvement. Its reported increase in delivery instability also warrants retaining recovery and downstream results in the comparison.
+The [2025 DORA report](https://dora.dev/research/2025/dora-report/), platform chapter, reports observed capability ratings and model-dependent outcome estimates. Its association between clear task feedback and favorable experience motivates examining that mechanism. It does not prove that this local repair causes improvement. Its reported increase in delivery instability also warrants retaining recovery and downstream results in the comparison.
 
 A developed product-discovery approach already connects research, hypotheses and small trials. This pattern adopts that strength. Its additional engineering work is to follow each candidate through identified outputs, shared provision and the conditions of the consuming action. A complete applicable product-discovery method can supply the research; use sections 4.2–4.5 only for the remaining engineering connection.
 

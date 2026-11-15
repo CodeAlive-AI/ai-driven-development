@@ -1,6 +1,6 @@
 ## LDR.Use:4 - Begin and complete a useful contribution
 
-The organizer uses LDR.4 to obtain the effective permissions and make the start mutually visible. The providers and clients confirm the same scope, dates, input conditions and route for an unsupported claim. A shared message with actual confirmations suffices; the federation does not create a launch ceremony.
+The organizer uses LDR.4 to obtain the effective permissions and make the start mutually visible. The providers and clients confirm the same scope, dates, input conditions and route for an unsupported claim. A shared message with the providers’ and clients’ confirmations suffices.
 
 The first case reveals that a test concerns an earlier configuration. The integrator explains the changed condition and the unsupported conclusion. The acceptance provider judges the diagnostic result within its remit. The client now knows which release claim cannot be made and which engineering question must be answered. That is the promised bounded service result, not a corrected engineering package or evidence that the client has acquired independent mastery.
 

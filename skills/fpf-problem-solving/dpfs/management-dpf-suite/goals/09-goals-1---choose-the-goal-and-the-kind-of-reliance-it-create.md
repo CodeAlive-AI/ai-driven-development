@@ -7,7 +7,7 @@
 
 **Use this when** a wish, target or assignment must become an intelligible basis for action, or participants are using the same goal words with different expectations. The object is the meaning and intended use of the goal. The result is an aim that can guide its next construction or execution, including any unresolved choice.
 
-The reader needs access to the affected work, its recipient and the person or arrangement able to decide its purpose. An adequate existing goal can be used directly. If the remaining issue is an operating target and comparison, OPS.21 already supplies that method; use its result here only when a wider goal relationship still needs construction.
+The reader needs access to the affected work, its recipient and the person or arrangement able to decide its purpose. An adequate existing goal can be used directly. If the remaining issue is an operating target and comparison, OPS.21 supplies that method; use its result here only when a wider goal relationship still needs construction.
 
 ### GOALS.1:2 - Problem
 
@@ -21,7 +21,7 @@ A goal needs enough stability to orient action and enough revisability to respon
 
 #### GOALS.1:4.1 - Recover the desired condition and its grounds
 
-Ask who needs what result, in which situation and by what useful horizon. Examine a representative case. Separate the condition valued by the recipient from a proposed means: a customer needs a usable repaired device; a new scheduling tool is one possible way to improve the repair service. State conditions that must remain protected, such as safe operation, eligibility, workload limits or an existing promise. Use the conditions that actually govern this work.
+Ask who needs what result, in which situation and by what useful horizon. Examine a representative case. Separate the condition valued by the recipient from a proposed means: a customer needs a usable repaired device; a new scheduling tool is one possible way to improve the repair service. State conditions that must remain protected, such as safe operation, eligibility, workload limits or an existing promise.
 
 Explain why this aim matters now. A known unmet need, a selected strategy, an established obligation, a useful opportunity or an explicit personal purpose can supply that ground. When participants disagree, expose the differing result or value and obtain the decision through the governing practice. A clearer sentence can make the disagreement discussable; it cannot decide whose preference governs.
 
@@ -38,15 +38,15 @@ Explain which of the following meanings the current statement carries. Several m
 | Forecast | What is expected under stated present assumptions. | Keep the basis and uncertainty available; update them when evidence changes. |
 | Commitment | What another participant may rely on under an effective agreement or obligation. | Obtain the relevant authority, acceptance and means; change it through its actual terms. |
 | Inquiry goal | The answer or discriminating knowledge needed for a decision. | Specify a question, adequate method and useful possible conclusions. |
-| Learning goal | A capability that a named person or intended audience should acquire for later work. | Identify the performance, allowed support and evidence; obtain the learning arrangement. |
+| Learning goal | What the intended performer should become able to do in later work. | Identify the performance, allowed support and evidence; obtain the learning arrangement. |
 
 An aspiration may be deliberately uncertain. A committed investigation can reliably promise a qualified answer or a truthful inconclusive result under its agreed scope, while the desired discovery remains uncertain. A learner can undertake practice without promising that a fixed number of hours will establish mastery. These arrangements become usable when their receiving parties understand the distinction.
 
-In an operating example, ambition 12, forecast 8 and a supported promise of 10 need not be forced into one number. The ambition locates a possible improvement, the forecast informs response and the promise governs reliance. If the means currently support only 8, the supposed promise of 10 needs further provision or renegotiation; writing it on a goal sheet does not supply the difference. Use OPS.13 and OPS.21 for the actual operating construction.
+In an operating example, ambition 12, forecast 8 and a supported promise of 10 need not be forced into one number. The ambition locates a possible improvement, the forecast informs response and the promise governs reliance. If the means currently support only 8, the supposed promise of 10 needs further provision or renegotiation; writing it on a goal sheet does not supply the difference. Use OPS.13 and OPS.21 to construct the operating target and commitment.
 
 #### GOALS.1:4.3 - Connect the goal to a possible next action
 
-Reason backward from the desired condition to the contribution needed next, and forward from available means to what they can produce. If a suitable method, capable provider and needed conditions are already available, use them. If the way is missing, construct or obtain it through the subject practice and C.39. If a consequential uncertainty remains, use a warranted inquiry; STR.7 supplies the comparison between further evidence and sufficient present action.
+Reason backward from the desired condition to the contribution needed next, and forward from available means to what they can produce. If a suitable method, capable provider and needed conditions are available, use them. If the way is missing, construct or obtain it through the subject practice and C.39. If a consequential uncertainty remains, use a warranted inquiry; STR.7 supplies the comparison between further evidence and sufficient present action.
 
 The immediate result may be a task, a request for a missing contribution, a bounded inquiry, a learning opportunity or a decision to keep an adequate condition under observation. A goal can be meaningful before a complete plan is known. Keep the next reliance proportionate to what is available: preserve a worthwhile aspiration while withholding the unsupported delivery promise.
 

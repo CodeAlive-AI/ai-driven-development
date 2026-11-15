@@ -8,7 +8,7 @@ The ten standalone languages have the following distinct contributions:
 | --- | --- |
 | [Decision Design (PSDA)](../../dpfs/psda/_index.md) | Constructing a decision situation, ends and possible means, alternatives, consequence and uncertainty accounts and warranted recommendations, together with the engagement, participation and facilitation that make them usable. |
 | [Research Method Practice (RMP)](../../dpfs/rmp/_index.md) | Inquiry and criticized knowledge contributions, including source recovery, observation, research design and evidence limits. |
-| [Explanation Design (EXD)](../../dpfs/exd/_index.md) | Making warranted relations recoverable and usable by an intended recipient. |
+| [Explanation Design (EXD)](../../dpfs/exd/_index.md) | Designing explanations of warranted connections and assessing an existing explanation. Examine what grounds the connection and what the intended recipient could recover and use under stated conditions. Evidence of the recipient’s work can establish what they actually recovered. |
 | [Narrativization and Narrative Studies (NSTD)](../../dpfs/nstd/_index.md) | Constructing and interpreting narratives: forming working accounts and fictional or hypothetical events, choosing purpose, viewpoint and presentation, and examining their use with recoverable source relations. |
 | [Implementation Facilitation (IS)](../../dpfs/is/_index.md) | Agreeing, constructing, adapting and continuing facilitation through which participants make an interpretable practice workable under actual conditions, including brokerage and their further facilitation capability. |
 | [Financial Domain Modeling (FDM)](../../dpfs/fdm/_index.md) | Financial parties, positions, rights, obligations, events and flows with their domain meanings. |

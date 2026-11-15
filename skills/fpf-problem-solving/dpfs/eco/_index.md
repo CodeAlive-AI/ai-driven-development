@@ -8,7 +8,7 @@
 - **Version:** 24 October 2026
 - **License:** © 2026 Anatoly Levenchuk. Original framework text: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party material retains its own terms.
 
-Begin with the contribution your work cannot yet obtain. The Table of Contents locates individual methods; the Readme demonstrates connected uses; the Architectural Reference explains the language, prerequisites and limits. **ECO** is the reference code. Pattern numbers identify methods, while Parts organize reading.
+Start with the economic question your work needs answered. The Table of Contents locates individual Methods. The Readme shows how to use them together, and the Architectural Reference explains their contributions, prerequisites and limits. Use ECO and a Method number to cite a Method. The Parts group related Methods for reading.
 
 This framework has its own publication in the [FPF Library DPF catalogue](../_index.md). Cite the author, title, version shown here and the relevant PatternID or Architectural Reference section.
 
@@ -36,15 +36,15 @@ This framework has its own publication in the [FPF Library DPF catalogue](../_in
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | [ECO.1 - Recover the Basis for an Economic Calculation](11-eco-1---recover-the-basis-for-an-economic-calculation.md) | Stable | prices; weights; exchange; opportunity cost. What does this economic comparison actually compare? | Existing MA/FIN accounts; ECO.3 if an exchange remains missing. |
+| 1 | [ECO.1 - Recover the Basis for an Economic Calculation](11-eco-1---recover-the-basis-for-an-economic-calculation.md) | Stable | prices; weights; exchange; opportunity cost. Which resources, terms and alternatives enter this comparison? | Existing MA/FIN accounts; ECO.3 if an exchange remains missing. |
 | 2 | [ECO.2 - Reconsider Resource Use in Response to Price Signals](12-eco-2---reconsider-resource-use-in-response-to-price-signals.md) | Stable | price change; substitution; marginal use. What response do the available terms support? | ECO.1 for disputed prices; functional and operating feasibility. |
-| 3 | [ECO.3 - Discover an Exchange between Different Plans](13-eco-3---discover-an-exchange-between-different-plans.md) | Stable | entrepreneurial discovery; different plans; exchange. What useful combination can the parties actually realize? | ECO.1 for calculation; ECO.4 for complementary commitments. |
+| 3 | [ECO.3 - Discover an Exchange between Different Plans](13-eco-3---discover-an-exchange-between-different-plans.md) | Stable | entrepreneurial discovery; different plans; exchange. Which proposed exchange can the parties carry out? | ECO.1 for calculation; ECO.4 for complementary commitments. |
 
 ## Part II - Commitments and adaptation
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | [ECO.4 - Form Resource Commitments for an Uncertain Venture](14-eco-4---form-resource-commitments-for-an-uncertain-venture.md) | Stable | resource mobilization; uncertainty; complementary commitments. What makes a first action or joint commitment attainable? | ECO.3 proposal; OPS resources; FIN financing; EXD where understanding is missing. |
+| 1 | [ECO.4 - Form Resource Commitments for an Uncertain Venture](14-eco-4---form-resource-commitments-for-an-uncertain-venture.md) | Stable | resource mobilization; uncertainty; complementary commitments. What makes a first action or joint commitment attainable? | A proposed venture; ECO.3 when a new exchange must be found; OPS resources; FIN financing; EXD where understanding is missing. |
 | 2 | [ECO.5 - Choose Exchange Terms for Private Information and Effort](15-eco-5---choose-exchange-terms-for-private-information-and-ef.md) | Stable | private information; effort; incentives; participation. Which terms make the contribution worthwhile and feasible? | Proposed exchange; ECO.4 commitments or ECO.6 dependence where relevant. |
 | 3 | [ECO.6 - Arrange Adaptation in a Dependent Trading Relationship](16-eco-6---arrange-adaptation-in-a-dependent-trading-relationsh.md) | Stable | dependence; dedicated investment; adaptation; outside option. How will the parties handle a consequential change? | ECO.1 grounds; EAM/FIN consequences; OCE/CGOV for a selected organization change. |
 
@@ -52,9 +52,9 @@ This framework has its own publication in the [FPF Library DPF catalogue](../_in
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | [ECO.7 - Coordinate Use and Renewal of a Shared Resource](17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md) | Stable | shared resource; renewal; access; collective rules. Can separate uses and contributions preserve the resource? | Physical and operating resource account; ECO.8/.9 for wider coordination and rule change. |
+| 1 | [ECO.7 - Coordinate Use and Renewal of a Shared Resource](17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md) | Stable | shared resource; renewal; access; collective rules. Can separate uses and contributions preserve the resource? | Physical and operating resource account; ECO.8 or ECO.9 when wider coordination or a change of rule is needed. |
 | 2 | [ECO.8 - Join Direct Cooperation with a Wider Economic Order](18-eco-8---join-direct-cooperation-with-a-wider-economic-order.md) | Stable | direct cooperation; extended order; Method vertical. Which coordination mechanism fits each relation? | The actual cooperation and exchange relations; ECO.7 for a shared constraint. |
-| 3 | [ECO.9 - Decide Whether and How to Change Economic Rules through Their Working Practices](19-eco-9---decide-whether-and-how-to-change-economic-rules-thro.md) | Stable | institutional change; cultural evolution; capability. Should this rule be retained or changed, and what working contribution is needed? | Current practice and change pressure; C.36 cultural continuation; HCD/MDPE capability. |
+| 3 | [ECO.9 - Decide Whether and How to Change Economic Rules through Their Working Practices](19-eco-9---decide-whether-and-how-to-change-economic-rules-thro.md) | Stable | institutional change; cultural evolution; capability. Should this rule be retained or changed, and what working contribution is needed? | Current practice and a question about retaining or changing it; C.36 cultural continuation; HCD/MDPE capability. |
 
 ## Part IV - Efficiency and demand
 
@@ -66,62 +66,62 @@ This framework has its own publication in the [FPF Library DPF catalogue](../_in
 
 ## Practical entries
 
-Use this language when a technically possible plan still lacks an economic way of being realized: its comparison uses questionable prices, its parties cannot form workable commitments, its rules fail to coordinate different uses, or an efficiency gain changes what people do next.
+Use these Methods to examine how a plan can work economically. A price may be open to question, a technically feasible service may lack a customer commitment, or separate uses may exceed a shared supply. A lower resource cost per unit can also change demand. Start with the relation that matters to the result you need.
 
-The three connected uses below show how several methods contribute to a larger result. For a direct question, use the Table of Contents.
+The following cases connect Methods to address larger questions. For a question one Method can answer, use the Table of Contents.
 
-You may ask an assisting agent: “Explain this in the language of my work, without framework jargon. Show what I can do next, what result it should supply and what would change the recommendation.” Provide what is already known about the relevant plans and resources. Unknown conditions can remain conditional.
+Use what you know about the relevant plans and resources to answer the economic question. If you obtain help from a practitioner or agent, explain the question and its intended use and ask for an answer in the language of your work. The result may be an explanation, feasibility assessment or recommendation. State which conclusions depend on assumptions.
 
 ### ECO-VENTURE - Turn a useful idea into a feasible service arrangement
 
 - **Situation:** A proposed service needs a customer's order, a supplier's dedicated equipment and finance. Each party finds a different part uncertain.
 - **Question:** Which combination of exchange terms, contributions and commitments can make the service attainable?
-- **First useful result or blocker:** An attainable preparatory action, a usable combination of commitments or the condition that prevents one. The complete assignment may require a service that can actually be supplied.
-- **Start with:** Connect the unresolved contributions as follows; reuse those already sufficient.
+- **First useful result or blocker:** A finding about whether a first action or set of commitments is attainable, or a specific condition that remains open. If the assignment includes delivering the service, establish that the parties can supply it and carry out the required work.
+- **Start with:** Use the existing contributions that fit. The following steps address questions that may remain.
 
-1. Use [ECO.3](13-eco-3---discover-an-exchange-between-different-plans.md) to construct the exchange among the different plans. A customer's enthusiasm is distinct from an order, and an offered asset is useful only with its required operating contribution.
+1. Use [ECO.3](13-eco-3---discover-an-exchange-between-different-plans.md) if the exchange that could connect the parties’ plans still needs to be constructed. Establish a customer order from commitment to the terms. Check that the operating contribution needed to use an offered asset is available.
 2. Use [ECO.1](11-eco-1---recover-the-basis-for-an-economic-calculation.md) for a disputed price or alternative-use assumption. Existing MA, FIN and OPS results can already answer the resource and financial questions.
-3. Use [ECO.4](14-eco-4---form-resource-commitments-for-an-uncertain-venture.md) to make complementary commitments jointly attainable. EXD helps when the missing contribution is understanding; a clear rejection may instead require different terms or counterparties.
+3. Use [ECO.4](14-eco-4---form-resource-commitments-for-an-uncertain-venture.md) if the commitments depend on one another. Use EXD when a participant lacks an explanation needed to judge the proposal. A participant who understands and declines it may need different terms to participate, or the venture may need another counterparty.
 4. Use [ECO.5](15-eco-5---choose-exchange-terms-for-private-information-and-ef.md) if private quality or later action makes the proposed terms unreliable. Use [ECO.6](16-eco-6---arrange-adaptation-in-a-dependent-trading-relationsh.md) if dedicated investment makes adaptation or exit difficult.
-5. Carry the chosen combination into the applicable agreements and operating work. [ECO.8](18-eco-8---join-direct-cooperation-with-a-wider-economic-order.md) helps when an internal cooperation rule has been incorrectly extended to an external supplier.
+5. If the undertaking requires implementation, carry the selected combination into the applicable agreements and operating work. Use [ECO.8](18-eco-8---join-direct-cooperation-with-a-wider-economic-order.md) when a rule for internal cooperation has been applied to an external supplier whose terms differ.
 
-In a constructed case, the proposed supplier needs tooling that would lose most of its value if the customer cancels. Compare a sufficient volume commitment, staged investment and a standard process with less dependence. If the standard process supplies the needed result at an acceptable whole cost, the firm may avoid the dedicated investment. If it cannot supply the required performance, the remaining adaptation arrangement still needs a workable owner, decision and contribution.
+Suppose a supplier needs tooling that will lose most of its value if the customer cancels. Compare an adequate volume commitment, staged investment and a less dependent standard process where these are plausible. If the standard process gives the required result at an acceptable total cost, the firm can avoid dedicated tooling. If it cannot, assess who can decide on later adaptations, on what terms and with what contribution.
 
-Change the case: a reusable interface and another qualified supplier become available. Revisit the dependence comparison; do not carry the former safeguards or an acquisition proposal forward automatically. If the only remaining difficulty is scheduling already committed capacity, ordinary OPS work is enough.
+Now suppose a reusable interface and another qualified supplier become available. Reassess which risks and safeguards still matter and whether an acquisition proposal still serves a purpose. If the only remaining task is scheduling committed capacity, use the relevant OPS Method.
 
-- **Stop or return:** Stop with the requested result. A diagnosed missing commitment is useful for a diagnostic request; it is not the implemented service. Conversely, a sufficient existing agreement does not need to be rediscovered.
+- **Stop or return:** A finding about the missing commitment can answer a diagnostic question. Use a sufficient existing agreement directly. For a claim that the service has been delivered, establish that the promised work reached its recipient under the agreed conditions.
 
 ### ECO-SHARED - Preserve access under a changed shared constraint
 
 - **Situation:** Several local groups have workable allocations, but their combined use now threatens the resource or excludes other legitimate users.
 - **Question:** Which shared constraint and coordination relation must their local arrangements retain?
-- **First useful result or blocker:** A feasible allocation with an effective adaptation route, or the incompatibility that remains.
-- **Start with:** Use [ECO.7](17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md) to connect withdrawal, renewal and access. Use [ECO.8](18-eco-8---join-direct-cooperation-with-a-wider-economic-order.md) when the local arrangements need a wider coordination relation. Use [ECO.9](19-eco-9---decide-whether-and-how-to-change-economic-rules-thro.md) to compare preserving, modifying and replacing the rules through the practices and capabilities each alternative needs.
+- **First useful result or blocker:** A supported finding about the shared constraint, a feasible allocation with a way to adopt or adapt it, or an incompatibility the current arrangements leave unresolved.
+- **Start with:** Use [ECO.7](17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md) to relate withdrawal, renewal and access. Use [ECO.8](18-eco-8---join-direct-cooperation-with-a-wider-economic-order.md) when local arrangements need a wider coordination relation. Use [ECO.9](19-eco-9---decide-whether-and-how-to-change-economic-rules-thro.md) if the question is whether to preserve, modify or replace a rule, taking account of the practices and capabilities each option requires.
 
-For example, a lower canal inflow can invalidate the previous daily allowances. Correct arithmetic for each group's old allocation does not answer the joint constraint. The receiving result is a physically possible allocation with an effective way to adopt and adapt it, or a clearly identified incompatibility.
+For example, lower canal inflow can make a set of daily allowances infeasible even when every group followed its old limit. Compare the combined withdrawals with the available flow. That finding can answer a question about feasibility. If the task requires a workable new allocation, identify how the affected parties can adopt and adapt it.
 
-Now suppose the physical supply recovers, but a new digital access procedure excludes users who cannot operate it. The next contribution is access, assistance or a different procedure; another water calculation would miss the failure. HCD and MDPE can help obtain the needed capability and practice. A digital inscription of the rule does not provide them.
+Now suppose the water supply recovers but some users cannot operate the new digital access procedure. The water calculation still answers its physical question. Investigate the access problem and, if asked to restore access, assess assistance, a different procedure or the capability the users need. HCD and MDPE can help develop the relevant capability or practice. Publishing the digital rule establishes neither access nor ability to use it.
 
-- **Stop or return:** Close the requested allocation or rule question when its conditions are sufficient. Return a new physical, access or capability failure to its actual contributor.
+- **Stop or return:** Give the supported answer about the allocation or rule. If it remains limited by physical supply, access or capability, identify the missing contribution and obtain it when the task requires it and it is available.
 
 ### ECO-EFFICIENCY - Decide what a unit saving should change
 
 - **Situation:** A process needs less energy or money per useful result, making several continuations possible.
-- **Question:** Should the gain reduce burden, expand valuable activity, retain capacity or help meet a resource cap?
-- **First useful result or blocker:** A conditional total-use comparison or a threshold that changes the choice.
-- **Start with:** Use [ECO.10](20-eco-10---trace-efficiency-savings-through-demand-responses.md) to distinguish the technical saving from the economic response and to find a consequential threshold. [ECO.2](12-eco-2---reconsider-resource-use-in-response-to-price-signals.md) helps revise resource use when prices change. [ECO.3](13-eco-3---discover-an-exchange-between-different-plans.md) helps when the released means make another useful exchange possible. A shared cap or access rule can bring in [ECO.7](17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md) or [ECO.9](19-eco-9---decide-whether-and-how-to-change-economic-rules-thro.md).
+- **Question:** How does a unit saving affect total use? If a choice is needed, should it reduce burden, expand valuable activity, retain capacity or help meet a cap?
+- **First useful result or blocker:** A conditional comparison of total resource use. When a break-even output exists, it identifies where the improved process uses as much resource as the comparison case without the improvement.
+- **Start with:** Use [ECO.10](20-eco-10---trace-efficiency-savings-through-demand-responses.md) to separate the technical saving from changes in demand and calculate a threshold when it matters. Use [ECO.2](12-eco-2---reconsider-resource-use-in-response-to-price-signals.md) for a resource response to changed prices and [ECO.3](13-eco-3---discover-an-exchange-between-different-plans.md) when the released means could support another exchange. Use [ECO.7](17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md) or [ECO.9](19-eco-9---decide-whether-and-how-to-change-economic-rules-thro.md) when shared limits or their rules matter.
 
-Halving energy per unit allows twice the original output at the same energy use, within a fixed simple boundary. It does not predict that output will double. Compare the attainable uses and their value; ordinary operation may already constrain demand, while lower cost can also make new uses practical.
+If energy per unit falls by half, twice the former output uses the same energy within a fixed boundary. Higher output is then possible on this energy account. Whether it can be produced and will be demanded depends on other constraints, value and the new costs of use. Compare attainable uses when the question calls for a choice.
 
-If the purpose is a resource cap, keep the aggregate limit in the operating plan. If the purpose is useful expansion, a higher total can be acceptable while its financial and resource consequences still need to be understood. “Jevons's paradox” does not choose between those purposes.
+For a resource cap, keep the aggregate limit in the operating plan. For useful expansion, assess the value of the additional output alongside its resource and financial costs. Higher total use may be acceptable for that purpose. Select the purpose on its own grounds.
 
-- **Stop or return:** Use the supported comparison when it distinguishes the feasible alternatives. Return to the counterfactual, demand mechanism or receiving purpose if its change reverses the choice.
+- **Stop or return:** Report the total-use comparison and the assumptions on which it rests. If the result is to inform a choice, identify the feasible alternatives it distinguishes. Reconsider the affected conclusion when the counterfactual, demand response or receiving purpose changes.
 
 ## Using the whole language
 
-Begin at the unresolved contribution and keep already adequate work. A return to an earlier pattern follows a changed premise, not a compulsory cycle. The Architectural Reference explains the economic architecture, Method verticals, sources and limits; each pattern provides its own instructions and examples.
+Start with the unresolved question and use applicable results already available. If a premise changes, reconsider the contribution that depends on it. The Architectural Reference explains the economic relations, sources and limits. Each Method includes instructions and examples.
 
-Management supplies financial, operating and organizational methods; Explanation Design (EXD) supplies explanation methods; Human Capability Engineering supplies methods for changing human capabilities. Core supplies the general methods of development. The [Foundational Thinking DPF Suite](../foundational-thinking-dpf-suite/_index.md) supplies mathematical, physical and computational methods where those contributions are missing.
+Use Management Methods for financial, operating and organizational work, Explanation Design (EXD) for a needed explanation and Human Capability Engineering when a person needs to learn an operation. Core provides general development Methods. Use the [Foundational Thinking DPF Suite](../foundational-thinking-dpf-suite/_index.md) when mathematical, physical or computational modeling is needed.
 
 ---
 

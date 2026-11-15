@@ -3,51 +3,51 @@
 > **Status:** Stable
 
 > **Pattern type:** Music-and-Dance recognition-capability pattern
-> **Public result:** a supported choice for developing recognition, or demonstrated recognition within the receiving use's conditions and limits; revise the distinction, signal, representation or intended population when the available basis requires it
+> **Public result:** A finding about a recognizer’s response or capability under stated conditions, a plan for developing or testing it, or evidence of what changed through practice. State the limits of the finding. Identify any change in the distinction, support or task that the intended use requires.
 
 ### MDPE.23:0 - Use This When
 
-Use this pattern when a musical, movement, rhythmic, interaction, or stylistic difference matters to a project,
-but the people or agents expected to use that difference cannot reliably notice or distinguish it outside a
-familiar cue, teacher example, recording, partner, venue, or label.
+Use this method when you need to know whether a person, group or machine can recognize a musical, movement, rhythmic, interaction or stylistic difference
+under specified conditions. The question may concern what happened in a past task, performance with an allowed aid, transfer to a changed situation or a
+capacity the project needs to develop. Familiar music, a partner or a label can either be part of the task or disclose the answer, depending on its rules.
 
-Examples include a dancer who can identify a style only from the song title, a partner who cannot feel the intended
-weight arrival, a musician who hears a rhythm after it is named but not inside unfamiliar material, a judge whose
-decision follows costume or school reputation, or recognition software that succeeds on its training performers
-and fails on new ones.
+A partner may detect a change of contact before they can name the weight shift. A musician might
+identify a familiar rhythm after its name is supplied and still miss it in unfamiliar material. A
+judge may follow a costume or school reputation, and a classifier may succeed on recordings of its
+training performers but fail on new ones. Specify what recognition should depend on in this task.
 
-The first useful result states:
+Identify what the question requires from the following.
 
-- who needs the capability;
-- what world-side difference must be recognized;
-- what task shows recognition;
-- which cues are legitimate and which would leak the answer;
-- the direct perceptual, bodily, musical, dance, or machine-learning Method used to develop capability; and
-- the relevant conditions of later use and the existing or newly obtained observations needed for the present claim.
+- The holder or sampled group whose capability or performance is at issue.
+- The musical or dance difference and how it was or could be made perceptible.
+- The response that counts as recognizing the difference.
+- The cues and assistance the task permits, and any cue that could supply its answer without the intended discrimination.
+- The direct perceptual, bodily, music, dance or machine-learning method if development is requested.
+- The conditions and evidence needed for this observation, transfer or retention claim, including an applicable result already available.
 
-Use direct ear-training, rhythm-training, movement-perception, partner-sensing, somatic, style-comparison,
-perceptual-learning, judging, curation, or machine-recognition Methods for their own results. Use this pattern for
-the Music-and-Dance engineering decision that remains: whether the distinction is learnable and usable by the
-intended recognizers under the conditions where later Work needs it.
+Use the relevant ear-training, rhythm, movement-perception, partner-sensing, somatic, style-comparison, perceptual-learning, judging,
+curation or machine-recognition method for its own result. This method connects the target distinction with what the
+holder could recognize in the task, how a change of conditions affects that result, or what development is warranted.
+A question about learnability needs evidence about learning. A particular recognized signal can be reported directly.
 
-Do not use this pattern when:
+Use a more direct approach in the following cases.
 
-- the project only needs observations from already capable observers (`MDPE.12`);
-- performance capability rather than recognition is limiting (`MDPE.10`);
-- the task is to choose, authorise, or operate a recognition-and-selection arrangement (`MDPE.13`);
-- a direct domain Method already demonstrates the required recognition and transfer; or
-- the distinction has no named receiving Work or decision and is merely an interesting classification.
+- For a question about what an already capable observer found, use an adequate observation or MDPE.12 to establish or compare the available evidence.
+- When the holder recognizes the cue and the remaining question concerns performing the response, use the relevant performance method or MDPE.10 for a capability question.
+- Use MDPE.13 to examine, choose or redesign a recurring recognition and selection arrangement.
+- If a direct method or existing result answers the recognition question under its conditions, use it.
+- For classification of material alone, use the relevant subject method. A question about what someone or some system recognized in a past classification can justify a separate inquiry here.
 
 ### MDPE.23:1 - The Recurring Difficulty
 
-A physical difference can exist without being available to a particular observer. An observer can discriminate two
-examples without naming them, can name them without knowing when the distinction matters, or can recognize them in
-one classroom context and fail in performance. Recognition is therefore not one undifferentiated mental event.
+A physical difference can be present even when a recognizer cannot detect it. Discriminating two examples,
+naming a category, locating the relevant event and recognizing when a response is called for are different tasks.
+The same recognizer may succeed at one and miss another, or respond differently after a change in conditions.
 
-For this pattern, recognition capability belongs to a named holder and a named family of recognition tasks. The
-holder can be a musician, dancer, partner, teacher, listener, curator, judge, performing Agent, or machine
-recognizer. A population result concerns a distribution of performances by sampled members unless the population is
-also an organised Agent performing collective Work.
+Identify whose capability is at issue and which tasks it must cover. The holder might be a musician, dancer,
+partner, teacher, listener, curator, judge, another performer, a technical recognizer or a group acting together.
+If several holders are sampled, their responses give a distribution for that sample. Inferences about a wider population depend on how the sample was selected.
+For a claim about one coordinated group or system, examine the response it produced as a whole under the relevant conditions.
 
 Useful recognition tasks include:
 
@@ -56,7 +56,7 @@ Useful recognition tasks include:
 - locate a difference in time, space, body, sound, or interaction;
 - predict the next relevant change;
 - notice that a learned coordination, concept, or Method applies in the current situation; and
-- act on the recognized difference without the training cue giving away the answer.
+- act on the recognized difference with the support the task permits and without being supplied the very answer it is meant to test.
 
 These tasks can rely on different capabilities. A dancer can hear that two rhythms differ yet be unable to locate
 the event that changes partner timing. A teacher can name a style but fail to distinguish its enacted movement from
@@ -64,59 +64,59 @@ a costume cue.
 
 Three failures are especially costly:
 
-1. **Cue dependence.** Training and test share a teacher, label, costume, recording, partner, or fixed order, so the
-   cue rather than the intended distinction controls the answer.
-2. **Context-bound retrieval.** The capability appears lost when music, partner, venue, body state, task, or recent
-   transition changes, although the earlier response can return in its old context.
-3. **A bad distinction.** Intended recognizers cannot reliably access the signal, the categories overlap for the
-   receiving use, or the representation omits the relation that matters. More repetition then trains noise or a
-   proxy.
+1. **Cue dependence.** The training and test might share a teacher, label, costume, recording, partner or fixed order. If
+   the response follows that cue while the target distinction varies, the outcome may overstate recognition of the target.
+2. **Context-dependent expression.** A response observed earlier may disappear after the music, partner, venue, body state, task or recent transition
+   changes, and reappear under the earlier conditions. Consider the change in access, support or demand as well as possible memory explanations.
+3. **An inaccessible or ill-defined distinction.** Intended recognizers may have no access to
+   the signal, the categories may overlap for the intended use or the representation may omit
+   what matters. Examine the signal, task and possible proxy before asking for more repetition.
 
-Recognition must also stay separate from selection. A listener may recognize a variant and reject it. A platform
-may amplify material that its users do not recognize as intended. A judge can recognize a difference without the
-authority to define a culture. Demonstrated recognition supplies evidence to `MDPE.13`; it does not make the later
-selection decision.
+Recognizing a variant, selecting it and having authority to decide are distinct. A listener can recognize
+and reject it. A platform may amplify material for reasons unrelated to what listeners recognize. A judge’s
+ability to tell variants apart establishes a capability within the task. For a question about an actual
+selection arrangement, bring the relevant findings to MDPE.13. Establish who decided under which rules when the inquiry concerns a decision that took place.
 
 ### MDPE.23:2 - Solution
 
-Connect development, observation and receiving use. Begin from what existing observations establish, and select
-the missing development or worthwhile comparison. Perception, bodily regulation, memory access, interaction and
-action can function simultaneously during one recognition task.
+Identify the recognizer, the target difference and the evidence already available under the task’s conditions. Give the supported result or its
+limit. If development is needed, use or select an appropriate method for the target and any established difficulty. If further evidence is needed, compare the contribution
+and burden of the available tests. Perception, bodily regulation, memory, interaction and action can operate together during a single task.
 
 #### MDPE.23:2.1 - Name the holder, task, and receiving use
 
-State:
+Identify the following as the claim requires.
 
-- the capability holder or sampled population;
-- the Music or Dance Work in which recognition matters;
-- the world-side subjects and difference to be recognized;
-- the required response: discriminate, identify, locate, predict, recognize applicability, or act;
-- the cost of false positive, false negative, delay, or uncertainty; and
-- the later decision that a demonstrated capability can change.
+- The holder of the capability, or the sampled units and population for a distribution of responses.
+- The music or dance activity and the past or intended use in which the distinction matters.
+- The subjects to compare and the relevant difference between them.
+- The response required, such as discrimination, identification, localization, prediction, recognition of applicability or action.
+- The consequences of a false positive, false negative, late response or uncertainty, where they affect the criterion.
+- Any decision that will use the assessment. If the task is to determine what the holder recognized on an earlier occasion, state that question.
 
-“Recognize Urban Kiz” is incomplete. A usable task might be: distinguish two
-movement-and-partner-interaction variants while music, clothing, and teacher cues vary, because a festival teaching
-decision depends on whether learners can preserve the intended difference.
+For a festival teaching decision, specify which two movement and partner-interaction variants of Urban Kiz learners
+should distinguish and which music, clothing or teacher cues may vary. A past event can instead raise the narrower
+question of whether these participants could tell the two enacted movements apart under the observed conditions.
 
 #### MDPE.23:2.2 - Ground the distinction and expose cue leakage
 
-Use `MDPE.12` or a direct observation Method to identify the actual characteristic or relation and the indications
-that make it accessible. Separate:
+Identify the target characteristic and the indications available for recognizing it. Use existing
+evidence, a direct observation method or MDPE.12 as needed. Distinguish the following roles.
 
 - the world-side rhythmic, acoustic, movement, contact, spatial, or interaction difference;
 - its representation in notation, syllables, audio features, video, geometry, labels, or examples;
-- cues legitimately available in later Work; and
-- accidental cues present only in teaching or the dataset.
+- cues available and permitted in the task being investigated, including any receiving use; and
+- cues that can predict the required answer without the intended discrimination, wherever they occur.
 
-If competent observers cannot agree under a suitable task, inspect the distinction before training novices. The
-right result can be a narrower category, a changed representation, a different signal, two separate distinctions,
-or abandonment of the proposed distinction.
+When capable observers disagree under a suitable task, examine access to the signal, the category boundary and the representation
+before proposing practice. The findings can support narrower categories, two separate distinctions, an altered signal or representation,
+or dropping the proposed distinction. An inquiry into the earlier responses can also finish by describing their disagreement.
 
 #### MDPE.23:2.3 - Establish a baseline with plausible rivals
 
-Use an adequate existing observation when it already identifies the contribution needed for the next teaching or receiving-use decision. When a live uncertainty could change that decision, choose an attainable baseline comparison whose information warrants its burden. Same/different or alternative cases can expose answer-by-label. Observe the task result and only the timing, uncertainty or error distinctions that affect the decision. A known access failure calls for access repair; a missing lesson need not wait for another test.
+Use a sufficient observation to answer the recognition question. If a material uncertainty remains, compare the attainable value and burden of a baseline test. Same/different cases or matched alternatives can show whether answers follow a label when the target difference varies. Record the results, timing, uncertainty and errors the claim needs. An established access failure can finish a diagnosis. If restoration or teaching was requested, use an adequate existing diagnosis to plan or obtain the required contribution.
 
-Consider a rival when it could change the next action. Common possibilities include:
+Consider alternative explanations where distinguishing them would affect the answer or a requested action. For example, the following can account for different failures.
 
 - the holder cannot perceive the signal;
 - the signal is available but the category or boundary is unclear;
@@ -125,81 +125,81 @@ Consider a rival when it could change the next action. Common possibilities incl
 - earlier learning is retrieved only in its old context; and
 - the proposed distinction does not support the intended use.
 
-Do not call every wrong performance a recognition failure. A capable listener can identify a rhythm that the same
-person cannot yet play; a dancer can recognize a partner cue but lack movement capability to answer it.
+An incorrect movement leaves open whether the cue was recognized. A listener can identify a rhythm they cannot yet play, and a dancer may recognize a
+partner’s cue without being able to carry out the response. When the distinction matters, use suitable evidence of recognition on its own or choose a separating task if worthwhile.
 
 #### MDPE.23:2.4 - Develop capability through varied but relevant tasks
 
-Choose the direct domain Method from the failure. Examples include:
+When development is requested, choose a direct method suited to the target and any established difficulty. Examples include the following.
 
 - contrastive listening with matched distractors;
 - singing, clapping, stepping, movement, or partner response tied to the same rhythmic relation;
 - changing tempo, instrument, performer, view, orientation, body, partner, or venue while preserving the target
   difference;
-- moving between notation, syllables, sound, movement, force, and geometry only when the correspondence is taught;
-- fading labels, teacher demonstrations, fixed order, or costume cues;
+- moving among notation, syllables, sound, movement, force and geometry using an applicable correspondence; teach or establish it where it is missing;
+- fading a teaching demonstration, label, fixed order or costume cue that would disclose the answer under the intended conditions, while keeping authorized support;
 - interleaving neighbouring styles or variants when discrimination is the goal; and
 - training machine recognizers on varied carriers and performers while protecting a held-out transfer set.
 
-Vary contexts expected in later Work or needed to distinguish rival
-explanations. Preserve protected conditions such as safety, consent, fatigue bounds, accessibility, and cultural
-source integrity.
+Vary contexts expected in the receiving work, or contexts needed to distinguish plausible explanations.
+Preserve relevant conditions for safety, consent, fatigue, accessibility and the integrity of the
+cultural source. A support that forms part of the intended task can be retained as other conditions vary.
 
 #### MDPE.23:2.5 - Probe context-dependent access before declaring loss
 
-The COIN model treats sensorimotor adaptation as contextual inference over several memories. Broader work on memory
-also reports context dependence, but one common computational account for all kinds of memory remains an open
-hypothesis. Use the hypothesis when it changes a cheap discriminating probe.
+The COIN model describes sensorimotor adaptation in terms of inference about contexts and several memories. Other work on
+learning and memory examines context-dependent performance. Whether the same computation explains other kinds of memory
+remains open. Consider a comparison suggested by the model when it could resolve the relevant uncertainty at reasonable cost.
 
-When a previously demonstrated response becomes unavailable, compare the live explanations with the next action they would justify. Lost support, changed demand, fatigue, inaccessible cues and context-dependent expression can call for different responses. If the available observation already selects an adequate repair, use it. If several explanations still permit the same worthwhile next action, proceed under that stated uncertainty.
+When a previously demonstrated response disappears, look at what changed. Loss of support, new task demands, fatigue, an inaccessible cue and context-dependent expression can fit the same observation. A past report can state the change and the remaining possibilities. Where repair is requested, use a sufficient diagnosis or choose a justified action that works across the explanations still open.
 
-Choose a context comparison only when its attainable result could change teaching, support or the warranted receiving use enough to justify the effort and delay. A brief return to earlier successful conditions without reteaching may help; alternatively, hold those conditions fixed while changing one suspected cue. Compare practice order or an unfamiliar setting only when switching or generalization is the unresolved question.
+Use an existing comparison where it covers the question. If a new one could materially distinguish the explanations or change teaching, support or receiving use, weigh its likely contribution against effort and delay. A return without reteaching to earlier successful conditions, or variation of a suspected cue with the other conditions held fixed, may distinguish cases. Vary practice order or use an unfamiliar setting when switching or generalization is the question.
 
-Interpret the actual response with the changed conditions and support preserved. Reappearance shows availability in that condition; it does not establish the COIN mechanism or exclude other explanations. Failure to reappear may leave several explanations unresolved. Retain only distinctions needed for the decision, such as recovery, interference or a still-unobserved transfer. Return the supported teaching or use choice, with the uncertainty that changes it, and stop when that question is answered. MDPE.17:3.4 develops the same proportionate context comparison for transmission.
+Report the recognizer’s response and the cues and assistance present. Reappearance establishes performance in that condition and leaves its mechanism open. Failure to reappear can also have several explanations. Return the finding the observations support, such as recovery under the earlier condition, lower performance in the switching condition, or transfer for which evidence is still missing. If a teaching or support choice is requested, say what the finding contributes. MDPE.17:3.4 applies a related comparison to transmission.
 
 #### MDPE.23:2.6 - Test transfer without the teaching answer
 
-When the receiving decision needs a transfer claim, use matching existing evidence or held-out examples and changed conditions representative of later Work. Preserve the target relation while changing irrelevant cues. Include a delayed observation when retention matters to that use. A current teaching choice can instead close with the supported next action and its limits; it need not commission every stronger capability test.
+For a transfer claim, use applicable existing evidence or compare a qualified reference performance with performance under changed conditions representative of the intended use. Use held-out material when the claim involves unfamiliar examples. Keep the target relation and the permitted support, and vary cues relevant to the transfer claim. For retention, compare an earlier performance with a suitable later observation, taking elapsed time and intervening practice into account. A teaching choice or a finding about one occasion can finish without a stronger claim.
 
-For a human recognizer, choose a response that demonstrates the target recognition without requiring an additional performance capability. For machine recognition, hold out performers, recordings, devices, venues, or
-styles according to the intended use and inspect error distributions rather than one average score.
+Choose a response that shows whether the named holder recognizes the target distinction in the stated task with the help it permits. If the ensemble must recognize a change together and give one answer, use evidence of that joint response. Separate replies can show which musicians recognized the change individually. For recognition alone, choose a response the holder can give without an additional motor skill.
+For a classifier, hold out performers, recordings, devices, venues or styles as the intended use requires, and examine the error distribution as well as any overall score.
 
-Return one of these useful results:
+Return the result that answers the question. Possible outcomes include the following.
 
 - a supported next development choice, with uncertainty that affects its use;
-- demonstrated recognition within named transfer limits;
+- a finding that the holder did or did not distinguish the variants in the specified task, or transfer demonstrated across stated conditions;
 - recognition that remains dependent on a named cue or context;
-- evidence that access or representation, rather than learning, is limiting;
+- evidence that the relevant cue was unavailable or that the representation omitted it, with the implications for interpreting the response;
 - recognition without the performance capability needed for later action;
 - a revised distinction, task, signal, representation, or intended population; or
-- an unsupported claim naming the missing Method, access, examples, capability, or evidence.
+- a specific limit on the recognition claim and the material evidence or conditions still missing.
 
 ### MDPE.23:3 - First Useful Result
 
 > **Recognition-capability result**
 >
-> - **Holder and receiving Work:** [musician, dancer, partner, teacher, listener, judge, performing Agent, machine
->   recognizer, or sampled population; later use].
+> - **Holder and use.** Identify the recognizer, its task and the use in question. For a collective capability, identify the group or system that responds together.
+>   For a distribution of responses, identify the units sampled, the population and how they were selected.
 > - **Recognition task:** [discriminate, identify, locate, predict, recognize applicability, or act].
 > - **Grounded distinction:** [world-side difference; legitimate indications; representation and omissions].
 > - **Available recognition basis:** [existing observations or selected comparison; relevant cues, help, errors and limits].
-> - **Development Method:** [direct perceptual, musical, dance, bodily, partner, or machine-learning Method].
-> - **Context probe, if a previously demonstrated response fails and a comparison that could change the next action is worth its burden:** [earlier successful conditions, controlled return or change, observed recovery or interference, remaining rival explanation].
-> - **Transfer or retention basis, when needed for the claim:** [matching existing evidence or selected new observation and its conditions].
-> - **Result:** [supported development choice, demonstrated capability within its limits, changed distinction, or unresolved basis; distinguish these claims].
-> - **Next use:** [performance development, observation, changed-condition use, transmission, or selection design].
+> - **Development, if requested.** Name the direct perceptual, musical, bodily, partner or machine-learning method and its purpose.
+> - **Context comparison, when warranted.** Identify the reference and changed conditions and the responses observed in each. State what changed or remained stable and what the comparison leaves open.
+> - **Transfer or retention basis, when needed for the claim:** [the observations and the conditions they cover, or the planned observation when the task is to design a test].
+> - **Result.** State the response or capability the evidence establishes under the stated conditions, any material limit, or the change or development choice the evidence supports.
+> - **Further use, when needed.** Identify any role for the result in performance development, observation, use under changed conditions, transmission or selection design.
 
 ### MDPE.23:4 - Worked Cases
 
 #### MDPE.23:4.1 - Balboa weight arrival and brush articulation
 
-A teacher wants dancers to distinguish audible brush onset, weight arrival, perceived beat centre, and
-partner-readable pressure. These events can be related but are not identical. The capability holder can be a
-dancer performing a solo discrimination task or a partner sensing the relation through contact.
+A teacher wants dancers to distinguish the audible brush attack, arrival of weight, perceived beat
+centre and pressure a partner can read. These events may coincide or occur at different times. The
+recognizer can be a solo dancer doing an identification task or a receiving partner using contact.
 
-Use sound, video, contact or force indications, partner reports, and direct Balboa teaching. Fade verbal labels,
-vary music and partner, and test unfamiliar articulations. Success means the dancer or partner can make the stated
-discrimination under the intended conditions; it does not prove whole-style recognition or performance mastery.
+Use the observations appropriate to the distinction, such as sound, movement, contact force or the receiving partner’s report. For a learning
+task, direct Balboa teaching can vary the music and partner, fade answer-giving labels and introduce unfamiliar articulations. Assess the dancer’s
+or partner’s discrimination under the intended support. A claim about a whole style or movement performance needs evidence of that result.
 
 #### MDPE.23:4.2 - A multidance recognition-transfer trial
 
@@ -224,13 +224,13 @@ performance. The counts below use this response rule.
 
 Before additional teaching, the learner identifies the current coordination in eleven of twelve trials with the
 familiar teacher-partner but only six of twelve with an unfamiliar partner and matched music. Errors follow the
-expected style of the track even when the partner enacts the other coordination. Returning to the familiar room
-and teacher-partner without reteaching restores eleven of twelve correct responses.
+expected style of the track even when the partner enacts the other coordination. In the familiar room
+with the teacher-partner, the learner again gives eleven of twelve correct responses without reteaching.
 
-This result makes context dependence a useful current explanation, but the probe changes room and partner
-together. It does not distinguish retrieval of a context-linked memory from teacher-partner cue leakage, access
-to the enacted timing-and-contact signal, the COIN mechanism, or another explanation. If the mechanism changes
-the next teaching decision, vary familiar and changed rooms separately from familiar and unfamiliar partners.
+The six-of-twelve block also used a different room from the eleven-of-twelve blocks. A change in room or partner, a difference in the
+timing-and-contact cue, a learned association or another contextual difference could account for the contrast. If the distinction matters, vary
+room and partner separately and check how the cue was presented and accessed. Even an effect associated with one partner would leave
+more than one possible explanation, including differences in the available cue and context-dependent retrieval.
 
 The selected direct teaching Method uses contrastive partner-sensing tasks, matched musical distractors, rotating
 partners, randomized order, and gradual removal of labels. The recognition response is only a spoken A/B
@@ -242,20 +242,20 @@ labels in the prompts. The learner identifies ten of twelve trials. In a second 
 partner first presents A and then B in
 rapid succession while retaining the current recording and partner. The next recognition cue is independently
 selected as A or B, so the preceding movement sequence does not disclose the answer. The learner identifies
-seven of twelve cues. The changed condition is the recent movement-task transition. If a later trial also changes
+seven of twelve cues. The second block adds the recent movement-task transition. If a later trial also changes
 the recording, report the combined condition separately.
 
-The result is demonstrated recognition transfer within the tested music and partner conditions, with a remaining
-transition-sensitive limit. It is not performance fluency, authority to classify entire styles for others or
-evidence that the practitioner population selects either variant.
+The learner met the criterion with the tested unfamiliar music and partners under the ordinary presentation.
+Performance after the rapid transition fell below it. These results concern the specified recognition response.
+Movement fluency, authority to classify styles and selection of either variant by practitioners have separate grounds.
 
-The ordinary held-out block meets the exercise's entry criterion; the rapid-transition block does not. Retain
-the first result for its tested conditions and work on the transition limit before including rapid switches in
-the receiving exercise. The teacher stops adding blocked repetition and selects interleaved transition practice
-and a later check for that remaining question. If distinguishing retrieval from cue access would change the
-intervention, use the room-by-partner comparison above. If performance fails after a correct recognition response,
-move to `MDPE.10`. If competent recognizers cannot maintain the distinction across the intended contexts, revise
-the distinction or receiving use instead of drilling a leaking cue.
+In the ordinary condition the criterion permits trying the supported partner-response exercise. For the remaining difficulty
+after rapid switching,
+the teacher stops adding blocked repetition, chooses interleaved transition practice and
+plans a later check before adding rapid switches. If retrieval and access to the cue would lead to different actions, compare
+rooms and partners separately and check how the cue was presented and accessed. When the learner recognizes
+the cue and still cannot perform the response, use MDPE.10. If competent recognizers cannot
+maintain the distinction in the required contexts, examine the distinction, signal or intended use.
 
 #### MDPE.23:4.3 - One rhythm through several representations
 
@@ -283,92 +283,92 @@ If an onset crosses a cycle boundary, retain which cycle it belongs to and its p
 [RHY.6](../rhy/19-rhy-6---translate-a-rhythm-without-erasing-needed-distinctio.md)
 develops this translation and the return to the source rhythm.
 
-For a receiving task that needs recognition across representations, present an unheard entry with an audible or
-visible cycle reference and ask the learner to locate the phrase's onsets, then translate them into the other
-convention. Withhold the answer labels. An unchanged syllable string alone cannot establish unchanged placement.
-Use the response to decide whether the learner needs help recovering the reference or applying the correspondence.
+For a claim about recognition across representations, use a suitable existing response or present a new entry with an
+audible or visible cycle reference. For a new observation, ask the learner to locate the onsets and give the other representation. Use an unfamiliar entry when recognition of new material is at issue. Keep any permitted
+assistance and withhold labels that supply the answer being tested. The response can establish what the learner recognized on that
+occasion. If further teaching is requested, examine whether recovering the cycle or applying the correspondence was difficult.
 
-Correct recognition does not establish simultaneous phrase-and-cycle performance. When that performance is the
-missing capability, use the worked construction in
+Correct recognition alone does not establish simultaneous phrase-and-cycle performance. For a construction of that coordination, see
+the worked comparison in
 [RHY.11:5.2](../rhy/24-rhy-11---coordinate-simultaneous-rhythmic-layers.md#rhy1152---phrase-accents-need-not-follow-every-beat-gesture)
-and its practice in
+and, when a person is learning to perform it, the practice in
 [RHY.12:5.1](../rhy/25-rhy-12---develop-rhythmic-capability-through-representative.md#rhy1251---phrase-and-gesture-keep-different-groupings).
 
 #### MDPE.23:4.4 - Scene-recognition claim with no Method
 
-A proposed Algorave event or Tarraxo teaching variation is said to be recognisable to a relevant scene. Current
-guidance can supply material, programme, teaching, and observation choices, but the available sources do not
-supply the population, competence criterion, comparison task, transfer test, and result needed to support the claim.
+Suppose a proposal says that the relevant Algorave or Tarraxo scene will recognize a variation. Available guidance may identify
+material, teaching or programme choices and possible observations. To assess the recognition claim, specify the group and its
+relevant experience, the recognition task, the conditions the claim covers and observations of responses under those conditions.
 
-Either recruit suitable recognizers and design a bounded study, lower the claim to an identified practitioner
-judgement, or leave the recognition claim open. Attendance, teacher approval, platform counts, and one participant
-report do not become scene recognition.
+Applicable existing responses can support a bounded result. If the evidence is missing, consider a feasible study with
+suitable recognizers, report an identified practitioner’s judgement for its own scope, or leave scene-wide recognition
+open. Attendance or platform counts can document presence or a counted interaction. A participant’s account can establish what they themselves observed or experienced.
 
 #### MDPE.23:4.5 - Machine recognition
 
-A classifier distinguishes dance or music variants in its training recordings. Hold out performers, recording
-conditions, devices, tempi, and neighbouring styles according to the intended use. Inspect which cues drive errors
-and whether the model can abstain when the distinction is unavailable.
+Suppose a classifier distinguishes variants in its training recordings. For an intended transfer claim, use suitable evidence from held-out
+performers, recordings, devices, tempi or neighbouring styles. Examine errors under the relevant conditions and whether it can abstain
+when the input does not reveal the distinction, if abstention matters to that use. For an archived run, the stored outputs may already show which classes it assigned.
 
-Classification transfer establishes only the stated machine capability. It does not establish understanding,
-authority, cultural membership, or permission to judge people.
+Classification transfer is a result about the machine’s ability on the specified task. Cultural understanding
+and membership, authority over a competition, and permission to judge participants have their own grounds.
 
 #### MDPE.23:4.6 - Direct-Method stop
 
-An ear-training Method already defines the interval distinction, matched examples, cue fading, varied musical
-contexts, delayed transfer test, error interpretation, and next lesson. Use it directly. `MDPE.23` is unnecessary
-unless the Music-or-Dance project must connect that capability to another recognizing population, representation,
-interaction, or cultural decision.
+An ear-training method specifies the intervals, matched examples, cue fading, varied contexts,
+delayed assessment and interpretation of errors. Use its result for the lesson or the
+specific recognition question it already answers. Use MDPE.23 when a remaining question
+connects that capability with another group, representation, interaction or cultural use.
 
 ### MDPE.23:5 - Checks and Common Repairs
 
 | Check | Failure | Repair |
 | --- | --- | --- |
-| Holder and task are named | “The audience should recognize the style.” | Name the sampled people or Agent, recognition task, context, response, and later use. |
-| Distinction is grounded | A label or representation becomes the thing recognized. | Name the world-side sound, movement, rhythm, interaction, or relation and how it is accessed. |
-| Recognition differs from performance | A wrong movement is treated as proof of failed perception. | Use existing evidence or a small separating response when that distinction changes the next action; address performance through MDPE.10 where needed. |
-| Cue leakage is controlled | The teacher, costume, file name, or fixed order gives the answer. | Match irrelevant cues, fade prompts, randomise order, and use held-out examples. |
+| Are the holder and task clear? | “The audience should recognize the style.” | Identify the relevant people, machine or group, the task, the response, the conditions and the intended or observed use. State how a sample represents a population if that inference is needed. |
+| What difference is being recognized? | A label is treated as proof that someone recognized the sound or movement it names. | Identify the target relation and the indication available to the recognizer. If the task concerns the notation or label itself, specify that task. |
+| Did recognition or movement fail? | A wrong movement is treated as proof of failed perception. | Use evidence of the recognition response. If needed, choose a response that distinguishes recognition from the additional movement. MDPE.10 applies when the missing contribution is performance capability. |
+| Did an unintended cue supply the answer? | The teacher, costume, filename or fixed order predicts the response independently of the target distinction. | Identify the cues the task permitted and what the available evidence establishes about their use. Where needed, match irrelevant cues, vary presentation order or use held-out cases. Keep the support permitted in the intended task. |
 | Variation serves transfer | More contexts are added without a receiving use. | Vary conditions expected in later Work or needed to distinguish rival explanations. |
-| A context probe answers a worthwhile question | Reappearance in the old context is called relearning. | When the distinction can change the next development action enough to warrant a comparison, return to earlier successful conditions or vary one relevant cue. Preserve uncertainty about the mechanism. |
-| Human and machine claims retain their kinds | Classifier accuracy becomes cultural understanding. | State the task, holder, data, conditions, error distribution, and non-use boundary. |
-| Recognition differs from selection | A capable recognizer is treated as authorised judge or curator. | Pass capability evidence to `MDPE.13`; establish authority and selection separately. |
-| The distinction can be changed | Repetition continues despite ambiguous or inaccessible categories. | Revise the signal, representation, boundary, population, or intended use; abandon the distinction when needed. |
-| Direct Methods remain primary | A cross-domain pattern replaces ear training, Dance pedagogy, partner sensing, or ML evaluation. | Use each direct Method for its result and retain only the cross-result Music-and-Dance decision here. |
+| What does a return to earlier conditions show? | A reappearing response is counted as relearning. | Use an adequate existing comparison. If another one is warranted, a return to the earlier conditions or variation of one suspected cue can test a specific explanation. State what the observed response supports and what remains open about the mechanism. |
+| How far does the classification support the claim? | Machine accuracy is treated as cultural understanding. | State the recognizer, task, data, conditions and any error distribution the claim needs. A conclusion about understanding or membership needs evidence for that conclusion. Identify the applicable authority when the issue is permission to judge. |
+| Who selected the variant? | A capable recognizer is assumed to have been the authorized judge or curator. | Establish the selection and the relevant authority separately. Use MDPE.13 when a recurring selection arrangement is the subject. A supported assessment of recognition can finish earlier. |
+| Does the distinction need revising? | Repetition continues despite ambiguous or inaccessible categories. | Establish what is limiting. When a change is sought, consider a better signal, representation, boundary, population or use, or drop the distinction. |
+| Which method can give the needed result? | A general recognition account displaces ear training, dance teaching, partner sensing or machine-learning evaluation. | Use an applicable specialist result. Bring the contributions together here when the recognition question spans them. |
 
 ### MDPE.23:6 - Sources and Epistemic Boundaries
 
-Compare development Methods by their expected gain, burden, protected conditions and receiving use. A claimed recognition capability needs compatible evidence about the recognizer's response to the relevant Music or Dance distinction; use an adequate result already available or obtain a worthwhile missing observation. A supported teaching choice need not wait for a stronger capability claim.
+For a recognition claim, examine the holder’s response to the relevant difference under the conditions the claim covers. Use sufficient existing evidence. Weigh the contribution and burden of further observation where uncertainty matters. If development is requested, use a suitable established method or compare feasible alternatives by their likely gain, cost, protected conditions and intended use. A teaching choice can be supported before a broader capability claim is established.
 
 | Source or maintained result | Contribution used here | Boundary |
 | --- | --- | --- |
-| [Heald, Lengyel, and Wolpert, *Contextual inference underlies the learning of sensorimotor repertoires*](https://doi.org/10.1038/s41586-021-04129-3) and [*Contextual inference in learning and memory*](https://doi.org/10.1016/j.tics.2022.10.004) | Context-sensitive creation, expression, and updating of memories; discriminating return and cue-variation probes. | The first model is sensorimotor; one identical computation for every memory and every agent remains an open hypothesis. |
-| [Makarome, *South Indian Konnakkol in Western Musicianship Teaching*](https://ir.upsi.edu.my/files/docs/2020/2114_2114.pdf), especially p. 38 | Distinguishes beat-position syllables from retained phrase groupings under displacement; supplies the distinction used in :4.3. | The timed example here is constructed. The article's teaching experience and feedback do not establish this learner's recognition or performance. |
-| Context-dependent recall and transfer (unpublished source note) | Multidance switching and blending cases, rival explanations, and human and ML probes. | The note supplies hypotheses and source leads, not a general Method or an established cross-domain result. |
-| Balboa, Brushes, Pulse, and P-Center (unpublished source note) | Continuous carrier, articulation, several timing centres, partner feedback, and interleaved recognition tasks. | It does not prove one universal exercise order or transfer to all performers. |
-| [Wood et al., *The Global Jukebox*](https://doi.org/10.1371/journal.pone.0275469); comparison methods in `MDPE.12:6` | Recordings, coding guides and coder training make selected musical distinctions available for comparison; reliability differs by characteristic. | Agreement on a coded feature does not establish its recognition or meaning for a different population. |
-| [Whitehead et al., *Capturing spontaneous interactivity*](https://doi.org/10.3389/fpsyg.2024.1465595) | Compare kinematic coordination measures with the improvising dancers' reports; their disagreement can change the recognition task or observation method. | These observations do not establish audience recognition of the proposed style distinction. |
-| [Dawou Tarraxo, TOCA Method: student book and teacher guide](https://tocamethod.com/) | A teaching approach combining touch, observation, control and awareness, with individual and partnered exercises and progressions. | This is one practice-specific teaching approach; its description alone does not demonstrate recognition or transfer by the current learners. |
+| [Heald, Lengyel, and Wolpert, *Contextual inference underlies the learning of sensorimotor repertoires*](https://doi.org/10.1038/s41586-021-04129-3) and [*Contextual inference in learning and memory*](https://doi.org/10.1016/j.tics.2022.10.004) | The sensorimotor model relates context to the creation, expression and updating of memories. The wider review examines contextual learning and possibilities for testing cue effects. | Reappearance under an earlier condition can be observed in a task without identifying its mechanism. Extending the same computation to other kinds of memory or to machines requires separate evidence. |
+| [Makarome, *South Indian Konnakkol in Western Musicianship Teaching*](https://ejournal.upsi.edu.my/index.php/MJM/article/download/814/550/1322#page=2), especially printed p. 38 | Compare the relation of syllables to positions in a beat with a syllabic group retained when its entry moves. Section 4.3 uses those conventions in a constructed timed example. | The article gives a musician’s teaching experience and feedback. To establish what this learner recognized or performed, use evidence of that task under the relevant conditions. |
+| *Context-dependent recall and transfer* (unpublished source note) | Offers multidance switching and blending cases, possible explanations and comparisons for human or machine recognizers. | Use its proposals as hypotheses and its sources as leads. Evidence from a particular task is needed to establish the mechanism there. |
+| *Balboa, Brushes, Pulse, and P-Center* (unpublished source note) | Develops examples of a continuous rhythmic carrier, articulation, different timing centres, partner feedback and interleaved recognition tasks. | Choose an exercise order for the learner and the use. Transfer to another performer needs evidence from that use. |
+| [Wood et al., *The Global Jukebox*](https://doi.org/10.1371/journal.pone.0275469) and the comparison methods in MDPE.12:6 | Recordings, coding guides and coder training make selected musical features comparable. Reliability differs by characteristic. | Agreement among coders supports a finding about consistency for that feature. Inferring how another population recognizes or interprets it needs evidence concerning that population. |
+| [Whitehead et al., *Capturing spontaneous interactivity*](https://doi.org/10.3389/fpsyg.2024.1465595) | Compare measured coordination and observations of the movement with the improvising partners’ reports of their own interaction. Differences can show what the observation task captures. | To assess an audience’s recognition of a style, examine audience responses under the relevant conditions. |
+| [Dawou Tarraxo, TOCA Method: student book and teacher guide](https://tocamethod.com/) | The student and teacher materials connect touch, observation, control and awareness in individual and partnered practice. | The publication identifies the exercises and intended progression. Evidence from actual learners is needed to establish their recognition or transfer. |
 
-Prefer contextual inference over a live rival only when observations support that comparison. Otherwise retain it as a hypothesis where it helps identify a worthwhile comparison; a shared useful next action can proceed while the explanations remain unresolved.
+Prefer a contextual-inference explanation when the observations favour it over relevant alternatives. Otherwise state the possibilities the evidence leaves open, or make a comparison whose attainable value warrants its cost. A practical action supported under all plausible explanations can be chosen when needed.
 
 
 ### MDPE.23:7 - Relations
 
-- `MDPE.12` supplies grounded observations and can expose whether recognition, signal access, representation, or
-  comparison is limiting.
+- MDPE.12 can compare observations about recognition, signal access or a representation when
+that comparison is needed. Adequate observations may already answer the question directly.
 - `MDPE.10` concerns capability to perform Music or Dance Work; recognition can be present without performance and
   performance can follow contextual cues without explicit recognition.
-- `MDPE.13` can use demonstrated recognition capability for the same people or agents, distinction, conditions, and
-  transfer limits. Capability neither authorises nor performs selection.
+- Use MDPE.13 when the task concerns a recurring recognition and selection arrangement. Bring in recognition evidence within its scope and
+  establish authority or actual selection when the receiving question concerns them.
 - `MDPE.6` and `MDPE.17` can use recognition evidence when changed-condition use or receiving enactment depends on
   noticing the relevant difference.
 - When capability development is selected, [FPF E.23.CDI](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/64-e-23-cdi---developing-capability-for-a-named-work-family.md)
   guides the baseline, target, limiting contribution, protected conditions and representative transfer check.
   Direct Music and Dance Methods still supply the intervention.
-- When a previously demonstrated response fails after conditions change, competing explanations would change
-  the next teaching or support decision, and an attainable comparison is worth its burden, use [FPF E.23.CAE](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/65-e-23-cae---capability-access-and-expression-differential-pro.md).
+- When a previously demonstrated response changes and the question depends on distinguishing access, applicability,
+  expression or enactment under changed conditions, use [FPF E.23.CAE](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/65-e-23-cae---capability-access-and-expression-differential-pro.md) if a suitable comparison is available or worth obtaining.
   Compare a qualified reference condition with a controlled change without further teaching; distinguish whether
   the response is selected as applicable, accessible, expressed and enacted, while retaining surviving explanations.
-  The probe supplies observations for the later choice; it neither selects the intervention nor establishes a memory mechanism.
+  Return the supported finding or remaining alternatives. A later intervention requires a separate choice, and a claim about a memory mechanism needs evidence for that mechanism.
 
 ### MDPE.23:End

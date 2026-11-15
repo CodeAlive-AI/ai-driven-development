@@ -14,7 +14,7 @@ The following methods are supplied by other [FPF Library](../../../library/refer
 | [Corporate Finance (FIN)](../fin/_index.md) | FIN.1, FIN.11 and FIN.16 supply financial framing, comparison or advice when needed. Use CGOV.2 and CGOV.3 to identify the relevant rights and powers. |
 | [Systems Engineering (SYSE)](../../engineering-dpf-suite/syse/_index.md) | SYSE.4 supplies a scoped engineering conclusion when CGOV.10's matter needs it; the corporate audit engagement has its own method. |
 
-A description makes a method available to learn or use. A required financial, engineering or other result must still be obtained for the matter and retain its assumptions and limits.
+A description makes a method available to learn or use. A required financial, engineering or other result must be obtained for the matter and retain its assumptions and limits.
 
 A change to a relied-on operation, result or condition reopens the receiving CGOV guidance. Compare that content before reusing the guidance with a revised source. Refresh the smallest affected set when a rule, source contribution, assumed capability, information arrangement or observed consequence changes its use. If the dependency reach is unknown, investigate that reach before claiming the rest is unaffected.
 

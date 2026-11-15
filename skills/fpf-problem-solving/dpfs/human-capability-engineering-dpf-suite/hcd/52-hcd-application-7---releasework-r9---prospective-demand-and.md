@@ -1,6 +1,6 @@
 ## HCD.Application:7 - ReleaseWork-R9 - Prospective demand and discriminated missing evidence
 
-For Engineer-E27, the accepted future architecture permits `HCD.1` to return a prospective demand hypothesis for AI-output challenge, configuration-impact reasoning, evidence return, specialist coordination, critical-error detection, and unfamiliar-variant adaptation in 2026-Q4 `ReleaseWork-R9`. It does not permit qualified current demand.
+The accepted future architecture for Engineer-E27 supports an HCD.1 demand hypothesis for 2026-Q4 `ReleaseWork-R9`. The hypothesized contributions include challenging AI output, configuration-impact reasoning, returning evidence, specialist coordination, critical-error detection and unfamiliar-variant adaptation. A current demand conclusion needs evidence of the corresponding work and conditions.
 
 The missing values remain separate:
 
@@ -12,6 +12,6 @@ The missing values remain separate:
 | occurrence-bound result record | Any record-dependent inference | Relate a current result episteme to the admitted occurrence and result; do not require it where qualified direct observations suffice. |
 | representative occurrence-bound observations | Qualified current demand, a diagnostic target, and a current profile comparison | Obtain holder- and condition-compatible observations or a named qualified representative set covering performed Method, configuration, work products, quality and critical errors, AI/support posture, specialist returns, variants, and evidence window. |
 
-Use the current `SYSE.21` MethodDescription and its constructed PumpWorks demonstration to shape questions. Keep the `XRI-21` supplier result and the other row-specific observations open until they are available for Engineer-E27; the constructed examples establish no such observations.
+Use the current `SYSE.21` MethodDescription and its constructed PumpWorks case to identify questions. If a claim about E27 depends on current engineering-culture practice, use a compatible `XRI-21` result or an equivalent accepted for that use. For each other claim, obtain only its required observations; a prospective question can be framed while those observations are missing. Where those grounds are absent, identify the affected conclusion.
 
-Current returns are therefore conclusion-specific: HCD.1 preserves the prospective demand hypothesis and returns `demand-evidence-blocked` for qualified current demand; HCD.3 returns `diagnostic-evidence-missing` and selects no training; HCD.4 retains only prospective target claims and returns `profile-decision-blocked`. Recovering one missing value changes only the conclusions that consume it.
+HCD.1 retains the prospective hypothesis and returns `demand-evidence-blocked` for current demand. HCD.3 returns `diagnostic-evidence-missing` without selecting training. HCD.4 retains the prospective targets and returns `profile-decision-blocked`. When a missing value becomes available, reassess the conclusions that depend on it.

@@ -5,13 +5,13 @@
 
 ### HCD.8:0 - Use This When
 
-Use this pattern when HCD.7 or an equivalent support check has identified one exact missing contribution that prevents a capability-development use: no available teacher can distinguish the protected errors, assessors cannot yet apply the criteria consistently, a safe practice environment does not exist, or another provider or enabling System cannot supply its required result.
+Use this pattern when HCD.7 or an equivalent assessment identifies a contribution a development activity needs and cannot currently obtain. An assessor may lack the ability to distinguish a protected error, a practice environment may lack safe reset, or a provider may be unable to supply a required result in time.
 
-The first useful result is a **bounded operating development arrangement**. The missing contribution has either been obtained from an already qualified provider or created through a provider or environment build, and its operation has been observed on a representative use under the required access, timing, capacity, authority, and consequence conditions. If this cannot yet be established, return the useful preparation already completed and the exact unsupported dependency. A design, set of materials, reserved budget, or completed provider course is not an operating arrangement.
+To return a **bounded operating development arrangement**, obtain the missing contribution from a qualified provider or build it, and establish representative operation under the required access, timing, capacity, authority and consequence conditions. Use applicable evidence of that operation where it already exists. If the task asks for a comparison, return the supported routes and their conditions. If operation remains unestablished, identify any useful preparation and what remains unsupported.
 
-The practical gain is selective recursion. The practitioner can compare obtaining a contribution with building it, prepare the actual provider task, test service operation, and follow a builder dependency only as far as the first result that is genuinely missing. Existing qualified providers and environments are used rather than rebuilt.
+Start with the task the provider would perform and the conditions on which that contribution depends. A qualified provider or environment already available may meet the need. If alternatives still need comparison, compare ways to obtain the contribution with ways to build it. Establish what would show it operating when the receiving use needs that judgement.
 
-Do not use HCD.8 merely because a programme has providers, because a practitioner wants every teacher to complete the same training, or because HCD.7 has not yet checked availability. Use HCD.7 to arrange existing contributions. Use the direct organization, platform, safety, privacy, legal, technical, domain, or operations practice when that owner must create or authorize the missing non-human result; HCD.8 consumes the qualified return without claiming it as human learning.
+Use HCD.7 to assess availability and arrange existing contributions. Use the relevant organization, platform, safety, privacy, legal, technical, domain or operations practice for a contribution it must establish, create or authorize. HCD.8 can use that result. Evidence of human learning concerns the person’s performance.
 
 #### HCD.8:0.1 - Working Terms
 
@@ -19,30 +19,30 @@ Do not use HCD.8 merely because a programme has providers, because a practitione
 | --- | --- |
 | missing development contribution | The exact provider, assessment, environment, access, coordination, or support result that an HCD.7 arrangement needs but cannot currently obtain under its required conditions. |
 | provider target task | The concrete work a provider must perform to supply that contribution, including recipient, input, output, criteria, protected errors, support, timing, and authority. It is different from the learner's later-Work target. |
-| obtain route | Use of an already capable and available provider or environment after its fit and operation for this contribution have been checked. |
-| build route | Preparation or change intended to make a person, group, organization, tool, or environment able to supply the missing contribution. Each direct owner retains its own correctness and authorization decisions. |
+| obtain route | Use of an existing capable provider or environment when the evidence supports its fit, availability and operation for the contribution. |
+| build route | Preparation or change intended to enable a person, group, organization, tool, service or environment to supply the missing contribution. The relevant practice establishes technical or domain correctness. Authorizations come from the holders of those rights. |
 | operating test | A representative enactment in which the intended provider or environment supplies the exact contribution under material service conditions, with observable criteria, timing, handoffs, and failure signals. |
-| blocking dependency | A missing provider or enabling result without which the current build cannot produce or operate the required contribution. |
-| recursive build question | The same bounded question applied to a blocking dependency: what exact result is missing, should it be obtained or built, and what operating evidence would close it? |
-| bounded operating development arrangement | The tested provider or environment contribution, its dependencies, access, capacity, authority, evidence, fallback, limits, and continuation into HCD.7. Participation claims are limited to the people and actions actually observed; learning effects require their own evidence. |
+| blocking dependency | A missing provider or enabling result without which the selected route cannot supply or operate the required contribution. |
+| recursive build question | Applied to a blocking dependency, which result is missing, could an existing source supply it, what might have to be built and what evidence would establish the required operation? |
+| bounded operating development arrangement | A provider or environment contribution established in use under stated conditions, with its dependencies, access, capacity, authority, operating evidence, fallback or safe stop and limits for HCD.7. Identify who supplied the contribution, who received it and what each was observed doing. A learning effect requires separate evidence. |
 
-Recursion here is a finite search for the first unsupported provider or enabling result. It is not a generic claim that one capability creates another, a fixed hierarchy of teachers, or a reason to model every participant and tool.
+Read backward from the required contribution to the first unsupported result, if there is one. If a necessary result remains unsupported, establish how it could be supplied. Stop when the evidence answers the receiving question or when a specific gap prevents further progress.
 
 ### HCD.8:1 - Problem Frame
 
 A development design can fail after its activities are selected because the arrangement itself cannot do the work. The available teacher may explain the topic but be unable to judge the target-domain error. Two assessors may reach different decisions from the same answer. A simulated environment may exist but lack safe reset or the required configuration. A platform may contain the materials but not deliver the feedback interval promised by the programme.
 
-The visible response is often to create more training, documentation, or technology. That can move effort without closing the missing contribution. A provider may finish preparation and still fail the actual target task; a technically functional environment may remain unavailable at peak time; a new assessor guide may leave judgement disagreement unchanged.
+More training, documentation or technology can leave the required contribution unavailable. A provider may finish preparation and still fail the target task. A functional environment may be unavailable at peak time. A new guide may leave assessors disagreeing about the same criterion.
 
-The practitioner needs to bind the build to one missing result, compare obtaining it with creating it, expose only dependencies that block that result, and test actual operation before returning the contribution to the programme.
+Start with the missing result, use a qualified available route when it suffices, or compare feasible ways to obtain or create the result. Follow the dependencies of a route the work needs to assess or put into operation. To claim operating availability, use evidence of the contribution in representative operation.
 
 ### HCD.8:2 - Problem
 
-The common failure is build-by-label: “train the trainers,” “create a lab,” “add mentors,” or “install a platform.” The phrase names an intervention or asset but not the provider task, service condition, or result that was absent.
+“Train the trainers,” “create a lab,” “add mentors” and “install a platform” can describe possible interventions. Each leaves open which provider task or service condition is missing and which result would satisfy it.
 
-A second failure is unbounded recursion. Every provider is treated as needing another provider, every tool as needing a support service, and every service as needing another capability programme. The chain grows because available qualified contributions are not accepted as stopping points and missing relations are replaced by a generic “enables” arrow.
+A dependency map can expand indefinitely if every provider or tool is treated as requiring another support programme. Trace the relation that blocks the specified result. Accept a qualified available contribution as the end of that branch.
 
-A third failure is readiness by preparation. Materials, credentials, rehearsals, allocated hours, or configured software are counted as service operation. They may be necessary inputs, but none shows that the required contribution can reach its recipient in the intended conditions.
+Materials, credentials, reserved hours or configured software can establish preparation. An observed rehearsal may also establish representative operation if it supplies the required contribution to its recipient under the service conditions. Match the evidence to the particular claim.
 
 ### HCD.8:3 - Forces
 
@@ -51,122 +51,122 @@ A third failure is readiness by preparation. Materials, credentials, rehearsals,
 - Building an environment can make representative practice possible, while safety, data, configuration, reset, maintenance, and authorization remain direct-owner results.
 - Standard preparation makes provider work more comparable, while a script can conceal whether the provider can handle a changed case or dispute.
 - A recursive dependency view can expose the real bottleneck, while following every imaginable dependency creates delay and false structure.
-- One observed operating test gives stronger evidence than a design, while its claim remains bounded to the tested task, providers, conditions, load, and horizon.
-- Supported provider performance may be legitimate in the intended service, while it does not establish unsupported or retained provider performance.
+- Representative operation can establish service under the task, provider, load and period observed. A design describes the service expected under proposed conditions.
+- A provider may use help that the intended service permits. Claims about independent performance or persistence after support changes require evidence under those conditions.
 - HCD can coordinate a missing development contribution, while domain, employment, safety, legal, privacy, platform, organization, and operations owners retain their own decisions.
 
 ### HCD.8:4 - Solution
 
-Start from one exact HCD.7 gap. Compare an obtain route with the smallest build route that can close it. Specify the provider's own target task, prepare only what that task needs, follow only blocking dependencies, and observe the contribution operating under representative service conditions before returning it as available.
+Start with a specific gap established by HCD.7 or an equivalent assessment. Identify the provider’s task, the service conditions and whether a qualified source can supply the contribution in time. Where the task needs a comparison, compare feasible ways to obtain the contribution with the smallest build that could supply it. Follow the dependencies that affect the route being assessed or used. To return an operating contribution, establish representative performance under the required conditions using suitable existing evidence or a needed operating test.
 
 #### HCD.8:4.1 - Bind One Missing Contribution
 
-Record:
+Establish the following facts to the extent needed for the requested result.
 
 1. the learner, class, programme, practice, or evidence use that is blocked;
-2. the exact missing contribution, recipient, required time, output form, criteria, protected errors, and consequence boundary;
-3. what HCD.7 has already established about available providers, access, capacity, constraints, and fallback;
-4. the direct owner of each correctness, competence, permission, safety, privacy, technical, or authority result; and
-5. the smallest operating observation that would let HCD.7 reconsider availability.
+2. the missing contribution, recipient, required time, output form, criteria, protected errors, and consequence boundary;
+3. what the availability assessment has already established about providers, access, capacity, constraints and fallback;
+4. the sources of technical, domain, competence, safety or privacy evidence and the holders of any permission or decision the route requires; and
+5. the observation or operating evidence that would establish the missing contribution for HCD.7, including any applicable result already available.
 
-Do not replace this input with “we need better instructors” or “the lab is not ready.” Name what the instructor must do or what the environment must supply, for whom, when, and under which conditions.
+For an instructor, identify the work they must perform for the recipient. For an environment, identify the function it must supply and the access, timing and operating conditions in which it must work.
 
 #### HCD.8:4.2 - Compare Obtaining with Building
 
-Construct at least one feasible route when one exists:
+Use an established route if it meets the task. If the available routes leave the required contribution unmet, try to construct a workable route by combining suitable provision or building the missing part. Compare feasible candidates on the following conditions when the task needs a comparison. If none fits, identify the obstacle.
 
 | Comparison position | Obtain an existing contribution | Build the missing contribution |
 | --- | --- | --- |
-| result fit | Evidence that the provider or environment can supply the exact result | Target task and proposed change capable of producing that result |
+| result fit | Evidence that the provider or environment can supply the exact result | Target task, proposed change and grounds that it could produce the result |
 | time and window | Onboarding, contracting, access, calibration, and actual availability | Preparation, practice, correction, retest, installation, validation, and ramp-up |
 | burden and risk | Search, handoff, confidentiality, continuity, dependency, and switching burden | Development effort, supervision, failure exposure, maintenance, and displaced work |
 | authority and independence | Permission, accountability, assessment independence, and domain legitimacy | Who can authorize, judge, and operate the created contribution |
-| operating evidence | Representative sample or observed service under the intended conditions | Representative operating test after preparation or change |
+| operating evidence | Representative sample or observed service under the intended conditions | Evidence of representative operation after preparation or change, including an applicable test already performed |
 | continuation | Renewal, backup, transfer, or replacement condition | Maintenance, refresh, supervision, fallback, and smallest reopen condition |
 
-Prefer neither route by default. An existing provider is not sufficient because of reputation or title, and a local build is not superior because it creates internal capacity. Return the surviving non-dominated route or routes, with unresolved trade-offs for the current contribution, window, burden, risk, continuity, and evidence use; the authorized programme decision remains separate.
+Compare the routes for the required contribution, including timing, burden, risk, continuity and evidential conditions. Assess which alternatives remain after eliminating those dominated on the relevant criteria. Return the remaining feasible route or routes and any unresolved trade-offs. Establish any programme choice or authorization separately.
 
 #### HCD.8:4.3 - Specify the Provider or Environment Target Task
 
-For a human provider, state the person's own target work:
+For a human provider, define the work they must perform, including what it requires and what is already known.
 
 - representative inputs and cases;
 - required explanation, feedback, assessment, preparation, coordination, or specialist output;
 - criteria and protected errors supplied by the target domain;
 - permitted references, tools, AI, colleague or supervisor help;
 - required response time, volume, handoff, independence, and authority; and
-- current evidence, uncertainty, preparation, first attempt, correction, and operating test.
+- available performance evidence, uncertainty and any preparation, correction or further operating observation that the intended use still requires.
 
-Use the applicable HCD patterns only for the values actually missing in that provider's human capability. For an organization, platform, tool, or environment, request the direct owner's corresponding service, technical, safety, privacy, access, or operating result. Do not redescribe a non-human system as a learner merely to keep the work inside HCD.
+Use HCD methods for an open question about a human provider’s ability. For a service, platform, tool or environment, establish the needed technical, safety, privacy, access or operating result using the appropriate evidence. If another contributor or authority is required, identify the result to obtain from them.
 
 #### HCD.8:4.4 - Expose Only Blocking Dependencies
 
-Read backward from the missing contribution to the first unsupported dependency. A teacher may need a calibrated answer key from a domain specialist; the specialist may need an approved test result; the practice environment may need an isolated data set and a reset function. Ask for the direct result that closes that dependency.
+Read backward from the missing contribution. An assessor may need a calibrated key from a specialist who needs an approved test result to supply it. A practice environment may need isolated data and reliable reset. Use a qualified result already available. Where the dependency remains open, identify what would close it and seek the contribution if a capable source is needed and available.
 
-Use A.1.STM's plain long-mantra map when the builder chain is not yet established: keep the final contribution visible, name supported answers, and stop at the first missing one. Use E.18.NET only when the current question truly needs independently identified transformation-flow structures and exact cross-boundary relation occurrences. A diagram, shared resource, calendar sequence, or word such as “creates” or “enables” does not establish that network.
+A.1.STM’s plain long-mantra map helps when the builder chain is not established. Keep the final contribution visible, identify the supported dependencies and locate any result that still lacks support. Use E.18.NET when the work requires independently identified transformation-flow structures and evidence of particular relations across their boundaries. Naming two flows or drawing an arrow between them does not establish that a cross-boundary relation occurred.
 
 Stop recursion when:
 
 - an already qualified and available contribution satisfies the dependency;
 - a direct owner returns the required result under compatible conditions;
-- the current build can proceed without the optional dependency; or
-- an exact unsupported dependency, owner, consequence, and retry condition have been returned.
+- the selected route can proceed without the optional dependency; or
+- an unsupported dependency is identified with its consequence, any known source and what would permit work to resume.
 
-Do not build a provider because that provider appears in the dependency map. Build only a missing result whose absence blocks the selected operating contribution.
+Build or change a provider or environment when it is a justified way to obtain the missing contribution. Trace a node further only if its contribution to a route being assessed or used remains unsupported.
 
 #### HCD.8:4.5 - Prepare and Enact the Smallest Build
 
-Select preparation that addresses the observed provider-task gap: worked examples, modelling, guided practice, criterion comparison, supervised access, a safe sandbox, a calibrated key, tool configuration, dispute rehearsal, or another qualified Method. Preserve the starting attempt and the support received so that preparation is not mistaken for prior competence.
+For a chosen build, select preparation suited to the provider-task gap. Examples include modelling, guided practice, criterion comparison, supervised access, a safe test environment, a calibrated key, tool configuration or rehearsal for a dispute. Keep any observed starting attempt with the support the provider received, along with other applicable evidence of entry performance, so a claim about prior competence can be distinguished from performance after preparation.
 
-For a human provider, connect feedback to a specific action and obtain another attempt. For an environment or service, test the changed function, access, load, failure signal, and recovery through the direct owner. Materials, schedules, purchased tools, completed instruction, and reserved hours are preparation results; retain them without calling the contribution operational.
+For human practice, give feedback on a specific action and obtain another attempt when correction or additional evidence is needed. For a claim about an operating environment or service, establish whether the changed function performs under the relevant access and load conditions, including how a failure is signalled and how the service recovers where these affect the required use. Use qualified evidence or obtain the operating result from the responsible practice. Report materials, reservations or completed instruction as preparation unless they also establish the claimed operation.
 
 #### HCD.8:4.6 - Run an Operating Test
 
-Observe the intended provider or environment deliver the contribution on a representative but safely bounded case. Preserve:
+Use evidence of the intended provider or environment supplying the contribution in a safely bounded representative use. If further evidence is needed and attainable, run a permitted test under the material service conditions. Identify the following details when they affect the conclusion.
 
-1. the provider, recipient, task, configuration, support, and direct owners;
+1. the provider, recipient, task, configuration, support, and the sources or decision holders relevant to that use;
 2. the input, output, criteria, protected errors, timing, volume, handoffs, and access conditions;
-3. the first operating result, any disagreement or failure, feedback, correction, and repeated result;
-4. actual load, latency, escalation, fallback, and consequences; and
+3. the first operating result, any disagreement or failure, any feedback or correction, and the result of a repeat if one occurred;
+4. the observed load, latency and consequences, and any escalation or fallback needed or exercised; and
 5. the exact claim supported, its limits, and the smallest change that reopens it.
 
-A rehearsal against the same memorized example may show procedural compliance but not handling of the required variation. Use a new representative case when the provider must discriminate, adapt, or resolve a dispute. Test the intended support configuration; require unsupported performance only when the provider's actual task needs it.
+Repeating a memorized case may establish execution of that procedure. If the task requires discrimination, adaptation or dispute handling, establish it from performance under relevant variation. Use an additional case if the available evidence does not settle the claim. Match assistance to the intended service and require unsupported performance when that is part of the provider’s task.
 
-An operating test supports a bounded provider or environment contribution, including delivery to the recipients actually observed. It does not by itself establish delivery to other learners, learning, transfer to later Work or retention. Testing one contribution does not establish operation of the whole organization, platform or programme.
+The evidence can establish the contribution delivered to identified recipients under the observed conditions. To extend the claim to other learners, service loads, a whole programme, transfer, retention or learning effects, obtain evidence relevant to that additional claim.
 
 #### HCD.8:4.7 - Return the Obtained or Built Contribution or Exact Stop
 
-An HCD.8 result contains:
+Return the result and the conditions under which a recipient can use it.
 
-| Result position | Required content |
+| Result position | What to return for the requested use |
 | --- | --- |
-| contribution boundary | Missing contribution, blocked HCD use, recipient, provider task, conditions, consequence, and direct owners |
-| route comparison | Obtain and build candidates, finite burden, time, risk, authority, continuity, and operating-evidence differences |
-| dependency boundary | Supported inputs, first blocking dependency, direct result used, and where recursion stopped |
-| preparation | Provider or environment change, support, materials, access, practice, feedback, correction, and unresolved limits |
-| operating evidence | Representative case, conditions, observed output, criteria, timing, load, disagreement, correction, fallback, and qualification |
-| disposition | `qualified existing contribution obtained`, `bounded operating development arrangement`, `preparation only`, or `exact unsupported dependency` |
-| continuation | HCD.7 recheck, another operating case, direct-owner return, changed schedule, maintenance, fallback, or smallest reopen condition |
+| contribution boundary | Missing contribution, affected development use and recipient, provider task, conditions, consequences and applicable sources or decision holders |
+| route comparison | Feasible obtaining or building routes, criteria for their fit, burden, time, risk, authority, continuity and evidence of operation, with remaining trade-offs |
+| dependency boundary | Supported inputs, any remaining blocking dependency, sources used and where the search stopped |
+| preparation | Proposed or completed preparation or change, its conditions and limits, including the support, practice, feedback or correction that matters to the claimed result |
+| operating evidence | Representative service, its conditions, observed result, criteria, timing and load. Identify disputes, corrections or fallback where they affect the claim, and any observation still missing. |
+| disposition | A supported comparison or proposal, `qualified existing contribution obtained`, `bounded operating development arrangement`, `preparation only` or `exact unsupported dependency` |
+| continuation | The intended HCD.7 use, any further operating evidence or provider result needed, applicable maintenance or fallback, and conditions for reconsideration |
 
-Return to HCD.7 only the contribution and conditions its arrangement needs. Keep provider-development evidence, service-operation evidence, learner attempts, and learner-effect evidence separate.
+Give HCD.7 the contribution or identified limit it needs, with the applicable conditions. Evidence about provider preparation, operation of the service, receipt by a learner, the learner’s performance and the effects on learning each supports its own claim.
 
 #### HCD.8:4.8 - Recognition and Assurance
 
-**Recognition.** Use HCD.8 when a named contribution is unavailable and the proposed answer is to recruit, prepare, train, configure, build, calibrate, or supervise someone or something. Ask first whether an already qualified contribution can be obtained and what exact operating result is missing.
+**Recognition.** Use HCD.8 when a development activity lacks a specified contribution and you need to compare ways of obtaining or creating it, or to make one of those ways work. Establish what adequate operating evidence already exists and which result is missing.
 
-**Assurance.** Stronger reliance needs an exact provider target task, qualified domain criteria, truthful starting evidence, a bounded obtain/build comparison, supported blocking dependencies, an operating test under material conditions, direct-owner authorization, and a return limited to the observed contribution. A course completion, asset existence, design review, or one rehearsed answer cannot substitute for operation.
+**Assurance.** Match the evidence to the claimed result. For operating availability, establish the provider task, relevant domain criteria, supporting dependencies, applicable authority and representative performance under the material conditions. For a choice between routes, use evidence of their fit, time, consequences and burden. A prepared asset or completed course establishes preparation. To claim delivery or successful operation, establish that contribution separately.
 
 #### HCD.8:4.9 - What Changes in Practice
 
-A practitioner stops asking, “How do we train all providers?” and asks, “Which missing contribution blocks this development use, can we obtain it, what must the provider or environment actually do, which dependency is first unsupported, and what representative operating result would let HCD.7 enable the arrangement?” Build work becomes finite, testable, and stoppable.
+Identify the missing contribution, whether an existing provider can supply it and what the provider or environment must do. Trace any unresolved dependency that could prevent the required operation. Establish what performance HCD.7 could rely on and where work must stop if the dependency cannot be met.
 
 ### HCD.8:5 - Archetypal Grounding
 
 #### HCD.8:5.1 - Calibrate Assessors on Three Contrasting Answers
 
-HCD.7 has exposed a missing contribution: assessors cannot yet apply the engineering-case criteria consistently. Their provider target task is to judge a short answer, identify the exact requirement and evidence, preserve supported parts, distinguish a correct bounded use from a resource error or justified request, and resolve disagreement within the final-week assessment window.
+The availability check found that assessors could not apply the engineering-case criteria consistently. They need to judge short answers against the specified requirement and evidence, retain supported parts, distinguish a sound limited proposal from a resource error or justified request, and resolve disagreements within the final-week assessment window.
 
-Preparation uses three contrasting answers:
+For preparation, the assessors compare three answers.
 
 | Case answer | Required assessor judgement |
 | --- | --- |
@@ -174,104 +174,104 @@ Preparation uses three contrasting answers:
 | The same data are supplied, but the learner promises twelve changes because batching is faster. | Unsupported: twelve changes require 27 hours, exceeding the 24-hour limit. |
 | The changed report does not identify the tested firmware, and the learner asks which version was tested before relying on it for FW8. | Justified missing-information return. The same refusal would be incomplete when the first row's full compatible report is present. |
 
-Assessors judge independently, then locate each disagreement in the disputed requirement, answer fragment, and supplied evidence. A calibrated specialist result or answer key resolves the domain question; smooth writing or a general impression of the learner does not. The assessors then receive another representative case, such as the same ten-change proposal with only 22 hours. They must reject the now-unsupported promise, preserve unaffected criteria, and invoke the disagreement route within the promised time.
+Assessors first judge independently. They locate any disagreement in the requirement, answer fragment and supplied evidence. A qualified specialist result or calibrated key can settle the domain question. In a further case only 22 hours are available for the ten changes that need 23. The assessors must reject the promise while preserving criteria that still hold and use the dispute route if a disagreement arises. The judgement and its handoff must fit the service window.
 
-The three examples, key, and reserved calibration hours are preparation. Consistent and timely judgement on the changed case supports the bounded assessor contribution. It does not prove general assessor capability, operation at the whole final-week load, or any learner effect; those stronger uses need their own operating evidence.
+The examples, key and reserved time support preparation. Consistent, timely judgements on the changed case can establish the assessor contribution under those conditions. Judging peak final-week load, performance on other cases or effects on learners requires evidence for the corresponding claim.
 
 #### HCD.8:5.2 - Obtain a Qualified Provider instead of Missing the Window
 
-A programme needs a specialist to check control-logic errors before practice feedback is released. No local teacher currently has evidence for that contribution. Developing one would take six weeks, while the next practice block begins in ten days. An external specialist is available, but title and contract alone are insufficient.
+The programme needs a specialist to check control-logic errors before releasing feedback. It lacks evidence that a local teacher can do that work. Developing a local provider would take six weeks, while the next block starts in ten days. An external specialist is available. The contract and title leave open whether the specialist can meet this task’s criteria and window.
 
-The obtain route checks a representative answer, the protected-error criteria, access to permitted data, a forty-eight-hour feedback window, the handoff to the teacher, independence, confidentiality, peak volume, and a backup. If the sample operation fits, HCD.8 returns the qualified contribution to HCD.7. Local provider development can remain a later candidate, but the immediate arrangement does not wait merely to prefer an internal build.
+For the external route, establish performance on a representative answer, the protected-error criteria, permitted data access, the forty-eight-hour feedback window and the handoff to the teacher. Check the independence, confidentiality, peak capacity and backup the service requires. If representative operation and the service conditions fit, obtain the contribution and return it to HCD.7. Local provider development can remain a candidate for later use.
 
 #### HCD.8:5.3 - Build a Safe Practice Environment through Direct Owners
 
-A learner needs to practise a configuration change, but no environment currently permits a safe trial. The build route asks platform and safety owners for an isolated data set, the intended configuration, reset, logging, access control, and a bounded failure test. HCD.8 does not assert that these technical and safety properties exist; it consumes their qualified results.
+A learner needs to practise changing a configuration, and no present environment permits a safe trial. The build needs an isolated dataset, the intended configuration, reset, logging, access control and a bounded failure test. Use the platform and safety results already available and obtain the remaining work or authorizations from the responsible parties.
 
-The operating test has an authorized participant enter the sandbox, perform and reverse the change, trigger the failure signal, restore the baseline, and produce the required record within the practice window. If reset fails or production data remain exposed, the result is `exact unsupported dependency`, not an almost-ready lab. A stipulated paper case may preserve another learning use, but it is not the missing environment contribution.
+For the operating test, an authorized participant enters the test environment, makes and reverses the change, triggers the failure signal, restores the baseline and produces the required record within the practice window. If reset fails or production data are still exposed, return the unsupported dependency. A stipulated paper exercise can still support a different learning use under its own conditions.
 
 #### HCD.8:5.4 - Stop the Builder Chain at an Available Contribution
 
-Assessor preparation needs a correct answer key. A domain engineer already has compatible evidence, authority, and time to supply and defend the key. That contribution closes the dependency; HCD.8 does not create a programme to teach the engineer how to train assessors. If no qualified domain result is available, the return names that exact specialist dependency and its effect on assessor calibration. The map stops there until the direct owner supplies or authorizes another route.
+Assessor preparation needs a correct answer key. A domain engineer has compatible evidence, authority and time to supply and defend it. Obtaining that result closes this dependency. If no qualified key can be obtained, identify what remains unsupported and how it affects calibration. Further work needs a way to obtain the result or an authorized change to the route.
 
 ### HCD.8:6 - Bias-Annotation
 
-Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: obtaining or building one missing provider or enabling contribution for a bounded capability-development use.
+Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. The table concerns obtaining or building support for a particular development use.
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
-| train-everyone bias | Every provider is sent through a common programme whether a contribution is missing or not. | Start from one HCD.7 gap and accept qualified existing contributions as stops. |
-| asset-readiness bias | Materials, credentials, allocated hours, or installed software are called operational. | Observe the contribution on a representative case under service conditions. |
+| train-everyone bias | Every provider is sent through a common programme whether a contribution is missing or not. | Start from an established gap. Use a qualified available contribution that satisfies the dependency. |
+| asset-readiness bias | Materials, credentials, allocated hours, or installed software are called operational. | Use evidence of representative operation under the required service conditions. Obtain a further observation if that claim remains open and can be tested. |
 | internal-build bias | Local capacity is preferred without comparing delay, evidence, risk, and continuity. | Compare obtain and build routes on the current contribution and window. |
-| title-competence bias | Reputation, occupation, or contract is taken as contribution-specific capability. | Test fit and operation for the exact provider task. |
-| generic-enablement bias | A diagram arrow hides the relation or direct result needed from another owner. | Name the exact blocking dependency and use its subject practice. |
+| title-competence bias | Reputation, occupation, or contract is taken as contribution-specific capability. | Establish the provider’s fit and representative operation for the required task. |
+| generic-enablement bias | A diagram arrow hides the relation or direct result needed from another owner. | Identify the missing result and which provider work depends on it. Use a qualified source or the relevant practice to establish it. |
 | infinite-recursion bias | Every support dependency triggers another full build. | Stop at available qualified contributions, optional branches, or a truthful unsupported result. |
-| same-example bias | Repeating the training example is treated as operating discrimination. | Test a new representative case when adaptation or judgement is required. |
+| same-example bias | Repeating the training example is treated as operating discrimination. | Use representative evidence of the required variation or judgement. Use another case if the evidence is missing and a further test is appropriate and available. Otherwise limit the claim to the performance observed. |
 | service-effect bias | Successful provider operation is reported as learner capability or programme effectiveness. | Keep provider operation, learner receipt, learner attempt, transfer, and retention separate. |
 
 ### HCD.8:7 - Conformance Checklist
 
-- [ ] The exact HCD.7 gap or equivalent missing contribution, blocked use, recipient, conditions, and consequence are explicit.
-- [ ] An existing qualified provider or environment is considered before a build is selected.
-- [ ] Obtain and build routes are compared on result fit, time, burden, risk, authority, continuity, and operating evidence.
+- [ ] The missing contribution, blocked use, recipient, conditions, and consequence are explicit.
+- [ ] Check whether a qualified existing provider or environment can meet the need before selecting a build.
+- [ ] Where routes compete, compare fit, time, burden, risk, authority, continuity and evidence of operation. Identify any condition that excludes a route or keeps its fit uncertain.
 - [ ] A human provider's own target task is distinct from the learner's later-Work target.
-- [ ] Non-human environment, platform, tool, safety, privacy, legal, and operating claims come from their direct owners.
-- [ ] Recursion follows only an exact blocking dependency and stops at the first available qualified result or truthful unsupported return.
-- [ ] Preparation, design, materials, credentials, hours, and installed assets remain preliminary until the contribution operates.
-- [ ] The operating test uses representative inputs, criteria, protected errors, timing, load, handoffs, support, access, and failure signals.
-- [ ] A changed or unfamiliar case is used when discrimination or adaptation is part of the provider task.
-- [ ] The result states the exact contribution, qualification, limits, fallback, continuation, and smallest reopen condition.
-- [ ] HCD.7 receives only the availability result it needs; provider-development, service-operation, and learner-effect evidence are not conflated.
-- [ ] No provider, environment, programme, learner, transfer, or retention conclusion exceeds the observed conditions.
+- [ ] Use qualified evidence for technical, safety, privacy, legal and operating conditions. Establish any required authorization from the applicable rule or decision holder.
+- [ ] Trace any dependency that could prevent obtaining the required contribution. Stop at a suitable qualified result, a branch the assessed route can proceed without, or a specific unresolved condition.
+- [ ] Identify what was prepared or supplied. If operation is claimed, identify the evidence that establishes it.
+- [ ] Support a claim of operation with representative performance under the service conditions that matter, including relevant criteria, load, access, handoff or failure signals.
+- [ ] For a claim about discrimination or adaptation, use a case with the relevant variation and evidence that the provider handled it.
+- [ ] State the contribution or finding, its grounds and limits, and any remaining fallback, continuation or reconsideration condition the receiving use needs.
+- [ ] Return the availability finding the receiving arrangement needs. Distinguish provider preparation, service operation, learner receipt and effects on the learner.
+- [ ] Limit claims about observed operation, participation or learner effects to the conditions the evidence supports. State the grounds and assumptions for a proposed route or expected service.
 
 ### HCD.8:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Why it fails | Repair |
 | --- | --- | --- |
-| “Train the trainers” | The missing provider task and current competent providers disappear behind a generic intervention. | Name one missing contribution and compare obtain with build. |
-| “The assessor passed the course” | Completion does not show consistent judgement on the target cases. | Use the available target-case attempts, resolve any criterion-level disagreement, and test another case when the required judgement remains unestablished. |
-| “The lab has been designed” | A description does not establish safe access, reset, load, or operation. | Obtain direct-owner results and run a bounded operating test. |
-| “We bought the platform” | Acquisition does not establish configuration, capacity, provider work, or recipient access. | Test the exact service contribution and handoffs. |
+| “Train the trainers” | The missing provider task and current competent providers disappear behind a generic intervention. | Identify the missing contribution and compare feasible ways to obtain or create it. |
+| “The assessor passed the course” | Completion does not show consistent judgement on the target cases. | Use the available target-case attempts, resolve any criterion-level disagreement, and use another representative case if the required judgement remains open and can be tested. |
+| “The lab has been designed” | A description does not establish safe access, reset, load, or operation. | Use qualified results about the required access, reset, load and operation. Test remaining conditions when a bounded and permitted trial can establish them. |
+| “We bought the platform” | Acquisition does not establish configuration, capacity, provider work, or recipient access. | Establish representative performance of the required service and handoffs, using a new test if sufficient evidence is missing and a test is available. |
 | “Every builder needs a builder” | The map becomes an infinite programme rather than a located dependency. | Stop when a compatible qualified contribution is available or return the first unsupported result. |
-| “The specialist will enable it” | The specialist's result, timing, authority, and relation to the provider task are hidden. | Request the exact domain result and preserve its conditions. |
-| “One calibrated answer is enough” | Memorized reproduction can conceal inability to discriminate a changed case. | If required discrimination or adaptation remains untested, use another representative case; include disagreement handling when the provider task requires it. |
+| “The specialist will enable it” | The specialist's result, timing, authority, and relation to the provider task are hidden. | Use a qualified domain result already available. Ask for the particular missing contribution where necessary, and preserve its conditions. |
+| “One calibrated answer is enough” | Memorized reproduction can conceal inability to discriminate a changed case. | If required discrimination or adaptation remains untested, use another representative case when available. Include disagreement handling if it is part of the provider’s task. |
 | “The service test proves the programme works” | A provider can operate without establishing learner receipt, learning, transfer or retention. | Keep any observed delivery with its recipient and conditions. Route learner-attempt and effect questions to HCD.9 and HCD.11–HCD.13. |
 
 ### HCD.8:9 - Consequences
 
-The practitioner gains a finite bridge from an unavailable support design to an actually operating contribution. Existing capacity can be used quickly, missing provider work becomes testable, and a blocked environment or specialist result is returned precisely enough for its direct owner.
+The practitioner can return the feasible routes and their conditions, obtain an available contribution, build it under specified conditions, or explain which dependency still blocks its use. Evidence of representative operation gives the development programme a basis for relying on that contribution.
 
-The cost is a separate provider or environment case with its own evidence. Obtain/build comparison, preparation, domain criteria, operating tests, disagreement handling, and direct-owner returns consume time. Some development arrangements remain preliminary or blocked rather than being declared ready from their assets.
+Comparing routes, preparing a provider, establishing domain criteria, testing service, resolving disagreements and obtaining external results each take time where needed. Some arrangements therefore remain at the design or preparation stage.
 
 ### HCD.8:10 - Rationale
 
-A capability-development arrangement depends on providers and environments that can perform their own work. The learner's programme cannot make those contributions available merely by naming them. Conversely, an existing qualified result does not need to be rebuilt to satisfy a recursive picture.
+A development arrangement depends on providers and environments that can perform the required work. Naming one identifies a potential contribution. Establish whether it is available and can operate under the conditions that matter. Adopt an existing qualified contribution where it satisfies the need.
 
-Binding recursion to the first unsupported dependency preserves the practical build-the-builder insight without inventing a universal creator relation or fixed levels. Separating preparation from operation, and provider operation from learner effect, gives HCD.7 a truthful availability result while leaving stronger claims with their proper evidence owners.
+Tracing the first unsupported dependency directs work to the contribution that blocks the selected route. Evidence of provider preparation, operation and learner effects answers different questions. HCD.7 can use the operating result while a question about learner effects remains open.
 
 ### HCD.8:11 - SoTA-Echoing
 
-The working question is: **How should a practitioner obtain or build a missing provider or enabling contribution and establish that it operates for the bounded capability-development use?**
+**How can a practitioner obtain or build a missing development contribution and establish its operation for the intended use?**
 
-The selected best-known line combines an exact provider target task, contribution-specific preparation, representative operating evidence, and a finite dependency return. Kraiger and Ford's 2021 workplace-instruction review ([`COG-10`](https://doi.org/10.1146/annurev-orgpsych-012420-060109)) keeps instructional events, learner activity, learning outcomes, transfer, and job performance distinct and makes learner, design, work environment, opportunity, and support material. Matsuo and Tsukube's 2020 cognitive-apprenticeship review ([`SOC-02`](https://doi.org/10.1016/j.ijme.2020.100417)) supplies modelling, coaching, scaffolding, articulation, reflection, and exploration as conditional provider-development moves rather than a complete provider credential. HCD.8 adapts those contributions into the target-task, preparation, and operating-test steps in §§4.3–4.6.
+Kraiger and Ford’s 2021 review of workplace instruction ([`COG-10`](https://doi.org/10.1146/annurev-orgpsych-012420-060109)) distinguishes instructional events, learner activity, learning outcomes, transfer and job performance. It identifies how the learner, design, opportunity, available support and work environment affect the contribution. Matsuo and Tsukube’s 2020 cognitive-apprenticeship review ([`SOC-02`](https://doi.org/10.1016/j.ijme.2020.100417)) describes modelling, coaching, scaffolding, articulation, reflection and exploration. Each can inform provider preparation where it fits the task. Sections 4.3–4.6 connect the provider’s task, preparation and representative evidence of operation.
 
-The serious ordinary alternative is asset-first provider development: publish a guide, train every teacher, reserve hours, configure a platform, and call the arrangement ready. It is easier to administer, but it hides which contribution was absent, whether an existing provider was preferable, whether a changed case can be handled, and whether the contribution operates at the needed time and load. HCD.8 retains materials, instruction, and assets as preparation while rejecting them as operation evidence.
+A programme can document asset delivery, hours and training completion relatively cheaply. Such records can support claims about preparation. If existing provision and a proposed build compete, compare which can better supply the missing contribution. To rely on a service, establish that the provider handles the required variation under the intended time and load.
 
-Tullis, Goldstone, and Hanson's 2015 laboratory experiment ([`COG-11`](https://doi.org/10.1080/00222895.2015.1008686)) supplies a bounded warning that assisted practice and later unassisted performance can differ; it does not prescribe unsupported provider tests or a universal fading schedule. Wiese, Kilty, and Bennett's 2018 clinical realist synthesis ([`SOC-03`](https://doi.org/10.1111/medu.13655)) makes task risk, trust, learner position, supervision, and service pressure visible in one clinical setting; its governance does not become a general HCD rule. These limits produce the explicit support configuration, consequence boundary, and direct-owner exits in §§4.3–4.7.
+Tullis, Goldstone and Hanson’s 2015 laboratory experiment ([`COG-11`](https://doi.org/10.1080/00222895.2015.1008686)) found that assisted practice and later unassisted performance could differ under the conditions studied. Wiese, Kilty and Bennett’s 2018 clinical realist synthesis ([`SOC-03`](https://doi.org/10.1111/medu.13655)) relates supervised participation to task risk, trust, learner position and service pressure. Sections 4.3–4.7 use the relevant support and consequence conditions when examining provider work. Other settings require their own evidence of what assistance and authority fit the task.
 
-A.1.STM supplies the backward search to the first unsupported builder dependency and the stop at a direct subject pattern. E.18.NET supplies a recursive selected-network account only when independently identified transformation-flow structures and exact cross-boundary relation occurrences are actually needed; neither a dependency sketch nor this HCD result establishes such a network. These are framework architecture contributions, not evidence that a provider or programme works.
+A.1.STM explains how to trace a required contribution back to its first unsupported dependency and use the relevant subject method. E.18.NET addresses a different question about independently identified transformation-flow structures and relations across their boundaries. A dependency map can locate the result still needed. A claim about a relation across independently identified flows requires evidence of that relation. Evidence that a provider operates comes from the corresponding service work.
 
-The selected line costs more than recording training completion or asset delivery, but it preserves contribution fit, actual operation, direct ownership, bounded recursion, and evidential truth. Reopen it when the missing contribution, provider task, obtain/build options, risk, support, operating conditions, direct-owner result, or serious source changes, or when repeated use shows that a lower-effort operating test preserves the same decision-bearing values.
+Checking a contribution in operation can cost more than recording preparation. The added work is warranted where reliance depends on whether the intended service can function. Reconsider the affected result when a change in the missing contribution, provider task, alternatives, risks, support, operating conditions or evidence affects its grounds. A less costly way of establishing the needed conditions may then suffice.
 
 ### HCD.8:12 - Relations
 
-- **`HCD.7`:** supplies the exact unavailable contribution, required conditions, supported arrangement, and return point; it decides actual availability after HCD.8's bounded result.
-- **`HCD.1`–`HCD.6`:** may supply a human provider's target task, present evidence, programme, Method, and representative practice values when those are genuinely missing; they are not a compulsory subprogramme for every provider.
-- **`HCD.9` and `HCD.10`:** may enact and vary provider practice where provider development needs them; their learner-attempt records remain separate from the operating-service result.
-- **`HCD.11`–`HCD.14`:** may assess or revise a human provider's capability from compatible evidence; one service test establishes only its bounded operating contribution.
+- **`HCD.7`** can identify the missing contribution and the conditions under which the arrangement needs it. A practitioner can use the returned operating contribution or identified limit to reassess availability.
+- **`HCD.1`–`HCD.6`** can establish a human provider’s target, current evidence, programme, method or representative practice where one of these is missing.
+- Use **`HCD.9`** for a needed provider practice episode and **`HCD.10`** when the work calls for varying practice or support. Keep evidence of that person’s attempt distinct from evidence of providing the service.
+- **`HCD.11`–`HCD.14`** help assess a person’s capability or revise the development arrangement using compatible evidence. An operating test can establish the service contribution it observed.
 - **`A.1.STM`:** locates the first unsupported builder or enabling dependency while keeping the final development contribution visible and local truths with their subject patterns.
 - **`E.18.NET`:** can organize independently identified transformation-flow structures and exact cross-member relations when that stronger network question is live; HCD.8 does not infer them from a build sequence.
-- **`A.15.1` and production, service, operations, organization, platform, privacy, safety, legal, employment, accessibility, and target-domain practices:** retain actual Work, production, capacity, authorization, risk, correctness, and operating conclusions. HCD.8 consumes their bounded results.
-- **Learning-product practices:** may supply provider guides, cases, keys, interfaces, and practice carriers; their existence does not establish provider capability or service operation.
+- **`A.15.1` and relevant subject practices** help establish performed work, production, capacity, correctness, risk and service operation. Use the relevant practice for a question about legal, accessibility or other service conditions, and obtain any required authorization from its holder. Use the result needed by the selected route.
+- **Learning-product practices** can supply provider guides, cases, keys, interfaces and practice materials. Establish provider competence or service operation from the corresponding work.
 
 ### HCD.8:End

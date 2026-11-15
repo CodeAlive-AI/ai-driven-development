@@ -8,11 +8,11 @@
 
 ### SIE.10:1 - Problem Frame
 
-**Use this when** a candidate semantic interface or mapping package exists and somebody asks whether it is ready, correct, valid, trustworthy, or fit for use. Enter especially when one test family already passes and is being used as evidence for the whole: valid JSON, conforming RDF shapes, successful ETL, high matcher score, complete provenance, good data-quality metrics, or one successful demonstration.
+**Use this when** you need to judge whether a candidate semantic interface or mapping package is fit for a receiving use. Enter especially when one test family already passes and is being used as evidence for the whole: valid JSON, conforming RDF shapes, successful ETL, high matcher score, complete provenance, good data-quality metrics, or one successful demonstration.
 
-The primary EntityOfConcern is one semantic-integration result under one receiving-use contract and one inspectable package revision. The first move is to identify the receiving claim being judged and whether known evidence already settles a bounded failure or unresolved result. For a positive claim, identify its load-bearing obligations and the evidence that can test them. The first result can be a supported local failure, scoped uncertainty, or qualified positive use.
+Judge one semantic-integration result against one receiving-use contract for an identifiable package revision that you can inspect. The first move is to identify the receiving claim being judged and whether known evidence already settles a bounded failure or unresolved result. For a positive claim, identify its load-bearing obligations and the evidence that can test them. The first result can be a supported local failure, scoped uncertainty, or qualified positive use.
 
-The payoff is a truthful decision boundary: the receiver knows which result may be relied on, under which source editions and conditions, and which gaps remain. Do not use SIE.10 to authorize product release, accept a quality result, approve a recall, certify a service, or prove business effectiveness. Direct owners consume the bounded validation account and make those decisions.
+The receiver can see which result it may rely on, under which source editions and conditions, and which gaps remain. Do not use SIE.10 to authorize product release, accept a quality result, approve a recall, certify a service, or prove business effectiveness. Those with the relevant authority can use the validation account when making those decisions.
 
 ### SIE.10:2 - Problem
 
@@ -27,13 +27,13 @@ One aggregate “quality” or “confidence” score hides which premise failed
 | Layering | Separate tests localize defects, while the receiver needs a whole-use conclusion. |
 | Positive evidence | Expected matches demonstrate a path, while negative and unlike cases reveal hidden compression and defaults. |
 | Coverage | A positive use claim needs its load-bearing premises supported, while a bounded failure can be settled by sufficient defect evidence. |
-| Automation | Schemas, shapes, queries, and metrics scale checks, while semantic and authority judgments often require qualified human/domain input. |
+| Automation | Schemas, shapes, queries, and metrics scale checks, while semantic and authority judgments often require input from participants with relevant domain knowledge or authority. |
 | Change | Stable evidence is reusable, while source editions, rules, interfaces, and receiving conditions can invalidate only some results. |
-| Decision pressure | Stakeholders want pass/fail, while narrow or unresolved can be the most useful truthful disposition. |
+| Decision pressure | Stakeholders want a pass or fail. The evidence may support only a narrower use or leave the result unresolved. |
 
 ### SIE.10:4 - Solution
 
-Choose the conclusion at its actual scope. A known decisive failure or bounded unresolved premise can finish with sufficient evidence for that result. For a positive whole-use or contract-permitted narrower result, obtain matching evidence for every load-bearing premise, including the receiver's interpretation. Use earlier results when their conditions still match. Preserve hard stops and distinguish unexamined premises from passing ones.
+State the conclusion at the scope its evidence supports. A known decisive failure or bounded unresolved premise can finish with sufficient evidence for that result. For a positive whole-use or contract-permitted narrower result, obtain matching evidence for every load-bearing premise, including the receiver's interpretation. Use earlier results when their conditions still match. Preserve hard stops and distinguish unexamined premises from passing ones.
 
 #### SIE.10:4.1 - Pattern-Use Unfolding
 
@@ -59,7 +59,7 @@ Steps 3–10 locate evidence for a positive use conclusion. A sufficient bounded
 | subject and use | package/interface revision, source/rule versions, realization/test state, receiver and use |
 | obligations | premises relevant to the claimed conclusion; all load-bearing contract obligations for a positive use claim |
 | layer result | layer, tested claim, method/case, evidence, expected/observed result, pass/narrow/unresolved/stop, defect owner |
-| dependency | exact source, correspondence, identity, composition, mapping, realization or interface premise consumed |
+| dependency | source, correspondence, identity, composition, mapping, realization or interface premise consumed |
 | coverage | examined cases and matching earlier results; material unexamined or unresolved premises, distinguished from passing ones |
 | use disposition | supported local failure or gap, or positive result with its conditions and full load-bearing coverage; excluded subset and hard stops |
 | continuation | repairs or direct-owner returns, focused retest, affected consumers, reopen condition |
@@ -135,7 +135,7 @@ Apply the layer requirements below to the conclusion being claimed. A bounded fa
 | Provenance completeness means truth | Test the source claim and receiving adequacy; provenance only makes derivation inspectable. |
 | High alignment benchmark score | Validate local endpoint relations and use loss against representative cases. |
 | All-or-nothing readiness | A known defect can finish a bounded failure. A positive subset result requires the contract's permission and all premises on which that subset relies. |
-| Semantic validation authorizes release | Return the account to the actual engineering, quality, safety, legal, or application authority. |
+| Semantic validation authorizes release | Return the account to the engineering, quality, safety, legal, or application authority. |
 
 ### SIE.10:9 - Consequences
 
@@ -149,14 +149,14 @@ Semantic integration is a claim chain. Different links require different evidenc
 
 ### SIE.10:11 - SoTA-Echoing
 
-The best-known line combines constraint validation, ontology-alignment evaluation, provenance, data-quality models, quality management, and user/task validation. The serious defaults are conformance-only testing and aggregate quality scoring. Their defect is not automation or measurement; it is using one layer as a proxy for the whole use. SIE.10 combines these contributions in a dependency-aware account with categorical bounded dispositions and representative Work replay.
+The best-known line combines constraint validation, ontology-alignment evaluation, provenance, data-quality models, quality management, and user/task validation. The serious defaults are conformance-only testing and aggregate quality scoring. Conditions at different layers need their own evidence. Even when every condition is measured, a high score at one layer cannot offset failure of a required condition at another. SIE.10 combines these contributions in a dependency-aware account with categorical bounded dispositions and representative Work replay.
 
 | Source line | Adopt, adapt, or reject | Role and limit |
 | --- | --- | --- |
 | [SHACL](https://www.w3.org/TR/shacl/) | adapt | Supplies declared RDF graph constraint validation; passing shapes do not establish all semantics, identity, truth, or use fitness. |
 | [DQV](https://www.w3.org/TR/vocab-dqv/) and [ISO/IEC 25012:2008](https://www.iso.org/standard/35736.html) | adapt | Supply quality vocabulary and a data-quality model; select dimensions and measurements by receiving action. |
-| [ISO 8000-61:2016](https://www.iso.org/standard/63086.html) | adapt | Contributes data-quality management process questions; process conformance does not prove a particular answer fit. |
-| [OAEI 2025 results](https://oaei.ontologymatching.org/2025/results/) | adapt | Provide alignment-evaluation tasks and evidence; benchmark results do not validate a local correspondence set universally. |
+| [ISO 8000-61:2016](https://www.iso.org/standard/63086.html) | adapt | Contributes data-quality management process questions; process conformance does not prove fitness of the answer for its receiving use. |
+| [OAEI 2025 results](https://oaei.ontologymatching.org/2025/results/) | adapt | Provide alignment-evaluation tasks and evidence; a local correspondence set still needs evidence for its intended use. |
 | one conformance gate or aggregate score | reject as sufficient | Unlike layers and hard stops must remain separately visible before a whole-use conclusion. |
 
 Reopen when a relied-on source, model, identifier, correspondence, composition, mapping, realization, interface, quality threshold, or receiving workflow changes; when new evidence defeats a layer; or when a representative case exposes an untested load-bearing obligation.

@@ -5,145 +5,145 @@
 
 ### HCD.7:0 - Use This When
 
-Use this pattern when a capability-development programme, Method, or practice set needs contributions from people, sources, tools, AI, an environment, or an organization, and the practitioner must establish what will actually be available. Begin with the concrete functions and their timing: explanation, task preparation, safe access, feedback, checking, independent assessment, specialist input, and fallback. Do not begin with a provider label or a total-hours budget.
+Use this pattern to determine whether the learner or those responsible for the practice can obtain the support they need when they need it. Start with the contribution and its timing. The work might need an explanation, prepared tasks, safe access, feedback, a check, independent assessment, specialist input or a fallback. Identify which people, sources, tools, services or organizations could supply the required contributions.
 
-The first useful result is an **enabled development arrangement**: each required contribution has an identified supplier, competent and authorized scope, access conditions, capacity at the required time, data and privacy boundary, human checks, fallback, and evidence of availability. If one of these values is missing, return the supported design and the exact unavailable contribution, timing, access condition, or provider result. A plausible design is not an enabled arrangement.
+An **enabled development arrangement** identifies who or what supplies each required contribution, within what scope and with enough capacity when it is needed. Establish applicable competence, authority, access, data and privacy conditions, human checks and fallback or safe stopping conditions. If a necessary contribution remains unavailable, return the supported design and the result, time or access condition it still lacks.
 
-The practical gain is feasibility before participation. The practitioner can see whether feedback arrives before the next attempt, whether peak assessment demand fits the provider window, whether a peer contribution prepares rather than replaces competent assessment, and whether AI support leaves enough human time to check consequential output.
+The arrangement can establish whether timely feedback and peak assessment fit the provider’s windows, which preparation peers can supply, and which assessment still requires a qualified assessor. Include the time to check consequential AI output.
 
-Do not use HCD.7 to create a missing provider capability, infer that a provider is competent from a job title, prove learning from access, or decide that a person is suitable for a class-level arrangement. Use HCD.8 when an exact unavailable contribution needs an obtain-or-build comparison and the preparation or operating test that the chosen route requires. Personal fit remains with the applicable demand, target, profile, programme, and participation decisions.
+Use HCD.8 when you need to compare ways of obtaining or building a required contribution that is unavailable, or to put the selected arrangement in place. Select further preparation or a test according to what the arrangement still needs. A particular learner’s fit depends on their target, profile, programme and participation conditions. Evidence of learning comes from what the person does under the relevant conditions.
 
 #### HCD.7:0.1 - Working Terms
 
 | Name in this pattern | What it denotes |
 | --- | --- |
 | required development contribution | One result or action that the selected programme, Method, or practice needs from a learner, teacher, assessor, specialist, peer, source, tool, AI system, environment, or organization. |
-| provider function | The bounded contribution to be supplied, such as explaining, preparing a case, giving actionable feedback, checking a critical error, assessing independently, maintaining access, or supplying a specialist result. A role title does not define the function. |
-| provider | The identified person, group, organization, service, or tool relied upon to perform the required action or supply its result under stated conditions. A book or dataset used for that contribution remains an identifiable source with its own edition and access conditions. Different contributions may have different providers. |
+| provider function | The contribution to be supplied, such as explaining, preparing a case, giving feedback a learner can use, checking a critical error, assessing independently, maintaining access or supplying a specialist result. Determine the function from the work that needs it. |
+| provider | The person, group, organization, service or tool relied on to perform an action or supply its result under stated conditions. Identify a book or dataset by the content, edition and access the work requires. Different contributions may have different providers. |
 | access condition | A permission, credential, data boundary, physical or digital route, timing, environment, interface, or participation condition needed to obtain a contribution. |
-| capacity window | The amount and timing of provider attention or system availability that can serve the required work, including concurrency and peak demand. A total can fit while a critical window fails. |
-| human-check contribution | The human judgement, verification, explanation, authorization, or accountability that remains necessary when AI or another tool assists. It has its own competence and workload. |
+| capacity window | The attention or system capacity available for the required work in a particular interval, taking account of simultaneous demands and peaks. |
+| human-check contribution | Any judgement, verification, explanation, authorization or accountability the intended use requires a person to supply when a tool assists. Establish who can provide it and how much time it requires. |
 | fallback | A separately feasible way to preserve the required result or return safely when the preferred provider, tool, data, or timing becomes unavailable. |
-| enabled development arrangement | The contribution allocation plus established providers, access, capacity, constraints, checks, fallback, and evidence sufficient to begin the bounded development use. It does not establish that the use occurred or succeeded. |
+| enabled development arrangement | An allocation with sufficient evidence that the required providers, access, capacity, checks and fallback or safe stop can support the bounded use. Evidence of execution or learning concerns what happens during or after use. |
 
-Intended help in a programme, help permitted by a practice task, help actually available, and help received in an attempt are different facts. HCD.7 establishes actual availability; HCD.9 and HCD.11 preserve what was received and what the resulting attempt can support.
+Distinguish help intended by a programme, help permitted during a task, help available and help the learner received on a particular attempt. HCD.7 establishes availability. HCD.9 and HCD.11 can establish what help was received and what the attempt supports.
 
 ### HCD.7:1 - Problem Frame
 
 A programme can describe excellent practice and still be impossible to run. The teacher may have enough annual hours but not enough time during final assessments. The relevant project data may be inaccessible. A specialist may be available only after the decision deadline. An AI tool may be permitted for public material but prohibited for the learner's project. A peer group may generate useful questions while lacking the competence or independence required for assessment.
 
-Support is not one undifferentiated resource. Explanation, coaching, task preparation, feedback, technical access, domain checking, independent assessment, and specialist judgement have different competence, timing, privacy, and authority conditions. Replacing one with another can change both the learning activity and the evidence it yields.
+Explanation, coaching, task preparation, feedback, technical access, domain checking, independent assessment and specialist judgement can require different competence, timing, privacy conditions or authority. A substitution can change both the activity and the evidence it yields.
 
-The practitioner therefore has to allocate exact contributions, test actual availability and peak capacity, and preserve human checking and fallback rather than treating provider names, aggregate hours, or tool access as proof of an operating arrangement.
+Trace the required contribution to a competent supplier, check its access and peak capacity, and allow for any human checking and fallback the use needs.
 
 ### HCD.7:2 - Problem
 
-The common shortcut is provider-by-label: a teacher, mentor, community, apprenticeship, platform, or AI tutor is assumed to supply every support function. The label hides task competence, assessment independence, access, supervision, workload, and the conditions under which the contribution is legitimate.
+A teacher, mentor, community, apprenticeship, platform or AI tutor may supply one part of the work and leave others uncovered. A provider’s title alone tells the practitioner little about task competence, assessment independence, access, supervision, workload or the authority to act.
 
-A second shortcut divides a total by the number of learners. The resulting “hours per learner” can be useful for costing but says nothing about individual contact, concurrency, feedback latency, or a final-week peak. Shared meetings also do not supply additional individual checking merely because more people attend.
+Dividing a total by the number of learners can support costing. To establish individual contact, concurrent demand, time to feedback or a final-week peak, inspect the allocation to specific tasks and windows. More attendance at the same group meeting supplies no extra individual checking time.
 
-A third shortcut treats automated assistance as free capacity. Searching, drafting, or calculating can reduce one burden and create another: prompt preparation, source checking, error challenge, data protection, and fallback. The arrangement needs a contribution account that remains true under actual use.
+Automated search, drafting or calculation can save time while adding work to prepare prompts, check sources, challenge errors, protect data or handle a failure. Include that work when judging the capacity the arrangement can supply.
 
 ### HCD.7:3 - Forces
 
-- Aggregate capacity is easy to budget, while timing, concurrency, feedback deadlines, and peak load determine actual service.
-- A provider title is easy to name, while competence and authority are contribution-specific.
+- Aggregate capacity helps establish a budget. Delivering the service also depends on timing, simultaneous demands, feedback deadlines and peak load.
+- Establish competence and authority for the provider’s particular contribution.
 - Peer participation can broaden feedback and reflection, while independent or high-consequence judgement may require another qualified assessor.
-- AI can accelerate search, generation, calculation, or critique, while human checking and data governance consume real capacity.
-- Supported performance can improve the immediate result, while it does not establish unaided capability or retained performance after support changes.
+- AI may accelerate search, generation, calculation or critique. Its use can also require human checking and work to protect data.
+- Help can improve immediate performance. A claim about performance without that help, or about retention after support changes, requires evidence under the relevant conditions.
 - One platform or community can host many functions, while access, facilitation, leadership, task expertise, and coordination remain distinct contributions.
-- A standard arrangement supports class planning, while personal needs and participation conditions become known only for an identified learner.
-- Redundancy improves resilience, while a nominal fallback that lacks competence, access, or time is not feasible.
-- HCD can expose the required support, while employment, privacy, safety, legal, clinical, target-domain, and organizational owners retain their decisions.
+- Class-level planning uses audience assumptions. Confirm individual needs, participation and fit when an identified learner will use the arrangement.
+- A fallback can protect the result when its competence, access and timing fit the conditions under which it would be needed.
+- HCD identifies the support needed for development. Employment, privacy, safety, legal, clinical, target-domain and organizational decisions remain with the holders of those authorities.
 
 ### HCD.7:4 - Solution
 
-Translate the selected programme, Method, and practice tasks into required contributions; assign each contribution to an identified provider or resource; and test competence, access, timing, capacity, constraints, human checking, and fallback before calling the arrangement enabled.
+Start with the contribution each selected activity needs and who will use it. Identify the capable provider, suitable source or resource for each contribution, and any authority the work requires. Use applicable evidence to establish access, timing, capacity and any required human checks or fallback. Where a necessary condition remains open, identify how it limits the supported design.
 
 #### HCD.7:4.1 - Bind the Development Use
 
-Name:
+Establish the conditions that determine whether the support will be available.
 
-1. the human holder or defined learner class, participation basis, programme or practice recipient, and receiving decision;
-2. the later-Work target, selected HCD.5 Method, HCD.6 practice set, required work products, protected errors, and intended evidence uses;
+1. the person or defined learner class, participation basis, intended recipient, and the question or decision for which the arrangement is needed;
+2. the later work, practice or programme to be supported, including the selected method, tasks, required products, errors the work must prevent and what the resulting evidence will be used to establish;
 3. the calendar, attempt and feedback timing, learner workload, provider windows, peak periods, and decision deadlines;
-4. project, source, data, environment, tool, AI, privacy, confidentiality, accessibility, permission, safety, and authority conditions; and
-5. every direct owner whose competence, result, or authorization the arrangement consumes.
+4. material conditions on project access, sources, data, environments, tools, AI, privacy, confidentiality, accessibility, safety and authority; and
+5. the providers and decision holders on whose competence, results or authorizations the arrangement depends.
 
-For a class-level design, state the audience assumptions and capacity range. Do not infer that a particular person fits the arrangement. When that person becomes known, recheck their task, access, participation, support, and accommodation conditions rather than inheriting the class average.
+For a class design, state the audience assumptions and capacity range. Before an identified learner relies on that design, establish whether their task, access, participation, support and accommodation conditions fit. Use relevant evidence already available for that person.
 
 #### HCD.7:4.2 - Allocate Contributions, Not Labels
 
-Construct one contribution allocation:
+Make the allocation detailed enough to connect each needed contribution to its recipient and time of use.
 
 | Allocation field | Required content |
 | --- | --- |
 | contribution and recipient | The explanation, demonstration, case, access, feedback, check, assessment, specialist result, coordination, or fallback needed; who or what uses it; and which task or result it enables. |
-| provider and scope | Identified supplier, contribution-specific competence, authorization, independence where needed, and explicit non-responsibilities. |
+| provider and scope | The supplier, the competence and authority needed for its contribution, any required independence, and limits of this provider’s responsibility, including work another provider must perform or a decision it may not make. |
 | timing and service condition | Required date or interval, concurrency, response or feedback deadline, duration, handoff, and dependency on other contributions. |
 | access and constraints | Data, source, project, environment, interface, accessibility, privacy, confidentiality, safety, legal, employment, or organizational conditions. |
-| capacity | Preparation, delivery, checking, correction, coordination, fallback, and peak-load effort; competing uses and unavailable periods. |
-| evidence and fallback | Evidence that the provider and access are available for this use; failure signal; feasible fallback or exact missing result and retry condition. |
+| capacity | The effort needed for preparation, delivery, checking, correction, coordination and fallback, including peak demand, competing uses and unavailable periods. |
+| evidence and fallback | Evidence of availability for this use, how a failure would be recognized, and a feasible fallback or safe stop. If something is missing, identify its effect and what would allow the work to resume. |
 
-One person or tool may supply several contributions, but each keeps its own competence, workload, and constraints. Several providers may jointly supply one result, but their interfaces and the person responsible for the final judgement remain explicit. A catalogue, contract, platform account, or calendar slot is evidence input; none establishes every contribution by itself.
+One provider may supply several contributions. Check competence, workload and constraints for each. If several providers supply one result, establish how they exchange their contributions and who is responsible for any required final judgement. Establish that the designated judge or body has the necessary authority. Use contracts, accounts and calendar entries for the conditions they actually establish.
 
 #### HCD.7:4.3 - Test Competence, Access, Timing, and Capacity
 
-For each contribution:
+Use current applicable evidence for each required contribution. Where it leaves a condition open, establish that condition or return the resulting limit.
 
-1. **Check competence and scope.** Obtain evidence suitable for the task and consequence. Familiarity with content, teaching ability, domain judgement, facilitation, and independent assessment are not interchangeable.
-2. **Check authority and independence.** State who may provide feedback, access confidential data, change a project, judge a protected criterion, authorize a retry, or make the later decision. A helpful participant is not automatically the authorized assessor.
-3. **Check actual access.** Verify source edition or data, credentials, project permission, environment, tool or model availability, interface, and accessibility during the required window.
-4. **Check total and peak capacity.** Include preparation, learner contact, review, correction, coordination, disputes, fallback, and competing work. Test the busiest window and the promised feedback interval, not only the total.
-5. **Check handoffs and fallback.** Make the next provider, due time, result form, and failure signal visible. A fallback is feasible only when its competence, access, capacity, and authority also fit.
-6. **Return exact gaps.** If a contribution is unavailable, state the blocked practice or evidence use, current supported design, safe interim boundary, and retry condition. Use HCD.8 when obtaining or building that contribution must be compared; a build decision is not a prerequisite to that comparison.
+1. **Check competence and scope.** Match the evidence to the task and its consequences. Determine whether it establishes the needed subject knowledge, teaching, facilitation, judgement or assessment skill.
+2. **Check authority and independence.** Establish who may act where the work requires permission or independence, for example to access confidential data, change a project, assess a protected error, authorize a retry or make a later decision. A participant can supply a required assessment when their competence, independence and authority fit it.
+3. **Check access for the use.** Establish which edition, data, credentials, permission, environment, tool or model, interface and accessibility conditions the task needs and whether they will be available during its window. A credential can be valid while the learner still cannot reach the intended data.
+4. **Check total and peak capacity.** Include the work of preparation, delivery, review, correction, coordination, disputes and fallback, along with competing work. Compare demand with availability in the busiest interval and across the promised feedback window.
+5. **Check handoffs and fallback.** For each needed handoff, identify its provider, recipient, due time, usable result and failure signal. Judge a fallback on its competence, access, capacity, authority and availability when the primary route fails.
+6. **Return remaining gaps.** If a contribution is unavailable, identify the practice or evidence use it limits and what can still be done. If a later attempt is relevant, state what would justify it. Identify any safe way to continue in the meantime. Use HCD.8 when the task calls for comparing ways to obtain or build the missing contribution, or for putting a selected route into operation.
 
-An enabled arrangement can be small: one learner, one task, a source, a teacher feedback window, an assessor, and a fallback. It need not establish a complete institutional service when the bounded use needs less.
+An arrangement for one learner might need a task, a source, a feedback window and qualified checking. Include a fallback or safe stop that fits the use. Use only as much of an institutional service as the bounded activity requires.
 
 #### HCD.7:4.4 - Arrange AI and Tool Support without Attribution Drift
 
-For each AI or tool use, state:
+For each AI or tool use, establish the following conditions where they affect the activity or the conclusion drawn from it.
 
-- the exact permitted contribution, such as search, example generation, calculation, drafting, critique, translation, or accessibility support;
+- the permitted contribution, such as search, example generation, calculation, drafting, critique, translation, or accessibility support;
 - the data and confidentiality boundary, model or tool condition when it changes risk, and prohibited uses;
-- the human action that remains, including selection, source verification, assumption and calculation checks, error challenge, explanation, judgement, or authorization;
-- time for prompting, checking, correction, escalation, and recording support actually received;
+- the work the person still needs to do, such as selecting an approach, verifying sources, checking calculations or assumptions, challenging an error, explaining a conclusion or authorizing use;
+- the time needed for prompting, checks, correction and escalation, and for recording received help where the result depends on it;
 - a fallback for outage, unsafe output, incompatible data, or unacceptable uncertainty; and
-- which practice or evidence uses require a changed-support or unassisted attempt.
+- the practice or evidence questions that require observing the person with changed support or without a specified aid.
 
-AI access can improve equipped performance without establishing human learning. A no-AI observation answers only the bounded contribution and conditions it was designed to expose. HCD.10 selects a justified support change; HCD.11–HCD.13 interpret the resulting evidence.
+AI access can improve performance under the equipped conditions. Establishing that the person learned requires evidence about their performance over time under specified conditions. An observation without AI can establish the person’s contribution under the conditions examined. HCD.10 helps select a justified change to support. HCD.11–HCD.13 interpret the resulting evidence.
 
 #### HCD.7:4.5 - Keep Peer, Teacher, Assessor, and Specialist Work Distinct
 
 Peers can expose alternative reasoning, rehearse feedback, notice a question, and help a learner prepare a revision. Those contributions can reduce avoidable teacher burden. A peer can supply a required teacher or assessor contribution only when they meet the competence, calibration, independence, authority and protected-error requirements for that work.
 
-A teacher may explain and coach while another assessor judges the independent result. A specialist may supply a bounded domain fact without teaching the whole task. An organization may enable project access without becoming the capability holder. State each contribution and handoff rather than turning all participants into one generic support role.
+A teacher may coach while another assessor judges the independent result. A specialist may establish a domain fact, and an organization may grant access to the project. Connect those contributions where they depend on each other. Evidence about the learner’s capability must concern the learner’s own performance.
 
 #### HCD.7:4.6 - Return the Arrangement or Exact Missing Contribution
 
-An HCD.7 result contains:
+Return enough of the following information to establish what use is supported and what remains open.
 
 | Result position | Required content |
 | --- | --- |
-| arrangement boundary | Human holder or learner class, programme or practice, later-Work target, participation, calendar, evidence uses, protected conditions, and receiving decision. |
-| contribution allocation | Every required learner, reference, tool, AI, peer, teacher, assessor, specialist, environment, organization, and fallback contribution. |
-| provider basis | Supplier, competence, scope, authority, independence, access, data boundary, timing, capacity, peak load, and evidence of availability for each contribution. |
+| arrangement boundary | The person or class, programme or practice, later work, participation basis, calendar, evidence use, protected conditions and receiving question or decision. |
+| contribution allocation | Each contribution the use needs, the provider or source that supplies it, and its recipient. Include fallback where the use requires one. |
+| provider basis | The supplier, competence and authority for this work, any required independence, access or data limits, and evidence that capacity will be available within the needed window and at peak demand. |
 | human checking and attribution | Consequential AI or tool outputs, required human checks, checking capacity, and the distinction among joint, supported, and independent performance. |
-| coordination and fallback | Handoffs, deadlines, failure signals, dispute path, and feasible fallback conditions. |
+| coordination and fallback | Required handoffs, deadlines and failure signals, with a feasible fallback or a safe stop. Identify a way to resolve disagreements where the work needs one. |
 | disposition | `enabled development arrangement`, `supported design with exact missing contribution`, or `class arrangement awaiting personal fit`. |
-| continuation | Practice start condition, personal-fit input, HCD.8 obtain-or-build question, provider return, schedule or capacity change, or smallest condition that reopens the arrangement. |
+| continuation | What can start, any outstanding personal-fit or provider question, and the smallest change in schedule, capacity or another condition that would warrant reconsideration. Use HCD.8 for a needed obtain-or-build comparison or for the selected route. |
 
-Call the arrangement enabled only when every contribution needed for the bounded start and evidence use has a supported provider, access route, capacity window, and fallback or safe stop. A missing later optional contribution need not block an earlier independent result; state its reach rather than declaring the whole design impossible.
+Call the arrangement enabled when the contributions required for the specified start and evidence use have suitable providers, access and capacity within the necessary windows, with a feasible fallback or safe stop. Identify which later use an unavailable contribution affects. An earlier independent task can proceed where its own conditions hold.
 
 #### HCD.7:4.7 - Recognition and Assurance
 
-**Recognition.** Use HCD.7 when a plan says “a teacher will support,” “peers will review,” “the platform provides feedback,” or “AI will help,” but the concrete contribution, recipient, timing, capacity, human check, or fallback is still unclear.
+**Recognition.** Use HCD.7 when a promise of teaching, peer review, platform feedback or AI help leaves open what the recipient can obtain in time, who can supply it, what it costs to check and what can be done if it fails.
 
-**Assurance.** Stronger reliance needs contribution-specific competence and authority, actual access during the required window, total and peak capacity, privacy and safety conditions, feasible handoffs and fallback, and evidence appropriate to the protected result. Service operation, provider competence, learning, transfer, and retention remain separate conclusions.
+**Assurance.** Match the evidence to the consequence of relying on the arrangement. Establish competence, authority, access, total and peak capacity, viable handoffs, privacy, safety and fallback or a safe stop where they matter. Evidence that the service operated, that the provider was competent, that the person learned, and that a change persisted or transferred each concerns a distinct claim.
 
 #### HCD.7:4.8 - What Changes in Practice
 
-A practitioner stops asking, “Do we have a teacher and an AI tool?” and asks, “Which exact contribution must reach which learner or task, who can supply it under these data and authority conditions, does capacity fit the critical window, what human checking remains, and what happens when it fails?” Missing support becomes a named result, not a surprise during practice.
+Identify which contribution must reach which learner or task, who can supply it under the applicable data and authority conditions, whether capacity fits the critical window and which human checks or fallback are required. If support is missing, name the use it prevents or limits.
 
 ### HCD.7:5 - Archetypal Grounding
 
@@ -151,29 +151,29 @@ A practitioner stops asking, “Do we have a teacher and an AI tool?” and asks
 
 The FoundationsProgramme class design has twelve participants, thirty-two ordinary weeks, and two final weeks. An ordinary week allocates 1.5 teacher hours to group review, 3 hours to checking twelve short results, 1 hour to case and source preparation, and 1 hour to individual difficulties and assessment calibration: 6.5 hours. Each final week requires 16 hours, including individual reading, conversations, subgroup review, calibration, repeat checks, and a small delay or disagreement reserve.
 
-The total is `32 × 6.5 + 2 × 16 = 240` teacher hours. Dividing by twelve gives a costing allocation of 20 hours per participant; it does not promise twenty individual-contact hours. The arrangement is enabled only if the two sixteen-hour peaks are reserved and ordinary feedback can arrive before the next two-week block.
+The total is `32 × 6.5 + 2 × 16 = 240` teacher hours. The costing allocation is 20 hours per participant. Individual-contact time depends on the scheduled work. For the arrangement to be enabled, both sixteen-hour peaks must be reserved and ordinary feedback must be deliverable before the next two-week block.
 
-With twenty-four participants, the original checking and conversation rows no longer fit. A single larger group meeting supplies no additional individual review. The supported return is to double the relevant checking capacity, divide the group with competent providers, reduce or redesign the promised contribution, or delay launch. HCD.7 does not call the larger class enabled merely because 240 total hours still appear in a budget.
+With twenty-four participants, the original checking and conversation windows no longer fit. A larger group meeting leaves individual review capacity unchanged. The larger class needs more individual checking capacity, a division among competent providers, a revised promise or a later launch. Compare the feasible remedies if a choice is needed. The 240-hour total alone leaves the larger class unsupported.
 
 #### HCD.7:5.2 - Supply Both Sides of Peer Learning and the Required Assessment
 
 Participants learn to judge whether a diagnostic recommendation follows from its evidence and to revise their own work. A peer compares two permitted observation-to-conclusion fragments, identifies the relevant condition and writes a grounded comment. The author explains why to use or reject the comment, then makes the warranted revision. HCD.24 develops this bilateral exchange. The reviewer's judgement and the author's response are learning contributions even when no teacher time is saved.
 
-Allocate accessible cases, criterion preparation, the peer's reading and judgement, the author's response and correction, and a qualified dispute window before the next block. If peers agree on an unsupported cause, a prepared teacher resolves the narrow subject question and returns its ground to both sides; each then performs the affected action again. Record the supplied help. A learner's comment does not become an independent protected-error judgement merely because it is useful.
+Provide accessible cases, preparation in the criteria and time for the peer to read and judge the work and for the author to respond and make any warranted correction. Reserve a qualified dispute window before the next block. If peers endorse an unsupported cause, a prepared teacher establishes the relevant domain ground and gives it to both. Each then repeats the affected action. Record the help each participant received so the practice account and any later assessment can use it.
 
-The teacher or designated assessor still applies the target-domain criteria to the consequential assessment result. Peer preparation can reduce search and coordination burden, while the amount saved remains to be observed. Keeping the learning purpose and the required assessor contribution distinct prevents one from silently replacing the other.
+For the consequential assessment, the teacher or designated assessor applies the domain criteria. Peer preparation may reduce search and coordination work. Establish the size of any saving from the work performed. The peer exchange has its own learning purpose.
 
-For a final attempt, the arrangement separately allocates reading, an individual conversation, possible correction, and a calibrated repeat check. If the named teacher is unavailable, a prepared colleague with compatible competence and access can be the fallback; otherwise the final week moves. A calendar placeholder or unprepared substitute is not a fallback.
+For the final attempt, allocate time for reading, the individual conversation and any needed correction and calibrated repeat check. A prepared colleague can replace an unavailable teacher if their competence, authority, access and time fit this assessment. Otherwise the final week moves.
 
 #### HCD.7:5.3 - AI Search and Critique with Human Checking
 
 AI may search public sources, propose examples, calculate, draft, or critique within the permitted data boundary. The learner first states the question and acceptable-result condition, then checks decisive sources, assumptions, configuration, and calculations and explains why the selected Method applies. A human assessor retains the final protected-error judgement.
 
-The capacity account includes preparation of permitted prompts, checking consequential output, correcting failures, and a path for closed project data that cannot be sent to the tool. A narrow changed-support task can make one human contribution visible, but ordinary AI-supported work remains legitimate when the later-Work configuration includes it. Neither access nor fluent output establishes learning.
+Include the time to prepare permitted prompts, check consequential output, correct failures and use a route that keeps closed project data out of the tool. Keep AI help when it forms part of the intended later work. A task with one specified aid removed may show a contribution that is hard to isolate there. Use observations suited to a learning claim.
 
 #### HCD.7:5.4 - Project Access Missing before Practice
 
-A learner and teacher are available, but the planned workplace task requires project data and permission for a small safe trial that the organization has not granted. The arrangement returns the exact data, authorization, owner, affected task, and retry condition. A stipulated teaching case can preserve an earlier practice use, but it cannot be reported as the workplace result. HCD.8 can compare obtaining an alternative contribution with building an environment or provider capability when that exact gap must be closed for the selected practice.
+The learner and teacher are available, but the learner lacks access to the required project data and permission for the workplace trial. Identify each missing input, who can supply it, the affected task and its condition for starting. A stipulated teaching case can support the earlier exercise. Report its result under those conditions. If the workplace use still needs another provider or environment, HCD.8 can help compare obtaining the contribution with building it.
 
 #### HCD.7:5.5 - Prepare Mentor Help before Counting It as Capacity
 
@@ -181,23 +181,23 @@ Two prospective mentors will help groups compare rival diagnostic explanations. 
 
 For the pump case, an AI suggestion asks the learner to take a fresh pressure reading. The mentor must notice that this variant already supplies the reading and allows no further worthwhile observation. They reject that suggestion, use the qualified reference to ask about the pressure implication, and leave the model-selection operation with the learner. If the subject implication itself is unresolved, the mentor returns that exact question rather than improvising a criterion.
 
-This is an application of §4.4's existing human-check arrangement. Access to the suggestion tool adds no qualified mentor until the person can select, adapt or reject its output in the actual task. Reserve preparation, checking, live help and fallback separately. For example, two thirty-minute mentor preparation attempts and forty minutes of teacher comparison allocate 100 provider-minutes before live delivery. Include those minutes once in the product's fixed preparation; count live windows and subsequent maintenance where they actually fall.
+Count a mentor as available for this work only when there is evidence that they can select, adapt or reject the tool’s suggestion in the task, as required by §4.4. Reserve time for preparation, checking, live help and fallback. Two thirty-minute mentor attempts and forty minutes of teacher comparison require 100 provider-minutes before delivery. Include that work once in fixed preparation and include live support and maintenance in their own windows.
 
-[Tutor CoPilot, November 2025 revision](https://edworkingpapers.com/sites/default/files/ai24_1054_v2.pdf) supplies a bounded example of tutor-facing suggestions built from expert reasoning with human selection and editing. Its paid professional tutors received training; the study does not establish that unprepared volunteers can replace them, nor that exit-ticket effects show distant transfer or independent tutor learning. Its tool price is not a complete support cost. The diagnostic preparation above is an authored application, not that study's observed result.
+[Tutor CoPilot, November 2025 revision](https://edworkingpapers.com/sites/default/files/ai24_1054_v2.pdf) describes tutor-facing suggestions based on expert reasoning that trained, paid professional tutors could select or edit. Substituting unprepared volunteers would require separate evidence. Exit-ticket results do not establish distant transfer or the tutors’ independent learning. The study’s tool price covers only part of support cost. The mentor preparation above applies these distinctions to a constructed diagnostic task.
 
 #### HCD.7:5.6 - One Learner Can Start with Available Feedback
 
 In this fictional case, a learner has agreed to practise making a catalogue record from a supplied photograph and its metadata. The selected task uses anonymized dataset D2 and rubric R3; one protected error is inventing a date when the supplied information requires an "unknown" entry. The learner may use the rubric and write the practice record on paper or in the practice folder. The teacher is authorized to give formative feedback and check this error, and has already judged two representative records correctly against R3 within the required checking time.
 
-The learner has reserved 09:00–09:40. The teacher has confirmed eight minutes before 09:00 to prepare the task, verify D2/R3 compatibility and access, and confirm the appointments; five minutes at 09:10–09:15 for feedback on the first record; seven minutes at 09:25–09:32 to check the correction; and five minutes at 09:32–09:37 for a question, further correction or rescheduling. The full teacher allocation is `8 + 5 + 7 + 5 = 25` minutes, with no competing work in those slots. The learner makes the first record at 09:00–09:10, receives feedback, then revises it at 09:15–09:25; the checking and reserve also fit the learner's window.
+The learner has reserved 09:00–09:40 for the attempt and correction. The teacher has reserved eight minutes before 09:00 to prepare the task, verify that D2 fits rubric R3, check access and confirm the appointments. Feedback is scheduled for 09:10–09:15, checking the correction for 09:25–09:32, and questions, correction or rescheduling for 09:32–09:37. Those periods require `8 + 5 + 7 + 5 = 25` teacher minutes and have no competing work. The learner can make the first record from 09:00 to 09:10 and revise it after feedback from 09:15 to 09:25.
 
-Both can open the specified materials, and permitted printed copies have been checked for the same content. Those copies preserve access if the folder fails. If the teacher misses the feedback slot, the learner saves the first record and reschedules feedback and correction; access to R3 alone does not complete that cycle.
+Both participants can open the materials. Printed copies permitted for this use have the same checked content and provide access if the folder fails. If the teacher misses the feedback slot, the learner can save the first record and reschedule feedback and correction. R3 supplies the assessment criterion. Completing the cycle also requires the feedback and correction.
 
-The result is an **enabled development arrangement for this one supported attempt and correction**. D2 and R3 remain the data and criteria being used; the teacher supplies feedback and checking. No additional provider preparation is currently needed. The practice has not yet occurred, and later independent assessment would need its own arrangement.
+The arrangement is enabled for one supported attempt and correction using D2 and R3, with the teacher supplying feedback and checking. The available evidence already qualifies the teacher for this work. The attempt is still prospective. A later independent assessment would need support matched to that use.
 
 ### HCD.7:6 - Bias-Annotation
 
-Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: arranging actually available provider, access, tool, AI, environment, and human-check contributions for bounded capability-development use.
+Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. The comparison concerns support a specified development use can obtain.
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
@@ -207,23 +207,23 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: arranging a
 | peer-substitution bias | Peer participation replaces independent or competent assessment. | State the peer's learning and support contributions and retain the required assessor result. |
 | access-by-account bias | A login, licence, or repository membership is treated as usable access. | Verify data, permissions, interface, timing, accessibility, and task compatibility. |
 | class-average bias | A class arrangement is assumed suitable for every participant. | Recheck personal task, participation, access, support, and accommodation conditions. |
-| nominal-fallback bias | An unprepared substitute or delayed source is called resilient capacity. | Test the fallback against the same competence, access, timing, and authority positions. |
-| supported-capability bias | Equipped output or supervised participation becomes a human capability claim. | Preserve support conditions and route stronger evidence to HCD.11–HCD.13. |
+| nominal-fallback bias | An unprepared substitute or delayed source is called resilient capacity. | Test the fallback against the competence, access, timing and authority the fallback use requires. |
+| supported-capability bias | Equipped output or supervised participation becomes a human capability claim. | Record what support was received. For a stronger claim, use HCD.11–HCD.13 or suitable existing evidence under the relevant conditions. |
 
 ### HCD.7:7 - Conformance Checklist
 
-- [ ] The human holder or learner class, participation basis, programme or practice, later-Work target, calendar, evidence uses, and receiving decision are explicit.
+- [ ] Identify the learner or class, participation basis, programme or practice, later-work target, calendar, evidence use and receiving question or decision.
 - [ ] Every required explanation, preparation, access, feedback, checking, assessment, specialist, coordination, environment, and fallback contribution is identifiable with its recipient and conditions.
-- [ ] Provider competence, scope, authority, and independence are supported for the exact contribution rather than inferred from a role label.
+- [ ] Evidence establishes competence, scope, authority and any required independence for the particular contribution.
 - [ ] Data, source, project, tool, AI, interface, privacy, confidentiality, accessibility, safety, legal, and organizational conditions are explicit where material.
-- [ ] Total capacity includes preparation, delivery, review, correction, coordination, disagreement, fallback, and competing work.
-- [ ] Peak periods, concurrency, feedback deadlines, and handoff times fit the actual provider windows.
-- [ ] Peer, teacher, assessor, specialist, organization, source, tool, and AI contributions remain distinct.
+- [ ] The capacity estimate includes the time needed for preparation, delivery, review, correction, coordination, resolving disagreements and fallback, together with competing demands.
+- [ ] Compare peak demand, concurrency, feedback deadlines and handoffs with provider availability in the relevant windows. Identify any demand the windows cannot cover.
+- [ ] Distinguish the functions needed from learners, providers, sources and tools, including who must make any independent judgement.
 - [ ] AI and tool contributions state permitted work, prohibited data or use, human checks, checking capacity, attribution, and fallback.
-- [ ] Intended help, permitted help, actual availability, received help, joint performance, and independent performance are not conflated.
+- [ ] Identify the help intended, permitted, available and received as needed for each claim about the arrangement or performance. For a performance claim, distinguish what the learner did jointly with another provider, what they did using permitted support and what they did independently.
 - [ ] A fallback satisfies the same relevant competence, access, capacity, timing, and authority conditions or is reported as unavailable.
 - [ ] A class-level arrangement retains personal-fit and participation questions for the named learner.
-- [ ] The disposition says which bounded use can start and returns each exact missing contribution without claiming provider creation, service operation, learning, transfer, or retention.
+- [ ] State which use can start and the effect of each missing contribution. For a claim about later service, learning, transfer or retention, establish what happened under the relevant conditions.
 
 ### HCD.7:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -236,41 +236,41 @@ Lenses: **Gov**, **Arch**, **Onto/Epist**, **Prag**, **Did**. Scope: arranging a
 | “AI saves the teacher's time” | Prompting, checking, correction, data limits, and escalations are omitted. | Compare the complete human-plus-tool workload and preserve consequential judgement. |
 | “A licence means access” | Credentials can coexist with missing data, permission, interface, or usable timing. | Test access for the actual task and window. |
 | “Supervised participation proves capability” | Participation, entrusted access, and supported output answer different questions. | Record the support configuration and obtain the applicable performance evidence. |
-| “We should train every provider” | Existing qualified contributions are ignored. | Use available qualified contributions; for an exact missing contribution, compare obtaining it with building it. |
+| “We should train every provider” | Existing qualified contributions are ignored. | Use a suitable qualified contribution already available. For a missing contribution that the practice needs, compare obtaining it with building it. |
 
 ### HCD.7:9 - Consequences
 
-The practitioner gains a launch boundary grounded in real contributions rather than names or totals. Capacity bottlenecks, data restrictions, assessment independence, AI checking, and fallback become visible early enough to redesign the arrangement or return a precise missing result.
+The practitioner can state which use can start, identify an uncovered peak, data restriction, assessment requirement, checking burden or fallback, and decide whether to revise the arrangement or report the remaining gap.
 
-The cost is service-level detail. Provider competence, access, schedules, peak loads, handoffs, and privacy conditions must be checked, and some attractive programme designs will remain disabled. A class design may still need personal adaptation, and an enabled arrangement still supplies no evidence that learning occurred.
+Establishing competence, access, peak demand, handoffs and privacy conditions has a cost. Some designs remain infeasible. A class arrangement may still need to be adapted for a person. To establish learning, compare the person’s performance across suitable occasions and account for the help they received.
 
 ### HCD.7:10 - Rationale
 
-Development support is a configuration of contributions. Its feasibility depends on the relation among task, provider, recipient, timing, access, capacity, and consequence. Provider names and aggregate resources erase those relations and make substitution look easier than it is.
+Feasibility depends on whether the required contribution can reach its recipient from a capable, authorized provider within the available time and capacity, under the applicable access and consequence limits. A title and an aggregate budget do not establish all those relations.
 
-Separating intended, permitted, available, and received help protects both design and evidence. Explicit human checking prevents automation from hiding labour or reallocating consequential judgement without notice. A precise missing-contribution return gives HCD.8 or another owner a real obtain-or-build question instead of a generic demand for more support.
+Distinguishing intended, permitted, available and received help supports design and later interpretation. Budgeting the necessary human checks makes their workload and authority visible. If a missing contribution is still needed, a precise account lets the practitioner compare obtaining it with building it, or seek a particular result from the responsible source.
 
 ### HCD.7:11 - SoTA-Echoing
 
-The working question is: **How should a practitioner establish that the people, access, tools, AI, and other support needed by a development use are actually available at the required competence, time, capacity, and consequence boundary?**
+**Which evidence shows that a developmental activity can obtain the support it needs within its time, capacity and authority limits?**
 
-The selected best-known line treats support as a configuration of distinct provider, access, coordination, and checking contributions rather than as a provider label. Brooks and colleagues' 2024 qualitative study of learning-health-system communities ([`SOC-05`](https://doi.org/10.1002/lrh2.10412)) makes people, platform, facilitation, leadership, and resource contributions separately visible; it supplies arrangement questions, not a causal capability effect. Matsuo and Tsukube's 2020 cognitive-apprenticeship review ([`SOC-02`](https://doi.org/10.1016/j.ijme.2020.100417)) supports distinguishing modelling, coaching, scaffolding, articulation, reflection, and exploration while leaving their sequence and workplace transfer conditional. HCD.7 adapts those contributions into the allocation and service tests in §§4.2–4.5.
+Brooks and colleagues’ 2024 qualitative study of learning-health-system communities ([`SOC-05`](https://doi.org/10.1002/lrh2.10412)) identifies distinct contributions from participants, platforms, facilitation, leadership and resources. Its qualitative findings help identify arrangement conditions. A claim that the arrangement caused capability development needs separate evidence. Matsuo and Tsukube’s 2020 cognitive-apprenticeship review ([`SOC-02`](https://doi.org/10.1016/j.ijme.2020.100417)) distinguishes modelling, coaching, scaffolding, articulation, reflection and exploration. Their sequence and transfer to a workplace depend on the particular use. Sections 4.2–4.5 apply those distinctions when allocating contributions and checking proposed service.
 
-The serious ordinary alternative is label-and-total planning: name a teacher, mentor, community, apprenticeship, or platform, total the available hours, and assume the functions will be supplied. It is cheaper to plan, but it hides competence, individual work, peak load, access, privacy, assessment independence, and fallback. HCD.7 rejects the provider label and aggregate total as sufficiency evidence while retaining them as inputs to a complete contribution account.
+A provider title and total hours are cheap to obtain and can contribute to planning. They leave distinct questions about competence, individual work, peak load, access, privacy, assessment independence and fallback. Examine the conditions that the receiving use needs and the initial information leaves open.
 
-Tullis, Goldstone, and Hanson's 2015 experiment ([`COG-11`](https://doi.org/10.1080/00222895.2015.1008686)) is direct limit evidence that assistance improving practice can impair later unassisted performance and that support scheduling matters in its laboratory motor task; it does not prescribe a universal fading schedule or occupational arrangement. Wiese, Kilty, and Bennett's 2018 clinical realist synthesis ([`SOC-03`](https://doi.org/10.1111/medu.13655)) shows that supervised participation and graduated access depend on task risk, trust, learner position, and service pressure; its clinical governance does not transfer wholesale. Dell’Acqua and colleagues' bounded field experiment ([`AI-03`](https://doi.org/10.1287/orsc.2025.21838)) supports independent error challenge under specific task and model conditions, not a stable universal AI frontier. These limits produce the support-state, human-check, and changed-support boundaries in §§4.3–4.7.
+Tullis, Goldstone and Hanson’s 2015 motor-task experiment ([`COG-11`](https://doi.org/10.1080/00222895.2015.1008686)) found that the timing of assistance mattered and that better assisted practice performance could be followed by poorer unassisted performance. Select help or fading from the demands of the actual work. Wiese, Kilty and Bennett’s 2018 clinical realist synthesis ([`SOC-03`](https://doi.org/10.1111/medu.13655)) relates supervised participation and graduated access to task risk, trust, learner position and service pressure. Other settings need their own governance conditions. Dell’Acqua and colleagues’ field experiment ([`AI-03`](https://doi.org/10.1287/orsc.2025.21838)) supports independent error checking under the tasks and model conditions examined. Sections 4.3–4.7 use these findings to distinguish support conditions, human checks and observations with changed support.
 
-The selected line costs more coordination than naming providers and adding hours, but it preserves the exact result, peak feasibility, authority, privacy, human judgement, and fallback that the cheaper plan loses. Reopen it when a provider, task, capacity window, access rule, AI condition, evidence use, or serious source changes, or when a lower-effort arrangement test preserves the same decision-bearing values.
+Checking contributions in their required windows can cost more than planning from provider names and totals. Its value lies in the competence, timing, authority, privacy, checking and fallback questions it resolves. Revisit the affected part if a task, provider, capacity window, access rule, AI condition, evidence use or source changes its grounds. A lower-effort check can suffice if it establishes those conditions.
 
 ### HCD.7:12 - Relations
 
-- **`HCD.2`:** supplies intended contribution and access allocations for programme candidates; HCD.7 establishes what is actually available.
+- **`HCD.2`** identifies the contributions and access proposed by a programme candidate. HCD.7 establishes which are available for the intended use and where a proposed contribution still lacks support.
 - **`HCD.5`:** supplies Method-specific provider, support, task, risk, and evidence needs.
 - **`HCD.6`:** supplies task materials, permitted help, criteria, feedback opportunities, and domain-provider requirements.
-- **`HCD.8`:** receives an exact unavailable provider, environment, assessment, or support contribution for obtain-or-build comparison and the preparation or operating test actually needed. Already established usable contributions can be arranged directly through HCD.7.
+- **`HCD.8`** compares obtaining or building a required contribution still unavailable from the provider or environment. It helps arrange any needed preparation and establish performance where the intended use requires it. HCD.7 can use an existing qualified contribution directly.
 - **`HCD.9`:** uses the enabled arrangement and records help actually received, feedback delivered, corrections, and provider failures during practice.
 - **`HCD.10`:** may change support across practice episodes for a stated development or evidence purpose; the revised arrangement must remain feasible.
-- **`HCD.11`–`HCD.13`:** interpret supported, independent, transferred, delayed, and changed-support performance; availability alone establishes none of them.
+- **`HCD.11`–`HCD.13`** help interpret evidence of supported or independent performance, transfer, retention and changes in support. HCD.7 supplies the availability conditions relevant to those claims.
 - **`HCD.14`:** may revise only the affected support assumption or programme component from compatible evidence.
 - **Learning-product practices:** can specify concrete materials, interactions, and schedules; publication or access does not establish provider competence or service operation.
 - **Organization, operations, platform, privacy, safety, legal, clinical, employment, accessibility, provider, and target-domain practices:** retain their own capacity, authority, competence, data, risk, and correctness decisions.

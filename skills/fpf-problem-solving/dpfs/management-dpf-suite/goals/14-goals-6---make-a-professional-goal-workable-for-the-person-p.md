@@ -7,7 +7,7 @@
 
 **Use this when** a person wants or is expected to pursue a professional goal, yet adopting it, beginning, continuing or changing course remains difficult. The object is that person's goal pursuit under actual work and participation conditions. The result is an intelligible and feasible next action, support arrangement or revised aim.
 
-The method concerns professional and work-related learning aims. Clinical treatment and a general diagnosis of personality require other qualified practice. An established routine that already works needs no additional personal-goal programme.
+The method concerns professional and work-related learning aims. Clinical treatment and a general diagnosis of personality require other qualified practice. An established routine that works needs no additional personal-goal programme.
 
 ### GOALS.6:2 - Problem
 
@@ -33,13 +33,13 @@ For a learning goal, state the later task, conditions, allowed assistance and ev
 
 #### GOALS.6:4.3 - Bridge an adopted intention to suitable action
 
-When the person accepts the goal and the difficulty is acting on a suitable intention, an implementation intention can connect a recognizable situation to an instrumental response: “When the review request arrives, I will identify the claim and its evidence before proposing a verdict.” Choose a cue that can be noticed and a response that can actually help. Rehearse or clarify the connection if needed. Revisit it when conditions require another response. Gollwitzer and Sheeran's planning review supports this conditional human strategy; it does not supply missing competence, means or a reason to adopt the goal.
+When the person accepts the goal and the difficulty is acting on a suitable intention, an implementation intention can connect a recognizable situation to an instrumental response: “When the review request arrives, I will identify the claim and its evidence before proposing a verdict.” Choose a cue that can be noticed and a response that can help. Rehearse or clarify the connection if needed. Revisit it when conditions require another response. Gollwitzer and Sheeran's planning review supports this conditional human strategy; it does not supply missing competence, means or a reason to adopt the goal.
 
 Use a simpler arrangement when adequate: a ready work space, an agreed protected interval, a direct reminder or an existing routine may answer the difficulty. The choice follows the observed problem and the person's feasible conditions. Keep the next action small enough to be performed but large enough to make a useful contribution; a tiny activity that avoids the hard operation is no substitute for it.
 
 #### GOALS.6:4.4 - Reconcile competing aims and adjust deliberately
 
-Compare the relevant goals together, including current obligations, recovery and unfinished learning. Ask whether they compete for the same time, attention or opportunity, or whether one action can genuinely serve several. A shared action can reduce duplicate effort while the result claims remain distinct. Use GOALS.3 for joint organizational consequences and HCD.2:4.2a for concurrent learning.
+Compare the relevant goals together, including current obligations, recovery and unfinished learning. Ask whether they compete for the same time, attention or opportunity, or whether one action can serve several. A shared action can reduce duplicate effort while the result claims remain distinct. Use GOALS.3 for joint organizational consequences and HCD.2:4.2a for concurrent learning.
 
 When pursuit becomes less worthwhile or feasible, consider a change of means, a narrower next contribution, a pause or relinquishing the goal. Distinguish the specific target from the wider purpose it serves. Ending one route can preserve another; persisting can remain justified when the purpose and available way still warrant it. Include the remaining opportunity costs and the person's values. Use GOALS.4 to make any affected commitments and continuation explicit.
 
@@ -75,7 +75,7 @@ People differ in purpose, constraints, available help and the cost of disclosure
 
 ### GOALS.6:9 - Consequences
 
-The person obtains a feasible way to proceed or a justified change in the undertaking. The arrangement may use assistance, learning or a different performer. It can improve practical clarity without establishing a measured psychological or learning effect.
+The person obtains a feasible way to proceed or a justified change in the undertaking. The arrangement can clarify what to do next and may involve assistance, learning or a different performer.
 
 ### GOALS.6:10 - Architectural Rationale
 

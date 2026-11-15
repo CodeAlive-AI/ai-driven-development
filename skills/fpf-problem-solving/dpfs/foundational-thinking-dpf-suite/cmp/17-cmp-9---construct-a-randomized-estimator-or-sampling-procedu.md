@@ -12,7 +12,7 @@ The algorithm must connect those operations to the requested distribution or sta
 
 The gain is an effective sampler or estimator with its target, bias and dependence understood sufficiently for the receiving use. The reader needs elementary probability, expectations and the stated computational access. The method applies to discrete choices, data streams, simulation and learned procedures; a physical noise source is one possible realization.
 
-Use a direct deterministic computation or an already suitable sampler when it meets the need affordably. Choosing a probability model for observations is a separate modeling task, supplied by MMP.7 when applicable. This method can also sample a mathematically specified set without making any empirical-population claim.
+Use a direct deterministic computation or an already suitable sampler when it meets the need affordably. Choosing a probability model for observations is a separate modeling task, supplied by MMP.7 when applicable. The target can also be a mathematically specified set.
 
 ### CMP.9:2 - Problem
 
@@ -49,7 +49,7 @@ Start with a random primitive whose assumptions are explicit, such as independen
 
 For a finite categorical law with known probabilities, a cumulative-probability partition can transform a uniform draw. When generating a uniform integer from b bits for a range of size m, simply taking the remainder can bias the result unless m divides `2^b`. One repair accepts only bit values below `floor(2^b/m)*m`, then takes their remainder; rejected draws are repeated. Choosing `2^b≥m` makes this an effective rejection construction with acceptance greater than one half.
 
-For a stream, maintain a distributional invariant that survives one new record; :5.1 derives such an update. For a proposal distribution q different from p, either correct the output distribution through an acceptance rule or correct the estimated contribution through weights. Derive which of those results the procedure actually returns.
+For a stream, maintain a distributional invariant that survives one new record; :5.1 derives such an update. For a proposal distribution q different from p, either correct the output distribution through an acceptance rule or correct the estimated contribution through weights. Derive which of those results the procedure returns.
 
 When direct draws are unavailable, a transition rule can maintain a desired stationary law. Construct the transition probabilities and the condition that preserves that law. Reachability, convergence from the start and correlations remain additional algorithmic questions; :5.3 shows why an uncorrected neighbor walk can target the wrong distribution.
 
@@ -73,7 +73,7 @@ Select the error statement that changes the receiving decision. For independent 
 
 `P(|mean Y_i-μ|≥e)≤2*exp(-2*n*e²/(b-a)²)`
 
-at a fixed n chosen independently of their observed values. Thus `n≥(b-a)²*log(2/δ)/(2*e²)` suffices for error at most e with failure probability at most δ. The range and independence assumptions belong to this particular bound.
+at a fixed n chosen independently of their observed values. Thus `n≥(b-a)²*log(2/δ)/(2*e²)` suffices for error at most e with failure probability at most δ. The range and independence assumptions belong to this bound.
 
 If results are inspected to choose the stopping time, use a compatible sequential bound. A simple conservative construction assigns `δ_n=δ/(n*(n+1))` and applies a fixed-n bound at each n with that failure budget. Since the budgets sum to δ, all resulting intervals cover simultaneously with probability at least `1-δ`. Stop when the current interval settles the question. More efficient confidence-sequence methods can replace this construction under their stated hypotheses.
 
@@ -81,11 +81,11 @@ Generating more draws is one possible improvement. A better proposal, stratifica
 
 #### CMP.9:4.5 - Return the useful result and identify what a change invalidates
 
-Return the sample or estimate with the target and qualification its recipient needs. Distinguish samples without replacement, independent repeated draws, correlated states and weighted observations. A retained seed can support replay; uncertainty across repetitions needs genuinely distinct random streams under the assumed generator model.
+Return the sample or estimate with the target and qualification its recipient needs. Distinguish samples without replacement, independent repeated draws, correlated states and weighted observations. A retained seed can support replay; uncertainty across repetitions needs distinct random streams under the assumed generator model.
 
 Check a finite case by deriving or enumerating its output probabilities. A frequency experiment can expose an implementation error, but agreement on a small run does not establish a claimed law for every input.
 
-A changed inclusion rule, target statistic, proposal, random source or stopping rule can invalidate a different part of the construction. Revise that part. Preserve already useful samples only with the correction and dependence account that their new use requires.
+A changed inclusion rule, target statistic, proposal, random source or stopping rule can invalidate a different part of the construction. Revise that part. Reuse useful samples only with the correction and dependence account that their new use requires.
 
 ### CMP.9:5 - Archetypal Grounding
 
@@ -123,7 +123,7 @@ For this uniform target, accept an end-to-middle move with probability 1/2 and a
  0   1/2  1/2
 ```
 
-Its rows and columns each sum to one, so the uniform law is stationary. The finite chain is connected and has self-transitions, hence converges from any start. Its other eigenvalues are 1/2 and -1/2; for this small matrix, powers give an explicit decreasing transient. For instance, starting at 0 gives `(1/2,1/2,0)` after one step and `(1/2,1/4,1/4)` after two, still not uniform.
+Its rows and columns each sum to one, so the uniform law is stationary. The finite chain is connected and has self-transitions, hence converges from any start. Its other eigenvalues are 1/2 and -1/2; for this small matrix, powers give an explicit decreasing transient. For instance, starting at 0 gives `(1/2,1/2,0)` after one step and `(1/2,1/4,1/4)` after two, which is not uniform.
 
 If the three target weights change to `(1,2,1)`, the original uncorrected neighbor walk has that stationary law. Reusing the former uniform-target acceptance probabilities would now be wrong. In either case, adjacent states are dependent observations; an independent-draw variance formula cannot be justified by the stationary law alone.
 
@@ -131,7 +131,7 @@ If the three target weights change to `(1,2,1)`, the original uncorrected neighb
 
 A large sample count is an easy proxy for quality. The examples instead inspect the sampling unit, correction and transition law. Their small size permits direct derivation; a large state space may require stronger analysis or a more limited conclusion.
 
-Randomness here is an algorithmic resource. Whether a physical source or pseudorandom generator adequately supplies it depends on the particular claim and environment, including adversarial use.
+Randomness here is an algorithmic resource. Whether a physical source or pseudorandom generator adequately supplies it depends on the claim and environment, including adversarial use.
 
 ### CMP.9:7 - Conformance Checklist
 
@@ -139,7 +139,7 @@ Randomness here is an algorithmic resource. Whether a physical source or pseudor
 - Random primitives and the transformation, invariant or transition law determine the stated output.
 - An estimator includes the needed correction and support condition.
 - Bias, variance, dependence and target-model uncertainty are distinguished where they affect use.
-- Sample effort and stopping support the error claim actually made.
+- Sample effort and stopping support the stated error claim.
 - A changed target or sampling condition has a local consequence for the procedure and its qualification.
 
 ### CMP.9:8 - Common Anti-Patterns and How to Avoid Them
@@ -160,15 +160,15 @@ A valid construction can still be inefficient. Support, weight variability, mixi
 
 ### CMP.9:10 - Architectural Rationale
 
-Sampling and estimation share the construction of an output law but return different things. An estimator can correct biased sampling without turning the retained draws into unweighted samples from the target. A transition can preserve a distribution without supplying independent draws. Keeping these results distinct makes their composition with learning, search and modeling reliable.
+Sampling and estimation share the construction of an output law but return different things. An estimator can correct biased sampling without turning the retained draws into unweighted samples from the target. A transition can preserve a distribution without supplying independent draws. Distinguish these results when using the draws or estimate for learning, search or modeling.
 
 The general method derives probability statements from effective operations. Probability modeling supplies a target where needed; algorithmics supplies how to obtain, transform and use finite draws under resource limits.
 
 ### CMP.9:11 - SoTA-Echoing
 
-How can a stream yield a uniform sample without knowing its length? **Adopt** the invariant-based construction in [Vitter, *Random Sampling with a Reservoir*, §2](https://www.cs.umd.edu/~samir/498/vitter.pdf), specialized to one stored record in :5.1. A two-pass method is simpler when counting and revisiting the input are cheap; reservoir updating removes that access requirement. Vitter also derives skip-based alternatives, so a per-record random decision is not asserted to be the fastest realization. Changed access costs, weighted sampling or a distinct-entity target reopen the choice.
+How can a stream yield a uniform sample without knowing its length? **Adopt** the invariant-based construction in [Vitter, *Random Sampling with a Reservoir*, §2](https://www.cs.umd.edu/~samir/498/vitter.pdf), specialized to one stored record in :5.1. A two-pass method is simpler when counting and revisiting the input are cheap; reservoir updating removes that access requirement. Vitter also derives alternatives that skip records between updates. Changed access costs, weighted sampling or a distinct-entity target reopen the choice.
 
-When useful events are poorly represented by direct draws, **adopt** [Owen's importance-sampling construction, §§9.1–9.3](https://artowen.su.domains/mc/Ch-var-is.pdf), in :4.3 and :5.2: correct the contribution and compare variation together with drawing and weighting cost. Direct sampling remains preferable when a proposed correction costs more than the information it gains or produces unstable weights. A changed integrand, support, normalization or proposal can reverse the selection. The construction does not certify an empirical probability model.
+When useful events are poorly represented by direct draws, **adopt** [Owen's importance-sampling construction, §§9.1–9.3](https://artowen.su.domains/mc/Ch-var-is.pdf), in :4.3 and :5.2: correct the contribution and compare variation together with drawing and weighting cost. Direct sampling remains preferable when a proposed correction costs more than the information it gains or produces unstable weights. A changed integrand, support, normalization or proposal can reverse the selection.
 
 For local state exploration, **adopt** the separation of stationary-law construction and mixing developed in [Levin and Peres, *Markov Chains and Mixing Times*, second edition, chapters 3–4](https://pages.uoregon.edu/dlevin/MARKOV/). Sections :4.2–4.3 and :5.3 retain that distinction instead of treating every random walk as a suitable sampler. Direct draws avoid a transient when available at comparable cost; local transitions are useful when direct generation is expensive and their finite-time behavior is adequate. A changed target, proposal, connectivity or mixing bound reopens that comparison.
 

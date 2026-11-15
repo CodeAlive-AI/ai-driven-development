@@ -21,7 +21,7 @@ Decision makers need a usable comparison that preserves differences in interests
 
 Name the alternatives, receiving service and horizon. Recover the conditions that determine eligibility and their sources. A funding allocation sets a spending limit; a service mandate sets required delivery; engineering evidence supports the proposed functioning. State their different consequences for the choice.
 
-Identify the actual couplings behind a conflict. The same assets can participate in an operating network, a crew schedule, a maintenance programme and a funding decision. Relate their common subjects and dependencies without treating those structures as identical. Use [OPS.11](../ops/43-ops-11---coordinate-interacting-operating-structures.md), [MNT.15](../../engineering-dpf-suite/mnt/26-mnt-15---reconcile-simultaneous-maintenance-operation-and-su.md) or [FPF C.32.MWA](../../../sections/09-part-c---kernel-extension-specifications/82-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) when their specific coordination question is needed.
+Identify what connects the conflicting arrangements. The same assets can participate in an operating network, a crew schedule, a maintenance programme and a funding decision. Relate their common subjects and dependencies without treating those structures as identical. Use [OPS.11](../ops/43-ops-11---coordinate-interacting-operating-structures.md), [MNT.15](../../engineering-dpf-suite/mnt/26-mnt-15---reconcile-simultaneous-maintenance-operation-and-su.md) or [FPF C.32.MWA](../../../sections/09-part-c---kernel-extension-specifications/82-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) when their specific coordination question is needed.
 
 Exclude unsupported alternatives from the eligible comparison or retain them explicitly as conditional proposals. An invalid qualification for D continuation cannot be offset by a low cost. If no option remains, report the unmet service or resource condition and the decision or specialist result that could change it.
 
@@ -31,7 +31,7 @@ When important consequences differ, preserve those differences. An alternative i
 
 Test assumptions that can reverse eligibility or preference. A range, scenario or break-even can be enough. Select additional inquiry by the answer it could change and the work, delay and disruption it requires.
 
-Return the recommendation with its reasons, conditions and remaining conflict. Use [EAM.10](19-eam-10---compare-engineered-asset-portfolio-combinations.md) for a genuine combination decision and [EAM.12](21-eam-12---integrate-specialist-results-for-an-asset-recommend.md) for the requested asset decision or authorization. Stop when sufficient advice has been delivered.
+Return the recommendation with its reasons, conditions and remaining conflict. Use [EAM.10](19-eam-10---compare-engineered-asset-portfolio-combinations.md) when the choice concerns a combination and [EAM.12](21-eam-12---integrate-specialist-results-for-an-asset-recommend.md) for the requested asset decision or authorization. Stop when sufficient advice has been delivered.
 
 ### EAM.9:5 - Archetypal Grounding
 
@@ -39,7 +39,7 @@ For D alone, the constructed five-year present costs are €5.079707 million for
 
 Keeping replacement inputs fixed, continued use becomes equally costly at about €0.669861 million annual cost. A justified range of 0.95–1.05 does not reverse the answer; a credible 0.60 estimate would. The calculation identifies a potentially useful inquiry boundary without giving that lower estimate a probability or treating it as fact.
 
-At the portfolio scope, the same D replacement needs capital that C modification and other work also need. [EAM.10](19-eam-10---compare-engineered-asset-portfolio-combinations.md) compares the whole combinations. The independent D comparison is not wrong; its resource assumption differs from the shared decision.
+At the portfolio scope, the same D replacement needs capital that C modification and other work also need. [EAM.10](19-eam-10---compare-engineered-asset-portfolio-combinations.md) compares the whole combinations. The separate comparison for D assumes that funding is available for either policy.
 
 In a separate constructed choice, three policies are technically supported and affordable. The service mandate permits up to six hours of planned interruption for the same users in the same work window. All three meet that condition; their only material preference differences on the supplied five-year basis are:
 
@@ -63,7 +63,7 @@ Are eligibility conditions separated from preferences? Do the quantities share a
 
 A weighted score that compensates for failed required service admits an ineligible option. Apply the service condition before comparing preferences.
 
-Treating different views as one aligned hierarchy hides shared dependencies. Recover the actual assets, work, resources and decisions that connect them.
+Treating different views as one aligned hierarchy hides shared dependencies. Identify the assets, work, resources and decisions that connect them.
 
 ### EAM.9:9 - Consequences
 

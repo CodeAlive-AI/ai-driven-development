@@ -27,9 +27,9 @@ Recover the conflict as a relation in a particular matter. Identify its conseque
 
 Name the proposed act or decision and the participant's actual contribution: preparing information, negotiating, advising, deliberating, voting or implementing. Recover the duty or participation condition relevant to that contribution. A shareholder, a director and an external adviser need not have the same duties even when they support the same outcome.
 
-Identify the interest or other duty that could affect the contribution. It may involve an economic benefit, a family or business relationship, another appointment, dependence on a participant, or an incentive tied to the outcome. Explain the influence that matters here. Do not infer it solely from a broad label such as “management” or “investor.”
+Identify the interest or other duty involved. It may involve an economic benefit, a family or business relationship, another appointment, dependence on a participant, or an incentive tied to the outcome. Explain how the interest or other duty could influence this contribution.
 
-A conflict can concern the risk of affected judgement before any improper act is shown. Conversely, an allegation of misconduct needs its own basis; identifying a conflict does not prove that allegation.
+A conflict can concern the risk of affected judgement before any improper act is shown. An allegation of misconduct needs evidence of the alleged conduct.
 
 #### CGOV.6:4.2 - Apply the relevant related-party and participation rules
 
@@ -43,9 +43,9 @@ Keep an exemption within its stated scope. An exception from one approval proced
 
 Separate an established relation, a plausible concern and an unresolved factual or legal question. Ask what answer would change participation, the permitted act or reliance on the contribution.
 
-Use a sufficient current declaration or other qualified result without rebuilding a complete interests register. Seek additional information where its attainable contribution justifies the acquisition, interpretation, delay and displaced work, or where a binding condition requires it. A required condition that cannot be established can prevent the dependent act even when further investigation is not worthwhile.
+Use a sufficient current declaration or other qualified result. Seek additional information where its attainable contribution justifies the acquisition, interpretation, delay and displaced work, or where a binding condition requires it. A required condition that cannot be established can prevent the dependent act even when further investigation is not worthwhile.
 
-Where a legal rule itself is uncertain, obtain the relevant qualified interpretation or limit the conclusion. Do not make the uncertainty disappear by assuming either that the participant is harmless or that every participation must stop.
+Where a legal rule itself is uncertain, obtain the relevant qualified interpretation or limit the conclusion.
 
 #### CGOV.6:4.4 - Return the conflict and its consequences
 
@@ -63,13 +63,13 @@ In a constructed company, director Arun owns the business offering a warehouse t
 
 The matter is the company's purchase; Arun's contribution includes influencing and voting on it; the ownership interest concerns the seller's proceeds. That relation triggers the stated handling conditions. There is no need to prove that Arun lied or that the price is unfair before applying them.
 
-The result identifies the interest, required disclosure and participation limits. It does not establish that the purchase is prohibited or approved, nor that a particular price is fair. Those are further questions for the eligible decision makers and relevant specialist methods.
+The result identifies Arun’s interest, the required disclosure and his participation limits. Assessing the price and deciding whether the purchase can go ahead remain for the relevant specialists and eligible decision makers.
 
 #### CGOV.6:5.2 - Competing horizons and a separate incentive
 
 Two directors disagree about retaining cash for investment or distributing it. Both rely on forecasts and claim to be pursuing the corporation's interests. The disagreement alone supports a comparison of alternatives, not a finding that one must leave the decision.
 
-Now add a supplied fact: the director advocating a distribution receives a substantial personal bonus from a different company if this corporation makes a distribution this quarter. That director now has a financial interest in the decision beyond the stated judgement about the corporation's use of cash. Examine the duty and the bonus arrangement under the actual rules. The conflict analysis still leaves the financial merits of retaining or distributing the cash to be assessed.
+Now add a supplied fact: the director advocating a distribution receives a substantial personal bonus from a different company if this corporation makes a distribution this quarter. That director now has a financial interest in the decision beyond the stated judgement about the corporation's use of cash. Examine the duty and the bonus arrangement under the rules governing the director’s interest and duties in this matter. The conflict analysis still leaves the financial merits of retaining or distributing the cash to be assessed.
 
 ### CGOV.6:6 - Bias-Annotation
 
@@ -98,7 +98,7 @@ A conflict account connects a contribution governed by a duty with another inter
 
 The [G20/OECD Principles, II.F](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-5.html) discusses related-party transactions, interest disclosure and varied approval safeguards. It recognizes that these transactions are not intrinsically improper and that legal frameworks can contain specific exceptions.
 
-The method adopts relation-specific recognition and source-specific handling. It does not install OECD recommendations as the corporation's law or treat every competing preference as a legal conflict. An interests register can provide reusable information, but the particular matter still determines which relations and rules apply. A changed definition, transaction, interest or participation condition reopens the corresponding conclusion; the examples' supplied rules remain illustrative.
+Identify the interest and the contribution it could influence, then apply the rules that govern this matter. An interests register can supply relevant facts. If a definition, transaction, interest or participation condition changes, revisit the conclusion that depended on it. The examples assume their rules.
 
 ### CGOV.6:12 - Relations
 

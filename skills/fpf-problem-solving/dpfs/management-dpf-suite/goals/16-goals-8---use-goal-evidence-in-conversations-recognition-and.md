@@ -7,7 +7,7 @@
 
 **Use this when** goal information will support help, reflection, recognition or a decision about a person. The object is that receiving use of evidence and the interaction through which it affects work or the person. The result is useful feedback or recognition, or a properly grounded return to the actual personnel decision.
 
-A routine factual update with an understood use need not become a formal assessment. When the question is already a personnel selection, promotion or pay decision, use HRM's full method; this pattern supplies the goal evidence and the distinctions needed at that connection.
+A routine factual update with an understood use need not become a formal assessment. For a decision about selection, promotion or pay, use HRM's full method; this pattern supplies the goal evidence and the distinctions needed at that connection.
 
 ### GOALS.8:2 - Problem
 
@@ -15,7 +15,7 @@ The same goal score can be used to decide help, discuss progress, recognize a co
 
 ### GOALS.8:3 - Forces
 
-Candid reporting supports useful action while real consequence rules influence what people disclose. Recognition should make valuable contributions visible, including less visible help. Privacy and legitimate personnel use must be intelligible. Timely informal help should remain possible, and consequential decisions need the evidence and authority they actually require.
+Candid reporting supports useful action while real consequence rules influence what people disclose. Recognition should make valuable contributions visible, including less visible help. Privacy and legitimate personnel use must be intelligible. Timely informal help should remain possible, and consequential decisions need evidence and authority appropriate to their effects.
 
 ### GOALS.8:4 - Solution
 
@@ -29,7 +29,7 @@ Recover the actual goal mode, evidence, starting conditions, allocation, changes
 
 Use LDR.1's smallest sufficient working conversation. Begin with the concrete episode and the participant's account. Ask what happened, what they were trying to do, which conditions helped or hindered, and what next contribution would change the work. Supply a clear observation and its consequence rather than an unexplained personality label. The participant can correct factual mistakes or offer another supported explanation.
 
-Agree the next useful action, help and response occasion. The needed contribution may be a clearer assignment, resource decision, subject answer, changed method or learning opportunity. Assign it to someone able to provide it. A manager's advice cannot on its own change another team's commitment or supply a teacher's missing competence. If the conversation already settles the work, end there.
+Agree the next useful action, help and response occasion. The needed contribution may be a clearer assignment, resource decision, subject answer, changed method or learning opportunity. Assign it to someone able to provide it. A manager's advice cannot on its own change another team's commitment or supply a teacher's missing competence. If the conversation settles the work, end there.
 
 For development, distinguish supported practice from performance used for consequential appraisal. Use HCD when the person needs a new capability and agree the use of its observations. Feedback should let the learner change an operation and try again under suitable conditions. A conversation about learning is not evidence that learning occurred.
 
@@ -45,7 +45,7 @@ Goal evidence can inform a personnel decision when its interpretation fits that 
 
 Avoid a direct universal score-to-pay or score-to-promotion conversion. This preserves legitimate use of achievement evidence: a defined, agreed contribution can be relevant under a qualified reward rule. The rule's authority, validity, fairness and actual terms still govern. Obtain the applicable professional and institutional judgement where it is required; this method does not issue an employment or legal determination.
 
-Return the conversation result or qualified input to its receiving owner. Recognition detects an unjustified change of use. Assurance establishes the evidence, permitted use, inference and authority needed for the actual consequence.
+Return the conversation result or qualified input to whoever will use it. Recognition flags an unjustified change of use. For assurance, establish what the evidence supports about the individual, how it may be used and who has authority to act on it for the proposed consequence.
 
 ### GOALS.8:5 - Archetypal Grounding
 
@@ -53,7 +53,7 @@ Two employees have scores of 1.0 and 0.6. The first had a committed goal with es
 
 In a CFR conversation, the second employee's evidence supports discussion of the search quality, the useful finding and the help provided. The team can recognize those contributions and decide what to pursue next. A promotion panel separately asks whether the employee can perform the proposed wider role. HRM.2 receives appropriate evidence, including relevant goal work, but needs the role-specific inference and comparison.
 
-Change the condition: a valid reward arrangement already grants a specified payment for an evidenced contribution, and its terms are met. The separation of CFR and raw scores does not remove that obligation. HRM.3 makes the payment decision and implementation effective under the actual terms.
+Change the condition: a valid reward arrangement grants a specified payment for an evidenced contribution, and its terms are met. The separation of CFR and raw scores does not remove that obligation. Those responsible use HRM.3 to make the payment decision and carry it out under the agreed terms.
 
 ### GOALS.8:6 - Bias-Annotation
 

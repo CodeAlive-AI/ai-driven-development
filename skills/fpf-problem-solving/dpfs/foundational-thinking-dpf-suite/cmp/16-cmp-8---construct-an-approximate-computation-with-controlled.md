@@ -10,7 +10,7 @@
 
 This occurs in discrete optimization, compressed computation, function evaluation and numerical solution. Rounding item values to shorten a dynamic program and discretizing a continuous equation are different instances. The shared difficulty is obtaining a useful finite answer with a warranted relation to the original computational question.
 
-The result is an algorithm, its approximation controls, and an answer accompanied by the error, bound or settled distinction it actually supports. The reader needs to follow the original problem and its comparisons; calculus is required only for a construction that uses it.
+The result is an algorithm, its approximation controls, and an answer accompanied by the error, bound or settled distinction it supports. The reader needs to follow the original problem and its comparisons; calculus is required only for a construction that uses it.
 
 Use an existing adequate algorithm directly when no new approximation choice is needed. A faster procedure that preserves every requested answer may need only a representation or scheduling change. Choosing an approximate description of the subject itself belongs to modeling; this method starts from the computational question that description supplies. CMP.5 develops relaxation and recovery; the present method develops adjustable loss, finite arithmetic and stopping, including constructions that use no relaxation.
 
@@ -51,7 +51,7 @@ Let a parameter control the discarded information. It can be a rounding interval
 
 If the construction changes the feasible set, provide a recovery procedure and its feasibility argument. If it changes only the objective used to select an answer, establish how that selection compares under the original objective. CMP.2 and CMP.3 can construct and schedule the resulting subproblems.
 
-Try the simplest family that can meet the receiving requirement. A parameterized approximation scheme is unnecessary when one cheap direct calculation or an already available bound settles the question.
+Try the simplest family that can meet the receiving requirement. A parameterized approximation scheme is unnecessary when one cheap direct calculation or an available bound settles the question.
 
 #### CMP.8:4.3 - Carry error through the operations actually used
 
@@ -61,7 +61,7 @@ For example, if an intermediate approximation has distance at most e from its ta
 
 For an optimization construction, compare the original objective of the recovered candidate with the original optimum. Follow every inequality in its proper direction. Rounding values can bound objective loss while leaving constraints unchanged; rounding constraint coefficients needs a separate admissibility argument.
 
-When several approximations are composed, carry their bounds through the actual downstream operations. Allocate finer resolution where it changes the final bound most usefully. An unbounded sensitivity or a lost discontinuous distinction can require another formulation rather than further use of the same family.
+When several approximations are composed, carry their bounds through the downstream operations used. Allocate finer resolution where it changes the final bound most usefully. An unbounded sensitivity or a lost discontinuous distinction can require another formulation rather than further use of the same family.
 
 #### CMP.8:4.4 - Include finite arithmetic and the sensitivity of the question
 
@@ -132,7 +132,7 @@ Numerical language can conceal discrete approximation. The subset construction k
 
 - The receiving answer and approximation comparison are stated, including feasibility or a required witness.
 - A finite procedure obtains each selected stage; its loss is related to the original computational target.
-- Composed error follows the operations and comparisons actually used.
+- Composed error follows the operations and comparisons used.
 - Consequential arithmetic error is distinguished from sensitivity to input and from subject-model discrepancy.
 - The stopping or refinement rule has an appropriate warrant and affordable execution.
 - The returned qualification distinguishes a bound, an estimate and an unbounded heuristic.
@@ -163,9 +163,9 @@ Feasibility, accuracy and the receiver's decision are separate obligations becau
 
 How should an approximation become an affordable algorithm with a selected error? **Adopt** the scaling-and-bound construction illustrated in [MIT's advanced algorithms notes on approximation schemes](https://courses.csail.mit.edu/6.854/21/Notes/n20-approx.html): connect rounding loss to the original objective and to the size of the resulting dynamic program. Sections :4.2–4.5 and :5.1 make those connections explicit. A direct unrounded computation is preferable when its state range is already affordable; the scaled construction deliberately accepts a weaker answer in return for a range controlled by ε.
 
-The simple table is not the strongest known knapsack complexity result. [Chen, Lian, Mao and Zhang, version 3](https://arxiv.org/html/2308.07821v3), combine proximity and approximate profit-function composition to obtain a substantially stronger bound. **Adapt** the comparison lesson: retain the transparent table for a small construction or a suitable workload, but reconsider its representation and composition when its `n³/ε` cost becomes limiting. The stronger asymptotic result does not establish an implementation advantage for every small input. A competing scheme meeting the same output requirement at lower total application effort reopens that choice.
+In [version 3 of their paper](https://arxiv.org/html/2308.07821v3), Chen, Lian, Mao and Zhang combine proximity and approximate profit-function composition to obtain a substantially stronger bound. **Adapt** the comparison lesson: retain the transparent table for a small construction or a suitable workload, but reconsider its representation and composition when its `n³/ε` cost becomes limiting. The stronger asymptotic result does not establish an implementation advantage for every small input. A competing scheme meeting the same output requirement at lower total application effort reopens that choice.
 
-For the numerical branch, **adopt** Higham's separation of [conditioning](https://nhigham.com/2020/03/19/what-is-a-condition-number/) and [backward error](https://nhigham.com/2020/03/25/what-is-backward-error/) in :4.4. Compared with increasing arithmetic precision without locating the error, a local stable reformulation can retain the answer with less work; :5.2 derives one such case. Backward error is useful only for the permitted perturbations and with the sensitivity needed by the output. A changed input uncertainty, output operation or arithmetic implementation reopens this numerical choice. These arguments do not rank the adequacy of the subject model.
+For the numerical branch, **adopt** Higham's separation of [conditioning](https://nhigham.com/2020/03/19/what-is-a-condition-number/) and [backward error](https://nhigham.com/2020/03/25/what-is-backward-error/) in :4.4. Compared with increasing arithmetic precision without locating the error, a local stable reformulation can retain the answer with less work; :5.2 derives one such case. Backward error is useful only for the permitted perturbations and with the sensitivity needed by the output. A changed input uncertainty, output operation or arithmetic implementation reopens this numerical choice.
 
 ### CMP.8:12 - Relations
 

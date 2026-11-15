@@ -18,7 +18,7 @@ Use a known applicable bound directly when no new argument is needed. Timing one
 
 How can one establish a minimum amount of computational work without enumerating every possible algorithm, and use the result without extending it beyond the model that made the proof valid?
 
-An algorithm can make adaptive choices, preprocess data, exploit a promise or use randomization. A proof that ignores an allowed operation can forbid a procedure that actually works. A lower bound valid for a comparison model can disappear when keys have an accessible integer encoding.
+An algorithm can make adaptive choices, preprocess data, exploit a promise or use randomization. A proof that ignores an allowed operation can forbid a working procedure. A lower bound valid for a comparison model can disappear when keys have an accessible integer encoding.
 
 ### CMP.11:3 - Forces
 
@@ -59,7 +59,7 @@ Use the form that fits the access:
 - **Counting:** if each observation has at most b possible replies, q observations have at most `b^q` transcripts. If N input classes require mutually different outputs, then `b^q≥N`, giving `q≥log_b N` for a worst-case depth bound.
 - **State or message collision:** with fewer than N distinguishable retained states or messages, two of N necessary input classes collide. A shared continuation then forces an error.
 
-Establish that each constructed transcript is consistent with at least one admitted input. An adversary that combines incompatible answers proves nothing about the actual problem. A counting argument needs output-distinct classes, not merely many syntactically different inputs.
+Establish that each constructed transcript is consistent with at least one admitted input. An adversary that combines incompatible answers proves nothing about the admitted inputs. A counting argument needs output-distinct classes, not merely many syntactically different inputs.
 
 When an algorithm already provides an upper bound in the same model, compare the two. Matching orders of growth can establish asymptotic optimality for that model. A gap locates remaining room for a better construction or a stronger argument; it is not itself proof that the current algorithm is improvable.
 
@@ -71,7 +71,7 @@ One route chooses a distribution on inputs before the random choices. If every d
 
 Another route couples runs on two inputs using the same random choices and bounds how often they see different observations. Section :5.1 applies this directly. A statistical or information inequality can supply a broader version when observation distributions overlap instead of agreeing exactly.
 
-Keep quantum queries or stronger observation primitives outside a classical-query conclusion unless the proof actually covers them. Their admissibility is a model choice, not an implementation detail that can be ignored.
+Keep quantum queries or stronger observation primitives outside a classical-query conclusion unless the proof covers them. Their admissibility is a model choice, not an implementation detail that can be ignored.
 
 #### CMP.11:4.5 - Return the limit with a useful continuation
 
@@ -79,7 +79,7 @@ State the bound, input family, access, error and cost conditions together. Indic
 
 Identify a consequential escape: restrict the input by a defensible promise, allow a weaker answer or error probability, acquire an additional observation, preprocess and retain information, use a stronger primitive, or change the representation. Determine which premise of the lower-bound argument that change removes, then construct the new procedure.
 
-Use C.11.DUA to decide whether proving a tighter bound or obtaining additional information would change the next move. A sufficient lower bound can already justify changing the task.
+Use C.11.DUA to decide whether proving a tighter bound or obtaining additional information would change the next move. A sufficient lower bound can justify changing the task.
 
 ### CMP.11:5 - Archetypal Grounding
 
@@ -95,7 +95,7 @@ Correctness on the singleton requires the left side to be at least `1-δ`, so `p
 
 `q ≥ sum_j p_j ≥ n*(1-2δ)`.
 
-For `δ=1/3`, this gives `q≥n/3`. It is a lower bound under the stated maximum-query convention, not a claim that every randomized algorithm uses exactly that many queries.
+For `δ=1/3`, this gives `q≥n/3`. It applies to the maximum number of queries per run.
 
 Now change the promise: either all bits are zero or at least half are one. Query k independently chosen uniform positions, returning one if any query finds it. On a nonzero promised input, the probability of missing every one is at most `2^-k`; zero inputs always receive the correct answer. For `0<δ<1/2`, choosing `k=ceil(log2(1/δ))` therefore achieves the error requirement independently of n, subject to generating and accessing those positions. For n>2, the singleton inputs used in the earlier bound are excluded. This explains why the new algorithm escapes that growth in cost.
 
@@ -131,8 +131,8 @@ The word “impossible” can obscure the condition that makes a lower bound tru
 | Tempting move | Failure | Useful repair |
 | --- | --- | --- |
 | Generalize from a slow implementation | Another algorithm may avoid its work. | Prove a requirement for every admitted transcript or procedure. |
-| Count distinct inputs without considering acceptable answers | Several inputs may legitimately share one output. | Count output-distinct classes. |
-| Supply an inconsistent adversary | No actual input could produce its replies. | Retain a nonempty compatible input family. |
+| Count distinct inputs without considering acceptable answers | Several inputs may share one output. | Count output-distinct classes. |
+| Supply an inconsistent adversary | No admitted input could produce its replies. | Retain a nonempty compatible input family. |
 | Fix randomness, then choose a different hard input for each seed | This can miss a successful randomized algorithm. | Use one prior input distribution or a valid coupled argument. |
 | Ignore input-dependent preprocessing or stronger access | The algorithm already acquired the supposedly missing information. | Charge or expose that resource and restate the model. |
 
@@ -146,7 +146,7 @@ The conclusion is conditional. It can remain correct while a new representation,
 
 Lower bounds complement construction by studying what a successful construction must distinguish. Transcript-based reasoning handles entire classes of algorithms because identical observed information forces identical deterministic behavior, or bounds the separation of randomized behavior.
 
-The access model belongs in the claim because it determines the observations available. This connects computational complexity to representation and mathematical argument while avoiding an unsupported claim about every possible physical or organizational realization.
+The access model belongs in the claim because it determines the observations available. This connects computational complexity to representation and mathematical argument.
 
 ### CMP.11:11 - SoTA-Echoing
 

@@ -4,7 +4,7 @@
 
 Use this framework when a control design must reconcile what can be observed in time, what the controller must remember, how decisions are divided, which commands remain feasible, and what the implementation can execute. It helps construct and compare those arrangements for an engineered dynamical system, including the choice to keep one sufficient controller.
 
-The quantitative methods principally cover sampled linear models with bounded uncertainty and specified feedback-law candidates. The planning-and-feedback branch also states a separate conditional continuous-time error-bound construction. This is a bounded practice within control engineering; identification, unrestricted controller synthesis and physical qualification require their own methods.
+The quantitative methods principally cover sampled linear models with bounded uncertainty and specified feedback-law candidates. The planning-and-feedback branch also gives a continuous-time error-bound construction under its own conditions. The framework covers this part of control engineering. Identification, unrestricted controller synthesis and physical qualification require their own methods.
 
 # Table of Contents
 
@@ -41,7 +41,7 @@ The quantitative methods principally cover sampled linear models with bounded un
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | --- | --- | --- | --- | --- |
 | B.1 | [CAD.1 - Derive a Control Decomposition from the Whole Problem](11-cad-1---derive-a-control-decomposition-from-the-whole-proble.md) | Stable | Control decomposition; information; horizon; computational burden. “Should these decisions be separated?” | Uses C.39 and MMP.9; CAD.2 develops the selected exchange; CAD.4 compares whole candidates. |
-| B.2 | [CAD.2 - Construct the Planning and Feedback Interface](12-cad-2---construct-the-planning-and-feedback-interface.md) | Stable | Reference meaning; state reconstruction; sample-and-hold; reset; tracking dynamics. “What does the lower loop actually receive?” | Uses the selected decomposition and MMP.18; CAD.5:4.7 supplies the estimate-based branch. |
+| B.2 | [CAD.2 - Construct the Planning and Feedback Interface](12-cad-2---construct-the-planning-and-feedback-interface.md) | Stable | Reference meaning; state reconstruction; sample-and-hold; reset; tracking dynamics. “What does the lower loop receive?” | Uses the selected decomposition and MMP.18; CAD.5:4.7 supplies the estimate-based branch. |
 | B.3 | [CAD.3 - Construct a Jointly Admissible Command Domain](13-cad-3---construct-a-jointly-admissible-command-domain.md) | Stable | Invariant error; input reserve; constraint tightening; continuation. “Which commands can remain feasible?” | Uses CAD.2's connected dynamics; CAD.5:4.7 when state is estimated; returns to CAD.1 or CAD.2 on incompatibility. |
 | B.4 | [CAD.4 - Co-design and Realize the Whole Control Architecture](14-cad-4---co-design-and-realize-the-whole-control-architecture.md) | Stable | Model order; gains; rates; deadlines; whole-candidate comparison. “Which feasible arrangement should be realized?” | Receives applicable CAD.1–CAD.3 and CAD.5 results; uses MMP.22; supplies the broader SYSE.6 decision. |
 
@@ -61,7 +61,7 @@ Within FPF Library, **CAD** is the reference code and document identifier for th
 | A stable controller cannot follow the requested command within state or actuator limits | A jointly admissible command/error domain with continuation, or a specific incompatibility | [CAD.3](13-cad-3---construct-a-jointly-admissible-command-domain.md) |
 | A more accurate model, faster planner or extra sensor competes for limited resources | A comparison of complete feasible arrangements and the conditions of their realization | [CAD.4](14-cad-4---co-design-and-realize-the-whole-control-architecture.md) |
 
-An engineer can use CAD.5 without introducing a planner or multiple layers. An engineer with a qualified lower loop can retain it and change command admission. If a current complete observation and a simple controller already meet the task, they remain a serious stopping alternative. Read the [Architectural Reference](_index.md#control-architecture-design-architectural-reference) when several results must fit together or a change reopens their conditions.
+You can use CAD.5 without adding a planner or splitting control into layers. If the lower loop is qualified, you can retain it and change command admission. If a current, complete observation and a simple controller meet the task, you can keep them and stop there. Read the [Architectural Reference](_index.md#control-architecture-design-architectural-reference) when several results must fit together or a change reopens their conditions.
 
 The intended reader can work with state-space models, feedback laws, bounded sets and elementary optimization. A reader who lacks those means needs instruction or a qualified control-engineering contributor. The examples are mathematical constructions. Before relying on a physical installation, establish its model, uncertainty and execution premises.
 

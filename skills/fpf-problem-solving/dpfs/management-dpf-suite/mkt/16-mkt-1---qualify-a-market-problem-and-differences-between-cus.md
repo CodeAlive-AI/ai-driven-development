@@ -5,15 +5,15 @@
 
 ### MKT.1:1 - Problem frame
 
-Use this pattern when a team must decide whose difficulty to address, which customers can reasonably receive the same offer, or whether an apparent market opportunity warrants further work. Start with a concrete activity and the people whose conditions can change the offer. A list of organisations or a demographic description is useful only insofar as it helps locate those conditions.
+Use this pattern when a team must decide whose difficulty to address, which customers can reasonably receive the same offer, or whether an apparent market opportunity warrants further work. Start with a concrete activity and the participants whose circumstances can change the offer. A list of organisations or a demographic description is useful only insofar as it helps locate those conditions.
 
 The first useful result is a bounded market hypothesis: a worthwhile customer difficulty, the relevant roles and circumstances, consequential differences between cases, and a justified next commercial move or inquiry. It can support a small offer test without claiming the size or permanence of a market.
 
-The intended reader knows the subject service or product and can obtain qualified accounts of customer work and feasible supply. No prior command of segmentation terminology is required. If the difficulty is already understood for a known customer and a suitable offer exists, proceed directly to adapting the offer or arranging acquisition. Reconstructing an entire market would add no useful answer.
+The intended reader knows the subject service or product and can obtain qualified accounts of customer work and feasible supply. If the difficulty is already understood for a known customer and a suitable offer exists, proceed directly to adapting the offer or arranging acquisition.
 
 ### MKT.1:2 - Problem
 
-“The customer” can name a legal organisation, the person doing the work, a purchaser, a payer or an access authority. Treating them as one actor can produce an attractive offer that nobody can use or obtain. Grouping customers by an easy-to-find attribute can conceal the difference that determines usefulness; dividing every person into a unique group can make a reusable offer impossible.
+“The customer” can name a legal organisation, whoever does the work, a purchaser, a payer or an access authority. Treating them as one actor can produce an attractive offer that nobody can use or obtain. Grouping customers by an easy-to-find attribute can conceal the difference that determines usefulness; dividing every person into a unique group can make a reusable offer impossible.
 
 Qualify the difficulty and group cases only around differences that change a useful decision. Keep the grounds and limits of that grouping available when selecting customers, constructing an offer or revising the market hypothesis.
 
@@ -33,17 +33,17 @@ Qualify the difficulty and group cases only around differences that change a use
 
 Name the activity, the inadequate or unavailable result, the circumstances in which it matters and what presently happens instead. Use an actual account or an explicitly proposed case. “Need our platform” is a proposed answer. “A reporting operator must re-enter the same permitted data before the deadline” is a difficulty whose remedy remains open.
 
-Ask what would make addressing it worthwhile and for whom. Consider the result, transition effort, continuing burden and effects on people who do not make the purchasing decision. Use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/112-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) when the worthwhile problem or proposed contribution itself remains unresolved. It can return a supported problem, an attributed value claim, a hypothesis or rejection. Marketing must preserve that strength instead of treating every lead as established demand.
+Ask what would make addressing it worthwhile and for whom. Consider the result, transition effort, continuing burden and effects on people who do not make the purchasing decision. Use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/112-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) when the worthwhile problem or proposed contribution remains unresolved. It can return a supported problem, an attributed value claim, a hypothesis or rejection. Marketing must preserve that strength instead of treating every lead as established demand.
 
 The scope must be large enough to retain the result and small enough to investigate. Separate performing the underlying work from finding and acquiring a means to perform it. A purchasing obstacle can coexist with a well-served operational activity; an urgent operational need can coexist with no attainable purchase.
 
 #### MKT.1:4.2 - Recover the roles and the alternatives available to each
 
-Identify the people or groups that perform, choose, pay, permit, maintain and are materially affected. Record only distinctions that change the present question. One person may perform several roles. One organisation may contain several independent opportunities; its name is not a single goal or purchasing state.
+Identify who does the work, chooses, pays, gives permission or maintains the offering, and who is materially affected. Record only distinctions that change the present question. One person may perform several roles. One organisation may contain several independent opportunities; its name is not a single goal or purchasing state.
 
 For each consequential role, ask what useful result or protection matters, what effort or exposure it would accept, what it can decide, and what it would do without this proposal. Verify an attributed authority when the next action relies on it. A friendly contact may supply insight while having no ability to commit a budget or permit access.
 
-Compare feasible alternatives, including continuing the present way, using internal assistance, another supplier, a smaller change or deferring the task. This exposes the relevant competition for the proposed contribution. An internally impressive capability is commercially irrelevant if the people can obtain the needed result more suitably elsewhere.
+Compare feasible alternatives, including continuing the present way, using internal assistance, another supplier, a smaller change or deferring the task. This exposes the relevant competition for the proposed contribution. An internally impressive capability is commercially irrelevant if the customer can obtain the needed result on better terms or under more suitable conditions elsewhere.
 
 Use [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) for the missing answer. Its result-investigation route can establish differences in desired execution outcomes; its choice-history route can explain a particular transition. Keep each result's activity coverage, uncertainty and population limits. When an unresolved omitted outcome could change the proposed grouping or contribution, obtain that answer or narrow the target hypothesis before relying on the comparison.
 
@@ -53,7 +53,7 @@ Place concrete cases side by side. Ask whether the same contribution would addre
 
 Propose a group in terms that make inclusion and exclusion intelligible. For example, “teams using compatible files for a periodic report, with permission for a bounded export and an operator available to inspect it” gives a testable use boundary. “Mid-sized innovative organisations” may help locate candidates but does not supply those conditions.
 
-Look for a nearby case that would break the shared offer. If a similar organisation needs continuous integration rather than a periodic file exchange, decide whether it needs a different variant, a separate target group or no current offer. Do not widen the original group's meaning to retain every attractive lead. Conversely, a different industry need not require another group when the action-changing conditions really match.
+Look for a nearby case that would break the shared offer. If a similar organisation needs continuous integration rather than a periodic file exchange, decide whether it needs a different variant, a separate target group or no current offer. Do not widen the original group's meaning to retain every attractive lead. Conversely, a different industry need not require another group when the conditions that affect the offer match.
 
 Keep the observed cases, the hypothesis about a wider group and the estimate of its extent separate. A handful of cases can justify the next limited test while leaving the latter two uncertain. Larger population, pricing or investment decisions may require a different inquiry. A statistical cluster also needs an interpretable difference that a real offer or action can address.
 
@@ -61,7 +61,7 @@ Keep the observed cases, the hypothesis about a wider group and the estimate of 
 
 Compare plausible groups under the same intended investment and horizon. Ask how important and poorly served the result appears, how the relevant people can be reached, which alternative must be improved upon, whether the contribution can be supplied, and what learning or preparation it needs. Include the cost of discovering and serving the group as well as attracting it.
 
-A material unknown is a reason for a bounded inquiry when its answer could change the choice. Where criteria conflict, state the trade-off: a small reachable group may be preferable for a trial, while a larger group with unresolved delivery conditions remains a later hypothesis. Do not hide a necessary condition inside an average score.
+A material unknown is a reason for a bounded inquiry when the answer could change the choice or show how far the evidence supports the target hypothesis. Where criteria conflict, state the trade-off: a small reachable group may be preferable for a trial, while a larger group with unresolved delivery conditions remains a later hypothesis. Do not hide a necessary condition inside an average score.
 
 Choose the next move supported by the comparison:
 
@@ -71,11 +71,11 @@ Choose the next move supported by the comparison:
 - retain the lead as a hypothesis with a return condition; or
 - stop because the relevant problem, attainable improvement or commercial contribution is not supported.
 
-There is no obligation to maximise the number of groups or pursue every worthwhile difficulty. Respect an existing adequate solution when further differentiation would not change the action.
+A worthwhile difficulty can remain outside the offer. If the customer already has an adequate solution and finer distinctions would change neither the proposed action nor its grounds, the market comparison can end there.
 
 #### MKT.1:4.5 - Carry the hypothesis into an offer and keep its conditions live
 
-Give [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) the relevant roles, activity, contribution, actual alternatives, inclusion conditions and uncertainties. That method constructs the specific offer and positioning. Give [MKT.4](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md) the separate buying or transition difficulty rather than assuming that operational usefulness makes acquisition easy.
+Give [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) the relevant roles, activity, contribution, available alternatives, inclusion conditions and uncertainties. That method constructs the specific offer and positioning. Give [MKT.4](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md) the separate buying or transition difficulty rather than assuming that operational usefulness makes acquisition easy.
 
 For example, the working result can say: “For teams with compatible periodic exports and an available reviewer, a bounded file-mapping trial could reduce duplicate entry. Access approval and the customer's purchasing window remain separate conditions. Continuous integration cases need another supply arrangement. The next move is to verify those conditions with two candidate teams before quoting the trial.”
 
@@ -103,7 +103,7 @@ In a consumer repair service, one person may choose, pay and use the result. The
 
 A successful reference customer can become an unjustified model for everyone. Inspect both the conditions that enabled the success and a nearby case that lacks them. A sales database also contains the people the organisation happened to reach; it need not represent those who stayed with another solution or could not get access.
 
-Descriptive categories can become stereotypes when inferred characteristics replace actual evidence. Use a category to locate a question, and confirm the condition before relying on it for a consequential individual offer.
+Descriptive categories can become stereotypes when inferred characteristics stand in for evidence about the individual case. Use a category to locate a question, and confirm the condition before relying on it for a consequential individual offer.
 
 ### MKT.1:7 - Conformance Checklist
 
@@ -112,7 +112,7 @@ Descriptive categories can become stereotypes when inferred characteristics repl
 - Grouping has an intelligible use condition and an exclusion or revision case.
 - Observed cases, a wider group hypothesis and a population estimate retain different evidence strength.
 - Target choice includes reachability, supply and full relevant burden under a declared horizon.
-- The result gives an offer, inquiry, supplier request, qualified deferral or stop a usable starting point.
+- The result gives a practical basis for the next offer, inquiry, supplier request, deferral or decision to stop.
 
 ### MKT.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -135,9 +135,9 @@ Grouping is conditional reuse: it permits a common starting contribution while p
 
 ### MKT.1:11 - SoTA-Echoing
 
-For finding distinctions that change an offer, **adapt** [Strategyn's public ODI account](https://strategyn.com/outcome-driven-innovation/): executor, activity and differing poorly served results can reveal groups that a product list or demographic label conceals. Its useful contribution is the question-relative grouping in §4.3. The serious lighter alternative is an existing descriptive segment that already locates the decisive conditions. Retain that simpler grouping when it works; the additional inquiry must change selection or supply. Do not adopt permanent segment stability, exhaustive need coverage or a supplier's success rates. Reopen when the proposed common offer fails in a consequential included case.
+For finding distinctions that change an offer, **adapt** [Strategyn's public ODI account](https://strategyn.com/outcome-driven-innovation/): executor, activity and differing poorly served results can reveal groups that a product list or demographic label conceals. Its useful contribution is the question-relative grouping in §4.3. A less costly alternative is an existing descriptive segment that already locates the decisive conditions. Retain that simpler grouping when it works; additional inquiry is worthwhile when it could improve selection, supply, or the grounds for treating these cases alike. Do not adopt permanent segment stability, exhaustive need coverage or a supplier's success rates. Reopen when the proposed common offer fails in a consequential included case.
 
-For qualifying the underlying opportunity, **adopt** C.40.PC's distinction between a supported problem, value claim and unconfirmed hypothesis, and **adapt** the comparison in [ECO.3](../../eco/13-eco-3---discover-an-exchange-between-different-plans.md) with each party's alternative. These developed internal treatments improve §§4.1–4.4 over assuming that one favourable contact establishes an organisation's demand. They preserve modest ordinary accounts while making an unsupported commercial leap visible; they do not supply market prevalence.
+For qualifying the underlying opportunity, **adopt** C.40.PC's distinction between a supported problem, value claim and unconfirmed hypothesis, and **adapt** the comparison in [ECO.3](../../eco/13-eco-3---discover-an-exchange-between-different-plans.md) with each party's alternative. In §§4.1–4.4 this lets a practitioner use one contact’s account for the customer situation it describes. An inference about the organisation’s demand or the prevalence of the problem needs evidence at that scope.
 
 ### MKT.1:12 - Relations
 

@@ -6,9 +6,9 @@
 
 ### FIN.15:0 - Use this when
 
-A permitted cash payment, borrowing, short-term investment, distribution or hedge action must now be carried out. Select the actual available execution and verify its effect. A material change in the decision's conditions returns to the relevant comparison instead of being silently absorbed into execution.
+A permitted cash payment, borrowing, short-term investment, distribution or hedge action must now be carried out. Choose an available route and verify what it achieves. If an execution condition materially changes the financial choice, return it to the responsible decision maker.
 
-An established mandate and adequate transaction details can support routine execution without a new financial recommendation. Use the fuller Solution for an unfamiliar route, changed funding or access condition, uncertain effect or recovery. A settled effect already supported by adequate evidence needs no second reconstruction.
+An established mandate and adequate transaction details can support routine execution without a new financial recommendation. Use the fuller Solution for an unfamiliar route, changed funding or access condition, uncertain effect or recovery. You can use an established outcome directly, including a confirmed rejection or cancellation.
 
 ### FIN.15:1 - Problem frame
 
@@ -28,7 +28,7 @@ Complete the action in time while preserving authorization, account and settleme
 2. Confirm funds, drawable capacity or deliverable assets and the actual provider's timing. Where provider choice matters, compare access, service reliability and cutoff times, fees and concentration across available providers. For short-term investment, derive the amount and latest useful return date from the cash plan; compare preservation of principal, liquidity, credit concentration, custody, fees and return within the permitted mandate.
 3. Apply the controls relevant to the transaction: validated counterparty and beneficiary, trusted change verification, separation of initiation and approval where required, secure access and applicable account or signatory limits. A provider message alone does not amend those controls.
 4. Execute through the permitted route with the actual price, amount, currency, settlement date and reference terms. If terms leave the authorized bounds or remove the financial rationale, return the changed choice before committing.
-5. Inspect provider confirmations and the actual resulting balances, positions or settlement evidence. Reconcile amount, fees, date and counterparty; prevent duplication when an instruction is pending or its outcome is uncertain.
+5. Inspect provider confirmations and the resulting balances, positions or settlement evidence. Reconcile amount, fees, date and counterparty; prevent duplication when an instruction is pending or its outcome is uncertain.
 6. Resolve a failed or partial execution through the provider's supported recovery and the relevant decision authority. State what changed, what remains owed and the next funded action. Use [FDM.4][FDM] where the effect of a posting or settlement is disputed.
 
 
@@ -74,7 +74,7 @@ Then compare actual permitted instruments and providers. Distinguish contractual
 
 Compare net return on the same principal, dates and risk grounds, including custody, transaction charges, withdrawal penalties and funding consequences. Evaluate concentration with other balances and claims on that provider. An otherwise attractive new deposit may put both the corporation's operating payment access and most of its cash at the same point of failure. The remedy can be a different feasible provider or retained liquidity, subject to actual access and mandate.
 
-The output for a routine placement is therefore an executable amount, instrument, counterparty, maturity or withdrawal arrangement and accepted conditions. Reopen the financial choice when a new term would change the intended preservation, liquidity or risk of the cash.
+For a routine placement, identify the amount you can invest, the instrument and counterparty, and when and on what terms you can withdraw the money or recover it at maturity. Check that the placement can be made on acceptable terms. Reopen the financial choice when a new term would change the intended preservation, liquidity or risk of the cash.
 
 
 
@@ -83,7 +83,7 @@ The output for a routine placement is therefore an executable amount, instrument
 
 Validate beneficiary and account details through the trusted process appropriate to the action, especially after a change. A request arriving through the same compromised correspondence as the original instruction does not independently verify a new account. Recover the authorized source, use the established independent contact or authenticated provider route where required, and retain the result with the transaction. Urgency can explain the deadline; it does not establish identity or expand authority.
 
-Apply separation of duties, access restrictions and approval limits that govern this transaction. The person initiating a payment, altering settlement details and confirming its result should not be able to defeat required checks merely by performing all three steps. Use the existing arrangement suited to the corporation's size and exposure. If a required actor or route is unavailable, use the authorized alternative or return the execution constraint.
+Apply separation of duties, access restrictions and approval limits that govern this transaction. Where an independent check is required, the actor who initiates the payment or changes its settlement details must be unable to satisfy that check by confirming their own action. Use the existing arrangement suited to the corporation's size and exposure. If a required actor or route is unavailable, use the authorized alternative or return the execution constraint.
 
 Check the economic terms as well as the account fields. A correct beneficiary with the wrong currency, quantity, date or option exercise instruction can still change the financial result. An option can expire unused while its model assumes exercise. A deposit can renew automatically while the cash plan assumes return of principal. Identify the actual notices and choices the contract requires and arrange their performance within the applicable authority.
 
@@ -109,7 +109,7 @@ Reconcile discrepancies while their consequence can still be limited. A differen
 #### FIN.15:4.6 - Recover an exception without creating another obligation by accident
 
 
-When the result is uncertain, establish the status of the existing instruction through the provider's supported trace or inquiry. Keep the original transaction identity available. A timeout at the client interface does not prove that the provider failed to receive or execute it. Likewise, requesting cancellation does not establish cancellation. Retrying or substituting a route while the original can still complete may duplicate the payment or trade.
+When the result is uncertain, establish the status of the existing instruction through the provider's supported trace or inquiry. Keep the original transaction identity available. A timeout at the client interface does not prove that the provider failed to receive or execute it. A cancellation request can also be pending. Retrying or substituting a route while the original can still complete may duplicate the payment or trade.
 
 For a known partial result, derive the remaining position under the agreement. Separate principal paid, fees, collateral and amounts applied elsewhere. FDM.4's payment and collateral cases show why the same debit can support different remaining obligations. Fund and authorize the remaining action using that supported result. A provider's accepted amendment may be appropriate; a fresh instruction for the original total may not be.
 
@@ -144,7 +144,7 @@ Now suppose a further payment of 30 previously due on day 31 is brought forward 
 
 For the same 40 under the notice alternative, give notice on day 19 before the deadline and withdraw on day 20 before paying. Net proceeds are 40 + 0.20 × 20 / 30 − 0.05 = 40.0833, rounded to four decimals. After the payment, total usable cash is 20 + 40.0833 − 30 = 30.0833. Retaining the 40 in the payment account would leave 30. The timely notice placement earns a positive net return while preserving the reserve; the fixed placement of 40 is infeasible on these revised grounds.
 
-The instruction deadline is consequential. If notice can only be given after the day-19 cutoff and proceeds arrive on day 21, that withdrawal cannot fund the day-20 payment. Retain sufficient usable cash, change the placement amount or obtain a separately feasible funding response. If the fixed placement was already made before the forecast changed, comparing alternatives does not release it: FIN.2 must establish a funded response under its actual terms. FIN.15 performs and verifies the resulting placement, notice or withdrawal within the existing authority.
+The instruction deadline is consequential. If notice can only be given after the day-19 cutoff and proceeds arrive on day 21, that withdrawal cannot fund the day-20 payment. Retain sufficient usable cash, change the placement amount or obtain a separately feasible funding response. If the fixed placement was already made before the forecast changed, comparing alternatives does not release it: FIN.2 must establish a funded response under its actual terms. Use FIN.15 to carry out and verify the authorized placement, notice or withdrawal.
 
 
 
@@ -156,10 +156,10 @@ Continue the earlier physical-forward case. The customer has paid 60 foreign uni
 | Established event | Home cash after the event | Foreign cash after the event | Remaining relevant duty or claim |
 | --- | ---: | ---: | --- |
 | Customer receipt already available; before draw | 20 | 60 | Forward delivery 100; customer still owes 40 |
-| Facility actually funds 18 | 38 | 60 | Facility repayment 18.50; forward delivery 100 |
-| Spot purchase actually pays 38 and delivers 40 | 0 | 100 | Facility repayment 18.50; forward delivery 100 |
-| Physical forward actually exchanges 100 for 90 | 90 | 0 | Facility repayment 18.50; customer still owes 40 |
-| Facility repayment actually settles | 71.50 | 0 | Customer still owes 40 |
+| Facility funds 18 | 38 | 60 | Facility repayment 18.50; forward delivery 100 |
+| Spot purchase pays 38 and delivers 40 | 0 | 100 | Facility repayment 18.50; forward delivery 100 |
+| Physical forward exchanges 100 for 90 | 90 | 0 | Facility repayment 18.50; customer still owes 40 |
+| Facility repayment settles | 71.50 | 0 | Customer still owes 40 |
 
 The net increase in home cash is 71.50 − 20 = 51.50. It equals the earlier transaction contribution of 52 less the finance cost 0.50. The closing balance is not 52, because opening cash and the financing movements also pass through the account. The customer claim is unaffected by settling the separate forward and facility.
 
@@ -211,7 +211,7 @@ The method ends in the financial effect needed by the corporation. Keeping instr
 
 ### FIN.15:11 - SoTA-Echoing
 
-The [AFP treasury task specification][AFP] supplies execution, provider, cash and control responsibilities. [FDM.4][FDM] supplies the distinction between instructions and actual financial effects. FIN.15 combines them around the required settlement result; it rejects submission as sufficient evidence of payment and reopens when actual terms exceed the permitted choice.
+The [AFP treasury task specification][AFP] supplies execution, provider, cash and control responsibilities. [FDM.4][FDM] supplies the distinction between instructions and actual financial effects. FIN.15 uses both to verify the settlement the corporation needs. Submission establishes that an instruction was sent. Before committing, reconsider terms that defeat the financial purpose or exceed the mandate. Use existing authority for a revised choice within its scope and refer any other decision to the authorized party.
 
 The [FX Global Code, December 2024][FX-CODE], Principles 35 and 42–55, develops settlement-risk reduction, confirmation, authenticated settlement details, funding and reconciliation for wholesale FX. FIN.15 connects those concerns to the corporation's actual receiving result and FDM.4's effect interpretation. Use the applicable legal conditions, actual provider access and settlement evidence for the corporation's execution. Recheck the affected execution when service or contract conditions change.
 

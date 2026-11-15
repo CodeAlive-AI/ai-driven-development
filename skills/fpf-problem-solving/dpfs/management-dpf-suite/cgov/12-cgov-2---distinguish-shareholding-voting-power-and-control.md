@@ -13,7 +13,7 @@ Begin with the relevant holders and the rights attached to their interests. A cu
 
 A capitalization table shows holdings but may hide different voting rights, nominee arrangements, class consent, voting agreements or indirect influence. Multiplying ownership percentages through a group can describe one economic interest while misdescribing the ability to determine a decision.
 
-“Control” is particularly easy to overstate. The ability to block a reserved transaction, elect some directors, determine a shareholder resolution and direct another person's conduct are different claims. A finding under an accounting, takeover or beneficial-ownership rule may answer only that rule's question.
+“Control” is easy to overstate. The ability to block a reserved transaction, elect some directors, determine a shareholder resolution and direct another person's conduct are different claims. A finding under an accounting, takeover or beneficial-ownership rule may answer only that rule's question.
 
 ### CGOV.2:3 - Forces
 
@@ -31,7 +31,7 @@ For a legally defined control question, use that rule's criteria. For a practica
 
 Identify the relevant interests, their holders and the terms that affect this matter. Separate the registered holder from a person entitled to economic benefits or able to instruct the holder when that distinction changes exercise of the right.
 
-For each material interest, recover the needed rights from its terms: participation in a specified distribution, votes for this resolution, class approval, appointment or removal, transfer, or conversion. These are possible rights, not a claim that every share carries each one. Record dates, expiry, default or conversion can change the answer. An unexercised option can matter to a future scenario without supplying present votes.
+For each material interest, recover from its terms the rights that bear on this question. Examples include participation in a specified distribution, votes for this resolution, class approval, appointment or removal, transfer, or conversion. Record dates, expiry, default or conversion can change the answer. An unexercised option can matter to a future scenario without supplying present votes.
 
 Keep the source and uncertainty with a contested right. Reuse sufficient established terms. Investigate an additional holding, agreement or intermediary only when its resolution can change the receiving result.
 
@@ -60,11 +60,11 @@ Consider a constructed corporation whose supplied, legally applicable terms are:
 | Founder | 40 class A | 10 per share | One equal unit per share in an ordinary distribution |
 | Investor | 60 class B | 1 per share | One equal unit per share in the same distribution |
 
-The founder has 40% of the units in that distribution but 400/(400 + 60), approximately 86.96%, of the eligible votes on this resolution. The investor has 60% of those economic units and approximately 13.04% of those votes. This calculation uses the stated rights, not share count as a substitute for them.
+The founder has 40% of the units in that distribution but 400/(400 + 60), approximately 86.96%, of the eligible votes on this resolution. The investor has 60% of those economic units and approximately 13.04% of those votes.
 
 Now include the supplied term that new borrowing above 50 requires class B consent. A proposed borrowing of 80 falls within it. Even if the general resolution receives enough votes, its passage alone leaves that consent unresolved. Use CGOV.3 also to establish which corporate organ may authorize the borrowing. The founder's voting weight answers neither question by itself.
 
-This is an instructional arrangement, not an assertion that these terms are permissible or sufficient in every jurisdiction. In a live matter, use the rights that actually apply.
+These are assumed terms. For a live matter, establish the rights that apply to the holdings and corporate act under the governing rules.
 
 #### CGOV.2:5.2 - An indirect economic interest
 
@@ -83,7 +83,7 @@ Does each percentage name what is allocated and its denominator? Are class right
 ### CGOV.2:8 - Common Anti-Patterns and How to Avoid Them
 
 - **Share count stands for every right.** Recover the terms and calculate the right relevant to the matter.
-- **An indirect cash-flow percentage becomes a control percentage.** Follow the actual voting, appointment or influence relation at each link.
+- **An indirect cash-flow percentage becomes a control percentage.** Follow the voting, appointment or influence relation at each link.
 - **A veto becomes a general power to direct.** State what can be prevented and under which conditions.
 - **Possible votes become a completed decision.** Carry the count into the applicable decision procedure; do not claim that votes have been cast.
 - **One regulatory control finding serves every use.** Keep its rule and purpose with the conclusion.
@@ -100,7 +100,7 @@ Rights attach to interests and arrangements under conditions; a percentage summa
 
 The [OECD Corporate Governance Factbook 2025, chapter 3](https://www.oecd.org/en/publications/oecd-corporate-governance-factbook-2025_f4f43735-en/full-report/the-rights-of-shareholders-and-key-ownership-functions_b8fa461b.html) compares record dates, share classes, voting caps and other arrangements across jurisdictions. Sections 3.2 and 3.4 support choosing the applicable rights and denominator rather than assuming one share means one vote. The [G20/OECD Principles, II.E](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-5.html) provides the related distinction between economic and voting rights.
 
-This pattern adopts their rights-sensitive approach and adds an explicit account of which relation each calculation follows. An ordinary capitalization table remains sufficient when its holdings and terms answer the matter. More elaborate tracing is justified by a changed outcome, not by completeness for its own sake. The comparative sources locate relevant variation; they do not establish a particular corporation's rights or informal control. Changed terms, holders, eligibility or the receiving control question reopen the affected calculation.
+This pattern adopts their rights-sensitive approach and specifies the relation each calculation follows. An ordinary capitalization table remains sufficient when its holdings and terms answer the matter. Trace further when the result could change the conclusion. The comparative sources show where arrangements vary. For a claim about this corporation’s rights or informal control, use evidence about the corporation itself. Changed terms, holders, eligibility or the receiving control question reopen the affected calculation.
 
 ### CGOV.2:12 - Relations
 

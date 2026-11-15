@@ -10,15 +10,15 @@ Use this pattern when an intended administrative action needs a permission and t
 
 Start with the actual performer and intended action, including the resource, extent and time that matter. The first useful result is the applicable permission and its conditions, an established lack of the required permission, or the precise unresolved authority question. When the current work includes performance, the performer then acts within the established bounds.
 
-Use an adequate standing grant directly. The pattern does not require a fresh approval for every exercise. Technical ability, an appointment or an absence of known prohibition can be relevant inputs; each supplies only the condition it actually establishes.
+Use an adequate standing grant directly. Technical ability, an appointment or an absence of known prohibition can be relevant inputs; each supplies only the condition it actually establishes.
 
 ### ADM.8:1 - Problem frame
 
-A person or organization proposes an action for which the applicable institutional arrangement requires authority. The beneficiary of a grant may perform the action or may act through another participant whose own authority must be established. Approval of expenditure, delegation to an agent, access to a technical system and actual performance can therefore concern different actions.
+A participant proposes an action for which the applicable institutional arrangement requires authority. The beneficiary of a grant may perform the action or may act through another participant whose own authority must be established. Approval of expenditure, delegation to an agent, access to a technical system and actual performance can therefore concern different actions.
 
 The permission question is bounded. Permission to ask for a quote may already exist while permission to incur expenditure is still missing. Permission to read a collection does not necessarily cover downloading or disclosing it.
 
-The local policy, agreement or competent decision supplies the substantive grant and conflict rules. This pattern establishes and uses their application to the case; it does not invent the institution's authority structure.
+The local policy, agreement or competent decision supplies the substantive grant and conflict rules. Apply those rules and decisions to the participants, action and time in the case.
 
 ### ADM.8:2 - Problem
 
@@ -31,7 +31,7 @@ Conflicts create a further error. A handler may assume that a permit overrides a
 | Force | Tension |
 | --- | --- |
 | Usable authority | A performer needs an actionable answer, while broad labels conceal resource, purpose, amount and time limits. |
-| Reuse | Standing grants reduce repeated decisions, but cannot cover changed actions or expired conditions. |
+| Reuse | Standing grants reduce repeated decisions, but a changed action must still fit the grant and its conditions must still hold. |
 | Conflict | An applicable rule can settle incompatible conclusions; unresolved cases require a competent result. |
 | Technical enforcement | A mechanism can block or enable an action without constituting institutional permission. |
 | Performance | Permission supports an action but does not establish that the action occurred or its promised result was supplied. |
@@ -42,13 +42,13 @@ Conflicts create a further error. A handler may assume that a permit overrides a
 
 Specify who intends to do what, to which resource or recipient, for what relevant purpose, extent and time. Identify whose grant is being used and whether the performer acts for another participant. Add a delegation question only when the action depends on one.
 
-Separate neighboring actions when their permission conditions differ. A manager's authorization to approve a travel expense does not automatically authorize the travel handler to approve it; the handler may instead be authorized to prepare the claim or issue a booking after that approval.
+Separate neighboring actions when their permission conditions differ. The manager may be authorized to approve the travel expense while the handler is authorized to prepare the claim and book after approval. Check the handler’s own authority if the handler is to approve the expense.
 
 Use ADM.2 for an unclear participant or relation and ADM.3 for uncertain effectivity. Use already adequate results without rebuilding the organizational account.
 
 #### ADM.8:4.2 - Recover the required positive basis and conditions
 
-Obtain the applicable grant or rule-derived permission and the source that establishes it. Match the beneficiary, action, resource, extent and effective conditions to the proposed exercise. Check a relevant revocation, suspension or unmet prerequisite when it can alter this use.
+Identify the applicable grant or rule-derived permission and its source. Use an existing adequate basis, or seek any missing authorization from its holder. Match the beneficiary, action, resource, extent and effective conditions to the proposed exercise. Check a relevant revocation, suspension or unmet prerequisite when it can alter this use.
 
 Establish separately any eligibility condition required by the grant. A valid appointment can meet an appointment condition while leaving the required read grant absent. A technical credential can support authentication without supplying spending authority.
 
@@ -58,17 +58,17 @@ If the governing arrangement requires a positive grant, a non-prohibition findin
 
 Determine whether the apparently competing conclusions concern the same beneficiary and action with overlapping scope and time. A download restriction may leave a permitted read untouched. A restriction from 09:00 to 11:00 does not by itself govern an action at noon.
 
-For an actual conflict, follow [FPF A.2.8.PER][PER]'s distinction. First apply a matching current precedence rule when it selects the applicable conclusion. Otherwise reuse an adequate authorized resolving decision for this scope and time. Only a remaining unresolved conflict calls for the competent person to decide that question.
+For an actual conflict, follow [FPF A.2.8.PER][PER]'s distinction. First apply a matching current precedence rule when it selects the applicable conclusion. Otherwise reuse an adequate authorized resolving decision for this scope and time. For a remaining conflict, identify the question for the authority competent to resolve it.
 
 The title of an office, the presence of two records or the handler's preferred outcome alone supplies no precedence. Preserve the unresolved condition if the authorized answer is unavailable. An authorized variation does not retroactively make a failed factual prerequisite true.
 
 #### ADM.8:4.4 - Return the bounded permission result
 
-State which action by which performer is permitted, under what action-changing conditions, or why the required basis is absent or unresolved. Include the relevant source or decision reference where the recipient needs it to rely on the result.
+State which action by which performer is permitted, under which conditions and limits, or why the required basis is absent or unresolved. Include the relevant source or decision reference where the recipient needs it to rely on the result.
 
 Apply the ordinary service response to an established negative condition. If a distinct alternative basis is actually claimed, investigate that question. A missing grant, conflicting evidence and a settled prohibition need not receive the same response.
 
-Keep a request for permission separate from the received grant. Use ADM.6 to obtain a missing competent answer or resolve an unavailable authority arrangement. The handler does not acquire the authority by documenting the gap.
+Keep a request for permission separate from the received grant. Use ADM.6 to obtain a missing competent answer or resolve an unavailable authority arrangement. Report the unresolved authority when nobody can supply the needed decision.
 
 #### ADM.8:4.5 - Exercise within the established bounds
 
@@ -76,7 +76,7 @@ If the present task is only to answer the permission question, stop with that an
 
 Before a delayed exercise, revisit only facts that can change the permission: expiration, revocation, changed amount, resource, purpose or performer. A permission for one date does not extend because provision was late. A different permitted action may proceed while a separate grant remains pending.
 
-Technical enforcement implements its specified rule. A successful operation supplies evidence about the operation and effect it actually achieved. Use ADM.9 when the beneficiary's promised condition still needs to be provided or established; use ADM.10 when performance and records disagree.
+Establish what the institutional rule permits. If technical enforcement matters, establish what the mechanism permits or prevents in practice. A successful operation supplies evidence about the operation and effect it actually achieved. Use ADM.9 when the beneficiary's promised condition still needs to be provided or established; use ADM.10 when performance and records disagree.
 
 ### ADM.8:5 - Archetypal Grounding
 
@@ -96,7 +96,7 @@ A researcher has a valid read grant for collection R on 2 October. A security in
 
 At noon the temporary restriction no longer covers the requested action. Suppose the grant and all its other conditions still hold and no other applicable restriction is present. The researcher can exercise the read permission. The earlier conflict does not create an all-day ban.
 
-Now change the case: both conclusions apply at 09:30, but no matching precedence rule or adequate resolving decision is available. The handler returns the conflict to the authorized security/access decision maker and preserves the unresolved permission question. Naming that person is not the resolving decision.
+Now change the case: both conclusions apply at 09:30, but no matching precedence rule or adequate resolving decision is available. The handler returns the conflict to the authorized security/access decision maker and preserves the unresolved permission question. The handler can establish whether the read took place while its authorization remains unresolved.
 
 #### ADM.8:5.3 - Permission survives a provider failure within its conditions
 
@@ -106,7 +106,7 @@ The provider may not silently give download access when the grant covers reading
 
 ### ADM.8:6 - Bias-Annotation
 
-Organizational status, familiarity and a powerful interface can be mistaken for authority. Examine the actual grant and action instead of the participant's prestige or technical capability.
+Organizational status, familiarity and a powerful interface can be mistaken for authority. Match the grant to the intended action, performer, scope and time.
 
 A permission account can also become needlessly restrictive by carrying every neighboring action's prerequisites into the present one. Keep the bounded action visible, including ordinary permitted inquiry and correction.
 
@@ -114,7 +114,7 @@ A permission account can also become needlessly restrictive by carrying every ne
 
 **Recognition.** The result identifies the action, performer, positive basis where required, material conditions and any applicable conflict. It distinguishes the grant, its exercise and a non-prohibition finding.
 
-**Assurance for reliance.** Compare the actual grant and rule to a changed amount, action or time that could alter the answer. For a conflict, establish the scope overlap and the rule or authorized result that settles it. For performance, obtain evidence of what the performer actually did; a permission record alone cannot supply that evidence.
+**Assurance for reliance.** Compare the actual grant and rule to a changed amount, action or time that could alter the answer. For a conflict, establish the overlap. Apply a rule or authorized result that settles it, or identify the unresolved question for its competent holder. For performance, obtain evidence of what the performer actually did; a permission record alone cannot supply that evidence.
 
 ### ADM.8:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -138,17 +138,17 @@ A permission is a relation under particular conditions, its exercise is an actio
 
 ### ADM.8:11 - SoTA-Echoing
 
-The working question is how to make an administrative action legitimate and executable without confusing grant, eligibility, enforcement and performance. The selected instruction follows the actual [FPF A.2.8.PER][PER] grant, exercise, non-prohibition and conflict distinctions, especially §4.6. The laboratories supply the administrative cases in which device permission, institutional conditions and usable access diverge.
+The working question is how to make an administrative action legitimate and executable without confusing grant, eligibility, enforcement and performance. Use the [FPF A.2.8.PER][PER] grant, exercise, non-prohibition and conflict distinctions, especially §4.6. The laboratories supply the administrative cases in which device permission, institutional conditions and usable access diverge.
 
-[OASIS XACML 3.0][XACML], terminology and §7.2, supplies a comparison between policy information, decisions and enforcement. The base policy enforcement point (PEP) leaves its response to `NotApplicable` and `Indeterminate` undefined; deny-biased and permit-biased PEPs specify different responses. An administrative service obtains its response and authority from the applicable institutional rule. Sections 4.2–4.5 retain that separation without prescribing XML or importing an XACML enforcement operation as a general legal obligation.
+[OASIS XACML 3.0][XACML], terminology and §7.2, supplies a comparison between policy information, decisions and enforcement. The base policy enforcement point (PEP) leaves its response to `NotApplicable` and `Indeterminate` undefined; deny-biased and permit-biased PEPs specify different responses. An administrative service obtains its response and authority from the applicable institutional rule. In §§4.2–4.5, establish what the applicable rule permits. Where technical enforcement matters, compare that permission with the response the mechanism actually implements. A term for a technical enforcement operation does not define the parties’ legal duties.
 
-Use a standing rule directly when its conditions settle the action. A universal approval workflow adds cost and can misclassify independent actions; an allow/deny interface alone can conceal the missing institutional basis. The constructed cases test these distinctions under supplied rules, not the legality of an actual organization.
+Use a standing rule directly when its conditions settle the action. A universal approval workflow adds cost and can misclassify independent actions; an allow/deny interface alone can conceal the missing institutional basis. The examples apply these distinctions under their supplied rules. A question about the lawfulness of a real arrangement requires the relevant legal basis.
 
 Reopen the affected permission when its beneficiary, action, scope, rule or effective conditions change. Changes to a technical implementation require reconsidering permission only where they change those conditions or the action being performed.
 
 ### ADM.8:12 - Relations
 
-ADM.2–ADM.3 establish the relevant participants and effective relations; ADM.7 checks a needed claim without granting permission. ADM.6 supplies a competent return for an unresolved question. The authorized performer uses the applicable permission in acting, and ADM.9 establishes the promised usable condition when provision is the next task.
+ADM.2–ADM.3 establish the relevant participants and effective relations; ADM.7 checks a needed claim without granting permission. ADM.6 supplies a competent return for an unresolved question. When action is required, its authorized performer acts within the applicable permission, and ADM.9 establishes the promised usable condition when provision is the next task.
 
 [FPF A.2.8.PER][PER] governs the grant/exercise/non-prohibition distinction. [OPS.6][OPS] supplies situated continuation when a legitimate next action still needs to be selected.
 

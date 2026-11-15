@@ -30,11 +30,11 @@ For the resource comparison in SYSE.15, use OPS.11.1 to construct the relevant o
 shared resources and existing assignments, and compare allocation alternatives. This can change the use of
 bench time without redesigning who may request, promise or accept the work.
 
-Use equivalent current local content when it already suffices; no repeated application of a neighbouring
-pattern is then required. Before relying on a returned result, check the supplying source's availability and
-current governing claim, the receiving subject and conditions, and the actual assignment/authority or
+Use an equivalent current local result when it suffices. Before relying on a returned result,
+check the supplying source's availability and
+current governing claim, the receiving subject and conditions, and the evidence of assignment or authority, or
 state evidence needed now. Reopen only the affected return when these change; a missing result stops its
 dependent use. These source texts and the organizational or operating results remain external to SYSE:
 availability of a pattern is neither an obtained local assignment nor an established current operating account.
 
-For Part VIII, MMP.8.SD supplies an action-conditioned decision model, MMP.17 a qualified approximation when needed, and CMP.7 learner construction. The engineer recovers candidate reusable operations; F.0.2.MA reconciles or allocates already recovered contributions, while A.3.1.MV and A.15.8.MS retain semantic repertoire and usable discovery. HCD, SOM and RHY retain human practice, learning, observation and timed bodily coordination; an LLM-generated account supplies no bodily response. C.38/C.11 retain complete-way comparison and choice. The [Reference (Engineering.Reference:19)](../suite-reference/21-engineering-reference-19---make-an-available-contribution-wo.md) gives direct access and worked returns for these separate contributions.
+For Part VIII, MMP.8.SD supplies an action-conditioned decision model, MMP.17 a qualified approximation when needed, and CMP.7 learner construction. The engineer recovers candidate reusable operations; F.0.2.MA reconciles or allocates already recovered contributions, while A.3.1.MV and A.15.8.MS retain semantic repertoire and usable discovery. HCD, SOM and RHY retain human practice, learning, observation and timed bodily coordination; an LLM can help interpret the account, while the learner must supply the bodily response. C.38/C.11 retain complete-way comparison and choice. The [Reference (Engineering.Reference:19)](../suite-reference/21-engineering-reference-19---make-an-available-contribution-wo.md) gives direct access and worked returns for these separate contributions.

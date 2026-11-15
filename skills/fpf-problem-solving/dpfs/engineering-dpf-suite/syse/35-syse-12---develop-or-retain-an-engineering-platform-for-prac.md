@@ -4,23 +4,23 @@
 
 ### SYSE.12:0 - Use This When
 
-Use this pattern when engineers cannot reliably model, compute, build, integrate, test, release, or observe an
-engineered System because shared enablers—such as tools, data, models, automated or physical facilities, provider
-Work, and support arrangements—are treated as incidental infrastructure or as a product with no named
+Use this pattern when a decision about an engineering result depends on the shared Systems and support that practitioners need to model, compute,
+build, integrate, test, release or observe the engineered System. Common problems include treating tools, data, models, automated or physical
+facilities, provider Work and support arrangements as incidental infrastructure, or developing them as a product with no named
 practitioner Work.
 
-Begin with one practitioner Work family and the engineering result it must produce. Identify the actual Systems
-that enable or obstruct that Work, the capability practitioners need, the capability claimed for each platform
-or provider System, the conditions under which those Systems participate or provide a result, and the burden or
-failure that should change. Then choose whether to retain or change the enabling arrangement for that engineering result.
+Begin with one practitioner Work family and the engineering result it must produce. Identify the actual Systems that
+enable or obstruct that Work, the capability practitioners need, the capability claimed for each platform
+or provider System, and the conditions under which those Systems participate or provide a result. Compare
+the burden and any failures that matter to the decision, then choose whether to retain or change the arrangement.
 
-For a decision made before the relying Work, assess platform readiness and record a **platform readiness
-assessment** based only on evidence already available. After practitioner Work, the responsible Agent reassesses
-the platform and records a **platform-use assessment** based on observed participation, provision, burden, failure,
-and engineering results.
-Both assessments are epistemes. Each names the System, capability, Work, relation, result and evidence it is
-about without replacing any of them, and retains its own evidence cutoff. Later observations can support a
-subsequent assessment; they were not grounds used to make the earlier one.
+For a decision before the relying Work, use or prepare a **platform readiness assessment**
+based on the evidence available at that time. For a later decision about use, the responsible
+Agent uses or prepares a **platform-use assessment** from observations of participation,
+provision, burden,
+engineering results and any failures. These assessments are epistemes about the
+System, capability, Work, relation, result and evidence. Each keeps its own evidence cutoff.
+Later observations can inform a subsequent decision.
 
 Use `SYSE.25`–`SYSE.29` directly when the missing result is a task-grounded platform improvement, a supported
 use path, an interface or contribution change, a qualified control placement, or a migration and retirement
@@ -29,11 +29,11 @@ feedback, artifacts, environments, data change, deployment, exposure, reliabilit
 and capacity. Use those results to support the relevant platform claims, keeping evidence of pre-use
 readiness separate from observations of later use.
 
-Use Organization Change Engineering when positions, assignments, authority, or organization architecture are
-the changed subject; Operations Management for continuing queues, support cases, capacity, and provider Work.
-When the professional move is not supplied by the common language or the selected service-software Methods,
-use a qualified application-profile Method—for example, for a laboratory, compiler, manufacturing cell,
-clinical environment, electrical bench, or ship facility. The software selection is not complete software engineering.
+Use Organization Change Engineering when positions, assignments, authority or organization architecture are the
+changed subject, and Operations Management for continuing queues, support cases, capacity and provider Work. Where
+the common language and selected service-software Methods leave a professional task uncovered, use a qualified
+application-profile Method, for example for a laboratory, compiler, manufacturing cell, clinical environment,
+electrical bench or ship facility. For other software engineering tasks, obtain the professional contribution the project needs.
 
 #### SYSE.12:0.1 - Terms and Distinctions
 
@@ -43,7 +43,7 @@ clinical environment, electrical bench, or ship facility. The software selection
 | engineering platform | A project-relative designation for an actual System selected to enable named engineering Work through direct relations such as capability, participation, provision, resource, interface, or condition relations. A future candidate remains a referent in a plan or description until an actual System satisfies its identity conditions. |
 | provider arrangement | Plain wording for the provider Agents, other Systems, Work, Methods, interfaces, resources, conditions, and recovery relations on which platform use relies. Recover the actual participants and relations; they need not be parts of one platform System. |
 | toolchain | Source-local wording that may denote an actual arrangement of tools or a description of that arrangement. Recover the actual Systems, configurations, interfaces, resource relations, participation in Work, and evidence before making a platform claim. |
-| self-service | A source-local claim that a practitioner can obtain a stated result without case-specific provider Work at every step. Provider Work, platform participation, support, authority, conditions, and exceptions can still remain. |
+| self-service | A source-local claim that a practitioner can obtain a stated result without case-specific provider Work at every step. Provider Work, platform participation, support, authority, conditions, and exceptions can remain. |
 | golden path | Source-local wording for either a recommended MethodDescription or a configured arrangement for a bounded case. Recover which one is meant; either remains separate from the world-side Method, its enactment, and evidence that it fits this Work. |
 | practitioner-experience account | An episteme carrying evidence-backed claims about, for example, effort, delay, error, rework, recovery, autonomy, or result quality for named Work. A satisfaction result supports only the claim and population it measured. |
 | platform readiness assessment and platform-use assessment | The readiness assessment uses evidence available before the relying Work. The use assessment uses later observations of that Work and the platform's actual participation or provision. They are different epistemes with different evidence windows. |
@@ -60,10 +60,10 @@ and evidence stores, AI assistants, integration environments, and data spaces ca
 observe and do. Provider and support arrangements can do the same. One platform can help one Work family and
 obstruct another.
 
-Buying tools or forming a platform team does not establish that the resulting arrangement can support the named
-practitioner Work. Platform engineering starts with that Work and consequences for the project system-of-interest
-or its use, then develops the actual enabling arrangement. Platform Work and engineering Work on the project system-of-interest may occur
-simultaneously; their dependency is not a lifecycle stage or evidence that one System is part of the other.
+Buying tools or forming a platform team does not establish that the arrangement can support the named practitioner
+Work. Start from that Work and its consequences for the project system-of-interest or its use. Retain a sufficient
+enabling arrangement or develop the change the decision calls for. Platform Work and engineering Work on the project system-of-interest
+may overlap. Their dependency alone establishes neither a lifecycle stage nor a part–whole relation.
 
 ### SYSE.12:2 - Problem
 
@@ -74,10 +74,10 @@ A decision about an engineering platform requires answers to seven questions:
    arrangement, and which future candidates exist only in plans or descriptions?
 3. What capability does the practitioner need, which System holds each claimed platform or provider capability,
    and under what envelope and currentness conditions?
-4. Which conditions and direct relations actually matter—for example, access, participation, provision,
+4. Which conditions and direct relations matter—for example, access, participation, provision,
    availability, resource use, promise, support, exception, or fallback?
-5. Which practitioner or System consequences should change—for example, effort, delay, error, rework, recovery,
-   evidence continuity, or a result involving the project system-of-interest?
+5. Which consequences for practitioners or the System matter to the choice, and which should be preserved or changed? Consider effort, delay, error,
+   rework, recovery, evidence continuity or a result involving the project system-of-interest.
 6. Which credible complete arrangements form the current decision alternatives—for example, retaining, changing,
    composing, obtaining, building, branching, bypassing, or retiring—and who has authority to choose among them?
 7. What can be supported before practitioner Work, what is observed only later, and what change reopens each
@@ -90,7 +90,7 @@ moving integration burden to practitioners, concentrating failure, and degrading
 
 - Shared capabilities and provider Work can reduce duplication, while different engineering profiles need different
   interfaces, evidence, and physical means.
-- Case-independent access can shorten feedback, while consequential changes still require separate permission
+- Case-independent access can shorten feedback, while consequential changes require separate permission
   and assurance.
 - Recommended arrangements can reduce routine burden, while novel Work needs extension, bypass, and exception
   conditions.
@@ -102,9 +102,9 @@ moving integration burden to practitioners, concentrating failure, and degrading
 
 ### SYSE.12:4 - Solution
 
-Choose an enabling arrangement for one named practitioner Work result, including retaining the current arrangement
-when its use is supported. Develop only the selected changes. State the capability, conditions, participation or
-provision relations, and evidence separately, then reassess the platform from observed use.
+Choose an enabling arrangement for one named practitioner Work result. Retain a suitable arrangement or develop
+the selected changes. State the capability, conditions, participation or provision relations and evidence separately.
+Use the readiness or later-use assessment that the receiving decision needs.
 
 #### SYSE.12:4.1 - Perform the Move
 
@@ -125,31 +125,31 @@ provision relations, and evidence separately, then reassess the platform from ob
 5. **Use Method repertoire and architecture when they change the choice.** A compatible `SYSE.15` result can
    supply available Methods and applicability limits; a compatible `SYSE.20` result can supply Method, Work,
    enablement, and conflict structures. Otherwise use a qualified source or name the missing result.
-6. **Generate and choose among real alternatives.** Build a `C.11` option set from feasible complete
-   arrangements. Candidates may retain the current arrangement, change a capability or relation, compose existing
-   Systems, obtain or build a part, branch for a profile, preserve a bypass, or retire a harmful arrangement. Name
-   the deciding Agent, authority, accepted losses, and questions outside that authority. Compare them for the
-   same practitioner result and period of reliance, including continuing provider, maintenance, and recovery
-   Work as well as practitioner effort. Use `SYSE.24` when the obtaining comparison is unresolved and `SYSE.25`
+6. **Choose among feasible enabling arrangements.** Use a `C.11` option set of complete arrangements and develop any
+   missing feasible alternative needed for this choice. Options can include retaining the current arrangement, changing a capability
+   or relation, composing existing Systems, obtaining or building a part, branching for a profile, preserving a bypass,
+   or retiring a harmful arrangement. Name the deciding Agent, authority, accepted losses and questions outside that authority. Compare
+   the alternatives for the same practitioner result and period of reliance, including continuing provider, maintenance
+   and recovery Work alongside practitioner effort. Use `SYSE.24` when the obtaining comparison is unresolved and `SYSE.25`
    when the improvement mechanism needs investigation.
 7. **Perform selected platform-development Work.** When step 6 selects a change, record the performing Agents,
    assignments when relevant, Methods, temporal extents, results, actual transformations, resulting configuration,
    and evidence. A decision record does not change the platform. When the current arrangement is retained,
    continue to the readiness or use assessment that the receiving decision needs without creating development Work.
-8. **Issue the pre-use readiness assessment.** State only capability and condition claims supported before the
-   practitioner Work, with their evidence cutoff, currentness window, limits, fallback, and stop.
-9. **Observe use and issue a later assessment.** Identify the practitioner Work occurrence and the actual
-   platform participation, provision Work, or resource relation. Observe the consequences needed by the
-   decision—for example, burden, delay, error, rework, recovery, evidence continuity, or results involving the
-   project system-of-interest. Record the later assessment separately and use it only for later decisions.
+8. **Assess readiness for a pre-use decision.** Use a sufficient existing assessment or state the capability and condition claims that the evidence
+   available before practitioner Work supports. Keep the evidence cutoff, currentness window, limits, fallback and stop.
+9. **Assess observed use for a later decision.** Use an adequate existing use assessment when it covers the question. Otherwise
+   identify the practitioner Work occurrence and how the platform participated, the provider supplied a result or a resource
+   was used. Use existing observations and obtain any further observations needed about burden, delay, error, rework, recovery, evidence
+   continuity or the engineering result. Record the assessment separately from readiness. It can support later decisions.
 10. **Return and reopen locally.** Supply only the supported claims needed by each receiving decision—for
     example, capability, condition, participation, provision, use, failure, or platform-change claims. Reconsider only
     the claims affected by a changed Work, Method, practitioner population, configuration, provider, condition,
     evidence basis, or consequence for the project system-of-interest.
 
-Platform development, practitioner Work, support, change of the project system-of-interest, and evidence Work
-can overlap. Every claimed use still needs an obtaining relation, and later evidence cannot justify earlier
-reliance retroactively.
+Platform development, practitioner Work, support, change of the project system-of-interest and evidence Work can overlap. A claim that the platform
+was used requires evidence of a relation that held in that Work, such as its participation, provision to the practitioner or use of a resource. Later observations can
+support subsequent reliance.
 
 #### SYSE.12:4.2 - Record the Result
 
@@ -160,15 +160,15 @@ reliance retroactively.
 | capabilities | Practitioner capability demands and each platform or provider capability holder, Work family, envelope, measures, qualification window, currentness, and evidence. |
 | conditions and relations | Conditions used by the case, such as access, performance, evidence continuity, support, exception, fallback, cost, or resource conditions; each relied-on participation, provision, availability, resource-use, promise, or other governed relation. |
 | alternatives and change | Current `C.11` OptionSet of complete arrangements; deciding Agent, authority, accepted losses, selected option; platform-development Work, transformation, and resulting configuration when a change is performed; and the evidence supporting the retained or changed arrangement. |
-| pre-use readiness | Claims supported before practitioner Work, evidence cutoff, currentness window, limits, fallback, and stop. |
-| observed use | Practitioner Work, actual participation or provision, burden and result observations, later assessment identity, and the decision it can change. |
+| pre-use readiness | For a pre-use decision, the assessment of capability and conditions supported before practitioner Work, with evidence cutoff, currentness window, limits, fallback and stop. |
+| observed use | For a decision about actual use, the practitioner Work, participation or provision, observations about burden and results, the use assessment and the decision it can inform. |
 | return and reopen | Claims supplied to each receiving decision, their limits, and the change that reopens each one. |
 
 #### SYSE.12:4.3 - What Changes in Practice
 
-Platform investment begins with an engineering result and observable practitioner Work. Engineers can improve a shared enabling System while keeping capability, Work, participation,
-evidence, operations, organization change, administration, application-profile engineering, and decisions
-about the project system-of-interest distinct.
+Before investing in a platform, identify the result practitioners need, the Work they would perform to produce it and what you could observe about that Work. Engineers can improve a shared enabling System while distinguishing practitioner, platform and provider capabilities from the Work performed, the platform’s participation and
+evidence of its contribution. Operations, organization change, administration, application-profile engineering and decisions about the project system-of-interest
+retain their own scope.
 
 ### SYSE.12:5 - Worked Case: Platform Support for Flood-Pump Integration
 
@@ -182,7 +182,7 @@ platform description records the structure; it is not the platform System.
 
 For the next controller-integration campaign, each candidate must return evidence tied to the same model,
 controller and bench configurations, preserve access to that evidence, and permit recovery after an interrupted
-assembly. The competent incumbent records and checks the correspondence manually. It can still produce the
+assembly. The competent incumbent records and checks the correspondence manually. It can produce the
 required result; the observed missed link and repeated copying across revisions are reasons to compare a repair.
 
 The engineers compare retaining that arrangement, strengthening its manual correspondence check, adding
@@ -193,7 +193,7 @@ evidence; it removes repeated copying but requires a provider to maintain the bi
 configurations change. Bench replacement would require requalification; no identified bench limitation makes
 that work necessary for this repair.
 Outside provision is competitive only if it returns the same configuration-linked evidence with the required
-access and recovery; otherwise the engineers still perform the join. Manual fallback remains part of the
+access and recovery; otherwise the engineers must match the evidence to the configurations. Manual fallback remains part of the
 linking option.
 
 The authorized Agent chooses the bounded linking change because revisions recur during this campaign and
@@ -220,18 +220,18 @@ platform participation in those Work occurrences; they do not assign the enginee
 supplier's fixture-fabrication Work uses another arrangement, so the same participation claim does not apply
 there.
 
-The later use assessment records that the engineers' evidence-assembly effort for controller integration fell
-from the stated local baseline of six person-hours to two and a half, while a repository outage took 45 minutes
-to recover and the export gap remained. The provider's continuing binding-maintenance effort has not yet been
-measured on the same basis. Thus the observations support the local assembly saving, not a claim that total
-Work fell. Assess that claim using comparable provider and practitioner Work over the selected campaign; the
-45-minute outage duration alone is not a measure of recovery effort.
+The later use assessment records that the engineers’ evidence-assembly effort for controller integration fell
+from the local baseline of six person-hours to two and a half. Recovery from a repository outage took 45 minutes,
+and the export gap remained. The provider’s continuing binding-maintenance effort has not been measured
+on the same basis. The observations establish the local assembly saving. To assess total Work, compare
+the arrangements over the same campaign, counting provider and practitioner effort on a comparable
+basis. The outage duration alone does not measure recovery effort.
 
-If obtaining those observations is not worth its cost for the next decision, leave the total-burden claim open
-and decide from the supported result and accepted maintenance obligation. A later finding that provider Work
-outweighs the assembly saving reopens the improvement claim; it does not erase the verified links or completed
-integration. These constructed observations support only this case and can change later platform decisions.
-They cannot retroactively justify the earlier controller-integration reliance.
+If obtaining those observations is not worth its cost for the next decision, leave total burden open and
+decide from the supported result and accepted maintenance obligation. If additional provider effort
+outweighs the assembly saving, reconsider the claimed improvement. The verified links and completed integration
+remain established. These constructed observations support this case and can inform later decisions.
+Earlier reliance must be judged on the evidence then available.
 
 **Countercase.** A repository and continuous-integration server are installed, but no practitioner Work,
 participation, provision, or engineering result is observed. Record the installed Systems and the proposed
@@ -239,15 +239,15 @@ enabling arrangement; do not infer platform capability or adoption from installa
 
 ### SYSE.12:6 - Bias Annotation
 
-Software platform practice supplies useful ideas about self-service, configured defaults, fast feedback, and
-product care. Vendor catalogues and team-topology literature can also make a tool or team appear to be the whole
-platform. Physical and cross-domain engineering adds other platform participants—for example, laboratories,
-manufacturing cells, configuration and calibration Systems, evidence stores, provider Work, and recovery
+Software platform practice contributes self-service, configured defaults, fast feedback and product care.
+Vendor catalogues and team-topology literature can make a tool or team appear to be the whole platform. Physical
+and cross-domain engineering also relies on Systems such as laboratories, manufacturing cells, configuration
+and calibration Systems and evidence stores, as well as on provider Work and recovery
 arrangements.
 
-Use publicity, university coverage, procurement, installation, usage counts, or satisfaction as evidence only for
-the claims each can support. When broad prevalence or causal effect cannot be measured affordably, use
-the best available case evidence and state its epistemic status.
+Use publicity, university coverage, procurement, installation, usage counts or satisfaction only for the claims
+each can support. When measuring broad prevalence or causal effect is too costly, explain what the
+best available cases establish, what kind of evidence they provide and where its limits lie.
 
 ### SYSE.12:7 - Conformance Checklist
 
@@ -272,7 +272,7 @@ the best available case evidence and state its epistemic status.
 | --- | --- |
 | Treat a tool list as the platform | Identify actual Systems, selected structure, capability holders, interfaces, resources, configurations, and participation or provision relations. |
 | Treat a platform team as the platform System | Identify the Agent performing platform Work and the changed enabling System separately. |
-| Treat availability as use | Identify the practitioner Work occurrence and the obtaining platform-participation or provider-work relation with dated evidence. |
+| Treat availability as use | Identify the practitioner Work occurrence and dated evidence that the platform participated in it or that a provider supplied the result relied on. |
 | Use later evidence to justify earlier reliance | Keep the pre-use readiness assessment and later use assessment separate, with their evidence windows and update relation. |
 | Treat satisfaction or adoption as engineering value | Observe the practitioner and project-system consequences that matter to the decision, such as effort, delay, error, rework, recovery, evidence continuity, or an engineering result. |
 | Treat a golden path as the Method | Separate MethodDescription, world-side Method, enactment, fit evidence, and bypass conditions. |
@@ -280,10 +280,10 @@ the best available case evidence and state its epistemic status.
 
 ### SYSE.12:9 - Consequences
 
-This move exposes hidden enabling dependencies and practitioner burden and can reduce repeated integration and
-evidence Work. It also adds continuing Work to maintain, support, configure, observe, and recover the platform.
-Shared capabilities can also create coupling, provider monopoly, or failure concentration, so profile branches
-and fallbacks preserve alternatives where those risks matter.
+This move exposes hidden dependencies and practitioner burden and can reduce repeated integration and evidence Work. Account
+for any continuing maintenance, support, configuration, observation or recovery required by each arrangement, including any
+extra Work introduced by the change. Shared capabilities can create coupling, provider monopoly or concentrated failure,
+so preserve profile branches and fallbacks where those risks matter.
 
 ### SYSE.12:10 - Rationale
 
@@ -301,14 +301,14 @@ is a sufficient starting answer when its provider capabilities and supported use
 It develops a small useful offering with users, composes existing provision, and learns from task outcomes.
 Adopt that answer within its conditions.
 
-For Work spanning software tools, physical facilities and separately performed provider Work, this pattern
-selects an authored synthesis: carry that task-oriented development into the actual enabling arrangement,
-qualify each relied-on capability and relation, and separate readiness before use from later observations.
-Its gain is a supported decision about which Work the arrangement can enable: a bench, repository and support
-provider can contribute different qualified results, and a missing export or changed maintenance burden
-reopens only dependent claims.
-The accepted cost is identifying those dependencies and maintaining their qualifications. This is a
-constructive answer for mixed engineering Work, not evidence that it outperforms qualified direct provision.
+For Work spanning software tools, physical facilities and separately performed provider Work,
+apply task-oriented development to the enabling arrangement. Qualify each capability and relation
+on which practitioners rely. Separate readiness before use from later observations. A
+bench, repository and support provider can contribute different results. A missing export or
+a changed maintenance burden reopens only the dependent claims. Identifying these dependencies
+and maintaining their
+qualifications takes work. The pump case illustrates this approach to mixed engineering
+Work. A claim that it outperforms qualified direct provision requires comparative evidence.
 
 The serious local alternative is to retain competent provision or repair its manual interaction without
 developing a shared platform capability. It avoids new binding, interface and support obligations and can win
@@ -326,7 +326,7 @@ carries those distinctions adequately, reuse it.
 In :4.1 step 6, this means comparing complete arrangements for the same result and period, including continuing
 provider Work. The case in :5 selects identifier links while accepting their maintenance obligation and keeps
 a measured practitioner saving separate from an unmeasured total-burden claim. `SYSE.24` supplies the
-obtaining comparison; this pattern joins its result to capability, participation and evidence timing.
+comparison of obtaining alternatives. Use its result with the evidence for capability and participation, distinguishing what was known before use from what was observed later.
 
 Reopen the affected choice when a changed input or provider breaks the relied-on correspondence or access,
 when comparable continuing burden reverses the accepted trade-off, or when a supported alternative supplies
@@ -336,7 +336,7 @@ source defeats the particular dependency or evidence distinction being carried a
 ### SYSE.12:12 - Relations
 
 - `SYSE.25`–`SYSE.29` construct the bounded improvement, supported interaction, interface/contribution change,
-  control placement, and migration results named above. Enter the Method for the missing result.
+  control placement, and migration results named above. Use the relevant Method when its result is missing.
 - `SYSE.30`–`SYSE.41` supply the selected service-software professional Methods. Apply each result to the
   platform capability and practitioner task for which its conditions and evidence hold.
 - `SYSE.8` supplies a providing-System concept when missing; `SYSE.18` handles integration across independent

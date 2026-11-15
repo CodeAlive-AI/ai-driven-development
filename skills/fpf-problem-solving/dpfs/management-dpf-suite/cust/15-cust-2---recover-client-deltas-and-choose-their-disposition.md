@@ -5,15 +5,15 @@
 
 ### CUST.2:1 - Problem frame
 
-Use this method when “the customer needs customization” conceals several different changes, or when a completed deployment contains unexplained local work. You need a supported basis, an intended or observed customer result, and access to the people or material that can reveal the consequential work.
+Use this method when “the customer needs customization” conceals several different changes, or when a completed deployment contains unexplained local work. You need a supported basis, an intended or observed customer result, and access to participants or material that can reveal the consequential work.
 
-The first useful move is to compare the result and the conditions for obtaining it with the supported offering. The output is an explained set of differences and compatible dispositions, not a catalogue of every difference between two customers.
+The first useful move is to compare the result and the conditions for obtaining it with the supported offering. The output is an account of the differences that change the customer’s result or its provision, with compatible decisions about what to do with them.
 
 If an established configuration already explains the case and its obligations, use that configuration. A label such as “enterprise” or “special customer” is not a reason to reconstruct all its details.
 
 ### CUST.2:2 - Problem
 
-Artifact comparison misses work that leaves no code change: interpretation, data repair, repeated consultation, negotiation, access, training and exception handling. Conversely, a long list of customer attributes can obscure the few differences that actually change provision. Choosing a route before recovering these differences makes the proposed solution determine the diagnosis.
+Artifact comparison misses work that leaves no code change: interpretation, data repair, repeated consultation, negotiation, access, training and exception handling. Conversely, a long list of customer attributes can obscure the few differences that change provision. Choosing a route before recovering these differences makes the proposed solution determine the diagnosis.
 
 ### CUST.2:3 - Forces
 
@@ -28,11 +28,11 @@ Artifact comparison misses work that leaves no code change: interpretation, data
 
 #### CUST.2:4.1 - Choose a real comparison basis
 
-Name the supported offering or method from which this case differs. Include the version or effective conditions when they change use. Recover what ordinary delivery assumes about inputs, participants, skills, access, timing, acceptance and support. A marketing description can locate the offering but may not expose its operating basis.
+Name the supported offering or method from which this case differs. Include the version or effective conditions when they change use. Recover the conditions ordinary delivery relies on for inputs, participants, skills, access, timing, acceptance and support. A marketing description can locate the offering but may not expose its operating basis.
 
 Describe the customer's intended result in their work. Separate what is explicitly required from your inference and from a proposed solution. “Needs a custom dashboard” might mean a decision-maker needs a monthly eligibility answer, or that an operator needs continuous intervention.
 
-When there is no supported predecessor, use a sufficiently explicit proposed basis and mark it as proposed. You can still compare alternatives; you cannot describe deviations from an imaginary established standard as observed facts.
+When there is no supported predecessor, state the proposed basis clearly enough to compare alternatives. Identify differences from it as prospective. A claim that an actual case departed from an established standard requires evidence of that standard and the case.
 
 #### CUST.2:4.2 - Recover changes backward and forward
 
@@ -46,9 +46,9 @@ Inspect meaning where a mismatch changes the answer. [SIE.1 — Bound the Receiv
 
 Split a difference when its continuation can change independently. The same customer may need a supported SSO configuration, a new meaning of “active,” a local report and an exceptional response time. They have different grounds and recipients.
 
-Keep coupled effects visible. Private hosting may alter monitoring, upgrades and support access together. Describing hosting as one technical delta does not remove those consequences. A useful statement can group the linked changes while preserving the separate decisions.
+Keep coupled effects visible. Private hosting may alter monitoring, upgrades and support access together. Group the linked consequences of the hosting change and preserve each separate decision.
 
-Use ordinary material already needed for the work. The following form is a reminder, not a required registry:
+Use ordinary material already needed for the work. The table illustrates the facts worth keeping.
 
 | Recoverable fact | Example |
 | --- | --- |
@@ -69,11 +69,11 @@ Then distinguish three choices:
 
 - What remains local and what, if anything, should become shared?
 - How will the contribution be realized and provided? Consider configuration, code, hardware, a procedure, training or an assisted service, and whether a partner should supply it.
-- What is actually promised, to whom, for how long and with which support?
+- What is promised, to whom, for how long and with which support?
 
-These choices can coexist. A common adapter does not remove a local operating change; a repeatable service can include specialist help; a partner can deliver either a common or bespoke contribution. They are not rungs of a maturity ladder.
+These choices can coexist. A common adapter does not remove a local operating change; a repeatable service can include specialist help; a partner can deliver either a common or bespoke contribution.
 
-For a candidate common change, identify the property or operation expected to transfer and the difference that could defeat it. Send that question to CUST.3 with the recovered cases and their limits. For a known permitted variation, send the actual fit question to CUST.4. For an unresolved causal or transfer question, ask CUST.5 for a discriminating answer.
+For a candidate common change, identify the property or operation expected to transfer and the difference that could defeat it. Send that question to CUST.3 with the recovered cases and their limits. For a known permitted variation, send the fit question to CUST.4. For an unresolved causal or transfer question, ask CUST.5 for a discriminating answer.
 
 #### CUST.2:4.5 - Recombine the decisions around the customer result
 
@@ -85,13 +85,13 @@ Identify the actual decision holder and enabling conditions for consequential ch
 
 #### CUST.2:4.6 - Return an actionable result
 
-Deliver the explained differences with their compatible dispositions, unresolved question and next recipient. Preserve the basis so a later case can be compared meaningfully. The result can be small: “The interface is unchanged; only status meaning and the customer's monthly input responsibility differ. Resolve those before configuring the standard service.”
+Deliver the explained differences with their compatible dispositions, unresolved question and next recipient. Preserve the basis so a later case can be compared meaningfully. A short answer can suffice: “The interface is unchanged; only status meaning and the customer's monthly input responsibility differ. Resolve those before configuring the standard service.”
 
 Reopen only the affected differences when new evidence changes a premise. A new legal-use restriction can alter material transfer without invalidating a permitted local calculation. An unexpected manual intervention may reopen the delivery method without changing the customer's desired result.
 
 ### CUST.2:5 - Archetypal Grounding
 
-In the analytical-service case, an initial request lists five features. The recovered differences are more useful:
+In the analytical-service case, an initial request lists five features. For each request, establish what differs and how to handle it:
 
 | Request wording | Recovered difference | Disposition and join |
 | --- | --- | --- |
@@ -118,7 +118,7 @@ A provider's standard is only the chosen comparison basis, not a judgement that 
 - Are observations separated from hypotheses about their cause?
 - Are distinct decisions separated without losing their dependencies?
 - Are local/shared result, realization/provision and promise choices distinguished?
-- Does the recombined answer still obtain the customer's result under actual conditions?
+- Can the customer obtain the intended result from the combined choices under the conditions of this case?
 
 ### CUST.2:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -144,10 +144,10 @@ The method organizes comparison around consequential work rather than artifact s
 
 Customer-solution research distinguishes the customer's continuing process from a bundle of products. The primary abstract of Tuli, Kohli and Bharadwaj supports that distinction. CUST uses it to inspect requirements, integration, deployment and continuing help.
 
-Compared with a generic request tracker, the stronger receiving-use line in the full SIE and Implementation Facilitation methods changes the first action: recover meaning and obtaining difficulty before allocating a feature. CUST adopts those results and adds the particular local/shared disposition and recombination. Reopen the recovery method if repeated cases reveal a consequential class of difference it cannot expose.
+A request tracker can record a feature before its meaning or the work needed to supply it is clear. The SIE and Implementation Facilitation methods help resolve these questions before assigning the feature. CUST adopts those results and adds the particular local/shared disposition and recombination. Reopen the recovery method if repeated cases reveal a consequential class of difference it cannot expose.
 
 ### CUST.2:12 - Relations
 
-CUST.2 can be used independently or as the difference-recovery constituent of CUST.1. CUST.3 receives a common-contribution question; CUST.4 receives a fit question; CUST.5 receives an unresolved inquiry; CUST.7 receives linked work and resource implications; CUST.8 receives effects on existing obligations. These are conditional result uses, not compulsory sequential stages.
+CUST.2 can be used independently or as the difference-recovery constituent of CUST.1. CUST.3 receives a common-contribution question; CUST.4 receives a fit question; CUST.5 receives an unresolved inquiry; CUST.7 receives linked work and resource implications; CUST.8 receives effects on existing obligations. Follow the connections needed for the disposition at hand.
 
 ### CUST.2:End

@@ -5,17 +5,17 @@
 
 ### ADM.2:0 - Use this when
 
-Use this pattern when an administrative action depends on who the people or organizations are to one another: who may receive a service, who is responsible for it, who may decide, or who may perform the resulting action. Typical signals are “the employee is in the directory”, “management approved”, or “the administrator can do it” without the relation needed for this request.
+Use this pattern when an administrative action depends on the relations among the participants: who may receive a service, who is responsible for it, who may decide, or who may perform the resulting action. Typical signals are “the employee is in the directory”, “management approved”, or “the administrator can do it” without the relation needed for this request.
 
-The subject is the organizational relation that changes the administrative action. The first result names its participants, applicable conditions and grounds, or the exact missing relation that a competent person must resolve.
+The subject is the organizational relation on which the administrative action depends. The first result names its participants, applicable conditions and grounds, or identifies the missing relation and the source or authority needed to establish it.
 
 Reuse an adequate supplied assignment, entitlement or grant. If the only problem is a failed technical action under already established conditions, pass that problem to the provider using the existing instruction.
 
 ### ADM.2:1 - Problem frame
 
-An administrator works with people in several capacities. The requester can act for a beneficiary. An organization's policy owner can define service conditions while another person decides an individual request. A technical operator can implement that decision. The relevant relations may connect people, organizations, resources and particular actions.
+A requester can act for a beneficiary. The policy owner can define the terms of service while a different holder decides an individual request and an authorized operator or service implements the decision. Identify the relations among the participants, resources and actions that the rule requires.
 
-A role title is a useful clue to the source of those relations. It is insufficient when the intended action depends on a particular appointment, delegation, permission or obligation. A person can also fill several functions, each under its own conditions. The inquiry concerns the relation required for the action, rather than a count of departments or job titles.
+A role title is a useful clue to the source of those relations. It is insufficient when the intended action depends on a particular appointment, delegation, permission or obligation. A participant can fill several functions, each under its own conditions. The inquiry concerns the relation required for the action, rather than a count of departments or job titles.
 
 ### ADM.2:2 - Problem
 
@@ -27,23 +27,23 @@ If the handler substitutes an authenticated identity or a familiar role label fo
 
 Ordinary handling should reuse reliable facts and familiar responsibilities. A consequential action may nevertheless depend on a narrower grant or a different effective interval. An organizational chart makes people findable, but it may not show the counterparty, covered action or authority that this case needs.
 
-The handler also needs a usable return when a relation cannot be established. Collecting more identity documents will not resolve every missing delegation or eligibility condition.
+The handler also needs a usable return when a relation cannot be established. Seek the delegation or eligibility fact that the rule requires when identity is already established.
 
 ### ADM.2:4 - Solution
 
 #### ADM.2:4.1 - Name the action and the participants it requires
 
-Start with the proposed administrative action or needed condition. Identify the participant who would receive it and the person or organization expected to supply it. Distinguish the requester from the beneficiary when that difference affects the rule.
+Start with the proposed administrative action or needed condition. Identify the participant who would receive it and the provider expected to supply it. Distinguish the requester from the beneficiary when that difference affects the rule.
 
-Then identify who may decide the unresolved question and who may perform the decided action. Keep only participants that change the result. A direct request with one authorized provider may require only a short sentence; a delegated payment may require the principal, delegate, payee and responsible treasury performer.
+Then identify who may decide the unresolved question and who may perform the decided action. Include the parties whose standing or contribution determines whether the action can proceed. A direct request with one authorized provider may require only a short sentence; a delegated payment may require the principal, delegate, payee and responsible treasury performer.
 
-If a name, identifier or account may select the wrong person or organization, resolve that identity question before attaching organizational standing to it. SIE.5 supplies cross-source identity work when ordinary supplied evidence is inadequate.
+If a name, identifier or account may identify a different participant, resolve that identity question before attaching organizational standing to it. SIE.5 supplies cross-source identity work when ordinary supplied evidence is inadequate.
 
 #### ADM.2:4.2 - Recover the relation needed for this use
 
 State the relation in ordinary language with its participants: “Mara holds the appointment covered by the archive eligibility rule”, “the archive custodian may grant read access to collection R”, or “Lee may configure the access that the custodian has granted”.
 
-Recover the applicable source and conditions. Ask what establishes the relation, what action or resource it covers, when it applies, and what relevant restriction or ending condition can change the present use. A supplied current assignment can answer this inquiry directly. OCE.6 provides assignment results for an organizational-change question; reuse one only for the participants and responsibilities it actually establishes.
+Recover the applicable source and conditions. Ask what establishes the relation, what action or resource it covers, when it applies, and which restrictions or ending conditions govern this use. A supplied current assignment can answer this inquiry directly. OCE.6 provides assignment results for an organizational-change question; reuse one only for the participants and responsibilities it actually establishes.
 
 A.6.REL governs the underlying distinction between a relation obtaining and someone asserting or recording that it obtains. Its ordinary branch permits a readable relation statement. Add an occurrence identifier or a full relation model only when later work needs to distinguish another occurrence of that relation, including a later episode with the same participants.
 
@@ -53,19 +53,19 @@ For the intended action, ask which relation supplies each necessary condition. A
 
 These facts can be supplied together in a well-designed service instruction. Keep them separately recoverable when a failure, restriction or later use depends on the difference. A.2.8.PER supplies the distinctions between granted permission, actual exercise and a finding of non-prohibition. A finding that no prohibition was located cannot fill a missing grant where the applicable rule requires one.
 
-When a grant and another governing requirement imply incompatible conclusions for the same participant's action, identify the conflicting claims and their overlapping scope and time. First apply an existing precedence rule when its stated conditions select which claim governs that use. If the rule does not settle the conflict, reuse an adequate existing authorized decision or ask the person whose authority covers this conflict to decide which claim governs the specified action, scope and interval. Until a rule or such a decision settles it, return that question as unresolved. Do not infer precedence from record recency, seniority or technical capability alone.
+When a grant and another governing requirement imply incompatible conclusions for the same participant's action, identify the conflicting claims and their overlapping scope and time. First apply an existing precedence rule when its stated conditions select which claim governs that use. If the rule does not settle the conflict, reuse an adequate existing authorized decision or ask the holder of authority over this conflict to decide which claim governs the specified action, scope and interval. Until a rule or such a decision settles it, return that question as unresolved. Do not infer precedence from record recency, seniority or technical capability alone.
 
 #### ADM.2:4.4 - Return the usable participant account or the specific gap
 
 The first result can be a short statement attached to the request. Name the relevant participants, the relation needed for each action, its effective conditions and the grounds that the receiving decision needs. Keep an unsupported relation claim explicit as a claim requiring resolution.
 
-For example, “the supplied appointment establishes eligibility from 1 October; a read grant is still needed from the archive custodian” is actionable. “More approvals required” conceals the missing result and the person who can supply it.
+For example, “the supplied appointment establishes eligibility from 1 October; a read grant is still needed from the archive custodian” is actionable. “More approvals required” conceals the missing result and its authorized source.
 
-A missing fact goes to a source or checker able to establish it. A missing grant or disputed rule application goes to the competent decision maker. If a valid condition is already met and provision failed, send the provider the authorized action and actual failure. Identification of a gap does not itself resolve it.
+Use available evidence to establish a missing fact, obtaining it from a competent source if necessary. Apply the governing rule to a disputed case when the rule settles it. A missing grant or decision that the rule leaves open goes to its competent holder. If a valid condition is already met and provision failed, send the provider the authorized action and actual failure.
 
 #### ADM.2:4.5 - What changes in practice
 
-The handler asks the right person for the particular missing result and reuses adequate relations already supplied. Identity checking, eligibility, authority and technical performance no longer substitute for one another. The request can proceed as soon as its actual conditions are established.
+The handler uses established relations and resolves questions from the available evidence and rules. Where a missing contribution requires another source or authority, identify the question for that holder. Identity, eligibility, decision authority and technical performance support different parts of the request. The authorized action can proceed when its conditions are met.
 
 ### ADM.2:5 - Archetypal Grounding
 
@@ -87,7 +87,7 @@ A download request is a different action. The handler can state that it falls ou
 
 A directory contains two people named Mara. The appointment refers to one and the account request to the other. The handler first establishes the participant identity using the relevant sources. The appointment cannot be applied to the second person merely because the name matches.
 
-If the identity and appointment were already unambiguous in an adequate request, the handler would reuse them. This pattern does not impose duplicate identity checking on every case.
+If the identity and appointment were already unambiguous in an adequate request, the handler would reuse them.
 
 #### ADM.2:5.3 - An applicable rule and an unresolved conflict
 
@@ -99,7 +99,7 @@ In the second branch, the same grant, restriction, intended action and decision 
 
 ### ADM.2:6 - Bias-Annotation
 
-Organizational charts and provider tools tend to foreground staff and ignore claimants, contractors, external counterparties or people represented by someone else. Include a participant when their relation changes the requested action, even if the convenient tool has no field for it.
+Organizational charts and provider tools tend to foreground staff and ignore claimants, contractors, external counterparties or people represented by someone else. Include a participant when the requested action depends on their relation, even if the convenient tool has no field for it.
 
 Visible seniority can also bias a handler toward assuming authority. Recover the action-specific basis when it matters; expertise, employment, ownership and permission can have different implications under the supplied rule.
 
@@ -112,7 +112,7 @@ For the named action, examine whether:
 3. Its action, resource, interval and relevant restriction fit this use.
 4. A role title, authenticated identity or technical capability has not replaced a missing institutional condition.
 5. The result distinguishes an established relation, an unresolved claim and a missing decision.
-6. The next request names both the missing result and someone competent to supply it.
+6. If a contribution is missing, the request names what is needed and its competent source, or identifies the unresolved responsibility.
 
 The participant account supports the receiving action only within those conditions. It does not establish that the action was performed.
 
@@ -132,17 +132,17 @@ The account may require qualified interpretation of a policy or relation. That c
 
 ### ADM.2:10 - Architectural Rationale
 
-The pattern begins with the action because that determines which relations matter. Starting from every relation a person has would make an ordinary service request unnecessarily large. Starting from a job title alone would lose the conditions that justify the action.
+The pattern begins with the action because that determines which relations matter. Starting from every relation a participant has would make an ordinary service request unnecessarily large. Starting from a job title alone would lose the conditions that justify the action.
 
-General relation and permission instructions remain with their FPF suppliers. The administrative contribution is the use-specific join: whose institutional standing supplies the requested condition, whose decision is needed, and which provider can act on it. That join can remain a readable sentence when the inputs are adequate.
+General relation and permission instructions remain with their FPF suppliers. For the administrative action, establish whose institutional standing supplies the requested condition, whose decision is needed, and which provider can act on it. A short statement may suffice when the relations and their grounds are clear.
 
 ### ADM.2:11 - SoTA-Echoing
 
-The practice question is how to use organizational standing without confusing identity, eligibility, decision authority and provision. The selected line adopts A.6.REL's obtaining-versus-assertion distinction and A.2.8.PER's granted-permission distinctions, and adapts the laboratory's rule-owner, handler and provider separation to the administrative request.
+The practice question is how to use organizational standing without confusing identity, eligibility, decision authority and provision. A.6.REL explains how to establish whether a reported relation holds. For a permission question, A.2.8.PER distinguishes a valid grant, its exercise and a finding that the action is not prohibited. The laboratory cases illustrate how to distinguish the rule owner, handler and provider in a request.
 
 One alternative is to infer entitlement from a directory identity, organizational title or technical account. NIST SP 800-63-4 is a bounded comparator: its identity-proofing, authentication and federation model helps identify what a digital-identity result actually establishes. It does not decide this archive's eligibility or read grant. That comparison changes §§4.1–4.3 and the access case: retain the supplied identity result and obtain only the different relation that remains missing. The extra explicitness is justified when that difference changes the action; adequate combined inputs can still be reused directly.
 
-The May and June laboratory discussions provide failure examples and the specialist/handler distinction. OCE.6 supplies an actual assignment method for its own organizational-change question. Neither a reported incident nor an identity standard proves that a local authority relation obtains; the supplied rule and case facts do that work.
+The May and June laboratory discussions provide failure examples and the specialist/handler distinction. OCE.6 explains how to establish assignments for organizational change; reuse an applicable assignment under its terms. Neither a reported incident nor an identity standard proves that a local authority relation obtains; the supplied rule and case facts do that work.
 
 Reconsider how the handler establishes participant standing and authority for the intended action if a different institutional regime changes who can decide, if a grant's beneficiary or scope cannot be resolved by these instructions, or if a simpler available method preserves the same action-changing relations more reliably.
 
@@ -150,6 +150,6 @@ Reconsider how the handler establishes participant standing and authority for th
 
 ADM.1 supplies the needed administrative condition when the action is unclear. ADM.3 determines the relevant effective time or relation change. ADM.4 handles incompatible or differently organized accounts of the participant or relation.
 
-A.6.REL supplies relation obtaining and conditional occurrence identity. A.2.8.PER supplies the permission distinctions. OCE.6 can supply an adequate effective assignment; SIE.5 supplies identity resolution when sources do not select the participant reliably. The case's existing service instruction uses the resulting facts for its own decision and provision.
+A.6.REL supplies relation obtaining and conditional occurrence identity. A.2.8.PER supplies the permission distinctions. OCE.6 can supply an adequate effective assignment; SIE.5 supplies identity resolution when sources do not select the participant reliably. Return the established facts to their recipient. If a service decision or provision follows, apply its existing instruction within the conditions those facts support.
 
 ### ADM.2:End

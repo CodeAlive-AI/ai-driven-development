@@ -1,6 +1,6 @@
 ## SIE.Reference:17 - Representative case coverage
 
-The five applications are constructed method demonstrations, not evidence of a production integration, product release, recall decision, analytic validity, provider performance, or practical effectiveness.
+The five constructed cases demonstrate the methods. Claims about deployment, analytic validity, provider performance or practical effects need evidence for that claim in its setting. To establish a release, recall or other domain decision, identify the decision made by the responsible authority.
 
 | Case | What it tests | Boundary for reuse |
 | --- | --- | --- |

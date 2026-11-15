@@ -27,13 +27,13 @@ Name the act and corporation. Identify the provision or qualified interpretation
 
 For an appointment or removal, determine who can initiate, nominate, decide and make it effective. Recover eligibility, consent, term and any other condition that changes the proposed act. A nomination identifies a candidate when the rule still requires another act of appointment. Removal from an office and the consequences for an employment or other contract may require separate answers.
 
-For an existing holder, establish whether the relied-on appointment has taken effect and remains in force. Use the existing authoritative result where sufficient. A disputed date or missing condition requires investigation of that issue, not automatic recreation of every appointment record.
+For an existing holder, establish whether the relied-on appointment has taken effect and remains in force. Use the existing authoritative result where sufficient. A disputed date or missing condition requires investigation of that issue.
 
 #### CGOV.3:4.2 - Trace a delegation and its limits
 
 Where the act relies on delegation, identify the delegating power, recipient, permitted acts, conditions and effective period. Check whether the source permits the delegation and, where relied on, further delegation. A person's title can help find that basis but does not supply its terms.
 
-Apply the limits to the whole proposed act: for example, amount, kind of transaction, territory or requirement for joint action. A reserved matter is a matter retained for a specified decision or consent. Resolve its interaction with the delegation rather than treating the two as interchangeable permission labels.
+Apply the limits to the whole proposed act: for example, amount, kind of transaction, territory or requirement for joint action. A reserved matter is a matter retained for a specified decision or consent. Establish how the reservation limits or qualifies the delegation.
 
 Separate the authority to decide from the authority to communicate, sign or implement the result where different rules govern them. Also retain any other party's required consent. An organ's decision power does not establish that the consent has been given.
 
@@ -59,11 +59,11 @@ In a constructed corporation, the supplied rules and effective instruments estab
 
 On 25 September, a purchase of 120 is proposed. Applying the amount condition sends the decision to the board. Dana's future appointment supplies no present participation right. After a valid board decision, the purchasing officer can sign under the signing authority. The officer's ability to sign did not authorize the purchase.
 
-Change the purchase to 80 with the other conditions unchanged. The operations director can use the existing delegation. Sending the matter to the board merely because the earlier case needed it would add an unnecessary approval.
+Change the purchase to 80 with the other conditions unchanged. The existing delegation lets the operations director approve it without a separate board decision.
 
 #### CGOV.3:5.2 - A real constitutional example
 
-The United Kingdom's model articles for private companies limited by shares distinguish directors' management powers, a shareholder reserve power, delegation and appointment in articles 3–5 and 17. They illustrate why appointment, a shareholder direction and a delegated executive act require different questions. A company can use amended articles, and other law can affect their operation. The example therefore begins by establishing which provisions actually govern the company; it does not install those model articles as a universal governance arrangement.
+The United Kingdom's model articles for private companies limited by shares distinguish directors' management powers, a shareholder reserve power, delegation and appointment in articles 3–5 and 17. They illustrate why appointment, a shareholder direction and a delegated executive act require different questions. A company can use amended articles, and other law can affect their operation. Determine which provisions govern the company before relying on the model articles.
 
 ### CGOV.3:6 - Bias-Annotation
 
@@ -87,13 +87,13 @@ Practitioners can send a matter to the right decision maker, use a valid delegat
 
 ### CGOV.3:10 - Architectural Rationale
 
-Corporate authority combines a source of power with a particular holder or organ, act and conditions. Keeping those relations visible explains both why an arrangement permits action and where it stops. It avoids replacing corporate rules with a generic responsibility chart, while allowing that chart to remain a useful summary.
+Corporate authority combines a source of power with a holder or organ, act and conditions. Keeping those relations visible explains both why an arrangement permits action and where it stops. It avoids replacing corporate rules with a generic responsibility chart, while allowing that chart to remain a useful summary.
 
 ### CGOV.3:11 - SoTA-Echoing
 
 The selected source line is authority under the applicable corporate arrangement. The [UK model articles](https://www.gov.uk/government/publications/model-articles-for-private-companies-limited-by-shares/model-articles-for-private-companies-limited-by-shares), articles 3–5 and 17–18, provide a concrete example of differentiated powers and appointment conditions. [Companies House guidance on model articles](https://www.gov.uk/guidance/model-articles-of-association-for-limited-companies) explains their status and variation. This pattern adopts provision-based recovery while leaving the legal content jurisdiction-specific.
 
-A responsibility matrix is a useful alternative summary when its assignments are already established. It becomes inadequate when it is asked to prove a power that its authors never recovered. The additional work here is limited to that unresolved power and its conditions. These sources explain a possible legal arrangement, not that it produces better corporate performance or applies to every company. Changes in law, constitution, appointment or delegation reopen the affected authority conclusion.
+A responsibility matrix is a useful alternative summary when its assignments are already established. It becomes inadequate when it is asked to prove a power that its authors never recovered. The additional work here is limited to that unresolved power and its conditions. The sources illustrate the powers and appointment conditions of one legal arrangement. Changes in law, constitution, appointment or delegation reopen the affected authority conclusion.
 
 ### CGOV.3:12 - Relations
 

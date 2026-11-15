@@ -14,11 +14,11 @@ selected structures, conditions, evidence, and assumptions that can change that 
 
 The first useful result is a **bounded engineering-use account**. It describes how an actual System participates,
 or how an intended System is expected to participate, in one named use situation. The account is an episteme used
-by the decision. The situation, actual Systems, containing wholes, and other obtaining relations remain its
+by those making the decision. The situation, actual Systems, containing wholes, and other obtaining relations remain its
 world-side subjects.
 
-Do not use this pattern merely to draw a context diagram or inventory every nearby object. Use the governing FPF
-pattern directly when one already-known relation—such as parthood, interface, interaction, flow, or an architecture
+Stop with the relations that answer the use decision. Use the governing FPF
+pattern directly when one known relation—such as parthood, interface, interaction, flow, or an architecture
 relation—answers the question. Use `SYSE.1` when the relation between that engineering subject and the product SoI is unclear. A creator retains its own engineering-use question while serving the product use.
 
 #### SYSE.16:0.1 - Terms and Distinctions
@@ -29,7 +29,7 @@ relation—answers the question. Use `SYSE.1` when the relation between that eng
 | use situation | A bounded actual situation in which the System participates, or a described possible-future situation in which the intended referent would participate. A scenario or diagram is a description of that situation. |
 | containing whole | An actual System of which the selected System is a proper part under a stated relation, or a possible-future whole in a proposed proper-part claim. One System can belong to several relevant wholes under different relations. |
 | suprasystem | Optional source wording for a containing whole. Use it only when the proper-part claim is stated. |
-| other System in the use situation | An actual System, or intended referent, connected by a named non-part relation that matters to the decision. Examples include an interaction or transfer between named Systems; observation of one System by another; access granted by a provider System to a receiving System; supply of a named result from provider to receiver; receipt or use of that result; a commitment between named Agents; or a consequence relation. Each example names its own relation. |
+| other System in the use situation | An actual System, or intended referent, connected by a named non-part relation that matters to the decision. Examples include an interaction or transfer between named Systems; observation of one System by another; access granted by a provider System to a receiving System; supply of a named result from provider to receiver; receipt or use of that result; a commitment between named Agents; or a consequence relation. |
 | operating condition | A decision-relevant condition—for example, temperature, load, connectivity, price, an applicable regulation, or an available resource. A condition is a System only when it independently meets the System criteria. |
 | functional organization | Selected transformation flows, interactions, and contributions, with the actual Systems that bear or participate in them. |
 | constructive organization | Selected actual or proposed parts, bearers, modules, interfaces, and connections. Establish its parthood and connection relations independently of functional contribution. |
@@ -66,7 +66,7 @@ Recurring tensions include:
 - Project boundaries simplify Work, while outside Systems and conditions can still change the engineering choice.
 - One System can participate in several wholes and selected structures at once.
 - Functional transformation and constructive structure must correspond without being collapsed.
-- Design choices concern possible futures; actual participation and observed conditions concern what obtains.
+- Design choices concern possible futures; claims about actual participation or observed conditions concern what has happened or currently holds.
 - Relevant surroundings continue to change—for example, providers, users, infrastructure, rules, competing
   offerings, or operating conditions.
 - Existing vocabulary helps communication but can import ownership, lifecycle, or stakeholder assumptions that do
@@ -101,11 +101,11 @@ obtain any missing specialist result from its domain before relying on it.
    permission or commitment between named participants, an available resource, or an operating constraint. When
    performed provider Work matters, identify the dated Work occurrence, performer Agent, and applied Method
    separately. For proposed provider Work, identify the intended Work, performer and Method, and the commitment
-   or capability evidence actually available. Then name only the direct relations used by the decision: Agent
+   or capability evidence available. Then name only the direct relations used by the decision: Agent
    participation in the Work, result production, supply or access from provider to receiver, receipt or use of
    the result, a commitment, or another governed provision relation. Distinguish obtaining relations from
-   proposed ones; a commitment does not establish that Work or delivery occurred. Do not hide these objects or
-   relations under *environment*.
+   proposed ones. A commitment does not establish that Work
+   or delivery occurred.
 6. **Separate future choices from present facts.** Mark descriptions as observations, predictions, design choices,
    commitments, or unsupported assumptions. A proposed interface or whole does not obtain merely because a model
    contains it.
@@ -113,9 +113,9 @@ obtain any missing specialist result from its domain before relying on it.
    providers, uses, or regulations—can change during the relevant horizon and which change would reopen the
    concept, architecture, offering, assurance, or configuration decision.
 8. **Return the result needed by the decision.** Supply the supported relations and conditions, or the material
-   mismatch, alternative, evidence need or unresolved assumption, to the receiving engineering Work. Leave unrelated surroundings out.
+   mismatch, alternative, evidence need or unresolved assumption, to the receiving engineering Work.
 
-The numbered steps explain the Method. Determine Work order from the actual dependencies. Observation,
+The numbered steps explain the Method. Determine Work order from the dependencies and conditions of the work. Observation,
 concept development, architecture development and trials can overlap and recur while outside Systems change.
 
 #### SYSE.16:4.2 - Record the Result
@@ -128,7 +128,7 @@ concept development, architecture development and trials can overlap and recur w
 | constructive organization | Selected parts, bearers, interfaces, modules, and connections needed by the use. |
 | other Systems and conditions | Providers, users, resources, constraints, and their stated obtaining or possible-future relations. |
 | epistemic status | Observation, evidence-backed claim, prediction, design choice, commitment, or unsupported assumption. |
-| co-change and return | Outside changes that reopen the decision, evidence that would reveal them, and the mismatch, alternative, or missing result supplied to receiving Work. |
+| co-change and return | Outside changes that reopen the decision, evidence that would reveal them, and the supported result, mismatch, alternative, or missing result supplied to receiving Work. |
 
 For a bounded first result, one decision-changing containing or neighbouring System, one named relation or
 condition, its epistemic status and one result for that decision may suffice. For an unknown that can change
@@ -137,10 +137,10 @@ from the use situation and System whole they describe.
 
 #### SYSE.16:4.3 - What Changes in Practice
 
-The engineer stops asking only what lies outside a product box and asks which Systems, structures, direct
-relations, and conditions make this use work. Functional transformation and constructive structure stay
-separate, outside change becomes an engineering input, and unsupported assumptions become visible results rather
-than hidden context.
+The engineer identifies the Systems, structures, direct
+relations, and conditions that make this use work. Functional transformation and constructive structure stay
+separate, outside change becomes an engineering input, and the account identifies
+any assumptions that remain unsupported.
 
 ### SYSE.16:5 - Worked Case: Upgrading an Occupied Building's Heat-Pump Plant
 
@@ -151,7 +151,7 @@ while the plant responds to grid signals.
 The engineering-use account distinguishes these structures and relations:
 
 - **Actual System and containing whole.** The heat-pump plant is an actual System and a proper part of the
-  building heating System. The proposed controller is still an intended referent. The occupied building and its
+  building heating System. The proposed controller is an intended referent. The occupied building and its
   heating System are not assumed to be the same whole.
 - **Functional transformation and transfers.** An electricity-distribution System transfers electrical energy
   through the feeder. A signal channel transmits demand-response information. The plant transfers thermal energy
@@ -161,9 +161,9 @@ The engineering-use account distinguishes these structures and relations:
   also identifies the hydronic connections, proposed controller interface and signal channel. Required clearance
   around the cabinet is a spatial condition on its location and maintenance access. Establish the part and
   connection relations independently of the functional-flow description.
-- **Maintenance supply, access, and Work.** Under `MaintenanceCommitment-14`, maintenance company `HeatCare-7` commits to supply `ControllerInspectionResult-14` to building operator `BuildingOperator-1` before the controller-configuration decision. The building operator grants `HeatCare-7` plant-room access during stated windows. Technician `T-4` is the intended Agent for `ControllerInspectionWork-14`; that Work has not occurred. If it occurs, the Work produces the inspection result, `HeatCare-7` supplies the result to `BuildingOperator-1`, and the operator receives it for the controller-configuration decision.
+- **Maintenance supply, access, and Work.** Under `MaintenanceCommitment-14`, maintenance company `HeatCare-7` commits to supply `ControllerInspectionResult-14` to building operator `BuildingOperator-1` before the controller-configuration decision. The building operator grants `HeatCare-7` plant-room access during stated windows. Technician `T-4` is the intended Agent for `ControllerInspectionWork-14`; that Work has not occurred. The plan calls for the Work to produce the inspection result, for `HeatCare-7` to supply the result to `BuildingOperator-1`, and for the operator to receive it for the controller-configuration decision. Establish which of these events have occurred when the decision depends on them.
 - **Systems that may bear consequences.** Residents in a nearby building may experience increased low-frequency
-  noise during night cycling. A model supports this possible consequence; no night measurement yet establishes
+  noise during night cycling. A model supports this possible consequence; no night measurement has established
   an observed effect.
 - **Unsupported assumptions.** Sensor latency and occupant override behaviour are unknown at the required load. A
   planned insulation change may alter the thermal model. Cabinet clearance is supported by a drawing but has not
@@ -178,8 +178,8 @@ The account changes three next decisions. The Agent applying `SYSE.17` uses the 
 maintenance-access consequences. The Agent applying `SYSE.8` uses the maintenance commitment, provider and access
 relations, and the need for the inspection result. The Agent applying `SYSE.2` uses the revised use claims and
 low-noise and cabinet-location alternatives. If the team also considers remote monitoring, that is a proposed
-offering: this account establishes neither its provider commitment nor its authority. The dependent remote-
-monitoring claim remains conditional. The team can act on the supported inputs.
+offering: this account establishes neither its provider commitment nor its authority. The remote monitoring claim remains conditional. The team can act on the supported inputs.
+
 **When the full pattern is unnecessary.** If the current question is only whether one already identified sensor
 is a proper part of one known controller under an admitted relation, use the direct System and parthood patterns.
 A broader engineering-use account adds no value.
@@ -231,7 +231,7 @@ accepts incomplete coverage of other uses; broaden the work when an omitted situ
 
 ### SYSE.16:10 - Rationale
 
-Systems matter through particular part, interaction, transformation, interface, transfer, and consequence
+Systems matter through part, interaction, transformation, interface, transfer, and consequence
 relations under conditions. FPF supplies the general ontology for those claims. The engineering specialization is
 the repeatable move from one use decision to the outside relations and conditions that can change concept,
 architecture, offering, assurance, configuration, or continuing development.
@@ -248,9 +248,9 @@ alternative when operational situations or agreement about intended use still ne
 It develops and challenges scenarios; identifying a few relations cannot supply that broader result.
 
 The bounded connection accepts limited coverage in exchange for concentrating the account on one decision.
-It still needs the applicable evidence and specialist contributions. Section :4 makes this choice at entry;
+It needs the applicable evidence and specialist contributions. Section :4 makes this choice at entry;
 steps 1–6 recover the missing connections, and steps 7–8 return changed conditions to the affected decision.
-The thin :4.2 result is sufficient only within that use. In :5, cabinet location returns a spatial-evidence
+The bounded result in :4.2 is sufficient only within that use. In :5, cabinet location returns a spatial-evidence
 question, whereas unsettled occupant/grid behaviour returns scenario development. An adequate earlier answer
 can be reused in either branch.
 
@@ -266,7 +266,7 @@ Retain qualified evidence for unaffected claims while revising the dependent con
 
 ### SYSE.16:12 - Relations
 
-- `SYSE.1` can supply the engineering subject and its product-use grounds, decision, boundary question, alternatives and reopening evidence. A creator is usable as the engineering subject without another SoI designation. These dependencies create no temporal order.
+- `SYSE.1` can supply the engineering subject and its product-use grounds, decision, boundary question, alternatives and reopening evidence. A creator is usable as the engineering subject without another SoI designation. These result dependencies do not prescribe when to do the work.
 - `A.1.SCR` distinguishes an actual acting or changed System from a designation, role word, description, process,
   or organization label.
 - `A.22` governs each selected structure. `A.6.F` restores function, bearer, capability, Work, and

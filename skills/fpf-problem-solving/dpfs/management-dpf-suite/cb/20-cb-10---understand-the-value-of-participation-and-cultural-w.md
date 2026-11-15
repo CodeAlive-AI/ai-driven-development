@@ -5,13 +5,13 @@
 
 ### CB.10:1 - Problem frame
 
-Use this pattern when people need to decide whether a cultural or community arrangement is useful, what to change, or what support to continue, and visible activity does not answer that question. Meetings may be well attended while the intended help remains absent. A quiet reader may use a guide successfully without posting. An employer may ask what changed in practice after staff spent time together.
+Use this pattern when you need to decide whether a cultural or community arrangement is useful, what to change, or what support to continue, and visible activity does not answer that question. Meetings may be well attended while the intended help remains absent. A quiet reader may use a guide successfully without posting. An employer may ask what changed in practice after staff spent time together.
 
 The subject is the value and burden of the arrangement for its participants, contributors, independent users and supporters. The move is to recover particular experiences and uses, connect them with relevant observations, and obtain an account that informs a practical decision. This includes cultural work whose carriers do not communicate with one another.
 
-The first useful result states what people received or did, what changed, which contribution the evidence supports, what remains uncertain and which condition should be continued or changed. A useful conversation or sense of welcome can be a result in its own right. A promise of improved work also needs evidence from that work.
+The first useful result states what those affected received or did, what changed, which contribution the evidence supports, any material uncertainty and which condition to keep or change. A useful conversation or sense of welcome can be a result in its own right. A promise of improved work also needs evidence from that work.
 
-The intended user can talk with affected people and obtain or commission the observations needed for the decision. The pattern develops practical inquiry and feedback. A causal estimate, specialist capability judgement or formal method trial requires the corresponding method and evidence.
+The intended user can use accounts from those affected and obtain or commission the observations needed for the decision. The pattern develops practical inquiry and feedback. A causal estimate, specialist capability judgement or formal method trial requires the corresponding method and evidence.
 
 **Ordinary non-use.** When the result is already established at the needed scope and the only difficulty is allocating the agreed support, use CB.9. A routine attendance count needed to book a suitable room can remain a routine count. Return here when its interpretation or the activity's usefulness is in question.
 
@@ -36,19 +36,19 @@ How can an organiser investigate the contribution and its limits well enough to 
 
 ### CB.10:4 - Solution
 
-Begin with the practical decision, follow specific experiences into their receiving use, and compare the account with observations that could confirm, limit or contradict it. Return the result to participants as a reason for a concrete next move.
+Begin with the decision and a specific experience or contribution. If later use matters to the decision, trace what the recipient did with the contribution as far as the evidence allows. Compare the account with observations that could support, limit or contradict it, and state what the missing cases leave unknown. Return the supported result to participants and those who can act. If they change a condition, observe what follows.
 
-**Working reminder:** choose the decision; recover an occurrence; follow its use; compare evidence and missing cases; change a condition; return and observe the result.
+
 
 #### CB.10:4.1 - Name whose decision and whose value matter
 
-Recover the question with the person who will use the result. Continuing a monthly exchange, correcting an invitation, funding a guide and claiming reduced service cost require different evidence. Name the period and the change being considered, including leaving an adequate arrangement alone.
+Recover the question with whoever will use the result. Continuing a monthly exchange, correcting an invitation, funding a guide and claiming reduced service cost require different evidence. Name the period and the change being considered, including leaving an adequate arrangement alone.
 
-Ask affected people what would count as useful and what would count as an unacceptable burden. Keep differences visible. A participant may value a dependable answer, an organiser a manageable workload, and a sponsor a competent workforce. A gain for one party can coexist with a loss for another.
+Ask those affected what would count as useful and what would count as an unacceptable burden. Keep differences visible. A participant may value a dependable answer, an organiser a manageable workload, and a sponsor a competent workforce. A gain for one party can coexist with a loss for another.
 
 Distinguish the claims before selecting observations. Useful questions can concern experience and inclusion, relationships, access to a resource, ability to perform a practice, actual use, results in that use, or the provision and governance of the arrangement. Choose the question that matters to the receiving decision.
 
-For a cultural result, use the distinctions in CB.1 and [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md): people carrying a practice, their opportunities to enact it and the continuation of the practice are related but different subjects. A registration or download count alone does not establish any person's capability or later use.
+For a cultural result, use the distinctions in CB.1 and [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md): those who carry a practice, their opportunities to enact it and the continuation of the practice are related but different subjects. A registration or download count alone does not establish a carrier’s capability or later use.
 
 Choose further inquiry only when an attainable answer could improve the decision enough to justify the burden of obtaining and using it. An account of the last failed entry may suffice to repair a confusing invitation. A claim about programme-wide value needs a broader and appropriately selected evidence base. State the scope before a vivid case becomes a statement about everyone.
 
@@ -66,7 +66,7 @@ Keep collection proportionate. Start with a small number of useful observations 
 
 #### CB.10:4.3 - Recover the path from experience to use
 
-Ask for one particular occasion, preferably in the person's own account. Recover what happened, what the person received, what they subsequently did with it and what difference that made. A story can begin with a later result and work backwards. Check time order and retain where the account ends.
+Ask for one particular occasion, preferably in the recipient’s own account. Find out what happened, what the recipient obtained, what they did with it and what difference that made. An account can start with a later result and work backwards. Check the order of events and identify where the evidence ends.
 
 For social learning, the Guidebook's four basic value cycles help ask different questions:
 
@@ -107,21 +107,21 @@ Consider competing explanations that matter here. New participants, seasonal dem
 
 Keep the population claim within the evidence. A useful case can justify trying a repair without establishing how often the problem occurs. Several positive cases selected by an enthusiastic host still leave unsuccessful and nonresponding people outside the conclusion. Name a missing observation only when it affects reliance or the next decision.
 
-Include burdens and distribution in the judgement. More answers can coexist with exhausted experts; a helpful resource can be inaccessible to newcomers. MA can supply a missing cost account, and HCD can supply a needed capability judgement. Do not collapse these unlike consequences into an overall “community health” number unless a warranted decision rule actually requires and supports that aggregation.
+Include burdens and distribution in the judgement. More answers can coexist with exhausted experts; a helpful resource can be inaccessible to newcomers. MA can supply a missing cost account, and HCD can supply a needed judgement about human capability. Do not collapse these unlike consequences into an overall “community health” number unless a warranted decision rule actually requires and supports that aggregation.
 
 #### CB.10:4.6 - Change the condition that the inquiry exposes
 
-Turn the account into a proposed action with a responsible receiver. A person who cannot find the first task may need a clearer entry through CB.3. A useful discussion that never reaches its intended work may need a recipient or application opportunity through CB.5. Missing time or access returns to CB.9; an inadequate practice returns to CB.14 or its actual method supplier.
+Turn the account into a proposed action with a responsible receiver. A person who cannot find the first task may need a clearer entry through CB.3. A useful discussion that never reaches its intended work may need a recipient or application opportunity through CB.5. Missing time or access returns to CB.9; an inadequate practice returns to CB.14 or the practice that supplies the method.
 
 Compare a change with a credible alternative, including retaining the current arrangement. Ask what useful result should appear, what burden it adds and what would make the change unsuitable. Provide the permissions, people and resources before treating the proposal as a commitment.
 
-Try the change at the scale appropriate to the decision. Observe the particular use that prompted it and a consequential contrasting use when that distinction is still unresolved. Record what was changed and what actually happened; a simultaneous change elsewhere may prevent attributing a later difference to this one.
+Try the change at the scale appropriate to the decision. Observe the particular use that prompted it and a consequential contrasting use when that distinction is still unresolved. Record what was changed and what happened; a simultaneous change elsewhere may prevent attributing a later difference to this one.
 
 If the inquiry exposes a different purpose, return to CB.1 with the affected participants. If the arrangement no longer merits or can obtain support, CB.11 develops continuation, transfer, separation or ending. A decline in activity by itself does not choose among those responses.
 
 #### CB.10:4.7 - Return the result and keep the learning loop useful
 
-Return what was learned to those who supplied the experience and those who can act. Explain the supported benefit or failure, the limit on the conclusion and the next change. Use the detail needed by each receiver while preserving consequential uncertainty and permission for reuse.
+Return what was learned to those who supplied the experience and those who can act. Explain the supported benefit or failure, the limit on the conclusion and the decision the result supports. Use the detail needed by each receiver while preserving consequential uncertainty and permission for reuse.
 
 Let participants use the account to improve their own practice. A failed application can become a correction to shared guidance; a successful adaptation can become a candidate for another context. CB.14 and Core's Method-development family qualify any wider method claim. A sponsor's summary can draw on that same grounded account without replacing it with an unsupported impact total.
 
@@ -135,7 +135,7 @@ In a constructed network of repair workshops, a sponsor asks whether monthly dis
 
 A participant recounts one exchange in which a colleague explained why the next workshop needed the actions already tried. The participant uses the shared handover form and adds those actions to a later handover. The receiving technician identifies the next inquiry without repeating that request. With permission, the organiser compares the account with the handover and the recipient's recorded first response. These observations support the claimed use and immediate result in that case.
 
-A second participant copied the same handover form but filled its “prior actions” field with “usual checks.” The recipient still had to ask what had actually been done. A third participant obtained the explanation but has had no relevant case yet. The inquiry retains failed use and potential use alongside the first success.
+A second participant copied the same handover form but filled its “prior actions” field with “usual checks.” The recipient still had to ask what had been done. A third participant obtained the explanation but has had no relevant case yet. The inquiry retains failed use and potential use alongside the first success.
 
 The participants revise the prompt to request the actual actions and results and try it with the second workshop. Comparing preparation of two similar handovers, they observe that the revised account takes about two more minutes. Its recipient can select the next inquiry from the information supplied. The observed repair concerns handover information; equipment differences and other workshop changes still affect total repair time.
 
@@ -157,7 +157,7 @@ The organisers use CB.6 to change what receives recognition and CB.5 to improve 
 
 A walking group exists partly for companionship. Members describe feeling welcome, name occasions when they could join a conversation and report that a changed meeting point excluded two regular participants. The organiser checks access with those participants and restores a reachable meeting arrangement.
 
-If the group later promises a health effect, that new claim needs an appropriate evidence basis.
+
 
 #### CB.10:5.5 - Sufficient evidence for an ordinary decision
 
@@ -171,12 +171,12 @@ Positive stories are easier to elicit when the collector controls access, fundin
 
 For the intended decision, check that:
 
-- The receiving decision, relevant people, period and claimed value are clear.
+- The receiving decision, the period, the claimed value and those who may benefit or bear the burden are clear.
 - Observations have meanings and populations suitable for that claim.
 - Particular accounts recover the consequential connections from experience or resource to use and result, retaining missing links.
 - Useful contrary observations, burdens and unsuccessful uses are included where they can change the judgement.
 - Reports, observed occurrences, contribution explanations and causal claims retain their different evidence requirements.
-- The proposed change has a receiver and the provision needed to try it.
+- Any proposed change has a receiver and the provision needed to try it.
 - Participants receive a usable return, and continued collection has a reason.
 
 A coherent local account can support a bounded improvement. A broader claim needs evidence with the corresponding reach.
@@ -197,7 +197,7 @@ A coherent local account can support a bounded improvement. A broader claim need
 
 The organiser obtains a more useful account of contribution, failure and burden. Participants can learn from actual uses, supporters can judge a bounded continuation, and quiet independent use can remain visible without being converted into compulsory participation.
 
-The method takes follow-up effort and can expose an unwelcome limit on an attractive claim. Some benefits remain uncertain or unobserved. Preserving that limit allows a proportionate decision while leaving the stronger unanswered question available for appropriate inquiry.
+The method takes follow-up effort and can expose an unwelcome limit on an attractive claim. Some benefits may remain uncertain or unobserved. Preserving that limit allows a proportionate decision while leaving the stronger unanswered question available for appropriate inquiry.
 
 ### CB.10:10 - Rationale
 
@@ -214,9 +214,9 @@ The practical comparison is between activity reporting, a bounded inquiry that c
 | Wenger-Trayner, Wenger-Trayner, Reid and Bruderlein, *Communities of Practice within and across organizations*, second edition (2023), printed pp.209–222 | Adapt the four basic value cycles, the additional strategic/enabling/orienting/transformative contributions, and the reciprocal use of stories and independently monitored indicators. Preserve negative value, incomplete stories, learning loops and proportionate collection. | Following a specific use costs more than counting attendance but can explain a contribution. A plausible contribution account is kept distinct from an identified causal effect; the source's reservations about control in complex settings do not establish that causal identification is impossible in every case. |
 | Spinks, *The Business of Belonging* (2021), physical PDF pp.130–137 and 173–175 | Adapt interviews and observations across different participation histories, including quiet users, to diagnose a concrete condition. | Reject universal engagement thresholds and the use of membership or activity correlations as evidence of causal business return. Local observations need their population, period and meaning. |
 | A.3.1.WT with its receiving A.3.1.CC, A.3.1.FT and C.11.MV questions | Adopt the distinction between planned activity, actual occurrence, conditions, burden and evidence reach when a method trial supplies the inquiry. | A formal trial is justified by its receiving question. Ordinary feedback is useful at its own scope and is not silently relabelled as such a trial. |
-| C.36, HCD, MA, C.28 and RMP | Retain the distinct cultural, capability, cost and causal questions and obtain the actual supplier result when it is needed. | More specialised evidence can resolve a consequential uncertainty; demanding all of it for a simple local repair would burden participation without changing that decision. |
+| C.36, HCD, MA, C.28 and RMP | Retain the distinct cultural, capability, cost and causal questions and obtain the applicable result from its supplier when it is needed. | More specialised evidence can resolve a consequential uncertainty; demanding all of it for a simple local repair would burden participation without changing that decision. |
 
-Guidebook source: [second-edition text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf), published at the 2024 URL, under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). The account here is an analytical adaptation; examples are constructed and do not imply the source authors' endorsement.
+Guidebook source: [second-edition text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf), published at the 2024 URL, under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). This publication adapts the Guidebook analytically and supplies its own constructed examples.
 
 ### CB.10:12 - Relations
 
@@ -224,7 +224,7 @@ Guidebook source: [second-edition text](https://www.wenger-trayner.com/wp-conten
 - **CB.3–CB.8, CB.12 and CB.13** provide entry, activity, recognition, organiser support, expectations, repetition and decision arrangements that an inquiry may improve.
 - **CB.9** supplies resource and burden arrangements; **CB.11** uses the warranted result when choosing continuation or ending.
 - **CB.14** receives useful adaptations and failures for qualification and maintenance of the repertoire; **CB.15 and CB.16** can supply contributions whose returns need following.
-- **C.36** supplies cultural distinctions, **HCD** a needed capability judgement, and **MA** a needed resource or cost account.
+- **C.36** supplies cultural distinctions, **HCD** a needed human capability judgement, and **MA** a needed resource or cost account.
 - **A.3.1.WT** supplies formal trial evidence when selected; **C.28 and RMP** govern an unresolved causal or research question.
 
 ### CB.10:End

@@ -8,7 +8,7 @@ Use MKT.14's case of Sever, Vector and Luch. There are three organisations and f
 
 MKT.12 asks what must be known to select the next action in each opportunity. MKT.1 recovers users, decision holders, payer, data conditions and relevant workflow. A permitted representative sample and a conversation about use can qualify a batch trial; a request for continuous integration returns a construction question to engineering. Interest from one Sever department establishes no readiness in the other.
 
-MKT.6 helps the trial participants state the useful result and what they must contribute to obtain it. MKT.2 then constructs an offer and positioning against their actual alternatives. The common demonstration can explain a shared contribution. State explicitly that continuous integration is unavailable when explaining that demonstration.
+MKT.6 helps the trial participants state the useful result and what they must contribute to obtain it. MKT.2 then constructs an offer and positioning against the customer’s alternatives. The common demonstration can explain a shared contribution. State explicitly that continuous integration is unavailable when explaining that demonstration.
 
 
 
@@ -16,7 +16,7 @@ MKT.6 helps the trial participants state the useful result and what they must co
 
 MKT.14 compares separately prepared programmes with justified common preparation. Its worked account includes research and qualification, materials and preparation of the people doing the work, adaptation, trial execution, support, coordination and updates. The two alternatives require 44 and 40 person-hours for the same stated result. Forty hours are available in addition to existing service obligations. The common arrangement fits that total with no reserve; calendars, capability and cash remain separate conditions.
 
-The programme owner uses that result with MKT.11 to obtain the actual contributions and receiving work. Sales receives the next action for each opportunity. Trial providers receive the accepted input, support and timing conditions. The programme owner receives the comparison, resource commitments and facts that reopen it.
+The programme owner uses that result with MKT.11 to secure the contributions and the work that will receive them. Sales receives the next action for each opportunity. Trial providers receive the accepted input, support and timing conditions. The programme owner receives the comparison, resource commitments and facts that reopen it.
 
 MKT.3 can now invite an appropriate response. For a qualified batch trial, that may be confirmation of an agreed sample and time. For an integration-dependent opportunity, it may be information needed to decide whether constructing that integration is worthwhile. Sending the same purchase invitation to both would conceal the reason their actions differ.
 
@@ -30,6 +30,6 @@ Suppose Vector still wants the limited trial but requires different customer-loc
 
 MKT.13 asks whether the ordinary team can repeat this work at the proposed later scale. It uses observed preparation, exceptions and support, not merely the founder's successful intervention. STR.8 and MA.8 retain the actual business contribution and dated financial alternatives. A planned positive contribution does not pay an earlier supplier bill.
 
-MKT.10 is needed if a decision depends on the incremental effect of the common programme. Two completed trials alone describe what happened; they do not identify what the alternative would have produced. Retain the outcome, unit, comparison conditions and uncertainty appropriate to that question. A bounded programme can finish usefully without making that stronger claim.
+MKT.10 is needed if a decision or a claim you need to support depends on the incremental effect of the common programme. Two completed trials alone describe what happened; they do not identify what the alternative would have produced. Retain the outcome, unit, comparison conditions and uncertainty appropriate to that question. A bounded programme can finish usefully without making that stronger claim.
 
 This application connects qualification, offer, execution and revision around MKT.14's full construction. Its ordinary alternative is a ready, independent enquiry: respond through the direct methods without creating a shared programme whose coordination adds no useful result.

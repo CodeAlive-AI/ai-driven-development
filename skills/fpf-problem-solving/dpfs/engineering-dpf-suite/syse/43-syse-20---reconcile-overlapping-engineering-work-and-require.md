@@ -4,50 +4,50 @@
 
 ### SYSE.20:0 - Use This When
 
-Use this pattern when engineering Work overlaps to shorten feedback, but some results, configurations, or safety
-conditions still require a particular order. A local improvement—for example faster simulation, earlier review,
-or self-service tooling—may delay or weaken the integrated engineering result.
+Use this pattern to establish which engineering Work may overlap, which contributions must wait and why. You can also check
+whether an arrangement serves a specified use or choose whether to retain or change it. Overlap can shorten feedback. A local improvement, such as faster simulation, earlier review
+or self-service tooling, may delay or weaken the integrated engineering result.
 
-Begin with that result and the decision that will use it. For an actual arrangement, name the performed Work
+Begin with the engineering result and the question about its use. For an actual arrangement, name the performed Work
 and the Methods it enacts. For a proposed arrangement, name the planned operations and Methods in its WorkPlan
 or intended-use account. In either case, identify the direct relations that matter. Do not infer those relations
 from a lifecycle diagram, team chart, toolchain, or list of disciplines.
 
-The first useful result explains which contributions may proceed together, what each must wait for, and
-whether the resulting arrangement can deliver the required engineering result. It carries two distinguishable
-epistemic contributions: a Method-and-Work architecture account explaining the dependencies, alternatives and
-moved burdens, and a bounded decision record stating the authorized outcome. They can share one short account.
-An authorized Agent performs the decision Work; later Agents perform implementation and test Work. The account,
-the decision and an actually changed arrangement are different results.
+An account of required order can finish with the supported dependencies, permitted overlap and any unresolved relation.
+To check an arrangement, assess whether those relations, configurations and available resources support the stated use.
+The Method-and-Work architecture account records the relations and grounds needed for the question. If a choice is requested,
+compare the relevant options and record the authorized outcome, including retention of the present arrangement when selected.
+The account and decision can share a short record. Assigned Agents perform any subsequent implementation or test Work.
+Reaching an engineering conclusion, making a decision and implementing it are distinct achievements.
 
-The intended reader can obtain the relevant engineering Methods, interpret configuration and evidence
-conditions, and consult the people responsible for specialized operations. This pattern teaches construction
-of their feasible arrangement. It does not supply an unknown curing time, simulation qualification or safety
-permission. Recover those particular inputs from their responsible source.
+The intended reader can obtain the relevant engineering Methods and interpret configuration and evidence conditions.
+This pattern shows how to arrange the engineering Work. Use applicable results for inputs such as a curing time,
+simulation qualification or safety permission. If a needed input is missing, seek it from the specialist, service
+or authority that can supply it.
 
 If a known applicable dependency already answers the question and no arrangement needs to change, apply it
-directly. If only one missing fact prevents a choice, obtaining that fact can be sufficient; there is no need
-to build a new lifecycle description.
+directly. A missing engineering fact can be the whole gap in establishing the order, checking the use or choosing an arrangement.
+Obtain that fact if feasible, or report what it prevents you from concluding.
 
-Use `C.32.MWA` when the main difficulty is synthesizing several practice structures in any domain. Use this
-pattern for the engineering specialization: overlapping contributions to an engineered System create a conflict
-among constraints such as configuration identity, integration, evidence, platform availability, or specialist
-assurance, and the project must decide whether and how to change the arrangement. Use Operations Management when the main result concerns continuing flow, queues, or throughput. Use
-Method Engineering when the reusable Method itself is the subject being developed. Use `SYSE.15` first when the
-project still lacks a usable account of its engineering Methods.
+Use `C.32.MWA` when the main difficulty is synthesizing several practice structures in any domain.
+Use this engineering specialization to decide whether contributions may overlap for a configured System
+and whether the present or proposed arrangement meets integration, evidence, platform or specialist
+assurance conditions. An actual or possible conflict among those conditions may call for a change. Use Operations Management for continuing flow, queues or
+throughput, Method Engineering to develop the reusable Method, and `SYSE.15` first if the engineering
+Methods themselves have not been identified adequately.
 
 #### SYSE.20:0.1 - Precision Restoration
 
 | Name in this pattern | What it denotes |
 | --- | --- |
-| engineering result at risk | A named result whose usability can change with the Work arrangement—for example an integration recommendation, accepted configuration, verified interface claim, released design, or usable service condition. State its kind and the decision or Work that uses it. |
-| Method-and-Work architecture account | An episteme describing the selected Method and Work structures, their direct relations, the conflict, alternatives, and moved burdens for one decision. It is a description of the arrangement. |
+| engineering result at issue | A named result whose use depends on the Work arrangement, such as an integration recommendation, accepted configuration, verified interface claim, released design or service condition. State what result is needed and how it will be used. |
+| Method-and-Work architecture account | An episteme describing the selected Method and Work structures, the direct relations relevant to the receiving question and their grounds. When comparing arrangements, include material conflicts, alternatives and moved burdens. |
 | Work overlap | A temporal relation between admitted Work occurrences whose extents intersect under a named temporal reference. Overlap alone establishes neither Work parthood nor Method composition. |
 | required order | A direct dependency that makes one occurrence or condition precede another for a named use—for example a temporal meet, transformation completion, result-use guard, configuration release, or authority condition. State the governing relation. |
 | Method unfolding | An organization of positions, branches, returns, or stops inside one identified reusable Method. Dated Work order supplies evidence about Work; it establishes a Method unfolding only when the Method structure is grounded separately. |
 | enabling or provider Work | Separately admitted Work that changes an enabling System or supplies a needed result or service. State its dependency on engineering Work; establish any Work-part relation separately. |
 | capability-development Work | Work intended to change an Agent's capability for later Work. Its earlier occurrence establishes temporal order; capability change needs its own evidence. |
-| moved burden | A burden that decreases in one scope and increases in another—for example, a material cost, delay, evidence need, dependency, risk exposure, or loss of control. Name the actual burden and receiving scope. |
+| moved burden | A burden that decreases in one scope and increases in another—for example, a material cost, delay, evidence need, dependency, risk exposure, or loss of control. Identify the burden and the scope that takes it on. |
 | reconfiguration alternative | Possible-future content proposing a change to one or more named relations in the engineering arrangement. |
 | bounded reconfiguration decision record | An episteme recording the authorized bounded choice outcome for the named result, configuration, use and time window, with its grounds and next question. A selected change can be supplied to later implementation Work; rejection, further inquiry and rerouting retain their own outcomes. |
 
@@ -58,24 +58,24 @@ specific Agent wording when agency matters to the claim.
 ### SYSE.20:1 - Problem Frame
 
 Engineering does not normally proceed as one total sequence. Modeling can overlap implementation, evidence review
-can begin before a test finishes, and provider Work can restore a service while project Work continues. At the
-same time, some dependencies are real: a test uses a released rig configuration; a simulation result refers to a
-particular model and solver configuration; a release decision waits for admitted evidence.
+can begin before a test finishes, and provider Work can restore a service while project Work continues.
+A test waits for the released rig configuration, and a release decision waits for admitted evidence.
+A simulation result must identify the model and solver configurations it used.
 
-Several structures can therefore matter to one decision. Common examples are:
+Several structures can matter to one such question. Common examples are:
 
 - a Method structure showing composition or an unfolding;
 - a Work structure showing parthood, overlap, and required order;
 - a subject structure showing the engineered System and enabling Systems;
 - a representation-use structure showing which models and evidence refer to which configuration; and
-- provider, capability-development, or cultural-change structures when they change the decision.
+- provider, capability-development or cultural-change structures when the answer depends on them.
 
-Select structures that expose a decision-relevant relation or conflict, using these examples as starting points.
+Select structures that expose a relation, condition or conflict the answer depends on.
 Their descriptions can correspond without lining up one-for-one.
 
 ### SYSE.20:2 - Problem
 
-Three recurring errors make the engineering arrangement hard to change.
+Three recurring errors hide how an engineering arrangement works and what must be reconciled before it changes.
 
 First, a sequence-only account serializes Work that could overlap and postpones integration feedback. Second, an
 “everything is concurrent” account loses guards and result dependencies. Third, a diagram turns unlike relations
@@ -85,7 +85,7 @@ occupy different rows.
 Local optimization then hides the project result. Faster code generation can increase review and integration
 delay. More simulation can strengthen a claim about the wrong configuration. A self-service platform can shorten
 setup while moving maintenance and assurance burdens to a provider. The local metric improves, but the receiving
-engineering decision gains no usable result.
+work gains no usable result.
 
 ### SYSE.20:3 - Forces
 
@@ -99,37 +99,37 @@ The recurring tensions are:
   concerns when the engineering result depends on them.
 - A project can choose a new arrangement, while cultural continuation depends on later recognition, enactment,
   selection, and retention.
-- More views can reveal a hidden conflict, while views that cannot change the decision add reading and maintenance
+- More views can reveal a hidden conflict, while views that cannot improve the answer add reading and maintenance
   cost.
 
 ### SYSE.20:4 - Solution
 
-Describe the current engineering arrangement through the structures that change the decision. State each
-direct relation, expose the conflict and moved burdens, generate materially different reconfigurations, and let an
-authorized Agent decide whether and how to change the arrangement and return the actual bounded outcome.
+Describe the actual or proposed arrangement through the structures that bear on the engineering question. Establish which operations can overlap, which depend on a result or condition, and why.
+If the question concerns suitability, test the arrangement against its specified use, including resource conflicts and material burdens. Return the supported conclusion and its limits.
+If a choice is requested, use or construct materially different alternatives. The authorized Agent decides whether to retain or change the arrangement and states the grounds and scope.
 
 #### SYSE.20:4.1 - Pattern-Use Unfolding
 
-The reusable Method has the following eight recurring moves. They organize use of this pattern; they do not claim that
-the project's engineering Work occurs as eight consecutive stages.
+Use the moves that produce the requested account, assessment or choice. Project Work can overlap, recur or follow another
+order; the order of this explanation does not establish or prescribe its timing.
 
-1. **Decision boundary.** The Agent names the engineering result at risk, its configuration and intended use, the
-   decision that needs it, the time window, and the authority for changing the Work arrangement.
+1. **Receiving question.** Identify the engineering result, configuration, intended use and time window. State whether the question concerns
+   order, suitability for that use, or a choice. For a choice, name the deciding Agent and the scope of its authority.
 2. **Obtaining Work and Methods.** The Agent identifies representative performed Work with its extent, performing
    Agents, assignments when attribution matters, and enacted Methods. A possible-future arrangement instead uses
-   a WorkPlan or intended-use description and names the later Work that would test it.
+   a WorkPlan or intended-use description. State what later work would be needed to establish a claim about actual performance.
 3. **Direct Work relations.** The Agent states every needed Work relation—for example parthood, temporal overlap,
    required order, result use, or service dependency—through its governing pattern. A common interval is evidence
    only for overlap; a Work part supplies no Method-part claim.
-4. **Decision-relevant companion structures.** Other structures—for example subject, representation,
-   configuration, provider, capability, or cultural structures—are added only when one changes the decision. Each
-   description states its subject, use, important correspondences, and losses.
-5. **Conflict and moved burden.** The Agent identifies the incompatible results or constraints and the engineering
-   consequence. Every claimed local gain names any material burden moved to another Agent, System, decision, or
-   time interval.
-6. **Alternatives.** The Agent develops a finite current option set whose members change at least one named
-   relation. Keep the feasible incumbent.
-7. **Choice.** The authorized Agent uses `C.11` or a domain decision Method to compare the fixed option set on one
+4. **Companion structures.** Include subject, representation, configuration, provider,
+   capability or cultural structures when the dependency, assessment or choice relies on them. State each
+   included structure's subject, use, important correspondences and losses.
+5. **Conflict and moved burden.** Identify any conflict or burden on which the requested answer depends. For an assessment or choice, establish whether the relevant results and
+   constraints are compatible and what that means for the engineering result. State which Agent, System, decision or time interval receives any material burden moved
+   by a local gain.
+6. **Alternatives for a choice.** When a choice is requested, use a finite set. Identify the relation distinguishing each proposed change. Develop a missing alternative
+   by changing a named relation. Include the present arrangement when retaining it is feasible.
+7. **Authorized choice.** For that decision, the authorized Agent uses `C.11` or a domain decision Method to compare the fixed option set on one
    stated basis and choice rule. Record the actual outcome: a selected alternative or retained tie-set with its
    grounds; rejection of the current set with its reason; a chosen next probe and the comparison defect it would
    resolve; or rerouting to a named receiving question. Retain accepted losses, preserved constraints, missing
@@ -143,11 +143,11 @@ For a claimed constituent connection, use B.1.5.EW to select a moment and recove
 
 ##### SYSE.20:4.1.1 - Derive the dependencies from the result that must become usable
 
-Start at the receiving use and work backward. For an integration recommendation, ask what must be true of
-the assembled evidence before the lead can make it. Follow each needed result to the operation that produces
-it, then ask its performer which inputs are needed to start, to continue and to finish that operation.
-These can differ. A reviewer can inspect the test procedure before measurements arrive but cannot conclude
-that the measured response meets the requirement before obtaining those measurements.
+Start at the receiving use and work backward. For an integration recommendation, ask what must be true of the assembled
+evidence before the lead can make it. Follow each needed result to the operation that produces it. Establish
+from the available evidence, or ask its performer, which inputs are needed to start, continue
+and finish the operation. These can differ. A reviewer can inspect the test procedure before measurements
+arrive but needs those measurements to conclude that the response meets its requirement.
 
 Recover a dependency through its reason. A test waits for rig release because the selected test Method
 requires that physical and authorized condition. A simulation waits for a model edition when its qualifying
@@ -157,19 +157,19 @@ and its records to recover the actual arrangement; use the performers' intended 
 input needs for a prospective arrangement. Compare the two when the plan and actual practice disagree.
 
 Distinguish the direct input from an indirect influence. If a corrected model supplies simulation inputs and the simulation informs test settings,
-retain those intermediate uses before deciding what the model change affects in the test. A Dependency Structure Matrix can help recover and sequence many such relations; use its
+retain those intermediate uses before deciding what the model change affects in the test. A Dependency Structure Matrix can help recover these relations and sequence the dependent operations. Use its
 construction and sequencing methods named in :11 when coupling makes a short account inadequate. A matrix
 whose relation or direction is unclear cannot settle the order.
 
-At each receiving operation, recover only the conditions that change its use: the relevant configuration,
+At each receiving operation, recover the conditions its use depends on: the relevant configuration,
 meaning, physical state, precision, authority or availability. A version identifier helps locate a result;
 it does not establish its compatibility. Use SYSE.10 for evidence and model-use qualification, SYSE.13 for
 configuration correspondence and SYSE.14 for a release or transition decision. Preserve a qualified result
 already supplied by those Methods.
 
-Stop refining when the next arrangement decision can be made. If no one can supply an operation's input need
-or duration well enough to distinguish the options, that is the next engineering inquiry. Adding more arrows
-does not supply the missing knowledge.
+Stop when the account establishes the requested dependency or states what prevents establishing it. For an assessment, stop when it shows whether and under what conditions the arrangement meets the stated use.
+For an assigned choice, stop refining the dependencies when they suffice to compare the options or the remaining obstacle is clear. Use that account for the requested decision. If a missing input or duration matters, identify the inquiry that could supply it.
+For example, establishing that the final review needs test evidence can answer the order question without choosing a new schedule.
 
 ##### SYSE.20:4.1.2 - Separate early useful work from the use that needs a final result
 
@@ -185,7 +185,7 @@ result valid, require a bounded correction, or invalidate it. Name that basis an
 it, the word “provisional” provides no reason to expect reuse. A speculative run can still be useful for
 learning, but compare its learning value and possible repetition separately from a qualifying run.
 
-Choose between starting, waiting and obtaining a discriminating result. Starting is useful when its output
+If a choice about starting is needed, compare starting, waiting and obtaining a discriminating result. Starting is useful when its output
 can reach the receiving use under the allowed changes, or when the learning warrants its expected discarded
 work. Waiting is appropriate when the final input is near and proceeding would commit expensive or irreversible
 work on an unsupported premise. A small model comparison, fit trial or supplier answer is appropriate when
@@ -193,8 +193,8 @@ it can settle the particular uncertainty soon enough to affect this choice. Keep
 same comparison. Unknown change frequency or rework cost remains unknown; do not fabricate an expected-value
 calculation.
 
-Agree how an input change reaches its consumers, who interprets its consequence and what must be reconciled
-before the final use. For a permitted envelope, a change inside it can retain the supported result; a change
+Establish how input changes reach their consumers, who interprets them and what must be reconciled
+before final use. Agree any missing arrangements. A change within a qualified envelope can preserve the supported result; a change
 outside it returns to the affected operation and its receivers. The reason for that distinction must remain
 available to the receiving engineer. Updating a status label cannot replace the reconciliation.
 
@@ -205,7 +205,7 @@ questioned; until then, construct alternatives that respect it.
 
 ##### SYSE.20:4.1.3 - Construct alternatives by changing the obstructing relation
 
-Use the recovered conflict to generate an arrangement, rather than choosing a fashionable process label.
+When a new arrangement is needed, use the recovered limitation to develop an alternative.
 Trace the result backward to its limiting contribution, change a relation that could remove that limitation,
 and follow the changed arrangement forward to the same receiving result. The following moves answer different
 causes; use the relevant one or a supported combination.
@@ -217,12 +217,12 @@ causes; use the relevant one or a supported combination.
 | Several contributions need one scarce resource | Reorder their use, reserve compatible windows, reduce the competing demand, or obtain qualified additional capacity | Setup, access, recovery and the consequences for displaced commitments |
 | A provider condition blocks otherwise ready engineering work | Compare waiting, a qualified alternative service and a changed engineering Method | Compatibility, real availability, authority and continuing support for the alternative |
 | Two design contributions depend on one another | Begin from an explicit provisional assumption, perform an informative iteration and reconcile both results | The assumption's permitted use, feedback, acceptance or revision condition, and a stopping decision |
-| A local acceleration only moves the queue | Change the limiting receiving contribution or retain the incumbent | A gain at the integrated result and the burdens borne elsewhere |
+| A local acceleration only moves the queue | Change the limiting receiving contribution or retain the incumbent | For a change, establish the gain at the integrated result and any burdens borne elsewhere. The incumbent can be retained when no alternative improves that result on the stated basis. |
 
 For a feedback cycle, placing one activity first does not remove the reciprocal dependency. A DSM sequencing
 method can identify the coupled group; its tearing method makes the starting assumptions explicit. Retain
 those assumptions in the engineering reasoning and obtain the feedback that can confirm or revise them.
-Choose an iteration whose result can change the coupled decision. Stop, narrow the question or change the
+Choose an iteration when its attainable result could settle a consequential dependency, qualification or choice at a justified cost. Stop, narrow the question or change the
 arrangement when another iteration cannot justify its cost or cannot meet the required use.
 
 A proposed support replacement needs more than an available tool. Identify the compatible configuration,
@@ -248,33 +248,33 @@ operation needs a joint available window, not just separate dates at which each 
 Non-preemptible work needs a window long enough to finish. For substantial resource contention or repeated
 flow, use an appropriate project-scheduling or Operations Management Method. Keep the engineering
 dependencies and eligibility conditions as its inputs, and bring the resulting feasible arrangement back
-to the receiving engineering decision.
+to the engineering question it must answer.
 
 Calculate the first usable whole result, including the final join. A faster simulation is immaterial to
 the deadline if a rig or decision still finishes later. Conversely, two individually feasible tasks can
 make the whole impossible when they require the same engineer simultaneously. Include necessary provider
 work and other commitments even when they belong to different Work wholes.
 
-For uncertain durations or availability, use supported intervals or explicit scenarios and state the
-conclusion they permit. If the deadline must hold through a qualified worst case, a calculation at the
-average is insufficient. Do not claim a worst-case guarantee from an unqualified estimate. A smaller
-conditional plan or a precise missing availability commitment can be the useful result.
+For uncertain durations or availability, use supported intervals or explicit scenarios and state
+the conclusion they permit. If the deadline must hold through a qualified worst case, an average or
+an unqualified estimate cannot establish the guarantee. A useful result may be a narrower conditional
+plan or a precise statement of the availability commitment still required.
 
-Compare the whole arrangements on the declared basis: for example, meet the evidence and safety conditions
+When comparing alternatives, use the declared basis: for example, meet the evidence and safety conditions
 by the deadline, then minimize additional continuing support. Include immediate implementation and rework
 as well as recurring costs when they change the decision. The fastest local operation need not win. If
 options remain tied or none is feasible, return that outcome and its reason rather than inventing a score.
 
 ##### SYSE.20:4.1.5 - Put the chosen arrangement into use and observe its receiving result
 
-The decision states the selected change, any required permission and its conditions, the responsible performers
-and what would reopen the choice. Implementation makes the necessary resources and instructions available: reserve the
-windows, establish the service configuration, communicate the agreed inputs and change returns, and revise
-the applicable WorkPlan or MethodDescription.
+When a change is selected, state its conditions, any permission required, the responsible performers and what would
+reopen the choice. To implement it, make the necessary resources and instructions available. Use or obtain the reservations,
+service configuration, input agreements and change returns it requires, and revise the applicable
+WorkPlan or MethodDescription as needed.
 
-Observe a representative performance far enough to see the result used. Did the intended inputs arrive
+Use existing observations of representative performance or obtain those required to follow the result into use. Did the intended inputs arrive
 under their stated configurations? Could the operations share their resources as planned? What preparation
-survived an update, what was repeated, and when was the integration recommendation actually usable?
+survived an update, what was repeated, and when was the integration recommendation usable?
 Compare those observations with the proposed reasons for overlap. Separate a shorter preparation time from
 a shorter whole result, and a technically usable result from an authorized release.
 
@@ -290,41 +290,41 @@ rule, requirement or authority condition. Find the operation that relied on it, 
 that contribution, and follow its direct receiving uses and shared demands. Retain an independent operation
 and its evidence when their conditions still hold.
 
-Reconsider the whole choice when the change defeats its acceptance rule. Valid individual results can remain
+Reconsider the whole choice when the change can affect whether the arrangement meets its acceptance rule. Valid individual results can remain
 too late or jointly incompatible for the required use. Conversely, a changed local estimate need not reopen
 an unaffected release claim. Distinguish redoing permitted Work, changing its plan, varying or replacing a
 Method, and correcting an inaccurate description.
 
-If an alternative still meets the same conditions, obtain the decision within the holder's authority and
-implement the difference. If none does, return the missing contribution or ask the holder to change
+If an alternative still meets the conditions, the authorized decision maker can select it or retain a supported incumbent. Implement a change when it is chosen.
+If no arrangement meets the conditions, identify any missing contribution or ask the appropriate holder to change
 the receiving condition. Silence, a later date typed into a plan, and an unconfirmed supplier request are
 not changed commitments. A project-local observation can enter SYSE.21 without establishing a wider cultural
 change.
 
 #### SYSE.20:4.2 - Record the Result
 
-Keep the following decision-relevant content obtainable in the Method-and-Work architecture account.
-The table helps another engineer recover the reasoning; it does not require seven separate records or
-duplication of adequate current models. Explain an omitted position only when the receiving engineer could otherwise mistake it for an unanswered question that affects the choice.
+Give the receiving engineer the account, assessment or authorized choice requested. Use the table for the details needed
+to recover that result. A short existing account can carry them.
+Reuse adequate accounts and models. Explain an omission when the recipient could otherwise mistake it for a consequential gap.
 
-| Result position | Required content |
+| Result position | What the receiving engineer needs |
 | --- | --- |
-| use boundary | Engineering result at risk, receiving decision or Work, configuration, intended use, time window, deciding Agent, and authority scope. |
-| current Method and Work structures | Representative performed Work or a prospective plan, performing Agents, enacted or proposed Methods, Work wholes where claimed, and every direct relation used by the decision. |
-| companion structures | Only structures that change the decision, with each structure's subject, use, important correspondences, and losses. Section 1 gives an open example set. |
-| conflict | Incompatible results or constraints and the consequence for the engineered result. |
+| use boundary | Engineering result, receiving question or Work, configuration, intended use and relevant time window. For a decision, identify its holder and authority. |
+| Method and Work structures | Representative performed Work or a prospective plan, performing Agents, enacted or proposed Methods, Work wholes where claimed, and the direct relations on which the answer depends. |
+| companion structures | Structures on which the answer relies, with each structure’s subject, use, consequential correspondences and losses. Section 1 gives examples. |
+| order and suitability | State the supported overlap or required order and the grounds for each material relation. If assessing suitability, state what the arrangement can deliver for the specified use and what a remaining conflict or unknown prevents. |
 | moved burdens | Each material burden, the scope that loses it, and the scope that receives it. |
-| alternatives and choice | Fixed option set, proposed changed relations, comparison basis, choice rule and actual bounded outcome: selected option or retained tie-set with grounds; rejected set with reason; chosen probe with its comparison defect; or named receiving question. Retain applicable losses and preserved constraints. |
-| continuation | Next question or permitted Work, receiving Agents and their decisions, each supplied result, missing evidence and the reopen condition. Include implementation and later representative Work when that continuation applies. |
+| alternatives and choice, when a decision is requested | Fixed options, changed relations, comparison basis, choice rule and authorized outcome: selected option, retained arrangement or tie-set with grounds, rejected set with reason, chosen probe with the gap it could resolve, or a named receiving question. Retain applicable losses and protected constraints. |
+| continuation | Identify the supplied result and its receiving use. State any missing contribution, further question, permitted Work or change that would require reconsideration. Include implementation and later representative Work when the choice calls for them. |
 
-The bounded decision record states the authorized Agent's choice and reason. The architecture account can supply
-a design constraint to `SYSE.12` and a project-local Method variant to `SYSE.21`; each receiver makes its own decision.
+When an authorized choice has been made, its bounded record states the outcome and reason. A dependency or suitability account can independently supply
+a design constraint to `SYSE.12` or a project-local Method variant to `SYSE.21`. Each receiver uses it within its own remit.
 
 #### SYSE.20:4.3 - What Changes in Practice
 
-Engineers decide which Work may overlap, which dependency requires order, which Methods are enacted and
-where a local improvement moves burden. They can choose an arrangement whose implementation and assessment
-are feasible under the stated conditions. The account preserves the reasons for those dependencies so they
+Engineers can establish which Work may overlap, what must wait, which Methods are enacted and
+whether the arrangement serves its intended use. If asked to choose, they compare feasible alternatives and any burdens transferred to other work,
+with implementation and assessment conditions made explicit. The account preserves the reasons for those dependencies so they
 remain visible when a diagram or process label changes.
 
 ### SYSE.20:5 - Worked Case: Power-Converter Integration
@@ -335,8 +335,8 @@ about power-converter projects generally.
 
 #### SYSE.20:5.1 - Recover the failure before making the plan
 
-A team prepares an integration recommendation for a power converter; a separate decision will authorize
-release. Its diagnostic run contains the following Work:
+A team prepares an integration recommendation for a power converter. A separate decision determines whether to authorize release.
+The team records the following Work in its diagnostic run:
 
 | Work occurrence | Interval on the run clock | Directly relevant relation |
 | --- | --- | --- |
@@ -359,8 +359,8 @@ The engineers connect three descriptions: the Work relations; the converter, con
 rig, load bank and platform under their subject and service relations; and the model editions, solver
 configuration, simulated results, measured traces and criteria under their representation-use relations.
 These are the structures needed here. The conflict is that simulation starts on a changing model and finishes
-during service degradation. Its output cannot yet support the intended configuration claim. A recommendation
-written at minute 90 is therefore not evidence of a usable whole result.
+during service degradation. Its output cannot yet support the intended configuration claim. The recorded overlaps answer which work ran together.
+Checking suitability gives a further result: the recommendation written at minute 90 lacks the evidence needed for use. Neither conclusion requires choosing how to run the work next.
 
 #### SYSE.20:5.2 - Obtain the inputs that determine possible overlap
 
@@ -393,7 +393,7 @@ only that independent work earlier constructs B. Finally replace the unavailable
 with the qualified local alternative to construct C, including the laboratory engineer's competing setup.
 
 The schedules use the shared provider's latest qualified ready time. They show completion bounds under the
-stated durations and availability; earlier actual recovery may allow an earlier start.
+stated durations and availability; earlier recovery may allow an earlier start.
 
 | Operation or result | A — serialized | B — independent preparation overlaps | C — qualified local solver |
 | --- | --- | --- | --- |
@@ -419,7 +419,7 @@ local-service availability to 35, simulation to 35–60, the test to 62–87 and
 Thus even this small example needs a resource order as well as an information order.
 
 Both B and C meet the deadline. The stated rule selects B because C adds continuing laboratory maintenance.
-C is faster; the decision does not claim that B dominates it on every criterion. If an earlier recommendation
+C is faster. If an earlier recommendation
 had additional value or maintenance capacity were unavailable, the comparison would change. Compared with
 A, B makes the same qualified result available 35 minutes earlier. Compared with the invalid original run,
 there is no supported “ten-minute delay”: its minute-90 output never met the same eligibility conditions.
@@ -437,11 +437,11 @@ preparation 97–112 and final review 112–117. Its operations remain technical
 longer guarantees the minute-105 deadline. Earlier observed availability or a tighter qualified bound can
 change that conclusion; otherwise choose an arrangement that supplies the required guarantee.
 
-C still finishes at 82 under its unchanged availability and qualification premises. The lead can choose it
-within the stated authority and accept its maintenance burden. The model, rig Method and review split do
-not require reinvention. If the local service or its continuing support cannot actually be obtained, this
-branch is unavailable; the result is the missing provider/capacity commitment or a deadline change for its
-holder to decide. A request for faster recovery is not a reply promising it.
+C still finishes at 82 under its unchanged availability and qualification premises. The lead can choose it within
+the stated authority and accept its maintenance burden. The model, rig Method and review split remain
+usable. If the local service or its continuing support cannot be obtained, C is unavailable. State
+the provider or capacity commitment that is missing, or ask the deadline holder to decide whether to change
+the deadline. A request for faster recovery does not establish a new promise.
 
 This is a prospective change. If some Work has already been performed, start from its actual state and
 remaining resources; the table is not permission to restart its clock or discard still-valid results.
@@ -462,7 +462,7 @@ drilling final holes is not. Keep drilling behind the required fit and authoriza
 
 ### SYSE.20:6 - Bias Annotation
 
-Watch for these four recurring interpretation biases:
+Watch for these recurring interpretation biases:
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
@@ -473,29 +473,29 @@ Watch for these four recurring interpretation biases:
 
 ### SYSE.20:7 - Conformance Checklist
 
-The following conditions are required for a conforming use of this pattern.
 
-- [ ] The account names a recognizable conflict between useful Work overlap and a required order or dependency.
-- [ ] The first result contains both a current Method-and-Work architecture account and a bounded reconfiguration
-      decision record.
+
+- [ ] The account states the supported overlap or required dependency and its grounds. When the question concerns whether the arrangement preserves that relation, it gives the supported conclusion and any material conflict or uncertainty.
+- [ ] The result answers the question about dependencies, the suitability of the arrangement, or the requested choice, to the extent its grounds permit. If a choice was made, the account
+      also identifies the deciding Agent, authority, outcome and reasons, whether in the same account or a separate decision record.
 - [ ] Performed Work has its temporal extent, performing Agent and enacted Method; a prospective arrangement
       states its planned operations and qualifications. Assignments are stated where attribution matters.
 - [ ] Method composition, Method unfolding, Work parthood, Work overlap, and required order use separate claims.
 - [ ] Provider or enabling Work, capability-development Work, and cultural change keep their own relations.
-- [ ] Every selected structure changes the current decision and states important correspondences and losses.
+- [ ] Each selected structure supports the requested answer. Its consequential correspondences and losses are clear.
 - [ ] Every local gain names any material moved burden and its receiving scope.
-- [ ] The fixed options differ by a named relation and are compared on one stated basis and rule.
-- [ ] Each claimed overlap explains what can begin, which input conditions permit it, and what must be
-      reconciled before the receiving use; unsupported preliminary information remains a stated limit.
-- [ ] The whole arrangement includes shared resources, support, interpretation and applicable rework;
-      local completion times alone do not establish a feasible whole result.
-- [ ] The choice, implementation Work, later observations, and cultural continuation are distinguished.
-- [ ] The receiving Agent gets the actual choice outcome, missing evidence, next question or Work, and reopen
-      condition.
+- [ ] If a choice is requested, the fixed options differ by a named relation and are compared on a stated basis and rule.
+- [ ] An observed overlap identifies the intersecting Work intervals. For a proposed or assessed overlap, the account states which work can start, the conditions
+      for that start and any reconciliation needed before the result is used. It identifies any consequential limit of preliminary information.
+- [ ] When the answer depends on the feasibility of the whole arrangement, it accounts for shared resources, support, interpretation
+      and applicable rework. Local completion times alone cannot establish feasibility.
+- [ ] Where a choice was made, the account distinguishes it from implementation Work, later observations and cultural continuation.
+- [ ] The receiving Agent gets the requested conclusion and its grounds, including the authorized outcome if a choice was made. Any missing evidence, next question, permitted Work or material condition for
+      reconsideration is clear where it applies.
 
 ### SYSE.20:8 - Common Failures and Repairs
 
-When one of these recurring failures appears, use the corresponding repair:
+
 
 | Recurring failure | Repair |
 | --- | --- |
@@ -504,7 +504,7 @@ When one of these recurring failures appears, use the corresponding repair:
 | A Work part is placed inside the engineered System | Keep the Work structure and subject structure separate; relate their descriptions through named uses. |
 | A connected model is treated as the integrated engineering reality | Name the model epistemes, their subjects, correspondences, losses, and receiving uses. |
 | A platform service is assumed usable whenever dependent Work runs | State the provider Work, service condition, compatibility evidence, access, and moved maintenance burden. |
-| One local activity becomes faster while the engineering result still waits | Measure the receiving result and identify the limiting contribution and moved burden. |
+| One local activity becomes faster while the engineering result still waits | Use an adequate measurement of the receiving result or obtain one. Identify the limiting contribution and any burden moved elsewhere. |
 | A selected option lacks a comparison rule or authority | Recover the fixed option set, basis, rule, deciding Agent and authority before calling it a decision. Name a next probe only when further inquiry is the selected continuation. |
 | A preliminary result is accepted because it is labelled provisional | Recover its allowed use, change sensitivity and reconciliation; wait or obtain the missing qualification when these cannot be supplied. |
 | Separately feasible tasks require the same resource simultaneously | Construct a joint resource order or obtain qualified capacity, then recompute the first usable whole result. |
@@ -514,13 +514,13 @@ When one of these recurring failures appears, use the corresponding repair:
 
 ### SYSE.20:9 - Consequences
 
-The project can retain productive overlap without losing real guards, configuration identity, evidence status, or
-authority. The selected structures, their direct relations, and their correspondences support one bounded
-engineering choice. Platform and capability dependencies become visible before a local gain is
+The project can retain productive overlap while preserving the conditions on which each use relies, including required order, configuration
+identity, evidence status and authority. The selected structures, their direct relations and their correspondences support
+the requested dependency finding, an assessment of suitability or a bounded engineering choice. Platform and capability dependencies become visible before a local gain is
 accepted.
 
 The cost is recovery of the Work occurrences, Methods, configurations, result uses, and authority needed by the
-choice. Judge diagrams by the relations they make usable for this choice. Some local improvements will lose
+question. Judge diagrams by the relations they let the receiver establish. Some local improvements will lose
 priority when their moved burdens become visible.
 
 ### SYSE.20:10 - Rationale
@@ -532,8 +532,8 @@ either useful overlap or necessary order.
 
 Engineering adds a recurring domain difficulty to the general `C.32.MWA` problem: several contributions must
 produce a result about one configured engineered System while using models, evidence, specialist decisions, and
-enabling Systems with their own identities. Connecting the recovered structures to that result makes their consequences for the bounded
-reconfiguration choice explicit.
+enabling Systems with their own identities. Connecting those structures to the receiving use explains required order, what can overlap and
+whether a given arrangement works. When a choice is requested, those findings supply its engineering grounds.
 
 ### SYSE.20:11 - SoTA and Source Use
 
@@ -543,9 +543,9 @@ construct and qualify overlap for one configured engineering result, including p
 evidence joins, provider conditions and shared resource demands. Its worked timings are a conditional
 construction, not a comparative field study.
 
-| Source | Retained contribution and actual use here | Limit or difference |
+| Source | Retained contribution and use here | Limit or difference |
 | --- | --- | --- |
-| Current FPF A.3.1, A.15.1, A.22, B.1.5, C.27.TA, C.30.STRAT, C.32.MWA, C.32.MLAO and C.36 | Method and Work identity, temporal and constituent relations, selected structures, architecture synthesis, moved burdens and cultural continuation. | C.32.MWA supplies the general account; this pattern develops the engineering construction and its bounded decision. |
+| Current FPF A.3.1, A.15.1, A.22, B.1.5, C.27.TA, C.30.STRAT, C.32.MWA, C.32.MLAO and C.36 | Method and Work identity, temporal and constituent relations, selected structures, architecture synthesis, moved burdens and cultural continuation. | C.32.MWA supplies the general account; this pattern develops the engineering construction and the assessment or bounded choice that depends on it. |
 | Dependency and Structure Modeling community: [building a DSM](https://dsmweb.org/building-and-creating-a-dsm/), [sequencing](https://dsmweb.org/sequencing-a-dsm/) and [tearing](https://dsmweb.org/tearing-a-dsm/) | Recover direct input dependencies with their explanations, identify coupled groups, and expose provisional assumptions used to begin an iteration. These supply the dependency and cycle treatment in :4.1.1 and :4.1.3. | These established Methods expose real dependencies and starting assumptions. Their application still needs the case's engineering, resource and authority qualifications. |
 | [DORA Continuous Integration](https://dora.dev/capabilities/continuous-integration/), “How to implement CI”, “Objections” and “Common pitfalls” | Frequent integration, repeatable builds, feedback and repair belong together; the useful result includes review, integration and testing. This informs the distinction between early local completion and usable whole results. | A software contribution with implementation prerequisites; no universal cadence or physical-test substitution is transferred. |
 | [DORA Platform Engineering](https://dora.dev/capabilities/platform-engineering/), updated 12 January 2026, implementation and impact sections | User-journey construction, an initially limited platform, extensibility and task feedback make qualified service support a substantive alternative. They inform :4.1.3 and its return to SYSE.12. | Practitioner guidance already concerns end-to-end use. The pattern adds case-specific engineering compatibility and support comparison. |
@@ -565,7 +565,7 @@ qualification or burden. Source publication status alone does not establish a ch
 
 ### SYSE.20:12 - Relations
 
-The following direct relations are used by this pattern body.
+
 
 - `SYSE.15` supplies compatible engineering-Method repertoire claims. Availability alone supplies no fit or
   enactment claim.
@@ -577,9 +577,9 @@ The following direct relations are used by this pattern body.
 - `C.11` governs the bounded choice after alternatives are available; `C.18` governs alternative generation and
   `C.24` later implementation sequencing when those questions are current.
 - `C.2.1`, `C.29`, and the applicable model-use, evidence, configuration, and assurance patterns govern the
-  epistemes and correspondences used by the decision. SYSE.10 supplies evidence qualification, SYSE.13
+  epistemes and correspondences used to establish the answer. SYSE.10 supplies evidence qualification, SYSE.13
   configuration correspondence, and SYSE.14 the separate release or transition decision.
-- `SYSE.20` supplies one bounded platform-design constraint to `SYSE.12`. It supplies one project-local Method
+- `SYSE.20` can supply a bounded platform-design constraint to `SYSE.12`. It can supply a project-local Method
   variant observation to `SYSE.21`, where cultural continuation is evaluated.
 - Operations Management retains continuing-flow specialization; Organization Change Engineering retains
   organization capability and assignment changes; application DPFs add the physical, computational, clinical,

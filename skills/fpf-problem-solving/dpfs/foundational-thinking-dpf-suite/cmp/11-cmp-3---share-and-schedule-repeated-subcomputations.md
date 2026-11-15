@@ -51,7 +51,7 @@ MATH.2 supplies the reasoning behind an identification: the operation used after
 
 Distinguish completed answers from computations that have merely begun. Reading an unfinished entry as a result can introduce circular reasoning. In parallel evaluation, decide whether repeated demand waits for one producer or safely computes another copy; preserve the meaning of completion in either case.
 
-For an operation with effects, state what reuse preserves. Replacing two reads of a changing sensor by one stored reading changes the observation sequence. Repeating a random draw and reusing one sample changes dependence. Sharing a pure calculation on an already obtained reading or sample can be valid. Select the intended operation before choosing the reuse rule.
+For an operation with effects, state what reuse preserves. Replacing two reads of a changing sensor by one stored reading changes the observation sequence. Drawing again and reusing the same sample can give different dependence between the two results. Sharing a pure calculation on an already obtained reading or sample can be valid. Select the intended operation before choosing the reuse rule.
 
 #### CMP.3:4.3 - Construct the dependency graph and an evaluation order
 
@@ -70,7 +70,7 @@ A directed cycle prevents this simple ordering. Determine whether it is an erron
 
 #### CMP.3:4.4 - Retain what remains live, and recompute selectively
 
-A value is live while a later operation will need it and cannot obtain it more cheaply by another means. Find its last planned consumer. After that use, the storage can be reused unless the requested final output needs the value for reconstruction.
+A value is live along an execution path while a later operation on that path still needs it. Find its last consumer, including any use in reconstructing the requested output. The storage can be reused after its last use. A live value can also be discarded earlier if it can be obtained again when needed at an acceptable cost and with the required meaning.
 
 Compare full retention, a moving set of recent values, and selected stored checkpoints from which intervening work is recomputed. Include key storage, lookup, copying, arithmetic size and transfer costs when they can change the choice. The mathematical dependency graph can be unchanged while these execution costs differ substantially.
 
@@ -145,7 +145,7 @@ Results obtained from fixed data invite overgeneralization to changing environme
 - Completed results are distinguished from work still being evaluated.
 - Storage and recomputation choices preserve the final value, witness or continuation that is required.
 - The resource comparison counts relevant transitions, arithmetic, access and storage as well as states.
-- The changed-condition use follows the dependency or output requirement that actually changed.
+- The changed-condition use follows the dependency or output requirement that changed.
 
 ### CMP.3:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -154,7 +154,7 @@ Results obtained from fixed data invite overgeneralization to changing environme
 | Key a subproblem by its position across changing inputs | The edit-distance example reuses an answer to another question. Bind the key to the input and conditions or narrow the cache's lifetime. |
 | Treat an in-progress entry as an answer | A cyclic dependency can return unsupported content. Keep completion explicit and supply the appropriate cycle-solving method. |
 | Discard predecessors while promising a witness | The optimum value remains but the attaining object cannot be returned. Retain choices or construct a reconstruction pass. |
-| Share effects as if they were pure calculations | Observations, updates or random dependence can change. Identify the fixed data calculation that is actually interchangeable. |
+| Share effects as if they were pure calculations | Observations, updates or random dependence can change. Identify the fixed data calculation that is interchangeable. |
 
 ### CMP.3:9 - Consequences
 
@@ -172,7 +172,7 @@ The mathematical identification is supplied by MATH.2, the subproblem constructi
 
 [Erickson, *Algorithms*, chapter 3](https://jeffe.web.engr.illinois.edu/teaching/algorithms/book/03-dynprog.pdf) develops memoization, deliberate evaluation order, space saving and reconstruction of sequence-editing answers. Adopt the progression from a meaningful recurrence to distinct subproblems and their evaluation. Extend the identity question explicitly to changing inputs and effectful operations. The CAB example is a small independent derivation of that general design approach.
 
-[Hirschberg's linear-space reconstruction](https://ics.uci.edu/~dhirschb/pubs/p341-hirschberg.pdf) is a historical but still useful counterexample to the assumption that reconstructing a sequence requires retaining a complete table. Its middle-split method also applies to edit paths. Adopt reconstruction as a choice between storage and additional calculation; do not claim its cost is optimal for every input representation or modern machine.
+[Hirschberg's linear-space reconstruction](https://ics.uci.edu/~dhirschb/pubs/p341-hirschberg.pdf) is a historical counterexample to the assumption that reconstructing a sequence requires retaining a complete table. Its middle-split method also applies to edit paths. Adopt reconstruction as a choice between storage and additional calculation. Compare the costs for the input representation and machine in use.
 
 Current [JAX checkpointing documentation](https://docs.jax.dev/en/latest/gradient-checkpointing.html) shows the same storage/recomputation choice in automatic differentiation. Adopt its substantive distinction between saved intermediates and recomputed pure operations. Compiler behavior and hardware costs affect the best schedule; a particular library interface is an example of realization rather than a prerequisite of this method.
 

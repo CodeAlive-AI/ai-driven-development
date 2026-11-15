@@ -5,61 +5,61 @@
 
 ### ECO.10:1 - Problem frame
 
-Use this pattern when a method or technology uses less of a resource per useful result and you need to know whether total resource use will also fall. Start by naming the useful result, resource, boundary and comparison without the change. Then follow the responses which can change total use.
+Use this Method when a process or technology needs less resource per useful result and you want to understand total use. Identify the useful result, resource, boundary, period and comparison without the improvement. Trace any change in activity induced by the improvement.
 
-The useful result is a conditional total-use comparison or a response threshold that matters to the decision. A fixed-output engineering comparison can stand alone when that is the stated question and output truly remains fixed.
+Return a conditional or supported comparison of total use, or the output threshold relevant to it. For a fixed-output question, an engineering comparison can suffice under the stated output assumption. To apply that result to actual use, establish whether output and other material conditions were fixed.
 
 ### ECO.10:2 - Problem
 
-Lower unit consumption can make a service cheaper, enable more frequent use, release spending for other activities or make new activities feasible. These responses can offset some or all of the initial saving. The case in which they more than offset it is commonly called Jevons's paradox or backfire.
+Lower unit consumption can make a service cheaper, encourage more use, release spending for other activity or make a new use feasible. A response can offset part or all of an initial saving. If it more than offsets a positive fixed-output saving, the result is backfire, also called Jevons’s paradox.
 
-An increase observed after an efficiency improvement does not establish this mechanism: demand could have grown anyway. Nor does higher output automatically defeat the purpose; growth, accessibility and a resource cap are different purposes.
+Demand might have grown without the improvement. To attribute a later rise in use to the efficiency change, distinguish the induced response from other causes. Judge the consequence against the actual purpose, such as growth, access or keeping use below a cap.
 
 ### ECO.10:3 - Forces
 
-Physical efficiency, prices, demand and total effects have different boundaries and time scales. Forecasting every response can be more expensive than the decision warrants. A useful threshold can guide action even when the future volume is unknown.
+Physical efficiency, price, demand and total use can refer to different activities and time scales. A threshold may answer a practical question while future output remains uncertain. Assess the cost and likely value of a broader demand investigation before commissioning it.
 
 ### ECO.10:4 - Solution
 
 #### ECO.10:4.1 - State the comparison
 
-Name the service or other useful result in units that preserve the needed performance. Identify the resource whose total matters, the affected activities, the period and the situation without the proposed improvement. A cost reduction, an energy reduction and an emissions reduction are different claims.
+Identify the useful result and choose a unit that preserves its performance. Specify the resource, activities included, period and comparison without the proposed improvement. Calculate cost, energy and emissions as distinct quantities, using a supported conversion if the question requires it.
 
-Use three totals under the same resource account: use without the improvement, use after the improvement at the counterfactual output without an induced response, and use after the response. The first minus the second is the fixed-output saving; the third minus the second is the response-induced change. Include equipment, infrastructure or transition burdens in the relevant totals when they matter to the claimed scope. A burden that arises even at unchanged output belongs in the second total, not in the demand response. Reuse the relevant PHY, MMP, OPS, MA or FIN result.
+Calculate three totals on the same resource account. Find use without the improvement, use with the improvement at the counterfactual output before any induced response, and use with the response. Subtract the second from the first for fixed-output saving. Subtract the second from the third for the response-induced change. Include relevant equipment, infrastructure and transition costs in the appropriate totals. A burden that arises at fixed output belongs in the second total as well as in the third if it continues. Use applicable PHY, MMP, OPS, MA or FIN results.
 
 #### ECO.10:4.2 - Follow the responses that can change the answer
 
-Ask how the improvement changes attainable action. Can users buy more of the same service, providers expand output, released funds support other activity, or a previously infeasible use become practical? Do prices, capacity, time, access rules or a resource cap limit these responses? Trace the mechanism before choosing a demand estimate.
+Establish how the improvement affects feasible action. Users may buy more, producers may increase output, released funds may support other work, or a new activity may become practical. Identify constraints such as price, capacity, time, access rules or a resource cap. Use a demand estimate that fits the mechanism claimed.
 
-Keep resource use within the focal activity separate from consequential use elsewhere. Add effects only within the declared total, avoid counting the same effect twice, and retain uncertainty where the effect is not known. Consider a new model, causal study or measurement only when its result can change the choice, supported conclusion or warranted use, and its attainable value warrants the burden.
+Distinguish resource use in the focal activity from consequential use elsewhere. Add effects within the declared boundary, count each once and state which remain uncertain. Consider new modeling, causal inquiry or measurement when it could materially improve the finding, choice or intended use at an acceptable cost.
 
-For a simple unchanged service with resource use per unit e and volume q, total use is e × q. Compare improved total use with the counterfactual total, not just with last year's observed value. If per-unit use falls from e0 to e1, the fixed-boundary break-even volume is q0 × e0/e1 when e1 is positive. This is a threshold under the stated assumptions, not a demand forecast. When additional terms matter, compare the full totals instead of extending this simple threshold unchanged.
+For one unchanged service with resource use e per unit and output q, total use is e × q. Compare the improved total with total use in the counterfactual. Let q0 be counterfactual output and e0 and e1 the old and new unit resource requirements. If e1 > 0 and no other terms enter the account, equal total use occurs at q = q0 × e0/e1. This gives a break-even output under the assumptions. Demand at that output is a separate question. When other terms matter, compare the full totals.
 
 #### ECO.10:4.3 - Return the consequence to the actual purpose
 
-First state whether total use after the response is lower than, equal to or higher than use without the improvement. Then, if useful, report the fraction of the fixed-output saving offset by the induced response: divide the response-induced change by the fixed-output saving. This percentage requires a positive, well-defined saving. Otherwise report the separate totals and the induced change. The percentage here uses the declared resource account; an operating-only rebound estimate and an estimate including equipment or transition burdens have different bases. A response which exceeds a positive fixed-output saving is the backfire case.
+State whether use with the response is below, equal to or above use without the improvement. When the fixed-output saving is positive and well defined, divide the response-induced change by that saving if the requested result needs the fraction offset. A fraction above one indicates backfire under this account. When there is no positive, well-defined fixed-output saving, report the totals and induced change directly. Identify the accounting boundary, since including new equipment or transition can change both the saving and the percentage.
 
-Compare responses appropriate to the purpose. A growth objective may welcome more valuable output. A resource cap may require allocating the released capacity or controlling aggregate use as well as improving efficiency. Each intervention has its own feasibility, cost and affected interests; the rebound calculation does not select a policy automatically.
+For a resource cap, assess whether aggregate use remains within the limit and whether released capacity needs allocation. If the goal is useful growth, compare the additional output’s value and cost. For a proposed policy, assess feasibility and effects on the parties concerned. A rebound estimate can inform those choices.
 
-Return a choice, a conditional operating limit or the observation that would change it. Stop when the comparison already distinguishes the feasible alternatives.
+Return the supported total-use finding, its assumptions and any material unknown. If the task asks for a choice or operating limit, compare the feasible responses and state which conditions matter to that result.
 
 ### ECO.10:5 - Archetypal Grounding
 
 #### ECO.10:5.1 - Half the energy per unit
 
-A constructed process would produce 100 equivalent units at 2 kWh each without an improvement: 200 kWh. The improved process uses 1 kWh per unit. At unchanged output its fixed-output saving is 100 kWh.
+Suppose production without the improvement would be 100 equivalent units at 2 kWh each, using 200 kWh. The improved process uses 1 kWh per unit, so at the same output it would use 100 kWh and save 100 kWh.
 
-If the improvement induces output of 150 units, total use is 150 kWh and the actual saving is 50 kWh. Half the fixed-output saving is offset: rebound is 50%. At 220 units total use is 220 kWh; actual saving is −20 kWh, so rebound is 120%, the backfire case. The break-even output is 200 units.
+At an induced output of 150 units, total use would be 150 kWh, a saving of 50 kWh against the 200 kWh counterfactual. The added demand would offset 50% of the 100 kWh fixed-output saving. At 220 units, total use would be 220 kWh, a net saving of −20 kWh and a 120% offset. That is backfire. At 200 units the old and new totals are equal.
 
-These are conditional arithmetic cases. If output without the improvement would already have risen to 180 units, the relevant counterfactual is 360 kWh, not 200. Observing 220 improved units against an earlier year's 100 does not by itself demonstrate backfire.
+Now suppose that without the improvement output would already have risen to 180 units. The comparison totals for 220 improved units are then 360 kWh without the improvement, 180 kWh with it at fixed output and 220 kWh with the response. The extra 40 kWh offsets about 22.2% of the 180 kWh fixed-output saving. An observed rise from last year’s 100 units to 220 would not by itself identify either the counterfactual or backfire.
 
-Now suppose the declared account also includes 150 kWh for the new equipment and transition in the same period, absent from the no-improvement alternative and incurred regardless of output. The three totals at an induced volume of 150 are 200, 250 and 300 kWh. Fixed-output saving is −50 kWh; the response adds a further 50 kWh. Total use rises by 100 kWh, but this account has no positive saving whose offset can be expressed as a rebound percentage. The operating efficiency gain remains real; the broader total separates its additional burden from the demand response.
+Return to the case with 100 units of output without the improvement. Include 150 kWh for new equipment and transition in the same period. These costs arise at any output with the improvement and are absent without it. If output with the improvement reaches 150 units, the three totals are 200, 250 and 300 kWh. Fixed-output saving is 200 − 250 = −50 kWh. The response adds 300 − 250 = 50 kWh and total use rises by 100 kWh. The process still saves operating energy per unit. On the broader account there is no positive fixed-output saving from which to calculate a fraction offset.
 
 #### ECO.10:5.2 - An AI task becomes cheaper
 
-A firm reduces the cost per accepted analysis and considers using the saving for more analyses. Token count is not the useful-result unit if acceptance, human revision or result quality also changes. The firm compares cost and resource use per accepted result, possible volume and the receiving work's value.
+Suppose a firm lowers the cost per accepted analysis and considers additional analyses. Establish which output is comparable, including acceptance and any required human revision or quality. Compare costs and resource use per accepted result, feasible volumes and the value to the work that receives them. Token count alone need not represent an accepted analysis.
 
-A fixed budget can increase the number of useful analyses without lowering expenditure. Electricity or hardware use may move differently from expenditure.
+If unit cost falls, the same expenditure may buy more useful analyses. Spending the full budget, using more electricity and using more hardware are separate consequences. Establish each from the corresponding resource account.
 
 ### ECO.10:6 - Bias-Annotation
 
@@ -67,7 +67,7 @@ A dramatic paradox can replace a causal account. Engineering optimism can assume
 
 ### ECO.10:7 - Conformance Checklist
 
-Are the useful result, resource, boundary, period and counterfactual recoverable? Does each response have a plausible mechanism? Are the arithmetic and any rebound percentage consistent with that comparison? Does the conclusion distinguish resource conservation from valuable expansion and avoid treating a scenario as an observed causal estimate?
+Identify the useful result, resource, boundary, period and counterfactual. State the mechanism assumed for each induced response and what the evidence supports. Check the totals, any saving-offset percentage and the result for the stated purpose. Distinguish the consequences of stipulated scenarios from an observed causal effect.
 
 ### ECO.10:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -78,20 +78,20 @@ Are the useful result, resource, boundary, period and counterfactual recoverable
 
 ### ECO.10:9 - Consequences
 
-Efficiency proposals can be compared without hiding their demand consequences or discarding their useful gains. A threshold may be enough to choose a bounded trial or operating rule. Broader effects can remain conditional rather than being replaced by an unsupported universal rebound rate.
+A comparison can preserve the engineering gain while showing the demand response and total resource consequence. A break-even threshold may settle a question about a bounded trial or operating limit. Report broader effects conditionally when the evidence does not support a precise rate.
 
 ### ECO.10:10 - Architectural Rationale
 
-The physical relation between input and result is one contribution to a larger economic account. Demand and feasible uses can change because of the improvement itself. Separating that response from unrelated growth connects engineering, economics and the receiving purpose without reducing them to one number.
+Physical input per useful result supplies one term in the economic account. The improvement can change feasible uses and actual demand, while other causes can change demand independently. Distinguish those effects to interpret total use for the receiving purpose.
 
 ### ECO.10:11 - SoTA-Echoing
 
-[Brockway and colleagues (2021)](https://eprints.whiterose.ac.uk/id/eprint/171952/) compares evidence and modeling approaches for economy-wide energy rebound; its estimates are not transferable constants. The [FAccT 2025 analysis of AI rebound](https://facctconference.org/static/docs/facct2025-206archivalpdfs/facct2025-final37-acmpaginated.pdf) makes contemporary AI mechanisms and attribution limits explicit.
+[Brockway and colleagues (2021)](https://eprints.whiterose.ac.uk/id/eprint/171952/) compare evidence and models for economy-wide energy rebound. Their estimates depend on the scope and assumptions of the studies. The [FAccT 2025 analysis of AI rebound](https://facctconference.org/static/docs/facct2025-206archivalpdfs/facct2025-final37-acmpaginated.pdf) identifies possible AI demand responses and limits on attributing changes to efficiency.
 
-This pattern adopts mechanism and boundary analysis, then uses only the detail needed by the receiving choice. Fixed-output engineering calculation remains the right rival for a fixed-output question. A broad macroeconomic model is useful when its additional responses can change the decision and its assumptions fit; it is not a prerequisite for the simple threshold. Reopen when performance, demand, access, prices or the resource boundary changes.
+Use the mechanism and boundary analysis at the level of detail the question requires. A fixed-output engineering calculation can suffice for a fixed-output question. Use a broader economic model when additional responses matter to the resulting finding or decision and the assumptions fit. Reassess the affected result when performance, demand, access, prices or the resource boundary changes.
 
 ### ECO.10:12 - Relations
 
-ECO.2 supplies price responses; ECO.3 identifies new feasible exchanges; ECO.7/.9 address shared-resource or rule changes when those are selected. PHY and MMP supply physical and computational models, OPS supplies flow and capacity, MA and FIN supply cost and financial comparisons. General FPF choice and portfolio methods compare the retained alternatives; this pattern adds the demand-response contribution.
+Use ECO.2 for price responses, ECO.3 for newly attainable exchanges and ECO.7 or ECO.9 for a selected shared-resource or rule question. Use PHY or MMP for models, OPS for flow and capacity, and MA or FIN for financial and cost comparisons. Use FPF choice or portfolio Methods if the receiving task requires a choice among alternatives. ECO.10 supplies the demand-response contribution to that comparison.
 
 ### ECO.10:End

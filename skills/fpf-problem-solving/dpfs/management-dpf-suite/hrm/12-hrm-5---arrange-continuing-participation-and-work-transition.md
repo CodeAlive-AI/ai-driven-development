@@ -5,7 +5,7 @@
 
 ### HRM.5:1 - Problem frame
 
-**Use this when** a person's current work arrangement needs to continue differently, pause, resume, move or end. The trigger can be an opportunity after success, a changed personal purpose, functional difficulty, a qualified restriction, absence, a retention proposal or an intended exit. Begin with the person's actual relationship, circumstances, response and existing commitments. The first useful result is an obtainable arrangement, or the exact missing professional or institutional result that prevents it.
+**Use this when** a person's current work arrangement needs to continue differently, pause, resume, move or end. The trigger can be an opportunity after success, a changed personal purpose, functional difficulty, a qualified restriction, absence, a retention proposal or an intended exit. Begin with the person's actual relationship, circumstances, response and existing commitments. The first useful result is an obtainable arrangement, or the missing professional or institutional result that prevents it.
 
 The object is the person's continuing participation relationship and proposed transition. Independent personal development can remain outside HR. A sufficient routine leave or transfer instruction can be used directly. A complaint or poor output is not a prerequisite for protective action, access to medical assessment or the resulting work response.
 
@@ -39,7 +39,7 @@ Apply available and required interim support, leave and work-change arrangements
 
 For a work-related question, give the qualified supplier an accurate description of relevant tasks, demands, hours, exposures, tools and possible adaptations, with permitted information from the person. Ask for the usable functional conditions, their scope, uncertainty and review point, and any contribution that remains unresolved. Determine separately what the employer must or may do under the applicable institutional rules. A clinician's conclusion, a right to an adjustment and an authorized work assignment have different functions.
 
-Receive and disclose only information needed and permitted for the work decision. The work owner may need limits on hours, demands or particular tasks and a review condition. The underlying clinical history can remain with the appropriate professional holder. Set access and purpose for agents as well as people. Do not use confidential health or personal-assistant material to infer promotion suitability merely because it is technically accessible.
+Receive and disclose only information needed and permitted for the work decision. The work owner may need limits on hours, demands or particular tasks and a review condition. The underlying clinical history can remain with the appropriate professional holder. Set access and purpose for everyone handling the information, including AI agents. Do not use confidential health or personal-assistant material to infer promotion suitability merely because it is technically accessible.
 
 #### HRM.5:4.3 - Construct a feasible continuation, absence or return
 
@@ -47,7 +47,7 @@ With the person and responsible work owners, identify attainable assignments and
 
 Join the work to its personnel terms: applicable pay, leave, benefits, permissions, duration or reconsideration condition, and the required agreement or determination. Use qualified institutional guidance for accommodation and absence duties. Some adaptations are required; others are discretionary choices among feasible options. A person's agreement does not waive a binding protection. If no proposed option is feasible, identify which condition prevents it and obtain the required further contribution or determination; do not invent a right, deny one from convenience, or impose an unsupported return.
 
-A return arrangement needs actual work that fits the current conditions. Specify who supplies it, how access and support become available, how colleagues receive the information necessary for coordination, and how the person can report difficulty. A staged or limited arrangement can be appropriate when its grounds support it; there is no universal schedule. Attendance, a successful task and absence of a complaint do not independently establish recovery.
+A return arrangement needs actual work that fits the current conditions. Specify who supplies it, how access and support become available, how colleagues receive the information necessary for coordination, and how the person can report difficulty. A staged or limited return may fit the person’s work and the qualified conditions. Attendance, a successful task and absence of a complaint do not independently establish recovery.
 
 #### HRM.5:4.4 - Construct development and career movement from actual opportunity
 
@@ -59,7 +59,7 @@ When adequate AI or another provider can supply the work, reconsider the acquisi
 
 #### HRM.5:4.5 - Handle retention and exit as actual choices and obligations
 
-For retention, understand the reason the person is considering leaving and which changes they regard as meaningful. Construct an offer the organization can actually supply, including work, time, reward and support. Obtain the person's response without treating refusal as evidence of deficient capability or loyalty. Do not promise a future role whose existence or authority remains unresolved. If no acceptable arrangement exists, an orderly exit can preserve the person's trajectory and the organization's remaining commitments.
+For retention, understand the reason the person is considering leaving and which changes they regard as meaningful. Construct an offer the organization can supply, including work, time, reward and support. Obtain the person's response without treating refusal as evidence of deficient capability or loyalty. Do not promise a future role whose existence or authority remains unresolved. If no acceptable arrangement exists, an orderly exit can preserve the person's trajectory and the organization's remaining commitments.
 
 For a chosen or required exit, identify the applicable notice, consultation, decision, representation, payment and other obligations through the competent institutional process. Distinguish resignation, expiry, restructuring and other grounds; they do not share one universal procedure. Preserve routes for contest where applicable. Arrange the permitted transfer of work, knowledge, access and responsibilities with OCE/OPS and ADM. Do not depend on unlimited unpaid handover or continuing access to private material. A handover duty, a learning contribution and future voluntary help need their own grounds.
 
@@ -81,7 +81,7 @@ Suppose the received professional result supports a period away from work and la
 
 At review, the qualified restriction changes. Only the affected work, support and terms are reconsidered. Existing pay obligations and good report evidence remain. If a new workload again exceeds supported conditions, the team-level prevention question returns to HRM.1 even if this employee makes no further complaint.
 
-In a different case, a successful engineer wants to develop an adjacent advisory practice. The employer can offer a bounded assignment and competent help but cannot promise a permanent role. The parties establish that actual opportunity, its time and later decision conditions. If the engineer instead wants work the employer will not supply, they may pursue it independently or leave. Retaining the person at any cost is not the Method's required result.
+In a different case, a successful engineer wants to develop an adjacent advisory practice. The employer can offer a bounded assignment and competent help but cannot promise a permanent role. The parties establish that actual opportunity, its time and later decision conditions. If the engineer instead wants work the employer will not supply, they may pursue it independently or leave.
 
 ### HRM.5:6 - Bias-Annotation
 
@@ -90,7 +90,7 @@ The employer's preference for continuity can dominate the person's aims, and app
 ### HRM.5:7 - Conformance Checklist
 
 - Is the proposed transition grounded in the actual relation, circumstances, aims and obligations?
-- Are clinical or safety assessments obtained from qualified suppliers, with serious functional difficulty taken seriously before output failure?
+- Are clinical or safety assessments obtained from qualified suppliers? Does serious functional difficulty prompt an appropriate response even when output remains satisfactory?
 - Are required constraints distinguished from discretionary preferences and respected in actual work and terms?
 - Does the arrangement have obtainable tasks, support, coverage, access and effective provision?
 - Are private information and personal/corporate agent mandates bounded by the actual purpose and permissions?
@@ -104,7 +104,7 @@ A plausible agreement or return plan is recognition evidence. Assurance concerns
 
 ### HRM.5:9 - Consequences
 
-The person's proposed continuation or transition becomes a concrete arrangement rather than an aspiration. It can require changing service commitments, obtaining external help or recognizing that no currently feasible option exists. Privacy limits some convenient information sharing. Medical assessment and institutional determination can remain necessary dependencies. The Method promises neither recovery on a schedule nor universal retention.
+The person's proposed continuation or transition becomes a concrete arrangement rather than an aspiration. It can require changing service commitments, obtaining external help or recognizing that no currently feasible option exists. Privacy limits some convenient information sharing. Medical assessment and institutional determination can remain necessary dependencies.
 
 ### HRM.5:10 - Architectural Rationale
 
@@ -112,7 +112,7 @@ Career movement, supported continuation, absence, return and exit share the cons
 
 ### HRM.5:11 - SoTA-Echoing
 
-WHO's account distinguishes prevention through work conditions, individual support, accommodation and return to work. This Method develops the HR receiving and implementation operations; it does not claim coverage of the full WHO guideline or every occupational hazard. The 2025 integrated-talent proposal supplies a serious alternative that can support personal trajectories outside the employer, while its proposed benefits remain unvalidated. A sufficient existing absence, accommodation or career service can provide the necessary contribution directly. The framework connects these contributions to actual work and terms and shows how to revisit only the affected parts when conditions change; it supplies no clinical treatment protocol or universal employment procedure.
+WHO's account distinguishes prevention through work conditions, individual support, accommodation and return to work. HR uses the professional findings to arrange suitable work, support and terms with those responsible, then checks what they provide. The 2025 integrated-talent proposal supplies a serious alternative that can support personal trajectories outside the employer, while its proposed benefits remain unvalidated. A sufficient existing absence, accommodation or career service can provide the necessary contribution directly. The framework connects these contributions to actual work and terms and shows how to revisit only the affected parts when conditions change; it supplies no clinical treatment protocol or universal employment procedure.
 
 ### HRM.5:12 - Relations
 

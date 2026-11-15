@@ -1,7 +1,7 @@
 ## IS.Reference:6 - Recognize a useful local result before claiming a larger one
 
-A plan, delivered workshop, configured tool, attempted use and successful receiving result are different findings. A record of activity can be complete while a required condition is missing. Begin with the strongest useful conclusion the actual grounds support.
+A plan, delivered workshop, configured tool, attempted use and successful receiving result are different findings. A record of activity can be complete while a required condition is missing. Report the result the evidence establishes for the question asked.
 
-For ordinary help, a short account can suffice: the difficulty, the contribution supplied, what the recipient could do with it, what remains conditional and the next justified action. Use more precise models or stronger evidence when the decision depends on them. A capability claim needs the intended holder and work conditions. A cultural claim needs the actual carriers and relations. A causal claim needs its own C.28 qualification.
+For ordinary help, identify the difficulty, the contribution supplied and what it made possible, at the level the question requires. Report remaining conditions or further action when relevant. Use stronger models or evidence where the requested conclusion needs them. For capability, identify the holder and work conditions. For cultural continuation, establish the carriers and relations claimed. For causal attribution, use C.28.
 
-C.11.DUA compares what an attainable answer could change with the work, delay and interruption required to obtain it. Preserve a robust bounded response when live explanations do not change it. A mandatory protection condition remains binding until changed by its actual authority.
+Use C.11.DUA to judge whether the value of an attainable answer warrants the work, delay and interruption of obtaining it. An existing bounded answer can suffice when the competing explanations leave its conclusion and grounds intact. Mandatory protections stay in force unless an effective authorized change applies.

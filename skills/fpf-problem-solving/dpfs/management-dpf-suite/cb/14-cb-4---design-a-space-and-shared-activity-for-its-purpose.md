@@ -5,11 +5,11 @@
 
 ### CB.4:1 - Problem frame
 
-Use this pattern when people have a worthwhile reason to interact, but the setting or activity does not yet let them do the relevant work together. A forum accumulates brief unanswered questions. A large meeting lets a few people speak while others cannot enter the conversation. A private case needs careful clarification, while the proposed format gives everyone only a minute.
+Use this pattern when participants have a worthwhile reason to interact, but the setting or activity does not let them do the relevant work together. A forum accumulates brief unanswered questions. A large meeting lets a few people speak while others cannot enter the conversation. A private case needs careful clarification, while the proposed format gives everyone only a minute.
 
-The subject is the arrangement of an interaction: its people, purpose, material, place or channel, participation, facilitation, timing and continuation. A useful arrangement can support mutual help, a shared experience, comparison of practice or a wider view of an issue. It may be a single encounter or a continuing space.
+The subject is the arrangement of an interaction: its participants, purpose, material, place or channel, participation, facilitation, timing and continuation. A useful arrangement can support mutual help, a shared experience, comparison of practice or a wider view of an issue. It may be a single encounter or a continuing space.
 
-**First useful result:** participants can perform the intended shared activity under feasible conditions, and its useful result or unresolved question reaches the next person or action that needs it.
+**First useful result:** participants can perform the intended shared activity under feasible conditions, and its useful result or unresolved question reaches the recipient or activity that needs it next.
 
 The organiser needs a credible purpose and relevant contributions, such as CB.1 and CB.2 supply, and an account of participants' access and preparation. CB.3 helps establish entry conditions. The activity's domain supplies the content and criteria for professional conclusions.
 
@@ -29,13 +29,13 @@ How can an organiser construct and adapt a shared activity so that the right con
 | Rich material and feasible preparation | Participants need enough context to contribute, while excessive prework can prevent participation. |
 | Familiarity and fit | A known tool or rhythm reduces entry cost; it may not support the required interaction or access. |
 | Openness and sensitive material | Broad participation can bring useful perspectives, while some material needs a limited audience and explicit use conditions. |
-| Continuity and available attention | A predictable opportunity can help people return; maintaining it consumes real organising and participant effort. |
+| Continuity and available attention | A predictable opportunity can help people return; maintaining it consumes organiser and participant time and effort. |
 
 ### CB.4:4 - Solution
 
-Begin with the result and the actions that could produce it. Choose a form, participants and setting that make those actions feasible; prepare their connections, run the activity with the support it needs, and return the outcome to its use.
+Begin with the result and the actions that could produce it. Choose a form, participants, material, space and time that make those actions feasible. Connect the participants and their material, provide any support the activity needs and return its outcome to the recipient or work that needs it.
 
-**Working reminder:** name the result; choose how people will work; fit material, space and time; guide the actual interaction; connect its outcome to the next use.
+
 
 #### CB.4:4.1 - Name the result and the interaction it requires
 
@@ -43,7 +43,7 @@ Ask what should become possible during or after this activity. A case owner may 
 
 Identify what participants must do with one another's contributions. Clarifying a difficult case needs questions and answers. Comparing contexts needs enough common questions to make the differences intelligible. Generating alternatives needs room for contributions that have not yet been evaluated. Producing a shared decision requires an applicable decision arrangement in addition to discussion.
 
-Select the minimum material and relevant people from that action. Explain why each contribution is needed and what the person can use or receive. Include a missing perspective where it can change the result, and obtain the needed domain competence separately from facilitation.
+Select the material and participants that action requires. Explain why each contribution is needed and what each participant can use or receive. Include a missing perspective where it can change the result, and obtain the needed domain competence separately from facilitation.
 
 State a limit early when it changes expectations. A forum answer can guide a next inquiry without promising an urgent professional response. A discussion can expose disagreement without settling it. A pleasant shared activity can be useful without demonstrating that anyone learned a skill.
 
@@ -66,15 +66,15 @@ Separate timing from medium. Asynchronous contribution can use paper, shared art
 
 Check the attention budget. Multiply a proposed round by the number of speakers, then allow time for understanding, comparison and closure. If it does not fit, shorten the requested contribution, use advance material, divide work with a meaningful return, select a smaller relevant group or change the scope. Do not merely announce a shorter time while retaining all the work.
 
-Small size alone establishes neither trust nor confidentiality. Large size alone establishes neither diversity nor useful coverage. Inspect who is present, whose contribution is missing and whether the selected form actually lets that contribution matter.
+Small size alone establishes neither trust nor confidentiality. Large size alone establishes neither diversity nor useful coverage. Inspect who is present, whose contribution is missing and whether the selected form lets that contribution matter.
 
 #### CB.4:4.3 - Choose a concrete conversation construction
 
 Use a form because of the result it develops. The variants below are adaptations of practitioner treatments in the Communities of Practice Guidebook. Their timings and group sizes must fit the actual case.
 
-**A focused discussion of a current question.** State the question and obtain contrasting experience or interpretations. Let people clarify the terms, offer a relevant example and respond to a specific difference. Limit recurring monologues that prevent others from entering. If the agenda itself is uncertain, participants can propose and select questions for the available discussion time. Selecting discussion topics gives the group an agenda; it does not grant authority over the matter discussed.
+**A focused discussion of a current question.** State the question and obtain contrasting experience or interpretations. Let people clarify the terms, offer a relevant example and respond to a specific difference. Limit recurring monologues that prevent others from entering. If the agenda is uncertain, participants can propose and select questions for the available discussion time. Selecting discussion topics gives the group an agenda; it does not grant authority over the matter discussed.
 
-**One conversation in a larger group.** Use a fishbowl-like arrangement when splitting into separate groups would lose the shared conversation. Keep a small speaking group and a wider listening group, with a clear, usable way to change places. People join the speaking group to contribute rather than starting a competing conversation from outside. Allow a newcomer to the speaking group a real chance to speak and remain for responses. Choose a transition signal that fits physical access or the available communication channel. A facilitator maintains audibility and the transition agreement. A fixed panel with an audience supplies a different interaction.
+**One conversation in a larger group.** Use a fishbowl-like arrangement when splitting into separate groups would lose the shared conversation. Keep a small speaking group and a wider listening group, with a clear, usable way to change places. People join the speaking group to contribute rather than starting a competing conversation from outside. Allow a newcomer to the speaking group a chance to speak and remain for responses. Choose a transition signal that fits physical access or the available communication channel. A facilitator maintains audibility and the transition agreement. A fixed panel with an audience supplies a different interaction.
 
 **Conversations with changing groups.** Use a café-like arrangement to explore one question across several contexts. Give each small group the same intelligible question and a way to retain the material. On changing groups, keep a host or other reliable context return; incoming participants add what they encountered elsewhere and inspect differences. At the end, compare themes and unresolved conditions across groups. Choose the number and duration of rounds from the available attention. A display of popular themes can guide further inquiry, but should not erase an important minority condition or be presented as a representative population estimate.
 
@@ -92,7 +92,7 @@ For a specific case clinic, design clinic, story, project review or prepared gue
 
 Choose a physical or digital setting by the interaction it must support. Check whether people can enter, see or hear the material, take turns, ask for clarification and recover the result. For a continuing question-and-answer space, also check whether later users can find an applicable answer and its conditions. For rapid discussion, the ability to exchange and clarify may matter more than a complex information structure.
 
-Test the actual participant path with a representative task. Open the intended material under the participant's access conditions, try the proposed contribution and obtain the expected return. If a platform's features or cost matter to the decision, inspect its current terms and behaviour for this use; a remembered product category does not settle that comparison.
+Test the participant’s path with a representative task. Open the intended material under the participant's access conditions, try the proposed contribution and obtain the expected return. If a platform's features or cost matter to the decision, inspect its current terms and behaviour for this use; a remembered product category does not settle that comparison.
 
 Keep the number of spaces proportionate to distinct needs and available support. Split a channel when the difference in audience, material, timing or purpose justifies it and the new route can be found. Avoid requiring people to repeat the same question in several places. Where independent groups already use another space, arrange a permitted connection rather than assuming that all useful relations must move to the organiser's platform.
 
@@ -106,7 +106,7 @@ Open by making the purpose, current conditions and next action clear. Give an ex
 
 LDR.1 supplies a developed construction for a brief before work, a short reassessment when the situation changes and a debrief afterwards. Use its relevant contribution: confirm what people will do, make an obstacle or change intelligible, and return the needed adjustment to the person who can make it.
 
-During the activity, intervene at the actual difficulty. Ask for the observation behind a conclusion, give a quieter contributor a usable entry, recover a lost question, clarify which configuration an answer concerns or separate clarification from advice. If the selected form is preventing the work, change it openly and preserve the intended result. Breaking a large discussion into smaller groups also requires a way to bring their relevant results back.
+During the activity, address the difficulty participants encounter. Ask for the observation behind a conclusion, give a quieter contributor a usable entry, recover a lost question, clarify which configuration an answer concerns or separate clarification from advice. If the selected form is preventing the work, change it openly and preserve the intended result. Breaking a large discussion into smaller groups also requires a way to bring their relevant results back.
 
 For joint practice or role-play, name the representative situation, available materials, participant roles and the action being tried. Observe what happened and compare it with the applicable criteria before trying a variation. A demonstration can include the practitioner's explanation of a choice that would otherwise remain invisible. Use HCD when the intended result is a person's learning or capability; attendance, enthusiasm and seeing an expert perform are insufficient evidence of that result.
 
@@ -116,7 +116,7 @@ Keep emotionally sensitive material within the participants' consent and the org
 
 Before closing, ask what the activity supplied and who needs it next. The result may be a case owner's next step, a set of contrasting interpretations, an introduction, a material revision or a valued shared experience. Preserve an unresolved question where its deciding condition is still absent.
 
-Return enough context for the next use. Include the question, relevant conditions, remaining disagreement or uncertainty, and the person who has accepted the next action where one is needed. Obtain agreement before sharing attributable or sensitive material. A private experience can remain private when no further record serves its purpose.
+Return enough context for the next use. Include the question, relevant conditions, remaining disagreement or uncertainty, and who has accepted the next action if one is needed. Obtain agreement before sharing attributable or sensitive material. A private experience can remain private when no further record serves its purpose.
 
 If the activity recurs, choose its rhythm from demand, participants' availability and organising capacity. Keep a familiar entry when it helps, but change the content or support that no longer serves the work.
 
@@ -128,9 +128,9 @@ Observe the next use when the claim depends on it. A meeting can establish that 
 
 A constructed repairer meeting has eighteen participants, forty-five minutes and one question: under which workshop conditions does a particular permitted diagnostic observation become unavailable? The purpose is a picture of the differing conditions and contacts for follow-up, rather than agreement on a new diagnostic method.
 
-The first design gives everyone two minutes for an introduction. That consumes thirty-six minutes and leaves nine for the actual comparison and closure. The organiser instead asks for a short advance description and arranges three groups with six people each. Each group has a willing host who can preserve its account.
+The first design gives everyone two minutes for an introduction. That consumes thirty-six minutes and leaves nine for comparison and closure. The organiser instead asks for a short advance description and arranges three groups with six people each. Each group has a willing host who can preserve its account.
 
-The forty-five minutes are allocated as five to establish the question and sharing limits, twelve for the first conversation, three to change groups, twelve for a second conversation, ten to compare findings, and three to close the return. These case allowances sum to forty-five. The hosts retain context while the other participants encounter a different group.
+The forty-five minutes are allocated as five to establish the question and sharing limits, twelve for the first conversation, three to change groups, twelve for a second conversation, ten to compare findings, and three to close the return. The hosts retain context while the other participants encounter a different group.
 
 One group reports an equipment constraint; another reports permission to use the data; a third finds that an available observation has been misunderstood. The whole-group comparison preserves those different conditions. The relevant access owner receives the permission question, and two participants accept a bounded clarification of the instruction. A majority preference would not make these difficulties the same.
 
@@ -150,11 +150,11 @@ The closing account distinguishes differing experiences and questions for the pe
 
 #### CB.4:5.4 - A demonstration changes the receiving question
 
-A practitioner demonstrates a familiar repair method while explaining why an observation changes the next action. Viewers recover a previously hidden distinction and ask for suitable practice material. The organiser has arranged a useful demonstration and a return. The subsequent learning design, representative attempts and capability judgement use HCD. If the demonstrated method itself remains unclear, its description or development uses Method Engineering.
+A practitioner demonstrates a familiar repair method while explaining why an observation changes the next action. Viewers recover a previously hidden distinction and ask for suitable practice material. The organiser has arranged a useful demonstration and a return. The subsequent learning design, representative attempts and capability judgement use HCD. If the demonstrated method remains unclear, its description or development uses Method Engineering.
 
 ### CB.4:6 - Bias-Annotation
 
-Event accounts often make a memorable experience or a fluent discussion appear sufficient. The method keeps the receiving result and later use visible. Platform-centred accounts can also favour measurable activity over quiet access and off-platform relationships; choose the setting from the contribution and actual participant conditions.
+Event accounts often make a memorable experience or a fluent discussion appear sufficient. The method keeps the receiving result and later use visible. Platform-centred accounts can also favour measurable activity over quiet access and off-platform relationships; choose the setting from the contribution and participants’ conditions.
 
 ### CB.4:7 - Conformance Checklist
 
@@ -164,7 +164,7 @@ Before relying on the arrangement, establish that:
 - relevant contributors and domain criteria are available;
 - the form, size and timing fit the work;
 - material and access conditions allow the intended participation;
-- facilitation addresses actual obstacles and permits a workable change;
+- facilitation addresses the obstacles participants encounter and permits a workable change;
 - the outcome reaches its next use with the needed context and limits.
 
 Recognition can begin with a simple invitation and prepared activity. Claims about actual learning, durable relationships, representative opinion or a fulfilled professional service require their own evidence.
@@ -197,7 +197,7 @@ Preserving the return is as important as producing contributions. Splitting a gr
 
 | Source line or developed treatment | Contribution used | Adaptation and accepted limit |
 | --- | --- | --- |
-| Spinks, The Business of Belonging (2021), physical PDF 139–168 | Connect people, purpose, setting, participation, rules, invitation and intended result; design guidance and timing instead of waiting for spontaneous interaction. | Select size and rhythm from the actual action. Small size, emotional intensity and platform activity supply no general quality or learning guarantee. |
+| Spinks, The Business of Belonging (2021), physical PDF 139–168 | Connect people, purpose, setting, participation, rules, invitation and intended result; design guidance and timing instead of waiting for spontaneous interaction. | Select size and rhythm from the action participants need to perform. Small size, emotional intensity and platform activity supply no general quality or learning guarantee. |
 | Wenger-Trayner et al., Communities of Practice Guidebook, second edition (2023), printed 152–156 and 163–174 | Distinct constructions for a focused discussion, shared conversation, rotating conversations, argument exploration, context comparison and reflection. | These are practitioner methods and cases. Preserve their different results and participation conditions; a forum format or topic selection supplies no independent decision mandate. |
 | LDR.1:4.4 | Brief the work, reassess a changed situation and debrief the episode with an actual return. | Reuse the conversation construction while obtaining competence, permission and authority from their direct sources. |
 | HCD.5 and HCD.6 | Select learning activities and representative practice when learning is the receiving use. | An interaction can supply material or help without establishing independent capability. |

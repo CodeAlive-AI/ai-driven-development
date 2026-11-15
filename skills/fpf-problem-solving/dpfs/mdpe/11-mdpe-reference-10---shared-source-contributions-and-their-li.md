@@ -1,82 +1,82 @@
 ## MDPE.Reference:10 - Shared source contributions and their limits
 
-The shared architecture follows the practical questions raised by the sources. Systems-engineering and
-Method-engineering syntheses contribute changing project subjects, several useful descriptions, replaceable
-Methods, and architecture that can evolve. Capability-development sources contribute representative work and
-transfer. Work-management and organization sources contribute continuing support, shared-resource limits, and
-arrangements that can actually perform the changed practice. FPF supplies the general distinctions used to
-combine those contributions. The Music and Dance sources below show where specialist content changes the
-working move. For each pattern's detailed basis and evidence limits, return to its discussion of sources.
+Systems Engineering and Method Engineering contribute ways to define a changing project
+subject, use several descriptions, replace a Method and revise an architecture.
+Capability-development sources connect representative work and transfer. Work-management
+and organization sources address recurring support, shared resources and arrangements
+that can carry out a changed practice. FPF provides the general distinctions used
+to connect these contributions. The following sources provide the specialist music
+and dance methods and evidence. Each pattern gives the grounds and limits for its particular use.
 
-**Practice construction and its supporting environment.** The practitioner-authored [Live Coding: A User's
-Manual](https://livecodingbook.toplap.org/book/) and [Algorave guidelines](https://github.com/Algorave/guidelines/blob/master/README_en.md)
-connect live musical work with performer-built tools, visible process, event conventions, and a community.
-MDPE adopts the need to consider these relations together in `MDPE.5`, `MDPE.21`, and `MDPE.22`. It adapts the
-event guidance to an actual local brief: the performer Method, technical rehearsal, participants, capacity, and
-costs must still be obtained. The manual describes a plural field; the actual case still needs the Method that its performer will use. A manifesto or calendar supplies evidence of another kind from a tested local performance or
-later cultural uptake.
+**Practice construction and its supporting environment.** The practitioner-authored
+[Live Coding: A User's Manual](https://livecodingbook.toplap.org/book/) and
+[Algorave guidelines](https://github.com/Algorave/guidelines/blob/master/README_en.md) connect live music with
+performer-built tools, a visible process, event conventions and a community. `MDPE.5`, `MDPE.21` and `MDPE.22`
+use these relations in a local brief. Identify the method used or proposed for the performance and use applicable information
+on rehearsal, participants, capacity and costs. A manifesto can document the stated principles and a calendar
+the advertised events. Evidence of performance or later cultural uptake comes from the relevant occurrences.
 
-The [Street Tango Concept](https://tangonuevo.ru/stc7eng) provides a practitioner-authored example of deliberate
-work on technique, exercises, teaching, and a proposed style. The [TOCA Method](https://tocamethod.com/?lang=en)
-provides one teaching line organized around Touch, Observation, Control, and Awareness. Such sources make
-positive construction and teaching moves recoverable. They also leave serious alternatives: another teaching
-line may fit the learners better, and a commissioned performance may need no continuing style programme.
-Practitioner accounts can support a stated contribution while leaving disputed origins and wider recognition
-unsettled. `MDPE.17` and `MDPE.18` preserve that separation in transmission and lineage work.
+The [Street Tango Concept](https://tangonuevo.ru/stc7eng) describes a practitioner’s work
+on technique, exercises, teaching and a proposed style. The [TOCA Method](https://tocamethod.com/?lang=en)
+offers one teaching approach organized around Touch, Observation, Control and Awareness.
+A teacher can assess the fit of this approach or an alternative for the learners. A
+commission for one performance can finish with that performance. Use practitioner
+accounts for the contribution they document. `MDPE.17` and `MDPE.18` distinguish
+such evidence from grounds for disputed origins, transmission or wider recognition.
 
-**Production as a connected result.** Kloosterman and van Kempen's 2026 [study of an NDT Dance production](https://doi.org/10.1016/j.ccs.2026.100710)
-reconstructs choreography, dancers' work, costume and prop development, technical rehearsal, presentation,
-recording, and later judgement. It supports the `MDPE.5` question of whether specialist choices jointly realize
-the intended Dance use. It also shows why `MDPE.21` and `MDPE.22` sometimes need continuing organizational and
-technical capability. NDT is a resource-rich case; its bespoke production and touring conditions cannot be
-assumed for a local class or voluntary scene. The reusable contribution is the return from a specialist choice
-to the performance it must enable. A cheaper local arrangement may be preferable when it preserves that use.
+**Production as a connected result.** Kloosterman and van Kempen’s 2026
+[study of an NDT Dance production](https://doi.org/10.1016/j.ccs.2026.100710) reconstructs choreography,
+dancers’ work, costumes, props, technical rehearsal, presentation, recording and later judgement.
+`MDPE.5` traces each specialist choice to what it enables in performance. `MDPE.21` and `MDPE.22`
+examine recurring organizational and technical capability where needed. NDT had resources for bespoke
+production and touring. For a local class or voluntary scene, establish what the intended use
+requires. A less costly arrangement may be preferable if it preserves that use and the necessary contributions can still be supplied.
 
-**Observation, representation, and recognition.** [Comparative musicology](https://doi.org/10.1093/9780191872303.003.0002),
-the [Global Jukebox](https://doi.org/10.1371/journal.pone.0275469), and the 2026 [rhythm-aware melodic-alignment
-study](https://arxiv.org/abs/2607.12673) offer different ways to compare musical material. MDPE adopts question-led
-comparison and adapts borrowed representations to timing and other domain distinctions. The alignment study is
-a preprint, and its variant analysis supports a different claim from a listener's judgement or an event choice.
-In Dance, Whitehead and colleagues' [spontaneous-interactivity study](https://doi.org/10.3389/fpsyg.2024.1465595)
-combines kinematic analysis, coding, and experienced participants' interpretations. It supplies observation and
-interpretation methods at a bounded scope. Audience or community recognition requires the corresponding
-recognizers, task, conditions, and evidence. `MDPE.12`, `MDPE.23`, and `MDPE.13` therefore retain separate results
-for observing, developing recognition, and arranging selection.
+**Observation, representation and recognition.** [Comparative musicology](https://doi.org/10.1093/9780191872303.003.0002),
+the [Global Jukebox](https://doi.org/10.1371/journal.pone.0275469) and a 2026
+[rhythm-aware melodic-alignment study](https://arxiv.org/abs/2607.12673) offer different comparisons
+of musical material. The alignment preprint examines variants. Use a representation that preserves
+the distinctions in the question, and evidence from listeners or event decisions when those
+are the subjects. Whitehead and colleagues’ [spontaneous-interactivity study](https://doi.org/10.3389/fpsyg.2024.1465595)
+combines kinematic analysis, coding and interpretations by experienced participants.
+Its observation and interpretation methods can be used under the conditions they cover. Its findings describe the observed cases. For audience or community recognition,
+establish the recognizers, task, conditions and evidence. `MDPE.12` addresses
+observation, `MDPE.23` recognition capability and `MDPE.13` the selection arrangement.
 
 **Learning under changed conditions.** The 2021 [COIN sensorimotor study](https://doi.org/10.1038/s41586-021-04129-3)
-and later [work on contextual cues and transition statistics](https://doi.org/10.1016/j.isci.2026.116281) distinguish
-memory updating from expression under inferred context. `MDPE.10` and `MDPE.23` adapt that distinction into a
-choice of cue and transfer probes. Returning to a previously successful context can help distinguish a
-retrieval problem from a missing capability. The motor-learning evidence leaves Music, Dance, broader memory,
-and non-human transfer claims to their own tests. Likewise, the [Music focus-of-attention review](https://doi.org/10.3389/fpsyg.2024.1290596)
-does not select one cue for every performer. Keeping more than one plausible learning explanation changes what
-the next trial should test.
+and later [work on contextual cues and transition statistics](https://doi.org/10.1016/j.isci.2026.116281)
+distinguish updating a memory from expressing it under an inferred context. `MDPE.10` and `MDPE.23` adapt
+this distinction when selecting a cue or transfer probe. A return to a previously successful context can help
+distinguish difficulty retrieving a response from lack of capability. Judge its applicability to a musical,
+dance, broader memory or non-human case from the relevant evidence. The
+[Music focus-of-attention review](https://doi.org/10.3389/fpsyg.2024.1290596) informs the choice of attentional cues for the performer and task. When
+the cause remains open, ask which observations could distinguish the plausible explanations for the particular performer.
 
-**Human, machine, and combined contributions.** The [Shimon project](https://gtcmt.gatech.edu/shimon) and its
-[robotic-gesture study](https://doi.org/10.3389/frobt.2024.1461615), the [Drumming Arm study](https://doi.org/10.1109/ICRA48506.2021.9561943),
-and [JIZAI ARMS co-design](https://doi.org/10.1145/3544548.3581169) require separate accounts of component change,
-performing configuration, capability, and development decisions. MDPE adopts those distinctions in `MDPE.3` and
-`MDPE.10`; it uses exploratory equipped-body work only at its demonstrated scope. JIZAI prototype interaction
-leaves Dance performance and transfer untested. In the 2026 [movement-model co-design study with Voguing and
-Dancehall dancers](https://doi.org/10.1145/3772318.3791515), practitioner curation and improvisation informed
-tool/model revision. The three-model comparison involved Dancer-Y alone in medium/high/low order; self-selected
-music and changed practice prevent treating fidelity as the isolated cause of his responses. `MDPE.9` adapts that
-co-design chain to a new project's intended performers. With `MDPE.16`, it proposes retaining materially different
-alternatives when their different receiving uses justify doing so, instead of presuming that an averaged output
-serves every purpose. The new project's dispositions still need their own basis.
+**Human, machine and combined contributions.** The [Shimon project](https://gtcmt.gatech.edu/shimon),
+its [robotic-gesture study](https://doi.org/10.3389/frobt.2024.1461615), the
+[Drumming Arm study](https://doi.org/10.1109/ICRA48506.2021.9561943) and
+[JIZAI ARMS co-design](https://doi.org/10.1145/3544548.3581169) distinguish a component change, the performing
+configuration, capability and a development decision. `MDPE.3` and `MDPE.10` use these distinctions. The
+JIZAI prototype provides evidence of the interactions examined. Claims about Dance performance or transfer
+need corresponding evidence. In the 2026 [movement-model co-design study with Voguing and Dancehall dancers](https://doi.org/10.1145/3772318.3791515),
+dancers’ curation and improvisation informed changes to the tool and models. Dancer-Y alone compared
+three models in medium/high/low order, with self-selected music and changes to practice. These
+conditions leave the isolated effect of fidelity unresolved. `MDPE.9` adapts the co-design process
+to the intended performers. `MDPE.16` can retain alternatives when distinct receiving uses
+warrant the cost. Assess the alternatives against the new project’s actual aims and conditions.
 
 **Open development and cultural inquiry.** [Quality Diversity through Human Feedback](https://proceedings.mlr.press/v235/ding24h.html)
-provides a computational Method for shaping diversity with human similarity judgements. MDPE adapts the question
-of which useful differences are being lost, while creation and curation still need their domain Methods.
-Yaman, Tian, and Lindström's 2026 [semantic-knowledge and innovation study](https://doi.org/10.1073/pnas.2530750123)
-gives reason to test knowledge-guided creation alongside random variation. Neither source supplies a universal
-artistic search rule. `MDPE.16` keeps usable branches and their maintenance costs visible; `MDPE.20` asks which
-mechanism and observation could change the development choice.
+offers a computational method for shaping diversity from human similarity judgements. MDPE uses it to ask
+which useful differences might be lost. Music or dance creation and curation need their relevant domain
+methods. Yaman, Tian and Lindström’s [semantic-knowledge and innovation study](https://doi.org/10.1073/pnas.2530750123)
+gives a reason to compare knowledge-guided creation with random variation. Assess those options for the
+artistic use in question. `MDPE.16` examines usable alternatives and their maintenance costs. `MDPE.20`
+examines candidate mechanisms and the observations that could distinguish the trajectories they imply.
 
-The 2024 cultural-evolution [computational-workflow](https://doi.org/10.1073/pnas.2322887121) and
-[experimental-design](https://doi.org/10.1073/pnas.2322886121) papers contribute explicit target claims, model
-checks, and design trade-offs. They serve the independent inquiry into transmission, mixing, retention, or
-intervention effects when its answer matters for a constructive decision. Historical reconstruction,
-ethnography, and domain observation remain serious alternatives for questions those computational Methods
-cannot answer. A better local performance and a supported explanation of later cultural change remain distinct
-results.
+The 2024 cultural-evolution [computational-workflow](https://doi.org/10.1073/pnas.2322887121)
+and [experimental-design](https://doi.org/10.1073/pnas.2322886121) papers contribute
+target claims, model checks and design trade-offs. Use them where they help investigate
+transmission, mixing, retention or the effects of an intervention. Historical reconstruction,
+ethnography and direct observation offer alternatives for different evidence questions.
+An account of cultural change can answer an inquiry independently or inform a
+constructive decision. An improved local performance establishes a different result.

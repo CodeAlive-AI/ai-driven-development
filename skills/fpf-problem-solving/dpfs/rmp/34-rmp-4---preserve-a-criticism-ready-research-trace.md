@@ -5,25 +5,25 @@
 
 ### RMP.4:1 - Problem Frame
 
-Use this pattern when research material must remain inspectable, or when a colleague receives an apparent result but cannot recover how the work produced it. Begin by naming one examination the material should support and locating the records on which that examination depends.
+Use this pattern to preserve the material for a particular examination of research or to establish how an earlier inquiry produced a reported result. Name the examination and locate the records it needs.
 
-For example, residents recorded downstream salinity during a thaw, but the reference reach could not be visited. Keeping the chart and a tidy folder is useful, yet it cannot restore the missing paired observation. A useful trace identifies the missing site and period, the reason, what the remaining observations can support and which comparison is no longer available.
+For example, residents measured downstream salinity during a thaw and missed their visit to the reference reach. Their chart preserves the downstream observations. Record which visit they missed, why, what can be established about the reference reach from other sources, and what the remaining observations support.
 
-This pattern governs **the account of an inquiry's actual course and retained material for a named examination**. It connects plans, conduct, changes and the material used in a result. Its first useful result is a **ResearchTracePackage**: an inspectable account with the necessary records or reliable references to them, including limitations that change the receiving use. It need not be one archive or a copy of all the data.
+This pattern connects **the course of an inquiry and the material retained for a named examination**. Its **ResearchTracePackage** gives the reader the necessary records or reliable references and explains how plans, conduct and changes bear on the result. The records can reside in several places. Include limitations that affect the intended use.
 
-“Criticism-ready” means that the material needed for the declared examination can actually be inspected under the stated conditions. A partial package can honestly explain why that examination is impossible. It cannot claim readiness for the examination its own limits prevent.
+A package is “criticism-ready” for an examination when the material that examination needs is inspectable under the stated conditions. A partial account can establish where inspection stops and how that limits the conclusion.
 
-Enter while work is being planned or performed, before important records are lost. Alternatively, enter directly with inherited work and surviving material. There is no requirement to invent a new prospective protocol for completed work or to repeat RMP.1–RMP.3.
+During planning or fieldwork, preserve at-risk records while they are available. For inherited work, start with the surviving material. Use RMP.1–RMP.3 if a needed question, design or protocol still has to be developed.
 
-If an existing competent notebook, laboratory record or repository already supports the intended examination, use it. RMP.4 is needed when the conduct-to-material connection, change history or receiving limitation needs work. Evaluating the substantive explanation, reproducing a computation, issuing an access decision and performing new research remain separate contributions.
+Use an existing notebook, laboratory record or repository when it supports the examination. Apply RMP.4 when a connection between conduct and material, a change or a limit of use needs explaining. Obtain a substantive assessment, computational reproduction, access decision or new research separately when the work calls for it.
 
 ### RMP.4:2 - Problem
 
-Research accounts are often written from the final result backwards. Earlier plans disappear, a missed observation becomes a blank cell, failed computations are omitted, and consequential human or AI choices become an undifferentiated “processing” step. A reader sees the conclusion but cannot examine how the available material came to bear on it.
+An account written after the result is known can lose an earlier plan, record a missed observation as a blank cell or omit a failed computation. A step called “processing” may hide choices by researchers or AI systems. The reader needs the particular choices and events that bear on the result.
 
-Preserving everything is not a sufficient answer. Large collections can omit the decisive exclusion or timing information, be inaccessible in practice, or disclose material that its holders have not authorized for that use. A public summary may be readable while lacking the detail needed for a particular criticism.
+A large collection can omit the decisive exclusion or its timing, be inaccessible to its intended readers, or disclose material outside the authorized use. A public summary can be sufficient for one examination and lack the detail another requires.
 
-How can a practitioner preserve enough of actual inquiry to make its important connections inspectable, recover inherited work honestly, and expose the exact limits of loss, reconstruction and restricted access?
+What records will let a reader examine the course of an inquiry, and what can be established when material has to be reconstructed, has been lost or has restricted access?
 
 ### RMP.4:3 - Forces
 
@@ -31,123 +31,123 @@ How can a practitioner preserve enough of actual inquiry to make its important c
 | --- | --- |
 | Capture before loss | A later critic needs consequential detail that may disappear before a final claim is formulated. |
 | Proportionate records | More detail can enable later questions, while indiscriminate capture increases burden and disclosure risk. |
-| Plans and conduct | Prospective commitments help criticize actual choices, but neither an intention nor a later methods account establishes what occurred. |
-| Adaptive inquiry | Interpretation can legitimately change, while hidden changes obscure the researcher's contribution and prior exposure to outcomes. |
+| Plans and conduct | A dated plan can establish a commitment. A later methods account may also provide evidence of conduct. What happened depends on the grounds for that account. |
+| Adaptive inquiry | Knowing when an interpretation changed and which outcomes the researcher had seen helps a reader evaluate the change. |
 | Access | A protected original may support a permitted examination that its public rendering cannot support. |
-| Reconstruction | Surviving records may recover part of a history, while filling its remaining gaps can manufacture false certainty. |
-| Reuse | One trace can support several examinations, but readiness for one does not establish readiness for another. |
+| Reconstruction | Surviving records can establish part of a history and leave the rest open. A reader needs to know which claims the records support. |
+| Reuse | Different examinations of the same records can require different detail, provenance or access. |
 
 ### RMP.4:4 - Solution
 
-Name the receiving examination, preserve its consequential material before loss, connect the records to actual choices and results, and state what the receiving reader can and cannot inspect. Keep original material, supported reconstruction and irrecoverable loss distinct throughout.
+Specify the examination, preserve the material it needs while that is possible, and connect the records to the choices and results they support. Identify what the reader can inspect, what can be reconstructed, and how loss or limits on access affect the answer.
 
 #### RMP.4:4.1 - Name the examination and choose the entry
 
-State what someone is trying to examine. They may need to understand an exclusion, test whether a comparison was actually made, inspect an interpretation's grounding, or recover the inputs behind a reported computation. Identify the bounded question, design and material at issue.
+State the question the examination should answer. For instance, the investigator may need to explain an exclusion, establish whether a comparison took place, inspect the basis for an interpretation or find the inputs to a calculation. Identify the relevant design and material where they are known.
 
-A final claim is not a prerequisite. During preparation, the examination can concern whether the planned comparison was carried out or whether the forthcoming analysis has the material it needs. Preserve that intended use without inventing a result or ClaimCandidate. When a result is later supplied, connect its actual uses to the retained material.
+During preparation, identify what will later show whether the comparison took place and what material the proposed analysis needs. If a result is reported later, connect it to the material used to obtain it. An examination of an earlier plan can finish before any result or ClaimCandidate exists.
 
 Choose the entry that fits the work:
 
-- **Planned or ongoing work:** recover the question/design and operational choices; identify what would be lost unless captured now; arrange and maintain the actual records.
-- **Existing or inherited work:** begin with the receiving question, claimed result if any, and surviving original records. Recover the design, protocol and conduct only as far as those records support them.
+- **Planned or ongoing work.** Identify the question, design and operational choices that matter to the examination. Arrange to capture the needed records while their contents can still be established.
+- **Existing or inherited work.** Start with the question, any claimed result and the surviving material. Recover the design, protocol and conduct to the extent supported by records, testimony or other evidence.
 
-RMP.1–RMP.3 can supply missing question, design or operational decisions. Direct entry is appropriate when compatible inputs already exist. In a legacy inquiry, uncertainty about an earlier design is part of the account, not permission to attribute a newly written protocol to earlier researchers.
+Use a compatible question, design or operational decision that is already available. RMP.1–RMP.3 can help develop a missing contribution. If an earlier design is uncertain, give the basis of any reconstruction and the date it was made.
 
-Bound the package by the examination. Name which study portion, source set, encounters, specimens or computation it covers and the relevant period or version. If the receiving use changes, reconsider whether the preserved material is sufficient for that new use.
+Identify the part of the study, sources, encounters, specimens or computation in question and the relevant period or version. For a different examination, check whether the material still suffices.
 
 #### RMP.4:4.2 - Preserve the smallest material whose loss would matter
 
 Ask what the critic would be unable to distinguish if one record disappeared. Start with those distinctions. Examples include which specimen was measured, which document was inspected, why a source was excluded, or whether an outcome was already visible when a choice was made.
 
-Arrange capture at the point where the relevant event or choice occurs. An existing qualified laboratory or data practice may already do this. Reference its records and qualifications rather than reproduce them in an RMP form.
+For ongoing work, capture the event or choice while it can be observed. If a suitable laboratory or data practice already preserves it, cite the record with its relevant qualifications.
 
-Preserve the applicable plans with their versions and timing. A registration, protocol and analysis intention may have different contents and dates. Keep enough to compare intention with conduct, including amendments. A record's title cannot establish its prospective status.
+Keep the versions and dates of the plans relevant to the examination, including amendments. A registration, protocol and intended analysis can record different commitments at different times. To establish a prospective commitment, check its contents and timing against the work.
 
-Distinguish these evidential situations in ordinary language:
+Distinguish how each part of the account is supported.
 
 | Basis for the account | How to report it |
 | --- | --- |
-| A contemporaneous record supports the event or choice. | Identify the record, its scope and the connection it supports. Its mere existence does not make every recorded statement true. |
+| A contemporaneous record supports the event or choice. | Identify its scope and the particular claim it supports. Check the basis of recorded statements on which the examination depends. |
 | A person reports the event later. | Identify it as a later report and retain what supports or limits that account. |
 | Surviving sources support a reconstruction. | Mark the reconstructed part, its sources, reasoning and uncertainty. |
 | The relevant conduct, reason or timing is unknown. | Say what is unknown and which examination depends on it. |
 
-Retain the distinction even if all four occur in the same notebook or account. Date a reconstruction as a reconstruction. A polished description of earlier intentions does not establish that those intentions preceded data access.
+A single notebook can contain all four kinds of account. Date any reconstruction and identify the evidence that places an intention before or after access to the data. If its timing cannot be established, leave it open.
 
-Actual retention, access and authorized destruction requirements come from their owners. Preserve permitted evidence of loss and its consequences where possible; do not retain prohibited material merely to improve a trace.
+Apply the retention, access and destruction requirements that govern the material. Where permitted, preserve evidence of loss and explain its effect on the examination.
 
 #### RMP.4:4.3 - Connect actual conduct, transformations and uses
 
-Trace one consequential result or planned comparison back to its material. Identify the actual observation, source, encounter or computation and the selection or transformation between it and the receiving use.
+Follow a consequential reported result back to the observations, sources, encounters or computations used to obtain it. For a planned comparison, identify the material it would require and what has been collected so far. Show how selection or transformation connects the material to its intended or actual use.
 
-For observations, retain the specimen, case, participant, site or sample identity at the permitted precision, together with the conditions needed to interpret it. Keep raw indications, qualified measurement results and derived values distinguishable. FPF C.16 supplies measurement discipline; a spreadsheet cell alone does not establish its unit, uncertainty or qualification.
+For observations, retain the identity of the specimen, case, participant, site or sample at the permitted level of detail and the conditions needed to interpret it. Distinguish instrument indications, qualified measurements and derived values. Use FPF C.16 when an examination depends on units, uncertainty or qualification that the recorded values alone leave unclear.
 
-For sources, distinguish a catalogue description from a document actually inspected. Preserve source and edition, locator, dating and provenance, the selection reason and any relevant transcription or translation. Keep contrary material and unexamined source families visible where they affect the question.
+For documentary sources, specify whether the investigator used a catalogue description or inspected the document. Preserve the edition, locator, dating, provenance, reasons for selection and any relevant transcription or translation. Identify contrary evidence and unexamined collections where they affect the answer.
 
-For transformations, retain the input–operation–output connection at the granularity the examination needs. Identify consequential filtering, recoding, deduplication, aggregation, translation, manual correction and model or computational steps. Preserve the actual version and parameters when they can change the result. FPF A.10 supplies the general claim-bound evidence/provenance discipline; this pattern makes the inquiry's actual research-use connections recoverable.
+For transformations, show which operation produced the relevant output from which input. Record filtering, recoding, deduplication, aggregation, translation, corrections or computational steps that affect the examination, with versions and parameters where they matter. Use FPF A.10 when a claim needs its evidence and provenance made explicit.
 
-For computation, a useful trace can connect input versions, code and environment dependencies, parameters or seeds where relevant, the particular run and its outputs. Include relevant failures and manual interventions. An executable script plus a data folder does not by itself identify the run behind a displayed result.
+For a reported computation, link the output to the particular run, its inputs, code and relevant environment, parameters and random seeds. Include failures and manual interventions that affect interpretation. A folder that contains several input versions may leave the version used in the run unknown.
 
-For qualitative work, retain the grounding material and the researcher's consequential interpretations and changes under the selected approach. Researcher positioning or a change in questioning may be essential evidence; a universal coding-agreement score may not be appropriate.
+For qualitative work, retain the material and interpretive choices on which the findings depend. Explain a change in the researcher’s position or questioning when it matters. Apply a coding-agreement criterion when the selected approach and examination warrant it.
 
-For evidence synthesis, preserve searches as performed: sources or platforms, dates, query versions and resulting material, followed by screening, duplicate handling, exclusions and extraction changes. This supports examination of how the corpus was obtained. It does not perform appraisal or synthesis merely by recording their intended Methods.
+For evidence synthesis, preserve the searches performed, including platforms or sources, dates, query versions and retrieved material. Trace screening, duplicate handling, exclusions and changes in extraction. These records can explain how the corpus was obtained. To establish appraisal or synthesis, locate evidence of the work performed.
 
-In a mixed inquiry, preserve each component's trace and the actual combining or interpretive choices. Expose shared data and assumptions. Two streams of records do not establish independent corroboration if both depend on the same selected participants or retrospective source.
+In a mixed inquiry, preserve how each component contributed and how the investigators combined or interpreted their results. Identify shared data and assumptions. If two findings rely on the same participants or retrospective source, account for that dependence when assessing corroboration.
 
 #### RMP.4:4.4 - Explain consequential changes and contributions
 
-Preserve the earlier intention and actual change wherever their difference matters. State what changed, when, why, who made the consequential choice, which material it affects and what relevant data or results were available by then. Record uncertainty instead of filling an unknown reason with a plausible one.
+When a change from an earlier intention matters, identify the earlier plan, what changed, who made the choice, when it was made, and what material it affected. Give the supported reason and the data or results available at the time. Identify any part of that history that remains uncertain.
 
-Distinguish events with different consequences. A missed observation, excluded case, failed run, inaccessible source and revised interpretation are not interchangeable “cleaning.” A record can be intact yet excluded from a particular analysis; an observation can be absent because the event was missed rather than because its value was extreme.
+A missed observation, an excluded case, a failed run, an inaccessible source and a revised interpretation have different consequences. Identify the event. For example, an intact record may have been excluded from an analysis, whereas a missed observation has no recorded value to exclude.
 
-If a choice was made after relevant outcomes were seen, retain that timing. Such a choice may still be justified for the actual Method and use, but cannot supply an advance commitment. A later sensitivity analysis or independent criticism is separately performed work, not a retrospective repair of the original timing.
+If the outcome was known when a choice was made, retain that timing and the grounds for the choice under the method used. An advance commitment needs earlier evidence. Date any later sensitivity analysis or independent criticism separately.
 
-Identify substantial human and tool contributions. For AI-assisted work, preserve what is needed to inspect the research-shaping contribution:
+Identify the people, teams, tools or services whose contributions affected the inquiry. For AI-assisted work, preserve the following details when they matter to the examination.
 
-- the model or service identity available to the user, version or configuration when known, and timing;
-- the relevant input context and output actually used, subject to the applicable protection and access conditions; and
-- the responsible person's checks, acceptance, rejection or revision and the effect on the research work.
+- The model or service, its known version or configuration, and the time it was used.
+- The relevant input context and the output used, to the extent permitted by the applicable protection and access conditions.
+- What was checked against which source, who or what performed the check, what was accepted, rejected or revised, and how that affected the work. Where the applicable research guidance assigns responsibility to a human researcher, identify that researcher’s verification and decisions.
 
-Exact prompt content belongs in the retained trace when it can change the examined research choice. Routine spelling or editorial assistance need not generate a transcript archive. An unavailable internal model state remains unavailable; do not invent it to make a service appear replayable.
+Preserve the wording of a prompt when it can change how a reader understands the research choice. Routine spelling assistance usually contributes nothing to that question. If a service withholds its internal state, describe what can be examined from the inputs and outputs that survive.
 
-If an AI output proposes a source that does not exist, retain the output, the source check and the rejection when they matter to the examination. They can support an account of what the service proposed and how the researcher responded. The invented citation supplies no support for the scientific claim attributed to it. Use or obtain an actual source if that claim is still needed, and examine what it supports.
+If a service suggests a nonexistent source, preserve the suggestion, the check and the resulting decision when they affect the examination. These records can establish the service’s contribution and the response to it. Any scientific claim that relied on that citation still needs a source that exists and supports the claim.
 
 #### RMP.4:4.5 - Determine actual access and the consequences of loss
 
-Confirm what material survives and how the receiving reader can inspect it. A repository link, an access policy and a custodian's assurance answer different questions. A public summary may omit the exact detail required for a criticism even though an authorized reader could inspect the retained original.
+Establish which material survives and which parts the intended reader can inspect under the applicable permissions. A repository locator identifies a location, a policy sets conditions, and a custodian can report what is available. Compare the detail in the accessible version with the detail the examination needs.
 
-Apply the following distinctions to the named examination, not as a universal grading scale.
+For the proposed examination, determine what each available source or view supports.
 
-| Material available | Supported use and exact limitation | Next useful action |
+| Material available | What the material supports | Use or remaining need |
 | --- | --- | --- |
-| Relevant originals and context are inspectable by the receiving critic. | The critic can undertake the declared examination if the needed connections are present. Availability does not settle the scientific conclusion. | Give the material and connections to the separately selected criticism or analysis. |
-| Originals survive under restricted access and only a coarsened or redacted view is public. | Each view supports only the examinations its detail permits. Hidden detail is not available merely because its existence is stated. | Obtain permitted access, or a separately qualified inspection result if that answers the need. Otherwise narrow or withhold the receiving conclusion. |
-| Surviving sources support only reconstruction. | The reconstruction may answer a bounded question about earlier work; it does not supply unsupported timing or original conduct. | State sources and uncertainty. If the missing distinction is essential, obtain stronger evidence or withhold the dependent conclusion. |
-| Consequential material never existed, was lost or is no longer retainable. | The package can expose that loss and any narrower available examination. It is not criticism-ready for an examination requiring the absent material. | Return the need for missing evidence or the narrower-use question to its owner. New observations or a rerun are new work with their own design and trace. |
-| Loss or access also defeats the selected design or changes the research question. | Unaffected material can remain useful, but the original research relation is no longer supported as assumed. | Return the failed design premise to RMP.2 or the changed question to RMP.1, preserving the actual history. |
+| The intended reader can inspect the relevant originals in context. | The reader can examine the named connection when its necessary material is present. | Use or supply the available material. Undertake scientific analysis or criticism when its result is requested. |
+| Originals survive under restricted access. A public version contains less detail. | State what the reader can examine in the accessible version. | Use that version if it suffices. If further detail matters, use authorized access or a qualified inspection result where available. Otherwise state the limit on the conclusion. |
+| Surviving sources support a reconstruction. | The reconstruction can answer a historical question within the scope of its evidence. | Give the sources, reasoning and uncertainty. If an essential distinction is still open, use stronger evidence when available or withhold the dependent conclusion. |
+| A needed record was never made, was lost or can no longer be retained. | Identify the affected examination, what can still be established and any narrower use of the remaining material. | Report the gap when that answers the question. If further work depends on missing evidence, identify what it would need. New observations or a new run have their own design and trace. |
+| Loss of evidence or access defeats a design premise or changes the research question. | Identify the affected relation and what the remaining material supports. | Reconsider the design under RMP.2 or the question under RMP.1 when further work depends on it. Preserve what was established about the original inquiry. |
 
-A qualified custodian's inspection result, when available, retains its own scope and limits. It is neither equivalent to public access nor a compulsory substitute in every study. An access request cannot itself establish that access has been obtained.
+A custodian’s qualified inspection can answer a question within its stated scope. To establish that another reader has access, check that reader’s permission and ability to inspect the material.
 
 #### RMP.4:4.6 - Return the trace with a truthful receiving scope
 
-Present the shortest account that lets the receiving reader locate the needed material and understand the action-changing connections and limits. It should recover:
+Give the reader enough information to locate the material and understand its connections and limits. For the examination at issue, identify the following.
 
-- the question, design, intended examination and study portion covered;
-- the surviving plans and the basis for claims about actual conduct;
-- the material used, consequential selection and transformations;
-- changes, their timing and human or tool contributions; and
-- actual access, reconstruction, loss and the examinations each permits or prevents.
+- The examination, research question and study portion, with the design as far as it is known.
+- The surviving plans and the grounds for claims about what took place.
+- The material used and the selections or transformations that affected it.
+- The timing of consequential changes and the contributions of people, tools or services.
+- What can be inspected or reconstructed and which conclusions access restrictions or losses limit.
 
-The same records can carry several of these meanings. A package with linked records need not duplicate them. Use stable identities or versions where a later change would otherwise make the account ambiguous.
+One record can support several parts of the account. Link to suitable records and specify their identities or versions where later changes could make a reference ambiguous.
 
-Demonstrate one actual path through the account. Start from a displayed value, interpretive excerpt or planned comparison and locate its sources and choices. If the path ends at a missing record or unavailable access, state that endpoint and its consequence rather than filling it with a general assertion of transparency.
+Trace a connection that matters to the examination. For a reported value or interpretive excerpt, locate the source and the choices that shaped the result. For a planned comparison, identify what material it would need and what is already available. If a needed record or access is missing, explain which part of the examination remains possible.
 
-Return a limited package when it is the truthful useful result. For example: “The downstream measurements and handling decisions can be inspected; the intended paired thaw-event comparison cannot.” The package is useful because it makes the boundary actionable, not because it turns every receiving question into an answerable one.
+A limited package can answer a question about the surviving record. For example, “The downstream measurements and handling decisions can be inspected. The reference reach was inaccessible, and we have found no comparable reference measurement for the same thaw.”
 
 ### RMP.4:5 - Archetypal Grounding
 
-These constructed cases illustrate trace content and receiving limits. They report no actual environmental, laboratory, historical or computational result.
+The following examples specify hypothetical events and records for examining research.
 
 #### RMP.4:5.1 - ResidentStream-S17: preserve a useful trace after losing the comparison
 
@@ -157,119 +157,119 @@ During the event, downstream observations are made, but the reference reach beco
 
 | Retained material | What the account says and permits |
 | --- | --- |
-| The selected design and the plan that existed before the event | The intended examination was a paired site-period comparison, not downstream trend description alone. |
+| The design and the plan that existed before the event | The team planned to compare measurements from both reaches during the same thaw. The downstream record also permits a description of that reach. |
 | Downstream sample and measurement records | Sample IDs connect time, reach, hydrological context, instrument indications and the qualified measurement results, including the relevant uncertainty. |
-| The reference-visit record | The visit was not performed for the named period because access failed. The account identifies the source supporting that reason; it contains no invented reference value. |
-| Preparation of a later chart | The transformation connects each displayed downstream value to its measurement record and marks the absent comparison. A chart containing only downstream values cannot silently retain the paired-comparison claim. |
-| The changed research-use account | RMP.2 receives the lost comparison premise. The retained observations remain available for a separately justified narrower use. |
+| The reference-visit record | The team missed the planned visit because it could not access the site. The record gives the basis for that explanation. |
+| Preparation of a later chart | Each downstream value can be traced to its measurement record. The chart identifies the missing reference observation and the resulting limit on comparison. |
+| Effect on the inquiry | With no comparable reference observation available, the planned comparison lacks one member. The downstream observations remain available for a narrower question. If the inquiry needs a different design, use RMP.2. |
 
-Two examinations now differ. A reader can inspect the downstream measurement and handling history. The same reader cannot perform the original paired thaw-event comparison because the reference observation does not exist. Keeping all the surviving files does not remove that difference.
+The reader can inspect the downstream measurement and handling history. In this case the team’s visit was missed and no other comparable observation of the reference reach during the same thaw is available. If a suitably qualified measurement from that reach and event were found, the reader could reassess the original comparison.
 
-A reference sample taken later in dry weather is new material under different hydrological conditions. Its use requires a justified comparability premise, not a change of file name or a routine replacement of the blank cell.
+A reference sample taken later in dry weather documents a different hydrological condition. To use it for a comparison, establish the particular relation that makes it comparable and state which question that comparison answers.
 
-Suppose volunteers began sampling before any protocol was recorded. The team can reconstruct part of their procedure from contemporaneous sample labels, instrument logs and later reports. The reconstruction names those bases and their uncertainty. It is dated when reconstructed and does not claim that all choices were prospectively fixed.
+If volunteers started sampling before recording a protocol, their labels, instrument logs and later accounts may establish parts of the sampling procedure. Date the reconstruction, identify its grounds, and distinguish a reconstructed action from evidence that the volunteers had committed to it in advance.
 
-Private land-access details can remain controlled under the actual permissions. The public account identifies the omitted material's research role and the examinations possible without it. It promises neither the lost event nor unrestricted independent inspection.
+Apply the existing permissions to private land-access details. The public account can identify what role those details played and which questions the published material supports.
 
 #### RMP.4:5.2 - Pump-P4: distinguish absence, exclusion and interpretation
 
 On the valid-marker branch of the seal study, specimen P4-07 is damaged during handling before one planned observation. The trace retains its allocation and material identity, the handling record, the time and basis of the reported damage, the absent observation, the applicable prior exclusion intention and the decision actually taken.
 
-The comparison dataset links the remaining observations to their specimen records and preserves why P4-07 contributes no value at that point. Three readings from another seal remain three readings of that seal; trace organization cannot create independent specimens.
+The comparison dataset links each remaining observation to its specimen and explains why P4-07 contributes no value at that point. Three readings from a second seal provide repeated measurements on that single specimen.
 
-A critic can now examine whether the missingness or exclusion threatens the comparison. That judgement belongs to the applicable analytical or criticism Method. The trace neither repairs the lost observation nor grants authority to change the pump's maintenance interval.
+A critic can now assess the effect of the missing observation or exclusion on the comparison. Changing the pump’s maintenance interval would require grounds for that change and the applicable authority.
 
 #### RMP.4:5.3 - A computation with a research-shaping AI suggestion
 
 A researcher uses an AI service to suggest a preprocessing change for a model comparison. In this constructed case, the retained account identifies the supplied design, original data and code version, the relevant proposal and input context, and the researcher's decision to revise and use the change. The actual run connects the changed code, environment and parameters to its output.
 
-The service also suggests a nonexistent supporting article. The researcher rejects it after source checking and retains the actual source used. Retaining the suggestion can support examination of the AI contribution, but supplies no support from the nonexistent article for the model-comparison claim.
+The service also suggests a nonexistent article. The researcher checks the reference, rejects it and preserves the source actually used. This evidence can establish how the suggestion was handled. The scientific claim depends on what the source used supports.
 
-Later, the original service version is unavailable. A reader can inspect the retained suggestion, the human decision and the implemented change. They cannot infer that the same service response can be regenerated. A new computational run may test the retained implementation, but it is new work and does not establish replay of the original AI interaction.
+When the original service version becomes unavailable, the retained suggestion, the researcher’s decision and the implemented change can still be inspected. A new run can test the retained implementation. Reproducing the original service response would need its own conditions and evidence.
 
 #### RMP.4:5.4 - Historical and interpretive records support different criticisms
 
-For an inquiry into whether a directive preceded a factory's practice change, the historian retains inspected document identifiers and editions, dates and provenance, the distinction between catalogue entries and inspected contents, contrary evidence and transcription decisions. An unavailable earlier archive series leaves the rival earlier chronology unresolved; its absence is not evidence that the earlier decision never occurred.
+When asking whether a directive preceded a change in factory practice, preserve the identifiers, editions, dates and provenance of documents inspected, the relevant catalogue entries, contrary evidence and transcription choices. In this case the unavailable earlier series leaves the rival chronology open. An earlier decision could have occurred without leaving evidence in the surviving series.
 
-An inquiry into how former workers understood the closure uses a different relation. The trace can preserve situated encounters, permitted excerpts, the researcher's position and reasons for changing prompts or interpretation. A new prompt can be consistent with that inquiry while a move to a population-wide prevalence claim changes its question/design. Criticism follows the declared approach and grounding; the trace does not impose coder agreement as the universal test of interpretation.
+To study how former workers understood the closure, retain the encounters, permitted excerpts, the researcher’s position and the grounds for changes to prompts or interpretation. A new prompt may still address the same question. Estimating population prevalence would require a different design. Judge the interpretation by the selected approach and its grounding, including a coding-agreement criterion only where it applies.
 
 ### RMP.4:6 - Bias-Annotation
 
-A trace can faithfully preserve a biased selection. Ask whose cases, sources, encounters and failed work were never captured, and whether the account identifies the effect of that absence. A folder containing only successful runs or convenient sources invites a different reading from a record of the actual selection.
+Identify missing cases, sources, encounters or failed runs where their absence could affect the question. For example, a record restricted to successful runs cannot establish how often runs failed unless it can be linked to an adequate record of all attempts.
 
-Retrospective knowledge can reshape memories of earlier reasons. Preserve the evidential basis of a reconstruction and the distinction between contemporaneous records and later accounts. More confident narration is not stronger evidence of timing.
+Later knowledge can influence a witness’s account of an earlier reason. Preserve the grounds for the reconstruction, including what contemporaneous records and later reports establish about timing.
 
-Openness can distribute benefits and risks unevenly. Data holders, communities and participants may have legitimate authority over access and use. Record the resulting research limitation without either disclosing protected information or pretending that a public summary supplies hidden detail.
+Data holders, communities and participants may have authority over access and use. Apply the relevant conditions and report what the authorized view allows its reader to examine, including any material limit on the conclusion.
 
 ### RMP.4:7 - Conformance Checklist
 
 Use this checklist for the package's declared receiving examination.
 
-- The covered inquiry, study portion and examination are identifiable; an absent final claim is not replaced with an invented one.
+- The account identifies the inquiry, the portion covered and the examination. Claims about completed work have grounds in the surviving material.
 - Plans, actual conduct, later reports, reconstructions and unknowns remain distinguishable.
 - Consequential material can be followed through selection and transformations to its receiving use, at the granularity that examination requires.
-- Changes preserve their earlier intention, actual effect, timing, reason and relevant prior information where supported; unknowns remain explicit.
-- Missing observations, exclusions, failed runs, inaccessible sources and changed interpretations have their own supported consequences.
-- Research-shaping human and AI contributions are inspectable to the needed and permitted extent; routine assistance does not trigger indiscriminate transcript capture.
+- For a consequential change, the account identifies the earlier intention, timing, reason, effect and information available at the time to the extent supported.
+- The account distinguishes the consequences of missing observations, exclusions, failed runs, inaccessible sources and revised interpretations where they occur.
+- The account identifies significant contributions from people, teams, tools or services, the checks performed and the applicable responsibility, at the detail needed and permitted for the examination.
 - The account distinguishes surviving material, actual permitted access, public views, reconstruction and loss.
-- Every claimed criticism-ready use has the necessary inspectable material. Prevented examinations are stated with their next source, access, narrower-use or design/question return.
-- A new run or new data collection is represented as new work rather than as restoration of unsupported original conduct.
+- The material and permitted access support each examination described as criticism-ready. When an examination is prevented, the account identifies the limiting condition, any narrower supported use and a further source or change of design if one is needed and available.
+- A rerun or a later observation is identified by its own date, inputs and conditions.
 
-For a consequential reliance, follow one important use backwards to its material and compare a relevant prior commitment with actual conduct. Inspect the weakest required link and the access actually available to the intended reader. A reachable directory or an openness label is not the completion test.
+When relying on the trace, follow a consequential use back to its source or use a qualified inspection that establishes the necessary connection. Compare a prior commitment with conduct when that difference matters. If the examination requires the intended reader to inspect the material, confirm that reader’s access.
 
 ### RMP.4:8 - Common Anti-Patterns and How to Avoid Them
 
 | Failure | Why it fails | Repair |
 | --- | --- | --- |
 | The final methods account replaces every earlier plan. | The critic loses the timing and content of commitments. | Retain surviving versions and distinguish reconstruction from prospective intention. |
-| Missingness, exclusion and failed work all become “cleaning.” | Different threats to the result become indistinguishable. | Preserve each consequential event, its supported reason and effect on the receiving use. |
+| Missing observations, exclusions and failed work are all recorded as “cleaning.” | Their causes and effects on the result can differ. | Identify the event, its supported reason and its effect on the examination. |
 | A repository link is treated as criticism-ready access. | The material may not survive, be accessible or contain the needed detail. | Establish the actual material and access for the named examination. |
-| A redacted summary inherits every claim of the original. | Hidden detail may be essential for the proposed criticism. | State which examination each view supports and obtain permitted access or narrow the use. |
-| More records are treated as more warrant. | Volume cannot settle truth or compensate for missing decisive material. | Connect the records to a particular examination and leave scientific judgement to its Method. |
-| An AI suggestion or citation enters the evidence chain without a human check. | Preserving an output does not establish its truth or source existence. | Retain the contribution and the responsible person's verification, rejection or revision. |
-| A run with substituted inputs is reported as replay of the original computation. | It tests a different input arrangement and cannot recover missing original inputs, decisions or service state. | State exactly what the new work tested and preserve its separate trace. |
+| A public summary is used for a claim that depends on redacted detail. | Its reader lacks the detail needed to examine that claim. | Identify what each view supports. Use an authorized source or a qualified inspection result if available, or report the limit. |
+| The number of files is offered as support for a scientific claim. | The decisive record might be absent from a large collection. | Identify the connection the claim needs and examine the evidence that bears on it. |
+| An AI suggestion or citation is used as evidence without establishing what supports it. | A saved output can show what was suggested. The source and the inference need their own grounds. | Identify the source, checks, decisions and responsible contributors. Where the applicable guidance assigns responsibility to a human researcher, record how the researcher exercised it. |
+| A run with substituted inputs is reported as a replay of the original computation. | It tests a different set of inputs. | Identify the inputs, decisions and service state that can be recovered for the original run, then state what the new run tested. |
 
 ### RMP.4:9 - Consequences
 
-A receiving reader can distinguish what was planned, what is supported about actual conduct, how material reached a result, and where examination stops. Early capture reduces preventable loss; legacy entry can recover useful bounded accounts without pretending the past was better specified than it was.
+A reader can see what was planned, what evidence supports the history of the work, how material reached a result and where examination stops. Capture during fieldwork can prevent loss. A later reconstruction can recover part of the history even when the original plan is missing.
 
-The burden is selective recording, connection and access management. Some criticisms remain impossible, and some claims must be narrowed or withheld. This is a useful result when the alternative is an apparently complete account that silently substitutes confidence for missing evidence.
+Recording the relevant connections and maintaining suitable access take work. When decisive evidence is lost or inaccessible, state the conclusions that the remaining records support and the questions they leave open.
 
 ### RMP.4:10 - Architectural Rationale
 
-The trace is separate from the protocol because actual conduct can differ from intention, and inherited work may survive without a reliable prospective plan. Both results can be carried in the same notebook or collection; the distinction concerns their evidential uses, not document count.
+A protocol states intended conduct. A trace supplies grounds for claims about what happened, including departures from the plan and work for which no prospective plan survives. One notebook or collection can serve both uses.
 
-Readiness is tied to a receiving examination because the same material can support one criticism and fail another. That relation gives a stopping rule for capture and a truthful account of loss. Universal capture has no comparable boundary and can create additional disclosure risk.
+Use the named examination to judge when capture is sufficient. The same material can support one criticism and lack the detail for another. Additional capture and disclosure require justification for the use they would serve.
 
-Existing domain records and generic provenance are the low-cost alternative. RMP.4 adds value where the research question, actual choices, transformations and receiving limitations need to be connected. It does not replace competent recordkeeping with a universal trace schema or transform a record into a warranted conclusion.
+Use existing domain records or provenance information if they supply the connections the question needs. RMP.4 helps recover how choices, transformations and access affect examination of the particular inquiry.
 
 ### RMP.4:11 - SoTA-Echoing
 
-**Practice question.** What should be retained and exposed so that a later reader can criticize actual research without confusing records, replay and scientific warrant?
+**Practice question.** What does a reader need to inspect the conduct of this study, and which further claims need a replay or a scientific assessment?
 
-**Selected line.** Adapt examination-relative provenance, timed change accounts and actually available access. Against either a final retrospective narrative or a publish-everything default, this preserves consequential differences with proportionate effort. The accepted trade-off is that some access-limited or irrecoverable material leaves narrower examinations possible rather than a universal openness or reproducibility claim.
+**Selected approach.** Record the origin of the material, the timing of consequential changes and the access available to the intended reader at the detail required for the examination. When records are lost or restricted, establish which narrower questions can still be answered.
 
 | Comparison and source role | Adopt, adapt or reject; effect on the Method and limit |
 | --- | --- |
-| [TOP 2025](https://www.cos.io/initiatives/top-guidelines) distinguishes research practices and commitment artifacts. | **Adapt** the content-and-timing distinctions in §§4.2 and 4.4. Reject one badge as sufficient evidence of prospective choice. Disclosure and verification remain different; a trace records what survives. |
-| Miske et al.'s [Investigating reproducibility](https://doi.org/10.1038/s41586-026-10203-5), published in 2026, supplies failure evidence. [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/) supplies an implementation example of run-relative provenance. | **Adapt** the input–transformation–run–output connections in §4.3. Reject availability of a data/code collection as sufficient recovery of a reported computation. The empirical study concerns papers from 2009–2018 and obtainable datasets; neither it nor the provenance format establishes RMP's effectiveness or requires that format. |
-| [PRISMA-S](https://doi.org/10.1186/s13643-020-01542-z) supplies a bounded comparator for reporting searches. | **Adapt** the actual query, platform, date and retrieval-change trace in §4.3. Reject a clean final bibliography as an account of retrieval. Reporting does not establish search conduct or synthesis quality. |
-| Braun and Clarke's [RTARG argument and review](https://doi.org/10.1177/02692163241234800) challenges generic qualitative reporting defaults; AHA's [professional standards](https://www.historians.org/resource/statement-on-standards-of-professional-conduct/) make source and interpretation responsibility explicit. | **Adapt** method-sensitive contributions, contrary sources and supported reconstruction in §§4.2–4.4. Reject an undifferentiated methods narrative and a universal coding-agreement requirement. These practices guide criticism; they do not supply a historical or interpretive conclusion. |
-| Carroll et al.'s [Operationalizing CARE and FAIR](https://doi.org/10.1038/s41597-021-00892-0) is a serious correction to openness-only reasoning. | **Adapt** actual authority, permitted purpose and bounded access in §4.5. CARE's Indigenous data-governance basis is retained; it is not reduced to a generic consent checklist. FAIR and open access are different, and no policy label proves that inspection is possible. |
-| The European Commission's [Living guidelines on responsible generative AI use in research, third edition](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en), May 2026, supplies proportional-use guidance. | **Adapt** the substantial contribution and human-responsibility account in §4.4. Reject both hidden research-shaping AI use and mandatory archiving of routine editing. The non-binding guidance does not guarantee stochastic-service replay or grant access to protected inputs. |
+| [TOP 2025](https://www.cos.io/initiatives/top-guidelines) distinguishes research practices and records of commitments. | §§4.2 and 4.4 use contents and dates to establish what was specified in advance. A disclosure badge can identify a reported commitment. To verify it, use the relevant record or a qualified verification that covers the claim. |
+| Miske et al.’s [Investigating reproducibility](https://doi.org/10.1038/s41586-026-10203-5) (2026) examined attempts to reproduce results in publications from 2009–2018 with obtainable datasets. [Workflow Run RO-Crate](https://www.researchobject.org/workflow-run-crate/) illustrates how to record particular workflow runs. | §4.3 connects reported outputs to the inputs, transformations and runs that produced them. The study documents difficulties recovering computations. The format is one way to preserve the connections needed for inspection. |
+| [PRISMA-S](https://doi.org/10.1186/s13643-020-01542-z) gives reporting guidance for searches. | §4.3 retains the search as performed, including its query, platform, date, retrieved material and changes during retrieval. Those records can explain how a bibliography was obtained. Judging its adequacy for synthesis requires the relevant appraisal. |
+| Braun and Clarke’s [RTARG argument and review](https://doi.org/10.1177/02692163241234800) examines how papers report reflexive thematic analysis. The AHA’s [professional standards](https://www.historians.org/resource/statement-on-standards-of-professional-conduct/) describe historians’ responsibilities for sources and interpretation. | §§4.2–4.4 use the approach being examined to decide which choices, contrary evidence and grounds for reconstruction to retain. A requirement for coder agreement needs a basis in that approach. |
+| Carroll et al.’s [Operationalizing CARE and FAIR](https://doi.org/10.1038/s41597-021-00892-0) develops data-governance principles in the context of Indigenous peoples’ rights and interests. | §4.5 asks whose authority governs a particular use, what the permitted purpose is, and what the reader can inspect. A FAIR resource can have restricted access. |
+| The European Commission’s [May 2026 revision](https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/updated-era-living-guidelines-responsible-use-generative-ai-research-2026-05-08_en) and its [Living guidelines on the responsible use of generative AI in research, fourth edition, October 2026](https://research-and-innovation.ec.europa.eu/document/download/2b6cf7e5-36ac-41cb-aab5-0d32050143dc_en) address researchers’ responsibility for AI-assisted scientific output and disclosure of substantial uses. | §4.4 applies that guidance to records of significant AI contributions and the responsible researcher’s verification and decisions. Routine editing calls for proportionate records. These recommendations are non-binding. Access to protected inputs and the ability to replay a service require separate grounds. |
 
-This is a reasoned combination of methodological guidance, bounded failure evidence and practical record arrangements, not a universal empirical guarantee. Reopen the affected trace requirement when a new receiving use needs different material, a source or service change defeats a relied-on connection, or a lower-burden qualified practice preserves the same examination without the added apparatus.
+Reconsider what to retain if a different examination needs different material, a source or service change affects a connection, or an existing practice can support the examination at lower cost. The cited guidance, research and implementation examples establish the specific contributions described above.
 
 ### RMP.4:12 - Relations
 
-RMP.10 consumes occurrence records, elicited accounts and event logs with their different evidential reach. RMP.11 consumes dated source and Work evidence, including dependence and survival limits. Preserve the material each named claim needs rather than treating a polished reconstruction as an original record.
+An issued instruction can establish what it prescribed. To reconstruct how work was performed, use the sources that bear on that question, such as an occurrence record, a participant’s account or an event log. Use RMP.10 when further reconstruction is needed. Dated sources may establish that a method changed. Use RMP.11 when the question asks why or how that change came about. In each case, account for relevant dependence and gaps in what survived.
 
 - **RMP.3** supplies operational intentions and research-relative record needs. Capture can begin while those intentions develop.
-- **RMP.2** receives a lost comparison or other defeated design premise; **RMP.1** receives a changed question or receiving use.
-- **FPF A.10** supplies claim-bound evidence and provenance discipline; **FPF C.16** supplies the measurement account needed to distinguish indications, qualified results and derived values.
-- Domain recordkeeping, source criticism, statistical and interpretive Methods supply their own conduct and results. Access, privacy, rights, community and resource owners supply the decisions that govern actual retention and inspection.
-- **RMP.5** uses the actual material and its limits to analyze and criticize the proposed claim. **RMP.6** uses the recoverable basis to choose and interpret a relevant credibility examination. Their analytical and test results require their own Methods and actual work; a trace is not a performed reproduction test.
+- A lost comparison can be reported with the remaining findings. Use **RMP.2** if a revised design is needed. Use **RMP.1** to reconsider a question or intended use that has changed.
+- Use a clear, qualified record directly. **FPF A.10** helps when the connection from a claim to its evidence needs to be recovered or made reproducible. **FPF C.16** helps establish the measurement basis when a distinction between an indication, a qualified result and a derived value matters.
+- Use the relevant professional practice for recordkeeping, source criticism, statistics or interpretation. Apply the existing decisions and conditions governing retention and access. When a new decision is required, obtain it from the person or body with the applicable authority.
+- Use an available analysis or credibility assessment within its scope. **RMP.5** helps analyze and criticize a claim when a substantive judgement is still needed. **RMP.6** helps select and interpret a credibility examination when the question warrants one. A report that a reproduction test took place needs evidence of the test performed and its result.
 
-- **RMP.7** can use the actual source material, relationships and receiving limits for a compatible corpus-synthesis question. The trace supplies that material; appraisal and integration require their own Method and result.
+- Use **RMP.7** when the material, its relationships and its limits bear on a question about a corpus. A synthesis requires the appraisal and integration appropriate to that question.
 
 ### RMP.4:End

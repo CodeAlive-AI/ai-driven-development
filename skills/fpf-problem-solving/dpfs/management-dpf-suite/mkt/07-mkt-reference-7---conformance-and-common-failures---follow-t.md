@@ -6,7 +6,7 @@ Before relying on a connected result, follow one real or representative use from
 - Do the customer roles and differences change a real choice, rather than merely rename market segments?
 - Does the offer retain the conditions of its engineering, learning or operating supply?
 - Are the particular promise, recipient, permissions and next performer available?
-- Does the evidence support the actual claim, population, conditions and time horizon being used?
+- Does the evidence support the claim, population, conditions and time horizon being used?
 - Can the whole programme fit its consequential resources and timing while keeping existing obligations?
 - Can an affected person decline, defer, obtain help, correct a mistake or end the arrangement on understandable terms?
 

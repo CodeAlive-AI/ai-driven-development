@@ -1,38 +1,38 @@
 ## STR.Application:1 - APP-STR-01 - Choose SensorCo's response to commoditized AI inspection
 
-SensorCo is a constructed teaching case. Its numbers, participant assignments, observations and later events are supplied example conditions, not an empirical report or evidence that this framework has already improved an organization. Actual use needs the corresponding evidence and authority.
+SensorCo is a constructed teaching case. Its figures, assignments, observations and subsequent decisions are stipulated for the comparisons below.
 
 
 
 ### STR.Application:1.1 - The opening decision
 
-SensorCo supplies physical inspection sensors and field service. Its generic AI-inspection price has fallen over twelve months. That margin previously helped fund service. The company has field-service knowledge and a certified sensor platform, but those assets do not establish demand for a new integrated service.
+SensorCo supplies inspection sensors and field service. Over twelve months the price of its generic AI inspection has fallen. The margin on that work helped fund service. SensorCo has a certified sensor platform and field-service knowledge. Demand for a new integrated service remains open.
 
-The StrategyTeam turns “find our AI strategy for 2027” into a bounded question for the Board: what can SensorCo responsibly pursue and commit to in the affected segment over the next twelve months while sustaining current service? Device-only continuation, integrated service, data licensing and exit remain alternatives.
+The StrategyTeam turns “find our AI strategy for 2027” into a question for the Board. Which course can SensorCo pursue and which commitments can it make in this segment over the next twelve months while sustaining current service? Device-only continuation, integrated service, data licensing and exit remain under consideration.
 
-The offering, SensorCo's service arrangement and the specialists' capabilities are different possible subjects of change. The existing platform can support a new contribution without supplying its data access, incident cover or acceptance conditions. A smaller improvement of an enabling condition remains an option alongside a new service initiative.
+A change could affect the offering, SensorCo’s service arrangement or the specialists’ capabilities. The existing platform can support a new contribution if the necessary access, incident cover and acceptance conditions can be established. Improving one such condition is also an option.
 
-The team prepares the answer; the Board has separately established authority to select direction and bounded internal commitments. Data permission, customer agreement, financing and realized capability retain their separate conditions. This distinction permits a useful frame now without assuming that the eventual service direction has been chosen.
+The team prepares the answer. The Board has authority to select direction and approve bounded internal commitments. Customer agreement, permission to use data, financing and demonstrated capability have separate grounds. The team can frame the choice while the eventual direction remains open.
 
-STR.1 can finish with this question. STR.2 next examines what the changed price premise affects. Its impact remains distinct from a changed customer population or an adopted rule of choice; each would require its own supported consequence. The later comparison will distinguish a four-day preparation decision from the still-open twelve-month strategy choice.
+STR.1 can finish with the bounded question. STR.2 examines how the price change affects it. A change of customer population or adopted choice rule would have its own consequences to establish. The later comparison distinguishes four days of preparation from the open twelve-month direction.
 
 
 
 ### STR.Application:1.2 - Frame the uncertainty and preserve a serious rival
 
-The price change challenges the contribution of another generic device offer; it does not prove that every device-only course is unviable. For this case, existing device and service contracts can fund the required current service throughout the twelve-month horizon.
+The lower price weakens the case for another generic device offer. Existing device and service contracts can still fund current service throughout the twelve-month horizon.
 
-The received PSDA.7 uncertainty account concerns this same decision. Six interviewed customers expressed interest; that supports interest among those respondents, not an installed-base conversion rate. The service-cost estimate omits travel and incident coverage. The data-reuse right needed for licensing has not been established.
+The PSDA.7 account concerns the same decision. Six interviewed customers expressed interest. The installed-base conversion rate remains unknown. The service-cost estimate omits travel and incident coverage. Licensing still lacks evidence of the required data-reuse right.
 
-Two of the six customers are willing to discuss a bounded paid trial next quarter at a stated price ceiling, subject to agreement and permitted use. This is access to a possible trial, not orders or demonstrated demand. Four already-funded internal engineer-days can complete costing from existing records and specify the smallest relevant trial without a new purchase or new customer-data use. Only four discretionary days fall before the Board's next trial decision.
+Two of the six customers are willing to discuss a bounded paid trial next quarter at a stated price ceiling. Agreement to participate and permission for the proposed use remain open. Four already-funded internal engineer-days can complete costing from existing records and specify the smallest relevant trial. This preparation needs no new purchase or customer-data use. Only four discretionary days fall before the Board’s next trial decision.
 
-The Board's supplied criterion is to protect current service and its incident reserve, then seek a repeat paid contribution less exposed to generic-inspection price competition. It is willing to postpone a four-day device-diagnostic improvement for an attainable answer that could change the service decision. The criterion and trade-off belong to this case, not every Strategy use.
+The Board’s criterion protects current service and its incident reserve first. It then seeks a repeat paid contribution less exposed to generic-inspection price competition. The Board is willing to postpone four days of device-diagnostic improvement for an attainable answer that could alter the service decision.
 
-STR.3 therefore frames a choice about a differentiated contribution under decision-relevant uncertainty. Device-only continuation remains the serious present rival. Licensing is not selectable before the required right exists.
+With STR.3, the team frames two concerns. Existing customers still need the contracted inspection service. For SensorCo, a worthwhile opportunity would provide repeat paid value to customers while reducing exposure to generic-device prices and protecting the incident reserve. A differentiated service would have to meet the customers’ reliability needs at an acceptable price and a support cost the company can sustain. Device-only continuation remains a serious alternative. The licensing option requires an applicable data-reuse right.
 
-For the exit comparison, assume that orderly exit and device continuation both satisfy the protected-service requirement under the three conditions below. The supplied comparison for this twelve-month decision includes the exposure avoided, net disposal proceeds, the best attainable use of released resources and any later consequence material to the choice. Under the Board's criterion, exit's supported advantages are outweighed by the continuing device contribution forgone and the full customer-transition burden.
+For the exit comparison, assume that both orderly exit and device continuation protect current service under the three conditions below. Over twelve months the Board compares exposure avoided, net disposal proceeds, the best attainable use of released resources and consequential later effects. Under its criterion these advantages of exit are outweighed by the continuing device contribution forgone and the full customer-transition burden.
 
-Continuation is therefore preferable to exit under these assumptions. Reopen that comparison if an exit benefit, transition burden, continuing contribution or protected-service condition changes enough to reverse it. Exit can become preferable while continuation remains feasible.
+Under those assumptions the Board has grounds to prefer continuation. Reconsider if an exit benefit, transition burden, continuing contribution or protected-service condition could reverse the comparison. A feasible continuation can still lose to a better exit.
 
 
 
@@ -42,49 +42,49 @@ STR.4 and STR.9 compare the same twelve-month question under three plausible con
 
 | Future condition | Device-only continuation | Four-day service preparation | Consequence for the present choice |
 | --- | --- | --- | --- |
-| Commoditization continues and customers seek accountable service | Sustains current contracted service but does not supply the sought differentiated contribution. | Can establish whether an attainable paid trial is economically plausible and worthwhile. | Prefer the bounded preparation to those four days of device diagnostics at the Board's accepted sacrifice; the twelve-month service direction remains open. |
+| Commoditization continues and customers seek accountable service | Sustains contracted service. The differentiated contribution remains missing. | Can establish whether a bounded paid trial is economically plausible and worth pursuing. | The Board’s accepted trade-off favours four days of preparation over device diagnostics. The twelve-month direction remains open. |
 | Purchasing freezes for the full horizon | Sustains existing contracts without service-development work. | No customer can undertake a paid trial in time to inform this choice. | If established before preparation, continue device-only and retain the four days for diagnostics. |
-| Customer-data reuse is restricted | Continues under its existing permitted uses. | A customer-local service may remain possible if its required use is permitted. | Continue preparation only while an attainable permission determination leaves a useful service option; otherwise prefer device-only. Cross-customer licensing is not a substitute for missing permission. |
+| Customer-data reuse is restricted | Continues under existing permitted uses. | A customer-local service may be possible under an applicable permission. | Continue preparation if an attainable permission determination could leave a worthwhile local option. Otherwise favour device-only. Cross-customer licensing needs its own rights. |
 
-This is a qualified comparison, not a forecast of three actual events. STR.5 retains different directions and their filters. STR.6 forms complete options within them rather than treating “AI,” “training” and “platform” as competing strategies.
+The futures are conditions for comparison. Their occurrence remains unknown. STR.5 distinguishes the directions and their selection rules. STR.6 develops complete courses within them. AI, training and a platform make different contributions to those courses.
 
-A customer-local service can have an internal delivery option and a provider-assisted option with different support and access dependencies. Keeping a useful description of an unselected possibility is distinct from funding its trial. A new contribution or constraint can change the option space, not merely rescore old members.
+SensorCo could deliver a customer-local service internally or use a provider. Those options need different support and access. The team can retain an unselected option’s description without funding its trial. A new contribution or constraint may justify constructing a different option.
 
 
 
 ### STR.Application:1.4 - Decide whether more inquiry is worth doing
 
-STR.7 first uses available incident records and complete travel-and-support costing. If sufficient costing shows that no feasible bounded service configuration can cover delivery cost at the customers' acceptable price, the useful return is device-only continuation without a trial. Missing a cost component is instead an unresolved comparison.
+STR.7 first uses incident records and seeks to establish delivery cost, including travel and support. If complete costing rules out an affordable service configuration at the customers’ price ceiling, the team can return a device-only recommendation and close the trial inquiry. A missing material cost leaves the comparison open.
 
-If a feasible trial remains and its possible results can change the commitment enough to warrant its burden, design the bounded trial. Its question concerns the two consenting customers' use and payment for the specified service and the bounded arrangement's ability to deliver it. It cannot establish general market demand.
+If a feasible trial remains and its attainable contribution to the commitment decision warrants its burden, design it. With participant agreement and the necessary permissions, the trial could establish whether the two customers use and pay for the specified service and whether the bounded arrangement delivers it. The results would concern those customers and conditions.
 
-Participant agreement, permitted use, exposure, actual resources, interpretation and closure must be established before the dependent work. An experiment on customer data cannot answer whether that use is permitted. The four-day preparation does not itself authorize execution.
+Before using customer data or starting the trial, establish the required agreements, permissions, exposure limits, resources, interpretation and closure arrangements. Running an experiment would not establish the right to use those data. Authorizing the four-day preparation would cover only that internal work.
 
 
 
 ### STR.Application:1.5 - Make the whole proposed arrangement visible
 
-STR.8 connects the service contribution to the actual service, platform, learning and support conditions. STR.10 and STR.14 compare the simultaneous configuration for the first shared month. That month includes the four preparation days now proposed for authorization.
+STR.8 connects the proposed service with the platform, learning and support it requires. STR.10 and STR.14 compare the combined resource demands for the first shared month, including the four preparation days proposed for authorization.
 
-The team has eighty engineer-days. Current service needs fifty-two, with another eight protected for incident recovery. The initial proposal adds sixteen for trial preparation and use, eight for platform preparation and six for learning/support: ninety in total.
+The team has 80 engineer-days. Current service needs 52 and incident recovery has a protected reserve of 8. The proposal adds 16 for trial preparation and use, 8 for the platform and 6 for learning and support. Its total of 90 exceeds the available 80 by 10.
 
-A smaller proposal uses eight days for bounded preparation and, only when separately permitted, initial use and interpretation; six for the platform subset; and four for targeted learning and support. With service and reserve, the total is seventy-eight. The remaining two days are unallocated, not additional guaranteed recovery capacity.
+The smaller proposal assigns 8 days to preparation and, if separately permitted, initial use and interpretation. It assigns 6 to the platform subset and 4 to learning and support. Service and reserve bring the total to 78. The two unallocated days carry no extra recovery commitment.
 
-Two of the six platform days preserve device-compatible interfaces and maintenance instructions, leaving four for the service-specific subset. This postpones a two-day service-diagnostic enhancement. Those fallback days are already inside the seventy-eight and are different from both the two unallocated days and the four-day device improvement sacrificed for preparation now. The maintained fallback keeps a device-only return possible through the first staged decision; longer retention needs its own cost and capability assessment.
+Within the six platform days, two preserve device-compatible interfaces and maintenance instructions. Four remain for the service-specific subset, postponing a two-day service-diagnostic enhancement. The two fallback days are included in 78. The two unallocated days and the four-day device improvement forgone for preparation are separate. Maintaining the fallback keeps a device-only return possible through the first decision. Longer retention needs its own cost and capability assessment.
 
-This smaller configuration is a candidate under the workload assumptions, not demonstrated capability. A critical-day collision or unavailable skill can still defeat it. If the reduced scope cannot supply a complete service contribution and exception return, it is an inadequate fragment, not a feasible successful service.
+The smaller configuration fits the aggregate workload assumptions. A critical-day collision or unavailable skill can still make it infeasible. If the reduced scope cannot deliver the complete service and handle its exceptions, the proposal needs revision or rejection.
 
-OCE.9 can guide the selected organization-capability increment. When realization is selected, the platform provider must supply the needed tool and access; the learning participants and provider must obtain the appropriate HCD result; the service owner must protect the operating limit. These required contributions remain separate. Customer time, vendor charges, financing and affected-party consequences also require their own applicable treatment: a person-day total is not the whole economic comparison.
+OCE.9 can help design an organization-capability increment. If the Board selects implementation, check whether the platform provider can supply the tool and access, whether the necessary human preparation is available and how the service owner will protect the operating limit. Use existing adequate provision or arrange the missing contribution. Customer time, vendor charges, financing and consequences for affected parties also matter to the economic comparison.
 
 
 
 ### STR.Application:1.6 - Select only the supported commitment
 
-The team recommends four internal preparation days while retaining device-only continuation. The recommendation is preferable under the supplied criterion because the existing records and two customers' terms can still discriminate whether a relevant service option is worthwhile, at an explicitly accepted sacrifice.
+The team recommends four internal preparation days while retaining device-only continuation. Its grounds are what the existing records and the conditions already stated by two customers can establish at the sacrifice the Board has accepted. Participation in a trial still needs agreement.
 
-The Board separately selects and authorizes those four days from the eight-day preparation/use envelope. It does not authorize all eighteen proposed development days, trial execution, wider service obligations or capital commitment. The twelve-month direction remains open.
+The Board authorizes four preparation days from the eight-day preparation-and-use allowance. Of the 18 proposed development days, 14 remain unauthorized. Trial execution, wider service obligations and capital commitment require their own decisions. The twelve-month direction remains open.
 
-STR.11 retains the PSDA.7 limits in the decision: customer interest is not forecast revenue, incomplete costing is not a complete comparison, and missing licensing rights do not become available at approval.
+STR.11 carries the PSDA.7 limits into the decision. The six reports establish interest among those respondents. A completed cost comparison and the relevant licensing right remain separate requirements for the options that need them.
 
 
 
@@ -92,18 +92,18 @@ STR.11 retains the PSDA.7 limits in the decision: customer interest is not forec
 
 STR.12 connects two illustrative signals to different returns.
 
-A qualified next-month workload forecast above eighty engineer-days, with the eight-day reserve preserved, must arrive before allocation. If the dependent trial has later been authorized and the agreed suspension rule applies, the service owner suspends it within that authority and the Board reconsiders scope. During the original preparation, there is no trial to suspend; the team returns the infeasible proposed allocation.
+A qualified forecast above 80 engineer-days next month, including the protected 8-day reserve, must arrive before allocation. During preparation the team returns the infeasible allocation proposal. If a trial has since been authorized and the agreed suspension rule applies, the service owner suspends it under that authority and the Board reconsiders its scope.
 
-If sufficient complete costing rules out a worthwhile service configuration during preparation, it can end the trial inquiry and support device-only continuation. If that sufficient adverse cost result is obtained only after an authorized trial, it blocks expansion and returns the preference to the Board. A missing necessary cost component leaves the comparison unresolved rather than supplying that negative conclusion.
+If complete costing during preparation rules out a worthwhile service configuration, the team can end the inquiry and recommend device-only continuation. The same finding after an authorized trial blocks expansion and returns the preference to the Board. If a material cost is missing, report that gap.
 
-These are case-specific conditions, not an automatic pivot rule. Changed permission, finance or affected-party conditions can also matter. Independent device commitments and protected service continue where their basis remains adequate.
+Changes in permissions, finance or conditions for affected parties can also require reconsideration in this case. Keep independent device commitments and service protection while their grounds hold.
 
 
 
 ### STR.Application:1.8 - Sustain useful methods and cultural practice separately
 
-STR.13 asks whether the scenario-and-staged-option method is worth retaining for the next question. If an established full-horizon purchasing freeze settles the present eligibility question, a sufficient direct comparison may be preferable to another scenario workshop. That does not invalidate the method under materially different uncertainty.
+STR.13 examines whether the scenario-and-staged-option method is useful for the next question. If a full-horizon purchasing freeze is already established, a direct comparison can settle current eligibility. The scenario-and-staged-option method may still be useful under different uncertainties.
 
-Suppose the team retains rejected directions and the Board receives qualified uncertainty, while recognition in the relevant discussions still favours confident sales claims. STR.15 can finish with that bounded account and a decision to keep the useful archive. A proposed change in how the Board considers premises and rivals needs its own authority, participant conditions and later observation. Publishing another template does not establish changed culture.
+Suppose the team’s archive retains rejected directions and the Board receives the qualified uncertainty, while recognition in the discussions still favours confident sales claims. STR.15 can finish with the bounded finding that the archive retained those directions, the qualification reached the Board and confident sales claims still received recognition. If a choice about the archive is requested, the evidence can support keeping it. Changing how the Board considers premises and rivals requires the relevant authority and conditions for participation. To claim that the practice changed, look for evidence from later discussions.
 
-The connected case therefore produces several useful results without one universal cycle owner: a frame, a qualified comparison, a four-day commitment, a conditional larger configuration, external-result needs and timely reconsideration.
+In this case the team frames the question and compares courses, the Board authorizes four days, and the larger configuration remains conditional. Decisions about permissions and later review have their own holders and times.

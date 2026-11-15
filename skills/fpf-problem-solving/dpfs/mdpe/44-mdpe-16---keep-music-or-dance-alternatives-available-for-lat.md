@@ -4,13 +4,13 @@
 
 > **Type:** DPF pattern body
 >
-> **Primary working result:** a **use-bounded alternative-availability result**. Each branch is live for a named later use, under selected upkeep or reconstruction, awaiting repair before trial, archive-only, suspended, or removed from this development question. A live branch has an actual bearer or arrangement, capable performer, obtaining dependencies, access, permissions, resources and usable configuration, with sufficient applicable availability evidence. Upkeep Work and a next trial are included only when needed and selected. Real rights, venue, calibration and promised-use windows remain conditions of availability; the evidence carrier's age alone does not end it.
+> **Primary working result:** which alternatives were, are or could become usable for the specified purpose, under which conditions and on what evidence. Identify what can be maintained, reconstructed, repaired, archived, suspended or removed when a decision about keeping alternatives is needed. Include actual deadlines for rights, venue, calibration or a promised use. An earlier observation can still support an unchanged condition.
 
 ### MDPE.16:0 - Use This When
 
-Use this pattern when one score, format, canon, body model, technique, instrument setup, competition rule, school, market, platform signal, model score, or fashion is becoming the only development line before the important uncertainty has been reduced.
+Use this method to establish or preserve the alternatives available for a particular music or dance use. A single score, school, competition rule, configuration, platform signal or fashion may be narrowing development before the important uncertainty is settled. An archive can also answer which variants were available for a particular engagement.
 
-Typical warning signs are:
+You may encounter the following situations.
 
 - a competition or platform selects what is easy to judge or display, and hard-to-display variants disappear;
 - a teacher keeps only what beginners can copy quickly, removing distinctions needed for later mastery;
@@ -22,248 +22,248 @@ Typical warning signs are:
 
 The practical question is:
 
-> Which materially different alternatives should remain usable for this development question, what actual conditions and available evidence support that use, and what change would require upkeep, a trial or a different disposition?
+> Which materially different alternatives could be used for this purpose at the time in question? If any should be kept or restored, what would that require?
 
-The gain is a set of materially different alternatives that a named Agent can still reconstruct, rehearse, perform, teach, or test when the next decision needs them.
+A musician, dancer, teacher or organizer can identify what could be reconstructed, rehearsed, performed, taught or tested under the stated conditions. A project can use that finding to retain alternatives or identify what would make a currently unavailable option usable.
 
-Use a direct composition, choreography, improvisation, rehearsal, repertoire, curation, archive, production, teaching, rights, capability-development, tool, operations, or engineering Method without `MDPE.16` when one branch and its later use are already known. Use `MDPE.16` when a wider practice-development decision must keep several materially different branches usable and coordinate their different upkeep, evidence, and trials.
+Use an appropriate composition, choreography, teaching, archive, rights, operations or other domain method directly when it settles the question. Use MDPE.16 to assess whether a branch could be used at a stated time, compare alternatives for the same purpose or coordinate the work needed to keep them usable. A comparison can find that only one or none is usable.
 
-Do not use this pattern when:
+Use these direct entry points for related questions.
 
-- the task is to generate and compare a small set of performance candidates—use `MDPE.9`;
-- one current `OptionSet` is ready for a bounded choice—use `C.11` or the applicable domain choice pattern;
-- one change has already been chosen and only its performance and test remain—use the applicable direct Music, Dance, teaching, event, production, tool, or engineering Method;
-- the task concerns archive/front stewardship without a Music-or-Dance specialization—use `C.18`;
-- the task concerns a reusable pool policy without a Music-or-Dance specialization—use `C.19`;
-- the task is to establish present cultural continuation or loss—use `MDPE.19` and `C.36`; or
-- the named objects are complementary parts of one project rather than alternatives for the same question.
+- Use `MDPE.9` to generate or compare candidates for a particular performance.
+- Use `C.11` or the domain choice method to select from a current `OptionSet`.
+- To carry out or test a selected change, use the relevant music, dance, teaching, event, production or engineering method.
+- Use `C.18` for general archive or front stewardship.
+- Use `C.19` for general policy on a reusable pool.
+- Use `MDPE.19` and `C.36` for cultural continuation or loss.
+- Examine members of one arrangement as components when the question concerns their joint performance.
 
-If the development question, named later use or actual branches cannot be named, return the missing value and the decision it blocks. When availability needs upkeep or restoration, also establish the capable and authorized performer and direct Method before relying on that proposed Work. An already obtaining condition does not need a newly assigned maintenance task.
+If the evidence leaves the use, branch or availability uncertain, report what is known and what cannot be established. For proposed upkeep or restoration, identify the method, resources, authority and capability required. Establish who can supply them before relying on the work. Where the required condition already holds, the available evidence may suffice.
 
 #### MDPE.16:0.1 - Working Distinctions
 
 | Name | Meaning here |
 | --- | --- |
-| development alternative | An identified actual or possible-future bearer or arrangement that can answer the same bounded development question through a materially different Method, structure, characteristic profile, use, or failure mode. |
-| variant | A bearer related to another bearer through a stated variation, derivation, transformation, lineage, or family relation. Resemblance or a shared label is insufficient. |
-| live alternative | An alternative with sufficient applicable evidence of availability for its named later use and conditions. A title, file, archive row, maintenance plan or former capability alone does not make it live. |
-| branch availability | An obtaining combination of bearer or arrangement, capable performing Agent or whole, required capabilities and dependencies, access, permission, rights, resources, and usable configuration for the named later use. |
-| upkeep or reconstruction result | The world-side capability, access, relationship, configuration, or other condition obtained through a direct Music, Dance, teaching, archive, rights, capability, tool, event, operations, or engineering Method. A plan or record of that Work is not the result. |
-| availability evidence | Dated evidence that the branch can still be reconstructed, rehearsed, performed, taught, configured, accessed, or otherwise used as claimed under representative conditions. |
+| development alternative | An identified existing branch or proposed arrangement offering a materially different answer to the same question, for example through a different method, structure, use, performance characteristic or failure mode. |
+| variant | An identified version related to a source or another version by variation, derivation, transformation, lineage or another stated family relation. Establish the relation for the claim being made. |
+| live alternative | A branch whose availability for a specified use is supported under the stated conditions. A title, file, earlier performance or maintenance plan can have value even when one of those conditions remains unknown. |
+| branch availability | A performer or performing arrangement can use the branch as claimed with the necessary skills, dependencies, rights, resources, access and configuration at the time in question. |
+| upkeep or reconstruction result | The capability, access, relationship, configuration or other condition actually obtained through maintenance or reconstruction. A record can document that result and a plan can specify the work needed. |
+| availability evidence | Evidence of the conditions under which the branch can or could be reconstructed, rehearsed, performed, taught, configured, accessed or otherwise used as claimed. Include timing when material. |
 | stepping stone | An alternative kept available because it enables later generation, learning, combination, representation change, source return, or reachability, even when it is not a current performance choice. |
-| repertoire | Alternatives available to named performing Agents or performing wholes in named Work, not every stored artifact under one style label. |
-| selection-pressure claim | A claim that may report only an association or trace, an obtaining rule or constraint, a causal-contribution hypothesis, or a bounded causal-use result. These claim strengths support different next moves. |
-| archive/front membership | Results governed by `C.18`. Recorded, non-dominated, and live-for-this-question are different membership relations. |
-| current `OptionSet` | Options currently available for one `C.11` choice. The wider development set can supply candidates to it but is not one permanent `OptionSet`. |
+| repertoire | Alternatives available to identified performers or performing groups for a stated use. A catalogue can help identify candidates for it. |
+| selection pressure | A rule may admit or exclude a branch, and an arrangement may affect its retention or loss. Distinguish an observation, a rule actually in force, a causal hypothesis and a supported conclusion about cause. |
+| archive/front membership | Use `C.18` to establish archive or front membership. A recorded branch may or may not be non-dominated under the chosen criteria or available for this occasion. |
+| current `OptionSet` | The options available for a particular choice under `C.11`. A wider set kept for development can contribute candidates to later decisions. |
 
-Novelty, diversity, usefulness, style recognition, embodied accessibility, technical feasibility, and cultural continuation are different characteristics and relations. A branch can be novel and unusable, useful and ordinary, weak now but a valuable stepping stone, visible but no longer reproducible, or stored but unavailable.
+Novelty, diversity, usefulness, recognition, embodied accessibility, technical feasibility and cultural continuation answer different questions. An ordinary branch can be useful, a poorly performing one can enable a later combination, and a widely seen recording can preserve a performance even if the performers or rights needed to stage it again are unavailable.
 
 ### MDPE.16:1 - Problem
 
-Music and Dance practices develop through variation, performance, comparison, repair, recombination, teaching, transmission, selective use, forgetting, and rediscovery. Early convergence can make current Work easier while shrinking what later practitioners can do.
+Variation, performance, repair, recombination, teaching, selective use, forgetting and rediscovery can all shape a practice. An early choice can simplify today's work and narrow what later practitioners can do.
 
-Local arrangements often select one proxy:
+Local settings can favor particular differences. For example,
 
-- competitions select judgeable differences;
-- platforms select visible and quickly recognizable differences;
-- schools select teachable differences;
-- production teams select reliable differences;
-- models select differences represented in their data, objective, and interface; and
-- present performers select differences within their current capability and access.
+- competition criteria can favor differences judges can perceive,
+- platform promotion can favor easily recognizable or visible work,
+- teachers can favor readily teachable differences,
+- production teams can favor reliable arrangements,
+- a model can favor features represented in its data, objective or interface, and its users can favor particular outputs,
+- performers can favor alternatives within their current skill and access.
 
-Those selections can be useful locally. The error is reporting their winner as the only valuable development line. Awkward, embodied, minority, low-visibility, high-learning-cost, or temporarily weak alternatives can carry source continuity, reachability, contrasting evidence, access for another performer, or a later combination.
+A winner under one of these criteria can be worth retaining. Other branches may preserve an embodied or minority practice, a source, access for another performer, a useful comparison or a route to a later combination. Explain their contribution to the intended use.
 
-Keeping everything is equally poor. Unbounded accumulation consumes attention and resources, while a catalogue can hide that capabilities, relationships, rights, tools, venues or teaching arrangements have disappeared. Practitioners choose which branches should remain usable and whether current evidence supports their actual conditions. Obtain or restore a condition only when needed and worthwhile; use archive-only, suspended, removed or bounded-use dispositions when later availability is unsupported or no longer warrants its full cost.
+Keeping alternatives takes resources. A catalogue can survive the loss of players, rights, venues, tools or instruction. Find what the evidence establishes about each relevant branch. For a maintenance decision, compare the value and cost of keeping or restoring it with limiting its use, archiving, suspending or removing it.
 
 ### MDPE.16:2 - Forces
 
-| Force | Tension to preserve |
+| Considerations | Practical consequence |
 | --- | --- |
 | Current usefulness and later option value | An alternative with weak current performance may be a useful contrast, source branch, training aid, or input to a future combination. |
-| Diversity and bounded attention | Too little variety traps development; too much untyped variety prevents action. |
+| Diversity and attention | Too few usable alternatives can close off future work. An undifferentiated collection can make relevant alternatives harder to find and sustain. |
 | Shared question and unlike bearers | Alternatives answer one question, while their materials, Methods, capabilities, arrangements, and performers retain different kinds. |
-| Exploration and reliable current Work | Practice needs distant and niche trials while performances, classes, and events still have to work. |
-| Retention and supported removal | Keeping every branch is costly; removing one can erase source return, minority practice, or future reachability. |
+| Exploration and reliable performance | A project may need to reserve time for distant or niche options while its current events and classes continue. |
+| Retention and removal | Upkeep costs time and resources. Removing a branch can cost this project access to a source, a minority practice or a route to a future option. |
 | Representation and embodied use | A score, video, notation, geometry, embedding, or model output preserves some distinctions and hides others. |
-| Project decisions and cultural evolution | A project can govern its trials and maintained set; distributed cultural selection and retention are different relations. |
+| Project choices and cultural change | A project can govern its trials and the branches it maintains. Population-level selection or retention requires evidence about that larger practice. |
 
 ### MDPE.16:3 - Solution
 
-Bound one Music-or-Dance development question and identify alternatives that answer it differently. Decide which should remain usable for a later decision or trial. Use the available evidence to establish each branch's actual availability and limits. Where a condition must be restored or maintained, select the worthwhile feasible upkeep or reconstruction through its direct Method and assess the obtained result. Retain sufficient current availability without a new rehearsal or generic expiry date. State actual rights, resource or qualification deadlines and other conditions that change the use. A further trial is selected only when its contribution warrants its full cost and delay. Keep archive-only, suspended, removed and use-bounded dispositions distinct, and qualify a suspected selection pressure by its actual trace, constraint, hypothesis or causal-use basis.
+Identify the alternatives that answer the same question differently and the date, occasion or future use at issue. Establish which were or are usable, unavailable or uncertain from the actual performers, resources, rights and configuration. That finding can answer a historical, current or prospective availability question. To keep alternatives usable, compare the benefits and cost of maintenance, repair or reconstruction. Use a required trial for the claim it qualifies. For an optional trial, weigh its attainable contribution against its full cost and delay. Use actual deadlines for rights, resources or qualifications. For a suspected selection pressure, distinguish the observed trace, an applicable constraint, a hypothesis and a supported causal conclusion.
 
-Upkeep, rehearsal, trials, ordinary performances, teaching, and revisions can overlap and use distinct Methods.
+The same work may rehearse a branch, maintain its availability and test it. Identify which work was actually done when effort or results are being attributed.
 
-#### MDPE.16:3.1 - Bound the development question and later use
+#### MDPE.16:3.1 - Identify the question, occasion and intended use
 
-Name:
+Identify the following where they affect the question.
 
-- the Music-or-Dance practice subject and present configuration;
-- the question for which several answers remain useful;
-- the later performance, teaching, reconstruction, comparison, source-return, or combination use that makes each branch worth keeping;
-- the horizon and next decision;
-- the practice-developing Agent responsible for the branch set;
-- the Agent authorized to spend resources or change each branch's availability arrangement;
-- affected Agents and Systems;
-- safety, consent, permission, source, access, and other protected conditions; and
-- the attention, rehearsal, equipment, venue, compute, rights, or maintenance budget.
+- The music or dance subject and relevant configuration.
+- The question that the candidate branches answer differently.
+- The use in performance, teaching, reconstruction, comparison, return to a source or combination that gives each branch its value, if any.
+- The relevant date or horizon and any choice still to be made.
+- Who maintains or maintained the branches, if that matters.
+- Who may authorize expenditure or a change if the work needs a decision; for an earlier decision, who held the relevant authority then.
+- The performers, other participants or systems affected.
+- Applicable safety, consent, permission, source and access conditions.
+- The attention, rehearsal, equipment, space, computing, rights or maintenance budget needed to keep or restore a branch.
 
-A useful question is narrower than “preserve dance diversity.” For example: “Which partner-readable timing variants must remain usable while this Balboa phrase family is developed for social dancing at three tempo ranges?”
+For example, a project developing a Balboa phrase for three tempo ranges may need to retain the timing variants that partners can read at each tempo. That makes a more specific question than preserving dance diversity in general.
 
-The practice-developing Agent need not own the alternatives, control the culture, perform every branch, or have authority to change every dependency. If required access, capability, permission or configuration does not obtain, a plan to restore it does not make the branch live. Retain a supported existing arrangement or report the affected branch as suspended or archive-only; any selected restoration still needs a capable, authorized performer.
+Identify who holds the relevant rights, controls resources or can perform the work. A project can assess a branch without controlling all of them. If a required condition is missing, report the use it prevents. When a response is wanted, consider another supported arrangement, archive retention, suspension or a feasible repair. A restoration plan can identify a missing performer or authorization. Before relying on its execution, establish the necessary capability and authority.
 
-#### MDPE.16:3.2 - Form actual alternatives for the same question
+#### MDPE.16:3.2 - Identify or develop alternatives for the same question
 
-For each candidate, name the bearer or proposed arrangement and its actual kind. Then state how it answers the bounded question differently.
+For each candidate, identify the material, method, performer or arrangement involved and the materially different answer it offers to the same question.
 
-A score, dancer, robot, recording, Method, event format, and cultural label do not become alternatives merely because they appear in one table. They can be participants, descriptions, evidence, or components of different development branches. If they do not answer the same question under a stated alternative relation, split the set.
+A score or recording may supply material, a dancer or robot may perform, and a method or event format may organize the work. Compare proposed or existing branches as different ways to answer one question, including those whose feasibility remains open. Separate genuinely different questions, and examine components together when their joint contribution matters.
 
-Seek alternatives that fail differently. Include, when useful:
+When developing candidates, seek differences that can expose different failures or opportunities. Consider, for example,
 
 - a locally reliable branch and a more distant exploratory branch;
 - low- and high-fidelity variants rather than only a middling compromise;
 - variants for different bodies, partners, instruments, venues, media, or receiving uses;
 - a source-preserving branch and a deliberately transformed branch;
 - human, robotic, AI, ensemble, equipped-human, or hybrid performance arrangements under their own capabilities; and
-- a no-change branch when every intervention moves a worse burden.
+- keeping the existing arrangement when a change would add a burden the project cannot justify.
 
 #### MDPE.16:3.3 - Ground each branch in use and availability
 
-For every branch that may remain live, identify:
+To assess a branch for a past, present or proposed use, identify what the claim depends on.
 
-- the intended Music-or-Dance Work and later receiving use;
-- the actual bearer or arrangement that must remain available;
-- the performing Agent or performing whole and the capabilities it must retain;
-- the body, partner, instrument, cue, venue, media, equipment, software, teaching, operational, or source dependencies;
-- the existing arrangement supporting availability, and the direct Music, Dance, teaching, archive, rights, capability-development, event, production, tool, operations or engineering Method when a condition needs obtaining or restoration;
-- the authorized Agent responsible for any needed upkeep or reconstruction Work;
-- the resource, consent, permission, attribution, access, and rights conditions;
-- the applicable evidence of availability for the named conditions, and a further observation only when its result is needed and worth obtaining; and
-- the premise change that would reopen availability, including a real rights, venue, calibration, resource or promised-use deadline when one applies.
+- The performance, teaching, reconstruction or other use and its occasion.
+- The material, method, equipment or arrangement required for that use.
+- The performer or performing group and the capability the use requires.
+- Any dependencies on a body, partner, instrument, cue, venue, media, equipment, software, teaching, operations or source.
+- Provision at the relevant time. If a condition needs to be obtained, repaired or restored, identify a method that could supply it.
+- Who is responsible and authorized for any required upkeep or reconstruction.
+- Applicable conditions for resources, consent, permission, attribution, access and rights.
+- Evidence covering the required conditions and any further observation worth obtaining for an unresolved claim.
+- What could change a current availability finding, including a real expiry of rights, access to a venue, calibration, resources or a promised use window.
 
-A recording can support reconstruction; it is not the performance, Method, or capability. A movement animation can support a trial; it is not evidence that a dancer can use the movement with a partner. A software snapshot can support restoration; it is not evidence that licenses, hardware, performers, and venue conditions still permit use. A model score can characterize one representation; it is not performer-facing usefulness.
+A recording can preserve material for reconstruction or document a performance. An animation can help plan a trial. An operator or restoration service can use a software snapshot to restore a configuration. To establish partner use, rights, hardware access or another necessary condition, use evidence of that condition. A model score helps only with the characteristics and representation it evaluates.
 
-#### MDPE.16:3.4 - State what is observed before naming a selection pressure
+#### MDPE.16:3.4 - Establish the grounds for a claim about selection
 
-One observation can support several explanations. Class enrolment, views, bookings, a competition result, a teacher's choice, or the declining use of an arrangement is first an observation with a sampling basis. Before treating it as a pressure, state which claim is available:
+Enrolment, views, bookings, a competition result or declining use can support more than one explanation. Identify what was observed, the sampling basis and which of the following claims the evidence can support.
 
 | Available claim | What it supports here |
 | --- | --- |
-| association or trace | Describes co-occurrence or change. It can inform a qualified present account or a worthwhile next observation; it does not by itself justify changing the suspected cause. |
-| obtaining rule, constraint, access, capability, or resource relation | Establishes a current condition that directly admits or blocks Work. It can justify removing that condition when the Agent has authority and the other required relations are known. |
-| causal-contribution hypothesis | States that an arrangement may be helping retain or remove the branch. Give its basis, serious rivals, uncertainty, decision reach and reopen condition. Select a discriminating trial only when feasible and worth its full burden; retain an adequate bounded decision when no such trial is needed. |
-| bounded `C.28` causal-use result | States the causal use supported and the nearby stronger use not supported. The receiving decision still remains with this pattern or its direct Method. |
+| association or trace | Describes a co-occurrence or change. It may answer a historical question, support a limited current finding or suggest another observation worth obtaining. |
+| rule, constraint, access, capability or resource condition | An applicable condition can establish why the branch was or is available or blocked. Changing that condition requires an authorized and feasible action. |
+| causal hypothesis | Identify why an arrangement may have supported retention or loss, plausible alternatives and what the available evidence leaves open. Consider another comparison if it could distinguish the alternatives at a worthwhile cost. A present choice may be supportable under more than one explanation. |
+| bounded causal finding under `C.28` | Identify the attributable effect, the conditions it covers and any material limit. A further decision belongs to its authorized holder. |
 
-For example, “the electronic branch appeared in only one of four recent events” can fit unavailable equipment, venue restrictions, performer readiness, curation, audience response or sampling variation. The trace can motivate checking a relation when that check can change the decision at worthwhile cost. A documented venue rule establishes an access constraint. A latency-to-curator-rejection claim remains a causal-contribution hypothesis until an applicable basis supports that causal use; a current bounded availability decision can finish without settling it.
+For example, suppose the electronic branch appeared at only one of four recent events. Equipment, venue rules, readiness, curation, audience response and sampling could all matter. A venue rule can establish an access constraint. A claim that latency led curators to reject the branch needs supporting evidence of that relation. The event count or a bounded availability finding may already answer the question.
 
-Also inspect the representation used to compare alternatives. Ask what distinctions it preserves or suppresses and whether another representation could change membership, upkeep or a selected trial. Choose any new comparison by its full contribution and cost; neither a population study nor a cheap reversible test is required merely to complete a sufficiently supported decision.
+Check which distinctions the score, model or other representation preserves. A different representation may change the finding about a branch or what is worth maintaining. Use a further comparison when its likely contribution warrants the participants' work, expense and delay.
 
-#### MDPE.16:3.5 - State every branch's current disposition
+#### MDPE.16:3.5 - State the status for the specified use
 
 | Disposition | Practical meaning |
 | --- | --- |
-| live for named use | Applicable evidence supports actual availability for the named use and conditions. A calendar window is included when it bounds that availability; no generic renewal period is required. |
-| upkeep or reconstruction selected | Direct Work has been selected or begun, but current availability is not yet claimed. |
+| live for named use | Evidence supports availability for the stated use, conditions and time. Include a real availability window or required review date. |
+| upkeep or reconstruction selected | Identify the work selected or begun. State what availability the work would preserve or restore. Use the achieved result and remaining conditions for a claim of restored availability. |
 | repair before trial | One named, recoverable defect blocks a useful availability check or trial. |
 | archive only | Source or lineage value remains, but current usability is not claimed. |
-| suspend | A named capability, evidence, permission, safety, access, rights, or resource condition is missing. |
-| remove from this development set | A supported reason defeats the present use; archive or source return remains when needed. |
+| suspend | Reliance on the branch is suspended for the stated use because a required condition is missing or its status cannot yet be established. Report which applies. |
+| remove from this development set | State why the branch falls outside this use and whether source or archive value remains. |
 
-These dispositions describe availability for the current use; they do not establish cultural retention. A branch not chosen today can remain live. A stored branch, maintenance record, or promised rehearsal need not be live.
+These statuses refer to the stated use and time. A branch passed over in one selection can still be available. A stored copy or promised rehearsal may leave availability uncertain. Continued use in a culture requires evidence of that wider practice.
 
-#### MDPE.16:3.6 - Obtain and check the conditions that keep a branch live
+#### MDPE.16:3.6 - Establish or restore availability
 
-For every branch reported as live, show the obtaining arrangement that makes it available for the named use, including its dependencies and full upkeep burden:
+For a claim of availability, identify which of the following conditions the use depends on and what the evidence establishes.
 
-1. actual bearer or arrangement and named later use;
-2. capable performing Agent or whole;
-3. required dependencies, permissions, access, rights, resources, and usable configuration;
-4. responsibility and authority for upkeep or reconstruction when that Work is needed;
-5. direct upkeep, rehearsal, reconstruction, capability-development, relationship-maintenance, configuration-management or access Work only where maintaining or restoring availability actually needs it;
-6. the obtaining condition, with the world-side result of any upkeep or reconstruction Work distinguished from its plan;
-7. applicable availability evidence under representative conditions, with its date and qualification where relevant to the receiving use; and
-8. the actual stop or reopen condition and any real expiry of rights, qualification, resources or a promised use window.
+1. The branch and the use for which its availability is being assessed at the relevant time.
+2. A capable performer or performing group.
+3. The dependencies, permissions, access, rights, resources and usable configuration required for the stated use.
+4. Responsibility and authority for any necessary upkeep or reconstruction.
+5. Any maintenance, rehearsal, reconstruction, training, relationship, configuration or access work needed to keep or restore availability.
+6. Which conditions held, what any completed work established and what is still proposed or underway.
+7. Evidence that covers the conditions of the claimed use, with its date and limits where they matter.
+8. Any real expiry of rights, qualifications or resources, the promised use window, or another condition that would change the finding.
 
-Use the applicable direct Method when upkeep or reconstruction is needed. A capable Agent performs that Work and the result must support the claimed availability. Existing sufficient availability evidence can instead sustain an unchanged branch without new Work. A branch can be live for rehearsal but not public performance, for one robot configuration but not another, or for one teacher and learner population but not a whole scene.
+Use the appropriate method for a required repair or reconstruction. Establish its result before relying on the restored branch. Existing evidence may already establish availability for rehearsal but leave public performance open, apply to one robot configuration only, or support use by one teacher with one group. State that scope.
 
 #### MDPE.16:3.7 - Choose trials that distinguish the alternatives
 
-Select a trial or observation only when a materially uncertain branch disposition or development decision needs its result, the full contribution warrants cost and delay, and performers, capability, access, rights, resources and an opportunity window make it obtainable. Keep a live, archive-only or stepping-stone branch on sufficient available grounds without designing a trial merely to finish its record. For a selected trial, prefer a contrast that exposes different failure modes over repetition of the representation that selected the current winner.
+Use an existing comparison when it settles the question. If a trial is required for this use, establish whether its conditions can be met. Select an optional trial when an important uncertainty remains, its attainable contribution justifies its full burden, and the required performers, capability, access, rights, resources and time are available. To distinguish alternatives, change conditions that expose their different failures or uses. Existing grounds may suffice to keep, archive or retain a branch as a stepping stone.
 
-Useful contrasts include actual performers versus notation or model scores alone; varied partners, bodies, instruments, tempi, phrases, venues, audiences, or media; held-out contexts when retrieval and transfer matter; source and receiving branches when transmission matters; and changed cue, timing, latency, noise, attention, fatigue, or operational conditions.
+Possible comparisons include a model’s prediction for a specified characteristic and an observation of the same characteristic in performance, or work with different partners, tempi, venues, media, noise, attention or fatigue. Retention or transfer may require a delayed or held-out task. For transmission compare the source and receiving work. Select conditions relevant to the claim.
 
-A selected trial belongs to its direct Method. Keep branch availability, trial plan, performed trial, observation and resulting disposition distinct. At the set level, choose to explore, stabilize, redirect, suspend or retire a branch from the current question on the basis that supports that decision. A trial plan is not a performed trial, and an availability result is not proof of the later cultural or performance outcome.
+Use the direct domain method for any selected trial. Distinguish its plan, execution, observations and the conclusion they support about availability. If a choice is required, the authorized decision holder can use the available findings to explore, stabilize, redirect, suspend or remove the branch. Cultural uptake and later performance need evidence from their own settings.
 
 #### MDPE.16:3.8 - Remove only for a supported reason
 
-Before removing or collapsing a branch, state the present use from which it is removed; the evidence, constraint, or decision supporting removal; whether the reason is reversible; the source, lineage, minority, recovery, contrast, or stepping-stone value that would be lost; which affected Agents and Systems bear the loss; whether archive-only retention is useful; and the condition that could reopen membership.
+Before removing or merging a branch, identify the use it would leave, why that is warranted and whether the decision can be reversed. Consider who would lose source access, a minority practice, a comparison or a route to a later combination. Preserve useful source material in the archive and identify any condition that would warrant reconsidering removal.
 
 
 
 #### MDPE.16:3.9 - Keep the result usable
 
 ```text
-Development question and next decision:
+Availability question, use and date or horizon:
 Branch and actual bearer or arrangement:
-Named later use and materially different contribution:
-Current disposition:
+Intended or past use and distinguishing contribution:
+Status at the relevant time:
 Performing Agent or whole and required capability:
 Dependencies, rights, access, permission, resources, and configuration:
-Responsible and authorized upkeep/reconstruction Agent, when such Work is needed:
-Direct upkeep or reconstruction Method, Work, and obtained result, when needed:
-Existing obtaining arrangement and availability limits:
-Applicable availability evidence and conditions; relevant date or actual use/qualification deadline:
-Observed association, obtaining constraint, causal hypothesis, or causal-use result:
+Who is responsible and authorized for upkeep or reconstruction, if needed:
+Any upkeep or reconstruction required, its method, status and any result obtained:
+Existing arrangement and limits of availability:
+Evidence under the relevant conditions, including its date and any actual deadline:
+Observation, applicable constraint, causal hypothesis or supported causal finding under its stated conditions:
 Selected worthwhile and feasible trial or observation, if any:
 Source return or archive relation when needed:
-Stop or reopen condition:
+When the supported use ends or a decision or availability finding needs reconsideration, if relevant:
 ```
 
-Use the entries needed by the particular availability claim. Include upkeep and trial fields only when those actions are selected, and association or causal fields only when such a claim is relied on. Keep a limitation or retained reason with the substantive availability result only when it changes a later recipient's choice.
+Include the entries needed for the claim. Identify a trial or upkeep when selected, and a selection pressure when the question or conclusion relies on it. Give the limitation or reason for retaining a branch that matters to the interpretation or use of the finding.
 
-This result can supply live candidates to a current `C.11 OptionSet`, constraints to a local intervention, or inputs to direct repertoire, archive, curation, teaching, production, and engineering Methods. Each receiving Method specifies its admissible inputs and characteristic result; a capable Agent performs Work that enacts it to obtain that result.
+A practitioner can use the finding directly, draw available candidates for a current `C.11 OptionSet`, apply a limit to an intervention or supply a usable branch to repertoire, archive, curation, teaching, production or engineering work. Use the actual conditions of that receiving work.
 
 ### MDPE.16:4 - Worked Cases
 
 #### MDPE.16:4.1 - Dance movement generation: different fidelity can preserve different value
 
-Chédin et al. report iterative co-design involving repertoire curation, model and interface variants,
-improvisation and return to tool design. The medium/high/low comparison involved Dancer-Y alone; his different
-uses for outputs do not establish a multi-dancer fidelity ranking. Following the adaptation in `MDPE.9:4.1`,
-a new project can compare a recognizable model output and a less faithful stimulus for its own purposes, then
-retain both when their distinct uses justify the cost. That is a proposed local decision, not a disposition
-transferred from the study.
+Chédin and colleagues describe dancers and researchers curating movement material,
+developing model and interface variants, improvising and revising the tool. Dancer-Y
+alone took part in the final comparison of high-, medium- and low-fidelity outputs.
+His uses for those outputs can suggest a comparison under `MDPE.9:4.1`. A new project
+might keep both a recognizable output and a less faithful stimulus if their uses justify
+the cost. Their suitability for another dancer requires evidence about that use.
 
-The source does not establish that either branch remains available after the study. A new project establishes whether the model or movement material, permitted source use, capable dancers, usable interface and configuration support its intended use. An applicable improvisation or reconstruction observation can already establish that availability. A changed model, interface or receiving movement task may instead require a representative run; its scope follows the unresolved condition. Stored outputs without the conditions needed to use them are archive or reconstruction inputs, not a live repertoire.
+To establish availability after the study, identify which model or movement material, rights, dancers, interface and configuration the intended use actually requires. An existing improvisation or reconstruction may supply enough evidence. A changed model, interface or movement task may justify another run. Stored outputs can be adequate for archival comparison even when using them with dancers would require reconstruction.
 
 #### MDPE.16:4.2 - Balboa phrase family: carrier, articulation, and partner readability
 
-Use the timing distinctions in the [Dance profile](08-mdpe-reference-7---music-dance-and-overlapping-use-profiles.md#mdpereference72---dance-making-movement-usable-for-its-participants) when phrase or teaching alternatives differ in continuous movement and discrete articulation. A project can compare variants in which a salient event is related to contact onset, direction change, weight arrival, partner-readable pressure, or another justified event while keeping continuous movement visible.
+Use the timing distinctions in the [Dance profile](08-mdpe-reference-7---music-dance-and-overlapping-use-profiles.md#mdpereference72---dance-making-movement-usable-for-its-participants) when comparing continuous movement and the moment of articulation. A variant may relate a salient event to contact onset, a change of direction, weight arrival, pressure the partner can read or another specified event. Examine that timing within the continuous movement.
 
-A visible-footwork branch may be attractive to viewers but weak for partner readability. Another may be clear to a partner but demanding at a particular tempo. A third may work as a teaching contrast rather than a performance choice. Its availability depends on who can enact it, permitted source use, and the supported tempo and partner range. Existing pair practice can supply sufficient evidence while those conditions remain applicable. Repeated practice earns its place when a demanding capability needs upkeep; a new partner-readability check is warranted when a changed partner, tempo or sign of skill decay leaves a consequential doubt. A date alone neither renews nor defeats availability. The brushes analogy supplies another representation and comparison cue; it does not make Music and Dance variants members of one set.
+Visible footwork may interest a spectator while giving a partner a hard-to-read cue. Another variant may be clear at one tempo and hard to perform at another, or useful only as a teaching contrast. Identify performers, permitted material, tempo and partner conditions. An earlier paired performance can establish bounded availability. Practice can maintain a demanding skill; a changed partner or tempo or evidence of skill loss may justify a new check. The brushes analogy offers another way to compare timing. Membership in a common set still depends on a shared question.
 
 #### MDPE.16:4.3 - Constructed Music case: restore a live-electronic branch before calling it available
 
-A small ensemble wants to keep both a sparse acoustic-response arrangement and a live-generated-response arrangement for a spring performance. The electronic branch was used only once in four recent events. That trace alone does not show whether equipment access, venue rules, performer readiness, latency, curation, audience response, or sampling variation is narrowing use.
+A small ensemble wants to retain sparse acoustic and live-generated response arrangements for spring. The electronic branch appeared at one of the last four events. The trace leaves equipment access, venue rules, performer readiness, latency, curation, audience response and sampling as possible explanations.
 
-The ensemble initially reports the electronic branch as **suspended**, not live: its old plugin no longer runs on the replacement laptop and the venue has not approved the networked setup. The production lead has authority over the approved equipment budget and assigns direct configuration and rehearsal Work. An audio engineer restores the project from source stems in a supported environment, documents the changed plugin and its audible limits, obtains the venue's equipment permission, and prepares the acoustic branch as fallback. The musicians then perform a twenty-minute representative rehearsal with the replacement laptop, expected monitoring, response timing, and one simulated network failure.
+The ensemble suspends the electronic branch because the old plugin fails on the replacement laptop and the venue has yet to approve the networked setup. The production lead authorizes configuration and rehearsal work within the equipment budget. An audio engineer restores the project from its stems in a supported environment, identifies the changed plugin's audible limits, obtains equipment permission and prepares the acoustic fallback. The musicians rehearse for twenty minutes with the intended laptop and monitoring, testing response timing and a simulated network failure.
 
-The rehearsal record, measured latency trace, successful fallback, musician report, and venue permission are evidence only for this configuration and performance window. They change the electronic branch from **suspended** to **live for the spring performance**. They do not prove audience preference or cultural retention. If the same setup cannot be restored on a second machine before the stated date, the branch returns to **repair before trial**; if the rights or source project become unavailable, it becomes **archive only**. A later venue rejection would establish an access constraint, while a claim that latency causes curators to reject the branch would still need a bounded causal-use basis or a reversible trial.
+The rehearsal record, latency trace, successful fallback, musicians' reports and venue permission support availability for that spring event and configuration. Audience preference and longer cultural retention remain separate questions. If the project requires a second machine and cannot restore the setup on it in time, that use is unavailable by the deadline. If the fault is recoverable and a later trial is useful, identify the repair it requires. Loss of rights or source access may leave only archive use. A subsequent refusal by a venue establishes an access constraint there. To attribute rejection by curators to latency, examine evidence that distinguishes that explanation.
 
-In the paired unchanged case, the same musicians, restored configuration, venue permission and spring performance window remain supported, and no new relevant problem has appeared. The rehearsal record is older, but remains applicable; the electronic branch stays live without another rehearsal. If venue permission ends or the plugin again becomes incompatible, the corresponding availability fails even if that record was produced yesterday.
+With the same musicians, restored configuration, venue permission and spring window, the earlier rehearsal can still establish availability. Expired permission or a new plugin incompatibility can defeat that current use even if the record was made yesterday. The record continues to establish what was possible at the earlier time.
 
 #### MDPE.16:4.4 - Robotic Music: social gesture and control branches
 
 A Shimon project can compare gesture-amplitude, gesture-timing, sensing, control, and actuation arrangements. Mechanical evidence from one configuration, social-gesture evidence from another, and musical-plausibility observations from a changing-tempo trial remain configuration-bound.
 
-For a named performance trial, Shimon can be the performing Agent. The human project team is the practice-developing Agent that changes and maintains the branch set. A branch is live while the required hardware, software, calibration, safety envelope, operators and score or improvisation interface remain available and their suitability for that use is supported. An earlier successful representative run can suffice under unchanged conditions. Recalibration, an altered control path or an applicable safety requirement can require another run before use. A configuration record that leaves an essential operating condition unsupported supplies reconstruction input rather than evidence that the robotic-Music branch is live.
+Shimon can be the performer in a particular music trial. The human project team changes and maintains the alternatives in this case. Check the hardware, software, calibration, safety limits, operators and interface needed for the use. A previous representative run can suffice under unchanged conditions. A changed control path, recalibration or an applicable safety requirement may call for another run. A configuration record can aid reconstruction while an essential operating condition remains unverified.
 
 #### MDPE.16:4.5 - Social-dance branches answer different questions
 
-Choose the alternatives by the receiving work before treating familiar labels as branches. A milonga event,
-a recording classified as milonga and a taught movement phrase can all matter to one project, but preserving one
-does not preserve the other two. A programme advertised under a local kizomba umbrella might offer authentic
-kizomba, urban kiz and tarraxo sessions; that programme neither defines a universal family tree nor specifies what
-a learner must do in each session. Recover each proposed session's movement instructions, music and use.
+Identify the shared question before treating familiar names as alternatives. A milonga event, a recording
+classified as milonga and a movement phrase can serve one project in different ways. Keeping the recording
+does not by itself preserve the event or phrase. A local kizomba programme might offer sessions called
+authentic kizomba, urban kiz and tarraxo. Examine the instructions, music and intended use for each. The
+programme establishes what that organizer offered. A wider historical genealogy needs evidence of the relationships it asserts.
 
 For a concrete movement-development comparison, suppose the teacher supplies two partnering instructions,
 locally called tango and tango vals, and two recordings, locally classified as tango music and waltz music.
@@ -276,65 +276,65 @@ The candidate set contains four receiving uses:
 | Tango-vals instructions with the tango recording | The different partnering instructions and their usable timing relation to the first recording. |
 | Tango-vals instructions with the waltz recording | Both selected inputs and the conditions that make their combination usable. |
 
-These are proposed branches, not four established capabilities. A change of recording alone, a change of partnering
-instructions alone and a change of both answer different questions. Establish compatibility before retaining a
-branch for actual use; if adapting the instructions changes a defining condition of the Method, preserve that
-change in the branch instead of reporting the Method as unchanged. Keep materially different combinations when
-their expected use warrants what retaining them costs.
+These four combinations are proposals. Changing the recording, the partnering instructions
+or both raises different questions about a pair's performance. Check compatibility
+for the intended use. If an adaptation changes a defining feature of the method,
+identify the new variant. Two combinations can be worth preserving when their distinct
+uses justify the cost. A proposed combination can remain untested or unavailable.
 
-For party programming, the alternatives are event arrangements: the playlist, teachers or hosts, floor access,
-participant capability, consent and timing jointly matter. A booked milonga event is available through those
-operating relations, not through the existence of a track with that name. For one dancer's development, retain
-the specified coordination or partner-response variants through capability practice and appropriate receiving use.
-Split the sets when their decisions differ.
+For party programming, compare arrangements with their playlists, hosts or teachers, floor access, participant
+capabilities, consent and timing. A track with the right name does not make the event available. For one adult dancer,
+examine the coordination or partner-response variant, its practice conditions and evidence relevant to the intended use. Visibility in
+ballet, a university, the press or a competition establishes where a variant was seen. Its usefulness for this
+dancer needs evidence relevant to their aims, abilities and intended use. Keep programme and individual alternatives separate when their questions differ.
 
 
 
 #### MDPE.16:4.6 - Constructed continuation: a small social variant becomes a usable combination
 
-Continue the [shared-practice case](42-mdpe-25---renew-a-shared-music-or-dance-practice.md#mdpe2551---a-complete-constructed-case-the-evening-that-became-a-qualification-course). Sol retains a small pause-and-response phrase that two participants can already use with each other on the social floor. Ren's prepared-performance contest previously excluded it through its large-visible-change entry rule. That exclusion does not make the phrase unavailable or useless for its different receiving task. The same participants also know a larger prepared phrase used in the contest. Keeping both preserves a usable social response and a different display achievement; one is not an unfinished version of the other.
+In the [shared-practice case](42-mdpe-25---renew-a-shared-music-or-dance-practice.md#mdpe2551---a-complete-constructed-case-the-evening-that-became-a-qualification-course), two participants can already use a compact pause-and-response phrase together on the social floor. Ren's prepared-performance contest excluded it under the large-visible-change rule. The participants also know a larger display phrase. Keeping both preserves a usable response and an achievement valued for display under different conditions.
 
-When the local challenge changes to responsive partnering, the small phrase becomes a candidate component: the performers can insert its pause-and-recovery relation into the larger phrase. This combination is not available merely because each component is. Sol uses twenty minutes of the already staffed advanced lesson to help the pair construct the transition, displacing another planned figure. In the constructed rehearsal, the first transition preserves the visible sequence but obscures the partner's pause. The pair shortens the approach and then achieves the task's timely resumption and comfortable continuation with each other. That observation supports the combined phrase for this pair and task, not arbitrary partners or a general capability.
+When the local challenge changes to responsive partnering, the performers try to insert the compact pause and recovery into the larger phrase. Sol devotes twenty minutes of the staffed advanced lesson to the transition, displacing another figure. At first the visible sequence obscures the partner's pause. The pair shorten the approach, resume in time and report comfortable continuation. This establishes the combined phrase for this pair and task. Combining the component skills with a different partner remains a separate question.
 
-The receiving decision now keeps three different uses: the compact social response, the prepared display, and the tested responsive combination. Ren removes the challenge's large-change entry condition and observes from close enough to see the response. This changes eligibility and observation; it does not retroactively turn the earlier contest into a test of social capability. The retained small phrase supplied something the display branch alone lacked, while the display phrase supplied a challenge its practitioners still valued.
+The group retains the compact social response, prepared display and tested combination. Ren removes the large-change entry rule and observes from a position where the smaller response is visible. The earlier contest result remains evidence about display. The compact phrase contributed responsiveness, and the larger phrase a challenge its performers still valued.
 
-Retention has a price. The participants permit internal teaching use of their short recordings, the teacher can explain the three uses, and Ren allocates four minutes of the event's existing briefing to the revised judging task. Existing capability and observations can remain sufficient without scheduled renewal trials. If maintaining three versions begins to displace needed practice, compare that loss with the actual social, display and combination uses. A programme that now needs only the compact response can retain it live and keep the other descriptions as archive material. If a required performer leaves, the combination loses its supported availability until another pair can realize it; changing the entry rule does not restore that capability. Keeping these project alternatives makes a later choice possible, but does not establish population-level cultural retention.
+The participants permit internal teaching use of their recordings. The teacher can explain the three uses, and Ren allocates four minutes of the existing briefing to the new judging task. These resources and the pair’s earlier performances can support the three uses while their conditions hold. If the three versions start to displace needed practice, compare that loss with the uses actually served. A programme needing only the compact response can archive the other descriptions. If a required performer leaves, determine whether another capable pair or arrangement is available. The changed entry rule alone cannot supply the missing ability. Continued use across a population would require evidence at that scale.
 
 ### MDPE.16:5 - Recognition and Assurance
 
 Recognize a complete first result when a practitioner can answer:
 
-1. What bounded development question and named later use do the alternatives serve?
+1. What question, use and date or horizon are being investigated?
 2. What actual bearer or arrangement constitutes each branch, and how does it differ materially?
-3. Which branches are live, under upkeep, awaiting repair before trial, archive-only, suspended, or removed?
-4. For every live branch, which capable Agent or whole and obtaining dependencies, rights, access, resources and configuration keep it available, with direct upkeep Work only where needed?
-5. What applicable evidence supports availability, and what premise change or actual deadline changes the receiving use?
-6. Is a suspected selection pressure only an observed trace, an obtaining constraint, a causal-contribution hypothesis, or a bounded causal-use result?
-7. What is the supported next decision or reopen condition? If a further trial is selected, what makes it worthwhile and obtainable?
+3. Which branches were or are usable under the conditions, and which uses were or are blocked, and where is availability uncertain? If a further action is needed or an earlier one is being investigated, what supports maintenance, repair, archive retention, suspension or removal?
+4. For each available branch, what performer, dependencies, rights, access, resources and configuration support the use? Which upkeep, if any, was needed?
+5. What evidence supports this availability, and which actual change or deadline affects the conclusion?
+6. If selection pressure matters, does the evidence establish a trace, a working constraint, a hypothesis or a causal finding?
+7. If a decision is wanted, who can make it and what supports the choice? If work or a trial is proposed, what makes it required or worthwhile and feasible? What would warrant reconsideration?
 
-Assure the result by checking that:
+For assurance, check the distinctions on which the finding relies.
 
-- complementary project parts are not mislabeled as alternatives;
-- a file, archive row, maintenance plan, former capability, or software snapshot is not reported as live availability;
-- every live branch has an actual bearer, named later use, capable performer and obtaining dependencies supported by applicable availability evidence; necessary upkeep has actual authority and an obtained result, while unchanged availability creates no new Work requirement;
-- live-set, archive, front, pool, selected-set, and current `OptionSet` relations remain separate;
-- Music, Dance, body, partner, instrument, venue, style, source, access, capability, and production distinctions appear when they change availability, disposition, or trial;
-- every claimed pressure states the observed arrangement and relation, claim strength, evidence or expert-estimate basis, uncertainty, decision reach, and reopen condition;
-- weak branches kept as stepping stones name the later reachability, contrast, learning, combination, or source value;
-- removal names the present use, affected Agents and Systems, lost value, and reopen condition; and
-- a maintained project branch set is not reported as population-level cultural retention.
+- The branches each answer the same question differently. Components of one arrangement have their own uses.
+- A file, snapshot, plan or former capability is used only for the availability conditions it helps establish.
+- A claim of availability identifies the branch, time, use, capable performer and needed conditions, with suitable evidence. If upkeep was necessary, identify its authority and achieved result.
+- Keep availability, archive and front membership, pool policy, selection and the current `OptionSet` distinct when a claim relies on them.
+- Identify any musical, movement, partner, instrument, venue, source, access, capability or production difference that changes the finding or a proposed action, including a difference of style.
+- For an attributed pressure, identify the observation, constraint or hypothesis and the evidence for its strength and scope. Include consequential uncertainty or a reason to reconsider a current choice when relevant.
+- When keeping a weak branch for later use, identify the comparison, learning, combination, source access or other possibility it makes available.
+- For removal, state the use the branch would leave, the losses and who would bear them. Include conditions for reconsideration where they matter.
+- Use evidence of the wider population for cultural retention beyond the project.
 
 ### MDPE.16:6 - Common Failures and Repairs
 
 | Failure | Repair |
 | --- | --- |
-| “Keep all variants.” | Bound one question; give each branch a later use, supported current disposition and action-changing condition. Select upkeep and trials only when their contribution warrants their full burden. |
-| “The maintenance record says it is preserved.” | Establish actual bearer, performer, dependencies and applicable availability evidence. If upkeep was needed, distinguish its obtained result from a plan; do not require new upkeep merely to substantiate an unchanged available branch. |
-| “These files are our repertoire.” | Name the actual bearer, capable performing Agent or whole, Method, representative Work, and evidence. |
-| “Its use declined, so the platform removed it.” | Report the trace; distinguish an actual constraint, causal hypothesis and supported causal-use result under `C.28`. A qualified availability decision need not settle the cause or commission a test; select further inquiry or intervention only on its own worthwhile, feasible and authorized basis. |
-| “The top-scoring candidates are the answer.” | State the representation and comparison basis; preserve incomparability and must-conditions; use `C.11` for the later choice. |
-| “Not selected means eliminated.” | Separate current non-use from live, upkeep, stepping-stone, source, and archive value. |
-| “Popular means culturally retained.” | Recover actual receiving and reproduction relations or keep the claim as an estimate with uncertainty. |
+| “Keep all variants.” | Compare the candidates for a specific use and establish what is available. A choice to maintain, restore or test a branch must justify the required resources and work. |
+| “The maintenance record says it is preserved.” | Examine what the record establishes about the branch, performer, configuration and dependencies for this use. An existing record may show the needed work and its result. |
+| “These files are our repertoire.” | For a performance repertoire, identify the material, performers, method, intended work and evidence of availability. For an archive question, the files may already answer it. |
+| “Its use declined, so the platform removed it.” | State the observed change. Use an existing causal finding within its scope, or `C.28` if the causal question still needs work. A rule in force can establish an access constraint. The availability question may be settled while the cause remains open. |
+| “The top-scoring candidates are the answer.” | Identify what was scored, the requirements and any incomparability. For a selection still to be made, use `C.11`. |
+| “Not selected means eliminated.” | Establish separately what was selected and what remained usable for performance, source access, later combination or another task. |
+| “Popular means culturally retained.” | For a claim of cultural retention, examine evidence of reception and reproduction. A popularity measure can establish the particular response it counts. |
 | “All named styles belong to one space.” | Reidentify the development question and split the set when one alternative relation fails. |
 | “The project kept it, so the culture retained it.” | Keep project availability separate from distributed recognition, selection, transmission, retention, and loss. |
 
@@ -342,12 +342,12 @@ Assure the result by checking that:
 
 Positive consequences:
 
-- one current winner no longer erases useful source, minority, body-specific, low-visibility, or exploratory branches by default;
+- A project can retain source, minority, body-specific, less visible or exploratory branches whose use justifies their cost.
 - practitioners know what each retained branch is for and which conditions sustain its availability;
-- weak but useful stepping stones have use-bounded availability supported by named bearer, capability, access, permission, configuration, upkeep, or reconstruction relations rather than merely appearing in a list;
-- representation loss, obtaining constraints, and bounded causal-use claims become inputs to development decisions;
-- removal becomes a bounded decision rather than silent drift; and
-- direct Music, Dance, teaching, production, archive, tool, and engineering Methods govern their respective Work.
+- A precursor or teaching contrast can be kept for a particular use when the conditions for that use, including any necessary performer, access, permission, configuration and resources, hold.
+- A comparison can identify lost expressive distinctions, an actual constraint or a supported effect that changes a development choice.
+- The reasons to remove a branch can be inspected and reconsidered where circumstances change.
+- Practitioners use the relevant music, dance, archive, teaching, production or engineering method for the work needed.
 
 Costs and limits:
 
@@ -363,28 +363,28 @@ Costs and limits:
 
 | Source or maintained result | Use here | Limit |
 | --- | --- | --- |
-| Current FPF `C.17`, `C.18`, `C.19`, `G.5`, `C.11`, `A.10`, `C.28`, `C.29`, and `C.36` | Characterization, generation, archive/front stewardship, pool policy, selected-set declaration, local choice, evidence, causal-use bounds, representation, and cultural relations. | Do not supply Music-or-Dance alternatives, upkeep Work, checked availability, performer-facing trials, or domain selection pressures. |
-| `MDPE.9` and its direct sources | Performance-candidate kinds, comparison grounds, performer-involving trials when needed, and branch or rejection dispositions. | A performance-candidate set serves a bounded performance comparison; continued availability for later development uses is a separate decision. |
-| Chédin et al., [co-designing movement-generation models with Voguing and Dancehall dancers](https://doi.org/10.1145/3772318.3791515) and [repository copy](https://ualresearchonline.arts.ac.uk/id/eprint/26884/) | Practitioner collaboration, repertoire curation, model/interface variants, dancer improvisation, and the different value of high- and low-fidelity outputs in the reported case. | Does not establish a universal fidelity curve, style authority, or prevalence claim. |
-| Ableton Live 12, [Comping](https://www.ableton.com/en/live-manual/12/comping/) | Direct Music-production Method for retaining and auditioning takes while preserving source material. | A tool lane is not a universal alternative kind, repertoire, or development decision. |
-| Timing examples in the [Dance profile](08-mdpe-reference-7---music-dance-and-overlapping-use-profiles.md#mdpereference72---dance-making-movement-usable-for-its-participants) and the local Balboa cases | Continuous carrier, discrete articulation, several perceived timing centers, partner-readable timing, and candidate teaching and movement variants. | Supplies Method-design input, not a demonstrated universal Balboa repertoire or cultural-retention result. |
-| Shimon project sources maintained by `MDPE.14` | Configuration-bound musical, gesture, timing, attention, noise, and control distinctions for robotic Music trials. | Separate studies do not form one comparable evidence set or establish cultural continuation. |
+| FPF `C.17`, `C.18`, `C.19`, `G.5`, `C.11`, `A.10`, `C.28`, `C.29` and `C.36` | Characterize and generate options, steward an archive or front, set pool policy, declare a selection and make a local choice. Establish evidence relations, causal claims, their representations and cultural relations as needed. | Identify the actual music or dance branches, availability, upkeep, performers and selection conditions from the practice. |
+| `MDPE.9` and its sources | Identify or develop performance candidates, compare them and use a performer-involving trial when it is needed. Return supported alternatives, rejection or a limit. | Continued availability for later development is a separate question. |
+| Chédin et al., [co-designing movement-generation models with Voguing and Dancehall dancers](https://doi.org/10.1145/3772318.3791515) and [repository copy](https://ualresearchonline.arts.ac.uk/id/eprint/26884/) | Dancers and researchers curated movement material and developed model and interface variants through improvisation and revision. Dancer-Y used outputs of differing fidelity for different purposes in the final comparison. | Use this finding within that case. A wider fidelity ranking, style authority or prevalence claim needs other evidence. |
+| Ableton Live 12, [Comping](https://www.ableton.com/en/live-manual/12/comping/) | Retaining and auditioning takes while keeping the source material. | A take lane can preserve takes for comparison. Establish their continued availability for the intended use and any subsequent selection from the relevant evidence. |
+| Timing examples in the [Dance profile](08-mdpe-reference-7---music-dance-and-overlapping-use-profiles.md#mdpereference72---dance-making-movement-usable-for-its-participants) and the local Balboa cases | Compare continuous movement, discrete articulation, perceived timing centers and timing that the partner can read. | Use the examples to design or compare teaching and movement variants. Evidence of a repertoire or cultural retention has a different scope. |
+| Shimon project sources in `MDPE.14` | Configuration-specific observations of gesture, timing, attention, noise and control in robotic music. | Compare studies only for claims and conditions they can support. Wider cultural continuation needs evidence at that scale. |
 
-Reconsider the affected availability use when a source premise, configuration, performer population, right, intended use or other relevant condition changes. Retain applicable support when only the evidence carrier's age or an immaterial publication detail changes. A justified review policy and actual use deadlines still apply.
+Reconsider current availability when a relied-on source premise, configuration, population, right or intended use changes. An older record can remain adequate when the conditions still hold. Apply any actual deadline or warranted review policy. For a historical question, use the conditions at that time.
 
 ### MDPE.16:9 - Relations
 
 | Related result | Use here |
 | --- | --- |
-| `MDPE.8` | Supplies the bounded development focus when the current subject, intended later use, live alternatives or material uncertainty changes which branches should remain available. |
-| `MDPE.9` | Can supply performance candidates and trial observations; wider development membership remains a separate decision. |
-| `C.17`–`C.19`, `G.5`, and `C.11` | Supply characterization, archive/front, pool, selected-set, and local-choice results without being replaced here. |
-| `MDPE.13` | Supplies a recognition-and-selection arrangement only when its pressure changes branch dispositions or trials. |
-| `MDPE.14` | Can return split use or another practice-conflict decision that requires selected alternatives to remain available. |
-| Applicable direct Music, Dance, teaching, archive, rights, capability-development, event, production, tool, operations, or engineering Method | Obtains the selected upkeep, reconstruction, access, permission, capability, configuration, rehearsal, or trial result and supplies its evidence. `MDPE.16` relates that result to branch availability and the wider development decision. |
-| `MDPE.7` | Can consume the supported live alternatives and their limits for a current choice or recommendation. |
-| `MDPE.20` | Uses alternatives with their supported availability conditions to construct competing trajectories. A retained current result need not be refreshed or trialled merely to become this input. |
-| `MDPE.17`, `MDPE.18`, and `MDPE.19` | Separately govern receiving enactment, usable cultural memory, and present continuation or loss. |
-| Direct composition, choreography, improvisation, repertoire, teaching, rehearsal, curation, event, tool, and engineering Methods | Use them for domain Work; capable Agents perform that Work and obtain its results. |
+| `MDPE.8` | Identify the subject and intended use when uncertainty about them changes which alternatives belong in the comparison. |
+| `MDPE.9` | Use candidates or observations from a performance comparison. Wider membership and later availability require grounds for those questions. |
+| `C.17`–`C.19`, `G.5` and `C.11` | Use their results for characterization, archive or front stewardship, pool policy, selection or a local choice, where those issues matter. |
+| `MDPE.13` | Use a recognition or selection arrangement to establish how a rule, incentive or observed selection affected or could affect availability. |
+| `MDPE.14` | A conflict assessment or decision can identify separate uses or a requirement to keep alternatives available. |
+| Relevant domain method, including music, dance, teaching, capability development, archives, rights, events, production, tools, operations or engineering | Use it for needed upkeep, reconstruction, access, permission, skill, configuration, rehearsal or trial work. Establish what it actually supplied and how that affects the branch. |
+| `MDPE.7` | Use the supported alternatives and their limits for a finding about an earlier choice, comparison of feasible work, recommendation or authorized decision. |
+| `MDPE.20` | Use the alternatives and their conditions when comparing possible developments. A sufficient existing availability finding can be used directly. |
+| `MDPE.17`, `MDPE.18` and `MDPE.19` | Use them for a receiver's performance, cultural memory or historical and current continuation or loss, as the question requires. |
+| Direct composition, choreography, improvisation, repertoire, teaching, rehearsal, curation, event, tool and engineering methods | Perform the relevant domain work when needed, or use its existing result. |
 
 ### MDPE.16:End

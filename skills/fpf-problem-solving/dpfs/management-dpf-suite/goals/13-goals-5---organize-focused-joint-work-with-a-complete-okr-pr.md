@@ -23,7 +23,7 @@ Focus competes with breadth of current responsibilities. Transparency aids coord
 
 Name the recurring difficulty in the present arrangement: unclear priorities, late cross-team dependencies, misleading completion, weak follow-through, or another concrete failure. Examine a recent episode and identify what a better practice would change. Compare competent present goal work with the proposed OKR arrangement over the same scope. Existing useful meetings, data and decisions belong in the comparison.
 
-Choose an initial scope that can perform a complete useful cycle of the required contributions. A team can be enough when its dependencies can be obtained; an isolated team is too narrow when the unresolved problem is a shared organizational priority. Determine who can choose direction, accept commitments, allocate means and change the practice. These contributions need performers, not necessarily a new position. GOALS.9 supplies acquisition and organizational realization where they are missing.
+Choose an initial scope that can perform a complete useful cycle of the required contributions. A team can be enough when its dependencies can be obtained; an isolated team is too narrow when the unresolved problem is a shared organizational priority. Determine who can choose direction, accept commitments, allocate means and change the practice. Capable performers can take on these contributions in existing positions. Use GOALS.9 to develop missing capability or establish the needed organizational arrangement.
 
 #### GOALS.5:4.2 - Form a focused agenda from direction and actual work
 
@@ -53,7 +53,7 @@ Set the initial review rhythm from how quickly evidence can change action, the w
 
 Use GOALS.4 to distinguish a data problem, failed means, missing provision, worthwhile stretch and obsolete aim. Make the resulting decision effective at its owner. Leave an adequate continuation unchanged when no useful correction is called for. A reporting norm that punishes unwelcome forecasts should be addressed through the actual consequence arrangement in GOALS.8 and OCE; exhorting honesty while preserving the conflicting incentive leaves the obstacle in place.
 
-Use CFR—conversations, feedback and recognition—to make help, learning and contributions visible. GOALS.8 develops the work, including privacy and personnel-use boundaries. Praise can identify a specific helpful contribution, such as recovering a late dependency or supplying another team's missing expertise, alongside the headline output. The organizational result may depend on work absent from an individual's own KR list.
+Use CFR—conversations, feedback and recognition—to make help, learning and contributions visible. GOALS.8 develops the work, including privacy and personnel-use boundaries. Praise can identify a helpful contribution, such as recovering a late dependency or supplying another team's missing expertise, alongside the headline output. The organizational result may depend on work absent from an individual's own KR list.
 
 #### GOALS.5:4.6 - Close the period and decide what follows
 
@@ -67,7 +67,7 @@ Recognition identifies where goal display has separated from joint action. Assur
 
 ### GOALS.5:5 - Archetypal Grounding
 
-[The refund-service cycle in Reference:5](05-goals-reference-5---a-connected-organizational-case.md) works this method through actual objectives, KRs, contribution agreements, review and closure. O1 commits to settlement and confirmation for the 100 opening cases. O2 pursues faster, less costly service for a separate incoming cohort, with an honest forecast short of the ambition and preserved contractual conditions. A separate learning goal draws on the same specialist. When repair becomes a prerequisite for payment, the parties change the order and allocation while retaining the customer obligation. The successful ending establishes each result from its own evidence and leads to ordinary service control plus a new inquiry. The contrasting ending keeps ten unpaid cases open even when the other goals succeed.
+[The refund-service cycle in Reference:5](05-goals-reference-5---a-connected-organizational-case.md) works this method through objectives, KRs, contribution agreements, review and closure. O1 commits to settlement and confirmation for the 100 opening cases. O2 pursues faster, less costly service for a separate incoming cohort, with an honest forecast short of the ambition and preserved contractual conditions. A separate learning goal draws on the same specialist. When repair becomes a prerequisite for payment, the parties change the order and allocation while retaining the customer obligation. The successful ending establishes each result from its own evidence and leads to ordinary service control plus a new inquiry. The contrasting ending keeps ten unpaid cases open even when the other goals succeed.
 
 
 A software group wants customers to import usable records with less support work. Teams initially propose an importer feature, a help center and a support-call reduction. The group constructs one customer-result objective and tests the KRs against representative import cases, correction burden and the agreed quality conditions. The feature and help center remain initiatives. Support-call reduction is interpreted with successful completion and accessibility so that deterring requests cannot count as the whole success.
@@ -90,7 +90,7 @@ The practice can overrepresent participants who write persuasive objectives or c
 - Does the full workload, including service and acquisition of the practice, fit the available means?
 - Do reviews and CFR produce useful actions, help or warranted interpretations?
 - Does period closure preserve original evidence, changed conditions and unfinished work?
-- Is the practice itself maintained, simplified or ended through its actual value and burden?
+- Is the practice itself maintained, simplified or ended in light of its value and burden?
 
 ### GOALS.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -112,7 +112,7 @@ OKR is treated as a whole organizational practice because its useful parts depen
 
 ### GOALS.5:11 - SoTA-Echoing
 
-Doerr's complete practitioner account supplies focus, alignment, tracking, stretch, CFR and acquisition, including the resource guide and difficult adoption cases. Contemporary software-team and organizational studies add formulation, data, discoverability and integration difficulties, with limits of setting and design. The method adopts those concrete questions rather than claims of universal performance improvement. A competent existing goal practice is the serious baseline; another local arrangement becomes preferable when it supplies the same useful results at lower total burden or better supported conditions.
+Doerr's complete practitioner account supplies focus, alignment, tracking, stretch, CFR and acquisition, including the resource guide and difficult adoption cases. Contemporary software-team and organizational studies add formulation, data, discoverability and integration difficulties, with limits of setting and design. These studies identify questions to examine when introducing OKRs elsewhere. A claim that OKRs improve performance there needs evidence that applies to that setting. Compare the proposed practice with competent existing goal work; another local arrangement becomes preferable when it supplies the same useful results at lower total burden or better supported conditions.
 
 ### GOALS.5:12 - Relations
 

@@ -39,7 +39,7 @@ A direction that improves an infinitesimal model may fail at a finite step. A lo
 
 Describe the current candidate `x`, its admissible set and the result wanted. A criterion `J(x)` can measure an objective, a residual or a potential used to establish progress. State which it is. A potential that decreases helps analyze the algorithm; its relation to the recipient's requested answer still needs to be established.
 
-Separate possible conclusions: one improved candidate, no improving change in a specified neighborhood, a point meeting a residual tolerance, a global optimum, or a sequence converging under stated conditions. Select the useful conclusion now rather than automatically pursuing the strongest one.
+Separate possible conclusions: one improved candidate, no improving change in a specified neighborhood, a point meeting a residual tolerance, a global optimum, or a sequence converging under stated conditions. Select the conclusion the work needs now.
 
 When the iteration serves a model or learner, retain its target through C.29.2 and the relevant modeling or learning method. Optimization error, error in the subject model and performance on later cases are different questions.
 
@@ -87,11 +87,11 @@ Choose a useful decrease threshold tau >= 0 before inspecting the comparison. Ac
 
 Repeated adaptation needs error control across comparisons as well as within each comparison. Number proposed comparisons j=1,2,..., assign failure budgets `delta_j=delta/(j*(j+1))`, and let CMP.9 construct a simultaneous interval using delta_j for each. Choose that comparison's candidates from the earlier history, then collect fresh observations satisfying its stated law conditional on that history. The conditional failure bound is at most delta_j; summing these bounds gives probability at least `1-delta` that all comparisons used in the adaptive sequence are covered. Reusing observations to select the proposal and then treating them as fresh comparison evidence needs a different valid argument.
 
-On this joint event, every accepted move decreases the same J. A finite candidate set cannot revisit a candidate through such moves. This does not guarantee that each noisy comparison resolves in finite time, especially at equality. A tau-local conclusion additionally needs every neighbor's comparison to rule out a decrease greater than tau at the returned candidate, or a bound covering the remaining neighbors. Without that coverage, return an improved candidate and the actual unresolved alternatives. A changed objective, admissible set or feedback law reopens the affected comparisons.
+On this joint event, every accepted move decreases the same J. A finite candidate set cannot revisit a candidate through such moves. This does not guarantee that each noisy comparison resolves in finite time, especially at equality. A tau-local conclusion additionally needs every neighbor's comparison to rule out a decrease greater than tau at the returned candidate, or a bound covering the remaining neighbors. Without that coverage, return an improved candidate and the unresolved alternatives. A changed objective, admissible set or feedback law reopens the affected comparisons.
 
 ##### CMP.6:4.3.2 - Construct progress from a noisy direction
 
-When checking each move costs too much, a stochastic update can trade that per-move claim for an expected result. Derive the trade-off from the information actually supplied. Consider an unconstrained differentiable J with the upper model above and a lower bound `J_low`. Let H_t denote all information available before drawing feedback at iteration t, including x_t. Suppose an obtainable gradient estimate g_t satisfies
+When checking each move costs too much, a stochastic update can trade that per-move claim for an expected result. Derive the trade-off from the information supplied. Consider an unconstrained differentiable J with the upper model above and a lower bound `J_low`. Let H_t denote all information available before drawing feedback at iteration t, including x_t. Suppose an obtainable gradient estimate g_t satisfies
 
 `E[g_t | H_t]=grad J(x_t)` and `E[||g_t-grad J(x_t)||^2 | H_t] <= v`.
 
@@ -103,7 +103,7 @@ Choose a fixed step `0<eta<=1/L` and compute `x_(t+1)=x_t-eta*g_t`. Substituting
 
 `<= J(x_t) - (eta/2)*||grad J(x_t)||^2 + (L*eta^2/2)*v`.
 
-Here `E[||g_t||^2 | H_t] <= ||grad J(x_t)||^2+v`; the zero conditional mean of the error removes its cross term. Thus noise adds a cost to the deterministic decrease, rather than merely changing its wording. A realized update can increase J, and the displayed bound need not certify expected decrease close to a stationary point.
+Here `E[||g_t||^2 | H_t] <= ||grad J(x_t)||^2+v`; the zero conditional mean of the error removes its cross term. The term involving v allows for noise in the descent estimate. A realized update can increase J, and the displayed bound need not certify expected decrease close to a stationary point.
 
 For T such updates, sum the inequalities and use the lower bound. With a known `D >= J(x_0)-J_low`, the result is
 
@@ -121,7 +121,7 @@ Select a progress argument appropriate to the state space and update:
 
 | Available structure | What can be established | What remains to be supplied |
 | --- | --- | --- |
-| A finite candidate set and strict improvement at every accepted change | No candidate repeats; the procedure reaches a state with no accepted improving change. | A feasible way to find or rule out such changes, and a useful bound on the amount of work. |
+| A finite candidate set and strict improvement at every accepted change | Accepted changes cannot revisit a candidate, so only finitely many can occur. | A terminating way to find or rule out the next improving change, and a useful bound on the search cost. |
 | A decreasing nonnegative integer potential | At most its initial value many decreases of at least one. | The potential's encoded magnitude can be large, and one iteration may be expensive. |
 | A contraction or another quantitative convergence relation | A finite error bound after a chosen number of updates. | A way to compute the required update and connect that error to the requested result. |
 | A descent estimate with a bounded-below objective | Bounds on accumulated improvement and, under appropriate assumptions, stationarity measures. | Convergence to one point or global optimality requires its own additional conditions. |
@@ -163,7 +163,7 @@ For a four-cycle with unit weights, start with all vertices in one group. Flippi
 
 Minimize `J(x)=(x-3)²` over real x. Its derivative is `2(x-3)`. The update `x'=x-2η(x-3)` multiplies the error `x-3` by `1-2η`. Thus `0<η<1` contracts its magnitude; with `η=1`, the error oscillates without decreasing.
 
-Choose `η=1/4`. From `x=0`, the iterates are `1.5, 2.25, 2.625, ...`; the objective values are `9/4, 9/16, 9/64, ...`. After k steps from the initial point, the distance to 3 is `3/2^k`. A requested distance at most epsilon therefore has a directly computable iteration bound. This example establishes the update through its algebra rather than through a generic instruction to repeat until the values seem stable.
+Choose `η=1/4`. From `x=0`, the iterates are `1.5, 2.25, 2.625, ...`; the objective values are `9/4, 9/16, 9/64, ...`. After k steps from the initial point, the distance to 3 is `3/2^k`. A requested distance at most epsilon therefore has a directly computable iteration bound.
 
 **Changed constraint:** require `0≤x≤1`. Projection of the same proposed first step onto this interval gives `x=1`. Further projected steps remain at 1. The derivative there is -4, so a full-gradient-zero stopping test would never recognize the constrained optimum. Every feasible point in the interval has `J(x)≥4=J(1)`, establishing the result. The changed feasible set requires a changed stopping argument, even though a related update can still be used.
 
@@ -187,7 +187,7 @@ The comparison route supports a different receiving choice. Suppose a current ca
 
 ### CMP.6:6 - Bias-Annotation
 
-A familiar update formula can displace the question of which local information is actually available. A gradient-based method, for example, needs a computable gradient or a justified estimate; a symbolic derivative on paper can still leave costly evaluation.
+A familiar update formula can displace the question of which local information is available. A gradient-based method, for example, needs a computable gradient or a justified estimate; a symbolic derivative on paper can still leave costly evaluation.
 
 Visible improvement can also be mistaken for sufficient progress. Retain the relation between the improved criterion and the requested result, including the distinction between a finite-state termination argument and an affordable run.
 
@@ -215,13 +215,13 @@ Visible improvement can also be mistaken for sufficient progress. Retain the rel
 
 The designer obtains a rule that makes a next computational change from available information and can explain what repeated use achieves. The method connects discrete improvement, continuous optimization and feedback-driven updates through their progress arguments without identifying their different guarantees.
 
-It can also reveal that the available local information is insufficient. A new neighborhood, stronger model, additional observation or different algorithm may be required. The explicit failure locus makes that revision smaller than replacing the entire computational formulation.
+It can also reveal that the available local information is insufficient. A new neighborhood, stronger model, additional observation or different algorithm may be required. Locating the failure can show which part of the formulation needs revision.
 
 ### CMP.6:10 - Architectural Rationale
 
 Update construction, finite-step control and stopping belong together because each changes what the algorithm can return. MATH.10 derives conditions from variations and MATH.21 constructs objects through convergence. CMP.6 supplies the effective rule, its repeated execution and the finite answer required from it.
 
-CMP.5 can furnish a bound or an easier update subproblem; CMP.4 explores alternative candidates. CMP.7 can use the update to construct a learner, while keeping optimization progress distinct from performance on further cases. These are complementary algorithmic methods.
+CMP.5 can furnish a bound or an easier update subproblem; CMP.4 explores alternative candidates. CMP.7 can use the update to construct a learner, while keeping optimization progress distinct from performance on further cases.
 
 ### CMP.6:11 - SoTA-Echoing
 

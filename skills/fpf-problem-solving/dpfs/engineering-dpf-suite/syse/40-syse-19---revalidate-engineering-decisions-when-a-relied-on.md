@@ -4,30 +4,30 @@
 
 ### SYSE.19:0 - Use This When
 
-Use this pattern when an engineering decision relied on a claim in a model, requirement, standard,
-MethodDescription, supplier specification, research result, or another engineering source, and a later edition or
-replacement may change that claim. The project needs to know which decisions remain usable and which need new Work.
+Use this pattern when a later edition or replacement may change an engineering source claim—for example, one in
+a model, requirement, standard, MethodDescription, supplier specification or research result—and the project needs to find which
+decisions depend on it. Determine which uses remain supported, which need further Work, and which must be limited or stopped.
 
-Begin with the predecessor and later source epistemes. Compare the claims that can change engineering action, then
-recover decisions and Work results whose stated reasoning depends on those claims. Revalidate only the affected
-use; a new file or edition label is only a cue to inspect.
+Begin with the predecessor and later source epistemes. Compare their claims and applicability for the engineering use.
+Trace material differences to the decisions and Work results that rely on them, including implicit premises. Revalidate an affected use when needed. A
+new file or edition label is a reason to inspect the source.
 
 The first useful result is a **bounded source-change impact decision**: the engineering use supported by the current
-basis, with the limitation or blocker that matters to its receiver. A compatible carrier change can finish with a
+basis, with any limitation or blocker that matters to its receiver. A compatible carrier change can finish with a
 repaired reference. For a material claim change, preserve, narrow, reopen or withdraw only the affected use. New
 revalidation Work is selected when the receiving question warrants it. Identify any later performed Work, returned
 evidence and replacement engineering decision separately.
 
-Use `SYSE.14` when the engineered System or its release is changing, and `SYSE.13` when configuration identity and
-effectivity are the main question. Use `SYSE.7` to maintain several descriptions used by one decision and `SYSE.10`
-to qualify new model, experiment, or trial evidence. Use FPF `E.15` when an FPF pattern edition itself changes.
+Use `SYSE.14` for an engineering release decision and `SYSE.13` when configuration identity or effectivity is the question. Use `SYSE.7`
+to coordinate descriptions needed by one decision and to maintain their connections while the work continues to rely on them. Use `SYSE.10`
+to qualify relevant model, experiment or trial evidence. Use FPF `E.15` when the edition being revised is an FPF pattern.
 
-The intended reader can interpret the project's engineering claims and obtain the relevant specialist's
-calculation, calibration or test Method. This pattern teaches how to find the broken reasoning, construct a
-proportionate revalidation and carry its result into the affected engineering decision. It does not teach a
-particular laboratory technique or confer release authority. If the source change is the starting point and
-the receiving decisions are unknown, use `A.10.1:4.3–A.10.1:4.4` to discover them; do not invent a known receiver merely
-to enter the outline below.
+This method assumes the engineering claims can be interpreted and a suitable specialist calculation,
+calibration or test Method obtained when needed. Compare the reasoning before and after the source change.
+If an inference has lost support, work out what would restore it for the receiving decision
+and obtain the result when warranted. A laboratory technique needs its own professional basis; release requires the applicable authority. If the relying
+decisions are unknown, use `A.10.1:4.3–A.10.1:4.4` to discover them.
+
 
 #### SYSE.19:0.1 - Terms and Distinctions
 
@@ -41,7 +41,7 @@ to enter the outline below.
 | direct reliance | A named engineering decision or Work result whose justification or content depends on a source claim as a premise under stated conditions. A citation or link is discovery evidence until the receiving content confirms that dependence. |
 | affected reach | The set of decisions reached through direct-reliance relations whose engineering action can change because of the material claim change. |
 | revalidation Work | Work that rechecks an affected claim or decision under the current configuration, conditions, Method, evidence needs, and authority. |
-| decision disposition | One choice from the closed set used here: `preserve`, `narrow`, `reopen`, `supersede`, `withdraw reliance`, or `blocked`. |
+| decision disposition | For this decision, select one of `preserve`, `narrow`, `reopen`, `supersede`, `withdraw reliance` or `blocked`. |
 
 The source episteme, its publication, the claim-change observation, planned revalidation, performed Work, returned
 evidence, and engineering decision have separate identities. An Agent performs revalidation Work. Equipment,
@@ -55,7 +55,7 @@ an evidence line. The engineered System may stay unchanged while the warranted d
 a new carrier or revision label may leave every relied-on claim intact.
 
 The project needs two kinds of continuity. Historical source and decision identities stay recoverable so earlier
-Work can be understood. Current decisions reopen only where a relied-on premise changed. Repeating everything is
+Work can be understood. A change to the source calls for reconsideration only where it changes a premise on which the decision relies. Repeating everything is
 expensive and hides the reason for change; comparing only files can miss a one-sentence change that alters release.
 
 A source-change impact decision connects changed claims to their actual use in engineering Work and states what
@@ -79,9 +79,9 @@ Recurring tensions include:
 - Revalidation should stay bounded, while an undeclared reliance can matter more than a declared trace link.
 - Source identity must remain recoverable without turning every carrier change into a semantic event.
 - One changed sentence can alter release; a large rewrite can leave the relied-on premise intact.
-- Automated search can find candidate uses, while materiality and applicability still need engineering judgement.
+- Automated search can find candidate uses. Engineering judgement determines whether the changed claim matters to them and where it applies.
 - A newer official or popular source can fit the use worse than an older bounded source.
-- Preserved decisions remain usable only when the reason for preservation is recoverable when later Work needs it.
+- Preserve the reason for retaining a decision so that it can be recovered when later Work needs it.
 
 ### SYSE.19:4 - Solution
 
@@ -90,38 +90,38 @@ whether the affected engineering decisions remain usable.
 
 #### SYSE.19:4.1 - Perform the Move
 
-1. **Name the receiving decision.** State the engineering decision at risk, any relied-on Work result, the current
-   configuration and use, the relevant interval, and the action that could change.
+1. **Start from the decision or the changed source.** If a receiving decision is known, state it, any Work result it relied on, the configuration, use and interval, and what action or warranted conclusion might change. If the
+   source change is the starting point, compare the editions or replacement in steps 2–3. Trace material claim changes to their uses in steps 4–5.
 2. **Identify the source epistemes.** Recover the predecessor and later claim-bearing epistemes, their applicability,
    provenance, and publication or carrier facts when those facts matter. Establish an edition relation only when
    its predicate obtains; otherwise treat the later source as a replacement candidate or record an identity gap.
 3. **Compare claims rather than files.** State every material change in claim content or applicability—for
    example, proposition, scope, assumptions, limits, evidence status, or MethodDescription content. Classify the
-   remaining differences as publication or carrier changes. When relevant meaning, applicability and access remain
+   publication and carrier differences separately from changes to claim content. When relevant meaning, applicability and access remain
    compatible, finish with any needed reference repair. Missing comparison facts remain a scoped gap.
 4. **Recover direct reliance.** For each material claim, inspect candidate receiving content found by means such
    as search, citations, traces, or AI assistance. State the decision or Work result and the direct premise or
    evidence-use relation that connects it to the claim.
-5. **Bound the affected reach.** Distinguish `depends`, `mentions only` and `unresolved` within the searched frame.
-   Group equivalent irrelevant mentions; retain a short exclusion reason in the existing result when its receiver
-   needs it. Follow a `depends` branch only while a downstream engineering action can still change. Use `A.10.1`
-   when several receiving uses still need discovery; retain the search coverage needed for the stated conclusion.
+5. **Bound the affected reach.** Distinguish `depends`, `mentions only` and `unresolved` within the searched frame. Group
+   equivalent irrelevant mentions; retain a short exclusion reason when the receiver needs it. Follow a dependency while
+   the changed premise could alter a downstream conclusion, its qualification or the engineering action it supports.
+   Use `A.10.1` when several receiving uses need discovery and retain the coverage needed for the stated conclusion.
 6. **Choose any needed revalidation Work.** Use adequate existing evidence first. A scoped limitation or blocked
    use can be the completed answer. Select further Work under `C.11.DUA` when its obtainable contribution warrants
    the complete programme burden within the receiving window. For selected Work, name the Agent, Method,
    configuration, conditions, evidence need, authority, cost and stop. Cost does not make an unsupported use safe
    or supply missing permission.
-7. **Perform and qualify selected Work.** Identify actual performed Work and returned evidence separately. State
+7. **Perform and qualify selected Work.** Identify performed Work and returned evidence separately. State
    what the result supports for the current configuration and what remains unknown.
-8. **Decide separately for each affected engineering decision.** Assign one decision disposition from the closed set in section 0.1 and
-   state its reason, evidence and applicable interval. Name next Work only when selected for this receiving use.
-   The deciding Agent uses a passing check as a premise under the authority required for that decision.
-9. **Supply the result and preserve history.** Give the Agent making the relevant engineering change or release
-   decision the supported use, relevant revalidation evidence and material blockers. This direct return can finish
-   the question. A further common account is needed only for a receiver who needs that overview. Keep earlier
+8. **Decide separately for each affected engineering decision.** Assign one disposition from section 0.1 and state its reason, evidence
+   and applicable interval. Name next Work only when selected for this use. If a check result bears on the
+   decision, the authorized Agent uses it as a premise, including when it defeats the proposed use.
+9. **Supply the result and preserve history.** Give the recipient that will use the conclusion the supported use, relevant
+   revalidation evidence and any material blockers. For a change or release decision, supply the Agent authorized to make
+   it. That return can complete the question. Prepare a common account when a receiver needs an overview, and keep earlier
    source editions and decisions recoverable for their original uses and intervals.
 10. **Stop at the completed receiving answer.** Finish a compatible reference repair directly. For material change,
-    return the qualified in-scope decisions or exact blockers and preserve independently resolved branches. A
+    return the qualified in-scope decisions or the specific blockers and preserve independently resolved branches. A
     no-impact claim requires adequate discovery coverage and actual-use support; uninspected or inaccessible
     surfaces remain gaps.
 
@@ -142,14 +142,14 @@ observed behaviour on a specimen without supporting every produced unit or futur
 Distinguish a requirement about what must hold from a claim that it holds and from the evidence offered for
 that claim. An old approval establishes who decided; it does not repair an invalid engineering premise.
 
-The deciding engineer needs this account to recognize the first broken connection. If the original reason
-cannot be recovered, identify the relevant design or assurance owner and the question to reconstruct. The
-missing reason limits continued reliance; it does not establish that the physical system has failed.
-Use `SYSE.10:4` for the model, specimen, measurement and inference qualifications needed by this account.
+The deciding engineer can use this account to see whether a connection holds or where it fails. If the original reason
+cannot be recovered, identify the person or function responsible for the design or assurance claim and the
+question that needs reconstruction. The missing reason limits reliance; it does not establish a physical failure.
+Use `SYSE.10:4` for the model, specimen, measurement and inference qualifications needed by the account.
 
 ##### SYSE.19:4.1.2 - Substitute the changed premise before ordering new work
 
-Read the actual old and new claims with their applicability conditions. Temporarily substitute the later
+Read the old and new claims with their applicability conditions. Temporarily substitute the later
 claim into the recovered reasoning, retaining other premises only where still justified. Ask what the
 engineer can now conclude and do differently. This is a test of the argument, not a claim that the new source
 caused the physical system to change.
@@ -161,7 +161,7 @@ Several changes call for different responses:
 - A reduced validity range can remove support for one operating condition while preserving another. Outside
   the supported range, the old inference is unavailable; failure of the system is not thereby observed.
 - A withdrawn experiment or disputed model assumption can weaken the evidence without providing an opposite
-  numerical answer. Look for genuinely independent support and inspect whether it shares the disputed basis.
+  numerical answer. Look for independent support and check whether it shares the disputed basis.
 - A changed requirement can make an unchanged measured result insufficient. Establish that requirement's
   applicable version and effective conditions; a test cannot authorize a different requirement.
 - A new description of a calibration or test Method can change how further evidence must be obtained without
@@ -170,7 +170,7 @@ Several changes call for different responses:
 The later source may be less applicable, disputed, or effective only for future products. Explain that
 difference before replacing a current basis. Conversely, an erratum can undermine a premise used in past
 decisions. Preserve the historical source and decision as history while reconsidering any historical claim
-that actually depended on the error. Preservation is not a verdict that the earlier conclusion was correct.
+that depended on the error. Preservation is not a verdict that the earlier conclusion was correct.
 
 ##### SYSE.19:4.1.3 - Find the engineering consequences and the boundary of propagation
 
@@ -227,18 +227,18 @@ First compare what the present evidence already permits with what the project ne
 range can answer the question only if its receiving use remains worthwhile and its conditions can be met.
 A proposed restriction that no operator or control can enforce is not an available continuation.
 
-For additional work, recover the people, capability, equipment, specimens, access and authority that make
+For additional work, identify the performers, capability, equipment, specimens, access and authority that make
 the proposed result obtainable. Include preparation, coordination, execution, interpretation, delivery and
 displaced work in the burden. Check joint use of a laboratory or specialist across the selected activities;
 individually timely estimates do not establish a timely programme. Select work when an attainable outcome can
 change the decision or meet a necessary evidence condition within the relevant horizon. Keep a delay or stop
 when no available option supports the required use. Cost cannot turn a missing premise into evidence.
 
-Give each performer the precise receiving claim and the contribution required from that work. Before relying
-on the return, establish the actual configuration, Method, conditions, observations and limitations. The
-performed work can differ from its plan: a changed instrument, specimen or procedure may reopen only the
-inferences that depended on it. `SYSE.10` qualifies the returned evidence; its result does not itself issue the
-engineering decision or permission to release.
+Give each performer the claim, configuration and conditions needing support, and the contribution expected from that work. Before
+relying on the return, establish what Method, configuration and conditions were actually used and what the
+observations and limits were. A changed instrument, specimen or procedure may reopen only the inferences that
+depended on it. Use `SYSE.10` to qualify the evidence. The authorized Agent makes the engineering decision and any
+required release permission has its own basis.
 
 ##### SYSE.19:4.1.6 - Resolve each decision and carry the result into use
 
@@ -254,9 +254,9 @@ including the joint conditions in section 4.1.3. Use the dispositions in section
 | `withdraw reliance` | The old basis is no longer to be used for this claim; identify any separately supported continuation. |
 | `blocked` | A named missing fact, capability, access or authority prevents deciding the affected use. |
 
-These are local decision summaries. They do not replace `A.10`'s evidence-use judgement or confer authority.
-Keep an unchanged physical observation, a revised interpretation and a replacement decision distinguishable.
-Evidence against one claim need not invalidate every use of the observation.
+These dispositions summarize the affected local decision. Establish evidence use through `A.10` and the authority for the
+engineering decision separately. Keep an unchanged physical observation, a revised interpretation and a replacement decision
+distinguishable. A limit on one engineering use can leave another supported.
 
 Return the sufficient result to the engineer or Agent who must act on it. When continuing work relies on a
 restriction, establish how the relevant user receives and applies it; storing a revised report alone does not
@@ -264,14 +264,14 @@ make the restriction effective. Use `SYSE.13` for the affected configuration/eff
 for a required engineering release decision. Do not demand those later operations when a compatible reference
 repair or direct engineering answer already finishes the question.
 
-Reopen the affected inference when a relied-on source, requirement, configuration, operating condition,
-evidence qualification or available support changes. Retain the other qualified results. Repeating a test
-under the same valid Method, changing that Method and revising its description are different actions; select
-the one that addresses the changed premise.
+When a relied-on source, requirement, configuration, operating condition, evidence qualification or available support
+changes, reconsider the inferences it affects. Retain the other qualified results. When more work is needed,
+select the action that addresses the changed premise: this may mean repeating a test under its valid Method, changing
+the Method, or revising its description.
 
 #### SYSE.19:4.2 - Record the Result
 
-Record only the content needed by the receiving decisions in their existing result. The rows below apply to the branch actually taken; a harmless reference repair needs no revalidation dossier.
+Record only the content needed by the receiving decisions in their existing result. The rows below apply to the branch taken; a harmless reference repair needs no revalidation dossier.
 
 | Result position | Content when needed by this receiving decision |
 | --- | --- |
@@ -279,7 +279,7 @@ Record only the content needed by the receiving decisions in their existing resu
 | source comparison | Predecessor and later or replacement epistemes; material claim changes; publication or carrier changes; source-access and identity gaps. |
 | direct reliance | Every affected decision or Work result, the source claim on which it depends, and the premise or evidence-use relation that establishes the dependence. |
 | affected reach | Actual-use bases and unresolved candidates that affect the conclusion; equivalent irrelevant mentions may share one exclusion reason. Retain discovery coverage and the last action-changing decision. |
-| revalidation | For selected revalidation: planned and actual performed Work, Agent, Method, configuration, conditions, evidence needs, authority, results, cost and stop. |
+| revalidation | For selected revalidation, identify the plan, performer, Method, configuration, conditions, evidence needed, authority, cost and stop. When Work has been performed, identify what was done, under which conditions, and the results returned. |
 | decision dispositions | One disposition from section 0.1 for each affected decision, with reason, evidence and interval; next Work only when selected. |
 | continuation | Material gaps and historical source/decision references; a receiving Agent or reopen condition when the actual continuation needs one. |
 
@@ -292,9 +292,9 @@ Engineers stop using a source version as a proxy for impact. A source update can
 stays unchanged because the warranted decision basis changed. A carrier update can leave engineering decisions
 usable when claim content and applicability remain compatible.
 
-Revalidation produces a bounded decision result: it identifies decisions that remain usable and decisions that
-need new Work. Search and AI-assisted comparison can reduce discovery effort, while an Agent with suitable capability and
-authority judges materiality and applicability.
+The bounded impact decision identifies what remains usable, what must be narrowed, reopened, superseded or withdrawn,
+and where a specific gap prevents a conclusion. It identifies further Work when that work is warranted. Search and AI-assisted comparison can reduce discovery effort; an Agent with
+suitable capability and authority judges materiality and applicability.
 
 ### SYSE.19:5 - Worked Case: A Changed Sensor-Calibration MethodDescription
 
@@ -317,15 +317,15 @@ low-temperature evidence. It does not state that every TS-2 has failed below `-1
 
 Substitution shows why the cold-start conclusion must reopen. The required `-15 °C` lies outside E3's
 ordinary range, so the old `1.2 °C` bound cannot support that use. At `20 °C`, the same bound remains
-applicable. Replacing `-20` with `-10` in a test's acceptance condition would not meet the project's still
+applicable. Replacing `-20` with `-10` in a test's acceptance condition would not meet the project's
 unchanged need to operate at `-15 °C`.
 
-The impact engineer has authority to classify reliance, but not to release controller units. In the named
-controller project, source identifiers and claim addresses lead to the thermal model, cold-start procedure
-and safety argument. A receiver-oriented inspection also checks equivalent temperature/error assumptions in
-the model inputs, unit records, test repository and release basis. The owners confirm that these are the
-current controlled surfaces for this release question; an inaccessible supplier-internal model is outside
-that coverage and supplies no additional assurance.
+The impact engineer can classify reliance; release authority belongs to the release holder. In this controller
+project, source identifiers and claim addresses lead to the thermal model, cold-start procedure and safety
+argument. The engineer also checks equivalent temperature and error assumptions in the model inputs, unit
+records, test repository and release basis. Those responsible for these sources confirm the search covers
+the material controlled for this release question. The inaccessible supplier-internal model falls outside
+that coverage and provides no additional assurance.
 
 The thermal model uses the range to admit a cold-start parameter; the test procedure uses it to justify its
 sensor reading; the safety argument relies on the resulting error bound. All three depend on the changed
@@ -354,14 +354,14 @@ C3's qualified profile supplies the temperature points, settling conditions, ref
 calibration operation and an interval allowance. The engineer obtains that profile and confirms its fit to
 the installed configuration. C3 returns a conservative sensor bound as the largest observed absolute
 residual plus `0.1 °C` reference uncertainty and a justified `0.2 °C` allowance for the covered intervals and
-use period. Those last two premises are supplied by the qualified profile; three attractive measurements
+use period. The qualified profile supplies those last two premises. Three measured residuals
 alone would not establish them.
 
 The whole selected programme comprises one hour to update the model inputs and receiving check, three hours
 for preparation and C3 calibration of `S006`–`S008`, two hours for the configured chamber check, and one hour
 to interpret and return the result: seven hours. These are stipulated complete estimates for the named batch,
 including setup, with on-site units, a reserved chamber, suitable instruments and available qualified people.
-The shared specialist's work is counted in the sequence, not promised concurrently. The project accepts this
+The shared specialist's work is counted in the sequence. The project accepts this
 burden to answer its three-unit cold-use question. There is no basis for claiming all five units calibrated.
 
 The updated model uses the returned bound instead of extrapolating E3's ordinary range. The chamber check
@@ -382,34 +382,34 @@ cold-range model input and test justification for `S006`–`S008`; and preserves
 eligibility on the new basis. `S009` and `S010` still lack the needed calibration evidence, so their cold-use
 release premises remain reopened. The earlier results for `S001`–`S004` remain usable on their different basis.
 
-The impact engineer supplies these precise unit and condition limits to the release holder through `SYSE.14`.
-That holder still decides release. A positive technical return is not an already issued permission. If a
-warm-only restriction is selected for other units, the project must make it effective in the actual assignment
-and operating arrangement, not merely leave it in the impact report.
+The impact engineer supplies these unit and condition limits to the authorized release holder through `SYSE.14`.
+That holder decides release, with any required permission grounded separately. If a warm-only
+restriction is selected for other units, make it effective in their assignments and operating arrangements. Recording
+it in the impact report alone does not make it effective.
 
 #### SYSE.19:5.4 - Change a condition without discarding the valid remainder
 
 Before release, a separate correction raises the other controller-path error bound from `0.4` to `0.7 °C`
 for the same configuration. The sensor observations and C3 qualifications remain valid. Recompute the whole
-bound: `S006` and `S008` reach `1.5 °C`, while `S007` reaches `1.6 °C` and no longer meets the `1.5 °C`
+bound: for `S006` and `S008` it is `1.5 °C`. For `S007` it is `1.6 °C`, which no longer establishes compliance with the `1.5 °C`
 requirement. The needed three-unit batch is therefore not established, even though two unit conclusions
 survive. Recalibrating all sensors would target the wrong changed premise.
 
-The engineer returns the failed third-unit contribution to the project: obtain a supported alternative unit,
-repair the controller contribution and qualify that repair, or change the receiving use through its holder.
-None is assumed available. The two preserved units do not themselves authorize a two-unit deployment when
-the current receiving use still needs three. If the replacement contribution is unavailable in time, that
-whole-use conclusion remains blocked while the valid sensor and two-unit results are retained.
+The engineer reports that the available bound does not qualify a third unit. Possible responses include qualifying the unit with
+adequate existing or new evidence, obtaining a qualified alternative unit, repairing and qualifying the controller contribution,
+or asking the holder to change the receiving use. These options depend on what is available. Evidence for two units does
+not itself authorize a two-unit deployment. If no supported continuation meets the three-unit need or changes that requirement
+in time, the batch remains blocked while the sensor results and the two adequate unit bounds remain usable.
 
 **Carrier-only countercase.** Republishing the same E3 at another URL and with another layout changes no
 relied-on meaning, applicability or access. Repairing the reference completes the question; no revalidation
 dossier or new engineering decision is needed.
 
-**Unlike case: a withdrawn research result.** A design comparison cites two reviews, but both use the same
-experiment that has been withdrawn. Counting the two reviews as independent support does not preserve the
-decision. Recover what other premises still support it and what new observation could distinguish the design
-alternatives. If no qualified model or feasible experiment supplies that observation, return that precise
-gap. The arithmetic and unit-calibration programme above do not constitute a research-replication Method.
+**Unlike case: a withdrawn research result.** A design comparison cites two reviews based on the same withdrawn
+experiment. Counting them as independent support does not preserve the decision. Determine what the
+remaining premises support. If they leave a decision-relevant gap, identify an observation that could distinguish
+the alternatives. Return a specific limitation if neither a qualified model nor a feasible experiment
+can supply it. The controller calibration programme does not provide a research-replication Method.
 
 **World-change boundary.** Replacing an actual TS-2 sensor changes the engineered configuration. Use
 `SYSE.13` and `SYSE.14` for that change, and retain only the evidence applicable to the replacement.
@@ -426,19 +426,19 @@ claim or decision, and authority remains with the Agent who holds it.
 ### SYSE.19:7 - Conformance Checklist
 
 - [ ] The predecessor and later or replacement source epistemes are identified.
-- [ ] Edition continuity is established under `C.2.1` or left unresolved.
+- [ ] The relation between the sources is established for this comparison: apply `C.2.1` when they are editions of the same episteme, identify a replacement when supported, or state the identity gap.
 - [ ] Material claim changes are separated from publication and carrier changes.
 - [ ] Every affected use names the source claim, receiving decision or Work result, and direct-reliance relation.
 - [ ] A searched frame distinguishes dependent, irrelevant and unresolved uses; equivalent irrelevant mentions can
-      be grouped. Actual-use support and coverage justify any no-impact claim. Tracing stops at action-changing closure.
-- [ ] Any selected revalidation Work warrants its complete burden for this receiving use and names its Agent,
-      Method, configuration, conditions, evidence needs, authority, result and stop.
-- [ ] The changed premise is followed through the actual engineering argument; the proposed revalidation can
-      supply the missing contribution, including its range and whole-use conditions.
+      be grouped. Actual-use support and coverage justify any no-impact claim. Stop tracing a branch once the changed premise can no longer affect a receiving conclusion.
+- [ ] Any selected revalidation Work warrants its complete burden for this use. Its plan identifies the performer, Method, configuration, conditions, evidence
+      needed, authority, expected contribution and stop. If Work has been performed, identify the result returned.
+- [ ] Where a material claim change affects an engineering argument, its consequences have been examined in that argument. If revalidation is proposed,
+      the chosen work can supply the required contribution for its range and whole-use conditions.
 - [ ] Surviving observations, revised interpretations and replacement decisions remain distinct; coupled changes
       are considered together when their combined effect can alter the receiving decision.
-- [ ] The decision episteme, performed Work, evidence, permission, assurance, and release decision are grounded
-      separately.
+- [ ] The impact decision has its own grounds. Keep any claims about performed Work, evidence, permission, assurance and a release decision distinct, and identify the grounds for each claim the
+      receiver relies on.
 - [ ] Historical source editions and decisions remain recoverable for their original uses and intervals.
 - [ ] The receiver gets the sufficient branch result and its material limits. A harmless reference repair or direct
       engineering answer closes without a duplicate record; next Work is included only when selected.
@@ -462,9 +462,9 @@ Source refresh becomes proportional. Decisions remain stable when their premises
 material claim can reopen a release even if the engineered System is unchanged. Historical sources and decisions
 remain inspectable, and automated discovery can reduce effort while the deciding Agent retains authority.
 
-The cost is claim-level source identification and maintenance of actual reliance. When source content or
-applicability cannot be obtained, the Agent applying this pattern records a named blocker. Application DPFs may add source controls for
-domains such as regulated products, software supply chains, clinical devices, finance, or contracting.
+The work includes identifying source claims and maintaining the links to engineering decisions and Work results that rely on them. If missing
+source content or applicability prevents a conclusion, identify the blocked use and continue the branches with adequate grounds. Application DPFs may add source
+controls for domains such as regulated products, software supply chains, clinical devices, finance or contracting.
 
 ### SYSE.19:10 - Rationale
 
@@ -476,16 +476,16 @@ Keep revalidation proportionate by following changed claims only as far as they 
 Reopening whole files is too broad, while comparing isolated words cannot establish engineering meaning or reliance. Preserving source editions, actual uses, performed
 checks, and decision dispositions makes the Method replayable with project-local trace sources.
 
-The pattern's central construction is argument repair. A changed source first changes what is warranted;
-the failed inference then determines whether recalculation, reinterpretation, new evidence, a different
-solution or a restricted use can answer the receiving question. This direction avoids repeating expensive
-work whose result could not close the gap. Following the constructed way forward checks that the promised
-contribution is obtainable and actually sufficient for the whole decision.
+Test what the changed source does to the engineering argument. When the conclusion remains supported, identify
+the surviving grounds. When an inference fails, use that failure to determine whether recalculation,
+reinterpretation, new evidence, a different solution or a restricted use will answer the receiving question.
+Follow the proposed way forward to see whether its contribution is obtainable and sufficient for
+the whole decision. This avoids work that cannot close the gap.
 
-`A.10.1` already provides claim comparison, two-way discovery and bounded affected reach. Use it directly for
-that general question. The additional engineering work here is to recover the decision's model or assurance
-argument, derive a configuration-specific revalidation from its failed premise, and connect the qualified
-return to the engineering use and release holder. The sensor case first changes the action at that derivation:
+`A.10.1` supplies claim comparison, two-way discovery and bounded affected reach. Use it directly for that question.
+For an engineering decision, recover the model or assurance argument and determine what the changed premise supports
+for its configuration. If an inference fails, derive the revalidation that could restore it and return the qualified
+result to its engineering use, including to the release holder when that decision is at issue. In the sensor case,
 finding a cold-start dependency alone neither supplies a cold-range bound nor chooses C3.
 
 `SYSE.10:4.1.1` supplies the substantive inference and combination method: work backward from the claim,
@@ -503,7 +503,7 @@ judgement. For a small compatible source change, the direct reference repair rem
 
 The numerical case uses an available, qualified calibration profile. Where the required experiment, model
 or operating restriction cannot be supplied, this method exposes the gap and its consequence. It promises a
-warranted continuation, which may be a stop; it does not guarantee that every desired use can be recovered.
+warranted continuation, which may be a stop; some desired uses may remain unsupported.
 
 ### SYSE.19:11 - SoTA and Source Use
 
@@ -519,16 +519,16 @@ When a relied-on source changes, identify which claims, MethodDescriptions, deci
 | [Kosenkov et al. 2025](https://doi.org/10.1016/j.infsof.2024.107622) | Regulatory-compliance research connects legal interpretation, engineering descriptions, evidence, and change Work. | The mapping study supplies candidate relations; the applicable legal interpretation and permission need their own authority. |
 | [Bantwal and Fatahi Valilai 2026](https://doi.org/10.1007/s00170-025-17175-2) | A brake-caliper case exposes change propagation across physical parts, descriptions, supply constraints, engineering tools, and validation. | Use its links as candidate affected reach; inspect actual reliance before reopening a decision. |
 
-Currentness claims carry an epistemic status. Signals such as academic attention, institutional promotion, a
-supplier's `latest` label, or public reporting are evidence about communication. Use direct observations or
-qualified expert estimates for enacted engineering practice, prevalence, and effectiveness.
+When a source, Method or practice is described as current, state the grounds and what kind of claim they support. Academic attention, institutional
+promotion, a supplier's `latest` label and public reporting indicate communication or publication status. Distinguish direct observations from
+qualified expert estimates when making claims about enacted engineering practice, its prevalence or its effectiveness.
 
 For a developed engineering-change comparison, Bantwal and Fatahi Valilai (§§3–4) connect incoming constraints,
 propagation analysis, design alternatives and validation. This pattern retains that need to follow the result
 through the whole use; it specializes the earlier question of which source-dependent inference needs repair.
 The paper's part-dependency weights do not establish how strongly an epistemic claim supports a decision.
 
-[Etezadi et al., ProReFiCIA, 2026 revision](https://arxiv.org/html/2511.00262v6) (§§3, 4.7–4.9) combines
+The [2026 ProReFiCIA revision by Etezadi et al.](https://arxiv.org/html/2511.00262v6) (§§3, 4.7–4.9) combines
 LLM discovery with reconsideration of unselected requirements and filtering. It offers a concrete scalable
 discovery alternative to a single similarity search. Its evaluated filtering still loses relevant items.
 Use its candidate output with the actual-use and coverage judgement above; a low-ranked or unreturned item
@@ -549,8 +549,8 @@ performance do not alone establish that change.
 - A compatible `SYSE.7` result can supply a MethodDescription or representation use for the named claim. A
   compatible `SYSE.10` result can supply evidence for the same engineering claim, configuration, decision, and
   evidence interval.
-- `SYSE.19` supplies source-change feedback to `SYSE.14`; the authorized Agent in `SYSE.14` still chooses and
-  releases any world-side engineering change.
+- `SYSE.19` supplies the source-change judgement to `SYSE.14` when a release decision depends on it. The Agent with release authority decides whether, and for
+  which use and conditions, to release or withhold the change.
 - `SYSE.13` and `SYSE.14` govern configuration and world-side engineering change. An episteme edition relation is
   used only as source-change input.
 - Application profiles may specialize this Method for domains such as software supply chains, electrical parts,

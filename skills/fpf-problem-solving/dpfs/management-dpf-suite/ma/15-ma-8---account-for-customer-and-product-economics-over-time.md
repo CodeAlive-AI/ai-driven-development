@@ -62,11 +62,11 @@ Use an appropriate supplied forecast through MA.5 when behavior needs estimation
 
 #### MA.8:4.4 - Establish the continuation and scale assumptions
 
-Use a model appropriate to the actual relationship. A subscription can provide an observable renewal or termination event. A customer who makes no purchase this month may merely be between purchases; treat their future activity with an adequate model for that setting.
+Use a model appropriate to the customer relationship. A subscription can provide an observable renewal or termination event. A customer who makes no purchase this month may merely be between purchases; treat their future activity with an adequate model for that setting.
 
 Inspect whether behavior changes with tenure, cohort, channel or proposed scale. A constant rate can be a supplied scenario assumption; an aggregate historical rate does not establish that it applies to every customer or future period.
 
-Check how scale changes acquisition and resource supply. A larger audience may cost more to reach, while a new server, service team or warranty obligation can change the cost pattern. Neither falling unit cost nor rising acquisition cost is a universal law.
+Check how scale changes acquisition and resource supply. A larger audience may cost more to reach, while a new server, service team or warranty obligation can change the cost pattern.
 
 #### MA.8:4.5 - Compare the whole account and the future change
 
@@ -76,7 +76,7 @@ Test the plausible changes that could alter the decision: retention, service int
 
 For a continuation or expansion choice, establish the future baseline without the proposed action, including obligations already created. Construct the alternative with its changed quantities, supply and obligations at the same dates. Subtract the baseline from the alternative to obtain the future difference. Historical development, acquisition or production can explain cumulative recovery without becoming an avoidable payment. An obligation common to both futures cancels from their difference but remains in each whole cash account.
 
-Supply the qualified future differences to OPS.14 or the responsible financial practice. Use the whole dated cash account for liquidity, including unchanged obligations and other receipts. Discounting, taxes, risk and financing require the applicable financial method; an undiscounted operating total does not decide those questions.
+Supply the qualified future differences to OPS.14 or the responsible financial practice. Use the whole dated cash account for liquidity, including unchanged obligations and other receipts. Discounting, taxes, risk and financing require the applicable financial method.
 
 If the whole product or customer account fails a required economic condition and a suitable alternative is not yet known, use MA.10 to construct one with the responsible design practices. This can change the offer, population, service model or provision rather than merely improve a cost number. Rebuild the affected time and obligation account here. If an adequate alternative is already supplied, this account construction and the receiving comparison can suffice.
 
@@ -84,7 +84,7 @@ If the whole product or customer account fails a required economic condition and
 
 #### MA.8:5.1 - Keep acquisition and cohort continuation distinct
 
-A constructed subscription cohort acquires 100 customers at 20 each, paid initially: **2,000**. The scenario assumes 80% renewal into each next month, and 10 of receipt less relevant service payments per active customer per month. Its three-month account is:
+Suppose a business pays **2,000** at the outset to acquire a cohort of 100 subscribers at 20 each. The scenario assumes 80% renewal into each next month, and 10 of receipt less relevant service payments per active customer per month. Its three-month account is:
 
 | Month | Active customers under the scenario | Period net service flow |
 | --- | ---: | ---: |
@@ -92,7 +92,7 @@ A constructed subscription cohort acquires 100 customers at 20 each, paid initia
 | 2 | 80 | **800** |
 | 3 | 64 | **640** |
 
-The three-month service total is **2,440**, leaving **440 after acquisition spending** on this undiscounted basis. These are conditional flows, with no other changing flows under the supplied scenario. This account omits flows after month 3.
+The three-month service total is **2,440**, leaving **440 after acquisition spending** on this undiscounted basis. The scenario assumes no other changing flows in those three months.
 
 Before month 2, the original acquisition payment is already spent. Count the original 2,000 once in the cumulative account. Compare continuation with stopping using the future flows that change and the applicable obligations.
 
@@ -118,7 +118,7 @@ Now stand at the end of year 1. The development and production payments, and the
 
 The additional option changes the future account by **1,800 − 960 − 240 = 600**. Without it, the remaining old obligations produce net future flow of −600; with it, total future flow over years 2–3 is zero. The favorable **difference** does not erase either obligation. Nor does it settle liquidity: production is paid before the new receipts, so the whole account by payment date is needed.
 
-An alternative design requires another 300 before that production and reduces the new service payment from 240 to 120 in year 3. Against the original additional-sales option, it changes this limited undiscounted account by **−300 + (240 − 120) = −180**. Any further claim for quality, revenue or risk reduction needs its own supported consequence. A lower later service cost alone does not make the whole alternative better.
+An alternative design requires another 300 before that production and reduces the new service payment from 240 to 120 in year 3. Against the original additional-sales option, it changes this limited undiscounted account by **−300 + (240 − 120) = −180**. Any further claim for quality, revenue or risk reduction needs its own supported consequence.
 
 Changing the payment date returns to the timed account. Changing an obligation returns to FDM; changing the required work or capacity returns to MA.1–MA.2 and the operating decision. The historical account remains useful for understanding the product's full result while the current comparison uses what the choice can still change.
 
@@ -126,11 +126,11 @@ Changing the payment date returns to the timed account. Changing an obligation r
 
 Successful early cohorts can bias an expansion forecast. Acquisition channel, customer mix and capacity may change as the service grows.
 
-A short account can understate later value or cost. Extending the horizon without supported continuation assumptions can instead overstate what is known. Name the actual horizon and decision use.
+A short account can understate later value or cost. Extending the horizon without supported continuation assumptions can instead overstate what is known. State the horizon and what the account is meant to explain or help decide.
 
 ### MA.8:7 - Conformance Checklist
 
-Examine whether the unit, cohort and decision time are clear; the horizon and account basis are explicit; cohort ages align to calendar periods; acquisition, product phases and later obligations have adequate meanings and timing; continuation and scale assumptions are warranted or qualified; and historical spending is distinguishable from future changes.
+Check the unit, cohort, decision time, horizon and accounting basis. Align each cohort’s age to calendar periods. Identify the resource and monetary flows from acquisition, each product phase and later obligations, and when those flows occur. Check the grounds or limits of assumptions about continuation and scale, and distinguish historical spending from the future flows the choice can change.
 
 A conditional account supports the stated scenario. Actual retention, causal marketing effects and financial valuation require their corresponding evidence and methods.
 
@@ -156,7 +156,7 @@ Longer horizons increase dependence on behavioral and resource assumptions. A qu
 
 The method organizes flows around the population and time of the decision because acquisition and continuation do not concern identical future consequences. Resource modeling reveals when serving more customers changes capacity needs and payments.
 
-A simple cohort table is adequate for a bounded scenario. A richer purchasing, retention or product-life model is justified when its distinctions can change the use and can be supported. The account supplies financial inputs without replacing valuation or financing methods.
+A simple cohort table is adequate for a bounded scenario. A richer purchasing, retention or product-life model is justified when its distinctions can change the use and can be supported. Use the account as an input to valuation or financing when the decision calls for it.
 
 ### MA.8:11 - SoTA-Echoing
 

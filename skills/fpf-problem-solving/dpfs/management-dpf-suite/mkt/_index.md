@@ -8,7 +8,7 @@ Original framework content © Anatoly Levenchuk, licensed under [CC BY 4.0](http
 
 # Table of Contents
 
-Search by the working question or required result. MKT identifiers are stable pattern addresses; the section position gives reading placement. Dependencies identify conditional contributions, not a compulsory sequence.
+Search by the working question or required result. Use the MKT identifier to cite a pattern and its position to find it in this edition. Follow a dependency when its contribution is needed.
 
 ## Public units
 
@@ -47,9 +47,9 @@ Search by the working question or required result. MKT identifiers are stable pa
 | 7 | [MKT.7 - Continue, Restore or End a Customer Relationship](22-mkt-7---continue-restore-or-end-a-customer-relationship.md) | Stable | renewal, restoration, ending, obligations; Should this relationship continue and on what terms? | MKT.6/10/11; OPS.6; MA.8; ECO.8 |
 | 8 | [MKT.8 - Construct a Journey Map for a Specific Decision](23-mkt-8---construct-a-journey-map-for-a-specific-decision.md) | Stable | journey map, history, possible route, decision; Which connections in customer activity matter? | MKT.1/5/6/12; MKT.9/11 for change |
 | 9 | [MKT.9 - Select an Offer or Help for a Particular Customer](24-mkt-9---select-an-offer-or-help-for-a-particular-customer.md) | Stable | suitable variant, personalised service, configuration; Is there a fitting offer or must one be constructed? | MKT.1/2/6; SYSE.8; C.32.MWA.PP; MKT.4/11 |
-| 10 | [MKT.10 - Evaluate the Contribution and Cost of a Marketing Intervention](25-mkt-10---evaluate-the-contribution-and-cost-of-a-marketing-i.md) | Stable | intervention, effect, uncertainty, cost; What did the intervention change and what follows economically? | MKT.5/6/12; C.28.CM; MMP.15; MA.8 |
+| 10 | [MKT.10 - Evaluate the Contribution and Cost of a Marketing Intervention](25-mkt-10---evaluate-the-contribution-and-cost-of-a-marketing-i.md) | Stable | intervention, effect, uncertainty, cost; What was paid during the campaign? What additional cost or effect is attributable to it? Should it be repeated? | MKT.5/6/12; C.28.CM; MMP.15; MA.8 |
 | 11 | [MKT.11 - Align Promises, Partners and Execution](26-mkt-11---align-promises-partners-and-execution.md) | Stable | promise, distribution, intermediaries, provision, assignments, feedback; Who will actually make the offering obtainable and supply the promised work? | MKT.2/5/6; SYSE.8; ECO.3/5; OCE.6/11; OPS.6; C.32.MWA.PP |
-| 12 | [MKT.12 - Investigate a Customer or Market Question for a Decision](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) | Stable | research, customer inquiry, JTBD, evidence, useful stop; What must we learn for this decision? | RMP.1; MKT.1/2/4 as receiving uses |
+| 12 | [MKT.12 - Investigate a Customer or Market Question for a Decision](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) | Stable | research, customer inquiry, JTBD, evidence, useful stop; What must we learn to make the decision or support the claim? | RMP.1; MKT.1/2/4 as receiving uses |
 | 13 | [MKT.13 - Test Commercial Model Repeatability and Deployment Limits](28-mkt-13---test-commercial-model-repeatability-and-deployment.md) | Stable | repeatability, search, deployment, capacity, cash; Can ordinary work sustain the proposed scale? | MKT.1/2/10/12; STR.8; MA.8; OCE.11 |
 | 14 | [MKT.14 - Develop and Change a Programme for Selected Customer Organisations](29-mkt-14---develop-and-change-a-programme-for-selected-custome.md) | Stable | B2B, accounts, opportunities, programme, common preparation; Which whole customer programme can we support? | MKT.1/2/3/4/6/7/9/10/11/12/13 as needed; STR.8; MA.8 |
 
@@ -57,28 +57,28 @@ Search by the working question or required result. MKT identifiers are stable pa
 
 ## Practical entries
 
-Bring the question you are actually trying to answer. These entries are selected examples. If none fits, search the Table of Contents or enter a pattern directly. Each body explains its situation, construction, limits, worked cases and source returns. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
+Bring your working question. If none of these examples fits, search the Table of Contents or enter a pattern directly. Each body explains its situation, construction, limits, worked cases and source returns. You can ask an assisting agent: “Explain this and give me your comments in ordinary language, without framework jargon.”
 
 ### MKT-ENTRY-QUESTION - Find out enough to make the next decision
 
 - **Situation:** A team disagrees about why customers decline an offer, and another round of interviews has been proposed.
-- **Question:** What do actual customer attempts reveal, which alternatives does that make worth comparing, and what further answer would change the choice?
-- **First useful result or blocker:** A grounded difficulty and candidate alternatives, a bounded inquiry for an established choice, or an existing qualified answer sufficient to stop investigating.
+- **Question:** What do customers’ attempts reveal, which alternatives are worth comparing, and what answer could change our choice or what we can tell customers about the result?
+- **First useful result or blocker:** An observed or reported difficulty and alternatives worth comparing, a focused inquiry into a decision or claim, or an existing answer that settles the question.
 - **Start with:** [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md); use MKT.1 when relevant customer differences remain unclear.
-- **Stop or return:** Stop when the decision has a sufficient answer. Return a missing permission, unavailable service or disputed objective to its owner.
+- **Stop or return:** Stop when the available answer suffices for the decision or claim. Return a missing permission, unavailable service or disputed objective to its owner.
 
 ### MKT-ENTRY-CHOICE - Make one customer's next choice workable
 
 - **Situation:** A customer understands a suitable offer but cannot tell what accepting it requires.
-- **Question:** Can this person make an informed choice and carry out the agreed next action?
-- **First useful result or blocker:** An understandable, feasible choice with its terms, preparation, help and next step, or the exact condition preventing it.
+- **Question:** Can this customer make an informed choice and carry out the agreed next action?
+- **First useful result or blocker:** An understandable, feasible choice with its terms, preparation, help and next step, or the condition preventing it.
 - **Start with:** [MKT.4](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md); use MKT.9 if suitability of the variant is still unsettled. For work spanning several people and encounters, follow [the account application](34-mkt-application-4---app-mkt-account---carry-a-customer-s-cha.md).
 - **Stop or return:** A justified refusal or deferral can finish the choice. Return an unavailable contribution to MKT.11 before inviting reliance on it.
 
 ### MKT-ENTRY-MEDIA - Keep the promise intact when an intermediary changes it
 
 - **Situation:** A placement combines or generates material, offers incomplete reporting, or cannot be stopped at the level the offer needs.
-- **Question:** Can the permitted expressions and actual controls preserve this offer and its receiving work?
+- **Question:** Can the permitted expressions and controls preserve this offer and its receiving work?
 - **First useful result or blocker:** A supported placement and response arrangement, or the missing control, information or provision that prevents reliance on the proposed arrangement.
 - **Start with:** [The intermediary application](32-mkt-application-2---app-mkt-media---keep-a-supportable-offer.md), using MKT.3 and MKT.11.
 - **Stop or return:** Revise the affected family, route or promise when its conditions fail; preserve existing customer obligations.
@@ -86,7 +86,7 @@ Bring the question you are actually trying to answer. These entries are selected
 ### MKT-ENTRY-DISTRIBUTION - Make the offering obtainable through workable exchanges
 
 - **Situation:** People can discover a suitable offering but cannot obtain it where, when or on the conditions they need; an intermediary is proposed or its contribution has changed.
-- **Question:** Which arrangement connects the final customer's use to actual availability, selling, transfer or access, support and recovery?
+- **Question:** Which arrangement connects the final customer's use to availability, selling, transfer or access, support and recovery?
 - **First useful result or blocker:** A supported route with distinct exchanges and effective contributions, or a supply or exchange condition that prevents reliance on the proposed route.
 - **Start with:** [MKT.11:4.2.1](26-mkt-11---align-promises-partners-and-execution.md#mkt11421---construct-a-distribution-arrangement-when-the-route-is-unsettled), using SYSE.8 and ECO.3/5; return its conditions to MKT.2/3/4 and use MKT.13 for ordinary repetition.
 - **Stop or return:** A settled sufficient route can be reused. A changed intermediary, availability or support condition returns to the affected promise and existing obligations.
@@ -111,7 +111,7 @@ Bring the question you are actually trying to answer. These entries are selected
 
 Use a body when its practical problem is present. MKT.12 can end an inquiry without a new campaign; MKT.4 can support a single choice without a customer programme. Read the Architectural Reference when deciding how several contributions fit. The applications develop five connected uses and return to the separate suppliers of engineering, organisation, operations, learning and community work.
 
-The patterns describe ways of working. A description, a proposed arrangement and work actually performed are different things. Obtain the people, tools, access, time and receiving decisions that the selected way requires. An AI assistant may help recover evidence, compare alternatives and prepare wording; the relevant person or organisation still has to supply any permission, commitment or human contribution on which the result depends.
+The patterns describe ways of working. A proposed arrangement may still need performers, tools, access, time or a receiving decision before the work can take place. An AI assistant can help recover evidence, compare alternatives and draft wording. For any permission, commitment or human contribution the work depends on, establish what its holder has already granted, agreed or supplied. Obtain what is still needed from the responsible party.
 
 ---
 
@@ -133,7 +133,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [MKT.Reference:9 - Architectural Rationale - A repertoire with connected results](09-mkt-reference-9---architectural-rationale---a-repertoire-wit.md) (10 lines)
 - [MKT.Reference:10 - SoTA-Echoing - Preserve distinct answers to distinct questions](10-mkt-reference-10---sota-echoing---preserve-distinct-answers.md) (16 lines)
 - [MKT.Reference:11 - Relations - Obtain the contribution the receiving decision needs](11-mkt-reference-11---relations---obtain-the-contribution-the-r.md) (16 lines)
-- [MKT.Reference:12 - Edition and use](12-mkt-reference-12---edition-and-use.md) (6 lines)
+- [MKT.Reference:12 - Edition and use](12-mkt-reference-12---edition-and-use.md) (10 lines)
 - [MKT.Reference:13 - Direct framework returns](13-mkt-reference-13---direct-framework-returns.md) (19 lines)
 - [MKT.Reference:14 - Refresh the affected use](14-mkt-reference-14---refresh-the-affected-use.md) (8 lines)
 - [MKT.Reference:End](15-mkt-reference-end.md) (2 lines)

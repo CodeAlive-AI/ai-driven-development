@@ -3,17 +3,17 @@
 > **Type:** Method pattern
 > **Status:** Stable
 >
-> **Primary working result:** the **obtaining holder assignments and enabling relations** needed for a bounded organization contribution, together with their predicates, participants, authority, effectivity, evidence, unresolved gaps, and any possible-future specifications that have not yet taken effect.
+> **Primary working result:** a **supported account of the assignments and enabling relations** for a bounded contribution. It identifies what is effective, proposed, missing or uncertain, the relevant participants and conditions, and any change still needed.
 
 ### OCE.6:0 - Use This When
 
 Use this pattern when a contribution architecture or position design names who must contribute, yet the actual holder assignment, authority, responsibility, resource, access, permission, or other enabling relation is unclear or not effective. Enter when a staffing decision, appointment letter, budget, licence, roster, or tool account is being treated as proof that the complete arrangement now obtains.
 
-Begin with a bounded contribution need and candidate holder Systems. Use an `OCE.5` position when the assignment depends on one; otherwise begin from the direct contribution and the exact local system-role kind. Recover the authority under which each change can be made.
+Begin with a bounded contribution need and candidate holder Systems. Use an `OCE.5` position when the assignment depends on one; otherwise begin from the direct contribution and the exact local system-role kind. For a proposed change, establish the authority under which it could be made.
 
-The first useful result can be partial: one effective assignment, its exact species and interval, separately effective enabling relations, and a visible list of pending, contradicted, expired, or missing relations. A truthful blocker is useful when authority or a direct predicate is absent.
+A first result can establish whether one assignment or enabling condition is effective for the contribution and interval at issue. State what the evidence supports and any pending, contradicted, expired or missing condition. Where that condition blocks work, identify the affected use.
 
-Use `A.2.1` directly when the assignment species and occurrence are already known and no OCE coordination changes the result. Use Administration for participant records, provisioning, or service cases; Human Capability Development for developing a holder's capability; Corporate Governance, legal, labor, safety, security, finance, or another specialist practice for their decisions and predicates; and `OCE.9` for organization-capability realization.
+Use `A.2.1` directly when the assignment species and occurrence are already known and no OCE coordination changes the result. Use Administration for participant records, provisioning, or service cases; Human Capability Development when a human holder needs to develop a capability; Corporate Governance, legal, labor, safety, security, finance, or another specialist practice for their decisions and predicates; and `OCE.9` for organization-capability realization.
 
 #### OCE.6:0.1 - Working Distinctions
 
@@ -24,7 +24,7 @@ Use `A.2.1` directly when the assignment species and occurrence are already know
 | assignment decision | A separately governed decision to establish, change, suspend, or end an assignment. It creates an occurrence only when the admitted species predicate gives that decision constitutive effect and every condition is satisfied. |
 | assignment occurrence | One obtaining occurrence of a directly declared species under `U.SystemRoleAssignment`, with holder, exact local system-role kind, every real additional participant, predicate, applicability, and uninterrupted interval recoverable. |
 | position-sensitive assignment | An assignment species whose direct predicate requires an actual `OCE.5` organization position as a participant. The position is included only because it changes predicate or identity. |
-| enabling relation | Readable OCE wording for one separately admitted authority, responsibility, permission, resource-allocation, access, membership, commitment, or other relation needed for the contribution. It is not a new root relation family. |
+| enabling relation | Readable OCE wording for one separately admitted authority, responsibility, permission, resource-allocation, access, membership, commitment, or other relation needed for the contribution. Identify the direct predicate and parties for each needed condition. |
 | capability evidence | Evidence bearing on a qualified ability claim about the holder under `A.2.2`. Assignment, title, position, training, resource, or tool presence does not replace it. |
 | assignment-and-enabling result | The account of direct relation claims returned by this pattern, including effective relations, proposed changes, and unresolved conditions. |
 
@@ -32,7 +32,7 @@ Use `A.2.1` directly when the assignment species and occurrence are already know
 
 Organization change becomes operational when actual Systems hold effective assignments and the other relations needed for their contribution obtain. An appointment can identify a holder and system-role kind, while resource access, decision authority, responsibility, equipment availability, provider commitment, and capability remain separate. Each has its own participants or bearer, governing conditions, basis, and effective interval.
 
-The practitioner therefore coordinates a small set of direct changes rather than filling one staffing row. They decide what should become effective, obtain the acts or services required by each owner, and then verify the relations that actually obtain.
+For an existing arrangement, compare the evidence for each needed relation with the contribution and its work interval. If a change is required, the responsible parties make or authorize it under the applicable rule. Check which resulting conditions have taken effect.
 
 ### OCE.6:2 - Problem
 
@@ -53,53 +53,53 @@ When these claims are bundled, later Work fails in ways that look personal or mo
 
 ### OCE.6:4 - Solution
 
-Start from the contribution and select the exact assignment species, then establish every needed neighboring relation through its own owner and predicate. Keep proposed, decided, effective, contradicted, expired, and missing states separate. Return only relations whose obtaining conditions are satisfied, along with explicit gaps that change Work entry or later realization.
+Start with the contribution and the assignment species or other enabling relation that it needs. Establish the status of each relevant relation from its applicable rule and evidence. Where a change is required, identify its competent provider or decision holder and obtain its result or state the remaining condition. Distinguish a proposal, a decision and an effective, contradicted, expired or unknown relation. Return the supported account and its consequences for entry or realization.
 
-Recognition is cheap: one required contribution with an ambiguous holder or missing enabling condition is enough to enter. Assurance is predicate-specific: the holder, local role kind, additional participants, authority, applicability, extent, basis, evidence, and currentness of every relied-on relation must be recoverable.
+A contribution with an uncertain holder or enabling condition is enough to start. For an assignment, establish the holder and local role kind. For each relation relied on, identify its participants, governing predicate, scope, conditions, effective interval and evidence, including any required authority.
 
 #### OCE.6:4.0 - One bounded first return
 
-First consider an adequate service instruction plus the existing assignment result. `ADM.2:4.1–ADM.2:4.4` can establish which participants, grants and effective conditions an administrative action needs, return a missing condition to its owner, and reuse what is already settled. If that instruction and the owners' current results cover this contribution, reuse them; an OCE summary is not another approval gate.
+Start with an adequate service instruction and existing assignment evidence. `ADM.2:4.1–ADM.2:4.4` helps establish the participants and relations for the administrative action. Use ADM.8 where permission for the particular action remains uncertain and ADM.9 where its usable provision is at issue. Use the current results directly when they cover the contribution.
 
-For a small first use, take one contribution with a current, reusable assignment result and resolve the enabling gap that changes its next Work. In the PumpWorks case below, verify the appointment's continued effectivity and obtain the repository-access owner's current result. The practitioner can return this short account to the person arranging the integration:
+For a small first use, take one contribution with a current, reusable assignment result and resolve the enabling gap that changes its next Work. In the PumpWorks case below, use the current appointment evidence and establish the repository-access status from the provider’s existing result or its qualified response. The practitioner can return this short account to the person arranging the integration:
 
 > E27's release-integration appointment is effective from 2026-10-01 under PW-APPT-2026-17 and the declared PumpWorks appointment species. Its participants and uninterrupted interval are recoverable from that result. Provider-repository access is decided but not effective because identity federation is unfinished. Administration/security owns the access return. Provider-artifact integration remains blocked. The appointment still obtains; effective access and capability for provider-tool use require separate evidence.
 
-Use the fuller coordination below when the contribution requires several changes whose results must fit together, such as an appointment interval, rig booking and provider-access window. Ask the owners what each can establish, compare the returned conditions against the same receiving Work, and return only the incompatible or missing part. Keep an existing service case as the carrier when it already supports that exchange.
+Use the fuller coordination below when the contribution requires several changes whose results must fit together, such as an appointment interval, rig booking and provider-access window. Compare the effective conditions against the same intended work. Use current grants, bookings and service evidence, and take any unresolved fact, commitment or decision to the source able to establish it. Identify any incompatibility that remains. Keep an existing service case as the carrier when it already supports that exchange.
 
-Keep the existing assignment, authority and capability evidence with this account rather than reproducing it. When the access owner returns effective access, reassess the dependent Work; any other required but missing relation or capability remains a blocker. The fuller questions below are for new, unresolved or changed claims. This first use does not require re-declaring a current assignment species or surveying every possible enabling relation.
+Keep the existing assignment, authority and capability evidence with this account rather than reproducing it. When the access owner returns effective access, reassess the dependent Work; any other required but missing relation or capability remains a blocker. The fuller questions below are for new, unresolved or changed claims.
 
 #### OCE.6:4.1 - Pattern-Use Unfolding
 
-1. **Bind the contribution and use.** Name the organization, contribution, position when current, receiving decision or Work, scope, horizon, effectivity need, affected Systems, and first consumer of the result. Inspect the current service instruction and adequate relation results before choosing additional coordination. A routine administrative action may need only `ADM.2` and its direct providers; a changed contribution may need the coordinated establishment below.
-2. **Recover authority and participation conditions.** Identify who may establish or end each assignment and enabling relation, under which predicate, basis, scope, and interval. Obtain consent, labor, election, membership, or protection results when their owners require them.
+1. **Bind the contribution and use.** Name the organization, contribution, position when current, question, decision or Work for which the relation matters, scope, horizon, effectivity need, affected Systems, and first consumer of the result. Inspect the current service instruction and adequate relation results before choosing additional coordination. A routine action can use the participant and relation evidence from `ADM.2`. Coordinate several results when their fit for the contribution remains open.
+2. **Recover authority and participation conditions.** Identify who may establish or end each assignment and enabling relation, under which predicate, basis, scope, and interval. Use applicable existing consents and labor, election, membership or protection results. Obtain any additional authorization or contribution required by the governing rules.
 3. **Identify candidate holder Systems.** Recover each actual System, exact local system-role-kind classification when needed, relevant capability evidence, availability, conflicts, and current assignments. Keep preference and development needs separate.
-4. **Select or declare the direct assignment species.** Begin with an ordinary claim, such as “E27 is appointed as release integrator under the PumpWorks appointment conditions.” Reuse an applicable species under `A.2.1`; declare one only when the needed species is missing. Recover the holder slot, exact local assigned-kind domain, every real additional participant, predicate, applicability, and occurrence-identity law. Add an `OCE.5` position participant only when the species truly depends on it. For a new species, use `A.2.1:4.1–A.2.1:4.4` and `A.6.REL` together with the organization's applicable assignment rules. These sources explain participants, obtaining conditions and episode identity; the organization must supply its own appointment or election rule. If that rule or a required participant kind is absent, return the missing governor for this assignment. Reuse an existing species without declaring it again. Expose an episode identifier only when the receiving use must distinguish or cite that episode.
-5. **Specify the proposed assignment.** State candidate holder, assigned kind, position or locus when required, intended interval, conditions, conflicts, and basis. Preserve possible-future status.
-6. **Make or obtain the assignment decision.** Use the applicable decision and authority. Determine whether and when the direct species predicate becomes satisfied; a document or record is constitutive only when that predicate says so.
-7. **Establish neighboring enabling relations.** For each required authority, responsibility, permission, resource, access, membership, commitment, compensation, provider, or equipment relation, obtain the direct owner's result and satisfy its predicate. Return `missing-governor` rather than inventing a general relation.
-8. **Verify effectivity and contradiction.** Observe or otherwise ground the relation occurrence, participants, interval, basis, and currentness. Classify each claim as proposed, decided-not-effective, effective, contradicted, expired, suspended, or missing. Compare the conditions needed together for the same contribution: individually effective results may cover different holders, resources, configurations or times. Give an affected owner the particular incompatibility and requested decision; retain unrelated effective results. Include inquiry, waiting, rechecking and continuing coordination in the choice of how much work to organize.
+4. **Select or declare the direct assignment species.** Begin with an ordinary claim, such as “E27 is appointed as release integrator under the PumpWorks appointment conditions.” Reuse an applicable species under `A.2.1`; declare one only when the needed species is missing. Recover the holder slot, exact local assigned-kind domain, every real additional participant, predicate, applicability, and occurrence-identity law. Add an `OCE.5` position participant only when the species truly depends on it. For a new species, use `A.2.1:4.1–A.2.1:4.4` and `A.6.REL` together with the organization's applicable assignment rules. These sources explain participants, obtaining conditions and episode identity; the organization must supply its own appointment or election rule. If that rule or a required participant kind is absent, return the missing governor for this assignment. Expose an episode identifier only when the receiving use must distinguish or cite that episode.
+5. **Specify the proposed assignment.** For a proposed assignment, state the candidate holder, assigned kind, position or locus when required, intended interval, conditions, conflicts, and basis. Preserve possible-future status.
+6. **Make or obtain the assignment decision.** Use an applicable existing decision or obtain a new one when the assignment requires it. Establish whether and when the species predicate is satisfied. A document has constitutive effect where the applicable rule gives it that effect.
+7. **Establish neighboring enabling relations.** For each required authority, responsibility, permission, resource, access, membership, commitment, compensation, provider, or equipment relation, establish what the direct rule and current evidence support. Obtain any missing act, service or commitment from its competent party. If no governing predicate is available, return `missing-governor`.
+8. **Verify effectivity and contradiction.** Observe or otherwise ground the relation occurrence, participants, interval, basis, and currentness. Classify each claim as proposed, decided-not-effective, effective, contradicted, expired, suspended, or missing. Compare the conditions needed together for the same contribution: individually effective results may cover different holders, resources, configurations or times. If a decision or remedy is needed, tell the responsible party which conditions conflict and what must be settled. Retain unrelated effective results. Include inquiry, waiting, rechecking and continuing coordination in the choice of how much work to organize.
 9. **Check capability separately.** Use `A.2.2` for the holder's ability under the required Work envelope. State whether a capability result supports current use, requires development, or remains unavailable. Assignment remains usable as a relation claim even when capability fit fails.
 10. **Coordinate records and provision.** Use Administration for participant state, access cases, provisioning, reconciliation, and records when available. A record supports retrieval and evidence; the direct relation remains the result consumed here.
-11. **Return precise downstream results.** Supply effective assignments and enabling relations to `OCE.9`. Give `ADM.2` an adequate effective holder or resource-assignment result when its particular administrative action depends on that relation. State its participants, scope, interval and grounds; permission, decision authority, access and any other required condition remain separate questions for that action. Send each gap to the owner whose action can change it.
-12. **Stop at entry sufficiency.** Return when the people preparing the receiving Work or realization decision can tell which relations obtain now, which conditions block entry, which owner must act, and which observation reopens the account.
+11. **Return the required relation or its limit.** State the participants, scope, interval and grounds for the requested assignment or enabling relation. Where realization is due, supply the effective relations to `OCE.9`. Where a particular administrative action depends on a holder or resource assignment, `ADM.2` can use this result. Permission, decision authority and access retain their own grounds. For a material gap, identify the missing fact or decision and, where known, its source.
+12. **Stop when the result answers its use.** State which relations obtain, the conditions that remain open and any resulting limit on the receiving work. Where further action is required, identify the responsible party or the unresolved responsibility and the grounds for reopening the account.
 
 #### OCE.6:4.2 - Record the Result
 
 | Result position | Required content |
 | --- | --- |
-| use boundary | Organization, contribution, position or direct need, receiving Work/decision, scope, horizon, and first consumer. |
+| use boundary | Organization, contribution, position or direct need, receiving question, Work or decision, scope, horizon, and first consumer. |
 | holder basis | Candidate Systems, local kinds and classifications when current, capability references, availability, conflicts, and evidence limits. |
 | assignment species | Species, holder, assigned-kind domain, additional participants, predicate, applicability, identity law, and authority. |
 | assignment branches | Proposed specification, decision, effective occurrence, interval, basis, evidence, and proposed/decided-not-effective/effective/contradicted/expired/suspended/missing disposition. |
 | enabling relations | One row per direct authority, responsibility, permission, resource, access, membership, commitment, provider, equipment, or other relation actually needed; predicate, participants, basis, interval, evidence, and gap. |
-| capability boundary | Required Work envelope, current capability result or unavailable return, and development or alternative-holder question. |
+| capability boundary | Where capability matters, the Work envelope, current evidence or gap, and any development or alternative-holder question. |
 | records and provision | Available Administration or specialist result, record/source reference, and the direct relation it supports without replacing. |
 | continuation | Work-entry effect, downstream receivers, expiring conditions, contradictions, and smallest reopen observation. |
 
 #### OCE.6:4.3 - What Changes in Practice
 
-Practitioners stop asking whether a position is “filled” as if that settled readiness. They can point to the exact effective assignment, authority, access, resource, and capability claims needed by the receiving Work. Missing relations become actionable returns to their owners instead of character judgments about a holder.
+Practitioners stop asking whether a position is “filled” as if that settled readiness. They can point to the exact effective assignment, authority, access, resource, and capability claims needed by the receiving Work. An open condition can be traced to its evidence, provider or decision authority.
 
 ### OCE.6:5 - Archetypal Grounding -- PumpWorks Assignment and Access
 
@@ -119,7 +119,7 @@ Appointment decision `PW-APPT-2026-17` becomes effective on 2026-10-01. The resu
 | release authority | the direct release-authority relation obtains for the release director under its own predicate and basis | The integration assignment supplies no release decision power |
 | holder capability | current evidence supports the required integration Work envelope except provider-tool use | HCD or a supervised trial can address the capability gap without changing the effective appointment |
 
-For the repository-access action alone, the existing appointment and an adequate service instruction are sufficient inputs to `ADM.2`. Administration identifies the eligible requester, the access decision maker and the permitted provisioning action, then obtains the federation result from its provider. Repeating all appointment work would add delay without helping that action. Successful provision would settle access within its returned scope; provider-tool capability remains a separate condition for integration.
+For the repository-access action alone, the existing appointment and an adequate service instruction are sufficient inputs to `ADM.2`. Administration identifies the eligible requester and decision holder through ADM.2. The applicable grant or ADM.8 establishes whether the intended provisioning action is permitted. The provider supplies the federation result or reports the obstacle to access. Repeating all appointment work would add delay without helping that action. Successful provision would settle access within its returned scope; provider-tool capability remains a separate condition for integration.
 
 Now suppose federation can be completed only after the booked rig window ends. The access owner and rig owner can each return a correct result, yet those results do not jointly enable provider-artifact integration in the planned interval. OCE.6's coordination compares the conditions against that one contribution and returns a new-window question to the rig owner and a corresponding access-window question to Administration/security. The result may be a compatible later window, a supported alternative arrangement, or no available window. Until then the appointment remains effective, the independently supported electrical-evidence preparation may continue under its own conditions, and provider-artifact integration remains blocked. The coordination does not extend a booking or grant access. If the current service case already obtains and reconciles these answers, reuse it rather than opening a parallel OCE case.
 
@@ -129,8 +129,8 @@ The result supplied to `OCE.9` contains one effective assignment, one effective 
 
 | Setting | Reusable move | Required return or changed content |
 | --- | --- | --- |
-| public-hospital emergency flow | Declare the exact appointment or shift-assignment species, recover licensed holder, clinical authority, access, equipment, and current interval | Statutory authority, licensure, labor, fatigue, privacy, safety, and bed/equipment availability can each block entry; verify the required conditions from their current evidence rather than the HR roster alone |
-| distributed standards association | Declare bylaw- or election-sensitive assignment species for a volunteer position and recover publication, ballot, repository, and financial access | Employer assignments, volunteer acceptance, elected term, member authority, several time zones, and employer permission remain separate; no executive staffing predicate is imported |
+| public-hospital emergency flow | Use the applicable appointment or shift-assignment species, or define it if it is missing, recover licensed holder, clinical authority, access, equipment, and current interval | Statutory authority, licensure, labor, fatigue, privacy, safety, and bed/equipment availability can each block entry; verify the required conditions from their current evidence rather than the HR roster alone |
+| distributed standards association | Use an applicable bylaw- or election-sensitive assignment species, or define it if needed for a volunteer position and recover publication, ballot, repository, and financial access | Employer assignments, volunteer acceptance, elected term, member authority, several time zones, and employer permission remain separate; no executive staffing predicate is imported |
 
 ### OCE.6:6 - Bias-Annotation
 
@@ -145,14 +145,14 @@ The result supplied to `OCE.9` contains one effective assignment, one effective 
 
 ### OCE.6:7 - Conformance Checklist
 
-- [ ] The contribution, receiving Work or decision, position when current, scope, horizon, and first consumer are explicit.
+- [ ] The contribution, question, Work or decision served, position when current, scope, horizon, and first consumer are explicit.
 - [ ] Every assignment uses one directly declared `A.2.1` species with exact participants, predicate, applicability, identity, and interval.
 - [ ] The position participates only when it changes the direct assignment species.
 - [ ] Proposed, decided-not-effective, effective, contradicted, expired, suspended, and missing branches remain distinguishable.
 - [ ] Authority, responsibility, permission, resource, access, membership, commitment, provider, equipment, and compensation relations use direct predicates.
 - [ ] Capability is holder-dependent and separately evidenced for the required Work envelope.
-- [ ] Records and provisioning support but do not replace direct relations.
-- [ ] Downstream results name only relations that obtain and the exact gaps that block use.
+- [ ] The account identifies what a record or act establishes, including any constitutive effect under the applicable rule.
+- [ ] The result distinguishes established relations from proposals, known absences or uncertainties and identifies any use they limit.
 
 ### OCE.6:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -169,7 +169,7 @@ The result supplied to `OCE.9` contains one effective assignment, one effective 
 
 Assignments and enabling relations become usable by later Work, Administration, and capability realization without being bundled. Expiration, suspension, partial provision, and missing authority can be handled locally.
 
-The cost is coordination across owners. Legal authority, security permission, labor consent, finance allocation, and specialist capability require the relevant owners’ actions and evidence; the coordinated design must make those dependencies visible.
+The cost is coordination across owners. Where the contribution depends on legal authority, security permission, labor consent, finance allocation or specialist capability, establish which conditions already hold and which need further action or evidence.
 
 ### OCE.6:10 - Rationale
 
@@ -181,11 +181,11 @@ Separating specification, decision, and effectivity also gives the practitioner 
 
 #### OCE.6:11.1 - Current-Line Selection for Assignment and Enabling Relations
 
-The question is how to make E27's provider-artifact integration possible in the intended window. The serious direct alternative is an adequate appointment result plus a competent service instruction: `ADM.2` identifies the action and participants, distinguishes eligibility, grant and provision, and directs an exact missing condition to its owner. The relevant owners establish the conditions, including actual provision. This arrangement can settle a routine access gap without another assignment or readiness procedure.
+For E27, the immediate question is whether provider-artifact integration is possible in the intended window. One approach uses the current appointment and a competent service instruction. `ADM.2` identifies the participants and relevant relations. Where a question remains, use ADM.8 for permission and ADM.9 for effective provision. A routine access gap can be resolved without revisiting the appointment.
 
 **Adopt** that reuse in section 4.0 and step 1. The OCE coordination adds value when establishing a changed contribution requires several owner-specific results to fit together and the existing service instruction does not obtain that combination. **Adapt** the same action-specific reasoning into step 8: compare the results' holders, resources and windows for the common contribution, obtain a changed result only from the owner entitled to supply it, and preserve supported partial work. Section 5's delayed federation/rig-window case demonstrates that return.
 
-Compare total effort for the same integration result. A maintained service instruction costs preparation, owner inquiry, provision, exception handling and upkeep; reusing it while the assignment and dependencies remain stable avoids reconstructing those settled answers. Explicit coordination adds recovery of cross-owner dependencies, joint timing inquiry, waiting and rechecking after changes. Accept that cost when no current instruction supplies the needed combination and failure would otherwise be discovered at integration. It can avoid a wasted attempt while returning a precise remaining dependency. If the service arrangement already coordinates the same results and changed-condition returns, it is sufficient; OCE adds no mandatory second case, record or approval.
+Compare total effort for the same integration result. A maintained service instruction costs preparation, owner inquiry, provision, exception handling and upkeep; reusing it while the assignment and dependencies remain stable avoids reconstructing those settled answers. Explicit coordination adds recovery of cross-owner dependencies, joint timing inquiry, waiting and rechecking after changes. Accept that cost when no current instruction supplies the needed combination and failure would otherwise be discovered at integration. It can avoid a wasted attempt while returning a precise remaining dependency. Use an existing service arrangement that already coordinates the results and returns any changed condition to the affected parties.
 
 An appointment letter or completed account mistaken for complete readiness remains a failure example in sections 2 and 8. Waterson's human–AI function-allocation work helps reveal relevant dependencies during design; it is not the method that establishes this appointment, access or authority. Reopen the selection when coordination overhead exceeds the consequence it prevents, a service instruction covers the changed contribution adequately, or a needed relation lacks a usable governing rule.
 
@@ -194,7 +194,7 @@ An appointment letter or completed account mistaken for complete readiness remai
 | Source line | Retained contribution | Use boundary |
 | --- | --- | --- |
 | Current FPF `A.2.1`, `A.2.2`, `A.6.REL`, `A.13`, `A.15.1`, `F.6`, and `A.10` | Direct assignment species, holder capability, relation obtaining, performer, Work, assignment-bound attribution, and evidence remain separate. | Obtain responsibility, authority, resource, and access predicates from their owning domains; select a coordination Method for the organization’s contribution. |
-| Current Organization Administration `ADM.2:4.1–ADM.2:4.4` | Serious direct alternative and receiving Method: recover the participants and effective relations needed by one administrative action, reuse adequate supplied results, and send an exact gap to its owner. | It can supply the whole needed inquiry for a routine action. Additional OCE coordination is justified by unresolved contribution-wide establishment, not by an assumed defect in Administration; successful provision and capability retain their own evidence. |
+| Current Organization Administration `ADM.2:4.1–ADM.2:4.4` | Serious direct alternative and receiving Method: recover the participants and effective relations needed by one administrative action, reuse adequate supplied results, and send an exact gap to its owner. | It can supply the whole needed inquiry for a routine action. Coordinate across providers where the contribution still depends on several results whose fit is uncertain. Successful provision and capability retain their own evidence. |
 | Joseph and Sengul, [current organization-design review](https://doi.org/10.1177/01492063241271242) | Configuration, control, channelization, and coordination expose different organization-design features and consequences. | Use these design features to find the local assignments and enabling relations that need current evidence. |
 | Grote et al., [contribution-based engineering role modeling](https://doi.org/10.1109/ISSE65546.2025.11370103) | Required contributions and stakeholder evidence can expose candidate holder/role bundles and gaps. | Use the bundles as candidate input; establish assignments and positions, recover authority, and assess capability separately. |
 | Fraccaroli, Zaniboni, and Truxillo, [work-design review](https://doi.org/10.1146/annurev-orgpsych-081722-053704) | Technology, algorithmic management, diverse work arrangements, and affected-person outcomes change holder and enabling conditions. | Recover assignment identity and authority and access predicates from the applicable local rules. |
@@ -206,7 +206,7 @@ Reopen when a recurring assignment species or enabling relation lacks an applica
 
 - `OCE.4` supplies contribution and enabling needs. `OCE.5` supplies position identity, eligibility, expected contributions, and effectivity when a position-sensitive assignment is current.
 - `A.2.1` governs assignment species and occurrences. `A.2.2` governs capability. `A.13` and `A.15.1` govern performer and Work; `F.6` applies only when precise assignment-bound attribution is needed.
-- `OCE.9` consumes effective assignments and enabling relations for realization and organization-capability evidence. `ADM.2` consumes an adequate effective holder or resource-assignment result when the administrative action needs that relation for the named participants, scope and interval. It still establishes or obtains that action’s other required permissions, authority and effective conditions separately.
+- `OCE.9` consumes effective assignments and enabling relations for realization and organization-capability evidence. `ADM.2` consumes an adequate effective holder or resource-assignment result when the administrative action needs that relation for the named participants, scope and interval. Use an applicable grant or ADM.8 for a permission question, and applicable provision evidence or ADM.9 for a remaining delivery question.
 - Administration can supply records, access cases, provision, and reconciliation. Corporate Governance, legal, labor, security, safety, finance, privacy, HCD, and other practices keep their predicates, decisions, and evidence.
 - When a sibling result is unavailable, use a qualified direct source if it answers the needed question; otherwise retain an explicit missing result.
 

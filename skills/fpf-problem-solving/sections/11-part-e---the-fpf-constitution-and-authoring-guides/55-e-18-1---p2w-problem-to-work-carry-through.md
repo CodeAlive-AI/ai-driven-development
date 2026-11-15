@@ -75,11 +75,11 @@ P2W succeeds when the accepted claim, receiving use, concrete question, applicab
 
 ### E.18.1:4 - Solution
 
-**Local P2W mantra.** Use this formula to recall the Plain question behind one working decision: *which P2W continuation, if any, is justified now?*
+**Local P2W mantra.** Use this wording to recall the question behind one working decision. *Which P2W continuation, if any, is justified now?*
 
 > **Carry the accepted distinction — ask one relation question — apply the pattern for that relation — keep its result or stop — reopen only the dependent continuation.**
 
-| Formula term | Identified value |
+| Phrase in the mantra | Identified value |
 | --- | --- |
 | Carry the accepted distinction | one accepted ProblemCard claim and the receiving decision or use that would change if the claim changed |
 | ask one relation question | one ordinary question with its participants; several independent claims are split |
@@ -91,7 +91,7 @@ P2W succeeds when the accepted claim, receiving use, concrete question, applicab
 
 If the lens subject, declared use, preservation/loss account or stop is unresolved, keep that C.29 question open and do not advance by wording to method selection, planning or Work.
 
-The formula is neither `U.Method`, `U.MethodDescription`, `U.WorkPlan`, dated `U.Work`, actual `U.Transformation`, CGUS nor a P2W relation. Imperative grammar and repetition establish none of those objects. The five rows below are a readable display of conditional continuations, not the mantra itself and not a project-work order.
+The wording helps a practitioner recall which question to ask. A claim about a Method, MethodDescription, plan, dated Work, Transformation, CGUS or P2W relation requires identification of that object under its own rule. The five rows below display conditional continuations. The applicable relation determines which one to take.
 
 | Shown continuation | Applicable pattern contribution | Solution use | Expected result | Current condition |
 |---|---|---|---|---|
@@ -142,7 +142,7 @@ Start with the part of the accepted ProblemCard that can change the answer neede
 
 Choose the next question from the work that needs the answer. Say what answering it would enable and what would count as enough for that use. If the present need is to choose guidance, an explained selection and its applicability boundary can suffice.
 
-If the next action needs a subject result, such as a plan or a measurement, apply the supplying method to the case and obtain that result or identify the exact gap. Use an adequate existing way directly. If the way itself is missing, use C.39 to find or develop it; E.4.CM guides that construction when it must become a maintained framework contribution.
+If the next action needs a subject result, such as a plan or a measurement, apply the supplying method to the case and obtain that result or identify the exact gap. Use an adequate existing way directly. If the way itself is missing, use C.39 to find or develop it; E.4.CM guides that construction when it must become a maintained framework contribution. When the next decision depends jointly on how a suitable method becomes available, how a performer gains access or capability, and how the job is supplied, C.32.MWA:4 connects those contributions. For a readiness decision alone, use A.15.5 for the intended job.
 
 Bring the answer back to the receiving decision or action. Explain how the carried claim constrained the question, choice or interpretation of the answer. If the local answer leaves a connection required by the larger task unresolved, keep that connection as unfinished work. A stop can settle the present inquiry while leaving the receiving task dependent on further facts or a still-missing way.
 
@@ -150,7 +150,7 @@ For example, C.22.2:20.1a supplies an accepted ProblemCard about two support-pol
 
 This move introduces no `ProblemToWorkCarryThroughRelation@Context`, reusable predicate definition, `RelationSignature`, or P2W relation occurrence.
 
-When transfer, audit, delayed feedback, costly reversal, automation, or durable reuse requires another person or later action to replay the claim, use the `C.2.1` episteme in `4.1`. Its identity is its ClaimGraph, the accepted `ProblemCard@Context` as EntityOfConcern, and the effective reference scheme.
+When transfer, audit, delayed feedback, costly reversal, automation, or durable reuse requires the claim to be retraced, use the `C.2.1` episteme in `4.1`. Its identity is its ClaimGraph, the accepted `ProblemCard@Context` as EntityOfConcern, and the effective reference scheme.
 
 The ClaimGraph records the accepted card edition and carried claim slice, decision or use relying on the result, concrete question, applicable pattern reference, contribution used, returned result kind and ref or stop, and why the carried content remains relevant. It designates a separately identified `U.Viewpoint` episteme or `BoundedModelUseStructure` only when the claim uses that object and its organization changes how the receiving claim is interpreted; neither becomes another identity discriminator.
 
@@ -570,7 +570,7 @@ These five lenses were tested: **Gov**, **Arch**, **Ontological and epistemic**,
 - `CC-E18.1-16` A work-to-change continuation cites the positive or negative claim or blocker already returned by the named subject predicate's defining pattern or the applicable `A.6.RCD` route. It keeps the actual `U.Work` and `U.Transformation` references when they are part of that result, but does not reconstruct occurrence proof, predicate tests, failure classification, or negative-claim closure. The BuildOps and Pump 14 slices show positive carry-through; Pump 14 also preserves the earlier `missing-governor` stop. A production continuation likewise carries only the result or blocker returned by `A.15.PROD`.
 - `CC-E18.1-17` A PatternID reference, selected or recommended continuation, imperative wording, intended realization, plan seed, graph or filled table admits no `U.MethodDescription`. Membership exists only for an independently identified C.2.1 episteme whose EntityOfConcern is one admitted `U.Method` and whose ClaimContent contains at least one substantive way-of-doing claim.
 - `CC-E18.1-18` *Move* remains Plain wording for the exact current object or use action. Proposed or chosen work remains distinct from dated performed Work; no universal Move kind, record or relation is introduced.
-- `CC-E18.1-19` The local mantra is the compact formula in `4`, answers one stated decision, maps every term to independently identified values, has the filled cooling use, and stops at the applicable neighboring pattern. It is not the five-row display, a Method, MethodDescription, plan, Work, CGUS or structure identity.
+- `CC-E18.1-19` The wording of the local mantra in §4 recalls one decision. Each phrase refers to an independently identified value, as illustrated in the cooling case. The practitioner stops when the applicable neighboring pattern supplies its answer or identifies the missing basis. The five-row table displays the possible continuations.
 
 
 
@@ -587,7 +587,7 @@ These five lenses were tested: **Gov**, **Arch**, **Ontological and epistemic**,
 | **Plan, path, or proximity as actual change.** A desired state, model, method, plan, flow arrow, adjacent work occurrence, or common affected referent is treated as an actual or composite transformation. | Apply `A.3.4` to the change and the direct work-to-change or `A.15.PROD` pattern to its separate claim. Carry only the results or blockers they return; shared timing or proximity opens no composition or production claim. |
 | **Intended realization as MethodDescription.** A selected continuation, recommendation, plan seed, imperative sentence or pattern ref is said to describe the Method it may realize. | First identify one C.2.1 episteme and one admitted `U.Method`; apply A.3.2 only when that Method is the episteme's EntityOfConcern and the ClaimContent contains a substantive way-of-doing claim. |
 | **One giant transformation flow.** Independently selected development, production, use or evaluation flows are flattened because a diagram or common product connects them. | Keep same-TFS valuations and internal `SubflowRef` cases in E.18; select E.18.NET only from independently identified members and cross-boundary occurrences. |
-| **Displayed mantra as execution.** The five-row display, repeated formula or word *move* is treated as a method, plan or performed step. | Keep the formula as Plain recall wording for one decision, the table as display content, and apply the pattern for each current action or object. |
+| **Treating a reminder as evidence of execution.** A practitioner infers a plan or performed step from the repeated words or the five-row display. | Use the mantra to recall the decision and the table to locate a possible continuation. Apply the governing pattern to establish which action was planned or performed. |
 | **Interface shortcut.** Interface, port, protocol, connection, resource, or integration wording selects function, method, work, evidence, gate, or architecture by itself. | Recover the module-interface, signature-slot, function, architecture, work, evidence, or gate relation before continuing. |
 
 ### E.18.1:9 - Consequences

@@ -7,7 +7,7 @@
 
 Use this pattern when a group could benefit from mutual help or shared activity, but people have not yet found a workable way to participate together. A new professional group has interested names but unanswered questions. A local gathering attracts visitors who leave without making a useful connection. An existing group starts a new activity for which its old habits do not suffice.
 
-The organiser's task is to arrange a bounded exchange in which someone offers a relevant contribution, another person can use or respond to it, and the participants can understand what happened. The result may be an answer, a comparison, an introduction, an agreed action or a valued conversation. Choose it from the participants' purpose.
+The organiser's task is to arrange a bounded exchange in which one participant offers a relevant contribution, another can use or respond to it, and the participants can understand what happened. The result may be an answer, a comparison, an introduction, an agreed action or a valued conversation. Choose it from the participants' purpose.
 
 This is the mutual-participation branch of Community Management. It begins with a credible purpose and participation conditions, such as those supplied by CB.1. It creates a first workable relationship around an activity; it does not require a formal organisation or equal contributions from every participant.
 
@@ -33,9 +33,9 @@ How can the organiser obtain a useful first exchange, learn what makes it possib
 
 ### CB.2:4 - Solution
 
-Choose one meaningful exchange, obtain the necessary contributions deliberately, make participation understandable, and close the return to the people involved. Repeat or adapt the arrangement on the basis of what participants could obtain and what support it consumed.
+Choose a useful exchange and secure the contributions it requires. Agree with the participants what each will prepare or provide within the time and resources available, then connect them and return the result. Use what they obtained and the support it took to decide whether to repeat or adapt the exchange.
 
-**Working reminder:** choose a useful exchange; prepare both sides; connect them within real limits; return the result; keep or change the support.
+
 
 #### CB.2:4.1 - Choose an exchange that can finish
 
@@ -49,7 +49,7 @@ If the original request needs a missing domain method, unavailable data or a dec
 
 #### CB.2:4.2 - Find the contributions needed on each side
 
-Start from the result and work backward to the people, material and conditions that could produce it. For a help request, this normally means a person with a real question and someone with relevant competence, experience or access. For a joint activity, identify the different contributions that make it worthwhile.
+Start from the result and work backward to the participants, material and conditions that could produce it. For a help request, this normally means a recipient with a question and a contributor with relevant competence, experience or access. For a joint activity, identify the different contributions that make it worthwhile.
 
 Approach potential participants with a specific reason their contribution could matter. Explain the purpose, requested preparation, likely effort, available support and limits. Ask whether they want to participate under those conditions.
 
@@ -126,11 +126,11 @@ For stronger claims, obtain the evidence that claim requires. A useful answer is
 
 #### CB.2:5.1 - One repair question receives a usable return
 
-Continue CB.1's constructed repairer case. The organiser finds one owner of a shareable diagnostic question and two repairers with relevant experience who agree to help. The case involves a known professional method; its permitted reference material supplies the technical criteria. These starting facts are stipulated for the example.
+Continue CB.1's constructed repairer case. The organiser finds one owner of a shareable diagnostic question and two repairers with relevant experience who agree to help. The case involves a known professional method; its permitted reference material supplies the technical criteria.
 
 The owner prepares the observations, the actions already taken and one unresolved choice. Customer identifiers and material without sharing permission are excluded. The two contributors see the question in advance and confirm that the requested help fits their competence and available time.
 
-The proposed live exchange lasts twenty minutes: four minutes to establish the question, five for each contributor's interpretation, and six for comparison and the next step. These are this case's planning allowances, not a required meeting format. Preparation and closure are included separately:
+The proposed live exchange lasts twenty minutes: four minutes to establish the question, five for each contributor's interpretation, and six for comparison and the next step. Preparation and closure are included separately:
 
 | Participant | Preparation | Exchange | Return or closure | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -163,7 +163,7 @@ At a small neighbourhood reading gathering, two newcomers want conversation rath
 
 ### CB.2:6 - Bias-Annotation
 
-Accounts of successful communities can hide the founder's preparation, recruitment and follow-up, while leaving unsuccessful attempts out of view. Keep the actual support demand and missing outcomes visible. Visible, fluent contributors can also dominate early matching; distinguish demonstrated suitability for the specific request from confidence or frequency of posting.
+Accounts of successful communities can hide the founder's preparation, recruitment and follow-up, while leaving unsuccessful attempts out of view. Keep the support these exchanges require and missing outcomes visible. Visible, fluent contributors can also dominate early matching; distinguish demonstrated suitability for the specific request from confidence or frequency of posting.
 
 ### CB.2:7 - Conformance Checklist
 
@@ -183,7 +183,7 @@ A proposed exchange may satisfy the planning conditions while its practical outc
 | Common wrong turn | Practical repair |
 | --- | --- |
 | Invite a large audience and wait for useful conversation | Arrange one relevant request and the contributions needed to answer it; expand only where the activity can still be supported. |
-| Ask volunteers to “engage more” | Name a worthwhile action, the person it helps and its actual effort; make refusal informative and permissible. |
+| Ask volunteers to “engage more” | Name a worthwhile action, the person it helps and the effort it requires; make refusal informative and permissible. |
 | Select helpers by visible status alone | Establish their suitability, availability and permission for the specific question. |
 | Treat every answer as equally valid to maintain harmony | Compare the assumptions and domain basis; retain uncertainty or seek a qualified contribution where needed. |
 | The organiser answers, prompts and follows up everything, then declares the community independent | Identify the organising contributions, retain necessary support and test a specific redistribution. |
@@ -191,7 +191,7 @@ A proposed exchange may satisfy the planning conditions while its practical outc
 
 ### CB.2:9 - Consequences
 
-Participants obtain a real opportunity to contribute and receive something useful. The organiser learns which matching, preparation and follow-up work matters, and can adapt it before creating a larger recurring commitment.
+Participants obtain an opportunity to contribute and receive something useful. The organiser learns which matching, preparation and follow-up work matters, and can adapt it before creating a larger recurring commitment.
 
 The approach requires hands-on attention and can establish that the proposed activity is not currently viable. A small successful exchange leaves larger-scale capacity, durability, learning and causal benefit as separate questions.
 
@@ -210,13 +210,13 @@ Closing the return matters because a contributor otherwise may never learn wheth
 | OCE.2's treatment of actual work, supplied results and constraints | Identify the work that makes an exchange possible and retain uncertainty about unavailable contributions. | CB adapts this to independent participants and voluntary contribution; it does not infer positions or authority from participation. |
 | HCD.5 and HCD.6 on helped performance and later observation | Keep receiving help, performing an action and developing capability distinguishable. | Use learning methods when learning is the purpose. A community interaction alone supplies no learning verdict. |
 
-Source return: [David Spinks, The Business of Belonging (2021)](https://www.wiley-vch.de/en/areas-interest/finance-economics-law/the-business-of-belonging-978-1-119-76612-4). The construction retains the useful manual-start proposal while replacing generic activity targets with the participants' result, acceptable burden and actual support conditions. Prefer an adequate resource, professional service or independent-learning route when it supplies the receiving use more directly.
+Source return: [David Spinks, The Business of Belonging (2021)](https://www.wiley-vch.de/en/areas-interest/finance-economics-law/the-business-of-belonging-978-1-119-76612-4). The construction retains the useful manual-start proposal while replacing generic activity targets with the participants' result, acceptable burden and support conditions. Prefer an adequate resource, professional service or independent-learning route when it supplies the receiving use more directly.
 
 ### CB.2:12 - Relations
 
 - **Uses and returns to CB.1:** the contribution, participation terms and serious alternatives. Failure to obtain the central contribution reopens that choice.
 - **Uses [OCE.2 (OCE.2:4)](../oce/24-oce-2---recover-current-organization-work-and-arrangement.md#oce24---solution)** when a relied-on organisational contribution, access or decision relation needs evidence. The participants' actual commitments remain separate from organisation labels.
-- **Uses [HCD.5:4 and HCD.6](../../human-capability-engineering-dpf-suite/hcd/21-hcd-5---select-human-capability-development-methods.md#hcd54---solution)** when the intended contribution includes learning or representative practice.
+- **Uses [HCD.5:4 and HCD.6](../../human-capability-engineering-dpf-suite/hcd/21-hcd-5---select-human-capability-development-methods.md#hcd54---solution)** when the intended contribution includes a person’s learning or representative practice.
 - **Uses [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md)** when the next question concerns how an exchanged practice is transmitted, retained, selected or renewed. Preserving a case is one possible contribution to that larger work.
 
 ### CB.2:End

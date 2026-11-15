@@ -5,8 +5,8 @@
 
 **Experiment by default.** More activity is treated as learning. Compare the attainable answer, whole burden and a sufficient decision on current evidence.
 
-**Direction as permission.** A fitting initiative borrows authority from an adopted slogan or filter. Obtain the actual bounded commitment and its independent conditions.
+**Direction as permission.** A fitting initiative borrows authority from an adopted slogan or filter. Establish the commitment and required conditions before relying on the initiative as authorized.
 
 **Success by component.** Several affordable initiatives overuse one team. Compare their simultaneous whole and the work they displace.
 
-**Culture by publication.** A template or archive is treated as ordinary enactment. Ask what people actually transmit, recognize, select and retain.
+**Culture by publication.** A template or archive is treated as ordinary enactment. Examine evidence of which practices the participants transmit, recognize, select and retain. Where their experience matters, use their accounts.

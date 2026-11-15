@@ -1,16 +1,16 @@
 ## ADM.Sources:4 - Bounded current comparisons
 
-[GOV.UK's Service Standard, point 2][GOVUK] supplies the whole-problem service comparison used in ADM.1 and ADM.11. Its user-problem boundary is useful here; it does not establish the authority, applicability or outcome of a local administrative service.
+[GOV.UK's Service Standard, point 2][GOVUK] supplies the whole-problem service comparison used in ADM.1 and ADM.11. It helps identify the user’s whole problem. For a local service, establish the applicable authority and evidence of the outcome separately.
 
-[NIST SP 800-63-4, Digital Identity Guidelines, July 2025][NIST], particularly its digital-identity model and Redress section, distinguishes identity proofing, authentication and federation and supplies bounded issue-handling and correction guidance. ADM.2 and ADM.6–ADM.7 retain the distinction between the needed identity result and a separate eligibility or permission condition. The federal digital-identity scope does not determine local entitlement.
+[NIST SP 800-63-4, Digital Identity Guidelines, July 2025][NIST], particularly its digital-identity model and Redress section, distinguishes identity proofing, authentication and federation and supplies bounded issue-handling and correction guidance. ADM.2 and ADM.6–ADM.7 retain the distinction between the needed identity result and a separate eligibility or permission condition. If entitlement is at issue, its basis is the rule governing the local action.
 
-[OMG CMMN 1.1, 2016][CMMN], §§4.1–4.3, supplies the case-outcome, information and model/execution comparison used in ADM.5–ADM.6. It does not supply institutional authority or imply CMMN conformance here.
+[OMG CMMN 1.1, 2016][CMMN], §§4.1–4.3, supplies the case-outcome, information and model/execution comparison used in ADM.5–ADM.6. Use the applicable institutional authority for a case decision. A conformance claim requires examination against the CMMN requirements.
 
-[OASIS XACML 3.0, 2013][XACML], terminology and §7.2, supplies the policy-decision/enforcement comparison in ADM.8 and ADM.14. Its enforcement obligations are operations within that architecture; they are not imported as general legal duties.
+[OASIS XACML 3.0, 2013][XACML], terminology and §7.2, supplies the policy-decision/enforcement comparison in ADM.8 and ADM.14. Its enforcement obligations specify technical operations within that architecture. The duties of parties to a local service come from the applicable institutional sources.
 
-[ISO 15489-1:2016][ISO]'s public abstract supplies the records, metadata, responsibilities, business-context and controls comparison in ADM.13. The full paid standard and its individual clauses were not inspected; the abstract supplies no local retention period or compliance conclusion.
+[ISO 15489-1:2016][ISO]'s public abstract supplies the records, metadata, responsibilities, business-context and controls comparison in ADM.13. Only the public abstract was consulted. A retention-period question needs the governing rule. A conformance claim needs the applicable requirements.
 
-[Goth, Catala-Perez and Hedderich's 2025 shared-service cost review][SSC] is used through its author-institution abstract. Its qualified concern about weak or unclear company-wide financial baselines limits a general administrative-cost-reduction claim in ADM.15. The full article was not read; the finding does not establish that shared services never save cost.
+[Goth, Catala-Perez and Hedderich's 2025 shared-service cost review][SSC] is used through its author-institution abstract. Its qualified concern about weak or unclear company-wide financial baselines limits a general administrative-cost-reduction claim in ADM.15. A claim about savings in a particular service needs a suitable cost baseline.
 
 [REL]: ../../../sections/06-cluster-a-iv-a---signature-stack-boundary-discipline/05-a-6-rel---relation-obtaining-and-individuation-distinguish-o.md
 [PER]: ../../../sections/05-part-a---kernel-architecture-cluster/17-a-2-8-per---granted-permission-exercise-and-non-prohibition.md

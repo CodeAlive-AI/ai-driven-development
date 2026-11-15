@@ -11,7 +11,7 @@ Establish a qualified failure account for the receiving question. The result con
 
 ### MNT.3:2 - Problem
 
-Observation, diagnosis and consequence are easily collapsed. A high vibration value is an observation under particular measurement conditions. A damaged bearing is a condition claim. A lubrication mechanism is a causal explanation. Loss of district-heating service is a possible System-level consequence. Evidence supporting one does not automatically support the others.
+Observation, diagnosis and consequence are easily collapsed. A high vibration value is an observation under particular measurement conditions. A damaged bearing is a condition claim. A lubrication mechanism is a causal explanation. Loss of district-heating service is a possible System-level consequence. Each claim needs evidence for the inference it makes.
 
 Maintenance history adds another ambiguity: a removed component may have failed, been replaced preventively or been removed because another fault was suspected. Counting all removals as failures can change a policy for the wrong reason.
 
@@ -23,7 +23,7 @@ Detailed inquiry may discriminate mechanisms, but it consumes access, specialist
 
 State the functioning question and the failure claim that would change the decision. Separate a complete loss, degraded contribution and loss of a protective function. Define the event sufficiently for another reader to distinguish it from an inspection finding or preventive removal.
 
-Recover available evidence at its actual scope. For a physical component, this can include operating conditions, measurements, photographs, inspection returns, installation and removal facts, applicable configuration and the sequence of earlier work. Preserve when and how observations were obtained. An occurrence reconstructed from an operator's report has a different evidential limit from a directly inspected fracture surface.
+Establish what the available evidence covers. For a physical component, this can include operating conditions, measurements, photographs, inspection returns, installation and removal facts, applicable configuration and the sequence of earlier work. Preserve when and how observations were obtained. An occurrence reconstructed from an operator's report has a different evidential limit from a directly inspected fracture surface.
 
 Build the smallest useful causal account. Connect the required function to the observed departure, candidate mechanism, local effect, System effect and consequence. A short table can keep alternatives visible:
 
@@ -33,9 +33,9 @@ Build the smallest useful causal account. Connect the required function to the o
 | Alignment or installation problem | A change associated with installation or operating load | Existing alignment and installation records, or a justified discriminating check. |
 | Measurement or operating-context change | A discontinuity matching sensor, speed or load change | Comparable measurement conditions and instrument information. |
 
-These are example hypotheses, not a diagnostic rule for all pumps. Include a different mechanism when the actual evidence makes it consequential.
+These are example hypotheses. Include another mechanism if the evidence makes it consequential for the decision.
 
-If you need to construct a causal account for the maintenance question or work out what could distinguish explanations that imply different responses, use [FPF C.28.CM - Construct and Challenge a Causal Model](../../../sections/09-part-c---kernel-extension-specifications/55-c-28-cm---construct-and-challenge-a-causal-model.md). Its [measurement-and-device case (FPF C.28.CM:5.2)](../../../sections/09-part-c---kernel-extension-specifications/55-c-28-cm---construct-and-challenge-a-causal-model.md#c28cm52---construct-the-measurement-and-device-mechanisms-separately) shows how two mechanisms can explain one reading yet imply different responses. Carry this maintenance question, competing mechanisms and observation conditions into that construction. Return with the consequences each account predicts, the observation that could distinguish them or the precise premise that prevents that comparison. Use an adequate existing diagnosis directly.
+If you need to construct a causal account for the maintenance question or work out what could distinguish explanations that imply different responses, use [FPF C.28.CM - Construct and Challenge a Causal Model](../../../sections/09-part-c---kernel-extension-specifications/55-c-28-cm---construct-and-challenge-a-causal-model.md). Its [measurement-and-device case (FPF C.28.CM:5.2)](../../../sections/09-part-c---kernel-extension-specifications/55-c-28-cm---construct-and-challenge-a-causal-model.md#c28cm52---construct-the-measurement-and-device-mechanisms-separately) shows how two mechanisms can explain one reading yet imply different responses. Carry this maintenance question, competing mechanisms and observation conditions into that construction. Return with the consequences each account predicts, the observation that could distinguish them or the premise that prevents that comparison. Use an adequate existing diagnosis directly.
 
 Distinguish what is supported, what remains plausible and what is contradicted. Do not turn a possibility into a cause by placing it in a fault-tree box. Where several explanations support the same immediate recommendation, return that recommendation's evidential basis and leave the stronger causal claim unresolved. Where the alternatives require different actions, identify the smallest attainable observation that could discriminate them.
 
@@ -43,7 +43,7 @@ For population claims, recover the denominator and observation process. Operatin
 
 When selecting an investigation, compare its obtainable contribution with the whole burden. Include the effect of delay, disturbance, specimen preservation and specialist interpretation. A low-value inquiry can stop while an adequate maintenance answer remains available. If a claim has high consequence, use the applicable evidence and assurance rules for that claim; more records alone do not establish it.
 
-Return a failure account whose uncertainty changes action where necessary. Preserve evidence needed by a real later decision in the maintenance history. State a reopen condition, such as recurrence under a supposedly corrected condition or a newly inspected part contradicting the diagnosis.
+Return a failure account whose uncertainty changes action where necessary. Preserve evidence needed for a later decision in the maintenance history. State a reopen condition, such as recurrence under a supposedly corrected condition or a newly inspected part contradicting the diagnosis.
 
 ### MNT.3:5 - Archetypal Grounding
 
@@ -53,7 +53,7 @@ The planner can therefore give the recommendation now. If the selected intervent
 
 The 48-pump example exposes a different error. Group A has four relevant failure events in 20,000 operating hours; group B has six in 56,000. The comparable crude event rates are 0.20 and approximately 0.107 per 1,000 hours. The first group has fewer events but a higher exposure-adjusted rate. Neither comparison proves a causal policy difference: operating conditions, component histories, event coding and selection may differ.
 
-If two of the six records are preventive removals, even that crude rate needs correction before use. The useful result is a qualified failure account and the event-coding error, not an automatically fitted lifetime distribution.
+If two of the six records are preventive removals, even that crude rate needs correction before use. Return the corrected event classification and the failure account it supports. The corrected rate alone does not determine a lifetime distribution.
 
 ### MNT.3:6 - Bias-Annotation
 
@@ -61,7 +61,7 @@ The part found damaged at dismantling can attract all causal attention even when
 
 ### MNT.3:7 - Conformance Checklist
 
-Can the reader distinguish the required functioning, observed departure, diagnosis and consequence? Does each decision-bearing causal claim have usable evidence? Are unknown or competing explanations retained at their actual strength? For a population claim, do event definitions, exposures and observation limits support the comparison?
+Can the reader distinguish the required functioning, observed departure, diagnosis and consequence? Does each decision-bearing causal claim have usable evidence? Are unknown or competing explanations retained with the support each has? For a population claim, do event definitions, exposures and observation limits support the comparison?
 
 The requested account is complete when it supports the receiving maintenance decision or identifies its evidential limit. It need not resolve every possible root cause.
 
@@ -81,7 +81,7 @@ Mechanism, observed condition and consequence are connected in one account becau
 
 ### MNT.3:11 - SoTA-Echoing
 
-The practice question is how much failure knowledge is sufficient for a maintenance choice. The selected line combines physical explanation with qualified observation and decision relevance. It adapts the failure-mechanism emphasis in the [2025 maintenance optimization account](https://orbilu.uni.lu/bitstream/10993/61558/1/1-s2.0-S0377221724005241-main.pdf) and uses [FPF A.10](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) and [FPF C.16](../../../sections/09-part-c---kernel-extension-specifications/27-c-16---measurement-metrics-characterization.md) for evidential and measurement claims. Against fault-code counting or mandatory exhaustive root-cause analysis, this Method uses the separated claims, observation limits and conditional inquiry in the Solution. The trade-off is an explicitly narrower causal answer in exchange for useful timely action. Reopen when new failure or exposure evidence can distinguish a consequential alternative.
+The practice question is how much failure knowledge is sufficient for a maintenance choice. The selected line combines physical explanation with qualified observation and decision relevance. It adapts the failure-mechanism emphasis in the [2025 maintenance optimization account](https://orbilu.uni.lu/bitstream/10993/61558/1/1-s2.0-S0377221724005241-main.pdf) and uses [FPF A.10](../../../sections/07-cluster-a-v---constitutional-principles-of-the-kernel/07-a-10---evidence-graph-referring-claim-bound-evidence-and-pro.md) and [FPF C.16](../../../sections/09-part-c---kernel-extension-specifications/27-c-16---measurement-metrics-characterization.md) for evidential and measurement claims. Against fault-code counting or mandatory exhaustive root-cause analysis, this Method uses the separated claims, observation limits and conditional inquiry in the Solution. The trade-off is stating the limits of the causal answer so that useful action can proceed in time. Reopen when new failure or exposure evidence can distinguish a consequential alternative.
 
 ### MNT.3:12 - Relations
 

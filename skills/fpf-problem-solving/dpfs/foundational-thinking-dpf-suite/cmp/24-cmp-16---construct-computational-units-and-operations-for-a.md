@@ -14,13 +14,13 @@ For example, deciding whether each text fragment is locally balanced loses infor
 
 The reader can follow operations on a state and an elementary invariant argument. C.29.2 supplies the computational question and the available model. MATH.17 supplies composition and its closure conditions; MATH.18 supplies interpretation between levels. CMP.2, CMP.10, CMP.12 and CMP.14 develop particular recursive, storage, interpretation and interaction contributions when the construction below needs them.
 
-Keep known adequate units and operations when they already serve the work. Use CMP.10 directly when the operations are sufficiently known and only their representation needs improvement. Use CMP.13 when the question is how to obtain a cheaper sound analysis of a computation. This method instead constructs the units and operations used to obtain the behavior itself. It does not replace the subject inquiry that determines what behavior is useful.
+Keep units and operations that serve the work. Use CMP.10 directly when the operations are sufficiently known and only their representation needs improvement. Use CMP.13 when the question is how to obtain a cheaper sound analysis of a computation. This method instead constructs the units and operations used to obtain the behavior itself. It does not replace the subject inquiry that determines what behavior is useful.
 
 ### CMP.16:2 - Problem
 
 How can units, operations and their assembly be constructed together so that the required computational whole can be obtained, understood and changed without inventing a missing connection at every use?
 
-Starting only from small familiar operations can make the whole unnecessarily difficult. Starting only from an elegant abstract interface can hide an unimplementable operation or an excluded case. The construction must work in both directions: from the whole's requirements to the contributions it needs, and from available contributions to a whole that actually meets those requirements.
+Starting only from small familiar operations can make the whole unnecessarily difficult. Starting only from an elegant abstract interface can hide an unimplementable operation or an excluded case. The construction must work in both directions: from the whole's requirements to the contributions it needs, and from available contributions to a whole that meets those requirements.
 
 ### CMP.16:3 - Forces
 
@@ -35,7 +35,7 @@ Starting only from small familiar operations can make the whole unnecessarily di
 
 ### CMP.16:4 - Solution
 
-Construct a provisional whole with proposed units and operations, use its first consequential failure to revise them together, and justify the resulting level against both its clients and its implementation. The moves below can return to one another. An already sufficient interface needs neither reinvention nor an exhaustive search for alternatives.
+Construct a provisional whole with proposed units and operations, use its first consequential failure to revise them together, and justify the resulting level against both its clients and its implementation. The moves below can return to one another. Use an existing interface when it meets the requirements.
 
 #### CMP.16:4.1 - Recover the behavior and the freedom to change its construction
 
@@ -75,7 +75,7 @@ Construct each required operation from available steps, or obtain a sufficiently
 
 Then establish the whole-forming claim. For a pure assembly, show that the join of admissible contributions has the required meaning and remains usable in the next join. Account for base and empty cases. For a transition system, show that initialization establishes the state condition and every permitted transition maintains it; include the environmental actions that can affect that condition. Induction can then cover arbitrary finite assemblies or execution prefixes under those premises. It does not by itself prove eventual response or cover an omitted operation.
 
-Check coverage separately. Can every required input or behavior be obtained with these constructors and operations? Restricting a unit to internally balanced fragments, for example, would exclude valid whole texts split inside a nested expression. An invariant can be perfectly preserved while that restriction makes the construction unsuitable. Broaden the unit, change the assembly or report the actual limitation.
+Check coverage separately. Can every required input or behavior be obtained with these constructors and operations? Restricting a unit to internally balanced fragments, for example, would exclude valid whole texts split inside a nested expression. An invariant can be perfectly preserved while that restriction makes the construction unsuitable. Broaden the unit, change the assembly or report the limitation.
 
 The construction may depend on a supplied primitive. Keep that dependency visible and return to C.29.3 when its realization is unsettled. CMP.14 establishes the permitted interference and progress when an operation must remain indivisible or coordinate participants. An abstract operation is a useful design result before that realization is available, but it is not yet an executable promise in that environment.
 
@@ -97,7 +97,7 @@ At the physical boundary, preparation, actual evolution and readout must supply 
 
 Count constructing and converting units, performing their operations, maintaining their invariants, communicating and obtaining the final observations. Include the information retained for later operations. CMP.10 compares concrete storage and access choices; CMP.3 handles shared subcomputations. A cheap abstract join can still require large construction or output work.
 
-Choose a sufficient implementation without unnecessarily exposing it above the boundary. This permits a later replacement when it preserves the operations and observations on which clients rely. A change from a list to a tree can preserve a sequence interface while changing costs. A change from ordered delivery to unordered delivery does not preserve a client that observes order.
+Choose a sufficient implementation without unnecessarily exposing it above the boundary. This permits a later replacement when it preserves the operations and observations on which clients rely. A change from a list to a tree can preserve a sequence interface while changing costs. Unordered delivery can reverse messages whose order a client relies on.
 
 When no arrangement satisfies all demands, return the precise conflict: a missing observation, an unsupported operation, an unaffordable construction or an unavailable realization. CMP.1 and CMP.11 can establish relevant impossibility or lower-bound claims; a failed design alone does not establish them. A qualified weaker result is useful only when its receiver accepts the difference.
 
@@ -105,7 +105,7 @@ When no arrangement satisfies all demands, return the precise conflict: a missin
 
 Vary an input family, required observation, operation, interaction or resource limit that could alter the design. Follow its effect through the abstraction and back to the whole. Ask whether the old unit still retains enough information, whether the allowed operations still preserve its meaning, and whether their implementation still meets the conditions of use.
 
-Preserve unaffected constructions. A new query can require another summary while leaving the source composition intact. A concurrency requirement can preserve abstract operations while invalidating a sequential implementation. A changed subject interpretation can leave an algorithm correct for its earlier mathematical question but unsuitable for the receiving work. These are different returns.
+Preserve unaffected constructions. A new query can require another summary while leaving the source composition intact. A concurrency requirement can preserve abstract operations while invalidating a sequential implementation. A changed subject interpretation can leave an algorithm correct for its earlier mathematical question but unsuitable for the receiving work.
 
 Finish with the usable units and operations, their construction, the reason their permitted assembly obtains the required behavior, and the implementation and resource conditions on which that use depends. It must let the recipient perform the intended whole without privately inventing its missing join.
 
@@ -128,7 +128,7 @@ open  = (1,0)
 close = (-1,-1)
 ```
 
-The formula is obtained from the required prefix observation, not guessed from a convenient tuple. It gives the summary of concatenation. Consequently it is associative on summaries of fragments: either grouping describes the same ordered text and the same prefix minimum. It is not commutative. Combining `open` with `close` gives `(0,0)`; reversing them gives `(0,-1)`. The identity `empty` follows from including the empty prefix.
+The formula follows from the prefix calculation above. It gives the summary of concatenation. Consequently it is associative on summaries of fragments: either grouping describes the same ordered text and the same prefix minimum. It is not commutative. Combining `open` with `close` gives `(0,0)`; reversing them gives `(0,-1)`. The identity `empty` follows from including the empty prefix.
 
 For `(()`, the summary is `(1,0)`; for `())`, it is `(-1,-1)`. Their join is `(0,0)`, so the whole is balanced. A whole summary is balanced exactly when its total is zero and its prefix minimum is nonnegative. A possible implementation is:
 
@@ -165,7 +165,7 @@ The original balance decision remains valid. The stronger observation changes th
 
 #### CMP.16:5.2 - Construct an operation boundary for a continuing capacity condition
 
-A service grants permission to use at most `K` resource slots at once, where `K` is a fixed nonnegative integer. Its computational responsibility is to track outstanding grants and refuse another when `K` are active. The relation between a grant and actual resource use is a further requirement: cooperating clients begin use under their own grant and release it only after use ends. Authentication against a caller trying to release another caller's grant is a separate requirement. The computation alone cannot prevent an uncooperative client from using a physical resource.
+A service grants permission to use at most `K` resource slots at once, where `K` is a fixed nonnegative integer. Its computational responsibility is to track outstanding grants and refuse another when `K` are active. The relation between a grant and resource use is a further requirement: cooperating clients begin use under their own grant and release it only after use ends. Authentication against a caller trying to release another caller's grant is a separate requirement. The computation alone cannot prevent an uncooperative client from using a physical resource.
 
 Exposing `read_count` and `write_count` leaves each client to reconstruct admission and release. A more useful unit is the grant service itself, with `acquire` and `release(ticket)` operations. In an initially sequential model, retain a set `active` and a monotonically increasing ticket number. `acquire` returns `Busy` if `len(active) == K`; otherwise it obtains a fresh ticket, adds it to `active` and returns it. `release` removes a ticket only if it is active, otherwise reports that no active grant matches it. The ticket, rather than an unqualified decrement, identifies what can be released.
 
@@ -173,7 +173,7 @@ Initialization establishes `active = {}`. An admitted acquisition changes its si
 
 This is a safety argument for the stated operations. It does not establish that a waiting caller eventually receives permission; that requires available releases and a selection policy. Nor does it settle retry after a lost acquisition reply. If the required behavior gives one grant per logical request, request identity and the retry protocol must be added through CMP.14. The old operations still explain their narrower behavior but not that stronger service.
 
-**Changed execution condition.** Two callers now execute the acquisition body concurrently. With `K = 1`, both can observe an empty set before either inserts a ticket, then insert different tickets. The abstract invariant was not wrong; the implementation no longer supplies the atomic transition it assumed. One remedy serializes the check and insertion through an available exclusive mechanism. CMP.14 develops its permitted histories and progress conditions; C.29.3 establishes whether the chosen executor supplies the required operation.
+**Changed execution condition.** Two callers now execute the acquisition body concurrently. With `K = 1`, both can observe an empty set before either inserts a ticket, then insert different tickets. The concurrent implementation no longer supplies the atomic transition required by the invariant argument. One remedy serializes the check and insertion through an available exclusive mechanism. CMP.14 develops its permitted histories and progress conditions; C.29.3 establishes whether the chosen executor supplies the required operation.
 
 The ticket implementation also has conditions. A bounded counter can wrap, and a restart can forget active grants. Restricting the lifetime, preserving state or changing the ticket construction needs an argument covering the actual use. Those conditions can select another representation without changing the abstract service, or reveal that its former promise cannot be maintained. This is a continuing computational abstraction, not a terminating calculation whose final count alone defines success.
 
@@ -205,7 +205,7 @@ Use evidence suited to the conclusion. A trace can refute a claim; a general pre
 | Preserve an invariant by excluding required inputs | Check coverage separately and revise the unit or the receiving promise. |
 | Call a complex operation primitive and count it as free | Obtain its implementation and include its relevant cost and progress conditions. |
 | Hide a state distinction that a later continuation observes | Strengthen the abstraction or explicitly restrict that continuation. |
-| Treat separate correctness as a joint guarantee | Establish the permitted composition and interference through the actual whole. |
+| Treat separate correctness as a joint guarantee | Establish the permitted composition and interference for the components operating together. |
 | Treat a new encoding as a new physical arrangement | Obtain the preparation and realization that the proposed operation requires. |
 
 ### CMP.16:9 - Consequences
@@ -224,7 +224,7 @@ The method permits several levels and several implementations. Reveal the detail
 
 ### CMP.16:11 - SoTA-Echoing
 
-[Dijkstra's Notes on Structured Programming, EWD249](https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html) provide a historical argument for developing data organization and operations together and for reasoning across levels while constructing a program. This method retains that constructive coupling without making one sequential programming style the boundary of computational organization.
+[Dijkstra's Notes on Structured Programming, EWD249](https://www.cs.utexas.edu/~EWD/transcriptions/EWD02xx/EWD249/EWD249.html) provide a historical argument for developing data organization and operations together and for reasoning across levels while constructing a program. This construction also applies when the units perform concurrent work, as in :5.2.
 
 [SICP's abstraction barriers](https://sicp.sourceacademy.org/chapters/2.1.2.html) give a historical worked account of clients using operations independently of a selected lower representation. Here the boundary is selected from the required whole and includes consequential continuing behavior. A simpler direct representation remains preferable when the boundary adds no useful independence.
 

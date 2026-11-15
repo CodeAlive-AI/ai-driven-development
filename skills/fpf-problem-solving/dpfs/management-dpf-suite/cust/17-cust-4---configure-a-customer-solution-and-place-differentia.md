@@ -22,7 +22,7 @@ A technically selectable combination may be unusable, confusing or too expensive
 | Useful variety and decision burden | Which choices matter to the recipient, and which can be safely handled by a default. |
 | Early preparation and wasted work | How much common work can be completed before uncertain demand is known. |
 | Late differentiation and lead time | What customer-dependent work can actually finish inside the promise. |
-| Customer autonomy and qualified assistance | When a person can choose directly and when an expert must help. |
+| Customer autonomy and qualified assistance | When the customer’s decision maker can choose directly and when expert help is required. |
 | Technical option and service obligation | Whether the selected variant changes support, evidence, access or responsibility. |
 
 ### CUST.4:4 - Solution
@@ -43,7 +43,7 @@ A direct configurator suits choices whose consequences the recipient can underst
 
 Use defaults and recommendations as explained assistance, not hidden commitments. When a choice transfers work to the recipient, show that work. For example, customer-hosted delivery may require local monitoring, updates and access arrangements that provider-hosted delivery supplies differently.
 
-The result is a selected or short-listed combination with fit grounds and remaining conditions. If no combination fits, say what fails and return the substantive difference. Do not add an unqualified option merely to make the form submit.
+The result is a selected or short-listed combination with fit grounds and remaining conditions. If no combination fits, say what fails and return the substantive difference. An option the form will accept still needs qualified fit and provision.
 
 #### CUST.4:4.3 - Place common work and customer-dependent work
 
@@ -56,15 +56,15 @@ Compare at least the feasible early and late arrangements. Common preparation mi
 | Prepare a complete variant early | Short response after selection. | Demand and allowed variation justify inventory, reservation or maintenance of that variant. |
 | Prepare a common base, finish after selection | Reuse of preparation with less premature differentiation. | Final work, inputs and qualified performers remain available within the promise. |
 | Start most work after the order | Less speculative preparation and greater local adaptation. | Lead time, workload and cost remain acceptable. |
-| Obtain a partner contribution at the needed point | Access to a capability or location not held internally. | The contribution, coordination and failure response are actually obtainable. |
+| Obtain a partner contribution at the needed point | Access to a capability or location not held internally. | The contribution, coordination and failure response are obtainable. |
 
-Do not assume later is always better. Late calibration can become the bottleneck. Early software preparation can avoid customer delay but require maintaining many variants. Physical stock and software configuration have different cost and failure models; carry only the relevant dependence idea between them.
+Late calibration can become the bottleneck. Early software preparation can avoid customer delay but require maintaining many variants. Physical stock and software configuration have different cost and failure models; carry only the relevant dependence idea between them.
 
 #### CUST.4:4.4 - Construct the complete chosen route
 
 Follow the selected member from preparation to acceptance. Name the customer-dependent input, its supplier and required arrival time. Join it to the operation that consumes it. Resolve what happens if it is late, ambiguous or unusable.
 
-Obtain an operating-capacity result through [OPS.10 — Qualify Operating Capacity Under Variability](../ops/40-ops-10---qualify-operating-capacity-under-variability.md) when variability or a shared resource can defeat the timing. Receive more than an average utilization figure: use the relevant demand mix, waiting, variability, resource availability and supported operating conditions. Revise the differentiation point or promise if they do not fit.
+Obtain an operating-capacity result through [OPS.10 — Qualify Operating Capacity Under Variability](../ops/40-ops-10---qualify-operating-capacity-under-variability.md) when variability or a shared resource can defeat the timing. Check the relevant demand mix, waiting, variability, resource availability and supported operating conditions. An average utilization figure alone cannot settle the timing. Revise the differentiation point or promise if they do not fit.
 
 Use CUST.6 where the route itself needs a repeatable delivery method. Use CUST.7 for the complete resource comparison. A configuration with a shorter quoted installation can be worse when qualification, customer preparation or support is included.
 
@@ -125,13 +125,13 @@ The supported result is a choice and delivery arrangement under named conditions
 
 ### CUST.4:10 - Architectural Rationale
 
-Configuration and differentiation are joined because a selected option determines work, timing and responsibility. Treating choice as a front-end task and postponement as a back-end task can hide their common constraint: the recipient must actually obtain the chosen result.
+Configuration and differentiation are joined because a selected option determines work, timing and responsibility. Treating choice as a front-end task and postponement as a back-end task can hide their common constraint: the recipient must obtain the chosen result.
 
 ### CUST.4:11 - SoTA-Echoing
 
 The method joins Salvador, de Holan and Piller's choice navigation and robust process design with the customer order decoupling tradition. The primary abstract of Harfeldt-Berg and Olhager's 2024 review supports considering multiple contextual factors.
 
-Naldi, Galizia and Bortolini's optimization study shows a concrete storage-cost/customization-time trade-off under explicit demand, availability and cost assumptions. CUST adopts the need for a joint comparison and rejects a universal rule that postponement is best. Use a qualified optimization model when its assumptions fit; use the supported operating comparison when they do not.
+Naldi, Galizia and Bortolini's optimization study shows a concrete storage-cost/customization-time trade-off under explicit demand, availability and cost assumptions. CUST compares early and late differentiation under the conditions of the case. Use a qualified optimization model when its assumptions fit; use the supported operating comparison when they do not.
 
 The full SYSE.8 method supplies the engineering offering branch. Reopen this method's arrangement when an observed queue, customer burden or responsibility change defeats its present selection rule.
 

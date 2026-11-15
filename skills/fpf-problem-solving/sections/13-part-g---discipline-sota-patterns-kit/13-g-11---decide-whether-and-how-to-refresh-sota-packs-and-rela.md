@@ -28,7 +28,7 @@ A team may rerun unrelated work, continue using an unsupported result or publish
 
 The practitioner first decides what the available support permits for the receiving use. A shared premise can reopen several dependent results while leaving independent results usable. When upkeep is justified, the refresh plan names that scope, its source and policy basis, and the selected actions. The resulting report records the work performed.
 
-When a later or replacement source may change a claim and the receiving uses must first be found and revalidated, use `A.10.1` for the bounded search frame, discovery coverage and gaps, exact-use test, action-changing reach, application of the direct subject guidance, and the independently obtained subject result.
+When a later or replacement source may change a claim and the receiving uses must first be found and revalidated, use `A.10.1` for the bounded search frame, discovery coverage and gaps, exact-use test, the extent of the claims or actions that may need revision, application of the direct subject guidance, and the independently obtained subject result.
 
 `G.11` continues to govern source currentness, decay, refresh planning, and refresh reporting. Use a separately established currentness result or independently obtained subject result to plan later refresh under its governing pattern.
 

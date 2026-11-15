@@ -71,7 +71,7 @@ From the available definitions, equations, hypotheses or objects, derive consequ
 
 Compare the expressions produced with the expressions needed. Their difference often identifies the lemma: an operation must commute past a repeated operation, an equality must survive a map, or a parameter must be allowed to vary. State that relation with all operands and hypotheses.
 
-Then ask two questions together: can the lemma be established from what is available, and does it actually complete the next inference? Test the proposed statement on a small revealing case before investing in a long argument when such a case could defeat it. MATH.6 constructs a countermodel when a false intermediary is suspected.
+Then ask two questions together: can the lemma be established from what is available, and does it complete the next inference? Test the proposed statement on a small revealing case before investing in a long argument when such a case could defeat it. MATH.6 constructs a countermodel when a false intermediary is suspected.
 
 Use the simplest sufficient connection. If substitution and a supplied identity finish the argument, no separate named lemma is needed. If several later steps need the same derived fact, prove it once and use it with its conditions.
 
@@ -79,7 +79,7 @@ When an auxiliary claim asks for more than the next inference needs, try a weake
 
 #### MATH.19:4.4 - Change the carried claim when a step needs more
 
-At a stalled step, inspect what it actually consumes. It may need the claim for a different parameter, an additional retained quantity, or all smaller inputs instead of only the immediate predecessor.
+At a stalled step, inspect what it consumes. It may need the claim for a different parameter, an additional retained quantity, or all smaller inputs instead of only the immediate predecessor.
 
 Strengthen or generalize the carried claim to supply that information, then recheck its starting cases and every affected step. MATH.4 develops the corresponding inductive constructor and property proof. A stronger hypothesis inside an induction argument must come from the chosen induction principle and its proved cases.
 
@@ -101,7 +101,7 @@ Write enough of the completed argument for another prepared reader to recover th
 
 A completed proof supplies its conclusion under the stated assumptions. Use that result in the next mathematical construction, model argument or algorithmic design. When a changed premise invalidates a lemma, reopen its dependent steps and retain arguments that still apply.
 
-An incomplete proof plan can still locate useful work: name the remaining lemma, its available premises, and the step it would close. This can support another reader, a specialist or an AI agent without concealing the open part. If a counterexample defeats the claim, return it and the failed premise or implication.
+An incomplete proof plan can still locate useful work: name the remaining lemma, its available premises, and the step it would close. These details can be passed to whoever continues the proof. If a counterexample defeats the claim, return it and the failed premise or implication.
 
 An obstruction can also motivate changing an axiom or developing a conjecture. Carry the failed relation and the intended use into that new mathematical question.
 
@@ -115,7 +115,7 @@ Work backward from injectivity: choose arbitrary a,b in A and assume f(a)=f(b). 
 
 g(f(a))=g(f(b)).
 
-Substitute the two given identities to obtain a=b. The intermediate equality connects the assumption to the goal; no larger theory is needed.
+Substitute the two given identities to obtain a=b. The intermediate equality connects the assumption to the goal.
 
 Now replace the given identity by f(g(b))=b for every b in B. The same proof cannot simplify g(f(a)). What it does supply is surjectivity of f: for an arbitrary b, choose a=g(b), then f(a)=b.
 
@@ -133,7 +133,7 @@ The base n=0 holds. At the next step, the proposed induction hypothesis gives:
 
 `(fg)^(n+1)=f^n g^n f g`.
 
-The target is `f^(n+1)g^(n+1)`. The difference exposes a missing lemma: `g^n f=f g^n`. This states precisely how to move f past the repeated g.
+The target is `f^(n+1)g^(n+1)`. The difference exposes a missing lemma: `g^n f=f g^n`. This states how to move f past the repeated g.
 
 Prove that lemma by induction. At n=0 both sides are f. If it holds at n, then:
 
@@ -143,9 +143,9 @@ The second equality uses gf=fg; the third uses the lemma's induction hypothesis.
 
 `f^n g^n f g=f^n f g^n g=f^(n+1)g^(n+1)`.
 
-The two inductions now have separate proved responsibilities. MATH.4 supplies their general induction method; the present work found which additional statement makes the main step possible.
+One induction proves the commutation lemma. The other uses it to prove the formula for every n. MATH.4 supplies their general induction method; the present work found which additional statement makes the main step possible.
 
-Remove the commutation premise. On integers, `f(x)=x+1` and `g(x)=2x` give `(fg)^2(0)=3`, while `f^2 g^2(0)=2`. The theorem has become false. Retaining the premise or retaining the actual interleaved composition are different useful responses; continuing the old rearrangement would lose the result needed by the calculation.
+Remove the commutation premise. On integers, `f(x)=x+1` and `g(x)=2x` give `(fg)^2(0)=3`, while `f^2 g^2(0)=2`. The theorem has become false. Retaining the premise or retaining the interleaved composition are different useful responses; continuing the old rearrangement would lose the result needed by the calculation.
 
 #### MATH.19:5.3 - Generalize a parameter to make the proof close
 
@@ -186,10 +186,10 @@ For the argument being constructed:
 - The objects, variable scope, assumptions and wanted conclusion are recoverable.
 - Each backward obligation has a stated implication to the claim it is meant to establish.
 - Each reused or newly proved lemma has its premises satisfied at the point of use.
-- A strengthened induction claim supplies the actual changed parameter or retained information, with its starting cases and step rechecked.
+- A strengthened induction claim supplies the changed parameter or retained information, with its starting cases and step rechecked.
 - Every admitted case is covered, and circular dependence is discharged by a valid argument such as induction.
 - The final statement is the one the mathematical work needs; any additional applicability condition is visible.
-- The result is a completed argument, a counterexample, or a particular remaining mathematical obligation with a useful continuation.
+- The result is a completed argument, a counterexample, or a remaining mathematical obligation with a useful continuation.
 
 ### MATH.19:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -213,7 +213,7 @@ Backward obligations expose what would suffice; forward constructions expose wha
 
 Induction, countermodels, interpretation and witness extraction contribute different operations. The stalled inference determines which contribution the argument needs: the list example requires a varying parameter, while the composition example requires a separately proved commutation relation.
 
-The proof plan and its completion have different uses. A plan can locate a lemma for a collaborator; a completed argument supports the mathematical conclusion. Making that distinction visible permits useful incomplete work without treating the remaining obligation as already solved.
+The proof plan and its completion have different uses. A plan can locate a lemma for a collaborator; a completed argument supports the mathematical conclusion.
 
 ### MATH.19:11 - SoTA-Echoing
 

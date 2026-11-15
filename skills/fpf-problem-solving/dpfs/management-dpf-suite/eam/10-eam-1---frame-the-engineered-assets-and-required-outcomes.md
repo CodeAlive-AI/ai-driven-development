@@ -7,7 +7,7 @@
 
 Use this pattern when an asset decision lacks a clear service or value question. A pump has become expensive to maintain, an asset register has been completed, or a replacement budget is available, but the practitioner still needs to establish what the choice should achieve.
 
-Begin with the requested answer: for which asset and receiving use should the practitioner compare continued use or change, over what horizon? Agree with the decision maker which options to compare for the named asset, which service they must provide, and over what period. An existing adequate framing can be retained.
+Identify the answer the recipient needs. Agree with the decision maker on the asset, the options for continuing or changing its use, the service those options must provide, and the comparison period. An existing adequate framing can be retained.
 
 A single asset can need this work. When the question is only how to maintain an already selected function, use the applicable maintenance guidance directly.
 
@@ -19,7 +19,7 @@ Another mistake begins with a favored action. Calling the question “replace th
 
 ### EAM.1:3 - Forces
 
-A narrow boundary makes comparison manageable, while a missing dependency can reverse the answer. Current users, future users and the people funding the asset can value different outcomes. A short horizon can conceal renewal costs; a remote horizon can invite unsupported forecasts. Select the boundary and precision needed for the actual decision.
+A narrow boundary makes comparison manageable, while a missing dependency can reverse the answer. Current users, future users and those funding the asset can value different outcomes. A short horizon can conceal renewal costs; a remote horizon can invite unsupported forecasts. Select the boundary and precision needed for the actual decision.
 
 ### EAM.1:4 - Solution
 
@@ -33,7 +33,7 @@ Choose the horizon and perspective of comparison. State whose costs, service, ri
 
 Write a short framing that identifies the assets, use, desired result, horizon and material constraints. It can be ordinary prose. Keep unresolved facts only when they change the next question. Use [EAM.2](11-eam-2---relate-assets-to-strategy-services-and-required-capa.md) for an unclear service contribution and [EAM.3](12-eam-3---establish-the-asset-information-and-configuration-ba.md) for an unclear information basis.
 
-Stop when the framing allows the recipient to ask or answer the intended asset question. A request to compare two supported options does not require reconstructing the whole enterprise strategy or completing its asset register. Reopen when the service, asset boundary, horizon or actual decision scope changes.
+Stop when the framing allows the recipient to ask or answer the intended asset question. Reopen when the service, asset boundary, horizon or actual decision scope changes.
 
 ### EAM.1:5 - Archetypal Grounding
 
@@ -45,7 +45,7 @@ If D competes with A, B and C for the same funding, extend the comparison to tha
 
 ### EAM.1:6 - Bias-Annotation
 
-The person requesting the investment can dominate the framing. Ask which service users bear a loss, whose continuing work increases and which costs fall outside the requesting department. Include those parties through the consequences that matter.
+The party requesting the investment can dominate the framing. Ask which service users bear a loss, whose continuing work increases and which costs fall outside the requesting department. Include those parties through the consequences that matter.
 
 ### EAM.1:7 - Conformance Checklist
 
@@ -63,13 +63,13 @@ The next analysis can use a shared question and stop at a useful answer. Some ap
 
 ### EAM.1:10 - Architectural Rationale
 
-Framing comes from the use of assets because that use determines relevant value, performance and alternatives. A register-first or budget-first approach remains useful for information and constraints but cannot select the decision's purpose. A sufficient framing supports direct use for the selected asset question.
+Framing comes from the use of assets because that use determines relevant value, performance and alternatives. A register-first or budget-first approach remains useful for information and constraints but cannot select the decision's purpose.
 
 ### EAM.1:11 - SoTA-Echoing
 
 For deciding what to compare for an engineered asset, select a service-and-value question with a stated recipient, horizon and material dependencies. Adopt the proportional decision reasoning in IAM's *An Anatomy of Asset Management*, version 4, July 2024, decision-making and life-cycle investment discussion ([pp. 72–75](https://theiam.org/media/5615/iam-anatomy-version-4-final.pdf#page=72)). Adapt it in the Solution by identifying the requested answer before expanding the asset or information boundary. The resulting question can concern D alone while retaining a shared funding or service condition that would change its answer.
 
-A serious alternative is to begin by preparing or refreshing the broader asset-management plan. GFMAM's *Asset Management Landscape*, third edition, June 2024, section 3.4 ([pp. 35–36](https://gfmam.org/sites/default/files/2024-06/GFMAM_AM_Landscape_v3.0_English_2024.pdf#page=35)), supplies that planning comparator. Such a plan is useful when the organization needs to settle its connected activities, rather than one already bounded option choice. For D's question, requiring that wider planning work first would also involve assets whose treatment cannot change the comparison. The selected framing retains the consequential dependencies with less preparatory work; it deliberately gives no conclusion about the whole register or enterprise plan. Reopen the framing choice when an omitted dependency changes an option's eligibility or value, the decision maker asks for a wider plan, or a changed service or horizon makes the narrow question insufficient.
+A serious alternative is to begin by preparing or refreshing the broader asset-management plan. GFMAM's *Asset Management Landscape*, third edition, June 2024, section 3.4 ([pp. 35–36](https://gfmam.org/sites/default/files/2024-06/GFMAM_AM_Landscape_v3.0_English_2024.pdf#page=35)), supplies that planning comparator. Such a plan is useful when the organization needs to settle its connected activities, rather than one already bounded option choice. For D's question, requiring that wider planning work first would also involve assets whose treatment cannot change the comparison. The selected framing retains the consequential dependencies with less preparatory work. Reopen the framing choice when an omitted dependency changes an option's eligibility or value, the decision maker asks for a wider plan, or a changed service or horizon makes the narrow question insufficient.
 
 ### EAM.1:12 - Relations
 

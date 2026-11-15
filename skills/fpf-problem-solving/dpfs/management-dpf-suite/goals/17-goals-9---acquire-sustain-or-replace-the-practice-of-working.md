@@ -7,7 +7,7 @@
 
 **Use this when** people or an organization need to become able to use the goal methods, repeated goal-work failures persist, or the present practice should be retained, changed or discontinued. The object is the capability and working arrangement that performs the practice. The result is a feasible acquisition or repair, a supported continuing contribution, or a warranted replacement.
 
-If competent participants already supply the needed result under current conditions, use that contribution. An introductory workshop, software installation or new framework name is unnecessary unless it addresses a real missing part.
+If competent participants supply the needed result under current conditions, use that contribution. Add an intervention only for a contribution that is missing.
 
 ### GOALS.9:2 - Problem
 
@@ -23,7 +23,7 @@ Acquisition uses capacity that also serves current work. Whole-task practice sup
 
 Choose a representative receiving task and a consequential variation. Examples include constructing a defensible objective/KR set, reconciling a shared specialist conflict, using adverse progress to decide help, or revising a goal without erasing a promise. State what a capable performer must notice, construct and decide, and what assistance can remain. The target is performance in this work rather than recollection of terminology.
 
-Inspect available results first. A skilled team with an adequate current practice may already supply the required contribution. Reuse it and change only the actual gap. When a result is missing, distinguish a subject-method omission, a human capability gap, unavailable provision, an ineffective assignment or a participation/consequence conflict. OCE.10 supplies the organizational investigation when rival explanations change the remedy.
+Inspect available results first. A skilled team with an adequate current practice may already supply the required contribution. Reuse it and address any remaining gap. When a result is missing, distinguish a subject-method omission, a human capability gap, unavailable provision, an ineffective assignment or a participation/consequence conflict. OCE.10 supplies the organizational investigation when rival explanations change the remedy.
 
 #### GOALS.9:4.2 - Compare ways of obtaining the contribution
 
@@ -35,7 +35,7 @@ For human development, HCD.2 supplies the programme comparison. Choose complete 
 
 Demonstrate the difficult operation with its reasons, let the participant attempt it, examine the evidence, give usable feedback and let them correct the attempt. HCD.9 supplies the practice episode. A useful goal-construction exercise asks the learner to find a plausible all-green failure and repair the KRs while preserving the objective. A coordination exercise changes a dependency after local plans were agreed and asks which commitments and means must change.
 
-Choose variation from the intended work. Varying only numbers will not show whether a person distinguishes research completion from delivery success or human mastery from agent output. HCD.10 supplies selection of variation, spacing and progression; HCD.11–12 qualify performance and transfer when those claims matter. Retain suitable guidance and tools if later work permits them. Observe independence only for the operation whose independent performance is actually needed.
+Choose variation from the intended work. Varying only numbers will not show whether a person distinguishes research completion from delivery success or human mastery from agent output. HCD.10 supplies selection of variation, spacing and progression; HCD.11–12 qualify performance and transfer when those claims matter. Retain suitable guidance and tools if later work permits them. Observe independence only for the operation that later work requires the person to perform independently.
 
 Place the practice in useful work when the conditions support both results. Protect the recipient's result with the needed competent assistance. Count learner and provider time and revise current allocation where necessary. A task can serve delivery and learning together, but successful delivery is not sufficient evidence for every claimed human contribution.
 
@@ -57,7 +57,7 @@ Retain, simplify, extend, replace or end the practice according to its useful co
 
 A group introduces OKRs through a presentation and a tool. Participants can fill the fields but repeatedly count initiatives as achievement and miss a shared dependency. The difficulty is not lack of field access. A capable provider works with one real objective, shows the false-success test, observes the team's repair and introduces a changed capacity condition. The team must reconstruct the goal set and obtain the affected agreement. Existing service is covered while the participants practise.
 
-The first repaired cycle is useful with the provider's assistance. If routine supported use is the intended arrangement, that can be an adequate result under its conditions. If the organization needs another team to continue after the provider leaves, the additional capability remains to be established in that receiving work. Scheduling one more introductory presentation would not establish it.
+The first repaired cycle is useful with the provider's assistance. If routine supported use is the intended arrangement, that can be an adequate result under its conditions. If the organization needs another team to continue after the provider leaves, the additional capability remains to be established in that receiving work.
 
 For a constructed cost comparison, 20 participants spend 30 minutes every two weeks on a review: 10 participant-hours per event. Adding 15 minutes adds 5 participant-hours each time. If an existing event actually supplies the same decisions, combine or replace it rather than count both. If the extra time settles an otherwise costly dependency, its burden may be justified. The arithmetic alone says nothing about the decision's value.
 
@@ -94,7 +94,7 @@ Acquisition is a separate recurring problem because knowing the goal method does
 
 ### GOALS.9:11 - SoTA-Echoing
 
-Doerr's difficult introductions, participation cases, CFR and resources show that sustained use needs more than forms. Contemporary OKR studies report related formulation, data and organizational integration difficulties, with limited causal reach. The method adopts the concrete acquisition problem and uses HCD/OCE rather than prescribing a universal pilot duration, staffing role or success percentage. Changes in needed work or available support reopen the chosen arrangement.
+Doerr's difficult introductions, participation cases, CFR and resources show that sustained use needs more than forms. Contemporary OKR studies report related formulation, data and organizational integration difficulties, with limited causal reach. Use HCD and OCE to determine what the organization needs to acquire and sustain the practice. Pilot duration, staffing and success measures depend on that need. Changes in needed work or available support reopen the chosen arrangement.
 
 ### GOALS.9:12 - Relations
 

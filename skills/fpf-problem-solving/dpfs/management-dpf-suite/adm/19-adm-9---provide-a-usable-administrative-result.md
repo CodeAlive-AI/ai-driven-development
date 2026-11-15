@@ -8,13 +8,13 @@
 
 Use this pattern when a participant needs an authorized administrative condition to become usable, or when an approval or completion message does not establish that the promised result is available. Typical cases are access that still fails, accommodation that cannot be occupied or a payment instruction whose effect is unknown.
 
-Start with what the recipient must be able to do and the provider action expected to make that possible. The first useful result is the promised usable condition with adequate evidence, or the remaining provision failure and accountable next action.
+Start with what the recipient must be able to do and the provider action expected to make that possible. The first useful result is the promised usable condition with adequate evidence, or the part supplied, any unresolved condition or effect, and the next action that is warranted.
 
-Use an adequate existing provision and recovery instruction directly. A request only for a permission answer can finish under ADM.8; a service whose promised result is a booking can finish with a usable booking. The completion criterion follows the actual promise, not a universal demand to prove all later business outcomes.
+Use an adequate existing provision and recovery instruction directly. A request only for a permission answer can finish under ADM.8; a service whose promised result is a booking can finish with a usable booking. Judge completion against what the service promised.
 
 ### ADM.9:1 - Problem frame
 
-A beneficiary, relevant permission and intended administrative condition are known sufficiently to act, or the outstanding prerequisite is explicit. A provider has the ability and assignment to perform the needed action. The handler connects that provider's work to the condition the participant will use.
+A beneficiary, relevant permission and intended administrative condition are known sufficiently to act, or the outstanding prerequisite is explicit. Identify the provider’s assignment and its ability to perform the needed action, or the gap that prevents provision. The handler connects that provider's work to the condition the participant will use.
 
 Several results may occur on the way: a request is accepted, a decision is issued, work is scheduled, a provider acts and an effect becomes usable. Each may be valuable for its own purpose. The handler must determine which one satisfies the particular service promise.
 
@@ -34,13 +34,13 @@ A blind retry can make matters worse. An unobserved payment may already have occ
 | Permission | The authorized action may be clear even when provision fails; a workaround may change its scope. |
 | Recovery | Fast retries can help reversible operations but can duplicate uncertain external effects. |
 | Evidence | Adequate confirmation should support the promised use without unnecessary work for the recipient. |
-| Continuity | A partial or unknown result needs a next action, not merely an accurate failure label. |
+| Continuity | A partial or unknown result needs enough information to decide whether the work can continue, must wait or should stop. |
 
 ### ADM.9:4 - Solution
 
 #### ADM.9:4.1 - Recover the promised usable condition
 
-Name the recipient, condition, relevant time and intended use. Recover the applicable authorization and provider assignment from existing results. Use ADM.1 or ADM.8 only for an actual unresolved framing or permission question.
+Name the recipient, condition, relevant time and intended use. Use existing evidence of the applicable authorization and provider assignment. Identify anything still missing for the promised work. Use ADM.1 or ADM.8 only for an actual unresolved framing or permission question.
 
 Describe completion so the handler and recipient can distinguish it from a preparatory step. “The researcher can retrieve the permitted document on the intended day” is different from “the administrator entered an access rule”. Conversely, when the requested result is a reservation that can later be used, occupied accommodation is not the immediate completion criterion.
 
@@ -48,15 +48,15 @@ State any prerequisite whose absence still prevents provision. An approved servi
 
 #### ADM.9:4.2 - Give the capable provider an executable request
 
-Use the existing supported channel and instruction. Supply the authorized action, actual recipient, relevant resource or destination, effective conditions and information needed to perform it. Preserve sensitive information through the applicable protected mechanism.
+Use a supported channel and instruction if one is available. If the handoff is missing, identify the provider or arrangement needed to make the request executable. Supply the authorized action, actual recipient, relevant resource or destination, effective conditions and information needed to perform it. Preserve sensitive information through the applicable protected mechanism.
 
-For a simple immediate action, the ordinary request and result may suffice. When delay, cancellation or uncertain external effects matter, preserve an identifier and evidence that allow the provider and handler to recover the same attempt. Do not create a separate job-tracking scheme for every trivial request.
+For a simple immediate action, the ordinary request and result may suffice. When delay, cancellation or uncertain external effects matter, preserve an identifier and evidence that allow the provider and handler to recover the same attempt.
 
-Identify who can investigate or repair the effect. A generic support link is insufficient if no provider is actually assigned to answer the relevant question. ADM.6 can obtain the missing contribution.
+Find who can establish or repair the effect. A support link is useful here when it reaches a capable provider. If the responsible provider cannot settle the question with the available evidence or authority, use ADM.6 to obtain the missing contribution or identify the gap.
 
 #### ADM.9:4.3 - Establish the effect needed for this use
 
-The provider performs the authorized action. The handler then uses evidence adequate for the promised effect: a recipient's successful use, a qualified provider confirmation or another observation accepted by the applicable arrangement.
+If provision remains due, the provider performs it under the applicable authorization. To establish the promised effect, the handler uses evidence such as a recipient's successful use, a qualified provider confirmation or another observation accepted by the applicable arrangement.
 
 Match that evidence to this beneficiary, resource, amount, configuration and time where those distinctions matter. A successful test with an administrator's account cannot automatically establish the beneficiary's access. One document successfully opened establishes only the scope that the observation and supporting conditions carry.
 
@@ -75,17 +75,17 @@ Locate what actually happened before choosing recovery.
 
 A failed response channel does not prove that the provider action failed. Look up or investigate the same attempt when possible. If the provider cannot establish its effect, preserve that uncertainty and restrict the dependent repeat action according to the applicable recovery rule.
 
-For a payment, ADM.10 connects the recovered effect to the obligation and records. Technical data or software recovery stays with its qualified engineering method; this pattern does not invent a rollback procedure.
+For a payment, ADM.10 connects the recovered effect to the obligation and records. If data or software must be restored, use the appropriate engineering recovery procedure.
 
 #### ADM.9:4.5 - Recover a permitted path and return the actual result
 
 Apply an adequate existing recovery instruction or permitted alternative. Confirm that it supplies the promised condition within the same relevant authorization. An alternative read channel can be sufficient; sending a downloadable copy may be outside the read grant.
 
-If the action, amount, recipient, resource or effective time changes materially, obtain the required permission result through ADM.8. An expired grant cannot be extended by treating the later use as completion of an earlier support ticket.
+If the action, amount, recipient, resource or effective time changes materially, check whether the existing grant covers the proposed use. Use ADM.8 for any permission question that remains open. An expired grant cannot be extended by treating the later use as completion of an earlier support ticket.
 
 Return the usable result and relevant limitations, or the remaining condition, competent next action and applicable time or stop condition. Distinguish successful provision, a partial usable result and an unresolved effect. Ending an investigation with a reasoned refusal is a possible case disposition, but it does not mean the requested condition was supplied.
 
-Use [SYSE.26][SYSE] when the supported interaction or failure recovery itself needs design. A single failed request with an adequate recovery path needs that path applied, not a new portal.
+Use [SYSE.26][SYSE] when the supported interaction or failure recovery itself needs design. For a single failed request, use an adequate existing recovery path if one is available. Otherwise identify the missing recovery capability.
 
 ### ADM.9:5 - Archetypal Grounding
 
@@ -97,7 +97,7 @@ An administrator installs the expected access rule and marks the request complet
 
 The existing support instruction lets the archive provider inspect the account/resource mapping for that attempt. The provider finds that the rule was associated with a different account identifier. It corrects the mapping under its assigned authority. The researcher then opens D through the permitted channel, and the evidence supports completion for the named document and time.
 
-If the service promise instead covered a larger collection, this single opening would need the applicable additional evidence of that scope. The handler does not promote a narrow observation into a whole-collection result.
+If the service promise instead covered a larger collection, this single opening would need the applicable additional evidence of that scope.
 
 If the ordinary channel remains unavailable, a supplied authorized attended-reading route may provide the same permitted use. A downloadable copy is not a substitute when the grant excludes downloading. If the usable access cannot be supplied until 4 October, the grant for 2 October does not cover that later use; the permission question reopens.
 
@@ -115,9 +115,9 @@ Provider dashboards favor events inside the provider's control. Recipients may e
 
 ### ADM.9:7 - Conformance Checklist
 
-**Recognition.** The result names the beneficiary's promised usable condition, actual provider action and evidence of effect. A partial or unknown result identifies what remains and who can act.
+**Recognition.** The result names the beneficiary's promised usable condition, what is known about provider action, and the evidence of its effect. For a partial or unknown result, identify what remains and who can act, or the capability still missing.
 
-**Assurance for reliance.** Compare the evidence with the actual recipient, resource and effective conditions. Exercise an uncertain-effect or partial-effect case where repetition could cause harm, using the existing qualified recovery method. Establish that the alternative or retry stays within its permission and does not silently duplicate completed provision.
+**Assurance for reliance.** Compare the evidence with the actual recipient, resource and effective conditions. Where repetition could cause harm, use an applicable recovery result for the uncertain or partial effect. If its coverage is insufficient, exercise the unresolved case with a qualified recovery method. Establish that the alternative or retry stays within its permission and does not silently duplicate completed provision.
 
 ### ADM.9:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -141,15 +141,15 @@ Authorization, provider action and beneficiary effect are connected but distinct
 
 The working question is how administrative handling reaches the participant's usable condition, including recovery after ambiguous provider effects. The May and July laboratories supply the access and enabling-service failures. Include the participant's effort in obtaining the service when judging whether provision is usable.
 
-The selected instruction uses [SYSE.26][SYSE], §§4.1–4.5: begin with the user's undertaking, distinguish progress from result and uncertainty, recover the same attempt before a consequential replay, and keep support connected to failed use. ADM adds the explicit institutional grant, promised condition and beneficiary correspondence.
+For a supported interaction, [SYSE.26][SYSE], §§4.1–4.5, gives the following operations: begin with the user's undertaking, distinguish progress from result and uncertainty, recover the same attempt before a consequential replay, and keep support connected to failed use. ADM adds the explicit institutional grant, promised condition and beneficiary correspondence.
 
-One alternative is to rely on a provider completion response. It is sufficient when its actual semantics and evidence establish the promised effect; it is insufficient when it only acknowledges receipt of an instruction. This comparison determines §§4.3–4.4. No particular portal, persistent job model or universal recipient test is selected.
+One alternative is to rely on a provider completion response. It is sufficient when its actual semantics and evidence establish the promised effect; it is insufficient when it only acknowledges receipt of an instruction. In §§4.3–4.4, match the provider response to the effect it actually establishes for this promise.
 
 Reopen the affected provision or recovery instruction when the promised use, authorization, provider capability or effect evidence changes, or an actual failure reveals an unsupported transition. The constructed cases establish an intelligible application, not measured service reliability.
 
 ### ADM.9:12 - Relations
 
-ADM.1 supplies the enabled condition and ADM.8 the relevant permission when either is unresolved. ADM.7 checks a needed effect claim; ADM.6 obtains a missing competent contribution. ADM.10 connects the actual effect to an obligation and participant records.
+ADM.1 supplies the enabled condition and ADM.8 the relevant permission when either is unresolved. ADM.7 checks a needed effect claim; ADM.6 helps the handler seek a missing competent contribution or identify what remains unavailable. ADM.10 connects the actual effect to an obligation and participant records.
 
 The handler applies an existing service instruction from ADM.5 where one is needed. [SYSE.26][SYSE] supplies supported-interaction and recovery design for an engineering question; engineering realization itself remains with its qualified provider and method.
 

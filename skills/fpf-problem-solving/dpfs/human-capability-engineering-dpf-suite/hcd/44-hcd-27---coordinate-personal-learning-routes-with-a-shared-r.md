@@ -5,11 +5,11 @@
 
 ### HCD.27:0 - Use This When
 
-Use this pattern when shared learning depends on individual preparation, different learners need different continuations, or a common schedule creates missed exchanges and peaks of feedback demand. A calendar can show every activity while the discussion still receives unusable material and the learner receives feedback too late to act.
+Use this method to examine or coordinate the connection between personal preparation, a shared learning episode and each learner’s subsequent work. A common timetable can leave a discussion without usable material or feedback too late to use. Different learners may need different preparation or recovery opportunities.
 
-The governed object is the **coordination of personal learning routes and shared episodes**. A route connects a person's preparation, practice, feedback and next useful work. The shared rhythm supplies actual occasions for compatible exchanges; it need not impose one speed or a fixed cohort throughout.
+In **coordinating personal learning routes and shared episodes**, identify what each person must prepare, what reaches the shared work and what returns to their practice or next task. Shared occasions need compatible contributions and windows. Participants can prepare at different speeds or join different groups when the learning task allows it.
 
-The first useful result is a feasible set of continuations with usable material transfers, real help windows and a way to resume after a missed occasion. If the learning contribution is adequately individual and has no shared dependency, use its personal programme and support arrangement directly. If a team must perform later work together, its operational rhythm also needs the relevant organisation and work methods.
+Return the route and what its conditions permit, a specific material or timing gap, or a feasible arrangement for the required continuation. When asked about completed work, establish the transfers, exchanges or personal actions the question concerns. Use an individual programme and suitable support for a task without a shared dependency. If the team must later work together in its workplace, establish that operating rhythm with the relevant organization and work methods as well.
 
 #### HCD.27:0.1 - Working Terms
 
@@ -18,14 +18,14 @@ The first useful result is a feasible set of continuations with usable material 
 | shared episode | An occasion at which participants need compatible contributions for a learning action. |
 | entry condition | The preparation, material, access and time that make the person's intended contribution possible. |
 | material transfer | Selection or transformation of an actual result into usable input for the next participant or activity. |
-| return window | Available time and qualified support for using feedback, correcting or re-entering work. |
-| re-entry | A feasible continuation from what the learner already achieved, with missing contributions restored where needed. |
+| return window | Time, access and qualified help where needed for using feedback, retaining or correcting an answer, or re-entering work. |
+| re-entry | Resuming from what the learner has already achieved. For a proposed return, establish a feasible way to supply any contribution still needed. For a completed one, establish what was restored and how the learner resumed. |
 
 ### HCD.27:1 - Problem Frame
 
 A paid distributed programme assigns annotations before a meeting. Some participants submit conclusions without grounds; others have not received the source. The meeting proceeds through a generic presentation, and everyone is marked as having completed the collaborative task. Later, all revised work arrives in the same hour, exceeding the assessor's available attention.
 
-The alternative of separate programmes for everyone can multiply preparation and remove useful exchanges. The designer needs to share what benefits from synchrony while allowing different depth, preparation and recovery. The connections are actual contributions and conditions, not only adjacent dates.
+A separate programme for every learner can multiply preparation and lose useful exchanges. Share the work that benefits from synchrony and allow different preparation, depth or recovery where needed. Test each connection by what the receiving activity can use.
 
 ### HCD.27:2 - Problem
 
@@ -43,45 +43,45 @@ How can individual routes and shared episodes stay compatible when preparation, 
 
 #### HCD.27:4.1 - Identify the dependencies that require coordination
 
-Begin with the personal targets and the shared contribution selected through HCD.20 and HCD.22. Identify what each shared episode needs from participants and what it returns to their next work. Distinguish necessary common preparation from optional depth. Learners can use different examples or practise at different speeds while still producing compatible inputs to one comparison.
+Start with the personal targets and the contribution the shared episode needs. Use existing target and task information, or HCD.20 and HCD.22 when comparing arrangements or designing a shared task is still needed. Establish what each episode receives and what it returns. Learners can work at different speeds or on different examples while producing compatible inputs. Distinguish required common preparation from optional depth.
 
-For a future audience, make these conditions explicit through HCD.28. For known people, use their actual work, starting evidence, access and participation constraints through HCD.2. Do not replace this evidence with permanent labels such as fast or weak. The same person can be ready for one contribution and need preparation for another.
+For a future audience, establish the entry conditions and assumptions the product design needs, using HCD.28 where appropriate. For known people, use evidence of their work, preparation, access and participation constraints. HCD.2 can help when an individual programme is at issue. The same person may be prepared for one contribution and need support for another.
 
-Share timing only where it supplies a contribution. Independent reading does not require a simultaneous start merely because the later discussion does. Conversely, a target of responding to a live challenge may need an actual exchange; distributing a transcript cannot silently supply that action.
+Coordinate timing where it enables the contribution. Independent reading before a common discussion can start at different times. For practice in answering a live challenge, the learner needs an actual exchange. For an inquiry into a past attempt, a transcript that captures the learner’s challenge and response may establish what occurred. Reading someone else’s transcript cannot supply one’s own live response.
 
 #### HCD.27:4.2 - Construct the material connection
 
-Start from what the receiving activity needs. A model-comparison meeting may need each person's observation, candidate explanation, decisive assumption and unresolved question. Tell the producing learner what to supply, in an accessible form, before the meeting. Explain why those parts matter, so that a short annotation does not become an empty template.
+Identify what the receiving activity must use. For example, a model comparison may require an observation, candidate explanation, decisive assumption and any open question. Give producers the requirements, timing, accessible format and reason for the needed parts. When assessing an existing route, check what the actual instructions and materials make available.
 
-Then specify any necessary selection or transformation. A facilitator may group annotations by conflicting assumptions, select a pair that reveals the common difficulty, or obtain a permitted excerpt from a long report. Preserve the source context and individual response when the later use needs them. Selection for a common discussion does not erase other participants' personal feedback needs.
+Identify any selection or transformation needed for the next use. A facilitator may group annotations by conflicting assumptions, select a pair that exposes a shared difficulty or obtain a permitted extract with its source context. Preserve the personal responses needed for later work. An annotation omitted from the common selection may still need individual feedback; retain that need when planning the service.
 
-Check that the result actually arrived and can be used before relying on it. If a conclusion lacks its ground, ask for the missing part where time permits. If none can be obtained, use a prepared case, change the shared question or move the episode. Identify what that substitution restores and which learning opportunity it leaves open.
+For a completed transfer, establish what arrived and whether the recipient could use it in time. For a proposal, check whether delivery and access are feasible. If grounds are missing, use an adequate existing source or ask for the missing part while it can still be supplied. A prepared case, changed question or later episode may restore the shared work. Identify which contribution the substitute supplies and which intended learning opportunity, if any, is still missing.
 
-Return an actual result from the shared work: a clarified condition, a corrected account, a question for a specialist or a selected next action. State how each learner uses it. A meeting recording may preserve context but can burden the learner with reconstructing the missing result; a short supported return can be more usable.
+For a design, specify what the shared episode should return and how each learner can use the result in their next work. It may be a clarified condition, a supported or corrected account, a question for a specialist or a next action. For a completed exchange, establish what was returned; when actual use is claimed, identify what the learner did with it. A recording may preserve context. A concise, supported answer can spare the learner from reconstructing it.
 
 #### HCD.27:4.3 - Make preparation, help and correction fit
 
-Place the consequential windows on one finite horizon: preparation, shared exchange, receipt of feedback, correction, checking and any later use that requires the result. HCD.7 supplies provider competence, access and capacity. Check the busiest window on the same timeline for learners and providers. A visit must follow its required inputs and precede the action that uses its answer; simultaneous capacity alone does not establish this order. Add coordination, movement or connection and recovery where they consume real attention.
+On the relevant horizon, locate preparation, exchange, feedback, any needed correction or check, and the later action that needs the result. Use existing information about access, competence and capacity, or HCD.7 when the support arrangement needs work. Check peak demand against the same availability windows for learners and providers. A visit must receive its inputs in time and return its answer before use. Include movement, connection, coordination and recovery where they require time.
 
-Compare meaningful alternatives when a window fails: stagger comparable submissions, add prepared assessors, choose different shared occasions, reduce an optional contribution or change the promise. Reducing the depth of a required personal check changes the educational or assurance result and must remain visible. A fixed date cannot make unavailable capacity appear.
+When a window fails, identify the shortfall. If a remedy is requested, compare feasible alternatives that affect the choice, such as staggering submissions, adding competent assessors, choosing another shared time, reducing optional work or changing the promise. If a required personal check is shortened, state how that changes the learning or assurance result. Where no acceptable remedy is available, report the limit.
 
-Offer a preparation branch for a prerequisite gap that can be closed within the available time. A learner who already meets the entry condition can proceed to the needed task or useful extension. If the gap is too large, change the entry occasion or arrangement; do not hide an unbounded private course inside a common product price or timetable.
+For an entry gap that can be closed in time, offer or use the bounded preparation the learner needs when the task includes provision. A learner who already meets the condition can proceed to the intended work or a useful extension. If preparation exceeds the available time or resources, qualify a different occasion or arrangement where needed, or report the unsupported entry. Include any additional preparation in the timetable and product cost before offering it.
 
-A fully asynchronous alternative still needs response windows, accessible partners or providers and a usable material connection. A synchronous alternative needs compatible availability. Compare active learner time, provider work and elapsed delay separately where each can change the decision.
+For asynchronous work, identify the response windows, partners, providers or material transfers the particular activity needs. For a synchronous exchange, establish that participants can attend together. Compare active learner time, provider work and elapsed delay separately when the difference matters.
 
 #### HCD.27:4.4 - Restore a missed contribution and resume from supported work
 
-When an occasion is missed, first identify what is missing. A person may need the information, the chance to explain, a response to their work or an assessment. Reading a summary can restore information; it cannot necessarily restore dialogue or a first independent judgement. Use the smallest feasible replacement that supplies the actual contribution.
+After a missed occasion, establish which contribution, if any, is missing. It might be information, an opportunity to explain, a response to the learner’s work or an assessment. A summary can restore information. Dialogue or a first independent judgement needs the conditions of that action. If restoration is needed, use the smallest feasible replacement that supplies the missing contribution, or report the limit.
 
-Retain valid completed work and locate the next unfinished action. Re-establish any changed criterion, source, permission or help condition before resuming. HCD.21 supplies rematching when another participant is needed. A later small exchange can restore explanation; a prepared contrasting case with a qualified feedback window can restore some individual learning uses. State the changed assistance and observation limits.
+Keep valid completed work and identify the next unfinished action when a continuation is needed. Re-establish any changed criterion, source, permission or help condition before relying on it. Use HCD.21 if a new partner is needed. A later exchange can restore an opportunity to explain; a contrasting case with suitable feedback may serve individual practice. Interpret resulting observations under the assistance and conditions that applied.
 
-Provide a clear return condition and a real window. If no suitable opportunity exists, state the remaining gap and, where available, a different feasible arrangement. Repeated recovery demand can show that the common rhythm itself is unsuitable. Return the affected arrangement comparison to HCD.20, whole-product design to HCD.28 or support conditions to HCD.7, preserving the parts that still work.
+When a learner needs to return, establish the required conditions and whether a suitable window exists. If one exists, identify it. Otherwise report the gap and any feasible alternative. Repeated recovery demands may justify reassessing the common schedule or support. Use HCD.20 for the affected arrangement, HCD.28 for the product or HCD.7 for missing support. Retain independently usable parts.
 
 #### HCD.27:4.5 - Revise the rhythm from its actual use
 
-Inspect what arrived, which exchanges occurred, whether feedback was usable in time and how much coordination and recovery were needed. Separate a material problem from personal preparation, missed access and provider delay. HCD.26 regulates a live group attempt; HCD.14 revises an affected person's arrangement; HCD.28 changes the reusable product when the mismatch recurs across its intended audience.
+Use evidence of what arrived, which exchanges occurred, whether feedback could be used in time and what coordination or recovery required. Distinguish problems of material, preparation, access and provider delay. HCD.26 addresses a live shared attempt and HCD.14 the affected person’s arrangement. When a mismatch recurs across the intended audience, use HCD.28 to examine the reusable product; a single observed failure needs its own warranted scope.
 
-Recognition can start from one failed join, such as annotations that cannot support the meeting. Assurance for a feasible route needs the necessary inputs and actual support windows; learning claims need the corresponding personal observations. Stop when the current continuation works within those conditions. Calendar adherence is useful operational evidence, not proof of learning.
+One failed connection can identify the need, such as annotations that cannot support a meeting. To qualify a planned route, establish its requisite inputs, access and support windows. To report what happened or what a learner did, use evidence of the work under its actual conditions. Close with the supported finding, feasible continuation or specific remaining limit.
 
 ### HCD.27:5 - Archetypal Grounding
 
@@ -89,16 +89,16 @@ Recognition can start from one failed join, such as annotations that cannot supp
 
 This constructed additional block has twelve adults comparing the use of evidence in permitted project fragments. It is separate from HCD.28's diagnostic product. Each learner prepares a short question, ground and conditional conclusion asynchronously; three groups of four will compare selected cases on Wednesday evening.
 
-The initial design promises feedback on twelve fragments between 13:00 and 14:00 Tuesday. At eight assessor-minutes each, 96 minutes are required. The hour cannot supply the promise. The provider instead confirms a two-hour window, reserving 96 minutes for checking and feedback and 24 for unexpected clarification. If that window is unavailable, the group designer must change the sequence or obtain qualified capacity before making the promise.
+The initial design promises feedback on twelve fragments between 13:00 and 14:00 Tuesday. At eight assessor-minutes per fragment the work needs 96 minutes, while one assessor has 60. The provider confirms a two-hour window, reserving 96 minutes for checking and feedback and 24 for unexpected clarification. If that window is unavailable, the designer must obtain adequate qualified capacity or change the sequence or promise before offering it.
 
 | Occasion | Material or action that becomes available | Next use |
 | --- | --- | --- |
-| Tuesday noon | Twelve permitted fragments, including their decisive grounds | The assessor checks them in the confirmed 13:00–15:00 window. |
-| Tuesday 15:00–15:20 | The facilitator selects three contrasting pairs, preserving relevant source conditions | Each group receives a pair it can actually compare. |
-| Before Wednesday 18:00 | Learners use the returned feedback to repair any missing ground; they read the selected pair | The shared episode begins with accessible reasoning rather than unexplained conclusions. |
-| Wednesday, group starts 18:00, 18:08 and 18:16 | Each group performs the thirty-minute sequence below; one prepared mentor visits at 18:18, 18:26 and 18:34 | Every learner uses the qualified response before finishing their own retained or revised grounds. |
+| Tuesday noon | Twelve permitted fragments are due with their decisive grounds. | The assessor checks what arrived in the confirmed 13:00–15:00 window and can identify missing grounds. |
+| Tuesday 15:00–15:20 | The facilitator selects three contrasting pairs, preserving relevant source conditions | Each group is due a pair it can compare under the stated source conditions. |
+| Before Wednesday 18:00 | Learners read the selected pair and use the returned feedback to supply missing grounds or retain supported ones. | The meeting can compare reasoning that has reached the group in usable form. A permitted prepared contrast may supply the comparison if some original grounds remain missing. |
+| Wednesday, group starts 18:00, 18:08 and 18:16 | Each group performs the thirty-minute sequence below; one prepared mentor visits at 18:18, 18:26 and 18:34 | Each learner has time to use the qualified response in explaining their retained or revised grounds. |
 | Thursday noon | Personal applications to a changed own or substitute case | The assessor checks the twelve returns in another confirmed two-hour window with the same 96-minute demand and 24-minute reserve. |
-| Friday noon, then 13:00–14:00 | Learners submit corrections by noon; the assessor uses 48 minutes for twelve four-minute correction checks and reserves twelve minutes for unresolved help | The result states what is supported; demand beyond the reserve requires another obtained window or an explicit remaining limit. |
+| Friday noon, then 13:00–14:00 | Learners submit any needed corrections by noon. The assessor has 48 minutes for up to twelve four-minute checks and reserves twelve minutes for unresolved help. | The result states what is supported. Demand beyond the reserve requires another suitable confirmed window or a stated limit. |
 
 The Wednesday mentor is booked from 18:16 to 18:46. The groups have confirmed different starts, with the following joint allocation. All four initial judgements take twelve minutes, peer comparison takes six, qualified help takes six, and each learner has ninety seconds within the final six to explain what they will keep or revise.
 
@@ -108,39 +108,39 @@ The Wednesday mentor is booked from 18:16 to 18:46. The groups have confirmed di
 | B | 18:08–18:20 | 18:20–18:26 | 18:26–18:32 | 18:32–18:38 |
 | C | 18:16–18:28 | 18:28–18:34 | 18:34–18:40 | 18:40–18:46 |
 
-The one mentor can now make all three visits: eighteen direct minutes, two-minute transitions between visits, two minutes before the first visit and six minutes after the last fit the thirty-minute booking. The cases are familiar from preparation. Each group's recorded judgements and bounded unresolved question are ready at the start of its visit; inspection and the response occur inside the six-minute allowance. The mentor need not have heard all eighteen preceding minutes. A longer unresolved question requires a changed allocation or an explicit remaining gap.
+The visits require eighteen direct mentor-minutes. Two two-minute transitions, two minutes before the first visit and six after the last bring the booking to thirty. The cases are familiar from preparation. In this constructed timetable, each group has its recorded judgements and bounded question ready at the start of its visit; inspection and reply fit in six minutes. The mentor therefore need not attend each group’s preceding eighteen minutes. Check these conditions before relying on the schedule elsewhere. A longer question needs more provision or leaves a stated limit.
 
-Each group still performs thirty active minutes without waiting for its visit, but the whole cohort spans 18:00–18:46. HCD.21 must establish these actual availabilities before confirming the arrangement. If everybody is available only until 18:30, this staggered option is unavailable: obtain different capacity or timing. Longer movement, a fourth group or excess help demand also reopens the allocation. The existing contact and coordination allowance covers obtaining the three starts only as a planning assumption to test. Learner preparation, reading, exchange, return and correction enter the product's full time estimate; the table alone does not establish a price or learning outcome.
+Each group has thirty active minutes without waiting for its mentor; the cohort spans 18:00–18:46. Confirm the relevant participants’ availability before offering this schedule. If everyone must leave at 18:30, A can finish but B and C cannot complete their personal returns; B’s mentor visit is interrupted and C misses its visit entirely. Obtain a compatible schedule or qualified capacity for the promised result, or report the limit. Longer movement, another group or further demand can also reopen feasibility. The planning assumption is that the existing coordination allowance covers confirming the starts. Include preparation, reading, exchange, return and correction in learner time. Price and learning outcomes require their own grounds.
 
-Four initial fragments arrive without grounds. The facilitator can use prepared permitted contrasts for Wednesday, while those learners restore their own fragments before personal application. This preserves a comparison opportunity but does not turn the missing first work into an observed contribution. If the missing ground reflects an unavailable subject method, preparation within the same day may be impossible; return that dependency rather than merely extending the deadline.
+Four initial fragments arrive without grounds. Prepared, permitted contrasts can preserve a Wednesday comparison while those learners complete their own grounds for personal application if feasible. Use the substitute for the work it supports. It cannot establish that the four learners supplied the missing grounds before the meeting. If a necessary subject method is unavailable, name the dependency. A later deadline alone cannot supply it.
 
 #### HCD.27:5.2 - A missed conversation is not a missed file
 
-One learner misses Wednesday but can read the selected cases and result. If the target is using the relation in a personal analysis, a supported individual comparison and the Thursday feedback slot may supply the needed continuation. If the target is explaining a reason under a peer's challenge, the reading is insufficient. Arrange a later compatible partner and qualified help where needed, retaining completed preparation. The replacement adds time and may delay the result; it does not require restarting every earlier activity.
+One learner misses Wednesday but can read the cases and result. If the target is personal use of the relation, a supported individual comparison and Thursday feedback may supply the needed continuation. If the learner must explain under a peer’s challenge, the reading supplies information. For the missing exchange, use a compatible partner, time and qualified help where needed, or report the remaining limit. Retain completed preparation and include any added work and delay.
 
 #### HCD.27:5.3 - Internal work and loss of a platform
 
-An internal team has a short shared window during paid work but cannot export project material to the programme platform. It uses the permitted internal source and local feedback arrangement. A public common case can support a separate outside exchange; the two are linked by the learned relation, not by moving confidential data.
+An internal team has a short shared window during paid work and lacks permission to export project material to the programme platform. It uses the permitted internal source and local feedback arrangement. A separate outside exchange may use a public case that preserves the relation without exporting the project data.
 
-If the platform becomes unavailable, restore only the material and contact needed for the next action through an authorised alternative. Preserve the source version, permissions and earlier responses that the receiving use requires. A downloadable case alone does not restore a lost mentor or partner. Use HCD.7 and HCD.8 to determine whether and how the missing help can be supplied; the learner continues unaffected individual work where useful.
+If the platform becomes unavailable, identify the material and contact needed for the next action. Use an authorized alternative that preserves the required source version, permissions and prior responses when one is available. A restored file can supply the material. If the task needs a mentor or partner, establish whether a suitable person can supply the required interaction in time. Use HCD.7 or HCD.8 to assess or obtain that provision; report the remaining limit when it cannot be supplied. Continue unaffected individual work where useful.
 
 ### HCD.27:6 - Bias-Annotation
 
-Organisers can prefer a tidy common calendar over the actual work, or promise unlimited personalisation without its provider burden. Use current entry evidence and finite windows. A late submission is an observation to interpret, not a stable personal trait.
+A common timetable can conceal missing inputs. Unlimited personal exceptions can exceed provider capacity. Use current entry evidence and finite windows. A late submission establishes its timing. A claim about a person’s preparation or capability needs evidence about that person and task.
 
 ### HCD.27:7 - Conformance Checklist
 
 - Shared timing is justified by a needed learning contribution.
-- Producing work supplies material that the next activity can interpret and use.
-- Necessary selection or transformation preserves meaning and access conditions.
-- Peak checking, feedback and recovery fit actual provider windows.
-- Different entry needs have bounded, feasible continuations.
-- Re-entry restores the missing action while preserving completed work.
+- For a proposed transfer, establish how the recipient can obtain and use the material. For a completed one, establish what reached the recipient and whether it was usable for the intended work in time. To claim personal use, examine what the learner did.
+- Where selection or transformation is required, check whether it preserves the meaning and access conditions needed for the receiving use.
+- Check peak demand against available provider and learner windows when qualifying feasibility.
+- Identify feasible continuations for different entry needs, or the particular entry condition that remains unmet.
+- For needed re-entry, preserve completed work and identify what the replacement can restore. Establish actual restoration when that is claimed.
 - A substituted activity carries its changed learning and evidence limits.
 
 ### HCD.27:8 - Common Anti-Patterns and How to Avoid Them
 
-**Homework and a later meeting are connected only by dates.** Show what the meeting actually consumes from the homework.
+**Connect homework and a meeting by date alone.** Identify the material the meeting needs from the homework. For a completed episode, establish which part arrived and whether the meeting could use it.
 
 **Everyone submits together, so the programme is coordinated.** Check the resulting service peak.
 
@@ -150,7 +150,7 @@ Organisers can prefer a tidy common calendar over the actual work, or promise un
 
 ### HCD.27:9 - Consequences
 
-The programme can retain valuable shared work while supporting different personal continuations. Missing inputs become visible before dependent activity. Coordination and recovery still cost effort, and a feasible result can require a changed promise, smaller scope or later occasion.
+A programme can preserve useful exchanges while supporting different personal continuations. Tracing a connection can uncover an unavailable input before dependent work begins. Coordination and recovery take effort. Sometimes the result is an adjusted window or promise, and sometimes it is a precise finding that the current promise cannot be met.
 
 ### HCD.27:10 - Rationale
 
@@ -158,12 +158,12 @@ Activities compose through usable results. Aligning a date without aligning what
 
 ### HCD.27:11 - SoTA-Echoing
 
-The [official FROG account](https://wonderlab.gse.upenn.edu/projects/frog.html) supplies a concrete design line: results from individual asynchronous annotation can become material for synchronous group work. It describes an orchestration construction, not a demonstrated causal advantage of the platform. Sections 4.2–4.4 develop selection, usable return and recovery for the present HCD use.
+The [official FROG account](https://wonderlab.gse.upenn.edu/projects/frog.html) supplies a concrete design line: results from individual asynchronous annotation can become material for synchronous group work. It describes how to arrange that transfer. A claim of causal advantage for the platform would require evidence about that effect. Sections 4.2–4.4 develop selection, usable return and recovery for the present HCD use.
 
 The contact and rematching construction of [Zhang, Allon and Van Mieghem, draft 21 September 2015, §3.3](https://faculty.wharton.upenn.edu/wp-content/uploads/2016/10/30-Does-Social-Interaction-Improve-Service-Quality-Field-Evidence-from-Massive-Open-Online-Education.pdf) supports separating assigned contact from a completed exchange. HCD.7 supplies the developed provider-window comparison. Compared with calendar-only coordination, the method adds inspection of actual inputs; compared with fully separate programmes, it retains compatible sharing. Reconsider when preparation differences, service peaks or recovery costs outweigh the shared contribution. The worked timetable is a planning construction, not an empirical finding about paid adult education.
 
 ### HCD.27:12 - Relations
 
-HCD.2 supplies a known person's programme and HCD.28 future-audience product conditions. HCD.20 and HCD.21 supply the arrangement and compatible membership. HCD.22–HCD.25 determine what a shared task or comparison needs and returns. HCD.7 arranges available support, and HCD.8 obtains or builds a missing contribution when needed. HCD.9 and HCD.10 guide practice and correction. HCD.26 regulates ongoing shared work, while HCD.14 revises an affected personal arrangement. Operations methods govern the service's scheduling and capacity beyond the bounded learning construction.
+Use HCD.2 for a known person’s programme and HCD.28 when designing for a future audience. HCD.20 and HCD.21 can help assess arrangements and membership. Use HCD.22–HCD.25 for the relevant shared task or comparison. Use HCD.7 to establish usable support, and HCD.8 when the missing contribution must be sourced or built. HCD.9 and HCD.10 guide needed practice and correction. HCD.26 addresses shared work and HCD.14 an affected individual arrangement. Use Operations methods for service-wide scheduling or capacity.
 
 ### HCD.27:End

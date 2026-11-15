@@ -4,7 +4,7 @@
 
 ### LDR.2:1 - Problem frame
 
-Use this pattern when participants need one another's contributions but their proposed scopes, dates, costs or conditions cannot yet coexist. The object is a complete arrangement that the affected parties can actually accept and supply. Begin by recovering what each party needs, can offer and may authorize, then construct and examine whole proposals.
+Use this pattern when participants need one another's contributions but their proposed scopes, dates, costs or conditions cannot yet coexist. The object is a complete arrangement that the affected parties can accept and supply. Begin by recovering what each party needs, can offer and may authorize, then construct and examine whole proposals.
 
 The useful result is acceptance of the same feasible proposal by the parties whose agreement it requires, with any outstanding condition explicit. A warranted refusal or a specific unresolved contribution is also useful: it prevents unsupported reliance.
 
@@ -30,9 +30,9 @@ Absent and later-affected participants can bear substantial costs. Their partici
 
 #### LDR.2:4.1 - Establish who can explore and who can commit
 
-Name the receiving result and proposed cooperation. Identify the contributions it requires, the people or bodies able to supply them, and whose existing work or rights would change. Recover a party omitted from the first conversation when its contribution or consent matters. In engineering, SYSE.17 helps discover systems that may bear consequences.
+Name the receiving result and proposed cooperation. Identify the contributions it requires, who can supply them, and whose existing work or rights would change. Recover a party omitted from the first conversation when its contribution or consent matters. In engineering, SYSE.17 helps discover systems that may bear consequences.
 
-Agree a practicable way to explore: participants, time, permitted information, representation, a way to question the proposal and a legitimate way to decline. A representative needs a mandate for the contribution being discussed; attendance or seniority alone does not supply it. CB.13 can establish a workable shared-decision mandate. If an existing protocol already provides that result, retain it.
+Agree a practicable way to explore: participants, time, permitted information, representation, a way to question the proposal and a legitimate way to decline. A representative needs a mandate for the contribution being discussed; attendance or seniority alone does not supply it. CB.13 can establish a workable shared-decision mandate. If an existing protocol provides that result, retain it.
 
 Obtain participants capable of the negotiation and its substantive judgements. A facilitator may support the process; a qualified engineer, financial practitioner or other specialist supplies the corresponding subject answer. Establish confidentiality and consultation conditions before depending on information. Do not require disclosure a participant has no authority to make; obtain a permitted narrower answer or retain the resulting uncertainty.
 
@@ -44,13 +44,13 @@ Ask what result a stated demand protects, what would fail without it and what ob
 
 For example, “the complete interface by day 20” may protect the need for daily production data, while automatic control can wait. That distinction creates options only if the customer with the necessary authority accepts it. If complete control by day 20 is a real non-negotiable requirement, the reduced proposal does not satisfy it.
 
-Separate a needed result from an assumed means. A required safety property may be met in several configurations; a preferred staffing arrangement may be one way of obtaining a contribution. Use the domain method to examine that claim. B.5.QD.CF helps reconsider conflicting assumptions where an assumed necessary means creates the impasse. D.4 helps when the conflict concerns value premises and acceptable consequences. Neither method grants permission to relax an effective requirement.
+Separate a needed result from an assumed means. A required safety property may be met in several configurations; a preferred staffing arrangement may be one way of obtaining a contribution. Use the domain method to examine that claim. B.5.QD.CF helps reconsider conflicting assumptions where an assumed necessary means creates the impasse. D.4 helps when the conflict concerns value premises and acceptable consequences. Obtain authorization before relaxing an effective requirement.
 
 Recover meaningful alternatives if agreement fails: continue the present service, obtain a different provider, narrow the result, delay it, perform independent work or decline. A party with no acceptable no-agreement outcome still needs an honest account of that condition; pressure does not make an impossible proposal feasible.
 
 #### LDR.2:4.3 - Construct whole alternatives before requesting commitment
 
-Combine changes in scope, timing, performer, support, sequence, price and burden into complete proposals. Explain how the contributions fit. Keep more than one materially different feasible candidate where that improves the negotiation, without manufacturing alternatives merely for a count.
+Combine changes in scope, timing, performer, support, sequence, price and burden into complete proposals. Explain how the contributions fit. Keep materially different feasible options when comparing them improves the negotiation.
 
 For each proposal, follow the needed result backwards to its inputs and enabling conditions. Then follow each promised contribution forwards to who receives it and what else it consumes. This two-way examination reveals hidden dependencies. A support offer can make the technical option feasible while taking time from another project; that displaced receiver belongs in the revised proposal.
 
@@ -68,7 +68,7 @@ Obtain permission and resources for the inquiry itself. A test authorization per
 
 Return the result to the whole proposal. A technical test may remove one uncertainty while a provider's offer adds cost, local effort or a time limit. Recalculate joint demand and reopen terms affected by that change. Do not attach new facts to the old proposal while leaving its commitments untouched.
 
-If the inquiry defeats the option, discard or revise that option. Retain independently useful findings and alternatives. If the answer remains uncertain and the required guarantee cannot be obtained, keep the dependent commitment unavailable; uncertainty is not filled by group agreement.
+If the inquiry defeats the option, discard or revise that option. Retain independently useful findings and alternatives. If the answer remains uncertain and the required guarantee cannot be obtained, withhold the dependent commitment. Agreement cannot provide the missing guarantee.
 
 #### LDR.2:4.5 - Test joint performance, not just individual promises
 
@@ -88,11 +88,11 @@ A conditional offer of help after funding is available is not a commitment to se
 
 If one party changes its contribution, identify the others whose terms or reliance change and return the amended whole to them. A sequence of separately accepted fragments is sufficient only when those fragments really compose under the same conditions; otherwise obtain responses to the combined proposal.
 
-Retain the accepted terms in the ordinary form the participants use. The record needs enough identity and conditions to distinguish this agreement from a neighbouring version. It need not be a new negotiation template. If the applicable decision rule permits a non-consensual decision, name that rule, the actual decision and the remaining disagreement. Do not present it as mutual acceptance.
+Retain the accepted terms in the ordinary form the participants use. Include enough information about the agreement and its conditions to distinguish it from another version. If the applicable decision rule permits a non-consensual decision, name that rule, the actual decision and the remaining disagreement. Do not present it as mutual acceptance.
 
 #### LDR.2:4.7 - Return the agreement to work and respond to a changed contribution
 
-Give the receiving practitioners the accepted conditions and unresolved matters. Product and organization decisions may need coordination through OCE.7; engineering architecture and whole-result alternatives use SYSE.6 and SYSE.24; an existing promise may need an authorized response through OPS.13. In another domain, use the corresponding supplier rather than importing engineering decisions by name.
+Give the receiving practitioners the accepted conditions and unresolved matters. Product and organization decisions may need coordination through OCE.7; engineering architecture and whole-result alternatives use SYSE.6 and SYSE.24; an existing promise may need an authorized response through OPS.13. For work in another domain, use the relevant professional methods. If a decision is needed, obtain it from the party authorized to make it.
 
 Obtain the separate acts that make the arrangement effective, then perform the contributions. LDR.4 helps when a prepared proposal still needs an effective decision, mutually visible start and first useful handover. Acceptance alone does not establish completion.
 
@@ -136,7 +136,7 @@ Change a different condition: the customer accepts day 27 and the second provide
 
 Suppose three independent researchers agree to publish a comparison. One offers a dataset, one analysis and one review. The analyst's promised date precedes the dataset's permitted release. No participant can assign another's time.
 
-They examine an earlier anonymized subset, a later analysis and independent preparatory work. The data owner determines which sharing permission actually exists; the analyst assesses whether the subset answers the research question. If it does, each participant accepts the revised scope and date. If it does not, the group retains useful independent preparation and defers the unsupported joint result. A new office would supply neither the missing permission nor the dataset.
+They examine an earlier anonymized subset, a later analysis and independent preparatory work. The data owner determines which sharing permission actually exists; the analyst assesses whether the subset answers the research question. If it does, each participant accepts the revised scope and date. If it does not, the group retains useful independent preparation and defers the unsupported joint result.
 
 ### LDR.2:6 - Bias-Annotation
 
@@ -156,7 +156,7 @@ A conforming use explains:
 - responses to the same complete proposal, including refusal and outstanding conditions;
 - the receiving decisions and the response to a consequential change.
 
-An already sufficient routine agreement needs no separate negotiation dossier.
+A sufficient routine agreement can remain in its usual form.
 
 ### LDR.2:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -170,7 +170,7 @@ An already sufficient routine agreement needs no separate negotiation dossier.
 
 ### LDR.2:9 - Consequences
 
-The parties obtain terms they can examine, accept and perform, or a specific reason no agreement is available. Useful partial findings survive a failed proposal. The cost is competent preparation, inquiry where justified and the coordination needed for real acceptance. Negotiation can reveal a legitimate impasse rather than remove it.
+The parties obtain terms they can examine, accept and perform, or a specific reason no agreement is available. Useful partial findings survive a failed proposal. The cost is competent preparation, inquiry where justified and the coordination needed for real acceptance. An impasse can be a legitimate outcome.
 
 More capable or cheaper reasoning expands the alternatives worth examining, but the actual resources, rights and willingness still constrain the agreement. An automated exchange can reduce meeting work; its mandate and operating limits remain part of feasibility.
 
@@ -184,7 +184,7 @@ The practice question is how to obtain a workable agreement when contributions a
 
 The selected synthesis adds explicit domain qualification, joint capacity and time-window checks, responses to one complete proposal, and return after a relied-on contribution changes. A serious alternative is competent direct negotiation under an adequate existing protocol. Retain it when it already supplies those results. This procedure earns its additional work where isolated promises hide a whole-arrangement conflict, as in the support case. The trade-off is added preparation and possibly a finding that the desired promise is unavailable.
 
-CB.13's mandate and conditional team protocol are another sufficient supplier where voluntary shared decision making needs them; this method does not require a second protocol. FPF C.11 retains plural decision makers and D.4 supplies value-conflict reasoning when a single combined score would conceal disagreement.
+For voluntary shared decisions, use CB.13’s mandate and conditional team protocol when they supply the needed agreement. FPF C.11 retains plural decision makers and D.4 supplies value-conflict reasoning when a single combined score would conceal disagreement.
 
 Reopen the choice of method if participation, representation, professional competence or the inquiry budget cannot support it, or if a simpler arrangement supplies the same accepted result at lower total burden.
 
@@ -192,10 +192,10 @@ Reopen the choice of method if participation, representation, professional compe
 
 LDR.1 obtains capable facilitation, expertise and help. B.5.SD constructs missing subject answers. LDR.4 connects agreed proposals to effective decisions and first use.
 
-[CB.13](../cb/23-cb-13---establish-a-workable-mandate-for-shared-decisions.md) supplies representation and shared-decision mandates. [Corporate Governance (CGOV)](../cgov/_index.md), through CGOV.3 and CGOV.11, resolves corporate power and the act making a decision; persuasion and informal agreement do not replace them.
+[CB.13](../cb/23-cb-13---establish-a-workable-mandate-for-shared-decisions.md) supplies representation and shared-decision mandates. [Corporate Governance (CGOV)](../cgov/_index.md), through CGOV.3 and CGOV.11, guides participants in establishing who has corporate decision power and what act makes the decision effective. Persuasion or informal agreement cannot substitute for a required act.
 
 [Systems Engineering (SYSE)](../../engineering-dpf-suite/syse/_index.md), through SYSE.6, SYSE.17 and SYSE.24, supplies architecture decisions, affected systems and comparison of whole ways to obtain an engineering result. OCE.7 connects product and organizational decisions. [Operations Management (OPS)](../ops/_index.md), OPS.13, handles commitments and authorized changes.
 
-FPF B.5.QD.CF examines conflicting assumptions, D.4 handles ethical mediation and value premises, C.11 supplies decision reasoning, and C.11.DUA appraises the value and burden of additional inquiry. Use each supplier when its question arises; they are not mandatory preliminary stages.
+FPF B.5.QD.CF examines conflicting assumptions, D.4 handles ethical mediation and value premises, C.11 supplies decision reasoning, and C.11.DUA appraises the value and burden of additional inquiry. Use the method that answers the question at hand.
 
 ### LDR.2:End

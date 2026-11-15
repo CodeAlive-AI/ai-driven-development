@@ -18,7 +18,7 @@ The reader needs substitution, elementary algebra and the arithmetic used by the
 
 Trying more sequences can leave a reachability question unresolved. A proposed formula may hold in the first few calculations but fail at a later step or a different branch. Guessing that an unweighted total stays constant can also fail when a rule replaces two units of one kind with three of another.
 
-The difficulty is to obtain a relation from the actual rules and explain why it survives sequences of arbitrary finite length. A useful relation must then answer the question: a constant function is always preserved, but cannot distinguish a reachable proposal from an impossible one.
+The difficulty is to obtain a relation from the rules and explain why it survives sequences of arbitrary finite length. A useful relation must then answer the question: a constant function is always preserved, but cannot distinguish a reachable proposal from an impossible one.
 
 The result is a constructed invariant with its preservation argument and a consequence for the stated task. A failed search within the chosen expression family can instead identify a reason to change that family or try another method.
 
@@ -30,7 +30,7 @@ The result is a constructed invariant with its preservation argument and a conse
 | Simple expression and useful distinction | A small expression family is cheap to search, while its invariants may leave the target question undecided. |
 | Mathematical rule and implementation | Integer, real and modular arithmetic can preserve different expressions under similar-looking updates. |
 | Necessary condition and construction | Different invariant values prove impossibility; equal values can leave ordering and enabling conditions unresolved. |
-| General preservation and one starting state | An identity valid for every input is reusable, while a particular reachable set can satisfy further relations. |
+| General preservation and one starting state | An identity valid for every input is reusable, while a reachable set can satisfy further relations. |
 | Stable reasoning and changed operations | A changed start may require only a new value; a changed transformation can invalidate the preservation proof. |
 
 ### MATH.11:4 - Solution
@@ -41,7 +41,7 @@ The result is a constructed invariant with its preservation argument and a conse
 
 Let X be the mathematical state set, and write x → y when one allowed step takes x to y. Retain every condition that enables a step and every component of the state that its calculation uses. A rule may be given as y=T(x) with a condition on x, or as a relation allowing several possible successors.
 
-Name the initial state a and the target question. You may need to exclude a particular state b, derive the value of an accumulated quantity after a stated number of steps, or restrict the candidates worth searching.
+Name the initial state a and the target question. You may need to exclude a state b, derive the value of an accumulated quantity after a stated number of steps, or restrict the candidates worth searching.
 
 For an invariant I, the required preservation statement is:
 
@@ -71,7 +71,7 @@ For a rule given as a relation, use `I(y)-I(x)` on its allowed pairs. A finite r
 
 For additive count changes, this gives one linear equation on the weights per change. Solve the equations jointly. If all weights must be zero, this family supplies no distinguishing weighted total.
 
-For polynomial updates and a rational-coefficient polynomial family, expand the difference and collect like monomials. Setting every resulting coefficient to zero gives a linear system in the unknown ci. Solving it constructs polynomial identities that preserve I for every input. On a state set or enabled region smaller than the full polynomial domain, this identity test is sufficient but can be stronger than the preservation actually required. A relation valid only on the reachable states may therefore need another construction.
+For polynomial updates and a rational-coefficient polynomial family, expand the difference and collect like monomials. Setting every resulting coefficient to zero gives a linear system in the unknown ci. Solving it constructs polynomial identities that preserve I for every input. On a state set or enabled region smaller than the full polynomial domain, this identity test is sufficient but can be stronger than the preservation required. A relation valid only on the reachable states may therefore need another construction.
 
 For example, let X={0,1}, T(x)=x² and I(x)=c\*x+d. Requiring the polynomial identity `c*(x²-x)=0` over all rational x forces c=0. On X the two allowed pairs are 0→0 and 1→1; checking them admits I(x)=x. Starting at 0, this invariant excludes 1. Here inspecting the allowed pairs produces a useful invariant within the same linear family.
 
@@ -97,7 +97,7 @@ If the target and start have the same invariant value, the invariant has supplie
 
 Inspect a failed continuation. A rule may be irreversible, lack the required input units or require an order the invariant ignores. Refine the state or expression when that can answer the question. MATH.1 constructs paths with their intermediate conditions; MATH.8 generates a family when the available transformations form the relevant symmetry action.
 
-When the coefficient calculation yields only constants, state the family actually exhausted. Changing from linear to polynomial expressions or from rational values to residues can change what is found. General polynomial-invariant search has its own algorithms and scope conditions; it is worthwhile when the simpler construction leaves a consequential question open.
+When the coefficient calculation yields only constants, state the family exhausted. Changing from linear to polynomial expressions or from rational values to residues can change what is found. General polynomial-invariant search has its own algorithms and scope conditions; it is worthwhile when the simpler construction leaves a consequential question open.
 
 Stop with the established formula, impossibility result, useful restriction or identified next construction. A request for one of these results need not expand into finding every invariant.
 
@@ -184,7 +184,7 @@ For the construction and use at hand:
 4. The constructed expression satisfies those equations and gives the stated initial value.
 5. The finite-sequence argument supplies the reach of the conclusion.
 6. An impossibility claim separates invariant values; a reachability claim also has its sequence or sufficient theorem.
-7. A failed invariant search retains the family and scope actually searched.
+7. A failed invariant search retains the family and scope searched.
 8. Changes to initial data, target, transformations or arithmetic reopen the corresponding calculation.
 
 Recognition can begin with one rule and a useful candidate expression. Assurance of a general consequence examines the preservation and sequence argument on which that consequence depends.
@@ -212,7 +212,7 @@ The preservation question is local to a transformation, while the useful conclus
 
 Unknown coefficients turn a family of guesses into equations. Weighted counts expose exchange ratios; polynomial terms expose accumulation; residues retain divisibility information. The examples use different arithmetic but the same question: what function stays unchanged, and what does that prevent or determine?
 
-An invariant usually compresses the state. Equality of its values can forget irreversible directions or unavailable inputs, as the exchange example shows. A proof of reachability therefore needs more than this compression. Conversely, different values can close an impossibility question without reconstructing every sequence.
+An invariant usually compresses the state. Equality of its values can forget irreversible directions or unavailable inputs, as the exchange example shows. To prove reachability, supply an allowed sequence or a theorem that ensures one exists. Conversely, different values can close an impossibility question without reconstructing every sequence.
 
 These are mathematical constructions even when their states represent programs, resource transformations or physical models. Their interpretation and use in another subject need the correspondence and premises of that subject. Mathematical construction, subject interpretation and implementation can be divided among contributors while preserving those dependencies.
 
@@ -222,7 +222,7 @@ For deriving a condition valid after arbitrarily many steps, **adopt** the induc
 
 For constructing polynomial expressions from update rules, **adapt** Bayarmagnai, Mohammadi and Prébet's *Algebraic and Algorithmic Methods for Computing Polynomial Loop Invariants*, §5, Corollary 5.4 and Algorithm 6. The adopted move substitutes an expression with unknown coefficients and solves the resulting linear equations. It improves on unstructured guessing in :4.2-:4.3 and the sum construction in :5.2. The source's stronger algorithms distinguish invariant form, initial-value conditions and search space. Here the polynomial-identity construction has its stated scope; a restricted reachable-set question can require a different method. Reopen when a richer family or specialized algorithm obtains a more useful relation at acceptable cost. [Extended paper](https://arxiv.org/html/2412.14043v2).
 
-For count transformations, **adapt** the conserved linear expression described by Gopalkrishnan in *Autocatalysis in Reaction Networks*. The weighted-exchange derivation in :5.1 makes such a quantity available instead of assuming an unweighted total. Equal values still require a reachability construction. The source's chemical-network results need their own premises; they are not used to identify the counted kinds in this mathematical example. A changed exchange rule reopens the weight equations. [Author's account](https://johncarlosbaez.wordpress.com/2013/10/11/autocatalysis-in-reaction-networks/).
+For count transformations, **adapt** the conserved linear expression described by Gopalkrishnan in *Autocatalysis in Reaction Networks*. The weighted-exchange derivation in :5.1 makes such a quantity available instead of assuming an unweighted total. Equal values still require a reachability construction. To apply a chemical-network result, check its premises for the modeled network, including the counted kinds and permitted reactions. A changed exchange rule reopens the weight equations. [Author's account](https://johncarlosbaez.wordpress.com/2013/10/11/autocatalysis-in-reaction-networks/).
 
 The three worked constructions and their changed conditions are derived here.
 

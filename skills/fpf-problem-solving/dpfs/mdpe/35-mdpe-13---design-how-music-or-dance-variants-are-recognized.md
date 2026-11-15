@@ -4,16 +4,16 @@
 
 > **Type:** DPF pattern body
 >
-> **Primary working result:** a **selected recognition-and-selection arrangement and its observation plan**, or a comparison showing why the current arrangement should not yet change. The design names who can encounter and recognize the variants, who may make which choices, how visibility and feedback are shaped, which trade-offs are accepted, and what later observations can overturn the choice. A design is not an implemented arrangement and does not establish a cultural effect.
+> **Primary working result:** An account or comparison of how a recurring arrangement makes variants available, recognizable and selectable, or a proposed or chosen design for that use. Identify who can encounter the variants, distinguish them, choose among them or contest the choice. Describe access and feedback to the extent the question needs. State any material trade-offs and what evidence supports the account. For an implemented design or later cultural effect, give evidence about that result.
 
 ### MDPE.13:0 - Use This When
 
-Use this pattern when Agents working through a recurring recognition-and-selection arrangement repeatedly change
-which musical or movement variants are noticed, rewarded, taught, copied, or kept—and this pressure is being
-treated as a neutral measurement or inherited fact. For example, organizers, teachers, judges, curators, platform
-operators, archive stewards, or practice-development teams may do so through a festival, party, competition,
-school, ensemble, venue, label, platform, or archive arrangement.
-Typical costly failures are recognizable:
+Use this method to investigate how a festival, party, competition, school, ensemble, venue, label, platform
+or archive affects which variants are noticed, rewarded, taught, copied or kept. Organizers, partners,
+teachers, judges, curators, software and archive stewards can contribute in different ways. You may need to
+describe an existing arrangement, compare past arrangements or design a different one. An arrangement can
+favour a variant through its duration rule or display format even when nobody explicitly ranks the variant.
+The following examples show how criteria, formats and attention can affect the work that gets seen or repeated, and what people conclude from it.
 
 - battle rules reward camera-readable movement, while organizers speak as if the result represented social-floor dancing;
 - a school teaches only what fits its progression and then mistakes teachability for the boundary of the style;
@@ -21,42 +21,42 @@ Typical costly failures are recognizable:
 - views, applause, attendance, or a jury score stand in for recognition, value, or cultural continuation;
 - performers adapt to judges, teachers, curators, partners, cameras, or recommendation Systems, but nobody treats that feedback as a design effect.
 
-The working question is: **What bounded arrangement should let these variants be encountered, distinguished, compared, selected, contested, and returned to later practice for this use?**
+Ask how this bounded arrangement lets participants encounter, recognize, compare, select or contest a variant, and, where it matters, how encounter, recognition or selection affected later practice. For a design, ask how those relations should work for the intended use.
 
-A short reading aid is:
+Four questions distinguish the main relations.
 
-1. **Encounter:** who can meet the variant, through what event, medium, class, performance, or interaction?
-2. **Recognition:** who can distinguish the relevant difference under the conditions that matter?
-3. **Selection:** who may decide what is programmed, ranked, taught, funded, amplified, copied, or retained?
-4. **Feedback:** how do those decisions change what performers, creators, teachers, organizers, or platforms do next?
+1. **Encounter.** Who can experience the variant, and through which event, medium, class, performance or interaction? If actual encounters matter, who took part?
+2. **Recognition.** Who can distinguish the relevant difference under the conditions in question, and what shows it?
+3. **Selection.** Who may decide which variants are programmed, ranked, taught, funded or shown? For an actual decision, who selected what? For selection through uptake, which variants did the relevant population take up during the period in question?
+4. **Feedback.** What later work might the selection affect? To investigate a past effect, what evidence shows whether performers, teachers, organizers or platform operators responded?
 
-These related questions may all be active during one event. Use `A.22.CGUS` only when a maintained unfolding of design or implementation Work is needed.
+At one festival the participants may encounter, recognize and select a variant while performers respond to feedback from the jury or partners. A.22.CGUS can help maintain a description of how design or implementation unfolds when that is part of the task.
 
-Use the applicable specialist Methods—for example, judging, curation, teaching, event programming, recommendation, archive stewardship, permission, and decision Methods. This pattern adds the Music-and-Dance integration: it shows how Work enacting several such Methods, together with the arrangement relations that exist, can jointly shape selection pressure across embodied performance, partner interaction, sound, teaching, events, media, and later practice.
+Use the relevant judging, curation, teaching, event-programming, recommendation, archive, permission or decision practice for its result. Here the question concerns their combined effect on what receives attention and gets chosen. For instance, a jury’s criterion and the camera angle available to that jury may jointly favour one feature of a dance, while partners on the floor attend to another.
 
-Do not use this pattern merely to judge one performance under an adequate existing Method, to train recognition capability (`MDPE.23`), or to observe a result (`MDPE.12`). Use it when the recurring arrangement itself or its cultural feedback must be compared or changed.
+For one performance judged under established rules, use the direct judging method. For a recognition capability, use MDPE.23. MDPE.12 can address an individual observation or comparison. Examine a recurring arrangement here when the question concerns how access, recognition, selection or feedback worked or should work.
 
 #### MDPE.13:0.1 - Working Distinctions
 
 | Name | Meaning here |
 | --- | --- |
-| **variant** | One musical or movement form, interpretation, occurrence, artifact, Method, teaching line, or event form being compared with alternatives. The word does not assert one common physical kind. |
-| **recognition** | An Agent or sensing System distinguishes a relevant difference under stated conditions. Exposure, a label, applause, or a metric does not by itself establish recognition. |
-| **selection** | A local decision or a distributed cultural relation changes which variants are programmed, taught, funded, amplified, copied, used, or retained. A project choice and population-level cultural selection are different results. |
-| **recognition-and-selection arrangement** | The people, organizations, technical Systems, Methods, authority, access, evidence, and feedback relations that make encounter, recognition, and selection possible for one bounded use. |
-| **observation plan** | The subjects, conditions, observers or instruments, comparison basis, time horizon, and decision that later observations must support. It is not evidence that the predicted effect already occurred. |
+| **Variant** | The particular form, interpretation, performance, artifact, method, teaching practice or event arrangement whose treatment is in question. Identify which kind the arrangement encounters or selects and any alternatives being compared. |
+| **Recognition** | A recognizer distinguishes a relevant difference under stated conditions. A person, a group acting together or a capable technical system may perform the task. Evidence of exposure, a label or applause has a different scope unless the task establishes that it indicates the recognition in question. |
+| **Selection** | A local choice or a distributed pattern of uptake affects which variants are programmed, taught, funded, shown, copied, used or retained. For a local decision, identify who chose and what they chose. For a distributed pattern of uptake, identify the population, period and evidence. |
+| **Recognition and selection arrangement** | The people, organizations, technical systems, methods, rights, access, evidence and feedback through which variants can be encountered, distinguished and selected for a bounded use. A description may specify its rules. Evidence of operation shows what it did. |
+| **Observation plan** | A proposal stating what to observe, under which conditions, by whom or with which instrument, and over which period. Name the comparison if one is needed. Include the question or decision it should inform. A claim of an actual effect requires observations. |
 
 
 
 ### MDPE.13:1 - Problem
 
-Music and Dance cultures are shaped by many overlapping arrangements. A partner responds during a dance; a teacher chooses material for a class; a jury ranks performances; a curator composes a programme; a venue constrains duration and equipment; a camera changes what remains visible; a platform orders recordings; participants copy what they can recognize and use. None of these arrangements measures the whole culture.
+Overlapping arrangements shape music and dance cultures. A partner responds in a dance, a teacher chooses class material, a jury ranks performances and a curator programs an event. Venues constrain duration and equipment. Cameras and platforms affect visibility. Participants may copy what they can encounter, recognize and use. The extent of a conclusion depends on the arrangements and participants observed.
 
-When their differences stay hidden, one convenient proxy becomes the objective. A competition can narrow practice toward judgeable features. A short-video format can favor immediate legibility and repetition. A school can preserve a lineage while suppressing improvisation or variants that do not fit its progression. A safety rule can enable participation while excluding a form whose risks need another treatment. A curator can widen access and still create a new gatekeeping bottleneck.
+When people overlook these differences, they may treat a convenient proxy as the objective. A competition can narrow practice toward judgeable features. A short-video format can favor immediate legibility and repetition. A school can preserve a lineage while suppressing improvisation or variants that do not fit its progression. A safety rule can enable participation while excluding a form whose risks need another treatment. A curator can widen access and still create a new gatekeeping bottleneck.
 
-The error is expensive because the arrangement is reflexive. Performers and creators learn what is rewarded and change timing, duration, movement amplitude, risk, notation, labels, repertoire, or presentation. Teachers and organizers adapt in turn. The arrangement therefore helps produce the very evidence later used to justify it.
+An arrangement can change the practice that later appears to justify it. Performers may adapt their timing, duration, movement, risk, notation, repertoire or presentation to rewards. Teachers and organizers can respond to those adaptations. Look for evidence of what changed before attributing a trend to the arrangement.
 
-The opposite error is to call cultural selection too distributed to engineer. No team controls an entire culture, but teams do choose festival programmes, judging Methods, course progressions, publication formats, access rules, recommendation Methods, and feedback channels. Those bounded choices can be designed and tested.
+Even when many independent participants shape a culture, a team may have authority to set the programme, judging method, course progression, publication format, access rule or feedback channel for its own event. It can design these choices, examine what happened under them and test alternatives within that scope.
 
 ### MDPE.13:2 - Forces
 
@@ -65,49 +65,49 @@ The opposite error is to call cultural selection too distributed to engineer. No
 | expertise ↔ entry | Skilled recognition can preserve subtle distinctions; closed expertise can exclude newcomers or competing traditions. |
 | continuity ↔ novelty | Stable criteria support lineage; the same criteria can make an unfamiliar but useful variant illegible. |
 | comparability ↔ diversity | Common tasks make comparison possible; one task can erase partner-facing, embodied, improvisational, or long-horizon qualities. |
-| decision speed ↔ contestability | One curator or algorithm can decide quickly; plural review, appeal, revision, refusal, and exit cost time and coordination. |
+| decision speed ↔ contestability | A curator or an authorized selection system can decide quickly. Additional review and appeals may take time and coordination; the arrangement also determines participants’ ability to refuse or leave. |
 | visibility ↔ distortion | Amplification helps variants reach people; metrics and media formats can make performers optimize the proxy. |
 | local choice ↔ cultural outcome | A team can select and implement a design; later recognition, copying, retention, or loss remains a separate distributed result. |
 
 ### MDPE.13:3 - Solution
 
-Design the recurring arrangement rather than treating its output as a neutral verdict. Bound one cultural-development decision, describe the current arrangement through several concern-specific views, expose its feedback into later practice, compare materially different alternatives, and select a design together with observations that can reveal its benefits and harms.
+Identify the arrangement, its setting and the question. Trace the relevant conditions of encounter, recognition, selection and feedback, then establish what the available evidence supports. A comparison can use two existing arrangements. If a different design is wanted, compare credible alternatives for the stated use, including retention of an adequate arrangement. Give a recommendation or make the authorized choice as commissioned. Where a material question remains, use adequate existing evidence or identify an attainable observation worth making. Report the limit if that is what the evidence permits.
 
 The following questions can be answered together and revised as conflicts appear.
 
-#### MDPE.13:3.1 - Bound the decision
+#### MDPE.13:3.1 - Define the question about the arrangement
 
-Name:
+Specify the details that determine the scope of the answer.
 
 - the event, class, scene, ensemble, platform use, archive use, competition, or other practice setting;
-- the family of variants whose treatment may change;
-- the practitioner or practice-developing Agent making the design decision;
+- The forms or variants whose treatment is at issue.
+- Who is responsible for each relevant rule or choice, and who may recommend or decide a change if one is sought.
 - the participants and affected parties whose encounter, recognition, choice, safety, access, or later practice matters; and
-- the decision the arrangement must support.
+- The historical question, practical use or design decision the account or comparison should address.
 
-For example: “The festival team must decide how social-floor, battle, workshop, and short-video uses will recognize and select urban-kiz movement variants without making camera visibility the whole-practice objective.”
+For example, a festival team may ask how its battle, social floor, workshops and short clips treat the same Urban Kiz variants. A clip can show a large movement clearly while a partner needs to feel the timing of recovery. A comparison can identify which qualities each setting makes available. If the team is choosing a festival design, these findings inform its decision.
 
-If the practice boundary is unclear, use `MDPE.8`. If the variants do not yet exist, use `MDPE.9`.
+If the practice boundary needs clarification, use MDPE.8. If the commission requires new candidate forms, MDPE.9 can help develop them. For existing variants, use the evidence that they were encountered, distinguished or valued when the question makes that claim.
 
-#### MDPE.13:3.2 - Describe the current arrangement with several views
+#### MDPE.13:3.2 - Describe the arrangement using the views the question needs
 
-Use only the views that can change the decision.
+Use the views that bear on the question. One record may suffice for a question about a rule. An explanation of how repeated selection affected teaching may require several perspectives and observations across occasions.
 
 | View | Show | Question answered |
 | --- | --- | --- |
-| **encounter and participation** | event or medium, access conditions, invitation, admission, consent, refusal, exit | Who can actually meet or participate in the variant, and who is filtered out first? |
+| **Encounter and participation** | Event or medium, access conditions, invitation, admission, consent, refusal and exit | Who was eligible and able to encounter the variant? Who did encounter, decline or leave it, if actual participation is at issue? |
 | **recognition** | variant, recognition task, capable recognizer or sensing System, representations, comparison conditions, uncertainty | Which difference can be distinguished, by whom, and in which Music or Dance situation? |
 | **selection and authority** | decision, chooser, criteria, evidence, authority, permission, affected parties | Who may decide what, and whose judgement or rights constrain that decision? |
-| **mediation and visibility** | venue, schedule, camera, recording, publication, recommendation System, format, metrics | What is amplified, obscured, reordered, or transformed before people respond? |
-| **feedback and contest** | returned observations, rewards, exclusion, performer or teacher adaptation, appeal, revision, refusal, alternate venue | How can the arrangement change later practice, and how can a harmful effect be challenged? |
+| **mediation and visibility** | venue, schedule, camera, recording, publication, recommendation System, format, metrics | What can the medium amplify, obscure, reorder or transform? For a past occurrence, what happened? |
+| **Feedback and contest** | Observations, rewards, exclusion, changes in practice, appeal, revision, refusal or another venue | What responses or grounds for appeal were available? What evidence shows a change in practice or an actual challenge? |
 
 These are views of one arrangement. A partner can recognize timing while a jury selects a battle result and a camera mediates visibility during the same festival occurrence.
 
-Ground the current arrangement in actual Work and relations. A policy, scoring table, syllabus, event page, model, or platform description is evidence about an arrangement, not the arrangement itself. When a recognition Method, authority, or feedback relation is missing, report that missing result and the design decision it prevents.
+A scoring rule, syllabus, policy, event page or model can establish what an arrangement specified. To report what operated, what was chosen or how feedback affected performers, use evidence of the relevant actions and relations. A past comparison may finish with a specific limitation. When a design depends on a missing recognition result, authority or feedback channel, identify what the gap prevents.
 
-#### MDPE.13:3.3 - Find the pressure that changes later practice
+#### MDPE.13:3.3 - Examine how selection may affect later practice
 
-For each important selection or visibility relation, ask what a rational participant is likely to optimize. State the expected change as a hypothesis, not as an observed fact.
+For a consequential selection or visibility rule, ask what it encourages and what a participant might change in response. Use evidence from the relevant work to establish what changed. To attribute that change to the rule, examine evidence that distinguishes its influence from other plausible causes.
 
 Examples of **feedback hypotheses** include:
 
@@ -117,11 +117,11 @@ Examples of **feedback hypotheses** include:
 - a recommendation System may amplify already visible material and make popularity appear self-validating;
 - expert criteria may preserve subtle lineage distinctions while freezing one historical interpretation.
 
-For each consequential hypothesis, identify the affected Agent or practice and predicted change. Retain a serious rival when it changes the explanation or choice. Use adequate available observations; obtain a discriminating comparison through `MDPE.12` when the remaining distinction can change the receiving decision enough to warrant its burden. A supported action shared by the remaining hypotheses can finish the choice while the causal explanation stays unresolved. Use `C.28` when a causal claim needs its own support.
+For a consequential feedback hypothesis, identify the affected participant, technical service or practice and the predicted change. Keep alternatives that could change the explanation or choice. Use adequate existing observations. If the question is still open, consider a comparison through MDPE.12 when its attainable result warrants the burden. A common practical choice can be justified even while the cause is uncertain. Use C.28 when a causal conclusion needs further grounds.
 
-#### MDPE.13:3.4 - Create materially different alternatives
+#### MDPE.13:3.4 - Compare existing alternatives or develop a different design
 
-Change at least one load-bearing relation: who recognizes, who chooses, which evidence matters, how access is allocated, how alternatives remain available, or how feedback and contest work.
+For an existing comparison, establish whether there is a consequential difference in who recognizes or chooses, what evidence matters, how access is allocated, which variants remain available, or how feedback and appeals work. To design another alternative, change a relation that affects the intended use.
 
 Examples of **arrangement families** include:
 
@@ -134,22 +134,22 @@ Examples of **arrangement families** include:
 | several independent views with retained alternatives | plural evidence and protection from one-selector failure | slower decisions, unresolved conflicts, greater explanation cost |
 | rotating, random, or exploration allocations | access for unusual or not-yet-legible variants | lower immediate fit and possible arbitrary harm |
 
-Use novelty–quality–diversity reasoning when one ranking would destroy useful alternatives or stepping stones. State which dimension of diversity matters and why.
+When one ranking would discard useful alternatives or intermediate ways forward, compare novelty, quality and the particular diversity the use needs. State why preserving that variation matters.
 
-#### MDPE.13:3.5 - Select a bounded arrangement and plan observation
+#### MDPE.13:3.5 - Report the comparison or choose an arrangement
 
-Compare alternatives for the current decision. Keep non-equivalent criteria separate: safety or consent may be a veto; partner experience, technical control, novelty, continuity, accessibility, resource burden, and commercial return may produce trade-offs rather than one score.
+When the question calls for a comparison, compare the alternatives for the stated use. A seven-minute limit rules out showing a longer work in full on that channel, while a live programme may admit it. Determine whether an excerpt or the complete work was presented from evidence of the occasion. To choose a design, compare the relevant artistic and practical criteria. Safety or consent may rule out an option. Partner experience, technical control, novelty, continuity, access, cost and revenue may favour different options.
 
-Use `C.11` when an `OptionSet` is ready. The selected result includes:
+If the comparison answers the question, report what it establishes, including any material similarities, differences or limits. When a choice is commissioned and feasible options are ready, C.11 can support it. For a recommendation or selected design, identify the following matters as required.
 
 - the bounded setting, variants, participants, and intended use;
-- the chosen encounter, recognition, selection, mediation, feedback, contest, and exit relations;
-- the Agents, technical Systems, Methods, capability, evidence, authority, permission, and resources required;
-- the predicted benefit, burden, excluded alternative, and affected party for each important trade-off;
-- the observations and time horizon that can change the decision; and
-- implementation, rollback, or reopening conditions.
+- The proposed or chosen routes for encounter, recognition, selection, mediation, feedback, contest and exit.
+- Who would do the work and what systems, methods, capabilities, evidence, authority, permissions and resources it requires.
+- The expected benefit, burden, affected party and any option excluded by a material trade-off.
+- Any consequential uncertainty and observations, existing or proposed, that could affect the choice, with the period those observations need to cover.
+- Conditions for implementation, reversal or reconsideration where those actions are at issue.
 
-The result is complete when it lets the responsible Agent choose and organize implementation Work. It does not claim that the arrangement already operates or that the culture has selected or retained anything. Implement the chosen event, teaching, judging, platform, publication, or community change through its direct Methods. Observe later recognition, selection, transmission, retention, and loss separately.
+A historical account is complete when it answers the question about the rules, choices or effects under investigation, or states what the evidence leaves open. A design can be delivered with its requirements, trade-offs and remaining uncertainty. Identify the holder of authority for any decision to adopt it. When implementation is commissioned, use the relevant event, teaching, judging, platform, publication or community practice. Establish actual recognition, selection, transmission, retention or loss with evidence of those outcomes.
 
 ### MDPE.13:4 - Worked Cases
 
@@ -163,85 +163,85 @@ For the same festival, the team compares three feasible arrangements:
 - retain that arrangement and add a twenty-minute social-floor task with four rotating experienced partners, replacing twenty minutes of the open social programme;
 - add the floor task and ten minutes of non-ranked demonstrations for variants that neither task accommodates, replacing ten minutes of battle finals as well; label clips by the use they actually show.
 
-The first alternative is a serious option: the director already handles access, conflicts of interest, programme fit and participant appeals. It costs least and is adequate when the existing observations cover the proposed material. Here, however, two unfamiliar variants have no such partner reports, and a third uses a slow joint recovery that neither a short battle nor the proposed floor task can display. Those are gaps in the available comparison, not proof that the variants deserve a place.
+The director already handles admission, programme fit, conflicts of interest and participant appeals. This first option costs least and can suffice when earlier class observations and partner reports cover the proposed material. Here two unfamiliar variants lack those reports. A third has a slow joint recovery that neither a short battle nor the proposed floor task can show. These gaps justify comparing the other arrangements. Whether any variant merits a place is a separate decision.
 
-For this festival the team chooses the third alternative. The four partners accept the additional task and its briefing; the schedule keeps them out of concurrent teaching duties. The team accepts thirty fewer minutes for the displaced uses to obtain a situated comparison and a place to encounter the otherwise ill-fitting variant. Consent and safe participation remain vetoes; extra visibility cannot compensate for them. The team explains why the demonstration places award neither a rank nor a teaching qualification.
+The team chooses the third arrangement for this festival. Four experienced partners accept the floor task and briefing, and their teaching duties are scheduled at other times. The twenty-minute task takes time from open social dancing. The ten-minute demonstrations take time from battle finals. The team accepts the thirty-minute displacement to obtain a partner comparison and let people encounter variants the other formats cannot show. Consent and safe participation are required. The non-ranked time offers neither a competition rank nor a teaching qualification.
 
-The observation plan tests the reasons for that cost. Partners describe which timing or recovery distinction they could actually judge; the programme director compares those reports with the earlier class evidence and battle record. The team also records refusals, lost practice opportunities, access to the demonstration places and later workshop choices. If the extra floor task adds no decision-relevant distinction beyond adequate existing class reports while its time loss prevents novices from completing the planned shared practice, the next edition returns to the single director arrangement. If the task supplies useful evidence but the non-ranked format cannot make the slow recovery observable, the team retains the task and changes or removes those demonstration places; mere attendance does not rescue their stated purpose. If the required partners become unavailable, the team narrows or defers the new comparison instead of presenting battle scores as its substitute.
+The team plans to ask partners which differences in timing or recovery they could judge. The programme director will compare their reports with the class observations and battle record. The team also plans to examine refusals, lost practice time, access to the demonstrations and later workshop choices. Suppose class reports already give the useful distinctions and the new task prevents novices from completing their planned shared practice. The team would return next time to the arrangement in which the director selects demonstrations and workshops from existing evidence and the battle jury keeps its remit. If the floor task informs selection but the demonstrations do not show the slow recovery, it can retain the task and change or drop those places. Attendance alone does not answer the visibility question. Without the required partners, narrow or defer the comparison.
 
-These are operational conditions for retaining, narrowing or reversing the design, not results of a completed festival. Later repeat participation and reappearance of a variant may inform another decision; this design alone establishes no wider cultural retention.
+These are the team’s conditions for retaining, narrowing or reversing its design. Once the festival has taken place, examine the observations that bear on them. Later participation and the return of a variant may inform another choice. A claim about wider cultural retention needs evidence over the relevant population and period.
 
-During preparation, suppose the media editor proposes exclusive labels “social” and “stage”. A dancer correctly explains both labels and objects that the slow joint recovery can serve partners in ordinary practice as well as an audience in demonstration. The dispute concerns the category boundary and its consequence for access, not the dancer's inability to recognize the movement. Another participant accepts the descriptions but disputes giving scarce programme time to that material. Better explanations alone cannot settle this allocation disagreement.
+During preparation the media editor proposes using “social” and “stage” as exclusive labels. A dancer correctly explains both labels and objects that the slow joint recovery can serve a partner during ordinary practice as well as an audience at a demonstration. This is a dispute about classification and access. Another participant accepts both descriptions and disputes using scarce programme time for that material. A clarification of terms can settle what a label means while leaving the allocation contested.
 
-The team changes the labels to non-exclusive use descriptions and lets the dancer contest the description against the actual task. It keeps the demonstration's purpose and time limit explicit, and the programme director reconsiders admission on those grounds alongside other submissions. A corrected label does not guarantee a slot, a rank or a teaching invitation. Record separately whether participants understand the descriptions, accept the distinction, regard the allocation as defensible, and actually choose the activity. A satisfactory interface or an upheld objection does not by itself establish fair access or later cultural continuation.
+The team adopts non-exclusive descriptions of use. The dancer can contest a description against the actual task, and the programme director reconsiders admission on those grounds alongside other submissions. The demonstration purpose and time limit still apply. Upholding the objection changes the description. To establish admission, a rank or a teaching invitation, identify the particular decision. Distinguish participants’ understanding of the descriptions, acceptance of the boundary, views about the allocation and actual participation. Fair access and later cultural continuation each require their own evidence.
 
 
 #### MDPE.13:4.2 - An Algorave programme protects live practice from one publication format
 
-The [Algorave guidelines](https://github.com/Algorave/guidelines/blob/master/README_en.md) describe an event-programming Method. Its direct result is an event programme and production brief covering a dance-event setting, sound, visible process, technological diversity, non-headliner organization, affordable access, conduct, accessibility, and community contact. That result shapes encounter and programme selection but does not establish a performed local event, audience recognition, or later cultural retention.
+The [Algorave guidelines](https://github.com/Algorave/guidelines/blob/master/README_en.md) help an organizer develop a programme and production brief. They cover a dance-event setting, sound, visibility of the algorithmic process, varied technologies, organization without a headliner, affordability, accessibility, conduct and community contact. These choices shape what can be encountered and selected. For a claim about a particular event, audience response or later retention, examine the corresponding evidence.
 
-A local organizer expects short clips to favor immediately legible visual interfaces and brief musical events. The organizer compares curator-only programming, popularity-ranked submissions, rotating themes, and a mixed arrangement that uses curatorial feasibility checks while retaining exploration places for materially different live-coding Methods. For this constructed example, suppose the organizer selects the mixed arrangement for one local event. It names venue limits, performer needs, access and conduct requirements, selection authority, publication treatment, and observations of audience discrimination and later performer adaptation. The direct event-programming Method supplies the programme and production brief. `MDPE.13` adds only the unresolved design question: how curator choice, exploration places, publication treatment, audience recognition, and performer feedback should jointly shape which live-coding variants remain available for later practice.
+In a constructed local example, the organizer expects clips to favour immediately legible interfaces and brief musical events. They compare curator-only programming, a popularity ranking, rotating themes and a mix of curatorial feasibility checks with exploration places for different live-coding methods. They select the mixed arrangement for one event. In the programme and brief, the organizer specifies venue limits, performer needs, access, conduct, selection authority and how performances will be published. The organizer plans observations of audience discrimination and later changes in performer practice. The contribution here is to compare how the combined rules may affect which variants remain available. Use the event-programming method to produce the programme itself.
 
-#### MDPE.13:4.3 - Stop at the direct Method when the arrangement is not being redesigned
+#### MDPE.13:4.3 - Use the direct judging method for one performance
 
-A competition already maintains suitable eligibility, judging, conflict-of-interest, scoring, appeal, publication, and rule-revision Methods. The current question is one performance result under those Methods. Use the competition Method and `C.11` where a choice remains. Do not invoke `MDPE.13` merely to restate the judging process.
+A competition has established eligibility, judging, conflict-of-interest, scoring, appeal, publication and rule-revision procedures. To settle the result of one performance under them, use the judging procedure or its documented result. Apply C.11 if the decision still requires a comparison of options.
 
-Return to `MDPE.13` when the combined arrangement is itself in question—for example, when qualification access changes, peer recognition is added, media amplification is separated from judging, or non-ranked alternatives must remain available.
+Return to MDPE.13 when the combined arrangement is the question. You might compare how past entry rules affected qualification, assess what peer recognition would add, or design separate places for judged performances and non-ranked work.
 
 ### MDPE.13:5 - Recognition and Assurance
 
-Check that the selected design answers these questions:
+Use the questions relevant to the account, comparison or design you are assessing.
 
-- What recurring Music-or-Dance difficulty makes the current arrangement costly?
+- Which recurring arrangement is under study, and what does the recipient need to learn or decide about it?
 - Which variants, uses, participants, and affected parties are in scope?
-- Who can encounter and recognize the relevant difference?
-- Which Agent makes each bounded choice, with what authority and evidence?
-- Which technical System only mediates access or visibility rather than choosing artistic value?
-- How can participants contest, revise, refuse, or exit?
-- How may the arrangement change later performer, creator, teacher, organizer, or platform Work?
-- Which materially different alternatives were compared?
-- What was selected, what trade-off was accepted, and what observation can reopen the decision?
-- Are design, implementation, local selection, and later cultural effect kept separate?
+- Who can encounter the variants and distinguish the relevant differences? What shows actual use or recognition where the claim concerns it?
+- Which choices does the arrangement authorize and who is responsible? What evidence shows any actual choice the account attributes?
+- What does a technical system measure, rank or display? Which selection, if any, has been delegated to it, and within what authority?
+- How may participants contest, seek revision, refuse or leave? What happened in any actual challenge under study?
+- What feedback could affect later practice? What observed changes can be connected to the arrangement, and on what evidence?
+- When alternatives are being compared, which differences matter to the use?
+- For a recommendation, what trade-off is proposed? For a choice, what did the authorized decision maker select and accept? What could change the grounds?
+- Which claims concern a design, an implemented arrangement, a particular choice or a later cultural effect?
 
-Assure the arrangement after implementation with direct evidence. Check that the named Agents, Systems, Methods, access, authority, and feedback relations actually operate; then use `MDPE.12` for observations that can update the design. Attendance, publication, applause, view count, or institutional status may be useful observations, but none alone establishes recognition, artistic value, population selection, or continuation.
+To assess operation, identify what operated during the period in question from evidence of the relevant rules, participants, systems, authority, access or feedback. A previous record can be sufficient. MDPE.12 can compare indications where the evidence remains open to different interpretations. Attendance, publication, applause, views and institutional status can establish particular events or forms of visibility. Claims about recognition, artistic value, selection across a population or continuation need evidence that bears on those outcomes.
 
-Expert estimates are acceptable when direct evidence is unavailable and the decision cannot wait. Name them as estimates, state the basis and uncertainty, and consider a reversible trial when its attainable contribution justifies its cost and delay.
+An expert estimate can help when direct evidence is unavailable. State who estimated what, the grounds and uncertainty. When an open question matters to a proposed action and a reversible trial is feasible, weigh its attainable contribution against cost and delay. When the available record supports only a limit, report that limit.
 
 ### MDPE.13:6 - Common Failures and Repairs
 
 | Failure | Repair |
 | --- | --- |
 | “The audience selected this style.” | Name the population, recognition or response task, actual local decision or distributed cultural relation, conditions, and evidence. |
-| “The algorithm decided what is valuable.” | Name the recommendation System, its Method and metric, the ordering it produces, the Agents who set or use it, and the affected parties. |
-| “The rubric makes the result objective.” | Recover the criteria, representation, competent judges, uncertainty, authority, conflicts, and qualities the task cannot observe. |
+| “The algorithm decided what is valuable.” | Identify the recommendation system, rule, inputs and resulting order. Establish what, if anything, it could officially select and who set or used those criteria and whose access or opportunities the resulting order affected. A claim of artistic value also needs the relevant grounds. |
+| “The rubric makes the result objective.” | Identify the criteria and representation, the judges’ competence and authority, uncertainty or conflicts, and any qualities the task could not reveal. |
 | “We published the variants, so diversity is preserved.” | Separate publication and access from later recognition, use, transmission, and retention. |
-| “The policy exists, so the arrangement is implemented.” | Check the actual Agents, Systems, Work, Methods, authority, access, and feedback relations. |
-| “One committee, founder, or platform governs the culture.” | Bound its actual decision and influence; keep other arrangements, distributed selection, contest, and exit visible. |
+| “The policy exists, so the arrangement is implemented.” | A published policy can establish what it says. To establish that its rule applied, check its authority, version and scope where those are in question. For actual operation, check evidence that the eligible parties, technical systems, access and feedback worked as claimed. |
+| “One committee, founder or platform governs the culture.” | Establish the actual choice and scope of influence. Investigate other arrangements, distributed uptake, contest or exit where the wider claim depends on them. |
 
 ### MDPE.13:7 - Consequences
 
 | Benefit | Cost or caution |
 | --- | --- |
-| Hidden cultural pressure becomes a designable arrangement. | The analysis may expose conflict rather than one tidy objective. |
+| A comparison can reveal where a recurring rule favours particular variants. | The participants’ aims may conflict, and changing the arrangement may require an authorized trade-off. |
 | Music and Dance uses can be compared without one universal judge. | Each use still needs direct Methods, capable participants, and evidence. |
-| Several selectors or retained alternatives can reduce one-selector failure. | Coordination, explanation, and observation cost more. |
-| Reflexive effects become testable hypotheses. | Predictions can be wrong and must not be reported as cultural facts. |
+| Several selectors or retained alternatives can reduce reliance on one chooser. | They may require more coordination, explanation and observation. |
+| The effects of feedback can be investigated. | A predicted change may fail to occur. Identify what changed and attribute effects to feedback only where the evidence supports that explanation. |
 | Project choice stays separate from cultural selection and continuation. | Approval or implementation alone cannot count as cultural success. |
 
 ### MDPE.13:8 - Rationale and Source Use
 
-FPF `C.36` already distinguishes generation, transmission, recognition, selection, retention, loss, mediation, and deliberate intervention. This pattern adds the Music-and-Dance engineering move: compare and change the recurring arrangements through which embodied timing, partner interaction, sound, teaching, events, cameras, venues, audiences, and platforms make variants legible and worth repeating.
+FPF C.36 distinguishes generation, transmission, recognition, selection, retention, loss, mediation and deliberate intervention. In music and dance, compare arrangements in terms of the timing and partner relations they expose, the sound and movement they convey, who could encounter each variant, who did so where relevant, and the effects of teaching, venue, camera or platform choices to the extent established. A comparison can establish how existing arrangements treated variants. It can also supply grounds for choosing what, if anything, to change.
 
 | Source or maintained result | Use here | Boundary |
 | --- | --- | --- |
 | `C.36` Cultural Evolution and Cultural-Evolution Engineering | Keeps project choice, intervention, performed Work, actual change, recognition, selection, transmission, retention, loss, mediation, and effect distinct. | It does not supply the Music-or-Dance participants, criteria, Methods, or arrangement design. |
-| `A.22`, `C.30`, `C.30.AD` | Support several structures and one architecture description for the bounded arrangement. | A view or description does not make the arrangement operate. |
-| `C.11`, `C.28` | Support local choice among formed alternatives and stronger treatment of causal claims when needed. | A `ChoiceResult` does not implement the design or establish cultural selection. |
-| `MDPE.12`, `MDPE.23` | Supply bounded observation and demonstrated recognition capability. | Observation and capability do not confer authority or make a selection decision. |
-| [Algorave guidelines](https://github.com/Algorave/guidelines/blob/master/README_en.md) | Supply the direct community event-programming Method and its event-programme-and-production-brief result: setting, sound, visible process, programme diversity, affordability, access, conduct, and community contact. | The direct result does not supply the additional recognition-and-selection arrangement, a performed local event, audience recognition, or cultural continuation. |
-| [Renata Peçanha on Brazilian Zouk](https://zoukology.com/renata-history/) and [Pavel Sobiray on Street Tango](https://tangonuevo.ru/stc7eng) | Supply bounded cases of deliberate variation, teaching, criticism, events, participant response, and continuation. | Creator and practitioner accounts do not establish whole-field prevalence, superiority, causal effect, or authority. |
+| A.22, C.30 and C.30.AD | Select the structures relevant to the question and describe the arrangement’s significant organization if an architecture account is needed. | Use evidence about the actual arrangement for a claim that it operated. A description can already settle what was specified. |
+| C.11 and C.28 | Compare formed options for a local choice or establish grounds for a consequential causal claim. | An authorized choice, the work of implementing it and selection across a population have separate evidence. |
+| MDPE.12 and MDPE.23 | Supply applicable observations or an assessment of recognition under the stated conditions. | Establish authority and any actual selection through the arrangement in question. |
+| [Algorave guidelines](https://github.com/Algorave/guidelines/blob/master/README_en.md) (consulted 25 August 2026) | Guide organizers in preparing a programme and brief covering setting, sound, visible processes, programme diversity, affordability, access, conduct and community contact. | Use local evidence for an event’s actual programme, performances or audience response. Later cultural continuation has its own scope. |
+| [Renata Peçanha on Brazilian Zouk](https://zoukology.com/renata-history/) and [Pavel Sobiray on Street Tango](https://tangonuevo.ru/stc7eng) (consulted 25 August 2026) | Peçanha describes experimentation and criticism in Brazilian Zouk. Sobiray’s programme describes his Street Tango teaching, and the published testimonials report selected participants’ experience and later use. | Attribute the account to its speaker and period. For prevalence, superiority, causal effect or authority beyond that case, obtain the evidence appropriate to that claim. |
 
-Recheck the design when the practice boundary, event or platform architecture, recognition task, participant population, authority, or observed feedback changes enough to alter the choice.
+When the practice boundary, venue or platform, recognition task, participant population, authority or observed feedback changes, revisit the conclusion that depended on it. An unchanged account of what happened in the earlier period can remain usable.
 
 ### MDPE.13:9 - Relations
 
@@ -252,8 +252,8 @@ Recheck the design when the practice boundary, event or platform architecture, r
 | `C.11` | Select among already formed arrangement alternatives. |
 | `A.10`, `C.17`, `C.28` | Ground evidence, characteristics, novelty/value claims, and causal claims when they matter. |
 | `A.2.8`, `A.2.8.PER`, `D.1`–`D.4` | Keep authority, permission, participation, responsibility, affected-party consequences, refusal, and exit visible. |
-| `E.10.ROLE`, `A.2`, `A.2.1`, and `F.6` | Recover ambiguous role wording, local system-role kinds, and obtaining assignments only when the current attribution depends on them; use `F.6` only when performed Work is attributed through an assignment. |
+| E.10.ROLE, A.2, A.2.1 and F.6 | Clarify which role is meant, its local definition and the actual assignment if the attribution depends on it. Use F.6 when attributing performed work through such an assignment. |
 | `C.18`, `C.19`, `G.5`, `G.11`, `E.24.PUB` | Keep search, retained alternatives, publication, currentness, and refresh separate from cultural recognition and selection. |
-| `MDPE.9`, `MDPE.12`, `MDPE.23` | Supply variants, observations, and recognition capability without claiming selection or continuation. |
+| MDPE.9, MDPE.12 and MDPE.23 | Use candidate variants, observations or recognition results from these methods where needed. A claim of selection or continuation requires evidence about those outcomes. |
 
 ### MDPE.13:End

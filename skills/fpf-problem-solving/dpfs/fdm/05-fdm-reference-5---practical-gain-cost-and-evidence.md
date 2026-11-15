@@ -2,6 +2,6 @@
 
 The first gain is a smaller, better defined question. A payment report may need only a corrected party reference or a distinction between due and paid. A service design may need to locate who actually uses a score. A disputed obligation may require the applicable institutional rule and evidence of the event it recognizes.
 
-A detailed model costs time to build and maintain. Begin with an adequate existing account and deepen it where a plausible alternative changes interpretation or action. A qualified model, demonstrated non-change or precisely located unknown can be the first useful result.
+Detailed models take time to build and maintain. Begin with what existing accounts establish. Add detail when a plausible difference matters to the requested finding or action. The result can be a supported position or model, a finding that nothing changed, or a precise limit on what is known.
 
-Recognition and assurance have different jobs. A score presented as a benefit or an aggregate presented as available cash is a reason to examine the account. An actual financial-effect claim needs adequate support for the parties, applicable terms, occurrence and consequence it asserts. A quantitative benefit claim also needs evidence for its comparison and uncertainty. The numerical cases here are constructed under supplied terms.
+A score presented as a benefit or a group balance presented as available cash gives reason to examine the claim. To establish a financial effect, use evidence for the parties, terms, event and consequence on which it depends. For a quantitative benefit, support the comparison and qualify its uncertainty. The numerical cases in this book stipulate their terms.

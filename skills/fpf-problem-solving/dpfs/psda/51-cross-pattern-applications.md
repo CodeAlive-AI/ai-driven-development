@@ -1,3 +1,3 @@
 # Cross-pattern applications
 
-These constructed applications show how several pattern results can serve one working question. Their people, organizations, dates, data and supplied results are illustrative premises, not reports about actual clients or proof of effectiveness. A real use must establish its own facts, authority and evidence. The slices may overlap or reopen one another; their reading order is not a project lifecycle.
+These constructed applications show how several pattern results can answer one working question. Each case supplies its own illustrative facts, permissions and results. Establish those premises for a real client and use evidence from the relevant work for a claim of effectiveness. A practitioner can combine, revisit or stop after the parts that answer the question.

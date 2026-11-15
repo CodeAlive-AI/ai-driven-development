@@ -21,7 +21,7 @@ Rich episodes preserve future distinctions and consume storage, attention and pr
 
 #### KCAE.MEMORY:4.1 - Retain the smallest revisable episode
 
-Preserve the original expression or observation that matters, the receiving use, allowed source return, current interpretation, rejected interpretations that could otherwise recur, unresolved questions and the grounds of any conclusion. Keep source text separate from the system's interpretation. An early cue may have no selected method, no confirmed anomaly and no confidence score. That is a legitimate unresolved result.
+Preserve the original expression or observation that matters, the receiving use, allowed source return, current interpretation, rejected interpretations that could otherwise recur, unresolved questions and the grounds of any conclusion. Keep source text separate from the system's interpretation. An early cue may have no selected method, no confirmed anomaly and no confidence score. That unresolved cue is a legitimate result of inquiry and can be retained for later work.
 
 Obtain the retention purpose, scope, access and expiry from the owner. Avoid copying private source material when a protected reference suffices; test that the reference will remain obtainable by an authorized later reader. If the content must be erased, retaining an embedding or paraphrase may still retain the prohibited information. Apply the deletion meaning to every derived copy.
 
@@ -29,7 +29,7 @@ For CedarBench, retain “senior analyst removes duplicates after on-time export
 
 #### KCAE.MEMORY:4.2 - Store conditional connections with their dependencies
 
-A reusable connection says which contribution helped which kind of receiving result, under what source edition, case conditions, criterion and support. Retain the source address and relevant dependency slice. Store an assessment or recommendation as that result, not as a timeless fact about the source. An observed successful application additionally needs its actual conditions and outcome; a proposed sequence has no observed success merely because it was stored.
+A reusable connection says which contribution helped which kind of receiving result, under what source edition, case conditions, criterion and support. Retain the source address and relevant dependency slice. Store an assessment or recommendation as that result, not as a timeless fact about the source. An observed successful application additionally needs the conditions and outcome of that application; a proposed sequence has no observed success merely because it was stored.
 
 Key reuse on the conditions that can change the answer, not only a semantic similarity score. A prior answer can be used directly when its dependencies and receiving use still hold. Where only part survives, reuse that part and reassess the changed premise. Missing dependency information makes the old answer a candidate to inspect, not a qualified shortcut.
 
@@ -39,7 +39,7 @@ Repeated requests can justify a response cache, a source-to-question map or a re
 
 Maintain a bounded collection of authorized open questions and conditional uses. When a source changes or a newly inspected method supplies a different contribution, query that collection by its possible receiving results and conditions. Reassess candidate episodes against their original cues; do not simply append the new method to every similarly tagged case.
 
-This reverse lookup can be indexed lexically and semantically, with the same source-return and blind-spot limits as forward retrieval. Preserve a route to open episodes outside the existing category. A periodic sample or targeted direct inspection can reveal cases the category map hides. Selection for such inspection must have a declared scope and cost; it is not proof that every past episode has been reconsidered.
+This reverse lookup can be indexed lexically and semantically, with the same source-return and blind-spot limits as forward retrieval. Preserve a route to open episodes outside the existing category. A periodic sample or targeted direct inspection can reveal cases the category map hides. State the scope and cost of that inspection. Inspecting a sample or a target does not establish that every past episode was reconsidered.
 
 Publish a changed connection only after the relevant source and current case basis are inspected. The old configuration may no longer be observable, or the user's need may have ended. Return “potentially relevant, present situation unknown” rather than an unsolicited action based on an old conversation. Permission to remember is not automatically permission to interrupt; KCAE.ENCOUNTER governs the latter.
 
@@ -67,7 +67,7 @@ If the customer's project has ended, the source-method relation can remain usefu
 
 ### KCAE.MEMORY:6 - Bias-Annotation
 
-Stored conclusions encourage confirmation and make past success look universal. Preserve the original cue and a discriminating non-fit. Feature discovery can overfit vivid failures; include common ordinary cases and unknown inputs. More memory is not automatically better memory, especially when permissions or source returns are fragile.
+Stored conclusions encourage confirmation and make past success look universal. Preserve the original cue and a discriminating non-fit. Feature discovery can overfit vivid failures; include common ordinary cases and unknown inputs. Retaining more episodes need not improve reuse, particularly when retention permission is uncertain or source access is unreliable.
 
 ### KCAE.MEMORY:7 - Conformance Checklist
 
@@ -79,7 +79,7 @@ A saved label is not a preserved episode. A cached judgement is not an enduring 
 
 ### KCAE.MEMORY:9 - Consequences
 
-The system can learn useful connections and return to unresolved work with less repetition. It also acquires maintenance and privacy obligations. A bounded memory can deliberately forget; lossless retention of every future distinction is neither claimed nor normally attainable.
+The system can learn useful connections and return to unresolved work with less repetition. It also acquires maintenance and privacy obligations. A bounded memory can deliberately forget. It generally cannot guarantee retention of every distinction a later question might need.
 
 ### KCAE.MEMORY:10 - Architectural Rationale
 

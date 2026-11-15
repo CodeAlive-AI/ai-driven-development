@@ -5,17 +5,17 @@
 
 ### RHY.12:1 - Problem frame
 
-**Use this when** a learner can count, describe or perform parts of a passage but loses a needed rhythmic relation when performing the passage: the beat changes with the phrase rate, a sustained contribution disappears under an accent, or a partner's cue is noticed only after the response should begin.
+**Use this when** a learner needs to develop a rhythmic relation for a passage. They may be able to count, describe or play the parts separately while the beat changes with the phrase rate, an accent interrupts a sustained action, or a partner’s cue is noticed too late to prepare a response. Use the same relation to assess what earlier practice established when that is the question.
 
-Choose a short part of the intended performance and practise the relation that currently fails. The first result is a usable exercise followed by a representative attempt, a bounded account of what changed, or an identified prerequisite that requires other instruction.
+Identify the part of the passage and the relation the learner needs. For a practice design, provide an exercise in which that relation can be attempted and checked. For actual teaching, use a representative attempt and report what it shows. An earlier attempt may already answer the question, and an unavailable prerequisite may limit what can be practised.
 
-This Method supplies rhythmic practice for human performers, including people working with instruments, partners or robots. HCD.6, HCD.9 and HCD.10 supply general task design, feedback and practice scheduling. The development of a robot's controller or learned policy requires its engineering or training Method. An already workable passage can be performed directly without turning it into an exercise.
+This method addresses practice by human performers, including people using instruments or working with partners or robots. HCD.6, HCD.9 and HCD.10 supply general methods of task design, feedback and scheduling. Use the relevant engineering or training method to develop a robot’s controller or learned policy. An adequate passage can be performed directly.
 
 ### RHY.12:2 - Problem
 
-Knowing the sequence does not ensure that a performer can maintain its reference, duration, articulation and relation to other actions at the same time. Repeating the whole passage may conceal the limiting contribution. Practising each part separately can conceal the difficulty of combining them.
+A learner may know the sequence and still lose a reference, duration or articulation while coordinating it with other actions. Repetition of the full passage can conceal the contribution that limits it. Separate practice can also leave their interaction untested.
 
-The next useful practice must therefore preserve the rhythmic relation being learned while making its limiting contribution available for correction. It must return that contribution to the passage in which it is needed.
+For practice of a joint relation, keep enough of the passage for the learner to attempt it. When one contribution limits the combination, make that action available for correction and rejoin it to the passage where it is needed.
 
 ### RHY.12:3 - Forces
 
@@ -24,93 +24,93 @@ The next useful practice must therefore preserve the rhythmic relation being lea
 | Isolation and coordination | A simpler exercise exposes one error but can remove the relation that makes the real passage difficult. |
 | Stable reference and variation | Changing tempo, phrase or grouping can develop a needed capability while also introducing a new physical demand. |
 | Assistance and later use | Counting, a score or a partner may supply a useful contribution; the intended performance may require keeping it or doing without it. |
-| Local progress and wider claims | A better next attempt justifies a next practice decision but does not establish retention or transfer. |
+| Local progress and wider claims | A better next attempt can guide practice. Retention over time and transfer to another use need evidence under the corresponding conditions. |
 
 ### RHY.12:4 - Solution
 
 #### RHY.12:4.1 - Choose the relation to develop in the intended passage
 
-Start with a recognizable attempt and the intended continuation. Select the relation that must become available: keeping a reference through silence, changing articulation without changing the underlying movement, coordinating a phrase with a different grouping, entering from a preparation cue, or correcting displacement while keeping the intended pace.
+Identify the target passage and what must continue after the action. Use an observed attempt where one exists to locate the relation to develop. It may be keeping a reference through silence, articulating an accent over a continuous movement, coordinating different groupings, entering from a preparation cue or correcting placement while maintaining pace.
 
-Use RHY.1 when several explanations of the difficulty remain plausible. Establish a demonstrable target, including a permissible variant when the practice allows one. A learner should be able to hear, see or otherwise recover what is to change. A numerical timing tolerance is useful only when the receiving task needs it.
+Use RHY.1 when several explanations remain plausible. Give the learner a target they can hear, see, feel or otherwise recover, including an acceptable variant when the practice allows one. Specify a numerical tolerance when the intended use requires it.
 
-Locate the limiting contribution within the performed whole. A turn may require balance throughout a rotation; musical articulation may require control of release while the hand continues moving. Strength, sequence memory and successful counting do not substitute for those contributions. Obtain missing bodily, instrumental or perceptual instruction from the relevant practitioner. Continue an encompassing activity only under conditions the performer can manage.
+Locate the contribution that limits the performance, when there is one. A rotation can depend on balance throughout the turn. Articulation may require a controlled release while the hand keeps moving. Sufficient strength, a successful count or a recalled sequence can coexist with a failure in that coordination. Use adequate bodily, instrumental or perceptual instruction when available, and seek a qualified contribution if a needed technique is missing. Continue the encompassing activity under conditions the performer can manage.
 
 #### RHY.12:4.2 - Construct an exercise that preserves that relation
 
-Keep enough of the passage to include preparation, the troublesome relation and its continuation. Make one useful change to expose or support the action, rather than assuming that making everything slower or easier preserves the task.
+In the exercise, preserve the preparation, target relation and following action that the learner needs. Change a condition when doing so helps reveal or support that relation. Slowing a passage or removing a contribution helps only if the resulting task still exercises what the learner needs.
 
 | Rhythmic difficulty | Practice construction | What must remain recoverable |
 | --- | --- | --- |
-| Phrase rate pulls the beat with it | Maintain a familiar gesture or other accessible reference while changing syllables or actions per beat; return to the original rate without restarting the reference. | Beat period, phrase grouping and the transition between rates. |
+| Phrase rate pulls the beat with it | Keep a familiar gesture or another accessible reference while changing syllables or actions per beat. Return to the original rate without restarting the reference. | Beat period, phrase grouping and the transition between rates. |
 | Silent positions or sustained sounds disappear from an onset string | Combine the onset representation with a duration-bearing score, timed demonstration or agreed continuation/rest convention. Perform the duration while the reference continues. | Attack, continuation, release and silence as different contributions. |
-| An accent stops a continuing movement or sound | Use a familiar small articulation with the continuing contribution, then enlarge or vary it only while both remain available. | The course of the continuing contribution, the articulation and the action after it. |
-| Separately fluent layers fail together | Join a short overlap containing their differing landmarks; demonstrate how one part continues through the other's boundary. | Each part's grouping and course, and the point at which they next coordinate. |
-| A partner's change is followed too late or causes repeated overcorrection | Use an agreed, manageable change and an available preparation cue; practise noticing it, responding and recovering at a known point. | Cue access, intended reference, permitted adjustment and recovery. |
+| An accent stops a continuing movement or sound | Try a familiar smaller articulation with the continuing contribution. Enlarge or vary it when needed while preserving both. | The continuing course, the accent and the action after it. |
+| Parts that are fluent separately fail together | Join a short overlap with the parts’ different landmarks. Show how one part continues through the other’s boundary. | Each part’s grouping and course, and the point at which they next coordinate. |
+| The response to a partner’s change is late or produces repeated overcorrection | Use a manageable agreed change and an accessible preparation cue. Practise recognizing the change, responding and recovering at a familiar point. | Cue access, intended reference, permitted adjustment and recovery. |
 
-RHY.3 and RHY.9–RHY.11 supply the underlying performance constructions. The exercise develops the learner's ability to carry out the selected construction. If a representation omits a needed duration or grouping, repair that input through RHY.5 or RHY.6; additional repetition cannot recover information that was never supplied.
+RHY.3 and RHY.9–RHY.11 describe ways to construct the performance. Design the exercise so the learner can practise the required construction. If the prompt leaves a needed duration or grouping unspecified, use RHY.5 or RHY.6 to repair it or supply suitable information from another source. Repeating the same incomplete prompt leaves that information missing.
 
-Choose assistance by its contribution. A beat gesture can keep a reference available while the learner articulates a phrase. It does not by itself say whether an unarticulated beat contains sustained sound or silence. A recording can supply timing but cannot respond like a live partner. Demonstrate the relation using the assistance that is actually available.
+Choose assistance for the contribution it supplies. A beat gesture can locate unarticulated beats while the learner speaks a phrase. A duration-bearing score or demonstration can specify sustain or rest. A fixed recording can provide timing. Practice that depends on a responsive partner requires a source capable of responding. Use assistance available for practice. Distinguish a temporary teaching aid from the help available in the intended performance.
 
 ##### RHY.12:4.2.1 - Derive practice from the pulse-and-accent construction
 
-RHY.11:4.4.1 defines the joint performance to acquire: keep the supporting time, place the selected accents relative to it, and continue. The two possible losses explain why the same practice construction can serve brush playing and partnered movement, although their movements and feedback differ.
+RHY.11:4.4.1 identifies the joint performance. The performer keeps the supporting time, places selected accents against it and continues. The support can lose its course or the accent can miss its place. An exercise that checks both losses can therefore serve brush playing and partnered movement. The bodily means and feedback differ between those uses.
 
-Begin with enough bodily or instrumental preparation to perform a manageable supporting action and an identifiable accent. Where either is unavailable alone, obtain that technique first. Then establish a short joint target containing preparation, one accent away from a convenient support landmark, and at least the following supporting event. A teacher can demonstrate the combined timing or let an external reference carry time while the learner places the accent. Bring the learner's own supporting action into that same relation; the external reference remains available to reveal whether it was perturbed.
+Use a manageable supporting action and an identifiable accent. If one cannot yet be produced separately, identify or develop the needed technique. If assessing a proposed exercise, report that prerequisite. For joint practice, include preparation, an accent away from a convenient support landmark and the following support event. A teacher can demonstrate the combined timing or use an external reference while the learner places the accent. When the performer must also produce the support, bring that action into the combined passage and check whether the accent disturbs it. An available external reference can help reveal that change.
 
-Use a short attempt and distinguish two questions: did support keep its intended period and course, and did the accent reach the selected place with the required character? A recording, visible movement and bodily feedback can reveal different parts of this answer. In partnered work, include the partner's usable continuation. A clear tap does not establish a clear weight event. When immediate commentary would disrupt the coordination, give the actionable correction after the phrase.
+Use a short attempt or an adequate observation of one to examine the course and period of the support and the placement and character of the accent. A recording, visible movement and feedback the performer feels can answer different parts of those questions. An observer may also use the performer’s report. For partnered work, include evidence of whether the partner could continue. An audible tap identifies a sound. A claim about weight transfer needs suitable evidence of that action. If commentary during the passage would disrupt coordination, give the correction afterwards.
 
-If the support changes at the accent, identify the additional movement or effort that pulled it away and try a smaller or differently allocated articulation that still meets the task. If support is steady but the accent waits for an easy phase, advance its preparation or change its path while retaining the chosen arrival. Demonstrate the revised overlap and retry it. Return briefly to a component only to recover the needed means, then rejoin both contributions. Repeating them separately cannot reveal whether their interference has changed.
+If the support changes at the accent, examine which movement or effort could have displaced it. Try a smaller or differently allocated articulation that still meets the target. If the support is steady but the accent waits for a familiar phase, start its preparation earlier or change its path while preserving the required arrival. Demonstrate the revised overlap or use a suitable example, then retry the combination. A component exercise can restore a missing means. Return to the combined passage to see whether interference changed.
 
-Once a manageable combination is available, change the required accent place and then its sequence of places while keeping the support. Include offbeat positions that the intended repertoire uses. Give an announced target enough lead time for its preparation; an unpredictable command arriving too late introduces a different reaction task. Add a change of intensity, limb role, tempo, phrase or partner only when that choice matters to the later performance. A repeated loss selects the affected relation for repair rather than a compulsory return to the first exercise.
+Once the combination is manageable and the intended use calls for different accent places, change the position and then the sequence while keeping the support. Include relevant offbeats. Allow enough warning to prepare the requested accent. A command that arrives too late introduces a reaction task. Vary intensity, limb role, tempo, phrase or partner when that change matters to later performance. After a repeated loss, return to the affected relation for correction.
 
-When later performance needs its own temporal reference, reduce the extra metronome or teacher count and check the spaces it no longer supplies. Keep the instrument, music, partner contact and other supports belonging to that performance. Test a new required accent sequence, a relevant change of reference and later retention when those claims matter. This distinguishes flexible synchronized articulation from a memorized combined pattern or an exercise sustained by coaching. The shared difficulty derives the exercise family; it does not prescribe identical physical cues, practice duration or progression speed for every learner.
+If the intended performance requires the learner to provide a reference, reduce the extra metronome or teacher count and check the intervals it used to mark. Keep the instrument, music, partner contact and other support that belongs in the target performance. For claims about a new accent sequence, another reference or later retention, use evidence under those conditions. A memorized figure and a flexible choice can look alike in one coached performance. Choose physical cues, practice time and progression for the actual learner.
 
 #### RHY.12:4.3 - Perform, locate one changeable action, and retry
 
-Use the HCD.9 feedback-and-retry method on the selected rhythmic action. Listen or watch for the relation itself: whether the reference continues through the phrase boundary, the release occurs before the silence, the accent preserves the continuous motion, or the response corrects the intended displacement.
+Use HCD.9 with the selected rhythmic action. Observe whether the reference continues through the phrase boundary, release occurs before silence, the accent preserves the movement or the response corrects the intended displacement. Retain a sound first attempt. For a missed relation, identify feedback that could help on the next attempt.
 
-Give feedback the learner can act on in the next attempt. For example, demonstrate the continuing gesture during the phrase restart instead of saying only “keep the rhythm.” If correction during performance would interrupt the target coordination, use a short attempt, feedback and another attempt.
+When correction is warranted, give one the learner can use. For example, demonstrate the gesture that continues while the phrase restarts. If feedback during performance would interrupt the target coordination, let the short attempt finish, give the feedback and invite another attempt.
 
-Separate a problem in interpreting the target from a problem in performing it. The learner may reconstruct the phrase correctly yet lose it when moving, or move fluently to a different reference. Change the demonstration or action practice accordingly.
+Distinguish interpreting the target from performing it. The learner may recover a phrase correctly and lose it when moving, or move fluently against a different reference. Improve the explanation or practise the particular action according to the evidence.
 
 Stop or reduce the attempt when continuing would defeat the available technique, support or agreed operating limits. Fatigue, a lost sightline or unsuitable equipment may call for a changed condition rather than more repetitions.
 
 #### RHY.12:4.4 - Rejoin the contribution and vary what later use requires
 
-Return the developed contribution to the passage. Observe it while the encompassing action and other constituent actions occur together. A successful isolated accent, count or turn remains an intermediate result until the needed combination is performed.
+For a claim about the whole passage, use adequate evidence of the practised contribution together with the other required actions. If that coordination still needs to be learned, rejoin the actions in the passage. A new joint attempt can supply an observation of present performance. For a past attempt, report what the available evidence establishes. An isolated accent, count or turn can establish its own result while the combination remains unexamined.
 
-Choose variation from the intended use. A passage used at several tempos needs practice across the relevant physical demands; a partner-dependent passage needs responsive interaction; entry at different cycle positions requires recovering the reference from those entries. Hold other consequential conditions stable when doing so helps identify what is failing.
+Choose variation for the intended use. If capability across several tempos has yet to be developed, include the relevant physical demands. For a responsive partner task, include interaction. For entry at different cycle positions, practise recovering the reference from those entries. Keep other relevant conditions stable when doing so helps locate a difficulty.
 
-Use HCD.10 to choose repetition, variation, spacing or interleaving. The amount and order of variation depend on the learner and the target contribution. When a change destroys an action still being acquired, a stable version can be the useful next practice. When a fluent familiar version conceals a needed choice or adaptation, introduce that change.
+Use HCD.10 to choose repetition, variation, spacing or interleaving for this learner and contribution. A stable version can help when a change removes the action being acquired. If a fluent familiar version conceals a needed choice or adaptation, introduce the variation that exposes it.
 
-Changing tempo changes the time available for movement, preparation and recovery. Check that the altered passage still exercises the intended relation. A slowed turn may call for different balance control; a faster stroke may exceed the available recovery time. Return such a new prerequisite to its supplying technique rather than calling it merely another count.
+A change of tempo changes the time for preparation, movement and recovery. Check whether the altered passage still exercises the intended relation. A slower turn can require different balance control, and a faster stroke can leave too little recovery time. Identify the particular technique or change of arrangement needed.
 
-Retain assistance that belongs in the intended performing arrangement. If later use requires performance without it, reduce its contribution deliberately and test that use through RHY.13. Removing a needed accessibility aid or the instrument itself changes the task and may change the performing whole.
+Keep assistance that belongs in the intended performance. If a claim concerns performance without a particular support, use suitable evidence from those conditions, or withdraw it for an appropriate test under RHY.13. Removing a necessary accessibility aid or the instrument changes the task and may change who or what performs it.
 
 #### RHY.12:4.5 - Keep the result at the scope obtained
 
-Retain the useful exercise, correction and conditions in a form sufficient for the next practice. An agreed demonstration may suffice. Name what the learner now performs and which reference, cue, partner or tool still contributes to it.
+Describe the exercise, any correction and the conditions relevant to the requested use. A demonstration may suffice for the next practice. For a performed attempt, state what the learner did and what reference, cue, partner or tool contributed. For a proposed exercise, state what it will let the learner attempt.
 
-A local improved attempt supports a local continuation. Use RHY.13 when the next decision requires an unfamiliar condition, later retention or performance without a selected support. Use RHY.14 when the unresolved question concerns how to observe performance or distinguish it from a partner's or listener's response.
+An improved attempt can support a finding or next step under its observed conditions. Use RHY.13 for a question about unfamiliar conditions, delayed retention or performance without a selected support. Use RHY.14 when the issue is how to observe the performance or distinguish it from a partner’s or listener’s response.
 
-Stop when the next practice or performance move is clear. Reopen the affected exercise when the passage, learner, support or physical demand changes; retain exercises and results whose conditions still fit.
+Finish with the requested exercise design, supported account of an attempt, next practice step or a prerequisite that prevents it. Revisit an exercise if a change of passage, learner, support or physical demand affects its suitability. Retain prior results within their conditions.
 
-**Local mantra:** choose the failing relation; make it practicable; correct an observable action; rejoin the passage; vary for the intended use.
+**In practice.** Identify the target relation, make it practicable, correct a missed action, return it to the passage and vary it to meet the intended use.
 
 ### RHY.12:5 - Archetypal Grounding
 
-The following are constructed teaching cases. Their stipulated observations illustrate decisions.
+The following teaching cases stipulate observations to illustrate practice choices. Claims about the effects of training or the schedule a learner needs require evidence about that use.
 
 #### RHY.12:5.1 - Phrase and gesture keep different groupings
 
 A learner maintains a three-beat gesture cycle and can speak “ta-ki-ta” evenly. At two syllables per beat, however, the learner restarts the phrase at each gesture and loses the three-syllable grouping.
 
-The teacher holds the gesture beats at positions 0, 1 and 2, returning at 3. The six syllables occur at 0, 0.5, 1, 1.5, 2 and 2.5. Phrase beginnings are at 0 and 1.5. The spoken sequence is ta–ki–ta, ta–ki–ta: the gesture at 1 meets the first phrase's final syllable, and the second phrase begins between gestures. The recurring syllable “ta” alone does not identify a phrase beginning.
+The teacher marks beats at 0, 1 and 2 and returns to the beginning at 3. The six syllables occur at 0, 0.5, 1, 1.5, 2 and 2.5. In ta–ki–ta, ta–ki–ta the phrases begin at 0 and 1.5. The gesture at 1 coincides with the last syllable of the first phrase. The next phrase starts between gestures. The syllable “ta” occurs at more than one place within a phrase.
 
-The teacher demonstrates that overlap, then the learner combines the familiar gesture cycle with the spoken sequence. In the stipulated corrected attempt, the gesture period remains fixed and the phrase restarts at 1.5; both return to their beginning at 3. The teacher next asks for the same relation through the next cycle rather than restarting after one success.
+The teacher demonstrates the overlap and the learner combines the gesture cycle with the spoken sequence. In the stipulated corrected attempt the gesture period stays fixed and the phrase restarts at 1.5. Both cycles return to their beginning at 3. The teacher then asks the learner to carry this relation through the next cycle.
 
-The result is local phrase/reference coordination with the demonstration and gesture available. Another tempo or an unaided entry remains a separate use. Nelson's solkattu exercise supplies this kind of phrase/gesture construction; the fixed positions make its grouping relation inspectable.
+This attempt establishes phrase and reference coordination with the demonstration and gesture available at this rate. Another tempo or unaided entry requires evidence for that use. Nelson’s solkattu exercise supplies the construction, and the stated positions show where the two groupings meet.
 
 #### RHY.12:5.2 - The missing information was duration
 
@@ -118,66 +118,66 @@ A four-beat phrase at half-second beat intervals requires sound from 0 to 1 seco
 
 The teacher supplies the sustained sound and release in a timed demonstration and a duration-bearing representation. The learner performs the held sound to the release while a familiar gesture keeps the four-beat cycle. In the stipulated next attempt, the sound continues to 1, the following interval is silent, and the attack at 2 returns with the cycle.
 
-The immediate failure is repaired without inferring a general timing deficit. The result still depends on the supplied duration information. Cha's Takadimi criticism makes that omission visible; a continuation/rest convention is another available construction when its use has been taught. The beat gesture alone would not have resolved the missing duration.
+The attempt meets the duration requirement with the demonstrated and represented duration available. The earlier loss does not establish a general timing deficit. Cha’s critique of Takadimi helps identify the missing duration in this onset-only prompt. A previously taught continuation/rest convention could supply it, while the beat gesture locates reference positions.
 
 #### RHY.12:5.3 - A constituent works only with assistance
 
 A dancer remembers a figure and has sufficient strength for its movements, but loses balance during its rotation and misses the following weight transfer. More counting does not address the observed loss during the turn.
 
-A qualified dance teacher chooses a familiar, supported rotational exercise that preserves the relevant preparation and continuing transfer, and gives technique-specific feedback. In the stipulated attempt the dancer completes the smaller rotation and continuation; the original unsupported turn still fails. The next programme step therefore remains development of that coordination, followed by rejoining the original figure. It is not another memory drill, nor a claim that the whole figure is now available.
+A qualified dance teacher selects a familiar supported rotation with the relevant preparation and continuing transfer, and gives technique-specific feedback. In the stipulated attempt the dancer completes the smaller rotation and continuation. The original unsupported turn still fails. To develop that performance, work on the affected coordination and then return it to the figure. The smaller attempt provides evidence at its own level of support.
 
-The rhythmic Method identifies the needed contribution and preserves its place in the figure. The teacher supplies the bodily technique. Balance control and the required rhythmic weight transfer must occur together in the figure, although their practice activities can occur in succession.
+Use the rhythmic method to identify the contribution and its place in the figure, and the teacher’s professional technique for the movement itself. In the figure, balance control and rhythmic weight transfer must occur together. Their practice can occur at different times.
 
 ### RHY.12:6 - Bias-Annotation
 
-Counting fluency can hide missing control of duration or movement. A familiar teaching convention can also make a teacher underestimate what it supplies to the learner. Inspect the contribution that succeeds and the one that still fails, including joint performance. Keep a learner's current limitation separate from a fixed trait or a general judgment about musicality.
+Fluent counting can coexist with difficulty controlling duration or movement. A teaching convention can supply a reference the learner would otherwise have to maintain. Identify which contribution the learner performed, the conditions that supported it and what remains open about the joint passage. A local limitation describes performance under those conditions.
 
 ### RHY.12:7 - Conformance Checklist
 
-- The exercise develops a named rhythmic relation in a recognizable passage.
-- For variable accents over a pulse, it exposes errors in both contributions and restores their joint performance after a local correction.
-- Target information, assistance and required bodily or instrumental technique are available.
-- Feedback changes an action the learner can attempt.
-- The developed contribution returns to its simultaneous use in the passage.
-- Variation is chosen for a later use and preserves or explicitly changes the relevant physical demands.
-- The result states the support and conditions under which it was obtained; changed conditions reopen only the affected claim.
+- Identify the rhythmic relation the exercise targets in a recognizable passage.
+- For variable accents over a pulse, make the placement and the continuing support separately observable. After a correction, check their joint use when that is the target.
+- Identify the available target information, assistance and bodily or instrumental technique, and any missing prerequisite that limits the exercise.
+- When feedback is needed, give the learner a change they can attempt. Use their performance to establish what changed.
+- For a claim about joint performance, establish whether the learner used the contribution with the other required actions in the passage.
+- When the intended use requires variation, choose it for that use and identify which physical demands it retains or changes.
+- State the support and conditions for the result. Revisit a conclusion when a change affects its grounds.
 
 ### RHY.12:8 - Common Anti-Patterns and How to Avoid Them
 
 | Failure | Useful correction |
 | --- | --- |
 | Repeating syllables while the required duration is absent from the prompt | Supply the missing duration before prescribing further practice. |
-| Counting more loudly when balance during rotation fails | Obtain the relevant movement instruction and return the result to the rhythmic figure. |
-| Joining fluent parts and assuming the combination is learned | Practise their actual overlap and continuation. |
+| Add more counting when balance is lost during rotation | Identify the balance contribution and use appropriate movement instruction when needed. Check its use in the rhythmic figure. |
+| Infer that fluent separate parts can be performed together | Use evidence of their overlap and continuation. When joint performance needs development, practise that relation. |
 | Increasing variation after every success | Choose the next change from the intended use and current limiting contribution. |
-| Withdrawing every tool as proof of mastery | Keep supports belonging to the target arrangement; test only the independence actually required. |
+| Withdraw every tool to demonstrate mastery | Retain the supports that belong in the intended arrangement. Establish whether the performer can carry out the specified action without the particular assistance at issue. |
 
 ### RHY.12:9 - Consequences
 
-Practice addresses an observable rhythmic contribution and produces a useful next attempt or a localized prerequisite. It can reveal that the needed change belongs in the prompt, performing arrangement or bodily technique. One local improvement does not establish durable capability.
+An exercise can expose a rhythmic contribution for practice, give the learner another attempt and identify a missing prerequisite. It may also show that the prompt, performing arrangement or bodily technique needs attention. Practice time depends on the task and the learner. A claim about durable capability needs evidence from the relevant later conditions.
 
 ### RHY.12:10 - Architectural Rationale
 
-Rhythmic performance combines relations that are distinguishable in a description but may have to be carried out together. The phrase boundary, gesture cycle, sound duration and movement continuation therefore belong inside the practice construction, rather than appearing only in the final test.
+A description can distinguish a phrase boundary, a gesture cycle, sound duration and movement continuation even when a performer must enact several together. Include the relations that matter to the target in practice so the learner can work on their coordination before any final test.
 
-A constituent/encompassing Method relation differs from the relation between simultaneous rhythmic layers. Balance control can support several layers; producing one layer can require several constituent Methods. Practising an isolated contribution is useful when it helps restore that simultaneous performance.
+The relation of constituent methods to the encompassing performance differs from the relation between simultaneous rhythmic layers. Balance control can support several layers, and one layer can require several constituent actions. Practise an isolated contribution when it helps restore the joint result.
 
-General development design, feedback and scheduling remain in HCD. The domain contribution here is the construction of rhythmic exercises, their interpretation and return to the passage.
+HCD supplies methods for practice design, feedback and scheduling. Here the practitioner constructs and interprets a rhythmic exercise and connects its result to the passage.
 
 ### RHY.12:11 - SoTA-Echoing
 
 | Source contribution | Adopted use | Limit and alternative |
 | --- | --- | --- |
-| Nelson, *Solkattu Manual* (2008), phrase against gesture and rate changes | Practise a stable reference together with a phrase whose grouping differs from it. | A specific teaching tradition supplies these constructions. |
-| Cha, “The Takadimi system reconsidered” (2015), compared with Hoffman–Pelto–White and beat-gesture teaching | Recover implicit beats and duration information before interpreting a failed performance. | Explicit continuation/rest syllables and an accessible duration-bearing demonstration are alternatives; comparative teaching superiority is not established. |
-| [Chiou and Chang (2016)](https://doi.org/10.1371/journal.pone.0149221) | In a trained 90-degree bimanual task, performance after feedback withdrawal differed with the information supplied during practice. Check what a display or cue contributes before claiming later independence. | The small study excluded learners who did not reach its practice criterion. Its fixed phase task supplies neither a universal feedback regime nor evidence for free accent choice or partnered movement. |
-| [Caramiaux et al. (2018)](https://doi.org/10.1371/journal.pone.0193580) | The study measured timing and movement separately in immediate post-practice transfer tests. It did not test delayed retention. Use the demanded contribution to choose practice variation. | Different measures responded differently; greater tempo variation was not uniformly beneficial. This bounded result supplies no general schedule. |
-| [Plitchenko, Bégel and Palmer (2024)](https://doi.org/10.3389/fnhum.2024.1381232) | Their solo/joint musical task makes the return from individual practice to actual interaction a distinct question. | The solo-feedback manipulation did not directly change the immediately following joint asynchrony measure; fitted coupling differences are a different result. Do not prescribe one feedback regime from the model alone. |
+| Nelson, *Solkattu Manual* (2008), phrase against gesture and rate changes | Practise a stable reference together with a phrase whose grouping differs. | These constructions come from a particular teaching tradition. Choose a sequence for the performer, passage and intended use. |
+| Cha, “The Takadimi system reconsidered” (2015), compared with Hoffman–Pelto–White and beat-gesture teaching | Establish which beat positions the available reference locates and what information the performer received about sustain and silence before interpreting a failure. | Continuation/rest syllables and an accessible duration-bearing demonstration are possible resources. Comparative teaching effectiveness needs evidence from the relevant learners and task. |
+| [Chiou and Chang (2016)](https://doi.org/10.1371/journal.pone.0149221) | In a trained 90-degree bimanual task, performance after feedback withdrawal varied with the information supplied during practice. Identify what a display or cue contributed before judging later independence. | The small study excluded learners who did not reach the practice criterion. Selecting a feedback regime for another learner, for free accent choice or for partnered movement requires evidence for that use. |
+| [Caramiaux et al. (2018)](https://doi.org/10.1371/journal.pone.0193580) | The researchers measured timing and movement separately in immediate post-practice transfer tests. Use the target contribution when choosing practice variation. | Timing and movement responded differently. Greater variation of tempo did not help uniformly, and delayed retention was not tested. |
+| [Plitchenko, Bégel and Palmer (2024)](https://doi.org/10.3389/fnhum.2024.1381232) | The solo and joint tasks distinguish how an individual practises from how the partners perform together. | The solo-feedback manipulation showed no direct change in the immediately following joint asynchrony measure. The fitted coupling differences concern the model. A feedback recommendation for another use needs grounds for that use. |
 
-These sources support different operations and qualifications. Use direct tradition-specific instruction for a technique that the learner lacks. Reconsider a practice choice when a changed task, learner population or relevant comparative result changes its expected contribution.
+These sources support different aspects of practice. Use adequate tradition-specific instruction for a technique the learner needs. Reconsider a practice choice if a change in task, learner population or comparative evidence affects its expected contribution.
 
 ### RHY.12:12 - Relations
 
-HCD.6 designs the representative human practice task; HCD.9 supplies feedback and retry; HCD.10 supplies the choice among practice arrangements. E.23.CDI keeps the capability holder, development and later use distinct. RHY.3 and RHY.9–RHY.11 supply the performance constructions being learned; RHY.5–RHY.6 supply needed representations. RHY.13 tests transfer, retention or support dependence when required. RHY.14 addresses observation and response. MDPE.8 places the rhythmic development in the wider music-or-dance practice.
+Use HCD.6 for a representative human practice task, HCD.9 for feedback and retry, and HCD.10 for practice arrangements. E.23.CDI distinguishes the learner, their development and later use. RHY.3 and RHY.9–RHY.11 address the performance constructions. RHY.5–RHY.6 address representations. Use RHY.13 for transfer, retention or dependence on support, and RHY.14 for observation and response. MDPE.8 places the rhythmic development within the wider music or dance practice.
 
 ### RHY.12:End

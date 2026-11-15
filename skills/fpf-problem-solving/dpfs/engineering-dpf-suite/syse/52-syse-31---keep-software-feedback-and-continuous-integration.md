@@ -8,15 +8,15 @@
 
 Use this pattern when developers wait too long to learn whether a change works, rerun failures until they disappear, or receive green checks that do not answer the current engineering question. Start with one change and the decision its feedback must support. Identify what each check can establish, on which source or artifact, under which conditions, and who can act on failure.
 
-The first result is a usable feedback arrangement: maintained checks, interpretable outcomes and a bounded response to a failed or missing result. It is not a target number of tests or a universal time limit. The application team supplies the expected behavior; a software platform can make the feedback available without inventing that behavior or owning the release decision.
+The first result is a usable feedback arrangement: maintained checks, interpretable outcomes and a bounded response to a failed or missing result. The application team supplies the expected behavior; a software platform can make the feedback available without inventing that behavior or owning the release decision.
 
-If adequate build and tests already exist and only integration of a small change is missing, go directly to the DORA continuous-integration Method in section 4.5. Do not redesign adequate feedback first. If the build inputs themselves cannot be recovered, use SYSE.30; if the conditions cannot be reconstructed, use SYSE.33.
+If adequate build and tests already exist and only integration of a small change is missing, go directly to the DORA continuous-integration Method in section 4.5. If the build inputs themselves cannot be recovered, use SYSE.30; if the conditions cannot be reconstructed, use SYSE.33.
 
 ### SYSE.31:2 - Problem
 
 A slow result arrives after the developer has changed context or several changes have accumulated. An unreliable result makes repetition cheaper than understanding. A fast but irrelevant result is equally dangerous: the suite can pass on one branch, one fixture or one old artifact while the integrated application fails.
 
-The aim is not merely quicker execution. It is earlier useful discrimination between a usable change, an actual regression, a broken test or environment, and a question for which evidence is still absent.
+The aim is to distinguish a usable change from a product regression, a broken test or environment, or a case that still lacks evidence, early enough to act on the result.
 
 ### SYSE.31:3 - Forces
 
@@ -35,7 +35,7 @@ Name the changed behavior, the assertion under test and the result consumer. Rec
 
 Bind each result to the source or artifact actually exercised, relevant configuration, test input and conditions. Distinguish a test description from a completed run. A missing run, lost observation or wrong artifact cannot be reported as a pass.
 
-Begin with checks that discriminate the consequential failures for the current change. When necessary behavior is not specified well enough to judge, return that precise question to its owner. Do not hide it behind a large existing test count.
+Begin with checks that discriminate the consequential failures for the current change. When necessary behavior is not specified well enough to judge, return that question to its owner. The number of existing tests cannot settle the missing requirement.
 
 #### SYSE.31:4.2 - Put feedback where it can change the next action
 
@@ -62,7 +62,7 @@ Control a suspected source of interference and repeat a discriminating case. Cha
 | The environment or provider failed before the behavior could be observed. | Return that failure for environment/platform repair; retain the missing product evidence. |
 | The result cannot be attributed to the candidate or conditions. | Recover attribution or rerun the right case; do not transfer the old pass. |
 
-Use the actual maintainers and their permissions. Platform operators can repair provision; they do not acquire authority to change application behavior, withdraw a source change or approve release merely because they operate the test service.
+Route the failure to whoever can establish or repair the missing result under the required authority. Platform operators can repair provision; they do not acquire authority to change application behavior, withdraw a source change or approve release merely because they operate the test service.
 
 If a test must be quarantined, identify the claim whose evidence was lost, its current consequence and a usable temporary replacement or stop. Name the repair responsibility and the condition for restoring the check. Quarantine is not an unlimited exemption or a way to improve the displayed pass rate.
 
@@ -71,13 +71,13 @@ If a test must be quarantined, identify the claim whose evidence was lost, its c
 
 Continuous integration is a way of keeping separately developing changes usable together. A server that builds isolated branches supplies feedback but does not create that combined result. The [DORA CI Method](https://dora.dev/capabilities/continuous-integration/) is a directly usable starting treatment; the construction here explains its joins with the artifact, environment and recovery Methods in this framework.
 
-First choose the integration boundary that matters to the application. Name the shared mainline and the components whose combination must work. One repository can contain independently deployable components, and several repositories can still contain a tightly coupled application. Use the actual compatibility relation to choose the integration checks. A repository boundary is not evidence that two changes can be released independently.
+First choose the integration boundary that matters to the application. Name the shared mainline and the components whose combination must work. One repository can contain independently deployable components, and several repositories can still contain a tightly coupled application. Choose checks for the behavior, interfaces and conditions those components must preserve together. A repository boundary is not evidence that two changes can be released independently.
 
 Break a large change into increments that leave the mainline usable under its existing supported behavior. A preparatory increment may add an unused adapter; a later increment may switch one caller to it; removal waits until no supported caller needs the old route. Each increment should preserve the agreed behavior or openly change it under its acceptance conditions. A feature flag can separate installation from activation only if the disabled state really preserves the required behavior and the enabled path can be qualified. A dormant flag does not make an incompatible schema change harmless.
 
-For one increment, take a current mainline base, construct the intended combined change, and run the relevant fast feedback against that combination. Resolve its actual incompatibilities before integration. When another change advances the mainline, update the candidate combination and re-establish the affected feedback. A merge queue is one possible implementation: it serializes or rebuilds candidate combinations against the base that will actually be used.
+For one increment, take a current mainline base, construct the intended combined change, and run the relevant fast feedback against that combination. Resolve any incompatibilities in that combination before integration. When another change advances the mainline, update the candidate combination and re-establish the affected feedback. A merge queue is one possible implementation: it serializes or rebuilds candidate combinations against the current mainline state they are intended to join.
 
-After integration, build and exercise the resulting shared revision through the authoritative path. Associate its produced artifact with that combined revision and its own results. An earlier artifact from the branch can be reused only when it is actually the same qualified subject under the needed conditions. The team must be able to find the current mainline result and its unresolved checks without reconstructing several private branch histories.
+After integration, establish the build and feedback results for the resulting shared revision through the authoritative path. Reuse qualified evidence for that same combination and run the missing checks. Associate its produced artifact with that combined revision and its own results. An earlier artifact from the branch can be reused only when it is the same qualified subject under the needed conditions. The team must be able to find the current mainline result and its unresolved checks without reconstructing several private branch histories.
 
 When the integration breaks, protect other development from treating the broken state as a usable base. Make restoration the immediate shared task. If a narrow repair can promptly restore the intended combination, integrate and check it. Otherwise the authorized team can withdraw the offending change and verify the resulting mainline. Withdrawing source changes does not undo an already executed external effect or data migration; those returns have their own state boundary. Keep the failed observation and unresolved business conflict so that a later attempt does not repeat it.
 
@@ -98,9 +98,9 @@ For example, ParcelWorks can check lossless address split/join quickly with boun
 
 #### SYSE.31:4.7 - Verify that the arrangement improves useful feedback
 
-Exercise a known passing case, a meaningful failing change and a failure of the feedback mechanism. Check that the responsible person can distinguish them and recover the tested subject. Inspect late-discovered defects: did the arrangement omit a needed question, use the wrong conditions, or fail to deliver its result in time?
+Use evidence from a known passing case, a meaningful failing change and a failure of the feedback mechanism. Exercise any missing case. Check that the responsible participants or systems can distinguish the outcomes and recover the tested subject. Inspect late-discovered defects: did the arrangement omit a needed question, use the wrong conditions, or fail to deliver its result in time?
 
-Return the checks, their supported questions and conditions, remaining evidence gaps, and the actual failure-response arrangement. Improve from useful detection and repair, not from test count or green percentage alone.
+Return the checks, the questions and conditions they cover, any missing evidence and how each failure will be handled, including who can act and which use must wait. Judge an improvement by the failures detected and repaired in time for use.
 
 ### SYSE.31:5 - Archetypal Grounding
 
@@ -122,7 +122,7 @@ Testing B against the actual current mainline would reject it before integration
 
 Finally, fast data-transformation tests can pass while a new address form hides a non-empty display line. The application-level acceptance or exploratory result remains necessary for that user behavior. Running more fast unit tests cannot substitute for the missing observation.
 
-What changes in practice is that a failed result has a usable owner and meaning, and a green result stays bound to the change and behavior it actually exercised.
+The team can distinguish what failed and who can act on it. It knows which change and behavior each passing check exercised.
 
 ### SYSE.31:6 - Bias-Annotation
 
@@ -148,7 +148,7 @@ Teams can optimize the measured feedback time by excluding slow but necessary qu
 
 ### SYSE.31:9 - Consequences
 
-Useful feedback can shorten the interval between a change and an informed response. It requires continuing test and environment maintenance and can expose missing acceptance knowledge. Faster feedback is not always less testing; sometimes the gain is a clearer failure or a smaller integrated change.
+Useful feedback can shorten the interval between a change and an informed response. It requires continuing test and environment maintenance and can expose missing acceptance knowledge. A clearer failure report or a smaller integrated change can shorten the wait for a useful answer.
 
 ### SYSE.31:10 - Rationale
 
@@ -156,14 +156,14 @@ Feedback is useful only when it helps answer the current question and arrives wh
 
 ### SYSE.31:11 - SoTA-Echoing
 
-For prompt feedback and a usable combined mainline, **adopt and adapt** [DORA Test automation](https://dora.dev/capabilities/test-automation/) and [Continuous integration](https://dora.dev/capabilities/continuous-integration/). Their developed professional line already joins small integrations, maintained tests and rapid restoration. The [Continuous Delivery deployment pipeline](https://continuousdelivery.com/implementing/patterns/) arranges successive evidence across an integrated delivery path.
+For prompt feedback and a usable combined mainline, **adopt and adapt** [DORA Test automation](https://dora.dev/capabilities/test-automation/) and [Continuous integration](https://dora.dev/capabilities/continuous-integration/). Those methods combine small integrations, maintained tests and rapid restoration. The [Continuous Delivery deployment pipeline](https://continuousdelivery.com/implementing/patterns/) arranges successive evidence across an integrated delivery path.
 
-Sections 4.5–4.7 construct those joins for the actual shared base, artifact and environment. Compatible preparatory increments compete with a longer branch; fast scoped tests compete with broader slower checks. Select from interaction risk, feedback delay and recoverability, retaining a pending release question where necessary. A faster early stage that delays the whole useful result is not the intended gain.
+Sections 4.5–4.7 construct those joins for the shared base, artifact and environment. Compatible preparatory increments compete with a longer branch; fast scoped tests compete with broader slower checks. Select from interaction risk, feedback delay and recoverability, retaining a pending release question where necessary. Include the wait for the combined result when comparing feedback time.
 
 Reopen test selection or integration structure when architecture, generated dependencies or supported behavior changes, regressions escape, or restoration no longer fits the working cadence.
 
 ### SYSE.31:12 - Relations
 
-SYSE.30 supplies recoverable build inputs; SYSE.33 supplies development and test conditions. The DORA CI Method in section 4.5 supplies actual small-change integration when that is the missing result. SYSE.32 consumes artifact-specific evidence, SYSE.41 performs deployment, and SYSE.36 distinguishes observations of platform tasks from application tasks. SYSE.4 and SYSE.14 govern evidence reliance and release decisions respectively.
+SYSE.30 supplies recoverable build inputs and SYSE.33 supplies development and test conditions. For small-change integration, see the DORA method in §4.5. SYSE.32 uses artifact-specific evidence, SYSE.41 explains deployment, and SYSE.36 distinguishes observations of platform tasks from application tasks. SYSE.4 addresses reliance on evidence and SYSE.14 release decisions.
 
 ### SYSE.31:End

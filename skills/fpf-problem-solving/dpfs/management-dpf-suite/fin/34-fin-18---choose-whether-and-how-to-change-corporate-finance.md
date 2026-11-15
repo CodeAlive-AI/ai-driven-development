@@ -22,7 +22,7 @@ Improve decision quality while accounting for data, skills, explanation, operati
 
 ### FIN.18:4 - Solution
 
-The six steps below provide a short route when the necessary financial grounds are already adequate. Use the connected explanations that follow when constructing the result, resolving a changed condition or adapting the way of working.
+With adequate financial grounds, the six steps in §4.1 can suffice. Sections 4.2–4.8 explain how to construct and adapt the comparison.
 
 
 
@@ -30,18 +30,18 @@ The six steps below provide a short route when the necessary financial grounds a
 
 
 1. Name the financial difficulty, intended gain and current method's observed or otherwise supported limit. State what result or action would change if the proposed method helped.
-2. Compare genuinely different variants, including continued use or a smaller repair. Recover the relevant current professional or research contribution and its conditions; a task syllabus establishes repertoire, not method effectiveness.
+2. Compare variants that differ in how they produce the financial result, including continued use or a smaller repair. Recover the relevant current professional or research contribution and its conditions; a task syllabus establishes repertoire, not method effectiveness.
 3. Choose a comparison appropriate to the claim. For forecasting, use information available at the forecast date and periods withheld from method selection when estimating predictive performance. Include the errors that change cash or action, not only an aggregate fit measure. For valuation or exposure, compare assumptions, limiting cases and decision reversals on the relevant objects.
-4. Include implementation, data, explanation, review, runtime and participant burdens. If a further trial could change the choice, compare its attainable value with its whole cost and delay using [FPF C.11.DUA][DUA] as needed.
+4. Include implementation, data, explanation, review, runtime and participant burdens. If a trial could improve the choice or the evidence for relying on it, compare what it could add to available evidence with its whole cost and delay using [FPF C.11.DUA][DUA] as needed.
 5. Select the method, qualify its narrower use, propose a bounded trial or continue the supported method. Preserve unresolved claims.
-6. Make the selected change usable in the actual finance procedure and explain when to reopen it. FIN.17 updates the affected models; FIN.20 addresses transmission and continued use when those become the problem.
+6. If a change is selected, make it usable in the finance procedure and explain when to reopen it. FIN.17 updates the affected models; FIN.20 addresses transmission and continued use when those become the problem.
 
 
 
 #### FIN.18:4.2 - Diagnose the financial failure that a method change must repair
 
 
-Begin with a concrete result that the present way of working cannot adequately supply. A forecast repeatedly missing a payment gap, a valuation using a financing policy unlike the actual one and an execution process that cannot distinguish a failed payment from an unknown outcome are different difficulties. Recover the expected financial use and the condition under which it fails. FIN.17 can correct changed inputs within an adequate construction; FIN.18 becomes useful when the construction, selection rule or operating procedure itself needs comparison.
+Begin with the financial result to improve and what the proposed change could contribute. A forecast repeatedly missing a payment gap, a valuation using a financing policy unlike the actual one and an execution process that cannot distinguish a failed payment from an unknown outcome are different difficulties. Recover the expected financial use and the condition under which it fails. FIN.17 can correct changed inputs within an adequate construction; FIN.18 becomes useful when the construction, selection rule or operating procedure itself needs comparison.
 
 Distinguish a method's limit from missing or incorrect inputs, faulty implementation and failure to use an adequate result. A collection model receiving obsolete customer data may improve most through a timely source. A sound forecast overwritten with a negotiated target needs attention to its use through MA.6, MA.9 and FIN.20. A model that describes monthly totals when the action depends on next-day balances may need a different temporal construction. These diagnoses lead to different repairs even when the visible symptom is the same unexpected cash shortage.
 
@@ -56,9 +56,9 @@ Define success in the financial work. Fewer late funding requests, a more defens
 
 Describe what changes in each candidate: input basis, financial relationship, estimation rule, horizon, decision rule or execution procedure. Retain a smaller repair and the current method when they remain feasible. For a near-term cash question, alternatives might combine confirmed due payments with customer-specific collection expectations, extrapolate historical aggregate receipts, or use a statistical estimate supplemented by separately identified large events. Their different information demands and failure modes matter more than their software labels.
 
-Read relevant developed professional or research treatments for how the proposed operation works, when it is appropriate and what its examples leave unresolved. Recover the actual source contribution. A catalogue of treasury tasks shows that forecasting matters; it does not establish how well a particular forecast serves a payment decision. A successful vendor demonstration on selected data establishes neither transfer to the corporation nor the operational availability of its inputs.
+Read relevant developed professional or research treatments for how the proposed operation works, when it is appropriate and what its examples leave unresolved. A catalogue of treasury tasks shows that forecasting matters; it does not establish how well a particular forecast serves a payment decision. A successful vendor demonstration on selected data establishes neither transfer to the corporation nor the operational availability of its inputs.
 
-Use the supplying Methods. FIN.4 and MA.5 construct accounts and operating forecasts; FIN.5–FIN.8 explain valuation grounds; FIN.13–FIN.14 distinguish measured exposure from protection choice; FIN.15 carries actual execution and recovery. A missing supplier can be the true limit. Distinguish an estimator comparison from a change to the whole working arrangement. For the estimator comparison, hold the available information constant. When a candidate deliberately adds a data source or collection operation, compare that obtainable arrangement with its added work and cost; private information available only to the evaluator cannot support the operational claim.
+Use the supplying Methods. FIN.4 and MA.5 construct accounts and operating forecasts; FIN.5–FIN.8 explain valuation grounds; FIN.13–FIN.14 distinguish measured exposure from protection choice; FIN.15 guides authorized execution and recovery. A missing input or provider can prevent the method from being used. Distinguish an estimator comparison from a change to the whole working arrangement. For the estimator comparison, hold the available information constant. When a candidate deliberately adds a data source or collection operation, compare that obtainable arrangement with its added work and cost; private information available only to the evaluator cannot support the operational claim.
 
 Keep combinations available when the problem warrants them. A simple routine for ordinary receipts plus explicit treatment of a few large uncertain payments can outperform replacing the entire process. Qualify which cases use each part and how their outputs combine without counting the same receipt twice. A useful local variant need not become the corporate default for unrelated businesses.
 
@@ -67,11 +67,11 @@ Keep combinations available when the problem warrants them. A simple routine for
 #### FIN.18:4.4 - Compare forecasts on the information and horizon actually available
 
 
-Define the forecasted quantity, observation cutoff and action horizon before measuring performance. Tomorrow's usable bank cash, next month's receipts and annual operating profit have different data and loss consequences. Use comparable entity and currency boundaries and the same forecast horizon. Reproduce each candidate's stated, obtainable information basis; hold that basis constant when the claim concerns the estimator alone. Include data publication and processing delays; a value dated before the forecast origin can still have become available afterward.
+Define the forecasted quantity, observation cutoff and action horizon before measuring performance. Tomorrow's usable bank cash, next month's receipts and annual operating profit have different data and loss consequences. Use comparable entity and currency boundaries and the same forecast horizon. Reproduce the information available to each candidate at the forecast date; hold that basis constant when the claim concerns the estimator alone. Include data publication and processing delays; a value dated before the forecast origin can still have become available afterward.
 
 Separate construction and selection from the periods used to estimate future predictive performance. Repeatedly choosing variants because they perform best on the same supposed test period uses that period for selection. Reserve a later or otherwise suitable comparison that remains outside that tuning, when the intended claim needs it. For time-dependent data, reproduce the passage of information: fit using the earlier observations, forecast the required horizon, then compare with what subsequently occurred. Repeat at suitable forecast origins rather than randomly giving a model later outcomes as training information for an earlier forecast.
 
-Compare with a credible simple reference. A last-observation, seasonal or existing operational forecast may be useful depending on the quantity. The reference should express a plausible available continuation; a deliberately weak baseline inflates the apparent gain. Retain the old method's actual manual adjustments and costs if they form part of how it would be used.
+Compare with a credible simple reference. A last-observation, seasonal or existing operational forecast may be useful depending on the quantity. The reference should express a plausible available continuation; a deliberately weak baseline inflates the apparent gain. Retain the old method's manual adjustments and their costs if they form part of how it would be used.
 
 Examine more than one summary where the financial use needs it. Average absolute error can express typical magnitude in the same units. Signed errors reveal a tendency to overstate or understate, although offsets can hide large individual misses. Percentage errors become unstable around zero, which is common for net cash. Evaluate the times, entities and operating conditions that matter to the decision. A pooled improvement dominated by large entities can coexist with failure in the paying subsidiary.
 
@@ -86,9 +86,9 @@ Run the proposed forecast through the actual funding or protection rule, includi
 
 Separate a missed adverse event from a false signal, and identify their consequences. The cost of missing payroll can differ greatly from the cost of reserving an unused facility. Those costs and governing constraints determine the useful trade-off; a general accuracy percentage cannot supply it. Where consequences cannot responsibly be reduced to money, keep the relevant failure criterion alongside financial costs.
 
-Use the same starting position and attainable action set in each comparison. Include the consequences of the chosen intervention in later cash. If historical actual cash already contains emergency borrowing triggered by the old forecast, comparing it directly with an unacted-on new forecast can misidentify both the forecast error and avoided loss. Recover the underlying cash before that intervention, or explicitly qualify what can be learned from the available data.
+Use the same starting position and attainable action set in each comparison. Include the consequences of the chosen intervention in later cash. If historical actual cash already contains emergency borrowing triggered by the old forecast, comparing it directly with an unacted-on new forecast can misidentify both the forecast error and avoided loss. Recover the underlying cash before that intervention, or state what can be learned from the available data.
 
-Test whether a simpler change to the decision rule closes the problem. A different trigger, a prepared response to a named large receipt or a more appropriate reserve can sometimes improve action without a new estimator. Any changed reserve or authority still requires its actual decision. Compare the cost of that alternative rather than treating every missed shortage as evidence for a more complex model.
+Test whether a simpler change to the decision rule closes the problem. A different trigger, a prepared response to a named large receipt or a more appropriate reserve can sometimes improve action without a new estimator. A change to the required reserve or decision authority needs the decision specified by the applicable rules. Compare the cost of that alternative rather than treating every missed shortage as evidence for a more complex model.
 
 
 
@@ -114,7 +114,7 @@ Estimate the data collection, preparation, specialist judgement, explanation, re
 
 Separate initial transition from recurring burden. Training and parallel running may be worthwhile for a repeated use but excessive for a one-time small decision. Compare over the horizon on which the gain can actually be obtained. A supposed long-term saving needs enough continued use to recover the change cost. Include the cost of preserving a necessary fallback and explaining the new result to its receivers.
 
-When the choice remains sensitive to an unanswered performance question, define a bounded trial with a result that can change the continuation. Name its cases, information boundary, available support and decision after the trial. A shadow run can compare forecasts without automatically changing live payment instructions. An authorized live trial must retain the constraints that protect the actual financial work; testing a new method is not permission to bypass them.
+If a performance question remains, consider whether a trial could improve the choice or its grounds enough to justify the cost and delay. When it could, define the cases, information available at the time, support and how the result would be used. A shadow run can compare forecasts without automatically changing live payment instructions. An authorized live trial must retain the constraints that protect the actual financial work; testing a new method is not permission to bypass them.
 
 A useful trial can end in adopting a narrower use, retaining the incumbent, repairing a missing input or stopping the candidate. Avoid a design that can only produce another request for research. Use C.11.DUA when the expected value and burden of further inquiry itself need comparison. A weak result should qualify the proposed claim rather than create an obligation to keep testing indefinitely.
 
@@ -123,17 +123,17 @@ A useful trial can end in adopting a narrower use, retaining the incumbent, repa
 #### FIN.18:4.8 - Make the selected method an obtainable way of working
 
 
-State the chosen operation, the uses it supports and the conditions that would make it unsuitable. Give the inputs, preparation, human judgement and tool support that the actual performer needs. Update the working procedure and the financial results that depend on it through FIN.17. A new model in an unused folder is not an implemented finance method.
+State the chosen operation, the uses it supports and the conditions that would make it unsuitable. Give the inputs, preparation, judgement and tool support the performer needs. If the method changes, update the working procedure and use FIN.17 for the financial results affected. A new model in an unused folder is not an implemented finance method.
 
 Carry the choice into its receiving advice. Explain why an output may differ from the earlier method and which differences are expected consequences of the new construction. Retain comparable earlier results where they help establish whether the change works. Avoid switching methods halfway through a decision comparison without recomputing the alternatives on an adequate common basis.
 
-Specify a fallback proportionate to the ongoing use. It may be the adequate incumbent, a restricted manual calculation or a temporary reliance limit while a missing input is restored. The fallback must remain feasible with the available skills and data. FIN.20 becomes relevant when people cannot learn, recognize or retain the chosen operation; FIN.19 handles an arrangement that makes its inputs or decisions unavailable.
+Specify a fallback proportionate to the ongoing use. It may be the adequate incumbent, a restricted manual calculation or a temporary reliance limit while a missing input is restored. The fallback must remain feasible with the available skills and data. FIN.20 becomes relevant when participants need help learning, recognizing or retaining the chosen operation; FIN.19 handles an arrangement that makes its inputs or decisions unavailable.
 
 Reopen on a supported new failure, a changed business or provider condition, or a materially better attainable alternative. Continued success can justify retaining the method without repeatedly proving it best against every newly advertised tool. The conclusion belongs to the declared use and evidence, so a useful local improvement can coexist with an unresolved claim of broader superiority.
 
 ### FIN.18:5 - Archetypal Grounding
 
-In a constructed comparison, a cash forecast triggers action when predicted closing cash is below a reserve of 5. Four withheld periods have actual closing cash 20, 2, −8 and 15. Method A predicts 18, 12, 4 and 16; method B predicts 16, 3, −3 and 13 using only information available at each forecast date. A flags the third shortage but misses the second; B flags both. The comparison identifies a useful difference for liquidity action. Four illustrative cases do not establish general superiority. If B requires a costly new daily data collection, compare avoided funding failures and unnecessary actions with that burden using adequate available grounds. Use a bounded trial when its attainable answer justifies its cost and delay.
+In a constructed comparison, a cash forecast triggers action when predicted closing cash is below a reserve of 5. Four withheld periods have actual closing cash 20, 2, −8 and 15. Method A predicts 18, 12, 4 and 16; method B predicts 16, 3, −3 and 13 using only information available at each forecast date. A flags the third shortage but misses the second; B flags both. These four cases show which shortages each method flagged. A conclusion about performance beyond them needs evidence that applies to that use. If B requires a costly new daily data collection, compare avoided funding failures and unnecessary actions with that burden using adequate available grounds. Use a bounded trial when its attainable answer justifies its cost and delay.
 
 
 
@@ -146,7 +146,7 @@ Suppose instead that the actual available response in each independent window is
 
 For this comparison only, assign an additional financial loss of 9 to a missed shortage; all relevant costs are included without overlap. A's response cost is 1 + 9 = 10, while B's is 2. If B's extra data and operating burden costs 5 over these four uses, its total is 7 and the gain over A is 3. If that burden is 9, B's total is 11 and the apparent gain disappears. The assumed loss, available line and repeated-use horizon are part of the decision, not universal forecasting weights.
 
-Now add a different operating condition: a necessary source for B becomes available only after the draw cutoff. Its statistical accuracy no longer establishes this funding result. A timely simpler procedure may be preferable, or B may remain useful for another horizon. Four selected windows still cannot establish general performance; a further trial is justified only if its attainable answer can change the actual adoption decision.
+Now add a different operating condition: a necessary source for B becomes available only after the draw cutoff. Its statistical accuracy no longer establishes this funding result. A timely simpler procedure may be preferable, or B may remain useful for another horizon. Four selected windows still cannot establish general performance; a further trial earns its cost only if its attainable answer can improve the adoption decision or its grounds.
 
 
 
@@ -155,7 +155,7 @@ Now add a different operating condition: a necessary source for B becomes availa
 
 Consider the policy question already developed in FIN.5. A corporation comparing an annual market-value debt-share policy with a finite fixed-debt schedule has two different financial strategies. The matched annual-policy case gives NPV about −0.13, while the stipulated finite-debt alternative gives about +2.49. Selecting the latter calculation because it is positive, then keeping the annual policy in the actual financing plan, combines incompatible grounds.
 
-FIN.18's useful return is to retain the method matched to the policy actually under consideration and carry both conditional strategies to the financing choice if that choice remains open. A software change that implements both formulas can support the comparison; it cannot choose the policy. Once the financing strategy and risk/tax grounds are supported, FIN.17 recomputes the relevant appraisal and FIN.16 returns the changed advice. A specialist valuation method is needed only when the actual case exceeds those supported constructions.
+Retain the method matched to the financing policy under consideration and carry both conditional strategies to the financing choice if that choice remains open. A software change that implements both formulas can support the comparison; it cannot choose the policy. Once the financing strategy and risk/tax grounds are supported, FIN.17 recomputes the relevant appraisal and FIN.16 returns the changed advice. A specialist valuation method is needed only when the actual case exceeds those supported constructions.
 
 
 
@@ -172,7 +172,7 @@ Make that selection obtainable before the first payment day. The existing author
 
 Now exercise the unknown-outcome branch. The imported instructions receive no usable response at 09:40. The operator preserves their identities, continues to reserve cash for their possible execution and inquires; the silence does not establish failure. Suppose that by 10:00 the provider confirms all twenty unexecuted instructions cancelled and unable to execute later. The unchanged payment source can then be entered manually, separately approved and submitted by 11:40, leaving cash 28 after settlement and charges. In this case a cancelled import incurs no fee. This is a feasible fallback because both the original instructions' status and the remaining time are known. For a partial result, retain settled amounts and establish the status of each remaining instruction. Replace only a supported unpaid amount whose original instruction can no longer execute. If status is still unknown at 10:20, the full 100-minute manual route can no longer be promised before cutoff. Return the threatened receipt deadline and obtainable recovery to the decision owner; do not send the original total again.
 
-The example's times, charges and provider responses are stipulated comparison premises. They do not demonstrate live reliability or how often exceptions consume the apparent saving. If a trial is warranted to resolve that adoption uncertainty, observe ordinary and recovery work as well as payment results under the actual authorization. If only one use remains, import instead requires 160 person-minutes against 100; a fee saving of 1 does not meet the stated capacity-release aim, so retain the incumbent. Reopen the selected procedure when the repeated-use horizon, mandate, provider support or usable fallback changes.
+The example's times, charges and provider responses are stipulated comparison premises. They do not demonstrate live reliability or how often exceptions consume the apparent saving. If a trial is warranted to resolve that adoption uncertainty, observe ordinary and recovery work as well as payment results within the applicable authorization. If only one use remains, import instead requires 160 person-minutes against 100; a fee saving of 1 does not meet the stated capacity-release aim, so retain the incumbent. Reopen the selected procedure when the repeated-use horizon, mandate, provider support or usable fallback changes.
 
 ### FIN.18:6 - Bias-Annotation
 
@@ -180,11 +180,11 @@ A method developer can select favorable cases, leak future information or optimi
 
 ### FIN.18:7 - Conformance Checklist
 
-Is the difficulty and changed action explicit? Are alternatives genuinely different and compared on relevant cases and information? Does the evaluation include consequential errors and total burden? Is the claimed improvement no broader than the evidence, with a usable continuation or trial outcome?
+Is the difficulty clear, and what financial result or action could improve? Do the alternatives differ in how they address it? Are they compared on relevant cases and information? Does the evaluation include consequential errors and total burden? Is the claimed improvement no broader than the evidence, with a usable continuation or trial outcome?
 
 ### FIN.18:8 - Common Anti-Patterns and How to Avoid Them
 
-Choosing by training fit rewards knowledge of the answer; preserve the information boundary. Equating a new tool with a changed financial method hides what actually improves. Requiring another study without a possible changed decision turns uncertainty into unbounded work.
+Choosing by training fit rewards knowledge of the answer; preserve the information boundary. Equating a new tool with a changed financial method hides what actually improves. Before seeking another study, identify what its findings could add to the decision or its grounds and whether that gain justifies the work.
 
 ### FIN.18:9 - Consequences
 
@@ -192,13 +192,13 @@ The finance practice gains a qualified method choice, useful repair or bounded t
 
 ### FIN.18:10 - Architectural Rationale
 
-Method development is governed by the financial problem and the result it must improve. Keeping it separate from data refresh makes actual methodological assumptions open to comparison without turning routine updates into research.
+Method development is governed by the financial problem and the result it must improve. Keeping it separate from data refresh makes the method’s assumptions available for comparison without turning routine updates into research.
 
 ### FIN.18:11 - SoTA-Echoing
 
 [MA's forecasting contributions][MA] make purpose and consequential differences central; [FPF C.11.DUA][DUA] relates demanded inquiry to its receiving value. FIN.18 applies these ideas to current finance methods and relevant professional sources. It rejects novelty or fit alone as a selection rule; a new failure or materially better attainable method reopens the choice.
 
-The current online third edition of [Hyndman and Athanasopoulos, Forecasting: Principles and Practice, §5.8][FPP-ACCURACY] distinguishes genuine forecast errors from fitted residuals and explains several error measures. [§5.10][FPP-CV] develops evaluation at successive forecast origins and the relevant horizon. FIN.18 adopts those information boundaries; its constructed funding comparison adds the actual response and burden. RMSE can support a forecast comparison; the financial choice also depends on the available response and its cost. The direct FIN Methods supply the distinct valuation, exposure and execution comparisons, while C.11.DUA supplies the decision about additional inquiry.
+The online third edition of [Hyndman and Athanasopoulos, Forecasting: Principles and Practice, §5.8][FPP-ACCURACY] distinguishes genuine forecast errors from fitted residuals and explains several error measures. [§5.10][FPP-CV] develops evaluation at successive forecast origins and the relevant horizon. FIN.18 adopts those information boundaries; its constructed funding comparison adds the response open to treasury and its cost. RMSE can support a forecast comparison; the financial choice also depends on the available response and its cost. The direct FIN Methods supply the distinct valuation, exposure and execution comparisons, while C.11.DUA supplies the decision about additional inquiry.
 
 ### FIN.18:12 - Relations
 

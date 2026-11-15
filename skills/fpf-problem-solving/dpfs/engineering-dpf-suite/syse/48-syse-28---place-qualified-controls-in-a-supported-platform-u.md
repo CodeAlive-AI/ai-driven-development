@@ -10,7 +10,7 @@ Use this pattern when a justified constraint already exists but engineers must d
 
 The first result is a control-placement design: an applicable check or mechanism, the subject it observes, its point of use, the meaning of its outcomes and the response to failure or uncertainty. It is not a new policy or a release decision.
 
-A software artifact can change after an early verification; a physical dimension can change after coating; an access decision can expire before a resource is used. Place the control where it can answer the actual question. If the constraint, its justification or the authority is missing, return that question instead of inventing a platform rule.
+A software artifact can change after an early verification; a physical dimension can change after coating; an access decision can expire before a resource is used. Place the check or enforcement where it can establish whether the condition holds, or keep it in force, when the action relies on it. If the constraint, its justification or the authority is missing, return that question instead of inventing a platform rule.
 
 ### SYSE.28:2 - Problem
 
@@ -31,9 +31,9 @@ A second failure is to merge different results: advice, an observed property, a 
 
 #### SYSE.28:4.1 - Recover the supplied constraint and decision
 
-Name the property, the subject to which it applies, its effectivity and the action that depends on it. Recover the actual deciding holder and any authorized exception conditions. Keep the constraint's justification separate from the proposed technical implementation.
+Name the property, the subject to which it applies, its effectivity and the action that depends on it. Identify the holder authorized to decide and any authorized exception conditions. Keep the constraint's justification separate from the proposed technical implementation.
 
-Identify what evidence or qualified procedure can answer the property question. If the domain test itself is missing, return that Method gap.
+Identify what evidence or qualified procedure can answer the property question. If the available evidence is insufficient and the necessary domain procedure is missing, identify the procedure still needed.
 
 Use SYSE.4 for the relation between evidence and the engineering claim, and SYSE.14 when the consuming action is a release decision. This pattern determines where the supplied control can usefully act.
 
@@ -45,9 +45,9 @@ Locate the last relevant change before the prohibited reliance. Place a decisive
 
 If the property can continue to change during use, determine what continuing observation or enforcement is needed and under what conditions it remains effective. A historical check cannot guarantee an indefinitely changing subject.
 
-Construct a trace for the property, not a compulsory inspection at every process stage. Mark where the relevant subject is produced, where a transformation or substitution can invalidate the observation, and where the dependent action first relies on it. Include alternative entry and recovery paths when they can reach that action. This exposes a bypass that a successful ordinary pipeline run would miss.
+Trace where the property can change and where it must hold. Mark where the relevant subject is produced, where a transformation or substitution can invalidate the observation, and where the dependent action first relies on it. Include alternative entry and recovery paths when they can reach that action. This exposes a bypass that a successful ordinary pipeline run would miss.
 
-Distinguish a past observation from a condition that must hold at use. The dimensions of an unchanged retained specimen can retain their evidence under the stated preservation conditions. A time-limited authorization or a changing runtime condition may not. For the latter, either obtain a sufficiently current observation at the receiving action or supply a mechanism that preserves the condition through the reliance interval. If neither is available, the placement design cannot yet support that use.
+Distinguish a past observation from a condition that must hold at use. Earlier measurements can support a claim about the dimensions of a retained specimen while the preservation conditions keep those dimensions unchanged. An earlier observation can lose its force when authorization expires or a runtime condition changes. In those cases, either obtain a sufficiently current observation at the receiving action or supply a mechanism that preserves the condition through the reliance interval. If neither is available, the placement design cannot yet support that use.
 
 #### SYSE.28:4.3 - Compare placements by the question they answer
 
@@ -55,11 +55,11 @@ Compare evidence reach, response time, user/provider burden, failure behavior an
 
 For an immutable artifact crossing a trust boundary, a producer's check can qualify its construction while a consumer-side identity/trust check concerns the bytes actually received. For a coated component, an earlier dimensional result may guide manufacturing but cannot by itself support reliance on the final dimension.
 
-Reuse a result only while the subject, relevant configuration, criterion and qualification conditions still match. A preserved result may be sufficient through controlled steps that cannot change the checked property of the subject. Name the specific change that requires rechecking; neither universal repetition nor universal reuse is the default.
+Reuse a result only while the subject, relevant configuration, criterion and qualification conditions still match. A preserved result may be sufficient through controlled steps that cannot change the checked property of the subject. Identify any change that would require rechecking before the result is reused.
 
 Construct a sufficient combination from the candidate placements. An early advisory check may cheaply find a repairable error; a protected result transfer may let a later receiver reuse its evidence; a decisive control may prevent reliance after an unprotected change. Select each because it covers a distinct unresolved loss or avoids worthwhile rework. Remove duplicate work only after checking that the remaining combination covers the same subject and reliance.
 
-Compare complete alternatives. A receiver-only check can suffice when it observes the actual subject in time and its qualification covers the question. An early check plus protected continuity can suffice where the protection preserves the relevant property and evidence. Early feedback plus a receiving check can be worth its extra effort when late failure is costly or the transfer is not trusted. Continuous observation may be necessary for a property that changes after entry. There is no universally best location independent of the property and permitted action.
+Compare complete alternatives. A receiver-only check can suffice when it observes the actual subject in time and its qualification covers the question. An early check plus protected continuity can suffice where the protection preserves the relevant property and evidence. Early feedback plus a receiving check can be worth its extra effort when late failure is costly or the transfer is not trusted. Continuous observation may be necessary for a property that changes after entry.
 
 Bind the result to what the action will actually consume. If the action reads a mutable name after verification, it can receive a different subject. Pass a stable identity, hold the relevant state under a qualified mechanism, or re-establish the condition at consumption. Also protect the governing expectation and the checker's authority to attest: an altered trust configuration can invalidate a previously reusable result even when artifact bytes are unchanged.
 
@@ -73,17 +73,17 @@ Keep advice, enforcement and authority separate. An advisory warning informs a d
 
 Explain a rejected attempt in the user's terms: which required property was not established, for which subject, and which correction, evidence request or authorized alternative is available. Provide detail sufficient to correct the use without disclosing protected material. Repeated unintelligible rejection creates pressure to bypass the path without resolving the underlying condition.
 
-Treat an exception as a different authorized continuation with its own scope and expiry. Decide how the dependent mechanism recognizes it and what continues to be observed. A later request must not inherit the exception simply because it shares a project label. If an emergency or checker outage needs a fallback, obtain that fallback from the applicable decision holder before relying on it.
+Treat an exception as a different authorized continuation with its own scope and expiry. Decide how the dependent mechanism recognizes it and what continues to be observed. A later request must not inherit the exception simply because it shares a project label. If an emergency or checker outage needs a fallback, use a fallback already authorized for those conditions, or obtain authorization from the applicable holder before relying on it.
 
 #### SYSE.28:4.5 - Exercise the control where it will be relied on
 
-Select normal and violating cases, subject substitution and checker unavailability according to the ways the chosen control can fail its receiving use. Confirm that the intended dependent action receives the right outcome and explanation. Check any authorized exception path separately.
+Establish how the control behaves for its receiving use. Use applicable existing evidence and select any further cases needed, such as normal use, violation, subject substitution or checker unavailability. Confirm that the intended dependent action receives the right outcome and explanation. Check the conditions and result of any authorized exception path.
 
 For consequential reliance, also inspect whether the controlled property can change between observation and use. Bind the result to the actual subject or protect that interval with a qualified mechanism. A green check followed by an uncontrolled substitution does not protect the receiving action.
 
 Return the placement, mechanism, outcome interpretation, applicable conditions and remaining gaps. Safety or compliance claims that rely on the control require their own domain evidence; placing the check is not that qualification.
 
-Exercise the join between observation and action as well as the checker. Use the actual ways that join can fail: subject substitution after an early pass, changed applicability, or an allowed alternative entry reaching the same reliance. For an ongoing condition, vary it during use and inspect whether the stated response can occur soon enough. Use only trials permitted by the domain and perform destructive or hazardous cases through an adequate safe substitute when needed. A desktop description establishes the logic being proposed; the actual control path still needs its relevant implementation and domain evidence.
+Use qualified evidence for the checker and for the connection between its observation and the dependent action. For a condition that can change during use, establish whether the response arrives in time. If a material failure mode remains untested, choose an exercise that addresses it, such as a substitution after an early pass, a change in applicability or another permitted entry to the same action. Use trials permitted by the domain. Where a direct trial would be destructive or hazardous, use an adequate safe substitute when needed. A desk walkthrough can test the proposed logic. To rely on the implemented control, use evidence of its operation and the domain property it is meant to establish.
 
 ### SYSE.28:5 - Archetypal Grounding
 
@@ -99,11 +99,11 @@ Compare the complete designs. Receiving verification alone would answer the imme
 
 Now the responsible holder withdraws trust from the builder after a cached verification result was issued. The artifact identity is still h1, but the expectation used by the consuming decision has changed. The path reevaluates that affected result against the new trust basis before dependent installation. It neither rebuilds unrelated artifacts nor treats a matching digest as sufficient evidence of continuing trust. The holder may select a different qualified source or a bounded exception; the old verification claim keeps its original conditions.
 
-In an unlike physical case, the engineering requirement concerns a finished coated bore of 20.000 ± 0.020 mm. The case explicitly supplies a qualified measurement procedure for the finished part; developing that procedure is not the current question. Measuring the uncoated bore can guide machining, but coating can alter the final dimension.
+In a physical case, the engineering requirement concerns a finished coated bore of 20.000 ± 0.020 mm. Assume a qualified measurement procedure is available for the finished part. Measuring the uncoated bore can guide machining, but coating can alter the final dimension.
 
-The decisive final-dimensional check is therefore placed after coating and before the part is accepted for the dependent assembly. A pre-coating pass cannot be reused merely because the part number is unchanged. If the qualified finished-part measurement is unavailable, the result remains unestablished; faster transfer of the old report does not cure it. In a real case lacking the supplied measurement Method, that missing Method is a separate blocker.
+The decisive final-dimensional check is therefore placed after coating and before the part is accepted for the dependent assembly. A pre-coating pass cannot be reused merely because the part number is unchanged. If the qualified finished-part measurement is unavailable, the result remains unestablished; faster transfer of the old report does not cure it. If no qualified measurement procedure is available for the finished part, identify that separate gap.
 
-What changes in practice is the coverage of the control. The receiver knows which subject and interval the result concerns and what is stopped when that result is absent.
+The receiver can identify which subject and interval the result concerns and what is stopped when that result is absent.
 
 ### SYSE.28:6 - Bias-Annotation
 
@@ -138,14 +138,14 @@ A property's truth at one time or location does not automatically survive transf
 
 ### SYSE.28:11 - SoTA-Echoing
 
-**Adapt** [SLSA v1.2, Build: Verifying artifacts](https://slsa.dev/spec/v1.2/verifying-artifacts), particularly “How to verify,” “Forming Expectations” and “Architecture options.” It already compares ecosystem, consumer and monitor verification, permits complementary placements and distinguishes the threats they address.
+**Adapt** [SLSA v1.2, Build: Verifying artifacts](https://slsa.dev/spec/v1.2/verifying-artifacts), particularly “How to verify,” “Forming Expectations” and “Architecture options.” It compares ecosystem, consumer and monitor verification, permits complementary placements and distinguishes the threats they address.
 
-The added general engineering construction follows the supplied property through transformations and reliance, then chooses a sufficient combination of observations, protected continuity and responses. For software provenance, SYSE.32 and SLSA supply the specialized verification. For the finished bore, the qualified measurement procedure is a separate supplied premise.
+For engineering uses beyond artifact verification, trace where the required property can change and where an action relies on it. Choose a sufficient combination of observations, protected continuity and responses. For software provenance, SYSE.32 and SLSA supply the specialized verification. For the finished bore, the qualified measurement procedure is a separate supplied premise.
 
 The alternatives differ by what they protect and what they cost. A receiving check can be enough for one use; early feedback is worth retaining when it avoids substantial rework; controlled continuity can support reuse; a changing property can require continuing observation. The selected combination accepts only the added burden that changes those results. Reopen when the subject, trust basis, invalidating operations, checker qualification, protected interval or consuming action changes.
 
 ### SYSE.28:12 - Relations
 
-SYSE.26 supplies the supported interaction and failure feedback. SYSE.4 governs evidence reliance, SYSE.13 identifies configurations and SYSE.14 supplies release decision-making. SYSE.32 supplies software artifact verification and SYSE.41 supplies deployment observations. Missing policy justification, authority or specialist qualification returns to its actual holder rather than being created by a platform mechanism.
+SYSE.26 supplies the supported interaction and failure feedback. SYSE.4 governs evidence reliance, SYSE.13 identifies configurations and SYSE.14 supplies release decision-making. SYSE.32 supplies software artifact verification and SYSE.41 supplies deployment observations. For a missing justification, authorization or specialist qualification, identify the source or holder that can supply it.
 
 ### SYSE.28:End

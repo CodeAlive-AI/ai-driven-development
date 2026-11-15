@@ -5,13 +5,13 @@
 
 ### CB.5:1 - Problem frame
 
-Use this pattern when a community has a real question or piece of work that participants could help with, but useful contributions are not yet reaching a recipient who can use or accept them. A support question attracts many replies without a usable answer. Product suggestions accumulate without a response from the product team. A volunteer is asked to maintain a resource without access, criteria or time.
+Use this pattern when a community has a question or piece of work that participants could help with, but useful contributions are not yet reaching a recipient who can use or accept them. A support question attracts many replies without a usable answer. Product suggestions accumulate without a response from the product team. A volunteer is asked to maintain a resource without access, criteria or time.
 
 The subject is the arrangement for obtaining a useful contribution from participants and returning its result. Contributions can include advice, practical support, a description of experience, a candidate recommendation, an improved requirement, teaching material or a permissible piece of maintenance work. Their domain methods and receiving responsibilities remain distinct.
 
 **First useful result:** an agreed contribution reaches its recipient in a usable form, with an understandable acceptance, application, revision or limitation returned to the contributor. An unresolved requirement or unavailable supplier can be the warranted result.
 
-The organiser needs access to the receiving question, relevant participants and the person who can judge or accept the contribution. CB.1 helps decide whether this is a worthwhile community contribution; CB.2 obtains an initial exchange; CB.3 and CB.4 support participation and the activity's form.
+The organiser needs access to the receiving question, relevant participants and whoever can judge or accept the contribution. CB.1 helps decide whether this is a worthwhile community contribution; CB.2 obtains an initial exchange; CB.3 and CB.4 support participation and the activity's form.
 
 **Ordinary non-use.** If an existing resource or accountable service already supplies the result adequately, use it. If a professional method, mandate or permission is missing, obtain it from the appropriate source. Willing participants cannot make an unsupported technical act fit for use by discussing it.
 
@@ -19,7 +19,7 @@ The organiser needs access to the receiving question, relevant participants and 
 
 “Contribute to the community” can conceal very different work. Answering a question, recommending a person, producing a tested product change and restoring equipment have different criteria and receiving decisions. A large volume of activity can leave the needed result absent. Conversely, useful work may be received without acknowledgement, explanation or a path for correction.
 
-How can an organiser connect a real need, suitable voluntary or agreed work, its receiving use and a returned response without promising contributions that nobody can supply?
+How can an organiser connect the need, suitable voluntary or agreed work, its receiving use and a returned response without promising contributions that nobody can supply?
 
 ### CB.5:3 - Forces
 
@@ -33,15 +33,15 @@ How can an organiser connect a real need, suitable voluntary or agreed work, its
 
 ### CB.5:4 - Solution
 
-Start with the receiving result. Distinguish the work it needs, obtain a suitable contributor under feasible terms, support its performance, and close the return between the contributor and the recipient. Keep domain correctness, authority and the limits of available evidence attached to the actual work.
+Start with the result the recipient needs. Agree on feasible work with a suitable contributor and arrange the support it requires. Get the contribution to its recipient and tell the contributor what the recipient decided and why, or what is missing for a decision. Use the applicable professional judgement and authority, and state the limits of the available evidence.
 
-**Working reminder:** name the receiving result; agree a feasible contribution; prepare the work; obtain a usable return; explain acceptance or the remaining gap.
+
 
 #### CB.5:4.1 - Turn a general request into a receiving use
 
 Ask who will use the contribution, for what next action, and under which conditions. Replace “we need more content” with the question a reader cannot yet answer or the action they cannot perform. Replace “we need ideas” with the use difficulty and the kind of proposal the receiving team can consider.
 
-Choose the result before recruiting contributors. For a case, establish the subject and relevant configuration, what has been tried, the uncertainty, permitted material and useful response window. For a shared resource, establish its intended users, applicable content and the person who can maintain it. For a recommendation, establish what the recipient needs to decide and what the recommender actually knows.
+Choose the result before recruiting contributors. For a case, establish the subject and relevant configuration, what has been tried, the uncertainty, permitted material and useful response window. For a shared resource, establish its intended users, applicable content and who can maintain it. For a recommendation, establish what the recipient needs to decide and what the recommender actually knows.
 
 Agree how the recipient will recognise a useful contribution. A case owner may need a justified next step; a design team may need a testable use account; a service owner may need evidence that a permissible intervention restored the required function. The criteria come from the receiving work and its domain, not from the number of responses or the contributor's popularity.
 
@@ -49,15 +49,15 @@ Distinguish accepted, usable and applied. A recipient can accept a technically s
 
 #### CB.5:4.2 - Obtain the contributor and the conditions
 
-Find people whose competence, experience or access matches the needed contribution. Ask for a bounded piece of work, explain its recipient and criteria, and disclose the relevant interests of the organiser or sponsor. Confirm willingness, available effort, preparation and a useful return window.
+Find contributors whose competence, experience or access matches the needed contribution. Ask for a bounded piece of work, explain its recipient and criteria, and disclose the relevant interests of the organiser or sponsor. Confirm willingness, available effort, preparation and a useful return window.
 
 Make the scope negotiable. A person can provide an observation without writing the whole guide, review one claim without maintaining the product, or answer a question without accepting a permanent service obligation. If the receiving promise requires more than anyone can commit, narrow it, obtain funded provision or use an accountable supplier.
 
-Obtain the material, tools, access and permissions needed for the chosen work. OCE.6 supplies the fuller method when actual organisational assignments or enabling relations are current. Its central distinction matters here: selecting a capable person, agreeing a contribution and establishing permission are different achievements.
+Obtain the material, tools, access and permissions needed for the chosen work. OCE.6 supplies the fuller method when the work requires organisational assignments or enabling relations. Its central distinction matters here: selecting a capable contributor, agreeing a contribution and establishing permission are different achievements.
 
-Provide preparation for the actual gap. A peer can help formulate a case or inspect an example. A qualified HCD contribution can develop missing capability. If the underlying professional method is unavailable, return that development or inquiry question to Method Engineering or Research Method Practice.
+Provide the preparation the contributor needs. A peer can help formulate a case or inspect an example. A qualified HCD contribution can develop a missing human capability. If the underlying professional method is unavailable, return that development or inquiry question to Method Engineering or Research Method Practice.
 
-Identify the receiving person before the contribution is made. Agree when and how they will inspect it and give a useful response. An open suggestion box without a receiving decision can invite effort the organisation is not prepared to use.
+Identify the recipient before the contribution is made. Agree when and how they will inspect it and give a useful response. An open suggestion box without a receiving decision can invite effort the organisation is not prepared to use.
 
 #### CB.5:4.3 - Choose the work and its acceptance conditions
 
@@ -73,11 +73,11 @@ The following branches illustrate different contributions. Select the branch tha
 
 **Co-design a result or product.** Choose what contribution is wanted: a use account, requirement, concept, design alternative or tested part. Give contributors the relevant problem, constraints, available material and acceptance question. SYSE.2 helps connect the use situation to a candidate concept and compare changes on either side of the system boundary. The receiving product specialist must examine the contribution and return an adoption, revision, rejection or unresolved question with a reason. A popular proposal still needs the applicable engineering judgement.
 
-**Produce or improve material.** Establish the reader's intended action, the subject method and correctness basis, and the person who can review and maintain the result. Ask participants for useful cases, explanations, corrections or a bounded authored contribution. Inspect the result through a representative use before presenting it as a reusable answer. For a teaching publication, obtain the relevant HCD learning design and use Learning Product LPF for the publication under the access condition in [CB.Reference:8](08-cb-reference-8---actual-supplier-returns.md); the subject expert, author, learning designer and provider can be different people. If a necessary contribution cannot be obtained, preserve the gap instead of treating submitted material as a complete learning product.
+**Produce or improve material.** Establish the reader's intended action, the subject method and correctness basis, and who can review and maintain the result. Ask participants for useful cases, explanations, corrections or a bounded authored contribution. Inspect the result through a representative use before presenting it as a reusable answer. For a teaching publication, obtain the relevant HCD learning design and use Learning Product LPF for the publication under the access condition in [CB.Reference:8](08-cb-reference-8---actual-supplier-returns.md); different contributors can supply the subject expertise, authorship, learning design and provision. If a necessary contribution cannot be obtained, preserve the gap instead of treating submitted material as a complete learning product.
 
 **Maintain an object or a shared resource.** Name what must remain usable and who can authorise the actual work. For technical maintenance, MNT.1 establishes the unit, configuration, required functioning and the question being decided. Obtain the applicable professional method and permissions before an intervention; return functioning evidence and the separate decision to resume use where required. For a knowledge resource, obtain a capable maintainer, correction criteria and a route for obsolete or disputed content.
 
-When a contribution spans institutions, obtain the actual contribution and authority from each. A university, supplier or association may provide useful people, material or access; its category alone specifies none of those commitments.
+When a contribution spans institutions, make sure the needed contributions and permissions are in place, and obtain any that are missing from the contributor or permission holder concerned. A university, supplier or association may provide useful people, material or access; its category alone specifies none of those commitments.
 
 #### CB.5:4.4 - Develop useful case work and comparison
 
@@ -93,13 +93,13 @@ For a complex case, the work may require substantial clarification and more time
 
 **Project review: obtain an informed view of a larger body of work.** Agree the question the project owner wants answered and give reviewers access and time to inspect the relevant work. Alternate examination with reflection so that claims can be challenged against the project, rather than against a short presentation alone. A rehearsal can help the owner prepare for an actual review. The project owner's applicable acceptance and release decisions remain separate.
 
-**Demonstration or joint work: expose an action and its reasons.** Choose a representative situation, let a competent practitioner perform or explain the difficult action, and give participants a chance to ask about a consequential choice. When they try the action, supply the relevant practice and feedback through HCD. Their experience can also expose a question for method description or development. Keep the observed action and the result it actually establishes recoverable.
+**Demonstration or joint work: expose an action and its reasons.** Choose a representative situation, let a competent practitioner perform or explain the difficult action, and give participants a chance to ask about a consequential choice. When the aim is for a person to learn the action, use HCD to arrange the practice and feedback they need. Their experience can also expose a question for method description or development. Keep the observed action and the result it establishes recoverable.
 
 These forms can be combined. A story can clarify a case, a demonstration can test an interpretation, and a project review can expose a smaller question. Explain the change of receiving result when the activity changes, so that participants know which contribution is now wanted.
 
 #### CB.5:4.5 - Prepare an external contribution without losing the question
 
-Invite an external expert or neighbouring practitioner when the group lacks a needed perspective or competence. Give the guest the actual question, relevant material, participant preparation and expected result. Check that the guest can address it and agrees to an interaction that lets participants clarify and examine the contribution.
+Invite an external expert or neighbouring practitioner when the group lacks a needed perspective or competence. Give the guest the question, relevant material, participant preparation and expected result. Check that the guest can address it and agrees to an interaction that lets participants clarify and examine the contribution.
 
 A prepared presentation can be useful, but leave enough time for the community's questions and their application. The guest may need to observe the work first, respond to selected cases, or join a small group after a general explanation. Choose the arrangement with the guest rather than presuming that a familiar lecture supplies it.
 
@@ -125,7 +125,7 @@ Retain a contribution when another receiving use warrants it and the relevant pe
 
 Choose a capable owner for correction and maintenance. For professional method content, use the relevant Method Engineering contribution; for a resource containing existing qualified advice, use its established subject review and publication route. If no one can maintain a changing answer, limit its stated use and avoid making an indefinite currency promise.
 
-Observe how the arrangement works for both recipients and contributors. Are useful questions reaching suitable people? Are answers used or returned with reasons? Does preparation and follow-up exceed the available effort? Repeated reliance on one generous contributor is a provision question even when the contribution is voluntary.
+Observe how the arrangement works for both recipients and contributors. Are useful questions reaching suitable contributors? Are answers used or returned with reasons? Does preparation and follow-up exceed the available effort? Repeated reliance on one generous contributor is a provision question even when the contribution is voluntary.
 
 Change the specific failed connection: improve the request, recruit another qualified helper, make a reusable answer accessible, change a response promise or stop an unsupported activity. Return to CB.1 when a service, resource or another contribution better serves the purpose. Keep enough information for the next participant to continue without requiring everyone to repeat the whole exchange.
 
@@ -173,7 +173,7 @@ The mentor's commitment is one prepared attempt and a return about the remaining
 
 ### CB.5:6 - Bias-Annotation
 
-Sponsor accounts can make participant work appear to be freely available production capacity. The method keeps consent, preparation, receiving responsibility and revision effort explicit. Fluent or highly visible contributors can also crowd out less visible competence; select the contribution by the actual question and required basis.
+Sponsor accounts can make participant work appear to be freely available production capacity. The method keeps consent, preparation, receiving responsibility and revision effort explicit. Fluent or highly visible contributors can also crowd out less visible competence; select the contribution by the question and required basis.
 
 ### CB.5:7 - Conformance Checklist
 
@@ -184,7 +184,7 @@ A usable contribution arrangement establishes:
 - required material, preparation, access and permission;
 - a construction that fits the kind of work;
 - a recipient able to inspect and return a disposition;
-- the actual result, remaining gap and any agreed continuation.
+- the result obtained, any remaining gap and any agreed continuation.
 
 A plausible match is enough to begin a bounded invitation. Reliance on correctness, performed intervention, restored functioning or acquired capability requires the relevant domain evidence.
 
@@ -219,9 +219,9 @@ The shared construction is the connection among request, contributor, conditions
 | Spinks, The Business of Belonging (2021), physical PDF 45–54 | Distinguish support, product input, recommendation, contributed material and learning-oriented help; make the relevant answer obtainable, including for quiet users. | Business categories help expose different contributions but do not define every community purpose. The participant's result and agreed burden remain part of the choice. |
 | Wenger-Trayner et al., Communities of Practice Guidebook, second edition (2023), printed 145–156 and 175–178 | Develop case clinics, shorter design clinics, stories, project reviews, demonstrations and prepared external contributions with later returns. | Their outcomes differ. A story is contextual experience; broadened options still need examination; a guest visit supplies only its agreed contribution. |
 | A. Levenchuk, community-development essay 1741983, 2024 | Distinguish work that participants can contribute in recruitment, support, co-design and maintenance. | Match each contribution to an actual recipient, domain method and permission; membership supplies no general authority to perform it. |
-| OCE.6, OPS.6, SYSE.2 and MNT.1 | Obtain enabling relations; distinguish chosen action from performed work; develop a use-and-concept proposal; establish the maintenance question. | Use each supplier for its actual result. CB organises the contributions and returns, while those bodies retain their professional questions. |
+| OCE.6, OPS.6, SYSE.2 and MNT.1 | Obtain enabling relations; distinguish chosen action from performed work; develop a use-and-concept proposal; establish the maintenance question. | Use the result that the receiving work needs. CB organises the contributions and returns, while those bodies retain their professional questions. |
 
-The serious alternative is to leave the work with an adequate resource or accountable provider. Community contribution is worthwhile where relevant people can supply useful work under acceptable terms and a recipient can use it. Compared with an unrestricted call for help or ideas, the construction adds preparation and response effort while exposing unavailable contributions and unusable results earlier.
+The serious alternative is to leave the work with an adequate resource or accountable provider. Community contribution is worthwhile where participants can supply useful work under acceptable terms and a recipient can use it. Compared with an unrestricted call for help or ideas, the construction adds preparation and response effort while exposing unavailable contributions and unusable results earlier.
 
 Reconsider the arrangement when the kind of work, receiving criteria, permission, contributor capacity or available alternative changes. A missing method or unaccepted product obligation returns to its direct owner.
 

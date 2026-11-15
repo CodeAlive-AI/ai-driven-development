@@ -8,27 +8,27 @@
 
 ### STR.16:1 - Problem frame
 
-**Use this when** an organization or provider must combine independently justified undertakings and their support, but cannot yet explain which research, product, service, performer-development and enabling work it can actually undertake with its limited resources. Individually worthwhile proposals compete for the same people or means. Some results deserve pursuit in their own right; others support several branches. Treating everything as a product project loses the former, while giving every branch its own complete support team can duplicate work the organization cannot afford.
+**Use this when** an organization, provider or group needs to combine independently justified undertakings under limited resources. Some results are worthwhile in their own right, while others supply more than one undertaking. Identify which combinations can receive the support they need. Treating independent research as a step toward a product can lose its scientific purpose. Giving every branch a separate support team can duplicate scarce work.
 
-The wider activity is strategic choice and enactment. This pattern addresses construction of a bounded portfolio: a proposed combination of independently justified undertakings, their receiving results, common or separate support, resource commitments and conditions for starting and revising the work. It does not prescribe a universal set of branches. Research, products, capable performers and cultural contributions are possible independent purposes, not four compulsory departments or successive phases.
+Construct a proposed portfolio of independently justified undertakings, the results their recipients need, the support that can be shared or must be supplied separately, and the resource and authority conditions for starting or revising the work. Research, products, performer development and cultural contributions are examples of independent purposes.
 
-The working readers are the people constructing the portfolio with its prospective performers and decision holders. They bring knowledge of their subject, existing commitments, available methods and resource conditions. The pattern supplies the joining work: how to preserve independently worthwhile results while designing and comparing feasible ways to support them together. Scientific inference, product design, human development, operating coverage and legal or financial authorization retain their own professional methods.
+Portfolio practitioners work with the subject knowledge, commitments, methods and resource conditions available to them. Draw on prospective performers and decision holders for knowledge or authorization that the work needs from them. The joining work is to preserve independently worthwhile results while designing and comparing feasible ways to support them together. Scientific inference, product design, human development, operating coverage and financial or legal authorization depend on their respective methods and authorities.
 
-**First useful move.** Take the nearest resource decision. For each proposed undertaking, ask what receiving result justifies it, which other undertaking actually needs a result from it, and which merely uses the same scarce resource. Construct one complete shared-support arrangement and one serious arrangement with support inside the branches where that distinction can change the decision. Compare their full demands at the times that matter.
+**First useful move.** Identify the resource or portfolio question. For each undertaking, establish the result that justifies it, any other action that needs that result and any undertaking that merely competes for a resource. Where sharing is a serious choice, compare a complete shared-support arrangement with adequate provision within the affected branches. Check their full demands in the windows that matter.
 
-**First useful result.** Return a feasible proposed portfolio with its trade-offs and next decisions, a smaller useful portfolio, or the exact incompatibility preventing one. When the authorized holders participate, their separate decisions can make a bounded part available to start. A portfolio description neither spends resources nor establishes acquired capability.
+**First useful result.** Return a feasible proposed portfolio with its trade-offs and remaining decisions, a smaller useful portfolio, or the incompatibility that prevents a proposed combination. A bounded start also needs applicable resource commitments, authority and sufficient conditions for the intended work. Work performed and capability acquired require their own evidence.
 
-**Ordinary non-use boundary.** Use an adequate existing portfolio construction directly. STR.8 already explains how contributions and proposed changes obtain a strategic result; STR.11 selects bounded commitments; STR.14 reconciles simultaneous strategic work. If those descriptions and an existing domain account supply every needed connection, this pattern adds no compulsory pass. Use C.40.OP when the question is only which opportunities to retain, OCE.8 for different whole arrangements for one stable organizational result, or direct Operations guidance for an already understood scheduling problem.
+**Ordinary non-use boundary.** Use an adequate existing portfolio directly. STR.8 can establish how contributions obtain a result, STR.11 can support bounded commitments, and STR.14 reconciles simultaneous strategic work. Use this method if the needed connections among independently worthwhile undertakings remain open. C.40.OP can retain opportunities. OCE.8 compares arrangements for one stable organizational result. An ordinary schedule can settle a timing question.
 
-Recognition is inexpensive: an unexplained shared contribution, unsupported dependency or competing commitment warrants examining that connection. A claim that the resulting portfolio can safely be performed requires actual capability, access, commitments and relevant professional assurance. The construction below exposes those requirements; it does not satisfy them by naming them.
+An unexplained common contribution, a possible dependency or competition for resources can justify examining the connection. A claim that work can safely start needs evidence of capability, access, commitments and any professional assurance the use requires.
 
 ### STR.16:2 - Problem
 
-A provider can promise new customer capabilities while its own development remains a list of ambitions. Research is credited with a product result it has not established; preparing a performer is credited with organizational capacity before allocation exists; a common library is counted as free support for every application. Alternatively, each branch budgets an independent copy of methodology, tools and preparation even where a common contribution would work.
+A provider can promise new capability to clients while leaving its own development as a list of ambitions. A research result may be counted toward a product before product applicability is established. Preparing a capable performer may leave no capacity allocated to the organization. A common library can require support on every application. Conversely, separate budgets can duplicate methods, tools or preparation that the branches could use in common.
 
 A programme tree makes these mistakes hard to see. A scientific inquiry can be inside the organization's development programme without being an input to its next commercial release. A method can support two products without its entire research field becoming subordinate to those products. Two branches can have no result dependency and still be unable to coexist because one expert supplies both.
 
-The practitioner must construct a combination whose results remain meaningful, whose support is obtainable, and whose joint burden fits. When further development is an intended result, the answer must also say what changes after success: completing a familiar delivery does not by itself develop the ability to handle a harder problem or improve the way development is organized.
+Construct a combination that preserves each worthwhile result and fits its full demands within obtainable support and resources. If further development is intended, identify what the organization or performer would become able to do after success. Completing familiar work can be valuable on its own. Evidence of a new capability must establish the newly attainable work.
 
 ### STR.16:3 - Forces
 
@@ -40,20 +40,20 @@ The practitioner must construct a combination whose results remain meaningful, w
 | Finite commitments and uncertain discovery | Work can be bounded and funded before its scientific answer or future application is known. That uncertainty does not justify an unbounded promise. |
 | Current service and new capability | Development consumes people, attention and recovery capacity needed by current recipients. |
 | Strong AI and the developed subject | Available AI can perform more work, but obtaining its output, developing a person, and developing a collective capability remain different results. |
-| Plural characteristics and a decision | Unlike contributions need not share a score, yet their owners still have to choose what receives resources now. |
+| Plural characteristics and a decision | Unlike contributions need not share a score, yet an allocation decision needs the judgement of whoever holds the resource authority. |
 | Continuation and growth of obligations | A useful next problem can justify further development; success creates no duty to expand every branch indefinitely. |
 
 ### STR.16:4 - Solution
 
-Construct the portfolio from independently justified results and the contributions that make them obtainable. Develop alternative arrangements for support, place each on one joint resource and authority basis, and take the resulting bounded choice to its actual holders. Preserve independent branches when a dependency fails. Reuse supplied methods rather than repeating their internal operations.
+Start from independently justified results and the contributions that could make each obtainable. Compare feasible support arrangements against the same resources, constraints and authority. Return a supported proposal, a comparison or the remaining conflict. If an allocation is requested, identify or obtain the decisions it requires. Retain independent branches where their grounds still hold. Use suitable results from the supplying methods.
 
-The numbered subsections explain one reusable construction, not a compulsory document sequence. An adequate contribution can enter directly where the current connection is missing.
+Use an adequate existing contribution wherever it supplies the needed connection. The subsections below explain how to obtain the parts of a portfolio that are still missing.
 
 #### STR.16:4.1 - Establish the decision and preserve the different results
 
-Start with the strategic subject, the decision horizon and the commitments now in question. The subject can be an organization, a provider or another arrangement whose contributions and authority can be identified. Recover current service, already accepted development work, protected conditions and resources actually available to allocate. Distinguish them from resources somebody hopes to obtain. A longer scientific horizon can remain relevant while the present decision funds only the next eight weeks of inquiry.
+Identify the strategic subject, the horizon, the question about its commitments and any resource decision in scope. Recover current service, accepted development work, protected conditions and resources available for allocation. Keep expected future supply separate. A long-term inquiry can remain worthwhile while the current decision funds only its next eight weeks.
 
-For each serious undertaking, explain its next useful result, receiver and grounds of worth. C.40.PC supplies this problem–contribution account; retain its distinction between a supported need and a hypothesis. Do not invent a customer for foundational research or call every internally useful result a sale. Examples of different result grounds are:
+For each serious undertaking, identify its next useful result, who or what will use it, and why it is worth pursuing. C.40.PC helps distinguish a supported need from a hypothesis. Foundational research can be justified by its contribution to knowledge. Internal service can be valuable without a sale. The following examples have different grounds of worth.
 
 - a research claim, counterexample, explanatory model or precisely narrowed question judged by its scientific contribution;
 - a product or service configuration that could supply a specified recipient contribution;
@@ -63,63 +63,63 @@ For each serious undertaking, explain its next useful result, receiver and groun
 
 Use only the distinctions needed by this portfolio. A branch can contain several of these results. Keep them separate where one can succeed while another fails.
 
-Also name the development contribution, if any, separately from the result of the ordinary work. A new scientific conclusion can be produced by an already mastered research practice; its novelty alone does not show development of the researcher or the organization. Current research, editorial and service commitments belong in the joint resource account on their own grounds even when they are not developmental changes. When developing the ability to undertake a new inquiry, maintain a wider repertoire or provide a new form of help is intended, identify that changed possibility and what must change to obtain it. Membership in a development project does not turn every constituent action into development.
+Identify what ordinary work could produce and, where development is intended, the new ability the work could help establish. An already capable researcher can produce a new scientific conclusion. Keep research, editorial and service commitments in the resource account even when they use existing capability. For a new class of inquiry, a broader repertoire or a new form of help, identify the changed possibility and the contribution needed to obtain it.
 
-For a research undertaking, use RMP.1 to identify the unresolved knowledge contribution rather than promising the desired answer. RMP.2 supplies an obtainable inquiry or a justified no-new-study result where design selection is live. A negative result or retained uncertainty can be a successful epistemic contribution under the inquiry's answer and work-stop conditions; it is not automatically successful product development. Funding authority can select how much inquiry the organization supports without deciding which scientific conclusion is true.
+RMP.1 helps identify an unresolved research contribution. Use RMP.2 when the choice concerns an attainable inquiry or grounds for doing no new study. A negative finding or retained uncertainty can be the warranted return when the inquiry reaches its stopping condition, even if the underlying scientific question remains open. Consider product applicability separately. A funding authority can choose how much research to support. The scientific conclusion depends on the evidence and argument.
 
-Distinguish three kinds of decision beside the affected work: who can allocate the organization's resources, who can accept a contribution for its receiving use, and who can authorize access or action. They can coincide in a small organization, but their coincidence needs an actual basis. A client retains its product and organization decisions. An independent researcher or volunteer retains choices not delegated by agreement.
+Identify who can allocate resources, accept a contribution for a particular use, or authorize access or action where the portfolio needs these decisions. One participant may hold several rights. Establish each right from its applicable basis, such as law, a charter, a delegation or an agreement. A client retains its own decisions, and researchers or volunteers retain choices they have not delegated.
 
-Keep the task's nesting where it is already established. A provider's contribution to a client project can sit within its client-development programme without making the client a part of the provider. That nesting says where the provider coordinates its work; it does not settle the method, budget or authority of every participant.
+Preserve established relationships among undertakings. A provider can coordinate its contribution to a client project inside its development programme. Its mandate covers the provider’s work there. Establish the client’s and other participants’ methods, resources and authority from their own arrangements.
 
 #### STR.16:4.2 - Distinguish result dependencies from shared demand
 
-Use STR.8:4.2–STR.8:4.2a to explain the obtaining way for each result. Keep the result beside the proposed action and its grounds. Retain adequate current methods, people and means; propose new work only for a missing contribution or necessary continued availability. An available description does not establish that a performer can use it.
+Use an adequate account of how each undertaking could obtain its result. STR.8:4.2–STR.8:4.2a can help construct one when the connection is missing. Retain qualified methods, performers and means. Where an existing description is proposed as support, establish how a capable performer could use it under the required conditions.
 
 At a proposed connection between branches, make the receiving action explicit:
 
 | Relation being proposed | Question that establishes its practical meaning | Consequence for the portfolio |
 | --- | --- | --- |
-| A result is needed before another action | What exact result, at what qualification and time, does the receiving operation consume? Could it proceed with a current or alternative result? | Retain a dependency only for the affected action. Provide its result, substitute, narrow the promise or defer that action. |
-| One contribution supports several branches | What same operation or result remains usable for each receiver, and what separate adaptation remains? | Construct one supplying effort plus each actual receiving effort. Test its capacity and change obligations jointly. |
-| Branches compete for one resource | Which identified person, device, provider window or funding condition is shared? | Combine their demands in that resource's actual windows; no result dependency follows merely from competition. |
+| A result is needed before another action | Which result, at what qualification and time, does the receiving operation consume? Could it proceed with a current or alternative result? | Retain a dependency only for the affected action. Provide its result, substitute, narrow the promise or defer that action. |
+| One contribution supports several branches | What same operation or result remains usable for each receiver, and what separate adaptation remains? | Count one supplying effort and each receiving branch’s required application effort. Test its capacity and change obligations jointly. |
+| Branches compete for one resource | Which identified person, device, provider window or funding condition is shared? | Combine their demands in the windows when the resource is available. Establish any separate result dependency from a receiving use. |
 | A result might open a later use | What possible use becomes more plausible or attainable, and what is still unknown? | Retain a qualified opportunity or research hypothesis. Do not put its uncertain result on the current delivery path. |
-| Results are pursued together for independent purposes | Why does each belong in the chosen strategic direction even without the other? | Compare their joint resource claim and accepted trade-off without inventing a causal or input connection. |
+| Results are pursued together for independent purposes | Why does each belong in the chosen strategic direction even without the other? | Compare their joint resource demand and the trade-off a choice would require without inventing a causal or input connection. |
 
 To test a claimed dependency, remove the supplying result in thought while keeping the other conditions fixed. Identify the specific receiving operation that becomes impossible or inadequate. If existing knowledge still supports the product, the new research is not a prerequisite for that product. Its scientific worth can remain a separate reason to fund it. If an unknown operation is indispensable to the product promise, either construct it, commission an appropriately bounded inquiry, use another way, or narrow the promise. A research schedule cannot guarantee discovery.
 
-For each real dependency, explain why the supplied result meets the receiver's conditions. A general method account may need a subject model, permitted data, an interpretation and a preparation arrangement before it can be used. Perform that connection on a representative piece of material. Retain a gap when the necessary operation remains unknown, but continue every branch whose grounds do not depend on it.
+For each dependency, establish why the supplied result meets the receiver’s conditions. A general method may need a domain model, permitted data, interpretation or preparation before it can be used. Trace the result through a representative piece of work, using a suitable existing demonstration where available. If a necessary operation is missing, state which receiving work is blocked and which branches have independent grounds to proceed.
 
-Distinguish development of content from its first use and its later improvement. An AI-produced explanation might help a practitioner perform a familiar operation immediately. A new reusable method requires its own construction and grounds; a new capability requires evidence about the subject that acquired it. Include the actual context, tools, interpretation, checking and repair needed by the chosen AI use in its demand.
+Distinguish developing content, using it and improving it. An AI-produced explanation might support immediate performance of a familiar operation. For a reusable method, establish the construction and grounds. For a new ability, use evidence about the subject whose capability changed. Include the context, tools, interpretation, checks and repairs the chosen AI use requires.
 
 #### STR.16:4.3 - Construct shared support and support within branches
 
-Identify the enabling contributions that could plausibly be shared. Examples include a common method construction, source maintenance, a reusable AI operation, a permitted case repository or preparation for a genuinely common task. Begin from the contribution and its receivers, not from a proposed office.
+Identify a contribution that could serve several receivers. Examples include a shared method, source maintenance, a reusable AI operation, a permitted case collection or preparation for the same provider task. Define what each receiver needs before choosing an office or other organizational form.
 
-**Shared-support arrangement.** Describe one supplier's bounded contribution, the applications it serves and the conditions for each use. Identify who maintains its operative content, who can alter it, which receivers need notice of a change and how a failed use returns. Provide enough capacity for expected combined demand and a way to handle a common failure. Then add the work each branch still performs: subject interpretation, adaptation, integration, feedback, acceptance and continuing support.
+**Shared support.** Specify the contribution, its supplier, the receiving applications and the conditions of use for each. Identify responsibility for maintenance, authority to change it, who needs notice, and where a failed use can be addressed. Check capacity for combined demand and a feasible response to a common failure. Add the interpretation, adaptation, integration, feedback, acceptance and continuing support each branch would still need.
 
-**Support within each branch.** Let each branch obtain and maintain the support needed by its own receiving result. Retain common sources by reference and exchange reusable results where worthwhile, but do not require synchronization merely because similar work occurs twice. Include the repeated construction, separate maintenance and any later reconciliation. The arrangement can use the same external source without using the same internal supplier.
+**Support within each branch.** Each branch obtains and maintains what its own receiver needs. Branches can refer to the same external source or exchange reusable results without sharing an internal supplier. Include repeated construction, separate maintenance and any necessary reconciliation when comparing this arrangement.
 
-Compare these as serious alternatives. A common contribution may reduce repeated work while increasing agreement, waiting and adaptation. Separate provision can be preferable when confidentiality, scientific freedom, specialized equipment, incompatible calendars or different acceptance conditions make a common supplier expensive or unsuitable. Neither arrangement implies a legal unit or dedicated office. An office is one possible way to provide selected shared contributions; distributed performers can supply them too.
+Compare shared and separate provision where both are credible. Common support can reduce repeated work while increasing agreement, waiting and adaptation. Confidentiality, scientific independence, specialized equipment, incompatible calendars or different acceptance criteria can make a shared supplier costly or unsuitable. A dedicated office, a partner or distributed performers may supply the shared contribution when their conditions fit.
 
-Use the following constructive test for a proposed shared contribution:
+To test a proposed shared contribution, use the following operations.
 
-1. Name the smallest content or operation that both receiving uses actually preserve. Remove application-specific inputs and promises from that common part.
-2. Follow it into both applications. Recover each missing input conversion, professional judgement and return after failure. Keep those with the application unless their commonality is itself explained.
-3. Compare one common production and maintenance effort plus the separate applications with two adequate separate efforts. Count coordination and migration as well as execution. Do not assume sharing removes all repeated work.
-4. Ask what happens if one receiver changes, withdraws or doubles its demand. Determine what the remaining receiver still needs, what effort actually disappears and what common obligation remains.
-5. Retain, narrow or abandon sharing at that contribution boundary. A useful common substrate can coexist with separate subject methods and separate authority.
+1. Identify the smallest content or operation that would remain usable for every receiver included in the proposed sharing. Keep application-specific inputs and promises with the corresponding uses.
+2. Follow that contribution into each receiving use. Identify required input conversion, professional judgement and fallback or correction. Count those as application work unless there are grounds to share them too.
+3. Compare a common production and maintenance effort plus the required applications with adequate separate provision for the same receivers. Include coordination, migration and any work repeated along either route.
+4. Examine a relevant change in use, such as changed requirements, withdrawal or higher demand from one receiver. Determine what the others still need, which effort would disappear and which shared obligations would remain.
+5. Retain or abandon the shared contribution, or narrow its content or set of receivers. Preserve the separate methods and authorities needed by particular applications.
 
-This test does not require a universal shared platform. It can justify sharing only an input format or one AI operation while retaining independent research, product methods and learning designs. A hybrid is useful when its split has a stated reason; it is not automatically a compromise superior to both coherent alternatives.
+A shared input format or one AI operation can be worthwhile while research, product and learning work remain independent. For a mixed arrangement, explain why some contributions are shared and others remain separate, and compare its full demand with the serious alternatives.
 
-**Subject help and common support.** Common support makes a contribution available under known conditions. Subject help supplies the diagnosis, theory, construction or interpretation that the recipient's particular problem requires. Sharing a case store or language model does not supply a missing research mechanism, engineering model or learning intervention. When the same subject method is itself reusable, share its qualified explanation and useful means; still provide the adaptation and competence needed in each use. Do not demote subject work to generic administration merely because several branches need it.
+**Domain work and common support.** Common support makes a contribution available under known conditions. Domain work supplies the diagnosis, theory, construction or interpretation a recipient needs. A case store or a language model can support that work. If the method can be reused, assess whether sharing its qualified explanation and means is worthwhile. Include the adaptation and competence each use would still require.
 
-OCE.8 can compare complete human, AI, internal-provider and external-provider arrangements once a particular support result and acceptance basis are stable. It should not silently decide whether the organization's independent research purpose is worth preserving: that changes the result set being pursued.
+When the support result and its acceptance criteria are stable, use an adequate existing comparison of delivery arrangements. OCE.8 can help construct one if needed. Options can involve people, AI, internal services or external suppliers. Deciding whether independent research is worth pursuing changes the result set and belongs to the portfolio decision.
 
 #### STR.16:4.4 - Build the joint resource account and repair the whole
 
-For each candidate arrangement, start from the same current configuration and horizon. Place current commitments, protected reserve, development work and continuing obligations in the same account. MA.1–MA.2 supply the resource-demand and capacity meanings; OCE.11 supplies coexistence around organization change; STR.14 supplies reconciliation across simultaneous strategic work. Use an adequate supplied account directly.
+Compare candidate arrangements from the same current configuration over the same horizon. Include present commitments, protected reserve, development and continuing obligations. Use an adequate existing account. When a contribution is missing, MA.1–MA.2 can establish resource demand and capacity, OCE.11 can examine coexistence with current operations, and STR.14 can reconcile simultaneous strategic work.
 
-Count each performed or proposed supplying effort once. Then add every actual application effort. If the same person appears as researcher, methodologist and mentor, reconcile those demands against that person's availability rather than giving each role a new pool of hours. Pool resources only when their relevant capabilities and availability make them interchangeable for this use. AI compute, AI-engineer time, researcher time and mentor time do not cancel one another merely because they have prices.
+Count each actual or proposed supplying effort once. Add the application effort at each receiver. If one person works as researcher, methodologist and mentor, compare the combined demand with that person’s availability. Pool resources only if their capabilities and time windows make them interchangeable for the receiving use. Preserve separate demands on compute, AI engineers, researchers and mentors even when they all have prices.
 
 Begin at the coarsest time window that can expose a decisive conflict. Refine to a week, shift or booked session when timing could defeat the combination. Include preparation, learning, supervision, integration, feedback, failures, recovery and the work of constructing and maintaining the coordination itself where they are needed. A feasible total can conceal an impossible first week.
 
@@ -129,19 +129,19 @@ Keep three accounts distinct where the decision uses them:
 - the payments required, with their actual dates and funding conditions;
 - any assigned share used for reporting or charging.
 
-MA.3 supplies a needed allocation convention. A research branch's assigned share is not necessarily a payment avoided by cancelling it. Released staff time does not become cash unless a real supply or payment changes. MA.8 supplies the time-related account when a product creates later service obligations; expected future revenue is not present funding.
+Use MA.3 if an allocation convention is needed. Cancelling a research branch can release staff time without avoiding its assigned share of a cash payment. Identify what payment or supply would actually change. MA.8 can help account for later service obligations. Funding the present start depends on money available by the payment date.
 
-Repair a conflict by changing the complete obtaining arrangement. Possible moves include reducing a result's scope, moving a genuinely movable contribution, obtaining a qualified substitute, changing which work is shared, or deferring an independent branch. Preserve the receiver's acceptance condition when claiming the same result. A smaller complete research question or service contribution can be useful; removing its essential criticism or exception response merely creates an incomplete fragment.
+To resolve a conflict, change the configuration enough to show how the revised contribution would reach its recipient. Possible changes include narrowing a result, moving work with a flexible deadline, obtaining a qualified substitute, changing what is shared or deferring an independent branch. Preserve the receiver’s criteria for the same result. A narrower research question or service can be complete if it retains its required criticism or response to exceptions.
 
-Recompute every receiving use affected by a changed shared contribution. If research does not supply the affected product input, a product delay need not stop the research. If both depend on the same scarce scientist, resource reallocation may still change both schedules. Keep those two reasons distinct.
+Reassess the uses that depend on a changed shared contribution. If research supplies no required input to a delayed product, the research may continue. If both need the same scarce scientist, reallocation may nevertheless change both schedules. Trace the receiving dependency and competition for capacity separately.
 
-Finding that no candidate is feasible is a legitimate result. Return the exact conflicting resource, time or authority condition and the smallest decision that could change it. Do not invent overtime, voluntary participation, funding or a future discovery to make the rows add up.
+If no candidate is feasible, identify the binding resource, timing or authority condition. State what would be needed to change that conclusion where a feasible change is known. Count overtime, volunteer work, financing or future research results only on grounds appropriate to each.
 
 #### STR.16:4.5 - Compare the portfolios without erasing their purposes
 
-Use C.11.CRC to compare each finite candidate with the actual continuation. Preserve meaningful characteristics and their scales. A short reasoned comparison is often enough; an unexplained score is not.
+Use a sufficient finite comparison of each serious candidate with the current course. C.11.CRC can supply one where needed. Keep characteristics on scales that preserve their meaning. Explain the basis for qualitative judgements and any score used in the decision.
 
-Separate non-negotiable conditions from negotiable trade-offs. Then compare the surviving candidates along the characteristics that could change this decision:
+Distinguish binding conditions from negotiable trade-offs. For surviving candidates, compare the characteristics that support the requested conclusion or bear on the choice.
 
 | Concern | Useful characteristic and interpretation |
 | --- | --- |
@@ -153,47 +153,47 @@ Separate non-negotiable conditions from negotiable trade-offs. Then compare the 
 | Resource and burden | Scarce capacity by bearer and time, expenditure by date, support, displaced work and distribution of burden. |
 | Further development | The concrete new question, operation or obtainable option preserved, opened or delayed. Distinguish a supported connection from a speculative possibility. |
 
-This is a selection aid, not a mandatory seven-column scorecard. State enough about a characteristic's bearer, meaning, comparison basis and uncertainty to prevent a misleading comparison. Where unlike scales remain, preserve a partial ordering or an explicit value judgement. A chooser can prefer a scientifically stronger, more costly portfolio or a smaller commercial commitment without claiming one numerical optimum.
+Use the characteristics that matter for these undertakings. State whose result each describes, what it means, its basis for comparison and significant uncertainty. Where scales differ, report supported dominance or incomparability and any value judgement used for a choice. A chooser might prefer stronger scientific work at greater cost or a smaller commercial commitment.
 
-First remove only what a qualified hard condition rules out. Then inspect any supported dominance under the complete comparison basis. Compare the remaining serious alternatives through their consequential gains, losses and displaced opportunities. State the trade-off that the actual decision holder accepts. If there is no agreed basis for trading research away for another product release, expose that decision rather than hiding it in financial weighting.
+Exclude candidates ruled out by a binding condition. Compare remaining candidates on the complete basis for the question, identifying any dominance, gains, losses and displaced opportunities. If a decision is made, name the trade-off accepted by its holder. If no basis is agreed for exchanging research for a product release, expose the unresolved choice.
 
-Apply C.11.DUA when an unknown prompts a proposed study. Ask what attainable answer could change this allocation or the claim on which it relies, and compare that gain with inquiry burden and delay. Existing knowledge and reasoned expert synthesis can support a bounded portfolio proposal now. Uncertain long-run effectiveness does not require proving the whole development programme before constructing it. Conversely, a missing permission or a resource conflict cannot be waived as uncertainty.
+For a proposed study, use C.11.DUA to compare the full cost and delay with the contribution an attainable result could make to the proposed allocation or its grounds. Existing knowledge and expert synthesis can support a bounded proposal. Identify the evidence still needed for a long-run claim, and enforce any known permission or resource constraint.
 
 Preserve a research allocation for its stated epistemic purpose when the owners choose it. Describe product relevance separately. A product can use the current qualified method while new theory remains unsettled. If the next release actually requires the new theory, the honest choice is a conditional release, a different method or a changed promise.
 
 #### STR.16:4.6 - Obtain the decisions and begin a complete bounded undertaking
 
-Take the proposed portfolio and its actual trade-off to the resource and commitment holders. STR.11 supplies the distinction between retained alternatives, intended joint use and authorized commitments. Obtain the decisions at the smallest scope that lets useful work begin.
+If a decision or start is requested, establish which resource and commitment rights apply. Use an existing authorization that covers the work. For a new decision, make it within your authority or take the proposal and its trade-offs to the holder. If starting the selected work requires a further commitment, seek the smallest one that will let it begin. Use STR.11 when the distinction between retained alternatives, intended joint use and accepted commitments needs examination. A request for a comparison can finish with the supported trade-off.
 
-Make the resulting action legible: which contribution starts, who has accepted the work, what time or money is allocated, which receiving conditions apply, what remains excluded, and who can alter the commitment. A funding decision cannot supply research access; a sales decision cannot allocate a client's staff; an employer's encouragement cannot replace protected work time.
+For an authorized start, identify the contribution, who accepted it, the time or money allocated, its receiving conditions and who may change the commitment. Identify any work still excluded. Funding alone cannot grant restricted research access, assign a client’s staff or protect an employee’s time. Establish each of those conditions where the work depends on it.
 
-Choose a first undertaking that returns a useful contribution, not merely a meeting, platform installation or collection of activity measures. It may be a bounded research result, a product construction with its obtaining method, a performer-supported complete case, or an organizational capability increment. Use the direct subject method to produce and judge that result. OCE.9 supplies representative realization and exception handling for an organization-capability increment under its entry conditions.
+When choosing a first undertaking, identify the usable result it should provide and who can assess it. Examples include a research result, a product construction with its obtaining method, a participant’s complete case with specified help, or an organizational capability increment. A meeting, installation or measurement can contribute if it supplies the result the receiver needs. Use the relevant subject method. OCE.9 can guide representative realization and exception handling for an organizational capability increment.
 
-Before committing to later starts, establish the particular results they require. Some branches can start together; others need a prior result or a later availability window. A conditional future branch is not an authorized present task. Keep independently useful work moving on its own grounds.
+Before committing to later starts, establish the results and conditions each needs. Some branches can begin together. Others must wait for a prior result or a later window. Continue work on an independent branch if its authority and supplied conditions support doing so.
 
-The portfolio-construction result finishes when the participants can identify a feasible proposed combination and its decisions, or an exact impasse. With authorization supplied, it also gives a usable bounded start and conditions for continuation. Actual performance and acquired capability remain subsequent results, not completion claims for this construction.
+Close a portfolio-construction question with a feasible proposed combination, its remaining decisions or a precise impasse. A question about one conflict can finish with the relevant comparison or bound. When the required authorizations and operating conditions are in place, the result can also identify a usable start. Evidence of later performance or acquired capability concerns what the work actually achieved.
 
 #### STR.16:4.7 - Continue from results and reopen the affected commitment
 
-Observe the scientific, product, performer and organization results separately where each affects the next decision. If a local action was performed but its result did not follow, examine that obtaining relation. If the local results arrived but the encompassing contribution did not, examine their join. If the work did not occur, inspect allocation, capability, access and support before revising the theory.
+Where the next question depends on results already obtained, look for evidence of each relevant scientific, product, performer or organizational contribution. If an action occurred without its expected result, examine how it was meant to produce that result. If the parts succeeded but the whole contribution did not, examine how their results reached the next work. If the work did not occur, check allocation, capability, access and support before revising its theory.
 
-When further development is an intended result, ask after success what worthwhile result remains outside the present repertoire and which developmental contribution could make it obtainable. Use C.40.NP for the developed return from success to an attainable next problem. A portfolio concerned only with adequate current delivery can continue or finish on that basis. A stronger AI operation, a new scientific construction, a more capable performer or an unfamiliar receiving problem can change this question even when current delivery works well. Do not define development solely as correction of failed adoption.
+When further development is intended, use success to identify a worthwhile result still beyond the present repertoire and how it could become attainable. C.40.NP develops this reasoning. An adequate current delivery can continue or finish on its own terms. A new AI operation, scientific construction, capable performer or unfamiliar problem may open a different development question even when the present service works well.
 
 Distinguish repeating a successful delivery, improving its efficiency, expanding the class of problems that can be handled, and improving how the organization develops that capability. For the last two, the content may itself need construction. Use C.39 for a missing obtaining way, RMP for a live knowledge question and C.40.PC, C.40.DC, C.40.JF, C.40.OP for new contribution possibilities and retained continuations. A customary retrospective or larger training catalogue does not supply a new method.
 
-Fund only the next worthwhile, obtainable contribution and its necessary support. Preserve useful intermediate material and independent alternatives at their actual retention cost. Saving an account reserves no specialist time or funding. When a new order consumes development capacity, state which result moves, which future possibility is delayed and who accepts that trade-off.
+For a further funding decision, compare the next attainable contribution and its necessary support with serious alternatives. Retain useful intermediate material and independent alternatives at their actual cost. Saving an account preserves information. Reserving a specialist’s time or money requires a corresponding commitment. If a new order takes development capacity, identify what is displaced and whose decision accepts that trade-off.
 
-Reopen the smallest affected part of the portfolio when its receiving need, scientific premise, shared contribution, resource, authority or promising alternative changes. A failed shared service can affect several branches; a disproved speculative product use need not invalidate an independently worthwhile scientific result.
+Reopen the affected part when a receiving need, scientific premise, shared contribution, resource, authority or alternative changes its grounds. A failed common service can affect several branches. An unsupported product application can leave an independently worthwhile scientific finding intact.
 
 ### STR.16:5 - Archetypal Grounding
 
-The following cases are constructed teaching examples. Names, hours, payments, timing, permissions and decisions are stipulated to demonstrate the Method. They report neither an actual provider's resources nor observed effectiveness. The first case uses the receiving configuration of a development provider; its branch arrangement is one application, not the definition of the Method.
+The cases use stipulated hours, payments, schedules, permissions and decisions. The first applies the method to a development provider. The second uses different receivers and access conditions to examine which contributions can still be shared.
 
 #### STR.16:5.1 - Construct the provider's portfolio
 
-Atelier supplies development help through a residency and is preparing corporate assistance. Its owners also choose to support independent methodological research and public contributions. The immediate decision is how to organize eight weeks of its own development while maintaining current delivery. Client development is one branch of this provider's development; no client becomes a department of Atelier.
+Atelier delivers a residency, is preparing a corporate offer and chooses to support independent methodological research and public contributions. Its owners must organize eight weeks of development while maintaining current delivery. The portfolio includes Atelier’s work for clients. Decisions about a client’s own organization remain with that client.
 
-The proposed results are:
+The proposed undertakings have different intended results.
 
 | Undertaking | Next receiving result and what is not promised |
 | --- | --- |
@@ -204,13 +204,13 @@ The proposed results are:
 | Facilitator development | Another facilitator can supply the selected help with stated assistance and can participate in improving the preparation method for a harder case. |
 | Public contribution | One explainable method contribution and contrasting cases that independent carriers can use and criticize under the chosen open access terms. |
 
-The owners regard both research questions as worthwhile independently of the two products. They do not infer development of Atelier merely from obtaining a novel scientific answer. The portfolio contains their support as an independent resource commitment; the intended development results are the new product/provision possibilities, facilitator capability and, under arrangement A, the ability to maintain a common Method contribution. A separate wish to develop Atelier's research capability would need its own changed possibility, obtaining way and qualification. An applicable RMP account supplies the proposed inquiry scopes and limits. Current qualified methods suffice for the product constructions. Therefore neither product waits for the new research conclusions. A new result may later change the product method through a separately qualified receiving use.
+Both research questions have independent scientific worth for the owners. A new scientific answer alone would establish neither a new research capability nor a product contribution. Atelier intends to develop product and provision options, the facilitator’s ability and, under A, an ability to maintain a common method. Developing research capability would need its own target and evidence. An applicable RMP account identifies the inquiry scopes and limits. Existing qualified methods suffice for both proposed products, so neither has to wait for new research conclusions. A future research result could affect a product through a separately established application.
 
-The residency and corporate offer do share a smaller contribution: an explanation of how to construct and revise an obtaining method, together with reusable AI operations for organizing the relevant material. They do not share the recipient's subject model, development mechanism, exercise design, authority or acceptance decision. The residency develops a person's contribution; the corporate offer concerns joint work and client decisions. Those differences remain in their application work.
+The residency and corporate offer both need an explanation of how to construct and revise a method of obtaining a result, and reusable AI operations for organizing the material. Each application still needs its own subject model, development mechanism, exercise design, authority and acceptance conditions. One concerns a person’s development. The other concerns joint work and the client’s decisions. Include those differences in the cost and conditions of applying the shared method.
 
 #### STR.16:5.2 - Calculate both support arrangements
 
-Four disjoint, qualified resource pools have the following stipulated eight-week availability. The pools do not double-count people; where the same person filled several roles, a person-specific account would replace these totals.
+The example stipulates four distinct qualified resource pools with the following availability over eight weeks. No person is counted in two pools. If a person serves more than one role, compare their combined demands with their own calendar.
 
 | Resource | Supplied usable hours | Current commitments | Protected reserve | Available for this development |
 | --- | ---: | ---: | ---: | ---: |
@@ -219,9 +219,9 @@ Four disjoint, qualified resource pools have the following stipulated eight-week
 | AI engineers | 144 | 64 | 16 | 64 |
 | Researchers | 160 | 48 | 16 | 96 |
 
-Reserve has a supplied operating justification and cannot be allocated by this construction. AI-engineer hours include the context, integration, checking and repair work needed by these particular operations; computation payments are accounted for separately. The researchers are a distinct pool, but the research still consumes some methodologist and AI-engineer time.
+The operating reserve is protected by the conditions of this case. AI-engineer hours include context preparation, integration, checking and repair for these operations. Computation payments are counted separately. Research also uses methodologist and AI-engineer time despite its separate researcher pool.
 
-The following is the estimated work common to both candidates. It includes the direct undertaking work, its specific preparation and evaluation; it excludes the alternative support packages in the next table.
+The table headed “Common undertaking work” gives the direct undertaking work common to A and B, including its preparation and evaluation. For each arrangement, add its support work from the table headed “Additional work in each alternative.”
 
 | Common undertaking work | Methodologist hours | Facilitator hours | AI-engineer hours | Researcher hours |
 | --- | ---: | ---: | ---: | ---: |
@@ -248,17 +248,17 @@ The following is the estimated work common to both candidates. It includes the d
 | B: bounded exchange between branches | 2 | 2 | 2 |
 | **B: total with common undertaking work** | **50** | **66** | **58** |
 
-Both require 80 researcher hours. Neither consumes the protected reserve. Compared with B, A requires four additional methodologist hours and four facilitator hours while saving two AI-engineer hours. It is not a no-worsening improvement. Its stipulated extra contribution is a maintained common method account with qualified returns for both applications; B supplies adequate separate accounts with fewer common-change obligations.
+Both arrangements require 80 researcher hours and leave the protected reserve untouched. Compared with B, A uses four more methodologist hours and four more facilitator hours, and saves two AI-engineer hours. It also supplies a maintained common method with qualified returns from both applications. B supplies adequate separate accounts with fewer common maintenance obligations. Choosing A therefore trades extra capacity in two pools for a different contribution and a saving in another.
 
-A count of product revenue does not choose between them. The owners can choose the extra reusable contribution and its burden, or decide that its present value is insufficient. They must not claim that future scale automatically repays the difference.
+The owners can value the common maintenance capability enough to accept its extra burden or judge the present gain insufficient. To claim that future scale repays the difference, establish what would be reused in additional applications and the additional work each would require.
 
-The stipulated additional payments are 2,400 currency units for A and 1,800 for B, both due before any new sales. Existing funding covers the salaried resource arrangements, current obligations and reserve; 6,000 units of unrestricted cash are available for these additional payments. This establishes affordability within the example's supplied terms, not profit, valuation or a forecast of sales. Expected revenues are not used to fund the start.
+A requires an additional payment of 2,400 currency units and B requires 1,800, both before any new sales. Existing funding covers salaries, current obligations and the reserve. The 6,000 units of unrestricted cash available for these payments make either affordable on the stated terms. Determining profit or sales would require further evidence.
 
 #### STR.16:5.3 - Repair timing and obtain the bounded decision
 
 The first proposed calendar for A places 18 methodologist hours in weeks 1–2, although only 16 are available. Its eight-week total of 54 concealed that conflict.
 
-The extra two hours concern corporate adaptation needed only in week 5. Move them to weeks 3–4; do not move the research's already booked criticism session or consume reserve. The shared base becomes usable in week 3, the residency application follows, and corporate adaptation is completed before its receiving construction in week 5.
+The extra two hours are for corporate adaptation first needed in week 5. Moving them to weeks 3–4 leaves the booked research criticism and protected reserve in place. Under the revised schedule the shared base would be ready in week 3, the residency application would follow and the corporate adaptation could finish before its week-5 use.
 
 The resulting demand by successive two-week windows is:
 
@@ -269,25 +269,25 @@ The resulting demand by successive two-week windows is:
 | AI engineers; capacity 16 per window | 14 | 16 | 14 | 12 | 56 |
 | Researchers; capacity 24 per window | 20 | 20 | 20 | 20 | 80 |
 
-For this constructed case, the performers have also checked the particular booked sessions and result-before-use conditions within those windows. That supplied calendar premise matters: the aggregate table alone would not establish it.
+The example also stipulates that performers checked particular bookings and prerequisites within each window. Together with the allocation table, that evidence supports the proposed schedule. An aggregate total alone leaves the order and staffing of those bookings open.
 
 The owners choose A for this interval because they want to acquire the common method-maintenance capability as well as the two bounded application results, and accept its additional methodologist and facilitator burden. They allocate the stated hours and 2,400 units; the performers accept those contributions within existing assignments. Research retains its own questions and scientific judgement. Product managers may request a different research contribution but cannot promise or revise its conclusion.
 
-The bounded start authorizes internal construction, the agreed residency work and independent inquiries under their stipulated permissions. It authorizes no corporate client implementation, new data access or future product launch. The client-related offer remains a construction result for later agreement.
+The authorization covers internal construction, agreed residency work and independent inquiries under their stipulated permissions. Client implementation, new data access and future launch require their own decisions. The owners have authorized work to construct an offer for later agreement with a client.
 
-The methodologist supplies the common base; each branch performs its stated adaptation; the facilitator-development work uses a complete application and then examines a harder receiving case. A relevant mismatch returns to its actual owner: a subject-model gap stays with the subject specialists, a defective common operation returns to its maintainer, and unavailable client authority limits the corporate application without stopping the residency or independent research.
+Under A, the methodologist is to supply the common base, each branch is to adapt it, and the facilitator is to use a complete application before examining a harder case. Address a subject-model gap with its qualified specialist and a defect in the common operation with its maintainer. Missing client authority limits the dependent corporate work. The residency and independent research retain their own grounds to proceed.
 
-This completes a portfolio construction and an illustrative bounded allocation. It does not claim that the work has occurred. The later case results, scientific conclusions and acquired capabilities require their own evidence.
+The case now supplies a proposed portfolio and a bounded allocation. It has not reported any performances under that allocation. A later claim about scientific conclusions, case outcomes or acquired abilities will need evidence of the relevant work.
 
 #### STR.16:5.4 - A changed condition makes branch provision preferable
 
 Before starting, a qualified new operating commitment reduces available methodologist time from 64 to 52 hours. Its timing leaves enough room for B's checked schedule. No other premise changes.
 
-A now needs 54 and no longer fits. B needs 50 and remains feasible. The owners compare three serious responses: defer two hours of a result whose later need genuinely permits it, obtain qualified outside support, or select B. They cannot simply cut two arbitrary hours from the common method's necessary construction and continue to promise A.
+A needs 54 methodologist hours and exceeds the new limit of 52. B needs 50 and fits the qualified schedule. The owners can compare deferring work whose receiver can wait, obtaining timely qualified outside support or selecting B. Under A, removing two hours that the common method still requires would leave its promise unsupported.
 
-Suppose no timely qualified substitute is available and the owners prefer to preserve the two independent inquiries, current delivery and both bounded product constructions. They select B and its 1,800-unit payment. The reusable common maintenance result is deferred; the already specified source returns and exchange keep later combination possible at its actual modest cost. The research was not sacrificed merely because it lacks near-term revenue.
+With no timely qualified substitute and a preference for retaining both inquiries, current delivery and both bounded products, the owners choose B and its 1,800-unit payment. They defer the common maintenance result. The budgeted source returns and exchange leave a path to combine later results. The scientific work retains independent grounds for funding.
 
-Only the changed support arrangement and its receiving applications need reconstruction. The research questions, current product methods and separate client authority remain intact. If one inquiry later produces a result useful to both products, that creates a new support candidate to examine; it does not retrospectively turn the original research into a required product stage.
+Reconstruct the changed support arrangement and its receiving applications. The research questions, current product methods and client’s authority remain as previously established. If an inquiry later produces a useful result for both products, assess that prospective shared contribution under the new conditions.
 
 If the new operating commitment were not yet authorized, the current 64-hour arrangement would remain the decision basis. If it consumed a researcher rather than a methodologist, switching A to B would not repair that different resource conflict.
 
@@ -295,35 +295,35 @@ If the new operating commitment were not yet authorized, the current 64-hour arr
 
 A measurement-equipment supplier wants a new instrument family and prepares field technicians, while an independent laboratory investigates a measurement theory. The laboratory's public scientific result may matter later, but the first instrument can use an already qualified method. Its funding agreement gives the supplier no right to redirect the investigation.
 
-Here the portfolio includes the supplier's funded contribution to the laboratory and its actual result dependencies, not ownership of the laboratory's whole programme. Product engineering and technician preparation share a test fixture only after their required ranges and access times prove compatible. Scientific samples, confidential customer records and the laboratory's interpretation authority stay separate.
+Include the supplier’s funded contribution to the laboratory and the uses that depend on its results. Share the fixture only if its ranges meet both technical needs and its permitted availability can cover both schedules. The laboratory retains authority over its interpretation, while scientific samples and confidential customer records keep their own access conditions.
 
-A proposed common test team would save some setup but cannot enter a restricted customer site. Separate branch provision therefore supplies the product's field evidence and the technician's practice, while a common fixture design and permitted reference material remain shared. The scientific work can continue independently. If a later product promise requires a new scientific relation, that promise becomes conditional on a qualified result or must change.
+In this case a common test team could save setup time but lacks access to the restricted customer site. The proposed arrangement uses separate teams for product field evidence and technician practice, with shared fixture design and permitted reference material. Scientific work can proceed on its independent basis. If a later product promise needs a new scientific relation, make that promise conditional until the required result is established, or change the promise.
 
-A mathematical inquiry with independently secured people, access, funds and criticism can instead have no shared scarce resource or receiving-result dependency on the supplier's current development. In that case its RMP construction and existing provision can suffice: keep it visible only where the owner's real commitment decision uses it, and impose no shared platform, office or new portfolio exercise. An independent scientific purpose does not require an invented product customer. If developing the investigator's capacity for a harder class of questions is also intended, construct that distinct development undertaking through C.40.OD and the appropriate capability practice.
+An independently funded mathematical inquiry may already have the people, access and critical engagement it needs, with no shared scarce resource or result dependency on the supplier. Its RMP construction and existing provision can suffice. Include it where a portfolio decision actually depends on it. Developing the investigator’s ability to tackle a harder question would be a different undertaking, with its own construction through C.40.OD and the relevant capability practice.
 
-The preserved construction is the distinction among independent ends, exact result uses and shared demand, followed by comparison of complete support arrangements. The particular branch names, departmental nesting, equipment and funding rule differ. No universal office, research-to-market sequence or four-branch organization is inferred.
+For another portfolio, establish the independent purposes, the uses that require another branch’s result and the demand on shared resources. Compare support arrangements where the difference matters. The number and names of branches, their institutional relations, equipment and funding rules follow from the new situation.
 
 ### STR.16:6 - Bias-Annotation
 
 Commercial visibility can make near-term sales appear to be the only result worth funding. Scientific prestige can hide an inquiry with no attainable criticism or bounded return. Shared-platform enthusiasm can discount adaptation, while local ownership can exaggerate the cost of common provision. Strong AI demonstrations can hide uncounted preparation or credit the wrong subject with development.
 
-Counter these biases at the actual choice: keep each result's grounds visible, compare complete serious arrangements, show displaced work, and identify whose judgement and authority support the allocation. Do not prescribe equal funding or a fixed research percentage as a substitute for that judgement.
+Keep each undertaking’s grounds of worth visible, compare the feasible arrangements, identify displaced work and establish who may accept the resulting trade-off. A fixed funding percentage would need a governing decision or a basis in the aims of this portfolio.
 
-The cases concern organizations choosing finite commitments. Independent carriers without a common allocator may use the construction to negotiate contributions, but the result remains a proposal until each relevant holder accepts its part. Membership in a community supplies no resource commitment.
+The cases concern organizations making finite commitments. Participants without a common allocator can use the comparison to negotiate a proposal. For each commitment, establish who accepted it and under what authority. Community membership by itself leaves that commitment open.
 
 ### STR.16:7 - Conformance Checklist
 
-Use these questions to examine the construction, not as a separate form required before every ordinary allocation.
+Use the questions below where they bear on the portfolio result the recipient requested.
 
 - Can a participant explain the next useful result of each selected undertaking and distinguish its scientific, product, capability or cultural grounds where those differ?
-- Does each claimed dependency identify the receiving action, usable result, timing and qualified alternative or return?
-- Do shared and branch-specific support alternatives include production, application, maintenance, coordination and failure response?
-- Does the resource account count each actual supplying effort once, every receiving effort where it occurs, and each scarce bearer in the relevant windows?
+- For each dependency, can a participant identify the receiving operation, result, qualification and time, and any viable substitute or response to failure?
+- Where support arrangements are being compared, do they account for common and separate production, each receiving application, maintenance, coordination and response to failure?
+- Does the resource account count each supplying effort once and each application effort where it occurs or is expected, and each scarce bearer in the relevant windows?
 - Are payments, capacity, assigned costs, permissions and accepted commitments kept distinct?
-- Does the comparison retain protected conditions, meaningful characteristic scales, uncertainty, displaced work and the actual accepted trade-off?
-- Can the next performer identify what is now authorized and what remains conditional?
+- Does the comparison preserve protected conditions, meaningful scales, uncertainty and displaced work? For a decision already made, does it identify the trade-off its holder accepted?
+- Can a recipient identify what may start under current authority, what is proposed and which condition still blocks work?
 - Does a changed shared contribution reopen its affected uses without needlessly stopping independent branches?
-- Where further development is intended, can the organization identify a worthwhile next development question after success without mistaking routine repetition for a new capability?
+- Where further development is intended, does the portfolio identify what might become newly attainable after success and distinguish that development from repeating a familiar delivery?
 
 These questions can establish the intelligibility and conditional coherence of the proposal. Empirical effectiveness, safety, research truth, learning transfer and actual organizational capability need their own evidence.
 
@@ -332,53 +332,53 @@ These questions can establish the intelligibility and conditional coherence of t
 | Anti-pattern | Failure | Repair |
 | --- | --- | --- |
 | Research must justify itself as next-quarter revenue | The portfolio loses independent epistemic purposes and invites an invented application promise. | State the scientific return and resource choice separately from a qualified product use. |
-| Every named branch gets its own full stack | Repeated methodology and infrastructure consume capacity without comparison. | Construct both shared provision and adequate separate provision at the specific contribution boundary. |
-| Everything common goes into an office | A unit name substitutes for available contributions and authority. | Specify what is supplied, to whom, under which conditions; compare office and distributed provision only for that result. |
+| Every named branch gets its own full stack | Repeated methodology and infrastructure consume capacity without comparison. | Compare feasible shared and separate provision for the contribution in question. Use an adequate existing comparison where available. |
+| Everything common goes into an office | A unit name substitutes for available contributions and authority. | Specify what is supplied, to whom, and under which conditions. Compare a dedicated office and distributed provision if that choice bears on the result. |
 | One person, three available role budgets | The plan manufactures capacity by relabelling its bearer. | Reconcile all assignments against that person's actual windows and protected commitments. |
 | A shared source eliminates adaptation | Subject models, practice, access and receiving acceptance remain unpaid work. | Trace the common result through each application and include its missing operations. |
 | Unknown long-run effect blocks any proposal | The inquiry demand costs more than it can change in the current choice. | Use current grounds for a bounded expert construction; obtain additional evidence only where its attainable answer matters. |
-| Arithmetic supplies authority | Hours fit, but performers, clients or access owners have not agreed. | Return the exact decision and keep dependent work unavailable until its condition holds. |
+| Arithmetic supplies authority | Hours fit, but performers, clients or access owners have not agreed. | Identify the required commitment, permission or evidence. Proceed with the dependent work when its conditions and authority are established. |
 | A successful cohort ends development | The provider can repeat one service but cannot address the next worthwhile class of problem. | Separate repetition, efficiency, expanded capability and development of the way development is done. |
 | The teaching case becomes the method boundary | One provider's nesting or resource split becomes a universal design. | Preserve the result/dependency/support construction and vary branches, authorities and means with their actual grounds. |
 
 ### STR.16:9 - Consequences
 
-The organization obtains a portfolio it can reason about and take into action through bounded decisions. Shared support becomes an explicit contribution with costs and receivers. Independent research and cultural work can remain visible without invented sales dependencies. A resource change can lead to a precise reconstruction rather than an indiscriminate cut.
+The proposed portfolio can support a bounded allocation or identify a combination that cannot fit. Shared support has an identifiable cost and recipients. Independent research and cultural work can keep their own grounds. If a resource changes, the affected work can be reconstructed while independent results retain their standing.
 
-The construction costs joint attention and qualified estimates. It can expose that a desired combination is currently unavailable. Sharing can create common failure and maintenance obligations; separate provision can create repetition and divergence.
+Some comparisons require joint work and estimates. A single practitioner can settle others from known demands and capacity. Sharing can create a common point of failure and maintenance obligations. Separate provision can lead to duplicated work and divergent versions.
 
-The result supports a start and subsequent reconsideration.
+A feasible proposal can support an authorized start and a later reconsideration of affected commitments.
 
 ### STR.16:10 - Architectural Rationale
 
-One programme can contain several ends without one end being an input to every other. The independent worth account protects that plurality; the receiving-operation test admits only actual dependencies. Joint resource comparison then reconnects branches that are materially independent but cannot be funded or staffed independently.
+One programme can contain independent purposes. Test a proposed result dependency by identifying what a receiving operation needs. Then combine each branch’s requirements on common resources. Branches can have independent results yet compete for the same funding or qualified time.
 
-The support alternatives are generated before selecting a unit structure because the same common contribution can be provided through a distributed assignment, a dedicated service, a partner or a capable AI arrangement. Conversely, an office can house several subject services whose methods and acceptance remain different. Organizational form follows the selected contribution and its continuing conditions.
+Define the support before choosing its organizational form. A shared contribution can be supplied by distributed performers, a service, a partner or a capable AI arrangement. Conversely, several distinct domain services with different acceptance criteria can occupy one office. Compare organizational forms under the continuing conditions of the selected work.
 
-The construction uses existing domain methods for their own results. Its added organization joins those results into a portfolio whose independent purposes, support placement, actual resource competition and authority can be changed together without conflation. It does not replace strategic selection, research design, costing or organization realization with a universal portfolio algorithm.
+The construction joins domain results into a common account of independent purposes, receiving applications, competition for resources and the decisions required. Research design, costing, capability development and realization still supply their respective results.
 
-C.11.CRC preserves whole finite consequences; C.11.DUA prevents an unresolved effectiveness claim from becoming an automatic demand for an ideal study. A bounded expert choice remains defeasible. Explicit grounds and a changed-condition construction make that choice inspectable without manufacturing precision or guaranteed success.
+C.11.CRC compares the consequences of whole finite changes. C.11.DUA helps judge whether further inquiry could improve the conclusion enough to justify its burden. State the grounds for a bounded expert judgement and identify which changed condition would warrant reconsideration.
 
 ### STR.16:11 - SoTA-Echoing
 
-**Current available Library answer.** STR.8:4.2a and STR.8:5.5 already teach result–action construction, necessity within a selected way, joint sufficiency, shared support and revision. STR.11 distinguishes alternatives, joint use and authorized commitments. STR.14 compares whole configurations under simultaneous demand. Adopt those contributions. C.40.PC, C.40.DC, C.40.JF supply meaningful prospective contributions, support configurations and bounded joint reachability; C.40.OP retains opportunities and stage-specific paths but expressly does not select a funded programme. Retain its boundary rather than relabelling retention as enactment.
+**Constructing the portfolio.** STR.8:4.2a and STR.8:5.5 relate results to actions and test necessity, joint sufficiency and shared support. STR.11 distinguishes alternatives, intended joint use and authorized commitments. STR.14 compares configurations under simultaneous demand. C.40.PC, C.40.DC and C.40.JF support the construction of prospective contributions and assessment of joint reachability. C.40.OP retains opportunities and stage-specific paths. A funded programme requires its own allocation decision.
 
-**Research and resource practice.** Adopt the independent epistemic return, attainable design comparison and truthful no-new-study outcomes described in RMP.1 and RMP.2; use RMP.8 for qualified return of a research result to its actual use. Adopt the distinction in MA.1–MA.3 among consumption, capacity, payment and assignment, with MA.8 for time-related product obligations. OCE.8 supplies same-result support arrangements; OCE.11 supplies coexistence with current service. Their boundaries prevent funding authority, scientific validity and delivery permission from collapsing into one approval.
+**Research and resources.** RMP.1 and RMP.2 distinguish independent research returns, attainable designs and grounds for stopping without a new study. RMP.8 helps qualify a research result for a particular use. MA.1–MA.3 distinguish consumption, capacity, payment and assigned cost, and MA.8 handles obligations across time. OCE.8 compares ways to provide the same result. OCE.11 examines coexistence with current service. Scientific validity, funding and permission to deliver have separate grounds.
 
-**External comparison and transfer limit.** [Tõnurist, Larrue and Jonason, OECD (2025), section 4, pages 20–27](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/03/proactive-portfolio-management-in-mission-oriented-innovation-policy_6bc6df0e/1ee956a5-en.pdf) distinguishes developing, managing and monitoring mission portfolios, addresses complementary activities, separate control and influence, and evolving criteria. Adapt those concerns to support placement and bounded authority here. Do not transfer the source's mission-alignment premise to a rule that independent science exists only to serve one commercial mission. Its practitioner-derived framework is not comparative evidence that this provider construction outperforms alternatives. This is an adaptation of an original work by the OECD. The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries.
+**External comparison and transfer limit.** [Tõnurist, Larrue and Jonason, OECD (2025), section 4, pages 20–27](https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/03/proactive-portfolio-management-in-mission-oriented-innovation-policy_6bc6df0e/1ee956a5-en.pdf) distinguish development, management and monitoring of mission portfolios, complementary activities, separate control and influence, and evolving criteria. Those distinctions inform the comparison of support and authority here. Independent science can have grounds beyond one commercial mission. The OECD framework supplies practitioner guidance. Assessing relative effectiveness in this setting would require comparative evidence. This is an adaptation of an original work by the OECD. The opinions expressed and arguments employed in this adaptation should not be reported as representing the official views of the OECD or of its Member countries.
 
-**Serious alternatives and actual difference.** An adequate portfolio constructed using STR.8, STR.11 and STR.14, with qualified research and operating inputs, should be retained. A list of those PatternIDs is insufficient when the user must still invent whether research is an end or an input, which support can be shared, how separate receiving work changes the joint account, and which choice changes when capacity falls. This pattern develops those connections for one recurring portfolio problem. A project-by-project ranking can suffice when there are no consequential common conditions; otherwise it can select an infeasible combination. A fully centralized support arrangement is useful when commonality and service capacity hold, while the changed case shows a condition under which separate provision wins.
+**Alternatives.** Retain an adequate portfolio already constructed from qualified strategy, research and operating results. When an important connection is missing, establish whether research is an independent purpose or a required input, which support can be shared, how each application affects total demand, and how a changed limit alters the comparison. Independent rankings can suffice if no common condition affects the choice. Shared support is feasible where its contents, authority and capacity fit the receivers. The changed example shows why branch-specific provision can instead be preferable.
 
-The worked cases explain a conditional construction and its revision. They do not establish field effectiveness. Reconsider the Method if a public treatment supplies the same whole use with less reconstruction, or practical use reveals a missing dependence, unsupported sharing rule or decision-reversing burden.
+The cases illustrate conditional construction and revision. Evidence of effectiveness in actual use would require observations beyond the constructed cases. Reconsider the method if an available treatment provides the needed whole result at less cost, or use uncovers a missing dependency, a problem with sharing or a burden that changes the choice.
 
 ### STR.16:12 - Relations
 
-- **STR.8, STR.11 and STR.14** supply contribution construction, bounded strategic commitments and reconciliation of simultaneous strategic work. Use their complete bodies in the [Strategy Principles Framework](_index.md).
+- **STR.8, STR.11 and STR.14** explain how to construct the required contributions, make bounded strategic commitments and reconcile simultaneous work. Their methods are in the [Strategy Principles Framework](_index.md).
 - **C.40.PC, C.40.DC, C.40.JF, C.40.OP** supply worthwhile problems, prospective configurations, joint qualification and retention in Core. A retained possibility is not the portfolio's allocation.
 - **RMP.1, RMP.2 and RMP.8** supply research entry, obtainable design or stop, and bounded evidence return in the [Research Method Practice Principles Framework (RMP)](../../rmp/_index.md).
-- **MA.1–MA.3 and MA.8** supply resource, capacity, shared-cost and time-related product accounts in the [Management Accounting Principles Framework (MA)](../ma/_index.md). The actual operating and financial choices use their direct owners.
+- **MA.1–MA.3 and MA.8** supply resource, capacity, shared-cost and time-related product accounts in the [Management Accounting Principles Framework (MA)](../ma/_index.md). Operating and financial decisions remain with their respective decision holders.
 - **OCE.8, OCE.9 and OCE.11** supply whole support-arrangement comparison, organization realization and coexistence in the [Organization-Change Engineering Principles Framework (OCE)](../oce/_index.md). OCE.16 locates a consequential dependency between separately managed organization changes; it is not a portfolio allocation method.
 - **C.11.CRC, C.11.DUA and C.39**, in [FPF](https://raw.githubusercontent.com/ailev/FPF/main/FPF-Spec.md), govern finite comparison, proportionate evidence demands and development of a missing obtaining way. C.32.MWA supplies a broader architecture account when several Method, work and support structures remain materially different.
-- **Human-capability, product, engineering, AI and operating practices** retain their actual mechanisms and evidence. This portfolio construction receives their qualified contributions; it cannot infer them from a coherent programme.
+- **Human-capability, product, engineering, AI and operating practices** supply their own methods and qualified evidence. Use the contributions the proposed portfolio depends on, and identify any result that is still missing.
 
 ### STR.16:End

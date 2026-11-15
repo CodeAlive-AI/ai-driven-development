@@ -2,18 +2,18 @@
 
 The **target practice** is what the receiving performers are trying to do. The **support strategy** is the proposed way of helping them establish, use or revise it. The **support arrangement** supplies the people, systems, time, tools, access and decisions needed for that strategy. A **support undertaking** is the bounded work and commitments through which that help is provided.
 
-These distinctions change action. A different explanation of a target method may repair its description without changing the method. Replacing a classroom session with rehearsal changes the support strategy. Repairing an unavailable reference changes the arrangement. Changing the target's decision criterion can change the method itself. A successful result does not settle which change made it possible.
+These distinctions change action. A different explanation of a target method may repair its description without changing the method. Replacing a classroom session with rehearsal changes the support strategy. Repairing an unavailable reference changes the arrangement. Changing the target's decision criterion can change the method itself. To attribute a successful result to one of these changes, establish its causal contribution.
 
-The receiving promise also matters:
+Establish which of the following results the recipient needs. An undertaking can require more than one.
 
 | Wanted result | What must actually be obtained |
 | --- | --- |
-| A useful result from the target practice | The result and conditions the receiver needs, including qualified external performance when that is the chosen way. |
+| A useful result from the target practice | The result and conditions the receiver needs, including the result of qualified external performance when that route is used. |
 | A person's independent or appropriately supported ability | That person's contribution in representative work under the promised support conditions, using the applicable human-development and assessment methods. |
 | A continuing organizational contribution | The combined work, effective relations, means and ordinary provision conditions that allow the organization to deliver it. |
 | Ability to arrange later implementation | The intended holder's performance of noticing a difficulty, obtaining suitable help, making permitted decisions and using the result, at the promised scope. |
-| Continuation among other carriers | Obtainable material and support, actual receiving uses and the particular cultural relations claimed; publication or a first successful handover is insufficient for a population-wide claim. |
+| Continuation among other carriers | Evidence of access, use and the particular cultural relation claimed, at the scale of the claim. A record of one material handover can establish who received the material. Evidence of receiving use supports a claim about the practice itself. |
 
-Selection, construction and adaptation of the target practice can remain open. For a particular attempt, recover the intended contribution, the operations actually to be performed, their conditions and the result that can change the next decision. Preserve the status of a proposed method account. A.3.1.MI explains the stronger Method, Work and evidence distinctions when the use relies on them.
+Selection, construction and adaptation of the target practice can remain open. For a particular attempt, recover the intended contribution, the intended operations, their conditions and the result the receiving work needs. To report a completed attempt, establish which operations took place. Preserve the status of a proposed method account. A.3.1.MI explains the stronger Method, Work and evidence distinctions when the use relies on them.
 
-If there is no useful target question yet, open inquiry rather than invent an implementation plan. B.5.PI and C.40.CD help form and revise questions; C.40.OD helps construct and compare development opportunities; C.39 and the relevant subject practice develop the obtaining way. Return to implementation support when its help can make a consequential difference. Continued development is wider than successful implementation and can open another worthwhile problem after this undertaking ends.
+If the target question remains open, develop it before committing to an implementation plan. B.5.PI and C.40.CD help form and revise questions. C.40.OD helps construct and compare development opportunities. Use C.39 and the subject practice to develop a way to obtain the wanted result. Seek implementation support where its contribution would help. Implementation can also finish with a new problem worth pursuing.

@@ -4,11 +4,11 @@
 
 > **Type:** DPF pattern body
 >
-> **Primary working result:** a **local practice-change result account** for one already-selected Music-or-Dance change. The account identifies the decision used, performed Work, changed subject or failed attempt, direct result, bounded trial observations and limits, and any later-evidence question still needed by the receiving use.
+> **Primary working result:** an account of one selected local change in music or dance. Establish what was chosen, what work was attempted, what changed or remained as it was, and what any trial established, as far as the question and evidence allow. Identify wider questions when they matter to the use of the result.
 
 ### MDPE.15:0 - Use This When
 
-Use this pattern when a Music-or-Dance project has already selected one feasible local change and now needs to make and test it without turning a proposal into an accomplishment or one trial into a cultural claim. Examples of such changes include:
+Use this method to carry out and assess a selected local change or to establish what was authorized, attempted or achieved in an earlier case. Identify the particular subject of the change. Examples include
 
 - musical or movement material;
 - one performance, teaching, rehearsal, improvisation, composition, choreography, arrangement, or control Method;
@@ -17,103 +17,103 @@ Use this pattern when a Music-or-Dance project has already selected one feasible
 - a performing-whole, event, class, curation, recognition, or selection arrangement; or
 - a bounded repertoire or practice variant retained for later transmission or comparison.
 
-Start only when one change has been chosen through `C.11`, `MDPE.6`, `MDPE.7`, a bounded change decision from `MDPE.13` or `MDPE.14`, or an applicable direct Music, Dance, teaching, production, event, or engineering decision Method. A capable Agent must perform representative Work that enacts the direct Method used to make and test the selected change.
+To carry out a change, use a choice already made through `C.11`, `MDPE.6`, `MDPE.7`, `MDPE.13`, `MDPE.14` or an applicable music, dance, teaching, production, event or engineering method. Whoever performs it needs the means and ability to use the relevant domain method. For earlier work, identify the decision and conditions at the time to the extent they bear on the claim.
 
-Begin with an ordinary statement of the action:
+For a proposed action, identify its subject and the work to be done.
 
-> We will change **[the specified score, cue, configuration or arrangement]** through **[the direct operation]**, performed by **[the capable practitioner or group]** in **[the bounded work situation]**. We will preserve **[the characteristics that matter]** and observe **[the receiving-use question]** to support **[the next decision]**.
+> [Performer] will change [score, cue, configuration or arrangement] by [operation] under [conditions]. The change should preserve [important characteristics]. To assess [intended use], examine [relevant result].
 
-This statement starts the explanation; it is not a WorkPlan or evidence that the work occurred. Recover the selected decision, actual authority, permission, consent and resources through §4.1. Use its precise assignment and attribution distinctions when those relations change the claim. A missing condition blocks the work that needs it, rather than turning every ordinary action into a new appointment procedure.
+Use §4.1 for the decision, authority, permission, consent and resources on which the work depends. Identify a formal assignment when it bears on authorization or precise attribution of the work. A missing condition prevents the particular action that needs it. To report earlier work, establish what occurred from evidence of that work.
 
 
-The practical gain is a usable account of performed change Work and an observed changed subject, partial change, or failed attempt, contrasted with a proposal or plan. A later practitioner can tell what was chosen, who acted, what Work occurred, what subject changed, what direct result appeared, what was merely observed, and which claim still needs later evidence.
+A useful account tells a later practitioner what the evidence establishes about the choice, action, change or trial, and where that evidence ends. It can also establish that a change was partial or the attempt failed.
 
-Use the direct domain Method without this pattern when it already returns that complete result for the present decision. Do not use this pattern when:
+Use the direct domain method or its existing result when it answers the question. Other tasks have the following entry points.
 
-- the change still has to be chosen—use `C.11`, `MDPE.6`, `MDPE.7`, or the direct decision Method;
-- a practice conflict still needs comparison or a decision—use `MDPE.14`; return here only when it selects one feasible local change and representative trial, or a named DecisionSubject makes another bounded ChoiceResult that selects the change;
-- the present task is only planning or tool-call sequencing—use the applicable planning Method, `A.15.2`, or `C.24`;
-- the task is only to develop performer capability—use `MDPE.10` or Human Capability Development;
-- the task is to obtain receiving enactment by another Agent—use `MDPE.17`;
-- the task is to establish recognition, selection, retention, spread, or loss in a population—use `C.36` and the applicable later MDPE pattern; or
-- no Work can be performed and the current result can only be a possible-future description.
+- For a choice still to be made, use `C.11`, `MDPE.6`, `MDPE.7` or the direct decision method.
+- For a conflict between practice aims, use `MDPE.14`. Use this method when a feasible change has been selected and its implementation or examination is wanted.
+- For planning or arranging calls to tools, use the applicable planning method, `A.15.2` or `C.24`.
+- Use `MDPE.10` for performing capability and Human Capability Development when the skill belongs to a person.
+- Use `MDPE.17` to investigate or design how another performer takes up a method.
+- Use `C.36` and the relevant MDPE method for recognition, selection, retention, spread or loss in a population.
+- If work has yet to start, report the selected change or proposal and what is known about its feasibility. For a past change, surviving evidence may already answer the question.
 
-#### MDPE.15:0.1 - Precision Restoration
+#### MDPE.15:0.1 - What counts as a local change
 
-Restore these distinctions before relying on change language.
+Use the distinctions that affect the claim about the change.
 
-| Word or phrase | Recover before relying on it |
+| Term | What to establish |
 | --- | --- |
-| *selected change* | The `ChoiceResult` or direct decision, its `DecisionSubject`, selected option, basis, scope, authority boundary, and conditions. A preferred idea or proposal is not a selected change. |
-| *practice-developing Agent* | An admitted Agent that performs the attributed development Work. If role wording is ambiguous, `E.10.ROLE` recovers the intended claim. `A.2.1` governs an obtaining occurrence of a declared assignment species; `F.6` governs attribution when dated Work is performed under that assignment. Assignment does not establish agency, capability, authority, permission, consent, resources, or successful Work. |
-| *authority* and *permission* | Separate obtaining relations. Decision authority supports the bounded choice under its applicable direct governor. `A.2.8.PER` governs permission and non-prohibition for the relevant action. Skill, authorship, ownership, contribution, fame, a role label, or audience response establishes neither. |
-| *practice subject* | The particular Method, material, description, capability holder, tool, performing configuration, teaching arrangement, event arrangement, recognition arrangement, repertoire element, or other subject intended to change. *Practice* is not one universal object. |
-| *change Work* | One dated `U.Work` occurrence performed by a capable Agent and enacting an applicable change Method, with its extent, inputs, conditions, and supporting Systems recoverable. A WorkPlan or record is not the Work. |
-| *trial or evaluation Work* | Actual Work obtaining observations about the changed subject or its use. The same occurrence may enact both change and observation Methods; a separately identified trial may instead be a constituent of encompassing change Work or an independent occurrence. Identify the performed relation rather than inferring occurrence count from Method names. |
-| *actual change* | A supported `U.Transformation` or other governed world-side change between identified starting and later conditions. A changed description, declaration, or dashboard does not by itself establish it. |
-| *direct result* | The immediate result attributable under the change Method and evidence—for example, an edited arrangement, changed cue relation, installed tool setting, or revised class arrangement. |
-| *observation* | Evidence obtained by named observation, rehearsal, listening, movement-analysis, sensing, inquiry, or comparison Work. An observation is not automatically an effect or value judgement. |
-| *effect* | A supported consequence relation from the intervention or changed subject to another changed characteristic or System under stated conditions. Temporal succession alone is insufficient. |
-| *local practice change* | A bounded change within one project, class, event, ensemble, pair, tool, school, organization, or other named scope. It establishes no population-wide cultural relation by itself. |
+| *selected change* | Which option was chosen and what the evidence establishes about the decision maker, grounds, authority and conditions. When the distinction matters, identify the deciding `DecisionSubject` and its `ChoiceResult`. A recommendation can precede that decision. |
+| *practice-developing Agent* | Who did the development work and what supports that attribution. Use `E.10.ROLE` for ambiguous role wording, `A.2.1` to establish the actual assignment of a specified kind, and `F.6` for precise attribution of dated work under it. Establish the performer’s agency, ability, authority, consent and resources separately wherever an assertion relies on them. |
+| *authority* and *permission* | Identify who could decide the matter and what permitted the relevant action. `A.2.8.PER` addresses permission and non-prohibition for that action. Skill, authorship, ownership, a role title and audience support can matter in a case. Connect any claimed right to its applicable basis. |
+| *practice subject* | Identify the method, material, description, capability and its holder, tool, performing configuration, activity, event rule or repertoire item whose change is at issue. |
+| *change Work* | A dated occurrence of work by a capable performer using the domain method. Identify its extent, inputs, conditions and equipment as the claim requires. A plan specifies intended work. A record may give evidence of its occurrence. |
+| *trial or evaluation Work* | Work that supplies observations about the changed subject or its use. A single occurrence can serve both change and evaluation. A trial with its own extent can be a constituent of the change or separate work. Establish the relation from the actions performed. |
+| *actual change* | Compare the starting and later states of the identified subject. Use `U.Transformation` or the direct domain account for the change claimed. An edited description can itself be the changed subject. |
+| *direct result* | Identify what the change work produced, such as a revised arrangement, changed cue, installed setting or usable class arrangement, and what connects it to that work. |
+| *observation* | What an observer, participant or instrument found under the reported conditions of rehearsal, listening, sensing or comparison. An affected participant can report their experience. |
+| *effect* | The consequence attributable to the intervention or the changed subject under the stated conditions. Temporal order can be known while the cause remains open. |
+| *local practice change* | A change in a particular project, class, event, ensemble, pair, tool, school, organization or other bounded setting. A claim about a wider population requires evidence at that scale. |
 
 A MethodDescription can be edited while the Method remains unchanged, or a Method can change while no adequate description exists. A performer can gain capability while the teaching Method stays unchanged. An artifact can change while the practice that uses it does not. Name the subject whose identity and characteristics carry the claim.
 
 ### MDPE.15:1 - Problem Frame
 
-Music and Dance projects often make change look easier than it is. A score is edited, a phrase is renamed, a robot gains a technical ability, a class receives a new exercise, or a competition publishes a new rule. The visible artifact then stands in for a changed Method, changed performance, improved capability, or changed culture.
+A project edits a score, renames a phrase, installs new robot controls, introduces a class exercise or publishes a competition rule. Which part of the practice changed? A new score can establish a revision to the material. To claim a different performance, skill or cultural practice, examine evidence of the corresponding work.
 
-The opposite error is equally common: useful local Work is dismissed because it did not transform a whole scene. A bounded local change can be valuable without proving transmission or retention. The needed result is an account of one selected change, the Work that attempted it, the actual subject and direct result, the bounded trial evidence, and what remains open.
+A local change can also matter without spreading across a scene. Establish which part of the choice, attempt or direct result the available evidence supports. Use existing trial evidence for a claim it covers and identify the limit when it does not answer the question.
 
 ### MDPE.15:2 - Problem
 
-Five substitutions make local practice development unreliable.
+A project can make any of the following mistakes when reporting a change.
 
-1. **Choice-for-change substitution.** A decision or proposal is reported as though the subject already changed.
-2. **Plan-for-Work substitution.** A schedule, checklist, prompt, score annotation, or call plan is reported as performed Work.
-3. **Artifact-for-practice substitution.** A new description, recording, model, or tool version is reported as a changed Method, capability, performance, or practice.
-4. **Observation-for-effect substitution.** A liked rehearsal, higher technical reading, or later event is attributed to the change without the needed relation and comparison.
-5. **Local-for-cultural substitution.** One project intervention is reported as transmission, recognition, selection, retention, spread, or attractor movement in a practitioner population.
+1. Reporting a decision or proposal as a change in the subject.
+2. Treating a schedule, prompt or set of instructions as sufficient proof that someone performed the planned work.
+3. Taking a new description, recording, model or tool version as proof of a new method, skill or performance.
+4. Attributing a favorable rehearsal, higher reading or later event to the change before establishing its contribution.
+5. Extending one project intervention to claims about transmission, recognition, selection, retention, spread or cultural development across a population.
 
-These substitutions make failed attempts disappear, hide moved burdens, and prevent later practitioners from knowing what can be reused.
+These mistakes can hide a failed attempt, conceal who bore an extra burden and obscure what a later practitioner can reuse.
 
 ### MDPE.15:3 - Forces
 
-| Force | Tension to preserve |
+| Practical question | What matters |
 | --- | --- |
-| **Action vs truthful entry** | The project needs to act; the selected change, authority, subject, Method, and conditions must still obtain at execution time. |
-| **Small trial vs representative use** | A bounded trial keeps cost and risk manageable; an over-sheltered trial may say little about intended performance Work. |
+| **Starting the change** | Which choice selected the change? At execution time, do the authority, permission, performer, subject and other required conditions cover the work? For a past change, use the conditions at the time. |
+| **Testing the change** | A small trial can limit burden and risk. Check what it can establish about the intended performance. |
 | **Direct result vs wider effect** | Immediate results can often be observed; performer, audience, event, and cultural effects need separate relations and evidence. |
-| **Change vs continuity** | A useful variant must change enough to answer the question while preserving identity, safety, consent, source return, and alternatives that the decision protects. |
-| **Work integration vs ontic separation** | Change and trial can be coordinated in one project, but choice, authority, WorkPlan, Work, transformation, result, evidence, and effect remain different things. |
-| **Local agency vs distributed culture** | A practice-developing Agent can alter a local arrangement; receiving practitioners and cultural selection are not under that Agent's control. |
-| **Success visibility vs failed-attempt learning** | A changed artifact is easy to show; a failed or partial transformation can contain the more decision-relevant result. |
+| **Changing and preserving** | Identify the changes sought and the identity, safety, consent, source access or alternatives the decision protects. |
+| **Counting work** | Selection, planning, performance, transformation and evaluation can appear in one project. Identify which actually occurred, which results they produced and whether the same work served two purposes. |
+| **Local and wider use** | A local organizer can change its arrangement. Claims about other practitioners or a larger culture depend on their actions and circumstances. |
+| **A partial attempt** | Report what the evidence establishes about a failed or incomplete attempt. It may be the result a later practitioner needs. |
 
 ### MDPE.15:4 - Solution
 
-A capable Agent performs Work that enacts the applicable direct Method to make the selected local change. Observation Work obtains a bounded trial result. Use this pattern to prepare an account that distinguishes the objects and relations involved.
+To make a selected change, the performer uses the appropriate music, dance, teaching, event or engineering method. To examine a change, establish the result and observations relevant to the question. An earlier account or trial can supply them.
 
-The load-bearing relations differ. The decision selecting the change must still apply; its authority and permission relations must obtain; and the needed capability, resources, and safety conditions must be present when change Work begins. That Work can produce a changed subject, a new variant, a partial change, or a failed attempt. Reidentification compares the starting and later subject. The same Work can enact change and observation Methods, or a separately identifiable trial can contribute to, overlap or follow another Work occurrence. An effect claim additionally needs a suitable comparison or causal Method; a result account relies only on the observations and relations actually obtained. Later cultural continuation remains a different question.
+For implementation, confirm that the choice covers this subject and the necessary authority, permission, capability, resources and safety conditions hold at the time. For a historical question, establish the conditions relevant to that occurrence. To establish a change or its extent, compare the subject’s starting and later states. A record may establish that an attempt stopped even when its effect on the subject remains unknown. One performance can both change a cue and test it. A trial may also form part of a larger attempt, overlap it or follow it. To attribute an effect, establish the relevant causal relation. Use evidence at the scale of any later cultural claim.
 
-Explain the alternatives and conditions that matter to the local change. Use `A.22.CGUS` when their unfolding structure or its qualification needs to be recovered, keeping a sufficient ordinary continuation answer. A causal graph used through `C.29` represents causal claims or hypotheses; `C.28` governs the evidence needed for their intended use. An acausal constraint model can preserve relations without choosing a calculation or action direction.
+Describe the alternatives that matter and what would make each feasible. Use `A.22.CGUS` when their branching, joining or order needs explanation. A `C.29` causal graph expresses hypotheses or claims whose evidence is assessed under `C.28`. An acausal constraint model can express dependencies without choosing a direction of calculation or action.
 
-#### MDPE.15:4.1 - Admit one selected and still-feasible change
+#### MDPE.15:4.1 - Establish which change was selected
 
-Identify:
+For the work or claim in question, establish
 
-- the decision source, selected option, `DecisionSubject`, and applicable direct authority relation;
-- the practice-developing Agent that can perform the change Work, the declared `A.2.1` assignment species and
-  obtaining occurrence when assignment changes the decision, and `F.6` when precise assignment-bound attribution of the performed Work is needed;
-- permission, consent, safety, access, and resource conditions for the Work;
-- the changed practice subject and its starting configuration;
-- the intended direct result and present use;
+- which option was selected and the available evidence about who decided and with what authority, including a formal `DecisionSubject` where relevant,
+- who performed or will perform the change and with what capability. If a formal assignment affects attribution, use `A.2.1` to identify its kind and actual occurrence,
+  and `F.6` when the work is attributed precisely under it,
+- the permission, consent, resources, safe conditions and access applicable at the time of the work,
+- the intended subject and its starting configuration,
+- the direct result sought and what it would serve,
 - the direct change Method; and
-- the observation needed for the next decision, with conditions and burden appropriate to that use.
+- the evidence the question needs and the burden of obtaining any further observation.
 
-Recheck these values immediately before Work. A choice, authority relation, permission, consent, capability claim, or resource commitment established for one subject and configuration does not extend automatically to different participants, a new venue, another robot edition, or a wider cultural intervention. If the selected change no longer satisfies these conditions, return to the `DecisionSubject` instead of silently revising the option during implementation.
+Before carrying out a change, establish that the applicable choice and its material conditions still hold. Use an agreement or demonstrated capability that already covers these participants, venue, equipment and work. If changed conditions invalidate the choice, return it to whoever can revise it. An established limit can finish a feasibility inquiry. For an earlier attempt, identify the conditions then in force and the work that actually depended on them.
 
-#### MDPE.15:4.2 - State what will and will not change
+#### MDPE.15:4.2 - Identify the subject and the characteristics to preserve
 
-Describe the target through its own kind and identity conditions. Useful subjects include:
+Describe the intended subject and the features that identify it. For example, it might be
 
 - a named musical or movement-material entity;
 - one Method or Method part whose identity continues through the change;
@@ -124,33 +124,33 @@ Describe the target through its own kind and identity conditions. Useful subject
 - one teaching, rehearsal, performance, event, curation, recognition, or selection arrangement; or
 - one locally maintained repertoire member or branch.
 
-State protected characteristics and boundaries. For a Dance change these may include weight transfer, partner-readable pressure, effort, balance, floorcraft, consent, rhythmic interpretation, style-bearing distinctions, and bodily variability. For a Music change they may include pitch, rhythm, pulse, timbre, articulation, breath, gesture, ensemble cueing, latency, performer control, and musical plausibility. Select only those that can change the present decision.
+Identify what this change must preserve. Dance changes may affect weight transfer, partner-readable pressure, effort, balance, floorcraft, consent, rhythm, style and bodily variation. Music changes may affect pitch, rhythm, pulse, timbre, articulation, breath, gesture, ensemble cues, latency, performer control and musical plausibility. Examine the characteristics relevant to this subject and use.
 
-#### MDPE.15:4.3 - Prepare only the plan the Work needs
+#### MDPE.15:4.3 - Plan the work that is needed
 
-Use `A.15.2` when a `U.WorkPlan` is needed. Make the following clear:
+For a proposed change, plan at the detail the work needs. Use `A.15.2` if a `U.WorkPlan` is required. Identify
 
-- the performing Agents, any decision-bearing `A.2.1` assignments, and supporting participants;
+- who will perform or support the work and which `A.2.1` assignments matter to the decision,
 - the selected change and direct Method;
 - required material, tools, venue, bodies, instruments, software, or data;
 - safety, consent, access, stop, and rollback conditions;
 - the relation between change Work and any trial or evaluation Work;
 - the observations and evidence to retain; and
-- the next decision that may use the result.
+- any later decision that depends on the result.
 
-Use `C.24` only when tool or call planning is current.
+Use `C.24` when the work needs a plan for tools or their calls.
 
-#### MDPE.15:4.4 - Perform the change Work under the direct Method
+#### MDPE.15:4.4 - Carry out the change or identify the earlier work
 
-Identify the dated `U.Work` occurrence, performing Agent, enacted Method, inputs, conditions, and direct outputs. The Agent performs Work that enacts the applicable domain Method—for example, composition, arrangement, choreography, translation, teaching, rehearsal, somatic practice, instrument setup, control, software development, event production, curation, or recognition-arrangement design—to attempt the selected change.
+Use the applicable domain method to make the change, or establish how the earlier attempt was made. For an account of dated `U.Work`, identify who acted, under what conditions, by which method and with what result. Composition, translation, rehearsal, instrument setup and event production can each be the relevant work.
 
-If current facts change a live execution branch, `A.15.7` can help choose one bounded next action under the already-admitted Method. It does not replace the prior change decision.
+If a change in current conditions calls for a choice within the method already in use, `A.15.7` can help select the next action. A different change outside the earlier authorization requires its own decision.
 
-When the Work stops or only partly succeeds, preserve that result. Name the stopped condition, actual output, unchanged or partly changed subject, recoverable state, and next safe action.
+If work stopped or only partly succeeded, identify what the evidence establishes about why it stopped, what was produced and which parts changed or remained unchanged. For a continuing project, identify the recoverable state and a safe next action where one is available.
 
 #### MDPE.15:4.5 - Reidentify the subject after Work
 
-Compare the starting and later conditions under `A.3.4` or the direct governor of the change. Ask:
+Compare the subject before and after the work, using `A.3.4` or the applicable domain criteria for change. Ask the questions that matter.
 
 1. Did the intended subject actually change?
 2. Does its identity continue, or did Work produce a new variant or artifact?
@@ -158,33 +158,33 @@ Compare the starting and later conditions under `A.3.4` or the direct governor o
 4. Which characteristics changed, stayed within bounds, or became unknown?
 5. Did another subject change instead—for example, only the description, tool setting, performer capability, or event arrangement?
 
-Report the subject that actually changed. If the class plan changed but teaching Work did not, report the plan change. If the dancer enacted a phrase once but capability transfer was not tested, report the occurrence and observation. If software changed but the robot did not perform under the intended conditions, report the software result and missing trial.
+Report the change the evidence supports. If the plan changed, identify the revision and what is known about its use in teaching. A single performance can establish the dancer's action in that phrase. Identify what is known about transfer. A software revision may be established while performance of the configured robot under the intended conditions remains unverified.
 
-#### MDPE.15:4.6 - Obtain a bounded trial and identify how it is performed
+#### MDPE.15:4.6 - Examine or design a representative trial
 
-Choose trial conditions representative enough for the decision and safe enough for the current change. Identify:
+When the claim calls for performance evidence, use evidence suited to it, including a representative earlier trial or an observation of ordinary practice. If a new trial is warranted, choose feasible, safe conditions. Identify
 
-- the tested subject and configuration;
-- the performer and observer Systems;
+- the subject and configuration tested or proposed for testing;
+- the intended performer and observer for a planned trial, or who or what performed and observed the work in a completed trial,
 - the trial or evaluation Method;
-- obtaining relation to the changed subject;
+- how the trial used or would use the identified changed subject,
 - relevant environment, audience, partner, instrument, venue, tempo, media, or platform conditions;
-- observations, uncertainty, and missing witnesses; and
+- the observations obtained or needed, uncertainty and any missing evidence that matters to the claim, and
 - protected characteristics and stop conditions.
 
-Choose the occurrence account that fits the actual work through `A.15.1` and `B.1.5.EW`:
+Use the performed work to determine which account fits. `A.15.1` and `B.1.5.EW` explain occurrence and part–whole relations.
 
-- One independently identified Work can enact both the change Method and the observation Method. Several useful descriptions do not create several occurrences.
-- A separately identifiable trial can be a constituent of encompassing change Work when its performed contribution helps constitute that attempt.
-- A trial can instead overlap, follow or supply evidence to another Work without being its constituent. Editing a score today and rehearsing it tomorrow are separate occurrences.
+- One occurrence can serve both change and observation. Count that occurrence once. Account for each participant’s time and other resources used.
+- A separately identifiable trial may be part of a larger change attempt if its work contributes to that attempt.
+- Other work may overlap or follow the attempt, or supply evidence about it. Editing an arrangement today and rehearsing it tomorrow are separate occurrences.
 
-In a constructed forty-second partnered practice, Sera and Dima jointly adjust the size of Sera's agreed torso cue while using Dima's response to judge whether it is readable. They keep the selected phrase, music, comfortable contact and stop signal. This one pair-practice occurrence enacts the cue-adjustment Method and the response-observation Method: Sera reduces an excessive cue, Dima responds within the intended phrase, and both report comfortable continuation. The changed cue and the observations are different results of the same work. There are forty seconds of elapsed pair practice, not two forty-second sessions to charge because two Methods are explained. This establishes that occurrence and its bounded results, not durable capability or an independently controlled causal effect.
+Sera and Dima spend forty seconds adjusting the size of Sera's torso cue in a constructed partner exercise. They keep the agreed phrase, music, comfortable contact and stop signal. Sera reduces the cue, Dima responds within the phrase and both report comfortable continuation. The pair adjust the cue and use the response to judge its readability in the same forty elapsed seconds. Together the two dancers contribute eighty person-seconds. The changed cue and the observations are distinct results. A claim about durable skill or the independent effect of the adjustment would require other evidence.
 
-Identify a suboccurrence separately when its extent, performer, result, resource use or correction needs to be distinguished. State temporal and part–whole relations separately; overlap, succession, a different role or a second Method name settles neither by itself.
+Identify a constituent or separate occurrence when its extent, performer, result, resource use or correction matters. Determine which actions overlapped or followed others and which were parts of a larger performance. Two simultaneous actions can be independent.
 
 #### MDPE.15:4.7 - Separate direct result, observation, and effect
 
-State the result at the scope and strength supported by the available relations and needed for the receiving decision.
+State what the evidence establishes about the change at the scope the question requires.
 
 | Available relation | Supported statement |
 | --- | --- |
@@ -192,49 +192,49 @@ State the result at the scope and strength supported by the available relations 
 | Starting and later conditions support a transformation | State the actual changed subject and transformation relation. |
 | Trial Work produced observations | State the observations, witnesses, conditions, uncertainty, and limits. |
 | A suitable comparison or causal Method supports a consequence | State the bounded effect and the relation that supports it. |
-| Only temporal order or participant judgement is available | State succession or judgement; do not upgrade it to effect. |
-| No representative trial occurred | State the direct result and the missing trial; do not infer intended-use fitness. |
+| The record shows succession or a participant's judgement | Report the order or the attributed judgement. For a causal conclusion, establish what connects the change to the result. |
+| A representative trial is absent or unverified | Report the direct result that can be established. Distinguish a known lack of testing from an incomplete record, and identify the limit on any claim about use. |
 
-Use practitioner judgement as evidence when the practitioner, question, basis, conditions, uncertainty, and update condition are visible. Do not replace direct use evidence with press attention, university publication, standard conformance, platform reach, or a technical score.
+Use a practitioner's judgement for the question it covers, with the basis, conditions and uncertainty that affect reliance on it. Press coverage can establish that a report appeared, a standard that a particular test is specified within its scope and a technical reading a measured value. Claims about actual performance or participant experience need evidence of that subject.
 
-#### MDPE.15:4.8 - Return the local practice-change result account
+#### MDPE.15:4.8 - Report what changed and what the evidence shows
 
-Return a readable account containing:
+Include the entries the reader needs to understand the claim. A partially documented attempt can end with a precise limit.
 
 ```text
-Local Music-or-Dance practice-change result account:
-  selected change and decision source:
-  DecisionSubject, practice-developing Agent, authority, and permission:
-  changed practice subject and starting configuration:
+Account of a local music or dance change
+  intended change and basis of the decision, when known:
+  who decided and who performed the work, where known, and applicable authority and permission:
+  subject and starting state:
   direct change Method:
-  performed change Work:
+  what work was actually carried out, when and by whom:
   changed subject, new variant, or failed attempt:
   direct result:
-  observation Method and its enactment in the same Work, a constituent trial or independent Work:
-  bounded observations, affected Systems, and limits:
+  observation method, if used, and its relation to the change work:
+  observations, who or what was affected, and limits:
   supported effect, if any:
   protected characteristics, losses, and residual conflict:
-  retained alternatives and rollback or source return:
+  retained alternatives, source access or rollback if applicable:
   later-evidence question, when the receiving use still needs it:
-  next decision and reopen condition:
+  any decision still needed or condition warranting reconsideration:
 ```
 
-Use any readable form that preserves these distinctions.
+A paragraph, an annotated score or another readable form can carry the answer.
 
-If the change cannot lawfully proceed, return an unavailable-change statement naming:
+If a proposed change cannot proceed, identify the following as far as the evidence permits.
 
 - the missing choice, authority, permission, capability, Method, resource, evidence, configuration, or relation;
-- the change Work or development decision it prevents;
+- which change or decision depends on it,
 - any safe partial result already obtained; and
-- an observable retry condition.
+- a condition for another attempt, if one is wanted and possible.
 
 #### MDPE.15:4.9 - Return any needed later cultural question
 
-One local change can supply a Method or repertoire input to `MDPE.17`, an observation to `MDPE.12`, a revision to `MDPE.14`, or evidence to `MDPE.7`. It does not establish that another practitioner can perform representative Work that enacts the Method, that a population recognizes or selects the variant, or that the variant is retained. State any later question that the receiving use still needs.
+A local change can supply a method or repertoire example for `MDPE.17`, an observation for `MDPE.12`, evidence of a conflict or a reason to revisit a response under `MDPE.14` or grounds for a choice in `MDPE.7`. Investigating another practitioner's performance, selection across a population or later retention requires evidence for that question. Use the local change directly when it already answers the request.
 
 #### MDPE.15:4.10 - What Changes in Practice
 
-Before this pattern, a project can show a new score, phrase, class, rule, tool, or technical result and say the practice improved. After it, the project can identify the decision, actual Work, changed subject or failed attempt, direct result, bounded trial evidence, moved burden, and any needed cultural claim that remains open. Failed and partial changes become reusable evidence instead of disappearing from the development story.
+A practitioner can now distinguish the revision to a score or rule, the work that put it into effect, a partial or failed change, and what a representative trial established. Identify any burden shifted to others and the evidence supporting a wider claim when that claim is needed. A failed attempt can be the historical result or the reason for a new decision.
 
 ### MDPE.15:5 - Worked Cases and Boundaries
 
@@ -242,128 +242,128 @@ Before this pattern, a project can show a new score, phrase, class, rule, tool, 
 
 The revised arrangement must exist before that edition can be rehearsed.
 
-`MDPE.6` contains a source-grounded constructed replay in which an automated monophonic arrangement preserves rhythm, durations, rests, bar lines, playable ranges, and rhythmic entries, while a rehearsal exposes a masked antiphonal relation. The lawful choice is *revise before use*: adjust dynamics and one voice allocation.
+In the constructed music case in `MDPE.6`, an automatic monophonic arrangement preserves rhythm, note and rest durations, bar lines, playable ranges and rhythmic entries. A rehearsal reveals a masked antiphonal response. The responsible practitioner chooses to revise the dynamics and one voice allocation before use.
 
-`MDPE.15` starts after that choice. The capable arranger or production team performs the selected revision. Identify a development-role assignment when the Work is attributed under it. A named `ChoiceResult` made by a named `DecisionSubject` under a separate authority relation selects the revision; permission and consent for the Work are checked separately. Arrangement Work under the applicable Music Method edits the identified score and produces a new arrangement artifact or version. In a later rehearsal, the intended singer and instrumentalists perform the rehearsal Work. A named observer, such as the arranger or rehearsal leader, performs observation Work and records antiphonal clarity, balance, breath, cueing, articulation, and playability under stated room and performer conditions.
+The authorized arranger or production team edits the identified score under the applicable permission and consent. The decision to revise, its holder and the person or service making the edit can be identified separately. Record a formal assignment if it governs attribution. In a later rehearsal the intended singer and instrumentalists try the revision. The arranger or rehearsal leader can observe balance, cueing and the audibility of the reply. Use the singer’s or instrumentalists’ experience where the question concerns breath or playability in that room with those performers.
 
-The result account can state that the arrangement artifact changed and that the bounded rehearsal supported or failed the antiphonal criterion. It cannot state that the ensemble acquired durable capability, that a concert succeeded, or that a musical practice spread. If the rehearsal never occurs, the correct result is the edited artifact plus the missing representative trial.
+Report the edited arrangement and what any rehearsal established about antiphonal clarity, including an unresolved result. If the rehearsal never took place, the artifact revision can still be established. Concert success, durable ensemble skill and wider adoption need evidence from those uses.
 
 #### MDPE.15:5.2 - Dance translation: preserve source and receiving branches
 
-The `MDPE.6` Dance replay uses Stopgap's direct inclusive-choreography contribution to frame a selected *branch* response for a phrase under changed physicality. The change concerns the identified receiving phrase or its description, related to a source phrase and intended pair.
+The constructed dance case in `MDPE.6` draws on Stopgap's inclusive choreography to develop a receiving version for dancers with different physical means. The source phrase and the receiving phrase or its description are separately identified for the pair.
 
-Choreography or translation Work performed by a capable Agent under the stated authority, permission, consent, and source-use conditions produces a receiving branch while retaining source return. During the pair trial, the dancers perform representative Dance Work while a named observer performs observation Work and records effort, elevation, contact geometry, timing, partner-readable cueing, and intended expressive use. The result can support the changed phrase branch and its bounded use. It does not erase the source, make both phrases one identity, establish another dancer's capability, or prove scene-level recognition.
+With the needed authority, permission and consent, the choreographer or dancers can make the receiving version. Retain an authorized route back to the source. In a pair trial, observe the relevant elevation, contact geometry, timing and cue response. Use the dancers’ accounts or other suitable evidence for effort, felt contact and expressive intention. Report what the branch preserves or changes and what the pair did. Other performers' ability and recognition in a scene require their own grounds.
 
-If the selected branch lacks permission to alter the identified source material, create the receiving variant, or change the named source-to-receiving relation, return unavailable change even when the branch is technically performable. If the branch also calls for making a selected source or lineage-account episteme edition available, name the edition, audience and bounded use; check separately whether the publication activity is permitted. Perform that activity under its applicable direct Method. For a claimed dated Work occurrence, establish the performer's `A.13` core and independently admit the Work through `A.15.1`; add `F.6` when precise assignment-bound attribution is needed. Apply `E.24.PUB` only to the distinct availability occurrence. Missing permission blocks the publication activity and the claimed availability, not an otherwise permitted alteration.
+Use existing permission where it covers changing the source, making the receiving version or changing their relationship. A missing permission prevents the action for which that permission is required even if the dancers could perform it. Publishing a particular source or lineage account for a named audience and use has its own permission and publication work. Apply `E.24.PUB` to making that edition available. For a claimed dated work occurrence, establish the performer's `A.13` agency and independently admit the work under `A.15.1`. Add `F.6` for attribution under a particular assignment. A limitation on publication leaves separately permitted choreography available.
 
 #### MDPE.15:5.3 - Recognition arrangement: a rule change is not recognition or selection
 
-Suppose `MDPE.13` returns a bounded decision to change how one social-dance event admits battle entries: publish a revised category description, add a practitioner panel, make an appeal procedure usable, and identify who gives feedback to whom about which decision. Its `DecisionSubject` and authority for that decision are named separately from the Agent performing the change Work. Identify an assignment when it governs that Work's attribution; recheck permission, consent, resources, and capability. Event-policy and implementation Work can then change the local arrangement. A later event can supply observations about actual participation, decisions, refusals, appeals, and affected Systems.
+Suppose the organizer authorized to decide the social-dance event’s entry rules adopts a change under `MDPE.13`. The plan calls for a revised battle-entry category, a practitioner panel, a usable appeals procedure and feedback on decisions. Identify who was authorized to decide, who did the implementation and any assignment that matters to attribution. Use the permission, consent, staff and resources applicable to the work. Later event records may show entries, refusals, decisions, appeals and what happened to participants. Attribute a particular effect to the change only on evidence of that connection.
 
-The published rule is a direct artifact. The obtaining panel, assignments, and appeal relations are separate world-side arrangement changes. The event observations are separate again. None proves that a wider scene recognizes or retains the affected variants. If the event never runs, report the changed description and untested arrangement rather than a successful recognition change.
+A published rule establishes what the event announced. Appointment records can establish that a panel was constituted, and a functioning contact and procedure can establish that an appeal was available. These facts may be established before the event. Use evidence of the event for what entrants, panel members and appellants actually did, and broader evidence for adoption across a scene.
 
 
 
-#### MDPE.15:5.4 - Shimon: software or control change needs a configured performance trial
+#### MDPE.15:5.4 - Shimon: evaluating a changed controller and its musical performance
 
-A human robot-development team may choose to change gesture timing, sensing, or control after a Shimon performance study. Treat the team as the practice-developing Agent only when its agency and capability are sufficient and it has the authority and permission needed for the attributed development Work. Shimon is the performing Agent for the bounded Music Work when it performs that Work autonomously under the tested conditions; the Music Work enacts the applicable performance Method. Engineering Work can change software, hardware, sensing, or control. Music trial Work then has to use the changed configuration under stated tempo, gesture, instrument, observer, and sound conditions.
+A human development team may choose to change Shimon's gesture timing, sensing or control. Identify its authority to decide and the permission and capability required for the engineering work. When Shimon performs autonomously under the tested conditions, it is the performer of the music. For a claim about the revised musical performance, use a suitable trial or existing performance evidence with the relevant tempo, gesture, instrument, observer and sound. A prior trial of that configuration can suffice.
 
-A software commit or bench result does not establish a changed musical performance Method. A trial can support timing, synchronization, gesture, attention, noise, or plausibility observations only for its configuration. Cultural influence and autonomous practice-development authority remain unsupported unless separate evidence establishes them.
+A commit can establish a software change, and a bench result can establish the characteristic measured there. For a musical conclusion, use observations of timing, synchronization, gesture, attention, noise or plausibility from the relevant performing configuration. Cultural influence and authority to initiate further changes are separate questions.
 
-#### MDPE.15:5.5 - Teaching change: variable contexts are tested through transfer, not repetition count
+#### MDPE.15:5.5 - Teaching change: test performance under changed conditions
 
-A Dance teacher selects a local change from repeating one figure in one cue condition to practising the same coordination across varied partners, tempi, entry cues, floor conditions, and phrase positions. The class plan and cue descriptions can change first. Teaching and practice Work then occur. Representative later Dance Work tests whether the learner can retrieve and adapt the coordination under a held-out situation.
+A dance teacher chooses to replace repetition of one figure under a single cue with practice of the same coordination across partners, tempi, entry cues, floor conditions and phrase positions. The plan and cue descriptions can be revised before the class. Use evidence of teaching and practice for what was carried out, and performance in a held-out situation to assess the learner's retrieval and adaptation.
 
-Context-inference and transfer hypotheses can justify the trial design, but they do not establish transfer. Human Capability Development governs the capability-development Method and transfer evidence; the `MDPE.15` result account keeps the local teaching-arrangement change, performed Work, and trial result distinct. For a robot or AI performer, use its applicable training and evaluation Method rather than copying the human mechanism claim.
+Human studies of contextual inference and transfer can inform a trial design. Human Capability Development addresses a person's skill and evidence of transfer. `MDPE.15` distinguishes the teaching arrangement, what was actually done and the result of the trial. For a robot or software agent use the training and evaluation method appropriate to that performer.
 
 In a **constructed partial attempt**, Amal selects a twenty-minute class exercise in which Noor, Li and Teo will each use the same pause-and-response phrase with two different partners. The aim is to carry the cue relation across a partner change while keeping the same recording and floor conditions. The three participants had agreed to the exercise, and Amal prepares the rotation instructions. Teo is then unavailable. Noor and Li still agree to practise together; Amal teaches and observes rather than silently taking an additional partnering role that would remove that observation.
 
-The performed class uses the new cue explanation and produces readable responses within the Noor–Li pair, but no partner change occurs. The direct results are the revised teaching description, the performed fixed-pair practice and its bounded observations. The selected varied-partner arrangement was only partly implemented; transfer across partners remains unobserved. Amal retains the usable fixed-pair phrase and chooses to narrow the next rehearsal to that pair. If varied-partner use is still needed for the later event, the next development decision must obtain a willing, capable third participant and a suitable session, or choose another feasible arrangement.
+Amal uses the new cue explanation, and Noor and Li produce mutually readable responses in their fixed pair. The revised teaching description, that pair's practice and its observations are established. The varied-partner arrangement was only partly carried out. The lesson gives no observation of transfer across partners. Amal retains the phrase and narrows the next rehearsal to Noor and Li. If varied-partner use is still needed, obtain a willing, capable third participant and a suitable session, or choose another feasible arrangement.
 
-#### MDPE.15:5.6 - Direct-Method stop
+#### MDPE.15:5.6 - When the domain method answers the question
 
-If a direct composition, choreography, arrangement, translation, teaching, rehearsal, instrument, software, robot-control, event-production, curation, or recognition-arrangement Method already returns the selected change, performed Work, changed subject or failed attempt, direct result, trial observations, limits, and any later-evidence question needed by the receiving use, use it and stop. This pattern adds value only when those domain results are otherwise collapsed or omitted.
+Use an existing result or the appropriate domain method directly when it answers the question about the selected change, work performed, observed result or remaining limit. Use this comparison when it matters whether one of these has been mistaken for another. Investigate a later effect or cultural question only when that is needed.
 
 ### MDPE.15:6 - Bias Annotation
 
 | Bias risk | Likely distortion | Repair |
 | --- | --- | --- |
-| **Artifact bias** | A changed score, video, prompt, class plan, model, or rule stands for changed practice. | Name the artifact and any separate Method, capability, arrangement, Work, and effect claims. |
-| **Success-story bias** | Failed or partial change Work is omitted. | Preserve stopped Work, actual outputs, unchanged or partly changed subject, and retry condition. |
-| **Stage-production bias** | Concert, ballet, theatre, or festival production becomes the default local-change case. | Test social, paired, improvised, teaching, recorded, online, robotic, and low-resource cases. |
-| **Human-only bias** | The performer, learner, observer, and practice-developing Agent are assumed to be one person. | Identify each Agent, other supporting participant, decision-bearing assignment, and Work attribution in human, robotic, AI, ensemble, and hybrid cases. |
-| **Metric bias** | Technical improvement stands for artistic, bodily, partner, audience, or practice improvement. | Preserve non-equivalent observations, affected Systems, protected characteristics, and limits. |
-| **Authority bias** | The best performer, teacher, founder, robot, platform, or audience is assumed to own the change. | Name the `DecisionSubject`, practice-developing Agent, authority, permission, consent, and the usable means by which an affected participant can refuse. |
-| **Cultural-control bias** | One implementation is treated as style evolution. | Keep the later transmission, recognition, selection, retention, spread, and loss questions open. |
+| **Artifact bias** | A score, video, class plan, model or rule is mistaken for a change in practice. | Identify the artifact and use suitable evidence of any separate change in method, skill, arrangement or performance. |
+| **Success-story bias** | A partial or failed attempt disappears from the account. | Report the work performed, outputs and extent of the change, including a retry condition if another attempt is in prospect. |
+| **Stage-production bias** | Stage and festival examples determine which evidence is treated as relevant. | Choose evidence for the actual social, paired, improvised, teaching, recorded, online, robotic or low-resource setting. |
+| **Human-only bias** | One person's actions are assumed to account for every contribution. | Distinguish the development, performance and observation, including the work of a robot, service or ensemble where it occurs. Identify an assignment when it affects attribution. |
+| **Metric bias** | A technical gain is treated as artistic, bodily, partner or audience improvement. | Identify the measured characteristic, who experiences the possible effect and what evidence supports it. |
+| **Authority bias** | The most visible performer, teacher, founder, robot, platform or audience is given the power to decide. | Establish who could decide and who was permitted and able to act. Include consent and a usable way to refuse when an activity depends on participation. |
+| **Cultural-control bias** | One implementation is taken as evidence of style evolution across a population. | Establish the local change. Use population and historical evidence for a claim about transmission, selection or retention at that scale. |
 
 ### MDPE.15:7 - Conformance Checklist
 
-| Check | Passing observation |
+| Question | What the account makes clear |
 | --- | --- |
-| **CC-MDPE15-01 — Selected input** | One feasible change, decision source, selected option, basis, and current conditions are identifiable. |
+| **CC-MDPE15-01 — Selected input** | The option selected and what is established about the grounds, decision maker and relevant conditions at the time. For work to be carried out, the change is feasible under the present conditions. |
 | **CC-MDPE15-02 — Subject identity** | The changed Method, material, description, capability, tool, arrangement, repertoire element, or other subject and starting configuration are named. |
 | **CC-MDPE15-03 — Agents and affected Systems** | The `DecisionSubject`, practice-developing Agent, Work performer, tested performer, observers, and affected Systems remain distinct where the case requires them. |
-| **CC-MDPE15-04 — Authority and permission** | Authority, permission, consent, safety, resource, and stop conditions are supported rather than inferred from contribution or skill. |
+| **CC-MDPE15-04 — Authority and permission** | For implementation, the basis for the required authority, permission, consent, safety, resources and stop conditions. For an account of earlier work, what the evidence establishes about the conditions relevant to that account. |
 | **CC-MDPE15-05 — Direct Method** | The applicable Music, Dance, teaching, event, production, or engineering change Method is named and not replaced by this framework pattern. |
-| **CC-MDPE15-06 — Work actuality** | Dated change Work is separate from its WorkPlan, descriptions, calls, and account. |
+| **CC-MDPE15-06 — Work actuality** | The evidence for the dated work performed and its distinction from what the plan, tool calls and account establish about it. |
 | **CC-MDPE15-07 — Transformation** | The actual changed subject, new variant, partial change, unchanged subject, or failed attempt is stated through its governing relation. |
 | **CC-MDPE15-08 — Trial occurrence** | The account distinguishes one Work enacting several Methods, a separately identified constituent trial, and independent Work where applicable, without duplicating occurrence or resource counts. |
-| **CC-MDPE15-09 — Result discipline** | Direct result, observations, effect claim, value judgement, and later cultural claim remain separate. |
+| **CC-MDPE15-09 — Supported result** | What was produced or observed, whose judgement was reported and which evidence supports any claimed effect or later cultural change. |
 | **CC-MDPE15-10 — Alternative preservation** | Protected source return, rollback, live branches, and elimination reasons from `MDPE.16` or the decision remain visible when applicable. |
-| **CC-MDPE15-12 — Practical return** | The account tells a practitioner what changed, what did not, what was observed, what remains open, and what decision can use it. |
+| **CC-MDPE15-12 — Practical return** | A practitioner can recover which change or limitation was established and use it for the question or decision at hand. |
 
 ### MDPE.15:8 - Common Failures and Repairs
 
 | Failure | Why it fails | Repair |
 | --- | --- | --- |
-| “We approved the new Method.” | Approval is not Work or change. | Perform the applicable change Work and identify the later subject. |
-| “The plan was implemented.” | The WorkPlan and Work are different epistemic and world-side entities. | Identify dated Work and actual outputs; otherwise report planned only. |
-| “The choreography changed.” | The changed subject may be only a description, one phrase branch, one performance, or one dancer's enactment. | Reidentify the governed subject and its continuity or derivation relation. |
-| “The trial succeeded.” | Success hides criterion, observer, conditions, uncertainty, and non-equivalent harms. | State observations and the bounded conclusion they support. |
+| “We approved the new Method.” | Approval establishes a decision. | If the question concerns its execution, identify the work and resulting subject. Carry out the change only when implementation is wanted and feasible. |
+| “The plan was implemented.” | A plan identifies intended work. | Use dated evidence of performance and output to establish which parts occurred. Report what remains unknown. |
+| “The choreography changed.” | An edited description, new phrase, changed performance and changed ability concern different subjects. | Identify the changed subject and what supports continuity or derivation from the earlier one. |
+| “The trial succeeded.” | Readers need to know which criterion, under which conditions and for whom. | Report the observations, uncertainty and any relevant harm along with the conclusion. |
 | “The change caused better performance.” | Temporal order or preference is not a consequence relation. | Use an applicable comparison or causal Method, or report succession and judgement only. |
-| “The robot improved its practice.” | Engineering Work, robot configuration, performance Work, and practice-development agency are collapsed. | Separate the changed System, performing Agent, Work, capability, practice-developing Agent, decision authority, Work permission, and any obtaining assignment that changes the decision. |
+| “The robot improved its practice.” | An engineering team can change the configuration, and the configured robot can then perform the music. | Establish what changed, who performed and what ability the evidence supports. Identify authority, permission and any assignment when a development decision or attribution is claimed. |
 | “The community adopted it.” | One class, event, publication, or platform trace does not establish distributed cultural relations. | Use receiving enactment, recognition, selection, retention, and population evidence separately. |
-| “Nothing changed, so there is no result.” | A failed or partial attempt can change the next decision. | Return the actual stopped Work, unchanged or partly changed subject, evidence, and retry or stop condition. |
+| “Nothing changed, so there is no result.” | A failed or partial attempt can answer a historical question or guide a later choice. | Identify what was attempted, what happened, and when another attempt would be possible if one is wanted. |
 
 ### MDPE.15:9 - Consequences
 
-The pattern makes local Music-or-Dance development inspectable. It prevents a proposal, choice, plan, artifact, technical reading, or enthusiastic rehearsal from standing for a changed practice. It also preserves useful failures and partial changes as decision evidence.
+A reader can identify what the score, approval, rehearsal or technical reading establishes about the local change, including a partial change or a failed attempt. This makes both successful and failed work available for later use.
 
-The cost is explicit identity and relation work. A team may discover that it changed the wrong subject, lacks representative trial conditions, or cannot support the desired effect claim. That narrower result is preferable to a broad success story because it tells the next practitioner what can actually be reused.
+The work costs time to identify the subject and compare the evidence. It can establish that the team changed a different subject, lacked a representative trial or has grounds for only a narrow conclusion. State what a later practitioner can rely on at that scope.
 
 ### MDPE.15:10 - Rationale
 
-Music and Dance practices change through local Work long before any population-level cultural relation can be established. Locality does not make the change unimportant; it makes the claim bounded. The pattern therefore closes one gap between architecture or choice and cultural evolution: Work enacting an applicable direct Method carries one selected change into the world, and the result account preserves its direct evidence.
+A class, pair, ensemble or organizer can change a practice before a broader cultural change can be established. The domain work attempts the selected change. Its evidence supports the claim about that subject and occasion, whether the change was successful, partial or unsuccessful.
 
-Both fields repeatedly change materials, embodied or instrumental Methods, performing configurations, teaching and event arrangements, and selection arrangements through trials whose observations are not equivalent. Capable Agents make those changes through Work that enacts direct Music and Dance Methods. This pattern adds the cross-domain separation and result account needed to prevent those results from collapsing.
+Music and dance projects change material, methods, performing configurations, classes, events and their rules. The same intervention can produce a revised artifact, a different performance and an observer's judgement. Identify the work and evidence for each result the project claims.
 
 ### MDPE.15:11 - SoTA and Source Use
 
-| Source or maintained result | Adopted contribution | Boundary |
+| Source | Contribution | Conditions for use |
 | --- | --- | --- |
-| Current FPF `C.11`, `A.15.2`, `C.24`, `A.15.1`, `A.3.4`, `A.2.8`, `A.2.8.PER`, `E.10.ROLE`, `A.2.1`, `F.6`, `A.6.RCD`, `E.23`, `A.10`, and `C.36` | Separate choice, plan, tool/call planning, performed Work, actual transformation, obligation, permission, role-word recovery, assignment occurrence, performed-Work attribution, missing-governor recovery, improvement loop, evidence reliance, and local versus cultural change. | These patterns do not supply the changed Music-or-Dance subject, direct change Method, domain trial, or paired-domain result account; no listed pattern is a generic grant of agency or decision authority. |
-| `MDPE.6` source-grounded Music and Dance replays | Feasible *revise before use* and *branch* choices whose implementation and trial remain separate. | The constructed identifiers and later Work are examples, not reported occurrences or transferable effectiveness claims. |
-| `MDPE.13` recognition-and-selection arrangement cases | A possible-future description is terminal until another decision; a bounded feasible change decision can supply this pattern after authority, permission, and feasibility are checked again. | Arrangement design, implementation, actual recognition or selection, and later cultural effect remain separate. |
-| McCloskey et al., [automatic arrangement for monophonic instruments](https://arxiv.org/abs/2301.12084) | A direct Music Method with explicit preserved and changed score characteristics and a feasible-result boundary. | It does not establish rehearsal, balance, timbre, performer capability, concert use, or cultural effect. |
-| Stopgap, [Inclusive Choreography](https://www.stopgapdance.com/inclusive-choreography/) | Direct Dance translation and inclusive-choreography distinctions that change movement, body, effort, cue, and source-return decisions. | It does not establish one universal translation Method, one material identity, capability transfer, or scene recognition. |
-| Shimon project sources maintained by `MDPE.14` | Distinct engineering change, robotic performance, observation, and human-led practice-development roles. | They do not support an unreported local change occurrence, robot-held development authority, Dance transfer, or cultural continuation. |
-| [COIN sensorimotor study](https://doi.org/10.1038/s41586-021-04129-3) and [contextual cues and transition statistics](https://doi.org/10.1016/j.isci.2026.116281), discussed in the Architectural Reference's learning section | A reason to test retrieval and transfer under changed cues and representative contexts rather than count repetitions in one setting. | Human motor-learning evidence does not automatically transfer to every cognitive, robotic, or AI learner and does not establish transfer in the current case. |
+| FPF `C.11`, `A.15.2`, `C.24`, `A.15.1`, `A.3.4`, `A.2.8`, `A.2.8.PER`, `E.10.ROLE`, `A.2.1`, `F.6`, `A.6.RCD`, `E.23`, `A.10` and `C.36` | Distinguish choice, planning, tool calls, performed work, transformation, obligation, permission, role wording, actual assignment and precise attribution. Recover an unclear governing rule, investigate improvement, trace an evidential step or examine cultural change when that question arises. | Use the domain source for the applicable music or dance method, any trial evidence the claim requires, and the grounds for authority for a decision or action. |
+| `MDPE.6` music and dance cases | Examples of revising an arrangement before use and retaining a separate dance branch. | The decisions, implementation and rehearsals in these examples are constructed. Use further evidence for an effectiveness claim in another setting. |
+| `MDPE.13` cases on recognition and selection | Designs and, in some cases, bounded decisions to change an arrangement. | A design can be the requested result. For implementation establish an applicable decision, authority, permission and feasibility. Use evidence of the responsible participants’ work for actual recognition or selection, including decisions already taken before the event. |
+| McCloskey et al., [automatic arrangement for monophonic instruments](https://arxiv.org/abs/2301.12084) | A method for arranging monophonic parts with specified score characteristics preserved and stated feasibility conditions. | Use rehearsal and performance evidence for balance, timbre, player capability and concert use, and evidence of wider practice for cultural effects. |
+| Stopgap, [Inclusive Choreography](https://www.stopgapdance.com/inclusive-choreography/) | Ways of translating choreography in relation to a dancer's physical means, effort, cue and source material. | Identify the actual source and receiving phrases. Transfer to other dancers and recognition in a wider scene require evidence of their practice. |
+| Shimon project sources in `MDPE.14` | Examples of engineering work, robotic performance, observation and human-led development. | Establish the work and authority of the contributors in the case at hand. A new performance, dance transfer or later cultural use has its own evidence. |
+| [COIN sensorimotor study](https://doi.org/10.1038/s41586-021-04129-3) and [contextual cues and transition statistics](https://doi.org/10.1016/j.isci.2026.116281), discussed in the Architectural Reference's learning section | Grounds for testing retrieval and transfer across cues and contexts in human motor learning. | Use observations from the actual learner and representative conditions. A robot or software system needs its own basis for a comparable inference. |
 
-Recheck only a claim that depends on a changed source, configuration, direct result, or current FPF relation.
+The accounts drawn from mutable web sources refer to 26 August 2026. Reconsider a conclusion when a source it relies on, the relevant configuration, the direct result or the applicable FPF relation changes.
 
 ### MDPE.15:12 - Relations
 
-- `C.11`, `MDPE.6`, `MDPE.7`, a bounded `MDPE.13` change decision, or a direct decision Method may supply the selected-change input.
-- `MDPE.14 → MDPE.15` is a conditional selected-change and constraint input. `MDPE.14` returns the practice-conflict decision and any selected trial conditions; a capable Agent performs the selected change through Work that enacts the applicable direct Method, and `MDPE.15` returns the local practice-change account.
-- `MDPE.16 → MDPE.15` is a conditional alternative-preservation constraint. The local trial does not silently delete branches, source return, stepping stones, or archive records.
-- `MDPE.15 → MDPE.16` is revision feedback when an actual trial changes live membership, performer feasibility, retained use, stepping-stone value, or the supported reason for suspension or removal.
-- `E.10.ROLE` only recovers ambiguous role wording. `A.2.1` governs an obtaining assignment occurrence and its declared species; `F.6` governs attribution when an Agent performs dated Work under that assignment. None supplies agency, capability, authority, permission, consent, resources, or successful Work.
-- `A.15.2` governs a WorkPlan when one is needed; `C.24` governs tool or call planning only when that question is current; `A.15.1` governs performed Work; `A.3.4` governs bounded actual change.
-- `A.15.7` governs bounded next-action steering when current facts change a live branch under an already-admitted Method. It is neither the prior choice nor a universal improvisation Method.
-- `MDPE.15 → MDPE.7` is a conditional evidence input. The local result can change the next development choice.
-- `MDPE.15 → MDPE.14` is revision feedback only when observations change the same conflict, candidate, comparison, residual, moved burden, or representative test.
-- `MDPE.15 → MDPE.17` can supply an actual changed Method or repertoire variant with its conditions for receiving enactment. It can also supply a MethodDescription as source content. The description or a failed change attempt alone does not establish an actual changed Method or receiving enactment.
-- `MDPE.12` may use later observations under its own comparison question. `MDPE.10` and Human Capability Development own capability-development and transfer results.
-- `C.36`, `MDPE.17`, `MDPE.19`, and `MDPE.20` own later transmission, cultural continuation, retention or loss, and trajectory claims.
+- Use a selected change from `C.11`, `MDPE.6`, `MDPE.7`, `MDPE.13` or the decision method used in the practice.
+- `MDPE.14` can identify the selected response to a conflict and any trial conditions. Use that decision and its limits when carrying out or examining the actual change under `MDPE.15`.
+- If `MDPE.16` supplies alternatives to retain, keep applicable source access, stepping stones and archive records when changing or testing a branch.
+- Return observations to `MDPE.16` when they change which alternatives are available to performers, worth retaining or useful as steps toward another option. Include any new grounds for suspension or removal.
+- Use `E.10.ROLE` for ambiguous role wording, `A.2.1` for the actual assignment of a specified kind and `F.6` for precise attribution of dated work under it. Establish agency, capability, authority, permission, consent or resources from the grounds for the particular claim.
+- Use `A.15.2` for a required work plan, `C.24` for planning tools or calls, `A.15.1` for performed work and `A.3.4` for the actual bounded change.
+- Use `A.15.7` for the next action when current conditions change a real choice within the identified method. A different overall change needs the relevant larger decision.
+- A local finding can inform `MDPE.7` for a question about an earlier choice or a recommendation or decision about further work.
+- Return findings to `MDPE.14` when they alter the conflict, a candidate, comparison, burden, remaining incompatibility or representative test.
+- Use `MDPE.17` for a receiving practitioner's use of a changed method, material or description. Identify the provision, use, receiving performance or source relationship relevant to the question. An account of a failed change can still answer a question about the offered material.
+- Use `MDPE.12` to investigate relevant observations or comparisons and `MDPE.10` for performing capability or transfer. Human Capability Development supplies methods for a person's skill.
+- For questions about transmission, continuation, loss or forecast development, use `MDPE.17`, `MDPE.19` or `MDPE.20` with `C.36` as appropriate. The question may already have a sufficient answer from a qualified source.
 
 ### MDPE.15:End

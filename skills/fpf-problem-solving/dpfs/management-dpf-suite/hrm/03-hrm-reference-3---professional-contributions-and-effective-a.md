@@ -14,7 +14,7 @@ A person can be capable but ineligible under an applicable rule, eligible but no
 | A clinical, occupational-health, safety, legal or qualified assessment result | The competent professional supplier for the actual question and setting | Its conditions must change work, terms or the personnel inference |
 | Actual participation in a shared practice | Community Management and the practice's own Methods | Employer commitments, reward or personnel uses become material |
 
-A professional referral becomes useful when its output can enter the receiving decision. State the actual work question, relevant conditions and permitted information; obtain the supplier's conclusion, scope, uncertainty and reconsideration condition. Receive what the decision needs, not every underlying private record. Then identify the owner able to change the work, terms or decision. A recommendation sent to HR has not yet changed a schedule or authorized leave.
+A professional referral becomes useful when its output can enter the receiving decision. State the work question, relevant conditions and permitted information; obtain the supplier's conclusion, scope, uncertainty and reconsideration condition. Receive what the decision needs, not every underlying private record. Then identify the owner able to change the work, terms or decision. A recommendation sent to HR has not yet changed a schedule or authorized leave.
 
 ### HRM.Reference:3.2 - Protection before failure and medical help without managerial diagnosis
 

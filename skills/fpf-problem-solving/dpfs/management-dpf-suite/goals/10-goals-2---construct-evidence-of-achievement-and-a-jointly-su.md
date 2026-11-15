@@ -23,13 +23,13 @@ Simple measures aid attention and comparison; omitted conditions can defeat thei
 
 Describe a concrete result that would satisfy the goal and a relevant case that would fail it. Identify the subject, eligible population, horizon and protected conditions. For a continuing service, choose the window over which its condition matters. For a finite task, state what closes it and how unfinished work remains visible. For a capability, identify performance under the relevant support and variation.
 
-Separate the final result, a qualified intermediate contribution and an early signal. All can be useful observations. State which decision each supports. A completed design may be the entire result of a design task; in a delivery goal it is an intermediate contribution whose downstream realization still matters. This distinction follows the assigned result rather than a universal ban on outputs.
+Separate the final result, a qualified intermediate contribution and an early signal. All can be useful observations. State which decision each supports. A completed design may be the entire result of a design task; in a delivery goal it is an intermediate contribution whose downstream realization still matters. The assigned result determines which interpretation applies.
 
 #### GOALS.2:4.2 - Challenge the proposed evidence
 
 Ask whether the proposed observation could look successful while the goal remains unmet. Construct a plausible case using the actual work, such as reducing calls by making the service inaccessible, increasing completed tickets by excluding reopened cases, or improving a learning score through unrecorded assistance. Add or change only the observation or criterion needed to distinguish that case.
 
-Use qualified existing data when it is adequate. If the missing distinction can change a decision, obtain the smallest suitable observation, subject judgement or inquiry. OPS.15 supplies a decision-specific operating account. A new collection regime also requires usable access, effort and permitted use. Changing visibility, ranking or personnel use can change incentives and participation; examine those consequences when the proposed arrangement introduces them. Merely reusing adequate existing service data creates no automatic new organizational intervention.
+Use qualified existing data when it is adequate. If the missing distinction can change a decision, obtain the smallest suitable observation, subject judgement or inquiry. OPS.15 supplies a decision-specific operating account. A new collection regime also requires usable access, effort and permitted use. Changing visibility, ranking or personnel use can change incentives and participation; examine those consequences when the proposed arrangement introduces them.
 
 A numerical criterion needs a defined numerator, denominator, inclusion rule, time window and interpretation where those affect the conclusion. A qualitative criterion needs an inspectable result and competent grounds for judgement. Neither forces a universal score. Where decisive evidence remains unavailable, return what is established and the exact undecidable claim.
 
@@ -47,7 +47,7 @@ A genuine final exception is handled according to the goal's actual terms. Defin
 
 For inquiry, specify what makes the investigation adequate and which possible conclusions it can support, including a qualified negative or inconclusive answer. For learning, use HCD.11 for the assessment inference and HCD.12 when transfer is part of the claim. Activity counts can describe effort or provision, while the claimed result needs its corresponding evidence.
 
-Return the achievement test with only the definitions, observations and limits its users need. Recognition finds a misleading success. Assurance establishes why the evidence supports the particular claim, with stronger professional qualification where the consequence demands it.
+Return the achievement test with only the definitions, observations and limits its users need. Recognition finds a misleading success. Assurance establishes why the evidence supports the achievement claim, with stronger professional qualification where the consequence demands it.
 
 ### GOALS.2:5 - Archetypal Grounding
 

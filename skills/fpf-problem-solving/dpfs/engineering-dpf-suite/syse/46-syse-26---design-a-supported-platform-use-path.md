@@ -8,7 +8,7 @@
 
 Use this pattern when a practitioner knows the engineering result needed next but must repeatedly discover how to request it, which inputs are acceptable, what a delay or failure means, or how to recover. A developer asks for a test environment, a test engineer asks for a bench run, or a manufacturing engineer asks for an inspection result. The available tools may work while the interaction between their users and providers remains unreliable.
 
-Start with one representative attempt and say what the user supplies, what usable result should return, and which conditions make the attempt supported. Construct a way of obtaining that result through the available operations and providers; then design its interaction through success, variation, waiting and failure. The first useful result is an explained supported path whose operations fit together, with a trial or a precise missing provision identified. A description supplies a design; actual support needs capable providers, effective access and evidence from the intended use.
+Start with one representative attempt and say what the user supplies, what usable result should return, and which conditions make the attempt supported. If no adequate path is available, connect the necessary operations and providers and design the interaction for success, variation, waiting and failure. The first useful result is an explanation of how the operations fit together for the supported use. Include applicable trial evidence, identify a worthwhile trial, or name missing provision when the decision needs it. A description supplies a design; actual support needs capable providers, effective access and evidence from the intended use.
 
 The intended reader understands the professional task and can obtain its specialist results. The new work here is to organize their use through the platform: connect inputs and returned results, preserve the conditions needed by the whole attempt, and give users and providers a workable continuation. A catalogue of available services is insufficient when these connections remain to be designed.
 
@@ -18,7 +18,7 @@ Platform Engineering concerns Systems that enable their users' work. This patter
 
 A user can submit a valid request yet receive only a job number, a generic error or a link to an obsolete result. A provider can report technical completion while the user still lacks the configuration, evidence or access needed for the next engineering action. Repeating the request may create a second environment or repeat a physical operation that cannot be undone.
 
-The missing engineering work is to connect the user's undertaking to the actual accepted inputs, operations, returned result and support. The connection must survive the cases users really encounter, not only a provider's successful demonstration.
+The missing engineering work is to connect the user's undertaking to the actual accepted inputs, operations, returned result and support. The connection must work in the cases the users encounter, including variations or failures that affect their next action.
 
 ### SYSE.26:3 - Forces
 
@@ -33,19 +33,19 @@ The missing engineering work is to connect the user's undertaking to the actual 
 
 #### SYSE.26:4.1 - Begin with the user's completed undertaking
 
-Walk through an actual or explicitly constructed attempt with a representative user. Ask what they will do with the result: compare a model, test a change, release a configuration, or accept a manufactured item. Work backwards from that use to the input and returned result sufficient for that use.
+Use an adequate walkthrough of an actual or explicitly constructed attempt with a representative user. Arrange one when the available account leaves a consequential question about the task. From the account or, where needed, from the user, establish what the result will let them do: compare a model, test a change, release a configuration, or accept a manufactured item. Work backwards from that use to the input and returned result sufficient for that use.
 
 Keep the user's result separate from intermediate provider activity. An accepted request, a booked slot, a running job and an inspected item are different results. A booking may be sufficient when the user is scheduling; it is insufficient when they are deciding whether a component passed a test.
 
 Name the System or provider that supplies each indispensable operation. Recover existing configuration identities and conditions through SYSE.13. When a professional Method is missing, name its required result and supplier. A clear description of a missing operation is useful for design, but does not justify promising that operation to users.
 
-Construct the path backwards from the receiving action. For an acceptance test, a running environment may be insufficient: the test also needs the intended package, a compatible data state, effective access and enough remaining lifetime. For each needed condition, ask which existing operation can establish it, what that operation requires and who can supply it. Continue only until the inputs are already obtainable or a missing operation is precise. This locates the actual work to design, including preparation that precedes the visible request.
+Construct the path backwards from the receiving action. For an acceptance test, a running environment may be insufficient: the test also needs the intended package, a compatible data state, effective access and enough remaining lifetime. For each needed condition, ask which existing operation can establish it, what that operation requires and who can supply it. Continue only until the inputs are already obtainable or a missing operation is precise. This identifies the operations the path needs, including preparation before the visible request, and any connection or operation that remains to be designed.
 
 Then follow a proposed attempt forwards. At a consequential join, establish that the preceding result is the right subject, configuration and state for the receiving operation. Convert representations where a known rule preserves meaning; obtain missing information where no conversion can supply it. A source revision does not identify built bytes; a credential issued to one principal does not establish access for another; a specimen number does not establish its current treatment. The join must deliver the needed condition, not just a field with the expected name.
 
 Explain how the operations fit together. Preparation may proceed independently while waiting for a resource, but only if it does not depend on that resource's later identity or mutable state. Serialize the operations whose effects depend on each other. Reserve or sequence shared resources when simultaneous demand would defeat the result. For a provisional design, show the condition that must still be established; do not replace it with the word “integrated.”
 
-Check conditions that span several operations. A result's validity must reach its use; data preparation must fit within the environment's available lifetime; the expected demand must fit the available capacity and support; two uses of the same resource must be compatible. Repair the specific mismatch by changing order, obtaining a longer window, reserving provision, changing a constituent or narrowing the supported attempt. A passing test of every component separately leaves these joint conditions open.
+Check conditions that span several operations. A result's validity must reach its use; data preparation must fit within the environment's available lifetime; the expected demand must fit the available capacity and support; two uses of the same resource must be compatible. Repair the specific mismatch by changing order, obtaining a longer window, reserving provision, changing a constituent or narrowing the supported attempt. Passing component tests do not by themselves establish those joint conditions.
 
 Keep the professional suppliers intact. SYSE.30 and SYSE.32 can supply an identified and appropriately verified software artifact; SYSE.33 supplies the environment construction; SYSE.34 supplies the relevant persistent-data compatibility or recovery result. Use only the contributions the task needs. The supported path explains what it receives from them and how their outputs become usable together; it does not replace their Methods with generic “build,” “deploy” or “restore” labels.
 
@@ -55,7 +55,7 @@ Choose a bounded, coherent class of supported attempts. Determine the required i
 
 For each material variation, choose a supported route, a provider-assisted route, an extension request or an explicit unsupported answer. An unsupported but legitimate request is not an invalid request. Do not coerce it into a template whose result answers a different question. Use SYSE.27 when contributors need a maintained extension path.
 
-Use an interface already natural for these users when it suffices: a callable operation, a command, a workbench interaction or a short agreed request can provide the supported interaction. A new portal is justified only by an additional user result. Pass required credentials through the applicable protected authentication mechanism; keep its secret material out of task request and response payloads, displays and diagnostics. Determine which task information is necessary and permitted in the input, returned result and display, who may receive it, and how it is protected. Preserve necessary personal data within those permissions and protections; omit sensitive details that the receiving action does not need. Keep diagnostic detail to what its authorized recipient needs to understand the result or take the next action. If a necessary permission is unavailable, return that condition to the person authorized to grant it before the affected operation.
+Use an interface already natural for these users when it suffices: a callable operation, a command, a workbench interaction or a short agreed request can provide the supported interaction. A new portal is justified only by an additional user result. Pass required credentials through the applicable protected authentication mechanism; keep its secret material out of task request and response payloads, displays and diagnostics. Determine which task information is necessary and permitted in the input, returned result and display, who may receive it, and how it is protected. Preserve necessary personal data within those permissions and protections; omit sensitive details that the receiving action does not need. Keep diagnostic detail to what its authorized recipient needs to understand the result or take the next action. If a necessary permission is unavailable, return that condition to the authority that can grant it before the affected operation.
 
 Generate more than one feasible form when the interaction arrangement is unresolved. An assisted path can have a practitioner submit the engineering question and a qualified operator supply the result. A self-service path can expose an understood, repeatable operation with appropriate observation and recovery. A hybrid can automate preparation and ordinary execution while returning a consequential exception to a specialist. Begin from existing tools, qualified operations and actual assignments; a new interface is only one possible change.
 
@@ -71,28 +71,28 @@ Decide what the user can observe at the points that change their next action.
 
 | Situation | What the user needs to know | Admissible next move |
 | --- | --- | --- |
-| The request was not accepted | Which input or permission is missing, and whether any effect occurred. | Supply the required input or request the missing permission from the person authorized to grant it. |
+| The request was not accepted | Which input or permission is missing, and whether any effect occurred. | Supply the required input or request the missing permission from the authority that can grant it. |
 | Work was accepted and is waiting or running | A retrievable attempt identity, present progress and the meaningful limit or support condition. | Observe the same attempt; cancel only under the stated cancellation semantics. |
 | The operation completed | The returned result, its configuration and usable conditions, not merely the worker's exit status. | Use the result for the named next action. |
-| The operation failed or its state is unknown | Observed partial effects, remaining uncertainty and the safe recovery or support return. | Reconcile actual state before a replay that might duplicate effects. |
+| The operation failed or its state is unknown | Observed partial effects, remaining uncertainty and the scope of a safe recovery or support return. | Use a permitted recovery that preserves the required result in every possible state. Resolve any difference that would make the recovery unsafe, or hold the affected action. |
 
-These are semantic distinctions, not compulsory status labels or a universal workflow. A synchronous operation may need no persistent job record. An operation with uncertain external effects needs enough stable identity and observation to recover the same attempt.
+Use these distinctions where they change what the user can do. A synchronous operation may need no persistent job record. If attribution to the original attempt matters, provide the identity and evidence needed to establish its effect, or report that it remains unknown.
 
-Design reattempt and cancellation around the actual effects. If a provider can look up an earlier attempt, use that lookup before creating a replacement. If it cannot establish whether the effect occurred, return the uncertainty and restrict further action. Cancellation of a request does not necessarily cancel provider work or reverse a completed effect. Domain-specific state recovery remains with its qualified Method; software/data recovery uses SYSE.34.
+Design reattempt and cancellation around the effects the user and other participants must preserve. Recover a usable existing result when available. A repeat is justified when the current permission, interface contract and qualified operating conditions establish that it will preserve the required result and dependent effects in every state the failed attempt could have left. If a repeat could issue a second payment or notification, move a part again or overwrite a later write, resolve the relevant state first or hold that action. Cancelling a request may leave provider work running or its effect in place. Use the qualified recovery method for the subject, including SYSE.34 for persistent software data.
 
 #### SYSE.26:4.4 - Keep support connected to the failed use
 
 Make the support return available where the user encounters the failure. Carry the attempt identity, relevant input/configuration, observed result and last safe action, subject to confidentiality. The user should not have to reconstruct a hidden chain of provider job numbers.
 
-Determine who can actually investigate or repair the provision and which promise is in force. If the assignment is missing, ask the person authorized to assign support who will provide it; a support-link label does not appoint a provider. Keep the user's continued-work option visible, including a bounded manual route when it is usable and permitted.
+Determine who can investigate or repair the provision and which promise is in force. If the assignment is missing, ask the relevant authority who can provide support, or identify the gap when the design must remain provisional. Keep the user's continued-work option visible, including a bounded manual route when it is usable and permitted.
 
-Arrange support for the scope actually promised. Establish when diagnosis is available, which provider can observe or change each consequential effect, and how a case crosses provider boundaries without making the user rediscover them. A platform team need not operate every backing service, but a supported path needs an attainable continuation when one fails. If the named operator is available only during a shift, either arrange further support or bound the promise accordingly.
+Arrange support for the scope promised. Establish when diagnosis is available, which provider can observe or change each consequential effect, and how a case crosses provider boundaries without making the user rediscover them. A platform team need not operate every backing service, but a supported path needs an attainable continuation when one fails. If the named operator is available only during a shift, either arrange further support or bound the promise accordingly.
 
-Explain the path's technical decisions to practitioners and contributors. Demonstrate an ordinary attempt and the failure where the next move differs: for example, retrieving an uncertain creation rather than creating a second resource. Let a user perform the attempt and explain the returned result. Repair the description or preparation when the missing knowledge belongs to supported use; retain necessary specialist assistance in the arrangement. This technical leadership develops shared understanding of the selected design. Assigning Work, granting rights and authorizing exceptions remain with their actual holders.
+Explain the path's technical decisions to practitioners and contributors. Demonstrate an ordinary attempt and the failure where the next move differs: for example, retrieving an uncertain creation rather than creating a second resource. Let a user perform the attempt and explain the returned result. Repair the description or preparation when the missing knowledge belongs to supported use; retain necessary specialist assistance in the arrangement. This technical leadership develops shared understanding of the selected design. Assigning Work, granting rights and authorizing exceptions remain with the holders of those rights.
 
 #### SYSE.26:4.5 - Exercise the interaction before relying on it
 
-Try the supported case with a representative user and the intended result consumer. Select further cases from the supported variants and actual failure modes: a valid variation, an invalid or unsupported request, delay where timing matters, and interruption where an operation's effect may already have occurred. Check that each selected case leaves an intelligible next move and preserves the result's identity.
+When a test is needed, try the supported case with a representative user and the intended result consumer. Select further cases from the supported variants and actual failure modes: a valid variation, an invalid or unsupported request, delay where timing matters, and interruption where an operation's effect may already have occurred. Check that each selected case leaves an intelligible next move and preserves the result's identity.
 
 A desk walkthrough tests the description. A trial against the actual provision tests more: whether the request reaches the right System, the operation works under the stated conditions and the result can be used. Keep those evidence claims separate. SYSE.12 distinguishes a readiness assessment made before relying work from a later assessment of actual use; SYSE.36 helps observe software-service user tasks. Stop at the design result or bounded trial result that the current decision needs.
 
@@ -118,7 +118,7 @@ Three alternatives are considered: extend the lease, prepare the synthetic data 
 
 In the first walkthrough, the provider accepts attempt q17 and creates environment e42, but the response is lost. A second click with a new request identity would create an unnecessary second environment. The revised interaction retains q17 at the caller, permits retrieval of that attempt and returns e42 only after checking its current state. If that lookup is unavailable, the response says that creation is uncertain and returns q17 to support; it does not invite an unqualified create-again action.
 
-A later constructed trial finds the environment running but the acceptance-test connection denied. “Created” is therefore not the promised usable result. The trial returns the observed access failure and its repair route. After the permitted access configuration is repaired and the connection checked, the developer receives e42 with the matching recipe and data identity. This is still no approval to release the application.
+A later constructed trial finds the environment running but the acceptance-test connection denied. “Created” is therefore not the promised usable result. The trial returns the observed access failure and its repair route. After the permitted access configuration is repaired and the connection checked, the developer receives e42 with the matching recipe and data identity. Releasing the application requires a separate decision.
 
 A request for an unsupported build language receives a specific extension/support answer. It is not silently run through another language's recipe. Expiry is also visible: the user can retain the permitted test result before the disposable environment is removed, rather than treating access to a disappearing environment as permanent evidence.
 
@@ -128,11 +128,11 @@ The final description states that qualification is for obtaining and using the p
 
 For a physical test bench, the same design question separates a reservation from a completed measurement. A request can name component configuration C4, the intended operating range and the measurement needed for an engineering decision. The returned booking confirms only a slot. The later measurement result also needs the actual specimen, setup and applicable measurement qualification. Software-style resubmission cannot safely repeat a destructive test, so an uncertain run returns to the operator before another specimen is consumed.
 
-The practical change in both cases is that the user can distinguish what has been obtained and what is still missing.
+
 
 ### SYSE.26:6 - Bias-Annotation
 
-Evidence from frequent expert users can hide the difficulties of infrequent users and unsupported variants. Include people who abandon the route or require assistance. Software examples also make replay look cheap; physical changes, consumed specimens and external commitments can make the same action irreversible.
+Evidence from frequent expert users can hide the difficulties of infrequent users and unsupported variants. Include evidence from users who abandon the route or need assistance, as well as records of abandoned or assisted attempts when available. Software examples also make replay look cheap; physical changes, consumed specimens and external commitments can make the same action irreversible.
 
 ### SYSE.26:7 - Conformance Checklist
 
@@ -148,7 +148,7 @@ Evidence from frequent expert users can hide the difficulties of infrequent user
 | Misuse | Repair |
 | --- | --- |
 | A completed backend job is reported as the user's completed task. | Check the returned result with its intended consumer and expose any remaining condition. |
-| A timeout offers “try again” without an attempt lookup or effect check. | Recover the earlier attempt and reconcile its effect before replay. |
+| A timeout offers “try again” without an attempt lookup or effect check. | Use the applicable recovery contract. Resolve any earlier effect that could make another attempt unsafe. Repeat only within its qualified conditions and authority. |
 | Every request is forced into the common template. | Distinguish invalid input from a legitimate unsupported variant and provide the corresponding return. |
 | The support page lists a team that cannot repair the failure. | Recover the actual provider capability and assignment, or state that support is not yet supplied. |
 
@@ -158,20 +158,20 @@ Users can identify the decisions they need to make and a usable next move after 
 
 ### SYSE.26:10 - Rationale
 
-An enabling System matters through the work people can complete with it. Designing only the successful technical operation leaves users to integrate configuration, interpretation and recovery themselves. Exposing the conditions that change their next action reduces that hidden integration work.
+An enabling System matters through the work its users can complete with it. Designing only the successful technical operation leaves users to integrate configuration, interpretation and recovery themselves. Exposing the conditions that change their next action reduces that hidden integration work.
 
 ### SYSE.26:11 - SoTA-Echoing
 
-**Adapt** the [CNCF Platforms White Paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/), especially “What is a platform,” platform attributes and provider relations. It already describes integrated capabilities, documentation, support, composability and a thin layer over real providers. A wiki or direct provider route can be sufficient in its terms.
+**Adapt** the [CNCF Platforms White Paper](https://tag-app-delivery.cncf.io/whitepapers/platforms/), especially “What is a platform,” platform attributes and provider relations. It describes integrated capabilities, documentation, support, composability and a thin layer over real providers. A wiki or direct provider route can be sufficient in its terms.
 
 This pattern develops a particular engineering construction within that line: work backwards from a usable result, connect the supplying operations forwards and resolve conditions that must hold across them. The preview example shows why an appropriate collection of services can still need an ordering or lifetime repair. A qualified existing provider composition can supply that construction without another platform layer.
 
-**Adapt** the task-feedback guidance in [DORA Platform engineering](https://dora.dev/capabilities/platform-engineering/) for sections 4.3–4.5. Feedback becomes useful through the next action it supports, including uncertainty about an existing effect.
+**Adapt** the task-feedback guidance in [DORA Platform engineering](https://dora.dev/capabilities/platform-engineering/) for sections 4.3–4.5. Use feedback to show what the recipient can do next, including how to check an earlier effect or proceed when it remains uncertain.
 
 Assisted provision and self-service are serious alternatives. The selected design exchanges recurring human coordination for explicit interface, recovery and maintenance work only where the task warrants it. Reopen on changed use, provider behavior, shared capacity, validity windows or support. These software sources inform the design; the physical-bench transfer remains conditional on its own qualified operations and effects.
 
 ### SYSE.26:12 - Relations
 
-SYSE.25 selects the task improvement; SYSE.24 compares whole obtaining arrangements. SYSE.12 develops the enabling System and separates readiness from later use. SYSE.13 supplies configuration identity. SYSE.27 develops contribution and compatibility paths; SYSE.28 places already justified controls. Software environment construction, state recovery and task measurement are supplied respectively by SYSE.33, SYSE.34 and SYSE.36. Use SYSE.14 for a required release decision; release authority remains with its applicable holder.
+SYSE.25 helps decide whether to retain or change provision for the task, or what further result the choice needs; SYSE.24 compares whole obtaining arrangements. SYSE.12 develops the enabling System and separates readiness from later use. SYSE.13 supplies configuration identity. SYSE.27 develops contribution and compatibility paths; SYSE.28 places already justified controls. Software environment construction, state recovery and task measurement are supplied respectively by SYSE.33, SYSE.34 and SYSE.36. Use SYSE.14 for a required release decision; release authority remains with its applicable holder.
 
 ### SYSE.26:End

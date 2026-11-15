@@ -2,9 +2,9 @@
 
 **Connect direction, commitments, resources and collective work.** Use this Suite when a promising direction, an accepted promise and the available means do not yet fit together, or a changed condition calls for a different commitment.
 
-The undertaking can be a company, public service, temporary collaboration or voluntary community. A shared employer is unnecessary, but contributions, resources and authority need an actual basis. A smaller promise, sufficient existing arrangement or justified refusal can be the useful result.
+The undertaking can be a company, public service, temporary collaboration or voluntary community. A shared employer is unnecessary, but contributions, resources and authority need a basis. A smaller promise, sufficient existing arrangement or justified refusal can be the useful result.
 
-This Suite contributes methods for organizing a **shared culture of thinking and acting among people and AI agents**: connecting their direction, contributions, commitments and conditions of work. Its methods can help sustain both current performance and open-ended development. The [Library account of this culture](../../library/reference/02-library-reference-1---one-connected-language-several-kinds-o.md#libraryreference13---a-canon-for-shared-humanai-culture) explains the common canon; actual roles and authority follow the working arrangement.
+This Suite contributes methods for organizing a **shared culture of thinking and acting among people and AI agents**: connecting their direction, contributions, commitments and conditions of work. Its methods can help sustain both current performance and open-ended development. The [Library account of this culture](../../library/reference/02-library-reference-1---one-connected-language-several-kinds-o.md#libraryreference13---a-canon-for-shared-humanai-culture) explains the common canon; roles and authority follow the working arrangement.
 
 Framework and method links open readable text on fpf.tools or Markdown sources in the repository. GitHub previews can truncate large files. For fpf.tools, check the [displayed source edition](https://fpf.tools/status) when the version matters.
 
@@ -39,20 +39,20 @@ The **[operational mantra (OPS.23)](ops/28-ops-23---connect-operational-reasonin
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Strategy (STR)](str/_index.md) · [Markdown](str/_index.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.549 |
+| [Strategy (STR)](str/_index.md) · [Markdown](str/_index.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.548 |
 | [Goal Construction and Regulation (GOALS)](goals/_index.md) | Construct worthwhile goals and achievement evidence, coordinate their pursuit and revise the practice; complete OKR/CFR and human and AI applications. | 9 | 0.149 |
-| [Operations Management (OPS)](ops/_index.md) · [Markdown](ops/_index.md) | Understand, construct and revise operating arrangements; manage work, provision, service and improvement under actual conditions. | 29 | 0.973 |
-| [Organization Administration (ADM)](adm/_index.md) · [Markdown](adm/_index.md) | Make requests, permissions, obligations, provision, records and provider coordination effective without unnecessary burden. | 15 | 0.302 |
-| [Corporate Governance (CGOV)](cgov/_index.md) · [Markdown](cgov/_index.md) | Constitute and exercise corporate powers, decisions, controls and accountability under applicable governing rules. | 17 | 0.272 |
+| [Operations Management (OPS)](ops/_index.md) · [Markdown](ops/_index.md) | Understand, construct and revise operating arrangements; manage work, provision, service and improvement under the undertaking's conditions. | 29 | 0.990 |
+| [Organization Administration (ADM)](adm/_index.md) · [Markdown](adm/_index.md) | Make requests, permissions, obligations, provision, records and provider coordination effective without unnecessary burden. | 15 | 0.308 |
+| [Corporate Governance (CGOV)](cgov/_index.md) · [Markdown](cgov/_index.md) | Constitute and exercise corporate powers, decisions, controls and accountability under applicable governing rules. | 17 | 0.268 |
 | [Management Accounting (MA)](ma/_index.md) · [Markdown](ma/_index.md) | Explain costs, capacity and economic consequences; forecast outcomes; develop activity designs from economic requirements and arrange how accounting information is used. | 10 | 0.211 |
-| [Corporate Finance (FIN)](fin/_index.md) · [Markdown](fin/_index.md) | Understand financial relations, construct financing terms and group arrangements, and compare value, liquidity, capital uses and exposure. | 23 | 0.642 |
-| [Marketing (MKT)](mkt/_index.md) · [Markdown](mkt/_index.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.415 |
+| [Corporate Finance (FIN)](fin/_index.md) · [Markdown](fin/_index.md) | Understand financial relations, construct financing terms and group arrangements, and compare value, liquidity, capital uses and exposure. | 23 | 0.645 |
+| [Marketing (MKT)](mkt/_index.md) · [Markdown](mkt/_index.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.420 |
 | [Customization and Productization Management (CUST)](cust/_index.md) · [Markdown](cust/_index.md) | Handle client differences while developing repeatable offerings, delivery and compatible transitions for existing clients. | 8 | 0.177 |
-| [Engineering Asset Management (EAM)](eam/_index.md) · [Markdown](eam/_index.md) | Compare use, renewal, replacement and other asset changes over time, including shared risk, cost and capacity. | 16 | 0.261 |
-| [Leadership (LDR)](ldr/_index.md) · [Markdown](ldr/_index.md) | Direct personal action; develop joint direction, participation and responsibility; obtain feasible contributions and first useful work. | 4 | 0.194 |
-| [Community Management (CB)](cb/_index.md) · [Markdown](cb/_index.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.527 |
-| [Organization Change Engineering (OCE)](oce/_index.md) · [Markdown](oce/_index.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.753 |
-| [Human Resource Management (HRM)](hrm/_index.md) | Construct and revise workforce conditions, assessment and selection, reward, voice, protection and continuing participation. | 5 | 0.140 |
+| [Engineering Asset Management (EAM)](eam/_index.md) · [Markdown](eam/_index.md) | Compare use, renewal, replacement and other asset changes over time, including shared risk, cost and capacity. | 16 | 0.260 |
+| [Leadership (LDR)](ldr/_index.md) · [Markdown](ldr/_index.md) | Direct personal action; develop joint direction, participation and responsibility; obtain feasible contributions and first useful work. | 4 | 0.192 |
+| [Community Management (CB)](cb/_index.md) · [Markdown](cb/_index.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.528 |
+| [Organization Change Engineering (OCE)](oce/_index.md) · [Markdown](oce/_index.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.762 |
+| [Human Resource Management (HRM)](hrm/_index.md) | Construct and revise workforce conditions, assessment and selection, reward, voice, protection and continuing participation. | 5 | 0.138 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.
 
@@ -64,7 +64,13 @@ An attractive new order can require a revised offering, delivery capacity, a fin
 
 Management can change an organization's functioning while retaining its organization chart. OCE develops deliberate organizational construction, but does not exhaust management. The [Architectural Reference](suite-reference/_index.md) explains this organizational specialization of engineering and its [coverage limits (Management.Reference:7)](suite-reference/08-management-reference-7---continuity-and-coverage.md).
 
-For maintained equipment, [Maintenance Engineering and Management](../engineering-dpf-suite/mnt/_index.md) supplies its full methods from Engineering. For personnel decisions and work participation, [Human Resource Management](hrm/_index.md) connects assessment, reward, voice and participation with the conditions of the work. When a work adjustment requires clinical judgement, HRM obtains qualified help and arranges the resulting work restrictions with those responsible for the work. People's own interests remain part of these decisions. For a person's capability, use [Human Capability Engineering](../human-capability-engineering-dpf-suite/_index.md). A manager may perform a method when capable or obtain its result from another contributor. The [organizational construction and maintenance account (Management.Reference:3.1)](suite-reference/04-management-reference-3---what-makes-these-fields-a-whole.md#managementreference31---organizational-construction-and-maintenance-use) explains how organizational choices and maintenance conditions constrain one another.
+For maintained equipment, [Maintenance Engineering and Management](../engineering-dpf-suite/mnt/_index.md) supplies its full methods from Engineering.
+
+For personnel decisions and work participation, [Human Resource Management](hrm/_index.md) connects assessment, reward, voice and participation with the conditions of the work. When a work adjustment requires clinical judgement, HRM obtains qualified help and arranges the resulting work restrictions with those responsible for the work. People's own interests remain part of these decisions.
+
+For a person's capability, use [Human Capability Engineering](../human-capability-engineering-dpf-suite/_index.md).
+
+A manager may perform a method when capable or obtain its result from another contributor. The [organizational construction and maintenance account (Management.Reference:3.1)](suite-reference/04-management-reference-3---what-makes-these-fields-a-whole.md#managementreference31---organizational-construction-and-maintenance-use) explains how organizational choices and maintenance conditions constrain one another.
 
 ## Organize conditions for continuing development
 

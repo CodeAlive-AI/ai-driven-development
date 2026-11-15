@@ -5,15 +5,15 @@
 
 ### KCAE.INDEX:1 - Problem frame
 
-Use this when repeated questions concern a large corpus and the useful source, phrase or contribution is often unknown. The governed object is the reusable retrieval arrangement: indexed units, selection grounds, query operations, result combination and independent source access. Its useful result is an implemented or implementable route design that can expose material a single representation would miss. The source reader and workload must be available. If direct reading of a bounded dossier already supplies the result at acceptable cost, it is a sufficient rival.
+Use this when repeated questions concern a large corpus and the useful source, phrase or contribution is often unknown. Design a reusable retrieval arrangement with indexed units, the grounds for selecting candidates, query operations, a way to combine results and independent access to the sources. The result is an implemented or implementable design that can expose material a single representation would miss. The source reader and workload must be available. If direct reading of a bounded dossier already supplies the result at acceptable cost, it is a sufficient rival.
 
 ### KCAE.INDEX:2 - Problem
 
-A lexical system can miss another profession's vocabulary. A dense embedding can blur negation or a rare identifier. A summary tree can exclude the only branch containing an exception. Adding a second endpoint over the same summaries preserves the same omission. Merely listing these technologies leaves the engineer without the construction that joins their strengths, pays their maintenance cost and preserves a way beyond their common blind spots.
+A lexical system can miss another profession's vocabulary. A dense embedding can blur negation or a rare identifier. A summary tree can exclude the only branch containing an exception. Adding a second endpoint over the same summaries preserves the same omission. The engineer needs to combine their strengths, provide for the cost of maintaining the routes and preserve a route to material they all miss.
 
 ### KCAE.INDEX:3 - Forces
 
-Prepared views reduce recurring work but cost construction and refresh. Several views increase discovery opportunities and duplicate results. Early filtering saves work and can exclude the unknown answer. Rich context improves interpretation but lowers the number of candidates that fit a fixed budget. The aim is a useful and maintainable arrangement for the workload, not an exhaustive representation of all knowledge.
+Prepared views reduce recurring work but cost construction and refresh. Several views increase discovery opportunities and duplicate results. Early filtering saves work and can exclude the unknown answer. Rich context improves interpretation but lowers the number of candidates that fit a fixed budget. Choose the arrangement for its usefulness and maintenance cost on this workload.
 
 ### KCAE.INDEX:4 - Solution
 
@@ -27,21 +27,21 @@ Choose retrieval units by the distinctions the queries need. Index whole source 
 
 #### KCAE.INDEX:4.2 - Construct views with different selection grounds
 
-For an exact/lexical route, define normalization and fields deliberately. Preserve exact identifiers and error codes even if a second field lowercases, stems or expands terms. Decide how the languages in the actual corpus are tokenized. A BM25-style inverted index ranks term matches; a raw-text search remains useful for newly changed or unusual strings that the index does not yet represent. Test punctuation-sensitive identifiers, inflections and negation-bearing phrases on actual source snippets. Full-text relevance and exact equality are different operations.
+For an exact/lexical route, choose the normalization rules and fields. Preserve exact identifiers and error codes even if a second field lowercases, stems or expands terms. Decide how the languages in the corpus are tokenized. A BM25-style inverted index ranks term matches; a raw-text search remains useful for newly changed or unusual strings that the index does not yet represent. Test punctuation-sensitive identifiers, inflections and negation-bearing phrases on excerpts from the source. Full-text relevance and exact equality are different operations.
 
 For a dense route, select an embedding model whose language and domain behaviour can be examined on the workload. Embed source units, not only cards. Use the compatible query encoding and similarity operation; record model, dimensions, preprocessing, normalization and unit-generation versions. Keep independently built spaces separate until compatibility has been established. Comparing a new query embedding with vectors from an incompatible earlier model yields a numerically computable but uninterpretable score.
 
-An approximate nearest-neighbour index trades search work and storage for approximation. On a manageable, representative subset, compare its returned neighbours with an exact search in the same vector space. This tests approximation, not semantic relevance. Separately judge whether the model ranks the needed source distinctions. A high approximation recall cannot repair an embedding that never captured the relevant condition. Token-level late interaction is another candidate when finer matching earns its additional representation and query cost; KCAE.Profiles:1 explains the ColBERT lineage without making it mandatory.
+An approximate nearest-neighbour index trades search work and storage for approximation. On a manageable, representative subset, compare its returned neighbours with an exact search in the same vector space. This tests approximation, not semantic relevance. Separately judge whether the model ranks the needed source distinctions. A high approximation recall cannot repair an embedding that never captured the relevant condition. Token-level late interaction is another candidate when finer matching earns its additional representation and query cost; KCAE.Profiles:1 explains how ColBERT developed this approach.
 
 For a structural route, extract relations whose meaning is established: section containment, explicit source references, table ownership, edition succession or symbol definitions from a qualified code parser. Store relation kind, source basis and target identity. A query such as “what defines this symbol?” can use that structure directly. A query such as “what would improve this work?” needs additional interpretation; proximity in a document graph does not establish useful contribution.
 
-For broad corpus questions, consider summaries or entity/community views at several scales. They can expose themes that local nearest-neighbour retrieval scatters. Retain source membership for each summary and permit leaf/original retrieval independently of the hierarchy. If an answer claims “the main objections across this corpus,” its sampling and coverage question differs from finding one useful objection. KCAE.SEARCH:4.6 constructs the coverage-to-answer operation; KCAE.ASSESS checks both its individual claims and the scope of its aggregate. A view supplies material to that operation, not the broad conclusion by itself.
+For broad corpus questions, consider summaries or entity/community views at several scales. They can expose themes that local nearest-neighbour retrieval scatters. Retain source membership for each summary and permit leaf/original retrieval independently of the hierarchy. If an answer claims “the main objections across this corpus,” its sampling and coverage question differs from finding one useful objection. KCAE.SEARCH:4.6 shows how to build an answer with that coverage; KCAE.ASSESS checks both its individual claims and the scope of its aggregate. Use the view to find material for that synthesis.
 
 #### KCAE.INDEX:4.3 - Make selection filters explicit
 
 Apply access restrictions before material can reach an unauthorized component. Other filters are claims about the question. If the user asks about current operational policy and an authority rule selects the governing edition, use that rule; if the question asks about history or conflicts, retain the relevant older editions. Do not infer a subject/Suite filter from the first few words and then make every route inherit it.
 
-Compare early filtering with later assessment. Early exclusion is appropriate when the predicate is reliable and required, such as an access boundary. A guessed topic is better used as one retrieval preference with a broad route still available. When a route supports only post-filtering of its first K hits, permission-safe candidate inspection may still suffer poor recall because eligible hits were below K. Over-fetching or a natively filtered index can help; measure the actual operation and report the boundary.
+Compare early filtering with later assessment. Early exclusion is appropriate when the predicate is reliable and required, such as an access boundary. A guessed topic is better used as one retrieval preference with a broad route still available. When a route supports only post-filtering of its first K hits, permission-safe candidate inspection may still suffer poor recall because eligible hits were below K. Over-fetching or a natively filtered index can help; measure recall for the operation as implemented and report its limits.
 
 A route can fail because the useful document is absent, its extraction is incomplete, the model missed its meaning, the approximate search lost it, a filter excluded it, or the candidate window was too small. Preserve enough route information to distinguish these causes during evaluation. Otherwise every failure invites another model while the source never entered the index.
 
@@ -49,13 +49,13 @@ A route can fail because the useful document is absent, its extraction is incomp
 
 Run the selected routes against the same intended corpus/edition conditions. Deduplicate by source identity and overlap, while retaining which routes found a candidate. Keep competing editions distinct where the use needs them. Merge adjacent fragments into one reading candidate when their overlap would otherwise consume the budget repeatedly; do not merge conflicting source claims merely because their words are similar.
 
-Raw lexical, vector and graph scores usually have different meanings. A simple candidate-combination baseline is rank fusion. Reciprocal rank fusion assigns a candidate the sum of 1/(c + rank) across lists in which it appears. It uses order rather than pretending that raw scores share a scale. The positive constant c controls how much top ranks dominate; the original 2009 study used 60, which is historical experimental selection rather than a universal setting. [RRF source](https://cormack.uwaterloo.ca/cormack/cormacksigir09-rrf.pdf).
+Raw lexical, vector and graph scores usually have different meanings. A simple candidate-combination baseline is rank fusion. Reciprocal rank fusion assigns a candidate the sum of 1/(c + rank) across lists in which it appears. It uses order without assuming that raw scores share a scale. The positive constant c controls how much top ranks dominate; the original 2009 study used 60, a value chosen for that experiment. [RRF source](https://cormack.uwaterloo.ca/cormack/cormacksigir09-rrf.pdf).
 
 Fusion still favours material with several appearances. Preserve a tested allocation for route-unique candidates before the later shortlist: for example, take a fused core, then admit the highest-ranked unrepresented candidate from each materially different route, within the same budget. Treat query paraphrases from one model as related search attempts, not independent votes proving relevance. Compare this diversity policy with simple fusion on held-out questions; keep it only where it recovers valuable contributions at acceptable cost.
 
-For a concrete constructed pool, suppose lexical order is A, B, C and dense order is D, A, B. With c = 60, A receives 1/61 + 1/62, B receives 1/62 + 1/63, and D receives 1/61. A and B win the top two positions because each appears in both lists. The route-unique D disappears from a two-item shortlist. Retaining D for inspection may expose a cross-language exception. Its eventual usefulness must be judged from the source; its uniqueness is a reason to inspect, not evidence of truth.
+For example, suppose lexical order is A, B, C and dense order is D, A, B. With c = 60, A receives 1/61 + 1/62, B receives 1/62 + 1/63, and D receives 1/61. A and B win the top two positions because each appears in both lists. The route-unique D disappears from a two-item shortlist. Retaining D for inspection may expose a cross-language exception. Its eventual usefulness must be judged from the source; its uniqueness is a reason to inspect, not evidence of truth.
 
-Choose candidate-window size from downstream reading capacity and error costs. A pool of 100 hits is an internal search result, not a request to stuff 100 fragments into the principal agent's context. Assess and expand within the search service or separate reader where supported; deliver the sufficient result through KCAE.DELIVER. Too narrow a pool cannot be repaired by a perfect reranker, because the relevant source never reaches it.
+Choose candidate-window size from downstream reading capacity and error costs. A pool of 100 hits can remain in the search service while the principal agent receives the material it needs. Assess and expand within the search service or separate reader where supported; deliver the sufficient result through KCAE.DELIVER. Too narrow a pool cannot be repaired by a perfect reranker, because the relevant source never reaches it.
 
 #### KCAE.INDEX:4.5 - Provide an independent original-text route
 
@@ -75,7 +75,7 @@ Test complementary retrieval on cases independently authored from the working ne
 
 CedarBench has a hypothetical snapshot of 6,000 documents and 32,000 retrieval units. Many support requests use customer vocabulary absent from the English manual. The engineer builds a lexical field preserving product identifiers, a dense field from complete source units, structural parent/reference relations and an exact reader. The query “our analyst removes double reports every morning” yields a throughput article lexically and a receipt-reconciliation note semantically. The pool retains both and opens their conditions.
 
-A new supplier note appears before its embedding is ready. The current-source inventory and direct reader expose it; the route reports that dense coverage lags. An independent block pass can examine the new units. This is a designed integration of persistent additional retrieval and current source reading, not proof that the dense route is superior. In a three-document historical dossier, a cached full reading can replace this machinery with less total effort.
+A new supplier note appears before its embedding is ready. The current-source inventory and direct reader expose it; the route reports that dense coverage lags. An independent block pass can examine the new units. The example combines a maintained retrieval view with a reader for current sources. In a three-document historical dossier, a cached full reading can replace this machinery with less total effort.
 
 ### KCAE.INDEX:6 - Bias-Annotation
 
@@ -91,11 +91,11 @@ Calling several searches over one card store “independent” hides a shared bo
 
 ### KCAE.INDEX:9 - Consequences
 
-Unknown material becomes reachable through more than one selection ground, and the system can explain which parts remain unsearched. The design increases storage, update and evaluation work. It cannot guarantee future semantic completeness; it provides attainable ways to investigate consequential omissions.
+Unknown material becomes reachable through more than one selection ground, and the system can explain which parts remain unsearched. The design increases storage, update and evaluation work. If a consequential omission becomes apparent, an independent route can help investigate it.
 
 ### KCAE.INDEX:10 - Architectural Rationale
 
-Prepared representations and query-time inspection solve different cost problems. Their common source-address contract makes them interchangeable and combinable, while route independence protects against compression becoming an exclusive ontology. The evaluation decides how much of that plurality earns its cost.
+Prepared representations and query-time inspection solve different cost problems. Their common source-address contract makes them interchangeable and combinable, while route independence protects against compression becoming an exclusive ontology. Use the evaluation to decide which routes earn their cost.
 
 ### KCAE.INDEX:11 - SoTA-Echoing
 

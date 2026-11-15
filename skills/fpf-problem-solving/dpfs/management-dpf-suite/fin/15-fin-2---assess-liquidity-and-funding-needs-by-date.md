@@ -10,7 +10,7 @@ A payment is approaching and a bank balance, profit figure or unused credit limi
 
 ### FIN.2:1 - Problem frame
 
-The treasurer or analyst is preparing a liquidity account for a named paying entity, currency and horizon. This method recovers usable balances and timed flows. It does not itself choose a capital structure, obtain a lender's consent or execute a payment.
+The treasurer or analyst is preparing a liquidity account for a named paying entity, currency and horizon. This method recovers usable balances and timed flows. Choosing a capital structure, obtaining a lender’s consent and executing payment are separate tasks.
 
 ### FIN.2:2 - Problem
 
@@ -23,13 +23,13 @@ Protect payment continuity without keeping unnecessary idle cash. Retain decisio
 ### FIN.2:4 - Solution
 
 1. Choose the paying entity, currencies, payment dates and minimum usable cash required at each date. Include the whole baseline of other receipts and payments. Use daily or intraday intervals around tight dates, even when the remaining horizon is monthly.
-2. Reconcile opening bank and cash balances to the usable amount: remove restricted, pledged, trapped or unsettled amounts as the actual arrangements require. Identify an intercompany transfer by its source, permitted route, cost and earliest usable time; common ownership alone supplies none of these.
+2. Reconcile opening bank and cash balances to the usable amount: remove restricted, pledged, trapped or unsettled amounts as their terms require. Identify an intercompany transfer by its source, permitted route, cost and earliest usable time; common ownership alone supplies none of these.
 3. Place material operating payments, collections, taxes, debt service, investments and distributions on the timeline. Distinguish agreed dates from expectations. Keep alternative collection or draw assumptions as scenarios; do not add a hoped-for receipt to a committed one.
 4. For each facility, establish the remaining commitment, borrower, currency, expiry, draw conditions, notice period, cutoff, collateral and fees. Count a draw as available only on the scenario whose conditions support it. A revocable indicative line contributes a possible funding alternative, not current cash.
 5. Calculate each closing balance as opening usable cash plus usable inflows minus payments. For a required reserve, funding need at a date is the positive amount by which the pre-funding balance falls below that reserve. Solve for the gross draw when fees are withheld; include later interest and repayment.
 6. Recalculate the whole timeline with the proposed response. A draw that cures today's gap can create a larger maturity gap. Return the amounts, dates, conditions and affected commitments. Use FIN.3 for working-capital alternatives, FIN.10 for financing terms, or FIN.15 for a selected permitted treasury action.
 
-Stop when the receiving decision can distinguish a funded path from its unresolved conditions. If the right to money or the contract's event behavior is unclear, obtain that specific account through [FDM.1 through FDM.3][FDM]. If profit and cash disagree materially, use FIN.4 and the applicable [MA.4][MA] reconciliation.
+Stop when the decision-maker can identify a funded path, an uncovered payment or the condition on which funding depends. If the right to money or the contract's event behavior is unclear, obtain that specific account through [FDM.1 through FDM.3][FDM]. If profit and cash disagree materially, use FIN.4 and the applicable [MA.4][MA] reconciliation.
 
 If you can perform a calculation but cannot explain how it answers this liquidity question, use [FPF B.1.5.EW][EW] to recover the connection. Identify the financial operation being performed through it, the conditions that make it fit the payment plan, and any constituent know-how or contribution still needed. The example below shows that relation.
 
@@ -55,14 +55,14 @@ Near a threatened payment, use event dates or intervals short enough to expose t
 
 Carry the horizon through the proposed remedy's repayments and the operating cycle it finances. A draw can remove this week's shortfall while creating a larger maturity next month. If the decision concerns continuing availability, also inspect the next seasonal low, renewal date and material collateral reset. Stop once the relevant obligation and its material financing consequences are covered, and identify any later dependence.
 
-For each scenario and date, begin with the previous closing balance, add usable receipts and actual financing proceeds, and subtract all payments, financing charges and repayments. Compare the resulting balance with the applicable minimum reserve. The reserve is a requirement or a chosen protection level; keeping it separate from the balance lets a reader distinguish inability to pay from an intended safety margin being consumed. If a model allows a negative balance, that row describes an unmet need unless an actual overdraft arrangement supplies it.
+For each scenario and date, begin with the previous closing balance, add receipts and financing proceeds available in that scenario, and subtract all payments, financing charges and repayments. Compare the resulting balance with the applicable minimum reserve. The reserve is a requirement or a chosen protection level; keeping it separate from the balance lets a reader distinguish inability to pay from an intended safety margin being consumed. If a model allows a negative balance, that row describes an unmet need unless an actual overdraft arrangement supplies it.
 
 
 
 #### FIN.2:4.3 - Derive availability and the gross funding need together
 
 
-A credit limit is only one constraint on drawing. The available amount may also depend on eligible receivables or inventory, collateral valuations, prior drawings, other uses of the facility and conditions in FIN.12. For a simple asset-backed line, a stipulated rule might permit total drawings up to the smaller of the commitment and a percentage of eligible receivables. Incremental room is that amount less existing drawings and other reserved utilization. Read the actual agreement before using such a formula.
+A credit limit is only one constraint on drawing. The available amount may also depend on eligible receivables or inventory, collateral valuations, prior drawings, other uses of the facility and conditions in FIN.12. For a simple asset-backed line, a stipulated rule might permit total drawings up to the smaller of the commitment and a percentage of eligible receivables. Incremental room is that amount less existing drawings and other reserved utilization. Check the formula against the agreement that governs the draw.
 
 A decline in receivable quality can simultaneously delay collections and reduce the line that was expected to bridge them. Therefore project availability in the same adverse state as the cash shortfall. Holding yesterday's line headroom fixed while stressing receipts breaks the proposed protection. A breach may also affect renewal or draw permission before it changes a contractual maturity.
 
@@ -77,16 +77,16 @@ A reserve should answer a concrete exposure: uncertain collections, urgent repai
 
 Avoid treating all uncertainties as independent when they arise from the same cause. A customer's failure can remove a receipt, reduce collateral eligibility and make a financier less willing to extend credit. Equally, adding every imaginable worst outcome can immobilize money without improving the present decision. Select material states from the operating and financing exposures, explain the protection sought, and show the remaining exposure when a full guarantee is unattainable. A sufficiently supported probability model can estimate shortfall likelihood and magnitude; an average balance still does not prove payment capacity.
 
-Compare the cost of holding or arranging protection with the consequences it prevents. Cash holdings may earn a return but have opportunity cost; committed facilities can charge for unused capacity and still contain conditions. Selling assets quickly may realize less than their ordinary value. These costs belong to the choice of protection, while the dated account establishes whether it works. FIN.5–FIN.6 supply the value comparison when material.
+Compare the cost of holding or arranging protection with the consequences it prevents. Cash holdings may earn a return but have opportunity cost; a committed facility may charge for unused capacity and impose conditions on drawing. Selling assets quickly may realize less than their ordinary value. These costs belong to the choice of protection, while the dated account establishes whether it works. FIN.5–FIN.6 supply the value comparison when material.
 
 
 
 #### FIN.2:4.5 - Change the attainable plan and keep the return visible
 
 
-If the account fails, construct a remedy that changes a dated receipt, payment or available financing action. Accelerating a customer payment has a price and requires acceptance. Extending a supplier term changes an obligation only when the arrangement permits it. Reducing inventory may undermine delivery and hence later receipts. FIN.3 compares these operating terms; FIN.10 constructs or compares finance; FIN.12 identifies restrictions and remedies. When another entity's cash could help but no adequate transfer or support exists, FIN.23 constructs that financial relation and tests both entities' needs. Return their actual consequences to the same account before relying on the repair.
+If the account fails, construct a remedy that changes a dated receipt, payment or available financing action. Accelerating a customer payment has a price and requires acceptance. Extending a supplier term changes an obligation only when the arrangement permits it. Reducing inventory may undermine delivery and hence later receipts. FIN.3 compares these operating terms; FIN.10 constructs or compares finance; FIN.12 identifies restrictions and remedies. When another entity's cash could help but no adequate transfer or support exists, FIN.23 constructs that financial relation and tests both entities' needs. Carry the resulting receipts, payments and availability conditions back to the same account before relying on the repair.
 
-Include the decision's execution lead time. An asset sale closing after payroll is not a payroll remedy. A loan with enough face amount but an unsatisfied condition is not yet one either. When no attainable plan covers the obligation, state the uncovered date and amount and the action-changing missing condition; FIN.22 becomes relevant if ordinary adjustment is insufficient. A request for consent is not itself consent.
+Include the decision's execution lead time. An asset sale closing after payroll is not a payroll remedy. A loan with enough face amount but an unsatisfied condition is not yet one either. When no attainable plan covers the obligation, state the uncovered date and amount and the action-changing missing condition; FIN.22 becomes relevant if ordinary adjustment is insufficient. Apply the terms that govern a pending request. Count the requested consent only when it has been granted.
 
 Roll the forecast forward using actual receipts and payments. Explain material deviations as timing, amount, scope or failed action, then revise the remaining account and response. Do not erase the original reason for a borrowing need by relabeling an overdue receipt as collected. For a genuine temporary surplus, preserve access before the next required use: compare maturity, settlement, credit risk and redemption conditions of any proposed placement. The gross bank balance is not automatically available for investment or payout.
 
@@ -103,7 +103,7 @@ A constructed order brings 1,200 on day 28 and requires payments of 440 on day 0
 
 A committed facility can provide up to 80 before the day-7 payment. Its fee of 3 is withheld on drawing, and interest of 2 is paid with principal on day 28. A gross draw of 43 supplies the missing 40; day-7 cash becomes zero. Repayment of 45 leaves day-28 cash at 1,155. With a required reserve of 10, draw 53 instead; a draw of 43 no longer suffices. Assume the same stated fee and interest for these illustrative amounts.
 
-If collection moves to day 40 while repayment stays on day 28, the first financing path leaves a gap of 45 on day 28. An actual extension or replacement is needed. Neither the unused limit nor the order's positive contribution establishes that extension.
+If collection moves to day 40 while repayment stays on day 28, the first financing path leaves a gap of 45 on day 28. To cover that gap, the corporation needs an agreed extension or replacement funding available by day 28. Neither the unused limit nor the order's positive contribution establishes that extension.
 
 #### FIN.2:5.1 - The calculation within the liquidity work
 
@@ -111,7 +111,7 @@ While preparing this case's payment plan, an analyst solves d − 3 = 40, where 
 
 Raise the required reserve from zero to 10: the same funding operation now requires d − 3 = 50, giving 53. Correctly repeating the old equation would no longer perform the needed sizing. Conversely, someone who can subtract amounts but cannot translate a withheld fee into net proceeds lacks a constituent operation needed for this plan. They can obtain an explanation and practise that operation, or obtain a qualified calculation whose conditions they can use. More repetitions of an unexplained spreadsheet formula do not supply the missing connection.
 
-These are connected descriptions of the analyst's work. The lender's transfer is a different occurrence whose availability the plan relies on. Sending the completed account to a decision maker is a subsequent use.
+Solving for the draw and preparing the liquidity plan describe the analyst's work at different levels. When costing this work, count the time spent on the calculation once. The lender's transfer is a different occurrence whose availability the plan relies on. Sending the completed account to a decision maker is a subsequent use.
 
 
 
@@ -130,7 +130,7 @@ A drawable line of 50 is additionally limited to 80% of eligible receivables. Fo
 
 Now a customer's dispute moves 25 of week-1 receipts to week 3 and makes 15 of the 40 receivables ineligible at the draw date. Unfinanced cash is −25, 25 and 40. The amount needed to preserve the reserve in week 1 is 35, but the line permits only 0.80 × 25 = 20. Drawing 20 leaves cash −5; neither the commitment of 50 nor the eventual receipt removes the week-1 failure.
 
-Suppose the supplier actually agrees to move 15 of week-1 payment to week 2 without charge. With that change and the draw of 20, balances become 10, 45 and 60. After week-3 repayment of 20 and stipulated interest 2, cash is 38. Thus the operating concession and the available finance jointly restore the selected reserve. They are separate attainable actions, and the deferred 15 is paid rather than lost from the model. Without the supplier's agreement this combined route remains conditional. If payments precede the assumed draw within week 1, refine the account before claiming it works.
+Suppose the supplier agrees to move 15 of week-1 payment to week 2 without charge. With that change and the draw of 20, balances become 10, 45 and 60. After week-3 repayment of 20 and stipulated interest 2, cash is 38. Thus the operating concession and the available finance jointly restore the selected reserve. They are separate attainable actions, and the deferred 15 is paid rather than lost from the model. Without the supplier's agreement this combined route remains conditional. If payments precede the assumed draw within week 1, refine the account before claiming it works.
 
 
 
@@ -141,9 +141,9 @@ Vary the delayed-receipt case above by adding a later contractual test. At the t
 
 First suppose the test and cure deadline fall after the week-2 receipt of 80 and before its operating payment of 45. Opening cash for that week is 10. Repaying 12 leaves 10 + 80 − 12 − 45 = 33 after the operating payment, with principal 8 outstanding. Week 3 adds net operating cash of 15, giving 48; repayment of 8 plus the stipulated interest 2 leaves 38. For this variant, the contract keeps the total interest payment at 2 despite the earlier partial repayment. There are no other charges. The final balance matches the preceding case, but the repayment consumes liquidity earlier.
 
-Alternatively, the company can supply previously unpledged eligible receivables of 15 if they are actually available and the agreement admits them. Their completed acceptance raises the base to 25 and permitted debt back to 20. This cures the overadvance without a cash repayment: week-2 cash remains 45, and the original week-3 repayment of 22 leaves 38. These claims are security, not another cash receipt. Check any effect of pledging them on other financing; the illustration assumes no competing pledge or cost.
+Alternatively, the company can supply previously unpledged eligible receivables of 15 if they are available and the agreement admits them. Their completed acceptance raises the base to 25 and permitted debt back to 20. This cures the overadvance without a cash repayment: week-2 cash remains 45, and the original week-3 repayment of 22 leaves 38. These claims are security, not another cash receipt. Check any effect of pledging them on other financing; the illustration assumes no competing pledge or cost.
 
-Now move the test and cash cure deadline before the receipt of 80, with eligible receivables still 10. With only 10 on hand, repayment of 12 is unavailable; keeping the reserve of 10 would require 12 of new usable cash before that deadline. The later receipt cannot satisfy the earlier requirement. The company must obtain timely funding, complete an eligible collateral cure, obtain an effective amendment or return the unresolved failure. A request still awaiting acceptance does not change the account. FIN.12 supplies the actual cure rule and FIN.10 the terms of any replacement funding.
+Now move the test and cash cure deadline before the receipt of 80, with eligible receivables still 10. With only 10 on hand, repayment of 12 is unavailable; keeping the reserve of 10 would require 12 of new usable cash before that deadline. The later receipt cannot satisfy the earlier requirement. The company must obtain timely funding, complete an eligible collateral cure, obtain an effective amendment or return the unresolved failure. A request still awaiting acceptance does not change the account. Use FIN.12 to establish the cure rule under the agreement and FIN.10 the terms of any replacement funding.
 
 ### FIN.2:6 - Bias-Annotation
 
@@ -167,10 +167,10 @@ A dated cash account makes the decisive constraint visible before financing is r
 
 ### FIN.2:11 - SoTA-Echoing
 
-The public [CFA working-capital introduction][CFA-WC] frames the cash-conversion and liquidity problem. [OpenStax's cash-management discussion][OS-CASH] distinguishes transactional needs, precaution and accessible placements. FIN.2 develops the dated paying account, conditional availability and response timing rather than inferring payment capacity from a balance-sheet ratio. FDM.1–FDM.3 supply actual positions, support and contractual events. The constructed borrowing-base case shows why a receipt delay and lost credit capacity must be considered together. A changed payment, restriction or financing condition reopens the account.
+The public [CFA working-capital introduction][CFA-WC] frames the cash-conversion and liquidity problem. [OpenStax's cash-management discussion][OS-CASH] distinguishes transactional needs, precaution and accessible placements. FIN.2 develops the dated cash account for the payer, conditional availability and response timing rather than inferring payment capacity from a balance-sheet ratio. FDM.1–FDM.3 supply actual positions, support and contractual events. The constructed borrowing-base case shows why a receipt delay and lost credit capacity must be considered together. A changed payment, restriction or financing condition reopens the account.
 
 ### FIN.2:12 - Relations
 
-FIN.1 supplies a missing decision boundary; FIN.4 supplies a missing cash projection. FIN.3 and FIN.10 compare responses, FIN.12 examines covenant access, and FIN.15 carries out the permitted action. [FDM][FDM] resolves financial positions when needed; it does not replace the liquidity calculation.
+FIN.1 supplies a missing decision boundary; FIN.4 supplies a missing cash projection. FIN.3 and FIN.10 compare responses, FIN.12 examines covenant access, and treasury can use FIN.15 to carry out the permitted action. [FDM][FDM] resolves financial positions when needed; it does not replace the liquidity calculation.
 
 ### FIN.2:End

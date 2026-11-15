@@ -165,10 +165,10 @@ This distinction changes which interventions are worthwhile and when. Cheap comp
 
 Value information through the decisions it can improve, together with any separately justified use of the knowledge. For one decision maker with a specified probability model, a fixed finite set of available actions A, integrable utility u, and current information I, the gross instrumental value of a signal Y can be written as:
 
-\[
-\mathbb E_Y\!\left[\max_{a\in A}\mathbb E[u(a,\theta)\mid I,Y]\right]
+$$
+\mathbb E_Y\negthinspace\left[\max_{a\in A}\mathbb E[u(a,\theta)\mid I,Y]\right]
 -\max_{a\in A}\mathbb E[u(a,\theta)\mid I].
-\]
+$$
 
 The expression compares choosing after the signal with choosing without it. It assumes the signal can be ignored and the former actions retained. Acquisition, interpretation, delay and displaced opportunities enter the net comparison. If the experiment changes the system or available actions, compare those changed continuations rather than subtracting a price from an otherwise unchanged formula.
 

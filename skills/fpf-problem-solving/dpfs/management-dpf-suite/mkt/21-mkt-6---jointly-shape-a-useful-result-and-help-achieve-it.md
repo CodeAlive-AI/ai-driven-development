@@ -5,17 +5,17 @@
 
 ### MKT.6:1 - Problem frame
 
-Use this pattern when the useful result of a proposed contribution is unclear or contested, or when an acquired product or service is not yet producing that result. The work can begin before an offer is made: the people involved must discover what is worth pursuing and what each can contribute. It also applies when changed circumstances make a previously agreed result unsuitable.
+Use this pattern when the useful result of a proposed contribution is unclear or contested, or when an acquired product or service is not yet producing that result. The work can begin before an offer is made: the participants may need to establish what is worth pursuing and what each can contribute. It also applies when changed circumstances make a previously agreed result unsuitable.
 
 The result is an agreed, bounded useful outcome or a clearly limited contribution, connected to feasible customer and provider work, help and a way to reconsider the arrangement. A product supplied, an account activated, attendance completed and a useful result achieved are different events. This method connects them where a supported connection exists.
 
-The intended reader knows the subject contribution and can involve the people whose goals, authority and work matter. This method does not confer competence to set another person's life goals, provide specialist counselling or perform all the customer work. When a known customer requests a suitable ordinary contribution and its use is settled, supply that contribution; a programme of joint goal discovery would add unnecessary effort.
+The intended reader knows the subject contribution and can work with the parties whose goals, authority and contributions matter. Personal goals remain with the person concerned. Specialist counselling and the customer’s own work require their respective contributors. When a known customer requests a suitable ordinary contribution and its use is settled, supply that contribution; a programme of joint goal discovery would add unnecessary effort.
 
 ### MKT.6:2 - Problem
 
 A provider can assume that purchase reveals the customer's goal and that product use proves success. Yet the purchaser may seek a lower fee, the user less repeated work, and the manager more dependable completion. The proposed service may contribute to one of these while increasing another person's burden. A customer may also seek a wider change that no single supplier can deliver.
 
-Construct a meaningful receiving result with the relevant people before turning it into a promise. Connect the agreed contribution to access, the customer's own work, capability, assistance and other providers. Use actual progress and changed goals to continue, revise, narrow or end the arrangement.
+Construct a meaningful receiving result with the participants whose result or commitment matters before turning it into a promise. Connect the agreed contribution to access, the customer's own work, capability, assistance and other providers. Use evidence of progress and changed goals to continue, revise, narrow or end the arrangement.
 
 ### MKT.6:3 - Forces
 
@@ -31,11 +31,11 @@ Construct a meaningful receiving result with the relevant people before turning 
 
 #### MKT.6:4.1 - Recover goals, roles and the activity in which a result would matter
 
-Identify who will do the work, receive its effects, decide, pay and authorize access. Ask what each is trying to accomplish, what currently happens, what difficulty matters and what would make a change worthwhile. Recover a concrete occasion or work situation so that an attractive abstract goal can be related to actual activity. Reuse an adequate existing account; involve additional people only where their conditions could change the proposal.
+Identify who will do the work, receive its effects, decide, pay and authorize access. Establish what matters to each participant, what currently happens, what difficulty matters and what would make a change worthwhile. Recover a concrete occasion or work situation so that an attractive abstract goal can be related to what happens in that situation. Reuse an adequate existing account; involve additional participants where their conditions could change the proposal.
 
 Distinguish a broad ambition, a nearer useful result and the supplier's possible contribution. A career change can motivate learning; demonstrating a particular capability can be a nearer result; a course can supply instruction and practice. The course is neither the whole career change nor evidence that the capability has been obtained.
 
-Do not force the answers into one indicator. Record a disagreement in ordinary terms and locate its practical consequence. A purchaser's fee limit and a user's need for help may constrain different parts of the same proposal. If the people with necessary authority or knowledge are unavailable, determine whether a smaller contribution can be agreed; otherwise return the missing decision or evidence instead of inventing their assent.
+Do not force the answers into one indicator. Record a disagreement in ordinary terms and locate its practical consequence. A purchaser's fee limit and a user's need for help may constrain different parts of the same proposal. If the needed decision or knowledge is unavailable, determine whether a smaller contribution can be agreed; otherwise return the missing decision or evidence without treating the missing answer as assent.
 
 #### MKT.6:4.2 - Construct worthwhile alternatives before selecting a promise
 
@@ -47,11 +47,11 @@ Compare the directions against the important goals and constraints. Include leav
 
 #### MKT.6:4.3 - Agree what will count as useful and what is actually promised
 
-State the receiving result so that the people involved can recognize its achievement or a meaningful shortfall. Specify the subject, circumstances and useful difference; choose an observation appropriate to that difference. Recover a relevant starting condition when comparison with the present matters. The result may require a qualitative judgement, a direct work result or several observations rather than a single number.
+State the receiving result so that the participants can recognize its achievement or a meaningful shortfall. Specify the subject, circumstances and useful difference; choose an observation appropriate to that difference. Recover a relevant starting condition when comparison with the present matters. The result may require a qualitative judgement, a direct work result or several observations rather than a single number.
 
 For example, “the operator can prepare the agreed report from approved inputs without re-entering the same fields” identifies an activity and change. It does not guarantee that the report's underlying data are correct, that preparation time falls by a particular amount or that managers use it well. Add such claims only with the required contribution and evidence. A system login would establish much less than the proposed result.
 
-Agree the provider contribution, customer and partner work, necessary access and support, timing, costs or consideration, and what happens when a required condition is absent. Ask the relevant people to explain the arrangement and their next action in their own terms. Resolve incompatible interpretations before making the promise. [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) can then express the supported offer, and [MKT.4](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md) can arrange its feasible acquisition.
+Agree the provider contribution, customer and partner work, necessary access and support, timing, costs or consideration, and what happens when a required condition is absent. Check how each participant understands the arrangement and what they are to do next. In a conversation, invite the person to explain that in their own terms. Resolve incompatible interpretations before making the promise. [MKT.2](17-mkt-2---construct-and-test-an-offer-and-its-positioning.md) can then express the supported offer, and [MKT.4](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md) can arrange its feasible acquisition.
 
 If the customer does not want this form of collaboration, offer a suitable narrower contribution with clear limits or end the proposal. Consent to a purchase does not authorize an open-ended programme of goal intervention. An ordinary well-specified purchase may already contain enough agreement for use.
 
@@ -62,10 +62,10 @@ Construct the route from the acquired contribution to the receiving result. Work
 | Gap | Needed contribution |
 | --- | --- |
 | The required product or service does not exist. | Engineering develops a feasible contribution and the conditions of its supply. |
-| A required enabling condition is unavailable: materials, system access, working time or a decision from an authorized person. | The responsible authority or organisation obtains the specific enabling condition. |
+| A required enabling condition is unavailable: materials, system access, working time or a decision by the holder of the required authority. | Obtain the missing condition from its provider or the decision from the authorized holder. |
 | A person cannot yet perform the required activity. | HCD develops the needed capability with suitable practice and evidence of performance. |
 | A known action or service is not being carried out. | Operations arranges the actual work, performer and continuation. |
-| Several people's work conflicts or is unassigned. | Organisation change and the responsible managers establish compatible work assignments and enabling conditions. |
+| Several assignments conflict, or necessary work has not been assigned. | Organisation change and the responsible managers establish compatible work assignments and enabling conditions. |
 | The useful result or its grounds remain unknown. | The relevant participants resolve the choice, or MKT.12 qualifies the needed inquiry. |
 
 Specify help around the actual point of difficulty. Identify how the customer can recognize the need, reach competent assistance and continue or stop while waiting. A help article can explain an action; it does not establish that the user can perform it, has permission or has time. Escalating every problem to training can hide missing design, access or capacity.
@@ -74,11 +74,11 @@ Set the effort at a level the parties can sustain. Preserve the customer's own n
 
 #### MKT.6:4.5 - Continue from evidence of progress and the current goal
 
-Choose observation and contact points where a result could change the next move: first meaningful use, a known difficult step, a relevant work cycle or a reported exception. The timing follows the activity rather than a universal schedule of compulsory meetings. Observe whether the agreed contributions occurred, what changed in the receiving activity and how the participants now judge its usefulness.
+Choose observation and contact points where a result could inform the next action or establish what progress the parties can report: first meaningful use, a known difficult step, a relevant work cycle or a reported exception. The timing follows the activity rather than a universal schedule of compulsory meetings. Observe whether the agreed contributions occurred, what changed in the receiving activity and how the participants now judge its usefulness.
 
 Distinguish failure to supply a condition from inability to perform, a mistaken contribution and a changed goal. If access was never obtained, more reminders to use the product are unlikely to help. If access and competent use occurred but the result is unsuitable, reopen the contribution or goal. If the result is useful but maintaining it requires unsupported work, change the arrangement before scaling it.
 
-Use [OPS.6](../ops/34-ops-6---continue-cases-and-handle-exceptions.md) when a concrete case needs an executable continuation or a precise unmet condition. Use a progress record as evidence only for the claims supported by its observations and source. Use MKT.10 only when the decision depends on the intervention's causal contribution or costs; a useful observed outcome does not establish that the provider alone caused it.
+Use [OPS.6](../ops/34-ops-6---continue-cases-and-handle-exceptions.md) when a concrete case needs an executable continuation or a precise unmet condition. Use a progress record as evidence only for the claims supported by its observations and source. Use MKT.10 when the decision or a claim you need to support depends on the intervention’s contribution or costs. A useful observed outcome does not establish that the provider alone caused it.
 
 #### MKT.6:4.6 - Reframe, narrow or close the contribution when conditions change
 
@@ -96,7 +96,7 @@ The participants compare three directions: retain the current tool and improve t
 
 They agree on a limited result for the next cycle: the operator prepares that report from approved inputs without re-entering the same mapped fields. The purchaser's spending limit remains a constraint. The director accepts that the trial does not yet promise dependable reporting for every subsequent meeting. The operator supplies one approved sample and participates in the mapping session; the provider supplies the supported mapping and assistance. Data validity and the authority to use the sample remain separate necessary conditions.
 
-Before the trial, the operator can explain which inputs are permitted and what the session should produce. During use, the team observes the mapping, the operator's report preparation and the remaining manual work. Successful login is not their result. If the operator does not know how to distinguish the current approved input from an obsolete version, that precise capability needs instruction and a performance check; a general product tour would miss the difficulty.
+Before the trial, the operator can explain which inputs are permitted and what the session should produce. During use, the team observes the mapping, the operator's report preparation and the remaining manual work. Successful login is not their result. If the operator does not know how to distinguish the current approved input from an obsolete version, teach that distinction and check the operator’s performance; a general product tour would miss the difficulty.
 
 Suppose the customer later changes the required report and no longer needs the original mapping. The team first establishes the new receiving result and whether the existing contribution can support it. More reminders to use the old mapping would not restore usefulness. If the changed request requires unavailable integration, the provider can offer another bounded contribution or help end the trial with its completed work and limits clear.
 
@@ -131,7 +131,7 @@ Providers can define success by the activity their product records or by the res
 
 ### MKT.6:9 - Consequences
 
-The parties can make a more accurate promise and direct help to the actual missing contribution. They may discover that a smaller offer, another provider or no purchase is appropriate. Joint construction takes willingness, time and relevant knowledge; it should be proportionate to the uncertainty. Agreement improves coordination but does not prove future achievement or eliminate conflicting interests.
+The parties can make a more accurate promise and direct help to the contribution that is missing. They may discover that a smaller offer, another provider or no purchase is appropriate. Joint construction takes willingness, time and relevant knowledge; it should be proportionate to the uncertainty. Agreement improves coordination but does not prove future achievement or eliminate conflicting interests.
 
 ### MKT.6:10 - Architectural Rationale
 
@@ -151,6 +151,6 @@ For the missing construction before a promise, **adopt** the C.40.PC and C.40.DC
 
 MKT.1 receives changed differences between customer situations; MKT.2 expresses the agreed contribution; MKT.4 supports choice and acquisition; MKT.5 aligns the encounter. MKT.7 handles useful continuation or ending, MKT.11 coordinates promises and contributors, and MKT.12 supplies evidence for a live unknown. MKT.13 can investigate whether the resulting commercial work is repeatable.
 
-C.40.PC and C.40.DC supply worthwhile problems and development directions with supports; Strategy can relate a selected direction to capabilities and initiatives when the work is strategic. HCD, Operations and organisation change supply actual learning, performance and enabling conditions.
+C.40.PC and C.40.DC supply worthwhile problems and development directions with supports; Strategy can relate a selected direction to capabilities and initiatives when the work is strategic. HCD provides methods for developing human capability, Operations for performing the required work, and organisation change for establishing the necessary conditions.
 
 ### MKT.6:End

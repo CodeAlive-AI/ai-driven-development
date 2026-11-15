@@ -5,14 +5,14 @@
 ### SYSE.5:0 - Use This When
 
 Use this pattern when engineers can name a desired outside effect, use situation, or observed functioning
-failure, but have already treated one familiar bearer cue—for example, a component, product, service, software
+failure, but have treated one familiar bearer cue—for example, a component, product, service, software
 partition, or supplier offering—as the only candidate. Use it also when a functional diagram exists but no one
 can show which actual Systems or intended System referents could bear the contributions named by its claims under
 decision-relevant conditions—for example, operating, interface, placement, integration, or assurance conditions.
 
 The first result is an **account that compares several functional organizations with the Systems and
 interfaces that could realize them**. It records proposed many-to-many allocations, the conditions under which
-each proposal could work, conflicts among proposals, evidence limits, and the first unsupported dependency.
+each proposal could work, conflicts among proposals, evidence limits and the first unsupported dependency, if one blocks the decision.
 It is a proposal for later architecture selection. Realization, integration, and observed performance require
 their own work and evidence.
 
@@ -29,7 +29,7 @@ allocation account.
 
 For software allocations, `SYSE.6:4.4` explains how layers, pipelines, plugins and service arrangements
 change the candidate mechanisms and consequences to compare. Use that repertoire while developing
-alternatives; the style name itself supplies no allocation or performance result.
+alternatives; the style name supplies no allocation or performance result.
 
 #### SYSE.5:0.1 - Terms and Distinctions
 
@@ -61,8 +61,8 @@ variants, sites, and time.
 
 The engineer therefore needs more than functional decomposition and more than a component search. The working
 result links functional and constructive candidates to their outside use, proposed allocations, interface
-realizations, placement, integration dependencies, and evidence. The result table below states its required
-content. These selected structures answer different questions and need explicit correspondence where the decision
+realizations, placement, integration dependencies, and evidence. These selected structures answer different
+questions. State how they correspond wherever the decision
 depends on them.
 
 ### SYSE.5:2 - Problem
@@ -81,9 +81,9 @@ or continuing-change burden. Procurement and Work are
 then organized around functional labels before actual supply items, assembly relations, and evidence needs are
 known.
 
-The opposite failure is endless decomposition and candidate generation. The engineering account is useful only
-when it exposes alternatives and conflicts for a named decision question and stops at the first unsupported
-feasibility dependency.
+To avoid endless decomposition and candidate generation, return the alternatives and conflicts needed for the named
+decision. If feasibility depends on an unsupported claim, identify the first missing dependency and pause the
+commitment that relies on it.
 
 ### SYSE.5:3 - Forces
 
@@ -95,13 +95,13 @@ The move must manage these recurring tensions:
 - A general-purpose bearer can absorb several contributions, while specialization can improve, for example,
   performance, safety, energy use, evidence production, or fault containment.
 - Standard interfaces can reduce coordination cost, while compatibility, integration, substitutability, and
-  correct-use claims still need their own grounds.
+  correct-use claims need their own grounds.
 - More alternatives preserve option value, while every alternative adds Work—for example, modeling, specialist
   analysis, comparison, or evidence production.
 - Early quantitative estimates help eliminate infeasible candidates, while premature precision can hide
   unknown models, wrong subjects, or unsupported measurements.
 - AI-assisted generation can widen a functional candidate set quickly, while bearer-feasibility and
-  project-correctness claims still need project evidence.
+  project-correctness claims need project evidence.
 - Engineering Work must proceed under incomplete knowledge, while each commitment—for example, purchase,
   realization, integration or release—needs grounds appropriate to its consequences and conditions.
 - Selected structures—for example, functional, constructive, placement, control, information, configuration,
@@ -109,8 +109,8 @@ The move must manage these recurring tensions:
 
 ### SYSE.5:4 - Solution
 
-Develop several functional organizations and materially different bearer-and-interface proposals together. Enter
-at the claim that blocks the current decision, keep the outside effect and use visible, and iterate between
+Develop several functional organizations and materially different bearer-and-interface proposals together. Start
+with the claim that matters to the current decision, keep the outside effect and use visible, and iterate between
 functional and constructive accounts. Make every allocation, interface condition, conflict, evidence limit, and
 decision-relevant consequence explicit. Use `C.32` for the general multi-structure candidate palette; apply the
 Systems Engineering content below to make that palette usable for realization, integration, procurement,
@@ -120,12 +120,12 @@ assurance, and continuing change.
 
 1. **Bind the engineering decision.** Name the actual System or intended System referent whose functioning and bearer alternatives are under consideration, the decision, use situation, required outside effect or observed failure, configuration, operating envelope, horizon and protected characteristics. For a creator, state the products or classes of use that ground its required contribution; its own functions and construction remain the subject here. Use `SYSE.2` candidates and unresolved use–System mismatches when
    they are current and compatible; otherwise use a qualified direct source or record the missing result.
-2. **Restore the blocking function-like claims.** For each material contribution, use `A.6.F` to state the
+2. **Clarify the function-like claims that matter to the decision.** For each material contribution, use `A.6.F` to state the
    predicate, possible bearer, receiving whole or effect, conditions, and claim status. Begin from outside use,
    an observed internal failure, a candidate construction, or a feasibility result as the current question
    requires.
 3. **Develop several functional organizations.** Construct how contributions cooperate to produce the required
-   outside effect, using §4.1.1 when that connection is not already clear. Vary that organization together with
+   outside effect, using §4.1.1 when that connection needs further explanation. Vary that organization together with
    its possible bearers. Include decision-relevant situations—for example, operating, degraded, maintenance,
    recovery, or consequential foreseeable use. A tree is optional; use the representation that reveals the
    material transformations, exchanges, states, feedback, or mode-dependent relations.
@@ -136,9 +136,9 @@ assurance, and continuing change.
    unless they themselves carry a contribution. Vary decision-relevant structures—for example, physical principle,
    distribution, placement, redundancy, containment, control boundary, or interface grammar. State separately
    whether an actual System exists, whether it is procurable, what realization or provider Work is needed, and
-   which candidate claim still lacks support.
-5. **Write many-to-many proposed allocations.** Associate functional contribution claims and candidate bearers
-   explicitly. Permit several bearers for one contribution, several contributions for one bearer, and different
+   any candidate claim that lacks support.
+5. **Write many-to-many proposed allocations.** Associate functional contribution claims and candidate bearers.
+   Permit several bearers for one contribution, several contributions for one bearer, and different
    allocations by mode, use, configuration, place, or effectivity. Treat weak cues—for example, co-location,
    matching names, diagram overlap, product kind, ownership, or system-role assignment—only as possible evidence
    for a separately stated claim.
@@ -163,7 +163,7 @@ assurance, and continuing change.
    safety, security, fault containment, latency, placement, service access, manufacture, assembly, integration,
    supply, cost, configuration, changeability, evidence burden, and affected-System consequences. Express each
    comparison through a characteristic with an explicit subject, conditions, Scale, and comparison frame.
-   Bring in specialist Methods for the actual physics and risks.
+   Use the specialist methods needed to establish the physical and risk claims on which the comparison relies.
 10. **Examine a representative slice.** Use available evidence that supports the present claim under the needed
     representative conditions. When further challenge Work could change the decision, use `C.11.DUA` and the
     applicable `C.11` or specialist experimental-design Method to decide whether to obtain it, comparing its
@@ -214,14 +214,14 @@ need support. A coherent conditional explanation is a candidate for investigatio
 
 If automated numerical planning can help, supply compatible initial states, goal conditions, and permitted
 quantitative transformations with their units and constraints. Use the generated arrangement only within
-that model's scope. A failed or timed-out search leaves the modeled search question unresolved unless its
-result establishes more; it does not show that no physical arrangement is possible. §11 compares this branch
+that model's scope. If a search stops without settling the modeled existence question, retain any support from other sources.
+An unsuccessful search alone does not rule out a physical arrangement. §11 compares this branch
 with construction that begins from less complete information.
 
 **Change a relation together with its possible realization.** Try a different physical principle, move a
 transformation, retain a resource for later use, distribute a decision, or change which interactions continue
 during failure. Follow the changed relation forward to the outside effect and back to its required inputs.
-Revise the affected bearer and interface proposals, state what still works unchanged, and expose new
+Revise the affected bearer and interface proposals, state what works unchanged, and expose new
 dependencies. If no credible means of producing a required intermediate result is known, keep that gap
 open and use specialist development or the local return in step 11.
 
@@ -249,7 +249,7 @@ adequacy from the organization alone.
 | functional alternatives | Several candidate functional organizations, or a justified smaller set; each explains how its contributions and interactions jointly produce the outside effect from the relevant inputs and states, under stated conditions and modes, with unresolved causal or functioning claims explicit. |
 | bearer-and-interface alternatives | Candidate actual Systems or intended referents, obtaining or proposed constructive and placement structures, interface specifications and physical realizations or gaps, separate existence, procurement, provider-Work, and realization claims, and materially distinguishing principles. |
 | proposed allocations | Explicit many-to-many function-to-bearer associations qualified by use, conditions, configuration, place, mode, and effectivity; actual functioning is grounded separately. |
-| feasibility and conflict | Capability needs, loads, margins, resources, placement, realization and integration dependencies, wrong-use cases, conflicting characteristics, supported and unsupported claims, and first unsupported dependency. |
+| feasibility and conflict | Capability needs, loads, margins, resources, placement, realization and integration dependencies, wrong-use cases, conflicting characteristics, supported and unsupported claims, and the first unsupported dependency if one blocks the intended commitment. |
 | evidence boundary | Models, sources, analyses or trials relied on; for performed analysis or trial work, its performer, Method, configuration, conditions, observations, uncertainty, and the claims those observations do and do not support. Retain source editions where the claims depend on them. |
 | decision use and local stop | Alternatives retained, revised, combined, or rejected; reasons and protected losses; the decision question and architecture-decision Work that can use the account; and the unsupported commitments to pause or proposals to stop. |
 
@@ -260,7 +260,7 @@ those subjects.
 #### SYSE.5:4.3 - What Changes in Practice
 
 Engineers stop asking which named component implements each box and start asking which materially
-different arrangements can produce the required outside effect under the actual use conditions. They no longer
+different arrangements can produce the required outside effect under the conditions relevant to that use. They no longer
 treat functional names as purchase items or procurement specifications. Interface standards become inspectable
 specifications and evidence questions. Failed feasibility reopens the affected functional or bearer claims instead of
 silently collapsing the candidate set or restarting the whole project.
@@ -310,7 +310,7 @@ does not replace the heat demand or the protection condition. During communicati
 mode continues regulation only from information and authority available locally; an unavailable remote
 request cannot remain a required input. If local conditions permit protection but insufficient heat delivery,
 the result is protected operation with reduced comfort, not satisfaction of the whole original requirement.
-The team must expose that loss to the architecture decision.
+Make that loss of comfort visible in the architecture decision.
 
 Now change the relation between heat production and room delivery. Proposal 3 inserts thermal storage:
 the plant can charge it when permitted, while the distribution circuit can draw stored energy later.
@@ -343,7 +343,7 @@ with different claim limits.
 
 An AI coding Agent proposes a fourth function graph and controller split. That Agent and the engineers perform
 candidate-generation and criticism Work; the generated graph is a description candidate. It enters the
-account only after its functional claims, candidate bearers, interface assumptions, and unsupported physical
+account only after its functional claims, candidate bearers, interface assumptions, and any unsupported physical
 dependencies are recovered.
 
 The account retains proposals 2 and 3 and rejects proposal 1 because its local protection split cannot satisfy
@@ -368,8 +368,8 @@ cases.
 Three recurring biases matter here. **Incumbent-form bias** lets a function tree, current parts, or a supplier
 catalogue determine the candidate architecture; start from the required effect and compare materially different
 arrangements. **Conformance-label bias** lets an interface name, standard, or certificate replace project evidence;
-state the interface claim and test it under the relevant conditions. **Fluent-generator bias** lets a plausible
-human- or AI-generated graph outrun bearer physics; recover the claims, Systems, and unsupported dependencies.
+state the interface claim and test it under the relevant conditions. **Fluent-generator bias** makes a plausible function graph look feasible
+even when the proposed bearers cannot deliver its effects. Recover the claims, candidate Systems and any unsupported dependencies.
 
 
 ### SYSE.5:7 - Conformance Checklist
@@ -383,7 +383,7 @@ human- or AI-generated graph outrun bearer physics; recover the claims, Systems,
 | `CC-SYSE5-5` | states many-to-many proposed allocations with use, mode, configuration, place, and effectivity where they change the decision. |
 | `CC-SYSE5-6` | separates interface specifications, physical realizations, connections, interactions, and compatibility evidence. |
 | `CC-SYSE5-7` | challenges consequential load, failure, integration, and wrong-use cases using available evidence, states its supported and unexamined boundaries, and selects further Work only when its attainable contribution warrants the whole burden. |
-| `CC-SYSE5-8` | states separately whether an actual System exists, whether it is procurable, what realization or provider Work is needed, and which candidate claim remains unsupported. |
+| `CC-SYSE5-8` | states separately whether an actual System exists, whether it is procurable, what realization or provider Work is needed, and any candidate claim that remains unsupported. |
 | `CC-SYSE5-9` | names each decision-relevant dependency by its own kind and relation to the proposal. |
 | `CC-SYSE5-10` | makes alternatives and explicit conflicts usable by named architecture-decision Work and records selection and realization as separate Work and claims. |
 
@@ -413,12 +413,12 @@ claims and AI-generated candidates become inspectable inputs. Wrong-use cases, i
 contributions, and unsupported realization dependencies appear early enough to change the architecture choice.
 
 The cost is maintaining correspondence among several selected structures and qualifying claims by use,
-configuration, and evidence. Candidate diversity also costs modeling and specialist Work. Those costs are bounded by the decision question and stop rule: stop with decision-sufficient alternatives and
-the first unsupported feasibility dependency.
+configuration, and evidence. Candidate diversity also costs modelling and specialist work. Stop when the alternatives suffice for the decision,
+or identify the first unsupported dependency that prevents a commitment.
 
 ### SYSE.5:10 - Rationale
 
-FPF already explains functions, structures, modules, interfaces, candidate synthesis, and architecture choices.
+FPF explains functions, structures, modules, interfaces, candidate synthesis, and architecture choices.
 Apply these to engineering by keeping the required outside effect and use visible while engineers iteratively
 develop functional organizations, actual or intended bearer arrangements,
 many-to-many allocations, physically meaningful interfaces, realization dependencies, wrong-use challenges,
@@ -433,17 +433,17 @@ architecture decision?
 
 The selected answer is the synthesis in §4.1: construct a cooperating arrangement from relevant inputs and
 states, reason through its effect, and vary its relations together with possible bearers. Preserve unknowns
-where the decision can proceed conditionally; return a missing physical or operational contribution to its
-actual producer. §4.1.1 supplies that connection and §5 works it through a changed timing dependency.
+where the decision can proceed conditionally; obtain a missing physical or operational result from an existing source
+or a contributor who can produce it. §4.1.1 supplies that connection and §5 works it through a changed timing dependency.
 
 A serious alternative is the enhanced sequence diagram of [Yildirim and Campean (2020),
-§§3–4.3](https://doi.org/10.1007/s00163-020-00343-8). It already connects functional flows with possible design
+§§3–4.3](https://doi.org/10.1007/s00163-020-00343-8). It connects functional flows with possible design
 elements and supports changes to an existing arrangement. **Adapt** its treatment of transformation,
 transmission, and joining conditions in §4.1.1; use the fuller ESD when a systematic flow representation is
 needed. SYSE.5 makes representation conditional and carries the construction into alternative allocations,
 obtaining arrangements, evidence limits, and local return. Compared with developing one ESD arrangement,
 that adds comparison and realization work. The gain is that the next decision can distinguish
-different ways of obtaining the effect and the unsupported dependency of each. The heat-pump case supports
+different ways of obtaining the effect and any dependency that still needs support. The heat-pump case supports
 this conditional reasoning; it establishes neither measured effort savings nor general superiority.
 
 For a compatible quantified problem, [Rosenthal, Heesch, and Niggemann (2026),
@@ -483,9 +483,9 @@ test, AI-use boundary, or assembly/economic claim when its source or use conditi
 
 ### SYSE.5:12 - Relations
 
-- When compatible, practitioners can use linked use/System candidates and unresolved mismatches from a
-  `SYSE.2` result as inputs. They must still check the subject, configuration, horizon, evidence, and compatibility
-  before developing the alternatives in this account.
+- Practitioners can use linked use/System candidates and unresolved mismatches from `SYSE.2` when its result fits the present subject,
+  configuration, horizon and evidence needs. Establish that fit from the available grounds.
+  Keep any unresolved condition with the proposal it affects.
 - Use `A.6.F` to restore each function-like claim and possible bearer. `A.6.M` governs module and interface
   claims; `A.22` and `C.30` govern selected structures and architecture relations. Applying those patterns alone
   does not produce the Systems Engineering allocation account defined here.
@@ -500,10 +500,10 @@ test, AI-use boundary, or assembly/economic claim when its source or use conditi
   select the architecture.
 - When an unsupported realization or build-the-builder dependency, evidence claim, description-correspondence
   problem, or assurance question is current, apply `SYSE.3`, `SYSE.10`, `SYSE.7`, or `SYSE.4` respectively to
-  its own subjects and sources. The realization dependency, evidence claim, description-correspondence problem and assurance question concern different engineering subjects and need their own supported answers. The same Work may supply several answers if each meets its receiving question's conditions. A description ensemble remains distinct from candidate Systems, allocations,
+  its own subjects and sources. The same work may supply several answers if each meets the conditions of its receiving question. Distinguish the descriptions from the candidate Systems, allocations,
   interfaces, and the selected architecture.
 - Practitioners can reuse a compatible `SYSE.5` result in `MDPE.3` when an engineered instrument,
-  robot, hybrid body, venue, or software System is itself an architecture subject in the performing whole. Recheck
+  robot, hybrid body, venue, or software System is an architecture subject in the performing whole. Recheck
   the reused result against the MDPE subjects, authority, conditions, evidence, and current music-and-dance
   sources.
 - Agents performing downstream application Work—for example procurement, manufacturing, configuration,

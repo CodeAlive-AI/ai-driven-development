@@ -24,7 +24,7 @@ Use an already suitable method without deriving another. When the candidates are
 
 A transformed mathematical description can look like an improved method while omitting the action that would realize it. Conversely, a useful transformation may remain an equation because nobody reconstructs the resulting work.
 
-The main difficulty is that mathematical preservation has a chosen scope. Two constructions may produce the same final value while requiring different information, changing intermediate results or using the same resource at incompatible times. A mathematical improvement can also depend on a preparation, capability or permission the performers do not have.
+A mathematical argument about preservation has a chosen scope. Two constructions may produce the same final value while requiring different information, changing intermediate results or using the same resource at incompatible times. A mathematical improvement can also depend on a preparation, capability or permission the performers do not have.
 
 The method engineer must recover the proposed working change and determine which conclusions follow from the mathematics, which depend on its correspondence to the work, and which remain unresolved.
 
@@ -41,7 +41,7 @@ The method engineer must recover the proposed working change and determine which
 
 ### MMP.22:4 - Solution
 
-MATH.17 and MATH.18 supply the actual operation transformation and its preservation or recovery relation. MMP.10 supplies a constraint formulation where one is needed, and MMP.18 keeps shared contributions and dependence truthful. The construction here returns from those mathematical results to a reusable working rule: what performers now do, which intermediate contributions remain necessary, and which new inputs, capabilities or support make the change obtainable. Use a supplied correct transformation directly; an equal expression alone is not the changed work.
+MATH.17 and MATH.18 supply the transformation of an operation and its preservation or recovery relation. MMP.10 supplies a constraint formulation where one is needed, and MMP.18 helps represent shared contributions and their dependence. The construction here returns from those mathematical results to a reusable working rule: what performers now do, which intermediate contributions remain necessary, and which new inputs, capabilities or support make the change obtainable. Use a supplied correct transformation directly; an equal expression alone is not the changed work.
 
 Relate the existing way of working to its mathematical account. Transform that account, then reconstruct the proposed working operations and their conditions. Establish the claimed mathematical consequence and the correspondence needed to use it. Return the candidate at the strength those grounds support.
 
@@ -57,7 +57,7 @@ Recover the allowed variation. The method may permit a different order or perfor
 
 Represent the contribution to be changed at the detail the transformation uses. Recover each operation's input, result and relevant state, including information available when it is performed. If an operation alters its input or the surroundings, include that effect in the account used for the transformation.
 
-MATH.17 lets operations themselves be constructed and transformed; MATH.18 compares what different accounts preserve. MMP.21 constructs the comparison with actual work requirements.
+MATH.17 lets operations themselves be constructed and transformed; MATH.18 compares what different accounts preserve. MMP.21 constructs the comparison with the requirements of the work.
 
 Distinguish several transformations that can look alike on a diagram. Copying a value can differ from obtaining a second observation. Commuting two pure functions can differ from interchanging actions on a shared object. Parallel branches in a mathematical representation do not provide two available performers.
 
@@ -121,7 +121,7 @@ new(x) = let y=f(x) in (g(y), h(y)).
 
 The required results agree for every admitted x when the same conversion and input apply and neither consumer changes y. The proposed working rule is to prepare one shared converted dataset for this pair of analyses, identify the input and conversion used, and let both consumers read that result.
 
-Suppose conversion takes 12 minutes, the two analyses take 3 and 5 minutes, and preparing access to the shared result takes 1 minute. Summed effort changes from 12+3+12+5=32 minutes to 12+1+3+5=21 minutes under those assumptions. This is an effort calculation; it does not determine calendar completion when people and tools can work concurrently.
+Suppose conversion takes 12 minutes, the two analyses take 3 and 5 minutes, and preparing access to the shared result takes 1 minute. Summed effort changes from 12+3+12+5=32 minutes to 12+1+3+5=21 minutes under those assumptions. The total effort alone does not determine the completion time when the operations can overlap.
 
 Now change the situation. The second analysis receives corrected measurements. Reusing y from the old input no longer computes h(f(x_new)). The candidate's reuse rule must identify an unchanged input and conversion, or recompute the affected preparation. The factorization remains correct; its former working precondition has failed.
 
@@ -168,7 +168,7 @@ The proposed transformation supports its stated use when:
 - a derived model consequence is distinguished from an observed working consequence;
 - a changed requirement or dependency has a usable return to the affected argument.
 
-These conditions recognize a constructed candidate. Acceptance for a particular use follows from the evidence and decision appropriate to that use; the construction imposes no trial on every proposal.
+These conditions recognize a constructed candidate. Acceptance for a particular use follows from the evidence and decision appropriate to that use.
 
 ### MMP.22:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -183,11 +183,11 @@ These conditions recognize a constructed candidate. Acceptance for a particular 
 
 ### MMP.22:9 - Consequences
 
-Mathematical reasoning can produce new method candidates rather than merely describe established practice. It also makes a rejected candidate useful: the failed transformation condition identifies what would have to change.
+Mathematical reasoning can produce a new method candidate. When a transformation fails, the failed condition identifies what would have to change.
 
 The method can reduce repeated work, change information timing or expose an unavailable operation. It may also require new support or transfer burden to another participant. A transformed rule becomes useful only at the scope where its correspondence and realization conditions hold.
 
-For human and AI work, a candidate may redistribute operations between agents. The mathematical construction exposes the required contribution; capability and authority still determine who can provide it.
+A candidate can redistribute operations among performers. The mathematical construction exposes the required contribution; capability and authority still determine who can provide it.
 
 ### MMP.22:10 - Architectural Rationale
 
@@ -199,19 +199,19 @@ This method complements comparison: MMP.21 derives consequences of supplied arra
 
 ### MMP.22:11 - SoTA-Echoing
 
-**Situated construction and reuse.** Ralyté's account of assembly-based Situational Method Engineering describes constructing a context-specific method from selected contributions. This supports retaining the working requirements and the receiving contribution while constructing a candidate. The mathematical branch here is a conceptual synthesis with transformation methods, not a claim that every method component must already be a formal mathematical object. [Author's research account](https://cui.unige.ch/~ralyte/research.html).
+**Situated construction and reuse.** Ralyté's account of assembly-based Situational Method Engineering describes constructing a context-specific method from selected contributions. This supports retaining the working requirements and the receiving contribution while constructing a candidate. This pattern combines that approach with mathematical transformations. [Author's research account](https://cui.unige.ch/~ralyte/research.html).
 
-**A redesign heuristic needs its applicability conditions.** Reijers and Limam Mansar's historical review, *Best practices in business process redesign* (2005), §§4.3.1–4.3.3, discusses reordering, early rejection and parallelism, including their cost and elapsed-time trade-offs. The adopted move is to derive a particular redesign's consequence instead of applying a slogan such as “parallelize” universally. The two-check construction above retains its output and input conditions; it is not a claim that one ordering optimizes every workflow. [Source](https://hreijers.win.tue.nl/H.A.%20Reijers%20Bestanden/BPRpractices.pdf).
+**A redesign heuristic needs its applicability conditions.** Reijers and Limam Mansar's historical review, *Best practices in business process redesign* (2005), §§4.3.1–4.3.3, discusses reordering, early rejection and parallelism, including their cost and elapsed-time trade-offs. The adopted move is to derive a particular redesign's consequence instead of applying a slogan such as “parallelize” universally. The ordering of the two checks in :5.2 depends on the required output and on which inputs are available before each check. [Source](https://hreijers.win.tue.nl/H.A.%20Reijers%20Bestanden/BPRpractices.pdf).
 
 **Transformations can construct different families.** In *On the Anatomy of Attention* (2024, v2), §§2–5, Khatri and colleagues distinguish equational diagram transformations from refinements of parameterized function families and explore recombinations of attention components. This contributes the distinction in :4.3 between equality, refinement and a changed family. Equality within one representation does not establish equal training behavior, learned parameters or performance on another task. The paper's computational setting demonstrates a possible mathematical design method; applying the same idea to other work needs its own interpretation and constraints. [Paper](https://arxiv.org/pdf/2407.02423v2).
 
-**Operational constraints remain part of the question.** Dijkman's *Business Process Optimization* (BPM 2025) frames redesign and execution choices around resources, timing, uncertainty and competing objectives. Its published summary supports the breadth of that question; it is not used here as a proof of a particular optimizer. This pattern uses mathematical transformations to obtain candidates, then retains the existing Core comparison and decision Methods rather than prescribing universal optimization. [Publication and summary](https://research.tue.nl/en/publications/business-process-optimization/).
+**Operational constraints remain part of the question.** Dijkman's *Business Process Optimization* (BPM 2025) frames redesign and execution choices around resources, timing, uncertainty and competing objectives. The published summary identifies these dimensions of the redesign question. Here mathematical transformations produce candidates. The Core Methods can help compare them or reach a decision when the work calls for it. [Publication and summary](https://research.tue.nl/en/publications/business-process-optimization/).
 
 The serious alternative is to adapt a familiar method directly or use a redesign heuristic without a mathematical model. Keep that cheaper route when it settles the consequence. Mathematical construction earns its effort when it exposes a consequential dependency, establishes a useful preserved result or produces a candidate otherwise difficult to obtain. A new source or technique reopens this choice when it changes those possibilities under the working conditions.
 
 ### MMP.22:12 - Relations
 
-- **MMP.10** supplies a constraint formulation and its answer interpretation; **MMP.18** supplies a joint model when component exchange or shared dependence is unresolved. Reuse either result at its actual scope.
+- **MMP.10** supplies a constraint formulation and its answer interpretation; **MMP.18** supplies a joint model when component exchange or shared dependence is unresolved. Reuse either result within its scope.
 - **C.39.RQ** supplies situated requirements and appraises a disputed criterion.
 - **C.32.MWA.PP** compares arrangements; **MMP.21** constructs and interprets their mathematical comparison.
 - **B.1.5.CM** distinguishes a candidate account from obtaining Method relations.

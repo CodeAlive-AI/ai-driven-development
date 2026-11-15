@@ -4,10 +4,9 @@
 
 ### SYSE.22:0 - Use This When
 
-Use this pattern when an engineering project keeps improving one problem statement and one proposed System while
-the situation around both has changed. For example, a new operating condition, affected-System consequence,
-supplier limit, technology, or evidence result can make the old problem–solution pair obsolete even while its
-backlog closes.
+Use this pattern when an engineering decision concerns alternatives for an actual or proposed product family and a changed condition calls the problem or the options into question. An observation on one unit can change the choice for the family when its shared design, admissible differences or effectivity matter. If the decision concerns only how one system can meet its own requirements, use SYSE.2.
+
+A new operating condition, an effect on another System, a supplier limit, a technology or new evidence can invalidate the old problem–solution pair even while its backlog closes.
 
 Begin with one observation or claim that can change the current engineering decision. Put the selected problem
 record beside the System option it currently constrains. State the receiving decision and the claim within it that
@@ -27,11 +26,12 @@ An Agent makes the bounded choice under authority. A `DecisionSubject` states wh
 Identify the performer and applicable authorization for any later experiment or implementation Work separately;
 the deciding Agent may also perform that Work.
 
-Use `SYSE.1`, `SYSE.16`, and `SYSE.17` first when project focus, operating environment, or affected Systems are
-unclear. Use `SYSE.2` when one linked use-and-System concept is the immediate result, and `SYSE.6` when the problem
+When project focus, the operating environment or the affected Systems are unclear, use an applicable result from
+`SYSE.1`, `SYSE.16` or `SYSE.17`, respectively, or obtain the result you need. Use `SYSE.2` when the immediate question is a linked use-and-System concept, and `SYSE.6` when the problem
 and option set are stable and only an architecture choice remains. Use `C.18` when the question concerns only an
 archive or Front. A contested problem formulation may require a Decision Design Method;
 a changed Method may require Method Engineering.
+
 
 #### SYSE.22:0.1 - Terms and Distinctions
 
@@ -86,10 +86,10 @@ and currentness conditions for individual claims so it can revise a problem with
 
 - Stable identities preserve evidence and decisions, while stale problem or family boundaries make that
   continuity misleading.
-- Retained variants preserve stepping stones, while a project still needs finite current commitments.
+- Retained variants preserve stepping stones, while a project needs finite current commitments.
 - Shared family architectures reduce repeated Work, while one environment or affected System can require a
   distinct branch.
-- Several options can remain non-dominated, while the next project move still needs a choice or probe.
+- Several options can remain non-dominated. For the next project move, decide whether to retain the set, choose a member or select a worthwhile probe.
 - Novelty can open a useful region, while admission, safety, evidence, integration, and service constraints remain.
 - Dependencies support selective reopening, while records that change no decision add maintenance cost.
 - A local gain can move cost, risk, Work, or failure exposure to another affected System.
@@ -111,14 +111,14 @@ research, realization, integration, operation, and decision Work can overlap.
 2. **Situation and problem records.** The Agent separates the world-side occurrence or condition from assertions,
    observations, and evidence about it. Each selected `ProblemCard` states detection, problematic relation or
    unresolved claim, improvement check, constraints, affected Systems, evidence, receiving use, and the premises
-   that make that evidence applicable. Include an expiry only where an actual qualification, right, resource or
+   that make that evidence applicable. Include an expiry only where a qualification, right, resource or
    promised-use window ends; a review date alone does not invalidate the claim.
 3. **Archive and portfolio.** Alternative formulations and weak signals remain in the archive under retention
    rules. The selected portfolio is finite and states why each record receives current attention or resources and
    what removes or reopens it.
 4. **System-family options.** Actual Systems and configurations, candidate architectures, family membership and
-   effectivity rules, and possible-future specifications are identified separately. Each option states what is
-   realizable now and which builder or platform change it needs.
+   effectivity rules, and possible-future specifications are identified separately. For each option, state what is
+   realizable now and any builder or platform change it requires.
 5. **Problem–option correspondences.** Every relied-on pair states the changed admission, comparison coordinate,
    protected characteristic, affected-System consequence, evidence need, or next action. A pair with no supported
    decision-bearing difference remains an unresolved mismatch.
@@ -138,17 +138,17 @@ research, realization, integration, operation, and decision Work can overlap.
 
 ##### SYSE.22:4.1.1 - Recover the changed engineering question
 
-Use the eight moves above as a short reminder. The following explanation supplies their construction when the
-problem and alternatives are not already available. The intended practitioner can interpret the project's
+Use the eight moves above as a reminder. When a problem formulation or alternatives are missing,
+the following sections explain how the project can develop them. The intended practitioner can interpret the project's
 operating and configuration records and obtain the needed domain, production, service, and assurance judgements.
-This pattern does not supply a missing compressor model, safety limit, or manufacturing process.
+For a needed compressor model, safety limit or manufacturing process, use the result from the practice that establishes it.
 
 Start at the observation that made the old pair doubtful. Recover the earlier use claim and the System concept
 that was supposed to support it. For one consequential operating situation, follow what happens from the
 triggering event through the proposed behaviour to the effect on the user or another affected System. Use
 `SYSE.2:4.3–4.6` for that linked construction; use an adequate existing result directly. The return needed here
-is a use–concept pair with its conditions, any main uncertainty and failed or supported connection, not a complete
-new concept study.
+is a use–concept pair, its conditions, any material uncertainty and the connection that is supported or has failed.
+
 
 Identify what the observation changes. It may contradict the predicted effect, expose an omitted condition,
 change the value of the effect, or make a new means available. These lead to different engineering questions.
@@ -191,13 +191,13 @@ the engineering work here determines which proposed combinations can meet this p
 For example, local fallback, a different compressor, a larger processor and a network gateway are four design
 choices, not four independent switches. The new compressor may require a different output board; the fallback
 algorithm may fit only the larger processor; that board may lack an applicable test result. Build a candidate
-by carrying these dependencies together. Reject an incompatible combination, retain a visibly conditional
+by carrying these dependencies together. Reject an incompatible combination, retain a conditional
 combination for inquiry, or propose the missing interface or realization change. Do not count the Cartesian
 product of independently feasible features as reachable family variants.
 
 Retain more than one alternative when they answer materially different conditions or preserve a useful future
 choice. Ask which differences change admission, value, burden or later reuse; do not expand every possible
-parameter. A family boundary is itself revisable. If an option requires different functioning, support and
+parameter. The family boundary can also change. If an option requires different functioning, support and
 evidence assumptions from the shared architecture, compare a separate branch or family with extending the
 common basis. Forced commonality can move repeated adaptation and service burden into every member.
 
@@ -210,7 +210,7 @@ A correspondence becomes useful when an engineer can follow why the variant coul
 For each relied-on pair, connect the outside result to the proposed behaviour, the required configuration,
 the means of obtaining it, and the evidence the receiving decision needs. Use the supported realization branch
 from `SYSE.3:4.2–4.4`, a platform result from `SYSE.12:4.1`, and the applicable `SYSE.10` evidence
-assessment where these already answer the question. Open only the first unsupported result that can change
+assessment where these answer the question. Open only the first unsupported result that can change
 the decision.
 
 The conditions must hold together. A candidate that fits one board, a test that covers another firmware
@@ -242,7 +242,7 @@ back to the problem before generating another variant.
 | A new means makes a previously unattainable use plausible | Add a use–concept pair and compare its worth with the selected portfolio | Actual demand, feasibility and admission; technical possibility alone supplies none of them |
 | Different family members require incompatible assumptions | Separate their applicable conditions, introduce a justified branch, or change the family basis | Shared resources and cross-member consequences under the proposed arrangement |
 | The target variant is plausible but its construction, evidence or support cannot be obtained | Keep its promise conditional and frame the limiting builder relation for `SYSE.23` or the obtaining question for `SYSE.24` | A compatible supported means of obtaining the result |
-| A candidate disproves one interpretation of the problem but leaves another useful | Revise or retire the defeated claim and preserve the supported branch | The unresolved branch; a local failure does not erase independent evidence |
+| A candidate disproves one interpretation of the problem but leaves another useful | Revise or retire the defeated claim and preserve the supported branch | What the evidence supports about the remaining branch and any question still open |
 
 A better means may change which problem is worth current attention. Conversely, a revised problem may change
 which retained design is useful. Preserve the decision-bearing reason for that movement. This is how an old
@@ -275,15 +275,15 @@ worth making to enable later changes. Send the expected change family, blocked c
 configuration and realization basis, protected conditions, horizon and relevant uncertainty. The receiver
 constructs its investment alternatives; the `SYSE.22` choice does not select an investment for it.
 
-Use `SYSE.24` when the needed contribution is already clear and the remaining comparison is how to obtain it.
+Use `SYSE.24` when the needed contribution is clear and the remaining comparison is how to obtain it.
 If the question instead concerns wider agreement about the problem, return that question to the relevant
-problem-structuring or strategy practice. These are conditional result uses, not stages through which every
-project must pass.
+problem-structuring or strategy practice.
+
 
 A builder improvement from `SYSE.23` returns as a changed feasibility premise only for the family options it
-actually affects. An investment decision alone supplies an expected premise; a supported capability or
-realization result supplies a stronger one. Reopen the corresponding comparison at that strength. This keeps
-problem and means developing together without borrowing benefits from unfinished Work.
+affects. An investment decision can support an expectation of improved feasibility. Stronger reliance needs evidence of the capability
+or a realization result that demonstrates the improvement. Reconsider the comparison to the extent that the new result warrants.
+
 
 #### SYSE.22:4.2 - Record the Result
 
@@ -349,8 +349,8 @@ and cold recovery is missing for the local-fallback option. That option cannot y
 
 The **controller-family council** is the deciding Agent. Its current assignment authorizes it to choose the next
 engineering probe, or decline new probing on the present basis, and allocate no more than 160 engineering hours.
-A building operations manager separately
-authorizes any occupied-building trial; the product-family owner separately authorizes later adoption. The probe
+A building operations manager
+authorizes any occupied-building trial; the product-family owner authorizes later adoption. The probe
 choice grants neither authority.
 
 The council uses one shared comparison basis:
@@ -366,7 +366,7 @@ The council uses one shared comparison basis:
 
 | Candidate next probe | Bounded burden | Distinguishing observations | Effect on the current decision |
 | --- | --- | --- | --- |
-| Scripted network-loss and cold-recovery trial | 96 engineering hours, two hardware-in-the-loop bench days, one three-day reversible building-pilot window, and about one week of decision delay. | In each of two representative building configurations: no safety violation; occupied-zone recovery inside 20 minutes; and controller processor load below 70%. An established safety or comfort guard failure, or processor load at or above 70% in either configuration, is a contrary outcome even if the other configuration passes. Incomplete, uncertain or otherwise non-decisive observations remain unresolved only when no such failure has been established. | A pass admits local fallback and leaves it with variable-speed control in the survivor set while cloud-only is rejected. A contrary outcome rejects local fallback and leaves variable-speed control as the admitted next-development option. An unresolved outcome preserves the unresolved local-fallback status and requires a new bounded decision. |
+| Scripted network-loss and cold-recovery trial | 96 engineering hours, two hardware-in-the-loop bench days, one three-day reversible building-pilot window, and about one week of decision delay. | In each of two representative building configurations: no safety violation; occupied-zone recovery inside 20 minutes; and controller processor load below 70%. The outcome is contrary if either configuration has an established safety or comfort guard failure or a processor load at or above 70%. Incomplete, uncertain or otherwise non-decisive observations remain unresolved only when no such failure has been established. | A pass admits local fallback and leaves it with variable-speed control in the survivor set while cloud-only is rejected. A contrary outcome rejects local fallback and leaves variable-speed control as the admitted next-development option. An unresolved outcome preserves the unresolved local-fallback status and requires a new bounded decision. |
 | Variable-speed calibration trial | 128 engineering hours, four calibration-rig days, the same single building-pilot allocation, and about two weeks of decision delay. | Calibration effort and service burden may fall or rise within the currently supported range; the trial does not observe network-loss recovery or local-fallback processor load. | Either bounded outcome refines the burden comparison for an already admitted option but leaves the local-fallback admission defect and survivor question unchanged. |
 | No probe | No immediate trial resource use or delay; preserves the scarce pilot allocation and engineering capacity. | No new observation. | Retain the qualified current comparison: cloud-only fails the guard, variable-speed control remains admitted, and local fallback is retained only as an unresolved candidate, not admitted for use. Later development or adoption still belongs to its competent owner. |
 
@@ -375,7 +375,7 @@ the survivor relation is a possible contribution, not an obligation to buy it. I
 this case, the council's qualified judgement is that resolving the local-fallback option before the next family
 investment is worth the 96 hours, scarce pilot allocation and one-week delay. Assume that capable performers and
 the windows can be obtained, and that this allocation does not displace more valuable protective or development
-Work. This value-and-feasibility premise, not the 160-hour ceiling, supports the choice. The calibration trial
+Work. Those benefits, costs and conditions support selection within the 160-hour ceiling. The calibration trial
 cannot resolve that question. The deciding Agent applies `C.11` and records
 `ChoiceResult-HPF-1 = probe_again` for the network-loss and cold-recovery trial.
 
@@ -385,18 +385,18 @@ council can decline that probe and retain the qualified comparison above. Local 
 observation or safety assurance is invented. A later owner can make a supported bounded development choice among
 admitted options.
 
-In the selected-probe situation, after that `ChoiceResult`, a planning Agent must still prepare the trial plan, the building operations manager
+In the selected-probe situation, after that `ChoiceResult`, a planning Agent must prepare the trial plan, the building operations manager
 must authorize the occupied-building trial, and assigned Agents must perform and interpret the Work. Family
 adoption remains a separate decision by the product-family owner. If pilot authority is withdrawn before
 the trial Work, a new decision pass records `reroute` and the missing authority without rewriting `ChoiceResult-HPF-1`.
-Later observations reopen only the three current problem–option correspondences and dependent family results; the
+For a later observation, reconsider any of the three current problem–option correspondences and family results that depend on what changed. The
 voice-control archive entry remains unchanged.
 
 For currentness, first keep the same configurations, relied-on observations, calibration, rights and supported
 use while only the source export date changes: the comparison remains usable. Now change a controller
-configuration so that the relied-on processor-load evidence no longer covers it, or let a real calibration or
-pilot permission window end: reopen or suspend the affected use, not every claim in the source. Keep the needed
-qualification with the comparison for later receivers; do not turn the first case into renewal Work. The case's
+configuration so that the relied-on processor-load evidence no longer covers it, or let a calibration or
+pilot permission window end. Reopen or suspend the uses that relied on the changed condition. Keep the needed
+qualification with the comparison for later receivers. The case’s
 20-minute and 70% limits are receiving acceptance conditions, not universal thresholds supplied by this pattern.
 Their protective basis and any proposed amendment require the relevant engineering judgement and authority;
 merely choosing or declining a probe changes neither.
@@ -445,7 +445,7 @@ burden with replacing the small board. Reclassifying the small-board building as
 the problem scope and require its own grounds and authority; it would not demonstrate that the fallback solves
 the original use.
 
-This continuation explains the joint result of the Methods. `SYSE.22` changes which problem–variant pairs are
+`SYSE.22` changes which problem–variant pairs are
 worth pursuing; `SYSE.23` can change the means and burden of reaching them. Either result can stand for its
 own decision while the other remains unresolved.
 
@@ -496,12 +496,12 @@ The project can change both what it is solving and what Systems it considers wit
 stepping stones remain recoverable, stale comparisons become visible, and one bounded probe can be chosen while
 the problem and System family remain revisable.
 
-The cost is maintenance of identities and decision-bearing correspondences. Some cells remain unresolved, and
-the best current result may be a probe, rejection, or reroute rather than a selected System variant.
+The cost is maintenance of identities and decision-bearing correspondences. Some correspondences may remain unresolved.
+The best current result may be a probe, rejection, or referral to another decision.
 
 ### SYSE.22:10 - Rationale
 
-FPF already supplies problem records, plural search, archives, Fronts, currentness, comparison, and choice.
+FPF supplies problem records, plural search, archives, Fronts, currentness, comparison, and choice.
 Systems Engineering adds the action-changing specialization: selected problem formulations must be compared with
 architecture- and configuration-identified System-family options under project use, operational environment,
 affected-System consequences, realization limits, and engineering evidence.
@@ -513,20 +513,20 @@ The terms *problem factory* and *solution factory* describe different but corres
 Engineering can revise problem formulations and System-family options together, including the Work and Methods used to develop them. Problem archives and portfolios retain material for later choices; comparison and acceptance use their stated bases. When the way of developing a System becomes the obstacle, the same inquiry can extend to its builders.
 
 
-The source comparison matters to the choice of Method. NASA's currently provided [Design Solution Definition
-guidance, §4.4.1.2](https://www.nasa.gov/reference/4-4-design-solution-definition/) already connects iterative
+NASA's [Design Solution Definition
+guidance, §4.4.1.2](https://www.nasa.gov/reference/4-4-design-solution-definition/) connects iterative
 concept development, operating concepts, stakeholder expectations, technology maturity and enabling products.
 Use a sufficient result from that practice directly. This pattern's additional work is the engineering
 connection between a changing problem portfolio and configuration-qualified family alternatives: explaining
 which combination is reachable, which use it can answer, and which changed premise reopens the comparison.
 
-A competent product-line practice can already provide a variability model and a way of producing its members.
+A competent product-line practice can provide a variability model and a way of producing its members.
 For example, the SEI [production-plan guidance](https://www.sei.cmu.edu/library/guidelines-for-developing-a-product-line-production-plan/)
 describes how core assets are used to build a particular product. Retain that supported basis rather than
 rebuilding it here. The remaining question in this pattern is whether changed use and realization conditions
 require a different family option, problem formulation or current commitment.
 
-The table names the sources used here and the contribution and limits of each.
+
 
 | Source | Retained contribution | Use boundary |
 | --- | --- | --- |
@@ -535,7 +535,7 @@ The table names the sources used here and the contribution and limits of each.
 | Castle, Stock, and Gorochowski (2024), [*Engineering is evolution*](https://doi.org/10.1038/s41467-024-48000-1) | Variation, expression, evaluation, selection, exploration, and exploitation as an engineering perspective. | Use the evolutionary analogy as a hypothesis source; ground the current engineering Method and cultural claims separately. |
 | Zhang et al. (2025), [*Darwin Gödel Machine*](https://arxiv.org/abs/2505.22954) | An AI-engineering case retaining a lineage-bearing archive of coding-agent variants for later improvement. | Treat coding benchmarks as one application case; test transfer to physical Systems and causal claims separately. |
 
-Reopen one source-use row when changed evidence alters its practical contribution or boundary.
+Reconsider how you use a source when changed evidence alters its practical contribution or the scope of the conclusions you can draw from it.
 
 ### SYSE.22:12 - Relations
 

@@ -1,6 +1,6 @@
 ## GOALS.Reference:4 - Public suppliers and practical returns
 
-Use the named full methods when their question is live. Their outputs constrain the goal arrangement; this framework does not replace their professional content.
+Use the full methods below when the work raises their questions. Their results constrain the goal arrangement.
 
 | Needed contribution | Supplier and receiving use | Condition that reopens the connection |
 | --- | --- | --- |

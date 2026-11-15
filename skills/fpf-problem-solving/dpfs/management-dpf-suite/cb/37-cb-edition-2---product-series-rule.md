@@ -1,6 +1,6 @@
 ## CB.Edition:2 - Product-series rule
 
-The **Community Management Principles Framework** product series collects editions for community organisers, participants, practitioners, sponsors and assisting agents who construct, conduct, support and renew useful participation and joint contributions. A product-constitution decision begins this collection by admitting the **Participation and practice-support edition** above as its first edition. Publication and Suite inclusion are separate acts.
+The **Community Management Principles Framework** product series collects editions for community organisers, participants, practitioners, sponsors and other contributors who construct, conduct, support and renew useful participation and joint contributions. A product-constitution decision begins this collection by admitting the **Participation and practice-support edition** above as its first edition. Publication and Suite inclusion are separate acts.
 
 Select Methods for offer and exchange, participation and activity, distributed organising, rules and mandates, provision, value, continuation, repertoire work and boundary representation. Admit only complete editions whose independent practical use and required direct suppliers have been qualified. Preserve a sufficient individual or provider alternative, unequal authority and cultural continuation outside community participation. The edition must explain the useful results it supplies and return to obtainable external Methods for stronger or different claims.
 

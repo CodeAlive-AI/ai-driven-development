@@ -59,7 +59,7 @@ When another reader or later use must cite, compare, revise, or publish the resu
 Apply the C.2.1 identity test:
 
 - **EntityOfConcern:** one exact entity already recovered for the case, such as the plan, proposed system change, or decision situation whose ethical tension is being described. Do not use a loose bundle of several possible subjects.
-- **ClaimGraph:** the exact claim content containing the conflict sides, their tension, and the next-use question. When those claims are explicitly restricted to part of the situation, it also identifies the description's ClaimScope.
+- **ClaimGraph:** the claims about the affected entities, the conflicting sides and their tension, and the question for the next use. Where the description limits the cases to which those claims apply, identify its ClaimScope.
 - **effective ReferenceScheme:** the designation, interpretation, measurement, comparison, and evaluation rules needed to read those claims.
 
 Changed claim content, EntityOfConcern, or effective ReferenceScheme identifies another episteme. Say that a later description revises or supersedes an earlier one only when a C.2.1 `EpistemeEditionRelation` is asserted. A changed narrative, table layout, publication form, carrier, or publication occurrence does not by itself change the episteme.
@@ -94,7 +94,7 @@ InterlevelEthicalConflictDescription — C.2.1 identity:
   effectiveReferenceSchemeRef
 ```
 
-When present, `descriptionClaimScopeRef` identifies the declared part of the situation covered by the whole description. Do not add it merely to complete the shape. A side's ClaimScope or Work extent says where that side applies; it never substitutes for the whole-description scope.
+When a restriction on the whole description matters, `descriptionClaimScopeRef` identifies the conditions under which its claims apply. Identify any subsystem affected on one side. The subject of the whole description can still be a fleet-wide decision. Change that subject only if the claim is now about the subsystem itself. Each side can also have its own ClaimScope or refer to a particular Work and its extent. Give the whole description its own scope when that further restriction matters.
 
 The `plainStatement` must name the incompatibility, trade-off, parity, or other tension claimed among the sides. In an ordinary case, it remains claim content in the description. If a receiving use relies on a separately obtaining direct relation, cite the relation definition and occurrence with its participants, applicability, and identity. If no adequate governor exists, record the `A.6.RCD` missing-governor result. Merely filling a reference field never makes a direct relation obtain.
 

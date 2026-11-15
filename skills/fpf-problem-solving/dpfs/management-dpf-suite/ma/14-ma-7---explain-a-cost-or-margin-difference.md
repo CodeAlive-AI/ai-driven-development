@@ -6,7 +6,7 @@
 
 ### MA.7:0 - Use this when
 
-Use this pattern when a cost, margin or other account differs from a comparison value and the explanation could change a response. Begin with the actual difference before attributing it to performance.
+Use this pattern when a cost, margin or other account differs from a comparison value and the explanation could change a response. Begin with the difference between those values before attributing it to performance.
 
 The pattern governs an explanation of an accounting difference. It returns a comparable basis, an adequate decomposition and supported or unresolved explanations of the causes that matter.
 
@@ -48,11 +48,11 @@ For an activity and product-mix explanation, construct the following comparisons
 
 1. **Reference activity and composition.** Recover the original output quantities, resource requirements and prices.
 2. **Actual total activity at reference composition.** Apply the original product proportions to actual total output, retaining reference consumption and prices. This isolates volume under that convention. Use a meaningful common activity unit; incompatible products may need separate families or another supported activity measure.
-3. **Actual composition at reference requirements.** Insert actual output by product, still using the reference resource requirement for each product and reference prices. The difference from the preceding account is the mix component.
-4. **Actual consumption at reference prices.** Insert the material or other resource quantities actually consumed. Compare them with the requirements of the actual product mix. This leaves a within-product usage question instead of attributing every change in the aggregate average to waste.
+3. **Actual composition at reference requirements.** Insert actual output by product, using the reference resource requirement for each product and reference prices. The difference from the preceding account is the mix component.
+4. **Actual consumption at reference prices.** Insert the quantities of material or other resources consumed. Compare them with the requirements of the actual product mix. This leaves a within-product usage question instead of attributing every change in the aggregate average to waste.
 5. **Actual consumption and actual prices.** Insert the actual prices to reach the actual monetary total. Any remaining recognition or measurement difference must be explained on its own account basis.
 
-The model determines which comparisons are useful. A paid block, reserve or commitment can remain unchanged over several activity levels, then change at a threshold. Recalculate that supply relationship at each stage instead of multiplying every payment by a volume ratio. If changing one factor while retaining another would describe an incoherent or unsupported combination, use an adequately supported combined component or leave that separation unresolved. A convenient table does not make an impossible comparison meaningful.
+The model determines which comparisons are useful. A paid block, reserve or commitment can remain unchanged over several activity levels, then change at a threshold. Recalculate that supply relationship at each stage instead of multiplying every payment by a volume ratio. If changing one factor while retaining another would describe an incoherent or unsupported combination, use an adequately supported combined component or leave that separation unresolved.
 
 Reconcile the components to the total. Keep a residual visible if the model or observations cannot explain it. When more detail explains a component, replace that parent component with its subdivisions in the total; do not count both. A smaller decomposition is sufficient when further separation cannot change the response.
 
@@ -60,7 +60,7 @@ Preserve the original plan or forecast when that is the comparison being explain
 
 #### MA.7:4.3 - Test the explanation behind the arithmetic
 
-Ask what actually changed each consequential component. Compare operating evidence, terms and relevant conditions. Higher material use per accepted unit might follow a harder product mix, failed attempts, a measurement change or a process defect.
+Ask what changed each consequential component. Compare operating evidence, terms and relevant conditions. Higher material use per accepted unit might follow a harder product mix, failed attempts, a measurement change or a process defect.
 
 Distinguish association and assigned arithmetic effect from a supported causal explanation. Investigate the rival explanations that would lead to different actions. If adequate evidence is unavailable, return the bounded uncertainty and the next observation or specialist result that could resolve it.
 
@@ -89,7 +89,7 @@ Using the stated order volume, usage, then price:
 
 The decomposition is complete arithmetically. It does not establish that the extra 0.5 material units were waste. If the actual workload included a different product mix legitimately requiring more material, the comparison needs that distinction. If the mix is unchanged and adequate records identify failed attempts, the process question becomes more specific. A changed measuring convention would instead require repairing the account.
 
-Another valid decomposition order can assign interaction amounts differently. Retain the chosen convention rather than using a component's exact size as independent evidence of causal responsibility.
+Another valid decomposition order can assign interaction amounts differently. Keep the chosen convention visible. A component’s size can depend on that convention and, by itself, cannot establish what caused the difference or who was responsible for it.
 
 #### MA.7:5.2 - Reconstruct the comparison when product mix changes
 
@@ -113,13 +113,13 @@ If evidence supports a persistent move toward product B, MA.5 can update the fut
 
 ### MA.7:6 - Bias-Annotation
 
-A manager can prefer an explanation outside their control; an evaluator can prefer one inside it. Test explanations against actual conditions and evidence.
+A manager can prefer an explanation outside their control; an evaluator can prefer one inside it. Test the explanations against the conditions and evidence in the case.
 
 ### MA.7:7 - Conformance Checklist
 
-Examine whether the comparison uses adequate subjects, periods and account rules; consequential components reconcile to the total; the decomposition convention is clear where needed; causal claims have support beyond arithmetic; and unresolved explanations lead to a useful next question.
+Check the subjects, periods and account rules used for the comparison. Do the consequential components reconcile to the total? Is the decomposition convention clear where it matters? Look for evidence beyond the arithmetic for each causal claim, and identify the next question when an explanation remains open.
 
-A zero arithmetic residual establishes numerical closure under the model. It does not establish causal closure.
+A zero residual means the components account for the whole numerical difference under the model. What caused the difference can still be unknown.
 
 ### MA.7:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -153,6 +153,6 @@ ACCA's [flexible-budget treatment](https://www.accaglobal.com/gb/en/student/exam
 
 ### MA.7:12 - Relations
 
-MA.1–MA.4 supply model and account meanings. MA.5 consumes supported changed assumptions; MA.9 examines behavioral explanations. An established resource or demand change can also invalidate an activity design: MA.10 then reconstructs an economically supportable alternative. The arithmetic difference alone does not establish that such a redesign is needed. OPS.15 supplies event and observation definitions, and the relevant operating or financial method decides the response. C.11.DUA supports a disputed further-inquiry choice.
+MA.1–MA.4 supply model and account meanings. MA.5 consumes supported changed assumptions; MA.9 examines behavioral explanations. An established resource or demand change can also invalidate an activity design: MA.10 then reconstructs an economically supportable alternative. The arithmetic difference alone does not establish that such a redesign is needed. OPS.15 supplies event and observation definitions, and those responsible for the operating or financial decision use the relevant method to choose a response. C.11.DUA supports a disputed further-inquiry choice.
 
 ### MA.7:End

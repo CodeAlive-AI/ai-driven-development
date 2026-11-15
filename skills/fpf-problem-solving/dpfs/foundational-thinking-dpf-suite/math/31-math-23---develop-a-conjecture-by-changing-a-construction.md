@@ -12,7 +12,7 @@ A **conjecture** is a mathematical assertion proposed for investigation. Develop
 
 **First useful move:** change one mathematically consequential part of the construction and compare what happens. Replace a parameter by a variable, combine two outputs, remove a used assumption, or ask the same operation to preserve another property. Try the changed construction and identify the equation, condition or obstruction that controls its result.
 
-The reader needs the mathematical operations used by the starting construction and elementary proof reasoning. The examples explain their additional operations; the last example develops a limit argument. The method can be performed by a person, an AI agent or cooperating contributors with the needed preparation.
+The reader needs the mathematical operations used by the starting construction and elementary proof reasoning. The examples explain their additional operations; the last example develops a limit argument.
 
 Use an established result when it already answers the question. MATH.19 helps prove a sufficiently clear claim. B.5.QD develops questions more generally. Here the work develops a mathematical assertion through construction, variation, proof analysis and counterexamples.
 
@@ -43,7 +43,7 @@ Write the inputs and the operations that produce the result. Identify a relation
 
 Look inside the operation. Repeated updates may expose a recurrence. Combining two constructions may expose closure or an order dependence. A successful quotient may reveal which distinctions can be discarded. MATH.17 helps make the operations themselves available for this investigation.
 
-When a program supplies examples, recover the class it actually generates. For instance, a generator that produces only trees cannot investigate a claim about arbitrary graphs unless the missing graph classes are handled elsewhere. The representation and evaluator are part of the available mathematical experiment.
+When a program supplies examples, recover the class it generates. For instance, a generator that produces only trees cannot investigate a claim about arbitrary graphs unless the missing graph classes are handled elsewhere. The representation and evaluator are part of the available mathematical experiment.
 
 #### MATH.23:4.2 - Construct a variation with a reason
 
@@ -58,13 +58,13 @@ Choose an ingredient whose change could affect the wanted relation. Useful mathe
 | The result survives a change of representation. | Construct the interpretation and ask which assertions, operations and equalities it preserves. |
 | An approximation supports a limiting claim. | State the order of its quantifiers and ask which operations or properties survive the limit. |
 
-These are possible operations, not required stages. Choose the one selected by the construction. MATH.8, MATH.11 and MATH.13 supply symmetry or invariant reasoning; MATH.18 supplies interpretations; MATH.22 develops changed assumptions. Use their fuller methods when that mathematical contribution is needed.
+Choose a variation that the starting construction gives you reason to investigate. MATH.8, MATH.11 and MATH.13 supply symmetry or invariant reasoning; MATH.18 supplies interpretations; MATH.22 develops changed assumptions. Use their fuller methods when that mathematical contribution is needed.
 
 Keep the original use visible. Requiring equal-sized groups repairs a mean-of-means formula, but leaves a request about arbitrary groups unanswered. The latter needs another construction, as in :5.2.
 
 #### MATH.23:4.3 - State the proposed law and its answer form
 
-Give the objects, domains, allowed operations, assumptions and proposed conclusion. In particular, make the quantifiers distinguishable. These statements ask different questions:
+Give the objects, domains, allowed operations, assumptions and proposed conclusion. State the order of the quantifiers. These statements ask different questions:
 
 - For each input, some construction has the property.
 - One construction works for every input.
@@ -170,13 +170,13 @@ Work the proposed repair. Fix a point x0 and an error allowance e>0. Choose N so
 
 The repaired theorem supplies a condition for transferring continuity. Here proof analysis discovered which quantifier change made the desired inference possible. A subsequent limit construction can use the proved condition to retain continuity.
 
-Uniformity is sufficient, not necessary. On the domain `[0,1)`, the same `x^n` sequence has the continuous limit zero, but convergence is not uniform: for every n there is an `x<1` with `x^n=1/2`. The next question can therefore seek a weaker condition suited to the receiving use, rather than treating uniform convergence as the definition of every acceptable limit.
+Uniformity is sufficient, not necessary. On the domain `[0,1)`, the same `x^n` sequence has the continuous limit zero, but convergence is not uniform: for every n there is an `x<1` with `x^n=1/2`. The next question can therefore seek a weaker condition suited to the receiving use.
 
 ### MATH.23:6 - Bias-Annotation
 
 Small examples are chosen to expose a relation and permit a full calculation. In a larger inquiry, simple generators can miss structures with different behavior. Change the generating rule or inspect a contrasting class when that difference could defeat the proposed claim.
 
-A solved or famous problem can attract attention while its reusable mathematical contribution remains unclear. Recover the construction and the questions it opens. The choice of a next problem depends on the work and contributors, not on a universal ranking of interesting statements.
+A solved or famous problem can attract attention while its reusable mathematical contribution remains unclear. Recover the construction and the questions it opens. Choose the next problem for the work it can enable and the contributions available.
 
 ### MATH.23:7 - Conformance Checklist
 
@@ -186,9 +186,9 @@ For the conjecture being developed:
 - A mathematical change explains why the new question arises.
 - Objects, domains, hypotheses, quantifiers and answer form distinguish the proposed claim.
 - If a proof is attempted, its needed intermediate relations are exposed; any case used to investigate the claim tests a consequential condition.
-- A counterexample is classified at the claim, lemma or implementation it actually defeats.
+- A counterexample is classified at the claim, lemma or implementation it defeats.
 - A repaired hypothesis, construction or conclusion preserves the distinction between the new question and any earlier unsatisfied need.
-- Generality follows from an argument over the stated class; tested cases retain their actual scope.
+- Generality follows from an argument over the stated class; tested cases retain the scope tested.
 - The selected continuation has a useful attainable first operation and retains the earlier construction needed to perform it.
 
 ### MATH.23:8 - Common Anti-Patterns and How to Avoid Them
@@ -205,15 +205,15 @@ For the conjecture being developed:
 
 A result becomes material for developing another mathematical problem. A failure can yield a condition, a construction or a new object of study. A success can reveal a family of operations and a way to transfer the result.
 
-The method can stop with a well-formed conjecture and first attempt. Completing its proof, obtaining a computational procedure, learning the method and applying it to a physical subject have their own requirements. Keeping the connection to those uses makes partial progress useful without claiming their completion.
+The method can stop with a well-formed conjecture and first attempt. Completing its proof, obtaining a computational procedure, learning the method and applying it to a physical subject have their own requirements.
 
 ### MATH.23:10 - Architectural Rationale
 
 B.5.QD locates a consequential next question. The mathematical contribution here is to construct its proposed law: expose composition and closure, change a quantifier, characterize a compatible identification, or isolate a premise through proof analysis. The cases show how these operations produce statements that can be proved or refuted.
 
-MATH.17/.18, MATH.19/.22 and the other mathematical patterns supply the operative constructions. This pattern assembles them around the development of a conjecture. A case can close with a new question, an answer, or a further obstruction; a universal fixed order of research stages would obscure these returns.
+MATH.17/.18, MATH.19/.22 and the other mathematical patterns supply the operative constructions. This pattern assembles them around the development of a conjecture. A case can close with a new question, an answer, or a further obstruction.
 
-A correct answer and a reusable method have related but different uses. Either can be obtained by people or AI agents. Retaining the derivation, allowed transformations and failed conditions permits another prepared contributor to adapt the work and formulate its next problem.
+A correct answer and a reusable method have related but different uses. Retaining the derivation, allowed transformations and failed conditions permits another prepared contributor to adapt the work and formulate its next problem.
 
 ### MATH.23:11 - SoTA-Echoing
 
@@ -221,9 +221,9 @@ The working question is how to develop a mathematical conjecture from constructi
 
 **Adapt proof analysis.** Lakatos's [Proofs and Refutations, Appendix 1](https://www.cambridge.org/core/books/abs/proofs-and-refutations/another-casestudy-in-the-method-of-proofs-and-refutations/AF9D68A35602B7F8F1409DF3E56C5D7B) connects counterexamples to the hidden lemmas and concepts in an attempted proof. The adopted move changes :4.4-.5: inspect the failed inference and consider a revised condition or construction. It improves on simply excluding the offending example when that exclusion abandons the intended class. The method can require more work than proving a fixed, adequate claim; use the latter route when its premises and conclusion already serve the inquiry. Lakatos supplies a method for developing the conjecture; its use can still leave the conjecture unresolved.
 
-**Adapt construction search and generalization.** Georgiev, Gómez-Serrano, Tao and Wagner's [Mathematical exploration and discovery at scale, §§1.3-1.6 and 4](https://arxiv.org/html/2511.02864v3) distinguishes search for constructions from finding a program or formula that generalizes, and describes transitions to proof. It also reports evaluator defects and the limits of the tested search methods. This informs :4.1/:4.3-.4: inspect the generator and evaluator, recover a general construction, then establish the claim its use needs. Compared with direct object search, program search can retain reusable structure but adds generation and evaluation cost. A cheap direct search or existing theorem can be preferable. The paper supports these bounded choices, not a universal preference for AI search.
+**Adapt construction search and generalization.** Georgiev, Gómez-Serrano, Tao and Wagner's [Mathematical exploration and discovery at scale, §§1.3-1.6 and 4](https://arxiv.org/html/2511.02864v3) distinguishes search for constructions from finding a program or formula that generalizes, and describes transitions to proof. It also reports evaluator defects and the limits of the tested search methods. This informs :4.1/:4.3-.4: inspect the generator and evaluator, recover a general construction, then establish the claim its use needs. Compared with direct object search, program search can retain reusable structure but adds generation and evaluation cost. A cheap direct search or existing theorem can be preferable.
 
-**Retain methods as a usable result.** The [Math and AI declaration of 11 September 2026](https://mathandai.org/) argues that counting solved problems can obscure understanding and transmission of methods. Adopt that question in :4.6 and the relation to C.36.RP: preserve what another prepared contributor needs to change and use the construction. The declaration is a position on the purpose of mathematical work, not evidence that transmission must remain exclusively human. The construction-to-proof account above supplies a concrete alternative involving AI contributors.
+**Retain methods as a usable result.** The [Math and AI declaration of 11 September 2026](https://mathandai.org/) argues that counting solved problems can obscure understanding and transmission of methods. Adopt that question in :4.6 and the relation to C.36.RP: preserve what another prepared contributor needs to change and use the construction. The construction-to-proof account above supplies a concrete alternative involving AI contributors.
 
 Reopen the route when a new counterexample changes the admitted class, another representation makes the conjecture simpler, or the receiver needs a result the present construction cannot provide. Improved search tools change the means and cost of investigation; they leave the proposed mathematical assertion and its possible use to be stated.
 
@@ -235,6 +235,6 @@ Reopen the route when a new counterexample changes the admitted class, another r
 - **MATH.19/.6/.22** supply proof construction, countermodels and changed axioms.
 - **MATH.2** supplies the compatible identification used by composable summaries.
 - **C.29 and MMP** interpret the mathematical result for a subject; **CMP** supplies effective search, construction and execution when needed.
-- **E.10.INT, C.36.RP and HCD and Core opportunity construction** support interest, continuing availability of methods and acquisition of a missing capability.
+- **E.10.INT** helps assess interest in further mathematical work and **C.36.RP** helps keep methods available. **C.40.OCN** connects a proposed use with its conditions. **C.40.JD** connects a way of working with the capability of its performer and the support it needs. **HCD** supplies methods for human capability development.
 
 ### MATH.23:End

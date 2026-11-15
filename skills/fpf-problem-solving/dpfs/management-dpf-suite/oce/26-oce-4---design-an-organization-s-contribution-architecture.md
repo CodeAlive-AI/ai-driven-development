@@ -3,13 +3,13 @@
 > **Type:** Method pattern
 > **Status:** Stable
 >
-> **Primary working result:** an **inspectable contribution-architecture design**: a decision and possible-future description recording selected specialization boundaries, contribution-relation specifications, acceptance and exception conditions, affected burdens, receiving decisions, and the evidence needed to establish which direct relations later obtain.
+> **Primary working result:** an **inspectable contribution-architecture design**: a supported description or proposal and, when a choice is authorized, the design decision. The result states the relevant specialization boundaries, contribution-relation specifications, acceptance and exception conditions, affected burdens, receiving decisions, and the evidence needed to establish which direct relations later obtain.
 
 ### OCE.4:0 - Use This When
 
 Use this pattern when an organization concept has been selected or narrowed, but its chart, topology, or operating-model label still does not say how contributions reach their receivers. Enter when specialization boundaries, supplied results, information use, decisions, services, resource access, or coordination must be designed before positions or assignments can be settled.
 
-Begin with a compatible `OCE.1` focus, `OCE.2` current account, and `OCE.3` concept comparison or equivalent content. Name any tolerated evidence gap and any gap that blocks design.
+Begin with a compatible `OCE.1` focus, `OCE.2` current account, and `OCE.3` concept comparison or equivalent content. Use an adequate existing design directly. State any gap that limits the design and what can be decided on the available grounds.
 
 The first useful result is small: one organization concept, a few decision-bearing contribution-relation specifications, their intended suppliers and receivers, the selected specialization boundaries, and the conditions under which later Work may realize or reopen them.
 
@@ -24,10 +24,10 @@ Use `C.30` directly when the question is only whether one actual or candidate st
 | contribution relation occurrence | One obtaining occurrence of the admitted direct relation named by a specification or current account. Its predicate, participants, applicability, interval, and evidence must be recoverable independently of the design. |
 | contribution structure | An actual `A.22` structure selecting obtaining contribution relation occurrences and their participants for one declared use. Describe a candidate contribution structure as possible-future content until the selected occurrences obtain. Information-use, decision, access, service, coordination, legal-entity, and Work structures can remain separate. |
 | contribution architecture | The way selected structures organize the named organization for its intended contribution, qualified under `C.30`. Actual architecture requires the applicable subject relations and architecture relation to obtain; candidate or desired architecture remains claim or description content. |
-| position-design need | A need to decide whether one or more expected contributions warrant a stable organization position. `OCE.5` makes that decision and, when warranted, defines the position. |
+| position-design need | A need to decide whether one or more expected contributions warrant a stable organization position. Use `OCE.5` to assess that need and define a proposed or established position. The applicable rule determines who may establish it. |
 | acceptance condition | The condition under which a receiver can use or accept the supplied result for the named decision. State the condition in the specification or claim, then use the applicable predicate and evidence to test whether it is met. |
 | exception and escalation relation | An obtaining direct relation for returning an unusable result, resolving a conflict, or issuing a decision when ordinary contribution cannot continue. Specify that relation explicitly when designing a possible future. |
-| contribution-architecture decision | A decision selecting possible-future organization structures, relation specifications, constraints, and open refinements for later change Work. It does not make those structures or relations actual. |
+| contribution-architecture decision | A decision selecting possible-future organization structures, relation specifications, constraints, and open refinements for later change Work. Use evidence of realization to establish which selected relations obtain. |
 
 ### OCE.4:1 - Problem Frame
 
@@ -45,7 +45,7 @@ The design then cannot guide position definition or realization. Teams infer aut
 
 | Force | Tension |
 | --- | --- |
-| Specialization | Concentrated knowledge and equipment can improve contribution, while every boundary creates coordination and return needs. |
+| Specialization | Concentrated knowledge and equipment can improve contribution, while coordination and exception handling can add cost where a contribution crosses the boundary. |
 | Stable ownership | Receivers need reliable contribution, while fixed boxes can preserve obsolete Work and authority assumptions. |
 | Several structures | One picture is easy to communicate, while contribution, decision, access, service, legal, and Work structures need not coincide. |
 | Participant knowledge | People performing Work and using its results can expose hidden relations, while participation does not transfer design authority. |
@@ -54,11 +54,11 @@ The design then cannot guide position definition or realization. Teams infer aut
 
 ### OCE.4:4 - Solution
 
-Design from the intended contribution and the relations needed to produce, use, accept, and return results. Select the few structures that change the current decision. State possible-future crossings as contribution-relation specifications, then make a contribution-architecture decision that fixes only the boundaries and conditions later Work must realize.
+Design from the intended contribution and the relations needed to produce, use, accept, and return results. Select the structures needed to explain or decide the design. Specify proposed crossings and identify the boundaries and conditions that implementation would require. Return the supported description or proposal to its intended recipient. When a choice is requested, make it within your authority or refer it to the decision holder.
 
-Recognition is cheap: one selected organization concept whose result path cannot be stated from supplier to receiving decision is enough to enter. Assurance is relation-specific: each actual contribution, information-use, decision, service, access, material-transfer, or coordination claim needs its own predicate, participants, scope, window, and evidence.
+A selected concept with an unsettled path from supplier to receiver is enough to start. For a claim that the arrangement operates, each actual contribution, information-use, decision, service, access, material-transfer, or coordination claim needs its own predicate, participants, scope, window, and evidence.
 
-First inspect an existing coordination model, if one is available. A competent transaction account may already explain who requests a result, who commits to supply it, what is produced and declared ready, and how the receiver accepts or returns it. Reuse that account when the specialization boundaries and other enabling conditions can stay fixed. Broaden the design when changing a boundary could alter access, decision independence, support or another receiving contribution. Compare those effects with the people who provide and receive them; add only the structures needed to settle the choice. Also ask whether the policies supporting the exchange fit together. For example, participants may report that early mismatch returns are penalized while nominal completion is rewarded. Compare a change to that recognition policy with moving the boundary; the policy owner must decide the change, and later use must test the expected improvement. Reuse the compatible policy and participant results from `OCE.3`. Section 11 explains this choice against transaction modeling and interacting organization-design policies.
+First inspect an existing coordination model, if one is available. A competent transaction account may already explain who requests a result, who commits to supply it, what is produced and declared ready, and how the receiver accepts or returns it. Reuse that account when the specialization boundaries and other enabling conditions can stay fixed. Broaden the design when changing a boundary could alter access, decision independence, support or another receiving contribution. Use the evidence available about the suppliers, receivers and effects. Seek their knowledge where a consequential assumption remains uncertain. Add the structures needed to settle the choice. Also ask whether the policies supporting the exchange fit together. For example, participants may report that early mismatch returns are penalized while nominal completion is rewarded. Compare a change to that recognition policy with moving the boundary; the policy owner must decide the change, and later use must test the expected improvement. Reuse the compatible policy and participant results from `OCE.3`. Section 11 explains this choice against transaction modeling and interacting organization-design policies.
 
 #### OCE.4:4.0 - One bounded first design
 
@@ -66,21 +66,21 @@ For a small first use, keep the selected concept and already qualified constrain
 
 > Electrical supplies a configuration-C7 compatibility-evidence package to Integration for Friday's review. Each claimed interface must have a traceable source and test; Integration returns an unsupported claim to Electrical before evidence closure. The design decision keeps electrical expertise with Electrical and package assembly with Integration, using the agreed review time rather than merging the two specializations. Safety acceptance and release remain separate decisions. A missing source or an unworkable review burden reopens this design. Use the first package to test whether the planned supply and exception return actually work.
 
-This is one bounded design result, not evidence that the supply relation already obtains. Reuse the supporting focus, current account, participant correction and decision basis instead of restating them. Add another structure, alternative or specialist return when it can change this decision; a missing authority or protection premise remains a blocker. The same short note can carry the needed content listed below. Elaborate the questions that remain open rather than turning this first use into a full-organization redesign.
+This is one bounded design result, not evidence that the supply relation already obtains. Reuse the supporting focus, current account, participant correction and decision basis instead of restating them. Add another structure, alternative or specialist result when it could change the decision or its grounds. State which decision or work a missing authority or protection premise limits. The same short note can carry the needed content listed below. Elaborate the questions that remain open rather than turning this first use into a full-organization redesign.
 
 #### OCE.4:4.1 - Pattern-Use Unfolding
 
 1. **Bind the design question.** Name the organization, intended outside contribution, selected concept, decision subject, authority, horizon, affected Systems, and first receiving use of the result.
 2. **Recover the current relation basis.** Carry forward current Work and direct-relation evidence from `OCE.2`, plus constraints, participants, assumptions, and burdens from `OCE.3`. Record unavailable or incompatible inputs explicitly.
-3. **Select structures by question.** Choose contribution, Work, decision, information-use, material-transfer, service, access, coordination, legal-entity, or other structures only when each changes the design. Select process, project or case viewpoints for the Method, coordination, state and authority questions they can answer. State each view's subject and whether the views concern the same Work. Retain the account of obtaining occurrences unless new evidence warrants revision; keep proposed structures and crossings modal. Preserve differences among the selected structures when those differences matter to the decision.
+3. **Select structures by question.** Choose contribution, Work, decision, information-use, material-transfer, service, access, coordination, legal-entity, or other structures when they help establish or change the design. Select process, project or case viewpoints for the Method, coordination, state and authority questions they can answer. State each view's subject and whether the views concern the same Work. Retain the account of obtaining occurrences unless new evidence warrants revision; keep proposed structures and crossings modal. Preserve differences among the selected structures when those differences matter to the decision.
 4. **Set specialization boundaries.** Group contribution or Work where shared knowledge, equipment, evidence, decision, locality, customer, product, service, or provider conditions justify it. State the condition and the burden moved by each boundary.
 5. **Write contribution-relation specifications.** For every decision-bearing crossing, name the intended direct relation kind or predicate, supplier and receiver Systems, result or preserved condition, applicability, acceptance or use condition, exception return, scope, horizon, and evidence need. Use “interface” only as an orientation label after this content is visible. Do not report an occurrence before its predicate is satisfied. Where participants must negotiate a contribution, distinguish a request, the accepted commitment, production of the result, its declaration and receiving acceptance. Use `LDR.2` for the cooperation that obtains agreed terms and `OPS.13` when a promise must be established or changed. A changed request or withdrawn support returns to the affected participants; it does not silently change their existing commitments.
-6. **Obtain participant corrections.** Use participant-facing views to test actual Work, burden, accessibility, safety, provider, and service-continuity assumptions. Record whose contribution changed the design and which material voice is missing.
-7. **Compare whole structures.** Compare how each candidate handles intended contribution, coordination load, decision latency, evidence, scarce capability, resilience, provider dependence, affected Systems, reversibility, and change burden. Keep unlike characteristics separate unless a justified aggregation Method exists. Include a repair that retains the present specialization and improves its coordination. Compare total effort: recovering the existing model, participant inquiry, making the decision, establishing changed relations, maintaining descriptions and handling exceptions. A more detailed model earns its cost only through a decision or receiving use that needs it.
-8. **Make the architecture decision.** Use `C.32.PAD`, `C.11`, or the applicable decision pattern for the claim being made. State selected structures, accepted losses, fixed constraints, open refinements, rejected alternatives, and reopen observations. Preserve modal status.
-9. **Return position and paired-architecture questions.** Send stable expected-contribution and eligibility needs to `OCE.5`. Send organization/product-or-service correspondence pressure to `OCE.7`. Keep holder, authority, capability, and realization questions with their owners.
+6. **Use participant knowledge.** Check assumptions about work, burden, accessibility, safety, provider support and service continuity against available evidence. Where further input matters, use a view the relevant participants can examine. State what their contribution supports or changes and any material gap that remains.
+7. **Compare whole structures.** Compare how each candidate handles intended contribution, coordination load, decision latency, evidence, scarce capability, resilience, provider dependence, affected Systems, reversibility, and change burden. Keep unlike characteristics separate unless a justified aggregation Method exists. Include retaining the present specialization, with any coordination repair it needs, where that is a credible option. Compare total effort: recovering the existing model, participant inquiry, making the decision, establishing changed relations, maintaining descriptions and handling exceptions. A more detailed model earns its cost only through a decision or receiving use that needs it.
+8. **Return the design or make the requested choice.** Return a description or proposal with its scope and conditions to the intended recipient. For a requested selection, use `C.32.PAD`, `C.11` or the applicable domain method. Identify the competent decision holder, the choice and its constraints, any accepted losses or open refinements, and grounds for rejecting alternatives or reopening the decision. Distinguish proposed relations from those in effect.
+9. **Return position and paired-architecture questions.** Use `OCE.5` when continuity or eligibility warrants a position question and `OCE.7` when a product or service decision interacts with the organizational boundary. Keep holder, authority, capability, and realization questions with their owners.
 10. **Specify realization evidence.** Name which later Work and observations can show that each specified relation obtains, fails, or remains unresolved. Supply design constraints to `OCE.9` without reporting organization capability.
-11. **Stop at contribution sufficiency.** Return when affected practitioners can name the contribution path, boundaries, contribution-relation specifications, accepted burdens, open refinements, and observations that reopen the design.
+11. **Stop at contribution sufficiency.** Return when affected practitioners can name the contribution path, boundaries, contribution-relation specifications, any accepted burdens or open refinements, and observations that reopen the design.
 
 The steps are a reasoning aid. Existing structures may be repaired, new boundaries may be tried, and participant evidence may reopen an earlier decision at any time.
 
@@ -90,11 +90,11 @@ The steps are a reasoning aid. Existing structures may be repaired, new boundari
 | --- | --- |
 | design boundary | Organization, contribution, concept, authority, horizon, first receiver, and affected Systems. |
 | selected structures | Structure kind, constituents, occurrence refs when actual, modal structure or relation claims when proposed, declared use, and known losses. |
-| specialization decisions | Boundary, reason, expected gain, burden moved, retained cross-boundary contribution, and open refinement. |
+| specialization decisions | Boundary, reason, expected gain, any transferred burden, retained cross-boundary contribution and any open refinement. |
 | contribution-relation specifications | Intended direct relation kind or predicate, supplier, receiver, result or preserved condition, applicability, acceptance/use, exception return, scope, horizon, and evidence need; occurrence ref only when independently established. |
-| participant corrections | Participants sought, design change made, missing voice, burden or protection limit, and unresolved claim. |
-| architecture decision | Selected option, fixed constraints, accepted losses, rejected or retained alternatives, modal or actual status, and decision basis. |
-| downstream returns | Position needs, paired product/service questions, realization constraints, specialist results, and missing governors. |
+| participant knowledge | Relevant evidence or participant contribution, what it supports or changes, and any material missing voice, burden or protection condition. |
+| architecture decision | Design proposal or authorized selection, fixed constraints, any accepted losses or rejected alternatives, and the grounds for its stated status. |
+| downstream returns | Any position, paired product/service, realization or specialist questions that remain, and the source or holder needed for each. |
 | continuation | Realization observations, evidence windows, and the smallest event that reopens the decision. |
 
 #### OCE.4:4.3 - What Changes in Practice
@@ -120,7 +120,7 @@ PumpWorks first considers a transaction-based repair of the Electrical–Integra
 
 For the wider weekly-release decision, however, moving package assembly into Electrical would also change who challenges its claims and who needs the rig and provider support. PumpWorks therefore retains that transaction account and adds the separate decision, access and service questions represented above. It accepts the inquiry and maintenance cost of those additional views because the assembly-location choice cannot be settled from the evidence exchange alone. A competent transaction model extended with the same policy and resource answers would also be sufficient; redrawing its information in an OCE-specific format would add no gain. The design preserves independent Safety acceptance and compares the coordination burden of keeping Integration separate with the burden and conflicts a merger would introduce.
 
-Now suppose the product team asks for C8 after Electrical has committed to C7. Electrical's declaration that the C7 package is ready does not answer the changed request. Integration returns the unmet C8 condition, and the affected participants consider a revised package and review time through `LDR.2`; the promise owner uses `OPS.13` for the resulting commitment change. The qualified C7 evidence remains useful for its own configuration. Rig access for the new interval and Safety's later acceptance still require their separate answers. This change refines one crossing; it need not reopen every specialization boundary unless the new burden makes the retained arrangement unworkable.
+Now suppose the product team asks for C8 after Electrical has committed to C7. Electrical’s declaration that C7 is ready does not satisfy the C8 request. Integration identifies the missing C8 condition, and the affected participants can negotiate a different package and review time through `LDR.2`. Use `OPS.13` to establish whether the promise holder has accepted any change. The C7 obligation continues on its existing terms until an authorized change takes effect. The C7 evidence remains useful for that configuration. A proposed new interval still needs rig access and the appropriate safety acceptance. Reconsider other boundaries where the revised burden would affect them.
 
 The design groups recurring release-integration contribution without dissolving Electrical, Safety, platform, provider, or field-service specialization. Its specifications return a position-design need for stable release-evidence integration to `OCE.5`, a holder/access question for `OCE.6`, and a product-module/organization-boundary question for `OCE.7`.
 
@@ -130,7 +130,7 @@ The table describes proposed relations. In later realization, use `OCE.9` to com
 
 | Setting | Reusable move | Required return or changed content |
 | --- | --- | --- |
-| public-hospital emergency flow | Start from the patient-care contribution, separate clinical decision, diagnostic-information, transfer, access, escalation, and continuing-service structures | Use clinical rather than product-release terms; obtain statutory clinical-authority, labor, privacy, safety, bed-access, and Operations results from their owners |
+| public-hospital emergency flow | Start from the patient-care contribution, separate clinical decision, diagnostic-information, transfer, access, escalation, and continuing-service structures | Use clinical terms. Apply the legal, clinical-authority, labor, privacy, safety, bed-access or Operations findings the case needs. Identify the limit or obtain the missing professional decision where necessary. |
 | distributed standards association | Start from the standard-publication contribution, volunteer Work, editorial evidence, member decision, ballot, publication-service, and employer-resource relations | Use the association’s bylaws and elected authority; retain several employers, volunteer availability, publication, and finance conditions rather than assuming one employer hierarchy |
 
 These are hypothetical transfer probes of the design move. Adoption and benefit would require evidence from actual use.
@@ -152,11 +152,11 @@ These are hypothetical transfer probes of the design move. Adoption and benefit 
 - [ ] Each selected structure answers a declared question and states its losses.
 - [ ] Specialization boundaries name their gain and moved burden.
 - [ ] Every decision-bearing crossing has a contribution-relation specification naming the intended direct relation kind or predicate, supplier, receiver, result, conditions, acceptance/use, exception return, and evidence need.
-- [ ] “Interface” does not replace direct relation content.
-- [ ] Participant knowledge changes or challenges identifiable design content.
+- [ ] A relied-on interface identifies its participants, contribution and receiving use.
+- [ ] The design identifies relevant participant knowledge and what it supports, changes or leaves uncertain.
 - [ ] Contribution-relation specifications, modal architecture claims, and obtaining relation occurrences remain distinguishable.
-- [ ] Position, holder, assignment, capability, authority, product/service, and realization questions have explicit returns.
-- [ ] The decision states fixed constraints, open refinements, accepted losses, and reopen observations.
+- [ ] Position, holder, assignment, capability, authority, product/service, and realization questions are referred to the appropriate source or decision holder where their answers are needed.
+- [ ] The description or proposal identifies the relevant boundaries and conditions. Where a decision has been made, its authority, fixed constraints, any accepted losses or open refinements, and grounds for reopening are clear.
 
 ### OCE.4:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -172,7 +172,7 @@ These are hypothetical transfer probes of the design move. Adoption and benefit 
 
 The contribution-architecture design becomes inspectable before a chart is finalized. Position design can start from expected contributions, and realization can test independently obtaining relation occurrences against explicit specifications instead of visual conformity.
 
-The cost is that one page may no longer contain the whole answer. Several structures and evidence returns may be needed, and an attractive topology can remain undecided when a provider, authority, access, safety, or service condition is missing.
+Examining and maintaining several structures can take time, and an attractive topology can remain undecided when a provider, authority, access, safety, or service condition is missing.
 
 ### OCE.4:10 - Rationale
 
@@ -192,9 +192,9 @@ The question is how Electrical's compatibility evidence can reach Integration in
 | An organization design using Galbraith's interacting policies | Strategy, structure, information/decision processes, rewards and people policies allow a designer to examine why a boundary and its coordination are or are not supported. A competent use includes lateral relations, rather than stopping at the chart. | **Adopt** the need to examine policy fit in steps 4, 6 and 7. If the problem is an unrewarded or unsupported exchange, changing the relevant policy may be sufficient; another specialization boundary is not automatically the answer. |
 | The scoped combination used by OCE.4 | Keep a sufficient exchange account, then connect only the decision, access, service or other structures that can change the specialization choice. Preserve each result's acceptance and realization conditions. | **Construct** the boundary decision from these answers in steps 7–10 and the PumpWorks case. Accept additional inquiry when it prevents a boundary choice from hiding a consequential burden or independent decision. |
 
-The combination is selected for the multi-relation PumpWorks choice, not ranked above the other methods for every use. It costs more than fixing one adequately modeled exchange and does not supply DEMO's formal protocol analysis. That is an accepted trade-off when a small, inspectable decision across unlike relations is needed and a complete formal model would have no receiving use. If an established transaction or policy-design practice already supplies those answers, use its result and stop. A bare chart that leaves the exchange unspecified is a failure case, not the serious rival.
+The combination is selected for the multi-relation PumpWorks choice, not ranked above the other methods for every use. It costs more than fixing one adequately modeled exchange and does not supply DEMO's formal protocol analysis. That is an accepted trade-off when a small, inspectable decision across unlike relations is needed and a complete formal model would have no receiving use. If an established transaction or policy-design practice already supplies those answers, use its result and stop.
 
-Reopen when the extra structures do not change the decision, maintaining separate views creates inconsistent commitments, or another method supplies the same boundary and receiving-use answers at lower total effort.
+Reopen when the extra structures add no useful ground for the decision, maintaining separate views creates inconsistent commitments, or another method supplies the same boundary and receiving-use answers at lower total effort.
 
 
 #### OCE.4:11.2 - Source Contributions and Boundaries
@@ -216,8 +216,8 @@ Reopen when representative use exposes a recurring contribution crossing the res
 
 - `OCE.1` supplies the organization, contribution, authority boundary, and affected-System scope. `OCE.2` supplies current Work and direct-relation evidence. `OCE.3` supplies candidate relation structures, assumptions, participants, and burdens.
 - `A.22` governs actual selected structures; `C.30` governs possible-future structure and relation content; `A.6.REL` and the applicable domain predicates govern obtaining direct relation occurrences; `C.32.PAD` governs an architecture decision when that use is current.
-- `OCE.5` consumes stable position-design needs. `OCE.6` establishes holder assignments and enabling relations. `OCE.7` consumes organization-side structure for paired product-or-service decisions.
-- `OCE.9` consumes design constraints and later returns realization evidence. `LDR.1` may consume contribution architecture for leadership-contribution distribution. `LDR.2` supplies the cooperation needed to reach or revisit agreed contributions; `OPS.13` supplies establishment and authorized change of promises. Their results can refine a crossing while other architecture decisions remain in force.
+- `OCE.5` consumes stable position-design needs. Use `OCE.6` to establish which assignments and enabling relations hold and which require action from their responsible parties. `OCE.7` consumes organization-side structure for paired product-or-service decisions.
+- `OCE.9` consumes design constraints and later returns realization evidence. `LDR.1` may consume contribution architecture for leadership-contribution distribution. Use `LDR.2` to negotiate contributions where agreement is needed, and `OPS.13` to establish the status, terms and authority of an operating promise or its proposed change. Their results can refine a crossing while other architecture decisions remain in force.
 - Strategy, Corporate Governance, Operations, Administration, Systems Engineering, finance, legal, labor, safety, privacy, and other specialists supply only their available compatible results or qualified direct sources.
 
 ### OCE.4:End

@@ -4,19 +4,19 @@
 > **Status:** Stable
 > **Normativity:** Normative method guidance within SIE; examples are constructed and non-normative.
 >
-> **Primary working result:** a `SourceSemanticInventory@Use` that records the load-bearing source assets, local meanings, schemes, editions and effectivity, identifiers, claims, owners and authority scope, provenance, access, currentness, gaps, and exact returns for one semantic-integration use.
+> **Primary working result:** a `SourceSemanticInventory@Use` that records the load-bearing source assets, local meanings, schemes, editions and effectivity, identifiers, claims, owners and authority scope, provenance, access, currentness, gaps, and any question or result to return to the responsible owner for this integration use.
 
 ### SIE.2:1 - Problem Frame
 
 **Use this when** a bounded integration use exists, yet endpoint meanings are being inferred from labels, column names, class names, diagrams, sample values, or undocumented organizational knowledge. The recognizable failure is a mapping that runs while joining different concepts, editions, grains, or authority scopes.
 
-The primary EntityOfConcern is the set of source-local semantic premises that the receiving use actually consumes. The first move is to select one load-bearing source asset and recover its scheme, edition or effectivity, meaning, owner, authority, provenance, and access conditions. The first result is an inventory that makes both usable premises and exact gaps inspectable.
+Identify the source-local semantic premises on which the receiving use depends. The first move is to select one load-bearing source asset and recover its scheme, edition or effectivity, meaning, owner, authority, provenance, and access conditions. The first result is an inventory that identifies the usable premises and what is missing.
 
-The payoff is a clean separation between what a source says, what an integrator infers, and what another owner must decide. Do not use SIE.2 to construct an ontology, establish a cross-source correspondence, decide identity, fuse claims, or judge receiving-use adequacy. If model adequacy for a required distinction remains unsettled, request `UseFitSemanticModel@Use` from `SIE.3` or another qualified direct provider. Adequate reuse can finish that question; an actual missing distinction may require extension or construction.
+Distinguish what a source says, what an integrator infers and what another owner must decide. Do not use SIE.2 to construct an ontology, establish a cross-source correspondence, decide identity, fuse claims, or judge receiving-use adequacy. If model adequacy for a required distinction remains unsettled, request `UseFitSemanticModel@Use` from `SIE.3` or another qualified direct provider. Adequate reuse can finish that question; a missing distinction may require extension or construction.
 
 ### SIE.2:2 - Problem
 
-Source inventories often list files and endpoints but omit the meanings that make their values usable. A table called `feature`, an API field called `available`, and an identifier called `partNumber` appear self-describing. Their actual senses may depend on an edition, profile, configuration, interval, issuer, lifecycle state, organizational rule, or local extension.
+Source inventories often list files and endpoints but omit the meanings that make their values usable. A table called `feature`, an API field called `available`, and an identifier called `partNumber` appear self-describing. Their meanings may depend on an edition, profile, configuration, interval, issuer, lifecycle state, organizational rule, or local extension.
 
 When those dependencies are hidden, later workers can neither justify a correspondence nor trace a failure. A changed source looks like a schema defect even when the meaning changed; an access right is mistaken for authority; and a provenance record is mistaken for truth.
 
@@ -29,7 +29,7 @@ When those dependencies are hidden, later workers can neither justify a correspo
 | Edition and effectivity | A stable name aids reuse, while its meaning or applicability can change across revisions, profiles, configurations, and intervals. |
 | Authority | Publishers and stewards define bounded schemes or values, while the receiver may need a decision outside their scope. |
 | Access | A source may be meaningful but unavailable, restricted, delayed, or legally unusable for the proposed integration. |
-| Adequacy | Existing models reduce construction work, while forcing an inadequate model hides a real semantic gap. |
+| Adequacy | Existing models reduce construction work, while forcing an inadequate model hides a semantic gap. |
 
 ### SIE.2:4 - Solution
 
@@ -45,7 +45,7 @@ Recover source semantics at the smallest grain that can change the receiving ans
 6. **Separate claims, data, and provenance.** Record which claim a data item represents, its scope and time, how it was derived, who or what supplied it, and which uncertainty or status accompanies it. Provenance does not make the claim true.
 7. **Recover authority and access.** Name who may define the scheme, issue identifiers, decide authoritative values, approve local extensions, grant access, and authorize receiving use. Mark unsupported assumptions.
 8. **Assess currentness and use adequacy.** Compare the source premise with the contract. State whether it is adequate, adequate only under conditions, unresolved, obsolete for this use, inaccessible, or missing.
-9. **Return an inadequate model.** If the required distinction cannot be expressed in the available source or supplied semantic model, request `UseFitSemanticModel@Use`; do not hide the gap in a mapping rule.
+9. **Request a model that supplies the missing distinction.** If the required distinction cannot be expressed in the available source or supplied semantic model, request `UseFitSemanticModel@Use`; do not hide the gap in a mapping rule.
 10. **Record dependencies and next results.** Identify the exact definitions, editions, authority facts, and gaps consumed by `SIE.4`–`SIE.10`, plus observations that reopen this inventory.
 
 #### SIE.2:4.2 - Record the Result
@@ -72,7 +72,7 @@ For the AP242/QIF query in `SIE.1`, the team inventories only source premises th
 | Source row | Qualification for the constructed use |
 | --- | --- |
 | AP242:2025 edition 4 | Product-definition, configuration/change, and effectivity source for the case. Record the official publication identity and current stage 90.92, “to be revised”. The source owner defines its model; Systems Engineering decides which released configuration applies locally. |
-| local AP242 exchange/profile | Record the exact application protocol/profile, implementation conventions, export version, local extensions, identifiers, and configuration/effectivity fields actually supplied. The standard title alone does not establish those facts. |
+| local AP242 exchange/profile | Record the exact application protocol/profile, implementation conventions, export version, local extensions, identifiers, and configuration/effectivity fields supplied. The standard title alone does not establish those facts. |
 | QIF source | Record the applicable ISO 23952:2020 carrier/profile, plan, characteristic, and result meanings, identifiers, measurement context, status, and local quality authority. A QIF result identifier does not establish AP242 feature identity. |
 | local source records | Record export or API occurrence, timestamps, derivation, access, issuer, local configuration or inspection status, and gaps. A reachable file is not automatically current or authorized for review. |
 
@@ -105,7 +105,7 @@ The inventory marks an unresolved local AP242 extension used by one feature clas
 | Anti-pattern | Repair |
 | --- | --- |
 | Data dictionary by column name | Add source-local definition, scope, edition, units/codes, examples, and authority. |
-| Standards title as implementation evidence | Inspect the actual profile, export, extension, occurrence, and conformance evidence. |
+| Standards title as implementation evidence | Inspect the local profile, export, extension, occurrence, and conformance evidence. |
 | “Same ID format means same object.” | Record scheme, issuer, grain, interval, and identified-entity claim; use `SIE.5` for cross-source identity. |
 | Provenance equals truth | Keep derivation and source authority separate from domain truth and receiving acceptance. |
 | Read every source | Start from the contract and add only action-changing premises. |
@@ -119,7 +119,7 @@ The cost is source-local reading and coordination with publishers, stewards, dom
 
 ### SIE.2:10 - Rationale
 
-Semantic integration cannot preserve a meaning that has not been recovered at the source. Source-local recovery also prevents a shared vocabulary from becoming a hidden replacement for source authority. Qualification by use keeps the inventory finite and prevents documentation breadth from substituting for a workable package.
+When constructing an integration, use the meanings recovered from the source to guide mappings that must preserve them. Source-local recovery also prevents a shared vocabulary from becoming a hidden replacement for source authority. Qualification by use keeps the inventory finite and prevents documentation breadth from substituting for a workable package.
 
 ### SIE.2:11 - SoTA-Echoing
 
@@ -128,7 +128,7 @@ The best-known line combines terminology work, metadata-registry discipline, pro
 | Source line | Adopt, adapt, or reject | Role and limit |
 | --- | --- | --- |
 | Current FPF `F.0.1` and `F.0.2` | adopt | Recover source-local meaning and episteme identity; do not establish a cross-source correspondence or domain truth. |
-| [ISO 704:2022](https://www.iso.org/standard/79077.html) | adapt | Keeps objects, concepts, definitions, and designations distinct; it does not decide the receiving integration. |
+| [ISO 704:2022](https://www.iso.org/standard/79077.html) | adapt | Distinguish objects, concepts, definitions and designations with ISO 704. Use the receiving contract to decide which distinctions the integration must preserve. |
 | [ISO/IEC 11179-3:2023](https://www.iso.org/standard/78915.html) and its [item-mapping amendment](https://www.iso.org/standard/89914.html?browse=tc) | adapt | Contribute registry-item identity, versions, definitions, and mapping metadata; no automatic cross-source identity or fitness follows. |
 | [PROV-O](https://www.w3.org/TR/prov-o/) | adapt | Distinguishes entities, activities, agents, derivation, revision, invalidation, attribution, and primary source; provenance establishes neither truth nor permission. |
 | schema-only discovery | reject as sufficient | Structure and samples can locate questions but cannot replace source-local meaning, edition, authority, and applicability. |
@@ -138,7 +138,7 @@ Reopen when a source change alters a relied-on meaning, scheme, edition, effecti
 ### SIE.2:12 - Relations
 
 - `SIE.1` supplies the receiving use, source cut, answer claims, preserved distinctions, and stop conditions.
-- `SIE.3` qualifies an available model for the named use or develops an actual missing distinction. Request that result when the recovered source model leaves the integration's model question unsettled.
+- `SIE.3` qualifies an available model for the named use or develops a missing distinction. Request that result when the recovered source model leaves the integration's model question unsettled.
 - `SIE.4`, `SIE.5`, and `SIE.6` consume exact endpoint meanings, source claims, identifiers, editions, and authority limits.
 - `SIE.7`–`SIE.10` consume the manifest, provenance, currentness, and gap dispositions relevant to implementation and validation.
 - Domain sources, MDM, access owners, Systems Engineering, Data Engineering, and applications retain their respective meanings, values, permissions, operational results, and decisions.

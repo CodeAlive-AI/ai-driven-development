@@ -10,7 +10,7 @@
 
 The mathematical object is a physical model whose active differential and algebraic equations change with the mode. A differential-algebraic equation system (DAE) combines evolution laws with constraints that must hold at the same time. Here the working question is how that model can continue through a change of constraints.
 
-The result is a conditional continuation: a processed system for each used mode, a restart relation tied to the preceding state, and the conditions under which integration may resume. A missing impact law or a contradictory switch can instead be the useful result. A model with an already justified reset and suitable numerical realization can be used directly.
+The result is a conditional continuation: a processed system for each used mode, a restart relation tied to the preceding state, and the conditions under which integration may resume. A missing impact law or a contradictory switch can instead be the useful result. A model with a justified reset and suitable numerical realization can be used directly.
 
 The reader needs the component laws, elementary differential equations, differentiation of constraints and linear algebra. The worked cases below need only small systems. Larger models need symbolic structural analysis and suitable numerical solvers. An engineer may obtain those operations from a specialist or tool, while retaining responsibility for the physical assumptions and requested outputs.
 
@@ -53,7 +53,7 @@ Here lambda is a force coefficient: the tension magnitude is m\*L\*lambda on the
 
 Differentiation applies on the smooth segment. Differentiating a position constraint across an impact while silently assuming continuous velocity would remove the very jump that needs explanation.
 
-For larger DAEs, the Sigma or Pantelides methods organize this index reduction. They use equation–variable incidence and derivative orders to select differentiations and solution blocks. Obtain the transformed equations, consistency conditions and reconstruction of requested outputs from the implementation. An equation count or a perfect matching alone cannot establish solvability at the actual parameter values: the equations a+b=1 and 2a+2b=2 have a perfect structural matching but a singular numerical Jacobian.
+For larger DAEs, the Sigma or Pantelides methods organize this index reduction. They use equation–variable incidence and derivative orders to select differentiations and solution blocks. Obtain the transformed equations, consistency conditions and reconstruction of requested outputs from the implementation. An equation count or a perfect matching alone cannot establish solvability at the parameter values in the case: the equations a+b=1 and 2a+2b=2 have a perfect structural matching but a singular numerical Jacobian.
 
 A cold initializer chooses values satisfying the initial specification and these constraints. A hot restart additionally has to respect the preceding trajectory and the physical effects concentrated at the event. Replacing a physical initial value is a model change; replacing a numerical starting guess is part of solving the same model.
 
@@ -69,7 +69,7 @@ If the inherited values satisfy the new consistency conditions, solve for the ne
 
 The method in [Benveniste et al., v1, §§2–7](https://arxiv.org/abs/2512.10580v1) uses a small formal interval epsilon to relate derivatives to successive values, for example v_dot=(v_next-v)/epsilon. Combine finitely many shifted copies of the new mode's equations and their necessary differentiated constraints. Add these Euler identities. This finite system is a mode-change array; it is used to derive an event relation, not to select the eventual integration step size.
 
-Values already determined by the previous mode are data. Event equalities involving only those data can be removed from the unknown solve when their validity follows from the guard and previous smooth trajectory. Record that reason: an inconvenient equation with a small residual is not automatically such a fact.
+Values determined by the previous mode are data. Event equalities involving only those data can be removed from the unknown solve when their validity follows from the guard and previous smooth trajectory. Record that reason: an inconvenient equation with a small residual is not automatically such a fact.
 
 The array must retain the dynamics common to the two modes and all the new mode's equations at its final instant, including the consistency conditions and the equations for leading derivatives. Some new constraints that conflict with the inherited state may be postponed at earlier instants of the array. This is the constrained construction in the source, not permission to delete whichever equation prevents a solve. Match the dependent variables to equations while retaining all equations required to be active. A structurally underdetermined part identifies values still lacking a determining relation.
 
@@ -77,9 +77,9 @@ Find the orders of the potentially impulsive quantities. If z grows as epsilon\^
 
 A usable result needs finite offsets, finite restart variables, and enough array values to express the scaled quantities without introducing an unavailable later value. A nonlinear function of an impulsive variable can defeat this construction. Failure of that test is a limitation of the proposed restart construction; further physical specification or another mathematical treatment may be needed.
 
-After scaling, set epsilon to zero. Solve the remaining restart equations using the preceding values as inputs. Check existence, local uniqueness and conditioning at the actual data, the new consistency constraints, conserved quantities and the physical inequalities. Reconstruct the new mode's algebraic values and leading derivatives. Resolve further immediate events before advancing time. If a mode requires a negative rope tension or a negative conducting diode current, it is not the admissible continuation.
+After scaling, set epsilon to zero. Solve the remaining restart equations using the preceding values as inputs. Check existence, local uniqueness and conditioning for the given data, the new consistency constraints, conserved quantities and the physical inequalities. Reconstruct the new mode's algebraic values and leading derivatives. Resolve further immediate events before advancing time. If a mode requires a negative rope tension or a negative conducting diode current, it is not the admissible continuation.
 
-For automatic processing of a larger array, the cited paper supplies the construction in §5, the rescaling problem and goodness conditions in §6, and the bounded-height and offset results in §7. The derivation below makes the limit construction explicit for one small model. It assumes a genuine outward crossing and a specified following interval. Grazing contact, simultaneous impacts and an accumulating sequence of events require further event semantics and analysis.
+For automatic processing of a larger array, the cited paper supplies the construction in §5, the rescaling problem and goodness conditions in §6, and the bounded-height and offset results in §7. The derivation below makes the limit construction explicit for one small model. It assumes an outward crossing and a specified following interval. Grazing contact, simultaneous impacts and an accumulating sequence of events require further event semantics and analysis.
 
 #### MMP.20:4.4 - Choose and use a sufficient realization
 
@@ -89,7 +89,7 @@ For the small cases, hand reduction plus event location and the derived restart 
 
 If an instantaneous idealization is unsuitable, model a finite contact duration, compliant rope or nonideal diode. That changes the physical or mathematical model and can introduce stiffness. Compare the answer needed at the receiving time scale as the added parameters vary. Reducing a solver's step alone does not supply the omitted contact law.
 
-Use the checks that bear on the requested continuation: equation and constraint residuals, signs that admit the mode, conserved or dissipated quantities, event location, and numerical sensitivity. Structural regularity and actual numerical solvability answer different questions. A convergence check supports the computed case and horizon; it does not validate the physical idealization.
+Use the checks that bear on the requested continuation: equation and constraint residuals, signs that admit the mode, conserved or dissipated quantities, event location, and numerical sensitivity. Structural regularity and numerical solvability for the given data answer different questions. A convergence check supports the computed case and horizon; it does not validate the physical idealization.
 
 ### MMP.20:5 - Archetypal Grounding
 
@@ -170,11 +170,11 @@ alpha = (q_minus·v_minus)/L^2,
 v_plus = v_minus - alpha*q_minus.
 ~~~
 
-Here alpha=2 s\^-1 and v_plus=(0.8,0.6) m/s. The impulse is radial; the scalar angular momentum per unit mass x\*v_y-y\*v_x is 1 m\^2/s both before and after. Kinetic energy falls from 2.5 J to 0.5 J. In general, the loss for this inelastic capture is m\*(q_minus·v_minus)\^2/(2\*L\^2). These results follow from the displayed equations.
+Here alpha=2 s\^-1 and v_plus=(0.8,0.6) m/s. The impulse is radial; the scalar angular momentum per unit mass x\*v_y-y\*v_x is 1 m\^2/s both before and after. Kinetic energy falls from 2.5 J to 0.5 J. In general, the loss for this inelastic capture is m\*(q_minus·v_minus)\^2/(2\*L\^2).
 
 Now compute the taut-mode coefficient using the new velocity: lambda_plus=8.848 s\^-2. It is positive, so a taut interval is locally admissible. Parameterize q=L\*(sin(theta),-cos(theta)); then theta_dot=omega and omega_dot=-(g/L)\*sin(theta). The restart gives theta=atan2(0.6,0.8), omega=1 s\^-1. Integrating those equations for another 0.1 s gives theta≈0.712977020833 and omega≈0.380685005685 s\^-1. Tension stays positive over that computed segment.
 
-This example has passed through a free trajectory, an event, a derived impulse and a computable new segment. Continue monitoring the tension. A later loss of tension changes the active equations again.
+Continue monitoring the tension. A later loss of tension changes the active equations again.
 
 #### MMP.20:5.3 - Change the impact law or event and return to the affected construction
 
@@ -340,7 +340,7 @@ Use this checklist when deciding whether the computed continuation can answer th
 
 The model can supply a next state together with the equations and conditions that make its continuation meaningful. A failure can be localized to the component laws, event, consistency constraints, structural processing or numerical computation.
 
-This changes repair in practice. A different coefficient of restitution reopens the event law and next mode. A changed R/L relation reopens the circuit reduction. A tighter requested numerical tolerance changes the computation while preserving a justified physical restart. An unresolved impact law remains a modeling question even when a solver returns a consistent point.
+A different coefficient of restitution reopens the event law and next mode. A changed R/L relation reopens the circuit reduction. A tighter requested numerical tolerance changes the computation while preserving a justified physical restart. An unresolved impact law remains a modeling question even when a solver returns a consistent point.
 
 The construction costs more than executing a supplied reset. Use it where that reset or its admissibility is missing. Large arrays require appropriate symbolic and numerical support, and a singular or unsupported event can require a richer physical model.
 
@@ -350,7 +350,7 @@ The preceding trajectory and the new mode contribute different information. Trea
 
 A mode-change array preserves the time relation long enough to identify the concentrated effect. Scaling before taking the limit retains the finite impulse that would disappear from an unscaled calculation. The final constraints then connect that event result to ordinary evolution in the new mode.
 
-Separate physical specification, mathematical processing and numerical realization so that a change returns to the operation it affects. An improved numerical solver can compute an already determined answer more accurately; choosing a different impact law changes the answer being computed.
+Separate physical specification, mathematical processing and numerical realization so that a change returns to the operation it affects. An improved numerical solver can compute a determined answer more accurately; choosing a different impact law changes the answer being computed.
 
 ### MMP.20:11 - SoTA-Echoing
 
@@ -368,7 +368,7 @@ Separate physical specification, mathematical processing and numerical realizati
 - **A.3.3.TR** uses the resulting mode equations, event and restart relation to describe and compose the continuation. Its supplied-reset case can be used directly when that relation is already justified.
 - **C.29.2** connects mathematical equations with an effective computation; **CMP.8** controls the numerical approximation of the answer determined here.
 - **MMP.10** helps revise an inconsistent constraint formulation. The subject practice supplies the component and impact laws whose meaning the formulation must retain.
-- **MMP.9** can reduce a determined evolution and **MMP.17** can replace selected responses when their preservation conditions hold. Neither is a required stage for the small continuations above.
+- **MMP.9** can reduce a determined evolution and **MMP.17** can replace selected responses when their preservation conditions hold.
 - **MMP.14** investigates a failed prediction when the discrepancy, rather than an already identified changed premise, is the unresolved question.
 
 ### MMP.20:End

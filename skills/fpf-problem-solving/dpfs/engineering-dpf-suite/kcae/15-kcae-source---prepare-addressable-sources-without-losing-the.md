@@ -5,7 +5,7 @@
 
 ### KCAE.SOURCE:1 - Problem frame
 
-Use this when documents must become searchable or machine-readable, when a hit cannot be opened reliably, or when extracted text can lose a decisive relation. The governed object is the relation between an exact source edition, its extracted/segmented representations and obtainable reading context. The result is a source inventory and reader that can return that context with known fidelity limits. A clean, fully addressable source already sufficient for the use needs no new extraction pipeline.
+Use this when documents must become searchable or machine-readable, when a hit cannot be opened reliably, or when extracted text can lose a decisive relation. Connect each extracted or segmented representation to its exact source edition and the reading context you can obtain. The result is a source inventory and reader that can return that context with known fidelity limits. You can use a clean, fully addressable source directly when it suffices for the intended use.
 
 ### KCAE.SOURCE:2 - Problem
 
@@ -13,7 +13,7 @@ Document bytes, extracted text and meaningful source units are different. A tabl
 
 ### KCAE.SOURCE:3 - Forces
 
-Small retrieval units discriminate topics but sever context. Large reading units preserve relations but cost attention. Normalization improves matching but can erase exact identifiers or provenance. Stable identity must survive harmless movement while still revealing a meaningful edition change.
+Small retrieval units discriminate topics but sever context. Large reading units preserve relations but cost attention. Normalization improves matching but can erase exact identifiers or provenance. Stable identity must survive harmless movement while revealing a meaningful edition change.
 
 ### KCAE.SOURCE:4 - Solution
 
@@ -25,25 +25,25 @@ For a mutable collection, first capture a coherent set through a source-system s
 
 #### KCAE.SOURCE:4.2 - Extract the relationships needed for reading
 
-Choose the extractor by the actual carrier. Markdown and HTML can expose headings, lists and links. Born-digital PDFs can still scramble columns or reading order. Scanned documents need OCR and inspection of decisive glyphs, tables and notes. Audio/video transcripts need time offsets and returns to the original segment when tone, a demonstration or a visual relation matters. Machine-readable data needs schema, units, null meaning and provenance. Store the original alongside the extraction while permission permits it.
+Choose the extractor for the form in which the source content is available. Markdown and HTML can expose headings, lists and links. Born-digital PDFs can still scramble columns or reading order. Scanned documents need OCR and inspection of decisive glyphs, tables and notes. Audio/video transcripts need time offsets and returns to the original segment when tone, a demonstration or a visual relation matters. Machine-readable data needs schema, units, null meaning and provenance. Store the original alongside the extraction when you have permission to retain it.
 
 Define a small extraction qualification set from the source's likely failures: an exception containing negation, a multi-column page, a repeated heading, a table with merged cells, a footnote and a cross-document reference. Compare rendered source and extraction for the use-changing relationships, not only character count. Random sampling can detect wider drift, but a sample does not certify every uninspected decisive passage. Mark unqualified regions and allow direct visual or specialist reading where needed.
 
 For a table, retain its title, row identity, column identity, units, span relations and notes. An indexed cell can be small, but its read operation expands to these relations. For example, the extracted CedarBench cell “No” is unusable. The qualified reading says “Destination protocol v1 / automatic resend / No; reconcile receipts manually; note a: receiver lacks duplicate suppression.” The source image or native table remains reachable. If OCR cannot distinguish v1 from v2, return an uncertain extraction and inspect the original before applying the condition.
 
-Distinguish faithful extraction from an authored interpretation. A generated explanatory prefix can make an index easier to search; it remains a derived claim, with the original text separately available. Translation has the same discipline: keep source language and edition, preserve important negations, numerical units and scope, and compare the consequential reading with a competent translator or the source owner when reliance requires it. An old translation can be a search aid or historical artifact without being the current operational authority.
+Distinguish faithful extraction from an authored interpretation. A generated explanatory prefix can make an index easier to search; it remains a derived claim, with the original text separately available. For a translation, keep the source language and edition, preserve important negations, numerical units and scope, and compare the consequential reading with a competent translator or the source owner when reliance requires it. An old translation can be a search aid or historical artifact without being the current operational authority.
 
 #### KCAE.SOURCE:4.3 - Separate finding units from reading units
 
-Segment by intelligible source structure before imposing a token ceiling. Preserve parent headings, paragraph/list membership, table and figure ownership, explicit references and adjacent conditions. Split an oversized section into bounded retrieval units while leaving its reading unit intact. Overlap can reduce boundary losses, but blind overlap duplicates text and still does not recover a distant definition.
+Segment by intelligible source structure before imposing a token ceiling. Preserve parent headings, paragraph/list membership, table and figure ownership, explicit references and adjacent conditions. Split an oversized section into bounded retrieval units while leaving its reading unit intact. Overlap can reduce boundary losses, but blind overlap duplicates text and does not recover a distant definition.
 
-Give each unit a document/edition identity, a local locator, an exact source span where available and an expansion relation. Keep retrieval text, structural metadata and generated context in distinguishable fields. Record which parents or definitions a generated context used. That makes a later parent change capable of invalidating an apparently unchanged child representation.
+Give each unit a document/edition identity, a local locator, an exact source span where available and an expansion relation. Keep retrieval text, structural metadata and generated context in distinguishable fields. Record which parents or definitions a generated context used. A change to a parent can invalidate the derived representation of a child whose own text is unchanged.
 
 Choose unit size using the retrieval question and the operation that consumes the hit. A broad research theme may benefit from section summaries; a protocol exception may need paragraph or cell retrieval. Keep an independent raw/full-body path so that summary selection is not the only way to reach the source. Test a question whose deciding text lies beyond the initial unit; the opening operation should recover it without requiring the user to guess its exact location.
 
 #### KCAE.SOURCE:4.4 - Implement and test the source return
 
-A practical exact reader accepts a source edition and a locator, then returns the requested material, its structural envelope, continuation information and the edition actually served. A pagination cursor should bind the edition and requested unit. Expose an end marker or explicit remaining extent so that truncated output cannot masquerade as complete reading. Do not rely on a line number without its edition.
+A practical exact reader accepts a source edition and a locator, then returns the requested material, its structural envelope, continuation information and the edition actually served. A pagination cursor should bind the edition and requested unit. Expose an end marker or show how much remains so the reader can recognize a truncated result. Do not rely on a line number without its edition.
 
 When a heading moves, a semantic document/section identity can help resolve the new location, but exact historical reading still selects the old edition. When a section splits or merges, preserve explicit predecessor/successor relations and inspect them before treating them as equivalent. A fuzzy match may suggest a new location; it cannot silently establish identity or preserve an earlier judgement.
 
@@ -55,7 +55,7 @@ CedarBench's table has two rows: protocol v1 requires receipt reconciliation; v2
 
 ### KCAE.SOURCE:6 - Bias-Annotation
 
-Clean text collections make extraction seem trivial. Include the actual poor scans, minority language and awkward tables that the workload contains. Generated context can project the author's interpretation onto ambiguous text; mark it as derived and preserve the source ambiguity.
+Clean text collections make extraction seem trivial. Include poor scans, minority-language material and awkward tables when the workload contains them. Generated context can project the author's interpretation onto ambiguous text; mark it as derived and preserve the source ambiguity.
 
 ### KCAE.SOURCE:7 - Conformance Checklist
 
@@ -63,7 +63,7 @@ Can every decisive hit return to its source edition and reading context? Are sou
 
 ### KCAE.SOURCE:8 - Common Anti-Patterns and How to Avoid Them
 
-Indexing only summaries makes their omissions universal; retain searchable original units. Hash-only identity merges unrelated copies; include source provenance. Returning a table cell without row, column and note creates a false claim; expand the reading unit. Treating OCR as semantic proof ignores its loss boundary; qualify the relied-on extraction.
+If the index contains only summaries, material they omit cannot be found through it. Keep original units searchable. Hash-only identity merges unrelated copies; include source provenance. Returning a table cell without row, column and note creates a false claim; expand the reading unit. Treating OCR as semantic proof ignores its loss boundary; qualify the relied-on extraction.
 
 ### KCAE.SOURCE:9 - Consequences
 
@@ -71,14 +71,14 @@ The arrangement gains trustworthy source return and reusable extraction. It cost
 
 ### KCAE.SOURCE:10 - Architectural Rationale
 
-The source remains the basis for later questions, while retrieval units optimize discovery. Their separate identities let the system change chunking or embedding without changing what an exact read means. Preserved context dependencies make selective refresh possible.
+The source remains the basis for later questions, while retrieval units optimize discovery. Their separate identities let the system change chunking or embedding without changing what an exact read means. Preserving each unit’s source dependencies allows selective refresh.
 
 ### KCAE.SOURCE:11 - SoTA-Echoing
 
-The practice question is how to retrieve small passages without making them contextless. Anthropic's 2024 Contextual Retrieval is a useful historical mechanism: attach context to chunks before indexing. This pattern adapts that idea by retaining generated context separately and exposing its source dependencies; it does not adopt the reported corpus-wide gains as a forecast. Indexing complete sections can avoid chunk expansion within a section; compare its finding performance and per-hit reading cost with smaller units. Reopen the unit design when an actual miss depends on omitted context or when expansion overwhelms the reader. NOT.5 supplies a fuller translation/loss method where notation changes; ordinary file parsing alone is not an A.6.3.RT semantic translation claim.
+The practice question is how to retrieve small passages without making them contextless. Anthropic's 2024 Contextual Retrieval is an early way to attach context to chunks before indexing. Keep generated context separate and expose its source dependencies. The reported gains concern the study corpus. Assess gains for the intended corpus separately. Indexing complete sections can avoid chunk expansion within a section; compare its finding performance and per-hit reading cost with smaller units. Reopen the unit design when an actual miss depends on omitted context or when expansion overwhelms the reader. NOT.5 supplies a fuller translation/loss method where notation changes; ordinary file parsing alone is not an A.6.3.RT semantic translation claim.
 
 ### KCAE.SOURCE:12 - Relations
 
-KCAE.USE supplies the source roles and allowed use. KCAE.INDEX consumes retrieval units; KCAE.DELIVER consumes reading units; KCAE.CHANGE maintains their identities and dependencies. A.6.3.RT and NOT.5 govern their respective representation-loss questions without replacing this domain extraction and source-reader construction.
+KCAE.USE supplies the source roles and allowed use. KCAE.INDEX consumes retrieval units; KCAE.DELIVER consumes reading units; KCAE.CHANGE maintains their identities and dependencies. Use A.6.3.RT and NOT.5 for their respective questions about representation loss. Extraction and construction of the source reader take place here.
 
 ### KCAE.SOURCE:End

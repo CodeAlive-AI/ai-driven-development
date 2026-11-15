@@ -12,7 +12,7 @@ The reader can distinguish the admitted expressions and the operations they desc
 
 The result is an interpreter or effective translation, with the correspondence needed to use its output. Depending on the question, the preserved observation may include returned values, state changes, interaction, failure or termination. A compiler for a programming language, an evaluator for symbolic expressions and an interpreter for a decision language are different applications of this method.
 
-Use an existing suitable evaluator or translator when it already provides the needed behavior affordably. Designing the notation's useful distinctions is a separate question when those distinctions are still unknown. Choosing a physical realization follows the computational construction and its actual resource requirements.
+Use an existing suitable evaluator or translator when it provides the needed behavior affordably. Designing the notation's useful distinctions is a separate question when those distinctions are still unknown. Choosing a physical realization follows the computational construction and its actual resource requirements.
 
 ### CMP.12:2 - Problem
 
@@ -51,7 +51,7 @@ Give binding an explicit operation. In an immutable lexically scoped language, e
 
 For a function expression, construct an applicable value containing the parameters, body and the bindings its later execution needs. Such a value is a **closure**. To apply it under lexical scope, extend its saved environment with the argument bindings and evaluate its body there. If variables can change, distinguish names, storage locations and current contents so that a captured reference continues to designate the intended location.
 
-Expose the primitive's actual operation. An instruction to select an element satisfying a condition needs a search or other obtaining procedure. An unbounded search must retain its possible nontermination. If the implementation language has different arithmetic, truth values or evaluation order, translate those operations deliberately rather than inheriting its defaults.
+State what operation the primitive performs. An instruction to select an element satisfying a condition needs a search or other obtaining procedure. An unbounded search must retain its possible nontermination. If the implementation language has different arithmetic, truth values or evaluation order, translate those operations deliberately rather than inheriting its defaults.
 
 #### CMP.12:4.3 - Make control, progress and resource use executable
 
@@ -59,7 +59,7 @@ Decide what remains to be done after the current subexpression returns. A recurs
 
 Distinguish the termination of translation from the termination of the translated program. A compiler that traverses a finite syntax tree can terminate even when the generated program runs indefinitely. A step limit can return a suspended computation; reaching that limit does not establish divergence. CMP.1 supplies the limit on general termination decision when that question arises.
 
-Count consequential dispatch, environment lookup, retained continuations, arithmetic and storage. Removing repeated syntax analysis may repay compilation for repeated execution. For a rarely used or frequently changing expression, direct interpretation may be the cheaper choice. Retain the existing algorithmic cost and comparison methods rather than assuming compilation always improves the work.
+Count consequential dispatch, environment lookup, retained continuations, arithmetic and storage. Removing repeated syntax analysis may repay compilation for repeated execution. For a rarely used or frequently changing expression, direct interpretation may be the cheaper choice. Use the existing methods to compare these algorithmic costs.
 
 #### CMP.12:4.4 - Construct translation from the evaluation structure
 
@@ -69,7 +69,7 @@ Preserve binding and control at this construction step. Allocate fresh temporary
 
 State how source values, environments and observations correspond to target ones. A target representation may require encoding inputs and decoding outputs. Check that admitted values fit its arithmetic and storage operations. If one representation deliberately approximates another, use CMP.8 for the qualified relation instead of claiming unchanged values.
 
-When several translation passes are used, connect their actual input and output relations. Each pass's output must satisfy the next one's premises. MATH.17 and MATH.18 supply composition and interpretation reasoning; the computational work additionally provides the terminating conversion and executable target operations.
+When several translation passes are used, connect their input and output relations. Each pass's output must satisfy the next one's premises. MATH.17 and MATH.18 supply composition and interpretation reasoning; the computational work additionally provides the terminating conversion and executable target operations.
 
 #### CMP.12:4.5 - Establish the correspondence at the scope needed
 
@@ -194,9 +194,9 @@ The preservation claim includes composition because translated fragments are nor
 
 How should expression meaning become executable? **Adopt** the constructor-based evaluation and saved-environment application in [SICP's evaluator](https://sicp.sourceacademy.org/chapters/4.1.1.html) for :4.2–4.3. Its historical contribution is exposing operations otherwise hidden in a host language. A direct evaluator is a serious cheaper choice for changing or infrequently executed expressions. **Adapt** [SICP's compilation construction](https://sicp.sourceacademy.org/chapters/5.5.html) when prior analysis repays its cost over subsequent runs: construct operations instead of repeatedly selecting them during execution. Keep binding and control semantics while comparing conversion, code storage and later execution. A changed execution frequency, primitive or language feature reopens that choice.
 
-Which preservation claim supports actual reuse? **Adopt** the explicit behavioral scope in the current [CompCert manual, section 1.2](https://compcert.org/man/manual001.html), for :4.1 and :4.5. Matching final values is sufficient only for uses governed by those values; interaction and termination can require more. CompCert's theorem has its own language-defined behavior and undefined-behavior treatment, and excludes time and memory consumption from its observed trace. A translator for a language with a defined division error therefore needs the error policy chosen in :5.3, not an imported C-specific permission to remove it. A changed observation or admitted execution context reopens the relation.
+Which preservation claim supports reuse? **Adopt** the explicit behavioral scope in the current [CompCert manual, section 1.2](https://compcert.org/man/manual001.html), for :4.1 and :4.5. Matching final values is sufficient only for uses governed by those values; interaction and termination can require more. CompCert's theorem has its own language-defined behavior and undefined-behavior treatment, and excludes time and memory consumption from its observed trace. A translator for a language with a defined division error therefore needs the error policy chosen in :5.3, not an imported C-specific permission to remove it. A changed observation or admitted execution context reopens the relation.
 
-For larger compositions, **adapt** the choice between operational simulation and denotational behavioral refinement examined in [*Denotation-based Compositional Compiler Verification*](https://arxiv.org/html/2404.17297v1). The latter uses algebraic composition of behavioral sets to reduce proof duplication, while retaining termination, divergence, failure and interaction distinctions that simpler final-state accounts can lose. Use it when those operations fit the language and simplify the actual preservation argument; a direct structural or state correspondence remains sufficient for the small constructions here. Changed control features, module interaction or proof-maintenance cost can reverse the selection.
+For larger compositions, **adapt** the choice between operational simulation and denotational behavioral refinement examined in [*Denotation-based Compositional Compiler Verification*](https://arxiv.org/html/2404.17297v1). The latter uses algebraic composition of behavioral sets to reduce proof duplication, while retaining termination, divergence, failure and interaction distinctions that simpler final-state accounts can lose. Use it when those operations fit the language and simplify the preservation argument; a direct structural or state correspondence remains sufficient for the small constructions here. Changed control features, module interaction or proof-maintenance cost can reverse the selection.
 
 ### CMP.12:12 - Relations
 

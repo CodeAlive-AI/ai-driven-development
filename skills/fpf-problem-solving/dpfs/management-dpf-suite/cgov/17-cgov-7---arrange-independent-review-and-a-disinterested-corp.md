@@ -25,11 +25,11 @@ Arrange the review and the decision separately, then connect the findings to par
 
 #### CGOV.7:4.1 - Establish the required contribution
 
-Recover the matter, the decision maker's powers and the conflict conditions. Identify any required specialist opinion, independent review, abstention, separate consent or eligible composition. Use the applicable rule rather than assuming that every conflicted matter requires the same procedure.
+Recover the matter, the decision maker's powers and the conflict conditions. Under the rule governing this matter, identify any required specialist opinion, independent review, abstention, separate consent or eligible composition.
 
 State the question the reviewer must answer. For a transaction it might concern a valuation assumption, alternative terms or consequences for the corporation. A general request to “approve the deal” hides both the substantive question and the authority boundary.
 
-Reuse a sufficiently qualified existing result when permitted and adequate. For optional additional review, compare its attainable effect on the decision with its full burden, including access, interpretation, delay and displaced work. Further inquiry can be declined without treating an unresolved material condition as satisfied.
+Reuse an existing result when its qualifications meet the need and the applicable rules allow it. For optional additional review, compare its attainable effect on the decision with its full burden, including access, interpretation, delay and displaced work. Further inquiry can be declined without treating an unresolved material condition as satisfied.
 
 #### CGOV.7:4.2 - Choose reviewers and eligible decision participants
 
@@ -37,7 +37,7 @@ Determine the relevant independence: from the counterparty, proposer, interested
 
 Select the needed competence and capacity as well. A disinterested reviewer who cannot examine the technical or financial claim does not supply that examination. A specialist can supply analysis to eligible directors without acquiring their decision power.
 
-Establish who may commission the work, receive findings and decide. Recover composition, exclusion, quorum and consent conditions where they apply. Use a suitable existing committee or direct arrangement; establish a new one only when the matter or rule needs it. A proposed replacement member still needs an effective appointment.
+Establish who may commission the work, receive findings and decide. Recover composition, exclusion, quorum and consent conditions where they apply. Use a suitable existing committee or direct arrangement; establish a new one only when the matter or rule needs it. A proposed replacement member needs an effective appointment.
 
 #### CGOV.7:4.3 - Provide access and obtain a usable review
 
@@ -45,7 +45,7 @@ Give the reviewer the question, relevant materials, assumptions, alternatives an
 
 Specify what the review will return: its answer, reasons, scope, material assumptions and unresolved issues. The substantive analysis follows the relevant domain method. A financial valuation and a technical assessment may be needed for the same matter without either answering the other's question.
 
-Allow the reviewer to report an adverse or incomplete result. If needed access is refused or the work cannot answer the question in time, return that limitation and its effect. Do not complete the appearance of review by replacing the missing analysis with a signature.
+Allow the reviewer to report an adverse or incomplete result. If needed access is refused or the work cannot answer the question in time, return that limitation and its effect. A signature cannot supply the missing analysis.
 
 #### CGOV.7:4.4 - Connect findings to the corporate decision
 
@@ -67,9 +67,9 @@ The required review is available under its stated condition. The two eligible di
 
 #### CGOV.7:5.2 - Independence or a further report that adds nothing
 
-Change the proposed valuer's terms: its entire fee is payable only if the purchase is approved. That dependence is relevant to the required independent opinion. The arrangement must be assessed and corrected under the applicable criteria, for example by changing the engagement or selecting another qualified reviewer. The practitioner's remedy concerns this dependence, not an automatic distrust of every paid expert.
+Change the proposed valuer's terms: its entire fee is payable only if the purchase is approved. That dependence is relevant to the required independent opinion. The arrangement must be assessed and corrected under the applicable criteria, for example by changing the engagement or selecting another qualified reviewer.
 
-Alternatively, retain the adequate first opinion and suppose a participant asks for a second one “for assurance.” No rule requires it, and the existing result already answers the valuation question under sufficient conditions. The request alone creates no obligation to duplicate the work. The remaining task is the authorized decision, not a search for another confirming signature.
+Alternatively, retain the adequate first opinion and suppose a participant asks for a second one “for assurance.” No rule requires it, and the existing result already answers the valuation question under sufficient conditions. The eligible directors can use the first valuation and proceed to the decision.
 
 ### CGOV.7:6 - Bias-Annotation
 
@@ -93,13 +93,13 @@ Eligible participants can use qualified findings without delegating their decisi
 
 ### CGOV.7:10 - Architectural Rationale
 
-Review, participation and corporate decision are connected operations with different results. Keeping them separate explains why an opinion may be useful before any approval and why a legally capable organ can still lack the basis for a responsible decision. Their connection must preserve conditions, not merely move a document between participants.
+Review, participation and corporate decision are connected operations with different results. Keeping them separate explains why an opinion may be useful before any approval and why a legally capable organ can still lack the basis for a responsible decision. Keep the conditions of the finding with it when it reaches the decision makers.
 
 ### CGOV.7:11 - SoTA-Echoing
 
-The [G20/OECD Principles, II.F](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-5.html) describes varied related-party approval arrangements, including independent review and restrictions on interested participation. [Section V.E](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-8.html) connects independent judgement to relationships and corporate responsibilities. These are comparative principles, not one rule applicable to every corporation.
+The [G20/OECD Principles, II.F](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-5.html) describes varied related-party approval arrangements, including independent review and restrictions on interested participation. [Section V.E](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-8.html) connects independent judgement to relationships and corporate responsibilities. These principles compare arrangements across jurisdictions.
 
-This method combines those distinctions with bounded inquiry and explicit transfer of specialist findings. Direct deliberation under an adequate existing arrangement remains an alternative when permitted; a new committee or opinion is not intrinsically superior. The legal basis, actual independence and technical warrant of each opinion need their own support. A change to any condition material to the receiving decision reopens the affected contribution.
+This method combines those distinctions with bounded inquiry and explicit transfer of specialist findings. Direct deliberation under an adequate existing arrangement remains an alternative when permitted. The legal basis, actual independence and technical warrant of each opinion need their own support. A change to any condition material to the receiving decision reopens the affected contribution.
 
 ### CGOV.7:12 - Relations
 

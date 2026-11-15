@@ -10,7 +10,7 @@
 
 **Use this when** independently governed participants depend on shared semantic modules and need an arrangement for maintaining them. A typical failure is a changed shared term whose consumers cannot determine who could approve the change, which meaning their interface uses, or how to migrate.
 
-Start with one module and the uses that actually depend on it. Establish its scope, who can decide its content and release, and how its users can obtain an identifiable maintained edition. The first useful result is an agreement through which those participants can make and use a concrete module change.
+Start with one module and the uses that depend on it. Establish its scope, who can decide its content and release, and how its users can obtain an identifiable maintained edition. The first useful result is an agreement through which those participants can make and use a concrete module change.
 
 The object is the shared maintenance and reliance arrangement for semantic modules. The gain is continued reuse with explicit local commitments, contribution rights, dependencies, and change consequences. A compatibility claim covering additional users needs support for those users' relevant reliance.
 
@@ -34,15 +34,15 @@ One response is to require every participant to adopt one centrally controlled m
 
 ### SIE.12:4 - Solution
 
-Define the smallest shared module arrangement that serves the actual users. Make its semantic scope, decisions, dependencies, and releases usable in their integration work. Preserve local modules and disagreement where convergence is unnecessary or unsupported.
+Define the smallest shared module arrangement that serves the users who depend on the modules. Make its semantic scope, decisions, dependencies, and releases usable in their integration work. Preserve local modules and disagreement where convergence is unnecessary or unsupported.
 
 #### SIE.12:4.1 - Pattern-Use Unfolding
 
-1. **Identify the shared use.** Name the users and questions that depend on the module. Locate the semantic content they share and the local distinctions they still need. If the actual need is only one interface agreement, complete that agreement through the relevant SIE Methods.
+1. **Identify the shared use.** Name the users and questions that depend on the module. Locate the semantic content they share and the local distinctions they still need. If one interface agreement meets the need, complete that agreement through the relevant SIE Methods.
 2. **Set module boundaries.** State the module's domain, concepts and relations, intended uses, material exclusions, and relation to local extensions. Use SIE.3 for content that needs model development and SIE.4 for qualified correspondences between different module meanings.
 3. **Establish identification and dependencies.** Choose namespaces or identification practices that let consumers recover the intended term or module meaning. Identify editions and the dependencies each supported use needs. A permitted version range must have a semantic compatibility basis for its claimed use.
-4. **Assign the decisions and communication.** State who may propose changes, decide module content, release an edition, resolve a disagreement under the community's rules, and communicate with users. Record the actual remit of each responsibility. A source owner retains its source meaning and issuance authority.
-5. **Make contribution workable.** Give a proposer enough guidance to supply the changed meaning, rationale, examples, affected modules, and known consumer consequences. Route the proposal to the people authorized to decide it. Keep an unresolved disagreement explicit and permit a scoped local extension or alternative module when it can serve its users.
+4. **Assign the decisions and communication.** State who may propose changes, decide module content, release an edition, resolve a disagreement under the community's rules, and communicate with users. Record the scope of each responsibility. A source owner retains its source meaning and issuance authority.
+5. **Make contribution workable.** Give a proposer enough guidance to supply the changed meaning, rationale, examples, affected modules, and known consumer consequences. Route the proposal to whoever is authorized to decide it. Keep an unresolved disagreement explicit and permit a scoped local extension or alternative module when it can serve its users.
 6. **Prepare the release for its consumers.** Identify material semantic changes and use SIE.11 for affected reliance. Provide the edition, access, dependency conditions, and migration or deprecation information needed by those users. Distinguish a clarification from a changed meaning; preserve a way to identify the earlier meaning when consumers still rely on it.
 7. **Notify and maintain at the agreed scope.** Give affected users notice that permits the action required by their dependency and the community agreement. Maintain a responsive contact and a workable path for corrections. An urgent correction may require immediate qualified publication and notification; describe the resulting limits.
 8. **Return the usable arrangement.** Show how the named participants can obtain a module, propose a change, decide and release it, and interpret the effect on their supported uses. An unresolved decision right or dependency limits the part of the commons that can be claimed as governed.
@@ -56,7 +56,7 @@ These responsibilities can fit a small agreement for a small commons. Broader pa
 | Shared module and users | Semantic scope, supported uses, and the participants who depend on it. |
 | Local relationship | Extensions, maintained correspondences, disagreements, and the commitments claimed across module boundaries. |
 | Identification and dependencies | Namespaces or equivalent identifiers, recoverable editions, access, and dependency or compatibility conditions. |
-| Decisions and communication | Proposal, content, release, dispute, and contact responsibilities at their actual remit. |
+| Decisions and communication | Who may propose changes, decide content, release an edition, resolve disputes and communicate with users, and the scope of each responsibility. |
 | Change and continued use | Material-change assessment, notices, correction, migration, deprecation, and maintained access needed by consumers. |
 
 Refer to existing module definitions and working agreements when they supply this content. The account makes the arrangement recoverable; it need not reproduce every module or introduce a separate record for each responsibility.
@@ -92,7 +92,7 @@ The manufacturers' qualified product descriptions supply these discriminating ca
 | X: its drive can be replaced as a separate part; it has no replaceable drive service module. | Included: the drive is replaceable. | Excluded: module replacement is not its service arrangement. |
 | Y: its drive can be replaced separately, and the supported service arrangement also provides a replaceable drive module. | Included. | Included under the module-service criterion. |
 
-SIE.11 follows the changed classification need to the actual queries. Two consumer outcomes complete the illustrative transition:
+SIE.11 follows the changed classification need to the queries that use the classification. Two consumer outcomes complete the illustrative transition:
 
 - The service partner changes its receiving question to module-replacement planning. It adopts `equip:DriveModuleServiceable`, updates the relevant correspondence and query, and verifies that Y is included and X excluded. The receiving owner accepts that scoped result; SIE.10 validates its integration premises.
 - Manufacturer A retains its spare-drive query against `equip:DriveReplaceable`. Its required meaning and the qualified X/Y results remain unchanged, so it retains matching evidence for that use. Adopting the new class is not a prerequisite for continuing this query.
@@ -116,20 +116,20 @@ The completed action is an urgent qualified correction with notification. Earlie
 
 | Lens | Likely drift | Repair |
 | --- | --- | --- |
-| Governance | A listed contact is treated as the owner of every semantic decision. | State content, release, dispute, communication, and source responsibilities at their actual remits. |
+| Governance | A listed contact is treated as the owner of every semantic decision. | State content, release, dispute, communication, and source responsibilities and the remit of each. |
 | Architecture | A single large model replaces useful local modules. | Start with the shared uses and retain local distinctions through scoped dependencies and correspondences. |
 | Ontology/Epistemology | A stable label conceals a changed classification criterion. | Compare meanings and examples; keep earlier and replacement meaning identifiable. |
-| Pragmatics | A small interface acquires unnecessary community machinery. | Complete the local agreement when that is the actual shared need. |
+| Pragmatics | A small interface acquires unnecessary community machinery. | Complete the local agreement when it meets the shared need. |
 | Didactics | A version number is read as a guarantee of compatibility. | State the semantic basis and receiving scope of compatibility. |
 
 ### SIE.12:7 - Conformance Checklist
 
-- [ ] Actual users and their shared-module reliance justify the arrangement.
+- [ ] The users’ reliance on the shared modules justifies the arrangement.
 - [ ] The shared scope and local extensions preserve the commitments they claim to use.
 - [ ] Consumers can identify the model meaning, edition, access, and applicable dependencies.
 - [ ] Proposal, content, release, dispute, contact, and source responsibilities are distinguishable where they matter.
 - [ ] A material change has a usable decision and affected-consumer path.
-- [ ] Identification, notice, migration, and deprecation follow the chosen rules and actual use consequences.
+- [ ] Identification, notice, migration, and deprecation follow the chosen rules and the consequences for the uses that depend on the module.
 - [ ] A local interface can finish without creating an unnecessary commons.
 - [ ] Unresolved rights or reliance limit the corresponding claimed arrangement.
 
@@ -137,10 +137,10 @@ The completed action is an urgent qualified correction with notification. Earlie
 
 | Anti-pattern | Repair |
 | --- | --- |
-| Shared repository treated as governance | Establish the decisions and dependency conditions actual users need. |
+| Shared repository treated as governance | Establish who can make the decisions and which module dependencies the users need to maintain. |
 | Contact metadata treated as decision authority | Identify who may decide content and releases and at what scope. |
 | Silent meaning replacement | Expose the changed criterion, identification treatment, and consumer consequences. |
-| Mandatory convergence of incompatible meanings | Retain scoped alternatives and the correspondences that are actually supported. |
+| Mandatory convergence of incompatible meanings | Retain scoped alternatives and the correspondences that have support. |
 | Announcement treated as completed migration | Distinguish notification from each affected consumer's result. |
 
 ### SIE.12:9 - Consequences
@@ -151,11 +151,11 @@ The arrangement costs maintenance, communication, and change assessment. Those c
 
 ### SIE.12:10 - Architectural Rationale
 
-A commons is useful through the semantic commitments its users share and the decisions they can actually make. Module boundaries preserve the scope of those commitments. Identifiable meanings and dependencies let users determine how a change affects their work; assigned rights let the relevant participants act on that result.
+A commons is useful through the semantic commitments its users share and the decisions they have the authority and practical means to make. Module boundaries preserve the scope of those commitments. Identifiable meanings and dependencies let users determine how a change affects their work; assigned rights let the relevant participants act on that result.
 
 ### SIE.12:11 - SoTA-Echoing
 
-The practice question is how the three independently governed organizations in §5.1 can change their shared equipment classification while keeping supported service queries interpretable. The selected line is a scoped shared core with separately maintained local modules, explicit dependencies, identifiable meanings, and assigned content and release rights. It adapts the [OBO Foundry principles](https://obofoundry.org/principles/fp-000-summary.html) to these actual users.
+The practice question is how the three independently governed organizations in §5.1 can change their shared equipment classification while keeping supported service queries interpretable. The selected line is a scoped shared core with separately maintained local modules, explicit dependencies, identifiable meanings, and assigned content and release rights. It adapts the [OBO Foundry principles](https://obofoundry.org/principles/fp-000-summary.html) to these users.
 
 A serious alternative for these same users is a jointly qualified release bundle: publish the relevant shared core and local profiles as one identified, compatible combination. This also preserves source authority and can retain older supported editions. It offers one combination to qualify instead of asking every consumer to select compatible module editions; it need not impose a universal ontology.
 
@@ -164,9 +164,9 @@ A serious alternative for these same users is a jointly qualified release bundle
 | Shared core with independently maintained local modules | Examine the same changed criterion, equipment counterexamples, mappings, and receiving queries. Qualify the affected module interfaces and state the editions each supported use can combine. An unchanged local module can remain on its supported basis. | **Adapt** §4.1.2–3/5–7 and §5.1. Separate module maintenance preserves the participants' local distinctions and lets a scoped change proceed without constructing another joint bundle. It requires explicit dependency and compatibility evidence; independent version numbers alone are insufficient. |
 | One jointly qualified bundle of the relevant core and profiles | Use the same meanings and cases and reuse unchanged component evidence, then qualify and identify the supported combination. Coordinate its release and continued support with the three participants. | Retain this alternative when consumers need a common deployment combination or the participants can qualify it more economically than separate compatibility claims. It simplifies edition selection but adds joint-release coordination, including when only one component changes. |
 
-For §5.1's independently owned local classifications, the modular arrangement is selected to preserve useful local change and scoped reuse. The accepted cost is maintaining compatibility and reliance evidence at the module interfaces. A joint bundle may be better when the shared receiving use actually requires it; fewer files or a central release number cannot decide the comparison. A pair needing only one interface remains the distinct sufficient-agreement case in §5.2, not the rival used to justify this commons.
+For §5.1's independently owned local classifications, the modular arrangement is selected to preserve useful local change and scoped reuse. The accepted cost is maintaining compatibility and reliance evidence at the module interfaces. A joint bundle may be better when the shared receiving use requires it; fewer files or a central release number cannot decide the comparison. A pair needing only one interface remains the distinct sufficient-agreement case in §5.2, not the rival used to justify this commons.
 
-The source contributions change particular responsibilities:
+
 
 | Source and role | Operative move and transfer limit |
 | --- | --- |
@@ -181,7 +181,7 @@ Reopen the arrangement comparison when one supported use requires a joint editio
 ### SIE.12:12 - Relations
 
 - SIE.3 develops or qualifies module content; SIE.4 establishes correspondences between different meanings.
-- SIE.5 retains identifier authority and grain when identity is actually a premise.
+- SIE.5 retains identifier authority and grain when the use depends on identity.
 - SIE.9 supplies the receiving interfaces that consume shared modules.
 - SIE.11 follows material semantic change to affected results and users; SIE.10 supplies their integration validation.
 - Domain authorities retain source meanings and claims. A.3.1.MI contributes Method introduction or revision when the community is changing how it works.

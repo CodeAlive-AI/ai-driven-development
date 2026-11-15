@@ -5,15 +5,15 @@
 
 ### RHY.13:1 - Problem frame
 
-**Use this when** the next performance or development decision depends on whether a demonstrated rhythmic contribution remains available under a meaningful change: another tempo, entry, phrase, partner or representation; a later occasion; or performance without a selected cue.
+**Use this when** you need to know whether a rhythmic contribution remains available after an interval, in a changed passage or with different support. A new tempo, entry, phrase, partner or representation can change what the performer must supply. The answer may guide development or performance, or explain a previously observed attempt.
 
-Choose the particular claim needed for that decision and a passage that can distinguish its alternatives. The first result is a qualified conclusion about that contribution, an identified missing condition, or a reason why the proposed comparison cannot answer the question.
+Identify the claim and the comparison that could settle it. Use an adequate existing performance or other relevant evidence. When the evidence leaves a question open, identify the missing condition or explain why the proposed probe cannot answer it.
 
-Successful use in familiar conditions can continue without a transfer test. When the question concerns human development, HCD.12 and HCD.13 supply the general transfer and retention methods. This Method constructs their rhythmic probes and distinguishes the capability of a performer from that of an equipped or jointly performing whole. For a controller, a configuration or policy test needs its engineering criteria; psychological retention assumptions do not follow from the same word “memory.”
+Use a familiar performance under its established conditions. For a question about human development, HCD.12 and HCD.13 supply general transfer and retention methods. Here, select the rhythmic relations to examine and identify whether the capability belongs to the performer, to an equipped performer or to a group. For a controller, assess the configuration or policy against its engineering criteria. An observed later performance can establish retention on that task. A psychological explanation of the result needs evidence for the proposed process.
 
 ### RHY.13:2 - Problem
 
-A familiar count, gesture or partner can supply the very reference that an independent-performance claim attributes to the learner. Changing the notation can remove duration information; changing tempo can introduce an unavailable movement. A delayed performance may differ both because time has passed and because its support has changed.
+A familiar count, gesture or partner may supply the reference attributed to the learner. Changing notation can remove duration information. Increasing the tempo can demand a movement the performer or actuator cannot make. If an interval elapses and the support also changes, either change may contribute to a different outcome. The comparison alone does not isolate their effects.
 
 A useful probe therefore preserves the rhythmic contribution under investigation while making the changed condition and its possible consequences interpretable.
 
@@ -24,74 +24,74 @@ A useful probe therefore preserves the rhythmic contribution under investigation
 | Representative change and attribution | A realistic new situation may change several conditions; that tests usability but may not identify why it failed. |
 | Support and independence | Removing a prompt can expose an unlearned contribution or remove a legitimate part of the performing arrangement. |
 | Retention and renewed learning | Demonstration, warm-up and earlier probes can change the capability being inspected. |
-| Sufficient result and testing burden | A small contrast can settle a local decision; a wide claim needs a wider basis, not every local use. |
+| Scope and testing burden | A small contrast can answer a local question. A claim about a wider range needs evidence that covers it. |
 
 ### RHY.13:4 - Solution
 
 #### RHY.13:4.1 - State the needed continuation and the claimed contribution
 
-Name what the performer or equipped whole already does, under which conditions, and what must become available next. Select one current question:
+Identify the contribution, who or what supplies it, the conditions under comparison and what is already known. A proposed performance can be assessed for feasibility before anyone has performed it. Choose the question the comparison must answer.
 
 - **Transfer:** can an earlier rhythmic contribution be used in a meaningfully changed passage or condition?
 - **Retention:** can the relevant contribution still be performed after an interval under the stated reference conditions?
 - **Support dependence:** what remains available when a particular source of reference, information or assistance changes?
-- **Combined use:** can the whole perform in the actual later arrangement, even when the causes of success or failure cannot be separated?
+- **Combined use:** can the whole perform with the later passage, support and arrangement? Evidence about the whole arrangement may settle that question even if it leaves the cause of the outcome open.
 
-Use the smallest question that changes the decision. A rehearsal can proceed with a useful qualified result without a general learning-effect claim.
+Ask for the narrowest result that answers the question. A local finding about the supported entry may finish a report or allow rehearsal to proceed. To claim a learning effect, establish the contribution of the learning conditions.
 
-Keep the contributor visible. A teacher may supply beat and entry, the learner articulation, a score duration, and a device the sound. If later use retains them all, test that arrangement. If the learner must supply the entry without the teacher, state that changed contribution explicitly.
+Identify who supplies each contribution. A teacher may give the beat and entry, the learner the articulation, a score the duration and a device the sound. To assess later use with all these contributions, use evidence about that arrangement. To assess entry without the teacher, identify the reference still available and establish whether the learner supplied the required entry.
 
 #### RHY.13:4.2 - Build a rhythmic contrast that can answer the question
 
-Retain the relevant reference, grouping, duration, articulation and receiving task unless one of them is the selected change. RHY.2 and RHY.5–RHY.6 help recover what the source or representation actually supplies.
+Identify the reference, grouping, duration, articulation and receiving task. Preserve the conditions needed for comparison and vary those whose change the claim concerns. Use RHY.2 and RHY.5–RHY.6 to establish what the source or representation supplies. If several conditions change together, the comparison may qualify their combined use.
 
 | Selected change | Construct the probe | Interpretive condition |
 | --- | --- | --- |
-| Tempo | Specify the rhythm-relative relations to preserve and change the beat period; include required movement and recovery. | Correct interval ratios do not establish that the physical actions remain available at the new speed. |
+| Tempo | Specify the relations to preserve as the beat period changes. Include the time required for movement and recovery. | Correct interval ratios establish relative timing. Physical feasibility at the new speed depends on the available actions. |
 | Entry or cycle position | Start from another meaningful point while retaining enough information to recover the reference. | A withheld answer cue can test recognition; an absent indispensable reference makes a different task. |
 | Phrase or material | Keep the earlier contribution needed while changing the relevant grouping, duration or articulation. | Distinguish transfer of timing from newly required instrumental technique. |
-| Representation or modality | Supply the necessary information in the new convention or channel and obtain any needed ability to read or realize it. | A bare onset string cannot test reconstruction of duration it does not specify. |
-| Partner or responsive equipment | Use the new participant's actual cues and response while the passage continues. | Following a fixed recording does not demonstrate reciprocal correction. |
+| Representation or modality | Identify the information available in the new convention or channel. Check any skill needed to read or realize it. For a performance probe, supply the information and access to the convention it requires. | An onset string that omits duration cannot determine a unique sustain. Evidence of remembered duration answers a different question. |
+| Partner or responsive equipment | Examine the cues and responses under the new arrangement while the passage continues. | Following a fixed recording can establish alignment to that recording. A claim about reciprocal correction needs a responsive exchange. |
 | Support | Change the named count, gesture, score or cue while retaining other required contributions. | Record which contribution was withdrawn; a changed instrument or provider may change the tested whole. |
-| Delay | Choose an interval relevant to the next use and keep the intended reference conditions available. | Note intervening practice or changes when they affect the conclusion. Delay alone does not isolate forgetting. |
+| Delay | Use an interval relevant to the question and identify the reference conditions at either end. | Include intervening practice or changes that affect interpretation. The interval by itself leaves the cause of any difference open. |
 
-Where a failure could come from a new prerequisite, check that prerequisite cheaply before interpreting the probe. For instance, a known actuator recovery time can rule out a proposed tempo without repeatedly commanding an impossible action. A person who has never learned the new notation needs access to its convention before performance can show transfer through it.
+If success depends on a new prerequisite, use adequate existing evidence if available. If a feasible check could distinguish a missing prerequisite from a performance failure, check it before attributing the failure. A known actuator recovery time can rule out a proposed tempo directly. For transfer through a new notation, establish what information the notation supplies and whether the performer can read it. If the required convention is unavailable, state what can still be assessed.
 
 #### RHY.13:4.3 - Separate retained performance, support and new instruction
 
-For human capability, use HCD.12 or HCD.13 to preserve the question's conditions. Observe the attempt needed by the claim before giving a demonstration that would supply the answer. If guidance is necessary, provide it and qualify the result as supported or newly learned performance.
+For human performance, use HCD.12 or HCD.13 to preserve the conditions of the claim. An existing observation may show what the learner supplied and when guidance was given. In a new probe of independent performance, observe the attempt before giving a demonstration that supplies the answer. If the learner receives help, describe what they do with it. A claim of subsequent learning needs evidence of the relevant change.
 
-For a retention question, keep the reference task and support comparable to the earlier use. For a support question, compare with the named support condition. A delayed attempt with withdrawn assistance can show that the combined later demand is not yet met; by itself it cannot decide between loss over time and dependence on that assistance.
+For a retention claim, use comparable earlier and later tasks and support, or account for a consequential change. To examine the contribution of a particular support, compare performance under the relevant support conditions. A failed later attempt with assistance withdrawn can establish a failure under those combined demands. Separating loss over time from dependence on assistance requires a comparison that distinguishes them.
 
-The order of attempts matters. Restoring a cue after a failure can help localize the next intervention, but the earlier attempt may have provided practice. Do not label a later successful retry an untouched first attempt. Use further contrasts only if they could change the action.
+Account for the order of attempts. Restoring a cue after a failure may help locate a difficulty, and the first attempt may give the learner practice. Report the retry as a later attempt. Seek another contrast when it could answer a material question at a justifiable cost.
 
-A robot's successful replay after restoring a saved configuration shows operation with that configuration. A transfer claim requires the relevant changed input or condition; a learned-policy improvement claim needs the corresponding training and evaluation basis. Keep hardware, controller, calibration and support available in the claimed performing whole.
+A successful replay after restoring a robot’s saved configuration establishes operation with that configuration. To claim transfer, identify the changed input or condition and evidence for the resulting performance. To claim that a policy improved through training, use the relevant training and evaluation evidence. Include the hardware, controller, calibration and support on which the result depends.
 
-#### RHY.13:4.4 - Observe the contribution and interpret the failed relation
+#### RHY.13:4.4 - Observe the contribution and interpret the result
 
-Perform the probe under conditions appropriate to the actual technique and arrangement. Inspect the relation the task needs: reference continuation, phrase grouping, sustain and release, timed entry, joint correction or coordination through the overlap.
+Use a suitable observation of the relevant technique and arrangement. Conduct a new probe if the question needs one and it is feasible. Examine the required relation, such as continued reference, phrase grouping, sustain and release, timed entry, joint correction or coordination through an overlap.
 
-Separate three outcomes:
+For an attempted passage, distinguish the outcomes below. If no attempt occurred, report what the specification, physical limits or other evidence establish and which performance claims remain open.
 
 1. The target relation is performed under the stated conditions. Use that result at this scope.
-2. A relevant relation fails in an otherwise interpretable probe. Locate the difficulty that changes the next move: retrieving or using available information, recognizing the relation, performing an action, meeting its physical demand or coordinating with another contribution.
-3. The attempt is uninterpretable for the claim because necessary information is absent from the task input, or its support, observation or new prerequisite is inadequate. Repair that condition or return a narrower conclusion.
+2. An interpretable attempt misses a required relation. Describe the failure. If its cause matters, look for evidence about retrieval, recognition, technique, physical demands or coordination with another contribution. Keep the cause open if the evidence cannot distinguish it.
+3. A missing input, observation or prerequisite can make the attempt uninformative about the intended claim. An established physical limit can itself answer a feasibility question. Give the narrower result the evidence supports. Repair the condition if the remaining question warrants the work.
 
-A failed novel passage does not erase demonstrated familiar capability. Conversely, a correct structural answer does not establish its physical enactment. RHY.12 supplies further human practice; RHY.9–RHY.11 repair the performing arrangement or coordination. RHY.14 supplies observation and response methods when those are the unresolved contribution.
+Keep what the earlier performance established under its familiar conditions. A failed novel passage describes performance under its own conditions. A correct structural answer establishes the relation calculated. To claim physical enactment, use evidence of the required actions. Use RHY.12 for needed human practice, RHY.9–RHY.11 for a change to the arrangement or coordination, and RHY.14 for a missing observation.
 
 #### RHY.13:4.5 - Return a bounded conclusion and next use
 
-State what carried over, remained available later, or depended on support, with the changed condition and relevant limits. Ordinary use may need only a concise rehearsal decision: “The phrase now survives the rate change with the hand reference; unaided entry still needs practice.”
+State what the evidence shows about transfer, later performance or performance under the specified support. Name the changed conditions and the limits of the comparison. A rehearsal may need only a concise finding such as “The phrase survives the rate change with the hand reference. Entry without the teacher’s beat was not established in that attempt. If that entry is required next, practise it under the intended conditions.”
 
-Distinguish local usability from causal claims about how learning occurred and from prevalence across a population. Stop when the receiving decision can be made. If a stronger conclusion matters, identify the additional contrast or observation that could change it and compare its value with its burden through C.11.DUA.
+Return the local conclusion when it answers the question. A claim about the cause of learning or the prevalence of a result across learners needs evidence for that claim. When a stronger conclusion matters, identify the additional contrast or observation that could change it and weigh its value against the burden through C.11.DUA.
 
-Reopen the affected claim when the passage, convention, performing whole, support, interval or intended range changes. Keep earlier conclusions whose conditions still hold.
+When the passage, convention, performing whole, support, interval or intended range changes, check whether the conclusion still applies to the use in question. Keep the findings whose conditions hold.
 
-**Local mantra:** choose the needed claim; change the relevant condition; preserve its inputs; observe before teaching when required; return the result with its support and scope.
+**In practice:** identify the claimed contribution and its holder. Check what the changed condition requires, use evidence for that condition and state the scope of the result.
 
 ### RHY.13:5 - Archetypal Grounding
 
-These are constructed probes with stipulated outcomes.
+The following examples stipulate the probe conditions and outcomes to show how to interpret them. They do not set standard test conditions or report measurements from learners.
 
 #### RHY.13:5.1 - A later success still uses the teacher's reference
 
@@ -99,7 +99,7 @@ A learner performs a three-beat gesture cycle against a two-syllables-per-beat p
 
 At the next lesson, the first familiar attempt with the teacher's beat succeeds. In the following attempt without that external beat, the learner resets the gesture at the phrase boundary. The score and duration information remain available, so this contrast does not withhold a missing part of the phrase description.
 
-The available conclusion is later successful performance with the reference, followed by a failed local independence probe. An unaided attempt before any post-interval supported rehearsal was not observed; the supported attempt came first. The teacher retains the successful supported use and selects practice of independent reference continuation. Calling the second failure “forgotten rhythm” would lose the actionable difference.
+The first attempt at the later lesson establishes performance with the teacher’s reference. The second shows that the learner missed the reset-free continuation without that reference in this passage. The first post-interval attempt without supported rehearsal remains unobserved. For independent continuation, the teacher keeps the supported passage available and selects practice in supplying the reference. The sequence leaves the cause of the second failure open.
 
 #### RHY.13:5.2 - Relative timing transfers to a changed beat period
 
@@ -107,69 +107,69 @@ A familiar four-unit phrase has attacks at units 0, 1 and 3. At a 0.5-second uni
 
 The next use has a 0.4-second unit and the same grouping and articulation. The target attacks are therefore 0, 0.4 and 1.2 seconds, with the cycle returning at 1.6. The learner understands the unchanged convention and can make the required familiar actions at that speed.
 
-In the stipulated first changed-tempo attempt those relative positions and the continuation are preserved within the task's accepted tolerance. The result supports this local tempo transfer. It does not yet show entry from another cycle position, a new bodily technique or responsive adjustment to a partner. If the receiving task only needed this tempo, further probes are unnecessary.
+Suppose the first changed-tempo attempt preserves the relative positions and continuation within the accepted tolerance. This establishes transfer to this tempo for the stated phrase. Entry at another cycle position, a new technique and responsive adjustment to a partner would each require evidence for that change. A question about this tempo is answered.
 
 #### RHY.13:5.3 - Removing information is not a clean independence test
 
 A learner has performed a sound lasting two beats followed by two silent beats from a duration-bearing prompt. A proposed “test without the score” supplies only attack syllables at the beginning of each four-beat cycle.
 
-Two different tasks are possible. If the goal is to remember the earlier duration pattern, name that memory demand and inspect the unaided attempt. If the goal is to interpret the newly supplied string, the duration is underdetermined: an immediate release and a two-beat sustain fit the same attacks.
+For a memory question, specify the earlier duration the learner must retrieve and examine performance without the duration-bearing prompt. For an interpretation question, check what the new string determines. An immediate release and a two-beat sustain fit the same attacks.
 
-The teacher selects interpretation as the intended question and restores a timed demonstration or duration convention. The next attempt supplies the required sustain and silence. The corrected conclusion concerns performance from an adequate supported input; no duration-retrieval or forgetting result was obtained. This is the practical consequence of Cha's Takadimi objection for test design.
+The teacher selects interpretation and supplies a timed demonstration or an agreed duration convention. In the next attempt the learner produces the required sustain and silence. That observation establishes performance with the duration information available. The original prompt and the success with the corrected one leave recall and forgetting untested. Cha’s critique helps distinguish onset from duration information in designing this comparison.
 
 #### RHY.13:5.4 - The new physical demand exceeds the equipped performer
 
 A controller preserves a rhythm with attacks one, then two time units apart. Its reference configuration has a 0.5-second unit and an actuator that needs at least 0.45 seconds between the relevant actions.
 
-A proposed 0.4-second unit preserves the abstract rhythm but requires a first action interval shorter than the actuator's known bound. That information is already sufficient to reject this configuration for the changed-tempo use; repeated physical trials would not establish the missing capability.
+At 0.4 seconds per unit, the abstract rhythm is unchanged, but the first interval is shorter than the actuator’s 0.45-second minimum. That known limit rules out the proposed configuration for this tempo.
 
-Retain the feasible tempo, change the realization or obtain another actuator, then test the resulting arrangement if needed. The controller's correct timing construction remains useful. What is unavailable is the combined rhythmic performance under the new physical demand, not an inferred human-style loss of memory.
+The actuator limit answers the feasibility question. If a new arrangement is wanted, consider a different realization or actuator, or a slower tempo if the required tempo can change. Check the resulting performance when the later use depends on it. The controller’s timing construction remains valid for the specified rhythm.
 
 ### RHY.13:6 - Bias-Annotation
 
-A teacher may see their own count as background while it supplies the learner's reference. A technology trial may likewise attribute an equipped whole's result to a policy alone. Inspect the contribution of the changed support. Keep “did not transfer in this probe” distinct from a general inability, and retain legitimate accessibility and performing resources.
+A teacher’s count may be supplying the learner’s reference. Hardware or support may be supplying a result attributed to a control policy. Identify what each supplied in the observed attempt. Retain accessibility aids and performance resources that belong to the intended arrangement, and limit the conclusion to the conditions examined.
 
 ### RHY.13:7 - Conformance Checklist
 
-- The probe answers a stated transfer, retention, support or combined-use question.
-- The rhythmic relation and meaningful changed condition are recoverable.
-- Information, convention, physical capability and support needed by that question are available or explicitly unresolved.
+- The available evidence addresses the stated transfer, retention, support or combined-use question, or identifies what prevents an answer.
+- The account identifies the rhythmic relation and the changed condition or interval at issue.
+- The result states which needed information, convention, physical capability and support were present, absent or unknown.
 - Instruction and earlier attempts are reflected in the result's scope.
-- The conclusion distinguishes structural recovery, actual enactment and the holder or performing whole.
-- A failed or unresolved result changes the next practice, arrangement or claim; further testing is conditional on that use.
+- The account identifies whose contribution is being assessed and distinguishes a structural conclusion from an observed performance.
+- A failed or unresolved result states what is established and what remains open. Further testing, practice or a change of arrangement serves a remaining task.
 
 ### RHY.13:8 - Common Anti-Patterns and How to Avoid Them
 
 | Failure | Useful correction |
 | --- | --- |
 | Calling a delayed unsupported failure forgetting | Separate the time and support questions, or retain the combined-use conclusion. |
-| Testing duration interpretation from attacks alone | Supply the needed information, or explicitly test memory of an earlier supplied duration. |
+| Testing duration interpretation from attacks alone | Report that the attack string leaves the required duration undetermined. For a new interpretation task, supply the duration information. To test recall, ask for a duration the learner previously received. |
 | Treating a new movement's failure as loss of learned timing | Inspect its technique and physical demands before revising the earlier timing claim. |
-| Claiming partner adaptation from fluent recorded accompaniment | Inspect responsive interaction when that is the required use. |
-| Taking simulated mastery as observed human capability | Use the simulation within its model claim; obtain human performance evidence for the human claim when needed. |
+| Claiming partner adaptation from fluent recorded accompaniment | Use evidence of the responsive exchange for a claim about reciprocal adjustment. |
+| Taking simulated mastery as observed human capability | Report what the model establishes under the simulated conditions. A claim about a human performer requires suitable evidence about human performance. |
 
 ### RHY.13:9 - Consequences
 
-The next decision can use a narrower but interpretable capability result. Familiar successful work remains usable while the missing contribution receives targeted practice or support. Complex later use can still be tested as a whole without pretending that one failure identifies its cause.
+A qualified result may settle a question about a past performance or guide a rehearsal. Keep what the earlier performance established under its familiar conditions. If the performer needs to develop a missing contribution, direct practice or support to it. Testing the whole later arrangement can establish whether it works while leaving the cause of a failure open.
 
 ### RHY.13:10 - Architectural Rationale
 
-Tempo, representation, support and embodiment change different aspects of a rhythmic task. The same relative pattern can exceed an actuator's recovery time; an unchanged learner can receive less information; a new partner can require a different correction relation. The probe must preserve these differences to make its result useful.
+Tempo, representation, support and embodiment affect different parts of a rhythmic task. An unchanged relative pattern can exceed an actuator’s recovery time. A new notation can omit information an earlier one supplied. A new partner can change how the two performers correct one another. Interpret the comparison in light of the change it contains.
 
-HCD supplies the human testing logic. RHY supplies the rhythm-specific changed conditions and interprets their effects on the performed relations. The Method also supports tests of equipped or nonhuman performance, with the development mechanism and physical realization judged through their own Methods.
+For a human performer, use HCD to design and interpret the capability comparison. RHY identifies the changed rhythmic condition and the relation the performer must preserve. For a claim about human development, include the instruments and assistance that belong to the performance. Use the applicable engineering or training methods for claims about a device, controller or its physical realization.
 
 ### RHY.13:11 - SoTA-Echoing
 
 | Source contribution | Adopted use | Limit and alternative |
 | --- | --- | --- |
-| Cha's Takadimi critique, original Takadimi conventions and Nelson's phrase/gesture practice | Distinguish a reference supplied by a gesture, duration supplied by another representation, and the learner's performance of their relation. | Withdrawing one source can remove information rather than reveal loss of capability. Choose the intended memory, interpretation or enactment question. |
-| [Caramiaux et al. (2018)](https://doi.org/10.1371/journal.pone.0193580) | Their tests separate familiar and novel tempi, altered sequences, timing and movement. Use such distinctions when a claimed transfer depends on them. | These were immediate tests in novice keyboard performance. Their results do not establish delayed retention or a universal amount of practice variation. |
-| [PianoGym](https://doi.org/10.1371/journal.pone.0351141) | Its simulated learner and fatigue-constrained scheduling benchmark makes a useful claim boundary explicit: performance in a learner model is a model result. | The study's reported mastery and fatigue outcomes come from its simulator. They do not themselves establish a human learner's retained capability or physiological safety. |
+| Cha’s Takadimi critique, original Takadimi conventions and Nelson’s phrase/gesture practice | Identify the reference the gesture supplies, any source of duration information and the learner’s performance of the relation. | Withdrawing a source can remove required information. Identify whether the task calls for memory, interpretation or enactment. |
+| [Caramiaux et al. (2018)](https://doi.org/10.1371/journal.pone.0193580) | The researchers distinguish familiar from novel tempi, altered sequences, timing and movement. Use the distinctions relevant to the claimed transfer. | The study tested novice keyboard performance immediately. Claims about delayed retention or a generally suitable amount of variation require other evidence. |
+| [PianoGym](https://doi.org/10.1371/journal.pone.0351141) | Its simulated learner and scheduling benchmark model mastery and fatigue under stated constraints. | The reported outcomes concern the simulator. To claim human retention or physiological safety, use evidence appropriate to the human learner and the conditions of practice. |
 
-A current source changes this Method's use when it changes the relevant contribution, probe interpretation or qualification. Prefer a directly adequate performance contrast over importing a study's apparatus without its task. Refresh only the affected comparison and resulting claim.
+Use a performance contrast that answers the question under the conditions of interest. Reconsider the affected comparison if a source changes what the performer must supply, how a probe is interpreted or which claim the result supports.
 
 ### RHY.13:12 - Relations
 
-HCD.12 and HCD.13 supply human transfer, retention and support-comparison methods. E.23.CDI preserves capability-holder and development distinctions. RHY.2 and RHY.5–RHY.6 recover needed structure and representation inputs; RHY.9–RHY.11 supply performing arrangements and coordination. RHY.12 receives a human practice need; RHY.14 supplies observation and response methods. C.11.DUA governs whether further checking can change the decision enough to justify its burden.
+Use HCD.12 and HCD.13 for human transfer, retention and support comparisons. E.23.CDI helps identify who or what has the capability and what has developed. Use RHY.2 and RHY.5–RHY.6 for structural and representational inputs, RHY.9–RHY.11 for performance arrangements and coordination, RHY.12 for needed human practice and RHY.14 for observations. Use C.11.DUA to judge whether the attainable result of further checking justifies its burden.
 
 ### RHY.13:End

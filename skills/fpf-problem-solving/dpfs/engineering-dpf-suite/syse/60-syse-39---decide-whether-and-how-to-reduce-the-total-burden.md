@@ -8,7 +8,7 @@
 
 Use this pattern when a recurring manual or interrupt-driven platform activity grows with demand but produces little enduring improvement. Start with one recognizable activity and the user result it supports, then recover who repeatedly spends effort and why.
 
-The first result is a justified choice about the recurring activity. Retain the current method when a change does not earn its full cost. A selected intervention may remove a cause, simplify the task, change the product or automate a qualified operation; state how its total burden will be compared after use.
+The first result is a justified choice about the recurring activity, or a comparison that identifies what prevents a choice. Retain the current method when a change does not earn its full cost. A selected intervention may remove a cause, simplify the task, change the product or automate a qualified operation. State how its total burden will be compared after use.
 
 Do not classify all disliked work as avoidable repetition. Novel engineering, necessary human judgment, a real learning need and unavoidable physical work may deserve different treatment. If a current failure is harming users, restore the affected task through SYSE.38 before treating the episode only as an improvement opportunity.
 
@@ -31,19 +31,19 @@ Automation can preserve the underlying cause and add its own maintenance, except
 
 #### SYSE.39:4.1 - Recover the recurring activity and its result
 
-Name the trigger, user, intended result and recurring operations. Observe representative ordinary and exceptional attempts. Separate effort that is necessary to produce the result from effort caused by missing information, a broken interface, repeated repair or unnecessary coordination.
+Name the trigger, user, intended result and recurring operations. Use observations of representative ordinary and exceptional attempts. Separate effort that is necessary to produce the result from effort caused by missing information, a broken interface, repeated repair or unnecessary coordination.
 
 Count occurrence over a meaningful interval. Recover user and provider active effort, waiting, interruptions, rework and errors with enough consistency for the intended comparison. Do not add elapsed waiting to active labor as though they were the same quantity.
 
-Include the people who actually do the work. Determine whether the activity requires unfamiliar diagnosis or necessary professional judgment, and whether a missing capability contributes to the difficulty. Return these distinctions before deciding whether the activity should be automated.
+Include those who perform the work, including users to whom provider effort has shifted. Determine whether the activity requires unfamiliar diagnosis or necessary professional judgment, and whether a missing capability contributes to the difficulty. Return these distinctions before deciding whether the activity should be automated.
 
 #### SYSE.39:4.2 - Find what makes the activity recur
 
-Ask what condition recreates the work. Is a resource leaking, a result undiscoverable, an interface ambiguous, an input repeatedly incomplete, or a provider obligation missing? Compare plausible causes using the actual task evidence.
+Ask what condition recreates the work. Is a resource leaking, a result undiscoverable, an interface ambiguous, an input repeatedly incomplete, or a provider obligation missing? Compare plausible causes using evidence from the task.
 
 Distinguish repair of a defect from automation of its symptom. A cleanup script may be a justified temporary mitigation, but its maintenance and risk remain part of the intervention. Do not erase required evidence or disable an independent control merely to reduce operator effort.
 
-If the activity no longer serves an accepted need, consider ending it with the appropriate holder. Stopping necessary work without resolving the user result is not burden reduction.
+If the activity no longer serves an accepted need, consider ending it with whoever can decide whether it continues. If an obligation still applies, obtain its release or provide the required result another way.
 
 #### SYSE.39:4.3 - Compare whole-task alternatives
 
@@ -55,17 +55,17 @@ Use effort arithmetic where the units are comparable, but keep reliability, risk
 
 #### SYSE.39:4.4 - Construct one bounded intervention
 
-When an intervention is selected, construct a bounded change that can test the proposed gain without losing the required result. Retaining the current method or an unresolved comparison creates no intervention or trial requirement. For an interface change, SYSE.26 or SYSE.27 supplies the supported-use and compatibility work. For automation, define the actual input, permitted operation, result and failure/exception behavior.
+When an intervention is selected, construct a bounded change that can test the proposed gain without losing the required result. Retaining the current method or an unresolved comparison creates no intervention or trial requirement. For an interface change, SYSE.26 or SYSE.27 supplies the supported-use and compatibility work. For automation, define its input, permitted operation, result and handling of failures and exceptions.
 
 Retain necessary judgment and authority. Retrieving an already authorized result is different from granting new access or accepting a nonconforming product.
 
-Provide a qualified stop or return for unsupported cases and uncertain effects. Use actual maintenance and support capability, not a generic statement that “the team will own it.” Keep any temporary workaround's limits and removal condition visible.
+Provide a qualified stop or return for unsupported cases and uncertain effects. Establish who can maintain and support the change. Keep any temporary workaround's limits and removal condition visible.
 
 #### SYSE.39:4.5 - Compare burden after actual use
 
-Exercise ordinary, exceptional and failed attempts. Check that the same intended result is obtained and that the work has not simply moved to someone less visible.
+For a selected intervention, use applicable observations of ordinary, exceptional and failed attempts, and exercise any consequential case they leave unanswered. Check that the same intended result is obtained and identify any work transferred to other participants.
 
-Observe comparable use after the intervention, including maintenance and newly created tasks. Compare the proposed mechanism with what actually changed. A shorter ticket queue can result from users abandoning the path; that is not evidence of reduced task burden.
+Observe comparable use after the intervention, including maintenance and newly created tasks. Compare the proposed mechanism with the changes observed in use. A shorter ticket queue can result from users abandoning the path; that is not evidence of reduced task burden.
 
 Return the bounded result and remaining uncertainty. Continue, revise or retire the intervention according to that evidence. If only a desk calculation or pilot exists, say so; it cannot establish lasting production benefit.
 
@@ -87,15 +87,15 @@ Choose the producer repair on these assumptions: it removes the recurrence while
 
 For comparable effort, make the assumed recurrence explicit. Let C be the one-time construction effort, H the comparison horizon, f the number of relevant tasks per unit time, and e the recurring whole-task effort per task. A simple comparison is C + H × f × e plus maintenance and any separately counted exceptional work. Use the same boundary on both sides and avoid counting exceptions twice when e already includes them. This calculation supports a conditional effort choice. Waiting, skill loss, reliability and consequences retain their own descriptions unless a justified common valuation is available.
 
-Test the choice against plausible changes before investing heavily. A solution that pays back only at today's peak volume may be unattractive after demand falls. A provider interface about to retire can shorten the available horizon. A small increase in the exceptional fraction can dominate a fast ordinary path when every exception needs a specialist. Identify which uncertain value could reverse the decision, and obtain only the evidence worth its cost. If no feasible intervention improves the relevant result within the available horizon, retaining the present supported method is a useful outcome.
+Test the choice against plausible changes before investing heavily. A solution that pays back only at today's peak volume may be unattractive after demand falls. A provider interface about to retire can shorten the available horizon. A small increase in the exceptional fraction can dominate a fast ordinary path when every exception needs a specialist. Identify which uncertain values could change the choice or the conditions under which it pays off. Obtain further evidence when the expected improvement in that judgement warrants its cost. If no feasible intervention improves the relevant result within the available horizon, retaining the present supported method is a useful outcome.
 
-Construct automation around the operation's actual contract. Validate that the request names the right subject and already has the necessary authority; obtain the current state; perform only the supported action; return its observed result. Separate unsupported input, known operational failure and unknown effect. An exception should carry enough context for a person to continue the same task without repeating the whole investigation. After an unknown-effect timeout, recover the original effects or obtain the qualified retry or recovery action; a fresh state-changing attempt is not justified by the timeout alone.
+Construct automation around the operation's contract. Validate that the request names the right subject and the requested operation is authorized; obtain the current state; perform only the supported action; return its observed result. Separate unsupported input, known operational failure and unknown effect. An exception should carry enough context for the recipient to continue the same task without repeating the whole investigation. After an unknown-effect timeout, recover the original effects or obtain the qualified retry or recovery action; a fresh state-changing attempt is not justified by the timeout alone.
 
-Choose how much autonomy the available evidence warrants. A read-only lookup can often go directly into ordinary use after its access and result behavior are qualified. A repair automation with state-changing effects may first produce a proposed action for a qualified operator, then execute a bounded class once those decisions and effects are demonstrated. The complete supported path must still include the time and work spent reviewing suggestions; include human supervision in its continuing cost.
+Choose how much autonomy the available evidence warrants. A read-only lookup can often go directly into ordinary use after its access and result behavior are qualified. A repair automation with state-changing effects may first produce a proposed action for a qualified operator, then execute a bounded class once those decisions and effects are demonstrated. Include the time and effort spent supervising the automation and reviewing its suggestions in the cost of the supported path.
 
-Assign continued support to a capability that actually exists. Identify who can change the integration when the provider changes, diagnose wrong results and retire a no-longer-useful workaround. Expose ordinary errors in a form those maintainers can act on. If the change creates a new queue of unowned exceptions, its apparent automation gain is incomplete. Review recurrence and support demand after use without imposing a measurement burden larger than the work being removed.
+Assign continued support to a maintainer with the capacity and access it requires. Identify who can change the integration when the provider changes, diagnose wrong results and retire a no-longer-useful workaround. Expose ordinary errors in a form those maintainers can act on. If the change creates a new queue of unowned exceptions, its apparent automation gain is incomplete. Review recurrence and support demand after use without imposing a measurement burden larger than the work being removed.
 
-For the lookup case, a provider that later exposes a stable result API can make the custom search adapter unnecessary. Replace the adapter while preserving attempt identity, authorization and unknown-result behavior. If the same provider removes historical results before users need them, a faster API still fails the task: negotiate retention, provide an authorized retained result, or narrow the promise. The adaptation follows the user's needed result and total work, rather than protecting the original automation as an end in itself.
+For the lookup case, a provider that later exposes a stable result API can make the custom search adapter unnecessary. Compare replacement with retaining the adapter over the remaining use. If replacement is justified over that horizon, preserve attempt identity, authorization and unknown-result behavior. Weigh its total work together with the service result it can support. If the same provider removes historical results before users need them, a faster API still fails the task: negotiate retention, provide an authorized retained result, or narrow the promise.
 
 ### SYSE.39:5 - Archetypal Grounding
 
@@ -115,15 +115,15 @@ For B, each ordinary retrieval takes one user minute. Each of the two exceptions
 
 A is not an active-effort reduction despite eliminating all twenty tickets. It may also change waiting or autonomy, but those gains have not been observed. B has a constructed recurring difference of 144 minutes while retaining exception assistance. Its initial construction costs eight hours, which must remain in any longer-horizon comparison.
 
-With recurrence, task mix and the stated costs unchanged, a one-week horizon gives 200 minutes for the old path versus 480 + 56 = 536 minutes for B, including its eight-hour construction. A four-week horizon gives 4 × 200 = 800 minutes for the old path versus 480 + 4 × 56 = 704 minutes for B. The active-effort preference therefore changes from the old path to B with the horizon. Waiting, risk and actual future recurrence remain separate questions; this conditional arithmetic is not evidence that B has already paid back.
+With recurrence, task mix and the stated costs unchanged, a one-week horizon gives 200 minutes for the old path versus 480 + 56 = 536 minutes for B, including its eight-hour construction. A four-week horizon gives 4 × 200 = 800 minutes for the old path versus 480 + 4 × 56 = 704 minutes for B. The active-effort preference therefore changes from the old path to B with the horizon. Waiting, risk and future recurrence remain separate questions.
 
 The team selects a bounded B probe. It uses the provider's qualified same-attempt result lookup and existing authorization. An ordinary request returns the original runtime/configuration observation and test outcome. A lost result observation returns uncertainty and support; the lookup does not create a replacement deployment.
 
-A request to see another user's restricted result fails the applicable access check. A request for new deployment permission is outside this retrieval activity and goes to the actual decision holder. Automating those decisions was never justified by the repeated-search evidence.
+A request to see another user's restricted result fails the applicable access check. A request for new deployment permission is outside this retrieval activity and goes to the holder of the deployment decision. The lookup trial supplies evidence about retrieving a result under an existing permission.
 
 The probe exercises ordinary lookup, missing provider observation and unauthorized access. The subsequent comparison must measure real recurrence, user/provider effort, maintenance, error and support effects over the same task conditions. If exceptions dominate or a provider change makes the lookup expensive to maintain, the anticipated gain can disappear.
 
-What changes in practice is that the team improves the supported task while accounting for the burden on everyone who contributes, rather than treating the disappearance of a provider ticket as success.
+The comparison counts the work of completing the retrieval, whoever performs it. Moving twenty searches to the users removes twenty tickets while leaving total active effort at 200 minutes.
 
 ### SYSE.39:6 - Bias-Annotation
 
@@ -135,9 +135,9 @@ Operator-visible work is easier to count than user search, interruptions or aban
 - Occurrence, user/provider effort and exceptional work are compared on a stated basis.
 - Necessary judgment, learning and physical work are not mislabeled merely because they are inconvenient.
 - Cause removal, simplification, retention and automation receive a fair comparison.
-- The intervention preserves permission, correctness and usable exception handling.
+- Any selected intervention preserves permission, correctness and usable exception handling.
 - Construction, continuing maintenance and transferred burden remain in the comparison.
-- Claimed gain distinguishes calculation, pilot observation and continuing actual use.
+- Claimed gain distinguishes calculation, pilot observation and continued use in operation.
 
 ### SYSE.39:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -158,11 +158,11 @@ Burden belongs to the whole supported task, not only the component or team being
 
 ### SYSE.39:11 - SoTA-Echoing
 
-For reducing repeated operational burden, **adopt and adapt** the developed 2018 [SRE Eliminating Toil](https://sre.google/workbook/eliminating-toil/) treatment. It already includes root-cause removal, process simplification, construction and maintenance costs, and benefits beyond direct labor. A universal time quota or automation-first rule is not required by that professional Method.
+For reducing repeated operational burden, **adopt and adapt** the 2018 [SRE Eliminating Toil](https://sre.google/workbook/eliminating-toil/) treatment. The source includes root-cause removal, process simplification, construction and maintenance costs, and benefits beyond direct labor. A universal time quota or automation-first rule is not required by that professional Method.
 
 Sections 4.3–4.6 and the lookup case carry the comparison across the platform user, provider, exceptions and future support. Compare retaining the current method, ending unnecessary work, repairing the cause and automating a qualified operation. The comparison horizon and demand can reverse an effort preference; a disappeared ticket cannot establish a whole-task gain.
 
-Reopen the intervention when recurrence, task meaning, provider contracts, exception rate or maintenance capability changes. Keep waiting, reliability and effort distinct where no justified common valuation is available. A bounded pilot supplies its observations rather than proof of lasting organizational savings.
+Reopen the intervention when recurrence, task meaning, provider contracts, exception rate or maintenance capability changes. Keep waiting, reliability and effort distinct where no justified common valuation is available. A claim of lasting organizational savings needs evidence covering continued use, including support and maintenance.
 
 ### SYSE.39:12 - Relations
 

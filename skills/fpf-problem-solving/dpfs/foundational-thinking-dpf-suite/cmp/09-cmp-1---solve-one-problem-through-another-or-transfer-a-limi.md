@@ -10,7 +10,7 @@ Use this pattern when an unfamiliar computational problem might be solved throug
 
 Start by naming the problem to be answered and the problem whose solver will be used. Construct a conversion on one revealing input and say how each possible solver answer returns to the first problem. A working conversion, a failed return condition or a correctly directed impossibility consequence is a useful first result.
 
-A **computational reduction from A to B** is an effective way to solve A using a solver for B. The main route constructs a query and an answer-recovery procedure; a later branch covers several queries. The reader needs elementary algorithms, finite representations, function composition and arguments about termination. The graph example explains its representation and assumes a suitable shortest-path solver. The undecidability example uses the stated halting result as a mathematical premise.
+A **computational reduction from A to B** is an effective way to solve A using a solver for B. The single-query reduction below constructs a query and an answer-recovery procedure; an adaptive reduction can choose its next query from an earlier answer. The reader needs elementary algorithms, finite representations, function composition and arguments about termination. The graph example explains its representation and assumes a suitable shortest-path solver. The undecidability example uses the stated halting result as a mathematical premise.
 
 Use an available solver directly when its admitted inputs and answers already fit the question. C.29.2 supplies ordinary computational formulation. The present method develops the missing reduction and what follows from it. Approximate, randomized or physically realized computations require the corresponding answer and resource guarantees when they enter this connection.
 
@@ -37,7 +37,7 @@ The task is to construct the connection, establish its answer relation and effec
 
 #### CMP.1:4.1 - Specify the two problems and the intended conclusion
 
-Call A the problem to be answered through B. State each problem's admitted inputs and required outputs. An output might be a value, a satisfying witness, a decision including negative cases, or an approximation with a stated guarantee. Choose the forms actually needed.
+Call A the problem to be answered through B. State each problem's admitted inputs and required outputs. An output might be a value, a satisfying witness, a decision including negative cases, or an approximation with a stated guarantee. Choose the forms needed.
 
 For a decision problem, write `A(x)` for the proposition to be decided on input x. A solver must return a correct yes or no and terminate on every admitted input. If a proposed procedure only eventually confirms positive cases, retain that different capability in the problem statement.
 
@@ -47,7 +47,7 @@ Name the intended use of the reduction: build an algorithm from an available sol
 
 #### CMP.1:4.2 - Construct a query from the available input and operations
 
-Build a terminating procedure f that maps each admitted A-input x to an admitted B-input `f(x)`. Work from the information actually present in x and the operations available to the conversion.
+Build a terminating procedure f that maps each admitted A-input x to an admitted B-input `f(x)`. Work from the information present in x and the operations available to the conversion.
 
 A useful way to begin is to identify what a B-instance must represent about x. Construct its components and relations, then retain any additional information needed for answer recovery. When the input contains a program, a conversion can assemble a new program description with that program embedded in it. Constructing the description and executing the embedded program are different operations.
 
@@ -71,7 +71,7 @@ Then the B-answer is the A-answer. If recovery reverses or otherwise changes the
 
 When several queries are needed, construct the calling algorithm. State how a returned answer determines the next query and retained state, why every query is admitted, and why correct target answers lead to termination with the required A-answer. An adaptive reduction is a procedure using the solver, rather than one fixed input map.
 
-Compose reductions by composing their actual conversions and recovery procedures. Intermediate answers must satisfy the next procedure's conditions. MATH.17 and MATH.18 support the mathematical composition and interpretation questions; the present work additionally establishes effective execution under the selected computational model.
+Compose reductions by composing their conversions and recovery procedures. Intermediate answers must satisfy the next procedure's conditions. MATH.17 and MATH.18 support the mathematical composition and interpretation questions; the present work additionally establishes effective execution under the selected computational model.
 
 #### CMP.1:4.4 - Follow the direction of the consequence
 
@@ -102,7 +102,7 @@ Use the result to choose or reject the reduction for the current resources. Anot
 
 For solver reuse, return the input construction, solver conditions, recovery and relevant cost. A user should be able to follow an input through to its original answer.
 
-For a limit, return the reduction argument, its computational assumptions and the excluded guarantee. Use that result to revise the actual question or allocation of work. A failed implementation attempt supplies neither this limit nor a reason to stop searching for a valid reduction.
+For a limit, return the reduction argument, its computational assumptions and the excluded guarantee. Use that result to revise the question or allocation of work. A failed implementation attempt supplies neither this limit nor a reason to stop searching for a valid reduction.
 
 When the input class, answer guarantee, representation or available solver changes, revisit the affected connection. Retain the earlier consequence for the conditions under which it was established.
 
@@ -152,7 +152,7 @@ This supplies a usable decision procedure for the changed class. If an environme
 
 An input describes b Boolean state variables. A conversion that explicitly constructs every possible state may produce `2^b` vertices. Even a solver linear in the resulting graph size then gives an exponential dependence on b.
 
-The construction may still be effective and useful for small b. For a larger budget-constrained use, keep the original answer condition and seek a representation or method that avoids explicit expansion, or derive a suitable restriction of reachable states. Calling the target solver efficient does not settle the cost of the whole reduction.
+The construction may still be effective and useful for small b. For a larger budget-constrained use, keep the original answer condition and seek a representation or method that avoids explicit expansion, or derive a suitable restriction of reachable states. Include the cost of expanding the input when comparing the complete procedures.
 
 #### CMP.1:5.4 - Recover a witness through adaptive decision queries
 
@@ -170,7 +170,7 @@ If the solver only recognizes satisfiable inputs and may diverge otherwise, the 
 
 ### CMP.1:6 - Bias-Annotation
 
-The solver's familiar name can draw attention away from its admitted inputs and returned guarantees. Follow the actual conversion and recovery, including the negative branch the original problem requires.
+The solver's familiar name can draw attention away from its admitted inputs and returned guarantees. Follow the conversion and recovery, including the negative branch the original problem requires.
 
 An impossibility argument can also be overextended. Keep its input class, computational model and answer guarantee visible, then examine a changed useful question at those same points. A resource estimate is conditional on the representation used.
 
@@ -192,7 +192,7 @@ For the reduction being used:
 
 **Using only the successful branch.** Finding an emitted event confirms a positive case. The universal decision request also requires a terminating negative answer, which simulation alone leaves unresolved.
 
-**Reversing the reduction.** Write the A-procedure using the B-solver before transferring an impossibility or an algorithm. Its actual calls determine the direction.
+**Reversing the reduction.** Write the A-procedure using the B-solver before transferring an impossibility or an algorithm. Its calls determine the direction.
 
 **Hiding conversion cost behind the solver's bound.** Explicit expansion of b bits into `2^b` states dominates the use in :5.3. Include the created instance and its storage in the resource argument.
 
@@ -200,19 +200,19 @@ For the reduction being used:
 
 An unfamiliar problem can acquire a usable algorithm through a constructed connection to another. The same form of reasoning can establish a limit by showing what an assumed solver would imply.
 
-The reduction retains responsibility for inputs, answers and resource effects at the connection. A new solver or representation can improve it; a changed answer guarantee or input class can invalidate only part of its earlier use.
+The construction must cover its converted inputs, recovered answers and resource costs. A new solver or representation can improve it; a changed answer guarantee or input class can invalidate only part of its earlier use.
 
 ### CMP.1:10 - Architectural Rationale
 
 Effective conversion and answer recovery make reduction a computational method. Mathematical correspondence supplies the relevant implication, while computability and cost determine whether the connection can be used under the stated conditions.
 
-Solver reuse and impossibility belong together because the latter follows by assuming and then constructing the former. Their guarantees and direction remain explicit. The shortest-path and program-wrapper cases demonstrate different uses of that shared method.
+Solver reuse and impossibility belong together because the latter follows by assuming and then constructing the former. State which guarantee the assumed solver would transfer and in which direction. The shortest-path and program-wrapper cases demonstrate different uses of that shared method.
 
 C.29.2 already supplies the computational question, representation and ordinary progress account. This pattern develops a missing reduction, its answer relation and the consequence of an available or assumed solver. More specialized algorithm constructions can supply the conversion or the target solver.
 
 ### CMP.1:11 - SoTA-Echoing
 
-Erickson's [Undecidability notes](https://jeffe.cs.illinois.edu/teaching/algorithms/models/07-undecidable.pdf), §§7.4-7.5 and 7.9-7.10, supplies a foundational account of effective program construction and the direction of reduction arguments. The adopted contribution is the explicit construction that turns an assumed solver into another solver. The event-wrapper example here uses the halting result under its stated computational model.
+Erickson's [Undecidability notes](https://jeffe.cs.illinois.edu/teaching/algorithms/models/07-undecidable.pdf), §§7.4-7.5 and 7.9-7.10, supply a foundational account of effective program construction and the direction of reduction arguments. The adopted contribution is the explicit construction that turns an assumed solver into another solver. The event-wrapper example here uses the halting result under its stated computational model.
 
 Erickson's [Shortest Paths](https://jeffe.cs.illinois.edu/teaching/algorithms/book/08-sssp.pdf) supplies the directed-graph and negative-cycle machinery used in the solver-reuse case. The recovered inequalities and their infeasibility argument explain what that machinery answers in the source problem.
 

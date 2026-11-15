@@ -7,9 +7,9 @@
 
 **Use this when** two apparently correct timing judgements disagree, or when aligning one recorded event fails to make the performance usable. A foot contacts the floor before weight transfer is clear to a partner; a sound starts on the grid but is heard as late; a controller sends a command before the instrument produces its effect.
 
-Start with the timing relation the activity needs. The first useful result identifies which events should be related, how their positions are known, and what correction or further observation is warranted.
+Start with the timing relation the activity needs. Identify the events to compare, the basis for their reported positions and what the comparison establishes. If a correction or further observation is needed, specify the difference it should address.
 
-In auditory research, a **perceptual center**, or **P-center**, is the perceived temporal location of a sound. A contact start, acoustic start, pressure maximum and participant's reported arrival are different possible landmarks. The method selects among them for the task; it does not require measuring all of them.
+In auditory research, a **perceptual center**, or **P-center**, is the perceived temporal location of a sound. A contact start, acoustic start, pressure maximum and a participant’s reported arrival are possible landmarks in different tasks. Choose the ones the particular question requires.
 
 ### RHY.4:2 - Problem
 
@@ -20,7 +20,7 @@ In auditory research, a **perceptual center**, or **P-center**, is the perceived
 | Force | Practical tension |
 | --- | --- |
 | Different events can belong to one action | Contact, force change and received information need not have one timestamp. |
-| Observations have their own delays | A camera, microphone, controller or responding participant contributes to the measured relation. |
+| Observation and delivery can introduce delays | Camera or microphone timing, controller latency and a participant’s response can contribute different delays to a measured interval. |
 | A correction can change the cue | Altering force or sound shape may change perceived timing as well as physical timing. |
 | Some timing variation is intended | Useful coordination can require a stable displacement rather than coincidence. |
 
@@ -28,81 +28,81 @@ In auditory research, a **perceptual center**, or **P-center**, is the perceived
 
 #### RHY.4:4.1 - Choose the relation the performance needs
 
-Name the reference and the contribution to be aligned with it. “The listener hears this accent with the click” differs from “the actuator contacts the surface when the command is due.” A partnered task may need a recognizable weight arrival that gives the other dancer time to respond.
+Identify the reference and the event or response whose timing matters. A listener hearing an accent with the click is one target. An actuator contacting the surface when the command is due is another. A dancer may need a recognizable weight arrival early enough to respond.
 
-State whether the target is coincidence, a lead, a lag or a bounded range. Obtain that target from the performance intention and actual interaction. Do not remove expressive displacement merely because a grid makes coincidence easy to display.
+For an intended alignment, establish whether the target is coincidence, a lead, a lag or a range. Use the performance intention and the relevant interaction. A displacement visible on a grid can be the intended expressive timing.
 
 #### RHY.4:4.2 - Identify the relevant landmarks
 
-Follow the action only as far as the question requires: command, movement, contact, sound or load change, and received cue. Choose the physical or response feature used to locate each relevant event.
+Follow the parts of the action needed for the question. They may include a command, movement, contact, sound or load change, and a received cue. Identify the physical feature or response used to locate each relevant event.
 
-For contact, the rule might be the first sustained contact visible in a suitable recording. For weight arrival, specify the mechanical or task criterion actually used; an audible footfall alone cannot provide it. For a perceived location, state whose judgement, which reference and which task supplies the estimate.
+For contact, a suitable rule might use the first sustained contact visible in a recording. For weight arrival, name the mechanical or task criterion. A footfall sound can locate audible contact while leaving that arrival open. For a perceived location, give the participant, reference and task used for the estimate.
 
-Treat an uncertain location as an interval or a spread of responses when appropriate. A threshold or detector identifies a feature under its rule; a large number of reported decimal places adds no warrant.
+Represent an uncertain location as an interval or a spread of responses when appropriate. Report a detector’s criterion and use the precision its observations support.
 
 #### RHY.4:4.3 - Compare positions under compatible observations
 
-Use a shared time reference when combining instrumented observations. Account for known recording or delivery delays if they could change the correction. If those delays are unknown and consequential, compare within a setup that cancels them or leave the physical delay unresolved.
+To combine instrumented positions, put them on a usable common time reference. Account for material recording or delivery delays. If a consequential delay is unknown, use a comparison that cancels it or identify which physical relation remains unresolved.
 
-For an auditory judgement, a listener may adjust a reference click relative to a repeated sound. A synchronization task instead asks someone to tap with the sound. These tasks answer related but different questions: the tapping result includes the performed response. Preserve the task used; do not label every response timestamp the sound's P-center.
+A listener can adjust a reference click to match a repeated sound. In a synchronization task the listener taps with it, so the result includes the performed response. Preserve the observing task. Use its result to estimate the sound’s perceived location only to the extent the procedure supports that inference.
 
-For movement, use a receiving task suited to the question. A partner can identify when a transfer becomes usable, or respond to it in an agreed simple continuation. That response helps judge the interaction. A claim about a general perceptual center in dance would require its own definition and evidence.
+For a movement question, use a receiving task that gives evidence of the relation at issue. A partner can report when the transfer became usable or make an agreed continuation in response to it. The first answers a question about perceived availability and the second supplies evidence about the performed interaction. A claim about a general perceptual center in dance would need its own definition and evidence.
 
-Begin with the available discrimination. If the receiving participant can already distinguish the usable variant from the unusable one, submillisecond instrumentation may add nothing to the rehearsal choice.
+Begin with the observations already available. If the receiving participant can reliably distinguish the usable variant from the unusable one, that result can settle a rehearsal choice. Further timing precision is useful when it could change the finding or action enough to justify the measurement.
 
 #### RHY.4:4.4 - Change the contribution that can improve the relation
 
-Choose a controllable change: when preparation begins, when the action is triggered, the shape of the sound or pressure change, the cue used by the receiver, or the division of coordination work.
+If correction is called for, choose a contribution you can change. Possibilities include starting preparation or triggering the action at a different time, changing sound or pressure shape, using another cue or reallocating coordination work.
 
-Hold other consequential conditions sufficiently stable to interpret the trial. A fixed timing shift is a candidate when the same cue has a repeatable offset under those conditions. If the shape, tempo, receiver or context changes, inspect the relation again rather than carrying the old offset forward automatically.
+In a trial, keep other consequential conditions stable enough to interpret the result. A repeatable offset with the same cue can justify trying a fixed shift. When shape, tempo, receiver or context changes, establish whether the old offset still applies using existing evidence or a new comparison if needed.
 
-Check the result that motivated the correction. Earlier contact is useful only if it improves the intended timing or usable continuation. If the adjustment harms another contribution, retain the trade-off and compare another variant.
+Check whether the adjustment improves the intended timing or continuation. Earlier contact may leave the received cue unchanged. If another needed contribution deteriorates, describe the trade-off. Compare another variant when the question calls for that comparison.
 
 #### RHY.4:4.5 - Return the usable relation and its scope
 
-The result states the chosen events, target relation, observation basis, correction if any, and conditions in which it worked or remains a proposal. Another performer should be able to tell what to attend to and what to change.
+Report the events, what the evidence establishes about their timing and the basis for that judgement. For an intended alignment, give the target. If a correction is proposed, explain what would change. For a correction that was tried, state the result and conditions. A performer continuing from the account needs to know what to attend to and, when a change is required, what to change.
 
-Use a numerical estimate only when it supports that action. Keep unresolved sensing delay, response variability or cue ambiguity separate from a finding of performer error. Broader transfer to other people, sounds or equipment requires its own basis.
+Use a numerical estimate when its resolution supports the requested finding or action. An unknown sensing delay, variable response or ambiguous cue can limit the finding without establishing performer error. To transfer an estimate to other people, sounds or equipment, establish why it applies there.
 
 ### RHY.4:5 - Archetypal Grounding
 
 #### RHY.4:5.1 - Correcting a slowly rising sound
 
-Assume a constructed sound trial uses a beat at 500 ms. The sound's acoustic start is at 500 ms; repeated click-alignment judgements place its perceived location near 540 ms under the chosen listening conditions.
+Suppose the beat occurs at 500 ms and a sound starts acoustically at 500 ms. Under the chosen listening conditions, repeated click alignments place its perceived location near 540 ms.
 
-A candidate correction starts the unchanged sound 40 ms earlier, at 460 ms. If the perceived offset remains the same, the predicted location is 500 ms. Replay checks that prediction in the passage. Changing the envelope instead would require a new estimate.
+One proposed correction starts the unchanged sound 40 ms earlier, at 460 ms. If the offset holds, its predicted perceived location is near 500 ms. A replay in the passage can test that prediction. For a different envelope, use an estimate that applies to it.
 
-The arithmetic establishes the predicted shift from the stipulated inputs. It does not establish that every slowly rising sound has a 40 ms offset or that a different listener will make the same judgement.
+The stipulated observations support this predicted shift for the sound, listener and task in the example. An offset for another sound or listener requires a basis for that use.
 
 #### RHY.4:5.2 - Contact, load and a partner's continuation
 
-In a constructed partnered exercise, both dancers agree on the musical target, but the follower cannot continue comfortably from the lead's transfer. Video shows the foot contacting the floor before the target. That observation does not settle when loading becomes usable to the partner.
+Suppose two dancers agree on the musical target but the follower cannot continue comfortably from the lead’s transfer. Video locates foot contact before the target. The pair still needs a basis for when the transfer becomes usable to the follower.
 
 The pair selects a familiar, comfortable next step as its receiving task. The usable-arrival criterion is whether the follower can begin that step at the agreed musical point without an extra pause or recovery. They compare the original transfer with an already learned version whose preparation begins earlier while its foot contact remains unchanged.
 
-Complete this constructed case with stipulated observations: the original transfer leaves the follower needing an extra pause; the revised preparation permits the agreed continuation, and both participants retain comfortable support. Keep the revised preparation for this passage and these conditions. Advancing foot contact again is not selected: its timing was unchanged between the two versions that gave different usable results.
+Suppose the original transfer leaves the follower needing an extra pause. With the revised preparation the follower can continue at the agreed point and both dancers retain comfortable support. Use that preparation for this passage under these conditions. This comparison gives no reason to advance foot contact again. Its timing stayed the same while the follower’s result changed.
 
-The case ends in a qualitative local choice, without estimating a universal offset or substituting a force peak for the partner's response. These stipulated observations illustrate how the decision follows; actual use needs the corresponding response in the performed task.
+The choice uses the follower’s continuation under the stated conditions. For an actual passage, use corresponding evidence of the receiving task. A force peak locates a mechanical event. The observed continuation can establish usability here; estimating the partner’s perceived arrival requires a response task suited to that estimate.
 
-If the task remains unclear or the adjustment exceeds the participants' technique, obtain suitable instruction rather than trying to force an earlier or stronger transfer.
+If the receiving task is unclear or a proposed adjustment exceeds what participants can do comfortably, obtain suitable instruction for the remaining question or return to a manageable familiar version.
 
 #### RHY.4:5.3 - A command timestamp hides delivery delay
 
-A constructed interactive instrument logs a command at the desired beat, while its acoustic output begins later. Microphone and controller timestamps are first brought onto a usable common reference. If the delayed physical output is the relevant problem, the developer can adjust scheduling or the output path and replay the task.
+Suppose an interactive instrument logs a command at the desired beat and produces acoustic output later. Relate the microphone and controller timestamps to a common reference. If the task is to correct an established physical delay, the developer can adjust scheduling or the output path and test the result in the passage.
 
 If the physical delay is removed but a soft sound still seems late, the perceptual question remains. An engineering latency correction and a perceptual alignment answer different parts of the relation.
 
 ### RHY.4:6 - Bias-Annotation
 
-The easiest landmark to measure can become the target by accident. Restore the receiving use before optimizing it. Also keep the task and population behind a perceptual estimate visible: a researcher, performer and partner can produce different responses without one of them simply being wrong.
+Check that the landmark being optimized represents the timing the receiving task needs. Retain the task and population behind a perceptual estimate. A researcher aligning a click, a performer tapping and a partner making a transition can give different answers because their tasks and response conditions differ.
 
 ### RHY.4:7 - Conformance Checklist
 
-- The target identifies the events to be related and whether coincidence or displacement is wanted.
+- The account identifies the events being related and, for an intended alignment, whether coincidence or displacement is wanted.
 - Each reported location has a physical or response criterion and an adequate observation basis.
-- Measurement and response delays are handled when they can change the decision.
-- The correction changes a controllable contribution and is checked against the intended effect.
-- Its scope retains the sound, movement, receiver and conditions that affect reuse.
+- The account handles measurement or response delays that can change the finding or decision.
+- A proposed correction identifies a controllable contribution. A claim that the correction worked requires evidence that it produced the required effect under the stated conditions.
+- The account states the sound, movement, receiver and conditions that affect reuse of the result.
 - An unresolved difference does not become an unsupported diagnosis of poor timing.
 
 ### RHY.4:8 - Common Anti-Patterns and How to Avoid Them
@@ -112,24 +112,24 @@ The easiest landmark to measure can become the target by accident. Restore the r
 | Make recorded onsets coincide and declare perceived timing repaired. | Check the receiving task that motivated the correction. |
 | Treat the highest force as a partner's perceived arrival. | Identify the mechanical criterion and the response criterion separately. |
 | Average measurements from unlike response tasks. | Preserve what each task measured and compare only for a stated receiving question. |
-| Reuse one offset after changing timbre, tempo or cue. | Recheck the relation under the changed condition. |
+| Reuse an offset after changing timbre, tempo or cue without considering its applicability. | Establish whether the offset still holds under the changed condition. |
 
 ### RHY.4:9 - Consequences
 
-Timing correction can target the contribution that matters to the performance. It may also reveal that two participants need different cues or that the current configuration cannot satisfy both relations. Additional precision has a cost; the useful resolution depends on the action being chosen.
+A practitioner can direct a correction at the contribution that matters to the performance. The comparison can identify different cue needs or show that an arrangement cannot meet both. Choose a resolution suitable for the finding or action, taking the cost of more precise observation into account.
 
 ### RHY.4:10 - Architectural Rationale
 
-The method connects production and reception without identifying them. Physical changes supply possible timing cues; a participant's task and response determine what the participant can use. This permits a shared correction while keeping the producer, receiver and measuring procedure distinguishable.
+A physical change can supply a timing cue. What a recipient can use depends on the cue, the task and the conditions of reception. A response gives evidence about that relation within its observing procedure. Producer and receiver can use the comparison to agree on a correction and identify whose contribution needs to change.
 
 
 ### RHY.4:11 - SoTA-Echoing
 
-London and colleagues' [“A comparison of methods for investigating the perceptual center of musical sounds”](https://doi.org/10.3758/s13414-019-01747-y) (2019) compares adjustment and tapping procedures. Adopt its task-sensitive interpretation: different procedures can yield different useful information. The study does not supply a universal offset or establish a dance measurement method.
+London and colleagues’ [“A comparison of methods for investigating the perceptual center of musical sounds”](https://doi.org/10.3758/s13414-019-01747-y) (2019) compares adjustment and tapping. Interpret a reported position in light of the task that produced it. The study supports this distinction for musical sounds. A fixed offset for every sound or a measurement procedure for dance would need its own grounds.
 
-The physical-onset approach remains sufficient when the receiving task consumes a physical start. Add a perceptual procedure when the heard or felt placement changes the decision. This costs more than reading a timestamp and addresses a different result.
+Use physical onset when the question concerns the physical start. If heard or felt placement matters, use a corresponding perceptual observation. Obtaining it can cost more than reading an existing timestamp and answers a different question.
 
-Extending the producer–receiver distinction to partnered movement is a methodological synthesis. The dance case asks a concrete usability question rather than asserting that auditory P-center findings transfer unchanged. Refresh the relevant result when a new timbre, interaction or sensing arrangement changes the task.
+The application to partnered movement adapts the production–reception distinction to a different receiving task. In the dance example, the follower’s continuation shows whether the transfer is usable under the observed conditions. Revisit the result when a new timbre, interaction or sensing arrangement changes its basis.
 
 ### RHY.4:12 - Relations
 

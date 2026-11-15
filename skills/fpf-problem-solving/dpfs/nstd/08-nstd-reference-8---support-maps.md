@@ -1,5 +1,5 @@
 ## NSTD.Reference:8 - Support Maps
 
-Open these maps when a pattern's instruction leaves a source, meaning or neighboring-method question unresolved. They are optional reference material, not prerequisites for beginning a narrative.
+Use a map when a question about a source, a term or a related method affects the narrative work.
 
-Use the architecture bridge for an actual architecture-related narrative; the semiotic bridge for an unresolved representation or interpretation problem; the source map for a relied-on research claim; and the precision map to distinguish an overloaded term.
+The architecture map connects narrative and architecture questions. The semiotic map concerns expression and interpretation. The source map identifies the research behind a claim, and the terminology table distinguishes meanings that change how a reader can use it.

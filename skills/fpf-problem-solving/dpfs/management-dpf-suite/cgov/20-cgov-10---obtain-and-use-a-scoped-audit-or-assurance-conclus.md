@@ -9,7 +9,7 @@ Use this pattern when a corporate decision or reporting duty depends on an audit
 
 Identify what the conclusion must address and how the corporation will use it. Obtain a suitable existing result or arrange the necessary engagement, preserve its scope and limitations, and give the result to the governing recipient for action.
 
-This is the corporate commissioning and receiving method. The auditor performs the substantive engagement under the applicable professional method and standards. An adequate existing conclusion can be used without commissioning another report.
+The corporation can commission the needed engagement or use a suitable existing conclusion. The auditor performs the engagement under the applicable professional method and standards.
 
 ### CGOV.10:2 - Problem
 
@@ -55,7 +55,7 @@ When several providers contribute, identify their different coverage and any jus
 
 #### CGOV.10:4.4 - Read what was concluded
 
-Recover the conclusion's subject, criteria, period and strength in ordinary terms. Distinguish an adverse finding, a qualified conclusion, inability to conclude and a matter outside the engagement. A named unexamined question remains unexamined even when the report contains a favourable opinion elsewhere.
+Recover the conclusion's subject, criteria, period and strength in ordinary terms. Distinguish an adverse finding, a qualified conclusion, inability to conclude and a matter outside the engagement. A favourable opinion on one subject leaves open any question outside its scope.
 
 Carry assumptions and limitations into the board paper or other receiving communication. Ask the provider to explain a material ambiguity. Neither a short summary nor a confidence label should enlarge the report's scope.
 
@@ -65,7 +65,7 @@ For example, an opinion on statements for a completed year may support the state
 
 Give the conclusion and its action-changing limits to the participants responsible for the corporate response. They can use supported information, require a control correction, narrow the proposed act, defer a dependent decision or seek a further contribution.
 
-Distinguish a decision already required by an established finding from an unresolved inquiry. A further engagement is useful when its achievable answer can change the response and warrants the full burden, or when the applicable rule requires it. More work is not compelled merely by the existence of uncertainty.
+Distinguish a decision already required by an established finding from an unresolved inquiry. A further engagement is useful when its achievable answer can change the response and warrants the full burden, or when the applicable rule requires it.
 
 Preserve the provider's conclusion even when the corporation makes a different permissible business choice. A corporate decision does not retrospectively change the audit result. Return the resulting action through CGOV.11 or the existing authorized procedure; use CGOV.13 for the follow-up that matters.
 
@@ -77,7 +77,7 @@ A constructed corporation has an auditor's unmodified opinion on its annual fina
 
 The report's subject is the historical financial statements. It can contribute relevant information about the stated financial position; it does not examine the service's forecast demand or decide the investment. The board retains that usable input and returns the forecast question to its responsible practice.
 
-The supplied case has no duty to obtain a second audit for this investment. If an adequate demand analysis already exists, use it. If it does not, select a feasible further inquiry or a narrower decision according to what the uncertainty changes. The existing audit opinion neither disappears nor grows to cover the forecast.
+The supplied case has no duty to obtain a second audit for this investment. If an adequate demand analysis already exists, use it. If it does not, select a feasible further inquiry or a narrower decision according to what the uncertainty changes.
 
 #### CGOV.10:5.2 - Design reviewed, operation not yet observed
 
@@ -89,7 +89,7 @@ For future operation, the responsible participants must put the control into eff
 
 ### CGOV.10:6 - Bias-Annotation
 
-An impressive provider or favourable headline can discourage examination of scope. Conversely, a qualification can cause readers to discard everything in the report. Preserve the conclusion at its actual reach and judge additional work by the question it can answer.
+An impressive provider or favourable headline can discourage examination of scope. Conversely, a qualification can cause readers to discard everything in the report. Use the conclusion for the subjects and period it covers and judge additional work by the question it can answer.
 
 ### CGOV.10:7 - Conformance Checklist
 
@@ -99,12 +99,12 @@ Does the engagement answer the corporation's stated question? Are provider compe
 
 - **One favourable audit is used for every corporate claim.** Match each reliance to the report's subject and scope.
 - **A design review is called evidence of sustained operation.** Obtain the relevant operating basis or retain the narrower conclusion.
-- **Several reports are counted as independent evidence.** Recover their actual sources and reliance.
+- **Several reports are counted as independent evidence.** Trace the sources of each report and check for shared evidence or reliance on another report.
 - **The board edits out the qualification.** Preserve it through the receiving decision and seek clarification from its author.
 
 ### CGOV.10:9 - Consequences
 
-The corporation can use an audit or assurance result without converting it into universal approval. Gaps become questions with a defined receiving use. Some conclusions remain unavailable because access, criteria, independence or the relevant operation is missing; those limits should constrain only the reliance that depends on them.
+The corporation can rely on an audit or assurance conclusion for the matters it covers. Gaps become questions with a defined receiving use. Some conclusions remain unavailable because access, criteria, independence or the relevant operation is missing; those limits should constrain only the reliance that depends on them.
 
 ### CGOV.10:10 - Architectural Rationale
 
@@ -116,7 +116,7 @@ Sections IV.C–D of the [G20/OECD Principles](https://www.oecd.org/en/publicati
 
 The [IIA's Three Lines Model, 2026](https://www.theiia.org/globalassets/site/resources/statements-of-position/tlm_assurance_advice_support_effective_gov_en.pdf) develops coordination among management, specialist and internal-audit contributions while preserving independence. This method uses that differentiation to connect a scoped conclusion to its corporate recipient.
 
-Advice, existing operational findings and independent assurance can make complementary contributions. Their use depends on the actual question and applicable requirements. Changes to engagement standards, provider relationships or the subject's conditions reopen the affected reliance.
+Advice, existing operational findings and independent assurance can make complementary contributions. Their use depends on the question and applicable requirements. Changes to engagement standards, provider relationships or the subject's conditions reopen the affected reliance.
 
 ### CGOV.10:12 - Relations
 

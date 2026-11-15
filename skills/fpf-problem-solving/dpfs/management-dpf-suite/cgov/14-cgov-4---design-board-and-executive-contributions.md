@@ -21,13 +21,13 @@ The board needs enough involvement to govern the corporation and enough distance
 
 ### CGOV.4:4 - Solution
 
-Design the contributions around corporate matters and the decisions they require. Use the applicable powers to constrain the design, then connect preparation, deliberation, decision, execution and review through their actual results.
+Design the contributions around corporate matters and the decisions they require. Use the applicable powers to constrain the design. For preparation, deliberation, decision, execution and review, identify who uses each result and what they use it for.
 
 #### CGOV.4:4.1 - Recover the corporate contribution that is failing
 
 Choose a matter that exposes the difficulty: a strategy revision, major investment, executive appointment or another issue under the corporation's governing rules. Identify the required decision and whose interests, duties and rights bear on it. CGOV.1–CGOV.3 can supply the matter, rights and authority when these are unresolved.
 
-Ask what the responsible organ must accomplish. It may need to set a direction, decide a reserved matter, challenge assumptions, oversee performance or correct a failed arrangement. Select the contribution relevant to this corporation; a catalogue of board functions does not settle their allocation.
+Ask what the responsible organ must accomplish. It may need to set a direction, decide a reserved matter, challenge assumptions, oversee performance or correct a failed arrangement. Select the contribution relevant to this corporation and determine who can provide it under its governing rules.
 
 Retain the limits on that allocation. Where a power cannot be delegated, design supporting preparation or review without transferring the decision. In a two-tier system, identify the actual supervisory and management organs instead of copying a unitary-board design.
 
@@ -61,7 +61,7 @@ In a constructed manufacturer, investment above 500 is reserved to the board. Ma
 
 The missing contribution is preparation for a real choice. The repaired design has management bring the alternatives, financial consequences and unresolved technical assumptions before making a commitment. A relevant specialist answers the technical question. The board considers the reserved investment; management selects the implementation details within the resulting decision and its existing authority.
 
-The result is this proposed exchange and allocation. It does not establish that the board has approved 700. Nor does it require directors to approve every purchase in the ensuing project.
+The proposed arrangement leaves the decision on the investment of 700 with the board. If the board approves it, management handles implementation within the decision and its existing authority.
 
 #### CGOV.4:5.2 - One person contributes as executive and director
 
@@ -90,7 +90,7 @@ The board can obtain the contributions it needs without taking over routine exec
 
 ### CGOV.4:10 - Architectural Rationale
 
-Contribution design begins with what must be accomplished, then uses authority to constrain how work may be allocated. A position title alone provides neither part. Keeping results and their receivers visible makes the arrangement adaptable: a failed information return can be repaired without automatically restructuring the corporation.
+Contribution design begins with what must be accomplished, then uses authority to constrain how work may be allocated. A position title alone provides neither part. Keeping results and their receivers visible makes the arrangement adaptable: a failed information return can be repaired without restructuring the corporation.
 
 ### CGOV.4:11 - SoTA-Echoing
 

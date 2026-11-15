@@ -5,140 +5,140 @@
 
 ### MDPE.28:1 - Problem frame
 
-Use this method when an invitation to voluntary partnered performance has been declined and the inviter needs to end that invitation and decide what to do next. A familiar failure is to keep negotiating after a clear answer. Another occurs after a courteous response: the person wants to continue their evening but cannot yet take the chosen action.
+Use this method when an invitation to voluntary partnered performance is declined. The inviter may need to stop asking or find a wanted continuation. An inviter, observer or other practitioner may also be asked what happened in an earlier exchange. Someone can acknowledge the answer courteously and still lack a way to take the break or other action they want.
 
-The method seeks two distinguishable results: the other person is free from further pressure about this invitation, and the inviter has obtained a wanted, available next action or identified the particular help still missing. Disappointment can remain. Reducing its intensity or duration is a further aim whose means and evidence need separate attention.
+End further pressure about this invitation. Where the inviter also wants a next action, identify one that is available, help them take it if they wish, or establish the particular obstacle. They can remain disappointed throughout. A question about a change in the intensity or duration of that feeling needs its own evidence and, if help is wanted, suitable means.
 
-This is an ordinary participation and learning method. It assumes that the invitation can be ended and that any continuing help is voluntary. Use the event's support when its arrangements obstruct participation or someone prevents disengagement. The method gives no entitlement to another person's company or reassurance.
+This method concerns ordinary voluntary participation and practice. The invitation can end, and each person can choose whether to accept further contact or help. If participation is obstructed or someone prevents disengagement, use an available way to get clear or obtain suitable assistance when needed.
 
-**First useful move.** Acknowledge the answer and stop making that invitation. Then identify the action you want to take and the conditions or help it actually needs.
+In the encounter, acknowledge the refusal and stop making that invitation. If you want a next action, identify it and what it requires. For a past exchange, use the relevant answer and subsequent conduct to establish what happened.
 
-Use an already available wanted continuation directly. No further exercise is required merely because disappointment remains. Use MDPE.27 when participation is already under way and needs a bodily ending. This method neither selects treatment for distress nor requires a person to keep participating.
+Take an already available continuation if you want it. A courteous ending, listening where you are or leaving can complete the task while the feeling persists. MDPE.27 applies when partnered performance has already started. If the person wants help with distress, obtain help suited to that aim. A question about their past experience may be answered from an appropriate account.
 
 ### MDPE.28:2 - Problem
 
-An etiquette rule can tell an inviter to accept a refusal while leaving two practical questions unresolved: how to cease the demand and how to obtain the inviter's next wanted action. A person may learn a polite sentence yet continue bargaining or remain unable to leave the exchange.
+An etiquette rule can call for accepting a refusal. In an actual encounter the inviter may need to stop bargaining or find the conditions for a wanted next action. A person can repeat the polite reply and still wait beside the partner for another answer.
 
-The second difficulty is easily misidentified as a failure to understand the first rule. Repeating the rule then adds work without supplying the missing conditions, support or different help. A further error treats outward compliance as evidence that disappointment has diminished.
+Check where the obstacle lies. Someone who already accepted the refusal may still need a place to rest or willing support to get there. Outward compliance establishes the observed conduct. A claim about disappointment requires evidence about the person’s experience.
 
 ### MDPE.28:3 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Independent choice and desired company | The inviter may want the encounter; the recipient remains free to decline it. |
-| Actual answer and interpretation | A refusal establishes this answer; it does not settle everyone else's intentions or the inviter's worth. |
+| Independent choice and desired company | An inviter may want to dance, and the invited person remains free to decline. |
+| Answer and interpretation | The refusal concerns this invitation. Other people’s intentions, the invited person’s reasons and the inviter’s own worth are separate questions. |
 | Action and feeling | A wanted action can become usable while disappointment continues. |
-| Support and agency | Help can make an action available, but the person can decline that help or choose to leave. |
-| Practice and lived use | A voluntary role-play can expose an interaction error while leaving emotionally significant use untested. |
+| Support and choice | A willing helper can make an action available. The inviter can decline the offer, stay, leave or choose a different action. |
+| Rehearsal and event conditions | A voluntary role-play can show how someone responds in rehearsal. A claim about use at a real event with emotional significance needs evidence under the relevant conditions. |
 
 ### MDPE.28:4 - Solution
 
-End the current invitation, recover the wanted next action from the actual situation, and supply only the contribution that remains unavailable. Use the result to retain a supported action or identify the limit of this method. Derive practice from that missing contribution when learning is the current purpose.
+End the invitation. If a continuation is wanted, identify what the person can do under the actual conditions. Take an already available action, obtain a missing contribution if wanted or state the limit. For an account of a past exchange, use evidence of the answer, subsequent conduct and support relevant to the question. Choose practice when the person wants to develop a learnable part of the task.
 
 #### MDPE.28:4.1 - Let the actual answer end the invitation
 
-Use the answer that was given. With a clear refusal, acknowledge it briefly and stop making the invitation: “Okay” or “Thank you for letting me know” is sufficient. Leave the other person's space and choices available. Asking for reasons, bargaining for a shorter encounter or waiting beside them for a changed answer prolongs the demand.
+For a clear refusal, acknowledge the answer briefly and stop making that invitation. “Okay” or “Thank you for letting me know” can be enough. Leave the person space to choose their next action. Asking for reasons as a condition of accepting the refusal, bargaining for a shorter dance or waiting for the answer to change keeps the demand in place.
 
-An unclear answer gives no basis to start partnered performance. Allow the person to decline and disengage; an unenthusiastic exchange need not be turned into an interrogation. If the person volunteers “maybe later”, retain that information as a possibility. A later encounter still requires a wanted invitation and a fresh answer. The inviter may also choose another activity.
+An unclear answer leaves agreement to dance unestablished. Give the person room to decline or leave. A volunteered “maybe later” leaves a future possibility. A later invitation is a new choice. Starting a later partnered encounter requires agreement at that time. The inviter can choose another activity.
 
-Follow the event's concrete participation rules. For example, NAWCSA:2.1 prohibits asking the same person again during the same song after a refusal, and says to stop asking them for that evening after several refusals. These are that community's stated limits. Do not turn a permitted later opportunity into an obligation for either person.
+Follow the rules of the event. For example, NAWCSA:2.1 rules out asking the same person again during that song and directs the inviter to stop asking them that evening after several refusals. A later opportunity allowed by the local rule remains a choice for both people.
 
 #### MDPE.28:4.2 - Obtain a next action from what is actually available
 
-After disengaging, distinguish the known event from an added interpretation. “Ren declined this invitation” records the event. “Nobody here wants to perform with me” adds a claim about people who have not answered. Possible reasons for refusal remain possibilities unless the person supplied them. Inventing a reassuring reason does not give the inviter new information.
+After disengaging, identify what the answer establishes. “Ren declined this invitation” states the event. “Nobody here wants to perform with me” adds a claim about other people. A reason Ren offered can be reported as Ren’s explanation. Otherwise leave the reason open where the evidence does.
 
-Notice what you want and can currently do. A useful next action can be listening to a piece, taking a break, talking with a willing companion, making a different appropriate invitation or leaving the event. Pick a small action with an actual place, means and permission where those are needed. “Enjoy the evening” is too broad to enact; “sit in the available chair and listen to the next piece” can be tried. A new invitation is one option, and brings another person's independent choice into the situation.
+Choose what you want and can currently do. You might listen, take a break, talk with someone who wants company, make another appropriate invitation or leave. Identify any place, means or permission the particular action needs. “Sit in the available chair and listen to the next piece” gives an action a person can take. A different invitation still gives its recipient an independent choice.
 
-Try the chosen action and use its result. If you can take the wanted break while disappointed, the continuation has become available. You can decide again afterwards. If the action cannot be carried out, keep the specific difficulty visible. A person may know what to do while lacking the conditions or help to do it.
+If the seat is accessible and you are free to use it, the break may already be available. Take it if you want to. A reliable observation or account of your taking the break can establish what you did, and you can decide again afterwards. If a wanted action remains beyond reach, identify what is missing. Disappointment may continue during a perfectly usable break.
 
-#### MDPE.28:4.3 - Supply the missing contribution without demanding a different feeling
+#### MDPE.28:4.3 - Find out what help is wanted, available or needed
 
-The next move depends on where the connection failed:
+For a practical difficulty, find the condition that would enable the person’s wanted action. For a past exchange, use the relevant evidence about what the person could do, what they did and what help they used.
 
-| Present difficulty | Available way to work on it | What this can establish |
+| Present difficulty | Possible action | Supported conclusion |
 | --- | --- | --- |
-| The inviter keeps asking after a clear refusal. | Demonstrate an acknowledgement and disengagement, compare it with bargaining, then let the learner retry the complete invitation and answer. | The invitation can end without further pressure under the tried conditions. |
-| The inviter wants another activity but has not selected an executable one. | Compare the activities actually available now. Choose one modest action and try it. | A wanted continuation has been selected and, if performed, made usable. |
-| The selected break or departure has no accessible place or route. | Ask the organizer or another responsible provider to make that condition available, or choose a genuinely available alternative. | A provision change or different action can remove the external obstacle. |
-| The person knows the action and has access, but cannot begin it alone. | Ask whether they want help with that particular action. A willing companion can offer to walk with them to the chosen place, or an agreed reminder can mark the first step. Try the supported action only if the person wants it. | Actual use can show that this support makes this action available; it does not establish independent coping or reduced distress. |
-| The wanted action remains unavailable despite the help tried, or the aim is less intense or shorter distress. | End the exercise if the learner wants to stop. Describe the remaining difficulty with them and obtain help suited to that difficulty before claiming a method for it. | The current participation method has a specific unresolved limit. Repeating staged refusals supplies no missing emotional-help method. |
+| The inviter keeps asking after a clear refusal. | If the inviter wants practice, contrast an acknowledgement and disengagement with bargaining. Let them try the complete exchange. | Describe whether the invitation ended without pressure in the observed conditions. |
+| The inviter wants another activity and has yet to choose one. | Compare available activities and let the person choose one they want. They can take it or change their mind. | The choice identifies a continuation. Its conditions establish availability, and evidence of performance establishes whether the person took it. |
+| A wanted break or departure has no accessible place or route. | If a change is wanted, arrange it within your authority or request it from the provider who can supply it. The person may instead choose a suitable available alternative. | Verify the result that matters, such as an accessible seat, a clear route or the person’s actual movement. |
+| The person knows the action and has access, but cannot begin it alone. | Ask whether they want support for that action. A willing companion might offer to walk to a seat, or an agreed reminder might mark the first step. | A completed supported action can establish what happened with that help. An unassisted action, a claim that the support made the difference, and a reduction in distress each need evidence about that result. |
+| The wanted action remains unavailable with the help tried, or the person wants to reduce distress. | A person can end an exercise at any time. Ask which result they still want and whether they want help with it. | Report the actual limit of the participation method. For a claim about emotional change, use suitable evidence over the relevant period. |
 
-Support belongs to the available situation: a willing companion may be occupied or absent, and an offered reminder may be unhelpful. Let the person decline the proposed support or select leaving as their next action. Another participant's refusal remains binding throughout. Their reconsideration cannot be made the required means of the inviter's recovery.
+A companion may be occupied or a reminder unhelpful. An inviter can decline support, stay to listen, choose something else or leave. Respect the first person’s refusal throughout. Any further help comes from someone willing to provide it.
 
-If repeated events suggest that the participation arrangement itself excludes people, investigate that arrangement through MDPE.25 and MDPE.5. Keep the evidence for that question separate from guesses about one person's reasons. Improving an event's access and reciprocity still preserves every participant's voluntary choice.
+If recurring events raise a question about access or exclusion, examine the arrangement through MDPE.25 and MDPE.5. Use evidence about that arrangement and its participants. Preserve each person’s freedom to refuse when changing event provision.
 
-#### MDPE.28:4.4 - Derive practice and evidence from the missing action
+#### MDPE.28:4.4 - Choose practice and assess what happened
 
-Use consensual role-play when the learner wants to practise the invitation, answer and subsequent choice. Both participants know the purpose and can stop. Do not recruit unsuspecting people to create refusals for an exercise. Begin with the whole interaction so that a polite sentence does not hide continued bargaining, blocked departure or an unavailable next action.
+Use voluntary role-play when the learner wants to practise the invitation, response and subsequent choice. Both participants understand the purpose and can stop. Begin with the whole exchange so that a courteous sentence can be examined alongside any bargaining, obstruction or unavailable continuation.
 
-Compare a successful attempt with the specific failed connection. Demonstrate or discuss the missing operation, let the learner retry it, and restore the whole encounter. Vary an answer, timing, partner or available support when that receiving condition needs to be established and existing observations do not settle it. The learner chooses the continuation; the teacher does not supply an unnoticed cue or require an immediate second invitation. MDPE.10 and HCD.6/HCD.9 provide the general construction of a representative task, help, attempt, feedback and return. The participation conditions and distinctions in this application supply the domain criteria.
+Use a suitable successful attempt when it already answers the learning question. When a particular connection fails, demonstrate or discuss it, let the learner retry and return to the whole exchange. Vary the answer, time, partner or help when the question requires that change and existing evidence leaves it open. Give learners their own choice and keep any teacher cue visible. MDPE.10 and HCD.6/HCD.9 supply representative practice, assistance, feedback and return. The participation conditions here supply the domain criteria.
 
-Keep three kinds of evidence separate. An observer can describe the answer, continued pressure, available space and action actually taken. The learner can report their interpretation, wanted activity and experienced disappointment. Later experience can show whether the action remains available at a real event, with its different uncertainty and emotional significance. A role-play that evokes no disappointment can still teach the outward interaction; it leaves emotional use untested.
+An observer can report the answer, whether pressure continued, the available space and the action taken. The inviter can report how they interpreted the exchange, what they wanted and how they felt. Suitable experience at an actual event can establish use under its uncertainty and emotional conditions. A role-play in which nobody felt disappointed can still show the outward interaction.
 
-Agree on the learning aim with the learner. If it is a usable next action, observe that action and the support it required. If it is reduced intensity or duration of distress, obtain a suitable way of helping and evidence about that experience over the relevant period. Neither a smile nor compliance with a teacher establishes that second result.
+When the task is learning, agree on the aim with the learner. To establish that an action is available, examine the conditions that make it possible. To report actual use, examine the action and any support used. To assess a change in distress, use evidence about that experience over the relevant period. If the person wants help reducing it, choose an approach suited to that aim. A smile or a courteous reply alone leaves that change open.
 
 ### MDPE.28:5 - Archetypal Grounding
 
 Alex invites Ren, who says “No, thank you.” Alex replies, “Why? Just one piece.” That response keeps the invitation open. In an agreed role-play, a teacher demonstrates a brief acknowledgement, stepping away from the exchange and leaving Ren free to choose what to do. Alex tries again and ends the invitation.
 
-Alex then says, “That proves the evening is a failure.” The teacher and Alex separate what happened from the added conclusion. Alex chooses to sit at the edge and listen to one piece. In one attempt that is already possible; Alex takes the break and still feels disappointed. The observed action establishes a usable continuation. It supplies no observation that the feeling has become weaker.
+Alex then says, “That proves the evening is a failure.” The teacher and Alex distinguish Ren’s answer from that wider interpretation. Alex chooses to sit at the edge and listen to one piece. The seat is available, Alex takes the break and still feels disappointed. This establishes a continuation Alex actually used and preserves Alex’s account of the feeling.
 
-In another attempt Alex already knows the chosen action but remains standing and repeatedly rehearses what to say to Ren. Repeating the polite reply addresses a contribution already available. Alex wants help leaving the exchange; a willing friend offers to walk to the seat together. They do so, without returning to Ren. The useful result is the supported break. If Alex still cannot take it, or does not want that help, the example has reached its limit: another suitable contribution remains to be obtained with Alex.
+In another attempt Alex knows the wanted action but stays near Ren rehearsing what to say. Alex wants help leaving the exchange, and a willing friend offers to walk together to the seat. They take the break. Alex could instead decline the offer and choose to stay and listen. If Alex still wants the break and cannot take it, identify what remains unavailable and ask whether Alex wants a different contribution.
 
-Now change the conditions. The usual friend is absent and the seating area is closed. Alex cannot simply reuse the previous arrangement. Alex can ask an available event volunteer about a place to pause, choose another wanted activity or arrange to leave. If none is presently usable, that is the remaining problem. It is not evidence that the previously demonstrated acknowledgement was lost.
+Now suppose the usual friend is absent and the seating area is closed. Alex might ask an available volunteer about a place to pause, choose another wanted activity or arrange to leave. If none of the wanted options is usable, state that limit. The changed arrangement leaves intact the earlier observation that Alex acknowledged the refusal.
 
-In a further exchange Ren volunteers “maybe later”. Alex can retain the possibility without waiting beside Ren or treating it as a promise. At a later appropriate opportunity, a new invitation has a new answer. This variation tests whether Alex uses the actual information while preserving both people's choices.
+In a further exchange Ren volunteers “maybe later.” Alex keeps that possibility open and moves on. At a later appropriate opportunity, both a fresh invitation and a fresh answer remain voluntary. An attempt under those conditions can show what Alex did with the information.
 
 ### MDPE.28:6 - Bias-Annotation
 
-Scope: ordinary voluntary participation after a declined invitation, not treatment of emotional distress. **Gov:** the recipient's refusal and the learner's choice of further help remain binding. **Arch:** participant action, companion help and event provision supply different contributions. **Onto/Epist:** the observed refusal, attributed explanation, performed action and experienced feeling remain distinct. **Prag:** a supported break or departure can be sufficient. **Did:** staged refusals require willing participants and cannot establish the emotional effect of a real event.
+This method concerns ordinary voluntary participation. Respect the refusal and the inviter’s choice about further help. Participant action, companion assistance and event provision are distinct contributions. A witnessed refusal, a reported motive, a performed action and an experienced feeling have different grounds. A supported break or departure can suffice. A voluntary role-play can show what the participants did. How far that observation supports a claim about capability depends on how well the task and available help represented the intended use.
 
-Expectations about sociability, visible disappointment or repeated invitations vary between communities. State the concrete local rule without turning customary enthusiasm into a demand for a particular feeling.
+State the relevant local convention about sociability, outward behaviour or repeated invitations. People may still experience the exchange differently.
 
 ### MDPE.28:7 - Conformance Checklist
 
-For assurance of this use, establish separately that the invitation ended without continued pressure and that the inviter obtained a wanted action, or identify the contribution still missing. Name the support actually used. A clear sentence without disengagement establishes too little; a supported action need not establish independent capability.
+For a claim that pressure ended, examine what the inviter did after the answer. For a question about continuation, establish the result it asks for. This may be the available options, the person’s choice or the action they took. Include any help or obstacle that bears on that result.
 
-For a learning claim, inspect adequate evidence from the complete agreed attempt and any changed condition included in the claim. For an emotional claim, use suitable evidence about that experience; neither a smile nor compliant action supplies it. The method's limit remains explicit if the wanted continuation is unavailable.
+For a claim about past performance, use evidence of what the person did and under what conditions. For a claim about capability, assess how well those conditions represent the intended use. To establish that the person learned something, compare their contribution with an appropriate earlier basis. An earlier observation can suffice when it covers those conditions. For a claim about distress, use evidence about that experience. A smile or outward compliance may be observed while its emotional meaning remains open. Report any continuing obstacle to the action the person wanted.
 
 ### MDPE.28:8 - Common Anti-Patterns and How to Avoid Them
 
 | Misreading | Consequence and repair |
 | --- | --- |
-| A possible reason for refusal is the actual reason. | Return to the answer received; do not invent either a hostile or reassuring explanation. |
-| A courteous reply proves the whole task is complete. | Inspect whether pressure ceased and whether the next wanted action is available. |
+| A possible reason for refusal is reported as the actual reason. | Report the answer and any reason the person gave. Where evidence of the reason is missing, leave it open. |
+| A courteous reply proves the whole task is complete. | Inspect whether pressure ceased and, if the person wants another action, whether it is available. |
 | The next action must be another invitation. | Let the person choose listening, rest, willing company, departure or another appropriate activity. |
-| The refusing participant must help the inviter recover. | Obtain separately willing support; do not reopen the declined demand. |
-| Repeated staged refusal will necessarily reduce distress. | Keep the agreed practice aim and its evidence distinct; obtain suitable help for a different aim. |
+| The refusing participant is expected to help the inviter recover. | End the demand. If help is wanted, seek a separately willing source of it. |
+| Repeated staged refusals are credited with necessarily reducing distress. | Identify what was practised and observed. Use grounds suited to an emotional outcome before claiming it changed. |
 
 ### MDPE.28:9 - Consequences
 
-The inviter can stop imposing the declined invitation and find a bounded continuation, including leaving or asking for specific help. Teaching changes from rehearsing a phrase to repairing the actual failed connection.
+The inviter can end the demand and identify a continuation, including listening where they are, leaving or asking for help. An observer can account for what actually happened. When training is wanted, a teacher can address the action the learner needs to develop.
 
-Support may be unavailable, and this method can return a precise unresolved need rather than a successful continuation. It does not promise changed feelings, general coping ability or access to another person's company. Respectful disengagement remains a useful result even when that separate need persists.
+Support may be unavailable. Report any particular unmet need and any voluntary action that was available or completed. A respectful ending can be a finished result while the inviter still feels disappointed.
 
 ### MDPE.28:10 - Architectural Rationale
 
-The construction connects two independently fallible results because ending the demand does not create the inviter's next action, and helping the inviter does not suspend the other person's choice. The difference between event and interpretation prevents an unsupported explanation from governing that action.
+Ending the demand releases the other person from further pressure over this invitation. It may leave the inviter with another question about a next action. Keeping the answer given separate from an interpretation helps the inviter choose on the basis of what the exchange actually established.
 
-The selected continuation is tried under actual means and access. This can expose a missing place, route or willing helper instead of treating every difficulty as a personal deficit. Learning is selected only for a missing learnable contribution; the ordinary support branch can be sufficient without requiring independence as an extra goal.
+Examine whether the chosen action has any place, route or willing help it needs. A suitable observation can show actual use and reveal a missing contribution. Choose learning for a skill the person wants to develop. An action with permitted support can meet the aim.
 
 ### MDPE.28:11 - SoTA-Echoing
 
-The participation grounds come from the community instructions cited in MDPE.27:11. WSDC describes accepting a decline and acknowledges possible reasons; those reasons do not identify the reason in a particular encounter. NAWCSA gives concrete limits on repeated invitations. Its conduct instruction about pouting cannot establish that a participant must cease feeling sad. VLDA preserves voluntary participation. These sources guide interaction; they do not validate an emotional-learning intervention.
+The community guidance in MDPE.27:11 concerns participation. WSDC describes accepting a refusal and offers possible reasons. NAWCSA limits repeated invitations and addresses outward behaviour, including pouting. VLDA preserves voluntary participation. Use Ren’s actual answer for Ren’s stated choice and evidence about Alex’s own experience for Alex’s feelings.
 
-The construction here connects receiving the actual answer, ending the demand, distinguishing event from interpretation, trying a wanted continuation and obtaining support for the contribution that remains unavailable. Compared with “accept the refusal and move on”, it exposes what moving on requires. Compared with repeating an etiquette line, it changes the next practice when the reply already works. Its help examples are proposed ordinary support arrangements whose usefulness must be checked with the person.
+A polite reply followed by an end to the demand can settle the invitation while leaving the inviter without a usable next step. Identify what the person wants, whether the action is available and the contribution it needs. An offered arrangement can be considered with the person. Its use and its effect can then be established on their own evidence.
 
-A recent primary study helps bound the emotional claim. [Engelskirchen, Asbrand and Tuschen-Caffier (2025)](https://www.nature.com/articles/s41598-025-09565-z) studied online ostracism in 73 young people aged 14–21. Both groups had previously received instruction in noticing and allowing their own unpleasant thoughts and feelings, called *acceptance* in the study. Later, one group was prompted to apply that approach for three minutes after the exclusion task; the comparison group reflected on the profiles without a specific regulation instruction. The corrected group-by-time analysis did not establish an affective advantage of that application condition. This does not settle the effectiveness of acceptance generally or provide a tested method for an adult's declined invitation.
+[Engelskirchen, Asbrand and Tuschen-Caffier (2025)](https://www.nature.com/articles/s41598-025-09565-z) studied online ostracism in 73 participants aged 14–21. Both groups had previously received instruction in noticing and allowing unpleasant thoughts and feelings, termed *acceptance* in the study. After exclusion, one group was prompted to use that approach for three minutes. The comparison group reflected on profiles without a specific emotion-regulation instruction. The corrected group-by-time analysis left an affective advantage of the prompted application unestablished. A claim about adult dance invitations or other uses of acceptance would need evidence for those conditions.
 
-The present method supports a bounded participation use and exposes the missing help when it cannot supply the desired continuation. A change in local participation rules, available support or evidence about a proposed emotional-help method reopens the corresponding action or claim. Keep an observed respectful response, an available supported action and an emotional outcome distinct when deciding what to retain or develop next.
+Retain the respectful response, the conditions for a wanted action and the evidence of any emotional result each within its scope. When local rules, support or evidence about a proposed means of help change, reconsider the action or claim that depended on them.
 
 ### MDPE.28:12 - Relations
 
 - MDPE.27 supplies ending an encounter already in progress.
-- MDPE.5 supplies event provision when a place, route or assistance is unavailable.
-- MDPE.10, HCD.6 and HCD.9 supply representative practice, feedback and return under the participation criteria explained here.
+- MDPE.5 helps identify existing event provision or arrange missing access to a place, route or help.
+- Use MDPE.10, HCD.6 and HCD.9 when the person wants representative practice, feedback and another attempt under the participation conditions here.
 - MDPE.25 examines recurring participation arrangements when evidence concerns exclusion or reciprocity beyond one declined invitation.
-- MDPE.12 helps distinguish observed interaction, participant report and the stronger claim a receiving decision would need.
+- MDPE.12 helps establish what could be observed, what a participant reported and what additional evidence a stronger claim would require.
 
 ### MDPE.28:End

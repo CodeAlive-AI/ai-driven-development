@@ -1,7 +1,7 @@
 ## IS.Sources:2 - Follow the current source questions
 
-IS.6–IS.8 develop the implementation-practice questions in the original helping tradition while keeping the general Core and professional suppliers explicit. Their SoTA sections state the particular source contributions and limits. The 2016 i-PARIHS and 2020 ISP accounts are foundational grounds; later work on actionable facilitation planning, competencies, working alliance and the specification of facilitating arrangements develops different parts of that account. No single source establishes all three constructions or their effectiveness outside the settings examined.
+IS.6–IS.8 develop three aspects of implementation support. Their SoTA sections identify the contributions of i-PARIHS (2016) and the ISP account (2020), and later work on facilitation planning, competencies, working relationships and the organization of support. Use each source within its studied scope. For a claim about effectiveness in another setting, assess the evidence for that use.
 
-The [Architectural Reference](_index.md#implementation-facilitation-principles-framework-architectural-reference) explains the connected language and the consequences of these sources for its use.
+Use the [Architectural Reference](_index.md#implementation-facilitation-principles-framework-architectural-reference) to connect a question about support with the Method or source that can answer it.
 
-The [supplier-availability account](11-is-reference-11---supplier-availability-and-independent-chan.md) explains what an unavailable contribution or independent source change means for the current facilitation use.
+Use the [supplier-availability account](11-is-reference-11---supplier-availability-and-independent-chan.md) to identify which conclusions depend on an unavailable or changed source and which remain supported.

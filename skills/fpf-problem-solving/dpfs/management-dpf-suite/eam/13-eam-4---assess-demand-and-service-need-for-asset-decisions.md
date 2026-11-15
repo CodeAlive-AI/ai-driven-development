@@ -11,7 +11,7 @@ Begin with the service question and distinguish current commitments from forecas
 
 ### EAM.4:2 - Problem
 
-Demand totals hide timing, location and service differences. Forecasts can be treated as commitments, while existing commitments can be dismissed as optional scenarios. Even plausible forecasts may conceal which observation, population or loss allowance produced the number. A large forecast model can also obscure a simple known shortfall.
+Demand totals hide timing, location and service differences. Forecasts can be treated as commitments, while existing commitments can be dismissed as optional scenarios. A plausible forecast may conceal which observation, population or loss allowance produced the number. A large forecast model can also obscure a simple known shortfall.
 
 ### EAM.4:3 - Forces
 
@@ -29,7 +29,7 @@ Separate an authorized requirement from a forecast of use. A known seasonal comm
 
 Choose the boundary at which demand will be compared with asset contribution. For a water district, distinguish water delivered to users from water entering the district: distribution losses make the quantities different. For a transport service, trips requested, passengers carried and vehicle movements likewise need a stated relation.
 
-Recover present use, unmet requests and committed future use. Establish whether the observations cover the relevant users, place, period and operating conditions. Rationing, failure or inaccessible capacity can suppress recorded delivery. Obtain the missing need estimate or retain that uncertainty; relabeling observed delivery does not recover it.
+Recover present use, unmet requests and committed future use. Establish whether the observations cover the relevant users, place, period and operating conditions. Rationing, failure or inaccessible capacity can suppress recorded delivery. If unmet need matters to the choice, use an available estimate or a sufficient bound, obtain a better estimate, or retain the uncertainty.
 
 Separate components whose drivers or possible interventions differ. Household use, other use and losses may be useful for a water decision. Reconcile their sum with the total on the same boundary and interval. If they disagree, investigate the mismatch that could affect the choice. A residual between compatible inlet and customer measurements may estimate losses; an unexplained discrepancy between incompatible meters cannot be assigned that meaning.
 
@@ -37,7 +37,7 @@ Keep the observation and its limitations available alongside the component accou
 
 #### EAM.4:4.3 - Vary drivers and form coherent scenarios
 
-For each material change, explain how it affects a component: more users, different use per user, a new industrial commitment, changed losses or a shared environmental condition. Apply that change to the appropriate base. For example, a 10% increase in household use changes the household component, not automatically the district's losses and industrial use.
+For each material change, explain how it affects a component: more users, different use per user, a new industrial commitment, changed losses or a shared environmental condition. Apply that change to the appropriate base. For example, a 10% increase in household use changes the household component. Adjust district losses or industrial use only if their own drivers warrant it.
 
 Combine component values for conditions that can occur together in the period being compared. Several site maxima can occur at different hours; weather can also make formerly separate peaks coincide. Where timing matters, construct a common-period profile or obtain the applicable specialist account. Preserve location, service class and quality conditions that a total could conceal.
 
@@ -45,7 +45,7 @@ Form an unchanged-policy baseline before crediting a proposed demand-management 
 
 Test the drivers that can change eligibility or preference. A justified range or a few explicit scenarios can be sufficient. If an option has 100 units of spare contribution, an uncertain additional demand spanning 90–170 leaves its adequacy unresolved; a range wholly above 100 establishes that this option cannot cover that demand range without another contribution. This threshold can identify a useful further inquiry. Give a scenario a probability only when evidence supports that interpretation.
 
-A more elaborate forecast is needed when an important dependency, changing population or response to price, weather or restrictions cannot be supported by the simple account. Ask the specialist for the demand at the required boundary and periods, the relevant driver combinations, uncertainty and limitations. The receiving asset decision still compares the returned result under those conditions.
+A more elaborate forecast is needed when an important dependency, changing population or response to price, weather or restrictions cannot be supported by the simple account. Ask the specialist for the demand at the required boundary and periods, the relevant driver combinations, uncertainty and limitations. Use those conditions to compare the asset options against the forecast.
 
 #### EAM.4:4.4 - Return the demand and the premise that could change it
 
@@ -57,7 +57,7 @@ Stop when the account distinguishes the useful options or identifies a specific 
 
 #### EAM.4:5.1 - Use a supplied requirement
 
-In CityWater, North's dry-window minimum is 700 m³/h and its wet-season minimum is 1,100. Current usable capability is 1,000. An annual average of 800 would not establish adequacy for the wet season: the explicit deficit is 100 m³/h at that required time. Both shortlisted C arrangements add 200 and pass this quantity comparison under their supplied qualifications.
+In CityWater, North's dry-window minimum is 700 m³/h and its wet-season minimum is 1,100. Current usable capability is 1,000. An annual average of 800 would not establish adequacy for the wet season: the deficit is 100 m³/h at that required time. Both shortlisted C arrangements add 200 and pass this quantity comparison under their supplied qualifications.
 
 Now suppose a new forecast suggests 1,250 in a later period. That forecast is not automatically a revised mandate. The practitioner reports that the current 1,200-capability option would fall short by 50 under this scenario and identifies which service or investment decision would use it. A sufficiently credible and consequential scenario can warrant another option without inventing a new commitment.
 
@@ -74,7 +74,7 @@ In a separate constructed district, Westbank, compatible observations of an unre
 
 The calculation is 600 × 1.10 + 300 + 140 = 1,100. It leaves 100 m³/h of contribution available within the proposed capability. A separately supported new industrial requirement of 150 during that same hour gives 1,250 and exceeds capability by 50. The industrial addition is counted once: it was absent from the 300 base.
 
-If the industrial maximum occurs at another hour, the practitioner obtains the other components for that hour before forming its total. Adding unrelated maxima would not establish the actual peak. If the original 1,000 observation was rationed, the unrestricted baseline first needs an applicable estimate of suppressed use.
+If the industrial maximum occurs at another hour, the practitioner obtains the other components for that hour before forming its total. Adding unrelated maxima would not establish the peak. If the original 1,000 observation was rationed, the unrestricted baseline first needs an applicable estimate of suppressed use.
 
 A proposed leakage measure may reduce the scenario's losses from 140 to 80. With the industrial addition, the total would then be 660 + 300 + 150 + 80 = 1,190. [EAM.7](16-eam-7---generate-ways-to-supply-an-asset-dependent-service.md) can compare that measure with added supply, using its cost and evidence of achievable reduction. The ten-unit margin exists only while the assumed reduction, coincidence and other contributions remain supported. Treating the proposed 80 as the unchanged-policy loss estimate would hide the intervention that makes the option work.
 
@@ -88,7 +88,7 @@ Can the reader recover the observation base and each material driver? Do compone
 
 ### EAM.4:8 - Common Anti-Patterns and How to Avoid Them
 
-Comparing average demand with peak capacity can answer the wrong question. Compare required service at its actual window.
+Comparing average demand with peak capacity can answer the wrong question. Compare the requirement and available capacity over the same period.
 
 Using forecast demand as an authorized obligation silently changes the decision. Preserve the forecast's evidence and let the relevant authority decide any commitment.
 
@@ -96,7 +96,7 @@ Crediting a proposed reduction in the baseline conceals the option needed to pro
 
 ### EAM.4:9 - Consequences
 
-Asset alternatives can be sized and timed against a need whose construction is recoverable. Some expansion proposals become unnecessary, while a local or seasonal deficit becomes explicit. Changing one driver can reopen the affected scenario without rebuilding adequate observations. The account remains qualified by its assumptions.
+Asset alternatives can be sized and timed against a need whose construction is recoverable. Some expansion proposals become unnecessary, while a local or seasonal deficit becomes explicit. Changing one driver can reopen the affected scenario without rebuilding adequate observations.
 
 ### EAM.4:10 - Architectural Rationale
 
@@ -104,7 +104,7 @@ Capacity is judged relative to a receiving service. [EAM.4](13-eam-4---assess-de
 
 ### EAM.4:11 - SoTA-Echoing
 
-Choose the least burdensome supported comparison that distinguishes the asset options. [FPF C.16](../../../sections/09-part-c---kernel-extension-specifications/27-c-16---measurement-metrics-characterization.md) supplies measurement and uncertainty distinctions; [OPS.1](../ops/29-ops-1---identify-the-operating-system-commitments-and-flow-u.md) supplies the service and commitment account. North's known 1,100 m³/h requirement already exposes a 100 m³/h shortfall. A more accurate annual average would not resolve that peak-service question.
+Choose the least burdensome supported comparison that distinguishes the asset options. [FPF C.16](../../../sections/09-part-c---kernel-extension-specifications/27-c-16---measurement-metrics-characterization.md) supplies measurement and uncertainty distinctions; [OPS.1](../ops/29-ops-1---identify-the-operating-system-commitments-and-flow-u.md) supplies the service and commitment account. North's known 1,100 m³/h requirement exposes a 100 m³/h shortfall. A more accurate annual average would not resolve that peak-service question.
 
 The Environment Agency, Natural Resources Wales and Ofwat's *Water resources planning guideline*, updated 16 June 2026, [§§6.1 and 6.4.1–6.4.3](https://www.gov.uk/government/publications/water-resources-planning-guideline/water-resources-planning-guideline#section-6--developing-your-demand-forecast), develops component demand, the observed baseline, critical periods and assumptions before additional measures. EAM adapts that contribution in the component reconciliation and driver construction above. The Westbank case shows why a changed driver or proposed reduction changes the asset comparison. Its values and arithmetic are constructed here.
 

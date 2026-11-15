@@ -7,7 +7,7 @@
 
 Use this pattern when the question concerns how a bounded population generates, transmits, uses, recognizes, selects, retains or loses an asset-management practice. A new appraisal template has been distributed, but the practice leader needs to know whether planners and decision makers actually continue the intended way of comparing assets.
 
-Begin with the particular cultural claim and the people and interval it concerns. Return a supported account or a decision to retain, change, branch or stop a practice, with the limits needed by its recipient. Further inquiry is conditional on its useful contribution and full burden.
+Begin with the cultural claim, the participants it concerns and the relevant interval. Return a supported account or a decision to retain, change, branch or stop a practice, with the limits needed by its recipient. Further inquiry is conditional on its useful contribution and full burden.
 
 ### EAM.16:2 - Problem
 
@@ -21,9 +21,9 @@ Continuity preserves useful knowledge while changed conditions can make inherite
 
 State what the recipient needs to know or decide. Bound the practice content, population, setting and interval. “Asset-management culture” is too broad when the question concerns one appraisal rule among a particular group of planners and committee participants.
 
-Distinguish the cultural processes that matter to that question. Generation concerns a proposed variant; transmission concerns its passage to recipients; receiving use concerns what they actually do. Recognition concerns which practice is treated as competent or appropriate; selection concerns which reusable practice is favored or continued; retention and loss concern what persists or disappears across later relevant occasions. Select the claims needed here rather than demanding evidence for every process in every case.
+Distinguish the cultural processes that matter to that question. Generation concerns a proposed variant; transmission concerns its passage to recipients; receiving use concerns what they actually do. Recognition concerns which practice is treated as competent or appropriate; selection concerns which reusable practice is favored or continued; retention and loss concern what persists or disappears across later relevant occasions. Select the claims the current question requires.
 
-Identify the people involved in the claimed processes and the arrangements through which they interact. Include the descriptions and templates they use and the relevant teaching or decision activities. A document's presence can support an availability claim. It does not by itself establish teaching, actual use or continued use.
+Identify the participants in the claimed processes and the arrangements through which they interact. Include the descriptions and templates they use and the relevant teaching or decision activities. A document's presence can support an availability claim. It does not by itself establish teaching, actual use or continued use.
 
 Recover the available evidence for each claimed process and its limits. Keep observation, interpretation and causal explanation distinct. For a proposed appraisal rule, identify the operations it recommends and the cases or tests that support that proposal. For an actual-use claim, identify who used which operations in a particular appraisal, with what information and support, and what result they returned. Appraisal records, observation or a practitioner's account can support that claim to the extent that they show those actions; state what is unknown or only reported. A successful desk calculation supports that calculation. It does not establish use by planners, committee recognition or persistence on later occasions.
 
@@ -39,7 +39,7 @@ Return which practice each group may continue or is proposed to adopt, the decis
 
 In a constructed example, three CityWater planners receive a common-horizon appraisal template and attend a documented explanation. Those records establish distribution and teaching. The practice leader asks what is known about continued use. The investigator reports those facts and states that later use by planners and recognition by the committee have not yet been established.
 
-Suppose two later appraisal records are then available. One uses the stated horizon and compares eligible combinations; the other ranks interventions by condition alone. The investigator can report that the two observed appraisals differ in the relevant practice. That is evidence about those occasions, not retention across the whole population or a causal effect of the teaching.
+Suppose two later appraisal records are then available. One uses the stated horizon and compares eligible combinations; the other ranks interventions by condition alone. The investigator can report that the two records show different appraisal practices. That is evidence about those occasions, not retention across the whole population or a causal effect of the teaching.
 
 If a decision about continuation needs more evidence, the investigator considers later comparable appraisals and committee decisions whose interpretation is attainable and useful. If change is selected, the practice leader can propose a worked example or a changed appraisal instruction within their authority. The committee's actual choice of the FFMK programme remains separate from any decision to retain the combination-comparison rule for future work.
 
@@ -47,7 +47,7 @@ A separate constructed case shows a branch. At another utility, central planners
 
 ### EAM.16:6 - Bias-Annotation
 
-Visible participants and formal documents can dominate the account while informal transmission and excluded practitioners remain unobserved. Avoid treating one group's preferred practice as universal competence. Account for the burden and interests of the people expected to change.
+Visible participants and formal documents can dominate the account while informal transmission and excluded practitioners remain unobserved. Avoid treating one group's preferred practice as universal competence. Account for who would bear the burden of changing the practice and whose interests would be affected.
 
 ### EAM.16:7 - Conformance Checklist
 
@@ -55,7 +55,7 @@ Are the practice content, population and interval clear? Does the evidence suppo
 
 ### EAM.16:8 - Common Anti-Patterns and How to Avoid Them
 
-Training attendance is evidence of attendance, not continuing appraisal practice. Obtain or qualify the receiving-use claim.
+To establish continued appraisal practice after training, examine use in later appraisals. If the only evidence is attendance, limit the finding to participation in training.
 
 An asset decision is not automatically selection of a reusable Method. Identify which practice the relevant population is recognizing or retaining and the evidence for that conclusion.
 
@@ -71,9 +71,9 @@ Cultural continuation has different subjects and evidence from asset outcomes, o
 
 ### EAM.16:11 - SoTA-Echoing
 
-For the question of whether to continue or change one appraisal practice, adopt C.36:4's process-specific cultural account and adapt C.36.MC:4.1's qualified continuation, intervention and branching comparison. They supply the selected line: first establish what happened among the named people, then choose only the change or inquiry that can improve their actual decision. The Solution therefore allows a sufficient account of known teaching and unknown later use, and gives a branch a population, rule, conditions and reason. It limits the conclusion to the people, processes and occasions supported by the evidence.
+For the question of whether to continue or change one appraisal practice, adopt C.36:4's process-specific cultural account and adapt C.36.MC:4.1's qualified continuation, intervention and branching comparison. Establish what happened among the participants, then choose a change or inquiry only if it can improve their decision. This allows a sufficient account of known teaching and unknown later use, and gives a branch a population, rule, conditions and reason. Limit the conclusion to the participants, processes and occasions supported by the evidence.
 
-A serious alternative for carrying a selected change across an organization is a structured change-management programme. GFMAM's *Asset Management Landscape*, third edition, June 2024, section 4.5, supplies that comparator, including communication, training and reinforcement ([pp. 56–57](https://gfmam.org/sites/default/files/2024-06/GFMAM_AM_Landscape_v3.0_English_2024.pdf#page=56)). Adapt those activities when the actual intervention needs them. They do not answer the separate question of which planners used a particular comparison on later occasions. For the two-record case, beginning a wider rollout would add participant and coordination work before the evidence identifies the needed change; the selected account can already return the known difference and its limits. This is a scope and burden trade-off, not a claim that a bounded account delivers the effects of a change programme. [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) and [FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/130-c-36-mc---qualify-and-develop-a-method-culture.md) provide the distinctions and decision operations. Reopen the comparison when later observations show a failure shared across the bounded groups, the branch no longer separates their conditions, or an attainable intervention can improve the required practice enough to justify its wider work.
+A structured change-management programme can help carry a selected change across an organization. GFMAM's *Asset Management Landscape*, third edition, June 2024, section 4.5, supplies that comparator, including communication, training and reinforcement ([pp. 56–57](https://gfmam.org/sites/default/files/2024-06/GFMAM_AM_Landscape_v3.0_English_2024.pdf#page=56)). Adapt those activities when the intervention needs them. They do not answer the separate question of which planners used a particular comparison on later occasions. For the two-record case, beginning a wider rollout would add participant and coordination work before the evidence identifies the needed change; the selected account can already return the known difference and its limits. [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) and [FPF C.36.MC](../../../sections/09-part-c---kernel-extension-specifications/130-c-36-mc---qualify-and-develop-a-method-culture.md) provide the distinctions and decision operations. Reopen the comparison when later observations show a failure shared across the bounded groups, the branch no longer separates their conditions, or an attainable intervention can improve the required practice enough to justify its wider work.
 
 ### EAM.16:12 - Relations
 

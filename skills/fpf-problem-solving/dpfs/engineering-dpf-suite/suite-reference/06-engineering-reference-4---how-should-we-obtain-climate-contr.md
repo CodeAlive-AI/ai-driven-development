@@ -4,7 +4,7 @@ An equipment company needs climate control for a new greenhouse. It could buy a 
 
 **Start with [SYSE.24](../syse/32-syse-24---choose-how-the-project-will-obtain-a-needed-engine.md).** Compare ways to obtain the same accepted climate-control result. Include the integration and support work, required capability, access and eventual exit as well as the device price.
 
-Identify the real greenhouse, crops, actuators, climate and operating conditions with [SYSE.1](../syse/20-syse-1---choose-and-reopen-the-project-system-of-interest.md) and [SYSE.16](../syse/21-syse-16---recover-the-systems-and-conditions-needed-for-a-us.md) where needed. Obtain the actual performance and safety thresholds from the appropriate specialists.
+Identify the real greenhouse, crops, actuators, climate and operating conditions with [SYSE.1](../syse/20-syse-1---choose-and-reopen-the-project-system-of-interest.md) and [SYSE.16](../syse/21-syse-16---recover-the-systems-and-conditions-needed-for-a-us.md) where needed. Obtain the performance and safety thresholds that apply to this greenhouse from the appropriate specialists.
 
 | What could reverse the choice? | Evidence to obtain |
 | --- | --- |

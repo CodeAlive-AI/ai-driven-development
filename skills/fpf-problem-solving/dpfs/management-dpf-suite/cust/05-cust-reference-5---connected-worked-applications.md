@@ -1,6 +1,6 @@
 ## CUST.Reference:5 - Connected Worked Applications
 
-These examples are constructed to show operations and consequential choices.
+These constructed examples follow the decisions for an analytical service and a public library programme.
 
 ### CUST.Reference:5.1 - A monthly analytical service with a private deployment
 

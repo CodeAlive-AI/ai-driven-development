@@ -5,33 +5,33 @@
 
 ### HCD.28:0 - Use This When
 
-Use this pattern when an author or provider must offer a coherent way to learn a contribution to later work, but the future learners are not yet known individually, or the programme, material and support no longer fit together. Begin with the work the audience should become able to do, its plausible preparation, and the actual conditions of supply.
+Use this pattern to design or revise a learning offer for a future audience whose members may still be unknown, or to reconnect a programme, its material and its support. Start with the contribution learners will need to make in later work, the preparation they may bring and the conditions under which the product could be supplied.
 
-The first useful result is a **whole learning-product account**: one or more comparable constructions connecting entry conditions, subject content, learning tasks, materials, practice, feedback, observation and delivery, with their full burdens and unresolved dependencies. A complete small task family can make a first comparison useful. State which larger outcomes it leaves unconstructed.
+A **whole learning-product account** connects the intended result to the entry conditions, subject content, learning tasks, materials, practice, feedback, observation and delivery it requires. It can describe a usable design, compare feasible variants or identify a missing connection. A complete small family of tasks may give the recipient enough to proceed. State which larger outcomes remain open. For each proposed route, identify its full burden and any unresolved dependencies.
 
-The practical gain is locating a missing connection before multiplying lessons or enrolments. An author can distinguish a missing subject method from a material that fails to teach an available method and from help that cannot be supplied. The result supports product development and a separate offer or launch decision; it does not establish learning, market demand or operational readiness.
+The author can find a missing connection before producing more lessons or enrolling more learners. A subject method may lack a criterion, the material may fail to teach an available method, or the service may be unable to supply help in time. The account can support a development, offer or launch decision. Claims about demand, readiness and what participants learned require evidence for those claims.
 
-Do not use this pattern when a suitable product can already be used directly, when only one material needs diagnosis through [HCD.19](36-hcd-19---evaluate-instructional-material-through-representat.md), or when the question is comparing programmes for a known person through [HCD.2](20-hcd-2---compose-and-compare-human-capability-development-pro.md). A competent provider may produce a needed work result without teaching the customer; that can be a good service, but it is a different promise from developing the customer's contribution.
+Use an adequate existing product directly when it fits. For a defect in one material, see [HCD.19](36-hcd-19---evaluate-instructional-material-through-representat.md). For programme comparison for a known person, see [HCD.2](20-hcd-2---compose-and-compare-human-capability-development-pro.md). When the customer needs a work result, a competent provider may deliver it. A promise to develop the customer’s own contribution also requires an opportunity for the customer to learn.
 
 #### HCD.28:0.1 - Working Terms
 
 | Term | Meaning in this pattern |
 | --- | --- |
 | learning product | A bounded offer through which an audience can undertake specified learning work under stated entry and support conditions. A guide, course or supported practice arrangement can carry parts of the offer. |
-| programme | The proposed arrangement of preparation, practice, feedback, correction and observations over time. It is distinct from the material describing it and from its actual performance. |
+| programme | The planned preparation, practice, feedback, correction and observation over time. Materials describe or support that work. Evidence from delivery shows which parts took place. |
 | subject method | The way of performing the target-domain work, including the choices and conditions needed for that work. It can require skilled demonstration or situated judgement as well as a written account. |
-| pedagogical companion | Material and activities that help a reader acquire prerequisites, understand and practise an available subject method. It does not silently supply a missing rule of the subject method as if that rule had already been established. |
-| whole learning route | A connected use from an attainable entry through learning activity and correction to the intended observable contribution. “Whole” is relative to the declared outcome, not to an entire profession. |
+| pedagogical companion | Material and activities that help learners acquire prerequisites and understand and practise an available subject method. Developing a missing rule for the subject work requires subject expertise. |
+| whole learning route | A connected path from an attainable entry through the learning activity and any needed correction to the observable contribution the offer promises. |
 | preparation branch | An alternative entry or preparation activity selected by a relevant difference in starting capability, access or support. It has a return to the whole task. |
-| supply arrangement | The actual people, tools, permissions, time windows, checking and recovery that make the offer usable. A timetable or role name does not establish availability. |
+| supply arrangement | Who or what can provide the materials, access, checking and recovery, under which permissions and in which time windows. Check promised availability against the actual conditions. |
 
 ### HCD.28:1 - Problem Frame
 
-A prospective audience can be described before any member is known. That permits useful design: an author can qualify a task, compare explanations, prepare a practice route and estimate support. It does not permit assigning a personal diagnosis or programme to every member.
+Before the audience members are known, the author can qualify a task, compare explanations, prepare a practice route and estimate support. A personal diagnosis or programme recommendation needs evidence about the person.
 
-Parts may look adequate separately and still fail together. A lesson explains a calculation while the later task requires choosing the model. A task elicits a difficult question after the mentor has left. A group produces a strong report while several participants never make the judgement the product promises to teach. An attractive self-service price excludes the time needed to read, practise, check and repair.
+An explanation may teach calculation while the later task requires model selection. A learner may need help after the mentor has left. A successful group report may contain one learner’s judgement although other participants never made the judgement themselves. A self-service price may omit the time to read, practise, check and repair. In each case, examine how one part of the offer contributes to the work that follows.
 
-The author needs enough subject competence, or access to a qualified subject contributor, to distinguish a pedagogical choice from an unresolved domain question. The intended reader of this pattern can design tasks and support, compare resource demands and recognize the limits of that subject access. HCD supplies no engineering, clinical or other professional authority by itself.
+To distinguish an instructional choice from an unresolved subject question, use your own qualified subject knowledge, a suitable existing result or the contribution of someone qualified to interpret the case. The design calls for competence in tasks, support and resource comparison. Use the applicable domain authority for an engineering, clinical or other professional judgement that requires it.
 
 ### HCD.28:2 - Problem
 
@@ -53,112 +53,112 @@ How can an author construct and compare an attainable learning offer for a futur
 
 #### HCD.28:4.1 - Bound the offer by work and meaningful entry differences
 
-Describe a family of later tasks, the contribution a learner must supply, the help that may remain in later work, and the errors that defeat the result. State the audience hypothesis and the observations that would make entry plausible. “Engineers” or “beginners” is too broad when some can calculate correctly but cannot select a model.
+Describe the later tasks, the learner’s own contribution, the help allowed in those tasks and the errors that would defeat the result. State what preparation you expect and what evidence would support that entry assumption or distinguish entrants who need different work. People described as engineers or beginners may all calculate correctly while differing in model selection.
 
-Separate what the offer must teach from what entrants may already know and what a reference, tool or specialist may legitimately supply. Do not convert every useful contribution into a prerequisite to be memorized. Conversely, a tool that supplies the very choice to be learned changes the learning task.
+Identify what entrants may already know, what the offer must teach and what a permitted reference, tool or specialist can supply. If a tool makes the very choice the learner is meant to practise, change what the tool supplies or revise the learning claim.
 
-Construct branches only for differences that change an action. An entrant who confuses units may need a short preparation task before joining model comparison; an entrant who already selects models may need a different challenge or no such module. Specify a representative entry action, the result selecting the branch and where that branch rejoins. Uncertain preparation may justify an early diagnostic attempt rather than a lengthy prerequisite course.
+Provide an alternative entry when preparation, access or support changes the needed work. An entrant who confuses units may need a short preparation task. An entrant who already selects models may need a different challenge or can omit that module. Identify an action or appropriate prior evidence for assigning the entry and where it leads next. A short diagnostic attempt may settle an uncertainty about preparation.
 
-Keep audience assumptions conditional until learners arrive. Return compatible product variants, requirements and limits to HCD.2 for a known person's comparison. HCD.2 adds that person's starting performance, later work, participation, access and protected contributions; an average audience profile supplies none of those personal facts.
+Treat assumptions about a future audience as conditional. For a known person, HCD.2 can use the feasible product or variants, their entry and support requirements, and their limits alongside evidence of that person’s starting performance, later work, participation, access and protected contributions.
 
 #### HCD.28:4.2 - Obtain the subject contribution before repairing its teaching
 
-Inspect one representative task and an explanation or demonstration of how a competent practitioner handles it, including a nearby case that changes the choice. Ask whether the available account supplies the decision that the learning activity would require.
+Inspect a representative task and the available explanation or demonstration of competent work. When selection matters, inspect a nearby case where a change in conditions affects the choice. Establish whether the source supplies the judgement or operation the learning task requires.
 
 | Finding | Next construction and usable return |
 | --- | --- |
 | An available method specifies the relevant selection, action and limits. | Use it as the subject basis. Preserve its scope and build teaching, practice and help for the declared preparation. |
-| Competent practitioners can act, but the decisive choice remains implicit. | Use qualified demonstrations, exemplars and supervised contributions where they make the target judgement and learning action available. HCD.5:4.2.1 and HCD.6.1 develop that learning. When the unresolved operation or criterion prevents the intended teaching or use, use A.3.1.MR for ordinary candidate recovery. Continue to RMP.10 only if the receiving decision needs its larger evidence programme. Incomplete verbalization alone does not require deferral. |
-| No qualified way of handling the required case is available. | Return the missing subject relation, intended use and adequacy question to Method Engineering or Research Method Practice. Narrow or defer the unsupported part of the offer while that work remains open. |
-| The subject account is adequate for its competent audience, but the proposed learner cannot recover or practise the operation. | Develop an explanation, contrast, preparation branch or companion through HCD.5, HCD.6 and HCD.6.1; use HCD.19 to localize the material contribution. |
-| Content and task are usable, but promised help or access is absent. | Use HCD.7 to arrange available help or access, or HCD.8 to obtain or build the missing contribution; revise the service or its operating conditions with the direct provider owners. |
+| Competent practitioners can act, but a decisive choice remains implicit. | Use qualified demonstrations, examples or supervised work where they make the judgement available for learning. HCD.5:4.2.1 and HCD.6.1 help develop that work. If the missing operation or criterion still prevents the intended use, use A.3.1.MR to recover a candidate method. Use RMP.10 when the receiving question needs its larger evidence programme. |
+| No qualified way of handling the required case is available. | Identify the missing subject relation, the intended use and what remains to be established for that use. Narrow or defer the unsupported part of the offer. When developing the missing method is part of the task, use Method Engineering or Research Method Practice or obtain the needed contribution. |
+| The subject account serves a competent user, but the intended learner cannot recover or practise the operation. | Use HCD.5, HCD.6 or HCD.6.1 to develop the needed explanation, contrast, preparation or practice. Use HCD.19 when the question is what the material contributes. |
+| Content and task are usable, but promised help or access is absent. | Identify the resulting limit. To make the offer usable, use HCD.7 to arrange available support or HCD.8 to obtain or build the missing contribution. Change the service within the applicable authority or take the unresolved change to the responsible provider. |
 
-These findings can coexist. Reconstructing a subject criterion does not supply a mentor, and hiring a mentor does not repair a contradictory explanation.
+Several gaps can coexist. Even with a qualified subject criterion, a learner may still need a mentor in the feedback window. A contradictory explanation may still need correction after a mentor has been assigned.
 
-A useful discriminator is the work left to the companion's author. Choosing examples, ordering explanation, designing practice and fading help are pedagogical work. Inventing an unstated criterion for choosing the subject model is subject-method development. Do not hide that gap by declaring the eventual reader sufficiently expert. Equally, a competent reader's ability to use a concise account does not show that a novice can learn from it without additional activity.
+Ask what the companion’s author would have to do. Choosing examples, ordering explanations, designing practice and withdrawing help as the learner gains capability are instructional work. Establishing the criterion for selecting the subject model is work on the subject method. An expert may use a concise account that leaves a novice without a way to learn the judgement.
 
 #### HCD.28:4.3 - Construct the connections in one complete learning route
 
-Build from the result backwards far enough to make the route executable, then walk it forwards from the actual entry. [HCD.5](21-hcd-5---select-human-capability-development-methods.md) selects a development mechanism for the missing action; [HCD.6](22-hcd-6---design-representative-practice-tasks.md) supplies the whole task, subject criterion, permitted help and meaningful variation. Use [HCD.6.1](23-hcd-6-1---help-a-learner-discern-a-needed-distinction-in-pra.md) when a necessary distinction is not yet discernible.
+Work back from the intended result to the entry and contributions it requires. Then follow the proposed route from that entry. Use [HCD.5](21-hcd-5---select-human-capability-development-methods.md) to select how to develop a contribution the learner still needs, [HCD.6](22-hcd-6---design-representative-practice-tasks.md) to construct or assess the whole task, criterion, permitted help and variation, and [HCD.6.1](23-hcd-6-1---help-a-learner-discern-a-needed-distinction-in-pra.md) for a distinction the learner still needs to discern.
 
-For each connection, state the produced result and what the next action can do with it:
+For each connection the route needs, identify what the first activity supplies and how the next can use it. The following examples illustrate different connections.
 
-- A worked contrast must expose the condition that changes the model, so the next task can ask the learner to select without that answer-bearing cue.
-- A first attempt must leave an interpretable judgement or performance, so feedback can address a particular error.
-- Feedback must arrive in time and give the learner grounds to correct or retain the response, so the learner can act on it while the opportunity remains available.
-- A subsequent task must preserve or change the condition relevant to the intended inference, so success is not silently reclassified as transfer.
-- A material or practice revision must reach the relevant provider and learner before their next use.
+- Where learners must choose a model, a worked contrast can expose the condition that changes the choice. A later task can ask them to choose without a cue that gives the answer.
+- If feedback concerns an attempt, the person giving it needs an interpretable judgement or performance. An earlier recorded attempt may supply it.
+- When feedback is part of the route, it must reach the learner in time to use it. Give the learner grounds to correct or retain the response while the opportunity remains open.
+- A later task can vary or preserve the condition relevant to the intended inference. To claim transfer, use a task and evidence that distinguish it from repeated performance under the original conditions.
+- For a revision to affect the next use, the changed material or instruction must reach the participants who rely on it in time.
 
-The [4C/ID account](https://www.4cid.org/about/) supplies a useful distinction among whole learning tasks, support for non-routine reasoning, information during routine action and additional part-task practice where needed. Use that distinction to avoid replacing the whole task with unrelated drills. It is not a requirement to add every component to every small product.
+The [4C/ID account](https://www.4cid.org/about/) distinguishes whole learning tasks, support for non-routine reasoning, information used during routine action and additional practice on a component. Choose the contributions that make the whole learning task possible for the intended entrants.
 
-Choose which contributions can be simultaneous and which require an earlier result. Unit support can remain available during diagnosis; an independent model choice must precede help that names the model if that independence is the intended observation. A qualified existing task or provider result can close a dependency immediately.
+Identify which contributions can overlap and which depend on an earlier result. Unit support can remain available during diagnosis. To assess independent model choice, preserve the choice before any cue that names the model reaches the learner. An appropriate existing task or provider result can already satisfy a dependency.
 
-Use HCD.20 when interaction with other learners is a serious option and HCD.22 when a shared task must be constructed. A supported individual route is a complete product option. A group is useful only through the learning actions and contributions it makes possible.
+Use HCD.20 to compare or assess arrangements involving other learners and HCD.22 to construct or assess a shared task. A supported individual route can meet the complete promise. For shared work, identify the contribution others would need to provide and how learners could use it. For a delivered activity, establish which contributions participants supplied and, when the claim concerns uptake, what learners did with them.
 
-When the route needs interaction, obtain the selected contribution rather than add every group activity. HCD.21 establishes compatible membership and contact. HCD.23 develops explanatory exchange; HCD.24 develops judgement and revision through peer review; HCD.25 connects project comparisons to personal use. HCD.26 supports a group whose actual work departs from its intention, and HCD.27 connects personal preparation, shared episodes and recovery. Each result returns its real preparation, help and timing conditions to the whole-product comparison.
+When the route depends on interaction, select the contribution it needs. HCD.21 can help assess or arrange membership and contact. HCD.23 concerns exchange of explanations, HCD.24 judgement and revision through peer review, and HCD.25 comparison across projects and personal application. HCD.26 helps assess or regulate shared learning. HCD.27 connects personal preparation, shared occasions and recovery. Carry the applicable preparation, help and time conditions into the product assessment.
 
 #### HCD.28:4.4 - Select the material and service forms for those connections
 
-Choose representation by the operation it must enable. A table can make two measured conditions comparable; a diagram can expose a relation lost in prose; an animation can show a change whose timing matters; a simulator can allow a consequential choice and informative response. A more elaborate medium is not automatically a better explanation.
+Choose a representation for the operation it enables. A table can support comparison of two measurements, a diagram can expose a relation, an animation can show relevant timing, and a simulator can let a learner choose an action and inspect its consequences. Judge each against the learning task and the cost and accessibility of the medium.
 
-Distinguish the subject account, its teaching companion, practice materials and service instructions. They may share a file or interface, but a change affects them differently. Keep the subject criterion identifiable so that a new example does not establish a rival rule. A useful compact reminder may accompany a developed explanation; it cannot carry an operation the explanation leaves unstated.
+Identify the subject account, teaching companion, practice materials and service instructions even when they share a file or interface. Keep the subject criterion identifiable when an example or one of the materials changes. A reminder may cue a known operation. When learners still need to acquire that operation, identify a source, demonstration or practice through which they can learn it.
 
-For a Guide or Slidement, the Learning Product practice supplies its applicable instructional and carrier construction. A complete course or mentoring service also needs programme, provider and delivery decisions; publishing a guide does not establish them. SYSE.2 and SYSE.8 can receive the use, offer and provider questions; organization and operations owners receive changes to assignments, capability and service operation.
+For a Guide or Slidement, use the Learning Product practice for instructional design and its presentation. For a course or mentoring service, establish the programme and the provider and delivery arrangements required for that service. SYSE.2 and SYSE.8 can help address questions about use and provision. For changes to assignments, capability or service operation, use an applicable decision, decide within your own authority or take the remaining question to the responsible organization or operations authority.
 
 State what version of a case, answer basis or tool the task uses when a change would alter correctness or feedback. When the criterion changes, identify dependent examples, exercises, mentor guidance and interpretation of prior responses. When only access or timing changes, preserve unaffected subject content.
 
 #### HCD.28:4.5 - Compare complete alternatives at a finite scale
 
-Give serious alternatives the same intended output, audience assumptions, assistance conditions, observation purpose and time horizon. Construct enough of a less documented alternative to make that comparison meaningful; do not reward the most elaborate mock-up merely for having more pages.
+For a comparison, use a common intended outcome, audience assumptions, assistance conditions, observation purpose and horizon, and identify relevant differences in learning support. Develop a less documented option far enough to assess it, and state any consequential difference in what the options can deliver. If the task is to assess one design, test its connections and burden against its requirements.
 
-Include the learner's search, orientation, preparation, participation, practice, correction and waiting, alongside authoring, material production, provider preparation, delivery, checking, coordination, recovery and update work. Keep different people's hours distinguishable. Money, elapsed time, scarce expert time and displaced work may select different options.
+Estimate the learner’s search, orientation, preparation, participation, practice, correction and time waiting, along with authoring, production, provider preparation, delivery, checking, coordination, recovery and updates. Distinguish active and elapsed time and the work of each participant. Money, scarce expert time and displaced work can affect the comparison differently.
 
-Count shared development once for the declared number of uses. Count recurring human checks wherever they occur. If a mentor's booked session already contains six minutes of direct help, do not add those six minutes again as extra booked time. If a peer replaces that help, count the peer's activity and verify that it supplies the needed contribution. A low tool price is not the total service cost.
+Count shared development once over the planned uses and recurring checks where they occur. Six minutes of help within a booked mentor session are part of that booking. If a peer supplies the help, count the peer’s time and establish whether it meets the need. Include tool charges alongside the work needed to use and check their output.
 
-Check peak demand and the shared timeline as well as totals. Show when the participants produce the inputs for help, which named provider can respond then, and when the learners use that response. Include movement or connection and preserve every required personal action. Thirty minutes of mentor availability tomorrow cannot repair a question that must be answered during today's shared task. Compare an additional qualified provider, viable staggering, a changed task or a narrower offer; report any changed learning or timing condition.
+Alongside the totals, check peak demand. Find when the input for help will exist, which qualified provider can respond then and when the learner can use that response. Count movement or connection time and preserve each required personal action. Tomorrow’s mentor window cannot supply feedback needed today. If the window fails, consider another qualified provider, staggered starts, a changed task or a narrower offer as appropriate. State what each changes for learning or timing.
 
-A product may be infeasible on the present assumptions. Return the specific constraint and surviving alternatives to the offer decision. Do not quietly remove practice or checking while retaining the same promise.
+When a construction cannot meet the requirements, return the constraint and any surviving options. If a revised offer omits practice or checking the original outcome required, identify what the revised offer can still deliver.
 
 #### HCD.28:4.6 - Exercise the whole route and separate what has been established
 
-First use qualified materials and representative enactments to expose disconnected instructions, missing inputs, impossible timing or contradictory help conditions. When a reader-work question is live, use HCD.18 and HCD.19 with the relevant audience preparation and support. A design walk-through can find a defect; it cannot supply an observation that a real learner performed the task.
+Use qualified materials and a walk-through or representative enactment to follow the proposed route and test whether its connections work together, reusing checks that already cover them. Check instructions, inputs, timing and allowed help. For a question about what readers can do with the material, use HCD.18 and HCD.19 with the relevant preparation and support. To report what real learners did, use observations of their work.
 
-For a delivered use, preserve the entry, first attempt, actual help, feedback, correction and subsequent observation needed for the intended decision. HCD.11 addresses bounded performance, HCD.12 a qualified unfamiliar or new-source question, and HCD.13 delay and support dependence. A material diagnosis, operational provider check and personal capability judgement remain separate results.
+For a claim about a delivered activity, use the evidence that claim needs, such as entry conditions, first response, help received, feedback, a correction or reason for retaining the answer, or a later observation. Use HCD.11 for performance under specified conditions, HCD.12 for unfamiliar or new-source work, and HCD.13 for delay or dependence on support. Report material use, provider performance or the learner’s capability according to the evidence for each.
 
-Revise the connection supported by the evidence. Correct calculation with repeated unsupported causal choice reopens model selection and its teaching; late feedback reopens supply; incompatible versions reopen content distribution. Preserve useful contributions unaffected by the diagnosis. HCD.14 supplies development revision where its evidence fits; HCD.16 supplies a changed method-claim question.
+Use the finding to identify which connection needs attention. Repeated unsupported causal choices despite correct calculation warrant examining model selection and how it is taught. A single response can support a narrower finding about that attempt. Late feedback points to supply. Incompatible versions point to distribution. Change the affected connection when revision is warranted and retain the parts that still work. Use HCD.14 for development revision and HCD.16 for a changed claim about a method.
 
-A causal claim that the product improves learning requires a suitable research contribution. Identify the unit receiving the intervention, interactions within and between groups, shared providers, comparison conditions, attrition, observation horizon and alternative explanations. A successful demonstration or a before/after gain alone does not settle that question.
+To attribute an improvement in learning to the product, use evidence from a research design that supports the causal comparison, obtaining more only if the intended inference needs it. Address the units receiving the intervention, interactions within or between groups, shared providers, comparison conditions, attrition, horizon and other plausible explanations where they affect the inference. A demonstration or a before-and-after difference can establish a narrower result.
 
 #### HCD.28:4.7 - Return a construction that its recipient can use
 
-Return the intended work and contribution; conditional audience and branches; available subject basis and unresolved subject questions; connected programme, material, task and support variants; whole burden and peak constraints; evidence obtained and still needed; and the change that reopens the comparison.
+Return the design, assessment or comparison the recipient needs. Identify the intended work and personal contribution, plausible entry and relevant branches, subject basis, connections among tasks, materials and support, burden and peak constraints. Report evidence, unresolved dependencies and the conditions that would change the conclusion.
 
-Make dependencies actionable: “qualified pressure interpretation for these two cases” permits an obtain-or-build decision; “more content needed” does not. Stop when the current design or offer decision has a useful comparison or exact blocker. Full production can follow the selected construction; evidence for its performance remains bounded to what was actually observed.
+Name a missing contribution in terms of the work it would enable. For example, a qualified pressure interpretation for two named cases can guide a decision to obtain or develop it. A usable design, a sufficient comparison or an established limit can complete the current task. Full production and launch require their applicable decisions. Use observations of delivery for claims about performance.
 
 ### HCD.28:5 - Archetypal Grounding
 
 #### HCD.28:5.1 - Future diagnosticians who calculate correctly but choose the wrong model
 
-This is a constructed design, not a report of a delivered course or measured gain.
+This constructed case supplies the planning assumptions for a module. Evidence from delivery would be needed to report learning or its improvement.
 
 An author plans a module for 24 future technical diagnosticians. The audience hypothesis is that they can calculate energy per unit volume but may treat a rise in that ratio as proof of one cause. The later contribution is to name plausible rival explanations, choose an observation that distinguishes them, and recommend only the action the evidence supports. Safe case data and the subject answer basis come from a qualified domain contributor.
 
-Use the pump family in HCD.5 and HCD.6. A baseline of 20 kW at 100 m³/h becomes 22.4 kW at the same flow. The ratio rises by 12%; that calculation does not select increased hydraulic resistance over changed efficiency or a measurement explanation. The teaching route must make that missing selection visible. It does not promise a unique cause when the data leave several possible.
+In the pump family from HCD.5 and HCD.6, power rises from 20 to 22.4 kW while flow stays at 100 m³/h. Energy per unit volume rises by 12%. The ratio alone leaves increased hydraulic resistance, changed efficiency and a measurement problem possible. The learning task is to identify an observation that distinguishes the live explanations or establish what remains open.
 
-The author's first diagnosis changes the next work:
+The author chooses the next work according to what the available basis supplies.
 
-- If the expert's source already explains how the pressure observation distinguishes the models, use that basis to design a contrast and a choice task.
-- If the expert can choose but cannot explain the decisive relation, obtain reconstruction and another-case scrutiny before presenting the rule as established.
-- If the material states the relation but buries the relevant conditions in unrelated detail, repair the material and inspect the affected reader use.
-- If the learner needs that explanation but no qualified help is available within the feedback window, repair supply.
+- If the expert’s account explains how a pressure observation distinguishes the models, use that basis to select or design a contrast and a choice task.
+- If the expert’s choice is implicit, check whether a qualified demonstration or supervised task makes it learnable. If the rule itself remains missing and the product needs it, recover the criterion and test it against another case before presenting it as established.
+- If the material states the relation but hides the relevant conditions, identify the material defect. For a repair, revise it and check the affected reader use.
+- If a learner will need qualified help and no provider can supply it within the feedback window, identify that constraint. To deliver the outcome, arrange feasible help or revise the offer.
 
-Begin with a 90-minute core route: 20 minutes for an entry check and worked contrast, 10 for a first judgement, 30 for reason comparison, 10 for a changed case, 15 for feedback and correction, and 5 for a return plan. These are planning allowances to test in use. A separate 20-minute unit-support branch returns to the same whole diagnosis task. If six entrants need it, the branch adds two learner-hours. The supported individual construction below retains the ninety-minute core; the four-person construction needs six additional active minutes for qualified help. Neither removes correction or another required personal action to keep the initial estimate.
+Plan a 90-minute core. Allow 20 minutes for the entry check and worked contrast, 10 for a first judgement, 30 for comparing reasons, 10 for a changed case, 15 for feedback and any needed correction, and 5 for a return plan. A 20-minute unit-support branch leads back to the whole diagnosis. Six entrants taking it add two learner-hours. The individual route below retains the core. The four-person route needs six more active minutes per learner for qualified help. These allowances can be checked in delivery.
 
-Compare two serious constructions. In A, each person works with qualified contrasting reasons and requests individual subject help. In B, small groups compare evidence through HCD.22 before the same kind of individual changed-case task. Keep the outcome and final assistance conditions comparable. If A cannot elicit the needed response to another person's objection, enrich that interaction or mark the narrower contribution; if B exposes fewer relevant contrasts, do not assume its social format fills the gap.
+In route A, each learner compares qualified reasons and can use individual subject help. In route B, four-person groups compare evidence under HCD.22 before an individual changed-case task. Use comparable outcomes and final assistance conditions. If the outcome requires responding to another person’s objection, check that A elicits it. If it does not, add an attainable exchange or report its narrower scope. For B, inspect which contrasts the group makes available.
 
-Suppose both need six hours to qualify the common cases and two further hours for their respective materials and preparation. Both retain eight minutes of individual checking per entrant: 192 minutes for 24 people. A provisionally needs 24 six-minute help appointments, or 144 minutes distributed across bookable windows. B needs six six-minute group interventions: 36 minutes of direct demand. One mentor cannot meet that total during a thirty-minute booking. HCD.20:5.1 gives the compatible repair: two mentors remain booked for 11:00–11:30, while pairs of four-person groups start at 10:50, 11:00 and 11:10. Each group performs twelve minutes of initial explanations, six of help, twelve of second personal contributions and six of reconciliation. The visits occur at 11:02–11:08, 11:12–11:18 and 11:22–11:28 for each mentor. All inputs for a visit exist before it starts, four-minute gaps support movement or connection, and every group has time to use the response. These 36 active group minutes extend B's core to 96 minutes. Confirm each group's own start and finish; a single common thirty-minute availability window would not support this construction.
+For this comparison, allow six hours to qualify the common cases and two more for each route’s materials and provider preparation. At eight minutes per entrant, checking 24 initial responses takes 192 minutes. A plans 24 six-minute appointments, 144 minutes in bookable windows. B needs six six-minute group visits, 36 minutes of direct help. One mentor cannot provide these in a thirty-minute booking. In the feasible HCD.20:5.1 proposal, two mentors are booked from 11:00 to 11:30. Pairs of four-person groups start at 10:50, 11:00 and 11:10. Each group spends twelve minutes on initial explanations, six on help, twelve on second personal contributions and six on reconciliation. Each mentor visits groups at 11:02–11:08, 11:12–11:18 and 11:22–11:28. The inputs are ready before the visits, and the four-minute gaps allow movement or connection. Each group can use the response. The 36-minute activity makes B’s core 96 minutes. The staggered starts and finishes require the separate group windows shown below.
 
-Complete the comparison for one cohort with the following explicit allowances. Treat eight minutes per person as the first-response check and preparation of usable feedback; allow four further minutes to inspect the correction and return its bounded result. Preparation of the unit-support material and provider briefing is inside the eight fixed hours above. Actual help for the six entrants using that branch requires another four provider-minutes each, inside the learner's twenty-minute branch activity.
+For this cohort, the eight minutes per person cover checking the first response and preparing usable feedback. Allow four further minutes to check a correction or subsequent response and return the finding. The eight fixed hours include preparing the unit-support material and briefing its provider. Helping the six entrants who use the branch takes four provider-minutes each within their twenty-minute activity.
 
 | Provider contribution for one cohort | A: individual help | B: four-person groups |
 | --- | ---: | ---: |
@@ -172,31 +172,31 @@ Complete the comparison for one cohort with the following explicit allowances. T
 | Recurring provider allocation, including reserve | 552 min = 9.2 h | 516 min = 8.6 h |
 | Fixed plus recurring allocation for this one cohort | 17.2 h | 16.6 h |
 
-These are constructed planning allowances. The 48/72 coordination minutes cover this cohort's scheduling, missing submissions and result distribution; they do not repeat fixed material production or the already booked group window. The recovery reserve can supply six interventions of eight minutes in A and nine of eight minutes in B. Reserving that time counts as provider allocation even if not all of it is used.
+The 48 and 72 coordination minutes cover cohort scheduling, missing submissions and returning results. Fixed preparation and the booked group window are already in their own rows. At eight minutes each, the recovery reserves cover six interventions in A and nine in B. Reserved time counts toward provider allocation even if the cohort uses less.
 
-Make the feedback usable within an agreed two-day route:
+The proposed two-day schedule makes the feedback usable under these conditions.
 
-- Before the main work, the six relevant entrants complete the twenty-minute branch and receive their booked help. The 20-minute core preparation and 10-minute first judgement precede reason comparison.
+- Before the main work, schedule the six entrants to complete the twenty-minute preparation branch and receive its booked help. In each core, the 20-minute preparation and 10-minute first judgement come before comparison of reasons.
 - In A, book the 24 complete six-minute subject-help appointments between 09:00 and 11:24 on day one. Each learner starts their thirty-minute comparison twelve minutes before their appointment: twelve minutes comparing the supplied reasons, six receiving help and twelve using the response. A prepared common channel and preloaded case make opening and closing part of that complete appointment; extra setup would require extra booking. The last comparison ends at 11:36. In B, follow HCD.20's named assignments and staggered group starts; groups finish at 11:26, 11:36 and 11:46. Their later personal responses finish at 11:36, 11:46 and 11:56. The mentors' 60 booked minutes contain the 36 direct minutes and all stated transition gaps.
-- All 24 ten-minute personal responses are available by noon. One qualified assessor has 14:00–17:12 for the 192 minutes of first-response checking and feedback. Each learner receives the feedback by 09:00 on day two.
-- Learners read the feedback and use the fifteen-minute allowance for any correction or further response still needed, submitting that response by noon on day two. The assessor has 13:00–14:36 for the 96 minutes allocated to checking these follow-up responses and returns the bounded results by 15:00. Each learner then uses the five-minute return-plan activity by 18:00.
-- A prepared provider has the 48-minute A reserve or 72-minute B reserve from 15:00 for unresolved corrections or restored missed opportunities. If the demand exceeds that reserve, obtain additional viable help or return the resulting limitation; the timetable does not license reporting every entrant as successful.
+- On this schedule all 24 ten-minute personal responses can be ready by noon. One qualified assessor has 14:00–17:12 for 192 minutes of first-response checking and feedback. Arrange for each learner to receive their usable feedback by 09:00 on day two.
+- Allow fifteen minutes for learners to read the feedback and make a correction or further response if needed, due by noon on day two. From 13:00 to 14:36 the assessor has 96 minutes reserved for the follow-up responses, with results due by 15:00. Each learner has five minutes for their return plan by 18:00.
+- From 15:00 a prepared, qualified provider has 48 minutes in A or 72 in B for unresolved corrections or missed opportunities. If demand exceeds that reserve, obtain additional feasible help where needed or identify the remaining limit. To report a learner’s performance, use their work.
 
-A's ninety-minute core uses 36 learner-hours; B's ninety-six-minute core uses 38.4. Add two hours to each for the six preparation branches. Reserve a further fifteen learner-minutes for each possible recovery intervention: up to 1.5 hours in A and 2.25 in B. The corresponding active-time allowances are therefore 39.5 and 42.65 learner-hours if all reserved recovery is used. Elapsed waiting for feedback remains visible in the two-day schedule; it is not added as active practice, and the route is unsuitable if the receiving use requires completion on day one.
+For 24 people, A’s 90-minute core needs 36 learner-hours and B’s 96-minute core needs 38.4. Six preparation branches add two hours to each. At fifteen learner-minutes per possible recovery, full use of the reserve adds 1.5 hours in A or 2.25 in B. Total active time at full reserve use is 39.5 and 42.65 learner-hours. The two-day schedule separately shows the elapsed wait for feedback. A requirement to finish on day one would rule out these versions.
 
-Under these assumptions B allocates 36 fewer provider-minutes but 189 more active learner-minutes at full recovery use. Neither dominates on both coordinates, and the comparison has not established equal learning quality. A new cohort repeats the recurring contributions; it shares fixed preparation only while cases, criteria and provider readiness remain usable. The four specialist-hours inside the pump problem are simulated task constraints, not 24 purchases of live measurements. A product using real measurement work must add that actual supply and its conditions.
+B reserves 36 fewer provider-minutes than A. If all learner recovery time is used, B needs 189 more active learner-minutes. Choosing between these burdens depends on the use, and equal learning quality has yet to be established. A later cohort has recurring work of its own and can reuse fixed preparation while the cases, criteria and provider readiness still apply. The four specialist-hours in the pump exercise are simulated. If real measurements are part of the offer, include their actual supply and conditions.
 
-This finished accounting exposes the next dependency: 288 minutes of checking and correction checking remain in both variants. Discussion does not remove them. Use actual first responses, correction needs, coordination and recovery demand to replace the estimates before relying on a stronger capacity or cost claim.
+Both variants reserve 288 minutes for first-response and follow-up checks. Group discussion leaves that allocation in place. For a stronger estimate of capacity or cost, use evidence of the responses, correction needs, coordination work and recovery actually observed under the relevant conditions.
 
 #### HCD.28:5.2 - Changed conditions change the construction
 
-If the same learners only need reliable calculation of a known indicator, a supported individual task may supply the whole target with less coordination. Preserve a meaningful calculation and error check; omit model debate whose contribution is no longer required.
+If learners need to calculate a known indicator reliably, a supported individual task with a meaningful calculation and error check may cover the target with less coordination. Include a model comparison where selecting or examining a model is part of the work.
 
-If the customer instead needs a diagnostic report by tomorrow and does not require participants to learn its method, compare competent external delivery. Do not force a learning product onto a work-result request.
+If the customer needs only a diagnostic report by tomorrow, a competent provider able to deliver it in time may complete the service. Compare alternatives if the customer needs a choice. Teaching the customer to diagnose calls for a separate learning opportunity.
 
-If participants must manipulate a scarce instrument, replace the sequential discussion assumption with access, active observation and rotation appropriate to that instrument. HCD.20 and HCD.22 determine which actions can be performed while observing and which require personal operation. Neither the worked discussion timing nor four-person grouping remains a default.
+For a scarce instrument, work from access, usable observation and the operation each learner must perform. With HCD.20 and HCD.22, identify which actions observers can perform, who needs an operating turn and which tasks can overlap. Choose a group size and timing that fit the instrument and the learning target.
 
-If one learner later arrives with established model-selection performance but limited access to the proposed mentor, HCD.2 compares that person's feasible programme changes. It need not assign the full module merely because the product's audience description includes them.
+If an entrant already selects models and has limited access to the proposed mentor, HCD.2 can assess the product’s fit or compare feasible programme changes for that person. Use that person’s established performance, later work and actual access to decide which parts they need.
 
 ### HCD.28:6 - Bias-Annotation
 
@@ -205,58 +205,58 @@ If one learner later arrives with established model-selection performance but li
 | Topic and media attraction | More content or a simulator replaces the missing selection or connection. | Which required action becomes possible through this addition? |
 | Expert rescue | A strong reader fills a gap the material never supplied. | Did the source or actual help provide the decisive relation? |
 | Average-learner substitution | An audience hypothesis becomes a personal recommendation. | Which same-person evidence selects this route? |
-| Scale optimism | Fixed cost is divided by an imagined unlimited audience. | What finite uses, recurring checks and peak windows are actually expected? |
+| Scale optimism | Fixed cost is divided by an imagined unlimited audience. | Over how many uses can the preparation be shared, and what recurring checks and peak demand does that scale entail? |
 | Product-success substitution | A polished prototype or shared answer becomes a learning claim. | Which learner action was observed under which help? |
 
 ### HCD.28:7 - Conformance Checklist
 
-For recognizing a useful design result, check that the recipient can:
+For a design result, check that the recipient can do the following for its intended use.
 
 - identify the target work, personal contribution, preparation assumptions and meaningful branches;
-- obtain the subject basis or name its exact unresolved contribution;
-- follow a complete route through task, help, feedback, correction and intended observation;
-- compare serious variants on compatible outcomes and complete burdens;
-- locate actual provider and material dependencies, including peak demand;
-- return to personal comparison, subject development, material repair or supply repair as the finding requires.
+- use a qualified subject basis, obtain it where feasible or identify the subject contribution still missing;
+- follow the connections required from entry through the task, permitted help, feedback and any necessary correction to the intended observation, or identify where the route breaks;
+- assess one construction against its requirements or compare the available variants on comparable outcomes and complete burdens;
+- locate material and provider dependencies and the peak demand that matters to feasibility;
+- identify what can already be used and any personal, subject, material or supply question that still needs work.
 
-Stronger assurance requires the evidence appropriate to the reliance: actual material-use observations, operating provider results, personal performance or research evidence. A complete design account satisfies none of those merely by describing them.
+For stronger reliance, use evidence of material use, operating provision, personal performance or effects according to the claim. A design can support an offer comparison before those events take place.
 
 ### HCD.28:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Failure | Repair |
 | --- | --- | --- |
 | Catalogue as product | Lessons are present but the learner cannot reach a whole result. | Construct and exercise the connections in one complete task family. |
-| Companion as hidden subject invention | The teaching author invents the missing model criterion without subject qualification. | Return that criterion to the subject owner and preserve its status. |
+| Companion as hidden subject invention | The teaching author invents a model-selection criterion without subject qualification. | Use a qualified criterion or identify the missing subject judgement. When developing it is in scope, do so with the relevant competence or obtain it from a qualified source. |
 | Universal entry | Different preparation is treated as lack of effort. | Select a bounded branch from a relevant action and return it to the whole task. |
 | Group answer as personal result | One participant supplies the target operation for everyone. | Preserve the needed individual actions and observations. |
 | Free peer or AI support | Costs and competence disappear from the offer. | Identify actual contributions, checking, preparation and recovery. |
-| Successful fragment as full programme | A small route licenses outcomes it never constructs. | State the closed task family and remaining product dependencies. |
+| Successful fragment as full programme | One working task is used to promise outcomes the product does not yet enable. | Identify the task family the route serves and what each wider outcome still requires. |
 | Whole rebuild after one failure | A local supply or material defect triggers unnecessary redevelopment. | Diagnose and repair the affected connection. |
 
 ### HCD.28:9 - Consequences
 
-The author can make a useful design decision before individual learners are known while preserving what later individualization must add. Subject, teaching and supply gaps become different repair requests. Shared tasks and materials can be reused without treating their availability as evidence of learning.
+A future-audience design can be judged before a particular learner arrives. Subject, teaching and supply findings identify different work. Use established materials and shared tasks where suitable. A claim about an individual still needs that person’s entry, work and conditions.
 
-The cost is work on connections that a topic outline leaves implicit: qualified cases, accessible explanations, actual help, interpretation and finite resource comparison. Several apparently attractive offers may remain unsupported. Reopen the affected construction when entry conditions, the subject criterion, assistance, scale, timing or observed contribution changes.
+Making the connections explicit takes work on cases, explanations, help, interpretation and resource limits. An attractive offer may still lack one of these contributions. Reassess the affected construction if a change in preparation, subject criterion, assistance, scale, timing or observed work changes the grounds for using it.
 
 ### HCD.28:10 - Architectural Rationale
 
-Individually adequate tasks, materials and help can fail at their connections: an explanation may be sound but unavailable when the learner needs it, or feedback may arrive after the opportunity to correct. Comparing a whole learning route exposes these failures. A product for a future audience must make its preparation assumptions and supply conditions explicit; a programme for a known person must additionally fit that person's actual starting evidence and work.
+A sound explanation may be unavailable at the point where the learner needs it. Useful feedback can arrive after their opportunity to act. Following the whole route reveals these failures. A design for a future audience requires stated assumptions about preparation and supply. For a known person, also use their evidence of starting performance and their later work.
 
-A supported individual route can supply the complete learning contribution. Add shared activity when the other participants provide something the target needs, and retain the required personal action. Keeping a common subject criterion across explanations, tasks and feedback prevents conflicting answers and makes a changed criterion's consequences traceable. Changes in subject content, its acquisition and service operation can then receive their own repairs while useful parts remain available.
+A supported individual route can provide the whole learning opportunity. Include shared activity where others supply a needed contribution and preserve the learner’s own work. Use the same applicable subject criterion for explanations, tasks and feedback so the learner is not given conflicting answers to the same question. When the criterion changes, inspect the uses that depend on it. A changed method, a teaching defect and an unavailable service may need different repairs.
 
 ### HCD.28:11 - SoTA-Echoing
 
-The adopted source distinction from the official [4C/ID overview](https://www.4cid.org/about/) concerns the contributions named in §4.3. It supports task-centred construction; it does not establish the efficacy of this module.
+The official [4C/ID overview](https://www.4cid.org/about/) distinguishes the four contributions used in §4.3. It informs the task-centred design. Evaluating the effect of this module requires evidence about this module.
 
-HCD.5–HCD.8, HCD.18 and HCD.19 supply the developed learning and material methods used here, with their own qualified sources. HCD.20 and HCD.22 supply bounded group-design constructions. The whole-product comparison, three-way gap diagnosis and linked diagnostic example are authored combinations of those contributions. Their prospective numerical assumptions require observation; they are not imported effect sizes.
+HCD.5–HCD.8, HCD.18 and HCD.19 explain the learning and material methods used here. HCD.20 and HCD.22 explain the group designs. This chapter combines them to compare whole products and locate subject, teaching or supply gaps. Its diagnostic example uses prospective planning allowances. For empirical claims about costs or learning, use observations appropriate to the claim.
 
 ### HCD.28:12 - Relations
 
 - **Consumes:** qualified work and subject-method accounts, audience assumptions, candidate product fragments, access and resource constraints.
 - **Uses:** HCD.5, HCD.6 and HCD.6.1 for development and tasks; HCD.7 and HCD.8 for support; HCD.20–HCD.27 for the selected group contributions and their actual conditions; HCD.18 and HCD.19 for material diagnosis.
 - **Supplies:** conditional product variants and requirements to HCD.2; tasks and support to HCD.9 and HCD.10; qualified observation needs to HCD.11–HCD.13.
-- **Returns:** implicit or missing subject methods to Core Method-development patterns and RMP; Guide/Slidement construction to Learning Product practice; service and provider questions to SYSE.2, SYSE.8 and their direct owners.
+- **Subject and service questions:** Core Method-development patterns and RMP can address an implicit or missing subject method. Use Learning Product practice for Guide or Slidement construction and SYSE.2, SYSE.8 or the responsible provider for the corresponding service question.
 - **Revises through:** HCD.14 for affected development assumptions and HCD.16 for the live method-claim question. A market, launch or operational decision retains its own evidence and authority.
 
 ### HCD.28:End

@@ -19,7 +19,7 @@ A governance label can conceal the operations on which a result depends. “Inde
 
 Borrowing the label can therefore preserve the appearance of a practice while losing its working conditions. An arrangement that addresses the relationship between managers and dispersed shareholders may leave a transaction between a controlling owner and the company insufficiently examined. A new portal may preserve the procedure while changing access and reliability. A revised preparation method may improve the questions discussed without yet demonstrating better commercial outcomes.
 
-Unless these changes are distinguished, the repertoire accumulates variants that differ only in presentation, and findings about one method are used to endorse another.
+Unless these changes are distinguished, the repertoire can list the same method twice under different presentations, and findings about one method are used to endorse another.
 
 ### CGOV.15:3 - Forces
 
@@ -39,7 +39,7 @@ A wider board performance review can be useful when the difficulty cannot yet be
 
 Recover enough of the existing method to identify its inputs, participants, operations, result and continuation conditions. Use an ordinary completed or pending matter to make these concrete. A school name or a procedure's title leaves that reconstruction unfinished.
 
-Use the applicable rights, powers and participation conditions already known through CGOV.1–CGOV.3, CGOV.6 and CGOV.12. Determine which of them constrain the proposed change. Also retain the information, capability and support needed to perform it. Reopen a missing corporate question through its owning method rather than supplying an assumed national default.
+Use the applicable rights, powers and participation conditions already known through CGOV.1–CGOV.3, CGOV.6 and CGOV.12. Determine which of them constrain the proposed change. Also retain the information, capability and support needed to perform it. When a right, power or participation condition remains unclear, use its corporate method to establish what applies.
 
 #### CGOV.15:4.2 - Identify what would change
 
@@ -52,7 +52,7 @@ Compare the proposed way with the existing operations.
 
 These possibilities can occur together. For instance, introducing an independent valuation can require a provider, a new preparation step and compliance with an existing conflict rule, while leaving decision power with the board.
 
-Use A.3.1.MV, Construct and Maintain a Method Variant, for distinguishing reusable semantic changes from changes to descriptions and support. Preserve a proposed method as proposed while its needed conditions or grounds remain unresolved. Improving its wording does not supply those grounds.
+Use A.3.1.MV, Construct and Maintain a Method Variant, for distinguishing reusable semantic changes from changes to descriptions and support. If the conditions or grounds for using the proposed method remain open, identify what is missing. Rewording the description alone cannot supply those conditions or grounds.
 
 #### CGOV.15:4.3 - Construct and compare the relevant alternatives
 
@@ -72,19 +72,19 @@ An inspection of past papers may establish that an assumption was unavailable to
 
 Obtain another inquiry or trial when its attainable answer can change the choice enough to justify the whole burden, or when an applicable duty requires it. C.11.DUA governs that decision. A method can be selected with acknowledged uncertainty; mandatory rights, participation or approval conditions still have to be satisfied for the acts performed.
 
-Return a practical disposition: retain the existing method, use an available alternative, introduce a bounded change, or obtain a particular missing contribution. State a stop or reconsideration condition where it changes use.
+Return a practical disposition: retain the existing method, use an available alternative, introduce a bounded change, or obtain the contribution that is missing. State a stop or reconsideration condition where it changes use.
 
 #### CGOV.15:4.5 - Introduce the selected method when that is the assignment
 
 Establish who can alter the preparation, review or other operations. Use sufficient existing authority directly. If the change also alters a governing instrument or protected arrangement, perform that change through CGOV.14 and any required decision through CGOV.11.
 
-Make the method obtainable through the necessary explanation, people and services. Carry it into the receiving matter when implementation is assigned. Observe whether the intended contribution was obtained and what relevant cost or difficulty arose.
+Provide the explanation, capable performers and services needed to use the method. Carry it into the receiving matter when implementation is assigned. Observe whether the intended contribution was obtained and what relevant cost or difficulty arose.
 
 A favourable result can support continued use within those conditions. If the change fails, locate whether the operation, its explanation, access, capability or corporate conditions failed. Repair that part or return to the alternative comparison. CGOV.17 is useful when transmission and continued performance across participants are the unresolved work.
 
 #### CGOV.15:4.6 - Preserve reusable differences and refresh them selectively
 
-When others need to select or adapt the method later, make its operations, conditions, derivation and relevant observations recoverable. A.3.1.MV supplies the general repertoire-maintenance method. Keep evidence attached to the method and situation it actually concerns.
+When others need to select or adapt the method later, make its operations, conditions, derivation and relevant observations recoverable. A.3.1.MV supplies the general repertoire-maintenance method. Keep evidence attached to the method and situation it concerns.
 
 Retain an earlier method when it still serves another matter or provides a useful fallback. Reconsider the affected choice when changed law, ownership, authority, available capability or observed consequences defeat its basis. G.11 supports currentness across such dependencies.
 
@@ -118,7 +118,7 @@ The resulting method remains available for that class of matter. The simpler per
 
 Published guidance can privilege listed companies, particular ownership structures or one jurisdiction. Recover those limits before borrowing a method. A recommendation by a prominent institution supports attention and comparison; it does not establish local legal force or a causal benefit.
 
-Internal reports may also favour the sponsor of the change. Compare the actual contribution and burden, including consequences for participants whose rights or information can be weakened by a convenient procedure.
+Internal reports may also favour the sponsor of the change. Compare what the change contributes and what it costs, including consequences for participants whose rights or information can be weakened by a convenient procedure.
 
 ### CGOV.15:7 - Conformance Checklist
 
@@ -133,7 +133,7 @@ Internal reports may also favour the sponsor of the change. Compare the actual c
 
 | Failure in the situation | Repair |
 | --- | --- |
-| A governance school is treated as a complete method. | Recover its actual operations, participants, conditions and result for the matter. |
+| A governance school is treated as a complete method. | Identify the operations, participants, conditions and result for the matter. |
 | A method for supervising managers is assumed to answer a controlling-owner conflict. | Recover the affected relationships and add the required conflict and protection contributions. |
 | New software is recorded as a new method although the operations are unchanged. | Maintain the changed support and its performance conditions. |
 | A successful rehearsal is reported as improved corporate performance. | State what the rehearsal showed and retain the untested consequence. |
@@ -141,15 +141,15 @@ Internal reports may also favour the sponsor of the change. Compare the actual c
 
 ### CGOV.15:9 - Consequences
 
-The practitioner can change how corporate work is performed while retaining applicable rights and powers. Later users receive reusable operations and their limits instead of an undifferentiated collection of “best practices”.
+The practitioner can change how corporate work is performed while retaining applicable rights and powers. Later users can select the operations that fit their matter and see the limits of their use.
 
-Comparison and maintenance cost time. An elaborate repertoire can become harder to use than a few well-explained alternatives. Keep the differences needed by actual selection, adaptation and renewal.
+Comparison and maintenance cost time. An elaborate repertoire can become harder to use than a few well-explained alternatives. Keep the differences that can change later selection, adaptation or renewal.
 
 ### CGOV.15:10 - Architectural Rationale
 
 A governing instrument establishes relations and powers; a method is a way for participants to obtain a contribution under those conditions. Changing either can affect the other without making them the same object.
 
-A.3.1.MV supplies the general distinction between method variants, descriptions and support, together with maintained reuse. Corporate adaptation also needs the relationships that make a particular operation adequate: who controls the company, whose interest is affected, who may participate, what information is required and which act has authority. Connecting those contributions prevents a locally attractive technique from silently replacing the corporate decision conditions.
+A.3.1.MV supplies the general distinction between method variants, descriptions and support, together with maintained reuse. Corporate adaptation also needs the relationships that make a particular operation adequate: who controls the company, whose interest is affected, who may participate, what information is required and which act has authority. Check that the proposed technique preserves the conditions for the corporate decision.
 
 Transmission is a further question. A selected, well-described method may still be unavailable in the next board's work; CGOV.17 addresses that difficulty.
 
@@ -163,7 +163,7 @@ The [FRC Corporate Governance Code Guidance, paragraphs 170–180](https://www.f
 
 A whole-board performance review and direct reuse of another company's established method are alternatives. At a fixed budget of board and secretariat time, a wider review buys breadth: it can examine interacting composition, relationship and information problems, but leaves less attention for developing one already located operation. When the failed contribution and corporate constraints are known, the bounded comparison in 4.3 concentrates that effort on alternative operations and preserves the adequate remainder. Its trade-off is narrower diagnosis. Direct reuse avoids redesign when the borrowed method's conditions already fit; adaptation earns its cost when a difference in control, participation or information changes what the method must obtain.
 
-The synthesis combines these applicability and diagnostic distinctions with C.32.MWA.PP's comparison of arrangements, A.3.1.MV's variant and reuse reasoning, and C.11.DUA's choice of further inquiry. The constructed cases explain the corporate combination; they do not measure its effects in companies. Refresh the comparison when the relied-on rules, ownership relationship, source contribution or observed method performance changes.
+The synthesis combines these applicability and diagnostic distinctions with C.32.MWA.PP's comparison of arrangements, A.3.1.MV's variant and reuse reasoning, and C.11.DUA's choice of further inquiry. Refresh the comparison when the relied-on rules, ownership relationship, source contribution or observed method performance changes.
 
 ### CGOV.15:12 - Relations
 

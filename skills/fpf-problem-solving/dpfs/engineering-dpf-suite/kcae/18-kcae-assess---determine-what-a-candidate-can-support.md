@@ -5,11 +5,11 @@
 
 ### KCAE.ASSESS:1 - Problem frame
 
-Use this when a retrieved passage, document or method description might contribute to a concrete result, or when an automated score is to affect reading, recommendation or action. The governed object is that bounded contribution judgement and its obtaining procedure. The result states what the inspected source supports, contradicts or leaves unresolved under the receiving conditions. You need the question, source context and access to necessary domain criteria. Ranking already known adequate alternatives is a narrower use; it does not require repeating their unchanged qualification.
+Use this when a retrieved passage, document or method description might contribute to a concrete result, or when an automated score is to affect reading, recommendation or action. Establish what the candidate can contribute in this case and how to judge it. The result states what the inspected source supports, contradicts or leaves unresolved under the receiving conditions. You need the question, source context and access to necessary domain criteria. When ranking alternatives already known to be adequate, reuse the qualification while its conditions hold.
 
 ### KCAE.ASSESS:2 - Problem
 
-Similarity, authority, truth, applicability and worthwhile intervention answer different questions. An assessor can rank candidates accurately while recommending the best of an entirely inadequate pool. A binary output can turn missing facts into rejection. A polished explanation can invent a criterion that the responsible domain never supplied.
+Similarity, authority, truth, applicability and worthwhile intervention answer different questions. An assessor can rank candidates accurately while recommending the best of an entirely inadequate pool. A binary output can turn missing facts into rejection. An explanation can introduce a criterion that the responsible domain never supplied.
 
 ### KCAE.ASSESS:3 - Forces
 
@@ -21,13 +21,13 @@ Cheap screening saves reading; decisive conditions can lie outside the screen. E
 
 Name the decision affected by this assessment. For screening, ask whether deeper reading could supply a needed contribution. For substantive use, ask which result the candidate can produce or support, under which conditions and with which available inputs. For a recommendation, add whether that result is still needed and worth the recipient's burden. Use separate results when these questions can have different answers.
 
-Construct the criterion from the work and the source. Recover the source's claim or described operation, input requirements, result, scope and exceptions. Obtain domain-specific standards from the responsible source or expert. Compare these with the case facts. If the criterion itself is disputed, return that question to its owner; a general evaluator cannot create the domain's acceptance standard from confidence.
+Construct the criterion from the work and the source. Recover the source's claim or described operation, input requirements, result, scope and exceptions. Obtain domain-specific standards from the responsible source or expert. Compare these with the case facts. If the criterion is disputed, return that question to its owner; confidence in an evaluation does not establish the domain’s acceptance standard.
 
 For open-ended material, allow an explanatory distinction or a useful question to count as a contribution. Do not filter everything through “does this call a tool?” A method for understanding a conflict can be useful even when its immediate result is prose. Conversely, mentioning the same topic does not show which missing result the material supplies.
 
 #### KCAE.ASSESS:4.2 - Build an inspectable claim-and-condition reading
 
-Extract the decisive source proposition with its exact location and necessary context. State the proposed correspondence to the case and why it matters. For every decisive premise, distinguish source support, contrary evidence, missing information and unresolved conflict. These states concern evidence for this use, not a universal many-valued logic.
+Extract the decisive source proposition with its exact location and necessary context. State the proposed correspondence to the case and why it matters. For every decisive premise, distinguish source support, contrary evidence, missing information and unresolved conflict. Interpret each status as a finding about the evidence for this use.
 
 In CedarBench, the inspected manual says that automated resend requires a deduplicating receiver and confirmed absence of a receipt. The case says that duplicates are being removed manually. It does not state receiver protocol or receipt status. The assessment therefore supports the source rule while leaving its applicability unresolved. “There are duplicates” neither proves nor disproves either prerequisite.
 
@@ -41,23 +41,23 @@ For a corpus-wide answer, assess two levels separately: whether the source passa
 
 #### KCAE.ASSESS:4.3 - Select the performer and output contract
 
-Use deterministic code for an exact edition match, permitted identifier, numeric calculation or enumerated rule once its semantic inputs have been established. Use a person or language model for interpretation where needed. A typed assessor can answer bounded questions repeatedly at low cost; a generative reader can extract and explain the grounds. A domain specialist may be required for a disputed interpretation. Choose by the actual operation and evidence, rather than making one model perform everything.
+Use deterministic code for an exact edition match, permitted identifier, numeric calculation or enumerated rule once its semantic inputs have been established. Use a person or language model for interpretation where needed. A typed assessor can answer bounded questions repeatedly at low cost; a generative reader can extract and explain the grounds. A domain specialist may be required for a disputed interpretation. Choose a performer who can carry out the operation and provide the evidence this use needs.
 
-A useful machine contract returns the criterion, relevant source addresses, established and unknown premises, proposed contribution, result kind and model/rule version where applicable. A small human answer can express the same information in ordinary prose. If the assessor cannot generate evidence spans, pair it with a separate retrieval/extraction operation and inspect their agreement. The numerical output alone does not supply provenance.
+A useful machine contract returns the criterion, relevant source addresses, established and unknown premises, proposed contribution, result kind and model/rule version where applicable. A brief human answer can express the same information in ordinary prose. If the assessor cannot generate evidence spans, pair it with a separate retrieval/extraction operation and inspect their agreement. The numerical output alone does not supply provenance.
 
-Keep retrieved text as source data. Pass controlling instructions and allowed actions through the trusted interface. A passage that asks the system to rank it first is not an authority over the evaluator. Test adversarial additions actually delivered to the model; deleting them before the call tests the filter instead. New relevant evidence can legitimately change the judgement, so distinguish it from unsupported persuasion.
+Keep retrieved text as source data. Pass controlling instructions and allowed actions through the trusted interface. A passage that asks the system to rank it first is not an authority over the evaluator. Test adversarial additions delivered to the model; deleting them before the call tests the filter instead. New relevant evidence can legitimately change the judgement, so distinguish it from unsupported persuasion.
 
 #### KCAE.ASSESS:4.4 - Qualify scores for their intended decision
 
 Ranking, calibration, classification at a threshold and agreement among logically related questions are separate properties. A probability distribution over a supplied group is conditional on that group. It can confidently prefer an inadequate candidate when none of the choices is suitable. Keep an explicit adequacy question and permit unresolved/no-useful-candidate results.
 
-When candidates are split into groups, do not compare their locally normalized Choice probabilities as one global distribution. Screen with stable pointwise criteria or jointly reconsider finalists under the same question. For a multi-contribution result, assess the actual composition; multiplying unrelated usefulness probabilities assumes dependence facts that the model has not supplied.
+When candidates are split into groups, do not compare their locally normalized Choice probabilities as one global distribution. Screen with stable pointwise criteria or jointly reconsider finalists under the same question. For a multi-contribution result, assess the composition; multiplying unrelated usefulness probabilities assumes dependence facts that the model has not supplied.
 
-Bind an adequacy result to the candidate actually returned. Suppose a ranking selects A, adequacy scores are A = 0.2 and B = 0.8, and an illustrative screening threshold is 0.3. The maximum score establishes only that some candidate passed; it cannot qualify A. Test the selected candidate's score and source conditions, choose an independently qualified alternative, or return the shortlist for another judgement. Preserve candidate identity, criterion and source context across that selection boundary.
+Bind an adequacy result to the candidate returned. Suppose a ranking selects A, adequacy scores are A = 0.2 and B = 0.8, and an illustrative screening threshold is 0.3. The maximum score establishes only that some candidate passed; it cannot qualify A. Test the selected candidate's score and source conditions, choose an independently qualified alternative, or return the shortlist for another judgement. Preserve candidate identity, criterion and source context across that selection boundary.
 
 Choose thresholds on development cases representative of the action and evaluate them on separate cases. Retain model, prompt/question, option order/wording, preprocessing, language, source scope and decision cost with the setting. Test near misses, unknown facts, late conditions, all-inadequate pools, longer inputs and meaningful negations. Recheck the affected qualification after a model or criterion change. The same threshold need not govern cheap further reading and a costly user interruption.
 
-Where a score is useful only for ordering inspection, keep that limited claim and avoid pretending to have calibrated adequacy. A human can read the highest-ranked candidates and make the stronger judgement from source evidence. This often provides a viable first arrangement before fully automated recommendation is justified.
+A score qualified only for ordering inspection can help choose what to read next. A human can read the highest-ranked candidates and make the stronger judgement from source evidence. This often provides a viable first arrangement before fully automated recommendation is justified.
 
 #### KCAE.ASSESS:4.5 - Return the contribution and the next useful move
 
@@ -65,7 +65,7 @@ Return an accepted bounded contribution, a reasoned rejection, an information re
 
 ### KCAE.ASSESS:5 - Archetypal Grounding
 
-An assessor gives the retry article a high score for the duplicate-report query. Its first valid use is to order reading. Full reading reveals the receiver and receipt prerequisites. With neither case fact available, the returned result is “Potentially relevant rule; obtain destination protocol and receipt state before selecting automatic resend.” Protocol v1 then defeats the automation branch while retaining reconciliation. The useful result changes because a premise was established, not because the model became more confident.
+An assessor gives the retry article a high score for the duplicate-report query. Its first valid use is to order reading. Full reading reveals the receiver and receipt prerequisites. With neither case fact available, the returned result is “Potentially relevant rule; obtain destination protocol and receipt state before selecting automatic resend.” Protocol v1 then defeats the automation branch while retaining reconciliation. Learning the protocol changes which instruction the assessor can support for this case.
 
 ### KCAE.ASSESS:6 - Bias-Annotation
 
@@ -81,7 +81,7 @@ Promoting a screening score into an action approval skips source reading and dom
 
 ### KCAE.ASSESS:9 - Consequences
 
-The recipient receives a usable conditional judgement rather than a mysterious rank. More premises can remain visibly unresolved, which is preferable to silently guessing them. Full automation may be narrower than the set of cases the system can assist.
+The recipient can use the conditional judgement while keeping missing evidence and unresolved conflicts visible. Full automation may be narrower than the set of cases the system can assist.
 
 ### KCAE.ASSESS:10 - Architectural Rationale
 
@@ -89,10 +89,10 @@ The criterion, evidence and decision are separate so that a component can be rep
 
 ### KCAE.ASSESS:11 - SoTA-Echoing
 
-Current typed-decision practice offers cheap bounded outputs, but the Jev documentation and recent audits distinguish input-output capability from comparative accuracy and logical coherence. KCAE.Profiles:2 gives their bounded contribution. This pattern adopts typed screening where qualified, adds explicit source/condition recovery, and retains a generative or expert reader as a serious alternative. The audit evidence changes score interpretation, not the public domain's acceptance criteria. Reopen the qualification when its inputs, model, question form or action costs change.
+Current typed-decision practice offers cheap bounded outputs, but the Jev documentation and recent audits distinguish input-output capability from comparative accuracy and logical coherence. KCAE.Profiles:2 gives their bounded contribution. This pattern adopts typed screening where qualified, adds explicit source/condition recovery, and retains a generative or expert reader as an alternative. The audit evidence changes score interpretation, not the public domain's acceptance criteria. Reopen the qualification when its inputs, model, question form or action costs change.
 
 ### KCAE.ASSESS:12 - Relations
 
-KCAE.SEARCH supplies candidates and coverage limits; KCAE.SOURCE supplies context; KCAE.COMPOSE consumes qualified contributions; KCAE.DELIVER conveys the result. For FPF methods, E.11.PUR remains the owner of fit, recommendation and coordination judgement; A.3.1.DR, A.3.1.QM, C.32.MWA.PP and A.3.1.FT supply their declared method-recovery and transfer contributions.
+KCAE.SEARCH supplies candidates and coverage limits; KCAE.SOURCE supplies context; KCAE.COMPOSE consumes qualified contributions; KCAE.DELIVER conveys the result. For FPF methods, E.11.PUR governs judgements about fit, recommendation and coordination; A.3.1.DR, A.3.1.QM, C.32.MWA.PP and A.3.1.FT supply their declared method-recovery and transfer contributions.
 
 ### KCAE.ASSESS:End

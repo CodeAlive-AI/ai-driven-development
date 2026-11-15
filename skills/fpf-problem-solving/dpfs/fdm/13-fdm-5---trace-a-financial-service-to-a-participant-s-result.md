@@ -7,93 +7,93 @@
 
 ### FDM.5:0 - Use this when
 
-Use this pattern when a score, report, advice, interface or transaction service is called a financial benefit without explaining the receiving use. Begin with the participant and the result the service is supposed to help them obtain.
+Use this pattern when the contribution of a score, report, advice, interface or transaction service to a participant’s financial result needs explanation. Start with the participant and the result at issue. The question may concern a service already delivered or a proposed use.
 
-The pattern governs an explanation of a financial service's contribution. It returns the relevant output, use, financial effect and participant result, with the support and uncertainty appropriate to the claim being made.
+Identify the service output, the work in which it is or would be used and the financial effect or participant result being claimed. Give the basis for each part the question requires and any material uncertainty.
 
-Use an adequate existing contribution account directly. A routine service need not be redesigned merely to describe its established result.
+Use an adequate existing account of the contribution directly. A routine service can be described from its established result.
 
 ### FDM.5:1 - Problem frame
 
 A scoring team can improve predictive accuracy while leaving lending decisions unchanged. An admission tool can produce accurate client information while a separate arrangement determines permission to use a service. A payment provider can complete its own processing while the recipient still lacks usable funds.
 
-Each output can be useful. Its contribution depends on a receiving participant, an actual or proposed use and the financial result that use can affect. The tool developer, decision maker, service provider and beneficiary need not be the same participant.
+Identify whose work uses the result and what financial contribution is actual or proposed. A supplier can properly finish its work by delivering information. The output supplier, decision maker, service provider and beneficiary may coincide or be different participants.
 
 ### FDM.5:2 - Problem
 
-Output quality is often used as evidence of an entire financial result. This hides an unused output, missing decision, failed provision or adverse consequence for another participant.
+A good output can remain unused, a decision can remain open, and a promised provision can fail. A consequence for one participant may also impose a loss on another. Examine the links needed for the claim being made.
 
-Expanding the service boundary to every eventual business outcome is also unhelpful. It can make a provider responsible for results it neither decides nor supplies. The working problem is to explain the relevant contribution and its limits at enough scope to support the current decision.
+Follow the connection far enough to explain the service’s contribution and its limits for the question at hand. Extending the boundary to every later business outcome can assign the provider responsibility for conditions outside its work or authority.
 
 ### FDM.5:3 - Forces
 
 A service needs a recognizable useful result. Different participants can want different results, and a throughput measure may not express their shared interest. A legitimate refusal can be preferable to another admission.
 
-Longer-term outcomes depend on more conditions than the service controls. A useful model can name those conditions without claiming either sole causation or complete ignorance about the service's contribution.
+A longer-term outcome may depend on conditions outside the service provider’s control. Establish the part the service contributed and identify conditions whose effect is still uncertain.
 
 ### FDM.5:4 - Solution
 
 #### FDM.5:4.1 - Name the participant and intended result
 
-Identify the participant whose result is at issue and what would improve for them: access to usable funds, a warranted lending decision, timely payment, a better understood exposure or another concrete gain. Establish the horizon and comparison the present question needs.
+Identify the participant and the result at issue. Examples include usable funds, a justified lending decision, timely payment or better understood exposure. Establish the time horizon. For an improvement claim, identify the comparison it requires.
 
-When several participants matter, retain their differing objectives and consequences. A lender's result and a borrower's result need not be identical. Use the responsible financial or management practice to settle a disputed objective or choice criterion.
+Where several participants matter, preserve their different objectives and consequences. The lender and borrower can seek different results. If a disputed objective or choice criterion affects the answer, use the governing financial or management basis or obtain a decision from its holder where needed. Report distinct supported views if the question asks for those.
 
 #### FDM.5:4.2 - Locate the output and its actual receiver
 
-Identify the service output and who uses it. Separate the method, its implementation, one performed use and the produced result where their differences affect the account. A score is one output of a scoring arrangement; it is not the arrangement itself.
+Identify the service output and its intended or actual use. Distinguish the scoring method, implemented calculator, calculation performed in the case and resulting score where the conclusion depends on the difference.
 
-Ask the receiving participant how the output enters their work. A human or an authorized automated arrangement can use it. Delivering data to an application does not establish that it influenced the relevant action.
+Trace how the output enters the receiving work. Use suitable records, observations or the receiver’s account. If the service applies its own result under an existing mandate, establish that action directly. For delivery, establish what reached the recipient. For a claim that the output influenced an action, establish the use and the link to that action.
 
-A supplier can properly deliver information to another actor. Give that supplier's contribution its actual scope instead of redefining every upstream tool as if it directly provided the final financial outcome.
+A supplier asked to provide information can complete its assignment by delivering a usable result to the intended recipient. To credit it with a further financial outcome, establish the connection through the relevant use and effect.
 
 #### FDM.5:4.3 - Follow the use through the financial effect
 
-Identify the decision or action the output can change and the financial relation or resource consequence that action can establish. Use FDM.1–4 where the position, terms or actual effect is unclear.
+Identify the decision or action the output supports and the financial position or resource that could change through its use. To explain a factual contribution, establish which part occurred. Use FDM.1–4 where a missing position, term or effect is material.
 
-For a proposed service, explain the mechanism and assumptions under which the contribution is expected. For an actual service, obtain evidence of the receiving use and effect at the scope claimed. These can have different truth status within the same explanation.
+For a proposed contribution, explain the mechanism and assumptions. For an actual contribution, establish the parts claimed, such as delivery, use or the resulting financial effect. A service already delivered can also have a prospective benefit whose conditions remain open.
 
-Follow the connection far enough to answer the participant's question. A loan can provide usable proceeds; an equipment purchase can fail to deliver a working asset; changed demand can defeat the expected return from that asset. The financial service can have supplied its promised result while a later business outcome fails.
+Follow the connection as far as the participant’s question requires. Funding can make proceeds usable. The equipment bought with them may never arrive, or changed demand may defeat the hoped-for business return. Report the established funding contribution in its own scope and qualify any later outcome separately.
 
 #### FDM.5:4.4 - Examine the contribution and its failure points
 
-Ask what would happen without this output or with the relevant alternative. Is the decision unchanged? Does another source already supply the same information? Can funding, authority, timing, delivery or subsequent use defeat the proposed gain?
+For a claim about what the service improved, compare the relevant alternative. Would the same decision follow without this output? Did another source already provide the information? Identify funding, authority, timing, delivery or use conditions that could prevent the proposed gain.
 
-Inspect the explanations that can change the present conclusion. A claim about improved financial outcomes may need a suitable comparison, uncertainty account and evidence of causes. An output-accuracy measure alone cannot supply them. Use the relevant evaluation or inquiry method when that further claim is required.
+Examine the alternatives that affect the conclusion. To attribute an improved financial outcome to the service, use a suitable comparison and evidence of the causal connection, with uncertainty qualified to the claim. Accuracy of the output establishes a narrower result. Use the evaluation or inquiry method needed for a stronger claim.
 
-Preserve justified narrower claims. The service may improve the available decision information while its outcome effect remains unmeasured. It may supply a usable financial result under conditions outside its control. Locate the unanswered question rather than collapsing all evidence into either “benefit proved” or “no value”.
+Preserve a supported narrower result. A service can improve the information available for a decision even if the effect on the outcome is unmeasured. It can also supply usable funds while a later necessary condition remains outside the provider’s control. State which contribution is established and where the remaining question begins.
 
 #### FDM.5:4.5 - Return a qualified contribution and next action
 
-Return an explanation that a receiver can use: the participant, service output, receiving use, relevant financial effect, intended result and material conditions. A simple connected paragraph can be enough.
+Explain the contribution in enough detail for its intended use. Identify the participant, output, receiving work and any financial effect, intended result or condition that the claim depends on. A connected paragraph may suffice.
 
-State the supported result and the next missing evidence or decision. A contribution model can be complete for its current use before the loan matures or a long-term causal study finishes. A wider promise requires the further evidence appropriate to that promise.
+Report the supported result. If a stronger conclusion still needs evidence or a decision, identify the missing contribution. An account may already answer the current question before a loan matures or a longer-term causal study finishes.
 
 ### FDM.5:5 - Archetypal Grounding
 
-A scoring team supplies a lender with a score about a proposed borrower. The score's meaning and validation conditions are given by its method. In the constructed loan, the lender considers advancing 100 with 105 contractually due on day 30.
+Suppose a scoring team gives a lender a score concerning a proposed borrower. The method gives the score’s meaning and validation conditions. The lender considers an advance of 100 under terms that would make 105 due on day 30.
 
-First locate the receiving decision arrangement. Suppose it uses an established rule under which both the earlier and new score lead to the same decision and terms. Improved score accuracy alone does not establish a changed financial outcome in this case. The team can still investigate another useful effect, such as a reduction in warranted information-gathering effort, without attributing an unobserved lending gain to the score.
+Suppose the lending rule produces the same decision and terms at the old and new scores. Better score accuracy leaves that route to the borrower’s financial outcome unchanged. A different benefit, such as a reduction in the effort required to obtain information, can be assessed by its own comparison.
 
-In another case, the adequately authorized arrangement uses the score to change a decision under its applicable method. FDM.4 establishes what the decision, formation and funding actually change. Successful funding makes the stipulated proceeds usable by the borrower and establishes the funded positions under the supplied terms.
+Suppose an authorized decision maker uses the score and reaches a different decision under its applicable rule. Use FDM.4 to establish the effects of any decision, agreement formation or funding that actually occurs. Under the supplied terms, successful funding makes proceeds usable by the borrower and establishes the funded positions.
 
-The borrower intends to acquire equipment. If the equipment is delivered and usable, that can supply the next intended condition. If delivery fails, the loan's financial effect and the failed equipment result remain distinguishable. The service account explains where the connection broke. Whether the financed work later earns the hoped-for return requires its own business evidence.
+The borrower wants to acquire equipment. Usable equipment delivered to the borrower can satisfy the next condition. If delivery fails, report that failure alongside the established financial effect of the loan. To establish a later return from the financed work, use business evidence of the result and the basis for attributing it.
 
-A treasury modeling service supplies another use. In FDM.3:5.2, changing the accrual rule changes whether provision of 2,676 is enough. The model gives treasury a qualified requirement that it can use to choose a funding or payment action. FDM.4 establishes the effect of the action actually taken. Locating the shortfall is a useful output even before an action is chosen, while a claim of avoided loss needs evidence that the action and comparison support it.
+In FDM.3:5.2 a treasury model shows whether 2,676 covers the amount due under each accrual rule. The shortfall under extended accrual is 1.41. The finding is useful before any action is chosen. If treasury uses it to arrange payment, use FDM.4 to establish what the actual action changed. A claim of avoided loss also needs a comparison supporting that difference.
 
-The same construction applies to a client-admission service. An information supplier provides facts; the applicable arrangement grants or refuses access; actual service provision follows under its conditions. More admitted clients is not by itself an adequate objective. Legitimate refusal, the client's intended use and the provider's obligations can make a different result preferable.
+For a client-admission service, follow the parts relevant to the claim. To establish information delivery, identify what reached the recipient. To report an access decision, determine whether the authorized arrangement granted or refused access. To establish provision, examine what service the client actually received. More admissions need not meet the client’s objective or the provider’s obligations. A justified refusal can be the appropriate result.
 
 ### FDM.5:6 - Bias-Annotation
 
-A developer may overvalue improvements visible in the tool's own metrics. A business sponsor may prefer the final benefit and omit the intervening assumptions. Recover both the actual output and the receiving use.
+Tool metrics may show a genuine improvement in the output. A sponsor interested in the eventual benefit also needs a basis for the receiving use and the link to that benefit. Identify the participant doing each part under the arrangement being examined.
 
 ### FDM.5:7 - Conformance Checklist
 
-For the contribution being claimed, examine whether:
+Check the following for the service contribution claimed.
 
 1. The relevant participant, intended result and horizon are identifiable.
 2. The service output and receiving use have adequate meanings and boundaries.
-3. The proposed or actual financial effect is connected through the applicable decision, action and terms.
+3. When a financial effect is claimed, the account connects it through the applicable decision, action and terms, with its actual or proposed status clear.
 4. Output quality, actual use, financial effect and later participant outcome retain their different evidence and uncertainty.
 5. Material alternatives and failure points have been examined where they can change the conclusion.
 6. The result states the supported contribution and any specific next evidence or decision needed.
@@ -108,27 +108,27 @@ For the contribution being claimed, examine whether:
 
 ### FDM.5:9 - Consequences
 
-The team can explain what its financial service contributes and can locate an unused output or failed connection. This can change the next investigation, service boundary or improvement effort.
+The result can explain an established service contribution, identify an unused output or locate a failed connection. When a change is called for, it also helps choose the scope of a further investigation or service improvement.
 
-The account may support a narrower benefit than a sponsor initially claimed. It can also reveal a useful contribution that a final-outcome-only measure concealed. A wider causal conclusion increases the evidence and comparison burden.
+A narrower benefit may be established even when a sponsor’s wider claim is unresolved. Looking only at the final business outcome can also conceal an earlier useful contribution. A stronger causal claim needs a comparison and evidence appropriate to its greater scope.
 
 ### FDM.5:10 - Architectural Rationale
 
-The participant's intended result provides the reason to follow the service connection. The output and actual receiving use keep that connection grounded. Together they permit a modest upstream contribution without making the whole business outcome the provider's direct product.
+The participant’s intended result determines which part of the service to examine. Identify the supplied output and the receiving work. This makes it possible to establish a provider’s own contribution even when a different party supplies the final business result.
 
-A technical output specification is sufficient for a settled supplier interface. It becomes inadequate when the disputed question is financial value. A complete business redesign is unnecessary when locating one missing use or effect answers that question.
+A technical specification can answer an interface question once the required meanings are settled. A question about financial value also needs a basis for the service’s financial contribution. If locating a missing use or effect answers the question, report that finding.
 
 ### FDM.5:11 - SoTA-Echoing
 
-The practice question is how to relate a financial tool or service to a participant's useful result. The method follows the actual receiver and effect of a service output. An automated arrangement can act on a score, and a warranted refusal can serve the participant's objective better than admission; the model therefore follows the particular decision and result.
+Trace the part of the service contribution at issue. Delivery of usable information can itself meet the request. For a claim about a decision or a further financial effect, establish the corresponding use and result. An authorized service can act on a score. A justified refusal can serve a participant better than admission, so a count of admissions alone cannot determine the benefit.
 
-This changes §§4.1–4.4: distinguish the supplier's output, the receiving decision and the participant's financial consequence, then examine the alternative that could defeat the claimed contribution. At the effort of one connected use account, it can expose an unused score that an accuracy report misses. A wider outcome study becomes useful when the stronger benefit claim could change a decision.
+In §§4.1–4.4, identify what the service proposes to supply and under what conditions, or establish what the supplier delivered in the case examined. For a claim about later use or a financial consequence, trace the relevant steps. An accuracy report can miss that the decision maker never used a score. To attribute a benefit to its use, compare the applicable alternative. Consider a wider outcome study when a stronger finding or decision needs it and the attainable benefit justifies the work.
 
-FDM.1–4, ADM and the relevant decision practice supply the distinctions used in this account. Reopen the contribution account when the receiver, decision arrangement, financial terms or intended result changes.
+Use FDM.1–4, ADM and the relevant decision practice for the financial, administrative and choice questions that arise. Reconsider the affected contribution claim if its receiver, decision arrangement, terms or intended result changes.
 
 ### FDM.5:12 - Relations
 
-FDM.1–4 supply the financial positions, boundaries, events and actual effects needed by this service question. [ADM.7 through ADM.10][ADM] supply evidence, permission, usable provision and fulfillment where those administrative questions arise.
+Use FDM.1–4 for missing financial positions, boundaries, contractual events or actual effects. Use [ADM.7 through ADM.10][ADM] when the claim depends on evidence, permission, usable provision or fulfillment.
 
 SIE supplies the general model connection. The relevant financial, operating or management practice supplies decision criteria and comparisons. When service design or provider choice is the unresolved task, use the relevant service-design or provider-selection method.
 

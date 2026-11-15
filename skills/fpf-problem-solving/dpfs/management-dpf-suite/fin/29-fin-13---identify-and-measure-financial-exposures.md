@@ -8,7 +8,7 @@
 
 A change in rates, exchange prices, commodity prices, payment behavior or funding access could affect the corporation. Trace the exposure to actual claims and operations, then measure the consequence relevant to the decision. A reported notional amount alone does not identify the risk.
 
-Use a sufficient existing exposure account when its outcome, entity, dates and conditions fit the decision. Rebuild the affected part when those grounds change. The explanations in Solution support constructing and adapting the account; the short steps suffice for a familiar application with adequate inputs.
+Use a sufficient existing exposure account when its outcome, entity, dates and conditions fit the decision. Rebuild the affected part when those grounds change. For a familiar exposure with adequate inputs, the six steps in §4 can suffice for a new calculation. The following subsections explain how to construct or adapt it.
 
 ### FIN.13:1 - Problem frame
 
@@ -28,7 +28,7 @@ Make material risks visible without measuring everything in one generic score. U
 2. Trace rate resets, currency receipts and payments, commodity-linked operating cash, customer and counterparty payments, collateral and funding commitments. Distinguish a contractual amount from expected collection and from settled cash.
 3. Group or offset exposures only where the decision permits it. Economic offset does not establish legal netting or intraday payment capacity; retain entity, currency and date differences that affect use.
 4. Apply suitable measures. For a fixed foreign-currency net receipt, multiply the amount by exchange-rate changes. For rate-sensitive cash, use the actual reset, notional and accrual conventions. For nonlinear instruments, revalue material scenarios rather than extrapolate one small-change sensitivity.
-5. Examine concentrations and combined adverse conditions. A customer delay can coincide with an exchange move, collateral call or loss of funding. If a statistical loss measure is used, state its outcome, horizon, probability model and limitations; it does not give a maximum possible loss.
+5. Examine concentrations and combined adverse conditions. A customer delay can coincide with an exchange move, collateral call or loss of funding. If a statistical loss measure is used, state its outcome, horizon, probability model and limitations; a percentile or expected loss need not equal the maximum possible loss.
 6. Return the exposures and scenarios that can change action, existing protection and residual uncertainty. Use FIN.14 to compare protection, FIN.2 to assess resulting cash needs, or FIN.15 for an execution exception.
 
 
@@ -51,7 +51,7 @@ Use an adequate supplied exposure account directly when its position, outcome, h
 
 Begin with the positions and operating plan that generate the outcome. [FDM.1 through FDM.3][FDM] recover who holds each claim or obligation, which entity can use a resource, and how actual terms turn events into changed amounts or duties. FIN.4 supplies the projected flows and balances. Retain the part of those accounts needed to explain the present consequence.
 
-For a foreign receipt, recover the currency of the amount actually owed, its amount or amount-setting rule, due date, plausible collection dates and evidence for expected collection. A sale described as “overseas” may be invoiced in home currency, yet still have operating exposure because customers, competitors or imported inputs respond to exchange rates. Conversely, a foreign-currency invoice gives a transaction exposure even if the seller has no foreign subsidiary. A consolidated translation amount is another possible reporting exposure; it is not automatically a remittable balance.
+For a foreign receipt, recover the currency of the obligation, its amount or the rule that sets it, due date, plausible collection dates and evidence for expected collection. A sale described as “overseas” may be invoiced in home currency, yet still have operating exposure because customers, competitors or imported inputs respond to exchange rates. Conversely, a foreign-currency invoice gives a transaction exposure even if the seller has no foreign subsidiary. A consolidated translation amount is another possible reporting exposure; it is not automatically a remittable balance.
 
 For interest, follow outstanding principal, reset dates, reference definitions, spread changes, floors, caps and accrual conventions. A shock after a coupon has already been fixed can affect later coupons without changing that first payment. For commodity-linked activity, follow physical quantities, the price reference, local basis or quality adjustment, contractual pass-through and the date on which the price becomes fixed. Include the operating response where price changes alter demand, sourcing or output. A price sensitivity holding quantity constant answers a narrower question than a forecast allowing those responses.
 
@@ -68,9 +68,9 @@ For a fixed net foreign receipt Q and exchange rate S measured as home units per
 
 When volume also changes, calculate the whole amount in each case: Q1 × S1 − Q0 × S0. One exact explanation of that difference is Q0 × (S1 − S0) + S0 × (Q1 − Q0) + (Q1 − Q0) × (S1 − S0). The last term is the interaction. Omitting it can matter for a large combined move. This decomposition explains the result; it does not establish which scenario or probability is credible. The operating forecast must supply the quantity response.
 
-For a simple floating payment with principal N, annual rate r and applicable year fraction a, interest is N × r × a. Apply a rate change only to the principal and periods it can actually reset. If the reference is averaged or compounded, if principal amortizes, or if a floor binds, use that payment rule rather than multiply all debt by one annual shock. Net interest sensitivity can be calculated with similarly exposed deposits, but the cash uses and access constraints of those deposits still matter.
+For a simple floating payment with principal N, annual rate r and applicable year fraction a, interest is N × r × a. Apply a rate change only to the outstanding principal and periods whose rate can reset. If the reference is averaged or compounded, if principal amortizes, or if a floor binds, use that payment rule rather than multiply all debt by one annual shock. Net interest sensitivity can be calculated with similarly exposed deposits, but the cash uses and access constraints of those deposits still matter.
 
-For market value, a sensitivity such as duration or an option's delta describes a local response under its stated model and units. Use the applicable valuation guidance in FIN.5, FIN.7 and FIN.8 when a new value is needed. A first-order estimate is useful for screening small changes; it can fail near an exercise threshold, over a large move or when several factors change together. Revalue the actual position in those cases. The market value of a guarantee is also different from the amount the guarantor may have to pay in a specified event.
+For market value, a sensitivity such as duration or an option's delta describes a local response under its stated model and units. Use the applicable valuation guidance in FIN.5, FIN.7 and FIN.8 when a new value is needed. A first-order estimate is useful for screening small changes; it can fail near an exercise threshold, over a large move or when several factors change together. Revalue the position under those scenarios. The market value of a guarantee is also different from the amount the guarantor may have to pay in a specified event.
 
 Make the direction and units legible before presenting a total. A one-percentage-point rate rise is 0.01 in the interest formula. A sensitivity quoted per basis point uses 0.0001. A home-currency value change and an amount of foreign currency to deliver cannot be added until the receiving measure and conversion basis make that addition meaningful.
 
@@ -89,7 +89,7 @@ Assess errors as well as the fitted coefficient. Examine the differences between
 
 A sector or comparable-business estimate can supply information that the corporation's own history lacks. Establish the match before transfer: outcome, horizon, factor definition, products, geography, pricing behavior, funding and existing protection. Build current business contributions in compatible units; value weights do not automatically aggregate cash sensitivities. A larger sector sample can still give a poor estimate for a particular corporation. Reconcile competing company and sector estimates through the differences that could change action rather than average them solely because both are available.
 
-When neither estimate supports the intended reliance, retain conditional operating scenarios with explicit response assumptions. Vary the uncertain input far enough to locate the decision-changing threshold, without labeling the range a confidence interval or attaching unsupported probabilities. Return the precise missing contribution—for example, next-quarter collection and volume response to a stated currency move under the current sales terms—and why it matters. If all supported alternatives lead to the same permitted action, further estimation may add little; if they lead to different actions, FIN.14 compares the attainable responses on those unresolved grounds. Known contractual contributions remain usable while that narrower uncertainty is investigated.
+When neither estimate supports the intended reliance, retain conditional operating scenarios with explicit response assumptions. Vary the uncertain input far enough to locate the decision-changing threshold, without labeling the range a confidence interval or attaching unsupported probabilities. Identify the missing contribution—for example, next-quarter collection and volume response to a stated currency move under the current sales terms—and why it matters. If all supported alternatives lead to the same permitted action, further estimation may add little; if they lead to different actions, FIN.14 compares the attainable responses on those unresolved grounds. Known contractual contributions remain usable while that narrower uncertainty is investigated.
 
 
 
@@ -100,7 +100,7 @@ Combine contributions on the same outcome and scenario before deciding how much 
 
 Keep gross legs when a supplier, bank or settlement system still requires them. Contractual net settlement can change the required payment, but only for the covered parties, currencies, dates and obligations under an effective arrangement. A favorable derivative value can offset a business loss economically while its payment arrives after the business needs money.
 
-Examine protection already in place before recommending more. Map each hedge to the exposure it is intended to change, including quantity and date. A single receipt cannot be assigned in full to both a supplier-payment offset and delivery under a forward. If two analyses use the same cash, reconcile the combined account. The unprotected position is obtained after applying actual available offsets, not by subtracting every contract labeled “hedge”.
+Examine protection already in place before recommending more. Map each hedge to the exposure it is intended to change, including quantity and date. A single receipt cannot be assigned in full to both a supplier-payment offset and delivery under a forward. If two analyses use the same cash, reconcile the combined account. To calculate the unprotected position, apply the offsets that are available for this outcome, entity and date.
 
 Keep counterparty exposure separate from the market sensitivity being hedged. The cost of replacing a favorable unsettled trade, the principal at risk after an irrevocable payment, and the cash needed when a promised receipt is late answer different questions. Their durations and possible losses need not equal the derivative's notional or current value. FIN.15 examines the actual settlement route; its conditions can therefore change this exposure account.
 
@@ -115,7 +115,7 @@ A scenario is a conditional account, not a forecast merely because it has precis
 
 If the use requires a loss distribution, name its baseline, horizon, units and model. Generate losses by applying each modeled factor state to the same positions, including the nonlinear and performance conditions that matter, and attach supported probabilities. A historical sample uses an explicit observation window; a parameter model or simulation needs its distribution, dependence and calibration grounds. More simulated observations reduce sampling noise within the model; they do not validate its missing events or its dependence assumptions.
 
-An expected loss averages those losses. A chosen percentile locates a tail boundary. A tail average describes losses within a specified tail. None is the maximum possible loss, the cash needed at every earlier date or a decision rule without an associated tolerance. Where probabilities are poorly supported, retain conditional scenarios and thresholds instead of assigning invented confidence. A richer statistical model is useful only when its additional grounds improve the receiving decision.
+An expected loss averages those losses. A chosen percentile locates a tail boundary. A tail average describes losses within a specified tail. These summaries need not equal a maximum loss. An earlier cash need depends on the payment schedule, and a decision rule also needs an applicable tolerance. Where probabilities are poorly supported, retain conditional scenarios and thresholds instead of assigning invented confidence. A richer statistical model is useful only when its additional grounds improve the receiving decision.
 
 Check whether the measure could miss a consequential failure outside its selected dimensions. Low market volatility can coexist with a single-customer default, inaccessible group cash or an untested settlement route. A market-value model generally needs a separate dated-cash return before it can support a funding conclusion. FIN.2 supplies that return without requiring the exposure model to become the corporation's entire cash forecast.
 
@@ -143,7 +143,7 @@ In a separate constructed export plan, all sales and costs settle at the end of 
 
 If quantity and the foreign price remain fixed while the exchange rate falls to 0.80, the contribution becomes 60. The transaction-price sensitivity is a loss of 20. That result follows from the foreign receipt of 200; it does not establish that demand and pricing will remain unchanged.
 
-Suppose the actual operating scenario instead supports a foreign price of 1.90, sales of 110 units and the same home cost per unit. At 0.80, receipts are 110 × 1.90 × 0.80 = 167.20, costs are 110 and the contribution is 57.20. The loss relative to the first plan is 22.80. FIN.4 carries the supplied operating changes into the account; FIN.13 identifies why the invoice-only sensitivity missed their combined effect. If collection is delayed, this end-period contribution must also be returned to FIN.2 on the changed dates.
+Suppose the operating scenario instead supports a foreign price of 1.90, sales of 110 units and the same home cost per unit. At 0.80, receipts are 110 × 1.90 × 0.80 = 167.20, costs are 110 and the contribution is 57.20. The loss relative to the first plan is 22.80. FIN.4 carries the supplied operating changes into the account; FIN.13 identifies why the invoice-only sensitivity missed their combined effect. If collection is delayed, this end-period contribution must also be returned to FIN.2 on the changed dates.
 
 
 
@@ -178,7 +178,7 @@ For a constructed one-period loss distribution, loss is 0 with probability 90%, 
 
 The largest loss within these three modeled cases is 40, and the 95th percentile does not remove its 2% probability. Averaging the worst 5% of this distribution gives (0.03 × 10 + 0.02 × 40) / 0.05 = 22. Because the distribution has discrete probabilities, that tail average includes part of the probability mass at 10; averaging only losses strictly greater than 10 would instead give 40 and answer a different question.
 
-These are three summaries of the same stipulated model. Its probabilities require evidence before actual reliance, and unmodeled outcomes can exceed 40. If a case also requires cash collateral before its final gain or loss is realized, neither the expected loss 1.60 nor the percentile 10 supplies the intervening funds. Return the actual payment sequence to FIN.2.
+These are three summaries of the same stipulated model. Its probabilities require evidence before relying on them for a business decision, and unmodeled outcomes can exceed 40. If a case also requires cash collateral before its final gain or loss is realized, neither the expected loss 1.60 nor the percentile 10 supplies the intervening funds. Return the payment sequence for the scenario to FIN.2.
 
 ### FIN.13:6 - Bias-Annotation
 
@@ -190,7 +190,7 @@ Is the measured outcome, entity, horizon and unit clear? Can the sensitivity be 
 
 ### FIN.13:8 - Common Anti-Patterns and How to Avoid Them
 
-Treating a notional as value at risk conflates amount and sensitivity; calculate the consequence. Netting across dates can remove an actual cash gap; retain the payment timeline. Calling a quantile a worst-case bound overstates its claim; keep the modeled tail limitation.
+Treating a notional as value at risk conflates amount and sensitivity; calculate the consequence. Netting across dates can conceal a cash gap; retain the payment timeline. Calling a quantile a worst-case bound overstates its claim; keep the modeled tail limitation.
 
 ### FIN.13:9 - Consequences
 
@@ -202,7 +202,7 @@ Exposure begins with what changes for the corporation. Separating sensitivity, c
 
 ### FIN.13:11 - SoTA-Echoing
 
-The [AFP treasury specification][AFP] includes market, credit, counterparty and liquidity risk within treasury practice. The [CFA contingent-claims reading][CFA-OPTIONS] explains the limits of local option sensitivities. FIN.13 combines those concerns with actual payment conditions rather than accepting notional or aggregate net exposure as a complete answer.
+The [AFP treasury specification][AFP] includes market, credit, counterparty and liquidity risk within treasury practice. The [CFA contingent-claims reading][CFA-OPTIONS] explains the limits of local option sensitivities. FIN.13 uses those distinctions to assess sensitivity and to trace the cash payments, timing and collection conditions that matter to the corporation.
 
 The public [CFA market-risk reading, 2026][CFA-MARKET-RISK] distinguishes sensitivity, scenario and distribution measures and their limits. FIN.13 adapts that distinction to corporate cash, operating and claim consequences rather than treating a portfolio loss measure as a complete corporate risk account. Its operating and reset cases show why factor, quantity and date rules matter; its discrete-tail case qualifies the reported statistic. The public introduction and summary are the source scope used here, not the restricted full reading.
 
@@ -210,6 +210,6 @@ Damodaran's historical [risk-profiling treatment][DAM-RISK] develops company-his
 
 ### FIN.13:12 - Relations
 
-FIN.2 assesses cash consequences, FIN.14 compares protection and FIN.15 handles actual performance. FIN.4 and [FDM][FDM] supply missing projections and position meanings. FIN.17 updates exposures whose grounds have changed.
+FIN.2 assesses cash consequences, FIN.14 compares protection and FIN.15 guides execution and the investigation of unsettled transactions. FIN.4 and [FDM][FDM] supply missing projections and position meanings. FIN.17 updates exposures whose grounds have changed.
 
 ### FIN.13:End

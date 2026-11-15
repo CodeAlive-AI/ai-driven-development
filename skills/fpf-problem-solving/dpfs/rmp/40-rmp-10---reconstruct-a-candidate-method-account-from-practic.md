@@ -4,95 +4,95 @@
 
 > **Type:** Method pattern
 >
-> **Primary working result:** a **claim-to-evidence dossier** with scoped candidate Method accounts, contradictions and rivals, results of any selected further checks, evidence limits, and the next receiving use—or a justified lowering when the evidence supports only Work description, a local workaround, tool behavior, or an unresolved grouping.
+> **Primary working result:** a **claim-to-evidence dossier** that connects each proposed account of a reusable practice to the evidence for it. Include significant contradictions, rival explanations, limits and the results of any further checks performed. Sometimes the evidence establishes only an occurrence, a local workaround or tool behavior, or leaves the grouping unresolved.
 
 ### RMP.10:0 - Use This When
 
-Use this pattern only after `A.3.1.MR` has recovered an ordinary candidate account or honest lower result and a named receiving decision still cannot be made without a larger evidence programme. Typical triggers are heterogeneous settings, disputed variants, tacit cues or judgments, incomplete records, consequential use, or a need for a stronger held-out application.
+Use this method when ordinary recovery through `A.3.1.MR`, or a usable result of that work, leaves a material reconstruction question and answering it warrants a larger evidence programme. You may need to distinguish settings, disputed variants, tacit cues or judgements, gaps in the records, or the reach of an account under changed conditions. A question about past practice can warrant the work in its own right.
 
-Begin with the receiving decision and the few candidate-account claims whose uncertainty changes it. Select evidence forms for those claims rather than collecting every available trace or interview.
+Identify what the recipient needs to know about a possible reusable practice. Select the claims whose content, scope or support matters to that use and the forms of evidence that can distinguish the plausible answers.
 
-The first useful result is a claim-to-evidence matrix and sampling decision. It states what would support, contradict, split, or lower each claim and why the selected evidence form can distinguish those outcomes. This makes the specialist burden visible before the study grows.
+A first result connects each claim to the observations that could support it, contradict it, distinguish variants or justify a narrower statement. Use this claim-to-evidence matrix to select cases or sources and to estimate the specialist work still needed.
 
-Use the larger evidence programme only when ordinary candidate recovery is insufficient for the named decision. No observation, interview, log, or synthesis backdates a Method into past Work, promotes a log into a MethodDescription, or admits a Method without `A.3.1`.
+Use an existing account or a description of the observed work directly when it answers the question. When making a stronger reconstruction, distinguish what occurred from the later hypothesis about a reusable Method. Use an instruction as evidence of what it prescribed and event records according to what they recorded. `A.3.1` governs identification of a Method.
 
 #### RMP.10:0.1 - Working Distinctions
 
 | Evidence or result | Contribution retained here | Boundary |
 | --- | --- | --- |
-| occurrence observation and artifacts | overt actions, results, versions, coordination, and traces for one Work occurrence | observed recurrence does not identify a Method by itself |
-| Critical Decision Method (CDM) probe | recalled critical-incident cues, options, judgments, and counterfactual reflections | recall and interviewer effects remain visible; CDM supplies no event-log claim |
-| event-log analysis | recorded recurrence, sequence, deviation, and conformance relative to declared log semantics | tool traces describe recorded events, not intent, tacit contribution, or a MethodDescription |
-| contextual observation or protocol elicitation | coordination, workarounds, or otherwise inaccessible reasoning when their particular risk is named | these moves are selected separately; CDM and process-mining sources do not support them by proxy |
-| expert synthesis | claim-to-evidence matrix, decision-relevant sampling, contradiction-by-scope rule, choice of further checks, and stopping rule | disclose the synthesis rather than attributing it to the specialist sources |
+| occurrence observations and artifacts | Overt actions, results, versions, coordination and traces for a particular Work occurrence. | Recurrence supports a claim about observed behavior. Identifying a Method requires the applicable identification grounds. |
+| Critical Decision Method (CDM) probe | A participant’s recalled cues, options, judgements and counterfactual reflections on a critical incident. | Account for recall and interviewer effects. Establish logged events from their records. |
+| event-log analysis | Recorded recurrence, sequence, deviation and conformance under the declared meanings of the log fields. | To infer intent or tacit contribution, establish what evidence bears on it. A recording of events and an instruction can serve different claims. |
+| contextual observation or protocol elicitation | Evidence of coordination, workarounds or reasoning that the other selected sources leave open. | Choose and qualify each operation for its own purpose and risks. Cite the source that supports it. |
+| expert synthesis | The matrix, sampling for relevant variation, comparison of apparent contradictions by scope, and choice of checks and stopping conditions. | Attribute these choices to the practitioners combining the evidence. |
 | candidate Method account | a scoped episteme about a possible reusable way of doing | Method identification remains with `A.3.1` |
 
 ### RMP.10:1 - Problem Frame
 
-Ordinary records show only part of practice. Logs favor tool-visible events, procedures favor intended behavior, interviews favor memorable episodes, and successful outcomes can hide competent minority variants or recovery Work. A stronger reconstruction needs evidence for its unresolved claims and an explicit account of what each contribution supports.
+Logs capture events visible to the instrument. Instructions describe intended action. Interviews can favour memorable episodes. Records of success can overlook recovery work or practices used by a minority. For an unresolved claim, identify which information is missing and which source could provide it.
 
-More evidence is not automatically better. The programme earns its cost only when its combined result changes candidate-account content, scope, rivals, or the receiving decision beyond what `A.3.1.MR` already returned.
+Compare the contribution a specialist inquiry could make to the content, scope or grounds of the candidate account with the work it would require. If ordinary recovery answers the receiving question, use its result.
 
 ### RMP.10:2 - Problem
 
-A trace-only reconstruction turns log regularity into a Method. An interview-only reconstruction turns confident recall into recurrence. A majority-vote synthesis erases variants and failure cases. An expanding study collects material without a stopping decision.
+A recurring log entry can be mistaken for a reusable Method and a vivid recollection for a common practice. Counting accounts can conceal a variant used in a few settings or an important failure. Identify what evidence would distinguish the alternatives and when enough has been established.
 
-The resulting account looks rich yet cannot say which claim each item supports, what would contradict it, or which remaining uncertainty matters to its use.
+For each consequential claim, identify its supporting evidence, what could count against it and which uncertainties affect the intended use.
 
 ### RMP.10:3 - Forces
 
 | Force | Tension |
 | --- | --- |
 | Tacit contribution | Important cues and judgments may be absent from records, while elicitation can distort them. |
-| Heterogeneity | Several performers and settings improve discrimination, while indiscriminate sampling raises cost. |
+| Heterogeneity | Differences among performers and settings can distinguish variants. Sampling further examples of the same conditions may add little relative to its cost. |
 | Contradiction | Variants may be real, while some disagreement is error or incomplete evidence. |
-| Tool visibility | Event logs are precise about recorded fields, while invisible coordination and intent remain outside them. |
-| Further discrimination | An unseen case can test prediction or transfer, while an unavailable or decision-irrelevant case adds no useful assurance. Retrofitting after inspection loses the intended discrimination. |
-| Specialist burden | Consequential decisions may justify a programme, while ordinary recovery needs an affordable stop. |
+| Tool visibility | An event log can identify the events and fields it captured. Coordination or intent may require evidence beyond those fields. |
+| Further discrimination | A case withheld from account development can test a prediction under new conditions. Record the predictions before examining the case and weigh the expected contribution against the cost of obtaining it. |
+| Specialist burden | A consequential reconstruction may justify sampling and analysis across several sources. Ordinary recovery can be sufficient for a narrower use. |
 
 ### RMP.10:4 - Solution
 
-RMP.2 supplies a selected evidence strategy or a justified stop when that design question remains open; a compatible supplied selection is enough. RMP.3 makes its consequential operational choices executable, and RMP.4 preserves the actual observation, elicitation and log trace with its access limits. The reconstruction below makes the specific claim-to-evidence connection: which uncertainty about a reusable way needs which evidence, how setting-specific variants survive contradiction, and what bounded account the combined material supports. Reuse an adequate design or trace; the programme needs the missing discrimination, not another copy of those results.
+If the evidence strategy remains open, RMP.2 helps choose a design or a justified stop. Use an adequate supplied design or trace directly. RMP.3 addresses operational choices and RMP.4 the actual observations, elicitation records and logs with their access conditions. Here connect each uncertainty about a reusable practice to evidence capable of resolving it. Keep a variant tied to its setting when the evidence supports the difference, and report the account the combined material warrants.
 
-Organize evidence around decision-changing claims, keep evidence forms distinct, resolve contradiction by scope, and select further checks only where their attainable result warrants the burden. Return scoped accounts or a lower result when the receiving decision has an adequate basis.
+Arrange the evidence by the claims that matter to the receiving question. Identify each source’s contribution, examine disagreements in their settings, and select a further check when the result it can provide warrants the effort. Return the scoped accounts or the narrower conclusion that the material supports.
 
 #### RMP.10:4.1 - Pattern-Use Unfolding
 
-1. **Name the receiving decision and unresolved claims.** Include only intended result, entry conditions, reusable operations or invariants, cues and decisions, participants and capabilities, information and artifacts, support, variation, recovery, and stop claims that can change the decision.
-2. **Build the claim-to-evidence matrix.** For each claim, state what observation could support, contradict, split, or lower it and why the evidence form can distinguish those outcomes for that claim.
-3. **Sample for decision-relevant variation.** Select cases that differ in success or failure, routine or exceptional conditions, performer, setting, and tool or provider. Add a disconfirming case when the emerging account explains only the convenient sample. Use no universal participant count.
-4. **Keep evidence forms distinct.** Use occurrence observation/artifacts for overt actions and results; CDM for recalled critical-incident cognition; event-log analysis for recorded recurrence and deviation. Select contextual or protocol evidence only for a named gap and risk.
-5. **Keep occurrence and candidate layers separate.** Record each Work occurrence before abstracting an account. Preserve missing fields, observer effects, recall limits, tool coverage, and source access.
-6. **Resolve contradiction by scope, not vote.** Compare performer, setting, outcome, and evidence form. Correct a supported error; otherwise split variants, narrow applicability, retain rivals, or lower the claim.
-7. **Choose whether a further check is needed.** Identify the unresolved claim and the possible answers that would change the receiving use. Compare the attainable discrimination with evidence access, practitioner capacity, delay, and the whole acquisition burden. Select a held-out case when prediction or transfer to that case matters and can be examined usefully. State each serious account's predictions about cues, decisions, variation, and result before inspecting it; record surprise and revision. Another claim may instead need a source comparison, a targeted elicitation, or no additional check because the existing evidence already supports the bounded decision. An unavailable check leaves its claim uncertain; it does not oblige an unproductive study or license a stronger claim.
-8. **Stop or lower.** Stop when the scoped accounts and explicit uncertainty dispositions support the receiving decision. Rivals may remain unresolved when distinguishing them would not change that decision. Narrow the use or defer it if a load-bearing uncertainty remains. Return no candidate account when the evidence supports only a Work description, local workaround, tool behavior, or unresolved grouping.
+1. **Identify the use and the unresolved claims.** What matters about the intended result, entry conditions, reusable operations or invariants, cues and judgements, participants, capabilities, information, artifacts, support, variation, recovery or stopping conditions? Include the aspects needed for the question.
+2. **Connect each claim to evidence.** State which observations could support or contradict the claim, distinguish variants or justify a narrower conclusion. Explain how the proposed evidence could discriminate among those outcomes.
+3. **Sample for relevant variation.** Select cases that could discriminate among accounts. Relevant differences may include success or failure, routine or exceptional work, performer, setting, tool or provider. Look for cases that could challenge an account developed on a convenient sample. If access prevents that comparison, limit conclusions accordingly.
+4. **Use each form of evidence for its claim.** Observations and artifacts can establish overt actions and results, CDM can recover recalled critical-incident judgements, and event-log analysis can establish recorded recurrence and deviation. Use contextual observation or protocol elicitation for a specified gap, allowing for the risks of that method.
+5. **Trace claims to occurrences.** Identify the occurrence behind each consequential observation, using existing records where adequate. Preserve important missing fields, observer effects, limits of recall, tool coverage and source access. Then determine what can be generalized across occurrences.
+6. **Examine contradictions in context.** Compare performer, setting, outcome and evidence form. Correct an established error. Ask whether the same reusable rule permits both observed performances, for example through a parameter or conditional branch. If the evidence supports one shared rule, retain it and state which conditions explain the difference. If a shared rule and independently adopted instructions both fit what was observed, retain both reconstructions until evidence distinguishes them. Propose separate variants when the evidence supports a difference in the reusable operation, and specify where each applies. When the explanation remains open, retain rival reconstructions, narrow the claim or describe the observed events.
+7. **Decide whether to obtain more evidence.** Identify what remains unresolved and which attainable result could matter. Include access, practitioner capacity, delay and the whole cost of acquisition. If a check of prediction or transfer justifies a held-out case, state each serious rival’s predictions about cues, decisions, variation and result before inspecting it. To interpret a completed check, compare the observations with predictions documented before the case was seen. For another claim, a source comparison or targeted elicitation may be more informative. Use sufficient existing evidence or state the limit if the needed check is out of reach.
+8. **Finish at the supported scope.** Return the accounts and the uncertainties that bear on their use. Rivals can remain when choosing between them would add nothing material to the question. If an important uncertainty remains, state the resulting limit and, where a use is proposed, whether it needs narrowing or deferral. The supported result may be a Work description, a local workaround, tool behavior, or an unresolved grouping of events.
 
 #### RMP.10:4.2 - Record the Result
 
 | Result position | Required content |
 | --- | --- |
-| receiving boundary | Decision, situation, consequence, candidate accounts, and unresolved claims. |
-| claim-to-evidence matrix | Claim, discriminating observation, selected evidence form, support/contradiction/split/lowering rule, and stopping use. |
-| sample and occurrences | Decision-relevant variation, each Work occurrence, source access, missing fields, and evidence-form limits. |
-| synthesis | Scoped accounts, retained variants/rivals, contradiction disposition, and attribution of each synthesis move. |
-| selected further checks, when needed | Claim and use at issue, why the attainable answer warrants the burden, actual result and remaining uncertainty. For a held-out check, also preserve predictions made before inspection, surprise and revision. When existing evidence suffices, state that basis in the return; no empty held-out record is needed. |
-| return | Account(s) or lower result, evidence limits, next receiving use, and reopen condition. |
+| receiving question | The situation and intended use, the candidate accounts and what remains unresolved. For a decision, include its consequences. |
+| claim-to-evidence matrix | For each material claim, identify what observations could support, contradict or narrow it, distinguish variants, and show when the evidence will answer the question. |
+| sample and occurrences | Relevant variation, the occurrences examined, source access, missing fields and limits of the evidence. |
+| synthesis | Report the accounts and their scope, the variants or rivals retained, how the evidence explains any disagreements and what remains unresolved. Attribute the steps that combined the sources. |
+| further checks, when relevant | The open claim, the contribution a check could make and its cost. For a completed check, give the result and remaining uncertainty. For a held-out case, distinguish predictions made before inspection from what was observed and revised. |
+| return | The scoped accounts or narrower result, its evidence and limits, and the conditions for reconsidering it where relevant to use. |
 
 #### RMP.10:4.3 - What Changes in Practice
 
-Teams stop equating a discovered sequence or interview narrative with the Method. They spend specialist effort only where a receiving decision needs it, know which evidence form supports which claim, and can retain two scoped variants instead of averaging them into a misleading universal account.
+Teams can distinguish what a sequence records from a candidate explanation of the practice, and what an interviewee recalls from what recurred. A comparison across settings can yield two supported variants. The receiving practitioner can use that result without having to infer a universal rule.
 
 ### RMP.10:5 - Archetypal Grounding
 
 #### RMP.10:5.1 - Ordinary `A.3.1.MR` Stop
 
-A maintenance team has six source-traceable calibration Work records using the same released instruction, input schema, equipment configuration, decision authority, and result meaning. One failed record contains an explicit missing-input stop already described by the candidate account. The receiving decision needs only a source-traceable account for comparing two instructions; no tacit cue, disputed variant, consequential transfer, or held-out prediction changes that decision.
+Suppose a maintenance team has six calibration Work records linked to their sources. They use the same released instruction, input schema, equipment configuration, decision authority and meaning of the result. One failed record shows the missing-input stop described by the candidate account. The team needs a source-traceable account to compare two instructions. No unresolved cue, variant or question about transfer bears on that comparison.
 
-`A.3.1.MR` returns the source-traceable candidate account, any real rival and the important gaps, with its provisional status and comparison-use limits. No distinguishing question or available follow-up is needed for this instruction comparison. RMP.10 is not entered; interviews and process mining would add cost without changing the result.
+`A.3.1.MR` returns the provisional candidate account for this use, its sources, any substantive rivals and significant limits. That result suffices for the instruction comparison. Interviews, process mining or a held-out prediction would add effort without resolving a relevant uncertainty here.
 
 #### RMP.10:5.2 - Genuine Escalation: EC-417 Evidence Reconciliation
 
-The EC-417 decision cannot determine whether internal and supplier-originated evidence reconciliation are one account or scoped variants from ordinary records alone. Here the consequential evidence-closure question, available case access and practitioner capacity justify the larger programme and its whole burden. This constructed reconstruction uses a twelve-case development sample plus one held-out case; that count is not an entry rule for other recoveries:
+In this constructed case, ordinary records leave open whether internal and supplier-originated evidence reconciliation follow the same rule or require different branches. The distinction matters to evidence closure on EC-417. Case access and practitioner capacity make a larger inquiry worthwhile. The team uses twelve cases to develop accounts and reserves a thirteenth to discriminate among them.
 
 - four firmware-only and four internal harness-plus-firmware releases accepted versioned provisional pinout evidence before safety closure;
 - four supplier-originated releases required signed evidence at closure;
@@ -102,10 +102,10 @@ The EC-417 decision cannot determine whether internal and supplier-originated ev
 
 | Evidence move | Scenario contribution | Limit retained |
 | --- | --- | --- |
-| observation and artifacts | overt evidence versions, board records, integration bundles, approval states, and closure results | no population estimate or tacit-cue claim |
+| observation and artifacts | Observed evidence versions, board records, integration bundles, approval states and closure results. | These establish what was visible in the cases examined. Population rates and unrecorded judgements require other grounds. |
 | CDM probes | cues, considered options, judgments about provisional versus signed evidence, and counterfactual reflections in critical incidents | retrospective recall and interviewer effects remain |
-| event-log analysis | recorded recurrence and deviations in evidence-version, integration, approval, and closure events | log fields do not establish intent or a reusable Method |
-| disclosed expert synthesis | twelve-plus-one sample, internal/supplier scope split, contradiction rule, held-out discriminator, and stop | not attributed to CDM or process-mining sources |
+| event-log analysis | Recorded recurrence and deviations in evidence-version, integration, approval and closure events. | Interpret the fields by their event semantics. Inferring intent or a reusable rule needs appropriate evidence. |
+| expert synthesis | Choice of twelve development cases and one held-out case, an internal/supplier split, the contradiction rule, the test of rivals and the stopping judgement. | These are the reconstruction team’s choices in this example. |
 
 Before inspecting the thirteenth case, the team recorded three rival predictions:
 
@@ -113,84 +113,84 @@ Before inspecting the thirteenth case, the team recorded three rival predictions
 | --- | --- | --- |
 | `C-Evidence-Reconcile-Internal` applied beyond its observed scope | internally controlled versioned evidence would be the decisive cue; the internal reconciliation role could decide the branch without a distinct supplier approval | supplier origin would not change the branch; closure could proceed from the internal reconciliation result without signed supplier approval |
 | `C-Evidence-Reconcile-Supplier` | supplier-owned configuration and restricted geometry would be decisive; supplier responsibility and signed approval would remain required for closure | reversible early integration could occur, but a signed-delta comparison and affected verification would precede either closure or an explicit missing-approval stop |
-| `R-Rig-Capacity-Only` | rig unavailability, rather than evidence origin, would trigger the hold and next-slot decision | the same branch would occur for internal and supplier changes and would clear when rig access returned |
+| `R-Rig-Capacity-Only` | Lack of rig capacity would trigger the hold and the decision to wait for the next slot. | The same branch would apply to internal and supplier changes, and the hold would clear when rig access returned. |
 
-The held-out case then showed **cues** of supplier-owned geometry, restricted provider access, and available rig capacity; the **decision** allowed reversible early integration but withheld closure pending signed supplier approval; the **variation** required a signed-delta comparison and one affected verification; and the **result** was truthful closure after signed approval arrived. No load-bearing observation surprised the supplier-scoped account. The available rig contradicted the capacity-only rival for this case, and the retained supplier-approval requirement contradicted the internal-account extrapolation.
+In the held-out case the team found supplier-owned geometry, restricted provider access and available rig capacity. The team allowed reversible early integration and withheld closure pending signed supplier approval. It required a signed-delta comparison and one affected verification, then closed after approval arrived. Those observations fit the supplier-scoped predictions. The hold despite available rig capacity contradicts the capacity-only rival for this case. The requirement for supplier approval contradicts extrapolating the internal account to this case.
 
-The resulting disposition is to keep `C-Evidence-Reconcile-Internal` for the eight internal cases, keep and narrow `C-Evidence-Reconcile-Supplier` to supplier-owned configuration with the signed-evidence branch, and retain rig availability as a support condition rather than the account that explains this split. The scope split is not decided by majority count. One held-out supplier case leaves transfer to other suppliers, other configuration classes, and missing-approval situations uncertain; neither account is admitted as a Method, and no effectiveness or population claim is made.
+Retain `C-Evidence-Reconcile-Internal` for the eight internal cases and `C-Evidence-Reconcile-Supplier` for the supplier-owned configuration with the signed-evidence branch. Rig availability remains a support condition. Evidence about the approval requirement distinguishes the accounts even though internal cases were more numerous. The one held-out supplier case leaves transfer to other suppliers, other configuration classes and cases of missing approval uncertain. The result is a pair of candidate accounts. Identification of a Method, effectiveness and population frequency would each need further grounds.
 
 #### RMP.10:5.3 - A Specialist Programme Can Finish without a New Case
 
-A retired repair service used two routing practices. Ordinary `A.3.1.MR` recovery from its mixed logs and instruction editions cannot tell whether an urgent route was a repeatable cue-based branch or an occasional supervisor override. The receiving museum archive needs a qualified comparison of the two candidate accounts for this service's final year. It is not deciding to reopen the service or transfer either account to current work.
+A retired repair service used two routing practices. Ordinary `A.3.1.MR` recovery from mixed logs and instruction editions leaves two possibilities for an urgent route, a repeatable cue-based branch and a supervisor override. A museum archive wants a qualified comparison of these accounts for the final year of the service.
 
-The larger programme is justified here because resolving the cue missing from the logs can change the archive's comparison enough to warrant the available source work. Its claim matrix selects the dated routing sheets and targeted critical-incident interviews with the two available former dispatchers. The sheets record whether replacement stock was present; the logs record only the chosen route. Linking them to the same occurrences shows that the disputed route accompanied absent stock in the accessible cases. Each dispatcher recalls using the stock cue and describes one exception requiring supervisor involvement. Their recalled reasons remain elicited accounts; the routing sheets support recorded stock and routing, not unrecorded intentions or universal recurrence.
+Distinguishing the missing cue would change the archive’s comparison enough to justify the source work. The team selects dated routing sheets and critical-incident interviews with two available former dispatchers. The sheets record whether replacement stock was present. The logs record the chosen route. Linking both to the same occurrences shows that the disputed route accompanied absent stock in the accessible cases. Both dispatchers recall using the stock cue, and each describes an exception that required a supervisor. The sheets and logs support the recorded association. Attribute the recalled reasons and exceptions to the interviewees, within the limits of recall.
 
-The evidence supports a stock-conditioned candidate branch with a separately retained supervisor exception. The archive can now compare that account with the earlier instruction and state the unresolved gaps. A new live repair cannot be observed because the service has closed. Simulating one would test present performance under new conditions, which the archive's comparison does not need. The programme therefore returns the bounded account, source links, recall limits and unresolved coverage outside the accessible records. It makes no claim about transfer or effectiveness, and it does not identify a Method through these observations.
+The archive can compare a stock-conditioned candidate branch and a reported supervisor exception with the earlier instruction. Return the source links, limits of recall and gaps outside the accessible cases. The service has closed. A new simulation would examine present performance under changed conditions. It could not supply an observation of the disputed historical occurrences.
 
-The programme entered RMP.10 and completed useful specialist work. Its stop rests on the adequacy of that work for the receiving comparison. If a later operator wants to reuse the reconstructed branch, that changed use reopens the evidence and check choice; the archive's descriptive result cannot settle it.
+The reconstruction answers the archive’s question at the supported scope. If a later operator proposes reusing the branch, examine its fit for the new conditions and what the earlier evidence can support there.
 
 ### RMP.10:6 - Bias-Annotation
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
-| trace bias | Recorded sequence becomes the Method or its complete description. | State log semantics and combine only with evidence needed for the claims. |
-| interview bias | Memorable explanations become recurrence or causal evidence. | Keep CDM claims to cues, options, judgments, and reflections with recall limits. |
+| trace bias | A recorded sequence is treated as a complete description of the Method. | Establish what the log recorded and identify any further grounds the claim requires. |
+| interview bias | A memorable explanation is treated as sufficient proof of a general practice or its cause. | Establish which incidents the interviewee reports and what their account can support given its scope and the limitations of recall. For a stronger recurrence or causal claim, identify any further evidence it needs. |
 | majority bias | The largest variant erases a competent minority or setting-specific branch. | Resolve contradictions by performer, setting, outcome, and evidence form. |
-| method-brand bias | Using a named evidence Method lends authority to the whole synthesis. | Attribute each sourced move and disclose the project synthesis separately. |
-| programme bias | More cases are collected because the study is open. | Tie sampling and stop to the receiving decision and load-bearing claims. |
+| method-brand bias | The name of one evidence method is taken as authority for the whole synthesis. | Attribute each sourced operation and identify the reconstruction team’s contribution. |
+| programme bias | The team keeps collecting cases after the question has an adequate answer. | Tie sampling and stopping to the receiving question and the consequential claims still open. |
 
 ### RMP.10:7 - Conformance Checklist
 
-- [ ] `A.3.1.MR` has already returned an ordinary result, and a named receiving decision justifies the larger burden.
-- [ ] The first useful result is a claim-to-evidence matrix and decision-relevant sampling choice.
-- [ ] Observation/artifacts, CDM, event-log analysis, contextual/protocol evidence, and expert synthesis keep distinct contributions and limits.
-- [ ] Each Work occurrence is recorded before candidate-account abstraction.
-- [ ] Contradictions are resolved by scope or retained, not averaged by vote.
-- [ ] Any further check addresses a use-changing uncertainty and has an attainable result worth its burden; an adequate existing basis can support a bounded stop.
-- [ ] A selected held-out discriminator states predictions before inspection and records surprise/revision.
-- [ ] Scoped variants and rivals remain visible.
-- [ ] The result can lower to Work description, local workaround, tool behavior, or unresolved grouping.
-- [ ] No evidence form identifies a Method, creates a MethodDescription, backdates Work, or establishes causality by itself.
+- [ ] Ordinary recovery or its supplied result leaves a reconstruction question important enough to warrant the specialist work.
+- [ ] The matrix shows what evidence could distinguish the consequential claims and why the selected cases or sources cover the relevant variation.
+- [ ] Each selected form of observation, artifact, elicitation, log analysis or synthesis contributes within its evidential limits.
+- [ ] Claims of actual performance can be traced to the corresponding occurrences.
+- [ ] The treatment of contradictions reflects their scope, evidence and remaining uncertainty.
+- [ ] Any further check addresses an uncertainty that matters to the question and has an attainable contribution worth its cost.
+- [ ] For a completed held-out check, the record distinguishes the predictions made before inspection from observations, surprises and revisions.
+- [ ] Material variants and rivals have an identifiable scope and evidential basis.
+- [ ] If the evidence establishes only an occurrence, local workaround or tool behavior, the result says so. If the observed activities cannot yet be grouped into a candidate Method account, the grouping remains open.
+- [ ] The conclusion distinguishes occurrence evidence, a proposed reusable account, a MethodDescription, identification of a Method and any claim about causes.
 
 ### RMP.10:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Repair |
 | --- | --- |
-| “Mine the log and recover the Method.” | Recover only recorded events; use the claim matrix to identify missing intent, tacit, and context evidence. |
-| “Interview experts until their stories converge.” | Sample for decision-relevant variation and preserve contradiction, recall limits, and minority variants. |
-| “Use every evidence form.” | Select only forms whose possible results can change a claim or the receiving decision. |
-| “A specialist programme must always obtain another unseen case.” | Select the check from the unresolved claim and receiving use; finish on adequate existing evidence, or narrow/defer the use when uncertainty matters. |
-| “The held-out case fits after we revised the account.” | Record predictions before inspection and report surprise rather than retrofitting. |
-| “The reconstructed account is now an admitted Method.” | Return the account and send Method identity to `A.3.1`. |
+| “Mine the log and recover the Method.” | Establish the events and declarations actually recorded. Use the matrix for any unresolved question about intent, tacit work or context. |
+| “Interview experts until their stories converge.” | Sample for variation relevant to the receiving question. Retain consequential disagreements, limits of recall and supported minority variants. |
+| “Use every evidence form.” | Choose the sources that can establish or discriminate among the material claims at a justified cost. |
+| “A specialist programme must always obtain another unseen case.” | Select a further check for a material unresolved claim. Finish on sufficient evidence or report the limit on the conclusion. If a proposed use depends on missing evidence, narrow or defer it as appropriate. |
+| “The held-out case fits after we revised the account.” | Record predictions before inspection. Report departures from them and identify any post-inspection revision. A fresh prediction test requires evidence withheld from that revision. |
+| “The reconstructed account is now an admitted Method.” | Report the account at its supported scope. Use `A.3.1` if the work also requires Method identification. |
 
 ### RMP.10:9 - Consequences
 
-For consequential decisions, practitioners reconstruct candidate accounts claim by claim, make the sources traceable, and can retain variants. The receiving decision gains stronger accounts or an honest lower result rather than a single fluent reconstruction.
+The receiver gets candidate accounts tied to the evidence for each claim. The reconstruction can preserve distinct variants or establish that the sources support only a record of local work. Either can answer a consequential question about practice.
 
-The cost is specialist sampling, evidence access, and analysis. Some evidence will remain unusable for the desired claim, and a well-run programme can still return no Method candidate.
+Specialist sampling, access and analysis take effort. Even a well-conducted inquiry may establish only a local observation or a limit on what can be recovered.
 
 ### RMP.10:10 - Rationale
 
-No single evidence form covers overt action, recorded recurrence, recalled judgment, tacit coordination, and cross-setting variation. Combining these evidence forms is useful only when each is connected to a claim and a receiving decision. The matrix, scope rule, justified check choice, and stop make that combination testable without claiming a universal research protocol.
+Overt action, logged recurrence, recalled judgement, tacit coordination and variation across settings present different evidential questions. Match each consequential claim to sources that can answer it. The matrix, comparison by scope and stopping conditions make a combination inspectable where several sources are needed.
 
 ### RMP.10:11 - SoTA-Echoing
 
 | Source | Retained contribution | Use boundary |
 | --- | --- | --- |
-| Current FPF `A.3.1.MR` | Ordinary several-occurrence recovery, real rival accounts, source-to-claim trace, useful distinguishing questions and honest lowering. A provisional account can finish without irrelevant or unavailable follow-up. | RMP.10 begins only when a named decision needs and warrants its larger programme; the ordinary question is not a study commitment. |
-| Klein, Calderwood, and MacGregor, [Critical Decision Method](https://doi.org/10.1109/21.31053) | Retrospective critical-incident probes for cues, options, judgments, and counterfactual reflections. | CDM supplies no event-log, recurrence, population, or causal result. |
-| IEEE Task Force, [Process Mining Manifesto](https://www.tf-pm.org/resources/manifesto) | Discovery, monitoring, and conformance analysis over recorded event logs. | Event-log regularity establishes neither intent, tacit contribution, Method identity, nor causality. |
-| Ordinary observation and artifacts | Overt occurrence evidence and result traces. | Observation supplies only what its access, scheme, and window support. |
+| Current FPF `A.3.1.MR` | Recover a provisional account from occurrences, with its sources, substantive rivals, useful distinguishing questions and limits. A narrower result can be sufficient. | Enter RMP.10 when the receiving question still needs a larger programme and its attainable contribution warrants the effort. |
+| Klein, Calderwood and MacGregor, [Critical Decision Method](https://doi.org/10.1109/21.31053) | Retrospective critical-incident probes for recalled cues, options, judgements and counterfactual reflections. | Use these for the experience and reasoning reported by the participant. Logged events, recurrence, population rates and causes each require evidence bearing on that claim. |
+| IEEE Task Force, [Process Mining Manifesto](https://www.tf-pm.org/resources/manifesto) | Discovery, monitoring and conformance analysis over recorded event logs. | Use the semantics and coverage of the fields. Intent, tacit contribution, Method identity and causal explanation each need their own grounds. |
+| Ordinary observation and artifacts | Evidence of overt occurrences and their results. | Identify what the observation or artifact covers, including its access, observation scheme and time window. |
 
-The claim matrix, decision-relevant sampling, contradiction-by-scope rule, conditional further checks, and combined stop are the bounded DPF synthesis. Reopen when a current evidence Method changes one of those moves, or when representative uses show that the extra burden does not improve account scope or the receiving decision.
+RMP.10 combines the claim matrix, sampling for relevant variation, comparison of contradictions by scope, selection of further checks and a stopping judgement. Reconsider the combination if a source method changes an operation it supplies, or if a representative use shows that the specialist work adds too little to the account or its intended use for its cost.
 
 ### RMP.10:12 - Relations
 
-- Use RMP.2 when research-design selection is still open and RMP.3 for the operationalization of a selected design; RMP.4 preserves the actual material. Use compatible supplied results directly. RMP.5 can criticize the resulting account under its actual evidence relation; RMP.9 receives a separate difficulty in the research Method itself.
-- `A.3.1.MR` supplies the ordinary floor and specialist-exit question; RMP.10 does not replace it.
+- Use RMP.2 for an open design choice, RMP.3 to develop or assess its operationalization, RMP.4 for the material actually available, and RMP.5 for an unresolved question about the inference. Use adequate supplied results directly. RMP.9 addresses a difficulty with the research Method itself.
+- Use the ordinary recovery supplied by `A.3.1.MR` directly when it answers the question. Its remaining evidential limits help define a possible specialist inquiry.
 - `A.15.1` governs any claimed Work occurrence; `A.10` governs evidence paths and provenance; `A.3.1` alone governs Method identification.
-- C.39.RP may add returned accounts provisionally to a repertoire. A.3.1.QM may qualify an account without changing its status.
-- Later description, support, trial, or architecture patterns consume only the scoped account, evidence limit, and next use their entry conditions admit.
-- RMP.11 addresses a different question: why and how a Method architecture differentiated. Use it for that explanation and any needed causal-use support assessment; evidence reconstruction here supplies no causal conclusion by itself.
+- C.39.RP can retain a candidate account provisionally in a repertoire and keep other material in its appropriate role. A.3.1.QM can qualify an identified Method or a candidate Method account while preserving that status.
+- For later description, support, trial or architecture work, use the account and evidence within the conditions they cover. Identify the additional contribution needed for a stronger use.
+- RMP.11 addresses how and why a Method architecture differentiated. Use historical sources for what changed and appropriate discriminating evidence for a proposed cause. A candidate account from RMP.10 may contribute to that inquiry.
 
 ### RMP.10:End

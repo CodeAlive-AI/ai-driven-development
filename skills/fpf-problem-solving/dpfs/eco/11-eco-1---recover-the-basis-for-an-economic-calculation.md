@@ -5,92 +5,92 @@
 
 ### ECO.1:1 - Problem frame
 
-Use this pattern when a calculation ranks production or service plans but you cannot tell whether its prices and other weights represent exchanges and resource uses available to the people who must act. Start with the quantity that could reverse the choice and ask what transaction, displaced use or stated valuation gives it meaning. The result is a comparison with usable economic grounds, or a conditional choice with the missing ground exposed.
+Use this Method when the economic meaning of a calculation is unclear. A price or weight may refer to a real offer, a past exchange, a displaced use or an assumption in a model. Start with a quantity that matters to the question. Establish what it represents, under what conditions, and what comparison follows. If a required input remains open, give the result conditionally.
 
-An adequate current quotation and resource account can be used as supplied.
+Use a quotation or resource account directly when it covers the specification, time and access relevant to the question.
 
 ### ECO.1:2 - Problem
 
-An optimizer can solve the problem it receives while its numbers conceal the decisive difficulty. An internal transfer price may express a management policy; an old purchase price records a past exchange; a shadow price expresses a marginal trade-off within a particular optimization problem. Substituting one for another can rank alternatives which nobody can actually obtain.
+An optimizer can solve a model whose numbers have different economic meanings. An internal transfer price may implement an allocation policy, an old purchase price can record a past exchange, and a shadow price measures a marginal trade-off in the specified model. Substituting one for another can make an unavailable alternative look attainable.
 
-Economic calculation also has a scope. Monetary results describe consequences under particular exchange conditions and rights. They do not add different people's satisfactions into a common measure or establish physical feasibility.
+State the exchange conditions and rights under which a monetary consequence follows. Physical feasibility and the effects on different participants can require separate accounts. To compare satisfaction across people, identify grounds for that comparison.
 
 ### ECO.1:3 - Forces
 
-The calculation must be simple enough to use but faithful to the alternatives actually open. Prices help coordinate heterogeneous resources without collecting everyone's knowledge. Novel arrangements may have no established price; withholding every decision until they do can be as costly as inventing a market quotation.
+Use enough detail to distinguish the alternatives open to the participants. A price can coordinate unlike resources while each party knows only part of the circumstances. A new arrangement may have no established market price. A conditional calculation or a comparison of physical outcomes can still inform the work.
 
 ### ECO.1:4 - Solution
 
-#### ECO.1:4.1 - Recover the decision and the consequential numbers
+#### ECO.1:4.1 - Identify the economic question and the quantities that matter
 
-Name the actor's choice, the useful result sought and the period in which resources must be available. Separate alternatives that produce different results or leave different obligations. Reuse the resource and cash-flow account already prepared by MA or FIN.
+Identify what the calculation is meant to establish, whose use or choice it concerns and the period in which the resources matter. Distinguish alternatives that give different results or carry different obligations. Reuse a suitable resource or cash-flow account from MA or FIN.
 
-Follow only numbers whose interpretation can change that choice. For each, ask what it denotes: an offered exchange, a past transaction, a budget allocation, an anticipated future exchange, a forgone alternative or a weight in a model. Recover the quantity, quality, location, time and access conditions that matter. “Steel at 500” is not yet a price for a specified supply.
+Trace the quantities whose interpretation matters to the answer. For each, establish whether it denotes an offer, a completed transaction, a budget allocation, an anticipated exchange, a forgone use or a model weight. Identify relevant quantity, quality, location, timing and access. To apply “steel at 500,” determine the unit, terms and supply to which 500 refers.
 
 #### ECO.1:4.2 - Connect the comparison to feasible exchange and use
 
-For an offered exchange, determine what can be obtained at the stated terms and by whom. A quotation for an incompatible specification or unavailable delivery window cannot supply this plan. A supplier's offer remains an offer until the relevant commitment is made.
+For an offer, establish who can obtain which supply and under what terms. A nonmatching specification or missed delivery window can exclude the offer for this plan. Use an accepted commitment to establish what the parties have agreed and delivery evidence to establish what reached the recipient.
 
-For a resource already controlled, identify the alternative use actually displaced. Its historic cost and its current economic consequence may differ. For a novel resource or arrangement, use a comparable offer only after stating the difference that matters; otherwise retain a conditional value or compare physical alternatives and purposes directly.
+For a controlled resource, identify what alternative use would be displaced. Historical acquisition cost and the current forgone result can differ. For a new arrangement, use a comparable offer when its differences can be accounted for. Otherwise give a conditional value or compare physical outcomes against the participants’ purposes.
 
-Keep a model's weights attached to its objective and constraints. A shadow price can show which constraint is costly within that model. Calling it money does not establish a buyer, a supplier, an exchange or a right to obtain resources at that amount.
+Keep model weights with the objective and constraints that define them. A shadow price can show the marginal contribution of relaxing a specified constraint. To claim someone can buy the resource at that price, establish the available offer and their right to use it.
 
 #### ECO.1:4.3 - Return the comparison that the grounds support
 
-Pass the usable quantities and timing to the existing accounting or financial calculation. State separately any important result that is not represented in the monetary account, such as preserving access for an affected community. The decision may use several criteria and leave alternatives incomparable.
+Use the supported quantities and time conditions in the accounting or financial calculation where one is needed. State important consequences outside the monetary account, such as access for an affected community. With several criteria the evidence may leave alternatives incomparable.
 
-If a missing price could change the answer, choose an attainable next move: seek a relevant offer, propose an exchange through ECO.3, compare a bounded range, or choose from already sufficient physical and purpose-based grounds. Additional investigation is justified by the decision it can change. Stop when the current choice is supported at the needed scope, including an explicit conditional choice where that is the useful result.
+If a missing price matters, identify what can already be established from a range, physical limits or the intended use. A matching offer or a new exchange under ECO.3 may resolve a remaining question. Seek it when the likely gain warrants the work. Stop when the evidence supports the requested finding, comparison or choice, including a conditional answer where appropriate.
 
 ### ECO.1:5 - Archetypal Grounding
 
 #### ECO.1:5.1 - A cheap plan priced in internal credits
 
-In a constructed repair-depot case, purchasing a compatible part costs €90 delivered this week. A spreadsheet values making it internally at 40 machine credits plus €30 of material. It silently treats a credit as a euro, although credits allocate booked machine time and cannot purchase extra time. The machine has no available slot this week.
+Suppose the repair depot can buy a compatible part for €90 delivered this week. Its spreadsheet prices an internal job at 40 machine credits plus €30 for material. Credits allocate booked machine time. They do not buy more machine time, and the machine has no slot this week. Treating a credit as one euro therefore leaves the apparent €70 plan unsupported.
 
-The practitioner removes the unsupported €70 comparison. A nearby provider offers the required machining this week for €65, using the depot's €30 material. The usable comparison is therefore €95 for that route against €90 for the delivered part, subject to equivalent fit and warranty. If no matching offer exists, the internal-credit plan remains unavailable this week; solving its allocation model again cannot make it available.
+A nearby provider offers the machining this week for €65 with €30 of depot material. If fit and warranty are equivalent, the two available routes cost €95 and €90. If no matching machining offer can be found, the internal job still lacks a machine slot. Recomputing its allocation does not supply one.
 
-The repair does not reject credits as a scheduling aid. It stops a claim about monetary cost and availability that the credits did not support.
+The 40 credits can still be used for their scheduling purpose. Use euro terms for the monetary comparison and capacity evidence for this week’s availability.
 
 #### ECO.1:5.2 - A choice without a market quotation
 
-A community can repair one of two paths with the same already available volunteer time. It has no defensible monetary value for each improvement. The group can still choose by access needs and the repair each alternative permits. Reporting that choice as a financial return would add an unsupported claim; postponing it until every benefit has a price would add unnecessary work.
+Suppose a community can repair either of two paths with the same available volunteer time but has no defensible money value for the two improvements. It can compare access needs and the repairs each path allows. That comparison can support a choice. A financial-return claim would require a basis for valuing the outcomes in money.
 
 #### ECO.1:5.3 - A useful marginal value inside a model
 
 A workshop has ten usable machine-hours and demand for up to twelve identical one-hour jobs. Each completed job contributes €30 after the other relevant variable costs; the remaining inputs and commitments permit any of these jobs. The model's best contribution rises from €300 at ten hours to €330 at eleven and €360 at twelve. A thirteenth hour adds nothing under that demand limit.
 
-Thus €30 is the modeled value of each of the next two usable hours. It helps set the terms worth considering: an available matching offer at €20 per hour would leave €10 more per added job. The modeled value itself does not supply that offer or make another operator available. A changed demand limit, job mix or needed complement requires a new calculation of the affected margin. The workshop can keep the conditional comparison without investigating every possible capacity supplier.
+Each of the next two usable hours adds €30 in this model. If a matching hour is available at €20, the added job contributes €10 after that purchase. The model does not supply an hour or an operator. Keep the conditional comparison where that answers the question. Recalculate the affected margin if demand, job mix or a required complement changes.
 
 ### ECO.1:6 - Bias-Annotation
 
-A convenient numeric column can acquire more authority than the exchange or constraint it represents. Conversely, criticism of a monetary comparison can become a blanket refusal to calculate. Preserve the useful calculation and repair the unsupported interpretation.
+A convenient number can be mistaken for the exchange or constraint it represents. Conversely, a disputed input need not defeat the rest of the calculation. Preserve the supported arithmetic and correct the claim about what the number means.
 
 ### ECO.1:7 - Conformance Checklist
 
-Can the receiver identify what the consequential quantities mean, who can obtain the resources, and when? Does the comparison retain the relevant alternative uses and obligations? Can the receiver distinguish a monetary consequence from a physical constraint or an unpriced concern, and make the next choice without filling in an invented exchange?
+What do the consequential quantities mean and when do they apply? If the question concerns availability, identify who can obtain the resource, the conditions under which it is attainable or the grounds for finding it unavailable. Does the comparison preserve alternative uses, obligations and important unpriced consequences? Return the finding or choice the evidence supports, identifying any unresolved exchange or physical constraint.
 
 ### ECO.1:8 - Common Anti-Patterns and How to Avoid Them
 
-- **A computed price is treated as an available offer.** Return to the model's objective and constraints, then establish the actual supply condition.
+- **A computed price is treated as an offer.** Establish what the number means in the model. If supply is claimed, establish what someone can obtain on those terms.
 - **An unpriced consequence is set to zero.** Keep it as a separate decision consideration or a stated constraint.
 - **No complete price system, therefore no action.** Use the comparison that the available physical, contractual and purpose-based grounds already support.
 
 ### ECO.1:9 - Consequences
 
-The practitioner can use calculation without overstating its reach. Some rankings become conditional; some apparently cheap alternatives disappear because they cannot be obtained. A limited calculation can still be enough to act.
+The comparison may give a supported ranking, a conditional one or a finding that an apparently cheap option is unavailable. Any of these can answer the question within its scope.
 
 ### ECO.1:10 - Architectural Rationale
 
-An economic comparison needs both a method of calculating and a basis for interpreting its inputs. Separating those contributions preserves mathematical and accounting methods while making missing exchange conditions visible. A universal score of social value would require grounds that ordinary monetary calculation does not supply.
+An economic comparison uses both a calculation and a basis for interpreting its inputs. Keep the valid mathematical or accounting result when an exchange condition is missing. A common measure of social value requires grounds beyond an ordinary monetary calculation.
 
 ### ECO.1:11 - SoTA-Echoing
 
-[Mises, Economic Calculation, §2](https://mises.org/online-book/economic-calculation-socialist-commonwealth/2-nature-economic-calculation) is the historical anchor for comparing heterogeneous productive means through exchange relations, and for the limits of money calculation outside those relations. This pattern adapts that issue to a bounded working decision; it does not infer that every choice lacking a market price is impossible.
+[Mises, Economic Calculation, §2](https://mises.org/online-book/economic-calculation-socialist-commonwealth/2-nature-economic-calculation) is the historical source for comparing heterogeneous productive means through exchange and for the limits of monetary calculation outside those relations. We adapt that question to the comparison at hand. Physical and purpose-based grounds can still support a choice when market prices are unavailable.
 
-The competing move is to optimize with assumed weights. That remains useful for conditional planning: the output is a consequence of those assumptions. The added operation here tests whether the assumption can support the receiving economic claim. Reopen the comparison when access, exchange terms, available alternatives or the use of the model changes.
+Optimization with assumed weights gives a conditional planning result. To use it for an economic claim about a real participant, check the meaning and applicability of those weights. Reconsider the affected comparison when access, exchange terms, alternatives or the intended use change.
 
 ### ECO.1:12 - Relations
 
-MA.1 constructs the resource-and-cost account; FIN.6 compares investments using grounded cash flows. ECO.1 supplies the interpretation and attainable exchange conditions they need when those are disputed. ECO.2 responds to changed prices; ECO.3 can form a previously unavailable exchange. C.11.DUA helps choose whether resolving a remaining uncertainty is worth its attainable contribution.
+Use MA.1 for a resource-and-cost account and FIN.6 for investment comparison with supported cash flows. Use ECO.1 to establish a disputed input or a condition of exchange. Use ECO.2 when prices change and ECO.3 when a new exchange is needed. C.11.DUA helps assess the value and cost of resolving a remaining uncertainty.
 
 ### ECO.1:End

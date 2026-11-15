@@ -1,6 +1,6 @@
 ## SYSE.Application:6 - APP-SYSE-06 - Worked application: qualify a machining path with an external operation
 
-This constructed desk example develops part of a supported manufacturing path and identifies the professional qualifications still needed. Its figures and trials are stipulated; the production procedure and capacity require the qualifications identified below.
+This constructed case develops a route for machining and coating and identifies the qualifications still needed to use it in production. Its figures and trials are stipulated.
 
 
 ### SYSE.Application:6.1 - Initial situation and the two users
@@ -28,12 +28,12 @@ With `SYSE.25`, the producer selects one bounded improvement hypothesis: product
 
 Compare transport, waiting, rejected lots and the work of maintaining the provider relation along with each arrangement's quoted price.
 
-The following construction explores the mixed arrangement. Selecting it requires the missing professional results and a comparison of its benefits and burdens with repaired internal and fully external provision.
+The following construction explores the mixed arrangement. Selecting it requires the missing professional results and a comparison of its benefits and burdens with viable internal and fully external alternatives, including the work needed to make each usable.
 
 
 ### SYSE.Application:6.3 - 2. Construct the supported transfer and its failure return
 
-`SYSE.26` turns the improvement into a supported undertaking. A request identifies the design revision and finished-part requirement, material/lot identity, requested quantity and variant, applicable fixture and NC-program configuration, process conditions that the qualified procedure requires, and the receiving result.
+Using `SYSE.26`, the producer designs how a planner or operator can request the work and recover its result. A request identifies the design revision and finished-part requirement, material/lot identity, requested quantity and variant, applicable fixture and NC-program configuration, process conditions that the qualified procedure requires, and the receiving result.
 
 The path distinguishes request receipt, input clarification, authorization for the next operation, actual dispatch/receipt, interrupted work and a returned result. An acknowledgement means that a request was received; it is not permission to machine or proof that the lot conforms. A planner can recover the undertaking and contact the responsible support function without sending an unrelated duplicate order.
 
@@ -50,9 +50,9 @@ The first result is therefore a supported transfer candidate with an exercised m
 
 The external coater controls its own process, scheduling and willingness to continue supply. `SYSE.18` identifies the producer's dependent results and the actual provider decisions that can change them.
 
-For this mixed arrangement, the proposed commitment covers the accepted incoming condition, applicable coating/process variant, lot identity, returned evidence, relevant change notification, delivery/partial-return conditions and the handling of a failed or disputed lot. The producer must discover which of these the provider actually accepts. An unanswered request is an unresolved dependency, not an agreed constraint on the provider.
+For this mixed arrangement, the proposed commitment covers the accepted incoming condition, applicable coating/process variant, lot identity, returned evidence, relevant change notification, delivery/partial-return conditions and the handling of a failed or disputed lot. The producer checks the terms already in force and seeks the provider’s agreement on any outstanding conditions needed for this arrangement. An unanswered request is an unresolved dependency, not an agreed constraint on the provider.
 
-Transfer and return exercises test whether both sides can recover the same lot, requirement and disposition. A proposed fallback names an alternative obtaining arrangement and the conditions under which it could actually receive the work.
+Transfer and return exercises test whether both sides can recover the same lot, requirement and disposition. A proposed fallback names an alternative obtaining arrangement and the conditions under which it could receive the work.
 
 Using `SYSE.27`, a changed fixture or NC program arrives as a bounded contribution: which supported variant changes, which earlier uses remain applicable, which qualification must be repeated, who can maintain the contribution, and which authorized receiver can accept it.
 
@@ -69,13 +69,13 @@ In this case no qualified finished-part measurement chain, applicable uncertaint
 
 For example, a returned number of 20.010 mm without the applicable procedure, uncertainty and subject identity is not yet the required conformance decision. Use the qualified measurement and acceptance Methods for the actual operation to select any required tolerance guard band and sampling plan.
 
-The Library already supplies parts of that construction. [PHY.9](../../foundational-thinking-dpf-suite/phy/16-phy-9---construct-a-measuring-interaction-for-a-physical-dis.md) helps construct the measuring interaction; C.16.MR/IR relate its recorded result to values compatible with the stated error constraints. The instrument, material, procedure and applicable error account must still be supplied for this bore. For statistical inference under a probability model of the records, use [MMP.13](../../foundational-thinking-dpf-suite/mmp/18-mmp-13---infer-unknowns-statistically-under-a-stated-observa.md), retaining the meaning of its uncertainty statement.
+For the measurement construction, [PHY.9](../../foundational-thinking-dpf-suite/phy/16-phy-9---construct-a-measuring-interaction-for-a-physical-dis.md) helps construct the measuring interaction; C.16.MR/IR relate its recorded result to values compatible with the stated error constraints. The instrument, material, procedure and applicable error account must still be supplied for this bore. For statistical inference under a probability model of the records, use [MMP.13](../../foundational-thinking-dpf-suite/mmp/18-mmp-13---infer-unknowns-statistically-under-a-stated-observa.md), retaining the meaning of its uncertainty statement.
 
-In a separate stipulated calculation, the identified finished bore reads 20.014 mm and the complete error is bounded by ±0.008 mm. Its compatible diameters are [20.006, 20.022] mm. That interval includes values inside and outside [19.980, 20.020], so this observation does not settle conformity. If an applicable procedure instead supplies a complete hard bound of ±0.004 mm for the same reading, the interval becomes [20.010, 20.018] mm and lies inside the specification. These are hard bounds, not confidence intervals. Whether obtaining a different measurement is worthwhile depends on the receiving decision and the cost of changing its answer; use C.11.DUA when that choice is unresolved.
+In a separate stipulated calculation, the identified finished bore reads 20.014 mm and the complete error is bounded by ±0.008 mm. Its compatible diameters are [20.006, 20.022] mm. That interval includes values inside and outside [19.980, 20.020], so this observation does not settle conformity. If an applicable procedure instead supplies a complete hard bound of ±0.004 mm for the same reading, the interval becomes [20.010, 20.018] mm and lies inside the specification. These are hard bounds, not confidence intervals. Whether obtaining a different measurement is worthwhile depends on the receiving decision and the value of resolving the present uncertainty relative to the cost of the measurement; use C.11.DUA when that choice is unresolved.
 
 This calculation concerns the stated part and error model. Acceptance of a lot also needs its applicable decision and sampling rules.
 
-The immediate stop is precise: no acceptance claim for the finished lot from this incomplete evidence. Independent work on the interface, provider commitments or test preparation can continue.
+Hold the acceptance decision for the identified finished lot until the necessary measurement and decision basis are available. Independent work on the interface, provider commitments or test preparation can continue.
 
 
 ### SYSE.Application:6.6 - 5. Separate nominal cycle arithmetic from qualified delivery capability
@@ -88,13 +88,13 @@ After the two expected changeovers, the nominal machining time is:
 
 This arithmetic has no allowance for yield loss, rework, interruption, loading assumptions omitted from the quoted cycle, inspection that uses the same constrained resources, or transport. It also says nothing about coating capacity, batch size, lead time or whether returned acceptable parts meet the day's delivery boundary. Extra work on independent resources need not subtract directly from the machine's 430 minutes, but it can still constrain delivery.
 
-Use [OPS.10.1](../../management-dpf-suite/ops/41-ops-10-1---construct-and-compare-operating-capacity-models.md) to construct the capacity account from the needed acceptable output, actual processing and rework passes, opening work, resource demands and provider returns. Use [OPS.10.2](../../management-dpf-suite/ops/42-ops-10-2---construct-and-revise-a-feasible-deadline-schedule.md) to place those operations within their availability and delivery constraints. The methods are available; the missing production values and their applicable limits still have to be obtained.
+Use [OPS.10.1](../../management-dpf-suite/ops/41-ops-10-1---construct-and-compare-operating-capacity-models.md) to construct the capacity account from the needed acceptable output, actual processing and rework passes, opening work, resource demands and provider returns. Use [OPS.10.2](../../management-dpf-suite/ops/42-ops-10-2---construct-and-revise-a-feasible-deadline-schedule.md) to place those operations within their availability and delivery constraints. To qualify delivery, obtain the production values and limits needed for that claim. An established capacity bound may already rule out an arrangement.
 
 A changed condition can already reject a candidate without a complete production study. Suppose the day starts with no partly completed brackets and an additional 71 minutes of machine unavailability leaves 359 minutes after changeovers. Even 120 single passes require 360 minutes. Under those assumptions, this machine cannot complete the proposed day's work. Before that change, the spare 70 minutes alone did not establish delivery through coating and return.
 
 One conforming specimen does not establish the process distribution or its sustained behavior. The [NIST/SEMATECH process-capability Method](https://www.itl.nist.gov/div898/handbook/pmc/section1/pmc16.htm) is a bounded historical statistical source: its familiar capability indices compare a stable process with specification limits under applicable distribution and sampling conditions. Qualify the measurement chain separately. Distinguish relevant variants and operating conditions, and justify any pooling before interpreting a capability index.
 
-The remaining production contributions can now be assigned.
+The producer can assign these contributions to qualify production.
 
 | Contribution needed for this production case | What its receiver needs before the dependent claim can proceed |
 | --- | --- |
@@ -104,7 +104,7 @@ The remaining production contributions can now be assigned.
 | Acceptable-part delivery capacity | An end-to-end result including yield, rework, constrained resources, provider capacity, transport, waiting and the actual delivery horizon; not the isolated nominal cycle count. |
 | Nonconforming-material and recovery disposition | An authorized way to identify and segregate affected material, determine permitted inspection/rework/replacement or acceptance, and establish the result before reuse. |
 
-Use the available Library Methods for the stated constructions. Obtain or develop the physical procedures still missing, and obtain the case inputs and qualification results needed by the receiving decision. The common platform language connects those contributions.
+Use the available Library Methods for the stated constructions. Obtain or develop the physical procedures still missing, and obtain the case inputs and qualification results needed by the receiving decision.
 
 
 ### SYSE.Application:6.7 - 5.1. Compare independent preparation and a transferable setting
@@ -113,7 +113,7 @@ A shorter stop can require a different physical arrangement, not just a differen
 
 An alternative prepares the next module on an independent station during minutes 8–20, then performs installation and qualification on the machine: the next start is minute 33. [OPS.11.1](../../management-dpf-suite/ops/44-ops-11-1---construct-and-reconcile-operating-models-across-s.md) keeps the operator, station, module and machine demands in the same operating account. If the only fixture required for preparation remains occupied on the machine until minute 20, preparation cannot begin at minute 8 and this alternative returns to minute 45. A calendar change alone cannot create the missing independent means.
 
-The [SMED distinction between internal and external setup](https://www.lean.org/lexicon-terms/single-minute-exchange-of-die/) helps find that opportunity. A possible physical construction is a separately prepared module with a setting that can be transferred to the actual production pairing. The [MIT kinematic-coupling proposal](https://pergatory.mit.edu/kinematiccouplings/html/design_process/improvement.html) uses measured parameters of the mating halves and calibration against a known counterpart. It distinguishes the repeatability of one pair from interchangeability across pairs. Treat this as a design proposal whose actual geometry, contact, load, friction and deformation conditions must be established.
+The [SMED distinction between internal and external setup](https://www.lean.org/lexicon-terms/single-minute-exchange-of-die/) helps find that opportunity. A possible physical construction is a separately prepared module with a setting that can be transferred to the actual production pairing. The [MIT kinematic-coupling proposal](https://pergatory.mit.edu/kinematiccouplings/html/design_process/improvement.html) uses measured parameters of the mating halves and calibration against a known counterpart. It distinguishes the repeatability of one pair from interchangeability across pairs. For the proposed pairing, establish the geometry, contact, load, friction and deformation conditions on which transfer depends.
 
 [MMP.18](../../foundational-thinking-dpf-suite/mmp/25-mmp-18---couple-models-with-compatible-exchanges-and-scales.md) constructs the correspondence between the calibration and receiving descriptions; C.29.1 preserves the conditions under which the mathematical result can be used. In a translation-only illustration, a reference pairing places the module origin at 0.020 mm in the reference station's coordinates. A module fiducial reads 10.020 mm there, so its coordinate relative to the module origin is 10.000 mm. The production pairing places the module origin at 0.035 mm in the production frame. The predicted fiducial coordinate there is 10.035 mm. Reusing the reference reading 10.020 mm would differ by 0.015 mm.
 
@@ -130,7 +130,7 @@ In an adverse constructed return, a coated lot lacks a qualified final-dimension
 
 Possible responses include segregation, additional qualified inspection, permitted rework, replacement or an explicitly authorized acceptance disposition. This example chooses none without the missing professional and authority basis. Loading an older NC program does not restore material already removed, and cancelling a message does not reverse coating.
 
-`SYSE.29` makes retirement of the current provider path depend on the actual remaining work. The receiver needs usable tooling, programs and process information with transferable rights, relevant material and evidence, support for outstanding lots, and demonstrated ability to perform the receiving work. Qualify the receiving arrangement's ability to perform the work with these transferred inputs.
+`SYSE.29` makes retirement of the current provider path depend on the actual remaining work. The receiver needs usable tooling, programs and process information with transferable rights, relevant material and evidence, support for outstanding lots, and demonstrated ability to perform the receiving work with those transferred inputs.
 
 An old support route can remain necessary for a disputed or infrequently ordered lot even when ordinary new orders use another provider. Ending new orders and ending responsibility for old results are different decisions.
 
@@ -139,6 +139,6 @@ An old support route can remain necessary for a disputed or infrequently ordered
 
 The application gives the producer a supported transfer with a response that identifies the wrong fixture/program pairing, a proposed independent-provider commitment, final-dimensional control placement and a bounded capacity calculation. It also gives a candidate for independent preparation with the calculation for transferring its setting. The available measurement and operating Methods support these constructions; the physical procedures, inputs and qualifications still needed for production are identified.
 
-It stops before promising 120 acceptable brackets per day or treating the production path as qualified. `SYSE.11` may assess usability for the narrower interface or planning purpose already supported. Use `SYSE.14` for the production release decision when its required qualification and acceptance basis are available.
+It stops before promising 120 acceptable brackets per day or treating the production path as qualified. The engineering team can use `SYSE.11` to assess usability for the narrower interface or planning purpose already supported. Use `SYSE.14` for the production release decision when its required qualification and acceptance basis are available.
 
-The team can improve the common path and obtain the separate machining, metrology and delivery results needed for production. A practitioner needing only the failed-lot disposition starts at the missing recovery Method; one facing a provider change starts at `SYSE.18` or `SYSE.29`. Neither must perform the entire example.
+The team can improve the common path and obtain the separate machining, metrology and delivery results needed for production. A practitioner needing only the failed-lot disposition starts at the missing recovery Method; one facing a provider change starts at `SYSE.18` or `SYSE.29`.

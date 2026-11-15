@@ -7,12 +7,12 @@
 Use this pattern when an engineering decision relies on a knowledge or evidence input such as a theory,
 heuristic, model, simulation result, benchmark result, experiment, prototype trial, test result, operating
 observation, or research paper, but the project has not said what engineering claim the input supports, where
-that support stops, or how the decision changes.
+that support stops, or what the input means for the decision.
 
 Begin with one sentence: “This decision may rely on this claim about this subject, configuration, use, and
 interval.” Then connect each source or produced result to that claim and state whether it supports, contradicts,
 narrows, or leaves the claim unresolved. The first useful result is a **bounded engineering claim assessment**
-that names the decision effect and any material claim it still leaves unsupported.
+that names the decision effect and any material claim it leaves unsupported.
 
 A small reversible choice may need only that sentence and its source. A fuller assessment is useful, for example,
 when several evidence bases disagree, the result must survive handoff or delay, automation obscures provenance,
@@ -27,7 +27,7 @@ For an ordinary assessment that must explain an extension or combination, use th
 [SYSE.4:4.4](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md#syse444---recover-performed-work-direct-results-and-evidence-use) and the combination rules in
 [SYSE.4:4.6](41-syse-4---decide-whether-and-how-to-challenge-an-engineering.md#syse446---combine-evidence-only-for-the-decision-question), as applied in :4.1.1 below. Their use
 here needs no assurance conclusion. Use the wider `SYSE.4` Method when assurance or a release-facing consequence
-is the actual question. Scientific and specialist practices retain their own research Methods.
+is the question. Scientific and specialist practices retain their own research Methods.
 
 #### SYSE.10:0.1 - Terms and Distinctions
 
@@ -69,13 +69,13 @@ current basis, state the material limits on reliance, and show what changes in t
 
 ### SYSE.10:2 - Problem
 
-A decision-usable assessment answers seven questions:
+Use these seven questions to establish what the receiving decision needs from the assessment:
 
-1. Which decision and alternative can change?
+1. Which decision and alternatives does the assessment inform, and what could its result change or confirm?
 2. What claim about which subject, configuration, environment, use, interval, scale, and criterion is at issue?
 3. What theory, model, observation, prior result, or other source is current, and what are its transfer limits?
 4. Which Agent performed the dated Work that produced each result, which Method did that Work apply, and which inputs, tools, and physical or simulated subject did it use?
-5. Why does the result support or challenge this claim, and which extension or joint premises does that inference need?
+5. What does the result establish about this claim, on what grounds, and does the inference require an extension or a joint premise?
 6. What could overturn the reliance—for example, a rival explanation, shared assumption, configuration mismatch,
    failed trial, or affected-System consequence?
 7. What decision effect follows—for example, a changed choice or constraint, another probe, postponement, redesign,
@@ -89,8 +89,8 @@ choice.
 
 - Waiting for exhaustive evidence can destroy opportunity; relying on an unbounded claim can create avoidable
   harm and rework.
-- Useful models omit detail deliberately. The missing structure matters only when it can overturn the decision.
-- Simulations and formal analyses run quickly; later physical conditions such as manufacture, installation,
+- Useful models omit detail deliberately. Missing structure matters here when it can change the choice or the conditions under which the evidence supports it.
+- Simulations and formal analyses can run quickly; later physical conditions such as manufacture, installation,
   wear, environment, and use may dominate the eventual result.
 - Different practices use *verification* and *validation* for different subjects and relations. One universal
   ladder hides the current engineering question.
@@ -105,7 +105,7 @@ choice.
 
 ### SYSE.10:4 - Solution
 
-Assess each engineering claim against the results actually available, preserve the distinction between model
+Assess each engineering claim against the available results, preserve the distinction between model
 behavior and physical evidence, and supply a supported reliance limit to the receiving decision. An authorized
 Agent uses `C.11` or a specialist experimental-design Method when further evidence is a live alternative: the
 choice determines whether to obtain it and, if so, which Work to undertake. This choice and any resulting probe
@@ -113,11 +113,11 @@ or experiment design remain separate from the later assessment of available resu
 
 #### SYSE.10:4.0.1 - Keep Different Decision Inputs Distinct
 
-Keep each decision input's kind explicit. An evidence-bearing result keeps its kind; state how it bears on a
+Keep each decision input's kind explicit. For an evidence-bearing result, state how it bears on a
 named claim under `A.10`. An objective, reward, loss, or heuristic enters `C.11` as the evaluative or choice-rule
-input it actually supplies; a number does not make it evidence. A novelty or surprise characterization remains a
-characteristic claim. Use `SYSE.10` to assess the engineering claim and its evidence use. The deciding Agent
-separately applies `C.11` to choose a current option or record a next-probe result.
+input it supplies; a number does not make it evidence. A novelty or surprise characterization remains a
+characteristic claim. Use `SYSE.10` to assess the engineering claim and its evidence use. When the decision calls for choosing a current option or a further local probe, the deciding Agent
+separately applies `C.11` and records the choice.
 
 #### SYSE.10:4.1 - Perform the Move
 
@@ -125,7 +125,7 @@ separately applies `C.11` to choose a current option or record a next-probe resu
    claim whose support can change the choice. Bind the claim to a subject, configuration, environment, use,
    interval, scale, and criterion.
 2. **Recover the current knowledge basis.** Identify the relevant source epistemes and editions, including
-   explanations, hypotheses, heuristics, models, mathematical lenses, observations, prior Work, and contradictory
+   explanations, hypotheses, heuristics, models, mathematical lenses, observations, accounts of prior Work, and contradictory
    results. State their currentness and transfer limits. Identify the receiving claim separately from the sources' own claims.
 3. **State what each result can distinguish.** Name the rival claims or alternatives, applicable conditions,
    inputs and controls, measurements, sensitivity, uncertainty, and the result that would leave the decision
@@ -148,12 +148,12 @@ separately applies `C.11` to choose a current option or record a next-probe resu
    the consequential extension or joint premise, including shared assumptions, implementation-to-model gaps,
    configuration mismatch, rival explanations, contradictory results, selection effects, extrapolation and
    affected-System evidence omitted by the original study. Keep an unsupported inference distinct from
-   evidence that actually contradicts the claim.
+   evidence that contradicts the claim.
 8. **Record the assessment and decision effect.** State what is supported, contradicted, narrowed, or unresolved;
-   the reliance limit; residual uncertainty; and any material unsupported claim. Then state the resulting engineering
+   the reliance limit; any residual uncertainty; and any material unsupported claim. Then state the resulting engineering
    action—for example, choose, narrow, postpone, redesign, seek evidence, or stop. The assessment itself supplies
    neither the decision nor its authority.
-9. **Stop and reopen deliberately.** State why the current basis is enough for this decision. Record a compatible
+9. **Decide when to stop or reopen.** State what the current basis settles for this decision and what, if anything, remains unresolved. Record a compatible
    `C.11` result or specialist experimental-design result when further evidence is chosen. Name the later change
    that would matter, such as a change to a relied-on source, configuration, environment, use, Method, capability,
    observation, or claim.
@@ -168,7 +168,7 @@ Use the developed inference and combination instructions in `SYSE.4:4.4` and `SY
 assessment that is missing. The receiving result remains an engineering claim assessment. These instructions
 do not require the other assurance activities when no assurance claim is being made.
 
-**Work backward from the needed claim.** Recover what the receiving decision actually requires. A temperature
+**Work backward from the needed claim.** Recover what the receiving decision requires. A temperature
 claim and a compressor-cycling claim may both be necessary; evidence for one cannot compensate for the other.
 Identify which available result addresses each necessary premise or operating case. When several arguments
 instead offer alternative grounds for the same claim, determine whether any one is sufficient. A source may
@@ -181,12 +181,12 @@ required quantity under that claim's conditions, comparison with the criterion m
 A sufficient specialist argument can be cited with its applicability and limits; neither a second diagram nor
 a new trial is required.
 
-An extension needs its actual reason. For example, a prediction about an installed controller needs a justified
+For an extended claim, establish whether the result applies and explain the grounds or the missing connection. For example, a prediction about an installed controller needs a justified
 correspondence between the model's inputs and the installed configuration. A component limit needs a reason
 that interactions and operating conditions preserve it in the whole System. Follow `A.1.1` for model
-applicability and `C.28` for causal support when those contributions are missing. State which premise has
-support and which remains an assumption, why that assumption is allowable for this use, and which inference
-loses support if that premise is false. An assumption cannot substitute for evidence required by the receiving rule. Unknown units,
+applicability and `C.28` for causal support when those contributions are missing. State which premises have
+support. For a premise used as an assumption, explain why that is allowable here and which inference
+loses support if the assumption is false. An assumption cannot substitute for evidence required by the receiving rule. Unknown units,
 configuration or timing cannot be repaired by relabeling the result.
 
 **Explain the join.** Check that the necessary results apply together: the same configuration and operating
@@ -197,7 +197,7 @@ not supply those bounds. Do not add uncertain quantities or multiply confidence 
 measurement or probability relation. Two accounts copied from one trace do not add an independent observation.
 Preserve shared premises so that a correction can reach every dependent use.
 
-**Challenge the reason and return the surviving claim.** Could every listed result still be true while the
+**Challenge the reason and return the surviving claim.** Could every listed result be true while the
 required claim is false? An untested operating region, unrepresented interaction or different interpretation of
 the same word may expose that possibility. Resolve an action-changing challenge using the available domain
 results or keep the whole claim unresolved while retaining supported parts. A failed bridge removes its support;
@@ -219,7 +219,7 @@ reliance, record:
 | model or representation use | Modeled subject, purpose, assumptions, omissions, parameters, boundary conditions, computation or inference, verification, calibration, validation, uncertainty, sensitivity, extrapolation, and `C.29` correspondence when relevant. |
 | observations and evidence | Observed occurrence or state, measurement Method and result, uncertainty and interval; the reason it bears on the target claim, consequential extension or joint premises and their grounds; polarity, grounding subject, scope, provenance, relevance window, supported and unsupported use. |
 | criticism | Rival explanations, common assumptions, contradictions, negative results, configuration or implementation mismatch, selection effects, transfer limits, and omitted affected-System evidence. |
-| assessment and decision effect | Supported, contradicted, narrowed, and unresolved claims; reliance limit; residual uncertainty; material unsupported claims; and the choice, constraint, redesign, postponement, or stop that changes. |
+| assessment and decision effect | Supported, contradicted, narrowed, and unresolved claims; reliance limit; any residual uncertainty or material unsupported claims; and what the assessment warrants for the decision, including retaining a sufficient choice. |
 | further evidence and reopen | Stopping reason and later change that reopens the assessment. When further evidence is chosen, the compatible `C.11` or specialist experimental-design result; if that required result is unavailable, name it and the dependent use on hold. |
 
 The assessment may cite supporting records—for example, model cards, trial reports, measurement records, or
@@ -229,7 +229,7 @@ evidence graphs—instead of copying them. Keep the assessment tied to the recei
 
 Engineers stop asking whether a model is *validated* or a test *passed* in the abstract. They ask which claim
 about which configuration is supported for which use, what limits that reliance, and how the
-decision changes. A usable assessment explains the step from each relied-on result to the claim and why the
+assessment affects the decision. A usable assessment explains the step from each relied-on result to the claim and why the
 necessary contributions hold together. It can therefore retain a valid result while withdrawing a conclusion
 that depended on a failed transfer or shared premise.
 
@@ -256,7 +256,7 @@ The project uses several unlike results:
 | Modelica simulation | Plant and controller traces over selected weather, load, and tariff situations. | Rejects several storage-dispatch candidates and supports one timing range; does not provide observed physical performance or cover unmodeled installation effects. |
 | software-in-the-loop checks | Repeatable results for controller logic, state transitions, and selected properties. | Supports correspondence for the tested software edition; does not establish hardware timing, sensor behavior, actuator response, or building benefit. |
 | controller-in-the-loop trial | Measurements from controller hardware, sensor emulation, inverter interface, and selected fault injections. | Supports timing, I/O, fallback, and selected cycling claims for the bench configuration; does not establish installed hydraulic, acoustic, or occupant effects. |
-| installed-plant trial | Calibrated temperature, power, state, and fault observations during a bounded low-ambient interval. | Supplies observations and configuration grounds for the first increment's assessment; the receiving claim still needs the inference and joint conditions below. It does not establish seasonal reliability, another compressor variant, or every tariff policy. |
+| installed-plant trial | Calibrated temperature, power, state, and fault observations during a bounded low-ambient interval. | Supplies observations and configuration grounds for the first increment's assessment; the receiving claim needs the inference and joint conditions below. It does not establish seasonal reliability, another compressor variant, or every tariff policy. |
 | independent criticism | Compressor-map and maintenance-access checks by relevant specialists. | Exposes an out-of-envelope map region and an inaccessible recovery action; neither result alone decides release. |
 
 #### SYSE.10:5.1 - Finish with a Sufficient Direct Result
@@ -265,7 +265,7 @@ Suppose the immediate question is whether the completed one-hour trial met its d
 supply-water criterion. Its qualified measurement result gives 41.0–44.0 °C with a conservative 0.2 °C
 uncertainty bound covering that recorded interval and the named setup. The resulting 40.8–44.2 °C range lies
 inside the criterion. The engineer can finish: “The temperature criterion was met in this recorded trial under
-its qualified measurement conditions; use that result in the increment assessment.” This does not yet assess
+its qualified measurement conditions; use that result in the increment assessment.” This does not assess
 another operating interval or the cycling criterion. Repeating the measurement or creating a full account adds
 no required contribution to this direct question.
 
@@ -302,16 +302,16 @@ permit the prediction to support the temperature claim: its 40.6–43.6 °C rang
 the different necessary cycling premise. Their common applicability lets the engineer support the conjunction
 of these two criteria for the stated use. M17 and L4 are complementary grounds, not two votes for one claim.
 
-The engineer returns that bounded technical recommendation to the deciding Agent. The argument deliberately
+The engineer returns that bounded technical recommendation to the deciding Agent. The argument
 depends on the supplied professional qualifications; the addition above does not derive a measurement Method
 or validate the model. The results leave seasonal reliability, higher storage charge, another compressor and
 unexamined installation or maintenance consequences outside the supported claim. Specialist criticism of an
-inaccessible recovery action still matters to its own integration or assurance question. Passing these two
+inaccessible recovery action matters to its own integration or assurance question. Passing these two
 criteria does not settle every condition of integration, commissioning or permission.
 
 If an available specialist assessment already supplies this complete inference for the same configuration,
-criteria and E, use that assessment and its limits directly. Section :4.1.1 is needed only for the missing
-connection; it does not demand reconstructing an adequate argument in a second form.
+criteria and E, use that assessment and its limits. Use :4.1.1 for any missing
+connection.
 
 #### SYSE.10:5.3 - Change the Premise and Keep the Independent Result
 
@@ -368,10 +368,10 @@ the observations that would reopen it.
       argument can finish the assessment without duplicate reconstruction.
 - [ ] Rival explanations, common assumptions, contradictions, negative results, configuration mismatch, and
       affected-System evidence have been sought in proportion to the decision consequence.
-- [ ] The assessment states what is supported, contradicted, narrowed, or unresolved and how the decision changes;
+- [ ] The assessment states what is supported, contradicted, narrowed, or unresolved and what that means for the decision;
       it is not treated as authority or acceptance.
-- [ ] A further local probe comes from `C.11`, an experiment set or sequence from a specialist Method, and the
-      stopping and reopen conditions are explicit.
+- [ ] The stopping and reopening conditions are stated. If further evidence is chosen, use `C.11` for a local probe
+      or a specialist Method for a set or sequence of experiments.
 
 ### SYSE.10:8 - Common Failures and Repairs
 
@@ -442,10 +442,10 @@ in that case the answers coincide and a separate account has no demonstrated ben
 When direct comparative evidence is unavailable and obtaining it would cost more than its value to the decision,
 use qualified expert judgement with an explicit epistemic status, assumptions and limits.
 
-The narrower construction retains real dependence on domain qualification. It does not calculate M17's error
+The narrower assessment depends on domain qualification. It does not calculate M17's error
 model, establish the timing bounds or prove L4's behavior. When those results are missing, obtain the applicable
 technical contribution or return the gap. Count its acquisition, specialist access, computation, integration
-and later maintenance burden whichever assessment form is chosen. The worked comparison explains a
+and any later maintenance burden whichever assessment form is chosen. The worked comparison explains a
 conditional construction; it supplies no measured project saving or general superiority of one Method.
 
 Two further source contributions change the stop or the permitted inference:

@@ -7,8 +7,8 @@ many such Work occurrences, Agents, carriers, organizations, places, and periods
 culture. Its bounded result is distinct from the culture as a whole and does not by itself establish retention
 across the population.
 
-This distinction lets a practitioner stop early. Most uses end with a project result: a project brief, candidate
-set, demonstrated capability, performed Work occurrence, comparison, receiving-use decision, tested
-support-environment change decision, local practice-change result, or trajectory decision. Open continuation or
-cultural-development patterns only when the decision concerns reproduction across receivers, occasions, or a
-practitioner population.
+Many assignments end with a result for one project, such as a brief, composition, performance,
+observation, capability judgement or comparison. A supported proposal, an assessment of a
+change to practice or its environment, and a forecast may each answer a project question.
+Use the continuation or cultural-development methods when the question concerns reproduction
+by other participants, over further occasions or across a practitioner population.

@@ -4,64 +4,64 @@
 
 > **Type:** DPF pattern body
 
-> **Primary EntityOfConcern:** designing and repairing a narrative learning route so learners can reconstruct and use the relevant source relations.
+> **Primary EntityOfConcern:** a narrative learning route and the source relations learners need to reconstruct and use.
 
 ### NSTD.8:1 - Problem frame
 
-Use this pattern when a complex source structure must be taught, explained, or learned through a narrative route, and the route must preserve enough structure for learners to reconstruct and apply it later. The governed object is the instructional route and its relation to source structure, not every explanation or reference publication. A publication used only for lookup or a professional decision need not become a course.
+Use this method to design or assess a narrative learning route for a complex subject. Start from what learners will need to reconstruct or do. A source publication may already serve a lookup or professional decision directly.
 
-First useful move: begin at one consequential transition. Recover the current question, what the learner has already met, the contribution now needed and the support actually available there. Try the next task with that support, then repair the missing connection or choose the next useful teaching move.
+Begin at one consequential transition. What question is open, what material has the learner encountered and what will the next task require? Inspect the support available there. A missing prerequisite can be visible in the material. To find out how someone used it, examine a suitable earlier attempt or arrange one if the question warrants it.
 
 Choose the learning order from the learner's next action and intended later use. The source organization can support lookup, a first explanation, or a comparison of what several cases share. When later work requires choosing among similar cases, a route that names the topic for every task can leave that choice unpractised. Keep the source organization available and select the comparisons, mixed tasks, or later returns that the learning purpose requires.
 
-What goes wrong if missed: the explanation is engaging and memorable, but learners retain examples, slogans, analogies, and mood while losing architecture, relation records, proof obligations, pattern-use routes, source-return conditions, or improvement cycles.
+A learner may remember the examples and lose the relations needed to use them. In a technical lesson these can include the architecture, the conditions of a proof, when to select a method, where to verify a claim or how to improve a result.
 
-What this buys: a route that helps learners use the source ideas, with the needed material available when the next task requires it.
+A usable route makes the material available where a learner needs it to explain a relation or perform the next task.
 
 ### NSTD.8:2 - Problem
 
 A learning narrative uses sequence, examples, repetition, analogy and motivation to help the learner reconstruct and use source ideas. Those choices can also conceal a prerequisite or make an illustrative route appear to be the only way to perform a method.
 
-A course organized by topic can supply the method choice in each exercise's heading. If later work requires learners to make that choice themselves, successful exercises within those blocks leave an important action unpractised. The author must choose which cases learners need to compare, what material makes the comparison possible, and where independent selection belongs. Grouping episodes by case family and connecting the reasoning within an episode answer different design questions. A useful learning route preserves the relations needed for each action while choosing the order and later returns for the intended learning result.
+A topic heading can tell learners which method to use. Success inside that block leaves open whether they could choose among methods without the heading. Select cases that reveal the relevant similarities or differences, and supply enough material for learners to work with them. Arrange the order of exercises and the reasoning within each exercise for the actions they support.
 
 ### NSTD.8:3 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Didactic route vs source corpus | Learning order may differ from publication order, proof order, architecture order, or framework order. |
-| Source organization vs learning order | Source modules group material for reference and reuse; learning episodes arrange it for a learner's action. The useful grouping can coincide or differ. |
+| Learning order and source order | A sequence for teaching can differ from a publication’s organization, a proof’s dependencies or the architecture being explained. |
+| Reference and learning use | Keep source modules accessible for lookup. Use their grouping for teaching when it supports the learner’s next action. |
 | Shared basis vs distinguishing cases | A block can make a common relation visible across instances; a close comparison or mixed task can expose differences between similar alternatives. The learner's missing operation determines which arrangement is useful. |
-| Coverage vs spaced retrieval | A course can cover every topic once and still leave learners unable to retrieve earlier structures when they matter later. |
-| Engagement vs reconstruction | Learners may enjoy a story, analogy, example, or lesson without reconstructing source structure. |
-| Local teaching evidence vs package authority | Test-run evidence helps a learning route, but does not by itself make the package authoritative. |
+| Coverage and later retrieval | Encountering every topic once leaves open what learners can retrieve at the time of later use. |
+| Engagement and reconstruction | A learner may enjoy an analogy and still miss the relation it illustrates. Ask what they can reconstruct when that is the learning goal. |
+| Local teaching and authority | A lesson trial can show what particular learners did. Authority for a subject claim comes from its relevant source or practice. |
 
 ### NSTD.8:4 - Solution
 
-Design the needed transition and its continuation. If learners must interpret unfamiliar material, teach how to form and compare the account through NSTD.9; do not supply the interpretation in every prompt and then treat agreement as independent interpretation. If the task is to create a story, NSTD.10 supplies the construction to practise, including a changed premise. A learning route about a proof or technical method instead uses that subject's operations and standards of justification. These are different learning results, although all may use narrative presentation.
+Design the transition the learner needs and connect it to its next use. If learners must interpret unfamiliar material, teach them how to develop and compare interpretations through NSTD.9. To assess their independent choice, give them a question that leaves the choice to them. For creating a story, use NSTD.10 and let learners work through a changed premise. A narrative lesson on a proof or technical method takes its operations and criteria from that subject.
 
-The optional route note below helps when a team maintains a course, compares versions or coordinates several teaching materials. Keep the fields that those uses need; a short explanation does not require a full course record.
+A course team may want a note connecting several lessons, comparing versions or keeping their source relations traceable. Use the fields its work needs.
 
 ```text
 LearningNarrativeRoute@Context:
   learnerUse:
-  sourceStructureSpineRefs:
+  sourceRelationsNeeded:
   unfoldingStructureRefs?:
   demonstrativeSliceRefs?:
   sourceArchitectureRef?:
-  learningRouteArchitectureRule:
-  learningStepOrderingRule:
+  organizationOfLearningEpisodes:
+  reasoningAndOrderWithinEpisodes:
   interleavingPlanRefs?:
   spacingOrRetrievalScheduleRefs?:
-  recurringAnchorRefs?:
-  sourceReturnLinkRefs:
+  recurringExamplesOrPrompts?:
+  whereToReturnToTheSource:
   learnerReconstructionTaskRefs:
   applicationTaskRefs?:
-  engagementBoundaryRef?:
-  narrativeRenderingQualityEvaluationRef:
+  intendedUseOfInterestOrMotivation?:
+  routeEvaluationIfNeeded?:
   improvementLoopInputRef?:
   learningPublicationCarrierRefs:
-  blockedTopicOverread?:
-  nonAdmissibleUse:
+  choicesSuppliedByTopicLabels?:
+  limitsOnWhatTheResultsShow:
   refreshCondition:
 ```
 
@@ -69,67 +69,67 @@ A maintained course may have separate lessons, slides, exercises and recordings.
 
 When teaching a constraint-governed unfolding structure, make the wider possibilities recoverable alongside the demonstrated path. Teach an omitted alternative or stop condition at the point where it changes the learner's action. A route note can link the wider structure and the taught slice when that helps maintenance.
 
-The following design questions connect the route's components. They can be addressed together and revisited after an attempted task; each need not become a separate pass or work product.
+These questions can guide planning or the examination of an existing route. Return to the affected question when an attempt supplies new information.
 
 | Design question | Useful result | Failure it addresses |
 | --- | --- | --- |
 | Which source ideas will the learner need? | The relations and operations needed for later reconstruction or application. | A memorable example with no usable connection to the subject. |
 | Does the source organization suit learning here? | A reasoned choice of learning order, with the source organization still accessible. | Copying a reference topic map without considering the learning task. |
 | What must be available before the next task? | A sequence or usable return that supplies the prerequisite at that point. | Requiring an operation before its necessary relation is available. |
-| Which comparison or selection does the learner need? | The relevant cases, material sufficient for the intended action, and an order chosen through HCD.10:4.5 when grouping or mixing cases matters. | A needed relation remains hard to notice, or the topic label supplies a choice the learner must later make. |
-| Must the idea remain available after a delay? | Suitable later retrieval attempts and feedback. | Immediate recognition mistaken for durable retrieval. |
+| Which comparison or choice does the learner need? | Select cases with enough material to see the shared relation or distinguishing condition. HCD.10:4.5 helps choose an order for human practice when that choice matters. | The relevant difference is unavailable, or the heading makes the choice for the learner. |
+| Must learners retrieve the idea after a delay? | Compare an earlier demonstration with work after the relevant interval, under the help permitted then. Account for intervening practice that matters to a claim of retention. | Immediate recognition alone leaves later retrieval open. |
 | How does an aid connect to the current question and next use? | A meaningful term, diagram, question or case with its relation recoverable. | Remembering the aid but not what to do with it. |
-| What must the learner recover or perform? | A task that exposes the needed distinction or operation. | Satisfaction mistaken for practical capability. |
-| What result would change the route? | A scoped `NSTD.6` judgement and a worthwhile next repair. | Treating every teaching change as an improvement. |
+| What must the learner recover or perform? | A task whose response can show the relevant distinction or operation. | A report of satisfaction alone leaves capability open. |
+| What result would change the route? | Use an applicable NSTD.6 assessment to retain a sufficient version or choose a worthwhile repair. | A change is credited with improvement before its effect on the relevant quality is established. |
 
-Start from the intended reconstruction or application task and the learner's available preparation. If learning depends on recognizing a common relation across cases or distinguishing similar alternatives, apply HCD.10:4.5 to choose the comparison and its order. That operation can retain a block, bring contrasting cases together, or mix further cases for selection. Use its result to decide which cases and deciding relations the narrative must make available. When the basic operation still needs explanation or supported practice, supply that contribution through the subject method and §4.1.
+Start from the intended task and the preparation learners can use. When people must notice a common relation or distinguish similar alternatives, HCD.10:4.5 helps choose whether to retain a block, place cases side by side or mix further cases for practice in choosing. Make the deciding relations accessible in the narrative. When the basic operation itself needs explanation or supported practice, use the subject method and §4.1.
 
-Choose the material needed for one learner action or connected attempt as the episode you are arranging. For a direct comparison, two sentences in one paragraph may supply the relevant cases and difference. Applying a method to a system may require a sustained explanation and several cases across multiple pages. Paragraphs and pages carry the material; the intended action and its necessary support determine the extent to keep available together.
+Arrange an episode around one action or connected attempt. A two-sentence comparison can expose the difference between two alternatives. Applying a method to a system may need several pages and cases. Keep the information needed for the action accessible together.
 
-Then arrange the episodes and the reasoning within them. Keep the relation between successive claims recoverable: what question they address, what the next claim uses, or how a case changes the current account. Decide any further alternation within an episode from the comparison or reasoning needed there. A mixed sequence of practice tasks can therefore contain sustained explanations, each with its own order of claims.
+Order the episodes and the reasoning within them. A reader should be able to recover the question the next claim addresses, the premise it needs or how the next case changes the account. Alternate within an episode when the comparison calls for it. A mixed sequence of tasks can contain a sustained explanation for each.
 
-A question can remain open while intervening cases prepare its later development or resolution. Preserve the question across the switch and arrange the return; make the necessary relation available by the time a task depends on it. Use §4.1 to distinguish this purposeful preparation from a lost connection or an unsupported demand. A short comparison, a sustained explanation and a deliberate later payoff can each preserve the learner's thread.
+An author can open a question, develop it through intervening cases and return to it later. Let the learner find the earlier question again. Make its needed relation accessible before a task requires it. Section 4.1 helps distinguish a preparatory attempt from a missing connection or support.
 
-When later availability matters, select spaced returns through HCD.10:4.4, choosing retrieval and permitted support separately. Keep the members of a comparison jointly accessible when their relation is needed, even if practice with that comparison returns after a delay. Judge the design through the learner action under its actual support, using §4.1 and NSTD.6 for the corresponding observation.
+When people need later access to what they learned, use HCD.10:4.4 to choose a suitable interval. Decide separately what they must retrieve and what support they may use. Keep the cases of a needed comparison jointly accessible during that task, even when practice resumes after a delay. To judge actual use, examine the learner’s response under those conditions (§4.1 and NSTD.6).
 
 
 
 #### NSTD.8:4.1 - Check attachment and support at the next use
 
 
-Inspect the relation between a block or learning aid and both its surrounding context and its later use. What question is active, what distinction or action does this example, image, explanation or exercise enable, why is it needed here, and where will its result be used? A question, worked example, caption, short transition or later payoff can carry that relation. There is no compulsory five-field form and no quota of connective phrases. A repeated word is not enough when the reader still cannot connect the two uses.
+Connect the teaching material to the question at hand and to the use that follows. What can a learner do with this example, diagram or exercise, and where will that matter? A question, caption, worked example, short transition or later return may supply the connection. Check the endpoints of a repeated term or a diagram arrow when its meaning is unclear.
 
-Then inspect the route prefix: the material encountered up to the point where a new reconstruction or action is required. Identify the relevant distinctions already introduced, necessary prerequisites expected of this audience, newly introduced objects or relations, still-open questions and the means available now. Ask the reader to use those means on the next task. A relation shown only much later cannot support the current action unless a usable return makes it available. An overview is useful when it exposes the needed relation, not merely because it lists topics.
+Examine what is available by the time of the next task. Identify what this audience can already use, what the route has introduced, which questions remain open and which prerequisites the task needs now. An overview or a link can supply a missing relation if it makes that relation usable at this point. Inspect the material for a design judgement. Use a learner’s attempt when the question concerns what that learner actually did.
 
-Keep three different repair questions separate:
+Choose the continuation that fits the transition.
 
-- A missing attachment: restore the relation between the active question, the block or aid and its next use; correct a wrong return or an unexplained visual edge.
-- An unsupported new demand: supply the necessary contrast, map, worked operation, recap, accessible representation or introduction order before relying on that operation. Check the promised prerequisite and assistance first; do not simplify away needed subject structure.
-- A deliberate preparatory attempt: let the learner try a bounded problem before the explanation when that serves the learning design, preserve the attempted alternatives, and use subsequent instruction to compare and resolve them. Difficulty or an incorrect first attempt is not by itself a material defect, but unresolved failure is not evidence of productive preparation.
+- **The connection is missing.** Show how the block or aid bears on the current question and the next use. Correct a misleading diagram edge or a link to the wrong passage.
+- **The task needs support that is absent.** Check the expected prerequisite and permitted help. Supply the relevant contrast, map, worked operation, recap or accessible representation, or introduce it earlier. Preserve the subject relation the learner must use.
+- **The initial attempt prepares subsequent instruction.** A bounded problem can bring out alternatives before the explanation. Keep those attempts available and use the subsequent teaching to compare and resolve them. A later response can establish what the learner then did. To determine how the preparation contributed, use evidence that distinguishes its contribution, such as an applicable comparison.
 
-Use a stable supported initial case when the learner needs it to build the distinction before mixed selection. Interleaving, spacing and retrieval serve the declared later task; they do not require every first encounter to mix unfamiliar alternatives. Conversely, making every block easy by naming its answer does not test later independent selection. Judge the actual point and contribution rather than choosing one universal order.
+A supported initial case can help a learner form the distinction. When later work requires independent selection, include a case whose cue leaves that choice open. Select grouping, interleaving, spacing and retrieval for the particular action and time of later use.
 
-Preserve the first response before a cue supplies the distinction being tested. Report the allowed help, help actually used, source contribution and the reader's prior expertise. A teacher-supported correction may fulfil the declared arrangement while leaving independent first recognition untested. An expert's successful reconstruction does not erase a contrary report from a less-prepared reader. Use an appropriately scoped observation if that reader's difficulty can change the repair.
+To assess first recognition, preserve the response before supplying the deciding cue. State which help was permitted, what the learner used, what the source supplied and what prior expertise matters to the claim. A teacher-supported correction can satisfy a task that allows that help. An expert’s successful reconstruction and a novice’s difficulty may both be accurately reported. If the novice’s difficulty matters to a repair, use evidence that addresses it.
 
-Structural reconstruction demand is not experienced cognitive load. NSTD.6 applies C.2.8 as NarrativeRenderingEpiplexity to the narrative account, expression and observer under the selected reading conditions; it is neither a quantity to maximize unconditionally nor a burden meter. A material inspection or agent walkthrough can locate a missing relation and available support, but claims about human burden, learning, retention or transfer need their own observations and conditions. For reported burden, identify the person, segment, timing and instrument.
+In NSTD.6, NarrativeRenderingEpiplexity applies C.2.8’s ExtractableStructuralInformation to a narrative account, its expression and an observer. Ask which selected relations this observer could correctly recover under the stated conditions. Once those relations support the task, adding others can increase effort without improving use. A walkthrough can locate a missing relation or available help. For a claim about experienced human effort, identify the person, segment, timing and means of measurement. Learning, retention and transfer have their own evidence.
 
-Recheck the changed attachment, the affected prefix and its next task while preserving unaffected source and route results. If the intended reader already recovers the relation and completes that task with the declared support, density alone is not a reason to insert another aid. Use `E.23` for a worthwhile repair; shortening, added pictures or extra repetition are not improvements without a changed useful result and protected qualities.
+After a change, recheck the affected connection and what the learner needs at the next task. Retain material that already works with the intended support. For a proposed improvement, E.23 compares the useful result, the costs and the qualities to protect. A shorter explanation or an extra diagram earns its place through what it changes for this use.
 
-Use reconstruction tasks at several depths.
+Select a task that can reveal the outcome in question.
 
 | Task depth | Example task | What it tests |
 | --- | --- | --- |
-| Recognition | "Which method addresses this difficulty, and what tells you so?" | Whether the learner recognizes the conditions of use. |
-| Reconstruction | "Rebuild the pattern-use route from source basis, forces, solution, and exit." | Whether source structure survived the narrative. |
-| Transfer | "Apply the same route to a different domain case." | Whether the learner learned structure rather than anecdote. |
+| Recognition | “Which method addresses this difficulty, and what tells you so?” | Which conditions of use the learner recognized, given the cues available. |
+| Reconstruction | “Rebuild the route from the source, forces and solution to the point where you would use another method.” | Which source relations the learner reconstructed. |
+| Transfer | “Apply the same reasoning to a different domain case.” | What the learner can apply under the changed conditions. A claim about transfer from earlier learning also needs its earlier basis. |
 | Boundary | "When would you use another method, and which one?" | Whether the learner can select a useful alternative. |
-| Repair | "Given a low `NSTD.6` row, choose the smallest repair route." | Whether improvement discipline survived the lesson. |
+| Repair | “Given this NSTD.6 assessment, choose the smallest change that would remedy the loss.” | Whether the learner can use the assessment to select a sufficient repair. |
 
-Examples, stories, rhythm, repetition and analogy can all support learning. Keep a device when it helps the intended task. If a learner retains the device but misses a necessary relation, repair that connection rather than automatically adding or removing examples.
+Keep a story, rhythm, example or analogy when it serves the learning task. If a learner remembers it and misses the relation, check how the device, prior knowledge and available support bear on that difficulty before changing the material.
 
-For a small route, a short learner attempt or observed confusion may answer the current repair question. A repeated course may need to retain the version, audience, task, assistance and result so later comparisons remain interpretable. Collect more only when the result can change the design or intended use. A local teaching revision is not by itself a claim about evolution under `B.4`.
+A short attempt or an earlier account of a learner’s difficulty may answer a local question. For a comparison across runs, preserve the versions, learners, task, assistance and result needed to interpret it. Seek further observations when they could change a conclusion enough to justify obtaining them. To claim that the route evolved through repeated operation, use B.4.
 
-If the route is improved across runs, first evaluate the concrete route version through `NSTD.6`. Use `E.22` when learner value, floor, protected trade-offs, evidence, or result form are still underframed; use `E.23` to select and compare a repair to the version or a selected part such as source spine, learning-step order, reconstruction tasks, learning publication carrier, engagement boundary, or evaluation characteristic space. Use `G.11` when a change in source currentness, learner telemetry, teaching-test evidence, generated practice or FPF edition could alter support for the receiving use; use `B.4` only when making an evolution claim about the learning route as a holon across repeated operation.
+For improvement across runs, use a suitable NSTD.6 assessment of the affected version. E.22 helps define the intended benefit, minimum acceptable result, qualities to protect or evidence needed when any remains unclear. Use E.23 to select and compare a worthwhile change to the content, order, tasks, material, engagement or evaluation. Use G.11 when changed sources, learner observations, teaching results, generated practice or a new FPF edition could alter the route’s basis. B.4 addresses a claim that the route evolved as a whole through repeated operation.
 
 ### NSTD.8:5 - Archetypal Grounding
 
@@ -138,12 +138,12 @@ If the route is improved across runs, first evaluate the concrete route version 
 #### NSTD.8:5.1 - Worked learning route: FPF onboarding
 
 
-This example sketches the route that a seminar, tutorial or exercise sequence could realize. The note is optional; the important relation is between each teaching move and the next learner action.
+A seminar, tutorial or exercise sequence could use the design below. Each teaching move prepares an identifiable learner action.
 
 ```text
 LearningNarrativeRoute@FPFOnboarding:
-  learnerUse: new practitioner can apply one FPF pattern without treating it as a recipe
-  sourceArchitectureRef: FPF pattern language and monolith and source pattern organization
+  learnerUse: select and apply one FPF pattern under the conditions of a new case
+  sourceArchitectureRef: the pattern language, its organization of source patterns, and the collected FPF publication
   sourceSpineRefs:
     - `EntityOfConcern`
     - problem frame
@@ -154,38 +154,38 @@ LearningNarrativeRoute@FPFOnboarding:
     - quality and improvement loop
   unfoldingStructureRefs: A.22.CGUS when the route teaches unfolding from source to next use
   demonstrativeSliceRefs: first pattern-use route through one selected project case
-  learningRouteArchitectureRule: interleaved pattern-use route, not monolith-reference order
+  learningRouteArchitectureRule: revisit one pattern through several cases, keeping its source organization available
   learningStepOrder:
     - failed ordinary use
     - recover object of concern
     - read forces
     - choose solution move
-    - check boundary and neighboring owner
-    - repair one low-value result
+    - check the limit of this use and select a neighbouring method when needed
+    - use the assessment to repair one inadequate result
   interleavingPlanRefs:
     - return to `EntityOfConcern` after forces, solution, and quality checks
-    - mix adjacent owner-choice cases after each new pattern
+    - mix cases requiring a choice among the newly introduced and earlier methods
     - revisit source-return boundary in examples from at least two domains
   spacingOrRetrievalScheduleRefs:
     - short delayed retrieval at the start of the next session
-    - later mixed owner-choice task after intervening material
+    - choose among neighbouring methods after intervening material
     - final transfer task with no block label
   reconstructionTasks:
     - name the source pattern section behind each story beat
     - choose the governing pattern for a new case
     - state one source-return condition
-  engagementBoundaryRef: failure story is an archetype, not evidence
+  useOfEngagement: the failed-use story introduces the problem. A claim about an actual failure needs its own basis.
   evaluationRouteRef: `NSTD.6` learning-route rows
   improvementLoopInputRef: `E.23` when a comparison identifies a worthwhile improvement
 ```
 
-In this onboarding route, the opening failed use may be preparation rather than a failed capability assessment. The subsequent recovery of the object of concern must work with the attempted alternatives: show which object the next move governs and why the tempting alternative does not answer that question. Before the later neighbor-choice task, inspect whether those neighboring entries and their distinguishing condition are already available. If not, introduce the contrast or provide an accessible source return; merely adding another unlabeled failure would not supply it. If the entries are available, the mixed case can test their selection instead of prompting the answer.
+Here an initially unsuccessful attempt can prepare the discussion. Use the attempted alternatives to show which object the next move concerns and why the other choice would leave this question open. Before asking learners to choose between neighbouring methods, check whether they can access the methods and their distinguishing condition. If a contrast is missing, supply it or make the relevant source accessible. Once it is available, a mixed case can leave the choice to the learner.
 
-A concrete task in an introduction to FPF-based pattern use can use two neighboring NSTD methods already available in this publication. First make the distinction available: `NSTD.2` changes presentation order while preserving needed relations; `NSTD.3` examines the connection the account asserts. Then give the Readme's incident log, whose causal investigation is still open, and its draft “the change caused the failure”. Ask: “Would moving the two logged events into chronological order settle this sentence? Which question must the repair answer?”
+For example, NSTD.2 changes presentation order while preserving the needed relations. NSTD.3 examines a connection asserted by an account. Give learners the Readme incident log and the sentence “the change caused the failure.” Ask whether placing the two events in chronological order would settle the sentence, and what the repair would need to establish.
 
-A supplied response in this design example is: “Put the change before the failure, so the cause is clear.” That response preserves chronology but still infers cause from order. If the distinction was unavailable, provide it and work through the two claims before another selection task. If this was a deliberate preparatory attempt, subsequent instruction should use that attempted answer to explain why chronology leaves the causal question open. If both entries were already available, return to the sentence and ask what the log establishes; then use a mixed case to check whether the learner selects a connection repair rather than an ordering repair. These continuations answer different difficulties.
+Suppose a learner answers, “Put the change before the failure, so the cause is clear.” The answer gets the dates in order and infers cause from their order. If the necessary distinction was unavailable, explain it and work through the two claims. If the attempt was part of the preparation, use the answer in the ensuing instruction. If both methods were already accessible, return to what the log establishes. A later mixed case can test whether the learner recognizes a new connection claim without a supplied choice.
 
-A later diagram or recap should connect that choice to the next use. A wrong figure return calls for correcting the attachment, not automatically redesigning the entire course. After the repair, ask the reader to recover that relation and use it under the declared support. This is a worked design example with a supplied response, not an observation of a learner or a demonstrated learning gain.
+Connect a later diagram or recap to the next task. A wrong figure link can often be corrected locally. Inspect the new link to establish where it leads. To assess what learners can now recover, use evidence of their work with the revised material and the intended help. The answer above is part of the design example.
 
 For a seminar, add timing, facilitation notes and complete exercises suited to the participants and the intended next use.
 
@@ -204,9 +204,9 @@ Lesson 4: all engagement.
 Lesson 5: all evaluation.
 ```
 
-This outline gives learners the problem type inside each block. It may support first practice but leave later independent selection unpractised: a new failure may concern source selection, ordering, viewpoint, engagement, generation or the grounds for a claim.
+The headings identify the kind of problem in each block. This can support first practice. In an unfamiliar incident the learner may have to choose whether to check the source, reorder the account, change viewpoint, revise an expressive device, examine how it was generated or test a claimed connection. The blocked exercises alone leave that selection open.
 
-Repair the route:
+The team could retain the topic map and teach the choice through the following sequence.
 
 ```text
 LearningNarrativeRoute@NarrativeMethodsForEngineering:
@@ -218,29 +218,29 @@ LearningNarrativeRoute@NarrativeMethodsForEngineering:
     - viewpoint and agency split
     - engagement boundary
     - narrative rendering quality row
-    - source-return and owner routing
+    - where to verify a claim and which practice can answer an open question
   learningRouteArchitectureRule: spaced interleaving around recurring project cases
   learningStepOrder:
     - one motivating project failure
     - source-selection repair
     - different project failure requiring ordering repair
     - return to first failure and add viewpoint risk
-    - mixed owner-choice exercise
+    - choose the relevant method in a mixed exercise
     - delayed retrieval of source-return boundaries
     - final transfer to an unseen case
   interleavingPlanRefs:
-    - every session mixes at least one current pattern with one earlier pattern
+    - once an earlier method is familiar, mix it with a current method when learners need to distinguish them
     - adjacent failure modes are compared side by side
     - examples rotate across FPF seminar, architecture explanation, homotopy explanation, generated carrier, and live commentary
   spacingOrRetrievalScheduleRefs:
-    - start each session with a no-label retrieval task from a prior session
-    - return to `EntityOfConcern`, source-return, and owner-routing at increasing delays
-    - require one late repair of an old low-value row after new material intervenes
-  blockedTopicOverread: a clean topic block is not evidence of durable pattern choice
+    - after the first session, open a later session with an unlabelled retrieval task on an earlier case
+    - recall the object of concern, needed source and appropriate method at increasing delays
+    - repair an earlier inadequate result after new material intervenes
+  limitOfPractice: a topic-labelled exercise supplies the method name. Independent selection needs a task that leaves it open.
   evaluationRouteRef: `NSTD.6` rows for transfer, source return, and learner reconstruction
 ```
 
-The NSTD topic map remains available for lookup. The learning route revisits its methods under different cues so that the engineer must distinguish a source-selection problem from an ordering or viewpoint problem in a new explanation. This course practises narrative-method selection; capability to design the engineering system requires the corresponding engineering methods and tasks.
+The NSTD topic map remains available for lookup. Returning to the methods under different cues lets an engineer practise distinguishing source, order and viewpoint problems. To teach engineering design itself, use the relevant engineering operations and a task that calls for them.
 
 
 
@@ -259,36 +259,36 @@ LearningNarrativeRoute@HomotopyIntro:
     - proof-status return
   learningStepOrder:
     - image cue
-    - constraint marker
-    - formal definition return
+    - show which space the deformation must stay inside
+    - return to the formal definition of a continuous deformation
     - example
     - counterexample
     - reconstruction task
   reconstructionTasks:
-    - mark where analogy stops
-    - state which deformations are not allowed
-    - return one claim to formal source
-  engagementBoundaryRef: vivid image cannot replace definition
+    - identify the space in which every stage of the deformation must stay and a move that this excludes
+    - explain why the drawing alone cannot establish that the loop contracts in that space
+    - justify one claim using the formal definition and a relevant invariant
+  useOfEngagement: the picture introduces the question. The definition fixes the allowed deformations.
   evaluationRouteRef: `NSTD.6` rows for ordering, language-state precision, and source return
 ```
 
-If learners can retell the loop picture but cannot state the required constraint, repair the connection to the definition. A suitable example, counterexample or worked comparison may supply that repair.
+For example, draw a loop winding once around a missing point in the plane. Ask whether a continuous deformation inside that space can shrink the loop to a point. Its winding around the missing point prevents this. Fill the point back in and the loop can contract in the full plane. A learner who remembers the drawing can be asked which change in the allowed space changes the answer and why. The formal result supplies the criterion for judging their explanation.
 
 
 
 #### NSTD.8:5.4 - Worked learning route: using this pattern language
 
 
-A short course on this DPF may use the three probes: FPF seminar, franchise continuation, and homotopy explanation, with live commentary as a fourth transfer case. The route succeeds only if learners can see the same pattern set working across different domains:
+One short course uses an FPF seminar, a franchise continuation and a homotopy explanation, then turns to live commentary for a new application. The table shows the instructor which methods each case could teach.
 
-| Step | Probe | Pattern focus | Transfer question |
+| Step | Case | Methods for the instructor | Question for the learner |
 | --- | --- | --- | --- |
-| 1 | FPF seminar | `NSTD.1`, `NSTD.8` | What source spine must survive a learning route? |
-| 2 | Franchise continuation | `NSTD.1`, `NSTD.2`, `NSTD.3`, `NSTD.7` | What counts as source pack and event support when facts are prospective or fictional? |
-| 3 | Homotopy explanation | `NSTD.2`, `NSTD.5`, `NSTD.6` | Where does analogy stop and formal source return begin? |
-| 4 | Live commentary | `NSTD.3`, `NSTD.6`, `G.11` | Which claims are provisional until later source return? |
+| 1 | FPF seminar | NSTD.1, NSTD.8 | Which relations from the source will participants need after the seminar? |
+| 2 | Franchise continuation | NSTD.1, NSTD.2, NSTD.3, NSTD.7 | What does the existing canon establish, and what can the author propose or invent for the new events? |
+| 3 | Homotopy explanation | NSTD.2, NSTD.5, NSTD.6 | Which step needs a definition or proof beyond what the analogy supplies? |
+| 4 | Live commentary | NSTD.3, NSTD.6, G.11 | Which claims are supported now, and which would change with a later observation or official correction? |
 
-The transfer question tests whether the learner can choose the applicable pattern and repair the failure in a new situation.
+When learners see the method names, their explanations can show how they use those methods. To assess independent selection and repair in a new situation, give the new case without its method names or an equivalent cue. Ask them to choose, explain the relevant condition and make the repair. Record what help the task allowed and what they used.
 
 
 
@@ -298,24 +298,24 @@ The transfer question tests whether the learner can choose the applicable patter
 #### NSTD.8:5.6 - Evaluating the learning route
 
 
-Select the outcome needed for the declared teaching use. Immediate reconstruction, delayed retrieval, discrimination among similar cases and transfer to a new case require different tasks and observations. Success at one does not establish the others. A one-off explanation may need only immediate reconstruction; a course promising durable independent use needs an appropriately delayed and varied task.
+Select the task for the intended outcome. Immediate reconstruction, delayed retrieval, discrimination between cases and application to a new case call for different observations. A present response may complete an account of what a learner reconstructed. For durable independent use, compare an earlier demonstration with appropriately delayed work under the permitted support, accounting for relevant intervening practice. Vary the case when the claim includes use under that change.
 
-Use `NSTD.6` with the observer, prior preparation, assistance and reading conditions stated. Keep an author's walkthrough distinct from an observed learner result.
+Use NSTD.6 to distinguish a judgement about the design from the work of a particular learner. For a reading result, identify the task, observer, material, conditions and help relevant to the claim. Account for prior preparation when it affects the inference.
 
 
 
 #### NSTD.8:5.7 - Connecting route design to publication and improvement
 
 
-`NSTD.8` uses `E.11` for framework entry, `E.17` for publication form, `E.17.AUD` for a separately usable audience unit, `NSTD.5` for engagement and `NSTD.6` for evaluation. `E.22`/`E.23` support a selected improvement; `G.11` addresses an applicable source or practice refresh. A one-off explanation and a maintained course need different amounts of recorded design.
+For framework entry use E.11, for the publication form E.17, and for a separately usable audience unit E.17.AUD. NSTD.5 helps choose an expressive device when interest matters. NSTD.6 evaluates the route for its intended use. E.22 and E.23 support a proposed improvement, and G.11 a review after a relevant change. Keep the design detail a one-off explanation or maintained course needs.
 
-An FPF learning route, such as a seminar series or tutorial sequence, teaches the framework across several steps. The source-structure spine includes EntityOfConcern discipline, relation precision, pattern bodies, DPF authoring, architecture synthesis, evaluation, improvement loops, and source-return discipline. The learning order is didactic, not proof of FPF architecture. Learner tasks ask participants to reconstruct one pattern-use route from source basis and selected source structure, not only repeat a story or slogan.
+An FPF seminar or tutorial can connect the object of concern, precise relations, pattern bodies, DPF authoring, architectural synthesis, evaluation, improvement and return to sources. The teaching order serves the learner. For reconstruction, ask participants to recover one pattern-use route and its basis. Use the framework itself to establish its architecture.
 
-A homotopy mini-course may start with pictures and deformation stories. Its reconstruction task should reveal whether the learner can recover the required definitions and conditions. When an analogy conceals a constraint, a counterexample or comparison can show why the formal boundary matters.
+In the homotopy mini-course, ask learners to identify the permitted space and explain the two outcomes in §5.3. A drawing can introduce the problem, and the mathematical comparison can expose a missing condition. Use the learner’s own explanation to judge what they reconstructed under the support given.
 
-A DPF onboarding route may teach narrative rendering through three cases: FPF seminar, franchise storycraft, and live commentary. The route is successful only if learners can reconstruct why all three open `NSTD.1`, why different patterns become live later, and why `NSTD.6` evaluates a declared rendering version rather than a general story. The test is transfer across cases, not recall of the case names.
+An onboarding sequence could also use an FPF seminar, franchise storycraft and live commentary. Ask learners which source relations NSTD.1 helps recover in each case, which further method each problem needs, and why NSTD.6 evaluates a particular rendering and use. When the goal is transfer, add a sufficiently changed case and compare performance under the relevant conditions.
 
-Use `NSTD.7` to inspect a generated teaching draft against the source ideas and intended tasks. `NSTD.6` can evaluate it before acceptance. Apply `C.35` only when the generated result is being used for architecture work; producing a slide or example does not itself select that pattern.
+NSTD.7 helps examine generated teaching material against the source and the intended task. Use NSTD.6 for an assessment that admission or another use needs. C.35 addresses use of the generated material in architectural work.
 
 Distinguish versions when comparing repeated teaching or maintaining materials. The following optional note is useful when the comparison needs these details.
 
@@ -333,100 +333,100 @@ LearningNarrativeRouteVersion@Context:
   refreshCondition:
 ```
 
-For a comparison, identify which material and order each group encountered and what changed. Re-evaluate the affected outcome before claiming improvement. An untracked slide change may still be useful, but cannot support a precise comparison of course versions. A relevant source change calls for reviewing the affected teaching content.
+For a comparison, identify which materials and order learners encountered and what differed. Compare the affected outcome with a suitable baseline, including any qualities to preserve, before claiming a gain. If no one tracked a slide change, other evidence may establish which version was used. Review the teaching that depends on a materially changed source.
 
 The following example plan connects subject content, the immediate teaching move and a later use. Adapt its timing and returns to the learner's task.
 
-| Source-spine item | Narrative or teaching move | Interleaving or spacing move |
+| Source relation or operation | Immediate teaching move | Later practice when needed |
 | --- | --- | --- |
-| Pattern entry condition | Recognition story, contrast case, or failed-use story. | Return after two other pattern cases and ask for owner choice without a label. |
+| Pattern entry condition | Practitioner incident, contrasting case or failed-use example. | Return after two other cases and ask which method fits, without naming it. |
 | Forces | Tension sequence, stakeholder conflict, or trade-off map. | Compare with a different pattern's forces in a mixed exercise. |
-| Solution move | Demonstration, guided reconstruction, or worked slice. | Reuse the same project case later with a different repair owner. |
-| Boundary and non-use | Counterexample, wrong-owner case, or blocked overread. | Start a later session with a delayed boundary retrieval question. |
-| Relations | Neighboring-pattern exit exercise. | Interleave adjacent exits so the learner must discriminate them. |
-| Quality and improvement | Low-value row and repair exercise. | Revisit an old low-value row after new material and require a changed-slice repair. |
+| Solution move | Demonstration, guided reconstruction or worked example. | Reuse the project case with a problem requiring another kind of repair. |
+| Boundary and non-use | A counterexample or a case where another method is needed. | In a later session, ask learners to recall when to stop using this method. |
+| Relations | Ask which neighbouring method supplies the outstanding contribution. | Mix cases requiring different choices. |
+| Quality and improvement | Diagnose an inadequate result and select a repair. | Revisit it after intervening work and ask learners to revise the affected part. |
 
-The left column names the source ideas to recover; the middle names an immediate teaching move; the right shows a possible later return. Use the last column when delayed retrieval or mixed selection is part of the goal. Its presence alone does not establish learning, and its absence is not a defect in a route that does not need those outcomes.
+The last column gives possible later work when the goal includes delayed retrieval or method selection. A response can establish what a learner did at that time and with that support. For a learning claim, establish a change from earlier capability. To credit the route, also establish how it contributed to that change.
 
-Examples of different learning aims:
+Different courses can use the same design questions.
 
-| Route type | Source spine | Narrative devices allowed | Reconstruction evidence |
+| Course | Source material | Possible narrative devices | What to examine |
 | --- | --- | --- | --- |
-| FPF onboarding route | Pattern entry, EoC, forces, solution, relations, checks, improvement loop. | Practitioner story, failed-use contrast, recurring source-return prompt. | Learner selects correct owner and reconstructs one pattern-use route. |
+| FPF onboarding | Pattern entry, object of concern, forces, solution, relations, checks and improvement. | Practitioner problem, contrasting uses, recurring source question. | How the learner chose an applicable method and reconstructed a pattern-use route. |
 | Mathematical explanation route | Definitions, examples, theorem prerequisites, proof-status boundaries. | Analogy, diagram story, dependency sequence, counterexample. | Learner marks where analogy stops and returns to formal statement. |
 | Architecture explanation route | Candidate structures, characteristics, decisions, trade-offs, telemetry. | Trade-off story, viewpoint over stakeholder role, decision-memory path. | Learner separates architecture description, decision, realized structure, and telemetry. |
-| Generated teaching route | Selected source relations and the intended learner operation. | Generated examples or slides inspected through `NSTD.7`, with `C.35` only for architecture use. | Learner tasks for the intended outcome; direct comparison with the sources where fidelity is claimed. |
+| Generated teaching material | The source relations and the intended learner operation. | Generated examples or slides examined through NSTD.7. For architectural work, C.35 also applies. | Compare the material with its sources for fidelity. A learner’s response can show performance on the task. To claim learning, establish a change in capability. To credit this material, establish its contribution to that change. |
 | Live debrief route | Event record, provisional interpretation, official correction, source return. | Recap story, tension order, role viewpoint. | Learner distinguishes observation, inference, prediction, and official update. |
 
-For a short one-off teaching note, the route can be tiny: one source-spine item, one ordering rule, one reconstruction question, one source-return link. For a repeated seminar or course, the route should have versioned carriers, task results, and low-value repairs. The size changes; the source-return discipline does not.
+A short teaching note can give one needed source relation, an order for explaining it, a reconstruction question and a way back to the source. For a maintained course, identify versions and retain the learner results that a promised comparison needs. Revise the parts for which a change is warranted.
 
-Do not use popularity as learning evidence. Attendance, satisfaction, applause, or "people liked the story" may be engagement telemetry, but it is not reconstruction evidence. Reconstruction evidence asks whether learners can rebuild the source relation, apply it to a new case, name a boundary, or choose a repair.
+Attendance, applause and satisfaction can tell an organizer about participation or reaction. To establish what learners reconstructed, examine which relation they can explain or apply, which boundary they recognize or how they choose a repair.
 
 ### NSTD.8:6 - Bias-Annotation
 
-A learning route can be mistaken for the subject it teaches: its lesson order, exercise sequence or analogy then replaces the source relations. Keep those relations available and show how each teaching move prepares the next learner task.
+Learners may take a sequence of lessons or an analogy as the structure of the subject. Give them access to the source relations and show why the lesson uses this particular order.
 
-Copying the source corpus's modules into a course can leave later selection unpractised. Keep the source modules available, then add interleaving or spacing when the learner must later discriminate, retrieve or transfer relations across topic boundaries.
+Modular source publications support reference. Reusing the modules as lessons can leave learners with little practice choosing across them. When they need to distinguish cases, include a comparison. When they need to retrieve a relation later, plan its return and the support permitted then.
 
 ### NSTD.8:7 - Conformance Checklist
 
 | Check | Passing condition |
 | --- | --- |
-| `CC-NSTD8-1` | Learner use and source-structure spine are named. |
-| `CC-NSTD8-2` | Learning-step ordering rule and source-return links are explicit. |
-| `CC-NSTD8-3` | Learner reconstruction tasks test source structure, not only recall of narrative highlights. |
+| `CC-NSTD8-1` | The design names the intended learner action and the source relations it requires. |
+| `CC-NSTD8-2` | The order serves the learner’s task, and the learner can reach the sources needed for it. |
+| `CC-NSTD8-3` | The reconstruction task lets a learner demonstrate the needed source relation. |
 | `CC-NSTD8-4` | Lessons, exercises and other learning materials make their needed source relations and tasks available at the point of use. |
-| `CC-NSTD8-5` | A claimed improvement identifies the compared route versions, affected outcome, relevant costs and protected qualities; `NSTD.6` supports evaluation and `E.22`/`E.23` the applicable improvement question. |
-| `CC-NSTD8-6` | Source organization, the order of learning episodes and the reasoning within them are distinguished. The learner's intended action determines the needed comparison, sufficient material and available support. Selected grouping, mixing and later returns serve that action. When spacing is used, its timing is distinguished from retrieval and support choices. |
-| `CC-NSTD8-7` | Material attachments and consequential prefixes connect the current question, available structure/support and next use; missing relations, unsupported demands and deliberate preparatory attempts receive different repairs or continuation. |
-| `CC-NSTD8-8` | First and helped responses, source contribution, prior expertise and human learning or burden claims retain their own evidence boundaries; structural density is not treated as observed cognitive load. |
+| `CC-NSTD8-5` | The comparison supports a claimed improvement on the affected outcome, at acceptable cost and with protected qualities preserved. Use NSTD.6 for the assessment and E.22 or E.23 for the improvement work the case requires. |
+| `CC-NSTD8-6` | Distinguish source organization, episode order and reasoning within episodes. The intended learner action determines what to compare, what should remain accessible together and what help is appropriate. For a spaced return, choose separately when it occurs and what learners must retrieve. |
+| `CC-NSTD8-7` | At a consequential transition, learners can relate available material to the question and next use. Address a missing connection or prerequisite where it is needed. Follow a deliberate preparatory attempt with instruction that uses the attempted alternatives. |
+| `CC-NSTD8-8` | Interpret first and assisted responses under the actual preparation and help. Ground claims about the source, learning and experienced effort in evidence of each. |
 
 ### NSTD.8:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | What fails | Repair |
 | --- | --- | --- |
-| Learning route as source structure | Lesson sequence, seminar order, analogy chain, or explainer order is treated as framework architecture, proof order, or source structure. | Declare learning-step ordering rule and source-return links. |
+| Lesson order mistaken for the subject’s structure | The explanation presents one sequence or analogy as the architecture or order of proof. | Explain the teaching choice and give a usable return to the subject relation. |
 | Reference order chosen without examining the learning task | The topic map is copied into lessons without checking what the learner must subsequently recognize, select or use. | Keep a source-aligned introduction when it supplies the needed support. Add contrasts, mixed selection or delayed retrieval when the intended outcome calls for them. |
-| Blocked practice fluency | Learners perform well inside a topic block because its label supplies the method choice. | Use an unlabelled or mixed new case to test selection or transfer. Add delayed retrieval when later availability is also part of the claim. |
-| Recall as reconstruction | Learners remember examples but cannot use patterns. | Add reconstruction and application tasks; evaluate through `NSTD.6`. |
-| Fluent blocks without a usable connection | Each paragraph reads well, but the current question, aid or later use cannot be related. | Inspect both endpoints and the affected prefix; restore the missing relation or usable return, then repeat the next task. |
-| Difficulty judged without its teaching function | Every hard transition is compressed, or every unsuccessful attempt is called productive. | Separate an unsupported demand from deliberate preparation; provide the missing support or make subsequent instruction resolve the attempted alternatives. |
-| Teaching tweak as evolution | A revised slide, example, or prompt is described as evolved route quality without telemetry and re-evaluation. | Treat the tweak as an `E.23` changed slice after `NSTD.6`; use `G.11` for refresh and reserve `B.4` for actual evolution claims over the route across operation. |
+| Fluent performance in labelled topic blocks | The label supplies the method choice that later work requires learners to make. | Examine an unlabelled or mixed case for selection. Use a suitable change to assess transfer and a suitable delay to assess retention. |
+| Remembered examples mistaken for reconstructed relations | The learner can repeat the anecdote, while their command of the relation remains open. | Examine their work on a reconstruction or application task. Use NSTD.6 when an evaluation is needed. |
+| Fluent paragraphs with a missing connection | The example reads smoothly, but the learner cannot relate it to the active question or later use. | Inspect the two passages and what is available at that point. If repair is wanted, restore the relation or the return to it. To judge the revised task in use, examine a suitable attempt. |
+| Difficulty judged without its instructional purpose | A difficult transition is removed, or an unsuccessful attempt is credited with teaching the relation. | Supply a missing prerequisite. For a preparatory attempt, use its alternatives in the following instruction and check any claimed learning outcome. |
+| A local revision described as evolution | One change to a slide is offered as evidence about the course across repeated operation. | Use NSTD.6 to assess a version, E.23 to compare a proposed improvement and G.11 for an affected change of basis. Use B.4 for a claim of evolution through repeated operation. |
 
 ### NSTD.8:9 - Consequences
 
-The benefit is a path that helps learners recover and use the source ideas. Its cost is designing the necessary connections and obtaining observations proportionate to the learning claims made.
+The designer obtains a route connecting source material, available support and intended learner actions. It takes work to build those connections. Evidence of actual responses, retention and transfer costs time when a claim about them is needed.
 
 ### NSTD.8:10 - Rationale
 
-Different learning aims require different combinations of explanation, examples, attempts, feedback and later returns. Keeping the subject structure accessible permits a teaching route to vary those combinations without making the lesson sequence the only account of the subject.
+Explanation, examples, attempts, feedback and later returns serve different learning aims. Keeping the source structure accessible lets the teacher vary their order while learners can still recover the subject on its own grounds.
 
 A modular source corpus can support lookup and a first introduction while still leaving later selection unpractised. When learners must choose among similar methods without a topic label, the learning route needs those contrasts and selection tasks. When later retrieval matters, it needs an appropriate delay and return. The source organization remains available; whether the learning order should follow it depends on the task and the support already available.
 
 ### NSTD.8:11 - SoTA-Echoing
 
-Mengelkamp et al.'s "Effects of Reading Goal Instructions on the Comprehension and Metacomprehension of Informative Narratives" makes study goals and metacomprehension risk visible; Georgiou et al.'s "Large-scale study of human memory for meaningful narratives" shows that long narratives can be remembered as gist and sequence rather than source detail; Hoffmann's "The Tensions of Scientific Storytelling" supplies a science-storytelling example where unresolved tension and source return matter. Dunlosky et al.'s "Improving Students' Learning With Effective Learning Techniques" rates practice testing and distributed practice as high-utility techniques and treats interleaved practice as promising for appropriate situations. Rohrer and Taylor's "The shuffling of mathematics problems improves learning" directly shows the risk of standard blocked textbook practice and the benefit of spaced and mixed practice in mathematics problems. Kang's "Spaced Repetition Promotes Efficient and Effective Learning" gives a policy-level synthesis: spacing repeated encounters with material improves long-term learning and can be combined with tests. `NSTD.8` retains the Dunlosky, Rohrer–Taylor and Kang contributions as historical anchors for spacing and interleaving questions. The bounded source contributions here inform learning-route design, reconstruction and source return, not a complete pedagogy doctrine.
+Mengelkamp and colleagues compared factual and inferential responses under different reading goals. Results for those goals varied across their two experiments, and readers’ estimates could exceed their performance. Georgiou and colleagues found that scrambling narrative clauses affected free recall much more than recognition. Hoffmann illustrates how scientific storytelling can sustain a tension and return to its source. Earlier work on practice supplies distinct grounds. Dunlosky and colleagues rated practice testing and distributed practice highly and discussed interleaving for suitable tasks. Rohrer and Taylor found advantages of spaced or mixed practice on later tests of the mathematics problems they studied. Kang reviewed how repeated encounters can be spaced and combined with testing.
 
-For the attachment and prefix-support work, [Noetel et al. (2022)](https://journals.sagepub.com/doi/10.3102/00346543211052329) supports mechanism-specific attention to signaling, correspondence and pacing rather than a rule to add pictures everywhere. [Sinha and Kapur (2021)](https://journals.sagepub.com/doi/abs/10.3102/00346543211019105) supports distinguishing problem solving followed by instruction from unsupported failure; its conditional, largely mathematics/physics evidence does not make all difficulty productive. [Wesenberg et al. (2025)](https://doi.org/10.1016/j.cedpsych.2024.102328) motivates checking whether a worked example also permits a consequentially wrong rule; the studied brief units do not establish a universal order for long routes. [Krieglstein et al. (2025)](https://doi.org/10.1007/s10648-024-09980-0) shows why retrospective load reports need an explicit timing and segment: the reported primacy effect concerns self-report in the studied setting, not a conversion from source-structure density to human burden. These contributions qualify the choice of support and the inference from a reader response; none validates this entire route method or its ordinal values.
+[Noetel et al. (2022)](https://journals.sagepub.com/doi/10.3102/00346543211052329) reviewed multimedia design, including signalling, correspondence and pacing. Select the feature that addresses the learner’s difficulty. [Sinha and Kapur (2021)](https://journals.sagepub.com/doi/abs/10.3102/00346543211019105) compared instruction before and after problem solving, with substantial evidence from mathematics and physics. A preparatory task needs subsequent instruction that uses the attempted solutions. [Wesenberg et al. (2025)](https://doi.org/10.1016/j.cedpsych.2024.102328) showed in short units that a worked solution can also fit a misleading rule. Check whether an example distinguishes the intended rule. In [Krieglstein et al. (2025)](https://doi.org/10.1007/s10648-024-09980-0), the complexity of the first unit influenced the overall effort reported after a sequence of three. Identify the person, segment, timing and instrument when interpreting such a rating.
 
-Operational payload:
+Apply these findings to the particular teaching aim.
 
-- From reading-goal work, declare the learner use before the lesson route. A route for curiosity, exam preparation, professional use, or framework authoring needs different reconstruction tasks.
-- From metacomprehension risk, ask learners to reconstruct or apply source structure, not only rate whether they understood.
-- From memory work, long routes need anchors and returns. Repetition should protect source spine rather than repeat slogans.
-- For durable retrieval, consider spaced practice and delayed retrieval rather than infer retention from immediate success. Judge the result under the actual schedule and task.
-- From interleaving work, blocked topic practice can hide the real choice problem. Mix adjacent owners, cases, or problem types when the learner must later decide which structure applies.
-- Preserve the source organization for lookup and source return. A first introduction may follow it when that supplies the needed support; choose a different order for a later task that requires contrasts, mixed selection or delayed retrieval.
-- From scientific storytelling, unresolved tension can be taught honestly. The route can preserve open questions instead of pretending closure.
-- For a claimed teaching improvement, compare the relevant route versions and affected outcomes. A low score is not required before a worthwhile improvement can be considered.
+- State the learner’s purpose before choosing the tasks. Curiosity, an examination, professional use and framework authoring can call for different responses.
+- Compare a learner’s judgement of understanding with their reconstruction or application when the accuracy of that judgement matters.
+- Give learners a way back to a needed source relation across a long narrative. Use a recurring prompt when it helps them recover that relation.
+- For later retrieval, consider distributing practice and examine performance after the relevant delay, under the stated support.
+- Where a topic label normally supplies the choice, compare similar cases or mix problem types to give learners practice selecting the appropriate method.
+- Keep the source organization accessible for lookup. Retain its order when that supports a first introduction. Use a different order when later work requires a contrast, mixed selection or a delayed return.
+- Preserve an open scientific question when current evidence leaves it open. The tension can itself be part of the teaching.
+- Compare the relevant course versions and outcomes when claiming an improvement. A worthwhile change can improve an already adequate result.
 
-The practical result is a route whose explanations, attempts and later returns support the declared learner use. Keep an adequate source-aligned segment; repair a missing connection, an unsupported demand or an unpractised selection only where it changes the intended result.
+Retain a source-aligned segment that already serves its purpose. A missing connection, an unsupported demand or an unpractised choice gives the designer a specific change to consider.
 
 ### NSTD.8:12 - Relations
 
-Apply HCD.10:4.5 when the route needs a choice between grouping and mixing cases. It returns the comparison and order for the learner's current difficulty; NSTD.8 uses that choice to determine the material and narrative connections needed at the point of use. HCD.10:4.4 selects spaced returns with retrieval and support conditions kept separate.
+For a human learning route, HCD.10:4.5 helps select grouping or mixing when the comparison and order matter. Keep the material learners need for that comparison accessible at the point of use. HCD.10:4.4 helps select a spaced return, the retrieval to practise and the help permitted there.
 
 
-Uses `A.6.3.NAR`, `E.6`, `E.11`, `E.17`, `E.17.AUD`, `NSTD.1`, `NSTD.2`, `NSTD.5`, `NSTD.6`, `E.21`, `E.22`, `E.23`, `B.4`, and `G.11`. `NSTD.5` bounds motivation and interest; `NSTD.6` evaluates one route version; `E.22` frames under-specified quality questions; `E.23` selects and compares improvements to a route version or selected part; `G.11` addresses changed currentness when it could alter support for the receiving use; `B.4` is only for evolution claims over the learning route. Reopen the affected choice when a change in learner use, source spine, source architecture, learning-route architecture, interleaving plan, spacing or retrieval schedule, teaching-test evidence, source currentness, edition or evaluation result could change the route's supported use. Support-map entry: open `Architecture and Narrative Work Bridge` when the learning route narrates architecture, copies source architecture as course architecture, uses views, source spine, or actual-structure feedback; open `Semiotic And Language-Precision Bridge` when didactic coarsening, cue or backoff, explanation, style, or language-state choice matters; open `Source Use And Refresh Map` when teaching, memory, cognition, interleaving, spacing, or learner-test source support changes; use the refresh route when changed learner telemetry could change the route's supported use.
+For the narrative and its source use A.6.3.NAR, E.6, NSTD.1 and NSTD.2. E.11, E.17 and E.17.AUD support entry and publication. NSTD.5 helps choose a device for interest or motivation. NSTD.6 assesses a particular narrative version for its intended use. Use E.21 when the object to evaluate is an edition of an FPF pattern. E.22 frames an open quality question, and E.23 compares proposed improvements. Use G.11 when a change in sources, learner preparation, task, practice, scheduling, edition or observations alters the basis for use. Use B.4 for evolution through repeated operation. [NSTD.Reference:9](09-nstd-reference-9---architecture-and-narrative-work-bridge.md) addresses source architecture, views and evidence about the realized structure. [NSTD.Reference:10](10-nstd-reference-10---semiotic-and-language-precision-bridge.md) addresses wording, cues, explanation and loss of precision. [NSTD.Sources:1](26-nstd-sources-1---source-use-and-refresh-map.md) helps trace changed teaching, memory or practice evidence to the parts of the course that depended on it. Use [NSTD.Reference:14](14-nstd-reference-14---refresh-the-affected-narrative-use.md) when changed observations of learner work could affect the route’s supported use.
 
 ### NSTD.8:End

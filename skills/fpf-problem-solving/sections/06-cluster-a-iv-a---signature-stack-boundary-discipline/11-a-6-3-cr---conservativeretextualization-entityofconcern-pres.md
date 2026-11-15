@@ -269,7 +269,7 @@ The synthesis remains in this pattern only while its source relation is explicit
 
 **English reader gloss (comprehension aid only).** `The backup controller remains in passive observation mode until the primary loop fails two consecutive heartbeat checks.`
 
-The gloss helps an English-only reader follow the example and find the claim being re-expressed. It is a comprehension aid, not a second source or verification of the Russian translation. A conservativity claim still requires suitable language competence or other evidence for the same-claim, same-EntityOfConcern, and hidden-bridge tests.
+Russian *пока … не* uses a negative particle where English *until the primary loop fails* has none. In both versions the backup continues to watch until the primary has failed two checks in a row. Omitting the second failure or reversing the condition changes the event up to which passive watching is required. The gloss helps an English-only reader follow this difference. It is a comprehension aid, not a second source or verification of the Russian translation. A conservativity claim still requires suitable language competence or other evidence for the same-claim, same-EntityOfConcern, and hidden-bridge tests.
 
 This remains in `ConservativeRetextualization` only if the translation is tethered to the same source claim, preserves the same EntityOfConcern, and adds no claim beyond the source. Apply F.9 only when a semantic Bridge between local senses or a proposed bounded use of that Bridge is claimed.
 

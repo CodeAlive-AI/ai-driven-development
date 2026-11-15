@@ -4,20 +4,20 @@
 
 ### SYSE.14:0 - Use This When
 
-Use this pattern when a workflow says that an engineering change is *approved*, *released*, *deployed*, or
-*implemented*, but the receiving Agent still cannot tell what may happen next, to which actual Systems, under
-whose authority, on what evidence, or under which conditions.
+Use this pattern when a workflow calls an engineering change *approved*, *released*, *deployed* or *implemented*, but
+the receiving Agent cannot tell which work or use may follow for the release subject and any affected units, who has
+authority, what the evidence supports or which conditions apply.
 
-Begin with one question: may an identified description, software package, or actual System in a stated
-configuration enter named Work or use—for example, realization, integration, trial, deployment, delivery, or
-service? A release decision relates that subject to a permitted next use under stated conditions; a generic status
-label does not.
+Begin with one question: may an identified description, software package, or actual System
+in a stated configuration enter named Work or use—for example, realization, integration,
+trial, deployment, delivery or service? The release decision specifies that use, its subject and its
+conditions.
 
-The first useful result is a **bounded engineering release decision**. It states what may enter the named Work or
-use, for which units and conditions, what evidence and authority support the decision, what remains blocked, and
-what later observation reopens it. The decision is an episteme. Separate evidence establishes the deciding
-Agent's authority and any required permission, the observed configuration, performed change Work, resulting
-transformation, and operating result.
+The first useful result is a **bounded engineering release decision**. It states the disposition for the named Work or use, the release subject
+and its applicable conditions, any units or intended configurations covered, the supporting evidence and authority, any scope withheld, and
+what would reopen the decision. The decision is an episteme. Establish the deciding Agent’s authority and any required permission on
+their own grounds. An assertion about an observed configuration, completed change Work, resulting transformation or operating result
+needs evidence for that assertion.
 
 Use `SYSE.13` when the immediate difficulty is identifying the relevant units, configurations, or effectivity.
 Use `SYSE.19` when a changed source may invalidate an earlier decision. Use a governing FPF pattern directly when
@@ -52,7 +52,7 @@ Work; and invalidate descriptions or supporting evidence. A release for realizat
 under the applicable release rule. A release to service normally concerns an actual System in an observed configuration after
 implementation. Treating both as one generic approval loses the decision subject and its evidence.
 
-Workflow tools can coordinate records and checks, but their status labels are not the engineering ontology.
+Workflow tools can coordinate records and checks, but a status label can denote several different engineering results.
 *Approved* can denote, for example, acceptance for analysis, technical selection, permission, release for build,
 a gate result, an installed-state claim, or acceptance for use. Those results have different Agents, authority,
 evidence, subjects, and consequences.
@@ -60,16 +60,16 @@ evidence, subjects, and consequences.
 ### SYSE.14:2 - Problem
 
 The recurring engineering difficulty is to move fast without releasing the wrong change, the wrong unit, or a
-change supported by evidence from another configuration. A usable release decision answers seven questions:
+change supported by evidence from another configuration. A usable release decision answers the following questions:
 
 1. What identified description, software package, or actual System in which configuration may enter the named
    Work or use?
-2. Which actual units, sites, intervals, and operating conditions are covered?
-3. What current configuration basis connects the candidate, descriptions, and actual Systems?
-4. Which affected Systems, interfaces, Work, obligations, and downstream consequences can change the choice?
-5. Which Agent makes the decision, what authority obtains, and which separate permissions are required?
-6. Which evidence supports which claim for this configuration and use, and what material uncertainty remains?
-7. What may happen next, what remains withheld, and which change or observation reopens the decision?
+2. Which units or intended configurations, sites, intervals and operating conditions does the release cover?
+3. What configuration basis connects the candidate and descriptions to those Systems or intended configurations for this use?
+4. Which affected Systems, interfaces, Work, obligations and downstream consequences bear on the choice or its conditions?
+5. Which Agent makes the decision, what gives that Agent authority for this decision, and which separate permissions are required?
+6. Which evidence supports each claim for this configuration and use, and is there any material uncertainty?
+7. What may happen next, is any scope withheld, and what change or observation would reopen the decision?
 
 Without those answers, a technically sound change can reach an incompatible unit, a valid partial release can
 wait behind irrelevant approvals, or a green status can conceal missing implementation and operating evidence.
@@ -87,12 +87,12 @@ Recurring tensions include:
   configurations.
 - Automated checking shortens feedback, while decision authority and any required legal, safety, commercial, or
   organizational permission need their own grounds.
-- Change Work continues; one release question still needs a usable current answer.
+- As change Work continues, the deciding Agent needs an answer to the release question at hand.
 
 ### SYSE.14:4 - Solution
 
-Develop one bounded release decision around the named next Work or use. Carry forward only the configuration,
-consequence, authority, permission, and evidence claims that can change that decision.
+Develop one bounded release decision around the named next Work or use. Carry forward the configuration, consequence, authority,
+permission and evidence claims needed to select or justify the disposition and its conditions.
 
 Use an established professional release result or qualified software-delivery result directly when it already
 answers this subject's next-use question with the required evidence and permissions. When a needed connection
@@ -110,50 +110,50 @@ may justify a checked addition without a new standing workflow.
    consideration; its relevant configuration; the named next Work or use; the deciding Agent; the interval and
    conditions; and the current options. The option set may include release, narrower release, trial, withholding,
    rejection, or obtaining another result first.
-2. **Establish the configuration and effectivity.** Use a compatible `SYSE.13` result or qualified direct sources
-   for the units, descriptions, installed realizations, sites, intervals, and conditions that matter. Return a
-   missing configuration result instead of guessing correspondence.
-3. **Separate the trigger from the candidate.** Record the triggering event—for example, a request, criticism,
+2. **Establish the configuration and effectivity.** Use a compatible `SYSE.13` result or qualified direct sources for the descriptions,
+   configurations, units, sites, intervals and conditions relevant to this release. When a necessary correspondence
+   is missing, identify it and the release decision it prevents.
+3. **Separate the trigger from the candidate.** Record the event that prompted reconsideration—for example, a request, criticism,
    incident, opportunity, or source change—with its evidence status. Describe viable change candidates separately.
    Keep the unchanged-System option when viable; treat deferral as a decision to await an event or obtain another
    result.
-4. **Trace consequences far enough to change the choice.** Identify affected actual Systems and relations,
-   descriptions, realization and integration Work, provider and receiving Agents, obligations, supporting evidence,
-   and reversibility. Use files, team names, and hyperlinks to locate relevant records or Agents, then establish
-   the affected world-side objects and relations.
-5. **Name the Agents and governing relations.** Identify the Agent making the release decision, Agents granting
-   required permissions, Agents performing later Work, and receiving Agents. State assignments, authority,
-   permissions, conflicts of interest, and abstention conditions separately.
+4. **Trace the consequences that bear on the choice or its conditions.** Identify the affected Systems and relations,
+   descriptions, realization or integration Work, provider and receiving Agents, obligations, supporting evidence and reversibility
+   that matter to this decision. Use files, team names and links to find the relevant records or Agents, then establish
+   the engineering objects and relations affected.
+5. **Name the Agents and governing relations.** Identify the deciding and receiving Agents, who grants any required permission, and
+   who is assigned to perform later Work when that assignment bears on this decision. State the applicable assignments,
+   authority, permissions, conflicts of interest and abstention conditions separately.
 6. **Qualify the evidence.** Connect each evidence result—for example, a test result, model evaluation, trial
    observation, specialist result, or assurance result—to the claims, configurations, conditions, and uses it
    supports. When a relied-on source changed, use a compatible `SYSE.19` result or reopen the affected claim
    directly.
-7. **Compare the current options.** Hold the option set and comparison basis stable long enough to choose. State
-   protected characteristics, acceptable losses and material uncertainty. Use `C.11` for the choice itself.
-   When further evidence is being considered because it could change this choice or its warranted use, compare
-   the feasible next observation's cost and decision value. Retain the resulting inquiry judgement or limitation
-   needed by this decision or its recipient. When no further inquiry is selected, no new observation proposal or record is needed.
-8. **State and return the release decision.** Name the selected disposition, subject, effectivity, conditions,
-   evidence, authority, permissions, unresolved risks, permitted next Work, withheld scope, and reopen conditions.
-   If a decision-changing input is missing, return that missing result rather than *approved with caveats*.
-9. **Connect later realization.** When implementation or integration has occurred, identify
-   the performing Agent, dated Work, Method, actual transformation, resulting configuration, and observations.
-   Update affected descriptions and recipients, but do not use a record update as proof of realization.
+7. **Compare the current options.** Hold the option set and comparison basis stable long enough to choose.
+   State protected characteristics, acceptable losses and any material uncertainty. Use `C.11` for
+   the choice. If further evidence could change the choice or its warranted use, compare the cost
+   of obtaining the next feasible observation with its value for the decision. Retain any inquiry judgement or limitation the decision
+   or recipient needs. Choosing to proceed on the available evidence requires no new observation proposal or inquiry record.
+8. **State and return the release decision.** Name the selected disposition, subject, effectivity, conditions, evidence, authority and
+   any required permissions. State the permitted next Work, any unresolved risks or withheld scope, and what would reopen the decision.
+   If a necessary input is missing, identify it, the decision it prevents and any narrower release the available grounds support.
+9. **Connect later realization.** When implementation or integration has occurred, identify the performing Agent, dated
+   Work, Method, actual transformation, resulting configuration and observations. Update affected descriptions and notify the recipients.
+   Ground the realization claim in evidence of what took place; an update to a status field alone does not establish it.
 
 A release for realization can occur before implementation; release to service can depend on later implementation
 and observation; emergency containment Work can precede a full technical choice under its own authority. The case
-must state its actual dependencies and timing.
+must state which dependencies and timing apply.
 
 #### SYSE.14:4.2 - Record the Result
 
 | Field | Required content |
 | --- | --- |
 | release question | Release subject and kind, deciding Agent, receiving Work or use, current options, interval, and conditions. |
-| configuration and effectivity | Identified actual Systems; actual constituents, obtaining relations, and characteristic values; relevant descriptions; supporting evidence; and the subjects and conditions to which the decision applies. |
+| configuration and effectivity | The relevant descriptions, configurations, supporting evidence and the subjects and conditions covered. For an existing System, identify the actual units, constituents, obtaining relations and characteristic values on which the decision relies. For release before realization, identify the intended configurations to which the description or package will apply. |
 | trigger, candidates, and consequences | Trigger with epistemic status; viable candidates; affected Systems, interfaces, Work, obligations, downstream consequences, reversibility, and retained alternatives. |
-| Agents, authority, and permissions | Deciding, permission-granting, performing, and receiving Agents; assignments; direct authority and permission relations; conflicts and abstention conditions. |
-| evidence and choice | Evidence for each claim, with provenance and limits; comparison basis; selected disposition; accepted losses; material uncertainty; the judgement or limitation from a live inquiry alternative when needed by this decision or its recipient. |
-| decision and continuation | Released, narrowed, trial-only, withheld, rejected, or probe-again result; next Work allowed by the governing rules and permissions; withheld scope; blockers; withdrawal and reopen conditions. |
+| Agents, authority, and permissions | Deciding and receiving Agents and the relation that grants authority for this decision. For any required permission, identify its grantor, holder, subject, scope and interval. State the relevant assignments, including the performer of any assigned later Work, and any conflicts of interest or abstention conditions. |
+| evidence and choice | Evidence for each claim, with provenance and limits; comparison basis; selected disposition; accepted losses; any material uncertainty; the judgement or limitation from a live inquiry alternative when needed by this decision or its recipient. |
+| decision and continuation | Released, narrowed, trial-only, withheld, rejected or probe-again result; next Work allowed by the governing rules and permissions; any withheld scope or blockers; and the conditions for withdrawal or reconsideration. |
 | later realization, when relevant | Performing Agent, dated Work, Method, actual transformation, resulting configuration, observations, description updates, recipients, and known correspondence gaps. |
 
 The result may be carried, for example, by an issue record, release note, model view, linked engineering
@@ -166,7 +166,7 @@ Engineers stop treating *approved*, *merged*, *passed*, and *released* as interc
 They can release a supported subset of units and add independent evidence or permission where the change's
 consequences require it.
 
-The receiving Agent gets a usable next action: perform the named Work, use the released configuration, obtain a
+The receiving Agent can tell whether to perform the named Work, use the released configuration, obtain a
 missing result, or stop. On later implementation or operating evidence, the authorized deciding Agent may narrow
 or supersede the release decision; the earlier decision and performed Work retain separate identities.
 
@@ -182,10 +182,10 @@ protection change. The configuration basis from `SYSE.13` distinguishes four gro
 | S006–S008 | IO-B, current calibration evidence, installed candidate realization, and chamber-test evidence. | Eligible for the current service-release comparison. |
 | S009–S010 | IO-B; database says *installed*, but current calibration and cold-start evidence are absent. | Trial or service release is not supported by the current evidence. |
 
-The original request asked for release to all ten units. The engineering team retained three real options:
-withhold service release on the changed units; admit S006–S008 to monitored service; or extend a trial to
-S006–S010. The last option failed the stated calibration-evidence threshold. Withholding avoids exposure to
-the changed configuration but keeps the three otherwise eligible units out of service for now.
+The original request asked for release to all ten units. The engineering team retained three options: withhold
+service release on the changed units; admit S006–S008 to monitored service; or extend a trial to S006–S010.
+The last option failed the stated calibration-evidence threshold. Withholding avoids exposure to the
+changed configuration but keeps the three otherwise eligible units out of service for now.
 
 The release board acts as the deciding Agent and has authority for this service-release decision. An independent
 safety team acts as the permission-granting Agent; its permission covers only S006–S008, the named temperature
@@ -220,15 +220,15 @@ The engineer adds the service decision to the existing change account and links 
 permission. For this single subset release, the team chooses that checked addition over configuring a workflow
 to maintain the same connections automatically. It accepts manual revalidation after an affected record changes.
 Recurring releases could justify the maintained workflow; either approach needs the same choice, evidence and
-permission. Neither a package's software approval nor its installation record already answers this service question.
+permission. Neither approval of the software package nor its installation record answers this service question.
 
-The decision can supply bounded evidence to `SYSE.4`, whose assurance Work may still find an unsupported claim or
-return a blocker. The release decision itself establishes no assurance conclusion.
+The decision can supply evidence to `SYSE.4` for the claims, units and interval it covers. The assurance judgement can support reliance within that scope,
+identify an unsupported claim or return a blocker. It needs grounds beyond the fact that release was granted.
 
-**When the full pattern is unnecessary.** A reversible internal script has one known configuration, no physical
-effectivity question, and an established deployment Method that already supplies the needed choice, evidence,
-permission, Work, and rollback results. Use those direct patterns instead of constructing a connected engineering
-release case.
+**When the full pattern is unnecessary.** A reversible internal script has one known configuration,
+no physical effectivity question, and an established deployment Method that supplies the
+needed choice, evidence, permission, Work and rollback results. Use those results for this
+deployment.
 
 ### SYSE.14:6 - Bias Annotation
 
@@ -236,30 +236,30 @@ A document-control Method can turn every change into a long approval chain. A so
 green pipeline result as universal release authority. Scale scrutiny to consequence and reversibility while keeping
 actual Systems, descriptions, evidence, authority, permission, and performed Work distinct.
 
-Official procedures, vendor workflow labels, and declared conformance support claims about their records or
-requirements. Actual enacted practice, effectiveness, and configuration need their own evidence. Use expert
-judgement with an explicit epistemic status when broader field evidence is unavailable.
+Official procedures, vendor workflow labels and declared conformance can establish what was recorded or what a procedure requires.
+Claims about what participants did, how effective it was or what configuration resulted need evidence for that claim. When broader
+field evidence is unavailable, give any expert judgement and its epistemic status.
 
 ### SYSE.14:7 - Conformance Checklist
 
 - [ ] One release subject, release kind, receiving Work or use, deciding Agent, and current option set are stated.
-- [ ] The configuration basis concerns the same actual Systems, descriptions, conditions, and release question.
+- [ ] The configuration basis covers the release subject, its applicable conditions and the same next-use decision, including the actual units when the release concerns them.
 - [ ] The decision uses each approval or completion status only for what it establishes. Any required permission,
       claimed installation or resulting configuration has its own support.
 - [ ] Consequence tracing reaches affected Systems and direct relations, not only files, departments, or links.
 - [ ] Every relied-on authority, permission, and evidence result has the subject, scope, interval, and source
       needed by the decision.
-- [ ] The comparison basis, selected disposition, retained alternatives, acceptable losses and material
+- [ ] The comparison basis, selected disposition, retained alternatives, acceptable losses and any material
       uncertainty are recoverable. Any live inquiry alternative is resolved sufficiently for the choice, with
       the judgement or limitation needed by the decision or its recipient; inactive inquiry adds no entry.
 - [ ] Any claimed implementation identifies the performing Agent, dated Work, Method, actual transformation,
       resulting configuration, and evidence.
-- [ ] The result states permitted next Work, withheld scope, blockers, and withdrawal and reconsideration
-      conditions.
+- [ ] The result states the permitted next Work, any withheld scope or blockers, and the conditions for withdrawal or
+      reconsideration.
 
 ### SYSE.14:8 - Common Failures and Repairs
 
-These recurring release errors change the next permissible action:
+These errors can change which action is permitted next.
 
 | Failure | Repair |
 | --- | --- |
@@ -268,16 +268,16 @@ These recurring release errors change the next permissible action:
 | Gate pass equals release | Use the gate result as one premise and state the release subject, kind, and effectivity separately. |
 | Release equals implementation | Identify performed Work and actual transformation, or state that they remain future. |
 | Updated status equals actual configuration | Obtain evidence about the identified units and keep the status as a claim. |
-| Apply one software pipeline to every engineered System | Select review, automation, assurance, and permission by consequence, reversibility, and the actual System or intended System referent selected for engineering and the use this release permits, including bounded creator acceptance when that is the current question. |
+| Apply one software pipeline to every engineered System | Select review, automation, assurance and any required permission for the consequences, reversibility, actual or intended System and use under consideration. When the question is acceptance by a creator, apply those criteria to the activity or use that creator is accepting. |
 | All units inherit one release | Name supported units and conditions; narrow or withhold the rest. |
 | A changed source reopens everything | Trace the changed claim and reconsider only the affected decisions. |
 
 ### SYSE.14:9 - Consequences
 
 Release speed and scrutiny can vary with consequence without losing accountability. Implementation, operation,
-maintenance, and assurance receive a decision that names configuration, effectivity, evidence, authority, and
-next Work. Mixed physical and software changes can share one connected case while retaining their own Work
-cadences and evidence.
+maintenance and assurance receive a decision that names configuration, effectivity, evidence, authority and
+next Work. Related physical and software changes can share one release case while their Work retains its own cadences
+and evidence.
 
 Consequential cases cost additional impact recovery, evidence maintenance, and authority checks. Some decisions
 must remain narrowed or blocked. Specialist rules—for example, safety, legal, cybersecurity, medical, aviation,
@@ -297,25 +297,25 @@ reconsideration.
 **Working question:** How should an engineer obtain a justified release for named Work or use without adding
 approval and record-keeping work that cannot change that decision?
 
-The selected line reuses an adequate professional release process or qualified software-delivery path and
-constructs only a missing connection needed by the receiving decision. A competent CM process can already
-relate affected-function contributions, implementation costs, dependencies, effectivity and release. A software
-path can combine peer review, automated feedback, recorded authorization and additional scrutiny for material
-risk. Use either result directly when it covers the same release subject and next use; :4 makes this the
-ordinary entry rather than requiring a second release account.
+An adequate professional release process or qualified software-delivery path can supply the bounded decision.
+A competent configuration-management process can already relate affected-function contributions,
+implementation costs, dependencies, effectivity and release. A software path can combine peer review, automated
+feedback, recorded authorization and additional scrutiny for material risk. Use the result directly when
+it covers this release subject and next use; construct a missing connection only when that decision needs it
+(:4).
 
-The authored connection matters when those results do not yet answer the receiving question. In :5, installed
-software and package approval do not decide whether the identified controllers should enter monitored service.
-Steps 2, 5–8 connect unit-qualified evidence and independent permission to the board's explicit comparison.
-The case shows why monitored service is preferred to withholding under the stated illustrative evidence,
-priority and accepted burden. Eligibility alone leaves that preference unresolved.
+For the controllers in :5, installation and package approval leave a separate question:
+may these units enter monitored service? Steps 2 and 5–8 connect unit-qualified evidence
+and independent permission to the board's comparison. The stated priority, evidence
+and accepted monitoring burden explain why the board prefers monitored service to
+withholding. Eligibility alone leaves that preference unresolved.
 
-A workflow that maintains these connections and returns the same bounded decision is a serious alternative
-to constructing it from existing records. Compare both for the same service question and assurance needs.
-The case accepts manual checking and revalidation for one subset release, retaining the result in the existing
-account. An integrated workflow can become preferable when repeated releases justify its construction and
-upkeep. Neither path reduces the required evidence or permission. This is an explicit trade-off, not measured
-superiority of a manual case or a universal argument against release automation.
+A workflow can maintain the connections needed for the bounded decision. Compare it with
+a checked addition to existing records for the same service question and assurance needs.
+The team accepts manual checking and revalidation for one subset release. An integrated workflow
+can become preferable when repeated releases justify its construction and upkeep.
+Both paths must meet the same evidence and permission requirements. This example illustrates the trade-off; it supplies no measured comparison
+of their performance or general basis for preferring either path.
 
 | Source answer considered | Disposition in this Method | Scope and limit |
 | --- | --- | --- |
@@ -332,19 +332,19 @@ changes the relying step only where it supplies the same required result under a
 
 - `C.11` governs choice among current options. `A.21` governs a gate decision. `A.2.8.PER` governs permission,
   `A.15.1` Work, `A.3.4` actual transformation, `F.10` status, `A.10` evidence, and `B.3` assurance. This pattern
-  composes their results for one engineering release and replaces none of them.
+  connects the relevant results for one engineering release.
 - `C.2.1`, `E.17`, and `E.24.PUB` keep change descriptions, decision epistemes, publications, forms, and carriers
   distinct from the changed System and performed Work.
 - A compatible `SYSE.13` result supplies configuration and effectivity only for the same change and release use.
   It establishes neither permission nor release.
-- A compatible `SYSE.19` result supplies revision consequences only for decisions that relied on the changed
-  source. Co-use does not impose a universal temporal order.
+- A compatible `SYSE.19` result supplies revision consequences only for decisions that relied on the changed source. Use it before a release
+  when the change bears on that choice, or return to an existing release when a later or newly discovered change bears on its grounds.
 - Restored-function evidence from maintenance or operation can support only the same actual System,
   configuration, conditions, and claim. It neither selects the change nor authorizes release.
-- `SYSE.14` can supply bounded evidence to `SYSE.4` for the same release question and evidence window. `SYSE.4`
-  performs its own assurance Work.
+- `SYSE.14` can supply bounded evidence to `SYSE.4` for the same release question and evidence window. Use a matching assurance judgement where it already exists; when one is needed,
+  obtain it through the applicable assurance work.
 - Application moves—such as software deployment, electrical energization, medical-device release, ship
   alteration, building commissioning, or manufacturing release—may specialize the Method because their project
-  Systems-of-interest, permissions, evidence, and effectivity differ. They are not synonyms merely because each can use this pattern.
+  Systems-of-interest, permissions, evidence, and effectivity differ.
 
 ### SYSE.14:End

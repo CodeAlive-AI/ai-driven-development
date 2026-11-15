@@ -23,9 +23,9 @@ New Methods can improve detection or response while adding training, integration
 
 State the maintenance result and conditions for the comparison. Recover the failure mechanism, consequence, condition information, support, access and operating needs that can change the answer. Compare the current Method with plausible alternatives at that same use.
 
-Describe the action-changing difference. Is the candidate a different task, a changed trigger, another diagnostic interpretation, a revised response rule or only a different description or software implementation? Keep those objects distinct when continuity, training or evaluation depends on them. A useful Method change should alter what the practitioner notices, decides, does, needs or obtains.
+Describe what would change in practice. Is the candidate a different task, a changed trigger, another diagnostic interpretation, a revised response rule or only a different description or software implementation? Keep those objects distinct when continuity, training or evaluation depends on them. A useful Method change should alter what the practitioner notices, decides, does, needs or obtains.
 
-When a useful predictive alternative still has to be constructed, use [MNT.2:4.1.1](13-mnt-2---select-and-reopen-the-maintenance-policy.md#mnt2411---build-and-improve-a-predictive-maintenance-option) to connect the estimate, intervention rule and obtainable support. Bring back an executable option and its consequence comparison. This can include changing preparation or access, or improving the forecasting rule through the interventions it selects. Use already adequate alternatives directly.
+When a useful predictive alternative still has to be constructed, use [MNT.2:4.1.1](13-mnt-2---select-and-reopen-the-maintenance-policy.md#mnt2411---build-and-improve-a-predictive-maintenance-option) to connect the estimate, intervention rule and obtainable support. Bring back an executable option and its consequence comparison. This can include changing preparation or access, or improving the forecasting rule through the interventions it selects. Use existing alternatives directly when they suffice.
 
 Compare practical worth over a relevant horizon. Include preparation, acquisition, configuration, competence, interpretation, false responses, missed conditions, maintenance of the tool, supplier dependence and exit where they matter. Use [FPF C.11.MV](../../../sections/09-part-c---kernel-extension-specifications/25-c-11-mv---compare-the-worth-of-a-method-option.md) for the practical-worth comparison and [FPF A.3.1.MV](../../../sections/05-part-a---kernel-architecture-cluster/27-a-3-1-mv---construct-and-maintain-a-method-variant.md) when variant identity or maintenance of the repertoire needs that more general Method.
 
@@ -33,9 +33,9 @@ Test the candidate against a consequential unlike case. A Method useful for a vi
 
 Choose a feasible change when current observations, an applicable model or a reasoned expert estimate make its expected improvement worth the transition and continuing burden. Name the first executable move and obtain the support it needs. A sufficient comparison can justify beginning the change before its eventual benefit has been observed; retain the distinction between that expected benefit and the outcome subsequently obtained.
 
-Use existing evidence first. If it already establishes that the candidate cannot support the needed response, reject it for that use without a trial. If it supports retaining the current Method, return that decision. When an uncertainty could change the choice, assess what a feasible trial or analysis could actually discriminate and the whole burden of obtaining that result. Do not turn a possible study design into an obligatory next task.
+Use existing evidence first. If it establishes that the candidate cannot support the needed response, reject it for that use without a trial. If it supports retaining the current Method, return that decision. When an uncertainty could change the choice, assess what a feasible trial or analysis could distinguish and the whole burden of obtaining that result.
 
-Select the supported continuation. State the changed or retained Method and its applicability, the description or tool that will carry it, any real transition support and the condition for reopening the choice. A selected change remains a proposal until performed. Claims about improved maintenance outcomes require evidence at the relevant use, not just successful installation of a tool.
+Select the supported continuation. State the changed or retained Method and its applicability, the description or tool that will carry it, any support the transition needs and the condition for reopening the choice. A selected change remains a proposal until performed. Claims about improved maintenance outcomes require evidence at the relevant use, not just successful installation of a tool.
 
 Refresh selectively when a failure, operating condition, support arrangement or answer-changing source result changes. An annual reminder can prompt attention, but currentness is established by the comparison that matters, not a date stamp.
 
@@ -45,9 +45,9 @@ A constructed fleet comparison considers replacing periodic condition interpreta
 
 For the current use, existing provider information shows no improvement in the feasible response: the same specialist and part constraint dominates, while the new arrangement adds interpretation and integration work. The engineer retains the current Method and addresses the support deficiency. No new live trial is needed to answer that question.
 
-A different unit family has a supported rapidly changing condition and a genuinely available response. The candidate may be useful there. A bounded comparison can therefore select a separate Method variant instead of a fleet-wide replacement, provided the obtainable evidence warrants the change.
+A different unit family has a supported rapidly changing condition and an available response. The candidate may be useful there. A bounded comparison can therefore select a separate Method variant instead of a fleet-wide replacement, provided the obtainable evidence warrants the change.
 
-In PS17, long-horizon recurrence remains unresolved after the local repair. The current account can be retained while a future Method comparison is reserved for evidence that changes the policy or response. “Complete a new trial” is not a universal stop condition.
+In PS17, long-horizon recurrence remains unresolved after the local repair. The current account can be retained while a future Method comparison is reserved for evidence that changes the policy or response.
 
 ### MNT.14:6 - Bias-Annotation
 
@@ -63,7 +63,7 @@ Any trial has an attainable decision-changing purpose. A supported comparison ca
 
 A higher model score is treated as a better maintenance Method. Follow the prediction through interpretation, support and actual response. A software upgrade is called a Method change without an action-changing difference. State what the practitioner does differently.
 
-A comparison ends only after a trial because the template requires one. Use current evidence when it already settles the choice; select a trial only for the remaining worthwhile uncertainty.
+A comparison ends only after a trial because the template requires one. Use current evidence when it settles the choice; select a trial only for the remaining worthwhile uncertainty.
 
 ### MNT.14:9 - Consequences
 

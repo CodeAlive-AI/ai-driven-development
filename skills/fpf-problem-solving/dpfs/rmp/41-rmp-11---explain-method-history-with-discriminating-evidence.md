@@ -4,140 +4,140 @@
 
 > **Type:** Method pattern
 >
-> **Primary working result:** a **differentiation account** with a dated sequence, named pressure/response/variation/selection links, serious rivals, diagnostic observations, and graded claims. When a receiving decision needs causal reliance, RMP.11 also returns one separate `C.28` causal-use support result; the downstream architecture decision remains a third episteme.
+> **Primary working result:** a **differentiation account** of a dated change in a Method, family or relation among Methods. For an explanatory question, identify the proposed links, serious rivals, diagnostic observations and degree of support. If a use requires causal reliance, give a separate `C.28` causal-use support result. A present architecture decision requires its own criteria and authority.
 
 ### RMP.11:0 - Use This When
 
-Use this pattern when an identified Method, independently established family inclusion, or named relations among Methods are treated as natural or inevitable and a present decision depends on how that differentiation arose. Typical questions concern why a variant appeared, why one contribution separated from another, why a provider or profession retained a form, or why a relation changed under pressure.
+Use this method to investigate how an identified Method, an independently established family or a named relation among Methods changed. You may want to know when a variant appeared, why a contribution separated, why a provider or profession retained a form, or how an environmental change affected practice. Establish what happened before deciding how well the evidence explains it.
 
-Begin by bounding the exact Method, established family inclusion, or relation change to explain and the decision that will use the account. Decide immediately whether the receiver needs only a dated descriptive account or intends to rely on a causal conclusion.
+Identify the Method, established family inclusion or relation at issue, the change and the period. Ask whether the recipient needs its chronology, evidence comparing explanations, or support for a specified causal claim. If a current decision uses that history, identify which conclusion it needs.
 
-The first useful result can be a descriptive stop: a dated sequence with source and evidence limits. When causal reliance is live, name the causal-use question, claim kind, causality-ladder rung, and required support before constructing the explanation.
+A first useful result may be a dated sequence with its sources and limits. For causal reliance, specify the question, claim kind, rung of the causality ladder and support required.
 
-Do not use a project-local grouping label as a professional-family fact. Use ordinary chronology work when a list of dates already answers the question. RMP.11 examines what the documented changes and competing accounts support; it may finish with the bounded descriptive result the receiver needs. Popularity alone does not explain differentiation, and a present architecture choice remains a separate decision.
+A local name can identify candidates for investigation. Establish professional family membership from independent evidence. If ordinary chronology answers the question, use it directly. Use RMP.11 to determine what the documented changes or competing accounts support. Popularity can help locate a diffusion question. When a present architecture choice also needs the history, assess that choice by its own criteria and authority.
 
 #### RMP.11:0.1 - Working Distinctions
 
 | Name used here | Meaning |
 | --- | --- |
-| explanandum | One identified Method, established family inclusion, or named Method relation and the differentiation that the present decision needs explained. |
-| differentiation account | An episteme containing dated description, link claims, rivals, diagnostic observations, grades, limits, and reopen conditions. It does not select today's architecture. |
-| descriptive sequence | Dated source editions, Work evidence, variants, disappearances, and decision points with no causal-use claim. |
-| link claim | A proposed relation among pressure or environmental change, affected actor or carrier, response or variation, selection/retention, and Method or relation change. |
+| explanandum | The differentiation to explain in an identified Method, an independently established family inclusion or a named relation among Methods. |
+| differentiation account | A dated account of the change and its evidence. For an explanatory inquiry it includes link claims, rivals, diagnostic observations, support grades, limits and conditions for reconsideration. |
+| descriptive sequence | Dated editions, evidence of Work, variants, disappearances and decision points for the period in question. |
+| link claim | A proposed connection among a pressure or change, an affected actor or carrier, a response or variation, its selection or retention, and the resulting change in a Method or its relations. |
 | rival | A materially different account such as constraint, provider/tool availability, regulation, authority, diffusion/fashion, recording artifact, redesign, or survivorship bias. Rivals may coincide. |
-| causal-use support result | A separate `C.28` result that states the question, claim kind, rung, actual support-component refs, threat screen, verdict, supported/unsupported uses, limits/window, and reopen. |
-| non-causal observation or hypothesis | A separately named descriptive result that may justify a bounded probe without licensing a causal claim. |
-| downstream architecture decision | A separate authorized choice that cites only support allowed by the causal verdict and keeps its own criteria, authority, stops, and burden. |
+| causal-use support result | A separate `C.28` result naming the question, claim kind and rung, with references to the findings that supply the required support and to the assessment of common threats. Its verdict identifies supported and unsupported uses, limits, time window and grounds for reconsideration. |
+| non-causal observation or hypothesis | An observation or proposed association reported at its supported scope. It may help design a bounded probe. |
+| downstream architecture decision | A separate authorized choice with its own criteria, conditions for stopping and resource burden. Any causal premise it uses must fall within the causal-use verdict. |
 
 ### RMP.11:1 - Problem Frame
 
 An account of professional Method change relates variants recorded in successive sources to changes in institutions, tools, regulation and local Work. It examines deliberate redesign, diffusion, fashion, retention and loss. Questions about variants and selection help develop competing accounts. Process-tracing research supplies methods for examining the sequence within a case, rival explanations and diagnostic observations.
 
-For a causal use of the historical explanation, use C.28. A plausible sequence can support description and hypothesis while leaving an interventional claim unsupported. The pattern therefore separates differentiation, causal support, and current choice.
+Use C.28 when an inquiry or decision relies on a causal part of the historical explanation. An established sequence can support description and a hypothesis. To claim what an intervention would do, establish the required support for the interventional use.
 
 ### RMP.11:2 - Problem
 
-Chronology is often narrated as cause: a pressure appears, a practice changes, and the account says “therefore”. Search frequency or institutional prominence is treated as adoption evidence. Surviving versions hide abandoned variants. A project-local label is promoted into a professional family.
+A pressure can precede a change for several reasons. Search frequency can measure attention, and institutional promotion can document publicity. Where the question concerns adoption, seek evidence of use. In an account of historical alternatives, look for abandoned variants that surviving editions omit. A claim of professional family membership needs grounds beyond a local grouping.
 
-The downstream decision then consumes a causal premise that no identified result supports, or a useful descriptive account is discarded because it cannot prove causality.
+A historian can report an established change while its cause remains unresolved. If a decision needs the cause, identify and assess the evidence for that stronger claim.
 
 ### RMP.11:3 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Useful history | Dated differentiation can expose alternatives and assumptions, while decorative chronology adds no decision value. |
-| Diagnostic depth | Within-case observations can discriminate rivals, while narrative confidence does not supply identification or estimation. |
-| Evolutionary language | Variation, selection, retention, and loss organize inquiry, while analogy can overstate causal mechanism. |
-| Causal cost | Some decisions need causal reliance, while many can stop with description or a non-causal trial hypothesis. |
-| Present authority | History can inform a choice, while it neither selects today's architecture nor grants decision authority. |
+| Useful history | A dated account can answer when a change occurred or expose an alternative that matters to a present use. Select the chronology for the historical question. |
+| Diagnostic depth | An observation can favour one account within a case. Identification and estimation require grounds specific to the causal use. |
+| Evolutionary language | Variation, selection, retention and loss suggest questions. Establish a proposed causal link from the relevant evidence. |
+| Causal cost | Description or a hypothesis can answer some questions. A use that depends on an effect can require substantially more work. |
+| Present authority | History can inform a choice. A decision about today’s architecture also needs its own criteria and an authorized decision-maker. |
 
 ### RMP.11:4 - Solution
 
-RMP.4 supplies the surviving records and their access, reconstruction and loss limits. RMP.7 supplies a corpus boundary and qualified source-dependence account where that contribution is already available. The historical construction below then explains the particular Method differentiation: identify competing accounts, derive the observations that separate them, compare diagnostic weight conditional on the sources already used, and carry a supported historical result into its receiving question. A corpus synthesis or chronological list does not replace that construction. C.28 still governs a separately claimed causal use.
+Use surviving records and their access or loss conditions from RMP.4, and an applicable corpus and account of source dependence from RMP.7 when needed. To explain differentiation, identify competing accounts, determine what observations could distinguish them, and weigh findings in light of the sources already used. A dated sequence may answer when the change happened. For causal reliance use the separate C.28 assessment.
 
-Recover dated differentiation and rivals first. Apply the full `C.28` causal-use assessment only when another decision needs a causal conclusion, and return every result with its own identity and use limit.
+Establish the dated changes. For an explanatory question, compare plausible accounts using observations that can distinguish them. Apply `C.28` when a claim or decision calls for causal reliance, and identify the scope of each result.
 
 #### RMP.11:4.1 - Pattern-Use Unfolding
 
-1. **Bound the explanandum.** Identify one Method under `A.3.1`, an independently established family inclusion, or named Method relations and the differentiation to explain. A local grouping can supply candidates and questions, not the family fact.
-2. **Name causal use or choose a descriptive stop.** State the receiver's exact question. If causal reliance is needed, name `CausalUseClaimKind`, target `CausalityLadderRung`, comparator or intervention where applicable, and the link claims. Otherwise return a dated descriptive account without asserting a causal conclusion.
-3. **Establish the dated descriptive sequence.** Recover source editions, Work evidence, variant appearances and disappearances, abandoned forms, and decision points. A timeline is an index, not an explanation.
-4. **Propose explicit link claims.** Name the pressure or environmental change, affected actor or carrier, response or variation, selection or retention process, and resulting Method or relation change. Use *mechanism* only in a source-local sense unless an `A.6.1` `U.Mechanism` is separately identified.
-5. **Generate serious rivals.** Consider demand or constraint, provider/tool, regulation, authority, diffusion/fashion, recording-artifact, deliberate-redesign, and survivorship accounts where they are plausible for this history. Explain which alternatives compete and which can coexist; do not invent a demand account merely to fill a category.
-6. **Derive and collect diagnostic observations.** Before choosing observations that are easy to collect, state which dated records, version differences, decisions, Work evidence, interviews, abandoned variants, negative cases, or cross-setting contrasts are expected under each link and rival. Preserve provenance and source dependence. Weigh the observations through :4.4 before grading the resulting claims; provenance alone does not establish diagnostic strength.
-7. **Run the complete `C.28` boundary when needed.** Issue one identifiable support result with question ref, claim kind, rung, actual evidence-path/data-regime and specialist-result refs, common-threat-screen ref, verdict, supported/unsupported causal uses, limits/window, and reopen. Raw observations or source names are not support-component results. A missing identification, bound, or estimate required for this named causal-use question, or an unresolved live threat to that use, lowers the verdict. Do not commission an estimate merely because another kind of causal question would need one.
-8. **Return distinguishable results.** Grade differentiation claims as observed, source-supported, inferred, expert-estimated, contradicted, or missing and retain rivals. Keep the causal result separate. A downstream choice cites only causal reliance allowed by the verdict and retains its own authority. An `unsupported` or `undecided` result may not serve as positive causal evidence; a separately named non-causal observation or hypothesis may still support a bounded trial.
+1. **Bound the explanandum.** Identify the Method under `A.3.1`, an independently established family inclusion or a named relation among Methods, and the change at issue. Use a local grouping to locate candidates. For a claim about professional membership, establish it separately.
+2. **Identify the historical use.** State whether the question is when the change occurred, what the evidence suggests about the reasons, or which causal claim it supports. For causal reliance, specify the `CausalUseClaimKind`, target `CausalityLadderRung`, relevant comparator or intervention and proposed links. Return a dated account when it supplies the requested result.
+3. **Establish the dated sequence.** Recover the source editions, Work evidence, appearances, disappearances, abandoned variants and decision points pertinent to the change. Use the resulting timeline for chronology or as an index to evidence for an explanation.
+4. **Propose explanatory links where needed.** Identify the pressure or environmental change, the affected actor or carrier, response or variation, selection or retention, and resulting Method or relation change. Use *mechanism* in the cited source’s sense unless a distinct `A.6.1` `U.Mechanism` has been identified.
+5. **Identify serious rivals.** Consider demand, constraints, tool or provider availability, regulation, authority, fashion, diffusion, recording changes, deliberate redesign and survival of the records where they fit the case. State which accounts compete and which contributions could coexist.
+6. **Derive diagnostic observations.** What dated records, version differences, decisions, Work evidence, interviews, abandoned variants, negative cases or cross-setting contrasts would be more expected under one account than another? Use existing material or obtain additional evidence when warranted. Preserve provenance and source dependence. Before grading the link claims, compare the evidence as described in :4.4.
+7. **Assess a named causal use through `C.28`.** Identify the question, claim kind, rung, applicable evidence paths and data regimes, specialist findings, common threat screen, verdict, supported and unsupported uses, limits, evidence window and conditions for reconsideration. Use the results that actually supply the required support. An unresolved relevant threat or missing required identification, bound or estimate limits the verdict for that particular use.
+8. **Return the results at their supported scope.** Mark differentiation claims as observed, source-supported, inferred, expert-estimated, contradicted or missing, and retain material rivals. Identify any causal-use result separately. For a present choice, the authorized decision-maker may rely on causal conclusions within the verdict. If the verdict is `unsupported` or `undecided`, a separate non-causal observation or hypothesis may still justify considering a bounded trial.
 
 #### RMP.11:4.2 - Record the Results
 
 | Result | Required content |
 | --- | --- |
-| differentiation account | Explanandum, dated sequence, source editions and Work evidence, link claims, rivals, diagnostic comparisons with their assumptions and source dependencies, grades, limits, and reopen. |
-| optional causal-use support result | Question ref, claim kind, rung, actual support-component refs, threat-screen ref, verdict, supported/unsupported uses, limits/evidence window, and reopen. |
-| optional non-causal observation or hypothesis | Separate identity, descriptive basis, bounded design use, inferences this result does not support, and reopen. |
-| downstream handoff | The result and its allowed use supplied to another decision, which retains its own authority. |
+| differentiation account | The change and dated sequence, with source editions, Work evidence, grades and limits. For an explanation, include the proposed links, rivals and diagnostic comparisons with their assumptions and source dependencies. Identify evidence that could materially revise the result. |
+| causal-use support result, when needed | Identify the question, claim kind and rung. Cite the findings supporting its components and the common-threat assessment. Give the verdict, the causal uses it supports or rules out, its limits and evidence window, and the changes that would warrant reconsideration. |
+| non-causal observation or hypothesis, when needed | Identify it separately, state its descriptive grounds, any bounded use in a design, the inferences it cannot support and any changes that would warrant reconsideration. |
+| use by a downstream decision, when applicable | The result and the reliance it supports. Authority and criteria for the decision belong to the party making it. |
 
 #### RMP.11:4.3 - What Changes in Practice
 
-Practitioners can use history without turning it into inevitability. A dated account can reveal forgotten variants and serious rivals; a causal stop can prevent unsupported reliance; and a current architecture decision can still authorize a reversible probe from a separate non-causal observation.
+A dated account can recover forgotten variants and identify competing explanations. A limited causal verdict tells a decision-maker which reliance lacks support. A separate non-causal observation can still inform an authorized reversible probe.
 
 #### RMP.11:4.4 - Weigh Historical Evidence between the Actual Accounts
 
-A reliable source can contain a fact that all serious accounts predict. Such a fact helps establish the sequence without favoring one explanation. Conversely, a potentially revealing statement may have little weight because its date, authorship or relation to the events is uncertain. Keep these questions separate from the claim grades in :4.1.
+Distinguish the reliability of a source from the diagnostic weight of its contents. A reliable fact expected equally under all serious accounts can establish the sequence while leaving their relative support unchanged. A potentially discriminating statement may carry little weight if its date, authorship or relation to the events is uncertain. Use these judgements when grading claims in :4.1.
 
-1. **Make the comparison specific.** For the same finding, ask how expected it would be under each serious account, given the evidence already incorporated. Explain the difference. Compatibility with one account alone is insufficient. If two causes can operate together, compare their proposed contributions or a combined account rather than forcing an exclusive choice.
-2. **Examine how the finding became available.** Distinguish an event from a later assertion about it. Ask what the source could observe, why it was recorded, and how it was selected and preserved. A missing record weighs against an account only to the extent that the proposed event should have produced an accessible surviving record.
-3. **Use additional information, not additional copies.** A brochure, an interview repeating it and an article citing that interview may transmit one assertion. Assess the later item conditional on what is already known; do not count it as independent corroboration. Separately established timing or Work evidence can add information even when it appears in the same archive.
-4. **Return a conditional comparison.** State which finding favors which account and which assumptions carry that judgement. Preserve an indistinguishable result when the accounts predict the same observations or source uncertainty defeats discrimination. Check whether the preference survives plausible changes in disputed coding, source selection, dependence or the weight given to a key finding. If it does not, make that fragility part of the result. Use numerical analysis only with a justified observation model; do not invent probabilities or turn named test types into automatic grades.
-5. **Reconsider the relevant evidence when the account changes.** A newly discovered actor, date or mechanism may alter what earlier findings would mean. Compare the revised account with the relevant prior corpus as well as the new item, keeping source dependence visible. Do not attach the old conclusion to a newly worded hypothesis without this reconsideration.
-6. **Return only the supported use.** The comparison can identify a promising next inquiry or a bounded historical hypothesis. When a receiver needs causal reliance, supply this contribution and its limits to `C.28`; the comparison alone is not its complete support result. If a revised premise matters to an existing repertoire or choice, use its evidence dependencies to identify the affected C.39.RP, A.3.1.QM or C.32.MWA.PP result and reassess that reliance. A change to historical attribution need not invalidate an independently qualified current Method.
+1. **Compare the actual accounts.** For the same finding, ask how expected it would be under each serious account given the evidence already used. Explain the difference. If two causes can operate together, compare their proposed contributions or consider a combined account.
+2. **Examine how the finding became available.** Distinguish the event from a later assertion. Ask what the source could observe, what would be recorded and how records were selected and preserved. Absence can weigh against a proposed event when that event should have left a record in the material actually examined.
+3. **Identify new information and its origin.** A brochure, an interview repeating it and an article citing the interview can transmit one assertion. Assess what each adds given the earlier evidence. A new source date or an independent Work observation can add information even within the same archive.
+4. **Return a conditional comparison.** State which findings favour which accounts and under what assumptions. Report unresolved rivals when the relevant observations are equally expected or source uncertainty defeats discrimination. Examine whether the preference survives plausible changes in coding, selection, dependence or weight of a finding. If it does not, describe that sensitivity. If the question needs a numerical comparison and the observation model and assumptions warrant it, use a quantitative analysis.
+5. **Reconsider earlier findings when the account changes.** A new actor, date or proposed mechanism can change what earlier evidence implies. Compare the revised account with the relevant prior corpus and the new item, accounting for dependence.
+6. **Identify the use the evidence supports.** A comparison can yield a scoped historical hypothesis or identify a worthwhile further inquiry. For causal reliance, supply the relevant findings and limits to `C.28`. If a revised premise mattered to an existing repertoire or decision, trace that reliance in C.39.RP, A.3.1.QM or C.32.MWA.PP. A current Method can retain a qualification that rests on independent evidence.
 
 ### RMP.11:5 - Archetypal Grounding
 
 #### RMP.11:5.1 - Descriptive Stop
 
-This is a constructed design-office history, not a report about a real organization. The office must reconcile names and source editions after drawing signoff differentiated. For this case, independent A.3.1 identification and A.3.1.MV variant qualification have already established common Method `M-Signoff-0` and local variants `M-Signoff-E` and `M-Signoff-M`. All return approve/reject for a drawing, but the electrical variant requires clearance and harness-revision checks, while the mechanical variant requires load-case and fit checks; each withholds approval when its required check is absent. Those reusable differences are not inferred from separate form names. No professional-family or composite-Method claim is made.
+Suppose a design office needs to reconcile names and source editions after drawing signoff differentiated. For this example, A.3.1 identification and A.3.1.MV variant qualification already establish `M-Signoff-0` and local variants `M-Signoff-E` and `M-Signoff-M`. All return approve or reject for a drawing. The electrical variant requires clearance and harness-revision checks, the mechanical variant load-case and fit checks. Each withholds approval when its required check is absent. These are independently established differences in the local Methods. The question here concerns the timing of their documentation and use.
 
-The explanandum is this local differentiation and its documented timing. The receiver needs to distinguish the introduction of the different checks from their later representation in separate electronic forms. It does not need a claim that one pressure caused the split or that either variant is better.
+The office needs to establish when the different checks were approved and used in the surviving records, and when separate electronic forms represented them. Dated instructions and Work records can answer those questions even if the first-ever use is unknown.
 
-The case premises also admit `ElectricalReviewer-E` and `MechanicalReviewer-M` as Agents for their respective checking under A.13, and their 9 and 18 April occurrences `WE7` and `WM4` as Work under A.15.1. The Work enacts `M-Signoff-E` and `M-Signoff-M`, respectively; E1 and M1 are the instructions used, not the enacted Methods. The bounded source set contains these case facts:
+The case also identifies `ElectricalReviewer-E` and `MechanicalReviewer-M` as Agents for the respective checks under A.13, and their 9 and 18 April occurrences `WE7` and `WM4` as Work under A.15.1. They enacted `M-Signoff-E` and `M-Signoff-M` using the respective E1 and M1 instructions. The following records form the source set.
 
 | Date and source | Recoverable fact and limit |
 | --- | --- |
-| 15 January 2024, signoff instruction S3 | One common signoff account covers both drawing types and checks that required evidence is present. S3 contains neither variant's distinct test-and-withhold rule. A source omission alone does not prove that nobody already performed such checks. |
-| 4 March, exception log X2; 11 March, proposal P1 | X2 records two returned drawings, one lacking an electrical-clearance check and one lacking the mechanical load case. P1 cites these exceptions and proposes the two domain-specific rules. It also retains the alternative of common signoff with expert escalation; the record does not show that the exceptions alone determined the choice. |
-| 2 April, approval A14 and instructions E1/M1 | A14 approves the two local variants for their respective drawing types. E1 and M1 state the different required checks and failure returns. The common-with-escalation proposal is not selected in A14, but the deliberation minutes are missing. |
-| 9 and 18 April, signoff Work WE7/WM4 and their annotated results | ElectricalReviewer-E follows E1 in WE7 and withholds approval for missing clearance evidence; MechanicalReviewer-M follows M1 in WM4 and withholds it for a missing load case. The records support these two enactments before electronic-form separation, not population-wide use or the first-ever occurrences. |
-| 6 May, PLM migration note T2 and form edition F2 | Separate electronic forms and approval-record names are introduced. T2 says they carry the existing E1/M1 rules. It supplies no new variant semantics and no evidence that the forms caused earlier Work. |
+| 15 January 2024, signoff instruction S3 | A common instruction covers both drawing types and requires the presence of evidence. Neither local variant’s distinct test-and-withhold rule appears in S3. Whether somebody used either check earlier remains open. |
+| 4 March, exception log X2, and 11 March, proposal P1 | X2 records two returned drawings, one lacking electrical-clearance evidence and one lacking the mechanical load case. P1 cites these exceptions, proposes the two domain-specific rules and retains common signoff with expert escalation as an alternative. This establishes a stated reason for the proposal. |
+| 2 April, approval A14 and instructions E1/M1 | A14 approves the two local variants for the respective drawings. E1 and M1 specify different checks and returns for failure. A14 leaves the common-with-escalation proposal unselected. The deliberation minutes are missing. |
+| 9 and 18 April, signoff Work WE7/WM4 and their annotated results | In WE7, ElectricalReviewer-E followed E1 and withheld approval for missing clearance evidence. In WM4, MechanicalReviewer-M followed M1 and withheld it for a missing load case. These records establish two enactments before the forms separated. Earlier occurrences and the extent of uptake remain open. |
+| 6 May, PLM migration note T2 and form edition F2 | F2 introduces separate electronic forms and names for approval records. T2 states that they carry the E1/M1 rules already in use. The change documented here concerns how those rules are represented. |
 
-Before inspecting the April records, the office has two serious explanations. **R-demand** says domain-specific omissions prompted the proposal and selection of different rules; it predicts a problem record, a response proposal, and distinct checks before the form migration. **R-carrier** says the apparent split is only a naming or recording effect of that migration; it predicts unchanged checks beneath the new names. R-carrier is initially plausible because the searchable PLM history starts with F2 and makes the split look like a May event.
+Before examining the April records, the office considers two accounts. **R-demand** attributes the proposal and selection to domain-specific omissions. It predicts a problem record, a response proposal and distinct checks before migration. **R-carrier** attributes the apparent split to the May change in recording or naming. It predicts unchanged checks under the new forms. The March returns and proposal make R-demand plausible. The searchable PLM history begins with F2, which makes a recording change plausible until the earlier instructions and Work are examined.
 
-Comparing E1/M1 and WE7/WM4 with S3 and T2 is diagnostic: different reusable checks and their enactments are recorded in April, before F2. This contradicts R-carrier's strong claim that only names changed in May. It fits R-demand, but the available records do not settle why the office selected separate rules over common signoff with escalation, or how other pressures contributed. Missing deliberation evidence leaves that link unresolved here; a separate control office is not a universal requirement for within-case causal inquiry. A weaker carrier contribution to later retention remains possible and untested; rejecting the naming-only account does not prove its rival.
+E1/M1 specify distinct checks and WE7/WM4 record their enactment in April, before F2. That contradicts the strong R-carrier claim of a naming-only change in May. The records fit R-demand. They leave open why the office chose separate rules over common signoff with escalation and what other pressures contributed. The deliberations are missing. A within-case inquiry might investigate the missing link through further sources. A possible contribution of the carrier to later retention also remains open.
 
 `DA-Signoff-Differentiation-1` returns these grades and limits:
 
 | Claim | Grade and allowed use |
 | --- | --- |
 | The common and domain-specific instructions differ in the named required checks and stops. | **Source-supported** by S3/E1/M1; Method identity and variant qualification remain the separate case premises. |
-| Separate rules were approved by 2 April and enacted in the two named April Work occurrences. | **Source-supported** by A14 and WE7/WM4. This is a documented bound, not an exact origin date or evidence of universal uptake. |
-| The March exceptions were a stated reason for proposing the variants. | **Source-supported** by P1; that stated reason is not a causal-effect result. |
+| Separate rules were approved by 2 April and enacted in the named April occurrences. | **Source-supported** by A14 and WE7/WM4. The dates bound the documented approval and two uses. The first-ever use and extent of uptake remain open. |
+| The March exceptions were a stated reason for proposing the variants. | **Source-supported** by P1. The effect of those exceptions on selection needs its own evidence. |
 | The split was merely a May renaming with no earlier semantic difference. | **Contradicted** by the April instructions and Work records. |
-| Demand caused selection over common signoff with escalation, or the carrier caused later retention. | **Missing causal support**; retain the distinct hypotheses and missing deliberation/continuation evidence. |
+| Demand caused selection over common signoff with escalation, or the carrier contributed to later retention. | **Missing causal support** for these links. The deliberation evidence and evidence of later continuation are incomplete. |
 
-The receiving source-reconciliation decision can now keep E1 and M1 as different variant descriptions, keep S3 as the common predecessor account, and link F2 as their later form without dating Method differentiation from form creation. It leaves the exact first occurrence and reasons for selection unresolved. No `C.28` result is created because no causal reliance is taken. Reopen the relevant date, relation, or link claim if an earlier instruction, the missing deliberation record, or contrary Work evidence appears; do not choose today's architecture from this history alone.
+In `DA-Signoff-Differentiation-1`, retain S3 as the common predecessor account, E1 and M1 as different variant descriptions and F2 as their later forms. The dates and observed signoffs answer the reconciliation question. The first occurrences and reasons for selection remain unresolved. An earlier instruction, a deliberation record or contrary Work evidence could revise the relevant claim. A request to choose a present architecture would introduce a different decision.
 
 #### RMP.11:5.2 - Causal-Use Branch and Non-Causal C.32.MWA.PP Consumption
 
-This constructed continuation uses the EC-417 release comparison in C.32.MWA.PP:5.3. Alternative B2 integrates from an identified provisional supplier-evidence edition at an early integration slot and later reconciles that basis with signed evidence at the safety-closure checkpoint. Supplier preparation shares the reconciliation workload; signed evidence, the separate safety and release decisions, and the provisional evidence history remain required. The two checkpoints are thirteen days apart. The supplying comparison defines the capacity, confidentiality, assignment, permission, recovery and trial-entry conditions. Here the historical material concerns a possible relation between that timing and release reopenings; no trial outcome is supplied. Four result identities remain separate:
+Suppose a team considers release alternative B2 from C.32.MWA.PP:5.3 for EC-417. B2 starts integration from a specified provisional supplier-evidence edition and reconciles it with signed evidence at the safety-closure checkpoint thirteen days later. Supplier preparation shares the reconciliation workload. Signed evidence, separate safety and release decisions, and the provisional evidence history are required. The supplying comparison gives capacity, confidentiality, assignments, permissions, recovery and trial-entry conditions. Here the question concerns the possible relationship of checkpoint timing to later reopenings. The four results below serve different uses.
 
-- `DA-EC417-CadenceDifferentiation-1` is a partial descriptive account: the retained co-occurrences do not fill the dates, variants, and selection history needed for a complete differentiation account;
+- `DA-EC417-CadenceDifferentiation-1` records the observed co-occurrences. The dates, variants and selection history needed for a full differentiation account remain incomplete.
 - `CUR-EC417-CadenceEffect-1` is the causal-use support result;
 - `DC-EC417-CadenceMismatch-1` is a non-causal timing/co-occurrence hypothesis; and
 - `AD-EC417-B2-Trial-1` is the receiving C.32.MWA.PP architecture decision.
 
-The causal-use question `CUQ-EC417-CadenceEffect-1` asks: “Would entering provisional-evidence reconciliation at the early integration slot, thirteen days before the signed-evidence checkpoint, rather than starting at that checkpoint, reduce mismatch-related reopenings in EC-417-like releases for this team, supplier, and change class?” Its `causalUseClaimKind` is `causalEffectClaim`; its target rung is `interventionalActionRung`.
+The question in `CUQ-EC417-CadenceEffect-1` is whether starting provisional-evidence reconciliation in the early integration slot would reduce mismatch-related reopenings compared with starting at the signed-evidence checkpoint thirteen days later, for EC-417-like releases under the stated team, supplier and change class. Its `causalUseClaimKind` is `causalEffectClaim` and the target rung is `interventionalActionRung`.
 
-The actual support-component refs are `evidencePathRefs=[EP-EC417-BundleSequence-20, EP-EC417-RigAvailability-20, EP-EC417-QuarterlyCadence-2]` and `empiricalDataRegimeRefs=[EDR-EC417-NaturalReleaseHistory]`. No identification or estimate result exists.
+The support components are `evidencePathRefs=[EP-EC417-BundleSequence-20, EP-EC417-RigAvailability-20, EP-EC417-QuarterlyCadence-2]` and `empiricalDataRegimeRefs=[EDR-EC417-NaturalReleaseHistory]`. Identification and an estimate for the named effect are missing.
 
 Common threat screen `CTS-EC417-CadenceEffect-1` records:
 
@@ -155,88 +155,88 @@ Common threat screen `CTS-EC417-CadenceEffect-1` records:
 | `routedThreatRefs` | `[]` |
 | `resultingSupportBoundary` | `unsupported` |
 
-Every live threat lowers the causal-support verdict because no specialist result closes it. The C.28 verdict is `unsupported`. `supportedUse`: no interventional causal reliance; use this result only as a stop against that reliance. `unsupportedUse`: claiming that cadence mismatch caused the reopenings or that B2 will reduce them. The evidence window is the named twenty releases and two earlier cases for this team, supplier, and change class. Reopen only on a governed comparison or replayable identification or bound that varies reconciliation timing while rig, approver capacity, outcome definition, and evidence access are controlled or explicitly modeled.
+The screen leaves the named threats unresolved, and the C.28 verdict is `unsupported`. The `supportedUse` is to flag the limit on interventional reliance. The `unsupportedUse` includes attributing the reopenings to cadence mismatch and claiming B2 will reduce them. The evidence window covers the named twenty releases and two earlier cases for this team, supplier and change class. Reconsider the verdict if a governed comparison, replayable identification or supported bound distinguishes reconciliation timing while controlling or explicitly modelling rig availability, approver capacity, outcome definition and evidence access.
 
-`DC-EC417-CadenceMismatch-1` separately retains only the observed timing/co-occurrence as a trial hypothesis and design constraint. `AD-EC417-B2-Trial-1` consumes that non-causal result, capacity, confidentiality, authority, and reversibility to select only a bounded B2 trial. `SafetyReviewer-17` performs `W-SafetyEvidenceDecision-17` under `ASG-SafetyReview-17` and `AUTH-SafetyEvidence-17` for the evidence-condition result; `ReleaseDecider-17` separately performs `W-ReleaseDecision-17` under `ASG-ReleaseDecision-17` and `AUTH-ReleaseDecision-17` for branch entry and release disposition. The architecture decision does not cite `CUR-EC417-CadenceEffect-1` as positive causal evidence.
+`DC-EC417-CadenceMismatch-1` retains the observed timing and co-occurrence as a trial hypothesis and design constraint. With evidence of capacity, confidentiality, authority and reversibility, `AD-EC417-B2-Trial-1` selects a bounded B2 trial. `SafetyReviewer-17` performs `W-SafetyEvidenceDecision-17` under `ASG-SafetyReview-17` and `AUTH-SafetyEvidence-17` for the evidence condition. `ReleaseDecider-17` performs `W-ReleaseDecision-17` separately under `ASG-ReleaseDecision-17` and `AUTH-ReleaseDecision-17` for branch entry and release disposition. The causal verdict marks a limit on the decision’s interpretation.
 
 #### RMP.11:5.3 - A Dated Proposal Has More Weight than Repeated Promotion
 
-Consider a constructed extension of the signoff history. Method and variant identification remain the independent premises of :5.1. The next historical inquiry must choose between **H-response**, in which repeated domain-specific omissions contributed to selecting separate rules, and **H-tool-only**, in which a provider's form package induced the split and the omissions were invoked afterwards. Tool support may also have helped retain a split selected for other reasons, so these are not the only possible contributions.
+Extend the constructed signoff history from :5.1, keeping the independently identified Method and variants. **H-response** says repeated domain-specific omissions contributed to selecting separate rules. **H-tool-only** says a provider’s form package induced the split and the omissions were cited afterward. Compare their support. Tool support may also have helped retain rules initially selected for other reasons.
 
-A newly recovered internal decision memo compares separate rules with common escalation, rejects escalation because the named specialist would not be available, and recommends separation. Its authenticated March date precedes the earliest presently documented provider contact. This combination is more expected under H-response than H-tool-only: it records a problem-specific choice and reason before the currently known tool opportunity. The weight depends on the memo's authenticity, whether it recorded an actual decision rather than advocacy, and whether earlier provider influence remains unrecorded.
+An authenticated internal memo dated March compares separate rules with common escalation. It recommends separation because the named specialist would be unavailable. Its date precedes the earliest documented provider contact. A problem-specific recommendation at that point is more expected under H-response than H-tool-only. Its weight depends on the memo’s authenticity and role in the decision, and on the possibility of earlier provider influence outside the recovered records.
 
-A budget approval refers to that memo. It supplies evidence that resources were authorized, but its repeated rationale is not a second independent explanation. A later brochure and three interviews all repeat the same launch narrative; they show circulation of that story, not four independent confirmations. No trial of common escalation has been found, but trial records were not routinely preserved. That absence adds little against an account in which such a trial occurred.
+A budget approval cites the memo and establishes that resources were authorized. Its repeated rationale adds no independent account of the reason. A later brochure and three interviews repeat the launch narrative, showing that it circulated. Trial records were not routinely preserved. Even a well-documented trial might therefore leave no surviving record. Failure to find one adds little evidence against a trial.
 
-The investigator therefore gives H-response greater relative support than H-tool-only under the stated evidence and assumptions, while retaining possible provider influence and a mixed account. This suggests a focused search for earlier contact and actual decision records. It supplies neither a numerical probability nor a claim about the effect of imposing separate rules today.
+Under these assumptions, H-response receives more support than H-tool-only. Provider influence and a mixed account remain plausible. That relative comparison can finish the historical inquiry. If the remaining question warrants more work, records of earlier contact and of the actual decision could distinguish the accounts further. A numerical probability or an effect of imposing the rules today would require evidence and assumptions for that use.
 
-Suppose the next archive yields an authenticated February provider proposal. The earlier temporal advantage disappears. The investigator reassesses the memo and budget in light of that contact, and compares a mixed account with tool-only influence and response to omissions. The memo still records its stated reason; it no longer independently shows that this reason preceded any known provider opportunity. Revised historical attribution returns to a present repertoire or decision only where that result relied on the attribution. Existing direct evidence that a local variant works within its qualified scope remains available.
+Now suppose an authenticated February provider proposal comes to light. The March memo is no longer earlier than all known provider opportunities. Reassess the memo and budget under the revised chronology, comparing a mixed account with tool-only influence and response to omissions. The memo still establishes its stated reason. Reassess a current repertoire or decision where it relied on the changed attribution. Retain the independently supported qualification of a local variant.
 
 ### RMP.11:6 - Bias-Annotation
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
-| chronology bias | Earlier and later events become cause and effect. | Return the descriptive sequence first and open C.28 only for a named causal use. |
-| survival bias | Current variants hide abandoned or excluded alternatives. | Seek abandoned variants, negative cases, and source gaps before grading links. |
-| fashion-metric bias | publication count, search frequency, or institutional promotion becomes adoption or effectiveness evidence. | Treat it as a possible diffusion indicator with scope and rivals, not a causal result. |
+| chronology bias | Earlier and later events are described as cause and effect. | Establish the dated sequence. Assess explanatory links and use C.28 for a named causal use when one is at issue. |
+| survival bias | The surviving materials omit abandoned or excluded variants. | Consider sources that could reveal those variants and state any consequential limits on coverage. |
+| fashion-metric bias | Publication counts, search frequency or promotion are taken as direct measures of adoption or effectiveness. | Establish which attention or diffusion claim the indicator supports and what else could account for it. |
 | family-label bias | A local grouping becomes a professional family explanandum. | Require independent family membership or explain named Methods and relations instead. |
-| history-authority bias | A differentiation account chooses today's architecture. | Keep current decision criteria, authority, causal boundary, and trial stops in the downstream pattern. |
+| history-authority bias | A historical explanation is used as authority to implement a change. | For a current architecture decision, identify its criteria, authority, causal premises and conditions for stopping a trial where applicable. |
 
 ### RMP.11:7 - Conformance Checklist
 
 - [ ] The explanandum is an identified Method, established family inclusion, or named Method relation change.
-- [ ] The receiving decision and exact causal use or descriptive stop are explicit.
-- [ ] The dated sequence precedes explanation and keeps source editions, Work evidence, variants, disappearances, and decision points recoverable.
-- [ ] Every link claim names pressure/change, affected actor or carrier, response/variation, selection/retention, and resulting Method or relation change.
-- [ ] Serious rivals and diagnostic observations are derived before convenient collection.
-- [ ] Diagnostic weight compares the actual rivals under stated prior evidence, source-generation conditions and dependencies; source repetition is not independent support.
+- [ ] The historical question and required scope of description, explanatory comparison or causal reliance are clear.
+- [ ] The dated sequence preserves the source editions, Work evidence, variants, appearances, disappearances and decisions on which the account relies.
+- [ ] Each proposed explanatory link identifies the relevant change or pressure, affected actor or carrier, response, selection or retention, and resulting change to a Method or relation.
+- [ ] For an explanatory comparison, serious rivals and their expected observations guide the use or selection of evidence.
+- [ ] Diagnostic weight reflects what each rival predicts given the existing evidence, how the sources arose and whether they repeat an earlier assertion.
 - [ ] Differentiation claims carry grades and limits, and changed accounts prompt reconsideration of the relevant earlier evidence.
 - [ ] Any causal-use result contains the complete current `C.28` identity, support, threat, verdict, use, window, and reopen fields.
-- [ ] Raw observations and source names are not presented as specialist support results.
-- [ ] Differentiation, causal support, non-causal hypothesis, and downstream architecture decision remain separate.
+- [ ] The causal-use result identifies which evidence or specialist findings support each component it relies on.
+- [ ] The historical account, any causal-use verdict or non-causal hypothesis, and any subsequent architecture decision have identifiable grounds and scope.
 - [ ] An `unsupported` or `undecided` result supplies no positive causal premise.
 
 ### RMP.11:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Repair |
 | --- | --- |
-| “The pressure came first, so it caused the Method change.” | State a link claim, rivals, diagnostic observations, and the C.28 result required by the receiving use. |
-| “The timeline is the explanation.” | Treat it as an index and test explicit links and rivals. |
-| “Process tracing proves the causal effect.” | Use it for within-case diagnosis; apply C.28 for the named causal use and lower the verdict when identification, a bound, or estimation required for that use is missing. |
-| “Unsupported means the history is useless.” | Retain descriptive sequence and a separately named non-causal hypothesis within their use boundaries. |
-| “The history tells us what to implement.” | Send bounded results to a separate authorized architecture decision. |
+| “The pressure came first, so it caused the Method change.” | Establish what the dated sequence supports. For the proposed explanation compare link claims and rivals using diagnostic observations. Apply C.28 when the receiving use requires causal support. |
+| “The timeline is the explanation.” | Use the timeline for the chronology. For a question about reasons, compare the expected evidence under the proposed links and their rivals. |
+| “Process tracing proves the causal effect.” | Use process tracing for within-case diagnosis. For a causal use, apply C.28 and limit the verdict where required identification, a bound or an estimate is missing. |
+| “Unsupported means the history is useless.” | Return the established sequence. If a distinct non-causal hypothesis is supported or useful to investigate, state it within its scope. |
+| “The history tells us what to implement.” | Use the historical conclusion within its scope. Refer a current implementation choice to the party with the relevant authority when such a choice is needed. |
 
 ### RMP.11:9 - Consequences
 
-Professional Method history becomes decision-usable without being made causally stronger than its evidence. Forgotten variants and rivals remain available, while current architecture choices can distinguish causal reliance from a reversible probe based on non-causal observations.
+The historical account can establish when a Method changed and restore forgotten variants. Evidence can favour some explanations over others or leave rivals unresolved. In a current decision, an authorized reversible probe may be justified from non-causal observations even when the proposed effect lacks support.
 
-The cost is explicit result separation and threat screening. Some elegant origin stories will end as descriptive accounts, and some causal questions will remain unsupported until a stronger design or bound exists.
+Comparing explanations requires source criticism. Assessing a causal use also requires examining the relevant threats. The best supported answer can be a dated account, a partial explanation or a stated limit on causal reliance.
 
 ### RMP.11:10 - Rationale
 
-Differentiation history, causal support, and present choice have different subjects and truth conditions. A dated sequence can be accurate while its causal explanation is unsupported; an unsupported causal claim can coexist with a useful non-causal design constraint; and neither supplies present authority.
+A dated sequence, support for a causal explanation and authority for a present choice have different grounds. A chronology can be established while attribution remains open. A non-causal observation can still identify a design constraint.
 
-The pattern connects questions about variant generation, transmission, fashion, retention and loss. Evolutionary analogies and search-frequency examples can suggest hypotheses and rivals; their causal use depends on diagnostic observations. Process-tracing sources strengthen that inquiry. C.28 states what support a causal use needs, keeping a plausible narrative separate from identification or estimation.
+Variation, transmission, fashion, retention and loss can suggest hypotheses about Method change. Compare the observations each hypothesis predicts using process-tracing methods. Apply C.28 to identify the evidence required for a causal use, including identification or estimation when that particular question calls for it.
 
 ### RMP.11:11 - SoTA-Echoing
 
 | Source | Retained contribution | Use boundary |
 | --- | --- | --- |
-| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9) | Attention to Method knowledge, variation, loss, and engineering context. | Conceptual history supplies no project causal verdict or current architecture authority. |
-| Collier, [Understanding Process Tracing, with 2019 addendum](https://polisci.berkeley.edu/sites/default/files/people/u3827/2011%20Collier-Understanding%20Process%20Tracing%20with%20Addendum.pdf) | The 2011 foundation supplies within-case sequencing and diagnostic observations; the addendum develops relations among rivals and moves beyond rigid necessity/sufficiency test classes. | This historical foundation is supplemented by the later inferential treatment below; it does not replace FPF causal-use assessment. |
-| Fairfield and Charman, [Explicit Bayesian Analysis for Process Tracing](https://researchonline.lse.ac.uk/id/eprint/69203/2/Fairfield_Explicit%20bayesian%20analysis_author_2017%20LSERO.pdf) and [A Dialogue with the Data](https://doi.org/10.1017/S1537592718002177) | Compare specified alternatives, condition on prior evidence, retain source dependence, and reconsider existing evidence when hypotheses develop. | These foundations discipline qualitative comparison; numerical probabilities require warranted assumptions. They supply no complete causal-use verdict or architecture decision. |
-| [Fully specified Bayes factors for hypothesis testing and sensitivity analysis in process tracing, v2](https://arxiv.org/abs/2606.16683v2), 2026 preprint | Model-based evidence weighting and sensitivity analysis sharpen the question of how a conclusion depends on coding, selection and weight. | Its binomial observation model and one-rival comparisons require substantive justification; clustered source dependence limits the claimed guarantees. This optional numerical development is not a default historical protocol. |
-| Mahoney, [The Logic of Process Tracing Tests](https://doi.org/10.1177/0049124112437709) | Weak, necessary-condition, and strongly discriminating test logic. | Grades observations; it does not make the whole chain certain. |
-| Current FPF `C.28` | Causal-use question, rung, support components, common threat screen, verdict, use boundary, limits, and reopen. | C.28 states evidence support only; downstream choice and authority remain separate. |
+| Stacey et al., [Methods as a form of engineering knowledge](https://doi.org/10.1017/dsj.2025.9) | Method knowledge, variation and loss in engineering contexts. | Use the conceptual history to frame a question. Specific causal attribution and authority for a current choice have their own grounds. |
+| Collier, [Understanding Process Tracing, with 2019 addendum](https://polisci.berkeley.edu/sites/default/files/people/u3827/2011%20Collier-Understanding%20Process%20Tracing%20with%20Addendum.pdf) | The 2011 treatment supplies within-case sequencing and diagnostic observations. The addendum develops relations among rivals and examines the limits of rigid necessity/sufficiency test classes. | Use this historical foundation with later work on inference and C.28 when a causal use is at issue. |
+| Fairfield and Charman, [Explicit Bayesian Analysis for Process Tracing](https://researchonline.lse.ac.uk/id/eprint/69203/2/Fairfield_Explicit%20bayesian%20analysis_author_2017%20LSERO.pdf) and [A Dialogue with the Data](https://doi.org/10.1017/S1537592718002177) | Compare specified alternatives conditional on prior evidence, account for source dependence and reconsider existing evidence as hypotheses change. | These operations support qualitative comparison. Numerical probabilities require their own justified assumptions. Judge causal support and a present architecture choice separately. |
+| [Fully specified Bayes factors for hypothesis testing and sensitivity analysis in process tracing, v2](https://arxiv.org/abs/2606.16683v2), 2026 preprint | Model-based evidence weights and sensitivity analysis can show how coding, selection and weighting affect a conclusion. | The binomial observation model and comparisons to one rival require substantive justification. Clustered dependence among sources limits the guarantees. Use the numerical procedure where these conditions fit. |
+| Mahoney, [The Logic of Process Tracing Tests](https://doi.org/10.1177/0049124112437709) | Logic of weak, necessary-condition and strongly discriminating tests. | Use the test logic to assess particular observations, then compare the support for the links across the chain. |
+| Current FPF `C.28` | The causal-use question, rung, support components, common threat screen, verdict, permissible reliance, limits and conditions for reconsideration. | Use the verdict within its specified scope. A downstream decision also requires its own criteria and authority. |
 
-Reopen when a current source changes the diagnostic logic or causal-use rules, when a representative history cannot keep differentiation and causal support separate, or when a downstream use repeatedly needs a missing result field.
+Reconsider the historical or causal account when a relied-on source changes the diagnostic comparison, an observed case exposes a consequential gap between historical and causal claims, or an intended use needs evidence the present account does not supply.
 
 ### RMP.11:12 - Relations
 
-- RMP.4 supplies inspectable source relations and limits; RMP.7 supplies warranted corpus contributions without multiplying dependent reports. RMP.5 can examine the historical claim under its Method, and RMP.8 returns an affected knowledge claim to its actual receiver.
-- `A.3.1` governs Method identity; `G.5` governs established family or selector claims; a local grouping label supplies neither.
-- `A.10` governs source and evidence paths; `A.10.1` helps locate actual dependencies when a premise changes; `C.27` governs temporal-claim adequacy; `C.28` and `C.28.CM` govern causal-use support and construction of causal inquiry.
-- C.39.RP may retain variants and lineages without inheriting causal truth.
-- C.32.MWA.PP may consume the differentiation account, causal-use verdict, or separately named non-causal observation only within each result's use boundary and keeps its own authority.
-- Cultural continuation and professional-history uses remain separate from one current project architecture decision.
+- Use RMP.4 for source relations and limits and RMP.7 for a corpus that accounts for dependent reports. RMP.5 can examine the inference from historical evidence. RMP.8 helps revise a changed knowledge claim and trace the uses that rely on it.
+- Use `A.3.1` for Method identity and `G.5` for an established family or selector claim. A local name may help locate the candidates to examine.
+- Use `A.10` for sources and evidence paths. When a relied-on premise changes materially, correct a known use directly if that resolves the issue. Use `A.10.1` when locating other affected uses or requalifying dependent claims together is needed. `C.27` addresses temporal claims, and `C.28` and `C.28.CM` causal support and the construction of a causal inquiry.
+- C.39.RP can retain variants and lineages with the historical and causal support appropriate to each claim.
+- C.32.MWA.PP can use the differentiation account, a causal-use verdict or a separately identified non-causal observation within its scope. The authority for the architecture choice belongs to its decision-maker.
+- Cultural continuation and professional-history questions can have their own supported answers. Use those answers for a project decision where they bear on that decision.
 
 ### RMP.11:End

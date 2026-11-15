@@ -35,7 +35,7 @@ Describe the proposed family change in terms of a useful result: a new supported
 
 Find actual consumers through the available agreements, configurations, delivery records, copied materials and observations of use. Include infrequent work and future obligations such as reproducing an earlier result. Absence from recent usage does not establish absence of reliance.
 
-For each materially different use, recover what the recipient must still obtain, the inputs and meanings they depend on, the work they perform, the help they receive and the authority under which the arrangement can change. Keep uncertainty about an unobserved population visible. A plausible class of affected uses is enough to discover a problem; it is not proof that every consumer has been found.
+For each materially different use, recover what the recipient must still obtain, the inputs and meanings they depend on, the work they perform, the help they receive and the authority under which the arrangement can change. State what remains unknown about users whose reliance has not been observed. One plausible class of affected uses can reveal a problem while other consumers remain undiscovered.
 
 #### CUST.8:4.2 - Separate the consequences before choosing the transition form
 
@@ -66,7 +66,7 @@ For an engineered platform migration or retirement, use the complete [SYSE.29 �
 
 Choose the next increment by dependencies and available resources. Several customers may need to move together because they share state or an operating window; others can move independently. The smallest useful increment preserves a complete receiving result, not necessarily one customer or one component.
 
-Agree the work with the parties who must perform it. Include customer preparation, permitted data or material transfer, training through actual use, acceptance, support and the disposition of local adaptations. Retain a qualified return path only where it really restores the required result. Where effects are irreversible, use the supported forward repair, restoration with stated loss or authorized interruption; do not promise a generic rollback.
+Agree the work with the parties who must perform it. Include customer preparation, permitted data or material transfer, training through actual use, acceptance, support and the disposition of local adaptations. Retain a qualified return path only where it restores the required result. Where effects are irreversible, use the supported forward repair, restoration with stated loss or authorized interruption; do not promise a generic rollback.
 
 Compare ordinary service, transition, coexistence and later support together through CUST.7. A specialist cannot be counted as fully available for each at the same time. If the joint demand is infeasible, change the increment, obtain capacity, narrow the new promise or defer the change.
 
@@ -74,7 +74,7 @@ Explain the transition at the customer's point of use: what changes, what they m
 
 #### CUST.8:4.5 - Qualify the changed result and expand only within its conditions
 
-Before widening reliance, perform an attainable trial or an explicitly labelled rehearsal of the selected receiving use. Check the actual result and the change-dependent failure branch. Reuse an adequate technical or operational result under its conditions.
+Before widening reliance, perform an attainable trial or a labelled rehearsal of the selected receiving use. Check the result obtained and what happens if the change causes the receiving use to fail. Reuse an adequate technical or operational result under its conditions.
 
 Different questions need different evidence. A compatibility test can establish an exercised old/new behavior. A recipient's completed task can establish that task under the trial conditions. Actual transition requires evidence that the selected uses moved. None of these alone authorizes ending an obligation.
 
@@ -92,7 +92,7 @@ Return what changed to the receiving work. CUST.3 receives the supported family 
 
 The analytical-service family has a monthly “active customer” calculation. A new shared operation uses a more precise status rule and passes interface tests, but an existing customer uses the old meaning in a continuing report. Automatically replacing the operation would change their result while leaving the output columns unchanged.
 
-The provider separates two decisions. The engineering comparison qualifies old and new calculation behavior. The customer decision identifies whether the report may change and what historical comparability it needs. The family can support an explicitly named old profile beside the new one while the customer evaluates its receiving use.
+The provider separates two decisions. The engineering comparison qualifies old and new calculation behavior. The customer decision identifies whether the report may change and what historical comparability it needs. The family can support a named old profile beside the new one while the customer evaluates its receiving use.
 
 The transition is then constructed. A permitted comparison sample produces both reports with an explanation of the differing records. The customer's responsible analyst chooses the intended meaning. A prepared delivery team changes the selected configuration; the support arrangement preserves access to the previous reporting basis for the agreed use. CUST.7 includes that coexistence work. New sales use the new profile only where it fits their result.
 
@@ -104,7 +104,7 @@ For a physical test-bench family, a replacement module can fit the fixture while
 
 Provider-led change can underrepresent quiet customers, small recipients and future use of retained results. Include the relevant reliance, not only high-volume current requests.
 
-The method assumes access to enough obligation and use evidence to make a bounded decision. Incomplete evidence requires an explicit qualified decision. Technical, legal, safety and other professional judgements remain with qualified contributors.
+The method assumes access to enough obligation and use evidence to make a bounded decision. When the evidence is incomplete, identify what remains uncertain and limit the decision accordingly. Technical, legal, safety and other professional judgements remain with qualified contributors.
 
 ### CUST.8:7 - Conformance Checklist
 
@@ -139,7 +139,7 @@ The cost is transition work and sometimes temporary complexity. An explicit supp
 
 ### CUST.8:10 - Architectural Rationale
 
-Family evolution changes more than an artifact. The same common operation can be embedded in different customer meanings, delivery arrangements and commitments. CUST therefore connects technical change to the receiving result and to the authority and resources for altering provision.
+Changing a common operation can affect customers differently because their meanings, delivery arrangements and commitments differ. CUST therefore connects technical change to the receiving result and to the authority and resources for altering provision.
 
 SYSE.27 and SYSE.29 provide the complete engineering Methods. The additional management contribution is the joined choice across the family and customer obligations, including continued local provision.
 

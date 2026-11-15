@@ -5,17 +5,17 @@
 
 ### RHY.8:1 - Problem frame
 
-**Use this when** a rhythmic passage needs a new variant that retains a useful relation: an ending must arrive at the agreed point, an accent should move while the cycle remains usable, or a continuous movement must admit another articulation without losing its continuation.
+**Use this when** a rhythmic variant must retain a relation that the passage needs. An ending can change length but still have to arrive at the agreed point. An accent may move while the cycle must remain usable, or an articulation may change while the continuous movement must leave the next action available. Use the method to construct a variant or assess one already proposed.
 
-The practitioner needs the existing passage or a seed, the intended difference and the performing conditions. The first result is a variant with its consequential timing, duration, articulation and realization requirements, ready for an appropriate trial; where the available basis already supports performance, retain that qualified result.
+Start with the passage or seed, the intended difference and the relevant performing conditions. State the timing, duration, articulation and realization requirements the variant changes or retains. The result may justify a trial, establish compatibility with a constraint or identify one the proposal fails. Existing performance evidence can also establish that the variant works under the conditions it covers.
 
-Use a familiar adequate variant directly. If the difficulty is reproducing an unchanged passage, locate the missing coordination or technique through RHY.1 and RHY.12 before adding variation.
+Use a familiar variant directly when it meets the requirements. If reproducing an unchanged passage presents a difficulty, use RHY.1 to locate it and RHY.12 when practice is needed to develop missing coordination or technique.
 
 ### RHY.8:2 - Problem
 
 A transformation preserves some properties while changing others. Moving attacks can disturb an entrance cue; enlarging a phrase can move its ending; preserving the total duration can still demand more rapid actions than the performer can make. A valid manipulation of a score may therefore give an unsuitable passage.
 
-The problem is to construct the wanted difference together with the relations that must survive, then return the variant to the actual performance.
+Construct or assess the wanted difference together with the relations that must survive it. Return the result to the performance conditions in which the variant is meant to work.
 
 ### RHY.8:3 - Forces
 
@@ -24,15 +24,15 @@ The problem is to construct the wanted difference together with the relations th
 | Continuity and novelty | A recognizable contribution must remain while something consequential changes. |
 | Local transformation and whole passage | Enlarging or displacing one phrase changes its fit with preceding, simultaneous and following contributions. |
 | Arithmetic and realization | A duration calculation can close correctly while the required actions remain unavailable. |
-| Diversity and selection effort | A few variants exposing useful alternatives are more helpful than an unexamined mass of perturbations. |
+| Diversity and selection effort | A few examined variants can reveal a useful difference that a large collection of unexamined changes leaves unknown. Search or examine further variants when the gain is worth the work. |
 
 ### RHY.8:4 - Solution
 
 #### RHY.8:4.1 - Fix the receiving use and retained relations
 
-State what the variation should accomplish and what must remain available. Relevant retained relations include an entrance or ending, cycle length, ordering of characteristic articulations, a continuing carrier, a partner's cue, and the ability to perform the following phrase.
+Identify the intended change and the relations that need to survive it. They may include an entrance or ending, cycle length, the ordering of articulations, a continuing carrier, a partner’s cue or the ability to perform the following phrase.
 
-Name the performing arrangement and preparation that matter: voice with a beat gesture, one limb or alternating limbs, a pair sharing contact, or a device with known action limits. Use an existing RHY.7 comparison to identify the property worth changing. The same nominal pattern can require a different construction after its assignment to performers changes.
+Identify the arrangement and preparation the change depends on. It might involve voice and beat gesture, one limb or alternating limbs, two dancers sharing contact, or a device with known recovery limits. Use an applicable RHY.7 comparison when it helps establish what to change. Reassigning the same pattern can alter the construction required.
 
 #### RHY.8:4.2 - Choose a construction whose effect is understandable
 
@@ -41,87 +41,87 @@ Choose an operation from the rhythmic material and the intended change.
 | Wanted change | Construction | Relations to examine after the change |
 | --- | --- | --- |
 | Enter at a different place in a cycle | Add a displacement to each selected occurrence and reduce positions modulo the cycle length. Move associated duration and sound labels with the occurrence when that is the intended transformation. | Entry cue, phase relative to other layers, and material crossing the cycle boundary. |
-| Expand or compress a phrase | Scale its durations, or add/remove a specified part of each repeated statement; recompute the phrase's total span. | Tempo, internal articulation, available action intervals and its fit with adjoining material. |
-| Make a repeated ending reach a chosen point | Choose statement and intervening-gap durations, calculate the whole ending and work backward from its endpoint. Adjust the setup by the corresponding amount. | The convention for the final articulation, the maintained reference and the available preceding material. |
-| Distribute a given number of attacks over a cycle | Choose an arrangement, such as an evenly distributed seed, then retain the phase and articulations needed by this use. | Minimum intervals, entry, accent and the intended style; evenness is one construction choice. |
+| Expand or compress a phrase | Scale its durations or add or remove a specified part of each repeated statement. Recalculate the phrase’s total span. | Tempo, internal articulation, available action intervals and fit with adjoining material. |
+| Make a repeated ending reach a chosen point | Choose the statement and gap durations, calculate the span and work back from the endpoint. When the start moves, adjust the setup by the amount the new start requires. | The final articulation convention, the maintained reference and the available preceding material. |
+| Distribute a given number of attacks over a cycle | Choose an arrangement, possibly an evenly distributed seed. Retain the phase and articulations the use requires. | Minimum intervals, entry, accent and intended style. |
 | Change the articulation of a continuous contribution | Reposition or reshape its marked changes while retaining the required trajectory, support or sounding contribution. | Continuity, available movement or control rates, usable timing and the state needed for continuation. |
 | Build a larger passage from familiar parts | Concatenate, overlap or alternate parts under explicit timing and allocation relations. | Boundary transitions, simultaneous demands and the whole passage's intended development. |
 
-A named tradition can supply a more specific construction. In Nelson's treatment of a **mōrā**, three statements are separated by two equal-duration gaps. A gap can include sound; it is a structural separation, not a synonym for silence. A **kōrvai** can build a larger, shaped composition whose closing portion is a mōrā. Use the learned phrase grammar and setting when constructing either, rather than treating the names as labels for arbitrary repetition.
+Use the construction supplied by the relevant practice. In Nelson’s treatment of a **mōrā**, three statements are separated by two equal-duration gaps. A gap is a structural separation and may contain sound. A **kōrvai** can form a larger shaped composition with a mōrā in its closing portion. Use the learned phrase grammar and setting when constructing either form or applying its name.
 
-For the simple equal-statement case, let `s` be the statement's duration and `g` each gap's duration, measured in the same pulse unit. The total is `D = 3s + 2g`. If `T` is the boundary after the final statement, the start is `T − D`. A last attack, the completion of its duration and a later arrival accent are different possible targets; select the one actually required.
+For three equal statements, let `s` be the duration of each statement and `g` the duration of each of the two gaps in the same pulse unit. The total is `D = 3s + 2g`. If `T` marks the boundary after the final statement, the start is `T − D`. Check which event the passage needs at its target. The final attack, its completion and a later arrival accent can have different times.
 
 #### RHY.8:4.3 - Calculate the whole effect and recover omitted content
 
-Apply the construction, then examine the relations named in the first step. For a cycle, include the transition from its last event to the next cycle's first. For a phrase, include both its entry from preceding material and its exit. If an enlarged ending starts earlier, decide what preceding material can actually be shortened or moved.
+Apply the construction and examine the retained relations. Include the last-to-next-first transition when the cyclic result depends on closure. For a phrase joined to adjoining material, check its entry and exit. If an enlarged ending starts earlier, establish whether preceding material can be shortened or moved within the intended passage.
 
-Recover the information a chosen representation omitted before relying on it. An onset-only syllable string may not specify how long a sound continues or where silent beats lie. Obtain that duration or reference when the transformation depends on it; otherwise transform only the content the string determines. RHY.5–RHY.6 supply the representation and correspondence work.
+If a transformation depends on information the representation omits, use an available source or obtain the missing contribution. An onset-only syllable string may leave sustain or silence unresolved. If that distinction cannot be recovered, report the affected limit. The onsets can still be transformed for a positional question. Use RHY.5–RHY.6 for the representation or correspondence.
 
-When composing variants, calculate their combined effect. A displacement followed by a duration change need not preserve the same boundaries as the operations in the opposite order. Keep the order that yields the intended passage and explain it through the resulting positions, durations and contributions.
+When transformations are combined, calculate their joint effect in the specified order. Displacing a phrase before changing its duration may give different boundaries from making those changes in the opposite order. Explain the chosen order through the resulting positions, durations and retained contributions.
 
 #### RHY.8:4.4 - Establish the next warranted performance step
 
-Check the proposed assignment of actions against known limits at the intended tempo. Include articulation, sustained contributions, cue reading and recovery for the next action. A change in notation alone cannot supply a missing constituent coordination.
+Check the proposed allocation against the relevant limits at the intended tempo. Include articulations, sustained contributions, cue reading and needed recovery. A new notation can specify an action while leaving the coordination needed to perform it unavailable.
 
-Reject or alter a variant that conflicts with a relevant known constraint. If the constraint leaves several useful variants, retain their different contributions through RHY.7 and make the choice under C.11. Obtain a new observation only when it can change that choice or the reliance placed on the variant.
+Identify any conflict with a known constraint. An assessment can end with that finding. If the task is to choose a usable variant, rule out the conflicting one for that use. If a replacement is requested, construct or adapt one. When several candidates remain, use RHY.7 to compare the differences that matter and C.11 if a choice is called for. Seek a further observation when it could improve the result enough to justify the work.
 
-For a suitable trial, use a manageable passage with familiar techniques and the conditions needed to expose the question. RHY.3 checks articulation with its carrier, RHY.9 the performing arrangement, and RHY.10–RHY.11 the necessary shared reference or joint layers. When the limiting condition is an unavailable technique or capability, return it to instruction or development rather than demanding more force or speed.
+For a needed trial, use a manageable passage, familiar techniques and conditions that expose the question. Use RHY.3 for articulation with its carrier, RHY.9 for the arrangement and RHY.10–RHY.11 for the shared reference or simultaneous layers. If a technique or capability is unavailable, identify the limit. Where development is wanted, use appropriate instruction and practice. Increasing force or speed cannot supply the missing coordination.
 
 #### RHY.8:4.5 - Return a variant that someone can enact and assess
 
-Supply enough to reproduce the intended change: the passage or demonstration, reference, duration and articulation conventions, performing assignment, retained conditions and the result expected in the receiving activity. A short demonstrated variation may suffice; repeatable distributed use can need a score, sound example or code.
+Provide the passage or demonstration, timing reference, duration and articulation conventions, allocation and performance conditions needed to recover the intended change. A short demonstration may suffice. Repeated or distributed use may need a score, sound example or code. State what result the variant is meant to produce.
 
-Distinguish what was calculated, what was demonstrated and what remains to be tried. A proposed variant is usable for a trial before a claim of reliable performance is supported. An observed local success retains its tempo, partner, support and other consequential conditions.
+Distinguish the calculation, any demonstration and what remains to be tried if the intended use needs a trial. A proposal may be ready to try before reliable performance is established. Qualify observed success to the tempo, partner, support and other relevant conditions.
 
-Stop when the needed variant and its next use are determined, or return the constraint preventing construction. Further novelty is useful only if it opens another wanted rhythmic action or performance possibility. When the intended use or a retained condition changes, recheck the affected construction and its fit with the passage; keep unaffected results.
+Return the variant, its supported use or the constraint preventing the required construction. Seek further variation when another wanted rhythmic action or performance possibility justifies it. If the intended use or a retained condition changes, check the affected parts of the construction and how they fit the passage.
 
 ### RHY.8:5 - Archetypal Grounding
 
 #### RHY.8:5.1 - Preserve an entrance while varying an eight-unit cycle
 
-In this constructed case, an eight-unit cycle has three attacks at positions 0, 3 and 6. The next passage needs an attack at position 0, exactly three attacks in the cycle and at least two units between consecutive attacks by the assigned mechanism. The interval requirement is supplied for this case.
+Consider an eight-unit cycle with three attacks at positions 0, 3 and 6. The next passage needs an attack at 0, exactly three attacks per cycle and at least two units between consecutive attacks by the assigned mechanism. The spacing requirement is stipulated for this case.
 
-Displacing the whole pattern by one unit gives positions 1, 4 and 7. It preserves cyclic gaps of 3, 3 and 2 but removes the required entrance at 0. Discard that proposal for this use.
+Displacing the whole pattern by one unit gives 1, 4 and 7. The cyclic gaps remain 3, 3 and 2, but the required attack at 0 is absent. This proposal fails the entry condition.
 
-Instead, use positions 0, 2 and 5. The cyclic gaps are 2, 3 and 3, including the gap from 5 to the next 0. The entrance, attack count and supplied spacing condition all hold. Positions 0, 1 and 6 would retain the entrance and attack count but violate the minimum spacing at the first transition.
+Positions 0, 2 and 5 give cyclic gaps of 2, 3 and 3, including the gap from 5 to the next 0. This option meets the entrance, count and minimum-spacing requirements. Positions 0, 1 and 6 retain the entrance and count but violate the spacing requirement between 0 and 1.
 
-Return 0, 2, 5 as the proposed variation, with its sound labels, reference and performing assignment. This calculation settles the named positional constraints; any further performance claim needs the corresponding realization.
+Offer 0, 2, 5 as a variant, with its sound labels, reference and performing assignment. The calculation establishes the three positional requirements. A claim about actual performance requires evidence of its realization.
 
 #### RHY.8:5.2 - Enlarge an ending without moving its endpoint
 
-Use the simple mōrā construction with three equal statements and two gaps. Two already learned statements last three and four pulses respectively; each gap lasts two pulses. In this constructed adaptation, the ending must occupy the time immediately before boundary `T = 32`. The boundary follows the final statement's last one-pulse articulation.
+Suppose a performer knows two statements, lasting three and four pulses. Construct a simple mōrā from three repetitions of one statement with two gaps of two pulses each. The ending must fit immediately before boundary `T = 32`, which follows the final statement’s last one-pulse articulation.
 
 With `s = 3` and `g = 2`, the duration is 13 pulses and the start is 19. The statements begin at 19, 24 and 29; the last occupies positions 29–31 and ends at 32.
 
-Replacing each statement with the four-pulse version gives duration 16 and start 16. The statements begin at 16, 22 and 28, with the last occupying 28–31. The same endpoint is retained, but the setup must now release three pulses earlier.
+Using the four-pulse statement gives duration 16 and start 16. The statements begin at 16, 22 and 28. The last occupies positions 28–31 and finishes at 32. To preserve that endpoint, the preceding setup must give way three pulses earlier.
 
-Suppose the setup contains a repeatable three-pulse phrase that can be omitted without losing the agreed cue. Remove one occurrence and use the longer ending. The result is a complete timing construction: changed statements, unchanged gaps, an adjusted setup and the retained endpoint. If that phrase carries a needed cue or cannot be removed, this construction does not yet fit; choose another ending or change the cue arrangement.
+Suppose a repeatable three-pulse phrase in the setup can be omitted without losing the agreed cue. Omit one occurrence to make room for the longer ending. The statements change, the gaps and endpoint remain, and the setup now fits. If the phrase supplies an indispensable cue or must remain for another reason, this construction still conflicts with the setup. To obtain a workable variant, choose another ending or change the part of the setup or cue arrangement that can be changed.
 
-The arithmetic follows Nelson's statement/gap construction, while the numerical case is constructed here. It does not establish cultural appropriateness or the performer's ability to recite the enlarged ending while maintaining the tāḷa. Those joint requirements remain part of its use.
+The arithmetic applies Nelson’s statement-and-gap construction to the stipulated example. Cultural appropriateness and the performer’s ability to recite the enlarged ending while maintaining tāḷa require grounds in the relevant practice and joint performance.
 
 #### RHY.8:5.3 - Move a swell while retaining a continuous carrier
 
-A constructed electronic instrument maintains a carrier while its amplitude control rises and falls over four seconds. The control value starts and ends at 0.2 and reaches 1.0 at two seconds, following straight ramps. Its supplied control-rate limit is 0.6 units per second. The receiving design needs the peak earlier while retaining the four-second phrase and its endpoint values.
+Suppose an electronic instrument maintains a carrier while its amplitude control rises and falls over four seconds. The value starts and ends at 0.2, reaches 1.0 at two seconds and follows straight ramps. The specified control-rate limit is 0.6 units per second. The design requires an earlier peak while preserving the duration and endpoint values.
 
-A peak at one second needs a rising rate of 0.8 units per second and conflicts with the supplied limit. A peak at 1.5 seconds needs a rising rate of `0.8 / 1.5 ≈ 0.533` and a falling rate of `0.8 / 2.5 = 0.32`. Both are within the given limit. The controller returns to 0.2 at four seconds, ready for the specified next phrase.
+A peak at one second requires a rising rate of 0.8 units per second, above the 0.6 limit. At 1.5 seconds the rise requires `0.8 / 1.5 ≈ 0.533` units per second and the fall `0.8 / 2.5 = 0.32`. Both rates fit the limit. At four seconds the specified trajectory returns to 0.2, the value required for the next phrase.
 
-Retain the 1.5-second proposal for the intended trial. The change concerns the course of a continuing signal, not the addition of another attack. It establishes compatibility with one supplied rate constraint; the heard phrasing and any further device constraints remain separate questions.
+The 1.5-second proposal is compatible with the supplied rate constraint and can be retained for the intended trial. It reshapes the amplitude envelope of the continuing carrier without adding an attack. A conclusion about heard phrasing or the device’s ability to perform the whole passage needs its corresponding evidence.
 
 ### RHY.8:6 - Bias-Annotation
 
-A visible geometric difference can be mistaken for a useful musical or movement variation. Let the intended action and performing practice choose which difference matters. Conversely, familiarity can hide useful alternatives: an arrangement excluded by one performing allocation may become feasible under another.
+A geometric difference matters when it changes the action or effect the performing practice needs. A familiar allocation can hide alternatives. Reassigning contributions may make a previously infeasible arrangement workable.
 
-A construction borrowed from another tradition supplies possibilities, not permission to attribute an invented phrase to that tradition. Keep the source construction and the new application distinguishable.
+When borrowing a construction, identify the source and the new application. A claim that a newly constructed phrase belongs to the source tradition also needs a basis in that practice.
 
 ### RHY.8:7 - Conformance Checklist
 
 - The wanted change and relations to preserve are recoverable.
 - The construction specifies what happens to timing, duration, articulation and performing allocation where each matters.
-- Cyclic closure or phrase entry and exit are included in the calculation.
-- A changed ending has a compatible setup and a stated endpoint convention.
-- Consequential sustain, silence and reference information omitted by the representation is recovered before use.
+- The calculation includes cyclic closure or phrase entry and exit where the result depends on them.
+- For a changed ending, the account states the endpoint convention and establishes how the setup fits it or where a conflict remains.
+- The account uses an adequate source for sustain, silence or reference information required by the transformation, or identifies the resulting limit.
 - Supplied constraints and jointly required capabilities are respected or returned as unresolved.
-- The next participant can reproduce the proposed variant and tell a calculation from a demonstrated performance result.
+- If a reproducible variant is requested, the recipient can reproduce it under the stated conventions. For an assessment, the recipient can recover its supported use or the constraint that defeats it. They can distinguish a calculation from an observed performance.
 
 ### RHY.8:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -131,34 +131,34 @@ A construction borrowed from another tradition supplies possibilities, not permi
 | Enlarge every repeated statement but keep the former setup. | Recompute the total and move the start or alter the adjoining material. |
 | Treat a mōrā gap as necessarily silent. | Recover its actual phrase content and duration from the selected construction. |
 | Change attacks from a bare syllable string while assuming missing duration. | Recover duration when it changes the transformation; preserve the uncertainty otherwise. |
-| Call a calculated variant reliably performable. | Identify the constraints already answered and obtain the needed joint-performance result. |
+| Infer reliable performance from a calculated variant. | Report the constraints the calculation establishes. To establish joint performance, use suitable evidence of the passage under the required conditions. |
 
 ### RHY.8:9 - Consequences
 
-The practitioner can propose and test variants while retaining their place in the larger passage. A rejected construction becomes useful when it identifies the condition to change: phase, setup, action allocation, coordination or a retained contribution.
+A practitioner can propose or assess a variant in its place in the larger passage and can test it there when a trial is needed. A rejected construction can locate the limiting phase, setup, allocation, coordination or continuing contribution. That finding can guide a different construction when one is needed.
 
-The result may be one adequate variant or several alternatives for different uses. A large inventory is unnecessary when it adds no useful choice.
+One adequate variant may suffice. Retain several when their different contributions support uses the practitioner needs to distinguish.
 
 ### RHY.8:10 - Architectural Rationale
 
-A rhythmic transformation operates on related contributions. Moving or enlarging a local phrase changes how it joins the whole, and the whole can depend on concurrent reference, support and articulation. The construction therefore closes over the relations needed by the receiving performance rather than ending at the transformed diagram.
+Moving or enlarging a local phrase changes how it joins the whole. The whole can also need a concurrent reference, support and articulation. This is why the method checks how the transformed relations fit the receiving performance.
 
-The same mathematical operation can serve different work: rotation can compare shapes, generate an offbeat entry or ruin a required cue. Its meaning follows from the retained reference and intended action. This connects rhythmic construction to mathematical methods without reducing performance to their representations.
+Rotation can preserve a shape comparison, produce an offbeat entry or lose a required cue. Its use depends on the retained reference and the intended action. Apply the mathematical operation under those rhythmic conditions.
 
 ### RHY.8:11 - SoTA-Echoing
 
-Nelson's *Solkattu Manual* (2008), printed pp. 22–26 and 61–62, provides statement/gap construction, controlled expansion with adjustment of the setup, and larger shaped compositions. Adopt the reusable construction and its practice-specific phrase conditions. A duration identity alone supplies neither the whole tradition nor an acquired recitation technique.
+Nelson’s *Solkattu Manual* (2008), printed pp. 22–26 and 61–62, describes statement-and-gap construction, controlled expansion with adjustment of the setup, and larger shaped compositions. Retain the phrase conditions of that practice when using its construction. The duration identity can establish the span while leaving cultural fit and recitation skill to be assessed on their own grounds.
 
-Toussaint's *The Geometry of Musical Rhythm* (2020), chapters 21 and 31, supplies evenly distributed seeds, phase-related transformations and constructions from performer allocation. These are productive alternatives to uncontrolled perturbation. Their geometric properties do not by themselves establish preference, stylistic suitability or training success.
+Toussaint’s *The Geometry of Musical Rhythm* (2020), chapters 21 and 31, offers evenly distributed seeds, phase transformations and constructions from performer allocation. Use these to generate interpretable alternatives. For a claim about preference, stylistic fit or training success, use the appropriate evidence from the practice.
 
-Cha's Takadimi critique, discussed in RHY.5–RHY.6, makes a transformation's input completeness consequential: omitted sustain or silent reference positions can change the result. A timed demonstration, a score or an accompanying beat gesture can supply information absent from a bare syllable string.
+Cha’s Takadimi critique in RHY.5–RHY.6 shows how omitted sustain or unarticulated reference positions can change a transformation. A beat gesture can mark positions with no new attack. To determine whether sound continues or stops there, use a duration-bearing score, a timed realization or a convention that also indicates release.
 
-The three cases above are constructions from stipulated inputs. The combined method—retained relations, rhythmic construction, fit with the whole and a qualified return to performance—is a synthesis; empirical claims remain limited to their own sources and observations.
+The three cases stipulate their inputs. This method combines preserving the required relations, constructing a variant, checking its fit with the whole passage and returning a qualified result for its intended use. Claims about observed performance need evidence of the particular realization.
 
 ### RHY.8:12 - Relations
 
-RHY.2 supplies the relevant changes and relations; RHY.5–RHY.6 supply representation and translation; RHY.7 compares retained alternatives. RHY.3 checks carrier/articulation coexistence. RHY.9–RHY.11 realize the needed configuration and coordination. RHY.12 develops a limiting capability; RHY.13 addresses transfer or retention; RHY.14 supplies a needed enactment or response result.
+Use RHY.2 to identify relevant changes and relations, RHY.5–RHY.6 for representation and translation, and RHY.7 to compare alternatives. Use RHY.3 to check whether the articulation can coexist with the continuing carrier, RHY.9–RHY.11 for configuration and coordination, RHY.12 when capability needs development, RHY.13 for transfer or retention, and RHY.14 for a needed observation of performance or response.
 
-C.17 and C.18 support broader novelty/diversity search when the work needs it. C.11 chooses among available alternatives; C.11.DUA tests the usefulness of further inquiry. Mathematical construction and transformation methods can supply operations; C.29 qualifies their application to the performance. E.10.D2 governs a specification's checkable claims when the variant is supplied as a specification.
+Use C.17 and C.18 for a broader search when variation and diversity matter to the task. Use C.11 when choosing among alternatives and C.11.DUA to assess further inquiry. Mathematical methods supply possible transformations. C.29 qualifies their application to the performance. If the variant is a specification, use E.10.D2 for its checkable claims.
 
 ### RHY.8:End

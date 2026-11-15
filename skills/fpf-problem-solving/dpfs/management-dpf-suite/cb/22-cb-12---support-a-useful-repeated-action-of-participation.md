@@ -35,9 +35,9 @@ How can the organiser and participant build and revise a useful repeated action,
 
 ### CB.12:4 - Solution
 
-Choose one action worth repeating. Examine its actual opportunities, beginning, completion and return; repair the relevant conditions; try a proportionate arrangement with the participant; and use later episodes to retain, revise or end it.
+Choose one action worth repeating. Find out when the opportunity arises, whether the person starts and finishes the action, and what the person or others receive from it. Address any difficulty and try a proportionate arrangement with the participant. Review later results and burden with them. They can decline further support, and any commitment already accepted must be settled on its own terms.
 
-**Working reminder:** choose the useful action; locate the failed connection; make a feasible occasion and response; try it; inspect useful repetitions and burden; change or stop what no longer serves the person.
+
 
 #### CB.12:4.1 - Agree what is worth repeating
 
@@ -47,7 +47,7 @@ Establish what would make one episode complete. The result may be an applicable 
 
 Ask whether repetition is appropriate. A daily work handover and an occasional unusual case have different opportunities. The frequency of a platform notification is not the frequency of the person's need. If an address or bookmark is enough for a rare event, preserve that simpler arrangement.
 
-Agree what support the person wants, the burden they can accept and when the arrangement should be reconsidered. Distinguish their voluntary participation from a duty already accepted through employment, membership or another agreement. Explain such a duty through its actual basis; adding a community reminder does not create or remove it.
+Agree what support the person wants, the burden they can accept and when the arrangement should be reconsidered. Distinguish their voluntary participation from a duty already accepted through employment, membership or another agreement. Explain what establishes any such duty; adding a community reminder does not create or remove it.
 
 For a shared activity, obtain the other participants' contributions too. One person's intention to seek help does not guarantee that a qualified respondent will be available. CB.5 supplies the contribution and return arrangement.
 
@@ -64,7 +64,7 @@ Keep four questions distinct:
 | Could they carry the action through? | They started but lost time, access, assistance or an applicable method before completion. |
 | Did the episode supply its intended value? | The answer arrived too late, the activity failed its purpose, or the person no longer wanted that result. |
 
-Ask for the participant's account rather than inferring a motive from silence. A person who reads an applicable answer without posting may have completed the wanted action. A daily visitor may still be unable to obtain help.
+Ask for the participant's account rather than inferring a motive from silence. A person who reads an applicable answer without posting may have completed the wanted action. A daily visitor may be unable to obtain help.
 
 Where an explanation remains uncertain, choose a small change or observation that can distinguish the live alternatives. For example, making the return link available at case closure can test a findability problem; sending more reminders while the response team is absent tests no useful repair. Preserve the other relevant conditions so that the observation remains interpretable, and keep its conclusion local.
 
@@ -76,7 +76,7 @@ HCD.3 supplies a fuller comparison when a possible human capability limitation i
 
 #### CB.12:4.3 - Build an occasion, action and return that fit together
 
-Choose an occasion the participant can recognise in their actual work. It may be an existing event, a relevant state of the case or a selected point in the day. Explain the action in terms that remain intelligible there. A person finishing a diagnostic comparison needs the route for returning that comparison, not an unrelated invitation to browse.
+Choose an occasion the participant can recognise in their work. It may be an existing event, a relevant state of the case or a selected point in the day. Explain the action in terms that remain intelligible there. A person finishing a diagnostic comparison needs the route for returning that comparison, not an unrelated invitation to browse.
 
 Make the beginning easy without deleting the work needed for a useful result. Put the relevant reference, permitted question route or return location where it is needed. Pre-fill stable information when that is appropriate, while leaving the person to inspect and supply the case-specific content. A one-click response is inadequate if the receiving use needs a distinction it omits.
 
@@ -90,7 +90,7 @@ The useful return should be dependable enough for the promise being made. An ans
 
 #### CB.12:4.4 - Choose support and useful accumulation deliberately
 
-Use a reminder when remembering or noticing is the actual difficulty and the person wants that support. Agree its channel and timing, what action it should make intelligible, and how to change or end it. Combine or remove messages that compete for the same attention.
+Use a reminder when remembering or noticing is the difficulty and the person wants that support. Agree its channel and timing, what action it should make intelligible, and how to change or end it. Combine or remove messages that compete for the same attention.
 
 Begin with enough support for a feasible episode. Help can include a prepared example, a companion for an unfamiliar first attempt or a reliable route back to the relevant material. CB.3 supplies attainable entry and preparation; HCD supplies learning where the required action has not yet been learned.
 
@@ -102,15 +102,15 @@ An organiser may also recognise a contribution through CB.6. Keep that response 
 
 #### CB.12:4.5 - Observe the next episodes and distinguish the result
 
-Choose an observation opportunity from the action's real occurrence and the decision being made. A daily task can produce several observations soon; an uncommon fault cannot. Do not manufacture irrelevant activity to fill an observation calendar.
+Choose an observation opportunity from when the relevant occasion arises and the decision being made. A daily task can produce several observations soon; an uncommon fault cannot. Do not manufacture irrelevant activity to fill an observation calendar.
 
 Retain only information needed to decide what to change. Ask whether the relevant occasion occurred, whether the person noticed and acted, what support was present, whether the intended result was obtained, and what burden the episode imposed. A missed occasion, a justified decision not to act and an unfinished attempt should not become the same failure count.
 
 Compare the episodes with the expected connection. If the person notices the occasion but cannot finish, repair completion conditions. If they complete the action but receive no useful result, repair the contribution or reconsider the action. If they do not notice an otherwise feasible occasion, change the cue or agreed support. If the person no longer wants the result, reconsider the arrangement with them.
 
-A person's report that the action now comes to mind readily can inform a local adjustment. Ask separately how readily the occasion brings the action to mind and how much deliberate effort is still needed to carry it through. Compare these accounts across relevant episodes, keeping the actual support visible. When it matters, combine them with an agreed observation under reduced prompting. This can guide the next local trial; it is not a numerical habit-strength assessment. A stronger automaticity claim needs an appropriate measurement method and qualification for the intended use. Frequency alone cannot supply it.
+A person's report that the action now comes to mind readily can inform a local adjustment. Ask separately how readily the occasion brings the action to mind and how much deliberate effort is still needed to carry it through. Compare these accounts across relevant episodes, noting what support was available and which prompts or other help the person used. When it matters, combine them with an agreed observation under reduced prompting. This can guide the next local trial; it is not a numerical habit-strength assessment. A stronger automaticity claim needs an appropriate measurement method and qualification for the intended use. Frequency alone cannot supply it.
 
-Likewise, a favourable change after introducing the arrangement is useful local evidence but does not by itself establish a causal effect or transfer to every participant. Preserve the actual conditions when deciding what can be reused.
+A favourable change after introducing the arrangement is useful local evidence but does not by itself establish a causal effect or transfer to every participant. Preserve the actual conditions when deciding what can be reused.
 
 #### CB.12:4.6 - Retain, revise, transfer or stop
 
@@ -146,7 +146,7 @@ An independent repairer occasionally encounters an unfamiliar configuration. The
 
 The repairer instead needs an easy-to-find request route, a permitted way to prepare the case and a realistic response window. CB.5 helps obtain the relevant respondent. The route is saved with the working reference.
 
-The repairer does not visit on days when no such question occurs. When a suitable case does arise, they use the route. A later case needing an urgent response uses the accountable service instead. The arrangement has improved access to help without adopting a daily habit as its objective.
+The repairer does not visit on days when no such question occurs. When a suitable case does arise, they use the route. For a later case needing an urgent response, the repairer uses the accountable service. The arrangement has improved access to help without adopting a daily habit as its objective.
 
 If no one can answer the relevant class of question, the organiser changes the promised scope.
 
@@ -170,7 +170,7 @@ In another case, the person has also agreed to inspect a shared resource on a re
 
 In a constructed group of workshop volunteers, a member says that the weekly exchange helps them "keep up", yet often skips it. The organiser has two plausible explanations: the member wants a concise update on changed practices, or wants a second person's judgement before using a practice in their own work. These suggest different recurring actions: reading a digest or bringing an unsettled case.
 
-They compare recent episodes. The member read an update at home and missed the meeting after finding what they needed. On another occasion, they attended after receiving the same update, asked about an unfamiliar material and stayed until someone helped them decide the next step. A third visit was enjoyable but left the working question unresolved. The member's account favours getting judgement on an actual case; the episodes also leave room for valued social contact.
+They compare recent episodes. The member read an update at home and missed the meeting after finding what they needed. On another occasion, they attended after receiving the same update, asked about an unfamiliar material and stayed until someone helped them decide the next step. A third visit was enjoyable but left the working question unresolved. The member's account favours getting judgement on a case they are working on; the episodes also leave room for valued social contact.
 
 For the next suitable weekly exchange, the member agrees to try a short inspection of their pending case with a competent respondent. The usual invitation, time and place remain; the first part of the meeting is reserved for that case instead of the general round of updates. They judge the trial by whether the member leaves with a usable next step and its limits. If the reference alone settles the question beforehand, they can report that and release the slot.
 
@@ -199,7 +199,7 @@ A feasible first episode is enough to try the arrangement. A claim about automat
 
 | Wrong turn | Practical repair |
 | --- | --- |
-| Choose daily participation before identifying the recurring need | Establish the real occasion and consider a simple accessible route. |
+| Choose daily participation before identifying the recurring need | Identify when the need arises and consider a simple accessible route. |
 | Treat every missed action as weak motivation | Distinguish absent opportunity, unnoticed occasion, unavailable conditions and an unwanted result. |
 | Make starting easy but leave completion unsupported | Obtain the necessary material, time, method and receiving response. |
 | Increase reminders when nobody can supply the promised help | Repair provision or change the promise. |
@@ -212,13 +212,13 @@ A feasible first episode is enough to try the arrangement. A claim about automat
 
 The organiser and participant can locate a failed connection and change it without escalating all reminders, rewards or activity targets. Useful repetition can coexist with quiet use, continued support and a reduced frequency of visits.
 
-Observation and support still require effort. Rare opportunities may leave the mechanism uncertain for a long time. An adequate deliberate practice can therefore be a better objective than proving automaticity, and a simpler access arrangement can be a better result than a habit programme.
+Observation and support require effort. Rare opportunities may leave the mechanism uncertain for a long time. An adequate deliberate practice can therefore be a better objective than proving automaticity, and a simpler access arrangement can be a better result than a habit programme.
 
 ### CB.12:10 - Rationale
 
 Repeating an action requires more than recalling its beginning. Material, time, access, other people's contributions and the returned value can differ from one occasion to the next. Separating these conditions gives the organiser a useful repair even when the psychological mechanism is not established.
 
-The person also retains a reason to choose whether the action should continue. An arrangement that is easy to repeat can outlast the need it once served. Inspecting value and burden alongside repetition prevents continuation from becoming its own objective.
+The person can reconsider whether the action is worth continuing. An arrangement that is easy to repeat can outlast the need it once served. Inspecting value and burden alongside repetition prevents continuation from becoming its own objective.
 
 ### CB.12:11 - SoTA-Echoing
 
@@ -228,7 +228,7 @@ The person also retains a reason to choose whether the action should continue. A
 | Duhigg, The Power of Habit, reader's appendix, printed 275–286 | A practical historical approach to identifying an existing routine, examining its expected result and occasion, then trying a changed plan. | Use inquiry and revisable trials; the account supplies neither a universal change formula nor a fixed repetition deadline. |
 | Eyal, Hooked for the Enterprise, Trigger–Investment | Connect accessible action with value accumulated through use. | Retain useful material or connections for the person. Commercial retention, induced pressure and compulsory variable rewards are not the criteria for this voluntary practice. |
 | Stojanovic, Grund and Fries (2022), context-stability studies | Distinguish repetition, automaticity, starting context and conditions during performance. | Self-reported intentional habits in the studied populations inform a bounded design question. They do not establish the effect of a community intervention or make attendance an automaticity measure. |
-| HCD.3:4.1–HCD.3:4.3 and HCD.15:4.1–HCD.15:4.7 | Compare human and non-training explanations; connect continuing development with meaningful triggers, support and evidence. | Apply these suppliers when capability or professional development is the receiving question. They do not replace the particular participation arrangement. |
+| HCD.3:4.1–HCD.3:4.3 and HCD.15:4.1–HCD.15:4.7 | Compare human and non-training explanations; connect continuing development with meaningful triggers, support and evidence. | Apply these suppliers when the question concerns human capability or continuing professional development. They do not replace the particular participation arrangement. |
 
 Compared with a general reminder or reward programme, the method asks for more explanation of the wanted action and the failed condition. It can then remove unnecessary prompts or stop an unsupported activity. An existing routine or an accessible one-time route is preferable when it already serves the person adequately.
 

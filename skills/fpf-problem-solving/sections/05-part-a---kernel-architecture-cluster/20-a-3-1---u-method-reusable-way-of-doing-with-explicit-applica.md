@@ -55,7 +55,7 @@ The practical harm is fragile reliance. Changing a publication looks like changi
 
 ### A.3.1:4 - Solution
 
-`U.Method` is the **reusable semantic way of doing under stated applicability**.
+A `U.Method` is a repeatable way of doing work under stated conditions. In ordinary instructions, name the action and the conditions under which the method applies. A description can explain how to do the work before anyone performs it.
 
 It is a non-agentive holon kind. Part methods can be selected, bounded, ordered, joined, adapted, and hidden or exposed through method interfaces to form a whole method with whole-level preconditions, effects, invariants, constraints, and assurance hooks. The whole method may then be used as a part method in a larger method.
 
@@ -102,7 +102,7 @@ Leave quoted or explanatory *strategy* wording alone when it carries no FPF clai
 Start with the least apparatus that lets another reader recognize the same method:
 
 1. **Ordinary use.** State the reusable way of doing, the kinds of participants it is for, when it applies, what it is meant to achieve or preserve, and any applicable use limits or stop conditions. If that sentence is enough for the decision at hand, stop.
-2. **Later comparison or reliance.** Use the needed entries in the Plain aid below when the ordinary statement is insufficient for another person to distinguish same-named methods, compare descriptions or variants, cite one edition in a plan, or audit why this method was selected.
+2. **Later comparison or reliance.** Use the needed entries in the Plain aid below when the ordinary statement is insufficient to distinguish same-named methods, compare descriptions or variants, cite one edition in a plan, or audit why this method was selected.
 3. **Organization of several methods or uses.** Open `A.22`, `B.1.5`, or another direct composition pattern only when the question is about the organization itself—for example, which methods were composed, selected, used as fallbacks, or enacted in the reviewed work.
 
 Moving to a heavier level must solve one of those concrete problems.
@@ -239,6 +239,8 @@ Two `U.MethodDescription` epistemes describe the same `U.Method` when their Enti
 Different control flow, proof notation, programming paradigm, diagram notation, or prose does not by itself make a different method. The converse also holds: the same name, repository, supplier label, or diagram family does not prove identity.
 
 Keep one method across parameter ranges, equipment envelopes, or representation variants only when its declared applicability and the bases used by the comparison admit that variation. A change to an intended result, participant meaning, safety bound, semantic basis, or acceptance criterion that matters to identity requires reconsidering the Method identification under §§4.7–4.8 before asserting refinement, substitution, or a distinct Method.
+
+A discipline may teach a family of methods or one method with variable inputs. To choose for a particular job, identify the required effect, conditions that exclude a candidate, and preferences that distinguish the remaining candidates. State which member you selected and why, or keep the admissible candidates when that is all the receiving decision needs. Binding a value already admitted by the selected way selects a setting of that method. If a required operation changes, compare its meaning and applicability with the original and examine the proposed variant under A.3.1.MV where appropriate. Assigning a date, resources and a performer makes a plan for the job. Its performance is Work. G.5 supplies a grouping or selector when the repertoire needs one. C.11 supports the local choice.
 
 **Same-name methods.** An emergency-department `Triage` method applies to patient presentations awaiting clinical assessment; a clinician enacting it uses clinical signs to assign urgency, escalates unsafe cases, and stops when the evidence cannot support that assignment. A software-defect `Triage` method applies to defect reports awaiting product handling; a product team enacting it uses reproduction evidence, severity, and ownership to choose routing and release impact, and stops when the report cannot support that choice. The shared label identifies neither method. Their participants, applicability, local senses, intended results, and stops distinguish them without a generic context object.
 

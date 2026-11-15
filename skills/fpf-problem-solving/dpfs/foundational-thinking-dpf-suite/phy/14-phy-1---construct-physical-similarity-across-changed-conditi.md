@@ -12,7 +12,7 @@ Start with the quantity or behavior you need to infer about the original situati
 
 The result is a set of physically compatible comparison conditions, a justified transfer of a selected result, or a conflict that directs the next construction. Here **physical similarity** means correspondence of the physical behavior needed by the question under stated changes of scale or conditions. Geometric similarity preserves shape under scaling; further conditions can be needed to preserve the relevant behavior.
 
-You need the physical account used in the comparison and the mathematics needed to transform its relations. You can develop that account through B.5.FM and B.5.TU or obtain a missing physical contribution from a collaborator. Algebra and ratios suffice for many first comparisons; fields and time-dependent behavior can require differential equations. A ready comparison whose conditions fit the question can be used directly. If the problem is expressing an already understood account mathematically, MMP.10 supplies that formulation work.
+You need the physical account used in the comparison and the mathematics needed to transform its relations. You can develop that account through B.5.FM and B.5.TU or obtain a missing physical contribution from a qualified source. Algebra and ratios suffice for many first comparisons; fields and time-dependent behavior can require differential equations. A ready comparison whose conditions fit the question can be used directly. If the problem is expressing an already understood account mathematically, MMP.10 supplies that formulation work.
 
 ### PHY.1:2 - Problem
 
@@ -42,13 +42,13 @@ Specify the result at the detail needed for its use: total extension under a loa
 
 Identify what may change between the arrangements and what is fixed by the proposed work. The available fluid, gravitational acceleration, material, instrument range or support can constrain the construction. A control may be a time history rather than one setting. Preserve any known dependence between settings: changing temperature can alter both viscosity and density.
 
-If the existing physical account already yields a sufficient answer, use it. Constructing another experiment is worthwhile when it supplies a contribution the work still needs. C.11.DUA helps choose between acting on a sufficient answer and obtaining more information.
+If the existing physical account yields a sufficient answer, use it. Compare the contribution of another experiment with its cost. C.11.DUA helps choose between acting on a sufficient answer and obtaining more information.
 
 #### PHY.1:4.2 - Recover the interactions that can change the requested result
 
 Follow the physical route by which the proposed input affects the output. Identify the participants, interactions and constraints on that route. Include an exchange across the chosen boundary when it contributes to the result. In a deformation problem, distinguish the force applied at an end from weight distributed through the body. In a transport problem, distinguish material carried by motion from material spread by diffusion.
 
-Use the applicable theory to express those contributions. B.5.TU supplies the passage from theory to the encountered case; A.3.3.TR helps when several interactions determine the same evolving state. State the physical premises still needed rather than filling an unknown interaction with a convenient equation.
+Use the applicable theory to express those contributions. B.5.TU supplies the passage from theory to the encountered case; A.3.3.TR helps when several interactions determine the same evolving state. State any physical premises still needed for the comparison.
 
 Estimate the relative size or time scale of competing effects. Derive that comparison from their laws: which quantity multiplies each term, and what spatial or temporal variation makes the term large? In a regime where one effect is negligible for the output, retain the reason for that simplification and the conditions under which it can fail.
 
@@ -86,11 +86,11 @@ Choose the next move from the remaining physical possibilities. You can change a
 
 A small coefficient can support an approximation when its influence on the output is controlled. Inspect where that argument could fail. Thin boundary layers, a threshold, resonance or a long observation interval can make a nominally small contribution consequential. Derive a useful bound, compare an applicable limiting solution, or obtain a discriminating observation when it can settle the use. C.29.1 carries a bound through the later inference.
 
-Use an existing result when it resolves the mismatch at the required strength. A conditional result or a limit can be enough. Additional measurement is selected by what its possible answers would change, including its cost, through C.11.DUA.
+Use an existing result when it resolves the mismatch at the required strength. A conditional result or a limit can be enough. Compare what an additional measurement could change with the cost of obtaining it through C.11.DUA.
 
 #### PHY.1:4.6 - Use the comparison and follow a changed question
 
-Translate the obtained result into the original quantity, position and time. State the physical conditions on which that translation depends. A short derivation can supply the whole explanation; another contributor needs only the settings, correspondence and unresolved premises that change their use.
+Translate the obtained result into the original quantity, position and time. State the physical conditions on which that translation depends. A short derivation can supply the whole explanation; give another contributor the settings, correspondence and any unresolved premises their use depends on.
 
 If a material experiment performs the comparison, include the effects of preparing, driving and reading it where they affect the inference. C.29.3 supplies this connection when the physical evolution performs a computation. A numerical solution has its own discretization and calculation errors under C.29.2. Keep those errors separate from a changed physical mechanism.
 
@@ -100,7 +100,7 @@ The useful continuation can be a proposed experiment, a design choice, an interp
 
 ### PHY.1:5 - Archetypal Grounding
 
-The following constructed cases derive conditional comparisons under the stated physical laws and idealizations.
+The following examples derive comparisons from specified physical laws, settings and idealizations.
 
 #### PHY.1:5.1 - Find conflicting requirements before building a smaller flow experiment
 
@@ -126,7 +126,7 @@ If the desired output needs both ratios reproduced, changing speed alone cannot 
 
 The first result is a decision about the experiment. If viscosity is negligible for the intended output throughout the relevant regime, the Froude-scaled experiment may suffice under that approximation. If viscosity changes separation or another needed behavior, retain that dependence and change the arrangement or the method of obtaining the answer. Matching initial and boundary conditions remains part of either construction.
 
-Now change the question from a large-scale surface response to a local viscous effect near a wall. The previous gravity-dominated approximation leaves the new output unsupported. The method returns to the relative contributions and near-wall scale; the old choice of speed remains useful only for the question it answered.
+Now change the question from a large-scale surface response to a local viscous effect near a wall. The previous gravity-dominated approximation leaves the new output unsupported. Reconsider the relative contributions at the near-wall scale. The earlier speed still supports the gravity-dominated comparison.
 
 #### PHY.1:5.2 - Reproduce one deformation without claiming the whole field
 
@@ -153,7 +153,7 @@ F' = A'*rho*g*L*(1-lambda)/2.
 
 At quarter scale, F' is 3/128 of the original bar's weight. Substitution into the smaller bar's mean-strain equation gives `rho*g*L/(2*Y)`, the original value. The comparison therefore reproduces the requested normalized extension within this model.
 
-Now ask for the strain at the lower end. The original unloaded bar has zero strain there; the smaller bar with the added force has `F'/(Y*A')` greater than zero. The output-specific construction cannot answer this new local question. To reproduce the complete strain profile, revisit the distributed loading or the combination `rho*g*L/Y`. The successful first comparison is retained for total extension.
+Now ask for the strain at the lower end. The original unloaded bar has zero strain there; the smaller bar with the added force has `F'/(Y*A')` greater than zero. The smaller bar’s end strain therefore cannot be transferred to the lower end of the original bar. To reproduce the complete strain profile, revisit the distributed loading or the combination `rho*g*L/Y`. The first comparison still gives extension relative to length.
 
 #### PHY.1:5.3 - Preserve competing physical time scales
 
@@ -179,7 +179,7 @@ To reproduce the dimensionless evolution with the same D, the smaller model woul
 
 The cases use classical continuum laws and positive scale factors. In a new regime, discreteness, quantum effects or a change in material behavior can invalidate such laws. Recover the applicable account before extending their scaling.
 
-The worked algebra assumes access to the physical laws and a reader able to manipulate them. The prerequisites in :1 help locate a needed contribution. One participant can recover the interaction law while another derives the comparison settings; their shared explanation must preserve what the law describes and which settings the arrangement can supply.
+The worked comparisons need the physical laws and the algebra that relates the two scales. One participant can recover the interaction law while another derives the comparison settings; their shared explanation must preserve what the law describes and which settings the arrangement can supply.
 
 ### PHY.1:7 - Conformance Checklist
 
@@ -189,7 +189,7 @@ The worked algebra assumes access to the physical laws and a reader able to mani
 - The comparison settings satisfy the required conditions together and can be supplied by the proposed arrangement, or their unresolved feasibility is stated.
 - A limited or distorted comparison has a derivation or bound for the output it is used to answer.
 - The result is interpreted at the original scale, with any preparation, computation and readout losses that change its use.
-- A changed question returns to the affected physical contribution; an already sufficient result is used without compulsory extra experiments.
+- A change of question prompts reconsideration of the physical contributions it affects. A result that meets the need can be used directly.
 
 ### PHY.1:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -217,9 +217,9 @@ The physical and mathematical work remain connected. Physical reasoning supplies
 
 The working question is how to obtain a useful physical result after changing scale or conditions. The selected approach derives and reconciles the relevant physical ratios and preparation, then handles unmatched effects at the output that matters. It combines established similarity reasoning with result-specific transfer and revision.
 
-[Mahajan, The Art of Insight in Science and Engineering (2014), sections 5.2-5.3](https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/3bca850386a3005c22134fa62fb3bad5_MITRES_6-011F14_art_insfin.pdf), provides a methodological anchor: dimensionless dependence can expose omitted physics while leaving an unknown coefficient or function. This changes :4.2-4.3 by making physical selection and the remaining unknown explicit. Its examples supply historical grounding.
+[Mahajan, The Art of Insight in Science and Engineering (2014), sections 5.2-5.3](https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/3bca850386a3005c22134fa62fb3bad5_MITRES_6-011F14_art_insfin.pdf), gives an earlier account of how dimensionless dependence can expose omitted physics while leaving an unknown coefficient or function. In :4.2–4.3, identify the physical contributions that enter the comparison and what their ratios still leave undetermined.
 
-[Price's 2024 MIT course](https://live.ocw.mit.edu/courses/res-12-001-topics-in-fluid-dynamics-fall-2024/pages/essay-2-dimensional-analysis-of-models-and-data-sets-similarity-solutions-and-scaling-analysis/) emphasizes selecting a physically useful dimensionless basis and relating coefficients to competing terms. Adopt that choice in :4.3. [NASA's explanation of similarity parameters](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/similarity-parameters/) makes viscosity and compressibility consequences tangible. The warning is applied to effects relevant to the requested output; differing parameters can still permit a useful limited approximation.
+[Price's 2024 MIT course](https://live.ocw.mit.edu/courses/res-12-001-topics-in-fluid-dynamics-fall-2024/pages/essay-2-dimensional-analysis-of-models-and-data-sets-similarity-solutions-and-scaling-analysis/) emphasizes selecting a physically useful dimensionless basis and relating coefficients to competing terms. Adopt that choice in :4.3. [NASA's explanation of similarity parameters](https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/similarity-parameters/) makes viscosity and compressibility consequences tangible. Apply the comparison to the effects that matter to the requested output. Differing parameters can permit a useful approximation for a more limited result.
 
 [Li et al. (2021), Spatial and temporal scaled physical modeling of fluid convection using hypergravity](https://arxiv.org/abs/2103.16028), report a way to reconcile gravity and viscosity scaling and identify limitations introduced by the apparatus. Their abstract motivates the changed-gravity alternative in :5.1. That case derives the scale factors from its stated conditions; reproducing the reported experiments requires their full apparatus method.
 

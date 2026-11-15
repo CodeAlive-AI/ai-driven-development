@@ -4,34 +4,34 @@
 
 > **Type:** DPF pattern body
 
-> **Primary EntityOfConcern:** repairing the connections through which a reader reconstructs a narrative's events, mechanisms or dependencies.
+> **Primary EntityOfConcern:** the connections a reader needs to reconstruct events, mechanisms or dependencies from a narrative.
 
 ### NSTD.3:1 - Problem frame
 
-Use this pattern when locally fluent narrative passages fail because readers cannot build a coherent model of source mechanism, event flow, dependency structure, architecture relation, state change, or proof dependency.
+Use this method when you need to assess or explain a connection in a narrative. A reader may be able to retell the events yet leave open what changed, how a mechanism worked, why a design choice mattered or how a proof step followed.
 
-First useful move: take one passage the reader cannot explain, state the connection it suggests and compare it with the source or fictional premises. Add the missing connection, qualify an unsupported one or keep the unresolved question visible.
+Choose a passage, state the connection its wording suggests and compare that connection with the source or fictional premises. If you are revising it, supply the missing step, correct an unsupported claim or make the unresolved question clear.
 
-What goes wrong if missed: fluency is mistaken for source coherence. Readers remember the story but cannot say what changed, why it changed, which relation mattered, or where the claim stops.
+To explain a past reading, examine what the reader said or did with the passage and what other information or help they used. An analysis of the text can establish what it made possible to infer under stated assumptions.
 
-What this buys: coherence is tied to recoverable source structure, not to smooth prose alone.
+The comparison shows which connections the passage supports and which still depend on an unstated premise, a different source or a further observation.
 
 ### NSTD.3:2 - Problem
 
-Narratives often use events and agents because they are easy to follow. But many source structures are not event sequences. Architecture structures, mathematical definitions, evidence graphs, mechanism diagrams, and source packs can be misread when forced into a fiction-like event model.
+An event sequence can make a narrative easy to follow. A design dependency, mathematical definition or relation between a finding and its evidence can matter even when nothing happens in sequence. Turning such a relation into an episode can obscure what follows from it.
 
 ### NSTD.3:3 - Forces
 
 | Force | Tension |
 | --- | --- |
-| Event readability vs non-event structures | Readers follow events easily, but not every source relation is an event. |
-| Causal wording vs causal support | A causal explanation needs grounds for the particular cause; “because” can also introduce a reason, proof step or fictional motive. |
-| Mechanism clarity vs uncertainty | A good mechanism story can hide unknown or contested source relations. |
-| Reconstruction vs entertainment | The declared use may require reconstruction, not only engagement. |
+| Events and other structures | A reader may follow the episodes and still miss the dependency on which the explanation turns. |
+| Causal wording and its grounds | A physical cause, a reason for acting, a proof step and a fictional motive require different grounds. “Because” can introduce any of them. |
+| Mechanism and uncertainty | A clear account of the proposed mechanism can still give the impression that an untested or disputed step is settled. |
+| Reconstruction and engagement | Ask what the reader should be able to reconstruct when that ability matters to the intended use. |
 
 ### NSTD.3:4 - Solution
 
-Work on the connection the reader needs: what changed, what depends on what, why an action follows or which condition limits the conclusion. The optional note below is useful when several passages, collaborators or later comparisons need to retain that analysis. A single passage can be repaired directly.
+Identify what changed, what depends on what, what explains an action or which condition limits a conclusion. For a single passage, compare it directly with the source or premises. A note like this can preserve grounds that several passages or collaborators will need.
 
 ```text
 NarrativeEventMechanismSupport@Context:
@@ -47,17 +47,17 @@ NarrativeEventMechanismSupport@Context:
   sourceReturnCondition:
 ```
 
-Compare the intended reconstruction with the passage and its source. An unknown source relation and a relation merely omitted from the explanation call for different repairs. An ambiguity can also be supported by the account: the text may leave several motives possible while clearly showing the action. Preserve those alternatives when that is the intended use; NSTD.9 helps distinguish a warranted reading from an invented resolution. If the story requires an event or relationship that has not been constructed, use NSTD.10. Adding a connective phrase cannot perform that construction.
+Compare the intended connection with what the passage expresses or permits a reader to infer. Supply an omitted step if the source establishes it. When the source leaves the relation open, state what cannot be determined and identify any alternatives the material supports. An action may be clear while two motives remain possible or its motive is wholly unknown. Use NSTD.9 to examine a disputed reading. If a fictional scene or an explicitly hypothetical real-world scenario needs a new event or constraint, use NSTD.10 to construct it under the chosen premises.
 
-Use the following questions to repair a passage; retain answers only where the working use needs them.
+The following questions support an assessment or revision. Keep the answers that another part of the work needs.
 
-1. State the connection on which the passage depends, its source or premise, and what remains unknown.
-2. Identify the relation and its grounds. For example, a time sequence, mathematical dependency, physical cause and fictional motivation answer different questions; they are not successive strengths on one scale.
-3. State what the reader needs to reconstruct: for example a state change, explanation, prediction or limit of an analogy.
-4. Find wording or omissions that invite a different reconstruction from the one supported.
-5. Repair the connection: supply a missing step, correct its kind or strength, add a relevant uncertainty, or return to the source question. Keep a strong claim when its grounds support it; weakening every claim can also mislead.
+1. State the connection at issue and the source or premise on which it depends. Identify any uncertainty that bears on it.
+2. Identify the kind of connection. An event order, mathematical dependency, physical cause and fictional motivation answer different questions. Establish the grounds appropriate to the one claimed.
+3. Identify what a reader needs here, such as a state change, an explanation, a prediction or the point where an analogy stops.
+4. Compare the passage with that task. What supports the intended reading? Does a word or omission suggest a different relation?
+5. When a change is needed, supply a missing step, correct the kind or strength of the claim or identify the relevant uncertainty. State an established conclusion at the strength its grounds support. Return to the subject source when a stronger answer is needed.
 
-Connectors are cues to inspect the complete claim, not automatic triggers for another procedure.
+Examine how a connector works in its sentence before choosing a repair.
 
 | Wording | Question about this passage | Repair when needed |
 | --- | --- | --- |
@@ -66,15 +66,15 @@ Connectors are cues to inspect the complete claim, not automatic triggers for an
 | "therefore" | Which premises and inference make the conclusion follow? | Restore the missing premise or step, or state the remaining uncertainty. |
 | "had to" | Which condition makes the action necessary, and under which alternatives? | Name that condition or replace necessity with the supported choice. |
 | "wanted" or "decided" | Whose motive or decision is asserted, and is it factual, fictional or interpretive? | Clarify the participant and grounds. Use `NSTD.4` when viewpoint or attribution causes the ambiguity. |
-| "shows that" | What does the observation, argument or example actually establish? | Match the conclusion to those grounds; an evidence claim may require `A.10`. |
-A proof can be narrated through questions and inferences, and an architecture explanation through a trade-off. Describe those relations as such. Inventing an event or intention to connect them may change the subject. An imagined discovery scene can still illustrate a proof when its imagined events remain distinguishable from the mathematical argument.
+| "shows that" | What does the observation, argument or example establish? | Match the conclusion to its grounds. Use `A.10` when the connection to the evidence needs recovery or must be reproducible. |
+A proof may be presented as a sequence of questions and inferences, and an architecture choice as a comparison of trade-offs. If you invent a scene of discovery to illustrate a proof, distinguish the imagined events from the premises and inferences that establish the result.
 
-Reader reconstruction tasks should be concrete:
+Make the required reconstruction concrete. For example, ask a reader to do one of the following.
 
-- "Name the mechanism and the unresolved relation" is better than "understand the mechanism."
-- "Distinguish observed event, inference, and prediction" is better than "follow the live story."
-- "Point to the formal statement where the analogy stops" is better than "get the math intuition."
-- "Recover which architecture trade-off was accepted and which exception remains" is better than "remember the project story."
+- Name the proposed mechanism and the relation still unresolved.
+- In a live account, identify an observation, an inference and a prediction.
+- Point to the formal statement where the mathematical analogy stops.
+- Explain the trade-off accepted in a design choice and the exception it left open.
 
 If the required reconstruction cannot yet be stated, clarify what the reader needs to do with the passage. Entertainment or initial orientation can be sufficient aims. A use that depends on a mechanism or inference needs a recoverable account of that relation.
 
@@ -85,16 +85,16 @@ If the required reconstruction cannot yet be stated, clarify what the reader nee
 #### NSTD.3:5.1 - Worked example: event support
 
 
-A science narrative says: "The failed experiment forced the theory to change." Compare the observed result with the prediction and alternatives: was a consequence refuted, an auxiliary assumption questioned, or a replacement supported? The repair should say which of those happened.
+A science narrative says that a failed experiment forced a theory to change. First find out what failed. Did the instrument give an unusable reading, or did a qualified measurement disagree with a prediction? In the second case, determine which assumptions the discrepancy puts in question and whether the evidence distinguishes any replacements.
 
 ```text
 NarrativeEventSupportRecord@ExperimentTension:
   narrativeRenderingRef: ScienceStory@v1
-  eventOrMechanismClaim: failed measurement challenged the prior mechanism hypothesis
+  eventOrMechanismClaim: a qualified measurement disagreed with the range predicted from the proposed mechanism and its auxiliary assumptions
   sourceStructureRef: measurement record, model expectation, uncertainty interval, alternative explanations
-  relationStrength: observed mismatch plus mechanism hypothesis, not proof of forced theory change
-  reconstructionTarget: reader can distinguish observed result, hypothesis pressure, and later evidence
-  overclaimRisk: "forced", "proved", "settled", and "therefore" make the relation too strong
+  relationStrength: observed discrepancy under the stated assumptions, with its explanation unresolved
+  reconstructionTarget: distinguish the discrepancy, its possible explanations and the contribution of any later evidence
+  overclaimRisk: stating that the discrepancy forced one particular theoretical change
   sourceReturnCondition: return to the measurement and model assumptions when a stronger conclusion is needed
 ```
 
@@ -104,16 +104,16 @@ Before:
 
 After:
 
-> The measured value lay outside the range predicted under these assumptions. The discrepancy calls for examining the mechanism model and the measurement assumptions; this experiment does not yet distinguish the proposed replacements.
+> The measured value lay outside the predicted range under the stated assumptions. The discrepancy bears on the mechanism model and the assumptions used in measurement. The observed difference alone leaves the proposed replacements unresolved.
 
-The repaired passage retains the surprising result and the next research question, while distinguishing the mismatch from the still-undecided explanation.
+The passage makes the discrepancy and unresolved alternatives available to the reader. To distinguish the explanations, look for an existing result that would differ under them. A further experiment is one option when it could obtain such a result and the question warrants it.
 
 
 
 #### NSTD.3:5.2 - Worked example: franchise plot support
 
 
-In a continuation-style storycraft probe, a scene says that a character betrays an ally "because the plot needs a darker turn." That is a narrative-function explanation, not source support. Repair it as source structure:
+In a proposed continuation, a character betrays an ally “because the plot needs a darker turn”. This gives the author’s purpose. To explain the character’s choice, look for a motive supported by the selected canon and the circumstances of the scene.
 
 ```text
 NarrativeEventSupportRecord@CharacterTurn:
@@ -122,10 +122,10 @@ NarrativeEventSupportRecord@CharacterTurn:
   relationStrength: a proposed motive consistent with the selected fictional premises
   reconstructionTarget: reader can state motive, pressure, action, consequence, and canon-return condition
   overclaimRisk: author need or theme is treated as character cause
-  sourceReturnCondition: return to source pack and agency constraints
+  sourceReturnCondition: consult the selected canon and the character’s available choices when a claim about the motive depends on them
 ```
 
-For a story whose events should follow intelligible motives, the author's desire for a twist does not supply the character's reason. Add a pressure, choice or event that makes the turn intelligible, or revise the turn. A deliberately unexplained or absurd turn has a different artistic aim and should be judged for that aim.
+If the story needs an intelligible motive, supply the pressure, choice or event that makes the betrayal intelligible, or revise the turn. An existing passage can support two plausible motives. Deliberate absurdity or an unexplained turn may also serve the intended work.
 
 
 
@@ -136,27 +136,27 @@ For a story whose events should follow intelligible motives, the author's desire
 | --- | --- |
 | Events are easy to retell but the needed relation is supplied only by a suggestive connector. | Find and express the missing basis or change the claim. |
 | The relation is named but its conditions remain unclear. | State the condition that changes the reader's inference. |
-| The reader reconstructs the relation and its relevant limits. | Keep it for that use; investigate a remaining uncertainty only when its answer can change the next move. |
-| A change of viewpoint or order may conceal the relation. | Compare the changed passage and repair the particular loss. |
+| The reader reconstructs the relation and its relevant limits. | Use that finding for the observed conditions. Pursue a further uncertainty if the question requires it. |
+| A change of viewpoint or order may conceal the relation. | Compare the passages and report any loss that matters to the intended reading. If a revision is requested, restore the connection or use a version that preserves it. |
 
-These are diagnostic situations. Use `NSTD.6` for a qualified evaluation rather than deriving a score from the presence of a support record.
+Use `NSTD.6` when the work needs a qualified assessment of reception or quality. The comparison can also answer a narrower question about the passage itself.
 
 
 
 #### NSTD.3:5.4 - Connecting to the relevant subject method
 
 
-A connector does not settle the relation it expresses. “Because” can introduce a physical cause, a reason for acting or a mathematical dependence. Identify that relation first; open the corresponding FPF or subject method when the relation itself needs further work.
+“Because” may introduce a physical cause, a reason for acting or a mathematical dependence. Identify the particular relation. Consult its FPF or subject method when the source leaves a material question about that relation open.
 
-Suppose a design comparison says a proposed modular split removes one required hand-off between teams, but sends exceptional requests through a shared interface. The narrative can explain that change in dependency. Less routine coordination work is a prediction from the design; its realized cost remains unknown until observed. If observations are available, report the supported result rather than automatically weakening it to a prediction.
+Suppose a proposed module split removes one hand-off between teams for routine requests and routes exceptions through a shared interface. The design establishes this change of dependency. A prediction of lower coordination cost also depends on the frequency and cost of exceptions. Suitable experience with the implemented design can establish the time actually spent and, with an appropriate comparison, whether the change reduced it.
 
-A science story can say that an experimental result "forced" a revised hypothesis only if the source line supports that constraint. Often the honest relation is weaker: the result made one hypothesis less useful, exposed a tension, or suggested a new mechanism to test. `NSTD.3` keeps the tension narratable while preventing the narrative from closing evidence that the source left open.
+To write that a result forced a theoretical revision, establish which alternatives the measurement and other evidence excluded under the assumptions in use. The result may instead expose a discrepancy, reduce support for a hypothesis or suggest a mechanism to examine. Any of these can be the conclusion of the account.
 
-A live match commentary may connect a late midfield movement with lost possession. State the observed sequence separately from that provisional tactical explanation, and identify what the replay could resolve.
+In live commentary, identify the late midfield movement and the loss of possession. A replay of how the opposing side gained possession might distinguish a tactical gap, a missed challenge or a contribution from both. Report the limit when the evidence leaves the explanation open.
 
-In a homotopy explanation, a deformation story may help learners track invariance, but it is not a proof by itself. The support record says which formal relation the story illustrates, what the learner should reconstruct, and where analogy must return to definitions or proof-status boundaries.
+For a homotopy explanation, connect the image of deforming a loop to its permitted deformations. Identify the formal definition or argument that supports any claimed invariant, and what the learner should be able to recover from the image.
 
-Use rewrite diagnostics when a sentence sounds good but may overclaim.
+Use the source to decide how to revise a disputed sentence.
 
 | Initial sentence | Source-support question | Replacement selected by the answer |
 | --- | --- | --- |
@@ -164,21 +164,21 @@ Use rewrite diagnostics when a sentence sounds good but may overclaim.
 | “The module split solved coordination.” | Does the source show a changed dependency, predict a cost effect or observe one? | For the proposed design above: “The split removes one required hand-off and routes exceptional requests through a shared interface. Its effect on coordination time has not yet been measured.” A measured reduction would warrant the corresponding observed claim. |
 | “The character had no choice.” | Which alternatives do the fictional premises actually exclude? | If the scene establishes that both exits are locked and no other escape is available, say “With both exits locked, the character remained in the room.” If an alternative remains possible, describe the choice or pressure rather than inventing necessity. |
 | “The proof idea is that loops remember holes.” | Which formal restriction or invariant does the image represent? | If the supplied definition requires a loop to remain in the punctured plane, explain that a deformation cannot pass through the missing point. Return to the argument for any claimed invariant; the image alone establishes no theorem. |
-| “The team was outplayed because the press failed.” | Is this an observed cause, a provisional interpretation or a later supported analysis? | If the live source records late midfield movement followed by lost possession but no established cause, retain those observations and present the tactical connection as a hypothesis. Later analysis can justify a stronger claim; tentative wording is not compulsory once that support exists. |
+| “The team was outplayed because the press failed.” | What sequence is observed and what supports the tactical explanation? | With only the late midfield movement and subsequent loss of possession established, report both events and identify the tentative explanation. Use a stronger conclusion if later analysis distinguishes its contribution. |
 
-These are conditional repairs, not substitutes to copy without their premises. For a supported strong case, suppose the mathematical source defines f(x) = 2x and the task supplies x = 3. “Under this definition, f(3) = 6” follows directly; weakening it to “perhaps 6” would lose the supported result. If the source instead contains only an input-output observation of 3 and 6, keep that observed pair and leave the general doubling rule unresolved. The words become no weaker or stronger than the supplied relation warrants.
+Suppose the source defines f(x) = 2x and the task gives x = 3. Then f(3) = 6 follows by substitution. If the source records only the pair (3, 6), that observation establishes the pair and leaves the rule open. The same numbers support a deductive conclusion in the first case and a limited observation in the second.
 
-If the repair makes the narrative less exciting, that is not automatically a defect. The repair preserves the source relation. Engagement can be rebuilt later through `NSTD.5` around the safer relation instead of by restoring the overclaim.
+If the factual repair has reduced engagement that matters to the task, use `NSTD.5` to develop the presentation around the supported relation.
 
-Optional notes for more involved comparisons:
+These notes illustrate three different uses.
 
 ```text
 NarrativeEventMechanismSupport@ArchitectureTradeoff:
-  sourceStructureKind: architecture-like and mechanism-like trade-off
+  sourceStructureKind: dependency and trade-off in a proposed software architecture
   requiredReaderReconstruction: which required hand-off the proposed design removes, where exceptional requests go, and why an observed time saving remains unknown
   eventOrMechanismModel: ordinary requests no longer cross the removed hand-off; exceptional requests still require shared-interface coordination
   dependencyOrConstraintRefs: before-and-after dependency diagram; rule selecting exceptional requests; shared-interface responsibility
-  supportingBasis: the stated design supports the dependency change and a conditional cost prediction; observed cost would need observations
+  supportingBasis: the design shows the removed hand-off and the exception route. Their frequency and cost matter to the prediction of time saved
   uncertaintyOrUnknownRefs: realized coordination time unmeasured; other candidate designs outside this sketch
   reconstructionTaskRefs: reader distinguishes the design change, remaining exception work and unmeasured cost effect
   sourceReturnCondition: consult the dependency comparison for the design claim and observations for an actual cost claim
@@ -190,9 +190,9 @@ NarrativeEventMechanismSupport@HomotopyAnalogy:
   requiredReaderReconstruction: distinguish intuitive deformation image from formal equivalence relation
   eventOrMechanismModel: path deformation story used as analogy for invariant tracking
   dependencyOrConstraintRefs: formal definitions; examples; counterexamples; theorem prerequisites
-  causalUseOwnerRef: none unless a causal learning claim is made
+  basisForLearningEffect: a claim that the analogy helped learners would need evidence that distinguishes its contribution
   uncertaintyOrUnknownRefs: analogy may fail outside named examples
-  reconstructionTaskRefs: learner states where analogy stops and where proof returns
+  reconstructionTaskRefs: identify where the image stops and which formal premise or argument is needed
   sourceReturnCondition: formal source statement for proof or exercise use
 ```
 
@@ -202,24 +202,24 @@ NarrativeEventMechanismSupport@LiveCommentary:
   requiredReaderReconstruction: observed event vs inference vs prediction vs official correction
   eventOrMechanismModel: state updates and tactical hypothesis under uncertainty
   participatingHolonOrRoleRefs: teams, players, officials, broadcast or event source roles when needed
-  uncertaintyOrUnknownRefs: off-camera events; later telemetry; official review
+  uncertaintyOrUnknownRefs: events outside the camera view and decisions still under official review
   reconstructionTaskRefs: listener can say what was observed and what was inferred
   sourceReturnCondition: official record, recording, statistics, or telemetry
 ```
 
-These sketches illustrate information that can matter in different cases. Use only the fields needed to repair or compare the passage. A missing field does not by itself make a coherent account inadequate.
+For each use, retain the information needed to explain, compare or repair the connection.
 
 ### NSTD.3:6 - Bias-Annotation
 
-This pattern blocks fluent-coherence drift: smooth event language is mistaken for a mechanism, dependency, architecture, proof, or causal model. The bias appears when readers can retell the story but cannot reconstruct the selected source relation. Repair by naming the source-structure kind, the reconstruction target, the owner for causal or dependency claims, and the source-return condition. Scope: DPF-local for narrative coherence over selected source structure; it does not certify mechanism truth or causal evidence.
+A vivid episode can make a suggested cause or motive feel established. Compare the relation implied by the passage with the observation, argument or fictional premise that could support it. Separate what the text permits from what a particular reader actually reconstructed. Return to the subject source where the relation itself remains in question.
 
 ### NSTD.3:7 - Conformance Checklist
 
 | Check | Passing condition |
 | --- | --- |
 | `CC-NSTD3-1` | The passage represents the relevant source relations without silently turning a dependency, constraint or proof step into a physical event. |
-| `CC-NSTD3-2` | The intended reader can identify the connection needed for the stated use, or the remaining uncertainty is explicit. |
-| `CC-NSTD3-3` | Claims of cause, dependency, necessity or motive have grounds suited to that claim; extra subject work is selected only where it can resolve a consequential question. |
+| `CC-NSTD3-2` | The assessment identifies what the passage makes recoverable under the assumed knowledge, or what remains uncertain. To report what a particular reader understood, use a response or action that reveals their interpretation of the connection at issue. |
+| `CC-NSTD3-3` | Cause, dependency, necessity and motive are attributed on grounds suited to each claim. Use further subject work when an answer still needed depends on it. |
 | `CC-NSTD3-4` | An unknown, disputed or deferred relation remains visible when it affects the reader's conclusion or action. |
 | `CC-NSTD3-5` | Learning or consequential use has a suitable way to check or recover the needed connection. A separate test or source note is selected for its value to that use. |
 
@@ -228,35 +228,35 @@ This pattern blocks fluent-coherence drift: smooth event language is mistaken fo
 | Anti-pattern | What fails | Repair |
 | --- | --- | --- |
 | Fluent but unsupported explanation | A passage invites an explanation that its source does not support. | Supply the missing connection, qualify it or return to the unresolved source question. |
-| Causal overstatement | The narrative claims more about the cause than the grounds support. | State the supported causal strength; use `C.28` when its causal-use question needs work. Chronology is not a substitute causal explanation. |
-| Event forcing | A graph, proof dependency, or architecture view is converted into fake events. | Name source structure kind and choose a better ordering rule through `NSTD.2`. |
+| Causal overstatement | An account attributes an effect on the strength of event order alone. | State the observed order and the support for any further causal inference. Use `C.28` if the particular causal claim needs examination. |
+| Event forcing | A graph, proof dependency or architecture view is retold as an invented sequence of events. | Identify the source relation. If its presentation order needs changing, use `NSTD.2` to compare alternatives. |
 
 ### NSTD.3:9 - Consequences
 
-The benefit is that narrative coherence becomes testable. The cost is that some dramatic simplifications must be weakened or paired with source return.
+The comparison can show why a reader would infer too much from a fluent passage and what its source actually supports. Correcting the passage may require recovering the source relation or changing a dramatic simplification.
 
 ### NSTD.3:10 - Rationale
 
-Narrative comprehension often depends on event models and causal schemas. FPF uses that strength but keeps event support distinct from causal evidence, mechanism truth, architecture evaluation, and proof status.
+Readers often use event models and causal expectations to follow a narrative. What a passage invites them to infer and what the subject evidence establishes can differ, including in an account of a mechanism, an architecture or a proof.
 
 ### NSTD.3:11 - SoTA-Echoing
 
 Nguyen's [A Review of Mechanistic Models of Event Comprehension](https://arxiv.org/abs/2409.18992) (2024) compares accounts of prediction, hierarchy, updating and causal representation in comprehension. Hoffmann's [The Tensions of Scientific Storytelling](https://roaldhoffmann.com/sites/default/files/fromd6/Tensions%20ofScientific%20Storytelling%20as%20published.pdf) (2014) illustrates how scientific accounts organize mechanisms and unresolved tensions. Gatt and Krahmer's [NLG survey](https://arxiv.org/abs/1703.09902) (2018) distinguishes content selection and realization. This pattern's synthesis is to compare the connection the passage suggests with the relation its source or premises support.
 
-Operational payload:
+The sources contribute different operations.
 
-- Event-comprehension models motivate checking the reader's event boundaries, dependencies and predictions when those matter to the use. They do not establish that every reader builds the same model from every narrative.
-- From scientific storytelling, unresolved tension is narratively useful. It must stay unresolved when the source is unresolved. A good story may preserve tension rather than close it.
-- From NLG, inspect content as well as realization: a fluent connector cannot supply an omitted premise.
-- For evidence, inference and causal claims, inspect the complete claim before selecting additional work. The occurrence of “shows”, “proves” or “because” alone does not require an assurance procedure.
-- From architecture work, a mechanism-like story about structure must keep trade-offs, residual exceptions, and telemetry distinct. A before-and-after story is not by itself an architecture evaluation.
+- Use event-comprehension models to identify event boundaries, dependencies or predictions that matter to a reading task. Evidence about the particular reading can then establish what a reader recovered.
+- Scientific storytelling can make an unresolved tension intelligible. Distinguish the established observation from the explanations still possible.
+- In natural language generation, compare the selected content as well as its expression. A smoother connective will leave an omitted premise missing.
+- For evidence, inference or cause, inspect the complete claim before choosing how to substantiate it.
+- In an architecture account, distinguish an accepted trade-off, residual exception handling and what operation measurements establish about the realized design.
 
-For a passage that implies an unsupported connection, the selected line is to inspect the event or dependency relation before polishing its connector. A serious alternative is local wording repair: replace “proved” by “suggested” or “caused” by “preceded”. At comparable effort on the one disputed sentence, that can be sufficient when it states what the source establishes; it fails when the weaker replacement also invents a fact. The incident case shows the decisive difference: retain the logged sequence and leave the cause unresolved instead of supplying a plausible mechanism.
+A local wording change such as “preceded” in place of “caused” can be sufficient when the source establishes that order. If a source identifies the cause, the change would discard information. In the incident log the dates support the chronology, while the cause remains open. Checking the source decides whether the small edit preserves the claim.
 
-**Adapt** event-model and content-planning distinctions in :4's source comparison and :5's diagnostics. **Adopt** scientific storytelling's use of unresolved tension: the next investigation can remain part of the account. The accepted cost is consulting the relevant source relation rather than guessing a safer-sounding sentence. Keep a strong conclusion when that source supports it. Reopen if a new observation or argument establishes the connection, if the intended use needs a different relation, or if the reader still infers more than the repaired passage supports.
+The source comparison in §4 and the examples in §5 adapt distinctions from event modeling and content planning. Scientific storytelling also shows how to make an open research question part of an account. Return to the passage if new evidence changes the source relation, the intended task changes or an observed reading reveals a different interpretation that matters to that use.
 
 ### NSTD.3:12 - Relations
 
-Uses `A.6.3.NAR`, `NSTD.2`, `C.28`, `A.10`, `B.3`, `C.2.8` for structural amount, `C.33` for architecture-description adequacy, `C.34`, `NSTD.6`, and `G.11`. Mechanism-support recovery can supply a `C.2.8` structural result through `NSTD.6`; the event-mechanism quality judgement retains its own meaning and evidence. Reopen when the source mechanism, causal support, reconstruction target, or evaluation result changes. Support-map entry: open `Architecture and Narrative Work Bridge` when event, mechanism, dependency, or coherence support is architecture-relevant; open `Source Use And Refresh Map` when a source or cognition claim supports reconstructability; open `NSTD.Reference:11 — Working meanings and direct source returns` when event, mechanism, coherence, support, or cause language starts doing evidence or quality work.
+Use `A.6.3.NAR` and `NSTD.2` for narrative form and order. Use `C.28` for a causal claim needing examination, `A.10` when the route from a source to a claim is unclear or must be reproducible, and `B.3` when reliance on the resulting claim needs qualification. `NSTD.6` can use `C.2.8` for structural recoverability and `C.33` for the adequacy of an architecture description. Use `C.34` when a claim concerns preservation or correspondence of an architectural structure, and `G.11` when a changed source or result may affect the maintained account. Use the Architecture and Narrative Work Bridge for an architectural dependency, the Source Use and Refresh Map for a source claim, and NSTD.Reference:11 for a technical term’s meaning and direct source. Qualify the proposed mechanism on its own grounds.
 
 ### NSTD.3:End

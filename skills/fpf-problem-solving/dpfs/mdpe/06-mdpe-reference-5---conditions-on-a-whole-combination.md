@@ -1,27 +1,27 @@
 ## MDPE.Reference:5 - Conditions on a whole combination
 
-A combination must fit the intended use as a whole. Preserve one common account of the performers and receiving
-conditions, the intended result, and the characteristics the trial must protect. A configuration tested with a
-familiar pair, a recording judged by listeners, and a lesson observed by its teacher may each be useful; a
-social-practice decision still needs evidence about coordination among the participants who will use it. Check whether
-observations made under different conditions support the receiving use before combining their claims.
+Assess the whole combination against its intended use. Identify the performers, receiving
+conditions, intended result and any conditions that have to be protected together. An
+observation of a familiar pair, a recording judged by listeners and a teacher’s account of
+a lesson answer different questions. To rely on them for coordination in a social dance,
+establish how they bear on the participants and the conditions in which they will dance.
 
-Check the shared resources over the complete selected work. Include preparation, coordination, performer
-effort, the actual trials, observation, and the support required for another occurrence. Several individually
-affordable Methods can require the same teacher, instrument, floor, or event interval. State the local resource
-estimates and whether work can overlap; use the relevant operations Method when queues, recurring load, or
-money flow determine the decision.
+Check the shared resources over the period that matters. Account for preparation, coordination,
+performer effort, trials and observation where needed, and the support a later occurrence
+would require. Individually affordable activities can compete for the same teacher, instrument,
+floor or interval. Give the local estimates and determine which activities can overlap. Use
+the relevant operations method if queues, recurring load or cash flow affects the answer.
 
-For example, consider a constructed planning case with one shared 120-minute rehearsal. Setup and warm-up take
-30 minutes, each candidate trial takes 20, the unfamiliar-partner transfer takes 20, and observation review
-takes 20. With three candidates the complete combination needs `30 + 3 × 20 + 20 + 20 = 130` minutes. Although
-any two of the activities fit, the whole combination does not. Testing two consequential candidates needs 110
-minutes and preserves the transfer observation that the decision depends on. These are local estimates, not
-standard rehearsal durations. If fatigue or setup variability consumes the remaining ten minutes, revise the
-plan or narrow the promised result before treating the trial as sufficient.
+Suppose the group has 120 minutes for a shared rehearsal. Setup and warm-up require 30 minutes, each candidate
+trial 20, transfer to an unfamiliar partner 20 and review of observations 20. Running three candidates
+needs `30 + 3 × 20 + 20 + 20 = 130` minutes, assuming these activities use the shared interval in sequence.
+Individual activities and pairs of them fit. Testing the two candidates whose comparison matters takes 110
+minutes and retains the required transfer observation. These are estimates for this rehearsal. An additional
+ten minutes would use all the remaining time. If setup variability, fatigue or another constraint makes
+the plan infeasible or the observation inadequate, revise the plan or narrow the result promised.
 
-The same condition applies to later reproduction. A retained variant needs the necessary performer capability,
-material, equipment, access, and recurring support together. Keeping a recording while losing the only teacher
-may preserve an archive contribution but leave the practice unavailable. `MDPE.16`, `MDPE.19`, `MDPE.21`, and
-`MDPE.22` apply this condition to their selected branches. A change in a shared condition reopens the combinations
-that need it; results that remain valid in their original conditions can still be used there.
+For a later performance, the necessary capability, material, equipment, access and any support it requires must
+be available together. A recording can preserve evidence. Losing the only available teacher may prevent the
+promised reproduction. Determine whether another performer or source can supply the needed contribution.
+`MDPE.16`, `MDPE.19`, `MDPE.21` and `MDPE.22` apply this comparison to their own questions. Reconsider
+the combinations that rely on a changed condition and retain uses supported in their original settings.

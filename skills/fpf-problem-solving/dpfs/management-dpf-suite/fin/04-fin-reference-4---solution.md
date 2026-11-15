@@ -12,11 +12,11 @@ Also ask what larger work a present operation performs when that connection is u
 
 ### FIN.Reference:4.1 - Let the financial relation select the return
 
-The following connections explain which result another method consumes. They are alternative entries into the work, not a requirement to perform every row.
+Use the rows that match the results you need. Each row shows how another method uses a result and what can change its adequacy.
 
 | Current difficulty | Contribution and use | A change that returns the work |
 | --- | --- | --- |
-| A proposed activity has unexplained monetary consequences | MA supplies the needed resource and operating account; FIN.4 translates its events into the financial view, and FIN.6 compares the incremental activity. | Changed scope, capacity or customer terms changes the cash construction, even if the spreadsheet still balances. |
+| A proposed activity has unexplained monetary consequences | MA supplies the needed resource and operating account; FIN.4 translates its events into the financial view, and FIN.6 compares the incremental activity. | A change in scope, capacity or customer terms changes the cash construction, even if the spreadsheet still balances. |
 | Value appears attractive but money is unavailable | FIN.2 specifies the dated need. FIN.10 constructs or compares funding; FIN.3 and FIN.8 can change the cash cycle or staging. FIN.9 then compares the resulting whole alternatives. | The new agreement changes delivery, ownership, future service or access; those consequences return to value and feasibility. |
 | Debt appears cheaper than equity | FIN.11 compares supported financing policies, with FIN.5 re-estimating their risk and valuation effects. | Additional debt changes service, incentives, restrictions or investment; the old rates and operating forecast may no longer fit. |
 | Several companies need a different way to fund their activity | FIN.23 constructs where claims sit and how money and support connect the entities; FIN.10 supplies missing terms and FIN.11 the policy comparison. | Restricted upstream cash, a minority interest or correlated shortfalls changes the proposed structure, even with unchanged group leverage. |

@@ -7,13 +7,13 @@
 
 Use this pattern when a maintenance policy or intervention depends on support that may not be ready at the required time. The spare is in stock, but its applicability is unresolved; the tool is available, but no competent provider can use it in the outage.
 
-Establish the support that makes the selected maintenance task feasible, or return the deficiency that changes the choice. This is maintenance readiness for a stated task and use. Designing a changed workshop, service platform or supply arrangement uses [SYSE.12](../syse/35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) where needed. A recommendation can already be complete while readiness for its performance remains incomplete.
+Establish the support that makes the selected maintenance task feasible, or return the deficiency that changes the choice. This is maintenance readiness for a stated task and use. Designing a changed workshop, service platform or supply arrangement uses [SYSE.12](../syse/35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) where needed. A recommendation can be complete while readiness for its performance remains incomplete.
 
 ### MNT.5:2 - Problem
 
-An available resource can be unsuitable for the task. Stock presence does not establish part compatibility, an organization chart does not establish available competence and a tool listing does not establish a usable measurement capability. A nominally quick repair can therefore have a long or uncertain real response time.
+An available resource can be unsuitable for the task. Stock presence does not establish part compatibility, an organization chart does not establish available competence and a tool listing does not establish a usable measurement capability. A nominally quick repair can therefore have a long or uncertain response time.
 
-The opposite error is to require every conceivable support record before answering any maintenance question. Readiness concerns the selected work, not a universal administrative package.
+Check the support the selected work needs. Request a missing record when the answer depends on what that record would establish.
 
 ### MNT.5:3 - Forces
 
@@ -21,15 +21,15 @@ More reserve support reduces some response delays but consumes storage, money an
 
 ### MNT.5:4 - Solution
 
-Derive support from the actual task content and its uncertainty. Identify the relevant procedure, access, expected work and foreseeable branches. A bearing replacement and a fault diagnosis may use different competence, tools and information even when they concern the same unit.
+Derive support from the task content and its uncertainty. Identify the relevant procedure, access, expected work and foreseeable branches. A bearing replacement and a fault diagnosis may use different competence, tools and information even when they concern the same unit.
 
-Check readiness at the point of use. For spares, establish applicability to the installed configuration and the condition needed for installation. Resolve material compatibility, preservation, shelf-life or specialist-return requirements where they actually govern this task. A certificate is useful when it supplies a required claim; collecting an unrelated certificate does not repair a compatibility gap.
+Check readiness at the point of use. For spares, establish applicability to the installed configuration and the condition needed for installation. Resolve material compatibility, preservation, shelf-life or specialist-return requirements where they govern this task. A certificate is useful when it supplies a required claim; collecting an unrelated certificate does not repair a compatibility gap.
 
 For tools and information, determine whether the practitioner can perform and judge the task. This may require the applicable instruction, fit-for-purpose measurement capability, access to configuration information and suitable workspace. A calibration label alone does not settle whether the instrument's range and uncertainty suit the measurement.
 
-For providers, establish relevant competence, actual availability, access and action-specific authority. Include working conditions and likely task duration when these affect capability. If unexpected work would require relief, obtain a viable relief arrangement or preserve the resulting limit.
+For providers, establish relevant competence, availability, access and action-specific authority. Include working conditions and likely task duration when these affect capability. If unexpected work would require relief, obtain a viable relief arrangement or preserve the resulting limit.
 
-Relate obtaining lead times to the maintenance need. Distinguish what can be prepared during continuing operation from what requires shutdown or protected access. Include supplier uncertainty, transit, acceptance and replenishment where they change response feasibility. For a repairable pool, consider units already removed for repair and common demands on the same stock; nominal pool size is not available reserve.
+Compare the time needed to obtain support with the time the maintenance task allows. Distinguish what can be prepared during continuing operation from what requires shutdown or protected access. Include supplier uncertainty, transit, acceptance and replenishment where they change response feasibility. For a repairable pool, consider units already removed for repair and common demands on the same stock; nominal pool size is not available reserve.
 
 Choose the smallest adequate support action. It may be to use an existing spare, reserve a qualified specialist, resolve one applicability question, obtain another window or change the intervention alternative. If the support arrangement itself is inadequate across recurring tasks, return that enabling-arrangement development question to [SYSE.12](../syse/35-syse-12---develop-or-retain-an-engineering-platform-for-prac.md) and the programme decision to MNT.13.
 
@@ -51,9 +51,9 @@ Inventory systems make material shortages visible while hiding interpretation wo
 
 ### MNT.5:7 - Conformance Checklist
 
-Can the selected task be performed and judged with the actual available part, provider, tool, information and access? Are material compatibility and permission conditions supported? Do obtaining and relief arrangements fit the needed time? Are shared demands and support uncertainties retained where they change feasibility?
+Can the selected task be performed and judged with the part, provider, tool, information and access available for it? Are material compatibility and permission conditions supported? Do obtaining and relief arrangements fit the needed time? Are shared demands and support uncertainties retained where they change feasibility?
 
-A readiness answer can be “adequate for this task” or a specific deficiency. It does not require a new platform, a complete stock catalogue or closure of an advice request through physical work.
+Existing support can establish readiness for the selected task or reveal its deficiency, without building a new service platform or compiling the entire stock catalogue. An advice request can close while a deficiency still prevents the intervention.
 
 ### MNT.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -63,7 +63,7 @@ A complete support checklist is imposed on a simple recommendation. Limit readin
 
 ### MNT.5:9 - Consequences
 
-The plan uses support that can actually contribute to maintenance. Some apparent quick fixes become infeasible; some preparation can proceed without consuming the outage. The added work is checking readiness and replenishment where planning previously relied on nominal resource counts.
+The plan uses support that can contribute to maintenance. Some apparent quick fixes become infeasible; some preparation can proceed without consuming the outage. The added work is checking readiness and replenishment where planning previously relied on nominal resource counts.
 
 ### MNT.5:10 - Architectural Rationale
 
@@ -71,7 +71,7 @@ Readiness belongs between maintenance intent and feasible performance because se
 
 ### MNT.5:11 - SoTA-Echoing
 
-The question is how to turn nominal resources into a feasible maintenance response. This pattern adapts the human/material-support emphasis in GFMAM's 2021 framework, §6.5, into task-specific readiness reasoning. Against stock-count-only planning, the Method adds applicability, provider availability and obtaining lead time. It accepts some reservation and reconciliation effort to expose a real support limit before an outage begins. The source supplies breadth, not a universal documentation checklist. Reopen when task content, support lead time or available capability changes. See [GFMAM's maintenance framework](https://www.gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf).
+The question is how to turn nominal resources into a feasible maintenance response. This pattern adapts the human/material-support emphasis in GFMAM's 2021 framework, §6.5, into task-specific readiness reasoning. Against stock-count-only planning, the Method adds applicability, provider availability and obtaining lead time. It accepts some reservation and reconciliation effort to expose a real support limit before an outage begins. GFMAM identifies categories of maintenance support. Which records to obtain depends on what the task needs them to establish. Reopen when task content, support lead time or available capability changes. See [GFMAM's maintenance framework](https://www.gfmam.org/sites/default/files/2021-02/GFMAM%20Maintenance%20Framework%20-%202nd%20Edition%20Final.pdf).
 
 ### MNT.5:12 - Relations
 

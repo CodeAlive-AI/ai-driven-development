@@ -1,8 +1,8 @@
 ## SOM.Reference:5 - Interpreting results and choosing further work
 
-Judge a bodily account together with the action it is intended to serve. Ask what the performer can now distinguish or regulate, under which conditions, with what assistance and with what concurrent result. Check the changed condition that matters to the later work rather than adding variation for its own sake.
+Judge a bodily account against the action it is intended to serve. Establish what the performer could distinguish or regulate, under what conditions and with what help, and the result in the movement that the adjustment was meant to serve. Where transfer matters, use evidence under the changed condition relevant to the later work.
 
-Use the following distinctions when deciding what follows:
+Use the distinctions below to interpret an observation or choose further work.
 
 - A description can be usable before the movement improves.
 - A distinction can be available before the performer controls the change.
@@ -10,8 +10,8 @@ Use the following distinctions when deciding what follows:
 - A prepared combination can work before it transfers through the required support change.
 - A successful supported attempt can be useful without establishing independent performance or retention.
 
-Whether an effort is noticed and whether it is voluntary are different questions. Include involuntary effort when it affects the movement, even if it usually remains outside the performer's attention. Noticing it does not establish an ability to regulate it. The task is to obtain the needed action, not to eliminate every involuntary response.
+An effort can occur without being noticed. If an involuntary response affects the movement, include it in the account. Noticing it does not establish that the performer can regulate it. Work on regulation when the intended action requires that change.
 
-The intended gain is a proposed correction that can be tested in a suitable attempt, with observations that help choose what to do next. Learning time, instructor effort, attention and physical demands are costs. Once the intended action works under its required conditions, a finer body map needs an additional reason.
+A supported account can show which condition matters or identify a correction worth trying. Weigh the attainable learning or evidence against learner and instructor time, attention and physical demands. When the movement already meets its requirements, refine the bodily account only if the question warrants it.
 
 Begin within familiar technique and suitable physical limits, or obtain competent instruction. Stop an attempt that produces pain, dizziness or unfamiliar loss of control. Somatic vocabulary does not resolve an injury or establish that a new exercise is suitable.

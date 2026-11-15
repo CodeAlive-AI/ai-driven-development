@@ -4,65 +4,65 @@
 
 > **Pattern type:** Music-and-Dance style-development architecture pattern
 
-> **Public result:** one selected architecture for changing how a style is produced and reproduced, with its first representative test specified
+> **Public result:** a justified local arrangement for producing and reproducing the intended style distinctions, or a finding about an arrangement under review. Specify a representative test when a consequential question remains and the test is worthwhile.
 
 ### MDPE.21:0 - Use This When
 
-Use this pattern when a project has named a new or changed musical or dance style, yet the surrounding practice
-still produces the predecessor. New traits may appear in a manifesto, choreography, recording, tool, class, or
-showcase, while familiar training, instruments, partner habits, production conventions, recognition, curation,
-teaching, circulation, and memory keep pulling later Work back toward the old result.
+Use this method when a project needs to establish how a musical or dance distinction could recur under the
+intended conditions. A distinction can appear in a manifesto, choreography, recording, tool, class or
+showcase while training, instruments, partner habits, curation or circulation still favour the preceding
+practice. The question can also concern how an existing arrangement already sustains the desired recurrence.
 
-The practical difficulty is architectural. A style is not established by selecting traits. Repeated
-Music or Dance Work depends on several relations that can reinforce or obstruct one another. A performer may be
-capable of a new movement that partners cannot read. A composer may create a new rhythmic language that existing
-rehearsal and notation practices cannot reproduce. A class may transmit a phrase while an event, camera, judge,
-or platform selects a different quality. A recording may circulate while no receiving Agent can reconstruct a Method from it and perform representative
-Work that enacts that Method.
+A repeatable style depends on relations among the people, methods, tools and arrangements
+involved. A dancer may be able to execute a movement that partners cannot read. A composer’s new
+rhythmic language may exceed available notation or rehearsal methods. A class can transmit
+a phrase while an event, camera, judge or platform selects another quality. A recording
+may circulate while its recipients still lack what they need to reconstruct the
+method and perform it. Examine the relation on which the intended recurrence depends.
 
-The first useful result is a decision about which local arrangement of Methods, Agents, Systems, and relations to
-change, why that change is expected to affect later production, and which representative Work will test the
-expectation.
+The first useful result can explain how the local arrangement supported recurrence or where it fell short. For a proposed change, identify
+the relation to retain or change and the grounds for that choice. An existing arrangement may suffice. Consider a
+representative test when a consequential condition remains unestablished and the observation is worth obtaining.
 
-When teaching, competition and social participation each improve locally but impair their shared use, continue
-with [MDPE.25 - Renew a Shared Music or Dance Practice](42-mdpe-25---renew-a-shared-music-or-dance-practice.md).
-It develops the complete construction, from conflicting uses and actual provision through learning, revised
-recognition criteria and a changed-resource return. [MDPE.Application:5.2](52-mdpe-application-5---participation-learning-recognition-and.md#mdpeapplication52---recover-the-subject-of-a-music-or-movement-claim) recovers ambiguous music or movement
-subjects, and [MDPE.Application:5.3](52-mdpe-application-5---participation-learning-recognition-and.md#mdpeapplication53---connect-style-method-structure-and-acquisition) distinguishes stylistic structure, description recovery and acquired capability.
+When teaching, competition and social participation benefit separately but conflict in shared use, see
+[MDPE.25 - Renew a Shared Music or Dance Practice](42-mdpe-25---renew-a-shared-music-or-dance-practice.md) for changes to provision,
+learning, recognition and resource allocation. [MDPE.Application:5.2](52-mdpe-application-5---participation-learning-recognition-and.md#mdpeapplication52---recover-the-subject-of-a-music-or-movement-claim)
+identifies the subject of an ambiguous music or movement claim, and [MDPE.Application:5.3](52-mdpe-application-5---participation-learning-recognition-and.md#mdpeapplication53---connect-style-method-structure-and-acquisition)
+distinguishes style structure, recovery of its description and what a performer has learned.
 
-Do not use this pattern merely to describe a style, classify a genre, write a history, or produce one work. Use
-the applicable analysis, composition, choreography, performance, production, or historical Method directly when
-no style-reproduction decision is waiting.
+Use the relevant analysis, composition, choreography, performance, production or historical method
+to describe a style, classify a genre, write its history or create one work when that is the
+whole task. Enter here when the way an arrangement supports recurrence is itself in question.
 
 ### MDPE.21:1 - The Recurring Difficulty
 
-A style-development project commonly starts from one of four incomplete moves:
+A project can start from a trait, a creator, an artifact or an institution. Each starting point can leave an important relation open.
 
-- **trait first:** specify rhythm, timbre, movement vocabulary, posture, texture, form, costume, or another
-  distinction and assume later Work will reproduce it;
-- **creator first:** credit one Agent, school, scene, manifesto, or tool and treat that contribution as control of
-  a distributed practice;
-- **artifact first:** publish a track, video, score, choreography, dataset, or tutorial and treat availability as
-  transmission and retention;
-- **institution first:** build a class, festival, platform, archive, or competition and treat the supporting
-  System as the style itself.
+- **Trait.** Rhythm, timbre, movement vocabulary, posture, texture, form or costume can
+specify the intended distinction. Establish how later performers can reproduce or vary it.
+- **Creator.** A performer or another creator can originate material, alone or with others. A manifesto can state a proposal and a
+tool can contribute to its realization. Use evidence of later participants’ work to establish what they took up. For a decision, establish who can make it.
+- **Artifact.** A track, video, score, choreography, dataset or tutorial can make material
+available. Transmission and retention depend on what other participants received, enacted and kept.
+- **Institution.** A class, festival, platform, archive or competition can support the practice.
+Identify what its participants do or what its proposed arrangement would enable.
 
-Each move can contribute. None identifies how later performers, teachers, listeners, dancers, partners,
-producers, curators, or tools will keep producing and recognizing the intended distinctions under changed
-conditions.
+Follow the contribution into later work. Which relations allow performers, teachers, listeners,
+dancers, partners, producers, curators or technical systems to produce or recognize the distinction
+under changed conditions? Existing representative performance may already show the answer.
 
-For engineering purposes, use *style* as an ordinary name for a reproducible cultural distinction or family of
-distinctions. Recover the world-side Methods, Work, capabilities, Systems, memories, and relations that matter in
-the current project.
+Here a style is a reproducible cultural distinction or family of
+distinctions. Identify the methods, performances, capabilities, systems,
+memories and relations on which that reproduction depends in the project.
 
 ### MDPE.21:2 - Solution
 
-Design the local architecture that makes the intended distinctions producible, performable, recognizable,
-selectable, transmissible, and recoverable. These are concurrent concerns in a living practice.
+Design or assess the local arrangement that makes the intended distinctions possible in later production, performance,
+recognition, selection, transmission or recovery. Several of these processes can occur together in a living practice.
 
 #### MDPE.21:2.1 - Begin with a representative recurrence
 
-Name one result that should recur after the initial novelty has passed. Examples include:
+Identify a result that should recur beyond an initial example, or a recurrence the inquiry asks you to explain. Examples include the following.
 
 - dancers can use a changed partnering and timing practice with unfamiliar partners at a social event;
 - musicians can learn, rehearse, vary, and perform a rhythmic or timbral language beyond the founding ensemble;
@@ -70,41 +70,41 @@ Name one result that should recur after the initial novelty has passed. Examples
 - listeners, partners, judges, curators, or sensing Systems can discriminate a relied-on difference under the
   conditions where their response changes later Work.
 
-State what continuity must survive and what variation remains valuable. If the project cannot name a desired
-recurrence, return to `MDPE.1`; it may be producing one work rather than developing a style line.
+Identify what persisted in the recurrence being examined, or what should persist and what variation is valuable in the proposed practice. If the target is unclear, use an existing brief
+or MDPE.1 to clarify it. A commission for one work can be completed by its direct production method.
 
 #### MDPE.21:2.2 - Recover the current reproduction architecture
 
-Follow one actual or representative Music-or-Dance occurrence backward into the conditions that made it possible
-and forward into the conditions that influence its reuse. Open only the concerns that can change the decision:
+Trace an observed performance to the conditions that made it possible and to the conditions for reuse. For a design,
+use a representative proposed performance and state the premises. Examine the relations relevant to the question.
 
 | Architecture concern | Practical question |
 | --- | --- |
-| Variant production | Which Work enacting composition, choreography, improvisation, arrangement, rehearsal, or tool-supported Methods produces materially different candidates? |
+| Variant production | How do composing, choreographing, improvising, arranging, rehearsing or using a tool produce alternatives that differ for the intended practice? |
 | Performing capability | Which bodily, perceptual, instrumental, ensemble, partnering, or technical capabilities must function during representative Work? |
 | Performing configuration | Which Agents, instruments, software, spaces, cues, permissions, and signal, contact, access, control, timing, or coordination relations must obtain together? |
-| Recognition | Who must notice which difference, in what conditions, with what capability and observation? |
+| Recognition | Who or what must distinguish the feature, under what conditions, and what observation bears on that capability? |
 | Selection and amplification | Which teaching, repertoire, programming, judging, peer-copying, audience, market, or platform relations make some variants more likely to recur? |
-| Transmission and reconstruction | Through which lessons, imitation, notation, recordings, examples, models, or joint Work can a receiving Agent reconstruct a Method and perform representative Work that enacts it, or develop a useful receiving variant? |
+| Transmission and reconstruction | How can another performer recover the method from a lesson, imitation, notation, recording, model, example or joint practice and enact or adapt it in representative work? |
 | Memory and recurrence | Which embodied capability, repertoire, archive, curriculum, instrument setting, venue practice, or recurring event makes later recovery possible? |
 | Supporting environment | Which schools, ensembles, venues, platforms, instruments, software, providers, archives, or event series enable or constrain the other relations? |
 
-In one
-dance performance, bodily coordination, partner response, figure execution, stylistic enactment, event
-participation, and contribution to a living practice may occur simultaneously at different scales. In one music
-performance, fingering, phrasing, ensemble coordination, stylistic enactment, presentation, and contribution to a
-repertoire may likewise occur together.
+In one dance, bodily coordination, a response to a partner, execution of a figure, use of a
+style and participation in an event can coincide. Some of these actions also constitute a
+contribution to a continuing practice. In music, fingering, phrasing, ensemble coordination,
+presentation and contribution to a repertoire can likewise operate at different scales in
+one performance. Establish the relevant part–whole relation where the claim depends on it.
 
-Use Systems Engineering when the project changes a performer-supporting System, instrument, venue, school,
-platform, archive, or other engineered System. Use Method Engineering when the changed subject is a composition,
-training, teaching, rehearsal, improvisation, recognition, selection, transmission, or other Method. `MDPE.21`
-adds the Music-and-Dance purpose, distinctions, simultaneous performance concerns, receiving use, and cultural
-consequences that make those general engineering results useful here.
+Use a suitable systems engineering result when a question concerns an instrument, venue, school, platform, archive
+or other engineered system. When changing or assessing a composition,
+training, teaching, rehearsal, recognition or transmission method, use FPF
+Core’s method-development guidance. In either case, identify the music or
+dance performance and cultural relations the supplied result needs to support.
 
 #### MDPE.21:2.3 - Find what currently reproduces the predecessor
 
-Compare the intended recurrence with the current architecture. Look for a relation that repeatedly defeats the
-new distinction. Typical examples are:
+Compare the recurrence in question with relevant observations or, for a design, with the conditions the arrangement would provide. Where the intended distinction is missing, look for a
+relation that could account for what happened. The following cases illustrate different possibilities.
 
 - candidate generation changes, but training and rehearsal still develop the predecessor's capability;
 - performers can enact the distinction, but partners, listeners, teachers, or judges cannot recognize it;
@@ -114,11 +114,11 @@ new distinction. Typical examples are:
 - an archive retains records while embodied capability, instruments, venues, or teaching Methods disappear;
 - one school stabilizes a useful practice but its authority, access, or incentives suppress valuable variants.
 
-Name the observed relation and the consequence it has for Work.
+Identify the relation at issue. State its observed consequences or what the design predicts under its stated conditions. A claim that the relation caused the outcome needs grounds for that attribution.
 
 #### MDPE.21:2.4 - Compare consequential architecture candidates
 
-Compare credible materially different arrangements, including retaining the current one when feasible. Develop another candidate when its possible contribution can change the supported choice. Useful directions include:
+When a comparison is needed, compare materially different arrangements that bear on the question, including the current one where relevant. Develop another candidate when its possible contribution could change the conclusion. If an option cannot meet a required condition, use that finding in the comparison. The following directions can help locate alternatives.
 
 | Candidate emphasis | Change considered | What it may reveal |
 | --- | --- | --- |
@@ -129,154 +129,154 @@ Compare credible materially different arrangements, including retaining the curr
 | Medium-first | Change instrument, software, camera arrangement, platform, venue, or production System. | Whether the support System enables the intended Work instead of selecting another result. |
 | Coupled change | Change two or more tightly linked relations whose separate repair would fail. | Whether the joint change resolves a conflict that neither local repair can resolve alone. |
 
-A useful candidate states the Systems and Methods it changes,
-the Agents whose Work or capability is involved, the direct signal, contact, access, teaching-use, observation-use, selection, or other relations changed, the authority and
-consent needed, the expected effect, and the earliest observation that could defeat it.
+Describe the proposed arrangement or the existing one under review. Identify the people, systems and methods
+involved, and the signal, contact, access, teaching, observation or selection relations it depends on. For a
+change, identify the required authority or consent, expected effect and what evidence could count against it.
 
 #### MDPE.21:2.5 - Select a bounded change and any needed test
 
-Choose an architecture change by its expected contribution to the intended recurrence, feasibility and full burden, including the linked relations that must change together. A project can change a class, tool, event, repertoire, recording practice, platform
-feature, recognition task, or relation among them. It cannot decide by itself that a wider population has
-recognized, selected, transmitted, or retained the result.
+For a choice, compare the arrangements on their expected contribution to recurrence, feasibility and full cost, including any relations that must change together.
+A project can retain its existing arrangement or choose a local change in a class, tool, event, repertoire, recording practice, platform feature
+or recognition task. Claims about wider recognition, selection, transmission or retention depend on evidence of what the relevant population did in the period at issue.
 
-Use the available grounds for the proposed recurrence. If a material condition remains unestablished, specify an obtainable representative Music or Dance test whose contribution warrants its burden. Vary a condition that the claim must survive but existing evidence does not cover: performer, partner, ensemble, teacher, venue, instrument, repertoire item, audience, medium or time. Name the observations of the intended difference and unwanted side effects, and the next decision they can change.
+Use available evidence for the recurrence under the conditions claimed. When a consequential condition is still open, consider an obtainable representative test whose expected contribution warrants its cost. It might vary a performer, partner, ensemble, teacher, venue, instrument, repertoire item, audience, medium or interval. Identify the condition the evidence must cover, what response and unwanted effects to observe, and how the result would inform the question or decision.
 
-The architecture decision can close with a justified arrangement, its limits and a selected test when needed. Carrying out a change or test is further Work, using `MDPE.15` or the applicable direct Method. A claim about tested recurrence requires observations of the relevant later Work. Keep project choice, performed intervention, observed change and later distributed uptake as separate claims.
+The result can be a justified arrangement, a finding about an existing one, or a scoped limitation. Include a proposed test when it is needed and worth conducting. An authorized change or test can use MDPE.15 or the relevant direct method. For a claim about an actual intervention, recurrence or wider uptake, identify what happened at the appropriate time and scale.
 
 ### MDPE.21:3 - First Useful Result
 
-A style-production and reproduction decision can be recorded compactly:
+A compact account can record the result or support a local decision.
 
-> - **Desired recurrence:** [what Music or Dance Work should remain possible beyond the first example].
-> - **Continuity and variation:** [what must remain recognizable; what may or should vary].
-> - **Current reproduction:** [the Methods, Agents, Systems, and relations that now reproduce the practice].
-> - **Defeating relation:** [the observed relation that pulls later Work toward another result].
-> - **Architecture candidates:** [the consequential alternatives considered, including the current arrangement where applicable].
-> - **Selected local change:** [the Methods, Systems, and direct signal, contact, access, teaching-use, observation-use, selection, or other relation to change; the Agent authorized to decide].
-> - **Expected Work effect:** [what should become possible or more reliable in representative Work].
-> - **Grounds and any selected test:** [available evidence; missing consequential condition; representative Work, observation and decision when a new test is needed].
-> - **Outside the claim:** [population-wide recognition, selection, spread, retention, or causal effect not yet observed].
-> - **Stop or reopen:** [missing authority, capability, support, evidence, or adverse effect that defeats the choice].
+> - **Recurrence:** [the recurrence being examined or the work that should remain possible beyond the first example].
+> - **Continuity and variation:** [what remained recognizable or varied, or the continuity and variation the design requires].
+> - **Reproduction of the practice:** [the methods, participants, systems and relations that support reproduction in the period being examined].
+> - **Condition affecting recurrence:** [what supports or interferes with the intended difference, and on what evidence].
+> - **Alternatives:** [any arrangements that need comparison, including the existing one where relevant].
+> - **Arrangement:** [what the assessment established or what is proposed or selected. For a change, name the relations involved and any authority required].
+> - **Effect on performance:** [what the evidence establishes or what the arrangement is expected to make possible under the stated conditions].
+> - **Grounds and any proposed test:** [the available evidence and, if a consequential condition remains open, any worthwhile representative observation that could resolve it].
+> - **Scope:** [the population, practice and time covered, and any question about causal effect or later uptake that remains].
+> - **Completion or reconsideration:** [the supported answer and any changed condition that would affect it].
 
-This result is an architecture decision for a bounded project. It is not the style, the cultural practice, the
-performed intervention, or evidence that a population later retained the change.
+The account can establish which arrangement the project can use or what an existing arrangement
+supported. Establish a past intervention and later cultural retention from the evidence for each.
 
 ### MDPE.21:4 - Worked Cases
 
 #### MDPE.21:4.1 - Selecting an architecture for local Zouk recurrence
 
-A local project wants unfamiliar partners to reproduce a changed timing and partner-response distinction in
-social Dance Work. Current classes teach fixed sequences with familiar partners, and the event rewards a polished
-showcase. Two architecture candidates change different relations:
+In a constructed case, a local Zouk project wants unfamiliar partners to reproduce a timing and partner-response
+distinction during social dancing. The present classes teach fixed sequences with familiar partners,
+and the event rewards a polished showcase. The following proposals would change different relations.
 
 | Candidate architecture | Contributions and participants | Proposed or observed relations relevant to recurrence |
 | --- | --- | --- |
-| Choreography-and-showcase | A choreographer fixes phrases; teachers reproduce them; familiar pairs rehearse; a camera and event present the result. | In this unselected candidate, the phrase description or video would be used by teachers in teaching Work; familiar pairs would perform repeated-pair rehearsal Work; and event selectors would use camera-facing observations when choosing showcase material. |
-| Partnered-recurrence | Teachers use embodied capability tasks and cue-response exercises; dancers rotate partners and music; observers watch supervised social Work; teachers revise tasks and variants. | The selected trial requires teachers to use capability tasks in teaching Work, rotating pairs to perform cue-response Dance Work with changed partners and music, and named observers to report observations of that social Work. It proposes that teachers later use those reports when revising tasks and variants. |
+| Choreography and showcase | A choreographer would fix the phrases, teachers would teach them, familiar pairs would rehearse, and the event and camera would present the performance. | In this unselected proposal, teachers would use a phrase description or video, familiar partners would rehearse together, and selectors would use camera-facing observations to choose showcase material. |
+| Partnered recurrence | The two teachers would use capability and cue-response tasks, dancers would rotate partners and music, and observers would follow supervised social dancing. | The selected trial requires teachers to use the tasks, rotating pairs to perform under altered conditions and observers to report what occurs. The project proposes that teachers use those reports for later revisions. |
 
-The project selects the partnered-recurrence architecture because the waiting decision concerns social use with
-unfamiliar partners. The selected architecture is also a trial hypothesis: the project has not yet established
-that its teaching, partner-rotation, observation, or later-use relations cause recurrence. The selected first change is a six-week rotating-partner and
-varied-music teaching trial, followed by supervised social Work. Observers record readable response, balance,
-recovery, refusal, and whether the intended timing survives. Failure returns to the capability or cue relation;
-success supports only the local architecture decision, not wider Zouk recognition or retention.
+The project selects the partnered-recurrence proposal for the six-week teaching trial and
+supervised social event because its question concerns unfamiliar partners. Observers are
+to note readable responses, balance, recovery, refusal and whether the timing survives.
+Their results can support a bounded statement about local performance and show where cueing
+or capability needs attention. To attribute a result to a specific part of the arrangement,
+or to claim wider recognition or retention, use evidence for that further claim.
 
 
-Selecting partnered recurrence still leaves a real architecture choice. In a constructed planning slice, twelve
-consenting participants, two teachers and one room are available for a 120-minute session. The room can safely
-accommodate two small groups using the same music. Each teacher has twenty additional paid minutes for
-preparation; the complete teacher allocation is therefore `2 × (20 + 120) = 280` minutes. The required
-cue-response exercises and observation method are already available to both teachers.
+The selected trial still admits two ways to run one 120-minute session. In this constructed
+case, twelve consenting participants, two teachers and one room are available. The room
+safely accommodates two small groups using the same music. Each teacher has 20 paid
+minutes of preparation and 120 minutes in class, for a total of 2 × (20 + 120) = 280
+teacher-minutes. Both already have the cue-response exercises and observation method.
 
 | Viable arrangement | Relations and whole-session allocation | Gain and accepted loss |
 | --- | --- | --- |
-| Short clinic followed by extended shared practice | One teacher leads the cue task while the other observes; both then support rotating-partner practice. Setup and warm-up 20, cue work 20, shared practice 60, review 10, changeovers 10: 120 minutes. | More receiving interaction with changed partners; less protected time to examine an individual's failed cue response. |
-| Two teaching stations followed by a receiving attempt | Participants change between a cue-response station and a guided improvisation station, each with one teacher; both groups then join the receiving attempt. Setup and warm-up 20, two stations of 35 each, receiving attempt 10, review 10, changeovers 10: 120 minutes. | More individual feedback and a controlled return to the whole interaction; only ten minutes of the final shared attempt and more group coordination. |
+| Short clinic followed by extended shared practice | One teacher would lead the cue task while the other observes, then both would support rotating-partner practice. The 120 minutes comprise 20 for setup and warm-up, 20 for cue work, 60 for shared practice, 10 for review and 10 for changeovers. | More receiving interaction with changed partners, less protected time for examining an individual difficulty in responding to a cue. |
+| Two teaching stations followed by a receiving attempt | Groups would rotate between cue-response work and guided improvisation, each with one teacher, then join the receiving attempt. The 120 minutes comprise 20 for setup and warm-up, two station blocks of 35, 10 for the receiving attempt, 10 for review and 10 for changeovers. | More individual feedback and a controlled return to the whole interaction, with 10 minutes of final shared practice and more coordination. |
 
-Both arrangements serve unfamiliar-partner recurrence and fit the available room and teacher time. The school
-initially chooses the short clinic because its present concern is insufficient receiving practice and the
-teachers expect the cue task to fit the twenty-minute block. It accepts less individual feedback, keeps the
-station arrangement available, and names a defeating observation: apparent classroom recovery depends on
-teacher prompts that will be absent from the intended social use. The choice preserves learner consent and
-the six-week project boundary; it does not establish either candidate's effectiveness.
+Both arrangements fit the stated room and teacher time and address unfamiliar-partner recurrence.
+The school initially chooses the short clinic. Its priority is more receiving practice, and
+the teachers expect the cue task to fit the 20-minute block. The school accepts less protected
+feedback time and keeps the station arrangement available. It will reconsider the choice if
+classroom recovery depends on teacher prompts absent from social use. Consent and the six-week
+limit still apply. Assess effectiveness from suitable evidence of what the arrangement contributes to the intended performance.
 
-Suppose the first session shows usable recovery when the teacher supplies the prompt, but repeated continuation
-of the memorized sequence after an unfamiliar partner's cue. The teachers retain that supported performance
-result and reopen the sufficiency of the short clinic. They select the two-station arrangement for the next
-session so one teacher can distinguish cue recognition from response execution while the other preserves
-partnered use. This spends more session time on feedback and gives up fifty minutes of final shared practice;
-the desired recurrence, available providers, common music and safety/consent conditions remain.
+Suppose learners recover the movement when the teacher prompts them but repeatedly continue the
+memorized sequence after an unfamiliar partner’s cue. This shows what they did with the prompt
+and what happened in the receiving interaction. The teachers choose the two stations for the next
+session. One can investigate recognition and response execution while the other preserves partnered
+use. That choice spends more time on feedback and gives up 50 minutes of final shared practice.
+The target, available staff, common music and consent and safety conditions still apply.
 
-The next receiving attempt must show whether the needed response occurs under the intended partner cue. If
-that use is already supported, the longer shared-practice arrangement remains a useful option. If the cue
-conventions are incompatible or a provider becomes unavailable, revise that relation rather than interpreting
-another assisted success as transfer. The constructed observation warrants a narrower development decision;
-it does not isolate a population-level cause from several simultaneous teaching changes.
+An observation with the intended partner cue can establish whether learners give the needed response under that
+condition. If existing evidence already supports that use, the longer shared-practice arrangement remains an
+option. If cue conventions conflict or a teacher becomes unavailable, assess what can be done under the changed
+condition. A prompted performance remains evidence for its own conditions. The constructed comparison informs
+a local teaching choice. It cannot isolate a population effect of one among several simultaneous changes.
 
 #### MDPE.21:4.2 - Choreo-camps and short-video selection
 
-Consider a constructed travelling-workshop network connecting teachers, cities, learners, cameras, video archives,
-status, and later bookings. The network can reproduce front-facing phrases, clean synchronization, short hooks, and camera-legible
-detail even when teachers describe a broader dance practice.
+Consider a constructed travelling-workshop network linking teachers, cities, learners, cameras, archives,
+reputation and later bookings. Its selection arrangements could favour front-facing phrases,
+synchronization, short hooks and camera-legible detail even where teachers describe a broader practice.
 
-The project may compare a camera-and-publication change, a change in how teachers use learner observations, and a coupled candidate that
-also changes how learners reuse material outside the recorded group. The first test is not view count alone. It
-observes whether receiving dancers can learn, vary, and perform the intended qualities in another class or event,
-and whether the changed publication arrangement still selects the same narrow result.
+The project might change the camera and publication arrangements, change the way teachers use observations of learners, or change
+both along with the conditions for later practice outside the group. Use suitable evidence about receiving dancers’ ability to
+learn, vary and perform the intended qualities in another class or event, and about what the publication arrangement selects.
+If those conditions remain open, assess whether a representative trial is worth its cost. View counts can describe circulation.
 
 #### MDPE.21:4.3 - *The Call* as a medium-and-practice case
 
-The project joins a songbook, singing exercises, choirs, recordings, datasets, AI models, exhibition equipment,
-and proposed participant relations. Those elements can produce works without yet establishing a reproducible
-music practice or style line.
+The Call connects a songbook, singing exercises, choirs, recordings, datasets, AI models, exhibition
+equipment and proposed participation. The produced works can be studied where they are accessible. A claim about
+recurrence concerns the relations that let other participants perform or adapt the practice.
 
-Architecture candidates may emphasize choir capability, model-and-dataset interaction, receiving-group teaching,
-or exhibition circulation and memory. A representative test asks whether another configured group can learn,
-adapt, and perform the intended musical relations under stated conditions. Produced recordings, publicity, and
-one successful installation remain different from later cultural recognition or retention.
+A proposal could emphasize choir capability, model and dataset interaction, teaching for a receiving group, or exhibition circulation
+and memory. To assess recurrence, examine whether another suitably configured group can learn, adapt and perform the intended musical
+relations. Use an adequate existing observation or a warranted representative test. Recordings, publicity and a successful installation
+bear on the work produced and its presentation. For later recognition or retention, examine the relevant participants over time.
 
 #### MDPE.21:4.4 - One commissioned work
 
-If the decision concerns one selected composition, choreography, recording, or performance, use the direct domain
-and project Methods. Do not enlarge the work into style-development architecture unless later reproduction across
-variants, performers, conditions, or generations is part of the intended result.
+For a commission limited to one composition, choreography, recording or performance, use
+the direct domain and project methods. Use style-development architecture when the intended
+result includes reproduction across variants, performers, conditions or generations.
 
 ### MDPE.21:5 - Checks and Common Repairs
 
 | Check | Failure it prevents | Repair |
 | --- | --- | --- |
-| The intended recurrence is visible | “New style” remains a label or trait list. | State what later Agents must be able to perform, recognize, transmit, or recover. |
-| Current reproduction is grounded in Work | A diagram starts from abstract cultural nouns. | Trace one representative occurrence backward and forward through actual Methods, capability, Systems, and relations. |
-| Architecture concerns are not stages | Generation, training, performance, recognition, and memory become a fictitious lifecycle. | Show which concerns operate together and which first–then relation belongs only to one chosen Method. |
-| Several candidates differ materially | The first institutional or technical idea becomes inevitable. | Vary the principal changed relation, not just the wording or tool. |
-| The selected change is locally actionable | The project claims it will change “culture”, “the market”, or “the algorithm”. | Name the Agent, System or Method changed; the direct signal, access, contact, participation, observation-use, teaching-use, or selection relation; and the authority to change it. |
-| The specified test addresses representative recurrence | Publication or an initial demonstration substitutes for the intended later use. | Specify the changed condition and observation of later enactment, recognition, or recovery required by the claim; a tested-result claim needs the obtained observations. |
-| Project action and cultural evolution remain separate | Local authorization or success becomes population selection. | State local Work and effect now; claim wider transmission, recognition, selection, or retention only from later evidence. |
+| Intended recurrence | A new label or list of traits leaves the intended use unclear. | Identify what later performers or recipients should be able to perform, recognize, transmit or recover. |
+| Current reproduction | A proposed diagram is treated as a history of the practice. | Use evidence from a representative occurrence for its work, capability, systems and enabling relations. State a design comparison under its premises. |
+| Concurrent concerns | Generation, training, performance, recognition and memory are put into an unsupported sequence. | Identify what occurs together, what forms part of a larger action, and which temporal dependencies the chosen method requires. |
+| Alternatives | A candidate is chosen without considering an available arrangement that would change the comparison. | Include relevant alternatives and retention where feasible. Develop another candidate when its possible contribution could change the answer. |
+| Authority and action | A proposal attributes a local decision to an entire culture, market or platform. | For a proposed change, identify who could decide, the work, system or method affected, and the signal, access, contact, participation, observation or selection relation on which it depends. |
+| Evidence for recurrence | An initial demonstration or publication is presented as recurrence under a later condition. | Use evidence that covers the relevant later performance, recognition or recovery. If a consequential condition remains open, state the limit and consider what an obtainable, worthwhile comparison could establish. |
+| Local and wider claims | A local authorization or performance is taken as a population’s selection. | State which local work was proposed or performed. For wider transmission, recognition, selection or retention, establish the relevant activity in that population. |
 
 
 ### MDPE.21:6 - Sources and Epistemic Boundaries
 
 | Source or practice line | Contribution used here | Boundary |
 | --- | --- | --- |
-| [FPF `C.36 — Cultural Evolution and Cultural-Evolution Engineering`](../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) | General separation of local intervention from distributed generation, transmission, recognition, selection, retention, and loss. | It does not supply the Music-and-Dance architecture, direct domain Methods, cases, or representative tests. |
-| Music-and-Dance eco-evo-devo synthesis (unpublished source note) | Music-and-Dance eco-evo-devo synthesis; developmental machinery, ecology, recognition, selection, memory, conflicts, and candidate new-whole tests. | The note provides hypotheses and cases, not a universal ontology, measured prevalence, or proof that one architecture works. |
-| [Vanchurin et al., *Toward a theory of evolution as multilevel learning*](https://doi.org/10.1073/pnas.2120037119) | A model source for learning-like dynamics across scales and downward effects. | The cultural and engineering transfer remains a working hypothesis; it does not prescribe a project Method. |
-| [Mauch et al., *The evolution of popular music: USA 1960–2010*](https://doi.org/10.1098/rsos.150081) | An empirical example of feature change and large-scale musical-style analysis. | Recorded-pop measurements do not establish the production, teaching, performance, recognition, or retention architecture of every music practice. |
-| [Urban Dance Showcase information](https://www.urbandance.eu/show/infos/) | A provider-described connection between camp participation and a showcase event. | The undated description is not a current price or schedule. It establishes neither a travelling workshop network, video-mediated reproduction effects, nor provider effectiveness; :4.2 is a separate constructed architecture case. |
-| [Holly Herndon and Mat Dryhurst, *The Call*, Serpentine](https://www.serpentinegalleries.org/whats-on/holly-herndon-mat-dryhurst-the-call/) | A joined choir, model, dataset, recording, exhibition, and participation case. | The project source does not establish a general AI-music Method or durable cultural uptake. |
+| [FPF `C.36 — Cultural Evolution and Cultural-Evolution Engineering`](../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md) | General distinctions between a local intervention and distributed generation, transmission, recognition, selection, retention and loss. | Use music and dance sources for the domain methods, cases and representative evidence. |
+| Music-and-Dance eco-evo-devo synthesis (unpublished source note) | Hypotheses and cases concerning development, ecology, recognition, selection, memory, conflict and the formation of new practice wholes. | Use evidence of the relevant practice for claims about prevalence or whether an arrangement works. |
+| [Vanchurin et al., *Toward a theory of evolution as multilevel learning*](https://doi.org/10.1073/pnas.2120037119) | A model of learning-like dynamics across scales and effects from higher to lower scales. | Applying the model to cultural or engineering work is a hypothesis whose suitability must be established for the proposed use. |
+| [Mauch et al., *The evolution of popular music: USA 1960–2010*](https://doi.org/10.1098/rsos.150081) | A method for classifying styles from audio features at scale, applied to harmonic and timbral change in 17,094 songs from the US Billboard Hot 100 between 1960 and 2010. | Establish how a particular practice is produced, taught, performed, recognized or retained from evidence about that practice. |
+| [Urban Dance Showcase information](https://www.urbandance.eu/show/infos/) | The provider describes a connection between camp participation and a showcase event. | Its undated description supports that account. Current prices and dates, the reach of a travelling network, video-related effects and provider effectiveness need their own evidence. Section 4.2 is a constructed case. |
+| [Holly Herndon and Mat Dryhurst, *The Call*, Serpentine](https://www.serpentinegalleries.org/whats-on/holly-herndon-mat-dryhurst-the-call/) | The project documents choir, model, dataset, recording, exhibition and participation arrangements. | A general AI-music method or durable cultural uptake requires grounds for that wider claim. |
 
-Use only the architecture concerns that change the current choice or test. Reconsider the architecture decision when a Music-or-Dance field Method supplies a better way to design and test the same reproduction change.
+Use the concerns that affect the question. Reconsider an arrangement when changed conditions defeat a premise or a domain method offers a better way to obtain or assess the intended recurrence.
 
 ### MDPE.21:7 - Relations
 
-- `MDPE.8` identifies the current subject and change question; `MDPE.1` frames the project scale.
-- `MDPE.9`, `MDPE.10`, and `MDPE.3` supply candidate, capability, and performing-configuration results when those
-  concerns limit the selected architecture.
+- `MDPE.8` identifies the subject and the question about its practice or change; `MDPE.1` frames the project scale.
+- `MDPE.9`, `MDPE.10`, and `MDPE.3` supply candidate, capability, and performing-configuration results when
+  their results bear on the arrangement being examined or designed.
 - `MDPE.11`, `MDPE.5`, `MDPE.12`, `MDPE.23`, and `MDPE.13` keep enactment, occurrence, observation, recognition
   capability, and recognition-and-selection arrangements separate.
 - `MDPE.6`, `MDPE.17`, `MDPE.18`, and `MDPE.19` address receiving use, transmission, usable memory, and continued
   reproduction.
-- `MDPE.22` supplies a tested support-environment change result; `MDPE.14` supplies a practice-conflict decision; `MDPE.16` supplies checked availability of useful alternatives; `MDPE.20` supplies a trajectory decision; and `MDPE.24` supplies a decision about whether evidence warrants treating a new whole as the project subject.
-- `MDPE.21` uses applicable Systems Engineering results when the project changes an engineered System and applicable Method Engineering results when it changes a Method.
+- MDPE.22 addresses an enabling environment or a change in it, MDPE.14 a conflict between practical aims, MDPE.16 the availability of alternatives, MDPE.20 a forecast or comparison of trajectories, and MDPE.24 which whole carries the practice or whether a different whole formed. Use each result for the question it answers.
+- Use applicable systems engineering results for an engineered system and FPF Core’s method-development guidance for a method.
 
 ### MDPE.21:End

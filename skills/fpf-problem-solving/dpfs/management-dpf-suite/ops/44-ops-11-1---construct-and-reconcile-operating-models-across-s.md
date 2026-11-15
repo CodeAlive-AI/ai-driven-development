@@ -8,15 +8,15 @@
 
 **Use this when** the operation needs a way to obtain a required result, or an operating change looks useful in one account of the work but its consequence cannot be recovered in another. A department appears to have spare capacity while the person doing its work is already occupied elsewhere. A laboratory reports completed samples while the customer needs a complete order. A team can describe individual tasks but cannot explain what controls delivery by the wider service.
 
-Construct the operating arrangement needed for the decision, then connect its local and wider accounts. Here a model is a description used to obtain an answer about the operation. A drawing, a set of conditions, a calculation or a simulation can serve that use. Keep the description distinct from the actual work and its arrangement.
+Use an adequate existing arrangement and its model, or construct the missing arrangement or description. Connect the local and wider accounts needed for the question. Here a model is a description used to obtain an answer about the operation. A drawing, a set of conditions, a calculation or a simulation can serve that use. Keep the description distinct from the actual work and its arrangement.
 
 **First useful move.** Choose one recipient's result and the current difficulty in obtaining it. Recover an available way of doing the necessary work, or identify the missing professional contribution. Follow a present or proposed case through its resources and completion conditions, or recover what maintains the required service over its interval. Where two descriptions refer to the same worker, order or event, bring those references together before calculating.
 
-**Practical gain.** The manager can compare feasible arrangements without mistaking local capacity for available shared capacity or local completion for delivery. The result may also identify the particular coupling that makes a proposed change fail.
+**Practical gain.** The practitioner can compare feasible arrangements without mistaking local capacity for available shared capacity or local completion for delivery. The result may also identify the particular coupling that makes a proposed change fail.
 
-The reader needs to understand the work well enough to identify its participants and events, or work with someone who does. The elementary cases below need arithmetic and time intervals. A more demanding calculation can be obtained from a modeling specialist.
+The reader needs a usable account of the participants and events. They may identify them directly, use a qualified result, or obtain the missing information from a provider familiar with the work. The elementary cases below need arithmetic and time intervals. A more demanding calculation can be obtained from a modeling specialist.
 
-Use an adequate existing operating model directly when its assumptions and retained detail answer the present question. A staffing total alone may settle a proposed start. This method is useful when choosing or reconciling the model changes the answer; it does not require a description of the whole enterprise.
+Use an adequate existing operating model directly when its assumptions and retained detail answer the present question. A staffing total alone may settle a proposed start. This method is useful when choosing or reconciling the model can affect the answer or establish the grounds for it.
 
 ### OPS.11.1:2 - Problem
 
@@ -31,7 +31,7 @@ Adding detail everywhere makes the account harder to build, interpret and mainta
 | Force | Tension |
 | --- | --- |
 | Required result and available way | A desired service can motivate another arrangement, but a drawn operation supplies neither a qualified method nor its provision. |
-| Local understanding and shared operation | Each team knows its work; a common resource or receiving condition crosses team boundaries. |
+| Local understanding and shared operation | Local accounts can represent the same resource or receiving condition under different names. |
 | Compactness and useful distinction | An aggregate is easy to use until two cases with the same aggregate require different decisions. |
 | Stable account and changing policy | A useful service approximation can cease to apply after routing, release or staffing changes. |
 | Several working questions | An order deadline, machine load and cash receipt concern related but different subjects and events. |
@@ -39,13 +39,13 @@ Adding detail everywhere makes the account harder to build, interpret and mainta
 
 ### OPS.11.1:4 - Solution
 
-Specify the needed outside result, recover the work that obtains or maintains it, reconcile shared participants, and connect the quantities and events at each useful scale. Refine an account when its omitted distinction can change the proposed action. Return the resulting comparison with the conditions on which it depends.
+Specify the needed outside result, recover the work that obtains or maintains it, reconcile shared participants, and connect the quantities and events at each useful scale. Refine an account when an omitted distinction can affect the answer or its grounds. Return the resulting comparison with the conditions on which it depends.
 
 #### OPS.11.1:4.1 - Fix the receiving result and the proposed change
 
 State what the recipient must obtain and which event or continuing condition makes it available. For an order, this may require accepted components, transport and permission to use the result. For a machine service, it may be restored operation. An incident service can instead require qualified response to remain obtainable throughout a covered interval. Use the completion or service condition of the present or proposed operation and keep any proposed change to that condition explicit.
 
-Name the alternative under consideration: another release time, a different allocation, a larger transfer batch, changed routing or another operating method. Identify the quantities that would make the alternative preferable and any conditions it must preserve. When no adequate arrangement has yet been proposed, construct alternatives through :4.2a from the result, available methods and missing contributions. OPS.1 supplies the operating focus and OPS.19 the wider reconciliation when several results govern the choice.
+When comparing a change, name the alternative under consideration: another release time, a different allocation, a larger transfer batch, changed routing or another operating method. Identify the quantities that would make the alternative preferable and any conditions it must preserve. When no adequate arrangement has yet been proposed, construct alternatives through :4.2a from the result, available methods and missing contributions. OPS.1 supplies the operating focus and OPS.19 the wider reconciliation when several results govern the choice.
 
 Retain the difference between a fixed input and a decision variable. If a contractor's two-day turnaround is a commitment that cannot change, the present model can use it as an input. If the proposal changes how that contractor is used, recover the response to that change rather than assuming the same turnaround.
 
@@ -69,14 +69,14 @@ A.22.CGUS helps express available continuations and their conditions before fixi
 
 Work back from the recipient's required result to the contributions it needs. For each contribution, recover a qualified way of obtaining it, the input it requires, the result it supplies and the conditions under which the receiver can use it. Use the actual professional explanation or a competent provider's result. Where no adequate way is available, return that method or research question through FPF C.39 and the relevant discipline. A box labeled with the desired outcome cannot yet support a resource estimate or a promise.
 
-Use an existing workable route as the first alternative when one is available. Locate the dependency that prevents it from meeting the present need. Construct another arrangement by changing that dependency while preserving the required result. The following questions expose different ways of doing so:
+Start from the required contribution. If no suitable route exists, construct one from available professional methods, resources and receiving conditions. If a route exists, keep it as an alternative. Establish why a change is worth comparing: it may miss a requirement or meet it at a cost another arrangement could reduce. The following questions suggest ways to develop the comparison.
 
 - **What can be prepared before a particular request is known?** Separate reusable preparation from work that depends on that request. Identify how long the prepared result remains usable, which later work consumes it and what can make it obsolete. Compare stock and preparation burden with the delay avoided after arrival.
 - **Where can a smaller contribution become useful?** Choose work and transfer boundaries from readiness and receiving conditions. Compare smaller transfers with the setup, checking and coordination they add. Keep a required join even when its constituents travel separately.
 - **Which provision can change?** Compare qualified alternative resources, routes or providers, including their setup, response, access and existing load. A shared preparation or support service can replace repeated work only when its result is usable in each receiving case.
 - **Where can the operation accommodate variation?** Compare available capacity, suitable prepared inputs and permitted waiting for the same service question. Include the replenishment or recovery that makes the protection sustainable. Preserve the supplied limit when delay, storage or interruption is inadmissible.
 
-These are possible changes, not required ingredients of every model. Develop the alternative whose mechanism addresses the difficulty. In a familiar case, one changed allocation can suffice. When changes across methods, performers and means must be constructed together, FPF C.32.MWA.PP:4.3–4.7 supplies that comparison. This operating model then retains the particular unit, readiness, occupancy and timing relations needed to calculate its consequences.
+Develop the alternative whose mechanism addresses the difficulty. In a familiar case, one changed allocation can suffice. When changes across methods, performers and means must be constructed together, FPF C.32.MWA.PP:4.3–4.7 supplies that comparison. This operating model then retains the particular unit, readiness, occupancy and timing relations needed to calculate its consequences.
 
 Follow the proposed work forward. Show how each intermediate result becomes usable, how common preparation and recurring work are counted, where resources coincide or conflict, and how acceptance is reached or service is maintained. Count displaced work and the transition from the present arrangement. Sections :4.3–4.6 reconcile and compare these accounts. Reject a candidate that merely moves the missing contribution to another participant who cannot supply it.
 
@@ -103,7 +103,7 @@ When aggregating, preserve the condition under which the summary is usable. A de
 
 To construct a sufficient summary, first express the requested result in the quantities you propose to retain. Derive the answer from those quantities and their stated conditions. If an omitted detail still enters the answer, look for two allowed arrangements with the same summary and different answers. Such a pair disproves sufficiency; failing to find one does not establish it. Retain the distinguishing relation, derive a useful bound, or restrict the answer. In the laboratory case below, the sample-to-order relation and the latest required completion provide the order's completion event; sample totals alone cannot. C.29.1 develops this construction and preservation question. MMP.18 constructs compatible exchanges when mathematical models must be coupled, including shared quantities, time scales, feedback and uncertainty.
 
-#### OPS.11.1:4.5 - Refine the part that can reverse the choice
+#### OPS.11.1:4.5 - Refine the part on which the answer depends
 
 Start from the smallest available account that addresses the question. Open a local part when a consequential result depends on its hidden timing, sharing, variation, return or completion condition.
 
@@ -117,9 +117,9 @@ Identify uncertainty separately from a deliberate simplification. “The loading
 
 Translate the recovered conditions into a form from which the requested result can be obtained. MMP.10 constructs constraints; OPS.10 selects the service and capacity question. Use a hand calculation when it suffices, or choose a computational procedure under C.29.2 and the relevant CMP methods.
 
-Check the obtained alternative against the operating arrangement. Can the people and equipment occupy the proposed intervals? Are the receiving inputs available together? Does the calculated final event make the result usable? A schedule can satisfy a mistaken model, so successful computation alone does not settle these questions.
+Check the obtained alternative against the operating arrangement. Are the required performers, equipment and other resources available in the proposed intervals? Are the receiving inputs available together? Does the calculated completion make the result usable, or can the arrangement sustain the required service condition throughout its interval? A schedule can satisfy a mistaken model, so successful computation alone does not settle these questions.
 
-For a comparison across scales, return the local change and its wider consequence together. Explain where a delay, burden or unfinished obligation moves. OPS.14 supplies financial consequences when they can change the choice; their quantities need their own interpretation.
+For a comparison across scales, return the local change and its wider consequence together. Explain where a delay, burden or unfinished obligation moves. Use OPS.14 when financial consequences bear on the comparison or its grounds. Interpret each quantity for its period and use.
 
 Stop with a sufficient comparison or the missing contribution that prevents one. Retain the assumptions a recipient needs to use the result. When routing, resources, calendars or acceptance changes, revise the affected account and propagate the change through the relationships that consumed it.
 
@@ -188,7 +188,7 @@ flowchart LR
   R --> P["Accepted report"]
 ```
 
-This second diagram shows only the changed route. The first diagram's start conditions, review authority, substantive correction return and resource constraints still apply. The automated check establishes field presence, not correctness or acceptance. Add its computing demand and the operator's completion work to the resource account; compare the saved review work with that added demand. The new route can be worse if it moves the bottleneck to a scarce operator. A simulation or trial is useful only if the remaining uncertainty can change the choice.
+This second diagram shows only the changed route. The first diagram's start conditions, review authority, substantive correction return and resource constraints still apply. The automated check establishes field presence, not correctness or acceptance. Add its computing demand and the operator's completion work to the resource account; compare the saved review work with that added demand. The new route can be worse if it moves the bottleneck to a scarce operator. Use a simulation or trial when it could resolve a consequential uncertainty about the choice or its grounds at a justified cost.
 
 These proposals change different things:
 
@@ -199,7 +199,7 @@ These proposals change different things:
 | Let the operator accept reports without the previously required reviewer. | The proposed completion and authority relations change. Obtain the relevant professional acceptance decision and organization-design/assignment result before relying on the proposal. A faster route does not authorize it. |
 | Introduce the route where staff cannot yet perform or sustain it. | Establish the needed capability, practice and support. Use the relevant development, Method-introduction or organization-change methods for that question; put their actual learning and support work into the same resource account. An unchanged organization chart does not supply those capabilities. |
 
-The result is a comparison of identified changes and their consequences, with any missing decision left visible. It need not become a redesign of the whole organization.
+The result is a comparison of identified changes and their consequences, with any missing decision left visible.
 
 #### OPS.11.1:5.5 - Derive preparation and provision from a changed service requirement
 
@@ -211,7 +211,7 @@ Now the product specification changes: preparation must use the actual ordered d
 
 A second qualified technician with an independent workstation can provide a different arrangement, if both are actually available under the required authority. Each technician completes three thirty-minute kits; the last kits are accepted at minute 90. Compare the added provision and its displaced work with a later or smaller service offer. If the second provision is unavailable, retain the 180-minute bound for the existing arrangement and return the promise to its owner. Product engineering might supply a genuinely different preparation method, but that result must be obtained before counting its expected saving.
 
-The unit design follows the same change. Initially an order-independent prepared item can exist before any customer case; after the change its preparation belongs to an identified order. OPS.3 preserves that correspondence, OPS.10 supplies the capacity and schedule, OPS.13 forms the possible service agreement and OPS.14 compares consequential payments and unused stock where those matter. Existing acceptance authority and the one-kit result can remain unchanged. The broader account changes only the premise that the new product defeats.
+The unit design follows the same change. Initially an order-independent prepared item can exist before any customer case; after the change its preparation belongs to an identified order. OPS.3 preserves that correspondence, OPS.10 supplies the capacity and schedule, OPS.13 forms the possible service agreement and OPS.14 compares consequential payments and unused stock where those matter. Existing acceptance authority and the one-kit result can remain unchanged. Revise the affected capacity and delivery conclusions while keeping conditions that still hold.
 
 #### OPS.11.1:5.6 - Model a continuing service when no case is completed
 
@@ -223,7 +223,7 @@ Another proposal assigns the same person to a twelve-minute task that cannot be 
 
 If demand changes to permit simultaneous incidents requiring separate responders, the single-responder premise fails even though the four-minute return remains attainable. Obtain the required qualified provision or revise the promise. The account keeps availability over an interval, work performed during quiet time and actual incident results distinct; a completed-case count alone cannot express all three.
 
-These are constructed operating cases.
+
 
 ### OPS.11.1:6 - Bias-Annotation
 
@@ -234,12 +234,12 @@ The method also favors consequential detail. That can miss an effect outside the
 ### OPS.11.1:7 - Conformance Checklist
 
 - The model answers a named operating question and uses the recipient's completion or service condition.
-- A needed arrangement is constructed from usable professional contributions; alternatives change an operative dependency and include preparation, recurring work and the receiving connection.
+- The arrangement uses sufficient professional contributions. For a proposed change, the affected dependency, preparation, recurring work and receiving connection are clear where they matter.
 - Routes, resource occupancy, calendars and eligibility are distinguishable where they change feasibility.
 - Shared participants remain shared across local accounts.
 - Product dependencies, resource use, enabling conditions and authority relations retain their meanings; a proposed change identifies which of them changes.
 - Each aggregate or cross-scale relationship has an operation and conditions appropriate to its receiving use.
-- A refinement recovers an answer-changing distinction; unaffected detail can remain compact.
+- A refinement identifies a distinction on which the answer or its justification depends. Unaffected detail can remain compact.
 - The returned result distinguishes the computed consequence from the assumptions about the operation that support it.
 - A changed premise identifies the affected account and receiving consequences.
 
@@ -251,11 +251,11 @@ The method also favors consequential detail. That can miss an effect outside the
 | Sum or average local completions to obtain delivery | The result ignores joins and the final required contribution. | Derive the receiving completion event and its relation to local events. |
 | Preserve a fixed service delay after changing its load | The comparison suppresses the congestion it may cause. | Reopen that service response under the proposed conditions. |
 | Treat a changed route or a new assignment as proof of organizational redesign | Resource regulation becomes confused with changing who may promise or accept a result. | Compare the product, resource, commitment and authority relations separately, then obtain the result needed for each actual change. |
-| Expand every box before comparing an alternative | Modeling consumes resources without improving the decision. | Refine the part whose omitted distinction can reverse the comparison. |
+| Expand every box before comparing an alternative | Modeling consumes resources without improving the decision. | Refine the part whose omitted distinction affects the answer or the conditions that support it. |
 
 ### OPS.11.1:9 - Consequences
 
-The practitioner can construct an operating alternative as well as compare a supplied proposal. Local choices become comparable at the scope where their consequences matter. The account also gives collaborators a definite contribution to obtain: a qualified method, effective provision, occupancy interval, service response, completion relation or calculation.
+The practitioner can construct an operating alternative as well as compare a supplied proposal. Local choices become comparable at the scope where their consequences matter. When a contribution is missing, the account identifies it, for example a qualified method, effective provision, occupancy interval, service response, completion relation or calculation.
 
 The result remains conditional on the work description and model choices. A more detailed account can cost more without improving the decision; an omitted interaction can invalidate it. Keeping the relationships between accounts visible makes a later correction localizable.
 
@@ -265,7 +265,7 @@ Coordination uses several descriptions because the work supports several questio
 
 The outside result selects useful internal detail. The same principle also permits a return from an internal obstruction to a changed promise or wider arrangement. The direction is therefore iterative rather than a one-time decomposition.
 
-The operating contribution is the construction of work boundaries, preparation and provision alternatives, routes, resource use, joins, calendars and completion relations. General mathematical coupling, constraint formulation and computation remain available through their own methods. This keeps the domain method usable without creating a second general modeling language.
+The operating contribution is the construction of work boundaries, preparation and provision alternatives, routes, resource use, joins, calendars and completion relations. General mathematical coupling, constraint formulation and computation remain available through their own methods. Use those methods for the mathematical or computational contribution the operating question needs.
 
 ### OPS.11.1:11 - SoTA-Echoing
 
@@ -281,7 +281,7 @@ Anderson's *Kanban* (2010), chapter 1 and chapter 10's capacity-allocation discu
 
 Constructing an alternative requires more than predicting the incumbent. The production mechanisms compared in OPS.Reference:19.3 support :4.2a's arrangement choices. Section :5.5 derives an alternative from the receiving conditions. C.32.MWA.PP supplies the general comparison of method, performer and provision; this pattern retains the operating dependencies and calculations.
 
-Reconsider this choice when a changed promise, resource or policy makes an omitted relation affect the answer, or when an alternative construction obtains the same required answers with less inquiry and maintenance. A newly observed coupling reopens the affected account, not every part of the operation.
+Reconsider this choice when a changed promise, resource or policy makes an omitted relation affect the answer, or when an alternative construction obtains the same required answers with less inquiry and maintenance. Trace a newly observed coupling to the answers that depend on it.
 
 ### OPS.11.1:12 - Relations
 

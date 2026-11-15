@@ -8,7 +8,7 @@ arrangement visible. Use `SYSE.11` to obtain and modernize bounded usable increm
 
 The engineering platform is also an engineered System when it is deliberately developed to enable named
 practitioner Work. `SYSE.12` starts from that Work—modeling, computation, build, integration, test, release,
-observation, or another engineering activity—and asks which actual capability, service condition, access, data,
+observation, or another engineering activity—and asks which capability, service condition, access, data,
 tool, automation, facility, or provider contribution is needed. Buying a tool or naming a platform does not
 establish that engineers can perform the Work.
 

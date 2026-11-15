@@ -10,7 +10,7 @@ Use this pattern when a mathematical problem mixes quantities you may choose wit
 
 Begin with one proposed action. Ask what will be known when it must be chosen, which quantities remain outside that choice, and what result the action must achieve. Construct two possible circumstances that look the same at that moment. If the proposal assigns different actions to them, it needs another observation, a different decision time or a different policy.
 
-The result is a mathematical formulation of the available choices and the requirement they must satisfy, including their dependence on information. It can establish a feasible fixed choice, a policy, a counterexample to the proposal or the missing contribution. This is a general modeling method for design, prediction and control questions. It develops the formulation before a solver or a control algorithm is selected.
+The result is a mathematical formulation of the available choices and the requirement they must satisfy, including their dependence on information. It can establish a feasible fixed choice, a policy, a counterexample to the proposal or the missing contribution. This is a general modeling method for design, prediction and control questions. Use it to formulate the question before selecting a solver or a control algorithm.
 
 The finite examples need elementary sets, inequalities and the meanings of 'there exists' and 'for every'. More demanding cases can require optimization, stochastic processes or control theory. If the answer condition and available information are already correctly formulated, use C.29.2 or the applicable computational method to obtain the result.
 
@@ -20,7 +20,7 @@ A mathematical unknown can represent a decision, an unobserved state, an externa
 
 Timing introduces another error. A family of solutions indexed by the true circumstance can be mathematically valid while requiring an observation that the acting system never receives. Separately optimizing every future case then grants foresight that the described method lacks.
 
-The difficulty is to translate the work's choices, information and requirements into a mathematical question with the corresponding dependencies and quantifiers.
+Which quantities can be chosen, on what information, and what result must the choice achieve? The quantifiers in the formulation must express those dependencies.
 
 ### MMP.8:3 - Forces
 
@@ -67,7 +67,7 @@ For a deterministic success condition G(a,w), these are different questions:
 
 Choose the statement from the work's requirement. The first two can expose possibilities or limits even when the latter two fail. A stronger claim can require a different action or information source.
 
-When the receiving use permits failures with a stated probability, name the event and the randomness over which that probability is calculated. For unknown fixed w and random observation O, the question may require `P_w(failure of pi(O)) <= epsilon` for every admitted w. If w itself is modeled as random and the question concerns performance averaged over circumstances, use the joint law of w and O. An expected cost needs the same choice of what is averaged. Neither a probability nor an objective follows just from listing possible circumstances. Feasibility, expected performance, tail risk and worst-case performance are alternative questions with different consequences. Use the common choice and characterization methods to decide which matters to the work.
+When the receiving use permits failures with a stated probability, name the event and the randomness over which that probability is calculated. For unknown fixed w and random observation O, the question may require `P_w(failure of pi(O)) <= epsilon` for every admitted w. If w itself is modeled as random and the question concerns performance averaged over circumstances, use the joint law of w and O. An expected cost needs the same choice of what is averaged. Listing possible circumstances specifies neither their probabilities nor the objective. Feasibility, expected performance, tail risk and worst-case performance are alternative questions with different consequences. Use the common choice and characterization methods to decide which matters to the work.
 
 Preserve dependence within the circumstance set. Independently combining several ranges can create impossible circumstances and overstate a requirement. Conversely, excluding an inconvenient circumstance changes the range of the conclusion and needs a subject reason or an agreed narrower use.
 
@@ -91,19 +91,19 @@ Follow the resulting action or policy through one modeled case and a consequenti
 
 Compare these options by what they change and cost. A more informative observation can enlarge the feasible policy set, but it may arrive too late or cost more than a sufficient fixed choice. C.11.DUA supplies that comparison. An infeasible guarantee can still leave a useful bounded, conditional or risk-qualified proposal.
 
-For a working-method change, explain who or what supplies the observation, what result it provides, when it becomes available and what the receiving action does with it. B.1.5.CM constructs the proposed Method whole; C.32.MWA.PP connects its execution with the available performers and provision. The mathematical policy then describes an obtainable contribution, rather than relying on an unstated observer or decision-maker.
+For a working-method change, explain who or what supplies the observation, what result it provides, when it becomes available and what the receiving action does with it. B.1.5.CM constructs the proposed Method whole; C.32.MWA.PP connects its execution with the available performers and provision. These connections show how the participants can obtain the observation and act on it.
 
 ### MMP.8:5 - Archetypal Grounding
 
 #### MMP.8:5.1 - Choose a preload before or after learning an external load
 
-An ideal static arrangement has a downward load w, an adjustable upward preload a and a residual y=w-a. A later use requires `abs(y)<=1/4`. The load is either 1 or 2, and a can be any value from 0 to 2. The relation is a supplied illustrative mechanical model; the pattern's work is to formulate the choice and its information.
+An ideal static arrangement has a downward load w, an adjustable upward preload a and a residual y=w-a. A later use requires `abs(y)<=1/4`. The load is either 1 or 2, and a can be any value from 0 to 2. The relation is a supplied illustrative mechanical model; use it here to formulate the choice and the information available before it.
 
 If w=1, acceptable choices form `[3/4,5/4]`; if w=2, they form `[7/4,2]` after the actuator limit is applied. Both sets are nonempty, so each known load has a feasible choice. Their intersection is empty. No one preload chosen before distinguishing the loads can meet the requirement for both.
 
 Suppose a reading available before adjustment reports which of the two loads is present. The policy `a=w` then meets the requirement. A reading received only after the preload is locked cannot support that policy at the relevant decision.
 
-Now the tolerance is relaxed to 3/5. The acceptable intervals overlap from 7/5 to 8/5, so `a=3/2` works before any reading. Additional measurement is unnecessary for this revised requirement. The change is in the required result, not the sophistication of the computation.
+Now the tolerance is relaxed to 3/5. The acceptable intervals overlap from 7/5 to 8/5, so `a=3/2` works before any reading. Additional measurement is unnecessary for this revised requirement.
 
 #### MMP.8:5.2 - Decide which participant gets a scarce resource
 
@@ -120,7 +120,7 @@ Now the timely report is noisy. The observing procedure independently chooses on
 | 2 | L | 0.7 |
 | 2 | R | 0.9 |
 
-Use MMP.7 to remove the unrecorded channel by summing over it. For fixed circumstance L, `P(report L)=0.5*0.9+0.5*0.7=0.8`. For fixed R, `P(report R)=0.5*0.5+0.5*0.9=0.7`. No probability for which request actually needs the resource was needed for this construction.
+Use MMP.7 to remove the unrecorded channel by summing over it. For fixed circumstance L, `P(report L)=0.5*0.9+0.5*0.7=0.8`. For fixed R, `P(report R)=0.5*0.5+0.5*0.9=0.7`. These conditional probabilities require no assumption about how often L or R needs the resource.
 
 There are four deterministic instructions from one two-valued report:
 
@@ -147,7 +147,7 @@ To see the failure, hold the earlier history fixed. The rule chooses either 0 or
 
 A changed requirement may ask for success probability under independent fair input bits. Any earlier choice then matches with probability 1/2 in one round, including a randomized earlier choice independent of the next bit. Success in every one of N such rounds has probability 2^(-N). These probabilistic claims use the new input assumption. They do not establish success against every input stream.
 
-This is a continuing computational interaction. The construction determines how each response may depend on incoming information. The same observation-order construction identifies what a distributed team or controller would need to know before acting.
+This is a continuing computational interaction. The same timing constraint applies to a team or controller: a response can use only information available before it acts.
 
 ### MMP.8:6 - Bias-Annotation
 
@@ -155,7 +155,7 @@ Optimization tools encourage viewing every variable they can assign as an availa
 
 ### MMP.8:7 - Conformance Checklist
 
-- Are choices, circumstances and consequences distinguished by what the acting system can actually change?
+- Are choices, circumstances and consequences distinguished by what the acting system can change?
 - Does each choice depend only on information available at its decision time?
 - Do the quantifiers express the intended possibility, guarantee, policy or probabilistic question?
 - Are dependent circumstances and remaining possible outcomes preserved in the formulation?
@@ -174,7 +174,7 @@ Optimization tools encourage viewing every variable they can assign as an availa
 
 ### MMP.8:9 - Consequences
 
-The formulation prevents computation from supplying unavailable control or foresight. It can expose a useful change to observation, timing or the requirement before optimization begins. It can also be harder to solve than its scenario-wise surrogate; that extra difficulty reflects the question the work actually asked.
+The formulation prevents computation from supplying unavailable control or foresight. It can expose a useful change to observation, timing or the requirement before optimization begins. It can also be harder to solve than its scenario-wise surrogate; that extra difficulty reflects the work’s requirement.
 
 ### MMP.8:10 - Architectural Rationale
 
@@ -186,11 +186,11 @@ This mathematical formulation can describe physical adjustment, resource allocat
 
 [Boyd and Vandenberghe, Convex Optimization, section 4.1](https://www.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf), distinguish the feasible set from the objective and transformations of a problem. Adopt that separation in :4.1 and :4.3. The present finite constructions do not require convexity; the book's convex solution guarantees apply only under their conditions.
 
-[Ben-Tal, Goryashko, Guslitzer and Nemirovski, Adjustable robust solutions of uncertain linear programs (2004)](https://doi.org/10.1007/s10107-003-0454-y), develop adjustable decisions alongside choices fixed before uncertainty is revealed. Adapt this distinction into the information-dependent formulation; do not transfer linear-program tractability to unrestricted policies.
+[Ben-Tal, Goryashko, Guslitzer and Nemirovski, Adjustable robust solutions of uncertain linear programs (2004)](https://doi.org/10.1007/s10107-003-0454-y), develop adjustable decisions alongside choices fixed before uncertainty is revealed. Use this distinction when formulating information-dependent choices. Their tractability results concern restricted adjustable decisions under the paper’s assumptions. They do not extend to unrestricted policies in general.
 
 [Duchi, Optimization with uncertain data (2018), sections 1 and 6](https://web.stanford.edu/class/ee364b/lectures/robust_notes.pdf), compares uncertainty-set requirements with probabilistic ones and makes choosing the uncertainty set a modeling question. Adopt that choice explicitly; no worst-case objective is imposed by this pattern.
 
-[Vayanos, Georghiou and Yu, Robust Optimization with Decision-Dependent Information Discovery, version 3 (2022)](https://arxiv.org/abs/2004.08490v3), treats actions that affect when uncertainty can be observed. Carry that extension into :4.2 and the return to method design. Its specialized algorithms are further methods, not assumed capabilities of every reader.
+[Vayanos, Georghiou and Yu, Robust Optimization with Decision-Dependent Information Discovery, version 3 (2022)](https://arxiv.org/abs/2004.08490v3), treats actions that affect when uncertainty can be observed. Carry that extension into :4.2 and the return to method design. Its algorithms address the robust optimization problems studied there.
 
 The interval, allocation and bit-response examples are constructed demonstrations of the method under their stated assumptions.
 

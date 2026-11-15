@@ -5,11 +5,11 @@
 
 ### CGOV.16:1 - Problem frame
 
-Use this pattern when a corporate-governance action appears correctly performed in isolation but does not accomplish the work it belongs to: a correct sum does not establish the vote, an accurate summary fails to inform deliberation, or nominal attendance does not provide the required participation. Use it also when preparing people or support tools to perform such work together.
+Use this pattern when a corporate-governance action appears correctly performed in isolation but does not accomplish the work it belongs to: a correct sum does not establish the vote, an accurate summary fails to inform deliberation, or nominal attendance does not provide the required participation. Use it also when preparing the participants and support needed to perform such work together.
 
 Choose an action and recover both what encompassing work it performs and which constituent actions make it performable. Carry the governing conditions through those connections. Use the explanation to correct execution, recover a needed capability, improve coordination or reconsider the demand with the participant who can change it.
 
-The first result is the connection that explains the difficulty and a supported continuation. The method does not require a complete diagram of the company. An adequate routine performance can continue without this diagnosis.
+The first result is the connection that explains the difficulty and a supported continuation. An adequate routine performance can continue without this diagnosis.
 
 ### CGOV.16:2 - Problem
 
@@ -25,7 +25,7 @@ The action must retain the conditions imposed by the corporate work it helps per
 
 Some needed contributions occur earlier or elsewhere. An audit can inform a board decision without being a constituent of that board meeting. Useful diagnosis preserves these temporal and supplier relations alongside genuine constituent/encompassing relations.
 
-The correction should address the actual limitation. Changing governance is sometimes necessary, but it can be much more costly than correcting a count, restoring communication or obtaining an explanation.
+Choose a correction that addresses the limiting condition. Changing governance is sometimes necessary, but it can be much more costly than correcting a count, restoring communication or obtaining an explanation.
 
 ### CGOV.16:4 - Solution
 
@@ -33,11 +33,11 @@ Use B.1.5.EW to recover the work connection in ordinary verbs, then apply the co
 
 #### CGOV.16:4.1 - Choose the action and the failed or proposed performance
 
-Name what someone is doing and the moment or interval in question: qualifying a ballot, adding votes, explaining a valuation assumption, questioning a proposal or recording a conditional approval. Identify what useful result is sought and what currently prevents it.
+Name the action under examination and who performs or would perform it in the interval in question: qualifying a ballot, adding votes, explaining a valuation assumption, questioning a proposal or recording a conditional approval. Identify what useful result is sought and what currently prevents it.
 
 Distinguish an observed occurrence from a proposal for future work. A proposed participation arrangement can be examined before the meeting, but its description does not establish that participants can already perform it.
 
-Use the actual difficulty to set the extent of inquiry. A faulty vote count need not open a complete review of strategy, audit, ownership and corporate culture.
+Use the difficulty to set the extent of inquiry. For a faulty vote result, trace how the eligible votes were selected, added and compared with the applicable threshold.
 
 #### CGOV.16:4.2 - Recover the positive encompassing connection
 
@@ -53,11 +53,11 @@ Distinguish the same occurrence enacting several methods, an identifiable perfor
 
 Work downward from the selected action. What must the performer be able to do or obtain from another participant?
 
-In determining a vote, the needed contributions may include identifying the proposal, recognizing eligible participants, applying the voting weights and denominator, counting correctly and interpreting the result under the threshold. Establish where the relevant rules come from and how the people or tools use them. Arithmetic correctness cannot supply an omitted eligibility condition.
+In determining a vote, the needed contributions may include identifying the proposal, recognizing eligible participants, applying the voting weights and denominator, counting correctly and interpreting the result under the threshold. Establish where the relevant rules come from and where each rule enters the determination and who applies it. Arithmetic correctness cannot supply an omitted eligibility condition.
 
 In presenting an alternative, the needed contributions can include understanding the subject analysis, preserving a material assumption, explaining its consequence and answering a relevant challenge. A well-written report may supply an input while the ability to use it in deliberation remains missing.
 
-Stop a branch at an understood operation or an available contribution sufficient for this use. If the operation is unknown, recover it or obtain an explanation. If it is understood but cannot be performed in the combination, practise under those encompassing conditions, obtain support or use another competent contributor. Keep any corporate participation requirement when dividing the work between people, staff, advisers and AI tools.
+Stop a branch at an understood operation or an available contribution sufficient for this use. If the operation is unknown, recover it or obtain an explanation. If it is understood but cannot be performed in the combination, practise under those encompassing conditions, obtain support or use another competent contributor. When assigning the work, preserve any participation the corporate procedure requires from its designated holder.
 
 #### CGOV.16:4.4 - Change one condition in each direction
 
@@ -65,7 +65,7 @@ Change an encompassing condition and determine what the constituent action must 
 
 Then consider a limitation below and determine what performance above becomes impossible or unreliable. An inability to hear the amendment can prevent participation under the applicable rule; an inability to interpret an assumption can prevent informed judgement despite access to the report.
 
-Use available knowledge for these comparisons. A new trial is useful when it can resolve the relevant uncertainty; it is not an obligatory demonstration for every connection.
+Use available knowledge for these comparisons. A new trial is useful when it can resolve the relevant uncertainty.
 
 Distinguish failure to meet an achievable requirement from inability to meet it with the available means. If required participation cannot be achieved through the available channel, determine whether another permitted procedure or a different time is available. An unauthorized reduction of the requirement does not repair the performance.
 
@@ -109,7 +109,7 @@ If the director can hear every word but cannot interpret a material assumption, 
 
 An organizational hierarchy can suggest that reporting lines are levels of method composition. They are different relations. This pattern follows performed actions and their organizing conditions; it does not infer a Method vertical from seniority.
 
-The worked examples emphasize decisions because their participation and counting conditions reveal the connection clearly. Disclosure, control and the exercise of shareholder rights can raise the same kind of question, but their constituents must be recovered from that actual work.
+The worked examples emphasize decisions because their participation and counting conditions reveal the connection clearly. Disclosure, control and the exercise of shareholder rights can raise the same kind of question, but identify which operations perform parts of the disclosure, control or exercise of the right in question.
 
 ### CGOV.16:7 - Conformance Checklist
 
@@ -125,14 +125,14 @@ The worked examples emphasize decisions because their participation and counting
 
 | Anti-pattern | What fails | Useful correction |
 | --- | --- | --- |
-| The vertical is a list of departments. | Reporting or supplier relations do not explain constituent performance. | Follow the chosen action through its actual encompassing work. |
+| The vertical is a list of departments. | Reporting or supplier relations do not explain constituent performance. | What larger work is being performed through this action? |
 | A correct constituent is assumed to establish the whole. | Eligibility, interpretation or coordination conditions can still fail. | Carry the whole's conditions into the constituent operation. |
 | Training covers each operation only in isolation. | The performer cannot coordinate them under the real governing conditions. | Practise or obtain the contribution within the needed combination. |
 | Every diagnosed failure triggers governance redesign. | A local execution or capability repair is displaced by a larger project. | Select the smallest supported correction that restores the required performance. |
 
 ### CGOV.16:9 - Consequences
 
-A governance problem can be assigned to the contribution that needs repair. Teams can distinguish missing knowledge, inadequate execution, incompatible combinations and infeasible demands. They can also divide support work more rationally while retaining the parts that the corporate procedure requires its participants to perform.
+A governance problem can be assigned to the contribution that needs repair. Teams can distinguish missing knowledge, inadequate execution, incompatible combinations and infeasible demands. They can assign support work to capable contributors while keeping each participant’s required part of the corporate procedure with that participant.
 
 The method adds explanation where isolated task descriptions fail. Its scope can remain small; following every possible dependency would obscure the condition that changes the next action.
 
@@ -146,14 +146,14 @@ Corporate rights, participation rules and conditions for an institutional act to
 
 The [UK private-company model articles](https://www.gov.uk/government/publications/model-articles-for-private-companies-limited-by-shares/model-articles-for-private-companies-limited-by-shares) make participation, quorum and conflict conditions distinguishable from counting. They provide a concrete institutional anchor; the examples use their own supplied rules.
 
-The [IIA Three Lines statement](https://www.theiia.org/globalassets/site/resources/statements-of-position/tlm_assurance_advice_support_effective_gov_en.pdf) distinguishes interacting governance, management and assurance contributions. This helps avoid treating their organizational arrangement as one Method vertical. The constituent/encompassing analysis here is a conceptual synthesis through B.1.5.EW, not a claim that the IIA statement prescribes this method.
+The [IIA Three Lines statement](https://www.theiia.org/globalassets/site/resources/statements-of-position/tlm_assurance_advice_support_effective_gov_en.pdf) distinguishes interacting governance, management and assurance contributions. This helps avoid treating their organizational arrangement as one Method vertical. The analysis of constituent and encompassing work draws on B.1.5.EW.
 
 ### CGOV.16:12 - Relations
 
 B.1.5.EW supplies the general recovery method. B.5.RC helps reconstruct an unfamiliar constituent operation; B.1.5.RS helps when a constituent is to be replaced. C.32.MWA is useful when different Method, Work, subject and organizational structures must be related.
 
-CGOV.1–CGOV.3 supply relevant matter, rights and authority conditions. CGOV.6–CGOV.12 contribute the particular conflict, information, control, assurance, decision or protection work being examined; applying all of them is not a prerequisite.
+CGOV.1–CGOV.3 supply relevant matter, rights and authority conditions. CGOV.6–CGOV.12 describe the conflict, information, control, assurance, decision and protection work. Use the contribution needed for the matter.
 
-C.32.MWA.PP compares materially different arrangements for performing and supporting the connected methods when needed. Use CGOV.14 when a governing arrangement must change through its applicable procedure. A recurrent capability or transmission difficulty can inform development or cultural work through HCD and CGOV.17.
+C.32.MWA.PP compares materially different arrangements for performing and supporting the connected methods when needed. Use CGOV.14 when a governing arrangement must change through its applicable procedure. A recurrent difficulty can inform human capability development through HCD or work on transmitting and sustaining the practice through CGOV.17.
 
 ### CGOV.16:End

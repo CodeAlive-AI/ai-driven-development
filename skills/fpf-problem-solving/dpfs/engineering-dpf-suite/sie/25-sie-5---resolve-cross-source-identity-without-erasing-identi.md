@@ -10,15 +10,15 @@
 
 **Use this when** an integration needs to decide whether records or identifiers from different sources concern the same entity, a part, a version, a variant, an alternate description, a family, or different or unresolved entities. The recognizable failure is a join, merged key, or `sameAs` assertion that makes identifiers appear unified while erasing their issuers, grains, intervals, and authority.
 
-The primary EntityOfConcern is one bounded cross-source identity question for a named use. The first move is to state the entity grain and time or effectivity interval at which sameness matters. The first result is a disposition that downstream work can inspect and challenge without replacing source identifiers or master-data authority.
+For one bounded cross-source identity question, state the entity grain and time or effectivity interval at which sameness matters for the named use. The first result is a disposition that downstream work can inspect and challenge without replacing source identifiers or master-data authority.
 
-The payoff is that the integration can join only warranted cases, return exact unresolved branches, and preserve source trace. Do not use SIE.5 to create identifiers, choose enterprise master identity or survivorship, decide authoritative values, or prove a source claim true. Those decisions remain with identifier owners, MDM, or the direct domain authority.
+The payoff is that the integration can join only warranted cases, identify which branches remain unresolved, and preserve source trace. Do not use SIE.5 to create identifiers, choose enterprise master identity or survivorship, decide authoritative values, or prove a source claim true. Those decisions remain with identifier owners, MDM, or the direct domain authority.
 
 ### SIE.5:2 - Problem
 
 The same real-world item can carry manufacturer, supplier, enterprise, lot, serial, package, event, and temporary process identifiers. Conversely, the same character string can be reused by different issuers or at different times. Version, configuration, part-whole, and alternate-description relations can be mistaken for identity because they support some joins.
 
-If an integration collapses those distinctions, provenance becomes decorative: the merged record no longer shows which source made each claim, the identifier it used, or the time and issuer rules that qualify that use. Contradictory events appear to concern one thing without evidence, and a master key silently becomes a domain decision.
+If an integration collapses those distinctions, the merged record no longer shows which source made each claim, the identifier it used, or the time and issuer rules that qualify that use. Contradictory events appear to concern one thing without evidence, and a master key silently becomes a domain decision.
 
 ### SIE.5:3 - Forces
 
@@ -40,11 +40,11 @@ Frame identity as a source-qualified, grain- and interval-specific disposition f
 1. **Name the receiving identity question.** State which mapping, claim composition, query, or decision needs an identity premise and what a wrong merge or split would change.
 2. **Fix entity grain and interval.** Name the relevant individual or occurrence kind, part-whole level, version/configuration, lifecycle state, jurisdiction or organization, and time/effectivity interval.
 3. **Bind source endpoints.** Reference each `SIE.2` identifier scheme, issuer/owner, syntax, resolution behavior, restrictions, identified-entity claim, edition, and source provenance.
-4. **Separate candidate relation kinds.** Consider same individual at the stated grain, different individuals, part/whole, earlier/later version or specialization, variant, alternate description, family membership, or unresolved. Do not use one boolean until the use truly needs only that distinction.
+4. **Separate candidate relation kinds.** Consider same individual at the stated grain, different individuals, part/whole, earlier/later version or specialization, variant, alternate description, an individual satisfying a type criterion, or membership in a declared product family. Keep the relation unresolved if more than one reading still fits. Do not use one boolean until the use needs only that distinction.
 5. **Collect discriminating evidence.** Use issuer records, source assertions, configuration/effectivity, provenance, physical or domain characteristics, event histories, and counterexamples. A shared string or co-occurrence is only candidate evidence.
 6. **Recover authority.** Name who may decide scheme-local identity, master identity, authoritative values, or the domain relation. SIE may record and use a bounded disposition; it does not acquire those authorities.
 7. **Assign the narrowest warranted disposition.** State conditions, confidence or uncertainty where meaningful, rejected alternatives, and unresolved evidence. Preserve source IDs even for accepted same-entity rows.
-8. **Propagate the premise explicitly.** Reference the disposition from every mapping, claim composition, interface row, and identity test that relies on it. Never copy only the merged key.
+8. **Link consumers to the identity disposition.** Reference the disposition from every mapping, claim composition, interface row, and identity test that relies on it. Never copy only the merged key.
 9. **Test difficult cases and reopen.** Include identifier reuse, split/merge, version/configuration change, part-whole confusion, contradictory source events, and absent-link cases. State the source or observation change that reopens the row.
 
 #### SIE.5:4.2 - Record the Result
@@ -58,7 +58,7 @@ Frame identity as a source-qualified, grain- and interval-specific disposition f
 | warrant | evidence, counterevidence, counterexamples, uncertainty/confidence, rejected alternatives |
 | authority | scheme-local, master-data, domain, and receiving-decision scopes |
 | disposition | narrowest warranted relation or unresolved result, conditions, source-ID preservation rule |
-| downstream and reopen | mapping/composition/interface/test references and exact change or observation that reopens |
+| downstream and reopen | mapping/composition/interface/test references and the change or observation that reopens the disposition |
 
 #### SIE.5:4.3 - What Changes in Practice
 
@@ -73,7 +73,7 @@ A recall-triage query crosses a wafer identifier from a fabrication source, die 
 | wafer `W-204` and supplier lot `L-88` | not identity; the supplier record asserts that the wafer is a member/output associated with the lot under a bounded process interval. Preserve both identifiers and relation provenance. |
 | die coordinate `(x17,y9)` on wafer `W-204` and device serial `D-771` | same physical die/device at the selected post-singulation grain only when the packaging event and issuer records connect them; accepted with interval and event evidence. |
 | device serial `D-771` and package code `P-55` | unresolved because the package identifier is reused after rework and the event history lacks effectivity. Stop the dependent trace branch. |
-| enterprise material master `M-12` and device serial `D-771` | family/type membership, not individual identity. The master describes a material/product class and authoritative enterprise attributes within its stewardship scope. |
+| enterprise material master `M-12` and device serial `D-771` | The master record describes a product class and carries the enterprise attributes it governs. To classify the particular device, establish that it meets the class criterion. Membership in a catalogue family would require the catalogue's own grouping rule. The master and the device each retain their identity. |
 | GS1 event `E-901` and device `D-771` | event and object are different entities; the event may concern the device. Never merge their identifiers. |
 
 Tests cover reused package identifiers, a die split/merge error, contradictory supplier events, a missing cross-enterprise link, and a later correction. The interface returns supported trace segments and the unresolved `P-55` branch. MDM or the domain steward may later decide a master identity; SIE.5 has not done so.
@@ -124,7 +124,7 @@ Identifier schemes govern how signs identify entities. Cross-source identity is 
 
 ### SIE.5:11 - SoTA-Echoing
 
-The best-known line combines explicit identifier ownership and restrictions, provenance-qualified alternate/specialization relations, and domain traceability practice. The serious default is entity resolution that optimizes a match score or golden record. Its defect is not probabilistic matching itself; it is allowing the score or merged record to erase grain, issuer, interval, and decision authority. SIE.5 uses these contributions to return a bounded disposition for the work that relies on identity.
+The best-known line combines explicit identifier ownership and restrictions, provenance-qualified alternate/specialization relations, and domain traceability practice. The serious default is entity resolution that optimizes a match score or golden record. The problem arises when the score or merged record obscures grain, issuer, interval or decision authority. SIE.5 uses these contributions to return a bounded disposition for the work that relies on identity.
 
 | Source line | Adopt, adapt, or reject | Role and limit |
 | --- | --- | --- |
@@ -132,7 +132,7 @@ The best-known line combines explicit identifier ownership and restrictions, pro
 | [ISO 8000-115:2024](https://www.iso.org/standard/88847.html?browse=tc) | adapt | Contributes identifier owner, use restriction, semantics, and resolution inputs; excludes identifier creation, query/response syntax, and resolution method and does not decide equivalence. |
 | [PROV-O](https://www.w3.org/TR/prov-o/) | adapt | Supplies specialization, alternates, derivation, attribution, revision, and invalidation relations useful to evidence; provenance relations are not blanket identity. |
 | [SEMI traceability standards](https://www.semi.org/en/products-services/standards/traceability) and [GS1 EPCIS 2.0.1](https://ref.gs1.org/standards/epcis/2.0.1/) | adapt | Supply semiconductor and event-based identity/traceability probes; scheme use does not create enterprise master identity or authorize recall. |
-| golden-record or score-only merging | reject as sufficient | It may support candidate generation or a steward decision but cannot erase source identifiers, relation kinds, and authority. |
+| golden-record or score-only merging | reject as sufficient | It may support candidate generation or a steward decision. Preserve source identifiers, relation kinds and authority. |
 
 Reopen when an identifier scheme or issuer rule changes, new event/configuration evidence changes the disposition, the required grain or interval changes, or repeated cases show that the disposition vocabulary cannot preserve an action-changing relation.
 

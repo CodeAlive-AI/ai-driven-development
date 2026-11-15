@@ -31,4 +31,4 @@
 [FIN2]: ../management-dpf-suite/fin/15-fin-2---assess-liquidity-and-funding-needs-by-date.md
 [FIN10]: ../management-dpf-suite/fin/23-fin-10---design-financing-instruments-and-terms.md
 
-The [Architectural Reference](_index.md#financial-domain-modeling-principles-framework-architectural-reference) explains the connected language and the consequences of these sources for its use.
+The [Architectural Reference](_index.md#financial-domain-modeling-principles-framework-architectural-reference) explains how to connect these sources when a financial question needs their different contributions.

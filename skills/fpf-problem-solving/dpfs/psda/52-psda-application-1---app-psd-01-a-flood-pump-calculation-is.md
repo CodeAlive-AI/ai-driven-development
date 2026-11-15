@@ -4,21 +4,21 @@
 
 ### PSDA.Application:1.1 - The question and the people who need the answer
 
-In a constructed 2027 case, a municipal resilience office asks a separate inquiry team to help the East-District Infrastructure Committee before the next flood season. The committee, called the board below, owns the later funding decision. The inquiry team may arrange the agreed investigation and return advice; it does not acquire investment or deployment authority.
+In this constructed 2027 case, a municipal resilience office asks a separate inquiry team to advise the East-District Infrastructure Committee before the next flood season. The committee, called the board below, holds the funding decision. The team may arrange the agreed investigation and return advice. Funding and deployment require the authority for those acts.
 
-The broad difficulty could lead to pump renewal, distributed storage, changed demand management or acceptance of a bounded risk. The current pre-season inquiry concentrates on the district pumping arrangement, including permanent and mobile capacity, maintenance, staffing and safe access. That smaller boundary does not reject storage or demand measures, settle relocation rights or declare long-term watershed effects irrelevant.
+Possible responses include pump renewal, distributed storage, changed demand management and acceptance of a bounded risk. The pre-season inquiry covers permanent and mobile pumping capacity, maintenance, staffing and safe access. Storage, demand measures and permanent relocation remain open beyond this comparison. Include downstream or long-term consequences that bear on the investment now under consideration.
 
-Using [PSDA.11](27-psda-11---bound-the-decision-support-engagement-and-authorit.md), the team first returns:
+With [PSDA.11](27-psda-11---bound-the-decision-support-engagement-and-authorit.md), the team defines its assignment.
 
 > Prepare a pre-season recommendation about the district pumping arrangement for the board's funding consideration. Make affected service concerns, operating conditions, protected limits and material dissent visible. Return a narrower comparison or a statement of the missing premise when the basis cannot support the whole investment question; the board retains the choice.
 
-That is already a useful result. A missing recipient, horizon or authority boundary would stop a stronger engagement claim. Here those conditions are supplied by the example, while the problem formulation remains contested.
+The team now has a recipient, a horizon and a limit on its authority. The competing formulations still matter to the advice.
 
 
 
 ### PSDA.Application:1.2 - Preserve the differences that can change an intervention
 
-Operations and finance are readily available. Residents, emergency responders, maintenance contractors, downstream ecology staff and mobility-constrained people may experience different consequences. [PSDA.12](28-psda-12---recover-participants-concerns-and-affected-systems.md) distinguishes supported consequence paths from possible ones and from unknowns. One residents' association is not presumed to speak for every resident. An evening meeting that some people cannot attend is a participation limit, not evidence that they have no concern.
+The team can readily consult operations and finance. Residents, emergency responders, maintenance contractors, downstream ecology staff and people with limited mobility may bear different consequences. With [PSDA.12](28-psda-12---recover-participants-concerns-and-affected-systems.md), the team traces supported consequences, identifies possible ones and records what it cannot establish. It checks whom the residents’ association represents. People unable to attend an evening meeting may have concerns the inquiry has yet to hear.
 
 The resulting concerns support four different formulations through [PSDA.1](18-psda-1---generate-plural-problem-formulations.md):
 
@@ -29,71 +29,71 @@ The resulting concerns support four different formulations through [PSDA.1](18-p
 | Maintenance fragility | Examine spares, staffing, contracting and coordination; a maintenance or staged direction may address a different cause from pump count. |
 | Unsafe deployment | Examine placement, traffic, worker and downstream conditions; a restraint or differently bounded direction may be necessary. |
 
-The team does not vote for the one “real problem.” [PSDA.2](19-psda-2---set-and-reopen-the-problem-boundary.md) keeps the next flood season, material downstream paths and deployment conditions inside the present inquiry. Long-term redesign and permanent relocation remain outside its present investment return, with their decision-bearing consequences visible. Evidence that no feasible pumping branch serves mobility-constrained residents, or that flood burden transfers beyond the assumed area, would reopen the boundary.
+Using [PSDA.2](19-psda-2---set-and-reopen-the-problem-boundary.md), the team keeps the next flood season, material downstream effects and deployment conditions inside the inquiry. It records how long-term redesign and permanent relocation could affect the investment decision while leaving those choices open. Evidence that no feasible pumping option serves residents with limited mobility, or that flooding shifts outside the assumed area, would reopen the boundary.
 
 
 
 ### PSDA.Application:1.3 - Join inquiry and analysis without making one speak for the other
 
-A capacity calculation, an access/deployment scenario and an attributed concern map answer different questions. Through [PSDA.3](20-psda-3---construct-complementary-situation-and-option-models.md), the team finds that nominal capacity is not yet the deciding uncertainty. The mobile branch has no qualified arrival-time claim when the main road is unavailable; the concern map also distinguishes property protection from reachable assistance.
+The team compares its capacity calculation, deployment scenario and map of attributed concerns using [PSDA.3](20-psda-3---construct-complementary-situation-and-option-models.md). Nominal capacity is still useful. The team cannot establish the mobile pump’s arrival time if the main road is unavailable. The concern map also distinguishes protecting property from providing reachable assistance.
 
-[PSDA.4](21-psda-4---select-problem-structuring-methods-and-combine-them.md) compares capacity analysis alone, a broad open-ended investigation and a bounded combination of attributed inquiry with conditional technical analysis. The bounded combination fits the pre-season return only while attribution can be checked and competent sources can qualify the technical premises. Its join requires the same intervention, service meaning and horizon. Counting how often a concern was mentioned does not produce a numerical value weight.
+Using [PSDA.4](21-psda-4---select-problem-structuring-methods-and-combine-them.md), the team compares capacity analysis alone, an open-ended investigation and a bounded inquiry combining attributed concerns with technical analysis. The combination fits the pre-season remit if the team can check attribution and obtain qualified technical premises. To combine the results, the team checks that they refer to the same intervention, service and horizon. Frequency of mention measures mentions. A numerical preference weight needs its own basis.
 
-Through [PSDA.13](29-psda-13---facilitate-decision-support-inquiry-and-preserve-m.md), a proposed sentence changes from “the pumps can protect the district” to a qualified nominal-capacity claim. The separately consulted group asks how assistance remains reachable when roads fail. That correction neither proves a pump inadequate nor disappears because the model does not represent it. The return preserves the two attributed service concerns and the unqualified access premise.
+Through [PSDA.13](29-psda-13---facilitate-decision-support-inquiry-and-preserve-m.md), the team replaces “the pumps can protect the district” with the nominal capacity its calculation supports. A separately consulted group asks whether assistance will remain reachable when roads fail. The board receives both attributed service concerns and the unresolved access condition. Establishing pump performance or reachable assistance requires evidence of that subject.
 
-The actual inquiry and analysis can overlap. Suppose the proposed timetable freezes the model before a material service correction can reach the analyst. [PSDA.17](33-psda-17---reconcile-simultaneous-problem-structuring-and-dec.md) compares keeping that freeze, stopping every calculation, and allowing bounded analysis while a supported facilitator maintains the correction channel. Under the case's supplied remit and available analyst/facilitator support, the third arrangement preserves independent calculations and permits the affected claim to be revised before it closes. If a correction or its consequence is still unresolved at the deadline, the board receives that limitation.
+Inquiry and analysis can overlap. Suppose the proposed timetable freezes the model before a material service correction can reach the analyst. Using [PSDA.17](33-psda-17---reconcile-simultaneous-problem-structuring-and-dec.md), the team compares keeping that freeze, stopping all calculations and continuing independent calculations while a facilitator keeps the correction channel open. The case supplies a remit, an analyst and facilitator support for the third option. The analyst can revise the affected claim before it closes. At the deadline the board receives any correction or consequence still unresolved.
 
 
 
 ### PSDA.Application:1.4 - Use a numerical slice at its actual scope
 
-[PSDA.5](22-psda-5---generate-decision-alternatives.md) keeps no-new-purchase baseline `N`, fixed pumping `F`, mobile pumping `M` and unfinished staged proposal `S` visible in the present pumping inquiry. S still needs a specified first intervention before its consequences can be compared. Storage and demand-management leads remain outside this narrower set. The supplied numerical slice covers only `F` and `M`, on illustrative pumping-service-loss and incremental-cost scales:
+With [PSDA.5](22-psda-5---generate-decision-alternatives.md), the team retains the no-new-purchase baseline `N`, fixed pumping `F`, mobile pumping `M` and the unfinished staged proposal `S`. To compare S, it still needs a specified first intervention. Storage and demand management are outside this pumping inquiry. The two-option calculation uses the following illustrative losses of pumping service and incremental costs.
 
 | Direction | Loss with normal access | Loss with road loss | Incremental cost |
 | --- | ---: | ---: | ---: |
 | Fixed pumping, F | 2 | 3 | 8 |
 | Mobile pumping, M | 1 | 9 | 5 |
 
-These are model values, not monetary prices, measured municipal performance or a complete public-consequence account. Baseline, staged, assistance, protection and other material branches remain outside this calculation.
+The table gives model values. Baseline and staged options, reachable assistance and the distribution of protection need their own evidence. A monetary or measured-performance interpretation would require a basis for those units and observations.
 
-[PSDA.6](23-psda-6---represent-values-and-trade-offs.md) keeps the declared value scheme separate from a participant's concern. [PSDA.7](24-psda-7---represent-decision-relevant-uncertainty-and-evidenc.md) distinguishes an assumed road-loss probability from an established one. [PSDA.8](25-psda-8---compare-consequences-of-decision-alternatives.md) can compare the stated consequences, and [PSDA.9](26-psda-9---test-robustness-and-sensitivity-of-decision-alterna.md) exposes a possible reversal rather than hiding it.
+The team uses [PSDA.6](23-psda-6---represent-values-and-trade-offs.md) for the stated trade-off and [PSDA.7](24-psda-7---represent-decision-relevant-uncertainty-and-evidenc.md) for the assumed probability of road loss. It compares consequences under [PSDA.8](25-psda-8---compare-consequences-of-decision-alternatives.md) and tests where the order changes with [PSDA.9](26-psda-9---test-robustness-and-sensitivity-of-decision-alterna.md). The declared assumptions support a conditional answer. To attribute the trade-off to a participant, the team would need evidence of that participant’s judgement.
 
-In this deliberately stated weighted-loss model, let `p` be the assumed road-loss probability and `λ` the declared cost weight. The two totals are `2 + p + 8λ` for F and `1 + 8p + 5λ` for M. F is lower only when `7p > 1 + 3λ`. With `λ = 0.5`, `p = 0.2` favors M; `p = 0.6` favors F. Neither probability nor the weight has been established for the board's decision. When the missing contribution is a trade-off from expressed consequence comparisons, use PSDA.6:4.5 and its worked construction in :5.5. When an expected-utility comparison is needed, PSDA.6:4.5.6 elicits lottery comparisons and joins the resulting utility family to a probability model. The weighted-loss slice here is a declared modelling assumption, not a consequence of deterministic value elicitation.
+Let `p` be the assumed probability of road loss and `λ` the declared cost weight. Weighted loss is `2 + p + 8λ` for F and `1 + 8p + 5λ` for M. F has lower loss when `7p > 1 + 3λ`. At `λ = 0.5`, M has lower loss at `p = 0.2`, F at `p = 0.6`, and they tie at `p = 5/14`. For the board’s investment decision, the probability and trade-off remain unestablished. If the question is to derive a trade-off from expressed consequence comparisons, use PSDA.6:4.5 and :5.5. For an expected-utility calculation, use qualified or explicitly stipulated utilities and probabilities. PSDA.6:4.5.6 gives the additional operation for deriving utilities from a holder’s lottery comparisons.
 
-The result therefore identifies a decision-bearing uncertainty and a conditional comparison. It does not prove that a probability obtains, that assistance is reachable, that a protected condition can be traded away, or that F or M should be bought.
+The team can report the conditional ordering and the assumption at which it changes. Reachable assistance and the applicable protected conditions still need their own grounds before anyone could use the comparison to recommend a purchase.
 
 
 
 ### PSDA.Application:1.5 - Return the useful comparison and the whole-question blocker together
 
-Using [PSDA.14](30-psda-14---prepare-and-return-a-decision-support-recommendati.md), the team returns:
+The team uses [PSDA.14](30-psda-14---prepare-and-return-a-decision-support-recommendati.md) to return the following recommendation.
 
-> Retain fixed and mobile pumping for the stated service-loss/cost comparison. Their order reverses under the declared assumptions. A whole-investment recommendation remains blocked by the unqualified access basis, unresolved assistance and protection consequences, and unclosed baseline, staged and other material branches. Keep the separately attributed service concern in the board's return; do not replace it with the calculation.
+> Retain fixed and mobile pumping for the stated comparison of service loss and cost. Their order changes with the declared assumptions. Access when the road fails, reachable assistance, the distribution of protection and the baseline, staged and other material options still limit a whole-investment recommendation. Include the separately attributed service concern in the board’s return.
 
-This completes the recommendation at its stated scope. If further inquiry is being considered, use A.15.9 to compare an obtainable access or consequence result with the useful answer already available, a narrower action, deferral or stopping. Select a request only when its contribution to the board's next decision warrants the whole burden of obtaining and using it within the decision horizon. If selected, the team asks the relevant operations/access or consequence practice for the smallest useful result for this configuration and flood-period window. Each supplying practice qualifies its result through its own Method. A qualified source closing access may leave the value disagreement untouched.
+This answers the question at the stated scope. If further inquiry is under consideration, use A.15.9 to compare an obtainable access or consequence result with proceeding on the available answer, narrowing the action, deferring or stopping. Request the result if its expected contribution before the board’s deadline warrants the work of obtaining and using it. The supplying practice qualifies its result for the named configuration and flood period. Establishing access can leave the value disagreement open.
 
-The board's decision to commission further inquiry would be another result. Funding an access study is not funding a pump, and receiving the recommendation is neither consent nor execution.
+The board could separately commission an access study. Receiving the recommendation, authorizing the study, funding a pump and deploying it are different events.
 
 
 
 ### PSDA.Application:1.6 - A changed premise changes the right claim
 
-The useful follow-up question is what evidence can reach the board before renewed consideration. [PSDA.15](31-psda-15---arrange-decision-follow-up-or-reassess-advice-afte.md) compares an end-of-season review, continuous pump telemetry and a bounded pre-decision evidence arrangement. Telemetry alone cannot settle deployment permission, reachable assistance or the staged alternative. The bounded arrangement is selected in this example only after supplier availability, access, interpretation time and the receiving date are supplied.
+The board needs to know which evidence could reach it before renewed consideration. With [PSDA.15](31-psda-15---arrange-decision-follow-up-or-reassess-advice-afte.md), the team compares an end-of-season review, continuous pump telemetry and a bounded pre-decision inquiry. Deployment permission, reachable assistance and the staged alternative require sources beyond telemetry. The last arrangement is selected here on the supplied availability of those sources, access, interpretation time and receiving date.
 
-In a separate hypothetical continuation, the board authorizes an access study, not a pump purchase. A qualified return establishes that the mobile deployment arrangement assumed in the earlier calculation is unavailable during the required flood-period window. The analyst does not insert a guessed new probability.
+In a separate hypothetical continuation, the board authorizes the access study. The qualified result establishes that the specified mobile deployment is unavailable during the required flood period. This changes the feasibility premise of the earlier comparison.
 
-The fixed-pump performance claim remains usable for its original conditions. The earlier F/M comparison remains an account of its earlier basis, but cannot support the present investment use. The exact mobile-deployment and consequence premises reopen; assistance, staged and other unclosed branches do not vanish. If a newly identified affected group changes the service meaning, the boundary question reopens as well.
+The fixed-pump performance claim still applies to its original conditions. The earlier F/M comparison can explain the earlier advice. For a present investment recommendation, revisit the mobile deployment and its consequences. Assistance, staging and other unresolved questions retain their status. A newly identified affected group could change the service under consideration and require the team to reopen the boundary.
 
-The follow-up has returned an actionable distinction without making the board's choice. Missed observation would instead leave a scoped gap; silence would not mean the premise remained valid.
+The follow-up identifies the consequence for the board’s decision. If the planned observation had been missed, the team could report what remained unknown about access during the flood window.
 
 
 
 ### PSDA.Application:1.7 - Continue the professional practice only when that is the question
 
-The same episode can expose a different need: another inquiry team may copy a recommendation's format while losing its limits. That is not another pumping calculation. [PSDA.16](32-psda-16---decide-whether-and-how-to-change-problem-structuri.md) concerns a justified repertoire change, and [PSDA.18](34-psda-18---deliberately-continue-and-change-problem-structuri.md) concerns continuation across practitioners.
+Another inquiry team might copy the recommendation’s format and lose its limits. Use [PSDA.16](32-psda-16---decide-whether-and-how-to-change-problem-structuri.md) to examine whether its existing methods fit that work and what change, if any, is warranted. Use [PSDA.18](34-psda-18---deliberately-continue-and-change-problem-structuri.md) to examine how the practice continues across teams.
 
-The fuller constructed PSDA.18 case supplies separate East and West teams, their relevant service assignments, the inquiry and teaching Methods, and distinct March–April occurrences. West's receipt of a permitted packet initially produces an overstrong investment recommendation. Under the case's teaching remit and available support, a guided qualification exercise is selected for that receiving group while the compact route remains for experienced practitioners.
+The constructed PSDA.18 case specifies the service assignments of the East and West teams, the inquiry and teaching methods, and separate March and April events. West receives a permitted packet and drafts an investment recommendation stronger than the packet supports. The teaching remit and available help support a guided qualification exercise for West. Experienced practitioners can continue with the compact route.
 
-In the exercise, West distinguishes the usable F/M calculation from the unclosed staged and assistance questions. One later independently observed West inquiry retains a corrected concern and the comparison's limits. This supports that bounded receiving use, not profession-wide adoption, long-term retention, a causal teaching effect or an improved flood outcome. The separate late-correction Method proposal remains a proposal; the teaching case does not deploy it.
+During the exercise, West distinguishes the usable F/M calculation from the unresolved staging and assistance questions. An independent observer later sees West carry a corrected concern and the limits of the comparison into one inquiry. This establishes that later use under its observed conditions. Long-term retention, profession-wide adoption, teaching effectiveness and flood outcomes each need evidence at the scope claimed. The late-correction method remains a proposal.
 
-These practice questions open only because the particular interpretation or working arrangement matters. The immediate practical gain remains simple: the board receives the useful calculation without losing the people, alternatives and conditions that prevent it from being the whole answer.
+The board can use the calculation now, with an account of the affected groups, their service requirements, the other options and the operating conditions the calculation omits. How another team uses the advice is a separate practice question when that use matters.

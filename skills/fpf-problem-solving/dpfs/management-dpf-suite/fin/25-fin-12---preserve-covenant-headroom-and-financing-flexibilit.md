@@ -18,14 +18,14 @@ A forecast may pass an internally defined ratio while failing the agreement's de
 
 ### FIN.12:3 - Forces
 
-Preserve access and flexibility while avoiding unnecessary idle capacity or expensive amendments. Act early enough for a remedy to be available without manufacturing certainty about another party's consent.
+Preserve access and flexibility while avoiding unnecessary idle capacity or expensive amendments. Act early enough for a remedy to be available and account for any consent still needed.
 
 ### FIN.12:4 - Solution
 
 1. Recover the applicable agreement, borrower, tested quantities, accounting definitions, exclusions, currency conversion, test dates and reporting or certification requirements. Obtain qualified interpretation for an ambiguity that affects reliance.
 2. Calculate current and projected tests using those definitions. State headroom in an interpretable form: distance to a ratio threshold, amount of additional debt permitted, or deterioration in the denominator before breach. Inspect both numerator and denominator behavior.
 3. Connect the tests to the cash plan, proposed borrowing, acquisitions, distributions and collateral use. Test the adverse states and timing that can remove access before the nominal maturity. Where ratings or collateral valuations affect terms or access, examine those effects separately; passing the covenant does not by itself preserve that access.
-4. Recover the actual consequences, notice requirements and available cure rights or consent procedures. Do not assume that a breach universally accelerates debt or that every agreement permits an equity cure.
+4. Recover the consequences under the applicable terms, notice requirements and available cure rights or consent procedures. Do not assume that a breach universally accelerates debt or that every agreement permits an equity cure.
 5. Compare obtainable actions: modify the operating or funding plan, repay or refinance, preserve collateral, request waiver or amendment, or invoke an available cure. Include cost, delay, restrictions and the risk of non-consent.
 6. Return the action or conditional advice with its latest useful date. A waiver under discussion is an alternative dependent on consent. If ordinary responses cannot restore a viable financing path, use FIN.22.
 
@@ -34,7 +34,7 @@ Preserve access and flexibility while avoiding unnecessary idle capacity or expe
 #### FIN.12:4.1 - Read the condition as an operative rule
 
 
-A covenant is a condition of an actual arrangement, with a defined subject, calculation, test time and consequence. Recover the applicable signed terms, amendments and relevant consents. Identify who must satisfy it and which entities, assets or obligations enter the calculation. FDM.3 supplies the event logic, while FDM.1–FDM.2 supply positions and group boundaries. A public description of a typical covenant cannot establish the corporation's actual obligation.
+A covenant is a condition of a financing agreement, with a defined subject, calculation, test time and consequence. Recover the applicable signed terms, amendments and relevant consents. Identify who must satisfy it and which entities, assets or obligations enter the calculation. FDM.3 supplies the event logic, while FDM.1–FDM.2 supply positions and group boundaries. A public description of a typical covenant cannot establish the corporation's obligation.
 
 Translate the rule into the quantities needed for its test. Contractual debt may include or exclude leases, guarantees, subordinated amounts or cash netting. Contractual earnings may use a trailing period, permitted adjustments, caps or a prescribed acquisition treatment. Recover those definitions and reconcile them to the accounts; do not substitute a familiar ratio label. If a term is disputed, retain the alternative interpretations or obtain the responsible specialist's answer before relying on one.
 
@@ -62,7 +62,7 @@ Project headroom across the affected horizon and relevant states. Explain the dr
 
 Compare commitment room, borrowing-base room, covenant room, collateral or guarantee availability and dated service capacity. The binding constraint can change between states or dates. Where each limit is a fixed bound on the same incremental draw under the scenario, the smallest permitted amount governs. Where the draw changes a denominator, rate or other limit, solve the coupled conditions rather than take the minimum of stale numbers.
 
-The same receivable can support a borrowing base, generate a forecast receipt and become doubtful under a customer failure. Update all affected uses together. A financing plan that retains full collateral eligibility while removing its cash collection needs an explicit basis for that difference. Likewise, assigning one asset as security for two facilities does not create two free collateral pools; recover the actual priority and sharing arrangement.
+The same receivable can support a borrowing base, generate a forecast receipt and become doubtful under a customer failure. Update all affected uses together. A financing plan that retains full collateral eligibility while removing its cash collection needs an explicit basis for that difference. Likewise, assigning one asset as security for two facilities does not create two free collateral pools; establish the priority and sharing arrangement that applies.
 
 Treat flexibility as the available actions after these restrictions, not as a favorable current ratio. A company may have numerical headroom but lack authority to pledge the needed asset or time to satisfy a draw condition. The useful result says which actions remain available, their extent and deadline, and which adverse event removes them. FIN.10 uses that result to compare instruments; FIN.11 uses it to compare financing policies.
 
@@ -71,11 +71,11 @@ Treat flexibility as the available actions after these restrictions, not as a fa
 #### FIN.12:4.4 - Compare remedies before the last usable date
 
 
-Construct remedies from the rule and the cause of the problem. Possible moves include debt repayment, genuinely new equity, a permitted cure, changed timing or size of an action, an agreed amendment or waiver, a refinancing or an operating improvement that actually changes the relevant measure. Determine who can perform or consent to each move, its lead time, cost and effects on other conditions.
+Construct remedies from the rule and the cause of the problem. Possible moves include debt repayment, genuinely new equity, a permitted cure, changed timing or size of an action, an agreed amendment or waiver, a refinancing or an operating improvement that changes the relevant measure. Determine who can perform or consent to each move, its lead time, cost and effects on other conditions.
 
 A cash repayment can improve leverage while consuming the reserve needed for wages. New equity can improve liquidity and debt capacity but change ownership and require an investor. A contractual equity cure may alter the permitted test calculation in a specified way; it does not automatically increase operating earnings or provide unrestricted cash. An amendment may remove a covenant failure while leaving an unaffordable maturity. Return each remedy to the accounts, cash plan and other claim terms.
 
-An improvement forecast must occur in time and qualify under the definition. A planned margin increase after a measurement period closes cannot change that period's actual earnings. A signed waiver must cover the relevant breach, period, entities and consequences; do not treat a request, an earlier waiver or silence as a new permission. Keep the specialist's actual interpretation when the legal effect is consequential.
+A forecast improvement affects the test only if the improvement occurs in time and qualifies under the agreement’s definition. A margin increase after the measurement period cannot change its earnings. Establish whether any existing waiver covers the breach, period, entities and consequences in question. A request for a new waiver still awaits a decision under the applicable terms. If a consequential question of interpretation remains, use a qualified specialist’s interpretation that covers it.
 
 Compare the supported remedy with its alternative, including postponing or shrinking the proposed action. Prefer a response that repairs the cause at acceptable cost without creating a more serious cash or operating problem. If several creditors or continuing unviability make the local remedy inadequate, FIN.22 supplies the wider route comparison. FIN.12 can return an urgent unresolved consent or timing condition.
 
@@ -84,7 +84,7 @@ Compare the supported remedy with its alternative, including postponing or shrin
 #### FIN.12:4.5 - Return a usable limit and the event that changes it
 
 
-Give the decision maker the defined test, relevant headroom, proposed action's effect, binding dates and actual remedies. Show conditional results where a measurement or interpretation remains unresolved. Include the next informative observation or commitment needed to rely on the result. This can fit beside the existing forecast.
+Give the decision maker the defined test, relevant headroom, proposed action's effect, binding dates and available remedies. Show conditional results where a measurement or interpretation remains unresolved. Identify any further observation or commitment needed to rely on the result. This can fit beside the existing forecast.
 
 After a new draw, payment, amendment or operating observation, update the affected conditions and remaining actions. Reuse the unchanged parts. Keep forecast compliance, certified or otherwise established compliance, permission for a new action and actual funding distinguishable throughout.
 
@@ -101,7 +101,7 @@ Take the adverse account in FIN.2: week-1 receipts are delayed, the borrowing ba
 
 If the qualifying earnings measure instead becomes 25 before the draw, this test permits total debt only 75 and hence an additional draw of 5. That limit is tighter than the borrowing base of 20. After the supplier deferral, week-1 cash before drawing is −10; drawing 5 leaves −5, or 15 below the selected reserve. The earlier liquidity remedy is no longer sufficient.
 
-Actually settled new equity of 15 before week-1 payments, with the draw of 5 and the same supplier deferral, would restore cash to 10 under the supplied terms. An unaccepted equity proposal would not. Recompute later balances, interest and repayment in FIN.2 before relying on the whole route. Alternatively an obtainable covenant amendment could permit the larger draw, but its fee and every remaining condition would need to return to that account.
+New equity of 15 settled before week-1 payments, with the draw of 5 and the same supplier deferral, would restore cash to 10 under the supplied terms. An unaccepted equity proposal would not. Recompute later balances, interest and repayment in FIN.2 before relying on the whole route. Alternatively an obtainable covenant amendment could permit the larger draw, but its fee and every remaining condition would need to return to that account.
 
 The example's earnings definition and draw test are stipulated contract terms. If the rule is instead tested at quarter end or grants a particular cure, model those events explicitly; do not import this draw prohibition by analogy.
 
@@ -116,7 +116,7 @@ An attainable offer provides net sale proceeds of 20 and removes qualifying earn
 
 On these definitions, the disposal requires total debt repayment of 70 − 3 × 15 = 25. The buyer's 20 is short by 5. Paying that difference from existing cash makes the ratio pass but leaves cash 5, below the corporation's required reserve of 10. The cash sweep and extra repayment must therefore be considered together.
 
-If an investor actually settles equity of 5 before closing, the company can use the sale proceeds of 20 and that 5 to repay 25. Debt becomes 45, earnings 15 and cash remains 10; the ratio is exactly 3. Account for the investor's rights and future operating/service consequences in the financing and cash comparison. A new included loan of 5 followed by repayment of 5 of old debt leaves total debt 50 and does not repair this test.
+If an investor settles equity of 5 before closing, the company can use the sale proceeds of 20 and that 5 to repay 25. Debt becomes 45, earnings 15 and cash remains 10; the ratio is exactly 3. Account for the investor's rights and future operating/service consequences in the financing and cash comparison. A new included loan of 5 followed by repayment of 5 of old debt leaves total debt 50 and does not repair this test.
 
 A net sale price of at least 25 could instead cover the required repayment without consuming the reserve, if such an offer is obtainable and all other terms remain the same. Until a sufficient remedy or amendment is effective, the original 20 offer is not a permitted disposal under the stipulated rule. Whether the disposal creates value is FIN.9's additional question; a repaired covenant calculation does not answer it.
 
@@ -126,7 +126,7 @@ A single ratio can conceal minimum liquidity, collateral or reporting conditions
 
 ### FIN.12:7 - Conformance Checklist
 
-Are definitions and dates taken from the applicable terms? Can the current and changed headroom be replayed? Are all action-changing restrictions and actual remedy conditions included? Does the plan distinguish requested consent from obtained consent?
+Are definitions and dates taken from the applicable terms? Can the current and changed headroom be replayed? Are all restrictions and remedy conditions that can change the action included? Does the plan distinguish requested consent from obtained consent?
 
 ### FIN.12:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -138,7 +138,7 @@ The result identifies the move and time needed to preserve financing access or m
 
 ### FIN.12:10 - Architectural Rationale
 
-Headroom has meaning relative to an actual test and a changed plan. Retaining the contract's event and timing conditions makes it a usable financing result rather than an isolated dashboard number.
+Headroom depends on the test in the agreement and the proposed change. The event and timing conditions determine which amounts fit that test and when. Other financing or consent conditions may also limit the action.
 
 ### FIN.12:11 - SoTA-Echoing
 

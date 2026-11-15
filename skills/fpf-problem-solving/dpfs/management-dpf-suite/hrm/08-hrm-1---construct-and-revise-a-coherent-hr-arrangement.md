@@ -5,9 +5,9 @@
 
 ### HRM.1:1 - Problem frame
 
-**Use this when** a workforce proposal or existing practice changes conditions on which another personnel practice relies: a new job changes selection and pay, individual targets obstruct mentoring, future work depends on people becoming ready in time, or a service succeeds through hours that require protective action. The primary object is the combination of work, participation terms and HR practices for the affected population. Begin with the actual proposed contribution or changed condition and the current commitments. The first useful result is a compatible arrangement or an exact incompatibility returned to its owner.
+**Use this when** a workforce proposal or existing practice changes conditions on which another personnel practice relies: a new job changes selection and pay, individual targets obstruct mentoring, future work depends on people becoming ready in time, or a service succeeds through hours that require protective action. The primary object is the combination of work, participation terms and HR practices for the affected population. Begin with the actual proposed contribution or changed condition and the current commitments. The first useful result is a compatible arrangement or a specific incompatibility returned to its owner.
 
-An ordinary case with adequate existing grounds can use its established instruction directly. Do not conduct a complete HR audit to correct a known payroll error.
+For an ordinary case with adequate grounds, you can use the established instruction. For example, correct a known payroll error under the applicable rule.
 
 ### HRM.1:2 - Problem
 
@@ -26,13 +26,13 @@ Individually plausible decisions can jointly promise impossible work, exclude ne
 
 #### HRM.1:4.1 - Recover the work and the actual relation
 
-Identify the contribution, its recipient and conditions: what work is needed, when, with what tools, assistance and uncertainty, and who may revise that need. Recover the affected participation relations, present terms, commitments and material alternatives. Ask affected people what they actually do and what the proposed change would demand. A job title and nominal hours can conceal coordination, interruption, emotional demands or helping work.
+Identify the contribution, its recipient and conditions: what work is needed, when, with what tools, assistance and uncertainty, and who may revise that need. Recover the affected participation relations, present terms, commitments and material alternatives. Ask affected people what work they do and what the proposed change would demand. A job title and nominal hours can conceal coordination, interruption, emotional demands or helping work.
 
 Determine which work is newly needed, remains necessary, has disappeared or can be obtained differently. Strategy can propose a new opportunity after success; Operations supplies current demand and promises; OCE supplies organization and obtaining alternatives. Do not freeze an old task list and classify every difference as a human deficit. Keep effective commitments until their valid change: an eliminated task does not automatically eliminate a wage obligation.
 
 #### HRM.1:4.2 - Obtain the conditions that constrain feasible participation
 
-Recover the applicable employment or other participation rules, agreements, decision powers, consultation requirements and data-use conditions. Where their interpretation is consequential and unresolved, obtain a qualified answer for the actual relation and jurisdiction. Ask what act is permitted or required, by whom and under what conditions. A generic policy or an agent's confident explanation cannot supply missing authority.
+Recover the applicable employment or other participation rules, agreements, decision powers, consultation requirements and data-use conditions. Where their interpretation is consequential and unresolved, obtain a qualified answer for that relation and jurisdiction. Ask what act is permitted or required, by whom and under what conditions. A generic policy or an agent's confident explanation cannot supply missing authority.
 
 For a credible health or safety question, obtain competent assessment of the actual work, proposed change and relevant participant information. Request the conclusion needed for the work decision: conditions or exposure assessed, required protection or functional constraints, scope, uncertainty and reconsideration condition. The professional supplier chooses and qualifies its assessment. HR does not derive a diagnosis from performance, attendance or a personal agent's notes.
 
@@ -40,7 +40,7 @@ Prevention does not require a complaint or a missed target. Changed pace, hours 
 
 #### HRM.1:4.3 - Construct complete alternatives around the unresolved question
 
-Develop plausible combinations of changed work, internal movement, recruitment, external provision, learning and agent performance. Use OCE.8 when the whole obtaining choice is live. For each serious option, state the work people would actually undertake and the corresponding terms: entry and assessment, workload and time, opportunity to develop, reward, voice, protection, support and likely transitions. These are questions to resolve where material, not a compulsory form for every case.
+Develop plausible combinations of changed work, internal movement, recruitment, external provision, learning and agent performance. Use OCE.8 when the whole obtaining choice is live. For each serious option, state the work people would undertake and the terms that matter to it: entry and assessment, workload and time, opportunity to develop, reward, voice, protection, support and likely transitions.
 
 A proposed recruitment campaign, for example, needs a real offer and qualifying work, not merely a target headcount. An internal-development option needs attainable practice and later use. An external-provider option may reduce employee learning needs while creating supplier supervision or integration work. An agent option can change both job demands and the number of participants. Compare complete contributions, including the costs of obtaining, operating and revising them.
 
@@ -58,7 +58,7 @@ When an option depends on a changed workforce, project the contributions it coul
 
 **Retain uncertainty that can change the choice.** Keep dated commitments distinguishable from estimates. Use conditional scenarios or ranges when the evidence does not support probabilities; use a qualified forecasting model when its extra precision can change the decision. Vary consequential entry, exit or readiness assumptions together where they share a cause. For example, the departure of the only mentor can remove present delivery and delay a learner's future contribution. A population estimate of half a specialist cannot establish coverage of a particular shift. State the observation that would require revising the projection and obtain further evidence only where it can change the next move.
 
-**Resolve the gaps throughout the change.** Give OPS.10 the demand and usable provision for each period to test capacity, timing and coverage under the relevant work conditions. Match time to the work and period in which it can be used. Credit earlier production toward later demand only where the work permits it. An adequate end state can coexist with an earlier shortfall. Return each consequential gap to the obtaining choice: change the start or scope of work, obtain temporary coverage, revise the learning arrangement, or choose another complete option. Work back from the needed contribution through its acquisition and readiness time to the latest useful start, allowing for the uncertainty on which the decision relies. Recalculate the affected periods after changing an option. Give the person responsible for choosing an option the feasible arrangement, bounded conditional proposal or unresolved gap. Use :4.5 for the actual commitment; the projection itself supplies neither a participant's agreement nor actual performance.
+**Resolve the gaps throughout the change.** Give OPS.10 the demand and usable provision for each period to test capacity, timing and coverage under the relevant work conditions. Match time to the work and period in which it can be used. Credit earlier production toward later demand only where the work permits it. An adequate end state can coexist with an earlier shortfall. Return each consequential gap to the obtaining choice: change the start or scope of work, obtain temporary coverage, revise the learning arrangement, or choose another complete option. Work back from the needed contribution through its acquisition and readiness time to the latest useful start, allowing for the uncertainty on which the decision relies. Recalculate the affected periods after changing an option. Give whoever is responsible for the choice the feasible arrangement, bounded conditional proposal or unresolved gap. Use :4.5 for the actual commitment; the projection itself supplies neither a participant's agreement nor actual performance.
 
 #### HRM.1:4.4 - Examine the dependencies that can defeat an option
 
@@ -74,11 +74,11 @@ Use the relevant HR Method to substantiate each unresolved professional result. 
 | Voice → premises and decisions | Can participants supply information and use the required influence or challenge route before the relevant decision becomes irreversible? |
 | Personnel data → further use | Is the new use justified and permitted? A shared database does not authorize use of private development or health material for selection. |
 
-Resolve a defect at its actual owner. Invalid selection evidence needs assessment work; an unsupported service promise needs an operating decision; an uncertain health premise needs the qualified supplier. Negotiation can settle discretionary terms. It cannot manufacture a missing clinical conclusion or waive a binding protection merely by obtaining agreement.
+Take the problem to whoever can resolve it. Invalid selection evidence needs assessment work; an unsupported service promise needs an operating decision; an uncertain health premise needs the qualified supplier. Negotiation can settle discretionary terms. It cannot manufacture a missing clinical conclusion or waive a binding protection merely by obtaining agreement.
 
 #### HRM.1:4.5 - Choose a feasible combination and make its commitments effective
 
-Compare the remaining options using the relevant contribution, participant outcomes, costs, uncertainty and reversibility. State material conflicts instead of claiming automatic mutual benefit. An employee can reasonably prefer an outside trajectory; the employer can decline a discretionary proposal it cannot supply. A supported bounded arrangement, refusal, formal determination or exit may follow.
+Compare the remaining options using the relevant contribution, participant outcomes, costs, uncertainty and reversibility. State any material conflicts among proposed work, terms and participant interests. An employee can reasonably prefer an outside trajectory; the employer can decline a discretionary proposal it cannot supply. A supported bounded arrangement, refusal, formal determination or exit may follow.
 
 Use HRM.5 for particular continuation or transition arrangements and HRM.4 for required consultation, negotiation or contested decisions. Make clear which proposal requires agreement, which requires an authorized determination, and which follows a binding obligation. Obtain the real act and its effective date through the applicable process and ADM. Ensure that OCE and OPS supply the work, access, coverage and conditions on which that act relies. Communicate the resulting terms and how a problem can be raised.
 
@@ -131,7 +131,7 @@ Management records can omit unpaid and invisible work, and silence can reflect a
 ### HRM.1:7 - Conformance Checklist
 
 - Does the chosen option specify actual work and attainable participation under current commitments?
-- Are the consequential assessment, reward, voice and protection grounds adequate for their particular uses?
+- Are the consequential assessment, reward, voice and protection grounds adequate for their uses?
 - Has the construction resolved incompatible time, provision or terms rather than documenting them separately?
 - Where future provision matters, does each option account for participation, readiness and obtaining effort in every consequential period?
 - Can the authorized acts and promised work become effective together?
@@ -153,7 +153,7 @@ The governed object is the HR configuration across practices and participants. G
 
 ### HRM.1:11 - SoTA-Echoing
 
-Boxall and Purcell's plural account connects work organization, employment practices and differing interests; this Method adopts that field basis and develops an explicit construction and return. The bounded Li and colleagues study cautions against assuming that an HR bundle benefits every dimension of wellbeing. Its cross-sectional 2009 data do not estimate this Method's effect. WHO's distinction between work-condition prevention and individual support informs the receiving protection branch; the complete clinical or safety contribution remains external. At comparable scope, a qualified HR service can supply the same needed configuration. Use it when its result and joins are sufficient; this Method adds a reusable explanation, not presumed superiority.
+Boxall and Purcell's plural account connects work organization, employment practices and differing interests; this Method adopts that field basis and develops an explicit construction and return. The bounded Li and colleagues study cautions against assuming that an HR bundle benefits every dimension of wellbeing. Its cross-sectional 2009 data do not estimate this Method's effect. WHO's distinction between work-condition prevention and individual support informs the receiving protection branch; the complete clinical or safety contribution remains external. At comparable scope, a qualified HR service can supply the same needed configuration. Use it when its result and joins are sufficient; this Method provides a reusable explanation.
 
 APSC's workforce-planning guidance and HRSA's supply model inform the treatment of future participation and time. Section 4.3.1 connects those grounds with qualified performance, actual participation terms and the effort of obtaining new capability. The connection is developed in this framework, and the example uses hypothetical figures. HRM.Source:1 identifies the selected treatments and their limits.
 

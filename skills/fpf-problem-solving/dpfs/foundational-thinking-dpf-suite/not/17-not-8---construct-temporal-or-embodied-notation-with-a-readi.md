@@ -12,7 +12,7 @@ Start with the distinction the work needs: an onset within a beat, two simultane
 
 The result is a temporal or embodied expression with a usable interpretation and reading procedure. It states what a prepared reader can obtain, what remains for performance or control, and how a consequential change affects the reading.
 
-This is notational engineering. Rhythm, movement, laboratory signals and interaction traces supply different subjects; their subject methods determine which timing or motion relations matter. The notation designer needs that subject meaning and the relevant capabilities of the intended reader. NOT.1–.3 supply the general design, formation and interpretation methods.
+Rhythm, movement, laboratory signals and interaction traces supply different subjects; their subject methods determine which timing or motion relations matter. The notation designer needs that subject meaning and the relevant capabilities of the intended reader. NOT.1–.3 supply the general design, formation and interpretation methods.
 
 Reuse a familiar adequate convention when it already supports the operation. An ordinary static expression may suffice when no temporal or embodied distinction matters.
 
@@ -31,7 +31,7 @@ The carrier's behavior also matters. Playing a recording faster changes its audi
 | Transient expression and continued use | A reader may need an earlier sign after it has ceased to be perceptible. |
 | Relative and absolute reference | A beat, body direction and clock time support different comparisons. |
 | Recognizable sign and interpretable relation | A clear tone or gesture can still have uncertain scope, participant or timing. |
-| Compact direction and adequate preparation | A short score can rely on skills or an interpreter that must actually be available. |
+| Compact direction and adequate preparation | A short score can rely on skills or an interpreter that must be available. |
 | Replay and live enactment | Pausing or slowing can aid analysis while changing the physical process or coordination. |
 
 ### NOT.8:4 - Solution
@@ -46,7 +46,7 @@ Say whether the expression describes an observed occurrence, proposes a future p
 
 Separate the sign's physical properties from the represented properties. A sustained tone might represent duration by its length, or merely identify an event kind. A hand position might be an action being performed, a sign for another movement, or a reference against which a different action is timed. Use the convention that supports the selected work.
 
-State the reader's available perception and operations. Distinguishing two timbres, maintaining a pulse, recognizing a body part and following a formal event code are different prerequisites. A computational reader needs a suitable input representation and interpretation, not an assumed human sensory skill.
+State the reader's available perception and operations. Distinguishing two timbres, maintaining a pulse, recognizing a body part and following a formal event code are different prerequisites. For a computational reader, identify the input representation and interpretation available to it.
 
 #### NOT.8:4.2 - Establish the references that locate an occurrence
 
@@ -68,7 +68,7 @@ Provide a way to distinguish a specified absence from a missing observation. A r
 
 Inspect discriminability under the intended conditions: speed, overlap, background sound, viewing direction or available sensors. A symbol family that is distinct on a page can become confusable when sounded or gestured. Change the encoding or access arrangement if the needed contrast disappears.
 
-Choose detail for the receiving use. A movement score can constrain endpoints while leaving the route open; a different use can require the route, timing or body-part coordination. Keep an omitted choice with the performer or construction method that is to supply it, rather than silently giving the notation credit for it.
+Choose detail for the receiving use. A movement score can constrain endpoints while leaving the route open; a different use can require the route, timing or body-part coordination. If carrying out the work requires a choice that the score leaves open, identify the performer or construction method that supplies it.
 
 #### NOT.8:4.4 - Construct the reader's route through the expression
 
@@ -78,7 +78,7 @@ For a transient carrier, choose how earlier parts remain usable: replay, a persi
 
 If the task is performance, connect the decoded instruction to the performer's available method. A person may already know how to realize a gesture or syllable. A machine may need a parser, state representation, control algorithm and physical realization. CMP.12 constructs an effective interpreter; B.5.MPC connects the abstract construction to preparation, execution and interpreted observation.
 
-A demonstration can be part of the supplied interpretation. Identify what it teaches and keep it available if the text relies on it. If another prepared reader can use the expression without that demonstration, the reading condition is different; assess the contribution at the condition actually offered.
+A demonstration can be part of the supplied interpretation. Identify what it teaches and keep it available if the text relies on it. If another prepared reader can use the expression without that demonstration, the reading condition is different; assess the contribution at the condition offered.
 
 #### NOT.8:4.5 - Challenge the relation with a meaningful change
 
@@ -116,7 +116,7 @@ At a beat duration of one second, the first onsets occur at 0 and 0.5 seconds; t
 
 If the sound between two known positions is unrecorded, do not replace that gap by a written dot claiming no onset. Preserve the missing-observation status. If the next operation asks how long notes are held, add the needed duration convention: the onset grid alone does not answer it.
 
-Maintaining the beat and coordinating speech are available skills or contributions to be learned.
+The grid gives the onset positions. Voicing the pattern requires maintaining the beat and coordinating speech. A performer who needs to acquire either skill can practise it.
 
 #### NOT.8:5.2 - Read a movement relative to a changing body frame
 
@@ -130,7 +130,7 @@ The score leaves the speed and path within each displacement unspecified. It can
 
 ### NOT.8:6 - Bias-Annotation
 
-Expert fluency can conceal the reading procedure. A musician or dancer may supply pulse, segmentation and bodily realization without noticing those contributions. Recover them before expecting a newcomer or computational agent to use the same expression.
+Expert fluency can conceal the reading procedure. A musician or dancer may supply pulse, segmentation and bodily realization without noticing those contributions. Recover them before expecting another reader to use the same expression.
 
 A familiar carrier can also invite the wrong relation. Spoken order can be mistaken for event order, silence for a rest and a facing gesture for a room-fixed direction. Use a consequential contrast to determine which reference the notation supplies.
 
@@ -165,18 +165,18 @@ The method exposes preparation and access costs that a fluent practitioner might
 
 ### NOT.8:10 - Architectural Rationale
 
-Temporal or embodied expression adds reference and availability problems to ordinary formation and interpretation. What a sign means can depend on phase, orientation or the reader's retained state. These conditions belong in the operative convention rather than an assumed resemblance between mark and action.
+Temporal or embodied expression adds reference and availability problems to ordinary formation and interpretation. What a sign means can depend on phase, orientation or the reader's retained state. The convention specifies which phase, orientation or retained state to use. Its value for a given reading can come from the pulse, starting pose or earlier signs.
 
 Segmentation serves the receiving operation. An action can be described by its intended result, selected intermediate constraints or a detailed movement account. Those descriptions require different contributions from a performer. Keeping that distinction permits transfer between people and machines while exposing what must be reconstructed.
 
-Reading and enactment are connected methods. Their separation makes the connection constructive: decode what the score requires, determine what the performer must supply, obtain that method and interpret the resulting action. This retains the relation between mathematical structure, algorithms and physical realization.
+Reading and enactment are connected methods. To connect them, decode what the score requires, determine what the performer must supply, obtain that method and interpret the resulting action. This retains the relation between mathematical structure, algorithms and physical realization.
 
 ### NOT.8:11 - SoTA-Echoing
 
 | Source and contribution | Adoption and limit |
 | --- | --- |
-| Nelson, [Solkattu Manual](https://www.weslpress.org/9780819574480/solkattu-manual/), Introduction, pp. 2–3 | The account connects spoken patterns with recurring hand references and distinguishes spoken from played realization. It informs :4.2 and :4.4. The book explicitly resists a simple one-syllable/one-stroke identification; the method keeps the actual convention and training contribution. |
-| [Takadimi Basics](https://www.takadimi.net/basics.html) and [Teaching with Takadimi](https://www.takadimi.net/teachingWithTakadimi.html) | The position-based syllable convention supplies :5.1; coordinated pulse and voice illustrate a reading procedure. This is a particular convention, distinct from Nelson's treatment, not a general theory or an empirical guarantee of instruction quality. |
+| Nelson, [Solkattu Manual](https://www.weslpress.org/9780819574480/solkattu-manual/), Introduction, pp. 2–3 | The account connects spoken patterns with recurring hand references and distinguishes spoken from played realization. It informs :4.2 and :4.4. The book explicitly resists a simple one-syllable/one-stroke identification; the method keeps the convention and training on which performance depends. |
+| [Takadimi Basics](https://www.takadimi.net/basics.html) and [Teaching with Takadimi](https://www.takadimi.net/teachingWithTakadimi.html) | The position-based syllable convention supplies :5.1; coordinated pulse and voice illustrate a reading procedure. Takadimi and Nelson use different conventions. Neither the example nor the stated convention establishes how well the instruction works. |
 | Salaris, Abe and Laumond, [A Worked-Out Experience in Programming Humanoid Robots via the Kinetography Laban](https://doi.org/10.1007/978-3-319-25739-6_16), 2016, §1 and pp. 346–348 | The worked connection distinguishes a score's action constraints from detailed human or robot motion and exposes the control-space contribution. Adapt that distinction in :4.3–.5. The earlier robotic demonstration supplies a constructive anchor, not a claim that any score automatically yields feasible robot motion. |
 | Guerreiro, Amaral and Goulão, [Unleashing the Power of Sound](https://arxiv.org/abs/2304.08654), 2023, §§III and VI.D–E | Adopt the question of audible discrimination and context into :4.3. The UML sound study measures bounded preferences and perceived relevance, with limitations in baseline choice, sample and setting; it does not establish general comprehension, multi-representation integration or universal sound meanings. |
 

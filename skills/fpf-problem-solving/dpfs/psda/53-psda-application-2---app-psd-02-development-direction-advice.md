@@ -4,102 +4,102 @@
 
 ### PSDA.Application:2.1 - Two useful entries, not one compulsory advising process
 
-The [development-direction profile](37-development-direction-advising.md) connects qualified opportunity, holder, comparison and recommendation results. It is useful when a distinct recommending performer must help a named recipient. The developing holder, paying sponsor, recipient and chooser can differ. Their actual relationship determines what may be shared, relied on or decided.
+Use the [development-direction profile](37-development-direction-advising.md) when one party must recommend a development direction to another. Identify the developing person or system and the recipient of the advice. Where a sponsor or later chooser matters, establish the relevant role and authority. Use the actual relationships and permissions to determine what may be shared, relied on or decided.
 
-There is also an earlier independent entry. A person or team can use [Construct a Bounded Development Opportunity (FPF C.40.OCN)](../../sections/09-part-c---kernel-extension-specifications/108-c-40-ocn---construct-a-bounded-opportunity.md) to explore useful future work without asking anyone for a recommendation. Its account can end at a conditional opportunity and a discriminating question. Calling that result “advice” would introduce a different performer/recipient relation rather than merely change its title.
+Use [Construct a Bounded Development Opportunity (FPF C.40.OCN)](../../sections/09-part-c---kernel-extension-specifications/108-c-40-ocn---construct-a-bounded-opportunity.md) to explore worthwhile future work for your own inquiry. A conditional opportunity and the question that would distinguish its uses can complete that task. Advice becomes a separate result when a performer makes a recommendation for another recipient.
 
-When advice is the question, [PSDA.11](27-psda-11---bound-the-decision-support-engagement-and-authorit.md) recovers the engagement and authority boundary. Applicable competence, conflict, confidentiality, informed participation and referral conditions remain professional questions, not a generic permission box. AI used by an adviser also differs from AI being developed. An available tool or fluent generated memo gives neither the service relationship nor its content a warrant.
+For advice, use the engagement and authority already established for the service. Use [PSDA.11](27-psda-11---bound-the-decision-support-engagement-and-authorit.md) to clarify an unresolved assignment or authority boundary. Apply the competence, conflict, confidentiality, informed-participation and referral conditions relevant to that service. Distinguish AI used to prepare advice from an AI system whose development is being considered. Establish the basis and permitted use of any generated memo on which the advice relies.
 
 
 
 ### PSDA.Application:2.2 - Begin before the target contribution is settled
 
-Suppose an engineering-services unit hears that a new model can handle long records. “Adopt the model” is a search lead, not an accepted problem. Within a ninety-day inquiry, the unit explores neighboring uses, technologies and characteristics under confidentiality, independent-acceptance and service-continuity conditions.
+An engineering-services unit hears that a new model can handle long records. It treats adoption as a possibility to investigate. The unit has ninety days to explore related uses, technologies and characteristics within its confidentiality, independent-acceptance and service-continuity requirements.
 
-The opportunity Method yields two different accounts:
+The unit develops two possible opportunities.
 
 | Candidate opportunity | Worthwhile receiving question | Dependency and first return |
 | --- | --- | --- |
-| Help an acceptance engineer recover which claims an evidence package supports. | Could a recoverable claim-to-premise account improve the qualification task without implying automatic acceptance? | Representative, permitted record access is not yet qualified. Retain manual indexing and bounded model-assisted retrieval as conditional directions, with representative tool access still unqualified. |
-| Help shift staff recover unresolved exceptions and the next permitted handoff. | Could an understandable exception account improve this receiving situation without autonomous dispatch or loss of fallback? | Representative holder capability, workload and review support are not established. Retain a clearer human handoff and a bounded model-assisted direction, with their missing capability/support basis visible. |
+| Help an acceptance engineer identify which claims an evidence package supports. | Would tracing each claim to its premises improve qualification while keeping acceptance with the responsible engineer? | Retain manual indexing and bounded model-assisted retrieval. The unit still needs to establish permitted access to representative records for the relevant comparison. |
+| Help shift staff identify unresolved exceptions and the next permitted handoff. | Would a clearer account improve the next handoff while preserving dispatch authority and fallback? | Retain a clearer human handoff and bounded model assistance. Capability for the representative work, workload and available review support remain unestablished. |
 
-The opportunity return is not a ranking or an adoption recommendation. A positive access disposition would open only the permitted inquiry, not prove the model useful. A refusal would close that processing route, while a public-only sample would support only a narrow demonstration. A possible access probe is a candidate stepping stone toward representative evaluation, not permission to perform it.
+The unit can return both opportunities. Permission to inspect representative records would open the permitted inquiry. A refusal would close that processing route. A public sample can support a limited demonstration. A proposed access check still needs the authority to perform it and evidence of usefulness would come from the relevant evaluation.
 
-The two receiving results differ. A same-result arrangement comparison becomes relevant only after one result, use and acceptance premise is stable enough. Forcing both accounts into one such comparison would hide the still-open choice of useful problem. A generation archive is optional and supplies no value, reachability or authority by itself.
+Each opportunity addresses a different result. If the inquiry later asks how to obtain one result, its intended use and acceptance conditions provide a basis for comparing arrangements. At this stage the choice of which problem to pursue remains open. A candidate archive can help recover alternatives when needed.
 
-The unit may stop here. If a distinct adviser is later asked which direction to recommend, these accounts enter [PSDA.5](22-psda-5---generate-decision-alternatives.md) at their actual conditional strength.
+The opportunity inquiry may finish here. If the unit later requests advice from another performer, use the established directions at their conditional strength. Use [PSDA.5](22-psda-5---generate-decision-alternatives.md) when the alternative set still needs construction.
 
 
 
 ### PSDA.Application:2.3 - A person exploring four months of engineering development
 
-An engineer considers technical evidence review and cross-discipline interface coordination. They can first conduct their own opportunity inquiry. The relevant future work is a contribution they might make, not a job title or course name.
+An engineer explores technical evidence review and coordination across disciplines. They can examine their own opportunity to make either contribution before asking for advice. A job title or course name alone leaves the future work unspecified.
 
-In the example, demand statements explain why both contributions could matter. A permitted evidence set is accessible for the review direction, but capability and transfer into representative work remain unknown. The coordination direction lacks a confirmed opportunity to work with the relevant participants and obtain competent feedback. Neither course attendance nor another person's successful transition fills those gaps.
+In this case, statements of demand explain why both contributions might matter. For review, the engineer can access a permitted evidence set. Their capability and transfer to representative work remain unknown. For coordination, access to the relevant participants and competent feedback has yet to be confirmed. Course attendance and another person’s successful transition do not establish those conditions.
 
 If the person asks a separate adviser for a recommendation, the return is:
 
 > Retain evidence review and coordination as conditional directions. The present evidence does not establish independent review capability or transfer, and access to coordination practice and feedback is unconfirmed. Neither a course prescription nor a four-month transition follows.
 
-The person's own choice remains separate from an employer's assignment decision. Human demand, assessment, intervention and transfer results retain their direct owners. Career information can help compare opportunities but does not establish a learning effect. If practice time later changes, reconsider the dependent intervention or reachability claim; unrelated organization or AI evidence remains as it was.
+The engineer can make their own choice. Their employer holds its assignment decision. Use the appropriate sources for the work demand, personal assessment, intervention and transfer. Career information can help compare opportunities. Evidence about learning must concern the relevant intervention and learner. If practice time changes, reassess the intervention or route that depended on it.
 
 
 
 ### PSDA.Application:2.4 - An organization needs a ninety-day reliability recommendation
 
-A committee asks a separate advisory team which direction to consider for a service organization: internal development, an external provider, or a mixed human–AI arrangement. The committee is recipient and, under the example's supplied mandate, later choice owner. Reliability has priority over throughput for this horizon. Critical-service continuity, security and a bounded reversible-probe budget are protected.
+A committee asks an advisory team to compare internal development, an external provider and a mixed human–AI arrangement for a service organization. The committee receives the advice and holds the later decision under its mandate. Over ninety days it gives reliability priority over throughput and protects critical-service continuity, security and the approved budget for a reversible probe.
 
-An operating account identifies the recovery contribution; a position/interface account explains the current arrangement; a priority statement identifies the receiving value. None compares all three ways of obtaining the required result. The adviser uses the [single A.15.9 import in the profile](42-psda-advising-5---use-the-direct-result-acquisition-method.md) to look for an adequate existing result and retain the supported answer and its limits. A remaining gap becomes a request only when its obtainable contribution warrants the complete acquisition burden.
+An operating account identifies the recovery work. A separate account explains existing positions and interfaces, and the priority statement establishes what matters to the committee. These sources leave the whole-arrangement comparison open. The adviser uses [the profile’s guidance on obtaining a needed result](42-psda-advising-5---use-the-direct-result-acquisition-method.md) to apply an adequate existing result or return the supported conclusion and its limits. Seek a further contribution where feasible and worth its full acquisition cost.
 
-The first complete return preserves the useful alternatives and the exact comparison limit:
+The adviser can already return the following comparison limit.
 
 > Retain internal development, the provider and the mixed arrangement as directions for consideration. The operating, interface and priority accounts remain useful, but do not support their whole-arrangement ranking for the ninety-day recovery result and the security/continuity conditions.
 
-The availability of OCE.8 guidance would not change that return. A Method for obtaining a comparison is not the client's comparison, and the supplier chooses how to produce and qualify its own result.
+The committee can use this account of the remaining directions and the comparison still missing. To rank them, the adviser needs a qualified comparison of the named options. Use an available result or obtain one when justified. OCE.8 can guide the work. A supplier performing it chooses and qualifies its method under the applicable conditions.
 
-Now take a separate hypothetical continuation. Adequate whole-arrangement and security results cover the three named directions. They exclude the specified provider because it cannot preserve the security boundary. Internal development remains feasible; a bounded mixed-arrangement probe could resolve whether permitted assistance reduces the recovery queue without excessive verification burden or weakened fallback.
+In a separate hypothetical continuation, qualified arrangement and security results cover the three directions. They exclude the specified provider because it cannot preserve the security boundary. Internal development is feasible. A bounded trial of the mixed arrangement could show whether permitted assistance reduces the recovery queue without excessive checking or a weaker fallback.
 
-The supplied probe result covers the actual question, distinguishing observations, feasibility, exposure, available resources and stop conditions. Compared with immediate commitment, it supports obtaining that information at bounded cost while retaining internal development. A disclosed material provider interest has also been treated under the agreed service conditions.
+The case also supplies the trial question, the observations that could distinguish the alternatives, resources, exposure and stop conditions. Compared with committing now, a feasible trial can obtain the needed information at acceptable cost while internal development remains available. The team has addressed a disclosed provider interest under the service agreement.
 
-Using [PSDA.6](23-psda-6---represent-values-and-trade-offs.md) through [PSDA.9](26-psda-9---test-robustness-and-sensitivity-of-decision-alterna.md) only where their comparison results are needed, the adviser makes the advantage, serious rival, uncertainty and protected conditions recoverable. Through [PSDA.14](30-psda-14---prepare-and-return-a-decision-support-recommendati.md), the return is:
+The adviser draws on [PSDA.6](23-psda-6---represent-values-and-trade-offs.md) through [PSDA.9](26-psda-9---test-robustness-and-sensitivity-of-decision-alterna.md) for the comparisons needed here. With [PSDA.14](30-psda-14---prepare-and-return-a-decision-support-recommendati.md), the adviser explains the advantage, the feasible rival, the uncertainty and the protected conditions.
 
 > Consider the bounded mixed-arrangement probe first and retain internal development. The supplied arrangement, probe and security results support this information-gaining recommendation for the named reliability use. Throughput effect remains uncertain. Preserve continuity, security and the budget; reconsider when representative recovery evidence or a relied-on premise changes.
 
-This does not close three directions from an internal/mixed-only comparison: the separate security result explicitly disposes of this provider configuration. Another provider or materially different probe would need its own basis. Delivery, committee consideration, a later authorized probe plan, actual work and observed effect remain distinct.
+The separate security result excludes this provider. The internal/mixed comparison covers the two remaining directions for this use. Another provider or a materially different trial needs its own basis. The committee can receive the advice before considering or authorizing a probe. Evidence that the probe ran and produced an effect would concern later work.
 
 
 
 ### PSDA.Application:2.5 - An AI configuration changes while independent advice survives
 
-A team considers model modification, a different scaffold/tool configuration and a changed human–AI allocation. The exact changed object matters: a human training result establishes none of the AI evaluation or deployment-safety premises, and an organization-allocation result does not by itself evaluate a model.
+A team considers changing a model, its scaffold or tools, or the allocation of work between people and AI. Each calls for evidence about the object and use being changed. A human training result concerns the participants. An organizational allocation may establish who does the work. AI performance and deployment safety need evidence for the relevant configuration.
 
-Suppose the committee in the reliability example later authorizes only a bounded probe for configuration A under stated continuity and oversight conditions. An appropriate follow-up arrangement exists: the configuration owner can report material changes, specialist suppliers can qualify them, the adviser has interpretation time, and the committee can receive the revised use consequence.
+Suppose the committee authorizes a bounded probe for configuration A, with specified continuity and oversight. The configuration owner can report material changes, specialist providers can qualify their effect on the premises, the adviser has time to interpret them and the committee can receive the revised advice in time.
 
-A notice now identifies configuration B. Observation from B arrives, but the relied-on evaluation still concerns A. [PSDA.15](31-psda-15---arrange-decision-follow-up-or-reassess-advice-afte.md) produces a split return:
+A notice identifies configuration B. An observation from B is available, while the evaluation used for the original advice concerns A. Using [PSDA.15](31-psda-15---arrange-decision-follow-up-or-reassess-advice-afte.md), the adviser determines which uses still have adequate grounds.
 
 | Dependent use | What follows now |
 | --- | --- |
 | Internal-development claim independent of A's evaluation and the changed allocation | Retain it within its original service and horizon. |
-| Earlier recommendation concerning A | Preserve it as the earlier conditional advice; do not relabel it as evidence for B. |
-| Advice to extend the probe or deploy B | Block that stronger return pending the exact B evaluation, safety/security and allocation premises that matter. |
-| Observation and operational response | Use the actual competent owner and applicable continuity or safety rule; a notice alone does not choose fallback, stop service or revoke permission. |
+| Earlier recommendation concerning A | Preserve the advice for A under its earlier conditions. To use the result for B, establish its applicability there or use independent evidence about B. |
+| Advice to extend the probe or deploy B | State which evaluation, safety, security or allocation condition is still unsupported for B. Use the evidence for each stronger recommendation when it applies. |
+| Observation and operational response | Apply the governing continuity or safety rule within the applicable authority. Obtain a decision from the responsible party if one is needed. A change notice identifies the configuration. |
 
-If a generator, candidate archive or open-ended search is itself changing, its actual operators, descriptors, retained candidates and governing policy need their direct account.
+If the candidate generator, its archive or its open-ended search changes, establish what changed in its operators, descriptors, retained candidates or governing policy and which use depends on it.
 
-If an expected result is missed, report the resulting reliance gap. If the decision has ended and no continuing service or protection duty remains, close the follow-up rather than inventing another review cycle.
+If an expected observation is missed, report which use now lacks evidence. Close the follow-up when the decision has ended and there is no continuing service or protection duty.
 
 
 
 ### PSDA.Application:2.6 - A population without a recipient, and a separate research question
 
-A non-cultural population or lineage has no population-local recipient or chooser in this application. Abstain from attributing a development recommendation to it. Variation, reproduction, selection, persistence and loss belong to the evolutionary account; they are not renamed as the population's choice.
+In this example, the non-cultural population has no recipient or chooser for advice. Use the evolutionary account for variation, reproduction, selection, persistence and loss. Attributing a recommendation to the population would require a decision relation the example does not supply.
 
-A research team may separately ask which experimental intervention to consider. That is a recipient-owned inquiry only when its scientific question, exact subject, authority, safety and other applicable conditions are established. The population countercase supplies none of those premises. The return may therefore identify the scientific or authorization question that must be answered before recommending an intervention.
+A research team can ask its own question about the population or compare possible experiments. Establish the subject and scientific question for that inquiry. To recommend or carry out an intervention, establish the applicable safety and authority conditions for that use. An evidence or authority gap can limit the recommendation while leaving a scientific finding available.
 
 
 
 ### PSDA.Application:2.7 - What remains the same across the branches
 
-The useful common result is a qualified opportunity, comparison or recommendation with a stated receiving question and use. What differs is the premise required to support it. Human transfer, organizational obtaining arrangements, AI evaluation and scientific intervention are not one score or one development mechanism.
+Across these cases the practitioner can return an opportunity, comparison or recommendation for an identifiable use. The evidence needed for human transfer, an organizational arrangement, an AI evaluation or a scientific intervention depends on the particular claim.
 
-A supported direction should not be withheld merely because another branch remains uncertain. Follow the [profile](37-development-direction-advising.md) for the full engagement and recommendation contract, the [opportunity Method (FPF C.40.OCN)](../../sections/09-part-c---kernel-extension-specifications/108-c-40-ocn---construct-a-bounded-opportunity.md) for the earlier construction, and the direct patterns for their own results. The [source-responsibility account](62-psda-sources-3---source-responsibility-and-references.md) keeps that profile's bounded source use separate from application-specific follow-up.
+Return a supported direction with its conditions and identify the unresolved branches. Use the [profile](37-development-direction-advising.md) for the advisory engagement and recommendation, the [opportunity Method (FPF C.40.OCN)](../../sections/09-part-c---kernel-extension-specifications/108-c-40-ocn---construct-a-bounded-opportunity.md) for constructing an opportunity, and the relevant direct patterns for subject results. The [source-responsibility account](62-psda-sources-3---source-responsibility-and-references.md) explains the contributions the profile takes from those sources.

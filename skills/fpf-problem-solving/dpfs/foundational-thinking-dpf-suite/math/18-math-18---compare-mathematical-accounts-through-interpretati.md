@@ -59,7 +59,7 @@ For the consequence being transferred, follow its construction or argument throu
 
 Distinguish the two directions. Preservation takes a source consequence to a target consequence. Reflection takes an interpreted target consequence back to the source. To use a target calculation as the source answer, obtain the required recovery and reflection argument.
 
-For operations composed as maps, an object assignment F also assigns `F(f):F(A) -> F(B)` to each source map `f:A -> B`. To translate a sequence stage by stage, establish:
+For operations composed as maps, give F an action on maps: assign `F(f):F(A) -> F(B)` to each source map `f:A -> B`. To translate a sequence stage by stage, establish:
 
 `F(g∘f)=F(g)∘F(f)` and `F(id_A)=id_F(A)`.
 
@@ -79,7 +79,7 @@ When whole systems of objects and maps are compared, pointwise isomorphisms need
 
 `G(F(f))∘eta_A = eta_B∘f`.
 
-Both routes start in A and finish in `G(F(B))`. This equation means that translating and then applying the map agrees with applying the map and then translating. Require the corresponding compatibility on the target side as well. In categorical language, functors with these natural isomorphisms give an equivalence of categories.
+Both routes start in A and finish in `G(F(B))`. This equation means that applying f and then the recovery isomorphism at B agrees with first applying the recovery isomorphism at A and then G(F(f)). Require the corresponding compatibility on the target side as well. In categorical language, functors with these natural isomorphisms give an equivalence of categories.
 
 Use that equivalence for properties supported by the chosen structure and invariant under its isomorphisms. If a later question uses additional structure, include it in the comparison. The length question in :5.3 shows why this return matters.
 
@@ -117,7 +117,7 @@ Now the intended use expands: can every order-preserving map be used as a map pr
 
 `h({u} union {v})=1`, while `max(h({u}),h({v}))=0`.
 
-For constructions that combine joins, select join-preserving maps in both accounts. If all monotone maps are needed, retain that broader ordered account and its different transformation class. The objects matched; the expanded map claim required and received its own answer.
+For constructions that combine joins, select join-preserving maps in both accounts. If all monotone maps are needed, retain that broader ordered account and its different transformation class.
 
 #### MATH.18:5.2 - An enlarged domain changes the available solution
 
@@ -178,13 +178,13 @@ For the comparison being used:
 
 Different mathematical descriptions can become usable alternatives with known transfers and returns. The comparison can also expose a useful one-way interpretation or a distinction that a proposed equivalence would erase.
 
-The cost follows the scope. Recovering one primitive may settle a local use; comparing whole families of constructions requires their maps and compatibility laws. A changed task can reuse earlier results while reopening the additional structure it now needs.
+The cost follows the scope. Recovering one primitive may settle a local use; comparing whole families of constructions requires their maps and compatibility laws. A changed task can reuse earlier results while examining the additional structure it now needs.
 
 ### MATH.18:10 - Architectural Rationale
 
 Organizing the method around a consequence keeps interpretation connected to mathematical work. Comparing objects, assertions and transformations prevents an object-level match from silently becoming a claim about every use.
 
-The operation-and-order case reconstructs different primitives on the same carrier. The natural-number case exposes domain-sensitive assertion transport. The matrix case compares families of objects through compatible isomorphisms. Together they show different uses of one method without making any one mathematical branch its scope.
+The operation-and-order case reconstructs different primitives on the same carrier. The natural-number case exposes domain-sensitive assertion transport. The matrix case compares families of objects through compatible isomorphisms.
 
 MATH.5 and MATH.7 remain direct construction methods for generator extension and bijective transport. This pattern supplies the wider comparison in which those methods may solve one part. MATH.17 supplies operations on operations when the interpretation itself must be constructed or transformed that way.
 

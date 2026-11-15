@@ -9,7 +9,7 @@ Use this pattern when a director, shareholder or other entitled recipient lacks 
 
 Start with the information, its recipient and the action or right it serves. Recover the applicable duty and restrictions, obtain a usable answer and provide it through a permitted channel at the required time. Return the information with its material limits, or a specific unresolved provision question. An adequate current disclosure can be used directly.
 
-This is corporate information provision. The underlying financial, technical or other specialist analysis follows its own method. A general wish for transparency does not settle who is entitled to every underlying document.
+Use the relevant practice for the underlying financial, technical or other specialist analysis. The applicable corporate rules determine which underlying documents a recipient is entitled to inspect.
 
 ### CGOV.8:2 - Problem
 
@@ -31,17 +31,17 @@ Connect the right or duty to the content, delivery and receiving use that fulfil
 
 Identify what the recipient needs to know and why: consider a proposed act, exercise a vote, inspect a record, receive a periodic report or understand a material change. Distinguish a shareholder acting for itself from a director acting for the corporation when that changes access.
 
-Use CGOV.1–CGOV.3 for unresolved corporate identity, rights or authority questions. ADM.2 helps identify the participants and relations in an administrative provision request. Reuse adequate answers already available.
+Use CGOV.1–CGOV.3 for unresolved corporate identity, rights or authority questions. Use an adequate existing answer. If the parties or their administrative relations are unclear, use ADM.2 to establish them. If permission to read or disclose the material remains in question, use ADM.8 to check the action against the applicable grants, conditions and restrictions.
 
-Recover the applicable source of the duty or right, its subject, timing, recipient and any conditions. Check a claimed restriction against the same use. An unresolved question about how two rules interact goes to a person competent and authorized to settle it; a confidentiality label alone supplies no answer.
+Recover the applicable source of the duty or right, its subject, timing, recipient and any conditions. Check a claimed restriction against the same use. An unresolved question about how two rules interact goes to whoever has the competence and authority to settle it. A confidentiality label alone supplies no answer.
 
 #### CGOV.8:4.2 - Select sufficient content
 
-Determine the required content using the applicable disclosure or inspection rule. Where materiality governs, use its actual criterion. Include the assumption, uncertainty, relationship or changed fact whose omission would make the answer misleading for that use.
+Determine the required content using the applicable disclosure or inspection rule. Where materiality governs, apply the criterion set by that rule. Include the assumption, uncertainty, relationship or changed fact whose omission would make the answer misleading for that use.
 
 Obtain the content from the responsible practice. A corporate secretary can arrange for a financial explanation without inventing its valuation. Carry the relevant scope and qualification from the specialist answer into the disclosure.
 
-Compare the proposed summary with the underlying result. Could the recipient reasonably infer an unconditional forecast, an approved transaction or an effective appointment where the source establishes only a conditional analysis or proposal? Repair that particular loss. Additional background is useful when it changes interpretation; it need not become a complete archive.
+Compare the proposed summary with the underlying result. Could the recipient reasonably infer an unconditional forecast, an approved transaction or an effective appointment where the source establishes only a conditional analysis or proposal? Correct the summary to show what the source establishes. Add background when it changes how the recipient would interpret the result.
 
 #### CGOV.8:4.3 - Resolve access and confidentiality together
 
@@ -49,19 +49,19 @@ Apply the permitted treatment to the particular information and audience. A prot
 
 Do not remove the substance of a right through a nominal access offer. An inspection available only after the vote may fail the relevant timing condition. Equally, a right to a summary may leave raw customer records outside the permitted disclosure.
 
-Where disclosure must reach several recipients equally or simultaneously, coordinate the releases. If an error or selective disclosure has occurred, recover the applicable corrective duty and make the authorized correction. Do not infer a universal publication remedy from the mere existence of an error.
+Where disclosure must reach several recipients equally or simultaneously, coordinate the releases. If an error or selective disclosure has occurred, recover the applicable corrective duty and make the authorized correction.
 
 #### CGOV.8:4.4 - Provide the information and establish the relevant completion
 
 Assign preparation and release to participants with the necessary capability and authority. Use an existing provision channel when it works. Repair delivery or access under the established right without restarting the entitlement inquiry.
 
-Check completion at the level the duty and use require. Publication, availability, receipt and understanding may be different claims. A public filing duty can require a successful filing; a director trying to interpret a conditional forecast may need an explanation as well. Select the observation that answers the present question instead of requiring acknowledgements for every communication.
+Check completion at the level the duty and use require. Publication, availability, receipt and understanding may be different claims. A public filing duty can require a successful filing; a director trying to interpret a conditional forecast may need an explanation as well. Choose an observation that shows whether the requirement was met or what remains missing.
 
 Return what was supplied, the material limits and any remaining gap through the normal corporate communication. Keep a record when the applicable duty or later reliance needs one.
 
 #### CGOV.8:4.5 - Maintain the answer through the decision
 
-If a consequential fact changes before the receiving act, determine whether the answer needs correction or supplementation. Give the changed information to the entitled recipients in time for its use. A later correction does not silently change what earlier recipients actually knew.
+If a consequential fact changes before the receiving act, determine whether the answer needs correction or supplementation. Give the changed information to the entitled recipients in time for its use. A later correction cannot change what earlier recipients knew at the time.
 
 A missing financial assumption may limit a forecast while the ownership information remains usable. Identify that reach. Obtain further analysis when it can change the decision and warrants its burden, while fulfilling duties that already apply.
 
@@ -98,7 +98,7 @@ Can the practitioner identify who is entitled or obliged to receive what, for wh
 
 ### CGOV.8:9 - Consequences
 
-Recipients can act on usable corporate information, and handlers can distinguish content, entitlement and delivery problems. Disclosure can still reveal a substantive disagreement or an unresolved specialist question. Better provision makes those questions visible; it does not settle them.
+Recipients can act on usable corporate information, and handlers can distinguish content, entitlement and delivery problems. Disclosure may reveal a substantive disagreement or a question for a specialist. Resolving it requires work beyond providing the information.
 
 ### CGOV.8:10 - Architectural Rationale
 
@@ -114,6 +114,6 @@ The method combines those concerns with recipient-specific provision and preserv
 
 CGOV.2 identifies relevant rights; CGOV.6 supplies the conflict information that may need disclosure. CGOV.11 uses the supplied information and its limits during a corporate decision; CGOV.12 uses it when arranging minority participation or redress.
 
-ADM.2 establishes the participants and organizational relations needed for administrative provision. A.2.8.PER distinguishes permission from its exercise. C.2.8 and EXD help when the remaining difficulty is interpreting an explanation.
+ADM.2 helps establish the participants and organizational relations for administrative provision. ADM.8 helps determine whether a particular read or disclosure is permitted and which rule or authorized ruling governs a conflict. A.2.8.PER distinguishes permission from its exercise. C.2.8 and EXD help when the remaining difficulty is interpreting an explanation.
 
 ### CGOV.8:End

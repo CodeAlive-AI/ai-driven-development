@@ -8,21 +8,21 @@
 
 ### NSTD.4:1 - Problem frame
 
-Use this pattern when a rewrite conveys the facts but no longer sounds like the intended author, when a new narrator needs a distinctive way of speaking, or when a change of subject, genre or language puts an established voice under strain. Use it also when viewpoint, focalization, protagonist, actant or personification changes what the reader understands, trusts, blames or treats as capable of action.
+Use this method to continue an author’s voice, construct a new narrator, or adapt a way of speaking to a changed subject, genre or language. It also helps when viewpoint or personification affects what a passage makes available to infer about knowledge, action or responsibility, or when you need to interpret a reader’s response.
 
-First useful move: identify who is to speak and what relationship that speaker should establish with this reader. Put a suitable passage beside the draft, if an existing voice is to be continued. When the voice already works and the difficulty is hidden information or attribution, go directly to NSTD.4:4.6 and inspect what the viewpoint reveals and conceals.
+Identify the speaker, intended reader and the relationship the passage should establish. To continue an existing voice, compare the draft with relevant expression from that author. If the voice already works and the question concerns hidden information or attribution, go to §4.6.
 
-What goes wrong if missed: an instruction such as “make it lively” can produce recognizable mannerisms without the author's way of developing a thought. A warmer rewrite can invent a memory, flatten a difficult idea or assign a decision to a prominent object. Accurate attribution alone can leave the requested voice absent.
+“Make it lively” may elicit a catchphrase while losing the author’s way of developing a thought. A warmer rewrite might invent a memory, obscure a hard distinction or attribute a decision to whichever object is most prominent. Check the manner of speaking as well as the claims it expresses.
 
-What this buys: a connected passage whose manner, intellectual demands and speaker position serve the intended work, with a way to carry that result into another passage and repair a particular loss.
+The result can be a passage written for its occasion, a direction another writer can apply to the next passage, or a finding about the voice or attribution in existing work.
 
-Keep an existing voice that already serves the work. An isolated grammatical fault or unsupported claim can receive its direct repair without constructing a voice profile. This pattern does not require a distinctive personal style, a new narrator or a separate record for every account.
+Keep a voice that already suits the passage. An isolated grammatical fault or unsupported claim can be repaired directly. A profile becomes worthwhile when it helps someone sustain or compare expressive choices across passages.
 
 ### NSTD.4:2 - Problem
 
-A voice is realized through choices made together: which detail the speaker notices, how a thought begins and develops, how directly the reader is addressed, how confidence or hesitation is expressed, and how sentences move. A list of adjectives leaves those choices to the next writer. Copying a catchphrase can preserve a surface feature while changing the speaker's relation to the reader. A useful construction therefore connects an intended speaking relationship, evidence or choices about its expression, and the actual passage in which it must work.
+A voice emerges from connected choices about what the speaker notices, how a thought starts and develops, how the reader is addressed and how confidence or hesitation is expressed. A catchphrase can survive after the relationship to the reader has changed. Use the actual passage to connect the chosen relationship with its expression.
 
-The narrator's position also determines what can be told. An editor may preserve a manner without possessing the author's memories; a fictional narrator may speak confidently without being reliable. Prominence in a story can invite an attribution of action or responsibility that the source does not support. Construct the expressive relationship and establish consequential knowledge, experience and agency claims on their own grounds.
+The narrator’s position governs what can be told from that viewpoint. An editor can preserve a way of speaking using the author’s material. A claim to an actual memory needs grounds in that person’s experience. A fictional narrator can sound certain about an event the story gives the reader reason to doubt. Identify the grounds for any consequential attribution of knowledge, experience or agency.
 
 ### NSTD.4:3 - Forces
 
@@ -31,75 +31,75 @@ The narrator's position also determines what can be told. An editor may preserve
 | Recognizable voice and changed occasion | A continuing author can speak differently in an essay, instruction and scene; mechanical repetition can defeat the new use. |
 | Expressiveness and intellectual substance | Rhythm, humour or intimacy can carry an idea, but can also replace its necessary distinction or difficulty. |
 | Example and generalization | A passage gives observable choices; one memorable oddity need not characterize the author's other work. |
-| Reader orientation vs ontological discipline | A focalized object helps readers, but it may not be an actor. |
+| Viewpoint and agency | Following an object through a scene can make a relation easier to see while leaving open who acted. |
 | Narrative function and working participant | A protagonist centers the story; a real performer, assignment or responsibility requires a separate claim. |
-| Personification vs responsibility | Personification can teach, but a memorable figure does not settle who may decide or who is responsible. |
+| Personification and responsibility | A memorable figure can introduce a trade-off. A decision or assignment of responsibility needs its own identified participants and grounds. |
 
 ### NSTD.4:4 - Solution
 
-Construct the voice through a passage that performs the intended work. Establish whose manner is wanted and on what basis; recover useful choices from examples or try choices for a new narrator; compose connected thought in that relationship; compare the actual result and repair the consequential difference. Viewpoint and attribution remain part of this work wherever they change what the speaker or reader can know. These operations can be combined in one short revision. A sufficient passage is a usable result without a completed profile or several alternative drafts.
+To construct a voice, choose the speaking relationship and write a passage that carries the needed thought. Use relevant examples for a continuing voice, or try a treatment for a new narrator. Compare how the resulting passage handles manner, meaning and viewpoint. If you are assessing past work, use its actual wording and any evidence needed for the claim about its use. A single suitable passage can answer the writing task.
 
 #### NSTD.4:4.1 - Establish the speaker, relationship and comparison basis
 
-Identify the intended speaker and reader in ordinary terms. “An experienced colleague thinking with another capable colleague,” “a remote chronicler who withholds judgement” and “a frightened witness addressing a sceptical listener” select different relationships. State what matters for this account: for example intimacy or distance, shared or unequal knowledge, invitation to examine or direction to act. The relationship guides expression; it does not establish the speaker's actual expertise or authority.
+Identify the speaker, reader and relationship that matter. An experienced colleague inviting another colleague to inspect a finding, a remote chronicler withholding judgement and a frightened witness addressing a sceptic establish different positions. Choose the distance, shared knowledge and invitation or direction appropriate to the account. A claim about real expertise or authority requires grounds beyond that choice.
 
 Distinguish the basis of the requested voice:
 
-- To continue an existing author's voice, use authentic passages or edits that the author has accepted as examples of that voice. Keep enough context to hear how the thought develops and whom the passage addresses. An unapproved generated imitation is a proposal, not evidence of the author's preference.
-- For a deliberate imitation or stylization, name the selected model and the features to adapt. Similarity to that model does not make the resulting narrator the original person or transfer their experiences to the new text.
-- For a new narrator, choose a speaking relationship, access to information and expressive purpose. Try a short passage of the needed material. When the choice remains unclear, contrast another treatment of the same material and select or combine the useful differences. There need be no earlier personal voice to recover.
+- To continue an existing author’s voice, use authentic passages suitable to this occasion or edits the author has accepted as models. Keep enough context to hear the thought develop and identify its addressee. A generated trial can show an editorial choice. Attribute preference to the author when there is evidence of that preference.
+- For an imitation or stylization, identify the model and the features to adapt. State whose experience an episode represents when a reader might take the stylization for the original person’s account.
+- For a new narrator, select a speaking relationship, access to information and purpose. Try the needed material in that voice. If the choice remains open, compare another treatment of the same material and use the differences that serve the scene.
 
-Choose examples relevant to the current use. A joke from an interview may be a poor basis for a condolence note; a restrained technical paragraph may reveal little about the author's dialogue. Start with enough material to make the live choice. Add another passage when an uncertainty about the voice would change the draft, such as whether an unusual turn belongs to the author, the particular speaker or that one occasion. There is no fixed quota of samples.
+Select examples for the present occasion. A joke in an interview may give little guidance for a condolence note, and a technical paragraph may tell you little about dialogue. Add material if it could resolve a consequential uncertainty, such as whether an unusual turn belongs to the author, the fictional speaker or one particular occasion.
 
-If a requested author's suitable material is unavailable, obtain it or offer an explicitly provisional treatment for the author to choose. A chosen trial can become the basis for further work. Until then, report a proposed voice rather than claiming that the original voice has been preserved. Use an already established editorial choice without reopening approval on every passage.
+If suitable material from the intended author is unavailable, identify what can be recovered and offer a provisional treatment if the task is to produce a draft. Seek additional material or the author’s choice when the work needs a claim of fit or acceptance that the available evidence cannot support. An already established editorial choice can guide later passages.
 
 #### NSTD.4:4.2 - Recover expressive choices from what the passage does
 
-Read the example as connected expression. Notice how it brings the reader into a question, introduces an event or distinction, changes pace, handles a difficulty and ends a thought. Connect a proposed property to words and relations that actually realize it. “Collegial” becomes useful when one can point to a shared problem and an invitation to inspect it; “restrained” becomes useful when a narrator presents a consequential detail and leaves a judgement unstated.
+Read an example as connected expression. Notice how it brings the reader into a question, develops a distinction, changes pace and closes a thought. Describe each useful property through wording that realizes it. A collegial passage might offer a shared problem for inspection. A restrained narrator might give the decisive detail and leave the judgement to the reader.
 
-Select the properties that can guide this draft. They may concern address, rhythm, sentence relations, concrete detail, imagery, humour, stance, qualification, or the balance between scene and commentary. Explain what the important choices contribute. A short sentence can mark a discovery, an instruction, embarrassment or impatience; copying its length alone leaves that function unresolved. Likewise, a technical term may maintain a needed distinction rather than express an impersonal manner.
+Choose properties that can guide the passage, such as address, rhythm, imagery, humour, qualification or the balance of scene and commentary. A short sentence can express discovery, embarrassment, impatience or a direction to act. A technical term can preserve a needed distinction. Identify the contribution before copying the feature.
 
-Separate a supported tendency from a local observation and a new editorial choice. Recurrence across relevant examples strengthens the basis for a continuing tendency. A single accepted example can still serve as the chosen model for this passage without supporting a claim about everything its author writes. Keep an inference provisional when another reading would change the treatment. The examples may remain in their existing source; a few working observations are enough when no future use needs a maintained profile.
+Distinguish what appears in this passage, what recurs across relevant examples and what the editor is choosing now. A single accepted passage can be sufficient as the model for this use. A claim about a broader tendency needs evidence across the occasions it claims to cover. Keep working notes when someone will use them again.
 
-The result is a usable direction for composition, such as “begin with a concrete discrepancy, let the reader inspect it, then state the limited conclusion.” A label or a catalogue of stylistic features that leaves the next paragraph unexplained has not yet supplied that direction.
+A writer might use the direction “Begin with a concrete discrepancy, let the reader inspect it, then state the limited conclusion.” It specifies how to develop the next thought.
 
 #### NSTD.4:4.3 - Compose a natural fragment without losing its thought
 
-Write a natural unit that advances the account: an exchange, a scene, or a connected passage that reaches its next useful thought. Include the preceding conclusion and following opening when they determine how it joins the surrounding work. Let the selected relationship shape how the reader encounters the material. This may change order, sentence connections or the distribution of example and explanation; replacing a few words rarely settles those decisions.
+Write a connected unit such as an exchange, scene or passage. Include its joins to the previous and following thought where they affect its work. The chosen relationship may call for a different order, sentence connection or placement of example and explanation.
 
-Retain the idea's necessary distinctions and the intellectual level appropriate to this reader. Show the difficulty that makes the next move worth making. An approachable voice can explain a demanding relation without deleting it or judging the reader for not already knowing it. Preserve a useful surprise, image or sharp observation when it contributes to the thought; replacing it with a flat summary can lose the very relation the example was chosen to carry.
+Retain the distinctions and intellectual demands appropriate to the reader. Give them the difficulty that makes the next move worth taking. A surprise, image or sharp observation can carry a relation that a flatter summary would lose. Use it when that contribution matters.
 
-Keep the speaker's position warranted. Preserve actual recollection, point of view, uncertainty and relevant detail where the source supplies them. A current editorial judgement can be stated as such. Mark a constructed case or hypothetical account where a reader might otherwise take it as experience. First-person wording does not create a memory, consultation, feeling, consensus or evidence. In fiction, those can be invented as story facts under the chosen premises; they still do not become experiences of the real author or reader. “We” requires the intended inclusion to make sense in that passage; it is no general condition of warmth or collegiality.
+Ground attributed recollections, observations, uncertainty and judgements. Mark a hypothetical or constructed account when its reader might take it as experience. In fiction, the premises can give a character a memory or feeling. In a factual account, first person can express the author’s own reasoning or documented experience. Use “we” when its intended participants and their relation are clear.
 
-Inspect whose information the voice uses. A retrospective narrator may know what a participant did not know at the time; a close witness may lack a decisive event. Retain that difference or revise the viewpoint under NSTD.4:4.6. If the desired passage needs a new interpretation, use NSTD.9; if it needs a new fictional event, use NSTD.10. A stylistic rewrite cannot silently supply either as an established source fact.
+Identify whose information the voice uses. A retrospective narrator may know what a participant did not know at the time. A close witness may have missed an event. Keep that difference or revise the viewpoint under §4.6. Use NSTD.9 if interpretation remains in question, or NSTD.10 to construct a needed fictional or hypothetical event under the stated premises.
 
 #### NSTD.4:4.4 - Carry the voice into a changed subject, genre or language
 
 Ask what the new occasion changes in the relationship and work. A familiar reader may now need an instruction under time pressure; an essay's reflective detour may become inappropriate in a decision note. Choose which properties remain useful and which must change, with their contribution to the new passage as the reason. Continuing a voice can preserve a way of approaching uncertainty while changing address, rhythm or the place of humour.
 
-Try the treatment on material that makes the difference consequential. On a new subject, retain the needed domain relations and obtain missing content instead of borrowing the original sample's facts or vocabulary. On a new genre, compare the new passage with both the selected voice basis and its own neighboring text. The result should perform the new genre's work; resemblance to the old genre is insufficient.
+Try the treatment on material that exposes the changed demand. For a new subject, establish the domain relations that the passage must convey. A familiar sample can guide expression. For a new genre, compare the passage with both its speaking model and its present neighbors. Ask whether it performs the work this genre requires.
 
-For another language, recover how the chosen relationship can be expressed there. Address forms, idiom, rhythm and politeness need not have a one-to-one correspondence. Compare passages in the receiving language and preserve technical distinctions that the new wording could merge. Where the editor cannot judge the relevant expression, obtain competent language judgement before claiming that the voice or relation has survived. No particular language, pronoun, ironic manner or degree of informality is universal. A local profile can select these conditions for its audience without making them the general method.
+For another language, identify how its address forms, idiom, rhythm and conventions can express the chosen relationship. Compare passages in the receiving language and preserve technical distinctions. Use competent language judgement already available, or seek it if the editor cannot settle a consequential claim about the result. A particular pronoun, level of informality or use of irony belongs to the chosen audience and occasion.
 
 #### NSTD.4:4.5 - Compare the passage and repair the actual loss
 
-Read the changed fragment beside its model or chosen trial and as part of its surrounding account. Compare the movement of thought and speaking relationship, including any consequential contrast between passages. For a voice intended to sound spoken, reading aloud or rehearsing uninterrupted speech can reveal a broken join or an unperformable sentence; it is not a universal test for every literary voice. An imagined performance is not evidence of an actual listener's response.
+Read the changed passage beside its model or chosen trial and in its new surroundings. Compare how each develops the thought and puts the speaker in relation to the reader. For a voice meant to be spoken, reading aloud can reveal a broken join or a sentence hard to deliver. To establish what a listener actually understood or recognized, use a response or action that shows the particular interpretation or recognition at issue.
 
-Keep three conclusions distinct:
+Choose the comparison that supports the conclusion you need.
 
 | Question | Useful comparison | What the result supports |
 | --- | --- | --- |
-| Does the manner realize the selected voice and relationship? | Point to the expression in the model and draft; inspect what is retained, changed or lost. Use the author's judgement when the claim concerns that author's acceptance. | A bounded judgement of fit or an actual acceptance, with its basis. It does not establish what other readers recognize. |
-| Does the passage preserve the needed meaning and speaker position? | Compare its claims, distinctions, experience, uncertainty and viewpoint with the source or chosen fictional premises. | Correspondence at the compared scope; a fluent or recognizable voice supplies no missing evidence. |
-| Can the intended reader do what the passage is for? | Examine the needed inference, action or experience in the connected account. Use an actual reader task when the conclusion requires observed understanding or response. | A design judgement or an observed result, distinguished explicitly. For a qualified evaluation use NSTD.6; for learning use NSTD.8 and the applicable learning methods. |
+| Does the manner realize the selected voice and relationship? | Compare the relevant expression in model and draft, or the new passage with the chosen speaking relationship. Identify what is retained, changed or lost. | An editorial judgement of fit. To report the author’s acceptance or another reader’s recognition, identify evidence of that response. |
+| Does the passage preserve the needed meaning and speaker position? | Compare claims, distinctions, experience, uncertainty and viewpoint with the source or chosen premises. | A finding about correspondence for the material compared. |
+| What can the intended reader do with the passage? | Examine the inference or action made available under the assumed starting knowledge. For a historical claim, examine a response or action that shows the relevant reading and what help was used if it affects the conclusion. | A design judgement or an observed result under its conditions. Use NSTD.6 for a qualified evaluation and NSTD.8 or applicable learning methods for a learning question. |
 
-Locate the smallest change that repairs the cause. An unsupported personal recollection needs a change of speaker claim; a condescending aside needs a different address to the reader; a broken transition needs the missing connection; a flattening summary needs the useful distinction or expressive event restored. If the model was inappropriate to the new genre, revise that choice rather than polishing every sentence to match it.
+If revision is requested, change what caused the loss. Correct an unsupported recollection, a condescending form of address, a missing transition or a summary that erased an important distinction. If the example was unsuitable for the new genre, choose a better model.
 
-Reread the repaired span and the connections its change affects. In technical explanation, use F.19 for consequential meaning and recoverable action; use NSTD.5 when the difficulty is the expressive device's effect. Preserve the voice where it works. A new adequate fragment does not require reopening unchanged material or obtaining repeated approval. For tool-assisted execution, give NSTD.7 the same examples, choices and constraints, and compare its actual output through these questions.
+Read the repaired passage with the joins it affects. Use F.19 for meaning and recoverable action in technical prose and NSTD.5 when the effect of an expressive device is at issue. For tool-assisted composition under NSTD.7, give the tool the relevant models, choices and constraints and examine its actual output.
 
 #### NSTD.4:4.6 - Keep viewpoint, agency and attribution grounded
 
-Compare what the chosen viewpoint makes visible with what the reader needs. Add another view or a short clarification when a consequential relation is hidden. Viewpoint can also change the working interpretation: a departure can appear as escape to one participant and abandonment to another. Use NSTD.9 to compare what supports those meanings; juxtaposing voices alone does not settle their factual disagreement or make them equivalent. In fiction, a proposed viewpoint may require a participant to acquire information that the story has not yet supplied; construct or revise that event through NSTD.10, or choose a viewpoint that does not require it. Use the optional record below when comparing viewpoints or handing the work to another author; the clarification can otherwise stay in the narrative itself.
+Compare what the viewpoint reveals with the relations the reader needs. Two participants may see the same departure as escape and abandonment. Use NSTD.9 to examine the support for either interpretation. If a fictional viewpoint requires a discovery not yet provided for the character, use NSTD.10 to build that event or select a viewpoint with different access. Add a second view or a short clarification when it supplies missing information the task requires. Use a note like the one below if collaborators or a later comparison will need the grounds.
 
 ```text
 NarrativeViewpointAgencyDiscipline@Context:
@@ -110,16 +110,16 @@ NarrativeViewpointAgencyDiscipline@Context:
   hiddenOrWeakenedSourceStructureRefs:
   narrativeFunctionTerms:
   personificationOrAgencyWording:
-  directOwnerRefs:
+  relevantSourcesAndAuthorityIfNeeded:
   blockedAgencyOverread:
-  repairAction:
+  repairActionIfNeeded:
 ```
 
-Use the following distinctions only when they change interpretation or action:
+Use the distinctions that affect the claim.
 
-1. A **narrative function** such as narrator, protagonist or actant describes a contribution to the account. Ordinary use of “role” can retain that meaning.
-2. A **real participant** may be a person, organization or technical system. When a precise classification matters, `A.2` defines a local system-role kind whose candidates are `U.System` individuals. `A.2.1` separately establishes an obtaining `U.SystemRoleAssignment`; neither a label nor prominence in a story supplies that assignment.
-3. A **precise agency claim** uses `A.13`: the System, the applicable local kind and the obtaining assignment. A claimed dated Work occurrence additionally uses `A.15.1`. Ordinary explanation does not require these identities unless it asserts the corresponding facts.
+1. A **narrative function**, such as narrator, protagonist or actant, explains a contribution to the account. “Role” often has this ordinary meaning in a discussion of stories.
+2. For a **real participant**, identify the person, organization or technical system that played the relevant part. If a precise classification matters, `A.2` defines the local system-role kind for `U.System` individuals. Use `A.2.1` for the obtaining `U.SystemRoleAssignment`.
+3. For a **precise agency claim**, use `A.13` to identify the System, applicable local kind and actual assignment. For a claimed dated Work occurrence, apply the independent `A.15.1` conditions. Use ordinary contributor language when the passage makes no such claim.
 4. A **capability or responsibility claim** needs its own grounds. Use `A.2.2` for capability, the applicable organizational assignment for responsibility, and `D.1` through `D.5` when value, harm or affected-party conflicts matter.
 5. An **agency measurement or profile** uses the selected characteristic and scale through `A.19.ECS`, `C.16` and `A.13` when that additional claim is needed.
 
@@ -127,7 +127,7 @@ Consider the following questions where the viewpoint could change the reader's u
 
 | Pass | What to inspect | Repair if failed |
 | --- | --- | --- |
-| What becomes visible? | Which relevant events or relations can the reader see from this viewpoint, and which remain hidden? | Add the needed fact, source return or alternate viewpoint. |
+| What becomes visible? | Which events or relations does the viewpoint show or allow a reader to infer from specified starting knowledge? | Add the needed fact, a way to recover it or another viewpoint. |
 | What attribution follows? | Does prominence in the account imply an unsupported action, capability or responsibility? | Retain the narrative function and establish or correct the separate attribution. |
 | Would a literal reading mislead here? | Is there a plausible reading that changes reliance or action? | Clarify that relation or participant. Keep an unambiguous metaphor. |
 | Whose consequence is missing? | Does the viewpoint conceal a relevant effect, disagreement or uncertainty? | Add the affected perspective or qualify the use. Consult `D.1`–`D.5` when a value or harm conflict needs resolution. |
@@ -139,12 +139,12 @@ The following terms answer different narrative questions. Stronger factual claim
 | Protagonist | Centering attention or action path. | Responsibility, role assignment, moral standing, or capability. |
 | Actant | Describing a participant's function in a plot or transformation. | A real System's classification, assignment, capability or responsibility. |
 | Voice | Controlling stance, distance, confidence, or witness posture. | Evidence strength, source authority, or ethical permission. |
-| Focalization | Selecting what the reader sees and from whose constraints. | Completeness, neutrality, or source truth. |
+| Focalization | Selecting the information shown and the position from which it is available. | Completeness, neutrality or the truth of the underlying factual account. |
 | Personification | Teaching or memory aid for abstract structures. | Actual agency, decision authority, or intent. |
 
-Keep ordinary metonymy when the intended reader can recover the relevant action and participant. “The paper proves the lemma” can refer to the proof it contains; it needs no invented author-work record. If “the architecture wants fewer dependencies” would instead be used to justify a decision or assign blame, state the actual structural constraint, choice and responsible participant. Clarify the action-changing ambiguity, not every figurative verb.
+Keep ordinary metonymy if the action and participant are clear. “The paper proves the lemma” can refer to the proof it contains. If “the architecture wants fewer dependencies” is used to justify a design decision or assign responsibility, identify the structural criterion, the choice and whoever had the relevant authority.
 
-A useful repair can retain the viewpoint while making the needed relation explicit: who decides, what structure is highlighted, what relevant fact is hidden, and where the reader can obtain it. Choose the smallest clarification that resolves the difficulty.
+A viewpoint can be retained while clarifying the relation it obscures. Identify the relevant fact or participant and how a reader can recover it.
 
 ### NSTD.4:5 - Archetypal Grounding
 
@@ -153,18 +153,18 @@ A useful repair can retain the viewpoint while making the needed relation explic
 #### NSTD.4:5.1 - Worked slice: viewpoint without false agency
 
 
-An architecture explanation says: “The database wants to protect consistency, while the service wants speed.” This personification can foreground a trade-off. For a reader diagnosing latency, however, the needed relation is how transaction and replication choices affect response time.
+“The database wants consistency and the service wants speed” can introduce a trade-off. A reader diagnosing response time needs the actual order of transaction and replication operations and the conditions under which a wait delays the response.
 
 ```text
 NarrativeViewpointRecord@ArchitecturePersonification:
   narrativeRenderingRef: ArchitectureExplanation@v1
   viewpointOrVoiceKind: didactic personification
   focalizedSourceStructureRef: consistency and latency trade-off across selected architecture structures
-  narrativeFunction: make the trade-off memorable and traversable
-  hiddenOrWeakenedSourceStructureRefs: actual component responsibility, decision record, measured characteristics
+  narrativeFunction: introduce the consistency and response-time trade-off through personification
+  hiddenOrWeakenedSourceStructureRefs: commit condition, critical path, decision record and observed timings
   agencyOrResponsibilityRisk: component metaphor may be read as actor agency or authority
-  literalizationRepair: explain the commit condition and latency consequence; identify who can change the configuration if that action is proposed
-  sourceReturnCondition: return to architecture description and decision record for authority
+  literalizationRepair: state the commit condition and when the wait delays the response. Identify change authority if a change is proposed
+  sourceReturnCondition: use the architecture description for the arrangement, the governing decision for authority and timing evidence for a claim about actual delay
 ```
 
 Before:
@@ -173,7 +173,7 @@ Before:
 
 After:
 
-> In this configuration the database waits for replica acknowledgement before confirming a commit. That choice protects the required consistency but increases the service's response time. To change the trade-off, consult the configuration decision and measured latency.
+> This configuration requires acknowledgement from a replica before the database confirms a commit. The requirement protects the stipulated consistency condition. Waiting for acknowledgement increases the service’s response time when that wait extends the critical path to the response. An overlapping, longer operation can hide the delay. For an observed request, consult its timing evidence. For a proposed change, check the configuration decision and who may change it.
 
 
 
@@ -182,7 +182,7 @@ After:
 #### NSTD.4:5.2 - Worked slice: narrator and reader roles
 
 
-A future-project scenario can speak from an imagined user's viewpoint to expose possible consequences. Describe it as a scenario so readers can distinguish the proposed experience from an actual user's report or consultation. For example:
+An imagined user can describe a possible consequence of a future design. Identify the passage as a scenario. An actual user report or consultation requires evidence from the user or an appropriate record.
 
 ```text
 NarrativeViewpointRecord@FutureUserScenario:
@@ -191,8 +191,8 @@ NarrativeViewpointRecord@FutureUserScenario:
   narrativeFunction: expose usability and risk questions before design is final
   hiddenOrWeakenedSourceStructureRefs: actual user evidence, policy claim, safety claim
   agencyOrResponsibilityRisk: imagined voice is treated as real stakeholder authority
-  literalizationRepair: mark as scenario hypothesis and route evidence to user research owner
-  sourceReturnCondition: return to source assumptions and later evidence
+  literalizationRepair: mark the proposed experience as a scenario. Use suitable user evidence for a claim about actual experience
+  sourceReturnCondition: examine the scenario assumptions or available user evidence when the relevant claim changes
 ```
 
 
@@ -202,7 +202,7 @@ NarrativeViewpointRecord@FutureUserScenario:
 
 Keep wording that already makes the relevant action clear. If a viewpoint hides a needed relation, add that relation, change perspective or name the responsible participant. Mark a scenario or metaphor when the reader could otherwise rely on it as an observation. Replace the device if its effect depends on concealing a fact needed for the intended use.
 
-To compare alternatives, try a short literal account or another viewpoint and ask what the reader can now recover. For the database case, the comparison is whether the reader can explain the wait and locate the configurable choice. For the future-user case, it is whether the reader distinguishes a proposed experience from observed user evidence. Use `NSTD.6` when a declared quality result is needed.
+Compare a literal account or another viewpoint when the comparison helps. For the database, can a reader identify the commit condition and determine when it delays a response? For the imagined user, can the reader tell what was proposed and what was observed? An editor can assess the information the passages provide. A relevant response can show how a particular reader interpreted it. Use `NSTD.6` if a qualified quality judgement is required.
 
 
 
@@ -211,15 +211,15 @@ To compare alternatives, try a short literal account or another viewpoint and as
 
 Viewpoint selects and highlights structure for a use. An architect's view, a narrator's voice and a protagonist's function can help recover different aspects of the same case. When a real agency, assignment, capability or responsibility claim matters, recover that claim separately under its applicable definition.
 
-A technical story says “the architecture wants to reduce coupling.” The useful content may be a criterion favoring fewer dependencies under a stated trade-off. An architect or team makes the choice; a system-role assignment is a relation involving that participant, not the participant itself. An architecture decision records or expresses the choice rather than acting as its maker.
+“The architecture wants to reduce coupling” may express a criterion favouring fewer dependencies at an accepted cost. For a claim about the choice, identify who decided under the relevant authority and what they chose. Under A.2.1 an assignment relates its holder System to the assigned local role kind within its stated scope. The decision record can establish which option was selected.
 
-In a franchise continuation, a protagonist centers attention, while the chosen premises determine what action is plausible. “The Force guided the decision” may be a sufficient story-world explanation in one scene and leave a character's motivation unclear in another. Use the intended plot and reader effect to decide whether another connection is needed.
+In a franchise continuation, a protagonist centers the telling. The fictional premises govern which actions and motives are plausible. “The Force guided the decision” may supply the intended story-world explanation or leave the character’s choice unclear. Ask which relation the scene needs.
 
-In a homotopy explanation, a space, path, or loop may be written as if it "wants" to deform or "remembers" a hole. That can help intuition, but the focalized object is not an agent. The repair is to state the formal relation being highlighted and where the personification stops.
+In a homotopy explanation, a loop that “remembers” a hole can direct attention to a constraint on deformation. Where a learner needs the mathematical conclusion, supply the formal restriction and the argument it supports.
 
-In live commentary, viewpoint may follow one player, coach or tactical unit. This can make the stream intelligible while hiding off-ball actions or an uncertain ruling. Qualify a blame or capability claim when the unseen action or later official correction could change it; no commentary record is required merely to say so.
+Live commentary can follow one player, a coach or a tactical unit while leaving off-ball actions or a pending ruling outside view. Use the relevant record or qualify blame and capability when the unseen action would change that attribution.
 
-Use a literalization rewrite ladder.
+Read figurative expressions in their context.
 
 | Risky phrase | Safe if read as | Repair if literal reading would be false |
 | --- | --- | --- |
@@ -229,11 +229,11 @@ Use a literalization rewrite ladder.
 | "The protagonist represents the system..." | Reader-facing focalization. | State which source structures the protagonist highlights and hides. |
 | "The market punished..." | A description of an aggregate outcome. | Describe the observed change and distinguish an established mechanism from a conjecture when the explanation affects reliance. |
 
-Keep a necessary clarification close to the phrase. For example: “The architecture favors fewer dependencies under the selected trade-off.” If the figurative wording already conveys that relation unambiguously, no extra disclaimer is needed.
+Keep a needed clarification close to the disputed phrase. “Under the chosen trade-off, fewer dependencies are preferable” can state the design criterion directly.
 
-Use alternate viewpoint when one viewpoint hides a load-bearing source structure. A learner-facing story may first focalize the novice, then briefly switch to the maintainer who pays the cost of hidden coupling. A live commentary may follow the attacking player, then mark what the defensive line or official review could change. A future-scenario narrative may focalize a user, then return to the system owner for constraints and responsibility.
+Change viewpoint when another position can reveal a required relation. A novice’s account may omit the maintainer’s cost of coupling. Following an attacker may hide an off-ball defender or an unresolved ruling. An imagined user can describe a possible experience while the responsible organization supplies the constraints and authority.
 
-Filled viewpoint records:
+These examples use the optional viewpoint note.
 
 ```text
 NarrativeViewpointAgencyDiscipline@ArchitecturePersonification:
@@ -243,9 +243,9 @@ NarrativeViewpointAgencyDiscipline@ArchitecturePersonification:
   hiddenOrWeakenedSourceStructureRefs: architect role assignment; decision record; telemetry
   narrativeFunctionTerms: "architecture wants" as memory aid
   personificationOrAgencyWording: architecture described as wanting fewer dependencies
-  directOwnerRefs: architect role assignment; architecture decision; characteristic evaluation
-  blockedAgencyOverread: architecture is not an agent and has no responsibility
-  repairAction: add "more precisely" sentence naming characteristic pressure and decision owner
+  relevantSourcesAndAuthorityIfNeeded: decision about coupling, cohesion and the interface exception. Use suitable design or operating evidence for a claimed effect and the responsible decision holder for a proposed change
+  attributionAtRisk: responsibility for the decision to reduce coupling
+  repairAction: state the structural criterion and identify the decision holder if responsibility is at issue
 ```
 
 ```text
@@ -255,9 +255,9 @@ NarrativeViewpointAgencyDiscipline@FictionalProtagonistProbe:
   revealedSourceStructureRefs: character agency constraint; premise; causal plot support
   hiddenOrWeakenedSourceStructureRefs: alternative viewpoints; broader canon conflicts; publication rights
   narrativeFunctionTerms: protagonist; actant; motivation
-  directOwnerRefs: source-pack and canon owner; agency and role owner when moral responsibility is claimed
+  relevantSourcesAndAuthorityIfNeeded: selected canon and premises for the character’s choices, and an applicable licence or rights holder for a proposed publication
   blockedAgencyOverread: protagonist centrality does not create moral permission or canon authority
-  repairAction: record character action support and route rights and publication outside this DPF
+  repairAction: establish the character’s possible action under the premises. For proposed publication, use the applicable licence or obtain a determination if permission remains unresolved
 ```
 
 ```text
@@ -267,16 +267,16 @@ NarrativeViewpointAgencyDiscipline@LiveCommentaryView:
   revealedSourceStructureRefs: possession, pressure, chance creation
   hiddenOrWeakenedSourceStructureRefs: defensive shape, off-ball movement, official review
   narrativeFunctionTerms: "forced", "wanted", "could not"
-  directOwnerRefs: event source owner; evidence owner for claims; ethics owner if blame or harm framing appears
+  relevantSourcesAndAuthorityIfNeeded: relevant event record and evidence for the attribution. Consult the responsible source for an official ruling or ethics guidance for a consequential harm question
   blockedAgencyOverread: live focalization is not settled blame or capability assessment
   repairAction: mark provisional interpretation and later source-return route
 ```
 
-Before relying on a strong agency claim, resolve the actual ambiguity in the text. A compact explanation can identify the acting system, the decision or the limited metaphor. Use a record only when its later use warrants one; lowering every verb to “is presented as” would itself obscure real actions.
+Where a figurative phrase leaves consequential agency unclear, identify the acting participant, the decision or the limits of the metaphor. Preserve verbs that accurately describe real actions. Keep a separate record when a later use needs it.
 
 #### NSTD.4:5.5 - Worked case: continue a voice, then change the genre
 
-This constructed case teaches how an author derives and revises a speaking treatment. The sensor facts are supplied material for that work; diagnosing sensors is not the lesson. Mira, her accepted passages and all drafts below are invented for the example.
+Mira, her selected passages and the drafts below are constructed for this example. The editor’s question is how to carry a speaking relationship between two genres. The sensor data are given.
 
 Mira wants an editor to continue a reflective essay for technically capable readers. She selects these two passages as models:
 
@@ -284,29 +284,29 @@ Mira wants an editor to continue a reflective essay for technically capable read
 
 > I like a difficult detail to earn its place. Show me the detail, and then show me what it changes.
 
-The editor can point to a concrete discrepancy before judgement, a shorter reflective turn after the detail, and an invitation to examine its consequence. These are choices for this continuation, not a complete account of Mira's style. The first passage's personal recollection belongs to its stipulated occasion; it does not authorize a new remembered event.
+The selected passages present a discrepancy before judging it, follow a concrete detail with a shorter reflective turn and invite the reader to examine its consequence. The editor uses these choices for this continuation. Mira recalls opening the notebook in the first model passage. An unrelated memory would need its own basis.
 
-The new material is limited: a report gives three tests at 20 °C, each with absolute measurement error within 1 °C; it supplies no tests below 5 °C. The proposed cold store operates below 5 °C and requires that same error limit. The essay has just introduced a proposed purchase; its next passage will discuss the additional evidence to obtain.
+The new report describes three tests at 20 °C, each within 1 °C absolute error. It supplies no results below 5 °C. The proposed cold store operates below 5 °C and requires the same error limit. The essay has introduced the purchase and will now discuss what evidence would support it.
 
 An initial treatment tries to make the voice warmer:
 
 > I remember shivering in that cold store while the sensor lied to me. Surely we all know that three comfortable tests do not tell the whole story.
 
-The editor rejects two specific choices. The opening invents experience absent from the material. The closing asks the reader to share a judgement before seeing the decisive conditions. Adding Mira's short sentences or “I” would leave both problems. The next treatment instead uses her example's movement from detail to bounded judgement:
+The editor rejects the invented memory and the appeal to a shared judgement before the reader can inspect the conditions. The next passage follows the selected models from a concrete detail to a limited conclusion.
 
-> The report gives a small, tidy success: in three tests at 20 °C, the sensor's absolute error stayed within 1 °C. The proposed cold store operates below 5 °C. There are no test results for that range. A colder room is doing rather a lot of work in this purchase decision. Before selecting the sensor, we need adequate evidence that it meets the same error limit in its intended operating range.
+> The report gives a small, tidy success. Three tests at 20 °C, each within the 1 °C limit. Our proposed cold store runs below 5 °C. The report is silent about that range. A colder room is doing rather a lot of work in this purchase decision. Before recommending the sensor for use in the cold store, we need evidence that it meets the same limit in the cold.
 
-Read between the purchase proposal and the next paragraph, the passage supplies a reason to seek the additional evidence. The lightly ironic fourth sentence belongs to the selected essay treatment. The final “we” includes the writer and reader in the decision being examined; another relationship could state “the purchaser needs” instead. Neither choice is a general recipe for voice.
+Between the purchase proposal and the next paragraph, the passage gives a reason to seek cold-range evidence. The lightly ironic sentence about the colder room belongs to this essay. The final “we” can include the writer and reader in examining a recommendation. Purchase authority belongs to the holder designated for that decision.
 
-The comparisons yield different conclusions. The passage realizes the selected progression and restrained irony; that is the editor's explicit fit judgement in this constructed case. It retains the test conditions, missing range and decision criterion without inventing a failure in cold conditions. It gives a proposed next action. To claim Mira's acceptance, the editor would need her judgement of the continuation; to claim reader recognition or learning, the editor would need the corresponding reader response. The present comparisons already support a concrete editorial choice without those stronger conclusions.
+In this constructed case the editor judges that the draft preserves the chosen progression and restrained irony. It states the single test temperature and the limit of the available report without inventing a cold-range failure. It also gives a proposed next step. To attribute acceptance to Mira or recognition to a reader, use evidence of that response. A claim of learning needs evidence of the resulting capability and its conditions.
 
 Now Mira needs a formal recommendation to a purchasing committee. The intended voice still treats the reader as capable and makes the decisive limitation inspectable, but the committee needs the recommendation immediately. The editor retains that relationship, moves the decision first and drops the reflective joke:
 
-> Defer selection until adequate evidence establishes that the sensor meets the 1 °C error limit in the cold store's operating range. The three reported tests met that limit at 20 °C; no results below 5 °C are supplied.
+> Defer selection until adequate evidence establishes that the sensor meets the 1 °C error limit in the cold store’s operating range. The three reported tests met the limit at 20 °C. This report supplies no results below 5 °C.
 
 This changed occasion alters order, rhythm and address while retaining the evidence-to-judgement relation. Blindly retaining the joke or first-person recollection would have mistaken a local realization for the whole voice. If Mira instead required a deliberately personal public statement, that different choice would reopen the treatment, not the supplied temperature facts.
 
-The general result is the construction used to make both decisions: select a speaker relationship and usable examples, derive choices from expression, compose the needed thought, compare voice, meaning and intended use separately, then revise the properties whose contribution changes with the occasion.
+In both versions, choose the intended relationship, use the expressions relevant to that occasion and compare manner, meaning and use. For a new narrator, the writer can instead select a relationship and try it directly, as in the next case.
 
 #### NSTD.4:5.6 - Unlike entry: make a new fictional narrator
 
@@ -316,9 +316,9 @@ A writer has no prior voice to imitate. The scene premise is that a novice night
 
 > I turned the key under the lamp. What did it open? Then I pushed it farther away. There was no reason for that, of course.
 
-The first trial chooses a distant reporting voice. In the second, examining the key and asking what it opens express curiosity; pushing it away and denying a reason expose guarded unease. The writer chooses this combination for the scene, while retaining the guard's ignorance about the key's origin and purpose. “Guarded curiosity” now directs the next passage through these connected expressive choices. If the scene later reveals the origin to the reader but not the guard, the writer must maintain that knowledge difference; a change of voice cannot give the guard the missing discovery.
+The first trial chooses a distant reporting voice. In the second, examining the key and asking what it opens express curiosity. Pushing it away and denying a reason suggest unease. The writer chooses that combination while preserving the guard’s ignorance of the key’s origin and purpose. A later scene can disclose the origin while the guard still lacks access. Maintain that difference in the account. A particular reader may know it earlier or miss the disclosure.
 
-The actions in the second trial are newly constructed story events, which NSTD.10 can develop or revise. They are not facts recovered from the initial premise or a real guard's report. Here invention is appropriate to the fictional task. The difference from Mira's essay is consequential: there is no existing person's voice to authenticate or memory to preserve, but the chosen relationship, continuity and comparison of actual expression still guide the work.
+Turning the key and pushing it away are new fictional events introduced by the second trial. NSTD.10 can develop them against the scene’s premises. Unlike Mira’s essay, this task calls for an invented speaker. The speaking relationship and the continuity of the resulting events still have to work in the actual passage.
 
 ### NSTD.4:6 - Bias-Annotation
 
@@ -331,22 +331,22 @@ A memorable habit can be overgeneralized into an author's whole voice; a fluent 
 | Check | Passing condition |
 | --- | --- |
 | `CC-NSTD4-1` | Viewpoint, voice, focalized object, or protagonist choice is named when load-bearing. |
-| `CC-NSTD4-2` | The reader can recover the visible and hidden relations that matter for the intended use. |
+| `CC-NSTD4-2` | The assessment identifies the relations made available or concealed by the viewpoint under the assumed knowledge. Claims about a particular reading use evidence of the interpretation at issue. |
 | `CC-NSTD4-3` | Narrative function, real participant, local system-role kind, obtaining assignment, capability and responsibility are distinguished wherever the claim depends on them. |
 | `CC-NSTD4-4` | Precise agency and Work claims use their current defining conditions; ordinary contribution wording does not require an invented assignment or Work record. |
-| `CC-NSTD4-5` | A misleading personification is clarified or changed; an already clear metaphor needs no extra disclaimer. |
+| `CC-NSTD4-5` | A figurative phrase that invites a consequential misattribution is clarified. Ordinary unambiguous metonymy can remain. |
 | `CC-NSTD4-6` | When a voice is being constructed or preserved, the intended speaker relationship and basis are usable: authentic or accepted examples, an identified stylization, or a chosen new treatment. A label alone does not settle the expression. |
 | `CC-NSTD4-7` | The connected fragment realizes the relevant choices while retaining the needed thought, intellectual level and warranted speaker position. |
 | `CC-NSTD4-8` | A consequential change of subject, genre or language receives its own treatment; retained and altered properties have a reason in the new use. |
-| `CC-NSTD4-9` | Voice fit, source or premise fidelity, and reader performance are distinguished. The comparison supports the stated conclusion, and the repair reopens its affected dependencies. |
+| `CC-NSTD4-9` | Voice fit, fidelity to source or premises and actual reader performance have grounds suited to each claim. After a change, reconsider the relations that depended on it. |
 
 ### NSTD.4:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | What fails | Repair |
 | --- | --- | --- |
-| Protagonist as responsible agent | Narrative centrality becomes moral or operational responsibility. | Split protagonist function from `A.13`, `A.2.1`, and ethics owner claims. |
-| Hidden participant | “The specification decided” leaves a consequential decision-maker unidentified. | Name the person, team or technical system that made the decision and the applicable assignment when required. Preserve harmless metonymy when the action is already clear. |
-| Viewpoint hides harmed party | A compelling viewpoint erases affected parties. | Route to `D.1` through `D.5` and add a source-return or viewpoint correction. |
+| Protagonist as responsible agent | Narrative centrality is used to attribute moral or operational responsibility. | Identify the protagonist’s function in the telling. Use `A.13`, `A.2.1` and the relevant ethics guidance when the corresponding real agency, assignment or responsibility is at issue. |
+| Hidden participant | “The specification decided” obscures who made a consequential decision. | Identify who chose and the applicable authority. Keep ordinary metonymy when the choice and its holder are already clear. |
+| Viewpoint hides an affected party | A compelling account omits a consequence that matters to someone affected. | Recover the relevant perspective or source and correct the account if needed. Use `D.1`–`D.5` when a value or harm conflict requires resolution. |
 | Voice by label | “Warm,” “expert” or a person's name leaves the actual manner undefined. | Use relevant expression or a selected trial to show how the speaker develops a thought with this reader. |
 | Mannerism as preservation | A joke or catchphrase survives while the difficult idea or speaking relationship disappears. | Restore the needed thought and choose the expression for its contribution here. |
 | Invented personal authority | First person turns a constructed scene or editorial inference into apparent experience. | Recover the actual basis or state the construction; preserve legitimate first-person expression. |
@@ -354,32 +354,32 @@ A memorable habit can be overgeneralized into an author's whole voice; a fluent 
 
 ### NSTD.4:9 - Consequences
 
-The benefit is a usable way to obtain and continue the requested voice, including a reasoned change of treatment when the occasion changes. The resulting viewpoint retains clearer attribution and recoverable information. The cost is selecting a useful basis and comparing actual passages; a short trial or clarification can be enough. A maintained profile or broader reader study earns its cost only when the intended use needs the additional result.
+A writer can continue or change a voice with grounds for the choices that matter on the new occasion. An assessment may instead identify how an existing passage handled viewpoint and attribution. A profile or study of reader response is worth its added cost when the task requires what that further work can establish.
 
 ### NSTD.4:10 - Rationale
 
 Voice and focalization change how a reader encounters events, knowledge and consequences. Relating expressive choices to a speaking relationship explains why some can carry into a new passage while others must change. Comparing connected expression makes that choice inspectable without reducing a voice to a fixed list of words or sentence lengths.
 
-Meaning and attribution constrain this construction because the chosen expression invites inferences about who knows, experiences or does what. A single viewpoint is often sufficient for a scene; an explanation or decision may need another perspective when the first conceals a relevant participant or relation. Separate comparisons keep a successful manner from standing in for those different grounds. The method is a reasoned authoring synthesis.
+The chosen expression invites inferences about who knows, experiences or acts. One viewpoint can suffice for a scene. An account may need another when the first hides a relation the reader must recover. Compare fit of manner, support for the expressed claims and reader response under the conditions each conclusion requires. The construction is an authoring synthesis. Its success rate across languages, authors or readers would require evidence across those uses.
 
 ### NSTD.4:11 - SoTA-Echoing
 
-Schmid's [Narratology: An Introduction](https://doi.org/10.1515/9783110226324) and Chihaia's [survey of introductions](https://www.diegesis.uni-wuppertal.de/index.php/diegesis/article/view/71) are historical anchors for voice, viewpoint and narratological traditions. Chen and Xu's [perspective and focalization study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12937883/) (2026) found differences in reading-time and neural responses in its novel-reading tasks; it does not establish a universally better perspective. Nguyen-Trung and Nguyen's [NITA](https://doi.org/10.1080/14780887.2026.2638348) (2026) preserves the qualitative researcher's interpretive contribution. The distinction here between narrative function and actual agency is the DPF's synthesis with FPF, not a result established by those reading experiments.
+Schmid’s [Narratology: An Introduction](https://doi.org/10.1515/9783110226324) and Chihaia’s [survey of introductions](https://www.diegesis.uni-wuppertal.de/index.php/diegesis/article/view/71) locate voice and focalization in their narratological traditions. In Chen and Xu’s [perspective and focalization study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12937883/) (2026), third-person versions of negatively valenced texts took longer to read in two of the measured regions of text. The study found no significant perspective effect on reading times in the internal-focalization condition. Some fNIRS channels differed across conditions. These observations concern those tasks. Nguyen-Trung and Nguyen’s [NITA](https://doi.org/10.1080/14780887.2026.2638348) (2026) assigns interpretation to the qualitative researcher. The distinction between narrative function and real agency here draws on FPF.
 
-For the database explanation, keeping the personification alone is a serious alternative: it is short and memorable. Adding the commit condition makes the latency consequence available for diagnosis while retaining the introduction. This is the pattern's selected combination of narrative viewpoint and explicit attribution. Its cost is a short technical clarification, justified here by the diagnostic use; purely expressive uses need a different comparison.
+For the database case, the short personification may serve an expressive purpose. For latency diagnosis, add the commit prerequisite and determine whether its wait extends the request’s critical path. A timed trace may already supply that answer for the request investigated.
 
-Use the cited traditions for their distinct contributions. Narratology supplies voice and focalization; perspective-processing studies show that viewpoint can change reading responses in the studied conditions. NITA concerns interpretation in qualitative research, not mandatory human approval of every generated story. FPF's role and agency distinctions apply when a real attribution needs to be resolved.
+Use narratology for the distinction between voice and focalization, and studies of reading for the responses observed under their conditions. NITA assigns a particular interpretive role to a human qualitative researcher. For a real attribution of role, action or authority, apply the relevant FPF distinction.
 
-For constructing a continuing voice, Kumar et al.'s [Whose story is it?](https://aclanthology.org/2025.ijcnlp-long.82/) (2025, §§3–4) derives author tendencies as claims tied to story excerpts, then tailors generation instructions to a new prompt. This pattern adopts the useful claim-to-expression relation without requiring their complete profile or comparative generation procedure. Their story-generation evaluation is a bounded result; it does not establish faithful preservation for any individual draft or transfer across languages and genres.
+Kumar et al.’s [Whose story is it?](https://aclanthology.org/2025.ijcnlp-long.82/) (2025, §§3–4) ties proposed author tendencies to story excerpts and uses them to tailor generation instructions. An editor can use the connection between a proposed tendency and a passage showing it. The study’s story-generation comparisons do not settle whether a particular new draft preserves its author’s voice in another language or genre.
 
-Two 2026 preprints qualify the choice. Zhang, Bu and Dhillon's [Who Owns the Text?](https://arxiv.org/html/2601.10236v1) distinguishes an assistant's coaching persona from personalization to the writer's style; its short writing tasks and combined design do not establish each design element's isolated effect. Van Nuenen's [Voice Under Revision](https://arxiv.org/html/2604.22142v1) finds aggregate stylistic shifts in English personal narratives even under preservation instructions. Its measured features are proxies, not a determination of any particular reader's recognition. These results support inspecting the actual rewrite, not a universal profile, approval sequence or diagnostic score.
+Two 2026 preprints examine related questions. Zhang, Bu and Dhillon’s [Who Owns the Text?](https://arxiv.org/html/2601.10236v1) distinguishes a coaching persona from personalization to a writer’s style. The short tasks and combined design limit claims about each element’s individual effect. Van Nuenen’s [Voice Under Revision](https://arxiv.org/html/2604.22142v1) reports aggregate stylistic shifts in English personal narratives even with preservation instructions. Its measured features can locate changes to inspect. Reader recognition requires evidence of how a reader responded to a particular passage.
 
-Direct use of an apt example is a serious alternative to an explicit profile: it retains expression that a summary can miss and can be sufficient for a short continuation. Working observations help when several contributors, a changed genre or a recurrent loss make the relevant choices hard to carry. A broader maintained profile costs more to construct and can overgeneralize the samples; use it when repeated work benefits from that additional account. In all three arrangements, the decisive comparison concerns the new passage, its required content and its use. The construction across existing voices, stylization and new narrators in NSTD.4:4 is this DPF's synthesis.
+For a short continuation, an apt example can preserve a way of speaking that a summary would lose. Working observations can help several contributors, a change of genre or a recurring difficulty. A maintained profile can be worthwhile for repeated work, though it takes time and can overgeneralize the sample. Compare the actual new passage with its material and purpose in all three cases. Section 4 brings continuing voices, stylization and new narrators into one authoring method. The cited studies test particular writing and reading conditions.
 
 ### NSTD.4:12 - Relations
 
-NSTD.1 supplies the intended reader and selected material when these are already understood. NSTD.5 develops an expressive device within the chosen relationship; a better device can reopen the voice treatment. NSTD.7 carries the examples, choices and constraints into automated composition and compares the output. NSTD.6 qualifies an evaluation; F.19 checks consequential meaning and action in technical prose. NSTD.9 and NSTD.10 receive unresolved interpretation and fictional construction respectively.
+Use NSTD.1 when the intended reader or material needs clarification. NSTD.5 can develop an expressive device, NSTD.7 can supply a tool-assisted composition for comparison and NSTD.6 qualifies a question about quality or reception. F.19 helps recover consequential meaning and action in technical prose. Use NSTD.9 for unresolved interpretation and NSTD.10 for a needed fictional or explicitly hypothetical construction.
 
-Uses `A.6.3.NAR`, `A.13`, `A.2`, `A.2.1`, `A.2.2`, `A.19.ECS`, `C.16`, `D.1` through `D.5`, `A.10`, `B.3`, and `G.11` for their corresponding claims. Reopen the affected passage when the speaker relationship, selected model, content, genre, language or intended use changes; also reopen when viewpoint changes source visibility or a changed source or agency basis alters attribution. Support-map entry: open `Architecture and Narrative Work Bridge` when viewpoint or focalization is really an architecture view and viewpoint over selected structures; open `Semiotic And Language-Precision Bridge` when voice, focalization, salience, sign, or language-state choice changes interpretation; open `NSTD.Reference:11 — Working meanings and direct source returns` when protagonist, actant, agency, personification, or responsibility wording needs owner split.
+Use `A.6.3.NAR` for narrative form. For real roles, agency, capability or their measurement, use the conditions in §4.6 for `A.2`, `A.2.1`, `A.13`, `A.2.2`, `A.19.ECS` and `C.16`. Use `D.1`–`D.5` for a consequential value or harm conflict, `A.10` when an evidence route must be recovered or made reproducible, `B.3` when a claim’s reliability matters and `G.11` when a changed basis affects a maintained account. Reconsider the passage when its speaker, model, content, genre, language, use or relevant source changes. The Architecture and Narrative Work Bridge addresses an actual architecture view, the Semiotic and Language-Precision Bridge a sign or language choice that affects interpretation, and NSTD.Reference:11 the relevant term and its defining practice.
 
 ### NSTD.4:End

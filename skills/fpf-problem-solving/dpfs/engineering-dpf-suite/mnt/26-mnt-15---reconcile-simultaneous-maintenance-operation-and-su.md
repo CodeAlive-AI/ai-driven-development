@@ -17,7 +17,7 @@ Solving one local conflict can move the burden to operation, an unqualified prov
 
 ### MNT.15:3 - Forces
 
-Shared resources improve utilization while making simultaneous commitments fragile. Combining outages can reduce disruption but increase interference and recovery consequences. Extra capacity can resolve a timing conflict only if it is actually capable, available and permitted. The arrangement must preserve the relevant service and protection conditions as a whole.
+Shared resources improve utilization while making simultaneous commitments fragile. Combining outages can reduce disruption but increase interference and recovery consequences. Extra capacity can resolve a timing conflict only if it is capable, available and permitted. The arrangement must preserve the relevant service and protection conditions as a whole.
 
 ### MNT.15:4 - Solution
 
@@ -33,7 +33,7 @@ Evaluate what each apparent repair moves elsewhere. A second provider may need a
 
 If the conflict requires a different organization of the practice, use [FPF C.32.MWA](../../../sections/09-part-c---kernel-extension-specifications/82-c-32-mwa---synthesize-an-architecture-account-of-methods-and.md) or [FPF C.32.MWA.PP](../../../sections/09-part-c---kernel-extension-specifications/83-c-32-mwa-pp---construct-and-compare-method-performance-and-p.md) to compare the relevant Method, Work, System, provider and description structures. Preserve their actual relations rather than making one universal layer stack. If the simple bound already answers the question, stop there.
 
-Return the selected arrangement or the combined commitment that cannot be met. Identify the people with authority over the changed work and operation. Reopen when a shared resource, interruption, protection condition or service requirement changes.
+Return the selected arrangement or the combined commitment that cannot be met. Identify who has authority over the changed work and operation. Reopen when a shared resource, interruption, protection condition or service requirement changes.
 
 ### MNT.15:5 - Archetypal Grounding
 
@@ -41,7 +41,7 @@ APP-MNT-03 uses a constructed packaging-plant arrangement. Two jobs each require
 
 Preparatory work can overlap continuing production where its access and resources permit. That does not create a second specialist. Reordering two four-hour demands also cannot make their total fit the same six-hour single-person window.
 
-The team compares deferring the lower-consequence job, obtaining another suitable window, using a genuinely qualified additional provider or changing the supported operating arrangement. [MNT.6](17-mnt-6---diagnose-condition-and-choose-a-maintenance-response.md) supplies the consequence of deferral; [MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) establishes any added provider's readiness. The selected alternative changes a real constraint rather than the appearance of the schedule.
+The team compares deferring the lower-consequence job, obtaining another suitable window, using a qualified additional provider or changing the supported operating arrangement. [MNT.6](17-mnt-6---diagnose-condition-and-choose-a-maintenance-response.md) supplies the consequence of deferral; [MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) establishes any added provider's readiness. The selected alternative changes a real constraint rather than the appearance of the schedule.
 
 If an unplanned extension would leave the specialist unable to perform the later protected task adequately, the allocation or timing changes.
 
@@ -51,7 +51,7 @@ The common standby can also affect an action inside a job while the job is under
 
 ### MNT.15:6 - Bias-Annotation
 
-Local planners see their own job's benefits and can assume a shared resource is available because it appears in their plan. Cross-team costs are often assigned to “coordination” without anyone receiving the actual unresolved demand. Name the consuming work and affected operation.
+Local planners see their own job's benefits and can assume a shared resource is available because it appears in their plan. Cross-team costs are often assigned to “coordination” without anyone receiving the unresolved demand. Name the consuming work and affected operation.
 
 ### MNT.15:7 - Conformance Checklist
 
@@ -61,7 +61,7 @@ A supported simple bound can complete the question. A comprehensive architecture
 
 ### MNT.15:8 - Common Anti-Patterns and How to Avoid Them
 
-Both jobs are approved, so the programme is assumed feasible. Check the whole shared demand. A second team is added on paper while both depend on the same specialist or tool. Recover the actual independence.
+Both jobs are approved, so the programme is assumed feasible. Check the whole shared demand. A second team is added on paper while both depend on the same specialist or tool. Check whether the teams can draw on independently available resources.
 
 A schedule conflict becomes a universal reorganization project. Use the smallest constraint or structure set that resolves the present coordination question.
 
@@ -71,9 +71,9 @@ The combined arrangement can be judged on actual capacity, service and protectio
 
 ### MNT.15:10 - Architectural Rationale
 
-[MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) coordinates an intervention with continuing operation; this Method addresses simultaneous commitments whose common conditions cannot be established pairwise. It reuses general cross-structure synthesis only when that larger question is real.
+[MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) coordinates an intervention with continuing operation; this Method addresses simultaneous commitments whose common conditions cannot be established pairwise. It reuses general cross-structure synthesis when explaining the conflict requires more than the shared timing or resource bound.
 
-The example's arithmetic is deliberately simple. A more elaborate optimizer is justified by an unresolved decision, not by the existence of several jobs.
+The two jobs need eight specialist hours and the window provides six. A more elaborate optimizer is justified by an unresolved decision, not by the existence of several jobs.
 
 ### MNT.15:11 - SoTA-Echoing
 

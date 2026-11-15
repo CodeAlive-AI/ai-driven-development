@@ -7,15 +7,15 @@
 
 **Use this when** a planner and a lower controller have been chosen, but their combined behavior is not determined by their separate models. A reference jump, stale state estimate, model reset or held input may be the event that makes the connection fail.
 
-Start with one command actually received by the lower computation: what quantity it represents, when it applies and how it becomes an actuator action. The first useful result is the connected evolution of plant, planning state and interface error, including the events between updates.
+Start with one command received by the lower computation: what quantity it represents, when it applies and how it becomes an actuator action. The first useful result is the connected evolution of plant, planning state and interface error, including the events between updates.
 
-If a qualified interface already supplies this evolution under the current timing and command conditions, reuse it. A diagram or a matching data type is not that result.
+If a qualified interface supplies this evolution under the current timing and command conditions, reuse it. A diagram or a matching data type is not that result.
 
 ### CAD.2:2 - Problem
 
 Models can agree at one exchange instant while diverging between exchanges. A planning state can be initialized from the plant without representing every relevant plant state. A controller can track a smooth signal yet fail when the implemented interface replaces it by steps.
 
-The interface must therefore be designed as behavior over time, not just as a list of variables.
+Design how the exchanged variables affect the connected system over time.
 
 ### CAD.2:3 - Forces
 
@@ -44,7 +44,7 @@ Output agreement requires the second term to vanish or be included in the bound.
 
 #### CAD.2:4.2 - Derive the error instead of assuming tracking
 
-For a useful linear branch, express both models at the fast sampling instants:
+For the linear case, express both models at the fast sampling instants:
 
 $$
 x^+=Ax+Bu+w,\qquad z^+=A_pz+B_pv.
@@ -56,7 +56,7 @@ $$
 u=K(x-Pz)+Qz+Rv.
 $$
 
-Substitute $x=Pz+e$ before simplifying. The actual error equation is
+Substitute $x=Pz+e$ before simplifying. The error equation is
 
 $$
 e^+=Fe+Hz+Gv+w,
@@ -64,7 +64,7 @@ e^+=Fe+Hz+Gv+w,
 F=A+BK,\quad H=AP+BQ-PA_p,\quad G=BR-PB_p.
 $$
 
-This calculation makes three design choices visible. K changes error correction; P and Q determine whether the nominal state evolution can match; R determines input matching. Solving $H=0$ is useful when possible but is not automatically possible or necessary. If it fails, retain $Hz$ and bound or redesign it. A stable F does not remove forced error from H, G or w.
+This calculation makes three design choices visible. K changes error correction; P and Q determine whether the nominal state evolution can match; R determines input matching. Solving $H=0$, when possible, removes the nominal state residual. If a mismatch remains, retain $Hz$ in the error equation and bound it, or redesign the interface. A stable F does not remove forced error from H, G or w.
 
 Use MMP.9 to construct and qualify a reduced model before relying on it here. A fitted upper model with unexamined hidden-state memory is not made adequate by a convenient matrix dimension.
 
@@ -86,17 +86,17 @@ $$
 
 A reset is thus an error input, even when the tracker is stable. If the planner instead propagates z every fast step, use that evolution in :4.2; do not also treat z as held.
 
-Model a known delay through the state and commands actually available to the controller. Replacing $x_k$ by $x_{k-d}$ changes the law; augmenting the state with the necessary history is one way to derive its dynamics. If an estimator supplies x, include estimation error and its qualification. A full-state result cannot simply be relabeled output feedback.
+Model a known delay through the state and commands available to the controller. Replacing $x_k$ by $x_{k-d}$ changes the law; augmenting the state with the necessary history is one way to derive its dynamics. If an estimator supplies x, include estimation error and its qualification. A full-state result cannot simply be relabeled output feedback.
 
 A variable delay or missed update needs an explicit admissible timing set and an error model covering it. A bound for one fixed period does not establish a bound for arbitrary switching among periods.
 
 #### CAD.2:4.4 - Return an interface that can be tested and changed
 
-Give CAD.3 the combined evolution, initial-error condition, admissible command class, mismatch class and exact moments at which each required constraint must hold. Retain the meaning and time convention of every exchanged quantity.
+Give CAD.3 the combined evolution, initial-error condition, admissible command class, mismatch class and exact moments at which each required constraint must hold. Use any form that conveys these design values and preserves the meaning and time convention of every exchanged quantity.
 
 A failed error bound has several possible repairs: change the reconstruction, retain an omitted mode, alter feedforward, reduce command jumps, supply an interpolated segment, shorten latency or choose another split. The error equation identifies which change addresses the failure. Do not reflexively raise every update rate.
 
-Test the actual exchange implementation with boundary events: simultaneous update, maximum permitted delay, reset, command reversal and missing command. These tests can falsify the model of the interface; they do not prove its physical assumptions.
+Test the exchange implementation with boundary events: simultaneous update, maximum permitted delay, reset, command reversal and missing command. These tests can falsify the model of the interface; they do not prove its physical assumptions.
 
 ### CAD.2:5 - Archetypal Grounding
 
@@ -161,15 +161,15 @@ The reconstructed state provides a mathematical reference for comparing the plan
 
 ### CAD.2:11 - SoTA-Echoing
 
-**Which relation between planning and realization is sufficient to use?** For the stated linear branch, the selected construction is an explicit state reconstruction and tracking interface, followed by residual and event equations. It adopts the tracking-law form used by [Stamouli, Tsiamis, Morari and Pappas, §3.2, Theorem 1](https://arxiv.org/html/2504.10461): feedback on the reconstructed-state error with nominal and input feedforward terms. The serious matching-model alternative is a discrete-time simulation-function construction; its usable output-distance guarantee still needs a verified invariant sublevel set, not only decrease outside it. Section :4.2 adapts the law by retaining nonzero nominal mismatch H and bounded w; :4.1 also retains the output-matching residual. These substitutions do not inherit the source theorem: CAD.3 derives the bound for the resulting equation.
+**Which relation between planning and realization is sufficient to use?** For the stated linear branch, define the state reconstruction and tracking interface, then derive the residual and event equations. The tracking law follows the form used by [Stamouli, Tsiamis, Morari and Pappas, §3.2, Theorem 1](https://arxiv.org/html/2504.10461): feedback on the reconstructed-state error with nominal and input feedforward terms. A matching-model alternative is a discrete-time simulation-function construction; its usable output-distance guarantee needs a verified invariant sublevel set, not only decrease outside it. Section :4.2 adapts the law by retaining nonzero nominal mismatch H and bounded w; :4.1 also retains the output-matching residual. These substitutions do not inherit the source theorem: CAD.3 derives the bound for the resulting equation.
 
-This choice makes a failed exact match actionable, at the cost of bounding more forcing and possibly shrinking the usable command domain. If the existing closed-loop model already supports a governor, use that whole model as explained in [CAD.Reference:4.5.1](04-cad-reference-4---the-layered-planning-and-feedback-branch.md#cadreference451---keep-a-qualified-loop-and-govern-its-commands); adding a reduced planning model and P is unnecessary unless it supplies a useful decision or computational gain. The held-value and continuous-segment cases in :5 are constructed applications of the residual equation, not interchangeable implementations of one reference.
+This choice makes a failed exact match actionable, at the cost of bounding more forcing and possibly shrinking the usable command domain. If the existing closed-loop model supports a governor, use that whole model as explained in [CAD.Reference:4.5.1](04-cad-reference-4---the-layered-planning-and-feedback-branch.md#cadreference451---keep-a-qualified-loop-and-govern-its-commands); adding a reduced planning model and P is unnecessary unless it supplies a useful decision or computational gain. The held-value and continuous-segment cases in :5 are constructed applications of the residual equation, not interchangeable implementations of one reference.
 
-For partial observations, [Castroviejo-Fernandez and colleagues, §§3–6](https://arxiv.org/html/2401.02054v1) provide a developed alternative: state and disturbance estimation with time-dependent error bounds for reference governing. Adopt their requirement to carry observer error into constraint predictions when choosing that branch; its extra observer and set computations replace the full-state premise, not merely the notation x. Section :4.3 therefore returns an estimator-based implementation to the connected-dynamics derivation. Reopen the interface when its measured quantities, reconstruction, hold, interpolation, reset or delay changes; compare bounds and computation under the same actual exchange before choosing between these constructions.
+For partial observations, [Castroviejo-Fernandez and colleagues, §§3–6](https://arxiv.org/html/2401.02054v1) describe an alternative based on state and disturbance estimation with time-dependent error bounds for reference governing. Adopt their requirement to carry observer error into constraint predictions when choosing that branch; its extra observer and set computations replace the full-state premise, not merely the notation x. Section :4.3 therefore returns an estimator-based implementation to the connected-dynamics derivation. Reopen the interface when its measured quantities, reconstruction, hold, interpolation, reset or delay changes; compare bounds and computation for the same exchange behavior and timing before choosing between these constructions.
 
 ### CAD.2:12 - Relations
 
-CAD.1 supplies the decomposition and lost interactions. MMP.9 supplies a qualified reduction; MMP.18 supplies exchange and scale compatibility. CAD.3 consumes the derived error and timing modes. CAD.4 returns implementation changes that require this derivation to be reopened. C.30.LCA can then test whether a control-structure view exposes the relations that the construction actually uses.
+CAD.1 supplies the decomposition and lost interactions. MMP.9 supplies a qualified reduction; MMP.18 supplies exchange and scale compatibility. CAD.3 consumes the derived error and timing modes. CAD.4 returns implementation changes that require this derivation to be reopened. C.30.LCA can then test whether a control-structure view exposes the relations that the construction uses.
 
 CAD.5:4.7 supplies the estimate-based version of the interface when exact state is unavailable. It derives the additional forcing from estimation error; the observation model and timing must describe the same implemented loop.
 

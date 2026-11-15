@@ -4,4 +4,4 @@ The paying organisation, buyer, user, learner, referrer, organiser and provider 
 
 People who declined, could not gain access, needed unusual help or left early may reveal conditions that successful participants conceal. Include their relevant circumstances when the receiving question requires them. Avoid extrapolating from the customers easiest to contact or serve. An average can hide both an unserved group and a scarce contribution that makes the average possible.
 
-Evidence access and disclosure themselves have conditions. Reuse a result only for the permitted purpose and adequate population. Obtain an appropriate anonymised example or customer-local continuation when sharing identifiable material is unavailable. These are working conditions to resolve with the relevant holders, not assumptions granted by a common programme.
+Establish what evidence can be accessed and shared for the intended use. Reuse a result only for the permitted purpose and adequate population. Obtain an appropriate anonymised example or customer-local continuation when sharing identifiable material is unavailable. Resolve any missing permission with its holder.

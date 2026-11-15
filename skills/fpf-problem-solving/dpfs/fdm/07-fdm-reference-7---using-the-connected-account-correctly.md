@@ -1,7 +1,7 @@
 ## FDM.Reference:7 - Using the connected account correctly
 
-For a connected use, establish that the parties, positions, terms and times agree where the models join; that a conditional event remains conditional; and that the evidence supports the particular use or effect being asserted. Use the relevant pattern's substantive questions for its result. An adequate supplied result can be reused while its conditions hold.
+Where two models join, check that they refer to compatible parties, positions, terms and times. Preserve the conditions for any projected event. For a claim about use or effect, examine whether the evidence supports that particular occurrence and consequence. Reuse adequate results while their conditions hold.
 
-The examples expose three consequential mistakes: an amount field substituted for its financial meaning, a group aggregate substituted for available resources and a service output substituted for the participant's outcome. Recover the missing relation rather than adding another label. When only one such question is unresolved, the other adequate accounts remain usable.
+If an amount field is substituted for the amount due, recover the contractual meaning. If group cash is treated as available to one member, check that member’s access. If a service output is credited as a participant’s outcome, trace its actual use and contribution. Preserve unrelated conclusions that still have adequate grounds.
 
 For source qualifications, citation and edition information, see the [Sources and Edition Notes](14-financial-domain-modeling-principles-framework-sources-and-e.md).

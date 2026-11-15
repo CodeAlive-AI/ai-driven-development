@@ -8,7 +8,7 @@
 
 **Use this when** you can state the answer required from a finite input, but a procedure for obtaining it is missing or unaffordable. Parts of the task resemble the whole, or a transformation produces another instance whose answer could help. You need to choose those subproblems and determine what they must return.
 
-An engineer, researcher or AI agent may recognize a recursive formula yet be unable to turn an unfamiliar problem into one. A common difficulty appears at recombination: each part returns a correct answer to its own question, but those answers omit information needed for the whole. Another appears at progress: a call changes its input without bringing computation closer to a return.
+A practitioner may recognize a recursive formula yet be unable to turn an unfamiliar problem into one. A common difficulty appears at recombination: each part returns a correct answer to its own question, but those answers omit information needed for the whole. Another appears at progress: a call changes its input without bringing computation closer to a return.
 
 The gain is a recursive procedure with usable base cases, a reason its calls return, a justified way of combining their results and an initial account of its cost. The reader needs to follow finite case distinctions, functions and a simple inductive argument. MATH.4 can supply that argument; C.29.2 supplies the relation between a computational answer and the question it is meant to settle.
 
@@ -39,7 +39,7 @@ Choosing a familiar equation or writing a self-call does not settle those questi
 
 Describe an input `x`, the information available about it, and what a returned answer must allow its recipient to do. Asking for an optimum value, one attaining object, or every attaining object gives different result requirements. State the empty and degenerate cases when they belong to the input family.
 
-List the operations that can actually be performed on this input: inspect a constructor, split an interval, compare keys, compute a remainder, test a condition, or call a supplied procedure. A proposed step such as “choose the correct partition” remains a construction task until the partition can be obtained.
+List the operations available on this input: inspect a constructor, split an interval, compare keys, compute a remainder, test a condition, or call a supplied procedure. A proposed step such as “choose the correct partition” remains a construction task until the partition can be obtained.
 
 For example, maximum segment sum on a sequence of integers asks for a contiguous nonempty segment with largest sum. Returning its sum answers a value query; locating the segment also requires endpoints. Permitting the empty segment changes the base case and the answer on an all-negative input.
 
@@ -73,7 +73,7 @@ S = max(R.S, R.T + L.S)
 B = max(L.B, R.B, L.S + R.P)
 ```
 
-The alternatives in each maximum come from the possible locations of the corresponding segment. To return an actual segment, carry the endpoints attaining each selected prefix, suffix and best segment. Choose a consistent rule for ties when only one witness is wanted.
+The alternatives in each maximum come from the possible locations of the corresponding segment. To return a segment, carry the endpoints attaining each selected prefix, suffix and best segment. Choose a consistent rule for ties when only one witness is wanted.
 
 This is the algorithmic use of strengthening an inductive result in MATH.4. The additional design decision is what summary enables an affordable join for the chosen problem decomposition. Further questions may require a different summary.
 
@@ -85,7 +85,7 @@ For the segment procedure, a singleton `v` returns `(v,v,v,v)`. Split every long
 
 For nonnegative integers with `b>0`, Euclid's call `(a,b) → (b,a mod b)` decreases the second component because `0≤a mod b<b`. The first component may increase relative to its old value; it is the selected measure that must decrease. At `b=0`, return `a`, with the intended convention for `(0,0)` fixed separately.
 
-When a termination checker fails, inspect which decrease is absent from its account. A supplied difference, lexicographic measure or invariant may express the progress already present in the procedure. If progress is genuinely missing, repair the procedure or weaken its claimed result. A small successful run alone does not establish return on every allowed input.
+When a termination checker fails, inspect which decrease is absent from its account. A supplied difference, lexicographic measure or invariant may express the progress already present in the procedure. If progress is missing, repair the procedure or weaken its claimed result. A small successful run alone does not establish return on every allowed input.
 
 #### CMP.2:4.5 - Establish the result and expose its computational cost
 
@@ -119,9 +119,9 @@ If the next use also needs coefficients `u,v` with `u*a+v*b=gcd(a,b)`, the retur
 
 ### CMP.2:6 - Bias-Annotation
 
-Familiar syntax can make one decomposition appear inevitable. Compare its join and cost with another plausible decomposition when those differences can change the choice. Conversely, an elegant asymptotic bound can hide operations that the actual representation makes expensive.
+Familiar syntax can make one decomposition appear inevitable. Compare its join and cost with another plausible decomposition when those differences can change the choice. Conversely, an elegant asymptotic bound can hide operations that the representation in use makes expensive.
 
-A successful example demonstrates the construction and can expose a missing case. The general result depends on the base, joining and progress arguments, with any additional assurance selected for the actual use.
+A successful example demonstrates the construction and can expose a missing case. The general result depends on the base, joining and progress arguments, with any additional assurance selected for the intended use.
 
 ### CMP.2:7 - Conformance Checklist
 
@@ -155,7 +155,7 @@ MATH.4 supplies witness construction by induction; MATH.12 supplies extraction f
 
 ### CMP.2:11 - SoTA-Echoing
 
-[Erickson, *Algorithms*, chapter 1](https://jeffe.web.engr.illinois.edu/teaching/algorithms/book/01-recursion.pdf) develops recursion through reductions to simpler instances and separate correctness and running-time arguments. This remains a useful foundational construction line. Adopt the local design question about a correct smaller answer; adapt it by making the information required at the join explicit and testing a changed output request. A remembered recurrence alone supplies less help when the decomposition itself is missing.
+[Erickson, *Algorithms*, chapter 1](https://jeffe.web.engr.illinois.edu/teaching/algorithms/book/01-recursion.pdf) develops recursion through reductions to simpler instances and separate correctness and running-time arguments. Adopt the local design question about a correct smaller answer; adapt it by making the information required at the join explicit and testing a changed output request. A remembered recurrence alone supplies less help when the decomposition itself is missing.
 
 For the construction in :4.2–4.5, an available recurrence or input-structural split is the simpler alternative when it already returns enough information for the join and meets the cost requirement. Strengthening a subanswer is worth its extra work when that simpler return loses the requested result, as the four-value segment construction and coefficient-returning divisor procedure demonstrate. Reconsider this choice when a different output, representation or competing decomposition changes either sufficiency or total cost.
 

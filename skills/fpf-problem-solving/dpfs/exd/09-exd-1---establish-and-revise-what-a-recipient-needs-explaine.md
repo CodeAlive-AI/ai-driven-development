@@ -5,17 +5,17 @@
 
 ### EXD.1:1 - Problem frame
 
-Use this pattern when someone needs an explanation and the needed connection, contrast or use is still unclear, or when a contribution changes what the explanation should answer. The reader may be preparing a lesson, explaining a technical account, discussing advice or assisting a human–AI exchange.
+Use this method to establish what a recipient needs explained. The required connection, comparison or purpose may be unclear, or a later reply may change it. A teacher, technical specialist, adviser or service can use an existing request or exchange to establish the question.
 
-Begin with the recipient's request and the situation in which its answer matters. Ask the smallest question that distinguishes the consequential alternatives. A usable first result is a question the participants can answer under named conditions, together with the intended use and the subject input still needed.
+Begin with the request and the use the explanation must serve. If the request or other evidence already distinguishes the plausible questions, use it. If a consequential ambiguity remains, ask a focused question when feasible or state the conditional alternatives. Return the question, the intended use and any subject input or operation still needed.
 
-When a request already identifies a sufficient question, use it. “Show how the total of these eight values gives their mean” can lead directly to the available calculation. Additional elicitation is useful when it can change the next explanation.
+A request such as “Show how the total of these eight values gives their mean” can lead straight to the calculation. Seek clarification only when the answer could affect what needs explaining or how the recipient can use it.
 
 ### EXD.1:2 - Problem
 
 “Why is this wrong?” can hide several questions. The recipient may have made a calculation error, used a different aggregation rule, questioned a premise or asked whether the result serves a decision. Answering the first interpretation that comes to mind can produce a valid account whose decisive relation is irrelevant to the recipient.
 
-Preparation is also easy to misread. A course title, professional role or fluent acknowledgement does not reveal whether the person can use the particular relation needed now. Question work must recover enough of that local understanding to choose the next contribution without turning every request into an assessment session.
+A course title, professional role or fluent acknowledgement may leave it unclear whether a recipient can use a particular relation. Examine the available evidence of preparation when that distinction matters to the explanation. A simple request for an already known result can be answered directly.
 
 ### EXD.1:3 - Forces
 
@@ -23,72 +23,72 @@ Preparation is also easy to misread. A course title, professional role or fluent
 | --- | --- |
 | A quick answer and a consequential ambiguity | A short request may already be clear; a small clarification can also prevent a long explanation of the wrong question. |
 | The subject and the recipient's purpose | The subject constrains which answers are warranted. The recipient's purpose selects which of those answers is useful. |
-| Available knowledge and added burden | An initial attempt can reveal the missing relation, but requiring a demonstration adds work and can distract from a simple request. |
+| Available knowledge and added burden | An existing attempt may reveal the relation a recipient used. Asking for a new demonstration takes effort and may be unnecessary for a simple request. |
 | Continuity and revision | Earlier explanation can remain correct while a changed purpose makes another question current. |
 
 ### EXD.1:4 - Solution
 
 #### EXD.1:4.1 - Recover the requested connection and its use
 
-Start with the recipient's own words and the task at hand. Identify what the answer would let them infer, distinguish, predict, calculate or do. Keep the question and purpose distinguishable: “What is the average across these people?” asks for a statistic; “I need a fair comparison of branches” states a purpose whose rule of fairness remains to be settled.
+Start from the question as expressed in the available request, material or exchange. Identify what the answer should let the recipient infer, distinguish, predict, calculate or do. “What is the average across these people?” calls for a statistic. “I need a fair comparison of branches” identifies a purpose. Use any applicable weighting rule or identify what remains to be decided.
 
-When alternatives would lead to different answers, offer a brief discriminating clarification. For an average, ask whether each individual or each group should receive equal influence. For a recommendation, ask whether the recipient needs its existing grounds or evidence that following it will develop a capability. Choose the contrast from the actual task and available account.
+If different interpretations would change the answer, use relevant existing instructions or evidence of the recipient’s purpose. If the distinction remains open, ask a brief question or give conditional answers. For an average, determine whether each individual or each group should count equally. For advice, distinguish a request for the recommendation’s existing grounds from a question about evidence of expected development.
 
-Accept a clear answer, a corrected paraphrase or a still-unresolved choice. If the recipient cannot choose, state the conditional questions. “We can calculate either summary; we still need to decide which unit should count equally” is a useful result.
+Use a clear reply or an adequately supported interpretation. If the weighting target remains open, state the consequences. Equal group weights and equal individual weights call for different calculations. Identify the outstanding policy choice only when the task requires choosing between them.
 
 #### EXD.1:4.2 - Locate usable preparation at the needed grain
 
-Use what the recipient has already supplied: a question, attempted calculation, annotation, example, objection or description of intended use. If the next contribution depends on a particular prerequisite and that prerequisite is uncertain, ask for a small relevant inference. “What total does a group of six with mean eight contribute?” tests the needed relation more directly than asking whether the person knows statistics.
+Use a question, attempted calculation, annotation, objection or other contribution already available. If a relevant prerequisite remains uncertain and the distinction matters, ask for a small inference where that is feasible. For example, “What total does a group of six with mean eight contribute?” examines the link from count and mean to sum. A useful conditional explanation may still be possible without a reply.
 
-Treat the response as evidence about this task under its conditions. If you supply the multiplication step before the person answers, their later answer is assisted. Preserve that distinction when it matters to choosing help or judging independent use. A recipient asking for advice may need only a premise explained; an instructional diagnosis is then unnecessary.
+Interpret a response under the conditions in which it occurred. If you showed how to multiply count by mean before the reply, the recipient had that step available. Establish what they supplied before claiming independent use. In advising, explaining a disputed premise may already answer the request.
 
-When interaction is unavailable, prepare from the known audience and task. State assumptions that change the answer, expose the relevant alternatives in the text and provide a usable return. A reader can select an explicit branch without first completing a questionnaire.
+If dialogue is unavailable, work from the intended audience, the task and any relevant prior replies. State assumptions that matter and give conditional conclusions when the evidence leaves more than one interpretation open. A reader can use an explicit branch directly. When the short account omits a connection needed for that use, make the fuller account accessible.
 
 #### EXD.1:4.3 - Form the question that the subject can answer
 
-State the target relation, relevant conditions and the needed answer. A short sentence usually suffices: “For these eight values, why does equal weight per individual require weighting the group means by their counts?” Obtain its subject basis through [Obtain and Carry the Subject Explanation](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md).
+State the connection to explain, its consequential conditions and the answer sought. For example, “For these eight values, why does equal weight per individual require weighting the group means by their counts?” Use [Obtain and Carry the Subject Explanation](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md) for its subject basis, including a suitable existing derivation.
 
-If the requested connection lacks a warranted account, return that question to the relevant subject work. A causal claim may need an investigation; a recommendation may need another premise; a mathematical answer may need a definition or proof. Keep the question available while its needed subject basis remains unresolved. Polished wording cannot close a missing warrant.
+If the subject basis is incomplete, identify what the requested explanation depends on. A causal claim needs evidence of the proposed connection, a recommendation its decisive premises, and a mathematical step its definition or derivation. Use an existing qualified result where it answers the question. Otherwise give a conditional answer or state the limit. Further inquiry can supply a missing result when feasible and worth the effort.
 
 #### EXD.1:4.4 - Revise when a contribution changes the target
 
-Compare a new contribution with the current question. Does it reveal a different intended use, change a relevant condition, dispute the subject basis or expose an error under the same question? Make the consequence explicit in the next explanation.
+Compare a new contribution with the current question. Does it change the intended use or a relevant condition, challenge a premise, reveal an error under the same question or confirm that the existing account suffices? State the consequence for the explanation or for the account of the exchange.
 
-For a changed target, state the new question and what remains valid from the earlier answer. For an error under the same target, retain the target and repair the affected inference. For a disputed premise, recover or revise the subject account. In an exchange, use [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) to choose and interpret the next contribution.
+For a changed target, state the revised question and retain the earlier answer within its conditions. For an error under the same target, explain the affected inference. For a disputed premise, establish what the evidence supports or state the limit. In dialogue, use [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) to interpret the recipient’s contribution and decide whether a further response is needed.
 
-Stop when the question is clear enough to select the required account and a useful next explanation, or when a specific unresolved input has an actionable return. A formal question record is useful only when the work needs one.
+Finish when the question and its conditions are clear enough for the requested use, or identify the precise ambiguity or missing contribution that the available evidence cannot settle and where that contribution could come from. Record it in a separate form only if the work needs one.
 
 ### EXD.1:5 - Archetypal Grounding
 
-A learner asks why averaging two group means gave the wrong result. Group A has the values 2 and 4; group B has six values of 8. The initial task explicitly asks for the mean across all eight individuals. The learner can add and divide but has used (3 + 8) / 2 = 5.5.
+Suppose a learner asks why averaging two group means gave the wrong result. Group A contains 2 and 4, and group B six values of 8. The task explicitly calls for the mean across all eight individuals. The learner can add and divide but has calculated `(3 + 8)/2 = 5.5`.
 
-A useful question statement is: “Why do the group sizes matter when we give every individual equal weight?” The account reconstructs the group sums, 2 × 3 = 6 and 6 × 8 = 48, and divides 54 by eight to obtain 6.75. If the missing connection is that count multiplied by mean reconstructs sum, the explanation must expose it.
+The question is why group sizes matter when every individual receives equal weight. Multiplying each count by its mean recovers its group sum: `2 × 3 = 6` and `6 × 8 = 48`. Both sums belong in the numerator, and both counts in the denominator. The pooled mean is `(6 + 48)/(2 + 6) = 6.75`. Explain this connection when it is what the recipient lacks.
 
 The recipient then says, “For my report, I want each branch to count equally, regardless of how many people it has.” This explicitly selects a different aggregation rule, so the explainer can answer the revised question directly.
 
-The revised question is the equally weighted mean of the branch means. Its answer is 5.5. Close with the label and condition: “Mean of branch means, each branch weighted equally: 5.5.” The earlier 6.75 remains correct for the average across individuals. The management justification for choosing one summary still belongs to the report's decision.
+Under the revised rule, `(3 + 8)/2 = 5.5` is the mean of the two equally weighted branch means. The answer 6.75 still applies to the individuals. These labels and conditions can finish the explanation. If the report requires a choice of policy, use the applicable rule or refer the remaining choice to its holder.
 
-This is a constructed case. Its arithmetic fixes the local answer criteria; the conversation illustrates the proposed question work. It supplies no measured learning result.
+The case stipulates the exchange. The calculation gives the answer criteria for the two questions. A claim about what a learner actually learned requires evidence of that learning.
 
-In a different use, an adviser has explained why a bounded coordination assignment fits Mira's demonstrated strengths and available protected time. Mira asks why doing it would teach a missing capability. Recover the new learning question and obtain its learning rationale. Repeating the evidence of existing strengths does not supply that additional connection. If Mira instead understands the recommendation and prefers a course's social setting, the new contribution concerns preference and advising.
+An adviser has explained why an assignment fits Mira’s demonstrated strengths and available protected time. If Mira asks why it would teach a missing capability, explain the expected learning on its own grounds or state what remains unknown. Evidence of present strengths may already justify the original answer. If Mira understands the advice and prefers a course’s social setting, her reply establishes a preference relevant to the advice.
 
 ### EXD.1:6 - Bias-Annotation
 
-The explainer's expertise can make one interpretation seem inevitable. Begin with the actual requested use and keep a serious alternative visible when it would change the answer. A question bank can reveal possibilities, but its categories may constrain what recipients ask; allow them to supply their own question and reason.
+Expert familiarity may make one interpretation look inevitable. Check the requested use and a materially different question where one is plausible. A prepared question bank can prompt alternatives. When interacting with recipients, leave room for their own question and reason.
 
 The instructional case makes a correct answer easy to compute. In technical or advisory work, disagreement about the basis can remain unresolved even after the question is clear.
 
 ### EXD.1:7 - Conformance Checklist
 
-For recognition, locate a consequential ambiguity, missing prerequisite or changed question. If the supplied question already supports a useful answer, direct use is enough.
+Recognize a question-setting task when an ambiguity, changed purpose or relevant prerequisite matters. Use a sufficiently stated question directly.
 
-For assurance of this question result, check that:
+To assess the question and the grounds for interpreting it, check the applicable points below.
 
 - the question and the purpose can be distinguished;
-- the selected relation and action-changing conditions are explicit enough to choose a subject account;
-- any preparation claim has an actual task basis or is stated as an assumption;
-- the response to a new contribution revises the question, premise, help or interpretation where needed and preserves what remains adequate;
-- an unresolved input has a specific return, or the current question has a usable next answer.
+- The relation to explain and conditions that could change the answer are clear enough to select the subject account.
+- A statement about preparation identifies its task-relevant evidence or is identified as an assumption.
+- When a new contribution is available, interpret it in context. Revise the question, premise, help or interpretation where warranted and retain what the contribution leaves adequate.
+- The resulting question can be used, or the account identifies the remaining ambiguity, assumption or missing subject result and, where known, how to resolve it.
 
 These checks concern the question and its use. Retention and transfer need their corresponding evidence.
 
@@ -98,35 +98,35 @@ These checks concern the question and its use. Retention and transfer need their
 | --- | --- |
 | Repeating why 5.5 is wrong after the recipient selects equal branch weight | Restate the changed aggregation question and answer it under its own rule. |
 | Taking “I understand” or a qualification as evidence of the needed inference | Use an already available response or one relevant inference when that distinction can change assistance. |
-| Treating an elicited list as a complete account of the recipient's need | Ask what the question would help them do and allow an unlisted contribution. |
+| Treating an elicited list as a complete account of a recipient’s need | Consider what the explanation must support. Use available evidence of the recipient’s purpose and invite other contributions if clarification is needed. |
 | Reopening a clear request with an elaborate interview | Use the sufficient question and return to clarification only when a consequential uncertainty appears. |
 
 ### EXD.1:9 - Consequences
 
-The next explanation can target a relation the recipient needs and the subject can support. A changed purpose becomes a reason to revise the target rather than a reason to repeat or lengthen the same account.
+The question identifies the connection an explanation should address. A changed purpose may call for another account, while the earlier account remains valid within its original conditions. A finding about the change can be the complete result.
 
-This work costs attention and can expose a decision or source gap that the explainer cannot settle. The useful stopping point is then a bounded question and return, with any independently supported answer retained.
+Clarifying the question takes attention and can reveal a source gap or a choice outside the explainer’s authority. State that limit and retain independently supported or conditional answers.
 
 ### EXD.1:10 - Architectural Rationale
 
-A question is useful before a text is prepared and within a live exchange. Its first result therefore deserves direct access. The dialogue pattern uses that result and can return a changed question; it also governs contribution size, feedback and repair that question formation alone does not provide.
+Use EXD.1 to establish the question before preparing a text or to interpret a changed request during an exchange. EXD.4 interprets an actual contribution and can guide the size and content of the next reply, feedback or repair. It can also establish why an earlier exchange ended.
 
-Separating purpose from question prevents a mathematical definition from silently deciding an aggregation policy. Separating preparation from the answer prevents added help from being mistaken for independent knowledge. Both distinctions change the smallest useful next move.
+The purpose selects a relevant question. Arithmetic establishes the result under a specified weighting rule. Evidence about what the recipient supplied and what help they received establishes the scope of an independent-use claim. These distinctions determine which part of a proposed explanation, if any, needs to change.
 
 ### EXD.1:11 - SoTA-Echoing
 
-[Liao et al., 2021](https://arxiv.org/pdf/2104.03483) connect question elicitation in concrete tasks with the purposes and explanatory solutions that can answer them. Adapt that move to the recipient's intended inference and actual subject. A generic catalogue is a useful prompt; one discriminating task question can be sufficient.
+[Liao et al., 2021](https://arxiv.org/pdf/2104.03483) connect elicited questions about concrete tasks with their purposes and possible explanatory responses. Apply this relation to the inference the recipient needs. A question bank can suggest alternatives. A single focused question may distinguish them.
 
-[Schmude et al., 2025](https://doi.org/10.1016/j.ijhcs.2024.103380) used free questions, a question bank and clarification in two algorithmic-decision scenarios with 24 participants. Their exploratory work supports allowing recipients to state why information matters and to go beyond prepared categories. It establishes neither completeness of the bank nor a general comprehension effect.
+[Schmude et al., 2025](https://doi.org/10.1016/j.ijhcs.2024.103380) studied free questions, a question bank and clarification in two algorithmic-decision scenarios with 24 participants. Their exploratory results support allowing recipients to express what matters to them and go beyond prepared categories. Those two scenarios and the 24 participants did not establish that the bank was complete or that it improved comprehension in general.
 
-[Galbraith and Khalifa, 2026, §§2 and 5](https://link.springer.com/article/10.1007/s11098-025-02477-8) propose an interrogative account of understanding while leaving important epistemic conditions open. Use the question discrimination; subject warrant still comes from the relevant account. The procedure here is a bounded explanation-practice adaptation.
+[Galbraith and Khalifa, 2026, §§2 and 5](https://link.springer.com/article/10.1007/s11098-025-02477-8) propose an interrogative account of understanding and leave some epistemic conditions open. Use the distinction among questions here. Establish the grounds for the subject connection in the applicable domain.
 
-At the same practical grain, “Why is 5.5 wrong?” and “Which unit receives equal weight?” can both be brief. The latter distinguishes the live alternatives in the worked case. That conceptual advantage does not establish a measured reduction in conversation time. Reopen the adaptation when a recurring use cannot express its needed distinction through the proposed question work.
+In the worked case, “Which unit receives equal weight?” distinguishes the two rules more directly than “Why is 5.5 wrong?” Both questions are brief. This comparison concerns what they identify. Measuring conversation time would require timed exchanges. Reconsider the question-setting approach if actual use reveals a consequential distinction it cannot express.
 
 ### EXD.1:12 - Relations
 
-[EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) uses and revises the question during an exchange. [The supplied-account entry](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md) obtains the answer's subject relations and conditions.
+Use [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) for a recipient’s actual contribution to an exchange. [The supplied-account entry](03-exd-reference-3---obtain-and-carry-the-subject-explanation.md) helps establish the subject relations and conditions the answer depends on.
 
-[FPF A.2.9](../../sections/05-part-a---kernel-architecture-cluster/18-a-2-9-u-speechact-communicative-work-and-its-intended-use.md) supplies communicative-use distinctions where that analysis is needed. [FPF C.2.8](../../sections/09-part-c---kernel-extension-specifications/12-c-2-8---extractablestructuralinformation-structure-this-read.md) characterizes what a particular observer can recover from an account and its expression under selected conditions; it does not choose the question's purpose.
+[FPF A.2.9](../../sections/05-part-a---kernel-architecture-cluster/18-a-2-9-u-speechact-communicative-work-and-its-intended-use.md) helps identify the communicative act and intended use where that distinction matters. [FPF C.2.8](../../sections/09-part-c---kernel-extension-specifications/12-c-2-8---extractablestructuralinformation-structure-this-read.md) helps establish what a particular observer can recover from an expressed account under specified conditions. Identify the purpose from the task or the recipient’s grounds for seeking the explanation.
 
 ### EXD.1:End

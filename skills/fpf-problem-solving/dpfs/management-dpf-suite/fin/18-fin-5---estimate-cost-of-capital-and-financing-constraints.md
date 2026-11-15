@@ -6,7 +6,7 @@
 
 ### FIN.5:0 - Use this when
 
-A valuation needs a discount rate, or an attractive financing rate is being used as if it were the required return on the whole investment. Match the return estimate to the cash flows and claims being valued. A sufficient externally supplied rate with the right grounds can be used directly. Use the construction below when those grounds are missing or the project's risk or financing differs.
+A valuation needs a discount rate, or an attractive financing rate is being used as if it were the required return on the whole investment. Match the return estimate to the cash flows and claims being valued. A sufficient supplied rate with the right grounds can be used directly. Use the construction below when those grounds are missing or the project's risk or financing differs.
 
 ### FIN.5:1 - Problem frame
 
@@ -20,7 +20,7 @@ Using a cheap loan rate for risky operating cash flows overvalues the project. U
 
 ### FIN.5:3 - Forces
 
-Use a tractable estimate while respecting uncertainty in market evidence, risk and future financing. Maintain comparability without asserting that all projects or claims have the same cost of capital. More peers or a longer history can add observations while making the business comparison less relevant.
+Use a tractable estimate while respecting uncertainty in market evidence, risk and future financing. Compare rates on the same basis while allowing for differences between projects and claims. More peers or a longer history can add observations while making the business comparison less relevant.
 
 ### FIN.5:4 - Solution
 
@@ -45,7 +45,7 @@ Capital committed here cannot simultaneously be used in an available alternative
 
 In CAPM, the additional compensation concerns the claim's co-movement with the market opportunity set for a diversified investor. A firm-specific failure can still reduce expected receipts even where that particular risk earns no separate market premium. Model the failure's consequences in expected cash; do not treat “diversifiable” as “cannot lose money.” Conversely, a large spread of possible outcomes does not by itself identify the beta or required premium.
 
-Identify how risk is represented before changing either cash or the rate. Expected cash already includes unfavorable outcomes with their supported probabilities. A market-risk premium applied to those expected flows is not automatically double counting: the expected loss and the price of bearing its covariance risk are different effects. Double counting occurs when the same compensation for risk has already been deducted in a certainty-equivalent cash amount and is charged again through a risk-adjusted rate. A deliberately conservative management scenario is neither automatically an expectation nor a certainty equivalent.
+Identify how risk is represented before changing either cash or the rate. Expected cash flows include losses from default or business setbacks, weighted by the supported probabilities of those outcomes. A market-risk premium prices the claim’s exposure to movements in the market. Double counting occurs when the same compensation for risk has already been deducted in a certainty-equivalent cash amount and is charged again through a risk-adjusted rate. A deliberately conservative management scenario is neither automatically an expectation nor a certainty equivalent.
 
 A low borrowing offer does not make operating risk disappear. Lenders and equity holders have different claims on the same business, and a guarantee can shift who bears a loss without eliminating its cost. A subsidy or concession can have value, but identify the resulting financing benefit and its conditions separately. Do not replace the entire project's required return with the subsidized loan's coupon.
 
@@ -67,9 +67,9 @@ Choose an equity premium for the same market and benchmark convention. A histori
 
 A corporate average is usable for a project only insofar as the valued activity and financing assumptions are comparable. Investigate the economic sources of exposure: what moves demand and prices, which costs can adjust, which payments are fixed, what customers or suppliers concentrate risk, and how contracts or regulation alter the response. A familiar industry label alone does not establish the same exposure.
 
-For a corporation with several activities, use the relevant business contribution rather than the average exposure of unrelated divisions. The bottom-up construction below allows a project without traded equity to use evidence from comparable activities. A new project serving different customers or operating with a materially different cost structure may need its own comparison. Explain the difference before deciding that finer estimation is worthwhile; numerical precision cannot rescue an economically poor peer.
+For a corporation with several activities, use the relevant business contribution rather than the average exposure of unrelated divisions. The bottom-up construction below lets an analyst valuing a project without traded equity use evidence from comparable activities. A new project serving different customers or operating with a materially different cost structure may need its own comparison. Explain the difference before deciding that finer estimation is worthwhile; numerical precision cannot rescue an economically poor peer.
 
-Distinguish the uncertainty of the estimate from the underlying investment risk. An imprecisely estimated beta is a reason to inspect the sample, compare an alternative estimate or carry a range. Raising the central rate merely because the analyst is unsure does not identify the price of the actual risk. A larger peer set can reduce some estimation noise while introducing less comparable activities, and common source errors do not vanish through averaging.
+Distinguish the uncertainty of the estimate from the underlying investment risk. An imprecisely estimated beta is a reason to inspect the sample, compare an alternative estimate or carry a range. Raising the central rate merely because the analyst is unsure does not identify the price of bearing that risk. A larger peer set can reduce some estimation noise while introducing less comparable activities, and common source errors do not vanish through averaging.
 
 Account for changes in business mix, contract protection and operating conditions over the valued horizon. A past regression can describe exposure that the proposed operation no longer has. In a cross-border activity, currency matching does not by itself settle the risk of customer demand, enforceability, restrictions or transfer of proceeds. Model the relevant operating and payment consequences and obtain an evidenced risk treatment; place of incorporation alone does not determine a universal surcharge.
 
@@ -91,7 +91,7 @@ Let a express the financing model's adjustment in the following relations. Two i
 | Permanent fixed debt amount; constant usable tax rate t; tax savings have debt risk. | 1−t |
 | Debt reset each year to a constant share of market value; constant usable t and debt return kD; the next year's tax savings have debt risk, while later debt resets follow business value. | 1−t×kD/(1+kD) |
 
-The permanent-debt case values its recurring tax savings at t×D. Annual resetting fixes only the coming year's borrowing; subsequent amounts depend on business value. Both models require usable deductions and treatment of additional financing frictions. The examples below stipulate proportional loss-sharing and tax-exempt debt cancellation, with the deductions priced at the expected debt return. With risky debt, verify those loss and tax conditions; another treatment can change the tax-shield discount rate. [The policy derivation, especially equation 11 and footnote 9][ALS-POLICY], explains those conditions. A finite fixed loan does not satisfy the permanent-debt premise; use its dated financing effects in step 5. If the actual policy or shield risk is unsupported, obtain that basis or keep the valuation conditional.
+The permanent-debt case values its recurring tax savings at t×D. Annual resetting fixes only the coming year's borrowing; subsequent amounts depend on business value. Both models require usable deductions and treatment of additional financing frictions. The examples below stipulate proportional loss-sharing and tax-exempt debt cancellation, with the deductions priced at the expected debt return. With risky debt, verify those loss and tax conditions; another treatment can change the tax-shield discount rate. [The policy derivation, especially equation 11 and footnote 9][ALS-POLICY] explains those conditions. A finite fixed loan does not satisfy the permanent-debt premise; use its dated financing effects in step 5. If the debt policy or the risk of its tax savings lacks support, obtain that basis or keep the valuation conditional.
 
 For each peer, remove its financing effect as βU = [βE + βD×a×D/E] / [1 + a×D/E]. Apply the target's own factor and debt estimate as βE = βU + (βU−βD)×a×D/E. Here βU is unlevered business beta, βE equity beta and βD debt beta. Set βD to zero only when negligible debt market risk is a justified approximation.
 
@@ -102,7 +102,7 @@ Combine relevant business estimates only after removing their financing effects.
 #### FIN.5:4.5 - Use discount factors and financing effects on compatible grounds
 
 
-A single annual rate is a useful compression only when the valued cash and financing model support it. For deterministic annual forward discount rates r1 through rt, the discount factor to time t is 1/[(1+r1)×...×(1+rt)]. A time-t spot rate zt instead gives 1/(1+zt)^t. Do not treat a quoted spot rate as a one-year forward rate and compound both adjustments. For risky cash, use the corresponding supported pricing factors or model; the risk-free term structure alone does not supply them.
+A single annual rate is a useful compression only when the valued cash and financing model support it. For deterministic annual forward discount rates r1 through rt, the discount factor to time t is 1/[(1+r1)×...×(1+rt)]. A time-t spot rate zt instead gives 1/(1+zt)^t. Do not treat a quoted spot rate as a one-year forward rate and compound both adjustments. For risky cash, use a pricing model or factors that account for the risk as well as the term structure.
 
 When risk changes over time, identify which remaining claim is exposed to which conditions before selecting its pricing model. A fixed contractual payment, an uncertain operating receipt and an exercisable option can have different risks even when they occur on the same date. Value materially different components on their matched grounds and combine their present values. FIN.8 supplies the changing contingent payoff of an option.
 
@@ -112,7 +112,7 @@ Do not apply an increasing “risk rate” indiscriminately to unavoidable futur
 
 APV is especially useful when the financing schedule must remain visible. It separates operating value from the usable deductions, subsidies, issue costs and other financing effects that change value. Value each effect once with its own timing and risk. Adding a distress estimate already included through lost customers or recovery flows would count that consequence twice. Omitting such effects merely because a tax-shield calculation is precise would overstate the benefit of borrowing.
 
-Finally propagate a defensible range into the receiving decision. In the worked case below, a tiny rate difference changes the NPV sign. More displayed decimals cannot settle uncertain debt policy or business comparability. Return the rate's grounds and the condition that would change the choice; FIN.11 decides the financing mix and FIN.12 determines what can actually be obtained.
+Calculate how a defensible range of rates affects the decision. In the worked case, a small rate difference changes the NPV sign. More displayed decimals cannot settle uncertain debt policy or business comparability. Return the rate's grounds and the condition that would change the choice; FIN.11 helps the corporation compare financing mixes, and FIN.12 tests what financing it can obtain.
 
 ### FIN.5:5 - Archetypal Grounding
 
@@ -142,7 +142,7 @@ Using book weights merely because they are easy to find can misstate the relevan
 
 ### FIN.5:9 - Consequences
 
-The valuation has an interpretable rate and sensitivity range. A rate range can support a robust choice or identify the uncertainty on which the choice turns. The analyst can request the particular missing input instead of substituting an unsupported corporate average; financing access still depends on the actual terms and conditions.
+The valuation has an interpretable rate and sensitivity range. A rate range can support a robust choice or identify the uncertainty on which the choice turns. The analyst can request the particular missing input instead of substituting an unsupported corporate average; to establish access to financing, identify the source of the funds and check the conditions for using them. If the corporation relies on a counterparty, an existing commitment may already cover the need.
 
 ### FIN.5:10 - Architectural Rationale
 
@@ -152,9 +152,9 @@ The debt policy also determines future deductions. A fixed borrowing amount and 
 
 ### FIN.5:11 - SoTA-Echoing
 
-[OpenStax 2e's WACC treatment][OS-WACC] develops the weighted calculation and estimation uncertainty. CFA Institute's public [2026 cost-of-capital discussion][CFA-COST] emphasizes model, financing and tax choices; its [private-company discussion][CFA-PRIVATE] qualifies transfer to another valuation setting. Those public discussions frame the choice.
+[OpenStax 2e's WACC treatment][OS-WACC] develops the weighted calculation and estimation uncertainty. CFA Institute's public [2026 cost-of-capital discussion][CFA-COST] emphasizes model, financing and tax choices; its [private-company discussion][CFA-PRIVATE] qualifies transfer to another valuation setting.
 
-Damodaran's historical explanations develop [benchmark matching][DAM-RF], [return inputs][DAM-INPUTS], [business-risk transfer][DAM-BETA] and [separate financing effects][DAM-APV]. Arnold, Lahmann and Schwetzler's [2017/2018 analysis][ALS-POLICY] makes the financing-policy condition operational. FIN.5 uses those model distinctions with current application data and the actual tax basis; historical quotations and numerical proxies do not establish them.
+Damodaran's historical explanations develop [benchmark matching][DAM-RF], [return inputs][DAM-INPUTS], [business-risk transfer][DAM-BETA] and [separate financing effects][DAM-APV]. Arnold, Lahmann and Schwetzler's [2017/2018 analysis][ALS-POLICY] makes the financing-policy condition operational. FIN.5 uses those model distinctions with current application data and the applicable tax basis. Historical quotations and numerical proxies cannot by themselves establish either for the present valuation.
 
 ### FIN.5:12 - Relations
 

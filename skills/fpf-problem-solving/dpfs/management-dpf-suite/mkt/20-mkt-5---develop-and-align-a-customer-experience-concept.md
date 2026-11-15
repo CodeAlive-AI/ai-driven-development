@@ -9,7 +9,7 @@ Use this pattern when the way customers encounter a product or service is incons
 
 The result is an explicit experience concept connected to feasible conditions of use, communication, environment, interfaces and people's work, together with a way to discover whether the intended response occurs. An experience concept describes the character of the experience sought in the customer's situation, such as calm independent completion with attainable help. The provider can arrange contributing conditions; the customer's felt response remains a separate result to investigate.
 
-The intended reader can describe the customer's activity and obtain design and operating contributions. A broad experience programme is unnecessary when a local known defect has a sufficient remedy and no consequential connection changes. Correcting a wrong opening time can remain an ordinary correction. Specialist design remains with the responsible practice.
+The intended reader can describe the customer's activity and obtain design and operating contributions. When a known defect has a local remedy and the connected arrangements still work, that remedy can suffice. For example, correct a wrong opening time. Specialist design remains with the responsible practice.
 
 ### MKT.5:2 - Problem
 
@@ -41,26 +41,26 @@ Choose the reach needed for this decision. Include the other people, providers a
 
 Describe the intended character of the encounter in ordinary terms and explain its value in the receiving activity. “Calm independent completion, with a visible way to obtain help” selects a different arrangement from “guided exploration with frequent discussion.” Both are more useful for design than “excellent experience.” An ordinary reliable transaction can be the appropriate concept; exceptional intensity is not an improvement by itself.
 
-Construct at least the materially different alternatives that the unresolved choice needs. For each, describe a plausible encounter from the customer's position: what they would notice, understand, do, wait for, rely on and encounter if something went wrong. This short account exposes the conditions the concept requires. It also distinguishes a desired experience from a list of brand attributes or a provider's internal process.
+For an unresolved choice, develop any materially different options needed for comparison. For each, describe a plausible encounter from the customer's position: what they would notice, understand, do, wait for, rely on and encounter if something went wrong. This short account exposes the conditions the concept requires. It also distinguishes a desired experience from a list of brand attributes or a provider's internal process.
 
 Compare the alternatives against the customer's relevant expectations, useful result, effort and tolerable uncertainty, together with the provider's ability and constraints. Decide which differences warrant distinct arrangements. A single concept can allow both self-service and requested help; it cannot honestly promise independence if every case must finish through a telephone call. If alternatives remain uncertain, choose a bounded comparison that can change the decision rather than declaring one idea universally preferable.
 
 #### MKT.5:4.3 - Connect the concept to conditions throughout the encounter
 
-Translate the selected concept into the conditions needed to make the proposed encounter possible. Work from the account of the proposed encounter in §4.2 and examine the connected contributions:
+Use the account of the proposed encounter in §4.2 to identify the conditions each contribution must supply.
 
 | Contribution | Construction question |
 | --- | --- |
-| Product or service result | What must actually work for the person, and what remains their own work? |
+| Product or service result | What must work for the person, and what remains their own work? |
 | Physical and digital environment | What access, privacy, orientation and resources does this encounter require? |
 | Message and promise | What expectations are created before and during use, including qualifications and timing? |
 | Interface and information | What can the person perceive, understand, control and recover from at the needed moment? |
-| People's actions and support | Who helps, decides, responds or resolves an exception, under which conditions? |
+| Actions and support | Who helps, decides, responds or resolves an exception, under which conditions? |
 | Organisation and partners | What assignment, capacity, incentives and partner contributions make those actions sustainable? |
 
 For each consequential condition, distinguish an existing capability from a proposed change. Name who can supply or decide it and what result is needed. [SYSE.2](../../engineering-dpf-suite/syse/23-syse-2---develop-linked-use-and-system-concepts.md) develops compatible use and system concepts; [SYSE.8](../../engineering-dpf-suite/syse/29-syse-8---develop-an-integrated-offering-and-provider-concept.md) joins an offering with its actual or intended providers. Use these concepts to identify a candidate arrangement and the conditions or contributions still needed to make it feasible.
 
-Give the responsible practice a concrete request. “Enable the customer to save an incomplete application and resume it with its previous answers” is a design request with a recognizable use. “Be more empathetic” does not establish the interface, staff ability or available time. Operations must arrange performance; HCD can develop a needed capability; organisation change must obtain the relevant assignment and enabling conditions. Marketing coordinates the experience question and consumes those results.
+When a contribution is missing, give the responsible practice a concrete request. “Enable the customer to save an incomplete application and resume it with its previous answers” is a design request with a recognizable use. “Be more empathetic” does not establish the interface, staff ability or available time. Use Operations for the work to be performed, HCD when a person needs to develop a capability, and organisation change when assignments or enabling conditions must change. Marketing coordinates the experience question and consumes those results.
 
 #### MKT.5:4.4 - Find contradictions and select a feasible repair
 
@@ -68,7 +68,7 @@ Walk through the proposed encounter under an ordinary condition and an action-ch
 
 Trace a contradiction to the condition that produces it. Compare feasible repairs, including changing the promise, changing the product or operation, narrowing the circumstances served, or offering a different form of help. Include effects on other customers, staff work and already made commitments. Moving waiting time from a queue into repeated customer calls is not automatically an improvement.
 
-Obtain agreement from those who can make the required changes, and update the affected promises and conditions of the encounter to match those changes. A concept can remain a useful proposal while a provider contribution is unresolved, but it must not be advertised as an available experience. If a limited arrangement can be supplied now, state its limits and preserve the wider concept as a separate possibility. MKT.11 governs coordination when several promises and contributors must be reconciled.
+Identify who can supply each required change. Use an agreement already in force or seek the agreement still needed. Update promises to cover what the providers can deliver under the agreed conditions. A concept can remain a useful proposal while a provider contribution is unresolved, but it must not be advertised as an available experience. If a limited arrangement can be supplied now, state its limits and preserve the wider concept as a separate possibility. MKT.11 governs coordination when several promises and contributors must be reconciled.
 
 #### MKT.5:4.5 - Test the arrangement and investigate the response separately
 
@@ -82,7 +82,7 @@ Keep usefulness, effort, experience and later evaluation distinct where they mat
 
 Compare the intended encounter with the observed arrangement and response. If the conditions were not supplied, obtain or revise them before blaming the concept. If the arrangement worked but the intended response did not occur, investigate the context or assumption linking the conditions to that response. If the desired response occurred while the useful result failed, revise the contribution rather than treating the experience measure as success.
 
-Return the selected concept, the connected feasible conditions, material limits, the observations and whether to retain or change the arrangement. Reopen the construction when a new audience, channel, provider, access condition or operating constraint alters the encounter. Retain sufficient existing work when the change is local. A journey map through MKT.8 can help locate the relevant connection, but the repair remains a change in actual conditions or in the warranted promise.
+Return the selected concept, the connected feasible conditions, material limits, the observations and whether to retain or change the arrangement. Reopen the construction when a new audience, channel, provider, access condition or operating constraint alters the encounter. Retain sufficient existing work when the change is local. A journey map through MKT.8 can help locate the relevant connection, but the repair remains a change in the conditions of use or in what can be promised.
 
 ### MKT.5:5 - Archetypal Grounding
 
@@ -94,13 +94,13 @@ The team first recovers the wider activity: registrants are arranging participat
 
 The selected arrangement lets an ordinary eligible person submit and receive a clear confirmation. Cases needing a decision show the unresolved matter and an attainable response time. Reminders name a real deadline when one exists; otherwise they explain the incomplete step without invented urgency. Help explains its available hours. Operations obtains responsibility and time for resolving exceptions, while the relevant manager changes the incentive that defeated that work. Engineering confirms which eligibility decisions the interface can support.
 
-The team checks the connected encounter with an ordinary case and one requiring a decision. It separately observes the availability of confirmation, the actual handling of the exception, and the participants' accounts of uncertainty. A participant might still feel anxious because the programme affects an important career choice; correct registration does not place that response under the provider's control. MKT.12 can investigate a remaining consequential uncertainty without promising that the provider will eliminate all anxiety.
+The team checks the connected encounter with an ordinary case and one requiring a decision. It separately observes the availability of confirmation, how the exception was handled, and the participants’ accounts of their uncertainty. A participant might still feel anxious because the programme affects an important career choice; correct registration does not place that response under the provider's control. MKT.12 can investigate a remaining consequential uncertainty without promising that the provider will eliminate all anxiety.
 
 If support capacity later falls, a displayed same-day answer becomes unsupported. The team must restore the contribution, narrow the cases accepted or promise a later response time it can meet. Editing the page to sound more reassuring would leave the contradiction intact. If only one displayed opening time was wrong and the arrangement remains adequate, correcting that time is sufficient.
 
 #### MKT.5:5.2 - Useful effort need not feel effortless
 
-A professional course aims for supported practice with candid feedback. Learners must do difficult exercises; promising an effortless transformation conflicts with the contribution. The experience concept can instead make the challenge understandable, the feedback usable and help attainable. HCD owns the learning construction and the evidence of capability. Marketing can improve the encounter and explain its demands without equating comfort, course completion and professional competence.
+A professional course aims for supported practice with candid feedback. Learners must do difficult exercises; promising an effortless transformation conflicts with the contribution. The experience concept can instead make the challenge understandable, the feedback usable and help attainable. HCD explains how to design the learning activity and obtain evidence of the learner’s capability. Marketing can improve the encounter and explain its demands without equating comfort, course completion and professional competence.
 
 ### MKT.5:6 - Bias-Annotation
 
@@ -113,7 +113,7 @@ Providers readily notice the contacts they own and the survey answers they can c
 - Existing capabilities, proposed changes and conditions outside the provider's influence are distinguished.
 - An ordinary case and a consequential variation expose incompatible expectations or actions.
 - Responsible contributors can supply the selected changes, or the remaining limits are explicit.
-- Supplied conditions, felt response, useful result and evaluation are judged at their actual scope.
+- The evidence for each claim covers the conditions, occasion and use it describes. Evidence about a felt response or personal evaluation concerns the person whose experience is claimed.
 
 ### MKT.5:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -141,12 +141,12 @@ For constructing a whole experience concept, **adapt** the historical Customer E
 
 For the meaning and limits of that construction, **adopt** the distinctions in [Becker and Jaakkola, 2020, Premises 1, 2 and 4](https://pure.hanken.fi/ws/portalfiles/portal/42844202/2020_Becker_Jaakkola.pdf). They distinguish the customer's response from stimuli and evaluation, place experience beyond firm-owned contacts, and limit provider control to contributing conditions. This later synthesis corrects an overextended interpretation of experience management. Neither source proves that this concept will cause a particular response in a new setting. Reconsider the concept when observed response or changing conditions defeat its grounds.
 
-For a feasible offering and providers, **adopt** the SYSE.2 and SYSE.8 constructions used in §4.3. They expose what a coherent experience description leaves undelivered. The trade-off is explicit design and coordination effort rather than assuming that aligned wording creates an aligned service.
+For a feasible offering and providers, **adopt** the SYSE.2 and SYSE.8 constructions used in §4.3. They identify the offering and its providers, including any contributions still needed to make the encounter feasible. Developing a new arrangement takes design and coordination work.
 
 ### MKT.5:12 - Relations
 
 MKT.2 supplies and receives the offer and its implications. MKT.6 develops the useful result and the customer's contributions; MKT.7 handles continuation or recovery. MKT.8 can represent relevant encounters for a decision, MKT.11 coordinates contributors and promises, and MKT.12 supplies evidence about context and response. MKT.10 addresses a causal or resource conclusion when needed.
 
-SYSE supplies linked use, system and provider concepts. Operations supplies actual performance and exception handling; HCD supplies needed capability; organisation change supplies enabling arrangements. A service description does not by itself establish delivery or the customer's response.
+SYSE supplies linked use, system and provider concepts. Operations addresses performance and exceptions, HCD helps develop a needed human capability, and organisation change addresses enabling arrangements. To establish delivery or the customer’s response, use evidence of what happened in the encounter.
 
 ### MKT.5:End

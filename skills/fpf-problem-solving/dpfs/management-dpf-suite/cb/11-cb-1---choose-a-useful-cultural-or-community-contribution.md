@@ -5,15 +5,15 @@
 
 ### CB.1:1 - Problem frame
 
-Use this pattern when you want to help a practice spread, enable people to help one another, or create a place where a particular group can participate meaningfully, and the useful contribution is still unclear. A professional association proposes a forum; a neighbourhood organiser proposes a shared activity; a sponsor offers a platform. Before building the arrangement, determine whose situation it should improve and why this arrangement could do so.
+Use this pattern when you want to help a practice spread, enable people to help one another, or create a place where a particular group can participate meaningfully, and the useful contribution is unclear. A professional association proposes a forum; a neighbourhood organiser proposes a shared activity; a sponsor offers a platform. Before building the arrangement, determine whose situation it should improve and why this arrangement could do so.
 
-Community Management concerns useful participation, relationships and joint contributions. This pattern begins early enough to discover that a proposed community is unnecessary. Its immediate subject is a proposed change in people's practice, participation or relationships and the contribution that could support that change. Cultural continuation is the wider question supplied by C.36 and C.36.RP. People can adopt a practice without communicating with one another; where mutual participation matters, its contribution needs an explanation of its own.
+Community Management concerns useful participation, relationships and joint contributions. This pattern begins early enough to discover that a proposed community is unnecessary. Its immediate subject is a proposed change in practice, participation or relationships and the contribution that could support that change. Cultural continuation is the wider question supplied by C.36 and C.36.RP. Practitioners can adopt a practice without communicating with one another; where mutual participation matters, its contribution needs an explanation of its own.
 
 The first useful result is a bounded, understandable proposal: who could benefit, what would become possible, what participants and organisers would contribute, what conditions must hold, and which first action could test the proposal. A justified choice to use an existing service, improve access to a useful resource, or leave an adequate arrangement alone is also a result.
 
-The intended user knows the activity in question or can obtain a qualified account from someone who does. This pattern helps organise a contribution; the activity's own professional methods supply correctness and specialist permissions.
+You need to know the activity or have access to a qualified account of it. When the contribution needs a professional judgement, use one grounded in the practice. Any required permission comes from its holder. This method helps organise the contribution.
 
-**Ordinary non-use.** If an existing proposal already fits the people, purpose and conditions and the remaining difficulty is obtaining a first exchange, use CB.2. If one person needs help choosing a learning programme, use HCD.2. Return here when the proposed community activity itself may be the wrong response.
+**Ordinary non-use.** If an existing proposal already fits the people, purpose and conditions and the remaining difficulty is obtaining a first exchange, use CB.2. If one person needs help choosing a learning programme, use HCD.2. Return here when the proposed community activity may be the wrong response.
 
 ### CB.1:2 - Problem
 
@@ -27,7 +27,7 @@ How can an organiser construct and compare useful contributions without treating
 | --- | --- |
 | A recognisable common concern | A sufficiently specific concern helps people decide whether to participate; a narrow description can also exclude people whose experience is needed. |
 | Participants' benefit and organisers' purpose | A sponsor may sustain the arrangement, while its preferred behaviour may provide little value to participants. |
-| Relationship and independent use | Some results need continuing mutual help; others can be obtained by people using an explanation or service independently. |
+| Relationship and independent use | Some results need continuing mutual help; others can be obtained by using an explanation or service independently. |
 | Early uncertainty and credible commitment | A small practical probe can clarify the proposal, but participants still need truthful expectations about help, effort and control. |
 | Diversity of situations and a feasible first action | One shared offer can contain several useful forms of participation; trying to serve every situation at once can prevent any exchange from working. |
 
@@ -53,7 +53,7 @@ Use OCE.2 when the proposal depends on actual organisational work, informal help
 
 Describe each relevant change in ordinary language. Examples include being able to perform a known diagnostic procedure, obtaining a qualified second view on an unusual case, finding company for an activity, having one's experience heard, or developing a better practice with others.
 
-For each proposed result, ask who values it and what would let that person recognise it. A participant can value a conversation or a sense of welcome without producing a document. In that case, ask about the experience under conditions in which an honest answer is possible. If the promise is improved professional work, obtain evidence about that work as well.
+For each proposed result, ask who values it and how they could recognise it. A participant can value a conversation or a sense of welcome without producing a document. In that case, ask about the experience under conditions in which an honest answer is possible. If the promise is improved professional work, obtain evidence about that work as well.
 
 Keep three distinctions when they change action:
 
@@ -77,13 +77,13 @@ Generate alternatives that change the way the result is obtained. STR.5 supplies
 
 An existing adequate arrangement remains a serious alternative. Combine arrangements when each supplies a necessary contribution: a reference resource can answer routine questions while a small peer group handles unusual cases. Explain where the person changes route, so that “community support” does not become an unlimited promise.
 
-Compare at the scale of the actual first use. Include preparation, response, correction, coordination and the participant's effort, not only platform cost. Do not make a well-developed favourite defeat an alternative described only by its name. Unknown willingness or capacity remains unknown until an appropriate response establishes it.
+Compare at the scale of the first use. Include preparation, response, correction, coordination and the participant's effort, not only platform cost. Do not make a well-developed favourite defeat an alternative described only by its name. Before relying on a participant’s willingness or capacity, establish it for the proposed contribution.
 
 #### CB.1:4.4 - Build the contribution for the selected branch
 
-For **mutual participation**, name the kinds of people whose contributions can help one another and the activity through which that help becomes possible. Describe the minimum relevant experience or access, the material people can bring, and what someone receiving a contribution will do with it. Membership criteria should follow the work and conditions of participation. A brand preference or friendship with the founder is insufficient when the promise concerns a wider professional group.
+For **mutual participation**, identify the participants whose contributions can help one another and the activity through which that help becomes possible. Describe the minimum relevant experience or access, the material they can bring and how the recipient will use a contribution. Membership criteria should follow the work and conditions of participation. A brand preference or friendship with the founder is insufficient when the promise concerns a wider professional group.
 
-For **independent carriers of a sufficiently known practice who need to learn it**, identify the population and later activity to be changed. C.36 distinguishes transmission, performance, selection and renewal; C.36.RP supplies the broader construction when access, a capable provider, tools or method development may answer the need. The learning branch below connects contributions for its particular result:
+For **people who need to learn a sufficiently known practice for independent use**, identify the population and later activity to be changed. C.36 distinguishes transmission, performance, selection and renewal; C.36.RP supplies the broader construction when access, a capable provider, tools or method development may answer the need. The learning branch below connects contributions for its particular result:
 
 1. Make the useful activity and participation demand understandable to potential learners. Show a relevant use and the available means of learning it.
 2. Establish that the domain method and its correctness criteria are available. If experts cannot supply a usable method, return that question to Method Engineering, and to Research Method Practice when unresolved evidence requires inquiry.
@@ -91,23 +91,23 @@ For **independent carriers of a sufficiently known practice who need to learn it
 4. Observe whether people can carry out the target activity under the support conditions of their later work. Keep course participation, helped performance and independent performance distinct.
 5. Arrange how revised instructions, questions or observed failures can reach the people concerned. They may receive these from a provider without joining a discussion group.
 
-This limited composition works when the professional practice is sufficiently known and the learning provision can actually be obtained. It remains a useful alternative to forming a community. If the needed result is available through direct performance, access or an adequate tool, use that contribution without imposing a learning programme. If the question is the design of a whole new service, return the contribution and delivery requirements to Systems Engineering. For an unavailable or no longer usable shared way, C.36.RP develops acquisition, reconstruction, provision and renewal. The organiser retains the question of whether the intended population can obtain and use the resulting provision; the direct supplier retains its substantive Method.
+This limited composition works when the professional practice is sufficiently known and the learning provision can be obtained. It remains a useful alternative to forming a community. If the needed result is available through direct performance, access or an adequate tool, use that contribution without imposing a learning programme. If the question is the design of a whole new service, return the contribution and delivery requirements to Systems Engineering. For an unavailable or no longer usable shared way, C.36.RP develops acquisition, reconstruction, provision and renewal. The organiser retains the question of whether the intended population can obtain and use the resulting provision; the direct supplier retains its substantive Method.
 
 #### CB.1:4.5 - Make an offer that people can assess
 
 Express the proposal in language potential participants use. Include the situation it addresses, the benefit being proposed, the first activity, the contribution requested from them, and what the organiser or provider will supply. State the boundaries that could change their decision: time, cost, confidentiality, commercial interest, limits of help and a feasible way to decline or leave.
 
-A conversation or short invitation can carry these contents. Make a distinction between a service that promises a response and a voluntary opportunity to ask capable peers.
+A conversation or short invitation can carry these contents. Distinguish a service that promises a response and a voluntary opportunity to ask capable peers.
 
-Ask recipients to explain what they expect to do and receive. Then invite an appropriately small real action: offer a permitted case, choose an available learning attempt, attend a first shared activity, or explain why the proposal does not fit. Agreement with an appealing idea is weaker evidence than a response to its actual demands. A refusal can reveal an unsuitable condition; it does not by itself show that the underlying need is absent.
+Ask recipients to explain what they expect to do and receive. Then invite a small action that fits the proposal: offer a permitted case, choose an available learning attempt, attend a first shared activity, or explain why the proposal does not fit. Agreement with an appealing idea is weaker evidence than a response to what it asks of them. A refusal can reveal an unsuitable condition; it does not by itself show that the underlying need is absent.
 
 Where people depend on an employer or organiser, examine what declining would actually cost them. A nominally optional activity with adverse consequences for refusal needs a different participation account.
 
 #### CB.1:4.6 - Choose the next action and a return condition
 
-Continue when the contribution is sufficiently worthwhile and feasible for the bounded action being proposed. For mutual help, pass CB.2 the receiving situation, first useful result, willing participants or recruitment question, material and access limits, and available organising effort. For independent learning, pass the target work and provision conditions to the selected HCD use.
+Continue when the contribution is sufficiently worthwhile and feasible for the bounded action being proposed. For mutual help, pass CB.2 the receiving situation, first useful result, willing participants or recruitment question, material and access limits, and available organising effort. When people need to learn the practice for independent use, pass the target work and provision conditions to the selected HCD use.
 
-Stop or change the proposal when an existing alternative answers the situation better, a necessary contribution cannot be obtained, or the apparent common purpose hides a material unresolved conflict. An unanswered question can itself be the next useful result: who can provide the required access, whether the intended recipient values the proposed result, or whether any capable person wishes to help.
+Stop or change the proposal when an existing alternative answers the situation better, a necessary contribution cannot be obtained, or the apparent common purpose hides a material unresolved conflict. An unanswered question can be the next useful result: who can provide the required access, whether the intended recipient values the proposed result, or whether any capable person wishes to help.
 
 Reopen the affected choices and their dependencies when later responses change the population, desired result, available competence, burden or terms of participation. One failed invitation does not require rethinking the whole cultural purpose; repeated inability to obtain the central contribution may.
 
@@ -133,7 +133,7 @@ The same association wants more repairers to recognise one well-understood fault
 
 The organiser makes the use and prerequisites understandable, obtains a demonstration and a practice task through the relevant HCD methods, and ensures that repairers have access to the required information in their own workshops. A changed example tests whether they can select and use the diagnostic procedure under the stated help conditions. The training provider collects fault reports and distributes corrections to the material.
 
-This arrangement can produce the intended cultural contribution even if the repairers never talk to one another. If their remaining difficulty is interpreting genuinely new cases, the organiser can later compare peer exchange and expert consultation. If the method itself is unsettled, more enrolments would not settle it; that question returns to method development.
+This arrangement can produce the intended cultural contribution even if the repairers never talk to one another. If their remaining difficulty is interpreting new cases, the organiser can later compare peer exchange and expert consultation. If the method is unsettled, more enrolments would not settle it; that question returns to method development.
 
 #### CB.1:5.3 - A voluntary activity changes the criterion of usefulness
 
@@ -147,7 +147,7 @@ Business-sponsored community accounts can privilege growth, retention and visibl
 
 Before relying on the proposal, check that:
 
-- the intended people and useful change can be recognised in an actual or explicitly proposed situation;
+- the intended participants or independent users and the useful change can be recognised in an actual or explicitly proposed situation;
 - the alternatives differ in how they would help, and an existing adequate route was considered where relevant;
 - each necessary contribution has an available supplier or a named unresolved question;
 - mutual participation is required only where it contributes to the result;
@@ -164,7 +164,7 @@ A small proposal can satisfy these questions in ordinary prose. A stronger commi
 | One active customer's preferences define the whole offer | Obtain a relevant contrasting account and narrow the claim to what the evidence supports. |
 | A sponsor's retention target is presented as participants' purpose | Explain both purposes and the terms under which participants receive a worthwhile contribution. |
 | No one accepts the first invitation, so people are judged unmotivated | Inspect relevance, requested effort, timing, trust and available alternatives; change the proposal or stop. |
-| More discussion is prescribed for missing access or an unknown professional method | Return the exact missing contribution to its owner and retain any remaining community question separately. |
+| More discussion is prescribed for missing access or an unknown professional method | Take the access question to its permission holder or the method question to a qualified source and retain any remaining community question separately. |
 
 ### CB.1:9 - Consequences
 
@@ -197,8 +197,8 @@ Source returns: [David Spinks, The Business of Belonging (2021)](https://www.wil
 - **Uses [FPF C.36](../../../sections/09-part-c---kernel-extension-specifications/91-c-36---cultural-evolution-and-cultural-evolution-engineering.md):** the cultural relations and result being sought. [FPF C.36.RP](../../../sections/09-part-c---kernel-extension-specifications/129-c-36-rp---sustain-and-renew-shared-ways-of-working.md) supplies the wider Method for making a shared way obtainable, usable and renewable; CB.1:4.4 retains the narrower known-practice learning alternative.
 - **Uses [STR.5 (STR.5:4)](../str/23-str-5---generate-strategic-directions.md#str54---solution):** contrasting useful contributions and their provision conditions when that choice needs further development.
 - **Uses [OCE.2 (OCE.2:4)](../oce/24-oce-2---recover-current-organization-work-and-arrangement.md#oce24---solution):** evidence about actual organisational work and relations when the proposal relies on them.
-- **Uses [HCD.5:4 and HCD.6](../../human-capability-engineering-dpf-suite/hcd/21-hcd-5---select-human-capability-development-methods.md#hcd54---solution):** selected learning activities and representative tasks for an independent-carrier contribution. HCD.2 serves a person's programme choice; HCD.7 and HCD.8 serve missing support and access.
+- **Uses [HCD.5:4 and HCD.6](../../human-capability-engineering-dpf-suite/hcd/21-hcd-5---select-human-capability-development-methods.md#hcd54---solution):** selected learning activities and representative tasks for people learning a practice for independent use. HCD.2 serves a person's programme choice; HCD.7 and HCD.8 serve missing support and access.
 
-- **Returns missing contributions to [Method development in Core (FPF C.39)](../../../sections/09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md), [Research Method Practice (RMP)](../../rmp/_index.md) or [Systems Engineering (SYSE)](../../engineering-dpf-suite/syse/_index.md):** respectively, a usable professional method, an answer requiring inquiry, or a feasible whole provision/service construction. State the exact missing result when making the return.
+- **Returns missing contributions to [Method development in Core (FPF C.39)](../../../sections/09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md), [Research Method Practice (RMP)](../../rmp/_index.md) or [Systems Engineering (SYSE)](../../engineering-dpf-suite/syse/_index.md):** respectively, a usable professional method, an answer requiring inquiry, or a feasible whole provision/service construction. State the missing result when making the return.
 
 ### CB.1:End

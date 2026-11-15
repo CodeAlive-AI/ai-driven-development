@@ -33,9 +33,9 @@ How can the organiser make useful participation obtainable while allowing people
 
 ### CB.3:4 - Solution
 
-Recover the action the person wants to make possible, establish the conditions that affect it, and offer a small workable choice with an available response. Observe the attempted use and change the obstacle or promise that the episode exposes.
+Establish what the person wants to do and what conditions affect it. Offer a manageable way to start. If you promise a response, provide it or tell the person what you can supply. Support a change of involvement or a return after absence. Observe the attempted use and change the obstacle or promise that the episode exposes.
 
-**Working reminder:** find the wanted action; make its conditions visible; offer an attainable start; provide the promised response; support a change or return.
+
 
 #### CB.3:4.1 - Recover where entry becomes difficult
 
@@ -53,7 +53,7 @@ Choose alternatives by what the person wants to do and what the activity require
 
 | Wanted participation | A feasible entry | Conditions to establish |
 | --- | --- | --- |
-| Find a known answer | Read or search an applicable resource | The material is findable, understandable and accessible under its actual use conditions. |
+| Find a known answer | Read or search an applicable resource | The material is findable, understandable and accessible under the participant’s conditions of use. |
 | Understand what happens here | Observe a permitted activity or inspect a worked example | The observer knows the purpose, sharing limits and how to ask later; the other participants accept the observation where required. |
 | Obtain help | Bring a bounded question, privately or with preparation if necessary | Someone can help formulate it and a suitable response route is available. |
 | Contribute experience or a result | Respond to one relevant request or offer a small piece of work | The contribution has a recipient, a useful scope and an attainable quality condition. |
@@ -61,7 +61,7 @@ Choose alternatives by what the person wants to do and what the activity require
 
 A person can enter with substantial capability and begin with a demanding contribution. Another can continue benefiting through quiet use. Do not make access to a useful answer depend on a public performance that the answer does not require. Where the arrangement has a legitimate membership or confidentiality condition, explain its purpose and offer the accessible alternative, if one exists.
 
-For each real option, make the requested effort and available response concrete. “You may ask privately; the volunteer host checks requests on the agreed day” is assessable. “Someone will always help” needs capacity the organiser may not have. Let the person ask for a smaller contribution or say that none of the options fits.
+For each available option, make the requested effort and available response concrete. “You may ask privately; the volunteer host checks requests on the agreed day” is assessable. “Someone will always help” needs capacity the organiser may not have. Let the person ask for a smaller contribution or say that none of the options fits.
 
 #### CB.3:4.3 - Remove the barrier that does not serve the work
 
@@ -75,13 +75,13 @@ Keep a meaningful refusal available. Explain any consequence of declining a spec
 
 #### CB.3:4.4 - Provide support before demanding visible contribution
 
-Offer help for the actual next action. A newcomer might need to see an example of an answerable question, prepare a permitted description with a peer, or speak with someone who can explain an unfamiliar convention. Match the help to the gap rather than requiring a general orientation programme.
+Offer help for the next action. A newcomer might need to see an example of an answerable question, prepare a permitted description with a peer, or speak with someone who can explain an unfamiliar convention. Match the help to the gap rather than requiring a general orientation programme.
 
-Ask what the person wants to try and what makes it difficult. Give a reason for a necessary condition, real alternatives where they exist, and feedback that helps the person improve the attempt. Make the response usable: who will answer, within which accepted window, and how to get another route if that help is unavailable. The support requires capable, willing people and real time.
+Ask what the person wants to try and what makes it difficult. Give a reason for a necessary condition, available alternatives, and feedback that helps the person improve the attempt. Make the response usable: who will answer, within which accepted window, and how to get another route if that help is unavailable. The support requires capable, willing people and time to provide it.
 
 Sometimes the obstacle is the person's interpretation of an ordinary transition difficulty. After checking the actual conditions, a relevant, truthful account from a more experienced participant can show how a similar difficulty was overcome and where help was obtained. Invite the newcomer to consider whether that account fits their situation; they may reflect privately or choose to contribute advice for later newcomers. There is no requirement to disclose personal experience.
 
-Use such accounts only when the available opportunities support them. If mistakes are actually ridiculed, correct that practice and its consequences. If no one answers newcomers, obtain the missing response. A reassuring story cannot make rejection or absent support imaginary.
+Use such accounts only when the available opportunities support them. If participants ridicule mistakes, correct that practice and its consequences. If no one answers newcomers, obtain the missing response.
 
 Check both the usefulness of the help and its experienced terms. A completed introduction may have felt coercive or consumed more effort than the person could afford. Silence can also mean that quiet use is sufficient. Ask where the answer can change the next action, and respect a decision not to participate further.
 
@@ -89,7 +89,7 @@ Check both the usefulness of the help and its experienced terms. A completed int
 
 When a person takes a different responsibility, explain the work it adds, the decisions they may make, the help they can obtain and how they can stop or hand it over. Skill in the community's subject does not automatically supply facilitation, moderation or maintenance capability. Obtain the missing preparation through a capable colleague or the relevant HCD contribution.
 
-For a bounded first attempt, agree what the person will do, what support will remain present and what result or difficulty they will return. Choose that attempt from the responsibility itself. Someone preparing to host a case exchange can rehearse opening the question, separating clarification from advice and closing with the recipient's next step. The support provider remains responsible for the help they accepted.
+For a bounded first attempt, agree what the person will do, what support will remain present and what result or difficulty they will return. Choose that attempt from the work the responsibility involves. Someone preparing to host a case exchange can rehearse opening the question, separating clarification from advice and closing with the recipient's next step. The support provider remains responsible for the help they accepted.
 
 Use OCE.6 when a real organisational appointment, resource allocation, permission or enabling relation must be established. A community invitation can propose the contribution; the appropriate owner establishes the relevant authority and access. For informal voluntary activity, a clear accepted arrangement can suffice where no formal assignment is required.
 
@@ -101,7 +101,7 @@ When stepping back would leave a relied-on activity unsupported, arrange the han
 
 Observe whether the person could carry out the selected action under the offered conditions. Distinguish receiving the invitation, entering a space, obtaining help and producing a useful contribution. Ask what remains confusing or costly when that answer can improve the arrangement.
 
-Continue a working option without requiring increased visibility. Change the conditions that defeat the selected action: clarify the request, repair access, change timing, obtain a suitable helper or revise the responsibility. Combine changes when the conditions depend on one another. Return to CB.1 when the available offer itself fails to serve the person's purpose. Use CB.2 for an initial exchange, CB.4 for its interaction design and CB.5 for a specific useful contribution.
+Continue a working option without requiring increased visibility. Change the conditions that defeat the selected action: clarify the request, repair access, change timing, obtain a suitable helper or revise the responsibility. Combine changes when the conditions depend on one another. Return to CB.1 when the available offer fails to serve the person's purpose. Use CB.2 for an initial exchange, CB.4 for its interaction design and CB.5 for a specific useful contribution.
 
 An available entry can be recognised in an understandable invitation, material and response path. A stronger claim that people actually participate or feel accepted needs observations appropriate to that claim and those people. Registration, repeated attendance and a welcome message establish different things.
 
@@ -152,7 +152,7 @@ A workable entry or change of participation makes it possible to answer:
 | --- | --- |
 | Public self-presentation is required before any useful help | Offer an entry suited to the person's useful action, and obtain only information needed for it. |
 | Quiet use is treated as a motivation defect | Ask whether it meets the person's purpose before prescribing more activity. |
-| A reassuring message covers real exclusion or missing support | Change the actual response, access or protection condition. |
+| A reassuring message covers real exclusion or missing support | Change the response, access or protection condition behind the exclusion or missing support. |
 | Subject expertise is treated as organising competence | Prepare and observe the new responsibility with appropriate support. |
 | Returning members must repeat everything | Supply the changes that affect their next use. |
 | A volunteer can leave only after finding their own replacement | Put continuity work with the organiser and revise the unsupported promise. |
@@ -171,7 +171,7 @@ Choice and support work together. A bare choice among infeasible options supplie
 
 ### CB.3:11 - SoTA-Echoing
 
-The practical comparison is between a generic induction or escalating participation demand and an entry built around the person's wanted action and its actual conditions.
+The practical comparison is between a generic induction or escalating participation demand and an entry built around the person's wanted action and the conditions they face.
 
 | Source line or developed treatment | Contribution used | Limit that changes use |
 | --- | --- | --- |

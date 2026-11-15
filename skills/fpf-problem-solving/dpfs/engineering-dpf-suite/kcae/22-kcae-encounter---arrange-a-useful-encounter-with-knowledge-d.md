@@ -5,13 +5,13 @@
 
 ### KCAE.ENCOUNTER:1 - Problem frame
 
-**Use this when** useful knowledge is not being requested because the person doing the work has no occasion to notice the question. An on-time result can hide repeated compensating work. A perfectly usable search box does not cause someone who sees no problem to search.
+**Use this when** useful knowledge is not being requested because the person doing the work has no occasion to notice the question. An on-time result can hide repeated compensating work. A usable search box does not cause someone who sees no problem to search.
 
 The gain is an authorized, attainable occasion for inquiry and, when worthwhile, a useful suggestion. Do not install continuous observation merely because a library exists. An explicit request, a known sufficient method or an ordinary conversation may already provide the encounter. This pattern does not grant permission to inspect work or interrupt its participants.
 
 ### KCAE.ENCOUNTER:2 - Problem
 
-An access package can contain excellent instructions and still never enter the work. Conversely, an always-on recommender can impose surveillance, disclosure and interruption without benefit. The engineer needs an actual path from an allowed observation to a useful receiving opportunity, including the branch that stays quiet.
+An access package can contain excellent instructions and still never enter the work. Conversely, an always-on recommender can impose surveillance, disclosure and interruption without benefit. The engineer needs a path from an allowed observation to a useful receiving opportunity, including the branch that stays quiet.
 
 ### KCAE.ENCOUNTER:3 - Forces
 
@@ -23,15 +23,15 @@ Earlier noticing can prevent rework, while incomplete event context encourages f
 
 Start from work whose receiving result can matter, not from the available telemetry. Possible occasions include a handover, a changed configuration, a failed test, an unusual manual correction or a scheduled review already attended by a responsible person. Also inspect successful work: repeated compensation can make an inadequate input appear satisfactory. A failure-only trigger cannot expose that class.
 
-Name who authorizes the observation, which events and fields may be used, for what purpose, for how long, and which recipient can receive the result. Obtain the permission through the actual owner. If it is absent, propose an attainable manual occasion or ask for the needed authorization; do not infer consent from installing a skill. State the stop on permission withdrawal.
+Name who authorizes the observation, which events and fields may be used, for what purpose, for how long, and which recipient can receive the result. Obtain the permission through that owner. If it is absent, propose an attainable manual occasion or ask for the needed authorization; do not infer consent from installing a skill. State the stop on permission withdrawal.
 
-The occasion must exist in the runtime or practice. A document describing a background observer is not that observer. A callable MCP tool exposes operations when invoked; it does not by itself watch a work stream. A skill can teach a response; it cannot alone schedule its own invocation. Choose an existing human participant, event subscriber, timer, application hook or explicit invocation that actually supplies the opening.
+The occasion must exist in the runtime or practice. A document describing a background observer is not that observer. A callable MCP tool exposes operations when invoked; it does not by itself watch a work stream. A skill can teach a response; it cannot alone schedule its own invocation. Choose an existing human participant, event subscriber, timer, application hook or explicit invocation that supplies the opening.
 
 #### KCAE.ENCOUNTER:4.2 - Project an event without erasing the unknown distinction
 
 An event projection carries only the allowed context needed to open inquiry: receiving work, observed result or contrast, the relevant passage or value, source/time identity and available case facts. Preserve the original observation separately from a proposed interpretation. “Three duplicate rows were removed by a senior analyst after a successful export” is evidence of an episode; “workers are too slow” is a hypothesis.
 
-Use deterministic validation for payload shape, identifiers, dates and permissions. Use semantic assessment for the relationship between the event and a possible question. If a projection omits the very compensation that raises the question, improve that projection or obtain the fuller authorized episode. Do not compensate with a more confident classifier on the same insufficient fields.
+Use deterministic validation for payload shape, identifiers, dates and permissions. Use semantic assessment for the relationship between the event and a possible question. If a projection omits the compensation that raises the question, improve that projection or obtain the fuller authorized episode. Do not compensate with a more confident classifier on the same insufficient fields.
 
 Minimize private data before any transfer and keep a source return under appropriate access. A public service may receive “repeated duplicate reconciliation after a successful export” while customer identifiers and row contents stay local. If an essential distinction cannot be shared, use a qualified local reader or return a limitation.
 
@@ -47,13 +47,13 @@ On a repeated invocation, read the state using the consistency needed by that st
 - **In progress, with a valid claim:** return a pending disposition or arrange a bounded later retry according to the event interface. Do not start a competing inquiry merely because the caller has not received a result. Do not permanently acknowledge unfinished work unless a durable continuation or recovery mechanism has taken responsibility for it.
 - **Abandoned or expired, without a completed result:** establish the permitted recovery. A runtime may confirm that the earlier invocation terminated; another environment may only show an expired lease. Conditionally replace the stale claim with a new attempt token so two recovery workers cannot both acquire it. Then resume from a valid checkpoint or rerun only the work whose repetition is safe under the known effect state. If recovery cannot exclude conflicting commits or harmful repeated effects, return a recoverable unresolved state and obtain reconciliation rather than silently treating the event as processed.
 
-Provide the mechanism that revisits an unfinished claim: actual queue redelivery, a recovery scheduler, or a resumable workflow with its documented behavior. A stored deadline does not invoke any of them. Choose bounded retries and account for repeated computation and model charges. Retain completed keys/results for the intended duplicate window, or define how older deliveries are rejected or reconciled when retention expires. An expired cache entry must not silently turn an old consequential operation into a new one.
+Provide the mechanism that revisits an unfinished claim: queue redelivery, a recovery scheduler, or a resumable workflow with its documented behavior. A stored deadline does not invoke any of them. Choose bounded retries and account for repeated computation and model charges. Retain completed keys/results for the intended duplicate window, or define how older deliveries are rejected or reconciled when retention expires. An expired cache entry must not silently turn an old consequential operation into a new one.
 
 Lease expiry does not kill a worker. If an old worker can resume after another attempt takes over, guard completion with an atomic comparison of the current owner token and in-progress state; a stale owner must be unable to commit its result or outgoing intent. In this construction, keep the inquiry replayable and defer externally visible effects until that guarded commit. Any effect path outside the guarded store needs its own idempotency or fencing support. Merely checking a lease and later making an unguarded external call leaves a race. If the chosen runtime cannot exclude that race for the proposed action, confirm termination before taking over, or preserve the unresolved effect state for an authorized person.
 
 Persist the accepted result and completed state together. If another service must receive a suggestion, a transactional outbox can also commit the outgoing intent in that same supported local transaction, guarded by the current attempt token. Give the outgoing logical operation a stable identity across attempts. A sender can retry that intent; the recipient must deduplicate or otherwise reconcile repeated effects at its own boundary. The local outbox does not make arbitrary remote effects exactly once.
 
-If an earlier attempt may already have posted a note, sent a message or launched an action before recording completion, inspect the external effect using that stable identity where possible. Recover an observed result, retry through a receiver that enforces the required idempotency window, or perform an explicitly authorized compensating operation when appropriate. Where the effect is unknown and repetition could be harmful, do not automatically replay it. An explicit “inquiry/effect unresolved” return is safer and more truthful than either a fabricated result or indefinite silent suppression.
+If an earlier attempt may already have posted a note, sent a message or launched an action before recording completion, inspect the external effect using that stable identity where possible. Recover an observed result, retry through a receiver that enforces the required idempotency window, or perform an explicitly authorized compensating operation when appropriate. Where the effect is unknown and repetition could be harmful, do not automatically replay it. Return “inquiry/effect unresolved” so the responsible participant can follow up. Reporting the uncertainty is safer and more accurate than inventing an outcome or silently dropping the inquiry.
 
 Separate “event received,” “inquiry performed,” “suggestion sent,” “suggestion displayed” and “person understood or used it.” An acknowledgement lost after display creates an unknown receipt state, not proof of non-delivery. Do not repeatedly interrupt the user merely to make an internal receipt counter definite. Obtain a receiver query or use the agreed duplicate policy. Deletion and permission withdrawal apply to stored event payloads as well as search data.
 
@@ -83,7 +83,7 @@ For a constructed software case, CedarBench receives event E42 and operation ver
 
 | Arrival/failure case | Available state and next operation | Result and remaining boundary |
 | --- | --- | --- |
-| Worker A claims E42/Q3, then crashes before storing a result. | The record is in progress and has no result. A real recovery invocation confirms A's termination, conditionally acquires a new token, repeats the permitted read-only inquiry, then commits its result and one outgoing intent. | The inquiry is completed rather than silently abandoned. A late commit with A's old token is rejected. If A might already have performed an uncontrolled effect, recover its status first or return unresolved instead. |
+| Worker A claims E42/Q3, then crashes before storing a result. | The record is in progress and has no result. A recovery invocation confirms A's termination, conditionally acquires a new token, repeats the permitted read-only inquiry, then commits its result and one outgoing intent. | The inquiry is completed rather than silently abandoned. A late commit with A's old token is rejected. If A might already have performed an uncontrolled effect, recover its status first or return unresolved instead. |
 | A repeated delivery arrives while A's claim is valid. | Return pending or defer according to the queue contract; do not acquire another live claim. The original invocation or the established recovery mechanism remains responsible. | No second inquiry is launched by this duplicate. A later expired claim follows the recovery case; pending is not reported as completion. |
 | A repeated delivery arrives after result and completed state were committed. | Retrieve the stored result under the same event/input identity and current access rules. Reuse any existing outgoing intent. | No new inquiry or notice intent is created. A lost display acknowledgement still leaves receipt unknown; the result record does not prove display or use. |
 
@@ -95,11 +95,11 @@ Telemetry favours what is easy to count, such as failures, and can omit skilled 
 
 ### KCAE.ENCOUNTER:7 - Conformance Checklist
 
-Does an actual occasion supply the observation? Is its scope authorized? Can the projection preserve an unresolved cue without making the diagnosis for the user? Are invocation, retries and receipt supported by the chosen runtime? Can a retry distinguish a live claim, a recoverable abandoned attempt and a stored completed result without repeating an uncontrolled effect? Can the result remain quiet? Does the recipient have an attainable next step? Has the complete path been tried under a defeating condition?
+Does an occasion supply the observation? Is its scope authorized? Can the projection preserve an unresolved cue without making the diagnosis for the user? Are invocation, retries and receipt supported by the chosen runtime? Can a retry distinguish a live claim, a recoverable abandoned attempt and a stored completed result without repeating an uncontrolled effect? Can the result remain quiet? Does the recipient have an attainable next step? Has the complete path been tried under a defeating condition?
 
 ### KCAE.ENCOUNTER:8 - Common Anti-Patterns and How to Avoid Them
 
-A better help form does not answer why someone would open it. A skill is not a background observer. A high fit score does not justify an interruption. Successful message transmission does not establish comprehension. Treat each as a separate missing contribution and repair the particular gap.
+A better help form does not answer why someone would open it. A skill is not a background observer. A high fit score does not justify an interruption. Successful message transmission does not establish comprehension. Treat each as a separate missing contribution and repair the gap.
 
 ### KCAE.ENCOUNTER:9 - Consequences
 
@@ -111,7 +111,7 @@ The event opens a question; it does not answer it. Separate observation, inquiry
 
 ### KCAE.ENCOUNTER:11 - SoTA-Echoing
 
-A.15.11 and B.5.PI supply method noticeability and inquiry from ongoing work. Contemporary skill, tool and package interfaces can supply instructions and callable access, but their capabilities alone do not establish observation or human uptake. This pattern adds the access-engineering path, permission projection, retry/receipt behavior and quiet branch. Choose a manual occasion as a serious comparator; reopen automation when its available event, receiver or total burden changes.
+A.15.11 and B.5.PI supply method noticeability and inquiry from ongoing work. Contemporary skill, tool and package interfaces can supply instructions and callable access, but their capabilities alone do not establish observation or human uptake. This pattern adds the access-engineering path, permission projection, retry/receipt behavior and quiet branch. Compare automation with a viable manual occasion for this work; reopen automation when its available event, receiver or total burden changes.
 
 ### KCAE.ENCOUNTER:12 - Relations
 

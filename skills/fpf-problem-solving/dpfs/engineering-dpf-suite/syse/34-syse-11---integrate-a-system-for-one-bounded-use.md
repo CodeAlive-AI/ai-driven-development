@@ -4,18 +4,18 @@
 
 ### SYSE.11:0 - Use This When
 
-Use this pattern when locally completed parts or changes have accumulated, but their joint operation has not
-yet established that one actual engineered System is usable for a stated purpose. Integration is the broader
-engineering concern; this pattern develops the bounded move from available contributions to a configuration
-that supports one receiving use. It includes choosing the integration progression, correcting discovered
-incompatibilities and assessing the resulting whole.
+Use this pattern when locally completed parts or changes have accumulated and a decision depends on whether
+one actual engineered System can support a stated use. Integration is the broader engineering concern;
+this pattern develops the bounded move from available contributions to a configuration that supports
+one receiving use. It includes choosing the integration progression, correcting discovered incompatibilities
+and assessing the resulting whole.
 
-Begin with the actual System, its current configuration and the needed use. Recover an adequate existing
-integration strategy and assessment before constructing what is missing. A strategy can supply the grouping,
-assembly and check order directly. A current qualified result covering the same configuration and use can
-finish the assessment directly; neither a new trial nor another record is required merely to use this pattern.
-Otherwise choose a joint change sufficient to support the use, expose its consequential interactions
-early, perform the integration Work and use the resulting observations to assess the changed System.
+Begin with the actual System, its current configuration and the needed use. Use any applicable integration strategy
+or assessment already available. A strategy can supply the grouping, assembly and check order directly. A
+current qualified result covering the same configuration and use can finish the assessment directly; neither
+a new trial nor another record is required merely to use this pattern. If new integration Work is needed, choose
+a sufficient joint change, expose its consequential interactions early and perform the Work. Assess the
+resulting System using suitable existing observations and any additional observations the use requires.
 
 The first useful result is a **bounded usability assessment**: an episteme stating what the actual System can
 support, on what grounds, for which configuration, conditions and interval, and with what limits and fallback.
@@ -36,10 +36,10 @@ remain with the practices that qualify them; the integration strategy connects t
 | --- | --- |
 | increment | A project-relative name for an identified actual System under one resulting configuration, selected for a receiving use. The same System, the transformations that changed it, and configuration claims remain separately identified. |
 | usable | A bounded claim that the System in this configuration supports one named use under declared conditions and evidence window. State benefit, assurance, permission, release, reliability or completeness separately when the decision needs them. |
-| integration | Dated Work that establishes the relations needed by the intended configuration. A merge, assembly record, installation flag or interface description can supply evidence; the needed relations must actually obtain. |
+| integration | Dated Work that establishes the relations needed by the intended configuration. A merge, assembly record, installation flag or interface description can supply evidence; the needed relations must obtain. |
 | integration progression | The selected grouping and order of integration and checks, with the conditions for proceeding, correcting, revising the grouping or stopping. It can include concurrent Work and intermediate configurations that are useful for learning but not yet usable for the receiving purpose. |
 | Work and transformation | An Agent performs dated Work by a Method. A transformation is the actual change of a continuing subject across time. Work can cause or participate in a transformation; the two occurrences remain distinct. |
-| actual configuration | The decision-relevant actual constituents, obtaining relations and characteristic values of one identified actual System over an interval, as governed by SYSE.13. A configuration description carries claims about that configuration. |
+| actual configuration | The decision-relevant constituents, obtaining relations and characteristic values of an identified System as it exists over an interval, as governed by SYSE.13. A configuration description carries claims about that configuration. |
 | modernization | Continuing engineering of an existing System through separately identified bounded changes and resulting configurations. The System's reidentification rule decides whether it continued or another System began. |
 | MVP or continuous engineering | Source-local cues. Recover whether MVP means, for example, a market probe, demonstrator or usable engineering configuration. For continuous, name the overlapping Work and actual changes intended by the source. |
 
@@ -51,14 +51,14 @@ example, its controller interface, sensor relation, physical plant, operator pro
 incompatible. A prototype can demonstrate one effect without supporting the configuration and operating envelope
 needed by the next decision.
 
-No one lifecycle or cadence governs all of these dependencies. Work on, for example, physical parts, software,
-evidence, platforms, suppliers, configuration, and operation can overlap at different cadences.
-Engineers select one bounded integration boundary, connect the contributing Work and transformations to it,
-observe use, and return a result that can support the next decision within that use boundary.
+No one lifecycle or cadence governs all of these dependencies. Work on, for example, physical parts, software, evidence,
+platforms, suppliers, configuration, and operation can overlap at different cadences. Engineers
+identify the integration boundary, connect the contributing Work and transformations to it, and use observations
+of the System to assess the bounded use. Make further observations when the assessment needs them.
 
 ### SYSE.11:2 - Problem
 
-A claimed increment is not decision-usable until the responsible engineers can answer:
+Before relying on a claimed increment for a decision, the responsible engineers need answers to these questions.
 
 1. Which actual System and starting configuration are changing?
 2. Which receiving use, operating conditions, affected Systems, and interval bound the result?
@@ -69,7 +69,7 @@ A claimed increment is not decision-usable until the responsible engineers can a
 5. Which Agents performed which dated Work by which Methods, and which actual transformations and relations
    obtained?
 6. What integration and operating observations support usability, and what claims remain unsupported?
-7. What fallback, stop, separate assurance or release decision, and later change can reopen the result?
+7. What fallback or stop applies, which separate assurance or release decisions are needed, and what later change could reopen the assessment?
 
 Without these distinctions, *done* becomes a proxy for actuality. Engineers can ship incompatible parts,
 overread a component test, confuse a release record with use, or keep adding features without producing a
@@ -77,7 +77,7 @@ configuration that anyone can use.
 
 ### SYSE.11:3 - Forces
 
-- A small increment shortens feedback, while its use can still depend on relations outside the changed parts.
+- A small increment shortens feedback, while its use can depend on relations outside the changed parts.
 - Software and descriptions may change quickly; Work involving, for example, procurement, fabrication, access,
   integration, and physical observations often changes more slowly.
 - Each contributor needs a local completion condition, but no local completion proves usability of the containing
@@ -91,17 +91,17 @@ configuration that anyone can use.
 
 ### SYSE.11:4 - Solution
 
-Work back from the receiving use to the relations that must hold together. Choose a feasible progression that
-reveals consequential incompatibility before it becomes expensive to correct. Establish those relations,
-correct discrepancies and assess the resulting configuration using evidence that actually covers the use.
+Work back from the receiving use to the relations that must hold together. Use a suitable integration strategy or choose a feasible progression that can expose consequential incompatibilities before they become more costly to correct.
+Use adequate evidence for relations already established. Establish any remaining relations and correct any discrepancies.
+Assess the resulting configuration for the intended use, using a sufficient existing assessment when available.
 
 #### SYSE.11:4.1 - Perform the Move
 
 1. **Name the System and use.** State the actual System, starting configuration, receiving use, affected Systems,
    operating envelope, interval, required behavior and deciding Agent. Distinguish a demonstrated episode from
    a claim about later use or continuing availability.
-2. **Recover a sufficient strategy or construct the missing connection.** Inspect an existing specialist plan
-   for the same starting state, intended configuration, interactions and use. Follow it where it is adequate.
+2. **Recover a sufficient strategy or construct the missing connection.** When a specialist plan is available, check
+   that it covers the same starting state, intended configuration, interactions and use. Follow it where it is adequate.
    Where the grouping or progression remains unsupported, use :4.1.1 to connect the needed behavior to the joint
    change, intermediate configurations, integration Work and checks.
 3. **Establish the inputs before relying on them.** Use realization, platform, coordination, configuration and
@@ -120,7 +120,7 @@ correct discrepancies and assess the resulting configuration using evidence that
    justified scope. Perform the remaining whole-use observation when the assessment needs it.
 7. **Construct the usability assessment.** Use SYSE.10:4.1 steps 6–8 and SYSE.10:4.1.1 for a missing trial-to-use
    inference or join between results; :4.1.3 below identifies its inputs here. Return the supported use, limits,
-   unsupported claims, fallback and condition for reconsideration. Obtain separately governed assurance,
+   any unsupported claims, fallback and condition for reconsideration. Obtain separately governed assurance,
    permission, release or specialist results when the receiving decision needs them.
 8. **Choose later work only when it can matter.** A repair needed for the current integration returns through
    step 6. A further modernization or inquiry is a separate choice. Use C.11.CRC when the finite contribution of
@@ -129,7 +129,7 @@ correct discrepancies and assess the resulting configuration using evidence that
    Otherwise finish with the current assessment.
 
 Fabrication, software integration, preparation of the trial environment and assessment construction may overlap.
-Reliance still requires the particular input to be established before the Work or decision that uses it.
+Reliance requires the particular input to be established before the Work or decision that uses it.
 
 ##### SYSE.11:4.1.1 - Choose the Joint Change and Integration Progression
 
@@ -151,7 +151,7 @@ Keep the partial result's purpose explicit.
 **Choose what to bring together first.** Look for an interaction whose failure would defeat the use or make
 later rework costly. Select an available configuration sufficient to exercise that interaction meaningfully. It may be an actual subset, an existing test rig with a qualified substitute, or the whole System.
 A substitute is useful only for the behavior it represents: a controller rig can expose signal polarity while
-leaving hydraulic loading unanswered. Select the later check that must establish the missing correspondence.
+leaving hydraulic loading unanswered. When the intended use depends on the missing correspondence, use suitable existing grounds or select the later check needed to establish it.
 
 Compare feasible progressions where the choice matters. One whole assembly can avoid the expense of substitutes
 and repeated setup when the few interactions are already well understood. Integration by functional subsets
@@ -187,10 +187,10 @@ the available evidence cannot decide between them. Do not declare the nearest co
 its output is where the mismatch became visible.
 
 Give the responsible engineering practice the demonstrated discrepancy and the behavior to restore. A wiring
-or mapping correction may be local; a newly discovered pressure interaction may require a design change and
-revised fabrication. Identify the resulting actual configuration, then repeat the failed check and the checks
-whose grounds that correction can invalidate. The comparison with the old result determines this scope; it is
-neither every test nor only the originally failing one by default.
+or mapping correction may be local; a newly discovered pressure interaction may require a design change
+and revised fabrication. Identify the resulting configuration and compare the correction with the grounds
+of the earlier results. Repeat the failed check and any other checks whose grounds the correction can invalidate.
+
 
 Proceed when the corrected interaction meets the next step's condition and no unresolved discrepancy can
 defeat that reliance. If correction is infeasible in the available
@@ -205,7 +205,7 @@ results, the grounds linking them, and the intended use and interval. If one suf
 that claim, use it. Otherwise its inference Method develops the missing connection, including why results about
 different parts hold together and why a trial applies beyond its observed conditions.
 
-Ask the consequential question: could all these observations be true while the proposed use still failed?
+Could all these observations be true while the proposed use failed?
 A rig can be correct while installed wiring differs; a station can pass a trial while a required external buffer
 is unavailable for the later event. Resolve that premise or return a narrower supported claim. Explain which
 part is observed, which extension rests on qualified domain knowledge, and which future condition must hold.
@@ -214,7 +214,7 @@ An evidence window does not itself supply a reason for extrapolation.
 Return the assessment when it answers the receiving question, even when the answer is that the intended use
 remains unsupported. If a later premise changes, reopen the dependent inference and retain unaffected results.
 Loss of support is not by itself proof of physical failure. The ordinary assessment Method does not require
-the separate assurance activities in SYSE.4 unless an assurance claim is actually being made.
+the separate assurance activities in SYSE.4 unless an assurance claim is being made.
 
 #### SYSE.11:4.2 - Record the Result
 
@@ -225,18 +225,18 @@ content. The following are questions to keep answerable, not a mandatory second 
 | --- | --- |
 | System and use | Actual System, starting and resulting configurations, receiving use, affected Systems, conditions, interval and deciding Agent. |
 | Boundary and progression | Why the included changes belong together, the selected intermediate configurations and checks, conditions for proceeding, actual fallback and stop. |
-| Supplied inputs | Results actually relied on, their applicability and evidence windows, and any unresolved blocker or qualified substitute. |
+| Supplied inputs | Results relied on, their applicability and evidence windows, and any unresolved blocker or qualified substitute. |
 | Work and actual change | Dated Work, Agents, Methods, subjects, results, transformations and obtaining relations; discrepancies, corrections and their resulting configurations. |
-| Usability | What each observation or qualified result supports, the consequential inference to the use claim, limits, unsupported claims and conditions for reconsideration. |
-| Separate decisions | Assurance, permission, release or specialist decisions still needed for the receiving use. |
+| Usability | What each observation or qualified result supports, the consequential inference to the use claim, limits, any unsupported claims and conditions for reconsideration. |
+| Separate decisions | Any assurance, permission, release or specialist decisions that remain to be made for the receiving use. |
 | Later work, when selected | The separate comparison and choice, attainable contribution, burden, alternatives and reopen condition. No later-work record is required when the assessment completes the current question. |
 
 #### SYSE.11:4.3 - What Changes in Practice
 
 Engineers choose integration Work to expose the interactions that determine whole-System use. They can explain
-why a partial result permits the next step, what must be repaired after a mismatch, and why the final evidence
-supports the selected use. Sufficient existing strategies and assessments remain usable directly. Finishing
-the increment does not depend on starting another modernization.
+what a partial result permits, what needs repair after a mismatch, and whether the final evidence supports
+the selected use. Sufficient existing strategies and assessments remain usable directly. Finishing the
+increment does not depend on starting another modernization.
 
 ### SYSE.11:5 - Worked Case: A Flood-Pump Station for Bounded Emergency Discharge
 
@@ -261,7 +261,7 @@ conditions already cover this bounded duty, and no required behavior currently d
 The engineers recover the realization arrangement, integration platform readiness, temporary collector-buffer
 commitment and current configuration basis. An earlier unsupported fixture-and-weld branch has been resolved
 through feasibility Work: a fixture design and current toolmaking/welding capability now support the chosen
-fabrication Method. The actual fixture and manifold still have to be made. Platform evidence is available
+fabrication Method. The fixture and manifold have yet to be made. Platform evidence is available
 before the controller trial; later participation will supply its own observations.
 
 The station remains the same actual System under its reidentification rule: its stable boundary, foundation and
@@ -277,15 +277,15 @@ rig are available now. The station has one planned outage window. The engineers 
 Waiting and testing everything only after assembly would avoid a rig setup, but a signal incompatibility found
 then would consume the scarce outage and could require reinstatement. An early pressure-input/controller/drive
 check costs half a day on the existing rig and can distinguish that incompatibility while fabrication continues.
-They choose the latter. A new full hydraulic simulator would add cost without settling a remaining question that
-the planned station trial and available hydraulic qualification cannot already address.
+They choose the early rig check. A new full hydraulic simulator would add cost. The planned station trial and
+available hydraulic qualification can address the remaining hydraulic questions.
 
 | Progression | Work, useful result and condition for continuing |
 | --- | --- |
 | Fabricate the manifold and fixture while checking the controller interaction. | The fabrication team produces and inspects the physical assembly by its qualified Method. The controls team uses the actual input hardware, selected software and drive interface on the existing rig, with a qualified pressure-signal source. Independent results can proceed concurrently. |
 | Resolve the signal discrepancy on the rig. | An increasing input produces a decreasing pressure indication and the wrong control response. The team holds the dependent activation, compares the transmitter convention, installed input and mapping, and finds a reversed conversion in the mapping. It corrects the mapping and repeats the range, direction and stop checks that the change can affect. All now meet the rig procedure's conditions. |
 | Establish the installed configuration. | After fabrication acceptance, the team installs the manifold and corrected controller/mapping. Inspection confirms the hydraulic geometry used by the qualification; an installed signal check confirms the actual transmitter, wiring and mapping. The rig result alone would not cover that wiring. The independent station stop check also passes. |
-| Exercise the whole station in the bounded trial. | The municipality makes the temporary buffer actually available, the operator enacts the applicable procedure, and the engineering team observes discharge and control behavior in C19. The trial result and qualified extension in :5.3 support the assessment. |
+| Exercise the whole station in the bounded trial. | The municipality makes the temporary buffer available, the operator enacts the applicable procedure, and the engineering team observes discharge and control behavior in C19. The trial result and qualified extension in :5.3 support the assessment. |
 
 The defect is an interaction mismatch: both local items could have passed checks using their own signal
 conventions. Correcting the conversion changes the installed configuration basis; it does not require
@@ -293,7 +293,7 @@ refabricating the unaffected manifold. Conversely, a hydraulic mismatch would re
 fabrication question. The teams' dated Work and its results remain distinct from the manifold's transformation
 through welding, cooling and rework, and from the station's transformation from C18 to C19.
 
-The progression condition is substantive: correct range, direction and stop response permit the subsequent
+Correct range, direction and stop response permit the subsequent
 installed check, which then permits the whole-use trial under its own conditions. If the manifold arrives
 late, the rig result remains useful for its tested
 configuration, but neither C19 nor emergency-discharge fitness has thereby been established. The team revises
@@ -356,13 +356,13 @@ use evidence exists. Identify the missing contribution; approval alone does not 
 ### SYSE.11:6 - Bias Annotation
 
 A passed gate or successful software build can be mistaken for evidence of whole-System use. Recover what
-its underlying checks actually establish and supply the missing interaction or applicability grounds. Conversely,
+its underlying checks establish. Supply any missing interaction or applicability grounds needed for the receiving use. Conversely,
 waiting for a complete physical assembly can postpone feedback that an available subset could already provide.
 Choose the integration boundary from the useful evidence and its total burden.
 
 Institutional status and labels supplied by, for example, vendors, tools, or standards can support particular
 claims, but they do not establish actual integration or use. Automation can support bounded Work and checks; the
-receiving Agent still selects the use and any authority relation remains separately supported.
+receiving Agent selects the use and any authority relation remains separately supported.
 
 ### SYSE.11:7 - Conformance Checklist
 
@@ -408,9 +408,9 @@ and repeatedly returns evidence to engineering decisions.
 
 ### SYSE.11:11 - SoTA and Source Use
 
-**The working question is how to obtain a justified bounded-use result from available parts and local results
-when some consequential interactions have not yet been established.** The same question includes the case in
-which a competent specialist has already supplied an adequate integration strategy and assessment.
+**How can the available parts and local results support an assessment of the resulting System for its intended use and conditions?**
+A specialist may already have supplied a suitable integration strategy and assessment. Where a consequential interaction remains
+unestablished, determine how to integrate and check it.
 
 The selected line combines use-driven integration progression with explicit assessment of the resulting
 whole. It adopts established interaction engineering rather than deriving a strategy from the vocabulary of
@@ -435,7 +435,7 @@ The source choices have bounded roles:
   supplies intermediate aggregates, strategy alternatives and their risk, availability and test burdens.
   Its distinction between developmental integration and production assembly remains source-local. SYSE.11
   instead follows the named actual System and receiving use, including a modification in operation; the
-  qualified assembly and design practices still supply their own Methods.
+  qualified assembly and design practices supply their own Methods.
 - **Adopt within software scope; adapt the feedback contribution where correspondence holds:**
   [DORA, Continuous integration](https://dora.dev/capabilities/continuous-integration/) connects small integrated
   changes with rapid tests and prompt repair or reversion after failure.
@@ -445,14 +445,14 @@ The source choices have bounded roles:
 - **Adopt the concurrent and iterative application principle:**
   [SEBoK, Applying the Systems Approach, Application Principles](https://sebokwiki.org/wiki/Applying_the_Systems_Approach#Application_Principles)
   supports concurrent, iterative and evolutionary work. Its lifecycle presentation does not establish a fixed
-  serial execution or a defect of the method. Section :4.1 preserves overlap while making particular reliance
+  serial order of execution. Section :4.1 preserves overlap while making particular reliance
   dependencies explicit.
 
 The construction here connects the selected integration results to SYSE.10's ordinary assessment and,
 only when another choice is live, to C.11. The worked margin and changed buffer premise show the bounded
 consequence of that connection. They do not establish empirical superiority over a competent professional
-integration programme. Qualification of domain models, equipment and tests remains real work in every
-arrangement.
+integration programme. Every arrangement depends on qualified domain models, equipment and tests where the use requires them. Include the cost of obtaining the
+qualification it needs.
 
 Reopen the comparison when a qualified existing strategy covers a previously missing interaction, an earlier
 check fails to represent the installed relation, the cost or timing of intermediate integration changes, or a
@@ -466,7 +466,7 @@ same useful result also changes the selection. A newer source or a faster tool a
   uses it.
 - A compatible `SYSE.12` result supplies pre-use platform capability and condition claims. Evidence produced by
   later participation or provision Work was not available to support the earlier decision.
-- A compatible `SYSE.18` decision identifies the selected constituent arrangement and its unresolved
+- A compatible `SYSE.18` decision identifies the selected constituent arrangement and any unresolved
   dependencies. Rely on an obtaining commitment or observed coordination only when the accompanying evidence
   supports that claim; the decision alone supplies neither. `SYSE.13` supplies configuration and effectivity
   claims for the same Systems and use. Constituent outputs and the receiving Agent's authority need their own basis.
@@ -477,8 +477,8 @@ same useful result also changes the selection. A newer source or a faster tool a
   or transformation.
 - SYSE.10:4.1 steps 6–8 and SYSE.10:4.1.1 supply the ordinary assessment inference and combination of results.
   The referenced instructions in SYSE.4:4.4 and SYSE.4:4.6 can be used without importing the separate assurance activities.
-- A bounded usability assessment can inform SYSE.4 within its supported use and evidence window. SYSE.14
-  retains release and evidence-continuity authority.
+- A bounded usability assessment can inform SYSE.4 within its supported use and evidence window. Use SYSE.14 for release and
+  evidence continuity under the authority assigned to those decisions.
 - Operations, Maintenance, Platform Engineering, safety, security, law, governance, finance, and other specialist
   practices retain their Methods and decisions.
 

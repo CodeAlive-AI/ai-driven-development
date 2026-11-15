@@ -9,7 +9,7 @@ Use this method when a customization, common contribution or provider change is 
 
 Start by naming what is expected to grow, the useful result that must remain available and the boundary of comparison. Growth in customers, variants, execution volume, partners and support years can create different burdens.
 
-Use an already adequate accounting and operating result directly when it covers the same alternative, period and obligations. This method joins those results to the customization decision; it does not replace accounting, finance or capacity analysis.
+Use an already adequate accounting and operating result directly when it covers the same alternative, period and obligations. Use accounting, finance and capacity analysis for their respective questions, then apply their results to the customization decision.
 
 ### CUST.7:2 - Problem
 
@@ -35,17 +35,17 @@ Name the customer result, customer population or case mix, period and service co
 
 State the growing quantity. “Scale” might mean more customers with the same mix, more variants, greater throughput, more operating locations, longer support or more delivery partners. If several grow, keep them distinct and explain their interactions.
 
-State the proposed mechanism. Shared preparation may reduce setup per case. Automation may reduce a particular operation. A partner may add capacity. Standard interfaces may reduce change work. Each mechanism predicts a particular burden change; none follows merely from calling the result productized.
+State the proposed mechanism. Shared preparation may reduce setup per case. Automation may reduce a particular operation. A partner may add capacity. Standard interfaces may reduce change work. Specify which burden the proposed mechanism would change. Calling an offering productized supplies no evidence that the change occurred.
 
 #### CUST.7:4.2 - Recover complete work and resource obligations
 
 Start from the constructed alternatives, not from an assumed price. Trace preparation, local execution, adaptation, qualification, acceptance, assistance, coordination, updates, support, transition and ending. Include the recipient's work when the alternative transfers effort to them.
 
-Use [MA.8 — Account for Customer and Product Economics Over Time](../ma/15-ma-8---account-for-customer-and-product-economics-over-time.md) for the complete accounting method over customer and product economics. Supply the alternatives and time boundary; receive the relevant cost, capacity, allocation, support-tail and economic results under their stated assumptions. Describe the whole relevant work for each customization or family alternative, then use the returned account to choose its disposition.
+Use [MA.8 — Account for Customer and Product Economics Over Time](../ma/15-ma-8---account-for-customer-and-product-economics-over-time.md) for the accounting comparison. Supply the alternatives and time boundary; receive the relevant cost, capacity, allocation, support-tail and economic results under their stated assumptions. Describe the whole relevant work for each customization or family alternative, then use the returned account to choose its disposition.
 
 Keep unlike resources distinguishable. An hour of a scarce specialist is not automatically substitutable by an hour of general delivery work. Record when a resource is needed, not only its total amount. Separate committed obligations from optional investment and from work whose funding or provider is still unknown.
 
-Avoid double counting common development across customers while still making its actual financing visible. A contribution can be valuable over a portfolio even when one case cannot bear the whole preparation cost. Conversely, allocating costs away from a customer does not remove the underlying burden.
+Avoid double counting common development across customers and show how the common development is financed. A contribution can be valuable over a portfolio even when one case cannot bear the whole preparation cost. Conversely, allocating costs away from a customer does not remove the underlying burden.
 
 #### CUST.7:4.3 - Test the claimed burden change
 
@@ -61,7 +61,7 @@ Compare what changes in the intended growth condition.
 
 Distinguish capacity expansion, economies of scale, economies from shared variety and gains from learning. Hiring proportionally more performers may support more customers without reducing work per customer. That can still be a good decision if its costs and conditions fit the purpose.
 
-When evidence is uncertain, identify the uncertainty that can change the decision. A small, permitted receiving trial may establish whether ordinary delivery still requires author intervention.
+Identify which unresolved question could change the decision. A small, permitted receiving trial may establish whether ordinary delivery still requires author intervention.
 
 #### CUST.7:4.4 - Join economic attractiveness with operating feasibility
 
@@ -75,7 +75,7 @@ For an outcome arrangement, use the responsibility and operating concept obtaine
 
 Choose among the complete alternatives: accept the supported scope, invest in a common contribution, charge or fund local work, retain assistance, add a qualified provider, change timing, narrow variants, separate offerings or decline the unsupported part.
 
-In commercial provision, use the appropriate economic and cash consequences. In public or nonprofit provision, establish the useful result, available funding, allocation priorities and resource limits. A recipient need not pay a positive local margin, but someone must actually provide the needed contributions.
+In commercial provision, use the appropriate economic and cash consequences. In public or nonprofit provision, establish the useful result, available funding, allocation priorities and resource limits. A public or nonprofit provider can spend more on a case than it receives in fees for that case. The work still has to be done and its resources supplied.
 
 Identify who can commit the resources and who can change the promise. The case can proceed locally while a separately funded investment remains open. Avoid hiding that investment inside a delivery estimate or treating a hoped-for future sale as already committed support.
 
@@ -135,9 +135,9 @@ The burden belongs to the complete provision arrangement over time. CUST uses ac
 
 ### CUST.7:11 - SoTA-Echoing
 
-The method combines service-productization work with the full MA.8 and Operations methods. Compared with pricing only the initial customization or counting internal hours after outsourcing, it preserves shared investment, moved work, constrained resources and continuing support.
+The method combines service-productization work with the full MA.8 and Operations methods. Include shared investment and continuing support beyond the initial customization price. When work is outsourced, count the transferred work and the resources that still limit delivery.
 
-Mass-customization and platform sources support the potential value of common preparation and controlled variation. They do not establish that every added variant lowers cost. Naldi, Galizia and Bortolini provide a bounded example of competing time and storage objectives.
+Mass-customization and platform sources support the potential value of common preparation and controlled variation. Whether an added variant lowers total cost depends on the preparation it saves and the qualification and support it adds. Naldi, Galizia and Bortolini provide a bounded example of competing time and storage objectives.
 
 CUST adopts the complete-boundary comparison and rejects growth claims based only on a route, fee or provider change. Reopen the answer when actual repetition changes the proposed mechanism or the horizon needed to support it.
 

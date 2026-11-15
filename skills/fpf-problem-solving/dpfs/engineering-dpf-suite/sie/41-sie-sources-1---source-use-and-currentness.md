@@ -1,6 +1,6 @@
 ## SIE.Sources:1 - Source use and currentness
 
-The source contributions guide particular actions and qualifications. Each body states what a source contributes and what remains outside its authority.
+Each pattern explains which action a source informs, the qualifications on that use and the limits of the source’s authority.
 
 | Source family | Contribution used here | Qualification and reopen |
 | --- | --- | --- |

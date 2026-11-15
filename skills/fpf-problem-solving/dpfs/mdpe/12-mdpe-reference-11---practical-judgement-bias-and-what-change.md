@@ -1,47 +1,47 @@
 ## MDPE.Reference:11 - Practical judgement, bias, and what changes next
 
-The language gives a practitioner a way to locate the missing contribution and stop at a useful result. Its
-price is attention to conditions and interfaces: someone must obtain the relevant performer or receiver
-observations, reconcile specialist results, and keep any selected alternative reproducible. For one settled
-performance, using the full style-development combination would add effort without answering another live
-question. For a continuing practice, omitting teaching, recognition, or support can make an attractive local
-result disappear at the next occurrence.
+Begin with the contribution that answers the music or dance question.
+Where several results must work together, account for the effort of
+obtaining relevant observations, reconciling the findings and supporting
+alternatives that must remain reproducible. A settled performance can answer
+a question about one event. A continuing practice may depend on teaching,
+recognition and support being available again at the next occasion.
 
-The following questions apply to the complete chosen use. Reuse an existing answer when its subject and
-conditions still match; give a new answer for the changed part of a profile.
+Apply these questions to the intended use. Reuse an existing answer
+under conditions it covers and examine the parts that have changed.
 
-- What exactly must become possible, for which performers or receivers, and under which conditions? The brief
-  and the selected Methods must concern that same use.
-- Does each needed contribution have an available result, or is it still proposed? Identify the missing
-  capability, configuration, receiving observation, or support that prevents the next action.
-- Can the whole combination meet the shared resource and interaction conditions above? Protect the trial that
-  distinguishes the consequential alternatives when narrowing the work.
-- Which observation answers the decision, whose competence makes the judgement usable, and what do its
-  representation and population leave out? Separate local observation, causal contribution, transmission, and
-  later continuation whenever the conclusion depends on those differences.
-- Who can make the chosen change, and whose performance, participation, or recurring work will it affect? Use
-  the actual decision and participation arrangements, including applicable refusal or revision, for the case.
-- What is the first useful result, the next action or stop, and the changed condition that would make the
-  conclusion worth reopening?
+- What must be explained, assessed or made possible, for which performers or recipients
+  and under which conditions? Apply the brief and selected methods to that use.
+- Which contributions are already available, which are proposed and what remains unknown? Identify
+  any missing capability, configuration, observation or support on which the answer depends.
+- Can the full combination meet its shared resource and interaction conditions? When narrowing
+  the work, preserve the comparisons and observations on which its conclusion depends.
+- What can the observation and its representation establish, what qualifies the judgement, and which
+  conditions or participants does the evidence cover? Distinguish local observation, causal
+  contribution, transmission and later continuation where those differences matter.
+- If a change is proposed, who can decide or carry it out, and whose performance, participation or
+  recurring work would it affect? Use the applicable authority and arrangements for participation, refusal or revision.
+- What conclusion or work result can the recipient use now? If
+  further action or reconsideration is needed, what calls for it?
 
-The source set gives particular visibility to named projects, published research, well-documented teaching
-lines, and technical interventions. Quiet social practice, oral or embodied knowledge, poorly archived variants,
-and participants absent from the observed population may be harder to recover. Camera-readable movement,
-measurable timing, platform visibility, or an expert's preferred technique can then become a misleading proxy
-for the receiving use. Keep the affected participants' experience and the intended working task in the
-comparison. The detailed correction belongs in `MDPE.12`, `MDPE.13`, or `MDPE.18` according to the result at issue.
+Published studies, named projects, well-documented teaching and technical interventions are
+easier to find than quiet social practice, oral or embodied knowledge, poorly archived variants
+or the experiences of people left out of the sample. Determine what a camera, a timing measure,
+a platform count or an expert judgement can establish about the task at issue. Include
+participants’ experience when the question concerns it. Use `MDPE.12` for observation,
+`MDPE.13` for a selection arrangement or `MDPE.18` for recoverable source and lineage evidence.
 
-Transfer also depends on the production resources, learner, and performing configuration. Results from NDT,
-human motor learning, or one robot retain those conditions when another profile uses them. The published Algorave
-guidance and TOCA teaching material can support a brief or lesson design while leaving a local investment
-Method, actual costs and capacity, or a community-recognition result to be obtained. Where one of those inputs
-is decisive, identify it and the use it blocks. Available creation, teaching, or observation contributions remain
-usable for the questions they answer.
+When using an NDT production result, human motor-learning study or robot performance
+elsewhere, compare the relevant resources, learner, task and configuration.
+Algorave guidance and TOCA teaching materials may support a brief or lesson
+design. A local investment method, costs, capacity and community recognition each
+need their own grounds if the question depends on them. Use adequate existing
+results and identify the particular claim limited by any missing contribution.
 
-Keep the architecture responsive to what changed. A new instrument or model may first require a configuration
-and performance trial; a changed teaching Method may require transfer evidence; an altered selection rule may
-require returning to the variants and capabilities it rewards. A changed receiving population or support
-capacity can reopen the whole combination even if its individual Methods remain useful elsewhere. Revise the
-framework boundary only when the evidence changes the recurring problem, the shared specialization, or a
-material result relation. [Source use and currentness](15-mdpe-reference-14---source-reliance-and-conditions-for-recon.md) gives the common refresh
-rule; each selected pattern supplies its local return.
+Identify what a change affects. A new instrument or model may require an assessment of configuration or
+performance. A changed teaching method may require transfer evidence, and a different selection rule
+may affect which variants or capabilities receive support. A changed population or capacity can reopen
+a combination while its individual methods remain usable elsewhere. Reconsider the framework boundary
+when the evidence alters a recurring problem, a shared specialization or a material relation between
+results. [Source use and currentness](15-mdpe-reference-14---source-reliance-and-conditions-for-recon.md)
+gives the general condition. Each method identifies the local work that can revisit its result.

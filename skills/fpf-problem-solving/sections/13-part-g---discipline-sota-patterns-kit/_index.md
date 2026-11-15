@@ -3,7 +3,7 @@
 ## Contents
 
 - [G.Core - Discipline SoTA Kit Invariants, Defaults and Refresh Triggers (Part G)](01-g-core---discipline-sota-kit-invariants-defaults-and-refresh.md) (434 lines) — Tag. Architectural pattern for shared Part G rules
-- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec)](02-g-0---define-admissible-comparison-and-aggregation-for-a-fra.md) (360 lines) — Tag. Architectural pattern (foundational Standard; constrains G.1–G.5)
+- [G.0 - Define Admissible Comparison and Aggregation for a Frame (CG-Spec)](02-g-0---define-admissible-comparison-and-aggregation-for-a-fra.md) (362 lines) — Tag. Architectural pattern (foundational Standard; constrains G.1–G.5)
 - [G.1 - Author a Reusable CG-Frame Generator and Selector Kit](03-g-1---author-a-reusable-cg-frame-generator-and-selector-kit.md) (476 lines) — Tag. architectural pattern; generator chassis (design‑time kit / authoring scaffold)
 - [G.2 - Harvest and Synthesize SoTA for a CG-Frame](04-g-2---harvest-and-synthesize-sota-for-a-cg-frame.md) (518 lines) — Type: Architectural (A)
 - [G.3 - CHR Authoring for a CG‑Frame: Characteristics, Scales, Levels, Coordinates](05-g-3---chr-authoring-for-a-cg-frame-characteristics-scales-le.md) (460 lines) — Tag. Architectural pattern (CHR kit; publishes lawful measurement primitives; constrains CAL authoring and selector/dispatch use)

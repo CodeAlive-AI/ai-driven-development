@@ -9,7 +9,7 @@ Use this pattern when a corporation's objectives depend on controls that do not 
 
 Start from the objective and the work in which failure could arise. Select controls that address the exposure, provide the means to perform them, and examine their operation and interaction. Return the controls actually established, what is known about their functioning, and the remaining limitations or correction.
 
-Internal control spans operations, reporting and compliance. This pattern governs their connection to corporate objectives and oversight. Particular statistical, accounting, technical or administrative operations retain their own methods. An adequate existing control can continue without redesign.
+Internal control spans operations, reporting and compliance. This pattern governs their connection to corporate objectives and oversight. Statistical, accounting, technical or administrative operations retain their own methods. An adequate existing control can continue without redesign.
 
 ### CGOV.9:2 - Problem
 
@@ -25,7 +25,7 @@ Some controls are required by applicable rules. Others are design choices. Their
 
 ### CGOV.9:4 - Solution
 
-Connect the objective, failure mechanism, control action and response. Then make that connection work in the corporation's actual arrangement.
+Connect the objective, failure mechanism, control action and response. When establishing the control, put that action and response into operation in the corporation.
 
 #### CGOV.9:4.1 - Identify the objective and exposure
 
@@ -47,7 +47,7 @@ Where duties should be separated, check the actual access and influence. Two nam
 
 Fit the chosen control into the work that produces the exposure. Provide the needed authority, competent participants, access, time and supporting information. Recover dependencies on software configuration or outside providers where a failure there would disable the control.
 
-Use the actual operational method. ADM can establish entitlement, authorization and reconciliation for administrative provision; OPS.18 can manage an operating-quality or reliability problem. The corporate control question is whether those contributions address this objective together, under an accountable arrangement.
+Use the method for the work that performs the control. ADM can establish entitlement, authorization and reconciliation for administrative provision; OPS.18 can manage an operating-quality or reliability problem. The corporate control question is whether those contributions address this objective together, under an accountable arrangement.
 
 Make exception handling usable. A performer needs to know what can continue, what must be held and who may decide an unresolved case. A monitoring message without a capable recipient and response leaves the exposure untreated.
 
@@ -57,7 +57,7 @@ A design may be the first useful result when implementation has not been assigne
 
 Determine whether the control works in the circumstances for which reliance is proposed. A walkthrough can reveal a missing step or access conflict. Observed executions can show whether the action was performed. Different claims require different support; one successful demonstration does not establish sustained effectiveness.
 
-Examine combinations as well as individual steps. Does the first operation give the next one usable information? Can a person bypass both? Does the response arrive within the interval in which it can still help? Does the incentive arrangement encourage participants to hide the exception?
+Examine combinations as well as individual steps. Does the first operation give the next one usable information? Could one participant bypass both controls? Does the response arrive within the interval in which it can still help? Does the incentive arrangement encourage participants to hide the exception?
 
 Reuse adequate observations and current results. Select another test only when it can change the control or the conclusion about it and warrants its burden, or when the governing requirement calls for it. Preserve unresolved exposure instead of treating absent failures as proof that the arrangement is effective.
 
@@ -65,7 +65,7 @@ Reuse adequate observations and current results. Select another test only when i
 
 Send a material deficiency to the participant able to correct it and to the governing recipient who needs it. Distinguish an implementation error, inadequate design, missing capability and an objective that is no longer attainable under the assumed conditions.
 
-Apply a correction within existing authority when available. Use CGOV.11 for a corporate decision that the correction actually requires, and CGOV.14 if the governance arrangement itself must change. Routine reassignment under adequate existing powers need not become a constitutional change.
+Apply a correction within existing authority when available. Use CGOV.11 for a corporate decision required for the correction, and CGOV.14 if the governance arrangement itself must change. Routine reassignment under adequate existing powers need not become a constitutional change.
 
 Return which controls are operating, the conditions under which they are relied on and the deficiencies that remain. Keep proposed corrections separate from completed changes. Choose follow-up by the failure and receiving decision.
 
@@ -77,7 +77,7 @@ In a constructed payment operation, a clerk can change a supplier's bank details
 
 Adding a third amount approval leaves that exposure. The selected control instead confirms a bank-detail change through a previously established supplier contact and separates that confirmation from release of the payment. The confirmer needs the established contact information and authority to hold the change; the releaser needs the confirmed result.
 
-A walkthrough reveals that confirmation uses the new contact number entered from the same change request. The confirmer could therefore reach a destination supplied by the unverified instruction. The team restores use of the previously established supplier contact and protects its update route before relying on the control. After implementation, observed operation can support the bounded claim that this route is used.
+A walkthrough reveals that confirmation uses the new contact number entered from the same change request. The confirmer could therefore reach a destination supplied by the unverified instruction. The team restores use of the previously established supplier contact and protects its update route before relying on the control. After implementation, observations of confirmations can show whether the established contact is used.
 
 #### CGOV.9:5.2 - Detection after the useful response window
 
@@ -87,7 +87,7 @@ The practitioner separates those uses. Retain the review where it remains useful
 
 ### CGOV.9:6 - Bias-Annotation
 
-Visible paperwork can make a weak control look reliable. Recent absence of loss can make it seem unnecessary. Examine how the control changes the exposure and what the observation actually supports. Include the cost imposed on ordinary work and the possibility that several controls share the same failure.
+Visible paperwork can make a weak control look reliable. Recent absence of loss can make it seem unnecessary. Examine how the control changes the exposure and what the observation supports. Include the cost imposed on ordinary work and the possibility that several controls share the same failure.
 
 ### CGOV.9:7 - Conformance Checklist
 
@@ -102,7 +102,7 @@ Is the objective clear? Does the control address a specified failure mechanism? 
 
 ### CGOV.9:9 - Consequences
 
-The corporation can retain controls that help, correct specific weaknesses and remove unnecessary discretionary work. Some exposure remains because judgement, outside events, override or collusion can defeat an arrangement. A useful conclusion states that remaining limit rather than promising certainty.
+The corporation can retain controls that help, correct specific weaknesses and remove unnecessary discretionary work. Some exposure remains because judgement, outside events, override or collusion can defeat an arrangement. State which exposure remains.
 
 ### CGOV.9:10 - Architectural Rationale
 
@@ -112,7 +112,7 @@ A control is valuable through its effect in the work and its connection to a cor
 
 [COSO's Internal Control—Integrated Framework, Executive Summary](https://www.coso.org/_files/ugd/3059fc_1df7d5dd38074006bce8fdf621a942cf.pdf) distinguishes design, operation and interacting components, recognizes limits on assurance and allows elimination of ineffective controls.
 
-This method concentrates those concerns on a selected exposure and its operating response. It does not claim that the examples implement the entire COSO framework. A policy catalogue can aid discovery, while a matter-specific walkthrough exposes how the chosen control is supposed to work. Changed operations, objectives, access or failure mechanisms reopen the affected control.
+This method concentrates those concerns on a selected exposure and its operating response. A policy catalogue can aid discovery, while a matter-specific walkthrough exposes how the chosen control is supposed to work. Changed operations, objectives, access or failure mechanisms reopen the affected control.
 
 ### CGOV.9:12 - Relations
 

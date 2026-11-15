@@ -8,7 +8,7 @@ Use this pattern when a project needs one engineering result but someone has alr
 *we will buy it*, *a supplier will do it*, or *an AI agent can handle it*. The assumed answer may be attractive,
 yet the other ways of obtaining the same result have not been described on a comparable basis.
 
-Start by naming the result and its actual kind. It may be, for example, an engineered System, one usable System
+Start by naming the result and its kind. It may be, for example, an engineered System, one usable System
 configuration, a reusable Method or `MethodDescription`, access to a capability, performed provider Work, or an
 engineering episteme. State who will use or rely on the result, what acceptance means for that use, and when the
 result must exist or the Work must occur.
@@ -20,7 +20,7 @@ question. Each arrangement says what result would exist or occur, which Agents w
 Methods and Systems they would use, what relations would provide ownership or access, and what integration,
 configuration, assurance, support, capability, and exit conditions the project would accept.
 
-An arrangement is complete enough for comparison when its omitted burden cannot reverse the choice. *Purchase*
+An arrangement is complete enough for comparison when no omitted burden could change the choice or the commitment it supports. *Purchase*
 is a possible transfer or agreement inside an arrangement. An AI Agent is a possible performer inside an
 arrangement. Method development is an enabling branch unless the sought result is a Method or `MethodDescription`; in that
 case use `A.15.6` to decide whether the Method is the project Method-of-interest for the current question. The
@@ -48,7 +48,7 @@ and capability-development decisions—remain with their specialist practices.
 
 | Wording in this pattern | Meaning used here |
 | --- | --- |
-| needed engineering result | The particular result this decision seeks, not a universal kind. The practitioner states the actual System, configuration, Method, `MethodDescription`, capability, access relation, performed Work, episteme, or other result and the use that makes it needed. |
+| needed engineering result | The particular result this decision seeks, not a universal kind. The practitioner identifies the System, configuration, Method, `MethodDescription`, capability, access relation, performed Work, episteme, or other result and the use that makes it needed. |
 | obtaining arrangement | The Systems, Agents, Work, Methods, and direct relations that would produce, perform, transfer, or make the result available in one possible future. The compared option is an episteme describing that arrangement; the described result still needs its own world-side facts. |
 | complete arrangement | One option that states the result, performers and Work, Methods and means, provision or access relations, interfaces, integration, configuration, assurance, support, capability consequences, resources, and exit conditions far enough for the present comparison. *Complete* is relative to this decision. |
 | internal or external | A qualifier relative to the project boundary chosen for this decision. Name the qualified System, Agent, Work, Method, capability, ownership or access relation, and authority separately when each matters. |
@@ -72,7 +72,7 @@ assurance, migration, support, and exit were already included. Outsourcing is tr
 responsibility. A continuing provider relation is compared with a one-time purchase price. An AI Agent is placed beside a department as a short label. Comparison becomes meaningful only after each
 label is expanded into an arrangement that names Work, Methods, means, assignments, integration, and acceptance.
 
-The practical difficulty is not merely make versus buy. It is constructing several ways of obtaining the same
+The practical difficulty is constructing several ways of obtaining the same
 result so that each way exposes the burdens and dependencies that can change the engineering choice. Until that
 happens, general decision theory receives a false `OptionSet`: its rows seek different results, use different acceptance
 conditions, and hide different Work.
@@ -99,7 +99,7 @@ capability consequences remain unsettled. The first pass therefore starts from o
 
 ### SYSE.24:3 - Forces
 
-The following eight tensions recur in this decision.
+These tensions recur when projects compare ways to obtain the same result.
 
 | Force | Tension |
 | --- | --- |
@@ -107,9 +107,9 @@ The following eight tensions recur in this decision.
 | Internal capability and immediate delivery | Internal development can grow capability while delaying the result; an arrangement that relies on provider Work can make the result available sooner while displacing learning or making it dependent on continued access. |
 | Comparable result and heterogeneous means | Every option must obtain the same result under the same acceptance conditions, while the Agents, Work, Methods, Systems, and relations can differ radically. |
 | Low entry price and full burden | A visible price is easy to compare, while integration, assurance, data, support, change, and exit burdens often decide the outcome. |
-| Provider freedom and engineering assurance | The Agent performing provider Work needs freedom to choose its Methods, while the receiving engineering team still needs evidence that the accepted result and interfaces satisfy the stated use. |
+| Provider freedom and engineering assurance | The Agent performing provider Work needs freedom to choose its Methods, while the receiving engineering team needs evidence that the accepted result and interfaces satisfy the stated use. |
 | Technical choice and specialist authority | The engineering team must connect the arrangement, while specialist practices retain their decisions, Methods, and authorities—for example, for commerce, law, finance, governance, organization, operations, safety, security, and assets. |
-| Option generation and option choice | The engineering team must generate materially different complete arrangements before the deciding Agent applies `C.11` to the fixed `OptionSet`; candidate construction and choice need distinct results. |
+| Option generation and option choice | A comparative choice needs materially different complete arrangements. Reuse a sufficient comparison or construct the missing alternatives before the deciding Agent applies `C.11` to the fixed `OptionSet`; candidate construction and choice need distinct results. |
 | Local result and affected Systems | An arrangement may help achieve the project result while transferring work, risk, lock-in, delay, or harm to affected Systems such as users, maintainers, partners, and providers. |
 
 
@@ -118,7 +118,7 @@ The following eight tensions recur in this decision.
 
 #### SYSE.24:4.1 - Name one receiving result and one decision
 
-State the result being sought and its actual kind; the receiving use and affected
+State the result being sought and its kind; the receiving use and affected
 Systems; the configuration, operating conditions, horizon, and acceptance claims; the deciding Agent and the
 commitment it may authorize; and the latest useful decision date. If the proposed result alternates among owning a
 product, accessing it, performing Work, developing capability, and possessing an account, select the result
@@ -140,7 +140,7 @@ name that input and preserve the other usable parts. A conditional comparison ca
 depend on its answer; it cannot authorize reliance that requires the missing answer.
 
 Protect the conditions that cannot be traded away. State the relevant horizon explicitly: first acceptance,
-three years of changed configurations, repeat interpretation of retained data, or another actual use. Longer
+three years of changed configurations, repeat interpretation of retained data, or another use that matters to the decision. Longer
 support and ownership can cost more without helping a one-time result; conversely, a cheap first result may
 fail a continuing need. Keep any proposed change of acceptance or horizon as a separate authorized question.
 
@@ -169,7 +169,7 @@ obtain the completed account, obtain observations and interpret them, or obtain 
 as well. This is how different alternatives arise from the receiving result. Beginning with an inspection
 device would prematurely select one position in that construction.
 
-Use the actual technical suppliers. `SYSE.5:4.1–4.1.1` develops candidate functional and bearer organizations
+Obtain the technical basis from the practice or existing result that supplies it. `SYSE.5:4.1–4.1.1` develops candidate functional and bearer organizations
 and explains how their interactions can realize the outside effect. Keep that causal account intact when the
 obtaining alternatives use it; do not derive a new physical or analytical Method merely by drawing a Work
 sequence. `SYSE.8:4.1` can supply an offering's promised result, receiving use, provider structure, and support
@@ -195,12 +195,12 @@ useful because they change what the receiver must still make possible:
 | Obtain access to means instead of owning them. | Keep the required Work and capability visible, then replace ownership assumptions with actual availability, eligibility, capacity, setup, recovery, and end-of-access conditions. |
 | Obtain performed Work instead of developing the receiving team's capability. | Identify the provider performance and its acceptance boundary; compare the dependency and retained knowledge with the time and burden of developing that capability. |
 | Retain a supported component and change only its complement. | Preserve the component's qualified envelope and show that the new complement uses a supported interface. Reconstruct integration, joint assurance, change, and support rather than crediting the component's evidence to the whole. |
-| Reuse or adapt an available result instead of producing a new one. | Test identity, condition, effectivity, rights, and fitness for the new use; add only the modification and qualification Work actually needed. |
+| Reuse or adapt an available result instead of producing a new one. | Test identity, condition, effectivity, rights, and fitness for the new use; add only the modification and qualification Work needed. |
 
 These transformations can produce ready-product, custom-provider, internal-development, continuing-service,
 reuse, and mixed arrangements. Those familiar labels help discovery; they do not determine the construction.
-Generate a second alternative by changing a material
-contribution, not by renaming the performer while retaining the same unsupported assumptions.
+When the comparison needs another plausible alternative, construct it by changing a material
+contribution. Renaming the performer while retaining the same unsupported assumptions does not create another arrangement.
 
 For every moved boundary, follow what has moved and what has remained. Commissioning an assembled unit may
 move fabrication and assembly while leaving site integration, verification, and operator preparation with the
@@ -236,7 +236,7 @@ result of this step is a small set of causally plausible whole arrangements and 
 not yet evidence that all proposed conditions can be supplied together.
 
 Stop generation when another variation is unlikely to change the next decision at acceptable cost, using
-`C.19` and `C.11` where exploration or probe worth is current. If the effort itself needs an enduring archive,
+`C.19` and `C.11` where exploration or probe worth is current. If the effort needs an enduring archive,
 Front, lineage, descriptors, or exploration telemetry, use `C.18` for that result. `C.18` does not supply the
 domain operation for constructing an obtaining arrangement.
 
@@ -284,7 +284,7 @@ acceptance, correction, and consequential recovery where the selected estimates 
 do not count the same burden twice.
 
 Use `OPS.10:4` or a suitable domain operating Method when capacity or service feasibility is load-bearing.
-Request the actual result needed: for example, a finite schedule for the supplied readiness times and joint
+Use a suitable result already available. If obtaining one is warranted, request the result the comparison needs, such as a finite schedule for the supplied readiness times and joint
 resources, an infeasibility bound, or a qualified service forecast. A total-load bound is necessary but does not
 establish that precedence and simultaneous-resource conditions can be met. A mean forecast is not a hard
 deadline guarantee. Use the returned result under its conditions and retain the operating authority separately.
@@ -318,7 +318,7 @@ Use the following questions to recover the constructed arrangements for comparis
 
 | Question | Required content |
 | --- | --- |
-| What result will exist or occur? | Actual kind, identity or designator, receiving use, acceptance, configuration, horizon, and completion or availability condition. |
+| What result will exist or occur? | Kind of result, identity or designator, receiving use, acceptance, configuration, horizon, and completion or availability condition. |
 | Who does what? | Agents and named Work, applicable Methods, assignments and authority where relied on, and participating Systems, data, tools, facilities, and materials. |
 | How is it supplied? | Production, transfer, custody, ownership, licence, access, provision, acceptance, or other relations; the residual Work after each supplied contribution. |
 | How does it fit and remain identifiable? | Supported interfaces and transformations, configuration identity and effectivity, integration and migration, and the earlier decision a failed join would reopen. |
@@ -361,7 +361,7 @@ obtaining arrangement or make the final choice.
 
 #### SYSE.24:4.5 - Obtain specialist contributions and handle an incomplete return
 
-Use `A.15.9` and `SYSE.9` when the arrangement needs a professional contribution. Give its owner the receiving
+Use `A.15.9` and `SYSE.9` when the arrangement needs a professional contribution. If an existing result suffices, use it. When requesting a missing contribution, give its supplier the receiving
 result and decision, relevant subject and configuration, use and time window, question to answer, supplied evidence,
 and what an objection or unresolved answer would change. The specialist retains the Method and authority for
 that contribution. The receiving engineer supplies enough context to make the answer usable and tests its fit
@@ -379,8 +379,8 @@ when it returns.
 Inspect a returned contribution for subject, configuration, window, assumptions, evidence, authority, and
 receiving use. A provider may answer about equipment availability while leaving operator availability
 unanswered. Accept the supported part as equipment evidence; leave the joint performance claim open. A legal
-answer about data ownership does not establish export timing, format, or interpretive capability. Request only
-the missing consequence that can change the choice, with the last time its answer would still be useful.
+answer about data ownership does not establish export timing, format, or interpretive capability. If an answer could change the choice or what it supports,
+weigh the benefit against the burden of obtaining it. When making a request, say when the answer is needed.
 
 If the owner cannot answer, does not answer by that time, or returns an incompatible result, use another
 qualified source where the needed claim permits it, change the arrangement, or restrict the current decision
@@ -389,7 +389,7 @@ not confirmation that the dependency will be available. A commitment requiring t
 unsupported. A pre-authorized fallback may use another already-supported arrangement; otherwise return the
 constraint to the authorized decision owner. Continue unaffected analysis instead of restarting every branch.
 
-When the missing contribution itself needs development, expose its enabling Work and burden through `SYSE.3`
+When the missing contribution needs development, expose its enabling Work and burden through `SYSE.3`
 or the specialist Method. If its feasibility is decisive, resolve or probe it before committing to the dependent
 whole. Requesting it is not receiving it, and requesting a professional judgement does not make the engineering
 team its authorized substitute.
@@ -406,14 +406,14 @@ Locate a probe at a consequence that can change the decision. Describe the obser
 the continuation under each, its people, means, access, authority, cost, elapsed time, and stopping limit. A
 probe whose possible observations leave the same next action unchanged adds no decision value for this
 question. A probe can also be inappropriate when its result would arrive after the last useful commitment.
-Use the actual `C.11` choice inputs rather than treating this observation alone as a complete worth calculation.
+Use the `C.11` choice inputs rather than treating this observation alone as a complete worth calculation.
 
 State what choosing now authorizes. Selecting an arrangement for bounded preparation does not authorize live
 operation, contracting, acceptance, or reliance on unperformed Work. If a remaining unsupported branch could
 still defeat the proposed irreversible commitment, a label such as first realization gap does not make that
-commitment sound. Resolve the branch, restrict the commitment, or return the conditional choice. For a retained
-arrangement whose next Work is now justified, `SYSE.3` identifies and develops the first unsupported realization
-branch and the responsible next Work.
+commitment sound. Resolve the branch, restrict the commitment, or return the conditional choice. If a retained
+arrangement has an unsupported realization branch and the next Work is justified, use `SYSE.3` to develop that
+branch and identify who will perform the next Work.
 
 The `ChoiceResult` remains an episteme. Producing, performing, transferring, accepting, and using the result
 require their own Agents, Methods, Work, and direct relations. The comparison can establish a feasible way
@@ -422,7 +422,7 @@ under stated premises without asserting that those events have already occurred.
 
 #### SYSE.24:4.7 - Reconstruct only what a changed condition defeats
 
-When observations or changed conditions can reverse the choice, recover the premise that changed and trace
+When observations or changed conditions can affect the choice or what it authorizes, recover the premise that changed and trace
 which operations and joins rely on it. Start with the same receiving result unless its owner changes the use
 or acceptance. A new instrument configuration can leave pipe access intact while defeating the interpretation
 qualification; a lost operator window can leave the equipment's capability intact while defeating timely Work.
@@ -451,7 +451,7 @@ arrangement relies so that the next change is assessed from evidence.
 
 Keep one account of the decision and authorized commitment; sought result and acceptance; constructed
 arrangements and their residual Work; compatible interfaces and joint conditions; qualified evidence and
-decisive gaps; common comparison and `ChoiceResult`; next realization or specialist contribution; and conditions
+any decisive gaps; common comparison and `ChoiceResult`; any realization or specialist contribution needed next; and conditions
 that reopen it. Existing architecture, provider, operating, and acquisition accounts may carry this content.
 
 A comparative choice needs materially different alternatives. If only one candidate can be made comparable,
@@ -463,11 +463,11 @@ decision-changing omitted burden, not when every possible lifecycle question has
 #### SYSE.24:4.9 - Recognition, assurance, and what changes in practice
 
 **Recognition.** The pattern applies when the team is arguing about buying equipment, doing Work internally,
-or using a provider while it is still unclear how each proposal reaches the receiver's result. A small backward
+or using a provider while it is unclear how each proposal reaches the receiver's result. A small backward
 construction and forward walkthrough can expose the real alternative or the first decisive missing result.
 
 **Assurance.** Distinguish a proposed arrangement, a qualified claim that it is feasible under stated
-conditions, and evidence that Work was performed and accepted. Qualify the claim the commitment actually
+conditions, and evidence that Work was performed and accepted. Qualify the claim the commitment
 needs: check current capability, compatible configuration and evidence, feasible joint conditions, actual
 rights and authority where relied on, and the receiving use's required acceptance evidence.
 
@@ -506,7 +506,7 @@ engineering team develops four complete arrangements:
 | Ready controller plus integrator | The controller vendor's engineering team supplies a configured controller; the integration company's team performs sensor, actuator, network, and commissioning Work; `GreenHeat-4`'s engineering team maintains greenhouse requirements and accepts the result. | The controller supports the existing field interface, but the greenhouse-specific failure behaviour and configuration export remain unsupported. Vendor support is available for three years; control logic cannot be maintained without vendor access. |
 | Commissioned custom controller | The engineering provider's team designs and integrates a custom controller using its named engineering Method and supplies source, configuration, test evidence, and support. | The arrangement gives change access and an escrow proposal, but the provider has not shown representative sensor-failure evidence and cannot meet the required commissioning date without narrowing the first configuration. |
 | Internal development with AI assistance | `GreenHeat-4`'s controls engineers lead development; a general AI Agent assists with code and test generation; an independent controls specialist reviews the safety-relevant behaviour. | The company can retain knowledge and change the result quickly, but it lacks a qualified hardware-in-the-loop environment and evidence that the team can complete assurance before commissioning. The receiving team uses its checks of the AI-produced code and tests as evidence for capability and acceptance claims. |
-| Ready controller plus internal supervisory layer | The vendor controller retains safety interlocks and local fallback; `GreenHeat-4`'s controls team develops a supervisory optimization layer through a documented interface. | This preserves a supported safety boundary and gives the company control over greenhouse-specific optimization. The arrangement still depends on the controller interface, configuration export, and vendor update policy; failure of that interface defeats the option. |
+| Ready controller plus internal supervisory layer | The vendor controller retains safety interlocks and local fallback; `GreenHeat-4`'s controls team develops a supervisory optimization layer through a documented interface. | This preserves a supported safety boundary and gives the company control over greenhouse-specific optimization. The arrangement depends on the controller interface, configuration export, and vendor update policy; failure of that interface defeats the option. |
 
 
 For the hybrid, the forward account follows a greenhouse demand through the supervisory interface to local
@@ -559,7 +559,7 @@ observations and execution outcomes have four decision effects:
 acceptance claim unsupported, while rejecting both would discard a survivor that one bounded replay can retain.
 This worked case stops at that first useful result. APP-SYSE-04 continues the case through performed replay and a
 later choice. In this case the replay must settle the protected acceptance gap before commitment to an implementation
-arrangement. After an arrangement is retained, `SYSE.3` develops its first unsupported realization branch;
+arrangement. If a retained arrangement has an unsupported realization branch, use `SYSE.3` to develop it;
 it can also be used earlier if a proposed probe's own means or capability are unsupported.
 
 #### SYSE.24:5.2 - Obtain a pipeline-condition account rather than an inspection device
@@ -595,7 +595,7 @@ raw-data access, repeatability, and recovery if the provider leaves the market.
 The utility needs the account once within three months and has no present inspection-equipment capability. Its
 asset-replacement board is authorized to choose the inspection arrangement within a EUR 250,000 ceiling and to
 allocate at most thirty utility analyst-days. Operations separately authorizes pipe access and interruption; the
-board cannot supply that result itself.
+board cannot authorize that access or interruption.
 
 The equipment-purchase arrangement fails the time condition. The interpretation-without-raw-data arrangement
 fails the evidence-custody and exit conditions. The Finance result compares funding, the Operations result states
@@ -637,7 +637,7 @@ collection and interpretation and their conditions. The next realization Work es
 release and ready field configuration under the supplied Operations conditions; it does not use the obtaining
 choice as permission to interrupt service. A failure of those conditions reopens the affected arrangement.
 Contracting, field Work, blind-sample acceptance, acceptance of `PipeConditionAccount-2027`, and pipe-replacement
-decisions still require their applicable Work.
+decisions each require their applicable Work.
 
 #### SYSE.24:5.3 - Changed instrument configuration defeats one arrangement
 
@@ -708,7 +708,7 @@ that existing account when it already answers the question.
 The pattern does not develop the specialist Methods for market engagement, tender, contracting, law, public
 accountability, finance, organization, capability development, or post-award operations. Their qualified
 contributions remain necessary where the obtaining choice relies on them. The engineering construction also
-depends on actual domain Methods; drawing connections cannot establish their physical or analytical validity.
+requires applicable domain Methods for the physical or analytical operations. Drawing the connections does not establish those Methods’ validity.
 
 Preserving non-dominated or conditional alternatives can delay a familiar commitment. Bound further inquiry
 by what it can change before the last useful return time. Stop when further exploration cannot justify its
@@ -716,11 +716,11 @@ burden; certainty about every later event is not required.
 
 ### SYSE.24:7 - Conformance Checklist
 
-The following eleven requirements form this pattern's complete conformance checklist.
+
 
 | ID | Requirement |
 | --- | --- |
-| `CC-SYSE24-1` | The decision states one sought result with its actual kind, receiving use, configuration, horizon, and acceptance basis, and separately names the decision-making Agent. |
+| `CC-SYSE24-1` | The decision states one sought result with its kind, receiving use, configuration, horizon, and acceptance basis, and separately names the decision-making Agent. |
 | `CC-SYSE24-2` | Every option is a whole possible-future obtaining arrangement constructed from receiving acceptance, with the supplied results, residual Work, means, and access connected. Treat labels and individual contributors only inside such an arrangement. |
 | `CC-SYSE24-3` | A comparative choice uses materially different whole arrangements. If only one can be constructed, distinguish an established constraint from a comparison gap; do not invent a rival or claim unsupported superiority. |
 | `CC-SYSE24-4` | The same result, acceptance conditions, operating environment, evidence horizon, and burden categories are applied to every arrangement. |
@@ -735,7 +735,7 @@ The following eleven requirements form this pattern's complete conformance check
 
 ### SYSE.24:8 - Common Anti-Patterns and How to Avoid Them
 
-The following rows document recurring failures and their repairs.
+
 
 | Anti-pattern | Working symptom | Repair |
 | --- | --- | --- |
@@ -749,7 +749,7 @@ The following rows document recurring failures and their repairs.
 | Method development as free support | A required new Method is hidden inside an option with no time, evidence, or capability consequence. | Treat it as a separate enabling realization branch, or as the sought result when Method development is the decision itself. |
 | Lowest visible price | Purchase or provider price wins while integration, support, knowledge, opportunity cost, exit, and displaced capability remain uncounted. | Restore parity and obtain the financial and specialist results that can change the choice. |
 | One scalar hides a protected condition | A weighted score compensates for a safety, authority, evidence, or exit failure that the receiving use cannot accept. | Keep thresholds and partial order visible; reject arrangements that violate protected conditions. |
-| Procurement umbrella | Systems Engineering silently chooses tender, contract, incentive, legal duty, financing, organization, or operating policy. | Request the specialist result and use only its consequence for the obtaining decision. |
+| Procurement umbrella | Systems Engineering silently chooses tender, contract, incentive, legal duty, financing, organization, or operating policy. | Use an applicable specialist result for its consequence for the obtaining decision. Request a missing result when obtaining it is warranted. |
 | Endless option inventory | The team keeps expanding market and technology lists after no new arrangement can change the next choice. | Use `C.19` for exploration policy and `C.11` for the bounded probe-or-choose stop. |
 
 ### SYSE.24:9 - Consequences
@@ -786,7 +786,7 @@ The following source contributions have different force: standards scope, profes
 synthesis, and an economic model. Their use here does not establish universal effectiveness of this obtaining
 Method or transfer a specialist decision into Systems Engineering.
 
-| Source and actual contribution | Use in this pattern | Boundary and disposition |
+| Source and contribution | Use in this pattern | Boundary and disposition |
 | --- | --- | --- |
 | [ISO/IEC/IEEE 15288:2023](https://www.iso.org/standard/81702.html), public scope: lifecycle processes apply to internal and external acquisition and supply and may be used recursively, concurrently, and iteratively. | Keep internal and external provision within the engineering question and use the processes needed by the result. | **Adopt the scope.** The standard explicitly does not prescribe a lifecycle model or development Method; no mandatory process order is inferred here. Its public scope is not a substitute for the full standard or a domain obtaining Method. |
 | [NASA Systems Engineering Handbook](https://www.nasa.gov/wp-content/uploads/2018/09/nasa_systems_engineering_handbook_0.pdf), Rev 2, §§4.4 and 5.1: iterative design alternatives and purchase, make/code, or reuse implementation include enabling products, readiness, integration, qualification, configuration, and support. | Reuse its substantive treatment of alternatives and implementation preparation. Connect a proposed supply boundary to the remaining receiving Work and the resulting accepted use. | **Adapt with its strength preserved.** NASA programme guidance is a developed engineering baseline, not a price-only make-or-buy table. Its application context and tailoring remain; wider commercial and application decisions need their own Methods. |
@@ -811,9 +811,9 @@ pipeline case it exposes an account, observations, performed inspection, and acc
 possible supply boundaries rather than equivalent outputs. General selection receives these constructed
 arrangements only after their consequences are made comparable.
 
-This is a conditional contribution, not a claim that competent NASA, procurement, or domain practitioners lack
-such reasoning. If their existing account already supplies the whole comparison and continuation, use it
-directly. Re-describing it in this vocabulary would add cost without improving the decision. The worked cases
+NASA, procurement or domain practitioners may already have used
+this reasoning. When their account supplies a sufficient comparison and continuation, use it
+directly. Recasting that account in this pattern’s vocabulary adds work without improving the decision. The worked cases
 show the proposed Method's operation under stated inputs; they do not measure a time saving or comparative
 field effectiveness.
 
@@ -827,21 +827,21 @@ field effectiveness.
   the engineering operation that varies supplied results, residual Work, means, and access. `C.18` preserves
   an open-ended generation effort only when needed; `C.19` governs its exploration policy. Neither supplies
   the technical Method missing from an arrangement.
-- `SYSE.5:4.1–4.1.1` supplies functional/bearer alternatives and their joint functioning. This pattern consumes
-  that technical account and constructs ways of obtaining its result; a supply-boundary change that requires
+- `SYSE.5:4.1–4.1.1` explains how to develop functional and bearer alternatives and account for their joint functioning. Use
+  the resulting technical account to construct ways of obtaining its result; a supply-boundary change that requires
   another technical organization returns that question. `SYSE.6` supplies consequent architecture
   decisions and their rationale.
 - `SYSE.8:4.1` supplies offering and provider accounts, including continuing provision, access, custody, and
   ordinary and exception Work. This pattern consumes their supported result, conditions, and residual receiver
   obligations. An adequate existing provider comparison is reused without another account.
 - `A.15.9` and `SYSE.9` guide use or acquisition of a professional contribution for a named receiving use. The incomplete or
-  missing return is handled in §4.5. `SYSE.10` supplies a qualified research, model, experiment, or trial
-  result where a worthwhile probe is the next contribution.
+  missing return is handled in §4.5. Use `SYSE.10` to assess a research, model, experiment or trial
+  result for the engineering claim, including the result of a worthwhile probe.
 - `C.11` supplies the bounded choice from the constructed options, preference, belief, outcome, probe-worth,
   and authority inputs. `C.11.CRC` supplies a missing configuration-relative contribution comparison only;
   neither replaces the arrangement construction.
-- `SYSE.3:4.1–4.7` supplies the first unsupported realization branch and next justified Work. It is used after
-  retention or during comparison when a decisive feasibility premise requires it. The remaining branch cannot
+- `SYSE.3:4.1–4.7` helps develop the first unsupported realization branch and identify justified next Work when needed after
+  retention, or during comparison when an unresolved feasibility premise could change the choice or what it authorizes. An unresolved branch cannot
   be hidden behind choose-now when it defeats the actual commitment.
 - `OPS.10:4` supplies qualified capacity and timing results. `OCE.4–OCE.6` supply organization contributions,
   positions, and enabling assignments where change is needed. `HCD.2:4` and `E.23.CDI` supply capability-

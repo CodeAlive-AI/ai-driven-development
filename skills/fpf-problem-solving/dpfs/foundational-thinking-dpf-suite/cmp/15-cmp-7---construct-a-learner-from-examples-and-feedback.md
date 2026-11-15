@@ -25,7 +25,7 @@ Many rules can agree on the available examples and disagree elsewhere. Faster op
 | Force | What must be reconciled |
 | --- | --- |
 | Expressive rules and learnability | A large rule family can represent more targets while requiring more information or search. |
-| Available feedback and target use | Recorded labels or rewards may differ from the response the recipient actually needs. |
+| Available feedback and target use | Recorded labels or rewards may differ from the response the recipient needs. |
 | Fit and generalization | Low loss on used examples leaves questions about unseen cases and changed conditions. |
 | Statistical and computational efficiency | A class can be learnable in principle while obtaining its selected rule remains unaffordable. |
 | Stability and adaptation | Retaining past information helps under stable conditions but can obstruct a changed target. |
@@ -45,7 +45,7 @@ State whether the recipient needs one rule, a set of alternatives, an uncertaint
 
 #### CMP.7:4.2 - Recover the examples and feedback actually available
 
-Identify the supplied inputs, labels, rewards, demonstrations or other observations and how they were obtained. For missing labels, delayed feedback, selection effects or dependence between examples, state what the learning procedure can actually observe. MMP.7 supplies the probability model of recorded data when such a model is needed.
+Identify the supplied inputs, labels, rewards, demonstrations or other observations and how they were obtained. For missing labels, delayed feedback, selection effects or dependence between examples, state what the learning procedure can observe. MMP.7 supplies the probability model of recorded data when such a model is needed.
 
 Choose the feedback regime before deriving the update. In supervised learning, the supplied target response can evaluate a candidate prediction directly. In bandit feedback, only the consequence of a chosen action is observed; an update requiring all unchosen consequences is unavailable. A self-produced label remains the output of another rule and can propagate its errors.
 
@@ -69,7 +69,7 @@ Choose how data and feedback change the candidate:
 | Retain consistent candidates | Remove rules contradicted by newly observed feedback; use or combine the survivors. | Every observed label used for elimination must agree with one fixed target rule in the initial family. |
 | Optimize a parameterized criterion | Construct updates or search using CMP.6 or CMP.4, including initialization, constraint handling and stopping. | Optimization progress and the meaning of the learning criterion both need their stated conditions. |
 
-For empirical risk minimization, a typical criterion is the average loss `L_S(h)=(1/n)*sum loss(h(x_i),y_i)`. Regularization or another restriction can change the criterion. An argmin expression specifies the desired rule; the actual learner needs an obtaining procedure, including what it does when the minimum is not obtained or several rules tie.
+For empirical risk minimization, a typical criterion is the average loss `L_S(h)=(1/n)*sum loss(h(x_i),y_i)`. Regularization or another restriction can change the criterion. An argmin expression specifies the desired rule; the learner needs a procedure for obtaining it, including what it does when the minimum is not obtained or several rules tie.
 
 Look for shared work and useful ordering. For thresholds, sorting examples once can let successive threshold scores be updated from counts rather than reevaluated on the whole dataset. CMP.3 supplies sharing when its identity conditions hold. For a parameterized learner, compare the work of one update, the updates needed and the later cost of applying the result.
 
@@ -101,7 +101,7 @@ Return the learned rule, its application method, the conditions material to its 
 
 On nonnegative integer inputs, consider the two rules `f(x)=x` and `g(x)=x mod 2`. The supplied examples are `(0,0)` and `(1,1)`. Both rules have zero squared loss on those examples.
 
-A learner can evaluate both rules and return the minimizing set `{f,g}`. This is an effective obtained result with retained ambiguity. It can also return one rule under a declared preference, but the zero training loss alone gives no reason to prefer f over g at input 2. Their predictions there are 2 and 0.
+A learner can evaluate both rules and return the minimizing set `{f,g}`. The returned set retains the ambiguity. It can also return one rule under a declared preference, but the zero training loss alone gives no reason to prefer f over g at input 2. Their predictions there are 2 and 0.
 
 Suppose the receiving task needs a prediction at 2 and an additional observed response is available for a cost that could be justified. If that response is 2, the same selection procedure prefers f; if it is 0, it prefers g. If the observation is not worth obtaining, use a selected rule under the remaining assumption or retain both possible responses for the downstream decision. Better minimization of the original two-example loss cannot distinguish them.
 
@@ -130,7 +130,7 @@ A broad function class or large pretrained model can hide a strong inductive res
 - The candidate family or other inductive restriction has a stated basis and boundary.
 - Selection or update is effective, with tie, failure and stopping behavior specified.
 - Obtaining, fit and further-use claims retain their distinct conditions.
-- Statistical or online guarantees use the sampling, target and class assumptions they actually require.
+- Statistical or online guarantees use the sampling, target and class assumptions they require.
 - A contradictory or changed case leads to the relevant data, family, target or update revision rather than automatic extra training.
 
 ### CMP.7:8 - Common Anti-Patterns and How to Avoid Them
@@ -151,13 +151,13 @@ The method can also expose a limit that further optimization cannot remove. New 
 
 ### CMP.7:10 - Architectural Rationale
 
-The learning algorithm and learned rule must remain distinct because their costs, inputs and failure modes differ. Inductive restriction belongs with the algorithm's construction: without it, agreement on examples leaves the future rule unspecified. The performance argument then follows the actual feedback and use rather than imposing one sampling theory everywhere.
+The learning algorithm and learned rule must remain distinct because their costs, inputs and failure modes differ. Inductive restriction belongs with the algorithm's construction: without it, agreement on examples leaves the future rule unspecified. Base the performance argument on the feedback and use in question.
 
 MMP supplies data and subject-model accounts. CMP.4 and CMP.6 supply effective search or update; CMP.7 assembles those contributions into a learner. Further model assessment, explanation, development and portfolio choice use their existing methods.
 
 ### CMP.7:11 - SoTA-Echoing
 
-[Shalev-Shwartz and Ben-David, *Understanding Machine Learning*](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf), chapters 2-5 and 21, supplies empirical selection, inductive restriction and online learning under different information assumptions. For a manageable finite family with a stable realizable target, adopt majority-and-elimination over choosing an arbitrary consistent rule when mistake reduction matters: one mistaken arbitrary choice may remove only one rule, while a mistaken majority removes at least half. The extra voting work is a real cost. When enumeration is unaffordable or feedback is noisy, this finite-family construction requires replacement or qualification.
+[Shalev-Shwartz and Ben-David, *Understanding Machine Learning*](https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf), chapters 2-5 and 21, supplies empirical selection, inductive restriction and online learning under different information assumptions. For a manageable finite family with a stable realizable target, adopt majority-and-elimination over choosing an arbitrary consistent rule when mistake reduction matters: one mistaken arbitrary choice may remove only one rule, while a mistaken majority removes at least half. Include the extra work of evaluating the surviving rules and counting their predictions. When enumeration is unaffordable or feedback is noisy, this finite-family construction requires replacement or qualification.
 
 For a large parameterized family, [Bottou, Curtis and Nocedal](https://leon.bottou.org/publications/pdf/tr-optml-2016.pdf) supplies optimization procedures and separates their error from statistical error. Adopt an affordable update through CMP.6 when direct rule enumeration fails; retain the unclosed generalization question after numerical progress.
 

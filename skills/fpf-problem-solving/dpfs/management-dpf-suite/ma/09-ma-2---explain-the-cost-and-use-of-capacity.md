@@ -10,7 +10,7 @@ Use this pattern when paid capacity, used capacity and apparently idle capacity 
 
 The pattern governs an account of resource supply, usable capability, its use and its monetary consequences. It returns an explanation of what is available, what is used or reserved, and what action could change supply or payments.
 
-Use an adequate capacity account directly. The operating choice about the constraint, reserve or feasible schedule belongs to the relevant [OPS][OPS] method.
+Use an adequate capacity account directly. Use the relevant [OPS][OPS] method when deciding about the constraint, reserve or feasible schedule.
 
 ### MA.2:1 - Problem frame
 
@@ -22,7 +22,7 @@ These quantities do not have one monetary meaning. Released time can increase av
 
 An account that prices every unused hour as waste invites a reduction that may damage service. An account that treats every paid hour as available can promise work the resource cannot perform.
 
-The working difficulty is to explain both use and monetary consequence without making an accounting classification decide the operational question.
+Explain how capacity is used, what the organization pays to keep it available and what would change that payment. An operating choice also depends on the service conditions.
 
 ### MA.2:3 - Forces
 
@@ -40,9 +40,9 @@ Use the current operating account for availability, commitments and reserve. If 
 
 #### MA.2:4.2 - Explain the supplied, used and unused portions
 
-Reconcile the supplied quantity with its relevant uses and restrictions. Identify unavailable or differently committed provision, actual or expected consumption, protected reserve and any remaining unused usable capacity. Keep the categories mutually interpretable for this account; reserve can be part of available capacity while being unavailable for ordinary commitment.
+Reconcile the supplied quantity with its relevant uses and restrictions. Identify unavailable or differently committed provision, actual or expected consumption, protected reserve and remaining usable capacity available for ordinary work. Keep the categories mutually interpretable for this account; reserve can be part of available capacity while being unavailable for ordinary commitment.
 
-Investigate the reason for an apparently idle portion. It may reflect demand variation, a necessary skill mix, downtime, a minimum supplier block or inadequate demand. Preserve a disputed explanation as disputed. A utilization label is an entry cue, not a causal diagnosis.
+Investigate the reason for an apparently idle portion. It may reflect demand variation, a necessary skill mix, downtime, a minimum supplier block or inadequate demand. If the cause is in dispute, say what remains unresolved.
 
 #### MA.2:4.3 - Connect a capacity change to a supply action
 
@@ -64,13 +64,13 @@ A service purchases 100 scheduled qualified staff-hours for 2,400 in a period. A
 
 Dividing 2,400 by all 100 supplied hours gives 24 per supplied hour. Dividing it by the 50 service hours gives 48 per used service hour. Neither division establishes the payment avoided by releasing another hour.
 
-A changed method releases two service hours. Pay remains 2,400 under the arrangement. The result is two hours of released capability, subject to their actual usefulness in the schedule. Multiplying two by 24 or 48 does not establish a cash saving.
+A changed method releases two service hours. Pay remains 2,400 under the arrangement. Whether the two released hours can be used elsewhere depends on the schedule. Multiplying two by 24 or 48 does not establish a cash saving.
 
-Consider an extra request under the original arrangement, before the method change. It needs 25 hours in the same window. The supplied operating account permits ordinary commitment of only the 20 unused hours while retaining the reserve. A feasible additional block of 20 hours costs 500 under the supplied terms. The model returns the five-hour gap and the block's payment, or the question whether OPS should change the reserve or option. It does not silently consume the reserve to make the request fit.
+Consider an extra request under the original arrangement, before the method change. It needs 25 hours in the same window. The supplied operating account permits ordinary commitment of only the 20 unused hours while retaining the reserve. A feasible additional block of 20 hours costs 500 under the supplied terms. The model returns the five-hour gap and the block's payment, or the question whether OPS should change the reserve or option. The existing reserve stays protected unless the operating decision changes it.
 
 ### MA.2:6 - Bias-Annotation
 
-A high-utilization target can conceal the value of protective capacity; the label “reserve” can conceal unnecessary provision. Examine the actual operating reason and consequence.
+A high-utilization target can conceal the value of protective capacity; the label “reserve” can conceal unnecessary provision. Examine whether the service needs the reserve and what would happen if it were reduced.
 
 The period account does not establish a long-run staffing result. A later horizon can change demand, terms and the feasible supply action.
 
@@ -90,7 +90,7 @@ These checks assess the explanation. The existence of paid capacity does not est
 
 ### MA.2:9 - Consequences
 
-The user can distinguish an efficiency improvement, unused provision and an avoidable payment. This improves the information supplied to a capacity decision.
+The user can distinguish an efficiency improvement, unused provision and an avoidable payment. Supply those distinctions to whoever makes the capacity decision.
 
 The account may leave the operating choice unresolved. That is useful when its remaining question is explicit, such as the needed reserve or the feasibility of a replacement block.
 
@@ -98,7 +98,7 @@ The account may leave the operating choice unresolved. That is useful when its r
 
 Supply, capability and consumption are separated because each responds differently to action. A single hourly rate can support a defined account, but cannot carry all three meanings.
 
-The accounting method explains quantities and money while OPS decides the operating arrangement. Combining them without preserving that boundary would let a chosen denominator decide what the service can safely promise.
+The accounting method explains quantities and money. Those responsible for operations use OPS to decide what service the available resources can safely provide. The chosen utilization denominator does not establish that capacity.
 
 ### MA.2:11 - SoTA-Echoing
 
@@ -106,7 +106,7 @@ The selected line combines resource-based managerial costing with the distinctio
 
 In the historical fixture example in Caspari and Caspari's *Management Dynamics* (2004), a fixture transfers work between stations: it saves five minutes per unit at one station but adds two at the station that limits production. Total processing time falls from 55 to 52 minutes, while wages remain unchanged. When demand uses the limiting station's capacity, increasing its work from 25 to 27 minutes per unit reduces possible output. These contributions inform §§4.2–4.3 and the released-hours example.
 
-At the effort of reconciling one resource pool, this account exposes distinctions a utilization percentage hides. More detailed tracking is worthwhile when a capability or time boundary changes the decision. Reopen the account when those conditions or the supply terms change.
+Reconciling one resource pool exposes distinctions a utilization percentage hides. More detailed tracking is worthwhile when a capability or time boundary changes the decision. Reopen the account when those conditions or the supply terms change.
 
 ### MA.2:12 - Relations
 

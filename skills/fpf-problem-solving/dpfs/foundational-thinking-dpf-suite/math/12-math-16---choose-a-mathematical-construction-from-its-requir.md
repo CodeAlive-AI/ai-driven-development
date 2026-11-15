@@ -43,7 +43,7 @@ Describe what a user of the mathematical object will put in and obtain. Introduc
 
 Ask what information completely determines the proposed result. If later use needs an extra choice, include that choice in the input. If the supplied data should suffice, require the resulting map to be unique.
 
-The following contrasts help select a construction; they are examples of different mapping requirements:
+These examples show how the required use determines which maps to seek.
 
 | Needed use | Maps and question to formulate |
 | --- | --- |
@@ -62,11 +62,11 @@ Choose the mathematical setting along with the maps. In the main route, the obje
 Turn the use into a requirement by comparing the proposed object with arbitrary permitted ways of supplying or processing its data:
 
 1. Fix the objects already given by the question, together with their maps and laws. They remain the same throughout this comparison.
-2. Introduce a variable object X for a possible source of data, or Z for a possible destination. Describe the maps and equations that make it an allowed instance of the needed use. Let it vary over every permitted instance, not just one sample. For example, a source of two components supplies functions from X to each fixed component set.
+2. Introduce a variable object X for a possible source of data, or Z for a possible destination. Describe the maps and equations that make it an allowed instance of the needed use. Consider every permitted instance. For example, a source of two components supplies functions from X to each fixed component set.
 3. Seek an object P with the maps through which it will be used. Ask how an allowed instance should relate to P: should its data assemble into P, or should processing extend from P to a destination? Draw that comparison map in the corresponding direction.
 4. Combine the comparison map with P's use maps in the order their domains require, and equate the resulting routes with the original maps. Require a comparison map for every allowed instance, and uniqueness when the supplied data should determine it completely.
 
-This specifies the behavior a construction must realize. If the intended use leaves the maps or agreements undecided, return to that particular choice before asking for a universal object. The prepared-function case in :5.4 follows these steps for a use beyond pairing or tagging.
+This specifies the behavior a construction must realize. If the intended use leaves the maps or agreements undecided, return to that choice before asking for a universal object. The prepared-function case in :5.4 follows these steps for a use beyond pairing or tagging.
 
 Suppose the question requires two recoverable components in A and B, and those components must determine the entire result. A and B are fixed; a trial source X supplies maps to both. Seek an object P with projections `pA:P -> A` and `pB:P -> B`.
 
@@ -100,7 +100,7 @@ For the pullback, form the subset:
 
 `Q={(a,b) in A x B | s(a)=t(b)}`.
 
-The same pairing formula lands in Q exactly when the compatibility equation holds. Reading the coordinates again proves uniqueness. Q may be empty. The empty set is still a valid pullback in sets; it says no pair meets the stated compatibility requirement.
+The same pairing formula lands in Q exactly when the compatibility equation holds. Reading the coordinates again proves uniqueness. If no pair meets the compatibility requirement, Q is empty and is still a valid pullback in sets.
 
 For a coproduct of sets, distinguish the two input branches with tags 0 and 1:
 
@@ -134,9 +134,9 @@ Return the construction with the maps and conditions needed by its consumer. A n
 
 For a mathematical question, stop with the required map, equality, usable construction or demonstrated obstruction. For computation, obtain the procedure and resources needed for the chosen representation through C.29.2. A finite pullback can be enumerated by testing pairs, while a large or infinite one needs an appropriate computational method.
 
-For an application to another subject, C.29 supplies the correspondence that gives the mathematical objects and equations their subject meaning. In particular, a compatibility equation must represent the actual agreement needed by the work. A pairing of functions on one input describes a different operation from two executions that modify a shared input. For the latter use, first specify which values each step reads and changes, and which intervening steps are permitted. Use that account to decide whether a function construction represents the work; the pairing alone leaves those interactions unspecified.
+For an application to another subject, C.29 supplies the correspondence that gives the mathematical objects and equations their subject meaning. A compatibility equation must represent the agreement the work requires. A pairing of functions on one input describes a different operation from two executions that modify a shared input. For the latter use, first specify which values each step reads and changes, and which intervening steps are permitted. Use that account to decide whether a function construction represents the work; the pairing alone leaves those interactions unspecified.
 
-When the question changes, return to the affected mapping requirement. Adding agreement can turn a product question into a pullback question. Needing to accept either input can call for a coproduct. Needing only selected answers can call for a quotient. Retain a useful earlier construction while its earlier question remains current.
+When the question changes, return to the affected mapping requirement. Adding agreement can turn a product question into a pullback question. Needing to accept either input can call for a coproduct. Needing only selected answers can call for a quotient. Retain the earlier construction while it still serves its question.
 
 ### MATH.16:5 - Archetypal Grounding
 
@@ -174,7 +174,7 @@ A model has candidate states A and B for two component descriptions. Each descri
 
 The product contains arbitrary state pairs. Requiring agreement selects the pullback of the two quantity maps. Its projections retain both component states, so a later calculation can still use their other quantities.
 
-The physical account must justify the ideal connection and the meaning of that potential. If the connection has a relevant drop, the equality premise changes. A relation involving the drop and other quantities must be modeled before constructing its compatible states. The mathematical construction supplies the combination once that relation has been formulated; it does not choose the physical interaction law.
+The physical account must justify the ideal connection and the meaning of that potential. If the connection has a relevant drop, the equality premise changes. A relation involving the drop and other quantities must be modeled before constructing its compatible states. Use the justified physical relation to construct the compatible states.
 
 #### MATH.16:5.4 - Construct an object that can itself be applied
 
@@ -227,7 +227,7 @@ Organizing the choice around maps makes the required operations explicit before 
 
 A direct representation remains economical for a single familiar calculation. The universal-property method earns its additional abstraction when several constructions are plausible, a representation must be changed, or later maps and arguments need to be derived. The product, pullback and coproduct cases expose different requirements. The prepared-function case shows how to formulate another requirement by varying its settings and behavior while keeping the input and output sets fixed.
 
-Detailed quotient, generator-extension and structure-transport methods remain separately usable. They supply constructions and proofs after this method has identified the needed property. This separation permits a broader choice method without compressing those techniques into unexplained instructions.
+Detailed quotient, generator-extension and structure-transport methods remain separately usable. They supply constructions and proofs after this method has identified the needed property.
 
 ### MATH.16:11 - SoTA-Echoing
 
@@ -235,7 +235,7 @@ For choosing an object through the maps it must support, the adopted line is uni
 
 Fong and Spivak's [Seven Sketches in Compositionality](https://arxiv.org/abs/1803.05316), especially the chapter on databases and categories, develops the use of these constructions across applications. Its contribution here is the attention to what transformations and queries the constructed object supports. Example 3.72 supplies the function-as-object construction through currying used in :5.4.
 
-At comparable effort, a direct pair or tagged union is often enough when the operation is already settled. Use the universal account when the ambiguity or later reasoning makes it useful. A more elaborate categorical description adds no benefit to a calculation whose relevant conditions and result are already clear.
+At comparable effort, a direct pair or tagged union is often enough when the operation is already settled. Use the universal account when the ambiguity or later reasoning makes it useful.
 
 The elementary examples use ordinary equality and functions. If the work changes the permitted maps or the meaning of equality, reformulate the comparison and its equations in that setting. A requirement to compute the result can also reopen the choice of construction.
 

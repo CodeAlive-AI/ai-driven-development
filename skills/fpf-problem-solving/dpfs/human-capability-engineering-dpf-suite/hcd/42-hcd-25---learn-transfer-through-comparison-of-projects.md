@@ -5,11 +5,11 @@
 
 ### HCD.25:0 - Use This When
 
-Use this pattern when people see examples from different projects but cannot yet recognize what can be used in their own work, or where that use would fail. A series of interesting presentations can leave the reusable relation hidden beneath professional details.
+Use this method when learners need to recognize which part of a project’s reasoning or procedure can be used in another situation and where it would fail. A presentation may describe a local success while leaving the reason for its action hidden.
 
-The governed contribution is a **learning comparison across project cases**. It selects accessible cases, reconstructs a consequential relation, tests a condition that would break the proposed correspondence and returns the learner to a personal application. The first useful result is a bounded comparison and an own-case attempt with its assumptions and support visible.
+In a **learning comparison across project cases**, identify what warrants the action in each case and what result it supports. Test the correspondence by changing a condition that matters. A designer can supply a usable comparison or identify a missing condition. To assess a learner’s application, adaptation or warranted rejection, examine their work on the intended project or a permitted substitute, with its assumptions and the help they received.
 
-Begin with a target distinction or Method and qualified subject accounts for the compared cases. A learner need not acquire the other project's entire profession. If the target itself is new, state that the comparison is teaching it. A claim that an already acquired capability transferred requires its earlier basis and the HCD.12 comparison. If no permitted case preserves the relevant relation, obtain another source or leave that use open.
+Start with the target distinction or Method and qualified accounts of the cases. Supply the professional context needed to inspect the decisive relation. If the learners first encounter the target here, identify what the comparison is teaching. Assess their learning when the receiving question calls for that conclusion. For transfer of an earlier capability, establish its earlier basis and use the relevant HCD.12 comparison. If no permitted case preserves the relation, find a suitable source where feasible or identify the blocked use.
 
 #### HCD.25:0.1 - Working Terms
 
@@ -17,14 +17,14 @@ Begin with a target distinction or Method and qualified subject accounts for the
 | --- | --- |
 | project case | A bounded account of a work question, inputs, action and consequence, with enough context to judge the relevant relation. |
 | correspondence | The proposed relation between parts of two cases that could justify adapting an operation. |
-| breaking condition | A material change under which that correspondence no longer warrants the same operation or result. |
+| breaking condition | A material change that defeats the grounds for carrying an action or conclusion from one case to another. The same action may still be warranted on a different basis. |
 | own-case return | The learner's use, adaptation or warranted rejection of the proposed relation in their own work or a compatible permitted case. |
 
 ### HCD.25:1 - Problem Frame
 
 An engineer, product manager and organiser discuss their projects. Each can describe a local success. Others copy a familiar phrase or a visible document format, but cannot say which inputs made the method appropriate. A novice may instead conclude that every unfamiliar project is incomprehensible and contributes nothing.
 
-The organiser must expose a tractable relation without falsifying the cases. The comparison should reduce the need to learn unrelated professional detail, while retaining the condition that governs the target action. An accessible but misleading simplification merely teaches a new superficial cue.
+Choose a relation the learners can inspect. Give enough context to preserve the condition governing the target action and leave out professional detail the comparison does not use. Check that the simplified case still supports the local inference.
 
 ### HCD.25:2 - Problem
 
@@ -42,43 +42,43 @@ How can unlike projects supply a useful, bounded learning comparison that reache
 
 #### HCD.25:4.1 - Choose the learning question before allocating presentation time
 
-State the operation the learner needs to recognize or adapt. For example, distinguish reusing a calculation under unchanged conditions from obtaining evidence about a newly changed condition. Recover that operation's subject basis and the learner's relevant preparation. HCD.6.1 supplies a needed distinction; HCD.12 distinguishes transfer of an earlier contribution from learning a new one.
+State what the learner needs to recognize or adapt, such as when a calculation remains usable and when a changed condition needs new evidence. Identify the subject grounds and relevant preparation. Use HCD.6.1 when learners need a distinction made discernible. Use HCD.12 when the issue is transfer of an earlier contribution or application of a new source.
 
-Choose cases that expose a consequential similarity and a meaningful difference. Two cases can suffice for a focused comparison. More cases are useful only when they reveal another condition or correct a misleading cue. Equal speaking time for every project is a participation choice; it is not a selection method for the present learning question.
+Choose cases that expose an important correspondence and a condition limiting it. Two may suffice. Add a case when it reveals another important condition, corrects a misleading cue or supplies evidence the learning question still needs. Allocation of presentation time is a separate participation decision.
 
-Determine what a participant must understand to make the comparison. A short explanation of the quantities, actors or constraints may supply the entry. If the case requires a professional qualification the group lacks, obtain a qualified account of the relevant step and keep its scope. Do not silently ask learners to validate a technical or clinical conclusion outside their preparation.
+Establish what participants must understand. A short explanation of quantities, participants or constraints may suffice. When the group lacks a necessary professional qualification, use or obtain a qualified account of the relevant step and retain the conditions under which it applies. Identify any comparison that remains unsupported.
 
 #### HCD.25:4.2 - Obtain a permitted case that preserves the relation
 
-Ask the project owner for the bounded question, relevant inputs and conditions, action taken or proposed, and the result or unresolved consequence. Separate an observed case from a constructed teaching case. Include the smallest context needed to inspect why the action follows; omit unrelated project history.
+Use a permitted account that identifies the project question, relevant inputs and conditions, the action proposed or taken, and its result or open consequence. An existing project record may supply them. If a material fact or permission is missing, identify a suitable source or holder and seek it when needed. Distinguish observed work from a constructed teaching case.
 
-Check that participants may receive the material. Use an approved excerpt or a constructed analogue when it preserves the target relation. For example, changing a client's name can preserve a workload dependency; removing the workload itself cannot. A fabricated case is legitimate teaching material when identified as such, but it is not evidence about the real project.
+Check who may receive the material and for what use. An approved excerpt or a constructed analogue can preserve the target relation. Changing a client’s name may leave a workload dependency intact. Removing the workload can destroy it. Identify the constructed case and use it to teach the supplied relation. A conclusion about the undisclosed project needs evidence from that project.
 
-Prepare the receiving form around the comparison: place the decision-bearing fragments where learners can inspect both. A shared heading helps only if its contents mean comparable things. If one case's result is a model prediction and the other's is an observation, retain that distinction and explain how each serves its use. HCD.7 supplies actual access and help; HCD.24 develops comparative evaluative judgement when that is the target.
+Make both relevant parts accessible in a form learners can compare. Check what similarly named fields mean. If one result is a prediction and the other an observation, explain which inference each supports. Use HCD.7 for a needed access or support arrangement and HCD.24 when evaluative judgement is the learning target.
 
 #### HCD.25:4.3 - Reconstruct the correspondence and try to break it
 
-Have learners explain each case's local connection before transferring it: which input or condition warrants which action and which result it can support. Then ask what corresponds across the cases. Keep the source case and the proposed receiving use identifiable. A label such as feedback or validation is too broad when the actual operations differ.
+In a learning exercise, ask learners to explain which input or condition warrants the action in each case and which result that action can support. Then identify the proposed correspondence. For completed work, use the learner’s available explanation or application to establish the connection they made, and report a missing ground where relevant. Keep the source case and receiving use identifiable. Terms such as feedback and validation may name different operations in the two projects.
 
-Test the proposed correspondence with a changed condition that could reverse the action. Change the relevant relation while retaining a familiar surface, or preserve the relation while changing its presentation. Ask whether the same operation is still warranted and why. HCD.6.1 develops this contrast construction; the present method arranges it across project owners and recipients.
+Examine what happens to the inference when a decisive condition changes. For example, retain the visible form but change the authorized effect of sending it, or change the format while retaining the operative rule. Ask whether the earlier action is warranted and on what grounds. HCD.6.1 can help construct a needed contrast.
 
-The answer may be positive, conditional or negative. A model can be reused while a new observation is required. A calculation can be repeated for new inputs without establishing that the new inputs are true. An appealing technique may have no supported use in the receiving project. Warranted rejection is a useful result when it prevents a false transfer.
+Return the supported correspondence, its conditions or a warranted rejection. A model can remain usable while a particular installation needs new observations. Recalculating for different inputs does not establish those inputs. Rejecting an unsupported transfer can be the useful conclusion.
 
-Where participants disagree, locate the missing ground. The project owner can clarify a factual condition; a qualified provider can resolve a subject issue. If neither is available, retain the comparison's supported part and the precise unresolved connection. Do not fill it by analogy alone.
+When participants disagree, identify the ground at issue. Use available project evidence or trace the condition directly. Ask a project holder or qualified specialist when they have the understanding, evidence or authority needed. If it is unavailable, state the supported part of the comparison and the unresolved connection.
 
 #### HCD.25:4.4 - Return to personal work
 
-Each learner identifies an actual receiving question, names the corresponding conditions and performs the relevant bounded action: reuse a result, adapt an operation, obtain a needed observation, or explain why the proposed move is unavailable. Use a permitted substitute case when the own project is closed, and keep the limit on the resulting claim.
+When the learning task calls for personal application, have the learner identify the receiving question, name the conditions and carry out the bounded action. They may reuse a result, adapt an operation, obtain a needed observation or explain why the move is unavailable. If the actual project is closed, a permitted substitute can show what the learner did under its conditions. For a historical claim, identify what the learner did in the particular case.
 
-Inspect what the learner had to obtain or invent. A new subject Method or missing prerequisite requires teaching or external provision; failure there is not necessarily failed transfer of the original contribution. A remembered slogan can leave the decisive correspondence absent. Give feedback on that relation and use HCD.9 for any needed correction or reasoned retention.
+Establish which premises and operations were supplied and which the learner obtained or devised. A missing prerequisite or a new subject Method may call for teaching or a qualified supplied result. Determine whether this was the obstacle before attributing failure to transfer of the original capability. Where feedback is needed, address the decisive correspondence. Use HCD.9 for a needed correction or reasoned retention.
 
-If the intended conclusion is independent transfer, preserve the first response before naming the method or decisive feature, state permitted resources, and use a case unfamiliar in its decision-bearing conditions. HCD.12 supplies the full comparison and reporting boundary. If the immediate purpose is learning, a supported own-case return can be enough to choose the next practice without pretending that independence has been established.
+For an independent transfer claim, use a case unfamiliar in the conditions that govern the action. In a new assessment, retain the learner’s first response before identifying the Method or decisive feature. For completed work, use suitable existing evidence of what the learner did, which resources were permitted and which help reached them. HCD.12 gives the full comparison and reporting conditions. An application with help can answer a learning question under those conditions.
 
 #### HCD.25:4.5 - Retain what another learner can use
 
-Keep the useful relation with a compact positive case, its breaking condition and the source or qualification on which the account relies. Preserve any permission boundary on reuse. A learner need not retain the entire discussion to reuse its result; a phrase detached from its conditions is equally inadequate.
+When the comparison is to be reused, retain a concise case where the relation holds, the condition that breaks it, the source or qualification that warrants the account, and the limits on sharing. Include enough context to reconstruct the grounds.
 
-Return a material correction to the subject account or teaching material it changes. Keep other cases whose grounds still hold. Recognition of this method begins with stories that fail to become usable comparisons. Assurance for a stronger claim needs accessible valid cases, actual responses and the later use's observation conditions. Stop when the selected learning question is answered; broader professional transfer remains a separate question.
+Return a material correction to the affected source or learning material. Retain cases whose grounds still hold. Recognize this need when project stories fail to show what carries into another situation. For stronger claims, use qualified accessible cases and evidence of the learner’s responses and conditions of use. Close with the result or limit for the selected question.
 
 ### HCD.25:5 - Archetypal Grounding
 
@@ -88,53 +88,53 @@ Three adults in a distributed programme compare permitted fragments from their p
 
 | Case | Available basis | Receiving question and warranted move |
 | --- | --- | --- |
-| A: release capacity | A checked rule of two active hours per change plus one hour per batch of at most four; ten changes and 24 available hours; unchanged inputs and rule | The same plan is reviewed again. Reuse the checked 23-hour calculation with its conditions instead of pretending that another identical calculation is an independent capacity observation. |
-| B: instrument installation | A qualified earlier measurement at the previous installation; the measurement procedure is available, but a relevant installation condition has changed | Decide whether the new installation meets its criterion. Reuse the qualified procedure where applicable, but obtain a current observation under the changed condition before treating the old result as current evidence. |
+| A: release capacity | A checked rule of two active hours per change plus one hour per batch of at most four, ten changes, 24 available hours and unchanged inputs | For another review of the same plan, reuse the checked 23-hour calculation on its stated conditions. Recalculating from those same inputs supplies no independent observation of capacity. |
+| B: instrument installation | A qualified measurement from the previous installation and an available measurement procedure. A relevant installation condition has changed. | To judge the new installation, use applicable current evidence. If a new observation is needed, reuse the qualified measurement procedure where it applies. The old measurement still supports a question about the earlier installation. |
 
-The learners first notice a surface similarity: both projects have an earlier successful report. They reconstruct the different dependencies. A's conclusion consumes unchanged inputs under a supplied rule. B's conclusion requires an observation of the present installation, and the old observation does not supply it. The shared lesson is to follow the result's conditions, not to require a new test or reuse every prior result automatically.
+The learners notice that both projects have an earlier successful report. In A the rule and inputs for the capacity calculation still apply. B needs evidence of the present installation; the old measurement covers the former one. For another project, establish whether the conditions for using the earlier result still hold and what further evidence the receiving question requires.
 
-Now change A: available specialist time falls to 22 hours. The earlier calculation for ten changes remains 23 hours, but the plan no longer fits. Recalculate the permitted number: nine need 21 hours. This changes the decision without itself measuring a worker's productivity. Change B differently: the next decision concerns only a transcription of the earlier measurement, with no claim about the new installation. The earlier result can support that narrower use. These changes break the original action choices while preserving each project's identity.
+Available specialist time in A falls to 22 hours. Ten changes still need 23 hours, so the plan no longer fits. Nine need three batches and 21 hours, so at most nine fit. This calculation uses the supplied rate; estimating a worker’s actual productivity would require observations of their work. If B asks only whether an earlier measurement was transcribed correctly, its original record can settle that use without a new installation observation.
 
-For the own-case return, a participant presents two reports as corroboration of a sensor reading. The supplied provenance shows that both copied the same original observation. The participant must identify one observation with two reports, then decide whether that basis serves the current question. If independent corroboration is required by the given criterion, a further copy cannot supply it. A new observation is warranted only if that unresolved requirement matters and an appropriate observation can actually be obtained.
+In a personal exercise, two sensor reports trace to one observation. The participant identifies the common source and assesses whether it serves the question. If the criterion requires independent corroboration, another copy cannot meet it. Use a suitable independent observation already available, or seek one when it can be obtained and its expected contribution warrants the cost. If the required observation is unavailable, identify that limit. For a question about whether the two reports share a source, the provenance can already settle the matter.
 
-The organiser checks the learner's correspondence and next action; the sensor specialist retains the actual measurement criteria. A cue pointing out the copied source would make the correction helped. The example therefore supports a teaching construction and its conditional answers, not a report of observed transfer between professions.
+The organizer examines the learner’s correspondence and next action against the supplied conditions. The sensor specialist is responsible for the measurement criteria. A cue identifying the common source makes a subsequent correction a helped response. Keep an earlier independently supported answer distinct if the learner had already reached it. The exercise supplies a design and conditional answers. A claim about real transfer needs evidence of the learner’s work and conditions relevant to that claim.
 
 #### HCD.25:5.2 - The decisive project fact cannot be shared
 
 An internal team cannot disclose the installation condition that makes B's earlier observation inapplicable. Removing it produces a case with no visible reason to obtain new evidence. The organiser uses a permitted constructed installation change and tells participants that it is a teaching case. Learners can practise the relation on that case; the group does not claim to have diagnosed the closed installation.
 
-If no permitted analogue can retain the relevant relation, choose a different case or arrange a qualified private learning exchange with the required access. A public comparison cannot be made adequate by asking a novice to imagine the missing fact.
+If no permitted analogue retains the relation, use another suitable case, arrange a qualified private learning exchange with the necessary access when feasible, or report why the public comparison cannot establish the connection.
 
 #### HCD.25:5.3 - Repeating a request without repeating its effect
 
-Three learners compare a software integration and a print-production project. The learning question is what makes repeating a request after a lost acknowledgement preserve the intended result. These are constructed cases with the following locally qualified accounts; the participants are learning this relation, not being credited with earlier independent transfer.
+Three learners compare a software integration with a print-production project. The question is when repeating a request after a lost acknowledgement preserves the intended result. The cases stipulate the local operating rules for learning this relation. To establish earlier independent transfer, evidence of the learners’ earlier and receiving work would be needed.
 
 | Project account | What repetition does under the supplied conditions |
 | --- | --- |
-| Software service | An allowed HTTP PUT replaces one identified image with the supplied content. With the same target, identical content and no intervening writer, retrying after the lost response leaves the intended image state the same. This uses the bounded idempotence account in [RFC 9110, §9.2.2](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2); it does not promise identical responses or an absence of additional logs. |
-| Print workshop | The workshop's exercise procedure gives each authorised run one work card. Asking again about the same completed card returns its completion notice; the clerk cannot start another run through that operation. Submitting a new work card requests another run, even if its artwork is identical. |
+| Software service | An allowed HTTP PUT replaces one identified image with the supplied content. With the same target, identical content and no intervening writer, retrying after the lost response leaves the intended image state the same. The bounded idempotence account in [RFC 9110, §9.2.2](https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2) allows different responses or additional logs. |
+| Print workshop | The exercise gives each authorized run one work card. A status inquiry on the same completed card returns its completion notice and cannot start another run. Submitting a new card requests another run, even with identical artwork. |
 
-The learners reconstruct the local mechanisms before naming the correspondence. In the service, repeating the specified update preserves the requested state. In the workshop, the particular repeat operation resolves to the existing run instead of authorising another. The useful relation concerns the effect of the operation under its actual rules. The same filename, polite wording or printed job number cannot supply those rules.
+The learners reconstruct the local mechanisms. In the service, repeating the specified update can leave the identified image in the required state whether the first attempt completed or failed. In the workshop, querying an existing run may establish its status. Submitting a new card can start another run. The correspondence depends on what each authorized operation does under the receiving conditions. A filename or printed job number alone supplies no such rule.
 
-Now move the print case to a workshop that treats every submitted form as a new run and has no operation for reopening the earlier card. Repeating the same form can print a second batch. The learner must reject the earlier repeat instruction for this workshop and ask its operator how the existing job can be resolved. The software account does not establish a repeat rule for every service either; the receiving operation's semantics must support it.
+Now suppose the workshop treats every submitted form as a new run and has no operation for reopening the earlier card. Submitting the same form again could print a second batch. Reject that repeat instruction. Use the available job evidence or ask the operator when their account or action is needed. If the status cannot be established and no authorized operation can safely deliver the required result in every still-possible state, leave the run open. Apply the receiving service’s own rules to a software retry as well.
 
-For the personal return, an event producer receives a permitted rehearsal case: the acknowledgement for sound cue C7 was lost, the console plays the sound on every trigger, and its operator can inspect the playback log. The first response is “send C7 again, because it is the same cue.” Asked to trace the effect, the learner corrects it: request the operator's status for that occurrence of C7 before another trigger. The supplied log then shows C7 completed. The learner requests confirmation of completion and retains one playback. If the log could not settle execution, the next action would remain with the responsible operator; the analogy would not authorize another trigger. The filled response and correction expose the intended learning operation; they are not observations of a real learner or evidence of sound-engineering competence.
+In a permitted rehearsal, an event producer must resolve a lost acknowledgement for cue C7. Each console trigger plays the sound, and the operator can inspect the playback log. The learner proposes triggering C7 again. Asked to trace the effect, they instead request the status of that occurrence. The log shows completion; the learner asks the operator to confirm it and leaves the single playback in place. If the log is inconclusive, another trigger could duplicate the sound. Refer that uncertainty to the responsible operator. These constructed responses illustrate a helped correction. Claims about a real learner’s transfer or sound-engineering competence require their own evidence.
 
-The three case owners each need ten preparation minutes to qualify their bounded account; the organiser needs twelve to align the fragments. Three learners each read for eight minutes before a shared thirty-minute exchange: twelve for the first comparison, seven for their own first responses, six with the prepared provider for the consequential question, and five for individual corrections. The facilitator is booked for all thirty minutes and the provider for the six-minute help interval. The allowance is 78 provider-minutes including preparation, and 114 learner-minutes. A provider may fill both roles, but that saving requires a compatible assignment. Missing prerequisites, permissions or a longer unresolved question change the allowance. Learners use the supplied local mechanisms; specialists retain responsibility for implementing and qualifying the real service, workshop and console.
+The three case owners each need ten preparation minutes to qualify their bounded account; the organiser needs twelve to align the fragments. Three learners each read for eight minutes before a shared thirty-minute exchange: twelve for the first comparison, seven for their own first responses, six with the prepared provider for the consequential question, and five for individual corrections. The facilitator is booked for all thirty minutes and the provider for the six-minute help interval. The allowance is 78 provider-minutes including preparation, and 114 learner-minutes. If one provider covers overlapping assignments within the booked window, count that person’s time once. Check that the combined duties fit. Missing prerequisites, permissions or a longer unresolved question change the allowance. Learners use the supplied local mechanisms; specialists retain responsibility for implementing and qualifying the real service, workshop and console.
 
 ### HCD.25:6 - Bias-Annotation
 
-Familiar vocabulary and confident stories encourage over-transfer. Unfamiliar professional detail encourages under-transfer. Keep the compared relation and the limit of required professional knowledge visible. Participation in another person's presentation is not evidence that its method has become available in one's own work.
+Familiar vocabulary can conceal a different operation. Unfamiliar detail can conceal a usable relation. Identify the professional knowledge the comparison needs and use evidence of the learner’s own application before attributing transfer.
 
 ### HCD.25:7 - Conformance Checklist
 
 - A named learning operation determines case selection.
 - Each permitted case retains its decisive local grounds.
-- The correspondence concerns an operation or relation, not only a label.
-- A breaking condition changes the warranted action.
-- The learner performs an own-case return or a clearly bounded substitute.
+- The compared actions or relations and their local grounds are identifiable.
+- A change to a decisive condition tests the grounds for carrying an operation or conclusion into another case.
+- In a design, identify the intended opportunity for personal application. For a performance claim, establish what the learner did in their own case or in a permitted substitute, and retain the conditions and limits of that evidence.
 - New learning, helped application and transfer of an earlier contribution are distinguished.
-- The reusable account retains its limits and source return.
+- Preserve the source, permission and material limits needed to reuse the comparison.
 
 ### HCD.25:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -142,26 +142,26 @@ Familiar vocabulary and confident stories encourage over-transfer. Unfamiliar pr
 
 **All projects share a pattern name.** Reconstruct what corresponds and what would invalidate the move.
 
-**Anonymisation removed the method.** Preserve the decisive relation in a permitted counterpart or change the task.
+**Anonymization removed the decisive condition.** Use a permitted counterpart that preserves the relation, change the task or identify the comparison that remains unavailable.
 
 **A new source was learned, so prior transfer succeeded.** Use the matching HCD.12 question and evidence.
 
 ### HCD.25:9 - Consequences
 
-Projects become bounded teaching material instead of an accumulation of stories. The method supports useful cross-professional learning without promising acquisition of every contributing profession. It requires case preparation, permission and feedback, and can properly conclude that a tempting transfer is unavailable.
+A project comparison can make a local operation usable in another field or show why the proposed transfer fails. Include the preparation, permissions and feedback the learning question requires. Claims about broader professional competence need grounds at that scope.
 
 ### HCD.25:10 - Rationale
 
-The reusable contribution lies in the relation that makes an operation appropriate. Contrasting and changing that relation exposes both its reach and its limit. Returning to personal work tests whether the learner can use the distinction, while keeping subject authority with the providers who can warrant it.
+Explain which relation warrants the operation and what changes when its decisive condition changes. When personal application is in question, examine the learner’s work with the resources permitted and the help they received. Use qualified grounds for the subject action. Carrying its relation into a learning exercise leaves any real implementation or approval with the responsible practitioners.
 
 ### HCD.25:11 - SoTA-Echoing
 
-The question is how to make a relation usable across cases without hiding a new prerequisite. Adopt HCD.6.1's developed variation-based contrast and HCD.12's distinction between unfamiliar transfer and learning from a new source. These actual suppliers explain selection of a decisive difference, change of an incidental cue and interpretation of the personal response. The present construction adds selection, permission, translation and return across several people's projects.
+HCD.6.1 explains how varying a decisive condition or an incidental cue can make a distinction discernible. HCD.12 distinguishes prior transfer from learning with a new source. Use the contribution the learning question needs. Here the practitioner selects permitted cases from different projects, makes the local relations intelligible and arranges personal application where required.
 
 Juxtapeer's [comparative-review construction](https://d.ucsd.edu/srk/papers/2018/Juxtapeer-CHI2018.pdf) is a related bounded example of making comparable parts available together; its findings do not establish professional transfer. Compared with unstructured project presentations, §§4.2–4.4 add a recoverable relation and a breaking condition at a real preparation cost. Retain ordinary presentation when sharing information is the actual purpose. Reconsider the learning comparison when a simpler example suffices, the cases cease to be comparable, or the receiving work needs another subject Method.
 
 ### HCD.25:12 - Relations
 
-HCD.6.1 supplies contrast construction; HCD.6 keeps the selected action inside meaningful practice. HCD.12 supplies the transfer or new-source-learning question. HCD.23 supplies explanatory exchange and HCD.24 evaluative review when those actions are needed. HCD.7 and HCD.8 establish access and competent support; HCD.21 selects compatible participants. HCD.27 arranges case preparation and return windows. HCD.28 includes this contribution only when the product's target requires it.
+Use HCD.6.1 to construct a needed contrast and HCD.6 for the selected action in meaningful practice. Use HCD.12 for the corresponding transfer or new-source question, HCD.23 for explanatory exchange and HCD.24 for evaluative review. Use HCD.7 or HCD.8 for missing access or competent support, HCD.21 for participant selection and HCD.27 for compatible preparation and return windows. HCD.28 includes the comparison when the product requires it.
 
 ### HCD.25:End

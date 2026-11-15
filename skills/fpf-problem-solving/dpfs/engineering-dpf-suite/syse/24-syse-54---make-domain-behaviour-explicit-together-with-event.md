@@ -27,10 +27,10 @@ access to people with relevant domain experience and a facilitator able to keep 
 sensitive or politically constrained inquiry, obtain suitable facilitation and safe participation; a board
 filled by people unable to contradict the official account is a poor basis for reliance.
 
-Use an adequate existing account directly. When one actor's interaction and expected result are already
+Use an adequate existing account directly. When one actor's interaction and expected result are
 understood, `SYSE.2` and its use-case treatment can suffice. For a few unknown rules in one interaction,
-clarify those rules and examples without convening a wide workshop. EventStorming is neither mandatory
-before engineering nor a complete course in Domain-Driven Design, business transformation or facilitation.
+you can clarify those rules and examples in a focused discussion. The wider practices of Domain-Driven Design, business transformation
+and facilitation extend beyond this treatment.
 
 ### SYSE.54:2 - Problem
 
@@ -53,7 +53,7 @@ not merely to arrange coloured notes or produce a comprehensive diagram.
 - A common timeline helps coordination, while concurrent work and negotiation do not have one fixed order.
 - Software boundaries can clarify consistency and responsibility, while premature technical partitioning
   can silence the domain questions that should determine those boundaries.
-- Collective understanding has value even without a polished artifact; a later user still needs a recoverable
+- Collective understanding has value even without a polished artifact. A later user needs a recoverable
   account of the distinctions and decisions on which the engineering work relies.
 
 ### SYSE.54:4 - Solution
@@ -76,14 +76,14 @@ State the practical question and initial scope, the current or proposed situatio
 that would make the session useful. Invite the people who know the consequential perspectives, including
 those handling exceptions or receiving the result. A representative cannot fill an unknown fact by agreement.
 Record the missing perspective and obtain it before relying on the affected claim. Arrange a shared surface
-that everyone can read and change. Physical notes and an accessible digital board are alternatives; verify
-that remote participants can actually contribute rather than merely watch a facilitator move notes.
+that everyone can read and change. Physical notes and an accessible digital board are alternatives. Check
+that remote participants can add and correct the account themselves.
 
 Use a simple visible legend. Introduce events first; add another notation only when the discussion needs its
 distinction. Labels as well as colour carry meaning. Agree how disagreements will be marked and revisited.
-Do not spend the opening negotiating a complete ontology. A facilitator maintains participation and the
-question; domain participants supply and challenge the behaviour. An eventual design decision retains its
-own deciding subject and authority.
+Start with the terms the discussion needs. The facilitator keeps the question in view and helps everyone participate, including those who disagree.
+Domain participants describe and challenge the behaviour. If a design decision follows, identify who makes it and
+under what authority.
 
 #### SYSE.54:4.2 - Recover events and reconcile the stories
 
@@ -103,13 +103,13 @@ Walk through the account aloud with a narrator and participants who can correct 
 starts, what interrupts it, what counts as a useful or failed ending, and what happens beyond the initial
 scope. Follow a troublesome result backwards to its required conditions, then forwards again. Add the
 surrounding event or participant when the initial boundary hid a cause or consequence. Agreement after this
-walkthrough means that these participants corrected this account; establish actual behaviour with suitable
-observations before relying on a claim about what actually happens.
+walkthrough establishes a jointly corrected account. For a claim about what happens in practice, use
+observations that support that claim.
 
 #### SYSE.54:4.3 - Explain decisions and changing state
 
-For a selected flow, make the connecting grammar explicit. Someone uses information to request an action
-from a responsible person or system. The request can be accepted, rejected or remain unresolved. An event
+For a selected flow, identify who uses which information to request an action, to whom they send the request,
+and who is responsible for responding. The request can be accepted, rejected or remain unresolved. An event
 note states the claimed outcome. Establish the occurrence separately when the receiving claim requires
 evidence. A subsequent decision may initiate another action under a rule. Ask who
 makes that decision, with what information, under which condition, and when. Human judgement and automatic
@@ -120,9 +120,9 @@ rules can both occur; a drawn rule does not supply authority to act.
 | Domain event | What consequential occurrence has happened in this account? To which case or object? | Distinguish the report from the occurrence and qualify the occurrence claim. A future scenario can propose the occurrence. |
 | Command or action request | Who asks whom to do what, and what permits or prevents acceptance? | Requesting a booking is not successful booking. A command is not the reusable Method of carrying out the work. |
 | Decision rule or policy | On this event, under these conditions, what should be done next and by whom? | “Whenever” needs its exceptions and timing. Temporal order alone establishes neither a decision rule nor a causal connection. |
-| Information used for a decision, often called a read model | What must the person or software know, where does it come from, and can it be stale? | A display of availability may differ from the state used to accept a reservation. |
+| Information used for a decision, often called a read model | What information must be available to whoever makes the decision, where does it come from, and can it be stale? | A display of availability may differ from the state used to accept a reservation. |
 | State-bearing domain object or system | What changes, which identity continues, and what must remain true? | The event “hold expired” differs from the interval during which a hold is active. |
-| External participant or time condition | What can happen without this team's command, and how is it noticed? | A supplier refusal or elapsed deadline needs a reaction. |
+| External participant or time condition | What can happen without this team's command, and how is it noticed? | For a supplier refusal, identify how notice reaches the responsible participant and how they respond. For a deadline, identify how expiry is detected and acted on. |
 
 Connect an event to a next action only after stating the rule or physical dependency that warrants the
 connection. Ask whether it happens always, immediately, only on working days or only after additional
@@ -155,15 +155,15 @@ adding exceptions indefinitely.
 
 For behaviour that will be implemented, express decisive examples as initial state and information, triggering
 action or event, and expected observable outcome. Include a refused or delayed action where it matters.
-The group should be able to explain why the outcome follows and what would change it. These examples are
-candidate acceptance conditions; executable tests, real observations and qualification remain further work.
+The group should be able to explain why the outcome follows and what would change it. The examples give
+candidate acceptance conditions. For a claim about implemented behaviour, use evidence from tests performed, observations of the system or qualification appropriate to that claim.
 
-Resolve the hot spots that prevent the receiving use. A remaining question can be carried explicitly to a
-person or inquiry able to answer it, with the affected decision and a condition for continuing. Do not label
-a flow agreed while a blocking contradiction remains. Nor must an exploratory session solve every issue:
-it can usefully select the next bounded investigation and preserve what the participants learned.
+Resolve the hot spots that prevent the receiving use. An open question can go to a source able to answer it,
+with the decision it affects and the condition for continuing. The authority for a rule may have defined it already,
+or an operating record may show when a notification arrived. A blocking contradiction leaves the flow in dispute.
+An exploratory session can preserve what the participants learned and choose a bounded investigation where one is needed.
 
-Keep enough of the account for its actual receiver. Broad discovery can return consequential meanings,
+Keep enough of the account for the work that will use it. Broad discovery can return consequential meanings,
 disagreements and a grounded next inquiry; process modelling adds the selected flow, rules and variations;
 software design adds candidate consistency and interface boundaries. In each case preserve the question,
 scope, grounds, uncertainties and affected engineering use. Preserve participant
@@ -199,7 +199,7 @@ collected; the hold is no longer available for expiry release. At or after the d
 is refused even if the expiry worker has not run. **Release expired hold** checks that H31 is still active
 and its deadline has passed before releasing it. The group has now exposed a concurrency requirement:
 pickup and expiry must be decided against compatible authoritative state and time conditions. It records
-that requirement for software design rather than claiming the wall has implemented it.
+that requirement for the software design.
 
 | Challenge | Expected behaviour in the proposed model | Consequence for design |
 | --- | --- | --- |
@@ -249,7 +249,7 @@ about which future behaviour to prefer; they need different continuations.
 | ID | A conforming use... |
 | --- | --- |
 | CC-SYSE54-1 | states the receiving question, current or proposed situation, scope and required perspectives. |
-| CC-SYSE54-2 | constructs and corrects a shared account rather than imposing one participant's private model. |
+| CC-SYSE54-2 | constructs and tests a shared account with participants, who correct it where needed. |
 | CC-SYSE54-3 | distinguishes occurrences, state, requests, performed actions and evidence where the receiving claim depends on them. |
 | CC-SYSE54-4 | for a selected process or software design, explains the decisions, information and conditions connecting consequential events, including relevant external or time conditions. |
 | CC-SYSE54-5 | tests consequential interpretations with concrete examples; when developing a flow, challenges its meaningful path with an action-changing variation and retains a blocking uncertainty as such. |
@@ -275,9 +275,9 @@ architecture question. The method can reveal hidden coordination, ambiguous prom
 before implementation commits to them. Learning and corrected relationships can be valuable even when the
 next result is an inquiry rather than a design choice.
 
-The cost is obtaining the right participation, sustaining a useful level of detail and preserving the
-reasoning for later users. Missing access, unsafe participation or unresolved professional questions limit
-reliance. No general reduction in defects, delivery time or conflict is asserted by these constructed cases.
+It takes time and effort to involve people with the relevant experience, maintain a useful level of detail and preserve
+the reasoning for later users. Missing access, unsafe participation or unresolved professional questions limit
+reliance. A general claim that workshops reduce defects, delivery time or conflict needs evidence of those effects in practice.
 
 ### SYSE.54:10 - Rationale
 
@@ -287,10 +287,10 @@ construction makes incompatible perspectives visible; concrete variations test w
 survives a consequential change. The result is a domain explanation, with implementation and assurance
 questions made more precise.
 
-This complements `SYSE.2` rather than replacing it: a corrected domain flow can change a linked use and
-system concept, while an available concept can supply the question for a narrow modelling session. It also
+A corrected domain flow can change a linked use and
+system concept in `SYSE.2`. An available concept can supply the question for a narrow modelling session. The method also
 specializes the collaborative reasoning of `B.5.SD` with a particular subject grammar and constructive route.
-These relations allow direct use without making a workshop a compulsory engineering stage.
+
 
 ### SYSE.54:11 - SoTA and source use
 
@@ -298,7 +298,7 @@ The practice question is how a mixed domain and engineering group can make behav
 challengeable before relying on it in design. **Adopt and adapt** EventStorming's progressively corrected
 shared account. [Brandolini's current overview](https://www.avanscoperta.it/it/eventstorming/), especially
 “Main recipes” and its three format sections, distinguishes broad discovery, process modelling and software
-design. It also explicitly permits paper-based processes and simpler software architectures. The useful
+design. The overview also permits paper-based processes and simpler software architectures. The useful
 contribution is the relation between purpose, depth and modelling operations; promotional claims about
 universal effectiveness are not evidence for this pattern's results.
 
@@ -311,7 +311,7 @@ develops the request, decision-information and reaction-rule grammar. The curren
 [Extract Acceptance Tests](https://www.eventstorming.com/patterns/extract-acceptance-tests/)
 explain different moves, not one mandatory workshop script. **Adopt** their conditional uses in §§4.1–4.4.
 [Conversational System](https://www.eventstorming.com/patterns/conversational-system/)
-supplies the important limit on forced sequencing. The kit case, its engineering returns and the distinction
+shows how to model a conversational process without imposing a fixed order. The kit case, its engineering returns and the distinction
 between proposed behaviour and evidence are the present synthesis; they are not reported source experiments.
 
 For the software-design question, [Microsoft's tactical DDD explanation](https://learn.microsoft.com/en-us/azure/architecture/microservices/model/tactical-domain-driven-design),
@@ -329,11 +329,11 @@ superior; both require participants who know the domain. Another smaller answer 
 `SYSE.2:4.5` when the question is already a bounded actor interaction and its implementable, testable slice.
 
 The current official [resources](https://www.eventstorming.com/resources/) provide further facilitation and
-software-design material, including the inventor's book and workshop formats. They extend professional
-preparation. Reopen
+software-design material, including the inventor’s book and workshop formats. They can help a facilitator prepare.
+Obtain the domain knowledge from participants who hold it. When choosing a facilitator depends on their competence, use evidence of their ability to do the work. Reopen
 the selected route when its notation hides relevant behaviour, the participation burden exceeds its useful
-contribution, or an adequate existing account answers the question more cheaply. Changed practice and source
-conditions reopen the affected advice, not every unrelated engineering method.
+contribution, or an adequate existing account answers the question more cheaply.
+When the practice or its sources change, reassess the advice that depends on them.
 
 ### SYSE.54:12 - Relations
 

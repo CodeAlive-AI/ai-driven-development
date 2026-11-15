@@ -12,7 +12,7 @@ Examples include finding an assignment satisfying constraints, selecting a best 
 
 The gain is a search with explicit coverage, useful exclusion rules and a result that remains interpretable if computation is interrupted. The reader needs finite sets, logical conditions and inequalities; MATH.20 supplies a more developed bound argument. C.29.2 supplies the wanted computational answer.
 
-Use direct construction or enumeration when it already solves the problem at acceptable cost. Heuristic search is also useful when a good candidate is enough. Apply the exclusion method to the conclusions that must be retained, without requiring proof of global optimality for every candidate search.
+Use direct construction or enumeration when it already solves the problem at acceptable cost. Heuristic search is also useful when a good candidate is enough. Justify exclusions against the requested result. A satisfactory candidate can suffice without a proof of global optimality.
 
 ### CMP.4:2 - Problem
 
@@ -88,9 +88,9 @@ Keep a bound for the unprocessed work, including a state whose expansion is inte
 
 On finding a witness, return it with the meaning of its admissibility. For optimization, include its objective value and any remaining bound that the recipient needs. On complete exhaustion, sound exclusions and covering extensions justify optimality if a feasible answer was found, or absence of a feasible answer if none was found.
 
-On interruption, return the available candidate and unresolved possibility. “No witness found within this run” is useful information but does not establish that no witness exists. If only a satisfactory candidate was requested, its obtaining can complete the work without exhausting the search.
+On interruption, return the available candidate and unresolved possibility. “No witness found within this run” is useful information but does not establish that no witness exists. If the recipient requested only a satisfactory candidate, finding one can finish the work before the search is exhausted.
 
-Use an initial and changed-condition case to check which conclusion the recipient can actually use. Changing an output from one optimum to all optima, or changing a domain, directly tests the exclusion's scope.
+Use an initial and changed-condition case to check which conclusion the recipient can use. Changing an output from one optimum to all optima, or changing a domain, directly tests the exclusion's scope.
 
 ### CMP.4:5 - Archetypal Grounding
 
@@ -144,9 +144,9 @@ Examine a bound’s direction and scope. The relevant distinction is what the bo
 
 ### CMP.4:9 - Consequences
 
-The search can avoid large parts of a combinatorial space and still support a precise result. It can also supply a useful answer before completion, with the remaining possibility described at the strength actually established.
+The search can avoid large parts of a combinatorial space and still support a precise result. If a run stops early, report what the search established and what remains possible. Include any bounds that matter to the recipient.
 
-The method does not guarantee affordable search. Exclusions may be weak, expensive or scarce; the remaining space may still grow exponentially. A changed formulation, relaxation, shared subproblem or weaker requested conclusion can then be the next useful move.
+Exclusions may be weak, expensive or scarce, and the remaining space may still grow exponentially. A changed formulation, relaxation, shared subproblem or weaker requested conclusion can then be the next useful move.
 
 ### CMP.4:10 - Architectural Rationale
 

@@ -5,11 +5,11 @@
 
 ### ADM.1:0 - Use this when
 
-Use this pattern when an administrative request is hard to interpret, several providers call their part “done”, or one word such as “trip” hides different results. Begin with the person trying to do something and the condition the administration is expected to supply.
+Use this pattern when an administrative request is hard to interpret, several providers call their part “done”, or one word such as “trip” hides different results. Begin with the participant’s intended work and the condition the administration is expected to supply.
 
-The pattern governs the relation between the work intended and its needed administrative condition. Its first result is a bounded enabling question: what condition is needed, for whom, from whom and by when. This lets the handler select the relevant service instruction or return a business question to the person responsible for that work.
+The pattern governs the relation between the work intended and its needed administrative condition. Its first result is a bounded enabling question: what condition is needed, for whom, from whom and by when. This lets the handler select the relevant service instruction or return a business question to whoever is responsible for that work.
 
-If those facts are already clear and an adequate instruction covers the request, apply that instruction. A complete map of the organization adds nothing to a straightforward request.
+If those facts are already clear and an adequate instruction covers the request, apply that instruction.
 
 ### ADM.1:1 - Problem frame
 
@@ -33,11 +33,11 @@ These pressures favour a small explicit question. Expand it only where a missing
 
 #### ADM.1:4.1 - Recover the needed condition from the request
 
-Ask what the participant intends to do and what administrative condition is missing. Use the participant's ordinary description first. “I need to examine the archive before the experiment” is more useful than beginning with the account-creation form.
+Identify the participant’s intended work and the condition needed for it from the request or existing account. Resolve unclear points from the available evidence or ask the participant when their contribution is needed. “I need to examine the archive before the experiment” is more useful than beginning with the account-creation form.
 
-Then name the condition that would make the administrative part usable. For archive work this may be permitted read access for the named researcher during the necessary interval. For a journey it may be authorized travel with usable transport and accommodation. Keep additional conditions only when they change the requested use.
+Then name the condition that would make the administrative part usable. For archive work this may be permitted read access for the named researcher during the necessary interval. For a journey it may be authorized travel with usable transport and accommodation. Include conditions that determine whether or how the recipient can use the service.
 
-Distinguish the condition from its usual evidence. A booking confirmation supports a claim about accommodation; the traveller still needs accommodation that can actually be used. Once the authorized decision maker approves the stated journey and expenditure under the travel rule, that authorization is established. The providers still have to supply usable transport and accommodation.
+Distinguish the condition from its usual evidence. A booking confirmation supports a claim about accommodation; establish that the accommodation is usable for the traveller when the claim concerns provision. Once the authorized decision maker approves the stated journey and expenditure under the travel rule, that authorization is established. The providers still have to supply usable transport and accommodation.
 
 #### ADM.1:4.2 - Separate the subjects hidden by the label
 
@@ -45,7 +45,7 @@ For each completion or failure statement, ask what happened to what. “The trip
 
 Use a short comparison when several meanings are active. Different subjects may have an enabling relation, a contribution relation or some other connection. Determine that connection from the actual work. If the statements instead concern one event from different participants' positions, use ADM.4 to preserve their correct correspondence.
 
-When an operations account is genuinely unclear about cases, work, resources or descriptions, OPS.3 supplies those distinctions. When several selected structures change the decision, use C.32.MWA. A routine enabling question does not require either inquiry to be repeated.
+When an operations account is genuinely unclear about cases, work, resources or descriptions, OPS.3 supplies those distinctions. When the answer depends on how several structures relate, use C.32.MWA. A routine enabling question does not require either inquiry to be repeated.
 
 #### ADM.1:4.3 - Bound the administrative promise
 
@@ -55,15 +55,15 @@ Write a first result in ordinary language, for example:
 
 > The archive service needs to provide Mara with usable, permitted read access to collection R by 25 September so that she can prepare experiment E. The archive owner decides eligibility; the access provider supplies the technical means. The experiment's outcome remains with the research team.
 
-That statement is sufficient to locate the next service or eligibility question. It need not become a new form. If the provider is unknown, the first useful result can identify the missing responsibility and the service owner who must establish it.
+That statement is sufficient to locate the next service or eligibility question. It need not become a new form. If the provider is unknown, identify the missing responsibility and, when known, the service owner able to establish it.
 
 #### ADM.1:4.4 - Choose the next action and stop
 
-When the requested condition, recipient, provider and needed time are identified, and the applicable service instruction's prerequisites for the next handling action are established, the handler uses that instruction to obtain or verify provision. Reuse adequate supplied facts and decisions. If a required fact or decision is unresolved, the handler sends the specific question to someone able to resolve it: the deciding authority, specialist, provider or person responsible for the substantive work.
+When the requested condition, recipient, provider and needed time are identified, and the applicable service instruction's prerequisites for the next handling action are established, the handler uses that instruction to obtain or verify provision. Reuse adequate supplied facts and decisions. If a required fact or decision is unresolved, identify the missing contribution. Use available evidence to settle a factual question or direct it to the appropriate source. Obtain decisions from the holder of the relevant authority.
 
-For a missing administrative condition, state what the participant still cannot use and why the local “done” evidence is insufficient. For a failed business result after the administrative condition was supplied, return the next business decision to the responsible person. An administrative provider can still examine its own contribution if new evidence connects it to that failure.
+For a missing administrative condition, state what the participant still cannot use and why the local “done” evidence is insufficient. For a failed business result after the administrative condition was supplied, return the next business decision to whoever has responsibility for the business work. An administrative provider can still examine its own contribution if new evidence connects it to that failure.
 
-Framing finishes when the receiving person can act on the bounded question or identified gap. It does not have to wait for all the enabled work to finish.
+Framing finishes when its recipient can use the statement of the needed condition or the identified gap. Completion of the enabled work is a separate question.
 
 #### ADM.1:4.5 - What changes in practice
 
@@ -81,7 +81,7 @@ In this constructed case, an employee travels to negotiate a supply agreement. T
 | Negotiating work | The parties reached no agreement. | The person responsible for the negotiating work decides whether to revise the offer, continue negotiations or stop. |
 | Administrative handling | The stated travel conditions and required expense settlement were satisfied. | The handler may report that administrative result complete under the supplied rule. |
 
-The first useful account names these results separately. It does not repair a failed negotiation by reopening a completed hotel booking. If the accommodation had been unusable and the employee had arranged a replacement personally, the administrative account would instead retain that failure and the displaced effort even if the negotiations later succeeded.
+Report the completed travel service and the failed negotiation separately. The negotiating decision returns to the party responsible for the agreement. If the accommodation had been unusable and the employee had arranged a replacement personally, the administrative account would instead retain that failure and the displaced effort even if the negotiations later succeeded.
 
 #### ADM.1:5.2 - An ordinary request that needs no reframing
 
@@ -89,7 +89,7 @@ A requester identifies the eligible traveller, destination, permitted dates and 
 
 ### ADM.1:6 - Bias-Annotation
 
-An internal service view can privilege the provider's queue over the participant's actual work. Ask the participant what condition is usable and include a justified failed or abandoned request when it changes the service account. The business owner can also misattribute every failed outcome to administration; keep the claimed causal contribution separate from the observed service failure.
+An internal service view can privilege the provider's queue over the participant's actual work. Use evidence from the receiving work, including the participant’s account when needed. Include a supported failed or abandoned request when it changes the service account. The business owner can also misattribute every failed outcome to administration; keep the claimed causal contribution separate from the observed service failure.
 
 A participant may be unable to disclose the full business purpose. Request only enough permitted context to determine the needed condition and applicable rule.
 
@@ -99,9 +99,9 @@ For the actual enabling question, examine whether:
 
 1. The participant's intended work and the administrative condition are identifiable in ordinary language.
 2. Each completion or failure claim refers to the relevant subject.
-3. The recipient, provider, needed time and action-changing use conditions are supplied or named as unresolved.
+3. The recipient, provider, needed time and conditions on which the requested use depends are supplied or named as unresolved.
 4. Evidence such as an approval or provider message is interpreted against the promised condition.
-5. The next action reaches someone able to resolve the remaining question, and an adequate ordinary request can proceed without a wider investigation.
+5. An adequate ordinary request can proceed. Any remaining fact can be investigated locally or requested from a competent source. A missing decision goes to its holder, or the result identifies the missing responsibility.
 
 These questions assess the framing. Whether the service was actually supplied requires evidence of that result under its applicable conditions.
 
@@ -115,7 +115,7 @@ These questions assess the framing. Whether the service was actually supplied re
 
 ### ADM.1:9 - Consequences
 
-The handler gains a clearer service boundary and a smaller next task. This can make hidden provider failures and participant burden visible. It also prevents a service result from being used as evidence of an unrelated business success.
+The handler gains a clearer service boundary and a smaller next task. This can make hidden provider failures and participant burden visible. It shows which conclusion the administrative evidence supports when the business outcome is reported separately.
 
 The result is limited by the available service conditions and context. If an organization has not assigned responsibility for the needed condition, identifying that gap is useful but does not supply the missing provider commitment.
 
@@ -123,13 +123,13 @@ The result is limited by the available service conditions and context. If an org
 
 The enabled work is the starting point because it explains why the administrative condition matters. The administrative result remains separate because it has its own applicability, provider and completion evidence. This separation supports both a simple direct request and a service spanning several providers.
 
-A department-first boundary can be adequate when one provider already supplies the entire needed condition. It becomes inadequate when a local completion leaves the participant unable to work. A whole-business boundary has the opposite cost: it can make administration responsible for results it neither decides nor supplies. The bounded enabling relation retains the useful connection without either expansion.
+A department-first boundary can be adequate when one provider already supplies the entire needed condition. It becomes inadequate when a local completion leaves the participant unable to work. A whole-business boundary has the opposite cost: it can make administration responsible for results it neither decides nor supplies.
 
 ### ADM.1:11 - SoTA-Echoing
 
-The practice question is how to define an administrative result at enough scope to help the participant without absorbing the whole business task. Keep the enabling administrative service distinct from the participant's business work, and use OPS.3 to distinguish cases, work and descriptions. Use C.32.MWA when competing structures change the answer.
+The practice question is how to define an administrative result at enough scope to help the participant without absorbing the whole business task. Keep the enabling administrative service distinct from the participant's business work, and use OPS.3 to distinguish cases, work and descriptions. Use C.32.MWA when the answer depends on the relations among several structures.
 
-An alternative is to define success by completion of a department's task or delivery of a catalogue item. GOV.UK's whole-problem service guidance is a useful comparator because it expands attention to the user's needed outcome while cautioning against an oversized service. Here that contribution changes §§4.1–4.3: start from the needed condition, follow the relevant provider joins, and keep the business outcome separate. At the same first-pass effort, one condition sentence can expose a missing result that a ticket label conceals; a wider service inquiry is accepted only when that distinction changes action.
+An alternative is to define success by completion of a department's task or delivery of a catalogue item. GOV.UK's whole-problem service guidance is a useful comparator because it expands attention to the user's needed outcome while cautioning against an oversized service. In §§4.1–4.3, use that contribution to start from the needed condition, follow the relevant provider joins, and keep the business outcome separate. At the same first-pass effort, one condition sentence can expose a missing result that a ticket label conceals; investigate the wider service when resolving the remaining issue could justify the extra work.
 
 The July laboratory, especially 11:56–14:59 and 20:37–30:49, supplies reported situations and conceptual distinctions used in this synthesis. The GOV.UK guidance supplies a service-design comparison. The organization's rules determine local administrative authority; observations of the service are needed to judge an improvement claim.
 
@@ -137,8 +137,8 @@ Reconsider this selection if actual cases show that the stated condition fails t
 
 ### ADM.1:12 - Relations
 
-ADM.2 supplies participants and organizational relations when those facts determine the request. ADM.3 resolves effectivity or change; ADM.4 compares accounts after their subjects are identified. These are conditional result uses, not steps required for every case.
+ADM.2 supplies participants and organizational relations when those facts determine the request. ADM.3 resolves effectivity or change; ADM.4 compares accounts after their subjects are identified.
 
-OPS.3 supplies the general case/work/description distinction. C.32.MWA supplies a comparison of several structures when their non-matching boundaries affect the decision. The administrative handler uses the applicable service instruction for the next administrative action on the bounded question. The person responsible for the substantive work receives a business question.
+OPS.3 supplies the general case/work/description distinction. C.32.MWA supplies a comparison of several structures when their non-matching boundaries affect the decision. The administrative handler uses the applicable service instruction for the next administrative action on the bounded question. Return a business question to whoever is responsible for that work.
 
 ### ADM.1:End

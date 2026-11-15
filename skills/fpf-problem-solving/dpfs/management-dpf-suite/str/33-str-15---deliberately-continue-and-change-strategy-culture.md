@@ -5,23 +5,23 @@
 
 ### STR.15:1 - Problem frame
 
-**Use this when** a strategic-practice variant is being transmitted, enacted, recognized, selected, retained or lost, and the present question is what to continue or deliberately change in those relations.
+**Use this when** you need to establish which strategic practice was transmitted, used, recognized, selected, retained or lost in a particular population and period. Where a choice is requested, use that account to decide what to continue or deliberately change.
 
 A team may preserve rejected directions while decision meetings reward unsupported certainty. New members may receive a scenario template but never see how an inconvenient alternative affected a choice. A useful method may be understood yet remain unused because nobody has time or permission to perform it. Conversely, an existing way of discussing uncertainty may already work well enough that another culture initiative would add burden without useful change.
 
-Strategy is the wider practice. This pattern governs cultural continuation and deliberate influence on strategic practice in a named population, organization, place and period. It does not equate culture with slogans, document collections or a universal organizational personality.
+This method concerns the continuation of strategic practice in a particular population, organization or community, place and period. It also helps assess what a deliberate intervention could change in those relationships.
 
-The practical gain is a small supported account of what is actually happening and a warranted continuation, change, branch or stop. An adequate account or decision to retain the existing arrangement can finish without an intervention.
+Return a supported account of what happened. If the task also calls for a response, identify the grounds for continuing, changing, branching or stopping the practice. Retaining a suitable arrangement can finish that decision.
 
-**Do not use this pattern** when the whole question is which analytical method is worth using; enter STR.13. Use direct organization-change or learning guidance for a known assignment, access or capability problem with no unresolved cultural relation. Do not launch a cultural programme merely because one participant disagrees or one workshop has ended.
+Use STR.13 when the question concerns the practical worth of an analytical method. For a known gap in assignment, access or ability, use the relevant organization-change or learning method if that is the result required. A disagreement or the end of a workshop warrants a cultural inquiry only if a question remains about the practice.
 
 ### STR.15:2 - Problem
 
-Strategic culture is often inferred from stated values, attendance or publication. An organization calls itself experimental because it has an experiment form, or evidence-led because it stores reports. These facts do not establish what people actually enact, recognize or select.
+An experiment form can establish that someone described a procedure. Stored reports can establish what information was available. To describe experimentation or the selection of evidence in practice, trace what participants did in a relevant instance and which contributions they recognized or retained. Examine the use of a form or report when it was part of that work.
 
-The opposite simplification treats culture as something too diffuse to influence. It misses concrete relations: who introduces alternatives, how newcomers learn a practice, which objections remain visible, what decision holders reward and what future users can recover.
+To see how a practice can be influenced, examine who introduces alternatives, how newcomers encounter them, which objections remain visible, what decision holders reward and what later users can recover.
 
-A project can deliberately change some of those conditions. It cannot infer actual transmission, persistence or improved decisions from its authorization or from completing the intervention.
+A project can change some conditions of practice. Its authorization establishes what it may do, and its completed work can establish what it changed directly. Transmission, persistence and better strategic decisions each require evidence of the effect claimed.
 
 ### STR.15:3 - Forces
 
@@ -36,109 +36,109 @@ A project can deliberately change some of those conditions. It cannot infer actu
 
 ### STR.15:4 - Solution
 
-Use C.36 to describe the cultural relations that matter to the present strategic-practice question. Compare continuation with a concrete change, keep the scope and evidence limits, and distinguish a proposed intervention from performed work and observed consequences.
+Use C.36 to describe the cultural relations the strategic question depends on. Return a current or historical account with its scope and evidence limits. For an intervention question, compare continuing the practice with a feasible change, then distinguish the proposal, work performed and observed consequences.
 
-#### STR.15:4.1 - Name the practice variant and the people and conditions in scope
+#### STR.15:4.1 - Name the practice variant and the participants and conditions in scope
 
-Describe the strategic practice in ordinary words: for example, retaining serious rivals with their rejection reasons, distinguishing interest from demand, or returning a qualified uncertainty statement to a decision holder.
+Describe the practice in ordinary terms. It might retain serious alternatives and the reasons for rejecting them, distinguish customer interest from demand, or bring a qualified uncertainty statement to a decision holder.
 
-Name the population or participants, organization or community, place, period, relevant decision work and the variant or variants being compared. Include the tools and documents only where they carry, mediate or alter a material relation. A platform name does not identify the whole culture.
+Identify the participants or population, organization or community, setting, period and work relevant to the question. Name the variant under study and any variants being compared. Include tools and documents where they transmit, preserve or select a contribution.
 
-Recover a qualified actual account when describing current practice. If the account is prospective, identify it as a proposal or hypothesis. A local account must not become an organization-wide claim by dropping its scope.
+For an account of current or past practice, establish what happened under the stated conditions. Label a prospective account as a proposal or hypothesis. A claim about a wider population or period needs evidence at that scope.
 
-The first result can be one sentence: “In this team, experienced analysts teach the alternative-comparison routine, meeting notes retain its reasons, but the next decision discussion omits unresolved cost claims.” That account still needs a basis for each asserted relation; its readability is not its evidence.
+A short account might say, “In this team, experienced analysts teach the alternative-comparison routine. Meeting notes retain its grounds, but the next decision discussion omits unresolved cost claims.” Each of these claims needs evidence of the relation it describes.
 
 #### STR.15:4.2 - Separate the relations that can change the answer
 
-Ask only about relations material to the case. The following questions help recognize them; they are not a required complete inventory.
+Use the questions that help establish the answer or its limits.
 
 | Cultural relation | Practical question |
 | --- | --- |
 | Generation and variation | How do new formulations, directions or ways of strategic work become available? |
-| Transmission | Who passes the practice to whom, by teaching, copying, demonstration or another actual means? |
-| Enactment | Who actually uses the practice in a qualified occurrence of strategic work? |
+| Transmission | Who passes the practice to whom, by teaching, copying, demonstration or another means? |
+| Enactment | Who used the practice, when and on what evidence? |
 | Recognition | What is noticed, praised, criticized or treated as a competent contribution, and by whom? |
 | Selection | Which variants or contributions are chosen for later use, support or further development? |
-| Memory and retention | What reasons and examples remain available, and what is actually carried into later work? |
+| Memory and retention | What reasons and examples remain available, and what reached or was used in later work? |
 | Loss and mediation | Which distinctions disappear or become inaccessible, and how do tools, access or selection arrangements affect that? |
 
-A retained document can support a memory claim without proving that a reader retrieved or used it. Attending a demonstration can establish attendance without establishing capability. A favourable decision outcome does not establish which cultural relation caused it.
+A retained document can establish what was available. For retrieval, establish which version the later user obtained. For reliance, trace how it entered their work. Attendance establishes presence at a demonstration. Capability requires evidence of performance, and attributing a favourable decision to a cultural relation requires evidence of its causal contribution.
 
-Use the direct evidence, Work, measurement or causal Method when the receiving claim needs that stronger result. Preserve a useful qualified account when the stronger explanation remains unresolved.
+Use the relevant evidence, Work, measurement or causal method when the receiving claim needs its result. An unresolved causal question can leave an adequate description of what happened.
 
 #### STR.15:4.3 - Identify the specific continuation or change question
 
-Locate the tension that changes action: unsupported confidence receives recognition, objections lose their context, a useful practice cannot be enacted within available time, or a source is reused outside its qualification window.
+Identify the particular relation in question. The evidence may show that unsupported confidence receives recognition, objections lose their context, a time limit prevents use of a practice, or a source has been used outside its qualified period. Establish which observation or decision this affects.
 
-Consider different explanations when their consequences would change the response. Non-use may reflect poor practical worth, a misleading instruction, missing access, lack of capability or an actual selection practice. Do not diagnose unwillingness merely from a missing result.
+Compare plausible explanations when the cause matters to the requested finding or response. Non-use may reflect poor practical worth, an unclear instruction, missing access, lack of ability or selection of a different practice. An absent result alone leaves the cause open.
 
-If the method's worth is unresolved, use STR.13. If a description or source use is the issue, repair that contribution under its direct guidance. If time, capability or organizational support is missing, obtain the contribution rather than assuming that another message about values will supply it.
+Use STR.13 for an open question about a method’s worth. If an intervention is requested, direct the work to the condition that needs to change, such as an ambiguous instruction, a time or access restriction, or a missing capability. Use an existing adequate result or identify the contribution still needed from the relevant practice.
 
 A sufficient account can justify continuation. An independently adequate archive can remain useful even while the meeting's recognition practice needs attention.
 
 #### STR.15:4.4 - Compare feasible ways to influence the named relation
 
-Compare keeping the arrangement, a narrow change, a branch for a different situation and stopping a burdensome intervention where those are meaningful alternatives. Name the relation each proposal would change and the work required to change it.
+When a response is requested, compare feasible alternatives that bear on the question. They may include retaining the arrangement, a narrow change, a branch for different conditions or stopping a burdensome intervention. Identify the relation each change could affect and the work and authority it would require.
 
-Possible actions include demonstrating how a qualified rival changes a real decision, preserving an objection with its receiving premise, changing discussion time, improving access to relevant reasoning, or changing what a decision holder explicitly recognizes. These are possibilities, not a standard programme.
+Possible changes include demonstrating how a serious alternative affects a decision, retaining an objection with the premise it challenges, allowing more discussion time, making reasoning accessible, or changing which contributions the decision holder recognizes. Select changes by the relation the inquiry established.
 
-For each proposal compare its attainable contribution, evidence, whole cost, delay, participant burden, exposure, displaced work and reversibility. Include the effort of designing the intervention before treating it as a freely available option. Further observation is selected under C.11.DUA only when it can improve the receiving decision enough to warrant that burden.
+Compare each proposal’s attainable contribution, evidence, full cost, delay, participant effort, exposure, displaced work and reversibility. Include the work of designing the intervention. Use C.11.DUA when further observation could improve the requested account or choice enough to justify its burden.
 
-Establish the actual authority, participation, access and protection needed for a chosen intervention. A strategy team does not gain permission to alter employment recognition, disclose private discussions or impose extra participant work merely by naming culture as the subject. Use the applicable domain conditions.
+For a chosen intervention, establish the authority, participation, access and protection it requires. Changing employment recognition, disclosing private discussions or allocating extra participant time may each depend on a different permission or holder.
 
 #### STR.15:4.5 - Separate authorization, performance and observed change
 
-State what is proposed or authorized, who will do what within which scope, the expected effect and what would support, narrow or defeat that expectation. Use the direct organization-change and learning Methods for their actual work when needed.
+For an intervention, state what is proposed or authorized, who will perform each part and within what scope, the expected contribution, and which observations would support, narrow or overturn that expectation. Use organization-change or learning methods when their results are needed to carry it out.
 
-Later, recover what was performed separately from what changed in transmission, recognition, selection or retention. A revised agenda is an artifact change. Actual use of the new discussion arrangement is a further claim. Continued use across later decisions, and an effect on decision quality, require their own support.
+When examining what followed, establish separately what work occurred and what changed in transmission, recognition, selection or retention. A revised agenda establishes a change in the document. Evidence from a meeting can establish whether people used the new arrangement. Continued use and an effect on decision quality require evidence suited to those claims.
 
-Observe the decisive relation at a proportionate scope and time. Record missing observation as a limit, not as success. Compare the current result with the expected contribution and serious rival; a disappointing result can justify changing or stopping the intervention while retaining useful independent practice.
+Use appropriate evidence of the relation in the relevant period, including suitable observations already available. Where essential evidence is missing, state the resulting limit. For an intervention, compare what occurred with the expected contribution and any serious alternative explanation. An adverse result can justify changing or stopping it while retaining independently useful practice.
 
-Do not infer that distributed cultural change is controlled by one project. Participants can adapt, reject or carry a practice elsewhere under conditions outside the intervention's scope.
+Participants may adapt, reject or transmit a practice beyond the scope of a particular project. Investigate those changes where the requested account includes them.
 
 #### STR.15:4.6 - Preserve what the next use needs and close
 
-Return the bounded current account, supported continuation or change, material uncertainty and next action or stop. Keep the evidence and scope needed to distinguish the practice from its carrier, the intervention from its effect and a local result from a broader claim.
+Return the supported account, its period, evidence and material limits. If a choice or proposal was requested, state which practice to continue or change, or what still prevents that decision. Preserve the grounds needed to distinguish the practice from its carrier and a performed intervention from its consequences.
 
-Use existing ordinary records where they suffice. A C.36 case or intervention card is useful when the receiving work needs those several claims kept together; it is not mandatory for every conversation.
+Use existing records where they suffice. A C.36 case or intervention card can help when several claims and their grounds must remain available together.
 
-Retain the reasons and conditions that future users need, including useful criticisms and alternatives. State when a changed population, source, tool, recognition practice or observed use would require reconsideration. Close the present question.
+Retain reasons, criticisms and alternatives that matter to the next use. Where later reliance is expected, identify a change in population, source, tool, recognition or observed use that would warrant reconsidering the conclusion.
 
 ### STR.15:5 - Archetypal Grounding
 
-The following observations are supplied within constructed teaching cases, not empirical findings about an actual organization.
+The following cases use stipulated observations to illustrate the conclusions those observations support.
 
 #### STR.15:5.1 - SensorCo has memory but conflicting recognition
 
 Consider SensorCo's strategy team and Board in its main office during the first quarter. For this exercise, materials from two successive decision discussions show that analysts preserve rejected directions and their reasons. The Board receives qualified uncertainty statements, including the distinction between interest from six customers and a supported sales forecast.
 
-The same supplied account shows the chair praising confident sales numbers while the next discussion omits the unresolved travel and incident costs. The supported claim concerns these discussions and their materials. It does not establish the practice of every department or the cause of future commercial performance.
+The chair praises confident sales numbers, and the next discussion omits unresolved travel and incident costs. The meeting evidence covers those two discussions and their materials. A claim about every department or about future commercial performance would need a different basis.
 
-The team can now distinguish useful retention from the recognition and later selection problem. Replacing the archive is not the obvious remedy: it already preserves the alternatives. Issuing another scenario template also leaves the chair's treatment of unsupported certainty unchanged.
+The archive retained the alternatives. The omission occurred in the discussion and its use by the decision makers. Replacing the archive or issuing another template would leave the chair’s response to unsupported certainty unaddressed.
 
 Compare three responses. Keep the useful archive and current discussion arrangement; add a template reminder; or change the decision discussion so the chair asks which qualified premise supports the preferred commitment and which serious rival remains. The third directly addresses the observed omission, while requiring discussion time and an authorized change in how contributions are considered.
 
 Suppose the Board chooses that bounded change for its next two strategy discussions. The chair will invite a qualified uncertainty statement, retain a material counterargument with its receiving decision, and recognize a useful correction rather than a confident number alone.
 
-Before use, establish the time, participation and permitted handling of discussion material. The proposed observation asks whether the relevant premise and rival actually reach the next decision and how they are treated. It does not count template completion as enactment.
+Before the change is used, establish the time, participation and permitted handling of the discussion material. To assess its use, look for the qualified premise and serious alternative in the next decision and examine how the participants treated them. The completed template can supply evidence about the document.
 
-At this point the completed result is a scoped account and an authorized plan for a bounded change. No later improvement is yet claimed. If the arrangement is actually used, its occurrence can support that local use; persistence or improved strategy needs additional qualified evidence. The existing archive can remain unchanged throughout.
+At this point the evidence supports a scoped account and the board’s authorization for two discussions. Later observations could establish that the arrangement was used, that use persisted, or that it improved a decision. Each claim needs the corresponding evidence. The archive can continue to serve its earlier use.
 
 Consider a separate constructed continuation after those two meetings. The supplied observations show the chair requesting qualified premises and the analysts stating the unresolved incident-cost question in both discussions. Each meeting preserves the cost objection with its receiving decision, and the chair explicitly recognizes the analysts' correction. In the subsequent commitment discussion, however, that premise is neither brought forward nor answered. The arrangement was used, but the expected carry-through to commitment failed in this case.
 
-The Board stops extending this intervention in its present form and returns the specific loss between discussion and commitment preparation for redesign. The useful archive, original scoped account and actual use of the arrangement remain supported. This local failure does not establish failure of the whole culture or a causal effect on commercial performance; the Board retains the commitment decision.
+The board stops extending the intervention in its present form. It asks for a way to carry the objection from discussion into commitment preparation. The archive preserved the reason, and both meetings used the new arrangement. The later loss concerns this commitment. The board retains authority for the commitment decision, and the example supplies no causal finding about commercial performance.
 
 #### STR.15:5.2 - Continuation is enough
 
 In a different team, a qualified account of the recent review window shows experienced members demonstrating how to challenge a proposal, newcomers using that distinction in later discussions, and decision holders retaining the relevant objections with their response.
 
-For the present question, no material loss or unsupported extension is identified. The steward can continue the arrangement and preserve the accessible examples. The account supports that bounded continuation, not universal superiority of the method. A new workshop or culture experiment is unnecessary unless it can change a subsequent decision.
+For the present question, the evidence identifies no material loss or use beyond its grounds. The steward can continue the arrangement and retain the accessible examples. A new workshop or study would need an attainable contribution worth its cost for a further question.
 
 #### STR.15:5.3 - Better access is not automatic transmission
 
 A team moves an old strategic-method example into an easily found shared collection. That establishes a change in the example's availability under the supplied access conditions.
 
-If nobody has yet retrieved or used it, the maintainer cannot claim that the practice has spread. A new reader may still need the example's old horizon, customer conditions and permission limits. Improving retrieval, qualifying current reliance and learning to enact the method are separate possible contributions.
+To establish that the example reached another practitioner or influenced their work, look for evidence of retrieval, transmission or use. The old horizon, customer conditions and permissions may affect what the new reader can rely on. Improving access, assessing current applicability and developing ability to use the method are separate tasks.
 
 The useful immediate result may be the accessible, qualified example. A claim about actual transmission or cultural persistence can remain unresolved without blocking that result.
 
@@ -146,14 +146,14 @@ The useful immediate result may be the accessible, qualified example. A claim ab
 
 Senior participants may mistake their own view for the whole organization's practice. Recover the scope and basis of each claim, including material differences between official accounts and observed use.
 
-Visibility and confidence can be mistaken for worth. Preserve qualified criticism without presuming that every dissent is useful or that popularity is neutral evidence of contribution. Participants' burden and privacy also matter to any proposed observation or intervention.
+Recover the grounds for any claim of worth based on criticism, visibility or confidence. Consider participant effort and privacy when proposing an observation or intervention.
 
 ### STR.15:7 - Conformance Checklist
 
 - The practice variant, population, organization or community, place and period are bounded.
-- Actual cultural relations have a qualified basis; prospective claims remain prospective.
-- Transmission, enactment, recognition, selection, memory and loss are not collapsed.
-- The specific continuation or change question has a serious alternative.
+- State the grounds for claims about what happened. Identify proposed changes and expectations as such.
+- Identify which relations the account establishes, such as transmission, enactment, recognition, selection, memory or loss.
+- Where a continuation or change is being considered, compare it with any serious alternative relevant to the choice.
 - Method worth, description, access, capability and cultural questions retain their different results.
 - A proposed intervention accounts for whole burden, authority and participant conditions.
 - Authorization, performance, local change, persistence and causal effect remain distinct.
@@ -166,39 +166,39 @@ Visibility and confidence can be mistaken for worth. Preserve qualified criticis
 
 **Archive equals adoption.** A stored example is counted as a changed practice. Separate availability, retrieval, reliance and actual use.
 
-**Training repairs everything.** Non-use is diagnosed as missing skill without inspecting time, permission, worth or recognition. Obtain the specific missing contribution.
+**Training repairs everything.** Non-use is diagnosed as missing skill without inspecting time, permission, worth or recognition. Establish which condition accounts for non-use, or retain the unresolved explanations. Obtain the missing contribution when action to change it is needed.
 
-**Intervention equals effect.** Completing a new agenda or workshop proves cultural change. Observe the named relation at its supported scope.
+**Intervention equals effect.** Treating a new agenda or a completed workshop as proof of cultural change skips the change in practice. Use suitable evidence about the named relation, obtaining a further observation where it is necessary and attainable.
 
 **One owner for evolution.** A project claims control over all later adaptations. Bound the deliberate intervention and separately describe distributed continuation or loss.
 
 ### STR.15:9 - Consequences
 
-Practitioners can preserve a useful strategic practice and influence a concrete failure without treating culture as either an intangible slogan or a fully controllable system. The account makes it possible to keep a good archive while changing a harmful selection practice.
+Practitioners can identify where a strategic practice was preserved and where it was lost. They can keep a useful archive while proposing a change to a meeting that overlooks documented objections.
 
-The method can expose that the evidence supports only a local account or a proposed intervention. That limit preserves useful immediate results while preventing premature claims about adoption, persistence or improved strategic performance.
+The evidence may support a local account or an authorized intervention before adoption, persistence or improved performance can be established. A recipient can use the supported result and its limits.
 
 ### STR.15:10 - Rationale
 
-Strategic practice continues through relations among people, work, descriptions, means and decisions. Those relations can vary independently: a method can be remembered but not used, used but not recognized, or recognized without adequate evidence.
+Strategic practices continue through exchanges among participants, use of tools and descriptions, and decisions about which contributions to retain. A method can be remembered without being used, used without being recognized, or praised on inadequate grounds.
 
-Deliberate influence is most useful when it targets the actual relation and respects its conditions. Keeping continuation, intervention and observed effect separate makes learning possible without requiring every cultural question to become a new programme.
+A project can influence a cultural relation when it can change a condition of that relation, such as the time or authority for considering an objection. Evidence of the intervention and its effects can then inform a later decision. An account of the earlier practice remains useful on its own.
 
 ### STR.15:11 - SoTA-Echoing
 
-**What is the useful unit of a strategy-culture question?** Adopt C.36's current relation-based cultural account rather than a vocabulary survey or a single culture score. Sections 4.1–4.3 distinguish variation, transmission, enactment, recognition, selection and memory only where they change the answer. C.36's contemporary cultural-evolution synthesis also keeps mediating systems and their selection effects visible; using a platform does not itself establish a cultural result.
+**Which cultural relation answers the strategic question?** C.36 distinguishes generation, transmission, enactment, recognition, selection and memory. Sections 4.1–4.3 use the relations needed to establish the requested conclusion. C.36 also identifies how mediating systems can affect selection. Trace the participants, exchanges or selections that bear on the claimed result. Where a platform mediates the practice, establish what it made available and how its operation affected the relevant relation.
 
-The pattern addresses loss of reasoning, alternatives and criticism between people and tools because it can alter strategic practice. Sections 4.3, 4.6 and case 5.1 explain that contribution. The serious alternative is preserving the current arrangement or repairing access or description when that is the actual gap, rather than launching a broad culture programme.
+The handoff of reasoning, alternatives and criticism can change what reaches a strategic decision. Sections 4.3 and 4.6 and the SensorCo example show how to find the relation that failed. Keeping the current arrangement, repairing access or clarifying an instruction can each be sufficient under the appropriate conditions.
 
-**What can a deliberate intervention establish?** Keep C.36's distinction between project choice and distributed cultural change. Sections 4.4–4.5 require separate support for performance, changed relations, persistence and effects. This guidance informs the account and intervention question; it does not empirically validate SensorCo's proposed discussion change. Reopen the bounded conclusion when the population, receiving use, recognition arrangement, source conditions or observed continuation materially changes.
+**What can an intervention establish?** C.36 distinguishes a project’s choice from the wider evolution of a practice. Sections 4.4–4.5 connect claims about performance, changed relations, persistence and effects to their own evidence. The observations in SensorCo are stipulated. Reconsider a conclusion when a change in the population, receiving use, recognition, source or observed continuation affects its grounds.
 
 ### STR.15:12 - Relations
 
 - **C.36** supplies the cultural-evolution account and deliberate-influence distinctions.
-- **STR.13** compares strategic-method worth and maintains the usable repertoire; an adequate method does not establish its cultural use.
-- **STR.11, STR.12 and STR.14** supply actual commitment, follow-up and simultaneous-work conditions that can influence strategic practice.
+- **STR.13** compares the practical worth of a strategic method and maintains its place in a repertoire. STR.15 investigates the use and continuation of the practice.
+- **STR.11, STR.12 and STR.14** describe ways to establish commitments, follow-up and simultaneous-work conditions that can influence strategic practice.
 - **OCE and HCD** retain actual organization-change and human-capability contributions when selected.
 - **A.10 and A.10.1** govern current reliance on retained or changed sources where needed.
-- **C.11.DUA** governs further inquiry by attainable decision usefulness and whole burden; direct evidence, Work, measurement and causal patterns govern the stronger claims that actually arise.
+- **C.11.DUA** weighs the attainable contribution and full burden of further inquiry. Use the relevant evidence, Work, measurement or causal method when the intended claim needs it.
 
 ### STR.15:End

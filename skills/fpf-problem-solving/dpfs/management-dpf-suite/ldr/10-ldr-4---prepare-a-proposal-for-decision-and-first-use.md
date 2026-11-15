@@ -10,7 +10,7 @@ Begin with the receiving work and the result the proposal is meant to improve. I
 
 R10 calls this preparation “propitka” (soaking), comparing it to a sponge taking up water: knowledge about the proposed change spreads through people’s conversations. The practical work is to make the proposal understandable through explanation, advice and revision. Here it is not a campaign to suppress objections. A real disadvantage, inadequate basis or unavailable resource can warrant a changed proposal, refusal or deferral.
 
-A familiar, adequately prepared and authorized action can proceed directly. No compulsory campaign, launch ceremony or fixed waiting period is added.
+A familiar action can start as soon as it has adequate preparation and authorization.
 
 ### LDR.4:2 - Problem
 
@@ -22,7 +22,7 @@ Even a well-understood proposal can stop before performance. Support may remain 
 
 Thorough preparation can prevent a costly false start, but endless consultation can consume the opportunity. A usable explanation may need to travel beyond the people already known to the organizer. Its reach and the effort of answering questions should fit the change and its consequences; preparation need not identify every informal adviser.
 
-The technical result, distribution of benefits and burdens, and effective authority interact. Discussing titles too early can distract from the work; postponing capability and authority too long can make an attractive proposal impossible.
+The technical result, distribution of benefits and burdens, and effective authority interact. Discussing titles too early can distract from the work; checking capability or authority too late can make an attractive proposal impossible.
 
 Participants need enough mutual visibility to rely on one another's contributions. That does not require pretending that everyone is enthusiastic or that every uncertainty has disappeared.
 
@@ -32,9 +32,9 @@ A first assisted success can justify bounded continuation while still depending 
 
 #### LDR.4:4.1 - Make the receiving work and proposed change examinable
 
-Recover the result someone will actually receive and use. Describe how the proposal produces it: the work products, operations, producer and receiver, tools, access, help and conditions needed. Compare a representative task under the present arrangement and the proposed one.
+Recover the result someone will receive and use. Describe how the proposal produces it: the work products, operations, producer and receiver, tools, access, help and conditions needed. Compare a representative task under the present arrangement and the proposed one.
 
-A new form, meeting or role is useful only through a contribution. Ask what becomes possible or improves for the receiver. If an existing arrangement already supplies the same result at acceptable effort, retain it. If the proposal concerns continuing development, obtain its actual problem, worthwhile challenge and transition from the development methods; a proposal to adopt a familiar practice does not constitute that whole development process.
+A new form, meeting or role is useful only through a contribution. Ask what becomes possible or improves for the receiver. If an existing arrangement supplies the same result at acceptable effort, retain it. If the proposal concerns continuing development, obtain its actual problem, worthwhile challenge and transition from the development methods; a proposal to adopt a familiar practice does not constitute that whole development process.
 
 Locate the first useful result and the authority needed to attempt it. A permitted trial, assisted handover or narrow use may be appropriate. An urgent production episode is not automatically a suitable learning trial. The direct domain method establishes the task's acceptance and risk conditions.
 
@@ -83,15 +83,15 @@ Revise the whole proposal after a consequential answer. Removing an unnecessary 
 
 Compare further inquiry with its attainable decision value. A small test can be worthwhile if its result changes an expensive irreversible commitment. Repeating a familiar explanation to an informed person who legitimately declines supplies no new basis. A required unresolved condition remains a blocker; a non-blocking uncertainty remains a stated limit or observation for the authorized use.
 
-The proposal need not end in consensus. Distinguish a participant's informed refusal, a decision made under a valid non-consensual rule, an unanswered concern and a matter resolved by evidence. Preserve each where it changes reliance. A proposal that is understood can still be a bad or unacceptable proposal.
+The proposal need not end in consensus. Distinguish a participant's informed refusal, a decision made under a valid non-consensual rule, an unanswered concern and a matter resolved by evidence. Preserve each where it changes reliance.
 
 #### LDR.4:4.5 - Obtain an effective decision and actual commitments
 
-Identify the acts needed to begin: permission for preparation or a trial, allocation of time, access, funding, provider agreement, assignment and any domain decision. Determine who can perform each act and what makes it effective. Use a sufficient existing delegation; do not send every routine action to the highest authority.
+Identify the acts needed to begin: permission for preparation or a trial, allocation of time, access, funding, provider agreement, assignment and any domain decision. Determine who can perform each act and what makes it effective. Use an existing delegation when it covers the action.
 
 In a corporation, CGOV.3 resolves the power and its limits and CGOV.11 supplies the decision procedure and usable result. Within an organizational assignment, OCE.6 supplies enabling relations. In a community, the relevant participant agreement or governing rule supplies the basis. Leadership preparation does not replace any of these acts.
 
-Distinguish who organizes the proposed change from who operates and receives the resulting work. They can be one person, but their contributions differ. For example, a development coordinator may arrange the new review service while a reviewer remains responsible for receiving and judging each package.
+Distinguish who organizes the proposed change from who operates and receives the resulting work. One participant can do both jobs. For example, a development coordinator may arrange the new review service while a reviewer remains responsible for receiving and judging each package.
 
 Obtain commitments to the same complete proposal and retain outstanding conditions. “I support this if someone funds it” is not a funded contribution. A volunteer's required contribution remains unavailable after refusal until an alternative is actually obtained. An authorized manager's decision can allocate work within its power; that does not imply the worker agrees with every rationale or that another unit's resources are committed.
 
@@ -115,7 +115,7 @@ Put the actual product, access, means and capable help in place. Perform the wor
 
 A checklist can help attention when its questions are tied to the occasion and change what the performer does. C.41.OF supplies that fit. The performer still needs the method and competence to answer the questions. If “configuration checked” exposes an unsupported old test, obtain the needed applicability judgement or corrected contribution; a tick does not repair the ground.
 
-Retain assistance that the first use actually needs. If a colleague supplies the decisive interpretation, report an assisted result and arrange the next use accordingly. The first result can be useful without establishing independent capability.
+Retain assistance that the first use needs. If a colleague supplies the decisive interpretation, report an assisted result and arrange the next use accordingly. The first result can be useful without establishing independent capability.
 
 When the first attempt fails, distinguish the missing explanation, method, capability, tool, access, arrangement or authority. Return to its direct supplier. A revised announcement helps only if communication was the missing operation. A new calculation, support allocation or permission needs its own work and conditions.
 
@@ -139,7 +139,7 @@ Establish the agent's actual remit. It may have authority to reserve a resource 
 
 Apply C.11.DUA to setup, qualification, access, communication, compute, exception handling, maintenance and receiver burden. If a human review supplies a required independent judgement, include it as a constrained resource. If it adds no needed guarantee under the effective arrangement, compare removing it rather than crediting an efficiency that cannot be realized.
 
-Conditional strong-AI scenarios show how the method adapts when competence and cost change. A changed capability claim or new failure reopens the affected arrangement.
+Reconsider the affected arrangement if the agent’s qualified capabilities or costs change, or a new failure occurs.
 
 ### LDR.4:5 - Archetypal Grounding
 
@@ -181,7 +181,7 @@ If access alone fails, restore access before the dependent check. If an autonomo
 
 Suppose a volunteer reading group already agrees on the next session's subject, a capable participant has offered to explain it, the permitted materials are available and the host has confirmed the room. A short shared message identifies the same time and contributions.
 
-The group can hold the session. It need not discover informal advisers, create a checklist or convene a launch event. If a later objection reveals that the selected material excludes an intended participant, examine that actual consequence and revise the affected arrangement. The method's longer branches become useful only then.
+The group can hold the session on those arrangements. If a later objection reveals that the selected material excludes an intended participant, examine that actual consequence and revise the affected arrangement. The method's longer branches become useful only then.
 
 #### LDR.4:5.5 - Make a first contribution easier, then return to the larger decision
 
@@ -189,7 +189,7 @@ Suppose a support receiver needs the issues belonging to one customer case to ch
 
 They instead use IS.3 to prepare a saved query over the existing issue tracker and arrange help for the first use. The practitioner checks its results for irrelevant or missing issues; the support receiver uses the corrected view to choose the next response. The invitation arrives when the prepared query, source access and helper are available. This permitted attempt requires no decision to replace every team's existing arrangement. Its cost includes preparing and maintaining the query, the practitioner's checking and the receiver's interpretation.
 
-Participants can now discuss the contribution they actually tried. If collecting the case is cheaper and the receiver can act on it, that supplies a concrete answer to part of the earlier concern. A recurring maintenance burden or another team's loss can still change the larger proposal. They take these findings to the people whose advice or commitment is needed and decide which further preparation matters.
+Participants can now discuss the contribution they tried. If collecting the case is cheaper and the receiver can act on it, that supplies a concrete answer to part of the earlier concern. A recurring maintenance burden or another team's loss can still change the larger proposal. They take these findings to the people whose advice or commitment is needed and decide which further preparation matters.
 
 Change the task: the receiver needs to know what an R&D unit produces for use or sale, but participants list installed software systems without identifying what the unit delivers or who uses it. Faster entry leaves the receiving question unanswered. A qualified contributor works through one actual product and its use with them. Likewise, when a planning view depends on a hierarchy they cannot construct, jointly build the needed part of the model or obtain that contribution from a capable provider. Select learning practice separately when their independent capability is wanted. These different repairs follow the missing operation in the first use, rather than treating every delay as a need for more persuasion.
 
@@ -199,7 +199,7 @@ Suppose two plants propose replacing a maintenance handover spreadsheet with a c
 
 A shift lead forwards it to a trusted former maintenance colleague whom the organizer has never met. That colleague asks how a technician borrowed from a partner for a night shift would open the service record. They have seen an introduction fail because temporary staff retained partner accounts. The explanation has reached an unanticipated adviser, and the question returns through the contact supplied with it.
 
-The organizer checks a representative night-shift handover with the actual receiver and access provider. In this case the temporary account cannot open the necessary record. The earlier claim that the new arrangement covers both shifts is therefore unsupported. The provider can supply appropriately limited access before the proposed trial; the shift lead obtains the required allocation and the receiver checks that the record can actually be used. If access could not be supplied, this part of the proposal would need a different arrangement or a deferred start.
+The organizer checks a representative night-shift handover with the actual receiver and access provider. In this case the temporary account cannot open the necessary record. The earlier claim that the new arrangement covers both shifts is therefore unsupported. The provider can supply appropriately limited access before the proposed trial; the shift lead obtains the required allocation and the receiver checks that the record can be used. If access could not be supplied, this part of the proposal would need a different arrangement or a deferred start.
 
 The organizer revises the proposed access arrangement and the example, updates the places where the explanation is obtained, and tells the affected leads and partners what changed and why. The shift lead can return the answer to the former colleague. The authorized participants then commit to one supported night-shift handover. Its receiving technician uses the applicable record; subsequent adoption depends on the further work it requires.
 
@@ -223,7 +223,7 @@ A conforming use makes the following recoverable where they affect the proposal:
 - the performed first contribution and the receiver's use, including retained assistance;
 - the next warranted continuation and the question reopened by a changed condition.
 
-A routine prepared action does not acquire these as additional reports or meetings.
+For a prepared routine action, use the terms and working arrangements already in place.
 
 ### LDR.4:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -238,7 +238,7 @@ A routine prepared action does not acquire these as additional reports or meetin
 
 ### LDR.4:9 - Consequences
 
-Preparation can reveal hidden advice, real costs and missing conditions before they defeat the first use. Participants can rely on an actual supported start, and failure of the first attempt has a substantive return rather than a demand for more enthusiasm.
+Preparation can reveal hidden advice, real costs and missing conditions before they defeat the first use. Participants can rely on an actual supported start, and a failed first attempt can reveal which contribution still needs work.
 
 The work takes time and can change or stop a favoured proposal. There is no fixed duration or guarantee that everyone will agree. The method preserves useful preparation after a blocked start while refusing to count it as performance.
 
@@ -252,7 +252,7 @@ The sequence is conditional rather than a universal meeting order. New evidence 
 
 The practice question is how a proposal becomes a supported first contribution. The selected line combines developed proposal preparation with direct substantive, agreement and authority methods, then follows actual use. A serious alternative is competent ordinary coordination already containing these contributions. Use it directly; the pattern adds value only where the connection is missing.
 
-**Adapt** R10 *Systems Management*, the sections «Рабочие продукты и корпоративные ритуалы как видимая форма оргизменений» (work products and corporate rituals as visible forms of organizational change) and «Шаг развития: постановка оргвозможности» (a development step: establishing an organizational capability), using the latter's preparation and decision passages: trusted advice outside the formal project, including from people not identified in advance; an explanation available beyond formal approvers; examinable consequences; a mutually understood start; and visible work products in first use. LDR.4:4.2 develops the means of making that explanation available, receiving questions and revising its grounds. These are practitioner source contributions, developed here in LDR.4:4.1–LDR.4:4.8 and the constructed cases. **Reject** universal minimum durations, blanket assurances of safety, exhaustive influence-network discovery, automatic attribution of non-use to sabotage, and suppression of newly surfaced concerns at launch. The source provides conceptual and methodological material, not empirical validation of this pattern.
+**Adapt** R10 *Systems Management*, the sections “Work Products and Corporate Rituals as Visible Forms of Organizational Change” and “A Development Step in Establishing an Organizational Capability”, using the latter's preparation and decision passages: trusted advice outside the formal project, including from people not identified in advance; an explanation available beyond formal approvers; examinable consequences; a mutually understood start; and visible work products in first use. LDR.4:4.2 develops the means of making that explanation available, receiving questions and revising its grounds. These are practitioner source contributions, developed here in LDR.4:4.1–LDR.4:4.8 and the constructed cases. **Reject** universal minimum durations, blanket assurances of safety, exhaustive influence-network discovery, automatic attribution of non-use to sabotage, and suppression of newly surfaced concerns at launch. The source provides conceptual and methodological material, not empirical validation of this pattern.
 
 **Adapt** the current CFIR [Opinion Leaders](https://cfirguide.org/constructs/opinion-leaders) account as a cue for relevant informal judgement. It reports heterogeneous influence and mixed effects, so it supplies no guarantee that involving an influential person creates acceptance. LDR.4:4.2 asks whose judgement changes this decision and preserves the separate authority and consent relations.
 
@@ -260,13 +260,13 @@ AHRQ's [brief](https://www.ahrq.gov/teamstepps-program/curriculum/team/tools/bri
 
 **Adapt** the [Fogg Behavior Model](https://behaviordesign.stanford.edu/resources/fogg-behavior-model) distinction between motivation, the ease of the action and a timely prompt. It directs attention to the action's burden and occasion when another explanation has not led to use. Here the supported action must still produce a contribution for its receiver; the first attempt then informs preparation of a larger decision. The model supplies this design comparison, not a probability estimate or evidence that easier first use resolves concerns about the larger commitment.
 
-The added preparation is justified when it can change feasibility, acceptance, authority or first use. Its accepted cost includes advice, inquiry, revision and delay. Reopen the comparison when a simpler arrangement supplies the same result, a concern remains unresolved, a relied-on contribution changes, or stronger evidence alters which preparation is useful. Conditional examples support the construction, not a causal claim of reduced resistance.
+The added preparation is justified when it can change feasibility, acceptance, authority or first use. Its accepted cost includes advice, inquiry, revision and delay. Reopen the comparison when a simpler arrangement supplies the same result, a concern remains unresolved, a relied-on contribution changes, or stronger evidence alters which preparation is useful.
 
 ### LDR.4:12 - Relations
 
-B.5.SD supplies the substantive answer to an objection; LDR.2 obtains compatible accepted contributions; LDR.1 obtains capable help and later continuation. These are independent methods with direct entry, not hidden stages of a persuasion programme.
+B.5.SD supplies the substantive answer to an objection; LDR.2 obtains compatible accepted contributions; LDR.1 obtains capable help and later continuation. Each method can be used directly when its result is needed.
 
-[Corporate Governance (CGOV)](../cgov/_index.md), through CGOV.3 and CGOV.11, supplies effective corporate power and decisions. OCE.6 supplies organizational enabling relations; OCE.7 coordinates product and organization choices; OCE.9–OCE.11 supply organizational capability, participation, and reconciliation of change with continuing service. [OCE.18](../oce/34-oce-18---arrange-capability-development-and-receiving-work-i.md) supplies the complete career-to-work connection.
+[Corporate Governance (CGOV)](../cgov/_index.md), through CGOV.3 and CGOV.11, guides participants in identifying who holds the relevant decision power and what act makes a corporate decision effective. OCE.6 supplies organizational enabling relations; OCE.7 coordinates product and organization choices; OCE.9–OCE.11 supply organizational capability, participation, and reconciliation of change with continuing service. [OCE.18](../oce/34-oce-18---arrange-capability-development-and-receiving-work-i.md) supplies the complete career-to-work connection.
 
 [FPF C.41.OF](../../../sections/09-part-c---kernel-extension-specifications/122-c-41-of---fit-a-checklist-to-its-occasion-of-use.md) fits an execution aid to the actual occasion. The domain method still produces and judges the work. C.11.DUA appraises further preparation and inquiry. C.36 qualifies cultural-continuation claims; C.36.RP explains how to keep the practice's methods obtainable by later participants. The development practice owns the next worthwhile challenge after success.
 

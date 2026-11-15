@@ -5,15 +5,15 @@
 
 ### CB.11:1 - Problem frame
 
-Use this pattern when the purpose, people or support of a cultural or community arrangement changes enough that its continuation needs a decision. A founder is leaving, a sponsor withdraws a platform, participants need different forms of participation, or the useful work has largely been completed.
+Use this pattern when the purpose, participants or support of a cultural or community arrangement changes enough that its continuation needs a decision. A founder is leaving, a sponsor withdraws a platform, participants need different forms of participation, or the useful work has largely been completed.
 
-The subject is the arrangement that people can actually use: its activities, relationships, organising work, resources and commitments. The move is to choose a feasible continuation or ending, carry the useful contributions into the chosen arrangement, and settle what will no longer be provided. The wider cultural practice can continue among independent carriers even when an organised activity ends.
+The subject is the arrangement available to its users. It includes activities, relationships, organising work, resources and commitments. Choose a feasible continuation or ending, carry the useful contributions into the chosen arrangement, and settle what will no longer be provided. The wider cultural practice can continue among independent carriers even when an organised activity ends.
 
 The first useful result is an agreed continuation or ending, with the provision and remaining actions needed to carry it out. Where implementation is part of the work, the result includes receiving use under the new arrangement and settlement of the old commitments. An announcement or copied archive alone establishes neither.
 
-The intended user is an organiser, a person taking over a contribution, or someone who can obtain the relevant decisions from participants and resource owners. They need access to the commitments and means of work that the change affects.
+Use this method if you organise the activity, are taking over a contribution or can obtain the relevant decisions from participants and resource owners. You need access to the commitments and means of work that the change affects.
 
-**Ordinary non-use.** A continuing arrangement that remains useful and adequately provided needs no reinvention because a lifecycle diagram labels it mature. A routine rota change within effective existing terms can use those terms. Use this pattern when the change affects what people can obtain, who can provide it or which commitments remain valid.
+**Ordinary non-use.** A continuing arrangement that remains useful and adequately provided needs no reinvention because a lifecycle diagram labels it mature. The existing terms may already cover a routine change to the rota. Use this pattern when the change affects what people can obtain, who can provide it or which commitments remain valid.
 
 ### CB.11:2 - Problem
 
@@ -36,9 +36,9 @@ How can participants choose and carry out a continuation or ending that preserve
 
 ### CB.11:4 - Solution
 
-Recover what people still need and what has changed, compare feasible arrangements, obtain the decisions and provision, then perform the transfer or ending at the level of actual use.
+Determine what users still need and what has changed. Compare feasible arrangements, obtain the necessary decisions and support, and carry out the chosen change. If you report a completed transfer, show how the recipients used what they received. Settle the commitments that end or change under the chosen arrangement.
 
-**Working reminder:** locate the change; recover what remains worthwhile; choose and provide the next arrangement; test receiving use; settle the old promise.
+
 
 #### CB.11:4.1 - Identify what is changing and who can decide it
 
@@ -54,9 +54,9 @@ Respond to an immediate harmful or unsupported condition through the applicable 
 
 Use CB.10's current account or a bounded inquiry to identify what is worth continuing, what has failed and what is no longer needed. Recover the received benefit and the burden of providing it. A founder's preferred form and a sponsor's preferred metric are inputs to the choice, not a substitute for the affected uses.
 
-Follow one consequential use through its actual dependencies. A monthly case discussion can depend on a qualified facilitator, permitted case material, access to the venue and a way to return the result. A public guide can depend on a maintainer and a correction route while requiring no continuing meeting.
+Follow one consequential use through the contributions it depends on. A monthly case discussion can depend on a qualified facilitator, permitted case material, access to the venue and a way to return the result. A public guide can depend on a maintainer and a correction route while requiring no continuing meeting.
 
-Use [C.36.RP (FPF C.36.RP:4)](../../../sections/09-part-c---kernel-extension-specifications/129-c-36-rp---sustain-and-renew-shared-ways-of-working.md#c36rp4---solution) when the missing contribution concerns obtaining and using a shared way of working. It locates the gap and compares access, capable help, learning, tools and method development. Retaining a finished answer can leave its interpretation or adaptation unavailable. Obtain the contribution that the later use actually needs.
+Use [C.36.RP (FPF C.36.RP:4)](../../../sections/09-part-c---kernel-extension-specifications/129-c-36-rp---sustain-and-renew-shared-ways-of-working.md#c36rp4---solution) when the missing contribution concerns obtaining and using a shared way of working. It locates the gap and compares access, capable help, learning, tools and method development. Retaining a finished answer can leave its interpretation or adaptation unavailable. Obtain the contribution that the later use needs.
 
 Include relationships whose continuation requires willing participation. Ask who wants to remain in contact and through what arrangement. Preserve an available way to reconnect where people agree; do not treat a copied membership list as a renewed relationship.
 
@@ -64,7 +64,7 @@ Retain a worthwhile but not yet used possibility when there is a reason and prop
 
 #### CB.11:4.3 - Compare feasible continuations and endings
 
-Construct alternatives that answer the actual change. The following forms have different practical consequences:
+Construct alternatives that answer the change at hand. The following forms have different practical consequences:
 
 | Alternative | What must become true for it to work |
 | --- | --- |
@@ -85,7 +85,7 @@ When the effect is uncertain and reversal is practical, try a bounded continuati
 
 #### CB.11:4.4 - Obtain the decision and prepare its practical consequences
 
-Take each required decision through its actual authority. Obtain the resource owner's access decision, the successor's agreement and the community decision where one is required. Keep objections and accepted losses visible through CB.13. A departing volunteer may state the end of their own contribution while others decide how to replace it.
+For each required decision, identify who has authority to make it. Obtain the resource owner's access decision, the successor's agreement and the community decision where one is required. Keep objections and accepted losses visible through CB.13. A departing volunteer may state the end of their own contribution while others decide how to replace it.
 
 Translate the chosen alternative into what affected people need to do. Name the ending and starting dates, the remaining activities, how to reach the new receiver, which promises cease and where unfinished matters will go. Explain a change before users continue relying on the old offer.
 
@@ -101,7 +101,7 @@ Provide the chosen receiver with the contributions their work requires. This can
 
 Have the receiver perform the next consequential work under the new conditions. For an organiser, that could be preparing and running a meeting, responding to an access problem and returning its result. For an independent user, it could be finding the guide, applying the relevant instruction and reaching its maintained correction route.
 
-Observe the gap that the attempt reveals. A missed permission calls for an access decision; an uninterpretable method calls for explanation or learning; a defective method calls for its actual development through Core's Method-development family or the domain practice. Repair the gap and try the affected receiving use again. Keep other usable contributions available.
+Check what the attempt establishes. If a permission is missing, obtain an access decision. If the receiver cannot interpret the method, provide the explanation or learning they need. If the method is defective, develop it through Core's Method-development family or the domain practice. After a repair, try the affected use again. Keep other usable contributions available.
 
 For a platform move, obtain the applicable export, hosting and access conditions, then inspect the transferred content and a real receiving task. Navigation, links, search, contribution permissions and private material can behave differently. The practical test concerns the functions people rely on, not just the number of files copied.
 
@@ -109,15 +109,15 @@ Finish the departing contributor's responsibility at the agreed boundary. State 
 
 #### CB.11:4.6 - Settle the arrangement that is ending
 
-Review the actual remaining commitments with their receivers. Complete, transfer, cancel or renegotiate each one through the applicable arrangement. Paid bookings, promised feedback, borrowed equipment and unresolved participant matters can need different actions. A general closure announcement does not settle them.
+Review the remaining commitments with their receivers. Complete, transfer, cancel or renegotiate each one through the applicable arrangement. Paid bookings, promised feedback, borrowed equipment and unresolved participant matters can need different actions. A general closure announcement does not settle them.
 
 Decide what remains accessible and who, if anyone, maintains it. Preserve useful methods, explanations and contact routes only with the permissions and provision needed for that use. Identify obsolete guidance as such where a reader could otherwise rely on it. A maintained public resource and an unmaintained historical archive serve different purposes.
 
-Settle funds, resource access and credentials with the people who hold the corresponding authority. Follow the existing terms for unused contributions or shared property. Obtain a qualified decision where those terms are unresolved; the organiser should not invent a right to distribute or retain them.
+Settle funds, resource access and credentials with the holders of the corresponding authority. Follow the existing terms for unused contributions or shared property. Obtain a qualified decision where those terms are unresolved; the organiser should not invent a right to distribute or retain them.
 
 Tell affected people what has ended, what remains usable and where the last unresolved work belongs. A final gathering or acknowledgement can help people recognise their shared contribution when they want it. It is not a condition that someone must satisfy before leaving.
 
-Close the promised work at the scope actually achieved. An activity can end successfully after supplying its useful result. Relationships or cultural practice may continue elsewhere; say what has been arranged or observed and leave unobserved continuation open.
+Close the promised work at the scope achieved. An activity can end successfully after supplying its useful result. Relationships or cultural practice may continue elsewhere; say what has been arranged or observed and leave unobserved continuation open.
 
 #### CB.11:4.7 - Observe the chosen continuation and revise its limits
 
@@ -137,7 +137,7 @@ The group compares retaining two monthly meetings through paid coordination, red
 
 The new organisers receive the booking route, the preparation method and access to a qualified facilitator. The founder agrees two handover sessions and no continuing response duty afterward. A willing maintainer accepts the public guide under its existing reuse terms and obtains hosting that will remain available after the old platform closes. Private case discussions remain with their permitted recipients; members receive an invitation to choose the new contact route.
 
-In the first preparation attempt, the new organiser cannot obtain the room key at the required time. The workshop owner provides an actual keyholder arrangement. The organiser then prepares and runs the first reduced meeting with the facilitator, returns the discussed actions and confirms the next booking. An independent reader retrieves the transferred guide and includes the observations and prior actions in a case request. The receiving practitioner can identify the next inquiry. The reader also reaches the maintainer about a missing reference, and the maintainer corrects it.
+In the first preparation attempt, the new organiser cannot obtain the room key at the required time. The workshop owner arranges for a keyholder to let the organiser in. The organiser then prepares and runs the first reduced meeting with the facilitator, returns the discussed actions and confirms the next booking. An independent reader retrieves the transferred guide and includes the observations and prior actions in a case request. The receiving practitioner can identify the next inquiry. The reader also reaches the maintainer about a missing reference, and the maintainer corrects it.
 
 The founder settles the old platform's remaining payment and returns borrowed equipment through their owners. An unfinished participant complaint retains its agreed receiver and response date, with a contact that remains reachable after closure. Before the platform closes, its entry page and a notice to participants give the ending date, the guide's independent address and the optional new group's contact route.
 
@@ -155,7 +155,7 @@ Both later request the set for a Saturday. The informal group's booking was conf
 
 A professional discussion forum has few new questions, while a qualified guide continues to be used. A bounded CB.10 inquiry finds that several users can perform their intended work from the guide and existing professional help; they do not need regular discussion.
 
-The organiser confirms maintenance and correction support for the guide, settles open forum questions and announces the end of new posts. One later independent user retrieves the guide and obtains a correction through the retained contact. The organised discussion has ended, while that means of using the practice remains available. Independent users continue through the guide and the professional help they can already obtain.
+The organiser confirms maintenance and correction support for the guide, settles open forum questions and announces the end of new posts. One later independent user retrieves the guide and obtains a correction through the retained contact. The organised discussion has ended. Independent users retain the guide, its correction route and the professional help already available to them.
 
 #### CB.11:5.4 - A pause that does not promise an unavailable service
 
@@ -218,11 +218,11 @@ The comparison concerns the work needed to carry a useful contribution through c
 | Source or approach | Adopt, adapt or reject by value | Trade-off and limit |
 | --- | --- | --- |
 | Spinks, *The Business of Belonging* (2021), physical PDF pp.68–76 | Adapt the recognition that growing diversity can justify local groups, distributed responsibility and changed support. | Treat the tree/lifecycle account as a historical organising heuristic. Reject mandatory growth, a fixed progression or the assumption that every group should remain under one umbrella. |
-| Wenger-Trayner et al., *Communities of Practice within and across organizations*, second edition (2023), printed pp.118–119 and 125–128 | Adapt attention to relationships and the wider context, and the choice of development that members actually need. | Stronger identity or external alignment can help particular uses while creating burdens or exclusion. Neither is an obligatory maturity destination. |
+| Wenger-Trayner et al., *Communities of Practice within and across organizations*, second edition (2023), printed pp.118–119 and 125–128 | Adapt attention to relationships and the wider context, and the choice of development that members need. | Stronger identity or external alignment can help particular uses while creating burdens or exclusion. Neither is an obligatory maturity destination. |
 | C.36 and C.36.RP | Adopt the distinction between the availability of a result and the means to obtain, interpret and adapt a practice; use a receiving task to expose a missing contribution. | This can require explanation, learning or a different provider. A copied archive is cheaper but may leave the needed work unavailable. Later cultural persistence remains a separate evidence question. |
-| ECO.7, ECO.9, OCE.14, CB.7, CB.9 and CB.13 | Use actual resource rules, organisational revision, willing succession, provision and mandate where the transition depends on them. | A supported handover can be small; a change of shared economic rules needs its wider dependencies addressed. |
+| ECO.7, ECO.9, OCE.14, CB.7, CB.9 and CB.13 | Use the applicable resource rules, organisational revision, willing succession, provision and mandate where the transition depends on them. | A supported handover can be small; a change of shared economic rules needs its wider dependencies addressed. |
 
-Guidebook source: [second-edition text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf), published at the 2024 URL, under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). The treatment here analytically adapts its distinctions; the cases are constructed and do not imply endorsement by the source authors.
+Guidebook source: [second-edition text](https://www.wenger-trayner.com/wp-content/uploads/2024/03/24-02-21-CoP-guidebook-second-edition-final-2.pdf), published at the 2024 URL, under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/). This method adapts the guidebook’s distinctions. The worked cases were constructed for this publication.
 
 The useful answer is a choice tied to present work and viable transition, supported by observation of what receivers can obtain. Historical programme stories can suggest alternatives; the current permissions, provider conditions and willing contributions determine whether a particular continuation is available.
 
@@ -232,7 +232,7 @@ The useful answer is a choice tied to present work and viable transition, suppor
 - **CB.7 and CB.9** help obtain willing successors, support and terms; **CB.8 and CB.13** guide responses to participant matters and legitimate collective decisions.
 - **CB.14** maintains a shared repertoire; **CB.15** can help establish a useful relation with a successor group; **CB.16** can carry a needed external request.
 - **C.36.RP** develops the means of obtaining and using a shared method; **C.36** supplies the broader cultural-continuation question.
-- **HCD and Core Method-development patterns** supply missing acquisition or method development when a handover exposes that need.
+- **HCD** can help a person acquire a missing capability. **Core Method-development patterns** can help develop a method the handover needs.
 - **ECO.7, ECO.9 and OCE.14** develop changes to shared resources, economic rules or organisational arrangements.
 
 ### CB.11:End

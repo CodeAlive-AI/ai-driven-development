@@ -23,19 +23,19 @@ Autonomy can reduce coordination while increasing the importance of a well-forme
 
 Describe the recipient's needed result and how it will be used. Include relevant starting work, sources, completion criteria, protected content, constraints and authority. Distinguish the requested result from an example of a defect or a suggested operation. An instruction to repair one bad paragraph can be narrow; an instruction to develop a usable method requires more than that example.
 
-Make consequential permissions explicit through the actual environment: what the agent may read, modify, execute, spend, communicate or publish, and which decisions belong elsewhere. Use existing authorization where it is sufficient. Ask for a missing decision only when the dependent work actually requires it. A broad goal does not override an access boundary or confer another participant's authority.
+Make consequential permissions explicit through the actual environment: what the agent may read, modify, execute, spend, communicate or publish, and which decisions belong elsewhere. Use existing authorization where it is sufficient. Ask for a missing decision only when the dependent work requires it. A broad goal does not override an access boundary or confer another participant's authority.
 
 #### GOALS.7:4.2 - Match the undertaking to the actual configuration
 
 Establish the available tools, context, sources, memory or persisted work, compute limits and any required competence or independence. Use suitable existing evidence for the task and consequence. If a capability is uncertain and that uncertainty could change the arrangement, obtain a proportionate check or use a qualified alternative. A present result from another configuration supports only what its conditions permit.
 
-Allocate work by contributions: the agent may perform substantive analysis and authorized execution; a human or another system supplies only the decisions, expertise, participation or independent judgement actually needed. Account for source retrieval, checking, correction and recipient attention as well as generation. A human need not supervise every reversible operation if the required guarantees and authority support competent autonomous performance.
+Allocate work by contributions: the agent may perform substantive analysis and authorized execution; a human or another system supplies only the decisions, expertise, participation or independent judgement needed. Account for source retrieval, checking, correction and recipient attention as well as generation. A human need not supervise every reversible operation if the required guarantees and authority support competent autonomous performance.
 
 When the task includes human learning, use GOALS.6 to preserve the human operation and evidence separately. If the desired result is only the delivered artifact, compare competent direct provision with the additional burden of making the human reproduce its construction.
 
 #### GOALS.7:4.3 - Make continuation possible across the real boundary
 
-Keep the current goal, relevant decisions, accepted results and material remainder in the work product or persistence mechanism that the runtime can actually recover. Preserve enough source identity and conditions to continue without repeating or silently replacing the task. Reuse an existing durable account; do not add another synchronized ledger merely because the work is long.
+Keep the current goal, relevant decisions, accepted results and material remainder in the work product or persistence mechanism that the runtime can recover. Preserve enough source identity and conditions to continue without repeating or silently replacing the task. Reuse an existing durable account; do not add another synchronized ledger merely because the work is long.
 
 Choose the continuation arrangement from the actual system. A persistent execution can continue within its budget. A new session may need explicit recovery of the task and saved work. Scheduled later work requires an effective scheduling mechanism. A written promise to return later does not establish that mechanism. Before relying on it, verify the relevant supported behavior and identify what happens at interruption or exhaustion.
 
@@ -43,7 +43,7 @@ On resumption, recover what is complete, what remains and any newer instruction 
 
 #### GOALS.7:4.4 - Judge completion against the receiving use
 
-Before claiming completion, compare the actual result with the original goal and its latest valid clarifications. Have the necessary actions been performed, the required contributions obtained and the result made usable to its recipient? Tool success can establish a particular operation; a saved artifact can establish availability; subject correctness and authorization can require different evidence.
+Before claiming completion, compare the actual result with the original goal and its latest valid clarifications. Have the necessary actions been performed, the required contributions obtained and the result made usable to its recipient? A successful tool call can establish that the operation ran. A saved artifact can establish availability. Subject correctness and authorization can require different evidence.
 
 Distinguish the result wanted by the recipient, the criterion and environment used to evaluate it, and any reward used to train or select the model. Establish what a reported score warrants under that configuration. When the agent can alter tests, data or a judge that supplies completion evidence, preserve an independently controlled basis for the consequential claim or arrange a suitable independent replay. An authorized improvement to the evaluator needs its own grounds. Use GOALS.2 to examine how apparent success could leave the wanted result absent, and obtain the technical evaluation method appropriate to the system and consequence.
 
@@ -55,7 +55,7 @@ Recognition notices an assignment whose text, authority or continuation cannot s
 
 ### GOALS.7:5 - Archetypal Grounding
 
-A maintenance agent is assigned to find why a report misstates totals, repair the authorized source and produce a verified result for review. The existing instruction permits local edits and tests, while publication belongs to another role. The agent recovers the source and consumers, repairs the calculation, performs the relevant checks and gives the reviewer the usable candidate and evidence. A successful local test does not perform publication, which was outside this assignment.
+A maintenance agent is assigned to find why a report misstates totals, repair the authorized source and produce a verified result for review. The existing instruction permits local edits and tests, while publication belongs to another role. The agent recovers the source and consumers, repairs the calculation, performs the relevant checks and gives the reviewer the usable candidate and evidence.
 
 For that review, the accounting owner supplies the transaction population and a separately calculated control total. The agent can edit the report code and its unit tests; changing their expected values could make those tests pass while leaving the accounting error intact. The reviewer therefore compares the repaired report with the retained transaction basis and control total. If an authorized correction changes which transactions belong to the period, the accounting owner resolves that criterion and the comparison is rerun. The evidence now concerns the intended accounting result under the agreed criterion.
 
@@ -69,7 +69,7 @@ Capabilities vary by model, configuration, tools and task. Evaluate the required
 
 ### GOALS.7:7 - Conformance Checklist
 
-- Does the assignment preserve the intended receiving result and its actual scope?
+- Does the assignment preserve the intended receiving result and its scope?
 - Are consequential actions within effective authority and available means?
 - Can the runtime recover the state required for continuation?
 - Does completion evidence concern the result rather than only the last operation?
@@ -88,7 +88,7 @@ Capabilities vary by model, configuration, tools and task. Evaluate the required
 
 ### GOALS.7:9 - Consequences
 
-The agent can do substantial work with fewer avoidable handoffs while returning meaningful exceptions and results. The arrangement also makes interruption and failure recoverable. It requires current knowledge of the actual system; no general prompt can guarantee arbitrary competence or persistence.
+The agent can do substantial work with fewer avoidable handoffs while returning meaningful exceptions and results. The arrangement also makes interruption and failure recoverable. It requires current knowledge of the system that will do the work; no general prompt can guarantee arbitrary competence or persistence.
 
 ### GOALS.7:10 - Architectural Rationale
 

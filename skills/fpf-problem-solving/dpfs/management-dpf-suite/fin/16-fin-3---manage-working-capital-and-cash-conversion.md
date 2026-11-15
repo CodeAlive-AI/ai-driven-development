@@ -22,14 +22,14 @@ Balance liquidity, contribution, reliability and commercial relationships. Disti
 
 ### FIN.3:4 - Solution
 
-1. Identify the mechanism: order quantity and safety stock, customer credit and collection, supplier payment, or a combination. State what can actually change, whose consent is needed and when it takes effect.
+1. Identify the mechanism: order quantity and safety stock, customer credit and collection, supplier payment, or a combination. State what can change, whose consent is needed and when it takes effect.
 2. Recover the relevant volumes, prices, variable resource consumption, holding and shortage consequences, expected credit losses and timed payments. Use an adequate [MA][MA] account and [OPS][OPS] feasibility result directly.
 3. Build the no-change and changed dated cash accounts. Include discounts, financing, collection effort, supplier-price changes, lost contribution, taxes where applicable and the transitional stock or receivable change. Separate recurring operating effects from cash released by reducing a balance.
 4. Use cash-conversion measures to explain the mechanism where the business and denominators fit. For a period of N days, inventory days approximate average relevant inventory divided by that period's cost of goods sold, times N; receivable days use average trade receivables divided by credit sales, times N; payable days use average trade payables divided by credit purchases, times N. Cost of goods sold is a purchases proxy only when its adequacy is established. On consistent period and scope grounds, cash-conversion days equal inventory days plus receivable days minus payable days. Investigate cohort, seasonal or overdue-account differences that an average conceals.
 5. Compare feasible alternatives on the same horizon. Preserve service and capacity requirements. A discount offered to a customer is available only when the necessary agreement exists; a supplier extension is not obtained by changing a forecast date.
 6. Select a policy or return conditional advice with the operational consequence, cash effect and revisit condition. Use FIN.2 to verify reserves across dates and FIN.15 to perform an authorized action.
 
-For a discount offered in exchange for earlier cash, compare its actual cash cost with the available funding alternative over the same interval. Annualizing a short-period discount can help comparison, but retain its day count, compounding assumption and the actual amount needed; a large annualized percentage alone does not settle the order decision.
+For a discount offered in exchange for earlier cash, compare its cash cost with the available funding alternative over the same interval. Annualizing a short-period discount can help comparison, but retain its day count, compounding assumption and the amount needed; a large annualized percentage alone does not settle the order decision.
 
 
 
@@ -38,24 +38,24 @@ For a discount offered in exchange for earlier cash, compare its actual cash cos
 
 Working capital arises because buying, producing, delivering, invoicing and collecting occur at different times. Model the arrangement that creates those times: quantity and price of purchases, stock held before use or sale, credit granted to customers and credit received from suppliers. FIN.4 connects that operating plan to balances and cash. FIN.3 compares changes to the arrangement and their financial consequences.
 
-Begin with the actual cause of the cash tied up. Slow collections may result from a generous credit term, disputed quality, late invoicing or a customer unable to pay. High inventory may be a seasonal build, a supply-protection choice, a production bottleneck or unsalable stock. Those causes call for different actions. Renegotiating payment terms cannot repair an invalid invoice, and writing off obsolete stock does not release the cash spent to acquire it. Inspect sufficiently detailed product, customer and supplier groups before applying an average policy to unlike cases.
+Establish why cash is tied up. Slow collections may result from a generous credit term, disputed quality, late invoicing or a customer unable to pay. High inventory may be a seasonal build, a supply-protection choice, a production bottleneck or unsalable stock. Those causes call for different actions. Renegotiating payment terms cannot repair an invalid invoice, and writing off obsolete stock does not release the cash spent to acquire it. Inspect sufficiently detailed product, customer and supplier groups before applying an average policy to unlike cases.
 
-The relevant operating alternative must still perform its intended service. Obtain a feasible replenishment or capacity response from operations and its resource/cost consequences from MA. When no alternative operating plan is supplied, report the missing delivery or service condition instead of labeling the lowest stock balance optimal.
+The relevant operating alternative must provide the intended service. Obtain a feasible replenishment or capacity response from operations and its resource/cost consequences from MA. When no alternative operating plan is supplied, report the missing delivery or service condition instead of labeling the lowest stock balance optimal.
 
 
 
 #### FIN.3:4.2 - Make customer credit a commercial choice
 
 
-A customer-credit policy includes who can buy on credit, how much exposure can accumulate, the payment term, any early-payment discount, collection action and the response to overdue balances. Establish the actual offer and likely customer response. A longer term can increase sales while requiring earlier production cash and increasing expected nonpayment. A tighter term can reduce exposure while losing a profitable customer. Compare the entire change against the business that would occur without it.
+A customer-credit policy includes who can buy on credit, how much exposure can accumulate, the payment term, any early-payment discount, collection action and the response to overdue balances. Establish the terms being offered and the likely customer response. A longer term can increase sales while requiring earlier production cash and increasing expected nonpayment. A tighter term can reduce exposure while losing a profitable customer. Compare the entire change against the business that would occur without it.
 
 Construct additional receipts from the changed sales volumes, prices, discounts, collection dates and expected losses. Construct the additional cash costs of delivering those sales, credit administration, collection and any capacity step. Use MA.5 for the operating response and FIN.6 for an incremental present-value comparison when dates or recurring effects matter. Revenue growth alone cannot answer whether the credit policy creates value. Do not subtract expected bad debt again if the forecast receipts already allow for noncollection.
 
 Keep the credit limit distinct from the term. The term controls when a particular invoice falls due; the limit constrains the exposure allowed to accumulate. A customer may stay within a limit while paying late, or exceed it through several otherwise current invoices. Consider concentrations and related customers when a common failure can affect several accounts. FDM supplies the relevant parties and claims rather than a name-matching shortcut.
 
-Monitor an aging of actual unpaid invoices, with a stated reference date and whether age is measured from invoice or due date. Reconcile its total to the receivables account and inspect disputes, credit notes and receipts not yet applied. Compare cohorts or stable customer groups when sales mix changes. An aggregate fall in days receivable can be caused by a surge of recent sales; it does not show that old overdue invoices were collected. Return the changed collection forecast to FIN.2.
+Monitor unpaid invoices by age, with a stated reference date and whether age is measured from invoice or due date. Reconcile the total unpaid amount across these age groups to the receivables account and inspect disputes, credit notes and receipts not yet applied. Compare cohorts or stable customer groups when sales mix changes. An aggregate fall in days receivable can be caused by a surge of recent sales; it does not show that old overdue invoices were collected. Return the changed collection forecast to FIN.2.
 
-Factoring or discounting receivables can bring forward cash without changing the customer's payment. Distinguish the advance, retained reserve, fees, servicing and any recourse if the customer fails. A transfer of the receivable and a loan secured by it have different claim consequences. Use actual FDM terms and FIN.10 to obtain net proceeds and remaining exposure. Do not count both the financier's advance and the same full customer receipt as unencumbered cash.
+Factoring or discounting receivables can bring forward cash without changing the customer's payment. Distinguish the advance, retained reserve, fees, servicing and any recourse if the customer fails. A transfer of the receivable and a loan secured by it have different claim consequences. Use FDM to establish the arrangement’s terms where needed, and FIN.10 to determine net proceeds and remaining exposure. Do not count both the financier's advance and the same full customer receipt as unencumbered cash.
 
 
 
@@ -66,7 +66,7 @@ For a proposed reduction in stock, distinguish a one-time run-down from a lower 
 
 Recover purchase cost, expected realizable proceeds and the payments actually avoided. A fall of 20 in book inventory is not necessarily a receipt of 20: a write-down is noncash, clearance may realize less, and supplier balances may change at a different date. Compare the cash account under both policies through transition and subsequent replenishment. Preserve the continuing stock needed to support the stated sales.
 
-Include lost contribution and recovery costs when stockouts or quality failures are plausible. A service level can be an operating constraint, not a price to be guessed by finance. If operations supplies several feasible service/cost combinations, compare their incremental value and liquidity with explicit uncertainty. Keep resource usage, capacity supplied and expenditure distinct: releasing storage space saves cash only through a payment that is avoided or reduced. An attainable alternative use can contribute its own future cash consequences. MA.1–MA.2 and the actual operating plan supply the resource and payment conditions.
+Include lost contribution and recovery costs when stockouts or quality failures are plausible. A service level can be an operating constraint, not a price to be guessed by finance. If operations supplies several feasible service/cost combinations, compare their incremental value and liquidity with explicit uncertainty. Keep resource usage, capacity supplied and expenditure distinct: releasing storage space saves cash only through a payment that is avoided or reduced. An attainable alternative use can contribute its own future cash consequences. MA.1–MA.2 and the applicable operating plan supply the resource and payment conditions.
 
 
 
@@ -77,7 +77,7 @@ An agreed longer payment term provides financing until the revised due date. Sim
 
 For a discount fraction d available on an invoice amount F at an earlier date, the early payment is F(1 − d). Forgoing it retains that amount for the extra days and costs Fd at the later date. The extra-period financing rate is therefore d/(1 − d), not d. For a comparison using an effective annual convention and a year of Y days, the mechanically annualized rate is (1/(1 − d))^(Y/Δdays) − 1, where Δdays is the difference between the two payment dates. State the convention. That number imagines repeated equivalent periods; it is not the currency cost of this one invoice or proof that borrowing is obtainable.
 
-Compare the actual early-payment funding schedule with the later invoice payment. Include the loan's net proceeds, interest, fees and conditions, then test the dates in FIN.2. If finance is rationed, consuming scarce capacity to earn a discount can displace a better use. The high implied annual rate of a forgone discount is a useful signal, but a short period, small amount or uncertain supply can make currency amounts and operational consequences more decision-relevant.
+Compare the funding schedule available for early payment with the later invoice payment. Include the loan's net proceeds, interest, fees and conditions, then test the dates in FIN.2. If finance is rationed, consuming scarce capacity to earn a discount can displace a better use. The high implied annual rate of a forgone discount is a useful signal, but a short period, small amount or uncertain supply can make currency amounts and operational consequences more decision-relevant.
 
 
 
@@ -99,7 +99,7 @@ Continue FIN.2's order, with a day-7 gap of 40 and no required positive reserve.
 | Draw 43, fee 3, interest 2 | 0 | 1,155 | 655 |
 | Receive the agreed advance with discount 4 | 56 | 1,156 | 656 |
 
-On these grounds the advance adds one more unit of gain and leaves a buffer. This supports the advance for this question, assuming the stated customer agreement. If the customer has merely been asked, the proposed advance remains conditional and is not available for the day-7 payment.
+On these grounds the advance adds one more unit of gain and leaves a buffer. If the customer has merely been asked, the proposed advance remains conditional and is not available for the day-7 payment.
 
 The supplied operating case requires 26–29 rig-hours for 100 units. Twenty hours are usable and a ten-hour block costs 240. Materials cost 200 and supplier service costs 100. Materials and the block require 440 on day 0; the supplier's 100 is due on day 7. These give the incremental payments of 540. Cutting the ten-hour block to improve a cash ratio removes needed capacity, so it is not the same feasible order alternative.
 
@@ -146,7 +146,7 @@ Construct both accounts, including the unchanged opening invoices:
 
 On day 30 the no-change account receives 95 from its first new cohort and pays 70 for its second. The changed account has already collected its first cohort and pays 84 for the second. Opening-invoice collections cancel in the incremental column because their terms and performance have not changed; they still belong in each absolute cash account.
 
-The no-change cash path is 10, 48, 73, 83 and 178. The changed path is −4, 145.72, 61.72, 183.44 and 183.44 before any new finance. Earlier collection reduces later receivable funding, but the larger first delivery needs at least 4 of obtainable net finance immediately. Future expected receipts cannot make that payment now. FIN.2 must add the actual financing terms and test the relevant adverse collection cases before the changed policy can be relied on.
+The no-change cash path is 10, 48, 73, 83 and 178. The changed path is −4, 145.72, 61.72, 183.44 and 183.44 before any new finance. Earlier collection reduces later receivable funding, but the larger first delivery needs at least 4 of obtainable net finance immediately. Future expected receipts cannot make that payment now. Before relying on the changed policy, use FIN.2 to add the obtainable financing terms and test the relevant adverse collection cases.
 
 Final expected cash improves by 5.44, not just by the margin on the new sales. For each cohort, the additional 20 of sales contributes 20 × 0.98 × 0.95 − 14 = 4.62; granting the discount on the existing 100-sales base sacrifices 100 × 0.02 × 0.95 = 1.90 of expected receipts. Twice their difference is 5.44. Expected noncollection is already in these receipts and is not another expense to subtract from cash.
 
@@ -161,7 +161,7 @@ The old overdue 20 remains identifiable in the aging until actual settlement or 
 
 An invoice for 100 is payable on day 30, or 98 on day 10 under an agreed 2% discount. The company can draw exactly 98 net on day 10 under a separate available loan, with no fees and 1% interest for the 20-day period. It repays 98.98 on day 30. Relative to paying 100 then, using the loan to take the discount saves 1.02 at the same date. There are no other tax, supply or transaction differences in this illustration.
 
-Forgoing the discount costs 2/98 = 2.0408% for 20 days. Using a 365-day effective annual convention gives approximately 44.59%; using simple annualization gives approximately 37.24%. Neither figure changes the actual 1.02 saving or supplies the loan. A fee greater than 1.02 at day 30 would reverse this comparison. A day-10 credit limit of only 90 would leave the early payment short unless another source supplied 8. The decision therefore needs both the price comparison and FIN.2's dated feasibility result.
+Forgoing the discount costs 2/98 = 2.0408% for 20 days. Using a 365-day effective annual convention gives approximately 44.59%; using simple annualization gives approximately 37.24%. Neither figure changes the 1.02 saving from financing this invoice or supplies the loan. A fee greater than 1.02 at day 30 would reverse this comparison. A day-10 credit limit of only 90 would leave the early payment short unless another source supplied 8. The decision therefore needs both the price comparison and FIN.2's dated feasibility result.
 
 ### FIN.3:6 - Bias-Annotation
 
@@ -169,7 +169,7 @@ A customer- or supplier-average view can hide a concentration, credit-quality ch
 
 ### FIN.3:7 - Conformance Checklist
 
-Are the no-change and changed accounts compared on compatible definitions and the same horizon, with differences in sales, stock, service and resource quantities traced to the respective feasible plans? Are discounts, losses, transitional cash and operating consequences included once? Is each changed payment arrangement agreed or clearly conditional? Can the reader distinguish released cash from recurring earnings?
+Are the no-change and changed accounts compared on compatible definitions and the same horizon, with differences in sales, stock, service and resource quantities traced to the respective feasible plans? Are discounts, losses, transitional cash and operating consequences included once? Is each changed payment arrangement agreed or identified as conditional? Can the reader distinguish released cash from recurring earnings?
 
 ### FIN.3:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -181,11 +181,11 @@ A working-capital decision becomes a joint cash and operating comparison. It can
 
 ### FIN.3:10 - Architectural Rationale
 
-The financial gain comes from a changed arrangement and its consequences, not from a ratio target by itself. Keeping the operating account external lets finance compare real feasible changes without rebuilding capacity analysis.
+The financial gain comes from a changed arrangement and its consequences, not from a ratio target by itself. Keeping the operating account external lets finance compare feasible changes without rebuilding capacity analysis.
 
 ### FIN.3:11 - SoTA-Echoing
 
-The public [CFA working-capital reading][CFA-WC] frames operating terms and cash conversion. OpenStax 2e develops [supplier discounts][OS-TRADE], [customer-credit choices and receivable monitoring][OS-RECEIVABLES], and [inventory service/cost trade-offs][OS-INVENTORY]. FIN.3 adopts those distinct choice questions, using actual operating and MA inputs for the feasible response. Its incremental cash comparisons distinguish transition releases, recurring economics and dated funding. It does not treat a shorter cycle, a book write-down or an annualized discount rate as sufficient proof of improvement. Changed customer behavior, supply reliability, resource commitment or obtainable finance requires a new comparison.
+The public [CFA working-capital reading][CFA-WC] frames operating terms and cash conversion. OpenStax 2e develops [supplier discounts][OS-TRADE], [customer-credit choices and receivable monitoring][OS-RECEIVABLES], and [inventory service/cost trade-offs][OS-INVENTORY]. FIN.3 adopts those distinct choice questions, using the operating plan and MA account for each feasible response. Its incremental cash comparisons distinguish transition releases, recurring economics and dated funding. It does not treat a shorter cycle, a book write-down or an annualized discount rate as sufficient proof of improvement. Changed customer behavior, supply reliability, resource commitment or obtainable finance requires a new comparison.
 
 ### FIN.3:12 - Relations
 

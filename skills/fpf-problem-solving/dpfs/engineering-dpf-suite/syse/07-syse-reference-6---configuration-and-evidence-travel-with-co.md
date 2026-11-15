@@ -1,6 +1,6 @@
 ## SYSE.Reference:6 - Configuration and evidence travel with continuing change
 
-Engineering identity is decision-relative but not arbitrary. A product-family item, actual unit, installed
+The decision determines which identities and differences the engineer must establish. A product-family item, actual unit, installed
 configuration, software realization, description edition, baseline, variant, state, and effectivity range can
 differ. `SYSE.13` supplies the configuration basis needed by a named decision. `SYSE.14` connects a proposed or
 performed world-side change to that basis, its deciding System, permission, implementation, release, cited

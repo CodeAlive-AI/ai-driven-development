@@ -10,7 +10,7 @@ HCD.4 compares current and target capabilities across simultaneous work. Preserv
 
 | The conclusion you want to support | Evidence it needs |
 | --- | --- |
-| “This particular release work occurred.” | The actual occurrence, performer, configuration, period and method used. |
+| “This release work occurred.” | The actual occurrence, performer, configuration, period and method used. |
 | “That occurrence produced this result or consequence.” | The result or a supported result claim connected to the occurrence. |
 | A conclusion that depends on a work record | A record connected to the occurrence and result. Other conclusions may use adequate direct observations. |
 | Current demand, the limiting cause, or a current capability profile | Representative observations of the engineer under compatible conditions: work products, quality, critical errors, method and configuration, AI and other support, specialist returns, familiar and unfamiliar variants, and when the observations apply. Identify which observed performances supplied the evidence. |

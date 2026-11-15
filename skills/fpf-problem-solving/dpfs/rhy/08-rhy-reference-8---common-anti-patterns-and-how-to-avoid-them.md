@@ -3,7 +3,7 @@
 | Consequential mistake | Practical correction |
 | --- | --- |
 | Tighten timing because the contact is measurable, although the partner needs a different cue. | Compare the receiving timing events through RHY.4 before choosing a correction. |
-| Treat an onset-only string as a complete instruction for sustain and rest. | Restore the needed information through RHY.5/.6; evaluate the performer only against an adequately specified task. |
-| Count success in a simplified exercise as success in the original figure. | Restore the constituent contribution to the whole through RHY.12 and select the changed-condition question in RHY.13. |
-| Discard unmatched events and report a good average as a complete performance. | RHY.14 retains omissions, additions and ambiguous matches separately from timing error. |
-| Treat a frequent or geometrically central rhythm as a future cultural attractor. | Compare the mechanisms and receiving decisions through MDPE.20, using the needed RHY results. |
+| Treat an onset-only string as complete instructions for sustain and rest. | Use RHY.5 or RHY.6 to recover the duration or release from a source that carries it. Judge interpretation of the required duration only when the task supplies it. An explicit recall task can instead ask for a pattern the performer received earlier. |
+| Credit a simplified exercise as performance of the original figure. | Retain what the exercise establishes under its own conditions. Use RHY.12 if the missing relation needs practice and RHY.13 when changed-condition evidence is needed. |
+| Discard unmatched events and report average timing error as a complete performance. | Use RHY.14 to report omissions, additions and ambiguous matches separately from timing error for matched events. |
+| Call a frequent or geometrically central rhythm a future cultural attractor. | Use MDPE.20 to assess a proposed mechanism and the evidence relevant to the cultural question. Use RHY to identify which variants or performances are being compared. |

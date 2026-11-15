@@ -7,13 +7,13 @@
 
 Use this pattern when people cannot tell what a proposed product or service will do for them, why it is worth considering against their actual alternatives, or what obtaining its result requires. It also applies before an offer exists: a useful capability must be turned into an understandable, supportable proposal for a particular customer situation.
 
-The result is a proposed offer with a clear recipient, contribution, conditions, consideration and grounds for comparison, together with what its test established and left open. Positioning is the context that helps the intended customer interpret that offer. A headline, pricing page or sales conversation can express it; none is the offer's complete content by itself.
+The result is a proposed offer with a clear recipient, contribution, conditions, consideration and grounds for comparison, together with what its test established and left open. Positioning is the context that helps the intended customer interpret that offer. A headline, pricing page or sales conversation can express the positioning. For a complete offer, the recipient must be able to recover the contribution, its terms and grounds for comparison.
 
 The intended reader understands the product or service and can obtain customer evidence and a competent supply answer. Start from a qualified situation through [MKT.1](16-mkt-1---qualify-a-market-problem-and-differences-between-cus.md) or an equally sufficient existing account. When a suitable understood offer already exists, use it. When the customer problem is still unknown, investigate that question before polishing an assumed answer.
 
 ### MKT.2:2 - Problem
 
-A list of capabilities does not tell a customer which useful change it enables under their conditions. A compelling claim can also imply capabilities, support or terms that the provider cannot supply. Teams then try to repair the resulting misunderstanding with more messages while the actual proposal remains inconsistent.
+A list of capabilities does not tell a customer which useful change it enables under their conditions. A compelling claim can also imply capabilities, support or terms that the provider cannot supply. Teams then try to repair the resulting misunderstanding with more messages while the proposal remains inconsistent.
 
 Construct the contribution, its context of comparison and its supply conditions together. Test what the intended people understand and can use. Let failed understanding, failed usefulness and failed feasibility lead to different repairs.
 
@@ -33,25 +33,25 @@ Construct the contribution, its context of comparison and its supply conditions 
 
 Recover the customer's activity, important difficulty, existing alternative and the roles that can change the proposal. Ask what useful difference is sought, who receives it and how it could be recognised. If the purchaser wants a lower fee while users need less repeated work, retain both questions. Do not let one convenient indicator become the goal of every participant.
 
-When the useful result is contested or not yet known, use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/112-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) to separate the problem, proposed contribution and acceptance expectation. The people involved can then choose a shared limited result, retain distinct goals, or decline the wider proposal. A narrower agreed contribution may be possible without pretending that all goals coincide.
+When the useful result is contested or not yet known, use [FPF C.40.PC](../../../sections/09-part-c---kernel-extension-specifications/112-c-40-pc---construct-a-worthwhile-problem-and-proposed-contri.md) to separate the problem, proposed contribution and acceptance expectation. The participants may agree on a limited result while keeping their broader goals distinct. They may also decline the wider proposal.
 
 Connect a candidate capability to that result through a concrete use: who would use what, under which conditions, to change which part of the work? A new or changed product-service arrangement may need the linked use and system concept in [SYSE.2](../../engineering-dpf-suite/syse/23-syse-2---develop-linked-use-and-system-concepts.md), followed by the relevant engineering and supply work. Ask its owner for the needed result and constraint; do not replace a missing function with stronger promotional wording.
 
 #### MKT.2:4.2 - Select a truthful context for comparison
 
-Recover what the intended customer could actually do instead. Compare the contribution with those alternatives, identify the useful difference that its capabilities can support, and identify the circumstances in which that difference matters. Then choose a familiar description or category that helps the intended people interpret it without implying an unavailable result.
+Recover what the intended customer could do instead. Compare the contribution with those alternatives, identify the useful difference its capabilities support and the circumstances in which that difference matters. Then choose a familiar description or category that helps the intended people interpret it without implying an unavailable result.
 
 For example, “automated reporting platform” may invite an expectation of continuous integration and unattended reports. “Assisted file-mapping trial for periodic reports” gives a different context. Choose between them from the actual proposal and its receivers, not from which phrase sounds larger. A category can help recognition while a qualifier makes the material boundary clear.
 
 If the customer already has an adequate alternative, determine whether the proposal offers a worthwhile difference in result, effort, access, risk or terms. It need not be unique in the world. If no worthwhile difference is supported for this situation, change the contribution, select a different appropriate situation or stop. Competitor claims and the provider's own claims both need grounds where comparison relies on them.
 
-Ask each relevant participant two questions: what supported difference favours this option among feasible alternatives, and what missing condition would exclude it? Use the first answer to explain preference and the second to retain the conditions for choice or supply. Classify the capability for this situation: dependable support can be a prerequisite in one acquisition and a reason to switch or renew in another.
+For each relevant participant, use the available grounds to answer two questions: what supported difference favours this option among feasible alternatives, and what missing condition would exclude it? Clarify any remaining question with the participant or the source of the condition. Use the first answer to explain preference and the second to retain the conditions for choice or supply. Determine what the capability contributes in this situation. Dependable support can be a prerequisite in one acquisition and a reason to switch or renew in another.
 
 Keep the comparison open when evidence changes. A new feasible alternative can defeat the proposed advantage without altering the product. A misunderstood category can require another explanation while the underlying contribution remains suitable.
 
 #### MKT.2:4.3 - Construct the complete proposal
 
-Make the customer able to recover the following content from the offer's actual presentation:
+Present the offer so the customer can recover the following information:
 
 | Content | Construction question |
 | --- | --- |
@@ -63,7 +63,7 @@ Make the customer able to recover the following content from the offer's actual 
 | Evidence and acceptance | What grounds support the claims, and what can the recipient inspect to establish that the proposed contribution was supplied? |
 | Continuation and limits | What happens on a failed prerequisite, unsuitable result, changed condition, cancellation or end of the limited offer? |
 
-Use the amount of detail the decision needs. An ordinary standard service may already carry this content in established terms. A new compound service may need explicit coordination among providers. The purpose is a recoverable proposal, not a mandatory form.
+Use the amount of detail the decision needs. An ordinary standard service may already carry this content in established terms. A new compound service may need explicit coordination among providers.
 
 Distinguish the provider's deliverable, the customer's later result and the evidence for each. A prepared report is different from a timely management decision; a course place is different from an acquired ability. State the contribution and the conditions on which a further benefit depends. A guarantee is a specific stronger commitment whose means and terms require their own support.
 
@@ -73,7 +73,7 @@ Where an intermediary participates, identify whose offer this is. A provider's o
 
 #### MKT.2:4.4 - Obtain a supply answer before relying on the promise
 
-Ask the responsible supplier to identify the result it can provide and the conditions for doing so: configuration, available capability, people, time, access, dependencies, support and unresolved constraints. Separate a planned improvement from an available contribution. Include preparation and continuing support when comparing feasible versions.
+Establish what the responsible supplier can provide and under what conditions. Use its existing answer where it suffices. If the contribution or a condition is unclear, ask the supplier about the missing point. Relevant conditions include configuration, capability, staffing, time, access, dependencies and support. Separate a planned improvement from an available contribution. Include preparation and continuing support when comparing feasible versions.
 
 For each important promise, follow the required contribution to a responsible provider or to an explicit gap. Resolve incompatible timings, shared scarce resources and conflicting claims made to different roles. A technically possible service can still be unavailable in the proposed window. Return an unsupported part for engineering, operational or organisational work, or reduce the proposal to a supported part.
 
@@ -109,7 +109,7 @@ Positioning it as a file-mapping trial makes the relevant comparison intelligibl
 
 #### MKT.2:5.2 - Change a whole condition
 
-Now the available operator cannot inspect outputs during the trial window. The same technical mapping no longer supports the proposed arrangement. Possible responses include another qualified operator, another window, an actually supported additional service or no trial now. Removing inspection from the description would conceal the missing contribution. MKT.4 must receive the revised feasible choice.
+Now the available operator cannot inspect outputs during the trial window. The same technical mapping no longer supports the proposed arrangement. Possible responses include another qualified operator, another window, an available service that provides the required inspection in that window or no trial now. Removing inspection from the description would conceal the missing contribution. MKT.4 must receive the revised feasible choice.
 
 For a learning product, the analogous distinction is between supplying worked material and helping someone develop a capability needed for later work. A generated explanation can serve the former. An offer of the latter must include the needed practice, feedback and capability observation from HCD, with the learner's required work visible.
 
@@ -132,18 +132,18 @@ Teams often prefer the capability they built most recently or the category with 
 | --- | --- |
 | Fill in a positioning sentence before investigating its terms. | Construct the contribution and comparison; use the sentence only to express the supported result. |
 | Repair missing supply with a more persuasive explanation. | Obtain the missing contribution or change the promised scope and its dependent messages. |
-| Treat a participant's positive reaction as understanding, demand and successful use. | Ask the separate questions and retain what each observation actually establishes. |
+| Treat a participant's positive reaction as understanding, demand and successful use. | Ask the separate questions and retain what each observation establishes. |
 | Compare a cheap introductory fee with a complete alternative. | Include the required continuation, customer work and other costs in the comparison. |
 
 ### MKT.2:9 - Consequences
 
-The customer can assess a proposal whose meaning and conditions are inspectable, and the provider has a more precise request for the work needed to fulfil it. Construction can reveal that the offer should become smaller, be directed elsewhere or not be made. Coordination and testing cost effort; an existing suitable offer remains the cheaper choice when no material uncertainty changes its use.
+The customer can assess a proposal whose meaning and conditions are inspectable, and the provider has a request that identifies the work needed to fulfil it. Construction can reveal that the offer should become smaller, be directed elsewhere or not be made. Coordination and testing cost effort; an existing suitable offer remains the cheaper choice when no material uncertainty changes its use.
 
 ### MKT.2:10 - Architectural Rationale
 
 An offer joins the customer's situation, a useful contribution, a context for comparison and feasible terms of supply. Positioning belongs in that construction because it can change which capabilities and limits the customer infers. It cannot settle the truth of those capabilities or the customer's choice.
 
-A messaging-only remedy is sufficient for a local expression problem. Product engineering is needed when the contribution does not exist. This method identifies which connection failed and joins the appropriate results without turning every offer into a new product project or taking over the supplier's professional work.
+A messaging-only remedy is sufficient for a local expression problem. Product engineering is needed when the contribution does not exist. Identify which connection failed and use the appropriate result from the responsible practice.
 
 ### MKT.2:11 - SoTA-Echoing
 

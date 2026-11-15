@@ -22,7 +22,7 @@ These accounts can disagree numerically without contradicting one another. They 
 
 A profit figure is often treated as cash generated, or a management restatement as a correction to an external report. That loses recognition, valuation or settlement conditions.
 
-A reconciliation that merely inserts an unexplained balancing amount has the opposite defect: it makes totals agree while hiding the unresolved question. The practitioner needs an explicit explanation of the difference.
+A reconciliation that merely inserts an unexplained balancing amount has the opposite defect: it makes totals agree while hiding the unresolved question. Explain the difference using the relevant events, dates, account boundaries and policies, or identify what is still missing.
 
 ### MA.4:3 - Forces
 
@@ -50,7 +50,7 @@ A sufficient source account can supply aggregate movements. Reconstruct individu
 | Receivables | Opening receivables + recognized credit sales − customer settlements = closing receivables |
 | Payables | Opening payables + purchases or resource supply on credit − supplier settlements = closing payables |
 
-Use each account's actual recognition and valuation rules to fill the terms. Physical production can be the same in two views while the cost admitted to inventory differs. Carry opening inventory on the corresponding view's basis and apply its rule for identifying the cost released when goods are sold. Purchases, consumption and payment are separate events; equating them would erase the difference being explained.
+Use each account's recognition and valuation rules to fill the terms. Physical production can be the same in two views while the cost admitted to inventory differs. Carry opening inventory on the corresponding view's basis and apply its rule for identifying the cost released when goods are sold. Purchases, consumption and payment are separate events; equating them would erase the difference being explained.
 
 Extend the movement account when other events occur. A write-down changes inventory without buying or selling units. A customer advance may create a liability before revenue is earned. An equipment purchase, depreciation or financing transaction needs its own balance and flow treatment. Obtain that treatment from the responsible reporting or financial practice. Locate an unexplained residual in the missing event, valuation, period or scope; an invented balancing entry cannot explain it.
 
@@ -72,7 +72,7 @@ Show enough intermediate amounts to expose an omitted term and reconcile to the 
 
 #### MA.4:4.4 - Return the reconciled views and any discrepancy
 
-Preserve each account for its warranted use and return the explanation connecting them. If a source is wrong, identify the correction for its responsible process. A management model does not silently amend a statutory account.
+Preserve each account for its warranted use and return the explanation connecting them. If a source is wrong, return the correction to whoever maintains it. A statutory account must be corrected through the applicable reporting process.
 
 Supply the required monetary basis to the receiving operating or financial method. If funding is at issue, use the whole timed cash position, including other relevant receipts and obligations.
 
@@ -86,7 +86,7 @@ Under the example's supplied full-production-cost policy, eligible cost is 500, 
 
 An internal throughput-style account carries only materials in inventory and expenses the 300 resource supply in the period. Materials in the 60 sold units cost 120; closing material-valued inventory is 80. Its result is **600 − 120 − 300 = 180**.
 
-The accounts connect explicitly:
+The table reconciles the two results and the cash movement.
 
 | Connection | Calculation | Result |
 | --- | --- | ---: |
@@ -148,19 +148,19 @@ Arithmetic establishes the connection under those premises. Policy applicability
 
 ### MA.4:9 - Consequences
 
-The user can explain apparently conflicting accounts and choose the monetary basis the receiving decision needs. An actual error becomes distinguishable from a valid difference in purpose or timing.
+The user can explain apparently conflicting accounts and choose the monetary basis the receiving decision needs. An error becomes distinguishable from a valid difference in purpose or timing.
 
 The work can require specialist interpretation of a reporting policy. A completed management bridge does not confer that reporting authority or supply missing event evidence.
 
 ### MA.4:10 - Architectural Rationale
 
-The method connects views through their subjects, events and rules because a shared monetary unit does not give them a shared meaning. It preserves the views instead of manufacturing one universal profit number.
+The method connects views through their subjects, events and rules because a shared monetary unit does not give them a shared meaning. Retain each view for the use its rules support.
 
 A small bridge is preferable when a few known balance movements explain the difference. Event-level reconstruction becomes worthwhile when the aggregate no longer locates the discrepancy.
 
 ### MA.4:11 - SoTA-Echoing
 
-The method distinguishes internal from externally required accounts and uses the inventory bridge discussed in Bragg's *Throughput Accounting* (2007), printed pp.111–112. It adapts that explanation to explicit policies and actual settlements rather than treating a management view as a substitute for required reporting.
+The method distinguishes internal from externally required accounts and uses the inventory bridge discussed in Bragg's *Throughput Accounting* (2007), printed pp.111–112. Apply the policies for each view and use the settlements that occurred. Follow the applicable reporting rules when preparing a required report.
 
 [IAS 2][IAS2] provides a relevant external-reporting comparator: inventory cost and its later recognition as expense have rules that differ from simply recording cash paid. Its applicability and detailed requirements belong to the reporting question. Here that distinction changes §§4.1–4.3 and the inventory example.
 

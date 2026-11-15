@@ -6,7 +6,7 @@ A service has reliable automated report preparation and proposes a new advisory 
 
 The old unaided reporting test no longer answers the advisory selection question. HRM.2 derives a relevant assessment from the proposed work and permitted support. HRM.3 evaluates changed job demands separately from individual performance and considers the resulting reward arrangement. If experienced advisers must mentor others, billable targets must leave attainable time for that commitment. HRM.4 obtains the required employee influence and handles a challenge to a proposed rule. HRM.5 constructs particular movements, learning arrangements or exits with those affected. ADM makes the authorized terms effective; OCE and OPS provide the actual work.
 
-The whole reveals a contradiction that none of the local outputs alone resolves: a role can look properly assessed and paid while its promised mentoring time is impossible. Revise the work, provision, target or promise at its owner. An engagement campaign cannot supply the missing time.
+Assessment and pay can both be justified while the promised mentoring time is impossible. Revise the work, provision, target or promise at its owner.
 
 HRM.3:4.2.1 obtains the comparative evaluation when changed job demands leave the reward basis unsettled. Corrected information about responsibility for mentoring can change both that evaluation and HRM.1's provision calculation. An adequate existing evaluation can be used directly while its work profile and comparison grounds still apply.
 
@@ -24,7 +24,7 @@ For a subsequent return, suppose the qualified advice permits a limited schedule
 
 An employee shows that payroll used the wrong rate under an unambiguous current appointment. Use ADM to correct the payroll instruction and payment to match the existing obligation. If the dispute is instead about the job evaluation, HRM.3 obtains the valuation grounds and HRM.4 supplies the competent challenge process. Making the records agree cannot decide the valuation.
 
-A voluntary practice group wants to generalize a successful Method. Core development, the practice's research, Community Management and selected learning may be sufficient. HRM becomes relevant if an employer promises paid time or uses participation as promotion evidence. The changed relation selects an additional operation without turning the whole community into an HR department.
+A voluntary practice group wants to generalize a successful Method. Core development, the practice's research, Community Management and selected learning may be sufficient. HRM becomes relevant if an employer promises paid time or uses participation as promotion evidence. The employer’s commitment or personnel decision brings HR into that part of the community’s work.
 
 ### HRM.Reference:5.4 - Later capability depends on present provision
 

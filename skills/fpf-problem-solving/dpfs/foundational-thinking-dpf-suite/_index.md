@@ -35,19 +35,19 @@ The [Foundational Thinking Architectural Reference](suite-reference/_index.md) h
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Mathematical Thinking (MATH)](math/_index.md) · [Markdown](math/_index.md) | Construct mathematical objects, operations and alternatives; derive consequences and meet proof obligations. | 20 | 0.479 |
-| [Mathematical Modeling (MMP)](mmp/_index.md) · [Markdown](mmp/_index.md) | Relate a subject question to mathematics; infer, predict, compare interventions, design observations and revise or combine models. | 17 | 0.574 |
-| [Physical Thinking (PHY)](phy/_index.md) · [Markdown](phy/_index.md) | Construct and test physical accounts; select interactions and idealizations, derive consequences and distinguish them by observation. | 10 | 0.304 |
-| [Computational Thinking (CMP)](cmp/_index.md) · [Markdown](cmp/_index.md) | Construct algorithms that obtain the required answer within correctness, resource and interaction conditions. | 16 | 0.435 |
-| [Notational Engineering (NOT)](not/_index.md) · [Markdown](not/_index.md) | Design expressions, interpretations and transformations that make operations usable and changes recoverable. | 8 | 0.217 |
+| [Mathematical Thinking (MATH)](math/_index.md) · [Markdown](math/_index.md) | Construct mathematical objects, operations and alternatives; derive consequences and meet proof obligations. | 20 | 0.474 |
+| [Mathematical Modeling (MMP)](mmp/_index.md) · [Markdown](mmp/_index.md) | Relate a subject question to mathematics; infer, predict, compare interventions, design observations and revise or combine models. | 17 | 0.569 |
+| [Physical Thinking (PHY)](phy/_index.md) · [Markdown](phy/_index.md) | Construct and test physical accounts; select interactions and idealizations, derive consequences and distinguish them by observation. | 10 | 0.302 |
+| [Computational Thinking (CMP)](cmp/_index.md) · [Markdown](cmp/_index.md) | Construct algorithms that obtain the required answer within correctness, resource and interaction conditions. | 16 | 0.433 |
+| [Notational Engineering (NOT)](not/_index.md) · [Markdown](not/_index.md) | Design expressions, interpretations and transformations that make operations usable and changes recoverable. | 8 | 0.216 |
 
-**Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators, not a required reading load.
+**Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.
 
 ## Connect the contributions
 
 Predicting an oscillating system can require a physical account, a model with stated idealizations, a mathematical consequence, an algorithm for the approximation and notation whose variables and units remain interpretable. A measurement that defeats the idealization returns to the physical and modeling premises; computing more accurately cannot repair that defect. Conversely, a numerical error need not invalidate the physical law.
 
-These are different grounds for a connected result: mathematical validity, physical adequacy, computational feasibility and intelligibility of expression. Each matters only where that claim is made. A pure proof needs no invented physical test, and a notation problem need not start with a physical question. Transferring an algebraic rewrite to a program expression depends on what evaluating that expression does: `q + q = 2*q` remains an identity, while `read() + read()` need not equal `2*read()` when each call obtains a new value.
+These are different grounds for a connected result: mathematical validity, physical adequacy, computational feasibility and intelligibility of expression. Each matters only where that claim is made. A pure proof needs no physical test, and a notation problem need not start with a physical question. Transferring an algebraic rewrite to a program expression depends on what evaluating that expression does: `q + q = 2*q` remains an identity, while `read() + read()` need not equal `2*read()` when each call obtains a new value.
 
 The Reference explains [how the contributions constrain one another (Foundational.Reference:2.2)](suite-reference/03-foundational-reference-2---what-this-suite-connects.md#foundationalreference22---relations-that-form-the-field) and [what preserves or changes the field (Foundational.Reference:2.3)](suite-reference/03-foundational-reference-2---what-this-suite-connects.md#foundationalreference23---the-whole-its-continuity-and-its-boundaries). The connected methods remain independently usable.
 

@@ -4,80 +4,80 @@
 
 > **Pattern type:** Music-and-Dance engineering entry pattern
 
-> **Public result:** a bounded Music-or-Dance development focus with a current characterization, live alternatives or material uncertainty, and the pending decision the result can change
+> **Public result:** a bounded Music-or-Dance development focus identifying the work or practice in question, the subject and relation that matter, what is known about them, and any remaining question for action or inquiry.
 
 ### MDPE.8:0 - Use This When
 
-Use this pattern when a project says it will create, improve, teach, perform, preserve, spread, or modernize
-*music*, *dance*, a *style*, a *school*, or a *scene*, but the next decision still has no clear subject.
+Use this method when a request to create, improve, teach, perform, preserve, spread or modernize music, dance, a style, a school
+or a scene leaves unclear which part of the work matters. The same problem arises when explaining a past performance or practice.
 
-This ambiguity is expensive. A team can improve a recording while the performance Method remains unusable,
-train one dancer while the partnered configuration remains broken, publish a course while no learner transfers
-the capability, or promote a style name while the practice that made it recognizable disappears.
+A team can improve a recording while musicians still cannot play the passage, teach a dancer a figure
+that a pair cannot perform together, or publish a course without establishing whether its learners can use the method in
+practice. A style name can remain familiar after the practice that made it recognizable has disappeared.
 
-When a consequential claim still uses an ambiguous subject, apply C.36.P. [MDPE.Application:5.2](52-mdpe-application-5---participation-learning-recognition-and.md#mdpeapplication52---recover-the-subject-of-a-music-or-movement-claim) develops that Method for music, movement, style, school and event claims; return the restored claim to the change question here.
+When a consequential claim has an unclear subject, use C.36.P. [MDPE.Application:5.2](52-mdpe-application-5---participation-learning-recognition-and.md#mdpeapplication52---recover-the-subject-of-a-music-or-movement-claim) applies it to claims about music, movement, styles, schools and events. Use the clarified claim to answer the question at hand.
 
-The first useful result is a bounded development focus. It contains a current characterization, the live
-alternatives that could still change the work or one material uncertainty that prevents forming them, and the
-pending decision the result can change. It names:
+A bounded development focus states the question, describes the relevant work and identifies what
+must be understood or changed. For a decision, include any alternatives that still matter and any
+uncertainty that affects the choice. Describe the following where they bear on the question.
 
-- the deciding Agent and the decision now waiting;
-- the Music-or-Dance Work that matters;
-- the subject expected to change and what is known about its current state;
-- the competing subjects, Methods, explanations, or change questions that remain live;
-- the uncertainty or observation that can change which alternative is current;
-- the capable Agent, bounded Work, and Method that the Work will enact to make or test the selected change; and
-- the nearest stop, return, or unresolved dependency.
+- the intended use and, for a decision, what is to be chosen and who has the authority to choose
+- the Music-or-Dance work under consideration
+- the subject of the claim or proposed change, with its state at the time in question
+- competing subjects, methods, explanations or changes that would lead to different conclusions
+- any uncertainty that changes the answer, and what evidence could distinguish the live possibilities
+- for a proposed change or test, who could carry it out, what they would do and which method they would use
+- the finding, choice or remaining condition that answers the present question.
 
-Stop when the deciding Agent can select the next bounded question or name the observation needed before that
-selection.
-Do not use this pattern when a direct composition, choreography, improvisation, rehearsal, teaching, production,
-event, preservation, ethnographic, historical, or Systems Engineering Method already names the subject and
-returns the result needed by the current decision.
+Finish when the subject is clear enough to answer the question, choose the next bounded work, or identify
+the specific information needed for either. An earlier observation can already supply that answer.
+Use a direct method when it already identifies the subject and supplies the result. This
+may be a method for composition, choreography, improvisation, rehearsal, teaching,
+production, event support, preservation, ethnography, history or systems engineering.
 
 ### MDPE.8:1 - The Recurring Difficulty
 
-Ordinary domain words often join unlike objects and activities:
+Terms such as “the dance” or “the music” can refer to several different things.
 
 - a **performance occurrence** and the material or recording left by it;
 - a **performing capability** and the Work in which that capability is exercised;
 - a **Method** for composing, moving, partnering, teaching, judging, or organizing and a description of that Method;
-- a **performing whole** made from performer, body or effector, instrument, partner, software, venue equipment,
-  sensing, timing, and correction relations;
-- a **practice or style line** that is produced, taught, recognized, selected, transmitted, and retained through
-  many Work occurrences and several populations; and
-- a **medium, support System, or supporting capability**: a venue, school, festival series, archive, platform,
-  instrument-making capability, or software service, for example.
+- a performing whole, including the performer, body or effector, instrument, partner,
+software or venue equipment and their relations in sensing, timing and correction,
+- a practice or style that participants produce, recognize, select,
+teach, transmit and retain across performances and populations,
+- a medium or source of support, such as a venue, school, festival
+series, archive, platform, instrument-making capability or software service.
 
-Several of these can be active at once. During one dance, a dancer or pair performs Dance Work in which bodily regulation, movement, partner coordination, phrase shaping, and participation all occur. That Work can enact several Methods at the relevant holonic or functional positions, including a style-specific Method. During one music performance, a musician or robot performs Music Work in which effector control, attacks and continuous sound, phrase shaping, and ensemble coordination occur; that Work can likewise enact several Methods. This simultaneous organization is not a first–then Method unfolding. Rehearsal before performance or building an instrument before playing it is a different relation.
+In a single dance a person or pair can regulate movement, coordinate with a partner, shape a phrase and participate in a social practice at the same time. The work can enact several methods, including a style-specific method. A musician or robot can control an effector, produce attacks and sustained sound, shape a phrase and coordinate with an ensemble in the same performance. Identify which actions form parts of that work and which conditions enable it. Rehearsing before the performance and building an instrument before playing it are temporal relations.
 
-When the project does not distinguish these subjects, evidence migrates between claims. One performance becomes
-“proof” of cultural continuation; one video becomes “proof” of transmission; one course description becomes
-“proof” of capability; or one autonomous robot performance becomes “proof” that the robot chose how the practice
-should develop.
+Ask what the evidence establishes about its subject. A performance can show what the participants did, a video can preserve a record,
+and a course description can state what the course proposes to teach. For transmission, examine what the recipient received and enacted. For continuation, examine use
+over time. To establish capability, examine the performer’s work in the claimed conditions. A robot’s autonomous playing can establish
+its contribution to a performance. A claim about who chose the development of the practice needs evidence about that choice.
 
 ### MDPE.8:2 - Solution
 
-Produce a **bounded Music-or-Dance development focus** that identifies the subject and question needed to guide the next Work.
+Use the **bounded Music-or-Dance development focus** to connect the question with the subject, performance or practice that can answer it.
 
 
-Revisit these distinctions whenever new evidence changes the question.
+Revisit a distinction when new evidence changes the question or the answer that depends on it.
 
-#### MDPE.8:2.1 - Begin with the pending decision
+#### MDPE.8:2.1 - Begin with the question or decision
 
-Write the decision in ordinary language and name the Agent who will use the result. Examples:
+State the question in the terms of the work. For a decision, identify the choice and who will use the result. For example, ask one of the following.
 
 - Which Zouk teaching and partnering change should we trial next?
 - Can this robot–instrument configuration perform the selected material under live tempo changes?
-- Which capability prevents a pair from transferring a figure into social improvisation?
+- What limited the pair’s use of this figure in the recorded social improvisation?
 - Should this festival change its judging and presentation arrangement?
 - What must be rebuilt before this nearly lost repertoire can be performed again?
 
-If no decision, action, or later use can be named, state that missing decision or use as the blocker.
+If the subject remains unclear, say which ambiguity prevents an answer. A record that already settles what happened can complete a question about that performance.
 
-#### MDPE.8:2.2 - Name the subject expected to change
+#### MDPE.8:2.2 - Identify the subject of the claim or change
 
-Choose the narrowest subject that still changes the decision. Common subject kinds include:
+Choose the narrowest subject that still covers the question. Common subjects include the following.
 
 - musical or movement material;
 - one performance occurrence or its production and presentation arrangement;
@@ -88,15 +88,15 @@ Choose the narrowest subject that still changes the decision. Common subject kin
 - a supporting event, school, venue, archive or platform; or
 - the architecture by which a practice or style is produced and reproduced.
 
-If two subjects can change independently, keep two questions or state their relation; do not hide both under
-*the dance* or *the music*.
+When two subjects can change independently, ask separate questions or explain their relation. A new
+recording arrangement and a new performing method may have different consequences for the music.
 
-State whether the subject and relation exist now, are proposed for possible future realization, are known only
-through a qualified source, or remain unavailable.
+Distinguish what existed at the time in question, what is proposed, what a qualified source establishes and what remains
+unknown or unavailable. A score can establish the intended phrase, and a performance record can establish what was played.
 
 #### MDPE.8:2.3 - Recover the Work and Method that matter
 
-Name the bounded Work whose result can change the decision and the domain Method it enacts. Distinguish:
+Identify the work and method relevant to the question. For a proposal, describe the work that would use the method. For a past event, establish what its participants did. Look for distinctions such as the following.
 
 - who performs the Work, which other participants support it, and which material or descriptions are used;
 - a reusable Method from its MethodDescription and from dated Work;
@@ -105,152 +105,152 @@ Name the bounded Work whose result can change the decision and the domain Method
 - capability-development Work from later Work in which capability is exercised; and
 - enabling or build-the-builder Work from the performance it later enables.
 
-Use Systems Engineering when the changed subject is an engineered performer, instrument, interface, venue,
-platform, school, archive, or other selected System. Use Method Engineering when the changed subject is a Method,
-Method family, MethodDescription, Method base, enactment support, or Method trial. This pattern adds the
-Music-and-Dance distinctions and receiving decision; it does not repeat the general engineering Method.
+Use systems engineering for an engineered performer, instrument, interface, venue, platform, school
+or archive when the question concerns its design or operation. Use FPF Core’s general method-development
+guidance for a method, family of methods, description, collection, support for enactment or trial.
+Keep the musical or dance work and the result required from that specialist contribution explicit.
 
-#### MDPE.8:2.4 - Bound a cultural claim only when it changes the decision
+#### MDPE.8:2.4 - Identify the cultural relation at issue
 
-If the question concerns a style, school, scene, tradition, or practice, state which relation is current:
-generation, transmission, reconstruction, recognition, selection, retention, loss, or a feedback effect on later
-production. Name the population, place, period, carriers, and observation needed by the decision.
+For a question about a style, school, scene, tradition or practice, identify the relevant process. It might concern
+generation, transmission, reconstruction, recognition, selection, retention, loss or the effect of an earlier
+event on later production. Identify the population, place, period, carriers and evidence the claim depends on.
 
-A style name, press attention, official listing, course, archive, platform count, or one performance supplies no general continuation claim. Use `C.36` to frame the cultural-evolution relations and evidence needed by this decision. If cultural wording still hides the object, relation or claim, use `C.36.P` to clarify it, then return to that decision. Use `MDPE.21` when the project must design how a style is produced and reproduced, `MDPE.19` for present continuation, and `MDPE.20` for competing future trajectories.
+A style name can document how a practice was labelled, an archive can preserve its materials, and a platform count can show measured activity. A continuation claim needs evidence of the relevant practice over time. Use C.36 to identify the cultural relation and its grounds, and C.36.P when the wording still hides the subject. MDPE.21 addresses how to design the production and reproduction of a style, MDPE.19 its continuation under specified conditions, and MDPE.20 competing future trajectories.
 
 #### MDPE.8:2.5 - Keep live alternatives and uncertainty visible
 
-Retain competing subjects or explanations that would change the next Work. When the project cannot yet form
-alternatives, state the material uncertainty—for example, individual capability versus partnered coordination,
-a changed artifact versus a changed Method, or local recurrence versus wider recognition—and an observation that could resolve it and change the next Work. Alternatives that answer different decisions remain separate questions.
+Retain competing subjects or explanations when they would change the answer or the next work. A difficulty with a turn could concern individual capability or partner
+coordination. A change in an artifact could leave the performing method unchanged. Identify what could discriminate the live accounts, using available evidence
+where sufficient. If the evidence leaves a question open, state what remains possible. Treat local recurrence and wider recognition at their respective scopes.
 
-#### MDPE.8:2.6 - Select the first result that can change Work
+#### MDPE.8:2.6 - Select a contribution that can answer the question
 
-Name the direct Method or DPF result that can answer the change question. For example:
+Use the available result or method suited to the question. For example, the following methods can supply different contributions.
 
-- `MDPE.9` or a direct composition, choreography, improvisation, or rehearsal-prototyping Method for several
-  performance candidates and their dispositions;
-- `MDPE.10` or a direct capability-development Method for demonstrated transfer to representative Work;
-- `MDPE.3` or a direct ensemble, partnering, staging, instrument-interface, or Systems Engineering Method for a
-  tested performing whole;
-- `MDPE.12` or a direct observation and comparison Method for a bounded decision;
-- `MDPE.17` or a direct teaching and transmission Method for receiving enactment; or
-- a direct historical, ethnographic, causal, preservation, production, event, or organizational Method when that
-  Method already returns the needed result.
+- MDPE.9 or a composition, choreography, improvisation or rehearsal-prototyping method can
+construct or compare performance possibilities, including an already adequate candidate,
+- MDPE.10 or a capability-development method can specify a needed capability, prepare a performer for it or assess evidence of transfer to representative work,
+- MDPE.3 or an ensemble, partnering, staging, instrument-interface or systems engineering method
+can establish a suitable performing configuration or what an actual configuration allowed,
+- MDPE.12 or an observation and comparison method can assess the evidence for a specified question,
+- MDPE.17 or a teaching and transmission method can design a handover or assess what the recipient enacted and what the supplied material, instruction or demonstration contributed, or
+- a historical, ethnographic, causal, preservation, production, event or
+organizational method can supply its own result when it covers the question.
 
-If the result is unavailable, name what is missing—a MethodDescription, capable Agent, input, evidence,
-authority, access, or relation—what decision it blocks, and what observation permits another attempt.
+If a needed contribution is unavailable, identify it. It may be a method description, performer, input, evidence, authority, access or relation. State
+which conclusion or action depends on it and give any answer already supported. Indicate a way to obtain more when the task requires it.
 
 ### MDPE.8:3 - First Useful Result
 
-A short result can be written as:
+For example, a short account can use the following form.
 
-> **[Deciding Agent]** must decide **[decision]** about **[typed Music-or-Dance subject]**. Current Work and
-> configuration are **[current characterization]**. **[Alternative A]** and **[alternative B]** remain live, or
-> **[material uncertainty]** must be resolved before useful alternatives can be formed. **[Observation]** can change which
-> question or option is current. The project will use **[Method or supplied DPF result]** to obtain **[first
-> result]**. It stops or returns when **[condition]**.
+> The question is **[what needs explaining, designing or deciding]** about **[the work, practice or other subject]**.
+> For a past event or existing condition, **[the evidence]** supports **[this finding]**. For a design, state **[the proposal and its premises]**.
+> Where alternatives remain open, state **[what the evidence distinguishes]** and **[any attainable observation that could change the answer]**.
+> For a decision, **[the authorized decision-maker]** can use **[the applicable finding or method]** to consider **[the available choices]**.
+> The result is **[a supported conclusion, a selection or the specific condition still needed]**.
 
-Use this description to guide the next decision. Establish any claimed change from observations of the result.
+Use the account for the question it answers. For a claim that a proposed change altered the work, establish what occurred and how the change contributed.
 
 ### MDPE.8:4 - Worked Cases
 
 #### MDPE.8:4.1 - A social-dance style project
 
-A local Zouk school says it wants dancers to remain responsive to unfamiliar partners while using a wider range
-of music. In the present class, dancers reproduce the taught sequence with familiar partners, but transfer to
-social Work has not been observed. Two questions remain live:
+Suppose a local Zouk school wants dancers to respond to unfamiliar partners over a wider range
+of music. In class the dancers reproduce a taught sequence with familiar partners. The school
+has no observation yet of transfer to social dancing. It considers two possible difficulties.
 
-- does the limiting relation lie in individual movement capability and therefore call for changed embodied
-  exercises; or
-- does it lie in partnered cue–response and context-conditioned retrieval and therefore call for rotating-partner,
-  varied-music practice?
+- The transfer task may demand individual movements the dancers cannot yet
+execute. Suitable embodied exercises could help if that is the difficulty.
+- The difficulty may lie in reading and responding to a partner’s cues or retrieving a
+response under changed conditions. Rotating partners or varying music might address it.
 
-The material uncertainty is whether a familiar-partner classroom success hides the first or second limitation.
-A bounded social trial with unfamiliar partners and varied music can inform the choice. Record
-partner-readable response, loss of balance, recovery, and the style-bearing timing distinction. The teachers
-therefore select the partnered-transfer question for the next trial while retaining the individual-capability
-question if failure remains across partners. The result is a development focus, not the claim that the wider
-Zouk practice has changed.
+A recording or observation of social dancing could establish what the dancers can already do.
+In this case the teachers lack that evidence and choose a trial with unfamiliar partners and
+varied music. They examine the partner-readable response, balance, recovery and the timing that
+distinguishes the style. Where a dancer has trouble across partners, the teachers can investigate
+the individual movement as well. The immediate result is a question about partnered transfer
+within the school. Wider change in Zouk practice would need evidence beyond the trial.
 
-Consider a constructed continuation. During the trial, the teacher compares familiar and unfamiliar partners
-with the same recording. The learner maintains balance in both conditions but continues the taught sequence
-when the unfamiliar partner pauses. The current question becomes: what prevents a usable response to an
-unexpected partner cue? The observed balance and familiar-sequence performance remain available; the result
-does not justify replacing the whole movement programme.
+In a constructed continuation, the teacher compares familiar and unfamiliar partners
+using the same recording. The learner maintains balance in both conditions and
+continues the taught sequence when the unfamiliar partner pauses. The immediate
+question is whether the learner recognized that cue and what the response shows. The
+observed balance and familiar-sequence performance remain available as evidence.
 
-The teachers select `MDPE.10` to distinguish failure to recognize the cue from difficulty enacting a suitable
-response, then develop the contribution that is missing. If examination instead finds incompatible cue
-conventions between partners, `MDPE.3` supplies the configuration question before more individual training.
-The observation narrows the work; it establishes neither a unique cause nor an acquired capability. The wider
-goal of responsive partnering across music remains, but the next action now addresses a particular receiving
-failure rather than adding more figures.
+The teachers use MDPE.10 to examine recognition of the cue and ability to
+enact a suitable response. If the learner needs more practice, the teachers can help them
+develop that part. If the partners used incompatible cue conventions,
+MDPE.3 helps assess their joint configuration. The observed response leaves
+those explanations open. The school can report what happened in the trial
+or continue its broader work on responsive partnering across music.
 
 #### MDPE.8:4.2 - Shimon
 
-Shimon can continue seeded material and perform the result during a bounded music occurrence. That supports
-composition and performance claims about the robot and its configuration. It does not show that Shimon selected
-the later practice-development question. If the human team chooses how the composition Method, instrument
-interface, or public practice should change, the team is the practice-developing Agent; Shimon is the performing
-Agent only for the Work it actually performs.
+The Georgia Tech account describes Shimon continuing seeded material and playing the result.
+It supports a bounded claim about composition and performance by this robot in its configuration.
+To establish who chose a later change to the composition method, instrument interface or
+public practice, use evidence of that decision. When the human project team makes the choice
+and Shimon plays the material, attribute those contributions to the respective participants.
 
 #### MDPE.8:4.3 - A dance party
 
-At one party, muscles and sensing function, a dancer executes movements, partners coordinate, phrases unfold,
-couples dance several styles, organizers run the event, and participants reproduce a social-dance culture. These
-descriptions can all be true at once. A project that wants to improve a turn therefore asks whether the changed
-subject is body capability, a figure Method, partnered timing, floor organization, teaching, or the style's wider
-recognition.
+At a dance party, bodily regulation, movement, partnered coordination, phrase shaping and
+event support can occur together. Evidence of a dancer’s particular turn can answer a
+question about that turn. A project to improve it may instead need to examine coordination,
+the figure method itself, floor organization, teaching or individual capability. Claims about the wider production
+and recognition of a style need evidence from the relevant participants and occasions.
 
 #### MDPE.8:4.4 - *The Call*
 
-The project joins a songbook, choir Work, recordings, datasets, models, an installation, and participant rules.
-“Develop AI music” is too coarse. One useful question may concern choir–model musical material; another the
-recording and model System; another the proposed participant practice. Each receives its own Method and evidence.
-Produced artifacts and an exhibition do not by themselves establish a durable style or later cultural retention.
+Holly Herndon and Mat Dryhurst’s project *The Call* includes a songbook, choir work, recordings, datasets, models, an
+installation and rules for participation. A question about choir–model material, one about the recording or model
+system, and one about the proposed participant practice each need a suitable method and evidence for the claim. The documented artifacts and exhibition
+can answer what the project produced. Establishing a durable style requires evidence of later uptake and retention.
 
 ### MDPE.8:5 - Checks and Common Repairs
 
 | Check | Failure it prevents | Repair |
 | --- | --- | --- |
-| Decision and user are visible | A broad topic replaces a working problem. | Name the deciding Agent and the choice or Work that waits. |
-| Changed subject is typed | *Music*, *dance*, *style*, or *practice* hides unlike objects. | Name material, capability, Method, Work, System, relation, or cultural process. |
-| Actual and proposed are separate | A brief, course, score, or model is treated as realization. | State the possible future and the Work and observation needed to realize and check it. |
-| Agent and participating Systems are separate | Tools, records, or platforms act by grammar; or `System` hides the practitioner. | Use the ordinary Agent name for the agentive holder and the technical `U.System` basis where needed. |
-| Relation among scales is stated | A vertical list is read as a first–then Method unfolding or a holonic level merely because of its layout. | Name simultaneity, part–whole, first–then, enabling, or capability-development relation. |
-| Live alternatives or material uncertainty remain visible | The first plausible question hides another subject or explanation that would change Work. | State the alternatives and the observation that can select among them; if they cannot yet be formed, name the material uncertainty. |
-| First result changes action | The result is only an inventory or terminology lesson. | Name the Method, observed difference, next decision, and stop or return. |
+| Question and use | A broad topic hides the working problem. | Name the finding, design or choice needed. For a decision, identify the choice and its authorized holder or the unresolved authority. |
+| Subject | “The music” or “the dance” hides several subjects. | Identify the material, capability, method, performance, system, relation or cultural process the question concerns. |
+| Proposal and occurrence | A brief, course, score or model is cited as proof of performance. | State what the proposal specifies. Use evidence of the event or its outcome for a claim about what occurred. |
+| Performer and other contributors | The credited participant differs from the one that acted. | Name who did what and which instrument, software, record or venue contributed. Give the technical system or assignment when attribution depends on it. |
+| Relation among scales | The order of a list is taken for a performance sequence. | Establish which actions occur together, which constitute the whole, which precede or enable another, and where capability is developed. |
+| Alternatives and uncertainty | The first explanation obscures another that matters. | Compare any live accounts and give the supported answer. If no account can yet be formulated, identify the missing information. If several remain, identify what could distinguish them. |
+| Result | Describing the material leaves the question unanswered. | Give the supported finding, design or available next action. Where the answer depends on missing evidence, identify the specific gap. |
 
 
 ### MDPE.8:6 - Sources and Epistemic Boundaries
 
 | Source line | Contribution used here | Boundary |
 | --- | --- | --- |
-| Current FPF `E.10.ARCH`, `C.36.P`, `A.3.1`, `A.3.2`, `A.15.1`, `C.32.MWA`, and `C.36` | Architecture for domain precision-restoration guidance and general cultural wording routes; Method, description and Work distinctions; non-isomorphic practice structures; cultural-evolution discipline. | FPF does not supply the Music-and-Dance entry cues, representative Work, or domain change question. |
-| [Renata Peçanha interview, Zoukology](https://zoukology.com/renata-history/) | One practitioner account connecting music, partner experimentation, movement, teaching, choreography, criticism, and continuity. | It is not independent whole-field history and establishes neither sole origin nor universal recognition or effectiveness. |
-| [Holly Herndon and Mat Dryhurst, *The Call*, Serpentine](https://www.serpentinegalleries.org/whats-on/holly-herndon-mat-dryhurst-the-call/) | Distinguishable musical, choir, recording, dataset, model, installation, and participant subjects inside one project. | The project record establishes artifacts and an exhibition, not a general AI-art Method, durable style, or later retention. |
-| [Georgia Tech Shimon account](https://news.gatech.edu/news/2017/06/13/robot-uses-deep-learning-and-big-data-write-and-play-its-own-music) | A performing robot case that separates bounded autonomous composition/performance from later practice development. | The public account does not establish robot authority over the later project or population-level cultural continuation. |
-| [Pavel Sobiray, Street Tango Concept](https://tangonuevo.ru/stc7eng) | A projective description plus exercises, teaching, and participant reports supporting a bounded authorial practice. | The creator source does not establish independent superiority, sole origin, whole-field recognition, or long-term retention. |
+| FPF E.10.ARCH, C.36.P, A.3.1, A.3.2, A.15.1, C.32.MWA and C.36 | Guidance for placing domain precision-restoration advice, recovering the subject of cultural wording, distinguishing methods, descriptions and work, comparing differently organized practice structures, and investigating cultural change. | Apply them to the music or dance work, participants and evidence relevant to the question. |
+| [Renata Peçanha interview, Zoukology](https://zoukology.com/renata-history/) | Peçanha’s account links music, partner experiments, movement, teaching, choreography, criticism and continuity in her own practice. | Claims about sole origin, effectiveness or recognition across the field require independent evidence of the wider claim. |
+| [Holly Herndon and Mat Dryhurst, *The Call*, Serpentine](https://www.serpentinegalleries.org/whats-on/holly-herndon-mat-dryhurst-the-call/) | The project record identifies the choir work, songbook, recordings, dataset, model, installation and proposed participation. | The exhibition and its artifacts can be documented directly. A claim about a general method needs evidence beyond this project. For later retention, establish the relevant practice in the population and period claimed. |
+| [Georgia Tech Shimon account](https://news.gatech.edu/news/2017/06/13/robot-uses-deep-learning-and-big-data-write-and-play-its-own-music) | Evidence of the robot’s contribution to bounded composition and performance. | Attribute later project choices to the agent that made them. Use evidence from the relevant population for a claim about cultural continuation. |
+| [Pavel Sobiray, Street Tango Concept](https://tangonuevo.ru/stc7eng) | The author’s proposed Street Tango Concept, exercises, teaching and participant reports document a bounded practice. | Use independent evidence for claims of superiority, sole origin or recognition across the field. For long-term retention, establish continued use during the period claimed. |
 
-Recheck only a claim whose source or receiving use changed.
+Reconsider the conclusions that depend on a changed source, assumption or receiving use.
 
 ### MDPE.8:7 - Relations
 
-- `MDPE.1` uses a compatible development focus—current characterization, live alternatives or uncertainty, and the pending decision the result can change—to frame one project; it does not have to follow `MDPE.8` as a fixed stage.
+- MDPE.1 can use a suitable account of the subject, current conditions and any alternatives to frame a project. An existing brief can already supply that account.
 
 - `MDPE.21` and `MDPE.24` become relevant when the question concerns style-production architecture or the
-  formation of a new practice whole.
-- `MDPE.9`, `MDPE.10`, `MDPE.3`, `MDPE.11`, `MDPE.12`, and `MDPE.17` return different domain results. One result
-  does not establish the others.
-- `MDPE.14` uses the bounded development focus when the named subject, live alternatives or uncertainty, affected
-  Systems, or current decision changes the practice conflict.
-- `MDPE.16` uses it when the current subject, later use, live alternatives or material uncertainty changes which
-  branches should remain available.
-- `MDPE.18` uses it when the current practice subject or decision changes which source, lineage, reconstruction,
-  or gap claims are worth recovering. The focus does not itself supply those claims.
-- Systems Engineering supplies results for selected engineered Systems. Core's Method-development patterns supply results for
-  changed Methods. MDPE retains the Music-and-Dance subject, domain Method, representative Work, evidence, and
-  receiving decision.
+  identity of the whole that organizes a practice, including a question about its formation or continuity.
+- MDPE.9, MDPE.10, MDPE.3, MDPE.11, MDPE.12 and MDPE.17 supply different methods for designing, developing capability, performing,
+observing or transmitting music and dance. Use the contribution that the particular question needs.
+- MDPE.14 can use the account of the subject, participating systems and
+remaining alternatives when assessing or resolving a conflict in practice.
+- MDPE.16 uses the subject, intended use and any material uncertainty to determine
+which performance or development options are available or worth retaining.
+- MDPE.18 can use the clarified subject to identify which sources, lineages, reconstructions
+or gaps matter. The historical account relies on evidence about that history.
+- Systems engineering can address a selected engineered system. FPF Core’s
+method-development guidance can address a method. Bring the result back to the music
+or dance work, its participants, its evidence and the question it must answer.
 
 
 ### MDPE.8:End

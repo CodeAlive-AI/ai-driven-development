@@ -15,7 +15,7 @@ Start with the [Readme](_index.md#operations-management-principles-framework-rea
 
 # Table of Contents
 
-Use the Readme for worked connections across several operating questions. Use this Table of Contents to find an individual method by difficulty, needed result or PatternID. Pattern bodies contain the authoritative moves, cases, evidence limits, and stops.
+Use the Readme for worked connections across several operating questions. Use this Table of Contents to find an individual method by difficulty, needed result or PatternID. Each method explains how to do the work, what its evidence supports and when the result is sufficient.
 
 `OPS.*` is this framework's PatternID namespace. Numbers are stable addresses; the Parts give reader order and do not prescribe Work order.
 
@@ -64,28 +64,28 @@ Use the Readme for worked connections across several operating questions. Use th
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | [OPS.23 - Connect Operational Reasoning — The Operational Mantra](28-ops-23---connect-operational-reasoning-the-operational-mantr.md) | Stable | How do local work, accepted results, resources and receiving conditions fit together, and what does a changed answer reopen? | OPS.1; relevant OPS.3–OPS.22; FPF A.1.STM |
-| 2 | [OPS.1 - Identify the Operating System, Commitments, and Flow Units](29-ops-1---identify-the-operating-system-commitments-and-flow-u.md) |  Stable  | Which actual operation, commitments, subjects, and units should orient this decision? | FPF A.1.SCR, A.6.REL, C.2.1, A.10 |
+| 2 | [OPS.1 - Identify the Operating System, Commitments, and Flow Units](29-ops-1---identify-the-operating-system-commitments-and-flow-u.md) |  Stable  | Which operation, commitments, subjects and units matter to this decision? | FPF A.1.SCR, A.6.REL, C.2.1, A.10 |
 | 3 | [OPS.2 - Select Work-Management Views and Coordination Methods](30-ops-2---select-work-management-views-and-coordination-method.md) |  Stable  | Which project, process, case, queueing, control, or mixed views and coordination Methods answer the current questions? | OPS.1; FPF A.22, C.29; conditional C.30.LCA, B.2.5, C.27.TA |
 
 ## Part II — Recover Operating Subjects and Maintain Current State
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 4 | [OPS.3 - Distinguish Operating Subjects, Cases, Queues, Resources, and Records](31-ops-3---distinguish-operating-subjects-cases-queues-resource.md) |  Stable  | Which exact subjects and relations sit behind the cases, Work items, queues, resources, events, and records? | OPS.1, OPS.2; FPF A.6.REL, C.2.1; conditional B.2.5 |
+| 4 | [OPS.3 - Distinguish Operating Subjects, Cases, Queues, Resources, and Records](31-ops-3---distinguish-operating-subjects-cases-queues-resource.md) |  Stable  | Which subjects and relations do you need to distinguish in the cases, Work items, queues, resources, events, and records? | OPS.1, OPS.2; FPF A.6.REL, C.2.1; conditional B.2.5 |
 | 5 | [OPS.4 - Keep Current Operating State Recoverable Across Participants](32-ops-4---keep-current-operating-state-recoverable-across-part.md) |  Stable  | Which qualified current claims let named participants decide, resume, and coordinate? | OPS.2, OPS.3; FPF C.2.1, A.10, A.15.8; conditional C.30.LCA |
 
 ## Part III — Admit Demand and Continue Cases
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 6 | [OPS.5 - Admit Work and Limit Starts](33-ops-5---admit-work-and-limit-starts.md) |  Stable  | Which exact eligible demand may enter now under bounded start conditions? | OPS.2, OPS.3, OPS.4; FPF C.11, A.10 |
+| 6 | [OPS.5 - Admit Work and Limit Starts](33-ops-5---admit-work-and-limit-starts.md) |  Stable  | Which eligible work may the decision holder admit now, under what start conditions, and what demand remains? | OPS.2, OPS.3, OPS.4; FPF C.11, A.10 |
 | 7 | [OPS.6 - Continue Cases and Handle Exceptions](34-ops-6---continue-cases-and-handle-exceptions.md) |  Stable  | What Work may happen next in this admitted case, and what evidence supports progression? | OPS.5; FPF A.15.7, C.11, A.10 |
 
 ## Part IV — Revise Priority and Existing Commitments
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 8 | [OPS.7 - Manage Aging, Urgency, and Service Commitments](35-ops-7---manage-aging-urgency-and-service-commitments.md) |  Stable  | Does temporal or consequence evidence revise current priority or an existing bounded commitment? | OPS.6 evidence; FPF C.27.TA; conditional C.27, C.11 |
+| 8 | [OPS.7 - Manage Aging, Urgency, and Service Commitments](35-ops-7---manage-aging-urgency-and-service-commitments.md) |  Stable  | Do timing or consequences warrant revising the present priority or an existing commitment? | OPS.6 evidence; FPF C.27.TA; conditional C.27, C.11 |
 
 ## Part V — Coordinate Queues and Treat the Current Constraint
 
@@ -94,7 +94,7 @@ Use the Readme for worked connections across several operating questions. Use th
 | 9 | [OPS.8 - Coordinate Queues and Buffers](36-ops-8---coordinate-queues-and-buffers.md) |  Stable  | What is ready for which service, and what should release and protection policy control? | OPS.3, OPS.4; conditional OPS.9–OPS.11; FPF C.16, A.22, E.18 |
 | 10 | [OPS.8.1 - Choose Work-Release Rules When Earlier Work Can Return](37-ops-8-1---choose-work-release-rules-when-earlier-work-can-re.md) | Stable | When may new work start if an earlier result can return, and what resource time must remain available? | OPS.8, OPS.5; conditional OPS.10.1 and OPS.10.2, OPS.15.1, MMP.8 and MMP.8.SD |
 | 11 | [OPS.8.2 - Use Protective Capacity While Keeping It Available](38-ops-8-2---use-protective-capacity-while-keeping-it-available.md) | Stable | Which auxiliary work can use idle reserve while its completion or interruption preserves the required service? | OPS.8; conditional OPS.10.1 and OPS.10.2, OPS.12, C.40.OI and C.40.DC, HCD.2, C.39.MF and A.3.1.WT |
-| 12 | [OPS.9 - Diagnose and Treat the Current Operating Constraint](39-ops-9---diagnose-and-treat-the-current-operating-constraint.md) |  Stable  | Which current limiting relation and treatment are supported against a serious rival? | OPS.3, OPS.4; conditional OPS.8, OPS.10, OPS.11; FPF C.16, C.28, C.11.CRC |
+| 12 | [OPS.9 - Diagnose and Treat the Current Operating Constraint](39-ops-9---diagnose-and-treat-the-current-operating-constraint.md) |  Stable  | What limits the result now? Would comparing rival explanations change the proposed treatment? | OPS.3, OPS.4; conditional OPS.8, OPS.10, OPS.11; FPF C.16, C.28, C.11.CRC |
 
 ## Part VI — Qualify Capacity and Coordinate Operating Structures
 
@@ -102,8 +102,8 @@ Use the Readme for worked connections across several operating questions. Use th
 | :--- | :--- | :--- | :--- | :--- |
 | 13 | [OPS.10 - Qualify Operating Capacity Under Variability](40-ops-10---qualify-operating-capacity-under-variability.md) |  Stable  | What fits usable resource windows, and what service claim does the variability basis support? | OPS.3, OPS.4; conditional OPS.8, OPS.9, OPS.11; FPF C.16, C.27.TA, C.11.CRC |
 | 14 | [OPS.10.1 - Construct and Compare Operating Capacity Models](41-ops-10-1---construct-and-compare-operating-capacity-models.md) | Stable | Which service model answers the capacity question, and how do variation, dependence and the completion criterion change the comparison? | OPS.10, OPS.11.1, OPS.15.1; conditional OPS.10.2, MMP.7 and MMP.13, CMP.9; FPF C.29, C.11.CRC |
-| 15 | [OPS.10.2 - Construct and Revise a Feasible Deadline Schedule](42-ops-10-2---construct-and-revise-a-feasible-deadline-schedule.md) | Stable | How can a schedule meet the deadline with precedence, shared resources and calendar gaps; which starts can be delayed, and what must change after a disruption? | OPS.10, OPS.11.1, OPS.15.1; conditional OPS.10.1, OPS.7 and OPS.8, MMP.10, CMP.4 and CMP.5; FPF C.29 |
-| 16 | [OPS.11 - Coordinate Interacting Operating Structures](43-ops-11---coordinate-interacting-operating-structures.md) |  Stable  | Which actual couplings can defeat a local plan, and which decisions must be coordinated? | OPS.3, OPS.4; conditional OPS.8–OPS.10; FPF A.22, E.18.NET, C.11.CRC |
+| 15 | [OPS.10.2 - Construct and Revise a Feasible Deadline Schedule](42-ops-10-2---construct-and-revise-a-feasible-deadline-schedule.md) | Stable | Which schedule can meet the deadline under the dependencies, resource sharing and calendar gaps? Which starts can wait, and what must change after a disruption? | OPS.10, OPS.11.1, OPS.15.1; conditional OPS.10.1, OPS.7 and OPS.8, MMP.10, CMP.4 and CMP.5; FPF C.29 |
+| 16 | [OPS.11 - Coordinate Interacting Operating Structures](43-ops-11---coordinate-interacting-operating-structures.md) |  Stable  | Which dependencies among operations can defeat a local plan, and which decisions must be coordinated? | OPS.3, OPS.4; conditional OPS.8–OPS.10; FPF A.22, E.18.NET, C.11.CRC |
 | 17 | [OPS.11.1 - Construct and Reconcile Operating Models Across Scales](44-ops-11-1---construct-and-reconcile-operating-models-across-s.md) | Stable | How can an operating arrangement be constructed from the needed result, and its local routes, shared resources and receiving completion be modeled together? | OPS.11, OPS.19; conditional OPS.15.1, MMP.10 and MMP.18; FPF A.22.CGUS, E.18.3, C.29 |
 
 ## Part VII — Protect Human Conditions and Establish Service Commitments
@@ -111,32 +111,32 @@ Use the Readme for worked connections across several operating questions. Use th
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
 | 18 | [OPS.12 - Protect Human Conditions in Operating Decisions](45-ops-12---protect-human-conditions-in-operating-decisions.md) |  Stable  | Which feasible operating intervention protects affected people and supports the service? | OPS.3; conditional OPS.10, OPS.13–OPS.15; FPF C.16, A.10, A.11.OP |
-| 19 | [OPS.13 - Align Commitments, Resources, and Service Outcomes](46-ops-13---align-commitments-resources-and-service-outcomes.md) |  Stable  | What service can the authorized parties agree under actual resources, evidence and conditions? | conditional OPS.10, OPS.12, OPS.14, OPS.15, OPS.18; FPF A.10, C.16 |
+| 19 | [OPS.13 - Align Commitments, Resources, and Service Outcomes](46-ops-13---align-commitments-resources-and-service-outcomes.md) |  Stable  | What service can the authorized parties agree given the available resources, evidence and operating conditions? | conditional OPS.10, OPS.12, OPS.14, OPS.15, OPS.18; FPF A.10, C.16 |
 
 ## Part VIII — Compare Operating Consequences and Build Useful Accounts
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
 | 20 | [OPS.14 - Relate Throughput, Cash, and Operating Consequences](47-ops-14---relate-throughput-cash-and-operating-consequences.md) |  Stable  | What service, resource, payment and receipt differences change the operating choice? | conditional OPS.10, OPS.12, OPS.13, OPS.15; FPF C.16, A.10, A.11.OP |
-| 21 | [OPS.15 - Build a Decision-Specific Operating Account](48-ops-15---build-a-decision-specific-operating-account.md) |  Stable  | Which observations and meanings support the receiving operating decision? | OPS.3; conditional OPS.4, OPS.12–OPS.14, OPS.18; FPF C.16, A.10, E.13, A.11.OP |
+| 21 | [OPS.15 - Build a Decision-Specific Operating Account](48-ops-15---build-a-decision-specific-operating-account.md) |  Stable  | Which observations and meanings support the requested operating claim or decision? | OPS.3; conditional OPS.4, OPS.12–OPS.14, OPS.18; FPF C.16, A.10, E.13, A.11.OP |
 | 22 | [OPS.15.1 - Derive Operating Quantities from Events](49-ops-15-1---derive-operating-quantities-from-events.md) | Stable | How do events yield waiting, resource occupancy and completion quantities when work overlaps, returns or remains unfinished at the cutoff? | OPS.15; conditional OPS.11.1; FPF C.16, C.29; MMP.7 for an observation model |
 
 ## Part IX — Improve Methods, Control Quality, Reconcile Work, and Continue Practice
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 23 | [OPS.16 - Decide Whether and How to Change an Operating Method](50-ops-16---decide-whether-and-how-to-change-an-operating-metho.md) |  Stable  | What does bounded evidence support: adopting, revising or branching an admitted operating Method; retaining or revising a candidate account; testing Method identity; stopping; or further observation? | OPS.15, OPS.17 and OPS.18; applicable OPS.10–OPS.13, OPS.19; conditional OPS.11.1, OCE.11; A.3.1.WT, A.3.1.CC, A.3.1.FT, C.11.MV, A.3.1.MV and A.3.1.MI; FPF A.3.1.MR, A.3.1, A.3.2, A.15.1, A.15.2, A.10, C.16 |
+| 23 | [OPS.16 - Decide Whether and How to Change an Operating Method](50-ops-16---decide-whether-and-how-to-change-an-operating-metho.md) |  Stable  | What does bounded evidence support: continuing an established use, adopting, revising or branching an admitted operating Method; retaining or revising a candidate account; testing Method identity; stopping; or further observation? | OPS.15, OPS.17 and OPS.18; applicable OPS.10–OPS.13, OPS.19; conditional OPS.11.1, OCE.11; A.3.1.WT, A.3.1.CC, A.3.1.FT, C.11.MV, A.3.1.MV and A.3.1.MI; FPF A.3.1.MR, A.3.1, A.3.2, A.15.1, A.15.2, A.10, C.16 |
 | 24 | [OPS.17 - Compare and Refresh Operations Methods](51-ops-17---compare-and-refresh-operations-methods.md) |  Stable  | Which operating moves fit this Work family? How can recurring support develop usable knowledge, and what change reopens the choice? | A.3.1.MV; conditional OPS.5–OPS.15, OPS.18, OPS.22, KCAE.MEMORY, KCAE.CHANGE, KCAE.EVAL, CB.14, A.3.1.WT, A.3.1.FT, C.11.MV; FPF A.3.1, A.3.2, C.16, G.5, A.11.OP |
-| 25 | [OPS.18 - Control Operating Quality and Reliability](52-ops-18---control-operating-quality-and-reliability.md) |  Stable  | What continuation, acceptance, containment or recovery action does the evidence support? | conditional OPS.12–OPS.15, OPS.17; FPF C.16, A.10, A.11.OP |
-| 26 | [OPS.19 - Reconcile Simultaneous Operating Work Across Cases and Scales](53-ops-19---reconcile-simultaneous-operating-work-across-cases.md) |  Stable  | Which cross-scale reconfiguration, bounded continuation, or exact unresolved conflict preserves the simultaneous operating results that matter? | OPS.1, OPS.3; conditional OPS.11, OPS.12, OPS.15, OPS.17; FPF C.32.MWA, C.11 |
-| 27 | [OPS.20 - Deliberately Continue and Change Operations Culture](54-ops-20---deliberately-continue-and-change-operations-culture.md) |  Stable  | How do practitioners in the named population transmit, independently enact, select, retain or lose an Operations practice, and what continuation, change or uncertainty does the evidence support? | OPS.16, OPS.17, OPS.19; FPF C.36; C.36.MC |
+| 25 | [OPS.18 - Control Operating Quality and Reliability](52-ops-18---control-operating-quality-and-reliability.md) |  Stable  | What does the evidence establish about quality or reliability? What continuation, acceptance, containment or recovery does the applicable rule or operating task require? | conditional OPS.12–OPS.15, OPS.17; FPF C.16, A.10, A.11.OP |
+| 26 | [OPS.19 - Reconcile Simultaneous Operating Work Across Cases and Scales](53-ops-19---reconcile-simultaneous-operating-work-across-cases.md) |  Stable  | Which cross-scale reconfiguration, bounded continuation, or unresolved conflict preserves the simultaneous operating results that matter? | OPS.1, OPS.3; conditional OPS.11, OPS.12, OPS.15, OPS.17; FPF C.32.MWA, C.11 |
+| 27 | [OPS.20 - Deliberately Continue and Change Operations Culture](54-ops-20---deliberately-continue-and-change-operations-culture.md) |  Stable  | What does the evidence establish about transmission, use, selection, retention or loss of this operating practice in the named population? If a decision is needed, what continuation or change does it support? | OPS.16, OPS.17, OPS.19; FPF C.36; C.36.MC |
 
 ## Part X — Choose Operating Aims and Interpret Performance
 
 | § | ID & Title | Status | Keywords & Search Queries | Dependencies |
 | :--- | :--- | :--- | :--- | :--- |
-| 28 | [OPS.21 - Choose Operating Aims, Targets and Comparisons](55-ops-21---choose-operating-aims-targets-and-comparisons.md) | Stable | What useful improvement should this team pursue, and which target or comparison would make it meaningful? | conditional OPS.1, OPS.10, OPS.13, OPS.15, OPS.19, STR.5 and STR.8, MA.1, MA.2, MA.5 and MA.6, OCE.10 |
-| 29 | [OPS.22 - Interpret Operating Performance and Decide the Response](56-ops-22---interpret-operating-performance-and-decide-the-resp.md) | Stable | What does this result mean given target difficulty, changed conditions and joint work, and what response follows? | conditional OPS.13, OPS.15, OPS.19, OPS.21, MA.7 and MA.9, OCE.10; HCD.11 and CGOV.13 for distinct receiving questions |
+| 28 | [OPS.21 - Choose Operating Aims, Targets and Comparisons](55-ops-21---choose-operating-aims-targets-and-comparisons.md) | Stable | What improvement is worthwhile, or what adequate condition should the team monitor? Which comparison fits the need? | conditional OPS.1, OPS.10, OPS.13, OPS.15, OPS.19, STR.5 and STR.8, MA.1, MA.2, MA.5 and MA.6, OCE.10 |
+| 29 | [OPS.22 - Interpret Operating Performance and Decide the Response](56-ops-22---interpret-operating-performance-and-decide-the-resp.md) | Stable | What does this result mean given target difficulty, changed conditions and joint work? What response, if requested, do the findings support? | conditional OPS.13, OPS.15, OPS.19, OPS.21, MA.7 and MA.9, OCE.10; HCD.11 and CGOV.13 for distinct receiving questions |
 
 # Operations Management Principles Framework Readme
 
@@ -148,11 +148,11 @@ For the broader question of what Operations Management studies and changes, read
 
 These selected examples show how to combine the methods around a current difficulty. Enter where adequate inputs are available and stop at the result the decision needs. The Table of Contents gives direct access to OPS.1–OPS.23 and their nested methods. The [Architectural Reference](01-operations-management-principles-framework-architectural-ref.md), including its [conditions on a whole combination](11-ops-reference-10---conditions-on-a-whole-combination.md), explains why individually useful operating moves can conflict when they use the same resources, authority or evidence.
 
-**Keep the connected operating reasoning in view.** The [operational mantra (OPS.23)](28-ops-23---connect-operational-reasoning-the-operational-mantr.md) relates accepted results, readiness, limiting conditions, feasible starts, commitments and observed consequences. Its developed account explains why these answers must fit together and which ones to revisit when conditions change. Use it to connect local work to the receiving operation; use a sufficient individual method directly for a smaller question.
+**Keep the connected operating reasoning in view.** The [operational mantra (OPS.23)](28-ops-23---connect-operational-reasoning-the-operational-mantr.md) relates accepted results, readiness, limiting conditions, feasible starts, commitments and observed consequences. It explains why these answers must fit together and which ones to revisit when conditions change. Use it to connect local work to the receiving operation; use a sufficient individual method directly for a smaller question.
 
 You can ask an assisting agent to explain a pattern or comment on your case in ordinary language, without framework jargon.
 
-The numbers in these applications are constructed. Their professional premises are supplied for the example; actual clinical, safety, financial and release decisions need the corresponding qualified inputs.
+The numbers in these applications are constructed. The examples stipulate their professional premises. A clinical, safety, financial or release decision needs qualified inputs for its own case.
 
 If repeated support questions consume expert time, [OPS.17:4.2.1](51-ops-17---compare-and-refresh-operations-methods.md#ops17421---choose-how-service-work-develops-usable-knowledge) distinguishes a missing answer, poor access and a service problem. It explains when to use the KCS professional practice and how to return its results to the operating choice. The [changed support case](51-ops-17---compare-and-refresh-operations-methods.md#ops1756---repeated-support-changes-the-knowledge-and-then-the-service) follows that choice through new conditions and agent performance.
 
@@ -162,11 +162,11 @@ If repeated support questions consume expert time, [OPS.17:4.2.1](51-ops-17---co
 
 - **Question:** What can start and finish within the available window, and which other decision must change if the plan changes?
 
-- **First useful result or blocker:** A readiness and capacity basis for a supported operating plan, with deferred demand and the permission, staffing or funding result still needed.
+- **First useful result or blocker:** A readiness and capacity basis for a supported operating plan, with any demand to defer and any permission, staffing or funding condition still unresolved.
 
 - **Start with:** [OPS.8 - Coordinate Queues and Buffers](36-ops-8---coordinate-queues-and-buffers.md) when the immediate difficulty is ready work and incomplete inputs. Reuse an adequate operating account; recover a missing subject or commitment only if it can change this decision.
 
-- **Stop or return:** Return changed feasibility to admission and affected commitments. A supported test-service plan does not supply field-release evidence or authority.
+- **Stop or return:** Return changed feasibility to admission and affected commitments. A supported test-service plan does not authorize release to the field. For a field-release claim, identify the supporting evidence for that use.
 
 1. **Keep the same subjects across the needed views.** [OPS.1 - Identify the Operating System, Commitments, and Flow Units](29-ops-1---identify-the-operating-system-commitments-and-flow-u.md) bounds the continuing control-service operation. [OPS.3 - Distinguish Operating Subjects, Cases, Queues, Resources, and Records](31-ops-3---distinguish-operating-subjects-cases-queues-resource.md) separates a release candidate, incident, rig request and test attempt. [OPS.2 - Select Work-Management Views and Coordination Methods](30-ops-2---select-work-management-views-and-coordination-method.md) can use case, recurring-process and queueing views for their different questions. [OPS.4 - Keep Current Operating State Recoverable Across Participants](32-ops-4---keep-current-operating-state-recoverable-across-part.md) makes the relevant evidence, unresolved conditions and next decisions recoverable to the participants; they need not share one screen.
 2. **Establish readiness for the next action.** In the [PumpWorks application](57-ops-application-1---app-ops-01-pumpworks-continuing-control.md), twelve matters appear on boards but only four are ready test packages. OPS.8 identifies what the test can use now. The test's future output is not its own prerequisite. If laboratory permission is current and the unresolved safety question concerns only field release, the test may proceed while release remains held. A safety condition that also governs testing changes that conclusion.
@@ -180,7 +180,7 @@ If an extra window, qualified relief and the other required conditions later bec
 
 - **Situation:** A recipient requests additional service. Visible space appears sufficient, but qualified staff, existing commitments, support work and recovery share the same window.
 
-- **Question:** What can the parties credibly agree without moving the shortage or burden out of view?
+- **Question:** What can the parties credibly agree given the available rooms, qualified team time and remaining obligations?
 
 - **First useful result or blocker:** A supported smaller offer, another feasible resource or timing arrangement, a refusal, or the particular professional or authority result still missing.
 
@@ -188,12 +188,12 @@ If an extra window, qualified relief and the other required conditions later bec
 
 - **Stop or return:** Obtain the parties' decision on a changed promise. Internal replanning does not discharge an existing commitment; an unresolved professional condition remains with its responsible practitioner.
 
-1. **Use the resource that actually limits this service.** In the constructed [hospital application](58-ops-application-2---app-ops-02-public-hospital-emergency-flo.md), two rooms each have four available hours, but one qualified team has four usable hours. Supplied clinical and operating assumptions require thirty minutes per routine visit, including turnover, and reserve one team-hour for the stated urgent-case scenario. OPS.10 therefore supports six routine visits in total, not sixteen from the room count.
+1. **Use the resource that limits this service.** In the constructed [hospital application](58-ops-application-2---app-ops-02-public-hospital-emergency-flo.md), two rooms each have four available hours, but one qualified team has four usable hours. Supplied clinical and operating assumptions require thirty minutes per routine visit, including turnover, and reserve one team-hour for the stated urgent-case scenario. OPS.10 therefore supports six routine visits in total, not sixteen from the room count.
 2. **Subtract what is already promised.** Two visits are committed and six additional visits are requested. The supported proposal is four additional routine visits under the stated reserve. Serving all six additional requests needs another qualified arrangement or an agreed later time. Eligibility, clinical priority and protected conditions remain supplied professional decisions.
 3. **Make the schedule usable for everyone who supplies it.** OPS.12 follows the support team's other duty and recovery. Where the supplied windows permit two groups of three visits, that arrangement can preserve both service and support duties. If the reserve changes from one to two team-hours, only four routine visits fit: after the two existing commitments, the additional offer falls to two. Return that changed resource result to OPS.13 before confirming the larger offer.
 4. **Use an account that retains unfinished obligations.** [OPS.15 - Build a Decision-Specific Operating Account](48-ops-15---build-a-decision-specific-operating-account.md) distinguishes the historical due-request cohort from completed visits. Twenty-seven timely, three late-completed and ten still-open requests give timely service of `27/40 = 67.5%`. The completed-only `27/30 = 90%` answers another question. Use the due-cohort result for overdue service, while the clinical evidence determines clinical action.
 
-[OPS.14 - Relate Throughput, Cash, and Operating Consequences](47-ops-14---relate-throughput-cash-and-operating-consequences.md) enters when paid cover, displaced service or funding changes the choice. It compares actual differing payments and receipts over the decision horizon. An allocated share of an unchanged room or salary cost is not an avoided payment, and a later receipt cannot fund an earlier expense without an available financing arrangement.
+[OPS.14 - Relate Throughput, Cash, and Operating Consequences](47-ops-14---relate-throughput-cash-and-operating-consequences.md) enters when paid cover, displaced service or funding changes the choice. It compares the payments and receipts that differ between the alternatives over the decision horizon. An allocated share of an unchanged room or salary cost is not an avoided payment, and a later receipt cannot fund an earlier expense without an available financing arrangement.
 
 ### OPS-ACCEPTED-RESULT — Faster generation still leaves the promised result unavailable
 
@@ -203,7 +203,7 @@ If an extra window, qualified relief and the other required conditions later bec
 
 - **First useful result or blocker:** A supported admission or service change, a comparison of feasible alternatives, or a quality response with the evidence needed for continuation.
 
-- **Start with:** OPS.15 to recover the requested result and its population, then OPS.10 when the actual acceptance-resource bound decides the immediate question.
+- **Start with:** OPS.15 to recover the requested result and its population, then OPS.10 when the available review capacity decides the immediate question.
 
 - **Stop or return:** Retain the distinction between drafts, review decisions, accepted changes and authorized deployments. A settled resource bound can answer the current request without an additional model or experiment.
 
@@ -218,9 +218,9 @@ When recovery, review and testing compete for the same people or environment, OP
 
 - **Situation:** A new admission or handover method looks promising, but testing it competes with continuing service, and a local success is being used to justify wider adoption.
 
-- **Question:** What can be retained or changed now, and which later-use claim does the evidence actually support?
+- **Question:** What can be retained or changed now, and which later-use claim does the evidence support?
 
-- **First useful result or blocker:** A supported local method-use decision or revised candidate account, followed only when needed by a separate conclusion about the named practitioners' use.
+- **First useful result or blocker:** A supported local method-use decision or revised candidate account, and, when needed, a separate conclusion about the named practitioners' use.
 
 - **Start with:** OPS.17 when alternatives need comparison, or [OPS.16 - Decide Whether and How to Change an Operating Method](50-ops-16---decide-whether-and-how-to-change-an-operating-metho.md) when the question concerns one method or proposed way of working.
 
@@ -237,14 +237,14 @@ When recovery, review and testing compete for the same people or environment, OP
 - **Question:** What improved, and what waiting did the internal measure leave out?
 - **First useful result or blocker:** A comparison that keeps the resource arrangement, release rule and customer's waiting origin together.
 - **Start with:** [OPS.11.1 - Construct and Reconcile Operating Models Across Scales](44-ops-11-1---construct-and-reconcile-operating-models-across-s.md) for the arrangement being changed, and [OPS.15.1 - Derive Operating Quantities from Events](49-ops-15-1---derive-operating-quantities-from-events.md) for the observations used to compare it.
-- **Stop or return:** Keep a sufficient comparison. Return a changed service limit to admission and commitments; investigate further only if a remaining uncertainty can change that decision.
+- **Stop or return:** Keep a sufficient comparison. Return a changed service limit to admission and commitments; weigh further inquiry only if its answer could change the decision or the grounds for relying on it.
 
 1. **Construct the alternatives on the same operation.** Four orders arrive at time zero. Each needs one hour at A and then two hours at B. The two stations have independent resources, work in order and start as soon as permitted; there are no setups, failures or returns. OPS.11.1 keeps these premises and the customer's completion event while OPS.8 supplies the admission and transfer policy. With individual transfer and all orders admitted at zero, B finishes at hours 3, 5, 7 and 9.
 2. **Apply the changed admission rule.** With at most two orders admitted but unfinished, admit another immediately when a completion frees a place. Admissions occur at 0, 0, 3 and 5; the same resource calculation gives the same four completions. [OPS.10.2 - Construct and Revise a Feasible Deadline Schedule](42-ops-10-2---construct-and-revise-a-feasible-deadline-schedule.md) places the operations under that admission rule and the unchanged resource conditions. OPS.10 uses the resulting schedule for its capacity and service question. The last order is still ready at hour 9.
 3. **Measure both waits from their own events.** OPS.15.1 derives a mean internal residence of four hours and a mean customer wait of six. Across the empty-to-empty nine-hour interval, the corresponding count-time areas are 16 and 24 order-hours. Eight order-hours moved outside the admission boundary. OPS.15 presents that distinction to the decision maker; a lower internal average alone does not establish earlier delivery.
 4. **Return a changed physical premise to the plan.** If one operator must instead perform every A and B operation without overlap, the four orders require twelve operator-hours. The previous nine-hour plan is infeasible. OPS.11.1 revises the shared-resource account; [OPS.10.1 - Construct and Compare Operating Capacity Models](41-ops-10-1---construct-and-compare-operating-capacity-models.md) derives the resource-time obstruction, and OPS.19 reconciles competing work. A promise to deliver all four by hour 10 needs a changed arrangement or a revised commitment through OPS.13.
 
-The [Foundational Thinking Suite Reference (Foundational.Reference:3.8)](../../foundational-thinking-dpf-suite/suite-reference/04-foundational-reference-3---working-combinations.md#foundationalreference38---change-an-operating-flow-without-hiding-its-waiting) develops this constructed example through the mathematical formulation and its computation. A real WIP limit can improve service through reduced interference or rework; that conclusion needs the corresponding mechanism and comparison.
+The [Foundational Thinking Suite Reference (Foundational.Reference:3.8)](../../foundational-thinking-dpf-suite/suite-reference/04-foundational-reference-3---working-combinations.md#foundationalreference38---change-an-operating-flow-without-hiding-its-waiting) develops this constructed example through the mathematical formulation and its computation. A WIP limit can improve service through reduced interference or rework; that conclusion needs the corresponding mechanism and comparison.
 
 ### OPS-PROTECT-AND-DEVELOP - Prepare or learn while preserving promised service
 
@@ -255,10 +255,10 @@ The [Foundational Thinking Suite Reference (Foundational.Reference:3.8)](../../f
 - **Stop or return:** Use a sufficient arrangement. Return an impossible promise to its conditions or OPS.13. Use HCD or the Core methods for opportunity construction and Method development to assess the proposed learning or improvement.
 
 1. **Keep the unfinished service in the operating model.** In this constructed case, report X arrived at hour −2 and its first pass finished at zero. At hour one, a separate reviewer either accepts it or supplies a correction requiring two uninterrupted specialist-hours. If correction is needed, its completion supplies the promised result, required by hour three. New session Y needs the same specialist for four uninterrupted hours, is ready at zero and must finish by seven. OPS.11.1 retains the shared specialist and feedback event; OPS.15.1 distinguishes first-pass completion from delivery of the required result.
-2. **Construct a response that can use the actual feedback.** Two hours of correction and four hours for Y fit within seven available hours, but that total does not settle their placement. OPS.10.2 shows that starting Y at zero would postpone correction until 4–6, too late for X. [OPS.8.1 - Choose Work-Release Rules When Earlier Work Can Return](37-ops-8-1---choose-work-release-rules-when-earlier-work-can-re.md) preserves the 1–3 correction window. If X is accepted at one, run Y at 1–5; if it returns, correct X at 1–3 and run Y at 3–7. This rule uses information available at the choice and meets both stated requirements.
-3. **Use only an auxiliary unit that leaves the protected action ready.** Suppose a prepared exercise takes half an hour and its closure and restoration of the specialist's work context take another quarter-hour. No earlier recall is included in this case, and the required resources remain available. [OPS.8.2 - Use Protective Capacity While Keeping It Available](38-ops-8-2---use-protective-capacity-while-keeping-it-available.md) fits the unit at 0–0.75, before the feedback at one. A longer indivisible lesson could consume the correction window. HCD.2 still has to supply meaningful practice and feedback; the timing calculation alone establishes no learning gain. C.40.OI and C.40.DC or C.39.MF and A.3.1.WT can instead develop a preparation opportunity or method trial with its own full burden.
+2. **Construct a response that can use the reviewer's answer.** Two hours of correction and four hours for Y fit within seven available hours, but that total does not settle their placement. OPS.10.2 shows that starting Y at zero would postpone correction until 4–6, too late for X. [OPS.8.1 - Choose Work-Release Rules When Earlier Work Can Return](37-ops-8-1---choose-work-release-rules-when-earlier-work-can-re.md) preserves the 1–3 correction window. If X is accepted at one, run Y at 1–5; if it returns, correct X at 1–3 and run Y at 3–7. This rule uses information available at the choice and meets both stated requirements.
+3. **Use only an auxiliary unit that leaves the protected action ready.** Suppose a prepared exercise takes half an hour and its closure and restoration of the specialist's work context take another quarter-hour. No earlier recall is included in this case, and the required resources remain available. [OPS.8.2 - Use Protective Capacity While Keeping It Available](38-ops-8-2---use-protective-capacity-while-keeping-it-available.md) fits the unit at 0–0.75, before the feedback at one. A longer indivisible lesson could consume the correction window. If learning is the aim, use HCD.2 to identify the practice and feedback the learner needs, then provide them. The available interval shows that the exercise fits. To establish improvement, examine the learner’s performance. C.40.OI and C.40.DC or C.39.MF and A.3.1.WT can instead develop a preparation opportunity or method trial with its own full burden.
 4. **Measure the promised result and compare the cost.** OPS.15.1 retains X's wait from −2: three hours if accepted at one and five if corrected by three. Y waits five or seven hours from its own arrival. The exercise neither erases that waiting nor creates an additional accepted customer result. OPS.14 can compare its incremental financial consequences when that changes the choice; HCD or Core's Method-development family establishes its intended development contribution.
-5. **Reopen the affected relation when the condition changes.** Move the review to hour two and retain the two-hour correction and deadline three. Even an idle specialist can finish only at four. OPS.10.1 identifies that finite timing obstruction; holding all new work cannot remove it. Obtain earlier usable feedback, a correction method that actually fits, or a revised commitment through OPS.13. Preserve the unaffected resource and waiting definitions.
+5. **Reopen the affected relation when the condition changes.** Move the review to hour two and retain the two-hour correction and deadline three. Even an idle specialist can finish only at four. OPS.10.1 identifies that finite timing obstruction; holding all new work cannot remove it. Obtain earlier usable feedback, a correction method that fits the remaining interval, or a revised commitment through OPS.13. Preserve the unaffected resource and waiting definitions.
 
 ### OPS-PREPARE-AND-RESPOND - Prepare useful work and keep a response possible
 
@@ -266,7 +266,7 @@ The [Foundational Thinking Suite Reference (Foundational.Reference:3.8)](../../f
 - **Question:** What should be prepared, promised and started, and how soon must a consequential change reach someone who can act?
 - **First useful result or blocker:** A feasible service arrangement, including the needed preparation and response, or a specific condition that requires a different offer.
 - **Start with:** OPS.1 and OPS.13 for the recipient's result; use OPS.11.1, OPS.10.2, OPS.4 and OPS.14 to connect the work, response and financial consequences.
-- **Stop or return:** Use the arrangement while its assumptions hold. Obtain any missing professional contribution and agree changes to the promise with the responsible parties.
+- **Stop or return:** Use the arrangement while its assumptions hold. Obtain any missing professional contribution and agree any needed change to the promise with the responsible parties.
 
 1. **Choose a useful whole result before dividing the work.** In the constructed [report case](46-ops-13---align-commitments-resources-and-service-outcomes.md#ops1355---a-review-must-leave-time-for-the-response), the recipient needs an accepted comparison by hour fourteen. Input recovery, analysis and release contribute to one report. Two teams recording their contributions do not create two accepted reports. OPS.1 fixes this result and its completion event; OPS.11.1 connects the contributions. If a smaller comparison would serve the recipient, OPS.13 can offer it explicitly. Omitting a relation that the decision needs would instead leave an unfinished result.
 2. **Prepare what the selected work will need.** Recover the input, capabilities and resource windows with OPS.13:4.2. A prerequisite may already be available or have a supported arrival before its consuming operation starts. When an unresolved fact could change the offer, use C.11.DUA to compare a useful inquiry with a conditional offer or accepting the stated uncertainty, where the service permits those choices. Count any selected inquiry or trial as work with its own burden. OPS.5 then distinguishes an offer, an agreed commitment and permission to start. OPS.8.1 updates release choices when earlier work returns, and OPS.8.2 can place preparation in spare time that the planned return permits.
@@ -279,7 +279,7 @@ The [Foundational Thinking Suite Reference (Foundational.Reference:3.8)](../../f
 - **Situation:** Reports and lessons are being produced, but their recipients still cannot choose or adapt the described operating method, or different teams offer incompatible advice.
 - **Question:** Is the obstruction in the operating claim, its explanation, the learning arrangement or the later application?
 - **First useful result or blocker:** A corrected claim or explanation, usable support for the recipient's next action, or a clearly bounded learning or transfer question.
-- **Start with:** OPS.1 for the service result, then [EXD.4](../../exd/12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md), [FPF A.3.1.CC](../../../sections/05-part-a---kernel-architecture-cluster/25-a-3-1-cc---check-the-coherence-of-a-method-claim.md), [HCD.19](../../human-capability-engineering-dpf-suite/hcd/36-hcd-19---evaluate-instructional-material-through-representat.md) or [HCD.12](../../human-capability-engineering-dpf-suite/hcd/29-hcd-12-test-transfer-to-unfamiliar-work-or-learning-from-a-n.md) according to the difficulty actually found.
+- **Start with:** OPS.1 for the service result, then [EXD.4](../../exd/12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md), [FPF A.3.1.CC](../../../sections/05-part-a---kernel-architecture-cluster/25-a-3-1-cc---check-the-coherence-of-a-method-claim.md), [HCD.19](../../human-capability-engineering-dpf-suite/hcd/36-hcd-19---evaluate-instructional-material-through-representat.md) or [HCD.12](../../human-capability-engineering-dpf-suite/hcd/29-hcd-12-test-transfer-to-unfamiliar-work-or-learning-from-a-n.md) according to the difficulty found.
 - **Stop or return:** Stop when the intended use is supported. Publishing a correct text, understanding it with help and applying it independently later are different results; pursue the one the service promises.
 
 1. **Follow the recipient's question.** In [the admission example](_index.md#ops-release-and-wait---change-admission-without-losing-the-customers-wait), mean internal time is four hours while mean customer waiting remains six. Suppose a reader asks why. EXD.4 uses that question to explain the two starting events: the two-hour average before admission remains part of the customer's wait. The useful result is a correctly bounded comparison, from which the reader can reject an apparent delivery improvement caused only by moving the counting boundary.
@@ -293,7 +293,7 @@ The long applications add case-specific conditions and returns. Use the common O
 
 - **Situation:** A target gives little guidance, a peer ranking hides different work, or a missed aim prompts judgement before the changed conditions and joint result are examined.
 - **Question:** What contribution is worth pursuing, how will it be compared, and what should the later result change?
-- **First useful result or blocker:** A meaningful aim and next action, or a reasoned operating assessment and authorized response with its actual limits.
+- **First useful result or blocker:** A meaningful aim, a condition to monitor, or a reasoned operating assessment. An aim can guide the next action. The assessment can support a response under existing authority or a proposal for whoever must decide.
 - **Start with:** [OPS.21](55-ops-21---choose-operating-aims-targets-and-comparisons.md) when the aim or comparison is missing; [OPS.22](56-ops-22---interpret-operating-performance-and-decide-the-resp.md) when the result needs interpretation. Use an adequate supplied basis directly.
 - **Stop or return:** A target does not authorize a service promise or spending. Return a changed premise to the aim, forecast, provision, commitment or consequence rule it affects.
 
@@ -332,7 +332,7 @@ Generated by the skill's splitter: one file per section, in reading order.
 - [OPS.Reference:21 - Sibling-domain returns and availability](22-ops-reference-21---sibling-domain-returns-and-availability.md) (20 lines)
 - [OPS.Reference:22 - Available contributions](23-ops-reference-22---available-contributions.md) (4 lines)
 - [OPS.Reference:23 - Representative case coverage](24-ops-reference-23---representative-case-coverage.md) (4 lines)
-- [OPS.Reference:24 - Edition return](25-ops-reference-24---edition-return.md) (8 lines)
+- [OPS.Reference:24 - Edition return](25-ops-reference-24---edition-return.md) (22 lines)
 - [OPS.Reference:25 - Publication boundary](26-ops-reference-25---publication-boundary.md) (8 lines)
 - [OPS.Reference:End](27-ops-reference-end.md) (3 lines)
 

@@ -34,15 +34,15 @@ Both indexes return the same source-addressed candidate interface. The lexical r
 
 Search variants include “duplicate rows after successful export,” “receipt reconciliation,” the original Spanish wording and an English reformulation. A hypothetical answer can suggest another query but supplies no evidence. Union candidates by exact source-unit identity, retain distinct governing editions, and use rank fusion or a qualified reranker. Inspect whether a route contributes unique useful candidates rather than counting several paraphrases of one passage as independent support.
 
-For an unfamiliar question or a suspected shared blind spot, the same service can enumerate authorized original blocks for direct semantic screening. It batches them within actual model limits, retains all plausible candidates plus unresolved blocks, and opens their reading closures. A screened sample is reported as a sample. A complete enumerated pass establishes inspected coverage, not perfect semantic recognition. Cross-block relations can still require structural expansion or a later question.
+For an unfamiliar question or a suspected shared blind spot, the same service can enumerate authorized original blocks for direct semantic screening. It batches them within the model’s limits, retains all plausible candidates plus unresolved blocks, and opens their reading closures. A screened sample is reported as a sample. A complete enumerated pass establishes inspected coverage, not perfect semantic recognition. Cross-block relations can still require structural expansion or a later question.
 
 ### KCAE.Application:1.4 - Assessment changes the next operation
 
-The first candidate pool contains the current resend section, old localization, compatibility table and faster-worker guidance. Read them against the receiving result. The faster-worker paragraph concerns completion delay, which this episode does not establish. It can remain a rival question if actual latency evidence appears, but it does not explain duplicate removal merely because the customer mentioned workers.
+The first candidate pool contains the current resend section, old localization, compatibility table and faster-worker guidance. Read them against the receiving result. The faster-worker paragraph concerns completion delay, which this episode does not establish. It can remain a rival question if latency evidence appears, but it does not explain duplicate removal merely because the customer mentioned workers.
 
 The table and procedure reveal a missing case fact. The first returned result is therefore: “The automatic route depends on the destination protocol and stable batch identity. Obtain the authorized configuration report; do not infer those values from the successful export.” This result is useful because it specifies which fact changes the action and how it can be obtained.
 
-Three outcomes make the distinction inspectable:
+The next step depends on whether the configuration is known and, if so, which conditions hold.
 
 | Configuration result | Assessment | Useful next result |
 | --- | --- | --- |
@@ -58,9 +58,9 @@ For the v2 branch, suppose intended export IDs are `{A, B, C}` and accepted rece
 
 If three independent exports are scheduled, their peak reservation is 6 GB and exceeds the 5 GB cache. Two concurrent exports followed by the third fit the capacity only if completed reservations are released. With ten-minute jobs and a twenty-five-minute window, the twenty-minute schedule fits the stated timing; with a fifteen-minute window, it does not. The latter requires another feasible arrangement or a changed accepted requirement. These arithmetic results follow from the invented inputs and do not predict real throughput.
 
-The support analyst receives the selected branch, its source conditions, the exact missing or selected IDs, and the scheduling condition needed for the proposal. The integration engineer additionally receives the reader/index/generation interfaces. A customer sees a short explanation and attainable next step, with source return available. The same indiscriminate dump would not serve all three readers.
+The support analyst receives the selected branch, its source conditions, the exact missing or selected IDs, and the scheduling condition needed for the proposal. The integration engineer additionally receives the reader/index/generation interfaces. A customer sees a short explanation and attainable next step, with source return available. One undifferentiated package would not serve these three uses.
 
-Deliver the selected manual section, table context and footnote through one pinned edition sequence. Detect truncated tool output and continue the required reading. The main agent does not pretend that asking itself to forget candidate listings reclaims context. If the selected runtime offers an isolated source reader, its bounded result and grounds can be used; otherwise the main reading budget must carry the needed material.
+Deliver the selected manual section, table context and footnote through one pinned edition sequence. Detect truncated tool output and continue the required reading. Asking the main agent to forget candidate listings does not free its context window. If the selected runtime offers an isolated source reader, its bounded result and grounds can be used; otherwise the main reading budget must carry the needed material.
 
 ### KCAE.Application:1.6 - A changed source and a failed view
 

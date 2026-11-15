@@ -40,7 +40,7 @@ Forcing all representations into one form can remove the different operations th
 
 #### NOT.6:4.1 - Select representations for the operations they support
 
-Name the working question and the contributions needed to answer it. Use each representation for an operation it actually supports. A table may expose a recorded value, a formula generate values outside the table, and a graph reveal a shape under a declared scale. State what the reader obtains from each.
+Name the working question and the contributions needed to answer it. Use each representation for an operation it supports. A table may expose a recorded value, a formula generate values outside the table, and a graph reveal a shape under a declared scale. State what the reader obtains from each.
 
 Keep a representation because it adds a needed distinction, constrains a plausible misreading or enables a useful operation. Do not infer a gain merely from using different media. Try the intended combination before expanding it.
 
@@ -60,9 +60,9 @@ One source item can correspond to several target items, or several items to a su
 
 Give the reading or construction rule connecting the matched contributions. A formula-to-table relation specifies which inputs generate which cells. A table-to-plot relation specifies axes, units and which cells determine a point. A procedure-to-flow-diagram relation specifies which described actions and conditions each node and connection expresses.
 
-Distinguish a derived representation from an independent contribution. A graph generated from the same table can check rendering but does not supply an independent observation supporting the table's values. An observed trajectory and a predicted trajectory require the subject correspondence and comparison that relate them; C.29 supplies that modeling use.
+Distinguish a derived representation from an independent contribution. Comparing a graph with the table from which it was generated can check the rendering but does not supply an independent observation supporting the table's values. An observed trajectory and a predicted trajectory require the subject correspondence and comparison that relate them; C.29 supplies that modeling use.
 
-Decide how a change will be handled. When a value is derived, give its source and transformation. When either side can be edited, give the backward policy or the condition under which a human choice is needed. Preserve information that the other representation cannot reconstruct.
+Decide how a change will be handled. When a value is derived, give its source and transformation. When either side can be edited, give the backward policy or the condition under which a further choice is needed and who can make it. Preserve information that the other representation cannot reconstruct.
 
 For a chain of correspondences, follow the connection through the intermediate representations. If two routes reach what is supposed to be the same result, determine the agreement the work requires. A numerical tolerance can be appropriate for a plot, while an identity-sensitive reference needs the same referent. MATH.18 supplies the mathematical argument when the correspondence compares formal structures.
 
@@ -86,7 +86,7 @@ When edits arrive through several representations, combine their requirements an
 
 Distinguish changes with the same visible outcome but different meanings. Removing an item from an unfinished-work list can mean completion, cancellation or deletion. The intended action determines which other representations change. A suitable change description can be more informative than comparing two finished displays.
 
-If a model and an observation disagree, return to their governing subject account. Updating the observation to match the model would destroy the independent contribution; changing the model may require a modeling decision. Coordination makes the disagreement usable rather than hiding it.
+If a model and an observation disagree, return to their governing subject account. Updating the observation to match the model would destroy the independent contribution; changing the model may require a modeling decision. The discrepancy is available if a modeling decision is needed.
 
 #### NOT.6:4.6 - Retain the combination at the needed effort
 
@@ -124,7 +124,7 @@ This example coordinates quantities and references. It establishes no claim that
 
 ### NOT.6:6 - Bias-Annotation
 
-Visual agreement can be mistaken for independent support. Two displays generated from the same source share its error unless one checks a different contribution. Use the correspondence to distinguish repeated presentation from independent evidence.
+Visual agreement can be mistaken for independent support. Two displays generated from the same source can reproduce the same error. Use the correspondence to distinguish repeated presentation from independent evidence.
 
 The opposite tendency treats every difference as inconsistency. A nominal dimension and a measured dimension, or a prediction and an observation, can legitimately differ. Recover their claim and subject before choosing an update.
 
@@ -136,7 +136,7 @@ When the combination needs checking, ask the questions that can change its use.
 - Can the reader recover the referents and the relation between their occurrences?
 - Are derived values distinguished from independent contributions and different claim kinds?
 - Can one joined answer be obtained by following the stated correspondences?
-- Does a change preserve its actual requirements rather than every value copied from an earlier display?
+- Does a change preserve the requirements of the intended edit rather than every value copied from an earlier display?
 - Are incompatible edits or interpretations exposed at the affected contribution?
 - Can the work stop with the usable combination, without unnecessary synchronized copies?
 
@@ -146,7 +146,7 @@ When the combination needs checking, ask the questions that can change its use.
 | --- | --- |
 | Placing representations together and leaving their connection implicit | Construct the referent mapping and perform a joined reading. |
 | Treating a shared label as identity between an object, its model and its encoding | State the relation between those different things, as in B9, L and the mesh. |
-| Treating two generated displays as independent confirmation | Trace their common source and identify which new question a comparison can actually test. |
+| Treating two generated displays as independent confirmation | Trace their common source and identify which new question a comparison can test. |
 | Freezing all old displayed values during a local edit | Separate the changed requirement from earlier derived context; :5.1 shows the difference. |
 | Erasing an observation to make it agree with a prediction | Preserve the observation and return the discrepancy to the subject account. |
 | Adding another representation to every explanation | Retain it for a useful operation and compare the added navigation or maintenance burden. |
@@ -173,7 +173,7 @@ Update intention is also content. A finished state can conceal whether an unchan
 | Rexigel, Kuhn, Becker and Malone, [The More the Better?](https://link.springer.com/article/10.1007/s10648-024-09958-y), 2024, cognitive-load analysis, discussion and limitations | The synthesis reports benefits in studied STEM settings but also heterogeneous effects, publication-bias concerns and a small underlying basis for some load comparisons. Use this to bound the learning claim in :4.4, not to impose a number of representations or promise a gain for every reader. |
 | Matsuda, Nguyen and Wang, [Lenses for Partially-Specified States](https://link.springer.com/chapter/10.1007/978-3-032-22723-2_2), ESOP 2026, §§1–2 | Adapt their distinction between whole displayed state and update intention into :4.5 and :5.1. Partial constraints can expose a compatible propagation or conflict. Their compositional guarantees depend on the formal construction; the ordinary method here does not confer them on arbitrary manual correspondences. |
 
-**Choice of coordination.** A single sufficient representation avoids the effort of maintaining correspondence. Several become useful when their operations contribute to the actual answer. Manual labels and a direct rule can then be enough. Repeated edits across shared information can justify a maintained transformation; the 2026 partial-state approach addresses an important failure of replacing whole views indiscriminately. It also requires a model of update intentions and admissible merging. Choose that added construction when propagation and conflicts matter, rather than adopting it merely because several displays exist.
+**Choice of coordination.** A single sufficient representation avoids the effort of maintaining correspondence. Several become useful when their operations contribute to the answer needed. Manual labels and a direct rule can then be enough. Repeated edits across shared information can justify a maintained transformation; the 2026 partial-state approach addresses an important failure of replacing whole views indiscriminately. It also requires a model of update intentions and admissible merging. Choose that added construction when propagation and conflicts matter, rather than adopting it merely because several displays exist.
 
 The synthesis retains cognitive and computational contributions at their own scopes: a formally consistent update need not be easy to understand, and an easy comparison need not preserve a user's edit. Reopen the chosen arrangement when a useful operation remains inaccessible, navigation or upkeep outweighs its gain, or a changed edit exposes an inadequate correspondence.
 

@@ -11,7 +11,7 @@ The gain is a bounded decision to adopt, retain, change or stop an arrangement o
 
 ### KCAE.EVAL:2 - Problem
 
-Retrieval can improve while the final answer remains wrong. A better assessor can appear worse because it receives poorer candidates. An inexpensive model can raise human review or refresh costs. A synthetic test set derived from the same summaries as the index can hide the exact distinctions the arrangement was meant to recover.
+Retrieval can improve while the final answer remains wrong. A better assessor can appear worse because it receives poorer candidates. An inexpensive model can raise human review or refresh costs. A synthetic test set derived from the same summaries as the index can hide the distinctions the arrangement was meant to recover.
 
 ### KCAE.EVAL:3 - Forces
 
@@ -21,7 +21,7 @@ Real episodes have greater practical relevance and less convenient labels. Whole
 
 #### KCAE.EVAL:4.1 - State the decision and serious alternatives
 
-Recover the receiving use, population, corpus editions, permitted data flows and adoption consequence from KCAE.USE. Choose a credible comparison arrangement that a capable practitioner would actually use; include the incumbent with its current limits when one exists. It may be manual reading, exact/lexical search, a current hybrid retriever, an established long-context workflow or a competent existing agent. A weak toy baseline makes an addition easy to justify and hard to trust.
+Recover the receiving use, population, corpus editions, permitted data flows and adoption consequence from KCAE.USE. Choose a credible comparison arrangement that a capable practitioner would use; include the incumbent with its current limits when one exists. It may be manual reading, exact/lexical search, a current hybrid retriever, an established long-context workflow or a competent existing agent. A weak toy baseline makes an addition easy to justify and hard to trust.
 
 State the proposed difference and the expected useful change. Compare complete feasible arrangements, including required extraction, source reading, assessment and delivery. Keep common components, instructions and sources equal when the question is one component's contribution; disclose changes when equality is impossible. A provider comparison confounded by different prompts or missing tools does not isolate the provider's effect.
 
@@ -33,7 +33,7 @@ Use actual receiving episodes where access is permitted, or independently constr
 
 Include cases with unknown source names, cross-language wording, useful non-pattern prose, distant prerequisites, misleading vocabulary, an important exception, missing facts and no useful corpus contribution. Include naturally answerless cases from the receiving work, not only deliberately irrelevant collections. Add source changes, stale indexes, revoked access and partial availability when the intended installation must handle them. Select proportions from the expected workload or report separate strata; a hand-balanced set is not automatically representative.
 
-Gold material may be incomplete. Pool candidates from several serious routes and obtain source-based judgements from appropriate readers; sample beyond the pool where practical. Record uncertainty about unjudged material. Do not label every unpooled passage irrelevant. When several answers can serve the work, judge sufficiency and conditions rather than exact string agreement with one preferred answer.
+Gold material may be incomplete. Pool candidates from several credible routes and obtain source-based judgements from appropriate readers; sample beyond the pool where practical. Record uncertainty about unjudged material. Do not label every unpooled passage irrelevant. When several answers can serve the work, judge sufficiency and conditions rather than exact string agreement with one preferred answer.
 
 Synthetic questions generated from an index can be useful development probes. Keep that origin visible and do not use them as the only evidence that the same index finds unfamiliar distinctions. For an English-primary assessor serving another language, test that language and important negation/condition forms rather than assuming a good English average transfers.
 
@@ -41,13 +41,13 @@ For a broad synthesis, vary the underlying evidence independently of its present
 
 #### KCAE.EVAL:4.3 - Observe the complete useful result and full cost
 
-Have the intended recipient or a qualified judge assess what the arrangement actually enabled: a correct explanation, an applicable conditional proposal, a necessary missing-fact question, a justified no-use result or a completed application. Also inspect unsupported advice, omitted exceptions, false absence claims and unusable deliveries. Source relevance, recommendation worth and actual work benefit remain distinct outcomes.
+Have the intended recipient or a qualified judge assess what the arrangement enabled: a correct explanation, an applicable conditional proposal, a necessary missing-fact question, a justified no-use result or a completed application. Also inspect unsupported advice, omitted exceptions, false absence claims and unusable deliveries. Source relevance, recommendation worth and actual work benefit remain distinct outcomes.
 
-Measure cost over the selected horizon: preparation, extraction repair, indexing, storage, refresh, all model/tool calls, latency distribution, main-context consumption, human reading, interruptions, follow-up questions, application and recovery. Report total model input separately from residual main-window capacity. Report medians together with tails or failures where those change adoption. Use actual observations for empirical claims; estimates remain estimates with their assumptions.
+Measure cost over the selected horizon: preparation, extraction repair, indexing, storage, refresh, all model/tool calls, latency distribution, main-context consumption, human reading, interruptions, follow-up questions, application and recovery. Report total model input separately from residual main-window capacity. Report medians together with tails or failures where those change adoption. Support empirical claims with observations. State the assumptions behind any estimated costs or results.
 
 For paired episodes, compare alternatives on the same case where this does not contaminate the reader. Randomize order or use separate recipients when the first exposure teaches the answer. Keep the judge's criteria independent of the preferred implementation. If a model judges outputs, test its agreement and failure cases against source-grounded human or otherwise competent judgement; do not assume self-evaluation is neutral.
 
-Return distributions or uncertainty appropriate to the data and decision. A handful of designed examples can establish that a mechanism runs and expose failures; it does not estimate a population success rate reliably. A small useful trial can justify a reversible next trial without pretending to prove general superiority.
+Return distributions or uncertainty appropriate to the data and decision. A handful of designed examples can establish that a mechanism runs and expose failures; it does not estimate a population success rate reliably. A small useful trial can justify a reversible next trial while leaving broader performance open.
 
 #### KCAE.EVAL:4.4 - Isolate the failed contribution before repairing
 
@@ -55,14 +55,14 @@ Use controlled substitutions after the whole comparison identifies a consequenti
 
 - Supply adequate source candidates manually to the same assessor and delivery path. If the result recovers, finding was a limiting factor; if not, downstream work remains.
 - Hold the candidate pool and source context fixed while comparing assessors. This separates candidate availability from ranking and condition judgement.
-- Hold a qualified contribution fixed while varying delivery. A failed recipient can then expose omitted context, excessive compression, unavailable tools or missing preparation.
+- Hold a qualified contribution fixed while varying delivery. A recipient who cannot recover or use the contribution can then expose omitted context, excessive compression, unavailable tools or missing preparation.
 - Hold the source snapshot and queries fixed while varying representation or route. Inspect not only aggregate retrieval scores but unique useful discoveries and unique harmful omissions.
 - Replay a controlled source change through build, persistence, reload and use. Compare the affected result with unchanged controls.
 - Hold inquiry content fixed while changing the encounter occasion. Observe interruption and uptake, not merely whether a notification was sent.
 
 These substitutions diagnose an operation under controlled inputs. They do not prove that the repaired whole will produce those inputs naturally. Re-run the relevant complete use after repair. Components can interact: a larger pool can improve recall and overwhelm an assessor, while a more selective delivery can save context and remove a decisive exception. Do not add separate component gains as if they were independent benefits.
 
-For encounter recovery, interrupt the actual implementation after claiming work, during execution and after committing the result. Present a concurrent duplicate and a later completed duplicate. Observe whether unfinished work has an actual continuation, whether a stale owner can publish, and whether an external effect can be repeated or remains unknown. A constructed state trace can expose a missing branch; it does not establish a real database's atomicity, scheduler behavior or recipient idempotency. Keep those implementation questions separate from a classifier's inquiry quality.
+For encounter recovery, interrupt the implementation after claiming work, during execution and after committing the result. Present a concurrent duplicate and a later completed duplicate. Observe whether unfinished work has an actual continuation, whether a stale owner can publish, and whether an external effect can be repeated or remains unknown. A constructed state trace can expose a missing branch; it does not establish a real database's atomicity, scheduler behavior or recipient idempotency. Keep those implementation questions separate from a classifier's inquiry quality.
 
 #### KCAE.EVAL:4.5 - Qualify scores for the decision they control
 
@@ -82,17 +82,17 @@ Name what the evidence supports, what it leaves untested and which condition reo
 
 ### KCAE.EVAL:5 - Archetypal Grounding
 
-Suppose CedarBench compares an existing hybrid search workflow with a proposed direct-block supplement on 40 withheld support episodes. These are invented study conditions, not reported measurements. Cases include protocol ambiguity, old translations, useful table notes and naturally unsupported requests. Both alternatives use the same source snapshot, assessor, delivery and recipient rules. The proposed route adds its actual call and maintenance costs.
+Suppose CedarBench compares an existing hybrid search workflow with a proposed direct-block supplement on 40 withheld support episodes. These are invented study conditions, not reported measurements. Cases include protocol ambiguity, old translations, useful table notes and naturally unsupported requests. Both alternatives use the same source snapshot, assessor, delivery and recipient rules. Include the proposed route’s additional call and maintenance costs in the comparison.
 
 If a missed exception appears after manually supplying its source, the original finding route was a limitation. If the assessor still recommends resend on protocol v1, retrieval repair alone cannot close the case. If the judgement is correct but the customer receives only the upbeat first sentence, delivery remains defective. The adoption question returns only after the relevant whole is tried again.
 
 ### KCAE.EVAL:6 - Bias-Annotation
 
-Authors tend to select examples their design can answer and count improvement where it is easiest to measure. Start from the receiving work and include natural failures and no-use cases. Avoid tuning on the final test, treating model agreement as independent truth, or omitting preparation and interruption costs. A smaller honest conclusion is more reusable than an inflated score.
+Authors tend to select examples their design can answer and count improvement where it is easiest to measure. Start from the receiving work and include natural failures and no-use cases. Avoid tuning on the final test, treating model agreement as independent truth, or omitting preparation and interruption costs. Readers can more reliably reuse a conclusion limited to the cases tested than a score that overstates the evidence.
 
 ### KCAE.EVAL:7 - Conformance Checklist
 
-Does the comparison answer a real adoption or repair decision? Is the baseline serious? Are sources, episodes, recipients and costs comparable? Could the cases expose an unknown or absent answer? Are development and evaluation separated? Can the result distinguish finding, assessment, delivery and application? Have component repairs returned to whole use? Are evidence reach and refresh conditions explicit?
+Does the comparison answer a real adoption or repair decision? Would a capable practitioner use the comparison arrangement in this setting? Are sources, episodes, recipients and costs comparable? Could the cases expose an unknown or absent answer? Are development and evaluation separated? Can the result distinguish finding, assessment, delivery and application? Have component repairs returned to whole use? Are evidence reach and refresh conditions explicit?
 
 ### KCAE.EVAL:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -100,15 +100,15 @@ A green API test establishes interface behavior, not useful advice. A stronger r
 
 ### KCAE.EVAL:9 - Consequences
 
-Engineering choices become revisable on evidence relevant to the receiving work. Some promising additions will be rejected or narrowed. Evaluation itself costs work, so reuse current matching results and inspect only changes that can alter the decision. Neither exhaustive metrics nor a universal test-set size is required.
+Engineering choices become revisable on evidence relevant to the receiving work. Some promising additions will be rejected or narrowed. Evaluation itself costs work, so reuse current matching results and inspect only changes that can alter the decision. Choose the measures and number of cases for the decision: the method requires neither every possible metric nor a fixed sample size.
 
 ### KCAE.EVAL:10 - Architectural Rationale
 
-Whole-use comparison determines whether the arrangement is worth having. Controlled component substitutions determine where to intervene. Separating those questions avoids both an unexplained aggregate score and a pile of excellent components that fail together.
+Whole-use comparison determines whether the arrangement is worth having. Controlled component substitutions determine where to intervene. Separating those questions avoids both an unexplained aggregate score and components that each perform well but fail together.
 
 ### KCAE.EVAL:11 - SoTA-Echoing
 
-AgentRetrievalBench contributes a concrete warning about natural no-gold retrieval and limited evidence from artificial controls. Typed-decision audits expose confounding and coherence questions beyond a neat output schema. KCAE.Reference:9 preserves their scope; neither establishes support-library efficacy. Classical information-retrieval evaluation remains useful for component diagnosis. This pattern adds receiving use, source change, reader sufficiency, encounter and full lifecycle cost to the adoption question. Reopen metrics when they cease to distinguish the failure that matters.
+AgentRetrievalBench contributes a concrete warning about natural no-gold retrieval and limited evidence from artificial controls. Typed-decision audits expose confounding and coherence questions that an output schema alone cannot resolve. KCAE.Reference:9 preserves their scope; neither establishes support-library efficacy. Classical information-retrieval evaluation remains useful for component diagnosis. This pattern adds receiving use, source change, reader sufficiency, encounter and full lifecycle cost to the adoption question. Reopen metrics when they cease to distinguish the failure that matters.
 
 ### KCAE.EVAL:12 - Relations
 

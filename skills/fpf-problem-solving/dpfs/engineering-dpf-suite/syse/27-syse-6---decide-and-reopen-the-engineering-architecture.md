@@ -6,7 +6,7 @@
 
 Use this pattern when an engineering project has several architecture candidates, yet local design choices are
 accumulating without one recoverable decision about the project-shaping structures of the engineered System.
-Use it also when an earlier architecture decision still appears in a record, but changed conditions—for
+Use it also when an earlier architecture decision appears in a record, but changed conditions—for
 example, use, integration, configuration, evidence, or operation—may have made its accepted losses and open
 refinements stale.
 
@@ -27,7 +27,7 @@ For software proposals named by architectural style, §4.4 explains the mechanis
 before comparison; §4.4.4 follows a choice and a changed premise.
 Use `C.32` and `SYSE.5` to develop the candidates, `SYSE.7` to maintain architecture descriptions, `C.32.PAD`
 directly when no Systems Engineering specialization changes the choice, and `SYSE.4` to qualify the decision or
-identify the basis it still lacks. Release approval and evidence that the intended architecture now obtains
+identify any basis it lacks. Release approval and evidence that the intended architecture now obtains
 remain separate decisions and claims.
 
 #### SYSE.6:0.1 - Terms and Distinctions
@@ -74,8 +74,8 @@ knowledge needed to choose them, substitutes centralized approval for specialist
 revision look like a whole-project exception. A broad quality catalogue or one score does not solve the problem:
 characteristics have different bearers, Scales, conditions, evidence, and protected losses.
 
-A decision record can hide both failures. A file can be complete while the candidate basis is narrow, accepted
-losses are absent, the selected structure is unclear, or no observation can reopen the decision. Engineers then
+A decision record can hide both failures. A completed file can rest on too narrow a basis for comparing the candidates, omit accepted losses, leave
+the selected structure unclear or give no observable condition for reconsideration. Engineers can then
 preserve documentation instead of maintaining a current engineering choice.
 
 ### SYSE.6:3 - Forces
@@ -95,7 +95,7 @@ The decision must manage these recurring tensions:
 - Current contributors need one selected option as a common decision basis, while rejected or deferred
   alternatives can remain valuable when the environment, technology, or evidence changes.
 - AI-assisted synthesis and analysis can widen and criticize alternatives, while authority, accepted loss, and
-  the engineering decision still require an identified decision subject and adequate grounds.
+  the engineering decision require an identified decision subject and adequate grounds.
 - A decision that is easy to supersede supports continuing change, while a decision with no stable identity or
   effectivity cannot coordinate implementation and configuration.
 
@@ -128,9 +128,9 @@ Work—can confirm or reopen the choice.
    use, horizon, decision, and evidence window. For each input, state what it describes and which claim it can
    support. Evidence informs the decision but neither authorizes nor entails it; a specialist result answers only
    its receiving question under its stated conditions. If an input is unavailable or incompatible, use a
-   qualified direct source or record the missing result. Keep a candidate only when its unsupported
-   dependencies—for example, bearer, interface, realization, integration, configuration, or evidence
-   dependencies—are visible as bounded residuals that the decision subject can knowingly accept.
+   qualified direct source or identify the missing result. If a candidate has unsupported dependencies, retain it only when
+   they are explicit, bounded and acceptable to the decision subject. Examples include dependencies on bearers, interfaces,
+   realization, integration, configuration or evidence.
 4. **Define the criteria before evaluating.** Select a small set of `C.32.ACS` rows tied to this use and decision.
    For every characteristic, name the bearer, scale or qualitative frame, operating conditions, protected loss,
    comparison use, and guardrail or reopen reading when one is justified. Keep non-equivalent characteristics—
@@ -140,7 +140,7 @@ Work—can confirm or reopen the choice.
    decision-relevant consequences—for example, expected functioning, physical principle, interfaces, placement,
    failure containment, realization and integration dependencies, supply and provider conditions, configuration
    continuity, operating and maintenance effects, affected Systems, evidence burden, or change consequences. Use `A.19.CPM`, `C.11`, or another direct
-   comparison or choice pattern for the claim actually being made.
+   comparison or choice pattern for the claim being made.
 6. **Challenge the preferred option.** Ask which omitted structure or affected System could reverse the
    preference. Examine the relevant existing analyses and observations under their configuration, conditions,
    and claim limits. Before commissioning further Work, use `C.11.DUA` to compare it with proceeding on the
@@ -165,7 +165,7 @@ Work—can confirm or reopen the choice.
 9. **Name the engineering uses.** Identify the receiving Work and the constraint or question it needs. Where
    later Work can change the grounds for this choice, connect its relevant result or return condition to the
    affected architecture question and decision subject. Use an existing compatible decision or configuration
-   account for these connections when it already supplies them. Supply
+   account for these connections when it supplies them. Supply
    compatible selected-structure constraints and reconsideration conditions to `SYSE.3`, `SYSE.13`, and
    `SYSE.18` only where they change the receiving design choice. During decision Work, use `SYSE.9` to request a
    specialist contribution when one is needed. Use `SYSE.7`, `SYSE.10`, or `SYSE.4` for a current description
@@ -180,14 +180,14 @@ Work—can confirm or reopen the choice.
     decision and its description. Supersede the decision when a material changed claim alters the
     selected option, accepted loss, fixed/open boundary, or receiving Work.
 12. **Stop at coordination sufficiency.** Return when affected practitioners can tell what current structures
-    and constraints guide their Work, what remains open, which losses are accepted, which result they must
-    return, and what can reopen the choice. Do not wait for complete detailed design.
+    and constraints guide their work, which choices remain open, any losses accepted, any result they need to
+    return and what can reopen the choice. This can be settled before detailed design is complete.
 
-This list is a learning and reasoning aid, not a lifecycle or temporal order. Work such as candidate
-development, specialist analysis, realization preparation, evaluation, configuration, or architecture revision
-can overlap. A
-result dependency states which earlier result the receiving decision Work needs; it does not prescribe when each
-producing Work occurrence must finish.
+Use the numbered questions to learn or reason through the decision. Work on candidate
+development, specialist analysis, realization preparation, evaluation, configuration and architecture revision
+can overlap. A result dependency identifies the result that the receiving work needs.
+Other parts of the producing work can continue after the needed result becomes available.
+
 
 #### SYSE.6:4.2 - Record the Result
 
@@ -238,10 +238,10 @@ coordinated update of its consumers. Team responsibility is a further organizati
 alongside these boundaries rather than deriving it from a box count.
 
 These boundaries need not coincide. A well-structured application can contain many modules in one
-release. Several separately running services can still need one coordinated release because they share
+release. Several separately running services can need one coordinated release because they share
 a changing schema or incompatible protocol. If an *architectural quantum* is used in discussion, ask
 which execution, state and compatibility dependencies make the proposed unit independently deployable
-under the stated conditions. Calling each team or process a quantum does not answer that question.
+under the stated conditions.
 
 The alternatives below are not successive generations or mutually exclusive bins. A service can contain
 layers; its import job can be a pipeline; its domain logic can use ports and adapters. Compare complete
@@ -249,17 +249,17 @@ combinations at the boundary relevant to the decision.
 
 | Arrangement | Organizing mechanism and useful consequence | What can defeat that consequence |
 | --- | --- | --- |
-| Layers, often within a modular monolith | Responsibilities are separated and allowed dependencies constrained. The responsibility groups are functional layers. Identify separately the modules that realize them and any levels in their dependency or interface structure. Presentation changes can remain apart from domain rules; internal calls and a shared transaction can keep a small application straightforward to operate. | A feature cutting across all layers still requires coordinated changes. Pass-through layers add work without isolating a changing decision. Logical layers need not be separate network tiers; adding tiers changes latency and failure handling. |
+| Layers, often within a modular monolith | Responsibilities are separated and allowed dependencies constrained. The responsibility groups are functional layers. Identify separately the modules that realize them and any levels in their dependency or interface structure. Presentation changes can remain apart from domain rules; internal calls and a shared transaction can keep a small application straightforward to operate. | A feature cutting across all layers requires coordinated changes. Pass-through layers add work without isolating a changing decision. Logical layers need not be separate network tiers; adding tiers changes latency and failure handling. |
 | Pipes and filters | A task becomes transformations with explicit input/output contracts, connected by streams or queues. A filter can be reused or replaced when its contract remains compatible; stages and independent items can execute concurrently. | Global state, order requirements, blocking joins and an expensive serial stage limit concurrency. Serialization, transport and intermediate storage can dominate small transformations. Recovery must distinguish replayable processing from irreversible effects. |
 | Core with plugins, often called microkernel architecture | Stable common responsibilities stay in the core; variable behaviour enters through extension contracts. A document tool can accept another format or analysis without editing every existing extension. | The extension contract may not express the new variation. Core changes then affect many plugins. Loading a plugin into the same process does not isolate a crash, malicious access or resource exhaustion; isolation needs an actual mechanism. |
-| Service-oriented arrangement | Capabilities are accessed through described interfaces, potentially across ownership domains. Consumers can use a capability without taking over its implementation. | A shared database, central orchestration or common schema may create substantial coupling. SOA itself does not require one database, a particular bus or one deployment model. Compare the actual coordination arrangement. |
+| Service-oriented arrangement | Capabilities are accessed through described interfaces, potentially across ownership domains. Consumers can use a capability without taking over its implementation. | A shared database, central orchestration or common schema may create substantial coupling. SOA does not require one database, a particular bus or one deployment model. Compare the actual coordination arrangement. |
 | Autonomous services, including microservices | Responsibility and writable state are encapsulated behind compatible interfaces, with separately operable releases. A capability can change or scale without changing unrelated implementations. | Cross-service invariants, synchronous call chains and incompatible contracts restore coupling. Separate storage adds synchronization, recovery and observation work. A small endpoint is not automatically an autonomous business capability. |
 | Event-driven communication | Producers publish occurrences that interested consumers interpret under agreed contracts. New reactions and independent consumer rates can be supported without adding each consumer to the producer's call chain. | Delivery delay, duplication, ordering, schema change and incomplete processing become explicit design problems. Removing a synchronous call does not remove the business dependency or make a timely joint result inevitable. |
 
-A **modular monolith** is a serious candidate, not a failure label: one deployment with enforced module
-interfaces can retain local transactions and inexpensive calls. Its cost is a shared release and often
+A **modular monolith** combines one deployment with enforced module interfaces. It can
+retain local transactions and inexpensive calls. Its cost is a shared release and often
 shared scaling or failure scope. Current Spring Modulith supplies one concrete implementation of exposed
-module interfaces and hidden internals; it does not prove that every single-deployment application is modular.
+module interfaces and hidden internals. Check the boundaries enforced in the application under consideration.
 
 Two commonly confused arrangements answer other questions. **Ports and adapters** place domain-facing
 interactions behind interfaces so that a user interface, database adapter or test double can change without
@@ -284,11 +284,11 @@ no shared serialization point. If every item
 must update the same locked state, or a later stage waits for a complete batch, this calculation does not
 apply. Queueing, retries and networking add elapsed time. At a sustained arrival rate above the slowest
 stage's capacity, backlog grows unless work is rejected, reduced or capacity changes. Below that bound,
-variability can still make a tail-latency target fail. Calculate the dependency path and capacity constraints.
-Use qualified evidence for the performance commitment being made; obtain representative measurements when its required basis is missing.
+variability can make a tail-latency target fail. Calculate the dependency path and capacity constraints.
+Use qualified evidence for the performance commitment. Obtain representative measurements if the commitment needs them and the existing evidence falls short.
 
 The same reasoning applies to services. Five dependent remote calls add waiting and partial-failure cases;
-five independent computations may run concurrently, but the result still waits for whichever contributions
+five independent computations may run concurrently, but the result waits for whichever contributions
 it requires. Count the actual calls and shared resources. A style rating such as “high performance” cannot
 answer whether a caller receives the needed result within its deadline. For a high-rate image conversion
 job, separating and scaling a slow filter may be useful; for a short local lookup, the added transport may
@@ -298,7 +298,7 @@ cost more than the transformation.
 
 Start with a representative behaviour and a consequential change. Trace which modules, running services,
 data and consumers must participate. For a reservation, ask which state prevents two parties receiving the
-same remaining item. If two modules share one transaction, its isolation and locking still need qualification,
+same remaining item. If two modules share one transaction, its isolation and locking need qualification,
 but it can supply one place to enforce the invariant. If two services own separate state, name the coordination
 that preserves the required promise, or explicitly change the promise and supply an acceptable failure or
 compensation path. Eventual consistency is suitable only where the receiving use tolerates that interval.
@@ -306,18 +306,18 @@ compensation path. Eventual consistency is suitable only where the receiving use
 Next change an interface or stored representation. A service may be separately deployable only if old and
 new consumers can coexist, required data are available, and the provider can observe and recover from a
 failed update. `SYSE.34` develops compatible data changes; `SYSE.35` and `SYSE.41` supply controlled exposure
-and actual deployment. Their work is part of the cost of the architecture, not a benefit obtained by drawing
-more boxes. For plugins, apply the same question to the extension API and host version; `SYSE.53` resolves a
+and deployment. Include the work needed to deliver and operate those changes in the architecture comparison.
+For plugins, apply the same question to the extension API and host version. `SYSE.53` resolves a
 particular compatible component selection once those conditions are known.
 
 Use the trace to compare three kinds of change: changing an internal algorithm while preserving the contract,
-extending a capability through an existing contract, and changing the contract itself. The first two may be
+extending a capability through an existing contract, and changing the contract. The first two may be
 local; the third exposes affected consumers. Check persistent data and operational procedures as well as code.
 If every modest feature crosses the same boundaries, reconsider the partition instead of continually adding
 coordination machinery. `SYSE.23` compares the resulting investments in the target and its builder arrangement.
 
-This produces a reasoned comparison: the useful independence, the mechanism carrying it, the coupled work
-that remains, and the condition that would reverse the choice. It does not rank styles outside that use.
+The comparison identifies which change can be independent, what mechanism permits it, what work remains coupled
+and what would reverse the choice for this use.
 
 ##### SYSE.6:4.4.4 - Software case: booking equipment without distributing the reservation invariant
 
@@ -365,8 +365,8 @@ In A, local unit controllers carry protection and normal regulation while a supe
 set-points. B adds thermal storage and tariff scheduling; its local controllers retain protection and regulation.
 
 The decision is which architecture should guide engineering of configuration `HP-2` for the next three
-heating seasons. The architecture board is the decision subject; a separate project relation gives it
-authority for that choice. The assignment and decision record do not create that authority.
+heating seasons. The architecture board is the decision subject. Its authority for this choice comes from a separate
+project authorization. The assignment and decision record do not confer that authority.
 
 Continue the `SYSE.5` proposals with additional stipulated design inputs: a thermal/hydraulic account
 and a compatible sensing and control arrangement. These are premises of this worked case, not reported plant
@@ -375,7 +375,7 @@ storage comparison below.
 
 Both proposals use the same building heat-demand and weather envelope, comfort requirement, communication-loss
 condition, installation window and budget. Compatible unit results and design analyses support both at the
-scope of the architecture commitment; whole-plant qualification is still required before operation. Seasonal
+scope of the architecture commitment; whole-plant qualification is required before operation. Seasonal
 energy and storage-cycling claims remain unresolved as shown below. Layout and supply estimates leave both
 options within the window and budget, with the required maintenance access.
 
@@ -421,8 +421,8 @@ still-applicable unit results, and return the storage, charging-control and inte
 receiving work. If the relied-on storage calculation or installation premise fails, reopen that unsupported
 branch instead of treating the new contract as proof that B works.
 
-A lower tank price alone would not automatically overturn A: the board would examine whether it changes
-the burden comparison or the owner's priority. Unknown seasonal savings remain unknown. Communication-loss
+If the tank price falls, the board checks whether that changes the burden comparison or the owner's priority
+before deciding whether to replace A. The available evidence does not establish seasonal savings. Communication-loss
 failures, comfort or cycling guardrail crossings, changed utility-signal semantics and material installed
 divergence also retain their named return to the affected architecture question.
 
@@ -492,7 +492,7 @@ evidence requirements.
 
 ### SYSE.6:10 - Rationale
 
-`C.32.PAD` already supplies the transdisciplinary architecture decision relation. This specialization changes
+`C.32.PAD` supplies the transdisciplinary architecture decision relation. This specialization changes
 the Systems Engineering move: candidates must expose use, functional organization, actual or intended bearers,
 physical and informational interfaces, realization and integration feasibility, affected Systems, and
 specialist evidence. The decision turns the selected option into constraints and result conditions for
@@ -521,7 +521,7 @@ inquiry is needed.
 [NASA §6.5, especially §§6.5.1.2.2–6.5.1.2.3 and the configuration-verification
 activity](https://www.nasa.gov/reference/6-5-configuration-management/) connects approved
 baselines, change authority, impact evaluation and verification of implementation. A project applying these
-together can maintain an architecture decision through change. Its actual arrangement may already supply
+together can maintain an architecture decision through change. Its arrangement may supply
 the connections used here.
 
 The remaining practical question is what this choice constrains and what a later result can overturn.
@@ -535,9 +535,9 @@ condition, and the affected architecture question stay joined.
 `C.32.PAD` fixed/open and source-return distinction supplies the general move; the HP-2 filling is authored
 here. Compared with a choice report and product baseline that leave those connections for each receiver to
 reconstruct, this account gives the installer, controller developer and architecture board a shared answer
-about which change needs which decision. If the existing report and configuration arrangement already give
-that answer, cite and use them. This pattern calls for no duplicate account or replacement of their change
-authority.
+about which change needs which decision. If the existing report and configuration arrangement give
+that answer, cite and use them. Keep the change authority that applies to the project.
+
 
 The deliberate cost is identifying and maintaining the few receiving questions and return conditions that
 matter. Accept that effort when an engineering result can invalidate a material decision premise or expose
@@ -592,15 +592,15 @@ provider or operating capability changes that comparison. Detailed software desi
 
 ### SYSE.6:12 - Relations
 
-- `SYSE.5` describes how to produce explicit allocation choices and conflicts. Practitioners using `SYSE.6`
-  recheck a compatible result's subject, configuration, horizon, evidence, and conditions before using it as a
-  candidate-set input; generation does not select.
+- `SYSE.5` describes how to develop candidate allocations and their conflicts. Before using a result for architecture
+  selection, establish from the available grounds that it fits this decision’s subject, configuration, horizon, evidence and conditions.
+  The deciding Agent uses the candidate set to make the architecture choice.
 - A compatible `SYSE.8` account can supply provider-arrangement constraints that change this architecture
   decision. Recheck its subject, configuration, use, horizon, evidence window, and availability. If it does not
   fit, use a qualified direct source or record the missing result. Keep the described offering or arrangement,
   provider Systems, performed Work, consequences, responsibility, and authority as distinct objects.
-- A compatible `SYSE.7` account or `SYSE.10` assessment supplies evidence only when it can change this decision
-  at the same configuration and horizon. A compatible `SYSE.9` account supplies a specialist result for its
+- A compatible `SYSE.7` account or `SYSE.10` assessment can supply evidence for keeping or changing the choice
+  for the configuration and horizon in question. A compatible `SYSE.9` account supplies a specialist result for its
   receiving question and conditions. During decision Work, a conditional `SYSE.9` request names the question,
   subject, conditions, authority, and desired result. Evidence and specialist results inform the choice; the
   decision subject retains the authority to make it. If an input does not fit, use a qualified direct source or
@@ -613,8 +613,8 @@ provider or operating capability changes that comparison. Detailed software desi
   applies its Method to generate and compare that Work's own alternatives and checks subject, configuration,
   horizon, and compatibility. If the decision result does not fit, use a qualified direct source or record the
   missing result.
-- Practitioners use `SYSE.4` in assurance Work to qualify the engineering decision or identify the basis it
-  still lacks. That assurance result is separate from architecture selection and from later acceptance,
+- Practitioners use `SYSE.4` in assurance Work to qualify the engineering decision or identify any basis it lacks.
+  That assurance result is separate from architecture selection and from later acceptance,
   permission, release, and observed use success.
 - `C.32.ADR`, `C.30.AD`, `E.17`, and `E.24.PUB` govern decision projection, architecture description,
   source-backed publication, and audience availability. A current decision can exist without one particular

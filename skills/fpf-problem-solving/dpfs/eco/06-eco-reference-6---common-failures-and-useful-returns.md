@@ -2,11 +2,11 @@
 
 | Failure in work | Contribution to recover |
 | --- | --- |
-| A model's optimum cannot be obtained at its assumed prices. | ECO.1 restores the calculation's exchange and access basis. |
-| More explanation produces no commitment. | ECO.4 separates understanding, disagreement and missing means; ECO.3 can change the proposal. |
-| A supplier's apparently cheap offer conceals dedicated investment exposure. | ECO.6 compares feasible adaptation arrangements and outside options. |
-| Local allocations fit individually but violate the common constraint. | ECO.7 joins the resource account to effective rules; ECO.8 addresses their wider relation. |
-| A rule is copied while the capability that made it work is absent. | ECO.9 restores the practice and its transmission through the existing development methods. |
-| Lower unit resource use is reported as a guaranteed total saving. | ECO.10 compares the demand response against the relevant counterfactual. |
+| A model’s optimum cannot be attained at the assumed prices. | Use ECO.1 to establish which prices and resources are available and what the calculation supports under those conditions. |
+| Further explanation has produced no commitment. | Use ECO.4 to distinguish a need for understanding from disagreement or unavailable means. Use ECO.3 if a different proposal is needed. |
+| An inexpensive offer leaves the supplier exposed after investing in dedicated assets. | Use ECO.6 to examine the exposure, attainable outside options and proposed arrangements for later adaptation. |
+| Allocations fit separately but violate the common constraint when combined. | Use ECO.7 to establish the joint physical and access conditions. Use ECO.8 if a wider coordination relation matters. |
+| A copied rule lacks the capability or practice that made it work elsewhere. | Use ECO.9 to establish which contribution is missing and how it could be maintained or transmitted if the rule is to be used. |
+| Lower resource use per unit is reported as a total saving. | Use ECO.10 to compare total use against the relevant counterfactual, including changes in demand within the comparison’s scope. |
 
 Use these returns when the failure occurs.

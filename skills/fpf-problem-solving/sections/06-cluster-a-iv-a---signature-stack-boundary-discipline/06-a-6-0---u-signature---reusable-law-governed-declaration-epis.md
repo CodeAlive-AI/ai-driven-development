@@ -21,7 +21,7 @@ Before opening declaration fields, ask:
 
 In FPF terms, the declaration is about one independently governed `EntityOfConcern`; `SubjectKind` and `RangedValueKind` name its declared subject and value range; `ResultKind` is added when a distinct result kind is current; and `Vocabulary`, `Laws`, and `Applicability` answer the remaining three questions.
 
-`U.Signature` is the episteme that carries this declaration. A relation kind opens the `RelationSignature` specialization; a mechanism family or formal calculus opens the corresponding A.6.1 or FormalSubstrate declaration; a method kind remains governed by A.3.1.
+`U.Signature` is the episteme that carries this declaration. For a relation kind, use `RelationSignature`. For a mechanism family or formal calculus, use the corresponding A.6.1 or FormalSubstrate declaration. A.3.1 gives the identity of a repeatable method. To define a kind of methods or judge whether a method meets its criterion, use C.3 and C.3.2.
 
 **Primary working reader and concern.** The reader is an engineer who authors or reuses a declaration and needs stable meaning, applicability, and typed reuse without authoring declaration or occurrence-identity apparatus beyond what the current use needs.
 

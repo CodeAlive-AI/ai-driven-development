@@ -7,11 +7,11 @@
 
 Use this pattern when participants cannot tell what conduct is expected, when different organisers apply a rule differently, or when an incident requires a response that people can understand and challenge. A useful disagreement is being treated as disloyalty. Advertising crowds out requested help. A participant can no longer access the only channel through which they could appeal their exclusion.
 
-The governed work is making rules of participation usable and handling an incident under a valid decision arrangement. It includes clarification, proportionate protection, fact finding, response, appeal and return. Establishing who may make shared rules or review the decision-makers is the separate CB.13 question.
+Use this method to make rules of participation usable and to handle an incident under a valid decision arrangement. It includes clarification, proportionate protection, fact finding, response, appeal and return. Establishing who may make shared rules or review the decision-makers is the separate CB.13 question.
 
-**First useful result:** the people concerned know the applicable expectation, the action being taken and its reason, and a reachable way to obtain correction or review. Where an incident is open, someone capable and authorised owns its next action.
+**First useful result:** those affected know the applicable expectation, the action being taken and its reason, and a reachable way to obtain correction or review. Where an incident is open, someone capable and authorised owns its next action.
 
-An organiser needs the relevant activity and its conditions, a person able to receive concerns, and the actual scope of the available decision authority. A simple clarification can start with one unclear expectation. A consequential restriction needs grounds and authority proportionate to that action.
+An organiser needs the relevant activity and its conditions, someone able to receive concerns, and the scope of the available decision authority. A simple clarification can start with one unclear expectation. A consequential restriction needs grounds and authority proportionate to that action.
 
 **Ordinary non-use:** a civil disagreement about the practice can continue through subject reasoning with CB.4 or CB.5 without becoming a conduct case. Existing understood rules may already be sufficient. Use the relevant qualified service for a danger or allegation beyond the community's handling capability.
 
@@ -19,7 +19,7 @@ An organiser needs the relevant activity and its conditions, a person able to re
 
 A rule can be visible but hard to apply. "Be respectful" may leave participants unable to distinguish sharp criticism, repeated personal attack and refusal to provide private information. A long code may still omit who can decide or what happens when the moderator is involved.
 
-Incident handling fails in several ways. An organiser can rush to judgement, demand an unsafe confrontation, repeatedly tolerate an action that prevents participation, or hide a correctable mistake behind the rule's authority. A public explanation can itself disclose the information that should have been protected.
+Incident handling fails in several ways. An organiser can rush to judgement, demand an unsafe confrontation, repeatedly tolerate an action that prevents participation, or hide a correctable mistake behind the rule's authority. A public explanation can disclose the information that should have been protected.
 
 The task is to preserve useful participation while resolving the specific conduct question with an intelligible basis, an effective response and available correction.
 
@@ -31,12 +31,12 @@ The task is to preserve useful participation while resolving the specific conduc
 | Common expectations meet different circumstances. | Language, accessibility, role and prior conduct can change what a fair response requires. |
 | Explanation and privacy interact. | People need reasons without unnecessary exposure of reports or personal details. |
 | Familiarity helps and can bias judgement. | A moderator's relationship to the people or dispute can require another decision-maker. |
-| A rule needs real handling capacity. | An appeal promise fails when the same unavailable or conflicted person receives every route. |
+| Someone must be available to handle concerns. | An appeal promise fails when the same unavailable or conflicted person receives every route. |
 | Criticism can be uncomfortable and useful. | Distinguish the subject claim from conduct that prevents others participating. |
 
 ### CB.8:4 - Solution
 
-Connect each needed rule to the activity it supports and an action people can perform. Make the ordinary route usable before an incident, then handle a particular incident through its actual facts, available protection and applicable decision arrangement.
+Connect each needed rule to the activity it supports and an action participants can perform. Make the ordinary route usable before an incident, then handle a particular incident using the available facts, the protection available to those affected and the decision arrangement that applies to this incident.
 
 #### CB.8:4.1 - Explain the expectations needed for the activity
 
@@ -48,7 +48,7 @@ Separate subject standards from conduct rules. A technical claim can be wrong an
 
 Make expectations available where people enter and act. Explain the few consequential conditions before an event, link the relevant guidance at a posting point and provide an accessible way to ask. A participant should be able to understand an expectation before making a conspicuous contribution. Explain real limits on privacy instead of promising that anything said in a group will remain confidential.
 
-Retain adequate existing rules. Revise an unclear or ineffective rule through its actual decision arrangement, with affected participants able to explain the practical consequences. State when the revision takes effect. Clarifying future conduct and judging past conduct are different decisions; do not silently treat a newly invented expectation as an earlier agreement.
+Retain adequate existing rules. Revise an unclear or ineffective rule through the arrangement authorised to change it, with affected participants able to explain the practical consequences. State when the revision takes effect. Clarifying future conduct and judging past conduct are different decisions; do not silently treat a newly invented expectation as an earlier agreement.
 
 #### CB.8:4.2 - Provide a workable receiving and decision route
 
@@ -86,7 +86,7 @@ Several questions can coexist. A useful criticism can contain an impermissible d
 
 Give the person whose conduct is in question enough of the concern and relevant basis to respond, subject to the protection needed for others. Ask for missing context and correct factual mistakes. Where an immediate action had to precede this hearing, provide the opportunity as soon as the conditions permit.
 
-Choose the response from the actual difficulty, seriousness, recurrence and foreseeable effect. Useful responses include clarification, a request to change or repair the action, a warning with an understandable next expectation, a bounded restriction or ending access to the activity. Follow the applicable decision rule. A serious incident may justify a stronger permitted response immediately; a fixed ladder of warnings cannot decide every case.
+Choose the response from the difficulty, seriousness, recurrence and foreseeable effect. Useful responses include clarification, a request to change or repair the action, a warning with an understandable next expectation, a bounded restriction or ending access to the activity. Follow the applicable decision rule. A serious incident may justify a stronger permitted response immediately; a fixed ladder of warnings cannot decide every case.
 
 Consider whether a support or design defect contributed. An inaccessible posting rule, an unclear boundary between critique and personal comment, or an overloaded channel may need a repair alongside any individual response. A communication difficulty alone is not evidence of hostile intent.
 
@@ -100,9 +100,9 @@ Make the selected response effective. Confirm the actual change to access, event
 
 Offer a review route proportionate to the decision's consequence. Explain the grounds that can change it, such as relevant new facts, mistaken application of a rule, an excessive response or a conflict in the original judgement. Provide the person with enough reason to formulate the request and a route they can still reach.
 
-Have a suitably authorised person who can reconsider the case examine the challenge. For a consequential disputed judgement, obtain someone other than the challenged decision-maker. The original moderator can supply their reasoning and evidence while the reviewer makes the reconsideration. CB.13 establishes who can fulfil that function if the arrangement is missing or contested.
+Have the challenge examined by a reviewer with the authority and ability to reconsider the case. For a consequential disputed judgement, obtain a reviewer independent of the challenged decision-maker. The original moderator can supply the reasoning and evidence behind the decision. If the review arrangement is missing or contested, use CB.13 to establish who can review the case.
 
-Compare the decision with the relevant rule, facts and protected interests. The outcome may retain, change or reverse it, or return a missing inquiry. Explain the result and any further route that actually exists. Repeated identical submissions need not reopen settled facts indefinitely; a material new fact or a newly established conflict can reopen the affected question.
+Compare the decision with the relevant rule, facts and protected interests. The outcome may retain, change or reverse it, or return a missing inquiry. Explain the result and any further review route available. Repeated identical submissions need not reopen settled facts indefinitely; a material new fact or a newly established conflict can reopen the affected question.
 
 Correct what the mistake changed. Restore appropriate access, remove an unsupported public implication, revise an incorrect record and inform the people who relied on it. Restoring a post does not require redisclosing private material; provide a corrected permitted version when necessary.
 
@@ -160,7 +160,7 @@ The member later asks to return. An authorised alternate confirms the original b
 
 The administrator enables submission for approval. In the first answer, the member explains which repair their service cannot perform and supplies a relevant alternative; the moderator approves it. For the second answer, the member removes an unrelated discount before submission; the moderator approves the technical comparison. The questions receive usable answers. After these two exchanges, the moderator confirms the agreed condition and the administrator restores ordinary posting. The earlier advertising and its justified restriction remain in the proportionate account of the case.
 
-The two approved answers meet the stated return conditions. Further unrelated advertising would reopen the response from the new conduct and its effect. If the promised moderation support becomes unavailable, the reviewer and member need another workable arrangement before relying on it.
+Further unrelated advertising would reopen the response from the new conduct and its effect. If the promised moderation support becomes unavailable, the reviewer and member need another workable arrangement before relying on it.
 
 ### CB.8:6 - Bias-Annotation
 
@@ -173,8 +173,8 @@ For the present rule or case, ask:
 - Can a participant understand what to do and obtain the relevant guidance at the point of participation?
 - Does the concern have an accessible receiver with the capability and authority for the next action?
 - Are observed conduct, reported experience, interpretation and unresolved facts kept distinct?
-- Is any temporary protection limited and subject to a real next review?
-- Does the selected response address the actual difficulty, and has it taken effect?
+- Does each temporary protection measure have a stated scope and a reachable review at a specified time or under a specified condition?
+- Does the selected response address the difficulty, and has it taken effect?
 - Can the affected person obtain an intelligible reason and a reachable, suitably independent review?
 - Has an error been corrected in the access, material or understanding it changed?
 
@@ -184,7 +184,7 @@ Recognising a possible participation difficulty can be quick. The evidence, hear
 
 | Misuse | Repair |
 | --- | --- |
-| Treat disagreement with an organiser as a conduct breach. | Preserve the subject question and identify any separate action that actually violates a rule. |
+| Treat disagreement with an organiser as a conduct breach. | Preserve the subject question and identify any separate action that violates a rule. |
 | Add rules after every discomfort without checking their use. | Recover the practical failure and test whether clarification or a direct repair is sufficient. |
 | Apply a new rule as though everyone had already accepted it. | Explain its basis and effective time; judge earlier conduct under the applicable conditions. |
 | Publish the complaint in order to demonstrate transparency. | Explain the decision while restricting unnecessary case details. |
@@ -201,7 +201,7 @@ Handling and review require time, judgement and protection of sensitive informat
 
 ### CB.8:10 - Rationale
 
-An expectation helps when a participant can recognise its application and act on it. Enforcement adds interpretation and consequences, so the decision-maker's actual authority, the evidence and the possibility of correction matter.
+An expectation helps when a participant can recognise its application and act on it. Enforcement adds interpretation and consequences, so the decision-maker's authority, the evidence and the possibility of correction matter.
 
 Temporary protection and final judgement answer different questions. Separating them permits timely action without turning uncertainty into guilt. Separating rule quality, actual handling and public reaction makes subsequent improvement more informative than adding another rule or counting approval.
 
@@ -227,6 +227,6 @@ Reopen the method's local use when reporting becomes inaccessible, an appeal lac
 - **CB.7** prepares and supports organisers. **CB.13** establishes the authority to make rules, assign decisions and review challenges to decision-makers.
 - [LDR.1:4.4](../ldr/08-ldr-1---obtain-and-continue-the-leadership-contribution-need.md#ldr144---perform-the-smallest-sufficient-working-conversation) supplies a task-focused conversation when that is the needed contribution.
 - [OCE.14:4](../oce/36-oce-14---decide-whether-and-how-to-revise-the-organization-f.md#oce144---solution) supplies a bounded revision of an established organisation; its owner and mandate must already be available.
-- [ECO.7:4](../../eco/17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md#eco74---solution) supplies combinations of use, upkeep, observation and dispute rules for an actually constrained common resource.
+- [ECO.7:4](../../eco/17-eco-7---coordinate-use-and-renewal-of-a-shared-resource.md#eco74---solution) supplies combinations of use, upkeep, observation and dispute rules for a constrained common resource.
 
 ### CB.8:End

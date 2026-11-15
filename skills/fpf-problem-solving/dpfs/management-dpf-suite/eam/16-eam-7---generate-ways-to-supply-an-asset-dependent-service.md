@@ -7,7 +7,7 @@
 
 Use this pattern when a needed service contribution has become a proposal to acquire or modify an asset. A team has a preferred machine, supplier or design, but materially different ways of obtaining the contribution could change cost, risk or feasibility.
 
-Begin by separating the required contribution from the first bearer assumption. Return technically meaningful alternatives with the realization conditions the next comparison needs.
+Distinguish the required service contribution from the asset or provider first proposed to supply it. Return technically meaningful alternatives and the conditions needed to realize each one.
 
 ### EAM.7:2 - Problem
 
@@ -25,17 +25,17 @@ Form materially different ways to supply the contribution. Depending on the prob
 
 Describe how each option could work. Identify the asset or provider, integration with the present arrangement, interfaces, access, support and changes to operation. Use an applicable [SYSE.5](../../engineering-dpf-suite/syse/26-syse-5---develop-an-engineered-system-s-functional-organizat.md) result when functional organization and bearer allocation determine the option. Obtain subject-specific engineering where physics or other specialist constraints decide feasibility.
 
-State the realization conditions and consequences at the same service basis. Include procurement and integration time, interruption, continuing cost, dependency, reversal and exit. Preserve what remains unknown; a proposed interface is not demonstrated compatibility.
+State the realization conditions and consequences for the same required service. Include procurement and integration time, interruption, continuing cost, dependency, reversal and exit. Identify what remains uncertain, including whether a proposed interface is compatible.
 
-Compare the set with the incumbent or a no-build response. Explain why withdrawal, demand change or another contribution is included or excluded in this case. If an option requires amending a service commitment, identify that separate decision rather than assuming the amendment.
+Compare the set with the incumbent or a no-build response. Explain why withdrawal, demand change or another contribution is included or excluded in this case. If an option requires amending a service commitment, identify the separate decision on the amendment and whether the competent authority has made it.
 
-Return enough alternatives for [EAM.9](18-eam-9---compare-asset-alternatives-and-reconcile-decisions-w.md) to make a genuine comparison. Stop adding options when further generation is unlikely to improve the requested answer at a worthwhile burden. Keep the precise unsupported dependency that prevents a promising option from being used.
+Return enough materially different alternatives to support comparison under [EAM.9](18-eam-9---compare-asset-alternatives-and-reconcile-decisions-w.md). Stop adding options when further generation is unlikely to improve the requested answer at a worthwhile burden. For a promising option that cannot yet be used, identify the dependency that still lacks support.
 
 ### EAM.7:5 - Archetypal Grounding
 
 CityWater's wet-season North requirement exceeds the present 1,000 m³/h capability by 100. The shortlisted C modification and leased service each add a qualified 200. The modification requires €3 million initial capital and €0.20 million annually; the leased service requires no initial capital and €1.20 million annually, under the supplied five-year terms.
 
-The alternatives differ in funding, continuing cost, realization time and dependence on the service provider. Their common quantity contribution does not make them interchangeable. The lease can free capital for D replacement, while its recurring cost changes the whole portfolio comparison.
+The alternatives differ in funding, continuing cost, realization time and dependence on the service provider. The lease can free capital for D replacement, while its recurring cost changes the whole portfolio comparison.
 
 If the proposed leased service has no applicable evidence for the required connection and delivery conditions, it remains conditional. A quotation and a nominal pump rating do not establish that service. The practitioner asks for the needed engineering result.
 
@@ -51,7 +51,7 @@ Are the alternatives materially different ways to provide the same needed contri
 
 Three bids for effectively the same arrangement can conceal a missing service alternative. Challenge the bearer assumption before counting options.
 
-Treating a service contract as removal of engineering dependence hides the provider and interface conditions. State the actual contribution and evidence required.
+Treating a service contract as removal of engineering dependence hides the provider and interface conditions. State the contribution the provider must deliver and the evidence needed to support reliance on the provider and the interface.
 
 ### EAM.7:9 - Consequences
 
@@ -59,13 +59,13 @@ The comparison can reveal a lower-capital, more reversible or otherwise valuable
 
 ### EAM.7:10 - Architectural Rationale
 
-The pattern separates desired contribution from physical or contractual form. That preserves meaningful alternatives while allowing the engineering and financial consequences to be reconciled later. It complements [EAM.8](17-eam-8---generate-maintenance-renewal-and-retirement-alternat.md)'s policies for existing assets instead of making acquisition the default beginning.
+The pattern separates desired contribution from physical or contractual form. This lets the decision maker compare engineering and financial consequences across alternatives. It complements [EAM.8](17-eam-8---generate-maintenance-renewal-and-retirement-alternat.md)'s policies for existing assets. Acquisition is one possible starting point.
 
 ### EAM.7:11 - SoTA-Echoing
 
 For finding materially different ways to obtain an asset's required contribution, adopt SYSE.5:4.1's joint development of functional organization, bearers, interfaces and realization conditions. Adapt it to the receiving asset comparison by retaining the alternatives whose capital, continuing burden, service or dependency differences can change the choice. In CityWater, modification and qualified leased service provide the same additional flow but compete differently for capital and continuing expenditure. The Solution therefore establishes the contribution before fixing ownership or a particular construction.
 
-A serious alternative is specification-led acquisition: hold an already justified asset arrangement fixed and compare designs or suppliers able to realize it. GFMAM's *Asset Management Landscape*, third edition, June 2024, section 6.2 ([pp. 72–73](https://gfmam.org/sites/default/files/2024-06/GFMAM_AM_Landscape_v3.0_English_2024.pdf#page=72)), provides the acquisition and integration comparator; its section 3.4 also keeps new, existing and non-asset responses available at planning scope. Retain specification-led comparison when the bearer decision is already supported. Where ownership is only an initial assumption, selecting it first could exclude C's service option before its funding consequence is examined. The broader contribution comparison costs some additional provider/interface analysis, accepted because it can change the feasible asset programme; it stops short of detailed engineering for every conceivable option. These sources supply operations and professional scope, not the lease's actual availability or compatibility. Reopen the choice when a required interface cannot be realized, a provider qualification changes, an incumbent assumption becomes an actual requirement, or a newly supported arrangement could improve the decision enough to justify examining it.
+In specification-led acquisition, hold an already justified asset arrangement fixed and compare designs or suppliers able to realize it. GFMAM's *Asset Management Landscape*, third edition, June 2024, section 6.2 ([pp. 72–73](https://gfmam.org/sites/default/files/2024-06/GFMAM_AM_Landscape_v3.0_English_2024.pdf#page=72)), provides the acquisition and integration comparator; its section 3.4 also keeps new, existing and non-asset responses available at planning scope. Retain specification-led comparison when the bearer decision is already supported. Where ownership is only an initial assumption, selecting it first could exclude C's service option before its funding consequence is examined. The broader contribution comparison costs some additional provider/interface analysis, accepted because it can change the feasible asset programme; it stops short of detailed engineering for every conceivable option. The sources describe the methods. To rely on the lease, obtain evidence that the provider is available and that the service is compatible with the required connection. Reopen the choice when a required interface cannot be realized, a provider qualification changes, an incumbent assumption becomes an actual requirement, or a newly supported arrangement could improve the decision enough to justify examining it.
 
 ### EAM.7:12 - Relations
 

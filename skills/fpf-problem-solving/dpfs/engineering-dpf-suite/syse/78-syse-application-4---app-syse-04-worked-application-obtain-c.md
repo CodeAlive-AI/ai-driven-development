@@ -1,16 +1,16 @@
 ## SYSE.Application:4 - APP-SYSE-04 — Worked application: obtain climate control for a new greenhouse configuration
 
-This case shows the common Systems Engineering patterns in a small cyber-physical equipment company. It includes
-physical equipment, control software, provider Work, an AI Agent, internal capability, and continuing support.
+A small equipment company must obtain a climate-control system that combines
+physical equipment and control software. The comparison covers provider work, possible AI assistance, internal capability and continuing support.
 Greenhouse-control, electrical-safety, commercial, legal, financial, and organization-design results enter as
 inputs; their Methods remain with those practices.
 
 
 ### SYSE.Application:4.1 - 1. Fix the System, use, and result to obtain
 
-`SYSE.1` selects the intended greenhouse climate-control System, designated `GreenhouseClimateControl-GH2`,
+Using `SYSE.1`, the engineering team selects the intended greenhouse climate-control System, designated `GreenhouseClimateControl-GH2`,
 as the project system-of-interest and distinguishes it from greenhouse `GH-2` and company `GreenHeat-4`.
-An actual System identity may begin later. `SYSE.16` identifies the greenhouse,
+The designation can precede the existence of the intended control System. `SYSE.16` identifies the greenhouse,
 electrical supply, heating, ventilation, misting, shading, sensors, operator station, weather, and manual fallback
 that form the relevant operating surroundings. `SYSE.17` identifies operators, crops, maintainers, the equipment
 company, and the greenhouse owner as Systems that can bear consequences.
@@ -19,13 +19,13 @@ The receiving use is control during three representative conditions: a cold nigh
 failed humidity sensor. `SYSE.2` supplies linked use and System concepts. Acceptance requires bounded temperature
 and humidity performance, no unsafe actuator command after sensor failure, identified controller and software
 configuration, recoverable observations, and supported manual fallback. These are case inputs from greenhouse-
-control and electrical-safety Methods. The case takes its thresholds from those specialist results.
+control and electrical-safety results, which supply the applicable thresholds.
 
 
 ### SYSE.Application:4.2 - 2. Construct complete obtaining arrangements
 
 `GreenHeat-4`'s managers initially propose buying a controller or having an AI Agent write one. The engineering
-team applies `SYSE.24` and rejects those two phrases as a usable option set. A purchase is one relation inside an
+team applies `SYSE.24` and develops those suggestions into comparable obtaining arrangements. A purchase is one relation inside an
 arrangement; an AI Agent is one possible performer of named Work. The team follows
 `SYSE.24:4.2–4.3` backwards from accepted greenhouse behaviour to local protective control, supervisory demands,
 identified interfaces and the evidence needed for their integration. It then varies what is supplied: a ready
@@ -45,15 +45,15 @@ construction yields the four arrangements below; the common questions keep their
 The Finance result compares resource and cash consequences. The Organization Change result states the proposed
 human–AI–provider Work allocation and its authority gaps. The safety result states the protected failed-sensor
 condition. The commercial and legal results state the proposed access, update, data, and remedy terms.
-`SYSE.24` uses those results but does not recreate their Methods or decide their questions.
+The management team uses those results in its `SYSE.24` comparison.
 
 
 ### SYSE.Application:4.3 - 3. Restore parity and choose the next probe
 
 The comparison uses the same three operating conditions, commissioning date, field interfaces, configuration
 evidence, assurance burden, data access, support horizon, internal capability consequence, expected change
-latency, and exit condition. The provider demonstration is not compared with an unfinished internal prototype;
-both are compared with the accepted `GH-2` configuration and representative conditions.
+latency, and exit condition. Judge the provider demonstration and the unfinished internal prototype against the same acceptance basis:
+the accepted `GH-2` configuration and representative operating conditions.
 
 The custom provider's sixteen-week estimate exceeds the need-date limit. Timely completion of the internal-only
 arrangement remains unsupported. The ready-controller and hybrid
@@ -77,15 +77,15 @@ survivors. Safe fallback and export combined with failed supervisory timing or u
 ready-controller arrangement. If fallback, export, API support, and timing all pass, both survive and the stated
 price-and-burden rule retains the hybrid. An interrupted or inconclusive replay that exhausts its authorized
 limits leaves the protected claims unresolved and returns the commissioning-plan question; it does not establish
-controller failure or permit commitment through the gap. Without the replay, neither survivor has enough evidence
+controller failure or permit commitment through the gap. Before the replay, neither survivor has enough evidence
 for a choice under the declared rule; rejecting both would discard an arrangement that the bounded replay can retain.
 
-The performed replay returns the third outcome: the local controller enters the supported fallback without an
+The example assumes continuing vendor support for the tested API and interface version. The replay establishes the other parts of the third outcome: the local controller enters the supported fallback without an
 unsafe actuator command, the supervisory command round trip remains below the application-profile limit, and the
 configuration export reidentifies the tested controller and software values. The safety specialist limits the
 first observation to the tested failure and configuration. The deciding Agent applies `C.11` again and records
 `ChoiceResult-GH2-2`: **choose now** for retaining the hybrid as the arrangement whose next realization
-contribution is to be developed. The replay qualifies the compared interface and fallback claims. It does
+contribution is to be developed. The replay qualifies fallback, configuration export and interface timing for the tested configuration. Continued support for its API version is a separate premise. The replay does
 not establish that internal integration and commissioning can be completed by the need date; commitment
 to that delivery still depends on the contribution below. A different safety limit or withdrawn
 vendor-update support would reopen the obtaining choice.
@@ -108,11 +108,11 @@ duty, and changed internal capability remain results of their own Methods.
 ### SYSE.Application:4.5 - Result, stop, and reopen
 
 The worked application returns a project-System focus, linked use and System concepts, four comparable whole
-obtaining arrangements, one evidence-qualified `C.11` choice, and the first unsupported realization branch. The
+obtaining arrangements, the management team’s bounded `C.11` choice after the replay, and the first unsupported realization branch. The
 decision-making Agent can now retain the hybrid and pursue the named realization question within the
 existing authority. An implementation or commissioning commitment that relies on timely internal integration
 remains conditional on that missing contribution. Project integration and acceptance remain open.
 
 Stop there. Reopen `SYSE.24` when the result, use, need date, provider capability, interface, configuration
-export, support, internal capability, evidence, or exit condition can reverse the choice. Reopen only the
+export, support, internal capability, evidence or exit condition could alter the choice or its supported scope. Reopen the
 affected realization or assurance result when the arrangement remains preferred but one branch or claim fails.

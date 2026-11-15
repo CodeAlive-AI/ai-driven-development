@@ -8,7 +8,7 @@
 
 A financial exposure matters enough to consider changing, offsetting or transferring it. Compare the protection obtained with cost, residual risk and cash demands.
 
-Use the existing arrangement directly while its exposure and conditions remain adequate. A question about whether a payment actually settled belongs first in FIN.15. The fuller Solution explains how to construct a protection comparison when the amount, instrument behavior or choice is still unresolved.
+An existing arrangement can continue to serve while it protects the intended exposure on acceptable terms. A question about whether a payment settled belongs first in FIN.15. Use §4 to compare protection when the amount, contract terms or choice is unsettled.
 
 ### FIN.14:1 - Problem frame
 
@@ -20,7 +20,7 @@ A hedge can reduce price uncertainty while adding volume, basis, margin, credit 
 
 ### FIN.14:3 - Forces
 
-Reduce consequential downside while retaining useful flexibility and affordable cash requirements. Compare risk reduction with its price and the conditions under which protection actually works.
+Reduce consequential downside while retaining useful flexibility and affordable cash requirements. Compare risk reduction with its price and the conditions under which protection works.
 
 ### FIN.14:4 - Solution
 
@@ -29,7 +29,7 @@ Reduce consequential downside while retaining useful flexibility and affordable 
 3. Match amount, underlying reference, currency, reset and settlement dates, exercise conditions and remaining flexibility. Use FIN.8 for a needed option value and [FDM][FDM] for disputed contractual behavior.
 4. Project the combined underlying and protection cash in the material scenarios. Include partial or late underlying performance, basis changes, margin or collateral, counterparty failure and termination where these affect the choice. A price hedge is not a guarantee of underlying volume or credit.
 5. Compare costs, residual exposures and peak funding needs. Obtain actual legal enforceability and accounting treatment when the proposed use relies on them; a cash-protection comparison can be complete without claiming a reporting qualification.
-6. Return the selected design or conditional recommendation, expected protection, exposure left open and what would require resizing, closing or replacing it. FIN.15 executes within authority and verifies settlement.
+6. Return the selected design or conditional recommendation, expected protection, exposure left open and what would require resizing, closing or replacing it. For an authorized transaction, FIN.15 explains how to execute it and verify settlement.
 
 
 
@@ -40,7 +40,7 @@ Start with the consequence supplied by FIN.13. A corporation may want to preserv
 
 Explain why changing that exposure is worth its cost. Protecting the capacity to fund valuable operations, avoiding a costly distress response or maintaining a required margin can justify a hedge. Reducing a measured variance alone does not establish additional corporate value. If the corporation can bear the downside on the selected objective, acceptance may be a feasible alternative. If losses would prevent payment, a favorable expected value does not remove that constraint. FIN.1 supplies the objective and actual alternatives; FIN.2 tests payment capacity.
 
-Keep the underlying commercial decision visible. Changing the invoice currency can move exchange risk to a customer but also change the price or demand. Matching a foreign loan to receipts can leave a useful currency offset and an unsuitable repayment horizon. Changing suppliers or physical stocks changes operations as well as financial exposure. Obtain those consequences from the actual commercial or operating plan; do not assume a natural hedge is free merely because it is not a derivative.
+Keep the underlying commercial decision visible. Changing the invoice currency can move exchange risk to a customer but also change the price or demand. Matching a foreign loan to receipts can leave a useful currency offset and an unsuitable repayment horizon. Changing suppliers or physical stocks changes operations as well as financial exposure. Obtain those consequences from the commercial or operating plan when comparing the cost of a natural hedge.
 
 A sufficient supplied exposure and an existing authorized protection arrangement can support direct execution or continued use. Reopen the design when the protected outcome, amount, timing, terms or feasible alternatives change. A missed settlement under an otherwise appropriate contract first needs FIN.15's account of the actual problem; buying another hedge does not by itself resolve that obligation.
 
@@ -54,7 +54,7 @@ For each feasible form, recover the conditional cash and obligations it introduc
 | Form | Financial construction | Condition that can change the choice |
 | --- | --- | --- |
 | Change the activity or commercial terms | Recalculate receipts, costs and dates for the attainable operating alternative, including the party that takes the displaced risk. | Lost contribution, implementation cost, customer response or inability to change an existing commitment can outweigh the risk reduction. |
-| Use an existing natural offset | Combine genuinely offsetting receipts and payments on compatible factors and dates; retain their separate performance and access conditions. | Equal currency totals can leave a gap if one payment arrives later or belongs to another entity. |
+| Use an existing natural offset | Combine offsetting receipts and payments on compatible factors and dates; retain their separate performance and access conditions. | Equal currency totals can leave a gap if one payment arrives later or belongs to another entity. |
 | Fix an exchange or rate through a forward or swap | Derive both parties' payments from the actual reference, notional schedule, dates, fixed terms and settlement rule. | A delivery duty, changing exposure amount, basis difference, collateral or termination payment can make a price fix costly to maintain. |
 | Create a money-market hedge | Borrow or invest in the relevant currencies now so that a known future receipt repays a debt or a future payment is covered by a maturing investment. | Borrowing and investing rates, credit capacity, taxes, access and the actual collection date determine the result; the construction introduces real financing and counterparty claims. |
 | Use futures or another margined offset | Match the financial sensitivity and contract amount, then carry each margin movement and the eventual closing or delivery into the cash plan. | Standard quantities and dates can leave a residual; changes in the relation between the exposure price and contract price leave basis risk. |
@@ -63,7 +63,7 @@ For each feasible form, recover the conditional cash and obligations it introduc
 
 For a known foreign receipt Q at time T, a simple money-market construction borrows Q / (1 + rF × a) foreign units now, converts that amount at an obtainable spot selling price and invests the home proceeds until T. Here rF is the actual foreign borrowing rate and a is the matching accrual fraction under the stipulated simple-interest terms. The receipt repays Q at T. For a known foreign payment, invest its discounted foreign amount now and fund that purchase from available home cash or actual home borrowing. Use the real compounding and payment rules when they differ. This explains the direction of borrowing and investment; a forward quotation is a different attainable alternative, not proof that either construction is accessible.
 
-For an option, FIN.8 supplies valuation when the premium or conditional strategy must be assessed. An actual sufficient price and payoff can be used directly. Do not price protection by discounting a speculative expected payoff at an arbitrary corporate WACC. Similarly, a market forward rate is an executable term only if an actual provider offers it under usable conditions; it is not automatically a forecast of the future spot price.
+For an option, FIN.8 supplies valuation when the premium or conditional strategy must be assessed. When the available price and payoff terms suffice for the comparison, you can use them directly. Do not price protection by discounting a speculative expected payoff at an arbitrary corporate WACC. Similarly, a market forward rate is an executable term only if an actual provider offers it under usable conditions; it is not automatically a forecast of the future spot price.
 
 Obtain the important terms before treating a form as feasible. A contract called a collar can contain a purchased option and a written option that creates a duty in another state. A zero initial premium can be financed by giving up favorable outcomes or accepting that duty. The combined terms, including barriers, limits or cancellation rights where present, determine protection. [FDM.3][FDM] supplies the derivation of duties and state changes from those terms; FIN.14 compares their financial consequences.
 
@@ -72,11 +72,11 @@ Obtain the important terms before treating a form as feasible. A contract called
 #### FIN.14:4.3 - Choose quantity and dates from the residual exposure
 
 
-Use gross exposure, reliable offsets and the intended protected portion to establish the proposed amount. The denominator of a hedge ratio must be clear: forecast sales, contracted invoices, expected collections and a price sensitivity are different quantities. A “100% hedge” of a forecast is not necessarily a full match to what will actually be delivered.
+Use gross exposure, reliable offsets and the intended protected portion to establish the proposed amount. The denominator of a hedge ratio must be clear: forecast sales, contracted invoices, expected collections and a price sensitivity are different quantities. A “100% hedge” of a forecast is not necessarily a full match to the quantity delivered.
 
-For a foreign receipt Q and a forward sale of h foreign units at home-per-foreign rate F, the combined terminal home cash, before charges and financing, is Q × S + h × (F − S), provided all stated transactions can actually settle. With fixed Q and h = Q, the expression becomes Q × F. With h different from actual Q, the remaining market sensitivity is Q − h. In a physical settlement, insufficient foreign receipts still have to be purchased; the algebraic net amount does not fund that purchase beforehand.
+For a foreign receipt Q and a forward sale of h foreign units at home-per-foreign rate F, the combined terminal home cash, before charges and financing, is Q × S + h × (F − S), provided all stated transactions can settle. With fixed Q and h = Q, the expression becomes Q × F. With h different from actual Q, the remaining market sensitivity is Q − h. In a physical settlement, insufficient foreign receipts still have to be purchased; the algebraic net amount does not fund that purchase beforehand.
 
-If the amount or date is uncertain, compare several protection quantities or a rule for changing them as the exposure becomes firmer. A firm delivery duty for the reasonably supported minimum and optional protection for additional volume can have different consequences from fixing the full forecast. Test the lower-volume and delayed cases explicitly. Treat a rolling hedge as a sequence of future transactions with future prices, access and costs; successive short contracts do not establish today's long-term fixed price.
+If the amount or date is uncertain, compare several protection quantities or a rule for changing them as the exposure becomes firmer. A firm delivery duty for the reasonably supported minimum and optional protection for additional volume can have different consequences from fixing the full forecast. Test the lower-volume and delayed cases. Treat a rolling hedge as a sequence of future transactions with future prices, access and costs; successive short contracts do not establish today's long-term fixed price.
 
 Choose the reference and maturity from the actual exposure. For borrowing, match reset and accrual periods as well as nominal maturity. For a commodity, identify location, grade, delivery period and any difference between the purchased commodity and the traded reference. For an option, determine when the relevant uncertainty is resolved and whether exercise remains possible then. An offset that works at expiry may have large intervening value and cash changes.
 
@@ -91,11 +91,11 @@ Construct an unprotected or existing-arrangement account first. Add each propose
 
 Compare amounts on compatible dates. A premium paid now and a receipt in six months need both their actual cash dates and, for a value comparison, an appropriate common-date basis. FIN.5 supplies that pricing question. A quoted terminal gain is not a net gain if its premium or funding cost is omitted. A collateral transfer can restrict usable cash without being a permanent economic loss; its return or application must also be modeled under the actual terms.
 
-Run the combined cash account through adverse paths, not just final states. A hedge that eventually offsets a price change can require margin before the related business cash arrives. If collateral is returned late or has a haircut, the temporary financing need can exceed the reported hedge loss. Include margin on the terms that actually apply; neither “OTC” nor “exchange traded” alone determines every funding condition.
+Run the combined cash account through adverse paths, not just final states. A hedge that eventually offsets a price change can require margin before the related business cash arrives. If collateral is returned late or has a haircut, the temporary financing need can exceed the reported hedge loss. Use the margin terms of the contract when sizing the funding need. The labels “OTC” and “exchange traded” do not specify those terms.
 
 Distinguish the failures that protection covers from those it leaves open. A currency forward generally does not make a customer pay. A price option does not automatically assure production volume. Credit insurance may reimburse a covered default after a delay rather than provide money on the original invoice date. A provider's inability to perform can remove the expected offset precisely when it is needed. Compare provider concentration with the corporation's deposits, borrowing access and other claims where they share the same failure.
 
-Use actual settlement arrangements when determining gross cash demands. A cash-settled payoff can differ from a physical exchange of principals, even when their final economic values match under ideal conditions. Contractual netting or a supported payment-versus-payment service can change particular risks; neither arises from writing a net amount in the model. FIN.15 establishes the usable route and resulting effect. Return any material route limitation to the protection comparison before commitment.
+Use actual settlement arrangements when determining gross cash demands. A cash-settled payoff can differ from a physical exchange of principals, even when their final economic values match under ideal conditions. Contractual netting or a supported payment-versus-payment service can change particular risks; neither arises from writing a net amount in the model. With FIN.15, treasury can establish which route is usable and verify its effect after execution. Return any material route limitation to the protection comparison before commitment.
 
 
 
@@ -129,7 +129,7 @@ For a separate rate example, debt pays a floating reference plus 2%, and a swap 
 
 Before committing to a hedge, consider a constructed comparison for a customer expected to pay 100 foreign units at T. The action-changing scenarios collect either 100 or 60 at T and have a spot rate of either 0.80 or 1.00 home per foreign unit. In the 60-collection cases, the claim on the remaining 40 persists; its later recovery and value are outside these current-cash figures and must be considered separately in the whole financial choice.
 
-Four available alternatives are left unhedged, a physical forward sale of 100 at 0.90, a physical forward sale of 60 at 0.90, and a cash-settled put on 100 at strike 0.90 costing 2 home units now. The put pays 100 × max(0.90 − S, 0) at T. The illustrative offers have no other fees or collateral, all counterparties perform, necessary physical purchases are obtainable, and time value is stipulated zero for this comparison. Actual funding capacity is tested separately.
+The four alternatives are to leave the receipt unhedged, sell 100 or 60 forward at 0.90 with physical delivery, or buy a cash-settled put on 100 at strike 0.90 for 2 home units now. The put pays 100 × max(0.90 − S, 0) at T. The illustrative offers have no other fees or collateral, all counterparties perform, necessary physical purchases are obtainable, and time value is stipulated zero for this comparison. Actual funding capacity is tested separately.
 
 | Collection and spot at T | Unhedged cash | Forward 100 | Forward 60 | Put 100, after premium 2 |
 | --- | ---: | ---: | ---: | ---: |
@@ -140,7 +140,7 @@ Four available alternatives are left unhedged, a physical forward sale of 100 at
 
 Each forward result follows Q × S + h × (0.90 − S). For example, with collection 60 and spot 1.00, the forward for 100 requires buying 40 for 40, then delivering 100 for 90, leaving net current home cash 50. The smaller forward uses the 60 received and pays 54. The put expires without payoff, so selling the 60 at spot and subtracting its earlier premium gives total cash contribution 58.
 
-Suppose the stated objective is a net cash contribution of at least 55 across these four cases, after the protection premium. Only the put meets that objective among the four alternatives. Its premium of 2 must be payable now, and the forward purchase may require interim funding. If only 1 is available for the premium and no further money is obtainable, the put is not feasible. The comparison then returns the need to change the objective, obtain a different attainable arrangement or change the underlying exposure.
+Suppose the stated objective is a net cash contribution of at least 55 across these four cases, after the protection premium. Only the put meets that objective among the four alternatives. Its premium of 2 must be payable now, and the forward purchase may require interim funding. If only 1 is available for the premium and no further money is obtainable, the put is not feasible. On those terms the corporation needs a different attainable arrangement or a change in the exposure to meet the objective. It may instead reconsider the objective.
 
 With zero collection and spot 1.00, the put pays nothing and the total contribution is −2. The four-case selection therefore does not protect against complete nonpayment. A guarantee or collection response has a different covered event and must be assessed on its actual terms. A cash-settled option also does not automatically reduce its notional when collection falls: the proposed 100 remains a separate position. If it is no longer appropriate, reconsider it with the outstanding claim and available modification terms.
 
@@ -166,9 +166,9 @@ The corporation has usable home cash 5 and a separate collateral claim of 10 alr
 | Continue the delivery duty of 100 | 123 | 107 |
 | Amend it to 60 with the stated bridge | 114.50 | 114.50 |
 
-If the objective is at least 110 of ending cash in both scenarios while maintaining reserve 2, the funded amendment meets it and continuing does not. If the bridge is unavailable, the amendment on these payment terms is infeasible. If the released collateral 4 is instead actually usable before the amendment payment, the bridge is unnecessary and ending cash is 114.60. That changed timing saves the bridge charge; returning already owned collateral is not a new hedge profit.
+If the objective is at least 110 of ending cash in both scenarios while maintaining reserve 2, the funded amendment meets it and continuing does not. If the bridge is unavailable, the amendment on these payment terms is infeasible. If the released collateral 4 is usable before the amendment payment, the bridge is unnecessary and ending cash is 114.60. That changed timing saves the bridge charge; returning already owned collateral is not a new hedge profit.
 
-The later choice retains the old loss and its remaining contractual effect. It does not recreate an initial choice of a forward for 60 at today's rate without paying for the old position. FIN.13 receives the reduced delivery exposure; FIN.2 receives the amendment payment, collateral dates and bridge repayment; FIN.15 obtains the actual amendment effect and performs the funded actions.
+The later choice retains the old loss and its remaining contractual effect. It does not recreate an initial choice of a forward for 60 at today's rate without paying for the old position. In the amendment scenario, use a delivery duty of 60 in FIN.13 and include the amendment payment, collateral dates and bridge repayment in FIN.2’s cash plan. The current position still requires delivery of 100 until the amendment takes effect. Under FIN.15, the authorized parties can execute the funded actions and verify the change.
 
 
 
@@ -179,7 +179,7 @@ Consider a separate cash-settled forward sale of 100 foreign units at 0.90, pair
 
 Suppose the spot rate is 0.80 on day 30, the customer pays in full, and the forward counterparty pays the resulting gain of 10 and returns all collateral 10 at that time. The operating receipt converts to 80. The hedge's dated cash is −10 on day 16 and +20 on day 30, for net 10 before funding costs; combined net cash from receipt and hedge is 90. Counting the collateral return as an additional profit would overstate that result by 10.
 
-The eventual protection is therefore effective under these stated performance conditions, but it was not executable without the missing interim 6. FIN.2 assesses an obtainable response and its repayment; FIN.15 performs it within authority. A different margin rule, return date or failed counterparty changes both the funding and protection comparison.
+The eventual protection is therefore effective under these stated performance conditions, but it was not executable without the missing interim 6. FIN.2 helps assess an attainable funding response and its repayment. FIN.15 covers execution by the authorized parties. A different margin rule, return date or failed counterparty changes both the funding and protection comparison.
 
 
 
@@ -208,11 +208,11 @@ The result specifies what the corporation is protected against and what it must 
 
 ### FIN.14:10 - Architectural Rationale
 
-Comparing the combined activity and instrument reveals the protection's actual result. Separating design, execution and remaining claims prevents a desired risk reduction from being reported as an accomplished financial effect.
+Comparing the combined activity and instrument reveals the protection's effect under the assumed conditions. Separating design, execution and remaining claims prevents a desired risk reduction from being reported as an accomplished financial effect.
 
 ### FIN.14:11 - SoTA-Echoing
 
-[FDM][FDM] supplies the conditional instrument and event distinctions; [CFA's option treatment][CFA-OPTIONS] supplies optional-payoff reasoning. FIN.14 uses both within a combined cash comparison, rather than treating instrument name or notional equality as protection. Changed underlying performance or settlement terms reopen the design.
+[FDM][FDM] supplies the conditional instrument and event distinctions; [CFA's option treatment][CFA-OPTIONS] supplies optional-payoff reasoning. FIN.14 uses both to calculate the combined cash flows of the activity and instrument. Changed underlying performance or settlement terms reopen the design.
 
 [ACCA's developed foreign-exchange example][ACCA-FX] connects trade direction, dates, financing, contract quantity and premium to a cash comparison. Its historical examination assumptions do not choose a corporate policy. FIN.14 adds an explicit protection objective, uncertain collection, funding paths and remaining obligations; it does not generalize the source's assumed option exercise or linear basis convergence.
 

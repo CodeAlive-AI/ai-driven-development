@@ -6,17 +6,17 @@
 
 ### OPS.10.2:1 - Problem frame
 
-**Use this when** a team must deliver particular results by particular times, but a list of tasks and estimated durations does not establish whether the work fits. Two ready tasks compete for one specialist. A test needs an uninterrupted window. A delayed input changes which remaining operation can now postpone delivery.
+**Use this when** particular work must deliver particular results by particular times, but a list of tasks and estimated durations does not establish whether the work fits. Two ready tasks compete for one specialist. A test needs an uninterrupted window. A delayed input changes which remaining operation can now postpone delivery.
 
-Construct a finite schedule: assign the required operations to times and resources under their actual conditions. Use it to identify a feasible way to meet the deadline, an obstruction that excludes the deadline, or the choice still unresolved. Then determine which delays the plan can absorb and revise it when a consequential condition changes.
+Determine whether the required operations can fit their time and resource conditions. A feasible schedule shows how to meet the deadline. A sufficient bound or complete search can show that no such schedule exists. If neither result is available, state what is still unresolved. For a feasible plan, determine which delays it can absorb. Reconsider affected results when a condition changes.
 
-**First useful move.** Name the recipient's completion event and deadline. Trace the remaining operations to that event, including required handovers and acceptance. Mark the people, equipment and calendar windows they share. OPS.11.1 supplies that operating account; OPS.15.1 supplies event and clock interpretation.
+**First useful move.** Name the recipient's completion event and deadline. Trace the remaining operations to that event, including required handovers and acceptance. Identify the performers, equipment and calendar windows shared by the operations. OPS.11.1 supplies that operating account; OPS.15.1 supplies event and clock interpretation.
 
 **Practical gain.** The planner can state what should start when, which reservations matter, how much postponement is still possible under the chosen arrangement, and what change could recover a threatened commitment.
 
 This method addresses finite delivery timing within the broader capacity and service question of OPS.10. Its subject is the proposed schedule, not the performed work or a new customer promise. Use an adequate existing schedule directly when its conditions still answer the question. Use OPS.10's demand and capacity analysis when the question instead concerns sustained throughput or a distribution of future delays.
 
-The elementary cases need time intervals, arithmetic and a dependency diagram or equivalent list. A large search may need a scheduling specialist. Known jobs with known durations do not require a probability model.
+The elementary cases need time intervals, arithmetic and a dependency diagram or equivalent list. A large search may need a scheduling specialist. For known jobs and durations, a deterministic calculation can answer the finite scheduling question.
 
 ### OPS.10.2:2 - Problem
 
@@ -36,7 +36,7 @@ A second error arises after a plan has been obtained. Its apparent spare time is
 
 ### OPS.10.2:4 - Solution
 
-**Working mantra.** Recover the recipient's result and deadline; pass them to a description of the remaining operations and the events that enable each one. Carry that description into shared resource occupations and usable calendar windows. Use those conditions to choose a sequence and place operations, returning a complete feasible plan or the reason a proposed placement fails. Compare the plan with a necessary bound before claiming that earlier completion is impossible. Pass the feasible plan to a calculation of conditional start windows and delivery reserve. Use those windows to compare early work, postponement and deliberate protection. When a condition changes, retain completed facts, reopen the affected dependencies and resource competition, obtain the revised plan, and return its delivery consequences to the people choosing priorities and release.
+Recover the recipient’s result and deadline and the operations needed to deliver it. Identify what enables each operation, which resources it occupies and the usable calendar windows. Seek a feasible schedule or a sufficient obstruction. A failed placement leaves other allowed schedules open unless a bound or complete search rules them out. For a feasible plan, calculate the start windows and delivery reserve needed to compare early work, postponement or protection. When a condition changes, retain completed facts, reconsider the affected dependencies and resource competition, and return the consequences to whoever can set priorities or authorize release.
 
 #### OPS.10.2:4.1 - Recover the delivery question and remaining work
 
@@ -48,7 +48,7 @@ For each remaining operation, recover its readiness event, required predecessors
 
 Qualify the duration before calculating a schedule. Recover the execution conditions and whether the quoted time includes waiting or deliberate protection against overruns. A protected task commitment is not, by itself, a measure of the time the work takes. Keep work and required waiting in the timing model, and identify protection already included before reserving more time for the same delays. If that split is unknown, obtain a supported estimate or compare explicit duration scenarios; cutting every quotation by the same percentage does not recover the missing basis.
 
-Keep the finite work list at the detail the decision needs. If a task requires an operator only during loading, recover that phase without decomposing every machine movement. If an unknown duration could reverse the decision, compare supported bounds or obtain that particular input. A full event history is unnecessary when the supplied conditions already settle the schedule.
+Keep the finite work list at the detail the decision needs. If a task requires an operator only during loading, recover that phase without decomposing every machine movement. If an uncertain duration affects feasibility, the scope of the service claim or a choice between plans, compare supported bounds or obtain that particular input. A full event history is unnecessary when the supplied conditions already settle the schedule.
 
 #### OPS.10.2:4.2 - Construct precedence, occupation and calendar conditions
 
@@ -74,7 +74,7 @@ MMP.10 supplies the joint formulation. Keep the operational reason for a conditi
 
 For a small case, start with operations whose required predecessors have been placed. Choose an eligible operation, find its earliest jointly available placement after readiness, reserve the required intervals, and continue. Several reservations may be made within one long machine operation when its attendance phases allow other work.
 
-At a resource conflict, compare the competing orders. A near deadline or a long downstream continuation can guide the first attempt; neither is a universal priority theorem. Preserve alternatives when that first attempt fails or gives an inadequate result. Inserting work into a gap, leaving a resource temporarily idle, or changing an uncommitted order can permit a schedule that a simple dispatch rule misses.
+At a resource conflict, compare the competing orders. A near deadline or a long downstream continuation can guide the first attempt. Preserve alternatives when that first attempt fails or gives an inadequate result. Inserting work into a gap, leaving a resource temporarily idle, or changing an uncommitted order can permit a schedule that a simple dispatch rule misses.
 
 Once the relevant orders are fixed, calculate the earliest times consistent with them. With continuous availability and finish-to-start relations, each start is the maximum of its readiness and predecessor finishes plus their required intervening delays. Chosen resource-order relations also contribute predecessors. For partial attendance, connect the occupied phases, not the finish of an unrelated unattended phase. With calendars, move each proposed occupation to the next jointly permitted window and propagate the resulting finish.
 
@@ -91,9 +91,9 @@ Return the actual strength of the result:
 | Necessary condition incompatible with the deadline, or a complete valid search excluding every permitted schedule | The deadline is impossible within that modeled arrangement. |
 | A failed priority rule, restricted sequence or interrupted search | That attempt found no satisfactory plan; other permitted schedules remain unresolved. |
 
-CMP.4 supplies justified search when the operational choices remain numerous. CMP.5 supplies relaxations and bounds. Give the specialist the actual resource and calendar conditions and the conclusion needed.
+CMP.4 supplies justified search when the operational choices remain numerous. CMP.5 supplies relaxations and bounds. Use an adequate existing bound or schedule. If a specialist must develop one, supply the relevant resource and calendar conditions and the conclusion to establish.
 
-Stop when a suitable plan or sufficient obstruction answers the decision. Further optimization is useful only when its possible improvement matters.
+Stop when a suitable plan or sufficient obstruction answers the decision. Continue optimizing when a reachable improvement in the schedule or the bound justifies the additional work.
 
 #### OPS.10.2:4.4 - Derive time reserve and conditional criticality
 
@@ -107,7 +107,7 @@ With shared resources, retain the selected allocations and orders when making th
 
 To assess a proposed postponement, hold the stated commitments fixed, delay that start, and refit the affected work. Identify the latest feasible placement or the set of feasible start windows that still meets the protected event. Calendar gaps can make intermediate start times infeasible even when a later window exists. A backward arithmetic pass that ignores those gaps supplies no usable postponement permission.
 
-Call a sequence critical only with its plan, resource choices and target event recoverable. Test a claimed critical operation by changing its duration or availability and recalculating the consequence at that scope. An operating bottleneck concerns the mechanism limiting sustained flow under a workload; it need not be an operation controlling this finite deadline. OPS.9 supplies that diagnosis.
+Call a sequence critical for a stated plan, resource order and target event. Test a claimed critical operation by varying its duration or availability and recalculating that event. A throughput bottleneck limits sustained flow under a workload. A different condition can govern the first result by a deadline. Use OPS.9 to diagnose the constraint on the result in question.
 
 #### OPS.10.2:4.5 - Choose early work, deferred starts and protection
 
@@ -121,7 +121,7 @@ For known deterministic conditions, the feasible schedule can be enough. To prot
 
 After inserting protection, recheck resource and calendar feasibility. Moving a feeding operation earlier can take another task's reservation. Keeping two hours before final delivery does not make those hours usable before an earlier calendar closure. Do not allocate the same margin to several independent promises without checking their combined delay.
 
-Return the selected target times, reserved intervals and response to reserve consumption to OPS.8 for release and protection. OPS.7 uses the delivery consequences for priorities; OPS.14 supplies financial comparison when it can change the start policy.
+Return the selected target times, reserved intervals and response to reserve consumption to OPS.8 for release and protection. OPS.7 uses the delivery consequences for priorities; use OPS.14 when the start policy or its economic justification depends on a financial comparison.
 
 #### OPS.10.2:4.6 - Reconstruct the affected remainder after a change
 
@@ -131,7 +131,7 @@ Follow the changed operation through both its successors and the resources it sh
 
 Try retaining unaffected reservations and the useful parts of the former plan. Refit the affected work under those commitments. If that restricted repair fails, identify which still-changeable reservation or resource order could matter and compare a broader rearrangement with its coordination cost. Failure while preserving the old order excludes only that restricted repair.
 
-Recompute completion times, feasible postponement windows and protected reserve. Compare them with the same recipient events and deadlines. Return the actionable difference: a changed start or allocation, reserve consumed, an obtainable operating remedy, a commitment needing reconsideration, or an unresolved scheduling choice. Retain unaffected model and calculation results whose premises still hold.
+Recompute completion times, feasible postponement windows and protected reserve. Compare them with the same recipient events and deadlines. Report what that comparison establishes, such as a changed start or allocation, reserve consumed, an obtainable operating remedy, a commitment needing reconsideration, or an unresolved scheduling choice. Retain unaffected model and calculation results whose premises still hold.
 
 ### OPS.10.2:5 - Archetypal Grounding
 
@@ -152,7 +152,7 @@ P, V and R each have two hours of total float against ten, but they share those 
 
 To preserve one hour before the external deadline, use an internal delivery target of nine. The latest starts become P at one, E at three, V at five and R at eight. They jointly give one feasible deferred plan with the intended final reserve.
 
-Return to execution of the earliest-start plan. At hour two, preparation is found to need three further hours instead of two. E is already complete. Continue P to five, then V at 5-8 and R at 8-9. The new final margin is one hour. The changed input reopens preparation and its successors; E's completed result remains available.
+Return to execution of the earliest-start plan. At hour two, preparation is found to need three further hours instead of two. E is already complete. Continue P to five, then V at 5-8 and R at 8-9. The new final margin is one hour. The changed estimate requires replanning the remaining preparation and its successors; E's completed result remains available.
 
 #### OPS.10.2:5.2 - A failed short-task priority is not an impossible deadline
 
@@ -196,13 +196,13 @@ Before execution, the engineer's first window is shortened to end at four. Commo
 
 The obstruction identifies a useful remedy to investigate: restore attendance through five or obtain another qualified continuous window ending by seven. Merely reporting three available engineer-hours, or silently allowing the test to pause, does not answer the stated operation.
 
-These examples are constructed scheduling cases. Their conclusions follow from the stated intervals and bounds.
+
 
 ### OPS.10.2:6 - Bias-Annotation
 
 Finite deterministic schedules favor work whose remaining operations and durations can be specified. Discovery work or frequent unplanned returns can require scenarios, rolling revision or a different service model. Keep that uncertainty visible without withholding a useful known-date bound.
 
-The examples assume that named people and machines are interchangeable only where stated. Human fatigue, location, recovery and skill conditions can change available occupation. Recover them when they alter the proposed plan rather than treating a calendar reservation as supplied capability.
+The examples assume that named people and machines are interchangeable only where stated. Human fatigue, location, recovery and skill conditions can change available occupation. Recover them when they alter the proposed plan and check that the reserved participant or resource can perform the work.
 
 ### OPS.10.2:7 - Conformance Checklist
 
@@ -228,7 +228,7 @@ The examples assume that named people and machines are interchangeable only wher
 
 ### OPS.10.2:9 - Consequences
 
-The method produces a usable temporal arrangement or a specific obstacle instead of an unsupported date. Conditional reserve also gives release and priority decisions something concrete to use.
+The planner can give the recipient a feasible schedule, the condition that excludes the deadline or the scheduling question still open. Conditional reserve also gives release and priority decisions something concrete to use.
 
 Detailed scheduling costs inquiry and maintenance, and optimization may consume more effort than its possible benefit. A feasible plan remains dependent on the supplied work and access conditions. Reusing unaffected assignments and reopening consequential changes limits that burden without treating the first plan as permanent.
 
@@ -236,7 +236,7 @@ Detailed scheduling costs inquiry and maintenance, and optimization may consume 
 
 Precedence, resource competition and calendars enter together because each can exclude a superficially plausible plan. The precedence-only calculation remains a useful reduced case and lower bound when resources are relaxed. It becomes the full answer only when the omitted conditions do not invalidate its assignment.
 
-Feasibility precedes reserve use: a gap in an impossible plan is no protection. Reserve is then interpreted against a specific event and selected choices, allowing early and deferred policies to be compared.
+Before relying on a time reserve, check that the schedule containing it meets the protected requirement. Reserve is then interpreted against a specific event and selected choices, allowing early and deferred policies to be compared.
 
 The operating construction supplies phase occupations, appointments, available windows, receiving deadlines and the changed remainder. MMP.10 and CMP provide general formulation and search. Keeping criticality conditional also lets a planner revise a local sequence without mistaking it for the sustained-flow constraint of the whole service.
 
@@ -244,7 +244,7 @@ The operating construction supplies phase occupations, appointments, available w
 
 For the question "Can this finite work meet its dates with shared resources?", adopt explicit interval feasibility and sequence choices. The [OR-Tools Job Shop account, variables and constraints](https://developers.google.com/optimization/scheduling/job_shop) supplies precedence and exclusive-resource alternatives; its [CP-SAT result definitions](https://developers.google.com/optimization/cp/cp_solver#cp-sat_return_values) distinguish a feasible answer, a proven optimum, proven infeasibility and an unresolved stop. Adapt these constructions in :4.2-4.3 to operating attendance phases and recipient deadlines. A precedence-only forward pass is cheaper and sufficient when resources do not bind. In :5.2 it cannot choose the specialist order, so explicit resource choices earn their added effort. Reconsider the formulation or search method when problem size or new operating constraints make its cost or representation inadequate.
 
-For calendar feasibility, adopt the explicit distinction between elapsed interval and working duration in [IBM's Scheduling Tutorial, chapter 4](https://ibmdecisionoptimization.github.io/tutorials/html/Scheduling_Tutorial.html#Chapter-4.-Adding-calendars-to-the-house-building-problem). Its example permits suspension during days off and explains separate restrictions on starts, ends and occupied extent. Adapt :4.2 and :4.4 to choose the rule from the operation: :5.4 requires a whole uninterrupted occupation. Combining open hours would answer a different permitted-work question. The extra interval check is small and decides the example; the tutorial does not establish whether a real test may pause. Reopen when interruption, attendance or calendar rules change.
+For calendar feasibility, adopt the explicit distinction between elapsed interval and working duration in [IBM's Scheduling Tutorial, chapter 4](https://ibmdecisionoptimization.github.io/tutorials/html/Scheduling_Tutorial.html#Chapter-4.-Adding-calendars-to-the-house-building-problem). Its example permits suspension during days off and explains separate restrictions on starts, ends and occupied extent. Adapt :4.2 and :4.4 to choose the rule from the operation: :5.4 requires a whole uninterrupted occupation. Combining open hours would answer a different permitted-work question. The extra interval check is small and decides the example. Establish whether this test may pause from its operating conditions. Reopen when interruption, attendance or calendar rules change.
 
 [Goldratt, Critical Chain (1997)](https://www.toc-goldratt.com/en/product/Critical-Chain), chapters 16–17, is a historical construction of moving protection from individual task estimates to project and feeding buffers, together with changed execution rules. Adopt the distinction between work estimates and deliberately placed protection in :4.1 and :4.5. Its halving example assumes already protected estimates; it does not establish a universal conversion of a task quotation into a duration or a completion probability.
 
@@ -254,7 +254,7 @@ For a known schedule or a named delay scenario, compare an explicit feasible pla
 
 OPS.10 selects the deadline or service question. OPS.10.1 constructs the capacity, mean or probability account when that question requires it. OPS.11.1 supplies the operating arrangement and resource identities; OPS.15.1 supplies event-defined time and occupancy quantities.
 
-OPS.7 uses changed delivery consequences for priorities and commitments. OPS.8 uses feasible release times and protection; OPS.9 diagnoses throughput-limiting mechanisms. OPS.14 contributes financial consequences when early or deferred work changes the decision.
+OPS.7 uses changed delivery consequences for priorities and commitments. OPS.8 uses feasible release times and protection; OPS.9 diagnoses what limits the stated result, including throughput or completion by a particular deadline. OPS.14 contributes financial consequences when the timing decision or the grounds for it depend on those financial consequences.
 
 MMP.10 supplies the constraint formulation and its interpretation. CMP.4 supplies search with justified exclusions and CMP.5 supplies relaxation and bound reasoning when needed. C.29 returns the calculated schedule to its operating meaning; B.5.MPC coordinates changed subject premises, mathematics and computation. A.22.CGUS helps recover enabled alternatives before a sequence is fixed.
 

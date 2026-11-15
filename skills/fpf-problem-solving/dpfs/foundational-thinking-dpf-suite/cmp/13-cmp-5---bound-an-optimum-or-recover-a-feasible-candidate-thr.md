@@ -41,7 +41,7 @@ Name the original feasible set `F`, objective `f`, and whether it is minimized o
 
 State what would change the present decision: a better candidate, an infeasibility conclusion, a bound on possible improvement, or an answer within a given tolerance. This selects how much work to spend on the relaxation and recovery.
 
-If several criteria matter, use the existing characterization and Pareto methods to preserve their trade-offs. The scalar constructions below apply to the chosen optimization question. They do not replace that broader comparison with a model-specific score.
+If several criteria matter, use the existing characterization and Pareto methods to preserve their trade-offs. The scalar constructions below address the chosen optimization question.
 
 #### CMP.5:4.2 - Construct the relaxation and derive the bound direction
 
@@ -73,7 +73,7 @@ Check the computational bound direction when rounding, stopping tolerances or in
 
 Give an effective recovery operation when a candidate is needed. Rounding, selecting a subset, scheduling fractional allocations, repairing violated conditions or searching near the relaxed answer can serve this role. Test the original conditions after recovery and explain why the operation preserves or restores them.
 
-A generic instruction to “round the result” is insufficient. Rounding upward can violate a capacity limit, while rounding downward can leave coverage incomplete. Derive the direction and any subsequent repair from the constraints.
+Rounding upward can violate a capacity limit, while rounding downward can leave coverage incomplete. Derive the direction and any subsequent repair from the constraints.
 
 Track objective change through recovery. If every recovered candidate has cost at most `α` times an attained minimizing relaxation value `R*`, then `C≤α*R*≤α*original optimum` for nonnegative costs and the stated approximation factor. If the relaxed solver returns only a feasible value `P`, the first inequality may still hold with `P`, but the comparison to the original optimum needs a separate bound on `P` or a direct comparison of `C` with a justified lower bound.
 
@@ -107,15 +107,15 @@ A robot moves on the finite grid with coordinates `0≤x≤2`, `0≤y≤1`. It c
 
 Ignore blocked cells in the relaxed problem. The distance is `abs(dx)+abs(dy)`, here 2. Every permitted original route is also a relaxed route with the same cost, so 2 is a lower bound. The straight relaxed route is unusable. An admissible detour through `(0,1),(1,1),(2,1)` costs 4, giving an initial comparison `2≤optimum≤4`.
 
-CMP.4 can use the relaxed remaining distance at each partial route, together with the distance already traveled. Alternatively, the blocked direct row implies that a valid route must include an upward and a downward move in addition to two horizontal moves, proving a lower bound of 4. That stronger argument closes this small case. The relaxed result was useful without being mistaken for an executable original route.
+CMP.4 can use the relaxed remaining distance at each partial route, together with the distance already traveled. Alternatively, the blocked direct row implies that a valid route must include an upward and a downward move in addition to two horizontal moves, proving a lower bound of 4. That stronger argument closes this small case. The admissible detour supplies a route. The relaxed distance supplies a bound.
 
-**Changed operations:** allow diagonal moves at unit cost. The earlier Manhattan distance can overestimate: reaching `(1,1)` from `(0,0)` can cost 1 rather than 2. Relax the new movement problem instead. With unrestricted unit-cost horizontal, vertical and diagonal moves, `max(abs(dx),abs(dy))` is the distance and supplies the corresponding lower bound. The algorithmic thinking consists in rebuilding the comparison after the operations change.
+**Changed operations:** allow diagonal moves at unit cost. The earlier Manhattan distance can overestimate: reaching `(1,1)` from `(0,0)` can cost 1 rather than 2. Relax the new movement problem instead. With unrestricted unit-cost horizontal, vertical and diagonal moves, `max(abs(dx),abs(dy))` is the distance and supplies the corresponding lower bound. Rebuild the bound using the allowed moves.
 
 ### CMP.5:6 - Bias-Annotation
 
 An elegant relaxed formulation can redirect effort toward solving the surrogate problem ever better while original feasibility remains unresolved. Keep the recipient's candidate or decision in view when choosing solver effort and recovery.
 
-The word “bound” can also conceal a direction error. A convenient relaxed candidate is informative, but its objective value carries only the inequalities actually established. Calling a result approximate does not remove the need to state which conclusion the approximation supports.
+The word “bound” can also conceal a direction error. A convenient relaxed candidate is informative, but its objective value carries only the inequalities established for it. Calling a result approximate does not remove the need to state which conclusion the approximation supports.
 
 ### CMP.5:7 - Conformance Checklist
 
@@ -133,7 +133,7 @@ The word “bound” can also conceal a direction error. A convenient relaxed ca
 | --- | --- |
 | Use a feasible relaxed objective as a minimizing lower bound | It can exceed the original optimum. Obtain an optimum, a dual lower bound or another justified bound. |
 | Return the relaxed point as the original answer | Fractions or forbidden transitions can make it unusable. Construct and check recovery under the original conditions. |
-| Round without examining the constraint | Coverage or capacity can fail. Derive the rounding direction and repair from the constraint's actual form. |
+| Round without examining the constraint | Coverage or capacity can fail. Derive the rounding direction and repair from the constraint. |
 | Reuse the old relaxation after adding allowed operations | A former lower bound can become an overestimate, as with diagonal moves. Rebuild the problem comparison. |
 | Tighten a bound after the decision is settled | Additional optimization consumes resources without changing the next action. Stop or redirect effort according to the receiving use. |
 
@@ -157,7 +157,7 @@ The primary [SCIP 10.0 report](https://optimization-online.org/wp-content/upload
 
 The connection with relaxed path costs shows another use of the same construction. Here recovery is a separate route search, while the relaxed result supplies an optimistic cost.
 
-For :4.2–4.5, compare relaxation and recovery with a direct algorithm, a cheaper feasible-candidate heuristic, and an already available valid bound. Prefer the lighter construction when it supplies the required candidate or comparison. Solving a relaxation more accurately is worthwhile when a tighter bound changes the search or when its recovered candidate improves the original result enough to repay the effort. Recovery can instead lose feasibility or too much objective value, as the changed cover case shows. Reconsider the selection when a new feasible-set relation, recovery guarantee, competing construction or resource limit changes that trade-off; an LP optimum is not a universal prerequisite.
+For :4.2–4.5, compare relaxation and recovery with a direct algorithm, a cheaper feasible-candidate heuristic, and an already available valid bound. Prefer the lighter construction when it supplies the required candidate or comparison. Solving a relaxation more accurately is worthwhile when a tighter bound changes the search or when its recovered candidate improves the original result enough to repay the effort. Recovery can instead lose feasibility or too much objective value, as the changed cover case shows. Reconsider the selection when a new feasible-set relation, recovery guarantee, competing construction or resource limit changes that trade-off.
 
 ### CMP.5:12 - Relations
 

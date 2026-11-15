@@ -63,7 +63,7 @@ For a word `[x1,...,xk]`, the same move evaluates the assigned generator values 
 
 For a typed path, set `E(id_X)=id_F(X)`. If `p:X -> Y` has been evaluated and `a:Y -> Z` is the next generator, set `E(p;a)=E(p) star a_target`, where `star` is again read in execution order. The intermediate object F(Y) makes this composition defined. Recursing by path length evaluates every finite path while keeping its endpoints. In a target of sets and functions, this means applying E(p) first and a_target second.
 
-The image of a composite is now computed from its parts. It is no longer an independently chosen entry in a correspondence table.
+These rules determine the image of a composite from the images of its parts.
 
 #### MATH.5:4.3 - Establish preservation and uniqueness
 
@@ -165,7 +165,7 @@ Recognizable notation can encourage an unexamined substitution. Matrix multiplic
 
 A compact target value can also be mistaken for a reversible description. The cost example preserves concatenation while merging words with different effects.
 
-Finally, a few successful evaluations can hide an equation schema's range. The reusable extension depends on preservation for every admitted instance of the equations it consumes.
+A few successful evaluations can hide an equation schema's range. The reusable extension depends on preservation for every admitted instance of the equations it consumes.
 
 ### MATH.5:7 - Conformance Checklist
 
@@ -218,7 +218,7 @@ The [Mathlib free-monoid implementation](https://leanprover-community.github.io/
 
 The [Mathlib path-category construction](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/PathCategory/Basic.html#CategoryTheory.Paths.lift) formalizes the typed branch: `Paths.lift` extends an object-and-generator assignment; `lift_nil`, `lift_cons` and `lift_unique` establish the identity, recursive composition and uniqueness clauses. The pattern spells out those operations for use after MATH.1. The integer/pair case derives a consequence and a failed additional equation directly from its assigned functions.
 
-The useful comparison is with a supplied map or independent evaluation of a small number of expressions. Extension by generators improves repeated compositional use, while an imposed equation adds a real preservation obligation. Reopen when a partial operation has a domain beyond the path-endpoint construction supplied here, the source admits infinite constructions, an equation fails, or a simpler available map supplies the receiving result.
+The useful comparison is with a supplied map or independent evaluation of a small number of expressions. Extension by generators improves repeated compositional use, while an imposed equation adds an obligation to show that the evaluation respects it. Reopen when a partial operation has a domain beyond the path-endpoint construction supplied here, the source admits infinite constructions, an equation fails, or a simpler available map supplies the receiving result.
 
 ### MATH.5:12 - Relations
 

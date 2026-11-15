@@ -2,4 +2,4 @@
 
 > **Publication use:** a practice-use profile of this framework.
 >
-> **Practical result:** a development-direction recommendation with its sources and limits, or a statement of what is still needed to prepare one.
+> **Practical result:** a supported recommendation, comparison or service boundary for a development-direction question, with its sources and limits, or a statement of the missing premise.

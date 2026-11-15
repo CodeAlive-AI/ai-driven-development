@@ -13,7 +13,7 @@ The first useful result is an offer that can be delivered for a stated period: w
 
 The intended user organises the activity and can obtain decisions from resource owners and affected contributors. The pattern uses accounting and operating results where calculation or scheduling needs specialist work.
 
-**Ordinary non-use.** An already authorised, adequately provided activity can use its existing arrangements. If the remaining question is the value of the activity, use CB.10. If nobody can yet explain what contribution is worth supporting, return to CB.1 before seeking a larger budget.
+**Ordinary non-use.** If the activity already has authorisation and adequate provision, you can use the existing arrangements. If the remaining question is the value of the activity, use CB.10. If nobody can yet explain what contribution is worth supporting, return to CB.1 before seeking a larger budget.
 
 ### CB.9:2 - Problem
 
@@ -36,9 +36,9 @@ How can the organiser provide the useful work, agree who bears its burdens and b
 
 ### CB.9:4 - Solution
 
-Build the arrangement from the promised activity and its resource dependencies. Compare support options with the affected people, obtain the actual commitments and test an ordinary use together with a plausible shortfall.
+Build the arrangement from the promised activity and its resource needs. Compare feasible support and terms with those affected, obtain the commitments and try an ordinary delivery. Check whether the existing provision can cover a plausible shortfall. If it cannot, revise the promise or obtain the missing support before contributors face a burden they never accepted.
 
-**Working reminder:** bound the promise; recover the work; compare support and terms; obtain commitments; try delivery; revise before the burden becomes hidden.
+
 
 #### CB.9:4.1 - Bound the work that support is supposed to enable
 
@@ -48,7 +48,7 @@ Recover each material expectation with the party that holds it. Participants may
 
 Resolve incompatible promises before costing them as one programme. A confidential peer conversation and an identifiable sales-lead report require different permissions and participant expectations. Change the proposed terms, separate the activities or decline one promise when the conflict remains. CB.1 helps reconsider the contribution; CB.13 supplies a missing collective decision mandate.
 
-For a group with several supporters, identify the person who can reconcile the demands on the same organiser. Retain the distinct results and receiving parties. Adding every possible sponsor benefit to one activity can multiply preparation, data collection and reporting beyond the activity's useful work.
+For a group with several supporters, identify who can reconcile the demands on the same organiser. Retain the distinct results and receiving parties. Adding every possible sponsor benefit to one activity can multiply preparation, data collection and reporting beyond the activity's useful work.
 
 #### CB.9:4.2 - Recover the resource demand, including quiet work
 
@@ -58,13 +58,13 @@ Express consequential requirements in usable units and time windows. Qualified f
 
 Use [MA.1 (MA.1:4)](../ma/08-ma-1---build-the-resource-consumption-and-cost-model.md#ma14---solution) to obtain a missing resource-consumption and cost account. It connects outputs, preparation, attempts and rework to resources and to the applicable payments. Use [MA.2 (MA.2:4)](../ma/09-ma-2---explain-the-cost-and-use-of-capacity.md#ma24---solution) when supplied, used, reserved and unavailable capacity have been confused. Keep donated time visible as a constrained contribution. Express its monetary value only when the receiving comparison needs and can justify that valuation.
 
-Recover what is already committed elsewhere. [OCE.11 (OCE.11:4)](../oce/33-oce-11---coordinate-organization-change-work-with-continuing.md#oce114---solution) helps arrange overlap with continuing work; [OPS.5 (OPS.5:4)](../ops/33-ops-5---admit-work-and-limit-starts.md#ops54---solution) supplies admission against the provider's actual commitments. Obtain those results from the people who can change the work or its provision. A community schedule by itself cannot release a contributor from their other duties.
+Recover what is already committed elsewhere. [OCE.11 (OCE.11:4)](../oce/33-oce-11---coordinate-organization-change-work-with-continuing.md#oce114---solution) helps arrange overlap with continuing work; [OPS.5 (OPS.5:4)](../ops/33-ops-5---admit-work-and-limit-starts.md#ops54---solution) supplies admission against the provider's actual commitments. Obtain those results from those who can change the work or its provision. A community schedule by itself cannot release a contributor from their other duties.
 
 Use enough detail to decide. A small group may need only the next session's tasks and contributors. A programme with staff, several locations or uncertain demand may need alternative schedules and a fuller account. Deepen a quantity when its plausible range changes the promise or the support decision.
 
 #### CB.9:4.3 - Compare ways to provide the contribution
 
-Construct support alternatives from the actual gap. Members may share a task, an employer may provide time, a sponsor may provide space, or a qualified supplier may perform paid work. A smaller or less frequent activity can remove a demand; changing a payment source alone cannot.
+Construct support alternatives from the gap. Members may share a task, an employer may provide time, a sponsor may provide space, or a qualified supplier may perform paid work. A smaller or less frequent activity can remove a demand; changing a payment source alone cannot.
 
 For each feasible alternative, compare the received contribution, the burden on each party and the consequential conditions. Ask who bears preparation and interruption, who controls the resource, which uses are allowed and what happens at renewal. A free platform may cost migration work or impose limits that matter more than its current price. Obtain its applicable terms when choosing it.
 
@@ -72,11 +72,11 @@ Separate the resource comparison from the funding mechanism. Membership dues, vo
 
 Use [OPS.14 (OPS.14:4)](../ops/47-ops-14---relate-throughput-cash-and-operating-consequences.md#ops144---solution) for an unresolved operating and financial comparison. It follows the alternatives through actual resource use, displaced work, payment timing and funding. MA supplies the cost relations. A favourable total at the end of a quarter does not pay an earlier room deposit.
 
-Choose with the authorised parties. State the accepted loss: fewer sessions, paid coordination, a narrower response promise or less sponsor reporting, for example. Keep the alternative or missing decision that would reopen the choice. Participation in an activity alone does not authorise the organiser to accept a new obligation on members' behalf.
+Choose with the authorised parties. State any loss the parties accept: fewer sessions, paid coordination, a narrower response promise or less sponsor reporting, for example. Keep the alternative or missing decision that would reopen the choice. Participation in an activity alone does not authorise the organiser to accept a new obligation on members' behalf.
 
 #### CB.9:4.4 - Agree contributions, benefits and control
 
-Make each consequential commitment understandable to its contributor and receiver. State the work or resource, period, limits, support, compensation or reimbursement where applicable, and how an absence or withdrawal will be handled. Obtain agreement from the person or owner who can actually provide it.
+Make each consequential commitment understandable to its contributor and receiver. State the work or resource, period, limits, support, compensation or reimbursement where applicable, and how an absence or withdrawal will be handled. Obtain agreement from the party with the ability and authority to provide it.
 
 Distinguish an invitation to contribute from an accepted assignment. Ask what a volunteer is willing and able to do; leave a reachable way to decline, reduce or end the contribution. If continuity requires fixed delivery, provide an arrangement that can carry that obligation, such as paid work, a confirmed rota with backup or a smaller promise. Appreciation through CB.6 can support a relationship; it does not supply missing labour.
 
@@ -88,7 +88,7 @@ Make sponsor influence legible. Agree who selects activities, who controls contr
 
 #### CB.9:4.5 - Make the arrangement operable and try a shortfall
 
-Obtain the allocations, access and practical support needed for the next activity. OCE.6 helps establish assignments and enabling relations; the receiving provider must accept work that depends on its resources. Check that a person can perform their part, rather than treating a named owner as provision.
+Obtain the allocations, access and practical support needed for the next activity. OCE.6 helps establish assignments and enabling relations; the receiving provider must accept work that depends on its resources. Check that each contributor can perform the part they have accepted.
 
 Run one ordinary occurrence through the arrangement. Can the host enter the venue, can the facilitator prepare, and can the promised result reach its user? Inspect the first use and obtain contributors' accounts of work that the plan omitted. Correct the promise or the provision where they differ.
 
@@ -142,7 +142,7 @@ The organiser may underestimate their own time, while a sponsor can make its vis
 
 ### CB.9:7 - Conformance Checklist
 
-For an arrangement on which people will rely, establish the following at the detail needed for that reliance:
+For an arrangement on which others will rely, establish the following at the detail needed for that reliance:
 
 - The promised result and support period are understandable to the receiving parties.
 - Material labour, capability, access and payment requirements have willing, authorised provision.
@@ -152,7 +152,7 @@ For an arrangement on which people will rely, establish the following at the det
 - An ordinary use and a consequential shortfall have a workable response.
 - Actual burden and the end of the support period can change the promise before it becomes unsupported.
 
-The arrangement can support reliance when the contributions, permissions and terms actually hold. Its description makes those conditions inspectable. Delivery and later value require their own observations.
+The arrangement can support reliance when the contributions, permissions and terms hold. Its description makes those conditions inspectable. Delivery and later value require their own observations.
 
 ### CB.9:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -174,7 +174,7 @@ Making hidden work visible can reduce the apparent scale of the programme or inc
 
 ### CB.9:10 - Rationale
 
-A community promise is realised through several people's work and through resources they may not control in common. Connecting those contributions makes a support decision actionable. Separating the benefit, contribution and authority of each party also exposes conflicts that a single budget cannot resolve.
+A community promise is realised through the work of its contributors and through resources they may not control in common. Connecting those contributions makes a support decision actionable. Separating the benefit, contribution and authority of each party also exposes conflicts that a single budget cannot resolve.
 
 Voluntary and paid contributions can coexist when their terms are clear and workable. The decisive question is what reliance the arrangement can support. Reopening that question when work or conditions change protects both the useful contribution and people's ability to choose their participation.
 

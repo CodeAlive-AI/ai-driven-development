@@ -47,21 +47,21 @@ For PS17 in configuration C41, the constructed question is whether today's vibra
 
 Today's lower comparison bound, 2.9, exceeds both the healthy upper bound, 1.2, and the earlier upper bound, 2.5. Under this supplied basis, ordinary healthy variation or the stated measurement limitations do not explain the change. The qualified condition conclusion is an abnormal and increasing vibration at this bearing location under the compared duty. That is not, by itself, a unique diagnosis of bearing damage or a remaining-life estimate. [MNT.6](17-mnt-6---diagnose-condition-and-choose-a-maintenance-response.md) combines it with the existing diagnostic evidence and consequences to select a response.
 
-Now change only the speed to 1,750 r/min within a second operating point already covered by the case's specialist comparison map. That map says to divide this point's indicated velocity and comparison bounds by 2 to compare them with the 1,450 r/min reference. The new reading is 6.0 mm/s, with supplied bounds 5.8–6.2. Conversion gives 3.0 and 2.9–3.1: the raw doubling does not establish further deterioration, while the abnormal condition relative to the healthy reference remains. The map is an explicitly supplied relation for these two points, not a general speed law or permission to operate at the second speed. Without an applicable relation, the 6.0 reading remains an observation but cannot be appended to the earlier condition trend; a response-changing comparison then needs a bounded specialist return.
+Now change only the speed to 1,750 r/min within a second operating point already covered by the case's specialist comparison map. That map says to divide this point's indicated velocity and comparison bounds by 2 to compare them with the 1,450 r/min reference. The new reading is 6.0 mm/s, with supplied bounds 5.8–6.2. Conversion gives 3.0 and 2.9–3.1: the raw doubling does not establish further deterioration, while the abnormal condition relative to the healthy reference remains. The map is a supplied relation for these two points, not a general speed law or permission to operate at the second speed. Without an applicable relation, the 6.0 reading remains an observation but cannot be appended to the earlier condition trend; a response-changing comparison then needs a bounded specialist return.
 
 In a different branch, the dashboard predicts “30 days remaining” using an assumed steady duty. Operation proposes a materially heavier cycle next week. The forecast cannot settle that use without an applicable relation. The team can still report today's observed condition and the forecast limitation; it need not invent a new life model to give that smaller answer.
 
-At programme scale, a proposed online monitor is compared with the existing periodic inspection at the actual alarm-to-action boundary. A higher prediction score alone does not answer whether service loss, unnecessary interventions or total effort will improve.
+At programme scale, a proposed online monitor is compared with the existing periodic inspection by what response each alarm permits. A higher prediction score alone does not answer whether service loss, unnecessary interventions or total effort will improve.
 
 ### MNT.4:6 - Bias-Annotation
 
-Visible channels draw attention away from unmeasured mechanisms and missing intervals. A precise numerical forecast can appear more authoritative than an experienced but qualified interpretation. Preserve what each source can actually support, including relevant counter-observations.
+Visible channels draw attention away from unmeasured mechanisms and missing intervals. A precise numerical forecast can appear more authoritative than an experienced but qualified interpretation. Preserve what each source can support, including relevant counter-observations.
 
 ### MNT.4:7 - Conformance Checklist
 
 Is the condition question clear? Are measurand, operating context and comparison basis adequate for the inference? Are observations, inferred condition and forecasts distinguishable? Are missing data, uncertainty and future-duty assumptions retained where they change use? Can the intended recipient act on the account or identify its limit?
 
-Further monitoring is not a universal completion condition. Its attainable decision contribution and whole burden need to justify it.
+Further monitoring is warranted only when what it could add to the decision justifies its full burden.
 
 ### MNT.4:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -71,17 +71,17 @@ An alarm programme is judged only by prediction accuracy. Compare its actual mai
 
 ### MNT.4:9 - Consequences
 
-The recipient receives condition information with a usable meaning rather than a disconnected signal. Existing evidence can close a question quickly. Some stronger forecasts remain unavailable, and the cost of that limit becomes visible without invalidating the observations that are already useful.
+The recipient can use the interpreted condition to answer the maintenance question. Existing evidence can close a question quickly. Some stronger forecasts remain unavailable, and the cost of that limit becomes visible without invalidating the observations that are already useful.
 
 ### MNT.4:10 - Architectural Rationale
 
 Monitoring and interpretation are kept together because the maintenance value lies in the interpreted condition, not collection alone. Intervention selection remains separate so that the same condition account can support different policies, operating restrictions or maintenance choices.
 
-A new monitoring arrangement is selected by its contribution to that use. The Method does not assume that greater data volume or autonomy is inherently a better maintenance result.
+Select a new monitoring arrangement by its contribution to the intended maintenance use. Apply that test to any increase in data volume or autonomy.
 
 ### MNT.4:11 - SoTA-Echoing
 
-For the question “Does this monitoring arrangement improve the maintenance decision?”, this pattern adapts the consequence-oriented evaluation line in Dadfarnia, Sharp and Herrmann's 2025 review. Against prediction-score-only comparison, the Method uses the alarm-to-action and full-burden reasoning in the Solution and programme example. This accepts the effort of connecting signals to actual maintenance outcomes while allowing an adequate existing interpretation to finish. The review's heterogeneous evidence does not establish a universal gain or mandatory evaluation study. Reopen when the failure, operating duty, observation process or feasible response changes. See [NIST's publication and source return](https://www.nist.gov/publications/comprehensive-evaluations-condition-monitoring-based-technologies-industrial).
+For the question “Does this monitoring arrangement improve the maintenance decision?”, this pattern adapts the consequence-oriented evaluation line in Dadfarnia, Sharp and Herrmann's 2025 review. Against prediction-score-only comparison, the Method uses the alarm-to-action and full-burden reasoning in the Solution and programme example. This accepts the effort of connecting signals to actual maintenance outcomes while allowing an adequate existing interpretation to finish. The review reports results from heterogeneous settings. They establish neither a gain for every maintenance use nor a requirement to run a new study for each one. Reopen when the failure, operating duty, observation process or feasible response changes. See [NIST's publication and source return](https://www.nist.gov/publications/comprehensive-evaluations-condition-monitoring-based-technologies-industrial).
 
 ### MNT.4:12 - Relations
 

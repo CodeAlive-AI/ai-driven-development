@@ -1055,8 +1055,8 @@ It is **not** a USM scope and carries **no** truth or validity semantics.
 **MG-DA-T7 (EntityOfConcern ground).** The definition card states the EntityOfConcern-side kind criterion for membership; reviewers can check membership without consulting external narrative.
 
 #### E.10:7.5 - Compatibility with USM (how tokens and scopes meet)
-**USM applies to acts, not tokens.** Mint, rename, and use are **LexicalActs** that carry a USM scope. `LEX.TokenClass` constrains **where** a token may be used via an **AllowedScopes** policy:
-**Conformance rule.** For any usage `u` of a token `t`: `LEX.TokenClass(t)=c  ⇒  USM.Scope(u) ∈ AllowedScopes(c).`
+To check a mint, rename or use of a token, identify its class and the conditions of this particular LexicalAct, including the register and publication setting required by the policy. `AllowedScopes(c)` supplies the policy for token class `c`.
+For one use, test whether its `U.ContextSlice` belongs to a scope admitted by that policy under A.2.6. To authorize use throughout a proposed scope, show that the policy covers every proposed slice. For a policy that explicitly requires registration of the exact scope, also check the corresponding registry entry. An unresolved test supplies no permission to use the token.
 
 The LEX registry defines `AllowedScopes(c)` (for example, `KernelToken` use in normative kernel constraints is admitted; Plain-register use outside a glossary is restricted; a locally scoped use under another scheme requires its own valid designation rule and does not gain a Bridge by alias alone).
 
@@ -1116,7 +1116,7 @@ Do **not** mint *ETLService* at kernel level. Recover the ETL claim first: the w
 
 **SCR‑LEX‑S04 (Enumeration rule gate).** Every enumeration names its closed value set, classified kind, and classification rule. Require a `CharacteristicSpace` only when one named `U.Characteristic` is bound to one declared CSLC scale; otherwise retain the local classifier, state/status value set, source wording or representation under its direct pattern, example or alternative set, local kind, or another construction defined for that classification.
 
-**SCR‑LEX‑S05 (USM compatibility).** For each LexicalAct, `USM.Scope ∈ AllowedScopes(LEX.TokenClass)`.
+**SCR‑LEX‑S05 (USM compatibility).** For each LexicalAct, apply the allowed-use test in §7.5 to the token class and the proposed use.
 
 **SCR‑LEX‑S06 (Slot and Ref suffix discipline).** A token ending in **`…Slot`** names the declaration-local **SlotKind** inside one exact A.6.5 `SlotSpec` of one reusable `RelationSignature`. A token ending in **`…Ref`** names either a RefKind admitted by its direct reference pattern or a receiving-episteme field explicitly typed by that RefKind; the field remains designation or reference apparatus and does not become the participant or SlotSpec. No ValueKind or representation field may acquire either suffix by shape alone.
 
@@ -1327,9 +1327,9 @@ canonical FPF pattern while remaining lexical-query support only.
 
 #### E.10:8.6 - Compatibility with USM (acts and tokens)
 
-**LEX applies to tokens; USM applies to acts.** Mint, rename, and use are **LexicalActs** that carry a USM scope (e.g., ClaimScope, WorkScope). LEX constrains **where** a token form may appear via **AllowedScopes** policies:
+**Token class and use.** Determine the class of the token, the setting of its use and the applicable `AllowedScopes` policy. A claim made by a LexicalAct has its own claim scope. A capability to perform the Work can have a work scope.
 
-`LEX.TokenClass(t)=c  ⇒  USM.Scope(usage) ∈ AllowedScopes(c)`.
+For an individual use, test the slice for that use. For a standing permission, check coverage as set out in §7.5.
 
 Example: use of a `KernelToken` in a locally scoped constraint is admitted only under the exact scheme and allowed-scope rule; an alias adds no Bridge. Keep logged performance assertions separate from the MethodDescription's method-side claims, even when one file presents both.
 
@@ -1342,7 +1342,7 @@ Example: use of a `KernelToken` in a locally scoped constraint is admitted only 
 * **SCR‑MOR‑S05 (Collision).** Full‑text + Reserved‑Names checks pass (no other sense of the token elsewhere).
 * **SCR‑MOR‑S06 (Object‑of‑talk).** Heads pass M‑2; no bare metaphors as heads.
 * **RSCR-MOR-E01 (DevOps firewall).** Tool and file suffixes stay in local glossaries or operational configurations; none leak into KernelToken names.
-* **RSCR‑MOR‑E02 (USM compliance).** For each LexicalAct, verify `USM.Scope ∈ AllowedScopes(LEX.TokenClass)` (see § 7.5).
+* **RSCR‑MOR‑E02 (USM compliance).** Apply §7.5 to the proposed use in its register and setting.
 
 #### E.10:8.8 - Autonomy lexicon (L‑AUTO )
 **Recovery cues in FPF-governed autonomy claims:** unresolved “validity”, “actor” or “agent”, “kill switch”, “process” for behavior, and “envelope” used **as scope**. Apply the relevant recovery only when the claim is unclear; ordinary and already precise uses remain available.
@@ -1469,7 +1469,7 @@ A text **passes** LEX if all answers are **Green**:
 * **With F‑cluster (Unification) and UTS (F.17).**
   Recover each source-local cell under its effective scheme. A comparison row may cite direct Bridges, losses, contrasts, and separately warranted use claims; the row creates none of them. UTS is the human-readable term publication.
 
-> **Acts and tokens.** LEX applies to **tokens**; USM applies to **acts**: mint, rename, and use. Conformance: `LEX.TokenClass(t)=c ⇒ USM.Scope(usage) ∈ AllowedScopes(c)` (see § 7.5).
+> **Acts and tokens.** Identify the class of the token. For a mint, rename or use, check the conditions of the act against the policy for that class (§7.5).
 
 #### E.10:9.5 - Conformance checklist (LEX‑CC)
 
@@ -1479,7 +1479,7 @@ A text **passes** LEX if all answers are **Green**:
 4. **LEX-CC-4 (Cross-local relation).** Recover the exact relation being asserted between local senses. Cite an F.9 Bridge only when its direct predicate obtains between identified cells; any proposed use and reliance remain separate. Shared spelling establishes none of them.
 5. **LEX‑CC‑5 (MG-DA).** New tokens pass **MG-DA** tests, including **full‑text collision** and **Reserved‑Names** checks.
 6. **LEX‑CC‑6 (Service, acceptance, and evidence).** Service or access wording establishes neither **Work** nor acceptance. An acceptance claim names the selected criterion episteme, any evaluation or acceptance Work that applied it, the returned value or result episteme, and the acceptance predicate with its participants under the applicable acceptance pattern; delivery Work, evidence, or a positive display proves none by itself. Evidence use is a relation over an **Episteme**, target claim or use, the scope, polarity, temporal conditions and provenance required by the evidence use.
-7. **LEX‑CC‑7 (USM compatibility).** For each LexicalAct, `USM.Scope ∈ AllowedScopes(LEX.TokenClass)`.
+7. **LEX‑CC‑7 (USM compatibility).** Apply the token-class policy to the individual use or proposed range of uses (§7.5).
 8. **LEX-CC-8 (Naming discipline).** If overload cleanup yields one local replacement phrase, the text records the repaired phrase and applicable local repair pattern. If cleanup yields one durable reusable name, the text first records the applicable **F.8** decision for the already identified value, then completes an **F.18** NameCard; public, Core-facing, durable, or cross-local publication also supplies the **F.17** term row. Intuition-first labels, partial NameCards, and naming acts that substitute for value or kind admission are non-conformant.
 
 #### E.10:9.6 - Worked micro‑examples (short, cross‑domain)
@@ -1536,7 +1536,7 @@ When a thinking term identifies the subject of a holonic question, name the whol
 
 These are qualified applications, not exhaustive definitions of the familiar forms of thinking. An “operational” judgement can also concern capacity, commitments and service under OPS.23. Management and strategic reasoning can connect Systems, Methods, Work and Epistemes. Mathematical thinking can compose claim-bearing knowledge and proof Methods while also constructing mathematical objects and operations. Keep an object of a mathematical claim distinct from the Episteme making that claim.
 
-Translate the intended subject and operation, not just the adjective. Russian «методологическое мышление» concerns methods and their grounds in this use; English “methodical thinking” can instead mean orderly procedure. “Systematic” does not by itself mean FPF's “system thinking.” For the Work application, “reasoning about performed work” and «мышление о выполненных работах» make the intended subject explicit. Preserve a source's different use when quoting or explaining it.
+Translate the intended subject and operation, not just the adjective. Russian «методологическое мышление» concerns methods and their grounds in this use; English “methodical thinking” can instead mean orderly procedure. “Systematic” does not by itself mean FPF's “system thinking.” For the Work application, “reasoning about performed work” identifies what happened and whose contribution is at issue. Preserve a source's different use when quoting or explaining it.
 
 [Library.Reference:1.2](../../library/reference/02-library-reference-1---one-connected-language-several-kinds-o.md#libraryreference12---holonic-thinking-across-different-kinds-of-whole) develops the common construction and its limits. Apply this distinction with F.19 when authoring or repairing a consequential use. The adjective alone supplies neither holon admission nor a part–whole, level or layer relation.
 
@@ -1739,8 +1739,7 @@ Re-review your prose when any of these happen:
 
 * **Notation-agnostic.** `E.10` is a wording-use governance pattern, not a scanner or template. Apply it in prose, sketches, or formal models.
 * **Where checks belong.** Convenience checks belong to Tooling; `E.10` stays notation-agnostic. Conformance code belongs in **SCR-LEX** or **RSCR-LEX** as referenced above.
-* **Acts and tokens.** LEX applies to **tokens**; USM applies to **acts**: mint, rename, and use. Conformance:
-  `LEX.TokenClass(t)=c  ⇒  USM.Scope(usage) ∈ AllowedScopes(c)` (§ 7.5).
+* **Acts and tokens.** Determine the token class and test whether its policy allows the proposed LexicalAct in this setting (§7.5).
 * **Reserved “plane”.** Only **`CHR:ReferencePlane`** uses the bare word *plane*. E.10.D2 is the EntityOfConcern and Description-episteme boundary plus specification-use gates, with publication faces, publication forms, `PublicationUnit`s, carriers, and renderings kept separate; all other category talk is expressed as **Characteristics** in a **CharacteristicSpace** when scale semantics are declared.
 
 > **One-line memory:** *“F.19 reads the claim; E.10 opens only the unresolved lexical branch.”*

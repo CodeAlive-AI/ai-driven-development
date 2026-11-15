@@ -8,7 +8,7 @@
 
 Use this pattern when a transformation appears to preserve the structure relevant to a problem, and you need to turn that observation into a useful restriction, a transferred solution or a reason that a requested answer cannot be selected from the available information.
 
-A symmetric allocation problem can constrain its unique optimum before a full calculation. An anonymous arrangement can make a unique choice impossible under a stated selection rule. A rotationally symmetric physical law can relate motions with different initial states. The useful consequence depends on what the transformation actually preserves and how the required answer transforms.
+A symmetric allocation problem can constrain its unique optimum before a full calculation. An anonymous arrangement can make a unique choice impossible under a stated selection rule. A rotationally symmetric physical law can relate motions with different initial states. The useful consequence depends on what the transformation preserves and how the required answer transforms.
 
 A *symmetry* here is an invertible transformation preserving the stated structure. The object of the Method is that transformation together with the problem and answer it acts on. State the structure: preserving a shape, an equation, a criterion or a fully specified problem gives different premises.
 
@@ -22,7 +22,7 @@ If no symmetry-related conclusion is needed, use the direct calculation. If the 
 
 A suggestive symmetry can omit the feature that decides the problem. Equal-looking components can have different costs. A law can be unchanged while its boundary or initial data change. A function can require its output to rotate with its input rather than stay numerically identical.
 
-A second error begins after a real symmetry is established: the solver assumes more than it implies. A symmetric problem can have several asymmetric solutions. A rotation-respecting numerical scheme can fail to conserve the physical angular momentum. To obtain a usable conclusion, follow the transformation through the actual solution condition.
+A second error begins after a real symmetry is established: the solver assumes more than it implies. A symmetric problem can have several asymmetric solutions. A rotation-respecting numerical scheme can fail to conserve the physical angular momentum. To obtain a usable conclusion, follow the transformation through the solution condition.
 
 ### MATH.13:3 - Forces
 
@@ -66,7 +66,7 @@ Use a mathematical argument for the range claimed. A few successful transformati
 
 #### MATH.13:4.3 - Obtain the useful consequence
 
-Follow the consequence needed by the question.
+
 
 **Transfer a solution.** From a known solution x, obtain g(x) and use the preservation argument from :4.2 to establish what problem it solves. Compositions can generate further related solutions. These are distinct answers only when the transformed objects differ under the problem's equality.
 
@@ -86,7 +86,7 @@ An invariant output can often be calculated from a representative of a symmetry 
 
 For example, rotating an image to a standard orientation can help classify the object. Reporting a location in the original image additionally requires the corresponding inverse coordinate transformation. If the task distinguishes orientations, the normalization must retain that information.
 
-Use C.29.1 when establishing this representation-and-return relation is itself the difficulty. Use C.29.2 to construct the actual computation; the existence of a symmetric formulation does not supply an efficient algorithm.
+Use C.29.1 when establishing this representation-and-return relation is itself the difficulty. Use C.29.2 to construct the computation; the existence of a symmetric formulation does not supply an efficient algorithm.
 
 #### MATH.13:4.5 - Return a failed symmetry to its decisive premise
 
@@ -116,7 +116,7 @@ For this input, a one-step rotation leaves the supplied arrangement unchanged. E
 
 One repair is to supply a distinguished attribute, such as an available unique priority, and let the rule use it. Another is to change the requested result to the set of all three equally admissible vertices. Random selection is another problem: a uniform distribution can be rotation-invariant even though a sampled vertex is not fixed. The construction of a coordinated random choice would need its own procedure.
 
-This is a mathematical result about the given input and rule requirements. Extra identifiers, timing distinctions or other available attributes can change the input symmetry and therefore the conclusion. It does not establish that every real three-agent arrangement faces this obstruction.
+This is a mathematical result about the given input and rule requirements. Extra identifiers, timing distinctions or other available attributes can change the input symmetry and therefore the conclusion.
 
 #### MATH.13:5.3 - A symmetry of motion and what a numerical step preserves
 
@@ -144,7 +144,7 @@ For this model, the update `v_next=v-h*q; q_next=q+h*v_next` preserves J by subs
 
 ### MATH.13:6 - Bias-Annotation
 
-Visual sameness can distract from a cost, label meaning or boundary datum that distinguishes the cases. Transform those inputs explicitly.
+Visual sameness can distract from a cost, label meaning or boundary datum that distinguishes the cases. Transform those inputs.
 
 A solver familiar with unique linear problems may carry uniqueness into a problem with several solutions. Keep the solution-set result available until uniqueness has its own basis.
 
@@ -170,7 +170,7 @@ A conserved-looking scalar can also invite the wrong inference from equivariance
 | Rotate a law while silently keeping changed initial data as the same problem. | Track the transformed initial or boundary values. |
 | Demand an invariant output when the task needs an equivariant position or direction. | Specify and apply the output action. |
 | Normalize an input and lose the original coordinate relation. | Retain the transformation needed to return the answer or expose the remaining ambiguity. |
-| Infer physical conservation from an equivariant update alone. | Derive the quantity's change along the actual dynamics or numerical step. |
+| Infer physical conservation from an equivariant update alone. | Derive the quantity's change along the dynamics or numerical step. |
 
 ### MATH.13:9 - Consequences
 
@@ -180,9 +180,9 @@ The main cost is identifying the relevant structure and following the transforma
 
 ### MATH.13:10 - Architectural Rationale
 
-The Method follows a transformation through a problem and its answer. This keeps a visible symmetry from becoming an unrestricted claim about every quantity or every use.
+The Method follows a transformation through a problem and its answer. The resulting conclusion depends on the conditions that the transformation preserves and on how it acts on the answer.
 
-The fixed-point argument is particularly useful because it converts invariance of the input into a restriction on the answer. Uniqueness and equivariance enter at the point where that conversion needs them. Keeping those premises explicit makes the same reasoning useful in optimization, mathematical construction and computational selection.
+The fixed-point argument is useful because it converts invariance of the input into a restriction on the answer. Uniqueness and equivariance enter at the point where that conversion needs them. Keeping those premises explicit makes the same reasoning useful in optimization, mathematical construction and computational selection.
 
 A dynamics symmetry, a conservation theorem and a numerical method can contribute to one physical answer while doing different work. The oscillator case retains that connection and exposes where a valid property is lost during computation. A specialized construction of Noether quantities or structure-preserving integrators is a further Method when that result is required.
 
@@ -192,11 +192,11 @@ The selected approach defines the structure and input-output action before using
 
 [Bronstein, Bruna, Cohen and Veličković, *Geometric Deep Learning*, draft chapter 3, §§3.1-3.2](https://geometricdeeplearning.com/book/algebraicpriors.html) develops symmetries as invertible structure-preserving maps and distinguishes invariant and equivariant outputs. Adopt that explicit action and output discipline. Whether a transformation preserves a label or target still comes from the modeled task. Architecture construction and learning-performance claims need the corresponding further Methods and evidence.
 
-[Tong, *Classical Dynamics*, §2.4](https://www.damtp.cam.ac.uk/user/tong/dynamics/dynhtml/S2.html) derives conserved quantities from continuous symmetries of a Lagrangian using its equations of motion. The useful contribution is the extra argument connecting symmetry with time evolution. The simple oscillator calculation above performs that connection directly; it does not substitute for the wider Noether construction.
+[Tong, *Classical Dynamics*, §2.4](https://www.damtp.cam.ac.uk/user/tong/dynamics/dynhtml/S2.html) derives conserved quantities from continuous symmetries of a Lagrangian using its equations of motion. The useful contribution is the extra argument connecting symmetry with time evolution. The simple oscillator calculation above performs that connection directly.
 
-[Hairer, *Geometric Numerical Integration*, lecture 2, §1](https://www.unige.ch/~hairer/poly_geoint/week2.pdf) supplies the symplectic Euler formulas and their Hamiltonian conditions. The direct comparison above shows why a requested invariant must be examined under the actual numerical update. A different model or requested accuracy can favor a different scheme.
+[Hairer, *Geometric Numerical Integration*, lecture 2, §1](https://www.unige.ch/~hairer/poly_geoint/week2.pdf) supplies the symplectic Euler formulas and their Hamiltonian conditions. The direct comparison above shows why a requested invariant must be examined under the numerical update. A different model or requested accuracy can favor a different scheme.
 
-C.29.1 supplies the general result-transfer comparison. The fixed-point and selection constructions here make one specific consequence available without a full group-theory survey. Revisit the use when its structure, output meaning, uniqueness premise or transformation law changes.
+C.29.1 supplies the general result-transfer comparison. The fixed-point and selection constructions here make one specific consequence available. Revisit the use when its structure, output meaning, uniqueness premise or transformation law changes.
 
 ### MATH.13:12 - Relations
 

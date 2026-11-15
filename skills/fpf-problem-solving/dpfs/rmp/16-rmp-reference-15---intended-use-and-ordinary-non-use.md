@@ -1,5 +1,5 @@
 ## RMP.Reference:15 - Intended use and ordinary non-use
 
-Use this repertoire to qualify a research question, answer a current design-allocation question, make the selected inquiry operational, recover actual material, examine its claim, select relevant credibility work, synthesize its corpus, return the exact knowledge revision, or retain or improve a research Method. Enter from the actual missing contribution with compatible supplied inputs.
+Use the method that fits the current question and the inputs available. You can qualify an unresolved research question, assess a design, specify an inquiry, recover actual material, examine a claim or its credibility, synthesize evidence, return a particular revision or assess and improve a research Method. RMP.10 and RMP.11 address questions about the reconstruction and history of Methods.
 
-Do not use it as a generic literature-search guide, research-administration manual, ethics or safety process, ready-to-run domain protocol, statistics handbook, domain measurement guide, publication checklist, evidence hierarchy, funding rule, or authority for the receiving decision. It does not establish that Work occurred or a claim became true.
+For routine literature searches, research administration, ethics or safety decisions, domain protocols, statistical methods, measurement, funding, publication requirements or an authorized operational decision, use the practice responsible for the result you need. Claims about what researchers did and what is true depend on relevant evidence.

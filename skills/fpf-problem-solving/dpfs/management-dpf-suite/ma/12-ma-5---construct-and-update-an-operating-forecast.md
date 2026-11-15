@@ -36,7 +36,7 @@ Actions taken in response to a forecast can change the outcome. Later evaluation
 
 State who will use the forecast, what decision or preparation it could change and when that action must occur. Choose a horizon long enough for the relevant response.
 
-Recover the adequate existing account and forecast. Determine whether the missing answer concerns demand, resource conversion, money, timing or uncertainty. Avoid requesting details that the receiving use would not act on.
+Recover the adequate existing account and forecast. Determine whether the missing answer concerns demand, resource conversion, money, timing or uncertainty. Request further detail only if it could change the decision or preparation the forecast informs.
 
 #### MA.5:4.2 - Construct compatible demand inputs
 
@@ -62,9 +62,9 @@ A resource shortage can require a changed schedule, scope or supply arrangement.
 
 Use a range, scenarios or a supported probabilistic model according to the question and available evidence. Preserve dependencies between uncertain inputs when independently combining favorable values would create an implausible case.
 
-Inspect the conditions that can change feasibility, a payment block or the useful response. A forecast need not specify every contingency to reveal a decisive capacity threshold. If a material input cannot be estimated adequately, state the conditional conclusion or exact unresolved question.
+Inspect the conditions that can change feasibility, a payment block or the useful response. A forecast need not specify every contingency to reveal a decisive capacity threshold. If a material input cannot be estimated adequately, state the conditional conclusion or identify the question the missing input leaves open.
 
-Represent uncertainty in forecast revenue and receipts at the detail needed for their use. Uncertainty does not by itself prohibit forecasting them; it limits the conclusions a particular forecast can support.
+Represent uncertainty in forecast revenue and receipts at the detail needed for their use. State which conclusions the available evidence supports.
 
 #### MA.5:4.5 - Return the forecast and usable response conditions
 
@@ -76,11 +76,11 @@ The forecast does not authorize that response. Use the responsible operating or 
 
 Revise the affected assumptions when new evidence or an actual decision changes them. Preserve the earlier forecast at the level needed to explain the change or learn from it; do not overwrite its premises and then claim it predicted the result.
 
-When comparing with actual outcomes, distinguish changed external conditions, estimation error, bias and actions taken in response. Action taken in response to a forecast can prevent the adverse outcome it describes and explain a numerical difference. This does not by itself prove the forecasting model was accurate. Examine the claim and comparison actually needed.
+When comparing with actual outcomes, distinguish changed external conditions, estimation error, bias and actions taken in response. Action taken in response to a forecast can prevent the adverse outcome it describes and explain a numerical difference. This does not by itself prove the forecasting model was accurate. Choose a comparison that can test the forecast claim under its stated conditions.
 
 Choose refresh timing from the pace of relevant change and the receiving action. A rolling window can help; refreshing unchanged detail on a calendar alone can consume effort without improving the result.
 
-A target gap can initiate design work through MA.10. Preserve the outlook under the existing arrangement while constructing the proposed alternative's outlook from its changed offer, work and provision. The target is not a demand observation. If a design change affects both price and service behavior, revise both dependencies rather than changing only a cost assumption. MA.9 supplies a missing arrangement for people to use and challenge the resulting expectations before commitments are made.
+A target gap can initiate design work through MA.10. Preserve the outlook under the existing arrangement while constructing the proposed alternative's outlook from its changed offer, work and provision. The target is not a demand observation. If a design change affects both price and service behavior, revise both dependencies rather than changing only a cost assumption. MA.9 supplies a missing arrangement for participants to use and challenge the resulting expectations before commitments are made.
 
 ### MA.5:5 - Archetypal Grounding
 
@@ -92,7 +92,7 @@ Assume unchanged demand conditions and no relevant trend or seasonality for this
 
 The account also considers two separate conditions. A channel interruption would remove twenty of the forty residual units, while a proposed campaign could bring twenty additional units beyond the benchmark. Neither changes the sixty booked units under the supplied premises. The interruption branch gives **80**; the campaign branch gives **120**. The campaign effect is additional to the normal residual population. These are alternative planning scenarios, not probabilities or effects to add simultaneously. In practice, obtain the channel and campaign evidence that makes their effects plausible. If the stable-demand premise fails and no replacement estimate is supported, retain conditional scenarios or obtain a better forecast.
 
-A reader who already has adequate 80/100/120 scenarios can enter the following conversion directly.
+A reader who has adequate 80/100/120 scenarios can enter the following conversion directly.
 
 #### MA.5:5.2 - Convert and revise the supplied scenarios
 
@@ -110,7 +110,7 @@ The original workload fits the 38 hours through **112 units**, since (38 − 10)
 
 If new evidence changes the central scenario to 96 units, its resource demand becomes **34 hours**, materials **288** and sales **960**. The existing supply payment remains 120. Updating every amount by four percent would wrongly reduce that unchanged payment.
 
-If the team instead obtains extra capacity in response to the high scenario, the revised forecast includes that decision under its actual terms. Later outcomes are compared with the conditions of each forecast.
+If the team instead obtains extra capacity in response to the high scenario, the revised forecast includes that decision under the terms on which the capacity was obtained. Later outcomes are compared with the conditions of each forecast.
 
 ### MA.5:6 - Bias-Annotation
 
@@ -128,7 +128,7 @@ A constructed scenario demonstrates a conditional consequence. Forecast calibrat
 
 **Adding orders to a total-demand forecast.** Establish which population the forecast already includes before adding a residual.
 
-**Scaling every cost with volume.** Preserve actual supply thresholds and unchanged payments.
+**Scaling every cost with volume.** Preserve the supply thresholds and unchanged payments.
 
 **Treating an adverse forecast as a failed promise.** Recover its conditions and the decision it was intended to inform.
 
@@ -150,14 +150,14 @@ A stable simple forecast can be adequate for a stable use. Scenarios are useful 
 
 The selected line uses Bogsnes's *Implementing Beyond Budgeting*, second edition (2016), printed pp.159–166: forecasts describe expected consequences, should be timely and actionable, and can use scenarios where a point number conceals uncertainty. The current [Beyond Budgeting principles][BB] retain a lean forecasting process distinct from targets and resource allocation.
 
-This changes §§4.1–4.6 by tying horizon and detail to use and preserving responses when learning from outcomes. The pattern qualifies the source's strong external-versus-internal accuracy distinction: intervention changes what comparison is warranted; it does not prohibit evaluating a clearly specified conditional forecast.
+This changes §§4.1–4.6 by tying horizon and detail to use and preserving responses when learning from outcomes. The pattern qualifies the source's strong external-versus-internal accuracy distinction: intervention changes what comparison is warranted; it does not prohibit evaluating a specified conditional forecast.
 
 Hyndman and Athanasopoulos, *Forecasting: Principles and Practice*, third edition, develops the complementary construction: [chapter 6](https://otexts.com/fpp3/judgmental.html) relates judgment to available data and information, [§6.5](https://otexts.com/fpp3/scenarios.html) builds scenarios from drivers and their interactions, and [§5.8](https://otexts.com/fpp3/accuracy.html) separates fitting from accuracy on held-out observations. §§4.2–4.4 apply these distinctions to the accounting population and its resource consequences. The purpose separation in Beyond Budgeting does not itself supply a demand predictor.
 
-The simple residual benchmark makes the input obtainable, while three resource scenarios reveal a supply threshold. Reopen the affected construction when the response horizon, demand basis, dependencies or relevant uncertainty changes; do not require a fitted predictive model for every useful stipulated scenario.
+The simple residual benchmark makes the input obtainable, while three resource scenarios reveal a supply threshold. Reopen the affected construction when the response horizon, demand basis, dependencies or relevant uncertainty changes. A stipulated scenario can support its conditional calculation without a fitted predictive model.
 
 ### MA.5:12 - Relations
 
-MA.1–MA.4 supply resource and account construction. MA.6 separates forecast, target and resource decisions; MA.7 explains differences; MA.8 supplies cohort or product assumptions. OPS and the relevant financial practice use the forecast for their decisions.
+MA.1–MA.4 supply resource and account construction. MA.6 separates forecast, target and resource decisions; MA.7 explains differences; MA.8 supplies cohort or product assumptions. Those responsible for operating and financial decisions can use the forecast in their respective work.
 
 ### MA.5:End

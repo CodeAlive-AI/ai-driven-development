@@ -6,4 +6,4 @@ Recovering one best-fitting unknown can also hide a distinction the observations
 
 Two further failures concern changing a model. Removing variables can leave a missing contribution in the retained evolution; MMP.9 derives that contribution before choosing its replacement. A flexible fitted function can violate a property known about the modeled relation; MMP.11 constructs the variation within that property and exposes any additional restriction.
 
-Their repairs are specific. More numerical accuracy will not recover an excluded candidate object or an omitted relation. A different equation solver can help when the obtaining operation is the actual difficulty. Locate the consequential discrepancy before deciding what to change.
+More numerical accuracy will not recover an excluded candidate object or an omitted relation. A different equation solver can help when the way the equations are solved is the source of the discrepancy. Locate the consequential discrepancy before deciding what to change.

@@ -5,11 +5,11 @@
 
 ### OPS.10:0 - Use This When
 
-Use this Method when demand, a proposed commitment, a queue policy or a resource change requires an answer about what the operation can support. Typical cues are “we have enough hours on average,” “the system is only eighty percent utilized,” “add another person,” or “this buffer should guarantee the deadline.”
+Use this Method when demand, a proposed commitment, a queue policy or a resource change requires an answer about what the operation can support. Average utilization may look acceptable even though a deadline, skill requirement or protected service class cannot be met.
 
-The first useful result is a capacity-and-service comparison for the actual demand, resource arrangement and horizon. It states usable resource time, required load, relevant variation, feasible alternatives, supported service consequences and uncertainty. It returns a bounded option or the exact missing input needed to decide.
+The first useful result is a capacity-and-service comparison for the actual demand, resource arrangement and horizon. It states usable resource time, required load, relevant variation, feasible alternatives, supported service consequences and uncertainty. It can establish a feasible option, a bound that settles the question, or a specific missing input.
 
-Start with a simple load/time bound and add only the analysis that the service question requires. Use OPS.9 when the limiting mechanism is itself unresolved. Use OPS.5 for an individual admission decision under an adequate capacity basis. A clinical staffing rule, engineering capability, labor condition or financial authorization is supplied by its own qualified practice.
+Use an adequate existing result. When calculation is needed, start with a simple load/time bound and add the analysis the service question requires. Use OPS.9 when the limiting mechanism is itself unresolved. Use OPS.5 for an individual admission decision under an adequate capacity basis. A clinical staffing rule, engineering capability, labor condition or financial authorization is supplied by its own qualified practice.
 
 When the needed calculation is missing, OPS.10.1 - Construct and Compare Operating Capacity Models develops finite, mean or probabilistic service consequences from the operating conditions. OPS.10.2 - Construct and Revise a Feasible Deadline Schedule develops resource sequencing, calendar placement and conditional time reserve for a finite delivery. Reuse an adequate calculation without repeating these constructions.
 
@@ -41,7 +41,7 @@ The opposite response applies a sophisticated queueing model to every decision. 
 
 Name the accepted result, population, demand profile, horizon and service criterion. Distinguish a service-visit queue from the operation's final accepted-result population. State whether the question concerns a hard deadline for known jobs, a mean delay, a probability of completion, a protected response class or a bounded overload scenario.
 
-Recover the initial unfinished work and its remaining service requirements. Preserve the customer's waiting origin when local release times differ. If a target is an existing commitment, keep its parties and authority; a calculated service scenario does not create a promise.
+Recover the initial unfinished work and its remaining service requirements. Preserve the customer's waiting origin when local release times differ. If a target is an existing commitment, keep its parties and authority; any change to the promise depends on its terms and the parties authorized to change it.
 
 #### OPS.10:4.2 - Recover usable time and required load
 
@@ -51,7 +51,7 @@ Translate each demand class into resource-time requirements under the supplied M
 
 Use compatible units. Two hours of a specialist and two hours of a general resource are not four hours of interchangeable service. A test attempt and an accepted release are not two interchangeable outputs.
 
-The first calculation is a necessary bound: required load cannot exceed usable time for a resource within the required window. Passing that bound is not enough when precedence, arrival timing, simultaneous resources or non-interchangeable classes can prevent a schedule.
+The first calculation is a necessary bound: for the work to fit, the load it requires from each resource must fit that resource’s usable time in the window. Passing that bound is not enough when precedence, arrival timing, simultaneous resources or non-interchangeable classes can prevent a schedule.
 
 #### OPS.10:4.3 - Choose the smallest adequate service analysis
 
@@ -64,13 +64,13 @@ The first calculation is a necessary bound: required load cannot exceed usable t
 
 For a single continuously available compatible server operating first-come, first-served, a finite calculation can be very small. For each job in arrival order, start is the later of its arrival and the previous finish; finish is start plus service time; wait is start minus arrival. This assumes no other setup, interruption, precedence or resource requirement. Add those conditions to the schedule when they apply.
 
-Do not use a steady-state approximation for a finite overload or changing regime merely because it yields a number. Correlated bursts, feedback, blocking, priorities and skill classes may require a different model. A specialist analysis is a named input with a receiving use, not a substitute for stating the operating question.
+For a finite overload or changing regime, use a model that represents the initial state and the relevant time window. Correlated bursts, feedback, blocking, priorities and skill classes may require a different model. If specialist analysis is needed, supply the operating question and the conditions that analysis must cover.
 
 #### OPS.10:4.4 - Test variability and the proposed change
 
-Compare the current arrangement with the smallest material alternatives: demand/admission changes, timing, usable access, skill coverage, batch/setup changes, pooling or segregation, reserve, recovery and capacity acquisition.
+When deciding whether to change the arrangement, compare the current arrangement with the proposed alternatives where they differ, such as demand/admission changes, timing, usable access, skill coverage, batch/setup changes, pooling or segregation, reserve, recovery and capacity acquisition.
 
-Keep the result and service criterion fixed. Inspect arrival patterns as well as total demand, service and recovery variation as well as average duration, and common-cause losses as well as independent failures. Test the plausible adverse conditions that can reverse the choice.
+Keep the result and service criterion fixed. Inspect arrival patterns as well as total demand, service and recovery variation as well as average duration, and common-cause losses as well as independent failures. Test plausible adverse conditions that could change the choice or the service claim supporting it.
 
 A batching change may reduce setup time while delaying the first result or defect feedback. A pooled resource may improve a mean while changing a tail or protected class. A reserve must name the disturbance and capability it covers. A proposed schedule must not claim improvement by moving waiting outside the measured start boundary.
 
@@ -82,13 +82,13 @@ Name each result as a hard bound, a feasible schedule under stated inputs, a str
 
 For a consistently defined population with stable compatible averages, Little's relation L = λW connects mean in-system count, effective flow rate and mean time. Returns, rework, abandonment and finite-window boundary terms need correct population accounting. The arrival/exit rate of service visits is not necessarily the rate of accepted final results. The relation is useful for consistency; it neither supplies a delay distribution nor makes a protective buffer sufficient.
 
-If the available basis supports only a load bound, return that bound and the exact missing service information. A missing distribution does not prevent a known infeasibility result or a useful conditional stress comparison.
+If the available basis supports only a load bound, return the bound. If the question also requires a service result the bound cannot establish, identify the missing information. A missing distribution does not prevent a known infeasibility result or a useful conditional stress comparison.
 
 #### OPS.10:4.6 - Return the operating decision and refresh basis
 
-Return demand and result units, horizon, usable capacity and load assumptions, the selected analysis, alternative consequences, chosen option or exact blocker, provision/decision authority, residual demand and reopening conditions.
+Return demand and result units, horizon, usable capacity and load assumptions, the selected analysis, the consequences of any alternatives compared and the supported option, bound or unresolved question, provision/decision authority, residual demand and reopening conditions.
 
-OPS.5 can use this basis for admission. OPS.8 can use it for release and protection. OPS.7 can use changed feasibility evidence for an existing commitment. Use OPS.13, or an appropriate method from the responsible service practice, to establish a wider credible service offer; the local capacity result alone does not supply it.
+OPS.5 can use this basis for admission. OPS.8 can use it for release and protection. Use OPS.7 when capacity evidence bears on the feasibility or continued support of an existing commitment. Use OPS.13, or an appropriate method from the responsible service practice, to establish a wider credible service offer; the local capacity result alone does not supply it.
 
 Reopen when mix, arrivals, access, capability, absence, failure/rework, resource coupling or the service criterion changes. Retain observations of actual performance so the next decision can test, rather than silently inherit, the previous model.
 
@@ -108,9 +108,9 @@ For comparison, assume one adverse scenario: one of the planned packages needs a
 | extra access, plan three | 8 | 3 | 2 | 3 | 3 |
 | extra access, plan four | 8 | 4 | 0 | 4 | 3, with unfinished load returned |
 
-If the operating decision requires three completed packages in both stated scenarios, the second option supports that comparison; the first does not. If the decision instead values four nominal completions and can accept the stated adverse shortfall, the third is a different choice. Cost, permission and affected commitments remain explicit rather than being hidden in “maximum utilization.”
+Both eight-hour options deliver at least three accepted packages in either stated scenario. Planning three and reserving two hours completes every admitted package in both. Planning four can deliver four without a repeat and leaves one unfinished if a repeat is needed. The six-hour option can fall to two. Compare the cost of extra access, the displaced commitment and the consequences of admitting work that may return unfinished.
 
-The first useful return can therefore be: obtain the authorized extra access, admit three packages for this plan, reserve two hours for the named repeat scenario, and return the fourth package to OPS.5 and any affected existing commitment to OPS.7. If the extra access is not obtained, use the six-hour result instead.
+If the decision requires every admitted package to finish in either scenario and the resource owner grants the extra access, admit three, reserve two hours for the repeat and return the fourth package to OPS.5. Send any affected existing commitment to OPS.7. If extra access is unavailable, use the six-hour result.
 
 More than one repeat, a longer repeat, changed configuration or another loss reopens the comparison. A passed test package still does not settle the release decision for R42.
 
@@ -125,13 +125,13 @@ One continuously available server processes four one-hour jobs. There is no setu
 
 Both consume four server-hours and finish the last job at hour 4. If the criterion is completion within two hours of arrival, two of four jobs meet it in the burst scenario and all four in the second. The difference follows from the stated arrival scenarios.
 
-This result tells the practitioner why total hours alone cannot settle service. It does not authorize delaying already arrived demand and then starting its clock later.
+Measure arrival-to-completion time from the actual arrival. If a job waits for admission, starting its clock at admission omits that wait.
 
 #### OPS.10:5.3 - Nominal beds and qualified capacity
 
 A hospital's bed count is not the capacity for every care requirement. The receiving question may depend on the supplied clinical class, staffing qualification, equipment, cleaning readiness, access and synchronized availability.
 
-OPS.10 can compare operating arrangements from those qualified inputs and state a resource-time or scenario result. If the clinical eligibility or staffing Method is missing, it returns that exact input. It does not invent a clinical staffing ratio or treat every empty bed as usable service capacity.
+Use the applicable clinical and staffing results to compare arrangements and state the resource-time or scenario result. If a required qualification is missing, identify which service capacity remains unresolved and the evidence or decision needed to establish it.
 
 ### OPS.10:6 - Bias-Annotation
 
@@ -149,7 +149,7 @@ OPS.10 can compare operating arrangements from those qualified inputs and state 
 2. Does usable capacity include the actual capability, access, calendar and joint-resource conditions?
 3. Does required load include relevant setup, recovery and rework without double counting?
 4. Does the chosen analysis fit the finite/steady, deterministic/stochastic and dependence conditions?
-5. Are the service criterion, uncertainty and adverse scenarios explicit in the option comparison?
+5. Are the service criterion, uncertainty and adverse scenarios explicit where they affect the capacity claim or the option comparison?
 6. Does the result distinguish its supported claim from resource provision, authority and a service promise?
 7. Can the receiving admission, queue or commitment decision use the result and identify its reopening condition?
 
@@ -174,15 +174,15 @@ The cost is maintaining resource and workload premises that can change. A modest
 
 ### OPS.10:10 - Rationale
 
-Usable capacity, workload and service are related but different. A load bound answers whether enough required resource time exists. A schedule answers whether that time can be used as needed. A service forecast adds a claim about uncertain outcomes. Keeping these questions separate prevents a cheap answer to one from being mistaken for an answer to all three.
+Usable capacity, workload and service are related but different. A load bound can show that a required resource has too little usable time. If total hours fit, their timing and compatibility may still prevent delivery. A schedule answers whether that time can be used as needed. A service forecast adds a claim about uncertain outcomes. Keeping these questions separate prevents a cheap answer to one from being mistaken for an answer to all three.
 
 ### OPS.10:11 - SoTA-Echoing
 
 | Practice question and selected line | Serious alternative, trade-off and pattern change | Source roles, limits and reopen condition |
 | --- | --- | --- |
-| Can average population and flow data establish timely service? **Adopt** compatible population accounting; **reject** using a mean identity as a tail guarantee. | Mean utilization cannot distinguish the two arrival scenarios in 5.2. A mean-flow identity can recover different mean times from compatible population data, but does not establish their two-hour completion fractions. Sections 4.1, 4.3 and 4.5 retain the service criterion and result kind. | [Little (2011)](https://doi.org/10.1287/opre.1110.0940) supplies the mature mean-relation basis, not a deadline model. The finite example provides the decision-changing contrast at comparable calculation effort. Reopen when the population, boundary, returns or required service claim changes. |
-| What model should handle dependent arrivals and feedback? **Adapt** model selection to the actual temporal and network dependence. | A simple independent-input mean approximation is easier but can omit consequential burst structure. Sections 4.3–4.5 call for a suitable specialist model only when that omission can reverse the decision. | [Whitt and You (2022)](https://doi.org/10.1002/nav.22010) is a bounded model candidate: a single-class open single-server network with Markovian routing, nonrenewal arrivals and feedback, estimating mean steady-state performance through dispersion functions. It does not supply every service tail or transient solution. Reopen for nonmatching routing, classes, regime or service criterion. |
-| Should the response be more capacity, pooling, or a different batch policy? **Adapt** finite comparison of setup, waiting, reliability and service effects. | Capacity additions can be lumpy; smaller batches and pooling can have different protected consequences. Sections 4.2–4.4 and 5.1 retain those costs and scenarios rather than selecting a universal utilization or pooling rule. | Reinertsen (2009), batch-size trade-offs, supplies a mechanism candidate. [Andradóttir et al. (2017)](https://doi.org/10.1016/j.ejor.2016.05.009) and [Cao et al. (2021)](https://doi.org/10.1287/opre.2019.1976) supply conditional pooling counterexamples. Their studied conditions are not transferable staffing or rig prescriptions. Reopen when capability, failures, batching or the service criterion changes. |
+| Can average population and flow data establish timely service? **Adopt** compatible population accounting; **reject** using a mean identity as a tail guarantee. | Mean utilization cannot distinguish the two arrival scenarios in 5.2. A mean-flow identity can recover different mean times from compatible population data, but does not establish their two-hour completion fractions. Sections 4.1, 4.3 and 4.5 retain the service criterion and result kind. | [Little (2011)](https://doi.org/10.1287/opre.1110.0940) relates compatible averages of population, flow and time. Individual deadline performance requires additional timing information. The finite example provides the decision-changing contrast at comparable calculation effort. Reopen when the population, boundary, returns or required service claim changes. |
+| What model should handle dependent arrivals and feedback? **Adapt** model selection to the actual temporal and network dependence. | A simple independent-input mean approximation is easier but can omit consequential burst structure. Sections 4.3–4.5 call for a suitable specialist model when the omitted dependence could affect the choice or the grounds for the requested performance estimate. | [Whitt and You (2022)](https://doi.org/10.1002/nav.22010) is a bounded model candidate: a single-class open single-server network with Markovian routing, nonrenewal arrivals and feedback, estimating mean steady-state performance through dispersion functions. It does not supply every service tail or transient solution. Reopen for nonmatching routing, classes, regime or service criterion. |
+| Should the response be more capacity, pooling, or a different batch policy? **Adapt** finite comparison of setup, waiting, reliability and service effects. | Capacity additions can be lumpy; smaller batches and pooling can have different protected consequences. Sections 4.2–4.4 and 5.1 retain those costs and scenarios when deciding which arrangement supports the required service. | Reinertsen (2009), batch-size trade-offs, supplies a mechanism candidate. [Andradóttir et al. (2017)](https://doi.org/10.1016/j.ejor.2016.05.009) and [Cao et al. (2021)](https://doi.org/10.1287/opre.2019.1976) supply conditional pooling counterexamples. Their studied conditions are not transferable staffing or rig prescriptions. Reopen when capability, failures, batching or the service criterion changes. |
 
 ### OPS.10:12 - Relations
 

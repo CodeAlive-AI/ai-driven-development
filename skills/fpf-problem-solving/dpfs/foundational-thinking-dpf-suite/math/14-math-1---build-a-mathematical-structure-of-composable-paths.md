@@ -18,7 +18,7 @@ You need elementary sets, ordered lists and equality. If an existing structure a
 
 A list of elementary steps leaves the composite objects and their operations undecided. Joining names that merely look compatible can produce a combination that the generating rules do not permit. Collapsing two paths to the same endpoint can also erase their different steps, costs or available continuations.
 
-The mathematical task is to construct the combinations, define when composition is possible, and establish the laws that follow. The result should let another person or computational agent reproduce a path and reason about a longer combination from its parts.
+The mathematical task is to construct the combinations, define when composition is possible, and establish the laws that follow. The result should let the recipient reproduce a path and reason about a longer combination from its parts.
 
 ### MATH.1:3 - Forces
 
@@ -37,7 +37,7 @@ The mathematical task is to construct the combinations, define when composition 
 
 Write the objects at which the elementary steps start and end. For each generator `a`, give a source `s(a)` and a target `t(a)`. Several generators may have the same source and target.
 
-Include conditions that determine the availability of the selected continuations. A location may be enough for one problem; another may require a pair such as `(location, permission)`. Use a failed attempted continuation to find the needed distinction. There is no requirement to anticipate every possible future operation.
+Include conditions that determine the availability of the selected continuations. A location may be enough for one problem; another may require a pair such as `(location, permission)`. Use a failed attempted continuation to find the needed distinction.
 
 The generating arrows and endpoints form a directed graph in the mathematical sense. A drawing can display it, but the vertices, arrows and endpoint functions define the structure. A physical network or an organization's work may be interpreted through this graph; that application supplies its own claims about what the arrows can represent.
 
@@ -55,7 +55,7 @@ Construct only the paths needed for the immediate question, or describe a family
 
 For paths `p:x→y` and `q:y→z`, write `p;q` for the path obtained by putting the list of `q` after the list of `p`. Here the semicolon is read in execution order: first `p`, then `q`.
 
-Composition is defined when the full intermediate object agrees. Its source is `x` and its target is `z`. If the endpoints disagree, repair the proposed sequence, supply a connecting arrow that is actually permitted, or return the failed connection.
+Composition is defined when the full intermediate object agrees. Its source is `x` and its target is `z`. If the endpoints disagree, repair the proposed sequence, supply a connecting arrow that the rules permit, or return the failed connection.
 
 Concatenation gives two laws:
 
@@ -70,7 +70,7 @@ Return the path that answers the immediate composition question, or the formatio
 
 If each generator has a supplied additive cost, obtain a path's cost by adding the costs of its generators; the empty path has cost zero. Keep the path as well when the receiver needs to execute it or inspect why it is available. Two paths with the same cost can contain different generators.
 
-If a representation hides an intermediate object, test the attempted composition that made the distinction matter. Refine the objects or retain the paths until the subsequent operation is well defined. MATH.2 constructs an identification that preserves selected operations; it can later reduce the structure deliberately.
+If a representation hides an intermediate object, test the attempted composition that made the distinction matter. Refine the objects or retain the paths until the subsequent operation is well defined. MATH.2 constructs an identification that preserves selected operations; it can reduce the structure when those distinctions are no longer needed.
 
 An interpretation can associate generators with transformations in another setting. The mathematical path then specifies their composition. Whether those transformations are available and adequate in that setting is the application's question, using such common methods as FPF C.29 and B.5.MPC.
 
@@ -108,7 +108,7 @@ Adding a second loop `b` changes the situation. The paths `a;b` and `b;a` both h
 
 On integers let `f(x)=x+1` and `g(x)=2*x`. Both generators start and end in the integer type, so both orders are composable. Starting from 0, `f;g` returns 2, while `g;f` returns 1.
 
-The associativity argument allows regrouping a longer list. It does not authorize exchanging `f` and `g`. The differing results make that boundary consequential.
+The associativity argument allows regrouping a longer list. It does not authorize exchanging `f` and `g`.
 
 #### MATH.1:5.4 - Keep the intermediate states of interacting updates
 
@@ -122,7 +122,7 @@ Treating each update as one indivisible arrow would lose the second path. If the
 
 A familiar drawing can make location seem like the whole state. The permission case exposes the omitted condition through a failed continuation, then repairs the mathematical object.
 
-The construction also favors retaining history. This is useful while the role of the generators is unsettled, but it can be unnecessarily expensive when only a value or an equivalence class is needed. Use the subsequent quotient or evaluation deliberately, stating the operation or question it preserves.
+The construction also favors retaining history. This is useful while the role of the generators is unsettled, but it can be unnecessarily expensive when only a value or an equivalence class is needed. When using a quotient or evaluation, state the operation or question it preserves.
 
 ### MATH.1:7 - Conformance Checklist
 
@@ -158,7 +158,7 @@ The empty path and endpoint conditions make composition uniform. An already comp
 
 A concrete transformation structure can be more economical when only its resulting transformations matter. Paths earn their additional detail when the sequence, its formation conditions or its later reinterpretation affects the answer. The examples expose both uses: with one object and one generating loop, length determines the path; adding a second loop permits paths of equal length with different orders.
 
-This method constructs a particular mathematical structure. FPF B.5.RC helps recover a construction already described, and C.29 helps relate a mathematical structure to another subject. Their results can be used before or after this construction.
+This method constructs paths from elementary connections. FPF B.5.RC helps recover a construction already described, and C.29 helps relate a mathematical structure to another subject. Their results can be used before or after this construction.
 
 ### MATH.1:11 - SoTA-Echoing
 

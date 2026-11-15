@@ -10,13 +10,13 @@
 
 **Use this when** two or more governed sources contain concepts, types, relations, fields, codes, model elements, or claims that appear to match and a receiving use needs their relation made explicit. Typical triggers are a shared label, a crosswalk, an automated matcher result, a spreadsheet of “equivalences”, or a model-to-model mapping whose semantic premise has never been judged.
 
-The primary EntityOfConcern is one use-qualified cross-source correspondence row. The first move is to recover both endpoint senses and ask which direct relation, difference, or incompatibility is actually supported. The first result is a set that preserves accepted, rejected, unresolved, and incompatible rows rather than forcing every candidate into an equivalence.
+For one cross-source correspondence row and its named use, recover both endpoint senses and ask which direct relation, difference, or incompatibility is supported. The first result is a set that preserves accepted, rejected, unresolved, and incompatible rows rather than forcing every candidate into an equivalence.
 
 The payoff is a defensible semantic premise for identity work, claim composition, executable mappings, and validation. Do not use SIE.4 to construct a missing semantic model, decide cross-source identity, define transformation code, or choose the authoritative value. A local relation inside one governed source remains with its source owner unless the cross-source use makes it an integration premise.
 
 ### SIE.4:2 - Problem
 
-Correspondence candidates are cheap. Labels can be normalized, lexical similarity scored, hierarchies compared, and model structures aligned. Yet “similar”, “related”, “narrower”, “same field name”, and “safe to substitute here” answer different questions. A row can be a true relation and still lose distinctions that the receiving use requires.
+Correspondence candidates are cheap. Labels can be normalized, lexical similarity scored, hierarchies compared, and model structures aligned. Yet “similar”, “related”, “narrower”, “same field name”, and “safe to substitute here” answer different questions. A row can state a relation correctly even when using it would lose a distinction the receiver needs.
 
 When candidate generation and qualification collapse, downstream mapping code inherits an unstated ontology and loss policy. Counterexamples are discarded as data-quality defects, source versions disappear, and a reviewer cannot tell whether the relation itself or only its use is unsupported.
 
@@ -26,7 +26,7 @@ When candidate generation and qualification collapse, downstream mapping code in
 | --- | --- |
 | Automation | Matchers can surface many candidates, while their scores do not establish relation truth or permitted use. |
 | Reuse | A general crosswalk is attractive, while relation adequacy can change with receiver, grain, interval, and accepted loss. |
-| Precision | Exact relation kinds prevent overclaim, while sources may not support a complete formal characterization. |
+| Precision | Naming the relation the evidence supports avoids claiming more, even when the sources do not fully characterize it. |
 | Coverage | Pressure favors filling every row, while unresolved and incompatible rows can be the most decision-useful result. |
 | Direction | Transformation needs an orientation, while many conceptual relations are not symmetric or safely reversible. |
 | Versioning | Stable mapping identifiers aid reuse, while endpoint meaning can change across source editions and profiles. |
@@ -40,7 +40,7 @@ Separate candidate discovery, direct relation judgment, and bounded-use qualific
 1. **Take the question from the contract.** State the receiving answer and why this endpoint relation can change it.
 2. **Bind exact endpoints.** Reference the `SIE.2` source rows, schemes, definitions, editions, profiles, effectivity, units, codes, and local extensions. Do not map labels without their senses.
 3. **Generate candidates without promotion.** Lexical, structural, instance, expert, historical, or matcher evidence may nominate a row. Record the candidate source and score where useful, but do not treat nomination as acceptance.
-4. **State the direct relation or difference.** Use the narrowest warranted relation vocabulary. State direction and whether the inverse, symmetry, or transitivity is actually supported. If no positive relation is established, choose rejected, unresolved, or incompatible with reason.
+4. **State the direct relation or difference.** Use the narrowest warranted relation vocabulary. State direction and whether the inverse, symmetry, or transitivity is supported. If no positive relation is established, choose rejected, unresolved, or incompatible with reason.
 5. **Test examples and counterexamples.** Include instances or cases that should satisfy the relation and cases that distinguish endpoints, including version, unit, code, granularity, lifecycle, and authority differences.
 6. **Qualify the receiving use.** State which substitution, comparison, join, navigation, or transformation the row permits, what semantic loss it introduces, and which uses remain forbidden.
 7. **Preserve evidence and authority.** Record justification, evidence source, reviewer or domain authority where required, uncertainty or confidence, and the owner of any unresolved domain judgment.
@@ -123,7 +123,7 @@ A direct relation and permission to use that relation answer different questions
 
 ### SIE.4:11 - SoTA-Echoing
 
-The best-known line combines explicit relation vocabularies, mapping metadata, alignment evaluation, and direct Bridge truth. The serious default is a two-column crosswalk plus confidence score. Its defect is that it hides endpoint senses, relation algebra, bounded-use loss, and counterexamples. SIE.4 adapts current mapping practice into a set whose negative dispositions and use qualification are first-class.
+The best-known line combines explicit relation vocabularies, mapping metadata, alignment evaluation, and direct Bridge truth. The serious default is a two-column crosswalk plus confidence score. Its defect is that it hides endpoint senses, relation algebra, bounded-use loss, and counterexamples. SIE.4 adapts current mapping practice into a set that records negative dispositions and qualifies each relation for its receiving use.
 
 | Source line | Adopt, adapt, or reject | Role and limit |
 | --- | --- | --- |

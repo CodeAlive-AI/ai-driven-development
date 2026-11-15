@@ -17,7 +17,7 @@ The check must be able to reveal the defect that would invalidate the receiving 
 
 ### MNT.10:3 - Forces
 
-Representative testing improves evidence but can consume the outage and create its own controlled exposure. A short test can support an immediate operating claim while leaving long-horizon reliability unresolved. Stronger assurance may require a specialist or independent return; its value and requirements depend on the actual consequence, not the number of signatures collected.
+Representative testing improves evidence but can consume the outage and create its own controlled exposure. A short test can support an immediate operating claim while leaving long-horizon reliability unresolved. Stronger assurance may require a specialist or independent return; judge its value and requirements by the consequences of a mistaken functioning claim. Additional signatures support assurance only through the checks they represent.
 
 ### MNT.10:4 - Solution
 
@@ -31,7 +31,7 @@ Plan the check's controlled state transitions with [MNT.8](19-mnt-8---isolate-ma
 
 Compare observed outcomes with the stated basis. Retain the actual subject, load, duration and material limitations. A passing result supports the named claim only at that scope. A failed result returns to the affected diagnosis, intervention or engineering question; unrelated passing tests do not cancel it.
 
-Return qualified functioning evidence. A restricted-use claim may be supportable when unrestricted use is not, provided the relevant acceptance and authority conditions allow that distinction. Certification or an independent check is obtained where the concrete use requires it. Do not impose one on every functioning question, or omit an operative one merely because a task looks routine.
+Return qualified functioning evidence. A restricted-use claim may be supportable when unrestricted use is not, provided the relevant acceptance and authority conditions allow that distinction. Obtain certification or an independent check when the receiving use requires it, including for routine tasks subject to that requirement.
 
 Stop when the receiving functioning question is adequately answered. A recurrence or life-extension claim may remain unresolved without defeating the narrower current-use result. Select further evidence only when its obtainable contribution or operative requirement justifies it.
 
@@ -45,7 +45,7 @@ Under those supplied conditions, the constructed observation is 20.8 litres per 
 
 Those observations support the stated immediate duty in the tested envelope. They do not establish performance at an untested winter peak, an as-new lifetime or elimination of the long-horizon recurrence mechanism. The operator receives that scope explicitly.
 
-If the loaded test instead reaches only 18 litres per second, the performed bearing replacement can still be correctly recorded while the required functioning claim fails. The team returns to diagnosis or the relevant engineering question. A test record with a completed checkbox cannot convert that result into restored service.
+If the loaded test instead reaches only 18 litres per second, the performed bearing replacement can still be correctly recorded while the required functioning claim fails. The team returns to diagnosis or the relevant engineering question. The 18-litre-per-second result remains below the required 20 even if the test is marked complete.
 
 ### MNT.10:6 - Bias-Annotation
 
@@ -59,9 +59,9 @@ A supported current-use answer closes this question. It does not claim long-term
 
 ### MNT.10:8 - Common Anti-Patterns and How to Avoid Them
 
-“Part replaced” is used as evidence of service. Test the functioning the recipient actually needs. “It ran unloaded” becomes permission for full-duty operation. Qualify the operating envelope or obtain the evidence that changes that use.
+“Part replaced” is used as evidence of service. Test the functioning the recipient needs. “It ran unloaded” becomes permission for full-duty operation. Qualify the operating envelope or obtain the evidence that changes that use.
 
-Every historical test is repeated after a small change. Reopen the claims actually affected, while preserving any concrete requirement for the current verification.
+Every historical test is repeated after a small change. Reopen the affected claims, while preserving any concrete requirement for the current verification.
 
 ### MNT.10:9 - Consequences
 
@@ -71,11 +71,11 @@ The operator receives an applicable functioning result and can distinguish it fr
 
 The Method is separate from both intervention and release because their outcomes can differ. A task can be performed correctly without restoring the required contribution, and functioning can be established while control or permission remains unresolved.
 
-Claim-specific checking permits adequate prior evidence to remain useful. It also makes a genuine configuration or load change visible as a reason to reopen the affected conclusion.
+Claim-specific checking permits adequate prior evidence to remain useful. It also makes a configuration or load change visible as a reason to reopen the affected conclusion.
 
 ### MNT.10:11 - SoTA-Echoing
 
-The practice question is what evidence warrants a restored-functioning claim after maintenance. This pattern adapts [FPF B.3](../../../sections/08-part-b---trans-disciplinary-reasoning-cluster/17-b-3---is-this-claim-supported-for-this-use-trust-and-assuran.md)'s use-specific assurance and [FPF C.16](../../../sections/09-part-c---kernel-extension-specifications/27-c-16---measurement-metrics-characterization.md)'s measurement discipline to intervention-induced failure and operating-envelope checks. Against task-sign-off or indiscriminate retesting, the Method selects checks for the functioning claims and reuses adequate evidence for unaffected claims. The PS17 comparison under load illustrates this reasoning. The trade-off is retaining an explicitly limited immediate-use result instead of claiming lifetime restoration. Equipment procedures supply the concrete acceptance criteria; this synthesis does not establish universal test values. Reopen when configuration, required duty, consequence or the earlier evidence's applicability changes.
+The practice question is what evidence warrants a restored-functioning claim after maintenance. This pattern adapts [FPF B.3](../../../sections/08-part-b---trans-disciplinary-reasoning-cluster/17-b-3---is-this-claim-supported-for-this-use-trust-and-assuran.md)'s use-specific assurance and [FPF C.16](../../../sections/09-part-c---kernel-extension-specifications/27-c-16---measurement-metrics-characterization.md)'s measurement discipline to intervention-induced failure and operating-envelope checks. Against task-sign-off or indiscriminate retesting, the Method selects checks for the functioning claims and reuses adequate evidence for unaffected claims. The PS17 comparison under load illustrates this reasoning. State the immediate use the result supports and keep any lifetime claim open until it has evidence. The applicable equipment procedures supply the acceptance criteria. Reopen when configuration, required duty, consequence or the earlier evidence's applicability changes.
 
 ### MNT.10:12 - Relations
 

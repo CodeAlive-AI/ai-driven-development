@@ -1,3 +1,3 @@
 # Applications
 
-These constructed applications show how the language can produce different useful results. The observations and outcomes are stipulated to make the choices inspectable. They do not report field tests or estimate an intervention's effect. Each application can be entered through the direct patterns it names.
+Each application shows how the named patterns work together for a particular purpose. The examples stipulate the observations and outcomes. For a claim about work in the field, use evidence of what happened there. To attribute an effect to an intervention, establish what the intervention contributed to the outcome. Follow the pattern links for the methods used.

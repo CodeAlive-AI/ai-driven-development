@@ -12,7 +12,7 @@ Start with one physical response or relation needed by the work. Describe its pa
 
 The method uses transformations justified for the physical situation: changes of position, orientation, scale, preparation, participant assignment or other relevant conditions. It combines their consequences with applicable dimensions, balances and dissipation. The question selects which of these contributions is useful.
 
-You need enough physical understanding to propose the comparison and explain its conditions. Obtain an unfamiliar physical premise from a suitable account or collaborator. A qualitative comparison can already change the next move. The vector example additionally uses rotations and dot products; the chamber example uses elementary algebra and particle balance. Their branch-specific preparation belongs to those examples.
+You need enough physical understanding to propose the comparison and explain its conditions. Obtain an unfamiliar physical premise from a suitable account or collaborator. A qualitative comparison can change the next move. The vector example additionally uses rotations and dot products; the chamber example uses elementary algebra and particle balance.
 
 If an established interaction law already answers the question under the intended conditions, apply it. PHY.1 develops physical similarity across changed conditions, PHY.2 constructs a physical analogue, and PHY.3 derives a performance limit from permitted transformations. Return here when the unresolved contribution is the form of the interaction law itself.
 
@@ -56,7 +56,7 @@ Separate two comparisons:
 
 For an isotropic material, all spatial directions are physically equivalent under the stated conditions. An oriented material can also be described in rotated coordinates; its material direction must then rotate in the description. These are different premises for restricting a response.
 
-Select the actual transformation class. A justified rotation condition supplies rotation consequences. Reflection, time reversal, scaling or exchange requires its own physical grounds when used. PHY.1 supplies the detailed work for a scaling comparison.
+Select the transformations for which the physical conditions hold. A justified rotation condition supplies rotation consequences. Reflection, time reversal, scaling or exchange requires its own physical grounds when used. PHY.1 supplies the detailed work for a scaling comparison.
 
 A thought comparison can be enough. When a physical premise is unsettled, identify a rival case that could make the responses differ. C.11.DUA helps decide whether resolving that difference is worth the work needed now.
 
@@ -98,7 +98,7 @@ When a changed situation gives a response outside the family, inspect the physic
 
 ### PHY.4:5 - Archetypal Grounding
 
-These are constructed physical accounts. They illustrate how physical premises constrain an unknown law and how a changed premise changes the result.
+These constructed accounts illustrate how physical premises constrain an unknown law and how a changed premise changes the result.
 
 #### PHY.4:5.1 - Restrict an unknown resistive force
 
@@ -114,7 +114,7 @@ At w=0, rotational symmetry gives `F(0)=0`. The coefficient a is an unknown scal
 
 so `a(s)>=0` for s>0.
 
-The result determines a direction and sign while leaving the speed dependence unresolved. Both `a(s)=a0` and `a(s)=b0*sqrt(s)` with suitable nonnegative dimensional constants satisfy these restrictions. They predict different force magnitudes when speed changes. The comparison alone therefore provides neither a linear nor a quadratic drag law.
+The result determines a direction and sign while leaving the speed dependence unresolved. Both `a(s)=a0` and `a(s)=b0*sqrt(s)` with suitable nonnegative dimensional constants satisfy these restrictions. They predict different force magnitudes when speed changes.
 
 For a direction-only question, use the result directly. To predict stopping time, supply further information about a over the speeds involved, or obtain a sufficient bound over the admissible family. MMP.11 keeps that unresolved relation visible instead of inserting a familiar drag coefficient.
 
@@ -130,7 +130,7 @@ For example, one admissible linear resistive family is:
 
 `F(w,n)=-alpha*w-beta*(n dot w)*n`.
 
-For unit n, its power is `-alpha*|w|^2-beta*(n dot w)^2`. Resolving w into parts parallel and perpendicular to n shows passivity for every w when `alpha>=0` and `alpha+beta>=0`. This is a possible family, not an exhaustive determination of the changed law.
+For unit n, its power is `-alpha*|w|^2-beta*(n dot w)^2`. Resolving w into parts parallel and perpendicular to n shows passivity for every w when `alpha>=0` and `alpha+beta>=0`.
 
 With consistent units, take alpha=1, beta=3, `w=(1,1,0)` and `n=(1,0,0)`. The force is `(-4,-1,0)` and power is -5. The force resists motion while pointing in a direction different from -w. This possibility is excluded by the earlier isotropic account and allowed by the additional physical input.
 
@@ -150,7 +150,7 @@ Both `J(a,b)=k1*(a-b)` and `J(a,b)=k3*(a-b)^3` satisfy the interchange condition
 
 If the passage stores no particles, the chamber particle numbers satisfy `dN1/dt=-J` and `dN2/dt=J`, preserving their sum. If appreciable particles accumulate in the passage, include its particle number and separate inlet and outlet rates. The earlier two-chamber balance then omits a relevant participant.
 
-This comparison uses exchange and balance rather than rotation. It opens the same kind of result: an admissible law family and the physical condition that would require revising it.
+Exchange and particle balance, like rotation in the preceding cases, identify a family of admissible laws and the physical conditions under which it must be revised.
 
 ### PHY.4:6 - Bias-Annotation
 
@@ -167,7 +167,7 @@ For the restriction being used:
 - The mathematical input and output transformations follow that physical account.
 - Each dimensional, balance or dissipation constraint has applicable physical premises.
 - The derived consequence distinguishes what is constrained from what remains unknown.
-- The result changes a construction, interpretation, prediction or next inquiry.
+- The result informs a construction, interpretation, prediction or next inquiry.
 - A changed physical condition returns to the affected premise and constraint.
 
 ### PHY.4:8 - Common Anti-Patterns and How to Avoid Them
@@ -196,7 +196,7 @@ Similarity, analogy and performance bounds remain separately usable methods. The
 
 ### PHY.4:11 - SoTA-Echoing
 
-Feynman's [discussion of symmetry in physical laws](https://www.feynmanlectures.caltech.edu/I_52.html), especially §52-2, is a historical methodological anchor for transforming an experiment together with its relevant surroundings. The adopted contribution is the physical construction of the comparison. The particular transformation and its regime are selected from the physical account being used.
+Feynman's [discussion of symmetry in physical laws](https://www.feynmanlectures.caltech.edu/I_52.html), especially §52-2, is a historical methodological anchor for transforming an experiment together with its relevant surroundings. The adopted contribution is the physical construction of the comparison. The transformation and its regime are selected from the physical account being used.
 
 Villar and colleagues' [Scalars are universal](https://arxiv.org/html/2106.06610v4), Proposition 4 and Appendix H, provides a contemporary constructive connection between specified symmetry actions, scalar invariants and equivariant response families. Its distinctions between rotation and reflection groups and between different input quantities matter when selecting a model. The paper's mathematical representation results are used under their hypotheses; the present physical method establishes which input and transformation account is appropriate.
 

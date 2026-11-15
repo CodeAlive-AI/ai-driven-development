@@ -31,12 +31,12 @@ Methods for designing, using and changing access to documentary knowledge.
 | 1 | [KCAE.USE - Choose an Access Arrangement for the Work](14-kcae-use---choose-an-access-arrangement-for-the-work.md) | Stable | workload, authority, source boundary, build or reuse; “What must this access system make possible?” | Uses F.1 and C.11.DUA; supplies all design choices. |
 | 2 | [KCAE.SOURCE - Prepare Addressable Sources without Losing Their Context](15-kcae-source---prepare-addressable-sources-without-losing-the.md) | Stable | extraction, OCR, table, section, edition, translation; “What does this searchable text leave out?” | Receives the source and use boundary from KCAE.USE; uses A.6.3.RT and NOT.5 where their transformation questions apply. |
 | 3 | [KCAE.INDEX - Build Complementary Ways to Find Unknown Material](16-kcae-index---build-complementary-ways-to-find-unknown-materi.md) | Stable | hybrid retrieval, embeddings, BM25, graph, fusion, persistent search; “How do I find a useful passage when I cannot name it?” | Uses KCAE.SOURCE addresses; evaluated by KCAE.EVAL; maintained by KCAE.CHANGE. |
-| 4 | [KCAE.SEARCH - Continue a Search as the Question Develops](17-kcae-search---continue-a-search-as-the-question-develops.md) | Stable | query planning, corpus synthesis, direct scan, blind spot, stopping, coverage; “What should the next search obtain?” | Uses the routes actually available, including KCAE.INDEX; returns candidates to KCAE.ASSESS. |
+| 4 | [KCAE.SEARCH - Continue a Search as the Question Develops](17-kcae-search---continue-a-search-as-the-question-develops.md) | Stable | query planning, corpus synthesis, direct scan, blind spot, stopping, coverage; “What should the next search obtain?” | Uses the available routes, including KCAE.INDEX; returns candidates to KCAE.ASSESS. |
 | 5 | [KCAE.ASSESS - Determine What a Candidate Can Support](18-kcae-assess---determine-what-a-candidate-can-support.md) | Stable | criterion, unknown, contradiction, reranking, typed decision; “Is this useful evidence or merely similar text?” | Receives source context; supplies KCAE.COMPOSE and KCAE.DELIVER. |
 | 6 | [KCAE.COMPOSE - Connect Contributions to a Feasible Whole Result](19-kcae-compose---connect-contributions-to-a-feasible-whole-res.md) | Stable | missing result, method set, shared resource, alternatives; “What else is needed, and can these contributions work together?” | Uses C.39, KCAE.ASSESS and relevant subject methods; returns missing inputs to KCAE.SEARCH. |
-| 7 | [KCAE.DELIVER - Put Sufficient Source Material within the Reader's Reach](20-kcae-deliver---put-sufficient-source-material-within-the-rea.md) | Stable | context budget, packet, full reading, pagination, history; “What must the recipient actually receive?” | Uses C.2.8; receives KCAE.SOURCE, KCAE.ASSESS and, where needed, KCAE.COMPOSE results. |
+| 7 | [KCAE.DELIVER - Put Sufficient Source Material within the Reader's Reach](20-kcae-deliver---put-sufficient-source-material-within-the-rea.md) | Stable | context budget, packet, full reading, pagination, history; “What must the recipient receive?” | Uses C.2.8; receives KCAE.SOURCE, KCAE.ASSESS and, where needed, KCAE.COMPOSE results. |
 | 8 | [KCAE.CHANGE - Keep Source Reading and Derived Views Coherent through Change](21-kcae-change---keep-source-reading-and-derived-views-coherent.md) | Stable | incremental index, snapshot, deletion, generation, recovery; “What remains usable after this update?” | Preserves KCAE.SOURCE and KCAE.INDEX contracts; reopens dependent judgements. |
-| 9 | [KCAE.ENCOUNTER - Arrange a Useful Encounter with Knowledge during Work](22-kcae-encounter---arrange-a-useful-encounter-with-knowledge-d.md) | Stable | event, observer, quiet mode, notification, permission; “Why would the user begin this inquiry now?” | Applies A.15.11 and B.5.PI through an actual event source; uses KCAE.SEARCH and KCAE.ASSESS. |
+| 9 | [KCAE.ENCOUNTER - Arrange a Useful Encounter with Knowledge during Work](22-kcae-encounter---arrange-a-useful-encounter-with-knowledge-d.md) | Stable | event, observer, quiet mode, notification, permission; “Why would the user begin this inquiry now?” | Applies A.15.11 and B.5.PI through an available event source in the work or runtime; uses KCAE.SEARCH and KCAE.ASSESS. |
 | 10 | [KCAE.MEMORY - Reuse Connections while Keeping Open Questions Revisable](23-kcae-memory---reuse-connections-while-keeping-open-questions.md) | Stable | unresolved cue, episode, conditional memory, recognition question; “What should survive without fixing the next interpretation?” | Uses KCAE.ASSESS, KCAE.COMPOSE and KCAE.CHANGE; can supply KCAE.ENCOUNTER. |
 | 11 | [KCAE.EVAL - Compare Access Arrangements by Useful Results and Full Cost](24-kcae-eval---compare-access-arrangements-by-useful-results-an.md) | Stable | held-out episode, ablation, no useful answer, update trial; “Which change earns adoption?” | Consumes the use from KCAE.USE and the complete arrangement; uses C.11.DUA. |
 
@@ -52,32 +52,32 @@ Methods for designing, using and changing access to documentary knowledge.
 
 ## Practical entries
 
-These are selected examples of entry. Bring the actual question. Use the index, a direct pattern or search across the publication when neither example fits. You can ask an assisting agent: “Explain this and comment in ordinary language, without framework jargon.”
+Start from the question you need to answer. Use the index, a direct pattern or search across the publication when neither example fits. You can ask an assisting agent: “Explain this and comment in ordinary language, without framework jargon.”
 
 ### changed-reading - A search opens the wrong edition
 
 - **Situation:** A result names a useful clause, but the opened text is newer, missing or at another location.
 - **Question:** Can this result still support the work?
 - **First useful result or blocker:** A coherent source reading, or a precise unavailable-edition result that prevents the unsupported use.
-- **Start with:** KCAE.CHANGE:4.3, then KCAE.SOURCE when the address itself is ambiguous.
+- **Start with:** KCAE.CHANGE:4.3, then KCAE.SOURCE when the address is ambiguous.
 - **Stop or return:** Stop when the necessary reading is coherent; reopen its assessment if the governing content or receiving situation changed.
 
 ### Practical-Use Cards
 
-These examples retain longer connections across methods. They do not prescribe a workflow for every query.
+These examples follow a question through several methods.
 
 #### unknown-contribution - Build access for questions that do not name their sources
 
 - **Situation:** A large changing corpus contains useful knowledge, but readers describe work in another vocabulary and cannot identify the right passage.
 - **Question:** How can the system obtain a useful contribution at a sustainable cost?
-- **First useful result or blocker:** A testable access design with source returns, complementary finding routes, adequate reading and honest limits.
+- **First useful result or blocker:** A testable access design with source returns, complementary finding routes, enough context to read the sources, and stated limits on finding, understanding and using their contributions.
 - **Mantra:** Start from the work; preserve sources; widen finding; check the contribution; deliver enough; revisit what changed.
 - **Start with:** KCAE.USE, KCAE.SOURCE and KCAE.INDEX; follow the connected construction in KCAE.Reference:4.
 - **Stop or return:** Keep a sufficient existing arrangement. Reopen a route, judgement or delivery when its premise fails.
 
 ## Who this framework serves
 
-This framework serves information and software engineers who construct or maintain access to technical publications, support libraries, research collections, organizational documentation or comparable documentary corpora. It also serves analysts who must explain an access failure or compare an arrangement supplied by others. Readers are expected to understand ordinary software interfaces, identifiers, data structures, testing and basic descriptive statistics. A named domain specialist or source owner supplies authority rules and interpretations that require that profession; the engineer obtains and carries those results rather than silently inventing them.
+This framework serves information and software engineers who construct or maintain access to technical publications, support libraries, research collections, organizational documentation or comparable documentary corpora. It also serves analysts who must explain an access failure or compare an arrangement supplied by others. Readers are expected to understand ordinary software interfaces, identifiers, data structures, testing and basic descriptive statistics. Use the applicable authority rules and any adequate professional interpretation in the access design. If a consequential interpretation or decision is missing, obtain it from the qualified specialist or authority holder, or identify the use that remains conditional.
 
 You can use a direct pattern without learning the whole framework. Someone who already has a sufficient source can read and apply it immediately. Engineering the access arrangement becomes useful when repeated or difficult use requires better finding, interpretation support, delivery, maintenance or encounter. The aim is to make those operations constructible and revisable, including when an adequate result is a missing fact or an unavailable source.
 

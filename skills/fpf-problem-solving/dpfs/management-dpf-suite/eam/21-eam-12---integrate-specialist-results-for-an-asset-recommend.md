@@ -7,7 +7,7 @@
 
 Use this pattern when an asset recommendation or decision must combine specialist answers. Finance reports affordability, maintenance recommends an intervention and operation offers an outage, but somebody must determine whether those answers concern the same option and whether the decision lies within their authority.
 
-Begin with the result requested: advice, an asset choice or authorization. Give the recipient a supported answer at that scope. Delivering adequate advice can complete the request for advice before an authorizing decision exists.
+Begin with the result requested: advice, an asset choice or authorization. Give the recipient a supported answer at that scope. A request for advice can be answered before anyone has authorized action.
 
 ### EAM.12:2 - Problem
 
@@ -23,17 +23,17 @@ Integration must preserve specialist limits while giving the decision maker a us
 
 Name the decision and recipient. Establish whether the practitioner is asked to recommend an option, select it within delegated scope or authorize a specified action. Recover the actual basis and limits of the relevant authority when the requested conclusion relies on it.
 
-For each specialist result used, match the asset, configuration, receiving service, horizon and proposed intervention. Extract the part that changes this decision: a condition account, qualified capacity, intervention scope, cost estimate, funding allocation or outage arrangement. The existence of a supplying framework description is not an obtained case result.
+For each specialist result used, match the asset, configuration, receiving service, horizon and proposed intervention. Extract the part that changes this decision: a condition account, qualified capacity, intervention scope, cost estimate, funding allocation or outage arrangement. Use the specialist’s result for this case when applying the framework guidance.
 
 Resolve conflicting assumptions before combining conclusions. If engineering supports one duty and the operating proposal requires another, obtain an applicable result or keep that option conditional. If two estimates include the same expense, count it once. Preserve material uncertainty and missing results in the recommendation.
 
-Distinguish advice from the conditions it uses. A finance practitioner can estimate cost and assess affordability against a funding allocation; the allocation sets the spending limit. A service mandate states the required delivery; engineering evidence supports what an arrangement can actually deliver. Identify the particular authority whose decision would change an allocation or mandate. Their amendment does not establish physical capability.
+Distinguish advice from the conditions it uses. A finance practitioner can estimate cost and assess affordability against a funding allocation; the allocation sets the spending limit. A service mandate states the required delivery; engineering evidence supports what an arrangement can deliver. Identify who has the authority to change the allocation or mandate. A revised allocation or mandate alone does not establish that the proposed arrangement can deliver the service under the conditions of use.
 
-Present the supported option, reasons, conditions and displaced alternatives to the person who will decide. A concise recommendation can be sufficient. When uncertainty can change the decision, identify the missing result and the attainable inquiry worth undertaking; do not replace that question with a demand for every specialist's approval.
+Present the supported option, reasons, conditions and displaced alternatives to whoever has authority to decide. A concise recommendation can be sufficient. When uncertainty can change the decision, identify the missing result and the inquiry worth undertaking to obtain it.
 
 The authorized decision maker selects an asset option within the actual spending, service and other applicable conditions. State what was selected and the conditions of its use. Maintenance and operating authorities separately settle the permissions for protected work and resumption when that work is to occur.
 
-Return the answer that exists. Report advice as advice, an authorized choice as an authorized choice and an unresolved decision as unresolved. Reopen the affected choice when a relied-on result, authority, configuration, duty or condition changes.
+State whether you are giving advice, reporting an authorized choice or identifying a decision still to be made. Reopen the affected choice when a relied-on result, authority, configuration, duty or condition changes.
 
 ### EAM.12:5 - Archetypal Grounding
 
@@ -41,7 +41,7 @@ In the constructed CityWater case, the funding board allocates €8 million capi
 
 The EAM team recommends refurbishing A and B, modifying C and continuing D under its supported policy. The combination uses €7 million capital, €0.50 million initially for operation, €1.85 million annually and eight available work days. The finance practitioner checks those amounts against the allocations. The operating and engineering results qualify service and technical feasibility for the proposed work.
 
-Sending that recommendation answers the committee's request for advice. If the committee then selects it within its authority, the team can report the authorized asset programme. That fact alone does not permit a maintenance crew to isolate D. Its work and resumption permissions must apply to the actual intervention. If finance's cost model instead concerns a replacement of D, the team reconciles that mismatch before relying on its favorable affordability conclusion.
+Sending that recommendation answers the committee's request for advice. If the committee then selects it within its authority, the team can report the authorized asset programme. Isolating D and resuming service require the permissions that apply to this intervention. If finance's cost model instead concerns a replacement of D, the team reconciles that mismatch before relying on its favorable affordability conclusion.
 
 ### EAM.12:6 - Bias-Annotation
 
@@ -59,7 +59,7 @@ Using a budget approval as permission to operate or isolate equipment changes th
 
 ### EAM.12:9 - Consequences
 
-The recipient gets one usable answer with its reasons and conditions. Some decisions remain conditional while adequate advice is delivered. The integration work can expose a precise missing result instead of commissioning a broad new study, and actual responsibility for implementation remains visible.
+The recipient gets one usable answer with its reasons and conditions. Some decisions remain conditional while adequate advice is delivered. The comparison can identify the missing result to seek and who remains responsible for implementation.
 
 ### EAM.12:10 - Architectural Rationale
 

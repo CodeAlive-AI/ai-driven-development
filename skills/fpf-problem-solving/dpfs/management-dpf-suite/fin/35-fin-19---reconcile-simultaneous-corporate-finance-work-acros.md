@@ -10,7 +10,7 @@ Investment, treasury, financing and distribution work each appears reasonable, b
 
 ### FIN.19:1 - Problem frame
 
-The object is the organization of simultaneous corporate-finance practice around actual claims, decisions and horizons. Work overlap, ownership of money, model use, provider dependence and authority are different relations. This method recovers their consequential conflict; it does not turn a reporting hierarchy into a description of all financial work.
+The object is the organization of simultaneous corporate-finance practice around actual claims, decisions and horizons. Work overlap, ownership of money, model use, provider dependence and authority are different relations. Trace the relations that explain why the commitments conflict or why the accounts appear to disagree.
 
 ### FIN.19:2 - Problem
 
@@ -22,7 +22,7 @@ Preserve useful local expertise and speed while making joint constraints effecti
 
 ### FIN.19:4 - Solution
 
-The seven steps below provide a short route when the necessary financial grounds are already adequate. Use the connected explanations that follow when constructing the result, resolving a changed condition or adapting the way of working.
+When the financial grounds are adequate, the seven steps in §4.1 can suffice. Sections 4.2–4.8 explain how to link financial commitments, compare changes to the work and follow their effects.
 
 
 
@@ -46,7 +46,7 @@ Start with the commitment, payment or decision that cannot be reconciled, and th
 
 For a proposed arrangement, use a stated prospective case. Identify the future work and the conditions needed for it to occur. A design for a shared treasury centre is not evidence that local forecasts reach it, its bank access works or subsidiaries can use its funding. Keep those implementation questions available for the decision without inventing past performance.
 
-Recover the participants by what they contribute to this result. The operating unit may know the likely receipt date, central finance may compare capital uses, treasury may obtain funding and a separately authorized person may release a payment. Several contributions can overlap in time and one person can make several of them. Their relationship is not necessarily a hierarchy or a compulsory sequence of departments.
+Recover the participants by what they contribute to this result. The operating unit may know the likely receipt date, central finance may compare capital uses, treasury may obtain funding and the party authorized to release a payment may be different again. Contributions can overlap in time, and the same participant can make several of them. Their relationship is not necessarily a hierarchy or a compulsory sequence of departments.
 
 Name the financial constraint before the organizational remedy. If the problem is only that two models use different bank opening balances, a reconciled position may be enough. If both use the same balance but each can irrevocably allocate it without seeing the other, the decision arrangement itself matters. These cases require different changes even though both may appear as “poor coordination.”
 
@@ -70,9 +70,9 @@ Retain uncertainty consistently. A local forecast range and a central single pla
 
 Construct the common dated account with existing obligations, protected amounts and the proposed additional uses. Include commitments that have not yet appeared as cash payments: an accepted purchase, declared distribution or binding derivative can already constrain future money. Keep a proposal distinct from an actual obligation so that the account does not either omit binding work or reserve funds indefinitely for every idea.
 
-Find the moment at which each proposed use becomes difficult or costly to reverse. The joint allocation must be resolved before that point, or the corporation needs an actual remedy for the resulting obligation. A report produced after two teams have committed the same money improves visibility but arrives too late to prevent the conflict. A shared account must therefore be connected to the people and timing of commitment.
+Find the moment at which each proposed use becomes difficult or costly to reverse. The joint allocation must be resolved before that point, or the corporation needs an actual remedy for the resulting obligation. A report produced after two teams have committed the same money improves visibility but arrives too late to prevent the conflict. A shared account must therefore be available to those making the commitments before those commitments bind.
 
-Use existing allocation authority first. Two proposals drawing on the same remaining 20 need one feasible combination, not two separate affordability approvals. FIN.9 compares the capital uses and interactions; FIN.2 tests dated payments; FIN.21 assesses retention or payout where relevant. The person authorized to allocate can choose, defer, resize or seek obtainable finance within the actual rules. If that resolves the conflict, return the financial decision and keep the organization of routine work.
+Use existing allocation authority first. Two proposals drawing on the same remaining 20 need one feasible combination, not two separate affordability approvals. FIN.9 compares the capital uses and interactions; FIN.2 tests dated payments; FIN.21 assesses retention or payout where relevant. The authorized allocator can choose, defer, resize or seek obtainable finance within the actual rules. If that resolves the conflict, return the financial decision and keep the organization of routine work.
 
 An operational way to make the limit effective can be simple. Before making an exceptional commitment, its performer obtains the current shared amount and ensures that the accepted use reduces what is available for the other proposals. The update and confirmation must occur before another participant relies on the old amount. An existing reliable procedure may already do this. A central spreadsheet that everybody can read but nobody uses at commitment time does not.
 
@@ -91,7 +91,7 @@ For each arrangement, explain who obtains the necessary information, who can com
 
 A common system can support an arrangement without determining it. Installing a treasury platform does not decide which subsidiary must release a balance or who may change an investment commitment. Conversely, a supported arrangement can sometimes work with the existing tools. Compare the information and action the system would make possible, the necessary operating work and the fallback if the provider or connection fails.
 
-Keep the public rules and conditions that genuinely constrain the choice. Finance can propose a different delegation or internal support arrangement; the appropriate authority must make it effective. The proposed holder of a decision right can exercise it only after the authorized change takes effect.
+Keep the public rules and conditions that constrain the choice. Finance can propose a different delegation or internal support arrangement; the appropriate authority must make it effective. The proposed holder of a decision right can exercise it only after the authorized change takes effect.
 
 
 
@@ -117,7 +117,7 @@ Return the selected or proposed arrangement in terms its participants can use. S
 
 For an authorized change, obtain its actual enabling conditions. A person assigned to coordinate a treasury exception still needs the information, time, relevant authority and provider access required for that contribution. OCE.6 distinguishes those conditions and can return the specific missing one. Naming the person is not evidence that all of them obtain. Where the change only schedules existing work or resources, use the appropriate operating coordination instead.
 
-Try a representative commitment and a consequential exception with the actual participants or an explicitly prospective walkthrough, according to the needed conclusion. Can the two capital uses still rely on the same free amount? Can a changed receipt reach the allocation before another payment becomes binding? Does a local emergency have a supported route? A walkthrough can expose a missing connection, while an actual performed occurrence is needed to claim that the arrangement has operated.
+Try a representative commitment and a consequential exception with the actual participants or an explicitly prospective walkthrough, according to the needed conclusion. Can the two capital uses still rely on the same free amount? Can a changed receipt reach the allocation before another payment becomes binding? Does a local emergency have a supported route? A walkthrough can expose a missing connection, while evidence of a performed occurrence is needed to claim that the arrangement has operated.
 
 Keep outstanding obligations through the transition. A new approval route does not cancel commitments made under the old one. Reconcile the opening shared account and any temporary parallel reporting so that neither duplicated reservations nor omitted obligations arise. Preserve a usable fallback where failure of the new arrangement would leave payment or decision work unsupported.
 
@@ -130,7 +130,7 @@ Finish this reconciliation when the relevant descriptions agree where they need 
 
 Reopen on an occurrence that contradicts the arrangement, a new entity or provider, a changed horizon or a new way in which commitments interact. A familiar diagram can remain useful while one of its underlying assumptions has failed. Recover the specific relation before redesigning the whole practice.
 
-Use FIN.20 when people repeatedly bypass an adequate shared account, stop transmitting local information or lose the knowledge needed to operate the arrangement. That cultural question differs from a one-time late report or a resource shortage. The distinction lets the corporation repair the actual problem while preserving functioning local work.
+Use FIN.20 when participants repeatedly bypass an adequate shared account, stop transmitting local information or lose the knowledge needed to operate the arrangement. That cultural question differs from a one-time late report or a resource shortage. The distinction lets the corporation repair the actual problem while preserving functioning local work.
 
 ### FIN.19:5 - Archetypal Grounding
 
@@ -151,7 +151,7 @@ On day 7, cash would be 100 + 30 − 60 − 30 − 20 = 20. That resolves the fi
 
 For comparison, the same stipulated financing terms at the smaller scale can supply net 10 for the project alone and require 10.50 on day 30. Cash is 20 after day-7 payments and 34.50 after the later receipt, payment and repayment. Distribution alone leaves 20 on day 7 and 45 on day 30 without this loan. FIN.9 and FIN.21 still need the actual value, policy and claimant grounds to choose between those uses; feasibility alone does not establish the preferred allocation.
 
-Deferring the full distribution to day 31 while keeping the loan of 30 gives cash 40 after day-7 operating and project payments, then 33.50 after day-30 repayment. Paying 20 on day 31 again leaves 13.50. A later date alone has not repaired the full plan. At most 13.50 could be paid then while retaining reserve 20 under these exact flows, before applying the separate payout and permission conditions.
+Deferring the full distribution to day 31 while keeping the loan of 30 gives cash 40 after day-7 operating and project payments, then 33.50 after day-30 repayment. Paying 20 on day 31 again leaves 13.50. A later date alone has not repaired the full plan. At most 13.50 could be paid then while retaining reserve 20 under these flows, before applying the separate payout and permission conditions.
 
 Now change only intraday availability: the loan arrives at 15:00, but the project payment is binding at 09:00 after the 60 operating payment. Cash would fall from 40 to 10 at 09:00, already below the reserve. A day-end account showing 20 misses that earlier failure. The commitment arrangement must either obtain earlier funds or select another available sequence before the payment becomes binding.
 
@@ -197,7 +197,7 @@ Is the anchor actual or explicitly prospective? Are work, claims, models, author
 
 ### FIN.19:8 - Common Anti-Patterns and How to Avoid Them
 
-Forcing every view into one hierarchy hides cross-cutting relations; recover the relation actually used. Calling two spreadsheets two financial positions confuses description with subject; reconcile their meaning. Fixing a treasury conflict by delaying all operating payments moves the failure; compare that consequence.
+Forcing every view into one hierarchy hides cross-cutting relations; trace the relevant work, claims or descriptions across that hierarchy. Calling two spreadsheets two financial positions confuses description with subject; reconcile their meaning. Fixing a treasury conflict by delaying all operating payments moves the failure; compare that consequence.
 
 ### FIN.19:9 - Consequences
 
@@ -209,7 +209,7 @@ A conflict across claims and horizons cannot always be repaired inside one finan
 
 ### FIN.19:11 - SoTA-Echoing
 
-[FPF C.32.MWA][MWA] supplies synthesis from several actual relations, the practice–description distinction and comparison of moved burdens. FIN.19 applies that contribution to concurrent corporate-finance commitments. It rejects visual tidiness as the selection criterion; a new representative conflict or material horizon changes the synthesis.
+[FPF C.32.MWA][MWA] supplies synthesis from several actual relations, the practice–description distinction and comparison of moved burdens. FIN.19 applies that contribution to concurrent corporate-finance commitments. Reconsider the arrangement when a changed dependency, authority or horizon affects how the participants can reconcile the accounts or meet their commitments.
 
 [ACT's April 2026 treasury-transformation discussion][ACT-TRANSFORM] connects legal entities, accounts, payment flows, systems and local work to the purpose of a proposed change. It supplies practitioner comparison, not a universal centralization rule or causal proof of savings. FIN.19 combines that domain question with C.32.MWA's method for reconstructing relations and comparing the burdens moved by a change. OPS.13 supports commitments matched to resources and response time; OCE.6 supplies a needed assignment or enabling-relation return.
 

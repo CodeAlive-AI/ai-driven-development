@@ -12,7 +12,7 @@
 
 Begin with one consequence that could change the choice, then construct the smallest mathematical account that can distinguish the arrangements. The first useful result is a derived property, feasible construction, bound or counterexample, interpreted back into the method comparison.
 
-This method refines C.32.MWA.PP's comparison of arrangements. Here an arrangement concerns how contributions are connected for the selected work; it need not form one Method whole. The mathematical model represents the relevant operations, observations and shared resources. C.29 supplies the correspondence to the working situation. B.1.5.CM supplies the separate judgment about whether participant Methods and their whole relations actually obtain.
+This method refines C.32.MWA.PP's comparison of arrangements. Here an arrangement concerns how contributions are connected for the selected work; it need not form one Method whole. The mathematical model represents the relevant operations, observations and shared resources. C.29 supplies the correspondence to the working situation. B.1.5.CM supplies the separate judgment about whether participant Methods and their whole relations obtain.
 
 Preparation requires the ability to describe the proposed work and its criteria, elementary algebra, and reasoning about functions, inequalities or finite sequences. A larger concurrent model may require a specialist using CMP.14. The specialist's result must expose the property, assumptions and decisive construction or counterexample needed by the method decision.
 
@@ -37,7 +37,7 @@ A mathematical model can resolve these questions only if it retains the distinct
 
 ### MMP.21:4 - Solution
 
-MMP.10 supplies the mathematical formulation and its answer correspondence. MMP.18 supplies compatible exchanges when component models must first be coupled. This Method uses those contributions for a different choice: which proposed connection, order or allocation of working operations preserves the receiving consequence under shared conditions? Its construction below retains the observations and capacities needed to distinguish the arrangements and derives the conditional comparison. An adequate existing formulation is an input, not a reason to repeat modeling.
+MMP.10 supplies the mathematical formulation and its answer correspondence. MMP.18 supplies compatible exchanges when component models must first be coupled. This Method uses those contributions for a different choice: which proposed connection, order or allocation of working operations preserves the receiving consequence under shared conditions? Its construction below retains the observations and capacities needed to distinguish the arrangements and derives the conditional comparison. You can use an existing formulation that represents the conditions needed to answer the question.
 
 Select the consequence, model the competing arrangements and their interactions, derive the difference, and return what it changes in the Method decision.
 
@@ -57,29 +57,29 @@ Use C.29 to say what the mathematical objects represent. Define the relevant inp
 
 Choose what the receiver can observe. Retain an intermediate answer if another step uses it, even when it disappears from the final store. Retain case identity or version when using the wrong case or version changes the result. If probability, timing or cost matters, represent that quantity and the assumptions supporting it; a plain set of possible outputs does not supply its distribution or duration.
 
-Distinguish what is known from what the model assumes. A measured duration, a proposed upper bound and a convenient constant have different grounds. A human or automated performer can be represented by a transition rule for this calculation, but the rule needs a correspondence to the capability and conditions of that performer.
+Distinguish what is known from what the model assumes. A measured duration, a proposed upper bound and a convenient constant have different grounds. A transition rule can represent a performer in this calculation if it corresponds to that performer’s capability and operating conditions.
 
 When alternatives use different representations, interpret both through the selected receiving quantities. MATH.18 supplies preservation and recovery across mathematical accounts. If a summary sends two cases to the same value but their required answers differ, that summary cannot support the comparison without recovering the lost distinction.
 
 #### MMP.21:4.3 - Construct the connection, including shared resources
 
-For sequential functions, form \(g\circ f\), meaning first \(f\), then \(g\). Check that every relevant output of \(f\) is an allowed input of \(g\), including its meaning and conditions. With partial functions, determine the inputs on which the composite is defined. MATH.17 supplies the operation collections and closure argument.
+For sequential functions, form $g\circ f$, meaning first $f$, then $g$. Check that every relevant output of $f$ is an allowed input of $g$, including its meaning and conditions. With partial functions, determine the inputs on which the composite is defined. MATH.17 supplies the operation collections and closure argument.
 
 Associativity permits regrouping a fixed sequence. Reordering needs a different property: the two orders must agree in the observations the receiver uses. If the operations return information as well as changing state, retain both in that comparison.
 
 For overlapping work, represent the shared state or resource once. Connecting two models that each contain a private copy of the same bench or performer doubles the modeled capacity. Describe when each operation can begin, what it reads, what it changes or occupies, and when it releases a resource.
 
-For example, let operation \(i\) have start time \(s_i\), fixed duration \(d_i\), and resource demand \(r_{ik}\) on resource \(k\). For nonpreemptive work, a precedence \(i\) before \(j\) requires
+For example, let operation $i$ have start time $s_i$, fixed duration $d_i$, and resource demand $r_{ik}$ on resource $k$. For nonpreemptive work, a precedence $i$ before $j$ requires
 
-\[
+$$
 s_j\geq s_i+d_i.
-\]
+$$
 
-If the available capacity is \(c_k(t)\), then at every time \(t\),
+If the available capacity is $c_k(t)$, then at every time $t$,
 
-\[
+$$
 \sum_{i:\ s_i\leq t<s_i+d_i}r_{ik}\leq c_k(t).
-\]
+$$
 
 Add input-availability and deadline conditions where they matter. These inequalities describe one timing model; interruptions, setup, rework or uncertain durations require the corresponding extension when they can change the answer.
 
@@ -103,9 +103,9 @@ Return the result in the quantities and conditions chosen in :4.1. Explain which
 
 Include burden moved by the arrangement: a faster central step may require more preparation elsewhere; releasing a checked snapshot may require storage while a newer revision awaits review; independent instruments may still require the same operator. A local improvement is useful only to the extent that the receiving comparison can accept those effects.
 
-Compare the chosen model with a cheaper sufficient argument. A two-step trace can expose an ordering failure without a model checker. A workload lower bound can rule out a schedule without detailed simulation. Use a larger construction when it can change an unresolved consequence or support a broader claim that the decision actually needs.
+Compare the chosen model with a cheaper sufficient argument. A two-step trace can expose an ordering failure without a model checker. A workload lower bound can rule out a schedule without detailed simulation. Use a larger construction when it can change an unresolved consequence or support a broader claim that the decision needs.
 
-The outcome may support retaining an incumbent, rejecting one proposal, preserving several alternatives, or selecting a bounded trial. It need not rank every arrangement. Existing FPF choice, Pareto and improvement methods govern those results; no new scoring rule is introduced by drawing a mathematical model.
+The outcome may support retaining an incumbent, rejecting one proposal, preserving several alternatives, or selecting a bounded trial. It need not rank every arrangement. Existing FPF choice, Pareto and improvement methods govern those results.
 
 #### MMP.21:4.6 - Interpret the result and reopen the affected premise
 
@@ -125,25 +125,25 @@ The following constructed cases expose different comparison questions.
 
 Two teams must report the mean of all their measurements. The proposed arrangements are to send every measurement to one calculator, or to compute a summary in each team and combine the summaries. All values have the same meaning and units, and every included measurement has equal weight.
 
-Represent a finite list \(x=(x_1,\ldots,x_n)\) by
+Represent a finite list $x=(x_1,\ldots,x_n)$ by
 
-\[
+$$
 T(x)=\left(\sum_{i=1}^{n}x_i,\ n\right).
-\]
+$$
 
-Combine pairs by \((s,n)\oplus(t,m)=(s+t,n+m)\). For concatenation of lists \(x\) and \(y\),
+Combine pairs by $(s,n)\oplus(t,m)=(s+t,n+m)$. For concatenation of lists $x$ and $y$,
 
-\[
-T(x\,y)=T(x)\oplus T(y).
-\]
+$$
+T(x\thinspace y)=T(x)\oplus T(y).
+$$
 
 Both components follow from adding the sums and counts. Pair addition is associative, so repeated regrouping preserves the summary. For a nonempty combined list, recover the mean as total sum divided by total count. This supplies the composition and recovery needed by the parallel arrangement.
 
-With lists \((0,4)\) and \((10)\), the summaries are \((4,2)\) and \((10,1)\). Their combination is \((14,3)\), giving \(14/3\), the same mean as central calculation. Averaging the two local means instead gives \((2+10)/2=6\), answering a different weighting question.
+With lists $(0,4)$ and $(10)$, the summaries are $(4,2)$ and $(10,1)$. Their combination is $(14,3)$, giving $14/3$, the same mean as central calculation. Averaging the two local means instead gives $(2+10)/2=6$, answering a different weighting question.
 
 The mathematical comparison supports using sum-and-count summaries when this mean is the receiving result. Application requires consistent inclusion and weighting rules, with every included record assigned to one team and counted once. The algebra uses exact addition; a rounded implementation needs the relevant numerical error comparison. Whether the two teams use those rules needs grounds from their work.
 
-Now the recipient asks how many measurements exceed \(3\). Replacing \((0,4)\) by \((2,2)\) leaves the local sum-and-count pair unchanged, and leaves the combined pair \((14,3)\) unchanged, but changes the requested count from two to one. No rule using only that pair can distinguish the cases. The earlier mean-equivalence remains valid; the new question needs another retained quantity or a return to the measurements. The method decision must not treat the old summary as a substitute for all uses of the records.
+Now the recipient asks how many measurements exceed $3$. Replacing $(0,4)$ by $(2,2)$ leaves the local sum-and-count pair unchanged, and leaves the combined pair $(14,3)$ unchanged, but changes the requested count from two to one. No rule using only that pair can distinguish the cases. The earlier mean-equivalence remains valid; the new question needs another retained quantity or a return to the measurements.
 
 #### MMP.21:5.2 - Compare parallel checks with their shared capacity exposed
 
@@ -159,28 +159,28 @@ The one-bench arrangement fails the ten-minute criterion under these premises. T
 
 **Changed premise.** Both checks now require one qualified operator throughout, and only one such operator is available from minute 2 onward. Add a capacity-one operator constraint to the model. Two benches no longer permit overlap: there are still eight exclusive operator minutes, no check can begin before minute 2, and assembly follows both checks. The eleven-minute lower bound applies again and the same serial schedule attains it.
 
-A hardware-only proposal therefore does not repair the deadline under the changed condition. The useful next comparison concerns an available arrangement that changes the limiting condition, or a justified change of requirement. Merely redrawing two parallel lanes leaves the conflict in place.
+A hardware-only proposal therefore does not repair the deadline under the changed condition. The useful next comparison concerns an available arrangement that changes the limiting condition, or a justified change of requirement.
 
 #### MMP.21:5.3 - Compare orders by the result a later action consumes
 
 A publication team proposes two arrangements for an edit and a review: edit then review, or review then edit. The required result is that the released artifact is the revision to which the review result applies. Review quality is a separate criterion; this comparison concerns revision correspondence.
 
-Use state \((v,c,p)\): \(v\) is the working revision, \(c\) the reviewed revision, and \(p\) the released revision. Initially the state is \((0,\bot,\bot)\), where \(\bot\) means none. Model an edit \(E\) as incrementing \(v\), a completed review \(K\) as setting \(c=v\), and release \(P\) as setting \(p=v\). No other operation occurs in the initial model.
+Use state $(v,c,p)$: $v$ is the working revision, $c$ the reviewed revision, and $p$ the released revision. Initially the state is $(0,\bot,\bot)$, where $\bot$ means none. Model an edit $E$ as incrementing $v$, a completed review $K$ as setting $c=v$, and release $P$ as setting $p=v$. No other operation occurs in the initial model.
 
 | Proposed order | States after its steps | Required result |
 | --- | --- | --- |
-| \(E;K;P\) | \((1,\bot,\bot)\), \((1,1,\bot)\), \((1,1,1)\) | \(p=c\) holds. |
-| \(K;E;P\) | \((0,0,\bot)\), \((1,0,\bot)\), \((1,0,1)\) | \(p=c\) fails. |
+| $E;K;P$ | $(1,\bot,\bot)$, $(1,1,\bot)$, $(1,1,1)$ | $p=c$ holds. |
+| $K;E;P$ | $(0,0,\bot)$, $(1,0,\bot)$, $(1,0,1)$ | $p=c$ fails. |
 
-Both orders finish with working revision 1. A model retaining only \(v\) would make them look equivalent and lose the distinction needed by release. The separating trace rejects the second ordering for the stated criterion.
+Both orders finish with working revision 1. A model retaining only $v$ would make them look equivalent and lose the distinction needed by release. The separating trace rejects the second ordering for the stated criterion.
 
 Now the environment permits an additional edit after review but before release. Even the first ordering admits
 
-\[
+$$
 (1,1,\bot)\ \longrightarrow\ (2,1,\bot)\ \longrightarrow\ (2,1,2).
-\]
+$$
 
-Its earlier result depended on excluding this intervention. The team also offers an arrangement that retains an immutable copy of the reviewed revision and releases that copy. In the same situation it releases revision 1, giving \(p=c=1\), while the workspace contains revision 2. This arrangement satisfies the revision-correspondence criterion if the copy and its review association are actually preserved. It leaves a different question: is releasing revision 1 still useful and permitted, or does the receiving work require revision 2? C.39.RQ and C.32.MWA.PP retain that criterion and trade-off rather than silently replacing it.
+Its earlier result depended on excluding this intervention. The team also offers an arrangement that retains an immutable copy of the reviewed revision and releases that copy. In the same situation it releases revision 1, giving $p=c=1$, while the workspace contains revision 2. This arrangement satisfies the revision-correspondence criterion if the copy and its review association are preserved. It leaves a different question: is releasing revision 1 still useful and permitted, or does the receiving work require revision 2? C.39.RQ and C.32.MWA.PP retain that criterion and trade-off.
 
 The comparison supplies a condition for the release arrangement, not evidence that anyone performed the review or retained the copy. If source-copy retention or release selection needs implementation, that construction remains to be done.
 
@@ -254,15 +254,15 @@ C.32.MWA.PP selects the structures and alternatives that matter to a Method deci
 
 MATH.17 and MATH.18 supply operations on operations and comparison through interpretations. CMP.14 supplies computational interactions when shared state or communication makes ordinary sequential composition insufficient. C.29 connects those mathematical results to the working situation.
 
-The distinction between model and work is productive: a conditional impossibility can already reject a proposed arrangement under accepted conditions, while an uncertain premise can identify the clarification that matters. Neither result needs a claim that the mathematical components are actual parts of one Method. B.1.5.CM handles that separate question.
+A conditional impossibility can rule out a proposed arrangement under accepted conditions, while an uncertain premise can identify the clarification that matters. Neither result needs a claim that the mathematical components are parts of one Method. B.1.5.CM handles that separate question.
 
 ### MMP.21:11 - SoTA-Echoing
 
-The practice question is how to compare interacting method contributions without reducing the decision to isolated scores or expanding every case into a large simulation. The selected line uses a property-specific model, explicit composition conditions and the least costly adequate derivation. The three worked cases show why different receiving questions need different retained structure.
+The practice question is how to compare interacting method contributions without reducing the decision to isolated scores or expanding every case into a large simulation. The selected line uses a property-specific model, explicit composition conditions and the least costly adequate derivation. The cases in :5.1–:5.3 show why different receiving questions need different retained structure. In :5.4, a change in the requested statistic changes the proposed procedure.
 
 **Resource composition versus isolated timing or unrestricted simulation.** [Arronategui, Bañares and Colom, *Large scale system design aided by modelling and DES simulation: A Petri net approach* (2025), §§2.2, 4–5](https://onlinelibrary.wiley.com/doi/full/10.1002/spe.3374) develops interpreted components, shared-resource composition and structure-preserving execution. It also distinguishes properties preserved by construction from failures that composition can introduce. **Adapt** this line in :4.2–:4.4: assign meanings to model elements and derive the selected combined property. Petri nets are an option for larger interacting systems; the inequalities in :5.2 settle the smaller capacity question more cheaply. Simulation becomes a serious alternative when analysis is impractical, with its outcome qualified accordingly. Reopen the representation when omitted resource or timing behavior changes the comparison.
 
-**Compositional contracts versus whole-model verification.** [Dewes and Dimitrova, *Contract-based Design and Verification of Multi-Agent Systems with Quantitative Temporal Requirements* (AAAI 2025), §§4–6](https://arxiv.org/html/2412.13114v1) supplies a contemporary construction for local obligations, shared requirements and modular verification. Its experiments show a trade-off: smaller component checks can avoid the memory burden of a whole-model check, while their overhead can lose on small specifications. **Adapt** :4.4–:4.6 to check assumption compatibility and reopen dependent conclusions after changes. Retain a short whole-model argument when it suffices. The source's temporal logic, quantitative combination rule and computational-agent assumptions are not universal requirements for Method comparison.
+**Compositional contracts versus whole-model verification.** [Dewes and Dimitrova, *Contract-based Design and Verification of Multi-Agent Systems with Quantitative Temporal Requirements* (AAAI 2025), §§4–6](https://arxiv.org/html/2412.13114v1) supplies a contemporary construction for local obligations, shared requirements and modular verification. Its experiments show a trade-off: smaller component checks can avoid the memory burden of a whole-model check, while their overhead can lose on small specifications. **Adapt** :4.4–:4.6 to check assumption compatibility and reopen dependent conclusions after changes. Retain a short whole-model argument when it suffices. You can check compatibility and revisit dependent conclusions without adopting the paper’s temporal logic, quantitative combination rule or assumptions about computational agents.
 
 For operation regrouping and interpretation, MATH.17 and MATH.18 provide the general mathematical constructions used in :5.1 and :5.3.
 
@@ -270,7 +270,7 @@ These sources supply mathematical and computational modeling methods, not empiri
 
 ### MMP.21:12 - Relations
 
-- **MMP.10** supplies the required formulation and answer interpretation; **MMP.18** supplies a joint model when component exchange or shared dependence is still unresolved. Reuse either result at its actual scope.
+- **MMP.10** supplies the required formulation and answer interpretation; **MMP.18** supplies a joint model when component exchange or shared dependence is still unresolved. Reuse either result within its scope.
 - **C.39.RQ** supplies situated requirements and their subjects. **C.32.MWA.PP** supplies the broader comparison and receives the derived consequence, moved burden and qualification.
 - **B.1.5.CM** resolves a proposed Method whole into supported obtaining relations or a prospective account. Equality or composition of mathematical descriptions does not perform that work.
 - **MATH.17** constructs admissible operations and their composition laws. **MATH.18** constructs interpretations and tests what transfers between mathematical accounts.

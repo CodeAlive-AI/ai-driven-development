@@ -6,7 +6,7 @@ The [Reference explanation of understanding, agreement and ensuing work (Enginee
 
 A working reminder is:
 
-> Find the present question and the people who can answer it → prepare a useful next contribution → develop and carry the grounds for choice → compare or change the offering → settle supported terms → help the result become useful → retain what holds and reopen what changed.
+> Find the present question and the sources that can answer it → prepare a useful next contribution → develop and carry the grounds for choice → compare or change the offering → settle supported terms → help the result become useful → retain what holds and reopen what changed.
 
 The phrases recall the connections below. They are not compulsory buying stages. One conversation can clarify criteria while exposing an implementation concern; the operator and purchaser can be answering different questions. Return to a question only when its answer is missing or has changed.
 
@@ -14,13 +14,13 @@ The phrases recall the connections below. They are not compulsory buying stages.
 
 ### MKT.Application:4.1 - Prepare an encounter that can change the work
 
-Start from the customer's actual situation and the result still missing. Use a recent episode, current comparison or failed attempt to establish the question. Keep a reported problem, a possible explanation and a warranted reason for action distinct. Reuse sufficient knowledge before asking the customer for it again.
+Start from the customer's situation and the result still missing. Use a recent episode, current comparison or failed attempt to establish the question. Keep a reported problem, a possible explanation and a warranted reason for action distinct. Reuse sufficient knowledge before asking the customer for it again.
 
 Set a concrete attainable objective for the encounter: obtain an introduction to the problem owner, clarify a consequential criterion, obtain permission for a sample, or agree who will prepare a proposed trial. “Build the relationship” does not say what the other person can use or what changed. The proposed objective must allow a useful correction, refusal or different next action.
 
 Prepare from the question backward. Recover facts available elsewhere; identify the relationship, consequence or alternative that needs the participant's knowledge; prepare questions and suitable material for that relationship. For a consequence, trace the proposed connection before asserting a benefit: which extra work follows from this difficulty, for whom, under what conditions? Ask what would defeat the explanation as well as what supports it. MKT.12 supplies needed inquiry and MKT.1 the qualified customer situation; a domain expert supplies a missing technical or operating account.
 
-After the encounter, compare the actual return with the objective. An introduction received, a criterion clarified and a demonstration requested are different results. Preserve the new fact and its limits, identify who will use it, and prepare the next contribution from that changed state. A cordial meeting can leave the objective unmet; an unwelcome correction can settle it usefully. What happens between meetings also matters: a colleague can reject the case, a provider can withdraw support, or the customer can propose a better trial after reflection.
+After the encounter, compare what the encounter produced with the objective. An introduction received, a criterion clarified and a demonstration requested are different results. Preserve the new fact and its limits, identify who will use it, and prepare the next contribution from that changed state. A cordial meeting can leave the objective unmet; an unwelcome correction can settle it usefully. What happens between meetings also matters: a colleague can reject the case, a provider can withdraw support, or the customer can propose a better trial after reflection.
 
 
 
@@ -30,7 +30,7 @@ Consider a constructed warehouse that loses dispatch time while correcting ident
 
 The supplier asks for an introduction to dispatch staff and their supervisor. Before that meeting it learns enough about the identifier flow to ask useful questions. Dispatch describes a recent missed departure; the supervisor identifies which correction work mattered. The supplier checks the connection before counting benefits. Recorded downtime is not automatically saved cash, and the same loss described by two people is not two losses.
 
-The next contribution is a case the supervisor can discuss with the data owner and purchaser. It explains the receiving result, alternatives, expected burden, grounds and unresolved question. Ask the supervisor to explain it in their own terms and raise the questions their colleagues are likely to ask. Repair a missing explanation through EXD.4. If instructional preparation is actually needed, EXD.5 develops a generated explanation and correction; rehearsal is not a required sales ritual or evidence that colleagues will agree.
+The next contribution is a case the supervisor can discuss with the data owner and purchaser. It explains the receiving result, alternatives, expected burden, grounds and unresolved question. Ask the supervisor to explain it in their own terms and raise the questions their colleagues are likely to ask. Repair a missing explanation through EXD.4. If instructional preparation is needed, EXD.5 develops a generated explanation and correction; rehearsal is not a required sales ritual or evidence that colleagues will agree.
 
 An internal sponsor's willingness is distinct from ability to explain and authority to decide. Identify whose judgement, resources or permission the next step needs. When no one can settle the linked questions alone, propose a joint discussion or decision group to the customer's responsible owner. State the decisions and contributions it would connect; that owner determines its remit and participation. A committee can remove otherwise indefinite waiting, but an existing sufficient decision route is cheaper.
 
@@ -40,7 +40,7 @@ Avoid making continuity depend on one person where a consequential change is pla
 
 ### MKT.Application:4.3 - Turn grounds for action into a usable comparison
 
-Once the warehouse accepts a reason to examine change, more emphasis on the old difficulty does not determine which option to choose. Compare retaining the current arrangement, improving identifier preparation, obtaining a reporting or correction service, and a supported scanner arrangement. MKT.2 makes the actual contribution and exclusions clear; MKT.4 connects them to choice.
+Once the warehouse accepts a reason to examine change, more emphasis on the old difficulty does not determine which option to choose. Compare retaining the current arrangement, improving identifier preparation, obtaining a reporting or correction service, and a supported scanner arrangement. MKT.2 makes what each alternative supplies and excludes clear; MKT.4 connects them to choice.
 
 An experienced data owner may begin with interface and data-use criteria. Enter through how they judge adequacy, then relate that judgement to dispatch work. Another participant may still need to establish why any change is worthwhile. Carry the relevant answer to each, rather than assigning one stage to the whole organisation.
 
@@ -48,7 +48,7 @@ Use MKT.4:4.3.1 to choose criterion work. Derive an omitted condition from a qua
 
 When a property such as reliability is hard for the customer to judge, define what it means in this work, refine it into inspectable distinctions and return to its justified importance. Obtain relevant evidence about the mechanism and conditions. General criticism of a competitor's technology supplies no comparative conclusion. A technically supported causal explanation can be useful even when brand labels are not. Send the qualified explanation with the case when it passes to another decision group.
 
-Compare vulnerability through importance, the customer's view of this offer and its view of alternatives. A competitor's improved model can erase an advantage without changing the customer's need. A faster device can outperform another and still fail the receiving workflow. Reopen the affected comparison when new evidence changes fit; retain unaffected criteria and facts. If a different arrangement is proposed, request its actual engineering and operating contributions before inviting reliance.
+Compare vulnerability through importance, the customer's view of this offer and its view of alternatives. A competitor's improved model can erase an advantage without changing the customer's need. A faster device can outperform another and still fail the receiving workflow. Reopen the affected comparison when new evidence changes fit; retain unaffected criteria and facts. If a different arrangement is proposed, request the engineering and operating contributions it requires before inviting reliance.
 
 
 
@@ -74,11 +74,11 @@ Preparation for useful use often begins before the order. Include the operators'
 
 In the warehouse, the trial must show that approved identifiers pass through the selected dispatch work with an available response to errors. It needs both a technically suitable configuration and people who can perform the relevant work with the permitted help. MKT.6 constructs this receiving result. MKT.11 obtains the provider's answer about support. OCE.6 addresses a missing assignment, access or authority; OCE.11 reconciles setup, practice and recovery with continuing dispatch when their demands conflict.
 
-Use the actual shared allocation before making the promise. If an expert is needed for both the trial and an existing obligation at the same time, two separate statements of feasibility do not establish the joint arrangement. Change timing, scope or provision, or defer. The Reference's purchase case develops this conflict and the selective return when support is lost.
+Establish how the shared resource is allocated before making the promise. If an expert is needed for both the trial and an existing obligation at the same time, two separate statements of feasibility do not establish the joint arrangement. Change timing, scope or provision, or defer. The Reference's purchase case develops this conflict and the selective return when support is lost.
 
-Early difficulty needs a discriminating response. A wrong identifier can arise from source data, an unavailable correction rule, access, a defective configuration or a person's performance. Identify the missing or defective contribution and obtain the needed correction or support from its provider. When the limitation is a person's way of performing the operation, HCD.3 locates it and HCD.9 supplies a focused attempt, feedback, correction and retry. Useful help early in implementation can prevent a small difficulty from defeating use; it does not prove a universal motivation curve or durable independent capability.
+A wrong identifier can come from source data, an unavailable correction rule, missing access, a configuration defect or the way someone performs the operation. Identify the cause and obtain the needed correction or support from its provider. If the person needs to learn part of the operation, use HCD.3 to locate it and HCD.9 to practise it with feedback. Correct an error and retry when needed. Timely assistance can keep dispatch working. To establish independent performance, observe the person performing the operation under the intended conditions of help.
 
-Observe what the receiving dispatch work actually obtains. A valid scan, an installed device, a confident operator and an on-time useful dispatch answer different questions. MKT.6 returns an inadequate contribution to its owner and preserves sufficient results. Early enthusiasm may justify keeping a conversation open; it does not establish a reliable reference case. Ask permission before using another customer's account or contact, and keep any reported benefit within its observed conditions.
+Observe what the dispatch operation receives. A valid scan, an installed device, a confident operator and an on-time useful dispatch answer different questions. MKT.6 returns an inadequate contribution to its owner and preserves sufficient results. Early enthusiasm may justify keeping a conversation open; it does not establish a reliable reference case. Ask permission before using another customer's account or contact, and keep any reported benefit within its observed conditions.
 
 
 

@@ -10,9 +10,9 @@
 
 **Use this when** accepted semantic correspondences must become repeatable extraction or transformation behavior, or existing code contains joins, conversions, defaults, and exclusions that cannot be traced to their semantic premises. The recognizable failure is a pipeline that runs successfully while changing meanings, merging unresolved identities, dropping conflicts, or inventing values through defaults.
 
-The primary EntityOfConcern is one executable semantic rule set for a named use, independent of the physical pipeline that may enact it. The first move is to bind each output claim to accepted input senses and relation, identity, or composition results. The first result is a mapping specification precise enough to implement and test without reopening its semantic choices in code.
+For the named use, specify the executable semantic rules independently of the pipeline that may run them. First bind each output claim to accepted input senses and any relation, identity or composition results it relies on. The specification must be precise enough to implement and test without reopening its semantic choices in code.
 
-The payoff is a clean handoff to Data Engineering or another implementer and a traceable object for validation. Do not use SIE.7 to choose virtual versus materialized realization, build or operate the pipeline, or authorize access. A correspondence set is an input, not executable behavior; a running transform is evidence, not the specification itself.
+Data Engineering or another implementer receives the mapping specification, and validation can trace its rules to their premises. Do not use SIE.7 to choose virtual versus materialized realization, build or operate the pipeline, or authorize access. A correspondence set is an input, not executable behavior; a running transform is evidence, not the specification itself.
 
 ### SIE.7:2 - Problem
 
@@ -33,12 +33,12 @@ When these objects collapse, semantic review happens after implementation and ca
 
 ### SIE.7:4 - Solution
 
-Specify semantic mapping rules separately from their implementation. Bind every rule to a receiving-use contract, exact source and target schemes, accepted correspondence premises, and any identity or claim-composition premise on which that rule depends. Make selection, cardinality, conversions, defaults, errors, loss, trace, and tests explicit. Require implementations to preserve these behaviors or return a named discrepancy.
+Specify semantic mapping rules separately from their implementation. Bind every rule to a receiving-use contract, the source and target schemes, accepted correspondence premises, and any identity or claim-composition premise on which that rule depends. Make selection, cardinality, conversions, defaults, errors, loss, trace, and tests explicit. Require implementations to preserve these behaviors or return a named discrepancy.
 
 #### SIE.7:4.1 - Pattern-Use Unfolding
 
 1. **Name the output claim and receiver.** State the target field or proposition, its meaning, grain, interval/effectivity, and the action it supports.
-2. **Bind source and target schemes.** Reference exact `SIE.2` source rows and target interface/model definitions, editions, profiles, units, codes, identifiers, and access assumptions.
+2. **Bind source and target schemes.** Reference the `SIE.2` source rows and target interface/model definitions, editions, profiles, units, codes, identifiers, and access assumptions.
 3. **Bind semantic premises.** Reference accepted `SIE.4` correspondence rows and every load-bearing `SIE.5` identity disposition. Reference a `SIE.6` composition or conflict result when the rule depends on that result. Stop on an unresolved required premise; do not require identity or claim-composition work that cannot change the rule.
 4. **Specify selection and extraction.** State source records, predicates, joins, windows, configuration/effectivity filters, ordering, and behavior for missing or duplicate inputs.
 5. **Specify transformation.** State direction, construction, decomposition, aggregation, unit/code conversion, normalization, derivation, and required external lookup. Name the authority for any conversion or code table.
@@ -93,7 +93,7 @@ Positive examples cover one known configuration/feature/characteristic/result ch
 ### SIE.7:7 - Conformance Checklist
 
 - [ ] Every rule names a receiving output claim and use.
-- [ ] Source and target schemes, editions/profiles, meanings, units, codes, and identifiers are exact.
+- [ ] The specification identifies the source and target schemes, editions/profiles, meanings, units, codes, and identifiers used by each rule.
 - [ ] Accepted correspondence premises and any relied-on identity or composition premises are referenced rather than re-decided in code.
 - [ ] Selection, joins, filters, windows, effectivity, duplicates, and missing inputs are explicit.
 - [ ] Transformations, conversions, external lookups, and their authority are explicit.
@@ -142,7 +142,7 @@ Reopen when an input or target scheme changes, a correspondence/identity/composi
 ### SIE.7:12 - Relations
 
 - `SIE.1` supplies the output claims, accepted loss, service conditions, tests, and stop.
-- `SIE.2` supplies exact source and target semantics, editions, identifiers, units/codes, provenance, and gaps.
+- `SIE.2` supplies source and target semantics, editions, identifiers, units/codes, provenance, and gaps.
 - `SIE.4` supplies accepted correspondence premises; `SIE.5` and `SIE.6` supply identity and composition results when a rule relies on them.
 - `SIE.8` consumes rule behavior and implementation conditions to compare realization alternatives.
 - `SIE.9` exposes the rule outputs and error branches to the receiver.

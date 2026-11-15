@@ -2,12 +2,12 @@
 
 | Contribution | PatternIDs | Available result and scope |
 | --- | --- | --- |
-| Question, current frame, and design/stop | `RMP.1`–`RMP.2` | An exact source/owner answer or research question, then EvidenceSufficientStop, ResearchDesignDecision with genuine PostSelectionNeed, ResearchDesignHold or QualifiedNoNewStudy for the current selection. |
-| Operationalization and trace | `RMP.3`–`RMP.4` | Question-preserving operationalization or an exact obstacle/return, and a trace for its named examination with explicit limitations. These results come from their respective Methods, not from design selection alone. |
+| Question, current frame and design | `RMP.1`–`RMP.2` | A source or professional answer, a qualified research question or a specific gap. For design allocation, the result can be EvidenceSufficientStop, ResearchDesignDecision with any genuine PostSelectionNeed, ResearchDesignHold or QualifiedNoNewStudy. |
+| Operationalization and trace | `RMP.3`–`RMP.4` | Operations that preserve the question or a specified obstacle, and an account of the surviving material and its limits for the intended examination. |
 | Analysis, criticism, and credibility | `RMP.5`–`RMP.6` | A bounded claim with method-appropriate criticism, and a relevant credibility decision with interpretation of an actual test result when supplied. Either can finish the present question. |
-| Synthesis, episteme revision, and evidence return | `RMP.7`–`RMP.8` | A warranted corpus answer, including an adequate existing synthesis or useful refusal, and an exact knowledge revision with its bounded receiving return. |
+| Synthesis, episteme revision and evidence return | `RMP.7`–`RMP.8` | A justified corpus finding, including a sufficient existing synthesis or a reason to decline a stronger inference. A finding about what to retain or revise, with grounds and limits for the user. |
 | Research Method and practice improvement | `RMP.9` | Supported retention, correction or change for the named research use, or a restricted/stopped unsupported use. Relevant Core and field contributions retain their own scope. |
-| Practice reconstruction | `RMP.10` | A larger evidence programme for an unresolved candidate-Method question, with ordinary recovery and a sufficient bounded stop retained. |
+| Practice reconstruction | `RMP.10` | What can be recovered about a candidate Method from the evidence of practice. Ordinary recovery may suffice. A larger evidence programme addresses a remaining question when its contribution warrants the work. |
 | Method history | `RMP.11` | Diagnostic historical comparison that preserves source dependence, surviving rivals and separate causal-use conditions. |
 
-The repertoire contains all eleven RMP patterns. A complete repertoire provides their Methods, not the case-specific evidence, competence or authority needed to use them. A missing external contribution remains a precise limitation on the dependent result.
+These eleven patterns explain how to obtain their results. A particular case also requires its own evidence, competence and authority. If a necessary external contribution is missing, state which part of the answer depends on it and what can still be established.

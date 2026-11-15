@@ -6,4 +6,4 @@ A recognizable discrepancy is a reason to investigate. It is not proof that a pr
 
 The gain is an explained decision or a workable change in activity. Its cost includes obtaining the needed knowledge and developing and maintaining the proposed arrangement. Reuse adequate models and observations. Increase detail where a plausible difference could change the answer or its required assurance.
 
-A commercial example supplies no universal monetary objective. An internal or public service can use these accounting methods while obtaining its intended result and choice criteria from the responsible practice. Forecast and performance arrangements must also be examined from the affected participants' positions, rather than assuming a single account expresses every interest.
+An internal or public service can use these accounting methods while obtaining its intended result and choice criteria from the responsible practice. Examine forecast and performance arrangements from the affected participants' positions.

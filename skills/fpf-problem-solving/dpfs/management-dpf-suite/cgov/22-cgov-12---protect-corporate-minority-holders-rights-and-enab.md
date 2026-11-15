@@ -7,7 +7,7 @@
 
 Use this pattern when a corporate transaction or governance action may bypass a minority holder's information, participation, consent or other protected right; when a holder must decide how to contest an act; or when an available exit route needs to be exercised.
 
-Identify the affected right, its holder and the act that can preserve or exercise it in time. Provide the protection owed, or pursue the selected contest or exit procedure through the competent participant. Return what has actually been protected or exercised, with the remaining conditions. A timely usable choice can be the first result even while a dispute remains unresolved.
+Identify the affected right, its holder and the act that can preserve or exercise it in time. Provide the protection owed, or pursue the selected contest or exit procedure through the competent participant. State the result obtained and any conditions that remain relevant. A timely usable choice can be the first result even while a dispute remains unresolved.
 
 This is corporate minority protection under applicable law and instruments. Commercial disappointment alone does not establish a veto, compensation or a right to sell. Valuation, financing and litigation have their own specialist methods when needed.
 
@@ -15,13 +15,13 @@ This is corporate minority protection under applicable law and instruments. Comm
 
 A controlling shareholder can obtain approval for a transaction while omitting a notice or consent owed to another class. A minority holder can discover the omission only after an exercise deadline or irreversible commitment. A right that existed on paper then fails to protect the choice it was intended to preserve.
 
-The holder can also misread the position: losing a vote is treated as proof of abuse, dilution as necessarily unlawful, or a wish to leave as an obligation on the company to buy. These inferences can direct effort toward an unavailable remedy while a real, time-limited right expires.
+The holder can also misread the position: losing a vote is treated as proof of abuse, dilution as necessarily unlawful, or a wish to leave as an obligation on the company to buy. These inferences can direct effort toward an unavailable remedy while the exercise period for an available right expires.
 
 ### CGOV.12:3 - Forces
 
-Companies need to raise capital, reorganize and make decisions despite disagreement. Holders need protection against misuse of control and interference with their applicable rights. Neither interest determines every disputed case by itself.
+Companies need to raise capital, reorganize and make decisions despite disagreement. Holders need protection against misuse of control and interference with their applicable rights.
 
-Protection must be usable under actual notice, standing, deadline, cost and resource conditions. A theoretically available remedy may require specialist work the holder cannot obtain in time. Preserving a live choice may therefore precede a complete analysis of the dispute.
+Protection must be usable given the notice, standing, deadline, cost and resources the holder faces. A theoretically available remedy may require specialist work the holder cannot obtain in time. Preserving a live choice may therefore precede a complete analysis of the dispute.
 
 ### CGOV.12:4 - Solution
 
@@ -37,15 +37,15 @@ Where the basis is uncertain, state the bounded question that changes the next a
 
 #### CGOV.12:4.2 - Preserve the choice before it expires
 
-Recover notice, information, participation and exercise deadlines for this right. Determine what can still be done now. The company may need to provide corrected information or reopen a choice under the applicable rule; the holder may need to submit an exercise notice or seek a competent interim response.
+Recover notice, information, participation and exercise deadlines for this right. Determine which actions remain available. The company may need to provide corrected information or reopen a choice under the applicable rule; the holder may need to submit an exercise notice or seek a competent interim response.
 
-Do not assume that a complaint pauses the transaction or extends a deadline. Determine the effect of the selected action under its actual procedure. Preserve the relevant existing communications and facts where they will be needed.
+Do not assume that a complaint pauses the transaction or extends a deadline. Determine the effect of the selected action under the procedure that governs it. Preserve the relevant existing communications and facts where they will be needed.
 
 Use CGOV.8 when missing information prevents an informed choice. Provide what the right requires while retaining applicable confidentiality conditions.
 
 #### CGOV.12:4.3 - Compare the available protection, contest and exit routes
 
-Establish which actions are actually available: correcting the process, obtaining a required consent, exercising a purchase or participation right, negotiating a permitted resolution, using a dispute procedure, or exercising a particular sale or exit right.
+Identify the available routes and who can take each action: correct the process, obtain a required consent, exercise a purchase or participation right, negotiate a permitted resolution, use a dispute procedure, or exercise a sale or exit right.
 
 Compare them by the holder's purpose, attainability, time, total burden and consequences for the company and affected parties. Include preserving the current holding or accepting a legitimate outcome when those are live choices. Distinguish a substantive rights defect, uncertainty about its legal treatment and disagreement about commercial merits.
 
@@ -85,20 +85,20 @@ A supplied shareholder agreement gives Ivo a right, after a specified change of 
 
 Ivo identifies the controller as the obligated buyer and sends the required notice in time. That preserves and exercises the contractual demand under the supplied terms. It does not establish receipt of the price or completed transfer, and sending an invoice to the company would address the wrong participant.
 
-If the controller disputes the trigger or price, use the agreement's dispute route and the needed specialist contribution. Preserve the exercised right and unresolved question without claiming that the dispute itself completes the exit.
+If the controller disputes the trigger or price, use the agreement's dispute route and the needed specialist contribution. Preserve the exercised right and identify what still has to be resolved before payment and transfer.
 
 ### CGOV.12:6 - Bias-Annotation
 
 Minority status can draw attention to genuine vulnerability, but it does not settle which rights exist or which commercial outcome is justified. Equally, majority approval does not erase a separate class or individual entitlement.
 
-Public-company protections, private shareholder agreements and family-company arrangements differ. The examples demonstrate the method with supplied rules; they are not default legal prescriptions.
+Public-company protections, private shareholder agreements and family-company arrangements differ. Apply the rules that govern the holder’s case. The examples use the rules stated in each case.
 
 ### CGOV.12:7 - Conformance Checklist
 
 - The affected holder, act, right, obligated participant and applicable basis are identified.
 - The relevant deadline and the effect of the protective action are recoverable.
 - Available routes are compared with their resources, costs and attainable results.
-- The selected action is actually performed, or its specific impediment is identified.
+- The selected action was performed or the obstacle to performing it is identified.
 - Exercise, dispute, remedy and completed transfer are not conflated.
 - The resulting conditions reach the corporate decision or implementation they affect.
 
@@ -106,8 +106,8 @@ Public-company protections, private shareholder agreements and family-company ar
 
 | Anti-pattern | What fails | Useful correction |
 | --- | --- | --- |
-| A lost vote is treated as proof of abuse. | The actual protected right and alleged interference remain unspecified. | Recover the right, act and relevant conduct before choosing the route. |
-| The complete dispute analysis outlasts the exercise period. | An available choice expires while preparation continues. | Identify the timely protective action and its actual effect. |
+| A lost vote is treated as proof of abuse. | The protected right and alleged interference remain unspecified. | Recover the right, act and relevant conduct before choosing the route. |
+| The complete dispute analysis outlasts the exercise period. | An available choice expires while preparation continues. | Identify the timely protective action and what it preserves before the deadline. |
 | Dilution is treated as necessarily forbidden. | A valid capital issue and an omitted protection are confused. | Examine the applicable offer, consent and transaction rules. |
 | A submitted notice is called a completed exit. | Payment, transfer or dispute conditions remain unperformed. | Return the achieved act and follow its remaining conditions. |
 
@@ -115,7 +115,7 @@ Public-company protections, private shareholder agreements and family-company ar
 
 A holder can act on a usable right instead of relying on an abstract promise of fairness. The company can distinguish a needed protection from an unsupported demand and continue legitimate work within the resulting conditions.
 
-A proper procedure may leave disagreement or financial loss. The method supports an available protective action and its use; it does not guarantee a favourable valuation, successful contest or willing buyer where no such obligation exists.
+A proper procedure may leave disagreement or financial loss. The holder can preserve a choice or use an available remedy. Valuation, the outcome of a contest and any obligation to buy depend on the case.
 
 ### CGOV.12:10 - Architectural Rationale
 
@@ -125,9 +125,9 @@ The method keeps the substantive right and timely performance together. It also 
 
 ### CGOV.12:11 - SoTA-Echoing
 
-The practice question is how a holder can obtain useful protection before the available choice or remedy is lost. The [G20/OECD Principles, shareholder rights and equitable treatment](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-5.html) compare preventive rights with redress after infringement and retain litigation and alternative adjudication as possible routes. They also address abuse of minority holders, enforcement cost and delay, and misuse of litigation. These comparative principles guide the questions; actual law and instruments establish the available right and procedure.
+The practice question is how a holder can obtain useful protection before the available choice or remedy is lost. The [G20/OECD Principles, shareholder rights and equitable treatment](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-5.html) compare preventive rights with redress after infringement and retain litigation and alternative adjudication as possible routes. They also address abuse of minority holders, enforcement cost and delay, and misuse of litigation. These comparative principles guide the questions; the applicable law and corporate instruments establish the available right and procedure.
 
-The selected line combines timely preservation of an available choice with comparison of attainable remedies. Seeking a later adjudicated remedy is an alternative, especially after an act or where voluntary correction cannot secure the right. For the same holder, remaining time and available legal assistance, a feasible correction or timely exercise can preserve a choice that preparation of a complete merits case would allow to expire. Its advantage is retained opportunity at lower immediate burden; its limit is that it may leave compensation or the underlying dispute unresolved. Conversely, an available urgent adjudicative response can be the useful preservation move when correspondence or negotiation cannot prevent the loss. The method does not rank these routes independently of their effects and costs.
+The selected line combines timely preservation of an available choice with comparison of attainable remedies. Seeking a later adjudicated remedy is an alternative, especially after an act or where voluntary correction cannot secure the right. For the same holder, remaining time and available legal assistance, a feasible correction or timely exercise can preserve a choice that preparation of a complete merits case would allow to expire. Its advantage is retained opportunity at lower immediate burden; its limit is that it may leave compensation or the underlying dispute unresolved. Conversely, an available urgent adjudicative response can be the useful preservation move when correspondence or negotiation cannot prevent the loss.
 
 The method adapts the distinction between prevention and redress by comparing actions that preserve a choice in time with attainable remedies, and by separating exercise, remedy and completed transfer. Preserve an available protective move when waiting for a full dispute analysis would needlessly sacrifice it. Reopen when a right, deadline, available remedy, resource requirement or expected consequence changes.
 

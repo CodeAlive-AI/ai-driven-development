@@ -4,22 +4,22 @@
 
 ### SYSE.21:0 - Use This When
 
-Use this pattern when an engineering organization wants to retain, change, branch, or stop a Systems Engineering
-Method variant and needs to know what practitioners actually do. Standards, training, conference discussion, and
-tool promotion may describe one culture while project Work enacts another.
+Use this pattern when an engineering organization needs to explain whether and how a Systems Engineering practice continued, or decide whether to retain,
+change, branch or stop a Method variant. Identify the Methods practitioners enact and the conditions under which they do so. Standards, training, conference
+discussion and tool promotion can describe a different practice from the one seen in project Work.
 
 Begin with a bounded practitioner population, period, engineering profile, and representative Work. Identify the
-Method variant from that Work. Then state which cultural-continuation relations are observed—for example
+method enacted in that work. When claiming a variant, identify the reusable rule that differs and the method used for comparison. Then state which cultural-continuation relations are observed—for example
 transmission, receiving enactment, recognition, local selection, memory, retention, or loss—and which remain
 unknown.
 
-The first useful result is a **project-local cultural-continuation account**: the enacted Method variant, supported cultural claims and engineering consequences, available basis, limits and retained alternatives. It can finish as a qualified current account or supported continuation without a new intervention or later study. When an authorized project choice is made, distinguish its **practice-change decision record** from the cultural claims; retain the choice and its authority in the existing receiving account when that is sufficient.
+The first useful result is a **project-local cultural-continuation account**: the method enacted and any supported variant, supported cultural claims and engineering consequences, available basis, limits and any retained alternatives. It can finish as a qualified current account or supported continuation without a new intervention or later study. When an authorized project choice is made, distinguish its **practice-change decision record** from the cultural claims; retain the choice and its authority in the existing receiving account when that is sufficient.
 
-An authorized Agent performs any project decision Work. A chosen intervention and its later engineering Work require their actual capable performers, authority and obtaining conditions; a completed current account does not itself commission them.
+An authorized Agent makes any project decision. If the project selects an intervention, identify who can perform it and any later engineering Work, with the authority and working conditions each contribution requires. A completed account of current practice can stand without commissioning that work.
 A project choice supplies one possible input to cultural change; later Work and cultural relations establish what
 continued in the population.
 
-Use `C.36` alone when the general cultural-evolution account is enough. Use this pattern when the decision also
+Use `C.36` alone when the general cultural-evolution account is enough. Use this pattern when the account or decision also
 depends on engineering configuration, integration, assurance, release, service, practitioner burden, or
 consequences for the project system-of-interest or other named affected Systems. Use `SYSE.15` for the project-profile Method repertoire and `SYSE.20` for a conflict
 among Method and Work structures. Use an application DPF when the decisive distinction comes from, for example,
@@ -32,7 +32,7 @@ software, electrical, maritime, building, medical, or manufacturing engineering.
 | Systems Engineering Discipline | A `U.Discipline` established through `C.20`. When that result is unavailable, the pattern uses *Systems Engineering* as a discipline-facing label and states the bounded practice population directly. |
 | Systems Engineering culture | An ordinary phrase for a bounded cultural-evolution case concerning identified Methods, Work, practitioner Agents, carriers, and supported cultural relations. |
 | practitioner population | Agents selected by a stated inclusion rule for one place, period, engineering profile, and claim. A roster is an episteme describing this population. |
-| enacted Method variant | An identified `U.Method` enacted by representative dated Work in the population and period. Its MethodDescription and public labels are separate epistemes. |
+| method enacted in the practice | Identify the reusable way from representative dated Work in the population and period. To identify a method variant, state which rule or condition of applicability differs from the way used for comparison. A cultural variant can be tracked as a transmitted practice even when the method itself is unchanged. Its descriptions and labels can be examined separately. |
 | carrier | An identified System, episteme, or publication bearer used in a stated transmission, memory, mediation, or evidence relation. State the bearer's kind and relation. |
 | variant generation | Work or another grounded occurrence that produces or differentiates a Method, MethodDescription, arrangement, or other variant. Production of a description establishes that episteme; Method identity is established separately. |
 | transmission | A relation by which a variant or its description becomes available to another Agent or population. Receiving enactment requires later Work. |
@@ -96,16 +96,16 @@ The recurring tensions are:
 
 ### SYSE.21:4 - Solution
 
-Recover the enacted Method variant and cultural relations supported in the named population. Return the qualified current account or compare the continuation alternatives that can change the receiving decision. Existing local observations and qualified judgement may suffice for continuation. Select new inquiry or intervention only when its attainable contribution warrants design, engineering, participant and displaced-Work burden under actual authority and protection. A claimed performed test or later cultural result needs its own Work and observations; it is not established by choosing it.
+Recover the method enacted, any supported variant and the cultural relations supported in the named population. Return the qualified current account or compare the feasible ways of continuing, changing or stopping the practice for the receiving decision. Existing local observations and qualified judgement may suffice for continuation. Select new inquiry or intervention only when its attainable contribution warrants design, engineering, participant and displaced-Work burden under actual authority and protection. A claimed performed test or later cultural result needs its own Work and observations; it is not established by choosing it.
 
 
 #### SYSE.21:4.1 - Construct a supported continuation or change
 
-Work from the engineering result that people must obtain toward the practice and conditions that can produce it, then follow the proposed arrangement through receiving Work. The account below develops that connection. It can be entered at an already identified difficulty. A sufficiently supported current account can finish before a change is proposed. An adequate existing intervention can be used without redesigning it.
+Work from the engineering result practitioners need toward the practice and conditions that can produce it, then trace the current practice through receiving Work or examine how a proposed arrangement would support it. You can start with a difficulty already identified. A sufficiently supported current account can finish before a change is proposed. An adequate existing intervention can be used without redesigning it.
 
 ##### SYSE.21:4.1.1 - Recover the practice through an engineering use
 
-Choose the engineering action whose result makes the question consequential: accepting a configured design, integrating constituents, releasing a change, maintaining service, or another named use. State the profile, population, period, affected Systems and decision. Recover the result that this action actually used, the Work that produced it, and the Method enacted there. A compatible `SYSE.20` account can supply the local Work arrangement. A school name or prescribed process does not identify what happened.
+Choose the engineering action whose result makes the question consequential: accepting a configured design, integrating constituents, releasing a change, maintaining service, or another named use. State the profile, population, period, affected Systems and receiving question or decision. Recover the result used in this action, the Work that produced it, and the Method enacted there. A compatible `SYSE.20` account can supply the local Work arrangement. A school name or prescribed process does not identify what happened.
 
 For example, a release team says that impact analysis is poor. Follow one consequential change from its configuration and intended effect through impact candidates, their review, and the evidence used for release. Identify where an affected constituent was missed, where a correct candidate was discarded, or where the receiving review could not use the supplied result. These are different difficulties. Start with available cases and qualified practitioner accounts; examine another ordinary or stressed case only where it can change the diagnosis or proposed scope. An unavailable history limits the claim rather than turning recollection into an observed fact.
 
@@ -121,9 +121,9 @@ Trace the failed or costly receiving action backward to the contribution on whic
 | A qualified engineer succeeds with the applicable configuration and fails when the approved source is inaccessible. | Restore the permitted source and configuration lookup at the point of Work, and include its availability and burden in the arrangement. | A new curriculum or a claimed decline in capability is not established by that access failure. |
 | The supplied description and support are adequate, but a named performer cannot carry out a needed engineering judgement. | Obtain a qualified performer or develop the identified capability, with representative Work and feedback. | Team-level delay alone does not identify a human capability demand. |
 | Engineers can identify a release concern but the arrangement prevents a timely response or penalizes raising it. | Obtain a change to the response, responsibility, capacity or protection arrangement from the authorized organization practice; retain the required engineering reliance. | Persuasion and a new checklist do not confer decision rights or protected response time. |
-| A successful local variant disappears when its original practitioner leaves. | Locate which description, worked example, recognition, assistance or means later Work actually needs; arrange access and maintenance for that contribution. | Uploading the visible document does not establish continuation of the whole practice. |
+| A successful local variant disappears when its original practitioner leaves. | Locate which description, worked example, recognition, assistance or means later Work needs; arrange access and maintenance for that contribution. | Uploading the visible document does not establish continuation of the whole practice. |
 
-[FPF A.3.1.MI:4.5](../../../sections/05-part-a---kernel-architecture-cluster/28-a-3-1-mi---introduce-a-method-into-practice-and-decide-what.md#a31mi45---explain-a-changed-result-before-selecting-an-adaptation) develops comparison of the target Method, its introduction strategy, mechanism and context. Use its result to decide which of these changes here. [OCE.10:4.1 through OCE.10:4.6](../../management-dpf-suite/oce/32-oce-10---choose-a-response-to-participation-or-working-cultu.md#oce1041---recover-one-consequential-participation-gap) develops a response to participation and working-culture difficulties, including capability, access, protection and receiving response. Use that Method when the organizational condition is the consequential obstruction. A returned recommendation still needs the engineering conditions below before it can support this project's change.
+[FPF A.3.1.MI:4.5](../../../sections/05-part-a---kernel-architecture-cluster/28-a-3-1-mi---introduce-a-method-into-practice-and-decide-what.md#a31mi45---explain-a-changed-result-before-selecting-an-adaptation) develops comparison of the target Method, its introduction strategy, mechanism and context. Use its result to decide which of these changes here. [OCE.10:4.1 through OCE.10:4.6](../../management-dpf-suite/oce/32-oce-10---choose-a-response-to-participation-or-working-cultu.md#oce1041---recover-one-consequential-participation-gap) develops a response to participation and working-culture difficulties, including capability, access, protection and receiving response. Use that Method when the organizational condition is the consequential obstruction. For this project, check the recommendation against the engineering conditions below before relying on it.
 
 If the relevant difference cannot be resolved now, compare retaining the qualified current arrangement, a restricted branch, a useful obtainable inquiry and stopping. A causal explanation may remain unresolved while a bounded continuation is supported. Conversely, an unexplained safety-relevant failure can withhold the affected use even when the Method is popular. `SYSE.4` retains the claim-specific assurance question; the cultural account cannot lower its requirement.
 
@@ -131,9 +131,9 @@ If the relevant difference cannot be resolved now, compare retaining the qualifi
 
 Start from a credible current way where one exists. Identify what the receiving engineering action must still obtain, and construct a change that can remove the diagnosed limitation. This can produce a different engineering Method, different support for the same Method, a profile-specific branch, or a return to a qualified earlier way. Keep these meanings separate when deciding what to preserve and transmit. Use `A.3.1` when Method identity or refinement matters to that decision.
 
-For each proposed change, first work backward from the receiving use. An integration review may need accepted impact claims about the selected controller configuration, with reasons and recoverable sources. Faster candidate generation alone does not supply those claims. It needs a way to connect each candidate to the applicable source and configuration, competent review, and a result the integration review can interpret. Construct the missing link, obtain an adequate supplied operation, or retain the branch as unsupported.
+For each proposed change, first work backward from the receiving use. An integration review may need accepted impact claims about the selected controller configuration, with reasons and recoverable sources. To use a generated candidate, connect it to the applicable source and configuration, obtain competent review and provide the result in a form the integration review can interpret. Use an adequate existing operation and its supported connections. Where one is missing, construct or obtain it, or withhold that branch.
 
-Then follow the arrangement forward on representative material. Identify what the next practitioner receives, why it can be used, and which state, scope, independence, evidence or authority condition permits that use. Include the means that made the earlier trial succeed. A model-based or AI-assisted variant can retain independent engineering judgement; an instruction that silently transfers that judgement to the tool proposes a different arrangement. Inspect simultaneous demands: the same scarce assurance pair cannot provide two overlapping reviews merely because each cell's local estimate fits its own limit. `SYSE.20` resolves a consequential Work-order or shared-resource conflict; the variant inherits the resulting condition.
+Then follow the arrangement forward on representative material. Identify what the next practitioner receives, why it can be used, and which state, scope, independence, evidence or authority condition permits that use. Include any means on which the earlier evidence of successful use depended. A model-based or AI-assisted variant can retain independent engineering judgement; an instruction that silently transfers that judgement to the tool proposes a different arrangement. Inspect simultaneous demands: the same scarce assurance pair cannot provide two overlapping reviews merely because each cell's local estimate fits its own limit. `SYSE.20` resolves a consequential Work-order or shared-resource conflict; the variant inherits the resulting condition.
 
 Construct a branch where a real difference in use justifies it. A repeatable software-only change may use a qualified replay, while a changed actuator or physical interaction needs a different specialist result or test facility. Explain how the practitioner recognizes the branch and what happens when the distinction is unknown. Do not use a maturity ladder to force the second profile into the first. If the necessary physical evidence cannot be obtained, preserve the supported branch and withhold the proposed extension.
 
@@ -143,9 +143,9 @@ Retain, change, branch and stop are prompts, not four compulsory alternatives. G
 
 Compare the alternatives on the same engineering use, profile, period and acceptance basis. Preserve required configuration identity, evidence, specialist protection, independent judgement and authority before comparing compensable gains. Count preparation, source recovery, learning, receiving review, recurring support, rework, fallback and displaced engineering Work wherever they can change the choice. A faster authoring operation can increase the time until a usable release result exists.
 
-Use direct observations for what they observed and qualified estimates for what they estimate. Separate one found defect from a comparative defect-detection rate, and short-term service continuity from evidence that the intervention caused reliability. Do not claim that an AI-assisted or newly standardized practice is superior merely because it has a more visible example. A bounded expert judgement can still justify a reversible local choice when its grounds and limits are clear.
+State what the direct observations establish and what a qualified estimate supports. Separate one found defect from a comparative defect-detection rate, and short-term service continuity from evidence that the intervention caused reliability. Do not claim that an AI-assisted or newly standardized practice is superior merely because it has a more visible example. A bounded expert judgement can still justify a reversible local choice when its grounds and limits are clear.
 
-Apply `C.11` or a suitable domain decision Method to the formed alternatives. Return the supported continuation, accepted loss, fallback and condition for reopening. Further inquiry is useful only if its attainable result can change that choice at a warranted total burden; `C.11.DUA` develops that appraisal. A selected trial states what engineering use remains withheld, what result would permit reconsideration, who may perform it, and the needed means and protection. It remains a proposal until the Work occurs.
+Apply `C.11` or a suitable domain decision Method to the formed alternatives. State the supported continuation, any accepted loss or fallback, and what would reopen the decision. Choose further inquiry only when an attainable result could change the choice or its supported scope enough to justify the full burden; `C.11.DUA` develops that appraisal. For a selected trial, state any use that remains withheld, what result could warrant reconsideration, who may perform the trial, and the means and protection it requires. Distinguish the proposed trial from the Work when it occurs.
 
 ##### SYSE.21:4.1.5 - Make the selected way available to receiving Work
 
@@ -153,36 +153,36 @@ When intervention is selected, use [FPF A.3.1.MI:4.1–A.3.1.MI:4.5](../../../se
 
 Prepare what a receiving practitioner needs at the point of action: the applicable description and worked example, permitted inputs and tools, reasons for the consequential choices, recognition of a branch or stop, and access to necessary expertise and response. Explain which technical choices are fixed by the receiving use and which remain open. Let receiving engineers expose an incompatible interface, missing datum or impossible review demand; use that information to repair the variant or its conditions. Technical explanation and joint problem solving support uptake without replacing another Agent's specialist authority.
 
-Transmission occurs when the relevant carrier becomes available. Receiving enactment needs actual Work under the applicable conditions. Observe which assistance that Work used before claiming independent capability or a readily repeatable practice. Arrange later retrieval and support where continuation depends on them: maintained configuration mappings, examples of accepted and rejected impacts, review capacity, usable feedback and an accountable response.
+To establish transmission, identify what reached which receiving practitioners and how. The recipient may gain access to a usable description or observe another agent demonstrating the relevant operation. Record what the evidence establishes about that access or observation. Receiving enactment requires the receiving Agent to perform the Method under the applicable conditions. Observe which assistance that Work used before claiming independent capability or a readily repeatable practice. Arrange later retrieval and support where continuation depends on them: maintained configuration mappings, examples of accepted and rejected impacts, review capacity, usable feedback and an accountable response.
 
-Use `OCE.10` when the selected response changes participation or working-culture conditions. Obtain an organizational decision for changed responsibility or authority; do not embed that decision in an engineering instruction. Use `HCD.1` only when a real receiving decision needs an identified human capability demand. A functioning existing capability, or a failure attributable to unavailable access, does not create a training requirement.
+Use `OCE.10` when the selected response changes participation or working-culture conditions. Obtain an organizational decision for changed responsibility or authority; do not embed that decision in an engineering instruction. Use `HCD.1` when a receiving decision depends on an identified need to develop a human capability. A functioning existing capability, or a failure attributable to unavailable access, does not create a training requirement.
 
 ##### SYSE.21:4.1.6 - Distinguish continuation from effect and return selectively
 
-Follow the cultural relations needed by the claim. Later selection concerns which variant practitioners actually choose or reproduce; memory concerns recoverable carriers in use; retention needs later enactment or reproduction within the stated population and period. A retired repository instruction establishes a loss through that carrier, not disappearance of the Method from the profession. Keep engineering consequences beside these observations rather than using either as a proxy for the other.
+Follow the cultural relations needed by the claim. Later selection concerns which variant practitioners choose, reproduce or transmit; memory concerns recoverable carriers in use; retention needs later enactment or reproduction within the stated population and period. A retired repository instruction establishes a loss through that carrier, not disappearance of the Method from the profession. Keep engineering consequences beside these observations rather than using either as a proxy for the other.
 
 When a result differs from expectation, return to the consequential relation. Missing source access returns to support; correct enactment with insufficient impact coverage returns to the engineering Method; unusable review results return to the receiving join; discouraged challenge returns to the organizational response; a changed configuration or provider returns to the scope and qualification that relied on it. A.3.1.MI:4.5 supplies the deeper explanation-and-adaptation comparison where needed. Several explanations can remain live without an automatic new study.
 
-Trace the affected uses and common constraints before extending or stopping the variant. Reuse an observation only while its meaning, configuration, performer support and conditions answer the new question. Preserve unaffected branches. Send `SYSE.15` feedback only when the evidence crosses the project's repertoire limit; send a human capability demand only when its holders, Work and actual need are recoverable. Finish with the qualified current account, supported change, restricted use or precise unresolved dependency that the next engineer can act on.
+Trace the affected uses and common constraints before extending or stopping the variant. Reuse an observation only while its meaning, configuration, performer support and conditions answer the new question. Preserve unaffected branches. Send `SYSE.15` feedback only when the evidence crosses the project's repertoire limit; send a human capability demand only when its holders, Work and need for development can be identified. Finish with the qualified current account, supported change, restricted use or unresolved dependency that the next engineer can act on.
 
 #### SYSE.21:4.2 - Record the Result
 
-Use the positions below for the claims and receiving decisions actually present. A qualified current account or supported continuation can finish on available grounds. Later-observation and downstream fields are conditional.
+Use the positions below for the claims and receiving decisions at issue. A qualified current account or supported continuation can finish on available grounds. Later-observation and downstream fields are conditional.
 
 | Result position | Required content |
 | --- | --- |
-| use boundary | Engineering profile, project or organization, place, period, project system-of-interest when designated or another decision-relevant world-side subject, affected Systems, practitioner population, receiving decision, and Discipline result or bounded discipline-facing label. |
-| enacted variant | Identified Methods, MethodDescriptions, representative Work, performing Agents, subject configuration, results, evidence window, and stop condition. |
-| cultural claims | Every asserted cultural relation with its variant, participants, population, period, evidence, uncertainty, and missing links. |
-| decision reference, when a project choice is made | Deciding Agent, authority, current options, comparison basis, choice rule, supported disposition, fallback, accepted losses and limits; include an intervention or probe only when selected. Keep the decision result distinct from cultural evidence, in the existing account or a referenced record according to receiving use. |
+| use boundary | Engineering profile, project or organization, place, period, project system-of-interest when designated or another decision-relevant world-side subject, affected Systems, practitioner population, receiving question or decision, and Discipline result or bounded discipline-facing label. |
+| method enacted and any supported variant | Identified Methods, differences in the reusable way when a variant is claimed, MethodDescriptions, representative Work, performing Agents, subject configuration, results, evidence window, and stop condition. |
+| cultural claims | Every asserted cultural relation with its variant, participants, population, period, evidence, uncertainty and any missing links that limit the claim. |
+| decision reference, when a project choice is made | Deciding Agent, authority, current options, comparison basis, choice rule, supported disposition, its limits, and any fallback or accepted losses; include an intervention or probe only when selected. Keep the decision result distinct from cultural evidence, in the existing account or a referenced record according to receiving use. |
 | intervention and later observations, when claimed | Actual intervention and engineering Work, observed cultural relations, practitioner burden, engineering consequences and consequences for named affected Systems, with temporal and causal limits. A proposed test supplies none of these performed results. |
-| downstream use, when needed | Compatible repertoire feedback for `SYSE.15` or a real human capability demand for `HCD.1`. A missing result blocks only the receiving use that needs it; it does not automatically commission inquiry. |
-| continuation | Retained alternatives, evidence gaps, source and carrier references needed by later use, and reopen conditions. |
+| downstream use, when needed | Compatible repertoire feedback for `SYSE.15` or an identified need to develop a human capability for `HCD.1`. A missing result blocks only the receiving use that needs it; it does not automatically commission inquiry. |
+| continuation | Any retained alternatives, material evidence gaps, source or carrier references needed by a later use, and conditions that would reopen the result. |
 
 
 #### SYSE.21:4.3 - What Changes in Practice
 
-Engineers can locate whether a disappointing result calls for a different engineering operation, a repaired result-use connection, adequate support, or an organizational response. They construct the changed arrangement through the actual receiving Work and preserve configuration, assurance, shared resources and service conditions. A practice can continue on sufficient local grounds, branch for a different profile, or stop at a precise missing contribution. Cultural continuation and engineering effectiveness retain separate evidence.
+Engineers can locate whether a disappointing result calls for a different engineering operation, a repaired result-use connection, adequate support, or an organizational response. When a change is needed, engineers develop it from the Work it must support and preserve configuration, assurance, shared resources and service conditions. A practice can continue on sufficient local grounds, branch for a different profile, or stop at an identified missing contribution. Cultural continuation and engineering effectiveness retain separate evidence.
 
 
 ### SYSE.21:5 - Worked Cases
@@ -205,8 +205,8 @@ The case supports two `B.1.5` Method-part relations inside the candidate Method:
 2. an assigned engineering Agent accepts or rejects each candidate with a recorded reason before separate
    integration, assurance, and release decisions.
 
-The Method stops when a required source or configuration reference cannot be recovered, suitable independent
-review is unavailable, or a specialist safety result is missing. Its description, examples, review criteria, and
+Stop the affected use of the Method when a required source or configuration reference cannot be recovered, suitable independent
+review is unavailable, or a specialist safety result required for that use is missing. The Method description, examples, review criteria and
 demonstration result are carriers held in an engineering repository.
 
 The first release cell enacts the Method during one 2026-Q4 release-preparation Work occurrence. The AI Agent
@@ -220,7 +220,7 @@ During 2027-Q1 the two release cells choose and enact the same Method for three 
 evidence set keeps the required references, independent review, and manual fallback. Review effort is 5.2, 5.8,
 and 5.5 person-hours, below the project's six-hour review limit. For this constructed continuation, source preparation and candidate generation add 0.6 person-hour per change; replay is already included in the review figures. Total recurring effort is therefore 5.8, 6.4 and 6.1 person-hours against a separate seven-hour whole-effort limit. The two-hour lookup repair is an explicitly accepted setup cost, not silently omitted from the comparison. The assurance pair is available in the selected windows, and the operating arrangement does not schedule the two cells against that pair simultaneously. If the windows overlapped, the local totals alone would not establish feasibility.
 
-The case asserts the following seven cultural claims; this is the complete claim set used by the current decision:
+The table gives all the cultural claims used for this decision.
 
 | Claim | Evidence and boundary |
 | --- | --- |
@@ -232,7 +232,7 @@ The case asserts the following seven cultural claims; this is the complete claim
 | retention | Four later enactments across both cells continued through the stated period with the same fallback and review conditions. |
 | local carrier loss | The repository stopped presenting an older prompt-only instruction; the claim concerns access through that repository only. |
 
-The manual search and checklist remain available as way A. The practice council forms two complete continuation alternatives for the eligible trial class; way A supplies a fallback within B and the performing way after C:
+The manual search and checklist remain available as way A. The practice council forms two complete continuation alternatives for the eligible trial class; way A is the fallback in B and the way the cells perform review under C:
 
 | Option | Decision-bearing change | Expected gain | Moved burden or limit |
 | --- | --- | --- | --- |
@@ -255,7 +255,7 @@ Now change the receiving condition: a different AI provider is proposed for phys
 If permitted source material, the assurance pair, a protected preparation window and a worthwhile comparison are available, select a bounded replay before widening supported use. The replay would distinguish recoverable, correctly bound candidates from unsupported references and would expose whether review and whole-effort burden fit their respective limits. A favorable reference replay would still not supply a missing physical-safety result. If the new provider cannot expose the needed sources, more prompting does not repair that unavailable input: withhold the branch and use the qualified current arrangement or manual fallback. The proposal is not a performed test; source, configuration, independent-review and safety stops remain binding.
 
 The original two-cell observations support a bounded repertoire update from *defer after the first trial* to *retain for this change
-class with references, independent review, and fallback*. It does not yet supply an `HCD.1` input: the case has
+class with references, independent review, and fallback*. Those observations do not supply an `HCD.1` input: the case has
 team-level review burden but no observation identifying which human-holder capability needs development. No human-capability inquiry is needed to complete this continuation. If a later decision depends on such a demand, select useful obtainable inquiry into the holders, representative Work and limiting capability.
 
 District-heating service continues during the case. This is a service observation; the short case does not
@@ -266,17 +266,17 @@ limit, safety authority, or a consequence for a named affected System changes.
 
 In another constructed case, a machinery group proposes replacing a drawing-led interface review with review against a configured three-dimensional model. Its design office can reveal clearances and identify the exact revision, but the receiving workshop reviews printed exports that omit the revision binding. Several fit problems are reported as resistance to the new engineering culture.
 
-Follow the actual use. The workshop must decide whether the named part revision can be fitted and maintained under the available access conditions. Its qualified engineers make that judgement on an identified model when they can obtain it. The present failure therefore does not establish a missing skill or an inferior geometric Method: the transmitted export cannot support the receiving configuration claim. More advocacy would preserve the failed join.
+Follow the workshop’s use of the printed export. The workshop must decide whether the named part revision can be fitted and maintained under the available access conditions. Its qualified engineers make that judgement on an identified model when they can obtain it. The present failure therefore does not establish a missing skill or an inferior geometric Method: the transmitted export cannot support the receiving configuration claim. More advocacy would preserve the failed join.
 
 The group constructs two feasible responses. One provides permitted model access at the workshop review station, including the supported viewer, revision lookup and time needed for review. The other retains a drawing-led branch with a controlled export that carries the applicable part and model revisions and with a maintained way to return unresolved geometry to the design office. Both preserve the workshop's independent fit judgement. A viewer installation without the revision lookup is rejected as incomplete.
 
 The access arrangement is already supported at one workshop, so that workshop uses the model branch. A second workshop cannot run the viewer in its authorized environment; a compatible controlled export and receiving review are available there, so it retains the drawing branch. The difference concerns use conditions, not an asserted ranking of practitioners. Preparing, identifying and returning the export is counted in the second arrangement's burden.
 
-Later Work can establish enactment and retention of either branch. It does not show that every fit problem has disappeared. If the second workshop gains a supported viewer and reliable revision access, reconsider its branch without reopening the geometry Method everywhere. If an actual fit error instead reveals that the model omits a consequential tolerance, return to the engineering Method and its acceptance basis; neither access repair nor cultural endorsement supplies that missing relation.
+Later Work can establish enactment and retention of either branch. It does not show that every fit problem has disappeared. If the second workshop gains a supported viewer and reliable revision access, reconsider its branch without reopening the geometry Method everywhere. If a fit error instead reveals that the model omits a consequential tolerance, return to the engineering Method and its acceptance basis; neither access repair nor cultural endorsement supplies that missing relation.
 
 ### SYSE.21:6 - Bias Annotation
 
-Watch for these five recurring interpretation biases:
+Watch for these recurring interpretation biases:
 
 | Recurring bias | Likely drift | Repair |
 | --- | --- | --- |
@@ -288,11 +288,11 @@ Watch for these five recurring interpretation biases:
 
 ### SYSE.21:7 - Conformance Checklist
 
-The following conditions are required for a conforming use of this pattern.
+
 
 - [ ] The pattern use names the engineering profile, population, place, period, project system-of-interest when
-      designated or another decision-relevant world-side subject, and receiving decision.
-- [ ] Representative Work and enacted Methods ground the current variant.
+      designated or another relevant world-side subject, and the receiving question or decision.
+- [ ] Representative Work identifies the method enacted. When a method variant is claimed, the account shows what differs in the reusable way.
 - [ ] Performing Agents, participating Systems, MethodDescriptions, carriers, and result epistemes retain their
       own relations.
 - [ ] Every asserted cultural claim names its variant, participants, population, period, evidence, and
@@ -304,11 +304,11 @@ The following conditions are required for a conforming use of this pattern.
 - [ ] Project choice, intervention Work, later enactment, cultural selection, retention, and effect remain
       separate claims.
 - [ ] Repertoire and human-capability returns are supplied only for a receiving need and cross its stated threshold and use boundary.
-- [ ] The receiving engineer or manager can use the qualified account, continuation or stop; a later necessary reason remains with that result.
+- [ ] The receiving engineer or manager can use the qualified account, continuation or stop; the result retains the grounds needed by a later user and any condition that would reopen the conclusion.
 
 ### SYSE.21:8 - Common Failures and Repairs
 
-When one of these recurring failures appears, use the corresponding repair:
+
 
 | Recurring failure | Repair |
 | --- | --- |
@@ -326,9 +326,9 @@ When one of these recurring failures appears, use the corresponding repair:
 
 The project can improve engineering practice in the named population. Current enactment,
 project intervention, cultural continuation, and consequences for named affected Systems remain inspectable. Bounded evidence
-can revise a Method repertoire without a new experiment. A human capability question is pursued only for a real receiving demand, not generated from every missing field or team-level burden.
+can revise a Method repertoire without a new experiment. A human capability question is pursued when the receiving decision depends on an identified need for human development.
 
-The cost is the claim separation and evidence needed for the actual use. Later observations can be costly or unavailable; select their attainable contribution against the whole burden. Some links remain unknown, useful variants branch by profile, and short projects rarely settle prevalence or causal effectiveness. Fallbacks, bounded use and relevant reopen conditions keep those limits usable now.
+The cost is the claim separation and evidence needed for the intended use. Later observations can be costly or unavailable; compare what later observations could establish with the full cost of obtaining them. Some links remain unknown, useful variants branch by profile, and short projects rarely settle prevalence or causal effectiveness. Fallbacks, bounded use and relevant reopen conditions keep those limits usable now.
 
 ### SYSE.21:10 - Rationale
 
@@ -346,11 +346,11 @@ continuation separate supports both deliberate improvement and honest uncertaint
 Follow how Method variants are carried through a professional community and how the needed capabilities change. Simultaneous enactment can differ from the sequence used to teach the Methods. Relate cultural continuation to the co-development of target and builder Systems, and assess transfer for the receiving Method arrangement and population.
 
 
-The comparison distinguishes three contributions. `C.36` explains cultural relations. A.3.1.MI already develops introduction, mechanism/context comparison and selective adaptation; OCE.10 already develops responses to participation and working-culture difficulties. Use those developed Methods for their actual questions. The engineering contribution here is to construct their receiving conditions through configured engineering results, joins, assurance, shared means and profile branches. A generic introduction plan or an observed adoption pattern cannot supply a missing configuration link or physical qualification.
+The comparison distinguishes three contributions. `C.36` explains cultural relations. A.3.1.MI develops introduction, mechanism/context comparison and selective adaptation; OCE.10 develops responses to participation and working-culture difficulties. Use those developed Methods when the work needs their contributions. The engineering contribution here is to construct their receiving conditions through configured engineering results, joins, assurance, shared means and profile branches. A generic introduction plan or an observed adoption pattern cannot supply a missing configuration link or physical qualification.
 
 The empirical AI sources below inform unlike contexts and plausible difficulties. They do not establish a universal cultural progression, the effect of the constructed interventions, or a required move from human review to autonomous engineering. Their publication dates are not adoption dates for every population.
 
-The source uses are:
+
 
 | Source | Retained contribution | Use boundary |
 | --- | --- | --- |
@@ -361,13 +361,13 @@ The source uses are:
 | [Kemell et al. 2025, *Still just personal assistants?*](https://doi.org/10.1016/j.infsof.2025.107805) | An exploratory seven-company European software study distinguishes individual assistance from emerging organizational uses and reports adoption difficulties. | This bounded historical observation challenges automatic inference from tool access to changed practice; it supplies neither current field-wide prevalence nor a validated general intervention. |
 | [Luke et al. 2026, *How are professional practices adopting generative AI?*](https://doi.org/10.1017/pds.2026.10600), Methods and §§4.3–5.3 | A three-week embedded automotive engineering-design case reports a gap between interest and supported workflow use; the authors propose more situated enablement. | The proposals help form alternatives; the case does not demonstrate their sustained effectiveness or justify transfer of early design assistance to assurance or release authority. |
 
-Reopen the affected source-use claim when a later edition or representative Work changes the practical move.
+Reopen the affected source-use claim when a later edition or representative Work could change what the cited source supports for the practical decision or the conditions on that support.
 Use a new publication or tool release as evidence for the particular cultural relation it establishes; examine
 later Work for enactment and retention.
 
 ### SYSE.21:12 - Relations
 
-The following direct relations are used by this pattern body.
+
 
 - `C.36` governs the general cultural-evolution case and direct cultural claims; `C.36.P` restores overloaded
   culture, practice, school, community, and regime wording.
@@ -376,8 +376,8 @@ The following direct relations are used by this pattern body.
 - `A.3.1`, `A.3.2`, `A.15.1`, and `F.6` govern Methods, MethodDescriptions, performed Work, and attribution when
   needed. `A.13` supplies the agency test when a performing System's agency is disputed.
 - `C.11` governs an already formed project choice; `C.11.DUA` appraises a questionable inquiry demand, including design and whole burden. Establish the required authority and permission for the chosen action separately. `A.10` and the effect patterns govern evidence and causal claims.
-- A compatible `SYSE.20` result supplies only the local Method-and-Work architecture, project variant, and bounded
-  choice for its stated use. `SYSE.21` establishes any later cultural claim separately.
+- Use a compatible `SYSE.20` account for the local Method-and-Work arrangement. If it also assesses that arrangement or records a project choice, use that conclusion
+  within its stated scope. Establish any claim about transmission, retention or loss separately through `SYSE.21`.
 - `SYSE.21` supplies revision feedback to `SYSE.15` only when later evidence crosses a repertoire limit. The
   `SYSE.15` Agent makes the repertoire decision.
 - Cross-DPF result `XRI-21` supplies `HCD.1` only with a current human capability demand for compatible holders,

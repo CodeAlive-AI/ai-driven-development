@@ -3,7 +3,7 @@
 ## Contents
 
 - [F.0.1 - Source-Local Meaning Recovery](01-f-0-1---source-local-meaning-recovery.md) (251 lines) — Type: Architectural (A)
-- [F.0.2 - Semantic Synthesis across Source Ontologies](02-f-0-2---semantic-synthesis-across-source-ontologies.md) (240 lines) — Type: Architectural (A)
+- [F.0.2 - Semantic Synthesis across Source Ontologies](02-f-0-2---semantic-synthesis-across-source-ontologies.md) (242 lines) — Type: Architectural (A)
 - [F.0.2.MA - Synthesize and Allocate Method Contributions](03-f-0-2-ma---synthesize-and-allocate-method-contributions.md) (161 lines) — Use this when. You have recovered useful Method-related material from several sources, but still have to decide which contributions belong together and where they should be used. Documentary sources...
 - [F.0.2.RC - Test Constructive Coverage and Refresh Dependent Explanations](04-f-0-2-rc---test-constructive-coverage-and-refresh-dependent.md) (178 lines) — Use this when. A Method-description language claims to preserve useful source contributions, but you need to find out whether a user can recover the promised action, conditions and source basis. Use...
 - [F.1 - Find and Select Sources for a Current Question](05-f-1---find-and-select-sources-for-a-current-question.md) (484 lines) — Type: Architectural (A)
@@ -25,4 +25,4 @@
 - [F.16 - Worked-Example Template (Cross-Domain)](21-f-16---worked-example-template.md) (292 lines) — “Show one claim, the actual values and relations that make it true or false, and enough evidence for a reader to replay the example.”
 - [F.17 - Make a Settled Naming Decision Recoverable for Reuse (Unified Term Sheet)](22-f-17---make-a-settled-naming-decision-recoverable-for-reuse.md) (1101 lines) — Type: Lexical row pattern (F)
 - [F.18 - Local-First Unification Naming Protocol](23-f-18---local-first-unification-naming-protocol.md) (954 lines) — For practitioners who need a durable reusable name for an already governed value.
-- [F.19 - Ontology-First Plain Technical Rewriting](24-f-19---ontology-first-plain-technical-rewriting.md) (410 lines) — Type: Plain-technical precision-restoration pattern
+- [F.19 - Ontology-First Plain Technical Rewriting](24-f-19---ontology-first-plain-technical-rewriting.md) (427 lines) — Type: Plain-technical precision-restoration pattern

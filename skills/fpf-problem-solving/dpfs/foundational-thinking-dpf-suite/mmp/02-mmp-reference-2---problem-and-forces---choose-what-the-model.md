@@ -9,7 +9,7 @@ Several choices therefore shape the construction:
 | A familiar representation and the intended objects | Which distinctions must variables, domains and conditions preserve? |
 | Supported structure and an unknown relation | What may vary, and what must remain true throughout that variation? |
 | An event and its recorded description | Which unobserved, selected or combined alternatives can produce this record? |
-| Knowing a circumstance and choosing before it is known | Which information may the instruction actually use? |
+| Knowing a circumstance and choosing before it is known | Which information can the instruction use when the choice is made? |
 | A detailed account and an affordable answer | Which eliminated contribution needs reconstruction, approximation or a bound? |
 | Resolving every unknown and settling the present question | Which remaining differences can change the required consequence? |
 | Stable recovery and added assumptions | What variation does a restriction suppress, and could the requested target depend on it? |

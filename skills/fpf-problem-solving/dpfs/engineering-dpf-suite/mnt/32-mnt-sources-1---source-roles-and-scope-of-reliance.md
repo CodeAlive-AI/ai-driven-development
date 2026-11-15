@@ -1,6 +1,6 @@
 ## MNT.Sources:1 - Source roles and scope of reliance
 
-This framework is an original selective synthesis, not a replacement edition or complete translation of a Guide, standard or paper. Source accounts contribute to specific decisions; their complete procedures, derivations and jurisdictional provisions remain with the original works.
+This framework combines selected source contributions into its own account of maintenance decisions. For complete procedures, derivations and jurisdictional provisions, consult the cited works.
 
 | Source return | Contribution used here | Limit that changes reliance |
 | --- | --- | --- |

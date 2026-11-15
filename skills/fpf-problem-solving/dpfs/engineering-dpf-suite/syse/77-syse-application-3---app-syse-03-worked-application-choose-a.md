@@ -1,8 +1,8 @@
 ## SYSE.Application:3 - APP-SYSE-03 — Worked application: choose and bound an authentication-service migration
 
-This constructed case tests whether the common Systems Engineering patterns still help when the System designated as project system-of-interest
-is software-only rather than electromechanical. It assumes the named software-security result; it does not teach
-cryptographic design or threat modeling, decide privacy or law, or grant release authority.
+This constructed case applies the Systems Engineering patterns to a project system-of-interest that
+is a software service. The project relies on the named software-security result. Specialist Methods and authorities govern
+cryptographic design, threat modelling, privacy and legal questions. The release Agent decides whether to deploy.
 
 
 ### SYSE.Application:3.1 - 1. Fix the System, use, and decision
@@ -34,7 +34,7 @@ replay for configuration candidate `AS-7.5-rc2` returns these values:
 | `C` — retain the single-region session store | 8.2% | 35 s | 2.1 s | 8 min | Rejected because the failed-login limit fails during the partition. |
 
 `AuthenticationArchitectureDecision-AD7` therefore selects `A` for canary preparation. It records the added
-replication burden as an accepted loss. The choice uses `AuthenticationThreatModelResult-TM4`; the table does not establish that specialist result or
+replication burden as an accepted loss. The choice uses `AuthenticationThreatModelResult-TM4`; the replay table gives performance under the supplied constraints. The architecture comparison cannot
 transfer the specialist's authority.
 
 
@@ -49,8 +49,8 @@ different threat model.
 The release-preparation Agent uses `SYSE.14` with the architecture decision, configuration account, replay
 result, `AuthenticationThreatModelResult-TM4`, and rollback evidence. The Work returns this recommendation: prepare alternative `A` as `AS-7.5-rc2` for the stated 5%
 canary; retain `AS-7.4` as the rollback configuration; do not widen effectivity until the release Agent receives
-the canary observations and the required security permission. The recommendation is not the release occurrence
-and grants no authority.
+the canary observations and the required security permission. The release Agent decides whether to authorize deployment,
+and the deployment itself is separate work.
 
 
 ### SYSE.Application:3.4 - 4. What transfers and what remains specialist
@@ -67,8 +67,8 @@ change the evidence and permission limits of this case.
 
 ### SYSE.Application:3.5 - Result, stop, and reopen
 
-Another practitioner can reproduce the recommendation by applying the four limits to the displayed values:
-`A` is the only surviving architecture, and its evidence supports only the stated canary. Stop when the release
+Applying the four limits to the displayed values identifies the candidate for canary preparation under the stated security constraints.
+`A` is the only surviving architecture, and the replay supports preparation of the stated canary. Stop when the release
 Agent can decide that canary with the named security permission and rollback available.
 
 | Changed input | Reopen |

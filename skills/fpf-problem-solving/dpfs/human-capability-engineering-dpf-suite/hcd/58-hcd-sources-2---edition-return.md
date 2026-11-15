@@ -1,14 +1,14 @@
 ## HCD.Sources:2 - Edition return
 
-**Human Capability Development Principles Framework — Twenty-nine-pattern edition** identifies this publication's shared account, instructional-material profile and twenty-nine authoritative pattern bodies, listed in reader order in the Table of Contents. The version date below identifies the edition being used.
+This edition of the **Human Capability Development Principles Framework** includes an architectural reference, an instructional-material profile and twenty-nine pattern bodies. The Table of Contents links to the bodies. Use the version date below to identify the edition.
 
-The [Human Capability Engineering DPF Suite (HCE)](../suite-reference/_index.md) includes this HCD framework and Somatic Movement Modeling. HCD contributes engineering of deliberate changes to a human holder's capability for later Work; the [Engineering DPF Suite](../../engineering-dpf-suite/suite-reference/_index.md) returns to this specialized Suite rather than including a second HCD description. Actual use, provider operation, performed development Work, achieved capability, cultural continuation and causal effectiveness require the corresponding observations and decisions described here.
+The [Human Capability Engineering DPF Suite (HCE)](../suite-reference/_index.md) includes HCD and Somatic Movement Modeling. HCD addresses deliberate development of a person’s capability for later work. The [Engineering DPF Suite](../../engineering-dpf-suite/suite-reference/_index.md) refers readers to this specialized suite. To establish use, provider operation, performed development work, personal capability, cultural continuation or causal effectiveness, use the evidence for the claimed result. Decisions to launch or rely on an arrangement also need the relevant authority.
 
 **Description:** HCD is a pattern language for deriving human capability demand from later Work, designing and sustaining development arrangements, judging human contribution, transfer and retention, and evaluating instructional material under stated audience, task, support and time conditions.
 
 **Author:** Anatoly Levenchuk with AI-assisted development and review.
 
-**Version:** 12 October 2026 — twenty-nine-pattern edition
+**Edition:** Twenty-nine-pattern edition dated 12 October 2026
 
 **Status:** Eternal alpha: used in working development projects and open to continuing correction.
 
@@ -16,4 +16,4 @@ The [Human Capability Engineering DPF Suite (HCE)](../suite-reference/_index.md)
 
 **Publication:** [FPF Library repository](https://github.com/ailev/FPF).
 
-Individual bodies retain their declared status and claim boundaries. The publication supplies practitioner guidance; evidence for its use in a particular person, provider, programme or population is established at that use.
+Each pattern body states its status and the scope of its claims. For a conclusion about a particular person, provider, programme or population, use the evidence and conditions for that application.

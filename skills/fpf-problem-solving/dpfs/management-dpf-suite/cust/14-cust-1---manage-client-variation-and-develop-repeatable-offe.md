@@ -13,7 +13,7 @@ If the current offering already fits and can be provided under its ordinary cond
 
 ### CUST.1:2 - Problem
 
-Local urgency tends to make the next delivery decisive. Shared development tends to treat local work as a source of product requests. Neither view alone settles who may promise what, which work is funded, whether another performer can repeat it or what happens to existing customers. The missing result is a jointly supportable continuation.
+Urgent local work can put the next delivery first. Shared development can turn the same work into a stream of product requests. To decide how to proceed, establish who may promise what, which work is funded, whether another performer can repeat it and how existing customers will continue.
 
 ### CUST.1:3 - Forces
 
@@ -33,7 +33,7 @@ Describe what the customer needs to be able to do, with whom, under which condit
 
 Ask separately what the present case needs and what a later customer or performer might receive. The second result might be a reusable component, an extension, a delivery method, a training contribution or no common change. Treat it as a candidate until its scope and provision are supported. A local success does not select its shared form.
 
-Keep any sufficient result already available. An earlier qualified configuration can settle a technical choice while leaving a new response-time promise unresolved. Carry that remaining difference into the work; do not reopen the settled configuration merely to make every case follow the same sequence.
+Keep any sufficient result already available. If a qualified configuration settles the technical choice but leaves a new response-time promise open, address that promise.
 
 #### CUST.1:4.2 - Turn the differences into compatible alternatives
 
@@ -45,7 +45,7 @@ For each serious alternative, trace the customer's complete result. A technical 
 
 #### CUST.1:4.3 - Make the consequential decisions governable
 
-Before an irreversible promise, identify who can contribute and decide the following matters in this case. These are decision-bearing contributions, not a mandatory headcount or organization chart.
+Before an irreversible promise, identify who can contribute and decide the following matters in this case. One participant can supply several of these contributions.
 
 | Contribution | What must be made available | Boundary that must not be decided silently elsewhere |
 | --- | --- | --- |
@@ -56,17 +56,17 @@ Before an irreversible promise, identify who can contribute and decide the follo
 | Resources and economics | The work, capacity, funding and continuing burden of each alternative. | Commercial enthusiasm must not waive an unavailable resource or conceal unfunded work. |
 | Evidence and permitted use | The grounds, permissions and assurance needed for the consequential claim or action. | Delivery success must not certify its own broad repeatability, safety or reuse rights. |
 
-Name the person or group with actual authority for each live decision, the inputs they need, the next decision time and the conditions they may not waive alone. The person making the customer promise needs the joined answer, even when another party supplied each contribution.
+Identify who holds authority for each decision, what inputs they need, when the next decision is due and which conditions they cannot waive on their own. Whoever makes the customer promise needs the combined answer, even when others supplied its parts.
 
 One competent person may supply several contributions. Keep the distinctions visible in the decision itself: “I can implement this locally; I have not committed the product team to support it.” Seek independent judgement when incentives, uncertainty or consequences make self-approval unreliable, or when applicable professional conditions require it. The independence may concern one consequential evidence claim rather than every small change. Reconsider bundled responsibilities when workload, value at risk or disagreement makes the arrangement ineffective.
 
-When actual positions, assignments or enabling relations must change, use [OCE.5 — Define Organization Positions](../oce/27-oce-5---define-organization-positions.md) and [OCE.6 — Establish Holder Assignments and Enabling Relations for Organization Change](../oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md). Receive an arrangement with real decision rights, capability, time and access, then use it here. If a required authority or resource is absent, narrow or defer the dependent promise while preserving independent permitted work.
+When actual positions, assignments or enabling relations must change, use [OCE.5 — Define Organization Positions](../oce/27-oce-5---define-organization-positions.md) and [OCE.6 — Establish Holder Assignments and Enabling Relations for Organization Change](../oce/28-oce-6---establish-holder-assignments-and-enabling-relations.md). Use the resulting arrangement here once the required decision rights, capability, time and access are in place. If a required authority or resource is absent, narrow or defer the dependent promise while preserving independent permitted work.
 
 #### CUST.1:4.4 - Obtain the missing contribution without losing the whole
 
 Choose the next action by the uncertainty that can change the alternative. A known local modification needs implementation, not a research programme. A disputed meaning needs semantic work. Uncertain transfer may need a field inquiry. A capacity conflict needs an operating answer.
 
-For customer inquiry, [MKT.12 — Investigate a Customer or Market Question for a Decision](../mkt/27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) supplies the question, discriminating evidence and permitted information use. For implementation difficulty, [IS.1 — Agree a Useful Implementation-Support Undertaking](../../is/13-is-1---agree-a-useful-implementation-support-undertaking.md) and [IS.2 — Find the Implementation Difficulty and Obtain the Next Useful Contribution](../../is/14-is-2---find-the-implementation-difficulty-and-obtain-the-nex.md) establish the undertaking and the next useful contribution; [IS.3 — Construct and Adapt a Support Strategy with Its Recipients](../../is/15-is-3---construct-and-adapt-a-support-strategy-with-its-recip.md) constructs support with its recipients. Receive their bounded result, not just a completed activity. For example, “the team has attended training” does not yet settle whether the deployment is obtainable.
+For customer inquiry, [MKT.12 — Investigate a Customer or Market Question for a Decision](../mkt/27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) supplies the question, discriminating evidence and permitted information use. For implementation difficulty, [IS.1 — Agree a Useful Implementation-Support Undertaking](../../is/13-is-1---agree-a-useful-implementation-support-undertaking.md) and [IS.2 — Find the Implementation Difficulty and Obtain the Next Useful Contribution](../../is/14-is-2---find-the-implementation-difficulty-and-obtain-the-nex.md) establish the undertaking and the next useful contribution; [IS.3 — Construct and Adapt a Support Strategy with Its Recipients](../../is/15-is-3---construct-and-adapt-a-support-strategy-with-its-recip.md) constructs support with its recipients. Use the result of that work within its limits. For example, “the team has attended training” does not yet settle whether the deployment is obtainable.
 
 Use [CUST.5](18-cust-5---run-field-learning-and-return-a-productization-cand.md) when field work must answer both the local question and a shared-development question. Preserve stopped, inconclusive and local-only outcomes. Protect current service while the question is open. If a result changes the interpretation of the customer's need or the supported basis, return to those affected choices before continuing.
 
@@ -90,7 +90,7 @@ The joint decision must hold together: the customer can obtain the result; the s
 
 #### CUST.1:4.7 - Close a bounded result and retain its return
 
-Finish with an executable local continuation and a distinct shared-development disposition. Examples are “deliver the existing configuration,” “provide the local service with funded specialist help; investigate a common adapter separately,” or “decline the unsupported outcome promise while offering a bounded contribution.”
+State how local work can proceed and what was decided or remains open about shared development. Examples are “deliver the existing configuration,” “provide the local service with funded specialist help; investigate a common adapter separately,” or “decline the unsupported outcome promise while offering a bounded contribution.”
 
 Leave the receiving participants able to recognize what was decided, what remains uncertain, who supplies the next contribution and what change reopens the decision. A short agreed explanation can suffice.
 
@@ -120,7 +120,7 @@ The examples emphasize observable delivery. Less tangible service results requir
 
 - Can the participants distinguish the customer's result from the proposed common result?
 - Are consequential differences recovered from real work, including assistance and continuing support?
-- Do the people making promises have the required contributions and authority?
+- Do those making promises have the required contributions and authority?
 - Does the selected combination have compatible conditions, resources and evidence?
 - Are local-only, unchanged, stopped and inconclusive outcomes allowed?
 - Can existing customers continue under supported obligations?
@@ -140,7 +140,7 @@ The examples emphasize observable delivery. Less tangible service results requir
 
 The method can make local service and shared development mutually intelligible, with less hidden commitment. It also exposes work that was previously unpaid or unowned. That may produce a smaller promise, additional investment or refusal rather than a larger common product.
 
-Its additional coordination is worthwhile only where the connected decisions matter. Sufficient smaller methods remain available directly.
+Its additional coordination is worthwhile only where the connected decisions matter. Use a smaller Method directly when it answers the question.
 
 ### CUST.1:10 - Architectural Rationale
 
@@ -150,7 +150,7 @@ A fixed sequence would reopen settled questions and delay urgent responses. Pure
 
 ### CUST.1:11 - SoTA-Echoing
 
-The useful source line combines service productization, bounded solution spaces and continuing field/product learning.
+The Method combines service productization, bounded solution spaces and continuing field/product learning.
 
 Wirtz and colleagues' conceptual account of service productization supports defining and systematizing an offering; Salvador, de Holan and Piller's mass-customization account adds solution-space development, robust processes and choice navigation. CUST adapts those contributions and combines them with the full Management, Engineering and Implementation Facilitation methods named above.
 
@@ -158,7 +158,7 @@ Official FDE role descriptions and the practitioner account discussed in CUST.Re
 
 ### CUST.1:12 - Relations
 
-CUST.2 through CUST.8 supply conditional constituent methods of CUST.1. Their outputs are joined by the customer result, permission, resource and continuing-obligation conditions in this Solution. Their publication order is not a work schedule.
+CUST.2 through CUST.8 supply conditional constituent methods of CUST.1. Their outputs are joined by the customer result, permission, resource and continuing-obligation conditions in this Solution. Select them as the customer case requires.
 
 [MKT.11 — Align Promises, Partners and Execution](../mkt/26-mkt-11---align-promises-partners-and-execution.md) supplies promise/execution alignment; [MKT.13 — Test Commercial Model Repeatability and Deployment Limits](../mkt/28-mkt-13---test-commercial-model-repeatability-and-deployment.md) supplies commercial repeatability and deployment-limit inquiry; [MKT.14 — Develop and Change a Programme for Selected Customer Organisations](../mkt/29-mkt-14---develop-and-change-a-programme-for-selected-custome.md) supplies the customer-organization programme. Use their complete methods when those questions arise and return their qualified results to the selected alternative.
 

@@ -6,7 +6,7 @@
 
 ### FIN.11:0 - Use this when
 
-The corporation must choose or reconsider its mix of debt, equity and other financing, rather than just select one instrument. Compare the mix under actual cash, tax, control, access and distress conditions. An analytical target is a proposal unless the relevant authority has decided it.
+The corporation must choose or reconsider its mix of debt, equity and other financing, where choosing one instrument would leave the mix unresolved. Compare the mix under the cash, tax, control, access and distress conditions that apply to the choice. An analytical target is a proposal unless the relevant authority has decided it.
 
 ### FIN.11:1 - Problem frame
 
@@ -25,10 +25,10 @@ Balance financing cost, tax benefits, control, distress exposure and flexibility
 1. State the financing need, existing claims, operating cash generation and required liquidity. Separate the current mix, proposed transaction and longer-term analytical target.
 2. Form materially different feasible mixes. Recover instrument terms through FIN.10 only where missing. Include continuation if it remains available.
 3. Project each mix's cash service and residual claims over the relevant horizon and adverse states. Examine maturities, refinancing concentrations, currency mismatches and contingent obligations.
-4. Assess the usable tax benefits and the costs or constraints of distress, issuance, information, control and future access. Use current institution-specific facts; do not transfer a tax or insolvency assumption between jurisdictions without grounds.
+4. Assess the usable tax benefits and the costs or constraints of distress, issuance, information, control and future access. Use facts that apply to the institutions involved. Check the grounds for transferring tax or insolvency assumptions between jurisdictions.
 5. Estimate value or required-return implications with matching FIN.5 grounds where they can change the decision. Avoid holding equity and debt costs fixed while making a material leverage change unless that approximation is justified.
 6. Compare the alternatives against the corporation's objectives and constraints. A mix with attractive expected value can be excluded by a required liquidity or access condition. Use FIN.12 for covenant and flexibility consequences.
-7. Return a structure proposal, bounded target range or supported continuation, with the implementation conditions. Authorization and the actual financing remain separate decisions and actions.
+7. Return a structure proposal, bounded target range or supported continuation, with the implementation conditions. State what authority and action a change would require. Existing authority may already cover continuation of the current mix.
 
 
 
@@ -37,7 +37,7 @@ Balance financing cost, tax benefits, control, distress exposure and flexibility
 
 Capital structure concerns how the corporation funds and allocates the risks of its operations over time. Describe the present claims and the change being considered: new investment, recapitalization, refinancing, debt reduction or payout. The same observed debt ratio can arise from borrowing, a fall in equity value or disposal of operating assets. Those events have different consequences, so a ratio alone cannot specify the action.
 
-Recover contractual debt service and material debt-like obligations from their actual terms. Keep the accounting classification, covenant definition and economic financing exposure distinguishable. A lease or contingent guarantee may matter to service capacity without being included in every published debt ratio. FDM resolves the positions; FIN.10 supplies instrument terms. Use the definition appropriate to each receiving calculation rather than silently forcing one number into all of them.
+Recover contractual debt service and material debt-like obligations from their terms. Keep the accounting classification, covenant definition and economic financing exposure distinguishable. A lease or contingent guarantee may matter to service capacity without being included in every published debt ratio. FDM resolves the positions; FIN.10 supplies instrument terms. Use the definition appropriate to each receiving calculation when calculating service, reported debt or covenant debt.
 
 Separate three questions. How much service can the business support? Which financing policies provide worthwhile value and flexibility? Which of those policies can the corporation obtain and implement? A high estimated value under a policy does not answer the service or access question. Conversely, surviving one adverse scenario establishes a bounded capacity result, not an optimal financing mix.
 
@@ -48,7 +48,7 @@ A policy must say what happens after the initial issue. Will principal amortize,
 #### FIN.11:4.2 - Construct service capacity from operations and constraints
 
 
-Begin with an operating forecast independent of the proposed debt receipts. Recover cash after operating payments, applicable tax, essential maintenance and the investment required by the selected operating plan. Then apply each instrument's interest, principal, fees and other required payments at their dates. FIN.2 tests the cash account with reserves and actual support. EBITDA or interest coverage can aid analysis, but neither pays principal, tax or working-capital investment.
+Begin with an operating forecast independent of the proposed debt receipts. Recover cash after operating payments, applicable tax, essential maintenance and the investment required by the selected operating plan. Then apply each instrument's interest, principal, fees and other required payments at their dates. FIN.2 tests the cash account with the required reserves and the support available on the payment dates. EBITDA or interest coverage can aid analysis, but neither pays principal, tax or working-capital investment.
 
 Stress the causes that can damage service together: revenue, margins, collections, required investment, rates, currency and refinancing access. Distinguish a temporary timing mismatch from an operating activity that cannot support its obligations even after a credible adjustment. The former may need bridging or changed terms; the latter may need a different mix, smaller investment or FIN.22 restructuring. Never make service capacity look adequate by repeatedly assuming an uncommitted refinancing just before each maturity.
 
@@ -61,9 +61,9 @@ Do not describe a limit obtained from one forecast as a permanent debt capacity.
 #### FIN.11:4.3 - Explain what creates or destroys value when the mix changes
 
 
-Borrowing transfers part of the operating return and loss exposure to lenders and usually creates dated service requirements. Equity holders retain a more sensitive residual claim. A lower quoted debt rate therefore does not mean replacing equity with debt continuously reduces the total economic cost. FIN.5 must re-estimate risk and compatible required returns for each materially different policy.
+Borrowing transfers part of the operating return and loss exposure to lenders and usually creates dated service requirements. Equity holders retain a more sensitive residual claim. A lower quoted debt rate therefore does not mean replacing equity with debt continuously reduces the total economic cost. When risk or required returns can change the comparison, use estimates that apply to each financing policy. FIN.5 can supply estimates that are missing.
 
-Identify the actual sources of a value difference. Deductible interest can reduce tax if the corporation can use the deduction. Issuance and restructuring consume resources. Financial pressure can change prices, customer confidence, supplier terms or investment choices. Restrictions may protect creditors yet prevent a valuable future action. Financing can also change incentives or discipline; credit such an effect only with a supported operating consequence, not an automatic claim that more debt improves management.
+Identify what causes a difference in value. Deductible interest can reduce tax if the corporation can use the deduction. Issuance and restructuring consume resources. Financial pressure can change prices, customer confidence, supplier terms or investment choices. Restrictions may protect creditors yet prevent a valuable future action. Financing can also change incentives or discipline; credit such an effect only with a supported operating consequence, not an automatic claim that more debt improves management.
 
 Keep economic loss distinct from redistribution. A shortfall in a lender's recovery can transfer value between claimants; it is not, by itself, an extra loss of operating resources on top of that same shortfall. Disposal at a depressed price, lost customers and process costs can reduce total available value. Count each effect once and retain whose interest is being assessed. A recapitalization attractive to current owners may have contractual or consent implications for existing creditors.
 
@@ -84,11 +84,11 @@ Compare immediate and staged transitions when both are possible. Immediate chang
 
 A debt-to-value target creates a consistency question when value itself changes with the financing choice. Solve or iteratively reconcile the proposed debt amount, resulting claims, qualified valuation and target weights. Do not combine an old equity market value with new debt and declare the target attained if the transaction changes equity value. Actual execution amounts and institutional ratio tests still use their own definitions.
 
-Return a preferred policy or set of acceptable policies with its planned transition, funding conditions and the trade-offs that justify it. A range can be appropriate when several policies have similar supported value and different resilience. Explain why a proposed increase or reduction is worthwhile and what new evidence would change that answer. The output supports a financing decision; it does not require perpetual adherence to a single numerical ratio regardless of conditions.
+Return a preferred policy or set of acceptable policies with its planned transition, funding conditions and the trade-offs that justify it. A range can be appropriate when several policies have similar supported value and different resilience. Explain why a proposed increase or reduction is worthwhile and what new evidence would change that answer.
 
 ### FIN.11:5 - Archetypal Grounding
 
-A constructed corporation needs 100 for the same assets. Mix A provides debt 80 and equity 20 with annual debt service 35; mix B provides debt 40 and equity 60 with service 15. Assume these are obtainable terms without other cash cost. Cash available before debt service is 60 in the base state and 25 in the adverse state, and the corporation requires at least 5 remaining cash. A leaves 25 in the base state but −10 in the adverse state. B leaves 45 and 10. B satisfies the stated cash requirement in both states; A does not. This establishes a capacity constraint, not that B is universally optimal: the additional equity's price, control effects and other feasible terms remain part of the choice.
+A constructed corporation needs 100 for the same assets. Mix A provides debt 80 and equity 20 with annual debt service 35; mix B provides debt 40 and equity 60 with service 15. Assume these are obtainable terms without other cash cost. Cash available before debt service is 60 in the base state and 25 in the adverse state, and the corporation requires at least 5 remaining cash. A leaves 25 in the base state but −10 in the adverse state. B leaves 45 and 10. B satisfies the stated cash requirement in both states; A does not. For the financing choice, also consider the price of the additional equity, its control effects and other feasible terms.
 
 
 
@@ -105,7 +105,7 @@ The 40 loan pays interest 2.4 each year and saves tax 0.6 each year, so the savi
 | Debt 40 | 200 | 1.12 | 0.20 | 0.20 | 200.72 |
 | Debt 80 | 200 | 3.72 | 5.00 | 0.50 | 198.22 |
 
-The smaller debt has the highest value among these alternatives on the supplied grounds. If it fails the separate dated service or consent conditions, that does not make it available merely because its value is highest. If the larger policy's additional loss falls below about 2.50, with all other grounds retained, its value exceeds the smaller policy's value. That threshold identifies the consequential disputed estimate.
+The smaller debt has the highest value among these alternatives on the supplied grounds. The corporation can implement it only if it also meets the dated service and consent conditions. If the larger policy's additional loss falls below about 2.50, with all other grounds retained, its value exceeds the smaller policy's value. That threshold identifies the consequential disputed estimate.
 
 This comparison is of total value before allocation to claims. Deriving old owners' wealth after an issue, repayment or payout requires the actual proceeds and ownership treatment. Subtracting all new principal as an additional resource loss here would misrepresent the borrowing; ignoring its claim when subsequently deriving equity value would be the opposite error.
 
@@ -130,7 +130,7 @@ A shareholder perspective can understate harm shifted to creditors or the operat
 
 ### FIN.11:7 - Conformance Checklist
 
-Do the mixes fund the same need and preserve the assumed operating plan? Are debt service, tax use, adverse cash and refinancing conditions included? Are changing required returns and control effects examined where material? Is the conclusion clearly target, proposal, continuation or authorized change?
+Do the mixes fund the same need and preserve the assumed operating plan? Are debt service, tax use, adverse cash and refinancing conditions included? Are changing required returns and control effects examined where material? What is the status of the conclusion: a target, a proposal, support for continuing the current mix or an authorized change?
 
 ### FIN.11:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -146,7 +146,7 @@ Capital structure concerns the joint effects of claims on the corporation. Instr
 
 ### FIN.11:11 - SoTA-Echoing
 
-[OpenStax's capital-structure introduction][OS-STRUCTURE] supplies the basic financing distinction. Damodaran's historical [financing-mix models][DAM-MIX] and [transition discussion][DAM-FINANCING] expose the need to change risk estimates with policy and to turn a proposed mix into transactions. FIN.11 uses FIN.5's policy-qualified valuation, separating service capacity, economic value and implementability. It rejects an invariant debt/equity cost schedule, universal peer target and automatic inference from minimum WACC when operations change. The finite-debt case prices actual tax-saving dates and separate losses; changed cash, tax use, risk or access reopens the policy.
+[OpenStax's capital-structure introduction][OS-STRUCTURE] supplies the basic financing distinction. Damodaran's historical [financing-mix models][DAM-MIX] and [transition discussion][DAM-FINANCING] expose the need to change risk estimates with policy and to turn a proposed mix into transactions. FIN.11 uses FIN.5's policy-qualified valuation, separating service capacity, economic value and implementability. It rejects an invariant debt/equity cost schedule, universal peer target and automatic inference from minimum WACC when operations change. The finite-debt case values the dated tax savings and accounts separately for additional losses; changed cash, tax use, risk or access reopens the policy.
 
 ### FIN.11:12 - Relations
 

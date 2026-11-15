@@ -9,17 +9,17 @@ project is asking for a document, meeting, review, or job title instead of sayin
 Typical requests such as *get architecture approval*, *send it to safety*, or *ask the electrical team* leave
 the specialist question, scope, evidence, and later use unclear.
 
-Start with the receiving engineering decision and inspect the relevant available specialist result. Return
-the useful answer it supports, with the limit that matters; a qualified judgement or narrower engineering
+Start with the receiving engineering decision and inspect any relevant specialist results already available. Return
+any useful answer the evidence supports, with the limit that matters; a qualified judgement or narrower engineering
 conclusion can complete this use. A missing result for a stronger claim becomes a request only when its
 obtainable contribution warrants the whole acquisition burden through A.15.9 and C.11.DUA. Bound a selected
 request by the question, configuration, evidence, acceptance, authority, and intended use.
 
 For a low-consequence exchange, the useful answer or selected request may fit in two ordinary sentences. When
 later reliance needs several contributions recovered together, keep a **professional-contribution account**
-connecting the actual request, expected performer, performed Work, returned result, evidence, acceptance, and
-receiving use where those facts matter. When no new request is selected, describe the result actually used. No request needs to be created merely to describe an existing result. The account describes these facts and their
-relations. Capability, assignment, authority, Work, and result remain independently supported.
+connecting any request made, expected performer, performed Work, returned result, evidence, acceptance, and
+receiving use where those facts matter. For an existing answer, describe the result used. Include the relying Work when later reliance needs that connection.
+Capability, assignment, authority, Work, and result each need their own grounds.
 
 Use `SYSE.17` when the first problem is finding affected Systems, `SYSE.10` when research, model, experiment, or
 trial evidence must be qualified, and `SYSE.4` when the project needs an assurance result. `SYSE.9` coordinates
@@ -34,8 +34,8 @@ The terms below keep the contribution separate from the organizational labels us
 | Name in this pattern | What it denotes |
 | --- | --- |
 | professional contribution | Specialist Work, its returned result and receiving use, together with a contribution request when one is needed. The professional-contribution account is an episteme describing these objects and relations. |
-| specialist | The Agent considered or selected to perform the requested Work because current evidence supports a relevant capability. When role classification or assignment matters, name the local system-role kind and assignment separately. |
-| discipline | An admitted `U.Discipline`: a durable field-level practice-and-knowledge whole recognized through `C.20`. A field name or department alone is only a retrieval cue. |
+| specialist | The Agent who performed the specialist Work, or who is considered or selected for it on evidence of relevant current capability. When role classification or assignment matters, name the local system-role kind and assignment separately. |
+| discipline | An admitted `U.Discipline`: a durable field-level practice-and-knowledge whole recognized through `C.20`. A field or department name is only a retrieval cue. |
 | profession | A Plain collective designation for a socially maintained practice, its practitioners, and institutions that recognize or regulate their work. Recover the particular culture, practitioner classification, credential, or authority relation used by the decision. |
 | contribution request | An episteme stating the result needed by a receiving decision. Any WorkPlan, assignment, or commitment needed to obtain it is a separate fact. |
 | assignment | An `A.2.1` relation occurrence connecting a holder to a system-role kind for a stated situation and interval. Current capability and performed Work require their own support. |
@@ -61,9 +61,9 @@ beyond the available evidence, an AI Agent's report treated as the decision, and
 completed Work.
 
 The opposite failure is administrative overload. For example, a small calculation acquires a responsibility
-matrix, fixed role catalogue, approval workflow, and document template, yet the receiving engineer still cannot
-say what result would change the decision. The remedy begins with the engineering question, not with an
-organization chart.
+matrix, fixed role catalogue, approval workflow, and document template, yet the receiving engineer cannot
+say what result would change the decision. Start with the engineering question.
+
 
 ### SYSE.9:2 - Problem
 
@@ -97,15 +97,15 @@ input, or an applicable Method, together with the decision that cannot yet proce
   consequence and conflict of interest determine which arrangement is needed.
 - Informal conversation is often enough for a small reversible choice; high-consequence reliance needs
   recoverable scope, provenance, evidence, authority, and acceptance.
-- Bounded contribution Work may be performed by any Agent with supported current capability, including a
-  human, collective, AI, or robotic Agent. Allocate the Work from that evidence rather than from a species label
-  or automation claim.
+- Any capable Agent may perform bounded contribution Work, including a person, a collective, an AI or a robot. Allocate it on evidence of the prospective performer’s current capability.
+  A species label or a claim of automation does not establish that capability.
+
 - A discipline evolves over years, while a project requests and performs dated Work now. These are related but
   not successive stages of one process.
 
 ### SYSE.9:4 - Solution
 
-Use the available specialist result within its supported scope for the engineering decision. Select a new
+Use any specialist result already available within the scope it supports for the engineering decision. Select a new
 contribution only when its obtainable value warrants acquisition. For that branch, bound the request, retain
 the supplier's Method, enable a capable Agent, and assess the return before relying on it.
 
@@ -113,18 +113,18 @@ the supplier's Method, enable a capable Agent, and assess the return before rely
 
 1. **Name the receiving decision.** State the question, alternatives, deciding Agent, Work that will use the
    result, and consequence of delay or error.
-2. **Use the present result and select any further acquisition.** Inspect what the available result supports
-   for this decision and return its useful answer and material limit. If further inquiry is live, use A.15.9
+2. **Use available results and decide whether to obtain more.** Inspect any results already available and return
+   the useful answer they support for this decision, with any material limit. If further inquiry is live, use A.15.9
    and C.11.DUA to compare its attainable contribution with preparation, qualification, supplier Work,
    delivery, interpretation, delay, displaced work, and alternatives. For a selected request, name the
    bounded calculation, constraint, objection, observation, or other result that supplies that contribution.
    A competent specialist review may already supply this answer. Use that return; reconstruct only a missing
-   connection that can change its use, rather than requiring another account of the same result.
+   connection that can change its use.
 3. **Bound the result.** Name its subject and the applicability dimensions that could change the answer. For a
    System claim these may include the actual or intended System, configuration, part, environment, affected
    System, use, interval, scale, and assumptions.
 4. **Retain the supplier's Method and evidence.** For a selected acquisition, the specialist practice
-   identifies its Method, source family, inputs, observations, uncertainty, and non-use boundary. A missing
+   identifies the method and source used, any shared source dependency that affects reliance, inputs, observations, uncertainty, and non-use boundary. A missing
    Method limits the promised result; investigating it is another acquisition choice under step 2.
 5. **Choose and enable the performing Agent.** Check current capability and the conditions that affect this Work,
    such as access, workload, conflicts, resources, and tools. Establish an assignment only when it matters.
@@ -147,7 +147,7 @@ assessment and use.
 
 #### SYSE.9:4.2 - Record the Result
 
-Use an ordinary sentence for a small reversible exchange. Where further reliance needs a shared account, include only the following content that changes its interpretation; a missing-result limit need not become a request:
+Use an ordinary sentence for a small reversible exchange. Where further reliance needs a shared account, include only the following content that changes its interpretation:
 
 | Field | Required content |
 | --- | --- |
@@ -165,8 +165,8 @@ world-side relations it describes.
 
 #### SYSE.9:4.3 - What Changes in Practice
 
-Instead of “sending the model to safety” or “waiting for architecture approval,” engineers request a result that
-a capable Agent can produce and a receiving decision can use. Missing inputs, capability, authority, evidence,
+Engineers identify the specialist result the decision needs. They can use a qualified result already available,
+or request one from a capable Agent when the acquisition is worthwhile. Missing inputs, capability, authority, evidence,
 or applicability become visible before they turn into late integration failures.
 
 Useful returns include the requested supported result, a bounded objection that narrows or rejects the current
@@ -190,8 +190,8 @@ modulation with thermal storage. Its first coordination table contains rows labe
 *acoustics*, *service*, and *safety*. Files have been uploaded, but the deciding engineer cannot tell which
 configuration each result concerns or whether any result can change the decision.
 
-The project first resolves the title rows into the results below and inspects the uploaded files for their
-actual support. An adequate result is reused. For each still-missing contribution, the project selects a
+The project first resolves the title rows into the results below and inspects the uploaded files to see which claims they
+support. An adequate result is reused. For each missing contribution, the project selects a
 request only when the obtainable improvement to the decision warrants its full acquisition burden. Several
 individually worthwhile requests must also fit together within the decision window and shared specialist capacity:
 
@@ -222,12 +222,12 @@ trial or the architecture decision. The missing connection is from the proposed 
 applicable stability assessment and observations, to the claim that the named controller configuration may
 enter trial. Recovering that connection identifies the needed contribution.
 
-For this illustrative decision, suppose an existing controller remains an admissible fallback. A controls
+For this decision, suppose an existing controller remains an admissible fallback. A controls
 specialist has a suitable stability check and controller-in-the-loop protocol. Preparation, execution,
 interpretation and return require six hours, and an exclusive bench slot permits completion before the decision.
 The project estimates EUR 900 for the complete burden, including displaced Work, and EUR 1,600 for the obtainable
-decision contribution relative to the fallback. These are stated decision assumptions, not measured trial
-success. The comparison supports obtaining the contribution while the separate time and resource conditions hold.
+decision contribution relative to the fallback. These estimates guide the decision to commission the check.
+Its outcome remains to be established. The comparison supports obtaining the contribution while the separate time and resource conditions hold.
 
 The selected request names the proposed configuration, the stability and trial-entry question, the required
 observations, the decision time and an acceptable return of either a supported conclusion or a material limit.
@@ -259,7 +259,7 @@ and authority. Its burden includes gathering that evidence, comparing and enabli
 observation in use. It can propose, for example, a shared service with agreed priorities or capability in the
 product teams; neither proposal establishes its feasibility by being named.
 
-The bounded-result Method still identifies what each engineering decision needs and preserves an E17 or controls
+The bounded-result Method identifies what each engineering decision needs and preserves an E17 or controls
 result wherever its conditions remain applicable. The wider Method must resolve the recurring arrangement.
 Keep those two contributions connected: an organization chart does not qualify a controller, and a qualified
 controller result does not establish shared capacity or decision rights.
@@ -273,15 +273,15 @@ organization arrangements for their domains, not evidence that one arrangement f
 
 Evidence about a candidate Agent can come, for example, from credentials, prior Work, professional membership,
 and tool-supported trials. Use each source only for the capability or relation it supports; current capability,
-assignment, authority, performed Work, and result adequacy remain separately established. Apply the same rule to
-human, collective, AI, and robotic Agents: allocate bounded Work from current evidence and observe the result.
+assignment, authority, performed Work, and result adequacy remain separately established. For any Agent,
+allocate bounded Work from current evidence and observe the result.
 
 Public sources such as standards, university courses, and publications show declared practice and public
 attention. They do not by themselves establish enacted prevalence or better project results. When comparative
 field evidence is not affordably available, state the expert estimate and its uncertainty.
 
 ### SYSE.9:7 - Conformance Checklist
-Check the conditions needed by the claimed result. A reuse-only answer asserts no new supplier Work; a selected request or performed Work retains the applicable conditions below.
+Check the conditions on which the claimed result depends. If the decision uses an existing specialist result, establish its applicability. Check the conditions for a new request or newly performed Work when that is the claim.
 
 - [ ] The receiving decision, deciding Agent, relying Work, and consequence are named.
 - [ ] A useful available answer and its material limit can finish the use, including a return from an adequate
@@ -296,7 +296,7 @@ Check the conditions needed by the claimed result. A reuse-only answer asserts n
 - [ ] Dated Work, enacted Method, performer, production relation, and returned result are recoverable when the
       decision consequence requires them.
 - [ ] The receiver accepts within a reliance limit, rejects, requests repair, selects another contribution, or
-      records the blocker and affected decision.
+      identifies the blocker and affected decision.
 - [ ] A missing result remains distinct from a recurring capacity or decision-right problem. The latter reaches
       the responsible work- or organization-design practice with the affected decisions and constraint to change.
 - [ ] Reopen conditions name the later change that can invalidate the result instead of requiring a generic
@@ -357,13 +357,13 @@ heat-pump conditions.
 | Receiving situation from :5 | Complete answer and burden of a competent existing review | Selected use of this pattern |
 | --- | --- | --- |
 | E17 already supports the electrical contribution. | Inspect applicability and use the supported constraints. Additional analysis and new organization design add no ground for this question. | Use the same answer in :5.1. The account is optional; no new request or reconstruction is required. |
-| Parameter search is complete, but trial-entry qualification is missing. | Identify the unsupported claim, compare the useful additional check with the fallback and obtain it only within the stated cost, time and resource conditions. A competent review does not treat a *verified* label as that check. | Recover the missing connection between result and receiving use in :5.2. Both paths select the same six-hour contribution under the EUR 900/EUR 1,600 assumptions and still await its qualified return. |
+| Parameter search is complete, but trial-entry qualification is missing. | Identify the unsupported claim, compare the useful additional check with the fallback and obtain it only within the stated cost, time and resource conditions. A competent review does not treat a *verified* label as that check. | Recover the missing connection between result and receiving use in :5.2. Both paths select the same six-hour contribution under the EUR 900/EUR 1,600 assumptions and await its qualified return. |
 | Shared capacity and decision rights are unsettled across projects. | Report that the assumed contribution arrangement does not hold. Further decision analysis must compare arrangements as well as technical alternatives; another specialist report alone leaves the shared constraint unresolved. | Use :4.3 and :5.3 to return the work-design need while retaining independently usable results. Role or work design supplies the changed arrangement; its evidence, transition and continuing burden belong in that comparison. |
 
-The local constructive move connects the receiving claim to the specialist's Method, performed Work, actual
+The local constructive move connects the receiving claim to the specialist's Method, performed Work, returned
 result and permitted reliance, adding detail only where that connection is missing. This makes the next useful
 action recoverable when files or title-shaped requests obscure it. An established review that already supplies
-the connection achieves the same result without extra apparatus. The deliberate trade-off is narrow scope:
+the connection achieves the same result without extra apparatus. The trade-off is narrow scope:
 this pattern exposes and coordinates the needed contribution; specialist analysis, ranking whole engineering
 alternatives and changing organizations remain substantive supplying work. The worked comparison supports this
 conditional choice, not a measured general advantage in speed or project success.
@@ -385,7 +385,7 @@ Three further source contributions change that choice or its limits:
 - **Adopt:** [METR's 24 February 2026 study-design update](https://metr.org/blog/2026-02-24-uplift-update/)
   shows why selection, changed tasks, quality and concurrent work constrain a productivity interpretation.
   It is failure evidence against inferring current task capability or value from an aggregate AI productivity
-  claim. Step 5 therefore requires grounds for this Work, and :5.2 still needs controls qualification.
+  claim. Step 5 therefore requires grounds for this Work, and :5.2 needs controls qualification.
   Its software observations do not qualify refrigeration or controller behaviour.
 
 Reopen the affected reliance when configuration, capability, authority or available time breaks the connection
@@ -402,18 +402,18 @@ A later source changes the choice only through the claim or Method contribution 
   uses those distinctions to connect specialist results to engineering decisions.
 - `C.20` identifies an admitted `U.Discipline` as a durable practice-and-knowledge whole. A profession name remains
   a Plain retrieval cue until the relevant culture, classification, institution, credential, or authority relation
-  is identified. The Agent, rather than either label, performs the contribution Work.
+  is identified. Identify the Agent performing the contribution Work.
 - `A.3.1`, `A.3.2`, `A.15.1`, `A.15.2`, and `A.15.PROD` distinguish Method, MethodDescription, planned Work,
   dated Work, and result production. A request, assignment, Work record, returned result, delivery, acceptance,
   and use remain different objects or relations.
 - `A.2.8`, `A.2.8.PER`, and the applicable domain governors keep commitment, permission, authority, and
   responsibility separate. Use `A.6.RCD` when a needed relation has no admitted governor.
-- Work guided by `SYSE.7` maintains decision-usable descriptions; Work guided by `SYSE.10` qualifies research,
+- Work guided by `SYSE.7` brings descriptions together for a decision and maintains them when later work continues to rely on them; Work guided by `SYSE.10` qualifies research,
   model, experiment, and trial results; Work guided by `SYSE.4` builds an assurance result. These results can
   contribute to one engineering decision without becoming one Method or a mandatory temporal sequence.
-- Work guided by `SYSE.9` can produce a specialist result for a `SYSE.6` decision only for the stated question
+- `SYSE.9` helps a `SYSE.6` decision use an existing or newly obtained specialist result when it fits the stated question
   and conditions. The result neither entails the architecture decision nor transfers the deciding Agent's
-  authority. If it is unavailable or outside scope, the receiver uses another supported source or records the
+  authority. If it is unavailable or outside scope, the receiver uses another supported source or identifies the
   missing result.
 - Organization Change Engineering supplies Methods for changing positions, units, assignments, authority, and
   capabilities when the contribution arrangement must change. Operations Management supplies Methods for

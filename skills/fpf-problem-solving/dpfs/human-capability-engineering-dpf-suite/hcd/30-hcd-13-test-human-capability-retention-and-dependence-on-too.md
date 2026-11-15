@@ -5,19 +5,19 @@
 
 ### HCD.13:1 - Problem Frame
 
-**Use this when** earlier success is being relied upon after an interval, or when the person now performs differently with changed tools or support. Begin with a qualified earlier observation of the same person's contribution and the conditions under which it succeeded. Then separate the delay question from the support question.
+**Use this when** you need to establish what a person can still do after an interval or how their work depends on a tool or other support. For retention, recover an earlier qualified observation of the same contribution and its conditions. For support dependence, identify the support difference and the evidence needed to compare it.
 
-The first useful result is a **retention and support-dependence account**: what remains demonstrable after which interval and practice history, under which support, and what any apparent loss does or does not show. The practical gain is to avoid both assuming that earlier success lasts indefinitely and prescribing relearning for an access or configuration failure.
+For retention, report what the person demonstrated after the interval, under which support and with which intervening practice. For support dependence, report what the observed contrast shows under the conditions compared. State what remains unresolved. An established contribution can stand when a resource or configuration problem explains the interruption.
 
-Retention concerns an already demonstrated contribution. If that earlier performance was never established, leave the retention claim open; use HCD.11 when the receiving use needs an assessment of the current contribution. Use HCD.12 when the central question is unfamiliar work. If a known missing source or failed tool already explains the current inability to perform, return that arrangement problem to its owner before diagnosing loss.
+A retention claim requires an already demonstrated contribution. If earlier performance was never established, leave retention open. Use HCD.11 when the question requires a current performance assessment and HCD.12 for unfamiliar work. If a known unavailable source or failed tool explains the interruption, report that condition. Repair or seek the missing provision when the receiving task requires it.
 
-Source-dependent work can remain well performed with its sources. An independently available core is a separately justified demand, not the person's only “real” capability. Stronger safety, credentialing, employment or deployment reliance requires the relevant domain evaluation and assurance.
+Competent work can include using its required sources. Establish a separate working demand before testing a contribution without them. For stronger reliance in safety, credentialing, employment or deployment, use the applicable domain evaluation and assurance. If a decision is required, establish who is authorized to make it.
 
 ### HCD.13:2 - Problem
 
-A delayed failure can reflect many changes besides loss of capability: no recent practice, different tasks, inaccessible sources, unfamiliar tools, missing cues, fatigue, or a changed criterion. Testing only after a delay while also removing support confounds the two questions.
+A delayed failure can arise from a change in practice, tasks, access, tools, cues, fatigue or the criterion, as well as from a change in capability. Testing only after a delay while also removing support confounds the two questions.
 
-A successful delayed test can also be overread. Continued use may have maintained the contribution; a warm-up or earlier probe may have taught or primed the answer; a short core may cover only a few contributions. None of those observations establishes retention without practice, whole-course mastery or transfer to other work.
+A successful delayed attempt can reflect continued use. A warm-up or earlier probe may have taught or primed the response, and a short exercise may cover only a few contributions. Report that history and scope. Retention without practice, broader mastery and unfamiliar transfer each need evidence under the conditions of that claim.
 
 ### HCD.13:3 - Forces
 
@@ -25,7 +25,7 @@ A successful delayed test can also be overread. Continued use may have maintaine
 | --- | --- |
 | Realistic delay and feasible observation | Use the interval that matters for work while accounting for time, assessor and access costs. |
 | Retention and continued development | Describe intervening practice and instruction instead of treating every elapsed week as non-use. |
-| Equipped work and independent contribution | Preserve required means while testing a separately justified reduced-support target. |
+| Equipped work and independent contribution | Preserve required means and test a separately justified reduced-support target when the question calls for one. |
 | Differential evidence and probe reactivity | A reference return can distinguish rivals, but the probe can itself teach, prime or fatigue the person. |
 | Useful local claims and causal restraint | Return what the comparison supports without inventing a memory mechanism or programme effect. |
 
@@ -33,55 +33,55 @@ A successful delayed test can also be overread. Continued use may have maintaine
 
 #### HCD.13:4.1 - Recover the earlier contribution and the intended interval
 
-Recover the person, contribution, criterion, earlier observations, relevant task variation, allowed means and evidence window. A remembered impression that “the person could do it” is not a qualified baseline. If the earlier evidence cannot support the intended comparison, state that limit. Assess now when the receiving use needs current performance evidence or a starting point for a later comparison.
+For retention, recover the person, contribution, criterion, earlier observations, relevant task variation, permitted means and evidence window. A recollection that the person could do the work needs supporting observations before it can serve as the baseline. If the evidence is inadequate for comparison, state the limit. Use suitable current evidence or assess now when the receiving use needs a current finding or a starting point for later comparison.
 
-Choose the interval from the work: how long might this contribution be unused, what support will remain available, and what consequence would a failure have? There is no universal retention interval. An infrequent high-consequence task may need a different observation and assurance basis from a routine task.
+Establish the interval that matters to the work. For a planned observation, consider when the contribution will be needed, how long it may go unused, which support will remain available and the consequence of failure. For a past interval, recover its duration and conditions. An infrequent high-consequence task may warrant a different observation and assurance basis from routine work.
 
-Recover intervening use, practice, instruction, source changes, tool use and relevant uncertainty. Report continuing practice as continuing practice. An uncertain history narrows the conclusion rather than becoming an assumed period of non-use.
+Establish intervening use, practice, instruction, changes in sources and which tools the person used, to the extent the evidence permits. Distinguish continued use from an interval without practice. An uncertain history limits the comparison.
 
 #### HCD.13:4.2 - Compare delay under reference conditions
 
-Specify a delayed task that elicits the same contribution at a comparable demand and criterion. Use the earlier qualified support conditions, or explain the deliberate change and its effect on the inference. Preserve task access and distinguish material differences from harmless surface variation.
+For a planned comparison, choose a delayed task that elicits the same contribution at a comparable demand and criterion. For an existing attempt, establish that comparability from the evidence. Use the earlier qualified support conditions for the reference comparison, or identify a material difference and its effect on the inference. Preserve the access required by the task.
 
-Observe the delayed attempt before remedial teaching when the retention question needs that observation. Keep help, incomplete work, material errors and corrections separate. If the criterion or required source has changed, assess the affected new requirement rather than interpreting every difference as human decline.
+When the question concerns performance before remedial teaching, use an observation made under that condition. Identify help, incomplete work, material errors and subsequent corrections. A changed criterion or source may change the requirement. Assess that requirement if the question calls for it and identify the original comparison it limits.
 
-The direct comparison is earlier versus delayed performance under the stated reference conditions. It can support retention in that tested envelope and history. It does not isolate the cause of the result from every intervening influence.
+Compare earlier and delayed performance under the stated reference conditions. The result can establish retention across the tested interval and practice history. An explanation of the change needs evidence that distinguishes the relevant intervening influences.
 
 #### HCD.13:4.3 - Test support dependence as a separate question
 
-State which support matters and why. A tool contrast is useful when the person must sometimes contribute without that tool, when a fallback is required, or when the assessor needs to distinguish the person's contribution from assisted output.
+State which support matters and why. A tool contrast is useful when the question concerns working without it, the suitability of a fallback, or what the person contributed with the tool available.
 
-For a reduced-support core, specify its own contribution, data, allowed means, time and criteria. Preserve required accessibility support. Do not remove a current technical source merely to make a source-dependent task appear independent.
+For work under reduced support, identify the contribution required, data, permitted means, time and criteria. Preserve the accessibility aids and current sources required by that task. If the intended work requires unaided recall, state and justify that separate demand.
 
-A minimum interpretable comparison distinguishes:
+Match the available comparison to the question.
 
 | Comparison | What it can answer |
 | --- | --- |
 | Earlier and delayed attempts with relevant reference support | What remains demonstrable after the interval under that support and recorded history. |
-| Matched current attempts with a decision-bearing support difference | What the observed performance depends on in that contrast. |
+| Matched current attempts with a support difference material to the contribution | What the observed performance depends on in that contrast. |
 | Only a delayed attempt with support also withdrawn | What happened in that combined condition; delay and withdrawal are not separately identified. |
 
-Control order, cueing, rehearsal and fatigue as far as the receiving use requires. Use fresh comparable material or separate occasions when an earlier task could supply the answer. Record unavoidable order effects; repeated testing is not inert. A positive independent core supports only its stated contribution, not all work previously performed with a tool.
+Account for order, cueing, rehearsal and fatigue to the extent they affect the inference. In a planned comparison, control material effects where feasible. Use fresh comparable material or separate occasions when an earlier task could supply the answer. For a completed sequence, report material order effects and any remaining uncertainty. A reduced-support result covers the contributions tested under those conditions.
 
-#### HCD.13:4.4 - Investigate apparent loss only when the distinction changes the next action
+#### HCD.13:4.4 - Investigate apparent loss when its explanation matters
 
-First check that the present demand is inside the earlier claim. Return an outside-envelope demand or known configuration failure directly.
+Check whether the current demand falls within the earlier claim. If it does not, state which condition has changed. If configuration or access already explains this interruption, use that finding for the question it answers.
 
-When at least two live explanations would lead to different development or support work, and probing is safe and informative, use a qualified E.23.CAE differential. Recover a previously successful or separately qualified reference condition without further teaching. Vary the smallest condition that distinguishes the rivals. A reference–changed-condition–reference comparison can be useful when order or transition history matters.
+When competing explanations matter to the requested finding or response, use an existing qualified comparison if it distinguishes them. If a new E.23.CAE differential is safe, permitted and worth its cost, use a previously successful or separately qualified reference condition without teaching the answer and vary the smallest condition that distinguishes the explanations. A reference–changed-condition–reference sequence can expose an order or transition effect.
 
-Observe whether the person recognizes the applicable response, can access it, adapts it, enacts it and achieves the required result only where the evidence distinguishes those contributions. An incorrect final product alone does not identify which contribution failed.
+Use observations to distinguish recognition, access, adaptation, enactment and result where they support those inferences. An incorrect final product can leave the location and cause of the failure unresolved.
 
-If the response reappears without relearning under the qualified reference condition, a simple global-loss explanation is weakened in those conditions. That recovery does not prove unfamiliar transfer or identify a memory mechanism. If the probe teaches the answer, support changes cannot be separated, or safety prevents the contrast, return the unresolved distinction.
+Recovery without relearning under the qualified reference condition weighs against a global-loss explanation within that scope. For a claim about unfamiliar transfer or a memory mechanism, obtain the evidence that claim requires. If the probe supplies the answer, support effects remain inseparable, or the necessary contrast is unsafe, state the unresolved distinction.
 
-A warranted claim of changed capability requires holder-specific evidence after the relevant envelope and configuration rivals have been addressed. A single unsuccessful return probe is not enough by itself.
+Revise a capability claim when evidence about this person distinguishes a change in capability from relevant differences in the task or configuration. A single unsuccessful return, without evidence distinguishing those alternatives, does not establish capability loss.
 
-#### HCD.13:4.5 - Return separate conclusions and a practical next move
+#### HCD.13:4.5 - Return the supported conclusions
 
-Keep the following separately reportable: delayed performance under reference support; performance in any independent core; observed support dependence; a supported access, adaptation or enactment difficulty; possible loss or warranted revision of a capability claim; and unresolved or omitted tests.
+Report each conclusion the evidence supports. These may concern delayed performance with reference support, a separately tested reduced-support contribution, dependence on certain help, a difficulty in access, adaptation or execution, or a warranted change to a capability claim. Identify unresolved possibilities and consequential untested conditions.
 
-State the interval, practice history, conditions, observations, inference and limits. The next useful action may be ordinary continued use, a targeted observation, access repair, a revision hypothesis through HCD.14 or a direct specialist return. The evidence account does not choose every later action on the person's behalf.
+State the relevant interval or support contrast, practice history where it bears on the comparison, conditions, observations, inference and limits. When further work is needed, it might be continued use, a discriminating observation, access repair, a proposed revision of a development assumption through HCD.14, or a specialist contribution. A choice about that work belongs to the authorized holder.
 
-Stop when the supported conclusion is sufficient for the receiving use, or state the unresolved limit that prevents that use. For stronger reliance, obtain the relevant baseline quality, task comparability, observation coverage, independent judgement and protection against probe-induced learning. Extra follow-up time, access and assessor effort need an actual arrangement; specifying an eight-week check does not obtain them.
+Finish when the supported finding answers the receiving question. If an unresolved limit prevents the intended reliance, identify it. Stronger reliance may require a qualified baseline, comparable tasks, broader observation, independent judgement or controls for learning during the probe. If further observation is needed, establish that the time, assessor and access it requires are available before relying on it.
 
 Reopen only the affected claim when delay, use history, source, tool, task, criterion or intended reliance changes.
 
@@ -89,15 +89,15 @@ Reopen only the affected claim when delay, use history, source, tool, task, crit
 
 #### HCD.13:5.1 - A matched eight-week comparison with an independent core
 
-Learner-L17 and all observations in this example are constructed. The example stipulates a separately resourced follow-up with an assessor and source access. It neither schedules an actual programme visit nor supplies observations of Engineer-E27 or a learner cohort.
+Fictional learner L17 illustrates a separately resourced follow-up with an assessor and source access. The observations below are stipulated for the comparison.
 
 At reference time T0, a qualified assessment records three selected contributions associated with F.1, C.16 and C.11. The engineering tasks require HW3/FW8. A supplier report for FW7 cannot justify FW8; a complete HW3/FW8/SCHED2 report can support the stated configuration. SCHED2 requires two hours of checks per change and one hour of preparation per homogeneous batch of up to four. Ten changes require 23 hours, twelve require 27; at 24 available hours, a ten-change proposal leaves two of twelve new changes in the weekly queue. At 22 hours, nine changes require 21 and ten cannot be promised.
 
-The existing alternatives are A, a second stand still requiring a shared-power check; B, the supplier option with the FW7 report; and C, the compatible SCHED2 arrangement with the stated capacity limit. Supplied financial assumptions give A/B/C approximate NPVs of 48.9/51.6/44.6 thousand. B's financial rank cannot settle its compatibility.
+The existing alternatives are A, a second stand still requiring a shared-power check; B, the supplier option with the FW7 report; and C, the compatible SCHED2 arrangement with the stated capacity limit. Supplied financial assumptions give A/B/C approximate NPVs of 48.9/51.6/44.6 thousand. B ranks highest on the supplied financial assumptions. Its report establishes compatibility for FW7 only.
 
-Two stipulated weekly logs each record ten accepted changes, all required checks completed and twelve arrivals; together they show four additional queued changes. Those observed counts and periods remain distinct from the modelled 23-hour requirement. The source set contains these logs, the exact configuration reports and the calculation assumptions. The release manager is the chooser for release/use; L17 prepares a bounded recommendation. These are local exercise facts.
+Two stipulated weekly logs each record ten accepted changes, all required checks completed and twelve arrivals; together they show four additional queued changes. The logs establish accepted changes and queue growth over those periods. The 23 hours come from the batch model. L17 uses the logs, configuration reports and assumptions to prepare a bounded recommendation. The release manager holds the release decision in this case.
 
-The work decision is whether L17 can resume preparing these bounded recommendations at the next planned assignment, eight weeks after T0. That return date sets the delayed assessment; it is not a general retention interval. The constructed history records two intervening source-selection uses and one comparison/decision-support exercise, with no rehearsal of the exact follow-up cases. Thus the question is retention under intermittent practice, not eight weeks of non-use.
+The assignment is to determine whether L17 can resume preparing these recommendations eight weeks after T0. That date sets the interval for this local assessment. The stipulated history includes two intervening source-selection uses and one comparison exercise, with no rehearsal of the follow-up cases. The question concerns retention under intermittent practice.
 
 At T0 and follow-up, the main task permits the framework and technical sources, calculator, AI assistance with search or calculation, and teacher clarification of instructions. Required accessibility aids remain available. In both constructed attempts, L17 uses AI only to open files L17 has already named; the teacher supplies no additional explanation. The recorded choices and reasoning precede any assistant output that could select the decisive sources, interpret the quantities or recommend an option. The main-task result therefore includes help with document access, while the selected judgements remain observable as L17's contributions.
 
@@ -107,64 +107,64 @@ At T0 and follow-up, the main task permits the framework and technical sources, 
 | C.16: preserve units, conditions and the distinction between a modelled quantity and an observed result | L17 distinguishes modelled hours per proposed batch plan from observed changes per week, and refuses to treat the former as measured throughput. | L17 preserves units, observation periods and the same distinction; a missing observed value remains unknown. |
 | C.11: support a bounded comparison of existing options | L17 identifies the release manager as chooser, compares the given options against current compatibility and time conditions, and states the remaining check or queue consequence. | L17 gives the corresponding bounded recommendation without replacing a failed constraint by financial rank. |
 
-These are selected contributions, not a demonstration of the whole F.1, C.16 or C.11 Method envelope.
+The comparison covers these selected contributions from F.1, C.16 and C.11.
 
 The same assignment starts with a fifteen-minute handoff in which the approved AI service is unavailable, but an accessible offline packet and calculator are available. L17 must still identify the required configuration, notice an unsupported report and reconstruct a feasible time-limited proposal for the release manager. That working requirement justifies the separate core; the later full recommendation can use normal sources and AI.
 
 At both T0 and follow-up, the fifteen-minute core uses the supplied tables and calculator, with required accessibility aids, but no AI or teacher cue. In both constructed observations, L17 distinguishes the configuration and time constraints and explains why ten cannot be promised at 22 hours.
 
-The core runs before the source-dependent task on different material, with no corrective teaching until both are complete. The report retains that order. It supports the narrow core under those conditions and the later source-dependent performance after that core; it is not evidence that task order never matters. A receiving use requiring an entirely unwarmed first attempt would need that observation.
+The reduced-support exercise precedes the source-dependent task on different material. Neither exercise includes corrective teaching before both are complete. This order supports a conclusion about the core under its conditions and equipped performance after that core. A claim about an entirely unwarmed first attempt requires an observation in that condition.
 
-The result is retention of the compared contributions under the stated eight-week history and support conditions, plus the separately tested core. It supports neither untested contributions nor retention without practice, and does not establish an actual learner result or a causal effect of the development arrangement.
+In this constructed case the compared contributions remained demonstrable over the eight weeks of intermittent practice under the stated support conditions. The separately tested core supports the contributions observed there. A claim about retention without practice, untested work or an intervention's causal effect needs different evidence.
 
 #### HCD.13:5.2 - A failed source link changes the arrangement result
 
 During an additional constructed source-dependent task, the required technical source is inaccessible. The earlier qualified contribution depended on using that source. The assessor can verify the access failure directly.
 
-Return source access to the responsible provider and leave the dependent performance judgement incomplete. There is no reason to run a memory-loss diagnosis to explain a known missing input. If a later restored-access attempt is observed, report it under the restored condition without retroactively completing the interrupted attempt.
+Report the verified access failure and identify what this attempt leaves unassessed. If the service must be restored, use an available remedy or seek the responsible provider's contribution. Qualify any later observation with restored access by its own conditions.
 
 #### HCD.13:5.3 - Recovery after a cue narrows an apparent-loss claim
 
 In a separate constructed comparison, the person does not select a familiar Method for the current problem. Without teaching its content, the assessor supplies a previously qualified task cue; the person then produces the familiar response. If that cue is a legitimate reference condition and the contrast addresses the live rival, the result supports availability under that condition and a possible selection difficulty.
 
-It does not show uncued selection, unfamiliar transfer or the mechanism of remembering. If supplying the cue also explains the solution, the no-relearning comparison fails and the loss-versus-access distinction remains unresolved.
+The observation supports performance with the cue. Uncued selection, unfamiliar transfer and the mechanism of remembering each require their own evidence. If the cue also teaches the solution, the resulting response cannot distinguish access to an earlier capability from relearning after a loss.
 
 ### HCD.13:6 - Bias-Annotation
 
-An assessor may prefer a simple story of forgetting or resilience. Resist it when support, access, practice or task conditions changed. People with required assistive technology should not receive a lower capability judgement merely because the assessment removed it.
+Consider changes in access, support, practice or task before attributing a difference to forgetting or resilience. If required assistive technology was removed, that observation alone does not warrant lowering the person's capability assessment for work with the aid.
 
-Repeated probes can favour people who learn from the test itself. Record relevant practice and order effects rather than interpreting every later improvement as stable retention.
+Repeated probes can favour people who learn from the test itself. Use the practice history and test order to determine which retention claim a later improvement can support.
 
 ### HCD.13:7 - Conformance Checklist
 
-- Earlier qualified evidence concerns the same person and contribution.
-- The chosen interval and intervening practice history are explicit.
+- For a retention claim, earlier qualified evidence concerns the same person and contribution, or its absence is identified as the limit.
+- For a delayed comparison, the account names the interval and the known history of intervening practice. Material gaps limit the conclusion.
 - Delay and support questions have separate interpretable comparisons, or the combined-condition limit is stated.
-- A reduced-support core has its own justified target and preserves required access arrangements.
+- If a reduced-support core is used, it has its own justified target and preserves required access arrangements.
 - Help, feedback, unfinished work and probe reactivity remain visible.
 - Any apparent-loss differential uses a qualified reference and addresses live rivals without hidden teaching.
 - Retention, support dependence, access difficulty and capability-loss claims remain distinct.
-- The result names tested coverage, unresolved questions, resource needs, stop and reopen conditions.
+- The result identifies which contributions and conditions were tested, its limits, whether it suffices for the intended use and what would warrant reopening it. It identifies resources for further observation when the receiving use requires that work.
 
 ### HCD.13:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | Better move |
 | --- | --- |
-| “Eight weeks passed, so this is retention without practice.” | Recover the actual use history and qualify the conclusion. |
+| “Eight weeks passed, so this is retention without practice.” | Recover the use history and qualify the conclusion. |
 | “The delayed no-tool test failed, so the person forgot.” | Separate delay from support withdrawal or report the combined condition. |
 | “The answer returned after coaching, so there was no loss.” | Distinguish a qualified no-relearning return from newly taught performance. |
 | “The fifteen-minute core proves the whole course.” | State its selected contributions and preserve untested coverage. |
-| “The follow-up is in the plan, so resources exist.” | Obtain time, assessor and access before the actual observation. |
+| “The follow-up is in the plan, so resources exist.” | Verify that the planned observation has the time, assessor and access it requires. Obtain any missing provision if the observation is to proceed. |
 
 ### HCD.13:9 - Consequences
 
-The practitioner can preserve supported performance, repair access and target a genuine uncertainty without restarting development indiscriminately. A short independent core may answer an important fallback question while leaving normal source-dependent work intact.
+The result can support continued use, identify an access repair or locate a remaining uncertainty. A short independent core may answer an important fallback question while leaving normal source-dependent work intact.
 
-The cost is a recoverable baseline, practice history and a meaningful comparison. Some distinctions remain unresolved without another observation. A cleaner-looking “retention score” is worse if it hides tool withdrawal, teaching during the probe or a narrower tested contribution.
+A retention comparison requires a suitable baseline. The known intervening history determines how specifically the result can be described. Further observations can cost time and access, and some causes may remain unresolved. A single score can hide tool withdrawal, teaching during a probe, a change in the work or that only a narrow contribution was tested.
 
 ### HCD.13:10 - Rationale
 
-Elapsed time is a condition of the comparison, not proof of the cause of a performance change. Support dependence is likewise not synonymous with a deficit: it may be appropriate to the required work. Separating the questions makes the next action local, while a qualified reference return prevents apparent loss from automatically becoming a relearning prescription.
+Elapsed time establishes the interval of a comparison. Explaining a performance change requires evidence that distinguishes the relevant conditions. Using a required support can be part of competent work. A qualified return can show what the person can do under reference conditions. When a support failure explains the interruption, address it if needed and retain the established capability finding within its scope.
 
 ### HCD.13:11 - SoTA-Echoing
 
@@ -172,18 +172,18 @@ Elapsed time is a condition of the comparison, not proof of the cause of a perfo
 
 **Selected line — adopt and adapt.** [Carpenter, Pan and Butler's review](https://www.nature.com/articles/s44159-022-00089-1) supports spacing and retrieval as bounded learning approaches; the [classroom-testing meta-analysis by Yang and colleagues](https://pubmed.ncbi.nlm.nih.gov/33683913/) reinforces that testing conditions can affect learning. HCD.13 therefore records intervening practice and probe reactivity in §4.1–§4.4 instead of treating a test as a passive reading.
 
-**Serious alternative:** compare an earlier assisted score with one delayed unassisted score. It is inexpensive and can describe that combined condition, but it cannot distinguish delay from assistance withdrawal. The selected line keeps a reference-support comparison and adds only the support contrast needed for the decision. Its extra cost is explicit; an unaffordable contrast returns a narrower result rather than a false loss claim.
+**Serious alternative.** One earlier assisted score and one delayed unassisted score can describe performance in those two conditions at low cost. To distinguish delay from withdrawing assistance, compare performance under reference support and add a support contrast if the question requires it. If that contrast is unaffordable, return the finding the combined observation supports.
 
-The [Bastani and colleagues AI study](https://pubmed.ncbi.nlm.nih.gov/40560616/) motivates the support distinction with school-mathematics evidence, not adult occupational or long-retention evidence. That distinction informs the separate independent-core target in §4.3 and the two reports in §5.1. E.23.CAE supplies the reference-return discipline when an apparent-loss differential is actually needed.
+The [Bastani and colleagues AI study](https://pubmed.ncbi.nlm.nih.gov/40560616/) supports the distinction between assisted and unassisted performance in school mathematics. Section 4.3 uses it to define the separate reduced-support target, illustrated by the two assessments in §5.1. Claims about adult occupational performance or long-term retention need evidence under relevant conditions. Use E.23.CAE if a qualified reference comparison is needed to explain apparent loss.
 
-No cited source supplies a universal interval, a local programme effect or the truth of this fictional case. Reopen the conclusion if task comparability, practice history, required access or teaching during the probe changes the inference.
+Use the work to justify the interval and evidence from the relevant programme to assess its effect. The cited studies inform the comparison design; the observations in §5.1 are stipulated. Reopen the conclusion if changes in task comparability, practice history, required access or teaching during the probe affect the inference.
 
 ### HCD.13:12 - Relations
 
-HCD.11 supplies or recovers the prior and current performance evidence. HCD.12 concerns meaningful unfamiliarity, which may coexist with delay but needs its own claim. HCD.14 can use a retention or support finding to revise the affected development assumption.
+HCD.11 or equivalent qualified evidence can supply the prior or current performance that the claim requires. HCD.12 concerns meaningful unfamiliarity, which may coexist with delay but needs its own claim. HCD.14 can use a retention or support finding to revise the affected development assumption.
 
-E.23.CAE governs a qualified apparent-loss differential; a known configuration failure returns to A.15.8 and the direct owner instead. E.23.CDI supplies the capability-development evidence distinction under its holder and Work-family conditions; a retained response does not by itself establish an achieved development intervention.
+For an unresolved apparent-loss question, E.23.CAE supplies the qualified differential when the comparison is needed. A known configuration failure can answer the explanation. If a repair is required, use A.15.8 as applicable and involve the relevant provider when its contribution is needed. E.23.CDI qualifies claims about capability development for the person and Work family concerned. A claim about an intervention’s effect needs evidence linking it to the change.
 
-Target-domain criteria and specialist results remain necessary for correctness. The programme or instrument owner selects and resources particular visits and tasks. Measurement, causal and stronger assurance claims require their own applicable specifications and evidence; this Method creates no common resilience score.
+Use target-domain criteria and applicable specialist results to judge correctness. Whoever arranges an assessment establishes the needed times, tasks, instruments and resources. Measurement, causal and stronger assurance claims each require their own applicable specifications and evidence.
 
 ### HCD.13:End

@@ -4,62 +4,62 @@
 
 > **Pattern type:** Music-and-Dance whole-reidentification pattern
 
-> **Public result:** a project-boundary and architecture decision, or the observation still needed
+> **Public result:** a finding about which whole carries the claim, including what can be established about its formation or continuity. A project can also obtain a recommendation or an authorized decision about retaining or changing its boundary.
 
 ### MDPE.24:0 - Use This When
 
-Use this pattern when a school, scene, camp network, event circuit, platform practice, canon, genre, or style is
-called a new cultural level and that claim would change what the project engineers, funds, maintains, measures,
-governs, or holds responsible.
+Use this method when you need to identify the whole that organizes a school, scene, camp network, event circuit,
+platform practice, canon, genre or style, or determine whether a different whole formed. You might be asking which
+organization operated at a given time or what a project should engineer, fund, maintain, measure or govern and where its responsibility lies.
 
-Visibility and influence are not enough. One famous teacher, popular label, recurring event, camera convention,
-recommendation algorithm, archive, or viral phrase can change a practice while remaining a participant, tool,
-memory, or mediating relation inside an existing whole. Conversely, a network or practice may become stable
-enough to have its own changing states, memory, transitions, selection, persistence, boundary, and effects on
-lower-scale Music or Dance Work. Treating that arrangement only as “background” can then hide the actual
-engineering subject.
+A teacher can attract new pupils, an archive can preserve a repertoire and a recommendation
+algorithm can change which phrases people see. Each can influence an existing practice.
+A network may also acquire a continuing organization of its own. For example, shared
+selection and teaching across cities might preserve repertoire through teacher
+turnover and change what local dancers train. Establish the organization and effects
+the claim relies on before choosing the practice or the network as its subject.
 
-The first useful result is one of three answers for the current project:
+For the claim and period in question, the evidence can establish that
 
-- keep the existing whole and change a named participant or relation inside it;
-- treat a candidate new whole as the EntityOfConcern and reframe the project around its boundary and architecture;
-- leave the question open and name the observation needed before the project boundary changes.
+- the existing whole still carries the claim, with any relevant change in a participant or relation identified,
+- an identifiable whole carries the claim, with its formation or transition from a prior arrangement dated when the evidence supports that further finding, or
+- a required condition fails or remains undetermined. Report what this rules out or what information would distinguish the remaining possibilities.
 
-Do not use this pattern when “level” merely means a teaching difficulty, skill grade, analytical zoom, hierarchy
-label, or step in a Method. Use the direct capability, learning, architecture, part–whole, or unfolding pattern.
+For teaching difficulty, a skill grade, a change of analytical scale or a step in a Method, use the corresponding learning,
+capability, architecture, part–whole or unfolding method. Ask about a new whole only if its actual organization matters.
 
 ### MDPE.24:1 - The Recurring Difficulty
 
-Music and Dance make new-whole claims especially tempting. A named practice can have its own vocabulary,
-followers, visual identity, press coverage, classes, and media while still being produced and selected through an
-older scene. A single festival can recur without becoming an event-system whole distinct from its provider. A
-platform can amplify short dance phrases without the platform itself becoming a dance style. A canon can guide
-later performance while remaining an episteme used by Agents and Systems rather than an acting cultural subject.
+A named practice can have followers, its own vocabulary, classes, media coverage and a recognizable
+appearance while still drawing its teachers and selection rules from an older scene. A producer
+can run successive festival editions. A platform can amplify a dance phrase. A canon can guide
+performers as a body of knowledge they use. Each case has an identifiable participant, source or
+relation whose influence can be examined before attributing it to a distinct acting organization.
 
-Two expensive errors follow:
+A mistaken boundary can have either consequence.
 
 1. **Premature enlargement.** The project invents governance, measures, maintenance, ownership, or causal powers
    for a “new level” that is only a label, a local system-role kind, a classification under that kind, an analytical grouping, or an influential participant.
 2. **Missed reidentification.** The project continues optimizing isolated classes, artifacts, or events although a
    persistent network now has its own architecture, constraints, risks, memory, and recurring Work.
 
-Ask whether the existing whole remains the right subject of the claim that matters to the project.
+Ask which whole carried or would carry the capability, responsibility or other property the claim concerns.
 
 ### MDPE.24:2 - Solution
 
-Compare two explanations before changing the project boundary:
+Ask which whole the claim concerns and whether a prior whole has been identified for comparison. With an established prior whole, examine two explanations.
 
-- **existing-whole explanation:** the observed change comes from new participants, capabilities, Methods,
-  measurements, media, selection relations, or architecture inside the already identified whole;
-- **new-whole explanation:** a different whole now has to carry the current identity, architecture, capability,
-  persistence, effect, or responsibility claim.
+- **Existing whole.** Changes in participants, capabilities, Methods, measurements, media, selection or architecture can account for the observed difference
+  while the previously identified whole retains its identity.
+- **Different whole.** The claim depends on a boundary, architecture, capability, continuity, effect or responsibility that requires
+  an independently identifiable whole.
 
-Use `A.1` and `B.2` for the general holon and whole-reidentification decision. `MDPE.24` supplies the Music-and-Dance
-questions, observations, cases, and project consequences that make that general move useful in this field.
+Use `B.2` to test whether the prior whole suffices. If a different whole is required, establish its construction and kind under `A.1` and explain why the prior whole cannot carry this claim.
+For a first recognition, apply A.1 and the kind criterion to the relations already in place. To establish first formation, also recover the events that brought those relations into being. To establish a transition, recover the prior identity and the change. Report how far the available facts take the particular claim.
 
-#### MDPE.24:2.1 - State the project consequence first
+#### MDPE.24:2.1 - State the claim and any project consequence
 
-Name the decision that would change if a new whole were recognized. For example:
+Name the claim that would change, and any project decision that depends on it. For example, the difference can affect
 
 - whether to engineer one festival edition or an enduring festival-series System;
 - whether to improve one school or work on a teaching-and-performance network spanning schools;
@@ -69,61 +69,61 @@ Name the decision that would change if a new whole were recognized. For example:
 - whether responsibility and assurance stay with local providers or must also address a separately identified
   coordinating System.
 
-If both answers lead to the same Work, measure, authority, and boundary, defer the whole-reidentification question.
+If the same whole suffices for the work, measure, authority and boundary under consideration, the project can continue on that basis. A separate historical question may still require identifying which organization existed.
 
 
-#### MDPE.24:2.2 - Name the existing whole and the candidate
+#### MDPE.24:2.2 - Identify the candidate and any prior whole
 
-Name the existing whole that currently carries the claim, its identity through change, and the parts or
-participants already recognized. Then name the candidate new whole without using only a genre, scene, school, or
-platform label.
+Identify the candidate. For comparison with a prior whole, establish that whole’s identity through change, its parts and relevant participants.
+If a transition matters and those grounds are disputed, compare the proposed identity rules and their consequences. A genre, scene, school or
+platform name can help locate it. Establish what the name denotes and what holds that entity together.
 
-For a choreo-camp case, the existing whole might be a broader commercial-dance teaching and performance scene.
-The candidate might be a persistent cross-city network constituted by recurring providers, teachers, learners,
-publication Systems, status relations, and linked Work. For an annual festival, the existing whole might be one
-edition produced by an organization; the candidate might be an enduring festival-series System with its own
-operation, memory, commitments, and identity across changing editions.
+For a choreo-camp, compare the wider commercial-dance scene with a proposed cross-city network.
+Recurring provision, teaching, migration and publication might link providers, teachers and learners
+as constituents, customers or other participants. Establish which relations form the network. For
+a festival, an existing producer might organize one edition. A continuing series organization
+may have different operations, commitments and an identity that persists between editions.
 
-A chosen scale of description is not a world-side whole. A coarse-graining operation can summarize many lower
-states and reveal useful macrovariables, but the representation creates neither constituents nor part–whole
-relations. Ground the candidate in actual Systems or other admitted holons, constructive relations that exist,
-and the direct criterion for its proposed kind.
+Changing the scale of a description can reveal a pattern in many lower-level states.
+To identify a whole, establish the actual constituents, the relations through which
+they compose it, the other construction conditions in `A.1` and the criterion for
+its proposed kind. A macrovariable or a different view can guide that investigation.
 
 #### MDPE.24:2.3 - Look for Music-and-Dance whole-making relations
 
-Use the following questions as probes, not as a score and not as a checklist that creates the answer. Select the
-observations that could distinguish the candidate's particular project claim from the existing-whole explanation.
-Keep that selection separate from the complete A.1 construction and admitted-kind criterion in :2.5: an irrelevant
-dynamic property need not be present or investigated. For example, an acting organization need not select musical
-variants merely to be an organization; a claim that it preserves a repertoire through teacher turnover does need
-evidence for that particular continuity.
+Select observations that bear on the claim. For a comparison with a prior whole, look for facts that distinguish the two explanations. Use
+adequate existing evidence, including a qualified finding about the construction or its
+kind. To identify a whole in §2.5, establish the full A.1 construction and apply the separate criterion for
+the kind. The table below suggests observations for particular field claims. A scheduling
+organization can exist without selecting musical variants. A claim that it preserves
+a repertoire through teacher turnover does require evidence of that continuity.
 
 | Probe | Music-or-Dance observation that could matter |
 | --- | --- |
 | Boundary | Participation, repertoire, performance, teaching, publication, or access relations distinguish the candidate from neighboring practices. |
-| Constitutive relations | Recurring coordination, supervision, commitment, exchange, teaching, performance, or mediation relations hold the candidate together rather than merely connecting unrelated participants. |
+| Constitutive relations | Establish which coordination, supervision, commitment, exchange, teaching, performance or mediation relations actually organize the constituents into this candidate. Identify external participants and suppliers where the distinction matters. |
 | States at this scale | The candidate can be in materially different states such as expanding, fragmenting, canonizing, losing capability, changing repertoire, or changing circulation. |
-| Memory | Embodied lineages, repertoires, curricula, archives, maintained instrument or software configurations, event arrangements, and recurring teaching, performance, maintenance, or handover Work can support later recovery after participant turnover. Name what present Agents actually use, in which Work, and what they recover. |
-| Transitions | The candidate has identifiable changes among its states, not merely a sequence of lower-scale performances or publications. |
+| Memory | A repertoire, teaching lineage, curriculum, archive, instrument setup or handover can support recovery of material or the practice after turnover. For a claim about actual recovery, identify who used it, in what work, and what was recovered. |
+| Transitions | Identify the candidate’s states and what changed between them. Use individual performances or publications as evidence where they bear on that change. |
 | Recognition and selection | Variants, teachers, performers, works, or Methods are amplified, suppressed, retained, or dropped through relations that obtain at the candidate boundary. |
 | Downward effect | The candidate changes what performers train, what creators make, what teachers teach, what partners expect, or what events and media present. |
 | Persistence and identity | The candidate remains identifiable across turnover of individual Agents, artifacts, events, venues, or trends under a stated reidentification rule. |
-| Temporal scale | Its state and memory persist across enough lower-scale Work to matter to the project; “slower” is evidence only when the relation is observed. |
-| Larger-assembly compatibility | The candidate has interfaces and identity conditions under which it can remain a constituent of a larger scene, discipline, organization, or cultural ecology. |
+| Temporal scale | Compare the duration of the candidate’s states or memory with the lower-level work relevant to the claim. Establish the times on which a conclusion about persistence depends. |
+| Larger-assembly compatibility | Identify a rule by which a larger scene, discipline, organization or cultural ecology could integrate the candidate. Establish whether its boundary, interfaces and identity can satisfy that rule. |
 
-When an assignment is used as memory evidence, name the `A.2.1` assignment species and direct predicate, its
-actual participants and extent. Then name the separate, existing relation by which performed Work, a maintained
-result, or another continuity-bearing contribution supports later recovery. An assignment, roster, archive, or
-configuration record alone does not establish performed Work, recovery, or cultural memory.
+If an assignment is offered as evidence of continuity, use `A.2.1` to identify its kind, the relation it
+establishes, the participants and its extent. Examine whether the work performed, a maintained result or
+another contribution supported continuity or made later recovery possible. To report actual use or recovery, establish
+what happened. An assignment or a retained configuration may already settle what was assigned or retained.
 
-A popular name can lack constitutive relations. An archive can supply memory but
-no current performance capability. A network can persist but remain only an exchange relation among existing
-organizations. A platform can select variants without becoming either the artistic practice or the whole that
-performs it.
+A popular name may cover several unconnected practices. An archive may retain a phrase after local
+performance has ceased. Organizations may continue exchanging performers while keeping separate
+operations. A platform may influence selection while the artists who use it sustain the practice.
+Each finding identifies a different relation and directs attention to a different possible subject.
 
 #### MDPE.24:2.4 - Try the existing-whole explanation
 
-Before enlarging the project, ask whether the observed novelty can be handled by a smaller repair:
+When a prior whole is identified, ask whether a change within it explains the finding under its identity rule. For example,
 
 - a performer or teacher developed a new capability;
 - a Method or repertoire changed while the practice remained the same whole;
@@ -133,41 +133,41 @@ Before enlarging the project, ask whether the observed novelty can be handled by
 - measurement or recognition became more discriminating;
 - an architecture view omitted an already existing relation.
 
-When one of these explanations carries the current claim, keep the existing whole. Engineer the changed System,
-Method, capability, memory, or relation directly. Importance, novelty, synergy, complexity, or surprise does not
-force whole reidentification.
+When one of these explanations supports the claim, retain the existing whole. If a change is
+needed and commissioned, address the relevant system, Method, capability, memory or other
+relation. The novelty or importance of a change alone says little about the identity of the whole.
 
-#### MDPE.24:2.5 - Reidentify only when the project needs the candidate whole
+#### MDPE.24:2.5 - Establish which whole carries the claim
 
-If the existing whole cannot carry the claim, apply the complete FPF holon criterion and the criterion for the
-candidate's kind. State why the new whole, rather than its participants or a model of them, now carries the
-relevant boundary, architecture, capability, persistence, or effect claim.
+For a first identification, or when the existing whole cannot carry the claim, establish all six construction conditions of `A.1`
+and the separate criterion for the candidate’s kind. Use the evidence for that candidate to
+explain why the particular boundary, architecture, capability, continuity or effect belongs to it.
 
-Then change the project accordingly. Name the new EntityOfConcern, its boundary, constituents, interfaces,
-identity-through-change rule, architecture concerns, intended Work or capability, affected Agents and Systems,
-and the observations and responsibilities that now matter. Do not attribute agency, authority, goals, or Work to
-the new whole unless their own conditions obtain.
+Identify the whole that bears the claim, its boundary, constituents and relevant interfaces, and how it persists through change.
+State what this establishes about the work or capability being examined. If the task includes a project
+change, identify the architecture, work, affected participants, observations and responsibilities
+to reconsider. Each attribution of agency, authority, goals or performed work needs its own basis.
 
-Return an open result when missing evidence prevents determining a required A.1 or kind condition, or prevents
-settling the particular project claim. Name which determination is blocked before selecting a feasible observation.
-For a claimed continuity through teacher turnover, follow whether a camp network persists after founding teachers
-leave. For a claimed cross-city production effect, compare the publications, teaching relations and changed Work
-in those cities. For a festival's promised recurrence, examine its continuing operating arrangement across editions.
-Do not keep an otherwise supported decision open solely because a probe irrelevant to its claim is unobserved.
+When the evidence leaves a required A.1 condition, the kind or the project claim undecided, identify exactly
+what is unknown. State which observation could resolve it if further inquiry is needed and feasible.
+To assess continuity after founding teachers leave a camp network, trace the continuity-bearing relations before
+and after turnover. For a cross-city production effect, compare the publications, teaching
+relations and work in those cities. For a festival’s promised recurrence, examine the evidence for maintaining production
+between editions. Use the observations needed for the particular claim.
 
 ### MDPE.24:3 - First Useful Result
 
-A project-boundary decision can be kept in this compact form:
+When someone will rely on a finding, give the following details that apply to their question.
 
-> - **Decision affected:** [what engineering, funding, maintenance, measurement, or responsibility changes].
-> - **Existing whole:** [the current EntityOfConcern and its identity-through-change rule].
-> - **Candidate new whole:** [the grounded candidate and proposed admitted kind].
-> - **Observed change:** [the world-side change that raised the question].
-> - **Existing-whole explanations tried:** [the smaller repairs that may carry the claim].
-> - **Whole-making relations observed:** [boundary, construction, states, memory, transitions, selection, persistence, downward effect, and larger-assembly fit as applicable].
-> - **Decision:** [keep existing whole / reidentify candidate whole / open].
-> - **Project consequence:** [changed boundary, architecture question, Work, measure, authority, or no change].
-> - **Needed observation:** [only when the result remains open].
+> - **Question and use.** Which claim is at issue? If the result affects a decision, identify the engineering, funding, maintenance, measurement or responsibility it bears on.
+> - **Prior whole, when relevant.** Identify the established prior whole, its period and its identity rule. For a transition question, state any missing or disputed identity grounds.
+> - **Candidate.** Identify the proposed subject and the admitted kind whose criterion it must meet.
+> - **Change or claim under examination.** Identify what was observed or proposed and any features the evidence leaves undetermined.
+> - **Comparison, when a prior whole is established.** Explain how its relations and identity rule account for the change, why the claim needs another whole, or which deciding fact remains unknown.
+> - **Construction and evidence.** To identify a whole, establish its constituents, their constructive relations and assembly, its identity rule, a composition-dependent characteristic and compatibility with a governed larger assembly. Apply the separate criterion for its kind. Include evidence about memory, selection, continuity or effects where the claim needs it.
+> - **Finding.** State which whole carries the claim for the period. For formation, transition or continuity, identify the dated events and relations that support the finding. Specify any failed condition or what the evidence leaves open.
+> - **Project consequence, if any.** State what the finding means for the project, including grounds for retaining its boundary or a proposed, authorized or completed change, as applicable.
+> - **Further evidence, if needed.** Say what the comparison still requires and whether that evidence can be obtained.
 > - **Reopen condition:** [new construction, loss of persistence, changed identity rule, or contrary evidence].
 
 
@@ -176,22 +176,22 @@ A project-boundary decision can be kept in this compact form:
 
 #### MDPE.24:4.1 - One choreo-camp versus a persistent network
 
-One camp brings teachers and learners together, records classes, and publishes videos. That can be an event and a
-set of Work occurrences inside an existing dance scene. Visibility, international attendance, and repeated
-branding do not yet require a new whole.
+Teachers and learners meet at one camp. Its classes are recorded and the videos published. Those
+events can belong to the work of an existing dance scene. Visibility, international
+attendance and recurring branding can increase without a new continuing network being formed.
 
-A persistent network becomes a serious candidate when recurring teaching, travel, status, booking, publication,
-and learner-migration relations hold it together; it retains repertoire and memory across individual camps;
-teacher and phrase selection changes over time; and the network changes how dancers train and choreographers
-create material in several cities. The project then compares two practical choices: improve one event/provider,
-or treat the network's boundary, architecture, persistence, access, and downward effects as the engineering
-subject. If persistence and cross-city effects are only asserted, the result stays open and names the observation.
+Recurring teaching, travel, booking, publication, status and learner migration can organize a continuing
+network. Look for the relations that hold it together, retain repertoire across camps, affect the selection
+of teachers or phrases, or change training and choreography in the cities concerned. Which are established?
+An event provider may suffice for a claim about one camp. A claim about cross-city persistence may require
+evidence of the network’s construction and continuity. For a claim about access or effects, examine those relations. If the available material does not establish the relevant continuity
+or a claimed effect, state the outstanding question. A project choosing whom to support can use that comparison.
 
 #### MDPE.24:4.2 - A short-video platform and a dance practice
 
-A recommendation algorithm, camera convention, or viral phrase can mediate visibility and selection without
-becoming a dance practice or cultural whole. Engineer the mediating System and relation when that explanation is
-enough.
+A recommender, camera convention or viral phrase can affect visibility or selection.
+When that explains the result, identify the mediating system and relation. Address
+them directly if the task includes changing how the platform or practice works.
 
 Suppose the project claims that a participant practice persists beyond individual trends and changes what people
 train. Production, imitation, publication, recognition, retained material and recurring selection then suggest
@@ -239,31 +239,31 @@ dissolving or replacing its internal organization. Its boundary, capacity and co
 satisfy this specified larger-assembly rule. It need not already have joined the season organization for that
 compatibility to hold.
 
-Now try the smaller explanation. Better booking software or an added teacher could change Harbour Production
-while preserving that System. Neither gives it the South unit's production organization or the joint control of
-the shared pool. Harbour Production remains the right whole for its North delivery claim; it is insufficient as
-the subject of the new cross-city recurrence and reallocation claim. The six A.1 components above and acting
-condition support recognizing Series Operations, and the B.2 comparison selects it as the EntityOfConcern for
-this funding question. The engineering boundary now includes all three component units and their allocation,
-handover and exception relations. It excludes ownership of the dance style and does not turn the participating
-public into components. Fund and maintain that recurring organization; plan each festival edition as its
-separate Work.
+Better booking software or an additional teacher could change Harbour Production while
+preserving its identity. Neither gives it the South production unit or joint control of
+the teacher pool. Harbour Production is sufficient for the North delivery claim. For
+cross-city recurrence and reallocation, the six A.1 conditions and the separate acting
+condition establish Series Operations as the relevant whole under B.2. Its boundary
+includes the three component units with their allocation, handover and exception relations.
+This operating boundary confers no ownership of the dance style. The attending public participates without becoming part of the production organization. For
+a funding recommendation, support the recurring organization and budget for each edition
+as separate work. The authorized funder decides whether to commit the resources.
 
-For a changed input, suppose the common scheduling service has a short outage but its commitments and control
-are restored through the agreed handover. Repair that constituent or interface; do not declare another new whole.
-If instead the units dissolve their common allocation and resume independent bookings, retaining only the name
-and recordings, the continuity rule is no longer satisfied. Keep the local producers, completed editions and
-records; reopen the cross-city funding and recurrence claim. An archive can support later recovery, but it does
-not by itself restore the former operating organization. If the assessor cannot tell whether joint allocation
-still obtains, leave that determination open and inspect one current cross-city allocation and its execution.
-No observation of musical-variant selection is needed for this organizational claim.
+Suppose the scheduling service briefly fails and the continuing commitments and control are
+restored through the agreed handover. Series Operations retains its identity. If a repair is
+needed, direct a repair recommendation or authorized work to that constituent or its interface. If joint allocation is dissolved and independent
+booking resumes, the continuous organization ends under its stated rule. The local producers,
+completed editions and recordings can remain. An archive can establish what happened without reconstituting operations.
+Suppose the surviving records establish the three-unit organization and the cross-city reallocation on 12 June. If these are the earliest surviving records,
+they can establish that Series Operations existed by 12 June. Without evidence of how or when joint allocation began, its formation date and predecessor remain open.
+For a present funding or recurrence decision, establish whether the organization continued past the archived event and what it can deliver now.
 
 
 #### MDPE.24:4.4 - A new genre label
 
 A label can coordinate discovery, criticism, teaching, marketing, or community talk. Use those relations directly.
-If a project needs a new-whole claim, first recover the candidate's exact construction and identity, all six A.1
-components and its admitted-kind condition. Then explain which project claim the existing whole cannot carry.
+To identify a whole, establish its six A.1 construction conditions and the criterion for its admitted kind.
+For a proposed transition from a known practice, test whether the same whole can carry the claim. Retain it if sufficient, identify another if required and supported, or report what remains undecided.
 States, memory, transitions, selection and persistence supply discriminating observations only where that claim
 or identity rule needs them. A label's popularity establishes none of these conditions; absence of an irrelevant
 dynamic property defeats none of them.
@@ -272,13 +272,13 @@ dynamic property defeats none of them.
 
 | Check | Failure it prevents | Repair |
 | --- | --- | --- |
-| A project decision changes | “New level” becomes academic classification. | Name the boundary, Work, measure, architecture, funding, maintenance, or responsibility that differs. |
-| Existing whole is named first | Novelty erases the current EntityOfConcern. | State the existing whole and try smaller explanations before reidentification. |
-| Candidate is grounded | A label, diagram, metric, archive, or macrovariable becomes the whole. | Name actual constituents, constructive relations, boundary, identity rule, and kind criterion. |
+| Consequence of the distinction | A new-level label goes unexplained. | Identify the historical or project claim that depends on the whole and any work, measure, funding, maintenance or responsibility that the finding affects. |
+| Prior identity where the claim concerns a transition | Novelty obscures an existing subject, or a first recognition is dated as a formation. | With a grounded prior whole, test whether its identity rule accommodates the changes. For a first recognition, date the evidence of construction. Establish when the organization formed from evidence about its formation. |
+| Candidate identified under its kind | A label, diagram, archive or aggregate value is treated as establishing a whole. | Apply the six A.1 conditions to this candidate and the separate criterion for its admitted kind. |
 | Part–whole, scale, and coarse-graining stay distinct | A representation operation substitutes for world-side construction. | Use scale for the chosen description, coarse-graining for the model operation, and direct patterns for obtaining part–whole relations. |
-| Music-and-Dance relations change the test | Generic emergence language hides the field problem. | Observe repertoire, performance, teaching, embodied memory, recognition, selection, circulation, and lower-scale production as the case requires. |
-| A claimed downward effect is observed | Influence is asserted from fame or correlation. | When the project relies on this effect, name the relation and compare lower-scale Work under relevant conditions. |
-| Claimed persistence survives the specified turnover | One event, creator, artifact, or trend is taken as evidence for continuing organization. | When that continuity matters to the claim or identity rule, observe the relevant retaining relations and later recovery; keep only the undetermined claim open. |
+| Music-and-Dance relations change the test | Generic emergence language hides the field problem. | Use suitable observations of repertoire, performance, teaching, embodied memory, recognition, selection, circulation or local production as the claim requires. |
+| Grounds for a claimed effect on local work | Influence is inferred from publicity or correlation alone. | Identify the relation and compare work under conditions that can distinguish its contribution from other changes. |
+| Continuity through the specified turnover | A single event or artifact is taken to establish a continuing organization. | Use its identity rule and evidence across the relevant turnover. State any remaining uncertainty about persistence and retain the other findings. |
 | Kind and agency are not assumed | A network, scene, canon, or platform is treated as an acting System by grammar. | Apply the direct kind criterion; attribute Agent, authority, goal, capability, and Work only when their conditions obtain. |
 
 ### MDPE.24:6 - Sources and Epistemic Boundaries
@@ -291,18 +291,18 @@ dynamic property defeats none of them.
 | [Vanchurin et al., *Toward a theory of evolution as multilevel learning*](https://doi.org/10.1073/pnas.2120037119) | A mathematical and theoretical source for multiscale learning-like dynamics. | A model scale, coarse-graining, or macrovariable is not by itself a world-side holon. |
 | [Czaplicka, Baumann, and Rahwan, algorithmic mediation and cumulative culture](https://doi.org/10.1098/rsif.2024.0686) | A source for asking how algorithmic mediation changes cultural transmission and accumulation. | A modelled mediator or observed influence does not establish that the platform, practice, or style is a new whole. |
 
-Reconsider the whole-reidentification decision if a domain study supplies a better discriminating observation. Use FPF and direct domain Methods when they already supply the complete result.
+Reconsider a past or present comparison when new findings change its basis. A proposed observation matters if it could settle a remaining question at a worthwhile cost. Use the FPF or domain Method directly where it already supplies the result.
 
 ### MDPE.24:7 - Relations
 
-- `MDPE.8` and `MDPE.1` name the subject, scale, and project decision before whole reidentification is attempted.
+- Use `MDPE.8` or `MDPE.1` if the subject, scale, receiving question or decision still needs clarification.
 - `MDPE.21` designs how a style is produced and reproduced. A rich reproduction architecture can still belong to
-  an existing whole; `MDPE.24` asks whether the EntityOfConcern itself changed.
-- `MDPE.12` supplies observations only when they can distinguish the existing-whole and new-whole explanations.
+  an existing whole. Use `MDPE.24` to identify the whole that supports the practice and, when relevant, establish whether it changed.
+- Use observations from `MDPE.12` when they bear on the candidate construction, continuity or a difference between the two explanations.
 - `MDPE.22` may change the support environment without creating a new whole. `MDPE.14` handles a supported practice conflict
   without assuming that the conflict produced whole reidentification.
-- Systems Engineering and the applicable organization, operations, administration, maintenance, or platform DPF
-  supply general Methods after the candidate engineered System is identified. MDPE supplies the artistic-practice
+- Systems engineering or the relevant organization, operations, administration, maintenance or platform practice
+  can supply evidence of an operating arrangement or methods for changing an identified system. MDPE supplies the artistic-practice
   boundary, domain observations, and consequences for performance, teaching, recognition, and cultural continuity.
 
 

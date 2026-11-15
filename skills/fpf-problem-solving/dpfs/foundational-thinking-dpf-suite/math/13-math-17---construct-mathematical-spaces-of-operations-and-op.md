@@ -35,7 +35,7 @@ To locate the failure, specify the rule's domain, construction and relevant laws
 
 #### MATH.17:4.1 - Specify the operations and the question about them
 
-Name the inputs and outputs of an operation. Write `f:A -> B` when f assigns an element of B to every element of A. Write `g∘f` for “first f, then g”; it is defined when f's output is an allowed input to g.
+Name the inputs and outputs of an operation. Write `f:A -> B` when f assigns an element of B to every element of A. Write `g∘f` for “first f, then g”; this is a function on all of A if g is defined at every value f takes.
 
 Choose what counts as equality for the present question. In the main function route, f and g are equal when they have the same domain and codomain and `f(x)=g(x)` for every input x. If the question concerns the steps used, resource cost or another distinction between ways of producing that function, retain a construction or program representation carrying that distinction. A function value alone leaves it unavailable. MATH.1 supplies constructions retaining ordered steps; MATH.2 handles an identification when the needed operations respect it.
 
@@ -91,11 +91,11 @@ A different higher-order operation can have a different useful law. Differentiat
 
 Compute the proposed changed operation and derive the consequence that motivated it. When comparing “transform each step” with “transform the whole”, keep both expressions until their equality is established or a separating input is found.
 
-The result consists of the usable construction and the conditions supporting the particular consequence. For a finite example, a counterexample can settle a failed universal claim. A general preservation claim needs an argument over its stated inputs.
+The result consists of the usable construction and the conditions supporting the consequence. For a finite example, a counterexample can settle a failed universal claim. A general preservation claim needs an argument over its stated inputs.
 
 Return to the affected condition when the task changes. A new interaction between entries may invalidate pointwise lifting. A narrower resource budget may invalidate closure. A new question about how the operation was obtained may require retaining the construction that an input-output function discarded.
 
-When this mathematics describes a working method, use C.29's correspondence to identify what the mathematical operations represent and which practical distinctions they retain. A proposed program transformation also needs its execution semantics. Those connections let the result inform actual work while keeping the mathematical and subject claims recoverable.
+When this mathematics describes a working method, use C.29's correspondence to identify what the mathematical operations represent and which practical distinctions they retain. A proposed program transformation also needs its execution semantics. Those connections let the result inform the work while keeping the mathematical and subject claims recoverable.
 
 ### MATH.17:5 - Archetypal Grounding
 
@@ -147,7 +147,7 @@ The transformation takes f itself as an input and returns g. Fixing a point and 
 
 ### MATH.17:6 - Bias-Annotation
 
-A familiar collection of “valid operations” can conceal an unproved closure claim. A familiar higher-order operation can conceal the choice of law used to combine its results. Work with the actual membership condition and proposed equation; the failing inputs in :5.1 and :5.2 locate those different errors.
+A familiar collection of “valid operations” can conceal an unproved closure claim. A familiar higher-order operation can conceal the choice of law used to combine its results. Work with the membership condition and proposed equation; the failing inputs in :5.1 and :5.2 locate those different errors.
 
 The set-and-function route makes these questions accessible. A question involving topology, approximation, randomness or an alternative equality calls for the corresponding additional structure and argument.
 
@@ -158,7 +158,7 @@ For the construction being used:
 - The operations have recoverable inputs, outputs, equality and admissibility conditions.
 - The needed compositions land in the claimed collection, or a concrete failure has changed the proposed use.
 - The higher-order operation has a construction and returns an admissible output.
-- Each law used to derive the result has the required scope and an argument; a tested finite case supports only what it establishes.
+- Each law used to derive the result has the required scope and an argument. A counterexample can refute a universal law. To infer the law from finite tests, cover its stated domain or justify the extension.
 - The resulting comparison or changed rule answers the starting question.
 - A subject or computational application supplies the correspondence or execution account needed by that use.
 
@@ -178,11 +178,11 @@ The abstraction has a cost: the operation collection and its laws must be constr
 
 ### MATH.17:10 - Architectural Rationale
 
-Separating membership, closure and higher-order transformation locates three different sources of failure. Combining them into a generic instruction to “check composition” would leave the repair unclear.
+Separating membership, closure and higher-order transformation locates three different sources of failure.
 
 MATH.16 supplies the function-object construction. Here the practitioner selects a collection of allowable operations and constructs further operations whose arguments are members of that collection. Monoid and category language make the established composition reusable; the derivative example shows why other higher-order operations need other laws. The choice follows the problem about rules.
 
-The same structure can support mathematical work, computational transformations and mathematical accounts of methods. Its applicability in the latter two depends on the interpretation of operations and consequences, which remains the responsibility of the receiving method.
+The same structure can support mathematical work, computational transformations and mathematical accounts of methods. To use it for computation or for a working method, obtain or establish an applicable interpretation of the operations and their consequences.
 
 ### MATH.17:11 - SoTA-Echoing
 

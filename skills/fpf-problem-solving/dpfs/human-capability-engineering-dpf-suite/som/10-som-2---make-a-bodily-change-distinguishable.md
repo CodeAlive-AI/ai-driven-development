@@ -5,84 +5,84 @@
 
 ### SOM.2:1 - Problem frame
 
-Use this when a bodily instruction cannot guide action because the performer cannot distinguish the location, direction or developing change it names. The immediate result is a difference the performer can notice again under suitable conditions, not yet control of the movement.
+Use this Method when a bodily instruction is hard to act on because the performer cannot distinguish the location, direction or developing change it names. Report the difference the performer can notice again under suitable conditions, or the conditions under which they could not distinguish it. Identify what prevented recognition when the evidence supports that explanation. Assess control from evidence of regulation.
 
-Choose the distinction for a receiving task through SOM.1. If the distinction is already available, proceed to the missing regulation or combination. Use familiar comfortable conditions, or obtain a teacher's suitable construction; a verbal direction alone does not authorize unfamiliar loading.
+Start with the distinction the movement requires. Use SOM.1 if its relevance is uncertain. If the performer already distinguishes the change, use that finding and address any regulation or combination the movement still needs. For practice, choose familiar comfortable conditions or obtain suitable instruction from a teacher before using unfamiliar loading.
 
 ### SOM.2:2 - Problem
 
-The performer may understand the words but have no usable bodily referent. Repeating “less effort” or naming a smaller region does not ensure that two bodily changes feel different. An outside difference can also remain invisible from inside, while an inside difference can fail to affect the result.
+A performer can understand “less effort” yet have no bodily difference they can recognize. More specific anatomical words may leave the same difficulty. An observer may see a difference that the performer cannot feel. A difference the performer feels may leave the external result unchanged.
 
 ### SOM.2:3 - Forces
 
-A contrast must be large enough to notice and small enough to remain suitable for the movement. Support can make it accessible but may change the later task. Detailed vocabulary aids communication only after it refers to a distinction the performer can recover. Recognition and regulation can develop together, but a result about one cannot stand in for the other.
+Choose a contrast large enough for the performer to notice and suitable for the movement. A support can make the difference accessible and also change the task. Use detailed language once the performer can recognize what it describes. Noticing and regulating can develop in the same attempt. Use evidence for each claim.
 
 ### SOM.2:4 - Solution
 
 #### SOM.2:4.1 - Construct an accessible contrast
 
-Select two already available, comfortable variants of one task-relevant change. Vary the support, intended direction or amount only as needed to make the contrast accessible. Keep other conditions alike where possible; note any changes that could explain the difference.
+For a new comparison, select two comfortable ways the performer can already carry out one task-relevant change. Vary the support, intended direction or amount as needed to make that contrast accessible. Keep other conditions alike where possible and note any differences that could also explain the observation.
 
-Compare the first variant, the second and a return to the first. Attend to what changes during the action and after release. The return helps distinguish the proposed contrast from an unfamiliar one-time event.
+For a new trial, compare the first variant, the second and then the first again. An existing sequence showing those comparisons can supply the same evidence. Examine what changes during the action and after release. The return tests whether the performer can recognize the contrast again under these conditions.
 
 In familiar writing, compare the usual pen hold with a slightly lighter hold while the forearm rests in its usual supported position. Return to the usual hold. Do not deliberately increase load to obtain a stronger sensation.
 
 #### SOM.2:4.2 - Locate what is distinguishable
 
-Ask where the change is experienced, in which direction and how it develops. The answer can initially be a broad region, a gesture or “no reliable difference.” Bodily landmarks help recover a location without asserting which tissue produced the experience.
+Establish where the performer experiences the change, in which direction and how it develops. A first answer may be a broad region, a gesture or “no reliable difference.” A bodily landmark can help the performer locate the experience again. Identifying the tissue responsible requires other evidence.
 
-Use a coarser contrast or different suitable support when the distinction is unavailable. Do not require the performer to report the teacher's expected sensation. Refine the region only when the next action needs that resolution.
+If the task still requires a distinction the performer cannot make, try a coarser contrast or other suitable support. Accept the performer’s account, including that they could not tell the two variants apart. Refine the region when the movement question requires a finer distinction.
 
-An effort that is outside attention and an effort that is involuntary are different matters. Exploring a previously unnoticed change may make it reportable without making it controllable.
+Whether the performer notices an effort and whether it is voluntary are separate questions. The performer may learn to report a previously unnoticed change while still being unable to regulate it.
 
 #### SOM.2:4.3 - Connect the contrast to action
 
-Use the contrasted variants in a small instance of the receiving movement. Compare the experienced change with the relevant external result. In writing, make a familiar mark and observe pen security, guidance and contact. Retain coupling between those actions if changing the hold affects them together.
+To establish whether the difference is available in the receiving movement, use the variants in a suitable part of that movement or examine an adequate existing comparison. Relate the performer’s experience to the external result. For a familiar pen stroke, check security, guidance and contact. If a lighter hold changes these together, account for their coordination.
 
-If the lighter hold cannot keep the pen secure, return to an available hold. That boundary is informative; the lightest effort is not the goal. A distinction can remain useful even when one variant is unsuitable for performance.
+If the lighter hold leaves the pen insecure, use a hold that keeps it secure. The comparison still identifies a bodily distinction and a limit on using that variant for the stroke.
 
-Proceed to SOM.3 only for a change the performer can identify but cannot yet regulate as required. If the distinction disappears in the full action, preserve the conditions under which it was available and construct the needed combination or support transition. Do not report transfer from the preparatory contrast alone.
+Use SOM.3 if the performer recognizes a needed change but cannot yet regulate it. If the distinction disappears in the full action, report where it remained available. Use the relevant combination or support transition if the performer needs it in motion. A claim of transfer needs observations in the relevant changed condition.
 
 ### SOM.2:5 - Archetypal Grounding
 
-In the writing contrast, one performer reports a change around the fingers; another reports a broader hand-and-forearm change. Neither report is automatically more correct. The relevant question is whether the person can recover a distinction that helps choose or regulate the required action.
+In the writing comparison, one performer may report a change around the fingers and another a broader change in the hand and forearm. Check whether each can recognize their difference again. When the question concerns choosing or regulating an action, establish what that distinction helps the person do. The appropriate resolution depends on the person and the task.
 
-Suppose the performer can distinguish the usual and lighter hold while stationary but loses that distinction during the stroke. The outcome is a supported distinction, with combination in motion still unresolved. Another performer may distinguish the variants during motion while producing the same line. That establishes no need to prefer the lighter variant merely because it was the learning contrast.
+Suppose the writer distinguishes the usual and lighter hold while stationary and loses that distinction during the stroke. This supports recognition in the preparation and leaves its use in motion unresolved. Another writer might feel the difference while moving and produce the same continuous line with either hold. In that case the mark alone gives no reason to prefer one hold.
 
-In a familiar dance preparation chosen by the teacher, support can make two directions of an intended bodily change distinguishable before they can be used during a turn. The source of the directions and safe preparation remains dance instruction; this pattern provides the contrast and the return test.
+A dance teacher may choose a familiar supported preparation in which a dancer can distinguish two directions before using them in a turn. Use dance instruction for the directions and safe preparation. Compare the variants and return to the first to check the distinction under that support.
 
 ### SOM.2:6 - Bias-Annotation
 
-Expecting a named sensation can make the teacher accept agreement as discrimination. Accept different descriptions and an absent distinction. A reported difference may also reflect several simultaneous changes; preserve that ambiguity when the task has not separated them.
+A performer may agree with the teacher’s description without recognizing the contrast. Accept the performer’s description or the finding that it remains indistinguishable. If several conditions changed together, keep the cause of a reported difference open to the extent the observations leave it uncertain.
 
 ### SOM.2:7 - Conformance Checklist
 
-The contrast concerns a needed action, uses suitable conditions, includes a recoverable comparison and permits an absent distinction. The account identifies what the performer can now distinguish and with what support. Its connection to the movement has been attempted or remains explicitly unresolved; recognition is not credited as regulation.
+Identify the needed action, the variants compared and the conditions that made a comparison suitable. Report what the performer could distinguish, with what support, or what remained indistinguishable. State the evidence for its use in the receiving action if that is part of the question. Keep claims about regulation within the evidence of deliberate control.
 
 ### SOM.2:8 - Common Anti-Patterns and How to Avoid Them
 
 **Finer wording is treated as finer perception.** A learner repeats a detailed bodily description without distinguishing the changes. Return to an accessible contrast.
 
-**Preparation success becomes whole-task capability.** A distinction available only with support does not yet guide an unsupported moving task. Test the receiving condition and retain the difference.
+**A supported preparation is used to claim whole-task capability.** Report the distinction under its support conditions. To claim that it guides an unsupported moving task, use suitable observations in that condition.
 
 ### SOM.2:9 - Consequences
 
-The performer and teacher can gain a shared referent for a correction. This can reduce unproductive repetition of words, but no learning time or degree of improvement follows from the procedure alone. Support and broad distinctions may remain useful; removing either requires a reason in the receiving task.
+The performer and teacher can use the recognized contrast to refer to the same correction. This may reduce time spent repeating an instruction. An estimate of time saved or learning improvement needs evidence. Keep the support or the broader distinction when it serves the receiving task.
 
 ### SOM.2:10 - Architectural Rationale
 
-A contrast ties an expression to recoverable experience. The return to the first variant and the subsequent action comparison serve different functions: one makes the distinction inspectable, the other asks whether it matters for the movement. This is why bodily distinction remains a separate operation from producing a controlled change.
+A recoverable contrast gives the bodily instruction a referent the performer can recognize. Returning to the first variant checks whether they can recognize the difference again. Comparison in the receiving action tests whether it matters there. Evidence of deliberate change is needed to establish regulation.
 
 ### SOM.2:11 - SoTA-Echoing
 
-For making an unavailable bodily distinction usable, **adapt** HCD.6.1's contrast-and-return construction to support, direction and experienced change. The alternative is repeated verbal or anatomical explanation. That can suffice when the referent is already known; when it is not, this pattern requires an encounter with a bodily difference.
+To make a bodily change distinguishable, we **adapt** the contrast and return in HCD.6.1 to the support, direction or other felt change relevant to the task. A verbal or anatomical explanation can suffice when the performer already knows the bodily referent. If it is missing, choose a suitable encounter with a difference the performer can experience.
 
-Supported direction and effort contrasts supply a bodily instance of that learning construction. This is a proposed teaching construction. The unresolved comparative question is which contrasts and supports best serve a particular learner and task. A suitable domain method that supplies that answer changes the contrast selected here, rather than requiring the learner to complete a universal sequence.
+Support and contrasts in direction or effort are proposed ways to teach the distinction. Which contrasts and which forms of support suit this performer and task remain questions for comparison. Use a qualified movement method when it supplies a suitable answer, and adjust the contrast or support to the evidence.
 
-The trade-off is preparation time and support in exchange for a referent that can guide the next attempt. Reopen the selection if the contrast cannot be recovered, fails to connect to the target action, or suitable movement instruction supplies that connection with less burden.
+Preparing and supporting the contrast takes time. It can supply a bodily referent that guides the next attempt. Reconsider the choice if the performer cannot recognize it again, if it fails to help the receiving movement, or if suitable instruction can provide the needed connection with less effort.
 
 ### SOM.2:12 - Relations
 
-SOM.1 selects the distinction worth learning and keeps its effect open to investigation. SOM.3 uses an available distinction for regulation; SOM.4 and SOM.5 carry it into combined movement and changing support. HCD.6.1 supplies general learning by contrast; HCD.6 constructs representative practice and HCD.10 varies and progresses it in response to the learner's performance. FPF B.5.EA helps express the recovered distinction.
+Use SOM.1 to identify a distinction that matters to the movement and investigate its effect when that is the question. Use SOM.3 for missing regulation, SOM.4 for coordination and SOM.5 for changing support. HCD.6.1 gives the general contrast-and-return method. Use HCD.6 to design representative practice and HCD.10 to vary or progress it in response to performance. Use FPF B.5.EA to express a distinction the performer can now recognize.
 
 ### SOM.2:End

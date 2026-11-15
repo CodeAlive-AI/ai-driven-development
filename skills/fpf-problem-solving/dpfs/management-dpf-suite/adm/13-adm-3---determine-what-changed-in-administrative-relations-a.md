@@ -5,11 +5,11 @@
 
 ### ADM.3:0 - Use this when
 
-Use this pattern when an administrative decision depends on whether an appointment, grant, obligation or other organizational condition has begun, continues, is suspended or has ended. It also applies when a changed record is being treated as a changed relation.
+Use this pattern when an administrative question depends on whether an appointment, grant, obligation or other organizational condition has begun, continues, is suspended or has ended. It also applies when a changed record is being treated as a changed relation.
 
-The subject is the particular organizational relation or condition at the time relevant to the action. The first result states what changed, when the change matters and what that permits the handler to conclude. A missing rule or fact remains an explicit question to the person able to resolve it.
+Identify the organizational relation and the time at issue. Report whether the condition held then and what, if anything, changed. If the governing rule or a fact remains unknown, identify the missing result and the source or authority that can establish it.
 
-If an adequate supplied result already establishes the condition for the intended time, use it. Reconstruct a history only when another date, episode or disputed change can alter the decision.
+If an adequate supplied result already establishes the condition for the intended time, use it. Reconstruct a history when the answer depends on another date, episode or disputed change.
 
 ### ADM.3:1 - Problem frame
 
@@ -21,13 +21,13 @@ The same issue occurs with payment, delegation, cancellation and suspension. A p
 
 How can a handler determine the organizational condition applicable to one action without turning a record date, a later discovery or an intended future change into a present fact?
 
-The wrong time can cause premature access, an incorrect refusal or a claim that a later correction retrospectively supplied missing authority. A useful answer identifies both the relevant state and the next action warranted by the available basis.
+The wrong time can cause premature access, an incorrect refusal or a claim that a later correction retrospectively supplied missing authority. A useful answer identifies the relevant state and, when needed, the next action warranted by the available evidence.
 
 ### ADM.3:3 - Forces
 
 Current handling needs a quick usable answer. Historical disputes may require a more precise account of what was effective and what participants could then know. A convenient latest record reduces search but can conceal future applicability or a gap between two episodes.
 
-Time detail also has a cost. Dates, time zones and interval boundaries matter only as finely as the receiving decision requires. The governing rule determines the relevant precision; adding timestamps without identifying the changed relation creates false exactness.
+Time detail also has a cost. Dates, time zones and interval boundaries matter only as finely as the receiving question requires. The governing rule determines the relevant precision; adding timestamps without identifying the changed relation creates false exactness.
 
 ### ADM.3:4 - Solution
 
@@ -35,7 +35,7 @@ Time detail also has a cost. Dates, time zones and interval boundaries matter on
 
 State the condition the administrative action depends on. If the relation or participants are unclear, use ADM.2. Name the time being asked about: eligibility for a request on 25 September, a grant during a session, or an outstanding obligation after a particular payment.
 
-Keep the time of the intended action separate from the time at which someone now examines the case. Later evidence may improve a historical account. It does not by itself change which rule or relation applied at the earlier moment.
+Keep the time of the intended action separate from the time at which the case is examined. Later evidence may improve a historical account. It does not by itself change which rule or relation applied at the earlier moment.
 
 #### ADM.3:4.2 - Recover what can make the condition change
 
@@ -47,7 +47,7 @@ A.6.REL supplies the distinction between relation change and assertion or descri
 
 #### ADM.3:4.3 - Separate the relevant times
 
-Distinguish these times when their difference can change the next action:
+Distinguish these times when their difference matters to the conclusion or the next action:
 
 | Time question | What it identifies |
 | --- | --- |
@@ -56,11 +56,11 @@ Distinguish these times when their difference can change the next action:
 | When was the event observed or learned about? | The evidence or participant knowledge available at that moment. |
 | When was the record created or corrected? | The history of the assertion or description used to represent the condition. |
 
-This is a set of different questions, not a requirement to create four database fields. If the same supplied fact answers several of them and no distinction changes the use, say so simply. Where a deadline crosses time zones or a suspension begins within a day, recover the rule's actual time basis before judging the boundary.
+Use the same fact for several questions when it answers them for the required use. Where a deadline crosses time zones or a suspension begins within a day, recover the rule's actual time basis before judging the boundary.
 
 #### ADM.3:4.4 - Determine whether the condition holds at the requested time
 
-Apply the rule to the facts for the requested time. State whether the relevant condition holds, does not hold, or remains unresolved on the available basis. A supported negative result settles that condition for the stated participants, basis and time. Do not relabel it as unresolved merely because the requested action cannot proceed on that basis. Conversely, an unresolved claim is not a positive or negative finding about the relation merely because the form requires one status value.
+Apply the rule to the facts for the requested time. State whether the relevant condition holds, does not hold, or remains unresolved on the available basis. A supported negative result settles that condition for the stated participants, basis and time. When the rule excludes this basis, report that result. When the available facts do not settle it, preserve the uncertainty even if the form offers only a binary status.
 
 For a later history that must distinguish episodes, use the direct same-versus-new-occurrence rule under A.6.REL. The same person and role can participate again after an earlier appointment ended. A new record alone does not establish another episode; a reused identifier alone does not establish continuity.
 
@@ -70,7 +70,7 @@ When only the description was corrected, update the account and retain the corre
 
 Give the handler the conclusion for the relevant action and time, its decisive basis and any remaining condition. A small timeline is useful when the ordering itself explains the answer.
 
-Return the established positive or negative result to the handler, who applies the service rule for the response or case decision it actually requires. If another basis, a disputed interpretation or an exception is a live unresolved question, name that question and the source or authorized person able to resolve it. The negative result alone does not create such a question. Correcting the account and deciding whether any earlier handling needs a remedy are separate tasks; the appropriate policy owner or decision maker supplies a remedy when the applicable conditions call for one.
+Return the established positive or negative result to the handler, who applies the service rule for the response or case decision it actually requires. If another basis, a disputed interpretation or an exception is a live unresolved question, name that question and the source or authority able to resolve it. The negative result alone does not create such a question. Correcting the account and deciding whether any earlier handling needs a remedy are separate tasks; the appropriate authority selects or authorizes any remedy the rule calls for. Its provision belongs to the participant assigned to carry it out.
 
 This inquiry can finish with an established positive or negative result, or a precisely bounded unresolved claim. A later eligibility or transition decision is a distinct result when the actual service or change question requires one.
 
@@ -78,7 +78,7 @@ This inquiry can finish with an established positive or negative result, or a pr
 
 When a familiar operation does not give a usable temporal answer, recover how it performs the required check. [FPF B.1.5.EW][EW] helps identify that connection, its conditions and a constituent operation to learn, obtain or correct. The worked case in §5.4 applies this question to choosing and comparing dates. An understood connection can be used directly.
 
-The handler can use a future appointment for the interval it actually covers, preserve a valid relation despite delayed recording, and distinguish a corrected report from a changed institutional condition. The next question concerns the missing rule, event or effective boundary instead of an undirected request for more documents.
+The handler can use a future appointment for the interval it actually covers, preserve a valid relation despite delayed recording, and distinguish a corrected report from a changed institutional condition. If a question remains open, identify the missing rule, event or effective boundary.
 
 ### ADM.3:5 - Archetypal Grounding
 
@@ -93,9 +93,9 @@ In this constructed case, the supplied appointment rule makes an authorized appo
 | 25 September | Mara requests access for that day. | The supplied appointment does not satisfy the effective-appointment condition for this date. |
 | 1 October | The appointment becomes effective under the supplied rule and facts. | It can supply the appointment condition for a later request within its scope. |
 
-The handler returns: “This appointment begins on 1 October and does not meet the effective-appointment condition for 25 September.” With only the supplied appointment and rule, that negative result completes the temporal inquiry. The handler uses the applicable service instruction for the required response to the request. The appointment's effective date is not an unresolved question, and the temporal result does not itself replace any separately required service decision.
+The handler returns: “This appointment begins on 1 October and does not meet the effective-appointment condition for 25 September.” With only the supplied appointment and rule, that negative result completes the temporal inquiry. The handler uses the applicable service instruction for the required response to the request. If the service rule requires a separate decision, use this established date as an input to it.
 
-Now add a different fact: Mara claims a second appointment, said to begin on 20 September, but its issuing decision and scope are unavailable. The October appointment's negative result remains established. The handler asks the issuing appointment office to confirm whether the separately claimed appointment covers Mara, the relevant work and 25 September. This request concerns the missing alternative basis; it is not a mandatory further inquiry in the first case.
+Now add a different fact: Mara claims a second appointment, said to begin on 20 September, but its issuing decision and scope are unavailable. The October appointment's negative result remains established. The handler asks the issuing appointment office to confirm whether the separately claimed appointment covers Mara, the relevant work and 25 September.
 
 For a request on 2 October, the appointment condition can be adequate. A separate valid read grant and actual usable access still matter to that action. If both institutional inputs are already supplied and login fails, the provider receives the technical provision problem.
 
@@ -109,7 +109,7 @@ The handler therefore asks what the actual rule makes effective. “The record i
 
 #### ADM.3:5.3 - The same participants after a gap
 
-A history query asks whether Mara was appointed continuously through November. The supplied rule and records establish an appointment ending on 31 October and a later appointment beginning on 1 December. The same person, organization and role do not fill the November gap. The handler retains the separate intervals needed for the historical decision and obtains any different claimed basis for November instead of inferring continuity from the matching name.
+A history query asks whether Mara was appointed continuously through November. The supplied rule and records establish an appointment ending on 31 October and a later appointment beginning on 1 December. The same person, organization and role do not fill the November gap. The handler retains the separate intervals needed for the historical account. If a different basis is claimed for November, establish whether it covers the gap.
 
 #### ADM.3:5.4 - The date comparison within request examination
 
@@ -119,7 +119,7 @@ A handler might instead compare 25 September with the directory's 22 September e
 
 The reservation case in §5.2 changes the connection: its supplied rule makes registration at 13:00 decisive. Copying the appointment case's treatment of registration would now produce the wrong condition. Being able to compare times does not supply the ability to identify their institutional meaning.
 
-These are connected descriptions of the handler's work; count that work once. A permission decision can subsequently use the temporal conclusion. The archive provider's configuration and the researcher's work with the document have their own relations to the handling; neither explains how the handler performs this check.
+The date comparison is part of the same handler’s examination of the request. Count that work once. A permission decision may use its temporal conclusion. If access is granted on an applicable basis, the provider can configure it. Evidence of the researcher’s subsequent use would establish whether they read the document.
 
 ### ADM.3:6 - Bias-Annotation
 
@@ -136,7 +136,7 @@ For the requested time, examine whether:
 3. The relevant act or event and its effective boundary are supported or explicitly unresolved.
 4. Observation and record times remain separate where they change interpretation.
 5. A later correction, repeated name or reused identifier has not supplied an unsupported continuity or historical-authority claim.
-6. The return states the consequence for the actual request and identifies any missing result and competent resolver.
+6. The return states what the finding establishes for the request and, if a contribution is missing, who can supply it or which responsibility remains unknown.
 
 The same result can be reused while the relation, time, governing conditions and relied-on facts remain adequate.
 
@@ -154,21 +154,21 @@ The same result can be reused while the relation, time, governing conditions and
 
 A time-specific answer can prevent premature action and avoid refusing a valid current relation merely because its usual record lags. It makes historical disagreement more precise: a dispute can concern the effective event, the evidence available then or a later description.
 
-The cost is recovering the rule and enough history for the receiving decision. When that basis is missing, return the precise unresolved condition. The pattern does not create the authority to change or retrospectively validate the relation.
+The cost is recovering the rule and enough history for the question being answered. When that basis is missing, return the precise unresolved condition. Changing the relation or validating an earlier action requires the authority and conditions specified by the governing rule.
 
 ### ADM.3:10 - Architectural Rationale
 
-The relation and requested time come first because they select which events and records matter. A full chronology would otherwise collect details that cannot change the action. Separate time questions become useful only when their answers differ consequentially.
+The relation and requested time come first because they select which events and records matter. A full chronology would otherwise collect detail irrelevant to the question about the relation. Separate time questions become useful only when their answers differ consequentially.
 
-Using the latest status alone is adequate when it reliably states the condition for the relevant interval and no live contrary fact remains. It is inadequate for future changes, delayed reporting or contested episodes. The additional timeline is a response to those difficulties, not a universal administrative data model.
+Using the latest status alone is adequate when it reliably states the condition for the relevant interval and no live contrary fact remains. It is inadequate for future changes, delayed reporting or contested episodes. Use a timeline when those differences are material and the available account leaves them unclear.
 
 ### ADM.3:11 - SoTA-Echoing
 
-The practice question is how to distinguish an effective organizational change from a change in what participants know or record. The selected line adopts A.6.REL's direct obtaining and continuity rules, and adapts the laboratories' relation/record distinction to administrative applicability.
+The practice question is how to distinguish an effective organizational change from a change in what participants know or record. Use A.6.REL to establish whether and when the relation held. The laboratory cases show why the record of that relation can have a different date.
 
-One alternative is “use the latest row as the current state”. Its advantage is low handling effort. It fails when recording time is taken as effective time without the governing rule—for example, by treating a future appointment as already effective or delayed reporting as a delay in the relation itself. Under a different rule, registration can constitute the relation. Sections 4.2–4.4 and the paired registration cases retain the rule that determines which interpretation applies. The practitioner can still use an adequate latest account directly; a timeline is added only when it resolves an action-changing difference.
+One alternative is “use the latest row as the current state”. Its advantage is low handling effort. It fails when recording time is taken as effective time without the governing rule—for example, by treating a future appointment as already effective or delayed reporting as a delay in the relation itself. Under a different rule, registration can constitute the relation. Sections 4.2–4.4 and the paired registration cases retain the rule that determines which interpretation applies. The practitioner can still use an adequate latest account directly; add a timeline when it helps establish a consequential difference in what was effective or knowable.
 
-The May laboratory's relation/record discussion and the later ADM source pack's effective-condition distinctions supply failure reasoning and synthesis inputs. A.6.REL supplies the general method for relation change and optional occurrence identity. [FPF B.1.5.EW][EW] supplies the explanation of constituent and encompassing work applied in §5.4.
+The May laboratory's relation/record discussion and the later ADM source pack's effective-condition distinctions explain how selecting the wrong event can give an incorrect effective date. A.6.REL supplies the general method for relation change and optional occurrence identity. [FPF B.1.5.EW][EW] supplies the explanation of constituent and encompassing work applied in §5.4.
 
 Reconsider the instruction when a governing relation uses an additional constitutive condition, when repeated episodes cannot be distinguished for the required history, or when a new record arrangement changes what evidence a handler can obtain.
 
@@ -176,6 +176,6 @@ Reconsider the instruction when a governing relation uses an additional constitu
 
 ADM.2 supplies the relevant participants and relation when those are not already established. ADM.4 receives a source-account disagreement that remains after the time questions are explicit. ADM.1 supplies the intended administrative condition and deadline when they are unclear.
 
-A.6.REL supplies the relation's obtaining, continuity and conditional occurrence-identity discipline. The qualified policy or relation source supplies the actual constitutive and effective conditions. The existing service instruction receives the result for the requested time; a competent decision maker receives any unresolved eligibility or remedy question.
+A.6.REL supplies the relation's obtaining, continuity and conditional occurrence-identity discipline. The qualified policy or relation source supplies the actual constitutive and effective conditions. Return the conclusion for the requested time. If it is needed for service handling, use it under the applicable instruction. For an unresolved eligibility or remedy decision, take the relevant facts and question to its competent holder.
 
 ### ADM.3:End

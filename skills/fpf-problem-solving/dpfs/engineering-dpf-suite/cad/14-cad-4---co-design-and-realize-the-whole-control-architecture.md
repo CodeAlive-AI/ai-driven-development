@@ -32,15 +32,15 @@ The problem is to choose and realize a configuration whose control, model and re
 
 Use C.39 to connect the required result to its supplying operations and C.32/SYSE.6 to retain whole alternatives. A candidate specifies the decomposition, model and its operating domain, exchanged command, timing and reset semantics, controller law, feasible command domain, planning continuation and implementation resources.
 
-Keep architecture choices separate from tunable parameters without pretending that the separation is absolute. The number of layers, model order, kind of command, sampling periods, planning horizon and processor arrangement can change the problem being solved. Gains, weights and numeric tolerances tune a selected construction. Changing either group can reopen the other.
+For this comparison, distinguish the choices that define the architecture from the parameters tuned within it. The number of layers, model order, kind of command, sampling periods, planning horizon and processor arrangement can change the problem being solved. Gains, weights and numeric tolerances tune a selected construction. Changing either group can reopen the other.
 
-CAD.1–CAD.3 supply the positive construction, not merely a screening list. Existing qualified results can replace repeated design work. If the interface law changes, the old error bound is not a reusable result for that new law.
+CAD.1–CAD.3 construct the decomposition, connected dynamics and admissible commands. Existing qualified results can replace repeated design work. If the interface law changes, the old error bound is not a reusable result for that new law.
 
 #### CAD.4:4.2 - Evaluate feasibility before ranking attractive scores
 
 For each candidate, establish the connected error behavior, physical constraints and continuation under its own admitted conditions. Include initialization, transitions, planned modes and fallback behavior. A candidate with a missing load-bearing condition is unresolved, not numerically inferior.
 
-Then evaluate the behavior the task actually values: tracking envelope, settling, progress, resource consumption, disturbance rejection or cost. Use the same demand and perturbation class across candidates. An average objective cannot compensate for violating a hard constraint.
+Then evaluate the behavior the task values: tracking envelope, settling, progress, resource consumption, disturbance rejection or cost. Use the same demand and perturbation class across candidates. An average objective cannot compensate for violating a hard constraint.
 
 Boundedness and convergence are distinct. For example, if the nominal law makes $z_k\to z_*$ and $v_k\to v_*$, the linear error equation has forcing $g_k=Hz_k+Gv_k+w_k$. With a contractive F, $g_k\to0$ implies $e_k\to0$: the contribution of any fixed finite past decays, and the remaining tail is bounded by its shrinking forcing divided by $1-q$. If $Hz_*+Gv_*\neq0$, even zero disturbance can leave a steady bias. A bounded command domain alone establishes neither nominal progress nor zero error.
 
@@ -61,7 +61,7 @@ where C bounds execution under the selected implementation. These isolated inequ
 
 If planning finishes one period after its observation, model that delay and the command that controls the intervening period. Preparing a future segment can make the delay harmless for a predetermined reference but not automatically for a newly observed obstacle. Increasing the processor speed changes the feasible architecture set.
 
-Use the implementation to test unit conversions, numerical tolerances, update order, saturation and reset behavior. A numerical optimizer's constraint tolerance belongs in the margin analysis if it can consume physical clearance. Verify that the lower law actually executed is the law used in CAD.2.
+Use the implementation to test unit conversions, numerical tolerances, update order, saturation and reset behavior. A numerical optimizer's constraint tolerance belongs in the margin analysis if it can consume physical clearance. Verify that the lower law executed is the law used in CAD.2.
 
 If an online solver returns only a partial iterate, separate the time spent solving from the test that permits applying its output. A qualified acceptance rule may allow a feasible inexact result and otherwise keep an admissible prior command or plan. Include the cost of that test and the conditions for progress; a timeout says nothing about admissibility, and feasibility alone does not establish progress. The command-governor alternative in :11 is one developed construction, not a fallback rule for every optimizer.
 
@@ -71,11 +71,11 @@ A practical first search can enumerate a small number of architecture choices an
 
 Compare feasible candidates through task-relevant trade-offs and costs. Do not collapse incompatible obligations into an invented scalar score. A Pareto comparison can expose choices where one candidate is faster but more resource intensive. If the search covered only a grid, selected controller class or local optimizer, state that reach; it does not prove global architectural optimality.
 
-Investigate the active limitation. If actuator reserve fails, altering the reference interface may help more than enlarging the processor. If timing fails, a reduced model or shorter horizon may help more than increasing gain. If a reduced model loses an important mode, a larger controller budget may be unavoidable. This is the constructive feedback from the whole evaluation to CAD.1–CAD.3.
+Investigate the active limitation. If actuator reserve fails, altering the reference interface may help more than enlarging the processor. If timing fails, a reduced model or shorter horizon may help more than increasing gain. If a reduced model loses an important mode, a larger controller budget may be unavoidable. Use the identified limitation to reopen the affected choice in CAD.1–CAD.3.
 
 #### CAD.4:4.5 - Qualify the realization and its revision conditions
 
-Separate mathematical consequence, model qualification and implementation observation. Simulation can reveal an omitted mode or a bad reset. Tests on the target execution arrangement can expose deadline misses. Physical experiments can challenge the model, disturbance envelope and actuator assumptions. None automatically establishes every other claim.
+Separate mathematical consequence, model qualification and implementation observation. Simulation can reveal an omitted mode or a bad reset. Tests on the target execution arrangement can expose deadline misses. Physical experiments can challenge the model, disturbance envelope and actuator assumptions.
 
 Before relying on the design, identify the operating conditions that support it and the observations that can invalidate them. Examples are a larger reference jump, changed disturbance envelope, delayed sensor, actuator derating, altered model order or shared computing load. Reopen the specific equation, inclusion or comparison using the changed premise.
 
@@ -87,7 +87,7 @@ The resulting control architecture returns to SYSE.6 with its feasible domain, p
 
 #### CAD.4:5.1 - Compare rates at the same requested progression
 
-For the discrete actuator example, assume a dedicated planner resource needs two fast ticks per result. The fast controller has a separate resource. Commands are prepared for their applicability interval; initialization supplies the first segment. This is a declared toy resource model, not measured processor performance.
+For the discrete actuator example, assume a dedicated planner resource needs two fast ticks per result. The fast controller has a separate resource. Commands are prepared for their applicability interval; initialization supplies the first segment. The table reports model results using these assumed timings.
 
 At progression 0.025 per fast tick, a held reference changes by $\delta=N/40$. At progression 0.05 it changes by $\delta=N/20$. The sufficient error and input bounds are derived from CAD.2, with $a=1/2$.
 
@@ -103,17 +103,17 @@ At progression 0.025 per fast tick, a held reference changes by $\delta=N/40$. A
 
 At the original demand, two held-command arrangements pass this sufficient input test; their compute use and tracking behavior can be compared. At doubled demand, neither of the considered held arrangements that fits the planning time passes it. The N=4 case also has the direct violating first jump shown in CAD.3. For N=2, two successive positive changes of 0.1 from rest produce an input of 1/16 = 0.0625 at the second change, also above the limit.
 
-The segment arrangement admits the higher demand under the stated sampled model and margins. It adds a clocked reference generator and continuity checks. It does not demonstrate that this arrangement dominates all possible controllers or that more than two layers would help.
+The segment arrangement admits the higher demand under the stated sampled model and margins. It adds a clocked reference generator and continuity checks. The comparison covers the held and joined commands tested here. It leaves the benefit of additional layers open.
 
 #### CAD.4:5.2 - Carry the mathematical result into execution
 
-The planner proposes a next endpoint and applicability time. The reference generator checks that the segment starts at the current reference, remains in $[-0.9,0.9]$, and advances by at most 0.05 per fast tick. The fast law uses that generated reference, not the endpoint held for four ticks. An unavailable segment leaves the reference unchanged; the initialization error must already satisfy the bound.
+The planner proposes a next endpoint and applicability time. The reference generator checks that the segment starts at the current reference, remains in $[-0.9,0.9]$, and advances by at most 0.05 per fast tick. The fast law uses that generated reference, not the endpoint held for four ticks. An unavailable segment leaves the reference unchanged; the initialization error must satisfy the bound.
 
 A hardware test that reveals a one-tick delay in actuation changes $x_{k+1}=x_k+u_k$ into a model with an input delay. The table is no longer sufficient evidence. Return to CAD.2 to derive the delayed dynamics and to CAD.3 for the resulting margins. Retain the comparison of command meanings and the source-independent arithmetic; do not retain the unqualified physical feasibility conclusion.
 
 ### CAD.4:6 - Bias-Annotation
 
-A convenient cost model can favor the hardware already at hand. A small parameter search can make its winner look universal. State the tested choices and preserve alternatives whose decisive conditions remain unknown. The running case demonstrates an interface repair, not an empirical prevalence claim.
+A convenient cost model can favor the hardware at hand. A small parameter search can make its winner look universal. State the tested choices and preserve alternatives whose decisive conditions remain unknown. The running case illustrates how changing the interface can meet the demand.
 
 ### CAD.4:7 - Conformance Checklist
 
@@ -122,7 +122,7 @@ A convenient cost model can favor the hardware already at hand. A small paramete
 - A convergence or optimality claim has its own applicable grounds.
 - Execution, communication and scheduling assumptions fit the implemented arrangement.
 - Search limits and unresolved candidates are visible.
-- Changed-condition and fallback behavior return to the premise that actually changed.
+- When conditions change or a fallback is used, the designer identifies any premises that have changed and rechecks the conclusions that depend on those premises.
 
 ### CAD.4:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -138,11 +138,11 @@ Control behavior and execution are coupled: computation changes latency, latency
 
 ### CAD.4:11 - SoTA-Echoing
 
-**What should change when a complete control arrangement misses its demand or resource limit?** The selected line compares coupled architecture and tuning choices, while retaining a qualified fixed loop with local command modification as a serious alternative. It adopts the joint-choice formulation in [Verhoek, Stamouli, Pappas and Matni, 2026 preprint, §§3–7](https://arxiv.org/html/2610.20900v1): model dimensions, sampling ratios, horizons and controller parameters affect the same feasibility problem. That construction fixes a two-layer LTI setting and specified delay and controller classes; efficient general optimization remains open. Sections :4.1–4.4 adapt the comparison to a bounded candidate search and require implementation timing rather than treating a computation-cost proxy as a deadline bound. The gain is avoiding incompatible local optima; the cost is a larger search and repeated qualification of coupled choices.
+**What should change when a complete control arrangement misses its demand or resource limit?** Compare complete candidates across coupled architecture and tuning choices. When a qualified fixed loop is available, include the option of modifying its commands locally while retaining the loop. The joint design uses the formulation in [Verhoek, Stamouli, Pappas and Matni, 2026 preprint, §§3–7](https://arxiv.org/html/2610.20900v1): model dimensions, sampling ratios, horizons and controller parameters affect the same feasibility problem. That construction fixes a two-layer LTI setting and specified delay and controller classes; efficient general optimization remains open. Sections :4.1–4.4 adapt the comparison to a bounded candidate search and require implementation timing rather than treating a computation-cost proxy as a deadline bound. The gain is avoiding incompatible local optima; the cost is a larger search and repeated qualification of coupled choices.
 
-When the lower loop already has the required local performance, first compare changing its command admission or solver. [Garone and Kolmanovsky, §§3–4 and Algorithm 1](https://arxiv.org/html/2111.10234) develop command-governor logic permitting inexact optimization and a non-invariant inner admissible set, with stated feasibility and progress conditions. Adopt the separation between accepting a computed command and merely obtaining a solver output in :4.3; neither an arbitrary partial iterate nor an unqualified hold inherits that result. This can be preferable to buying faster computation or redesigning the tracker, but command progress and admissible-set computation remain costs to compare.
+When the lower loop has the required local performance, first compare changing its command admission or solver. [Garone and Kolmanovsky, §§3–4 and Algorithm 1](https://arxiv.org/html/2111.10234) develop command-governor logic permitting inexact optimization and a non-invariant inner admissible set, with stated feasibility and progress conditions. Adopt the separation between accepting a computed command and merely obtaining a solver output in :4.3; neither an arbitrary partial iterate nor an unqualified hold inherits that result. This can be preferable to buying faster computation or redesigning the tracker, but command progress and admissible-set computation remain costs to compare.
 
-Switching among existing controllers is also a genuine architectural alternative. [Wang, Di Cairano and Sanfelice, 2024, §§III–V](https://www.merl.com/publications/docs/TR2024-091.pdf) combine mode-specific admissible sets with explicit switching and Lyapunov conditions. Adapt that comparison when a fast transient and a less oscillatory final approach favor different controllers; carry the guards and transitions into :4.2 and CAD.3:4.1. Separate stable modes alone do not supply the switched guarantee. Reopen the choice when task demand, computing interference or the cost of maintaining those mode conditions changes.
+Switching among existing controllers is another architectural alternative. [Wang, Di Cairano and Sanfelice, 2024, §§III–V](https://www.merl.com/publications/docs/TR2024-091.pdf) combine mode-specific admissible sets with explicit switching and Lyapunov conditions. Adapt that comparison when a fast transient and a less oscillatory final approach favor different controllers; carry the guards and transitions into :4.2 and CAD.3:4.1. Separate stable modes alone do not supply the switched guarantee. Reopen the choice when task demand, computing interference or the cost of maintaining those mode conditions changes.
 
 ### CAD.4:12 - Relations
 

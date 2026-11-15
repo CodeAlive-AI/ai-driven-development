@@ -7,7 +7,7 @@
 
 Use this method when a successful deployment or service should become obtainable by another prepared performer, but repetition still depends on tacit judgement, improvised help or materials whose use is unclear.
 
-Begin with the next recipient's useful result and reconstruct the work needed to obtain it. Build the method, preparation and support before judging whether a “deployment pack” is complete.
+Begin with the next recipient's useful result and reconstruct the work needed to obtain it. Develop the method, arrange the preparation and make the support available before judging whether the deployment pack is complete.
 
 Use an existing adequate delivery method directly when its conditions fit. Repeatability can include funded specialist help; it does not require total automation or the elimination of every human contribution.
 
@@ -29,7 +29,7 @@ A collection of scripts, templates and slides can preserve visible artifacts whi
 
 #### CUST.6:4.1 - Define the repeatable result and performer conditions
 
-State what the next customer or recipient should be able to obtain and how adequate completion will be recognized. Identify the class of situations, not only the first customer's name. Recover the family’s common conditions and permitted variations from CUST.3 when available.
+State what the next customer or recipient should be able to obtain and how adequate completion will be recognized. Identify the class of situations in which the result can be obtained. Recover the family’s common conditions and permitted variations from CUST.3 when available.
 
 Describe the intended performer’s preparation, decision authority, means and access. “Any consultant” is not a usable condition. “A practitioner who can interpret the customer's status policy, operate the supported deployment tools and obtain the named security contribution” is more informative. Distinguish skills expected beforehand from preparation the offering provides.
 
@@ -43,7 +43,7 @@ Trace the difficult joins. A technically installed tool may still need interpret
 
 Separate the recurring operation from incidental facts. Keep a local fact as an input when the method can explain how to use it. Keep a distinct branch when it changes the operation. Exclude the case when neither treatment preserves the result.
 
-[IS.3 — Construct and Adapt a Support Strategy with Its Recipients](../../is/15-is-3---construct-and-adapt-a-support-strategy-with-its-recip.md) supplies the full construction and adaptation of support with its recipients. Use it when capability, help or local working arrangements are missing. Receive the obtainable support arrangement, then incorporate it into the delivery method rather than treating “training completed” as the result.
+[IS.3 — Construct and Adapt a Support Strategy with Its Recipients](../../is/15-is-3---construct-and-adapt-a-support-strategy-with-its-recip.md) supplies the full construction and adaptation of support with its recipients. Use it when capability, help or local working arrangements are missing. Incorporate the support that recipients can actually obtain into the delivery method. Completion of training alone does not establish that this support is available.
 
 #### CUST.6:4.3 - Choose how each necessary contribution will be obtained
 
@@ -73,7 +73,7 @@ When material comes from a customer case, receive the permitted common contribut
 
 #### CUST.6:4.5 - Perform the receiving connection
 
-Give another appropriately prepared performer a case within the declared conditions, the intended materials and the support that will actually be offered. Let them perform the work. Keep the original author’s interventions visible instead of using them to make the trial appear smooth.
+Give another appropriately prepared performer a case within the declared conditions, the intended materials and the support that will be available for ordinary delivery. Let them perform the work. Identify any intervention by the original author so later users can tell what the receiving performer did and what assistance was needed.
 
 Distinguish three outcomes. The performer may obtain the result through the intended method; obtain it only through additional help; or fail to obtain it. In the second case, identify the extra contribution. It can become explicit supported assistance, a construction improvement or a reason to narrow the method.
 
@@ -87,7 +87,7 @@ Identify who maintains the method, tools, examples and assistance when their ass
 
 CUST.7 receives the actual recurring work, help and maintenance burden. If the specialist remains the bottleneck, adding partners may increase coordination without increasing the constrained capacity. CUST.8 receives the installed configurations and obligations affected by later changes.
 
-When repetition exposes a family assumption rather than a delivery gap, return it to CUST.3. For example, two environments may need fundamentally different acceptance evidence. Do not keep adding instructions to preserve a false claim that they are one ordinary route.
+When repetition exposes a family assumption rather than a delivery gap, return it to CUST.3. For example, two environments may require different kinds of acceptance evidence. Do not keep adding instructions to preserve a false claim that they are one ordinary route.
 
 ### CUST.6:5 - Archetypal Grounding
 
@@ -103,7 +103,7 @@ In a public literacy programme, repeatable delivery may require prepared facilit
 
 ### CUST.6:6 - Bias-Annotation
 
-Documentation bias is a major risk: what can be written is easier to package than tacit skill, trust, preparation or maintained support. Examine actual receiving work before deciding the carrier.
+What can be written is easier to package than tacit skill, trust, preparation or continuing support. Examine actual receiving work before deciding the carrier.
 
 The original expert can also overstate uniqueness. Try explaining and practising the operation before concluding that only the author can do it. Preserve specialist help when it is a suitable way to provide the needed contribution.
 
@@ -131,7 +131,7 @@ The original expert can also overstate uniqueness. Try explaining and practising
 
 The result is a delivery method and the working arrangements needed to repeat it under stated conditions. It may be independent of the original author or deliberately assisted.
 
-Making hidden help explicit can increase the visible cost of the offering while improving the truth of its promise. The proper response can be investment, a smaller scope, a different provider arrangement or a supported local service.
+Making hidden help explicit can increase the visible cost of the offering while making it clear which assistance the provider must deliver. The proper response can be investment, a smaller scope, a different provider arrangement or a supported local service.
 
 ### CUST.6:10 - Architectural Rationale
 
@@ -141,7 +141,7 @@ Repeatability depends on how the method, preparation, means and support work tog
 
 The service-productization literature treats definition, standardization and modularization as ways to make services intelligible and repeatable. Wirtz and colleagues supply the selected conceptual account; Valtakoski and Järvi's primary abstract highlights knowledge sharing and cross-unit collaboration rather than documentation alone.
 
-The full IS.3 and IS.5 methods provide a more developed answer to constructing support and performing transfer. CUST adopts them and adds family applicability, permitted material reuse, the delivery result and its continuing burden. Compared with a playbook-only approach, this changes the acceptance question from “is the package present?” to “can the receiving practice obtain the result with the support actually offered?”
+The full IS.3 and IS.5 methods explain how to construct the support and carry out the transfer. CUST adopts them and adds family applicability, permitted material reuse, the delivery result and its continuing burden. Compared with a playbook-only approach, this changes the acceptance question from “is the package present?” to “can the receiving practice obtain the result with the support actually offered?”
 
 Reopen the method when repeated use reveals hidden author intervention, unavailable help or a mismatch between the stated performer conditions and real receiving work.
 

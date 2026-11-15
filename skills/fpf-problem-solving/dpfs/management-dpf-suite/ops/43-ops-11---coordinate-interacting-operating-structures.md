@@ -5,9 +5,9 @@
 
 ### OPS.11:0 - Use This When
 
-Use this Method when a local operating change depends on, or changes, another arrangement: material processing and order transactions, test work and release evidence, resource access and service commitments, or observation and supervisory decisions. Typical symptoms are a feasible local plan that cannot be completed in practice, a faster resource followed by more waiting elsewhere, or incompatible decisions by people responsible for different parts of the operation.
+Use this Method when a proposed operating change depends on or affects another arrangement: material processing and order transactions, test work and release evidence, resource access and service commitments, or observation and supervisory decisions. Typical symptoms are a feasible local plan that cannot be completed in practice, a faster resource followed by more waiting elsewhere, or incompatible decisions by people responsible for different parts of the operation.
 
-The first useful result is a bounded coordination decision: the affected structures and concrete couplings, feasible alternatives and consequences, decisions required from their respective owners, unresolved relations, and a return condition. Start from one operating question or proposed change, not from a map of the whole enterprise.
+The first result identifies the couplings needed for the operating question, the feasible alternatives and their consequences, any decisions needed from other holders, and what would call for reconsideration. It can be a supported decision to keep the present arrangement, a coordinated change, a proposal or a precise missing input. Start from the operating question or proposed change.
 
 Use OPS.8 for a queue-policy question that does not require wider coordination, OPS.9 for an unresolved constraint diagnosis, and OPS.10 for a capacity/service calculation. Product or organization redesign belongs to the corresponding engineering practice when that is the object being changed.
 
@@ -15,13 +15,13 @@ Use OPS.8 for a queue-policy question that does not require wider coordination, 
 
 An operation depends on several actual structures. Its resource participation, material transformation, case and commitment relations, information production/use, financial settlement and decisions may be described in different views. Those structures overlap through particular subjects and relations; the views need not be isomorphic.
 
-Here the Method governs coordination of an operating change across the selected structures. It does not make their diagrams into the structures, reduce them to one “flow,” or give one coordinator authority over every participating decision.
+Coordinate the change across the selected operating structures. Use their descriptions to trace the actual relations and establish who can decide each part.
 
 ### OPS.11:2 - Problem
 
 A local plan can omit a necessary coupling. Product is made but goods cannot be issued without documents. Tests complete but the evidence does not apply to the release configuration. Capacity exists but access is not granted in the required window. A resource-saving change transfers cost, risk or burden to another participant.
 
-The opposite error builds an elaborate network description without changing any decision. The operation needs the smallest set of actual couplings that can reverse the proposed action, together with a usable coordination result.
+Start with the smallest set of actual couplings that can affect the proposed action or the grounds for relying on it. An extensive network description can add work without improving either answer.
 
 ### OPS.11:3 - Forces
 
@@ -39,9 +39,9 @@ The opposite error builds an elaborate network description without changing any 
 
 Name the operating result, current arrangement, proposed change and horizon. State which consequence would make the change useful or unacceptable. Reuse the current OPS.1–OPS.4 account and a matching OPS.8–OPS.10 result where available.
 
-Select the affected Systems and participants by the actual consequences, not by the organizational chart alone. A supplier, customer, operator or neighboring service can matter without appearing inside the local department boundary.
+Select affected Systems and participants by the consequences of the change. A supplier, customer, operator or neighboring service can matter without appearing inside the local department boundary.
 
-If one direct pattern already settles the decision and no cross-structure relation can change it, use that result and stop.
+If one direct pattern already settles the decision and its conclusion and conditions do not depend on any further cross-structure relation, use that result and stop.
 
 #### OPS.11:4.2 - Identify the structures needed for this question
 
@@ -51,33 +51,33 @@ Use A.22 for the general structural question. Use E.18 for one transformation-fl
 
 A branching process, several views of one flow, and several independently identified flows are different cases. Financial or decision relations need not be reclassified as a transformation flow to be relevant. If a required relation or identity cannot be recovered, retain the proposed description and name the missing basis.
 
-#### OPS.11:4.3 - Recover each decision-changing coupling
+#### OPS.11:4.3 - Recover the couplings that matter to the decision
 
 For each coupling, state what depends on what, through which relation, under what condition and timing. Keep subject correspondence separate from production, supply, permission, evidence support, commitment or causal influence.
 
-A useful working statement is: “This shipment can use this product only after these required documents are available”; “this test result applies to this configuration”; or “this provider grant permits this resource use during this interval.” Name the basis and responsible decision-maker when reliance on that statement matters.
+A useful working statement is: “This shipment can use this product only after these required documents are available”; “this test result applies to this configuration”; or “this provider grant permits this resource use during this interval.” Name the basis on which the receiving work can rely. Where a decision is required, identify its holder.
 
-Distinguish a missing fact from evidence that a proposed relation does not obtain. Missing permission does not establish forbiddenness; it means the action lacks the required permission basis. Conversely, a positive relation claim can still be unusable when an endpoint, scope or time binding is missing.
+Distinguish an unsupported relation from evidence that it does not hold. For an action requiring permission, check any applicable authorization already in force. If permission remains unestablished, hold the dependent action and state what is known: the request may be unmade, pending or refused. A positive relation claim also needs the endpoints, scope and timing its use depends on.
 
-Follow only the couplings that can change the current decision. If another step is unaffected, leave its details with its own account rather than reconstructing it here.
+Follow only the couplings that can affect the current decision or the conditions that justify it. If another step is unaffected, leave its details with its own account rather than reconstructing it here.
 
 #### OPS.11:4.4 - Compare coordinated alternatives
 
 Trace the finite change through the selected couplings. Compare the current arrangement with feasible alternatives, preserving the operating-result unit, horizon, acceptance conditions and protected consequences.
 
-Include resource demand, service effects, financial timing, recovery, human burden and other consequences only when they can change the choice. Obtain financial quantities from the responsible financial Method and assumptions; a generic “value” label cannot stand in for cash, cost, obligation or benefit. Do not add unlike quantities into one score without an applicable comparison rule.
+Include resource demand, service effects, financial timing, recovery, human burden and other consequences when they can affect the choice or its justification. Use applicable financial results or obtain the particular quantity and assumptions needed; a generic “value” label cannot stand in for cash, cost, obligation or benefit. Do not add unlike quantities into one score without an applicable comparison rule.
 
 Check that the proposed decisions can coexist. A new release limit can overload a shared acceptance activity; a batch change can delay the information needed for another decision; an earlier delivery can require funding or access that has not been supplied. Use OPS.10 for the relevant load/service question and OPS.9 when the claimed limiting mechanism is still uncertain.
 
 When the operating model itself needs to be built or reconciled, use OPS.11.1 to connect activities, shared resources, branch joins and completion at the required scales. Reuse an adequate model when the needed couplings are already represented.
 
-Keep modeling assumptions and evidence limits visible. A simulation can compare its modeled alternatives; it does not establish that the actual operation has the same relations or effects.
+Keep modeling assumptions and evidence limits visible. A simulation estimates a consequence for one arrangement or compares several under its assumptions. To rely on the result in operation, establish the relevant correspondence of relations and effects.
 
 #### OPS.11:4.5 - Obtain or return the coordinated decisions
 
 Name which operating policies can change within existing authority, which decisions must be obtained from other holders, and what remains held until an unresolved result is supplied. Distinguish an agreed coordinated plan, a proposed plan awaiting decisions, and the observed implementation.
 
-Return the smallest actionable account: the selected change or alternatives, operative couplings, affected decision-makers, conditions and sequence needed for compatibility, protected consequences, unresolved inputs and next review. Use the existing operating account where it can carry that meaning.
+Return the smallest actionable account: the supported disposition or remaining alternatives, operative couplings, affected decision-makers, conditions and sequence needed for compatibility, protected consequences, unresolved inputs and next review. Use the existing operating account where it can carry that meaning.
 
 A coordination result can be a partial agreement plus an exact missing return.
 
@@ -85,7 +85,7 @@ A coordination result can be a partial agreement plus an exact missing return.
 
 After authorized implementation, inspect the accepted result and the affected coupling assumptions. Reopen the relevant decision when a provider changes access, evidence applies to another configuration, an acceptance condition changes, a resource becomes unavailable or an affected party's commitment changes.
 
-When observation, actuation, supervision or feedback changes the operating choice, recover those actual relations and their delays through the current FPF control and temporal patterns.
+When observation, actuation, supervision or feedback bears on the operating choice or its grounds, recover those relations and their delays through the current FPF control and temporal patterns.
 
 An organization-design, capability-realization or product/service-engineering change returns to its owning practice. Keep a bounded operating adjustment local when that larger change is not needed.
 
@@ -104,25 +104,25 @@ The question is whether a changed readiness and rig-access plan can support the 
 | release-supervision relations | ReleaseSupervisorTeam-S2 uses the required evidence and safety result to issue its authorized release, hold or other decision | obtain that decision separately from completing the test |
 | existing service commitments | the evidenced-release horizon has parties, conditions and authority for revision | return changed feasibility to OPS.7 and the commitment holder |
 
-Suppose lab-test permission is current and S19 concerns field release. The coordinated result can permit T9 within its actual test conditions, keep the field release held pending S19 and the release decision, and request the needed provider access. If S19 also governs the lab test, that test lacks a sufficient permission basis and remains held too.
+Suppose lab-test permission is current and S19 concerns field release. Under that permission and once the needed provider access is in force, the responsible operator may run T9. Field release remains held pending S19 and the release decision. Request provider access if it is missing. If S19 also governs the lab test, that test lacks a sufficient permission basis and remains held too.
 
-OPS.8 maintains the ready queue and keeps incomplete matters visible. OPS.9 distinguishes readiness loss from an unsupported rig-bottleneck claim. OPS.10 compares the usable windows with eligible load and recovery scenarios. OPS.11 returns the compatible decisions and the missing safety or provider result to the appropriate owner.
+OPS.8 maintains the ready queue and keeps incomplete matters visible. OPS.9 distinguishes readiness loss from an unsupported rig-bottleneck claim. OPS.10 compares the usable windows with eligible load and recovery scenarios. Use OPS.11 to return the compatible decisions and identify any missing safety or provider result for the responsible holder.
 
 If P8 reduces available rig time, reopen the capacity and dependent admission/release-policy decisions. Do not reinterpret a completed test as approval to bypass S19 or as evidence that the weekly service commitment has been fulfilled.
 
-This case does not require claiming that every row is an independent flow structure. The selected permission, evidence, supervision and commitment relations are sufficient for the stated coordination question.
+The selected permission, evidence, supervision and commitment relations are sufficient for the stated coordination question.
 
 #### OPS.11:5.2 - Chemical make-to-order: material completion and document work
 
 In a chemical make-to-order setting, goods issue depends on both available product and required commercial documents. The same order-processing resource can be needed for new-order transactions and invoicing. A material-only plan can therefore produce stock that cannot be shipped under the actual transaction conditions.
 
-The first coordination result names that shared-resource and shipment-prerequisite coupling, then compares a compatible transaction/release policy with the local manufacturing plan. Actual commercial rules, financial consequences and authorization remain supplied inputs. The [Perez et al. (2023) model](https://doi.org/10.1016/j.compchemeng.2023.108363) is a worked comparison of this kind, not proof of a particular plant's realized improvement.
+The first coordination result names that shared-resource and shipment-prerequisite coupling, then compares a compatible transaction/release policy with the local manufacturing plan. Actual commercial rules, financial consequences and authorization remain supplied inputs. The [Perez et al. (2023) model](https://doi.org/10.1016/j.compchemeng.2023.108363) compares this coupling under specified conditions. A claim about improvement at a particular plant needs evidence of its operation.
 
 #### OPS.11:5.3 - AI-assisted operation: generation, acceptance and deployment
 
 An AI-assisted software operation can generate candidate changes faster while human acceptance, test environments or deployment permissions remain unchanged. Candidate changes, tool calls, episodes, evidence and accepted releases have different identities and resource demands.
 
-The practitioner follows only the relevant couplings: which configuration a test supports, who can accept the change, which provider/tool access is available, and what deployment conditions apply. A useful result might reduce admissions to the acceptance capacity, reserve a compatible test environment and return an unresolved release decision. It does not infer agent capability or software assurance from a higher generation count.
+The practitioner follows only the relevant couplings: which configuration a test supports, who can accept the change, which provider/tool access is available, and what deployment conditions apply. A useful result might reduce admissions to the acceptance capacity, reserve a compatible test environment and return an unresolved release decision. Agent capability and software assurance require evidence about the work performed and the configuration assessed.
 
 ### OPS.11:6 - Bias-Annotation
 
@@ -132,7 +132,7 @@ The practitioner follows only the relevant couplings: which configuration a test
 | one-flow reduction | Money, decisions, materials and evidence are merged because all are drawn as arrows. | State each relation and quantity under its own meaning. |
 | department-boundary bias | A provider, customer or neighboring service consequence is omitted. | Select affected participants by the operating consequence. |
 | local optimum confidence | A feasible local plan is treated as a feasible end-to-end plan. | Trace the necessary cross-structure conditions and shared resources. |
-| authority aggregation | One coordinator appears able to grant every participating decision. | Obtain or return decisions to their actual authority holders. |
+| authority aggregation | One coordinator appears able to grant every participating decision. | Use decisions already in force. Refer a decision still needed to its authority holder. |
 
 ### OPS.11:7 - Conformance Checklist
 
@@ -142,7 +142,7 @@ The practitioner follows only the relevant couplings: which configuration a test
 4. Are incompatible units and protected consequences retained in the comparison?
 5. Can the proposed decisions coexist under the actual resource, evidence and authority conditions?
 6. Does the result distinguish agreed change, proposed change, missing return and implementation evidence?
-7. Is the next change that reopens each affected decision explicit?
+7. Is it clear when a decision or its qualification needs reconsideration?
 
 Recognition means a practitioner can produce this bounded coordination result. Assurance requires the obtaining relations, qualified consequences and authority on which the chosen action relies; a complete map supplies none of them by itself.
 
@@ -154,18 +154,18 @@ Recognition means a practitioner can produce this bounded coordination result. A
 | Optimize material production while ignoring transaction prerequisites. | Product can accumulate without an admissible shipment. | Recover the actual goods-issue and shared-resource coupling. |
 | Use evidence from the wrong configuration. | A completed test does not support the current release claim. | Bind the result to the exact subject and conditions. |
 | Turn missing information into a negative world claim. | Lack of evidence is mistaken for evidence of absence. | Return the exact unresolved basis and its consequence for use. |
-| Treat a coordinated diagram as permission. | The relevant decision-maker may not have authorized the action. | Obtain or return the required decision explicitly. |
-| Build an exhaustive enterprise map when a smaller account already settles the question. | Unneeded modeling work delays the useful result. | Select only relations that can reverse the current choice. |
+| Treat a coordinated diagram as permission. | The relevant decision-maker may not have authorized the action. | Establish whether a valid decision already covers the action. If permission is still needed, obtain it from the holder or report the gap. |
+| Build an exhaustive enterprise map when a smaller account already settles the question. | Unneeded modeling work delays the useful result. | Select only relations that can affect the choice or the grounds for relying on it. |
 
 ### OPS.11:9 - Consequences
 
 The operation can coordinate a change without making local gains invisible to affected participants. A small coupling account can prevent incompatible schedules, unsupported release claims and displaced costs.
 
-The cost is recovering the relations and obtaining decisions across boundaries. Some outcomes remain partial because another practice owns a necessary result. That partial result is useful when it identifies the exact next decision and preserves what can already proceed.
+The cost is recovering the relations and obtaining any outstanding decisions across boundaries. Some outcomes remain partial because another practice owns a necessary result. That partial result is useful when it identifies the exact next decision and preserves what can already proceed.
 
 ### OPS.11:10 - Rationale
 
-Cross-structure coordination is needed because one operating result can depend on relations that no single view preserves. The useful unit is not the biggest possible model; it is the set of couplings that can change a concrete decision.
+Cross-structure coordination is needed because one operating result can depend on relations that no single view preserves. Trace the couplings needed to decide whether a concrete action and its conditions are supported.
 
 Retaining different relation meanings also preserves responsibility. A financial consequence, a safety permission and a causal explanation can all constrain the same plan while requiring different evidence and different decisions.
 
@@ -173,8 +173,8 @@ Retaining different relation meanings also preserves responsibility. A financial
 
 | Practice question and selected line | Serious alternative, trade-off and pattern change | Source roles, limits and reopen condition |
 | --- | --- | --- |
-| How can a locally feasible plan fail at completion? **Adapt** coordination of actual material, transaction and shared-resource prerequisites. | A material-only or transaction-only plan is cheaper but can omit a condition that makes its result unusable. Sections 4.3–4.5 and 5.2 retain the coupling and compare only the detail needed for the decision. | [Perez et al. (2023)](https://doi.org/10.1016/j.compchemeng.2023.108363) supplies a coupled-scheduling candidate and modeled failure evidence. Its chemical-supply-chain simulations do not validate every operation or a universal financial objective. Reopen when the business rule, shared resource or material/transaction coupling changes. |
-| How much cross-structure representation is useful? **Adapt** a question-relative selection of obtaining relations at the relevant scales. | One universal flow diagram loses relation meaning; an exhaustive enterprise map costs more than some local decisions warrant. Sections 4.1–4.3 and 5.1 use a small actual-coupling account and keep descriptions separate. | [Wassick and Perez (2025)](https://doi.org/10.1002/aic.18688), §§3.2–3.5, supplies the current network-of-networks perspective. A.22 and E.18.NET supply the exact structural distinction. The perspective does not establish realized autonomous coordination or make every relation a flow. Reopen for a missing decision-changing structure or a simpler adequate representation. |
+| How can a locally feasible plan fail at completion? **Adapt** coordination of actual material, transaction and shared-resource prerequisites. | A material-only or transaction-only plan is cheaper but can omit a condition that makes its result unusable. Sections 4.3–4.5 and 5.2 retain the coupling and compare only the detail needed for the decision. | [Perez et al. (2023)](https://doi.org/10.1016/j.compchemeng.2023.108363) supplies a coupled-scheduling candidate and modeled failure evidence. The modeled results depend on the chemical supply chain, business rules and objective studied. Reopen when the business rule, shared resource or material/transaction coupling changes. |
+| How much cross-structure representation is useful? **Adapt** a question-relative selection of obtaining relations at the relevant scales. | One universal flow diagram loses relation meaning; an exhaustive enterprise map costs more than some local decisions warrant. Sections 4.1–4.3 and 5.1 use a small actual-coupling account and keep descriptions separate. | [Wassick and Perez (2025)](https://doi.org/10.1002/aic.18688), §§3.2–3.5, supplies the current network-of-networks perspective. A.22 and E.18.NET supply the exact structural distinction. The perspective does not establish realized autonomous coordination for a particular operation. Reopen for a missing decision-changing structure or a simpler adequate representation. |
 | Can faster software generation be treated as faster service? **Adopt** subject-correct coupling of generation, evidence, acceptance and permission. | Counting episodes or artifacts is cheaper but can omit acceptance capacity and deployment conditions. Section 5.3 retains the accepted-result boundary while 4.4 traces resource and permission consequences. | The existing Operations subject/current-account Methods and current FPF evidence and relation patterns supply the governing distinctions. They do not establish model capability, software assurance or field performance. Reopen when the actual acceptance path, provider constraint or evidence binding changes. |
 
 ### OPS.11:12 - Relations

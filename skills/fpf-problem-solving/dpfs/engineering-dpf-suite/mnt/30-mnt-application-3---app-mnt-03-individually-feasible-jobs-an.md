@@ -2,7 +2,7 @@
 
 The constructed packaging-plant case has two jobs that each fit a six-hour access window but together exceed the available time of one qualified specialist. [MNT.15](26-mnt-15---reconcile-simultaneous-maintenance-operation-and-su.md) contains the whole-demand calculation and the alternatives that change it.
 
-[MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) establishes whether another provider is genuinely available and capable. [MNT.6](17-mnt-6---diagnose-condition-and-choose-a-maintenance-response.md) supplies the consequences of deferring either job. [MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) relates the chosen arrangement to continuing operation. The solution is a real allocation, timing or supported operating change, or an honest unmet commitment.
+[MNT.5](16-mnt-5---prepare-maintenance-service-capability-spares-tools.md) establishes whether another provider is available and capable. [MNT.6](17-mnt-6---diagnose-condition-and-choose-a-maintenance-response.md) supplies the consequences of deferring either job. [MNT.7](18-mnt-7---coordinate-maintenance-intervention-and-continuing-o.md) relates the chosen arrangement to continuing operation. Select a change to allocation or timing, or a supported change to operation, that makes the combined work feasible. If none does, state the commitment the team cannot meet.
 
 Preparation that can overlap production remains useful but does not resolve a shared-person overload. An unplanned extension also changes the capability and fatigue conditions. The team revises allocation or timing rather than treating greater attention as additional capacity.
 

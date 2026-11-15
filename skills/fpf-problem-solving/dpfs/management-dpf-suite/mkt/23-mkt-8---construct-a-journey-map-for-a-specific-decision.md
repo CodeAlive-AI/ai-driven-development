@@ -5,17 +5,17 @@
 
 ### MKT.8:1 - Problem frame
 
-Use this pattern when understanding an activity across several contacts, people or periods could change a marketing decision. A customer may understand an offer but fail to obtain access, encounter conflicting promises from two providers, or return to an earlier question after beginning use. The map helps locate the connection that matters and choose an attainable change or a precise inquiry.
+Use this pattern when understanding an activity across several contacts, participants or periods could change a marketing decision. A customer may understand an offer but fail to obtain access, encounter conflicting promises from two providers, or return to an earlier question after beginning use. The map helps locate the connection that matters and choose an attainable change or a precise inquiry.
 
 A journey map is a selective representation of the relevant activity and encounters, including their order, conditions and possible continuations. Its result is useful when someone can act on the represented difference. It can describe an observed history, compare possible future experiences or support a proposed intervention; keep these uses distinguishable.
 
-The intended reader knows the activity and can obtain accounts from the relevant participants and providers. A known local defect with a sufficient direct remedy does not require a map. The method does not make the marketer responsible for a person's whole life, learning, employment or activity with other organisations.
+The intended reader knows the activity and can obtain evidence about the relevant activity and, when firsthand experience matters, accounts from the people involved. A known local defect with a sufficient direct remedy does not require a map. The method does not make the marketer responsible for a person's whole life, learning, employment or activity with other organisations.
 
 ### MKT.8:2 - Problem
 
 A familiar stage diagram can hide the very difference that matters: the purchaser is not the user, contacts occur outside the provider's channels, several conditions coexist, or the customer returns and changes direction. A map can also mix what happened with what the team hopes will happen. An arrow then appears to explain a transition whose enabling work is absent.
 
-Build the representation from a decision and qualified accounts of the relevant activity. Keep actors, observations, interpretations and proposed work recoverable. Use the map to obtain a change in the actual arrangement or an answer to the unresolved question.
+Build the representation from a decision and qualified accounts of the relevant activity. Keep actors, observations, interpretations and proposed work recoverable. Use the map to decide whether to keep or change the arrangement, or to identify an unresolved question that matters to that decision.
 
 ### MKT.8:3 - Forces
 
@@ -31,21 +31,21 @@ Build the representation from a decision and qualified accounts of the relevant 
 
 #### MKT.8:4.1 - Begin with the decision the map should change
 
-Name the useful result at issue, whose activity receives it and which decision can change that activity. For example: should the provider change an invitation, obtain an access contribution, redesign the support handover or stop an unsuitable offer? Determine who will use the answer and what difference would lead them to another action.
+Name the useful result at issue, whose activity receives it and which decision can change that activity. For example: should the provider change an invitation, obtain an access contribution, redesign the support handover or stop an unsuitable offer? Determine who will use the answer and what the evidence could change about their action or the grounds for taking it.
 
-Choose a sufficient reach in time and participants. Start far enough before the apparent problem to include its prerequisites, and continue far enough afterward to see the receiving use. Include a third-party approval, a customer's preparation or a later support need when it can change the decision. Stop expanding where an added contact cannot affect the present choice.
+Choose a sufficient reach in time and participants. Start far enough before the apparent problem to include its prerequisites, and continue far enough afterward to see the receiving use. Include a third-party approval, a customer's preparation or a later support need when it can change the decision. Stop expanding when another contact would add nothing material to the choice or its grounds.
 
 Select the intended use of the representation. A history asks what occurred. A possible route asks what could occur under stated conditions. A plan asks which actions someone will undertake. These accounts can be compared, but do not let the proposed route fill gaps in the historical evidence.
 
 #### MKT.8:4.2 - Recover activity, encounters and consequential differences
 
-Use sufficient existing accounts first. When evidence is missing, [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) supplies the decision-specific inquiry. Ask relevant participants about concrete occasions and connect their accounts to available work or contact evidence. Preserve who reported what, when, and what remains uncertain.
+Use sufficient existing accounts first. When evidence is missing, [MKT.12](27-mkt-12---investigate-a-customer-or-market-question-for-a-dec.md) supplies the decision-specific inquiry. Use relevant observations or records to establish what happened. If the available evidence leaves a participant’s experience in question, ask about a concrete occasion. Keep each report’s source, time and limits clear.
 
-Recover the customer's own actions as well as encounters with the provider. Ask what the person was trying to accomplish, what they used, who else contributed, what had to become available and what happened when a condition failed. An activity need not produce a contact visible to the firm. Advice from a colleague or an internal budget decision can matter more than another visit to a page.
+Recover the customer's own actions as well as encounters with the provider. Establish what the customer was trying to accomplish, what they used, who else contributed, what had to become available and what happened when a condition failed. An activity need not produce a contact visible to the firm. Advice from a colleague or an internal budget decision can matter more than another visit to a page.
 
-Distinguish the people doing, choosing, paying, approving and receiving the result. A purchaser's approval can occur while a user's access is still absent. For example, having the prerequisite skills, having access to instruction and wanting to buy can occur in different combinations. Do not assign a single stage to the whole customer when that would conceal the needed condition.
+Distinguish who performs the activity, chooses, pays, approves and receives the result. A purchaser's approval can occur while a user's access is still absent. For example, having the prerequisite skills, having access to instruction and wanting to buy can occur in different combinations. Do not assign a single stage to the whole customer when that would conceal the needed condition.
 
-Compare more than one history when the planned intervention depends on a common route. Group histories only when their differences leave the proposed intervention suitable. Keep a separate branch or a narrower population when another person's circumstances change the work required. An account assembled from several people is a synthesis, not the observed history of one typical person.
+Compare more than one history when the planned intervention depends on a common route. Group histories only when their differences leave the proposed intervention suitable. Keep a separate branch or a narrower population when a customer’s different circumstances change the work required. Identify a route assembled from several cases as a synthesis. Any claim that one customer followed it needs evidence about that customer.
 
 #### MKT.8:4.3 - Choose a representation that exposes the live connection
 
@@ -75,11 +75,11 @@ When the representation is about possible futures, test whether each proposed co
 
 #### MKT.8:4.5 - Select an intervention, inquiry or justified non-change
 
-Locate a change the responsible people can actually make. Describe the failed connection and compare suitable alternatives: revise the explanation, change an interface, obtain an approval, arrange help, alter supply, narrow the offer or leave an adequate arrangement in place. Include the customer's effort and the burden moved to other contributors.
+Identify the connection that matters, including any failure, and compare alternatives within the responsible parties’ reach. The responsible parties may revise the explanation, change an interface, obtain an approval, arrange help, alter supply, narrow the offer or leave an adequate arrangement in place. Include the customer's effort and the burden moved to other contributors.
 
-Name the receiving method and result. [MKT.3](18-mkt-3---reach-a-suitable-audience-and-obtain-a-meaningful-re.md) can change communication and its response path; [MKT.4](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md) can make a choice or transition feasible; [MKT.5](20-mkt-5---develop-and-align-a-customer-experience-concept.md) can align the experience conditions; [MKT.6](21-mkt-6---jointly-shape-a-useful-result-and-help-achieve-it.md) can reshape the useful result and its support. MKT.11 coordinates the required contributions. Use the located problem and its supporting evidence to make the needed change with the selected method and responsible contributors.
+If you select a change, identify the receiving method and result. [MKT.3](18-mkt-3---reach-a-suitable-audience-and-obtain-a-meaningful-re.md) can change communication and its response path; [MKT.4](19-mkt-4---make-choice-and-acquisition-meaningful-and-feasible.md) can make a choice or transition feasible; [MKT.5](20-mkt-5---develop-and-align-a-customer-experience-concept.md) can align the experience conditions; [MKT.6](21-mkt-6---jointly-shape-a-useful-result-and-help-achieve-it.md) can reshape the useful result and its support. MKT.11 coordinates the required contributions. Give the responsible contributors the problem and evidence needed to carry out the selected change.
 
-If a consequential cause or condition remains unknown, return a focused question instead of an intervention presented as a known remedy. If the decision requires a causal or resource comparison, MKT.10 develops it. An adequate map can also support retaining the existing arrangement when the apparent defect disappears under a better account.
+If a consequential cause or condition remains unknown, return a focused question instead of an intervention presented as a known remedy. Use MKT.10 for a claim or decision that requires a causal or resource comparison. An adequate map can also support retaining the existing arrangement when the apparent defect disappears under a better account.
 
 #### MKT.8:4.6 - Revise from actual use without rewriting the past
 
@@ -105,7 +105,7 @@ The provider reconstructs the relevant interval from the purchaser, operator and
 
 The provider clarifies the permission question and offers a later session if the necessary contributions become available. MKT.4 handles the practical transition; MKT.11 obtains a support answer. If the purchaser instead confirms that unattended integration is essential, the receiving problem changes to offer suitability through MKT.2; resolving the sample permission would no longer rescue this proposal.
 
-The provider records whether the later trial actually occurs and what its result establishes. It does not label the earlier pause as a completed trial or treat this one account as a universal route for all customers.
+The provider records whether the later trial occurs and what its result establishes. It does not label the earlier pause as a completed trial or treat this one account as a universal route for all customers.
 
 #### MKT.8:5.2 - A learner's activity exceeds a supplier's course
 
@@ -117,7 +117,7 @@ Provider records favour visible contacts and successful completions. Teams can a
 
 ### MKT.8:7 - Conformance Checklist
 
-- A named decision determines the map's people, time reach and useful detail.
+- A named decision determines which participants, period and detail the map covers.
 - Observed history, interpretation, possible continuation and planned work remain distinguishable.
 - Different actors, customer work, relevant external encounters and unknowns are represented where they affect the decision.
 - Arrows and grouping have explicit meanings that do not silently assert cause or control.
@@ -146,7 +146,7 @@ A journey representation connects accounts of activity to a particular use. Hist
 
 For the reach of the account, **adopt** the broader contextual view in [Becker and Jaakkola, 2020, Premise 2](https://pure.hanken.fi/ws/portalfiles/portal/42844202/2020_Becker_Jaakkola.pdf), together with the distributed activity discussed in [the journey source](https://ailev.livejournal.com/1740317.html). These contributions challenge provider-only contact sequences. They do not prohibit all advance planning or establish that a pictured sequence causes a result.
 
-For turning a representation into useful work, **adapt** the journey-representing and subsequent action connection in [Customer experience orientation, 2024](https://link.springer.com/article/10.1007/s11747-024-01031-y). The present method makes the receiving decision, evidence distinctions and actual intervention explicit. A simple sufficient account is cheaper when no wider connection changes the decision. Reopen the map when a changed participant, condition or goal defeats its intended use.
+For turning a representation into useful work, **adapt** the connection between representing a journey and acting on what it shows in [Customer experience orientation, 2024](https://link.springer.com/article/10.1007/s11747-024-01031-y). The present method makes the receiving decision, evidence distinctions and actual intervention explicit. A simple sufficient account is cheaper when no wider connection changes the decision. Reopen the map when a changed participant, condition or goal defeats its intended use.
 
 ### MKT.8:12 - Relations
 

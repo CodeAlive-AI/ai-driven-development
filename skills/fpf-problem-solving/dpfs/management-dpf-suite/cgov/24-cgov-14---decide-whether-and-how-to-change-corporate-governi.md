@@ -27,15 +27,15 @@ Decision, effectivity and functioning can occur at different times. Some notices
 
 ### CGOV.14:4 - Solution
 
-Connect the desired practical change to its governing basis, the competent acts and the arrangement that people will actually use.
+Connect the desired practical change to its governing basis, the competent acts and how those responsible will use the changed arrangement.
 
 #### CGOV.14:4.1 - Identify the arrangement and the reason to change it
 
 Describe the current difficulty and the desired difference in action. Specify the relevant relation: who may decide, appoint, remove, consent, delegate, oversee or obtain information, and for what matter.
 
-Locate the instrument or act that establishes it. Depending on the corporation, relevant sources can include law, articles, a shareholders' agreement, a board decision, a delegation or a committee charter. Determine how the applicable sources interact. A list of document names does not settle which provisions govern the proposed change.
+Locate the instrument or act that establishes it. Depending on the corporation, relevant sources can include law, articles, a shareholders' agreement, a board decision, a delegation or a committee charter. Determine how the applicable sources interact.
 
-Check whether the difficulty is already resolvable under the current arrangement. An access-setting failure or conflicting work allocation can need execution repair. If the intended change concerns powers or protected conditions, continue with those relations explicitly identified.
+Check whether the difficulty is already resolvable under the current arrangement. An access-setting failure or conflicting work allocation can need execution repair. For a proposed change in powers or protected conditions, identify the relations that would change.
 
 #### CGOV.14:4.2 - Recover the current route for changing it
 
@@ -55,11 +55,11 @@ If retaining the current arrangement or repairing its operation answers the diff
 
 For the selected change, explain the new powers or contributions, protected conditions, required means and affected pending matters. Determine how current delegations, unfinished decisions and relevant records will be treated. Preserve obligations whose discharge or alteration needs a separate act.
 
-Make the transition feasible: people must understand the new contribution, have the required capability, and receive the information and services it uses. A legal power and the ability to exercise it are separate prerequisites. If the intended arrangement cannot yet operate, choose a permitted interim arrangement, delay the change where allowed, or limit its initial use.
+Make the transition feasible: those who will perform the new contribution need to understand it, have the necessary capability and be able to obtain the information and services it requires. A legal power and the ability to exercise it are separate prerequisites. If the intended arrangement cannot yet operate, choose a permitted interim arrangement, delay the change where allowed, or limit its initial use.
 
 #### CGOV.14:4.4 - Obtain the corporate acts and establish effectivity
 
-Perform the required decision and consent procedures using the actual current conditions. CGOV.11 describes the corporate decision; the applicable instruments determine the additional amendment conditions.
+Perform the required decision and consent procedures under the conditions now in force. CGOV.11 describes the corporate decision; the applicable instruments determine the additional amendment conditions.
 
 Carry out the further acts that the selected route requires. Establish what changed, for whom, and from when. Preserve the difference between an approved text, a filed text, an effective rule and an appointment that has taken effect.
 
@@ -83,11 +83,11 @@ CGOV.13 supports the governing response to the observed result. Retain, repair o
 
 #### CGOV.14:5.1 - The proposed majority cannot adopt itself
 
-This constructed example supplies all rules used in the comparison; they are not offered as a jurisdiction's law. OrisCo has one hundred voting units. Its current amendment rule requires at least seventy-five favourable units and, for a delegation change, consent of at least two-thirds of a thirty-unit class. An adopted amendment takes effect on registration. The current executive commitment limit is fifty. The approved budget covers the proposed seventy-unit commitment; no other spending or consent condition is outstanding.
+This constructed example uses the following rules. OrisCo has one hundred voting units. Its current amendment rule requires at least seventy-five favourable units and, for a delegation change, consent of at least two-thirds of a thirty-unit class. An adopted amendment takes effect on registration. The current executive commitment limit is fifty. The approved budget covers the proposed seventy-unit commitment; no other spending or consent condition is outstanding.
 
 A proposed amendment raises that limit to eighty and lowers the future amendment majority to sixty. Seventy units support it, including twenty of the protected class. The class condition is met, but the current seventy-five-unit condition is not. The proposed sixty-unit rule cannot authorize its own adoption. The executive limit remains fifty.
 
-A later properly performed decision receives eighty favourable units, including the same twenty class units. All other stipulated adoption conditions are met. The amendment is approved on Monday and registered on Friday. A commitment of seventy on Thursday remains outside the executive's delegation. It must wait or use another authority that actually exists.
+A later properly performed decision receives eighty favourable units, including the same twenty class units. All other stipulated adoption conditions are met. The amendment is approved on Monday and registered on Friday. A commitment of seventy on Thursday remains outside the executive's delegation. It must wait or proceed under another applicable authority, if one exists.
 
 On Friday the amended delegation becomes effective. The purchasing service still rejects commitments above fifty. That is now an operating mismatch with the effective delegation. The authorized administrator changes the service permission under the normal access procedure. The executive then enters the seventy-unit commitment within the amended power and the unchanged budget conditions. Updating the service did not itself confer that power.
 
@@ -101,9 +101,9 @@ Once that support and necessary information are available, the committee perform
 
 ### CGOV.14:6 - Bias-Annotation
 
-Corporate forms, amendment powers, contractual protections and legal effects differ. The examples deliberately state their own rules so that a reader can see the method without importing a national default.
+Corporate forms, amendment powers, contractual protections and legal effects differ. The examples state the rules under which their decisions take effect.
 
-A dominant participant can describe a rights-reducing change as an efficiency improvement. Compare the actual consequences for affected holders and preserve their applicable protections. Administrative convenience does not determine the legal effect of an instrument.
+A dominant participant can describe a rights-reducing change as an efficiency improvement. Compare the consequences for affected holders and preserve their applicable protections. Administrative convenience does not determine the legal effect of an instrument.
 
 ### CGOV.14:7 - Conformance Checklist
 
@@ -120,7 +120,7 @@ A dominant participant can describe a rights-reducing change as an efficiency im
 | Failure in the situation | Repair |
 | --- | --- |
 | A proposed lower majority is used to count the vote that would introduce it. | Apply the current amendment rule to adoption. |
-| Every filing is assumed to create legal effect. | Recover the role of that filing for the particular act. |
+| Every filing is assumed to create legal effect. | Recover the role of that filing for this act. |
 | The articles are changed while a relevant contractual consent obligation is ignored. | Establish how the applicable instruments interact and perform the additional required act. |
 | A new charter is taken as evidence that its contribution can already be performed. | Provide the required participants, capability, information and services; distinguish what is effective from what is usable. |
 | A service permission is treated as the source of corporate authority. | Recover the operative power independently and align the service with it. |
@@ -129,17 +129,17 @@ A dominant participant can describe a rights-reducing change as an efficiency im
 
 A practitioner can carry a proposed change through the acts that make it effective and the work that makes it usable. Unfinished conditions remain visible without blocking matters that the current arrangement still permits.
 
-The method can reveal that a narrower execution repair is sufficient. Where a real amendment is needed, costs include consent, specialist work, transition and continued coordination. A locally attractive change can remain impermissible or unaffordable.
+The method can reveal that a narrower execution repair is sufficient. Where an amendment is needed, costs include consent, specialist work, transition and continued coordination. A locally attractive change can remain impermissible or unaffordable.
 
 ### CGOV.14:10 - Architectural Rationale
 
-An arrangement is maintained through interacting rules, acts, people and enabling services. The applicable governing rules determine which acts change rights and powers, and actual performance determines whether the intended contribution occurs.
+An arrangement is maintained through interacting rules, the participants who act under them and the services they use. The applicable governing rules determine which acts change rights and powers, and actual performance determines whether the intended contribution occurs.
 
 OCE.14 supplies the broader method for revising organizational relations from qualified results. This corporate specialization contributes the governing-instrument interaction, amendment power, protected conditions and legal effect needed to realize such a revision here. It retains ordinary organizational comparison and transition work without deriving corporate law from them.
 
 ### CGOV.14:11 - SoTA-Echoing
 
-The [G20/OECD Principles, chapter V](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-8.html) call for attention to whether governance remains appropriate as a company and its circumstances change. This pattern adopts that revisability while obtaining the actual amendment power from the applicable basis.
+The [G20/OECD Principles, chapter V](https://www.oecd.org/en/publications/g20-oecd-principles-of-corporate-governance-2023_ed750b30-en/full-report/component-8.html) call for attention to whether governance remains appropriate as a company and its circumstances change. This pattern adopts that revisability and uses the applicable rules and instruments to establish who can amend the arrangement.
 
 [Companies House guidance on constitution changes](https://www.gov.uk/make-changes-to-your-limited-company/constitution-and-articles-of-association) distinguishes adoption and the relevant document-submission duties. Its [event-driven filings guidance, section 6.1](https://www.gov.uk/government/publications/life-of-a-company-event-driven-filings/life-of-a-company-part-2-event-driven-filings#change-of-constitution) specifically makes registration a condition of an objects amendment's effect. Adopt the question about each act's role; do not generalize that condition to every instrument or jurisdiction.
 

@@ -10,13 +10,13 @@ Use this pattern when participants need to determine whether an administrative o
 
 Start with the particular obligation and its applicable fulfillment rule, then compare the performance evidence and records for that same subject and time. The first useful result is a supported reconciliation, or the remaining discrepancy and competent next action.
 
-Use a sufficient existing reconciliation directly. An isolated spelling correction with no effect on meaning does not require this inquiry. The pattern does not supply statutory accounting, tax, valuation, treasury or legal discharge rules; use the rule actually governing the obligation and obtain a qualified interpretation when that rule is unresolved.
+Use a sufficient existing reconciliation directly. An isolated spelling correction with no effect on meaning does not require this inquiry. Use the rule governing the obligation. For a missing statutory accounting, tax, valuation, treasury or legal determination, obtain the relevant qualified result.
 
 ### ADM.10:1 - Problem frame
 
 The handler is comparing what one participant owed another, what actually happened and what the participants recorded. Those may be three different claims about related subjects. A record may describe an instruction, debit, credit, allocation or case closure; each can have a different effective or recording time.
 
-The obligation's fulfillment condition must be known. Issuing an instruction, crediting a recipient, accepting a deliverable and making a resource usable can be different conditions. The handler cannot infer which condition discharges an obligation from the most convenient system status.
+A conclusion about fulfillment needs the applicable fulfillment condition. If that condition is unknown, identify the part of the account that remains unresolved. Issuing an instruction, crediting a recipient, accepting a deliverable and making a resource usable can be different conditions. The handler cannot infer which condition discharges an obligation from the most convenient system status.
 
 Participant-relative descriptions remain legitimate. A payer's outgoing payment and a recipient's incoming receipt can concern the same transfer. ADM.4 supplies their correspondence when needed; this pattern then determines what that event establishes about the particular obligation.
 
@@ -24,7 +24,7 @@ Participant-relative descriptions remain legitimate. A payer's outgoing payment 
 
 A handler compares two totals or status fields without establishing their meaning, scope or time. Apparent equality is then reported as settlement, or a harmless difference in recording time is treated as failed performance.
 
-A handler may treat missing evidence as a reason to repeat a payment. The record says 400 remains, so someone instructs 400 again, although the earlier instruction may already have credited the recipient. Correcting the account requires recovering the event before changing the world.
+A handler may treat missing evidence as a reason to repeat a payment. The record says 400 remains, so someone instructs 400 again, although the earlier instruction may already have credited the recipient. Establish what happened to the earlier attempt before instructing a potentially duplicate payment. Until then, an authorized correction can record the uncertainty.
 
 ### ADM.10:3 - Forces
 
@@ -44,7 +44,7 @@ Identify who owes what to whom, for which subject, quantity or usable condition,
 
 State the receiving question: whether the obligation was fulfilled by a particular date, what is still established as outstanding, why two accounts differ, or which corrective action is now needed. A historical statement and a present payment decision may require different evidence.
 
-If the fulfillment rule is unavailable or disputed, obtain its competent interpretation. A ledger label cannot supply the missing rule. Use ADM.3 for a material effective-time question.
+If the fulfillment rule is unavailable or disputed, use a sufficient existing determination or obtain the missing qualified interpretation. Preserve the gap if the governing terms remain undetermined. A ledger label cannot supply the missing rule. Use ADM.3 for a material effective-time question.
 
 #### ADM.10:4.2 - Align the claims before comparing them
 
@@ -52,13 +52,13 @@ Recover what each record asserts and what evidence supports actual performance. 
 
 Match quantities, units, direction, gross or net basis, allocation, observation time and coverage where those distinctions can change the conclusion. A debit from the payer and a credit to the recipient may be different observations of a transfer. Two identical amounts may instead belong to two different transfers.
 
-[OPS.15][OPS] supplies comparison of observations for matching subjects and bases when that operational comparison is needed. It does not determine the obligation's fulfillment rule. Once the claims are adequately aligned, compare them directly without constructing an unnecessary shared database.
+[OPS.15][OPS] supplies comparison of observations for matching subjects and bases when that operational comparison is needed. It does not determine the obligation's fulfillment rule. Once the claims are adequately aligned, compare the observations on that basis.
 
 #### ADM.10:4.3 - Apply the fulfillment rule to established performance
 
 Determine which evidenced effects satisfy which part of the obligation under the supplied rule. Keep the actual event, evidence of it and institutional consequence distinct. A later report can improve knowledge of an earlier credit without making the credit occur on the report date.
 
-Distinguish at least the differences that change the next action:
+Use the following distinctions where they affect the reconciliation or the next action:
 
 | Difference | What must be resolved |
 | --- | --- |
@@ -72,21 +72,21 @@ A known fulfilled part and an uncertain remainder can coexist. Report each with 
 
 #### ADM.10:4.4 - Select the correction that matches the discrepancy
 
-For a recording defect with adequate performance evidence, obtain the authorized correction and retain the needed connection to the original event and prior account. Correcting a description does not undo or repeat the historical action. If the governing rule gives a recording act a constitutive effect, apply that rule explicitly.
+When correction of a recording defect is required and performance is adequately evidenced, use the authorized correction procedure and retain the needed connection to the original event and prior account. Correcting a description does not undo or repeat the historical action. If the governing rule gives a recording act a constitutive effect, apply that rule explicitly.
 
 For established missing performance, identify the provider action and permission actually required to complete it. ADM.8 supplies a live permission inquiry; ADM.9 supplies provision. A handler authorized to edit a case record is not thereby authorized to issue payment or amend the obligation.
 
-For an unknown earlier effect, first recover the same attempt through its competent provider. If the effect occurred, reconcile and correct the account. If it did not occur, use the applicable authorized continuation. If it remains unknown, preserve that uncertainty and the next recovery action before any repetition that could duplicate performance.
+For an unknown earlier effect, use applicable evidence about the same attempt or seek it through the provider when that result is missing. If the effect occurred, reconcile the account and correct any discrepancy. If it did not occur, use the applicable authorized continuation. If it remains unknown, preserve that uncertainty and the next recovery action before any repetition that could duplicate performance.
 
-A dispute about the obligation or its interpretation returns through ADM.6 to its competent decision maker. The reconciliation cannot settle that dispute by choosing one participant's preferred record.
+Resolve a dispute about the obligation or its interpretation from an applicable rule or existing authorized decision when that settles it. Use ADM.6 for the question still requiring a competent decision. The reconciliation cannot settle that dispute by choosing one participant's preferred record.
 
 #### ADM.10:4.5 - Return the reconciled account and remaining action
 
 Give the participants the bounded conclusion, material basis and any unresolved difference. Retain each participant's correct account and explain its correspondence where a common event is used.
 
-A small case may finish with a short note: the named obligation was fulfilled by the confirmed effect at the relevant time, and the record has been corrected by the authorized handler. An unresolved case needs the precise missing claim, its competent recipient and the action that depends on it.
+A small case may finish with a short note: the named obligation was fulfilled by the confirmed effect at the relevant time, and the record has been corrected by the authorized handler. An unresolved case needs the precise missing claim, any source or authority able to resolve it, and the conclusion or action that depends on it.
 
-Reopen only the affected conclusion when new evidence, a corrected meaning, a valid changed obligation or a relevant effective-time fact arrives. Do not reopen unrelated reconciled cases merely because the same provider supplied the new information.
+Reopen only the affected conclusion when new evidence, a corrected meaning, a valid changed obligation or a relevant effective-time fact arrives.
 
 ### ADM.10:5 - Archetypal Grounding
 
@@ -104,7 +104,7 @@ The handler uses the original second-attempt reference to ask the payment provid
 | --- | --- |
 | The 400 was credited to Q's designated account | The supplied terms establish full fulfillment. The authorized handler corrects the account or evidence linkage as needed; there is no remaining payment to issue. |
 | The attempt failed without a credit | The available evidence establishes 400 still outstanding under the stated assumptions. The competent participants arrange the properly authorized remaining provision. |
-| The effect still cannot be established | Retain the confirmed 600 and the 400-unit uncertainty. Continue the assigned effect inquiry before any potentially duplicate payment. |
+| The effect still cannot be established | Retain the confirmed 600 and the 400-unit uncertainty. Keep any potentially duplicate payment on hold. Pursue the effect inquiry while an authorized, attainable route remains. |
 
 Suppose the confirmed second credit occurred on 10 September but the provider's report arrived on 12 September. The event time remains 10 September. A report made on 11 September with only the earlier evidence should have stated uncertainty. The later evidence supports a better historical account, not a new credit on 12 September.
 
@@ -120,13 +120,13 @@ Likewise, a 1,000-unit receipt allocated to another invoice cannot automatically
 
 The most accessible ledger can appear to be the truth for every question. Inspect whether it records instructions, effects, obligations or a participant's classification before relying on it.
 
-Financial examples make quantities visible, but administrative fulfillment can concern usable access or another condition. Do not force every such condition into a monetary balance. The pattern also does not equate one common event account with one mandatory database.
+Financial examples make quantities visible, but administrative fulfillment can concern usable access or another condition. Do not force every such condition into a monetary balance.
 
 ### ADM.10:7 - Conformance Checklist
 
 **Recognition.** The result distinguishes the obligation, its fulfillment rule, evidenced performance and records. It states what is established, what remains uncertain and which correction or provision is actually needed.
 
-**Assurance for reliance.** Trace the conclusion through actual event correspondence, comparable quantities and times, and the governing rule. Examine a missing-effect, changed-allocation or delayed-evidence case that could alter the next action. Verify that a record correction and any new provision use their own authority, and that uncertainty has not become an invented settlement or duplicate action.
+**Assurance for reliance.** Trace the conclusion through actual event correspondence, comparable quantities and times, and the governing rule. Examine a missing-effect, changed-allocation or delayed-evidence case that matters to the proposed conclusion or next action. Verify that a record correction and any new provision use their own authority, and that uncertainty has not become an invented settlement or duplicate action.
 
 ### ADM.10:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -140,7 +140,7 @@ Financial examples make quantities visible, but administrative fulfillment can c
 
 ### ADM.10:9 - Consequences
 
-Participants can see which portion of a claim is established, why apparently different accounts may both be correct and what work remains. Reconciliation can avoid duplicate provision and direct corrections to the person with the right authority.
+Participants can see which portion of a claim is established, why apparently different accounts may both be correct and what work remains. Reconciliation can avoid duplicate provision and direct corrections to the holder of the authority needed to make them.
 
 The process depends on adequate event evidence and an applicable fulfillment rule. A precise unresolved account may be the only supportable result. Broader accounting correctness and operational effectiveness require their own qualified evidence.
 
@@ -150,18 +150,18 @@ The obligation, performance and record have different change conditions. Their c
 
 ### ADM.10:11 - SoTA-Echoing
 
-The working question is how to determine fulfillment across participant accounts without confusing instructions, effects and records. The July laboratory supplies the administrative problem. Use an account suited to the decision while preserving accounts needed for other purposes. Partridge and colleagues' [accounting][PARTRIDGE-A] and [agentology][PARTRIDGE-B] arguments support preserving participant-relative meanings around an established common subject.
+The working question is how to determine fulfillment across participant accounts without confusing instructions, effects and records. The July laboratory supplies the administrative problem. Use an account suited to the question while preserving accounts needed for other purposes. Partridge and colleagues' [accounting][PARTRIDGE-A] and [agentology][PARTRIDGE-B] arguments support preserving participant-relative meanings around an established common subject.
 
-The selected synthesis combines that representational contribution with the comparable-observation question in [OPS.15][OPS], the meaning and identity work in [SIE.4 through SIE.6][SIE], and the recovery of uncertain provider effects in [SYSE.26][SYSE]. The substantive fulfillment rule remains an explicit local input.
+For the administrative comparison, connect that account to the comparable-observation question in [OPS.15][OPS], the meaning and identity work in [SIE.4 through SIE.6][SIE], and the recovery of uncertain provider effects in [SYSE.26][SYSE]. The substantive fulfillment rule remains an explicit local input.
 
-Direct matching of two records suffices when their semantics, coverage and evidence already support the requested conclusion. A universal ledger or wholesale ontology replacement adds no needed result to the worked cases. Sections 4.1–4.4 instead make the institutional rule and unresolved effect visible while retaining adequate existing records.
+Direct matching of two records suffices when their semantics, coverage and evidence already support the requested conclusion. In §§4.1–4.4, apply the institutional rule and identify any effect that remains unresolved while retaining adequate existing records.
 
-The 2018 representation arguments are conceptual sources, not current evidence that a particular accounting system is superior. Reopen the affected reconciliation when the obligation, source meaning, allocation, evidence or effective-time basis changes. A broader financial or accounting claim needs its qualified method and evidence.
+The 2018 papers explain how participants represent the same subject. A claim that one administrative system performs better than another needs comparative evidence applicable to the services and conditions being judged. Reopen the affected reconciliation when the obligation, source meaning, allocation, evidence or effective-time basis changes. A broader financial or accounting claim needs its qualified method and evidence.
 
 ### ADM.10:12 - Relations
 
 ADM.3 supplies material effectivity distinctions; ADM.4 establishes participant-relative correspondence before this pattern determines what performance fulfills. ADM.7 supplies a missing claim check. ADM.8 establishes any needed permission, and the provider performs remaining provision through ADM.9. ADM.6 returns an unresolved substantive question to its competent source.
 
-[SIE.4 through SIE.6][SIE] and [OPS.15][OPS] supply meaning, identity and observation comparison within their scopes. The handler uses those results under the actual fulfillment rule; none of those methods creates the obligation or authorizes payment merely by describing it.
+[SIE.4 through SIE.6][SIE] and [OPS.15][OPS] supply meaning, identity and observation comparison within their scopes. The handler uses those results under the actual fulfillment rule; the obligation and any authority needed for payment come from the applicable rule, agreement or authorized decision.
 
 ### ADM.10:End

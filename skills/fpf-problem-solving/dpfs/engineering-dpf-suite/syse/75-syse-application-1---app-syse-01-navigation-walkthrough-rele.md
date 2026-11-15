@@ -29,15 +29,15 @@ stakeholder list or release checklist.
 
 Use `SYSE.5` to compare functional contributions, physical and software bearers, and interfaces for vibration
 control under the declared operating conditions. Use `SYSE.6` to select an architecture candidate and state the
-trade-offs, accepted losses, evidence, and reopen conditions. Architecture and assurance Work may overlap; the
-architecture decision still cannot rely on an assurance result that does not yet exist.
+trade-offs, any accepted losses, the evidence and the conditions for reconsideration. Architecture and assurance Work may overlap; the
+architecture decision cannot rely on an assurance result that does not yet exist.
 
 
 ### SYSE.Application:1.3 - 3. Bind change and evidence to configuration
 
 Use `SYSE.13` to identify `PS17-C42`, its parts, software realization, variant relations, and effectivity. Use
-`SYSE.14` to connect the proposed and performed change to the deciding System, permission, implementation,
-release question, actual configuration, cited evidence, and unresolved conditions. Citing evidence does not
+`SYSE.14` to connect the proposed and performed change to the Agent that decides, permission, implementation,
+release question, the configuration covered, cited evidence and any unresolved conditions. Citing evidence does not
 transfer release authority to the assurance practitioner.
 
 Use `SYSE.4` to check compatible results before planning new challenge Work. Component evidence applies only to
@@ -50,13 +50,13 @@ an independent safety permission remains a separate specialist result.
 
 Use `SYSE.15` to decide whether the trialled AI-assisted analysis Method belongs in the engineering repertoire,
 for which claim class, with which evidence and exclusions. Use `SYSE.21` only if the question extends beyond this
-release to transmission and retention across a named practitioner population. Use the existing evidence for a qualified current account or supported continuation; claims about later practice or retention need their own observations. Do not infer cultural retention from the local trial or publicity, or commission a new replay merely to close the current answer.
+release to transmission and retention across a named practitioner population. Use the existing evidence for a qualified current account or supported continuation; claims about later practice or retention need their own observations. The trial record can show how the Method was used at this station.
 
 
 ### SYSE.Application:1.5 - Result and stop
 
 The bounded result is a recommendation to release `PS17-C42` only after the named restored-function check, with
 configuration, effectivity, evidence limits, unresolved safety permission, and the AI-assisted Method
-disposition explicit. Stop there when the release authority can decide. Return missing permission, long-horizon
-bearing-temperature observation, source claim, configuration fact, or specialist result to its source. Reopen
-only the decisions whose relied-on System, use, configuration, evidence horizon, or Method basis changed.
+disposition explicit. Stop there when the release authority can decide. If the decision still depends on permission, a long-horizon
+bearing-temperature observation, a source claim, a configuration fact or a specialist result, use an existing result that covers the decision or ask its supplier for what is missing. Reopen
+the decisions or qualifications affected by a change to the System, use, configuration, evidence horizon or Method basis.

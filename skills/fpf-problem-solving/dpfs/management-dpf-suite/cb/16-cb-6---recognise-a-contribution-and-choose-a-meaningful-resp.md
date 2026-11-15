@@ -9,7 +9,7 @@ Use this pattern when someone has made a useful contribution but cannot see what
 
 The subject is recognition of a contribution: making its value intelligible to the contributor and choosing an appropriate response. This can be a specific thank-you, a returned account of use, agreed public credit, a useful introduction, access to an opportunity or a material benefit. A community-wide reward arrangement is one possible application; ordinary recognition need not become a programme.
 
-**First useful result:** the contributor receives a truthful, understandable response to what they supplied, in a form they can accept, with any offered benefit or opportunity actually obtainable.
+**First useful result:** the contributor receives a truthful, understandable response to what they supplied, in a form they can accept, with any offered benefit or opportunity obtainable.
 
 The organiser needs an account of the contribution and its use, or a recipient able to explain them. CB.5 supplies the return from receiving work. Where the result remains uncertain, recognition can concern a known contribution such as careful clarification without claiming an unobserved outcome.
 
@@ -33,9 +33,9 @@ How can an organiser recognise a real contribution, choose a response that matte
 
 ### CB.6:4 - Solution
 
-Recover what the person contributed and whom it helped. Choose the purpose and form of the response with their circumstances in view, make any promised benefit feasible, deliver it, and observe whether it served the person and the work.
+Identify what the person contributed and what is known about its use. Choose a response suited to its purpose and the person’s circumstances. Deliver what you offer and find out how it was received. Correct a mistake, an unwanted burden or a failure to provide the promised benefit.
 
-**Working reminder:** identify the contribution; recover its use; choose a fitting response; supply what was offered; correct the response when its meaning or effects differ.
+
 
 #### CB.6:4.1 - Find the useful contribution behind the visible activity
 
@@ -51,7 +51,7 @@ For an ordinary exchange, this inquiry can be one question to the recipient. A s
 
 #### CB.6:4.2 - Choose what the response should accomplish
 
-Decide whether the present need is to make the contribution's effect visible, convey appreciation, give fair credit, offer a useful opportunity or change a recurring recognition arrangement. These aims can combine, but each should have an actual recipient and result.
+Decide whether the present need is to make the contribution's effect visible, convey appreciation, give fair credit, offer a useful opportunity or change a recurring recognition arrangement. These aims can combine, but each should have an identifiable recipient and intended result.
 
 Begin with the least elaborate response that fits. A private message explaining a concrete use may be more valuable than a generic public accolade. Returning a recipient's permitted account of what changed can give the contributor information that the organiser could not supply alone.
 
@@ -155,7 +155,7 @@ Visible speakers, prolific writers and people close to the organiser are easier 
 
 A fitting response establishes:
 
-- the actual contribution and the supported account of its value;
+- what the contributor supplied and the supported account of its value;
 - the purpose and audience of recognition;
 - a form the person can accept;
 - feasible provision of any offered benefit;
@@ -174,7 +174,7 @@ An ordinary thank-you can rely on a known episode. A public competence claim, sc
 | Promise an introduction or learning place without its provider | Obtain a bounded commitment and feasible access first. |
 | Treat popularity or message volume as contribution quality | Inspect the contribution and its use; revise the misleading incentive. |
 | Turn recognition into a new unpaid obligation | Agree new work separately and respect a refusal. |
-| Replace owed payment or missing support with appreciation | Fulfil the actual obligation or obtain the missing provision. |
+| Replace owed payment or missing support with appreciation | Fulfil the obligation or obtain the missing provision. |
 
 ### CB.6:9 - Consequences
 

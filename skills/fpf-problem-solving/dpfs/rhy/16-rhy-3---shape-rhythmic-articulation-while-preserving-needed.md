@@ -5,15 +5,15 @@
 
 ### RHY.3:1 - Problem frame
 
-**Use this when** clearer attacks, accents or steps interrupt a continuous motion or sound that the performance needs. A brush loses its sustained texture when an accent is added; an ornament interrupts the weight path on which a partnered transition depends.
+**Use this when** attacks, accents or steps may interrupt a continuous motion or sound that the performance needs. An accent can break a brush’s sustained texture. A dancer’s ornament can interrupt the weight path a partner relies on. Use the method to find what happened or to shape a combination that will work.
 
-A **continuous carrier** here is the ongoing change or contact that supports the intended rhythmic effect over a selected interval. It need not move at constant speed. An **articulation** is a distinguishable shaping of the activity, such as an accent or direction change. The useful question is how these contributions coexist.
+A **continuous carrier** is the ongoing change or contact that supports the intended rhythmic effect over a specified interval. A movement that serves as the carrier can vary in speed. An **articulation** is a distinguishable change in the activity, such as an accent or a direction change. Identify how the two work together in the passage.
 
-The user already has a safe, familiar way to produce the simpler activity. The first result is a performable variant that retains the required continuity while making the selected articulation usable, or a localized incompatibility that needs another technique or arrangement. When separate attacks already give the intended result and no continuing contribution is needed, this method adds little.
+To try a variant, begin with a safe, familiar way to perform the simpler activity. For an account of an earlier performance, use suitable observations. The result can show how the articulation and carrier coexisted, identify a performable variant that sustains the required property and makes the articulation usable, or establish an incompatibility under the conditions examined. When separate attacks supply the whole intended result, use them directly.
 
 ### RHY.3:2 - Problem
 
-A description made of discrete events tells the performer where the accents belong but may leave out how to get between them. Trying to improve each event separately can interrupt contact, produce unwanted silence or make the next transition unavailable. Conversely, preserving a smooth motion at all costs can erase the intended articulation.
+An event list can locate accents and omit how to move between them. Improving each event in isolation can interrupt contact, create unwanted silence or disrupt the next transition. Giving priority to smooth motion can also erase the intended articulation.
 
 ### RHY.3:3 - Forces
 
@@ -28,41 +28,41 @@ A description made of discrete events tells the performer where the accents belo
 
 #### RHY.3:4.1 - State what must continue and why
 
-Identify the interval and the contribution that must persist: brush contact that sustains a sound, a movement path that carries the next transition, or another continuing activity needed by the performance.
+Identify the interval, the contribution that must continue and the effect that depends on it. For example, brush contact can sustain a sound and a continuing movement path can make the next transition possible.
 
-State its relevant property. “Remain in contact” differs from “maintain audible sound,” and both differ from “remain ready to redirect.” Choose the property consumed by the intended performance. Keep a simpler version without the extra articulation as a reference when it helps.
+Determine which property the performance needs. Remaining in contact, sustaining an audible sound and staying ready to redirect are different requirements. A simpler version without the added articulation can provide a reference.
 
-A direction reversal can belong to a continuous path even though instantaneous speed passes through zero. Do not use constant speed or constant force as a proxy for continuity unless the activity requires that property.
+A path can remain continuous through a direction reversal even when instantaneous speed reaches zero. Use constant speed or constant force as a criterion only when the activity requires it.
 
 #### RHY.3:4.2 - Identify the articulation and ways to produce it
 
-Name what should become distinguishable, to whom and relative to which reference. It might be a heard accent, a pressure change felt by a partner or a direction change visible to an ensemble.
+Identify what difference should become distinguishable, who needs it and its reference. A listener may need to hear an accent, a partner to feel a pressure change or an ensemble to see a direction change.
 
-Compare the available ways to produce it. A performer may modulate the existing motion; use another hand or body part; or distribute the sustained and articulated contributions between participants. These are alternatives to test under the present technique and equipment, not a requirement to try every combination.
+Examine the available means for producing the articulation. A performer can vary the ongoing movement or use another hand or body part. Several performers can divide the sustaining and articulating work. Assess the means relevant to the passage with its technique and equipment.
 
-Keep the shape around the articulation. Preparation, the most salient change and release can all affect the next action. A peak alone often underdescribes what the performer must do.
+Keep the shape of the articulation, including preparation, its most salient change and release where they affect the accent or the next action. The peak value alone can leave the performer unable to reconstruct the movement.
 
 #### RHY.3:4.3 - Add one articulation and inspect both results
 
-Use a manageable passage. Add the articulation while retaining the named continuing property. Inspect that property and the articulation separately, then ask whether their relation supports the performance.
+Choose a manageable passage containing both contributions. Examine a suitable existing performance or, if a trial is needed, add the articulation to the continuing activity. Check whether the required property persists, whether the articulation can be distinguished, and what the combination permits.
 
-If continuity fails, locate the interruption: contact was lost, the sustaining contribution was reassigned, or the accent consumed the movement needed for continuation. Change the smallest relevant aspect. If the articulation disappears, vary its contrast or use another contribution while preserving the carrier.
+If continuity fails, locate the interruption. Contact may have been lost, the sustaining action transferred to another performer, or the accent may use the movement needed to continue. When a correction is called for, change the smallest aspect that could restore the combination. If the articulation disappears, the correction may vary its contrast or means while preserving the carrier.
 
-Return to the simpler version when the combined attempt no longer makes the failure interpretable.
+When the combined attempt leaves the failure hard to interpret and the distinction matters, use the simpler version for comparison. An existing contrast can supply the result.
 
 #### RHY.3:4.4 - Test continuation under the needed variation
 
-Include the following action, not only the accent. Try the range of timing, intensity or direction needed for the current use. A variant that works only once from rest may not support repeated performance.
+Include the following action when continuation is part of the intended use. Examine the range of timing, intensity or direction that the task requires. Evidence of one successful start from rest leaves repeated performance open.
 
-When another participant relies on the cue, include that participant's response. A camera view or the performer's own feeling may not reveal the needed result. When the continuous contribution belongs to another performer or a controller, preserve its ability to respond and recover; coordination between contributors then matters as much as the local movement.
+When another participant must use the cue, examine evidence of its usability for their task. If the question concerns their response, establish how they actually responded. The performer’s own feeling or a camera view may leave that question open. If another performer or a controller sustains the carrier, examine how the contributors coordinate and whether the sustaining performer or controller can respond and recover as the passage requires.
 
-Select a viable combination, retain alternatives with different costs, or state the incompatibility. A different division of work, instrument or technique may be necessary. Use further tests only for uncertainties that can change that choice.
+Report which combinations the evidence supports under the stated conditions, their relevant costs and any incompatibility or unresolved condition. When asked to choose, select a viable combination, retain alternatives whose different costs matter, or state what prevents a choice. A different allocation, instrument or technique may help. Seek further evidence when the remaining uncertainty matters to the requested finding or choice and the test is worth its cost.
 
 #### RHY.3:4.5 - Carry the constraints into performance or practice
 
-Explain what must remain, what may vary, and what warns that the combination has failed. The instruction can be short: “keep the underlying sound through the accent and leave the next sweep available.”
+For performance or practice, say what must continue, what may vary and what would indicate failure. For example, “Keep the underlying sound through the accent and leave the next sweep available.”
 
-Treat a successful trial as evidence for its performed conditions. If the combination requires a missing coordination capability, develop that contribution and reintegrate it into the activity. A sequence of exercises does not by itself establish that the simultaneous contributions have become usable together.
+Qualify a successful trial to the conditions in which the passage was performed. When the goal is to develop missing coordination, practise the constituent contribution and restore it in the whole activity. To establish that the contributions work together, examine their joint performance.
 
 When the performance additionally requires a regular pulse with a changing choice of accents, use RHY.11:4.4.1 to construct that coordination. Retaining contact alone leaves the pulse period and accent placement unsettled. RHY.12:4.2.1 derives practice from the required joint action; it is useful when the performer cannot yet realize that action with the available technique.
 
@@ -70,15 +70,15 @@ When the performance additionally requires a regular pulse with a changing choic
 
 #### RHY.3:5.1 - Two brush arrangements
 
-Ed Soph describes both a division between a sustaining hand and an articulating hand, and an arrangement in which both hands sustain while pressure produces accents. For a passage needing sustained texture with clear accents, these offer different ways to allocate the contributions.
+Ed Soph describes one arrangement with a sustaining hand and an articulating hand, and another in which both hands sustain while pressure produces accents. These give a performer with the corresponding technique two allocations to consider for a passage requiring sustained texture and clear accents.
 
-Try the chosen arrangement in the passage. Listen for the sustained texture as well as the accent, and include the continuation into the next movement. The pattern selects the relation to preserve; the brush technique supplies the physical means. Neither arrangement is made mandatory for every style or performer.
+To assess either arrangement, listen for the texture and accent in the passage and include the next movement. Use an adequate observation or try the arrangement. Use the rhythmic method to identify the relation the passage needs. The performer’s brush technique supplies the means of producing it.
 
 #### RHY.3:5.2 - An ornament inside partnered motion
 
-In this constructed dance case, an extra foot sound is added to a familiar partnered transition. The sound lands on the desired subdivision, but producing it halts the weight path and leaves the partner unable to continue.
+Suppose a dancer adds a foot sound to a familiar partnered transition. The sound falls on the intended subdivision. Producing it halts the weight path and leaves the partner unable to continue.
 
-Keep the unornamented transition as a reference. The dancer already knows a smaller foot articulation that does not take over the supporting contribution. Complete the constructed trial with these stipulated results at the chosen comfortable pace:
+Use the unornamented transition as a reference. The dancer already knows a smaller foot articulation that can leave the supporting movement available. Suppose the trials at a comfortable pace give these results.
 
 | Variant | Weight path continues | Accent is distinguishable at the intended place | Partner can perform the following transition |
 | --- | --- | --- | --- |
@@ -86,28 +86,28 @@ Keep the unornamented transition as a reference. The dancer already knows a smal
 | Original added articulation | No | Yes | No |
 | Familiar smaller articulation | Yes | Yes | Yes |
 
-Retain the smaller articulation for this passage at this pace with this partner. It supplies the accent, preserves the continuing contribution and leaves the next transition possible. The original added articulation is rejected for this use even though its timing alone was correct. The unornamented transition remains an available return if a later tempo or direction defeats the combination.
+For this passage at this pace with this partner, choose the smaller articulation. Its accent is distinguishable, the movement continues and the partner can make the next transition. The original articulation met only the accent criterion. Keep the unornamented transition available if a later tempo or direction defeats the combination.
 
-These are stipulated case results. In practice, obtain the corresponding joint-performance result. If no available technique preserves both contributions and continuation, keep the simpler version or obtain the missing technique.
+The table stipulates results for this example. For a claim about an actual passage, use evidence of the joint performance under the relevant conditions. If no available technique meets all three requirements, report the limitation. For performance, the simpler version is an option if the task permits dropping the accent. If the accent is required, a different technique or arrangement is needed.
 
 #### RHY.3:5.3 - Motion continues while a robot signals an accent
 
-A constructed stage robot follows a continuous path while emitting a visible accent for a human collaborator. The light can articulate a timing point without stopping the robot's path. The trial must nevertheless check that the collaborator can use the cue and that its timing corresponds to the intended position in the movement.
+Suppose a stage robot follows a continuous path and flashes a light for a human collaborator. The flash can mark a timing point while the robot keeps moving. To establish that the arrangement works in the passage, compare the cue time with the intended position in the movement and examine whether the collaborator can use it.
 
-This case uses separate actuators instead of brush pressure or footwork. The common method concerns the continuing contribution, articulation and their usable relation. The control design and permitted operation of the machine remain engineering responsibilities.
+The robot uses separate actuators to sustain the path and produce the accent. The rhythm question concerns their continuing and articulated contributions and their usable timing. The control design and permitted operation require the corresponding engineering work and authority.
 
 ### RHY.3:6 - Bias-Annotation
 
-A smooth-looking movement can be mistaken for successful continuity, while the actual sound or partner cue has disappeared. Judge the property the performance needs. Also avoid treating the preferred technique of one teacher as the only means of preserving that property.
+A motion can look smooth while the sound breaks or a partner loses the cue. Judge the property the performance needs. A teacher’s preferred technique is one option. Where several techniques can preserve that property, consider the ones the performer can use under the actual conditions.
 
 ### RHY.3:7 - Conformance Checklist
 
 - The carrier is identified by an ongoing contribution and a needed property.
 - The articulation has a receiving participant or performance use.
-- The chosen means can preserve both contributions under the stated conditions.
-- The following action remains performable.
-- The observation distinguishes physical continuity, perceived effect and effort where their differences change the choice.
-- An unavailable technique or capability is returned as a development need, not assumed from a verbal instruction.
+- The evidence establishes whether the means examined preserve both contributions under the stated conditions, or identifies what remains unknown.
+- If the performance requires a following action, its availability is established or the account identifies the limitation.
+- The observation distinguishes physical continuity, perceived effect and effort where the distinction matters to the finding or choice.
+- If a needed technique or capability is missing, the account identifies it. When development is required, it identifies the contribution that needs practice.
 
 ### RHY.3:8 - Common Anti-Patterns and How to Avoid Them
 
@@ -120,26 +120,26 @@ A smooth-looking movement can be mistaken for successful continuity, while the a
 
 ### RHY.3:9 - Consequences
 
-The performer can vary an articulation without having to discard the continuing activity that supports it. Some combinations remain unavailable with the current technique or configuration. Keeping that limitation visible supports a better practice or design decision.
+A performer can vary an articulation and preserve its supporting activity when the technique and configuration permit both. An established incompatibility identifies what a different technique, arrangement or practice would need to supply.
 
 ### RHY.3:10 - Architectural Rationale
 
-Carrier and articulation are different contributions that can occur together in one performance. They may be produced by the same movement or by different parts of a performing whole. Their relationship, rather than a particular instrument or dance figure, is the reusable object of the method.
+A carrier and an articulation can occur in the same movement or be produced by different parts of a performing whole. The method follows the relation between these two contributions across instruments, movements and arrangements.
 
 Enacting a phrase may require a coordinated articulation, which itself relies on continuing bodily or actuator regulation. Practising each contribution separately can help locate a limitation; the performance still requires their joint enactment.
 
 ### RHY.3:11 - SoTA-Echoing
 
-Ed Soph's [“Foundational Brush Technique”](https://www.moderndrummer.com/article/foundational-brush-technique/) (2021) supplies concrete alternatives for combining sustained brush motion and accents. Adopt those alternatives within brush practice; adapt the contribution distinction across other embodied activities. The source is practitioner instruction.
+In [“Foundational Brush Technique”](https://www.moderndrummer.com/article/foundational-brush-technique/) (2021), Ed Soph teaches ways to combine sustained brush motion and accents. Use the described techniques for brush playing when they fit the passage. In another activity, identify what sustains the effect and what articulates it, then find the means that activity supports.
 
-Gjerdingen's [smooth-rhythm study](https://doi.org/10.2307/40285585) motivates retaining continuous change in the analysis. It does not supply a dance or instrumental motor technique. The transfer from a representational distinction to this practical design method is an explicit synthesis.
+Gjerdingen’s [smooth-rhythm study](https://doi.org/10.2307/40285585) motivates keeping continuous change in an analysis. Designing a movement or instrumental technique to realize that change is a further practical construction. Use an appropriate technique for the chosen passage.
 
-An attack list is economical when attacks determine the needed result. Retaining the carrier and its course costs more attention but is warranted when their omission changes the sound, movement or next action.
+An attack list costs less attention and can suffice when attacks determine the result. Preserve the carrier and its course when changes between attacks affect the sound, movement or next action.
 
 ### RHY.3:12 - Relations
 
 RHY.2 identifies the carrier and its relevant relations. RHY.4 distinguishes the timing points used to judge the articulation. RHY.8 develops variants; RHY.9 and RHY.11 address allocation and simultaneous layers; RHY.12 develops a missing capability.
 
-MDPE.3 configures a performing whole. B.1.5.EW distinguishes constituent and encompassing work occurring together. Neither supplies the instrument- or movement-specific means needed to enact this carrier–articulation combination.
+Use MDPE.3 to configure the performing whole and B.1.5.EW to examine how a present constituent action enacts the encompassing work. The performer also needs the brush, movement or actuator technique that can produce the required combination.
 
 ### RHY.3:End

@@ -5,113 +5,113 @@
 
 ### EXD.5:1 - Problem frame
 
-Use this pattern when an instructional purpose requires the recipient to construct and use an explanation: connect a worked step to a principle, explain an error, map a diagram or show how an operation follows. The learner's own verbal, visual or enacted product can reveal a relation that passive acknowledgement leaves unknown.
+Use this pattern when a learner needs to explain a relation or when the task is to establish what the learner contributed to an earlier explanation. A learner might connect a worked step to a principle, explain an error, map a diagram or show how an operation follows. Use the verbal, visual or enacted response that bears on the question.
 
-Begin with the relation the learner should make explicit and the product that would display it. Give a focused prompt with assistance appropriate to the task. The first useful result is the learner's product, any supported correction and the assistance still needed.
+Identify the relation and what would count as showing it. Examine an existing response with the help available, supplied and used. To develop the learner’s explanation, give a focused prompt with appropriate assistance. The result can be the learner’s own account, what they explained with assistance, a supported correction or a limit on what the available response establishes.
 
-A recipient who only needs an available fact or the grounds for advice may need no learning exercise. Select generation because its result can serve the receiving purpose.
+Someone who needs a fact or the grounds for advice can use a sufficient answer directly. When the recipient’s own contribution matters, use a sufficient existing response or ask for an explanation appropriate to the task.
 
 ### EXD.5:2 - Problem
 
-“Explain it in your own words” can invite paraphrase without the needed relation. A learner may generate a plausible but wrong account, copy a worked answer or fail because a prerequisite was never available. Supplying a correction and asking for repetition can then conceal how much help produced the result.
+“Explain it in your own words” may elicit a paraphrase that leaves the relation unclear. An answer can reflect a wrong inference, a copied step or a missing prerequisite. When the learner replies after receiving a correction, identify what the correction supplied and which relation the learner then explained.
 
-Useful guided generation specifies what the product should expose, preserves the first response and connects feedback to an affected retry.
+Specify what the learner’s response should show. Keep the initial response when one exists. If the task calls for correction, connect the feedback to the affected relation and check a further attempt when it can establish the intended use.
 
 ### EXD.5:3 - Forces
 
 | Force | Practical tension |
 | --- | --- |
 | Productive effort and unavailable knowledge | Constructing a relation can support learning; demanding it without the required basis can produce confusion. |
-| Diagnostic visibility and assistance | An unassisted attempt reveals a starting point, while timely guidance may be needed to make progress. |
-| Focus and expressive freedom | A precise prompt exposes the target relation without requiring one author's exact wording. |
-| Immediate correction and later use | A corrected answer can be useful now while independent retention or transfer remains untested. |
+| Diagnosis and assistance | An unassisted response can show what the learner did under that condition. A worked step may help the learner use the same relation or prepare them to tackle a different one. |
+| Focus and expressive freedom | A precise prompt identifies the relation. Several forms of response can meet the same subject criterion. |
+| Immediate correction and later use | A response after feedback can settle what happened in that episode. Later independent use requires evidence from the relevant task, delay and assistance conditions. |
 
 ### EXD.5:4 - Solution
 
 #### EXD.5:4.1 - Select the target and the product
 
-Recover the learning purpose, current question and warranted subject relation. Choose a product that makes that relation inspectable: a short explanation of one step, labels and arrows with stated meanings, a worked correspondence or an enactment with an explanation of what each action represents.
+Identify the question, learning purpose where relevant, and warranted subject relation. Choose or inspect a product that could show it, such as an explanation of one step, a labeled diagram, a worked correspondence or a demonstration that shows what its actions represent.
 
-State a criterion for the relation, not a preferred phrase. For the pooled mean, the product should show what the denominator counts and how each group's sum is recovered. Fluency, length or agreement with the teacher cannot replace that criterion.
+State a criterion for the relation. For the pooled mean, the learner needs to show what the denominator counts and how to reconstruct each group’s sum. Accept any expression that establishes those two connections.
 
 Use [EXD.2](10-exd-2---build-and-bound-an-explanatory-example.md) when the instance and contrast need construction. Keep legitimate tools available when the intended performance allows them.
 
 #### EXD.5:4.2 - Give a focused prompt and preserve the first response
 
-Select assistance from the learner's usable knowledge of this task. A worked model, partial representation, cue or small open prompt can each be appropriate. If an initial unassisted response can change the diagnosis or help, obtain and retain it before giving the solution.
+For a teaching task, select help in light of the learner’s preparation and the relation they need to use. For an earlier attempt, establish what help was available and used from the evidence of that attempt. A worked example, partial diagram, cue or open prompt can each serve a purpose. If an unassisted response is needed to distinguish starting points, use an existing qualified response or seek one before giving the decisive step.
 
-Ask for the relation that matters: “What does your denominator count, and what should it count for this question?” is more diagnostic than “Explain the answer.” Let the learner express a correct relation in their own suitable form.
+In a new attempt, ask for the relation the learner needs to show. When examining an earlier response, identify which relation its prompt asked the learner to show. “What does your denominator count, and what should it count for this question?” locates a possible error more precisely than “Explain the answer.” In a new attempt, let the learner choose a suitable way to express the relation.
 
-Where the learner lacks a necessary component, supply that component and make the assistance visible. An unproductive unsupported attempt is not required before every explanation. Human Capability Development's task and assistance methods supply the broader decision about support and progression.
+If the learner needs a component that the task does not supply, provide it where feasible and identify the help given. An initial worked step may be appropriate. When a person is learning, use Human Capability Development for broader questions about the task, assistance or progression.
 
 #### EXD.5:4.3 - Locate the error and support its correction
 
-Compare the product with the selected criterion. Distinguish a wrong relation, an absent prerequisite, an expression difficulty and a changed question. A learner using the mean of branch means may be correct after the question changes to equal branch influence; [EXD.1](09-exd-1---establish-and-revise-what-a-recipient-needs-explaine.md) and [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) handle that return.
+Compare the response with the criterion for the question actually asked. A wrong relation, an unavailable prerequisite, an unclear expression and a changed question can produce similar answers. Equal influence per branch calls for the mean of branch means. Use [EXD.1](09-exd-1---establish-and-revise-what-a-recipient-needs-explaine.md) or [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) when a change of question or a response in the exchange needs interpretation.
 
-For an error under a fixed question, guide the learner to identify the wrong relation, explain why it fails here, construct the corrected relation and describe its use. Provide the missing ground or component when needed. Tie the feedback to the task criterion: “Your denominator counts two groups, while this question counts eight individuals” identifies the discrepancy.
+When correction is the learning task, help the learner identify the wrong relation, explain why it fails in this case, construct the corrected relation and explain how to use it. Give feedback tied to the criterion. For example, “Your denominator counts two groups, but this question asks about eight individuals.” If the learner also needs the mean-to-sum relation, supply the necessary ground.
 
-Preserve the initial product and what was supplied in correction. A supported explanation is a result under those conditions.
+Retain the original response if available and identify what the correction supplied. State what the learner explained under those conditions and identify any contribution that remains unclear.
 
 #### EXD.5:4.4 - Ask for the affected use again
 
-Choose a retry that can reveal whether the corrected relation is usable at the intended grain. Change values or a consequential condition while avoiding irrelevant difficulty. Specify what help remains available. The next response can support a more limited or a stronger conclusion depending on those conditions.
+When the learning purpose calls for a further attempt, choose one that can show whether the learner can use the corrected relation. Vary values or a consequential condition and state the help available. A completed earlier attempt can already supply the needed evidence. For a historical question, report what the available evidence of the response establishes and any limit on attribution.
 
-If the error persists, revise the diagnosis or assistance rather than simply repeating the same prompt. If the learner now uses the relation adequately, stop the immediate correction. Select later retrieval, practice, fading or transfer work only when the learning purpose requires it, using the relevant HCD methods and evidence.
+If a difficulty persists and the learning task continues, reconsider its cause and the help needed. Stop immediate correction when the learner’s response meets the criterion. Use HCD and suitable evidence for a separate question about later retrieval, reduced help or transfer.
 
 ### EXD.5:5 - Archetypal Grounding
 
 The fixed task asks for the mean across all individuals. Group A has two values with mean 3; group B has six values with mean 8. The learner's first product is “(3 + 8) / 2 = 5.5, because there are two averages.”
 
-Preserve that response. Ask, “Which things receive equal weight in this calculation?” The learner says, “The two groups.” Ask, “Which things should have equal weight in the question?” If the learner identifies the individuals, guide the mismatch: the denominator two counts groups, while the target contains eight people.
+Keep the first response. Ask, “Which things receive equal weight in this calculation?” In this example the learner answers, “The two groups.” Ask which things the question weights equally. If the learner identifies the individuals, show how the denominator of two reflects the grouping while the task concerns eight people.
 
-The corrected explanation should state: “Each mean summarizes a different number of people. The group sums are 2 × 3 = 6 and 6 × 8 = 48. Divide 54 by the total count eight to get 6.75.” If the learner cannot reconstruct a group sum, supply that relation explicitly and retain it as help.
+One adequate explanation is “Each group mean summarizes a different number of people. Multiply each mean by its count to obtain the group sums, 2 × 3 = 6 and 6 × 8 = 48. Divide their combined sum of 54 by the number of people, 2 + 6 = 8. The mean is 6.75.” If the learner needs help recovering the group sums, supply the relation between a mean, count and sum and record that help.
 
-A retry uses three values with mean 4 and nine values with mean 8. Ask for the pooled mean and why its denominator has that value. The correct result is (3 × 4 + 9 × 8) / 12 = 7. A response that uses the total count and reconstructs both sums meets the stated criterion under the available assistance. It does not yet establish independent performance after a delay.
+For a further attempt, use three values with mean 4 and nine with mean 8. Ask for the pooled mean and the meaning of its denominator. Here (3 × 4 + 9 × 8) / 12 = 7. A response that uses the total count and reconstructs both sums meets the criterion under the assistance available. Establish independent use after a delay from a performance under those conditions.
 
-For a contrasting target, ask for equal influence of the two group means. The result is then 6. The learner should preserve the target-dependent rule, not replace one memorized shortcut with a claim that group means must always receive count weights.
+For equal influence of the two group means, the answer is (4 + 8) / 2 = 6. Ask the learner to explain the change of target when distinguishing the weighting rules is part of the task.
 
-These are constructed prompts and answer criteria. The actual learner's responses determine which help and further work are warranted.
+The prompts and criteria are constructed. Use the evidence of a particular learner’s response and conditions when deciding what assistance or further practice is warranted.
 
 ### EXD.5:6 - Bias-Annotation
 
-Verbal fluency can conceal a wrong relation, while a brief diagram or enacted explanation may show the relation correctly. Judge the selected product by its subject correspondence and use. A teacher's preferred terminology is necessary only where it carries a consequential distinction.
+Judge the response by how it shows the required relation. A brief diagram or demonstration may meet the criterion. Require particular terminology only if using those terms matters to the task. A diagram or different wording can express the same consequential distinction.
 
 ### EXD.5:7 - Conformance Checklist
 
-Recognition concerns a learning use for which the recipient's product can expose or develop a needed relation.
+Use a learner’s response when it can show how the learner understands or uses a relation, or when constructing the response can help them develop that understanding.
 
-For assurance, check that the target relation and answer criterion are explicit; the prompt fits the available preparation; the first response and help are distinguishable; correction addresses the actual error or missing component; and the retry tests the affected use. State whether its result is assisted, immediately independent or supported by a later observation.
+Check the relation, answer criterion and conditions of the response being assessed. Identify the learner’s own contribution and any help supplied or used. For instruction, judge the fit of the prompt and correction to the difficulty and use a further attempt when needed. Qualify immediate supported performance, independent use and retention by the evidence for each.
 
 ### EXD.5:8 - Common Anti-Patterns and How to Avoid Them
 
 | Failure | Repair |
 | --- | --- |
 | A generic request produces a fluent paraphrase | Ask for the decisive correspondence, ground, contrast or error. |
-| An answer is marked wrong after the question changes | Re-establish the target before giving corrective feedback. |
-| The learner repeats a supplied solution and is credited with independent use | Preserve the assistance and use a relevant retry under stated conditions. |
-| Every recipient is required to perform a learning exercise | Select generation only for the actual instructional purpose. |
+| An answer is marked wrong after the question changes | Apply the criterion for the question actually asked. Clarify it before giving corrective feedback if it is uncertain. |
+| A repeated solution supplied by the teacher is credited as independent use | Report the demonstrated response and the help given. For an independent-use claim, seek relevant evidence under the required conditions. |
+| A learning exercise is assigned to someone who needs only a qualified answer | Supply that answer when it serves the request. Use the learner’s own explanation when the outcome depends on their contribution. |
 | A failed retry receives the same prompt indefinitely | Revisit the missing component, representation or diagnosis. |
 
 ### EXD.5:9 - Consequences
 
-The learner's product becomes usable evidence for targeted support and correction. Producing and inspecting it costs effort, so a focused relation and a meaningful stop matter. Successful supported correction can be valuable even while retention and broader transfer remain open.
+A learner’s explanation can give evidence for a limited finding about that attempt and for choosing targeted support. Producing another response costs time. Seek it when the learning or assessment task warrants it. A supported correction can complete the present task even when retention or transfer has yet to be established.
 
 ### EXD.5:10 - Architectural Rationale
 
-This pattern owns explanation-specific product and prompt construction. Human Capability Development supplies broader task design, feedback, assistance and progression. The learner's product and any discrepancy from the task criterion connect that broader instructional work to the explanatory contribution.
+For instruction, choose a prompt and product for the relation to be explained. A historical assessment can use the prompt and product from the earlier work. For human learning, Human Capability Development can supply task design, feedback, assistance and progression. The learner’s product may already meet the subject criterion. An observed discrepancy can guide subsequent work on that relation.
 
 ### EXD.5:11 - SoTA-Echoing
 
-[Fiorella, 2023](https://link.springer.com/article/10.1007/s10648-023-09769-7) distinguishes explaining, visualizing and enacting as sense-making activities with different guidance needs. Adapt focused prompts, partial support and feedback to the relation to be generated. Production alone is not a guarantee of learning.
+[Fiorella, 2023](https://link.springer.com/article/10.1007/s10648-023-09769-7) distinguishes explaining, visualizing and enacting as sense-making activities with different guidance needs. Select prompts, partial support or feedback for the relation and task. A learning claim requires evidence of what changed in the learner’s performance.
 
-[Zhang and Fiorella, 2024](https://doi.org/10.1016/j.cedpsych.2024.102326) supply error-specific self-explanation guidance: identify the wrong relation, explain the error and explain the corrected relation's use. The second experiment's analysis concerned 73 students who had made errors; correction and near-transfer benefits did not establish a far-transfer advantage. Carry the scaffold with that evidence boundary.
+[Zhang and Fiorella, 2024](https://doi.org/10.1016/j.cedpsych.2024.102326) examined guidance for learners to identify a wrong relation, explain the error and explain how to use the corrected relation. Experiment 2 analyzed 73 students who had made errors. The evidence supported correction and near transfer in that study. A far-transfer advantage was not established.
 
-[Tetzlaff et al., 2025](https://doi.org/10.1016/j.learninstruc.2025.102142) qualify assistance by prior knowledge and conditions across their meta-analysis. Keep support task-specific instead of prescribing universal fading. In the worked case, a denominator prompt discriminates the known error more directly than another general request to explain. Reopen if the actual product exposes a different missing relation or assistance need.
+[Tetzlaff et al., 2025](https://doi.org/10.1016/j.learninstruc.2025.102142) examine how prior knowledge and conditions affect the usefulness of assistance. Use the learner’s task and preparation to decide whether to retain, change or fade support. In this example, a prompt about what the denominator counts targets the identified error more closely than a general invitation to explain. Change the support when the learner’s response shows a different difficulty.
 
 ### EXD.5:12 - Relations
 
-[EXD.2](10-exd-2---build-and-bound-an-explanatory-example.md) supplies the instance and boundary. [EXD.3](11-exd-3---coordinate-the-expression-of-an-explanation.md) coordinates a visual or symbolic product. [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) interprets a contribution that changes the target or repair. [EXD.6](14-exd-6---compare-explanations-for-the-recipient-s-use-and-dec.md) selects a worthwhile prompt or explanation change.
+Use [EXD.2](10-exd-2---build-and-bound-an-explanatory-example.md) when an example or its boundary needs development, [EXD.3](11-exd-3---coordinate-the-expression-of-an-explanation.md) to coordinate a visual or symbolic product, and [EXD.4](12-exd-4---co-construct-and-repair-an-explanation-in-dialogue.md) to establish what a response shows, including a change of question, a need for help or grounds to end the exchange. [EXD.6](14-exd-6---compare-explanations-for-the-recipient-s-use-and-dec.md) supports assessment or comparison of a possible change.
 
-The [instructional profile](16-exd-profiles-1---instructional-explanation.md) names HCD's task, feedback, assistance and material-evaluation returns and the evidence needed for later learning claims.
+The [instructional profile](16-exd-profiles-1---instructional-explanation.md) connects this method to HCD for task design, feedback, assistance, material evaluation and evidence of later human learning.
 
 ### EXD.5:End

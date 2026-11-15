@@ -2,7 +2,7 @@
 
 Customization and Productization Management concerns the continuing development of customer-specific results and repeatable offerings together. Its object is the arrangement of customer commitments, local differences, common contributions, provision and support. A product manager, service lead, delivery lead or another responsible practitioner uses it when a decision about one of these changes the others.
 
-The recurring difficulty is not merely excessive customization. A valuable local adaptation can expose a useful common capability; a common release can damage an existing customer's result; a standard delivery method can depend on unprovided expert work. The useful gain is to make these consequences decidable and their continuation obtainable.
+A valuable local adaptation can reveal a common capability. A common release can damage an existing customer’s result, and a standard delivery method can depend on expert work nobody has provided. These difficulties can arise even when the amount of customization is appropriate. The management decision is how to continue serving this customer and support the offering across cases.
 
 A customer result and a repeatable provider contribution are distinct. A deployment can work for its recipient while depending on exceptional effort, unavailable data or an undocumented specialist. Conversely, a reusable component can be technically sound while leaving the customer's operating change, training or support unresolved. CUST connects these two results without requiring both to succeed in every case.
 

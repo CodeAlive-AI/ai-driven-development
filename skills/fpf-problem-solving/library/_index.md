@@ -26,7 +26,7 @@ You do not need to read the Library from beginning to end. Bring a situation, th
 | --- | --- |
 | Find a way to obtain a result when the familiar answer is insufficient | [Find and develop a way to obtain a result (FPF C.39)](../sections/09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md). It connects existing answers, missing constructions and the use that needs the result. |
 | Bring partial findings back to the original question or develop an account of a whole subject | [Return results to the original question (FPF C.39.QR)](../sections/09-part-c---kernel-extension-specifications/97-c-39-qr---return-results-to-the-original-question.md) connects the obtained result, its grounds and the receiving use. [Develop an account of the whole subject (FPF C.39.WA)](../sections/09-part-c---kernel-extension-specifications/98-c-39-wa---develop-an-account-of-the-whole-subject.md) supplies the common explanation and relations when that is the missing contribution. |
-| Develop your own, a team's or an organization's ability to continue beyond its present limits | [Construct and continue open-ended development (FPF C.40.OD)](../sections/09-part-c---kernel-extension-specifications/117-c-40-od---construct-and-continue-open-ended-development.md), together with the domain methods needed for the actual change. |
+| Develop your own, a team's or an organization's ability to continue beyond its present limits | [Construct and continue open-ended development (FPF C.40.OD)](../sections/09-part-c---kernel-extension-specifications/117-c-40-od---construct-and-continue-open-ended-development.md), together with the domain methods needed for the change. |
 | Design, acquire, integrate or maintain a functioning system | [Engineering](../dpfs/engineering-dpf-suite/_index.md). |
 | Make direction, promises, resources and collective work fit together | [Management](../dpfs/management-dpf-suite/_index.md). |
 | Construct, coordinate, pursue or revise goals, including a complete OKR practice | [Goal Construction and Regulation (GOALS)](../dpfs/management-dpf-suite/goals/_index.md), with organizational, human and AI applications. |
@@ -38,7 +38,7 @@ Before applying a method, read [Using FPF Library](USING-FPF.md). It explains ho
 
 ## Keep connected reasoning in view
 
-**Long mantras** recall how answers to related questions depend on one another. [B.5.PI](../sections/08-part-b---trans-disciplinary-reasoning-cluster/42-b-5-pi---initiate-inquiry-from-work.md) explains how a suitable mantra can help find a consequential problem before it is felt: examine its connected questions in a case and investigate a consequential gap when one appears. For a systemic project question, **[A.1.STM](../sections/05-part-a---kernel-architecture-cluster/07-a-1-stm---connect-project-reasoning.md)** first examines receiving use at the operating time and, from the system boundary, the larger whole and how its parts function together. This grounds the system's contribution before construction, obtaining Methods and creators are considered. The system-of-interest (SoI) keeps the product purpose in view when improving its creators. Those improvements can have their own finite projects and acceptance conditions. Independent suppliers connect their product purposes through the actual receiving use and obligations. The full account explains how a noticed difficulty reaches those same grounds and what to revise when a premise changes.
+**Long mantras** recall how answers to related questions depend on one another. [B.5.PI](../sections/08-part-b---trans-disciplinary-reasoning-cluster/42-b-5-pi---initiate-inquiry-from-work.md) explains how a suitable mantra can help find a consequential problem before it is felt: examine its connected questions in a case and investigate a consequential gap when one appears. For a systemic project question, **[A.1.STM](../sections/05-part-a---kernel-architecture-cluster/07-a-1-stm---connect-project-reasoning.md)** first examines receiving use at the operating time and, from the system boundary, the larger whole and how its parts function together. This grounds the system's contribution before construction, obtaining Methods and creators are considered. The system-of-interest (SoI) keeps the product purpose in view when improving its creators. Those improvements can have their own finite projects and acceptance conditions. Independent suppliers connect their product purposes through the receiving use and obligations. The full account explains how a noticed difficulty reaches those same grounds and what to revise when a premise changes.
 
 The **[control mantra (FPF C.43)](../sections/09-part-c---kernel-extension-specifications/127-c-43---connect-observation-choice-and-action-in-control.md)** connects assessment of the situation, possible continuations, comparison and choice, realization, examination of what happened and revision. Its full Method explains how observations can change later choices, how means and timing constrain them, and how an intervention can develop the capability to address further problems. Technical control, economic choices and developmental recommendation retain their particular mechanisms.
 
@@ -48,26 +48,26 @@ A mantra presents logical dependencies in an order useful for explanation and re
 
 Suppose a team can deliver its current product, but a more demanding order is beyond its capabilities. Buying a specialist's result might meet the immediate need. Learning to produce it would change what the team can do. Learning how to recognize the next limitation, obtain or invent a needed method and organize its acquisition would change how the team can continue developing. These are different results, with different evidence.
 
-The Library helps connect them without requiring the same arrangement everywhere. A person working with an AI, several collaborating teams and a company with a development office need different domain methods and allocations of work, resources and authority.
+The Library helps connect these results. A person working with an AI, several collaborating teams and a company with a development office need different domain methods and allocations of work, resources and authority.
 
-The general methods are in **Core**: [connect development work (C.40.OD)](../sections/09-part-c---kernel-extension-specifications/117-c-40-od---construct-and-continue-open-ended-development.md), [connect a method, the capability to perform it and the conditions for its use (C.40.JD)](../sections/09-part-c---kernel-extension-specifications/118-c-40-jd---develop-a-way-its-holder-and-its-provision-togethe.md), and [continue from a result to new attainable problems (C.40.NP)](../sections/09-part-c---kernel-extension-specifications/119-c-40-np---continue-from-a-result-to-new-attainable-problems.md). The DPFs supply the particular mechanisms of learning, research, engineering, management and other practices. Developing a method, changing an agent's capability and actually performing work remain distinct contributions.
+The general methods are in **Core**: [connect development work (C.40.OD)](../sections/09-part-c---kernel-extension-specifications/117-c-40-od---construct-and-continue-open-ended-development.md), [connect a method, the capability to perform it and the conditions for its use (C.40.JD)](../sections/09-part-c---kernel-extension-specifications/118-c-40-jd---develop-a-way-its-holder-and-its-provision-togethe.md), and [continue from a result to new attainable problems (C.40.NP)](../sections/09-part-c---kernel-extension-specifications/119-c-40-np---continue-from-a-result-to-new-attainable-problems.md). The DPFs supply the particular mechanisms of learning, research, engineering, management and other practices. Developing a method, changing an agent's capability and performing work remain distinct contributions.
 
 ## What is available
 
-**FPF Core** contains 403 patterns in 18.366 million characters. It supplies transdisciplinary concepts and methods, including methodological work, architecture construction and comparison, and open-ended development. **36 Domain Principle Frameworks (DPFs)** supply subject-specific methods: 26 belong to four Suites, and ten have their own files directly in the DPF catalogue.
+**FPF Core** contains 403 patterns in 18.394 million characters. It supplies transdisciplinary concepts and methods, including methodological work, architecture construction and comparison, and open-ended development. **36 Domain Principle Frameworks (DPFs)** supply subject-specific methods: 26 belong to four Suites, and ten have their own files directly in the DPF catalogue.
 
 A DPF describes one field through a connected pattern language. A **Suite** describes a composite discipline through its constituent fields and their relations. An **Architectural Reference** explains how the relevant language is arranged and why: within a framework, across a Suite, or across the Library.
 
 | DPF Suite | Working subject | DPFs | Patterns | Text, M characters |
 | --- | --- | ---: | ---: | ---: |
-| [Engineering](../dpfs/engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.809 |
-| [Management](../dpfs/management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities and organizational change. | 14 | 201 | 5.565 |
-| [Foundational Thinking](../dpfs/foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 2.009 |
-| [Human Capability Engineering](../dpfs/human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.216 |
+| [Engineering](../dpfs/engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.840 |
+| [Management](../dpfs/management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities and organizational change. | 14 | 201 | 5.595 |
+| [Foundational Thinking](../dpfs/foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 1.995 |
+| [Human Capability Engineering](../dpfs/human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.244 |
 
-The [DPF catalogue](../dpfs/_index.md) lists the ten further frameworks and opens each Suite's files. Suite totals sum their constituent framework texts; separate Suite References and README pages are excluded. Character counts include spaces and original line breaks. Counts describe the available material, not how much you must read before using it.
+The [DPF catalogue](../dpfs/_index.md) lists the ten further frameworks and opens each Suite's files. Suite totals sum their constituent framework texts; separate Suite References and README pages are excluded. Character counts include spaces and original line breaks.
 
-The Library does not claim to exhaust the disciplines it covers: the current Human Capability Engineering Suite, for example, develops learning and somatic contributions, not all methods concerning a human being.
+The Library covers its disciplines selectively. For example, the current Human Capability Engineering Suite develops learning and somatic contributions.
 
 ## Read online or use your own copies
 
@@ -75,11 +75,11 @@ Read [Core on fpf.tools](../sections/03-first-principles-framework-readme/_index
 
 For the source, open the [Core Markdown file and its history](../sections/03-first-principles-framework-readme/_index.md) or [download Core as raw Markdown](https://raw.githubusercontent.com/ailev/FPF/main/FPF-Spec.md). Framework tables on these pages provide Markdown source links and, where available, online reading links. On fpf.tools, **Copy and source** identifies the repository edition behind the displayed passage. Check [source editions and update status](https://fpf.tools/status) when the version matters; the service may lag behind GitHub. [Search](https://fpf.tools/search) and [MCP connection instructions](https://fpf.tools/connect) provide other ways to reach the material.
 
-For local use, download or clone this repository. Keep `FPF-Spec.md`, `FPF-LIBRARY-REFERENCE.md`, `USING-FPF.md`, the licensing files and `DPFs/` in their existing arrangement. A selected subset is also usable: include the actual supplying frameworks needed by your question, not just links to unavailable files. [Using FPF Library](USING-FPF.md#make-the-publications-available) explains access and selection.
+For local use, download or clone this repository. Keep `FPF-Spec.md`, `FPF-LIBRARY-REFERENCE.md`, `USING-FPF.md`, the licensing files and `DPFs/` in their existing arrangement. A selected subset is also usable: include the full texts of the supplying frameworks needed by your question. [Using FPF Library](USING-FPF.md#make-the-publications-available) explains access and selection.
 
 ### Work with an AI assistant
 
-Give the assistant access to the full relevant texts, your actual situation, constraints and observations. Put this instruction in the project settings or instruction file the agent actually reads, replacing `fpf/` with your location:
+Give the assistant access to the full relevant texts, your situation, constraints and observations. Put this instruction in the project settings or instruction file the agent reads, replacing `fpf/` with your location:
 
 > Use FPF Library from `fpf/`. Before applying its methods, read `fpf/USING-FPF.md` and follow its guidance. Help obtain the result our work needs. Explain the reasoning in our working language, identify the patterns used, and distinguish source claims, assumptions and missing evidence.
 
@@ -89,7 +89,7 @@ An assistant can retrieve methods, calculate, compare alternatives, draft and ch
 
 ## Understand, check or extend a contribution
 
-README pages help you choose; full patterns teach the methods and state their conditions. Read the exact explanation when a recommendation matters. A maintained account of useful approaches can include competing schools, failures and limits.
+README pages help you choose; full patterns teach the methods and state their conditions. Read the explanation when a recommendation matters. A maintained account of useful approaches can include competing schools, failures and limits.
 
 For a precise reference, retain the complete PatternID or section address and enough context to identify the publication. [Using FPF Library: resolve a portable reference](USING-FPF.md#resolve-a-portable-reference) explains how this works across files, search and MCP. You need not learn document codes before choosing what to read.
 

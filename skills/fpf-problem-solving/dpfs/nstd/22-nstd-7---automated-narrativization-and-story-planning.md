@@ -8,13 +8,13 @@
 
 ### NSTD.7:1 - Problem frame
 
-Use this pattern when LLM, NLG, graph-to-text, data-to-text, story-planning, schema-governed generation, or search is used to produce or repair narrative renderings.
+Use this method to generate, inspect or repair a narrative with an LLM, an NLG system, graph-to-text or data-to-text generation, story planning, a schema or search. An existing tool-produced account can itself be the object of evaluation.
 
-First useful move: give the generator the material, the relations it should preserve and the intended reader's task. Obtain a small draft and compare it with the material for omissions, inventions and misleading connections. Evaluate those defects before deciding how to use the draft.
+Identify the material, the relations the narrative should preserve and the reader’s task. When generating a draft, supply those conditions to the tool. Compare the available draft with the material for omissions, inventions and misleading connections. A finding can answer an inspection request or inform a decision about use or repair.
 
-What goes wrong if missed: fluent wording or a valid output schema hides an unsupported cause, missing condition or continuity error.
+Fluent or schema-valid output can introduce a cause the source never established, drop a condition or break continuity.
 
-What this buys: useful automated drafting with a way to detect and repair the losses that matter to the reader.
+A focused comparison can locate such a loss and guide a correction while retaining the speed of automated drafting.
 
 ### NSTD.7:2 - Problem
 
@@ -25,13 +25,13 @@ Automated systems can produce fluent narratives that lose a source relation or v
 | Force | Tension |
 | --- | --- |
 | Fast drafting vs source comparison | Generation is fast; finding a consequential omission or invention still requires comparison with the needed content. |
-| Schema control vs source truth | A valid story schema does not prove source fidelity. |
-| Fluency vs correspondence | Fluent text can lose selected structure. |
-| Automation and responsibility | A workflow must identify who decides a consequential use; the generated text does not make that decision. |
+| Schema constraints and fidelity | Correct field structure establishes format compliance. Inspect the values and relations to establish fidelity. |
+| Fluency and correspondence | A smooth transition can turn succession into an unsupported explanation. |
+| Automation and responsibility | A consequential use may require an authorized decision. Identify who holds that authority and, when relevant, who implemented the decision. |
 
 ### NSTD.7:4 - Solution
 
-Work from a content plan to an inspected draft. For a short account, the plan can be a few instructions or marked source relations. Inspect a candidate before accepting, repairing or rejecting it; prior acceptance is not required to evaluate it. Use the optional note below when another worker, an experiment or a maintained workflow needs to recover those choices. Keep only the fields that serve that use.
+For a new account, identify the content and order the use needs, generate the draft and inspect it. A few instructions or marked source relations may suffice for the plan. For an existing narrative, start with the account and the grounds needed for the question. Inspection can give a sufficient finding, support use of the candidate or show what needs repair. Keep a note such as the one below when a collaborator, experiment or continuing workflow needs to recover the choices.
 
 ```text
 GeneratedNarrativeUseNote@Context:
@@ -45,57 +45,57 @@ GeneratedNarrativeUseNote@Context:
   schemaConstraintRefs?:
   sourceComparison:
   evaluationRef?:
-  useDecisionOrRepair:
+  findingUseDecisionOrRepair:
   consequentialUseDecisionMaker?:
   architectureSynthesisAssessmentRef?:
   additionalClaimGrounds?:
   revisitCondition?:
 ```
 
-Choose additional checks from the claim being made:
+Use the contribution that settles the remaining question.
 
 | Question | Applicable content |
 | --- | --- |
-| Source selection and any evidence claim | `NSTD.1` for ordinary source selection; `G.2` for SoTA harvesting and synthesis across traditions; the claim's subject grounds for evidence, with `A.10` when the source-to-use account is implicit or must remain replayable. |
-| Generated result will inform architecture work | `C.35`; generation alone does not select it. |
+| Source selection and an evidence claim | Use `NSTD.1` for ordinary source selection, or `G.2` to collect and synthesize the relevant SoTA traditions. Support an evidence claim from its subject sources. Use `A.10` if the source-to-use relation is implicit or must remain reproducible. |
+| Generated content is to inform architecture work | `C.35` evaluates the generated contribution for that use. |
 | Source-to-narrative relation | `A.6.3.NAR` and this DPF |
 | Reader recovery of selected structure | `C.2.8` through `NSTD.6`; `C.33` separately when architecture-description adequacy is the question. |
-| Claimed correspondence between structures | Compare the relevant source and result directly. Use `C.34` for architecture-specific preservation claims; ordinary story continuity does not select it. |
-| Generation procedure | method or method-description owner, with source-pack grounding |
-| Narrative rendering quality evaluation | `NSTD.6`, `A.19.ECS`, `C.16` |
+| Correspondence between structures | Compare the pertinent source and result directly. Use `C.34` to evaluate an architecture-specific preservation claim. |
+| Generation procedure | Establish which method was specified or used, from its description, source material or evidence of execution as the claim requires. |
+| Narrative quality for a reader and use | Use `NSTD.6` and its applicable `A.19.ECS` evaluation or `C.16` measurement basis. |
 | Repeated quality improvement | `E.22` when the quality question is not framed, then `E.23` using `NSTD.6` result rows and re-evaluation |
-| Evidence | The claim's defining or testing rule and adequate source basis; `A.10` when the source-to-use account is implicit or must remain replayable. |
+| Evidence | Use the subject criterion and relevant sources. Use `A.10` for a source-to-use relation that is implicit or must be reproducible. |
 | Assurance | `B.3` |
 | Ethics, harm, bias, affected parties | `D.1` through `D.5` |
-| Responsibility for a consequential use | The applicable organizational assignment or decision authority; precise Work claims use their own FPF grounds. |
+| Responsibility for a consequential use | Identify the applicable assignment or decision authority. If reporting a particular act, establish who did it and on what basis the attribution holds. |
 
-The following operations describe a useful generation cycle. They can be interleaved: an inspected draft may reveal a better content selection or order. A short task can combine planning in one prompt and comparison in one reading. Separate stages or records are useful only when the task, tool or receiving use needs them.
+For new generation, planning and drafting can be interleaved. Inspection may reveal that the content or order needs to change. A short task can combine planning in one prompt and comparison in one reading. Use separate stages or records when the tool, experiment or later work needs them.
 
 | Operation | What to do | Typical failure |
 | --- | --- | --- |
 | Source selection | Select the material and relations or constraints needed for the reader's use. Keep unresolved source claims visible. | A prompt assumption is reported as an established fact. |
 | Content planning | Choose what to include, omit and foreground. Revise the selection when comparison reveals a gap. | The generator silently drops a condition needed for the reader's action. |
-| Discourse or sequence planning | Choose an order or reveal rule through `NSTD.2`. | Plausible prose changes chronology, causal support, proof dependency or continuity. |
-| Realization | Generate wording and viewpoint suited to the use; carry a required voice through NSTD.4's examples or chosen treatment and connected-fragment comparison. | Smoothness disguises an unsupported connection or replaces the intended voice with a generic manner. |
+| Discourse or sequence planning | Use `NSTD.2` to choose the order, when to disclose events and what the expression then allows a reader with the specified prior knowledge to infer. | A plausible sequence changes chronology, support for a cause, proof dependence or continuity. |
+| Realization | Generate wording and viewpoint for the use. For a required voice, use NSTD.4 to choose examples or a trial treatment and compare connected passages. | Smooth prose can introduce a connection or replace the chosen voice with a different manner. |
 | Inspection and evaluation | Compare the draft with its sources and constraints; use `NSTD.6` for the relevant quality questions. | A defect remains invisible because only fluency or schema validity was checked. |
-| Use, repair or reject | Decide from the result and stakes. Re-evaluate changed claims before calling a revision better. | Repeated generation changes the text without resolving the original defect. |
+| Finding, use or repair | Report what inspection established. For a proposed consequential use, apply its criteria and authority. For a repair, compare the changed version with the earlier one before claiming improvement. | Regeneration alone leaves it open whether the original defect was resolved. |
 
 
-For a required voice, provide the generator with the basis selected through NSTD.4: the speaker–reader relationship, suitable source passages or chosen trial, useful expressive observations, content to preserve, and the speaker's actual or fictional access to it. Include neighboring text where the join matters. These can fit in an ordinary prompt; a separate profile is useful only when the continuing work needs one. If a model cannot receive the samples, qualify what a compressed description leaves unresolved.
+For a required voice, use NSTD.4 to identify the speaker’s relation to the reader, suitable source passages or a treatment to try, the expressive choices and content to preserve, and what the speaker knows under the real or fictional conditions. Include adjoining text when the transition matters. An ordinary prompt can carry this information. Keep a separate profile when later work needs it. If the model receives only a compressed description, identify consequential features that description leaves open.
 
-Generate a connected fragment and compare its actual expression under NSTD.4:4.5. A prompt saying “preserve my voice” or the generator's claim that it did so is not that comparison. Repair the particular loss, such as a flattened distinction, invented memory, inappropriate address or broken transition, and inspect the changed span and affected joins. Preserve adequate output. Changing a genre or source example reopens the dependent treatment; it need not restart unrelated content work. Automated or human comparison supports only its actual question and evidence; neither tool use nor an inferred voice profile creates a universal human-approval step.
+Compare a connected passage with the selected treatment through NSTD.4:4.5. A request to preserve a voice establishes the instruction. The written output can reveal a lost distinction, invented memory, inappropriate address or broken transition. For an assessment, report the finding. For a repair, revise that passage and inspect its connections with adjacent text. Retain an adequate result. Revisit the choices affected by a changed genre or source example. Use a human or automated comparison where it can supply the particular judgement required.
 
-For schema-governed generation, distinguish a format check from a content check. A schema can require scene fields, character roles, locations, source references, branches or game-engine inputs. Check whether those fields contain the right relations and satisfy the intended constraints. Record the constraints when later maintenance needs them; use `NSTD.6` for narrative quality and `C.34` when architecture-specific structural preservation is at issue. Neither a valid schema nor a complete note establishes factual accuracy.
+For schema-governed generation, check which required fields are present, then whether their values satisfy the substantive constraints. A schema may specify scenes, characters, locations, source references, branches or engine inputs. Save constraints that later maintenance needs. Use `NSTD.6` for narrative quality, the subject evidence for a factual claim and `C.34` for architecture-specific structural preservation.
 
-For LLM-assisted analysis or theme generation, compare proposed themes with the source excerpts and serious alternative readings through NSTD.9 when the interpretive account is unresolved. The researcher decides which interpretation the report supports and explains its limitations. Generating an interpretation changes what the tool proposes, not what the underlying evidence establishes.
+For LLM-assisted analysis, compare the proposed themes with the excerpts, question and serious alternative readings. Use NSTD.9 when the interpretation remains unresolved. Establish who proposed, challenged and interpreted the theme when its attribution matters. In NITA, the human researcher interprets the evidence and explains the result and its limits.
 
-For generated fiction or explicitly hypothetical scenarios, distinguish choosing events from expressing them. Use NSTD.10 when the next events, their consequences or the participants' changing knowledge and purposes still need construction. Give the generator the fixed premises, available choices and currently important relations; inspect proposals against them. A generated discovery or motivation can change the story plan, but it must remain consistent with the retained premises or lead to an explicit premise revision. A short scene can carry its own plan; an event graph or separate plan is useful when its absence would make those dependencies difficult to maintain. A generated plan can become input to later narrative work once its relevant claims or premises are suitable for that use; a named admission record is not a universal prerequisite.
+For fiction or an explicitly hypothetical real scenario, distinguish choosing events from expressing them. Use NSTD.10 if events, consequences or changes in what participants know or want still need construction. Give the generator the established premises, available choices and consequential relations. Compare its proposals with these. A new discovery or motive can lead the author to retain the premises and revise the event, or deliberately change a premise. A short scene may convey its plan. Use a graph or separate plan where it helps maintain dependencies. A plan whose relevant premises or claims are suitable can supply later narrative work.
 
-Select a probe when its possible result can change the generation method, repair or intended use:
+Choose a further probe when its attainable result can answer a material question about the method, narrative or intended use at a worthwhile cost. Use an adequate existing result when available.
 
-1. **Source perturbation:** change one relevant constraint and compare the next output. A failure to reflect the change exposes a grounding problem. A successful probe supports that tested relation; it does not prove fidelity for every output.
-2. **Structure recovery:** ask a reader to reconstruct the relations needed for the task without seeing the prompt. Retain the first answer and actual assistance. A missing relation may require content or order repair.
-3. **Responsibility:** for a consequential organizational use, establish who decides and can correct or withdraw it. A tool-generated assertion of permission supplies no such assignment.
+1. **Source perturbation.** Change a constraint that requires a difference in the answer and compare the resulting outputs. If the pertinent relation stays wrong or fails to change, examine how the generator used the source. A successful comparison establishes what happened for the tested change and conditions.
+2. **Structure recovery.** Use a reader’s response to the selected task, with access and help specified. To test what can be recovered under conditions excluding the prompt, keep the prompt out of that attempt. Retain the first response and identify what help was used. If a relation is missing, examine whether content, order, access or other conditions explain the loss.
+3. **Responsibility.** For a consequential organizational use, establish the authority to decide, correct or withdraw it. A generated note can convey an existing authorization when its issuer and terms support that use. Verify the actual grant if the wording is the only apparent basis.
 
 ### NSTD.7:5 - Archetypal Grounding
 
@@ -104,7 +104,7 @@ Select a probe when its possible result can change the generation method, repair
 #### NSTD.7:5.1 - Generated-narrative pipeline: graph-to-text case
 
 
-An AI agent receives a concept graph and produces a polished explanation. The author compares the needed dependency and example relations with the draft, evaluates consequential losses and repairs the account. The optional record below supports repetition of that comparison.
+An AI agent produces a fluent explanation from a concept graph. Its author compares the draft’s dependencies and examples with the graph and identifies any consequential loss. If correction is needed, the author repairs the account. The optional note below allows that comparison to be repeated.
 
 ```text
 GeneratedNarrativeUseNote@GraphToTextTeaching:
@@ -115,17 +115,17 @@ GeneratedNarrativeUseNote@GraphToTextTeaching:
   discourseOrEventPlanRef: didactic dependency order with a contrast reveal
   generatedDraftRef: prose candidate
   sourceComparison: required relations compared with their sentences
-  evaluationRef: relevant NSTD.6 questions and results
-  useDecisionOrRepair: repair any missing prerequisite before the learner uses that inference
-  revisitCondition: source graph, generator behavior or reader result changes
+  evaluationRef: relevant NSTD.6 questions and findings
+  findingUseDecisionOrRepair: repair a missing prerequisite before using the dependent inference
+  revisitCondition: a source graph, generator or reader finding changes in a way that affects the relied-on result
 ```
 
-Pipeline steps:
+The following steps construct and check the teaching account.
 
 1. Select the nodes, relations and returns the learner needs.
-2. Choose an order through `NSTD.2`, then generate a short draft.
+2. Choose the order with `NSTD.2` and generate a short draft that makes the chosen relations available.
 3. Compare the draft with the graph. If it says “B occurs because A” but the graph supports only “A precedes B”, replace the causal claim or obtain the missing causal account.
-4. Use `NSTD.6` to assess the repaired version for the intended reading. The draft need not have been accepted before this assessment.
+4. Use `NSTD.6` to assess the resulting version for the intended reading, whether it is already in use or still a candidate.
 5. Keep the adequate result. For repeated improvement, use `E.23` with the version, changed part, protected characteristics and comparison basis.
 
 
@@ -135,9 +135,9 @@ Pipeline steps:
 
 | Probe | Question | Pass condition | Failure repair |
 | --- | --- | --- | --- |
-| Source perturbation | If one source relation changes, does the generated narrative change at the right place? | The affected sentence, order marker, or source-return link changes. | Recover source plan; do not rely on prompt fluency. |
-| Structure recovery | Can a reader reconstruct selected source structure from the output? | Reader recovers nodes and relations needed for declared use and knows lost relations. | Add source-return markers or narrow declared use. |
-| Responsibility | Who decides the consequential use and can correct it? | The applicable assignment or decision authority is recoverable. | Resolve that authority question; apply evidence or assurance checks only when those claims are made. |
+| Source perturbation | Does changing a constraint that matters to the content change the relevant relation in the output? | The sentence, order marker or source return conveys the relation required under the new condition. | Compare the selected source and plan, then locate where the output lost the change. |
+| Structure recovery | Which selected relations can this reader reconstruct from the account under the stated conditions? | The reader correctly recovers the required relations and recognizes the omissions that matter to use. | Locate the loss. Clarify the content, add a usable return, address access or narrow the supported use as appropriate. |
+| Responsibility | Who can decide the consequential use, and who may correct or withdraw it? | The relevant assignments or authorizations can be established. | Resolve the missing authority when that use requires it. Use evidence or assurance methods when those claims are at issue. |
 | Schema use | Does the result satisfy the constraints that matter to its use? | Required fields and their semantic constraints are satisfied. | Repair the generator or result; use executable validation when it can test those constraints. |
 | Improvement evidence | Is the new variant better under the relevant `NSTD.6` characteristics? | Re-evaluation supports the claimed change without losing protected results. A sufficient one-off comparison can finish here. | Keep an unsupported variant as a candidate. Use `E.22` if the question needs framing, or `E.23` for repeated improvement. |
 
@@ -150,18 +150,18 @@ Before:
 
 > The generated outline sounds coherent and covers all important ideas, so it can be used as a DPF learning route.
 
-Failure: neither the needed source relations nor the learner's task is identified. “Covers all important ideas” has no comparison basis.
+The claim of adequate coverage lacks a comparison with the source relations needed for the learner’s task.
 
 After:
 
-> The outline selects `EntityOfConcern`, forces, solution, neighboring-pattern exits and the improvement loop, ordered by their teaching prerequisites. Compare those relations with the source and try the intended reconstruction task through `NSTD.8` and `NSTD.6`. A worked design estimate can support a provisional lesson; a claim about what learners actually recover requires a reading or teaching trial. `C.35` becomes relevant only if the generated result is being used to inform architecture work.
+> The outline selects `EntityOfConcern`, forces, solution, neighbouring-pattern exits and the improvement loop, ordered by their teaching prerequisites. Compare those relations with the source. Use `NSTD.8` and `NSTD.6` for the intended reconstruction task. A worked design estimate can support a provisional lesson. To report what learners recovered, use suitable evidence of their reading with the assistance available. Use `C.35` if the result is intended to inform architecture work.
 
 
 
 #### NSTD.7:5.4 - Generated-storycraft boundary
 
 
-For a franchise continuation, compare the generated scene with the selected continuity, premise and character-motivation constraints. A surprising event is acceptable when those relations support it; if it relies on a contradiction, repair the event or change the stated premise. Source perturbation can test a recurring generator problem. A private critique and a publication have different permissions questions. `NSTD.6` can evaluate the candidate before either use is accepted.
+For a franchise continuation, compare the generated scene with the selected canon, premises and character motives. A surprising event can fit them. For a contradiction, report it, repair the event if asked, or change a premise where the project permits that choice. A source perturbation can help investigate a recurring problem with the generator. Consider the permissions relevant to private critique or publication. `NSTD.6` can evaluate the candidate for either use.
 
 
 
@@ -172,55 +172,55 @@ For a franchise continuation, compare the generated scene with the selected cont
 
 | Illustrative condition | Consequence for use |
 | --- | --- |
-| Fluent output contradicts a required source relation. | Repair that relation or narrow the proposed use. |
-| Needed source relations are present, but a consequential reading remains ambiguous. | Use a targeted recovery probe or clarify the wording. |
-| The inspected result supports the intended use at an acceptable cost. | Use it; no separate generation dossier is required. |
+| Fluent output contradicts a required source relation. | Identify the conflict. For the proposed use, repair it or restrict the use to what remains valid. |
+| The source relations are expressed and a consequential reading remains ambiguous. | Report the ambiguity. For a claim about a particular reading, use the available response or a suitable new probe. Clarify the wording if the intended use requires it. |
+| Inspection supports the intended use at acceptable cost. | Return or use the account under the established conditions. |
 | A method improvement is claimed. | Compare versions under the same relevant conditions, including protected characteristics. Repeated or heterogeneous probes support only the generality they actually test. |
 
 
 
 
-#### NSTD.7:5.6 - FPF owner teaching
+#### NSTD.7:5.6 - Inspect a generated explanation, recap, game or analysis
 
 
-`NSTD.7` connects content planning, realization and evaluation. A generated account has claims conveyed by a particular expression; its fluency alone does not establish those claims. Use `C.2.8` for reader recovery, the relevant subject grounds for evidence claims, and `B.3` for actual named assurance claims. Use `A.10` when a source-to-use account is implicit or must remain replayable. `C.35` is restricted to generated or discovered results intended to inform architecture work. Source changes and changed generator behavior can reopen an earlier comparison.
+Content planning, realization and inspection answer different questions. Inspect which claims the generated expression conveys. Use `C.2.8` for the selected structure a particular reader can correctly recover. Use subject grounds for evidence, `A.10` for an implicit source-to-use account or one that must remain reproducible, and `B.3` for a specified assurance claim. Use `C.35` when the generated material is intended to inform architecture work. Reconsider the affected comparison when its source or the generator’s behaviour changes in a consequential way.
 
-An LLM drafts an explanation of FPF pattern use from notes. Compare its selected relations, order and returns with those notes and the applicable pattern content. `NSTD.6` can assess the candidate immediately; if the necessary subject basis is missing, it leaves that amount unassigned while retaining independently supported defect findings. An absent generation journal does not erase visible product qualities or defects.
+An LLM drafts an explanation of FPF pattern use from notes. Compare its selected relations, ordering and source returns with the notes and the applicable patterns. Use `NSTD.6` to assess the draft. If the necessary subject or reader basis is missing, leave the structural amount unassigned and report any defect that inspection does establish. To establish how it was produced, use pertinent records, version history or another qualified account of the work. If those grounds are missing, report the historical limit.
 
-A graph-to-text system turns an event graph into a match recap. The event graph, source timestamp, uncertainty markers, and official-result refresh route are admitted source basis for this rendering. If the system adds causal explanations not in the graph, those claims are not admitted by graph-to-text success. Repair by lowering causal language, adding source return, or opening the evidence owner.
+A graph-to-text system produces a match recap. The event graph, timestamps, uncertainty markers and official results can establish the documented sequence and when to refresh it. If the recap attributes a goal to a cause absent from the graph, identify the gap. Report the sequence and what remains open, or obtain evidence of the cause when the question needs it.
 
-A game story-planning pipeline generates a branching scene. The schema may require objective, location, actors, traits, constraints, and available actions. `NSTD.7` treats those fields as method and source-plan support, not as proof of playable, coherent, or ethically acceptable narrative. Structural, semantic, executable, and human probes remain separate from fluency.
+A game system generates a branching scene. The schema specifies its objective, location, actors, traits, constraints and available actions. Check required fields for format, the scene for continuity and the intended action for reachability in the engine when it must run. To report a player’s experience, use relevant observations. Evaluate any ethical concern under the conditions it raises.
 
-An LLM proposes themes from interview notes for qualitative narrative analysis. The generated theme list is not the researcher's interpretation by default. Human interpretive agency remains live: the researcher checks source excerpts, reflexive stance, alternative readings, and admissible use before any narrative rendering or report uses the generated material.
+In a NITA study, an LLM proposes themes from interview notes. The human researcher considers their own standpoint, reads excerpts, tests proposed themes against alternatives and decides what the report supports at the individual-case, cross-case or dataset level in question. Their interpretation and its limits are the result used in the report.
 
 Use these examples to distinguish evaluation from acceptance:
 
 | Generated account | Current evaluation or use decision | Reason |
 | --- | --- | --- |
 | A fluent summary with an unknown source. | Assess visible narrative defects; leave source fidelity unresolved. | The source relation cannot yet be compared. |
-| A graph-to-text candidate with event IDs and a stated order. | Evaluate through `NSTD.6`, then use or repair it. | Its needed relations and losses can be inspected without prior acceptance. |
+| A graph-to-text candidate with event IDs and a stated order. | Identify the sequence the text presents. If the source is available, compare it with the graph to establish what was preserved or lost. | The draft can be inspected before acceptance. Without adequate source evidence, leave fidelity open. |
 | A schema-valid RPG scene contradicting a selected continuity constraint. | Unsuitable for that source-faithful use until repaired. | Field validity does not establish continuity. |
 | An FPF seminar outline with source references and reconstruction tasks. | Evaluate its teaching route through `NSTD.8` and `NSTD.6`. | Product quality and actual learning-effect claims use different evidence. |
-| A homotopy metaphor with an unstated analogy limit. | Diagnose the missing condition and clarify it. | An intuitive explanation can be evaluated before it is fit for proof-related reliance. |
+| A homotopy metaphor with an unstated analogy limit. | Identify the omitted formal condition. Clarify it if the account must support proof-related use. | An intuitive reading and a mathematical proof require different grounds. |
 
 
-When claiming improvement from automated repair, retain the compared versions or changed spans, the relevant quality results, protected trade-offs, and any costs or risks that affect the claim or continuing use. Keep prompt or method changes when the comparison, continuing workflow or a claim about the repair process needs them. A one-off correction can finish with the changed passage and its source comparison. A variant can be more fluent and still worse on epiplexity, source return or agency discipline.
+For an improvement claim, retain the versions or spans compared, the relevant `NSTD.6` results, protected qualities and material costs or risks. Keep the changed prompt or method when it bears on the comparison, a continuing workflow or a claim about how the repair was performed. A single correction can be settled by comparing the changed passage with its source. Greater fluency can coincide with less recoverable structure, a lost source return or a mistaken attribution of agency.
 
-Pipeline variants by source type:
+The source and intended use affect which plan and comparison will help.
 
-| Source type | Content plan | Discourse or story plan | Admission danger | Evaluation focus |
+| Source type | Content to select | Order or story plan | Mistake that changes the use | What to evaluate |
 | --- | --- | --- | --- | --- |
 | Knowledge graph or event graph | Select nodes, edges, event ids, uncertainty, and omissions. | Choose traversal, grouping, and return links. | Treating graph coverage as semantic truth. | Epiplexity, ordering recoverability, relation strength. |
 | Architecture source pack | Select structures, candidate trade-offs, decisions, telemetry, and residual exceptions. | Use decision-memory or trade-off route. | Treating generated explanation as architecture decision or assurance. | Structural-information capture, correspondence, source return. |
-| Fictional canon or source pack | Select canon constraints, premise, agency, continuity, and non-use boundary. | Use causal plot plus reveal order. | Treating private generated scene as authorized continuation. | Continuity, character agency, causal support, rights boundary. |
+| Fictional canon or source material | Select the relevant premises, character agency, continuity constraints and conditions of use. | Choose a plot and an order of disclosure suited to the story. | Assuming permission to publish from permission for private critique. | Continuity, character agency, support for the selected events and the scope of rights. |
 | Teaching source spine | Select concepts, dependencies, examples, counterexamples, tasks. | Use didactic prerequisite route with repeated anchors. | Treating generated outline as source framework. | Reconstruction tasks, learning-route quality, source-return readiness. |
-| Qualitative notes or interviews | Select excerpts, themes, alternative readings, reflexive stance. | Use analysis narrative with traceable source excerpts. | Treating generated theme as researcher judgment. | Human interpretive agency, source traceability, ethical boundary. |
+| Interviews used in NITA | Select excerpts, tentative themes, alternative interpretations and the researcher’s standpoint. | Develop the report with traceable excerpts. | Attributing an LLM proposal to the researcher as an accepted interpretation. | The human researcher’s interpretation, the source relations and the ethical conditions. |
 
-If a pipeline variant requires a source type not covered by the current source pack, mark the case as a source-refresh trigger rather than silently generalizing. A graph-to-text claim, for example, may require a more specific graph-to-text source than a general NLG survey. A game narrative pipeline may need executable or playability probes that a plain text-generation source does not supply.
+When applying a generation method to a new type of material, check whether the available source covers that use. For a graph-to-text claim, a particular method or study may supply grounds a general NLG survey leaves open. An engine may require executable or playability checks absent from text-generation research. If the question remains open, seek the missing evidence or state the scope the present sources support.
 
 ### NSTD.7:6 - Bias-Annotation
 
-Fluency can conceal a missing condition or invented cause. Inspect the relation that matters to the reader, rather than inferring source fidelity from style. The opposite error is to require a complete production dossier before evaluating an observable defect. Select additional checks from the claim and consequence, and keep candidate evaluation available throughout drafting.
+Inspect the relation that matters to the reader. A visible continuity error can be established directly from the candidate and canon even when its production history is unavailable. A fluent passage may still assert an unsupported cause. Choose additional checks for the particular claim and its consequences.
 
 ### NSTD.7:7 - Conformance Checklist
 
@@ -229,26 +229,26 @@ Fluency can conceal a missing condition or invented cause. Inspect the relation 
 | `CC-NSTD7-1` | The generated account is compared with the source relations or constraints needed for its intended use. |
 | `CC-NSTD7-2` | Candidate evaluation can inform use, repair or rejection. `C.35` is selected only for a result entering architecture work. |
 | `CC-NSTD7-3` | Source plan, plot or event plan, schema constraints, and generation method are named when relied on. |
-| `CC-NSTD7-4` | Fluency, coherence, controllability, schema compliance, and story planning do not become authority, evidence, or admission. |
-| `CC-NSTD7-5` | Responsibility and permission are established when the proposed use needs them; a generated assertion does not supply that authority. |
+| `CC-NSTD7-4` | Fluency, coherence, controllability, schema validity and planning have criteria appropriate to those properties. Claims about evidence, authorization or admission have their own grounds. |
+| `CC-NSTD7-5` | When a use requires responsibility or permission, establish the applicable assignment or authorization and its terms. |
 | `CC-NSTD7-6` | An improvement claim identifies the compared versions or changed part and is supported by `NSTD.6` re-evaluation, with relevant costs, risks and protected qualities considered. An already-scoped one-off comparison can be sufficient; `E.22` frames an unresolved improvement question and `E.23` supports repeated improvement. |
 
 ### NSTD.7:8 - Common Anti-Patterns and How to Avoid Them
 
 | Anti-pattern | What fails | Repair |
 | --- | --- | --- |
-| Fluency as fidelity | A needed source relation is not inspected. | Compare source and output, diagnose through `NSTD.6`, then repair or restrict the use. |
+| Fluency as fidelity | A necessary source relation was omitted or changed. | Compare the source and output. Report the loss or repair it for the intended use. Use `NSTD.6` when quality for that use is in question. |
 | Schema compliance as source fidelity | The story satisfies a schema but changes a required source relation or constraint. | Compare and repair the changed relation directly; use `NSTD.6` for narrative quality. `C.34` applies to architecture-specific preservation, `C.2.8` to reader-relative structural amount, and `C.33` to architecture-description adequacy. |
-| Generated permission as authority | A tool's wording is taken to authorize a consequential action. | Establish the applicable assignment or decision authority independently of that wording. |
+| Treating a statement of permission as a grant | Wording in a draft is used to authorize consequential action. | Establish the issuer, scope and terms of the decision the wording purports to convey. |
 | Regeneration as improvement | Another fluent variant is treated as an improvement without a supported comparison. | Compare the candidate and previous version through `NSTD.6`, keeping needed relations and costs in view. Use `E.22` for an unresolved comparison question and `E.23` when repeated improvement is wanted. |
 
 ### NSTD.7:9 - Consequences
 
-The benefit is automated drafting with a tractable source comparison and repair cycle. Its cost depends on the relations and consequences being checked; a small adequate account can be retained without a separate dossier.
+Automated drafting can save time while retaining a manageable comparison with the source. The work needed to inspect or repair an account depends on which loss would matter to its use. A small adequate account can be returned directly.
 
 ### NSTD.7:10 - Rationale
 
-Planning makes selected content and order available for control; inspecting the resulting narrative checks whether that control succeeded. Evaluation therefore belongs inside the generation cycle and can support a later acceptance decision.
+A plan specifies intended content and order. Comparing the resulting narrative with that plan establishes where they agree or differ. To explain the plan’s contribution to generation, examine evidence of how the tool or author used it. Inspection can settle its own question or inform acceptance or further drafting.
 
 ### NSTD.7:11 - SoTA-Echoing
 
@@ -257,25 +257,25 @@ Planning makes selected content and order available for control; inspecting the 
 #### NSTD.7:11.1 - Operational comparison against domain vocabulary
 
 
-Narratology distinguishes story, discourse and presentation; generation methods distinguish selected content, its order and its realization. Use these distinctions to locate a defect: omitted material, misleading sequence, unsupported relation or wording. A tool may combine these operations internally, so evaluate the output without inventing a production history.
+Narratology distinguishes story, discourse and presentation. Generation methods distinguish content selection, ordering and realization. Use these distinctions to locate an omission, misleading sequence, unsupported relation or consequential wording choice. A tool can combine the operations internally. Inspect the resulting account and use evidence of execution when the question concerns how the tool produced it.
 
-Keep domain terms when they help select or repair the operation. Resolve an ambiguity where it changes the claim or intended use; another FPF pattern is useful only if its particular question is at issue.
+Keep a domain term when it helps identify or repair the operation. If an ambiguity affects the claim or use, resolve it directly or use the FPF method for the remaining question.
 
-Gatt and Krahmer's [NLG survey](https://arxiv.org/abs/1703.09902) (2018) distinguishes planning and realization. Alabdulkarim, Li and Peng's [story-generation survey](https://aclanthology.org/2021.nuse-1.8/) (2021) reviews controllability, commonsense, characters and evaluation limits. Cardona Rivera, Jhala, Porteous and Young's [narrative-planning review](https://ojs.aaai.org/index.php/ICAPS/article/view/31509) (2024) examines plan-based narrative methods. Kumaran, Rowe, Mott and Lester's [SceneCraft](https://ojs.aaai.org/index.php/AIIDE/article/view/27504) (2023) generates interactive scenes from author instructions; Rahman, Yu and Cho's [G-KMS](https://www.mdpi.com/2079-8954/14/2/175) (2026) tests structured generation, repair and execution in a compact Unity RPG setting. Ma et al.'s [survey](https://aclanthology.org/2026.eacl-srw.39/) (2026) identifies continuing coherence, consistency, diversity, control and evaluation problems. Nguyen-Trung and Nguyen's [NITA](https://doi.org/10.1080/14780887.2026.2638348) (2026) assigns interpretive judgement to the researcher in its qualitative-analysis method. These contributions support different operations and conditions, not one compulsory workflow for every narrative.
+Gatt and Krahmer’s [NLG survey](https://arxiv.org/abs/1703.09902) (2018) distinguishes planning from realization. Alabdulkarim, Li and Peng’s [story-generation survey](https://aclanthology.org/2021.nuse-1.8/) (2021) examines control, commonsense, characters and evaluation. Cardona Rivera, Jhala, Porteous and Young’s [narrative-planning review](https://ojs.aaai.org/index.php/ICAPS/article/view/31509) (2024) covers plan-based methods. Kumaran, Rowe, Mott and Lester’s [SceneCraft](https://ojs.aaai.org/index.php/AIIDE/article/view/27504) (2023) generates interactive scenes from instructions. Rahman, Yu and Cho’s [G-KMS](https://www.mdpi.com/2079-8954/14/2/175) (2026) tests structured generation, repair and execution in a compact Unity RPG. Ma et al.’s [survey](https://aclanthology.org/2026.eacl-srw.39/) (2026) identifies problems in coherence, character consistency, diversity, plot control and evaluation. Nguyen-Trung and Nguyen’s [NITA](https://doi.org/10.1080/14780887.2026.2638348) (2026) gives the human researcher responsibility for interpretive judgement in its qualitative-analysis method.
 
-Operational payload:
+Use these contributions for the question they address.
 
-- From NLG, keep content planning, discourse planning, and realization separate. If a tool returns only final prose, inspect its source relation and ordering; reconstruct a plan when it helps repair or reproduce the result. A present-product judgement does not establish the tool's hidden production history.
-- Story-generation surveys motivate testing the characteristics that matter to the output's use, including coherence, control or diversity. Their findings do not create a universal admission form.
-- A plot or event plan guides generation. Compare the realized story with its intended goals and constraints rather than infer success from the plan.
-- For an output that must execute in an engine, inspect parsing, state reachability and relevant semantic constraints. A successful schema check alone leaves other narrative qualities untested.
-- From interactive game generation, executable or playability probes may be needed when the narrative must function inside an engine or workflow; text fluency alone is the wrong evidence.
-- In the NITA method, the qualitative researcher interprets proposed themes in relation to excerpts, questions and alternatives. Preserve that responsibility when using this method; it is not a claim that all automated narratives require a human interpreter.
+- Distinguish content planning, discourse planning and realization. For final prose, inspect its source relations and order. Recover the plan when it helps explain, repair or reproduce the result. To report what happened during generation, seek evidence of that work.
+- Select the characteristics the proposed use needs, such as coherence, controllability or diversity, and examine the output under those criteria.
+- Use a plot or event plan to guide generation. Compare the resulting story with its goals and constraints to see how far the plan was realized.
+- For a scene that must execute, check parsing, state reachability and the semantic constraints that matter in the engine.
+- For technical playability, use a suitable execution test, exhaustive check of the applicable state model or existing play evidence to establish the reachable actions in question. For how a player experienced the scene, use evidence of the player’s response.
+- In NITA, the human qualitative researcher interprets the tool’s tentative themes in relation to excerpts, the question and alternatives. Preserve that contribution when using NITA.
 
-The practical consequence is to preserve the speed of automated drafting while examining the particular relations, constraints and outcomes on which the receiving use depends.
+Use the comparison to decide whether the particular narrative serves the requested purpose. Keep unresolved claims within their evidenced limits.
 
 ### NSTD.7:12 - Relations
 
-Uses `G.2`, `C.35`, `A.6.3.NAR`, `C.2.8` for structural amount, `C.33` for architecture-description adequacy, `C.34`, `NSTD.6`, `A.19.ECS`, `C.16`, `E.22`, `E.23`, `A.10`, `B.3`, `D.1` through `D.5`, and `G.11`. `E.22`/`E.23` use the evaluated version, changed part and relevant `NSTD.6` results; a retry is an improvement only when comparison supports that conclusion. `C.35` applies when the result informs architecture work; `C.34` to architecture-specific preservation; `G.2` to SoTA harvesting and synthesis across traditions. Reopen when the selected material, generator, method, schema, intended use, evaluation result or relevant research changes. Support-map entry: open `Source Use And Refresh Map` when generation, NLG, story-planning, schema, or source-pack claims are relied on; open `NSTD.Reference:11 — Working meanings and direct source returns` when generated source plan, plot plan, schema constraint, admission, correspondence, or responsibility words blur object kinds; open `Semiotic And Language-Precision Bridge` when prompt output changes language state, coarsening, cue, or quality wording.
+Uses `G.2`, `C.35`, `A.6.3.NAR`, `C.2.8`, `C.33`, `C.34`, `NSTD.6`, `A.19.ECS`, `C.16`, `E.22`, `E.23`, `A.10`, `B.3`, `D.1` through `D.5` and `G.11`. `C.2.8` gives the common structural amount, `C.33` architecture-description adequacy, `C.34` architecture-specific preservation and `C.35` the use of generated material in architecture work. Use `G.2` to synthesize SoTA across traditions. For an improvement comparison under `E.22` or `E.23`, identify the versions, change and relevant `NSTD.6` results. Reconsider a finding when changed material, generator, method, schema, use, evidence or research affects what it supports. See the Source Use And Refresh Map for generation and source claims, `NSTD.Reference:11` for the meaning of plan, constraint, admission, correspondence and responsibility, and the Semiotic And Language-Precision Bridge for a change of language state, coarsening, cue or evaluative wording.
 
 ### NSTD.7:End

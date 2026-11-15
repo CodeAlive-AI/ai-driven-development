@@ -136,7 +136,7 @@ Each argument below is declared separately for Select and SelectEligibility, exc
 | Argument | comparisonBasis | Finite set of binary CPM Compare application references, each with its left/right pair, realized eligibility and own output binding or explicit absence | ByValue set; 1 |
 | Argument | requiredComparisons | Finite set of required binary comparisons derived from the candidates, criteria and effective policy, including direction/comparator distinctions that affect selection | ByValue set; 1 |
 | Argument | tokenProvenance | Mapping from every consumed token to at least one producing CPM output binding in comparisonBasis | ByValue; 1 mapping |
-| Argument | claimScope | U.ClaimScope delimiting candidate universe and selection use | ByRef; 1 |
+| Argument | claimScope | `U.ClaimScope` for claims about comparability and selection under the specified conditions. `CandidateSetSlot` binds the candidates considered in this application. | ByRef; 1 |
 | Argument | selectedSlices | Set of selected U.ContextSlice members of claimScope under A.2.6 | ByValue set of references; 1 set |
 | Argument | characteristicPredicate | A.19 CharacteristicSpacePredicate basis shared as required with the relevant CPM members | ByValue; 0..1, explicitly absent when none governs the use |
 | Argument | referenceScheme | `EpistemeInterpretationScheme` (C.2.1:4.1.2), governing this selection | ByRef through C.2.1 SchemeDesignation; 1 |

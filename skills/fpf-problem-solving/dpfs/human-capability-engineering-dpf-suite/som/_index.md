@@ -39,35 +39,35 @@ Original framework text: © 2026 Anatoly Levenchuk, [CC BY 4.0](https://creative
 
 ## Practical entries
 
-These are selected examples of use. Bring the movement and question you actually have. Use the Table of Contents to find a pattern when none of these examples fits.
+Bring the movement and the question or skill you want to work on. The examples offer starting points. Consult the Table of Contents for other uses.
 
-You can ask an assisting agent: “Explain this and give me comments in the language of my work, without framework jargon.” The agent works from your descriptions and observations, including what you feel and do. Choosing an unfamiliar exercise requires appropriate movement instruction.
+An agent can help interpret a description, compare observations or formulate a question in the language of your practice. If you performed the movement, you can describe what you felt and did. Other observers may supply evidence about the movement and its result. Obtain suitable movement instruction for an unfamiliar exercise.
 
 ### DISCERN — An instruction names a change you cannot distinguish
 
 - **Situation:** You know the movement's purpose but cannot tell what bodily difference an instruction refers to.
 - **Question:** What comparison would let you notice the required bodily difference?
-- **First useful result or blocker:** A bodily difference you can notice again, with the conditions that made it distinguishable, or an identified need for support or instruction.
+- **First useful result or blocker:** A difference you can notice again, with the conditions that made it distinguishable, or a finding about what is missing, such as suitable support or instruction.
 - **Start with:** [SOM.2](10-som-2---make-a-bodily-change-distinguishable.md), using the working question from SOM.1.
-- **Stop or return:** A noticed difference is not yet controlled movement. Continue with the missing regulation or return to the task if the distinction changes no useful action.
+- **Stop or return:** Noticing the difference and controlling it are separate results. Return to the task if noticing it answers the question or the distinction has no further use there. Work on regulation when the movement requires control the performer still lacks.
 
-The following entries show connected uses across several patterns. Follow a branch only when its contribution is missing; an available skill need not be relearned to complete a sequence.
+The following entries combine several patterns. Use the contributions you need and retain skills already available for the movement.
 
 ### COORDINATE — Make a correction work during the whole action
 
 - **Situation:** A correction works in preparation, but applying it interrupts the movement or another required action.
-- **Question:** What must be learned or changed so the correction can participate in the whole?
-- **First useful result or blocker:** A model of the failed interval and a suitable next attempt addressing the missing distinction, regulation or combination.
+- **Question:** What supports or interrupts the correction during the whole movement? Which change, if any, does the task require?
+- **First useful result or blocker:** An account of the failed interval. If another attempt is needed, identify a suitable attempt that addresses the missing distinction, regulation or coordination.
 - **Start with:** [SOM.1](09-som-1---model-the-bodily-contribution-to-a-movement.md) to locate the failed interval and connect experience, attempted change and result. Use SOM.2 for a missing distinction, SOM.3 for unavailable regulation, or [SOM.4](12-som-4---build-and-recall-a-coordinated-bodily-change.md) when available contributions interrupt one another. Preserve what must continue, then return to the whole action.
 - **Stop or return:** Retain a simpler effective task cue. Reopen the model when a bodily improvement fails to produce the required action.
 
 ### TRANSITION — Keep coordination through changing support
 
 - **Situation:** The action works on either side of a support change but fails during the transition.
-- **Question:** Which changing relation must be learned together with the continuing action?
-- **First useful result or blocker:** A usable part of the transition with its conditions, or an identified missing response, cue or observation.
-- **Start with:** [SOM.5](13-som-5---adapt-bodily-coordination-to-changing-support-and-lo.md): retain the support change, find a performable portion, extend it and join the portions in motion before restoring the whole action. Use SOM.1 when the proposed relation fails, and SOM.2–SOM.4 for a missing distinction, regulation or combination.
-- **Stop or return:** Endpoint success and paused or slowed preparation do not establish the required transition. Obtain domain instruction when a suitable response remains unknown.
+- **Question:** Which relation changes during the continuing action? Does the performer need to learn a response under those conditions?
+- **First useful result or blocker:** An account of what happened during the support change, a usable portion under stated conditions, or a finding about a missing response, cue or observation.
+- **Start with:** [SOM.5](13-som-5---adapt-bodily-coordination-to-changing-support-and-lo.md) to examine the transition. When the performer needs to learn it, retain the support change, extend a performable portion and join portions in motion before restoring the whole action. Use SOM.1 when the proposed relation fails, and SOM.2–SOM.4 for a missing distinction, regulation or combination.
+- **Stop or return:** To establish the required transition, use observations made under the necessary conditions. Endpoint results and slowed or paused preparation are evidence for those narrower tasks. Seek suitable instruction if the task requires a response the performer does not yet know.
 
 ---
 

@@ -13,7 +13,7 @@ The governed object is the community's joint undertaking to obtain, qualify and 
 
 **What changes in practice:** people can obtain and improve reusable help instead of repeatedly discussing the same difficulty. Differences and failed attempts shape the result; later users can find its applicable conditions and request a correction.
 
-Use ordinary help through CB.5 when a known answer resolves one person's case. Use HCD when the method is sufficiently known and the current need is for someone to learn it. A missing permission or unavailable resource may require its owner rather than development of a new method. Continue here when there is useful joint work on the repertoire itself.
+Use ordinary help through CB.5 when a known answer resolves the case at hand. Use HCD when the method is sufficiently known and a person needs to learn it. A missing permission or unavailable resource may require its owner rather than development of a new method. Continue here when there is useful joint work on the repertoire itself.
 
 ### CB.14:2 - Problem
 
@@ -44,9 +44,9 @@ Ask practitioners to show the situation in which their present approach is insuf
 
 State the question as a change someone could use. “Help a receiving repairer recognise which case needs specialist investigation” is more useful than “improve knowledge sharing”. Identify who needs that result and what they would do differently. A request from an organiser still needs comparison with the practitioners' work.
 
-First look for a sufficient existing answer. Ask the person with relevant experience, recover the applicable guidance and compare its conditions with the case. C.39.RP and A.3.1.DR help recover the repertoire and its source meanings when the needed material is scattered or unclear. If an existing answer suffices, return it through CB.5 and stop the development proposal.
+First look for a sufficient existing answer. Look for applicable guidance or an account from a practitioner with relevant experience. Compare the conditions of the answer with the case. C.39.RP and A.3.1.DR help recover the repertoire and its source meanings when the needed material is scattered or unclear. If an existing answer suffices, return it through CB.5 and stop the development proposal.
 
-Separate the remaining difficulty. The instruction may be incomplete; the method may fail under a changed condition; a person may need practice; or an organisational condition may prevent competent work. These can coexist, but their recipients differ. Return a learning need to HCD, an assignment or support problem to its owner through OCE, and a reusable method question to ME.
+Separate the remaining difficulty. The instruction may be incomplete; the method may fail under a changed condition; a person may need practice; or an organisational condition may prevent competent work. These can coexist, but their recipients differ. Use HCD when a person needs to develop a capability. Take an assignment or support problem to its owner through OCE, and a question about a reusable method to the [method developer in §4.4](24-cb-14---develop-and-maintain-a-shared-repertoire-of-practice.md#cb1444---obtain-a-usable-method-contribution).
 
 If an explanation or effect remains unknown, use RMP.1 with the exact question and current source answer. It first tests whether existing material is sufficient. Research follows only when the unresolved question, non-routine choice, inspectable criticism and communicable result conditions hold. An unfamiliar question or an intended data collection exercise alone does not establish that need.
 
@@ -54,7 +54,7 @@ If an explanation or effect remains unknown, use RMP.1 with the exact question a
 
 When the question brings together practitioners who do not already share a working group, first recover whose experience and interests the comparison needs. Ask participants to describe a concrete practice, what counts as success for them and which conditions constrain it. Use those accounts to find a missing participant or consequential contrast. A nominated representative may know one group's usual practice while missing differences within it; seek those accounts before treating the group's view as settled.
 
-Compare the proposed development question with these accounts. A sponsor's initial question can omit the conditions under which a proposed practice would be usable. Revise the question and comparison with the participants when their contributions warrant it. If the revision changes an agreed purpose or commitment, obtain that change through its actual decision arrangement in CB.13; until then, preserve the authorized boundary. Interviews, diagrams and direct observation are useful where they expose a difference that the discussion has left invisible.
+Compare the proposed development question with these accounts. A sponsor's initial question can omit the conditions under which a proposed practice would be usable. Revise the question and comparison with the participants when their contributions warrant it. If the revision changes an agreed purpose or commitment, obtain that change through the applicable decision arrangement in CB.13; until then, preserve the authorized boundary. Interviews, diagrams and direct observation are useful where they expose a difference that the discussion has left invisible.
 
 
 When participants want to learn from contrasting practice, agree which dimensions matter to their work. Select several that can reveal distinct strengths or limitations, such as recoverability of a case account, effort spent obtaining missing information and usefulness of the returned explanation. Explain what each observation means and use comparable cases where possible.
@@ -80,17 +80,17 @@ Select the undertaking from the wanted result, available time and skills, and th
 
 Writing can be shared, or one person can prepare drafts from practitioners' accounts. Choose from the available time and skills. A commissioned writer can make progress while practitioners retain responsibility for checking whether the account describes their work and answers their question.
 
-For a project, establish its purpose, scope, participants, resource provision, intermediate returns and completion condition through the community's actual decision arrangement in CB.13. Include the people who will judge and use the result. A group may propose the work from below; the needed mandate and commitments still have to be obtained.
+For a project, establish its purpose, scope, participants, resource provision, intermediate returns and completion condition through the community's actual decision arrangement in CB.13. Include those who will judge and use the result. A group may propose the work from below; the needed mandate and commitments still have to be obtained.
 
-Obtain the time and access from their real owners. Use OCE.6 for assignments and enabling conditions, OCE.11 when this work overlaps with continuing commitments, and OPS.5 when a provider must decide whether to admit the work. An interested employee cannot commit an employer's time merely by volunteering in the community.
+Obtain time and access from those who can grant them. Use OCE.6 for assignments and enabling conditions, OCE.11 when this work overlaps with continuing commitments, and OPS.5 when a provider must decide whether to admit the work. An interested employee cannot commit an employer's time merely by volunteering in the community.
 
 Agree useful intermediate contact. A draft, unresolved case or trial observation should reach practitioners early enough to alter development. Choose contact frequency from that purpose and the project's uncertainty. Regular reports of activity add little if the community cannot influence the result or obtain missing inputs.
 
 #### CB.14:4.4 - Obtain a usable method contribution
 
-Bring the cases, sources and disagreements to the people doing the method work. Preserve which claims are observations, participant interpretations, proposed explanations or established guidance. Recover the contribution and conditions of each serious option through A.3.1.QM before presenting it as suitable for a new use.
+Bring the cases, sources and disagreements to those doing the method work. Preserve which claims are observations, participant interpretations, proposed explanations or established guidance. Recover the contribution and conditions of each serious option through A.3.1.QM before presenting it as suitable for a new use.
 
-For a guide, work through the intended user's action: what makes the situation recognisable, what input is needed, what the person does with it, what result they inspect and when they continue or stop. A.3.2.DE supplies that construction and a trial of the description. Invite practitioners to identify a missing operation or a place where the author has relied on private knowledge.
+For a guide, work through the intended user's action: what makes the situation recognisable, what input is needed, what the user does with it, what result they inspect and when they continue or stop. A.3.2.DE supplies that construction and a trial of the description. Invite practitioners to identify a missing operation or a place where the author has relied on private knowledge.
 
 Keep disagreements attached to the claim they change. One participant may object to an instruction because it needs access unavailable at their site. Another may dispute the proposed explanation despite agreeing that the local workaround is useful. Obtain the missing condition, retain separate variants, narrow a claim or request the relevant investigation. A majority preference cannot resolve an empirical uncertainty.
 
@@ -98,7 +98,7 @@ When no available method supplies the needed result, give a capable method devel
 
 Obtain the qualification needed for the proposed use from A.3.1.QM and the relevant professional practice. A candidate can remain useful for further development while an unresolved condition prevents ordinary reliance. The community needs the developer's result and limits before deciding whether to adopt it.
 
-If the proposed improvement requires a change outside practitioners' control, state the particular change and its owner. CB.16 can obtain and carry a collective request; OCE can develop a change to an organisation. The community's guide should state the resulting condition that users actually have, including a still-unmet one.
+If the proposed improvement requires a change outside practitioners' control, state the particular change and its owner. CB.16 can obtain and carry a collective request; OCE can develop a change to an organisation. The community's guide should state which conditions users can rely on and which remain unmet.
 
 #### CB.14:4.5 - Try the contribution in the uses that matter
 
@@ -120,7 +120,7 @@ Choose how later users will find it. Put a recurring answer beside the question 
 
 Agree who can correct the material and what maintenance they can sustain. A.3.1.MV supplies the distinction between a changed method, a changed description, a local departure and a support change. Preserve the relevant applicability and evidence instead of treating every new file edition as a newly validated method.
 
-For adoption, obtain the receiving practice's decision and conditions. Learning a new way may require HCD; a changed assignment, tool or permission needs its owner. The returned repertoire offers a qualified option. Actual adoption and successful use remain observable later results.
+For adoption, obtain the receiving practice's decision and conditions. A method already known in the discipline may still be new to a member learning it. HCD can help when the aim is to develop a person's capability. To claim that the community has added a new method to the discipline's repertoire, identify the earlier ways examined and the repeatable operation that differs. A change of assignment, tool or permission needs its owner. The repertoire offers an option. Establish actual adoption and successful use from the receiving practice.
 
 The same resource can serve independent carriers who never join the community. Provide a usable explanation and conditions through an accessible publication or provider, and a feasible correction route where one can be maintained. Their use need not include a meeting, chat or public account of participation.
 
@@ -205,7 +205,7 @@ These questions justify reliance on the result. A few recurring difficulties are
 | Repeat a helpful clinic while the shared instruction remains missing. | Name the recurring gap and obtain a reusable contribution with an intended recipient. |
 | Publish the group's consensus as a proven method. | Preserve the proposed claim and obtain qualification or evidence for the use that depends on it. |
 | Rank unlike sites by one convenient total. | Compare meaningful dimensions and conditions; use the contrast to select an exchange or inquiry. |
-| Ask volunteers to produce a substantial resource in their spare time. | Obtain the actual commitment or reduce the work to what can be sustained. |
+| Ask volunteers to produce a substantial resource in their spare time. | Agree who will do the work and secure the time it needs. Reduce the scope if the available commitments cannot support it. |
 | Commission a polished document without practitioner involvement. | Have practitioners shape the question and inspect drafts against their work. |
 | Count a scheduled trial or favourable opinion as successful application. | Recover the performed use, result, support, departures and evidential reach. |
 | Keep an obsolete guide visible because no replacement is complete. | Qualify or withdraw the affected claim while preserving still-useful guidance. |
@@ -246,6 +246,6 @@ Reopen this selection when the recurring use changes, new evidence defeats a met
 - [A.3.1.WT (FPF A.3.1.WT:4)](../../../sections/05-part-a---kernel-architecture-cluster/24-a-3-1-wt---design-and-interpret-a-method-work-trial.md#a31wt4---solution) supplies trials. [A.3.1.CC (FPF A.3.1.CC:4)](../../../sections/05-part-a---kernel-architecture-cluster/25-a-3-1-cc---check-the-coherence-of-a-method-claim.md#a31cc4---solution), [A.3.1.FT (FPF A.3.1.FT:4)](../../../sections/05-part-a---kernel-architecture-cluster/26-a-3-1-ft---qualify-method-fit-and-transfer.md#a31ft4---solution) and [C.11.MV (FPF C.11.MV:4)](../../../sections/09-part-c---kernel-extension-specifications/25-c-11-mv---compare-the-worth-of-a-method-option.md#c11mv4---solution) supply coherence, fit or transfer, and practical-worth judgements respectively; [A.3.1.MV (FPF A.3.1.MV:4)](../../../sections/05-part-a---kernel-architecture-cluster/27-a-3-1-mv---construct-and-maintain-a-method-variant.md#a31mv4---solution) maintains the repertoire.
 - [RMP.1 (RMP.1:4)](../../rmp/31-rmp-1-decide-whether-a-question-needs-research-and-when-to-s.md#rmp14---solution) distinguishes a sufficient answer from a research contribution and returns the remaining question.
 - [OCE.11 (OCE.11:4)](../oce/33-oce-11---coordinate-organization-change-work-with-continuing.md#oce114---solution) supplies workable overlap with continuing commitments; [OPS.5 (OPS.5:4)](../ops/33-ops-5---admit-work-and-limit-starts.md#ops54---solution) supplies admission when an operating provider must accept the work.
-- **HCD** supplies the particular learning contribution needed to use a known method; **CB.10 and CB.11** connect observed value with continuation, transfer or ending.
+- **HCD** supplies a learning contribution when a person needs to acquire a known method; **CB.10 and CB.11** connect observed value with continuation, transfer or ending.
 
 ### CB.14:End

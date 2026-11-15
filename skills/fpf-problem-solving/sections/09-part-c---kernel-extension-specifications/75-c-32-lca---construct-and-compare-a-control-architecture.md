@@ -169,14 +169,14 @@ Start from the last time at which an action can still obtain the required conseq
 
 For a serial path with applicable upper duration bounds, a sufficient timing condition is
 
-\[
+$$
 t_{\mathrm{change}}+
 L_{\mathrm{detect}}+
 L_{\mathrm{deliver}}+
 L_{\mathrm{decide}}+
 L_{\mathrm{execute}}
 \leq t_{\mathrm{needed}}.
-\]
+$$
 
 Each bound must cover its whole contribution under the compared conditions. Periodic observation contributes the worst wait until the next observation as well as the observation work. A computation bound must include the resource arrangement under which it can be achieved. A decision bound must include the availability of a participant with the required authority.
 
@@ -267,32 +267,32 @@ Carry the change through its direct consumers. A new estimate can change the adm
 
 Consider a constructed discrete model, in normalized units,
 
-\[
+$$
 x_{k+1}=x_k+u_k,\qquad
 u_k=\tfrac12(r_k-x_k).
-\]
+$$
 
-The actuator condition is \(|u_k|\leq0.06\), and the state must remain in \([-1,1]\). The state is available without delay or error in this first case. The controller computation fits each update. These are premises of the example, not claims about a physical device.
+The actuator condition is $|u_k|\leq0.06$, and the state must remain in $[-1,1]$. The state is available without delay or error in this first case. The controller computation fits each update. These are premises of the example, not claims about a physical device.
 
-For a fixed target, the error contracts by one half per update. Nevertheless, if \(x_0=0.5\) and a planner immediately applies \(r_0=0.7\), the commanded input is \(0.1\), outside the actuator limit. The separate tracking result did not qualify that reference change.
+For a fixed target, the error contracts by one half per update. Nevertheless, if $x_0=0.5$ and a planner immediately applies $r_0=0.7$, the commanded input is $0.1$, outside the actuator limit. The separate tracking result did not qualify that reference change.
 
-One alternative is to redesign the controller and planner together. Another candidate retains the controller and limits the applied target from the desired goal \(g_k\in[-1,1]\):
+One alternative is to redesign the controller and planner together. Another candidate retains the controller and limits the applied target from the desired goal $g_k\in[-1,1]$:
 
-\[
+$$
 r_k=x_k+\operatorname{clip}(g_k-x_k,-0.12,0.12).
-\]
+$$
 
-Here \(\operatorname{clip}(a,l,h)=\min(\max(a,l),h)\). Substitution gives
-\[
+Here $\operatorname{clip}(a,l,h)=\min(\max(a,l),h)$. Substitution gives
+$$
 u_k=\tfrac12\operatorname{clip}(g_k-x_k,-0.12,0.12).
-\]
-Thus the actuator condition holds. The next state lies between \(x_k\) and \(g_k\), so an initial state in \([-1,1]\) stays there. This establishes the stated discrete constraints for this model. It does not establish intersample physical safety or a prescribed arrival time.
+$$
+Thus the actuator condition holds. The next state lies between $x_k$ and $g_k$, so an initial state in $[-1,1]$ stays there. This establishes the stated discrete constraints for this model. It does not establish intersample physical safety or a prescribed arrival time.
 
-For the constant goal \(0.7\), the first three applied targets are \(0.62,0.68,0.7\); the corresponding inputs are \(0.06,0.06,0.04\), and the resulting states are \(0.56,0.62,0.66\). The limiter uses the loop's remaining action capability and returns a different progress forecast to the planner. It is a state-dependent governor construction, not a reason to add a new tracking layer.
+For the constant goal $0.7$, the first three applied targets are $0.62,0.68,0.7$; the corresponding inputs are $0.06,0.06,0.04$, and the resulting states are $0.56,0.62,0.66$. The limiter uses the loop's remaining action capability and returns a different progress forecast to the planner. It is a state-dependent governor construction, not a reason to add a new tracking layer.
 
-Now request \(x_2\geq0.68\) from \(x_0=0.5\). Under the actuator bound, even an arbitrary control law can increase the state by at most \(2(0.06)=0.12\), giving \(x_2\leq0.62\). That requirement is impossible under the stated model and limit. The next choice concerns the deadline, attained position or available actuation; faster planning alone cannot obtain it. The participant authorized to change the demanded result must receive this bound.
+Now request $x_2\geq0.68$ from $x_0=0.5$. Under the actuator bound, even an arbitrary control law can increase the state by at most $2(0.06)=0.12$, giving $x_2\leq0.62$. That requirement is impossible under the stated model and limit. The next choice concerns the deadline, attained position or available actuation; faster planning alone cannot obtain it. The participant authorized to change the demanded result must receive this bound.
 
-Change the governor's observation condition instead. Suppose the governor receives only \(\hat x_k\), with a qualified current bound \(|x_k-\hat x_k|\leq0.02\), while the local tracker retains the original state-based feedback law. Limiting \(|r_k-\hat x_k|\) to \(0.12\) would allow \(|r_k-x_k|=0.14\) and input \(0.07\). A sufficient repair is to limit \(|r_k-\hat x_k|\leq0.10\) and require \(r_k\in[-1,1]\). Then \(|r_k-x_k|\leq0.12\), while the original convex update preserves the state interval.
+Change the governor's observation condition instead. Suppose the governor receives only $\hat x_k$, with a qualified current bound $|x_k-\hat x_k|\leq0.02$, while the local tracker retains the original state-based feedback law. Limiting $|r_k-\hat x_k|$ to $0.12$ would allow $|r_k-x_k|=0.14$ and input $0.07$. A sufficient repair is to limit $|r_k-\hat x_k|\leq0.10$ and require $r_k\in[-1,1]$. Then $|r_k-x_k|\leq0.12$, while the original convex update preserves the state interval.
 
 The set of targets satisfying both conditions must be nonempty; it is nonempty here when the state lies in the interval and the stated estimate bound holds.
 

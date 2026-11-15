@@ -12,7 +12,7 @@ A sequence can be stored directly or through partial aggregates. A graph can be 
 
 The result is a representation with effective read and update operations, a meaning-preservation argument, and a cost comparison for the intended workload. The reader needs the object's relevant operations and elementary algorithm analysis.
 
-Keep the existing representation when it already serves the work affordably. Choosing what the subject model should describe is a separate task. Here the target distinctions are sufficiently known to ask how different representations support their computation; a discovered missing distinction returns to that formulation.
+Keep the existing representation when it serves the work affordably. Choosing what the subject model should describe is a separate task. Here the target distinctions are sufficiently known to ask how different representations support their computation; a discovered missing distinction returns to that formulation.
 
 ### CMP.10:2 - Problem
 
@@ -53,7 +53,7 @@ Keep consequential identity, multiplicity and ordering. A set removes duplicates
 
 #### CMP.10:4.3 - Construct operations from the representation's structure
 
-Choose a structure whose retained information makes the frequent operation cheaper. A sorted array supports binary search by repeatedly excluding one ordered half. A hierarchy of aggregates answers a range query by combining a small set of segments. Lists of actual neighbors avoid scanning absent graph edges.
+Choose a structure whose retained information makes the frequent operation cheaper. A sorted array supports binary search by repeatedly excluding one ordered half. A hierarchy of aggregates answers a range query by combining a small set of segments. Lists of neighbors avoid scanning absent graph edges.
 
 Derive each read and update from the invariant. For an update, identify every stored part whose meaning depends on the changed input, and restore it. Include shared summaries and the operations used to recover an original witness. CMP.3 supplies reuse and dependency reasoning when values are cached across computations.
 
@@ -73,7 +73,7 @@ Include invalidation and synchronization when shared updates are part of the wor
 
 #### CMP.10:4.5 - Compare alternatives at the receiving use
 
-Construct the simplest credible alternative, not only a slower version of the favored structure. Compare raw storage with a precomputed index, full retention with reconstruction, or a compact representation with an expanded one according to the actual operations.
+Construct the simplest credible alternative, not only a slower version of the favored structure. Compare raw storage with a precomputed index, full retention with reconstruction, or a compact representation with an expanded one according to the operations the workload requires.
 
 Require preservation of the needed answers before treating reduced cost as improvement. For a deliberate approximation, retain its qualified result and the loss it buys. Use the existing characterization, Pareto and improvement methods when choices trade storage, latency, update work and precision.
 
@@ -91,7 +91,7 @@ Reconsider the choice when the query mix, update pattern, output identity, data 
 
 Maintain a sequence of n integers with two operations: replace one element and return the sum of the first k elements. A raw array gives a constant number of word accesses for replacement and k additions for a prefix query. Precomputing every prefix sum makes queries constant-time, but a replacement can change all following prefix sums.
 
-For frequent interleaved queries and updates, build a balanced binary tree over consecutive segments. A leaf stores one element; each internal node stores the sum of its children's segments. Padding to a power of two with zero-valued leaves gives fewer than 4n nodes for n>0 and logarithmic height. Build the sums from the leaves upward in linear many additions.
+For frequent interleaved queries and updates, build a balanced binary tree over consecutive segments. A leaf stores one element; each internal node stores the sum of its children's segments. Padding to a power of two with zero-valued leaves gives fewer than 4n nodes for n>0 and logarithmic height. Build the sums from the leaves upward with O(n) additions.
 
 To replace an element, change its leaf and recompute every ancestor from its two children. To query a prefix, use a fully included segment's stored sum; ignore an excluded segment; at a partially included segment descend into its children. Only the boundary path is partially included, so at most a constant number of nodes per level are visited. Both operations take `O(log n)` additions/accesses, with integer bit costs counted separately.
 
@@ -101,9 +101,9 @@ If updates disappear and many queries remain, the simpler prefix array may be pr
 
 #### CMP.10:5.2 - Choose graph access by the question, retaining edge meaning
 
-For a directed graph with n vertices and m edges, a Boolean adjacency matrix supports a membership test by one entry lookup. Enumerating a vertex's outgoing neighbors scans n entries. Adjacency lists store actual neighbors; enumeration examines its outgoing degree many entries, while a plain-list membership test can require the same scan. A hash index adds another storage/update trade-off.
+For a directed graph with n vertices and m edges, a Boolean adjacency matrix supports a membership test by one entry lookup. Enumerating a vertex's outgoing neighbors scans n entries. An adjacency list stores one entry per outgoing edge. Enumerating those edges scans the list, and a membership test on a plain list can require the same scan. A hash index adds another storage/update trade-off.
 
-A traversal that marks each vertex once and enumerates its outgoing edges therefore takes `O(n+m)` accesses with lists, and up to `O(n²)` with a matrix, excluding construction and output. Repeated pair-membership questions on a dense graph can favor the matrix. The graph's mathematical identity alone does not choose the computational representation.
+A traversal that marks each vertex once scans its outgoing edges in `O(n+m)` accesses with adjacency lists. A traversal that scans each vertex’s row of a Boolean matrix to find its neighbors takes up to `O(n²)` accesses. Both bounds exclude construction and output. Enumerating distinct parallel edges requires a representation that preserves them. Repeated pair-membership questions on a dense graph can favor the matrix. The graph's mathematical identity alone does not choose the computational representation.
 
 Now attach numeric weights. If zero is used both for an absent edge and for an existing zero-weight edge, those two states become indistinguishable. For edges `0→1` with weight 0, `1→2` with weight 2 and `0→2` with weight 5, treating zero as absence deletes a path of cost 2 and leaves the apparent direct cost 5. Repair the representation with a separate presence indication or an absent value outside the admitted weights. Changing the shortest-path algorithm cannot recover an edge already discarded by its input representation.
 
