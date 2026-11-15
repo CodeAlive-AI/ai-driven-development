@@ -30,6 +30,12 @@ elapsed seconds.
 | ALERT | `alert_now` in two successive valid samples: segments >=60%; 30-second slope projects >=90% within 240 seconds; swap grows >=2 GiB in 60 seconds; or dispatch Critical (4) for 5 samples. Five consecutive critical samples enter ALERT directly. Return to CALM after `alert_now` is false for 60 seconds. | On alarming samples, freeze all tier-A units >=500 MiB by score (footprint + 4x 30-second growth), up to 64 decisions per sample. A unit resumed by the guard within 15 minutes is killed instead, at most one kill per 3 seconds. After 120 seconds from entering ALERT, while `alert_now` remains true, kill frozen units only, largest first, one every 30 seconds; continue freezing newly eligible units. |
 | EMERGENCY | `emergency_now` in two successive valid samples: segments >=80%, or the 30-second slope projects >=95% within 45 seconds. The first sample where this condition is false returns to ALERT. | Kill one unit, then re-evaluate on a fresh sample, at least 3 seconds after the prior kill. Order: frozen units by footprint; tier A >=300 MiB by score; tier B >=300 MiB only at segments >=88%; tier C >=300 MiB only at >=93%. A trend alone never opens B or C. |
 
+| Configuration key | Default | Rule |
+|---|---:|---|
+| `ALERT_TREND_MIN_PCT` | 45 | Current segments must meet this floor before the ALERT trend projection can trigger; 1..99 and below `ALERT_PCT`. |
+| `EMERGENCY_TREND_MIN_PCT` | 65 | Current segments must meet this floor before the EMERGENCY trend projection can trigger; 1..99 and below `EMERGENCY_PCT`. |
+| `RUNAWAY_MIN_MB` | One third of `hw.memsize` | Eligible owned processes at or above this footprint become tier A regardless of age or app-helper status. Agent runtimes and app main executables remain excluded. A positive MiB value overrides the machine-derived default. |
+
 Elapsed time alone never raises a level. ALERT freezes and repeat kills happen
 only on samples where `alert_now` is true. Invalid metrics or failed enumeration
 leave the level and counters unchanged and produce no action. After a freeze or
@@ -47,6 +53,8 @@ ALERT_TREND_PCT=90
 TREND_WINDOW=240
 EMERGENCY_PCT=80
 EMERGENCY_TREND_PCT=95
+ALERT_TREND_MIN_PCT=45
+EMERGENCY_TREND_MIN_PCT=65
 EMERGENCY_WINDOW=45
 SWAP_GROWTH_GIB=2
 CRITICAL_PRESSURE=4
@@ -54,6 +62,7 @@ CRITICAL_SAMPLES=5
 ALERT_HOLD_SECONDS=120
 FREEZE_MIN_MB=500
 TIER_MIN_MB=300
+RUNAWAY_MIN_MB=6144
 RECOVERY_SECONDS=60
 FREEZE_TWICE_WINDOW_SECONDS=900
 TIER_B_PCT=88
@@ -70,7 +79,7 @@ PROTECT=/Users/me/Library/SomeApp/*
 
 Only the current user's processes are enumerated. Footprint comes from `proc_pid_rusage(..., RUSAGE_INFO_V4)` / `ri_phys_footprint`, not RSS. Processes are sampled with libproc. The guard never touches itself, its ancestors or its own children (its notifier); system executable roots (`/System`, `/usr/libexec`, `/usr/sbin`, `/sbin`, `/Library/Apple`); `launchd`, `loginwindow`, `WindowServer`, `Finder`, `Dock`, `SystemUIServer`, `ControlCenter`, `NotificationCenter`; terminal emulators; `tmux`/`screen`; `sshd`/`ssh-agent`; recognized password managers and VPN clients; an `.app` bundle's main executable; or paths matching `PROTECT`.
 
-- **A, batch work:** younger than 30 minutes, outside `.app`, and not a recognized agent runtime. The unit is a PGID; only eligible tier-A members are signaled.
+- **A, batch work:** younger than 30 minutes, outside `.app`, and not a recognized agent runtime. The unit is a PGID; only eligible tier-A members are signaled. Otherwise eligible processes at or above `RUNAWAY_MIN_MB` (default one third of `hw.memsize`) are also tier A regardless of age or `.app` helper status. Agent runtimes and `.app` main executables remain excluded. Runaways are frozen in ALERT and are first in EMERGENCY kill order, largest footprint first.
 - **B, command-line work:** older command-line processes and agent runtimes (`claude`, `codex`, `devin`, `opencode`, `gemini`, `grok`, `cursor-agent`). Unit is one process.
 - **C, app helpers:** helpers inside an `.app` bundle; the app main executable is protected.
 
@@ -108,7 +117,7 @@ launchctl bootout "gui/$(id -u)" "$HOME/Library/LaunchAgents/com.local.mac-memor
 rm "$HOME/Library/LaunchAgents/com.local.mac-memory-guard.plist" "$HOME/bin/mac-memory-guard"
 ```
 
-The log defaults to `~/Library/Logs/mac-health/memory-guard.log`; every line starts with local ISO 8601 time and UTC offset. Metrics are recorded once a minute in CALM and once a second otherwise. Each level change records segment percentage, both trend projections and baseline ages, swap growth over 60 seconds, pressure streak and the active trigger flags. Decision and signal lines contain process name, pid, tier and footprint, never arguments or environment. Group decision names use the largest member. Notifications use `alerter` with a 30-minute timeout and a 30-second rate limit; at most one notifier window is open, and a newer message replaces an unanswered one. The state file defaults to `~/.local/state/mac-health/memory-guard.state` and stores pid, start seconds, start microseconds, PGID and freeze time for each process stopped by the guard. It is replaced atomically after signals. Entries must still match identity, owner, protection rules and stopped state on startup and every tick. `status` shows frozen process names. `resume --all` or `resume PGID` validates identity before SIGCONT. SIGTERM and SIGINT resume guard-frozen processes, clear state and exit.
+The log defaults to `~/Library/Logs/mac-health/memory-guard.log`; every line starts with local ISO 8601 time and UTC offset. Metrics are recorded once a minute in CALM and once a second otherwise. Each level change records segment percentage, both trend projections and baseline ages, both trend floors, swap growth over 60 seconds, pressure streak and the active trigger flags. Decision and signal lines contain process name, pid, tier and footprint, never arguments or environment; decisions also record `runaway=1` when applicable. Group decision names use the largest member. Notifications use `alerter` with a 10-minute timeout and a 30-second rate limit; at most one notifier window is open, and a newer message replaces an unanswered one. The state file defaults to `~/.local/state/mac-health/memory-guard.state` and stores pid, start seconds, start microseconds, PGID and freeze time for each process stopped by the guard. It is replaced atomically after signals. Entries must still match identity, owner, protection rules and stopped state on startup and every tick. `status` shows frozen process names. `resume --all` or `resume PGID` validates identity before SIGCONT. SIGTERM and SIGINT resume guard-frozen processes, clear state and exit.
 
 The test-only `run --test-metrics FILE --test-root PID` switches must be used together. The root must be one of the guard's own ancestors; candidates are limited to its descendants. Test mode ignores home config and consent. An explicit temporary `--config` can lower the floors, and `--test-tick-ms N` sets the test tick. The test runner uses fake metrics and children it starts itself:
 

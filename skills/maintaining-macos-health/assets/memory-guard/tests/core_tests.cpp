@@ -489,6 +489,89 @@ void classification_table() {
     facts.agent_runtime = true;
     assert(classify(facts) == Tier::b);
   }
+  facts = {};
+  facts.age_seconds = 40 * 60;
+  facts.footprint = 7 * kGiB;
+  facts.runaway_min = 6 * kGiB;
+  assert(classify(facts) == Tier::a);
+  facts = {};
+  facts.helper_in_app = true;
+  facts.footprint = 7 * kGiB;
+  facts.runaway_min = 6 * kGiB;
+  assert(classify(facts) == Tier::a);
+  facts = {};
+  facts.app_main = true;
+  facts.footprint = 7 * kGiB;
+  facts.runaway_min = 6 * kGiB;
+  assert(classify(facts) == Tier::protected_process);
+  facts = {};
+  facts.agent_runtime = true;
+  facts.footprint = 7 * kGiB;
+  facts.runaway_min = 6 * kGiB;
+  assert(classify(facts) == Tier::b);
+}
+
+// Trend projections below their current-segment floors stay inert.
+void calibrated_trend_floors() {
+  Config config;
+  assert(config.alert_trend_min_pct == 45);
+  assert(config.emergency_trend_min_pct == 65);
+  State alert_28;
+  decide(alert_28, sample(1, 20), nullptr, 0, config);
+  const Sample at_28 = sample(31, 28);
+  decide(alert_28, at_28, nullptr, 0, config);
+  assert(measure_trend(alert_28, at_28, config.trend_horizon,
+                       kAlertSlopeWindowSeconds).projected_pct >= 92);
+  assert(!alert_now(alert_28, at_28, config));
+
+  State alert_33;
+  Sample base_33 = sample(1, 201);
+  base_33.segment_limit = 800;
+  decide(alert_33, base_33, nullptr, 0, config);
+  Sample at_33 = sample(31, 264);
+  at_33.segment_limit = 800;
+  decide(alert_33, at_33, nullptr, 0, config);
+  assert(measure_trend(alert_33, at_33, config.trend_horizon,
+                       kAlertSlopeWindowSeconds).projected_pct >= 96);
+  assert(!alert_now(alert_33, at_33, config));
+
+  State alert_50;
+  Sample base_50 = sample(1, 179);
+  base_50.segment_limit = 400;
+  decide(alert_50, base_50, nullptr, 0, config);
+  Sample at_50 = sample(31, 200);
+  at_50.segment_limit = 400;
+  decide(alert_50, at_50, nullptr, 0, config);
+  assert(measure_trend(alert_50, at_50, config.trend_horizon,
+                       kAlertSlopeWindowSeconds).projected_pct >= 92);
+  assert(alert_now(alert_50, at_50, config));
+
+  State emergency_50;
+  decide(emergency_50, base_50, nullptr, 0, config);
+  const Sample emergency_at_50 = at_50;
+  decide(emergency_50, emergency_at_50, nullptr, 0, config);
+  assert(!emergency_now(emergency_50, emergency_at_50, config));
+}
+
+// A 7 GiB runaway tier-B process freezes in ALERT and leads a 5 GiB A in EMERGENCY.
+void runaway_alert_and_emergency_priority() {
+  Candidate runaway = candidate_tier(1, Tier::a, 7 * 1024);
+  runaway.runaway = true;
+  Candidate batch = candidate_tier(2, Tier::a, 5 * 1024);
+  Candidate candidates[] = {batch, runaway};
+  State alert;
+  decide(alert, sample(1, 60), candidates, 2);
+  const Actions frozen = decide(alert, sample(2, 60), candidates, 2);
+  assert(frozen.count == 2);
+  assert(frozen.items[0].kind == ActionKind::freeze && frozen.items[0].pid == 1);
+  assert(frozen.items[1].kind == ActionKind::freeze && frozen.items[1].pid == 2);
+
+  State emergency;
+  const Actions first = decide(emergency, sample(1, 80), candidates, 2);
+  const Actions second = decide(emergency, sample(2, 80), candidates, 2);
+  assert(first.count == 0);
+  assert(second.level == Level::emergency && second.count == 1);
+  assert(second.items[0].kind == ActionKind::kill && second.items[0].pid == 1);
 }
 
 // Randomized candidates preserve eligibility, tier gates, and kill cadence invariants.
@@ -641,6 +724,7 @@ void post_action_trend_window_is_bounded() {
   config.alert_trend_pct = 60;
   config.emergency_pct = 80;
   config.emergency_trend_pct = 65;
+  config.emergency_trend_min_pct = 60;
   State fast;
   record_action(fast, 100);
   for (uint64_t second = 101; second <= 700; ++second)
@@ -742,6 +826,8 @@ int main() {
   irregular_sampling();
   invalid_sample_preserves_alert();
   classification_table();
+  calibrated_trend_floors();
+  runaway_alert_and_emergency_priority();
   randomized_invariants();
   emergency_drops_to_alert();
   alert_hold_keeps_freezing();
@@ -753,5 +839,5 @@ int main() {
   dispatched_pressure_levels();
   partial_group_is_frozen_unit();
   short_post_action_slope_ignores_noise();
-  std::puts("23 named core scenarios passed; randomized invariants: 10000 steps");
+  std::puts("25 named core scenarios passed; randomized invariants: 10000 steps");
 }

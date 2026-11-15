@@ -50,15 +50,18 @@ struct Candidate {
   bool eligible = false;
   uint64_t last_resume_second = 0;
   bool repeat_offender = false;
+  bool runaway = false;
 };
 
 struct Config {
   unsigned alert_pct = 60;
   unsigned alert_trend_pct = 90;
+  unsigned alert_trend_min_pct = 45;
   unsigned alert_hold = 120;
   unsigned trend_horizon = 240;
   unsigned emergency_pct = 80;
   unsigned emergency_trend_pct = 95;
+  unsigned emergency_trend_min_pct = 65;
   unsigned emergency_horizon = 45;
   unsigned tier_b_pct = 88;
   unsigned tier_c_pct = 93;
@@ -67,6 +70,7 @@ struct Config {
   unsigned critical_samples = 5;
   uint64_t freeze_min = 500 * kMiB;
   uint64_t tier_min = 300 * kMiB;
+  uint64_t runaway_min_mb = 0;
   unsigned recovery_seconds = 60;
   unsigned repeat_window = kRepeatWindowSeconds;
 };
@@ -112,6 +116,8 @@ struct ProcessFacts {
   bool protected_name = false;
   bool protected_pattern = false;
   bool agent_runtime = false;
+  uint64_t footprint = 0;
+  uint64_t runaway_min = 0;
 };
 
 inline bool at_or_above(uint64_t n, uint64_t d, unsigned percent) {
@@ -137,6 +143,8 @@ inline Tier classify(const ProcessFacts& facts) {
       facts.protected_pattern || system) {
     return Tier::protected_process;
   }
+  if (!facts.agent_runtime && facts.runaway_min > 0 && facts.footprint >= facts.runaway_min)
+    return Tier::a;
   if (facts.helper_in_app)
     return Tier::c;
   if (facts.agent_runtime)
@@ -235,8 +243,9 @@ inline bool trend_reaches(const State& state, const Sample& sample, unsigned thr
 inline bool alert_now(const State& state, const Sample& sample, const Config& config) {
   const Sample* swap_old = find_ago(state, sample.second, kSwapGrowthWindowSeconds, 0);
   return at_or_above(sample.segments, sample.segment_limit, config.alert_pct) ||
-         trend_reaches(state, sample, config.alert_trend_pct, config.trend_horizon,
-                       kAlertSlopeWindowSeconds) ||
+         (at_or_above(sample.segments, sample.segment_limit, config.alert_trend_min_pct) &&
+          trend_reaches(state, sample, config.alert_trend_pct, config.trend_horizon,
+                        kAlertSlopeWindowSeconds)) ||
          (swap_old != nullptr && sample.swap_used >= swap_old->swap_used &&
           sample.swap_used - swap_old->swap_used >= config.swap_growth) ||
          state.critical_streak >= config.critical_samples;
@@ -244,8 +253,9 @@ inline bool alert_now(const State& state, const Sample& sample, const Config& co
 
 inline bool emergency_now(const State& state, const Sample& sample, const Config& config) {
   return at_or_above(sample.segments, sample.segment_limit, config.emergency_pct) ||
-         trend_reaches(state, sample, config.emergency_trend_pct, config.emergency_horizon,
-                       kEmergencySlopeWindowSeconds);
+         (at_or_above(sample.segments, sample.segment_limit, config.emergency_trend_min_pct) &&
+          trend_reaches(state, sample, config.emergency_trend_pct, config.emergency_horizon,
+                        kEmergencySlopeWindowSeconds));
 }
 
 inline bool add(Actions& actions, ActionKind kind, const Candidate& candidate) {
@@ -287,16 +297,22 @@ inline void emergency_actions(State& state, const Sample& sample, const Candidat
       allowed = false;
     if (!allowed)
       continue;
-    const int rank = candidate.frozen ? 0 : static_cast<int>(candidate.tier) + 1;
+    const int rank = candidate.runaway ? -1
+                     : candidate.frozen ? 0
+                                        : static_cast<int>(candidate.tier) + 1;
     if (selected < 0) {
       selected = static_cast<int>(i);
       continue;
     }
     const Candidate& prior = candidates[static_cast<size_t>(selected)];
-    const int prior_rank = prior.frozen ? 0 : static_cast<int>(prior.tier) + 1;
-    const uint64_t score = candidate_score(candidate);
-    const uint64_t prior_score = candidate_score(prior);
-    const bool score_order = !candidate.frozen && !prior.frozen;
+    const int prior_rank = prior.runaway ? -1
+                           : prior.frozen ? 0
+                                          : static_cast<int>(prior.tier) + 1;
+    const uint64_t score = candidate.runaway ? candidate.footprint : candidate_score(candidate);
+    const uint64_t prior_score = prior.runaway ? prior.footprint : candidate_score(prior);
+    const bool score_order = (candidate.runaway && prior.runaway) ||
+                             (!candidate.frozen && !prior.frozen && !candidate.runaway &&
+                              !prior.runaway);
     if (rank < prior_rank ||
         (rank == prior_rank &&
          (score_order ? score > prior_score : candidate.footprint > prior.footprint))) {

@@ -385,6 +385,7 @@ notify_and_wait() {
     --actions "Investigate in Codex,Investigate in Claude,Stop Process…" \
     --dropdown-label "Actions…" --close-label "Dismiss" \
     --group "mac-health-$(basename "$incident" .log)" \
+    --timeout 1800 \
     "${sound_args[@]}" </dev/null 2>>"$LOG_FILE" || true)
   dispatch "$result" "$incident"
 }

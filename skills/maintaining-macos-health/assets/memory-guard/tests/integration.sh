@@ -404,6 +404,45 @@ fi
 assert_running "$plain_one"
 echo "PASS (g): the guard never selected its own notifier child"
 
+# (h) A sufficiently large .app helper is upgraded to tier A and records runaway=1.
+"$tmp/Editor.app/Contents/Frameworks/Nested.app/Contents/Frameworks/app-helper" & app_pid=$!
+sleep 0.2
+write_config act "$tmp/h.state" "$tmp/h.log"
+sed 's/^FREEZE_MIN_MB=.*/FREEZE_MIN_MB=1/' "$tmp/config" > "$tmp/config.h"
+printf 'RUNAWAY_MIN_MB=1\n' >> "$tmp/config.h"
+mv "$tmp/config.h" "$tmp/config"
+write_series "$tmp/h.metrics" '1 50' '2 60' '3 60'
+"$tmp/mac-memory-guard" run --config "$tmp/config" --test-metrics "$tmp/h.metrics" \
+  --test-root "$$" --test-tick-ms 500 > "$tmp/h.out" 2>&1 &
+guard_pid=$!
+attempt=0
+while [ "$attempt" -lt 40 ] && ! is_stopped "$app_pid"; do
+  attempt=$((attempt + 1))
+  sleep 0.1
+done
+assert_stopped "$app_pid"
+wait "$guard_pid"
+guard_pid=
+if ! grep -q 'decision=freeze name=app-helper .*tier=A .*runaway=1' "$tmp/h.log"; then
+  echo "FAIL: app helper runaway decision was not logged" >&2
+  exit 1
+fi
+assert_running "$app_pid"
+echo "PASS (h): eligible app helper runaway froze in ALERT and was logged"
+cleanup_and_clear_children
+
+# (i) Trend floors retain strict percentage and ordering validation.
+write_config observe "$tmp/i.state" "$tmp/i.log"
+printf 'ALERT_TREND_MIN_PCT=60\n' >> "$tmp/config"
+write_series "$tmp/i.metrics" '1 10'
+if "$tmp/mac-memory-guard" run --config "$tmp/config" --test-metrics "$tmp/i.metrics" \
+  --test-root "$$" --test-tick-ms 1 > "$tmp/i.out" 2>&1; then
+  echo "FAIL: ALERT_TREND_MIN_PCT equal to ALERT_PCT was accepted" >&2
+  exit 1
+fi
+grep -q 'invalid config' "$tmp/i.out"
+echo "PASS (i): trend floor config ordering is validated"
+
 grep -q 'transition=CALM->ALERT' "$tmp/a.log"
 grep -q 'transition=ALERT->CALM' "$tmp/a.log"
 assert_timestamped_log "$tmp/a.log"
@@ -413,8 +452,9 @@ assert_timestamped_log "$tmp/d.log"
 assert_timestamped_log "$tmp/e.log"
 assert_timestamped_log "$tmp/f.log"
 assert_timestamped_log "$tmp/g.log"
+assert_timestamped_log "$tmp/h.log"
 echo "PASS: transition records and timestamped integration logs"
 cleanup_and_clear_children
-echo "7 child-only signal integration scenarios passed"
+echo "8 child-only signal integration scenarios and one config validation scenario passed"
 trap - EXIT HUP INT TERM
 rm -rf "$tmp"

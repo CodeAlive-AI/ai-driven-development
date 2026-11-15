@@ -32,6 +32,8 @@ For a one-second, consent-gated process response to compressor saturation, see [
 7. **Suppress-flag**: `touch ~/.config/mac-health/silent` disables all alerts during heavy work. No need to unload the LaunchAgent.
 8. **No unrestricted automatic cleanup or process termination**. CPU notifications expose investigation and stop actions, but the human must select them. Investigation is read-only; stopping is identity-checked, confirm-first, and SIGTERM-first. Two independent [optional disk responses](optional-disk-responses.md) are available through the bundled `mac-health-disk` helper: a bounded emergency Mole cache profile below 2%, and a Codex plan/page at <= 5%. They require separate explicit enrollment and compatibility checks; neither is enabled by installation. Planning never authorizes deletion. Approved disk responses bypass calibration and use their own pause flag; the existing `silent` flag mutes notifications only.
 
+Every notification window must carry an explicit timeout so unanswered windows cannot remain open indefinitely.
+
 This design follows Google SRE alert-fatigue principles plus practitioner consensus from incident.io and Netdata Academy.
 
 ## Files (canonical paths)

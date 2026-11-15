@@ -52,6 +52,7 @@ struct Process {
   Tier tier = Tier::protected_process;
   bool eligible = false;
   bool frozen = false;
+  bool runaway = false;
   char path[kPathSize]{};
   char name[128]{};
 };
@@ -123,6 +124,7 @@ volatile sig_atomic_t g_stop_requested = 0;
 pid_t g_test_root = 0;
 unsigned g_test_tick_ms = 1000;
 uid_t g_owner_uid = 0;
+uint64_t g_runaway_min_bytes = 0;
 pid_t g_ancestors[64]{};
 size_t g_ancestor_count = 0;
 uint64_t g_last_metric_log = 0;
@@ -384,7 +386,7 @@ bool descends_from_test_root(pid_t pid) {
 }
 
 // Implements process age, bundle-main detection and pure core classification.
-Tier classify_process(const Process& process, bool& eligible) {
+Tier classify_process(const Process& process, bool& eligible, bool* runaway = nullptr) {
   const bool in_bundle = strstr(process.path, ".app/") != nullptr;
   const bool app_main = in_bundle && strstr(process.path, ".app/Contents/MacOS/") != nullptr;
   ProcessFacts facts{};
@@ -402,6 +404,8 @@ Tier classify_process(const Process& process, bool& eligible) {
   if (descends_from_guard(process.pid))
     facts.ancestor = true;
   facts.agent_runtime = agent_runtime(process.name);
+  facts.footprint = process.footprint;
+  facts.runaway_min = g_runaway_min_bytes;
   struct timeval now{};
   gettimeofday(&now, nullptr);
   const uint64_t started = process.start_sec;
@@ -410,7 +414,24 @@ Tier classify_process(const Process& process, bool& eligible) {
                           : 0;
   const Tier tier = classify(facts);
   eligible = tier != Tier::protected_process && descends_from_test_root(process.pid);
+  if (runaway != nullptr)
+    *runaway = eligible && !facts.agent_runtime && process.footprint >= g_runaway_min_bytes;
   return eligible ? tier : Tier::protected_process;
+}
+
+// Implements the machine-sized runaway threshold, with a strict MiB config override.
+bool initialize_runaway_minimum() {
+  uint64_t memory_bytes = 0;
+  size_t size = sizeof(memory_bytes);
+  if (sysctlbyname("hw.memsize", &memory_bytes, &size, nullptr, 0) != 0 ||
+      size != sizeof(memory_bytes) || memory_bytes == 0) {
+    fprintf(stderr, "cannot read hw.memsize for runaway threshold\n");
+    return false;
+  }
+  g_runaway_min_bytes = memory_bytes / 3;
+  if (g_config.runaway_min_mb != 0)
+    g_runaway_min_bytes = g_config.runaway_min_mb * kMiB;
+  return g_runaway_min_bytes > 0;
 }
 
 // Implements per-pid footprint growth measured over the real 30-second interval.
@@ -554,7 +575,7 @@ bool enumerate_processes(uint64_t second) {
       continue;
     if (g_process_count == kMaxProcesses)
       return false;
-    process.tier = classify_process(process, process.eligible);
+    process.tier = classify_process(process, process.eligible, &process.runaway);
     process.growth30 = update_growth(process, second);
     process.frozen = frozen_index(process.pid, process.start_sec, process.start_usec) >= 0;
     g_processes[g_process_count++] = process;
@@ -609,6 +630,7 @@ bool enumerate_processes(uint64_t second) {
                                  !process_stopped(process.pid) &&
                                  !freeze_attempted(process, episode);
       candidate.eligible = true;
+      candidate.runaway = process.runaway;
       candidate.repeat_offender =
           repeat_resume_second(process, second, candidate.last_resume_second);
       g_candidates[static_cast<size_t>(selected)] = candidate;
@@ -617,6 +639,7 @@ bool enumerate_processes(uint64_t second) {
       candidate.footprint += process.footprint;
       candidate.growth30 += process.growth30;
       candidate.frozen = candidate.frozen || process.frozen;
+      candidate.runaway = candidate.runaway || process.runaway;
       candidate.freeze_pending =
           candidate.freeze_pending ||
           (!process.frozen && !process_stopped(process.pid) &&
@@ -696,6 +719,10 @@ bool set_config_number(const char* key, unsigned long long number) {
     if (number > ULLONG_MAX / kMiB)
       return false;
     g_config.tier_min = number * kMiB;
+  } else if (strcmp(key, "RUNAWAY_MIN_MB") == 0) {
+    if (number == 0 || number > ULLONG_MAX / kMiB)
+      return false;
+    g_config.runaway_min_mb = number;
   } else if (strcmp(key, "SWAP_GROWTH_GIB") == 0) {
     if (number == 0 || number > ULLONG_MAX / kGiB)
       return false;
@@ -708,12 +735,16 @@ bool set_config_number(const char* key, unsigned long long number) {
       g_config.alert_pct = value;
     else if (strcmp(key, "ALERT_TREND_PCT") == 0)
       g_config.alert_trend_pct = value;
+    else if (strcmp(key, "ALERT_TREND_MIN_PCT") == 0)
+      g_config.alert_trend_min_pct = value;
     else if (strcmp(key, "TREND_WINDOW") == 0)
       g_config.trend_horizon = value;
     else if (strcmp(key, "EMERGENCY_PCT") == 0)
       g_config.emergency_pct = value;
     else if (strcmp(key, "EMERGENCY_TREND_PCT") == 0)
       g_config.emergency_trend_pct = value;
+    else if (strcmp(key, "EMERGENCY_TREND_MIN_PCT") == 0)
+      g_config.emergency_trend_min_pct = value;
     else if (strcmp(key, "EMERGENCY_WINDOW") == 0)
       g_config.emergency_horizon = value;
     else if (strcmp(key, "CRITICAL_PRESSURE") == 0)
@@ -805,10 +836,16 @@ bool config_is_valid() {
   const bool valid = g_config.freeze_min > 0 && g_config.tier_min > 0 &&
                      g_config.alert_pct >= 1 && g_config.alert_pct <= 100 &&
                      g_config.alert_trend_pct >= 1 && g_config.alert_trend_pct <= 100 &&
+                     g_config.alert_trend_min_pct >= 1 && g_config.alert_trend_min_pct <= 99 &&
+                     g_config.alert_trend_min_pct < g_config.alert_pct &&
                      g_config.emergency_pct > g_config.alert_pct &&
                      g_config.emergency_pct <= 100 &&
                      g_config.emergency_trend_pct > g_config.alert_trend_pct &&
-                     g_config.emergency_trend_pct <= 100 && g_config.tier_b_pct >= 1 &&
+                     g_config.emergency_trend_pct <= 100 &&
+                     g_config.emergency_trend_min_pct >= 1 &&
+                     g_config.emergency_trend_min_pct <= 99 &&
+                     g_config.emergency_trend_min_pct < g_config.emergency_pct &&
+                     g_config.tier_b_pct >= 1 &&
                      g_config.tier_b_pct <= 100 && g_config.tier_c_pct >= 1 &&
                      g_config.tier_c_pct <= 100 && g_config.critical_pressure >= 1 &&
                      g_config.critical_pressure <= 4 &&
@@ -1025,7 +1062,7 @@ void notify(const char* text) {
                              const_cast<char*>("--message"),
                              const_cast<char*>(text),
                              const_cast<char*>("--timeout"),
-                             const_cast<char*>("1800"),
+                             const_cast<char*>("600"),
                              nullptr};
   char* const environment[] = {nullptr};
   // At most one notifier window: the newest message replaces an unanswered older one, so
@@ -1386,6 +1423,7 @@ void log_level_change(Level previous, Level current, const Sample& sample) {
       at_or_above(sample.segments, sample.segment_limit, g_config.alert_pct);
   const bool alert_trend_hit =
       alert_trend.available &&
+      at_or_above(sample.segments, sample.segment_limit, g_config.alert_trend_min_pct) &&
       alert_trend.projected_segments >=
           static_cast<long double>(sample.segment_limit) * g_config.alert_trend_pct / 100.0L;
   const bool swap_alert =
@@ -1396,6 +1434,7 @@ void log_level_change(Level previous, Level current, const Sample& sample) {
       at_or_above(sample.segments, sample.segment_limit, g_config.emergency_pct);
   const bool emergency_trend_hit =
       emergency_trend.available &&
+      at_or_above(sample.segments, sample.segment_limit, g_config.emergency_trend_min_pct) &&
       emergency_trend.projected_segments >=
           static_cast<long double>(sample.segment_limit) * g_config.emergency_trend_pct / 100.0L;
   const long long alert_pct = alert_trend.available
@@ -1417,16 +1456,18 @@ void log_level_change(Level previous, Level current, const Sample& sample) {
                             : current == Level::alert ? "ALERT"
                                                       : "EMERGENCY";
   log_line("level_change transition=%s->%s segments_pct=%llu segment_alert=%d "
-           "alert_trend_pct=%lld alert_trend_age_s=%lld alert_trend_hit=%d "
+           "alert_trend_pct=%lld alert_trend_min_pct=%u alert_trend_age_s=%lld alert_trend_hit=%d "
            "swap_window_valid=%d swap_growth_mib=%llu swap_alert=%d pressure=%d "
            "pressure_streak=%u/%u pressure_alert=%d emergency_trend_pct=%lld "
+           "emergency_trend_min_pct=%u "
            "emergency_trend_age_s=%lld emergency_trend_hit=%d segment_emergency=%d "
            "alert_now=%d emergency_now=%d",
            previous_name, current_name,
            static_cast<unsigned long long>(pct(sample.segments, sample.segment_limit)),
-           segment_alert, alert_pct, alert_age, alert_trend_hit, swap_old != nullptr,
+           segment_alert, alert_pct, g_config.alert_trend_min_pct, alert_age, alert_trend_hit, swap_old != nullptr,
            static_cast<unsigned long long>(swap_growth), swap_alert, sample.pressure,
            g_state.critical_streak, g_config.critical_samples, pressure_alert, emergency_pct,
+           g_config.emergency_trend_min_pct,
            emergency_age, emergency_trend_hit, segment_emergency,
            alert_now(g_state, sample, g_config), emergency_now(g_state, sample, g_config));
 }
@@ -1458,18 +1499,21 @@ void log_decision(const Sample& sample, const Actions& actions) {
     const char* name = "process";
     uint64_t footprint = 0;
     Tier tier = Tier::a;
+    bool runaway = false;
     const Candidate* target = nullptr;
     for (size_t j = 0; j < g_candidate_count; ++j)
       if (g_candidates[j].pid == action.pid && g_candidates[j].pgid == action.pgid) {
         target = &g_candidates[j];
         footprint = g_candidates[j].footprint;
         tier = g_candidates[j].tier;
+        runaway = g_candidates[j].runaway;
         break;
       }
     if (target != nullptr)
       name = candidate_name(*target);
-    log_line("decision=%s name=%s pid=%d tier=%c footprint=%llu", kind, name, action.pid,
-             'A' + static_cast<int>(tier), static_cast<unsigned long long>(footprint));
+    log_line("decision=%s name=%s pid=%d tier=%c footprint=%llu runaway=%d", kind, name,
+             action.pid, 'A' + static_cast<int>(tier),
+             static_cast<unsigned long long>(footprint), runaway ? 1 : 0);
   }
 }
 
@@ -1580,7 +1624,8 @@ int consent_command(const char* option) {
     return 2;
   ensure_parent(g_consent_path);
   puts(
-      "Consent v2: ALERT freezes tier-A units >=500 MiB. After 120 s from ALERT entry, "
+      "Consent v2: ALERT freezes tier-A units >=500 MiB, including eligible runaway processes "
+      "at or above one third of hw.memsize (RUNAWAY_MIN_MB overrides). After 120 s from ALERT entry, "
       "while alert conditions persist, frozen units are killed largest-first, one every 30 s; "
       "new eligible tier-A units continue to freeze. EMERGENCY kills one unit, "
       "then waits at least 3 s: frozen, tier A >=300 MiB, tier B >=300 MiB only at 88% "
@@ -1656,6 +1701,8 @@ int main_run(int argc, char** argv) {
   }
   if (g_test_mode && g_act_mode)
     g_act_mode = true;
+  if (!initialize_runaway_minimum())
+    return 2;
   return run_loop();
 }
 
@@ -1689,6 +1736,8 @@ int main(int argc, char** argv) {
   }
   if (strcmp(argv[1], "explain") == 0) {
     if (!read_config(g_config_path, true))
+      return 2;
+    if (!initialize_runaway_minimum())
       return 2;
     return command_explain();
   }
