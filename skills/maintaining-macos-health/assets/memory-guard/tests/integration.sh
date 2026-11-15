@@ -95,6 +95,7 @@ TIER_C_PCT=93
 PROTECT=*protected-child
 ALERTER=$tmp/not-installed
 STATE_PATH=$state
+STATUS_PATH=$tmp/status
 LOG_PATH=$log
 EOF
 }
@@ -486,6 +487,46 @@ assert_timestamped_log "$tmp/g.log"
 assert_timestamped_log "$tmp/h.log"
 assert_timestamped_log "$tmp/j.log"
 assert_timestamped_log "$tmp/k.log"
+test "$(stat -f %Lp "$tmp/status")" = 600
+awk 'NF != 8 || $1 !~ /^[0-9]+$/ || $2 !~ /^[0-9]+\.[0-9]+$/ ||
+     $3 !~ /^(CALM|ALERT|EMERGENCY)$/ || $4 !~ /^[0-9]+$/ ||
+     $5 !~ /^[0-9]+$/ || $6 !~ /^[0-9]+$/ || $7 !~ /^-?[0-9]+$/ ||
+     $8 !~ /^[0-9]+$/ { exit 1 } END { if (NR != 1) exit 1 }' "$tmp/status"
+echo 'PASS: atomic status has the expected fields and mode 0600'
+write_config observe "$tmp/status-failure.state" "$tmp/status-failure.log"
+touch "$tmp/not-a-directory"
+printf 'STATUS_PATH=%s/not-a-directory/status\n' "$tmp" >> "$tmp/config"
+: > "$tmp/status-failure.metrics"
+for second in 1 2 3 4 5 6 7 8 9 10; do
+  printf '%s 20 100 0 1\n' "$second" >> "$tmp/status-failure.metrics"
+done
+"$tmp/mac-memory-guard" run --config "$tmp/config" --test-metrics "$tmp/status-failure.metrics" \
+  --test-root "$$" --test-tick-ms 50 > "$tmp/status-failure.out" 2>&1
+test "$(grep -c 'status publication failed' "$tmp/status-failure.log")" -eq 1
+echo 'PASS: status write failure is logged once and does not stop sampling'
+write_config observe "$tmp/status-level.state" "$tmp/status-level.log"
+: > "$tmp/status-level.metrics"
+for second in $(seq 1 80); do
+  if [ "$second" -le 40 ]; then segments=20; else segments=70; fi
+  printf '%s %s 100 0 1\n' "$second" "$segments" >> "$tmp/status-level.metrics"
+done
+rm -f "$tmp/status"
+"$tmp/mac-memory-guard" run --config "$tmp/config" --test-metrics "$tmp/status-level.metrics" \
+  --test-root "$$" --test-tick-ms 50 > "$tmp/status-level.out" 2>&1 &
+guard_pid=$!
+for attempt in $(seq 1 15); do
+  if [ -f "$tmp/status" ] && awk '$3 == "CALM" { found=1 } END { exit !found }' "$tmp/status"; then break; fi
+  sleep .1
+done
+awk '$3 == "CALM" { found=1 } END { exit !found }' "$tmp/status"
+for attempt in $(seq 1 40); do
+  if awk '$3 == "ALERT" { found=1 } END { exit !found }' "$tmp/status"; then break; fi
+  sleep .1
+done
+awk '$3 == "ALERT" { found=1 } END { exit !found }' "$tmp/status"
+wait "$guard_pid"
+guard_pid=
+echo 'PASS: live status follows CALM and ALERT decisions'
 echo "PASS: transition records and timestamped integration logs"
 cleanup_and_clear_children
 echo "10 child-only signal integration scenarios and one config validation scenario passed"

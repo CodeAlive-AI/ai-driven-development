@@ -50,6 +50,7 @@ Trigger on any of:
 | `assets/mole-exact-file.sh`, `assets/mole-core-1.39.0.json` | Compatibility-pinned exact-file adapter to Mole; no general `mo clean`, sudo, or shell commands from the agent. |
 | `assets/space-scan/`, `assets/build-space-scan.sh` | Read-only bulk metadata scanner with explicit directory exclusions and a compact full folder tree; see `references/storage-report.md` for manual inventory |
 | `assets/memory-guard/`, `assets/build-memory-guard.sh`, `assets/com.local.mac-memory-guard.plist` | Native C++17 memory runaway guard; defaults to observe mode and requires a versioned consent record before acting. See `references/memory-guard.md`. |
+| `assets/mac-heavy/` | Cooperative local heavy-job admission wrapper, tests and review/installation notes; see its README. |
 | `assets/render-storage-report.py`, `assets/storage-tree.js` | Append scanner output to the report; lazily expand folders and show largest files |
 | `assets/mac-health-check` | Production-ready bash script (~250 lines, bash 3.2 compatible) |
 | `assets/mac-health-action` | Background action dispatcher for read-only Codex/Claude investigations and explicitly confirmed graceful process stopping |

@@ -113,6 +113,8 @@ char g_home[PATH_MAX]{};
 char g_config_path[PATH_MAX]{};
 char g_consent_path[PATH_MAX]{};
 char g_state_path[PATH_MAX]{};
+char g_status_path[PATH_MAX]{};
+bool g_status_explicit = false;
 char g_log_path[PATH_MAX]{};
 char g_alerter_path[PATH_MAX] = "/opt/homebrew/bin/alerter";
 int g_log_fd = -1;
@@ -789,14 +791,17 @@ bool set_config_string(const char* key, const char* value, bool& handled) {
     ++g_pattern_count;
   } else if (strcmp(key, "ALERTER") == 0) {
     return copy_config_string(g_alerter_path, sizeof(g_alerter_path), value, key);
-  } else if (strcmp(key, "LOG_PATH") == 0 || strcmp(key, "STATE_PATH") == 0) {
+  } else if (strcmp(key, "LOG_PATH") == 0 || strcmp(key, "STATE_PATH") == 0 ||
+             strcmp(key, "STATUS_PATH") == 0) {
     if (*value == 0) {
       fprintf(stderr, "config path for %s cannot be empty\n", key);
       return false;
     }
-    char* output = strcmp(key, "LOG_PATH") == 0 ? g_log_path : g_state_path;
-    const size_t capacity = strcmp(key, "LOG_PATH") == 0 ? sizeof(g_log_path)
-                                                         : sizeof(g_state_path);
+    char* output = strcmp(key, "LOG_PATH") == 0 ? g_log_path
+                   : strcmp(key, "STATE_PATH") == 0 ? g_state_path : g_status_path;
+    const size_t capacity = sizeof(g_status_path);
+    if (strcmp(key, "STATUS_PATH") == 0)
+      g_status_explicit = true;
     return copy_config_string(output, capacity, value, key);
   } else {
     handled = false;
@@ -1526,6 +1531,100 @@ void log_decision(const Sample& sample, const Actions& actions) {
   }
 }
 
+// Disk I/O is confined to this worker; a stalled filesystem cannot stall the guard loop.
+pthread_mutex_t g_status_mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_cond_t g_status_ready = PTHREAD_COND_INITIALIZER;
+char g_status_pending_line[512]{};
+bool g_status_pending = false;
+bool g_status_worker_started = false;
+
+void write_status(const char* line) {
+  static uint64_t last_error = 0;
+  static bool error_logged = false;
+  char temporary[PATH_MAX]{};
+  ensure_parent(g_status_path);
+  const int path_length = snprintf(temporary, sizeof(temporary), "%s.tmp.%d", g_status_path, getpid());
+  bool ok = path_length > 0 && path_length < static_cast<int>(sizeof(temporary));
+  int fd = -1;
+  if (ok) {
+    fd = open(temporary, O_WRONLY | O_CREAT | O_TRUNC | O_NOFOLLOW, 0600);
+    ok = fd >= 0 && fchmod(fd, 0600) == 0;
+  }
+  if (ok) {
+    const size_t length = strlen(line);
+    ok = length > 0 && write(fd, line, length) == static_cast<ssize_t>(length);
+  }
+  if (fd >= 0 && close(fd) != 0)
+    ok = false;
+  if (ok)
+    ok = rename(temporary, g_status_path) == 0;
+  if (!ok) {
+    if (temporary[0] != 0)
+      (void)unlink(temporary);
+    const uint64_t now = uptime_second();
+    if (!error_logged || now < last_error || now - last_error >= 3600) {
+      log_line("status publication failed errno=%d", errno);
+      last_error = now;
+      error_logged = true;
+    }
+  }
+}
+
+void* status_worker(void*) {
+  for (;;) {
+    char line[sizeof(g_status_pending_line)]{};
+    pthread_mutex_lock(&g_status_mutex);
+    while (!g_status_pending)
+      pthread_cond_wait(&g_status_ready, &g_status_mutex);
+    memcpy(line, g_status_pending_line, sizeof(line));
+    g_status_pending = false;
+    pthread_mutex_unlock(&g_status_mutex);
+    write_status(line);
+  }
+  return nullptr;
+}
+
+void publish_status(const Sample& sample, Level level) {
+  if (!g_status_worker_started)
+    return;
+  struct timeval boot{};
+  size_t boot_size = sizeof(boot);
+  if (sysctlbyname("kern.boottime", &boot, &boot_size, nullptr, 0) != 0 ||
+      boot_size != sizeof(boot)) {
+    static uint64_t last_boot_error = 0;
+    static bool boot_error_logged = false;
+    const uint64_t now = uptime_second();
+    if (!boot_error_logged || now < last_boot_error || now - last_boot_error >= 3600) {
+      log_line("status publication failed: boot identity unavailable");
+      last_boot_error = now;
+      boot_error_logged = true;
+    }
+    return;
+  }
+  const Sample* old = find_ago(g_state, sample.second, kSwapGrowthWindowSeconds, 0);
+  const uint64_t growth = old != nullptr && sample.swap_used >= old->swap_used
+                              ? sample.swap_used - old->swap_used : 0;
+  size_t frozen_units = 0;
+  for (size_t i = 0; i < g_candidate_count; ++i)
+    if (g_candidates[i].frozen)
+      ++frozen_units;
+  const char* name = level == Level::calm ? "CALM" : level == Level::alert ? "ALERT" : "EMERGENCY";
+  char line[sizeof(g_status_pending_line)]{};
+  const int length = snprintf(line, sizeof(line), "%lld %lld.%06d %s %llu %llu %llu %d %zu\n",
+                              static_cast<long long>(time(nullptr)),
+                              static_cast<long long>(boot.tv_sec), static_cast<int>(boot.tv_usec),
+                              name, static_cast<unsigned long long>(pct(sample.segments, sample.segment_limit)),
+                              static_cast<unsigned long long>(sample.swap_used),
+                              static_cast<unsigned long long>(growth), sample.pressure, frozen_units);
+  if (length <= 0 || static_cast<size_t>(length) >= sizeof(line) ||
+      pthread_mutex_trylock(&g_status_mutex) != 0)
+    return;
+  memcpy(g_status_pending_line, line, sizeof(line));
+  g_status_pending = true;
+  pthread_cond_signal(&g_status_ready);
+  pthread_mutex_unlock(&g_status_mutex);
+}
+
 // Implements the one-second decision loop and explicit fail-closed sampling errors.
 int run_loop() {
   if (g_act_mode && !g_test_mode && !consent_is_current()) {
@@ -1556,6 +1655,15 @@ int run_loop() {
   if (g_log_fd < 0) {
     perror("log open");
     return 1;
+  }
+  if (!g_test_mode || g_status_explicit) {
+    pthread_t worker{};
+    if (pthread_create(&worker, nullptr, status_worker, nullptr) == 0) {
+      pthread_detach(worker);
+      g_status_worker_started = true;
+    } else {
+      log_line("status publication failed: cannot start worker");
+    }
   }
   load_frozen_state();
   while (!g_stop_requested) {
@@ -1593,6 +1701,8 @@ int run_loop() {
     log_decision(sample, actions);
     if (g_act_mode)
       apply_actions(actions, sample.second);
+    if (!g_test_mode || g_status_explicit)
+      publish_status(sample, actions.level);
     if (g_act_mode)
       action_notification(actions, previous);
     if (g_test_mode)
@@ -1604,8 +1714,12 @@ int run_loop() {
     finish_shutdown();
   if (g_metrics_fd >= 0)
     close(g_metrics_fd);
-  close(g_log_fd);
-  g_log_fd = -1;
+  // A detached status worker may still be completing I/O. Leave this descriptor
+  // to process exit rather than racing its logging or waiting on a stalled disk.
+  if (!g_status_worker_started) {
+    close(g_log_fd);
+    g_log_fd = -1;
+  }
   return 0;
 }
 
@@ -1728,6 +1842,8 @@ int main(int argc, char** argv) {
   snprintf(g_consent_path, sizeof(g_consent_path),
            "%s/.config/mac-health/memory-guard-consent.json", g_home);
   snprintf(g_state_path, sizeof(g_state_path), "%s/.local/state/mac-health/memory-guard.state",
+           g_home);
+  snprintf(g_status_path, sizeof(g_status_path), "%s/.local/state/mac-health/memory-guard.status",
            g_home);
   snprintf(g_log_path, sizeof(g_log_path), "%s/Library/Logs/mac-health/memory-guard.log", g_home);
   if (argc < 2) {

@@ -132,3 +132,7 @@ records against real work, note false positives and missed candidate names, then
 tune one threshold at a time. Never tune based only on a single pressure reading.
 Re-run `doctor` after macOS upgrades. This is a last line of defence, not a memory
 cap; it cannot guarantee time to act if the OS stops scheduling it.
+
+### Cooperative heavy-job admission (review before installation)
+
+The source in `assets/mac-heavy/` contains a Bash 3.2 admission wrapper and focused tests. It is opt-in until the owner reviews and installs it. The guard's `STATUS_PATH` defaults to `~/.local/state/mac-health/memory-guard.status`; it atomically publishes `epoch boot-id level segments-percent swap-bytes swap-growth-60s-bytes pressure frozen-units` as one whitespace-separated line, mode 0600. A missing 60-second history is represented as zero growth; the level is the guard's own hysteretic decision. Publication failure is rate-limited in the guard log and does not change decisions. See `assets/mac-heavy/README.md` for use, limitations and agent timeout guidance. Installing this source also requires a reviewed guard rebuild and restart, and a coordinated retirement of legacy arai wrappers; simply installing the script does not activate a shared queue across all projects.
