@@ -27,6 +27,7 @@ constexpr unsigned kAgentAgeThresholdSeconds = 30 * 60;
 enum class Level : uint8_t { calm, alert, emergency };
 enum class Tier : uint8_t { a, b, c, protected_process };
 enum class ActionKind : uint8_t { none, freeze, resume, kill };
+enum class KillBasis : uint8_t { none, segments, swap, pressure, emergency };
 
 struct Sample {
   uint64_t second = 0;
@@ -83,6 +84,7 @@ struct Action {
 
 struct Actions {
   Level level = Level::calm;
+  KillBasis kill_basis = KillBasis::none;
   std::array<Action, kMaxActions> items{};
   size_t count = 0;
 };
@@ -239,16 +241,24 @@ inline bool trend_reaches(const State& state, const Sample& sample, unsigned thr
   return trend.projected_segments >= target;
 }
 
-// Implements alert_now and emergency_now from the v2 thresholds.
-inline bool alert_now(const State& state, const Sample& sample, const Config& config) {
+// Measured triggers take priority in the logged basis when several coincide.
+inline KillBasis measured_pressure(const State& state, const Sample& sample, const Config& config) {
+  if (at_or_above(sample.segments, sample.segment_limit, config.alert_pct))
+    return KillBasis::segments;
   const Sample* swap_old = find_ago(state, sample.second, kSwapGrowthWindowSeconds, 0);
-  return at_or_above(sample.segments, sample.segment_limit, config.alert_pct) ||
+  if (swap_old != nullptr && sample.swap_used >= swap_old->swap_used &&
+      sample.swap_used - swap_old->swap_used >= config.swap_growth)
+    return KillBasis::swap;
+  if (state.critical_streak >= config.critical_samples)
+    return KillBasis::pressure;
+  return KillBasis::none;
+}
+
+inline bool alert_now(const State& state, const Sample& sample, const Config& config) {
+  return measured_pressure(state, sample, config) != KillBasis::none ||
          (at_or_above(sample.segments, sample.segment_limit, config.alert_trend_min_pct) &&
           trend_reaches(state, sample, config.alert_trend_pct, config.trend_horizon,
-                        kAlertSlopeWindowSeconds)) ||
-         (swap_old != nullptr && sample.swap_used >= swap_old->swap_used &&
-          sample.swap_used - swap_old->swap_used >= config.swap_growth) ||
-         state.critical_streak >= config.critical_samples;
+                        kAlertSlopeWindowSeconds));
 }
 
 inline bool emergency_now(const State& state, const Sample& sample, const Config& config) {
@@ -329,7 +339,7 @@ inline void alert_actions(State& state, const Sample& sample, const Candidate* c
                           size_t count, const Config& config, bool alarming, Actions& actions) {
   if (!alarming)
     return;
-  if (state.alert_since != 0 &&
+  if (actions.kill_basis != KillBasis::none && state.alert_since != 0 &&
       sample.second >= state.alert_since + config.alert_hold) {
     const bool kill_ready = state.last_frozen_kill == 0 ||
                             sample.second - state.last_frozen_kill >= kFrozenKillSpacingSeconds;
@@ -373,7 +383,7 @@ inline void alert_actions(State& state, const Sample& sample, const Candidate* c
     used[static_cast<size_t>(selected)] = true;
     const Candidate& candidate = candidates[static_cast<size_t>(selected)];
     const uint64_t last_resume = candidate.last_resume_second;
-    if (candidate.repeat_offender && last_resume != 0 && sample.second >= last_resume &&
+    if (actions.kill_basis != KillBasis::none && candidate.repeat_offender && last_resume != 0 && sample.second >= last_resume &&
         sample.second - last_resume <= config.repeat_window) {
       bool kill_selected = false;
       for (size_t i = 0; i < actions.count; ++i)
@@ -437,8 +447,10 @@ inline Actions decide(State& state, const Sample& sample, const Candidate* candi
   }
   actions.level = state.level;
   if (state.level == Level::emergency) {
+    actions.kill_basis = KillBasis::emergency;
     emergency_actions(state, sample, candidates, count, config, actions);
   } else if (state.level == Level::alert) {
+    actions.kill_basis = measured_pressure(state, sample, config);
     alert_actions(state, sample, candidates, count, config, alert, actions);
   } else if (state.level == Level::calm && !alert &&
              (state.last_resume == 0 ||

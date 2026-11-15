@@ -415,6 +415,82 @@ void repeat_offender_window() {
   assert(frozen.count == 1 && frozen.items[0].kind == ActionKind::freeze);
 }
 
+// A sustained trend alarm can freeze repeats but cannot escalate until pressure is measured.
+void trend_alert_never_kills() {
+  Config config;
+  config.alert_trend_pct = 50;
+  State state;
+  Candidate frozen = tier_a(1, 1, 700, true);
+  decide(state, sample(1, 45), &frozen, 1, config);
+  for (uint64_t second = 31; second <= 331; ++second) {
+    Actions actions = decide(state, sample(second, 50), &frozen, 1, config);
+    assert(actions.count == 0);
+  }
+  assert(state.level == Level::alert && state.alert_since == 32);
+  Actions killed = decide(state, sample(332, 62), &frozen, 1, config);
+  assert(killed.count == 1 && killed.items[0].kind == ActionKind::kill);
+  assert(killed.kill_basis == KillBasis::segments);
+
+  State repeat;
+  Candidate candidate = tier_a(2, 2, 700);
+  candidate.repeat_offender = true;
+  candidate.last_resume_second = 10;
+  decide(repeat, sample(1, 45), &candidate, 1, config);
+  decide(repeat, sample(31, 50), &candidate, 1, config);
+  Actions again = decide(repeat, sample(32, 50), &candidate, 1, config);
+  assert(again.count == 1 && again.items[0].kind == ActionKind::freeze);
+}
+
+// Alternating rises and recovery in the observed 45–58% range never produce kills.
+void alternating_trend_replay() {
+  State state;
+  Candidate candidate = tier_a(1, 1, 700);
+  size_t freezes = 0, alerts = 0, calms = 0;
+  Level previous = Level::calm;
+  for (uint64_t second = 1; second <= 900; ++second) {
+    const uint64_t phase = (second - 1) % 180;
+    const uint64_t percent = phase < 65 ? 45 + phase / 5 : 45;
+    Actions actions = decide(state, sample(second, percent), &candidate, 1);
+    if (actions.level != previous) {
+      if (actions.level == Level::alert) ++alerts;
+      if (actions.level == Level::calm) ++calms;
+      previous = actions.level;
+    }
+    for (size_t i = 0; i < actions.count; ++i) {
+      assert(actions.items[i].kind != ActionKind::kill);
+      if (actions.items[i].kind == ActionKind::freeze) {
+        ++freezes;
+        candidate.frozen = true;
+        candidate.freeze_pending = false;
+      } else if (actions.items[i].kind == ActionKind::resume) {
+        candidate.frozen = false;
+        candidate.freeze_pending = true;
+        candidate.repeat_offender = true;
+        candidate.last_resume_second = second;
+      }
+    }
+  }
+  assert(freezes > 1 && alerts > 1 && calms > 1);
+}
+
+// Swap and critical pressure independently authorize and label ALERT kills.
+void measured_pressure_bases() {
+  Candidate candidate = tier_a(1, 1, 700, true);
+  State swap;
+  swap.level = Level::alert;
+  swap.alert_since = 1;
+  decide(swap, sample(1, 50), &candidate, 1);
+  Actions a = decide(swap, sample(121, 50, 2 * kGiB), &candidate, 1);
+  assert(a.count == 1 && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::swap);
+  State pressure;
+  pressure.level = Level::alert;
+  pressure.alert_since = 1;
+  for (uint64_t second = 117; second < 121; ++second)
+    decide(pressure, sample(second, 50, 0, 4), &candidate, 1);
+  a = decide(pressure, sample(121, 50, 0, 4), &candidate, 1);
+  assert(a.count == 1 && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::pressure);
+}
+
 // Irregular sample gaps preserve counters and use actual elapsed trend time.
 void irregular_sampling() {
   State state;
@@ -823,6 +899,9 @@ int main() {
   trend_resets_after_freeze();
   recovering_spike();
   repeat_offender_window();
+  trend_alert_never_kills();
+  alternating_trend_replay();
+  measured_pressure_bases();
   irregular_sampling();
   invalid_sample_preserves_alert();
   classification_table();
@@ -839,5 +918,5 @@ int main() {
   dispatched_pressure_levels();
   partial_group_is_frozen_unit();
   short_post_action_slope_ignores_noise();
-  std::puts("25 named core scenarios passed; randomized invariants: 10000 steps");
+  std::puts("28 named core scenarios passed; randomized invariants: 10000 steps");
 }

@@ -1511,9 +1511,18 @@ void log_decision(const Sample& sample, const Actions& actions) {
       }
     if (target != nullptr)
       name = candidate_name(*target);
-    log_line("decision=%s name=%s pid=%d tier=%c footprint=%llu runaway=%d", kind, name,
-             action.pid, 'A' + static_cast<int>(tier),
-             static_cast<unsigned long long>(footprint), runaway ? 1 : 0);
+    const char* basis = actions.kill_basis == KillBasis::segments ? "segments"
+                        : actions.kill_basis == KillBasis::swap ? "swap"
+                        : actions.kill_basis == KillBasis::pressure ? "pressure"
+                        : actions.kill_basis == KillBasis::emergency ? "emergency" : "none";
+    if (action.kind == ActionKind::kill)
+      log_line("decision=%s name=%s pid=%d tier=%c footprint=%llu runaway=%d kill_basis=%s",
+               kind, name, action.pid, 'A' + static_cast<int>(tier),
+               static_cast<unsigned long long>(footprint), runaway ? 1 : 0, basis);
+    else
+      log_line("decision=%s name=%s pid=%d tier=%c footprint=%llu runaway=%d", kind, name,
+               action.pid, 'A' + static_cast<int>(tier),
+               static_cast<unsigned long long>(footprint), runaway ? 1 : 0);
   }
 }
 
@@ -1626,11 +1635,11 @@ int consent_command(const char* option) {
   puts(
       "Consent v2: ALERT freezes tier-A units >=500 MiB, including eligible runaway processes "
       "at or above one third of hw.memsize (RUNAWAY_MIN_MB overrides). After 120 s from ALERT entry, "
-      "while alert conditions persist, frozen units are killed largest-first, one every 30 s; "
+      "on samples with measured pressure, frozen units are killed largest-first, one every 30 s; "
       "new eligible tier-A units continue to freeze. EMERGENCY kills one unit, "
       "then waits at least 3 s: frozen, tier A >=300 MiB, tier B >=300 MiB only at 88% "
       "segments, tier C >=300 MiB only at 93%. A tier-A unit resumed by the guard "
-      "within 15 minutes is killed on the next alarm instead of frozen. "
+      "within 15 minutes is killed on the next measured-pressure alarm instead of frozen. A trend-only ALERT can freeze and later resume units, but never kills them. "
       "Each process is identity-checked; protected "
       "and foreign processes are never signalled. CALM resumes frozen units smallest-first, "
       "15 s apart. SIGTERM is followed by SIGKILL after 1.5 s to surviving matching pids.");

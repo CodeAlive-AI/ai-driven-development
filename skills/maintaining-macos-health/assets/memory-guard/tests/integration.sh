@@ -443,6 +443,37 @@ fi
 grep -q 'invalid config' "$tmp/i.out"
 echo "PASS (i): trend floor config ordering is validated"
 
+# (j) Trend-only ALERT persists beyond the hold without terminating a child.
+"$tmp/plain-one" & plain_one=$!
+sleep 0.2
+write_config act "$tmp/j.state" "$tmp/j.log"
+sed 's/^ALERT_TREND_PCT=.*/ALERT_TREND_PCT=50/' "$tmp/config" > "$tmp/config.j"
+mv "$tmp/config.j" "$tmp/config"
+write_series "$tmp/j.metrics" '1 45' '31 50' '32 50' '43 50' '73 50' '153 50' '333 50'
+"$tmp/mac-memory-guard" run --config "$tmp/config" --test-metrics "$tmp/j.metrics" \
+  --test-root "$$" --test-tick-ms 100 > "$tmp/j.out" 2>&1
+assert_running "$plain_one"
+grep -q 'decision=freeze name=plain-one' "$tmp/j.log"
+if grep -q 'signal=SIGTERM\|decision=kill' "$tmp/j.log"; then
+  echo "FAIL: trend-only ALERT killed a child" >&2
+  exit 1
+fi
+echo "PASS (j): trend-only hold froze without terminating the child"
+cleanup_and_clear_children
+
+# (k) A measured segment alarm still kills the frozen child after the hold.
+"$tmp/plain-one" & plain_one=$!
+sleep 0.2
+write_config act "$tmp/k.state" "$tmp/k.log"
+write_series "$tmp/k.metrics" '1 50' '2 60' '3 60' '123 62' '124 62'
+"$tmp/mac-memory-guard" run --config "$tmp/config" --test-metrics "$tmp/k.metrics" \
+  --test-root "$$" --test-tick-ms 100 > "$tmp/k.out" 2>&1
+assert_dead "$plain_one"
+grep -q 'decision=kill name=plain-one .*kill_basis=segments' "$tmp/k.log"
+grep -q 'signal=SIGTERM name=plain-one' "$tmp/k.log"
+echo "PASS (k): measured segment hold terminated the frozen child with its basis logged"
+cleanup_and_clear_children
+
 grep -q 'transition=CALM->ALERT' "$tmp/a.log"
 grep -q 'transition=ALERT->CALM' "$tmp/a.log"
 assert_timestamped_log "$tmp/a.log"
@@ -453,8 +484,10 @@ assert_timestamped_log "$tmp/e.log"
 assert_timestamped_log "$tmp/f.log"
 assert_timestamped_log "$tmp/g.log"
 assert_timestamped_log "$tmp/h.log"
+assert_timestamped_log "$tmp/j.log"
+assert_timestamped_log "$tmp/k.log"
 echo "PASS: transition records and timestamped integration logs"
 cleanup_and_clear_children
-echo "8 child-only signal integration scenarios and one config validation scenario passed"
+echo "10 child-only signal integration scenarios and one config validation scenario passed"
 trap - EXIT HUP INT TERM
 rm -rf "$tmp"
