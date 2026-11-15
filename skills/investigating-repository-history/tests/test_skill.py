@@ -160,6 +160,10 @@ class TestSmokeLocalOnly(unittest.TestCase):
         env["GIT_AUTHOR_EMAIL"] = "test@example.com"
         env["GIT_COMMITTER_NAME"] = "Test User"
         env["GIT_COMMITTER_EMAIL"] = "test@example.com"
+        # Isolate from the developer's global git config (e.g. mandatory
+        # commit-signing hooks) so plain `git commit` works in the temp repo.
+        env["GIT_CONFIG_GLOBAL"] = os.devnull
+        env["GIT_CONFIG_NOSYSTEM"] = "1"
         cls.env = env
 
         def git(*args):
@@ -263,6 +267,119 @@ class TestSmokeLocalOnly(unittest.TestCase):
         self.assertEqual(proc.returncode, 0, f"non-zero exit:\n{proc.stderr}")
         data = json.loads(proc.stdout)
         self.assertIn("file_lineage", data)
+
+
+@unittest.skipUnless(shutil.which("git"), "git not available")
+class TestNonUtf8GitOutput(unittest.TestCase):
+    """Regression: non-UTF-8 bytes in git output must not abort collection.
+
+    Old repositories routinely contain Latin-1/CP1251 commit messages and
+    file contents that are not valid UTF-8. history_context.py decodes git
+    output as UTF-8 with replacement and flags the report as lossy instead
+    of crashing.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        import tempfile
+        cls.tmpdir = Path(tempfile.mkdtemp(prefix="rhi-utf8-"))
+        env = os.environ.copy()
+        env["GIT_AUTHOR_NAME"] = "Test User"
+        env["GIT_AUTHOR_EMAIL"] = "test@example.com"
+        env["GIT_COMMITTER_NAME"] = "Test User"
+        env["GIT_COMMITTER_EMAIL"] = "test@example.com"
+        # Isolate from the developer's global git config (e.g. mandatory
+        # commit-signing hooks) so plain `git commit` works in the temp repo.
+        env["GIT_CONFIG_GLOBAL"] = os.devnull
+        env["GIT_CONFIG_NOSYSTEM"] = "1"
+        cls.env = env
+
+        def git(*args):
+            return subprocess.run(["git", *args], cwd=str(cls.tmpdir), env=env,
+                                  text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True)
+
+        git("init", "-q", "-b", "main")
+        git("config", "commit.gpgsign", "false")
+        target = cls.tmpdir / "src" / "foo.py"
+        target.parent.mkdir(parents=True, exist_ok=True)
+
+        target.write_text("def hello():\n    return 1\n", encoding="utf-8")
+        git("add", "src/foo.py")
+        git("commit", "-q", "-m", "initial: add hello")
+
+        # A commit whose message is raw Latin-1 bytes. `git commit` and
+        # `git commit-tree` transcode messages to UTF-8, so write the commit
+        # object directly with hash-object --literally.
+        target.write_text(
+            "def hello():\n"
+            "    # legacy compatibility check\n"
+            "    return 1\n",
+            encoding="utf-8",
+        )
+        git("add", "src/foo.py")
+        tree = git("write-tree").stdout.strip()
+        parent = git("rev-parse", "HEAD").stdout.strip()
+        commit_obj = (
+            f"tree {tree}\n"
+            f"parent {parent}\n"
+            "author Test User <test@example.com> 1700000000 +0000\n"
+            "committer Test User <test@example.com> 1700000000 +0000\n"
+            "\n"
+        ).encode("ascii") + "fix caf\xe9 ordering\n".encode("latin-1")
+        proc = subprocess.run(
+            ["git", "hash-object", "-t", "commit", "-w", "--literally", "--stdin"],
+            cwd=str(cls.tmpdir), env=env, input=commit_obj,
+            stdout=subprocess.PIPE, stderr=subprocess.PIPE, check=True,
+        )
+        git("update-ref", "HEAD", proc.stdout.strip().decode("ascii"))
+
+        # File content that is not valid UTF-8.
+        target.write_bytes(
+            b"def hello():\n"
+            b"    # legacy compatibility check\n"
+            b"    return caf\xe9\n"
+        )
+        git("add", "src/foo.py")
+        git("commit", "-q", "-m", "return latin1 byte literal")
+
+    @classmethod
+    def tearDownClass(cls):
+        shutil.rmtree(cls.tmpdir, ignore_errors=True)
+
+    def test_inspect_survives_non_utf8_git_output_json(self):
+        proc = run(
+            [
+                sys.executable, str(SCRIPTS / "history_context.py"), "inspect",
+                "--repo-dir", str(self.tmpdir),
+                "--path", "src/foo.py",
+                "--start", "1", "--end", "3",
+                "--question", "Can I remove this compatibility check?",
+                "--no-gh",
+                "--format", "json",
+            ],
+            timeout=120,
+        )
+        self.assertEqual(proc.returncode, 0, f"non-zero exit:\n{proc.stderr}")
+        data = json.loads(proc.stdout)
+        self.assertIs(data.get("lossy_decoding"), True,
+                      "report should set lossy_decoding when git output was not UTF-8")
+        self.assertIn("\ufffd", proc.stdout,
+                      "expected U+FFFD replacement characters in decoded git output")
+
+    def test_inspect_survives_non_utf8_git_output_markdown(self):
+        proc = run(
+            [
+                sys.executable, str(SCRIPTS / "history_context.py"), "inspect",
+                "--repo-dir", str(self.tmpdir),
+                "--path", "src/foo.py",
+                "--start", "1", "--end", "3",
+                "--no-gh",
+                "--format", "markdown",
+            ],
+            timeout=120,
+        )
+        self.assertEqual(proc.returncode, 0, f"non-zero exit:\n{proc.stderr}")
+        self.assertIn("History context report", proc.stdout)
 
 
 if __name__ == "__main__":

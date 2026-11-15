@@ -48,9 +48,16 @@ Use this when producing machine-readable output or when the user asks for a form
     "recommended_action": "proceed|modify_plan|ask_human|do_not_change"
   },
   "unknowns": [],
-  "plan_impact": []
+  "plan_impact": [],
+  "lossy_decoding": true
 }
 ```
+
+`lossy_decoding` is optional and only present when `true`: some git/GitHub command
+output contained bytes that were not valid UTF-8 (e.g. Latin-1 commit messages or
+diff content in old repositories). The scripts decode such output as UTF-8 with
+U+FFFD (`�`) replacement, so quoted text may not be exact. The inspect report also
+carries a matching note in `unknowns` and `evidence_completeness.notes`.
 
 ## Markdown history note
 

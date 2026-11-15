@@ -21,11 +21,30 @@ def eprint(*args: Any) -> None:
     print(*args, file=sys.stderr)
 
 
+# Set when any subprocess output needed U+FFFD replacement during UTF-8
+# decoding, so reports can flag that quoted text may not be exact.
+_LOSSY_DECODE = False
+
+
+def decode_output(data: bytes) -> str:
+    """Decode subprocess output as UTF-8, tolerating non-UTF-8 bytes."""
+    global _LOSSY_DECODE
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError:
+        _LOSSY_DECODE = True
+        text = data.decode("utf-8", errors="replace")
+    # Match text=True universal-newline behaviour (\r\n and \r become \n).
+    return text.replace("\r\n", "\n").replace("\r", "\n")
+
+
 def run(cmd: Sequence[str], cwd: Optional[Path] = None, timeout: int = 60) -> str:
-    proc = subprocess.run(list(cmd), cwd=str(cwd) if cwd else None, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
+    proc = subprocess.run(list(cmd), cwd=str(cwd) if cwd else None, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout)
+    stdout = decode_output(proc.stdout)
+    stderr = decode_output(proc.stderr)
     if proc.returncode != 0:
-        raise RuntimeError(f"Command failed ({proc.returncode}): {' '.join(map(shlex.quote, cmd))}\n{proc.stderr.strip()}")
-    return proc.stdout
+        raise RuntimeError(f"Command failed ({proc.returncode}): {' '.join(map(shlex.quote, cmd))}\n{stderr.strip()}")
+    return stdout
 
 
 def flatten_pages(obj: Any) -> Any:
@@ -49,9 +68,11 @@ def gh_api(endpoint: str, paginate: bool = False, cache: str = "1h") -> Any:
 def detect_repo(repo_dir: Path, explicit: Optional[str]) -> str:
     if explicit:
         return explicit
-    proc = subprocess.run(["gh", "repo", "view", "--json", "nameWithOwner", "--jq", ".nameWithOwner"], cwd=str(repo_dir), text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    if proc.returncode == 0 and proc.stdout.strip():
-        return proc.stdout.strip()
+    proc = subprocess.run(["gh", "repo", "view", "--json", "nameWithOwner", "--jq", ".nameWithOwner"], cwd=str(repo_dir), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out = decode_output(proc.stdout)
+    decode_output(proc.stderr)
+    if proc.returncode == 0 and out.strip():
+        return out.strip()
     raise RuntimeError("Could not determine GitHub repo. Pass --github-repo OWNER/REPO.")
 
 
@@ -141,6 +162,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     try:
         repo = detect_repo(Path(args.repo_dir), args.github_repo)
         data = {"github_repo": repo, "pull_requests": [fetch(repo, n, args.max_comments) for n in args.pr]}
+        if _LOSSY_DECODE:
+            data["lossy_decoding"] = True
         text = json.dumps(data, indent=2, ensure_ascii=False)
         if args.output:
             Path(args.output).write_text(text, encoding="utf-8")

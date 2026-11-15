@@ -50,30 +50,52 @@ def eprint(*args: Any) -> None:
     print(*args, file=sys.stderr)
 
 
+# Set when any subprocess output needed U+FFFD replacement during UTF-8
+# decoding, so reports can flag that quoted text may not be exact.
+_LOSSY_DECODE = False
+
+
+def decode_output(data: bytes) -> str:
+    """Decode subprocess output as UTF-8, tolerating non-UTF-8 bytes.
+
+    Old repositories can contain commit messages, author names, diffs and
+    file names in Latin-1/CP1251/etc., which git emits raw. Decode with
+    replacement instead of aborting the whole collection.
+    """
+    global _LOSSY_DECODE
+    try:
+        text = data.decode("utf-8")
+    except UnicodeDecodeError:
+        _LOSSY_DECODE = True
+        text = data.decode("utf-8", errors="replace")
+    # Match text=True universal-newline behaviour (\r\n and \r become \n).
+    return text.replace("\r\n", "\n").replace("\r", "\n")
+
+
 def run(cmd: Sequence[str], cwd: Optional[Path] = None, check: bool = True, timeout: int = 60) -> str:
     proc = subprocess.run(
         list(cmd),
         cwd=str(cwd) if cwd else None,
-        text=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         timeout=timeout,
     )
+    stdout = decode_output(proc.stdout)
+    stderr = decode_output(proc.stderr)
     if check and proc.returncode != 0:
-        raise CommandError(cmd, proc.returncode, proc.stdout, proc.stderr)
-    return proc.stdout
+        raise CommandError(cmd, proc.returncode, stdout, stderr)
+    return stdout
 
 
 def run_optional(cmd: Sequence[str], cwd: Optional[Path] = None, timeout: int = 60) -> Tuple[int, str, str]:
     proc = subprocess.run(
         list(cmd),
         cwd=str(cwd) if cwd else None,
-        text=True,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
         timeout=timeout,
     )
-    return proc.returncode, proc.stdout, proc.stderr
+    return proc.returncode, decode_output(proc.stdout), decode_output(proc.stderr)
 
 
 def json_dump(obj: Any) -> str:
@@ -252,8 +274,9 @@ def git_patch_id(root: Path, sha: str) -> Optional[str]:
     patch = git_patch(root, sha)
     if not patch.strip():
         return None
-    proc1 = subprocess.Popen(["git", "patch-id", "--stable"], cwd=str(root), text=True, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    stdout, _ = proc1.communicate(patch, timeout=30)
+    proc1 = subprocess.Popen(["git", "patch-id", "--stable"], cwd=str(root), stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout_b, _ = proc1.communicate(patch.encode("utf-8"), timeout=30)
+    stdout = decode_output(stdout_b)
     if proc1.returncode == 0 and stdout.strip():
         return stdout.strip().split()[0]
     return None
@@ -816,6 +839,9 @@ def inspect(args: argparse.Namespace) -> Dict[str, Any]:
     scored.sort(key=lambda x: x["score"], reverse=True)
     scored = scored[: args.max_prs]
 
+    if _LOSSY_DECODE:
+        warnings.append("Some command output was not valid UTF-8; quoted text may contain � replacement characters and is not exact.")
+
     all_pr_warnings = [w for s in scored for w in s.get("warnings", [])]
     evidence_completeness = {
         "local_git": "complete" if seed_commits else "partial",
@@ -980,6 +1006,8 @@ def cmd_lineage(args: argparse.Namespace) -> Dict[str, Any]:
 
 def write_output(data: Dict[str, Any], args: argparse.Namespace) -> None:
     fmt = getattr(args, "format", "json")
+    if _LOSSY_DECODE and isinstance(data, dict):
+        data = {**data, "lossy_decoding": True}
     text = as_markdown(data) if fmt == "markdown" else json_dump(data)
     if getattr(args, "output", None):
         Path(args.output).write_text(text, encoding="utf-8")
