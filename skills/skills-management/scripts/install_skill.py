@@ -14,6 +14,7 @@ if sys.version_info < (3, 11):
 
 import argparse
 import re
+import shlex
 import shutil
 from pathlib import Path
 
@@ -104,6 +105,62 @@ def copy_skill_directory(src: Path, dest: Path) -> None:
             shutil.copy2(item, dest_path)
 
 
+def blocking_matches(audit: dict, link: bool) -> list[dict]:
+    """Return the duplicate-name matches that make this install a second copy.
+
+    A link whose target already resolves to the candidate adds an alias of one real
+    directory, not an independent copy, so such a match does not block ``--link``.
+    A copy still conflicts with it: the copy can drift from the source.
+    """
+    return [
+        match for match in audit["matches"]
+        if not (link and match["relation"] == "already-discoverable")
+    ]
+
+
+def enclosing_skill_dir(start: Path) -> Path | None:
+    """Return the skill directory (one holding SKILL.md) that contains start, if any."""
+    current = start.resolve()
+    for candidate in (current, *current.parents):
+        if (candidate / "SKILL.md").is_file():
+            return candidate
+    return None
+
+
+def project_scope_refusal(cwd: Path) -> str | None:
+    """Explain why a project-scope install from cwd would land inside a skill.
+
+    Project scope resolves against the current directory. The scripts are run from
+    the skill-manager's own directory, so a forgotten ``--scope global`` would
+    otherwise install the skill inside skills-management itself.
+    """
+    skill_dir = enclosing_skill_dir(cwd)
+    if skill_dir is None:
+        return None
+    return (
+        f"The current directory is inside the skill {skill_dir}, so a project-scope "
+        "install would land inside that skill. Install for the user with --scope global, "
+        "or run from the root of the project that should own the skill."
+    )
+
+
+def global_scope_command(argv: list[str]) -> str:
+    """Return the same install command with the scope switched to global."""
+    rest: list[str] = []
+    skip = False
+    for arg in argv[1:]:
+        if skip:
+            skip = False
+            continue
+        if arg in ("--scope", "-s"):
+            skip = True
+            continue
+        if arg.startswith("--scope=") or (arg.startswith("-s") and len(arg) > 2):
+            continue
+        rest.append(arg)
+    return "uv run " + shlex.join([argv[0], *rest, "--scope", "global"])
+
+
 def install_skill(
     source: Path,
     agent: str,
@@ -144,12 +201,16 @@ def install_skill(
         skill_name = source.name
     skill_name = sanitize_name(skill_name)
 
+    if scope == "project":
+        refusal = project_scope_refusal(cwd or Path.cwd())
+        if refusal:
+            return False, refusal
+
     if not allow_duplicate_name:
         audit = audit_candidate(source, cwd or Path.cwd())
-        if audit["blocked"]:
-            locations = ", ".join(
-                match["record"]["path"] for match in audit["matches"]
-            )
+        blocking = blocking_matches(audit, link)
+        if blocking:
+            locations = ", ".join(match["record"]["path"] for match in blocking)
             return False, (
                 f"Skill name '{skill_name}' is already discoverable at: {locations}. "
                 "Reuse/update the canonical copy, or pass --allow-duplicate-name "
@@ -250,15 +311,23 @@ def main():
     # Resolve source path
     source = Path(args.path).resolve()
 
+    if args.scope == "project":
+        refusal = project_scope_refusal(Path.cwd())
+        if refusal:
+            print(f"Error: {refusal}")
+            print(f"  {global_scope_command(sys.argv)}")
+            return 1
+
     if not args.allow_duplicate_name:
         try:
             audit = audit_candidate(source, Path.cwd())
         except ValueError as error:
             print(f"Error: {error}")
             return 1
-        if audit["blocked"]:
+        blocking = blocking_matches(audit, args.link)
+        if blocking:
             print("Error: installation would add another discoverable skill with the same name:")
-            for match in audit["matches"]:
+            for match in blocking:
                 record = match["record"]
                 print(f"  - {match['relation']}: {record['path']} [{record['root_kind']}]")
             print("Run audit_skill_duplicates.py --candidate PATH, choose one canonical source, ")
