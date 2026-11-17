@@ -54,5 +54,8 @@ env/
 **/bin/
 **/obj/
 
+# Swift Package Manager cache (Swift tooling run at the repo root creates it)
+.build/
+
 # Python caches under skill script dirs (the !skills/*/scripts/lib/** negation above re-includes them)
 skills/*/scripts/**/__pycache__/
