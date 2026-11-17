@@ -179,7 +179,7 @@ This method adapts those sources to construct requirements from contrasting case
 
 | Pattern | Contribution to the working method |
 | --- | --- |
-| A.6.3.RT and A.6.3.RT.OE | Supply representation-scheme distinctions and the construction of an operative expression under available rules. A missing rule can become a notation-design question here. |
+| A.6.3.RT and A.6.3.RT.OE | Choose a representation and a medium that support the intended operation. If using an existing notation, construct the expression under its formation and interpretation conventions. Develop a missing convention here when it prevents the required construction or reading. |
 | C.2.8 | Characterizes recoverable structure for a prepared reader with stated access and effort; use it when extraction difficulty changes the notation choice. |
 | C.40.CD | Develops a problem and candidate ways of dealing with it together when a notation trial changes the useful question. |
 | C.11.DUA | Helps decide whether another comparison or reader probe can change the choice enough to justify its cost. |

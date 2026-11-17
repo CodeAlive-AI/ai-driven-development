@@ -186,7 +186,7 @@ QL boundary selection:
 | Is this ordinary evidence, provenance, method, or carrier issue? | `A.10` and, when assurance-bearing, `B.3`. |
 | Is this ordinary work, routine, incentive, alignment, or authority issue? | `A.15` and neighboring work/authority patterns. |
 | Is this ordinary quality-bundle, viability, feedback, or dynamics tuning? | `C.25`, `U.Dynamics`, and measurement or work patterns. |
-| Is this ordinary representation-scheme transition or controlled coarsening? | `A.6.3.RT`, `A.6.3.CSC`, and ordinary representation patterns. |
+| Is this ordinary representation transition or controlled coarsening? | `A.6.3.RT`, `A.6.3.CSC`, and ordinary representation patterns. |
 | After the ordinary subject patterns, does one named contextual-model obstruction such as no-global-section, incompatible probe algebra, or order-sensitive instrument behavior still change the admissible inference or action? | Use `C.26` or the relevant `C.26.*` child with the minimum sufficient field set; otherwise omit QL wording. |
 
 The following questions can organize a retained QL use in ordinary prose or a record. Include the identity, grounding and viewpoint distinctions only where the claim or receiving use consumes them.
@@ -391,14 +391,14 @@ Evidence-use class scales by use:
 
 Use this card when a fuller state representation is too detailed, unstable, unavailable, or expensive for the current bounded decision and a reduced-detail state representation is useful only under a declared QL cue.
 
-`A.6.3.CSC` carries controlled coarsened rendering; `A.6.3.RT` carries same-selected-entity representation-scheme transition; `A.19`, `U.Dynamics`, modeling patterns, and ordinary abstraction patterns carry ordinary state abstraction. C.26 carries only the residual QL cue plus the loss/use boundary for this shortcut.
+`A.6.3.CSC` carries controlled coarsened rendering; `A.6.3.RT` carries same-selected-entity representation transition; `A.19`, `U.Dynamics`, modeling patterns, and ordinary abstraction patterns carry ordinary state abstraction. C.26 carries only the residual QL cue plus the loss/use boundary for this shortcut.
 
 Question-to-pattern map:
 
 | Main question | First FPF pattern or relation |
 | --- | --- |
 | Coarsened rendering of source episteme or source publication for narrower use | `A.6.3.CSC` |
-| Same-selected-entity representation-scheme or reasoning-medium transition | `A.6.3.RT` |
+| Same-selected-entity representation-language or reasoning-medium transition | `A.6.3.RT` |
 | Cross-context equivalence, substitution, projection, export, or loss | `F.9` for an exact SenseCell Bridge and its bounded-use claim; `F.9.1` only for an optional stance note about that claim. Use the subject pattern for other export or loss claims. Keep the lens-specific preserved and lost structure here. |
 | Measurement coordinate, scale, score, result, or dashboard reading | `C.16` |
 | Evidence carrier, provenance, method, support, or time window | `A.10` |
@@ -558,7 +558,7 @@ Use these as quick applicability tests. The ordinary result, including a result 
 | Market "expects" a feature because many actors change behavior. | Identify the bearer or trace population and examine the domain, incentive and evidence account. | Inferring expectation or a collective System from parallel traces alone. | Retain the supported behavior or state claim, distinguishing it from the explanation of the movement. |
 | Latency is green while support load and customer promise degrade. | `C.25` / `C.16` first; `C.26.3` for multi-characteristic envelope regulation under disturbance when a candidate intervention, boundary condition, adaptation cost, or failure mode matters. Retain `C.26` / QL only when the residual contextual-model obstruction condition holds. | Calling one green metric viability. | Add envelope variables, actuators, costs, and failure mode. |
 | Summary compresses an architecture decision for executives. | Use an adequate coarsening account; retain QL only for a named residual obstruction. | Assuming the summary retains every decision-relevant distinction. | Use the summary where its contents suffice; recover omitted detail when the receiving decision depends on it. |
-| Diagram translates the same system into graph form. | `A.6.3.RT` first; no QL unless incompatible representation, probe, or export cue remains. | Calling any diagram a QL state model. | Declare representation-scheme change, reasoning-medium change, and source tether. |
+| Diagram translates the same system into graph form. | `A.6.3.RT` first; no QL unless incompatible representation, probe, or export cue remains. | Calling any diagram a QL state model. | State how the representation language or the reasoning medium changed and which source content must remain recoverable. |
 | Low-bit model approximates expensive simulation. | Modeling, approximation, compression, or implementation pattern first; QL only if the shortcut claim depends on QL state, probe, or frame admissibility. | Treating low-bit or linear form as QL activation. | State the approximation and its relevant loss or error and use limits. If a performance advantage is claimed, supply its comparison under :4.5. |
 | Assurance load is raised because a QL explanation is published, reused or written formally. | Identify the receiving conclusion and what support it needs under :12b. | Making a fuller record without resolving a consequential question. | Reuse the adequate account; add only the missing mathematical, empirical or assurance contribution needed for the new use. |
 | Author claims QL is faster or better than a classical method. | Supply the named baseline, comparison quantity, conditions and grounds under :4.5. | Accepting superiority rhetoric. | State the supported comparison, or qualify or withdraw the unsupported advantage. |

@@ -41,9 +41,9 @@ Recover source semantics at the smallest grain that can change the receiving ans
 2. **Identify the source asset and carrier.** Record publisher or owning System, title or endpoint, profile/module, version or edition, publication and effectivity, retrieval location, and carrier kind. Keep the asset distinct from the concepts and claims it carries.
 3. **Recover the local scheme and scope.** State the domain, population, lifecycle state, configuration, jurisdiction, or Work context in which the source definitions apply.
 4. **Recover exact meanings.** For every load-bearing endpoint, record the designation, definition or operative rule, type/relation role, examples and counterexamples, units or codes, and unresolved ambiguity. Use source-local language before normalizing it.
-5. **Separate identifiers and identified entities.** Record the scheme, issuer or owner, syntax, resolution behavior where relevant, use restrictions, grain, interval, and what the identifier does not establish.
+5. **Resolve an identifier for this use.** Identify the entry, the kind and grain of entity it can designate, and the restrictions on its use. For an issued identifier, recover the applicable assignment, its authority and its interval. For a designation resolved by a rule, establish that rule and the context in which it picks out an entity. If the sources form or resolve entries differently for this use, compare their [languages of designations](../../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/16-e-5-2-l---languages-expressions-and-interpretation.md). When the rules agree, use that agreement and examine the particular bindings. State what remains unknown.
 6. **Separate claims, data, and provenance.** Record which claim a data item represents, its scope and time, how it was derived, who or what supplied it, and which uncertainty or status accompanies it. Provenance does not make the claim true.
-7. **Recover authority and access.** Name who may define the scheme, issue identifiers, decide authoritative values, approve local extensions, grant access, and authorize receiving use. Mark unsupported assumptions.
+7. **Recover authority and access.** Identify who sets the source conventions, who can issue or reassign an identifier, who decides authoritative values and who may approve extensions, grant access or authorize receiving use. Mark unsupported assumptions.
 8. **Assess currentness and use adequacy.** Compare the source premise with the contract. State whether it is adequate, adequate only under conditions, unresolved, obsolete for this use, inaccessible, or missing.
 9. **Request a model that supplies the missing distinction.** If the required distinction cannot be expressed in the available source or supplied semantic model, request `UseFitSemanticModel@Use`; do not hide the gap in a mapping rule.
 10. **Record dependencies and next results.** Identify the exact definitions, editions, authority facts, and gaps consumed by `SIE.4`–`SIE.10`, plus observations that reopen this inventory.
@@ -55,7 +55,7 @@ Recover source semantics at the smallest grain that can change the receiving ans
 | source identity | owning/publishing System, asset or endpoint, profile/module, carrier, location |
 | edition and applicability | version/edition, publication, effectivity/configuration/interval, local extension status |
 | local semantic endpoints | designation, definition or operative rule, type/relation role, scope, examples/counterexamples, units/codes |
-| identifiers | scheme, issuer/owner, syntax, resolution behavior, restrictions, grain, interval, identified-entity claim |
+| identifiers | entry and applicable syntax, resolution rule and context or assignment and its authority, use restrictions, entity grain, relevant interval and supported or unresolved referent |
 | claims and data | source claim, represented data item, scope/time, uncertainty/status, derivation and provenance |
 | authority and access | meaning, identifier, value, extension, access, and receiving-use authority scopes |
 | qualification | adequate, conditional, unresolved, obsolete, inaccessible, missing, or model-gap return with reason |
@@ -94,7 +94,7 @@ The inventory marks an unresolved local AP242 extension used by one feature clas
 - [ ] Source asset, carrier, local scheme, semantic endpoint, identifier, claim, data item, and referent remain distinguishable.
 - [ ] Edition, profile/module, effectivity/configuration/interval, and local extensions are explicit where load-bearing.
 - [ ] Definitions or operative rules include scope and at least one discriminating example or counterexample where ambiguity matters.
-- [ ] Identifier scheme, issuer/owner, grain, interval, restrictions, and resolution assumptions are explicit.
+- [ ] The source entry, entity grain, relevant interval, restrictions and grounds for resolving it are explicit. For an issued identifier these include the applicable assignment and its authority.
 - [ ] Claims retain provenance, scope, time, status, and uncertainty without treating provenance as truth.
 - [ ] Meaning, identifier, authoritative-value, extension, access, and receiving-use authorities remain separate.
 - [ ] Every row has an adequate, conditional, unresolved, obsolete, inaccessible, missing, or model-gap disposition.
@@ -106,7 +106,7 @@ The inventory marks an unresolved local AP242 extension used by one feature clas
 | --- | --- |
 | Data dictionary by column name | Add source-local definition, scope, edition, units/codes, examples, and authority. |
 | Standards title as implementation evidence | Inspect the local profile, export, extension, occurrence, and conformance evidence. |
-| “Same ID format means same object.” | Record scheme, issuer, grain, interval, and identified-entity claim; use `SIE.5` for cross-source identity. |
+| “Same ID format means same object.” | Recover each entry’s resolution rule and context or assignment and issuer, and state the supported entity, grain and interval. Use `SIE.5` for cross-source identity. |
 | Provenance equals truth | Keep derivation and source authority separate from domain truth and receiving acceptance. |
 | Read every source | Start from the contract and add only action-changing premises. |
 | Patch a model gap in code | Return the missing semantic-model result before relying on the rule. |

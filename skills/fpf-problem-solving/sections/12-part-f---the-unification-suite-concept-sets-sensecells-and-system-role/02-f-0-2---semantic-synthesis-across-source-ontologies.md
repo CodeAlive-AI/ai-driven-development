@@ -6,9 +6,9 @@
 
 ### F.0.2:1 - Problem frame
 
-Use this pattern when several sources describe the same working question through materially different concepts, relations, explanations, or boundaries, and those differences can change a named authoring decision or a contribution to one subject pattern.
+Use this pattern when sources answer the same inquiry through different concepts, relations or explanations and the difference matters to what someone can conclude or do. The recipient may need the comparison itself, a way to act that depends on it, or a contribution to a framework pattern.
 
-Here semantic synthesis means comparing and developing claims through the concepts, relations and boundaries used by their sources. Conceptual synthesis names this semantic work; it can concern theories of action as well as other subject matters.
+In this pattern, **conceptual synthesis** and **semantic synthesis** name the same work. It means comparing and developing claims through the concepts, relations and boundaries used by their sources. It can concern a theory of action or any other subject. When undertaken to construct or revise a method, this conceptual work is part of methodological synthesis. Its conclusions can also answer an inquiry in their own right.
 
 The primary concern is one bounded semantic-synthesis question for one declared receiving use. The first useful move is to state that question and the difference that could change the next decision. Keep each source claim local through `F.0.1`, choose the source cut through `F.1`, then compare the claims here.
 
@@ -20,7 +20,7 @@ The primary concern is one bounded semantic-synthesis question for one declared 
 
 ### F.0.2:2 - Problem
 
-Framework authors often receive maintained syntheses, books, papers, standards, models, and current alternatives whose ontologies are partly similar and partly incompatible. Lexical alignment can reveal candidate correspondences, but it cannot decide whether the receiving framework should adopt a shared claim. A literature summary can preserve sources, but it may never state what changes in practice.
+Researchers, practitioners and framework authors often receive accounts that use similar terms for different relations or explanations. A correspondence between terms identifies a comparison to make. To decide what follows, recover what each source says about the same inquiry, under which conditions and on what grounds.
 
 Three failures follow:
 
@@ -45,20 +45,20 @@ Semantic synthesis must preserve source-local meanings while returning a positiv
 
 #### F.0.2:4.1 - Bounded synthesis method
 
-1. **Name the receiving question and use.** State the authoring decision or subject-pattern contribution that may change. Name the practical action and first result under consideration when a pattern contribution is being proposed.
+1. **Name the receiving question and use.** State what someone needs to establish or do, and which difference between the accounts could change that answer. For a research inquiry, name the conclusion the comparison should support or qualify. If a method or a pattern is being developed, name the operation or practitioner decision the comparison could change.
 2. **Recover source-local claims.** For every load-bearing source, identify the claim, its EntityOfConcern, effective ReferenceScheme, edition, source role, and the context in which the claim is used. Apply `F.0.1`; use `F.9` only when the comparison asserts a relation between exact cross-context SenseCells.
 3. **Choose a bounded source cut.** Apply `F.1`. Include the sources needed for the intended use, known rival explanations, action-changing counterexamples, transfer limits, and material non-fit. State why each selected source can change the decision.
-4. **Compare what changes action.** Compare concepts, relation participants, explanations, contexts, assumptions, source roles, counterexamples, losses, and validity limits. Treat lexical or model correspondences as proposals to inspect, not as conclusions. Use **B.5.TC** when the difference between theoretical accounts needs a constructed comparison: work the same question in each, locate the consequential difference and retain complementary or unresolved contributions.
+4. **Compare the consequences of the source claims.** Work the same question in each account. Keep the entities, relations, conditions and grounds identifiable. If two proposed relations coincide in the familiar material, look for an admissible change that preserves one while changing the other. State what each account then lets the recipient infer or do. If their consequences agree throughout the intended scope, show why that agreement holds there. Complementary claims can support a joint conclusion when the premises for using them together hold. If the available grounds do not establish the relation for this use, identify what is missing. **B.5.TC** develops this comparison for rival theoretical accounts.
 5. **Write one first result.** Write a provisional synthesis claim when a positive shared contribution is warranted; a contrast claim when the proposed unification is not warranted for the named use; or an unresolved-inquiry claim when a named source gap prevents either substantive answer.
-6. **Return the result to its receiving decision.** Keep the claim, source edition and grounds recoverable, and name the content, placement or pattern-allocation question it answers. Add a stable local locator, such as `SE-CS-03`, when later citation or replay needs that address. C.2.1 governs an explicitly identified claim episteme.
+6. **Return the result to its intended use.** Show which conclusion the recipient can now draw or qualify and on what grounds. When the work informs construction of a method, identify the operation or condition it changes. For a framework contribution, name the content or placement decision it informs. Keep the source edition recoverable and give the result a stable locator when it will be cited or replayed. C.2.1 governs an explicitly identified claim episteme.
 7. **Decide what to do with the result.** Use the options for its branch in §4.3. When the receiving use requires a record, state the decision and cite the exact result and source edition. A result awaiting the decision remains a proposal; silence or citation alone is not acceptance.
 8. **Keep the source use revisable.** Identify the source claims and editions relied on, why each matters to this result, what was deliberately left local or rejected, and which change reopens the comparison.
 
-Stop after one bounded synthesis slice when it answers the named authoring question. Enter clustering, Concept-Set, naming, UTS, or broad source harvesting only when the next question requires that additional result.
+Stop when the result answers the receiving question to the extent the sources allow. If a material premise is missing, state what remains open and what would settle it. Enter clustering, Concept-Set development, naming, UTS or broad source harvesting when the next use needs that further result.
 
 #### F.0.2:4.2 - Source-basis branches
 
-| Source situation | Authoring move | Boundary |
+| Source situation | How to use the source | Boundary |
 | --- | --- | --- |
 | An admitted maintained synthesis already integrates a field | Recover every occurrence that can change the receiving question. Follow its cited sources where a load-bearing distinction or limit depends on them, and compare current alternatives that could change the answer. | The synthesis is a valuable conceptual map, not independent confirmation of its own integrated claims. |
 | Several independent sources answer the question | Give each source an explicit role: proposed contribution, rival explanation, counterexample, boundary, evidence limit, or current alternative. | A reading list or source count does not establish coverage or relevance. |
@@ -72,7 +72,7 @@ A result identified as a claim-bearing episteme retains its C.2.1 identity `<cla
 
 | Result | What the claim concerns | What it says | Required receiving disposition |
 | --- | --- | --- | --- |
-| **Provisional synthesis claim** | The proposed domain or pattern contribution, interpreted through the receiving scheme and the declared source-local correspondences used in the comparison. | A positive cross-source claim with scope, source roles, retained differences, and limits. `Provisional` means proposed for a later decision, not accepted framework meaning. | The receiving decision determines whether the proposal is used as written, revised into a newly identified claim, not used for the named purpose, or reopened. |
+| **Provisional synthesis claim** | The proposed account of the subject, with the interpretation used in the comparison and the correspondences to the sources. | A positive cross-source claim with its scope, source roles, retained differences and limits. It is available for the recipient to examine. | The recipient can use the claim with its limits, revise it as a separately identifiable claim, decline it for this use or reopen the comparison. |
 | **Contrast claim** | The candidate unification or proposed shared contribution being tested, interpreted through the receiving scheme and the source-local comparison rules. | Why the inspected comparison does not warrant that unification for the named use. It preserves the source-local claims and any narrower positive claim that remains supported. | The receiving decision keeps the source claims distinct for the named use, adopts a narrower or revised claim, does not use the contrast, or reopens the comparison. |
 | **Unresolved-inquiry claim** | The bounded inquiry state, interpreted through the receiving scheme and the source-currentness, adequacy, and comparison rules available for this inquiry. | A named missing, stale, or too-weak source prevents the inquiry from choosing between a provisional synthesis and a contrast. It states what remains usable and the next source action; it does not assert that the disputed claim is false. | The receiving decision retains the bounded unresolved result and its usable remainder, commissions the named source action, ends the named use, or reopens the comparison. Any later substantive answer is a separately identified result. |
 
@@ -80,7 +80,7 @@ The source gap is the reason and closure condition for an unresolved-inquiry cla
 
 #### F.0.2:4.4 - Bounded method and broad SoTA-pack method
 
-Use `F.0.2` for one ontology-to-subject-pattern question whose smallest useful result is one of the three claims above. Use `G.2` when a `CG-Frame` needs a broad, refreshable harvesting surface with a CorpusLedger, Claim Sheets, palette, inventories, alignment records, examples, and declared G.3-G.5 handoffs.
+Use `F.0.2` when one bounded comparison of source meanings can answer the receiving inquiry with a synthesis, a contrast or a statement of what remains unresolved. Use `G.2` when a `CG-Frame` needs a broad, refreshable harvesting surface with a CorpusLedger, Claim Sheets, palette, inventories, alignment records, examples, and declared G.3-G.5 handoffs.
 
 An author may use identified claims and provenance from a `G.2` pack as inputs here. The author must compare retained differences, limits, receiving use, and reopen conditions before writing an `F.0.2` result. The bounded comparison does not require the rest of the pack when the question does not use it.
 
@@ -94,7 +94,9 @@ A DPF may need a reliable current domain ontology so practitioners can recognize
 
 #### F.0.2:4.6 - Semantic and methodological results
 
-A semantic result states what may be claimed about a named subject. It identifies the kinds and relations needed to interpret that claim, the grounds for it, and where source accounts agree or differ. A semantic result can concern actions and Methods. Methodological synthesis constructs ways of acting by selecting, adapting or connecting operations, including their conditions, what each operation supplies, and which choice to revisit when a condition changes. Ask which of these contributions the recipient needs. A document can supply both.
+A conceptual synthesis states what the source accounts warrant about an identified subject, which kinds and relations support the claim, and where a disagreement remains. This can be the result a recipient asked for, including a result about actions or methods.
+
+When the requested result is a new or revised way of working, call the whole undertaking **methodological synthesis**. Use established concepts where they suffice. If the source accounts disagree about what an operation acts on, what it supplies or what counts as success, compare those accounts. An agreement can supply a shared premise. If different readings are warranted under different conditions, provide for each in the method. If a premise remains open, obtain the evidence, use a way that works under either reading, or withhold the conclusion that depends on it. Trying the method can in turn reopen a conceptual conclusion. When the comparison is also needed as a reusable explanation in its own right, name both deliverables and what supports each. One recipient can need both in a single commission.
 
 Carry each result to the scope at which its recipient will use it. A transdisciplinary way of reasoning can guide the work of a single discipline. Identify the conclusion at stake, examine how the field's types and relations warrant it and revisit dependent conclusions when a premise changes. In interdisciplinary work, identify what each field supplies and what correspondence lets another field use its result. When two contributions appear to conflict, establish whether they concern the same subject under the same conditions. If the accounts are consistent but the products cannot work together, identifying the incompatibility may answer the inquiry. When the purpose requires joint operation, consider a change to the arrangement or the products and test whether it resolves the incompatibility. If the claims still conflict, identify what further evidence or revised account could resolve the conflict. Carry forward the conclusions whose grounds hold. A discipline supplies the particular means by which those grounds can be obtained or tested. A field method can be complete at this scope before a project selects staff, tools or a schedule. In a project, choose an applicable way and recover the local evidence needed for the next action. Reuse a known way when it suffices. Where several pattern Solutions supply the Method, connect the result of each needed operation with the operation that uses it, including the alternative or return if that result is unavailable. This is how a language of patterns expresses a way to act across cases. Use the mantra in C.39.WA:4.3 when an inference changes what the claim concerns, extends it to other cases, or changes which way applies. Name the relation and the grounds for that particular move. C.39.RO:4.2–4.5 develops the grounds for generalizing an operation.
 
@@ -172,7 +174,7 @@ This pattern favors explicit source roles and positive integration over a single
 - `CC-F0.2-3` The source cut covers the intended use, known rival explanations, action-changing counterexamples, transfer limits, and material non-fit by relevance rather than by a universal count or distance threshold.
 - `CC-F0.2-4` Similarity, correspondence, Bridge, framework fit, or `G.2` pack conformance is used as input and not as synthesis truth or permission to merge.
 - `CC-F0.2-5` The result is one provisional synthesis claim, contrast claim or unresolved-inquiry claim whose content, subject, interpretation basis and sources are recoverable. Add a stable local locator when later citation or replay needs it.
-- `CC-F0.2-6` The result answers its receiving content, placement or pattern-allocation question. Keep any decision record required by that use; an absent disposition is not acceptance.
+- `CC-F0.2-6` The result identifies the inference, action or framework decision its grounds support and what remains open for that use. Keep any decision record required by the recipient.
 - `CC-F0.2-7` The result identifies the source claims and editions it relies on, why each matters, retained differences and limits, and material reopen conditions.
 - `CC-F0.2-8` An unresolved-inquiry claim concerns the inquiry state, names what remains usable and the next source action, and does not turn missing evidence into a negative domain claim.
 - `CC-F0.2-9` Domain roles, methods, examples, evidence bases, and refresh lines stay in their subject DPF; the reusable synthesis move remains independent of those DPFs.
@@ -184,7 +186,7 @@ This pattern favors explicit source roles and positive integration over a single
 | --- | --- | --- |
 | Crosswalk as synthesis | Candidate correspondences are presented without a receiving claim or practical action. | State the receiving question, compare action-changing differences, and write one of the three result claims. |
 | Similar words as one concept | Lexical resemblance hides different entities, relations, or explanatory roles. | Restore source-local claims through `F.0.1`; add an `F.9` Bridge only for a relation the comparison asserts. |
-| Literature narrative without a move | Sources are summarized but no authoring decision changes. | State the proposed practitioner action and first result, or close with a contrast or unresolved inquiry. |
+| Literature narrative without an answer | The sources are recognizable, yet the reader cannot say what follows from comparing them. | Return the supported conclusion, the consequential difference or the specific question still open. Show which operation changes if a method depends on it. |
 | Framework fit as assurance | Material is forced into the receiving ontology and fit is treated as truth. | Keep non-fit visible and separate authoring proposal, evidence use, admission, and reliance. |
 | Missing source as falsity | An unavailable or weak source is used to reject the disputed claim. | Make the bounded inquiry state the EntityOfConcern and name the source action that may close it. |
 | Heavy pack by default | Every bounded question is expanded into a full `G.2` programme. | Use one bounded comparison; use `G.2` only when its broad harvesting and handoff result is needed. |
@@ -206,7 +208,7 @@ Costs and trade-offs:
 
 ### F.0.2:10 - Rationale
 
-Semantic synthesis is the middle move between preserving local meaning and publishing a unified term or subject-pattern contribution. Lexical alignment proposes correspondences. The author must establish what claim the comparison warrants for the receiving use. A literature inventory identifies sources but leaves the practitioner action unspecified. Many authoring decisions need only one bounded comparison, so the method should not require a full `G.2` pack.
+A shared vocabulary can help locate the claims to compare. The comparison earns its cost when it establishes what the sources jointly warrant, where their accounts differ, or which evidence would settle a consequential disagreement. That result can answer an inquiry directly, change a method or inform a pattern. One bounded comparison often suffices.
 
 The three result branches keep the method constructive without forcing agreement. A provisional synthesis opens a positive contribution, a contrast preserves a decision-relevant difference, and an unresolved inquiry turns a source limitation into a defined next action. Ordinary `C.2.1` claim identity keeps those results separately revisable.
 
@@ -233,7 +235,7 @@ F.0.2.MA uses a synthesis, contrast or unresolved-inquiry result to allocate Met
 - **Coordinates with:** `F.2`-`F.8`, `F.14`, `F.17`, and `F.18` when the next authoring question requires harvesting, clustering, Concept-Set, naming, or UTS work.
 - **Coordinates with:** `G.2` as the optional broad harvesting method. Identified claims and provenance from a `G.2` pack may supply inputs here; the pack does not replace the receiving comparison.
 - **Coordinates with:** `E.4.DPF` for DPF entry and result placement, `E.10.ARCH` for DPF-local wording entries under the shared restoration method, and `G.11` for source-currentness and refresh work.
-- **Coordinates with:** C.39 for general Method construction, connected explanation and change, and E.4.CM for their application to framework authoring. Their methodological results and this semantic comparison remain distinct and can revise each other.
+- **Coordinates with:** C.39 constructs, connects and revises the operations of a method. E.4.CM develops the public explanation when a framework author undertakes this work. A comparison here can supply a premise or expose an unresolved condition for an operation. Trying the method can in turn reopen that comparison.
 - **Boundary:** Domain claims produced through this method remain in the subject FPF pattern or named DPF selected by the later content decision.
 
 [fpf-c28-4-4-ref]: ../09-part-c---kernel-extension-specifications/54-c-28---causaluse-cal-causal-use-questions-identification-and.md#c2844---identification-result

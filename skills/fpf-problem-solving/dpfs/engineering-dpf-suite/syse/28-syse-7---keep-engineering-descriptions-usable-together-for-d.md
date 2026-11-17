@@ -171,6 +171,10 @@ unaffected claims. This work can remain within the existing data-management arra
 Description production, realization, checking, operation, and decision Work can overlap. Comparing claims
 requires recoverable claim content and subjects.
 
+**When the commission specifies whole-system coverage.** Recover the agreed scope of the account. One systems-modeling brief calls for function, construction, spatial placement and life-cycle cost at relevant system scales, together with the creator systems and the methods of creation and evolution. Check that coverage when the brief calls for it. Identify the subject of each claim. A proposed placement can support a design decision. Claiming the component is actually installed requires an obtaining part relation. The builder's schedule concerns planned work, and its cost estimate depends on priced resources and assumptions. Only an admitted system can hold a system-role assignment under A.2.1. For a narrower engineering decision, stop once its decision-changing claims have adequate descriptions and grounds.
+
+**When a successor must check or reproduce the result.** To repeat, adapt or examine the original derivation, make its production method, inputs and assumptions recoverable. For an independent comparison, establish the target, configuration, conditions, units and meaning needed to compare the results. A conflicting measurement can challenge a prediction even when the original calculation is unavailable. An estimate based on field failures and one based on scheduled replacements can agree for the current design yet require different updates. A usable reference to the method and the applicable local inputs can suffice. C.37.MM gives the general coordination and handover method.
+
 #### SYSE.7:4.2 - Record the Result
 
 Keep a compact `EngineeringDescriptionEnsembleAccount@Project` for the receiving decision. Reuse applicable
@@ -419,8 +423,7 @@ applicable to the same architecture decision, configuration and horizon can info
   its explicit correspondence, preserved structure, loss, and stop condition are current.
 - `E.17.0` supplies the dependent `U.View` membership and viewpoint-conformance relation; `E.17` and
   `E.24.PUB` keep selected episteme, publication occurrence, form, carrier, reader, and use distinct.
-- `A.6.3.RT` governs a representation-scheme transition when the same `EntityOfConcern` is deliberately
-  redescribed; it does not establish world-side identity or the correctness of the receiving claims.
+- `A.6.3.RT` helps an engineer change the representation of the same `EntityOfConcern` when the new language or reasoning medium supports a needed inspection, comparison or calculation. Establish the identity of the actual subject and the grounds for the resulting claim separately.
 - `A.10`, `B.3`, and `G.11` govern evidence reliance, assurance, and source-edition currentness. `SYSE.10`
   specializes the return from research, models, and trials to engineering decisions.
 - `E.15`, `C.27`, `SYSE.13`, `SYSE.14`, and `SYSE.19` govern configuration continuity, temporal claims, change,

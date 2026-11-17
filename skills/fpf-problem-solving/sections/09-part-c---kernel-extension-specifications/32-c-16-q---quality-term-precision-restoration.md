@@ -104,7 +104,7 @@ qualityTermAscription :=
   evaluatorRef: exact evaluator or policy ref | none,
   viewpointRef: U.ViewpointRef | none,
   referencePlane?,
-  representationSchemeRef?: U.RepresentationScheme ref,
+  representationLanguageRef?: U.RepresentationLanguageRef,
   normalForm: SignalPack | Characteristic | Bundle | Objective,
   claimScope: U.ClaimScope,
   contextSliceRefs?: exact U.ContextSlice refs,
@@ -240,7 +240,7 @@ A conforming `qualityTermAscription` SHALL make explicit:
    Name the intended quality-sense family; retain the evaluative criteria when the claim evaluates that subject.
 
 3. **Effective ReferenceScheme.**
-   State the effective reference scheme by value in the C.2.1:4.1.2 range `EpistemeInterpretationScheme`: supply the designation and interpretation rules with their semantic dependencies so every designator and local sense in the ascription is interpretable. A generic context label or a representation scheme is not a substitute.
+   State the effective reference scheme by value in the C.2.1:4.1.2 range `EpistemeInterpretationScheme`: supply the designation and interpretation rules with their semantic dependencies so every designator and local sense in the ascription is interpretable. The name of a context or representation language alone leaves those rules unspecified.
 
 4. **Probe or model frame.**
    Name the exact domain-local exemplar pack, probe pack, test or criticism pack, Q-bundle definition, CG-frame, acceptance specification, control horizon, or other governed probe/model configuration.
@@ -260,8 +260,8 @@ A conforming `qualityTermAscription` SHALL make explicit:
 9. **Reference plane when relevant.**
    Name the plane when the same trigger phrase could concern the EntityOfConcern being described, its description, a carrier, or a publication face.
 
-10. **Representation scheme and substrate when relevant.**
-    Keep the effective reference scheme distinct from any representation scheme, viewpoint-specific decoding convention, or embodied-kinesthetic, latent-distributed, symbolic-local, or hybrid substrate. Name each when omission changes interpretation.
+10. **Representation language and substrate when relevant.**
+    When it matters to this use, identify the representation language of the selected expression of the quality-term ascription. If the use depends on reading a source expression or a separately obtained result claim, identify the language of that expression in its own right. Retain the effective interpretation rules of the ascription. A viewpoint-specific decoding convention or an embodied-kinesthetic, latent-distributed, symbolic-local or hybrid substrate may also matter. Name each when omission changes interpretation.
 
 11. **Witnesses, evidence use, and empirical grounding when relied on.**
     Name the witnesses relied on for this use. If an evidence-provenance path is relied on, use A.10 for its descriptive account and cite each obtaining direct relation under the pattern that defines it. When empirical grounding is at issue, independently cite an obtaining `EpistemeEmpiricalGroundingRelation`, or state `none`; witness or record presence does not create that relation.
@@ -422,7 +422,7 @@ In **Tech and normative prose**:
 A transitional ascription can be elaborated as its interpretation becomes clearer. Changed grounds can also require revising or withdrawing earlier content; elaboration is not necessarily monotone:
 
 1. Select a **`QualitySense`** and retain rival candidates while the intended sense remains unresolved.
-2. Name the exact bearer, effective ReferenceScheme, `U.ClaimScope`, and any meaning-changing `Γ_time`, reference plane, representation scheme, or substrate.
+2. Name the exact bearer, effective ReferenceScheme, `U.ClaimScope`, and any meaning-changing `Γ_time`, reference plane, language of the selected expression, or substrate.
 3. Name the probe or model frame and the separate comparison frame or explicit `none`; then name evaluator and `U.ViewpointRef` independently.
 4. Choose an admissible **normal form** and identify any separately constituted quality-result claim.
 5. Add exemplars, probes, characteristic heads, bundle members, objective pins, witness refs, and exact A.10 evidence-provenance paths as needed. Cite empirical grounding only through an independently obtaining relation.

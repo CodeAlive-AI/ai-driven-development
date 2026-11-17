@@ -2,6 +2,8 @@
 
 The **target practice** is what the receiving performers are trying to do. The **support strategy** is the proposed way of helping them establish, use or revise it. The **support arrangement** supplies the people, systems, time, tools, access and decisions needed for that strategy. A **support undertaking** is the bounded work and commitments through which that help is provided.
 
+Identify the recipient and provider by the contributions needed. A teacher, colleague, consultant or technical agent may supply part of the help, within the applicable competence and rights. Library.Reference:9.2 connects these role names to actual operations, intended capability changes and retained provision. Receiving help does not by itself establish recipient Work or acquisition of a capability.
+
 These distinctions change action. A different explanation of a target method may repair its description without changing the method. Replacing a classroom session with rehearsal changes the support strategy. Repairing an unavailable reference changes the arrangement. Changing the target's decision criterion can change the method itself. To attribute a successful result to one of these changes, establish its causal contribution.
 
 Establish which of the following results the recipient needs. An undertaking can require more than one.

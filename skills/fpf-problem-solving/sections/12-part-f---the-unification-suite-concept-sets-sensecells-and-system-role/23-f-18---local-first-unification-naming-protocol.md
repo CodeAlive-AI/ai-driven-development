@@ -544,6 +544,22 @@ If the reuse did occur, recover the claimed result under its own rule: actual Wo
 
 Until the Bridge, separate claim, and required reliance are current, keep the names local or record the unresolved alignment. A reference-scheme or model-use-structure difference alone supplies neither a premise nor governed-value identity.
 
+#### F.18:4.5 - Model refinement, abstraction and relative levels
+
+These three compact NameCards settle names used in B.5.MR and its Library, teaching and project uses. Their governed values are two relation kinds and one kind of relative comparison position, each a local `U.Kind`. B.5.MR supplies their predicates. Naming a relation kind does not identify a particular relation occurrence or the Work that constructs a model.
+
+For all three cards, the effective interpretation is as follows. A model is read for a stated inquiry under an established interpretation. A completion satisfies its assertions and settles an answer for that inquiry; the relevant probability claims are included. Refinement requires at least one completion of C and satisfaction of A by every completion of C under that interpretation. Abstraction reads the same relation in the converse direction. Strictness requires an A-answer excluded by C. Equivalent answers share a comparison position; incomparable models have no higher/lower order under this comparison. These rules give the by-value ReferenceScheme for the naming claims and associated cells. Select the cited B.5.MR and naming records in the same publication edition.
+
+| NameCard and governed value | Exact local sense and selected Tech designation | Candidate comparison and selection | Lineage and reopening |
+| --- | --- | --- | --- |
+| `NC-MODEL-REFINEMENT`; B.5.MR:4.2 refinement relation kind | **model refinement**: C refines A exactly when the feasible-preservation test above holds. Strictness adds exclusion. | Refinement retains the specification-theory comparison. Stronger model can suggest quality; specialization can mean type restriction; detailing can change expression alone. Concretization has a separately defined mathematical use in abstract interpretation and is not an unqualified English alias here. | Retains the established English designation and states its converse. Reopen when the predicate, inquiry interpretation or supported construction changes, or repeated use confuses preservation with accuracy. |
+| `NC-MODEL-ABSTRACTION`; B.5.MR:4.2 converse relation kind | **model abstraction**: A is an abstraction of C exactly when C refines A under the same comparison. | Abstraction names the converse without promising a unique inverse construction. Generalization can mean a wider empirical claim; weakening can suggest lower quality; lifting has source-dependent direction and may construct a fine-scale state. | Makes the converse of the existing comparison explicit. Reopen when the predicate changes or readers repeatedly recover omission of visible detail without comparing assertions. |
+| `NC-MODEL-ABSTRACTION-LEVEL`; B.5.MR:4.3 relative comparison-position kind | **level of model abstraction**: a position under the stated comparison, with equivalent answers sharing the position. **More abstract** and **more concrete** require strict order between comparable positions. | The selected name locates models under this relation. Level of precision suggests accuracy or detail; meta-level can designate model-rule conformance; language level can be read as a property of the language; holonic level uses a different relation. | Uses abstraction to name the relative positions in either direction. Reopen when the comparison changes or the name is used as an intrinsic rank of a discipline, publication, language or entity. |
+
+The selected phrases serve both technical and ordinary speech here; a separate Plain designation supplies no additional distinction. *Refining a model* and *abstracting a model* name constructing or selecting models that meet the relation, as B.5.MR:4.2.1–4.2.2 explains. Those action phrases are not alternative names for the relation kind.
+
+F.17:12.6 gives the three separately citable rows and exact cells. Their durable reuse is needed because the two directions and the relative positions recur in framework explanations and project teaching. No correspondence with another source's local sense is asserted by these naming records; source-specific concretization, idealization and lifting retain their own meanings.
+
 ### F.18:5 - System-Role-Kind, Assignment, Slot, and Status Naming Settlement
 
 

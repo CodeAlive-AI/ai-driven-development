@@ -40,7 +40,7 @@ Name the reader or consuming system, the Method or candidate account, the intend
 
 State the content that must survive: the relied-on action claims, relations, applicability, uncertainty, result, stop and source-return information. Then state the representation difference, such as notation, arrangement, salience, navigation or interaction. Do not call a new condition or an unsupported diagram edge a form-only change.
 
-Use A.6.3.RT for a changed representation scheme, or the applicable same-regime wording, narrative or coarsening result. Its preservation and loss answer helps establish the comparison inputs; it does not demonstrate improved performance. If the Method's reusable semantics also changed, retain the A.3.1.MV identity/variant question and bound the description comparison accordingly.
+Use A.6.3.RT when a change of representation language or reasoning medium affects the receiving operation, or the applicable same-regime wording, narrative or coarsening result. Its preservation and loss answer helps establish the comparison inputs; it does not demonstrate improved performance. If the Method's reusable semantics also changed, retain the A.3.1.MV identity/variant question and bound the description comparison accordingly.
 
 #### C.37.CF:4.2 - Choose the smallest informative contrasts
 
@@ -137,7 +137,7 @@ three entries become one review procedure? This is a constructed comparison. The
 procedures and can consult the complete framework, but has no private authoring notes.
 
 Use [A.3.2.DE](../05-part-a---kernel-architecture-cluster/30-a-3-2-de---describe-a-method-for-its-intended-use.md) for the claims describing the checking Method.
-[E.8.ML](../11-part-e---the-fpf-constitution-and-authoring-guides/21-e-8-ml---construct-a-pattern-language-for-connected-methods.md) supplies the different answer
+[E.8.ML](../11-part-e---the-fpf-constitution-and-authoring-guides/22-e-8-ml---construct-a-pattern-language-for-connected-methods.md) supplies the different answer
 about the language arrangement: its entries serve independent questions, with different useful results and
 source returns. The existing arrangement is candidate A. The author proposes a shorter paragraph, B, and a
 table, C, for the same receiving question.

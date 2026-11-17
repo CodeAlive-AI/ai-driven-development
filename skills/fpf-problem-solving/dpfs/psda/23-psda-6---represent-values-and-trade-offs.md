@@ -75,7 +75,7 @@ Some thresholds are preference choices rather than prohibitions: an aspiration l
 
 #### PSDA.6:4.5 - Construct preferences from comparisons of consequences
 
-For an account of a holder’s preferences, use attributable comparisons of concrete consequence profiles for the same people, horizon and conditions. Obtain a judgement from the holder if the needed comparison is missing and worth obtaining. Preserve whether one profile is **no worse**, **strictly better**, **indifferent**, or the comparison remains open. Keep the profiles and any stated reason. Use alternatives or intelligible hypothetical profiles within the declared ranges. If the task specifies a rule or hypothetical preference instead, report conclusions under that basis.
+For an account of a holder’s preferences, use attributable comparisons of concrete consequence profiles for the same subjects, horizon and conditions. Obtain a judgement from the holder if the needed comparison is missing and worth obtaining. Preserve whether one profile is **no worse**, **strictly better**, **indifferent**, or the comparison remains open. Keep the profiles and any stated reason. Use alternatives or intelligible hypothetical profiles within the declared ranges. If the task specifies a rule or hypothetical preference instead, report conclusions under that basis.
 
 Sections 4.5.1–4.5.5 treat known consequences. For uncertain outcomes, §4.5.6 uses comparisons of lotteries, preserves the compatible utility functions and relates them to the consequence probabilities. Choose the form for the distinctions the task needs. Deterministic trade-offs alone leave the ranking of some uncertain alternatives open.
 

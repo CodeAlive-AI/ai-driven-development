@@ -335,7 +335,7 @@ Reconsider the realization when a required input, observation relation, executio
 | B.5.MPC - Connect Physical, Mathematical and Computational Reasoning | Connects the local realization to the physical question, mathematical construction and useful consequence. |
 | A.3.3 - U.Dynamics | Constructs the state and permitted continuations needed to reason about intermediate or repeated operation. |
 | A.6.1 - U.Mechanism | Supplies operation-declaration and realization semantics when those relations are asserted. |
-| A.6.3.RT - Representation-Scheme Transition | Helps change the representation of preparation, operations and readout under an available scheme while preserving the content needed for use. |
+| A.6.3.RT - Representation Transition | Helps change the representation of preparation, operations and readout under the conventions chosen for that use while preserving the content needed for use. |
 | C.16 - Measurement and Metrics Characterization | Supplies the measurement relation and the interpretation limits of a physical indication. |
 | C.11.DUA - Make Advice and Evidence Demands Worth Their Burden | Selects further assurance or information by the receiving decision and its cost. |
 

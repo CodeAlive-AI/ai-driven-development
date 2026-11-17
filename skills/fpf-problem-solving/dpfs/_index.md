@@ -19,10 +19,10 @@ A Suite brings together constituent disciplines and explains how their knowledge
 
 | Suite | Working subject | DPFs | Patterns | Text, M characters |
 | --- | --- | ---: | ---: | ---: |
-| [Engineering](engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.840 |
-| [Management](management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities, workforce participation and organizational change. | 14 | 201 | 5.595 |
-| [Foundational Thinking](foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 1.995 |
-| [Human Capability Engineering](human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.244 |
+| [Engineering](engineering-dpf-suite/_index.md) | Designing, realizing, changing and maintaining systems; knowledge access, semantic integration and control architecture design. | 5 | 99 | 2.847 |
+| [Management](management-dpf-suite/_index.md) | Direction, goals, commitments, operations, resources, markets, communities, workforce participation and organizational change. | 14 | 201 | 5.601 |
+| [Foundational Thinking](foundational-thinking-dpf-suite/_index.md) | Mathematical and physical accounts, models, algorithms and usable notation. | 5 | 71 | 2.002 |
+| [Human Capability Engineering](human-capability-engineering-dpf-suite/_index.md) | Human learning and somatic change, connected to capability in later work. | 2 | 34 | 1.250 |
 
 For a goal or OKR question, open [GOALS](management-dpf-suite/goals/_index.md) directly within Management. Its complete language includes organizational OKR/CFR, human professional goals and AI work.
 
@@ -32,11 +32,11 @@ These ten standalone frameworks have their own files here. A shared folder group
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Decision Design (PSDA)](psda/_index.md) · [Markdown](psda/_index.md) | Formulate a decision problem, construct alternatives, compare consequences and uncertainty, and connect a recommendation to its use. | 19 | 0.825 |
-| [Research Method Practice (RMP)](rmp/_index.md) · [Markdown](rmp/_index.md) | Frame and design research, obtain and criticize evidence, synthesize sources, and return a warranted knowledge contribution. | 11 | 0.540 |
-| [Explanation Design (EXD)](exd/_index.md) · [Markdown](exd/_index.md) | Design an explanation, worked example or dialogue that helps its recipient understand and perform the needed operation. | 6 | 0.145 |
+| [Decision Design (PSDA)](psda/_index.md) · [Markdown](psda/_index.md) | Formulate a decision problem, construct alternatives, compare consequences and uncertainty, and connect a recommendation to its use. | 19 | 0.826 |
+| [Research Method Practice (RMP)](rmp/_index.md) · [Markdown](rmp/_index.md) | Frame and design research, obtain and criticize evidence, synthesize sources, and return a warranted knowledge contribution. | 11 | 0.544 |
+| [Explanation Design (EXD)](exd/_index.md) · [Markdown](exd/_index.md) | Design an explanation, worked example or dialogue that helps its recipient understand and perform the needed operation. | 6 | 0.146 |
 | [Narrativization and Narrative Studies (NSTD)](nstd/_index.md) · [Markdown](nstd/_index.md) | Develop and interpret followable narratives; construct working accounts and fictional or hypothetical events; preserve relations, uncertainty and useful returns to source material. | 10 | 0.387 |
-| [Implementation Facilitation (IS)](is/_index.md) · [Markdown](is/_index.md) | Help participants put an evidence-informed practice to use under local conditions, adapt the assistance and develop their capacity for further change. | 7 | 0.189 |
+| [Implementation Facilitation (IS)](is/_index.md) · [Markdown](is/_index.md) | Help participants put an evidence-informed practice to use under local conditions, adapt the assistance and develop their capacity for further change. | 7 | 0.191 |
 | [Economic Reasoning and Coordination (ECO)](eco/_index.md) · [Markdown](eco/_index.md) | Reason about exchange, commitments, incentives, shared resources and coordination under changing information and demand. | 10 | 0.132 |
 | [Financial Domain Modeling (FDM)](fdm/_index.md) · [Markdown](fdm/_index.md) | Model financial positions, rights, obligations, events and payment flows, distinguishing their effects. | 5 | 0.100 |
 | [Defense and Transmission Modeling (DTM)](dtm/_index.md) · [Markdown](dtm/_index.md) | Explain how practices persist and spread, how they help or impair work, and how protective action changes those outcomes. | 9 | 0.158 |
@@ -49,7 +49,7 @@ These ten standalone frameworks have their own files here. A shared folder group
 
 For example, a decision may require a research finding, a mathematical model and an explanation to its participants. Decision Design, Research Method Practice, Foundational Thinking and Explanation Design then supply different results. Read the relevant conditions and connect those results; you do not need to study every framework or use every pattern in sequence.
 
-When the purpose is to expand an agent's capabilities and continue to further attainable problems, use [Core's connected development method (C.40.OD)](../sections/09-part-c---kernel-extension-specifications/117-c-40-od---construct-and-continue-open-ended-development.md) with the relevant domain methods. The particular changes needed by a person, AI, team or organization differ.
+When the purpose is to expand an agent's capabilities and continue to further attainable problems, use [Core's connected development method (C.40.OD)](../sections/09-part-c---kernel-extension-specifications/118-c-40-od---construct-and-continue-open-ended-development.md) with the relevant domain methods. The particular changes needed by a person, AI, team or organization differ.
 
 Every full framework has one home in the Library. Using its methods elsewhere does not add a second membership. An embedded Framework Architectural Reference explains its pattern language; Suite References explain the larger disciplinary assemblies. The [Library Architectural Reference](../library/reference/_index.md) explains the boundaries and connections across them.
 

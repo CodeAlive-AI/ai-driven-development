@@ -397,11 +397,11 @@ Returns therefore follow the failed dependency. The practitioner can refine a st
 
 #### C.29.1:10.4 - Why expression construction and joint reasoning remain distinct
 
-A.6.3.RT helps construct an expression under a representation scheme. Defining m and d is such an expression move. Deriving their inverse and update equations establishes the mathematical transfer addressed here. The notation makes that derivation easier to perform and inspect; it does not determine its truth.
+A.6.3.RT helps construct an expression in a representation language suited to the operation. Defining m and d is such an expression move. Deriving their inverse and update equations establishes the mathematical transfer addressed here. The notation makes that derivation easier to perform and inspect; it does not determine its truth.
 
 C.29 supplies the broader choice and use of a mathematical account. B.5.MPC connects a mathematical result with physical interpretation, computation and execution when the working question requires all of them. This pattern contributes the mathematical comparison inside that work and can also be used independently.
 
-A human or AI contributor can construct the correspondence, derive an identity or search for a conflicting pair. The receiving practitioner still needs enough of the domain, operation and conclusion to use the result or request the missing argument. B.5:4.5 and B.5.MPC:4.8 explain how to divide such contributions without losing the shared question.
+A contributor can construct the correspondence, derive an identity or search for a conflicting pair. The receiving practitioner still needs enough understanding of the domain, operation and conclusion to use the result or request the missing argument. B.5:4.5 and B.5.MPC:4.8 explain how to divide such contributions without losing the shared question.
 
 ### C.29.1:11 - SoTA-Echoing
 
@@ -423,7 +423,7 @@ A direct proof in the original account remains an alternative. Prefer it when it
 |---|---|
 | **C.29 - Mathematical Lens Use** | Supplies selection of a mathematical account and the general correspondence-and-return method. C.29.1 specializes its operation-transfer contribution. C.29:4.4 supplies recording options for a use that needs a recoverable account. |
 | **B.5 - Canonical Reasoning Cycle** | B.5:4.2 and B.5:4.3 recover or construct the source contribution and its argument. B.5:4.4 uses the consequence or revises the question when a transfer exposes a missing premise. |
-| **A.6.3.RT - Representation-Scheme Transition: Change Representation of the Same EntityOfConcern** | Constructs expressions and relates representation schemes. This pattern establishes the operation, representative and result comparisons used to carry a mathematical consequence through such a change. |
+| **A.6.3.RT - Representation Transition: Change Representation of the Same EntityOfConcern** | Constructs expressions and compares representations and the operations they support. This pattern establishes the operation, representative and result comparisons used to carry a mathematical consequence through such a change. |
 | **B.5.MPC - Connect Physical, Mathematical and Computational Reasoning** | Uses this mathematical transfer within a connected physical account, mathematical construction and computation. It supplies the wider coordination when physical premises, execution or observation remain unresolved. |
 | **A.3.3 - U.Dynamics: State-Space and Transition-Law Episteme** | Supplies state and change descriptions when the transferred operation is an update or a prediction. The transfer here compares a proposed summary with that specified evolution; choosing the physical evolution remains subject work. |
 | **C.16 - Measurement & Metrics Characterization (MM‑CHR)** | Supplies the measurement construction when obtaining a discriminating observation is the selected repair. A mathematical bound on values compatible with an indication still depends on the applicable measurement relation. |

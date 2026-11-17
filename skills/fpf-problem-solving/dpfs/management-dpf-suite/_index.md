@@ -39,19 +39,19 @@ The **[operational mantra (OPS.23)](ops/28-ops-23---connect-operational-reasonin
 
 | Framework | What you can work on | Patterns | Text, M characters |
 | --- | --- | ---: | ---: |
-| [Strategy (STR)](str/_index.md) · [Markdown](str/_index.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.548 |
+| [Strategy (STR)](str/_index.md) · [Markdown](str/_index.md) | Find a worthwhile direction; compare options, capabilities, investments and business models; revise commitments when conditions change. | 18 | 0.549 |
 | [Goal Construction and Regulation (GOALS)](goals/_index.md) | Construct worthwhile goals and achievement evidence, coordinate their pursuit and revise the practice; complete OKR/CFR and human and AI applications. | 9 | 0.149 |
 | [Operations Management (OPS)](ops/_index.md) · [Markdown](ops/_index.md) | Understand, construct and revise operating arrangements; manage work, provision, service and improvement under the undertaking's conditions. | 29 | 0.990 |
 | [Organization Administration (ADM)](adm/_index.md) · [Markdown](adm/_index.md) | Make requests, permissions, obligations, provision, records and provider coordination effective without unnecessary burden. | 15 | 0.308 |
 | [Corporate Governance (CGOV)](cgov/_index.md) · [Markdown](cgov/_index.md) | Constitute and exercise corporate powers, decisions, controls and accountability under applicable governing rules. | 17 | 0.268 |
 | [Management Accounting (MA)](ma/_index.md) · [Markdown](ma/_index.md) | Explain costs, capacity and economic consequences; forecast outcomes; develop activity designs from economic requirements and arrange how accounting information is used. | 10 | 0.211 |
 | [Corporate Finance (FIN)](fin/_index.md) · [Markdown](fin/_index.md) | Understand financial relations, construct financing terms and group arrangements, and compare value, liquidity, capital uses and exposure. | 23 | 0.645 |
-| [Marketing (MKT)](mkt/_index.md) · [Markdown](mkt/_index.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.420 |
+| [Marketing (MKT)](mkt/_index.md) · [Markdown](mkt/_index.md) | Connect customer inquiry, offers, advertising, acquisition, distribution and use; construct workable provision and revise it from experience. | 14 | 0.422 |
 | [Customization and Productization Management (CUST)](cust/_index.md) · [Markdown](cust/_index.md) | Handle client differences while developing repeatable offerings, delivery and compatible transitions for existing clients. | 8 | 0.177 |
 | [Engineering Asset Management (EAM)](eam/_index.md) · [Markdown](eam/_index.md) | Compare use, renewal, replacement and other asset changes over time, including shared risk, cost and capacity. | 16 | 0.260 |
 | [Leadership (LDR)](ldr/_index.md) · [Markdown](ldr/_index.md) | Direct personal action; develop joint direction, participation and responsibility; obtain feasible contributions and first useful work. | 4 | 0.192 |
-| [Community Management (CB)](cb/_index.md) · [Markdown](cb/_index.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.528 |
-| [Organization Change Engineering (OCE)](oce/_index.md) · [Markdown](oce/_index.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.762 |
+| [Community Management (CB)](cb/_index.md) · [Markdown](cb/_index.md) | Develop useful participation, relationships, shared practices and contributions in organizations or voluntary communities. | 16 | 0.529 |
+| [Organization Change Engineering (OCE)](oce/_index.md) · [Markdown](oce/_index.md) | Construct and qualify organizational changes to contributions, roles, authority, interfaces, capabilities and culture. | 17 | 0.764 |
 | [Human Resource Management (HRM)](hrm/_index.md) | Construct and revise workforce conditions, assessment and selection, reward, voice, protection and continuing participation. | 5 | 0.138 |
 
 **Patterns** counts full pattern bodies. **Text, M characters** measures each complete Markdown framework, including its embedded Architectural Reference, in millions of Unicode characters with spaces and original line breaks, rounded to three decimals. These are scope indicators.
@@ -76,7 +76,7 @@ A manager may perform a method when capable or obtain its result from another co
 
 A development undertaking may need strategy, participation, time, funding and authority as well as learning or research. This Suite helps arrange those conditions. It does not equate everyday operations, implementing a known practice or one organizational change with open-ended development.
 
-Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/117-c-40-od---construct-and-continue-open-ended-development.md) when acquired capability should open further attainable problems and the means to continue. An office, distributed responsibility at workplaces, an external provider and AI-assisted arrangements are alternatives to examine from the required methods and conditions.
+Use [Core's connected development method (C.40.OD)](../../sections/09-part-c---kernel-extension-specifications/118-c-40-od---construct-and-continue-open-ended-development.md) when acquired capability should open further attainable problems and the means to continue. An office, distributed responsibility at workplaces, an external provider and AI-assisted arrangements are alternatives to examine from the required methods and conditions.
 
 ## Reading, use and reuse
 

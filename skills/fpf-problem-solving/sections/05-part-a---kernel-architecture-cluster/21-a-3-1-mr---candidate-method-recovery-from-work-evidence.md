@@ -6,11 +6,11 @@
 
 **Plain name.** Recover source-traceable candidate accounts of a reusable way from several performances or other direct evidence.
 
-**Primary reader.** A practitioner, researcher, analyst, or method engineer who has observations or records from several performances and needs a reusable explanation before Method identification or specialist reconstruction.
+**Primary reader.** A practitioner, researcher, analyst or method engineer who needs to understand what an observed performance shows about a reusable way of working, or to recover candidate accounts from several performances or other direct evidence.
 
 ### A.3.1.MR:1 - Problem frame
 
-**Use this when.** Use this pattern when you have observations or records from several performances and want to understand what reusable way they may show, but the reusable way being recovered has not yet been admitted as a Method.
+**Use this when.** Use observations or records from several performances to recover a candidate account of a reusable way before Method identification. A single demonstration can already show how one feature was enacted. If several rules could explain the action, retain the plausible alternatives and identify an observation that would distinguish them when the difference matters. If the step shown answers the immediate question, finish there.
 
 **First useful result.** Return a traceable provisional explanation of the reusable way the material may show, its rivals, important gaps and limits—or state that the material shows only what happened. A distinguishing question is included when it changes the intended recovery or downstream use; neither an answerable future test nor an investigation plan is required merely to finish the account.
 
@@ -84,6 +84,10 @@ If no candidate entity or truthful effective scheme can be recovered, lower the 
 
    Separately select investigation only when its attainable contribution warrants its whole design, acquisition, interpretation and displaced-Work burden.
 9. **Return the result warranted for the receiving use.** Return one or more candidate accounts ready for `A.3.1` identification or specialist work, with a separate comparison only when needed; or lower to a Work-related record, local regularity, performer-specific habit, observed sequence, or unresolved cue. Prepare MethodDescription-authoring input separately. The same account can qualify as `U.MethodDescription` only after its `EntityOfConcern` is admitted as one `U.Method` and its claims pass `A.3.2`.
+
+**When the source is a live demonstration.** Identify what the observer can see and what is already known about the proposed method. A performance of a known method can show a visible feature directly. If a signal and a fixed waiting time coincide in the recorded or observed episode, two different methods can fit the action. An observation in which the signal arrives later can distinguish waiting for the signal from waiting a fixed time. Use such a variation only if the difference matters. Retain the evidence at its actual scope when the methods remain indistinguishable. Admission of the observed episode as `U.Work` uses independently established enactment grounds from step 2.
+
+The performed occurrence can itself serve as a model of the selected feature. A gesture or utterance can additionally express claim content under a recoverable interpretation. A judgement about the observer's capability needs evidence about that observer under A.2.2. Evidence of a gain also calls for a comparable prior basis. Attributing the change to this demonstration calls for grounds connecting the two.
 
 #### A.3.1.MR:4.3 - Select the result branch
 

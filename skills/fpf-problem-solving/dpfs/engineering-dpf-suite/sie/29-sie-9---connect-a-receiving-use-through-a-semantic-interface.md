@@ -39,7 +39,7 @@ Design the interface from receiving actions and semantic branches, not from the 
 
 1. **Name the receiver interaction.** State who or what asks, the query/message/report action, timing, input parameters, and the next Work or decision that consumes the answer.
 2. **Select the interface form.** Choose query, view, API, message, schema, report, file, or mixed human/machine form based on the receiving Work. Do not inherit the internal realization shape automatically.
-3. **Define semantic inputs.** State required identifiers, schemes, configuration/effectivity, time windows, units, locale or code context, permissions, and validation of requests.
+3. **Define semantic inputs.** State the identifiers a request accepts, how the interface validates their form and how it resolves them. Supply any required issuer, assignment context, configuration or effectivity, time window, units, locale or code context, and permissions.
 4. **Define result claims and interpretation.** For each output, state meaning, grain, scope, interval/effectivity, units/codes, source identifier behavior, accepted loss, and permitted use.
 5. **Expose qualified branches.** Represent matched/qualified, unmatched, incompatible, unresolved identity, source-qualified conflict, non-comparability, stale, inaccessible, timeout/source error, and partial result where applicable.
 6. **Expose provenance and currentness.** Provide source/edition or a stable reference, observation/retrieval time, mapping/composition rule version, derivation/trace reference, and freshness status needed by the receiver.
@@ -54,7 +54,7 @@ Design the interface from receiving actions and semantic branches, not from the 
 | --- | --- |
 | receiver interaction | caller/reader, receiving Work, request, timing, next action |
 | interface form | query/view/API/message/schema/report/file and why it fits the Work |
-| request semantics | parameters, identifiers/schemes, configuration/effectivity, windows, units/codes, permissions |
+| request semantics | parameters, acceptable identifier forms and resolution context, configuration/effectivity, windows, units/codes, permissions |
 | response semantics | claims, grain, scope, interval, units/codes, source IDs, accepted loss, permitted use |
 | branch model | qualified, unmatched, incompatible, unresolved identity, conflict, non-comparable, stale, inaccessible, source error, partial |
 | provenance/currentness | source/edition, times, rule versions, derivation/trace, freshness status |
@@ -97,7 +97,7 @@ A known match returns a qualified row. A feature absent at effectivity `E` retur
 
 - [ ] The interface is tied to one named receiver, Work, request, and next action.
 - [ ] The form is chosen for receiving use rather than copied from internal realization.
-- [ ] Request identifiers, schemes, configuration/effectivity, windows, units/codes, and permissions are explicit.
+- [ ] The request identifies the accepted entries, how to resolve them, required configuration or effectivity, windows, units or codes, and permissions.
 - [ ] Response claims state meaning, grain, scope, interval, source identifiers, loss, and permitted use.
 - [ ] Qualified, unmatched, incompatible, unresolved identity, conflict, non-comparability, stale, inaccessible, source-error, and partial branches remain distinguishable where applicable.
 - [ ] Source/edition, observation/retrieval time, rule versions, derivation/trace, and freshness are recoverable.
@@ -113,7 +113,7 @@ A known match returns a qualified row. A feature absent at effectivity `E` retur
 | Expose the integrated table | Start from the receiving action and design only the claims and branches it needs. |
 | One null or HTTP error for every absence | Distinguish semantic absence/unresolved states from access, timeout, and implementation failure. |
 | Provenance in internal logs only | Expose the action-changing provenance/currentness summary and stable trace reference. |
-| Hide source IDs behind one key | Preserve source schemes and identity-disposition references. |
+| Hide source IDs behind one key | Retain the source entries, the contexts or assignments used to interpret them and the disposition supporting any identity on which the interface relies. |
 | Endpoint is available, therefore usable | Validate meanings, branches, currentness, service conditions, and representative Work through `SIE.10`. |
 | Semantic result authorizes action | Name the application, engineering, quality, safety, legal, or other decision owner. |
 

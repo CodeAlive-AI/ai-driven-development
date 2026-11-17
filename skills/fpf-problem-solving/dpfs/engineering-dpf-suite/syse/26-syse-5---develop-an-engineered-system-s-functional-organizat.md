@@ -137,7 +137,7 @@ assurance, and continuing change.
    distribution, placement, redundancy, containment, control boundary, or interface grammar. State separately
    whether an actual System exists, whether it is procurable, what realization or provider Work is needed, and
    any candidate claim that lacks support.
-5. **Write many-to-many proposed allocations.** Associate functional contribution claims and candidate bearers.
+5. **Write many-to-many proposed allocations.** Associate functional contribution claims and candidate bearers. If a proposed allocation fixes a choice in a parent model, compare the designs it permits under the same operating conditions. Check that at least one feasible design remains. For every design the allocation permits, test all the parent commitments relevant to the inquiry, including the required contribution under its operating conditions. If a newly permitted design violates one such commitment, narrow the comparison to the service it does preserve or revise the allocation. To claim strict refinement, identify a feasible design the parent allowed and this allocation excludes. State what the inquiry distinguishes. An allocation can exclude a design while leaving every previously admissible service behavior possible. Where two competing allocations each allow a design the other excludes, keep them as alternatives under the parent (B.5.MR).
    Permit several bearers for one contribution, several contributions for one bearer, and different
    allocations by mode, use, configuration, place, or effectivity. Treat weak cues—for example, co-location,
    matching names, diagram overlap, product kind, ownership, or system-role assignment—only as possible evidence

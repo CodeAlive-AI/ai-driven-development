@@ -84,7 +84,7 @@ The result: engineers and tool builders can no longer tell whether a mathematica
 
 #### A.6.2:4.1 - Informal definition
 
-> **Definition.** An **effect-free episteme morphism** is a local mathematical arrow `f : X -> Y` between two epistemes. Under its selected formal substrate, it states how claim content, the EntityOfConcern, and any material reference or representation scheme correspond. Its content is this mathematical relation and its laws. Any Work, mechanism application, or episteme creation is a separate fact under its direct governor.
+> **Definition.** An **effect-free episteme morphism** is a local mathematical arrow `f : X -> Y` between two epistemes. Under its selected formal substrate, it states how claim content, the EntityOfConcern, and the effective interpretation rules of each episteme, and any representation languages needed for this comparison correspond. Its content is this mathematical relation and its laws. Any Work, mechanism application, or episteme creation is a separate fact under its direct governor.
 
 This is a local mathematical class defined here in the selected formal substrate, not an admitted durable U-kind. The pattern keeps the short name **EFEM** for that class. A reusable A.6.0 FormalSubstrate signature may declare its vocabulary and P0-P5 laws, but that signature episteme is not the class and is not one arrow.
 
@@ -160,10 +160,10 @@ For any arrow `f : X→Y` presented as an effect-free episteme morphism:
    * `entityOfConcernRef(E) : U.EntityRef` — designates E's EntityOfConcern;
    * `selectedViewpointRef?(use) : U.ViewpointRef` — only when the named describing use selects one viewpoint; this is not a component of E's identity;
    * `referenceScheme(E)` — the effective designation and interpretation rules recovered for E under C.2.1:4.1.1;
-   * `representationSchemeRef?(E) : U.RepresentationSchemeRef` — only when a representation scheme and its correspondence relation are current for E under their direct governors; C.29 governs any mathematical-lens use; this is not a C.2.1 identity component;
+   * `representationLanguageRef?(use, endpoint, expression) : U.RepresentationLanguageRef` — when the comparison needs the language selected for an expression, identify the endpoint, the expression used there and the conventions selected in this use. A single episteme can be expressed in several languages. Resolve the reference with the applicable binding. C.29 governs any mathematical-lens use.
    * a separately current neighboring fact — name the `EpistemeEditionRelation`, A.10 evidence or provenance relation, or other governed predicate and its participants when the arrow family reads or compares it; do not collect these facts in a generic projection. If E asserts such a fact, that assertion is already part of `content(E)`.
 
-   These are projections of the identified endpoint values. The arrow family's declared endpoint kinds and predicates determine admissibility. If its law additionally classifies content or scheme candidates for substitution, recover that classification's own domain and criterion; endpoint membership supplies no general constituent ValueKind. C.2.1:4.2.1 governs that stronger typed use.
+   Content, EntityOfConcern and effective interpretation rules are recovered from the episteme at the endpoint. A describing use can select a viewpoint. If the law uses the language of an expression, resolve it for the expression and endpoint selected in that use. Establish each further relation on its own grounds. The arrow family's declared endpoint kinds and predicates determine admissibility. If its law additionally classifies content or scheme candidates for substitution, recover that classification's own domain and criterion; endpoint membership supplies no general constituent ValueKind. C.2.1:4.2.1 governs that stronger typed use.
 
    When grounding matters, name the grounding relation, its grounding holon, and the claims it covers; grounding is not another component of episteme identity.
 
@@ -244,7 +244,7 @@ Thus a preserve-mode arrow maps to the base identity even when f is not an ident
 
    A preserve-only or retarget-only subtype is not thereby closed under parent composition. A composite remains in that subtype only when its final mode and all additional subtype laws match; otherwise it remains an EFEM arrow in the parent class. When a receiving-use claim is made, a separate `q` states the final-use invariant, accumulated visible loss, receiving use, conditions, and polarity; a separate current-case judgement tests the final facts.
 
-3. **Scheme-aware composition.** If endpoint RepresentationSchemes or effective ReferenceSchemes differ, name the correspondence used by each route under its direct governor and state the equality or declared equivalence that makes the two routes agree. A.6.3.RT governs a same-EntityOfConcern representation-scheme transition; C.29 governs any mathematical-lens use. A scheme difference alone establishes neither. Use `natural`, `oplax`, or similar terminology only when the substrate supplies the mappings and comparison structure required by that term and the claimed laws are established by a proof or an applicable formal check. Otherwise state the required two-route agreement in ordinary language. Any witness episteme remains separately identified.
+3. **Composition across endpoint conventions.** If the selected expressions use different representation languages, or their epistemes have different effective interpretation rules, name the correspondence used by each route under its direct governor and state the equality or declared equivalence that makes the two routes agree. A.6.3.RT governs a same-EntityOfConcern representation transition; C.29 governs any mathematical-lens use. To assert either relation, establish its participants and conditions. Use `natural`, `oplax`, or similar terminology only when the substrate supplies the mappings and comparison structure required by that term and the claimed laws are established by a proof or an applicable formal check. Otherwise state the required two-route agreement in ordinary language. Any witness episteme remains separately identified.
 
 ##### A.6.2:4.3.5 - P4 — Arrow and repeat boundary
 
@@ -260,7 +260,7 @@ Each arrow family states the formal domain in which its laws apply:
 
 * the allowed kinds of the two endpoint EntitiesOfConcern;
 * any grounding relations or endpoint facts that the arrow rule reads;
-* the admitted RepresentationScheme and ReferenceScheme pairs and any correspondence needed by the formal relation under its direct governor; and
+* any restriction the law places on the endpoints’ effective interpretation rules and any correspondence it uses under the governor of that relation. State which pairs of representation languages are admissible when the law compares the languages of the selected expressions.
 * any ClaimScope constraint required by the arrow law itself.
 
 If `X` or `Y` lies outside that domain, the arrow is not a member of this local family. This is distinct from an operation application being admitted or rejected.
@@ -306,7 +306,7 @@ Let `X = V_raw`, `Y = V_norm`. For this example, assume each episteme independen
 * `entityOfConcernRef(X) = entityOfConcernRef(Y)` (same system);
 * when grounding is current, the same grounding occurrence and grounding holon are found on both sides; this is an endpoint comparison, not a change made by `NormalizeView`;
 * any viewpoint selected by the named normalization use is the same P for X and Y; this selection is outside episteme identity;
-* `representationSchemeRef(X) = representationSchemeRef(Y)` (same notation).
+* The source and receiving expressions selected for this comparison use the same representation language. Establish this by resolving each language reference under its applicable binding. One episteme may supply both endpoints and still be expressed in two different languages. Equal reference spellings alone do not establish equality of the two languages.
 
 The EFEM `NormalizeView : X→Y`:
 

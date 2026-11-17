@@ -257,6 +257,10 @@ For a durable ecosystem-architecture answer, use the following operations as the
 13. Before using a carrier or transformed or generated view as evidence, state the exact source-return or preservation assertion under the predicate defined in `C.33`, `C.34`, or `C.35`.
 14. Evaluate whole-FPF adequacy through `E.2.DA`, DPF or local-framework package adequacy through `E.4.DPF.DA`, individual pattern quality through `E.21`, improve through `E.23`, and use `E.19` for a selected admission, refresh, or return-for-repair question.
 
+When placing a foundational contribution, identify what would settle a disagreement about it. Give a Core rule the premises its users need. If several Core definitions depend on one commitment and their separate passages cannot reliably keep it consistent, state it once in Core and refer to it from those definitions. Put a method of deriving those premises or testing their physical interpretation with the discipline that can correct it. A separate edition earns its place when independent consumers must adopt the same commitments and check compatibility as they change. A reading order can be supplied in the Reference. Use B.5.MR when the claim concerns refinement or abstraction between models.
+
+Models supplied by Core, DPFs and LPFs can form a chain of levels of model abstraction when their assertions and interpretations establish the B.5.MR comparison for the receiving inquiry. A formal construction, transdisciplinary principle, disciplinary model and local model may participate in that chain. Their containing publications are not themselves successive model completions, and a Suite's location does not set the abstraction level of every assertion it carries. A method for testing a physical interpretation remains with the discipline that can correct it even when its result supplies a premise used in Core.
+
 Use this routing table when a proposed change is ambiguous. Its rows are common routes, not a closed taxonomy:
 
 | Proposed work | Route to | Decision boundary |

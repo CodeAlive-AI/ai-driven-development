@@ -8,7 +8,7 @@ Use this pattern when expressing FPF content or using another expression to carr
 
 A single expression needs an explanation of its interpretation. A semantic mapping is needed when expressions are compared or one is translated, substituted or relied on as carrying the other's content.
 
-A **representation scheme** supplies conventions for forming and interpreting expressions. A particular table, drawing, formula or vocal phrase is an **expression** read under those conventions.
+A **representation language** supplies conventions for forming and interpreting expressions. A particular table, drawing, formula or vocal phrase is an **expression** read under those conventions. When a decision depends on which forms the language admits or which readings they can carry, use E.5.2.L:4.1. An ordinary choice of expression can be made here.
 
 FPF concepts must remain understandable across disciplines, tools and future notations. If their meaning can only be recovered from one diagram style, file syntax or markup dialect, other users must reconstruct it before they can apply the pattern.
 
@@ -30,12 +30,12 @@ A definition can depend on unstated conventions of one glyph set or diagram gram
 
    A diagram, calculus or learned vocal-gestural expression may carry a reasoning or construction step. When it does, explain the operation and its prerequisites locally or cite the guidance for that subject. The pattern about that subject or the applicable Method governs the reasoning or construction. The reader obtains the subject result by applying that Method.
 
-   When changing representation scheme or reasoning medium, use A.6.3.RT to construct and compare the representation.
+   When the intended operation depends on a change of representation language or reasoning medium, use A.6.3.RT to construct and compare the expressions. A faithful translation whose purpose is textual restatement can use A.6.3.CR.
 
 2. **State the semantic mapping.**
    When expressions are compared or one is translated, substituted or relied on as carrying the other's content, their semantic mapping **SHALL** be stated.
 
-   Name the source expression and the expression being compared with it. Name their representation schemes when the rules matter to interpretation. State the correspondences for the claims and conditions needed by the intended use. If a relevant distinction is lost, state the loss and limit the equivalence claim accordingly.
+   Name the source expression and the expression being compared with it. Name their representation languages when the rules matter to interpretation. State the correspondences for the claims and conditions needed by the intended use. If a relevant distinction is lost, state the loss and limit the equivalence claim accordingly.
 
    A meaning-preserving mapping leaves open what operations a reader can perform with each expression, with what preparation and effort.
 
@@ -54,7 +54,7 @@ The first result is an expression whose meaning can be recovered, with an explan
 
 If a claim changes, compare again with the named source expression. Then repair the correspondence or narrow the claimed equivalence and permitted use.
 
-Use A.6.3.RT to compare content carried between expressions and A.6.3.RT.OE to construct an expression with which the intended operation can be performed. If the representation scheme cannot express a needed distinction, select another scheme or redesign the scheme before claiming that the distinction is preserved.
+Use A.6.3.RT to compare content carried between expressions and A.6.3.RT.OE to construct an expression with which the intended operation can be performed. If the representation language cannot express a needed distinction, select another language or extend its conventions before claiming that the distinction is preserved.
 
 ### E.5.2:5 - Archetypal Grounding (System / Episteme)
 
@@ -117,7 +117,7 @@ These are conceptual grounds for the selected line and its reader-dependent limi
 ### E.5.2:9 - Relations
 * **Parent umbrella:** `pat:constitution/guard‑rails` (E.5)
 * **Constrains:** the expression of normative Core content, including project-local expressions used as carrying that content. The semantic-mapping requirement follows the comparison or intended reliance.
-* **Uses:** A.6.3.RT when changing representation scheme or reasoning medium, A.6.3.RT.OE for constructing an operative expression, and C.2.8 and C.37 when recovery or use must be assessed.
+* **Uses:** A.6.3.RT when the intended operation depends on a change of representation language or reasoning medium, A.6.3.RT.OE for constructing an operative expression, and C.2.8 and C.37 when recovery or use must be assessed.
 * **Conceptual prefixes:** E.10.P supplies the policy, registry and anchor requirements. E.5.2 keeps interpretation independent of tooling-specific expansion.
 * **Subject reasoning and construction:** the pattern about the represented subject or the relevant Method governs the operation.
 * **Method descriptions:** use `U.MethodDescription` only when A.3.2 applies: the episteme concerns one admitted Method and makes substantive claims about that way of doing.

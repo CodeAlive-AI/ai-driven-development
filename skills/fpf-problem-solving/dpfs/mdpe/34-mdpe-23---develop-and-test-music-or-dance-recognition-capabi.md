@@ -362,11 +362,11 @@ that comparison is needed. Adequate observations may already answer the question
   establish authority or actual selection when the receiving question concerns them.
 - `MDPE.6` and `MDPE.17` can use recognition evidence when changed-condition use or receiving enactment depends on
   noticing the relevant difference.
-- When capability development is selected, [FPF E.23.CDI](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/64-e-23-cdi---developing-capability-for-a-named-work-family.md)
+- When capability development is selected, [FPF E.23.CDI](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/65-e-23-cdi---developing-capability-for-a-named-work-family.md)
   guides the baseline, target, limiting contribution, protected conditions and representative transfer check.
   Direct Music and Dance Methods still supply the intervention.
 - When a previously demonstrated response changes and the question depends on distinguishing access, applicability,
-  expression or enactment under changed conditions, use [FPF E.23.CAE](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/65-e-23-cae---capability-access-and-expression-differential-pro.md) if a suitable comparison is available or worth obtaining.
+  expression or enactment under changed conditions, use [FPF E.23.CAE](../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/66-e-23-cae---capability-access-and-expression-differential-pro.md) if a suitable comparison is available or worth obtaining.
   Compare a qualified reference condition with a controlled change without further teaching; distinguish whether
   the response is selected as applicable, accessible, expressed and enacted, while retaining surviving explanations.
   Return the supported finding or remaining alternatives. A later intervention requires a separate choice, and a claim about a memory mechanism needs evidence for that mechanism.

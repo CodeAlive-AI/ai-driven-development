@@ -209,7 +209,7 @@ Revisit the retained choice when a user cannot recover the references or composi
 | Pattern | Contribution to the working method |
 | --- | --- |
 | NOT.1 | Selects the distinctions and operations the notation must support. |
-| A.6.3.RT and A.6.3.RT.OE | Supply representation-scheme distinctions and expression construction when rules already exist. |
+| A.6.3.RT and A.6.3.RT.OE | Change the representation when this enables the intended operation. Construct the needed expression under the formation and interpretation rules already available. |
 | NOT.3 | Develops the interpretation and reader operations that use the constructed expressions. |
 | NOT.4 | Develops transformations with the necessary preservation, binding and side conditions. |
 | MATH.17 and MATH.18 | Supply operations on operations and interpretations for formal accounts of composition and binding. |

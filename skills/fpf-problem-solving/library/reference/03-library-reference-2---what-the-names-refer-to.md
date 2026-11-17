@@ -4,6 +4,8 @@ The same word can name a field, a framework about it or a file. Keep the subject
 
 **FPF Library** names this publication collection; **FPF Core** names its transdisciplinary framework. The Core document retains `FPF` as its DocID, so an address such as `FPF C.39` identifies a Core pattern. Cite **FPF Library** for the collection; name the particular framework and pattern when the claim relies on them.
 
+For one inquiry, a Core passage may supply a transdisciplinary relation, a DPF the professional conditions for using it, and an LPF a locally adopted choice. Follow the contribution of the particular passage. Local adoption can preserve every admissible option. If a local rule is said to narrow the professional model, check that at least one choice still fits, that every locally allowed choice preserves the professional commitments, and that an earlier choice is excluded for the same inquiry. B.5.MR gives the full comparison. A record of actual work can then establish which choice was made.
+
 | Object | What it contributes to this architecture | What a change affects |
 | --- | --- | --- |
 | Domain | A subject area used to frame a question or organize material. | A revised boundary changes what the designation covers; it does not by itself constitute a discipline. |

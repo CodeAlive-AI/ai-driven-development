@@ -64,8 +64,7 @@ Use the questions that bear on the receiving decision.
 1. Which actual or intended subject does the decision concern—for example, a System, part, serial unit, lot,
    or site?
 2. Which boundaries need independent identity for this decision, and why?
-3. For each identifier, which reference scheme gives it meaning, which Agent issues or maintains it, over what
-   interval, and in which record?
+3. For each identifier, what does it designate in this record, who issues or maintains it, and which rule or assignment holds over the interval at issue?
 4. Which variant and software-package claims are candidates, and which actual units have evidence of realizing
    them?
 5. Which constituents and relations obtain for each unit and interval, and which characteristic values are
@@ -127,9 +126,7 @@ Use [the record-and-time explanation](38-syse-13---establish-configuration-ident
 3. **Choose item boundaries for this use.** Designate only the entities that must be distinguished independently,
    such as Systems, parts, software-package epistemes, or descriptions. Different kinds of receiving Work may
    choose different boundaries; relate them instead of forcing one granularity.
-4. **State identifier schemes and mappings.** For each item, name the identifier, scheme, issuing or maintaining
-   Agent, interval, and any mapping to another scheme needed for this use. Establish its support. Shared spelling is not identity; a mapping need not
-   be symmetric or lossless.
+4. **Resolve identifiers and check the direction of each mapping.** Identify the bearer of each entry under its issuing or maintaining Agent, effective interval and applicable assignment or rule. When the decision uses a correspondence between entries, state its direction and evidence. A serial number can lead to a part definition used by many units. To identify one unit from that definition, recover the additional binding that selects it. Record any information the correspondence loses.
 5. **Separate variants, units, packages, installations and editions when they matter.** Identify relevant variant descriptions and any units claimed to realize them. For
    software, identify the package and relevant description edition. When a claim concerns an installation, distinguish the installed realization from
    the package and state its evidence or the gap.
@@ -154,7 +151,7 @@ rely only on claims whose bearer and effectivity are known for that use.
 | --- | --- |
 | receiving use | Decision, deciding Agent, actual System or intended System referent selected as the project system-of-interest, or another subject, interval, affected Work, and differences that can change the result. |
 | subjects and item boundaries | The actual or intended subjects the decision concerns, the items that need separate identities, the reasons for those boundaries and any required part–whole or structure claims. |
-| identifiers and mappings | Identifier schemes, issuing or maintaining Agents and applicable intervals. For any mapping needed by the decision, give its direction, what it preserves or loses, its evidence and its use limits. |
+| identifiers and mappings | Entries and their bearers, assigning or maintaining Agents, applicable rules or assignments and effective intervals. For a mapping used in the decision, give its direction, evidence, what it preserves or loses and its use limits. |
 | variants, units, software, and descriptions | Identify the variant descriptions, actual-unit realization claims, software packages, installed realizations and description editions relevant to the decision. State any unresolved claim about their correspondence. |
 | configuration and effectivity | For a claim about an actual configuration, give the relevant constituents, relations, characteristic values, evidence and interval. Identify the subjects and conditions to which each description or proposed change applies. |
 | reference and collisions | Any comparison baseline and its purpose. For any collision, distinguish incompatible elements, contradictory claims, unsupported or lossy mappings, missing evidence and harmless naming differences, as applicable. |
@@ -177,7 +174,7 @@ retain the reference baseline for its stated comparison.
 
 Use this explanation when you can work with the records of your practice but are unsure which state, event or period a record supports. Start with the claim your present decision needs. An adequate established correspondence can be used directly.
 
-Name the actual or intended subject of the record and the subject of the decision. Recover the description edition, identifier scheme and conditions when they can change this use. A common name or a later date does not establish the correspondence. Keep an installed state distinct from a design, plan or status entry. Different identifiers can be harmless when their supported mapping preserves the subject needed by the decision.
+Name the actual or intended subject of the record and the subject of the decision. Recover the description edition and the conditions, including any identifier assignment, on which the correspondence depends. A common name or a later date does not establish the correspondence. Keep an installed state distinct from a design, plan or status entry. Different identifiers can be harmless when their supported mapping preserves the subject needed by the decision.
 
 **Distinguish three questions about time.** When was the record made or the account entered? When did the reported state or event obtain? At what time, or over what interval, must the claim needed by the decision apply? The answers can coincide, but one answer does not establish the others. Recover only the distinctions needed by your claim.
 
@@ -277,7 +274,7 @@ These recurring failures can change the engineering decision:
 
 | Failure | Repair |
 | --- | --- |
-| Treat one identifier as one bearer everywhere | Name the bearer and reference scheme for each use; state supported mappings among schemes. |
+| Treat one identifier as one bearer everywhere | Resolve the entry under the rule or assignment governing each use. State which correspondence the available evidence supports and in which direction. |
 | Treat configuration item as a universal kind | Use it as a local designation of an already identified System, part, software package, or description chosen for this decision. |
 | Treat a variant as an installed unit | Keep the variant description and unit separate and require realization evidence. |
 | Treat latest as applicable | Name the edition and effectivity; current publication does not establish compatibility with the unit. |
@@ -289,7 +286,7 @@ These recurring failures can change the engineering decision:
 
 Release, integration, service, and modernization decisions can identify the units and descriptions they concern.
 Product-family reuse keeps serial-unit differences visible, and cross-tool automation can support comparisons
-through declared identifier schemes and supported mappings.
+through identified entries and supported correspondences between their referents.
 
 The cost is maintaining selected identifiers, mappings, evidence, and effectivity claims. Some questions remain
 unresolved until actual-unit observation or authority is available. Application profiles may need specialized Methods for domain relations—for example, interchangeability,

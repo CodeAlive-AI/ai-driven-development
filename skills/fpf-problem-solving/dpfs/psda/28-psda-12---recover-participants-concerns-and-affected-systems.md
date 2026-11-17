@@ -20,7 +20,7 @@ Use the account to judge whose circumstances and concerns affect the inquiry. If
 | participant | A contributor to the inquiry, or a party whose contribution is sought. Distinguish a requested contribution from one received. Establish representation, agreement, capability and authority where a claim depends on them. |
 | affected System | A System or prospective referent that may undergo a relevant change. Identify the supported relation or possible path by which the change could reach it. Use `A.1.CSD` when this discovery is needed. |
 | concern | A source-attributed matter that a participant, represented person, duty holder, interest holder, or affected-System account makes material to the receiving use. Identify separately the evidence for its substance, priority or support by others when those claims matter. |
-| representation | A supported basis on which one participant speaks, reports, advocates, or acts for another person or constituency. Identify the constituency, the basis and limits of the participant’s remit. |
+| representation | A supported basis on which one participant speaks, reports, advocates, or acts for another System or constituency. Identify who or what is represented, and the basis and limits of the participant’s remit. |
 | participation condition | An access, timing, language, safety, capability, format, dependency, or other condition that changes whether a contribution can be made or relied upon. |
 | participation and concern account | The smallest recoverable account of current and missing participation, affected Systems, concerns, duties, interests, dissent, evidence, uncertainty, and next use for one bounded inquiry. |
 

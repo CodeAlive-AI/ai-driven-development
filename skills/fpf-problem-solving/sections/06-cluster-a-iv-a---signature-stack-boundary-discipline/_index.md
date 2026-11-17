@@ -13,7 +13,7 @@
 - [A.6.3 - Episteme viewing - EntityOfConcern-preserving episteme construction](09-a-6-3---episteme-viewing---entityofconcern-preserving-episte.md) (238 lines) — Use this when. You need to derive a smaller, reorganized, or differently expressed body of claims from existing claims while keeping the same thing under discussion. In FPF terms, the source and...
 - [A.6.3.CSC - Controlled Semantic Coarsening: Shorten an Account for a Bounded Use](10-a-6-3-csc---controlled-semantic-coarsening-shorten-an-accoun.md) (352 lines) — Type: Architectural (A)
 - [A.6.3.CR - ConservativeRetextualization: EntityOfConcern-Preserving Textual Re-Expression](11-a-6-3-cr---conservativeretextualization-entityofconcern-pres.md) (355 lines) — Type: Specialization pattern
-- [A.6.3.RT - Representation-Scheme Transition: Change Representation of the Same EntityOfConcern](12-a-6-3-rt---representation-scheme-transition-change-represent.md) (515 lines) — Type: Specialization pattern
+- [A.6.3.RT - Representation Transition: Change Representation of the Same EntityOfConcern](12-a-6-3-rt---representation-transition-change-representation-o.md) (515 lines) — Type: Specialization pattern
 - [A.6.3.RT.OE - Construct an Operative Expression](13-a-6-3-rt-oe---construct-an-operative-expression.md) (313 lines) — Normativity: Normative
 - [A.6.3.NAR - Structure-to-Narrative Rendering](14-a-6-3-nar---structure-to-narrative-rendering.md) (406 lines) — Type: Specialization pattern
 - [A.6.4 - EntityOfConcern Retargeting: Judge a Bounded Use Across Different Entities](15-a-6-4---entityofconcern-retargeting-judge-a-bounded-use-acro.md) (255 lines) — Type: Definitional pattern

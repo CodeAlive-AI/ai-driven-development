@@ -38,7 +38,7 @@ When a joint episode will help the recipient learn a decision, make the reasonin
 
 #### IS.8:4.3 - Arrange practice, feedback and real receiving conditions
 
-For a person learning the operation, use [HCD.9](../human-capability-engineering-dpf-suite/hcd/26-hcd-9---perform-deliberate-practice-with-feedback.md) to arrange practice and feedback. Use programme or provider Methods if the work requires them. Give the person providing feedback the attempt and the criteria that matter in the receiving work. A useful correction identifies an operation the learner can change, such as including a missing participant, explaining an adaptation, revising an infeasible demand or limiting a conclusion to the observation.
+For a person learning the operation, use [HCD.9](../human-capability-engineering-dpf-suite/hcd/26-hcd-9---perform-deliberate-practice-with-feedback.md) to arrange practice and feedback. Use programme or provider Methods if the work requires them. Give the qualified feedback provider the attempt and the criteria that matter in the receiving work. A useful correction identifies an operation the learner can change, such as including a missing participant, explaining an adaptation, revising an infeasible demand or limiting a conclusion to the observation.
 
 Use [OCE.18](../management-dpf-suite/oce/34-oce-18---arrange-capability-development-and-receiving-work-i.md) to secure practice time and real receiving work in an organizational transition and [OCE.11](../management-dpf-suite/oce/33-oce-11---coordinate-organization-change-work-with-continuing.md) to keep the service available alongside practice. Identify who can take over when an attempt exceeds its allowed risk. Obtain agreement if the fallback is still open. Preserve needed assistance and distinguish the recipient’s work from any operation a mentor takes over.
 
@@ -56,7 +56,7 @@ When deciding about future assistance, use the finding to keep it, make it condi
 
 #### IS.8:4.5 - Make further development possible in ordinary practice
 
-When further development is wanted, examine with the intended holder what the result makes possible and what difficulty remains. Include that holder in defining the next worthwhile problem. Use [FPF C.40.NP](../../sections/09-part-c---kernel-extension-specifications/119-c-40-np---continue-from-a-result-to-new-attainable-problems.md) when a more demanding problem has become attainable, and [HCD.15](../human-capability-engineering-dpf-suite/hcd/32-hcd-15-sustain-continuing-human-capability-development.md) for continuing human development. If the facilitation Method itself needs to change, use [FPF C.39](../../sections/09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md) with the subject practice to develop it.
+When further development is wanted, examine with the intended holder what the result makes possible and what difficulty remains. Include that holder in defining the next worthwhile problem. Use [FPF C.40.NP](../../sections/09-part-c---kernel-extension-specifications/120-c-40-np---continue-from-a-result-to-new-attainable-problems.md) when a more demanding problem has become attainable, and [HCD.15](../human-capability-engineering-dpf-suite/hcd/32-hcd-15-sustain-continuing-human-capability-development.md) for continuing human development. If the facilitation Method itself needs to change, use [FPF C.39](../../sections/09-part-c---kernel-extension-specifications/97-c-39---find-and-develop-a-way-to-obtain-a-result.md) with the subject practice to develop it.
 
 For continuing development, keep the participants’ access to evidence, specialist help and occasions to improve practice available. Use [CB.7](../management-dpf-suite/cb/17-cb-7---prepare-and-sustain-distributed-organising.md) when preparing the next community organizer and [CB.14](../management-dpf-suite/cb/24-cb-14---develop-and-maintain-a-shared-repertoire-of-practice.md) when a community needs to maintain a shared repertoire.
 
@@ -74,7 +74,7 @@ If the lead performs that coordinating operation and a specialist must still ass
 
 #### IS.8:5.2 - Useful AI assistance and the holder's own contribution
 
-Suppose a facilitator uses an authorized AI service to compare de-identified episode accounts. The service proposes three explanations. If the facilitator is learning to judge them, observe the facilitator’s judgement and its consequences. If the undertaking promises AI-assisted facilitation, assess the combined work under its access, competence and protection conditions. Reassess an affected conclusion if the model changes or the service becomes unavailable. To establish how the AI acquires a capability, examine that system’s learning.
+Suppose a facilitator uses an authorized AI service to compare de-identified episode accounts. The service proposes three explanations. If the facilitator is learning to judge them, observe the facilitator’s judgement and its consequences. If the undertaking promises AI-assisted facilitation, assess the combined work under its access, competence and protection conditions. Reassess an affected conclusion if the model changes or the service becomes unavailable. For a claim that the AI gained a capability, identify the changed system and conditions, whether the change involved training, configuration or altered provision, and evidence of the relevant performance.
 
 ### IS.8:6 - Bias-Annotation
 
@@ -84,7 +84,7 @@ An expert may infer mastery when recipients repeat a new vocabulary. Recipients 
 
 - The intended holder, subsequent work and retained assistance define the capability claim.
 - A proposed learning arrangement supplies the facilitation operation to be taught and its necessary professional prerequisites.
-- When acquisition is needed, the recipient can practise the required operation and receive feedback under legitimate conditions. A performance claim identifies what the recipient did and under what conditions.
+- Needed acquisition has a development or provision Method appropriate to the holder. Where learning is intended, identify the learner's necessary contribution and available feedback or other support. A performance claim identifies what the recipient did and under what conditions.
 - The evidence identifies the recipient’s own work, any coordination undertaken, what specialists supplied and what a mentor took over.
 - A decision about future help uses the supported scope of performance. If development is to continue, the holder can help identify a worthwhile next problem.
 

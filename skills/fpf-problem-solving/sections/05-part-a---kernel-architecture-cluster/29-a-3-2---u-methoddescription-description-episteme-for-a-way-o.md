@@ -105,7 +105,7 @@ Then inspect the claim concerns that matter for that named use:
 | Parameters | Which values may vary between work occurrences, over which ranges, and when are they bound? |
 | Evaluation conditions | Which criterion is applied to the concrete Work occurrence, referent, measurement, or result, and which pattern defines that criterion? |
 | Internal composition | Which admitted methods are parts of one composite method, and what organization constructs that whole? |
-| Variation, edition, and refinement | Which claim content is preserved or changed, and is the current claim about another episteme edition, equivalence of claim content, or refinement of the method itself? |
+| Change and comparison | Which claims are preserved or changed? Distinguish equivalence of claim content, a C.2.1 edition relation, B.5.MR refinement or abstraction between models of a Method, and an A.3.1 claim about Method identity or relations. |
 | Edition and publication use | Which episteme edition is relied on, and does its publication use affect currentness or availability? |
 
 Calendars, assignees, work authorization, gate passage, and dated execution witnesses are governed by planning, assignment, gate, or work-occurrence patterns. They may cite a method description.
@@ -259,7 +259,7 @@ Apply F.6 through that same assignment afterward only when precise assignment-bo
 
 **CC-A3.2-10 (Same subject versus equivalent descriptions).** Two descriptions concern the same `U.Method` only when their `EntityOfConcern` references resolve to the same A.3.1 method identity. A scheme difference may require an F.9 Bridge to interpret a comparison, but the Bridge does not establish Method identity. Shared subject also does not make the epistemes equivalent: state which claims are preserved, absent, incompatible, or inaccurate for the proposed use. Do not use executable agreement, renaming of bound variables, graph equivalence, or persistence across stages by itself to decide whether the Method is the same or different or the claims are equivalent.
 
-**CC-A3.2-11 (Edition and refinement).** A later file or episteme edition does not by itself refine the Method. Use C.2.1 for the edition relation and state which description claims a comparison preserves or strengthens. Then use A.3.1 to decide whether one Method continues or two Methods are being compared, and apply its refinement test only to the world-side Method claim. A one-use comparison may stop as claim content under A.6.RCD; it creates no Method relation occurrence.
+**CC-A3.2-11 (Edition, model comparison and Method identity).** Use C.2.1 for a claimed edition relation and state which description claims the comparison preserves or changes. When the descriptions are used as models, apply B.5.MR to a refinement or abstraction claim between them. Apply A.3.1 separately to Method identity and any proposed relation between Methods. A one-use comparison may stop as claim content under A.6.RCD; it creates no Method relation occurrence.
 
 **CC-A3.2-12 (Nondeterminism).** When a description permits search, optimization, sampling, nondeterministic choice, or learned behavior, state the admissible result range and the criterion for evaluating actual Work or results. Name the pattern or declaration that defines that criterion.
 

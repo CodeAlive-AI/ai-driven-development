@@ -29,7 +29,7 @@ How can a practitioner establish what will remain possible when help changes or 
 
 - **Visible performance and hidden rescue.** A recipient can appear independent while another performer resolves every difficult case, repairs inputs or absorbs delay.
 - **Continuity and dependence.** A continuing supplier may be the best way to obtain the result. Reliance becomes a problem when the promised contribution cannot be supplied under the required conditions.
-- **Economy and capability.** Acquiring a capability can reduce some later dependencies but consumes present learning opportunities, feedback and qualified support.
+- **Economy and capability.** Acquiring a capability can reduce some later dependencies while requiring present development and provision. The burden depends on the holder and Method: learning may require practice and feedback, while a technical change may require installation, configuration and verification.
 - **Local success and new settings.** An adequate local result can justify reuse without establishing the same result for another population, workflow or consequence.
 - **Ending help and ending practice.** These are different changes with different affected parties and remaining obligations.
 - **Cultural continuation and control.** Independent carriers can preserve a practice without a service office. Establish the authority for any proposed changes to their work.
@@ -60,7 +60,7 @@ Use a sufficient current arrangement directly. Where provision remains open, ass
 | Retain the present help | A dependable contribution under ordinary demand and agreed terms. | The provider cannot continue, the contribution no longer matters, or its burden exceeds its benefit. |
 | Reduce or make help conditional | Recipients can handle the ordinary cases, recognize the named exception and reach support when it occurs. | Apparent independence still relies on unobserved rescue or exceptions cannot be recognized. |
 | Transfer provision | Another provider can obtain the required inputs, perform the operation and supply its result in a form the continuing work can use. | Only files or a role title have moved. |
-| Develop recipient capability | Suitable practice, feedback and evidence of performing the required operation. | Personal acquisition is not wanted, or the needed opportunities and time cannot be supplied. |
+| Develop recipient capability | Development or provision appropriate to the holder, with evidence of performing the required operation under the intended conditions. | Acquisition by this holder is not wanted, or the necessary development, provision or time cannot be supplied. |
 | Replace the obtaining way | A different qualified source, tool, service or Method can supply the result. | Its limits or access exclude the actual cases. |
 | Extend use to another setting | The target and its support fit that setting, or an appropriate adaptation can be qualified. | Local results are treated as a universal adoption instruction. |
 | End support or practice | Remaining work and affected dependencies have a legitimate disposition. | A date or funding decision is being used as evidence that dependent work is complete. |

@@ -71,7 +71,7 @@ Knowing both orientations does not choose between those tasks. If the transfer p
 
 Make the participants and preserved result recoverable in the form the recipient can use. This may be an ordinary sentence, a diagram or an instruction using an established coordinate convention. The relevant subject method supplies a spatial transformation, financial classification or other domain operation when one is needed.
 
-Use A.6.3.RT for a change of representation scheme that keeps the EntityOfConcern. Extra information needed for the new expression remains an additional input. If C.2.1 identifies different EntitiesOfConcern, use A.6.4 for the invariant, visible loss and bounded receiving use. Changing the performer, notation or coordinates alone does not establish such a change.
+Use A.6.3.RT when the EntityOfConcern stays the same and the operation the receiver needs depends on a change of representation language or reasoning medium. Extra information needed for the new expression remains an additional input. If C.2.1 identifies different EntitiesOfConcern, use A.6.4 for the invariant, visible loss and bounded receiving use. Changing the performer, notation or coordinates alone does not establish such a change.
 
 For a report of experience, retain who experienced and expressed it. B.5.EA supports articulation and correction by that participant. Translating the report into an observer's vocabulary cannot by itself establish a bodily cause or give the observer the same experience.
 

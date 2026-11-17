@@ -11,7 +11,7 @@ Then name or show the rule that selects, rewrites, or combines the claims. Do no
 
 **What this does not decide.** A.6.3 says how Y is licensed by named sources about the same thing. It neither proves the claims true nor makes Y a `U.View`; use E.17.0 for view membership. Use A.15.1 for the work that produced Y, A.15.PROD if first constitution matters, and E.24.PUB for publication, but only when those separate facts matter.
 
-**Builds on:** A.6.0 direct declaration structure; A.6.2 effect-free episteme morphing; C.2.1 episteme identity; E.17.0 viewpoint conformance and view membership; A.6.3.CR conservative retextualization; A.6.3.RT representation-scheme transition; A.6.4 retargeting; C.29 mathematical-lens use; A.13 Work basis; A.15.1 work; A.15.PROD local work/change/entity-identity-inception claims.
+**Builds on:** A.6.0 direct declaration structure; A.6.2 effect-free episteme morphing; C.2.1 episteme identity; E.17.0 viewpoint conformance and view membership; A.6.3.CR conservative retextualization; A.6.3.RT representation transition; A.6.4 retargeting; C.29 mathematical-lens use; A.13 Work basis; A.15.1 work; A.15.PROD local work/change/entity-identity-inception claims.
 
 **Used by:** E.17 publication-face construction, E.17.0 multi-view describing, E.18 transformation-flow descriptions, and domain patterns that derive a smaller or differently expressed episteme from one or more source epistemes.
 
@@ -227,7 +227,7 @@ X concerns pump P-14. A proposed Y concerns the whole cooling skid. Even if ever
 - **C.2.1** identifies source and receiving epistemes.
 - **E.17.0** alone governs `U.Viewpoint`, conformance, and `U.View` membership.
 - **A.6.3.CR** governs conservative textual re-expression when wording and organization are the main change.
-- **A.6.3.RT** governs same-EntityOfConcern representation-scheme transition with explicit recoverability and loss.
+- **A.6.3.RT** governs same-EntityOfConcern representation transition with explicit recoverability and loss.
 - **A.6.4** governs a changed EntityOfConcern.
 - **C.29** governs a declared mathematical-lens use of the construction or correspondence, including a diagram used for that mathematical claim.
 - **A.13** supplies the basis for an explicit dated Work claim; **A.15.1 and A.15.PROD** govern its admission and any local entity-identity-inception or completion claim.

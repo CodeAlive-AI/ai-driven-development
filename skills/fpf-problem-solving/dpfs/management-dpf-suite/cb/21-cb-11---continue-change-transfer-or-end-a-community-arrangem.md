@@ -56,7 +56,7 @@ Use CB.10's current account or a bounded inquiry to identify what is worth conti
 
 Follow one consequential use through the contributions it depends on. A monthly case discussion can depend on a qualified facilitator, permitted case material, access to the venue and a way to return the result. A public guide can depend on a maintainer and a correction route while requiring no continuing meeting.
 
-Use [C.36.RP (FPF C.36.RP:4)](../../../sections/09-part-c---kernel-extension-specifications/129-c-36-rp---sustain-and-renew-shared-ways-of-working.md#c36rp4---solution) when the missing contribution concerns obtaining and using a shared way of working. It locates the gap and compares access, capable help, learning, tools and method development. Retaining a finished answer can leave its interpretation or adaptation unavailable. Obtain the contribution that the later use needs.
+Use [C.36.RP (FPF C.36.RP:4)](../../../sections/09-part-c---kernel-extension-specifications/130-c-36-rp---sustain-and-renew-shared-ways-of-working.md#c36rp4---solution) when the missing contribution concerns obtaining and using a shared way of working. It locates the gap and compares access, capable help, learning, tools and method development. Retaining a finished answer can leave its interpretation or adaptation unavailable. Obtain the contribution that the later use needs.
 
 Include relationships whose continuation requires willing participation. Ask who wants to remain in contact and through what arrangement. Preserve an available way to reconnect where people agree; do not treat a copied membership list as a renewed relationship.
 

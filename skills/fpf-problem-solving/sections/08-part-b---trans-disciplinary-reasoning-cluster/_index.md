@@ -2,7 +2,7 @@
 
 ## Contents
 
-- [B.1 - Holon Aggregation and Part-Whole Construction](01-b-1---holon-aggregation-and-part-whole-construction.md) (235 lines) — Type: Part B holonic construction pattern
+- [B.1 - Holon Aggregation and Part-Whole Construction](01-b-1---holon-aggregation-and-part-whole-construction.md) (239 lines) — Type: Part B holonic construction pattern
 - [B.1.1 - Dependency Structure and Relation Grounding](02-b-1-1---dependency-structure-and-relation-grounding.md) (212 lines) — Type: Part B holonic construction pattern
 - [B.1.2 - Coordinate Decisions About System Aggregation and Delimitation](03-b-1-2---coordinate-decisions-about-system-aggregation-and-de.md) (211 lines) — Type: Part B holonic construction pattern
 - [B.1.3 - Knowledge Aggregation (Γ_epist): Synthesis and Target-Scheme Compilation](04-b-1-3---knowledge-aggregation-synthesis-and-target-scheme-co.md) (322 lines) — At a glance. Use B.1.3 to compose identified U.Episteme inputs into one knowledge aggregate while preserving their provenance, interpretation conditions, conceptual mappings, and contribution to its...
@@ -33,15 +33,16 @@
 - [B.5.RA - Recover an Argument for Use](29-b-5-ra---recover-an-argument-for-use.md) (387 lines) — Normativity: Normative unless marked informative
 - [B.5.RR - Revise Reasoning After a Premise or Question Changes](30-b-5-rr---revise-reasoning-after-a-premise-or-question-change.md) (184 lines) — Normativity: Normative unless marked informative
 - [B.5.FM - Construct a Model for the Question](31-b-5-fm---construct-a-model-for-the-question.md) (260 lines) — Normativity: Normative unless marked informative
-- [B.5.TU - Construct a Use of an Unfamiliar Theory](32-b-5-tu---construct-a-use-of-an-unfamiliar-theory.md) (202 lines) — Type: Method-description pattern
-- [B.5.TC - Compare Theoretical Accounts for a Question](33-b-5-tc---compare-theoretical-accounts-for-a-question.md) (202 lines) — Type: Method-description pattern
-- [B.5.QD - Develop a Question from a Result or Construction](34-b-5-qd---develop-a-question-from-a-result-or-construction.md) (222 lines) — Type: Method-description pattern
-- [B.5.QD.CF - Reformulate a Problem by Examining Its Conflicting Assumptions](35-b-5-qd-cf---reformulate-a-problem-by-examining-its-conflicti.md) (203 lines) — Normativity: Normative
-- [B.5.1 - Coordinate Development States: Explore → Shape → Evidence → Operate](36-b-5-1---coordinate-development-states-explore-shape-evidence.md) (63 lines) — Use this state model when a development project needs a shared account of whether a U.Episteme or U.System is being explored, shaped, evaluated or operated. The gain is to make the development focus...
-- [B.5.2 - Generate and Compare Candidate Explanations (Abductive Loop)](37-b-5-2---generate-and-compare-candidate-explanations.md) (315 lines) — Type: Architectural (A)
-- [B.5.2.0 - Question Form for Entering Abduction (U.AbductivePrompt)](38-b-5-2-0---question-form-for-entering-abduction.md) (231 lines) — Type: Definitional (D)
-- [B.5.2.1 - Instrument Abductive Hypothesis Generation with Novelty–Quality–Diversity (NQD)](39-b-5-2-1---instrument-abductive-hypothesis-generation-with-no.md) (195 lines) — Normativity: Normative binding to B.5.2 Abductive Loop. The local NQD-Generate Method in §4, or an equivalent declared generator, constructs the candidates. C.18 supplies generation, archive and...
-- [B.5.3 - Interpret Domain Vocabulary for an FPF Claim (Domain-Concept Bridge)](40-b-5-3---interpret-domain-vocabulary-for-an-fpf-claim.md) (98 lines) — Working domains use their vocabulary, while an FPF claim must preserve the kind and relations its meaning requires. A thermodynamicist uses terms such as "system", "macrostate", "control volume" and...
-- [B.5.4 - Recognize a Concept in a Situation](41-b-5-4---recognize-a-concept-in-a-situation.md) (131 lines) — Type: Method-description pattern
-- [B.5.PI - Initiate Inquiry from Work](42-b-5-pi---initiate-inquiry-from-work.md) (232 lines) — Normativity: Normative unless marked informative
-- [B.5.SD - Construct an Answer through Substantive Discussion](43-b-5-sd---construct-an-answer-through-substantive-discussion.md) (197 lines) — Normativity: Normative
+- [B.5.MR - Compare Models by Refinement and Abstraction](32-b-5-mr---compare-models-by-refinement-and-abstraction.md) (129 lines) — Use this when you need a model to determine something left open by another model, or need an abstraction that leaves some determinations open while retaining a useful conclusion. The practical...
+- [B.5.TU - Construct a Use of an Unfamiliar Theory](33-b-5-tu---construct-a-use-of-an-unfamiliar-theory.md) (202 lines) — Type: Method-description pattern
+- [B.5.TC - Compare Theoretical Accounts for a Question](34-b-5-tc---compare-theoretical-accounts-for-a-question.md) (204 lines) — Type: Method-description pattern
+- [B.5.QD - Develop a Question from a Result or Construction](35-b-5-qd---develop-a-question-from-a-result-or-construction.md) (222 lines) — Type: Method-description pattern
+- [B.5.QD.CF - Reformulate a Problem by Examining Its Conflicting Assumptions](36-b-5-qd-cf---reformulate-a-problem-by-examining-its-conflicti.md) (203 lines) — Normativity: Normative
+- [B.5.1 - Coordinate Development States: Explore → Shape → Evidence → Operate](37-b-5-1---coordinate-development-states-explore-shape-evidence.md) (63 lines) — Use this state model when a development project needs a shared account of whether a U.Episteme or U.System is being explored, shaped, evaluated or operated. The gain is to make the development focus...
+- [B.5.2 - Generate and Compare Candidate Explanations (Abductive Loop)](38-b-5-2---generate-and-compare-candidate-explanations.md) (315 lines) — Type: Architectural (A)
+- [B.5.2.0 - Question Form for Entering Abduction (U.AbductivePrompt)](39-b-5-2-0---question-form-for-entering-abduction.md) (231 lines) — Type: Definitional (D)
+- [B.5.2.1 - Instrument Abductive Hypothesis Generation with Novelty–Quality–Diversity (NQD)](40-b-5-2-1---instrument-abductive-hypothesis-generation-with-no.md) (195 lines) — Normativity: Normative binding to B.5.2 Abductive Loop. The local NQD-Generate Method in §4, or an equivalent declared generator, constructs the candidates. C.18 supplies generation, archive and...
+- [B.5.3 - Interpret Domain Vocabulary for an FPF Claim (Domain-Concept Bridge)](41-b-5-3---interpret-domain-vocabulary-for-an-fpf-claim.md) (98 lines) — Working domains use their vocabulary, while an FPF claim must preserve the kind and relations its meaning requires. A thermodynamicist uses terms such as "system", "macrostate", "control volume" and...
+- [B.5.4 - Recognize a Concept in a Situation](42-b-5-4---recognize-a-concept-in-a-situation.md) (131 lines) — Type: Method-description pattern
+- [B.5.PI - Initiate Inquiry from Work](43-b-5-pi---initiate-inquiry-from-work.md) (232 lines) — Normativity: Normative unless marked informative
+- [B.5.SD - Construct an Answer through Substantive Discussion](44-b-5-sd---construct-an-answer-through-substantive-discussion.md) (197 lines) — Normativity: Normative

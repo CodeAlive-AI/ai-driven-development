@@ -162,7 +162,7 @@ Recovery may expose a gap in the source or in the reader's preparation. It also 
 
 Backward recovery and forward construction answer complementary questions. The backward direction reveals what the desired result requires. The forward direction tests whether the available inputs and operations can supply it. Either direction alone can leave a gap: a plausible plan may lack an executable step, while available operations may produce objects irrelevant to the question.
 
-The method follows the construction's dependency structure. One intermediate object can support several later steps, and several objects can be required jointly. Preserving these relations makes the construction intelligible and helps divide its execution among people and AI agents. The receiving operation determines what a collaborator needs to supply.
+The method follows the construction's dependency structure. One intermediate object can support several later steps, and several objects can be required jointly. Preserving these relations makes the construction intelligible and helps divide its execution among performers. The receiving operation determines what a collaborator needs to supply.
 
 Construction and reasoning about properties remain connected. In the triangle case, the construction creates a common point and the circle properties establish equal sides. In the stand case, fitting conditions permit assembly, while load and carrying requirements can lead to design revision. This relation warrants cooperating methods for construction recovery and argument recovery.
 
@@ -183,7 +183,7 @@ The recovered procedure and the stand example are the present synthesis. Reconsi
 - **B.5:** selects construction recovery as one contribution to inquiry and connects its result with further reasoning.
 - **B.5.RA:** recovers the argument for a property that construction or later use needs.
 - **B.5.MPC:** uses recovered constructions while connecting physical, mathematical and computational reasoning.
-- **A.6.3.RT:** prepares a usable expression under a notation scheme when the representation obstructs an operation.
+- **A.6.3.RT:** helps change the representation when the inspector needs another operation on the recovered construction. A.6.3.RT.OE supports making an expression under an available notation.
 - **C.29.1 and C.29.2:** supply mathematical result transfer and computational formulation when those are the missing constructions.
 - **C.39:** develops a missing way of working from the localized problem.
 - **C.11.DUA:** selects the additional checking or information worth obtaining for the intended use.

@@ -26,7 +26,7 @@ Contributions whose conditions still hold remain usable.
 When the required work is revision of the SYSE framework, its author uses
 [FPF E.4.DPF](../../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/09-e-4-dpf---domain-and-local-principle-frameworks-whether-and.md)
 for framework construction and publication, and
-[FPF E.19](../../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/59-e-19---pattern-quality-gates-review-and-refresh-profiles.md) for the affected review and refresh.
+[FPF E.19](../../../sections/11-part-e---the-fpf-constitution-and-authoring-guides/60-e-19---pattern-quality-gates-review-and-refresh-profiles.md) for the affected review and refresh.
 The author refreshes the affected content and its dependent uses. The framework architecture is reopened only when evidence changes the
 promised field, selected problem families, pattern split, material result relations, publication form, or maintenance boundary.
 

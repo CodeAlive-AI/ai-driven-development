@@ -160,7 +160,7 @@ The claim graph cites the separate NameCard and the governed value's kind, locat
 
 The row, card, designations, governed value, external row reference, and `UTSRowId` designator remain distinct; `UnificationThreadId`, `Block`, and `RowEditionId` are navigation or edition designators rather than additional identity discriminators.
 
-If a later row episteme revises, refines, or supersedes an earlier one, an independently obtaining C.2.1 `EpistemeEditionRelation(earlierRowEpisteme, laterRowEpisteme)` carries historical continuation. Stable row spelling, id, table position, shared carrier, or later publication establishes no such relation. A `CurrentnessCondition` is row claim content; it is not the edition relation and does not make itself true.
+To establish historical continuation between two row epistemes, test C.2.1's `EpistemeEditionRelation(earlierRowEpisteme, laterRowEpisteme)`. An independently established refinement or supersession claim does not by itself supply that continuity. Stable row spelling, id, table position, shared carrier, or later publication establishes no such relation. A `CurrentnessCondition` is row claim content; it is not the edition relation and does not make itself true.
 
 When a selected row edition must be made available, E.24.PUB supplies `PublicationExpressionRelation(selectedRowEdition, expression, boundedUseDeclaration)`, `PublicationExpressionBearingRelation(carrier, expression)` and `EpistemePublicationRelation(selectedRowEdition, audienceDeclaration, boundedUseDeclaration, expression, carrier)`.
 
@@ -993,6 +993,63 @@ SenseCell.ArchitecturalReference.FPFCore.2026-10-12:
 ```
 
 For example, *FPF Library Architectural Reference* and *Engineering Suite Architectural Reference* identify different explained wholes. An embedded *Method Engineering Principle Framework Architectural Reference* performs the same function for that framework. Whether the account is independently managed depends on its use and change boundary. Its title alone does not decide this. The row makes the designation recoverable, while E.24.PUB separately governs any publication of this row or a particular architectural reference.
+
+#### F.17:12.6 - Model-comparison direction and level rows
+
+These rows make the three F.18:4.5 naming decisions available for citation from model explanations, project documents and teaching. B.5.MR governs the comparison; each row names one of its two relation kinds or its relative-position kind. The rows let a reader recover which of these values a reused expression names without requiring a new vocabulary for each application.
+
+The common by-value ReferenceScheme reads a model for a stated inquiry and established interpretation. Its completions satisfy its assertions and settle answers for that inquiry, including relevant probability claims. C refines A when C has a completion and every completion of C satisfies A under that interpretation; A is then an abstraction of C. Strictness requires an A-answer excluded by C. Equivalent answers share a position; incomparable models are unordered. Use the B.5.MR and F.18 records in the same selected publication edition.
+
+For each row below, `UnificationThreadId` is `ModelComparisonDirections`, `GovernedValueKindRef` is `U.Kind`, `ReferenceScheme` is that common value and `RowEditionId` is `2026-11-16`. The listed claims constitute each row's complete ClaimContent. The cells use the same scheme and the exact expression and sense given below. This shared presentation creates three rows, not one combined governed value.
+
+```text
+UTSRowId: UTS.ModelRefinement.2026-11-16
+GovernedValueRef: B.5.MR:4.2 refinement relation kind
+SubjectPatternLocator: B.5.MR:4.1–4.2
+UnifiedTechName: model refinement
+NameCardRef: NC-MODEL-REFINEMENT
+SenseCellRefs: SenseCell.ModelRefinement.2026-11-16
+RowRationale: retain the specification-theory designation while making feasibility, interpretation and the converse recoverable
+AdmissibleUse: cite C's feasible preservation of A for the named inquiry, including equality; use more concrete only with strictness
+BlockedUse: the name alone establishes neither higher empirical accuracy nor a strict difference
+CurrentnessCondition: reopen on changed predicate, interpretation, NameCard, cell or repeated confusion between refinement and accuracy
+
+SenseCell.ModelRefinement.2026-11-16:
+  LocalExpression: model refinement
+  LocalSenseClaim: C refines A for inquiry Q under interpretation I exactly when at least one completion of C exists and every completion of C satisfies A under I; strictness additionally excludes an answer of A distinguishable for Q
+
+UTSRowId: UTS.ModelAbstraction.2026-11-16
+GovernedValueRef: B.5.MR:4.2 abstraction relation kind
+SubjectPatternLocator: B.5.MR:4.2; B.5.MR:4.2.2
+UnifiedTechName: model abstraction
+NameCardRef: NC-MODEL-ABSTRACTION
+SenseCellRefs: SenseCell.ModelAbstraction.2026-11-16
+RowRationale: give the converse comparison a durable name while keeping model construction separate
+AdmissibleUse: cite A as an abstraction of C under the same inquiry and interpretation by establishing that C refines A
+BlockedUse: the name supplies no unique inverse construction and does not validate a wider empirical claim
+CurrentnessCondition: reopen on changed predicate, interpretation, NameCard, cell or confusion between the relation and omitted visible detail
+
+SenseCell.ModelAbstraction.2026-11-16:
+  LocalExpression: model abstraction
+  LocalSenseClaim: A is an abstraction of C for inquiry Q under interpretation I exactly when C refines A for Q under I; a more abstract position requires strictness
+
+UTSRowId: UTS.ModelAbstractionLevel.2026-11-16
+GovernedValueRef: B.5.MR:4.3 relative comparison-position kind
+SubjectPatternLocator: B.5.MR:4.2–4.3
+UnifiedTechName: level of model abstraction
+NameCardRef: NC-MODEL-ABSTRACTION-LEVEL
+SenseCellRefs: SenseCell.ModelAbstractionLevel.2026-11-16
+RowRationale: name a relative position under the model comparison independently of a document's language, discipline or physical scale
+AdmissibleUse: locate comparable models under a stated inquiry and interpretation; use L application positions and intermediate positions where this comparison is established
+BlockedUse: a numbered label alone supplies no strict ordering or intrinsic rank of a language, discipline, publication or entity
+CurrentnessCondition: reopen on changed comparison, NameCard, cell or repeated use as a global rank
+
+SenseCell.ModelAbstractionLevel.2026-11-16:
+  LocalExpression: level of model abstraction
+  LocalSenseClaim: a position under B.5.MR's stated model comparison, with equivalent answers sharing the position and strict comparative names applying only to ordered distinct positions
+```
+
+The rows cite no F.9 Bridge: they make no correspondence claim between different local meanings. A concrete comparison still needs its models, inquiry, interpretation and B.5.MR test; citing a row supplies the selected name and its meaning.
 
 ### F.17:12.5 - Bias-Annotation
 

@@ -20,7 +20,7 @@ Use this pattern when available source claims about the same EntityOfConcern nee
 
 **Fuller review.** Add the information needed when a dispute, risk or intended reliance cannot be settled from that short statement. External citation, cross-context use or a release decision may make preservation, correspondence or use conditions material; they do not by themselves require every field in §4.3.
 
-**Use a neighboring pattern when** explanation is primary (`ExplanationFaithfulnessProfile`), the representation scheme materially changes (`RepresentationSchemeTransition`), the EntityOfConcern changes (`A.6.4`), or the work makes a comparative-review claim (`E.17.ID.CR`). F.9 governs an asserted semantic Bridge or its bounded use; F.9.1 supplies an optional stance note. A coarsened rendering whose loss requires a narrower use and return to the source is governed by `A.6.3.CSC Controlled Semantic Coarsening`.
+**Use a neighboring pattern when** explanation is primary (`ExplanationFaithfulnessProfile`), the intended operation depends on changing the representation language or reasoning medium (`RepresentationTransition`), the EntityOfConcern changes (`A.6.4`), or the work makes a comparative-review claim (`E.17.ID.CR`). F.9 governs an asserted semantic Bridge or its bounded use; F.9.1 supplies an optional stance note. A coarsened rendering whose loss requires a narrower use and return to the source is governed by `A.6.3.CSC Controlled Semantic Coarsening`.
 
 ### A.6.3.CR:2 - Problem
 
@@ -79,21 +79,21 @@ These local review labels follow the `E.17:5.1e` local-field rule.
 **Out of scope**
 - a difference between the EntityOfConcern values resolved by the source and receiving references, including a hidden change of EntityOfConcern (`A.6.4`);
 - explanation-facing renderings whose main purpose is explanatory rendering rather than same-entity rewrite (`ExplanationFaithfulnessProfile`);
-- a material change of representation scheme, for example a text-to-diagram conversion that changes available operations or interpretation (`RepresentationSchemeTransition`);
+- a change of representation language or reasoning medium that makes a materially different operation possible, including aligning entries written in the same language for comparison (`RepresentationTransition`);
 - comparison, abductive-prompt, ranking, recommendation, bridge-mediated, substitution, or action-selection work that introduces new claims rather than restating available ones.
 
 #### A.6.3.CR:4.2.a - Reader guidance
 
 Use this pattern when the EntityOfConcern stays fixed and textual restatement remains the primary move.
 - If the main change is explanatory, apply ExplanationFaithfulnessProfile.
-- If the main change is a representation-scheme shift, apply RepresentationSchemeTransition.
+- If the intended operation depends on a change of representation language or reasoning medium, apply RepresentationTransition.
 - If the EntityOfConcern changes, apply A.6.4.
 
 #### A.6.3.CR:4.2.b - What the user checks first
 
 Start with the preservation question:
 1. Is the published result still about the same EntityOfConcern?
-2. Does the result remain a textual restatement, or is explanation or a representation-scheme change now primary?
+2. Does the reader need a clearer restatement, an explanation, or an expression in which a different operation becomes practical? When the last need calls for a change of representation language or reasoning medium, use A.6.3.RT.
 3. Can the reader see what was omitted, softened, or foregrounded?
 4. If several sources or correspondence claims contribute, can each receiving claim be traced to those sources and the rule that licenses it?
 5. Is the source merely pointed at, was it actually used, are the rewritten claims recoverable from it, and is the result admissible for the intended use?
@@ -120,7 +120,7 @@ Follow **E.14’s working-model-first discipline**: an ordinary report, summary,
 
 **Explicit review record (when fuller review is needed).** Include or inherit the fields needed to inspect the material preservation, correspondence, source-use or downstream-use question. Assurance, policy and cross-context cases often make such questions consequential. The record may inherit pattern ids and pinned metadata instead of restating them inline. Select only the applicable groups:
 - transform relation (`patternSpecializationRef = A.6.3 specialization`, `relationFunctionClaimRef`, `sourcePublicationOrRecordForm`, `targetPublicationOrRecordForm`, `changeTargetRef`);
-- preservation context (`entityOfConcernPolicy = preserve`, `boundedContextPolicy`, `viewpointPolicy`, `referenceSchemePolicy`, `representationSchemePolicy`, `groundingPolicy`, `referencePlanePolicy`);
+- preservation context (`entityOfConcernPolicy = preserve`, `boundedContextPolicy`, `viewpointPolicy`, `referenceSchemePolicy` for the episteme’s effective interpretation, `representationLanguagePolicy` for the language of expression, `groundingPolicy`, `referencePlanePolicy`);
 - claim and publication discipline (`claimPolicy`, `claimScopePolicy`, `publicationScopePolicy`, `reliabilityTransportPolicy`, `pinningPolicy`, `provenancePolicy`, `lossProfile`);
 - continuity and bridge discipline (`claimContinuityClass`, `microtheoryContinuityClass`, `onticContinuityClass`, `bridgeRequirement`, `conservativityWitness`);
 - downstream and admissibility discipline (`worldContactPolicy`, `evidencePolicy`, `gatePolicy`, `workCrossing`, `upstreamPatternLocator`, `downstreamPatternLocator`, `admissibleFaces`, `admissiblePublicationRenderings`, `compositionRule`, `reopenCondition`);
@@ -250,7 +250,7 @@ When the generated-summary case needs shared vocabulary, use only the `E.17:5.1b
 
 The summary may expose or cite the source slice it restates. It does not become that source slice by fluency, brevity, translation, layout, generated form, or reuse. If the needed source content, governing requirement, or case relation is missing, a repair request or source-gap note is only prospective: it neither establishes earlier source use nor supplies the missing claim support or use condition.
 
-If the generated summary is source-pointer-only, merely plausible, claim-widened, or carrying added linkage, do not treat it as a conservative source-equivalent summary. For source-finding or orientation, retain only the justified pointer and separate any unsupported or new proposition from the source-backed account. Repair the claim against the source, or apply A.6.3.CSC, ExplanationFaithfulnessProfile, RepresentationSchemeTransition, E.17.ID.CR, A.15, A.10, or another pattern that defines, constrains, or tests the claim. An orientation or coarsening label alone does not make an unsupported claim source-faithful.
+If the generated summary is source-pointer-only, merely plausible, claim-widened, or carrying added linkage, do not treat it as a conservative source-equivalent summary. For source-finding or orientation, retain only the justified pointer and separate any unsupported or new proposition from the source-backed account. Repair the claim against the source, or apply A.6.3.CSC, ExplanationFaithfulnessProfile, RepresentationTransition, E.17.ID.CR, A.15, A.10, or another pattern that defines, constrains, or tests the claim. An orientation or coarsening label alone does not make an unsupported claim source-faithful.
 
 #### A.6.3.CR:5.2 - Same-EntityOfConcern rewrite via declared correspondence
 
@@ -284,19 +284,19 @@ This does **not** remain ordinary `ConservativeRetextualization`. The coarsened 
 
 A text is rewritten not mainly to restate the same source, but to explain why it matters, simplify reasoning for a learner, or narrate a mechanism. That move should leave `ConservativeRetextualization` and be reviewed under `ExplanationFaithfulnessProfile`.
 
-#### A.6.3.CR:5.4 - Boundary to representation-scheme transition
-A prose note is rewritten as a table, matrix, diagram, latent representation, or distributed representation with a material representation-scheme change. Even if the EntityOfConcern stays fixed, this is not only a textual rewrite; it belongs with `RepresentationSchemeTransition`.
+#### A.6.3.CR:5.4 - Boundary to representation transition
+A reader can need the same events aligned by component to compare recurrences. The event descriptions can stay in the same language while their arrangement makes that comparison practical. A change of representation language can also make an operation possible. Use `RepresentationTransition` when that change is the point of the work.
 
 ### A.6.3.CR:6 - Bias-Annotation
 
-This pattern biases toward same-entity conservativity and away from explanation or retargeting inflation. The main mitigation is to repair a preservation defect within CR when possible and apply `ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `A.6.4`, or the pattern that defines, constrains, or tests the changed claim or use when it requires leaving same-entity textual restatement.
+This pattern biases toward same-entity conservativity and away from explanation or retargeting inflation. The main mitigation is to repair a preservation defect within CR when possible and apply `ExplanationFaithfulnessProfile`, `RepresentationTransition`, `A.6.4`, or the pattern that defines, constrains, or tests the changed claim or use when it requires leaving same-entity textual restatement.
 
 ### A.6.3.CR:7 - Conformance Checklist
 
 1. **CC-CR-1 — Same EntityOfConcern remains explicit.**
    The EntityOfConcern values independently resolved by the source and receiving `entityOfConcernRef` values are equal.
 2. **CC-CR-2 — Textual re-expression remains the right family.**
-   Textual restatement remains primary; explanation or a material representation-scheme change is not the primary move.
+   The intended use is served by a textual restatement. Check whether the reader instead needs an explanation or an operation made possible by a change of representation language or reasoning medium.
 3. **CC-CR-3 — Material loss, provenance, pinning, and reliability conditions remain recoverable.**
    The case makes conditions that affect interpretation or intended use recoverable from the text, its surrounding publication, or the source references on which that use depends.
 4. **CC-CR-4 — Direct or correspondence-mediated construction is identifiable.**
@@ -306,7 +306,7 @@ This pattern biases toward same-entity conservativity and away from explanation 
 6. **CC-CR-6 — Local conservativity witness remains satisfied.**
    The reviewed case does not silently widen modality, remove caveats, raise reliability assessment, add an F.9 Bridge or bounded-use suitability claim, establish current reliance or authorization, claim that receiving use occurred, or collapse declared alternatives beyond stated loss notes.
 7. **CC-CR-7 — A missing condition, preservation defect, or changed claim is explicit on failure.**
-   If the case fails a check, name the missing source or condition, the repairable preservation defect, or the changed claim. Repair and recheck within CR when the intended restatement can be restored. For a different claim or use, name the pattern to use next (`ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `A.6.4`, `B.5.2`, or another applicable pattern).
+   If the case fails a check, name the missing source or condition, the repairable preservation defect, or the changed claim. Repair and recheck within CR when the intended restatement can be restored. For a different claim or use, name the pattern to use next (`ExplanationFaithfulnessProfile`, `RepresentationTransition`, `A.6.4`, `B.5.2`, or another applicable pattern).
 8. **CC-CR-8 — Working-model first remains intact.**
    Ordinary same-entity rewrites stay lightweight; fuller explicit review records carry the fields needed for cases requiring fuller review.
 
@@ -347,8 +347,8 @@ For source recoverability, independent-verification claims and reopening, use th
 ### A.6.3.CR:12 - Relations
 
 - **Builds on:** `A.6.3`, `A.6.2`, `A.7`, `E.10.D2`, `E.17.0`, `E.17`, `F.9`, `F.18`, `E.10`
-- **Coordinates with:** `ExplanationFaithfulnessProfile`, `RepresentationSchemeTransition`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `B.5.2`, `A.15`
+- **Coordinates with:** `ExplanationFaithfulnessProfile`, `RepresentationTransition`, `E.17.ID.CR ComparativeReviewUnit`, `A.6.4`, `B.5.2`, `A.15`
 - **Failed conservativity:** name the missing source or condition, repair and recheck a preservation defect within CR when possible, or apply the pattern for the changed claim or use. Retargeting uses `A.6.4`, abductive work uses `B.5.2`, and action or work claims use the applicable `A.15` pattern; explanation, representation change, and other live claims keep their own routes.
-- **Boundary notes:** explanation-facing cases apply `ExplanationFaithfulnessProfile`; representation-regime shifts apply `RepresentationSchemeTransition`; bounded comparative review cases apply `E.17.ID.CR ComparativeReviewUnit`; EntityOfConcern changes apply `A.6.4`.
+- **Boundary notes:** explanation-facing cases apply `ExplanationFaithfulnessProfile`; changes of representation language or reasoning medium material to the operation apply `RepresentationTransition`; bounded comparative review cases apply `E.17.ID.CR ComparativeReviewUnit`; EntityOfConcern changes apply `A.6.4`.
 
 ### A.6.3.CR:End

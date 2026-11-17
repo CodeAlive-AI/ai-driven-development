@@ -338,7 +338,7 @@ Framework and module-description epistemes, authoring Work, publication occurren
 
 | Anti-pattern | Symptom | Repair |
 | --- | --- | --- |
-| `BoxIsModule` | A diagram box, package, or file boundary is treated as a module or as proof that a module relation obtains. | Recover the two holons, claim content, boundary, and interface specification; interpret the box under its representation scheme and assess any claim-bearing content. Use a direct relation occurrence only after its governing predicate obtains. |
+| `BoxIsModule` | A diagram box, package, or file boundary is treated as a module or as proof that a module relation obtains. | Recover the two holons, claim content, boundary, and interface specification; interpret the box under the diagram’s conventions and assess any claim-bearing content. Use a direct relation occurrence only after its governing predicate obtains. |
 | `SignatureAsInterface` | A signature declaration is treated as implemented compatibility. | Keep signature under A.6.0 and add interface-specification fields only when interface compatibility is being claimed. |
 | `PortAsProof` | Matching port or endpoint names are treated as integration proof. | Recover slot specs, protocol or schema, semantic conditions, and evidence, conformance, source relation, or reliance relation named by value. |
 | `FunctionalLinkAsInterface` | A functional relation is treated as module boundary. | Keep `VP.Functional` and add correspondence or allocation only when module allocation or correspondence is being claimed. |

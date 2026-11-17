@@ -6,7 +6,7 @@
 
 ### C.2.8:1 - Problem frame
 
-Use this pattern when an explanation, pattern text, architecture account or another expressed description must make selected structure recoverable by a reader or computational observer. You may be comparing two forms of the same account, deciding whether an added explanation exposes a missing dependency, or checking what an observer can extract with the available preparation and time.
+Use this pattern when an explanation, pattern text, architecture account or another expressed description must make selected structure recoverable by a reader or observing system. You may be comparing two forms of the same account, deciding whether an added explanation exposes a missing dependency, or checking what an observer can extract with the available preparation and time.
 
 **First useful move.** Name the relation or distinction the reader needs, identify the available account and its expression, and state the preparation, source access and budget that can change recovery. Compare what the reader can correctly recover under those conditions. A useful result can be two sentences: “Both accounts expose the dependency on a durable write. Only the second account exposes why the reporting replica was chosen; this is an author estimate for readers familiar with replication, with the same source access and three-minute budget.”
 
@@ -58,7 +58,7 @@ This is a relation Characteristic under A.17, with arity three over the ordered 
 
 Its aspect is the amount of selected structure correctly extractable from E through X by O under stated comparison conditions.
 
-E retains its C.2.1 identity. X is an independently identified `U.Entity`: the sign construction that expresses E, identified under its expression domain's formation and equality rules. If reading order affects the selected operation, those rules must preserve order as part of X. O is the specified human or computational observer. An estimate about a reader class states the relevant preparation and variation among its members; it does not treat the class as another individual reader.
+E retains its C.2.1 identity. X is an independently identified `U.Entity`: the sign construction that expresses E, identified under its expression domain's formation and equality rules. If reading order affects the selected operation, those rules must preserve order as part of X. O is the specified reader or observing system. For distributed extraction, identify the observing system and how its participants' contributions produce the recovered structure. An estimate about a reader class states the relevant preparation and variation among its members; it does not treat the class as another individual reader.
 
 Where notation helps, write `ESI_C(E, X, O)`. C fixes the selected structure, correctness criterion, relevant prior knowledge, usable operations, available assistance and tools, access conditions, budget and any other qualification that changes interpretation. These conditions qualify the characteristic of the tuple; they are not an additional bearer or a universal record kind.
 

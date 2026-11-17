@@ -112,7 +112,7 @@ Positive examples cover one known configuration/feature/characteristic/result ch
 | Crosswalk equals transformation | Add selection, direction, cardinality, conversions, defaults, errors, trace, and examples. |
 | Null for every failure | Define distinct semantic and operational states and their receiver behavior. |
 | Latest record wins | Use the direct configuration/effectivity or justified interval rule. |
-| Normalize identifiers | Preserve scheme and issuer and reference the identity disposition. |
+| Normalize identifiers | Keep the original entries and how they were resolved. Preserve the context for a rule and the issuer for an assignment. Reference the identity disposition. |
 | Hidden unit conversion | Record source/target units, authority, precision, loss, and counterexample tests. |
 
 ### SIE.7:9 - Consequences

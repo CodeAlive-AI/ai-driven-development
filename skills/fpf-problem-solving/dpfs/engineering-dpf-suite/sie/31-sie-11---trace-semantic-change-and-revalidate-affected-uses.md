@@ -53,7 +53,7 @@ When additional evidence is being considered, apply `C.11.DUA` to compare its at
 | Changed reliance | Integration result to revisit |
 | --- | --- |
 | A concept, relation, or model constraint | SIE.3 model adequacy and any affected SIE.4 correspondence. |
-| Identifier meaning, scheme, grain, or interval | SIE.5 identity disposition and the results that use it. |
+| Identifier assignment, formation or resolution rule, entity grain or interval | Follow the changed premise to its direct users. Reassignment may affect one entry. A general rule may change the entries SIE.2 can resolve or the requests SIE.9 accepts and the SIE.10 tests for those requests. Reopen a SIE.5 identity disposition and its dependent uses when the changed premise supported that disposition. |
 | Source-claim scope or interpretation | SIE.6 composition, conflict, or non-comparability result. |
 | A transformation premise | SIE.7 mapping and its affected outputs. |
 | Availability, permissions, freshness, or service conditions | SIE.8 realization choice or SIE.9 receiving interface, according to the changed condition. |

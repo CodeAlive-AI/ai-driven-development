@@ -62,7 +62,7 @@ Specify the provider’s contribution. The following requests illustrate differe
 | “Help us introduce the practice.” | Which local conditions, explanation, participation, trial, observation or revision work the helper supplies. |
 | “Make us independent.” | Which contributions the recipient must perform or arrange without this particular helper, and which continuing services remain legitimate dependencies. |
 
-One undertaking can combine several of these or other contributions. Explain how they work together to obtain the promised result.
+One undertaking can combine several of these or other contributions. Explain how they work together to obtain the promised result. Identify which operations the provider and recipient actually perform; they can use the same Method or different Methods. An adequate existing contribution can be used within its grounds and rights without inventing a new promise.
 
 Establish that the decisive operation can be supplied with the required competence, access and evidence. The helper can perform it, use an applicable existing result or obtain it from a qualified provider. If useful delivery still depends on a provider’s unconfirmed commitment or unavailable evidence, state that condition.
 

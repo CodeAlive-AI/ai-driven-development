@@ -2,6 +2,8 @@
 
 The **subject** is what the explanation concerns. The **question** identifies the connection sought and the **purpose** explains why it matters. The **account** supplies claims, relations and conditions relevant to that connection. Its **expression** might be prose, a formula, a table, a diagram, a demonstration or a combination. The **recipient** interprets the expression under particular conditions of preparation, access, help and effort, and may contribute to the explanation.
 
+When an account uses a model, keep its level of abstraction separate from the recipient's ability to recover its assertions. An abstract model can be precisely expressed. Explaining a term or restoring a missing reference may reveal the same assertions without changing the answers the model admits. If the model itself leaves open a choice needed for the recipient's use, a further determination requires subject grounds; use B.5.MR to test a claimed refinement or abstraction. A missing derivation or operation may instead require new subject content.
+
 When explaining a Method, distinguish the reusable way of working, an actual or stipulated performance and the material used. An explainer who wants to show how to construct an example can choose two groups with different sizes and different means, so that equal-group and equal-individual weighting give different answers. The arithmetic is the material. Selecting the contrasting instance illustrates a design operation. A correct sum and an account from which the recipient can learn that operation have different criteria.
 These distinctions support concrete diagnoses:
 

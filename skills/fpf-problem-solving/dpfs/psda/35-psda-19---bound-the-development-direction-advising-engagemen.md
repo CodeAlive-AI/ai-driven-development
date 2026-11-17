@@ -45,6 +45,8 @@ Use an adequate existing engagement question, or use [PSDA.11 — Bound the Deci
 
 Identify who is preparing the advice and who receives it. Development-direction advising here requires a distinct recommending performer. A recipient may also hold the subsequent choice under the applicable authority. A team can receive advice from an internal specialist.
 
+A consultant can supply this advising contribution or perform a different professional operation. Establish the actual contribution before treating the title as a promise of advice, learning or target performance. Library.Reference:9.2.2 supplies the shared comparison of recipient and helper contributions.
+
 Distinguish client, sponsor, developing subject, recipient and holder of a choice where the difference affects service, disclosure, protection or action. One participant may fill several positions. Establish those positions from the terms and actual circumstances. Payment or a signature may establish one fact while leaving another open.
 
 A useful question might be: “For Mira's own development choice over four months, help her compare directions for contributing to cross-disciplinary review; her employer's later assignment decision remains separate.” If the recipient or intended use is unknown, report the gap. If the task is a direct inquiry, return its result to the relevant use.

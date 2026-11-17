@@ -235,6 +235,6 @@ The clinic and external-contribution variants are analytical adaptations of the 
 - **Uses [SYSE.2 (SYSE.2:4.3)](../../engineering-dpf-suite/syse/23-syse-2---develop-linked-use-and-system-concepts.md#syse243---develop-the-use-claim-and-candidate-system-concept-together):** connected use and system-concept proposals for co-design contributions.
 - **Uses [MNT.1 (MNT.1:4)](../../engineering-dpf-suite/mnt/12-mnt-1---identify-the-maintained-system-use-and-permission-bo.md#mnt14---solution):** the bounded technical-maintenance question, operating conditions and relevant control.
 - **Uses [HCD](../../human-capability-engineering-dpf-suite/hcd/_index.md) and Learning Product LPF:** learning and publication contributions when those are needed.
-- **Returns to [Method development in Core (FPF C.39)](../../../sections/09-part-c---kernel-extension-specifications/96-c-39---find-and-develop-a-way-to-obtain-a-result.md) or [Research Method Practice (RMP)](../../rmp/_index.md):** an unavailable professional method or an unresolved inquiry needed by the contribution.
+- **Returns to [Method development in Core (FPF C.39)](../../../sections/09-part-c---kernel-extension-specifications/97-c-39---find-and-develop-a-way-to-obtain-a-result.md) or [Research Method Practice (RMP)](../../rmp/_index.md):** an unavailable professional method or an unresolved inquiry needed by the contribution.
 
 ### CB.5:End

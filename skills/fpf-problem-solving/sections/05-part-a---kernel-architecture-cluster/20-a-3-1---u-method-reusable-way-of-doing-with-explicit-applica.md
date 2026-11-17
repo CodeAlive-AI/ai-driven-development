@@ -105,8 +105,6 @@ Start with the least apparatus that lets another reader recognize the same metho
 2. **Later comparison or reliance.** Use the needed entries in the Plain aid below when the ordinary statement is insufficient to distinguish same-named methods, compare descriptions or variants, cite one edition in a plan, or audit why this method was selected.
 3. **Organization of several methods or uses.** Open `A.22`, `B.1.5`, or another direct composition pattern only when the question is about the organization itself—for example, which methods were composed, selected, used as fallbacks, or enacted in the reviewed work.
 
-Moving to a heavier level must solve one of those concrete problems.
-
 The following Plain identification aid is optional and is not a data schema. Omit every entry that the stated decision does not use.
 
 ```text
@@ -202,7 +200,7 @@ Choose by the claim being made:
 * If it schedules future work or reports a dated occurrence, use A.15.2 or A.15.1.
 * If it claims evidence, provenance or support, use the direct pattern for that claim or relation. Add an A.10 source-to-use account when source recovery, provenance, currentness or bounded reliance must remain replayable. If a representation's form or layout is being treated as sufficient to prescribe or authorize action, apply C.2.P.DR before choosing the pattern for that claim.
 
-Use §4.2 for cross-context correspondence, bounded-use, assurance, and mechanism-realization claims. C.2.1, A.6.3, A.6.3.RT, A.6.4, or A.1.1 governs an actual change of episteme edition, reference scheme, representation scheme, retargeting, or model-use relation. A.6.1 governs an application binding. State one of these relations only when its participants and predicate are present; otherwise retain the source objects without asserting the relation.
+Use §4.2 for cross-context correspondence, bounded-use, assurance, and mechanism-realization claims. C.2.1 governs changes of episteme edition or effective interpretation rules. Use A.6.3 for viewing an episteme, A.6.3.RT for a representation transition, A.6.4 for retargeting, and A.1.1 for a model-use relation. A.6.1 governs an application binding. State one of these relations only when its participants and predicate are present; otherwise retain the source objects without asserting the relation.
 
 Thus *algorithm* and *practice* remain source cues. “The SQL query is the method” fails unless the project can state the reusable way of querying, its admissible inputs, intended result, and stop independently of that query text. “Our review practice is the method” fails when the sentence is about a team assignment, dated review, discipline, tradition, evidence record, or publication.
 
@@ -255,10 +253,11 @@ Start with the practical question, not a graph or the umbrella word *specializat
 | Does this reusable way meet one or more Method-kind criteria? | Use `C.3.2` for the admissibility check and a `true`, `false`, or `unknown` judgment. An out-of-scope request is `not-applicable` and forms no judgment. |
 | Does one Method kind have several broader kinds? | Check each broader-kind claim under `C.3.1`. |
 | Does one Method contribute to several larger Methods? | Use `B.1.5` for every part–whole pair and every whole construction. Each whole keeps its own action, boundary, interfaces, and reidentification rule. |
+| Is one model of a Method a refinement or an abstraction of another? | Use `B.5.MR` to compare their assertions and admitted answers for a stated inquiry and interpretation. The models may concern the same Method; §4.7 separately governs Method identification. |
 | Are two Methods being compared for refinement or replacement? | First identify both Methods and the use that needs the comparison. State the direction, what remains, what changes, and the material guards or losses. A sentence or local claim is often enough for one use. |
 | Is this another question—for example, parameter variation, family grouping, fallback, dispatch, a description, a selected structure, performed Work, capability, provider contribution, or cultural change? | Use the pattern that defines or tests that claim. The label alone establishes no Method kind, Method part, or relation occurrence. |
 
-Before claiming refinement or replacement, decide whether the changed account identifies the same Method. If it does, state what was preserved and what changed; do not invent a relation between two Methods. If two Methods are identified, a refinement comparison states its direction and use, the semantics retained from the first Method, what the second narrows or strengthens, and the action or result that changes.
+Before claiming refinement or replacement between Methods, decide whether the changed account identifies the same Method. If it does, state what was preserved and what changed; do not invent a relation between two Methods. If two Methods are identified, a refinement comparison states its direction and use, the semantics retained from the first Method, what the second narrows or strengthens, and the action or result that changes.
 
 A replacement comparison says which Method may replace which other Method, for what use, under which preconditions, with which intended result or preserved condition, and which bounds, interfaces, losses, and guards must remain visible. Do not infer the reverse direction. Shared kind criteria or similar descriptions do not prove replacement.
 

@@ -60,7 +60,7 @@ Reuse an adequate qualified procedure or specialist result within its conditions
 
 Use [SYSE.28][SYSE] when the test's placement or enforcement needs design. Determine where the checked property can change, where another subject can be substituted, and where the result can still prevent the prohibited reliance. An earlier successful check may remain sufficient through controlled steps that cannot defeat it.
 
-Keep test qualification, implementation and authority distinct. A software provider can implement a supplied rule without being competent to define its legal or security criterion. A specialist result can qualify a test without appointing the person authorized to waive the requirement.
+Keep test qualification, implementation and authority distinct. A software provider can implement a supplied rule without being competent to define its legal or security criterion. A specialist result can qualify a test without appointing the participant authorized to waive the requirement.
 
 #### ADM.14:4.4 - Provide an intelligible response for each consequential outcome
 
