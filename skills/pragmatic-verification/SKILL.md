@@ -1,9 +1,9 @@
 ---
-name: verification-playbook
-description: "Language-agnostic playbook for deciding what to verify and how: which cases deserve unit, integration, contract or e2e tests, when to mock and when to use real dependencies, how to avoid redundant, self-confirming, brittle or flaky tests, and which QA scenarios to run through browser, computer or phone use before calling a task done. Use when writing or reviewing tests for a change, planning verification of a feature or bug fix, choosing a test level or test doubles, pruning or repairing an AI-generated, slow or flaky suite, running exploratory QA on a running build, or deciding whether the evidence is enough to report completion. Triggers on 'write tests', 'add test coverage', 'test plan', 'should I mock this', 'unit or integration', 'flaky test', 'QA this', 'verify it works'. Not for tool syntax tutorials, load or performance testing, security audits, or designing evals for LLM output quality."
+name: pragmatic-verification
+description: "Language-agnostic playbook for thoughtful tests and checks: which cases deserve unit, integration, contract or e2e tests, when to mock, how to avoid redundant, self-confirming, brittle or flaky tests, and which QA scenarios to run through browser, computer or phone use. Use when writing, reviewing or pruning tests, planning verification of a change, or deciding whether the evidence is enough to call a task done. Not for tool syntax tutorials, load testing, security audits or evals of LLM output quality."
 ---
 
-# Verification Playbook
+# Pragmatic Verification
 
 **Core rule:** for each risk that matters, choose the cheapest check that still contains the
 mechanism of the possible defect and lets the correct result be observed. A new check must add a
