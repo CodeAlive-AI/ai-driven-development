@@ -66,12 +66,13 @@ is a complete answer. Use the harness's question tool when it has one.
 
 ```text
 Audit of <project> at <revision>: <n> test files, about <k> lines of test code, <stacks>.
-Plan: <no workers | about N worker runs>.
+Plan: <no workers | about N worker runs, about T at the default limit>.
 
 1. Scope: the whole repository, or only some paths? [whole repository]
 2. Worker model for the scan: <models this harness can start, cheapest first>, or none.
    [the cheapest that passes a pilot shard]
-   Model for critical areas and re-runs: <options>. [a stronger one, or the auditor itself]
+   Second model, for re-runs and for critical areas too large for the auditor to read:
+   <options>. [a different model from the scan's]
 3. Workers in parallel: [5]
 4. Execution: (a) static: nothing in the project is run; (b) also run the tests with
    <detected command>; (c) also a few sensitivity probes in an isolated copy. [a]
@@ -82,6 +83,8 @@ Plan: <no workers | about N worker runs>.
 - **Models:** offer only what the harness can really start: native subagents, or agents behind
   an installed orchestration tool. Names differ per harness: list them, do not assume. When the
   harness cannot choose a subagent's model, say so and ask only for the limit.
+- **Time:** shards × minutes per shard ÷ workers in parallel. A shard of 2,000 lines takes a
+  fast model about 7 minutes and a slow one about 15. Correct the estimate after the pilot.
 - **Small project:** ask items 1, 4 and 5 only.
 - **Nobody to ask** (a non-interactive run), or the answer is "defaults": proceed with the
   defaults and print them at the top of the report. Execution stays static without a yes.
@@ -111,8 +114,9 @@ audit map in the scratch directory: shards, lens tasks, risk areas, gate facts, 
    concurrency, external services and runtime LLM calls: paths and a one-sentence promise each.
    Label the map "derived" unless the user confirmed it.
 5. **Mechanical signals by search, not by model.** Fixed sleeps, skip and focus markers, retry
-   settings, tests with no assertion: counts and locations. They are findings in their own right
-   and the answer key for checking workers.
+   settings, tests with no assertion: counts and locations. A hit is a candidate: a sleep inside
+   a bounded polling loop or a fixture is not a finding. Classify the hits by reading. The
+   classified hits are findings in their own right and the answer key for checking workers.
 6. **Existing data, when present.** Pipeline history (ran, skipped, reruns, durations), a
    coverage report, version control history (tests that change with most commits, fixes that
    came without a test). Read it. Do not generate it without permission.
@@ -122,10 +126,13 @@ audit map in the scratch directory: shards, lens tasks, risk areas, gate facts, 
 - **Shard:** the test files of one module at one level, plus the paths of the code under test.
   Judging a test needs the code it tests, and local duplicates are visible inside a module.
 - **Size:** about 2,000 lines of test code or 20 files, whichever is smaller. Shrink it for a
-  weaker model.
+  weaker model. Do not raise it for a stronger one: every model reports fewer findings per line
+  as the shard grows. A file over the limit is a shard of its own.
 - **Complete and disjoint:** every test file in scope is in exactly one shard or excluded.
-- **Critical areas** get their own shards. The auditor reads them itself, or gives them to the
-  stronger model when they are too large and then verifies every finding.
+- **Critical areas** get their own shards. The auditor reads each one itself and also gives it
+  to one worker: models find different things, and one reader misses a third or more. When a
+  critical area is too large for the auditor to read, two different models read it and the
+  auditor verifies every finding against the test and the code in full.
 - **Sample for a large project:** all gates, all critical-area shards, and at least one shard
   per package and level, preferring code that changes often. Widen a stratum when its sample
   shows a pattern that matters.
@@ -161,16 +168,20 @@ Output: write the records to <scratch path>/<id>.jsonl and reply with the end re
         | reply with the records only
 ```
 
-- When a worker cannot read the skill's files, paste `suite-audit-worker.md` into the brief.
+- **Delivery.** Some harnesses confine a worker to the repository: it can neither read the
+  skill's files nor write to scratch. Then paste `suite-audit-worker.md` into the brief and take
+  the records from the reply. Keep the output path short, because workers mistype long ones.
 - **Pilot first.** Run one shard that the auditor has read itself, chosen for variety. A model
   passes when it invents no location and misses nothing the auditor would rank in the first two
   tiers. Fix the brief or change the model, then fan out. Repeat the pilot when either changes.
 - **Fan out** up to the limit, starting the next worker as each one finishes. Read the first
   results as they arrive.
 - **Keep workers read-only.** Use a worker type that cannot write when the harness has one, and
-  compare the working tree status before and after.
-- **One re-run per failed shard.** Then split it, use the stronger model, read it directly, or
-  report it as not verified. No chain of cheap retries.
+  compare the working tree status before and after. Other writers may move trunk meanwhile, so
+  also compare the audited files with the recorded revision.
+- **One re-run per failed shard.** First look for the output under a mistyped path. After the
+  re-run split the shard, use the second model, read it directly, or report it as not verified.
+  No chain of cheap retries.
 
 ## Dimensions and who judges them
 
@@ -210,14 +221,19 @@ every rank.
 ## Reduce and verify
 
 1. **Receipts.** Every shard has an `end` record, its `file` records cover every file of the
-   shard, and every line parses. Otherwise the shard is incomplete.
-2. **Locations.** Check mechanically that each `quote` occurs in its file, and take the line
-   from the match. Drop what does not occur. Many failures in one shard discard the shard.
-3. **Recall.** Compare worker output with the search counts from reconnaissance, and read a few
-   files that came back clean, critical areas first. A worker that misses known signals gives no
+   shard, and every record parses. Otherwise the shard is incomplete. Parse a reply from its
+   first record: some models put text before it.
+2. **Locations.** Check mechanically that each `quote` occurs in its file: at the cited line,
+   or else at the nearest match, since a line may repeat. Drop what does not occur. Many
+   failures in one shard discard the shard. A finding may cite a helper outside the shard; the
+   same check applies.
+3. **Recall.** Compare worker output with the classified search hits from reconnaissance, and
+   read a few files that came back clean, critical areas first. Count a match by signal family:
+   one skip is G1 to one model and G2 to another. A worker that misses known signals gives no
    evidence by reporting nothing.
 4. **Merge.** Group by signal and directory with a tool, not by reading every record. Join `file`
-   records by subject.
+   records by subject. Where several workers read one shard, join their findings by location
+   (one file, lines a few apart, or an `also` entry), never by signal code alone.
 5. **Verify** by the table below.
 6. **Triage** with the categories of `evidence-and-closeout.md`: a confirmed weakness is a defect
    of the test system; a claim that needs a run or a probe stays a plausible risk, with the check
@@ -236,7 +252,10 @@ every rank.
 | "Flaky" or "slow" | Run data or pipeline history. From code alone: a flaky source, a heavy setup |
 
 When fewer than about two thirds of a sample confirm, do not report the pattern from worker
-claims. Re-scan with the stronger model, read it directly, or list it as not verified.
+claims. Re-scan with the second model, read it directly, or list it as not verified.
+
+Do not pick what to verify by a worker's `conf`: some models mark nearly everything high. Pick
+by what the finding would cost if true.
 
 ## Rank and recommend
 
@@ -313,4 +332,4 @@ ranking by the auditor alone, the verification table. The rest:
 | Generated, vendored or recorded tests | Excluded and listed. Audit the generator or template when it lives in the repository |
 | The suite cannot be run here | Static mode and existing pipeline results. Run-dependent claims stay not verified, with the command or log that would settle them |
 | A worker changed the repository | Report it and let the user decide. Do not revert on your own |
-| The tree moves during the audit | Findings refer to the recorded revision. Re-check the top items if it moved |
+| The tree moves during the audit | Findings refer to the recorded revision. Compare the audited files with it at the end and re-check the findings in files that changed |
