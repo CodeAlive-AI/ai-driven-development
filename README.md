@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  An umbrella collection of 23 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
+  An umbrella collection of 24 skills + 1 hook that work across <strong>Claude Code, Codex CLI, OpenCode, Cursor, Gemini CLI, Antigravity</strong>, and any other agent that supports the <a href="https://agentskills.io">Agent Skills</a> standard.
 </p>
 
 ---
@@ -30,7 +30,7 @@
 **Via Skills CLI** (recommended — works in 12+ agents):
 
 ```bash
-# Install all 23 skills
+# Install all 24 skills
 npx skills add CodeAlive-AI/ai-driven-development
 
 # Or pick a single skill
@@ -65,7 +65,7 @@ Meta-skills that let AI coding agents configure themselves. No more editing conf
 | [agentic-readiness](skills/agentic-readiness/) | Audit and improve repositories for Codex/Codex App, Claude Code, and OpenCode, including `AGENTS.md`/`CLAUDE.md` discovery and routing |
 | [installing-cli-tools](skills/installing-cli-tools/) | Install, upgrade, authenticate, verify, and roll back developer CLIs while keeping tokens and API keys out of chat, logs, shell history, startup files, and repositories |
 
-### Engineering practices (9)
+### Engineering practices (10)
 
 Disciplined approaches that improve how agents and humans collaborate on code.
 
@@ -76,6 +76,7 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 | [prompt-engineering](skills/prompt-engineering/) | Universal prompt-engineering toolkit. 14 reference docs covering Claude / GPT / Gemini family-specific guidance, prompting techniques, evaluation & red-teaming, common failure modes (hallucinations, security, structure, debt) |
 | [fpf-problem-solving](skills/fpf-problem-solving/) | First Principles Framework — a transdisciplinary "operating system for thought", with all 36 domain frameworks (strategy, goals/OKR, research, decision design, systems engineering and more) stored locally. Decompose cross-domain problems, audit conclusions, apply a named pattern such as F.19 or GOALS.7, and reason rigorously about complex systems. Based on Anatoly Levenchuk's [FPF Library](https://github.com/ailev/FPF) |
 | [bug-fix-protocol](skills/bug-fix-protocol/) | 8-step bug-fix protocol. Treats every production bug as **two** failures (the code defect + the testing system that allowed it through) and enforces a step-8 audit that closes the gap |
+| [verification-playbook](skills/verification-playbook/) | Language-agnostic playbook for thoughtful tests and checks. Picks the cheapest check that still contains the mechanism of the defect: which cases go to unit, integration, contract or e2e, when to mock, how to avoid self-confirming, redundant, brittle and flaky tests, and which QA scenarios to run through browser, computer or phone use. Compact `SKILL.md` with a read-when table, eight topical references and per-stack tooling files |
 | [plan-mode](skills/plan-mode/) | Planning gate for any project change. Investigate context → analyse the task → surface ambiguities, contradictions, risks, and blockers → ask focused questions → produce an evidence-based, step-by-step plan → implement **only after explicit approval**, then validate. Compact always-on `SKILL.md` + full `PROTOCOL.md` |
 | [investigating-repository-history](skills/investigating-repository-history/) | Reconstruct historical intent before risky edits. Local `git blame`/`log` + GitHub PR/review evidence (via `gh`, never direct API), with squash/rebase/cherry-pick/rename/revert anomaly handling, decision-atom extraction, and confidence-scored output — produces a cited history note instead of guessing |
 | [refactoring-csharp](skills/refactoring-csharp/) | One-shot Roslyn contract for renaming C# symbols from `file + 1-based line + oldName`, with dry-run preview, safe file moves for supported named types, and explicit error codes |
@@ -164,6 +165,7 @@ ai-driven-development/
 │   ├── settings-management/
 │   ├── skills-management/
 │   ├── ubiquitous-language/
+│   ├── verification-playbook/
 │   └── windows-qa-engineer/
 ├── hooks/
 │   └── balanced-safety-hooks/    ← bash-guard (Go, pre-built binaries via release)
