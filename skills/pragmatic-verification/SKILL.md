@@ -1,6 +1,6 @@
 ---
 name: pragmatic-verification
-description: "Language-agnostic playbook for thoughtful tests and checks: which cases deserve unit, integration, contract or e2e tests, when to mock, how to avoid redundant, self-confirming, brittle or flaky tests, and which QA scenarios to run through browser, computer or phone use. Use when writing, reviewing or pruning tests, planning verification of a change, or deciding whether the evidence is enough to call a task done. Not for tool syntax tutorials, load testing, security audits or evals of LLM output quality."
+description: "Language-agnostic playbook for thoughtful tests and checks: which cases deserve unit, integration, contract or e2e tests, when to mock, how to avoid redundant, self-confirming, brittle or flaky tests, and which QA scenarios to run through browser, computer or phone use. Use when writing, reviewing or pruning tests, auditing an existing project's test suite, planning verification of a change, or deciding whether the evidence is enough to call a task done. Not for tool syntax tutorials, load testing, security audits or evals of LLM output quality."
 ---
 
 # Pragmatic Verification
@@ -46,10 +46,10 @@ expose another user's data.
    realistic defect that turns it red, and what existing checks miss.
 4. **Derive cases from failure mechanisms.** Name the concrete way a claim can break ("a stale
    response overwrites newer state", not "handle errors") and pick the cases that expose it.
-   "More coverage" is not a reason for a case. See `case-design.md`.
+   See `case-design.md`.
 5. **Choose level and reality.** Put each check at the smallest boundary that reproduces the
-   mechanism and exposes the result. Say what is real, what is substituted, and what each
-   substitute leaves unproven. See `levels-and-doubles.md`.
+   mechanism and exposes the result. Say what is real, what is substituted and what that
+   leaves unproven. See `levels-and-doubles.md`.
 6. **Show that the test can fail.** For a bug fix, watch the regression test fail on the old
    defect for the right reason. For an important rule, break it once (`>=` to `>`, drop the
    ownership check), see red, restore. See `test-quality.md`.
@@ -85,8 +85,8 @@ and never replays the unit table through the browser. The pyramid is a cost guid
   a promised external effect.
 - Add a case with the same outcome and failure mechanism as an existing one.
 - Mock a chain of internal collaborators to test a thin orchestrator. Test it integrated.
-- Assert over a collection that may be empty (`for x in items: assert …`, `all(…)`)
-  without first asserting it is not empty.
+- Assert in a loop or `all(…)` over a collection that may be empty without first asserting it is
+  not empty.
 - Use fixed sleeps, retry until green, force-click, or bypass a broken UI step and report the path
   as passed.
 - Weaken an expectation, skip, matcher, fixture, test discovery or the run command to get green.
@@ -99,20 +99,20 @@ Read a reference only when its trigger applies.
 | Read | When |
 |---|---|
 | [case-design.md](references/case-design.md) | Turning a requirement into cases: boundaries, states, sequences, combinations; pruning a matrix |
-| [levels-and-doubles.md](references/levels-and-doubles.md) | Choosing unit, integration, contract or e2e, mock or real; databases, concurrency, migrations, external services |
-| [test-quality.md](references/test-quality.md) | Writing or reviewing test code; a weak or self-confirming test; an old test at odds with the requirement; a changed runner, fixture, skip or snapshot |
+| [levels-and-doubles.md](references/levels-and-doubles.md) | Choosing a level, mock or real; databases, concurrency, migrations, external services |
+| [test-quality.md](references/test-quality.md) | Writing or reviewing test code; a weak or self-confirming test; a test at odds with the task; a changed runner, fixture, skip or snapshot |
 | [ui-automation.md](references/ui-automation.md) | Writing a permanent component, browser or e2e test |
 | [exploratory-qa.md](references/exploratory-qa.md) | Planning or doing a pass through the running product by browser, computer or phone use |
-| [flaky-and-brittle.md](references/flaky-and-brittle.md) | A test is intermittent or breaks on refactoring; the suite is too slow |
+| [flaky-and-brittle.md](references/flaky-and-brittle.md) | A test is intermittent or breaks on refactoring; a slow suite |
 | [evidence-and-closeout.md](references/evidence-and-closeout.md) | Deciding whether to stop; review findings; a failure that looks pre-existing; the final report |
+| [suite-audit.md](references/suite-audit.md), [suite-audit-worker.md](references/suite-audit-worker.md) | Auditing an existing project's tests and gates, not one change |
 | [llm-features.md](references/llm-features.md) | The product itself calls an LLM at runtime |
 | [sources.md](references/sources.md) | The authority behind a rule is needed |
 
-**Stack tooling:** read only the file for the stack at hand; map the same roles for any
-other. The repository's own tools win.
+**Stack tooling:** read only the file for the stack at hand; map its roles to any other.
 
 [Python](references/stack-python.md) ·
-[TypeScript/JavaScript](references/stack-typescript.md) ·
+[TypeScript/JS](references/stack-typescript.md) ·
 [JVM](references/stack-jvm.md) ·
 [.NET](references/stack-dotnet.md) ·
 [Go](references/stack-go.md) ·
