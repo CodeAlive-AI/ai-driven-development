@@ -82,11 +82,9 @@ Disciplined approaches that improve how agents and humans collaborate on code.
 | [refactoring-csharp](skills/refactoring-csharp/) | One-shot Roslyn contract for renaming C# symbols from `file + 1-based line + oldName`, with dry-run preview, safe file moves for supported named types, and explicit error codes |
 | [repo-activity-summary](skills/repo-activity-summary/) | Summarize what a repository has *been doing* from local `git log` — technologies, work types, churn hotspots, contributor patterns, velocity, and health signals. Stdlib-only Python, no network or API keys. Benchmarked at **−42% cost / −37% wall clock** versus the same agent answering the same question unaided, at equal factual accuracy; flags its own low-confidence classification instead of asserting it |
 
-### AI infrastructure (1)
+### AI infrastructure
 
-| Skill | What It Does |
-|-------|--------------|
-| [openrouter-provider-ranking](skills/openrouter-provider-ranking/) | Rank and verify the provider endpoints behind one OpenRouter model using hard compatibility filters, workload-aware cost, TPS/TTFT/uptime, cache behavior, production telemetry, quality confidence, and diverse failover; generates `:exacto`, `provider.order`, or native-sort routing fragments |
+**Moved out:** the `openrouter-provider-ranking` skill now lives with the model selector in [rodion-m/model-that-fits-my-task](https://github.com/rodion-m/model-that-fits-my-task).
 
 ### Research & docs (3)
 
@@ -143,6 +141,7 @@ ai-driven-development/
 │   ├── marketplace.json         ← lists this repo as a single plugin (source: "./")
 │   └── plugin.json               ← umbrella plugin manifest
 ├── skills/                       ← canonical agent-skills layout
+│   ├── agentic-readiness/
 │   ├── bug-fix-protocol/
 │   ├── clipboard/
 │   ├── code-that-fits-in-your-head/
@@ -151,25 +150,24 @@ ai-driven-development/
 │   ├── hooks-management/
 │   ├── installing-cli-tools/
 │   ├── investigating-repository-history/
-│   ├── repo-activity-summary/
 │   ├── maintaining-macos-health/
 │   ├── maintaining-windows-health/
 │   ├── mcp-management/
-│   ├── openrouter-provider-ranking/
-│   ├── agentic-readiness/
 │   ├── plan-mode/
 │   ├── plugins-management/
 │   ├── pragmatic-verification/
 │   ├── prompt-engineering/
 │   ├── refactoring-csharp/
+│   ├── repo-activity-summary/
 │   ├── semantic-scholar-deep/
 │   ├── settings-management/
 │   ├── skills-management/
 │   ├── ubiquitous-language/
+│   ├── ux-best-practices/
 │   └── windows-qa-engineer/
 ├── hooks/
 │   └── balanced-safety-hooks/    ← bash-guard (Go, pre-built binaries via release)
-├── README.md (+ ru/zh/pt-BR translations)
+├── README.md
 ├── AGENTS.md                    ← canonical repository instructions
 ├── CLAUDE.md                   ← imports AGENTS.md for Claude Code
 └── LICENSE
