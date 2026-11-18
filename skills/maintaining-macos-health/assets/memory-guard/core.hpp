@@ -9,6 +9,13 @@
 
 namespace memoryguard {
 
+constexpr int kConsentVersion = 2;
+
+inline bool consent_matches(const char* data) {
+  return strstr(data, "\"scope_version\":2") != nullptr &&
+         strstr(data, "\"accepted\":true") != nullptr;
+}
+
 constexpr uint64_t kMiB = 1024ULL * 1024ULL;
 constexpr uint64_t kGiB = 1024ULL * 1024ULL * 1024ULL;
 constexpr size_t kHistorySize = 512;
@@ -291,7 +298,8 @@ inline AlertBasis alert_basis(const State& state, const Sample& sample, const Co
   const uint64_t scaled = growth > UINT64_MAX / config.swap_growth_factor
                               ? UINT64_MAX : growth * config.swap_growth_factor;
   const uint64_t threshold = scaled > config.swap_lowdisk ? scaled : config.swap_lowdisk;
-  if (growth >= config.swap_growth && sample.disk_free < threshold)
+  if ((growth > 0 && sample.disk_free < config.kill_disk_free) ||
+      (growth >= config.swap_growth && sample.disk_free < threshold))
     return AlertBasis::swap_lowdisk;
   return AlertBasis::none;
 }
@@ -373,16 +381,17 @@ inline void emergency_actions(State& state, const Sample& sample, const Candidat
   }
 }
 
-// Kills the largest eligible tier-A unit under measured danger, at most once per five seconds.
+// After the hold, kill the largest frozen tier-A unit under measured danger.
 inline bool danger_action(State& state, const Sample& sample, const Candidate* candidates,
                           size_t count, const Config& config, Actions& actions) {
-  if (actions.kill_basis == KillBasis::none ||
+  if (actions.kill_basis == KillBasis::none || state.alert_since == 0 ||
+      sample.second < state.alert_since || sample.second - state.alert_since < config.alert_hold ||
       (state.last_kill != 0 && sample.second - state.last_kill < config.alert_kill_spacing))
     return false;
   int selected = -1;
   for (size_t i = 0; i < count; ++i) {
     const Candidate& candidate = candidates[i];
-    if (!candidate.eligible || candidate.tier != Tier::a)
+    if (!candidate.eligible || candidate.tier != Tier::a || !candidate.frozen)
       continue;
     if (selected < 0 || candidate.footprint > candidates[static_cast<size_t>(selected)].footprint)
       selected = static_cast<int>(i);
@@ -394,13 +403,14 @@ inline bool danger_action(State& state, const Sample& sample, const Candidate* c
 }
 
 // Freeze only on alarming ALERT samples, highest score first.
-inline void alert_actions(const Candidate* candidates, size_t count, const Config& config,
-                          bool alarming, Actions& actions) {
+inline void alert_actions(State& state, const Sample& sample, const Candidate* candidates,
+                          size_t count, const Config& config, bool alarming, Actions& actions) {
   if (!alarming)
     return;
   std::array<bool, kMaxCandidates> used{};
   const size_t limit = count < used.size() ? count : used.size();
-  for (unsigned frozen = 0; frozen < config.freeze_limit && actions.count < kMaxActions; ++frozen) {
+  unsigned frozen = 0;
+  while (frozen < config.freeze_limit && actions.count < kMaxActions) {
     int selected = -1;
     uint64_t best = 0;
     for (size_t i = 0; i < limit; ++i) {
@@ -420,7 +430,24 @@ inline void alert_actions(const Candidate* candidates, size_t count, const Confi
     if (selected < 0)
       break;
     used[static_cast<size_t>(selected)] = true;
-    add(actions, ActionKind::freeze, candidates[static_cast<size_t>(selected)]);
+    const Candidate& candidate = candidates[static_cast<size_t>(selected)];
+    const bool repeat = candidate.repeat_offender && candidate.last_resume_second != 0 &&
+                        sample.second >= candidate.last_resume_second &&
+                        sample.second - candidate.last_resume_second <= config.repeat_window;
+    if (repeat && actions.kill_basis != KillBasis::none) {
+      bool kill_selected = false;
+      for (size_t j = 0; j < actions.count; ++j)
+        kill_selected |= actions.items[j].kind == ActionKind::kill;
+      if (!kill_selected && (state.last_kill == 0 ||
+                             sample.second - state.last_kill >= config.alert_kill_spacing)) {
+        add(actions, ActionKind::kill, candidate);
+        state.last_kill = sample.second;
+      }
+      // Do not re-freeze a repeat awaiting its permitted kill.
+      continue;
+    }
+    add(actions, ActionKind::freeze, candidate);
+    ++frozen;
   }
 }
 
@@ -476,7 +503,7 @@ inline Actions decide(State& state, const Sample& sample, const Candidate* candi
     actions.kill_basis = state.level == Level::alert ? measured_danger(state, sample, config) : KillBasis::none;
     const bool killed = state.level == Level::alert && danger_action(state, sample, candidates, count, config, actions);
     if (state.level == Level::alert) {
-      alert_actions(candidates, count, config, alert, actions);
+      alert_actions(state, sample, candidates, count, config, alert, actions);
     } else if (!killed && !alert &&
                (state.last_resume == 0 || sample.second - state.last_resume >= kResumeSpacingSeconds)) {
       int selected = -1;

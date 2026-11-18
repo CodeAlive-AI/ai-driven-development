@@ -483,9 +483,10 @@ void measured_pressure_bases() {
   pressure.level = Level::alert;
   pressure.alert_since = 1;
   decide(pressure, sample(1, 45), nullptr, 0);
-  decide(pressure, sample(31, 50, 0, 4), nullptr, 0);
-  decide(pressure, sample(32, 50, 0, 4), nullptr, 0);
-  a = decide(pressure, sample(33, 50, 0, 4), &candidate, 1);
+  pressure.calm_since = 0;
+  decide(pressure, sample(119, 50, 0, 4), nullptr, 0);
+  decide(pressure, sample(120, 50, 0, 4), nullptr, 0);
+  a = decide(pressure, sample(121, 50, 0, 4), &candidate, 1);
   assert(a.count == 1 && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::pressure_rising);
 
 }
@@ -862,7 +863,7 @@ void partial_group_is_frozen_unit() {
   State alert;
   alert.level = Level::alert;
   alert.alert_since = 1;
-  const Actions killed = decide(alert, sample(2, 78), &partial, 1);
+  const Actions killed = decide(alert, sample(121, 78), &partial, 1);
   assert(killed.count == 1 && killed.items[0].kind == ActionKind::kill);
   assert(killed.items[0].pid == 1);
 }
@@ -949,28 +950,57 @@ void revised_kill_policy() {
   Sample projected_sample = sample(31, 65);
   assert(!trend_reaches(projected, projected_sample, 95, 45, 30));
   assert(emergency_now(projected, projected_sample, c));
-  Candidate units[] = {tier_a(1, 1, 800, true), tier_a(2, 2, 1200)};
+  Candidate units[] = {tier_a(1, 1, 800, true), tier_a(2, 2, 1200, true),
+                       tier_a(3, 3, 2000)};
   State flat; flat.level = Level::alert; flat.alert_since = 1;
   decide(flat, sample(1, 72), nullptr, 0);
-  assert(decide(flat, sample(31, 72), units, 2).kill_basis == KillBasis::none);
+  assert(decide(flat, sample(31, 72), units, 3).kill_basis == KillBasis::none);
   State rising; rising.level = Level::alert; rising.alert_since = 1;
-  decide(rising, sample(1, 71), nullptr, 0);
-  Actions first = decide(rising, sample(31, 72), units, 2);
+  decide(rising, sample(91, 71), nullptr, 0);
+  Actions first = decide(rising, sample(121, 72), units, 3);
   assert(first.kill_basis == KillBasis::segments_rising && first.items[0].pid == 2);
   units[1].eligible = false;
-  Actions early = decide(rising, sample(35, 72), units, 2);
+  Actions early = decide(rising, sample(125, 72), units, 3);
   for (size_t i = 0; i < early.count; ++i) assert(early.items[i].kind != ActionKind::kill);
-  Actions next = decide(rising, sample(36, 72), units, 2);
+  Actions next = decide(rising, sample(126, 72), units, 3);
   assert(next.items[0].kind == ActionKind::kill && next.items[0].pid == 1);
   State high; high.level = Level::alert; high.alert_since = 1;
-  Actions a = decide(high, sample(1, 78), units, 2);
+  Actions before = decide(high, sample(120, 78), units, 2);
+  for (size_t i = 0; i < before.count; ++i) assert(before.items[i].kind != ActionKind::kill);
+  Actions a = decide(high, sample(121, 78), units, 2);
   assert(a.count && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::segments);
   State disk;
-  decide(disk, sample(1, 40), nullptr, 0);
-  disk.level = Level::alert; disk.alert_since = 61;
-  Sample danger = sample(61, 40, kGiB); danger.disk_free = 10 * kGiB - 1;
+  Sample baseline = sample(1, 40); baseline.disk_free = 9 * kGiB;
+  decide(disk, baseline, nullptr, 0);
+  Sample danger = sample(61, 40, kMiB); danger.disk_free = 9 * kGiB;
+  assert(decide(disk, danger, nullptr, 0).level == Level::calm);
+  danger.second = 62;
+  assert(decide(disk, danger, nullptr, 0).level == Level::alert);
+  danger.second = 182;
+  a = decide(disk, danger, units, 2);
+  // Keep a 60-second growth baseline for the later danger sample.
+  assert(a.count == 0);
+  danger.second = 183; danger.swap_used += kMiB;
   a = decide(disk, danger, units, 2);
   assert(a.count && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::swap_lowdisk);
+
+  Candidate repeat = tier_a(4, 4, 900);
+  repeat.repeat_offender = true; repeat.last_resume_second = 100;
+  State no_danger;
+  decide(no_danger, sample(101, 70), &repeat, 1);
+  Actions refrozen = decide(no_danger, sample(102, 70), &repeat, 1);
+  assert(refrozen.count == 1 && refrozen.items[0].kind == ActionKind::freeze);
+  State repeat_danger;
+  decide(repeat_danger, sample(101, 78), &repeat, 1);
+  Actions killed = decide(repeat_danger, sample(102, 78), &repeat, 1);
+  assert(killed.count == 1 && killed.items[0].kind == ActionKind::kill);
+  assert(killed.kill_basis == KillBasis::segments);
+
+  assert(kConsentVersion == 2);
+  assert(consent_matches("{\"scope_version\":2,\"accepted\":true}"));
+  assert(!consent_matches("{\"scope_version\":3,\"accepted\":true}"));
+  assert(!consent_matches("{\"scope_version\":2,\"accepted\":false}"));
+
 }
 
 }  // namespace

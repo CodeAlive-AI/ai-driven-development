@@ -29,7 +29,7 @@ elapsed seconds.
 | Level | Entry | `act` response |
 |---|---|---|
 | CALM | Default. An alarming condition in two successive valid samples enters ALERT or EMERGENCY. A non-alerting sample permits recovery, including after a restart. | Resume one frozen unit, smallest first, every 15 seconds. |
-| ALERT | Two successive `alert_now` samples: segments >=60%; segments >=45% and 30-second slope projects >=90% within 120 s; Critical for 3 samples and segments >=50%; or 60-second swap growth >=2 GiB with VM free space below max(20 GiB, five times growth). Recovery requires 60 s without `alert_now`. | On each alarming sample freeze at most two eligible tier-A units >=500 MiB by score. In ALERT, kill the largest eligible tier-A unit at most once per 5 s if segments >=72% and rising over 30 s, segments >=78%, VM free <10 GiB with positive 60-second swap growth, or Critical for 3 samples with segments >=50% and rising. A resumed unit is re-frozen unless such a kill condition holds. |
+| ALERT | Two successive `alert_now` samples: segments >=60%; segments >=45% and 30-second slope projects >=90% within 120 s; Critical for 3 samples and segments >=50%; or 60-second swap growth >=2 GiB with VM free space below max(20 GiB, five times growth); or VM free <10 GiB with positive 60-second swap growth. Recovery requires 60 s without `alert_now`. | On each alarming sample freeze at most two eligible tier-A units >=500 MiB by score. After 120 s in ALERT, kill the largest frozen tier-A unit at most once per 5 s if segments >=72% and rising over 30 s, segments >=78%, VM free <10 GiB with positive 60-second swap growth, or Critical for 3 samples with segments >=50% and rising. A unit resumed by the guard within 15 minutes is killed instead of re-frozen on an alarming sample if a kill condition holds; this repeat-offender exception does not wait for the 120-second hold. |
 | EMERGENCY | `emergency_now` in two successive valid samples: segments >=80%, or segments >=65% and the 30-second slope projects >=95% within 60 seconds. The first sample where this condition is false returns to ALERT. | Kill one unit, then re-evaluate on a fresh sample, at least 3 seconds after the prior kill. Order: frozen units by footprint; tier A >=300 MiB by score; tier B >=300 MiB only at segments >=88%; tier C >=300 MiB only at >=93%. A trend alone never opens B or C. |
 
 | Configuration key | Default | Rule |
@@ -74,6 +74,7 @@ PRESSURE_MIN_PCT=50
 FREEZE_LIMIT=2
 CRITICAL_PRESSURE=4
 CRITICAL_SAMPLES=3
+ALERT_HOLD_SECONDS=120
 FREEZE_MIN_MB=500
 TIER_MIN_MB=300
 RUNAWAY_MIN_MB=6144
@@ -101,7 +102,7 @@ A tier-A unit is the eligible tier-A members sharing a PGID; tiers B and C are i
 
 ## Consent and commands
 
-`act` requires both `MODE=act` and `~/.config/mac-health/memory-guard-consent.json` with scope version 3. Version 3 is required because the revised policy can kill unfrozen tier-A units without the former 120-second hold. `consent --accept` prints the precise action scope before recording the timestamp and version. Version-1 and version-2 consent are invalid. Development and installation are not consent; do not create a consent file on the development machine.
+`act` requires both `MODE=act` and `~/.config/mac-health/memory-guard-consent.json` with scope version 2. `consent --accept` prints the precise action scope before recording the timestamp and version. Version-1 consent is invalid. Development and installation are not consent; do not create a consent file on the development machine.
 
 ```sh
 # Build for this Mac, with Xcode Command Line Tools; no dependencies/downloads.

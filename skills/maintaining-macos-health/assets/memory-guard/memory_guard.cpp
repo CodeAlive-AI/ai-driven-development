@@ -38,7 +38,6 @@ constexpr size_t kMaxFrozen = 4096;
 constexpr size_t kMaxPatterns = 32;
 constexpr size_t kPathSize = PROC_PIDPATHINFO_MAXSIZE;
 constexpr size_t kGrowthSamples = 64;
-constexpr int kConsentVersion = 3;
 constexpr uint64_t kGrowthRetentionSeconds = 60;
 
 struct Process {
@@ -925,9 +924,7 @@ bool consent_is_current() {
   const size_t size = fread(data, 1, sizeof(data) - 1, file);
   fclose(file);
   data[size] = 0;
-  char expected[64];
-  snprintf(expected, sizeof(expected), "\"scope_version\":%d", kConsentVersion);
-  return strstr(data, expected) != nullptr && strstr(data, "\"accepted\":true") != nullptr;
+  return consent_matches(data);
 }
 
 // Implements secure per-process state loading and stale-identity rejection.
@@ -1669,7 +1666,7 @@ void publish_status(const Sample& sample, Level level) {
 // Implements the one-second decision loop and explicit fail-closed sampling errors.
 int run_loop() {
   if (g_act_mode && !g_test_mode && !consent_is_current()) {
-    fprintf(stderr, "act mode requires consent --accept for current scope v3\n");
+    fprintf(stderr, "act mode requires consent --accept for current scope v2\n");
     return 1;
   }
   if (g_act_mode && !g_test_mode && command_doctor() != 0)
@@ -1764,7 +1761,7 @@ int run_loop() {
   return 0;
 }
 
-// Implements scope-v3 consent reporting and versioned persistence.
+// Implements scope-v2 consent reporting and versioned persistence.
 int consent_command(const char* option) {
   if (strcmp(option, "--show") == 0) {
     FILE* file = fopen(g_consent_path, "r");
@@ -1788,14 +1785,15 @@ int consent_command(const char* option) {
     return 2;
   ensure_parent(g_consent_path);
   puts(
-      "Consent v3: ALERT freezes at most two eligible tier-A units >=500 MiB per alarming "
-      "sample, including eligible runaways at or above one third of hw.memsize. "
-      "The largest eligible tier-A unit may be killed at most once per 5 s when segments "
-      "are >=72% and rising over 30 s, >=78%, VM free space is below 10 GiB while "
-      "swap grows, or Critical pressure lasts 3 samples with segments >=50% and rising. "
+      "Consent v2: ALERT freezes at most two eligible tier-A units >=500 MiB per alarming "
+      "sample, including eligible runaways at or above one third of hw.memsize. After 120 s "
+      "in ALERT, the largest frozen tier-A unit may be killed at most once per 5 s when "
+      "segments are >=72% and rising over 30 s, >=78%, VM free space is below 10 GiB "
+      "while swap grows, or Critical pressure lasts 3 samples with segments >=50% and rising. "
+      "A unit resumed by the guard within 15 minutes is killed instead of re-frozen on an "
+      "alarming sample only when one of those kill conditions holds. "
       "EMERGENCY kills one unit then waits at least 3 s: frozen, tier A >=300 MiB, "
       "tier B >=300 MiB only at 88% segments, tier C >=300 MiB only at 93%. "
-      "A tier-A unit resumed within 15 minutes is frozen again unless a kill condition holds. "
       "Each process is identity-checked; protected and foreign processes are never signalled. "
       "CALM resumes frozen units smallest-first, 15 s apart. SIGTERM is followed by SIGKILL "
       "after 1.5 s to surviving matching pids.");
