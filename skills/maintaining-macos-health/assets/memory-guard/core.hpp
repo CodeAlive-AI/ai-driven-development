@@ -27,7 +27,7 @@ constexpr unsigned kAgentAgeThresholdSeconds = 30 * 60;
 enum class Level : uint8_t { calm, alert, emergency };
 enum class Tier : uint8_t { a, b, c, protected_process };
 enum class ActionKind : uint8_t { none, freeze, resume, kill };
-enum class KillBasis : uint8_t { none, segments, swap, pressure, emergency };
+enum class KillBasis : uint8_t { none, segments_rising, segments, swap_lowdisk, pressure_rising, emergency };
 
 struct Sample {
   uint64_t second = 0;
@@ -36,6 +36,7 @@ struct Sample {
   uint64_t compressed_pages = 0;
   uint64_t compressed_limit = 0;
   uint64_t swap_used = 0;
+  uint64_t disk_free = UINT64_MAX;
   int pressure = 0;
   bool valid = true;
 };
@@ -59,16 +60,24 @@ struct Config {
   unsigned alert_trend_pct = 90;
   unsigned alert_trend_min_pct = 45;
   unsigned alert_hold = 120;
-  unsigned trend_horizon = 240;
+  unsigned trend_horizon = 120;
   unsigned emergency_pct = 80;
   unsigned emergency_trend_pct = 95;
   unsigned emergency_trend_min_pct = 65;
-  unsigned emergency_horizon = 45;
+  unsigned emergency_horizon = 60;
   unsigned tier_b_pct = 88;
   unsigned tier_c_pct = 93;
   uint64_t swap_growth = 2 * kGiB;
+  uint64_t swap_lowdisk = 20 * kGiB;
+  unsigned pressure_min_pct = 50;
+  unsigned freeze_limit = 2;
+  unsigned kill_rising_pct = 72;
+  unsigned kill_flat_pct = 78;
+  uint64_t kill_disk_free = 10 * kGiB;
+  unsigned swap_growth_factor = 5;
+  unsigned alert_kill_spacing = 5;
   unsigned critical_pressure = 4;
-  unsigned critical_samples = 5;
+  unsigned critical_samples = 3;
   uint64_t freeze_min = 500 * kMiB;
   uint64_t tier_min = 300 * kMiB;
   uint64_t runaway_min_mb = 0;
@@ -241,24 +250,54 @@ inline bool trend_reaches(const State& state, const Sample& sample, unsigned thr
   return trend.projected_segments >= target;
 }
 
-// Measured triggers take priority in the logged basis when several coincide.
-inline KillBasis measured_pressure(const State& state, const Sample& sample, const Config& config) {
-  if (at_or_above(sample.segments, sample.segment_limit, config.alert_pct))
+// Raw last-30-second rise is independent of action-relative projection resets.
+inline bool segments_rising(const State& state, const Sample& sample) {
+  const Sample* old = find_ago(state, sample.second, 30, 0);
+  return old && sample.segments > old->segments;
+}
+
+inline uint64_t swap_growth_bytes(const State& state, const Sample& sample) {
+  const Sample* old = find_ago(state, sample.second, kSwapGrowthWindowSeconds, 0);
+  return old && sample.swap_used > old->swap_used ? sample.swap_used - old->swap_used : 0;
+}
+
+inline KillBasis measured_danger(const State& state, const Sample& sample, const Config& config) {
+  const bool rising = segments_rising(state, sample);
+  if (at_or_above(sample.segments, sample.segment_limit, config.kill_flat_pct))
     return KillBasis::segments;
-  const Sample* swap_old = find_ago(state, sample.second, kSwapGrowthWindowSeconds, 0);
-  if (swap_old != nullptr && sample.swap_used >= swap_old->swap_used &&
-      sample.swap_used - swap_old->swap_used >= config.swap_growth)
-    return KillBasis::swap;
-  if (state.critical_streak >= config.critical_samples)
-    return KillBasis::pressure;
+  if (rising && at_or_above(sample.segments, sample.segment_limit, config.kill_rising_pct))
+    return KillBasis::segments_rising;
+  if (sample.disk_free < config.kill_disk_free && swap_growth_bytes(state, sample) > 0)
+    return KillBasis::swap_lowdisk;
+  if (rising && state.critical_streak >= config.critical_samples &&
+      at_or_above(sample.segments, sample.segment_limit, config.pressure_min_pct))
+    return KillBasis::pressure_rising;
   return KillBasis::none;
 }
 
+enum class AlertBasis : uint8_t { none, segments, trend, pressure, swap_lowdisk };
+
+inline AlertBasis alert_basis(const State& state, const Sample& sample, const Config& config) {
+  if (at_or_above(sample.segments, sample.segment_limit, config.alert_pct))
+    return AlertBasis::segments;
+  if (at_or_above(sample.segments, sample.segment_limit, config.alert_trend_min_pct) &&
+      trend_reaches(state, sample, config.alert_trend_pct, config.trend_horizon,
+                    kAlertSlopeWindowSeconds))
+    return AlertBasis::trend;
+  if (state.critical_streak >= config.critical_samples &&
+      at_or_above(sample.segments, sample.segment_limit, config.pressure_min_pct))
+    return AlertBasis::pressure;
+  const uint64_t growth = swap_growth_bytes(state, sample);
+  const uint64_t scaled = growth > UINT64_MAX / config.swap_growth_factor
+                              ? UINT64_MAX : growth * config.swap_growth_factor;
+  const uint64_t threshold = scaled > config.swap_lowdisk ? scaled : config.swap_lowdisk;
+  if (growth >= config.swap_growth && sample.disk_free < threshold)
+    return AlertBasis::swap_lowdisk;
+  return AlertBasis::none;
+}
+
 inline bool alert_now(const State& state, const Sample& sample, const Config& config) {
-  return measured_pressure(state, sample, config) != KillBasis::none ||
-         (at_or_above(sample.segments, sample.segment_limit, config.alert_trend_min_pct) &&
-          trend_reaches(state, sample, config.alert_trend_pct, config.trend_horizon,
-                        kAlertSlopeWindowSeconds));
+  return alert_basis(state, sample, config) != AlertBasis::none;
 }
 
 inline bool emergency_now(const State& state, const Sample& sample, const Config& config) {
@@ -334,70 +373,54 @@ inline void emergency_actions(State& state, const Sample& sample, const Candidat
   }
 }
 
-// Implements alarming ALERT freezes, repeat kills and frozen-only escalation.
-inline void alert_actions(State& state, const Sample& sample, const Candidate* candidates,
-                          size_t count, const Config& config, bool alarming, Actions& actions) {
+// Kills the largest eligible tier-A unit under measured danger, at most once per five seconds.
+inline bool danger_action(State& state, const Sample& sample, const Candidate* candidates,
+                          size_t count, const Config& config, Actions& actions) {
+  if (actions.kill_basis == KillBasis::none ||
+      (state.last_kill != 0 && sample.second - state.last_kill < config.alert_kill_spacing))
+    return false;
+  int selected = -1;
+  for (size_t i = 0; i < count; ++i) {
+    const Candidate& candidate = candidates[i];
+    if (!candidate.eligible || candidate.tier != Tier::a)
+      continue;
+    if (selected < 0 || candidate.footprint > candidates[static_cast<size_t>(selected)].footprint)
+      selected = static_cast<int>(i);
+  }
+  if (selected < 0 || !add(actions, ActionKind::kill, candidates[static_cast<size_t>(selected)]))
+    return false;
+  state.last_kill = sample.second;
+  return true;
+}
+
+// Freeze only on alarming ALERT samples, highest score first.
+inline void alert_actions(const Candidate* candidates, size_t count, const Config& config,
+                          bool alarming, Actions& actions) {
   if (!alarming)
     return;
-  if (actions.kill_basis != KillBasis::none && state.alert_since != 0 &&
-      sample.second >= state.alert_since + config.alert_hold) {
-    const bool kill_ready = state.last_frozen_kill == 0 ||
-                            sample.second - state.last_frozen_kill >= kFrozenKillSpacingSeconds;
-    if (kill_ready) {
-      int selected = -1;
-      for (size_t i = 0; i < count; ++i) {
-        if (!candidates[i].eligible || !candidates[i].frozen)
-          continue;
-        if (selected < 0 ||
-            candidates[i].footprint > candidates[static_cast<size_t>(selected)].footprint) {
-          selected = static_cast<int>(i);
-        }
-      }
-      if (selected >= 0 &&
-          add(actions, ActionKind::kill, candidates[static_cast<size_t>(selected)])) {
-        state.last_frozen_kill = sample.second;
-        state.last_kill = sample.second;
-      }
-    }
-  }
   std::array<bool, kMaxCandidates> used{};
   const size_t limit = count < used.size() ? count : used.size();
-  while (actions.count < kMaxActions) {
+  for (unsigned frozen = 0; frozen < config.freeze_limit && actions.count < kMaxActions; ++frozen) {
     int selected = -1;
-    uint64_t best_score = 0;
+    uint64_t best = 0;
     for (size_t i = 0; i < limit; ++i) {
       const Candidate& candidate = candidates[i];
-      if (!eligible_floor(candidate, config.freeze_min) || candidate.tier != Tier::a ||
-          !candidate.freeze_pending)
+      if (used[i] || !eligible_floor(candidate, config.freeze_min) ||
+          candidate.tier != Tier::a || !candidate.freeze_pending)
         continue;
-      if (used[i])
+      // A unit selected for killing cannot also be frozen on this sample.
+      bool killed = false;
+      for (size_t j = 0; j < actions.count; ++j)
+        killed |= actions.items[j].kind == ActionKind::kill && actions.items[j].pid == candidate.pid && actions.items[j].pgid == candidate.pgid;
+      if (killed)
         continue;
       const uint64_t score = candidate_score(candidate);
-      if (selected < 0 || score > best_score) {
-        selected = static_cast<int>(i);
-        best_score = score;
-      }
+      if (selected < 0 || score > best) { selected = static_cast<int>(i); best = score; }
     }
     if (selected < 0)
       break;
     used[static_cast<size_t>(selected)] = true;
-    const Candidate& candidate = candidates[static_cast<size_t>(selected)];
-    const uint64_t last_resume = candidate.last_resume_second;
-    if (actions.kill_basis != KillBasis::none && candidate.repeat_offender && last_resume != 0 && sample.second >= last_resume &&
-        sample.second - last_resume <= config.repeat_window) {
-      bool kill_selected = false;
-      for (size_t i = 0; i < actions.count; ++i)
-        if (actions.items[i].kind == ActionKind::kill)
-          kill_selected = true;
-      if (kill_selected ||
-          (state.last_kill != 0 && sample.second - state.last_kill < kKillSpacingSeconds))
-        continue;
-      add(actions, ActionKind::kill, candidate);
-      state.last_kill = sample.second;
-      break;
-    } else {
-      add(actions, ActionKind::freeze, candidate);
-    }
+    add(actions, ActionKind::freeze, candidates[static_cast<size_t>(selected)]);
   }
 }
 
@@ -428,7 +451,7 @@ inline Actions decide(State& state, const Sample& sample, const Candidate* candi
   if (state.emergency_streak >= 2) {
     state.level = Level::emergency;
   } else if (state.level == Level::calm &&
-             (state.alert_streak >= 2 || state.critical_streak >= config.critical_samples)) {
+             state.alert_streak >= 2) {
     state.level = Level::alert;
     if (state.alert_since == 0)
       state.alert_since = sample.second;
@@ -449,23 +472,21 @@ inline Actions decide(State& state, const Sample& sample, const Candidate* candi
   if (state.level == Level::emergency) {
     actions.kill_basis = KillBasis::emergency;
     emergency_actions(state, sample, candidates, count, config, actions);
-  } else if (state.level == Level::alert) {
-    actions.kill_basis = measured_pressure(state, sample, config);
-    alert_actions(state, sample, candidates, count, config, alert, actions);
-  } else if (state.level == Level::calm && !alert &&
-             (state.last_resume == 0 ||
-              sample.second - state.last_resume >= kResumeSpacingSeconds)) {
-    int selected = -1;
-    for (size_t i = 0; i < count; ++i) {
-      if (candidates[i].eligible && candidates[i].frozen &&
-          (selected < 0 ||
-           candidates[i].footprint < candidates[static_cast<size_t>(selected)].footprint)) {
-        selected = static_cast<int>(i);
+  } else {
+    actions.kill_basis = state.level == Level::alert ? measured_danger(state, sample, config) : KillBasis::none;
+    const bool killed = state.level == Level::alert && danger_action(state, sample, candidates, count, config, actions);
+    if (state.level == Level::alert) {
+      alert_actions(candidates, count, config, alert, actions);
+    } else if (!killed && !alert &&
+               (state.last_resume == 0 || sample.second - state.last_resume >= kResumeSpacingSeconds)) {
+      int selected = -1;
+      for (size_t i = 0; i < count; ++i) {
+        if (candidates[i].eligible && candidates[i].frozen &&
+            (selected < 0 || candidates[i].footprint < candidates[static_cast<size_t>(selected)].footprint))
+          selected = static_cast<int>(i);
       }
-    }
-    if (selected >= 0 &&
-        add(actions, ActionKind::resume, candidates[static_cast<size_t>(selected)])) {
-      state.last_resume = sample.second;
+      if (selected >= 0 && add(actions, ActionKind::resume, candidates[static_cast<size_t>(selected)]))
+        state.last_resume = sample.second;
     }
   }
   return actions;

@@ -87,6 +87,7 @@ MODE=$mode
 FREEZE_MIN_MB=7
 TIER_MIN_MB=1
 ALERT_PCT=60
+ALERT_TREND_MIN_PCT=45
 EMERGENCY_PCT=80
 ALERT_TREND_PCT=90
 EMERGENCY_TREND_PCT=95
@@ -466,7 +467,7 @@ cleanup_and_clear_children
 "$tmp/plain-one" & plain_one=$!
 sleep 0.2
 write_config act "$tmp/k.state" "$tmp/k.log"
-write_series "$tmp/k.metrics" '1 50' '2 60' '3 60' '123 62' '124 62'
+write_series "$tmp/k.metrics" '1 50' '2 60' '3 60' '123 78' '124 78'
 "$tmp/mac-memory-guard" run --config "$tmp/config" --test-metrics "$tmp/k.metrics" \
   --test-root "$$" --test-tick-ms 100 > "$tmp/k.out" 2>&1
 assert_dead "$plain_one"
@@ -475,7 +476,7 @@ grep -q 'signal=SIGTERM name=plain-one' "$tmp/k.log"
 echo "PASS (k): measured segment hold terminated the frozen child with its basis logged"
 cleanup_and_clear_children
 
-grep -q 'transition=CALM->ALERT' "$tmp/a.log"
+grep -q 'transition=CALM->ALERT.*alert_basis=segments' "$tmp/a.log"
 grep -q 'transition=ALERT->CALM' "$tmp/a.log"
 assert_timestamped_log "$tmp/a.log"
 assert_timestamped_log "$tmp/b.log"

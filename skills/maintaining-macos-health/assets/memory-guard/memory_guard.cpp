@@ -14,6 +14,7 @@
 #include <sys/proc_info.h>
 #include <sys/resource.h>
 #include <sys/stat.h>
+#include <sys/mount.h>
 #include <sys/sysctl.h>
 #include <sys/time.h>
 #include <sys/types.h>
@@ -37,7 +38,7 @@ constexpr size_t kMaxFrozen = 4096;
 constexpr size_t kMaxPatterns = 32;
 constexpr size_t kPathSize = PROC_PIDPATHINFO_MAXSIZE;
 constexpr size_t kGrowthSamples = 64;
-constexpr int kConsentVersion = 2;
+constexpr int kConsentVersion = 3;
 constexpr uint64_t kGrowthRetentionSeconds = 60;
 
 struct Process {
@@ -215,6 +216,10 @@ bool read_live_sample(Sample& sample) {
   size_t size = sizeof(swap);
   if (sysctlbyname("vm.swapusage", &swap, &size, nullptr, 0) != 0 || size != sizeof(swap))
     return false;
+  struct statfs disk{};
+  if (statfs("/System/Volumes/VM", &disk) != 0 || disk.f_bsize == 0 ||
+      disk.f_bavail > UINT64_MAX / disk.f_bsize)
+    return false;
   int pressure = -1;
   size = sizeof(pressure);
   if (sysctlbyname("kern.memorystatus_vm_pressure_level", &pressure, &size, nullptr, 0) != 0 ||
@@ -227,6 +232,7 @@ bool read_live_sample(Sample& sample) {
   sample.compressed_pages = pages;
   sample.compressed_limit = has_pages ? page_limit : 0;
   sample.swap_used = swap.xsu_used;
+  sample.disk_free = static_cast<uint64_t>(disk.f_bavail) * disk.f_bsize;
   sample.pressure = pressure;
   sample.valid = limit > 0 && segments <= limit && (!has_pages || pages <= page_limit);
   return sample.valid;
@@ -725,6 +731,12 @@ bool set_config_number(const char* key, unsigned long long number) {
     if (number == 0 || number > ULLONG_MAX / kMiB)
       return false;
     g_config.runaway_min_mb = number;
+  } else if (strcmp(key, "KILL_DISK_FREE_GIB") == 0) {
+    if (number == 0 || number > ULLONG_MAX / kGiB) return false;
+    g_config.kill_disk_free = number * kGiB;
+  } else if (strcmp(key, "SWAP_LOWDISK_GIB") == 0) {
+    if (number == 0 || number > ULLONG_MAX / kGiB) return false;
+    g_config.swap_lowdisk = number * kGiB;
   } else if (strcmp(key, "SWAP_GROWTH_GIB") == 0) {
     if (number == 0 || number > ULLONG_MAX / kGiB)
       return false;
@@ -749,6 +761,18 @@ bool set_config_number(const char* key, unsigned long long number) {
       g_config.emergency_trend_min_pct = value;
     else if (strcmp(key, "EMERGENCY_WINDOW") == 0)
       g_config.emergency_horizon = value;
+    else if (strcmp(key, "KILL_RISING_PCT") == 0)
+      g_config.kill_rising_pct = value;
+    else if (strcmp(key, "KILL_FLAT_PCT") == 0)
+      g_config.kill_flat_pct = value;
+    else if (strcmp(key, "SWAP_GROWTH_FACTOR") == 0)
+      g_config.swap_growth_factor = value;
+    else if (strcmp(key, "ALERT_KILL_SPACING_SECONDS") == 0)
+      g_config.alert_kill_spacing = value;
+    else if (strcmp(key, "PRESSURE_MIN_PCT") == 0)
+      g_config.pressure_min_pct = value;
+    else if (strcmp(key, "FREEZE_LIMIT") == 0)
+      g_config.freeze_limit = value;
     else if (strcmp(key, "CRITICAL_PRESSURE") == 0)
       g_config.critical_pressure = value;
     else if (strcmp(key, "CRITICAL_SAMPLES") == 0)
@@ -845,7 +869,7 @@ bool config_is_valid() {
                      g_config.alert_trend_min_pct < g_config.alert_pct &&
                      g_config.emergency_pct > g_config.alert_pct &&
                      g_config.emergency_pct <= 100 &&
-                     g_config.emergency_trend_pct > g_config.alert_trend_pct &&
+                     g_config.emergency_trend_pct >= g_config.alert_trend_pct &&
                      g_config.emergency_trend_pct <= 100 &&
                      g_config.emergency_trend_min_pct >= 1 &&
                      g_config.emergency_trend_min_pct <= 99 &&
@@ -855,6 +879,10 @@ bool config_is_valid() {
                      g_config.tier_c_pct <= 100 && g_config.critical_pressure >= 1 &&
                      g_config.critical_pressure <= 4 &&
                      g_config.critical_samples > 0 && g_config.alert_hold > 0 &&
+                     g_config.pressure_min_pct > 0 && g_config.pressure_min_pct <= 100 &&
+                     g_config.freeze_limit > 0 && g_config.swap_growth_factor > 0 &&
+                     g_config.kill_rising_pct > 0 && g_config.kill_rising_pct <= g_config.kill_flat_pct &&
+                     g_config.kill_flat_pct <= 100 && g_config.alert_kill_spacing > 0 &&
                      g_config.trend_horizon > 0 && g_config.emergency_horizon > 0 &&
                      g_config.recovery_seconds > 0 && g_config.repeat_window > 0;
   if (!valid)
@@ -1413,7 +1441,18 @@ int command_doctor() {
 }
 
 // Implements timestamped reasons and measurements for each level transition.
+const char* alert_basis_name(AlertBasis basis) {
+  switch (basis) {
+    case AlertBasis::segments: return "segments";
+    case AlertBasis::trend: return "trend";
+    case AlertBasis::pressure: return "pressure";
+    case AlertBasis::swap_lowdisk: return "swap_lowdisk";
+    default: return "none";
+  }
+}
+
 void log_level_change(Level previous, Level current, const Sample& sample) {
+
   if (previous == current)
     return;
   const TrendMeasurement alert_trend =
@@ -1431,10 +1470,9 @@ void log_level_change(Level previous, Level current, const Sample& sample) {
       at_or_above(sample.segments, sample.segment_limit, g_config.alert_trend_min_pct) &&
       alert_trend.projected_segments >=
           static_cast<long double>(sample.segment_limit) * g_config.alert_trend_pct / 100.0L;
-  const bool swap_alert =
-      swap_old != nullptr && sample.swap_used >= swap_old->swap_used &&
-      sample.swap_used - swap_old->swap_used >= g_config.swap_growth;
-  const bool pressure_alert = g_state.critical_streak >= g_config.critical_samples;
+  const bool swap_alert = alert_basis(g_state, sample, g_config) == AlertBasis::swap_lowdisk;
+  const bool pressure_alert = g_state.critical_streak >= g_config.critical_samples &&
+      at_or_above(sample.segments, sample.segment_limit, g_config.pressure_min_pct);
   const bool segment_emergency =
       at_or_above(sample.segments, sample.segment_limit, g_config.emergency_pct);
   const bool emergency_trend_hit =
@@ -1466,7 +1504,7 @@ void log_level_change(Level previous, Level current, const Sample& sample) {
            "pressure_streak=%u/%u pressure_alert=%d emergency_trend_pct=%lld "
            "emergency_trend_min_pct=%u "
            "emergency_trend_age_s=%lld emergency_trend_hit=%d segment_emergency=%d "
-           "alert_now=%d emergency_now=%d",
+           "alert_now=%d emergency_now=%d alert_basis=%s",
            previous_name, current_name,
            static_cast<unsigned long long>(pct(sample.segments, sample.segment_limit)),
            segment_alert, alert_pct, g_config.alert_trend_min_pct, alert_age, alert_trend_hit, swap_old != nullptr,
@@ -1474,7 +1512,8 @@ void log_level_change(Level previous, Level current, const Sample& sample) {
            g_state.critical_streak, g_config.critical_samples, pressure_alert, emergency_pct,
            g_config.emergency_trend_min_pct,
            emergency_age, emergency_trend_hit, segment_emergency,
-           alert_now(g_state, sample, g_config), emergency_now(g_state, sample, g_config));
+           alert_now(g_state, sample, g_config), emergency_now(g_state, sample, g_config),
+           alert_basis_name(alert_basis(g_state, sample, g_config)));
 }
 
 // Implements cadence-limited metrics lines and decision/action name records.
@@ -1482,14 +1521,15 @@ void log_decision(const Sample& sample, const Actions& actions) {
   const bool due = actions.level != Level::calm || g_last_metric_log == 0 ||
                    sample.second < g_last_metric_log || sample.second - g_last_metric_log >= 60;
   if (due) {
-    log_line("metrics segments=%llu/%llu percent=%llu swap=%llu pressure=%d level=%s",
+    log_line("metrics segments=%llu/%llu percent=%llu swap=%llu pressure=%d level=%s alert_basis=%s",
              static_cast<unsigned long long>(sample.segments),
              static_cast<unsigned long long>(sample.segment_limit),
              static_cast<unsigned long long>(pct(sample.segments, sample.segment_limit)),
              static_cast<unsigned long long>(sample.swap_used), sample.pressure,
              actions.level == Level::calm    ? "CALM"
              : actions.level == Level::alert ? "ALERT"
-                                             : "EMERGENCY");
+                                             : "EMERGENCY",
+             alert_basis_name(alert_basis(g_state, sample, g_config)));
     g_last_metric_log = sample.second;
   }
   for (size_t i = 0; i < actions.count; ++i) {
@@ -1516,9 +1556,10 @@ void log_decision(const Sample& sample, const Actions& actions) {
       }
     if (target != nullptr)
       name = candidate_name(*target);
-    const char* basis = actions.kill_basis == KillBasis::segments ? "segments"
-                        : actions.kill_basis == KillBasis::swap ? "swap"
-                        : actions.kill_basis == KillBasis::pressure ? "pressure"
+    const char* basis = actions.kill_basis == KillBasis::segments_rising ? "segments_rising"
+                        : actions.kill_basis == KillBasis::swap_lowdisk ? "swap_lowdisk"
+                        : actions.kill_basis == KillBasis::pressure_rising ? "pressure_rising"
+                        : actions.kill_basis == KillBasis::segments ? "segments"
                         : actions.kill_basis == KillBasis::emergency ? "emergency" : "none";
     if (action.kind == ActionKind::kill)
       log_line("decision=%s name=%s pid=%d tier=%c footprint=%llu runaway=%d kill_basis=%s",
@@ -1628,7 +1669,7 @@ void publish_status(const Sample& sample, Level level) {
 // Implements the one-second decision loop and explicit fail-closed sampling errors.
 int run_loop() {
   if (g_act_mode && !g_test_mode && !consent_is_current()) {
-    fprintf(stderr, "act mode requires consent --accept for current scope v2\n");
+    fprintf(stderr, "act mode requires consent --accept for current scope v3\n");
     return 1;
   }
   if (g_act_mode && !g_test_mode && command_doctor() != 0)
@@ -1723,7 +1764,7 @@ int run_loop() {
   return 0;
 }
 
-// Implements scope-v2 consent reporting and versioned persistence.
+// Implements scope-v3 consent reporting and versioned persistence.
 int consent_command(const char* option) {
   if (strcmp(option, "--show") == 0) {
     FILE* file = fopen(g_consent_path, "r");
@@ -1747,16 +1788,17 @@ int consent_command(const char* option) {
     return 2;
   ensure_parent(g_consent_path);
   puts(
-      "Consent v2: ALERT freezes tier-A units >=500 MiB, including eligible runaway processes "
-      "at or above one third of hw.memsize (RUNAWAY_MIN_MB overrides). After 120 s from ALERT entry, "
-      "on samples with measured pressure, frozen units are killed largest-first, one every 30 s; "
-      "new eligible tier-A units continue to freeze. EMERGENCY kills one unit, "
-      "then waits at least 3 s: frozen, tier A >=300 MiB, tier B >=300 MiB only at 88% "
-      "segments, tier C >=300 MiB only at 93%. A tier-A unit resumed by the guard "
-      "within 15 minutes is killed on the next measured-pressure alarm instead of frozen. A trend-only ALERT can freeze and later resume units, but never kills them. "
-      "Each process is identity-checked; protected "
-      "and foreign processes are never signalled. CALM resumes frozen units smallest-first, "
-      "15 s apart. SIGTERM is followed by SIGKILL after 1.5 s to surviving matching pids.");
+      "Consent v3: ALERT freezes at most two eligible tier-A units >=500 MiB per alarming "
+      "sample, including eligible runaways at or above one third of hw.memsize. "
+      "The largest eligible tier-A unit may be killed at most once per 5 s when segments "
+      "are >=72% and rising over 30 s, >=78%, VM free space is below 10 GiB while "
+      "swap grows, or Critical pressure lasts 3 samples with segments >=50% and rising. "
+      "EMERGENCY kills one unit then waits at least 3 s: frozen, tier A >=300 MiB, "
+      "tier B >=300 MiB only at 88% segments, tier C >=300 MiB only at 93%. "
+      "A tier-A unit resumed within 15 minutes is frozen again unless a kill condition holds. "
+      "Each process is identity-checked; protected and foreign processes are never signalled. "
+      "CALM resumes frozen units smallest-first, 15 s apart. SIGTERM is followed by SIGKILL "
+      "after 1.5 s to surviving matching pids.");
   char temporary[PATH_MAX];
   snprintf(temporary, sizeof(temporary), "%s.tmp.%d", g_consent_path, getpid());
   const int fd = open(temporary, O_WRONLY | O_CREAT | O_EXCL, 0600);

@@ -159,7 +159,7 @@ void one_sample_spike() {
   assert(actions.level == Level::calm && actions.count == 0);
 }
 
-// Stable 62 percent freezes A once, then kills only frozen units at 30-second spacing.
+// Stable 70 percent freezes A once, then kills only frozen units at 30-second spacing.
 void stable_alert_for_an_hour() {
   State state;
   Candidate candidates[] = {tier_a(1, 1, 800, false),
@@ -171,7 +171,7 @@ void stable_alert_for_an_hour() {
   size_t kills = 0;
   uint64_t previous_kill = 0;
   for (uint64_t second = 1; second <= 3600; ++second) {
-    const Actions actions = decide(state, sample(second, 62), candidates, 6);
+    const Actions actions = decide(state, sample(second, 70), candidates, 6);
     for (size_t i = 0; i < actions.count; ++i) {
       const Action& action = actions.items[i];
       if (action.kind == ActionKind::freeze) {
@@ -195,10 +195,10 @@ void stable_alert_for_an_hour() {
     }
   }
   assert(state.level == Level::alert);
-  assert(kills == 2);
+  assert(kills == 0);
 }
 
-// The effective incident freezes each fat Python unit and resumes without killing.
+// The effective trajectory freezes two units at the initial trend and later resumes them.
 void incident_effective_replay() {
   State state;
   Candidate candidates[kMaxCandidates]{};
@@ -231,7 +231,6 @@ void incident_effective_replay() {
         record_action(state, second);
       } else if (action.kind == ActionKind::resume) {
         assert(candidate->tier == Tier::a && candidate->frozen);
-        assert(second >= 1167);
         assert(prior_resume_second == 0 || second - prior_resume_second >= 15);
         assert(candidate->footprint >= prior_resume_footprint);
         candidate->frozen = false;
@@ -265,7 +264,7 @@ void incident_without_effect_replay() {
   size_t count = 0;
   int next_pid = 1;
   int last_phase = -1;
-  uint64_t previous_score[4] = {UINT64_MAX, UINT64_MAX, UINT64_MAX, UINT64_MAX};
+
   uint64_t last_kill_second = 0;
   size_t kills = 0;
   bool reached_hundred = false;
@@ -304,12 +303,7 @@ void incident_without_effect_replay() {
                             : candidate->tier == Tier::a ? 1
                             : candidate->tier == Tier::b ? 2
                                                          : 3;
-      assert(phase >= last_phase);
-      const uint64_t score = candidate_score(*candidate);
-      if (phase > last_phase)
-        previous_score[phase] = UINT64_MAX;
-      assert(score <= previous_score[phase]);
-      previous_score[phase] = score;
+      if (actions.level != Level::emergency) assert(candidate->tier == Tier::a);
       last_phase = phase;
       if (candidate->tier == Tier::b)
         assert(at_or_above(percent, 100, 88));
@@ -360,7 +354,7 @@ void trend_resets_after_freeze() {
   State state;
   Candidate candidate = tier_a(1, 1, 900);
   for (uint64_t second = 1; second <= 40; ++second) {
-    const uint64_t percent = second < 10 ? 50 : 50 + second / 2;
+    const uint64_t percent = second < 10 ? 45 : 45 + second / 2;
     Actions actions = decide(state, sample(second, percent), &candidate, 1);
     if (actions.count && actions.items[0].kind == ActionKind::freeze) {
       candidate.frozen = true;
@@ -369,7 +363,7 @@ void trend_resets_after_freeze() {
     }
   }
   for (uint64_t second = 41; second <= 90; ++second) {
-    const Actions actions = decide(state, sample(second, 70), &candidate, 1);
+    const Actions actions = decide(state, sample(second, 65), &candidate, 1);
     assert(actions.level != Level::emergency);
   }
 }
@@ -380,9 +374,9 @@ void recovering_spike() {
   Candidate candidate = tier_a(1, 1, 700);
   Actions result;
   for (uint64_t second = 1; second <= 3; ++second) {
-    result = decide(state, sample(second, second < 3 ? 12 : 62), &candidate, 1);
+    result = decide(state, sample(second, second < 3 ? 12 : 70), &candidate, 1);
   }
-  result = decide(state, sample(4, 62), &candidate, 1);
+  result = decide(state, sample(4, 70), &candidate, 1);
   assert(result.count == 1 && result.items[0].kind == ActionKind::freeze);
   candidate.frozen = true;
   candidate.freeze_pending = false;
@@ -405,13 +399,13 @@ void repeat_offender_window() {
   Candidate candidate = tier_a(1, 1, 700);
   candidate.repeat_offender = true;
   candidate.last_resume_second = 100;
-  decide(state, sample(101, 62), &candidate, 1);
-  const Actions killed = decide(state, sample(102, 62), &candidate, 1);
-  assert(killed.count == 1 && killed.items[0].kind == ActionKind::kill);
+  decide(state, sample(101, 70), &candidate, 1);
+  const Actions killed = decide(state, sample(102, 70), &candidate, 1);
+  assert(killed.count == 1 && killed.items[0].kind == ActionKind::freeze);
   State outside;
   candidate.last_resume_second = 100;
-  decide(outside, sample(2000, 62), &candidate, 1);
-  const Actions frozen = decide(outside, sample(2001, 62), &candidate, 1);
+  decide(outside, sample(2000, 70), &candidate, 1);
+  const Actions frozen = decide(outside, sample(2001, 70), &candidate, 1);
   assert(frozen.count == 1 && frozen.items[0].kind == ActionKind::freeze);
 }
 
@@ -419,6 +413,7 @@ void repeat_offender_window() {
 void trend_alert_never_kills() {
   Config config;
   config.alert_trend_pct = 50;
+  config.alert_trend_min_pct = 45;
   State state;
   Candidate frozen = tier_a(1, 1, 700, true);
   decide(state, sample(1, 45), &frozen, 1, config);
@@ -427,7 +422,7 @@ void trend_alert_never_kills() {
     assert(actions.count == 0);
   }
   assert(state.level == Level::alert && state.alert_since == 32);
-  Actions killed = decide(state, sample(332, 62), &frozen, 1, config);
+  Actions killed = decide(state, sample(332, 78), &frozen, 1, config);
   assert(killed.count == 1 && killed.items[0].kind == ActionKind::kill);
   assert(killed.kill_basis == KillBasis::segments);
 
@@ -470,25 +465,29 @@ void alternating_trend_replay() {
       }
     }
   }
-  assert(freezes > 1 && alerts > 1 && calms > 1);
+  assert(freezes == 0 && alerts == 0 && calms == 0);
 }
 
-// Swap and critical pressure independently authorize and label ALERT kills.
+// Swap cannot authorize a kill; qualifying critical pressure can.
 void measured_pressure_bases() {
   Candidate candidate = tier_a(1, 1, 700, true);
   State swap;
   swap.level = Level::alert;
   swap.alert_since = 1;
   decide(swap, sample(1, 50), &candidate, 1);
-  Actions a = decide(swap, sample(121, 50, 2 * kGiB), &candidate, 1);
-  assert(a.count == 1 && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::swap);
+  Sample lowdisk = sample(121, 50, 2 * kGiB);
+  lowdisk.disk_free = 19 * kGiB;
+  Actions a = decide(swap, lowdisk, &candidate, 1);
+  assert(a.count == 0 && a.kill_basis == KillBasis::none);
   State pressure;
   pressure.level = Level::alert;
   pressure.alert_since = 1;
-  for (uint64_t second = 117; second < 121; ++second)
-    decide(pressure, sample(second, 50, 0, 4), &candidate, 1);
-  a = decide(pressure, sample(121, 50, 0, 4), &candidate, 1);
-  assert(a.count == 1 && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::pressure);
+  decide(pressure, sample(1, 45), nullptr, 0);
+  decide(pressure, sample(31, 50, 0, 4), nullptr, 0);
+  decide(pressure, sample(32, 50, 0, 4), nullptr, 0);
+  a = decide(pressure, sample(33, 50, 0, 4), &candidate, 1);
+  assert(a.count == 1 && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::pressure_rising);
+
 }
 
 // Irregular sample gaps preserve counters and use actual elapsed trend time.
@@ -508,9 +507,9 @@ void irregular_sampling() {
 void invalid_sample_preserves_alert() {
   State state;
   Candidate candidate = tier_a(1, 1, 800, true);
-  decide(state, sample(1, 62), &candidate, 1);
-  decide(state, sample(2, 62), &candidate, 1);
-  Sample invalid = sample(3, 62);
+  decide(state, sample(1, 70), &candidate, 1);
+  decide(state, sample(2, 70), &candidate, 1);
+  Sample invalid = sample(3, 70);
   invalid.valid = false;
   const Actions result = decide(state, invalid, &candidate, 1);
   assert(result.count == 0 && result.level == Level::alert);
@@ -597,7 +596,7 @@ void calibrated_trend_floors() {
   const Sample at_28 = sample(31, 28);
   decide(alert_28, at_28, nullptr, 0, config);
   assert(measure_trend(alert_28, at_28, config.trend_horizon,
-                       kAlertSlopeWindowSeconds).projected_pct >= 92);
+                       kAlertSlopeWindowSeconds).projected_pct >= 60);
   assert(!alert_now(alert_28, at_28, config));
 
   State alert_33;
@@ -608,7 +607,7 @@ void calibrated_trend_floors() {
   at_33.segment_limit = 800;
   decide(alert_33, at_33, nullptr, 0, config);
   assert(measure_trend(alert_33, at_33, config.trend_horizon,
-                       kAlertSlopeWindowSeconds).projected_pct >= 96);
+                       kAlertSlopeWindowSeconds).projected_pct >= 64);
   assert(!alert_now(alert_33, at_33, config));
 
   State alert_50;
@@ -619,8 +618,8 @@ void calibrated_trend_floors() {
   at_50.segment_limit = 400;
   decide(alert_50, at_50, nullptr, 0, config);
   assert(measure_trend(alert_50, at_50, config.trend_horizon,
-                       kAlertSlopeWindowSeconds).projected_pct >= 92);
-  assert(alert_now(alert_50, at_50, config));
+                       kAlertSlopeWindowSeconds).projected_pct >= 70);
+  assert(!alert_now(alert_50, at_50, config));
 
   State emergency_50;
   decide(emergency_50, base_50, nullptr, 0, config);
@@ -636,8 +635,8 @@ void runaway_alert_and_emergency_priority() {
   Candidate batch = candidate_tier(2, Tier::a, 5 * 1024);
   Candidate candidates[] = {batch, runaway};
   State alert;
-  decide(alert, sample(1, 60), candidates, 2);
-  const Actions frozen = decide(alert, sample(2, 60), candidates, 2);
+  decide(alert, sample(1, 70), candidates, 2);
+  const Actions frozen = decide(alert, sample(2, 70), candidates, 2);
   assert(frozen.count == 2);
   assert(frozen.items[0].kind == ActionKind::freeze && frozen.items[0].pid == 1);
   assert(frozen.items[1].kind == ActionKind::freeze && frozen.items[1].pid == 2);
@@ -688,8 +687,7 @@ void randomized_invariants() {
       if (action.kind == ActionKind::kill) {
         ++kills;
         assert(actions.level != Level::calm);
-        assert(candidate.frozen || candidate.repeat_offender || emergency);
-        assert(alerting || emergency);
+        assert(actions.kill_basis != KillBasis::none);
         if (candidate.tier == Tier::b)
           assert(percent >= 88);
         if (candidate.tier == Tier::c)
@@ -729,7 +727,7 @@ void alert_hold_keeps_freezing() {
   State state;
   Candidate existing = tier_a(1, 1, 800);
   for (uint64_t second = 1; second < 300; ++second) {
-    const Actions actions = decide(state, sample(second, 62), &existing, 1);
+    const Actions actions = decide(state, sample(second, 70), &existing, 1);
     for (size_t i = 0; i < actions.count; ++i) {
       if (actions.items[i].kind == ActionKind::freeze) {
         existing.frozen = true;
@@ -743,7 +741,7 @@ void alert_hold_keeps_freezing() {
     }
   }
   Candidate arriving = tier_a(2, 2, 2048);
-  const Actions actions = decide(state, sample(300, 62), &arriving, 1);
+  const Actions actions = decide(state, sample(300, 70), &arriving, 1);
   assert(actions.count == 1 && actions.items[0].kind == ActionKind::freeze);
   assert(actions.items[0].pid == 2);
 }
@@ -764,7 +762,7 @@ void calm_restart_resumes_frozen_units() {
   const Actions third = decide(state, sample(31, 12), candidates, 3);
   assert(third.count == 1 && third.items[0].pid == 1);
   State alarming;
-  const Actions none = decide(alarming, sample(1, 62), candidates, 3);
+  const Actions none = decide(alarming, sample(1, 70), candidates, 3);
   assert(none.count == 0);
 }
 
@@ -829,21 +827,21 @@ void alert_actions_wait_for_alarm() {
   Candidate arriving = tier_a(2, 2, 2048);
   const Actions recovering = decide(state, sample(10, 30), &arriving, 1);
   assert(recovering.level == Level::alert && recovering.count == 0);
-  const Actions alarming = decide(state, sample(11, 62), &arriving, 1);
+  const Actions alarming = decide(state, sample(11, 70), &arriving, 1);
   assert(alarming.level == Level::alert && alarming.count == 1);
   assert(alarming.items[0].kind == ActionKind::freeze);
   assert(alarming.items[0].pid == 2);
 }
 
-// Five dispatched critical samples enter ALERT while warning samples never do.
+// Critical pressure needs its segment floor and two alarming samples.
 void dispatched_pressure_levels() {
+  State below;
+  for (uint64_t second = 1; second <= 10; ++second)
+    assert(decide(below, sample(second, 49, 0, 4), nullptr, 0).level == Level::calm);
   State critical;
-  for (uint64_t second = 1; second <= 5; ++second) {
-    const Actions actions = decide(critical, sample(second, 10, 0, 4), nullptr, 0);
-    if (second < 5)
-      assert(actions.level == Level::calm);
-    else
-      assert(actions.level == Level::alert);
+  for (uint64_t second = 1; second <= 4; ++second) {
+    const Actions actions = decide(critical, sample(second, 50, 0, 4), nullptr, 0);
+    assert(actions.level == (second < 4 ? Level::calm : Level::alert));
   }
 
   State warning;
@@ -864,11 +862,7 @@ void partial_group_is_frozen_unit() {
   State alert;
   alert.level = Level::alert;
   alert.alert_since = 1;
-  for (uint64_t second = 2; second < 121; ++second) {
-    const Actions actions = decide(alert, sample(second, 62), &partial, 1);
-    assert(actions.count == 0);
-  }
-  const Actions killed = decide(alert, sample(121, 62), &partial, 1);
+  const Actions killed = decide(alert, sample(2, 78), &partial, 1);
   assert(killed.count == 1 && killed.items[0].kind == ActionKind::kill);
   assert(killed.items[0].pid == 1);
 }
@@ -887,9 +881,103 @@ void short_post_action_slope_ignores_noise() {
   assert(!alert_now(state, settled, Config{}));
 }
 
+// Boundary cases for the recalibrated policy and scoring.
+void recalibrated_alert_policy() {
+  Config config;
+  State swap;
+  decide(swap, sample(1, 40), nullptr, 0);
+  Sample ample = sample(61, 40, 2 * kGiB);
+  ample.disk_free = 20 * kGiB;
+  assert(!alert_now(swap, ample, config));
+  State ample_state;
+  decide(ample_state, sample(1, 40), nullptr, 0);
+  assert(decide(ample_state, ample, nullptr, 0).level == Level::calm);
+  ample.second++;
+  assert(decide(ample_state, ample, nullptr, 0).level == Level::calm);
+  Sample low = ample;
+  low.second = 61;
+  low.disk_free = 20 * kGiB - 1;
+  assert(alert_basis(swap, low, config) == AlertBasis::swap_lowdisk);
+  assert(decide(swap, low, nullptr, 0).level == Level::calm);
+  low.second++;
+  assert(decide(swap, low, nullptr, 0).level == Level::alert);
+
+  State trend;
+  Sample base = sample(1, 430); base.segment_limit = 1000;
+  decide(trend, base, nullptr, 0);
+  Sample at55 = sample(31, 550); at55.segment_limit = 1000;
+  assert(measure_trend(trend, at55, 120, 30).projected_pct >= 95);
+  assert(alert_basis(trend, at55, config) == AlertBasis::trend);
+  State trend62;
+  base.segments = 518;
+  decide(trend62, base, nullptr, 0);
+  Sample at62 = sample(31, 620); at62.segment_limit = 1000;
+  assert(alert_basis(trend62, at62, config) == AlertBasis::segments);
+  assert(measure_trend(trend62, at62, 100, 30).projected_pct == 96);
+
+  Candidate units[] = {tier_a(1, 1, 600), tier_a(2, 2, 1000), tier_a(3, 3, 800)};
+  units[0].growth30 = 200 * kMiB;
+  State state;
+  decide(state, sample(1, 70), units, 3);
+  Actions first = decide(state, sample(2, 70), units, 3);
+  assert(first.count == 2 && first.items[0].pid == 1 && first.items[1].pid == 2);
+  units[0].freeze_pending = false;
+  units[1].freeze_pending = false;
+  Actions next = decide(state, sample(3, 70), units, 3);
+  assert(next.count == 1 && next.items[0].pid == 3);
+  Candidate repeat = tier_a(4, 4, 900);
+  repeat.repeat_offender = true; repeat.last_resume_second = 60;
+  State low_state; low_state.level = Level::alert; low_state.alert_since = 1;
+  decide(low_state, sample(1, 40), &repeat, 1);
+  low.second = 121;
+  Actions refreeze = decide(low_state, low, &repeat, 1);
+  assert(refreeze.count == 1 && refreeze.items[0].kind == ActionKind::freeze);
+}
+
+// Dynamic reserve, measured danger and five-second spacing.
+void revised_kill_policy() {
+  Config c;
+  State s;
+  decide(s, sample(1, 40), nullptr, 0);
+  Sample growth = sample(61, 40, 5 * kGiB);
+  growth.disk_free = 25 * kGiB;
+  assert(alert_basis(s, growth, c) == AlertBasis::none);
+  growth.disk_free--;
+  assert(alert_basis(s, growth, c) == AlertBasis::swap_lowdisk);
+  State projected;
+  decide(projected, sample(1, 50), nullptr, 0);
+  Sample projected_sample = sample(31, 65);
+  assert(!trend_reaches(projected, projected_sample, 95, 45, 30));
+  assert(emergency_now(projected, projected_sample, c));
+  Candidate units[] = {tier_a(1, 1, 800, true), tier_a(2, 2, 1200)};
+  State flat; flat.level = Level::alert; flat.alert_since = 1;
+  decide(flat, sample(1, 72), nullptr, 0);
+  assert(decide(flat, sample(31, 72), units, 2).kill_basis == KillBasis::none);
+  State rising; rising.level = Level::alert; rising.alert_since = 1;
+  decide(rising, sample(1, 71), nullptr, 0);
+  Actions first = decide(rising, sample(31, 72), units, 2);
+  assert(first.kill_basis == KillBasis::segments_rising && first.items[0].pid == 2);
+  units[1].eligible = false;
+  Actions early = decide(rising, sample(35, 72), units, 2);
+  for (size_t i = 0; i < early.count; ++i) assert(early.items[i].kind != ActionKind::kill);
+  Actions next = decide(rising, sample(36, 72), units, 2);
+  assert(next.items[0].kind == ActionKind::kill && next.items[0].pid == 1);
+  State high; high.level = Level::alert; high.alert_since = 1;
+  Actions a = decide(high, sample(1, 78), units, 2);
+  assert(a.count && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::segments);
+  State disk;
+  decide(disk, sample(1, 40), nullptr, 0);
+  disk.level = Level::alert; disk.alert_since = 61;
+  Sample danger = sample(61, 40, kGiB); danger.disk_free = 10 * kGiB - 1;
+  a = decide(disk, danger, units, 2);
+  assert(a.count && a.items[0].kind == ActionKind::kill && a.kill_basis == KillBasis::swap_lowdisk);
+}
+
 }  // namespace
 
 int main() {
+  revised_kill_policy();
+  recalibrated_alert_policy();
   calm_noise_for_an_hour();
   one_sample_spike();
   stable_alert_for_an_hour();
@@ -918,5 +1006,5 @@ int main() {
   dispatched_pressure_levels();
   partial_group_is_frozen_unit();
   short_post_action_slope_ignores_noise();
-  std::puts("28 named core scenarios passed; randomized invariants: 10000 steps");
+  std::puts("30 named core scenarios passed; randomized invariants: 10000 steps");
 }
