@@ -45,18 +45,19 @@ expose another user's data.
    existing case table before writing a new test. A new test names the promise it protects, the
    realistic defect that turns it red, and what existing checks miss.
 4. **Derive cases from failure mechanisms.** Name the concrete way a claim can break ("a stale
-   response overwrites newer state", not "handle errors") and pick the cases that expose it.
-   See `case-design.md`.
+   response overwrites newer state", not "handle errors") and pick the cases that expose it;
+   time limits are boundaries too. See `case-design.md`.
 5. **Choose level and reality.** Put each check at the smallest boundary that reproduces the
-   mechanism and exposes the result. Say what is real, what is substituted and what that
-   leaves unproven. See `levels-and-doubles.md`.
+   mechanism and exposes the result. Say what is real, what is substituted, which platform rules
+   the substitute skips, and what that leaves unproven. See `levels-and-doubles.md`.
 6. **Show that the test can fail.** For a bug fix, watch the regression test fail on the old
    defect for the right reason. For an important rule, break it once (`>=` to `>`, drop the
    ownership check), see red, restore. See `test-quality.md`.
 7. **Use the product.** When a user-facing path changed, drive the running build through its real
    interface and observe the end effect, not the click or the toast. See `exploratory-qa.md`.
 8. **Close out on evidence.** Map what was actually run to each claim on the final revision, and
-   say plainly what was not verified. See `evidence-and-closeout.md`.
+   say plainly what was not verified, including a purpose only real use can show. See
+   `evidence-and-closeout.md`.
 
 ## Where each defect is caught
 
@@ -121,6 +122,5 @@ Read a reference only when its trigger applies.
 ## Report
 
 Give each claim one status: **verified**, **partially verified**, **not verified** or **blocked**,
-with what was actually run, on which revision, and what the substitutes leave unproven. A test
-written, a test run and a test shown able to fail are three different facts. Do not invent a
-confidence percentage.
+with what ran, on which revision, and what substitutes leave unproven. Writing a test, running
+it and showing it can fail are three different facts. Never invent a confidence percentage.

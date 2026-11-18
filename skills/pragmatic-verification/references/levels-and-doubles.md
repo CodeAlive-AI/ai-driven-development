@@ -100,14 +100,20 @@ acceptance.
 
 ## Fidelity of a significant fake
 
-When a substitute carries real weight in the proof, answer four questions:
+When a substitute carries real weight in the proof, answer five questions:
 
 1. Which behaviour of the real dependency is modelled?
 2. Where is that behaviour known from: a specification, provider verification, a real sandbox, a
    recorded and checked example?
 3. Which states, errors and timing properties are not represented?
-4. Which separate check closes the remaining material risk?
+4. Which rules does the real platform enforce that the substitute does not: required
+   user-visible effects, permissions, background limits, quotas, payload sizes, signing?
+5. Which separate check closes the remaining material risk?
 
+- A rule the substitute does not enforce is still a requirement on the code. A browser may
+  require each push message to show a notification; a fake push service or a synthetic event in
+  a unit test does not, so code that sometimes stays silent passes them. Take such rules from
+  the platform's current documentation and check them where the platform runs.
 - An API schema confirms the shape of a request. It does not confirm redelivery, idempotency or
   recovery after a lost response.
 - A fake written from the author's own understanding of an API is not external confirmation of

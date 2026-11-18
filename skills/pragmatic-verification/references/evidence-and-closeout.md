@@ -7,6 +7,7 @@ pre-existing, or when writing the final report.
 
 - [Order of gates](#order-of-gates)
 - [Enough confidence](#enough-confidence)
+- [The purpose after release](#the-purpose-after-release)
 - [Whether another test is needed](#whether-another-test-is-needed)
 - [Statuses](#statuses)
 - [Independent review](#independent-review)
@@ -49,6 +50,21 @@ implementation and focused tests
 A residual limitation is acceptable when it does not break the agreed result. An unknown about
 data safety or working authorization cannot be declared acceptable because the budget ran out.
 Report that result as partially verified or blocked, with the specific reason.
+
+## The purpose after release
+
+Some changes exist to move an outcome that only real use shows: more questions answered, fewer
+abandoned forms, fewer support requests. Checks before release prove that the mechanism works,
+not that it achieves the purpose.
+
+- Name the signal, where it is recorded, the baseline it is compared with and when it will be
+  read. Prefer data the system already records.
+- If nothing records it, say so and propose the smallest record. Adding one joins the scope only
+  when agreed.
+- If the expected volume is too small to tell the effect from noise, say so instead of reading
+  noise as success.
+- Report the purpose as not verified until the signal is read. That does not hold back the
+  closeout of the mechanism.
 
 ## Whether another test is needed
 
@@ -142,6 +158,7 @@ Substituted dependencies and what stays unconfirmed:
 QA charter and required platforms:
 Required project gates:
 Condition for completion:
+Signal of the purpose after release, if any:
 ```
 
 **Evidence table**, only when there are several distinct claims:
@@ -161,6 +178,7 @@ Tests or checking tools changed, and why:
 Substitutions used, and what they leave unconfirmed:
 Flaky, skipped or impossible checks:
 Residual risk and its effect on acceptance:
+Purpose signal to read after release, and when:
 Outcome: verified / partially verified / blocked
 ```
 

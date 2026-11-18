@@ -52,6 +52,12 @@ cancellation from any active state, forbidden transitions, and two triggers firi
 every "in progress" status, include a case showing that an error cannot leave it in progress
 forever.
 
+**Time bounds:** a delay, timeout, retry window, expiry or upper cap is a boundary like any other.
+Check just before it, where nothing happens yet, and just after it, where the effect happens
+exactly once. Use a controlled clock, not real waiting. A cap that ends waiting is its own case:
+a reminder held while the user is active must still go out at the maximum delay. When the wait
+can outlive the process, check that a restart neither loses nor repeats it.
+
 **Combinatorial sets:** choose the factors, define which combinations are impossible, and check
 that the generated set really has the claimed coverage. The word "pairwise" above a table proves
 nothing. Add every known dangerous combination by hand, whatever the method covers. Use it only
