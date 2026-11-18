@@ -50,7 +50,8 @@ Naming a technique in a plan adds nothing. The reason it fits the behaviour does
 **State models:** look for dead-end states, unreachable states, missing transitions such as
 cancellation from any active state, forbidden transitions, and two triggers firing at once. For
 every "in progress" status, include a case showing that an error cannot leave it in progress
-forever.
+forever. A mode, setting or permission the user can turn on needs a case that turns it off again
+and one that shows which state is current.
 
 **Time bounds:** a delay, timeout, retry window, expiry or upper cap is a boundary like any other.
 Check just before it, where nothing happens yet, and just after it, where the effect happens
